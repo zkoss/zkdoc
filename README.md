@@ -1,28 +1,20 @@
-# Keikai Document Website
+# ZK Document Website
 
-> Website: https://keikai.io  
-> Demo: https://keikai.io/demo  
-> Blog: https://keikai.io/blog
 
 # Document Folder Structure
-* `tutorial`: tutorial
-* `dev-ref`: Developer Reference
+* [MVVM Reference](mvvm_ref)
 
 # Preview at Local
-install necessary gem
+1. install necessary gem
 `bundle install`
-
-start a local web server
-`bundle exec jekyll serve`
+2. start a local web server
+`preview.sh`
 
 Ref: [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll)
 
 
 # Base Theme: [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/)
 from: https://jekyllthemes.io/
-
-# Font source
-[Google font](https://fonts.google.com)
 
 # Apply Jekyll Remote Theme
 
