@@ -1,0 +1,51 @@
+remote_theme: "keikai/minimal-mistakes@zk"
+repository: keikai/minimal-mistakes
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache  #required by minimal-mistakes
+  - jekyll-paginate
+minimal_mistakes_skin: "dirt"
+title: "ZK Document"
+#title_link: "https://keikai.io"
+name: "Potix Corporation"
+
+search                    : true
+search_full_content       : true
+#  Lunr search only indexes collection documents e.g. posts or any custom collections you have. It does not currently index site.pages.';
+#search_provider: google
+#google:
+#  search_engine_id: 014994008257058938644:cb7qedcky7m
+
+
+#analytics:
+#  provider: "google-gtag"
+#  google:
+#    tracking_id: "UA-116749276-1"
+#    anonymize_ip: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      toc: true
+      comments: true
+      share: true
+  - scope:
+      path: "mvvm_ref"
+    values:
+      sidebar:
+        nav: "mvvm_ref"
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "zkdoc"
+# disqus admin is hawkchen@potix.com
+    
+#repository: "username/repo-name"
+#logo: "/assets/images/88x88.png"
+# predefined properties
+# base path of developer reference
+#devref: "/dev-ref"
+#devref_image_folder: "/assets/images/dev-ref"
