@@ -7,13 +7,13 @@ ViewModel is also a **Model of the View**. It contains the View's state (e.g. se
 
 Although ViewModel stores the View's states, it contains no reference to UI components. It can not access any UI components directly. Hence, there is a data binding mechanism to synchronize data between View and ViewModel. After developers define the binding relationship between View (UI component) and ViewModel, the data binding mechanism synchronize the data automatically. This makes ViewModel and View loosely coupled.
 
-![MVVM Databinding Role](../images/Mvvm-databinding-role.png)
+![MVVM Databinding Role](/mvvm_ref/images/Mvvm-databinding-role.png)
 
 ViewModel acts like a Controller in MVC, so the data binding mechanism forwards events to ViewModel's handlers. The handlers are ViewModel's method with specific Java annotation. We call such a method **Command** of the ViewModel. These methods usually manipulate data of the ViewModel, like deleting an item. Data binding mechanism also supports binding a UI component's event with a ViewModel's command. Firing the component's event will trigger the execution of bound command, invoking the annotated method.
 
 During the execution of command, it usually changes the data of ViewModel. The developer should specify what properties change to be notified through Java annotation.
 
-![MVVM Event Command Reload](../images/Mvvm-event-command-reload.png)
+![MVVM Event Command Reload](/mvvm_ref/images/Mvvm-event-command-reload.png)
 
 the UI sometimes has to display data in a different format from original one in the Model. The converting logic shall be implemented in ViewModel or developers can adopt a more reusable element **converter** that we will talk about in a [later section](../data_binding/converter.html).
 

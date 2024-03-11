@@ -6,7 +6,7 @@ Binder parses ZK bind annotations on ZULs to establish data binding relationship
 Typically ViewModel is just a POJO. As it has no knowledge about others, a ViewModel can only communicate with another one by binder. The binder
 is like a broker and uses ViewModel's meta data(annotation) and methods to help it communicate with others. **By default a binder subscribes to a desktop-scoped event queue**, thus event queue is a common communication mechanism among binders. There are 2 features: [global command binding](./global_command_binding.html) and [dynamic change notification](../viewmodel/notification.html) that operate based on this mechanism.
 
-![MVVM Binder](../images/Mvvm-binder.png)
+![MVVM Binder](/mvvm_ref/images/Mvvm-binder.png)
 
 ZK also allows you to change default queue name and scope that a binder subscribes. You can separate binders into different groups by changing queue's name and scope upon your requirement.The syntax is as follows:
 ```xml

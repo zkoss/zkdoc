@@ -37,7 +37,7 @@ Steps to use this feature:
 ```
 
 #### Basic usage screenshot
-![MVVM Children Binding](../images/Mvvm-children-binding.png)
+![MVVM Children Binding](/mvvm_ref/images/Mvvm-children-binding.png)
 
 Combine with Dynamic Template
 =============================
@@ -59,7 +59,7 @@ Here is an example to create a dynamic menu bar. If a menu item has no sub-menu,
 ```
 #### Dynamic menu bar screenshot
 
-![MVVM Dynamic Menu](../images/Mvvm-dynamic-menu.png)
+![MVVM Dynamic Menu](/mvvm_ref/images/Mvvm-dynamic-menu.png)
 
 Default Converter for Children Binding
 ======================================

@@ -3,7 +3,7 @@ In earlier versions like ZK 9.0, MVVM requires the creation of various server-si
 
 The client MVVM also starts from a ZUL and a ViewModel, but the binding information will be passed to the client-side with ZK widgets. When the widgets are created and rendered on a browser, the bindings will also be created at the same time. To clearly indicate 2 different MVVM features, we call server MVVM for the one before ZK 9. 
 
-![](../images/client_mvvm_mechanism.jpeg)
+![](/mvvm_ref/images/client_mvvm_mechanism.jpeg)
 
 The introduction of client MVVM in ZK 10 represents a significant evolution in the framework, particularly in how data binding and UI component management are handled. This new approach brings notable improvements in memory usage and overall performance, primarily due to key changes in the handling of UI components and data bindings. 
 

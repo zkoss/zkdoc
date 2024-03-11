@@ -173,7 +173,7 @@ The example above is to use a tree like data structure that the sub-template wil
 
 #### Dynamic menu bar screenshot
 
-![Mvvm-dynamic-menu](../images/Mvvm-dynamic-menu.png)
+![Mvvm-dynamic-menu](/mvvm_ref/images/Mvvm-dynamic-menu.png)
 
 Selection in Collection
 =======================
