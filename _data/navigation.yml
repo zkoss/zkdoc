@@ -3,16 +3,14 @@ main:
     url: /
   - title: "MVVM Reference"
     url: /mvvm_ref/intro/introduction_of_mvvm
-#  - title: "JavaDoc"
-#    url: //keikai.io/javadoc/latest/
 
 mvvm_ref:
-  - title: "MVVM Reference"
-    url: /mvvm_ref/intro
+  - title: "Introduction"
+    url: /mvvm_ref/intro/introduction_of_mvvm
     children:
-      - title: "Introduction"
-        url: /mvvm_ref/intro/introduction_of_mvvm
       - title: "Strength of MVVM"
         url: /mvvm_ref/intro/strength_of_mvvm
       - title: "MVVM & ZK Bind"
         url: /mvvm_ref/intro/mvvm_&_zk_bind
+      - title: "Detail Operation Flow"
+        url: /mvvm_ref/intro/detail_operation_flow
