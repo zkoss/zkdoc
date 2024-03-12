@@ -1,6 +1,6 @@
 main:
   - title: "Getting Started"
-    url: /
+    url: /get_started/get_started
   - title: "MVVM Reference"
     url: /mvvm_ref/intro/introduction_of_mvvm
 
