@@ -17,11 +17,11 @@ mvvm_ref:
     url: /mvvm_ref/intro/introduction_of_mvvm
     children:
       - title: "Strength of MVVM"
-        url: /mvvm_ref/intro/strength_of_mvvm
+        url: /mvvm_ref/intro/strength_of_mvvm/
       - title: "MVVM & ZK Bind"
-        url: /mvvm_ref/intro/mvvm_&_zk_bind
+        url: /mvvm_ref/intro/mvvm_&_zk_bind/
       - title: "Detail Operation Flow"
-        url: /mvvm_ref/intro/detail_operation_flow
+        url: /mvvm_ref/intro/detail_operation_flow/
   - title: "ViewModel"
     url: "/mvvm_ref/viewmodel/README"
     children:

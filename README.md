@@ -2,7 +2,15 @@
 
 
 # Document Folder Structure
-* [MVVM Reference](mvvm_ref)
+* each book has its own folder
+
+# highlight the current page in the sidebar
+make `page.url` equal to `child.url` with `permalik`:
+```yaml
+permalink: /get_started/Learn_ZK_in_10_Minutes
+```
+Because `page.url` ends with `.html` by default.
+
 
 # Preview at Local
 1. install necessary gem
@@ -55,3 +63,4 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 
 
 * from: https://github.com/benbalter/jekyll-remote-theme
+

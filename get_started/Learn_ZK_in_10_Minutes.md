@@ -1,3 +1,6 @@
+---
+permalink: /get_started/Learn_ZK_in_10_Minutes
+---
 # What is ZK
 
 ZK is a UI framework that enables you to build amazing web and mobile
