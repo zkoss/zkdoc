@@ -37,6 +37,11 @@ defaults:
       sidebar:
         nav: "get_started"
   - scope:
+      path: "essentials"
+    values:
+      sidebar:
+        nav: "essentials"
+  - scope:
       path: "mvvm_ref"
     values:
       sidebar:

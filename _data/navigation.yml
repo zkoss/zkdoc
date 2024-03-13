@@ -1,6 +1,8 @@
 main:
   - title: "Getting Started"
     url: /get_started/get_started
+  - title: "ZK Essentials"
+    url: /essentials/intro/overview
   - title: "MVVM Reference"
     url: /mvvm_ref/intro/introduction_of_mvvm
 
@@ -11,6 +13,107 @@ get_started:
     url: /get_started/Get_ZK_Up_and_Running_with_MVC
   - title: "Get ZK Up and Running with MVVM"
     url: /get_started/Get_ZK_Up_and_Running_with_MVVM
+
+essentials:
+  - title: "Introduction"
+    children:
+      - title: "Overview"
+        url: /essentials/intro/overview
+      - title: "Project Structure"
+        url: /essentials/intro/project_structure
+  - title: "1. User Interface and Layout"
+    url: /essentials/user_interface_and_layout/README
+    children:
+      - title: "Build the View"
+        url: /essentials/user_interface_and_layout/build_the_view
+      - title: "Include a Separate Page"
+        url: /essentials/user_interface_and_layout/include_a_separate_page
+      - title: "Apply CSS"
+        url: /essentials/user_interface_and_layout/apply_css
+  - title: "2. Controlling Components"
+    url: /essentials/controlling_components/README
+    children:
+      - title: "Fast Prototyping"
+        url: /essentials/controlling_components/in_zscript
+      - title: "In Controller"
+        url: /essentials/controlling_components/in_controller
+      - title: "By Data Binding"
+        url: /essentials/controlling_components/by_data_binding
+  - title: "3. Handling User Input"
+    url: /essentials/handling_user_input/README
+    children:
+      - title: "MVC Pattern"
+        url: /essentials/handling_user_input/mvc_approach
+        children:
+          - title: "Construct a Form Style Page"
+            url: /essentials/handling_user_input/mvc_approach/construct-a-form-style-page
+          - title: "Populate Components with Data"
+            url: /essentials/handling_user_input/mvc_approach/populate-components-with-data
+          - title: "Save & Reload Data"
+            url: /essentials/handling_user_input/mvc_approach/save-and-reload-data
+      - title: "MVVM Pattern"
+        url: /essentials/handling_user_input/mvvm_approach
+        children:
+          - title: "Construct a Form Style Page"
+            url: /essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
+          - title: "Load Data into Components"
+            url: /essentials/handling_user_input/mvvm_approach/load-data-to-components
+          - title: "Save & Reload Data"
+            url: /essentials/handling_user_input/mvvm_approach/save-and-reload-data
+  - title: "4. Implementing CRUD"
+    url: /essentials/implementing_crud/README
+    children:
+      - title: "MVC Pattern"
+        url: /essentials/implementing_crud/mvc_approach
+      - title: "MVVM Pattern"
+        url: /essentials/implementing_crud/mvvm_approach
+  - title: "5. Shadow Components"
+    url: /essentials/shadow_components/README
+    children:
+      - title: "Iterate a Collection"
+        url: /essentials/shadow_components/iterate_a_collection
+      - title: "Flow Control"
+        url: /essentials/shadow_components/flow_control
+      - title: "Reuse Components with a Template"
+        url: /essentials/shadow_components/reuse_components_with_template
+  - title: "6. Navigation and Template"
+    url: /essentials/navigation_and_template/README
+    children:
+      - title: "Page Based"
+        url: /essentials/navigation_and_template/page_based
+      - title: "AJAX Based - MVC"
+        url: /essentials/navigation_and_template/ajax_based
+      - title: "AJAX Based - MVVM"
+        url: /essentials/navigation_and_template/ajax_based_navigation_-_mvvm
+  - title: "7. Authentication"
+    url: /essentials/authentication/README
+    children:
+      - title: "Session"
+        url: /essentials/authentication/session
+      - title: "Secure Your Pages"
+        url: /essentials/authentication/secure_your_pages
+      - title: "Login"
+        url: /essentials/authentication/login
+      - title: "Logout"
+        url: /essentials/authentication/logout
+  - title: "8. Spring Integration"
+    url: /essentials/spring_integration/README
+    children:
+      - title: "Configuration"
+        url: /essentials/spring_integration/configuration
+      - title: "Register Spring Beans"
+        url: /essentials/spring_integration/register_spring_beans
+      - title: "Wire Spring Beans"
+        url: /essentials/spring_integration/wire_spring_beans
+  - title: "9. JPA Integration"
+    url: /essentials/jpa_integration/README
+    children:
+      - title: "Configuration"
+        url: /essentials/jpa_integration/configuration
+      - title: "DAO Implementation"
+        url: /essentials/jpa_integration/dao_implementation
+      - title: "Conclusion"
+        url: /essentials/jpa_integration/conclusion
 
 mvvm_ref:
   - title: "Introduction"
