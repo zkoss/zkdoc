@@ -4,6 +4,14 @@ main:
   - title: "MVVM Reference"
     url: /mvvm_ref/intro/introduction_of_mvvm
 
+get_started:
+  - title: "Learn ZK in 10 Minutes"
+    url: /get_started/Learn_ZK_in_10_Minutes
+  - title: "Get ZK Up and Running with MVC"
+    url: /get_started/Get_ZK_Up_and_Running_with_MVC
+  - title: "Get ZK Up and Running with MVVM"
+    url: /get_started/Get_ZK_Up_and_Running_with_MVVM
+
 mvvm_ref:
   - title: "Introduction"
     url: /mvvm_ref/intro/introduction_of_mvvm

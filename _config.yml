@@ -32,6 +32,11 @@ defaults:
       comments: true
       share: true
   - scope:
+      path: "get_started"
+    values:
+      sidebar:
+        nav: "get_started"
+  - scope:
       path: "mvvm_ref"
     values:
       sidebar:
