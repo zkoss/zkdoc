@@ -1,10 +1,10 @@
 main:
   - title: "Getting Started"
-    url: /get_started/get_started
-  - title: "ZK Essentials"
-    url: /essentials/intro/overview
-  - title: "MVVM Reference"
-    url: /mvvm_ref/intro/introduction_of_mvvm
+    url: /main/get_started
+  - title: "References"
+    url: /main/reference
+  - title: "API"
+    url: /main/api
 
 get_started:
   - title: "Learn ZK in 10 Minutes"
