@@ -1,0 +1,187 @@
+\_\_TOC\_\_
+
+# How ROD Improves Peformance
+
+With ZK EE, you can enable <b>Render on Demand</b> for Grid, Listbox, or
+Tree to boost performance when showing a huge amount of data. Grid and
+Listbox will load only the necessary data chunk from associated
+ListModel, render required Row(s)/Listitem(s) on the server, then create
+only the required corresponding widgets and render the DOM elements
+really needed in the browser. It improves the performance and saves
+memory significantly on both the server and browser sides.
+![](Rod_demonstration.gif "Rod_demonstration.gif")
+
+# Prerequisite
+
+If you want to fully leverage the power of ROD, using a ZK model object
+like `ListModel` is necessary.
+
+ROD actually brings a performance boost on both the client-side and
+server-side. However, if you use `forEach` to populate Rows or
+Listitems, the components will be all in memory, which does not give you
+any performance benefits on the server-side. (The client-side still
+enjoys a boost.)
+
+Notice that you can [ enable this feature in different
+scopes](ZK_Configuration_Reference/zk.xml/The_Library_Properties).
+
+# Grid
+
+If you want to enable Grid ROD for the whole application, you can
+specify a library property called <javadoc>org.zkoss.zul.Grid</javadoc>
+rod with `true`. For example, specify the following in zk.xml:
+
+``` xml
+<library-property>
+    <name>org.zkoss.zul.grid.rod</name>
+    <value>true</value>
+</library-property>
+```
+
+Or, if you prefer to enable it for a particular page, then specify
+`true` to a page's attribute called
+<javadoc>org.zkoss.zul.Grid</javadoc> rod, such as
+
+``` xml
+<custom-attributes org.zkoss.zul.grid.rod="true" scope="page"/>
+```
+
+Or, if you prefer to enable it for all descendant grids of a particular
+component, then specify `true` to the component's attribute. You can
+enable it for a subset of the descendant grids. For example,
+
+``` xml
+<window>
+  <custom-attributes org.zkoss.zul.grid.rod="true"/> <!-- enable it for descendant grids of window -->
+  <grid ...>
+    ..
+  </grid>
+  <div>
+    <custom-attributes org.zkoss.zul.grid.rod="false"/> <!-- disable it for descendant grids of div -->
+      <grid ...>
+        ..
+      </grid>
+      ..
+  </div>
+</window>
+```
+
+## Fixed Viewport is Required
+
+Note that Grid ROD will not work unless the Grid is configured with a
+limited <b>viewport</b>, so the user can see only a portion of rows;
+i.e. you have to set one of the following attributes:
+
+- `height`
+- `vflex`
+- `mold="paging"`
+- `visibleRows`
+
+## Specifies the number of rows rendered
+
+`[default: 100]`  
+`[inherit: true]`
+
+Specifies the minimum number of rows rendered on the client. It is only
+considered if Grid is using live data
+(<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
+not using paging mold
+(<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
+
+``` xml
+<custom-attributes org.zkoss.zul.grid.initRodSize="30"/>
+```
+
+# Listbox
+
+If you want to enable Listbox ROD for the whole application, you can
+specify a library property called
+<javadoc>org.zkoss.zul.Listbox</javadoc> rod with `true`. For example,
+specify the following in zk.xml:
+
+``` xml
+<library-property>
+    <name>org.zkoss.zul.listbox.rod</name>
+    <value>true</value>
+</library-property>
+```
+
+Or, if you prefer to enable it for a particular page, then specify
+`true` to a page's attribute called
+<javadoc>org.zkoss.zul.Listbox</javadoc> rod, such as
+
+``` xml
+<custom-attributes org.zkoss.zul.listbox.rod="true" scope="page"/>
+```
+
+Or, if you prefer to enable it for all descendant listboxs of a
+particular component, then specify `true` to the component's attribute.
+And, you can enable it for a subset of the descendant listboxs. For
+example,
+
+``` xml
+<window>
+  <custom-attributes org.zkoss.zul.listbox.rod="true"/> <!-- enable it for descendant listboxs of window -->
+  <listbox ...>
+    ..
+  </listbox>
+  <div>
+    <custom-attributes org.zkoss.zul.listbox.rod="false"/> <!-- disable it for descendant listboxs of div -->
+      <listbox ...>
+        ..
+      </listbox>
+      ..
+  </div>
+</window>
+```
+
+## Fixed Viewport is Required
+
+Note that Listbox ROD will not work unless the Listbox is configured
+with a limited <b>viewport</b>, so the user can see only a portion of
+listitems; i.e. you have to set one of the following attributes:
+
+- `height`
+- `vflex`
+- `rows`
+- `mold="paging"`
+
+## Specifies the number of items rendered
+
+`[default: 100]`  
+`[inherit: true]`
+
+Specifies the number of items rendered when the Listbox first renders.
+It is used only if live data
+(<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
+and not paging (\<mold="paging"\>).
+
+``` xml
+<custom-attributes org.zkoss.zul.listbox.initRodSize="30"/>
+```
+
+# Tree
+
+To turn off ROD for a tree, you need to specify [
+org.zkoss.zul.tree.initRodSize](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.tree.initRodSize)
+with -1:
+
+``` xml
+<custom-attributes org.zkoss.zul.tree.initRodSize="-1"/>
+```
+
+# Limitation
+
+`hflex="min"` [ has a not-resizing
+limitation](ZK_Developer%27s_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility_Doesn.27t_Change_a_Component.27s_Size_Dynamically),
+so if you specify it on a <grid>`/`<column>
+(<listbox>`/`<listheader>`, or `<tree>`/`<treecol>), a component doesn't
+resize the column when you scrolls down to see a wider item. Because the
+wider item is not rendered initially for render-on-demand. At the moment
+of calculating the width, the component doesn't count the wider item
+into width calculation.
+
+Grid and Listbox will enlarge their columns when you scroll down and
+render a wider item.
+
+{{ ZKDevelopersReferencePageFooter}}

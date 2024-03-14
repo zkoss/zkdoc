@@ -1,0 +1,52 @@
+A template is a ZUML fragment that defines how to create components. A
+template is enclosed with [the template
+element](ZUML_Reference/ZUML/Elements/template) as shown
+below.
+
+``` xml
+<window>
+    <template name="foo">
+      <textbox/>
+      <grid model=${data}>
+         <columns/>
+         <template name="model"> <!-- nested template -->
+            <row>Name: <textbox value="${each.name}"/></row>
+         </template>
+      </grid>
+   </template>
+...
+```
+
+A template can contain any ZUML elements you want, including other
+templates. When a ZUML document is interpreted, a template won't be
+interpreted immediately. Rather, it will be encapsulated as an instance
+of <javadoc type="interface">org.zkoss.zk.ui.util.Template</javadoc>,
+and be associated to a component. Then, the component or a tool can
+create the components repeatedly based on the template by invoking
+<javadoc type="interface" method="create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)">org.zkoss.zk.ui.util.Template</javadoc>.
+
+A component can be assigned with multiple templates. Each of them is
+identified by the **name** attribute.
+
+``` xml
+<div>
+    <template name="t1">
+        <grid model="${foo}"/>
+    </template>
+    <template name="t2">
+        <listbox model="${foo}"/>
+    </template>
+```
+
+How a template is used depends on the component it associates with and
+the tools you use. Currently, all components that support the concept of
+model allow you to specify a template to control how to render each
+item. In the following sections, we discuss them in details. If you'd
+like to know how to use templates manually in Java, please refer to [the
+UI Patterns: Templates
+section](ZK_Developer's_Reference/UI_Patterns/Templating/Templates).
+
+Notice that please read [the Listbox Template
+section](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template)
+first, even though you're rendering other kind of UI. It described the
+common concepts and tricks of using templates.
