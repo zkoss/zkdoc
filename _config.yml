@@ -46,6 +46,11 @@ defaults:
     values:
       sidebar:
         nav: "mvvm_ref"
+  - scope:
+      path: "jsp_tags_essentials"
+    values:
+      sidebar:
+          nav: "jsp_tags_essentials"
 
 comments:
   provider: "disqus"
