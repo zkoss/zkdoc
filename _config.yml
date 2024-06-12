@@ -51,6 +51,11 @@ defaults:
     values:
       sidebar:
           nav: "jsp_tags_essentials"
+  - scope:
+      path: "pivottable_essentials"
+    values:
+        sidebar:
+            nav: "pivottable_essentials"
 
 comments:
   provider: "disqus"
