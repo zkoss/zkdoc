@@ -56,6 +56,11 @@ defaults:
     values:
         sidebar:
             nav: "pivottable_essentials"
+  - scope:
+      path: "zkspring_essentials"
+    values:
+      sidebar:
+        nav: "zkspring_essentials"
 
 comments:
   provider: "disqus"

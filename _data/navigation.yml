@@ -396,3 +396,30 @@ pivottable_essentials:
         url: "/pivottable_essentials/zk_pivottable_jsp_tag/configure_zk_pivottable_jsp_tag"
       - title: "Using ZK Pivottable JSP Tag"
         url: "/pivottable_essentials/zk_pivottable_jsp_tag/using_zk_pivottable_jsp_tag"
+zkspring_essentials:
+  - title: "Introduction"
+    url: "/zkspring_essentials/introduction"
+  - title: "Getting Started with ZK Spring"
+    url: "/zkspring_essentials/getting_started_with_zk_spring"
+    children:
+      - title: "Setting Up ZK Spring"
+        url: "/zkspring_essentials/getting_started_with_zk_spring/setting_up_zk_spring"
+      - title: "Setting Up ZK Spring using Maven"
+        url: "/zkspring_essentials/getting_started_with_zk_spring/setting_up_zk_spring_using_maven"
+  - title: "Working with ZK Spring"
+    url: "/zkspring_essentials/working_with_zk_spring"
+    children:
+      - title: "Working with ZK Spring Core"
+        url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_core"
+        children:
+          - title: "Using Spring Variable Resolver"
+            url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_core/using_spring_variable_resolver"
+          - title: "Using Custom ZK Scopes For Spring Beans"
+            url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_core/using_custom_zk_scopes_for_spring_beans"
+      - title: "Working with ZK Spring Security"
+        url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_security"
+        children:
+          - title: "Secure a ZK Application with Spring Security"
+            url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_security/secure_a_zk_application_with_spring_security"
+          - title: "Add Security in the View Layer"
+            url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_security/add_security_in_the_view_layer"
