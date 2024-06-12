@@ -218,15 +218,15 @@ runtime.
 The `each` in line 7, 12 represents each item in ListModel, and in
 DemoComposer.java
 
-``` java
+```java
 @Wire
 Div host1;
-ListModelList<Person> model = new ListModelList<Person>(new ArrayList<Person>() {{
+ListModelList<Person> model = new ListModelList<Person>(new ArrayList<Person>() {
     add(new Person(true));
     add(new Person(false));
     add(new Person(false));
     add(new Person(true));
-}});
+});
 
 public void doAfterCompose(Component comp) throws Exception {
     super.doAfterCompose(comp);
@@ -248,7 +248,7 @@ public class MyCollectionTemplateResolver<E extends Person> implements Collectio
 public class Person {
     String name = "old name";
     boolean isMale = true;
-    .... getter and setter
+    // getter and setter
 }
 ```
 
