@@ -61,6 +61,11 @@ defaults:
     values:
       sidebar:
         nav: "zkspring_essentials"
+  - scope:
+      path: "calendar_essentials"
+    values:
+      sidebar:
+        nav: "calendar_essentials"
 
 comments:
   provider: "disqus"
