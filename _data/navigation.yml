@@ -446,14 +446,14 @@ calendar_essentials:
     url: "/calendar_essentials/working_with_2.1"
     children:
       - title: "Displaying ZK Calendar Event Data"
-        url: "/calendar_essentials/working_with_2.1/displaying_zk_calendar_event_data"
+        url: "/calendar_essentials/working_with_2_1/displaying_zk_calendar_event_data"
         children:
           - title: "Managing Event Data"
-            url: "/calendar_essentials/working_with_2.1/displaying_zk_calendar_event_data/managing_event_data"
+            url: "/calendar_essentials/working_with_2_1/managing_event_data"
           - title: "Storing Event Data in Memory"
-            url: "/calendar_essentials/working_with_2.1/displaying_zk_calendar_event_data/storing_event_data_in_memory"
+            url: "/calendar_essentials/working_with_2_1/storing_event_data_in_memory"
           - title: "Presenting Event Data"
-            url: "/calendar_essentials/working_with_2.1/displaying_zk_calendar_event_data/presenting_event_data"
+            url: "/calendar_essentials/working_with_2_1/presenting_event_data"
 chart_essentials:
   - title: "Introduction"
     url: "/chart_essentials/introduction"
