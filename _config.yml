@@ -71,6 +71,11 @@ defaults:
     values:
       sidebar:
         nav: "chart_essentials"
+  - scope:
+      path: "zats_essentials"
+    values:
+      sidebar:
+        nav: "zats_essentials"
 
 comments:
   provider: "disqus"
