@@ -66,6 +66,11 @@ defaults:
     values:
       sidebar:
         nav: "calendar_essentials"
+  - scope:
+      path: "chart_essentials"
+    values:
+      sidebar:
+        nav: "chart_essentials"
 
 comments:
   provider: "disqus"
