@@ -1,0 +1,62 @@
+The Widget Package Descriptor (WPD) is a file describing the information
+of a package, such as its widget classes and external JavaScript files.
+WPD must be named **zk.wpd** and placed in the same directory as the
+widget classes. For example we would place it under **web/js/com/foo**.
+
+Below is an example **zk.wpd** of our SimpleLabel.
+
+``` xml
+<package name="com.foo" language="xul/html">
+    <widget name="SimpleLabel"/>
+</package>
+```
+
+The table below describes the elements used within the above XML and
+their description.
+
+| Name    | Description                                                                                                     |
+|---------|-----------------------------------------------------------------------------------------------------------------|
+| package | The root element denotes the package name and the language it belongs to                                        |
+| widget  | The widget class name (without the package name). If the package contains multiple widgets list them one by one |
+
+Having created the configuration the basic implementation of our
+component is complete. However it will not have any interactive events.
+Therefore the next logical step is to start adding events to the
+component.
+
+# Package Dependence
+
+It is common for JavaScript packages to depend on another package. For
+example, `zul.grid` depends on `zul.mesh` and `zul.menu`. This can
+easily be specified by placing them within the `depends` attribute as
+follows.
+
+``` xml
+<package name="zul.grid" language="xul/html" depends="zul.mesh,zul.menu">
+    <widget name="Column"/>
+    <widget name="Columns"/>
+    <widget name="Grid"/>
+    <widget name="Row"/>
+    <widget name="Rows"/>
+    <widget name="Foot"/>
+    <widget name="Footer"/>
+</package>
+```
+
+# Including additonal JavaScript files
+
+If a JavaScript package has to include other JavaScript files, this can
+be done easily by specifying the file with the `script` element. For
+example, the following is the content of `zul.db`'s WPD:
+
+``` xml
+<package name="zul.db" language="xul/html" depends="zk.fmt,zul.inp">
+    <script src="datefmt.js"/>
+    <widget name="Calendar"/>
+    <widget name="Datebox"/>
+</package>
+```
+
+For more information, please refer to [ZK Client-side Reference: Widget
+Package
+Descriptor](ZK_Client-side_Reference/Widget_Package_Descriptor).

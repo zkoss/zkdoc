@@ -80,7 +80,12 @@ defaults:
       path: "client_side_ref"
     values:
       sidebar:
-        nav: "client_side_ref"
+        nav: "client_side_ref "
+  - scope:
+      path: "component_dev_essentials"
+    values:
+      sidebar:
+        nav: "component_dev_essentials "
 
 comments:
   provider: "disqus"
