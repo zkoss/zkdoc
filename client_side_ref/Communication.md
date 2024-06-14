@@ -1,0 +1,8 @@
+This section describes the communication between the server and the
+clients. The request sent from the client to the server is called the
+[AU
+requests](ZK_Client-side_Reference/Communication/AU_Requests),
+while the response from the server to the client is called the [AU
+responses](ZK_Client-side_Reference/Communication/AU_Responses).
+For browsers, they are actually based on Ajax.
+![](Communication.png "Communication.png")

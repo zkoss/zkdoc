@@ -76,6 +76,11 @@ defaults:
     values:
       sidebar:
         nav: "zats_essentials"
+  - scope:
+      path: "client_side_ref"
+    values:
+      sidebar:
+        nav: "client_side_ref"
 
 comments:
   provider: "disqus"
