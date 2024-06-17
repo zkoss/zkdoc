@@ -96,6 +96,11 @@ defaults:
     values:
       sidebar:
         nav: "zk_style_customization_guide "
+  - scope:
+      path: "zk_config_ref"
+    values:
+      sidebar:
+        nav: "zk_config_ref "
 
 comments:
   provider: "disqus"
