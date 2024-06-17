@@ -1,4 +1,4 @@
-\_\_TOC\_\_ This section outlines information on installing ZK JSP Tags.
+ This section outlines information on installing ZK JSP Tags.
 
 # Install ZK First
 
@@ -41,9 +41,7 @@ For projects depending on ZK **6.5.x**, add the following dependency:
 </dependency>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository) too.
 
 # Configuration of Direct ZK Context EL Support in web.xml
 
@@ -72,13 +70,3 @@ web.xml:
 </listener>
 ```
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-[^1]: If you didn't setup zk maven repository yet, you have to [ setup
-    zk maven
-    repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository)
-    too.

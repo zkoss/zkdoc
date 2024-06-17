@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 ZK JSP Tags fully supports JSP EL allowing EL expressions to access
 variables in both JSP world and ZK world, such as components.
@@ -148,8 +148,3 @@ iterator in generated ZK components, here the **\<custom-attribute
 </zk:page>
 ```
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

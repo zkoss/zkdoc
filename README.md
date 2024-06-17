@@ -64,3 +64,9 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 
 * from: https://github.com/benbalter/jekyll-remote-theme
 
+
+# Editor Guidelines
+## Sections to remove
+* "Version History" section. Using `# Version History(.|\n)*` to find and remove it.
+* `__TOC__`
+ 

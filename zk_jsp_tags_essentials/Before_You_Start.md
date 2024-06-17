@@ -1,4 +1,4 @@
-\_\_TOC\_\_ This section outlines what you are required to do before
+This section outlines what you are required to do before
 starting with ZK JSP Tags.
 
 # New to JSP
@@ -7,10 +7,8 @@ The aim of this guide is to provide for ZK web application developers
 who are already familiar with JSP technology. Hence, if you are new to
 JSP technology, please refer to these links below:
 
-- [Sun's official J2EE1.4 tutorial(See
-  CH12)](http://java.sun.com/j2ee/1.4/docs/tutorial/doc/)
+- [Sun's official J2EE1.4 tutorial(See CH12)](http://java.sun.com/j2ee/1.4/docs/tutorial/doc/)
 
-<!-- -->
 
 - [JSP Tutorial](http://www.jsptut.com/)
 
@@ -44,8 +42,3 @@ section before you start.
 - Download latest binary files from [ZK
   Download](http://www.zkoss.org/download/)
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

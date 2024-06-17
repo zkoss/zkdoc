@@ -36,8 +36,3 @@ Then, we can mix the use as shown below:
 </zk:window>
 ```
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

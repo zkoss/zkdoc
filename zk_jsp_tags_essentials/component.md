@@ -42,8 +42,3 @@ component's name. For example:
 As shown, the `tag` attribute specifies the name of the component
 defined in this JSP document.
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

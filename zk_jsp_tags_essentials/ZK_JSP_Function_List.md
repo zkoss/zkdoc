@@ -96,8 +96,3 @@ specification. The meaning of the status symbol is as bellow:
 |                        | The XHTML Components                                |                 | \*     |
 |                        |                                                     |                 |        |
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

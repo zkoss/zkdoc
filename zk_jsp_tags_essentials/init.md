@@ -22,15 +22,5 @@ Fir example,
 </zk:page>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
+Unlike ZUML, the attribute is called `use`, rather than `class`, because of the limitation of JSP.
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-[^1]: Unlike ZUML, the attribute is called `use`, rather than `class`,
-    because of the limitation of JSP
