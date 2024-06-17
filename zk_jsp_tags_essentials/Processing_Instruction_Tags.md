@@ -2,7 +2,7 @@ This section outlines details on processing instruction tags. The
 processing instruction tags are used to control how ZK JSP tags shall be
 handled.
 
-The shall be placed outside of <zk:page>. For example:
+The shall be placed outside of `<zk:page>`. For example:
 
 ``` xml
 
