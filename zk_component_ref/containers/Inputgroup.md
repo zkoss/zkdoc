@@ -77,5 +77,5 @@ The Inputgroup component can be used in various ways to enhance the user interfa
 
 ## Supported Children
 - [`Label`](../Essential_Components/Label.md)
-- [`InputElement`](../Base_Components/InputElement.md)
-- [`LabelImageElement`](../Base_Components/LabelImageElement.md)
+- [`InputElement`](../base_components/InputElement.md)
+- [`LabelImageElement`](../base_components/LabelImageElement.md)
