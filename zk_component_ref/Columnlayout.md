@@ -1,0 +1,193 @@
+# Columnlayout
+
+- Demonstration:
+  [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
+
+- Java API: <javadoc>org.zkoss.zkex.zul.Columnlayout</javadoc>
+
+- JavaScript API:
+  <javadoc directory="jsdoc">zkex.layout.Columnlayout</javadoc>
+
+- Style Guide:
+  [Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
+
+- 
+
+# Employment/Purpose
+
+A columnlayout is a layout which can have multiple columns while each
+column may have any number of panels placed vertically with different
+heights. When using Columnlayout, you have to assign width (either
+percent or pixel) on every
+[Columnchildren](ZK_Component_Reference/Layouts/Columnlayout/Columnchildren),
+otherwise the result may depend on the browser and may not be as
+expected.
+
+Each column may have any number of any type of components.
+
+# Example
+
+<figure>
+<img src="ZKComRef_Columnlayout_Example.png"
+title="ZKComRef_Columnlayout_Example.png" />
+<figcaption>ZKComRef_Columnlayout_Example.png</figcaption>
+</figure>
+
+``` xml
+    <columnlayout>
+        <columnchildren width="33%" style="padding: 5px">
+            <panel height="100px" title="column1-1" closable="true" collapsible="true"
+                   border="normal" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>Panel</panelchildren>
+            </panel>
+            <panel height="100px" framable="true" title="column1-2"
+                   border="normal" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>Panel</panelchildren>
+            </panel>
+            <panel height="100px" title="column1-3" border="normal"
+                   closable="true">
+                <panelchildren>Panel</panelchildren>
+            </panel>
+        </columnchildren>
+        <columnchildren width="33%" style="padding: 5px">
+            <panel height="100px" title="column2-1" closable="true" collapsible="true"
+                   border="normal" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>Panel</panelchildren>
+            </panel>
+        </columnchildren>
+        <columnchildren width="33%" style="padding: 5px">
+            <panel height="100px" title="column3-1" closable="true" collapsible="true"
+                   border="normal" maximizable="true" style="margin-bottom:10px">
+                <panelchildren>Panel</panelchildren>
+            </panel>
+        </columnchildren>
+    </columnlayout>
+```
+
+Each column may have any number of any type of components.
+
+<figure>
+<img src="ZKComRef_Columnlayout_Example_ZK6.png"
+title="ZKComRef_Columnlayout_Example_ZK6.png" />
+<figcaption>ZKComRef_Columnlayout_Example_ZK6.png</figcaption>
+</figure>
+
+``` xml
+<columnlayout>
+    <columnchildren width="30%" style="padding: 5px">
+        <window height="100px" title="column1-1" closable="true"
+            border="normal" maximizable="true" style="margin-bottom:10px">
+            Panel
+        </window>
+        <panel height="100px" framable="true" title="column1-2"
+            border="normal" maximizable="true" style="margin-bottom:10px">
+            <panelchildren>Panel</panelchildren>
+        </panel>
+        <panel height="100px" title="column1-3" border="normal"
+            closable="true">
+            <panelchildren>Panel</panelchildren>
+        </panel>
+    </columnchildren>
+    <columnchildren width="40%" style="padding: 5px">
+        <window id="dataWin" title="Data" maximizable="true" border="normal"
+            style="margin-bottom:10px">
+            <grid fixedLayout="true" style="border:0px"
+                height="100%">
+                <columns>
+                    <column label="category" />
+                    <column label="value" />
+                </columns>
+                <rows>
+                    <row>
+                        <label id="c0" value="C/C++" />
+                        <decimalbox id="v0"
+                            value="21." constraint="no empty" onChange="update(0)" />
+                    </row>
+                    <row>
+                        <label id="c1" value="VB" />
+                        <decimalbox id="v1"
+                            value="10." constraint="no empty" onChange="update(1)" />
+                    </row>
+                    <row>
+                        <label id="c2" value="Java" />
+                        <decimalbox id="v2"
+                            value="40." constraint="no empty" onChange="update(2)" />
+                    </row>
+                    <row>
+                        <label id="c3" value="PHP" />
+                        <decimalbox id="v3"
+                            value="28." constraint="no empty" onChange="update(3)" />
+                    </row>
+                </rows>
+            </grid>
+        </window>
+        <vbox>
+            <checkbox label="3D Chart" checked="true"
+                onCheck="mychart.setThreeD(self.isChecked())" />
+            <chart id="mychart" title="Pie Chart Demo"
+                width="320px" type="pie" threeD="true" fgAlpha="128">
+                <attribute name="onClick"><![CDATA[
+                    String areaid = event.getArea();
+                    if (areaid != null) {
+                        Area area = self.getFellow(areaid);
+                        alert("" + area.getAttribute("entity") + ":" + area.getTooltiptext());
+                    }
+                ]]></attribute>
+                <zscript><![CDATA[
+                    void update(int rowIndex) {
+                        Window dataWin = self.getParent().getParent().getFellow("dataWin");
+                        Label lb = (Label) dataWin.getFellow("c" + rowIndex);
+                        Decimalbox db = (Decimalbox) dataWin.getFellow("v" + rowIndex);
+                        model.setValue(lb.value, new Double(db.getValue().doubleValue()));
+                    }
+                    PieModel model = new SimplePieModel();
+                    for (int j = 0; j < 4; ++j) {
+                        update(j);
+                    }
+                    mychart.setModel(model);
+                ]]></zscript>
+            </chart>
+        </vbox>
+    </columnchildren>
+</columnlayout>
+```
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+
+# Supported Children
+
+[Columnchildren](ZK_Component_Reference/Layouts/Columnlayout/Columnchildren)
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |

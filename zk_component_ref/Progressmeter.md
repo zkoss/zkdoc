@@ -1,0 +1,74 @@
+# Progressmeter
+
+- Demonstration:
+  [Progressmeter](http://www.zkoss.org/zkdemo/effects/upload_effect)
+- Java API: <javadoc>org.zkoss.zul.Progressmeter</javadoc>
+- JavaScript API:
+  <javadoc directory="jsdoc">zul.wgt.Progressmeter</javadoc>
+- Style Guide: [
+  Progressmeter](ZK_Style_Guide/XUL_Component_Specification/Progressmeter)
+
+# Employment/Purpose
+
+A progress meter is a bar that indicates how much of a task has been
+completed. The value property must be in the range between 0 and 100.
+
+# Example
+
+<figure>
+<img src="ZKComRef_Progressmeter_Example.PNG"
+title="ZKComRef_Progressmeter_Example.PNG" />
+<figcaption>ZKComRef_Progressmeter_Example.PNG</figcaption>
+</figure>
+
+``` xml
+     <progressmeter value="10"/>
+```
+
+# Properties
+
+## Indeterminate
+
+If true, the progressmeter will show an indeterminate animation and the
+real value of the progressmeter will be hidden.(default false)
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+
+# Supported Children
+
+`*NONE`
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Version History
+
+| Version | Date      | Content                                                                                                            |
+|---------|-----------|--------------------------------------------------------------------------------------------------------------------|
+|         |           |                                                                                                                    |
+| 8.6.1   | Jan, 2019 | [ZK-3629](https://tracker.zkoss.org/browse/ZK-3629): use the progressmeter to indicate a long operation is so hard |

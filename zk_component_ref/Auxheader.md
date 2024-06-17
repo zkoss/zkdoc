@@ -1,0 +1,228 @@
+# Auxheader
+
+- Demonstration: [Grid (Merged
+  Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
+- Java API: <javadoc>org.zkoss.zul.Auxheader</javadoc>
+- JavaScript API:
+  <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
+- Style Guide: [
+  Auxhead](ZK_Style_Guide/XUL_Component_Specification/Auxhead)
+
+# Employment/Purpose
+
+The auxiliary headers support the colspan and rowspan properties which
+allows itself to be spanned across several columns/rows. Auxiliary
+headers should be accompanied with columns/listhead/treecols when used
+with grid/listbox/tree.
+
+# Example
+
+An auxiliary header.
+
+![](ZKComRef_Auxheader.png)
+
+``` xml
+
+<grid>
+    <auxhead>
+        <auxheader label="H1'07" colspan="6" />
+        <auxheader label="H2'07" colspan="6" />
+    </auxhead>
+    <auxhead>
+        <auxheader label="Q1" colspan="3" />
+        <auxheader label="Q2" colspan="3" />
+        <auxheader label="Q3" colspan="3" />
+        <auxheader label="Q4" colspan="3" />
+    </auxhead>
+    <columns>
+        <column label="Jan" />
+        <column label="Feb" />
+        <column label="Mar" />
+        <column label="Apr" />
+        <column label="May" />
+        <column label="Jun" />
+        <column label="Jul" />
+        <column label="Aug" />
+        <column label="Sep" />
+        <column label="Oct" />
+        <column label="Nov" />
+        <column label="Dec" />
+    </columns>
+    <rows>
+        <row>
+            <label value="1,000" />
+            <label value="1,100" />
+            <label value="1,200" />
+            <label value="1,300" />
+            <label value="1,400" />
+            <label value="1,500" />
+            <label value="1,600" />
+            <label value="1,700" />
+            <label value="1,800" />
+            <label value="1,900" />
+            <label value="2,000" />
+            <label value="2,100" />
+        </row>
+    </rows>
+</grid>
+```
+
+# The Limitation of rowspan
+
+For better performance, every instance of
+[Column](ZK_Component_Reference/Data/Grid/Column) will create
+an invisible HTML TH element called *faker*. However, with some complex
+combination of `rowspan` and `colspan`, Grid might not be able to
+generate the correct number of *faker* to represent each column.
+
+For example, it is wrong if the number of the column components are not
+the same as the number of columns in each row as shown below:
+
+``` xml
+<grid width="200px">
+    <auxhead>
+        <auxheader label="A" rowspan="2" />
+        <auxheader label="BC" colspan="2" />
+        <auxheader label="D" rowspan="2" />
+    </auxhead>
+    <columns><!-- this is wrong since the number of column components is smaller -->
+        <column label="B"/>
+        <column label="C"/>
+    </columns>
+    <rows>
+        <row>
+            <label forEach="E,F,G,H" value="${each}"/><!-- four columns -->
+        </row>
+    </rows>
+</grid>
+```
+
+<figure>
+<img src="Auxheader_rowspan_limitation.jpg"
+title="Auxheader_rowspan_limitation.jpg" />
+<figcaption>Auxheader_rowspan_limitation.jpg</figcaption>
+</figure>
+
+As shown above, the column with label C will be invisible, because the
+fakers are not created correctly. Here is the result but wrong DOM
+structure:
+
+<figure>
+<img src="Auxheader_rowspan_limitation01.jpg"
+title="Auxheader_rowspan_limitation01.jpg" />
+<figcaption>Auxheader_rowspan_limitation01.jpg</figcaption>
+</figure>
+
+There is a simple workaround: specify all columns. If you don't want to
+show all columns, you could use Auxheader instead of Column, and then
+add an empty
+[Columns](ZK_Component_Reference/Data/Grid/Columns). For
+example, the code in the previous example can be fixed as follows:
+
+``` xml
+<grid width="200px">
+    <auxhead>
+        <auxheader label="A" rowspan="2" />
+        <auxheader label="BC" colspan="2" />
+        <auxheader label="D" rowspan="2" />
+    </auxhead>
+    <auxhead>
+        <auxheader label="B"/>
+        <auxheader label="C"/>
+    </auxhead>
+    <columns/> <!-- use an empty columns to make fakers created correctly -->
+    <rows>
+        <row>
+            <label forEach="E,F,G,H" value="${each}"/>
+        </row>
+    </rows>
+</grid>
+```
+
+<figure>
+<img src="Auxheader_rowspan_limitation02.jpg"
+title="Auxheader_rowspan_limitation02.jpg" />
+<figcaption>Auxheader_rowspan_limitation02.jpg</figcaption>
+</figure>
+
+The other limitation is that the width of the Auxheader component depend
+on the Column component. Thus, if you'd like to specify the width in the
+Column component, it means it will take some space even when there are
+no label in all Column components. The workaround is simple: make the
+empty Columns component invisible. For example,
+
+``` xml
+<grid width="350px">
+    <auxhead>
+        <auxheader label="A" rowspan="2" />
+        <auxheader label="BC" colspan="2" />
+        <auxheader label="D" rowspan="2" />
+    </auxhead>
+    <auxhead>
+        <auxheader label="B"/>
+        <auxheader label="C"/>
+    </auxhead>
+    <columns visible="false"><!-- make it invisible -->
+        <column width="100px"/><!-- specify width here -->
+        <column width="150px"/>
+        <column width="50px"/>
+        <column width="50px"/>
+    </columns>
+    <rows>
+        <row>
+            <label forEach="E,F,G,H" value="${each}"/>
+        </row>
+    </rows>
+</grid>
+```
+
+<figure>
+<img src="Auxheader_rowspan_limitation03.jpg"
+title="Auxheader_rowspan_limitation03.jpg" />
+<figcaption>Auxheader_rowspan_limitation03.jpg</figcaption>
+</figure>
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/HeaderElement#Supported_Events)
+
+# Supported Children
+
+`*ALL`
+
+# Restrictions
+
+Noticed that it's forbidden to set width/height/hflex/vflex in
+Auxheader.
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |

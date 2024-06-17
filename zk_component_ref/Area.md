@@ -1,0 +1,109 @@
+# Area
+
+- Demonstration: N/A
+- Java API: <javadoc>org.zkoss.zul.Area</javadoc>
+- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Area</javadoc>
+- Style Guide: N/A
+
+# Employment/Purpose
+
+An area of a image map. Instead of the application processing the
+coordinates, developers can add the area components as children of a
+imagemap component thus defining a target. The imagemap component will
+translate the mouse pointer coordinates into a logical name ie. The id
+of the area the user clicked.
+
+# Example
+
+``` xml
+<imagemap src="/img/sun.jpg" onClick="alert(event.area)">
+    <area id="First" coords="0, 0, 100, 100"/>
+    <area id="Second" shape="circle" coords="200, 200, 100"/>
+</imagemap>
+```
+
+# The shape Property
+
+An area component supports three kinds of shapes: circle, polygon and
+rectangle. The coordinates of the mouse position are screen pixels
+counted from the upper-left corner of the image beginning with (0, 0).
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Shape</p>
+</center></th>
+<th><center>
+<p>Coordinates / Description</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>circle</p></td>
+<td><p>coords="x, y, r"</p>
+<p>where <code>x</code> and <code>y</code> define the position of the
+circle’s center and <code>r</code> is the radius in pixels.</p></td>
+</tr>
+<tr class="even">
+<td><p>polygon</p></td>
+<td><p>coords="x1, y1, x2, y2, x3, y3..."</p>
+<p>where each pair of <code>x</code> and <code>y</code> define a point
+of the polygon. At least three pairs of coordinates are required to
+define a triangle. The polygon is automatically closed, so it is not
+necessary to repeat the first coordinate at the end of the list to close
+the region.</p></td>
+</tr>
+<tr class="odd">
+<td><p>rectangle</p></td>
+<td><p>coords="x1, y1, x2, y2"</p>
+<p>where the first coordinate pair is one corner of the rectangle and
+the other pair is the corner diagonally opposite. A rectangle is just a
+shortened way of specifying a polygon with four vertices.</p></td>
+</tr>
+</tbody>
+</table>
+
+If the coordinates in one `area` component overlap with another, the
+first one takes precedence.
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  AbstractComponent](ZK_Component_Reference/Base_Components/AbstractComponent#Supported_Events)
+
+# Supported Children
+
+`*None`
+
+# Use Cases
+
+| Version | Description                | Example Location                              |
+|---------|----------------------------|-----------------------------------------------|
+| 5.0.2   | Area in Imagemap with href | <http://www.zkoss.org/forum/listComment/3016> |
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |

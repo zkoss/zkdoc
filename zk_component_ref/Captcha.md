@@ -1,0 +1,76 @@
+# Captcha
+
+- Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
+- Java API: <javadoc>org.zkoss.zul.Captcha</javadoc>
+- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Captcha</javadoc>
+- Style Guide: N/A
+- [Available in ZK PE and EE
+  only](http://www.zkoss.org/product/edition.dsp)
+
+# Employment/Purpose
+
+A `captcha` component can generate a special distortion image, also
+called a CAPTCHA (Completely Automated Public Turing test to tell
+Computers and Humans Apart) image. Developers could set `height`and
+`width`for dimension of captcha. By default, captcha render the image
+with a randomly generated text, and developers can set `value`to assign
+a purposive text.
+
+# Example
+
+![](captcha.png)
+
+``` xml
+ <vbox>
+     <captcha id="cpa" length="5" width="200px" height="50px"/>
+ </vbox>
+```
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>None</p></td>
+<td><p>None</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  Image](ZK_Component_Reference/Essential_Components/Image#Supported_Events)
+
+# Supported Children
+
+`*NONE`
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Troubleshooting
+
+## Linux
+
+Captcha depends on Java Swing that might not work under some version of
+JVM. For the information to make it work under Linux, please refer to
+[ZK Installation Guide:
+Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |

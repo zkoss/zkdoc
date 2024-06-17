@@ -1,0 +1,121 @@
+# Group
+
+- Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
+
+- Java API: <javadoc>org.zkoss.zul.Group</javadoc>
+
+- JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
+
+- Style Guide: [
+  Group](ZK_Style_Guide/XUL_Component_Specification/Group)
+
+- 
+
+# Employment/Purpose
+
+Adds the ability for single level grouping to the [
+Grid](ZK_Component_Reference/Data/Grid).
+
+Default getSclass(): the same as grid's sclass.
+
+# Example
+
+<figure>
+<img src="ZKComRef_Group_Example.png"
+title="ZKComRef_Group_Example.png" />
+<figcaption>ZKComRef_Group_Example.png</figcaption>
+</figure>
+
+``` xml
+<?xml version="1.0" encoding="UTF-8"?>
+ <zk>
+     Grid support Groupfoot in Group
+ 
+     <grid id="grid" width="500px">
+         <columns id="h" sizable="true">
+             <column id="col1" label="Type"/>
+             <column id="col2" label="Content"/>
+         </columns>
+         <rows id="rows">
+             <group id="gp1">
+             <label value="Group1: (gp1)"/>
+             <label value="Group1:"/>
+             </group>
+             <row>
+                 <label value="File:"/>
+                 <label value="File:"/>
+             </row>
+             <row id="row1">
+                 <label value="Type:"/>
+                 <hbox>
+                     <listbox rows="1" mold="select">
+                         <listitem label="Java Files,(*.java)"/>
+                         <listitem label="All Files,(*.*)"/>
+                     </listbox>
+                     <button label="Browse..."/>
+                 </hbox>
+             </row>
+             <groupfoot>
+                 <label value="2 Java Files"/>
+                 <label value="10 Files"/>
+             </groupfoot>
+             <group id="gp2" label="Group 2 (gp2)" onOpen='alert("Group is open: "+self.open);'/>
+             <row>
+                 <label value="Options:"/>
+                 <label value="Options:"/>
+             </row>
+             <groupfoot>    
+                 <label value="2 Options"/>
+                 <label value="10 Options"/>
+             </groupfoot>
+         </rows>
+     </grid>
+ </zk>
+```
+
+# Supported Events
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Event Type</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><center>
+<p><code>onOpen</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> Denotes user has
+opened or closed a component. Note:</p>
+<p>unlike <code>onClose</code>, this event is only a notification. The
+client sends this event after opening or closing the component.</p>
+<p>It is useful to implement load-on-demand by listening to the
+<code>onOpen</code> event, and creating components when the first time
+the component is opened.</p></td>
+</tr>
+</tbody>
+</table>
+
+- Inherited Supported Events: [
+  Row](ZK_Component_Reference/Data/Grid/Row#Supported_Events)
+
+# Supported Children
+
+`*ALL`
+
+# Use Cases
+
+[ Grid](ZK_Component_Reference/Data/Grid#Use_Cases)
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |
