@@ -91,6 +91,11 @@ defaults:
     values:
       sidebar:
         nav: "zk_installation_guide "
+  - scope:
+      path: "zk_style_customization_guide"
+    values:
+      sidebar:
+        nav: "zk_style_customization_guide "
 
 comments:
   provider: "disqus"
