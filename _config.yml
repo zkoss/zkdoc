@@ -37,70 +37,75 @@ defaults:
       sidebar:
         nav: "get_started"
   - scope:
-      path: "essentials"
+      path: "zk_essentials"
     values:
       sidebar:
-        nav: "essentials"
+        nav: "zk_essentials"
   - scope:
-      path: "mvvm_ref"
+      path: "zk_mvvm_ref"
     values:
       sidebar:
-        nav: "mvvm_ref"
+        nav: "zk_mvvm_ref"
   - scope:
-      path: "jsp_tags_essentials"
+      path: "zk_jsp_tags_essentials"
     values:
       sidebar:
-          nav: "jsp_tags_essentials"
+          nav: "zk_jsp_tags_essentials"
   - scope:
-      path: "pivottable_essentials"
+      path: "zk_pivottable_essentials"
     values:
         sidebar:
-            nav: "pivottable_essentials"
+            nav: "zk_pivottable_essentials"
   - scope:
-      path: "zkspring_essentials"
+      path: "zk_spring_essentials"
     values:
       sidebar:
-        nav: "zkspring_essentials"
+        nav: "zk_spring_essentials"
   - scope:
       path: "zk_calendar_essentials"
     values:
       sidebar:
         nav: "zk_calendar_essentials"
   - scope:
-      path: "chart_essentials"
+      path: "zk_chart_essentials"
     values:
       sidebar:
-        nav: "chart_essentials"
+        nav: "zk_chart_essentials"
   - scope:
       path: "zats_essentials"
     values:
       sidebar:
         nav: "zats_essentials"
   - scope:
-      path: "client_side_ref"
+      path: "zk_client_side_ref"
     values:
       sidebar:
-        nav: "client_side_ref "
+        nav: "zk_client_side_ref"
   - scope:
-      path: "component_dev_essentials"
+      path: "zk_component_dev_essentials"
     values:
       sidebar:
-        nav: "component_dev_essentials "
+        nav: "zk_component_dev_essentials"
   - scope:
       path: "zk_installation_guide"
     values:
       sidebar:
-        nav: "zk_installation_guide "
+        nav: "zk_installation_guide"
   - scope:
       path: "zk_style_customization_guide"
     values:
       sidebar:
-        nav: "zk_style_customization_guide "
+        nav: "zk_style_customization_guide"
   - scope:
       path: "zk_config_ref"
     values:
       sidebar:
-        nav: "zk_config_ref "
+        nav: "zk_config_ref"
+  - scope:
+      path: "zk_component_ref"
+    values:
+      sidebar:
+        nav: "zk_component_ref"
 
 comments:
   provider: "disqus"
