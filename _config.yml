@@ -62,10 +62,10 @@ defaults:
       sidebar:
         nav: "zkspring_essentials"
   - scope:
-      path: "calendar_essentials"
+      path: "zk_calendar_essentials"
     values:
       sidebar:
-        nav: "calendar_essentials"
+        nav: "zk_calendar_essentials"
   - scope:
       path: "chart_essentials"
     values:

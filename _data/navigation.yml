@@ -14,7 +14,7 @@ get_started:
   - title: "Get ZK Up and Running with MVVM"
     url: /get_started/Get_ZK_Up_and_Running_with_MVVM
 
-essentials:
+zk_essentials:
   - title: "Introduction"
     children:
       - title: "Overview"
@@ -115,7 +115,7 @@ essentials:
       - title: "Conclusion"
         url: /essentials/jpa_integration/conclusion
 
-mvvm_ref:
+zk_mvvm_ref:
   - title: "Introduction"
     url: /mvvm_ref/intro/introduction_of_mvvm
     children:
@@ -320,34 +320,34 @@ mvvm_ref:
         url: "/mvvm_ref/syntax/otherwise"
       - title: "when"
         url: "/mvvm_ref/syntax/when"
-jsp_tags_essentials:
+zk_jsp_tags_essentials:
   - title: "Before You Start"
-    url: "/jsp_tags_essentials/before_you_start"
+    url: "/zk_jsp_tags_essentials/before_you_start"
   - title: "Installation"
-    url: "/jsp_tags_essentials/installation"
+    url: "/zk_jsp_tags_essentials/installation"
   - title: "Working with ZK JSP Tags"
-    url: "/jsp_tags_essentials/working_with_zk_jsp_tags"
+    url: "/zk_jsp_tags_essentials/working_with_zk_jsp_tags"
     children:
       - title: "Overview"
-        url: "/jsp_tags_essentials/working_with_zk_jsp_tags/overview"
+        url: "/zk_jsp_tags_essentials/working_with_zk_jsp_tags/overview"
       - title: "Mix ZK JSP Tags with Other Tag Libraries"
-        url: "/jsp_tags_essentials/working_with_zk_jsp_tags/mix_zk_jsp_tags_with_other_tag_libraries"
+        url: "/zk_jsp_tags_essentials/working_with_zk_jsp_tags/mix_zk_jsp_tags_with_other_tag_libraries"
       - title: "EL and ZK JSP Tags"
-        url: "/jsp_tags_essentials/working_with_zk_jsp_tags/el_and_zk_jsp_tags"
+        url: "/zk_jsp_tags_essentials/working_with_zk_jsp_tags/el_and_zk_jsp_tags"
       - title: "Make Your Component as a JSP Tag"
-        url: "/jsp_tags_essentials/working_with_zk_jsp_tags/make_your_component_as_a_jsp_tag"
+        url: "/zk_jsp_tags_essentials/working_with_zk_jsp_tags/make_your_component_as_a_jsp_tag"
   - title: "Processing Instruction Tags"
-    url: "/jsp_tags_essentials/processing_instruction_tags"
+    url: "/zk_jsp_tags_essentials/processing_instruction_tags"
     children:
       - title: "component"
-        url: "/jsp_tags_essentials/processing_instruction_tags/component"
+        url: "/zk_jsp_tags_essentials/processing_instruction_tags/component"
       - title: "init"
-        url: "/jsp_tags_essentials/processing_instruction_tags/init"
+        url: "/zk_jsp_tags_essentials/processing_instruction_tags/init"
       - title: "variable-resolver"
-        url: "/jsp_tags_essentials/processing_instruction_tags/variable_resolver"
+        url: "/zk_jsp_tags_essentials/processing_instruction_tags/variable_resolver"
   - title: "ZK JSP Function List"
-    url: "/jsp_tags_essentials/zk_jsp_function_list"
-pivottable_essentials:
+    url: "/zk_jsp_tags_essentials/zk_jsp_function_list"
+zk_pivottable_essentials:
   - title: "Quick Start"
     url: "/pivottable_essentials/quick_start"
     children:
@@ -423,79 +423,79 @@ zkspring_essentials:
             url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_security/secure_a_zk_application_with_spring_security"
           - title: "Add Security in the View Layer"
             url: "/zkspring_essentials/working_with_zk_spring/working_with_zk_spring_security/add_security_in_the_view_layer"
-calendar_essentials:
+zk_calendar_essentials:
   - title: "Introduction"
-    url: "/calendar_essentials/introduction"
+    url: "/zk_calendar_essentials/introduction"
   - title: "Getting Started with ZK Calendar"
-    url: "/calendar_essentials/getting_started_with_zk_calendar"
+    url: "/zk_calendar_essentials/getting_started_with_zk_calendar"
   - title: "Component Attributes"
-    url: "/calendar_essentials/component_attributes"
+    url: "/zk_calendar_essentials/component_attributes"
   - title: "Displaying Calendar Items"
-    url: "/calendar_essentials/displaying_calendar_items"
+    url: "/zk_calendar_essentials/displaying_calendar_items"
   - title: "Implementing Event Listeners"
-    url: "/calendar_essentials/implementing_event_listeners"
+    url: "/zk_calendar_essentials/implementing_event_listeners"
   - title: "CRUD Calendar Items"
-    url: "/calendar_essentials/crud_calendar_items"
+    url: "/zk_calendar_essentials/crud_calendar_items"
   - title: "Multiple Timezones"
-    url: "/calendar_essentials/multiple_timezones"
+    url: "/zk_calendar_essentials/multiple_timezones"
   - title: "Themes"
-    url: "/calendar_essentials/themes"
+    url: "/zk_calendar_essentials/themes"
   - title: "Customization"
-    url: "/calendar_essentials/customization"
+    url: "/zk_calendar_essentials/customization"
   - title: "Working with 2.1"
-    url: "/calendar_essentials/working_with_2.1"
+    url: "/zk_calendar_essentials/working_with_2.1"
     children:
       - title: "Displaying ZK Calendar Event Data"
-        url: "/calendar_essentials/working_with_2_1/displaying_zk_calendar_event_data"
+        url: "/zk_calendar_essentials/working_with_2_1/displaying_zk_calendar_event_data"
         children:
           - title: "Managing Event Data"
-            url: "/calendar_essentials/working_with_2_1/managing_event_data"
+            url: "/zk_calendar_essentials/working_with_2_1/managing_event_data"
           - title: "Storing Event Data in Memory"
-            url: "/calendar_essentials/working_with_2_1/storing_event_data_in_memory"
+            url: "/zk_calendar_essentials/working_with_2_1/storing_event_data_in_memory"
           - title: "Presenting Event Data"
-            url: "/calendar_essentials/working_with_2_1/presenting_event_data"
-chart_essentials:
+            url: "/zk_calendar_essentials/working_with_2_1/presenting_event_data"
+zk_chart_essentials:
   - title: "Introduction"
-    url: "/chart_essentials/introduction"
+    url: "/zk_chart_essentials/introduction"
   - title: "Example Code"
-    url: "/chart_essentials/example_code"
+    url: "/zk_chart_essentials/example_code"
   - title: "Getting Started with ZK Charts"
-    url: "/chart_essentials/getting_started_with_zk_charts"
+    url: "/zk_chart_essentials/getting_started_with_zk_charts"
     children:
       - title: "Setting Up ZK Charts"
-        url: "/chart_essentials/getting_started_with_zk_charts/setting_up_zk_charts"
+        url: "/zk_chart_essentials/getting_started_with_zk_charts/setting_up_zk_charts"
       - title: "Create your first ZK Charts"
-        url: "/chart_essentials/getting_started_with_zk_charts/create_your_first_zk_charts"
+        url: "/zk_chart_essentials/getting_started_with_zk_charts/create_your_first_zk_charts"
   - title: "Working with ZK Charts"
-    url: "/chart_essentials/working_with_zk_charts"
+    url: "/zk_chart_essentials/working_with_zk_charts"
     children:
       - title: "Changing Chart Configuration"
-        url: "/chart_essentials/working_with_zk_charts/changing_chart_configuration"
+        url: "/zk_chart_essentials/working_with_zk_charts/changing_chart_configuration"
       - title: "Manipulating Chart Model"
-        url: "/chart_essentials/working_with_zk_charts/manipulating_chart_model"
+        url: "/zk_chart_essentials/working_with_zk_charts/manipulating_chart_model"
       - title: "Using Series"
-        url: "/chart_essentials/working_with_zk_charts/using_series"
+        url: "/zk_chart_essentials/working_with_zk_charts/using_series"
       - title: "Handling Chart Events"
-        url: "/chart_essentials/working_with_zk_charts/handling_chart_events"
+        url: "/zk_chart_essentials/working_with_zk_charts/handling_chart_events"
       - title: "Customizing Chart Style"
-        url: "/chart_essentials/working_with_zk_charts/customizing_chart_style"
+        url: "/zk_chart_essentials/working_with_zk_charts/customizing_chart_style"
       - title: "Drill Down"
-        url: "/chart_essentials/working_with_zk_charts/drill_down"
+        url: "/zk_chart_essentials/working_with_zk_charts/drill_down"
       - title: "Exporting"
-        url: "/chart_essentials/working_with_zk_charts/exporting"
+        url: "/zk_chart_essentials/working_with_zk_charts/exporting"
       - title: "Drag Points"
-        url: "/chart_essentials/working_with_zk_charts/drag_points"
+        url: "/zk_chart_essentials/working_with_zk_charts/drag_points"
       - title: "MVVM Pattern"
-        url: "/chart_essentials/working_with_zk_charts/mvvm_pattern"
+        url: "/zk_chart_essentials/working_with_zk_charts/mvvm_pattern"
       - title: "Display Large Number of Data"
-        url: "/chart_essentials/working_with_zk_charts/display_large_number_of_data"
+        url: "/zk_chart_essentials/working_with_zk_charts/display_large_number_of_data"
   - title: "Troubleshooting"
-    url: "/chart_essentials/troubleshooting"
+    url: "/zk_chart_essentials/troubleshooting"
     children:
       - title: "1000 Points Threshold"
-        url: "/chart_essentials/troubleshooting/1000_points_threshold"
+        url: "/zk_chart_essentials/troubleshooting/1000_points_threshold"
       - title: "Unknown widget: chart.Charts"
-        url: "/chart_essentials/troubleshooting/unknown_widget_chart_charts"
+        url: "/zk_chart_essentials/troubleshooting/unknown_widget_chart_charts"
 zats_essentials:
   - title: "Introduction"
     url: "/zats_essentials/introduction"
@@ -578,7 +578,7 @@ zats_essentials:
             url: "/zats_essentials/echo_event_handling"
   - title: "FAQ"
     url: "/zats_essentials/faq"
-client_side_ref:
+zk_client_side_ref:
   - title: "Introduction"
     url: "/client_side_ref/introduction"
     children:
@@ -712,7 +712,7 @@ client_side_ref:
         url: "/client_side_ref/script"
       - title: "widget"
         url: "/client_side_ref/widget"
-component_dev_essentials:
+zk_component_dev_essentials:
   - title: "ZK Component Overview"
     url: "/component_dev_essentials/zk_component_overview"
     children:
