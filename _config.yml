@@ -86,6 +86,11 @@ defaults:
     values:
       sidebar:
         nav: "component_dev_essentials "
+  - scope:
+      path: "zk_installation_guide"
+    values:
+      sidebar:
+        nav: "zk_installation_guide "
 
 comments:
   provider: "disqus"
