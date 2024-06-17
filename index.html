@@ -1,8 +1,102 @@
-<!doctype html>
-<html>
-  <head>
-    <script>
-      window.location.href = window.location.href + 'mvvm_ref/intro/introduction_of_mvvm'
-    </script>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation Home</title>
+  <style>
+    /* Basic styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    header, footer {
+      background-color: #f8f9fa;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .hero {
+      padding: 20px;
+      background: #e9ecef;
+      text-align: center;
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .product-card {
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 10px;
+      padding: 20px;
+      width: 30%;
+      text-align: center;
+      color: inherit; /* Ensure text color is not changed by the link */
+      text-decoration: none; /* Remove underline from links */
+    }
+    .footer {
+      margin-top: 20px;
+    }
+    /* Hover effect for product cards */
+    .product-card:hover {
+      background-color: #f0f0f0; /* Light grey background on hover */
+      cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Documentation Portal</h1>
+  <nav>
+    <a href="#products">Products</a> |
+    <a href="#about">About Us</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Our Documentation</h2>
+  <p>Explore our product guides and documentation to get started quickly.</p>
+</section>
+
+<section id="products" class="product-grid">
+  <a href="#" class="product-card">
+    <h3>ZK Framework</h3>
+    <p>Complete guide and reference for ZK Framework.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Chart</h3>
+    <p>Detailed documentation on ZK Chart.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Spreadsheet</h3>
+    <p>Get started with ZK Spreadsheet.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Pivot</h3>
+    <p>Learn to integrate and use ZK Pivot.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Calendar</h3>
+    <p>Comprehensive guide to ZK Calendar.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Spring</h3>
+    <p>Documentation for integrating ZK with Spring.</p>
+  </a>
+  <a href="" class="product-card">
+    <h3>ZK JSP</h3>
+    <p>Learn how to use ZK in JSP environments.</p>
+  </a>
+  <a href="#" class="product-card">
+    <h3>ZK Studio</h3>
+    <p>Tools and tips for using ZK Studio.</p>
+  </a>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2024 Documentation Portal. All rights reserved.</p>
+</footer>
+</body>
 </html>
