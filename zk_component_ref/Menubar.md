@@ -1,67 +1,95 @@
-## Keyboard Support
+# Menubar
+
+- Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
+- Java API: <javadoc>org.zkoss.zul.Menubar</javadoc>
+- JavaScript API: <javadoc directory="jsdoc">zul.menu.Menubar</javadoc>
+- Style Guide: [
+  Menubar](ZK_Style_Guide/XUL_Component_Specification/Menubar)
+
+# Employment/Purpose
+
+A container usually contains more than one menu elements.
+
+# Example
+
+![](ZKComRef_Menubar.png)
+
+``` xml
+<menubar id="menubar">
+    <menu label="File">
+        <menupopup onOpen="alert(self.id)">
+            <menuitem label="New" onClick="alert(self.label)" />
+            <menuitem label="Open" onClick="alert(self.label)" />
+            <menuitem label="Save" onClick="alert(self.label)" />
+            <menuseparator />
+            <menuitem label="Exit" onClick="alert(self.label)" />
+        </menupopup>
+    </menu>
+    <menu label="Help">
+        <menupopup>
+            <menuitem label="Index" onClick="alert(self.label)" />
+            <menu label="About">
+                <menupopup>
+                    <menuitem label="About ZK" onClick="alert(self.label)" />
+                    <menuitem label="About Potix" onClick="alert(self.label)" />
+                </menupopup>
+            </menu>
+        </menupopup>
+    </menu>
+</menubar>
+```
+
+# Properties
+
+## Scrollable
+
+The code below demonstrates how easy it is to make the Menubar
+scrollable!
+
+![](scrollableMenu.gif)
+
+``` xml
+<menubar width="200px" scrollable="true">
+ ...
+</menubar>
+```
+
+# Supported Events
 
 <table>
 <thead>
 <tr class="header">
 <th><center>
-<p>Key</p>
+<p>Name</p>
 </center></th>
 <th><center>
-<p>Description</p>
+<p>Event Type</p>
 </center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><b>Horizontal root level:</b> ArrowLeft / ArrowRight<br />
-<b>Vertical root level:</b> ArrowUp / ArrowDown<br />
-<b>All Menupopup:</b> ArrowUp / ArrowDown</p></td>
-<td><p>Navigate menu items</p></td>
-</tr>
-<tr class="even">
-<td><p><b>Horizontal root level:</b> ArrowDown<br />
-<b>Vertical root level :</b> ArrowRight</p></td>
-<td><p>Open the menu popup</p></td>
-</tr>
-<tr class="odd">
-<td><p><b>All Menupopup:</b> ArrowLeft / ArrowRight</p></td>
-<td><p>Open / close the menu popup</p></td>
-</tr>
-<tr class="even">
-<td><p>Enter</p></td>
-<td><p>Activate the menu item / Open the menu popup</p></td>
-</tr>
-<tr class="odd">
-<td><p>Spacebar</p></td>
-<td><p>Activate the menu item / Open the menu popup<br />
-Toggle the checkbox without closing the menupopup (only apply to
-<b>autocheck</b> enabled)</p></td>
-</tr>
-<tr class="even">
-<td><p>Escape</p></td>
-<td><p>Close all existing menu popups even if you open multiple
-ones</p></td>
+<td><p>None</p></td>
+<td><p>None</p></td>
 </tr>
 </tbody>
 </table>
 
-## Limitations
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Feature</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Autodrop</p></td>
-<td><p>This feature only supports mouse.</p></td>
-</tr>
-</tbody>
-</table>
+# Supported Children
+
+`*`[` Menu`](ZK_Component_Reference/Essential_Components/Menu)`, `[` Menuitem`](ZK_Component_Reference/Essential_Components/Menu/Menuitem)`, `[` Menuseparator`](ZK_Component_Reference/Essential_Components/Menu/Menuseparator)
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |

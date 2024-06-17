@@ -1,5 +1,2 @@
-This section outline Accessibilities in Multimedia and Miscellaneous
-components.
-
-**Note:** the following subsections are only applied for ZK EE version
-only.
+This section outlines components which bring further multimedia
+capabilities to ZK.

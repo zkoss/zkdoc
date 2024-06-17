@@ -1,34 +1,148 @@
-## Keyboard Support
+# Pdfviewer
+
+- Demonstration: [Embed PDF Documents in Your ZK
+  Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
+- Java API: <javadoc>org.zkoss.zkex.zul.Pdfviewer</javadoc>
+- JavaScript API:
+  <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
+
+# Employment/Purpose
+
+The `Pdfviewer` component is based on Mozilla’s great work --
+[PDF.js](https://github.com/mozilla/pdf.js), that renders PDF documents
+in a browser.
+
+# Example
+
+![](ZK-pdfviewer-example.png)
+
+``` xml
+<pdfviewer src="/pdf/sample.pdf" />
+```
+
+# Supported Browsers
+
+It is compatible with HTML5-supported browsers, like IE 11, Edge,
+Firefox, Opera, Chrome and Safari.
+
+# Customize the Toolbar
+
+Pdfviewer accepts only one child: <toolbar>. You can customize the
+toolbar by adding your own one. By default, the position of the toolbar
+is at the top. You can use CSS to do more tweaks.
+
+``` xml
+<pdfviewer id="pv2">
+  <toolbar>
+    <toolbarbutton iconSclass="z-icon-fw z-icon-fast-backward"
+                   onClick="pv2.firstPage()"/>
+    <toolbarbutton iconSclass="z-icon-fw z-icon-chevron-left"
+                   onClick="pv2.previousPage()"/>
+    <toolbarbutton iconSclass="z-icon-fw z-icon-chevron-right"
+                   onClick="pv2.nextPage()"/>
+    <toolbarbutton iconSclass="z-icon-fw z-icon-fast-forward"
+                   onClick="pv2.lastPage()"/>
+  </toolbar>
+</pdfviewer>
+```
+
+# Zoom to Fit Page Width / Fit Page Height
+
+You can call `setZoom("fit-page-width")` or `setZoom("fit-page-height")`
+now.
+
+Or just specify it as an initial zoom level:
+
+``` xml
+<pdfviewer id="pv" src="/pdf/sample.pdf" zoom="fit-page-width" />
+```
+
+# Cross-Origin Resource Sharing (CORS)
+
+If you want to load a remote PDF document, please make sure the response
+headers contain the necessary [CORS
+headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) or it
+won’t be allowed to be loaded.
+
+# Enable Fullscreen
+
+Due to a specification limitation, this method must be called while
+responding to user interaction (i.g. event handlers). Therefore the
+component only provides a client-side method `toggleFullscreen()` to
+enable the full-screen mode.
+
+``` xml
+<pdfviewer id="pv" src="/pdf/sample.pdf" />
+<button xmlns:w="client" w:onClick="zk.$('$pv').toggleFullscreen()" />
+```
+
+# Underlying Library
+
+This component depends on <https://github.com/mozilla/pdf.js>. To check
+the bundled pdfjs version, open a browser developer tool \> Console tab,
+and run the code below:
+
+``` js
+pdfjsLib.version
+```
+
+# Supported Events
 
 <table>
 <thead>
 <tr class="header">
 <th><center>
-<p>Key</p>
+<p>Name</p>
 </center></th>
 <th><center>
-<p>Description</p>
+<p>Event Type</p>
 </center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>ArrowUp / ArrowDown<br />
-PageUp / PageDown</p></td>
-<td><p>Scroll the vertical scrollbar if any. Navigate to the
-previous/next page if the scrollbar is on the
-topmost/bottommost.</p></td>
+<td><center>
+<p><code>onPaging</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zul.event.PagingEvent</javadoc> Notifies one of the
+pages is selected by the user.</p></td>
 </tr>
 <tr class="even">
-<td><p>ArrowLeft / ArrowRight</p></td>
-<td><p>Scroll the horizontal scrollbar if any. Navigate to the
-previous/next page if the scrollbar is on the
-leftmost/rightmost.</p></td>
+<td><center>
+<p><code>onRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes the loading pdf
+file is finished rendering.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Home / End</p></td>
-<td><p>Scroll the vertical scrollbar if any. Navigate to the first/last
-page if the scrollbar is on the topmost/bottommost.</p></td>
+<td><center>
+<p><code>onZoom</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zkex.ui.event.ZoomEvent</javadoc> Denotes user has
+changed the zoom level.</p></td>
+</tr>
+<tr class="even">
+<td><center>
+<p><code>onRotate</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zkex.ui.event.RotationEvent</javadoc> Denotes user
+has changed the rotation angle.</p></td>
 </tr>
 </tbody>
 </table>
+
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+
+# Supported Children
+
+`*Toolbar`
+
+| Version | Date         | Content                                                                                                            |
+|---------|--------------|--------------------------------------------------------------------------------------------------------------------|
+| 9.0.0   | October 2019 | [ZK-4395](https://tracker.zkoss.org/browse/ZK-4395): Provide a pdfviewer component                                 |
+| 9.6.0   | June 2021    | [ZK-4917](https://tracker.zkoss.org/browse/ZK-4917): set zoom level with fit-page-width or fit-page-height in Java |

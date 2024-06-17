@@ -1,72 +1,91 @@
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Attributes</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>data-ariaStartLabel</p></td>
-<td><p>Describe the the slider button (start) on SliderButtons.</p></td>
-</tr>
-<tr class="even">
-<td><p>data-ariaEndLabel</p></td>
-<td><p>Describe the the slider button (end) on SliderButtons.</p></td>
-</tr>
-<tr class="odd">
-<td><p>data-largeStep-multiplier (optional)</p></td>
-<td><p>Describe the moving step of pressing PageUp/PageDown.</p></td>
-</tr>
-</tbody>
-</table>
+# Multislider
 
-## Keyboard Support
+- Demonstration:
+- Java API:
+  [Multislider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Multislider.html)
+- JavaScript API:
+  [Multislider](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/slider/Multislider.html)
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Key</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ArrowUp / ArrowDown</p></td>
-<td><p>Move the slider button.</p></td>
-</tr>
-<tr class="even">
-<td><p>ArrowLeft / ArrowRight</p></td>
-<td><p>Move the slider button.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Home / End</p></td>
-<td><p>Move the slider button to the minimum/maximum.</p></td>
-</tr>
-<tr class="even">
-<td><p>PageUp / PageDown</p></td>
-<td><p>Move the slider button in the large step.</p></td>
-</tr>
-</tbody>
-</table>
+# Employment/Purpose
 
-## Example
+A multislider component represents a slider with multiple ranges. It
+includes sliderbuttons, which can be used to let user select a start
+value and an end value. A multislider accepts a range of values starting
+from 0 to a maximum value you defined. The default maximum value is 100.
+You can change the maximum value by setting the max property. Notice
+that the value of max property is always larger than the value of min
+property.
+
+# Example
+
+![](ZKComRef_Multislider.png)
 
 ``` xml
-<zk xmlns:ca="client/attribute">
-  <multislider ca:aria-label="range value">
-    <sliderbuttons startValue="0" endValue="100" ca:data-ariaStartLabel="minimal range value"
-      ca:data-ariaEndLabel="maximal range value"/>
-    <sliderbuttons startValue="10" endValue="50" ca:data-ariaStartLabel="minimal range value"
-      ca:data-ariaEndLabel="maximal range value"/>
+  <multislider>
+    <sliderbuttons startValue="10" endValue="70"/>
+    <sliderbuttons startValue="20" endValue="50"/>
+    <sliderbuttons startValue="30" endValue="40"/>
   </multislider>
-</zk>
+  <multislider min="5" max="120" orient="vertical">
+    <sliderbuttons startValue="5" endValue="100"/>
+    <sliderbuttons startValue="20" endValue="50"/>
+  </multislider>
 ```
+
+# Properties
+
+## Disabled
+
+If the multislider is disabled, users can not drag the slider buttons.
+
+## Orient
+
+Sets the orientation to either "horizontal" or "vertical" to display the
+multislider.
+
+## Marks
+
+Sets the marks information for displaying value marks.
+
+It supports Map\<Integer, String\>. The key is represented as the value
+of multislider, and the value is represented as the displayed mark
+label. It means that each value mark could be displayed in different
+text.
+
+## MarkScale
+
+Sets the marks information for displaying value marks.
+
+By default, the value marks are displayed every 20 starting from the
+minimum value. (if min is 0, then it displays "0 20 40 60 ...")
+
+## Max
+
+Defines the max value of the multislider. It can be changed by the max
+property.
+
+## Min
+
+Defines the minimal value of the multislider. It can be changed by the
+min property.
+
+## Step
+
+By default, the multislider will scroll to the position continuously
+when a user drags it. If you prefer to scroll a discrete fixed amount at
+each step, you can set the Step property.
+
+## TooltipVisible
+
+The tooltip displays the value of slider buttons in the multislider. If
+tooltipvisible is true, the tooltips of the slider buttons will always
+be displayed.
+
+# Supported Events
+
+- Inherited Supported Events: [
+  Rangeslider](ZK_Component_Reference/Input/Rangeslider#Supported_Events)
+
+# Supported Children
+
+`*`[` Sliderbuttons`](ZK_Component_Reference/Input/Sliderbuttons)

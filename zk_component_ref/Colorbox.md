@@ -1,28 +1,98 @@
-## Keyboard Support
+# Colorbox
+
+- Demonstration:
+  [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)
+- Java API: <javadoc>org.zkoss.zkex.zul.Colorbox</javadoc>
+- JavaScript API: <javadoc directory="jsdoc">zkex.inp.Colorbox</javadoc>
+- Style Guide: [
+  Colorbox](ZK_Style_Guide/XUL_Component_Specification/Colorbox)
+
+# Employment/Purpose
+
+A Colorbox used to retrieve an input that the user can select a color.
+
+# Example
+
+<figure>
+<img src="ZKComRef_Colorbox_Examples.PNG"
+title="ZKComRef_Colorbox_Examples.PNG" />
+<figcaption>ZKComRef_Colorbox_Examples.PNG</figcaption>
+</figure>
+
+``` xml
+<colorbox color="#FFFFFF" />
+```
+
+# Key control
+
+Pressing left, right, up, or down arrow keys to change the selected
+color.
+
+# Colorbox in Menu
+
+By setting `content` attribute of <code>
+
+<menu>
+
+</code> to create a colorbox in menu.
+
+<figure>
+<img src="ZKComRef_Colorbox_Examples2.PNG"
+title="ZKComRef_Colorbox_Examples2.PNG" />
+<figcaption>ZKComRef_Colorbox_Examples2.PNG</figcaption>
+</figure>
+
+``` xml
+    <menubar id="menubar" >
+        <menu label="Color" iconSclass="z-icon-binoculars">
+            <menupopup>
+                <menuitem label="Index" onClick="alert(self.label)" />
+                <menu label="Color Picker" content="#color=#184dc6"/>
+            </menupopup>
+        </menu>
+    </menubar>
+```
+
+# Supported Events
 
 <table>
 <thead>
 <tr class="header">
 <th><center>
-<p>Key</p>
+<p>Name</p>
 </center></th>
 <th><center>
-<p>Description</p>
+<p>Event Type</p>
 </center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>ArrowUp / ArrowDown / ArrowLeft / ArrowRight</p></td>
-<td><p>Navigate colors.</p></td>
-</tr>
-<tr class="even">
-<td><p>Enter</p></td>
-<td><p>Select the color.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Escape</p></td>
-<td><p>Close the popup</p></td>
+<td><center>
+<p>onChange</p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc> Notifies the
+application with the onChange event if its content is changed</p></td>
 </tr>
 </tbody>
 </table>
+
+- Inherited Supported Events: [
+  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+
+# Supported Children
+
+`*None`
+
+# Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+|         |             |                  |
+
+# Version History
+
+| Version | Date | Content |
+|---------|------|---------|
+|         |      |         |
