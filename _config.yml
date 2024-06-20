@@ -1,5 +1,6 @@
 remote_theme: "keikai/minimal-mistakes@zk"
 repository: keikai/minimal-mistakes
+#theme: "minimal-mistakes-jekyll" # use local theme
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache  #required by minimal-mistakes
