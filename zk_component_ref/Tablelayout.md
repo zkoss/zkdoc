@@ -1,4 +1,8 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tablelayout
+
+{% include ZK EE %}
 
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
@@ -50,6 +54,8 @@ title="ZKComRef_Tablelayout_Example.PNG" />
     </tablechildren>
 </tablelayout>
 ```
+
+{% include versionSince\| 6.0.0 %}
 
 The child of tablechildren can be any component:
 
@@ -114,6 +120,10 @@ title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

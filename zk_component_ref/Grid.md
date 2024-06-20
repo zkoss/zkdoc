@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Grid
 
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
@@ -111,6 +113,8 @@ you want to have different visual layout or to control multiple
 `listbox` and `grid`controls with one paging component.
 
 ## Data Model with Paging
+
+{% include versionSince\| 8.0.0 %}
 
 If `listbox` or `grid` component is used with a data model, we recommend
 you control paging from the model directly. Although specifying page
@@ -294,8 +298,8 @@ this attribute as it is generally better to use the `paginal` attribute.
 
 ## The PagingDisabled Property
 
-Once the `pagingDisabled` is set to `true`, users will be blocked from
-navigating through the pagination.
+{% include versionSince\| 8.0.3 %} Once the `pagingDisabled` is set to
+`true`, users will be blocked from navigating through the pagination.
 
 ## The onPaging Event and Method
 
@@ -313,6 +317,8 @@ grid.addEventListener(org.zkoss.zul.event.ZulEvents.ON_PAGING, new MyListener())
 ```
 
 ## Autopaging
+
+{% include versionSince\| 5.0.2 %}
 
 When using the paging mold and vflex, you could also turn on autopaging
 (<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Grid</javadoc>)
@@ -353,8 +359,9 @@ feature only works when each row has the same height.
 }
 ```
 
-**Note:** In ZK 7, we change the naming *.z-row-cnt* to
-*.z-row-content*.
+{% include versionSince\| 5.0.8 %} **Note:** In ZK 7, we change the
+naming *.z-row-cnt* to *.z-row-content*. {% include versionSince\| 7.0.3
+%}
 
 # Sort
 
@@ -543,6 +550,8 @@ new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1)
 
 ## Scroll to a Specific Item
 
+`{% include versionSince| 8.5.2 %}`
+
 You can call `scrollToIndex(int)` to scroll a Grid to a specific item,
 and this even works under ROD.
 
@@ -595,6 +604,8 @@ A grid can be scrollable and has a frozen header if you specify the
     </rows>
 </grid>
 ```
+
+{% include versionSince\| 7.0.0 %}
 
 The browser's default scrollbar is replaced by floating scrollbar and it
 is not visible unless user mouse over on the content. To turn off the
@@ -827,8 +838,8 @@ either one of them.
 
 ## emptyMessage
 
-Specify a string at this attribute to show a message when a Grid has no
-items.
+{% include versionSince\| 5.0.7 %} Specify a string at this attribute to
+show a message when a Grid has no items.
 
 ``` xml
         <grid emptyMessage="No items match your search">
@@ -874,12 +885,12 @@ resize the widths of columns by dragging the border between adjacent
 
 ### Auto Fitting Columns
 
-When you want to resize a column of a Grid or Listbox, all you now need
-to do is double-click the column when the mouse is over where the
-columns meet and the column will automatically resize to fit its
-contents. To enable this functionality Grid's columns need the attribute
-sizable="true". In other words, all sizable column provides the
-auto-fitting functionality.
+{% include versionSince\| 5.0.0 %} When you want to resize a column of a
+Grid or Listbox, all you now need to do is double-click the column when
+the mouse is over where the columns meet and the column will
+automatically resize to fit its contents. To enable this functionality
+Grid's columns need the attribute sizable="true". In other words, all
+sizable column provides the auto-fitting functionality.
 
 ### The onColSize Event
 
@@ -930,11 +941,15 @@ For example,
 
 ## Visible Rows
 
+{% include versionSince\| 8.5.0 %}
+
 The `visibleRows` attribute is used to control how many rows are
 visible. By setting it to zero, the grid will resize itself to hold as
 many as items if possible.
 
 ## Sticky Header
+
+{% include versionSince\| 9.6.0 %}
 
 After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Grid's header out of visible range in a viewport, the Grid's
@@ -948,8 +963,8 @@ header becomes floating and sticky on the top of the page.
 
 # Master Detail
 
-Grid supports master-detail layout which enables developers to add more
-information on each row. For example,
+{% include ZK_EE %} Grid supports master-detail layout which enables
+developers to add more information on each row. For example,
 
 ![](ZKComRef_Grid_Detail.png)
 
@@ -1000,7 +1015,8 @@ title="_ZKComRef_Grid_Columns_Menu.png" />
 ## Ungroup Column Menu
 
 When the user groups the content of the grid, the column's menu will
-show an ungroup icon for user to reset the group.
+show an ungroup icon for user to reset the group. {% include ZK EE %} {%
+include versionSince\| 6.5.0 %}
 
 <figure>
 <img src="_ZKComRef_Grid_Columns_Menu_Ungroup.PNG"
@@ -1072,6 +1088,8 @@ rows. The code below demonstrates how to do this:
     </cell>
 </row>
 ```
+
+{% include versionSince\| 5.0.0 %}
 
 - For further details, please refer to [ Cell
   component](ZK_Component_Reference/Supplementary/Cell)
@@ -1181,6 +1199,8 @@ The following code demonstrates how to freeze a column within a Grid:
 </grid>
 ```
 
+{% include versionSince\| 5.0.0 %}
+
 - For further details, please refer to [ Frozen
   component](ZK_Component_Reference/Supplementary/Frozen)
   directly.
@@ -1201,7 +1221,8 @@ Tips](ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_
 `[default: false]`  
 `[inherit: true]`[^2]
 
-Specifies whether to sort the model when the following cases:
+{% include versionSince\|5.0.7 %} Specifies whether to sort the model
+when the following cases:
 
 - <javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>is
   called and
@@ -1222,8 +1243,9 @@ the value as **ignore.change**.
 `[default: 50]`  
 `[inherit: true]`[^3]
 
-Specifies the number of rows to preload when receiving the rendering
-request from the client. It is used only if live data
+{% include versionSince\|6.0.1 %} Specifies the number of rows to
+preload when receiving the rendering request from the client. It is used
+only if live data
 (<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
 not paging
 (<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
@@ -1233,8 +1255,8 @@ not paging
 `[default: 50]`  
 `[inherit: true]`[^4]
 
-Specifies the number of rows rendered when the Grid first render. It is
-used only if live data
+{% include versionSince\|6.0.1 %} Specifies the number of rows rendered
+when the Grid first render. It is used only if live data
 (<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
 not paging
 (<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
@@ -1243,6 +1265,8 @@ not paging
 
 `[default: true]`  
 `[inherit: true]`[^5]
+
+{% include versionSince\| 7.0.1 %}
 
 It specifies whether to enable autohide property for internal paging
 components.
@@ -1261,12 +1285,18 @@ components.
 </center></th>
 <th><center>
 <p>Event Type</p>
-</center>
-<p>|-</p></th>
+</center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+</tr>
+<tr class="even">
 <td><center>
 <p><code>onPageSize</code></p>
 </center></td>
@@ -1336,6 +1366,8 @@ zul.jar.
 | 7.0.3   | July 2014    | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
 | 8.5.0   | Oct 2017     | [ZK-3690](http://tracker.zkoss.org/browse/ZK-3690): Added visibleRows property for Grid (the same as rows property of Listbox and Tree)                                                         |
 | 9.6.0   | Mar 2021     | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
 

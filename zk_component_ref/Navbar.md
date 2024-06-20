@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Navbar
 
 - Demonstration:
-
 - Java API:
   [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)
-
 - JavaScript API:
   [Navbar](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navbar.html)
-
 - Style Guide:
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -128,10 +126,11 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 
 ## Autoclose
 
-By default only a single `nav`-element is open at any time -
-automatically closing other `nav`-elements which are not on the current
-open path. This behavior can be disabled setting `autoclose="false"`,
-which keeps nav elements open until they are clicked again by the user.
+{% include versionSince\| 8.0.4 %} By default only a single
+`nav`-element is open at any time - automatically closing other
+`nav`-elements which are not on the current open path. This behavior can
+be disabled setting `autoclose="false"`, which keeps nav elements open
+until they are clicked again by the user.
 
 ``` xml
     <navbar orient="vertical" autoclose="false">
@@ -186,6 +185,10 @@ the user has selected a navitem in the navbar.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                          |
 |---------|--------------|--------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html) was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Window
 
 - Demonstration:
@@ -197,7 +199,9 @@ focusable child component.
 
 ## Modal Windows and Event Processing Threads
 
-By default, events are processed in the same thread that serves the HTTP
+{% include Notice\|text=Event processing thread is disabled by default
+since 5.0. For the older version, it is enabled by default %} By
+default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
 process events in an individual thread, such that the event listener
 could suspend the execution at any time, and resume later. For how to
@@ -631,3 +635,7 @@ The</p>
 | 5.0+    | How to create a modal Window and communicate with it              | <http://www.zkoss.org/forum/listComment/9785> |
 | 3.6+    | Best practises on creating a pop-up window to display PDF reports | <http://www.zkoss.org/forum/listComment/9305> |
 |         |                                                                   |                                               |
+
+{% include LastUpdated %}
+
+{% include ZKComponentReferencePageFooter %}

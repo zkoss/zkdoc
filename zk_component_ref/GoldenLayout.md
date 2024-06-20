@@ -1,4 +1,8 @@
+{% include ZKComponentReferencePageHeader %}
+
 # GoldenLayout
+
+{% include versionSince \| 8.6.0 %} {% include ZK EE %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>
 - JavaScript API:
@@ -216,6 +220,10 @@ title="ZKCompRef_GoldenLayout_region_stack.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

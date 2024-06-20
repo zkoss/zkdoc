@@ -1,17 +1,15 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Portalchildren
 
 - Demonstration:
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Portalchildren</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Portalchildren</javadoc>
-
 - Style Guide: [
   Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -57,8 +55,8 @@ title="ZKComRef_Portallayout_Example.PNG" />
 
 ## Title
 
-Sets the title of the portalchildren. If the title is not empty/null,
-frame design will be applied.
+{% include versionSince\| 9.0.0 %} Sets the title of the portalchildren.
+If the title is not empty/null, frame design will be applied.
 
 ### Frame Design
 
@@ -128,8 +126,8 @@ move.
 
 ## CounterVisible
 
-Sets whether the counter is visible. Meaningful only if frame design is
-applied.
+{% include versionSince \|9.0.0 %} Sets whether the counter is visible.
+Meaningful only if frame design is applied.
 
 # Supported Events
 
@@ -167,6 +165,10 @@ applied.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date     | Content                                                                                            |
 |---------|----------|----------------------------------------------------------------------------------------------------|
 | 9.0.0   | Nov 2019 | [ZK-4398](https://tracker.zkoss.org/browse/ZK-4398): Provide PortalChildren title and frame design |
+
+{% include ZKComponentReferencePageFooter %}

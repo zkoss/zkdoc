@@ -1,4 +1,8 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tbeditor
+
+{% include versionSince \| 8.0.0 %} {% include ZK EE %}
 
 - Java API:
   [Tbeditor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tbeditor.html)
@@ -93,3 +97,5 @@ retrieve the temporary value.</p></td>
 # Supported Children
 
 `*NONE`
+
+{% include ZKComponentReferencePageFooter %}

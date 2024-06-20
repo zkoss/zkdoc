@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Caption
 
 - Demonstration:
@@ -15,6 +17,8 @@ label, using
 or child elements for a more complex caption.
 
 # Preload Image
+
+{% include versionSince\| 6.0.0 %}
 
 The feature is applied to all of the LabelImageElement and Image
 components.
@@ -102,6 +106,10 @@ title="ZKComRef_Caption_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

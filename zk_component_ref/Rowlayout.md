@@ -1,14 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Rowlayout
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.RowLayout</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.RowLayout</javadoc>
-
 - Style Guide: [
   RowLayout](ZK_Style_Guide/XUL_Component_Specification)
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -112,6 +111,10 @@ center](rowlayout-examples.png " center")
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      | \]      |
+
+{% include ZKComponentReferencePageFooter %}

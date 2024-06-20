@@ -1,14 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Splitlayout
 
 - Demonstration:
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Splitlayout</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Splitlayout</javadoc>
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -161,6 +160,10 @@ splitlayout.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date          | Content             |
 |---------|---------------|---------------------|
 | 8.5.0   | October, 2017 | new added component |
+
+{% include ZKComponentReferencePageFooter %}

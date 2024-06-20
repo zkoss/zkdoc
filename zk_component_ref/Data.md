@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 This section outlines components which are designed to handle data
 display.
 
@@ -15,3 +17,7 @@ to separate long content into multiple pages. For more information,
 please refer to the
 [Paging](ZK_Component_Reference/Supplementary/Paging)
 component.
+
+{% include ZKComponentReferenceHeadingToc %}
+
+{% include ZKComponentReferencePageFooter %}

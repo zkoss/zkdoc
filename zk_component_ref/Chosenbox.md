@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Chosenbox
 
 - [Demonstration](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Chosenbox</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
-
 - Style Guide: [
   Chosenbox](ZK_Style_Guide/XUL_Component_Specification/Chosenbox)
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -112,6 +110,8 @@ See also:
     ]]></zscript>
     <chosenbox width="400px" model="${subModel}"/>
 ```
+
+{% include CustomItemRendering \|chosenbox %}
 
 # Keyboard Navigation Chosenbox
 
@@ -268,7 +268,11 @@ selected tag.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date          | Content                         |
 |---------|---------------|---------------------------------|
 | 6.0.1   | April 3, 2012 | Add the new Chosenbox component |
 | 8.0.2   | May 24, 2016  | Add the new Event - onItemClick |
+
+{% include ZKComponentReferencePageFooter %}

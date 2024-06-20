@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Xul Element
 
 - Demonstration: N/A
@@ -16,3 +18,5 @@ HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Su
 # Supported Children
 
 `*ALL`
+
+{% include ZKComponentReferencePageFooter %}

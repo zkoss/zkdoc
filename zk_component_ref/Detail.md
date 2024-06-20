@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Detail
 
 - Demonstration: [Grid (Master
   detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
-
 - Java API: <javadoc>org.zkoss.zul.Detail</javadoc>
-
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
-
 - Style Guide: [
   Detail](ZK_Style_Guide/XUL_Component_Specification/Detail)
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
@@ -115,6 +113,10 @@ the component is opened.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

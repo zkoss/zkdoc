@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # VisibilityChangeEvent
 
 - Demonstration: N/A
@@ -40,3 +42,5 @@ source](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main
 | Version | Date             | Content                                                                                                                                      |
 |---------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.5.1   | December 2, 2012 | introduced in [Control page visibility with HTML5 API in ZK](http://blog.zkoss.org/2012/12/02/control-page-visibility-with-html5-api-in-zk/) |
+
+{% include ZKComponentReferencePageFooter %}

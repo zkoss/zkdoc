@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Center
 
 - Demonstration:
@@ -70,7 +72,8 @@ title="ZKCompRef_Borderlayout.jpg" />
 ## Caption
 
 A layout region might have a caption, which is specified by declaring a
-child component called caption.
+child component called caption. {% include ZK EE %} {% include
+versionSince\| 6.5.0 %}
 
 ``` xml
 <borderlayout>
@@ -129,6 +132,10 @@ For more details, please refer to
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                                                              |
 |---------|-----------|----------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
+
+{% include ZKComponentReferencePageFooter %}

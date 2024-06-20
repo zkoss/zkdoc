@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Inputgroup
 
 - Demonstration: [Inputgroup – organize your input
@@ -6,6 +8,8 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Inputgroup</javadoc>
 - Style Guide: N/A
+
+{% include versionSince\|9.0.0 %} {% include ZK All %}
 
 # Employment/Purpose
 
@@ -90,6 +94,10 @@ Specify the orientation.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                              |
 |---------|--------------|--------------------------------------------------------------------------------------|
 | 9.0.0   | October 2019 | [ZK-4391](https://tracker.zkoss.org/browse/ZK-4391): Provide an inputgroup component |
+
+{% include ZKComponentReferencePageFooter %}

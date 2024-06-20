@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Groupbox
 
 - Component Reference:
@@ -27,3 +29,5 @@ title="Groupbox_Tablet_Scrolling_Example.png" />
 | Version | Date       | Content |
 |---------|------------|---------|
 | 6.5.0   | July, 2012 |         |
+
+{% include ZKComponentReferencePageFooter %}

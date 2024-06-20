@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # KeyEvent
 
 - Demonstration: N/A
@@ -52,3 +54,5 @@ N/A
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

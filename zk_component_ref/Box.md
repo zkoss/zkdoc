@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Box
 
 - Demonstration: [Box](http://www.zkoss.org/zkdemo/layout/box)
@@ -103,6 +105,9 @@ title="100000000000009300000077C9A14E08.png" />
 
 ## Heights and Widths
 
+{% include Notice\|text=Deprecated. As of release 5.0.0, use Cell
+instead. %}
+
 You can control the width for each cell inside a `hbox` with `widths`
 attribute as follows (don't specify on each cell):
 
@@ -185,6 +190,8 @@ title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
 </zk>
 ```
 
+{% include versionSince\| 5.0.0 %}
+
 # Cell Component
 
 In ZK5, we have introduced a new component named Cell which can be
@@ -200,6 +207,8 @@ rows. The code below demonstrates how to do this:
     </cell>
 </box>
 ```
+
+{% include versionSince\| 5.0.0 %}
 
 # Limitation
 
@@ -288,6 +297,10 @@ zul.jar.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                     |
 |---------|--------------|-------------------------------------------------------------|
 | 5.0.4   | August, 2010 | Add a sizedByContent method for splitter to resize smoothly |
+
+{% include ZKComponentReferencePageFooter %}

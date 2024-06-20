@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Anchornav
 
 - Demonstration: [Anchornav: A new ZK Addon for scrolling within a
@@ -6,6 +8,8 @@
   [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
 - JavaScript API:
   [Anchornav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Anchornav.html)
+
+{% include ZK EE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -118,6 +122,10 @@ position of the page.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                |
 |---------|----------------|--------------------------------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html) was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

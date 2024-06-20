@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Fisheyebar
 
 - Demonstration:
@@ -82,6 +84,10 @@ menu on the Mac OS.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

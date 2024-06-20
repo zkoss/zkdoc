@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Gscreen
 
 - Demonstration:
@@ -65,6 +67,10 @@ title="ZKComRef_Gscreen_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

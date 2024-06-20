@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Calendar
 
 - Demonstration:
@@ -71,9 +73,12 @@ title="ZKComRef_Calendar_Example2.png" />
 </zk>
 ```
 
+{% include versionSince\| 5.0.3 %}
+
 # Show Week Number
 
-Calendar supports to show a week number of the year.
+Calendar supports to show a week number of the year. {% include ZK EE %}
+{% include versionSince\| 6.5.0 %}
 
 <figure>
 <img src="ZKComRef_Calendar_Week_Of_Year.PNG"
@@ -87,12 +92,16 @@ title="ZKComRef_Calendar_Week_Of_Year.PNG" />
 
 # 2DigitYearStart
 
+{% include versionSince\| 8.6.2 %}
+
 You can control the 2DigitYearStart by the use of the library property.
 Please refer to [
 org.zkoss.web.preferred.2DigitYearStart](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.preferred.2DigitYearStart)
 for details.
 
 # Constraint
+
+`{% include versionSince| 8.5.2 %}`
 
 This component also supports `constraint` like [ZK Component
 Reference/Input/Datebox#Constraint](ZK_Component_Reference/Input/Datebox#Constraint)
@@ -134,9 +143,13 @@ EE]</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.3   | June, 2010   | Calendar Day Renderer                                                                                                                                                                                                                                         |
 | 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week](ZK_Developer%27s_Reference/Internationalization/The_First_Day_of_the_Week) for details. |
 | 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](http://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                         |
+
+{% include ZKComponentReferencePageFooter %}

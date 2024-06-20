@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Number Input Element
 
 - Demonstration: [Number Input
@@ -15,7 +17,8 @@ N/A
 
 # Per-component Locale
 
-You can add a locale per component for all of the NumberInputElement.
+{% include versionSince\|5.0.8 %} You can add a locale per component for
+all of the NumberInputElement.
 
 For example,
 
@@ -109,3 +112,5 @@ title="NumberInputElement-Locales.png" />
 | Version | Date     | Content                       |
 |---------|----------|-------------------------------|
 | 5.0.8   | May 2011 | Support locale per component. |
+
+{% include ZKComponentReferencePageFooter %}

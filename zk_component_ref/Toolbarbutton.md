@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Toolbarbutton
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
@@ -64,6 +66,8 @@ title="ZKComRef_Toolbarbutton_Example.png" />
 ```
 
 # Toggle Mode
+
+{% include versionSince\| 6.0.0 %}
 
 <figure>
 <img src="Toolbarbutton_togglemode.png"
@@ -157,10 +161,14 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content                               |
 |---------|------|---------------------------------------|
 | 6.0.0   | 2/10 | Introduce Toggle Mode to Toobarbutton |
 |         |      |                                       |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: Any <javadoc>org.zkoss.zul.Button</javadoc> can be used to upload
     files too.

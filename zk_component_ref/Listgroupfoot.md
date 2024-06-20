@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Listgroupfoot
 
 - Demonstration: N/A
-
 - Java API: <javadoc>org.zkoss.zul.Listgroupfoot</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
-
 - Style Guide: [
   Listgroupfoot](ZK_Style_Guide/XUL_Component_Specification/Listgroupfoot)
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
@@ -111,6 +109,10 @@ title="ZKComRef_Listgroup_Example.PNG" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

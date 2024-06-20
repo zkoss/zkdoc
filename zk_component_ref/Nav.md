@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Nav
 
 - Demonstration:
-
 - Java API:
   [Nav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Nav.html)
-
 - JavaScript API:
   [Nav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Nav.html)
-
 - Style Guide:
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -104,6 +102,10 @@ opened or closed a nav component.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                    |
 |---------|--------------|--------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Nav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Nav.html) was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

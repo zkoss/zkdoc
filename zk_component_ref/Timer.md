@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Timer
 
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
@@ -61,6 +63,10 @@ class.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Idspace
 
 - Demonstration: N/A
@@ -14,6 +16,8 @@ descendant components of Idspace (including the Idspace itself) form an
 independent ID space. Thus, you could use an idspace as the topmost
 component to group components. This way developers only need to maintain
 the uniqueness of each subset separately.
+
+{% include versionSince\| 8.0.3 %}
 
 To group components without rendering a Div, `Idspace` provides "nodom"
 mold. It would render no-dom widget in client-side. It only renders
@@ -77,6 +81,10 @@ title="ZKComRef_Idspace_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

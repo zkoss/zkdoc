@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Footer
 
 - Demonstration: [Grid (Header and
@@ -86,6 +88,10 @@ title="ZKComRef_Foot_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

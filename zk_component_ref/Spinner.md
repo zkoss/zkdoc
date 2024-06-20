@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Spinner
 
 - Demonstration:
@@ -57,8 +59,8 @@ with a formatting string. The default value is `null`.
 <spinner format="#,##0.##"/>
 ```
 
-You can provide a locale to format the number by specifying the String
-starts with "locale:"
+{% include versionSince\| 8.5.2 %} You can provide a locale to format
+the number by specifying the String starts with "locale:"
 
 ``` xml
 <spinner format="locale:zh-TW"/>
@@ -153,8 +155,8 @@ zul.jar.
 <p>rounded</p>
 </center></td>
 <td><p><img src="spinner_mold_rounded.png"
-title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" />
-</p></td>
+title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /> {%
+include versionSince| 5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -171,6 +173,10 @@ title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

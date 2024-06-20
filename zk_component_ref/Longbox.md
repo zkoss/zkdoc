@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Longbox
 
 - Demonstration:
@@ -114,6 +116,10 @@ for inherited functions.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

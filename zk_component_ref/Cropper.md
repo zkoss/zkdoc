@@ -1,10 +1,12 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Cropper
 
+{% include versionSince \|8.6.0 %}
+
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cropper</javadoc>
-
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Cropper</javadoc>
-
-- 
+- {% include ZK EE %}
 
 # Browser Support
 
@@ -136,6 +138,10 @@ cropped the image.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

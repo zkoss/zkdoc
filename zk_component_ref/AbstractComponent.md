@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Abstract Component
 
 - Demonstration: N/A
@@ -49,3 +51,5 @@ N/A
 | Version | Date        | Content                                                                                                                                                                                                                    |
 |---------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.4   | August 2010 | `stubonly` is introduced to ZK EE to minimize the memory footprint for large applications. Refer to [ here](ZK_Developer's_Reference/Performance_Tips/Specify_Stubonly_for_Client-only_Components) for details. |
+
+{% include ZKComponentReferencePageFooter %}

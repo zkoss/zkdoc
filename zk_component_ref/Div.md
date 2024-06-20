@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Div
 
 - Demonstration: N/A
@@ -61,6 +63,10 @@ if there is a line break before and after it.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

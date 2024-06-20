@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Checkbox
 
 - Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
@@ -38,8 +40,9 @@ title="ZKComRef_Checkbox_Example.png" />
 
 # Mold
 
-There are two additional molds for Checkbox: switch and toggle, you can
-customize the mold in css by overriding class.
+{% include versionSince\| 8.6.0 %} There are two additional molds for
+Checkbox: switch and toggle, you can customize the mold in css by
+overriding class.
 
 ``` xml
   <checkbox mold="switch" />
@@ -92,11 +95,11 @@ Customized in CSS:
 
 ## tristate
 
-Allowing users to set the indeterminate state, in addition to the
-checked and unchecked states. In tristate mold, when users click on the
-checkbox, it will switch between checked, unchecked and indeterminate
-states. This is different from the default mold which has only checked
-and unchecked states.
+{% include versionSince\| 9.0.0 %} Allowing users to set the
+indeterminate state, in addition to the checked and unchecked states. In
+tristate mold, when users click on the checkbox, it will switch between
+checked, unchecked and indeterminate states. This is different from the
+default mold which has only checked and unchecked states.
 
 ![](Tristate.png)
 
@@ -112,6 +115,8 @@ State state = checkbox.getState() // CHECKED, UNCHECKED or INDETERMINATE
 ```
 
 # Indeterminate
+
+{% include versionSince\| 8.6.0 %}
 
 Indeterminate is a state that is neither checked nor unchecked.
 
@@ -174,6 +179,10 @@ component is checked or unchecked.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

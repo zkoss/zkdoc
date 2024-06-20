@@ -1,15 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Group
 
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-
 - Java API: <javadoc>org.zkoss.zul.Group</javadoc>
-
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
-
 - Style Guide: [
   Group](ZK_Style_Guide/XUL_Component_Specification/Group)
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
@@ -116,6 +114,10 @@ the component is opened.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

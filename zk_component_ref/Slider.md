@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Slider
 
 - Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
@@ -26,8 +28,8 @@ default minimum is 0 and cannot be changed.
 
 # Minimal Position
 
-Slider supports minimal position, which can be changed by the minpos
-property as follows.
+{% include versionSince\| 7.0.1 %} Slider supports minimal position,
+which can be changed by the minpos property as follows.
 
 ![](min_slider.png)
 
@@ -41,8 +43,8 @@ position.
 
 # Decimal Mode
 
-Set the mode property to "decimal" will enable decimal slider. So the
-slider can represent decimal number.
+{% include versionSince\| 7.0.1 %} Set the mode property to "decimal"
+will enable decimal slider. So the slider can represent decimal number.
 
 ![](dec_slider.png)
 
@@ -63,14 +65,15 @@ does), you could specify the amount of value to move by use of
 
 # Step
 
-By default, the slider will scroll to the position continuously when an
-user drags it. If you prefer to scroll a discrete fixed amount on each
-step, you can set the amount of value of the `step` property. Step
-property is useful in decimal mode, slider's position value could be
-rounded to a fixed number by specifying step property. For example, if
-we want to retrieve the value from decimal slider in the range of 10.0
-to 12.0. As the below picture shows, the default decimal show the value
-contains only one digit in fractional part.
+{% include versionSince\| 7.0.1 %} By default, the slider will scroll to
+the position continuously when an user drags it. If you prefer to scroll
+a discrete fixed amount on each step, you can set the amount of value of
+the `step` property. Step property is useful in decimal mode, slider's
+position value could be rounded to a fixed number by specifying step
+property. For example, if we want to retrieve the value from decimal
+slider in the range of 10.0 to 12.0. As the below picture shows, the
+default decimal show the value contains only one digit in fractional
+part.
 
 ![](dec_slider_no_step.png)
 
@@ -88,9 +91,10 @@ below.
 
 # Knob Mold
 
-Set the mold property to "knob" will enable knob slider. So the slider
-can act as a normal knob. The knob can controlled by wheel, drag, click
-and enter a value to the input element.
+{% include ZK EE %} {% include versionSince\| 8.6.0 %} Set the mold
+property to "knob" will enable knob slider. So the slider can act as a
+normal knob. The knob can controlled by wheel, drag, click and enter a
+value to the input element.
 
 ![](knob360.png)
 
@@ -187,6 +191,7 @@ zul.jar.
 </tr>
 <tr class="even">
 <td><center>
+<p>{% include versionSince| 8.6.0 %}</p>
 </center>
 <center>
 <p>knob</p>
@@ -196,7 +201,8 @@ zul.jar.
 </tbody>
 </table>
 
-the scale mold is deprecated because designs are changed.
+{% include versionSince\| 7.0.0 %} the scale mold is deprecated because
+designs are changed.
 
 # Supported Children
 
@@ -210,8 +216,12 @@ the scale mold is deprecated because designs are changed.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                     |
 |---------|--------------|---------------------------------------------------------------------------------------------|
 | 5.0.4   | August 2010  | <javadoc method="setPageIncrement(int)">org.zkoss.zul.Slider</javadoc> is supported.        |
 | 5.0.4   | August 2010  | Slider support for clicking to increment or decrement                                       |
 | 7.0.1   | January 2014 | [Slider support minimal position and decimal mode](http://tracker.zkoss.org/browse/ZK-2085) |
+
+{% include ZKComponentReferencePageFooter %}

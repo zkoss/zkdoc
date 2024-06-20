@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # A
 
 - Demonstration: N/A
@@ -187,7 +189,11 @@ Desktop.getDirectory().
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date          | Content                                                                                 |
 |---------|---------------|-----------------------------------------------------------------------------------------|
 | 5.0.5   | October, 2010 | <javadoc>org.zkoss.zul.A</javadoc> supports any children.                               |
 | 7.0.2   | May, 2014     | [Support autodisable property for A component](http://tracker.zkoss.org/browse/ZK-2237) |
+
+{% include ZKComponentReferencePageFooter %}

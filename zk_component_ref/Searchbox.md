@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Searchbox
 
 - Demonstration:
@@ -5,6 +7,8 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Searchbox</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Searchbox</javadoc>
+
+{% include ZK EE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -35,19 +39,18 @@ ListModel model = new ListModelArray(new String[] {
 # Keyboard Navigation Searchbox
 
 - `UP` or `DOWN` to pop up the list if being focused.
-
 - `ESC` to close the list.
-
 - `UP`, `DOWN`, `HOME`, `END`, `PAGE UP` and `PAGE DOWN` to change the
   selection of the item from the list.
-
 - `ENTER` to confirm the change of selection.
-
-- `DELETE` or `BACKSPACE` to clear the selection.
+- {% include versionSince\| 9.5.0 %} `DELETE` or `BACKSPACE` to clear
+  the selection.
 
 # Properties
 
 ## Autoclose
+
+{% include defaultValue\| false %}
 
 Sets whether to automatically close the list if a user selects any item.
 It means even if the user selects an item, the list still remains open.
@@ -140,6 +143,8 @@ currently selected items first.
 
 Returns all selected items.
 
+{% include CustomItemRendering \|searchbox %}
+
 # Supported Events
 
 <table>
@@ -150,12 +155,18 @@ Returns all selected items.
 </center></th>
 <th><center>
 <p>Event Type</p>
-</center>
-<p>|-</p></th>
+</center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+</tr>
+<tr class="even">
 <td><center>
 <p><code>onSelect</code></p>
 </center></td>
@@ -164,7 +175,7 @@ Returns all selected items.
 <p>Represents an event caused by the user that the list selection is
 changed at the client.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><center>
 <p><code>onOpen</code></p>
 </center></td>
@@ -174,7 +185,7 @@ changed at the client.</p></td>
 <code>onClose</code>, this event is only a notification. The client
 sends this event after opening or closing the component.</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><center>
 <p><code>onSearching</code></p>
 </center></td>
@@ -194,7 +205,11 @@ sends this event after opening or closing the component.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                               |
 |---------|----------------|-----------------------------------------------------------------------------------------------------------------------|
 | 9.0.0   | September 2019 | [ZK-4380](https://tracker.zkoss.org/browse/ZK-4380): Provide a Searchbox component                                    |
 | 9.5.0   | August 2020    | [ZK-4497](https://tracker.zkoss.org/browse/ZK-4497): searchbox: improve clearing selection, key shortcut / clear icon |
+
+{% include ZKComponentReferencePageFooter %}

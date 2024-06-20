@@ -1,6 +1,10 @@
+{% include ZKComponentReferencePageHeader %}
+
 # AfterSizeEvent
 
 - JavaDoc:<javadoc>org.zkoss.zk.ui.event.AfterSizeEvent</javadoc>
+
+{% include versionSince \| 6.5.2 %}
 
 # Employment/Purpose
 
@@ -32,3 +36,5 @@ maximizable="true" sizable="true">
 | Version | Date       | Content                                                                                |
 |---------|------------|----------------------------------------------------------------------------------------|
 | 6.5.2   | March 2013 | [Add onAfterSize event to get component size](http://tracker.zkoss.org/browse/ZK-1672) |
+
+{% include ZKComponentReferencePageFooter %}

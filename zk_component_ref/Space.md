@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Space
 
 - Demonstration: N/A
@@ -64,6 +66,10 @@ title="ZKComRef_Space_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

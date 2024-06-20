@@ -1,7 +1,11 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Track
 
 - Java API: <javadoc>org.zkoss.zul.Track</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.med.Track</javadoc>
+
+{% include versionSince\| 9.5.0 %}
 
 # Employment/Purpose
 
@@ -154,6 +158,10 @@ Specify what language this track is. It's required if the kind is
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                                                                             |
 |---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |
+
+{% include ZKComponentReferencePageFooter %}

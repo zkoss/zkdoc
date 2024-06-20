@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Footer Element
 
 - Demonstration: N/A
@@ -47,3 +49,5 @@ N/A
 | Version | Date       | Content             |
 |---------|------------|---------------------|
 | 5.0.4   | July, 2010 | new added component |
+
+{% include ZKComponentReferencePageFooter %}

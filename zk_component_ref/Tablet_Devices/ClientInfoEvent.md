@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # ClientInfoEvent
 
 - Demonstration: N/A
@@ -78,3 +80,5 @@ user.
 | Version | Date       | Content                                                                                              |
 |---------|------------|------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Add a way to listen onOrientationChange for tablet device](http://tracker.zkoss.org/browse/ZK-1273) |
+
+{% include ZKComponentReferencePageFooter %}

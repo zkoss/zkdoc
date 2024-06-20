@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 This section describes how to use the [XML component
 set](ZUML_Reference/ZUML/Languages/XML). The XML component
 set is a special [component
@@ -15,3 +17,7 @@ will generate the element and all its attributes to the client directly.
 However, the XML component set also provide some components for
 different functionality. We discuss them one-by-one in the following
 sections.
+
+{% include ZKComponentReferenceHeadingToc %}
+
+{% include ZKComponentReferencePageFooter %}

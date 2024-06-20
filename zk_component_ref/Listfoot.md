@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Listfoot
 
 - Demonstration: N/A
@@ -87,6 +89,10 @@ title="ZKComRef_Listbox_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

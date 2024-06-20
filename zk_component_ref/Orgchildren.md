@@ -1,8 +1,14 @@
+{% include ZKDevelopersReferencePageHeader %}
+
 # Orgchildren
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Orgchildren </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgchildren
   </javadoc>
+
+`{% include ZK EE %}`
+
+{% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -59,6 +65,10 @@ children.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 This section describes how to use the [XHTML component
 set](ZUML_Reference/ZUML/Languages/XHTML) (i.e., XHTML
 components). XHTML components are in a different component set than [ZUL
@@ -18,3 +20,7 @@ Notice that the HTML component set is one of the approaches to use HTML
 tags directly in a ZUML document. In most cases, it is not the best
 approach. For information please refer to [ZK Developer's Reference:
 HTML tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags).
+
+{% include ZKComponentReferenceHeadingToc %}
+
+{% include ZKComponentReferencePageFooter %}

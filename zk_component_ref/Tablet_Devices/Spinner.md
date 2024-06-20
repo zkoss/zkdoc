@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Spinner
 
 - Component Reference:
@@ -31,3 +33,5 @@ no support.
 | Version | Date       | Content                                                                                            |
 |---------|------------|----------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Add a new theme for tablet/mobile device with big icons](http://tracker.zkoss.org/browse/ZK-1247) |
+
+{% include ZKComponentReferencePageFooter %}

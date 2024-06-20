@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # PagingEvent
 
 - Demonstration: N/A
@@ -49,3 +51,5 @@ N/A
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

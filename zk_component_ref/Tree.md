@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tree
 
 - Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
@@ -98,6 +100,8 @@ To change the style of tree icon, you may call setZclass(String style).
 Four built in style includes
 "z-tree","z-dottree","z-filetree","z-vfiletree"
 
+{% include deprecatedSince\|7.0.0 %}
+
 Since ZK 7.0.0, the dottree, filetree and vfiletree styles are
 deprecated because designs are changed.
 
@@ -120,7 +124,7 @@ deprecated because designs are changed.
 When using the paging mold and vflex, you could also turn on autopaging
 (<javadoc method="setAutopaging( boolean)">org.zkoss.zul.Tree</javadoc>)
 such that the page size will be adjusted automatically based on the
-available space.
+available space. {% include versionSince\| 5.0.2 %}
 
 **Note:** If enable the autopaging, the height of each row will be
 applied the following CSS by default. If you want to change the height,
@@ -136,13 +140,15 @@ please overwrite the CSS rule as your preference.
 }
 ```
 
+{% include versionSince\| 5.0.8 %}
+
 **Note:** In ZK 7, we change the naming *.z-treecell-cnt* to
-*.z-treecell-content*.
+*.z-treecell-content*. {% include versionSince\| 7.0.3 %}
 
 ## PagingDisabled
 
-Once the `pagingDisabled` is set to `true`, users will be blocked from
-navigating through the pagination.
+{% include versionSince\| 8.0.3 %} Once the `pagingDisabled` is set to
+`true`, users will be blocked from navigating through the pagination.
 
 ## The onPaging and onPageSize Event
 
@@ -212,6 +218,8 @@ The following code demonstrates how to freeze a column within a Tree:
 </tree>
 ```
 
+{% include versionSince\| 7.0.0 %}
+
 - For further details, please refer to [ Frozen
   component](ZK_Component_Reference/Supplementary/Frozen)
   directly.
@@ -219,6 +227,8 @@ The following code demonstrates how to freeze a column within a Tree:
 # Selection
 
 ## Nonselectable Tags
+
+{% include versionSince\|5.0.5 %}
 
 By default, when a user clicks on an HTML element like <code><button>,
 <input>,
@@ -252,9 +262,10 @@ clicks, you could specify an empty string as follows.
         <treecell><textbox/></treecell>
 ```
 
-If you want to toggle the selection only when the user clicks on the
-checkmark, you could specify `*`. Notice that you have to specify
-checkmark="true" as well (otherwise, no item is selectable).
+{% include versionSince\| 5.0.6 %} If you want to toggle the selection
+only when the user clicks on the checkmark, you could specify `*`.
+Notice that you have to specify checkmark="true" as well (otherwise, no
+item is selectable).
 
 ``` xml
 <tree checkmark="true" nonselectableTags="*">
@@ -320,7 +331,11 @@ specify false to this library property called
 </library-property>
 ```
 
+{% include versionSince\| 5.0.5 %}
+
 ## Tristate Selection
+
+{% include versionSince\| 10.0.0 %}
 
 Allowing users to enable tristate selection with Model. In tristate
 mode, when users click on the checkbox, depending on whether the current
@@ -341,8 +356,9 @@ will throw a IllegalArgumentException.
 
 ### DefaultTristateTreeModel
 
-If you don't want to implement yourself, there's a default tristate tree
-model is provided in ZK EE, let's take a look at a simple demonstration.
+{% include ZK EE %} If you don't want to implement yourself, there's a
+default tristate tree model is provided in ZK EE, let's take a look at a
+simple demonstration.
 
 ``` java
 DefaultTristateTreeModel model = new DefaultTristateTreeModel(
@@ -451,12 +467,12 @@ Similarly, the `onColSize` event is sent when a user resizes the widths.
 
 ### Auto Fitting Columns
 
-When you want to resize a column of a Tree or Listbox, all you now need
-to do is double click the column when the mouse is over where the
-columns meet and the column will automatically resize to fit its
-contents. To enable this functionality Tree's treecols need the
-attribute sizable="true". In other words, all sizable column provides
-the auto-fitting functionality.
+{% include versionSince\| 5.0.0 %} When you want to resize a column of a
+Tree or Listbox, all you now need to do is double click the column when
+the mouse is over where the columns meet and the column will
+automatically resize to fit its contents. To enable this functionality
+Tree's treecols need the attribute sizable="true". In other words, all
+sizable column provides the auto-fitting functionality.
 
 ## Scrollable Tree
 
@@ -515,6 +531,8 @@ items.
 </tree>
 ```
 
+{% include versionSince\| 7.0.0 %}
+
 The browser's default scrollbar is replaced by floating scrollbar and it
 is not visible unless user mouse over on the content. To turn off the
 floating scrollbar and use original scrollbar, please add the following
@@ -561,6 +579,8 @@ content of the tree item or manipulate its content dynamically until the
 the **ZK User Interface Markup Language** chapter for details.
 
 ## Sticky Header
+
+{% include versionSince\| 9.6.0 %}
 
 After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Tree's header out of visible range in a viewport, the Tree's
@@ -629,7 +649,8 @@ turned off, right clicking on an item will change its selection state.
 `[default: false]`  
 `[inherit: true]`[^2]
 
-It specifies whether to sort the model when the following cases:
+{% include versionSince\|5.0.7 %} It specifies whether to sort the model
+when the following cases:
 
 - <javadoc method="setModel (TreeModel)">org.zkoss.zul.Tree</javadoc>is
   called and
@@ -650,6 +671,8 @@ the value as **ignore.change**.
 
 `[default: true]`  
 `[inherit: true]`[^3]
+
+{% include versionSince\|: 7.0.1 %}
 
 It specifies whether to enable autohide property for internal paging
 component.
@@ -698,9 +721,16 @@ got executed.</p></td>
 <javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
-got executed. |-</p></td>
+got executed.</p></td>
 </tr>
 <tr class="even">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+</tr>
+<tr class="odd">
 <td><center>
 <p><code>onPageSize</code></p>
 </center></td>
@@ -799,6 +829,8 @@ tree to work around.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                                                                                                         |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010       | Support the autopaging                                                                                                                                                                          |
@@ -817,6 +849,8 @@ tree to work around.</p></td>
 | 7.0.3   | July 2014      | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 | 10.0.0  | Jan 2024       | [ZK-3853](http://tracker.zkoss.org/browse/ZK-3853): Tree supports 3-states selection model                                                                                                      |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
 

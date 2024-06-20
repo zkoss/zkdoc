@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Image
 
 - Demonstration:
@@ -115,6 +117,8 @@ example code,
 
 # Preload Image
 
+{% include versionSince\|6.0.0 %}
+
 The feature is applied to all of the LabelImageElement and Image
 components.
 
@@ -141,7 +145,8 @@ For example,
 
 As you can see, the *custom-attributes* will be checked recursively
 
-The feature can also applied from zk.xml as a library properity.
+{% include versionSince\|6.5.2 %} The feature can also applied from
+zk.xml as a library properity.
 
 For example,
 
@@ -199,6 +204,10 @@ For example,
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                          |
 |---------|----------------|------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | September 2011 | [A way to pre-load images since many UIs depend on the size of an image](http://tracker.zkoss.org/browse/ZK-314) |
+
+{% include ZKComponentReferencePageFooter %}

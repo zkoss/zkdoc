@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Popup
 
 - Demonstration: [Tooltips and Popup](http://www.zkoss.org/zkdemo/popup)
@@ -64,7 +66,8 @@ by
 <button popup="popup_id, x=50,y=50"/>
 ```
 
-ZK supports the following position string:
+{% include versionSince\| 6.0.1 %} ZK supports the following position
+string:
 
 <figure>
 <img src="ZKComRef_Popup_Position_601.png"
@@ -107,15 +110,15 @@ There are several overloading open() methods available, please check
 
 # Toggle Popup
 
-If a popup/context menu is assigned to a target component via the
-popup/context attribute, the popup will show up when the user clicks on
-the target component. Click the target component again, the popup will
-still show up by default. As of 7.0.0, The popup/context attribute
-supports an additional toggle type, which could make the target
-component act as a toggle switcher. If the popup has not shown up yet,
-clicking the target component will cause the popup to show up. If the
-popup is showing up, clicking on the target component again will toggle
-the popup to hide. The usage is in the below code.
+{% include versionSince\| 7.0.0 %} If a popup/context menu is assigned
+to a target component via the popup/context attribute, the popup will
+show up when the user clicks on the target component. Click the target
+component again, the popup will still show up by default. As of 7.0.0,
+The popup/context attribute supports an additional toggle type, which
+could make the target component act as a toggle switcher. If the popup
+has not shown up yet, clicking the target component will cause the popup
+to show up. If the popup is showing up, clicking on the target component
+again will toggle the popup to hide. The usage is in the below code.
 
 ``` xml
 <button label="Popup" popup="id, type=toggle"/>
@@ -177,6 +180,10 @@ returns false).</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date     | Content                   |
 |---------|----------|---------------------------|
 | 7.0.0   | Nov 2013 | Popup support toggle type |
+
+{% include ZKComponentReferencePageFooter %}

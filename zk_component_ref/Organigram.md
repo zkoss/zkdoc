@@ -1,8 +1,12 @@
+{% include ZKDevelopersReferencePageHeader %}
+
 # Organigram
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Organigram </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Organigram
   </javadoc>
+
+{% include ZK EE %} {% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -149,6 +153,10 @@ the user has selected a new item in the organigram.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Headers Element
 
 - Demonstration: [Headers
@@ -58,3 +60,5 @@ resized one of the columns.</p></td>
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # UploadEvent
 
 - Demonstration:
@@ -50,3 +52,5 @@ N/A
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Navitem
 
 - Demonstration:
-
 - Java API:
   [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html)
-
 - JavaScript API:
   [Navitem](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navitem.html)
-
 - Style Guide:
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -102,6 +100,8 @@ Your application won't be notified when users click the navitem.
 
 ## Badge Text
 
+{% include versionSince\| 9.6.0 %}
+
 This property set the badge text for the `Navitem`, it is used to
 present more details of `Navitem`.
 
@@ -145,6 +145,10 @@ present more details of `Navitem`.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                            |
 |---------|--------------|----------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html) was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

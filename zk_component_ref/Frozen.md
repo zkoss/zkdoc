@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Frozen
 
 - Demonstration: [Spreadsheet
@@ -63,24 +65,28 @@ scroll starting position.
 
 # Smooth scrolling
 
-The frozen columns position are maintained, and the other columns uses
-CSS scrolling to move smoothly while the scroll position is updated.
+{% include ZK EE %}{% include versionSince\|8.5.0 %} The frozen columns
+position are maintained, and the other columns uses CSS scrolling to
+move smoothly while the scroll position is updated.
 
 # Column scrolling
 
-The frozen columns positions are maintained, and the other columns are
-replaced while the scroll position is updated.
+{% include ZK All %} The frozen columns positions are maintained, and
+the other columns are replaced while the scroll position is updated.
 
 ## Scroll to Hide Columns
 
-With smooth scrolling, the Grid does not add white space to the last
-column by default.
+{% include ZK EE %}{% include versionSince\|8.5.0 %} With smooth
+scrolling, the Grid does not add white space to the last column by
+default.
 
-With column scrolling, Grid will render extra space (larger width) after
-the last column. So that you can drag to hide all columns except the
-last one. ![ center](hide-columns.png " center")
+{% include ZK All %} With column scrolling, Grid will render extra space
+(larger width) after the last column. So that you can drag to hide all
+columns except the last one. ![ center](hide-columns.png " center")
 
 # Frozen on the Right
+
+{% include ZK EE %} {% include versionSince\|8.6.2 %}
 
 Make columns frozen at the right-hand side.
 
@@ -127,6 +133,10 @@ Make columns frozen at the right-hand side.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

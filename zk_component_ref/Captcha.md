@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Captcha
 
 - Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
@@ -71,6 +73,10 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Hbox
 
 - Demonstration: [Hbox](http://www.zkoss.org/zkdemo/layout/box)
@@ -89,6 +91,8 @@ title="ZKComRef_Hbox_Simple_Examples_align_pack.PNG" />
 </zk>
 ```
 
+{% include versionSince\| 5.0.0 %}
+
 # Cell Component
 
 In ZK5, we have introduced a new component named Cell which can be
@@ -104,6 +108,8 @@ rows. The code below demonstrates how to do this:
     </cell>
 </hbox>
 ```
+
+{% include versionSince\| 5.0.0 %}
 
 # Limitation
 
@@ -160,6 +166,10 @@ You will see the Box width exceed 200px. Also check the
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

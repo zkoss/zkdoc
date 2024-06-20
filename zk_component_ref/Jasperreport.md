@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Jasperreport
 
 - Demonstration:
   [Jasperreport](http://www.zkoss.org/zkdemo/reporting/jasperreport)
-
 - Java API: <javadoc>org.zkoss.zkex.zul.Jasperreport</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
-
 - Style Guide: N/A
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
@@ -20,8 +18,9 @@ This component is used to generate a Jasper report into an inline frame.
 
 # Including Dependency
 
-ZK doesn't include jasperreports by default. If you need to use this
-component, you have to include the dependency manually like:
+{% include versionSince\| 9.6.0 %} ZK doesn't include jasperreports by
+default. If you need to use this component, you have to include the
+dependency manually like:
 
 ``` xml
 <dependency>
@@ -102,6 +101,8 @@ export parameter as the following:
 
 # exportName
 
+{% include versionSince\| 8.6.1 %}
+
 You can specify the export file name for the download if any, the full
 file name will be exportName + "." + format.
 
@@ -160,76 +161,23 @@ report.setType("pdf"); // report is the Jasperreport component
 
 ## Type List
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Type</p></th>
-<th><p>Version</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>pdf</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>xml</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>html</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>rtf</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>xls</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>jxl</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>csv</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>odt</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>xlsx</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>docx</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>graphic2d</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>ods</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>pptx</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>txt</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>xhtml</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Type      | Version                            |
+|-----------|------------------------------------|
+| pdf       |                                    |
+| xml       |                                    |
+| html      |                                    |
+| rtf       |                                    |
+| xls       |                                    |
+| jxl       |                                    |
+| csv       |                                    |
+| odt       |                                    |
+| xlsx      | {% include versionSince\| 5.0.8 %} |
+| docx      | {% include versionSince\| 5.0.8 %} |
+| graphic2d | {% include versionSince\| 5.0.8 %} |
+| ods       | {% include versionSince\| 5.0.8 %} |
+| pptx      | {% include versionSince\| 5.0.8 %} |
+| txt       | {% include versionSince\| 5.0.8 %} |
+| xhtml     | {% include versionSince\| 5.0.8 %} |
 
 # Supported JasperReport Version
 
@@ -263,3 +211,5 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 |---------|--------------------------------------------------------------------------|---------------------------------------|
 | 5.0.1   | March 2010                                                               | Support Hibernate and SQL connections |
 | 5.0.8   | Upgrade JaserReport version to 4.0 and support new JasperReport exporter |                                       |
+
+{% include ZKComponentReferencePageFooter %}

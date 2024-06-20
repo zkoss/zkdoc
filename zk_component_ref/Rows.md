@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Rows
 
 - Demonstration: [Grid (Simple
@@ -103,6 +105,10 @@ title="ZKComRef_Grid_Example.png‎" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

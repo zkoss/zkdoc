@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 This guide acts as a reference of components. We outline each of the XUL
 components and include discussions of XHTML and XML components.
 
@@ -20,3 +22,5 @@ The guide follows a distinctive pattern outlining the following items:
 - The component's supported events and children
 - Component's use cases
 - The version history of the component
+
+{% include ZKComponentReferencePageFooter %}

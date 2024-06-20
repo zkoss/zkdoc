@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Gpolyline
 
 - Demonstration:
@@ -32,6 +34,8 @@ title="ZKComRef_Gpolyline_Example.png" />
 ```
 
 ## Disable Path Encoding
+
+{% include versionSince\| 3.3.0 %}
 
 In order to preserve bandwidth the polyline/polygon path coordinates are
 encoded (default) with a [lossy
@@ -78,6 +82,10 @@ of increased network request and response sizes.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

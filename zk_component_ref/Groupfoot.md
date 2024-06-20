@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Groupfoot
 
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-
 - Java API: <javadoc>org.zkoss.zul.Groupfoot</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
-
 - Style Guide: [
   Groupfoot](ZK_Style_Guide/XUL_Component_Specification/Groupfoot)
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
@@ -108,6 +106,10 @@ title="ZKComRef_Group_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

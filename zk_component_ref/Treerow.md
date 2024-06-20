@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Treerow
 
 - Demonstration: [Tree (Dynamic
@@ -99,6 +101,10 @@ in it, such as label, image, textbox etc.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date       | Content                                                                     |
 |---------|------------|-----------------------------------------------------------------------------|
 | 5.0.1   | March 2010 | Allow the context, tooltip and popup properties to be specified in Treerow. |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Fisheye
 
 - Demonstration:
@@ -80,6 +82,8 @@ of how to do this.
 </zk>
 ```
 
+{% include versionSince\| 5.0.0 %}
+
 # Inherited Functions
 
 Please refer to [
@@ -122,6 +126,10 @@ for inherited functions.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                         |
 |---------|--------------|---------------------------------|
 | 5.0.0   | January 2010 | Fisheye supports dynamic images |
+
+{% include ZKComponentReferencePageFooter %}

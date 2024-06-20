@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Dropupload
 
 - Demonstration: N/A
@@ -5,6 +7,8 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Dropupload</javadoc>
 - Style Guide: N/A
+
+{% include ZK EE %}
 
 # Employment/Purpose
 
@@ -95,10 +99,10 @@ users won't be able to drag a file into the component successfully.
 
 # Anchor
 
-This attribute allows the dropupload component to anchor to another
-component and overlay that component when the user drag & drops files to
-the browser. Much like how Gmail works when dropping attachments to
-emails.
+{% include versionSince\| 7.0.2 %} This attribute allows the dropupload
+component to anchor to another component and overlay that component when
+the user drag & drops files to the browser. Much like how Gmail works
+when dropping attachments to emails.
 
 ## Example
 
@@ -124,7 +128,7 @@ emails.
 
 # Accept
 
-This attribute specifies [the MIME
+{% include versionSince\| 10.0.0 %} This attribute specifies [the MIME
 types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 that the server accepts. Similar to [the maxsize
 attribute](#Maxsize), if one of the files does not match the
@@ -367,8 +371,12 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date            | Content                                                                        |
 |---------|-----------------|--------------------------------------------------------------------------------|
 | 6.5.0   | June, 2012      | <javadoc>org.zkoss.zkmax.zul.Dropupload</javadoc> was introduced.              |
 | 7.0.2   | March, 2014     | [ZK-2207](http://tracker.zkoss.org/browse/ZK-2207): Dropupload supports anchor |
 | 10.0.0  | September, 2023 | [ZK-4969](http://tracker.zkoss.org/browse/ZK-4969): Dropupload supports accept |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # SelectEvent
 
 - Demonstration: N/A
@@ -51,22 +53,24 @@ out. (if a model exists and is in paging mold, it should return null)
 
 ## Get the Previous Selected Objects
 
-If users want to know which of the selected objects are new added or
-removed, they can use the *getPreviousSelectedObjects* method to filter
-out. The information is available only when the target component has a
-model.
+{% include versionSince\| 7.0.1 %} If users want to know which of the
+selected objects are new added or removed, they can use the
+*getPreviousSelectedObjects* method to filter out. The information is
+available only when the target component has a model.
 
 ## Get the Unselected Items
 
-If users want to know which of the selected items are deselected, they
-can use the *getUnselectedItems* method to filter out. (if a model
-exists and is in paging mold, it should return null)
+{% include versionSince\| 7.0.1 %} If users want to know which of the
+selected items are deselected, they can use the *getUnselectedItems*
+method to filter out. (if a model exists and is in paging mold, it
+should return null)
 
 ## Get the Unselected Objects
 
-If users want to know which of the selected objects are deselected, they
-can use the *getUnselectedObjects* method to filter out. The information
-is available only when the target component has a model.
+{% include versionSince\| 7.0.1 %} If users want to know which of the
+selected objects are deselected, they can use the *getUnselectedObjects*
+method to filter out. The information is available only when the target
+component has a model.
 
 # Supported events
 
@@ -105,3 +109,5 @@ is available only when the target component has a model.
 |---------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013. | [Multiple selection component(listbox, chosenbox) support extra information for find out added item/removed item](http://tracker.zkoss.org/browse/ZK-1992) |
 | 7.0.1   | January 2014.  | [SelectEvent support get UnselectedItems](http://tracker.zkoss.org/browse/ZK-2089)                                                                         |
+
+{% include ZKComponentReferencePageFooter %}

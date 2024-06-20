@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Event
 
 - Demonstration: N/A
@@ -46,3 +48,5 @@ An event sent to the event handler of a component.
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

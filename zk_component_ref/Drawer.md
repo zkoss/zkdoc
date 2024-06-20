@@ -1,9 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Drawer
 
 - Demonstration: [Introduce a new ZK Addon:
   Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Drawer</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Drawer</javadoc>
+
+{% include ZK EE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -81,6 +85,8 @@ drawer to close it.
 
 ## Position
 
+{% include defaultValue\| right %}
+
 Sets the position of the drawer. Valid values are `left`, `right`, `top`
 and `bottom`.
 
@@ -131,6 +137,10 @@ component.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                         |
 |---------|----------------|---------------------------------------------------------------------------------|
 | 9.0.0   | September 2019 | [ZK-4365](https://tracker.zkoss.org/browse/ZK-4365): Provide a drawer component |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Nodom
 
 - Demonstration: N/A
@@ -69,7 +71,11 @@ title="ZKComRef_Idspace_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date       | Content                     |
 |---------|------------|-----------------------------|
 | 8.0.3   | 2016/09/21 | Add the new Nodom component |
 |         |            |                             |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Combobox
 
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
@@ -116,6 +118,8 @@ a default value, For example,
     ]]></attribute>
 </combobox>
 ```
+
+{% include versionSince\| 5.0.4 %}
 
 # Properties
 
@@ -367,8 +371,8 @@ Please see
 
 ## PopupWidth
 
-By specifying this property, the width of the popup will be set and
-ignore the default behavior.  
+{% include versionSince\| 8.0.3 %} By specifying this property, the
+width of the popup will be set and ignore the default behavior.  
 If percentage is specified to this property, the width of the popup will
 be calculated with the width of the bandbox.  
 For example, if it's set to 130%, and the width of the bandbox is 300px,
@@ -378,16 +382,17 @@ directly.
 
 ## InstantSelect
 
-By default, any change of selection using the keyboard will trigger
-`onSelect` and `onChange` events instantly. Once set this property
-`false`, users need to confirm the change by pressing Enter key or make
-combobox lose its focus so `onSelect` and `onChange` events will be
-triggered. And pressing Esc key can abort the change and revert to
-previous selection.
+{% include versionSince\| 8.6.1 %} By default, any change of selection
+using the keyboard will trigger `onSelect` and `onChange` events
+instantly. Once set this property `false`, users need to confirm the
+change by pressing Enter key or make combobox lose its focus so
+`onSelect` and `onChange` events will be triggered. And pressing Esc key
+can abort the change and revert to previous selection.
 
 ## IconSclass
 
-Specify the sclass name of the Combobox button icon.
+{% include versionSince\| 8.6.2 %} Specify the sclass name of the
+Combobox button icon.
 
 # Inherited Functions
 
@@ -429,7 +434,14 @@ the client.</p></td>
 sends this event after opening or closing the component.</p>
 <p>It is useful to implement <em>load-on-demand</em>by listening to the
 <code>onOpen</code>event, and creating components when the first time
-the component is opened. |-</p></td>
+the component is opened.</p></td>
+</tr>
+<tr class="odd">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
 </tr>
 </tbody>
 </table>
@@ -469,8 +481,8 @@ title="combobox_mold_default.png" />
 <p>rounded</p>
 </center></td>
 <td><p><img src="combobox_mold_rounded.png"
-title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" />
-</p></td>
+title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" /> {%
+include versionSince| 5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -487,9 +499,13 @@ title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                                                                                                                       |
 |---------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 8.6.1   | January 2019 | [ZK-4185](https://tracker.zkoss.org/browse/ZK-4185): Combobox: provide option to reduce onSelect/onChange events when using keyboard                                                          |
 | 5.0.4   | August 2010  | <javadoc>org.zkoss.zul.ListModels</javadoc> was introduced to simply the implementation of autocomplete.                                                                                      |
 | 5.0.4   | July 2010    | Combobox supported <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc> if it is also implemented with the specified <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. |
 | 5.0.4   | July 2010    | Supported onAfterRender event                                                                                                                                                                 |
+
+{% include ZKComponentReferencePageFooter %}

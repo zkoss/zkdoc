@@ -1,4 +1,9 @@
+{% include ZKComponentReferencePageHeader %} {% include
+versionSince\|9.5.0 %} {% include ZK EE %}
+
 ## Required Settings
+
+{% include ZKComponentReferenceAccessibilityNamingReference %}
 
 ## Keyboard Support
 

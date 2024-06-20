@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Combobutton
 
 - Demonstration:
@@ -177,6 +179,8 @@ directly.</p></td>
 - The default mold
 - The tbbtn mold
 
+`{% include versionSince| 6.5.0 %}`
+
 The **tbbtn** mold is renamed to **toolbar** mold
 
 # Supported Children
@@ -192,6 +196,10 @@ Menupopup](ZK_Component_Reference/Essential_Components/Menu/Menupopup)
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                           |
 |---------|----------------|---------------------------------------------------|
 | 6.5.0   | September 2012 | The **tbbtn** mold is renamed to **toolbar** mold |
+
+{% include ZKComponentReferencePageFooter %}

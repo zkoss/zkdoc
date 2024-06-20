@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Navseparator
 
 - Demonstration:
-
 - Java API:
   [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)
-
 - JavaScript API:
   [Navseparator](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navseparator.html)
-
 - Style Guide:
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -73,6 +71,10 @@ title="ZKComRef_Navseparator.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date          | Content                                                                                                      |
 |---------|---------------|--------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013 | [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html) was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

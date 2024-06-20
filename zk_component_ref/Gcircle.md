@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Gcircle
 
 - Demonstration: N/A
@@ -61,6 +63,10 @@ points, fill color, etc..
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

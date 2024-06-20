@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tab
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
@@ -38,7 +40,8 @@ title="ZKComRef_Containers_Tab.PNG" />
 ## Caption
 
 A tab might have a caption, which is specified by declaring a child
-component called caption.
+component called caption. {% include ZK EE %} {% include
+versionSince\|6.5.0 %}
 ![](ZKComRef_Containers_Tab_Caption.PNG "ZKComRef_Containers_Tab_Caption.PNG")
 
 ``` xml
@@ -70,6 +73,8 @@ method of Tab. Then, onClose, by default, detaches the tab itself and
 the corresponding tab panel.
 
 ### Dynamically-created Tab
+
+`{% include versionSince| 7.0.0 %}`
 
 If you assign a model to a Tabbox, it will do nothing for an onClose
 event. Therefore, developers have to listen an onClose event to remove
@@ -135,6 +140,10 @@ shall detach itself.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date       | Content                                                                                                     |
 |---------|------------|-------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June, 2012 | [ZK-970](http://tracker.zkoss.org/browse/ZK-970): The Tab component support caption component as it's label |
+
+{% include ZKComponentReferencePageFooter %}

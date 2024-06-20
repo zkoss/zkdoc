@@ -1,3 +1,7 @@
+{% include ZKComponentReferencePageHeader %} {% include
+versionSince\|9.5.0 %} {% include ZK EE %} {% include
+ZKComponentReferenceAccessibilityNamingReference %}
+
 ## Keyboard Support
 
 <table>
@@ -22,11 +26,11 @@
 </tr>
 <tr class="odd">
 <td><p>PageUp / PageDown</p></td>
-<td><p>Navigate the month.</p></td>
+<td><p>{% include versionSince|10.0.0 %} Navigate the month.</p></td>
 </tr>
 <tr class="even">
 <td><p>Shift+PageUp / Shift+PageDown</p></td>
-<td><p>Navigate the year.</p></td>
+<td><p>{% include versionSince|10.0.0 %} Navigate the year.</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # OpenEvent
 
 - Demonstration: [OpenEvent](http://www.zkoss.org/zkdemo/userguide/#e9)
@@ -60,3 +62,5 @@ N/A
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

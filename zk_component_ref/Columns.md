@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Columns
 
 - Demonstration: [Grid (Simple
@@ -153,6 +155,10 @@ column provides the auto-fitting feature.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

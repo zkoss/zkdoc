@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Style
 
 - Demonstration:
@@ -63,6 +65,10 @@ The style component used to specify `CSS` styles for the owner desktop.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                          |
 |---------|-----------|----------------------------------|
 | 5.0.3   | June 2010 | The media property is supported. |
+
+{% include ZKComponentReferencePageFooter %}

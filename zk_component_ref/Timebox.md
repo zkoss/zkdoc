@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Timebox
 
 - Demonstration: [Date and
@@ -19,6 +21,8 @@ An edit box for holding a time (a java.util.Date Object) , but only Hour
 ``` xml
 <timebox cols="11"/>
 ```
+
+{% include IntegrateMomentjs %}
 
 # Properties
 
@@ -64,11 +68,11 @@ Below is an example of using *a* within the format.
 <timebox cols="8" format="HH:mm:ss"/>
 ```
 
-In addition to specifying the format explicitly, you could specify the
-styling. There are four different types of styling: short, medium, long
-and full (representing the styling of java.text.DateFormat). For
-example, you could specify the styling rather than the real format as
-follows.
+{% include versionSince\| 5.0.7 %} In addition to specifying the format
+explicitly, you could specify the styling. There are four different
+types of styling: short, medium, long and full (representing the styling
+of java.text.DateFormat). For example, you could specify the styling
+rather than the real format as follows.
 
 ``` xml
 <timebox format="short"/>
@@ -163,8 +167,8 @@ zul.jar.
 <p>rounded</p>
 </center></td>
 <td><p><img src="timebox_mold_rounded.png"
-title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" />
-</p></td>
+title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
+include versionSince| 5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -181,7 +185,11 @@ title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date        | Content                                                                                                                                         |
 |---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | April, 2011 | <javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Timebox</javadoc> supported the styling.                                            |
 | 5.0.7   | April, 2011 | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Timebox</javadoc> was introduced to specify a locale other than the current locale. |
+
+{% include ZKComponentReferencePageFooter %}

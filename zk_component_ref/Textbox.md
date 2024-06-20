@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Textbox
 
 - Demonstration:
@@ -71,6 +73,8 @@ title="ZKComRef_Textbox_Tabbable.png" />
 
 ## SubmitByEnter
 
+{% include versionSince\| 8.5.2 %}
+
 When you specify **true**, pressing Enter will fire onOK event rather
 then move to next line, if you want to move to next line, you should
 press **Shift + Enter**.
@@ -94,6 +98,8 @@ stars.
 Username: <textbox/>
 Password: <textbox type="password"/>
 ```
+
+`{% include versionSince| 6.5.0 %}`
 
 The `type` attribute support HTML 5 defined types `tel`, `email` and
 `url`.
@@ -162,3 +168,5 @@ IE.</p></td>
 </tr>
 </tbody>
 </table>
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,14 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Barcode
 
 - Demonstration:
   [Barcode](https://blog.zkoss.org/2018/09/05/8-6-preview-barcode-and-barcodescanner/)
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Barcode</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barcode.Barcode</javadoc>
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -209,6 +208,10 @@ WEB-INF/lang-addon.xml
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date        | Content                                            |
 |---------|-------------|----------------------------------------------------|
 | 8.6.0   | Apirl, 2018 | <javadoc>org.zkoss.zkmax.barcode.Barcode</javadoc> |
+
+{% include ZKComponentReferencePageFooter %}

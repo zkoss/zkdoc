@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Intbox
 
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
@@ -35,8 +37,8 @@ with a formatting string. The default value is `null`.
 <intbox format="#,##0"/>
 ```
 
-You can provide a locale to format the number by specify the String
-starts with "locale:"
+{% include versionSince\| 8.5.2 %} You can provide a locale to format
+the number by specify the String starts with "locale:"
 
 ``` xml
 <intbox format="locale:zh-TW"/>
@@ -113,3 +115,5 @@ for inherited functions.
 |---------|-----------------------------------------|------------------------------------------------------------------------------------------------|
 | 3.6     | Leading zero in Intbox                  | [<http://www.zkoss.org/forum/listComment/10271>](http://www.zkoss.org/forum/listComment/10271) |
 | 3.6     | Constraint Intbox to accept only digits | [<http://www.zkoss.org/forum/listComment/4603>](http://www.zkoss.org/forum/listComment/4603)   |
+
+{% include ZKComponentReferencePageFooter %}

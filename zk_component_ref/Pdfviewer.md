@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Pdfviewer
 
 - Demonstration: [Embed PDF Documents in Your ZK
@@ -5,6 +7,8 @@
 - Java API: <javadoc>org.zkoss.zkex.zul.Pdfviewer</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
+
+{% include ZK PE %} {% include versionSince\|9.0.0 %}
 
 # Employment/Purpose
 
@@ -47,6 +51,8 @@ is at the top. You can use CSS to do more tweaks.
 ```
 
 # Zoom to Fit Page Width / Fit Page Height
+
+{% include versionSince\|9.6.0 %}
 
 You can call `setZoom("fit-page-width")` or `setZoom("fit-page-height")`
 now.
@@ -146,3 +152,5 @@ has changed the rotation angle.</p></td>
 |---------|--------------|--------------------------------------------------------------------------------------------------------------------|
 | 9.0.0   | October 2019 | [ZK-4395](https://tracker.zkoss.org/browse/ZK-4395): Provide a pdfviewer component                                 |
 | 9.6.0   | June 2021    | [ZK-4917](https://tracker.zkoss.org/browse/ZK-4917): set zoom level with fit-page-width or fit-page-height in Java |
+
+{% include ZKComponentReferencePageFooter %}

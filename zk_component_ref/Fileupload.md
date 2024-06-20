@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Fileupload
 
 - Demonstration: [File
@@ -113,6 +115,8 @@ example, receive the `onUpload` event since it is the root component:
 
 ### Specify the Callback Event Listener
 
+{% include versionSince\| 6.5.3 %}
+
 If you prefer the event being sent to the callback event listener,
 specify the event listener when invoke Fileupload.get().
 
@@ -156,6 +160,8 @@ For example:
 ```
 
 ### Specify the Target Component
+
+{% include versionSince\| 5.0.2 %}
 
 If you prefer the event being sent to a particular component, specify
 the component in the desktop's attribute called
@@ -286,9 +292,13 @@ Upload your hot shot:
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date     | Content                                                                                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>. Used if the event thread is disabled. |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK
     Configuration Reference:

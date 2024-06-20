@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Gmaps
 
 - Demonstration:
@@ -28,6 +30,8 @@ very special places.
 # Authentication
 
 ## Configure in Application Scope
+
+{% include versionSince \|4.0.0 %}
 
 In zk.xml
 
@@ -101,6 +105,8 @@ title="ZKComRef_Gmaps_Example.png" />
 # Properties
 
 ## Protocol
+
+{% include versionSince\| 3.0.0 %}
 
 Specify which protocol to load the Maps API. Currently it supports
 `http` for insecure connections and `https` for secure connections.
@@ -202,6 +208,8 @@ MapZoomEvent</a></p>
 
 **3.0.4 already includes the `addon.xml` below**, you don't need to add
 it manually.
+
+{% include versionSince\| 6.0.0 %}
 
 For work with ZK6 MVVM, it is required to create an addon xml and add
 the server annotation as follows:
@@ -385,3 +393,5 @@ Note that ZK GMaps integrates ZK and Google Maps, allowing developers to
 include Google Maps inside a ZK application easily. Google Maps itself
 is a 3rd party library and is licensed under its own terms and
 conditions.
+
+{% include ZKComponentReferencePageFooter %}

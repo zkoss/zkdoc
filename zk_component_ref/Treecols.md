@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Treecols
 
 - Demonstration: [Tree (Dynamic
@@ -100,6 +102,10 @@ column will appear as a column at the top of the tree.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

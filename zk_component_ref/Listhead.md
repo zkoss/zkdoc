@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Listhead
 
 - Demonstration: [Listbox
@@ -55,11 +57,13 @@ title="ZKComRef_Listbox_Example.png" />
 
 ## Menupopup
 
+{% include versionSince\| 6.5.0 %}
+
 Default: `none`
 
 - `auto`: show a default menu for the listhead.
-- `auto-keep`: the default menu will keep open after setting column
-  visibility.
+- `auto-keep`: {% include versionSince\| 8.6.1 %} the default menu will
+  keep open after setting column visibility.
 
 Or you can provide your own menupopup by specifying a menupopup's ID.
 
@@ -189,6 +193,10 @@ For example,
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                                |
 |---------|-----------|----------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-120](http://tracker.zkoss.org/browse/ZK-120): Provide menupopup="auto" for listbox |
+
+{% include ZKComponentReferencePageFooter %}

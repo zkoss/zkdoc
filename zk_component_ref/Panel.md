@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Panel
 
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
@@ -73,6 +75,8 @@ true. The example ZUL below shows a panel which can be resized.
 </panel>
 ```
 
+{% include versionSince\|5.0.0 %}
+
 ## Draggable
 
 When used with [
@@ -103,6 +107,8 @@ layout.
    </portalchildren>
 </portallayout>
 ```
+
+{% include versionSince\|5.0.3 %}
 
 ## Border
 
@@ -296,7 +302,11 @@ The</p>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date          | Content                                                                                           |
 |---------|---------------|---------------------------------------------------------------------------------------------------|
 | 5.0.3   | July, 2010    | The draggable property can be used to control the drag-ability in a portal layout.                |
 | 5.0.6   | January, 2010 | The framable property was deprecated. Please refer to [\#Border](#Border) for details. |
+
+{% include ZKComponentReferencePageFooter %}

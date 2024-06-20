@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Label Image Element
 
 - Demonstration: N/A
@@ -10,6 +12,8 @@
 An HTML element with a label and an image.
 
 # Preload Image
+
+{% include versionSince\| 6.0.0 %}
 
 The feature is applied to all of the LabelImageElement and Image
 components.
@@ -38,6 +42,8 @@ For example,
 As you can see, the *custom-attributes* will be checked recursively (see
 also
 <javadoc method="getAttribute(java.lang.String,boolean)">org.zkoss.zk.ui.ext.Scope</javadoc>).
+
+{% include versionSince\| 6.5.2 %}
 
 The feature can also applied from zk.xml as a library property.
 
@@ -77,3 +83,5 @@ Allow you to specify built-in icon CSS classes, see
 | 10.0.0  | August 2023    | [ZK-5502: Allow users to customize tooltip on the icon](http://tracker.zkoss.org/browse/ZK-5502)                                       |
 | 10.0.0  | August 2023    | [ZK-5503: Allow users to set multiple icons and tooltips on the same LabelImageElement](http://tracker.zkoss.org/browse/ZK-5503)       |
 | 10.0.0  | September 2023 | [ZK-5119: Integrate Font Awesome 6 free icons](http://tracker.zkoss.org/browse/ZK-5119)                                                |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tabbox
 
 - Component Reference:
@@ -44,3 +46,5 @@ title="Tabbox_Tablet_Scrolling_Example.png" />
 | Version | Date       | Content                                                                                               |
 |---------|------------|-------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Tabbox support touch's swipe event to switch tab selection](http://tracker.zkoss.org/browse/ZK-1244) |
+
+{% include ZKComponentReferencePageFooter %}

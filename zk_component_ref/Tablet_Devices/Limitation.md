@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Unsupported Component
 
 In Tablet/mobile device, there are some different design against desktop
@@ -34,3 +36,5 @@ to the output of the component which the input type is number.
 |---------|--------------|----------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012   |                                                                                                                      |
 | 7.0.3   | August, 2014 | Fall back to use Desktop implementation for NumberInputElement with "format" and "locale" attributes in Tablet mold. |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,16 +1,14 @@
+{% include ZKComponentReferencePageHeader %} {% include Deprecated
+Content %}
+
 # Fusionchart
 
 - Demonstration:
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Fusionchart</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
-
 - Style Guide: N/A
-
-- 
-
+- {% include ZK EE %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the
   3rd party library that it's based on - Fusioncharts free, has moved
   out of flash and stopped supporting it.
@@ -94,12 +92,14 @@ support 3D)</p></td>
 </tr>
 <tr class="odd">
 <td><p>pie</p></td>
-<td><p>PieModel, SingleValueCategoryModel</p></td>
+<td><p>PieModel, SingleValueCategoryModel{% include versionSince| 6.5.3
+%}</p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="even">
 <td><p>funnel</p></td>
-<td><p>SingleValueCategoryModel</p></td>
+<td><p>SingleValueCategoryModel{% include versionSince| 6.5.3
+%}</p></td>
 <td><p>X</p></td>
 </tr>
 <tr class="odd">
@@ -412,6 +412,8 @@ public class PiechartComposer extends SelectorComposer<Div> {
 ```
 
 ## Funnel Chart
+
+`{% include versionSince| 6.5.3 %}`
 
 ![](Funnelchart.png)
 
@@ -774,8 +776,12 @@ from this event.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date        | Content                             |
 |---------|-------------|-------------------------------------|
 | 6.0.1   | April. 2012 | add new component                   |
 | 6.5.3   | June 2013   | add Fusion Funnel chart integration |
 | All     | April 2014  | entering maintenance mode           |
+
+{% include ZKComponentReferencePageFooter %}

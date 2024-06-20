@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tabs
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
@@ -78,6 +80,10 @@ title="ZKComRef_Containers_Tabs.PNG" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

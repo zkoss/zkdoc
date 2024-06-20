@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tabbox
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
@@ -106,14 +108,14 @@ title="ZKComRef_Tabbox_Toolbar_Examples.png" />
 
 ## MaximalHeight
 
-In order to solve the problem where each tabpanel have different
-heights, we offer this feature called **MaximalHeight**. With this
-feature, every Tabpanel will be applied the maximum height among all the
-tabpanels i.e. if one tabpanel's height is at 300px while the rest is at
-240px, all of the tabpanels will be applied with a height of 300px. This
-feature only works in the initial phase. The screenshot below
-demonstrates an example Tabbox which includes 3 tabpanels and all of
-them use the maximum height.
+{% include versionSince\| 7.0.0 %} In order to solve the problem where
+each tabpanel have different heights, we offer this feature called
+**MaximalHeight**. With this feature, every Tabpanel will be applied the
+maximum height among all the tabpanels i.e. if one tabpanel's height is
+at 300px while the rest is at 240px, all of the tabpanels will be
+applied with a height of 300px. This feature only works in the initial
+phase. The screenshot below demonstrates an example Tabbox which
+includes 3 tabpanels and all of them use the maximum height.
 
 Note: The Client ROD feature will be disabled if it is set to true.
 
@@ -214,7 +216,72 @@ title="tabbox_mold_accordion.png" />
 </center></td>
 <td><p><img src="tabbox_mold_accordion-lite.png"
 title="tabbox_mold_accordion-lite.png"
-alt="tabbox_mold_accordion-lite.png" /> </p></td>
+alt="tabbox_mold_accordion-lite.png" /> {% include deprecatedSince|7.0.0
+%}</p></td>
 </tr>
 </tbody>
 </table>
+
+# Supported Orients
+
+<table>
+<thead>
+<tr class="header">
+<th><center>
+<p>Name</p>
+</center></th>
+<th><center>
+<p>Screenshot</p>
+</center></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><center>
+<p>top</p>
+</center></td>
+<td>![](tabbox_orient_top.png)</td>
+</tr>
+<tr class="even">
+<td><center>
+<p>left</p>
+</center></td>
+<td><figure>
+<img src="tabbox_orient_vertical.png"
+title="tabbox_orient_vertical.png" />
+<figcaption>tabbox_orient_vertical.png</figcaption>
+</figure></td>
+</tr>
+<tr class="odd">
+<td><center>
+<p>right</p>
+</center></td>
+<td><figure>
+<img src="tabbox_orient_vertical-right.png"
+title="tabbox_orient_vertical-right.png" />
+<figcaption>tabbox_orient_vertical-right.png</figcaption>
+</figure></td>
+</tr>
+<tr class="even">
+<td><center>
+<p>bottom</p>
+</center></td>
+<td>![](tabbox_orient_bottom.png‎)</td>
+</tr>
+</tbody>
+</table>
+
+``` xml
+<tabbox orient="bottom">
+</tabbox>
+```
+
+- {% include versionSince\| 7.0.0 %} Rename orient "horizontal" to
+  "top", "vertical" to "left" and add extra two orients named "bottom"
+  and "right"
+
+# Supported Children
+
+`*`[` Tabs`](ZK_Component_Reference/Containers/Tabbox/Tabs)`, `[` Tabpanels`](ZK_Component_Reference/Containers/Tabbox/Tabpanels)`, `[`Toolbar`](ZK_Component_Reference/Essential_Components/Toolbar)
+
+{% include ZKComponentReferencePageFooter %}

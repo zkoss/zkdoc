@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Progressmeter
 
 - Demonstration:
@@ -28,6 +30,8 @@ title="ZKComRef_Progressmeter_Example.PNG" />
 # Properties
 
 ## Indeterminate
+
+`{% include versionSince| 8.6.1 %}`
 
 If true, the progressmeter will show an indeterminate animation and the
 real value of the progressmeter will be hidden.(default false)
@@ -68,7 +72,11 @@ real value of the progressmeter will be hidden.(default false)
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                                                            |
 |---------|-----------|--------------------------------------------------------------------------------------------------------------------|
 |         |           |                                                                                                                    |
 | 8.6.1   | Jan, 2019 | [ZK-3629](https://tracker.zkoss.org/browse/ZK-3629): use the progressmeter to indicate a long operation is so hard |
+
+{% include ZKComponentReferencePageFooter %}

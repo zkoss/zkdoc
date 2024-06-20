@@ -1,3 +1,7 @@
+{% include ZKComponentReferencePageHeader %} {% include
+versionSince\|9.5.0 %} {% include ZK EE %} {% include
+ZKComponentReferenceAccessibilityNamingReference %}
+
 ## Keyboard Support
 
 To move the Panel from a Portalchildren to another with a keyboard:

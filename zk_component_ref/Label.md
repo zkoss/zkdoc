@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Label
 
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
@@ -86,6 +88,8 @@ references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_
 # Properties
 
 ## Pre, Hyphen, Maxlength and Multiline
+
+{% include versionSince\|5.0.0 %}
 
 You can control how a label is displayed using the `pre`, `multiline`
 and `maxlength` properties. For example, if you specify `pre` to be
@@ -330,6 +334,10 @@ only preserves new lines and white space at the beginning of each line.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

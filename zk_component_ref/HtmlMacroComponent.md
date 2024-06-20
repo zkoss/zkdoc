@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Html Macro Component
 
 - Demonstration: N/A
@@ -8,7 +10,7 @@
 
 The base class for macro components.
 
-By default invoking
+{% include versionSince \| 5.0.4 %} By default invoking
 <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
 supports auto forward events and wire accessible variables to this
 component.
@@ -138,3 +140,5 @@ Events](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_even
 |---------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.3   | June 2010   | The corresponding DOM element is customizable. It defaults to SPAN (the same as prior version) but you can change it to any tag by use of <javadoc method="setEnclosingTag(java.lang.String)">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>. |
 | 5.0.4   | August 2010 | By default, invoking <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc> supports auto forward events and wire accessible variables to this component.                                                            |
+
+{% include ZKComponentReferencePageFooter %}

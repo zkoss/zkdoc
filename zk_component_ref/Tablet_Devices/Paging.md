@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Paging
 
 - Component Reference:
@@ -25,3 +27,5 @@ title="Paging_Tablet_Example.png" />
 | Version | Date       | Content                                                                                                         |
 |---------|------------|-----------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Grid/List/Tree support changing page by swipe event on tablet device](http://tracker.zkoss.org/browse/ZK-1283) |
+
+{% include ZKComponentReferencePageFooter %}

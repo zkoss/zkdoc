@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Comboitem
 
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
@@ -62,6 +64,10 @@ title="ZKComRef_Combobox_Example.PNG" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

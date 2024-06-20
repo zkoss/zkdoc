@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Grid
 
 - Component Reference:
@@ -33,3 +35,5 @@ follows.
 | Version | Date       | Content                                                                                                                            |
 |---------|------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Grid, Listbox, Tree can support to scroll the content by finger on tablet/mobile device](http://tracker.zkoss.org/browse/ZK-1239) |
+
+{% include ZKComponentReferencePageFooter %}

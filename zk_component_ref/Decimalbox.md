@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Decimalbox
 
 - Demonstration:
@@ -35,8 +37,9 @@ with a formatting string. The default value is `null`.
 <decimalbox format="#,##0.##"/>
 ```
 
-You can provide a locale to format the number by specifying a value
-starting with "locale:", e.g. [Indian numbering
+{% include versionSince\| 8.5.2 %} You can provide a locale to format
+the number by specifying a value starting with "locale:", e.g. [Indian
+numbering
 system](https://en.wikipedia.org/wiki/Indian_numbering_system):
 
 ``` xml
@@ -119,6 +122,10 @@ for inherited functions.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Iframe
 
 - Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
@@ -105,6 +107,8 @@ deliberately passing the information through session.
 
 # Communication among iFrames without Server Push
 
+{% include versionSince\| 5.0.4 %} {% include ZK_EE %}
+
 If your application contains multiple desktops due to iframes in a
 portal layout it is now possible to communicate between these instances
 without the need for server push or timer. It thus minimizes the network
@@ -205,9 +209,13 @@ to.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: For more information please refer to the [Component-based
     UI](ZK_Developer's_Reference/UI_Composing/Component-based_UI)

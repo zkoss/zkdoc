@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # HistoryPopStateEvent
 
 - Demonstration: N/A
@@ -145,3 +147,5 @@ public class TestVM {
 | Version | Date     | Content                                                                       |
 |---------|----------|-------------------------------------------------------------------------------|
 | 8.5.0   | Oct 2017 | [ZK-3711](http://tracker.zkoss.org/browse/ZK-3711): Support HTML5 history API |
+
+{% include ZKComponentReferencePageFooter %}

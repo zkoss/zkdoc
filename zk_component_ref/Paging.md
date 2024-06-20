@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Paging
 
 - Demonstration: [Paging (with
@@ -73,6 +75,8 @@ Cases](#Use_Cases) below.
 # Properties
 
 ## Disabled
+
+{% include versionSince\| 8.0.3 %}
 
 <javadoc method="setDisabled(boolean)">org.zkoss.zul.Paging</javadoc> is
 used to disable the paging component. It can block the user from
@@ -208,6 +212,10 @@ title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

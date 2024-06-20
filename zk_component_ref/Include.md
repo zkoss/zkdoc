@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Include
 
 - Demonstration:
@@ -326,6 +328,8 @@ zk.afterMount(function () {
 
 **Use the org.zkoss.zul.include.html.defer attribute**
 
+{% include versionSince\|5.0.7 %}
+
 Alternatively, you could specify a custom attribute called
 `the org.zkoss.zul.include.html.defer` in the
 <javadoc>org.zkoss.zul.Include</javadoc> component (rather than using
@@ -437,6 +441,8 @@ is used (default), it switches to the defer mode automatically.
 `[default: false]`  
 `[inherit: true]`[^1]
 
+{% include versionSince\|5.0.7 %}
+
 It specifies whether to defer the rendering of the included non-ZUML
 page, until all widgets are instantiated and rendered at the client. By
 default, if the included page is not ZUML (i.e., HTML fragment), the
@@ -487,9 +493,13 @@ Pages](#Include_Non-ZUML_Pages) section.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                                                                                                                                                                                                                      |
 |---------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.0   | January 2010 | The mode is default to `auto` (rather than `defer`). You could configure the default mode to defer by specifying a library property called [org.zkoss.zul.include.mode](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.include.mode) in `WEB-INF/zk.xml`. |
 | 5.0.7   | April 2011   | The custom attribute called `org.zkoss.zul.include.html.defer` was introduced to defer the rendering of a non-ZUML page (such as HTML fragment) until all widgets are instantiated and rendered at the client.                                                                               |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`

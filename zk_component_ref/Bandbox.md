@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Bandbox
 
 - Demonstration:
@@ -208,8 +210,8 @@ Notes:
 
 ## IconSclass
 
-Specify the sclass name of the Bandbox button icon. For built-in icon,
-please see
+{% include versionSince\| 8.6.2 %} Specify the sclass name of the
+Bandbox button icon. For built-in icon, please see
 [ZK_Component_Reference/Base_Components/LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement).
 
 # Inherited Functions
@@ -276,8 +278,8 @@ zul.jar.
 <p>rounded</p>
 </center></td>
 <td><p><img src="bandbox_mold_rounded.png"
-title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" />
-</p></td>
+title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" /> {%
+include versionSince| 5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -294,6 +296,10 @@ title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

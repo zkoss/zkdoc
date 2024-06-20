@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # South
 
 - Demonstration:
@@ -67,6 +69,8 @@ title="ZKCompRef_Borderlayout.jpg" />
 
 # Properties and Features
 
+{% include LayoutCommonAttributes %}
+
 # Supported Events
 
 <table>
@@ -106,7 +110,11 @@ For more details, please refer to
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                                                              |
 |---------|-----------|----------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
 | 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in slide or open mode only       |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # DropEvent
 
 - Demonstration: [DropEvent](http://www.zkoss.org/zkdemo/userguide/#a2)
@@ -48,3 +50,5 @@ N/A
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

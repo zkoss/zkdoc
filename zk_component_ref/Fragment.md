@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Fragment
 
 - Demonstration: N/A
@@ -5,6 +7,8 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
 - Style Guide: N/A
+
+{% include ZK EE %}
 
 # Purpose
 
@@ -334,7 +338,11 @@ recovery.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date       | Content                        |
 |---------|------------|--------------------------------|
 | 8.5     | 2017/09/21 | Add the new Fragment component |
 |         |            |                                |
+
+{% include ZKComponentReferencePageFooter %}

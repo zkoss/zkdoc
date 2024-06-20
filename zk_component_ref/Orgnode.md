@@ -1,8 +1,14 @@
+{% include ZKDevelopersReferencePageHeader %}
+
 # Orgnode
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Orgnode </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgnode
   </javadoc>
+
+`{% include ZK EE %}`
+
+{% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -63,6 +69,10 @@ components in it, such as label, image, textbox etc.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

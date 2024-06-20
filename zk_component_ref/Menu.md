@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Menu
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
@@ -96,6 +98,10 @@ The code to register an onClick event is shown below:
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

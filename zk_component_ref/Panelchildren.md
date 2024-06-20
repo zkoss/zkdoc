@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Panel Children
 
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
@@ -68,6 +70,10 @@ title="ZKComRef_Panel_Simple_Examples.PNG" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

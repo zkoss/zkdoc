@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Audio
 
 - Demonstration: [Audio](http://www.zkoss.org/zksandbox/userguide/#u5)
@@ -24,9 +26,11 @@ title="ZKComRef_Audio_Example.png" />
  <audio src="music.wav" controls="true"></audio>
 ```
 
-`The audio supports controls property `
+`The audio supports controls property {% include versionSince| 7.0.0 %}`
 
 # Supports HTML5
+
+{% include versionSince\| 7.0.0 %}
 
 The audio component has now been enhanced to support HTML 5, it includes
 the properties like `autoplay`, `controls`, `loop`, `muted` and
@@ -34,15 +38,17 @@ the properties like `autoplay`, `controls`, `loop`, `muted` and
 
 # Multiple Sources
 
-Most browsers do not support all the audio formats,so we could specify
-multiple source files in different formats for different browsers. For
-examples:
+{% include versionSince\| 7.0.0 %} Most browsers do not support all the
+audio formats,so we could specify multiple source files in different
+formats for different browsers. For examples:
 
 ``` xml
  <audio src="music.wav, music.mp3, music.ogg" controls="true"></audio>
 ```
 
 # StateChangeEvent
+
+{% include versionSince\| 9.6.0 %}
 
 When you call `play(), stop(), pause()` or the audio is played to the
 end, an `StateChangeEvent` will be fired. You can check the current
@@ -104,8 +110,12 @@ end.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                                                     |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013   | <javadoc>org.zkoss.zul.Audio</javadoc> now supports HTML 5                                                  |
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks                           |
 | 9.6.0   | May 2021       | [ZK-4779](https://tracker.zkoss.org/browse/ZK-4779): audio supports to fire an event upon its playing state |
+
+{% include ZKComponentReferencePageFooter %}

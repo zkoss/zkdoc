@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # CreateEvent
 
 - Demonstration: N/A
@@ -131,3 +133,5 @@ public FooCreateListener implements EventListener, ComponentCloneListener {
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

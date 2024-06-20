@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Auxhead
 
 - Demonstration: [Grid (Merged
@@ -96,6 +98,10 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

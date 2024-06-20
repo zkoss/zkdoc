@@ -1,21 +1,21 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Columnchildren
 
 - Demonstration:
   [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
-
 - Java API: <javadoc>org.zkoss.zkex.zul.Columnchildren</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
-
 - Style Guide: [
   Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
-
-- 
+- {% include ZK PE and EE %}
 
 # Employment/Purpose
 
 Columnchildren can only allow Panel as its child.
+
+{% include versionSince\|6.0.0 %}
 
 - Columnchildren can allow any Component as its child.
 
@@ -131,6 +131,8 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 `*`[` Panel`](ZK_Component_Reference/Containers/Panel)
 
+{% include versionSince\|6.0.0 %}
+
 `*Any`
 
 # Use Cases
@@ -141,6 +143,10 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

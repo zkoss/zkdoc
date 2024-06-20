@@ -1,14 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Rowchildren
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Rowchildren</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Rowchildren</javadoc>
-
 - Style Guide: [
   Rowchildren](ZK_Style_Guide/XUL_Component_Specification)
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -67,6 +66,10 @@ By default, the offset of Rowchildren is 0.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

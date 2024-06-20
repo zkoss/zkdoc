@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Auxheader
 
 - Demonstration: [Grid (Merged
@@ -212,8 +214,8 @@ title="Auxheader_rowspan_limitation03.jpg" />
 
 # Restrictions
 
-Noticed that it's forbidden to set width/height/hflex/vflex in
-Auxheader.
+{% include versionSince\| ZK 8.0.0 %} Noticed that it's forbidden to set
+width/height/hflex/vflex in Auxheader.
 
 # Use Cases
 
@@ -223,6 +225,10 @@ Auxheader.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # SimpleConstraint
 
 - Demonstration: N/A
@@ -47,3 +49,5 @@ A simple constraint that you could build based the predefined constants.
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Scrollview
 
 - Demonstration: N/A
@@ -9,10 +11,11 @@
 
 # Employment/Purpose
 
-Applications exceeding a browser's viewport relies on desktop browsers
-to automatically generates scrollbars by using CSS **overflow**
-attribute so users can view the entire page but this feature,
-unfortunately, is not available on tablet or mobile browsers.
+{% include versionSince\| 6.5 %} Applications exceeding a browser's
+viewport relies on desktop browsers to automatically generates
+scrollbars by using CSS **overflow** attribute so users can view the
+entire page but this feature, unfortunately, is not available on tablet
+or mobile browsers.
 
 Scrollview is a container that makes its content scrollable on
 tablet/mobile device with a **rubber band** effect you see on
@@ -107,6 +110,10 @@ user is scrolling a scrollable component.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content             |
 |---------|--------------|---------------------|
 | 6.5.0   | August, 2012 | new added component |
+
+{% include ZKComponentReferencePageFooter %}

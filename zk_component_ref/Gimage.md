@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Gimage
 
 - Demonstration:
@@ -63,6 +65,10 @@ swlat="37.44215478" swlng="-122.14273453" nelat="37.45033195" nelng="-122.131919
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

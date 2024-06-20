@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Menubar
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
@@ -90,6 +92,10 @@ scrollable!
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

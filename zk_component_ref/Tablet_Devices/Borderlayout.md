@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Borderlayout
 
 - Component Reference:
@@ -51,3 +53,5 @@ setting.
 | Version | Date       | Content                                                                                                             |
 |---------|------------|---------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Borderlayout support touch's swipe event to close/open the layout region](http://tracker.zkoss.org/browse/ZK-1245) |
+
+{% include ZKComponentReferencePageFooter %}

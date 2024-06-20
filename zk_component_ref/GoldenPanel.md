@@ -1,13 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # GoldenPanel
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenPanel</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.GoldenPanel</javadoc>
+- {% include ZK EE %}
 
-- 
-
-{{versionSince\| 8.6.0}
+{% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -155,6 +155,10 @@ minimized this GoldenPanel.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

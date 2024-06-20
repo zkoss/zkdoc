@@ -1,9 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Chart
 
 - Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
 - Java API: <javadoc>org.zkoss.zul.Chart</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Chart</javadoc>
 - Style Guide: N/A
+
+{% include ZK_PE %}
 
 # Employment/Purpose
 
@@ -1186,6 +1190,8 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 
 # Version History
 
+{% include LastUpdated %}
+
 <table>
 <thead>
 <tr class="header">
@@ -1223,3 +1229,5 @@ class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="
 </tr>
 </tbody>
 </table>
+
+{% include ZKComponentReferencePageFooter %}

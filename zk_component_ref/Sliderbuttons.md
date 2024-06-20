@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Sliderbuttons
 
 - Demonstration:
@@ -5,6 +7,8 @@
   [Sliderbuttons](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Sliderbuttons.html)
 - JavaScript API:
   [Sliderbuttons](http://www.zkoss.org/javadoc/latest/jsdoc/zkex/slider/Sliderbuttons.html)
+
+{% include ZK PE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -65,3 +69,5 @@ user.</p></td>
 # Supported Children
 
 `*None`
+
+{% include ZKComponentReferencePageFooter %}

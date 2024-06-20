@@ -1,8 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Linelayout
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Linelayout </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Linelayout
   </javadoc>
+
+`{% include ZK EE %}`
+
+{% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -122,6 +128,10 @@ Please refer to FirstScale.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date     | Content                                                                             |
 |---------|----------|-------------------------------------------------------------------------------------|
 | 9.0.0   | Nov 2019 | [ZK-4377](https://tracker.zkoss.org/browse/ZK-4377): Provide a Linelayout component |
+
+{% include ZKComponentReferencePageFooter %}

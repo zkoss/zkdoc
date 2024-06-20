@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Vbox
 
 - Demonstration: [Vbox](http://www.zkoss.org/zkdemo/layout/box)
@@ -56,6 +58,8 @@ title="ZKComRef_Vbox_Simple_Example.PNG" />
 
 ## Align and Pack
 
+{% include versionSince\| 5.0.0 %}
+
 <figure>
 <img src="ZKComRef_Vbox_Simple_Example_align_pack.PNG"
 title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
@@ -97,11 +101,12 @@ title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
 
 # Cell Component
 
-In ZK5, we have introduced a new component named Cell which can be
-embedded into a Grid or Box (Hbox and Vbox) to fully control the layout
-and the style. You can now use the rowspan or the colspan property to
-layout your Grid, for example a content cell can now cross over multiple
-rows. The code below demonstrates how to do this:
+{% include versionSince\| 5.0.0 %} In ZK5, we have introduced a new
+component named Cell which can be embedded into a Grid or Box (Hbox and
+Vbox) to fully control the layout and the style. You can now use the
+rowspan or the colspan property to layout your Grid, for example a
+content cell can now cross over multiple rows. The code below
+demonstrates how to do this:
 
 ``` xml
 <vbox>
@@ -166,6 +171,10 @@ You will see the Box width exceed 200px. Also check the
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

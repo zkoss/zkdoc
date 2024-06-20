@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Header Element
 
 - Demonstration: N/A
@@ -56,3 +58,5 @@ by the user.</p></td>
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

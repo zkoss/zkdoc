@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Column
 
 - Demonstration: [Grid (Simple
@@ -80,16 +82,17 @@ sorted the row of this column.</p></td>
 <p><code>onGroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> Denotes user has
-grouped all the cells under a column.</p></td>
+<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include ZK PE %}
+Denotes user has grouped all the cells under a column.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
 <p><code>onUngroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> Denotes user has
-ungrouped all the cells under a column.</p></td>
+<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include ZK EE %}
+{% include versionSince| 6.5.0 %} Denotes user has ungrouped all the
+cells under a column.</p></td>
 </tr>
 </tbody>
 </table>
@@ -107,6 +110,10 @@ ungrouped all the cells under a column.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                                  |
 |---------|-----------|------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-147](http://tracker.zkoss.org/browse/ZK-147): Support ungroup for grid's column menu |
+
+{% include ZKComponentReferencePageFooter %}

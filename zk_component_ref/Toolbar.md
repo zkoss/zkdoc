@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Toolbar
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)
@@ -48,6 +50,8 @@ title="ZKComRef_Toolbar_Example.png" />
 
 # overflowPopup
 
+{% include versionSince\| 8.6.0 %}
+
 When `overflowPopup="true"`, a toolbar will have a `...` symbol that
 shows a popup that contains those buttons not fitting in the toolbar.
 
@@ -71,6 +75,8 @@ title="Toolbar-overflowPopup.png" />
 ```
 
 # overflowPopupIconSclass
+
+{% include versionSince\| 9.6.0 %}
 
 When overflowPopup="true", you can customize a toolbar `...` symbol just
 specify the `overflowPopupIconSclass` attribute. For a complete list of
@@ -156,3 +162,5 @@ footer of a panel.
 # Supported Children
 
 `*ALL`
+
+{% include ZKComponentReferencePageFooter %}

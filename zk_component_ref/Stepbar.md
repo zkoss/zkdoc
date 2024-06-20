@@ -1,8 +1,12 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Stepbar
 
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Stepbar</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Stepbar</javadoc>
+
+{% include ZK EE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -119,6 +123,10 @@ client.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date           | Content                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [ZK-4375](https://tracker.zkoss.org/browse/ZK-4375): Provide a stepbar component |
+
+{% include ZKComponentReferencePageFooter %}

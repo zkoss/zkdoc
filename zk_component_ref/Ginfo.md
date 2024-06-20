@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Ginfo
 
 - Demonstration:
@@ -52,6 +54,10 @@ Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

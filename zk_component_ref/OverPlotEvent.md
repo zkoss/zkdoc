@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # OverPlotEvent
 
 - Demonstration: N/A
@@ -51,6 +53,10 @@ N/A
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

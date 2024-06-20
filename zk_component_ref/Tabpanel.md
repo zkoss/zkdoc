@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Tabpanel
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
@@ -87,6 +89,10 @@ Tabbox](ZK_Component_Reference/Containers/Tabbox#Use_Cases)
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

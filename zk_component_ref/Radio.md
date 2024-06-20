@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Radio
 
 - Demonstration: [Radio](http://www.zkoss.org/zkdemo/input/radio_button)
@@ -68,6 +70,10 @@ Radiogroup](ZK_Component_Reference/Input/Radiogroup#Use_Cases)
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Filedownload
 
 - Demonstration: [File
@@ -40,6 +42,8 @@ title="10000000000002AF000001BB582C2DD7.png" />
 ```
 
 # The Resumable Download
+
+{% include ZK EE %}
 
 In certain situations, you might prefer to generate an URL that can be
 used even if the desktop becomes invalid. For example, you want to allow
@@ -190,9 +194,13 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: Internet Explorer 9 and other browsers all work fine without this
     limitation.

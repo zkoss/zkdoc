@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Portallayout
 
 - Demonstration:
@@ -7,6 +9,8 @@
   <javadoc directory="jsdoc">zkmax.layout.Portallayout</javadoc>
 - Style Guide: [
   Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
+
+{% include ZK EE %}
 
 # Employment/Purpose
 
@@ -49,6 +53,8 @@ depend on the browser, and not as expected.
 
 # orient
 
+{% include versionSince\|7.0.0 %}
+
 `Default: vertical`
 
 If you want the portallayout to be displayed as a row-based layout, you
@@ -88,7 +94,7 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 <td><center>
 <p>onPortalDrop</p>
 </center></td>
-<td><p><strong>Event:</strong>
+<td><p>{% include versionSince| 9.5.1 %} <strong>Event:</strong>
 <javadoc>org.zkoss.zkmax.ui.event.PortalDropEvent</javadoc></p>
 <p>Represents an event after a portal is dropped and before a portal is
 moved.</p></td>
@@ -117,3 +123,5 @@ an event caused by a portal being moved.</p></td>
 |---------|----------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013  | [Portallayout supports row based orientation](http://tracker.zkoss.org/browse/ZK-1687)                                             |
 | 9.5.1   | November, 2020 | [Kanban missing options to listen to portallayout onPortalMove without affecting the UI](https://tracker.zkoss.org/browse/ZK-4423) |
+
+{% include ZKComponentReferencePageFooter %}

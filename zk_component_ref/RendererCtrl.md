@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # RendererCtrl
 
 - Demonstration: N/A
@@ -58,3 +60,5 @@ items from the same request.
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

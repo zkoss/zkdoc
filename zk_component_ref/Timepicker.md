@@ -1,4 +1,8 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Timepicker
+
+{% include versionSince\| 8.0.0 %} {% include ZK EE %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Timepicker</javadoc>
 - JavaScript API:
@@ -18,6 +22,8 @@ Hour, Minute, and Second are used.
 <timepicker/>
 ```
 
+{% include IntegrateMomentjs %}
+
 # Properties
 
 ## Format
@@ -36,10 +42,11 @@ Below is an example of using *a* within the format.
 </zk>
 ```
 
-In addition to specifying the format explicitly, you could specify the
-styling. There are two different types of styling: short, and medium
-(representing the styling of java.text.DateFormat). For example, you
-could specify the styling rather than the real format as follows.
+{% include VersionSince\| 5.0.7 %} In addition to specifying the format
+explicitly, you could specify the styling. There are two different types
+of styling: short, and medium (representing the styling of
+java.text.DateFormat). For example, you could specify the styling rather
+than the real format as follows.
 
 ``` xml
 <timepicker format="short"/>
@@ -130,6 +137,10 @@ for inherited functions.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

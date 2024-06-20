@@ -1,8 +1,14 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Coachmark
+
+{% include versionSince\| 9.0.0 %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Coachmark</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.nav.Coachmark</javadoc>
+
+{% include ZK EE %}
 
 # Employment/Purpose
 
@@ -81,6 +87,8 @@ component e.g. `${self.previousSibling}`
 
 ## Position
 
+{% include defaultValue\|after_center %}
+
 The positions of a coachmark. Below are the available values:
 
 |               | start/before | center        | end/after   |
@@ -153,3 +161,5 @@ component.</p></td>
 # Supported Children
 
 `*ALL`
+
+{% include ZKComponentReferencePageFooter %}

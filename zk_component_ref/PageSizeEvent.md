@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # PageSizeEvent
 
 - Java API: <javadoc>org.zkoss.zul.event.PageSizeEvent</javadoc>
@@ -45,3 +47,5 @@ paginal (such as `Paging`).
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

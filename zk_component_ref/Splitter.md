@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Splitter
 
 - Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
@@ -227,6 +229,10 @@ title="splitter_mold_default.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

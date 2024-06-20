@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Imagemap
 
 - Demonstration: N/A
@@ -71,6 +73,10 @@ statement, then the user gets the result as depicted below.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,9 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Cascader
 
 - [Demonstration](https://www.zkoss.org/zkdemo/combobox/cascader)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cascader</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Cascader</javadoc>
+
+{% include ZK EE %} {% include versionSince\| 9.0.0 %}
 
 # Employment/Purpose
 
@@ -32,6 +36,8 @@ data. It accepts a TreeModel.
 Users can select in layers, and the selected items are converted into
 text. (Default: joining by slashes, i.g. "A/B/C")
 
+{% include CustomItemRendering \|cascader %}
+
 # Properties
 
 ## Disabled
@@ -47,6 +53,8 @@ is joining all the `toString()` result of items by slashes `/`.
 
 By implementing your own one, you can generate a custom text that
 represents the selected item.
+
+{% include CustomItemRendering \|cascader %}
 
 ## Model
 
@@ -79,12 +87,18 @@ selected.
 </center></th>
 <th><center>
 <p>Event Type</p>
-</center>
-<p>|-</p></th>
+</center></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+</tr>
+<tr class="even">
 <td><center>
 <p><code>onSelect</code></p>
 </center></td>
@@ -93,7 +107,7 @@ selected.
 <p>Represents an event caused by user's the selection changed at the
 client.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><center>
 <p><code>onOpen</code></p>
 </center></td>
@@ -111,3 +125,5 @@ the client.</p></td>
 # Supported Children
 
 `* None`
+
+{% include ZKComponentReferencePageFooter %}

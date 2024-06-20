@@ -1,8 +1,14 @@
+{% include ZKDevelopersReferencePageHeader %}
+
 # Orgitem
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Orgitem </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgitem
   </javadoc>
+
+`{% include ZK EE %}`
+
+{% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -186,6 +192,10 @@ time the component is opened.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,17 +1,15 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Biglistbox
 
 - Demonstration: [
   Demo](Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Biglistbox</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
-
 - Style Guide: [
   Biglistbox](ZK_Style_Guide/XUL_Component_Specification/Biglistbox)
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -209,8 +207,14 @@ information about the position X and Y data.</p></td>
 <javadoc>org.zkoss.zkmax.zul.event.CellClickEvent</javadoc></p>
 <p>Represents an event that indicates a clicking on a cell data for a
 matrix data component like Biglistbox, and provides more information
-about the row index and the column index.</p>
-<p>|-</p></td>
+about the row index and the column index.</p></td>
+</tr>
+<tr class="odd">
+<td><center>
+<p><code>onAfterRender</code></p>
+</center></td>
+<td><p><strong>Event:</strong>
+<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
 </tr>
 </tbody>
 </table>
@@ -233,5 +237,7 @@ about the row index and the column index.</p>
 | 6.0.1+  | Handling a Trillion Data Using ZK | [Small Talks](Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK) |
 
 # Version History
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`

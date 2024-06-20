@@ -1,15 +1,13 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Cardlayout
 
 - Demonstration: N/A
-
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cardlayout</javadoc>
-
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Cardlayout</javadoc>
-
 - Style Guide: N/A
-
-- 
+- {% include ZK EE %}
 
 # Employment/Purpose
 
@@ -95,6 +93,10 @@ setting.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                           |
 |---------|--------------|-------------------------------------------------------------------|
 | 6.5.0   | August, 2012 | <javadoc>org.zkoss.zkmax.zul.Cardlayout</javadoc> was introduced. |
+
+{% include ZKComponentReferencePageFooter %}

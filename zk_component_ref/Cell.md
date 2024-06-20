@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Cell
 
 - Demonstration: [Grid (Spreadsheet
@@ -170,6 +172,10 @@ a Div to wrap them.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

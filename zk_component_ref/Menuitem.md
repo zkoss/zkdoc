@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Menuitem
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu) and
@@ -48,6 +50,7 @@ been enhanced and can be customized easily.
 
 ## Autodisable
 
+{% include versionSince\| 5.0.7 %}
 <javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>
 is used to disable a menuitem automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant
@@ -262,6 +265,10 @@ uploaded a file to the component.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date     | Content                                                                                                                                               |
 |---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | May 2011 | <javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Menuitem</javadoc> was used to disable a menuitem automatically, when it is clicked. |
+
+{% include ZKComponentReferencePageFooter %}

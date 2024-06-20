@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Transformer
 
 - Java API: <javadoc>org.zkoss.zml.Transformer</javadoc>
@@ -80,6 +82,10 @@ Then, the generated XML output will be XHTML as follows.
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

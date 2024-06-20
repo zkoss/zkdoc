@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Messagebox
 
 - Demonstration: [Messagebox](http://www.zkoss.org/zkdemo/userguide/#l8)
@@ -60,6 +62,8 @@ Close button on the right-top corner, the `onClose` event is fired.
 
 ### Listen ClickEvent
 
+{% include versionSince\|6.0.0 %}
+
 Since ZK 6, the event listener will be invoked with an instance of
 <javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc>, and it is easy
 to retrieve the button being clicked from it. For example,
@@ -83,6 +87,8 @@ Messagebox.show("Something is changed. Are you sure?",
 # Customization
 
 ## Assign the Order of Buttons
+
+{% include versionSince\|6.0.0 %}
 
 If you'd like to assign the order, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
@@ -110,6 +116,8 @@ example,
 ```
 
 ## Assign the Labels of Buttons
+
+{% include versionSince\|6.0.0 %}
 
 By default, the label of a button is loaded from [the message
 file](ZK_Developer's_Reference/Internationalization/Warning_and_Error_Messages)
@@ -164,6 +172,8 @@ template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/m
 
 ## The Width and Parameters
 
+{% include versionSince\|6.0.0 %}
+
 The `params` argument in
 <javadoc method="show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map)">org.zkoss.zul.Messagebox</javadoc>
 allows you to customize a message dialog further. For example, you could
@@ -187,8 +197,8 @@ template recognize them. In additions, the priority of the `params`
 argument is higher, i.e., it could override the default values, though
 it is rarely required.
 
-User also can customize the style of message dialog with the parameter
-called `sclass` as below.
+{% include versionSince\|7.0.1 %} User also can customize the style of
+message dialog with the parameter called `sclass` as below.
 
 ``` java
 Map params = new HashMap();
@@ -203,6 +213,8 @@ Messagebox.show("It's a customized style message box.",
 ```
 
 ## Without Buttons' Dialog
+
+{% include versionSince\|6.5.1 %}
 
 If you'd like to show a non-buttons dialog, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
@@ -254,6 +266,8 @@ This messagebox will show without any buttons.
 | 6.0.0   | October 2011   | <javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc> was introduced to simplify the identification of a button. |
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
+
+{% include ZKComponentReferencePageFooter %}
 
 [^1]: If you want to make it running under clustering environment, you
     should implement

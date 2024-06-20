@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Treechildren
 
 - Demonstration: [Tree (Dynamic
@@ -103,6 +105,10 @@ the `pageSize`property
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

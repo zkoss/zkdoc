@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Selectbox
 
 - Demonstration:
@@ -5,6 +7,8 @@
 - Java API: <javadoc>org.zkoss.zul.Selectbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Selectbox</javadoc>
 - Style Guide: N/A
+
+{% include ZK All %} {% include versionSince \| 6.0.0 %}
 
 # Employment/Purpose
 
@@ -86,6 +90,8 @@ Here is the MVVM way:
     </div>
 ```
 
+{% include CustomItemRendering \|selectbox %}
+
 # Supported Events
 
 <table>
@@ -126,7 +132,11 @@ the user has selected a new item in the selectbox.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version   | Date             | Content                               |
 |-----------|------------------|---------------------------------------|
 | 6.0.0     | October 4, 2011  | Add the new Selectbox component       |
 | 6.0.0-RC2 | December 6, 2011 | Rename OptionRenderer to ItemRenderer |
+
+{% include ZKComponentReferencePageFooter %}

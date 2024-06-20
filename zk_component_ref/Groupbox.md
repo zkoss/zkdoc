@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Groupbox
 
 - Demonstration:
@@ -165,6 +167,8 @@ If it is an issue, you could use the 3d mold instead.
  </groupbox>
 ```
 
+{% include versionSince\|6.0.0 %}
+
 The default mold uses the same method as 3d mold to represent a
 groupbox, the limitation is gone.
 
@@ -261,6 +265,10 @@ title="groupbox_mold_default.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

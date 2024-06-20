@@ -1,4 +1,7 @@
-Removed
+{% include ZKComponentReferencePageHeader %}
+
+{% include Deprecated_Content %} Removed {% include versionSince\|
+10.0.0 %}
 
 # Applet
 
@@ -74,6 +77,10 @@ title="ZKComRef_Applet_Examples.PNG" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date      | Content                                                                   |
 |---------|-----------|---------------------------------------------------------------------------|
 | 5.0.3   | June 2010 | The archive, myscript, align, hspace, and vspace properties are supported |
+
+{% include ZKComponentReferencePageFooter %}

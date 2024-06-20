@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Datebox
 
 - Demonstration: [Date and
@@ -32,8 +34,8 @@ An edit box for holding a date. After click on the calender, a
 
 # Customization
 
-You can customize the rendering of the calendar at the client by
-JavaScript code that overrides
+{% include versionSince\| 5.0.3 %} You can customize the rendering of
+the calendar at the client by JavaScript code that overrides
 <javadoc directory="jsdoc">zul.db.Renderer</javadoc>.
 
 # Example
@@ -48,6 +50,8 @@ title="ZKComRef_Datebox_Example.PNG" />
  <datebox lenient="true" buttonVisible="false" />
  <datebox lenient="false" buttonVisible="true" />
 ```
+
+{% include IntegrateMomentjs %}
 
 # Properties and Features
 
@@ -155,6 +159,8 @@ dynamically, as depicted below.
 
 ### Length Option
 
+{% include versionSince \| 5.0.7 %}
+
 In addition to specifying the format explicitly, you could specify the
 length option. It supports four different length options mentioned at
 [java.text.DateFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DateFormat.html):
@@ -217,7 +223,8 @@ You can enforce the locale for an individual component such as:
 
 ### Multiple-Eras Calendar
 
-Datebox can display some multiple-eras calendar systems including:
+{% include versionSince\| 9.6.0 %} Datebox can display some
+multiple-eras calendar systems including:
 
 - ROC(Taiwan): `locale="zh-TW-u-ca-roc"`
 - Japan: `locale="ja-JP-u-ca-japanese"`
@@ -235,6 +242,8 @@ Reference:
 
 ## Position
 
+{% include versionSince\| 8.0.3 %}
+
 By default, the popup position is set to `after_start`, for other
 possible popup positions please refer to
 [Popup#Position](ZK_Component_Reference/Essential_Components/Popup#Position).
@@ -245,18 +254,22 @@ The first day of the week is decided by the locale by default. (actually
 the return value of the `getFirstDayOfWeek` method in the
 `java.util.Calendar`).
 
-You can control the first day of the week by the use of the session
-attribute and the library property. Please refer to [The First Day of
-the
+{% include versionSince\| 5.0.3 %} You can control the first day of the
+week by the use of the session attribute and the library property.
+Please refer to [The First Day of the
 Week](ZK_Developer%27s_Reference/Internationalization/The_First_Day_of_the_Week)
 for details.
 
 ## 2DigitYearStart
 
+{% include versionSince\| 8.6.2 %}
+
 You can control the 2DigitYearStart by the use of the library property,
 [org.zkoss.web.preferred.2DigitYearStart](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.preferred.2DigitYearStart).
 
 ## Show Week Number
+
+{% include ZK EE %} {% include versionSince \| 6.5.0 %}
 
 Datebox supports to show a week number of the year in a calendar.
 
@@ -273,6 +286,8 @@ title="ZKComRef_Datebox_Week_Of_Year.PNG" />
 ## Show Link of Today
 
 Datebox supports a link to jump back to the date of today quickly
+
+{% include versionSince\| 8.0.0 %}
 
 <figure>
 <img src="ZKComRef_Datebox_Link_Of_Today.PNG"
@@ -298,6 +313,8 @@ Timebox at the bottom of the popup Calendar.
 
 ## Monthly / yearly option
 
+{% include versionSince\|9.5.1 %}
+
 `Default: ``day`
 
 You can specify the `selectLevel` attribute to restrict the date
@@ -315,6 +332,8 @@ Available values are:
 ```
 
 ## Close Popup OnTimezoneChange
+
+{% include versionSince\|9.6.0 %}
 
 Datebox supports switching whether to auto close the datebox popup after
 changing the timezone.
@@ -387,8 +406,8 @@ zul.jar.
 <p>rounded</p>
 </center></td>
 <td><p><img src="datebox_mold_rounded.png"
-title="datebox_mold_rounded.png" alt="datebox_mold_rounded.png" />
-</p></td>
+title="datebox_mold_rounded.png" alt="datebox_mold_rounded.png" /> {%
+include versionSince| 5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -422,6 +441,8 @@ title="datebox_mold_rounded.png" alt="datebox_mold_rounded.png" />
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week](ZK_Developer%27s_Reference/Internationalization/The_First_Day_of_the_Week) for details. |
@@ -430,3 +451,5 @@ title="datebox_mold_rounded.png" alt="datebox_mold_rounded.png" />
 | 5.0.7   | April, 2011  | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Datebox</javadoc> was introduced.                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                        |
 | 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox.                                                                                                                                                                    |
+
+{% include ZKComponentReferencePageFooter %}

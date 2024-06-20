@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # ColSizeEvent
 
 - Demonstration: N/A
@@ -53,3 +55,5 @@ N/A
 | Version | Date       | Content                                                      |
 |---------|------------|--------------------------------------------------------------|
 | 5.0.4   | 2010/08/03 | Updated Employment/Purpose that reflects a change of Javadoc |
+
+{% include ZKComponentReferencePageFooter %}

@@ -1,4 +1,8 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Signature
+
+{% include versionSince\| 8.6.0 %} {% include ZK EE %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Signature</javadoc>
 - JavaScript API:
@@ -78,10 +82,12 @@ to white.
 
 ## backgroundImage
 
-Can be any image format accepted by context.drawImage(canvas), defaults
-to null.
+{% include versionSince\| 9.6.0 %} Can be any image format accepted by
+context.drawImage(canvas), defaults to null.
 
 # BackgroundIncluded
+
+{% include versionSince \|9.6.0 %}
 
 The background color and image will be saved by default. If you don't
 want to save the background color and image, please use the following
@@ -149,6 +155,10 @@ clear method, the event would be triggered.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date        | Content |
 |---------|-------------|---------|
 | 8.6.0   | August 2018 |         |
+
+{% include ZKComponentReferencePageFooter %}

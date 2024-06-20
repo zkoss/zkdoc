@@ -1,3 +1,5 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Colorbox
 
 - Demonstration:
@@ -6,6 +8,8 @@
 - JavaScript API: <javadoc directory="jsdoc">zkex.inp.Colorbox</javadoc>
 - Style Guide: [
   Colorbox](ZK_Style_Guide/XUL_Component_Specification/Colorbox)
+
+{% include ZK PE %}
 
 # Employment/Purpose
 
@@ -24,6 +28,8 @@ title="ZKComRef_Colorbox_Examples.PNG" />
 ```
 
 # Key control
+
+{% include versionSince\| 6.0.0 %}
 
 Pressing left, right, up, or down arrow keys to change the selected
 color.
@@ -93,6 +99,10 @@ application with the onChange event if its content is changed</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}

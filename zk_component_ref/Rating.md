@@ -1,7 +1,11 @@
+{% include ZKComponentReferencePageHeader %}
+
 # Rating
 
 - Java API: <javadoc>org.zkoss.zul.Rating</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Rating</javadoc>
+
+{% include versionSince\| 8.6.0 %}
 
 # Employment/Purpose
 
@@ -111,6 +115,10 @@ rated.</p></td>
 
 # Version History
 
+{% include LastUpdated %}
+
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
+
+{% include ZKComponentReferencePageFooter %}
