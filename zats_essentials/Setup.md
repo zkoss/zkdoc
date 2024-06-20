@@ -1,3 +1,5 @@
+
+
 # ZATS Mimic
 
 ## Maven Project
@@ -5,6 +7,8 @@
 Please [ setup zk Maven
 repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository)
 first.
+
+{% include versionSince\|9.6.0 %}
 
 ### Java EE
 
@@ -36,6 +40,8 @@ Check [CE
 repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic/)
 for the latest version.
 
+{% include versionSince\|7.0.0 %}
+
 Add the following dependency:
 
 ``` xml
@@ -47,6 +53,8 @@ Add the following dependency:
       <scope>test</scope>
     </dependency>
 ```
+
+{% include versionSince\|6.0.0 %}
 
 Add the following dependency:
 
@@ -60,7 +68,7 @@ Add the following dependency:
     </dependency>
 ```
 
-Add the following dependency:
+{% include versionSince\|5.0.0 %} Add the following dependency:
 
 ``` xml
 
@@ -128,3 +136,5 @@ e.g. JUnit.
             <scope>test</scope>
         </dependency>
 ```
+
+ 

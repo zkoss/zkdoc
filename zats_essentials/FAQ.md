@@ -1,3 +1,5 @@
+
+
 1.  <div style="font-family:Verdana">
 
     **InputAgent.type() works correctly on all components except
@@ -45,3 +47,5 @@
 
       
     See question 3.
+
+ 

@@ -1,3 +1,5 @@
+
+
 ZATS Mimic also supports the testing of
 <javadoc>org.zkoss.zk.ui.Richlet</javadoc>.[^1] Simply customize a few
 configurations for
@@ -87,6 +89,8 @@ public void test() {
 **Notes**
 
 <references/>
+
+ 
 
 [^1]: For more details, please refer to
     [ZK_Developer%27s_Reference/UI_Composing/Richlet](ZK_Developer%27s_Reference/UI_Composing/Richlet)

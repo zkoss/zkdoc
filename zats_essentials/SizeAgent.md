@@ -1,3 +1,5 @@
+
+
 \_\_TOC\_\_
 
 ## Maximize and Minimize
@@ -64,3 +66,5 @@ window.as(SizeAgent.class).resize(100, 100);
 </tr>
 </tbody>
 </table>
+
+ 
