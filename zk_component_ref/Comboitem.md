@@ -60,7 +60,7 @@ title="ZKComRef_Combobox_Example.PNG" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -68,6 +68,6 @@ title="ZKComRef_Combobox_Example.PNG" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -1,6 +1,5 @@
- {% include
-versionSince\|9.5.0 %} {% include ZK EE %} {% include
-ZKComponentReferenceAccessibilityNamingReference %}
+ {% include version-badge.html version=9.5.0 %} {% include edition-availability.html edition=pe %} 
+ {% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 ## Keyboard Support
 
@@ -26,11 +25,11 @@ ZKComponentReferenceAccessibilityNamingReference %}
 </tr>
 <tr class="odd">
 <td><p>PageUp / PageDown</p></td>
-<td><p>{% include versionSince|10.0.0 %} Navigate the month.</p></td>
+<td><p>{% include version-badge.html version=10.0.0 %} Navigate the month.</p></td>
 </tr>
 <tr class="even">
 <td><p>Shift+PageUp / Shift+PageDown</p></td>
-<td><p>{% include versionSince|10.0.0 %} Navigate the year.</p></td>
+<td><p>{% include version-badge.html version=10.0.0 %} Navigate the year.</p></td>
 </tr>
 </tbody>
 </table>
@@ -54,4 +53,4 @@ customize the aria-label of days on ZK's Calendar.
 </zk>
 ```
 
-`[Since 9.5.0]`
+{% include version-badge.html version=9.5.0 %}

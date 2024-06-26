@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
 - Style Guide: [
   Listgroupfoot](ZK_Style_Guide/XUL_Component_Specification/Listgroupfoot)
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -105,7 +105,7 @@ title="ZKComRef_Listgroup_Example.PNG" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -113,6 +113,6 @@ title="ZKComRef_Listgroup_Example.PNG" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

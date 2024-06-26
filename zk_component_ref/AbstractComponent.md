@@ -44,7 +44,7 @@ N/A
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

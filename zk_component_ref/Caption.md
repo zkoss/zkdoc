@@ -18,7 +18,7 @@ or child elements for a more complex caption.
 
 # Preload Image
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The feature is applied to all of the LabelImageElement and Image
 components.
@@ -110,6 +110,6 @@ title="ZKComRef_Caption_Example.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

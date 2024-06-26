@@ -95,13 +95,13 @@ title="ZKComRef_Grid_Example.png‎" />
 
 # Supported Children
 
-`*`[` Row`](ZK_Component_Reference/Data/Grid/Row)`, `[` Group`](ZK_Component_Reference/Data/Grid/Group)`, `[` Groupfoot`](ZK_Component_Reference/Data/Grid/Groupfoot)
+`*`[` Row`](ZK_Component_Reference/Data/Grid/Row)`, `[` Group`](ZK_Component_Reference/Data/Grid/Group)`, `[` Groupfoot`](ZK_Component_Reference/Data/Grid/Groupfoot)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -109,6 +109,6 @@ title="ZKComRef_Grid_Example.png‎" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

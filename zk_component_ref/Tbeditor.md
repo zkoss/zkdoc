@@ -2,7 +2,7 @@
 
 # Tbeditor
 
-{% include versionSince \| 8.0.0 %} {% include ZK EE %}
+{% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition=pe %}
 
 - Java API:
   [Tbeditor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tbeditor.html)

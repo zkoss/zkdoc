@@ -26,11 +26,11 @@ title="ZKComRef_Audio_Example.png" />
  <audio src="music.wav" controls="true"></audio>
 ```
 
-`The audio supports controls property {% include versionSince| 7.0.0 %}`
+`The audio supports controls property {% include version-badge.html version=7.0.0 %}`
 
 # Supports HTML5
 
-{% include versionSince\| 7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 
 The audio component has now been enhanced to support HTML 5, it includes
 the properties like `autoplay`, `controls`, `loop`, `muted` and
@@ -38,7 +38,7 @@ the properties like `autoplay`, `controls`, `loop`, `muted` and
 
 # Multiple Sources
 
-{% include versionSince\| 7.0.0 %} Most browsers do not support all the
+{% include version-badge.html version=7.0.0 %} Most browsers do not support all the
 audio formats,so we could specify multiple source files in different
 formats for different browsers. For examples:
 
@@ -48,7 +48,7 @@ formats for different browsers. For examples:
 
 # StateChangeEvent
 
-{% include versionSince\| 9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 When you call `play(), stop(), pause()` or the audio is played to the
 end, an `StateChangeEvent` will be fired. You can check the current
@@ -100,13 +100,13 @@ end.</p></td>
 
 # Supported Children
 
-`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
+`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

@@ -91,7 +91,7 @@ title="ZKComRef_Hbox_Simple_Examples_align_pack.PNG" />
 </zk>
 ```
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 # Cell Component
 
@@ -109,7 +109,7 @@ rows. The code below demonstrates how to do this:
 </hbox>
 ```
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 # Limitation
 
@@ -162,7 +162,7 @@ You will see the Box width exceed 200px. Also check the
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -170,6 +170,6 @@ You will see the Box width exceed 200px. Also check the
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

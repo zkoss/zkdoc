@@ -34,7 +34,7 @@ to the output of the component which the input type is number.
 
 | Version | Date         | Content                                                                                                              |
 |---------|--------------|----------------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | July, 2012   |                                                                                                                      |
+| 6.5.0   | July, 2012   |                                                                                                                      |
 | 7.0.3   | August, 2014 | Fall back to use Desktop implementation for NumberInputElement with "format" and "locale" attributes in Tablet mold. |
 
 

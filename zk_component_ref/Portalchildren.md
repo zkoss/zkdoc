@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zkmax.layout.Portalchildren</javadoc>
 - Style Guide: [
   Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -55,20 +55,20 @@ title="ZKComRef_Portallayout_Example.PNG" />
 
 ## Title
 
-{% include versionSince\| 9.0.0 %} Sets the title of the portalchildren.
+{% include version-badge.html version=9.0.0 %} Sets the title of the portalchildren.
 If the title is not empty/null, frame design will be applied.
 
 ### Frame Design
 
 PortalChildren now provides a frame design, making it extremely easy to
 create a Kanban-like layout for your application. To turn on the
-PortalChildren frame design, just specify the title attribute on the
+PortalChildren frame design, just specify the title attribute on the
 PortalChildren.
 
 ### Example
 
 Each PortalChildren with title can be used as a Kanban board column to
-represent a process stage, and the panels inside each column represent
+represent a process stage, and the panels inside each column represent
 tasks in the said stage. The number next to the PortalChildren title is
 a counter, indicating the total number of panels inside the said column.
 
@@ -126,7 +126,7 @@ move.
 
 ## CounterVisible
 
-{% include versionSince \|9.0.0 %} Sets whether the counter is visible.
+{% include version-badge.html version=9.0.0 %} Sets whether the counter is visible.
 Meaningful only if frame design is applied.
 
 # Supported Events
@@ -161,7 +161,7 @@ Meaningful only if frame design is applied.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

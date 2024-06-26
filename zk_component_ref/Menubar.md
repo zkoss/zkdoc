@@ -82,13 +82,13 @@ scrollable!
 
 # Supported Children
 
-`*`[` Menu`](ZK_Component_Reference/Essential_Components/Menu)`, `[` Menuitem`](ZK_Component_Reference/Essential_Components/Menu/Menuitem)`, `[` Menuseparator`](ZK_Component_Reference/Essential_Components/Menu/Menuseparator)
+`*`[` Menu`](ZK_Component_Reference/Essential_Components/Menu)`, `[` Menuitem`](ZK_Component_Reference/Essential_Components/Menu/Menuitem)`, `[` Menuseparator`](ZK_Component_Reference/Essential_Components/Menu/Menuseparator)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -96,6 +96,6 @@ scrollable!
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

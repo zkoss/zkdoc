@@ -2,7 +2,7 @@
 
 # Signature
 
-{% include versionSince\| 8.6.0 %} {% include ZK EE %}
+{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition=pe %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Signature</javadoc>
 - JavaScript API:
@@ -82,12 +82,12 @@ to white.
 
 ## backgroundImage
 
-{% include versionSince\| 9.6.0 %} Can be any image format accepted by
+{% include version-badge.html version=9.6.0 %} Can be any image format accepted by
 context.drawImage(canvas), defaults to null.
 
 # BackgroundIncluded
 
-{% include versionSince \|9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 The background color and image will be saved by default. If you don't
 want to save the background color and image, please use the following

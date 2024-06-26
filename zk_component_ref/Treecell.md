@@ -97,7 +97,7 @@ contain any components in it, such as label, image, textbox etc.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -105,6 +105,6 @@ contain any components in it, such as label, image, textbox etc.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

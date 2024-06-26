@@ -60,7 +60,7 @@ a purposive text.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Troubleshooting
 
@@ -77,6 +77,6 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

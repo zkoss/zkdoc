@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Camera</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Camera</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 8.6.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -142,7 +142,7 @@ Default: 60
 
 # constraintsString
 
-{% include versionSince \| 8.6.0 %} The value is passed as
+{% include version-badge.html version=8.6.0 %} The value is passed as
 [MediaTrackConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints)
 which is used to describe a camera's capabilities.
 

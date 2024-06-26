@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zul.Track</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.med.Track</javadoc>
 
-{% include versionSince\| 9.5.0 %}
+{% include version-badge.html version=9.5.0 %}
 
 # Employment/Purpose
 
@@ -154,7 +154,7 @@ Specify what language this track is. It's required if the kind is
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

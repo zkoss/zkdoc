@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Barcode</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barcode.Barcode</javadoc>
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -204,7 +204,7 @@ WEB-INF/lang-addon.xml
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

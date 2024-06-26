@@ -1,4 +1,4 @@
-{% include ZKDevelopersReferencePageHeader %}
+
 
 # Orgitem
 
@@ -6,9 +6,9 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgitem
   </javadoc>
 
-`{% include ZK EE %}`
+`{% include edition-availability.html edition=ee %}`
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -188,7 +188,7 @@ time the component is opened.</p></td>
 
 # Supported Children
 
-`*`[` Orgnode`](ZK_Component_Reference/Layouts/Organigram/Orgnode)`, `[` Orgchildren`](ZK_Component_Reference/Layouts/Organigram/Orgchildren)
+`*`[` Orgnode`](ZK_Component_Reference/Layouts/Organigram/Orgnode)`, `[` Orgchildren`](ZK_Component_Reference/Layouts/Organigram/Orgchildren)
 
 # Version History
 
@@ -196,6 +196,6 @@ time the component is opened.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -210,7 +210,7 @@ Notes:
 
 ## IconSclass
 
-{% include versionSince\| 8.6.2 %} Specify the sclass name of the
+{% include version-badge.html version=8.6.2 %} Specify the sclass name of the
 Bandbox button icon. For built-in icon, please see
 [ZK_Component_Reference/Base_Components/LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement).
 
@@ -279,7 +279,7 @@ zul.jar.
 </center></td>
 <td><p><img src="bandbox_mold_rounded.png"
 title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" /> {%
-include versionSince| 5.0.0 %}</p></td>
+include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -292,7 +292,7 @@ include versionSince| 5.0.0 %}</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -300,6 +300,6 @@ include versionSince| 5.0.0 %}</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

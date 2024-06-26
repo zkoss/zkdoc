@@ -8,7 +8,7 @@
 - JavaScript API:
   [Navitem](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navitem.html)
 - Style Guide:
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -100,7 +100,7 @@ Your application won't be notified when users click the navitem.
 
 ## Badge Text
 
-{% include versionSince\| 9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 This property set the badge text for the `Navitem`, it is used to
 present more details of `Navitem`.
@@ -124,8 +124,8 @@ present more details of `Navitem`.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 </tbody>
 </table>
@@ -141,7 +141,7 @@ present more details of `Navitem`.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

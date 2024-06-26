@@ -86,6 +86,6 @@ Then, the generated XML output will be XHTML as follows.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

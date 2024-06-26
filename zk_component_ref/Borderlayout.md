@@ -180,7 +180,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 </tbody>
 </table>
 
-{% include versionSince\| 7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 
 The autoscroll attribute will create floating scrollbar and it is not
 visible unless user mouse over on the region. To turn off the floating
@@ -195,7 +195,7 @@ configuration in zk.xml.
 ```
 
 **Note:** the value of org.zkoss.zul.nativebar is true by default ({%
-include versionSince\| 7.0.2 %}
+include version-badge.html version=7.0.2 %}
 
 ### Grown by children
 
@@ -295,7 +295,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## AnimationDisabled
 
-{% include versionSince\| 5.0.8 %} You can specify this property to true
+{% include version-badge.html version=5.0.8 %} You can specify this property to true
 to disable the animation effects of this component.
 
 ### Configure to Disable the Animation Effects as Default
@@ -336,13 +336,13 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 
 # Supported Children
 
-`*`[` North`](ZK_Component_Reference/Layouts/Borderlayout/North)`, `[` South`](ZK_Component_Reference/Layouts/Borderlayout/South)`, `[` Center`](ZK_Component_Reference/Layouts/Borderlayout/Center)`, `[` West`](ZK_Component_Reference/Layouts/Borderlayout/West)`, `[` East`](ZK_Component_Reference/Layouts/Borderlayout/East)
+`*`[` North`](ZK_Component_Reference/Layouts/Borderlayout/North)`, `[` South`](ZK_Component_Reference/Layouts/Borderlayout/South)`, `[` Center`](ZK_Component_Reference/Layouts/Borderlayout/Center)`, `[` West`](ZK_Component_Reference/Layouts/Borderlayout/West)`, `[` East`](ZK_Component_Reference/Layouts/Borderlayout/East)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

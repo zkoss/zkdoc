@@ -8,7 +8,7 @@
 - JavaScript API:
   [Rangeslider](http://www.zkoss.org/javadoc/latest/jsdoc/zkex/slider/Rangeslider.html)
 
-{% include ZK PE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -33,20 +33,20 @@ min property.
 
 ## Disabled
 
-{% include defaultValue\| false %}
+{% include DefaultValue.md value=false %}
 
 If the rangeslider is disabled, then users can not drag the slider
 buttons.
 
 ## Orient
 
-{% include defaultValue\| horizontal %}
+{% include DefaultValue.md value=horizontal %}
 
 Sets it either "horizontal" or "vertical" to display rangslider.
 
 ## Marks
 
-{% include defaultValue\| null %}
+{% include DefaultValue.md value=null %}
 
 Sets the marks information map for displaying value marks. In this map,
 the key represents the number value of slider, and the value represents
@@ -54,7 +54,7 @@ the displayed scale text.
 
 ## MarkScale
 
-{% include defaultValue\| 20 %}
+{% include DefaultValue.md value=20 %}
 
 Sets the marks information for displaying value marks.
 
@@ -72,27 +72,27 @@ title="ZKComRef_RangesliderNoMarks.png" />
 
 ## Max
 
-{% include defaultValue\| 100 %}
+{% include DefaultValue.md value=100 %}
 
 Rangeslider supports maximal position, which can be changed by the max
 property.
 
 ## Min
 
-{% include defaultValue\| 0 %}
+{% include DefaultValue.md value=0 %}
 
 Rangeslider supports minimal position, which can be changed by the min
 property.
 
 ## StartValue, EndValue
 
-{% include defaultValue\| 0 %}
+{% include DefaultValue.md value=0 %}
 
 Represent the range value of Rangeslider.
 
 ## Step
 
-{% include defaultValue\| 1 %}
+{% include DefaultValue.md value=1 %}
 
 By default, the rangeslider will scroll to the position continuously
 when a user drags it. If you prefer to scroll a discrete fixed amount at
@@ -100,7 +100,7 @@ each step, you can set the amount of value using the step property.
 
 ## TooltipVisible
 
-{% include defaultValue\| false %}
+{% include DefaultValue.md value=false %}
 
 The tooltip displays the value of a slider button in the rangeslider. If
 the tooltipvisible is true, the tooltips of the slider buttons will

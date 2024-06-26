@@ -7,7 +7,7 @@
   <javadoc directory="jsdoc">zkmax.layout.Rowchildren</javadoc>
 - Style Guide: [
   Rowchildren](ZK_Style_Guide/XUL_Component_Specification)
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -70,6 +70,6 @@ By default, the offset of Rowchildren is 0.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

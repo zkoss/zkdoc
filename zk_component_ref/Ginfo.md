@@ -50,7 +50,7 @@ Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -58,6 +58,6 @@ Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

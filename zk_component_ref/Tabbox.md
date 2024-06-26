@@ -108,7 +108,7 @@ title="ZKComRef_Tabbox_Toolbar_Examples.png" />
 
 ## MaximalHeight
 
-{% include versionSince\| 7.0.0 %} In order to solve the problem where
+{% include version-badge.html version=7.0.0 %} In order to solve the problem where
 each tabpanel have different heights, we offer this feature called
 **MaximalHeight**. With this feature, every Tabpanel will be applied the
 maximum height among all the tabpanels i.e. if one tabpanel's height is
@@ -216,8 +216,7 @@ title="tabbox_mold_accordion.png" />
 </center></td>
 <td><p><img src="tabbox_mold_accordion-lite.png"
 title="tabbox_mold_accordion-lite.png"
-alt="tabbox_mold_accordion-lite.png" /> {% include deprecatedSince|7.0.0
-%}</p></td>
+alt="tabbox_mold_accordion-lite.png" /> {% include DeprecatedSince.md version=7.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -276,12 +275,12 @@ title="tabbox_orient_vertical-right.png" />
 </tabbox>
 ```
 
-- {% include versionSince\| 7.0.0 %} Rename orient "horizontal" to
+- {% include version-badge.html version=7.0.0 %} Rename orient "horizontal" to
   "top", "vertical" to "left" and add extra two orients named "bottom"
   and "right"
 
 # Supported Children
 
-`*`[` Tabs`](ZK_Component_Reference/Containers/Tabbox/Tabs)`, `[` Tabpanels`](ZK_Component_Reference/Containers/Tabbox/Tabpanels)`, `[`Toolbar`](ZK_Component_Reference/Essential_Components/Toolbar)
+`*`[` Tabs`](ZK_Component_Reference/Containers/Tabbox/Tabs)`, `[` Tabpanels`](ZK_Component_Reference/Containers/Tabbox/Tabpanels)`, `[`Toolbar`](ZK_Component_Reference/Essential_Components/Toolbar)
 
 

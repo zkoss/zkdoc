@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
 - Style Guide: N/A
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -18,7 +18,7 @@ This component is used to generate a Jasper report into an inline frame.
 
 # Including Dependency
 
-{% include versionSince\| 9.6.0 %} ZK doesn't include jasperreports by
+{% include version-badge.html version=9.6.0 %} ZK doesn't include jasperreports by
 default. If you need to use this component, you have to include the
 dependency manually like:
 
@@ -101,7 +101,7 @@ export parameter as the following:
 
 # exportName
 
-{% include versionSince\| 8.6.1 %}
+{% include version-badge.html version=8.6.1 %}
 
 You can specify the export file name for the download if any, the full
 file name will be exportName + "." + format.
@@ -171,13 +171,13 @@ report.setType("pdf"); // report is the Jasperreport component
 | jxl       |                                    |
 | csv       |                                    |
 | odt       |                                    |
-| xlsx      | {% include versionSince\| 5.0.8 %} |
-| docx      | {% include versionSince\| 5.0.8 %} |
-| graphic2d | {% include versionSince\| 5.0.8 %} |
-| ods       | {% include versionSince\| 5.0.8 %} |
-| pptx      | {% include versionSince\| 5.0.8 %} |
-| txt       | {% include versionSince\| 5.0.8 %} |
-| xhtml     | {% include versionSince\| 5.0.8 %} |
+| xlsx      | {% include version-badge.html version=5.0.8 %} |
+| docx      | {% include version-badge.html version=5.0.8 %} |
+| graphic2d | {% include version-badge.html version=5.0.8 %} |
+| ods       | {% include version-badge.html version=5.0.8 %} |
+| pptx      | {% include version-badge.html version=5.0.8 %} |
+| txt       | {% include version-badge.html version=5.0.8 %} |
+| xhtml     | {% include version-badge.html version=5.0.8 %} |
 
 # Supported JasperReport Version
 

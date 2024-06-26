@@ -75,7 +75,7 @@ true. The example ZUL below shows a panel which can be resized.
 </panel>
 ```
 
-{% include versionSince\|5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 ## Draggable
 
@@ -108,7 +108,7 @@ layout.
 </portallayout>
 ```
 
-{% include versionSince\|5.0.3 %}
+{% include version-badge.html version=5.0.3 %}
 
 ## Border
 

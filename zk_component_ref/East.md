@@ -74,7 +74,7 @@ For more details, please refer to
 
 # Properties and Features
 
-{% include LayoutCommonAttributes %}
+{% include LayoutCommonAttributes.md %}
 
 # Supported Events
 

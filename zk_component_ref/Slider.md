@@ -28,7 +28,7 @@ default minimum is 0 and cannot be changed.
 
 # Minimal Position
 
-{% include versionSince\| 7.0.1 %} Slider supports minimal position,
+{% include version-badge.html version=7.0.1 %} Slider supports minimal position,
 which can be changed by the minpos property as follows.
 
 ![](min_slider.png)
@@ -43,7 +43,7 @@ position.
 
 # Decimal Mode
 
-{% include versionSince\| 7.0.1 %} Set the mode property to "decimal"
+{% include version-badge.html version=7.0.1 %} Set the mode property to "decimal"
 will enable decimal slider. So the slider can represent decimal number.
 
 ![](dec_slider.png)
@@ -65,7 +65,7 @@ does), you could specify the amount of value to move by use of
 
 # Step
 
-{% include versionSince\| 7.0.1 %} By default, the slider will scroll to
+{% include version-badge.html version=7.0.1 %} By default, the slider will scroll to
 the position continuously when an user drags it. If you prefer to scroll
 a discrete fixed amount on each step, you can set the amount of value of
 the `step` property. Step property is useful in decimal mode, slider's
@@ -91,7 +91,7 @@ below.
 
 # Knob Mold
 
-{% include ZK EE %} {% include versionSince\| 8.6.0 %} Set the mold
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %} Set the mold
 property to "knob" will enable knob slider. So the slider can act as a
 normal knob. The knob can controlled by wheel, drag, click and enter a
 value to the input element.
@@ -191,7 +191,7 @@ zul.jar.
 </tr>
 <tr class="even">
 <td><center>
-<p>{% include versionSince| 8.6.0 %}</p>
+<p>{% include version-badge.html version=8.6.0 %}</p>
 </center>
 <center>
 <p>knob</p>
@@ -201,7 +201,7 @@ zul.jar.
 </tbody>
 </table>
 
-{% include versionSince\| 7.0.0 %} the scale mold is deprecated because
+{% include version-badge.html version=7.0.0 %} the scale mold is deprecated because
 designs are changed.
 
 # Supported Children
@@ -212,7 +212,7 @@ designs are changed.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

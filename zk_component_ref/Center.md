@@ -72,8 +72,8 @@ title="ZKCompRef_Borderlayout.jpg" />
 ## Caption
 
 A layout region might have a caption, which is specified by declaring a
-child component called caption. {% include ZK EE %} {% include
-versionSince\| 6.5.0 %}
+child component called caption. {% include edition-availability.html edition=pe %} {% include
+version-badge.html version=6.5.0 %}
 
 ``` xml
 <borderlayout>

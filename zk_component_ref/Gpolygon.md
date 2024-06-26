@@ -35,7 +35,7 @@ title="ZKComRef_Gpolygon_Example.png" />
 
 ## Disable Path Encoding
 
-{% include versionSince\| 3.3.0 %}
+{% include version-badge.html version=3.3.0 %}
 
 see: [ Gpolyline -
 Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline#Disable_Path_Encoding)
@@ -72,7 +72,7 @@ Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyli
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -80,6 +80,6 @@ Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyli
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

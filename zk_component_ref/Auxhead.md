@@ -94,7 +94,7 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -102,6 +102,6 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -1,9 +1,9 @@
  {% include
-versionSince\|9.5.0 %} {% include ZK EE %}
+version-badge.html version=9.5.0 %} {% include edition-availability.html edition=pe %}
 
 ## Required Settings
 
-{% include ZKComponentReferenceAccessibilityNamingReference %}
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 ## Keyboard Support
 

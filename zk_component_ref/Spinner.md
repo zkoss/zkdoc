@@ -59,7 +59,7 @@ with a formatting string. The default value is `null`.
 <spinner format="#,##0.##"/>
 ```
 
-{% include versionSince\| 8.5.2 %} You can provide a locale to format
+{% include version-badge.html version=8.5.2 %} You can provide a locale to format
 the number by specifying the String starts with "locale:"
 
 ``` xml
@@ -156,7 +156,7 @@ zul.jar.
 </center></td>
 <td><p><img src="spinner_mold_rounded.png"
 title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /> {%
-include versionSince| 5.0.0 %}</p></td>
+include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -169,7 +169,7 @@ include versionSince| 5.0.0 %}</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -177,6 +177,6 @@ include versionSince| 5.0.0 %}</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

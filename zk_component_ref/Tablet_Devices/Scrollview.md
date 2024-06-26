@@ -11,7 +11,7 @@
 
 # Employment/Purpose
 
-{% include versionSince\| 6.5 %} Applications exceeding a browser's
+{% include version-badge.html version=6.5 %} Applications exceeding a browser's
 viewport relies on desktop browsers to automatically generates
 scrollbars by using CSS **overflow** attribute so users can view the
 entire page but this feature, unfortunately, is not available on tablet
@@ -106,7 +106,7 @@ user is scrolling a scrollable component.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

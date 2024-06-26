@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zkex.layout.Columnlayout</javadoc>
 - Style Guide:
   [Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -21,7 +21,7 @@ percent or pixel) on every
 otherwise the result may depend on the browser and may not be as
 expected.
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 Each column may have any number of any type of components.
 
@@ -64,7 +64,7 @@ title="ZKComRef_Columnlayout_Example.png" />
     </columnlayout>
 ```
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 Each column may have any number of any type of components.
 
@@ -186,7 +186,7 @@ title="ZKComRef_Columnlayout_Example_ZK6.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -194,6 +194,6 @@ title="ZKComRef_Columnlayout_Example_ZK6.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

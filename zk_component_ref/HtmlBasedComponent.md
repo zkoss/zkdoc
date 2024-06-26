@@ -62,7 +62,7 @@ right-clicked a component.</p></td>
 <p><code>onMouseOver</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include versionSince| 5.0.3
+org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
 %} Denotes a user has hovered over the component.</p></td>
 </tr>
 <tr class="even">
@@ -70,7 +70,7 @@ org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include versionSince| 5.0.3
 <p><code>onMouseOut</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include versionSince| 5.0.3
+org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
 %} Denotes a user has moved out a component.</p></td>
 </tr>
 <tr class="odd">

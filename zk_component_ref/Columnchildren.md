@@ -9,13 +9,13 @@
   <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
 - Style Guide: [
   Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
 Columnchildren can only allow Panel as its child.
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 - Columnchildren can allow any Component as its child.
 
@@ -131,7 +131,7 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 `*`[` Panel`](ZK_Component_Reference/Containers/Panel)
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 `*Any`
 
@@ -139,7 +139,7 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -147,6 +147,6 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

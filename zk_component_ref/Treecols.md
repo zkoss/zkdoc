@@ -98,7 +98,7 @@ column will appear as a column at the top of the tree.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -106,6 +106,6 @@ column will appear as a column at the top of the tree.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

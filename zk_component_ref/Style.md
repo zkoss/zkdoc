@@ -61,7 +61,7 @@ The style component used to specify `CSS` styles for the owner desktop.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

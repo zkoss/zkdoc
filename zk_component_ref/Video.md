@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Video</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Video</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 8.6.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -204,7 +204,7 @@ write codes as shown below (MVVM style).
 Video component also provides `isPlaying(), isPaused() and isStopped()`
 methods to check the video state.
 
-{% include versionSince\| 9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 Since ZK 9.6.0, a new state - `Video.END` is added. When the video is
 played to the end, the StateChangeEvent will be triggered.
@@ -239,7 +239,7 @@ when invoking play(), stop() or pause().</p></td>
 
 # Supported Children
 
-`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
+`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
 
 # Version History
 

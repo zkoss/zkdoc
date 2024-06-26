@@ -27,6 +27,6 @@ supported mold instead.
 
 | Version | Date       | Content |
 |---------|------------|---------|
-| 6.5.0   | July, 2012 |         |
+| 6.5.0   | July, 2012 |         |
 
 

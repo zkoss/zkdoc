@@ -90,7 +90,7 @@ title="ZKComRef_Bandbox_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -98,6 +98,6 @@ title="ZKComRef_Bandbox_Example.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

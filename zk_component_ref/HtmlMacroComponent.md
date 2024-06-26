@@ -10,7 +10,7 @@
 
 The base class for macro components.
 
-{% include versionSince \| 5.0.4 %} By default invoking
+{% include version-badge.html version=5.0.4 %} By default invoking
 <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
 supports auto forward events and wire accessible variables to this
 component.
@@ -132,7 +132,7 @@ Events](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_even
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

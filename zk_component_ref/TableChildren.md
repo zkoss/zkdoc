@@ -16,7 +16,7 @@
 The cell of Tablelayout. The child component of Tablechildren can only
 be Panel.
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The child of tablechildren can be any component.
 
@@ -57,7 +57,7 @@ title="ZKComRef_Tablelayout_Example.PNG" />
 </tablelayout>
 ```
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The child of tablechildren can be any component.
 
@@ -114,9 +114,9 @@ title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 
 `*`[` Panel`](ZK_Component_Reference/Containers/Panel)
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
-`* Any`
+`* Any`
 
 # Use Cases
 
@@ -129,6 +129,6 @@ title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -17,7 +17,7 @@ N/A
 
 # Per-component Locale
 
-{% include versionSince\|5.0.8 %} You can add a locale per component for
+{% include version-badge.html version=5.0.8 %} You can add a locale per component for
 all of the NumberInputElement.
 
 For example,
@@ -105,7 +105,7 @@ title="NumberInputElement-Locales.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

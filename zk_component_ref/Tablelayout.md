@@ -2,7 +2,7 @@
 
 # Tablelayout
 
-{% include ZK EE %}
+{% include edition-availability.html edition=pe %}
 
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
@@ -55,7 +55,7 @@ title="ZKComRef_Tablelayout_Example.PNG" />
 </tablelayout>
 ```
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The child of tablechildren can be any component:
 
@@ -116,7 +116,7 @@ title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -124,6 +124,6 @@ title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -119,7 +119,7 @@ a default value, For example,
 </combobox>
 ```
 
-{% include versionSince\| 5.0.4 %}
+{% include version-badge.html version=5.0.4 %}
 
 # Properties
 
@@ -371,7 +371,7 @@ Please see
 
 ## PopupWidth
 
-{% include versionSince\| 8.0.3 %} By specifying this property, the
+{% include version-badge.html version=8.0.3 %} By specifying this property, the
 width of the popup will be set and ignore the default behavior.  
 If percentage is specified to this property, the width of the popup will
 be calculated with the width of the bandbox.  
@@ -382,7 +382,7 @@ directly.
 
 ## InstantSelect
 
-{% include versionSince\| 8.6.1 %} By default, any change of selection
+{% include version-badge.html version=8.6.1 %} By default, any change of selection
 using the keyboard will trigger `onSelect` and `onChange` events
 instantly. Once set this property `false`, users need to confirm the
 change by pressing Enter key or make combobox lose its focus so
@@ -391,7 +391,7 @@ can abort the change and revert to previous selection.
 
 ## IconSclass
 
-{% include versionSince\| 8.6.2 %} Specify the sclass name of the
+{% include version-badge.html version=8.6.2 %} Specify the sclass name of the
 Combobox button icon.
 
 # Inherited Functions
@@ -482,20 +482,20 @@ title="combobox_mold_default.png" />
 </center></td>
 <td><p><img src="combobox_mold_rounded.png"
 title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" /> {%
-include versionSince| 5.0.0 %}</p></td>
+include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
 
 # Supported Children
 
-`* `[` Comboitem`](ZK_Component_Reference/Input/Combobox/Comboitem)
+`* `[` Comboitem`](ZK_Component_Reference/Input/Combobox/Comboitem)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
 - Style Guide: N/A
 
-{% include ZK EE %}
+{% include edition-availability.html edition=pe %}
 
 # Purpose
 
@@ -67,23 +67,23 @@ These are the supported annotations:
 
 - **@save**
 
-` syntax: @save([limited EL-expression])`
+` syntax: @save([limited EL-expression])`
 
 - **@load**
 
-` syntax: @load(limited EL-expression)`
+` syntax: @load(limited EL-expression)`
 
 - **@bind**
 
-` syntax: @bind(limited EL-expression)`
+` syntax: @bind(limited EL-expression)`
 
 - **@command**
 
-` syntax: @command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
+` syntax: @command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
 
 - **@global-command**
 
-` syntax: @global-command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
+` syntax: @global-command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
 
 ## Limited EL-expression
 
@@ -198,16 +198,16 @@ effective only when applying HTML elements.
 
 **@jsvalidator**
 
-` syntax: @jsvalidator(validation_function_name)`
+` syntax: @jsvalidator(validation_function_name)`
 
 The following is the definition of custom JavaScript function.
 
-`ValidationFunction(val, vmsgs)`  
-`* val: The input data.`  
-`* vmsgs: `  
-`   The validation message holder object. You can add an invalidate message by adding a new property. `  
-`   If you want to clear the specific message, assign an empty string to the property.`  
-`* Returns: Boolean. True if the data is valid.`
+`ValidationFunction(val, vmsgs)`  
+`* val: The input data.`  
+`* vmsgs: `  
+`   The validation message holder object. You can add an invalidate message by adding a new property. `  
+`   If you want to clear the specific message, assign an empty string to the property.`  
+`* Returns: Boolean. True if the data is valid.`
 
 You can use an implicit object (vmsgs) to get the client-side invalid
 messages. The `@jsvalidator` has its own validation message holder not
@@ -343,6 +343,6 @@ recovery.</p></td>
 | Version | Date       | Content                        |
 |---------|------------|--------------------------------|
 | 8.5     | 2017/09/21 | Add the new Fragment component |
-|         |            |                                |
+|         |            |                                |
 
 

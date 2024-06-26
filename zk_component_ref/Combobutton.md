@@ -179,7 +179,7 @@ directly.</p></td>
 - The default mold
 - The tbbtn mold
 
-`{% include versionSince| 6.5.0 %}`
+`{% include version-badge.html version=6.5.0 %}`
 
 The **tbbtn** mold is renamed to **toolbar** mold
 

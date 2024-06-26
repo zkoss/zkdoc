@@ -1,4 +1,4 @@
-{% include ZKDevelopersReferencePageHeader %}
+
 
 # Orgnode
 
@@ -6,9 +6,9 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgnode
   </javadoc>
 
-`{% include ZK EE %}`
+`{% include edition-availability.html edition=ee %}`
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -73,6 +73,6 @@ components in it, such as label, image, textbox etc.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

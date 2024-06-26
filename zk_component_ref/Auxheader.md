@@ -214,21 +214,5 @@ title="Auxheader_rowspan_limitation03.jpg" />
 
 # Restrictions
 
-{% include versionSince\| ZK 8.0.0 %} Noticed that it's forbidden to set
+{% include version-badge.html version=8.0.0 %} Noticed that it's forbidden to set
 width/height/hflex/vflex in Auxheader.
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

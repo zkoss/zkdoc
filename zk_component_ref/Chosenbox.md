@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
 - Style Guide: [
   Chosenbox](ZK_Style_Guide/XUL_Component_Specification/Chosenbox)
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -111,7 +111,7 @@ See also:
     <chosenbox width="400px" model="${subModel}"/>
 ```
 
-{% include CustomItemRendering \|chosenbox %}
+{% include   CustomItemRendering.md component=chosenbox %}
 
 # Keyboard Navigation Chosenbox
 

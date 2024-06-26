@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
 - Style Guide: [
   Groupfoot](ZK_Style_Guide/XUL_Component_Specification/Groupfoot)
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -102,7 +102,7 @@ title="ZKComRef_Group_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -110,6 +110,6 @@ title="ZKComRef_Group_Example.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

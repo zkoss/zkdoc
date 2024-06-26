@@ -62,7 +62,7 @@ Close button on the right-top corner, the `onClose` event is fired.
 
 ### Listen ClickEvent
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 Since ZK 6, the event listener will be invoked with an instance of
 <javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc>, and it is easy
@@ -88,7 +88,7 @@ Messagebox.show("Something is changed. Are you sure?",
 
 ## Assign the Order of Buttons
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 If you'd like to assign the order, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
@@ -117,7 +117,7 @@ example,
 
 ## Assign the Labels of Buttons
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 By default, the label of a button is loaded from [the message
 file](ZK_Developer's_Reference/Internationalization/Warning_and_Error_Messages)
@@ -172,7 +172,7 @@ template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/m
 
 ## The Width and Parameters
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The `params` argument in
 <javadoc method="show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map)">org.zkoss.zul.Messagebox</javadoc>
@@ -197,7 +197,7 @@ template recognize them. In additions, the priority of the `params`
 argument is higher, i.e., it could override the default values, though
 it is rarely required.
 
-{% include versionSince\|7.0.1 %} User also can customize the style of
+{% include version-badge.html version=7.0.1 %} User also can customize the style of
 message dialog with the parameter called `sclass` as below.
 
 ``` java
@@ -214,7 +214,7 @@ Messagebox.show("It's a customized style message box.",
 
 ## Without Buttons' Dialog
 
-{% include versionSince\|6.5.1 %}
+{% include version-badge.html version=6.5.1 %}
 
 If you'd like to show a non-buttons dialog, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
@@ -256,7 +256,7 @@ This messagebox will show without any buttons.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

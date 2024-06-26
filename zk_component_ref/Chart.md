@@ -7,7 +7,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Chart</javadoc>
 - Style Guide: N/A
 
-{% include ZK_PE %}
+{% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 

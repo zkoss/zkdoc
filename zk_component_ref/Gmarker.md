@@ -57,7 +57,7 @@ gmarker component with latitude and longitude information.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -65,6 +65,6 @@ gmarker component with latitude and longitude information.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

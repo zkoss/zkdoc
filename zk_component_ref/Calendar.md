@@ -73,12 +73,12 @@ title="ZKComRef_Calendar_Example2.png" />
 </zk>
 ```
 
-{% include versionSince\| 5.0.3 %}
+{% include version-badge.html version=5.0.3 %}
 
 # Show Week Number
 
-Calendar supports to show a week number of the year. {% include ZK EE %}
-{% include versionSince\| 6.5.0 %}
+Calendar supports to show a week number of the year. {% include edition-availability.html edition=pe %}
+{% include version-badge.html version=6.5.0 %}
 
 <figure>
 <img src="ZKComRef_Calendar_Week_Of_Year.PNG"
@@ -92,7 +92,7 @@ title="ZKComRef_Calendar_Week_Of_Year.PNG" />
 
 # 2DigitYearStart
 
-{% include versionSince\| 8.6.2 %}
+{% include version-badge.html version=8.6.2 %}
 
 You can control the 2DigitYearStart by the use of the library property.
 Please refer to [
@@ -101,7 +101,7 @@ for details.
 
 # Constraint
 
-`{% include versionSince| 8.5.2 %}`
+{% include version-badge.html version=8.5.2 %}
 
 This component also supports `constraint` like [ZK Component
 Reference/Input/Datebox#Constraint](ZK_Component_Reference/Input/Datebox#Constraint)
@@ -139,7 +139,7 @@ EE]</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

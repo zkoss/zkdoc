@@ -8,7 +8,7 @@
 - JavaScript API:
   [Nav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Nav.html)
 - Style Guide:
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -92,13 +92,13 @@ opened or closed a nav component.</p></td>
 
 # Supported Children
 
-`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
+`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

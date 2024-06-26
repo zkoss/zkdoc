@@ -21,6 +21,6 @@ smoothly.
 
 | Version | Date        | Content |
 |---------|-------------|---------|
-| 9.5.0   | August 2020 |         |
+| 9.5.0   | August 2020 |         |
 
 

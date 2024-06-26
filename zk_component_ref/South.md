@@ -69,7 +69,7 @@ title="ZKCompRef_Borderlayout.jpg" />
 
 # Properties and Features
 
-{% include LayoutCommonAttributes %}
+{% include LayoutCommonAttributes.md %}
 
 # Supported Events
 

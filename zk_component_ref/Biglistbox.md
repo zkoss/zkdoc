@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
 - Style Guide: [
   Biglistbox](ZK_Style_Guide/XUL_Component_Specification/Biglistbox)
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -125,8 +125,8 @@ can use either <i><b>MatrixRenderer</b></i> interface or
 
 ## org.zkoss.zkmax.zul.biglistbox.preloadSize
 
-`[default: 50]`  
-`[inherit: true]`[^1]
+`[default: 50]`  
+`[inherit: true]`[^1]
 
 It specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data

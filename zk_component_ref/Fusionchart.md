@@ -1,5 +1,4 @@
- {% include Deprecated
-Content %}
+ {% include Deprecated_Content.html %}
 
 # Fusionchart
 
@@ -8,7 +7,7 @@ Content %}
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
 - Style Guide: N/A
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the
   3rd party library that it's based on - Fusioncharts free, has moved
   out of flash and stopped supporting it.
@@ -92,13 +91,13 @@ support 3D)</p></td>
 </tr>
 <tr class="odd">
 <td><p>pie</p></td>
-<td><p>PieModel, SingleValueCategoryModel{% include versionSince| 6.5.3
+<td><p>PieModel, SingleValueCategoryModel{% include version-badge.html version=6.5.3
 %}</p></td>
 <td><p>O</p></td>
 </tr>
 <tr class="even">
 <td><p>funnel</p></td>
-<td><p>SingleValueCategoryModel{% include versionSince| 6.5.3
+<td><p>SingleValueCategoryModel{% include version-badge.html version=6.5.3
 %}</p></td>
 <td><p>X</p></td>
 </tr>
@@ -413,7 +412,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ## Funnel Chart
 
-`{% include versionSince| 6.5.3 %}`
+`{% include version-badge.html version=6.5.3 %}`
 
 ![](Funnelchart.png)
 
@@ -772,7 +771,7 @@ from this event.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

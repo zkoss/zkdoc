@@ -176,7 +176,7 @@ new Textbox().setContraint("/.+@.+\\.[a-z]+/");
 
 #### Flags
 
-{% include versionSince\| 9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 To specify the flags to the regular expression, you could add the flags
 after the ending slash of the regular expression.
@@ -230,7 +230,7 @@ Reference](ZK_Developer's_Reference/Internationalization).
 
 ### Escape a Comma
 
-{% include versionSince\|8.0.0 %} If you want to write a longer sentence
+{% include version-badge.html version=8.0.0 %} If you want to write a longer sentence
 with comma separator, you can enclose your customized sentence with
 curly braces.
 
@@ -381,7 +381,7 @@ combobox, textbox, datebox, and so on.
 
 ## Instant
 
-{% include versionSince\| 6.0.0 %} default: `false`
+{% include version-badge.html version=6.0.0 %} default: `false`
 
 When the instant mode is on, the `onChange` event will be fired as soon
 as possible as a user is typing in the input (like `onChanging` event).
@@ -392,7 +392,7 @@ in the server while changing the value, please use `onChanging` event.
 
 ## Placeholder
 
-{% include versionSince\| 6.5.0 %} ZK 6.5 introduces support for HTML5
+{% include version-badge.html version=6.5.0 %} ZK 6.5 introduces support for HTML5
 placeholder text, a very useful feature for telling users what they
 should enter in a textbox. This is a widely regarded UI pattern.
 
@@ -411,7 +411,7 @@ title="zk_textbox_placeholder.png" />
 
 ## InputAttributes
 
-{% include versionSince\| 8.6.1 %} The feature is available since 8.6.1.
+{% include version-badge.html version=8.6.1 %} The feature is available since 8.6.1.
 All input elements can set some additional attributes to the input html
 tag in the component. The inputAttributes can take a Map with attribute
 names as the keys or a String separated by ";" and followed the
@@ -509,7 +509,7 @@ XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Browser Limitations
 

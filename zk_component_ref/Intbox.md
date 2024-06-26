@@ -37,7 +37,7 @@ with a formatting string. The default value is `null`.
 <intbox format="#,##0"/>
 ```
 
-{% include versionSince\| 8.5.2 %} You can provide a locale to format
+{% include version-badge.html version=8.5.2 %} You can provide a locale to format
 the number by specify the String starts with "locale:"
 
 ``` xml

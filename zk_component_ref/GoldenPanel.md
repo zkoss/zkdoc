@@ -5,9 +5,9 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenPanel</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.GoldenPanel</javadoc>
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -151,7 +151,7 @@ minimized this GoldenPanel.</p></td>
 
 # Supported Children
 
-`* All`
+`* All`
 
 # Version History
 
@@ -159,6 +159,6 @@ minimized this GoldenPanel.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

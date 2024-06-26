@@ -2,11 +2,11 @@
 
 # Cropper
 
-{% include versionSince \|8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cropper</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Cropper</javadoc>
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Browser Support
 
@@ -142,6 +142,6 @@ cropped the image.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

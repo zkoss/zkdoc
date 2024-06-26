@@ -6,13 +6,13 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Linelayout
   </javadoc>
 
-`{% include ZK EE %}`
+`{% include edition-availability.html edition=ee %}`
 
-{% include versionSince\| 9.0.0 %}
+{% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
-`Linelayout` is a component for displaying chronological information in
+`Linelayout` is a component for displaying chronological information in
 a flexible and easy way; in addition to static data it also support
 ListModel. Linelayout only accept `Lineitem` as its child.
 

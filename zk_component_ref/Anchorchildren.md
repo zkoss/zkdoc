@@ -1,5 +1,4 @@
- {% include
-Deprecated_Content %}
+ {% include Deprecated_Content.html %}
 
 # Anchorchildren
 
@@ -104,7 +103,7 @@ title="ZKComRef_Anchorlayout_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

@@ -8,7 +8,7 @@
 - JavaScript API:
   [Navbar](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navbar.html)
 - Style Guide:
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -126,7 +126,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 
 ## Autoclose
 
-{% include versionSince\| 8.0.4 %} By default only a single
+{% include version-badge.html version=8.0.4 %} By default only a single
 `nav`-element is open at any time - automatically closing other
 `nav`-elements which are not on the current open path. This behavior can
 be disabled setting `autoclose="false"`, which keeps nav elements open
@@ -175,13 +175,13 @@ the user has selected a navitem in the navbar.</p></td>
 
 # Supported Children
 
-`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
+`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
 
 # Use Cases
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

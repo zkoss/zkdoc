@@ -2,13 +2,13 @@
 
 # Coachmark
 
-{% include versionSince\| 9.0.0 %}
+{% include version-badge.html version=9.0.0 %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Coachmark</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.nav.Coachmark</javadoc>
 
-{% include ZK EE %}
+{% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -87,7 +87,7 @@ component e.g. `${self.previousSibling}`
 
 ## Position
 
-{% include defaultValue\|after_center %}
+{% include DefaultValue.md value=after_center %}
 
 The positions of a coachmark. Below are the available values:
 

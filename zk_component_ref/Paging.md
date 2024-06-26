@@ -76,7 +76,7 @@ Cases](#Use_Cases) below.
 
 ## Disabled
 
-{% include versionSince\| 8.0.3 %}
+{% include version-badge.html version=8.0.3 %}
 
 <javadoc method="setDisabled(boolean)">org.zkoss.zul.Paging</javadoc> is
 used to disable the paging component. It can block the user from
@@ -88,7 +88,7 @@ navigating through the pagination. For example,
 
 ## PageIncrement
 
-`Default: 10 (desktop), 5 (mobile)`
+`Default: 10 (desktop), 5 (mobile)`
 
 Under `os` mold, the component renders a list of paging anchors for
 users to jump to the specific page:
@@ -216,6 +216,6 @@ title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

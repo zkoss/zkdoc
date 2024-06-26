@@ -67,7 +67,7 @@ title="ZKComRef_Toolbarbutton_Example.png" />
 
 # Toggle Mode
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 <figure>
 <img src="Toolbarbutton_togglemode.png"
@@ -157,7 +157,7 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -166,7 +166,7 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 | Version | Date | Content                               |
 |---------|------|---------------------------------------|
 | 6.0.0   | 2/10 | Introduce Toggle Mode to Toobarbutton |
-|         |      |                                       |
+|         |      |                                       |
 
 
 

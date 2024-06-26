@@ -2,7 +2,7 @@
 
 # Timepicker
 
-{% include versionSince\| 8.0.0 %} {% include ZK EE %}
+{% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition=pe %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Timepicker</javadoc>
 - JavaScript API:
@@ -22,7 +22,7 @@ Hour, Minute, and Second are used.
 <timepicker/>
 ```
 
-{% include IntegrateMomentjs %}
+{% include IntegrateMomentjs.md %}
 
 # Properties
 
@@ -42,7 +42,7 @@ Below is an example of using *a* within the format.
 </zk>
 ```
 
-{% include VersionSince\| 5.0.7 %} In addition to specifying the format
+{% include version-badge.html version=5.0.7 %} In addition to specifying the format
 explicitly, you could specify the styling. There are two different types
 of styling: short, and medium (representing the styling of
 java.text.DateFormat). For example, you could specify the styling rather
@@ -133,7 +133,7 @@ for inherited functions.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -141,6 +141,6 @@ for inherited functions.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

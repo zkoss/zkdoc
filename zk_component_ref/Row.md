@@ -104,7 +104,7 @@ title="ZKComRef_Grid_Example.png‎" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -112,6 +112,6 @@ title="ZKComRef_Grid_Example.png‎" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

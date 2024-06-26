@@ -8,7 +8,7 @@
 - JavaScript API:
   [Multislider](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/slider/Multislider.html)
 
-{% include ZK EE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -40,20 +40,20 @@ property.
 
 ## Disabled
 
-{% include DefaultValue\| false %}
+{% include DefaultValue.md value=false %}
 
 If the multislider is disabled, users can not drag the slider buttons.
 
 ## Orient
 
-{% include DefaultValue\| horizontal %}
+{% include DefaultValue.md value=horizontal %}
 
 Sets the orientation to either "horizontal" or "vertical" to display the
 multislider.
 
 ## Marks
 
-{% include DefaultValue\| null %}
+{% include DefaultValue.md value=null %}
 
 Sets the marks information for displaying value marks.
 
@@ -64,7 +64,7 @@ text.
 
 ## MarkScale
 
-{% include DefaultValue\| 20 %}
+{% include DefaultValue.md value=20 %}
 
 Sets the marks information for displaying value marks.
 
@@ -73,21 +73,21 @@ minimum value. (if min is 0, then it displays "0 20 40 60 ...")
 
 ## Max
 
-{% include DefaultValue\| 100 %}
+{% include DefaultValue.md value=100 %}
 
 Defines the max value of the multislider. It can be changed by the max
 property.
 
 ## Min
 
-{% include DefaultValue\| 0 %}
+{% include DefaultValue.md value=0 %}
 
 Defines the minimal value of the multislider. It can be changed by the
 min property.
 
 ## Step
 
-{% include DefaultValue\| 1 %}
+{% include DefaultValue.md value=1 %}
 
 By default, the multislider will scroll to the position continuously
 when a user drags it. If you prefer to scroll a discrete fixed amount at
@@ -95,7 +95,7 @@ each step, you can set the Step property.
 
 ## TooltipVisible
 
-{% include DefaultValue\| false %}
+{% include DefaultValue.md value=false %}
 
 The tooltip displays the value of slider buttons in the multislider. If
 tooltipvisible is true, the tooltips of the slider buttons will always

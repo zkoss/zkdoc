@@ -1,4 +1,4 @@
-{% include ZKDevelopersReferencePageHeader %}
+
 
 # Orgchildren
 
@@ -6,9 +6,9 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgchildren
   </javadoc>
 
-`{% include ZK EE %}`
+`{% include edition-availability.html edition=ee %}`
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -69,6 +69,6 @@ children.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -149,7 +149,7 @@ value to each item using the `setValue` method.
 
 ### Listgroup Supported
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 This mold supports having Listgroups and renders them as HTML
 <optgroup>.
@@ -167,8 +167,7 @@ This mold supports having Listgroups and renders them as HTML
 </listbox>
 ```
 
-{% include Notice\|text=Listbox doesn't send onClick event for listitem
-under this mold. %}
+{% include Notice.html text="Listbox doesn't send onClick event for listitem under this mold." %}
 
 # Keyboard Navigation Listbox
 
@@ -204,10 +203,9 @@ When using the paging mold and vflex, you can also turn on autopaging
 such that Listbox will determine the page size automatically based on
 the available height.
 
-{% include Notice\| text=This feature only works when each row has the
-same height. %}
+{% include Notice.html  text="This feature only works when each row has the same height." %}
 
-{% include versionSince\| 5.0.2 %}
+{% include version-badge.html version=5.0.2 %}
 
 **Note:** If the autopaging is enabled, the height of each row will be
 applied the following CSS by default. If you want to change the height,
@@ -220,10 +218,10 @@ please overwrite the CSS rule as your preference.
 }
 ```
 
-{% include versionSince\| 5.0.8 %}
+{% include version-badge.html version=5.0.8 %}
 
 **Note:** In ZK 7, we change the naming *.z-listcell-cnt* to
-*.z-listcell-content*. {% include versionSince\| 7.0.3 %}
+*.z-listcell-content*. {% include version-badge.html version=7.0.3 %}
 
 ``` css
 .z-listbox-autopaging .z-listitem {
@@ -237,7 +235,7 @@ please overwrite the CSS rule as your preference.
 
 ## PagingDisabled
 
-{% include versionSince\| 8.0.3 %}
+{% include version-badge.html version=8.0.3 %}
 
 Once the `pagingDisabled` is set to `true`, users will be blocked from
 navigating through the pagination.
@@ -246,7 +244,7 @@ navigating through the pagination.
 
 ## Nonselectable Tags
 
-{% include versionSince\| 5.0.5 %}
+{% include version-badge.html version=5.0.5 %}
 
 By default, when a user clicks on an HTML <code><button>, <input>,
 
@@ -292,7 +290,7 @@ If you only want to ignore BUTTON and INPUT only, you could specify:
 
 ### Click Checkmark to Select Only
 
-{% include versionSince\| 5.0.6 %}
+{% include version-badge.html version=5.0.6 %}
 
 If you want to toggle the selection only when the user clicks on the
 checkmark, you could specify `*`. Notice that you have to specify
@@ -313,7 +311,7 @@ ctrl+c.
 
 ## Multiple Selection
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 When a user clicks on a list item, the whole row is selected and the
 `onSelect` event is sent back to the server to notify the application.
@@ -433,17 +431,17 @@ Note: If the `multiple` attribute is false, radio buttons are displayed
 instead, as demonstrated by the right hand listbox.
 
 To enable Select all feature, there are some constraints as below: {%
-include versionSince\| 5.0.11 %}
+include version-badge.html version=5.0.11 %}
 
 Select all checkbox in listheader is only available if ROD is false.
 
-{% include versionSince\| ZK 8.0.0 %}
+{% include version-badge.html version=8.0.0 %}
 
 If paging mold is enabled, the Select all checkbox in listheader is only
 available when using a ListModel implementation as model. (e.g.
 ListModelList)
 
-{% include versionSince\| 6.5.5 %}
+{% include version-badge.html version=6.5.5 %}
 
 The Select all checkbox on listheader now support onCheckSelectAll event
 that can determine whether it is checked or not.
@@ -475,7 +473,7 @@ that can determine whether it is checked or not.
 
 ## Deselect Others when Clicking an Item with Checkmark
 
-{% include versionSince\| 5.0.5 %}
+{% include version-badge.html version=5.0.5 %}
 
 If a listbox's checkmark
 (<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>) is set
@@ -497,7 +495,7 @@ in `WEB-INF/zk.xml`:
 
 ## Toggle Selection when Right Clicking an Item with Checkmark
 
-{% include versionSince\| 5.0.5 %} If a listbox's checkmark
+{% include version-badge.html version=5.0.5 %} If a listbox's checkmark
 (<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>) is
 enabled, the selection will be toggled when user right click on item.
 
@@ -1020,7 +1018,7 @@ title="ZKComRef_Listbox_Scrollable.png" />
 </zk>
 ```
 
-{% include versionSince\| 7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 
 The browser's default scrollbar is replaced by floating scrollbar and it
 is not visible unless user mouse over on the content. To turn off the
@@ -1035,7 +1033,7 @@ configuration in zk.xml.
 ```
 
 **Note**: the value of org.zkoss.zul.nativebar is true by default ({%
-include versionSince\| 7.0.2 %})
+include version-badge.html version=7.0.2 %})
 
 ## SizedByContent
 
@@ -1057,7 +1055,7 @@ result.
 
 ### Span
 
-{% include versionSince\|5.0.6 %} By default, when sizedByContent is
+{% include version-badge.html version=5.0.6 %} By default, when sizedByContent is
 true, the listheaders only take the required space.
 
 <figure>
@@ -1117,7 +1115,7 @@ This property is ignored if the `rows` attribute is specified.
 ## Show messages when empty
 
 The `emptyMessage` attribute is used to show a message when we have no
-items. {% include versionSince\| 5.0.7 %}
+items. {% include version-badge.html version=5.0.7 %}
 
 ``` xml
         <listbox id="test1" emptyMessage="No items match your search">
@@ -1149,7 +1147,7 @@ to do is double click the column when the mouse is over where the
 columns meet and the column will automatically resize to fit its
 contents. To enable this functionality Listbox's Listhead need the
 attribute sizable="true". In other words, all sizable column provides
-the auto-fitting functionality. {% include versionSince\| 5.0.0 %}
+the auto-fitting functionality. {% include version-badge.html version=5.0.0 %}
 
 ## The onAfterRender Event
 
@@ -1172,7 +1170,7 @@ title="listbox_onAfterRender.png" />
 
 ## Sticky Header
 
-{% include versionSince\| 9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Listbox's header out of visible range in a viewport, the
@@ -1186,7 +1184,7 @@ Listbox's header becomes floating and sticky on the top of the page.
 
 # Columns Menu
 
-For example, {% include versionSince\| 6.5.0 %}
+For example, {% include version-badge.html version=6.5.0 %}
 
 <figure>
 <img src="_ZKComRef_Listbox_Columns_Menu.PNG"
@@ -1215,8 +1213,8 @@ title="_ZKComRef_Listbox_Columns_Menu.PNG" />
 ## Ungroup Column Menu
 
 When the user groups the content of the listbox, the column's menu will
-show an ungroup icon for user to reset the group. {% include ZK EE %} {%
-include versionSince\| 6.5.0 %}
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
+include version-badge.html version=6.5.0 %}
 
 <figure>
 <img src="_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG"
@@ -1382,7 +1380,7 @@ The following code demonstrates how to freeze a column within a Grid:
     </listbox>
 ```
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 - For further details, please refer to [ Frozen
   component](ZK_Component_Reference/Supplementary/Frozen)
@@ -1392,8 +1390,8 @@ The following code demonstrates how to freeze a column within a Grid:
 
 ## org.zkoss.zul.listbox.rightSelect
 
-`[default: true]`  
-`[inherit: true]`[^3]
+`[default: true]`  
+`[inherit: true]`[^3]
 
 It specifies that the selection will be toggled when user right clicks
 on an item, if the checkmark is enabled
@@ -1403,10 +1401,10 @@ state.
 
 ## org.zkoss.zul.listbox.groupSelect
 
-`[default: false]`  
-`[inherit: true]`[^4]
+`[default: false]`  
+`[inherit: true]`[^4]
 
-{% include versionSince\| 5.0.7 %}
+{% include version-badge.html version=5.0.7 %}
 
 It specifies whether Listgroups are selectable under this Listbox.
 (Similar to above, it can also be specified as a library property, which
@@ -1414,10 +1412,10 @@ will be in effect for the whole application.)
 
 ## org.zkoss.zul.listbox.autoSort
 
-`[default: false]`  
-`[inherit: true]`[^5]
+`[default: false]`  
+`[inherit: true]`[^5]
 
-{% include versionSince\| 5.0.7 %}
+{% include version-badge.html version=5.0.7 %}
 
 Specifies whether to sort the model when the following cases:
 
@@ -1437,8 +1435,8 @@ the value as **ignore.change**.
 
 ## org.zkoss.zul.listbox.rod
 
-`[default: false]`  
-`[inherit: true]`[^6]
+`[default: false]`  
+`[inherit: true]`[^6]
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
@@ -1446,10 +1444,10 @@ Tips](ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_
 
 ## org.zkoss.zul.listbox.preloadSize
 
-`[default: 50]`  
-`[inherit: true]`[^7]
+`[default: 50]`  
+`[inherit: true]`[^7]
 
-{% include versionSince\| 6.0.1 %}
+{% include version-badge.html version=6.0.1 %}
 
 It specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data
@@ -1459,10 +1457,10 @@ and not paging
 
 ## org.zkoss.zul.listbox.initRodSize
 
-`[default: 50]`  
-`[inherit: true]`[^8]
+`[default: 50]`  
+`[inherit: true]`[^8]
 
-{% include versionSince\| 6.0.1 %}
+{% include version-badge.html version=6.0.1 %}
 
 Specifies the number of items rendered when the Listbox first render. It
 is used only if live data
@@ -1472,10 +1470,10 @@ and not paging
 
 ## org.zkoss.zul.listbox.autohidePaging
 
-`[default: true]`  
-`[inherit: true]`[^9]
+`[default: true]`  
+`[inherit: true]`[^9]
 
-{% include versionSince\| 7.0.1 %}
+{% include version-badge.html version=7.0.1 %}
 
 It specifies whether to enable autohide property for internal paging
 component.
@@ -1598,7 +1596,7 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, `[` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, `[` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, `[` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, `[` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
+[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, `[` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, `[` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, `[` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, `[` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
 
 # Version History
 

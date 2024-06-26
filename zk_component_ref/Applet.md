@@ -1,6 +1,6 @@
 
 
-{% include Deprecated_Content %} Removed {% include versionSince\|
+{% include Deprecated_Content.html %} Removed {% include version-badge.html version=
 10.0.0 %}
 
 # Applet
@@ -73,7 +73,7 @@ title="ZKComRef_Applet_Examples.PNG" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

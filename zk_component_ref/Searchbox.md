@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Searchbox</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -43,14 +43,14 @@ ListModel model = new ListModelArray(new String[] {
 - `UP`, `DOWN`, `HOME`, `END`, `PAGE UP` and `PAGE DOWN` to change the
   selection of the item from the list.
 - `ENTER` to confirm the change of selection.
-- {% include versionSince\| 9.5.0 %} `DELETE` or `BACKSPACE` to clear
+- {% include version-badge.html version=9.5.0 %} `DELETE` or `BACKSPACE` to clear
   the selection.
 
 # Properties
 
 ## Autoclose
 
-{% include defaultValue\| false %}
+{% include DefaultValue.md value=false %}
 
 Sets whether to automatically close the list if a user selects any item.
 It means even if the user selects an item, the list still remains open.
@@ -143,7 +143,7 @@ currently selected items first.
 
 Returns all selected items.
 
-{% include CustomItemRendering \|searchbox %}
+{% include   CustomItemRendering.md component=searchbox %}
 
 # Supported Events
 
@@ -201,7 +201,7 @@ sends this event after opening or closing the component.</p></td>
 
 # Supported Children
 
-`* none`
+`* none`
 
 # Version History
 

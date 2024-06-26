@@ -185,7 +185,7 @@ Desktop.getDirectory().
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

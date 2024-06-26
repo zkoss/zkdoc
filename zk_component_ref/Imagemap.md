@@ -77,6 +77,6 @@ statement, then the user gets the result as depicted below.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

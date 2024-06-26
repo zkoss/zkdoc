@@ -66,7 +66,7 @@ by
 <button popup="popup_id, x=50,y=50"/>
 ```
 
-{% include versionSince\| 6.0.1 %} ZK supports the following position
+{% include version-badge.html version=6.0.1 %} ZK supports the following position
 string:
 
 <figure>
@@ -79,7 +79,7 @@ overlap, overlap_end, overlap_before, overlap_after are kept (still
 available) for backward compatibility. They are identical with top_left,
 top_right, bottom_left, and bottom_right, respectively.
 
-`Before 6.0.0`
+`Before 6.0.0`
 
 The 14 possible positions are provided below:
 
@@ -110,7 +110,7 @@ There are several overloading open() methods available, please check
 
 # Toggle Popup
 
-{% include versionSince\| 7.0.0 %} If a popup/context menu is assigned
+{% include version-badge.html version=7.0.0 %} If a popup/context menu is assigned
 to a target component via the popup/context attribute, the popup will
 show up when the user clicks on the target component. Click the target
 component again, the popup will still show up by default. As of 7.0.0,

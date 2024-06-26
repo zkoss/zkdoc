@@ -10,7 +10,7 @@
 - Style Guide: [
   Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
 
-{% include ZK EE %}
+{% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -53,9 +53,9 @@ depend on the browser, and not as expected.
 
 # orient
 
-{% include versionSince\|7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 
-`Default: vertical`
+`Default: vertical`
 
 If you want the portallayout to be displayed as a row-based layout, you
 can specify `orient="horizontal"`.
@@ -94,7 +94,7 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 <td><center>
 <p>onPortalDrop</p>
 </center></td>
-<td><p>{% include versionSince| 9.5.1 %} <strong>Event:</strong>
+<td><p>{% include version-badge.html version=9.5.1 %} <strong>Event:</strong>
 <javadoc>org.zkoss.zkmax.ui.event.PortalDropEvent</javadoc></p>
 <p>Represents an event after a portal is dropped and before a portal is
 moved.</p></td>

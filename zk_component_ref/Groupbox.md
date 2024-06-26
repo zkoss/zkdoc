@@ -167,7 +167,7 @@ If it is an issue, you could use the 3d mold instead.
  </groupbox>
 ```
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The default mold uses the same method as 3d mold to represent a
 groupbox, the limitation is gone.
@@ -261,7 +261,7 @@ title="groupbox_mold_default.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -269,6 +269,6 @@ title="groupbox_mold_default.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -89,7 +89,7 @@ references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_
 
 ## Pre, Hyphen, Maxlength and Multiline
 
-{% include versionSince\|5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 You can control how a label is displayed using the `pre`, `multiline`
 and `maxlength` properties. For example, if you specify `pre` to be
@@ -190,7 +190,7 @@ title="ZKComRef_Label_Text_ZK5.png" />
 </window>
 ```
 
-`[For ZK3 users]`
+`[For ZK3 users]`
 
 This displaying rule is slightly different in ZK3.
 
@@ -330,7 +330,7 @@ only preserves new lines and white space at the beginning of each line.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -338,6 +338,6 @@ only preserves new lines and white space at the beginning of each line.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Cardlayout</javadoc>
 - Style Guide: N/A
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -89,7 +89,7 @@ setting.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

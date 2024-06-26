@@ -7,7 +7,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
 - Style Guide: [
   Group](ZK_Style_Guide/XUL_Component_Specification/Group)
-- {% include ZK PE and EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -118,6 +118,6 @@ the component is opened.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

@@ -7,7 +7,7 @@
   <javadoc directory="jsdoc">zkmax.layout.RowLayout</javadoc>
 - Style Guide: [
   RowLayout](ZK_Style_Guide/XUL_Component_Specification)
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -107,7 +107,7 @@ center](rowlayout-examples.png " center")
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

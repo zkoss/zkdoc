@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Stepbar</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Stepbar</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -119,7 +119,7 @@ client.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

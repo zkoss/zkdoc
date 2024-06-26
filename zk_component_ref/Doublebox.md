@@ -36,7 +36,7 @@ with a formatting string. The default value is `null`.
 <doublebox format="#,##0.##"/>
 ```
 
-` Since 8.5.2`
+` Since 8.5.2`
 
 You can provide a locale to format the number by specify the String
 starts with "locale:"
@@ -114,7 +114,7 @@ for inherited functions.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -122,6 +122,6 @@ for inherited functions.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

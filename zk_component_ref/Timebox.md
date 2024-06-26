@@ -22,7 +22,7 @@ An edit box for holding a time (a java.util.Date Object) , but only Hour
 <timebox cols="11"/>
 ```
 
-{% include IntegrateMomentjs %}
+{% include IntegrateMomentjs.md %}
 
 # Properties
 
@@ -68,7 +68,7 @@ Below is an example of using *a* within the format.
 <timebox cols="8" format="HH:mm:ss"/>
 ```
 
-{% include versionSince\| 5.0.7 %} In addition to specifying the format
+{% include version-badge.html version=5.0.7 %} In addition to specifying the format
 explicitly, you could specify the styling. There are four different
 types of styling: short, medium, long and full (representing the styling
 of java.text.DateFormat). For example, you could specify the styling
@@ -168,7 +168,7 @@ zul.jar.
 </center></td>
 <td><p><img src="timebox_mold_rounded.png"
 title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
-include versionSince| 5.0.0 %}</p></td>
+include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -181,7 +181,7 @@ include versionSince| 5.0.0 %}</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

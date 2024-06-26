@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Cascader</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -36,7 +36,7 @@ data. It accepts a TreeModel.
 Users can select in layers, and the selected items are converted into
 text. (Default: joining by slashes, i.g. "A/B/C")
 
-{% include CustomItemRendering \|cascader %}
+{% include CustomItemRendering.md component=cascader %}
 
 # Properties
 
@@ -54,7 +54,7 @@ is joining all the `toString()` result of items by slashes `/`.
 By implementing your own one, you can generate a custom text that
 represents the selected item.
 
-{% include CustomItemRendering \|cascader %}
+{% include   CustomItemRendering.md component=cascader %}
 
 ## Model
 
@@ -124,6 +124,6 @@ the client.</p></td>
 
 # Supported Children
 
-`* None`
+`* None`
 
 

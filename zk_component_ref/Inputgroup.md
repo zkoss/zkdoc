@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zul.wgt.Inputgroup</javadoc>
 - Style Guide: N/A
 
-{% include versionSince\|9.0.0 %} {% include ZK All %}
+{% include version-badge.html version=9.0.0 %} 
 
 # Employment/Purpose
 

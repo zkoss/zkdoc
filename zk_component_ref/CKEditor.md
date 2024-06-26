@@ -106,7 +106,7 @@ title="ZKCompRef_CKEditor_filebrowser3.png" />
 
 ## Custom File browser
 
-{% include versionSince\| 3.6.0.2 %} If you wish to customize your own
+{% include version-badge.html version=3.6.0.2 %} If you wish to customize your own
 file browser, you can change the location by calling
 CKeditor.setFilebrowserImageUploadUrl(page_url), and refer to [CKEditor
 Developers
@@ -115,7 +115,7 @@ to create your custom file browser.
 
 # File upload
 
-{% include versionSince\| 3.6.0.2 %}
+{% include version-badge.html version=3.6.0.2 %}
 
 This feature is only enabled when you specify
 `filebrowserImageUploadUrl` attribute. ZK CKEditor provides a default
@@ -146,7 +146,7 @@ title="ZKCompRef_CKEditor_fileupload2.png" />
 
 ## Custom File upload handler
 
-{% include versionSince\| 3.6.0.2 %} If you wish to customize your own
+{% include version-badge.html version=3.6.0.2 %} If you wish to customize your own
 file upload handler, you can change the location by calling
 CKeditor.setFileUploadHandlePage(page_url), and refer to [CKEditor
 Developers
@@ -158,7 +158,7 @@ to create your custom file upload handler.
 You need to enable file upload to allow copying a local image from your
 machine to CKEditor.
 
-{% include versionSince \| 4.17.1.0 %} If file upload is enabled,
+{% include version-badge.html version=4.17.1.0 %} If file upload is enabled,
 pasting a local image will upload the image to the server. If it's
 disabled, pasting a local image will insert an image with [data
 URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
@@ -212,9 +212,9 @@ zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/we
 
 ## Resizable attribute and Sizing
 
-{% include versionSince\| 4.16.1.1 %}
+{% include version-badge.html version=4.16.1.1 %}
 
-`default: true`
+`default: true`
 
 The ZK CKEditor container can be resizable with the resizable attribute
 since 4.16.1.1.
@@ -261,9 +261,9 @@ You can make CKEditor read-only with its config.
     Then provide a **config.js** mentioned at [ Custom
     Configuration](#Custom_Configuration).
 
-{% include Notice\|text=Since ZK Ckeditor is a Java wrapper of js
+{% include Notice.html text="Since ZK Ckeditor is a Java wrapper of js
 CKEditor, the installed plugins just work at the client side and cannot
-be controlled in Java by default. %}
+be controlled in Java by default." %}
 
 ## Example
 
@@ -685,11 +685,11 @@ event, because it doesn't provide a save button.
 
 # Work with ZK6 MVVM
 
-{% include Notice\|text=Since Ckeditor **3.6.0.1**, we have added data
+{% include Notice.html text="Since Ckeditor **3.6.0.1**, we have added data
 binding annotation into the lang-addon.xml file, so you no more need to
-add the settings below. %}
+add the settings below." %}
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 For work with ZK6 MVVM, it is required to create an addon XML and add
 the server annotation as follows:

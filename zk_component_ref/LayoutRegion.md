@@ -70,6 +70,6 @@ application.</p></td>
 | Version | Date       | Content                                                                                           |
 |---------|------------|---------------------------------------------------------------------------------------------------|
 | 8.0.3   | 2016/04/22 | [ZK-3166](http://tracker.zkoss.org/browse/ZK-3166): BorderLayout slide action server-side support |
-|         |            |                                                                                                   |
+|         |            |                                                                                                   |
 
 

@@ -43,8 +43,8 @@ title="ZKComRef_Span_Example.png" />
 </thead>
 <tbody>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 </tbody>
 </table>
@@ -60,7 +60,7 @@ title="ZKComRef_Span_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -68,6 +68,6 @@ title="ZKComRef_Span_Example.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

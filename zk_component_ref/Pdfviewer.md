@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
 
-{% include ZK PE %} {% include versionSince\|9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -52,7 +52,7 @@ is at the top. You can use CSS to do more tweaks.
 
 # Zoom to Fit Page Width / Fit Page Height
 
-{% include versionSince\|9.6.0 %}
+{% include version-badge.html version=9.6.0 %}
 
 You can call `setZoom("fit-page-width")` or `setZoom("fit-page-height")`
 now.

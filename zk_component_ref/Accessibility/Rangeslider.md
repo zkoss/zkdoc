@@ -1,6 +1,6 @@
  {% include
-versionSince\|9.5.0 %} {% include ZK EE %} {% include
-ZKComponentReferenceAccessibilityNamingReference %}
+version-badge.html version=9.5.0 %} {% include edition-availability.html edition=pe %} {% include
+ZKComponentReferenceAccessibilityNamingReference.md %}
 
 <table>
 <thead>

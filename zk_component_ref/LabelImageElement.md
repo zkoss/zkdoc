@@ -13,7 +13,7 @@ An HTML element with a label and an image.
 
 # Preload Image
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The feature is applied to all of the LabelImageElement and Image
 components.
@@ -43,7 +43,7 @@ As you can see, the *custom-attributes* will be checked recursively (see
 also
 <javadoc method="getAttribute(java.lang.String,boolean)">org.zkoss.zk.ui.ext.Scope</javadoc>).
 
-{% include versionSince\| 6.5.2 %}
+{% include version-badge.html version=6.5.2 %}
 
 The feature can also applied from zk.xml as a library property.
 

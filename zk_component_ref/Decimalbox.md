@@ -37,7 +37,7 @@ with a formatting string. The default value is `null`.
 <decimalbox format="#,##0.##"/>
 ```
 
-{% include versionSince\| 8.5.2 %} You can provide a locale to format
+{% include version-badge.html version=8.5.2 %} You can provide a locale to format
 the number by specifying a value starting with "locale:", e.g. [Indian
 numbering
 system](https://en.wikipedia.org/wiki/Indian_numbering_system):
@@ -118,7 +118,7 @@ for inherited functions.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -126,6 +126,6 @@ for inherited functions.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

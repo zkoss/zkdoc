@@ -67,7 +67,7 @@ title="ZKComRef_Idspace_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -76,6 +76,6 @@ title="ZKComRef_Idspace_Example.png" />
 | Version | Date       | Content                     |
 |---------|------------|-----------------------------|
 | 8.0.3   | 2016/09/21 | Add the new Nodom component |
-|         |            |                             |
+|         |            |                             |
 
 

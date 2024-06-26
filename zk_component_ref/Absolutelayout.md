@@ -76,7 +76,7 @@ title="ZKComRef_Absolutelayout_Example.png" />
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

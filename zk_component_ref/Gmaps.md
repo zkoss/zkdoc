@@ -1,5 +1,3 @@
-
-
 # Gmaps
 
 - Demonstration:
@@ -8,9 +6,7 @@
 - JavaScript API: N/A
 - Style Guide: N/A
 
-Check [our Maven
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/)
-for the latest version.
+Check [our Maven repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for the latest version.
 
 # Employment/Purpose
 
@@ -31,7 +27,7 @@ very special places.
 
 ## Configure in Application Scope
 
-{% include versionSince \|4.0.0 %}
+{% include version-badge.html version=4.0.0 %}
 
 In zk.xml
 
@@ -59,10 +55,10 @@ See [Example](#Example) below.
 
 ## Client ID
 
-You can specify a client-id at `client` attribute: \<syntaxhighlight
-lang='xml\> <gmaps client="YOUR_CLIENT_ID"/>
-
-</syntaxhighlight>
+You can specify a client-id at `client` attribute: \
+```xml
+<gmaps client="YOUR_CLIENT_ID"/>
+```
 
 # Example
 
@@ -106,7 +102,7 @@ title="ZKComRef_Gmaps_Example.png" />
 
 ## Protocol
 
-{% include versionSince\| 3.0.0 %}
+{% include version-badge.html version=3.0.0 %}
 
 Specify which protocol to load the Maps API. Currently it supports
 `http` for insecure connections and `https` for secure connections.
@@ -209,15 +205,13 @@ MapZoomEvent</a></p>
 **3.0.4 already includes the `addon.xml` below**, you don't need to add
 it manually.
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 For work with ZK6 MVVM, it is required to create an addon xml and add
 the server annotation as follows:
 
-( You can download the sample project
-[https://zkgmapsz.googlecode.com/svn/trunk/gmapszTest
-here](https://zkgmapsz.googlecode.com/svn/trunk/gmapszTest_here)
-)
+You can download the sample project
+[https://zkgmapsz.googlecode.com/svn/trunk/gmapszTest here](https://zkgmapsz.googlecode.com/svn/trunk/gmapszTest_here)
 
 WEB-INF/gmapsz-bind-addon.xml
 
@@ -375,7 +369,7 @@ then add it into WEB-INF/zk.xml
 
 # Supported Children
 
-`*`[` Ginfo`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Ginfo)`, `[` Gmarker`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gmarker)`,`[` Gpolyline`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline)`,`[` Gpolygon`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolygon)`,`[` Gimage`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gimage)`,`[` Gscreen`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gscreen)`,`[` Gcircle`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gcircle)
+`*`[` Ginfo`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Ginfo)`, `[` Gmarker`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gmarker)`,`[` Gpolyline`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline)`,`[` Gpolygon`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolygon)`,`[` Gimage`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gimage)`,`[` Gscreen`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gscreen)`,`[` Gcircle`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gcircle)
 
 # Trouble Shooting
 
@@ -383,7 +377,7 @@ Starting from June 2016, an API key is required to use Google Maps APIs.
 If you are seeing the following error in your JS console, please obtain
 an API key from Google.
 
-`   Google Maps API error: MissingKeyMapError`
+`   Google Maps API error: MissingKeyMapError`
 
 For more information please refer to
 \[<https://developers.google.com/maps/pricing-and-plans/standard-plan-2016-update?utm_source=geoblog&utm_medium=social&utm_campaign=2016-geo-na-website-gmedia-blogs-us-blogPost&utm_content=TBC>\|

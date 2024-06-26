@@ -58,7 +58,7 @@ title="ZKComRef_Vbox_Simple_Example.PNG" />
 
 ## Align and Pack
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 <figure>
 <img src="ZKComRef_Vbox_Simple_Example_align_pack.PNG"
@@ -101,7 +101,7 @@ title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
 
 # Cell Component
 
-{% include versionSince\| 5.0.0 %} In ZK5, we have introduced a new
+{% include version-badge.html version=5.0.0 %} In ZK5, we have introduced a new
 component named Cell which can be embedded into a Grid or Box (Hbox and
 Vbox) to fully control the layout and the style. You can now use the
 rowspan or the colspan property to layout your Grid, for example a
@@ -167,7 +167,7 @@ You will see the Box width exceed 200px. Also check the
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -175,6 +175,6 @@ You will see the Box width exceed 200px. Also check the
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

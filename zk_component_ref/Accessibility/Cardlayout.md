@@ -1,6 +1,6 @@
  {% include
-versionSince\|9.5.0 %} {% include ZK EE %} {% include
-ZKComponentReferenceAccessibilityNamingReference %}
+version-badge.html version=9.5.0 %} {% include edition-availability.html edition=pe %} {% include
+ZKComponentReferenceAccessibilityNamingReference.md %}
 
 Cardlayout is often used along with other components to achieve the
 carousel effect. If you are using cardlayout for carousel, check here

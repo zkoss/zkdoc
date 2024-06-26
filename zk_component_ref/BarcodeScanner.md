@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barscanner.Barcodescanner</javadoc>
 
-{% include versionSince\| 8.6.0 %} {% include ZK EE %}
+{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition=pe %}
 
 # Browser Support
 
@@ -153,13 +153,13 @@ that how we inject the quagga library object into the widget:
     ...
     zk.afterLoad('zkmax.barscanner', function () {
         zkmax.barscanner.Barcodescanner.registerLibrary({
-            create: jq.extend(true, {}, Quagga), //the reader
-            name: "QUAGGA",
-            init: zkmax.barscanner.Barcodescanner._quaggaInit,  //@param(wgt, video, canvas)
-            open: zkmax.barscanner.Barcodescanner._quaggaOpen, //@param(wgt, video, canvas)
-            decode: zkmax.barscanner.Barcodescanner._quaggaDecode,//@param(wgt, reader) 
-            setTypes: zkmax.barscanner.Barcodescanner._quaggaSetType, //@param()
-            other: null
+            create: jq.extend(true, {}, Quagga), //the reader
+            name: "QUAGGA",
+            init: zkmax.barscanner.Barcodescanner._quaggaInit,  //@param(wgt, video, canvas)
+            open: zkmax.barscanner.Barcodescanner._quaggaOpen, //@param(wgt, video, canvas)
+            decode: zkmax.barscanner.Barcodescanner._quaggaDecode,//@param(wgt, reader) 
+            setTypes: zkmax.barscanner.Barcodescanner._quaggaSetType, //@param()
+            other: null
          }, 'library-name', ['type1', 'type2', ...]);
     });
     ...
@@ -317,7 +317,7 @@ barcode scanner detect a barcode message.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

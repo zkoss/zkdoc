@@ -9,7 +9,7 @@
 - Style Guide: [
   Colorbox](ZK_Style_Guide/XUL_Component_Specification/Colorbox)
 
-{% include ZK PE %}
+{% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 
@@ -29,7 +29,7 @@ title="ZKComRef_Colorbox_Examples.PNG" />
 
 # Key control
 
-{% include versionSince\| 6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 Pressing left, right, up, or down arrow keys to change the selected
 color.
@@ -95,7 +95,7 @@ application with the onChange event if its content is changed</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -103,6 +103,6 @@ application with the onChange event if its content is changed</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

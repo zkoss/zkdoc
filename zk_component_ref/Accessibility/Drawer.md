@@ -1,7 +1,7 @@
  {% include
-versionSince\|9.5.0 %} {% include ZK EE %}
+version-badge.html version=9.5.0 %} {% include edition-availability.html edition=pe %}
 
-{% include ZKComponentReferenceAccessibilityNamingReference %}
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Keyboard Support
 

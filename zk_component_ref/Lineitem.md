@@ -6,9 +6,9 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Lineitem
   </javadoc>
 
-`{% include ZK EE %}`
+{% include edition-availability.html edition=ee %}
 
-{% include versionSince\| 9.0.0 %}
+{% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -81,7 +81,7 @@ CSS alone).
 
 # Supported Children
 
-`* ALL`
+`* ALL`
 
 # Version History
 

@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zul.Rating</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Rating</javadoc>
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
@@ -111,7 +111,7 @@ rated.</p></td>
 
 # Supported Children
 
-`* none`
+`* none`
 
 # Version History
 
@@ -119,6 +119,6 @@ rated.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

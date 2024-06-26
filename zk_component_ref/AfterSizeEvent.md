@@ -4,7 +4,7 @@
 
 - JavaDoc:<javadoc>org.zkoss.zk.ui.event.AfterSizeEvent</javadoc>
 
-{% include versionSince \| 6.5.2 %}
+{% include version-badge.html version=6.5.2 %}
 
 # Employment/Purpose
 

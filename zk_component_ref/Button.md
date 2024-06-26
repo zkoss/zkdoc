@@ -279,7 +279,7 @@ Your application won't be notified when users click the button.
 
 ## Type
 
-{% include versionSince\| 5.0.4 %}
+{% include version-badge.html version=5.0.4 %}
 
 <javadoc method="setType(java.lang.String)">org.zkoss.zul.Button</javadoc>
 sets the button's type. It is designed to work with the HTML <code>
@@ -333,17 +333,17 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
   kilobytes, or a negative value if no limit.
 - `native`: treating the uploaded file(s) as binary, i.e., not to
   convert it to image, audio, or text files.
-- `multiple`: {% include versionSince\| 6.0.0 %} treating the file
+- `multiple`: {% include version-badge.html version=6.0.0 %} treating the file
   chooser allows multiple files to upload, the setting only works with
   HTML5-supported browsers
-- `accept`: {% include versionSince\| 7.0.0 %} specifies the MIME types
+- `accept`: {% include version-badge.html version=7.0.0 %} specifies the MIME types
   of files that the server accepts, the setting only works with
   HTML5-supported browsers. [MIME type
   list](http://www.iana.org/assignments/media-types/media-types.xhtml).
 
 ### Customize Upload Size Exceeding Message
 
-{% include versionSince\| 8.0.0 %} Please refer to [ZK Developer's
+{% include version-badge.html version=8.0.0 %} Please refer to [ZK Developer's
 Reference/Internationalization](ZK_Developer%27s_Reference/Internationalization/Warning_and_Error_Messages#Change_particular_message).
 
 For Example, (in WEB-INF/zk-label.properties)

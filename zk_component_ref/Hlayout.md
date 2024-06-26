@@ -53,7 +53,7 @@ allowed to modify it if you like:
 
 # Vertical Alignment
 
-{% include versionSince\|5.0.5 %} By default, the vertical alignment is
+{% include version-badge.html version=5.0.5 %} By default, the vertical alignment is
 *middle* (aka., *center*). You can change it to *top* by specifying
 `sclass="z-valign-top"`, and to *bottom* by `sclass="z-valign-bottom"`.
 For example,
@@ -72,7 +72,7 @@ For example,
 </vlayout>
 ```
 
-{% include versionSince\|6.0.0 %}
+{% include version-badge.html version=6.0.0 %}
 
 The default value of alignment has been changed to *top*. You can change
 it to *middle* (aka., *center*) by specifying `valign="middle"`, and
@@ -142,7 +142,7 @@ alignment explicitly in the inner hlayout if needed. For example,
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

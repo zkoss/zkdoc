@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Drawer</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Drawer</javadoc>
 
-{% include ZK EE %} {% include versionSince\| 9.0.0 %}
+{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 
@@ -85,7 +85,7 @@ drawer to close it.
 
 ## Position
 
-{% include defaultValue\| right %}
+{% include DefaultValue.md value=right %}
 
 Sets the position of the drawer. Valid values are `left`, `right`, `top`
 and `bottom`.
@@ -133,7 +133,7 @@ component.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

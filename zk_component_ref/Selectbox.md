@@ -8,7 +8,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Selectbox</javadoc>
 - Style Guide: N/A
 
-{% include ZK All %} {% include versionSince \| 6.0.0 %}
+ {% include version-badge.html version=6.0.0 %}
 
 # Employment/Purpose
 
@@ -90,7 +90,7 @@ Here is the MVVM way:
     </div>
 ```
 
-{% include CustomItemRendering \|selectbox %}
+{% include   CustomItemRendering.md component=selectbox %}
 
 # Supported Events
 
@@ -128,7 +128,7 @@ the user has selected a new item in the selectbox.</p></td>
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

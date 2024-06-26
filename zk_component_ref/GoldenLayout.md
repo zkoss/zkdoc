@@ -2,7 +2,7 @@
 
 # GoldenLayout
 
-{% include versionSince \| 8.6.0 %} {% include ZK EE %}
+{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition=pe %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>
 - JavaScript API:
@@ -224,6 +224,6 @@ title="ZKCompRef_GoldenLayout_region_stack.png" />
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

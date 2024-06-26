@@ -27,54 +27,54 @@ Here is the attribute list used in lang-addon.xml:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p> ACCESS</p></td>
-<td><p>  Access privilege. The value can be "both", "save", or
+<td><p> ACCESS</p></td>
+<td><p>  Access privilege. The value can be "both", "save", or
 "load"(<strong>default value</strong>); default value is used if not
 specify.</p></td>
 </tr>
 <tr class="even">
-<td><p> CONVERTER</p></td>
-<td><p>  System converter for special properties.
+<td><p> CONVERTER</p></td>
+<td><p>  System converter for special properties.
 (<strong>optional</strong>) e.g. SelectedItem in listbox. see <javadoc>
 org.zkoss.bind.converter.sys.ListboxSelectedItemConverter
 </javadoc></p></td>
 </tr>
 <tr class="odd">
-<td><p> VALIDATOR</p></td>
-<td><p>  System validator for special properties.
+<td><p> VALIDATOR</p></td>
+<td><p>  System validator for special properties.
 (<strong>optional</strong>)</p></td>
 </tr>
 <tr class="even">
-<td><p> SAVE_EVENT</p></td>
-<td><p>  Save trigger event. It takes effect only when ACCESS attribute
+<td><p> SAVE_EVENT</p></td>
+<td><p>  Save trigger event. It takes effect only when ACCESS attribute
 is "both" or "save".</p></td>
 </tr>
 <tr class="odd">
-<td><p> LOAD_EVENT</p></td>
-<td><p>  Load trigger event; It takes effect only when ACCESS attribute
+<td><p> LOAD_EVENT</p></td>
+<td><p>  Load trigger event; It takes effect only when ACCESS attribute
 is "both" or "load".</p></td>
 </tr>
 <tr class="even">
-<td><p> LOAD_REPLACEMENT</p></td>
-<td><p>  The replacement attribute for loading. It's used when there is
+<td><p> LOAD_REPLACEMENT</p></td>
+<td><p>  The replacement attribute for loading. It's used when there is
 a issue to load to original attribute.; e.g. value of textbox, it loads
 to "rawValue".</p></td>
 </tr>
 <tr class="odd">
-<td><p> LOAD_TYPE</p></td>
-<td><p>  Type of attribute for loading; e.g. rawValue of textbox is
+<td><p> LOAD_TYPE</p></td>
+<td><p>  Type of attribute for loading; e.g. rawValue of textbox is
 java.lang.String.</p></td>
 </tr>
 <tr class="even">
-<td><p> SAVE_REPLACEMENT</p></td>
-<td><p>  The replacement attribute for saving. It's used when there is a
+<td><p> SAVE_REPLACEMENT</p></td>
+<td><p>  The replacement attribute for saving. It's used when there is a
 issue to save to original attribute.; e.g. selectedItem of selectbox, it
 save the value selecteIndex via converter to the bean. (selectedItem is
 not existed in selectbox).</p></td>
 </tr>
 <tr class="odd">
-<td><p> RENDERER</p></td>
-<td><p>  A special renderer for binding</p></td>
+<td><p> RENDERER</p></td>
+<td><p>  A special renderer for binding</p></td>
 </tr>
 <tr class="even">
 <td></td>
@@ -194,6 +194,6 @@ Let's take a look at some examples.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

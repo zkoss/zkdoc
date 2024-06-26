@@ -94,7 +94,7 @@ The code to register an onClick event is shown below:
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 
@@ -102,6 +102,6 @@ The code to register an onClick event is shown below:
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 

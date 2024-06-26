@@ -107,7 +107,7 @@ deliberately passing the information through session.
 
 # Communication among iFrames without Server Push
 
-{% include versionSince\| 5.0.4 %} {% include ZK_EE %}
+{% include version-badge.html version=5.0.4 %} {% include edition-availability.html edition=ee %}
 
 If your application contains multiple desktops due to iframes in a
 portal layout it is now possible to communicate between these instances
@@ -213,7 +213,7 @@ to.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 
 

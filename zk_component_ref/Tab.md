@@ -40,8 +40,8 @@ title="ZKComRef_Containers_Tab.PNG" />
 ## Caption
 
 A tab might have a caption, which is specified by declaring a child
-component called caption. {% include ZK EE %} {% include
-versionSince\|6.5.0 %}
+component called caption. {% include edition-availability.html edition=pe %} {% include
+version-badge.html version=6.5.0 %}
 ![](ZKComRef_Containers_Tab_Caption.PNG "ZKComRef_Containers_Tab_Caption.PNG")
 
 ``` xml
@@ -74,7 +74,7 @@ the corresponding tab panel.
 
 ### Dynamically-created Tab
 
-`{% include versionSince| 7.0.0 %}`
+`{% include version-badge.html version=7.0.0 %}`
 
 If you assign a model to a Tabbox, it will do nothing for an onClose
 event. Therefore, developers have to listen an onClose event to remove

@@ -8,7 +8,7 @@
 - JavaScript API:
   [Navseparator](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navseparator.html)
 - Style Guide:
-- {% include ZK EE %}
+- {% include edition-availability.html edition=pe %}
 
 # Employment/Purpose
 

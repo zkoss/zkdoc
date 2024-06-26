@@ -82,7 +82,7 @@ of how to do this.
 </zk>
 ```
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 # Inherited Functions
 
@@ -122,7 +122,7 @@ for inherited functions.
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

@@ -40,7 +40,7 @@ title="ZKComRef_Checkbox_Example.png" />
 
 # Mold
 
-{% include versionSince\| 8.6.0 %} There are two additional molds for
+{% include version-badge.html version=8.6.0 %} There are two additional molds for
 Checkbox: switch and toggle, you can customize the mold in css by
 overriding class.
 
@@ -95,7 +95,7 @@ Customized in CSS:
 
 ## tristate
 
-{% include versionSince\| 9.0.0 %} Allowing users to set the
+{% include version-badge.html version=9.0.0 %} Allowing users to set the
 indeterminate state, in addition to the checked and unchecked states. In
 tristate mold, when users click on the checkbox, it will switch between
 checked, unchecked and indeterminate states. This is different from the
@@ -116,7 +116,7 @@ State state = checkbox.getState() // CHECKED, UNCHECKED or INDETERMINATE
 
 # Indeterminate
 
-{% include versionSince\| 8.6.0 %}
+{% include version-badge.html version=8.6.0 %}
 
 Indeterminate is a state that is neither checked nor unchecked.
 
@@ -183,6 +183,6 @@ component is checked or unchecked.</p></td>
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 
 
