@@ -98,4 +98,5 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 ## Sections to remove
 * "Version History" section. Using `# Version History(.|\n)*` to find and remove it.
 * `__TOC__`
+* replace `versionsince` with `version-badge.html version=`
  
