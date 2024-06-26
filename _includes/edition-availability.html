@@ -1,0 +1,6 @@
+<div class="edition-availability">
+    <div class="option ce{% if include.edition == 'ee' %}{% elsif include.edition == 'pe' %} selected{% endif %}">CE
+    </div>
+    <div class="option pe{% if include.edition == 'pe' %} selected{% endif %}">PE</div>
+    <div class="option ee{% if include.edition == 'ee' or include.edition == 'pe' %} selected{% endif %}">EE</div>
+</div>
