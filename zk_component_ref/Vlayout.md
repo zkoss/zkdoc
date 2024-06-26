@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Vlayout
 
@@ -114,10 +114,10 @@ The default align is left. You can change by specifying a CSS rule at
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content             |
 |---------|--------------|---------------------|
 | 5.0.4   | August, 2010 | new added component |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 The following components are not WCAG-compliant, mostly due to the
 underlying 3rd party library; or the natural of the technologies being
@@ -23,4 +23,4 @@ smoothly.
 |---------|-------------|---------|
 | 9.5.0   | August 2020 |         |
 
-{% include ZKComponentReferencePageFooter %}
+

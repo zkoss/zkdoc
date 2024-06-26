@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 {% include versionSince\| 6.5.0 %}
 
@@ -36,4 +36,4 @@ as follows:
 <?page viewport="width=device-width, initial-scale=1.0"?>
 ```
 
-{% include ZKComponentReferencePageFooter %}
+

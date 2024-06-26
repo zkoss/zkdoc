@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # ListModel
 
@@ -55,4 +55,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

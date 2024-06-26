@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # GoldenLayout
 
@@ -220,10 +220,10 @@ title="ZKCompRef_GoldenLayout_region_stack.png" />
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

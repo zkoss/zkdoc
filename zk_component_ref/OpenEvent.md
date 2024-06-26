@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # OpenEvent
 
@@ -63,4 +63,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

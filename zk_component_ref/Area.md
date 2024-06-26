@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Area
 
@@ -106,10 +106,10 @@ first one takes precedence.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Textbox
 
@@ -169,4 +169,4 @@ IE.</p></td>
 </tbody>
 </table>
 
-{% include ZKComponentReferencePageFooter %}
+

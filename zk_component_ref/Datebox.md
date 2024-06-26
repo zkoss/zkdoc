@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Datebox
 
@@ -441,7 +441,7 @@ include versionSince| 5.0.0 %}</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -452,4 +452,4 @@ include versionSince| 5.0.0 %}</p></td>
 | 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                        |
 | 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox.                                                                                                                                                                    |
 
-{% include ZKComponentReferencePageFooter %}
+

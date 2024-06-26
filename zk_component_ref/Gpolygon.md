@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Gpolygon
 
@@ -76,10 +76,10 @@ Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyli
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

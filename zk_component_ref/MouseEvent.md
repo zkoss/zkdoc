@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # MouseEvent
 
@@ -54,4 +54,4 @@ N/A
 |---------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.4   | August 2010 | <javadoc method="getAreaComponent()">org.zkoss.zk.ui.event.MouseEvent</javadoc> is introduced to simplify the retrieval of the associated component (usually <javadoc>org.zkoss.zul.Area</javadoc>). |
 
-{% include ZKComponentReferencePageFooter %}
+

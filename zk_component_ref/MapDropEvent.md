@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # MapDropEvent
 
@@ -54,4 +54,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

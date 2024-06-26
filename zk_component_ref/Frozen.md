@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Frozen
 
@@ -133,10 +133,10 @@ Make columns frozen at the right-hand side.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

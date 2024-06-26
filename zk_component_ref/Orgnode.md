@@ -69,10 +69,10 @@ components in it, such as label, image, textbox etc.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Radiogroup
 
@@ -211,10 +211,10 @@ under the radiogroup is checked.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date        | Content                                                            |
 |---------|-------------|--------------------------------------------------------------------|
 | 5.0.4   | August 2010 | Allow a radio component associated with a non-ancestor radiogroup. |
 
-{% include ZKComponentReferencePageFooter %}
+

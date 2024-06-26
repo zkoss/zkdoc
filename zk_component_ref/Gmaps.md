@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Gmaps
 
@@ -394,4 +394,4 @@ include Google Maps inside a ZK application easily. Google Maps itself
 is a 3rd party library and is licensed under its own terms and
 conditions.
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Intbox
 
@@ -116,4 +116,4 @@ for inherited functions.
 | 3.6     | Leading zero in Intbox                  | [<http://www.zkoss.org/forum/listComment/10271>](http://www.zkoss.org/forum/listComment/10271) |
 | 3.6     | Constraint Intbox to accept only digits | [<http://www.zkoss.org/forum/listComment/4603>](http://www.zkoss.org/forum/listComment/4603)   |
 
-{% include ZKComponentReferencePageFooter %}
+

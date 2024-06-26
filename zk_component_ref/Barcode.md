@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Barcode
 
@@ -208,10 +208,10 @@ WEB-INF/lang-addon.xml
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date        | Content                                            |
 |---------|-------------|----------------------------------------------------|
 | 8.6.0   | Apirl, 2018 | <javadoc>org.zkoss.zkmax.barcode.Barcode</javadoc> |
 
-{% include ZKComponentReferencePageFooter %}
+

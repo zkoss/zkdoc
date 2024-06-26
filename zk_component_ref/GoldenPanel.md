@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # GoldenPanel
 
@@ -155,10 +155,10 @@ minimized this GoldenPanel.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

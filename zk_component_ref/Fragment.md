@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Fragment
 
@@ -338,11 +338,11 @@ recovery.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date       | Content                        |
 |---------|------------|--------------------------------|
 | 8.5     | 2017/09/21 | Add the new Fragment component |
 |         |            |                                |
 
-{% include ZKComponentReferencePageFooter %}
+

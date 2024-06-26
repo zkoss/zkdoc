@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Portalchildren
 
@@ -165,10 +165,10 @@ Meaningful only if frame design is applied.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content                                                                                            |
 |---------|----------|----------------------------------------------------------------------------------------------------|
 | 9.0.0   | Nov 2019 | [ZK-4398](https://tracker.zkoss.org/browse/ZK-4398): Provide PortalChildren title and frame design |
 
-{% include ZKComponentReferencePageFooter %}
+

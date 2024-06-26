@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 This section describes how to use the [XHTML component
 set](ZUML_Reference/ZUML/Languages/XHTML) (i.e., XHTML
@@ -21,6 +21,6 @@ tags directly in a ZUML document. In most cases, it is not the best
 approach. For information please refer to [ZK Developer's Reference:
 HTML tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags).
 
-{% include ZKComponentReferenceHeadingToc %}
 
-{% include ZKComponentReferencePageFooter %}
+
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Cardlayout
 
@@ -23,4 +23,4 @@ title="Cardlayout_Tablet_Example.png" />
 |---------|--------------|---------|
 | 6.5.0   | August, 2012 |         |
 
-{% include ZKComponentReferencePageFooter %}
+

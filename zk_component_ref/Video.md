@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Video
 
@@ -243,11 +243,11 @@ when invoking play(), stop() or pause().</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                           |
 |---------|----------------|-----------------------------------------------------------------------------------|
 | 8.6.0   | May 2018       | [ZK-3845](https://tracker.zkoss.org/browse/ZK-3845): Provide a video component    |
 | 9.5.0   | September 2020 | [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # UploadEvent
 
@@ -53,4 +53,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Camera
 
@@ -322,4 +322,4 @@ camera is unavailable after requesting media devices from user.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Chosenbox
 
@@ -268,11 +268,11 @@ selected tag.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date          | Content                         |
 |---------|---------------|---------------------------------|
 | 6.0.1   | April 3, 2012 | Add the new Chosenbox component |
 | 8.0.2   | May 24, 2016  | Add the new Event - onItemClick |
 
-{% include ZKComponentReferencePageFooter %}
+

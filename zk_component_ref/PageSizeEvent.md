@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # PageSizeEvent
 
@@ -48,4 +48,4 @@ paginal (such as `Paging`).
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

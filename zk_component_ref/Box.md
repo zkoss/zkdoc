@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Box
 
@@ -297,10 +297,10 @@ zul.jar.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                     |
 |---------|--------------|-------------------------------------------------------------|
 | 5.0.4   | August, 2010 | Add a sizedByContent method for splitter to resize smoothly |
 
-{% include ZKComponentReferencePageFooter %}
+

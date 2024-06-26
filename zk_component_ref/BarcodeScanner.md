@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Barcodescanner
 
@@ -321,11 +321,11 @@ barcode scanner detect a barcode message.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date      | Content                                                                                                         |
 |---------|-----------|-----------------------------------------------------------------------------------------------------------------|
 | 8.6.0   | May, 2018 | [ZK-3923: Provide a Barcode Scanner](http://tracker.zkoss.org/browse/ZK-3923)                                   |
 | 8.6.0   | Oct 2018  | [ZK-4095: Add a false positive check threshold on the barcode scanner](http://tracker.zkoss.org/browse/ZK-4095) |
 
-{% include ZKComponentReferencePageFooter %}
+

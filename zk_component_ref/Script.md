@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Script
 
@@ -108,4 +108,4 @@ global variables and functions as follows:
 |---------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0     | Overview and Tutorial | [Client Side Programming](Small_Talks/2010/April/Client_Side_Programming) [ZK Client-side Reference: General Control](ZK_Client-side_Reference/General_Control) |
 
-{% include ZKComponentReferencePageFooter %}
+

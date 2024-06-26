@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Calendar
 
@@ -143,7 +143,7 @@ EE]</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -152,4 +152,4 @@ EE]</p></td>
 | 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](http://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                         |
 
-{% include ZKComponentReferencePageFooter %}
+

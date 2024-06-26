@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Footer Element
 
@@ -50,4 +50,4 @@ N/A
 |---------|------------|---------------------|
 | 5.0.4   | July, 2010 | new added component |
 
-{% include ZKComponentReferencePageFooter %}
+

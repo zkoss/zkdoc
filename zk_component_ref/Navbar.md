@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Navbar
 
@@ -185,10 +185,10 @@ the user has selected a navitem in the navbar.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                          |
 |---------|--------------|--------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html) was introduced. |
 
-{% include ZKComponentReferencePageFooter %}
+

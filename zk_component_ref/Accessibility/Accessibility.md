@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 {% include versionSince\| 9.5.0 %}
 
@@ -12,6 +12,6 @@ Reference/Accessibility](ZK_Developer's_Reference/Accessibility).
 {% include ZK EE %} Note: the following subsections are only applied for
 ZK EE version only.
 
-{% include ZKComponentReferenceHeadingToc %}
 
-{% include ZKComponentReferencePageFooter %}
+
+

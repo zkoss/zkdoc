@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Menupopup
 
@@ -134,11 +134,11 @@ The `setActive` will not cause a `menupopup` to be opened. An explicit
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content                                                                                                 |
 |---------|----------|---------------------------------------------------------------------------------------------------------|
 | 7.0.1   | Dec 2013 | [Menupopup support toggle type](http://tracker.zkoss.org/browse/ZK-2049)                                |
 | 8.6.0   | Oct 2018 | [ZK-3551: Menupopup active/highlight position from serverside](http://tracker.zkoss.org/browse/ZK-3551) |
 
-{% include ZKComponentReferencePageFooter %}
+

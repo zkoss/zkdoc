@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Toolbar
 
@@ -163,4 +163,4 @@ footer of a panel.
 
 `*ALL`
 
-{% include ZKComponentReferencePageFooter %}
+

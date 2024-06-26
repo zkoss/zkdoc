@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Sliderbuttons
 
@@ -70,4 +70,4 @@ user.</p></td>
 
 `*None`
 
-{% include ZKComponentReferencePageFooter %}
+

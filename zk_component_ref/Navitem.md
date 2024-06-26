@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Navitem
 
@@ -145,10 +145,10 @@ present more details of `Navitem`.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                            |
 |---------|--------------|----------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html) was introduced. |
 
-{% include ZKComponentReferencePageFooter %}
+

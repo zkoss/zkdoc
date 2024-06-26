@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Pdfviewer
 
@@ -153,4 +153,4 @@ has changed the rotation angle.</p></td>
 | 9.0.0   | October 2019 | [ZK-4395](https://tracker.zkoss.org/browse/ZK-4395): Provide a pdfviewer component                                 |
 | 9.6.0   | June 2021    | [ZK-4917](https://tracker.zkoss.org/browse/ZK-4917): set zoom level with fit-page-width or fit-page-height in Java |
 
-{% include ZKComponentReferencePageFooter %}
+

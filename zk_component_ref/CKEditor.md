@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # ZK CKEditor
 
@@ -793,4 +793,4 @@ the CKEditor component has been clicked by the user.</p></td>
 
 `*NONE`
 
-{% include ZKComponentReferencePageFooter %}
+

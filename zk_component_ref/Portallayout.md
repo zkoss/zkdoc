@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Portallayout
 
@@ -124,4 +124,4 @@ an event caused by a portal being moved.</p></td>
 | 7.0.0   | October, 2013  | [Portallayout supports row based orientation](http://tracker.zkoss.org/browse/ZK-1687)                                             |
 | 9.5.1   | November, 2020 | [Kanban missing options to listen to portallayout onPortalMove without affecting the UI](https://tracker.zkoss.org/browse/ZK-4423) |
 
-{% include ZKComponentReferencePageFooter %}
+

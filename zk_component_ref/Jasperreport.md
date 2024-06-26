@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Jasperreport
 
@@ -212,4 +212,4 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 | 5.0.1   | March 2010                                                               | Support Hibernate and SQL connections |
 | 5.0.8   | Upgrade JaserReport version to 4.0 and support new JasperReport exporter |                                       |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 A XHTML component generates attributes directly to native HTML tags. It
 means, unlike XUL, it doesn't prefix the servlet context path to
@@ -34,4 +34,4 @@ invoke the <mp>encodeURL</mp> method automatically. The reason why we do
 not handle XHTML components is that we do not know which attribute
 requires a URL.
 
-{% include ZKComponentReferencePageFooter %}
+

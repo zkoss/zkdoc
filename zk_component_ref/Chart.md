@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Chart
 
@@ -1190,7 +1190,7 @@ Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
 
 # Version History
 
-{% include LastUpdated %}
+
 
 <table>
 <thead>
@@ -1230,4 +1230,4 @@ class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="
 </tbody>
 </table>
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 All XHTML components are derived from
 <javadoc>org.zkoss.zhtml.impl.AbstractTag</javadoc>.
@@ -22,4 +22,4 @@ HTML tags directly in a ZUML document. In most cases, it is not the best
 approach. For information please refer to [ZK Developer's Reference:
 HTML tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags).
 
-{% include ZKComponentReferencePageFooter %}
+

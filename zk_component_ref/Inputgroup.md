@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Inputgroup
 
@@ -94,10 +94,10 @@ Specify the orientation.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                              |
 |---------|--------------|--------------------------------------------------------------------------------------|
 | 9.0.0   | October 2019 | [ZK-4391](https://tracker.zkoss.org/browse/ZK-4391): Provide an inputgroup component |
 
-{% include ZKComponentReferencePageFooter %}
+

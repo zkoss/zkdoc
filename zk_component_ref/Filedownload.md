@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Filedownload
 
@@ -194,13 +194,13 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: Internet Explorer 9 and other browsers all work fine without this
     limitation.

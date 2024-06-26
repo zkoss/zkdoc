@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Radio
 
@@ -70,10 +70,10 @@ Radiogroup](ZK_Component_Reference/Input/Radiogroup#Use_Cases)
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

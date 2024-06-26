@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Splitlayout
 
@@ -160,10 +160,10 @@ splitlayout.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date          | Content             |
 |---------|---------------|---------------------|
 | 8.5.0   | October, 2017 | new added component |
 
-{% include ZKComponentReferencePageFooter %}
+

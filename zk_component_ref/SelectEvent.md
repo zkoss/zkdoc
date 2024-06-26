@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # SelectEvent
 
@@ -110,4 +110,4 @@ component has a model.
 | 7.0.0   | October, 2013. | [Multiple selection component(listbox, chosenbox) support extra information for find out added item/removed item](http://tracker.zkoss.org/browse/ZK-1992) |
 | 7.0.1   | January 2014.  | [SelectEvent support get UnselectedItems](http://tracker.zkoss.org/browse/ZK-2089)                                                                         |
 
-{% include ZKComponentReferencePageFooter %}
+

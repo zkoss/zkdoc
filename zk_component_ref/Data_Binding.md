@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 Data binding synchronizes data between View and ViewModel according to
 component definition's annotation. The annotation specifies when to save
@@ -190,10 +190,10 @@ Let's take a look at some examples.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

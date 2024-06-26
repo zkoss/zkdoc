@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # MapMouseEvent
 
@@ -54,4 +54,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

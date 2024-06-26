@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Rowlayout
 
@@ -111,10 +111,10 @@ center](rowlayout-examples.png " center")
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      | \]      |
 
-{% include ZKComponentReferencePageFooter %}
+

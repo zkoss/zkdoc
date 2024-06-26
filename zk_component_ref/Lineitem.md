@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Lineitem
 
@@ -85,10 +85,10 @@ CSS alone).
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content                                                                             |
 |---------|----------|-------------------------------------------------------------------------------------|
 | 9.0.0   | Nov 2019 | [ZK-4377](https://tracker.zkoss.org/browse/ZK-4377): Provide a Linelayout component |
 
-{% include ZKComponentReferencePageFooter %}
+

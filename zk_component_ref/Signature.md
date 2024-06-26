@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Signature
 
@@ -155,10 +155,10 @@ clear method, the event would be triggered.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date        | Content |
 |---------|-------------|---------|
 | 8.6.0   | August 2018 |         |
 
-{% include ZKComponentReferencePageFooter %}
+

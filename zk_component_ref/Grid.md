@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Grid
 
@@ -1367,7 +1367,7 @@ zul.jar.
 | 8.5.0   | Oct 2017     | [ZK-3690](http://tracker.zkoss.org/browse/ZK-3690): Added visibleRows property for Grid (the same as rows property of Listbox and Tree)                                                         |
 | 9.6.0   | Mar 2021     | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
 

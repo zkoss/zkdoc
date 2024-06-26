@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Coachmark
 
@@ -162,4 +162,4 @@ component.</p></td>
 
 `*ALL`
 
-{% include ZKComponentReferencePageFooter %}
+

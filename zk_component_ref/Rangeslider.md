@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Rangeslider
 
@@ -139,4 +139,4 @@ user.</p></td>
 
 `*None`
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Treecol
 
@@ -104,10 +104,10 @@ the treeitem of this treecol.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content              |
 |---------|----------|----------------------|
 | 5.0.6   | Feb 2011 | Support onSort event |
 
-{% include ZKComponentReferencePageFooter %}
+

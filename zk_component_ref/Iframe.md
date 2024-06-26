@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Iframe
 
@@ -209,13 +209,13 @@ to.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: For more information please refer to the [Component-based
     UI](ZK_Developer's_Reference/UI_Composing/Component-based_UI)

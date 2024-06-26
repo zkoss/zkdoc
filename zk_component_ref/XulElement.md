@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Xul Element
 
@@ -19,4 +19,4 @@ HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Su
 
 `*ALL`
 
-{% include ZKComponentReferencePageFooter %}
+

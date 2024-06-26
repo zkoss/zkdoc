@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %} {% include
+ {% include
 Deprecated_Content %}
 
 # Anchorchildren
@@ -108,10 +108,10 @@ title="ZKComRef_Anchorlayout_Example.png" />
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date            | Content                              |
 |---------|-----------------|--------------------------------------|
 | 6.0.0   | October 4, 2011 | Add the new Anchorchildren component |
 
-{% include ZKComponentReferencePageFooter %}
+

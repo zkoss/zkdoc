@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Html Based Component
 
@@ -131,4 +131,4 @@ after</p>
 |---------|-----------|------------------------------------------------------|
 | 5.0.3   | June 2010 | The onMouseOver and onMouseOut events are supported. |
 
-{% include ZKComponentReferencePageFooter %}
+

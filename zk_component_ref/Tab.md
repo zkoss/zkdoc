@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Tab
 
@@ -140,10 +140,10 @@ shall detach itself.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date       | Content                                                                                                     |
 |---------|------------|-------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June, 2012 | [ZK-970](http://tracker.zkoss.org/browse/ZK-970): The Tab component support caption component as it's label |
 
-{% include ZKComponentReferencePageFooter %}
+

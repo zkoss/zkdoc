@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Input Element
 
@@ -543,7 +543,7 @@ web view to display the keyboard.</p></td>
 | 8.5.2   | May, 2018  | [ZK-3774](http://tracker.zkoss.org/browse/ZK-3774): focus() doesn't work on mobile device                                           |
 | 8.6.1   | Jan, 2019  | [ZK-4111](http://tracker.zkoss.org/browse/ZK-4111): Add autocorrect and spellcheck DOM attributes toggles to input-based components |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: The default constraint
     (<javadoc>org.zkoss.zul.SimpleConstraint</javadoc>) validates all

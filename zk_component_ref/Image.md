@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Image
 
@@ -204,10 +204,10 @@ For example,
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                          |
 |---------|----------------|------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | September 2011 | [A way to pre-load images since many UIs depend on the size of an image](http://tracker.zkoss.org/browse/ZK-314) |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Panel
 
@@ -302,11 +302,11 @@ The</p>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date          | Content                                                                                           |
 |---------|---------------|---------------------------------------------------------------------------------------------------|
 | 5.0.3   | July, 2010    | The draggable property can be used to control the drag-ability in a portal layout.                |
 | 5.0.6   | January, 2010 | The framable property was deprecated. Please refer to [\#Border](#Border) for details. |
 
-{% include ZKComponentReferencePageFooter %}
+

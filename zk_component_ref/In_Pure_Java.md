@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 It is also possible to create XHTML components in Java. The XHTML
 components are mapped to classes by ZK which means you can implement
@@ -34,4 +34,4 @@ new Raw("marquee").setDynamicProperty("align", "top");
 
 Next let's investigate the differences between XUL and XHTML components.
 
-{% include ZKComponentReferencePageFooter %}
+

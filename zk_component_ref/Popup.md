@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Popup
 
@@ -180,10 +180,10 @@ returns false).</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content                   |
 |---------|----------|---------------------------|
 | 7.0.0   | Nov 2013 | Popup support toggle type |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Combobox
 
@@ -499,7 +499,7 @@ include versionSince| 5.0.0 %}</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                                                                                                                       |
 |---------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -508,4 +508,4 @@ include versionSince| 5.0.0 %}</p></td>
 | 5.0.4   | July 2010    | Combobox supported <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc> if it is also implemented with the specified <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. |
 | 5.0.4   | July 2010    | Supported onAfterRender event                                                                                                                                                                 |
 
-{% include ZKComponentReferencePageFooter %}
+

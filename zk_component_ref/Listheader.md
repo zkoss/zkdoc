@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Listheader
 
@@ -113,11 +113,11 @@ cells under a column.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date      | Content                                                                                  |
 |---------|-----------|------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-120](http://tracker.zkoss.org/browse/ZK-120): Provide menupopup="auto" for listbox   |
 | 6.5.0   | June 2012 | [ZK-147](http://tracker.zkoss.org/browse/ZK-147): Support ungroup for grid's column menu |
 
-{% include ZKComponentReferencePageFooter %}
+

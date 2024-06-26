@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Anchornav
 
@@ -122,10 +122,10 @@ position of the page.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                |
 |---------|----------------|--------------------------------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html) was introduced. |
 
-{% include ZKComponentReferencePageFooter %}
+

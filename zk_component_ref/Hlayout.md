@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Hlayout
 
@@ -146,7 +146,7 @@ alignment explicitly in the inner hlayout if needed. For example,
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                            |
 |---------|----------------|----------------------------------------------------|
@@ -154,4 +154,4 @@ alignment explicitly in the inner hlayout if needed. For example,
 | 5.0.5   | October, 2010  | Vertical alignment was supported.                  |
 | 6.0.0   | February, 2012 | The default value of alignment is change to *top*. |
 
-{% include ZKComponentReferencePageFooter %}
+

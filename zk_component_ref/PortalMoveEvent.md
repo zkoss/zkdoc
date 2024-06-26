@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # PortalMoveEvent
 
@@ -51,4 +51,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

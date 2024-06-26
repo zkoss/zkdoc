@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Timebox
 
@@ -185,11 +185,11 @@ include versionSince| 5.0.0 %}</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date        | Content                                                                                                                                         |
 |---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | April, 2011 | <javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Timebox</javadoc> supported the styling.                                            |
 | 5.0.7   | April, 2011 | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Timebox</javadoc> was introduced to specify a locale other than the current locale. |
 
-{% include ZKComponentReferencePageFooter %}
+

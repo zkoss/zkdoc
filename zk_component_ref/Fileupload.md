@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Fileupload
 
@@ -292,13 +292,13 @@ Upload your hot shot:
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date     | Content                                                                                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>. Used if the event thread is disabled. |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK
     Configuration Reference:

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Fisheye
 
@@ -126,10 +126,10 @@ for inherited functions.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                         |
 |---------|--------------|---------------------------------|
 | 5.0.0   | January 2010 | Fisheye supports dynamic images |
 
-{% include ZKComponentReferencePageFooter %}
+

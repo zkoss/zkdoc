@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # SimpleListModel
 
@@ -51,4 +51,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

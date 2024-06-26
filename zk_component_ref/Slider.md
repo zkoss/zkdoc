@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Slider
 
@@ -216,7 +216,7 @@ designs are changed.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content                                                                                     |
 |---------|--------------|---------------------------------------------------------------------------------------------|
@@ -224,4 +224,4 @@ designs are changed.
 | 5.0.4   | August 2010  | Slider support for clicking to increment or decrement                                       |
 | 7.0.1   | January 2014 | [Slider support minimal position and decimal mode](http://tracker.zkoss.org/browse/ZK-2085) |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Drawer
 
@@ -137,10 +137,10 @@ component.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                         |
 |---------|----------------|---------------------------------------------------------------------------------|
 | 9.0.0   | September 2019 | [ZK-4365](https://tracker.zkoss.org/browse/ZK-4365): Provide a drawer component |
 
-{% include ZKComponentReferencePageFooter %}
+

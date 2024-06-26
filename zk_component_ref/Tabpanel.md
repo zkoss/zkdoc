@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Tabpanel
 
@@ -89,10 +89,10 @@ Tabbox](ZK_Component_Reference/Containers/Tabbox#Use_Cases)
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

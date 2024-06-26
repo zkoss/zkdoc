@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Selectbox
 
@@ -132,11 +132,11 @@ the user has selected a new item in the selectbox.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version   | Date             | Content                               |
 |-----------|------------------|---------------------------------------|
 | 6.0.0     | October 4, 2011  | Add the new Selectbox component       |
 | 6.0.0-RC2 | December 6, 2011 | Rename OptionRenderer to ItemRenderer |
 
-{% include ZKComponentReferencePageFooter %}
+

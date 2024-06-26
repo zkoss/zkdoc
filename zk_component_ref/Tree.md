@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Tree
 
@@ -829,7 +829,7 @@ tree to work around.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                                                                                                         |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -850,7 +850,7 @@ tree to work around.</p></td>
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 | 10.0.0  | Jan 2024       | [ZK-3853](http://tracker.zkoss.org/browse/ZK-3853): Tree supports 3-states selection model                                                                                                      |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
 

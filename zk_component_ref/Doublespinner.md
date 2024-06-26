@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Doublespinner
 
@@ -176,10 +176,10 @@ zul.jar.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date      | Content           |
 |---------|-----------|-------------------|
 | 5.0.6   | Dec. 2010 | add new component |
 
-{% include ZKComponentReferencePageFooter %}
+

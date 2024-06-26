@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Listbox
 
@@ -1602,7 +1602,7 @@ zul.jar.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                                                                                                         |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1627,7 +1627,7 @@ zul.jar.
 | 8.6.0   | Oct 2018       | [ZK-2756](http://tracker.zkoss.org/browse/ZK-2756): Listbox supports listgroup like optgroup in select mold                                                                                     |
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: The concept is similar to Swings (`javax.swing.ListModel`).
 

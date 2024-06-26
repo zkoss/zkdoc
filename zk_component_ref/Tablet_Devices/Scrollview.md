@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Scrollview
 
@@ -110,10 +110,10 @@ user is scrolling a scrollable component.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date         | Content             |
 |---------|--------------|---------------------|
 | 6.5.0   | August, 2012 | new added component |
 
-{% include ZKComponentReferencePageFooter %}
+

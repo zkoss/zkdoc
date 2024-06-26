@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # InfoChangeEvent
 
@@ -52,4 +52,4 @@ N/A
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

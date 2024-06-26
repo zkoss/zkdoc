@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Biglistbox
 
@@ -238,6 +238,6 @@ about the row index and the column index.</p></td>
 
 # Version History
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`

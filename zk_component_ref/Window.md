@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Window
 
@@ -636,6 +636,6 @@ The</p>
 | 3.6+    | Best practises on creating a pop-up window to display PDF reports | <http://www.zkoss.org/forum/listComment/9305> |
 |         |                                                                   |                                               |
 
-{% include LastUpdated %}
 
-{% include ZKComponentReferencePageFooter %}
+
+

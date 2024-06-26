@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Multislider
 
@@ -110,4 +110,4 @@ be displayed.
 
 `*`[` Sliderbuttons`](ZK_Component_Reference/Input/Sliderbuttons)
 
-{% include ZKComponentReferencePageFooter %}
+

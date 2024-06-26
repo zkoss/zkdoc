@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Track
 
@@ -158,10 +158,10 @@ Specify what language this track is. It's required if the kind is
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                                                                             |
 |---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |
 
-{% include ZKComponentReferencePageFooter %}
+

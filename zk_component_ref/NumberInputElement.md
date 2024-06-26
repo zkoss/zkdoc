@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Number Input Element
 
@@ -113,4 +113,4 @@ title="NumberInputElement-Locales.png" />
 |---------|----------|-------------------------------|
 | 5.0.8   | May 2011 | Support locale per component. |
 
-{% include ZKComponentReferencePageFooter %}
+

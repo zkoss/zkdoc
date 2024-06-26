@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Step
 
@@ -107,10 +107,10 @@ Set the title (label) of each step. (Default: empty)
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [ZK-4375](https://tracker.zkoss.org/browse/ZK-4375): Provide a stepbar component |
 
-{% include ZKComponentReferencePageFooter %}
+

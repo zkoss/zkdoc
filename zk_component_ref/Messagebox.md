@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Messagebox
 
@@ -267,7 +267,7 @@ This messagebox will show without any buttons.
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
 
-{% include ZKComponentReferencePageFooter %}
+
 
 [^1]: If you want to make it running under clustering environment, you
     should implement

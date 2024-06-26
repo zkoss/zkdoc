@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Tabbox
 
@@ -284,4 +284,4 @@ title="tabbox_orient_vertical-right.png" />
 
 `*`[` Tabs`](ZK_Component_Reference/Containers/Tabbox/Tabs)`, `[` Tabpanels`](ZK_Component_Reference/Containers/Tabbox/Tabpanels)`, `[`Toolbar`](ZK_Component_Reference/Essential_Components/Toolbar)
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Tbeditor
 
@@ -98,4 +98,4 @@ retrieve the temporary value.</p></td>
 
 `*NONE`
 
-{% include ZKComponentReferencePageFooter %}
+

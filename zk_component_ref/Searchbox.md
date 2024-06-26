@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Searchbox
 
@@ -205,11 +205,11 @@ sends this event after opening or closing the component.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                               |
 |---------|----------------|-----------------------------------------------------------------------------------------------------------------------|
 | 9.0.0   | September 2019 | [ZK-4380](https://tracker.zkoss.org/browse/ZK-4380): Provide a Searchbox component                                    |
 | 9.5.0   | August 2020    | [ZK-4497](https://tracker.zkoss.org/browse/ZK-4497): searchbox: improve clearing selection, key shortcut / clear icon |
 
-{% include ZKComponentReferencePageFooter %}
+

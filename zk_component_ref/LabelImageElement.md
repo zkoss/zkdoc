@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Label Image Element
 
@@ -84,4 +84,4 @@ Allow you to specify built-in icon CSS classes, see
 | 10.0.0  | August 2023    | [ZK-5503: Allow users to set multiple icons and tooltips on the same LabelImageElement](http://tracker.zkoss.org/browse/ZK-5503)       |
 | 10.0.0  | September 2023 | [ZK-5119: Integrate Font Awesome 6 free icons](http://tracker.zkoss.org/browse/ZK-5119)                                                |
 
-{% include ZKComponentReferencePageFooter %}
+

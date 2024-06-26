@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Audio
 
@@ -110,7 +110,7 @@ end.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date           | Content                                                                                                     |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------|
@@ -118,4 +118,4 @@ end.</p></td>
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks                           |
 | 9.6.0   | May 2021       | [ZK-4779](https://tracker.zkoss.org/browse/ZK-4779): audio supports to fire an event upon its playing state |
 
-{% include ZKComponentReferencePageFooter %}
+

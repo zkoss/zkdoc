@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Button
 
@@ -449,7 +449,7 @@ zul.jar.
 
 # Version History
 
-{% include LastUpdated %}
+
 
 <table>
 <thead>
@@ -492,4 +492,4 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#c
 </tbody>
 </table>
 
-{% include ZKComponentReferencePageFooter %}
+

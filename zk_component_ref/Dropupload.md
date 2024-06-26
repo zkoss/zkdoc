@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Dropupload
 
@@ -371,7 +371,7 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date            | Content                                                                        |
 |---------|-----------------|--------------------------------------------------------------------------------|
@@ -379,4 +379,4 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 | 7.0.2   | March, 2014     | [ZK-2207](http://tracker.zkoss.org/browse/ZK-2207): Dropupload supports anchor |
 | 10.0.0  | September, 2023 | [ZK-4969](http://tracker.zkoss.org/browse/ZK-4969): Dropupload supports accept |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Absolutechildren
 
@@ -82,10 +82,10 @@ title="ZKComRef_Absolutelayout_Example.png" />
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date            | Content                                |
 |---------|-----------------|----------------------------------------|
 | 6.0.0   | October 4, 2011 | Add the new Absolutechildren component |
 
-{% include ZKComponentReferencePageFooter %}
+

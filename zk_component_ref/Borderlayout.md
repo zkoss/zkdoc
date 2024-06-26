@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Borderlayout
 
@@ -346,7 +346,7 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date            | Content                                                                                                                                                                                         |
 |---------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -354,4 +354,4 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 | 6.0.0   | Feb 14, 2012    | The flex attribute has been deprecated, please set vflex="1" to the child component in order to occupy the whole area.                                                                          |
 | 7.0.2   | April 2014      | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
 
-{% include ZKComponentReferencePageFooter %}
+

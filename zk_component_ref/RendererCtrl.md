@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # RendererCtrl
 
@@ -61,4 +61,4 @@ items from the same request.
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

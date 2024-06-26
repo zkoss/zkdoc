@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # AfterSizeEvent
 
@@ -37,4 +37,4 @@ maximizable="true" sizable="true">
 |---------|------------|----------------------------------------------------------------------------------------|
 | 6.5.2   | March 2013 | [Add onAfterSize event to get component size](http://tracker.zkoss.org/browse/ZK-1672) |
 
-{% include ZKComponentReferencePageFooter %}
+

@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # MoveEvent
 
@@ -54,4 +54,4 @@ A movable component must implement `Movable` for the returned object of
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

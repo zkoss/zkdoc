@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # SimpleConstraint
 
@@ -50,4 +50,4 @@ A simple constraint that you could build based the predefined constants.
 |---------|------|---------|
 |         |      |         |
 
-{% include ZKComponentReferencePageFooter %}
+

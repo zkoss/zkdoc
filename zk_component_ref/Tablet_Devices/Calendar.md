@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 # Calendar
 
@@ -27,4 +27,4 @@ title="Calendar_Tablet_Example.png" />
 |---------|------------|---------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Calendar support touch's swipe event to switch the date view](http://tracker.zkoss.org/browse/ZK-1246) |
 
-{% include ZKComponentReferencePageFooter %}
+

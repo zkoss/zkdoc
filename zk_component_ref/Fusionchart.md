@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %} {% include Deprecated
+ {% include Deprecated
 Content %}
 
 # Fusionchart
@@ -776,7 +776,7 @@ from this event.</p></td>
 
 # Version History
 
-{% include LastUpdated %}
+
 
 | Version | Date        | Content                             |
 |---------|-------------|-------------------------------------|
@@ -784,4 +784,4 @@ from this event.</p></td>
 | 6.5.3   | June 2013   | add Fusion Funnel chart integration |
 | All     | April 2014  | entering maintenance mode           |
 
-{% include ZKComponentReferencePageFooter %}
+

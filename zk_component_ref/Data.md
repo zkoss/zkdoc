@@ -1,4 +1,4 @@
-{% include ZKComponentReferencePageHeader %}
+
 
 This section outlines components which are designed to handle data
 display.
@@ -18,6 +18,6 @@ please refer to the
 [Paging](ZK_Component_Reference/Supplementary/Paging)
 component.
 
-{% include ZKComponentReferenceHeadingToc %}
 
-{% include ZKComponentReferencePageFooter %}
+
+
