@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 In this section we introduce some of the most commonly used Java utility
 classes.

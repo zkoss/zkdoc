@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Here we describe how to implement a matrix model
 (<javadoc type="interface">org.zkoss.zkmax.zul.MatrixModel</javadoc>).

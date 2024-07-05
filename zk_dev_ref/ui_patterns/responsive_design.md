@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The [Responsive
 Design](http://en.wikipedia.org/wiki/Responsive_Web_Design) in ZK

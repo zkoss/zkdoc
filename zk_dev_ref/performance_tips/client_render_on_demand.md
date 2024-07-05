@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 With Enterprise Edition, widgets[^1] will delay the rendering of DOM
 elements until really required. For example, the DOM elements of

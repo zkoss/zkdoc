@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The client-side action (CSA) is used to control how to perform an action
 at the client. Typical use is to control the effect of showing or hiding

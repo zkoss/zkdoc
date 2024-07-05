@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 [M2eclipse](https://www.eclipse.org/m2e/) is the first and most mature
 of the projects aimed at integrating [Apache

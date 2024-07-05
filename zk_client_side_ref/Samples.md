@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 # Sample of a Language Addon
 

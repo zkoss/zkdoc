@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 In addtion to widget events
 (<javadoc directory="jsdoc">zk.Event</javadoc>) and DOM events

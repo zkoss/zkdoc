@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Themes comprises of stylesheets and images. The URLs for those resources
 must be resolved once the theme changes.

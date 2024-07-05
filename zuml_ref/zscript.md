@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The default interpreter for the zscript elements is Java (based on
 [BeanShell](http://www.beanshell.org)). Depending on your preference,

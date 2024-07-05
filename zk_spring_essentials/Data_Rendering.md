@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The rendering of Pivottable is defined by a PivotRenderer. You set your
 custom renderer by calling `setPivotRenderer()` method on Pivottable, or

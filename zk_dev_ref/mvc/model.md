@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The *model* is the data an application handles. Depending on the
 application requirement, it could be anything as long as your controller

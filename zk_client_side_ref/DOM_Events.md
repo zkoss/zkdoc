@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 A DOM event (<javadoc directory="jsdoc">jq.Event</javadoc>) is the
 DOM-level event that is usually triggered by the browser. It is usually

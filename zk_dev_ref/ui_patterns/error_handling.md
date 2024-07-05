@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Here we describe how to handle errors. An error is caused by an
 exception that is not caught by the application. An exception might be

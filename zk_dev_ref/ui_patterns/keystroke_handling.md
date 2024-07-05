@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Keystroke handling is generic. Any component inherited from
 <javadoc>org.zkoss.zul.impl.XulElement</javadoc> can handle the key

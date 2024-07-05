@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 <javadoc type="interface">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
 is a collection of callbacks that the implementation could know when a

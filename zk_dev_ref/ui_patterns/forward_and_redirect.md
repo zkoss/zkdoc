@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 A Web application jumping from one URL to another is usually caused by
 the user's click on a hyperlink, such as clicking on a

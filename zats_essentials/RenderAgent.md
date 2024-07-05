@@ -1,7 +1,4 @@
 
-
-\_\_TOC\_\_
-
 # Render
 
 When a <b>*listbox* </b> (or <b> *grid* </b>) uses a live data and is

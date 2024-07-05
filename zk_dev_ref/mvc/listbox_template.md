@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The template used to control the rendering of each item must be named
 `model` and declared right inside the `listbox` element. For example,

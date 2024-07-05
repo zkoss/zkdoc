@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 This section describes the Maven settings required to use ZK Pivottable
 in your application. Please refer to [this

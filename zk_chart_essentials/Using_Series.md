@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Another way to add data to a chart is through
 <javadoc directory="zkcharts">org.zkoss.chart.Series</javadoc>. You have

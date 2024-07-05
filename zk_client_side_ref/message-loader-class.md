@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 **Syntax:**
 <message-loader-class>*class.qualified.name*</message-loader-class>

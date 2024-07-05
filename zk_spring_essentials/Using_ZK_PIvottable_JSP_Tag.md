@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 ZK Pivottable JSP tag can be used in a JSP page in much the same way as
 any other custom JSP tag.

@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 This section introduces the usage of ZK auto sizing APIs. All of these
 can apply to the following components:

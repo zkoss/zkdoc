@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Here we introduce how to customize the standard themes, such as iceblue,
 breeze and silver gray.

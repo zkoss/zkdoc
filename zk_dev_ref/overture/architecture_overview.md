@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 # From the Application Developer's Perspective
 

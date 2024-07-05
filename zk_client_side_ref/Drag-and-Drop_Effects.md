@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 There are 2 scopes to customize the drag-and-drop effects: per-widget
 and application scope.

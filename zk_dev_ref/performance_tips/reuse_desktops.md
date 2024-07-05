@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 By default, a desktop is purged when the user browses to another URI or
 refreshes the page. Thus, the user can have the most updated

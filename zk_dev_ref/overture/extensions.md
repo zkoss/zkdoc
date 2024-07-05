@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Here is an overview of the extensions of ZK. They are optional. If you
 are new to ZK and prefer to have some knowledge of ZK first, you could

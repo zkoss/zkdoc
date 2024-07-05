@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Here we describe how to implement a groups model
 (<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>). For the

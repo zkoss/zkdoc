@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 [ZKIdea](https://plugins.jetbrains.com/plugin/7855) is an IntelliJ
 plugin for ZK application development contributed by Mr. Jumper Chen.

@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The naming pattern of Event Effect is used to describe the component
 interactions by input devices such as mouse and keyboard. Some of the

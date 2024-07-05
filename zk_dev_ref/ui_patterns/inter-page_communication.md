@@ -1,4 +1,4 @@
-\_\_TOC\_\_ Communicating among pages in the same desktop is
+ Communicating among pages in the same desktop is
 straightforward. First, you can use attributes to share data. Second,
 you can use events to notify each other.
 

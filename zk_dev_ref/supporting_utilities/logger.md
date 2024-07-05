@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 In this section we describe how to configure the logging of ZK internal
 functions. You can generally ignore it, unless you'd like to know how ZK

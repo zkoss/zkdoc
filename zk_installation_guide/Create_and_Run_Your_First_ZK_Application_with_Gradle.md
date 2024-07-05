@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 # Start from Maven Archetype
 

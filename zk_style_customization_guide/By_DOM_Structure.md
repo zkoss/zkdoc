@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The naming pattern of the DOM structure is used to describe components
 which are composed of more than one part. The following recommended

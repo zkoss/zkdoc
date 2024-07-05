@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 If you are not familiar with XML, please take a look at [XML
 Background](ZK_Developer's_Reference/UI_Composing/ZUML/XML_Background)

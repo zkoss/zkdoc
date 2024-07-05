@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 ZK Charts provides a set of comprehensive
 [API](http://www.zkoss.org/javadoc/latest/zkcharts/) for chart

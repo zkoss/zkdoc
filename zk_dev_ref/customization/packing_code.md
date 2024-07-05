@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 There are two ways to pack the customization code: part of the Web
 application, or an independent JAR file. Packing as part of the Web

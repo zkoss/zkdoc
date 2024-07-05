@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> is one of the
 built-in templating implementations. The concept is simple:

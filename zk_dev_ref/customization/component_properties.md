@@ -1,4 +1,4 @@
-\_\_TOC\_\_ With [component
+ With [component
 definitions](ZK_Client-side_Reference/Language_Definition/component),
 we could specify the initial values for the properties, attributes and
 annotations of a component.

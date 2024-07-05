@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 CSS ([Cascading Style
 Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)) is a style

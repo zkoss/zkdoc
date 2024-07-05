@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Sometimes it is helpful to run some code before ZK Loader instantiates
 any component. For example, check if the user has the authority to

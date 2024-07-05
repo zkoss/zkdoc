@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Layouts are components used to partition the display area it owns into
 several sub-areas for its child components, while containers *group* its

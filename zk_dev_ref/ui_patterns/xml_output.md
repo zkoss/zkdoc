@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 In addition to generating HTML output to a browser, ZK could be used to
 generate (static) XML output to any client that recognizes it, such as

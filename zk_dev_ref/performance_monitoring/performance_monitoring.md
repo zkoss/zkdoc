@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 To improve the performance of an Ajax application, it is better to
 monitor the performance for identifying the bottleneck. Depending on the

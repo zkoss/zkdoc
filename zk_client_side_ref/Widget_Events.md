@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 A widget event is the widget-level event
 (<javadoc directory="jsdoc">zk.Event</javadoc>).

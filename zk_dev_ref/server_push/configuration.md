@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Since ZK 6, in addition to
 <javadoc>org.zkoss.zk.ui.impl.PollingServerPush</javadoc> and

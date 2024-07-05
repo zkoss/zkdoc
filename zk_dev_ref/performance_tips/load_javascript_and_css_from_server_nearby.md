@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 > If some of the client machines are far away from the application
 > server, we could set up a server near the clients to host ZK's

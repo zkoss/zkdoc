@@ -1,6 +1,6 @@
 
 
-\_\_TOC\_\_
+
 
 # Click, Double-Click, Right-Click
 

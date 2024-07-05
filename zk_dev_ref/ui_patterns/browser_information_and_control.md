@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 To retrieve the information about the client, you can register an event
 listener for the `onClientInfo` event to a root component. To control

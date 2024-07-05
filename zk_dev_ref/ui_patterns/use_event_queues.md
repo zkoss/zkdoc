@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The [event
 queue](ZK_Developer's_Reference/Event_Handling/Event_Queues)

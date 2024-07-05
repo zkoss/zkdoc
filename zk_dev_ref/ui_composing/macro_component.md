@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 There are two ways to implement a component. One is to implement a
 component in a Java class, extending from other component or one of the

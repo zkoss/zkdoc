@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 You could have some custom initialization and cleanup when an
 application, a session, a desktop or an execution is instantiated or

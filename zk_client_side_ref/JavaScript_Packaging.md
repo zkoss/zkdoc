@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 If you'd like to customize the client-side behavior, it will end up with
 some JavaScript code. The code can be packaged in several ways depending

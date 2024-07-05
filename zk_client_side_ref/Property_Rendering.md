@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 If a state (aka., a property) of a component will cause the peer widget
 to have a different behavior or visual appearance, the state has to be

@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Server push is a technology to actively *push* data to the client. For
 ZK, the data is usually the UI updates or its variants. Thus, for the

@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 ZKs stands for **ZK Storage**. It is the mechanism by which ZK studio
 manages ZK releases that your ZK project or ZK studio may use. You can

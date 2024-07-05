@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 # Package Single Version in WAR
 

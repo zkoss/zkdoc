@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 Partial customization is a convenient way to fast prototype the look and
 feel and to change the style of a specific component. Here we will

@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 The support of tooltips, context menus and popups is generic. Any
 components inherited from

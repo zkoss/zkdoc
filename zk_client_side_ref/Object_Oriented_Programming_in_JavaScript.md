@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 JavaScript is not an object-oriented language, but ZK provides some
 utilities to enable object-oriented programming.

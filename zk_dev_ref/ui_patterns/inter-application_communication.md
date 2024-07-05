@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 An EAR file or the installation of Web server could have multiple WAR
 files. Each of them is a Web application. There are no standard way to

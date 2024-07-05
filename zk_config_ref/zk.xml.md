@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 `WEB-INF/zk.xml` is the configuration descriptor of ZK. This file is
 optional. If you want to configure ZK differently from the default, you

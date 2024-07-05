@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 In this section, we will discuss the format of a properties file, such
 as `zk-label.properties`.
