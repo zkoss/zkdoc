@@ -7,9 +7,9 @@ Suppose you have a table of data of flight ticket sales record like
 this,
 
 <figure>
-<img src="_ZKPivotEsn_raw_table_03s.png"
-title="_ZKPivotEsn_raw_table_03s.png" />
-<figcaption>_ZKPivotEsn_raw_table_03s.png</figcaption>
+<img src="images/ZKPivotEsn_raw_table_03s.png"
+title="ZKPivotEsn_raw_table_03s.png" />
+<figcaption>ZKPivotEsn_raw_table_03s.png</figcaption>
 </figure>
 
 and someone asks you "Hey, how did Antonio do this week? How much did he
@@ -19,9 +19,9 @@ You read through the table, highlight all entries with Antonio involved,
 categorize them by airlines, and sum up the selling prices.
 
 <figure>
-<img src="_ZKPivotEsn_raw_table_04s.png"
-title="_ZKPivotEsn_raw_table_04s.png" />
-<figcaption>_ZKPivotEsn_raw_table_04s.png</figcaption>
+<img src="images/ZKPivotEsn_raw_table_04s.png"
+title="ZKPivotEsn_raw_table_04s.png" />
+<figcaption>ZKPivotEsn_raw_table_04s.png</figcaption>
 </figure>
 
 This is a typical scenario when you work with business data, and this is
@@ -33,18 +33,18 @@ column, then you automatically have the desired data summary on
 Antonio's row.
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_03.png"
-title="_ZKPivotEsn_work_pivot_03.png" />
-<figcaption>_ZKPivotEsn_work_pivot_03.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_03.png"
+title="ZKPivotEsn_work_pivot_03.png" />
+<figcaption>ZKPivotEsn_work_pivot_03.png</figcaption>
 </figure>
 
 Taking a closer look, the number in each cell comes from summing up the
 values of all price entries of given agent and airline:
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_06.png"
-title="_ZKPivotEsn_work_pivot_06.png" />
-<figcaption>_ZKPivotEsn_work_pivot_06.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_06.png"
+title="ZKPivotEsn_work_pivot_06.png" />
+<figcaption>ZKPivotEsn_work_pivot_06.png</figcaption>
 </figure>
 
 We call *Agent, Airline* and *Price* **fields**, and more precisely
@@ -62,9 +62,9 @@ and *Customer* on the rows, *Airline* and *Flight* on the columns, this
 is what you will get:
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_13.png"
-title="_ZKPivotEsn_work_pivot_13.png" />
-<figcaption>_ZKPivotEsn_work_pivot_13.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_13.png"
+title="ZKPivotEsn_work_pivot_13.png" />
+<figcaption>ZKPivotEsn_work_pivot_13.png</figcaption>
 </figure>
 
 You can also think of row and column fields as categorization layers of
@@ -75,9 +75,9 @@ has a tree structure. We call them **row header tree** and **column
 header tree**, respectively.
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_14.png"
-title="_ZKPivotEsn_work_pivot_14.png" />
-<figcaption>_ZKPivotEsn_work_pivot_14.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_14.png"
+title="ZKPivotEsn_work_pivot_14.png" />
+<figcaption>ZKPivotEsn_work_pivot_14.png</figcaption>
 </figure>
 
 In addition, it is quite easy to imagine, if you click on the minus sign
@@ -85,9 +85,9 @@ on any of the row or column header node, you can close the node so the
 data will be contracted into a single row or column.
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_15.png"
-title="_ZKPivotEsn_work_pivot_15.png" />
-<figcaption>_ZKPivotEsn_work_pivot_15.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_15.png"
+title="ZKPivotEsn_work_pivot_15.png" />
+<figcaption>ZKPivotEsn_work_pivot_15.png</figcaption>
 </figure>
 
 ## Data fields
@@ -98,18 +98,18 @@ fields. Suppose we have *Price* and *Mileage* as data fields, you will
 see:
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_16.png"
-title="_ZKPivotEsn_work_pivot_16.png" />
-<figcaption>_ZKPivotEsn_work_pivot_16.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_16.png"
+title="ZKPivotEsn_work_pivot_16.png" />
+<figcaption>ZKPivotEsn_work_pivot_16.png</figcaption>
 </figure>
 
 By default, the data fields are displayed by column, but you can also
 have them arranged on rows.
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_17.png"
-title="_ZKPivotEsn_work_pivot_17.png" />
-<figcaption>_ZKPivotEsn_work_pivot_17.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_17.png"
+title="ZKPivotEsn_work_pivot_17.png" />
+<figcaption>ZKPivotEsn_work_pivot_17.png</figcaption>
 </figure>
 
 We call this property **data field orientation**, or **data
@@ -125,9 +125,9 @@ enough to replace the concept of **Sum** by **Count**. For example, if
 you put *Price* and *Customer* as data fields, you will see:
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_18.png"
-title="_ZKPivotEsn_work_pivot_18.png" />
-<figcaption>_ZKPivotEsn_work_pivot_18.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_18.png"
+title="ZKPivotEsn_work_pivot_18.png" />
+<figcaption>ZKPivotEsn_work_pivot_18.png</figcaption>
 </figure>
 
 Thus, to be generic, rather than calling the displayed values "sum", we
@@ -140,9 +140,9 @@ for **subtotal** on each header node. For example, if we let *Agent* and
 *Agent* layer, we will see:
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_19.png"
-title="_ZKPivotEsn_work_pivot_19.png" />
-<figcaption>_ZKPivotEsn_work_pivot_19.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_19.png"
+title="ZKPivotEsn_work_pivot_19.png" />
+<figcaption>ZKPivotEsn_work_pivot_19.png</figcaption>
 </figure>
 
 ## Trivia
@@ -152,15 +152,15 @@ also define the follow terms: **data area**, **row area**, **column
 area**, **data title**, **row title**, and **column title**.
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_09.png"
-title="_ZKPivotEsn_work_pivot_09.png" />
-<figcaption>_ZKPivotEsn_work_pivot_09.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_09.png"
+title="ZKPivotEsn_work_pivot_09.png" />
+<figcaption>ZKPivotEsn_work_pivot_09.png</figcaption>
 </figure>
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_08.png"
-title="_ZKPivotEsn_work_pivot_08.png" />
-<figcaption>_ZKPivotEsn_work_pivot_08.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_08.png"
+title="ZKPivotEsn_work_pivot_08.png" />
+<figcaption>ZKPivotEsn_work_pivot_08.png</figcaption>
 </figure>
 
 The six regions defined above cover all the areas in a Pivottable except

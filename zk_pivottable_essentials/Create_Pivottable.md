@@ -34,9 +34,9 @@ field,
 gives
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_24.png"
-title="_ZKPivotEsn_work_pivot_24.png" />
-<figcaption>_ZKPivotEsn_work_pivot_24.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_24.png"
+title="ZKPivotEsn_work_pivot_24.png" />
+<figcaption>ZKPivotEsn_work_pivot_24.png</figcaption>
 </figure>
 
 and
@@ -48,9 +48,9 @@ and
 will give
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_22.png"
-title="_ZKPivotEsn_work_pivot_22.png" />
-<figcaption>_ZKPivotEsn_work_pivot_22.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_22.png"
+title="ZKPivotEsn_work_pivot_22.png" />
+<figcaption>ZKPivotEsn_work_pivot_22.png</figcaption>
 </figure>
 
  
@@ -72,9 +72,9 @@ For example,
 results in
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_26.png"
-title="_ZKPivotEsn_work_pivot_26.png" />
-<figcaption>_ZKPivotEsn_work_pivot_26.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_26.png"
+title="ZKPivotEsn_work_pivot_26.png" />
+<figcaption>ZKPivotEsn_work_pivot_26.png</figcaption>
 </figure>
 
 ## Paging
@@ -89,9 +89,9 @@ example,
 ```
 
 <figure>
-<img src="_ZKPivotEsn_work_pivot_32.png"
-title="_ZKPivotEsn_work_pivot_32.png" />
-<figcaption>_ZKPivotEsn_work_pivot_32.png</figcaption>
+<img src="images/ZKPivotEsn_work_pivot_32.png"
+title="ZKPivotEsn_work_pivot_32.png" />
+<figcaption>ZKPivotEsn_work_pivot_32.png</figcaption>
 </figure>
 
 Note:

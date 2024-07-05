@@ -65,9 +65,9 @@ public class PivotController extends GenericForwardComposer {
 It will look like:
 
 <figure>
-<img src="_ZKPivotEsn_pfc_control_01.png"
-title="_ZKPivotEsn_pfc_control_01.png" />
-<figcaption>_ZKPivotEsn_pfc_control_01.png</figcaption>
+<img src="images/ZKPivotEsn_pfc_control_01.png"
+title="ZKPivotEsn_pfc_control_01.png" />
+<figcaption>ZKPivotEsn_pfc_control_01.png</figcaption>
 </figure>
 
 The fields in the four area are draggable. You can move them to other
@@ -76,9 +76,9 @@ pools, so the model and pivot table will be updated accordingly.
 Sort options are available on row and column fields.
 
 <figure>
-<img src="_ZKPivotEsn_pfc_control_02.png"
-title="_ZKPivotEsn_pfc_control_02.png" />
-<figcaption>_ZKPivotEsn_pfc_control_02.png</figcaption>
+<img src="images/ZKPivotEsn_pfc_control_02.png"
+title="ZKPivotEsn_pfc_control_02.png" />
+<figcaption>ZKPivotEsn_pfc_control_02.png</figcaption>
 </figure>
 
  
@@ -99,17 +99,17 @@ You can specify layout on PivotFieldControl:
 vertical:
 
 <figure>
-<img src="_ZKPivotEsn_pfc_control_03_v.png"
-title="_ZKPivotEsn_pfc_control_03_v.png" />
-<figcaption>_ZKPivotEsn_pfc_control_03_v.png</figcaption>
+<img src="images/ZKPivotEsn_pfc_control_03_v.png"
+title="ZKPivotEsn_pfc_control_03_v.png" />
+<figcaption>ZKPivotEsn_pfc_control_03_v.png</figcaption>
 </figure>
 
 horizontal:
 
 <figure>
-<img src="_ZKPivotEsn_pfc_control_03_h.png"
-title="_ZKPivotEsn_pfc_control_03_h.png" />
-<figcaption>_ZKPivotEsn_pfc_control_03_h.png</figcaption>
+<img src="images/ZKPivotEsn_pfc_control_03_h.png"
+title="ZKPivotEsn_pfc_control_03_h.png" />
+<figcaption>ZKPivotEsn_pfc_control_03_h.png</figcaption>
 </figure>
 
 ### Labels
@@ -142,15 +142,15 @@ pivot.fieldControl.rowListTitle=My Rows
 Then you shall see the label is changed:
 
 <figure>
-<img src="_ZKPivotEsn_pfc_control_04.png"
-title="_ZKPivotEsn_pfc_control_04.png" />
-<figcaption>_ZKPivotEsn_pfc_control_04.png</figcaption>
+<img src="images/ZKPivotEsn_pfc_control_04.png"
+title="ZKPivotEsn_pfc_control_04.png" />
+<figcaption>ZKPivotEsn_pfc_control_04.png</figcaption>
 </figure>
 
 All the available keys are defined as the following:
 
 <figure>
-<img src="ZKPivotEsn_pfc_control_05.png"
+<img src="images/ZKPivotEsn_pfc_control_05.png"
 title="ZKPivotEsn_pfc_control_05.png" />
 <figcaption>ZKPivotEsn_pfc_control_05.png</figcaption>
 </figure>

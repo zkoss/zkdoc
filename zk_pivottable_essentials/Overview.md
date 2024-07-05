@@ -9,7 +9,7 @@ applications, enabling developers to take advantage of a readymade
 component for demonstrating complex sets of data online.
 
 <figure>
-<img src="ZK_Pivot_Esn_difference.png"
+<img src="images/ZK_Pivot_Esn_difference.png"
 title="ZK_Pivot_Esn_difference.png" />
 <figcaption>ZK_Pivot_Esn_difference.png</figcaption>
 </figure>
