@@ -14,7 +14,7 @@ loaded to three different input fields for modification. The following
 test case steps verifies whether or not <b>listitem</b>'s data are
 correctly loaded into three input fields.
 
-![](Zats-mimic-select.png)
+![](images/Zats-mimic-select.png)
 
 To **single** select a *listitem*, we must retrieve it first. The same
 rule applies to *treeitem* and *comboitem*.

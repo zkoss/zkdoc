@@ -21,7 +21,7 @@ mode. When we select one or more items, the label at the bottom will
 display all selected item's label.
 
 <figure>
-<img src="Smalltalk-mimic-multipleselect.png"
+<img src="images/Smalltalk-mimic-multipleselect.png"
 title="Smalltalk-mimic-multipleselect.png" />
 <figcaption>Smalltalk-mimic-multipleselect.png</figcaption>
 </figure>

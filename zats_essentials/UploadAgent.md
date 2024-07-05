@@ -26,7 +26,7 @@ you can choose to use a button components such as
 and select a file to upload through a browser dialog, as illustrated
 below:
 
-![](Zats_upload_button.png)
+![](images/Zats_upload_button.png)
 
 **Notes**
 
@@ -90,7 +90,7 @@ handler.[^3] This static method will open up an uploading dialog and
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
 
-![](Zats_upload_dialog.png)
+![](images/Zats_upload_dialog.png)
 
 ``` xml
             <label id="label1" value="click label1 will invoke fileupload.get()" onClick="Fileupload.get();" />

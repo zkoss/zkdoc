@@ -37,7 +37,7 @@ frequent unit testing during a agile development process.
 The concept is as follows:
 
 <figure>
-<img src="Smalltalk-ZatsMimicConcept.png"
+<img src="images/Smalltalk-ZatsMimicConcept.png"
 title="Smalltalk-ZatsMimicConcept.png" />
 <figcaption>Smalltalk-ZatsMimicConcept.png</figcaption>
 </figure>

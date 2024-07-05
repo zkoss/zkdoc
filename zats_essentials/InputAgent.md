@@ -12,7 +12,7 @@ We will use a todo list application to demonstrate the usage
 of`InputAgent`. Here is the application's UI:
 
 <figure>
-<img src="Smalltalk-MimicLibrary-todolist.png"
+<img src="images/Smalltalk-MimicLibrary-todolist.png"
 title="Smalltalk-MimicLibrary-todolist.png" />
 <figcaption>Smalltalk-MimicLibrary-todolist.png</figcaption>
 </figure>
@@ -81,7 +81,7 @@ For example, to achieve auto-complete feature, developers usually
 listens to an onChanging event of a *textbox* and performs
 post-processing.
 
-![](Zats-mimic-typing.png)
+![](images/Zats-mimic-typing.png)
 
 ``` java
 
@@ -93,7 +93,7 @@ desktopAgent.query("textbox").as(InputAgent.class).typing("a");
 `select(int, int)` is used to mark the selection of a range of text by
 starting and ending index (ending index is exclusive).
 
-![](Zats-mimic-selection.png)
+![](images/Zats-mimic-selection.png)
 
 ``` java
 
@@ -108,7 +108,7 @@ operation. Users don't have to care how values are inputted into a
 component, but what the values are. For *slider*, we should pass integer
 as the parameter.
 
-![](Zats-mimic-input.png)
+![](images/Zats-mimic-input.png)
 
 ``` java
 

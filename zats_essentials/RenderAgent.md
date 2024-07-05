@@ -18,7 +18,7 @@ logic: when a user selects an item, the label at the bottom will display
 the item's content. Each *listcell* has one child component *label*.
 
 <figure>
-<img src="Smalltalk-mimic-render.png"
+<img src="images/Smalltalk-mimic-render.png"
 title="Smalltalk-mimic-render.png" />
 <figcaption>Smalltalk-mimic-render.png</figcaption>
 </figure>

@@ -13,7 +13,7 @@ to drop on.
 Assume that we have two listbox: leftBox, rightBox, you can drag
 *listitem* between two listboxes.
 
-![](Zats-mimic-dragDrop.png)
+![](images/Zats-mimic-dragDrop.png)
 
 The following code represents how to drag a *listitem* from left
 *listbox* to right *listbox*.

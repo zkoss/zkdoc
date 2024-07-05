@@ -11,7 +11,7 @@ desktop by default. Of course, you can write event handler to override
 this behavior, for example to hide a component instead of detaching it.
 
 <figure>
-<img src="Smalltalk-mimic-close.png"
+<img src="images/Smalltalk-mimic-close.png"
 title="Smalltalk-mimic-close.png" />
 <figcaption>Smalltalk-mimic-close.png</figcaption>
 </figure>

@@ -9,7 +9,7 @@ clicks the button, the label shows "Hello Mimic" as shown in the image
 below.
 
 <figure>
-<img src="Smalltalk-mimic-hello.png"
+<img src="images/Smalltalk-mimic-hello.png"
 title="Smalltalk-mimic-hello.png" />
 <figcaption>Smalltalk-mimic-hello.png</figcaption>
 </figure>

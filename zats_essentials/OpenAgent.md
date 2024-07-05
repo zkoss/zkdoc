@@ -10,7 +10,7 @@
 Here we use a *tree* with binary structure to demonstrate this agent's
 usage. Each *treeitem* has two children.
 
-![](Smalltalk-mimic-open.png)
+![](images/Smalltalk-mimic-open.png)
 
 In the test case below, we expand the first *treeitem* (node1) and its
 first child *treeitem* (node3), the first treeitem's visible item count
