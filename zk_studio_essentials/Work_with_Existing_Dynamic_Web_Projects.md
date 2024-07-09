@@ -8,4 +8,4 @@ project.
 3.  Check **ZK Studio Supports**on right panel and click **Apply**.
 4.  Click **OK** to close project preference window.
 
-![](addZKtoExistProject_1.png)
+![](images/addZKtoExistProject_1.png)

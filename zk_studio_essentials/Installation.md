@@ -69,14 +69,14 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 \> \[Eclipse Markpetplace\]** and search **"zk studio"** you'll find
 **ZK Studio** to install.
 
-![](Eclipse36_marketplace.png)
+![](images/Eclipse36_marketplace.png)
 
 ## Update Site
 
 1.  Open Eclipse, click the **\[Help\]** menu and select **\[Install New
     Software...\]**. A install window will popup, and then click **Add**
       
-    ![](zkstudio_installation_35_1.png)
+    ![](images/zkstudio_installation_35_1.png)
 
       
 2.  Name the site as **"ZK Studio"** and copy corresponding update
@@ -88,20 +88,20 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     The URL of ZK Studio for Eclipse 3.7:
     <http://studio.zkoss.org/resource/plugins/eclipse_3_7>
 
-    ![](zkstudio_installation_35_2.png)
+    ![](images/zkstudio_installation_35_2.png)
 
       
 3.  Expand the update entry of ZK Studio, check **ZK Studio** and then
     click **Next**
       
-    ![](zkstudio_installation_35_3.png)
+    ![](images/zkstudio_installation_35_3.png)
 
     The Eclipse Installation System will now attempt to retrieve
     information from the update site. This will take some time depending
     on your eclipse environment, please be patient.
 4.  Click **Next** on the pop-up install wizard dialog.
       
-    ![](zkstudio_installation_35_4.png)
+    ![](images/zkstudio_installation_35_4.png)
 
       
 
@@ -109,7 +109,7 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     **Finish** on the wizard dialog.
 
     <figure>
-    <img src="zkstudio_installation_35_4_licenses.png"
+    <img src="images/zkstudio_installation_35_4_licenses.png"
     title=" center | 600px" />
     <figcaption> center | 600px</figcaption>
     </figure>
@@ -118,7 +118,7 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 
     The Installation process will now begin.
 
-    ![](zkstudio_installation_35_5.png)
+    ![](images/zkstudio_installation_35_5.png)
 
       
 
@@ -126,7 +126,7 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     click **OK** to continue.
 
     <figure>
-    <img src="zkstudio_installation_35_5_warning.png"
+    <img src="images/zkstudio_installation_35_5_warning.png"
     title=" center | 500px" />
     <figcaption> center | 500px</figcaption>
     </figure>
@@ -135,7 +135,7 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 5.  Once the installation is complete, please restart Eclipse as
     prompted.
       
-    ![](zkstudio_installation_35_6.png)
+    ![](images/zkstudio_installation_35_6.png)
 
 ## Offline Installation
 
@@ -149,7 +149,7 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     explorer to choose downloaded file and click "OK" to install.
       
     <figure>
-    <img src="zkstudio_installation_35_manual_2.png"
+    <img src="images/zkstudio_installation_35_manual_2.png"
     title=" center | 500px" />
     <figcaption> center | 500px</figcaption>
     </figure>

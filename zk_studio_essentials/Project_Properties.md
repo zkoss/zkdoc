@@ -8,7 +8,7 @@ Otherwise, **Package Setting** page is invisible.
 
 # ZK
 
-![](studio-project-preference-zk.png)
+![](images/studio-project-preference-zk.png)
 
 This preference page lists the version number, library location, and the
 add-ons currently available for the current project's ZK package.
@@ -19,7 +19,7 @@ case any library jar files in this project is out of sync.
 ## Package Setting
 
 <figure>
-<img src="studio-project-preference-package.png"
+<img src="images/studio-project-preference-package.png"
 title=" center | 700px" />
 <figcaption> center | 700px</figcaption>
 </figure>
@@ -51,7 +51,7 @@ This preference page lists some of the options you can turn on/off to
 improve the performance of the ZUL Editor.
 
 <figure>
-<img src="studio-project-preference-editor.png"
+<img src="images/studio-project-preference-editor.png"
 title=" center | 700px" />
 <figcaption> center | 700px</figcaption>
 </figure>

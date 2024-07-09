@@ -14,12 +14,12 @@ variable, object, method, or class declaration, and selected token's all
 occurrences (read/write access) in the currently opened zul file will be
 marked.
 
-![](mark1.png)
+![](images/mark1.png)
 
 Mark Occurrence also works when the token is located within an EL
 Expression.
 
-![](el_mark.png)
+![](images/el_mark.png)
 
 # Syntax Checking
 
@@ -31,29 +31,29 @@ discover how many errors are present in the zul file and the location of
 said errors. By clicking on the marker you can jump to the line which
 contains the error.
 
-![](syntaxCheckRightBar.png)
+![](images/syntaxCheckRightBar.png)
 
 The markers on the left hand side show an appropriate error message when
 clicked.
 
-![](syntaxCheckLeftMark.png)
+![](images/syntaxCheckLeftMark.png)
 
 Move the mouse on the occurrence of the error marked by a red wavy line
 (or the warning marked by a yellow wavy line) and the error message will
 be display in a tooltip.
 
-![](syntaxCheckTooltip.png)
+![](images/syntaxCheckTooltip.png)
 
 Syntax checking also works on data binding expressions.
 
-![](studio-syntax-checking-mvvm.png)
+![](images/studio-syntax-checking-mvvm.png)
 
 # Syntax Coloring
 
 Java code enclosed within <zscript> and <attribute> tags are colored
 appropriately according to the syntax.
 
-![](studio-syntax-coloring.png)
+![](images/studio-syntax-coloring.png)
 
 # Content Assist
 
@@ -74,7 +74,7 @@ For basic usage scenario, please refer to Eclipse official tutorial:
 ZUL & XML tags support content assist and can be invoked by using the
 default content assist keyboard shortcut.
 
-![](contentAssistXMLTag.png)
+![](images/contentAssistXMLTag.png)
 
 This feature doesn't work on those add-on components like ZK Charts and
 ZK Spreadsheet.
@@ -84,7 +84,7 @@ ZK Spreadsheet.
 The content within **use** and **apply** attributes also supports
 content assist.
 
-![](contentAssistinAttribute.png)
+![](images/contentAssistinAttribute.png)
 
 ## Zscript Content Assist
 
@@ -93,20 +93,20 @@ auto completion functionality within **<zscript>`...`</zscript>**,
 **<attribute name='onXXX'>`...`</attribute>** code blocks and event
 attribute values in the ZUML tag.
 
-![](contentAssistZscript.png)
+![](images/contentAssistZscript.png)
 
 Classes located in JAR files can also be included in content assist. In
 addition to that if the JAR's source code is available, JavaDoc can be
 shown beside the content assist window.
 
-![](contentAssistJavaDoc.png)
+![](images/contentAssistJavaDoc.png)
 
 ## EL Expression Content Assist
 
 Inside the EL Expression you can also invoke the content assist via a
 keyboard shortcut.
 
-![](contentAssistEL.png)
+![](images/contentAssistEL.png)
 
 ## MVVM Content Assist
 
@@ -116,7 +116,7 @@ following places:
 ### Annotation name
 
 <figure>
-<img src="studio-contentassist-mvvm-annotation.png"
+<img src="images/studio-contentassist-mvvm-annotation.png"
 title=" center | 500px" />
 <figcaption> center | 500px</figcaption>
 </figure>
@@ -130,7 +130,7 @@ center \|
 ### Available variables
 
 <figure>
-<img src="studio-contentassist-mvvm-variables.png"
+<img src="images/studio-contentassist-mvvm-variables.png"
 title=" center | 700px" />
 <figcaption> center | 700px</figcaption>
 </figure>
@@ -141,7 +141,7 @@ ZK Studio provides Javadoc hovering functionality. When a cursor hovers
 over the code, Javadoc belonging to the element will be shown in a
 tooltip.
 
-![](JAVADocHover.png)
+![](images/JAVADocHover.png)
 
 Please note in order for content assist and Javadoc to work with JAR
 files you need to set source and/or Javadoc of said files, please refer
@@ -200,7 +200,7 @@ resource).
 A ZUML tag's event attribute value is also accessible using Hyperlink
 Navigation.
 
-![](attrHyperlink.png)
+![](images/attrHyperlink.png)
 
 # ZUL File Formatting
 
@@ -217,4 +217,4 @@ source format keyboard shortcut is **'Ctrl + Shift + F**. You can
 reconfigure the keyboard shortcut as described in [Configure Keyboard
 Shortcuts](ZK_Studio_Essentials/Eclipse_Tips#Configure_Keyboard_Shortcuts).
 
-![](sourceFormat.png)
+![](images/sourceFormat.png)

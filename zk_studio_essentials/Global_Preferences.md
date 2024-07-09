@@ -4,7 +4,7 @@ from the tree on the left hand side.
 
 # Services
 
-![](studio-preference-services.png)
+![](images/studio-preference-services.png)
 
 **Error Reporter**
 
@@ -31,7 +31,7 @@ automatically used for any new ZK web application. If you don't select a
 default ZK package, ZK Studio will automatically choose the latest
 version of your imported ZK Packages.
 
-![](studio-preference-package.png)
+![](images/studio-preference-package.png)
 
 Another way to import ZK package is through ZK Storage view, please
 refer to [Configure ZK Binary
@@ -41,7 +41,7 @@ Distribution](ZK_Studio_Essentials/Features_of_ZK_Studio/ZKs#Configure_ZK_Binary
 
 This page is used to configure ZUL Editor.
 
-![](studio-preference-editor.png)
+![](images/studio-preference-editor.png)
 
 - **Use plugin's built in zul.xsd**
     

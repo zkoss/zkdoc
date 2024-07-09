@@ -4,7 +4,7 @@ Outline view or of a component you have put the cursor on in the ZUL
 Editor. You can open it by clicking **\[Window\]/\[Show
 View\]/\[Properties\]**.
 
-![](studio-properties-view.png)
+![](images/studio-properties-view.png)
 
 <div style='text-align:center'>
 

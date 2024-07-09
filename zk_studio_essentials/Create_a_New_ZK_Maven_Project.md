@@ -8,7 +8,7 @@ install the plugin first. Click **\[Help\]/\[Eclipse Marketplace...\]**
 and enter "maven" in "Find" textbox to find **Maven Integration for
 Eclipse**. Then click "Install" button.
 
-![](studio-maven-plugin.png)
+![](images/studio-maven-plugin.png)
 
 After completing the installation and restarting Eclipse, we can
 continue the following steps.
