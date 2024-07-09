@@ -19,7 +19,7 @@ element.
 # Example
 
 <figure>
-<img src="ZKComRef_Grid_Example.png‎"
+<img src="images/ZKComRef_Grid_Example.png‎
 title="ZKComRef_Grid_Example.png‎" />
 <figcaption>ZKComRef_Grid_Example.png‎</figcaption>
 </figure>
@@ -64,7 +64,7 @@ each column.
 ### Auto
 
 <figure>
-<img src="ZKComRef_Grid_Columns_Menu.png"
+<img src="images/ZKComRef_Grid_Columns_Menu.png
 title="ZKComRef_Grid_Columns_Menu.png" />
 <figcaption>ZKComRef_Grid_Columns_Menu.png</figcaption>
 </figure>
@@ -82,7 +82,7 @@ title="ZKComRef_Grid_Columns_Menu.png" />
 ### Customized Menupopup
 
 <figure>
-<img src="ZKComRef_Grid_Columns_Customized_Menu.png"
+<img src="images/ZKComRef_Grid_Columns_Customized_Menu.png
 title="ZKComRef_Grid_Columns_Customized_Menu.png" />
 <figcaption>ZKComRef_Grid_Columns_Customized_Menu.png</figcaption>
 </figure>
@@ -112,7 +112,7 @@ columns as its column menu.
 Specifies whether a user is allowed to resize a column's width by
 dragging the vertical bar between two adjacent columns.
 
-![](Sizable.png)
+![](images/Sizable.png)
 
 ### Double-Click to Auto-Fit
 

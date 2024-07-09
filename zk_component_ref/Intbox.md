@@ -14,11 +14,11 @@ An `intbox` is used to let users input integer data.
 
 # Example
 
-![](ZKComRef_Intbox.png)
+![](images/ZKComRef_Intbox.png)
 
 While input invalid data:
 
-![](ZKComRef_Intbox2.png)
+![](images/ZKComRef_Intbox2.png)
 
 ``` xml
  <window title="Intbox Demo" border="normal" width="200px">

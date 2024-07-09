@@ -32,7 +32,7 @@ client by providing JavaScript code that overrides
 # Example
 
 <figure>
-<img src="ZKComRef_Calendar_Example.png"
+<img src="images/ZKComRef_Calendar_Example.png
 title="ZKComRef_Calendar_Example.png" />
 <figcaption>ZKComRef_Calendar_Example.png</figcaption>
 </figure>
@@ -44,7 +44,7 @@ title="ZKComRef_Calendar_Example.png" />
 
 ## Date Range Selector
 
-![](dateRangeSelector.png)
+![](images/dateRangeSelector.png)
 
 Check
 [calendar.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/input/calendar.zul#L21)
@@ -55,7 +55,7 @@ This is achieved by overriding the default renderer at the client to
 customize the appearance of days on ZK's Calendar. For example,
 
 <figure>
-<img src="ZKComRef_Calendar_Example2.png"
+<img src="images/ZKComRef_Calendar_Example2.png
 title="ZKComRef_Calendar_Example2.png" />
 <figcaption>ZKComRef_Calendar_Example2.png</figcaption>
 </figure>
@@ -81,7 +81,7 @@ Calendar supports to show a week number of the year. {% include edition-availabi
 {% include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="ZKComRef_Calendar_Week_Of_Year.PNG"
+<img src="images/ZKComRef_Calendar_Week_Of_Year.PNG
 title="ZKComRef_Calendar_Week_Of_Year.PNG" />
 <figcaption>ZKComRef_Calendar_Week_Of_Year.PNG</figcaption>
 </figure>

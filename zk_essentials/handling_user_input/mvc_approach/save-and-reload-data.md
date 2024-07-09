@@ -5,7 +5,7 @@ triggered by clicking a button. If you click the "Save" button, the
 application will save your input and show a notification box.
 
 <div style="text-align:center">
-<img src="/images/ze-ch5-save.png" >
+<img src="images//images/ze-ch5-save.png >
 </div>
 <div style="text-align:center">
 <strong>Click "Save" button</strong>

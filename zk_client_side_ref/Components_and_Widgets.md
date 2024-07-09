@@ -1,7 +1,7 @@
 
 
 <figure>
-<img src="ZKComDevEss_widget_component_application.png"
+<img src="images/ZKComDevEss_widget_component_application.png
 title="Widget and component works hand in hand to deliver UI to user and notify the application about a user&#39;s activity" />
 <figcaption>Widget and component works hand in hand to deliver UI to
 user and notify the application about a user's activity</figcaption>
@@ -25,7 +25,7 @@ client, representing an UI object to interact with the user. To interact
 with the user, a widget has a visual appearance and handle events
 happening at the client.
 
-![](_ChangeLabelFlow.png)
+![](images/_ChangeLabelFlow.png)
 
 A component and a widget work hand-in-hand to deliver UI to an user and
 to notify the application about a user's activity, such as clicking and
@@ -39,7 +39,7 @@ user clicks the button widget, the onClick event will be sent back to
 the server and notify the application.
 
 <figure>
-<img src="_WidgetAndComponent2.png"
+<img src="images/_WidgetAndComponent2.png
 title="Though not required, application can run at the client to control widgets directly" />
 <figcaption>Though not required, application can run at the client to
 control widgets directly</figcaption>
@@ -54,7 +54,7 @@ order of columns of a grid at the client, while the application running
 at the server handle the reloading of the whole content of the grid.
 
 <figure>
-<img src="_WidgetWithoutComponent.png"
+<img src="images/_WidgetWithoutComponent.png
 title="Widget running without component" />
 <figcaption>Widget running without component</figcaption>
 </figure>
@@ -135,7 +135,7 @@ method of the peer widget.</p></td>
 
 # Widget and DOM
 
-![](_WidgetComponentDOM.png)
+![](images/_WidgetComponentDOM.png)
 
 A widget is an UI object at the client. Like Swing's component, creating
 a widget doesn't make it visible to the user. Rather, you have to attach

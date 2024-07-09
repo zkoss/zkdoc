@@ -29,7 +29,7 @@ for us to find enough clues and provide timely support. Instead of
 providing a screenshot, please follow the tips and instructions below
 when submitting your issue.
 
-![](ZK_MeetRpoblem01.png)
+![](images/ZK_MeetRpoblem01.png)
 
 ## Provide Sufficient information
 
@@ -84,7 +84,7 @@ You can check if there is any JavaScript error by opening the developer
 tool. For example, press F12 to open the chrome developer tool/ Console
 tab:
 
-![](chrome-js-error.png)
+![](images/chrome-js-error.png)
 
 You can extract the error message by:
 
@@ -120,7 +120,7 @@ If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
 like:
 
-![](au-request.png)
+![](images/au-request.png)
 
 ### Provide Related Source
 

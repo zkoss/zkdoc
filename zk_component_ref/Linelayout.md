@@ -30,7 +30,7 @@ the line area contains the line and the point.
 
 # Example
 
-![](Linelayout-1.png)
+![](images/Linelayout-1.png)
 
 ``` xml
   <zscript>
@@ -57,7 +57,7 @@ the line area contains the line and the point.
 Whether the linelayout displays vertically or horizontally. The default
 value is "vertical".
 
-![](Linelayout-3.png)
+![](images/Linelayout-3.png)
 
 ``` xml
   <linelayout orient="horizontal" lineStyle="background:rgba(0,0,0,0.5)" >

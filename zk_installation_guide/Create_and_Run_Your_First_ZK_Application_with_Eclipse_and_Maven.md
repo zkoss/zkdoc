@@ -79,7 +79,7 @@ there are two possible workarounds:
   Project\]**
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png</figcaption>
   </figure>
@@ -87,7 +87,7 @@ there are two possible workarounds:
   the New Maven Project wizard and click **Next \>**.
     
   <figure>
-  <img src="ZK_Installation_Guide_Maven_Archetype_step1.png"
+  <img src="images/ZK_Installation_Guide_Maven_Archetype_step1.png
   title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
   <figcaption>ZK_Installation_Guide_Maven_Archetype_step1.png</figcaption>
   </figure>
@@ -95,7 +95,7 @@ there are two possible workarounds:
   from the catalog dropdown list.
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png</figcaption>
   </figure>
@@ -106,7 +106,7 @@ there are two possible workarounds:
   *package* name.
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png</figcaption>
   </figure>
@@ -135,7 +135,7 @@ the list this time.
   and would be stored in *.m2/repository* in the user's home directory.
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png</figcaption>
   </figure>
@@ -151,7 +151,7 @@ the list this time.
 1.  Go to **Run As** \> **Maven build...**
       
     <figure>
-    <img src="ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png"
+    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png
     title="ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png" />
     <figcaption>ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png</figcaption>
     </figure>
@@ -159,7 +159,7 @@ the list this time.
     Tests* then click "Apply" then "Run".
       
     <figure>
-    <img src="ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png"
+    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png
     title="ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png" />
     <figcaption>ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png</figcaption>
     </figure>
@@ -172,7 +172,7 @@ the list this time.
 1.  Go to **Run As** \> **Maven install**
       
     <figure>
-    <img src="ZK_Installation_Guide_maven_Archetype_pak1.png"
+    <img src="images/ZK_Installation_Guide_maven_Archetype_pak1.png
     title="ZK_Installation_Guide_maven_Archetype_pak1.png" />
     <figcaption>ZK_Installation_Guide_maven_Archetype_pak1.png</figcaption>
     </figure>
@@ -180,7 +180,7 @@ the list this time.
     source code.
       
     <figure>
-    <img src="ZK_Installation_Guide_Quick_Start_Maven_package_project.png"
+    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png
     title="ZK_Installation_Guide_Quick_Start_Maven_package_project.png" />
     <figcaption>ZK_Installation_Guide_Quick_Start_Maven_package_project.png</figcaption>
     </figure>
@@ -274,7 +274,7 @@ configured, you can just run the project with the command below:
   Maven Projects\]**
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_import.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_import.png
   title="ZK_Installation_Guide_Quick_Start_Maven_import.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_import.png</figcaption>
   </figure>
@@ -282,7 +282,7 @@ configured, you can just run the project with the command below:
   explorer.
     
   <figure>
-  <img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png"
+  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png</figcaption>
   </figure>

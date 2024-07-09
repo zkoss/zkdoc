@@ -29,7 +29,7 @@ inside a folder, and become a basis for a new theme.
 The top level subdirectories for this folder should look similar to the
 figure below.
 
-![](theme_skeleton.png)
+![](images/theme_skeleton.png)
 
 # Create a Folder-based Theme
 

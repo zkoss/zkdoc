@@ -17,7 +17,7 @@ Used to create a separator between nav items..
 # Example
 
 <figure>
-<img src="ZKComRef_Navseparator.png"
+<img src="images/ZKComRef_Navseparator.png
 title="ZKComRef_Navseparator.png" />
 <figcaption>ZKComRef_Navseparator.png</figcaption>
 </figure>

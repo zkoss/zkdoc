@@ -19,7 +19,7 @@ This component allows users to crop a selected range of image.
 # Example
 
 <figure>
-<img src="ZKCompRef_Cropper.png" title="ZKCompRef_Cropper.png"
+<img src="images/ZKCompRef_Cropper.png title="ZKCompRef_Cropper.png"
 width="700" />
 <figcaption>ZKCompRef_Cropper.png</figcaption>
 </figure>

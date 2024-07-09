@@ -17,7 +17,7 @@ A container is used to display `navitem`, it should be placed inside a
 
 # Example
 
-![](ZKComRef_Nav.png)
+![](images/ZKComRef_Nav.png)
 
 ``` xml
 <navbar orient="vertical" width="200px">
@@ -48,7 +48,7 @@ API. The code snippets as shown below:
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZKComRef_Nav_badgeText.png"
+<img src="images/ZKComRef_Nav_badgeText.png
 title="ZKComRef_Nav_badgeText.png" />
 <figcaption>ZKComRef_Nav_badgeText.png</figcaption>
 </figure></td>

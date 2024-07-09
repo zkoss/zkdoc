@@ -11,7 +11,7 @@
 Big icons for tablet devices
 
 <figure>
-<img src="Timebox_Tablet_Example.png"
+<img src="images/Timebox_Tablet_Example.png
 title="Timebox_Tablet_Example.png" />
 <figcaption>Timebox_Tablet_Example.png</figcaption>
 </figure>

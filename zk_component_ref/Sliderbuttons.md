@@ -18,7 +18,7 @@ in a Multislider.
 # Example
 
 <figure>
-<img src="ZKComRef_Sliderbuttons.png"
+<img src="images/ZKComRef_Sliderbuttons.png
 title="ZKComRef_Sliderbuttons.png" />
 <figcaption>ZKComRef_Sliderbuttons.png</figcaption>
 </figure>

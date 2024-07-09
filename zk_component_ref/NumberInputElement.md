@@ -23,7 +23,7 @@ all of the NumberInputElement.
 For example,
 
 <figure>
-<img src="NumberInputElement-Locales.png"
+<img src="images/NumberInputElement-Locales.png
 title="NumberInputElement-Locales.png" />
 <figcaption>NumberInputElement-Locales.png</figcaption>
 </figure>

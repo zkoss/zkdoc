@@ -17,7 +17,7 @@ You could place any child in a tree footer.
 # Example
 
 <figure>
-<img src="ZKComRef_Tree_Example.png"
+<img src="images/ZKComRef_Tree_Example.png
 title="ZKComRef_Tree_Example.png" />
 <figcaption>ZKComRef_Tree_Example.png</figcaption>
 </figure>

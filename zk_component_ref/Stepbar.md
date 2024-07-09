@@ -15,7 +15,7 @@ of a multi-step task.
 
 # Example
 
-![](stepbar-example.jpg)
+![](images/stepbar-example.jpg)
 
 ``` xml
 <zk>
@@ -53,7 +53,7 @@ Non-linear means users can toggle the active steps easily by clicking on
 any step even if the step is not the next one in the sequence. In linear
 mode, they can only activate in order.
 
-![](Stepbar-linear.gif)
+![](images/Stepbar-linear.gif)
 
 ## Model
 
@@ -78,9 +78,9 @@ renders a Step object with your data.
 
 Set whether the labels in children steps are wrapped. (Default: false)
 
-true: ![](Stepber-WrappedLabels.png "Stepber-WrappedLabels.png")
+true: ![](images/Stepber-WrappedLabels.png "Stepber-WrappedLabels.png")
 
-false: ![](Stepbar-example.png "Stepbar-example.png")
+false: ![](images/Stepbar-example.png "Stepbar-example.png")
 
 # Supported Events
 

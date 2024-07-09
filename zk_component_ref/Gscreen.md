@@ -17,7 +17,7 @@ display, etc.
 # Example
 
 <figure>
-<img src="ZKComRef_Gscreen_Example.png"
+<img src="images/ZKComRef_Gscreen_Example.png
 title="ZKComRef_Gscreen_Example.png" />
 <figcaption>ZKComRef_Gscreen_Example.png</figcaption>
 </figure>

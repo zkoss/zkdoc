@@ -16,7 +16,7 @@ siblings; as if there are *no* line breaks between them.
 # Example
 
 <figure>
-<img src="ZKComRef_Span_Example.png"
+<img src="images/ZKComRef_Span_Example.png
 title="ZKComRef_Span_Example.png" />
 <figcaption>ZKComRef_Span_Example.png</figcaption>
 </figure>

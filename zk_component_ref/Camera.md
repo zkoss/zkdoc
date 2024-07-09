@@ -30,7 +30,7 @@ use the features of the Camera component.
 Note that some browsers such as Google Chrome will only accept webcam
 and microphone access from a trusted (HTTPS) source.
 
-![](RequestCamera.png)
+![](images/RequestCamera.png)
 
 The Camera component also provides a method `requestCamera()` to request
 user's media devices before starting recording or taking snapshots.
@@ -226,12 +226,12 @@ Inspect DOM on a browser and you will see an html tag \<i\> before
 names will apply to tag \<i\> depending on different states of the
 camera.
 
-![](CameraDOM.png)
+![](images/CameraDOM.png)
 
 For example, if you want to customize the paused icon, you can override
 css classes like the following:
 
-![](Pause.png)
+![](images/Pause.png)
 
 ``` css
     .z-camera-pause {

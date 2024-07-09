@@ -76,7 +76,7 @@ public class TodoListServiceImpl implements TodoListService {
 Completing the above steps, we have created a dependency relationship
 among the controller, service, and persistence classes as follows:
 
-![](/zk_essentials/images/ze-ch10-dependencies.png)
+![](images//zk_essentials/images/ze-ch10-dependencies.png)
 
 Each of these classes encapsulates cohesive functions and has decoupled
 relationships with others. You can easily expand the architecture by

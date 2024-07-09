@@ -24,7 +24,7 @@ several ways to customize the separator.
 # Example
 
 <figure>
-<img src="ZKComRef_Separator_Example.png"
+<img src="images/ZKComRef_Separator_Example.png
 title="ZKComRef_Separator_Example.png" />
 <figcaption>ZKComRef_Separator_Example.png</figcaption>
 </figure>

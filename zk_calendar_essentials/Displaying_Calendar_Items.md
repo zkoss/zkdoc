@@ -41,12 +41,12 @@ You can simply create a `CalendarItem` with the default builder:
 ```
 
 If you don't specify the title, it displays **\[begin time - end
-time\]** at an item's header: ![ center](Calendar-item.png " center")
+time\]** at an item's header: ![](images/Calendar-item.png)
 
 If an item is shorter than half an hour, it appends the content in the
 header:
 
-![](Calendar-item-halfhour.png)
+![](images/Calendar-item-halfhour.png)
 
 # Create a CalendarModel
 

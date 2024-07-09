@@ -65,7 +65,7 @@ follows:
 
 Then, the result
 
-![](DrGroupsModel.png)
+![](images/DrGroupsModel.png)
 
 # Sorting and Regrouping
 
@@ -98,7 +98,7 @@ and re-grouping as described below:
     <javadoc method="setSortDescending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>.
 
 <figure>
-<img src="Grouping_model_explain.png"
+<img src="images/Grouping_model_explain.png
 title="Grouping_model_explain.png" />
 <figcaption>Grouping_model_explain.png</figcaption>
 </figure>
@@ -109,7 +109,7 @@ Suppose you have the data in a two-dimensional array (see below), and
 you want to allow the user to group them based on a field selected by
 the user (such as food's name or food's calories).
 
-![](DrGroupsModelArray.png)
+![](images/DrGroupsModelArray.png)
 
 ``` java
 //Data

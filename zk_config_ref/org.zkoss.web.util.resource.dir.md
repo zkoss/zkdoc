@@ -89,7 +89,7 @@ So the js files will be packaged into `WEB-INF/classes/web/`.
 The picture below demonstrates how to override javascript files under
 `zkcharts.jar/web/js/chart/ext`:
 
-![](overrideByClasspathWebResourcePath.png)
+![](images/overrideByClasspathWebResourcePath.png)
 
 After doing this, ZK will load highcharts.js under
 `WEB-INF/classes/web/` instead of that js in the zkcharts.jar.

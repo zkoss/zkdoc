@@ -46,7 +46,7 @@ Seven](https://github.com/Jaspersoft/jasperreports-pdf-lib7).
 # Example
 
 <figure>
-<img src="ZKComRef_Jasperreport_Examples.PNG"
+<img src="images/ZKComRef_Jasperreport_Examples.PNG
 title="ZKComRef_Jasperreport_Examples.PNG" />
 <figcaption>ZKComRef_Jasperreport_Examples.PNG</figcaption>
 </figure>

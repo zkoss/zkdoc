@@ -34,7 +34,7 @@ For example, if a user clicks 208 pixels over and 205 pixels down from
 the upper-left corner of the image displayed from the following
 statement, then the user gets the result as depicted below.
 
-![](ZKComRef_Imagemap.png)
+![](images/ZKComRef_Imagemap.png)
 
 # Supported Events
 

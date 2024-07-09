@@ -26,7 +26,7 @@ Hbox](ZK_Component_Reference/Layouts/Hbox).
 # Example
 
 <figure>
-<img src="ZKComRef_Splitter_Examples.PNG"
+<img src="images/ZKComRef_Splitter_Examples.PNG
 title="ZKComRef_Splitter_Examples.PNG" />
 <figcaption>ZKComRef_Splitter_Examples.PNG</figcaption>
 </figure>
@@ -109,7 +109,7 @@ application.
 If you want to change the styling to be more similar to OS's look as
 follows.
 
-![](DrSplitterOS.png)
+![](images/DrSplitterOS.png)
 
 You could specify
 <javadoc method="setZclass(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
@@ -203,7 +203,7 @@ zul.jar.
 <p>default</p>
 </center></td>
 <td><figure>
-<img src="splitter_mold_default.png"
+<img src="images/splitter_mold_default.png
 title="splitter_mold_default.png" />
 <figcaption>splitter_mold_default.png</figcaption>
 </figure></td>
@@ -212,7 +212,7 @@ title="splitter_mold_default.png" />
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](splitter_mold_os.png)</td>
+<td>![](images/splitter_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

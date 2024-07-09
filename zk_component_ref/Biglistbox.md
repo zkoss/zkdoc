@@ -21,7 +21,7 @@ so on..
 
 # Example
 
-![](ZKComRef_Biglistbox.PNG)
+![](images/ZKComRef_Biglistbox.PNG)
 
 ``` xml
 <biglistbox hflex="1" vflex="1">
@@ -104,7 +104,7 @@ can use either <i><b>MatrixRenderer</b></i> interface or
 
 ## Properties
 
-![](Capture1.PNG)
+![](images/Capture1.PNG)
 
 - **cols**: specify column size for viewport.
 - **rows**: specify row size for viewport.

@@ -111,7 +111,7 @@ the component inside the form and then specify the `name` property.
 Thus, when the form is submitted, the value of, say, the datebox will be
 sent together with the name you specified. For example,
 
-![](DrForm.png)
+![](images/DrForm.png)
 
 ``` xml
 <window title="Submit" border="normal" xmlns:n="native">
@@ -191,7 +191,7 @@ items, then multiple name/value pairs are posted.
  </listbox>
 ```
 
-![](html_5.png)
+![](images/html_5.png)
 
 If both John and Henry are selected, then the query string will contain:
 

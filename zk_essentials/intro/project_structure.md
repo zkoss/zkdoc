@@ -7,7 +7,7 @@ All source codes used in this book are available on [github](https://github.com/
 * [**zk-jpa**](https://github.com/zkoss/zkessentials/tree/zk-jpa): contains examples which integrate with Spring and
 persiste data into a database with JPA.
 
-![](/zk_essentials/images/ze-ch2-download-zip.png)
+![](images//zk_essentials/images/ze-ch2-download-zip.png)
 
 You can click the "ZIP" icon to download the current selected branch as
 a zip file.
@@ -44,7 +44,7 @@ You have 2 options:
 After starting up, visit the URL http://localhost:8080/zkessentials/, and you should
 see the page below:
 
-![](/zk_essentials/images/ze-ch2-index.png)
+![](images//zk_essentials/images/ze-ch2-index.png)
 
 
 

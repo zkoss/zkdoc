@@ -39,7 +39,7 @@ declaration. For more details see the section on Axillary Headers below.
 # Example
 
 <figure>
-<img src="ZKComRef_Grid_Example.png"
+<img src="images/ZKComRef_Grid_Example.png
 title="ZKComRef_Grid_Example.png" />
 <figcaption>ZKComRef_Grid_Example.png</figcaption>
 </figure>
@@ -90,7 +90,7 @@ title="ZKComRef_Grid_Example.png" />
  </window>
 ```
 
-![](grid_onAfterRender.png)
+![](images/grid_onAfterRender.png)
 
 ``` xml
 <zk>
@@ -163,7 +163,7 @@ discussed in the previous section. Paging is enabled by setting the
 the content into several pages and displays one page at a time as
 depicted below.
 
-![](ZKComRef_Grid_Paging.png)
+![](images/ZKComRef_Grid_Paging.png)
 
 ``` xml
  
@@ -221,7 +221,7 @@ can assign the `paginal` attribute explicitly. Note: if it is not set
 explicitly, it is the same as the `paging` property.
 
 <figure>
-<img src="ZKComRef_Grid_Paginal.png"
+<img src="images/ZKComRef_Grid_Paginal.png
 title="ZKComRef_Grid_Paginal.png" />
 <figcaption>ZKComRef_Grid_Paginal.png</figcaption>
 </figure>
@@ -340,7 +340,7 @@ For example,
 </grid>
 ```
 
-![](Grid_autopageSize.png)
+![](images/Grid_autopageSize.png)
 
 **Note:** Autopaging depends on a fixed row height for all rows (i.e.
 you can't use line wrapping text in cells or the \`
@@ -496,7 +496,7 @@ assign it to a grid using the `model` attribute. Then, the grid will do
 the rest.
 
 <figure>
-<img src="ZKComRef_Grid_LiveData.png"
+<img src="images/ZKComRef_Grid_LiveData.png
 title="ZKComRef_Grid_LiveData.png" />
 <figcaption>ZKComRef_Grid_LiveData.png</figcaption>
 </figure>
@@ -558,7 +558,7 @@ and this even works under ROD.
 # Scrollable Grid
 
 <figure>
-<img src="ZKComRef_Grid_ScrollableGrid.png"
+<img src="images/ZKComRef_Grid_ScrollableGrid.png
 title="ZKComRef_Grid_ScrollableGrid.png" />
 <figcaption>ZKComRef_Grid_ScrollableGrid.png</figcaption>
 </figure>
@@ -628,7 +628,7 @@ In addition to column headers, you can specify auxiliary headers with
 the `auxhead` and `auxheader` components as follows.
 
 <figure>
-<img src="ZKComRef_Grid_AuxiliaryHeaders.png"
+<img src="images/ZKComRef_Grid_AuxiliaryHeaders.png
 title="ZKComRef_Grid_AuxiliaryHeaders.png" />
 <figcaption>ZKComRef_Grid_AuxiliaryHeaders.png</figcaption>
 </figure>
@@ -701,7 +701,7 @@ the same as the number of columns in each row as shown below:
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation.jpg"
+<img src="images/Auxheader_rowspan_limitation.jpg
 title="Auxheader_rowspan_limitation.jpg" />
 <figcaption>Auxheader_rowspan_limitation.jpg</figcaption>
 </figure>
@@ -711,7 +711,7 @@ fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
 <figure>
-<img src="Auxheader_rowspan_limitation01.jpg"
+<img src="images/Auxheader_rowspan_limitation01.jpg
 title="Auxheader_rowspan_limitation01.jpg" />
 <figcaption>Auxheader_rowspan_limitation01.jpg</figcaption>
 </figure>
@@ -743,7 +743,7 @@ example, the code in the previous example can be fixed as follows:
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation02.jpg"
+<img src="images/Auxheader_rowspan_limitation02.jpg
 title="Auxheader_rowspan_limitation02.jpg" />
 <figcaption>Auxheader_rowspan_limitation02.jpg</figcaption>
 </figure>
@@ -780,7 +780,7 @@ make the empty Columns component invisible. For example,
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation03.jpg"
+<img src="images/Auxheader_rowspan_limitation03.jpg
 title="Auxheader_rowspan_limitation03.jpg" />
 <figcaption>Auxheader_rowspan_limitation03.jpg</figcaption>
 </figure>
@@ -803,12 +803,12 @@ specifying `sizedByContent` a grid for a much more predictable result.
 By default, when sizedByContent is true, a column only takes the
 required space.
 
-![](ZKComRef_Grid_Nospan.png)
+![](images/ZKComRef_Grid_Nospan.png)
 
 If you want to span the width of the columns to occupy the whole grid,
 you could specify true to this attribute
 
-![](ZKComRef_Grid_Span.png)
+![](images/ZKComRef_Grid_Span.png)
 
 ``` xml
     <grid sizedByContent="true" span="true" width="800px">
@@ -966,7 +966,7 @@ header becomes floating and sticky on the top of the page.
 {% include edition-availability.html edition=ee %} Grid supports master-detail layout which enables
 developers to add more information on each row. For example,
 
-![](ZKComRef_Grid_Detail.png)
+![](images/ZKComRef_Grid_Detail.png)
 
 ``` xml
     <rows>
@@ -989,7 +989,7 @@ developers to add more information on each row. For example,
 For example,
 
 <figure>
-<img src="_ZKComRef_Grid_Columns_Menu.png"
+<img src="images/_ZKComRef_Grid_Columns_Menu.png
 title="_ZKComRef_Grid_Columns_Menu.png" />
 <figcaption>_ZKComRef_Grid_Columns_Menu.png</figcaption>
 </figure>
@@ -1019,7 +1019,7 @@ show an ungroup icon for user to reset the group. {% include edition-availabilit
 include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="_ZKComRef_Grid_Columns_Menu_Ungroup.PNG"
+<img src="images/_ZKComRef_Grid_Columns_Menu_Ungroup.PNG
 title="_ZKComRef_Grid_Columns_Menu_Ungroup.PNG" />
 <figcaption>_ZKComRef_Grid_Columns_Menu_Ungroup.PNG</figcaption>
 </figure>
@@ -1103,7 +1103,7 @@ supported in Grouping Grid, and Listbox with the
 <javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
 
 <figure>
-<img src="ZKComRef_Grid_Grouping.png"
+<img src="images/ZKComRef_Grid_Grouping.png
 title="ZKComRef_Grid_Grouping.png" />
 <figcaption>ZKComRef_Grid_Grouping.png</figcaption>
 </figure>
@@ -1333,13 +1333,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](grid_mold_default.png)</td>
+<td>![](images/grid_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](grid_mold_paging.png)</td>
+<td>![](images/grid_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>

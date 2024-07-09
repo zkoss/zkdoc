@@ -85,7 +85,7 @@ HTTP request to a zul. Please see
 
 By default, ZK Charts already provide 5 options for exporting a chart.
 
-![](zkcharts-essentials-defaultExporting.png)
+![](images/zkcharts-essentials-defaultExporting.png)
 
 To create custom exporting button, you have to use [exporting buttons
 options](http://api.highcharts.com/highcharts/exporting.buttons). Since
@@ -180,7 +180,7 @@ public class ExportComposer extends SelectorComposer<Component> {
 
 The result is:
 
-![](zkcharts-essentials-customExporting.png)
+![](images/zkcharts-essentials-customExporting.png)
 
 # Known Issues
 

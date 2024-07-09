@@ -20,7 +20,7 @@ control the alignment and row/column span.
 # Example
 
 <figure>
-<img src="ZKComRef_Cell_Example.png"
+<img src="images/ZKComRef_Cell_Example.png
 title="ZKComRef_Cell_Example.png" />
 <figcaption>ZKComRef_Cell_Example.png</figcaption>
 </figure>
@@ -65,7 +65,7 @@ title="ZKComRef_Cell_Example.png" />
 ```
 
 <figure>
-<img src="ZKComRef_Cell_Example_Hbox.png"
+<img src="images/ZKComRef_Cell_Example_Hbox.png
 title="ZKComRef_Cell_Example_Hbox.png" />
 <figcaption>ZKComRef_Cell_Example_Hbox.png</figcaption>
 </figure>
@@ -123,7 +123,7 @@ Although they look alike, the DOM structures generated for the two table
 cells are slightly different:
 
 <figure>
-<img src="ZK5ComRef_Cell_DOM_Comparison.png"
+<img src="images/ZK5ComRef_Cell_DOM_Comparison.png
 title="ZK5ComRef_Cell_DOM_Comparison.png" />
 <figcaption>ZK5ComRef_Cell_DOM_Comparison.png</figcaption>
 </figure>

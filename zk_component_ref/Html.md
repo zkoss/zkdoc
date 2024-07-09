@@ -19,7 +19,7 @@ in it.
 
 # Example
 
-![](ZKComRef_Html.png)
+![](images/ZKComRef_Html.png)
 
 ``` xml
  <window id="win" title="Html Demo" border="normal">

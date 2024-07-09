@@ -16,7 +16,7 @@ data. It accepts a TreeModel.
 
 # Example
 
-![](cascader-basic.png)
+![](images/cascader-basic.png)
 
 ``` xml
     <zscript><![CDATA[

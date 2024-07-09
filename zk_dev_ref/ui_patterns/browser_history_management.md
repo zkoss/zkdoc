@@ -58,7 +58,7 @@ the URL.
 If you press the BACK button, you will see as follows.
 
 <figure>
-<img src="1000000000000284000000226A7DEE65.png"
+<img src="images/1000000000000284000000226A7DEE65.png
 title="1000000000000284000000226A7DEE65.png" />
 <figcaption>1000000000000284000000226A7DEE65.png</figcaption>
 </figure>

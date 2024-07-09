@@ -16,7 +16,7 @@ button may be selected at a time.
 
 # Example
 
-![](ZKComRef_radio.png)
+![](images/ZKComRef_radio.png)
 
 ``` xml
 <window title="Radiobox &amp; Radio Demo" width="200px" border="normal">
@@ -72,7 +72,7 @@ or
 <javadoc method="setRadiogroup(org.zkoss.zul.Radiogroup)">org.zkoss.zul.Radio</javadoc>.
 
 <figure>
-<img src="ZKComRef_Radiogroup_Grid.png"
+<img src="images/ZKComRef_Radiogroup_Grid.png
 title="ZKComRef_Radiogroup_Grid.png" />
 <figcaption>ZKComRef_Radiogroup_Grid.png</figcaption>
 </figure>
@@ -152,7 +152,7 @@ In the following example, we prepared a ListModel called `strset`,
 assign it to a radigroup using the `model` attribute. Then, the
 radigroup will do the rest.
 
-![](Radiogroup.png)
+![](images/Radiogroup.png)
 
 ``` xml
     <zscript><![CDATA[

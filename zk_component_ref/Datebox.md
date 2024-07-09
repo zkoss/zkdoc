@@ -41,7 +41,7 @@ the calendar at the client by JavaScript code that overrides
 # Example
 
 <figure>
-<img src="ZKComRef_Datebox_Example.PNG"
+<img src="images/ZKComRef_Datebox_Example.PNG
 title="ZKComRef_Datebox_Example.PNG" />
 <figcaption>ZKComRef_Datebox_Example.PNG</figcaption>
 </figure>
@@ -129,7 +129,7 @@ options are specified by the developer and restrict the user to the
 available time zones.
 
 <figure>
-<img src="ZKComRef_Datebox_Timezone.png"
+<img src="images/ZKComRef_Datebox_Timezone.png
 title="ZKComRef_Datebox_Timezone.png" />
 <figcaption>ZKComRef_Datebox_Timezone.png</figcaption>
 </figure>
@@ -230,9 +230,9 @@ multiple-eras calendar systems including:
 - Japan: `locale="ja-JP-u-ca-japanese"`
 - Buddhist: `locale="th-TH-u-ca-buddhist"`
 
-![](Roc-calendar.jpg "Roc-calendar.jpg")
-![](jp-calendar.jpg "jp-calendar.jpg")
-![](buddhist-calendar.jpg "buddhist-calendar.jpg")
+![](images/Roc-calendar.jpg "Roc-calendar.jpg")
+![](images/jp-calendar.jpg "jp-calendar.jpg")
+![](images/buddhist-calendar.jpg "buddhist-calendar.jpg")
 
 See [complete locale
 list](https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html).
@@ -274,7 +274,7 @@ You can control the 2DigitYearStart by the use of the library property,
 Datebox supports to show a week number of the year in a calendar.
 
 <figure>
-<img src="ZKComRef_Datebox_Week_Of_Year.PNG"
+<img src="images/ZKComRef_Datebox_Week_Of_Year.PNG
 title="ZKComRef_Datebox_Week_Of_Year.PNG" />
 <figcaption>ZKComRef_Datebox_Week_Of_Year.PNG</figcaption>
 </figure>
@@ -290,7 +290,7 @@ Datebox supports a link to jump back to the date of today quickly
 {% include version-badge.html version=8.0.0 %}
 
 <figure>
-<img src="ZKComRef_Datebox_Link_Of_Today.PNG"
+<img src="images/ZKComRef_Datebox_Link_Of_Today.PNG
 title="ZKComRef_Datebox_Link_Of_Today.PNG" />
 <figcaption>ZKComRef_Datebox_Link_Of_Today.PNG</figcaption>
 </figure>
@@ -399,13 +399,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](datebox_mold_default.png)</td>
+<td>![](images/datebox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="datebox_mold_rounded.png"
+<td><p><img src="images/datebox_mold_rounded.png
 title="datebox_mold_rounded.png" alt="datebox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

@@ -502,7 +502,7 @@ public class TodoListController extends SelectorComposer<Component>{
 
 Implement deletion feature is similar to completing a todo item. We also
 forward each delete button's
-(![](/zk_essentials/images/ze-ch6-cross.png "fig:Tutorial-ch6-cross.png")) `onClick`
+(![](images//zk_essentials/images/ze-ch6-cross.png "fig:Tutorial-ch6-cross.png")) `onClick`
 event to the *Listbox* that encloses those buttons.
 
 **Forward delete button's `onClick`**

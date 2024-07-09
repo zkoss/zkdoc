@@ -16,7 +16,7 @@ on its width and height
 # Example
 
 <figure>
-<img src="ZKComRef_Anchorlayout_Example.png"
+<img src="images/ZKComRef_Anchorlayout_Example.png
 title="ZKComRef_Anchorlayout_Example.png" />
 <figcaption>ZKComRef_Anchorlayout_Example.png</figcaption>
 </figure>

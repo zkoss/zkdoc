@@ -11,7 +11,7 @@
 Big icons for tablet devices
 
 <figure>
-<img src="Doublespinner_Tablet_Example.png"
+<img src="images/Doublespinner_Tablet_Example.png
 title="Doublespinner_Tablet_Example.png" />
 <figcaption>Doublespinner_Tablet_Example.png</figcaption>
 </figure>

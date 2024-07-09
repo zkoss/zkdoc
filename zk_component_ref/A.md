@@ -119,7 +119,7 @@ attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-down
 
 # Example
 
-![](ZKComRef_A_Examples.PNG)
+![](images/ZKComRef_A_Examples.PNG)
 
 ``` xml
 <a href="http://www.zkoss.org" label="Visit ZK!"/>

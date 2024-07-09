@@ -32,7 +32,7 @@ It usually happens when:
 If you check developer tool \> Network, you should see a 302 Redirect
 response on a ZK AU request:
 
-![](Redirect302.jpg)
+![](images/Redirect302.jpg)
 
 If this happens, it's most likely you have a service that intercepts
 HTTP requests (e.g. a security filter) and redirects the AU request to a

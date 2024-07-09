@@ -16,7 +16,7 @@ radio button with the same group may be selected at a time.
 
 # Example
 
-![](ZKComRef_radio.png)
+![](images/ZKComRef_radio.png)
 
 ``` xml
     <vlayout>

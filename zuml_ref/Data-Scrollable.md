@@ -13,7 +13,7 @@ attribute), combobox popup, datebox popup, inside the container
 component will also move by scrolling[^1]. Those popups will disappear
 when you scroll them out of the visible area.
 
-![](errobox-scrollable.gif)
+![](images/errobox-scrollable.gif)
 
 **Usage example**
 

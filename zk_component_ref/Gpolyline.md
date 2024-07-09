@@ -16,7 +16,7 @@ points and visible zoom level(0~3).
 # Example
 
 <figure>
-<img src="ZKComRef_Gpolyline_Example.png"
+<img src="images/ZKComRef_Gpolyline_Example.png
 title="ZKComRef_Gpolyline_Example.png" />
 <figcaption>ZKComRef_Gpolyline_Example.png</figcaption>
 </figure>

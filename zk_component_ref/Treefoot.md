@@ -17,7 +17,7 @@ will appear as a footer at the bottom of the tree.
 # Example
 
 <figure>
-<img src="ZKComRef_Tree_Example.png"
+<img src="images/ZKComRef_Tree_Example.png
 title="ZKComRef_Tree_Example.png" />
 <figcaption>ZKComRef_Tree_Example.png</figcaption>
 </figure>

@@ -19,9 +19,9 @@ details into the Drawer for a better user experience.
 
 In this example we dock a drawer on the right side and put detailed file
 information into the drawer.
-![](ZK-Drawer-Example.png "ZK-Drawer-Example.png")
+![](images/ZK-Drawer-Example.png "ZK-Drawer-Example.png")
 
-![](ZK-Drawer-Example.gif)
+![](images/ZK-Drawer-Example.gif)
 
 ``` xml
 <button label="Show File Info" onClick="fi.open()"/>
@@ -60,7 +60,7 @@ Data-AnimationSpeed](ZUML_Reference/ZUML/Namespaces/Client_Attribute/Data-Animat
 
 ## Autodrop
 
-![](ZK-Drawer-Autodrop.gif)
+![](images/ZK-Drawer-Autodrop.gif)
 
 When enabled, the drawer will be opened automatically when the mouse
 cursor is near the page edge.

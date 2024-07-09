@@ -17,7 +17,7 @@ child.
 # Example
 
 <figure>
-<img src="ZKCompRef_Borderlayout.jpg"
+<img src="images/ZKCompRef_Borderlayout.jpg
 title="ZKCompRef_Borderlayout.jpg" />
 <figcaption>ZKCompRef_Borderlayout.jpg</figcaption>
 </figure>

@@ -17,7 +17,7 @@ rearrange them by dragging the tab.
 # Example
 
 <figure>
-<img src="ZKCompRef_GoldenLayout.png" title="ZKCompRef_GoldenLayout.png"
+<img src="images/ZKCompRef_GoldenLayout.png title="ZKCompRef_GoldenLayout.png"
 width="910" />
 <figcaption>ZKCompRef_GoldenLayout.png</figcaption>
 </figure>

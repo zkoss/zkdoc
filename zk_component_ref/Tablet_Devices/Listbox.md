@@ -12,7 +12,7 @@ When user swipe on the content of Listbox, the friendly scrollbar will
 appear.
 
 <figure>
-<img src="Listbox_Tablet_Example.png"
+<img src="images/Listbox_Tablet_Example.png
 title="Listbox_Tablet_Example.png" />
 <figcaption>Listbox_Tablet_Example.png</figcaption>
 </figure>

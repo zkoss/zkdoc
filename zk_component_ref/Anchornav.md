@@ -26,7 +26,7 @@ position.
 
 By default, the Anchornav will watch the scroll position of a page.
 
-![](anchornav.gif)
+![](images/anchornav.gif)
 
 ``` xml
 <zk xmlns:ca="client/attribute">

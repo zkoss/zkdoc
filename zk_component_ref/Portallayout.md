@@ -25,7 +25,7 @@ depend on the browser, and not as expected.
 
 # Example
 
-![](zkcomref_portallayout.gif)
+![](images/zkcomref_portallayout.gif)
 
 ``` xml
     <portallayout height="100%">

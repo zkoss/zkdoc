@@ -23,7 +23,7 @@ will explain the theme creation procedures step by step.
 
   
 <figure>
-<img src="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png"
+<img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png
 title="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png" />
 <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png</figcaption>
 </figure>
@@ -33,7 +33,7 @@ title="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png" />
 
   
 <figure>
-<img src="ZK_Installation_Guide_Maven_Archetype_step1.png"
+<img src="images/ZK_Installation_Guide_Maven_Archetype_step1.png
 title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
 <figcaption>ZK_Installation_Guide_Maven_Archetype_step1.png</figcaption>
 </figure>
@@ -43,14 +43,14 @@ title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
   from the list.
 
   
-![](styleguide-newtheme1.png)
+![](images/styleguide-newtheme1.png)
 
 - Next, fill in details for ***Group Id***, ***Artifact Id***,
   ***Version*** and ***Package***, and in Properties, fill in ***zk
   version***, ***theme-name**'' and***theme-listener-class**''.
 
   
-![](styleguide-newtheme2.png)
+![](images/styleguide-newtheme2.png)
 
 - The created project structure.
 
@@ -58,13 +58,13 @@ title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
 Here we can see all the LESS files from default trendy design are
 generated at the same time
 
-![](styleguide-newtheme3.png)
+![](images/styleguide-newtheme3.png)
 
 # Customize Look and Feel based on Flat Design
 
 Here is the sample design for Mesh (grid, listbox and tree) Element.
 
-![](styleguide-newtheme4.png)
+![](images/styleguide-newtheme4.png)
 
 Following steps make up a common customization method for accomplishing
 a new look and feel using LESS

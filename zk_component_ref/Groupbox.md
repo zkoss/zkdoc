@@ -23,7 +23,7 @@ up.
 # Example
 
 <figure>
-<img src="ZKComRef_Groupbox_Example.png"
+<img src="images/ZKComRef_Groupbox_Example.png
 title="ZKComRef_Groupbox_Example.png" />
 <figcaption>ZKComRef_Groupbox_Example.png</figcaption>
 </figure>
@@ -67,7 +67,7 @@ gb.setParent(outer);
 Specify the CSS style for the content block of the groupbox.
 
 <figure>
-<img src="ZKComRef_Groupbox_ContentStyle.png"
+<img src="images/ZKComRef_Groupbox_ContentStyle.png
 title="ZKComRef_Groupbox_ContentStyle.png" />
 <figcaption>ZKComRef_Groupbox_ContentStyle.png</figcaption>
 </figure>
@@ -89,7 +89,7 @@ title="ZKComRef_Groupbox_ContentStyle.png" />
 Specify the CSS class for the content block of the groupbox.
 
 <figure>
-<img src="ZKComRef_Groupbox_ContentStyle.png"
+<img src="images/ZKComRef_Groupbox_ContentStyle.png
 title="ZKComRef_Groupbox_ContentStyle.png" />
 <figcaption>ZKComRef_Groupbox_ContentStyle.png</figcaption>
 </figure>
@@ -154,7 +154,7 @@ visually. It is efficient, but it has some limitations:
 
 If it is an issue, you could use the 3d mold instead.
 
-![](groupbox-3d.jpg)
+![](images/groupbox-3d.jpg)
 
 ``` xml
  <groupbox width="250px" mold="3d">
@@ -239,7 +239,7 @@ zul.jar.
 <p>default</p>
 </center></td>
 <td><figure>
-<img src="groupbox_mold_default.png"
+<img src="images/groupbox_mold_default.png
 title="groupbox_mold_default.png" />
 <figcaption>groupbox_mold_default.png</figcaption>
 </figure></td>
@@ -248,7 +248,7 @@ title="groupbox_mold_default.png" />
 <td><center>
 <p>3d</p>
 </center></td>
-<td>![](groupbox_mold_3d.png)</td>
+<td>![](images/groupbox_mold_3d.png)</td>
 </tr>
 </tbody>
 </table>

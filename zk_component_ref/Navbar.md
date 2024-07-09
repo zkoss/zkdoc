@@ -17,7 +17,7 @@ container that usually contains nav elements.
 
 # Example
 
-![](ZKComRef_Nav.png)
+![](images/ZKComRef_Nav.png)
 
 ``` xml
 <navbar orient="vertical" width="200px">
@@ -55,13 +55,13 @@ A `navbar` could be placed in a vertical or horizontal orientation, the
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](ZKComRef_Nav_hor.png)</td>
+<td>![](images/ZKComRef_Nav_hor.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](ZKComRef_Nav.png)</td>
+<td>![](images/ZKComRef_Nav.png)</td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +92,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](ZKComRef_Nav_Hor_Cld.png)</td>
+<td>![](images/ZKComRef_Nav_Hor_Cld.png)</td>
 </tr>
 <tr class="even">
 <td><center>
@@ -101,7 +101,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](ZKComRef_Nav_Hor_No.png)</td>
+<td>![](images/ZKComRef_Nav_Hor_No.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
@@ -110,7 +110,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](ZKComRef_Nav_Ver_Cld.png)</td>
+<td>![](images/ZKComRef_Nav_Ver_Cld.png)</td>
 </tr>
 <tr class="even">
 <td><center>
@@ -119,7 +119,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](ZKComRef_Nav_Ver_No.png)</td>
+<td>![](images/ZKComRef_Nav_Ver_No.png)</td>
 </tr>
 </tbody>
 </table>

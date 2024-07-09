@@ -27,7 +27,7 @@ Toolbarbutton](ZK_Component_Reference/Essential_Components/Toolbarbutton)
 # Example
 
 <figure>
-<img src="ZKComRef_Toolbar_Example.png"
+<img src="images/ZKComRef_Toolbar_Example.png
 title="ZKComRef_Toolbar_Example.png" />
 <figcaption>ZKComRef_Toolbar_Example.png</figcaption>
 </figure>
@@ -58,7 +58,7 @@ shows a popup that contains those buttons not fitting in the toolbar.
 Default: false.
 
 <figure>
-<img src="Toolbar-overflowPopup.png"
+<img src="images/Toolbar-overflowPopup.png
 title="Toolbar-overflowPopup.png" />
 <figcaption>Toolbar-overflowPopup.png</figcaption>
 </figure>
@@ -86,7 +86,7 @@ Cheatsheet](http://fontawesome.io/cheatsheet/).
 Default: `...` symbol
 
 <figure>
-<img src="Toolbar-overflowPopupIconSclass.png"
+<img src="images/Toolbar-overflowPopupIconSclass.png
 title="Toolbar-overflowPopupIconSclass.png" />
 <figcaption>Toolbar-overflowPopupIconSclass.png</figcaption>
 </figure>
@@ -148,13 +148,13 @@ footer of a panel.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](toolbar_mold_default.png)</td>
+<td>![](images/toolbar_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>panel</p>
 </center></td>
-<td>![](toolbar_mold_panel.png)</td>
+<td>![](images/toolbar_mold_panel.png)</td>
 </tr>
 </tbody>
 </table>

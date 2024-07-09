@@ -14,7 +14,7 @@ instead of giving components a fixed height and/or width in pixels.
 
 For example,
 
-![](Fluid_Layouts.PNG)
+![](images/Fluid_Layouts.PNG)
 
 ``` xml
 <hlayout vflex="1">
@@ -52,7 +52,7 @@ Query](http://www.w3.org/TR/css3-mediaqueries/).
 
 For example,
 
-![](Adaptive_Layouts.PNG)
+![](images/Adaptive_Layouts.PNG)
 
 ``` xml
 <?taglib uri="http://www.zkoss.org/dsp/web/theme" prefix="t"?>
@@ -132,7 +132,7 @@ some components' orientation to conform that.
 
 For example,
 
-![](Responsive_Design.png)
+![](images/Responsive_Design.png)
 
 ## Zul Source Code
 

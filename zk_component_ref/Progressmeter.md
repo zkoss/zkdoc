@@ -18,7 +18,7 @@ completed. The value property must be in the range between 0 and 100.
 # Example
 
 <figure>
-<img src="ZKComRef_Progressmeter_Example.PNG"
+<img src="images/ZKComRef_Progressmeter_Example.PNG
 title="ZKComRef_Progressmeter_Example.PNG" />
 <figcaption>ZKComRef_Progressmeter_Example.PNG</figcaption>
 </figure>

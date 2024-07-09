@@ -19,7 +19,7 @@ For more information, please refer to [Safari Developer
 Library](http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW24).
 
 <figure>
-<img src="install_ios_viewpoint.jpg"
+<img src="images/install_ios_viewpoint.jpg
 title="install_ios_viewpoint.jpg" />
 <figcaption>install_ios_viewpoint.jpg</figcaption>
 </figure>

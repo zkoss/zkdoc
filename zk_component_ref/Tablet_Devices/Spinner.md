@@ -11,7 +11,7 @@
 Big icons for tablet devices
 
 <figure>
-<img src="Spinner_Tablet_Example.png"
+<img src="images/Spinner_Tablet_Example.png
 title="Spinner_Tablet_Example.png" />
 <figcaption>Spinner_Tablet_Example.png</figcaption>
 </figure>

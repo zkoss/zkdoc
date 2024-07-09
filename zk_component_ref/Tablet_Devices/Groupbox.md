@@ -19,7 +19,7 @@ For example,
 ```
 
 <figure>
-<img src="Groupbox_Tablet_Scrolling_Example.png"
+<img src="images/Groupbox_Tablet_Scrolling_Example.png
 title="Groupbox_Tablet_Scrolling_Example.png" />
 <figcaption>Groupbox_Tablet_Scrolling_Example.png</figcaption>
 </figure>

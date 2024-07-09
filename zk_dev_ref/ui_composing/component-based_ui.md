@@ -12,7 +12,7 @@ Enclosed in the <javadoc>org.zkoss.zul.Window</javadoc> component are
 two <javadoc>org.zkoss.zul.Button</javadoc> components.
 
 <figure>
-<img src="ZKEssentials_Intro_Hello.png"
+<img src="images/ZKEssentials_Intro_Hello.png
 title="ZKEssentials_Intro_Hello.png" />
 <figcaption>ZKEssentials_Intro_Hello.png</figcaption>
 </figure>
@@ -108,7 +108,7 @@ is a collection of pages. It represents a browser window (a tab or a
 frame of the browser)[^1]. You might image a desktop representing an
 independent HTTP request.
 
-![](ZKEssentials_Intro_MultiPage.png)
+![](images/ZKEssentials_Intro_MultiPage.png)
 
 A desktop is also a logic scope that an application can access in a
 request. Each time a request is sent from the client, it is associated

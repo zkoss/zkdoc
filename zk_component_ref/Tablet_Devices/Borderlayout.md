@@ -18,7 +18,7 @@ user's swipe on the edge of the region with client/attribute.
 ```
 
 <figure>
-<img src="Borderlayout_Tablet_Swipe_Example.png"
+<img src="images/Borderlayout_Tablet_Swipe_Example.png
 title="Borderlayout_Tablet_Swipe_Example.png" />
 <figcaption>Borderlayout_Tablet_Swipe_Example.png</figcaption>
 </figure>
@@ -36,7 +36,7 @@ For example,
 ```
 
 <figure>
-<img src="Borderlayout_Tablet_Scrolling_Example.png"
+<img src="images/Borderlayout_Tablet_Scrolling_Example.png
 title="Borderlayout_Tablet_Scrolling_Example.png" />
 <figcaption>Borderlayout_Tablet_Scrolling_Example.png</figcaption>
 </figure>

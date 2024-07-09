@@ -18,7 +18,7 @@ with client attribute.
 ```
 
 <figure>
-<img src="Tabbox_Tablet_Example.png"
+<img src="images/Tabbox_Tablet_Example.png
 title="Tabbox_Tablet_Example.png" />
 <figcaption>Tabbox_Tablet_Example.png</figcaption>
 </figure>
@@ -36,7 +36,7 @@ For example,
 ```
 
 <figure>
-<img src="Tabbox_Tablet_Scrolling_Example.png"
+<img src="images/Tabbox_Tablet_Scrolling_Example.png
 title="Tabbox_Tablet_Scrolling_Example.png" />
 <figcaption>Tabbox_Tablet_Scrolling_Example.png</figcaption>
 </figure>

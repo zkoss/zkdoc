@@ -20,7 +20,7 @@ Unlike Column, you could place any child in a grid footer.
 # Example
 
 <figure>
-<img src="ZKComRef_Foot_Example.png"
+<img src="images/ZKComRef_Foot_Example.png
 title="ZKComRef_Foot_Example.png" />
 <figcaption>ZKComRef_Foot_Example.png</figcaption>
 </figure>

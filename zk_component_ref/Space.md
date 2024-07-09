@@ -16,7 +16,7 @@ words, <space> is equivalent to <separator orient="horizontal">
 # Example
 
 <figure>
-<img src="ZKComRef_Space_Example.png"
+<img src="images/ZKComRef_Space_Example.png
 title="ZKComRef_Space_Example.png" />
 <figcaption>ZKComRef_Space_Example.png</figcaption>
 </figure>

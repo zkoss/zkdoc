@@ -17,7 +17,7 @@ A fisheye item
 
 # Example
 
-![](ZKComRef_fisheyebar.png)
+![](images/ZKComRef_fisheyebar.png)
 
 ``` xml
 <zk>

@@ -71,7 +71,7 @@ ZK Calendar.
 The above code's output is shown below.
 
 <figure>
-<img src="ZKCalEss_MemoryModelResult.png"
+<img src="images/ZKCalEss_MemoryModelResult.png
 title="ZKCalEss_MemoryModelResult.png" />
 <figcaption>ZKCalEss_MemoryModelResult.png</figcaption>
 </figure>

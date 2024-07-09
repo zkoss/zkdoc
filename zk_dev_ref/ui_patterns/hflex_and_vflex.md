@@ -69,7 +69,7 @@ example,
 
 And, the result
 
-![](DrFlex1.png‎)
+![](images/DrFlex1.png‎)
 
 Here is another example that we'd like to grow the tabbox to fit the
 rest of the space:
@@ -97,7 +97,7 @@ Notice you could specify `style="overflow: auto"` in the tabpanel such
 that the scrollbar will be inside the tabbox rather than the browser
 window if the content is too large to fit.
 
-![](DrFlexTabbox.png‎)
+![](images/DrFlexTabbox.png‎)
 
 # Proportional Flexibility
 
@@ -115,7 +115,7 @@ take space proportionally per the given vflex/hflex value. For example,
 
 And, the result is
 
-![](DrFlex2.png)
+![](images/DrFlex2.png)
 
 Here is another example (hflex):
 
@@ -126,7 +126,7 @@ Here is another example (hflex):
 </hlayout>
 ```
 
-![](DrFlexErr1Fix.png)
+![](images/DrFlexErr1Fix.png)
 
 # Minimum Flexibility
 
@@ -158,7 +158,7 @@ just high/wide enough to hold all of its child components. Specifying
 </borderlayout>
 ```
 
-![](vflexborderlayout.png)
+![](images/vflexborderlayout.png)
 
 As you can see, the height of the north region of the outer borderlayout
 is determined by its child borderlayout. And the height of the inner
@@ -197,7 +197,7 @@ also determine its width upon its parent, which is 150px.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZK6DevRef_Vlayout_Hflex.png"
+<img src="images/ZK6DevRef_Vlayout_Hflex.png
 title="ZK6DevRef_Vlayout_Hflex.png" />
 <figcaption>ZK6DevRef_Vlayout_Hflex.png</figcaption>
 </figure></td>
@@ -221,7 +221,7 @@ height** of siblings, which is 30px in the following sample.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZK6DevRef_Hlayout_Vflex.png"
+<img src="images/ZK6DevRef_Hlayout_Vflex.png
 title="ZK6DevRef_Hlayout_Vflex.png" />
 <figcaption>ZK6DevRef_Hlayout_Vflex.png</figcaption>
 </figure></td>
@@ -270,7 +270,7 @@ second as follows.
 
 The result is
 
-![](DrGridFlex.png)
+![](images/DrGridFlex.png)
 
 Notice that we also specify `hflex="1"` to the textbox, so it will take
 up the whole space.
@@ -284,7 +284,7 @@ set hflex="min" to Grid and each Column to keep Grid with minimal size.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZK5DevRef_GridColumn_FormHflex.png"
+<img src="images/ZK5DevRef_GridColumn_FormHflex.png
 title="ZK5DevRef_GridColumn_FormHflex.png" />
 <figcaption>ZK5DevRef_GridColumn_FormHflex.png</figcaption>
 </figure></td>
@@ -317,7 +317,7 @@ hflex="1" to Datebox.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZK5DevRef_GridColumn_FormHflex2.png"
+<img src="images/ZK5DevRef_GridColumn_FormHflex2.png
 title="ZK5DevRef_GridColumn_FormHflex2.png" />
 <figcaption>ZK5DevRef_GridColumn_FormHflex2.png</figcaption>
 </figure></td>
@@ -352,7 +352,7 @@ a Cell and set hflex="1" to the element.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZK5DevRef_GridColumn_FormHflex_colspan.png"
+<img src="images/ZK5DevRef_GridColumn_FormHflex_colspan.png
 title="ZK5DevRef_GridColumn_FormHflex_colspan.png" />
 <figcaption>ZK5DevRef_GridColumn_FormHflex_colspan.png</figcaption>
 </figure></td>
@@ -516,7 +516,7 @@ but it makes it div eventually).
 
 And, the result is as follows - the width has no effect:
 
-![](DrFlexErr1.png‎)
+![](images/DrFlexErr1.png‎)
 
 This limitation can be solved by the use of
 [hlayout](ZK_Component_Reference/Layouts/Hlayout) and
@@ -530,7 +530,7 @@ This limitation can be solved by the use of
 </hlayout>
 ```
 
-![](DrFlexErr1Fix.png)
+![](images/DrFlexErr1Fix.png)
 
 ## Hflex Must Align Correctly
 
@@ -547,7 +547,7 @@ its siblings. For example,
 As shown below, the second div is not aligned vertically with the first
 div, so is the width not as expected:
 
-![](DrFlexErr2.png‎)
+![](images/DrFlexErr2.png‎)
 
 This limitation can be solved by use of
 [hlayout](ZK_Component_Reference/Layouts/Hlayout) and

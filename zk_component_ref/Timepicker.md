@@ -16,7 +16,7 @@ Hour, Minute, and Second are used.
 
 # Example
 
-![](ZKCompRef_Timepicker.png)
+![](images/ZKCompRef_Timepicker.png)
 
 ``` xml
 <timepicker/>

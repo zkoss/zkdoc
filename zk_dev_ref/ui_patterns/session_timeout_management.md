@@ -17,7 +17,7 @@ called automatic timeout.
 By default, a message is shown to prompt the user and prevent from
 further accessing as depicted below.
 
-![](DrSessTimeout.png)
+![](images/DrSessTimeout.png)
 
 ## Custom Message
 

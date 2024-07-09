@@ -9,7 +9,7 @@ ListModel, render required Row(s)/Listitem(s) on the server, then create
 only the required corresponding widgets and render the DOM elements
 really needed in the browser. It improves the performance and saves
 memory significantly on both the server and browser sides.
-![](Rod_demonstration.gif "Rod_demonstration.gif")
+![](images/Rod_demonstration.gif "Rod_demonstration.gif")
 
 # Prerequisite
 

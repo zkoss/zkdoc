@@ -11,7 +11,7 @@
 When user swipe on the content of Grid, the friendly scrollbar will
 appear.
 
-![](Grid_Tablet_Example.png)
+![](images/Grid_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.

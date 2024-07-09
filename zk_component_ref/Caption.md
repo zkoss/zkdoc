@@ -49,7 +49,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 # Example
 
 <figure>
-<img src="ZKComRef_Caption_Example.png"
+<img src="images/ZKComRef_Caption_Example.png
 title="ZKComRef_Caption_Example.png" />
 <figcaption>ZKComRef_Caption_Example.png</figcaption>
 </figure>

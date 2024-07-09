@@ -19,7 +19,7 @@ menu on the Mac OS.
 
 # Example
 
-![](ZKComRef_fisheyebar.png)
+![](images/ZKComRef_fisheyebar.png)
 
 ``` xml
 <zk>

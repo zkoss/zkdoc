@@ -17,7 +17,7 @@ surpport Listheader as its child.
 # Example
 
 <figure>
-<img src="ZKComRef_Listbox_Example.png"
+<img src="images/ZKComRef_Listbox_Example.png
 title="ZKComRef_Listbox_Example.png" />
 <figcaption>ZKComRef_Listbox_Example.png</figcaption>
 </figure>
@@ -70,7 +70,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 ### Auto
 
 <figure>
-<img src="_ZKComRef_Listbox_Columns_Menu.PNG"
+<img src="images/_ZKComRef_Listbox_Columns_Menu.PNG
 title="_ZKComRef_Listbox_Columns_Menu.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu.PNG</figcaption>
 </figure>
@@ -99,7 +99,7 @@ to change this default behavior.
 ### Customized Menupopup
 
 <figure>
-<img src="ZKComRef_Listbox_Columns_Customized_Menu.png"
+<img src="images/ZKComRef_Listbox_Columns_Customized_Menu.png
 title="ZKComRef_Listbox_Columns_Customized_Menu.png" />
 <figcaption>ZKComRef_Listbox_Columns_Customized_Menu.png</figcaption>
 </figure>

@@ -22,7 +22,7 @@ property.
 
 # Example
 
-![](ZKComRef_Multislider.png)
+![](images/ZKComRef_Multislider.png)
 
 ``` xml
   <multislider>

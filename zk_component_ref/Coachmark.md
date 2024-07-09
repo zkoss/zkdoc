@@ -23,7 +23,7 @@ of operations in the desired order.
 
 ## Basic
 
-![](Coachmark-4.png)
+![](images/Coachmark-4.png)
 
 ``` xml
     <button id="infoButton" label="Information" />
@@ -76,7 +76,7 @@ The target component that the Coachmark will point itself to. You need
 to specify a component's id or an EL expression that resolved to a
 component e.g. `${self.previousSibling}`
 
-![](Coachmark-1.png)
+![](images/Coachmark-1.png)
 
 ``` xml
     <button id="infoButton" label="button"/>

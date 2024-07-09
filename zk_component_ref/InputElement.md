@@ -55,7 +55,7 @@ You should not use this class directly, please use the inherited class.
 </grid>
 ```
 
-![](CrInputs.png)
+![](images/CrInputs.png)
 
 # Validation
 
@@ -310,7 +310,7 @@ will be invoked when an exception is caught. For example,
 
 And, here is the result
 
-![](CrCustomConstraint.png)
+![](images/CrCustomConstraint.png)
 
 ### Validate at Client for Better Responsiveness
 
@@ -400,7 +400,7 @@ The following image and code show the look of the placeholder as well as
 the code to replicate it.
 
 <figure>
-<img src="zk_textbox_placeholder.png"
+<img src="images/zk_textbox_placeholder.png
 title="zk_textbox_placeholder.png" />
 <figcaption>zk_textbox_placeholder.png</figcaption>
 </figure>

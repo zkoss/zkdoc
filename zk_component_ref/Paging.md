@@ -37,7 +37,7 @@ time, then you can use the paging components as follows.
 <paging totalSize="100" pageSize="20"/>
 ```
 
-![](paging_mold_default.png)
+![](images/paging_mold_default.png)
 
 When a user clicks on the hyperlinks, the `onPaging` event is sent with
 an instance of <javadoc>org.zkoss.zul.event.PagingEvent</javadoc> to the
@@ -92,7 +92,7 @@ navigating through the pagination. For example,
 
 Under `os` mold, the component renders a list of paging anchors for
 users to jump to the specific page:
-![](PagingAnchor.jpg "PagingAnchor.jpg")
+![](images/PagingAnchor.jpg "PagingAnchor.jpg")
 
 This attribute determines the max number of rendered paging anchors.
 
@@ -168,13 +168,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](paging_mold_default.png)</td>
+<td>![](images/paging_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](paging_mold_os.png)</td>
+<td>![](images/paging_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

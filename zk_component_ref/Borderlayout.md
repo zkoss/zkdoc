@@ -23,7 +23,7 @@ all kinds of components) to form a complicated layout.
 # Example
 
 <figure>
-<img src="ZKCompRef_Borderlayout.jpg"
+<img src="images/ZKCompRef_Borderlayout.jpg
 title="ZKCompRef_Borderlayout.jpg" />
 <figcaption>ZKCompRef_Borderlayout.jpg</figcaption>
 </figure>
@@ -83,7 +83,7 @@ that East and West also takes on the height of Center.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](DrBorderlayout.png)</td>
+<td>![](images/DrBorderlayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -118,7 +118,7 @@ child component.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](DrBorderlayout_flex.png)</td>
+<td>![](images/DrBorderlayout_flex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -154,7 +154,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="DrBorderlayout_Center_scrolling.png"
+<img src="images/DrBorderlayout_Center_scrolling.png
 title="DrBorderlayout_Center_scrolling.png" />
 <figcaption>DrBorderlayout_Center_scrolling.png</figcaption>
 </figure></td>
@@ -208,7 +208,7 @@ include version-badge.html version=7.0.2 %}
 <table>
 <tbody>
 <tr class="odd">
-<td>![](DrBorderlayout_grow.png)</td>
+<td>![](images/DrBorderlayout_grow.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>

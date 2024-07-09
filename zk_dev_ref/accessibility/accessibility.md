@@ -131,7 +131,7 @@ mouse/touch support, landmarks and so on.
 
 [Check demo source at Github](https://github.com/zkoss-demo/za11y-demo)
 
-![](_Wcag_demo.png)
+![](images/_Wcag_demo.png)
 
 # Screen Reader
 

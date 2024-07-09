@@ -243,9 +243,9 @@ As a result, the page response should contain both a CSP header
 including our nonce, as well as a nonce on all script elements generated
 by the ZK page.
 
-![](Cspheader.png)
+![](images/Cspheader.png)
 
-![](Cspnonce.png)
+![](images/Cspnonce.png)
 
 ## Notes
 

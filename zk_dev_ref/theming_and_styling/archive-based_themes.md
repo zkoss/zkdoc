@@ -29,7 +29,7 @@ basis for a new theme, and be ready to be packaged inside a jar file.
 The top-level subdirectories for this folder should look similar to the
 figure below.
 
-![](theme_skeleton.png)
+![](images/theme_skeleton.png)
 
 # Create an Archive-based Theme
 

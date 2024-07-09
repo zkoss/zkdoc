@@ -25,7 +25,7 @@ button.
 
 # Example
 
-![](ZKComRef_Treeitem.png)
+![](images/ZKComRef_Treeitem.png)
 
 ``` xml
 

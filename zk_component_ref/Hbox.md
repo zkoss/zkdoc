@@ -27,7 +27,7 @@ of TABLE).
 # Example
 
 <figure>
-<img src="ZKComRef_Hbox_Simple_Examples.PNG"
+<img src="images/ZKComRef_Hbox_Simple_Examples.PNG
 title="ZKComRef_Hbox_Simple_Examples.PNG" />
 <figcaption>ZKComRef_Hbox_Simple_Examples.PNG</figcaption>
 </figure>
@@ -53,7 +53,7 @@ title="ZKComRef_Hbox_Simple_Examples.PNG" />
 ## Align and Pack
 
 <figure>
-<img src="ZKComRef_Hbox_Simple_Examples_align_pack.PNG"
+<img src="images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG
 title="ZKComRef_Hbox_Simple_Examples_align_pack.PNG" />
 <figcaption>ZKComRef_Hbox_Simple_Examples_align_pack.PNG</figcaption>
 </figure>

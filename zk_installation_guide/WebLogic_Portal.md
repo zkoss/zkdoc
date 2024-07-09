@@ -9,21 +9,21 @@ JSP portlet.
 1.  Right click on *portlet* folder \> \[New\] \> \[Portlet\]
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_01.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_01.png
     title="ZK_Installation_Guide_WebLogic_Portal_01.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_01.png</figcaption>
     </figure>
 2.  Give a file name then click *Next*.
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_02.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_02.png
     title="ZK_Installation_Guide_WebLogic_Portal_02.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_02.png</figcaption>
     </figure>
 3.  Select **JSP/HTML Portlet** then click *Next*.
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_03.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_03.png
     title="ZK_Installation_Guide_WebLogic_Portal_03.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_03.png</figcaption>
     </figure>
@@ -31,7 +31,7 @@ JSP portlet.
     *zul page location* then click *Create*.
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_04.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_04.png
     title="ZK_Installation_Guide_WebLogic_Portal_04.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_04.png</figcaption>
     </figure>
@@ -41,7 +41,7 @@ JSP portlet.
 - Create myZulPage.zul in the *WebContent/portlet/myzulpage* folder.
     
   <figure>
-  <img src="ZK_Installation_Guide_WebLogic_Portal_05.png"
+  <img src="images/ZK_Installation_Guide_WebLogic_Portal_05.png
   title="ZK_Installation_Guide_WebLogic_Portal_05.png" />
   <figcaption>ZK_Installation_Guide_WebLogic_Portal_05.png</figcaption>
   </figure>
@@ -51,14 +51,14 @@ JSP portlet.
 1.  Drag *myZulPage.portlet* to "Page 1" in the index.portal.
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_06.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_06.png
     title="ZK_Installation_Guide_WebLogic_Portal_06.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_06.png</figcaption>
     </figure>
 2.  Done.
       
     <figure>
-    <img src="ZK_Installation_Guide_WebLogic_Portal_07.png"
+    <img src="images/ZK_Installation_Guide_WebLogic_Portal_07.png
     title="ZK_Installation_Guide_WebLogic_Portal_07.png" />
     <figcaption>ZK_Installation_Guide_WebLogic_Portal_07.png</figcaption>
     </figure>
@@ -69,7 +69,7 @@ JSP portlet.
   [<http://localhost:7001/myPortalWebProject/index.portal>](http://localhost:7001/myPortalWebProject/index.portal).
     
   <figure>
-  <img src="ZK_Installation_Guide_WebLogic_Portal_08.png"
+  <img src="images/ZK_Installation_Guide_WebLogic_Portal_08.png
   title="ZK_Installation_Guide_WebLogic_Portal_08.png" />
   <figcaption>ZK_Installation_Guide_WebLogic_Portal_08.png</figcaption>
   </figure>

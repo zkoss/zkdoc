@@ -18,12 +18,12 @@ when `next()` or `previous()` is called, transition of components
 through animation will occur whereas the `orient` attribute decides
 whether the direction of the animation is horizontal or vertical.
 
-![](ZKComRef_Cardlayout_Horizontal.png "ZKComRef_Cardlayout_Horizontal.png")
-![](ZKComRef_Cardlayout_Vertical.png "ZKComRef_Cardlayout_Vertical.png")
+![](images/ZKComRef_Cardlayout_Horizontal.png "ZKComRef_Cardlayout_Horizontal.png")
+![](images/ZKComRef_Cardlayout_Vertical.png "ZKComRef_Cardlayout_Vertical.png")
 
 # Example
 
-![](cardlayout.gif)
+![](images/cardlayout.gif)
 
 ``` xml
     <cardlayout id="card" width="300px" height="200px" style="border:3px solid orange" selectedIndex="1">

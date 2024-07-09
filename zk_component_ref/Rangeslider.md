@@ -21,7 +21,7 @@ min property.
 
 # Example
 
-![](ZKComRef_Rangeslider.png)
+![](images/ZKComRef_Rangeslider.png)
 
 ``` xml
   <rangeslider startValue="10" endValue="90"/>
@@ -65,7 +65,7 @@ If the MarkScale is 0 and there is no Map information in Marks (see
 above), the marks will be empty.
 
 <figure>
-<img src="ZKComRef_RangesliderNoMarks.png"
+<img src="images/ZKComRef_RangesliderNoMarks.png
 title="ZKComRef_RangesliderNoMarks.png" />
 <figcaption>ZKComRef_RangesliderNoMarks.png</figcaption>
 </figure>

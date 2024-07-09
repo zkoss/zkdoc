@@ -16,7 +16,7 @@ to implement the chart configuration with ZK Charts refer to [ Changing
 Chart
 Configuration](ZK_Charts_Essentials/Working_with_ZK_Charts/Changing_Chart_Configuration)
 
-![](ZK_charts_intro.png)
+![](images/ZK_charts_intro.png)
 
 ## Why ZK Charts
 

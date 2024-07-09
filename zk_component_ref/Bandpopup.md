@@ -20,7 +20,7 @@ component.
 # Example
 
 <figure>
-<img src="ZKComRef_Bandbox_Example.png"
+<img src="images/ZKComRef_Bandbox_Example.png
 title="ZKComRef_Bandbox_Example.png" />
 <figcaption>ZKComRef_Bandbox_Example.png</figcaption>
 </figure>

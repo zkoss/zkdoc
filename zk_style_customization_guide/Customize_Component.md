@@ -30,7 +30,7 @@ the developer tool.
   
   
 <figure>
-<img src="Zkless_servlet_scaffod.png"
+<img src="images/Zkless_servlet_scaffod.png
 title="Zkless_servlet_scaffod.png" />
 <figcaption>Zkless_servlet_scaffod.png</figcaption>
 </figure>
@@ -50,7 +50,7 @@ to customize a component.
 
   
   
-![](Styleguide_prj_str.png)
+![](images/Styleguide_prj_str.png)
 
 - 3\. Tweak window style and Check window style at runtime by ZK Less
   Servlet.

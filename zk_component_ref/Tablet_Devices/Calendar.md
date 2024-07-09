@@ -16,7 +16,7 @@ with client/attribute.
 ```
 
 <figure>
-<img src="Calendar_Tablet_Example.png"
+<img src="images/Calendar_Tablet_Example.png
 title="Calendar_Tablet_Example.png" />
 <figcaption>Calendar_Tablet_Example.png</figcaption>
 </figure>

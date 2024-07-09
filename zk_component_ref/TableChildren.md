@@ -23,7 +23,7 @@ The child of tablechildren can be any component.
 # Example
 
 <figure>
-<img src="ZKComRef_Tablelayout_Example.PNG"
+<img src="images/ZKComRef_Tablelayout_Example.PNG
 title="ZKComRef_Tablelayout_Example.PNG" />
 <figcaption>ZKComRef_Tablelayout_Example.PNG</figcaption>
 </figure>
@@ -62,7 +62,7 @@ title="ZKComRef_Tablelayout_Example.PNG" />
 The child of tablechildren can be any component.
 
 <figure>
-<img src="ZKComRef_Tablelayout_Example_ZK6.PNG‎"
+<img src="images/ZKComRef_Tablelayout_Example_ZK6.PNG‎
 title="ZKComRef_Tablelayout_Example_ZK6.PNG‎" />
 <figcaption>ZKComRef_Tablelayout_Example_ZK6.PNG‎</figcaption>
 </figure>

@@ -17,7 +17,7 @@ Video](ZK_Component_Reference/Multimedia_and_Miscellaneous/Video).
 
 # Example
 
-![](Player-Sample.png)
+![](images/Player-Sample.png)
 
 ``` xml
  <video src="course.mp4" controls="true">
@@ -29,7 +29,7 @@ Video](ZK_Component_Reference/Multimedia_and_Miscellaneous/Video).
 ```
 
 <figure>
-<img src="ZKComRef_Audio_Example.png"
+<img src="images/ZKComRef_Audio_Example.png
 title="ZKComRef_Audio_Example.png" />
 <figcaption>ZKComRef_Audio_Example.png</figcaption>
 </figure>

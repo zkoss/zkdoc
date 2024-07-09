@@ -13,4 +13,4 @@ For example:
   </library-property>
 ```
 
-![](Response_content_type_json.png)
+![](images/Response_content_type_json.png)

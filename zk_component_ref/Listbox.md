@@ -22,7 +22,7 @@ in its content.
 # Example
 
 <figure>
-<img src="ZKComRef_Listbox_Example.png"
+<img src="images/ZKComRef_Listbox_Example.png
 title="ZKComRef_Listbox_Example.png" />
 <figcaption>ZKComRef_Listbox_Example.png</figcaption>
 </figure>
@@ -68,7 +68,7 @@ In theory, a list cell can contain any other components, as demonstrated
 below.
 
 <figure>
-<img src="ZKComRef_Listbox_Example_ContainComponents.png"
+<img src="images/ZKComRef_Listbox_Example_ContainComponents.png
 title="ZKComRef_Listbox_Example_ContainComponents.png" />
 <figcaption>ZKComRef_Listbox_Example_ContainComponents.png</figcaption>
 </figure>
@@ -120,7 +120,7 @@ If the `select` mold is used, Listbox renders an HTML `<select>` tag
 instead.
 
 <figure>
-<img src="1000000000000085000000343B08C7D1.png"
+<img src="images/1000000000000085000000343B08C7D1.png
 title="1000000000000085000000343B08C7D1.png" />
 <figcaption>1000000000000085000000343B08C7D1.png</figcaption>
 </figure>
@@ -154,7 +154,7 @@ value to each item using the `setValue` method.
 This mold supports having Listgroups and renders them as HTML
 <optgroup>.
 
-![](Select-mold-optgroup.png)
+![](images/Select-mold-optgroup.png)
 
 ``` xml
 <listbox mold="select">
@@ -326,11 +326,11 @@ To select multiple items, you can:
 
 - press `Ctrl` to select separate items:
 
-![](listbox-select-separately.png)
+![](images/listbox-select-separately.png)
 
 - press `Shift` to select consecutive items:
 
-![](listbox-select-consecutive.png)
+![](images/listbox-select-consecutive.png)
 
 ### Enable with a ListModel
 
@@ -359,7 +359,7 @@ The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each list item.
 
 <figure>
-<img src="ZKComRef_Listbox_Checkmark.png"
+<img src="images/ZKComRef_Listbox_Checkmark.png
 title="ZKComRef_Listbox_Checkmark.png" />
 <figcaption>ZKComRef_Listbox_Checkmark.png</figcaption>
 </figure>
@@ -422,7 +422,7 @@ the right listbox to the left listbox.
 ```
 
 <figure>
-<img src="ZKComRef_Listbox_Checkmark2.png"
+<img src="images/ZKComRef_Listbox_Checkmark2.png
 title="ZKComRef_Listbox_Checkmark2.png" />
 <figcaption>ZKComRef_Listbox_Checkmark2.png</figcaption>
 </figure>
@@ -524,7 +524,7 @@ listheader, listbox sorts the column based on the **'label** of each
 listcell in a **case-insensitive** way.
 
 <figure>
-<img src="ZKComRef_Listbox_Sorting.png"
+<img src="images/ZKComRef_Listbox_Sorting.png
 title="ZKComRef_Listbox_Sorting.png" />
 <figcaption>ZKComRef_Listbox_Sorting.png</figcaption>
 </figure>
@@ -552,7 +552,7 @@ In the following example, we demonstrate how to sort a person object
 based on its First Name, Last Name, or Age.
 
 <figure>
-<img src="ZKComRef_Listbox_Auto_Sorting.png"
+<img src="images/ZKComRef_Listbox_Auto_Sorting.png
 title="ZKComRef_Listbox_Auto_Sorting.png" />
 <figcaption>ZKComRef_Listbox_Auto_Sorting.png</figcaption>
 </figure>
@@ -729,7 +729,7 @@ interface for rendering a item of data into the listbox.
 the `itemRenderer` attribute.
 
 <figure>
-<img src="ZKComRef_Listbox_LiveData.png"
+<img src="images/ZKComRef_Listbox_LiveData.png
 title="ZKComRef_Listbox_LiveData.png" />
 <figcaption>ZKComRef_Listbox_LiveData.png</figcaption>
 </figure>
@@ -819,7 +819,7 @@ The simplest format is as follows. It is a single-column and
 single-selection list box.
 
 <figure>
-<img src="ZKComRef_Listbox_SingleColumn.png"
+<img src="images/ZKComRef_Listbox_SingleColumn.png
 title="ZKComRef_Listbox_SingleColumn.png" />
 <figcaption>ZKComRef_Listbox_SingleColumn.png</figcaption>
 </figure>
@@ -845,7 +845,7 @@ number of columns with a row. For example if there are 4 columns then
 each row must contain 4 listcells.
 
 <figure>
-<img src="ZKComRef_Listbox_MultiColumn.png"
+<img src="images/ZKComRef_Listbox_MultiColumn.png
 title="ZKComRef_Listbox_MultiColumn.png" />
 <figcaption>ZKComRef_Listbox_MultiColumn.png</figcaption>
 </figure>
@@ -876,7 +876,7 @@ please see the code below[^2]. In addition to a label, you can specify
 an image as the header by `image` attribute.
 
 <figure>
-<img src="ZKComRef_Listbox_ColumnHeaders.png"
+<img src="images/ZKComRef_Listbox_ColumnHeaders.png
 title="ZKComRef_Listbox_ColumnHeaders.png" />
 <figcaption>ZKComRef_Listbox_ColumnHeaders.png</figcaption>
 </figure>
@@ -904,7 +904,7 @@ list box, it must be the first child, and a `listfoot` instance the last
 child.
 
 <figure>
-<img src="ZKComRef_Listbox_ColumnFooters.png"
+<img src="images/ZKComRef_Listbox_ColumnFooters.png
 title="ZKComRef_Listbox_ColumnFooters.png" />
 <figcaption>ZKComRef_Listbox_ColumnFooters.png</figcaption>
 </figure>
@@ -957,7 +957,7 @@ and making the box a single row. Notice you cannot use multi-column for
 the drop-down list.
 
 <figure>
-<img src="1000000000000049000000488DCF4463.png"
+<img src="images/1000000000000049000000488DCF4463.png
 title="1000000000000049000000488DCF4463.png" />
 <figcaption>1000000000000049000000488DCF4463.png</figcaption>
 </figure>
@@ -981,7 +981,7 @@ calculated height (e.g. by specifying the `rows`, `height` or `vflex`
 attribute) and there is not enough space to display all the list items.
 
 <figure>
-<img src="ZKComRef_Listbox_Scrollable.png"
+<img src="images/ZKComRef_Listbox_Scrollable.png
 title="ZKComRef_Listbox_Scrollable.png" />
 <figcaption>ZKComRef_Listbox_Scrollable.png</figcaption>
 </figure>
@@ -1059,7 +1059,7 @@ result.
 true, the listheaders only take the required space.
 
 <figure>
-<img src="ZKComRef_Listbox_Nospan.png"
+<img src="images/ZKComRef_Listbox_Nospan.png
 title="ZKComRef_Listbox_Nospan.png" />
 <figcaption>ZKComRef_Listbox_Nospan.png</figcaption>
 </figure>
@@ -1068,7 +1068,7 @@ If you want to span the width of the listheaders to occupy the whole
 listbox, you can specify true to this attribute
 
 <figure>
-<img src="ZKComRef_Listbox_Span.png"
+<img src="images/ZKComRef_Listbox_Span.png
 title="ZKComRef_Listbox_Span.png" />
 <figcaption>ZKComRef_Listbox_Span.png</figcaption>
 </figure>
@@ -1152,7 +1152,7 @@ the auto-fitting functionality. {% include version-badge.html version=5.0.0 %}
 ## The onAfterRender Event
 
 <figure>
-<img src="listbox_onAfterRender.png"
+<img src="images/listbox_onAfterRender.png
 title="listbox_onAfterRender.png" />
 <figcaption>listbox_onAfterRender.png</figcaption>
 </figure>
@@ -1187,7 +1187,7 @@ Listbox's header becomes floating and sticky on the top of the page.
 For example, {% include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="_ZKComRef_Listbox_Columns_Menu.PNG"
+<img src="images/_ZKComRef_Listbox_Columns_Menu.PNG
 title="_ZKComRef_Listbox_Columns_Menu.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu.PNG</figcaption>
 </figure>
@@ -1217,7 +1217,7 @@ show an ungroup icon for user to reset the group. {% include edition-availabilit
 include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG"
+<img src="images/_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG
 title="_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG</figcaption>
 </figure>
@@ -1280,7 +1280,7 @@ supported in Grouping Grid, and Listbox with the
 <javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
 
 <figure>
-<img src="ZKComRef_Listbox_Grouping.png"
+<img src="images/ZKComRef_Listbox_Grouping.png
 title="ZKComRef_Listbox_Grouping.png" />
 <figcaption>ZKComRef_Listbox_Grouping.png</figcaption>
 </figure>
@@ -1577,19 +1577,19 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](listbox_mold_default.png)</td>
+<td>![](images/listbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>select</p>
 </center></td>
-<td>![](listbox_mold_select.png)</td>
+<td>![](images/listbox_mold_select.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](listbox_mold_paging.png)</td>
+<td>![](images/listbox_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>

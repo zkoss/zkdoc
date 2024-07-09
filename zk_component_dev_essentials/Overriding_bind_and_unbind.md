@@ -4,7 +4,7 @@ and
 <javadoc directory="jsdoc" method="unbind_(zk.Skipper, _global_.Array)" class="false">zk.Widget</javadoc>
 methods are called. Firstly let’s take a look at how binding works.
 
-![](images/ZKComDevEss_bind_.png)
+![](images/images/ZKComDevEss_bind_.png)
 
 The
 <javadoc directory="jsdoc" method="unbind_(zk.Skipper, _global_.Array)" class="false">zk.Widget</javadoc>
@@ -14,7 +14,7 @@ method is called to enable us to perform tasks such as adding and
 removing listeners to avoid memory leaks. The diagram below demonstrates
 this.
 
-![](images/ZKComDevEss_unbind_.png)
+![](images/images/ZKComDevEss_unbind_.png)
 
 Now that we have had a brief introduction of
 <javadoc directory="jsdoc" method="bind_(zk.Desktop, zk.Skipper, _global_.Array)" class="false">zk.Widget</javadoc>

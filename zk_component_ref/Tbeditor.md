@@ -28,7 +28,7 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 # Example
 
 <figure>
-<img src="Zkcompref_tbeditor.png" title="Zkcompref_tbeditor.png"
+<img src="images/Zkcompref_tbeditor.png title="Zkcompref_tbeditor.png"
 width="800" />
 <figcaption>Zkcompref_tbeditor.png</figcaption>
 </figure>

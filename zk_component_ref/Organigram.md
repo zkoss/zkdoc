@@ -26,7 +26,7 @@ Demand](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/C
 
 # Example
 
-![](Organigram_example.png)
+![](images/Organigram_example.png)
 
 ``` xml
     <organigram width="600px">
@@ -57,7 +57,7 @@ Demand](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/C
 
 # Model-Driven Display
 
-![](Organigram_example2.png)
+![](images/Organigram_example2.png)
 
 ``` xml
     <zscript><![CDATA[
@@ -88,7 +88,7 @@ to get the selected Orgitem.
 
 Example:
 
-![](Organigram_selection.png)
+![](images/Organigram_selection.png)
 
 ``` xml
     <organigram width="600px" onSelect="Clients.log(self.getSelectedItem().getLabel())">

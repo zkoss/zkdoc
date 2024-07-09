@@ -43,7 +43,7 @@ by use of `iframe`, as long as the client supports its format.
 
 # Example
 
-![](ZKComRef_Iframe.png)
+![](images/ZKComRef_Iframe.png)
 
 ``` xml
 <window id="win" title="This is an Iframe Demo!">

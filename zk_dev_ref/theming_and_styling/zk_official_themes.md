@@ -89,7 +89,7 @@ See below to take a quick view at the look and feel of **Atlantic**,
 click image to view original size.
 
 <figure>
-<img src="atlantic-look-and-feel.png"
+<img src="images/atlantic-look-and-feel.png
 title=" none | thumb | 300px | Atlantic" />
 <figcaption> none | thumb | 300px | Atlantic</figcaption>
 </figure>
@@ -127,13 +127,13 @@ Themes](ZK_Developer's_Reference/Theming_and_Styling/Switching_Themes).
 
 Iceblue(**default**), Poppy, Marigold, Olive, Aurora, Lavender
 
-![](ZK85_Theme_Lite.png)
+![](images/ZK85_Theme_Lite.png)
 
 ## Dark themes
 
 Ruby, Amber, Emerald, Aquamarine, Montana, Violet
 
-![](ZK85_Theme_Dark.png)
+![](images/ZK85_Theme_Dark.png)
 
 ## Mix-match
 
@@ -141,7 +141,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![](ZK85_Theme_Mix.png)
+![](images/ZK85_Theme_Mix.png)
 
 ## Accessibility-ready themes
 

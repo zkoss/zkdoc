@@ -13,7 +13,7 @@ example, "*z-window-**header***" means header part of window component.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](Zk-css-dom.PNG)</td>
+<td>![](images/Zk-css-dom.PNG)</td>
 <td><dl>
 <dt></dt>
 <dd>

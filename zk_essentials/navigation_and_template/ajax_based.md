@@ -9,7 +9,7 @@ another function. With AJAX's help, ZK allows you to implement another
 navigation way that only updates necessary part of a page instead of
 reloading the whole page.
 
-![](/zk_essentials/images/ze-ch7-ajax-based-navigation.png)
+![](images//zk_essentials/images/ze-ch7-ajax-based-navigation.png)
 <div style="text-align:center">
 <strong>AJAX-based Navigation</strong>
 </div>

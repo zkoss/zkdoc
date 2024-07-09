@@ -84,7 +84,7 @@ and the top of the Calendar component is used to display the daylong
 event.
 
 <figure>
-<img src="ZKCalEss_Default_mold.jpg"
+<img src="images/ZKCalEss_Default_mold.jpg
 title="ZKCalEss_Default_mold.jpg" />
 <figcaption>ZKCalEss_Default_mold.jpg</figcaption>
 </figure>
@@ -95,7 +95,7 @@ In the month mold, the content of each day has no background color, the
 text is colored and the item over one day has a background color with
 white text. When using the month mold, each row represents one week.
 
-![](ZKCalEss_Month_mold.jpg)
+![](images/ZKCalEss_Month_mold.jpg)
 
 By just changing one attribute ZK affords us exceptional power. But how
 do we change this attribute? The next section explains how.
@@ -112,7 +112,7 @@ Calendar's default time zone.
 <calendars timeZone="Finland=GMT+2, Taiwan=GMT+8"/>
 ```
 
-![](zkcal-timeZone.png)
+![](images/zkcal-timeZone.png)
 
 ## width , height
 
@@ -134,7 +134,7 @@ Sets the beginning hour of a day.
 <calendars beginTime="8"/>
 ```
 
-![](zkcal-beginTime.png)
+![](images/zkcal-beginTime.png)
 
 ## weekOfYear
 
@@ -142,7 +142,7 @@ default: `false`
 
 Determine whether to show the week number of one year.
 
-![](WeekOfyear.jpg)
+![](images/WeekOfyear.jpg)
 
 # Add Application Logic
 

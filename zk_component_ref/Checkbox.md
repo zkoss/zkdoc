@@ -15,7 +15,7 @@ A checkbox.
 # Example
 
 <figure>
-<img src="ZKComRef_Checkbox_Example.png"
+<img src="images/ZKComRef_Checkbox_Example.png
 title="ZKComRef_Checkbox_Example.png" />
 <figcaption>ZKComRef_Checkbox_Example.png</figcaption>
 </figure>
@@ -53,12 +53,12 @@ overriding class.
 
 Default:
 
-![](Switch-off.png "Switch-off.png") ![](Switch-on.png "Switch-on.png")
+![](images/Switch-off.png "Switch-off.png") ![](images/Switch-on.png "Switch-on.png")
 
 Customized in CSS:
 
-![](Switch-off-customized.png "Switch-off-customized.png")
-![](Switch-on-customized.png "Switch-on-customized.png")
+![](images/Switch-off-customized.png "Switch-off-customized.png")
+![](images/Switch-on-customized.png "Switch-on-customized.png")
 
 ``` css
 .z-checkbox-switch-off > .z-checkbox-mold {
@@ -79,12 +79,12 @@ Customized in CSS:
 
 Default:
 
-![](Toggle-off.png "Toggle-off.png") ![](Toggle-on.png "Toggle-on.png")
+![](images/Toggle-off.png "Toggle-off.png") ![](images/Toggle-on.png "Toggle-on.png")
 
 Customized in CSS:
 
-![](Toggle-off-customized.png "Toggle-off-customized.png")
-![](Toggle-on-customized.png "Toggle-on-customized.png")
+![](images/Toggle-off-customized.png "Toggle-off-customized.png")
+![](images/Toggle-on-customized.png "Toggle-on-customized.png")
 
     .z-checkbox-toggle-off > .z-checkbox-mold {
         background-color: red;
@@ -101,7 +101,7 @@ tristate mold, when users click on the checkbox, it will switch between
 checked, unchecked and indeterminate states. This is different from the
 default mold which has only checked and unchecked states.
 
-![](Tristate.png)
+![](images/Tristate.png)
 
 ``` xml
 <checkbox mold="tristate"></checkbox>
@@ -127,7 +127,7 @@ changing `checked` attribute will set `indeterminate` to `false`.
     <checkbox indeterminate="true"/>
 ```
 
-Display a checkbox like: ![](Indeterminate.png "Indeterminate.png")
+Display a checkbox like: ![](images/Indeterminate.png "Indeterminate.png")
 
 # Supported Events
 

@@ -11,7 +11,7 @@ zones, and permission control.
 Go to see [Online
 Demo](https://www.zkoss.org/zkdemo/zk_calendar/zk_calendar)
 
-![](ZKCalEss_CalendarIntroduction.png)
+![](images/ZKCalEss_CalendarIntroduction.png)
 
 # Important Change
 

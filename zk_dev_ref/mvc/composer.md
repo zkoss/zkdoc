@@ -400,7 +400,7 @@ public class MyFullComposer extends SelectorComposer<Component> implements FullC
 
 Here is a lifecycle of the invocation of a composer:
 
-![](Composer.PNG)
+![](images/Composer.PNG)
 
 # System-level Composer
 

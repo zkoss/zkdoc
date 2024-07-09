@@ -38,7 +38,7 @@ Microsoft Word and OpenOffice.
 
 # Example
 
-![](ZKCompRef_CKEditor.png)
+![](images/ZKCompRef_CKEditor.png)
 
 ``` xml
 <ckeditor width="850px">
@@ -63,7 +63,7 @@ Microsoft Word and OpenOffice.
 </ckeditor>
 ```
 
-![](ZKCompRef_CKEditor2.png)
+![](images/ZKCompRef_CKEditor2.png)
 
 ## Enable save button
 
@@ -91,12 +91,12 @@ CKEditor will open a new window and list all images in the file browser.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZKCompRef_CKEditor_filebrowser2.png"
+<img src="images/ZKCompRef_CKEditor_filebrowser2.png
 title="ZKCompRef_CKEditor_filebrowser2.png" />
 <figcaption>ZKCompRef_CKEditor_filebrowser2.png</figcaption>
 </figure></td>
 <td><figure>
-<img src="ZKCompRef_CKEditor_filebrowser3.png"
+<img src="images/ZKCompRef_CKEditor_filebrowser3.png
 title="ZKCompRef_CKEditor_filebrowser3.png" />
 <figcaption>ZKCompRef_CKEditor_filebrowser3.png</figcaption>
 </figure></td>
@@ -131,12 +131,12 @@ application can access its own folder.
 <tbody>
 <tr class="odd">
 <td><figure>
-<img src="ZKCompRef_CKEditor_fileupload.png"
+<img src="images/ZKCompRef_CKEditor_fileupload.png
 title="ZKCompRef_CKEditor_fileupload.png" />
 <figcaption>ZKCompRef_CKEditor_fileupload.png</figcaption>
 </figure></td>
 <td><figure>
-<img src="ZKCompRef_CKEditor_fileupload2.png"
+<img src="images/ZKCompRef_CKEditor_fileupload2.png
 title="ZKCompRef_CKEditor_fileupload2.png" />
 <figcaption>ZKCompRef_CKEditor_fileupload2.png</figcaption>
 </figure></td>
@@ -389,7 +389,7 @@ Build** are currently not supported.
 Classic editor shows a boxed editing area with a toolbar, placed in a
 specific position on the page.
 
-![](ClassicEditor.jpg)
+![](images/ClassicEditor.jpg)
 
 ## Balloon Editor
 
@@ -397,7 +397,7 @@ Balloon editor lets you create your content directly in its target
 location with the help of a balloon toolbar that appears next to the
 selected editable document element.
 
-![](BalloonEditor.jpg)
+![](images/BalloonEditor.jpg)
 
 ## Balloon Block Editor
 
@@ -407,16 +407,16 @@ location with the help of two toolbars:
 - A balloon toolbar that appears next to the selected editable document
   element (offering inline content formatting tools).
 - A block toolbar accessible using the toolbar handle button
-  <img src="DragIndicator.png" title="DragIndicator.png" width="15"
+  <img src="images/DragIndicator.png title="DragIndicator.png" width="15"
   alt="DragIndicator.png" /> attached to the editable content area and
   following the selection in the document (bringing additional block
   formatting tools). The
-  <img src="DragIndicator.png" title="DragIndicator.png" width="15"
+  <img src="images/DragIndicator.png title="DragIndicator.png" width="15"
   alt="DragIndicator.png" /> button is also a handle that can be used to
   drag and drop blocks around the content.
 
 <figure>
-<img src="BalloonBlockEditor.jpg" title="BalloonBlockEditor.jpg"
+<img src="images/BalloonBlockEditor.jpg title="BalloonBlockEditor.jpg"
 width="700" />
 <figcaption>BalloonBlockEditor.jpg</figcaption>
 </figure>
@@ -427,7 +427,7 @@ Inline editor lets you create your content directly in its target
 location with the help of a floating toolbar that apprears when the
 editable text is focused.
 
-![](InlineEditor.jpg)
+![](images/InlineEditor.jpg)
 
 ## How to use?
 
@@ -483,7 +483,7 @@ public void doAfterCompose(Window comp) throws Exception {
 ```
 
 <figure>
-<img src="CKEditor5Example.png" title="CKEditor5Example.png"
+<img src="images/CKEditor5Example.png title="CKEditor5Example.png"
 width="600" />
 <figcaption>CKEditor5Example.png</figcaption>
 </figure>

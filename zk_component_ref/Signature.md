@@ -20,7 +20,7 @@ it also provides undo, save and clear methods.
 
 # Example
 
-![](Signature.png)
+![](images/Signature.png)
 
 ``` xml
 <signature width="600px" height="300px" penColor="white" backgroundColor="#AED6F1" penSize="6"/>
@@ -52,11 +52,11 @@ message after icons on the buttons, we provide three attributes:
 
 Default:
 
-![](Signature_toolbar.png)
+![](images/Signature_toolbar.png)
 
 Customized:
 
-![](Signature_toolbar2.png)
+![](images/Signature_toolbar2.png)
 
 ``` xml
 <signature undoLabel="Undo" clearLabel="Clear" saveLabel="Save"/>
@@ -100,7 +100,7 @@ setting.
 ## Scanned Paper Form
 
 You can load a scanned paper form as a background and save it with a
-signature. ![](Paper-form.jpg "Paper-form.jpg")
+signature. ![](images/Paper-form.jpg "Paper-form.jpg")
 
 # Saves Signature Image
 

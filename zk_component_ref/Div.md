@@ -16,7 +16,7 @@ if there is a line break before and after it.
 
 # Example
 
-![](ZKComRef_Div_Example.png)
+![](images/ZKComRef_Div_Example.png)
 
 ``` xml
 <div align="left" width="300px">

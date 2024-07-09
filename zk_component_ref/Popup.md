@@ -26,7 +26,7 @@ of the following attributes:
 
 # Example
 
-![](ZKComRef_Popup.PNG)
+![](images/ZKComRef_Popup.PNG)
 
 ``` xml
 <separator bar="true" />
@@ -40,7 +40,7 @@ of the following attributes:
 </popup>
 ```
 
-![](ZKComRef_Popup2.PNG)
+![](images/ZKComRef_Popup2.PNG)
 
 ``` xml
 <textbox popup="popup, position=after_start"/>
@@ -70,7 +70,7 @@ by
 string:
 
 <figure>
-<img src="ZKComRef_Popup_Position_601.png"
+<img src="images/ZKComRef_Popup_Position_601.png
 title="ZKComRef_Popup_Position_601.png" />
 <figcaption>ZKComRef_Popup_Position_601.png</figcaption>
 </figure>
@@ -83,7 +83,7 @@ top_right, bottom_left, and bottom_right, respectively.
 
 The 14 possible positions are provided below:
 
-![](ZKComRef_Popup_Position.png)
+![](images/ZKComRef_Popup_Position.png)
 
 The following illustrates the simplicity of usage,
 
@@ -98,7 +98,7 @@ Upon clicking the button the popup component will appear in the relative
 position specified. In this case the position is just above the button.
 
 <figure>
-<img src="ZKComRef_Popup_Beforestart.png"
+<img src="images/ZKComRef_Popup_Beforestart.png
 title="ZKComRef_Popup_Beforestart.png" />
 <figcaption>ZKComRef_Popup_Beforestart.png</figcaption>
 </figure>

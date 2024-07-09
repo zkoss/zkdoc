@@ -19,7 +19,7 @@ For example,
 ```
 
 <figure>
-<img src="Window_Tablet_Scrolling_Example.png"
+<img src="images/Window_Tablet_Scrolling_Example.png
 title="Window_Tablet_Scrolling_Example.png" />
 <figcaption>Window_Tablet_Scrolling_Example.png</figcaption>
 </figure>

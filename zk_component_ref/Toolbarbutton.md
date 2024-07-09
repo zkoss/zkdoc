@@ -37,7 +37,7 @@ Toolbar](ZK_Component_Reference/Essential_Components/Toolbar)
 # Example
 
 <figure>
-<img src="ZKComRef_Toolbarbutton_Example.png"
+<img src="images/ZKComRef_Toolbarbutton_Example.png
 title="ZKComRef_Toolbarbutton_Example.png" />
 <figcaption>ZKComRef_Toolbarbutton_Example.png</figcaption>
 </figure>
@@ -70,7 +70,7 @@ title="ZKComRef_Toolbarbutton_Example.png" />
 {% include version-badge.html version=6.0.0 %}
 
 <figure>
-<img src="Toolbarbutton_togglemode.png"
+<img src="images/Toolbarbutton_togglemode.png
 title="Toolbarbutton_togglemode.png" />
 <figcaption>Toolbarbutton_togglemode.png</figcaption>
 </figure>

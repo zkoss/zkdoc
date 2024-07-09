@@ -1,6 +1,6 @@
 # Process AU Requests at Server
 
-![](ClientEventAuRequest.png)
+![](images/ClientEventAuRequest.png)
 
 A widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) is
 converted to an AU request and then sent to the server. When the event

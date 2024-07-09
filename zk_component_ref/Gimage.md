@@ -16,7 +16,7 @@ and north-east) which is zoomed and moved with the Google Maps.
 # Example
 
 <figure>
-<img src="ZKComRef_Gimage_Example.png"
+<img src="images/ZKComRef_Gimage_Example.png
 title="ZKComRef_Gimage_Example.png" />
 <figcaption>ZKComRef_Gimage_Example.png</figcaption>
 </figure>

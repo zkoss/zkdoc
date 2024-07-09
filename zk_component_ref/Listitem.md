@@ -16,7 +16,7 @@ A list item.
 # Example
 
 <figure>
-<img src="ZKComRef_Listbox_Example.png"
+<img src="images/ZKComRef_Listbox_Example.png
 title="ZKComRef_Listbox_Example.png" />
 <figcaption>ZKComRef_Listbox_Example.png</figcaption>
 </figure>
@@ -101,13 +101,13 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](listbox_mold_default.png)</td>
+<td>![](images/listbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>select</p>
 </center></td>
-<td>![](listbox_mold_select.png)</td>
+<td>![](images/listbox_mold_select.png)</td>
 </tr>
 </tbody>
 </table>

@@ -19,7 +19,7 @@ server.
 
 # Example
 
-![](selectbox9.png)
+![](images/selectbox9.png)
 
 ``` xml
 <zk>

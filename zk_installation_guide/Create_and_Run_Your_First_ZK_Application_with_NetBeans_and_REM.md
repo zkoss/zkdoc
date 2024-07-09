@@ -28,12 +28,12 @@ IDE](https://netbeans.apache.org/download/index.html) and install
       
 4.  Click on the "Downloaded" tab, followed by "Add Plugins" to open the
     file explore  
-    ![](ZKInstallationGuide_NetBeans_AddPlugins.png "ZKInstallationGuide_NetBeans_AddPlugins.png")  
+    ![](images/ZKInstallationGuide_NetBeans_AddPlugins.png "ZKInstallationGuide_NetBeans_AddPlugins.png")  
       
 5.  Navigate to where REM is downloaded and select the REM plugin  
       
 6.  Click "Install" and follow the NetBeans plugin manager prompts  
-    ![](ZKInstallationGuide_NetBeans_InstallPlugin.png "ZKInstallationGuide_NetBeans_InstallPlugin.png")  
+    ![](images/ZKInstallationGuide_NetBeans_InstallPlugin.png "ZKInstallationGuide_NetBeans_InstallPlugin.png")  
       
 
 # Create a New ZK Project
@@ -41,14 +41,14 @@ IDE](https://netbeans.apache.org/download/index.html) and install
 1.  On NetBeans main menu bar, select "New Project"  
       
 2.  On the New Project wizard under "Categories", select "Java Web"  
-    ![](ZKInstallationGuide_NetBeans_SelectNewZKProject.png "ZKInstallationGuide_NetBeans_SelectNewZKProject.png")  
+    ![](images/ZKInstallationGuide_NetBeans_SelectNewZKProject.png "ZKInstallationGuide_NetBeans_SelectNewZKProject.png")  
       
 3.  Confirm and create a new ZK project.  
-    ![](_ZKInstallationGuide_NetBeans_CreateNewZKProject.png "_ZKInstallationGuide_NetBeans_CreateNewZKProject.png")  
+    ![](images/_ZKInstallationGuide_NetBeans_CreateNewZKProject.png "_ZKInstallationGuide_NetBeans_CreateNewZKProject.png")  
       
 4.  Select the ZK project folder, and right click "Run" to deploy the
     project on Glassfish  
-    ![](ZKInstallationGuide_NetBeans_RunZKProject.png "ZKInstallationGuide_NetBeans_RunZKProject.png")  
+    ![](images/ZKInstallationGuide_NetBeans_RunZKProject.png "ZKInstallationGuide_NetBeans_RunZKProject.png")  
       
 
 # Deploy the ZK Demo Project
@@ -57,13 +57,13 @@ IDE](https://netbeans.apache.org/download/index.html) and install
       
 2.  On the New Project wizard under "Categories", expand the "Samples"
     folder and select "Java Web"  
-    ![](ZKInstallationGuide_NetBeans_SelectNewZKProject.png "ZKInstallationGuide_NetBeans_SelectNewZKProject.png")  
+    ![](images/ZKInstallationGuide_NetBeans_SelectNewZKProject.png "ZKInstallationGuide_NetBeans_SelectNewZKProject.png")  
       
 3.  Select "ZK505 Demo Project" under "Projects"  
       
 4.  Select the ZK demo project and right click to select "Run" to deploy
     the ZK demo  
-    ![](ZKInstallationGuide_NetBeans_RunZKDemo.png "ZKInstallationGuide_NetBeans_RunZKDemo.png")  
+    ![](images/ZKInstallationGuide_NetBeans_RunZKDemo.png "ZKInstallationGuide_NetBeans_RunZKDemo.png")  
       
 
 # Version History

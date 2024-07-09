@@ -79,7 +79,7 @@ Please remember to check which Highcharts version is available for an
 option.
 
 <figure>
-<img src="zkcharts-essentials-apiVersion.jpg"
+<img src="images/zkcharts-essentials-apiVersion.jpg
 title="zkcharts-essentials-apiVersion.jpg" />
 <figcaption>zkcharts-essentials-apiVersion.jpg</figcaption>
 </figure>
@@ -88,7 +88,7 @@ You can know the version of Highcharts bundled in ZK Charts by checking
 `chart.wpd` in a developer tool. (search **Highcharts**)
 
 <figure>
-<img src="zkcharts-essentials-highchartsVersion.png"
+<img src="images/zkcharts-essentials-highchartsVersion.png
 title="zkcharts-essentials-highchartsVersion.png" />
 <figcaption>zkcharts-essentials-highchartsVersion.png</figcaption>
 </figure>
@@ -101,7 +101,7 @@ For example, there is an option [series /
 fillOpacity](http://api.highcharts.com/highcharts/series%3Carea%3E.fillOpacity)
 without a setter available.
 
-![](zkcharts-essentials-fillOpacity.png)
+![](images/zkcharts-essentials-fillOpacity.png)
 
 Thus, you can set it like:
 

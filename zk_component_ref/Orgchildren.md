@@ -18,7 +18,7 @@ children.
 
 # Example
 
-![](Orgchildren_example.png)
+![](images/Orgchildren_example.png)
 
         <organigram width="600px">
             <orgchildren>

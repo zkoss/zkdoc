@@ -201,7 +201,7 @@ and move to next field, the line of text is changed even you don't press
 the "Save" button. This could be a problem because it would mislead users,
 making them think they have changed their profile, so we want to remove such behavior.
 
-![](/zk_essentials/images/ze-ch5-unsaved.png)
+![](images//zk_essentials/images/ze-ch5-unsaved.png)
 
 <div style="text-align:center">
 <strong>Unsaved Input Changes Data</strong>

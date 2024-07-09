@@ -17,7 +17,7 @@ generated video. Users can control the video by `play`, `stop` and
 
 # Example
 
-![](Player-Sample.png)
+![](images/Player-Sample.png)
 
 ``` xml
  <video src="zk.mp4" controls="true" autoplay="true" loop="true" />
@@ -77,7 +77,7 @@ the Video.
 When the theater mode is enabled, user can click anywhere on the page
 outside the Video to disable theater mode and return to the normal view.
 
-![](Player-turnOffLight.png)
+![](images/Player-turnOffLight.png)
 
 ``` xml
  <video src="zk.mp4" dimBackground="true" />

@@ -142,7 +142,7 @@ Assume the image below is our target design for Borderlayout component
 and Splitter component.
 
 <figure>
-<img src="styleguide-borderlayout-design.png"
+<img src="images/styleguide-borderlayout-design.png
 title="styleguide-borderlayout-design.png" />
 <figcaption>styleguide-borderlayout-design.png</figcaption>
 </figure>
@@ -308,7 +308,7 @@ title="styleguide-borderlayout-design.png" />
 ## Final result
 
 <figure>
-<img src="styleguide-borderlayout.png"
+<img src="images/styleguide-borderlayout.png
 title="styleguide-borderlayout.png" />
 <figcaption>styleguide-borderlayout.png</figcaption>
 </figure>

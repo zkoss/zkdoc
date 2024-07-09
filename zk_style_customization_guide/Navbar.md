@@ -101,7 +101,7 @@ Assume the image below is our target design for Navbar component - no
 border, gradient background, rounded corner or shadow effects.
 
 <figure>
-<img src="styleguide-nav-design.png"
+<img src="images/styleguide-nav-design.png
 title="styleguide-nav-design.png" />
 <figcaption>styleguide-nav-design.png</figcaption>
 </figure>
@@ -242,7 +242,7 @@ title="styleguide-nav-design.png" />
 
 ## Final result
 
-![](styleguide-nav.png)
+![](images/styleguide-nav.png)
 
 # Version History
 

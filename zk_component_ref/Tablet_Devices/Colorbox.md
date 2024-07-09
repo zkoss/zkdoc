@@ -11,7 +11,7 @@
 Big icons for tablet devices
 
 <figure>
-<img src="Colorbox_Tablet_Example.png"
+<img src="images/Colorbox_Tablet_Example.png
 title="Colorbox_Tablet_Example.png" />
 <figcaption>Colorbox_Tablet_Example.png</figcaption>
 </figure>

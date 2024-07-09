@@ -11,7 +11,7 @@
 Big icons for tablet devices
 
 <figure>
-<img src="Datebox_Tablet_Example.png"
+<img src="images/Datebox_Tablet_Example.png
 title="Datebox_Tablet_Example.png" />
 <figcaption>Datebox_Tablet_Example.png</figcaption>
 </figure>

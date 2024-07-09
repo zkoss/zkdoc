@@ -1,7 +1,7 @@
 # Overview
 
 <figure>
-<img src="ZKComDevEss_widget_component_application.png"
+<img src="images/ZKComDevEss_widget_component_application.png
 title="ZKComDevEss_widget_component_application.png" />
 <figcaption>ZKComDevEss_widget_component_application.png</figcaption>
 </figure>

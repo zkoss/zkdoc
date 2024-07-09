@@ -17,7 +17,7 @@ An edit box for holding big decimal value .
 # Example
 
 <figure>
-<img src="ZKComRef_Decimalbox_Examples.PNG"
+<img src="images/ZKComRef_Decimalbox_Examples.PNG
 title="ZKComRef_Decimalbox_Examples.PNG" />
 <figcaption>ZKComRef_Decimalbox_Examples.PNG</figcaption>
 </figure>

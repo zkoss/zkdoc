@@ -19,7 +19,7 @@ avoid end-users from inputting a non-existed item.
 
 # Example
 
-![](Searchbox-example.png)
+![](images/Searchbox-example.png)
 
 ``` xml
 <zscript>

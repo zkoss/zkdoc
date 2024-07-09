@@ -85,7 +85,7 @@ server to a local folder. For example,
 ```
 
 <figure>
-<img src="10000000000002AF000001BB582C2DD7.png"
+<img src="images/10000000000002AF000001BB582C2DD7.png
 title="10000000000002AF000001BB582C2DD7.png" />
 <figcaption>10000000000002AF000001BB582C2DD7.png</figcaption>
 </figure>

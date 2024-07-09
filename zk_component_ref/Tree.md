@@ -29,7 +29,7 @@ tree will display nothing in its content.
 ## 2-Column Tree
 
 <figure>
-<img src="ZKComRef_Tree_Example.png"
+<img src="images/ZKComRef_Tree_Example.png
 title="ZKComRef_Tree_Example.png" />
 <figcaption>ZKComRef_Tree_Example.png</figcaption>
 </figure>
@@ -80,7 +80,7 @@ title="ZKComRef_Tree_Example.png" />
 
 ## Default Selection
 
-![](tree_onAfterRender.png)
+![](images/tree_onAfterRender.png)
 
 ``` xml
     <zscript><![CDATA[
@@ -284,7 +284,7 @@ the model instead of the tree itself.
 ## The Checkmark Property
 
 <figure>
-<img src="ZKComRef_Tree_checkmark.png"
+<img src="images/ZKComRef_Tree_checkmark.png
 title="ZKComRef_Tree_checkmark.png" />
 <figcaption>ZKComRef_Tree_checkmark.png</figcaption>
 </figure>
@@ -405,7 +405,7 @@ href="DefaultTristateTreeModel_demo.mov">Video</a></video>
 </figure>
 
 Treecols's header checkmark also support tristate
-<img src="DefaultTristateTreeModelwithTreecol.png"
+<img src="images/DefaultTristateTreeModelwithTreecol.png
 title="DefaultTristateTreeModelwithTreecol.png" width="700"
 alt="DefaultTristateTreeModelwithTreecol.png" />
 
@@ -480,7 +480,7 @@ A tree will be scrollable if you specify the rows attribute or the
 height attribute and there is not enough space to display all the tree
 items.
 
-![](scrollable_tree.png)
+![](images/scrollable_tree.png)
 
 ``` xml
 <tree rows="4">
@@ -767,13 +767,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](tree_mold_default.png)</td>
+<td>![](images/tree_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](tree_mold_paging.png)</td>
+<td>![](images/tree_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>

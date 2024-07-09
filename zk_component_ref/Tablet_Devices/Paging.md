@@ -17,7 +17,7 @@ attribute.
 ```
 
 <figure>
-<img src="Paging_Tablet_Example.png"
+<img src="images/Paging_Tablet_Example.png
 title="Paging_Tablet_Example.png" />
 <figcaption>Paging_Tablet_Example.png</figcaption>
 </figure>

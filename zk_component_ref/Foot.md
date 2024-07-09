@@ -18,7 +18,7 @@ Footer](ZK_Component_Reference/Data/Grid/Footer)) for a grid
 # Example
 
 <figure>
-<img src="ZKComRef_Foot_Example.png"
+<img src="images/ZKComRef_Foot_Example.png
 title="ZKComRef_Foot_Example.png" />
 <figcaption>ZKComRef_Foot_Example.png</figcaption>
 </figure>

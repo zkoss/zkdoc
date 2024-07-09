@@ -23,7 +23,7 @@ enhanced and can be customized easily.
 
 # Example
 
-![](ZKComRef_Button.jpg)
+![](images/ZKComRef_Button.jpg)
 
 ``` xml
     <button label="Left" image="/img/network.gif" width="125px"/>
@@ -426,19 +426,19 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](button_mold_default.png)</td>
+<td>![](images/button_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>trendy</p>
 </center></td>
-<td>![](button_mold_trendy.png)</td>
+<td>![](images/button_mold_trendy.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](button_mold_os.png)</td>
+<td>![](images/button_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

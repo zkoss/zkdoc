@@ -22,7 +22,7 @@ Columnchildren can only allow Panel as its child.
 # Example
 
 <figure>
-<img src="ZKComRef_Columnlayout_Example.png"
+<img src="images/ZKComRef_Columnlayout_Example.png
 title="ZKComRef_Columnlayout_Example.png" />
 <figcaption>ZKComRef_Columnlayout_Example.png</figcaption>
 </figure>

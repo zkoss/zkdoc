@@ -19,7 +19,7 @@ multiple detail rows are on the same row.
 
 # Example
 
-![](detail.png)
+![](images/detail.png)
 
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>

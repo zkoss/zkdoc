@@ -21,7 +21,7 @@ with grid/listbox/tree.
 
 An auxiliary header.
 
-![](ZKComRef_Auxheader.png)
+![](images/ZKComRef_Auxheader.png)
 
 ``` xml
 
@@ -100,7 +100,7 @@ the same as the number of columns in each row as shown below:
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation.jpg"
+<img src="images/Auxheader_rowspan_limitation.jpg
 title="Auxheader_rowspan_limitation.jpg" />
 <figcaption>Auxheader_rowspan_limitation.jpg</figcaption>
 </figure>
@@ -110,7 +110,7 @@ fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
 <figure>
-<img src="Auxheader_rowspan_limitation01.jpg"
+<img src="images/Auxheader_rowspan_limitation01.jpg
 title="Auxheader_rowspan_limitation01.jpg" />
 <figcaption>Auxheader_rowspan_limitation01.jpg</figcaption>
 </figure>
@@ -142,7 +142,7 @@ example, the code in the previous example can be fixed as follows:
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation02.jpg"
+<img src="images/Auxheader_rowspan_limitation02.jpg
 title="Auxheader_rowspan_limitation02.jpg" />
 <figcaption>Auxheader_rowspan_limitation02.jpg</figcaption>
 </figure>
@@ -179,7 +179,7 @@ empty Columns component invisible. For example,
 ```
 
 <figure>
-<img src="Auxheader_rowspan_limitation03.jpg"
+<img src="images/Auxheader_rowspan_limitation03.jpg
 title="Auxheader_rowspan_limitation03.jpg" />
 <figcaption>Auxheader_rowspan_limitation03.jpg</figcaption>
 </figure>

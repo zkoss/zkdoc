@@ -106,7 +106,7 @@ Clients.showBusy(window, "Waiting for server...");
 ```
 
 <figure>
-<img src="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png"
+<img src="images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png
 title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png" />
 <figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png</figcaption>
 </figure>
@@ -209,7 +209,7 @@ which is dismissed upon left click (like a Popup). Unlike Notification,
 Toast is stackable.
 
 <figure>
-<img src="ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png"
+<img src="images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png
 title="ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png" />
 <figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png</figcaption>
 </figure>
@@ -256,7 +256,7 @@ the progress of a task.
 
 You can control a loadingbar with the LoadingbarControl.
 
-![](_Loadingbar.gif)
+![](images/_Loadingbar.gif)
 
 ``` java
 // create a LoadingbarControl for control the loadingbar
@@ -275,7 +275,7 @@ loadingbarCtrl.start(20, "top", false);
 
 You can turn on/off the indeterminate animation:
 
-![](_Loadingbar2.gif)
+![](images/_Loadingbar2.gif)
 
 ``` java
 loadingbarCtrl.update(true); // set loadingbar indeterminate true

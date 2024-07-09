@@ -16,7 +16,7 @@ tabpanel components.
 # Example
 
 <figure>
-<img src="ZKComRef_Containers_Tabs.PNG"
+<img src="images/ZKComRef_Containers_Tabs.PNG
 title="ZKComRef_Containers_Tabs.PNG" />
 <figcaption>ZKComRef_Containers_Tabs.PNG</figcaption>
 </figure>

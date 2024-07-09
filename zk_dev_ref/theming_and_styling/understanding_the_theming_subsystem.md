@@ -21,4 +21,4 @@ resources.
 Please refer to the subsections for more information on the constituent
 parts.
 
-![](ThemeSubsystem.png)
+![](images/ThemeSubsystem.png)

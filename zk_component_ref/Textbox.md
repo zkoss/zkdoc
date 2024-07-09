@@ -27,7 +27,7 @@ a notification will pop up.
 
 # Example
 
-![](ZKCompRef_Textbox.png)
+![](images/ZKCompRef_Textbox.png)
 
 ``` xml
 <textbox value="text..." />
@@ -62,7 +62,7 @@ By specifying a true, the tabbox can insert a long space or format the
 content inside textbox conveniently. For example,
 
 <figure>
-<img src="ZKComRef_Textbox_Tabbable.png"
+<img src="images/ZKComRef_Textbox_Tabbable.png
 title="ZKComRef_Textbox_Tabbable.png" />
 <figcaption>ZKComRef_Textbox_Tabbable.png</figcaption>
 </figure>

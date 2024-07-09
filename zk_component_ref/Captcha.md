@@ -20,7 +20,7 @@ a purposive text.
 
 # Example
 
-![](captcha.png)
+![](images/captcha.png)
 
 ``` xml
  <vbox>

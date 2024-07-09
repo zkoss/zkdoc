@@ -11,7 +11,7 @@
 When user swipe on the content of Tree, the friendly scrollbar will
 appear.
 
-![](Tree_Tablet_Example.png)
+![](images/Tree_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.

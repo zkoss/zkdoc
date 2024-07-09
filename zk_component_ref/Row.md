@@ -20,7 +20,7 @@ Default getSclass(): the same as grid's sclass.
 # Example
 
 <figure>
-<img src="ZKComRef_Grid_Example.png‎"
+<img src="images/ZKComRef_Grid_Example.png‎
 title="ZKComRef_Grid_Example.png‎" />
 <figcaption>ZKComRef_Grid_Example.png‎</figcaption>
 </figure>

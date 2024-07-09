@@ -23,7 +23,7 @@ been enhanced and can be customized easily.
 
 # Example
 
-![](ZKComRef_Menuitem.png)
+![](images/ZKComRef_Menuitem.png)
 
 ``` xml
 <menubar>

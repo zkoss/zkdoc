@@ -23,7 +23,7 @@ window, a file download dialog is shown at the browser if one of the
 local file system to save the file.
 
 <figure>
-<img src="10000000000002AF000001BB582C2DD7.png"
+<img src="images/10000000000002AF000001BB582C2DD7.png
 title="10000000000002AF000001BB582C2DD7.png" />
 <figcaption>10000000000002AF000001BB582C2DD7.png</figcaption>
 </figure>
@@ -119,7 +119,7 @@ Internet Explorer 6, 7, and 8[^1] will show up a warning message on top
 of the browser as snapshot below ("To help protect your security,
 Internet Explorer...").
 
-![](IePreventDownload.png)
+![](images/IePreventDownload.png)
 
 If a user allows the download (right-click and select
 `Download File...`), IE will eventually reload the page. It means the

@@ -15,7 +15,7 @@ A `treecol`is a top column of tree, Its parent must be `Treecols`.
 
 # Example
 
-![](ZKComRef_Treeitem.png)
+![](images/ZKComRef_Treeitem.png)
 
 ``` xml
 <window title="tree demo" border="normal" width="400px">

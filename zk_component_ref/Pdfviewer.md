@@ -18,7 +18,7 @@ in a browser.
 
 # Example
 
-![](ZK-pdfviewer-example.png)
+![](images/ZK-pdfviewer-example.png)
 
 ``` xml
 <pdfviewer src="/pdf/sample.pdf" />

@@ -15,7 +15,7 @@ will be automatically converted to a label.
 
 # Example
 
-![](ZKComRef_Label.PNG)
+![](images/ZKComRef_Label.PNG)
 
 ``` xml
  <window title="Label Demo" >
@@ -51,7 +51,7 @@ as new line, space and tab, are preserved.
 A label component represents a piece of text.
 
 <figure>
-<img src="ZKComRef_Label_Example2.png"
+<img src="images/ZKComRef_Label_Example2.png
 title="ZKComRef_Label_Example2.png" />
 <figcaption>ZKComRef_Label_Example2.png</figcaption>
 </figure>
@@ -66,7 +66,7 @@ If you want to add an attribute to a label, it has to be written as
 follows:
 
 <figure>
-<img src="ZKComRef_Label_Example3.png"
+<img src="images/ZKComRef_Label_Example3.png
 title="ZKComRef_Label_Example3.png" />
 <figcaption>ZKComRef_Label_Example3.png</figcaption>
 </figure>
@@ -168,7 +168,7 @@ tabs.</p></td>
 </table>
 
 <figure>
-<img src="ZKComRef_Label_Text_ZK5.png"
+<img src="images/ZKComRef_Label_Text_ZK5.png
 title="ZKComRef_Label_Text_ZK5.png" />
 <figcaption>ZKComRef_Label_Text_ZK5.png</figcaption>
 </figure>
@@ -266,7 +266,7 @@ is hyphenated.</p></td>
 </table>
 
 <figure>
-<img src="ZKComRef_Label_Text_ZK3.png"
+<img src="images/ZKComRef_Label_Text_ZK3.png
 title="ZKComRef_Label_Text_ZK3.png" />
 <figcaption>ZKComRef_Label_Text_ZK3.png</figcaption>
 </figure>

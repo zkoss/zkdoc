@@ -1,9 +1,9 @@
 # Target Application
 In this chapter, we are going to build a "todo list" with 4 basic operations, create, read, update, and delete (CRUD). The application's user interface looks like the images below:
 
-![](/zk_essentials/images/ze-ch6-app.png)
+![](images//zk_essentials/images/ze-ch6-app.png)
 
-![](/zk_essentials/images/ze-ch6-app-selected.png)
+![](images//zk_essentials/images/ze-ch6-app-selected.png)
 
 <div style="text-align:center">
 <strong>Select a Todo Item</strong>

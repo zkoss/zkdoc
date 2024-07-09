@@ -14,7 +14,7 @@ A container usually contains more than one menu elements.
 
 # Example
 
-![](ZKComRef_Menubar.png)
+![](images/ZKComRef_Menubar.png)
 
 ``` xml
 <menubar id="menubar">
@@ -48,7 +48,7 @@ A container usually contains more than one menu elements.
 The code below demonstrates how easy it is to make the Menubar
 scrollable!
 
-![](scrollableMenu.gif)
+![](images/scrollableMenu.gif)
 
 ``` xml
 <menubar width="200px" scrollable="true">

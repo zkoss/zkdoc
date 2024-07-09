@@ -36,7 +36,7 @@ of TABLE).
 
 # Example
 
-![](ZKComRef_Box_Example.png)
+![](images/ZKComRef_Box_Example.png)
 
 ``` xml
  <zk>
@@ -71,7 +71,7 @@ Another example illustrated an interesting layout by the use of zero
 spacing.
 
 <figure>
-<img src="100000000000009300000077C9A14E08.png"
+<img src="images/100000000000009300000077C9A14E08.png
 title="100000000000009300000077C9A14E08.png" />
 <figcaption>100000000000009300000077C9A14E08.png</figcaption>
 </figure>
@@ -137,7 +137,7 @@ orientation of a box can be horizontal or vertical depending on the
 ## Align and Pack
 
 <figure>
-<img src="ZKComRef_Vbox_Simple_Example_align_pack.PNG"
+<img src="images/ZKComRef_Vbox_Simple_Example_align_pack.PNG
 title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
 <figcaption>ZKComRef_Vbox_Simple_Example_align_pack.PNG</figcaption>
 </figure>
@@ -273,13 +273,13 @@ zul.jar.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](box_mold_horizontal.png)</td>
+<td>![](images/box_mold_horizontal.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](box_mold_vertical.png)</td>
+<td>![](images/box_mold_vertical.png)</td>
 </tr>
 </tbody>
 </table>

@@ -3,7 +3,7 @@
 If there is not enough space to show events in one day, the Calendar
 will show a "more items" link:
 
-![](moreEventLink.png)
+![](images/moreEventLink.png)
 
 The default text is from a javascript object.
 

@@ -15,7 +15,7 @@ A long`box` is used to let users input long data.
 
 # Example
 
-![](ZKComRef_longbox.jpg)
+![](images/ZKComRef_longbox.jpg)
 
 ``` xml
  <window title="Longbox Demo" border="normal" width="400px">

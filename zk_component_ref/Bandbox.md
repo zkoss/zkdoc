@@ -23,7 +23,7 @@ to represent the popup window as a search dialog.
 # Example
 
 <figure>
-<img src="ZKComRef_Bandbox_Example.png"
+<img src="images/ZKComRef_Bandbox_Example.png
 title="ZKComRef_Bandbox_Example.png" />
 <figcaption>ZKComRef_Bandbox_Example.png</figcaption>
 </figure>
@@ -77,7 +77,7 @@ and then close the popup.
 ## Autodrop
 
 <figure>
-<img src="ZKComRef_Bandbox_Autodrop.PNG"
+<img src="images/ZKComRef_Bandbox_Autodrop.PNG
 title="ZKComRef_Bandbox_Autodrop.PNG" />
 <figcaption>ZKComRef_Bandbox_Autodrop.PNG</figcaption>
 </figure>
@@ -271,13 +271,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](bandbox_mold_default.png)</td>
+<td>![](images/bandbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="bandbox_mold_rounded.png"
+<td><p><img src="images/bandbox_mold_rounded.png
 title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

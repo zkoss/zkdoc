@@ -10,7 +10,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DEFAULT);
 ```
 
-![](DefaultTheme.png)
+![](images/DefaultTheme.png)
 
 - Grid Theme
 
@@ -18,7 +18,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.GRID);
 ```
 
-![](GridTheme.png)
+![](images/GridTheme.png)
 
 - Skies Theme
 
@@ -26,7 +26,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.SKIES);
 ```
 
-![](SkiesTheme.png)
+![](images/SkiesTheme.png)
 
 - Gray Theme
 
@@ -34,7 +34,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.GRAY);
 ```
 
-![](GrayTheme.png)
+![](images/GrayTheme.png)
 
 - Dark Blue Theme
 
@@ -42,7 +42,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DARK_BLUE);
 ```
 
-![](DarkBlueTheme.png)
+![](images/DarkBlueTheme.png)
 
 - Dark Green Theme
 
@@ -50,7 +50,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DARK_GREEN);
 ```
 
-![](DarkGreenTheme.png)
+![](images/DarkGreenTheme.png)
 
 See all themes at
 [Theme](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Theme.html)
@@ -186,7 +186,7 @@ public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
 ```
 
 <figure>
-<img src="ColorfulColumnChartDemo.png"
+<img src="images/ColorfulColumnChartDemo.png
 title="ColorfulColumnChartDemo.png" width="480" height="300" />
 <figcaption>ColorfulColumnChartDemo.png</figcaption>
 </figure>
@@ -243,7 +243,7 @@ public class PacmanChartComposer extends SelectorComposer<Div> {
 ```
 
 <figure>
-<img src="PacmanChartDemo.png" title="PacmanChartDemo.png" width="480"
+<img src="images/PacmanChartDemo.png title="PacmanChartDemo.png" width="480"
 height="300" />
 <figcaption>PacmanChartDemo.png</figcaption>
 </figure>
@@ -279,7 +279,7 @@ public class HtmlLabelComposer extends SelectorComposer<Component> {
 Then, the axis label will become a hyperlink. (see the image below)
 
 <figure>
-<img src="zkcharts-essentials-htmlLabel.png"
+<img src="images/zkcharts-essentials-htmlLabel.png
 title="zkcharts-essentials-htmlLabel.png" />
 <figcaption>zkcharts-essentials-htmlLabel.png</figcaption>
 </figure>

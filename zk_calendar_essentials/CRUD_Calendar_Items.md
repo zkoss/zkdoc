@@ -60,7 +60,7 @@ UI with user-clicked date/time.
     }
 ```
 
-![](_creationbox-popup.jpg)
+![](images/_creationbox-popup.jpg)
 
 ## Create New Item
 

@@ -136,7 +136,7 @@ Chart component.
 
 #### Vertical Bar Chart
 
-![](Barchart_2d.png)
+![](images/Barchart_2d.png)
 
 ``` xml
 <zk>
@@ -172,7 +172,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 #### Horizontal Bar Chart
 
-![](Barchart_2d_h.png)
+![](images/Barchart_2d_h.png)
 
 ``` xml
 <zk>
@@ -208,7 +208,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 ### 3D Vertical Bar Chart
 
-![](Barchart_3d.png)
+![](images/Barchart_3d.png)
 
 ``` xml
 <zk>
@@ -265,11 +265,11 @@ color .
 ```
 
 The color is changed after we set the config ,here's the demo image.
-![](Fusionchart_barchartconfig.png "Fusionchart_barchartconfig.png")
+![](images/Fusionchart_barchartconfig.png "Fusionchart_barchartconfig.png")
 
 ## Line Chart
 
-![](Linechart.png)
+![](images/Linechart.png)
 
 ``` xml
 <zk>
@@ -346,7 +346,7 @@ public class LinechartComposer extends SelectorComposer<Div> {
 
 ### 2D Pie Chart
 
-![](Piechart_2d.png)
+![](images/Piechart_2d.png)
 
 ``` xml
 <zk>
@@ -379,7 +379,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ### 3D Pie Chart
 
-![](Piechart_3d.png)
+![](images/Piechart_3d.png)
 
 ``` xml
 <zk>
@@ -414,7 +414,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 `{% include version-badge.html version=6.5.3 %}`
 
-![](Funnelchart.png)
+![](images/Funnelchart.png)
 
 ``` xml
 <zk>
@@ -453,7 +453,7 @@ public class FunnelchartComposer extends SelectorComposer<Div> {
 
 ### 2D Combination Chart
 
-![](Combinationchart_2d.png)
+![](images/Combinationchart_2d.png)
 
 ``` xml
 <zk>
@@ -502,7 +502,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 3D Combination Chart
 
-![](Combinationchart_3d.png)
+![](images/Combinationchart_3d.png)
 
 ``` xml
 <zk>
@@ -553,7 +553,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 2D Stacked Chart
 
-![](Stackedchart_2d.png)
+![](images/Stackedchart_2d.png)
 
 ``` xml
 <zk>
@@ -590,7 +590,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ### 3D Stacked Chart
 
-![](Stackedchart_3d.png)
+![](images/Stackedchart_3d.png)
 
 ``` xml
 <zk>
@@ -627,7 +627,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ## Area Chart
 
-![](Areachart.png)
+![](images/Areachart.png)
 
 ``` xml
 <zk>
@@ -663,7 +663,7 @@ public class AreachartComposer extends SelectorComposer<Div> {
 
 ## Gantt Chart
 
-![](Gantt.png)
+![](images/Gantt.png)
 
 ``` xml
 <zk>

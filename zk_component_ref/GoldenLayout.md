@@ -26,7 +26,7 @@ all kinds of components) to form a complicated layout.
 # Example
 
 <figure>
-<img src="ZKCompRef_GoldenLayout.png" title="ZKCompRef_GoldenLayout.png"
+<img src="images/ZKCompRef_GoldenLayout.png title="ZKCompRef_GoldenLayout.png"
 width="910" />
 <figcaption>ZKCompRef_GoldenLayout.png</figcaption>
 </figure>
@@ -118,21 +118,21 @@ From the example above, it's possible to divide in two ways.
 <tr class="odd">
 <td><center>
 <figure>
-<img src="ZKCompRef_GoldenLayout_areas.png"
+<img src="images/ZKCompRef_GoldenLayout_areas.png
 title="ZKCompRef_GoldenLayout_areas.png" />
 <figcaption>ZKCompRef_GoldenLayout_areas.png</figcaption>
 </figure>
 </center></td>
 <td><center>
 <figure>
-<img src="ZKCompRef_GoldenLayout_vertical.png"
+<img src="images/ZKCompRef_GoldenLayout_vertical.png
 title="ZKCompRef_GoldenLayout_vertical.png" />
 <figcaption>ZKCompRef_GoldenLayout_vertical.png</figcaption>
 </figure>
 </center></td>
 <td><center>
 <figure>
-<img src="ZKCompRef_GoldenLayout_horizontal.png"
+<img src="images/ZKCompRef_GoldenLayout_horizontal.png
 title="ZKCompRef_GoldenLayout_horizontal.png" />
 <figcaption>ZKCompRef_GoldenLayout_horizontal.png</figcaption>
 </figure>
@@ -153,7 +153,7 @@ in <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>.
 north
 
 <figure>
-<img src="ZKCompRef_GoldenLayout_region_north.png"
+<img src="images/ZKCompRef_GoldenLayout_region_north.png
 title="ZKCompRef_GoldenLayout_region_north.png" />
 <figcaption>ZKCompRef_GoldenLayout_region_north.png</figcaption>
 </figure>
@@ -161,7 +161,7 @@ title="ZKCompRef_GoldenLayout_region_north.png" />
 east
 
 <figure>
-<img src="ZKCompRef_GoldenLayout_region_east.png"
+<img src="images/ZKCompRef_GoldenLayout_region_east.png
 title="ZKCompRef_GoldenLayout_region_east.png" />
 <figcaption>ZKCompRef_GoldenLayout_region_east.png</figcaption>
 </figure>
@@ -169,7 +169,7 @@ title="ZKCompRef_GoldenLayout_region_east.png" />
 south
 
 <figure>
-<img src="ZKCompRef_GoldenLayout_region_south.png"
+<img src="images/ZKCompRef_GoldenLayout_region_south.png
 title="ZKCompRef_GoldenLayout_region_south.png" />
 <figcaption>ZKCompRef_GoldenLayout_region_south.png</figcaption>
 </figure>
@@ -177,7 +177,7 @@ title="ZKCompRef_GoldenLayout_region_south.png" />
 west
 
 <figure>
-<img src="ZKCompRef_GoldenLayout_region_west.png"
+<img src="images/ZKCompRef_GoldenLayout_region_west.png
 title="ZKCompRef_GoldenLayout_region_west.png" />
 <figcaption>ZKCompRef_GoldenLayout_region_west.png</figcaption>
 </figure>
@@ -185,7 +185,7 @@ title="ZKCompRef_GoldenLayout_region_west.png" />
 stack
 
 <figure>
-<img src="ZKCompRef_GoldenLayout_region_stack.png"
+<img src="images/ZKCompRef_GoldenLayout_region_stack.png
 title="ZKCompRef_GoldenLayout_region_stack.png" />
 <figcaption>ZKCompRef_GoldenLayout_region_stack.png</figcaption>
 </figure>

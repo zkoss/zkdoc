@@ -23,7 +23,7 @@ bottleneck and draw some conclusions, and eliminate other possible
 causes easily.
 
 <figure>
-<img src="chrome_developer_tools_network.png" title="chrome network tab"
+<img src="images/chrome_developer_tools_network.png title="chrome network tab"
 width="400" />
 <figcaption>chrome network tab</figcaption>
 </figure>
@@ -71,7 +71,7 @@ wording and
 explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
 <figure>
-<img src="chrome_developer_tools_network_timing.png"
+<img src="images/chrome_developer_tools_network_timing.png
 title="Example showing a long waiting time i.e. server takes 3.83 seconds to create the response" />
 <figcaption>Example showing a long waiting time i.e. server takes 3.83
 seconds to create the response</figcaption>
@@ -202,7 +202,7 @@ the "profiles" and "timeline" are combined in the "performance"-tab
 [more...](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/))
 
 <figure>
-<img src="js_profile_flame_chart.png" title="js_profile_flame_chart.png"
+<img src="images/js_profile_flame_chart.png title="js_profile_flame_chart.png"
 width="890" />
 <figcaption>js_profile_flame_chart.png</figcaption>
 </figure>
@@ -211,7 +211,7 @@ This brilliant visualization of the JS execution flow and stack depth
 can be used / interpreted in many ways to extract the information you
 require.
 
-<img src="js_timeline_events.png"
+<img src="images/js_timeline_events.png
 title="Another interesting view to determine the render time is the Timeline - Events view in Chrome"
 width="300"
 alt="Another interesting view to determine the render time is the Timeline - Events view in Chrome" />
@@ -372,7 +372,7 @@ In eclipse a very obvious case might look like this (just imaginarily
 replace Thread.sleep() with db.query(), url.openConnection(),
 webService.get() ...):
 
-![](suspended_process.png)
+![](images/suspended_process.png)
 
 #### Not so lucky
 
@@ -463,14 +463,14 @@ notice on your CPU, as the thread is just sleeping.
 
 Starting the sampler will show the actual "Hot Spots" like this.
 
-![](_sampler-result.png)
+![](images/_sampler-result.png)
 
 The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
 the method name.
 
 <figure>
-<img src="_sampler-snapshot-combined.png"
+<img src="images/_sampler-snapshot-combined.png
 title="_sampler-snapshot-combined.png" width="900" />
 <figcaption>_sampler-snapshot-combined.png</figcaption>
 </figure>
@@ -516,7 +516,7 @@ public class LineChartComposer extends SelectorComposer {
 If we don't know where to look in the code we can use a Heap Dump to
 locate it.
 
-![](heap-dump.png)
+![](images/heap-dump.png)
 
 I clicked the "find" button to find the 20 biggest objects on the heap.
 The results tell us the following.
@@ -530,7 +530,7 @@ If it wasn't that obvious like here, one can always switch to the
 "Instances" view and check which objects are referring to this big
 array.
 
-![](heap-dump-instances.png)
+![](images/heap-dump-instances.png)
 
 Also here we could trace the references up to the Desktop/Session
 objects.
@@ -699,14 +699,14 @@ When using Sampler or Profiler, it's better to specify **Profile only
 packages** in the settings. Therefore, it will only show those classes
 you concern instead of irrelevant classes.
 
-![](profile-only-package.jpg)
+![](images/profile-only-package.jpg)
 
 ## Locate Hot Spots
 
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![](_hotSpots.jpg)
+![](images/_hotSpots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -714,4 +714,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![](_forwardCall.jpg)
+![](images/_forwardCall.jpg)

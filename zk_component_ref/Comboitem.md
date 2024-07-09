@@ -15,7 +15,7 @@ An item of a combo box.
 # Example
 
 <figure>
-<img src="ZKComRef_Combobox_Example.PNG"
+<img src="images/ZKComRef_Combobox_Example.PNG
 title="ZKComRef_Combobox_Example.PNG" />
 <figcaption>ZKComRef_Combobox_Example.PNG</figcaption>
 </figure>

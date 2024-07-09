@@ -22,7 +22,7 @@ Panel](ZK_Component_Reference/Containers/Panel)
 # Example
 
 <figure>
-<img src="ZKComRef_Portallayout_Example.PNG"
+<img src="images/ZKComRef_Portallayout_Example.PNG
 title="ZKComRef_Portallayout_Example.PNG" />
 <figcaption>ZKComRef_Portallayout_Example.PNG</figcaption>
 </figure>
@@ -77,7 +77,7 @@ move it to the appropriate column. If the panel does not have a panel
 title, you can drag the small dragging button at the top of the panel to
 move.
 
-![](Kanban-1.png)
+![](images/Kanban-1.png)
 
 ``` xml
 <zk>

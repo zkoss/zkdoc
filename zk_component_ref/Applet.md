@@ -32,7 +32,7 @@ should not have to encode it again.
 # Example
 
 <figure>
-<img src="ZKComRef_Applet_Examples.PNG"
+<img src="images/ZKComRef_Applet_Examples.PNG
 title="ZKComRef_Applet_Examples.PNG" />
 <figcaption>ZKComRef_Applet_Examples.PNG</figcaption>
 </figure>

@@ -37,7 +37,7 @@ time zone, for example, it will receive Jan 1st 2022, with a time of
 04:00 at GMT+0
 
 <figure>
-<img src="Universal_time_conversion.png"
+<img src="images/Universal_time_conversion.png
 title="Universal_time_conversion.png" />
 <figcaption>Universal_time_conversion.png</figcaption>
 </figure>

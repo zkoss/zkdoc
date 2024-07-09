@@ -50,7 +50,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 }
 ```
 
-![](St201107-listbox.png‎)
+![](images/St201107-listbox.png‎)
 
 > ------------------------------------------------------------------------
 >
@@ -149,7 +149,7 @@ listbox-in-listbox:
 ```
 
 <figure>
-<img src="St201107-listbox-in-listbox.png‎"
+<img src="images/St201107-listbox-in-listbox.png‎
 title="St201107-listbox-in-listbox.png‎" />
 <figcaption>St201107-listbox-in-listbox.png‎</figcaption>
 </figure>

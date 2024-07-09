@@ -16,7 +16,7 @@ An edit box for holding an float point value (double).
 # Example
 
 <figure>
-<img src="ZKComRef_Doublebox_Examples.PNG"
+<img src="images/ZKComRef_Doublebox_Examples.PNG
 title="ZKComRef_Doublebox_Examples.PNG" />
 <figcaption>ZKComRef_Doublebox_Examples.PNG</figcaption>
 </figure>

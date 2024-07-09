@@ -17,7 +17,7 @@ Such architecture follows [SRP (Single Responsibility Principle)](https://en.wik
 ## ZK MVC Approach
 By following this pattern, ZK traditionally supports MVC approach which controls components by calling their API. Under ZK context, the relationship of 3 roles looks like:
 
-![](/zk_essentials/images/zk-mvc.png)
+![](images//zk_essentials/images/zk-mvc.png)
 
 * ZK `SelectorComposer`, that implements `Composer`, plays Controller.
 * ZK UI components plays View.

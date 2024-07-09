@@ -18,7 +18,7 @@ the input component, merging them like a new form-input component.
 
 # Example
 
-![](Inputgroup_basic.png)
+![](images/Inputgroup_basic.png)
 
 ``` xml
 <zk>
@@ -47,7 +47,7 @@ the input component, merging them like a new form-input component.
 
 Specify the orientation.
 
-![](Inputgroup_vertical.png)
+![](images/Inputgroup_vertical.png)
 
 ``` xml
 <inputgroup orient="vertical">

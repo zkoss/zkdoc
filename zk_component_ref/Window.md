@@ -26,7 +26,7 @@ components, a window has the following characteristics.
 # Example
 
 <figure>
-<img src="ZKComRef_Window_Multiple_Examples.PNG"
+<img src="images/ZKComRef_Window_Multiple_Examples.PNG
 title="ZKComRef_Window_Multiple_Examples.PNG" />
 <figcaption>ZKComRef_Window_Multiple_Examples.PNG</figcaption>
 </figure>
@@ -167,7 +167,7 @@ tabbing.
 For instance, you could access only the textbox and button in the
 following example:
 
-![](Modalwindow.png)
+![](images/Modalwindow.png)
 
 You can have multiple modal windows at the same time, and a user can
 only access the last modal window. Once the last modal is dismissed
@@ -259,7 +259,7 @@ own listener to change the default behavior. For example, you might
 choose to hide the window rather than close it.
 
 <figure>
-<img src="10000000000000CE000000546D42136E.png"
+<img src="images/10000000000000CE000000546D42136E.png
 title="10000000000000CE000000546D42136E.png" />
 <figcaption>10000000000000CE000000546D42136E.png</figcaption>
 </figure>
@@ -296,7 +296,7 @@ specifying the `contentStyle` property
 (<javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>).
 
 <figure>
-<img src="10000000000000CB0000003292CB8174.png"
+<img src="images/10000000000000CB0000003292CB8174.png
 title="10000000000000CB0000003292CB8174.png" />
 <figcaption>10000000000000CB0000003292CB8174.png</figcaption>
 </figure>
@@ -315,7 +315,7 @@ A typical use of the `contentStyle` attribute is to make a window
 scrollable as follows.
 
 <figure>
-<img src="100000000000009C0000006819656516.png"
+<img src="images/100000000000009C0000006819656516.png
 title="100000000000009C0000006819656516.png" />
 <figcaption>100000000000009C0000006819656516.png</figcaption>
 </figure>
@@ -479,7 +479,7 @@ declaring a child component called `caption`. All children of the
 `caption` component will appear on right hand side of the title.
 
 <figure>
-<img src="10000000000001640000004CEB4969A9.png"
+<img src="images/10000000000001640000004CEB4969A9.png
 title="10000000000001640000004CEB4969A9.png" />
 <figcaption>10000000000001640000004CEB4969A9.png</figcaption>
 </figure>
@@ -508,7 +508,7 @@ You are also able to specify a label and an image within a caption, and
 then the appearance is as follows.
 
 <figure>
-<img src="10000000000000CD00000042FABAB4CE.png"
+<img src="images/10000000000000CD00000042FABAB4CE.png
 title="10000000000000CD00000042FABAB4CE.png" />
 <figcaption>10000000000000CD00000042FABAB4CE.png</figcaption>
 </figure>

@@ -91,34 +91,34 @@ Project](ZK_Studio_Essentials/Features_of_ZK_Studio/New_ZK_Project)
 in the **Project Explorer** view (or the **Package Explorer** view) and
 select **New \> ZUL**.
 
-![](studio-new-zul-step1.png)
+![](images/studio-new-zul-step1.png)
 
 2\. Type **test.zul** in the **File name** textbox and click **Finish**.
 
-![](studio-new-zul-step2.png)
+![](images/studio-new-zul-step2.png)
 
 3\. The newly created ZUL File will be opened in the ZUL Editor.
 
-![](studio-a-zul.png)
+![](images/studio-a-zul.png)
 
 ## Run the application
 
 1\. Right click on the **MyApp** project in an explorer and in the Menu
 dialog select **Run As \> Run on Server**
 
-![](studio-run-on-server.png)
+![](images/studio-run-on-server.png)
 
 2\. If you have not defined a server before, Eclipse will show a dialog
 with "Manually define a new server" option selected. Then select
 **Apache \> Tomcat v6.0 Server** in the server type dialog and then
 click **Finish**.
 
-![](studio-run-select-server.png)
+![](images/studio-run-select-server.png)
 
 3\. Eclipse will display the result in its internal browser or you can
 view the result in your browser.
 
-![](studio-run-result.png)
+![](images/studio-run-result.png)
 
 # Version History
 

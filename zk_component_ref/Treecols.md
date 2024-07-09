@@ -17,7 +17,7 @@ column will appear as a column at the top of the tree.
 
 # Example
 
-![](ZKComRef_Treeitem.png)
+![](images/ZKComRef_Treeitem.png)
 
 ``` xml
 <window title="tree demo" border="normal" width="400px">

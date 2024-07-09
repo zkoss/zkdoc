@@ -54,7 +54,7 @@ starts, navigate to index.zul and the following page should be
 displayed.
 
 <figure>
-<img src="ZKCalEss_Simple_calendar_application.png"
+<img src="images/ZKCalEss_Simple_calendar_application.png
 title=" center | 900px" />
 <figcaption> center | 900px</figcaption>
 </figure>

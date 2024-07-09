@@ -65,41 +65,41 @@
 - Click *Administration* tab at the top of the page
 
   
-![](websphere01.png)
+![](images/websphere01.png)
 
 - Select *Web Module* then click the *install* button.
 
   
-![](websphere02.png)
+![](images/websphere02.png)
 
 - Click *Choose File* button to select the war file then press the
   *Next* button.
 
   
-![](websphere03.png)
+![](images/websphere03.png)
 
 - Check the war information and choose *Start application*, then click
   the *Finish* button.
 
   
-![](websphere04.png)
+![](images/websphere04.png)
 
 - Go back to *Home* page
 
   
-![](websphere05.png)
+![](images/websphere05.png)
 
 - Add a new tab page by clicking *Action* -\> *EditPage*
 
   
-![](websphere06.png)
+![](images/websphere06.png)
 
 - Click *New Page* then enter "Page name" and "Friendly URL Name"
 
   
-![](websphere07.png)
+![](images/websphere07.png)
 
-![](websphere08.png)
+![](images/websphere08.png)
 
 - Add the deployed portlet to the created new page by clicking *Action*
   -\> *EditPage*.
@@ -107,18 +107,18 @@
   name defined in portlet.xml
 
   
-![](websphere09.png)
+![](images/websphere09.png)
 
 - Drag and drop the portlet into the created new page and click *Save &
   Exit* button.
 
   
-![](websphere10.png)
+![](images/websphere10.png)
 
 - ZK project is now deployed in a Websphere Portal
 
   
-![](websphere11.png)
+![](images/websphere11.png)
 
 # Deploy ZK portlet in WebSphere Portal 8
 
@@ -128,7 +128,7 @@
 
   
 <figure>
-<img src="websphere_v8_01.png" title="websphere_v8_01.png"
+<img src="images/websphere_v8_01.png title="websphere_v8_01.png"
 width="800" />
 <figcaption>websphere_v8_01.png</figcaption>
 </figure>
@@ -137,7 +137,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_02.png" title="websphere_v8_02.png"
+<img src="images/websphere_v8_02.png title="websphere_v8_02.png"
 width="800" />
 <figcaption>websphere_v8_02.png</figcaption>
 </figure>
@@ -147,7 +147,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_03.png" title="websphere_v8_03.png"
+<img src="images/websphere_v8_03.png title="websphere_v8_03.png"
 width="800" />
 <figcaption>websphere_v8_03.png</figcaption>
 </figure>
@@ -157,7 +157,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_04.png" title="websphere_v8_04.png"
+<img src="images/websphere_v8_04.png title="websphere_v8_04.png"
 width="800" />
 <figcaption>websphere_v8_04.png</figcaption>
 </figure>
@@ -166,7 +166,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_05.png" title="websphere_v8_05.png"
+<img src="images/websphere_v8_05.png title="websphere_v8_05.png"
 width="800" />
 <figcaption>websphere_v8_05.png</figcaption>
 </figure>
@@ -175,7 +175,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_06.png" title="websphere_v8_06.png"
+<img src="images/websphere_v8_06.png title="websphere_v8_06.png"
 width="800" />
 <figcaption>websphere_v8_06.png</figcaption>
 </figure>
@@ -184,7 +184,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_07.png" title="websphere_v8_07.png"
+<img src="images/websphere_v8_07.png title="websphere_v8_07.png"
 width="800" />
 <figcaption>websphere_v8_07.png</figcaption>
 </figure>
@@ -193,7 +193,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_08.png" title="websphere_v8_08.png"
+<img src="images/websphere_v8_08.png title="websphere_v8_08.png"
 width="800" />
 <figcaption>websphere_v8_08.png</figcaption>
 </figure>
@@ -203,7 +203,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_09.png" title="websphere_v8_09.png"
+<img src="images/websphere_v8_09.png title="websphere_v8_09.png"
 width="800" />
 <figcaption>websphere_v8_09.png</figcaption>
 </figure>
@@ -213,7 +213,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_10.png" title="websphere_v8_10.png"
+<img src="images/websphere_v8_10.png title="websphere_v8_10.png"
 width="800" />
 <figcaption>websphere_v8_10.png</figcaption>
 </figure>
@@ -222,7 +222,7 @@ width="800" />
 
   
 <figure>
-<img src="websphere_v8_11.png" title="websphere_v8_11.png"
+<img src="images/websphere_v8_11.png title="websphere_v8_11.png"
 width="800" />
 <figcaption>websphere_v8_11.png</figcaption>
 </figure>

@@ -26,7 +26,7 @@ node, such that user could open and close the item by clicking on the
 
 # Example
 
-![](Orgitem_example.png)
+![](images/Orgitem_example.png)
 
         <organigram width="600px">
             <orgchildren>

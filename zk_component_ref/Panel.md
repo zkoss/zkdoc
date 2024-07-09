@@ -30,7 +30,7 @@ can be used throughout the panel.
 # Example
 
 <figure>
-<img src="ZKComRef_Panel_Simple_Examples.PNG"
+<img src="images/ZKComRef_Panel_Simple_Examples.PNG
 title="ZKComRef_Panel_Simple_Examples.PNG" />
 <figcaption>ZKComRef_Panel_Simple_Examples.PNG</figcaption>
 </figure>
@@ -118,7 +118,7 @@ no border.
 
 Here is the effect with different borders:
 
-![](DrPanelBorder.png)
+![](images/DrPanelBorder.png)
 
 > ------------------------------------------------------------------------
 >
@@ -171,7 +171,7 @@ To make the scrollbar appear when content exceeds panel height, specify
 Panel supports three kinds of <javadoc>org.zkoss.zul.Toolbar</javadoc>
 positions: `Top`, `Bottom` and `Foot`. For example:
 
-![](Panel-des.gif)
+![](images/Panel-des.gif)
 
 ``` xml
 <panel id="panel" framable="true" width="500px" height="550px"

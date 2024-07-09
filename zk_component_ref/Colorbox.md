@@ -18,7 +18,7 @@ A Colorbox used to retrieve an input that the user can select a color.
 # Example
 
 <figure>
-<img src="ZKComRef_Colorbox_Examples.PNG"
+<img src="images/ZKComRef_Colorbox_Examples.PNG
 title="ZKComRef_Colorbox_Examples.PNG" />
 <figcaption>ZKComRef_Colorbox_Examples.PNG</figcaption>
 </figure>
@@ -43,7 +43,7 @@ By setting `content` attribute of <code>
 </code> to create a colorbox in menu.
 
 <figure>
-<img src="ZKComRef_Colorbox_Examples2.PNG"
+<img src="images/ZKComRef_Colorbox_Examples2.PNG
 title="ZKComRef_Colorbox_Examples2.PNG" />
 <figcaption>ZKComRef_Colorbox_Examples2.PNG</figcaption>
 </figure>

@@ -59,7 +59,7 @@ For example,
 Then, when the user moves the mouse pointer over the image for a while,
 the menupopup will show up as shown below.
 
-![](DrTooltip.png)
+![](images/DrTooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
 refer to [ZK Configuration
@@ -86,7 +86,7 @@ Providing a customized context menu is the same, except it uses the
 </zk>
 ```
 
-![](drContext.png)
+![](images/drContext.png)
 
 As shown above, you could use <javadoc>org.zkoss.zul.Popup</javadoc> so
 the context menu is not limited to a menupopup.
@@ -114,7 +114,7 @@ Here is another example: context menus versus right clicks.
 ```
 
 <figure>
-<img src="100000000000017500000052E60F488A.png"
+<img src="images/100000000000017500000052E60F488A.png
 title="100000000000017500000052E60F488A.png" />
 <figcaption>100000000000017500000052E60F488A.png</figcaption>
 </figure>
@@ -253,7 +253,7 @@ ZK Client Engine will simulate the context menu, if the user touches the
 DOM element associated with the contextmenu property and holds for a
 while.
 
-![](events_1_finger.jpg)
+![](images/events_1_finger.jpg)
 
 ## Popup
 

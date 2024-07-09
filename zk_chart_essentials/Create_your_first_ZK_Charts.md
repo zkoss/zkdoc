@@ -47,7 +47,7 @@ public class FirstChartComposer extends SelectorComposer<Component> {
 After that, you can easily obtain an amazing chart to visualize your
 data.
 
-![](FirstChart.png)
+![](images/FirstChart.png)
 
 ## Change Configuration
 
@@ -72,4 +72,4 @@ additional declarations in the composer:
 The <javadoc directory="zkcharts">org.zkoss.chart.Legend</javadoc> of
 chart will be moved to the right of the chart without border.
 
-![](FirstChartSettings.png)
+![](images/FirstChartSettings.png)

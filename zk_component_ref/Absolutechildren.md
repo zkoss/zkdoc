@@ -18,7 +18,7 @@ absolutely positioned within Absolutelayout component by either setting
 # Example
 
 <figure>
-<img src="ZKComRef_Absolutelayout_Example.png"
+<img src="images/ZKComRef_Absolutelayout_Example.png
 title="ZKComRef_Absolutelayout_Example.png" />
 <figcaption>ZKComRef_Absolutelayout_Example.png</figcaption>
 </figure>

@@ -16,7 +16,7 @@ writing a custom renderer.
 
 # Model-driven Rendering
 
-![](DrListModelRenderer.png)
+![](images/DrListModelRenderer.png)
 
 As shown, the listbox retrieves elements from the specified model[^1],
 and then invokes the renderer, if specified, to compose the

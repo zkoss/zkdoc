@@ -145,14 +145,14 @@ Assume the image below is our target design for Tabbox component.
 - Default Mold
     
   <figure>
-  <img src="styleguide-tabbox-design.png"
+  <img src="images/styleguide-tabbox-design.png
   title="styleguide-tabbox-design.png" />
   <figcaption>styleguide-tabbox-design.png</figcaption>
   </figure>
 - Accordion Mold
     
   <figure>
-  <img src="styleguide-accordion-design.png"
+  <img src="images/styleguide-accordion-design.png
   title="styleguide-accordion-design.png" />
   <figcaption>styleguide-accordion-design.png</figcaption>
   </figure>
@@ -346,10 +346,10 @@ Assume the image below is our target design for Tabbox component.
 
 - Default Mold
     
-  ![](styleguide-tabbox.png)
+  ![](images/styleguide-tabbox.png)
 - Accordion Mold
     
-  ![](styleguide-accordion.png)
+  ![](images/styleguide-accordion.png)
 
 # Version History
 

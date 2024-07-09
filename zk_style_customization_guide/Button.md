@@ -59,7 +59,7 @@ Assume the image below is our target design for Button component. No
 border, gradient background, rounded corner or shadow effects.
 
 <figure>
-<img src="styleguide-button-design.png"
+<img src="images/styleguide-button-design.png
 title="styleguide-button-design.png" />
 <figcaption>styleguide-button-design.png</figcaption>
 </figure>
@@ -185,7 +185,7 @@ title="styleguide-button-design.png" />
 
 ## Final result
 
-![](styleguide-button.png)
+![](images/styleguide-button.png)
 
 # Additional Customization
 

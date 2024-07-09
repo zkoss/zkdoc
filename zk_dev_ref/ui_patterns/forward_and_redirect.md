@@ -133,7 +133,7 @@ server know that server-side objects used in the current page can be
 discarded.
 
 <figure>
-<img src="OnBeforeUnload1.png" title="OnBeforeUnload1.png"
+<img src="images/OnBeforeUnload1.png title="OnBeforeUnload1.png"
 width="800" />
 <figcaption>OnBeforeUnload1.png</figcaption>
 </figure>
@@ -162,7 +162,7 @@ At this point however, the client engine has already triggered rmDesktop
 and the current desktop is no longer available.
 
 <figure>
-<img src="OnBeforeUnload2.png" title="OnBeforeUnload2.png"
+<img src="images/OnBeforeUnload2.png title="OnBeforeUnload2.png"
 width="800" />
 <figcaption>OnBeforeUnload2.png</figcaption>
 </figure>

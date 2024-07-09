@@ -16,7 +16,7 @@ An edit box for holding a time (a java.util.Date Object) , but only Hour
 
 # Example
 
-![](ZKCompRef_Timebox.png)
+![](images/ZKCompRef_Timebox.png)
 
 ``` xml
 <timebox cols="11"/>
@@ -160,13 +160,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](timebox_mold_default.png)</td>
+<td>![](images/timebox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="timebox_mold_rounded.png"
+<td><p><img src="images/timebox_mold_rounded.png
 title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

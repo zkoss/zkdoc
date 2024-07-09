@@ -101,7 +101,7 @@ Assume the image below is our target design for Window component. No
 border, gradient background, rounded corner or shadow effects.
 
 <figure>
-<img src="styleguide-window-design.png"
+<img src="images/styleguide-window-design.png
 title="styleguide-window-design.png" />
 <figcaption>styleguide-window-design.png</figcaption>
 </figure>
@@ -212,7 +212,7 @@ title="styleguide-window-design.png" />
 
 ## Final result
 
-![](styleguide-window.png)
+![](images/styleguide-window.png)
 
 # Version History
 

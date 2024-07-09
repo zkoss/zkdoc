@@ -14,7 +14,7 @@ information about the swipe displacement, duration, and direction.
 # Example
 
 <figure>
-<img src="SwipeEventExample_Update.png"
+<img src="images/SwipeEventExample_Update.png
 title="SwipeEventExample_Update.png" />
 <figcaption>SwipeEventExample_Update.png</figcaption>
 </figure>

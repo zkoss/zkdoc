@@ -25,7 +25,7 @@ Default HtmlBasedComponent.getSclass(): menupopup.
 
 # Example
 
-![](ZKComRef_Menubar.png)
+![](images/ZKComRef_Menubar.png)
 
 ``` xml
 

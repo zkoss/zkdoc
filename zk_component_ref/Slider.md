@@ -19,7 +19,7 @@ default minimum is 0 and cannot be changed.
 
 # Example
 
-![](ZKComRef_Slider.png)
+![](images/ZKComRef_Slider.png)
 
 ``` xml
   <slider id="slider" orient="vertical"/>
@@ -31,7 +31,7 @@ default minimum is 0 and cannot be changed.
 {% include version-badge.html version=7.0.1 %} Slider supports minimal position,
 which can be changed by the minpos property as follows.
 
-![](min_slider.png)
+![](images/min_slider.png)
 
 ``` xml
   <slider minpos="30"/>
@@ -46,7 +46,7 @@ position.
 {% include version-badge.html version=7.0.1 %} Set the mode property to "decimal"
 will enable decimal slider. So the slider can represent decimal number.
 
-![](dec_slider.png)
+![](images/dec_slider.png)
 
 ``` xml
   <slider mode="decimal" step="0.1"/>
@@ -75,7 +75,7 @@ slider in the range of 10.0 to 12.0. As the below picture shows, the
 default decimal show the value contains only one digit in fractional
 part.
 
-![](dec_slider_no_step.png)
+![](images/dec_slider_no_step.png)
 
 If we want to retrieve the value which contains two digits in fractional
 part, we can set the step value to 0.01. Then the value will increase as
@@ -83,7 +83,7 @@ part, we can set the step value to 0.01. Then the value will increase as
 0.05, the value will increase as 10.05, 10.10, 10.15 on each step, as
 below.
 
-![](dec_slider_step.png)
+![](images/dec_slider_step.png)
 
 ``` xml
   <slider mode="decimal" minpos="10.0" maxpos="12.0" step="0.05"/>
@@ -96,7 +96,7 @@ property to "knob" will enable knob slider. So the slider can act as a
 normal knob. The knob can controlled by wheel, drag, click and enter a
 value to the input element.
 
-![](knob360.png)
+![](images/knob360.png)
 
 ``` xml
   <slider mold="knob" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5" strokeWidth="40"/>
@@ -109,7 +109,7 @@ Set the angelArc property with a double for the angle of the knob
 slider. Set the strokeWidth property with a double for the stroke width
 of the knob. ScaleInput is the scale ratio of the input size.
 
-![](knob270.png)
+![](images/knob270.png)
 
 ``` xml
   <slider mold="knob" strokeWidth="40" angelArc="270" scaleInput="1.3" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5"/>
@@ -175,19 +175,19 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](slider_mold_default.png)</td>
+<td>![](images/slider_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>sphere</p>
 </center></td>
-<td>![](slider_mold_sphere.png)</td>
+<td>![](images/slider_mold_sphere.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>scale</p>
 </center></td>
-<td>![](slider_mold_scale.png)</td>
+<td>![](images/slider_mold_scale.png)</td>
 </tr>
 <tr class="even">
 <td><center>
@@ -196,7 +196,7 @@ zul.jar.
 <center>
 <p>knob</p>
 </center></td>
-<td>![](knob270.png)</td>
+<td>![](images/knob270.png)</td>
 </tr>
 </tbody>
 </table>

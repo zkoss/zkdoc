@@ -17,7 +17,7 @@ listbox has at most one `Listfoot`.
 # Example
 
 <figure>
-<img src="ZKComRef_Listbox_Example.png"
+<img src="images/ZKComRef_Listbox_Example.png
 title="ZKComRef_Listbox_Example.png" />
 <figcaption>ZKComRef_Listbox_Example.png</figcaption>
 </figure>

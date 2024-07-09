@@ -16,7 +16,7 @@ points, visible zoom level(0~3), and fill color, etc..
 # Example
 
 <figure>
-<img src="ZKComRef_Gpolygon_Example.png"
+<img src="images/ZKComRef_Gpolygon_Example.png
 title="ZKComRef_Gpolygon_Example.png" />
 <figcaption>ZKComRef_Gpolygon_Example.png</figcaption>
 </figure>

@@ -17,7 +17,7 @@ You could put a label and an image on it by `label`and
 # Example
 
 <figure>
-<img src="ZKComRef_Containers_Tab.PNG"
+<img src="images/ZKComRef_Containers_Tab.PNG
 title="ZKComRef_Containers_Tab.PNG" />
 <figcaption>ZKComRef_Containers_Tab.PNG</figcaption>
 </figure>
@@ -42,7 +42,7 @@ title="ZKComRef_Containers_Tab.PNG" />
 A tab might have a caption, which is specified by declaring a child
 component called caption. {% include edition-availability.html edition=pe %} {% include
 version-badge.html version=6.5.0 %}
-![](ZKComRef_Containers_Tab_Caption.PNG "ZKComRef_Containers_Tab_Caption.PNG")
+![](images/ZKComRef_Containers_Tab_Caption.PNG "ZKComRef_Containers_Tab_Caption.PNG")
 
 ``` xml
 <tabbox width="400px">

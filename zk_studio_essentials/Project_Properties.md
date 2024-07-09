@@ -8,7 +8,7 @@ Otherwise, **Package Setting** page is invisible.
 
 # ZK
 
-![](images/studio-project-preference-zk.png)
+![](images/images/studio-project-preference-zk.png)
 
 This preference page lists the version number, library location, and the
 add-ons currently available for the current project's ZK package.

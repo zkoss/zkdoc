@@ -54,7 +54,7 @@ M2eclipse plugin to avoid this unresolved error.)
 
 \*#:Install **Maven Integration for Eclipse (core feature)**
 
-\*#: ![](ZK_Installation_Guide_m2e.png "ZK_Installation_Guide_m2e.png")
+\*#: ![](images/ZK_Installation_Guide_m2e.png "ZK_Installation_Guide_m2e.png")
 
 \*#(Optional but recommend) Run-Jetty-Run
 
@@ -76,7 +76,7 @@ Started](http://code.google.com/p/run-jetty-run/wiki/GettingStarted)
 \*#:Install **Maven Integration for WTP**
 
 \*#:
-![](ZK_Installation_Guide_m2e_extra.png "ZK_Installation_Guide_m2e_extra.png")
+![](images/ZK_Installation_Guide_m2e_extra.png "ZK_Installation_Guide_m2e_extra.png")
 
 \*#(Optional) Eclipse IAM, formerly Q for Eclipse:
 

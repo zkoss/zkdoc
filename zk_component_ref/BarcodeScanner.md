@@ -44,7 +44,7 @@ access.
 
 # Example
 
-![](BsQR.png)
+![](images/BsQR.png)
 
 ``` xml
  <barcodescanner type="qr,code128" continuous="true" interval="500" height="100px"

@@ -12,4 +12,4 @@ Testing](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhd
 To know more details, please refer to [ Accessibility-ready
 themes](ZK_Developer's_Reference/Theming_and_Styling/ZK_Official_Themes#Accessibility-ready_themes)
 
-![](_wcag_themes.png)
+![](images/_wcag_themes.png)

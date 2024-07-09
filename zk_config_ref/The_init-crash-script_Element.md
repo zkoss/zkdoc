@@ -8,7 +8,7 @@ If the client engine stops working before even the error handling is
 initialized (e.g. when ZK's core scripts fail to download - `zk.wpd`),
 you will see the message below:
 
-![](error_handling_crash_screen.png)
+![](images/error_handling_crash_screen.png)
 
 This element allows you to show a custom crash message when initiation
 by writing a javascript function which is assigned to

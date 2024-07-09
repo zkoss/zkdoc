@@ -18,7 +18,7 @@ displayed. This element is also used to create submenus of `Menupopup`.
 
 # Example
 
-![](ZKComRef_Menu.png)
+![](images/ZKComRef_Menu.png)
 
 ``` xml
 <menubar>
@@ -45,7 +45,7 @@ main button (the left hand side) will fire the onClick event. The red
 outline is used to highlight the clickable areas of the Menu.
 
 <figure>
-<img src="ZKComRef_Menu_onClick.png"
+<img src="images/ZKComRef_Menu_onClick.png
 title="ZKComRef_Menu_onClick.png" />
 <figcaption>ZKComRef_Menu_onClick.png</figcaption>
 </figure>

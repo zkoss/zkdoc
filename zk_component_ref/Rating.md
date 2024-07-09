@@ -14,7 +14,7 @@ that is smaller than the maximum number.
 
 # Examples
 
-![](rating.gif)
+![](images/rating.gif)
 
 ## Default
 

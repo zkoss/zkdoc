@@ -161,7 +161,7 @@ In ZK 6.5, several components use a 3 x 3 grid structure(see image
 bellow) to achieve the rounded corner style. In ZK 7, we applied CSS 3,
 therefore, the complex 3 x 3 grid structure is no longer needed.
 
-![](Button2.png)
+![](images/Button2.png)
 
 <div style="margin-left: 10px">
 
