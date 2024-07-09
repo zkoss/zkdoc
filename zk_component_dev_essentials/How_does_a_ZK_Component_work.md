@@ -6,7 +6,7 @@ when the widget should update. This interaction is demonstrated in the
 following diagram.
 
 <figure>
-<img src="ZKComDevEss_widget_component_application.png"
+<img src="images/ZKComDevEss_widget_component_application.png"
 title="ZKComDevEss_widget_component_application.png" />
 <figcaption>ZKComDevEss_widget_component_application.png</figcaption>
 </figure>
@@ -17,7 +17,7 @@ button widget (aka., peer widget) will be invoked at the client to
 change the visual appearance (as shown below).
 
 <figure>
-<img src="ZKComDevEss_button_labels.png"
+<img src="images/ZKComDevEss_button_labels.png"
 title="ZKComDevEss_button_labels.png" />
 <figcaption>ZKComDevEss_button_labels.png</figcaption>
 </figure>
@@ -26,7 +26,7 @@ When the user clicks the button widget, the onClick event will be sent
 back to the server and notify the application (as demonstrated below).
 
 <figure>
-<img src="ZKComDevEss_button_click.png"
+<img src="images/ZKComDevEss_button_click.png"
 title="ZKComDevEss_button_click.png" />
 <figcaption>ZKComDevEss_button_click.png</figcaption>
 </figure>

@@ -2,7 +2,7 @@ The following diagram outlines how communication works between a ZK
 Widget and Component.
 
 <figure>
-<img src="ZKComDevEss_fire_event.png"
+<img src="images/ZKComDevEss_fire_event.png"
 title="ZKComDevEss_fire_event.png" />
 <figcaption>ZKComDevEss_fire_event.png</figcaption>
 </figure>

@@ -6,7 +6,7 @@
   Project\]**
     
   <figure>
-  <img src="ZK_Installation_Guide_Maven_step1.png"
+  <img src="images/ZK_Installation_Guide_Maven_step1.png"
   title="ZK_Installation_Guide_Maven_step1.png" />
   <figcaption>ZK_Installation_Guide_Maven_step1.png</figcaption>
   </figure>
@@ -14,7 +14,7 @@
   the New Maven Project wizard and click **Next \>**.
     
   <figure>
-  <img src="ZK_Installation_Guide_Maven_Archetype_step1.png"
+  <img src="images/ZK_Installation_Guide_Maven_Archetype_step1.png"
   title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
   <figcaption>ZK_Installation_Guide_Maven_Archetype_step1.png</figcaption>
   </figure>
@@ -22,7 +22,7 @@
   catalog dropdown list.
     
   <figure>
-  <img src="ZKComDevEss_Maven_CreateComponent_setp4.png‎"
+  <img src="images/ZKComDevEss_Maven_CreateComponent_setp4.png‎"
   title="ZKComDevEss_Maven_CreateComponent_setp4.png‎" />
   <figcaption>ZKComDevEss_Maven_CreateComponent_setp4.png‎</figcaption>
   </figure>
@@ -32,7 +32,7 @@
   *package* name.
     
   <figure>
-  <img src="ZKComDevEss_Maven_CreateComponent_setp5.png‎"
+  <img src="images/ZKComDevEss_Maven_CreateComponent_setp5.png‎"
   title="ZKComDevEss_Maven_CreateComponent_setp5.png‎" />
   <figcaption>ZKComDevEss_Maven_CreateComponent_setp5.png‎</figcaption>
   </figure>
@@ -64,7 +64,7 @@ to all other properties)
   and would be stored in *.m2/repository* in your home directory.
     
   <figure>
-  <img src="ZKComDevEss_Maven_CreateComponent_setp6.png‎"
+  <img src="images/ZKComDevEss_Maven_CreateComponent_setp6.png‎"
   title="ZKComDevEss_Maven_CreateComponent_setp6.png‎" />
   <figcaption>ZKComDevEss_Maven_CreateComponent_setp6.png‎</figcaption>
   </figure>
@@ -80,7 +80,7 @@ to all other properties)
 1.  Go to **Run Configurations**
       
     <figure>
-    <img src="ZKComDevEss_Maven_CreateComponent_run1.png"
+    <img src="images/ZKComDevEss_Maven_CreateComponent_run1.png"
     title="ZKComDevEss_Maven_CreateComponent_run1.png" />
     <figcaption>ZKComDevEss_Maven_CreateComponent_run1.png</figcaption>
     </figure>
@@ -90,7 +90,7 @@ to all other properties)
 
       
     <figure>
-    <img src="ZKComDevEss_Maven_CreateComponent_run2.png"
+    <img src="images/ZKComDevEss_Maven_CreateComponent_run2.png"
     title="ZKComDevEss_Maven_CreateComponent_run2.png" />
     <figcaption>ZKComDevEss_Maven_CreateComponent_run2.png</figcaption>
     </figure>
@@ -102,7 +102,7 @@ to all other properties)
 1.  Go to **Run As** \> **Maven package** (or **Maven install**)
       
     <figure>
-    <img src="ZKComDevEss_Maven_CreateComponent_pak1.png"
+    <img src="images/ZKComDevEss_Maven_CreateComponent_pak1.png"
     title="ZKComDevEss_Maven_CreateComponent_pak1.png" />
     <figcaption>ZKComDevEss_Maven_CreateComponent_pak1.png</figcaption>
     </figure>
@@ -110,7 +110,7 @@ to all other properties)
     source code.
       
     <figure>
-    <img src="ZKComDevEss_Maven_CreateComponent_pak2.png"
+    <img src="images/ZKComDevEss_Maven_CreateComponent_pak2.png"
     title="ZKComDevEss_Maven_CreateComponent_pak2.png" />
     <figcaption>ZKComDevEss_Maven_CreateComponent_pak2.png</figcaption>
     </figure>
@@ -185,7 +185,7 @@ Y:
   Maven Projects\]**
     
   <figure>
-  <img src="ZKComDevEss_Maven_CreateComponent_import1.png"
+  <img src="images/ZKComDevEss_Maven_CreateComponent_import1.png"
   title="ZKComDevEss_Maven_CreateComponent_import1.png" />
   <figcaption>ZKComDevEss_Maven_CreateComponent_import1.png</figcaption>
   </figure>
@@ -193,7 +193,7 @@ Y:
   explorer.
     
   <figure>
-  <img src="ZKComDevEss_Maven_CreateComponent_setp6.png‎"
+  <img src="images/ZKComDevEss_Maven_CreateComponent_setp6.png‎"
   title="ZKComDevEss_Maven_CreateComponent_setp6.png‎" />
   <figcaption>ZKComDevEss_Maven_CreateComponent_setp6.png‎</figcaption>
   </figure>

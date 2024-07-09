@@ -309,7 +309,7 @@ ${c:encodeURL('~./img/<component-package>/xxx.png')}</li>
 </ul></td>
 <td><p><strong>Example from zul.jar</strong></p>
 <figure>
-<img src="Jar_File_static_resources1.jpg"
+<img src="images/Jar_File_static_resources1.jpg"
 title="Jar_File_static_resources1.jpg" />
 <figcaption>Jar_File_static_resources1.jpg</figcaption>
 </figure></td>

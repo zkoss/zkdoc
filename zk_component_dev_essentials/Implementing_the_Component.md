@@ -9,7 +9,7 @@ derivative classes. There are several derived classes all providing
 different levels of functionality. The derived classes are shown below.
 
 <figure>
-<img src="ZKComDevEss_component_hierarchy.png"
+<img src="images/ZKComDevEss_component_hierarchy.png"
 title="ZKComDevEss_component_hierarchy.png" />
 <figcaption>ZKComDevEss_component_hierarchy.png</figcaption>
 </figure>
