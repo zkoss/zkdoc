@@ -385,8 +385,6 @@ zk_pivottable_essentials:
   - title: "Integration"
     url: "/zk_pivottable_essentials/integration"
     children:
-      - title: "Working with JDBC"
-        url: "/zk_pivottable_essentials/working_with_jdbc"
       - title: "Export"
         url: "/zk_pivottable_essentials/export"
   - title: "ZK Pivottable JSP Tag"
