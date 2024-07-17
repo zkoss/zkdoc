@@ -28,6 +28,9 @@ from: https://jekyllthemes.io/
 
 Jekyll plugin for building Jekyll sites with any public GitHub-hosted theme
 
+# Apply Local theme
+in `Gemfile`
+`gem "minimal-mistakes-jekyll", path: "/Users/hawk/Documents/workspace/KEIKAI-SPACE/minimal-mistakes/"`
 
 ## Usage
 
@@ -102,4 +105,4 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 
 ## prepend the image path. 
 * replace `!\[\]\(([^)]*)\)` with `![](images/$1)`
-* replace `<img src="([^"]*)"` with `<img src="images/$1"`
+* replace `<img src="([^"]*)"` with `<img src="images/$1`

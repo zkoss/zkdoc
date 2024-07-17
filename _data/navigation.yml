@@ -1,10 +1,23 @@
 main:
-  - title: "Getting Started"
-    url: /main/get_started
-  - title: "References"
-    url: /main/reference
-  - title: "API"
-    url: /main/api
+  - title: "ZK"
+    url:
+  - title: "ZK Charts"
+    url:
+  - title: "Keikai"
+    url: https://doc.keikai.io/dev-ref
+  - title: "ZK Pivottable"
+    url:
+  - title: "ZK Calendar"
+    url:
+  - title: "ZK Spring"
+    url:
+  - title: "ZATS"
+    url:
+  - title: "ZK Studio"
+    url:
+  - title: "ZK JSP"
+    url:
+
 
 get_started:
   - title: "Learn ZK in 10 Minutes"
