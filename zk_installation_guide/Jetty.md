@@ -39,9 +39,9 @@ zk.xml
 ```
 
 Refer to [The server-push-class
-Element](http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_device-config_Element/The_server-push-class_Element)
+Element](/zk_config_ref/zk.xml/The_device-config_Element/The_server-push-class_Element)
 and [Server Push
-Configuration](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Server_Push/Configuration)
+Configuration](/zk_dev_ref/Server_Push/Configuration)
 
 # Version History
 

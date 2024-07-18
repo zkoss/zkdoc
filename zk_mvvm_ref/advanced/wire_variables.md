@@ -2,7 +2,7 @@
 
 Wire Variables
 ==============
-We can use ` @WireVariable ` to wire variables **from implicit objects or registered variable resolvers** in a ViewModel as we do in a composer (please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Controller/Wire_Variables).
+We can use ` @WireVariable ` to wire variables **from implicit objects or registered variable resolvers** in a ViewModel as we do in a composer (please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables](/zk_dev_ref/MVC/Controller/Wire_Variables).
 Because ** [BindComposer](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindComposer.html) wires those variables for us before calling initial method **. But it will **not**
 wire components and listeners automatically like a composer. To achieve it, please refer to [Advance/Wire Components](./wire_components.html) and [Advance/Wire Event Listeners](./wire_event_listeners.html).
 
@@ -82,7 +82,7 @@ Then, you could bind it in the ZUL document. For example,
 ```xml
 <grid model="@load(vm.users)">
 ```
-You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Controller/Wire_Variables#Warning:_Not_a_good_idea_to_have_Spring_managing_the_composer) for the reason.
+You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer](/zk_dev_ref/MVC/Controller/Wire_Variables#Warning:_Not_a_good_idea_to_have_Spring_managing_the_composer) for the reason.
 
 Wire CDI-managed Beans
 ======================

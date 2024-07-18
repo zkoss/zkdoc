@@ -106,3 +106,5 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 ## prepend the image path. 
 * replace `!\[\]\(([^)]*)\)` with `![](images/$1)`
 * replace `<img src="([^"]*)"` with `<img src="images/$1`
+## check page link
+* `\[([^\]]+)\]\((https?:\/\/[^\)]+)\)`

@@ -147,7 +147,7 @@ root (e.g. /theme/dark/).
 
 After all this has been done, the components should have their views
 customized. Please refer to this
-[article](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Understanding_the_Theming_Subsystem/Switching_Themes)
+[article](/zk_dev_ref/Theming_and_Styling/Understanding_the_Theming_Subsystem/Switching_Themes)
 
 </ref>
 
@@ -278,4 +278,4 @@ following configuration item.
     [github](https://gist.github.com/raw/4334775/e5d669bb873443aa03f8febffccd3fc4b2518ecb/ztx.bat).
 
 [^2]: Please refer to [ZK Installation
-    Guide](http://books.zkoss.org/wiki/ZK_Installation_Guide)
+    Guide](/zk_installation_guide/Before_You_Start)

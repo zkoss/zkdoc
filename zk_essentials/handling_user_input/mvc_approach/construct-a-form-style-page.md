@@ -100,7 +100,7 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
 ```
 - Line 3: [`hflex="min"`](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility) can limit the column's width just wider enough to hold each row's content without a line break.
 -   Line 8:
-[`<cell>`](http://books.zkoss.org/wiki/ZK_Component_Reference/Supplementary/Cell) is
+[`<cell>`](/zk_component_ref/Supplementary/Cell) is
     used inside `<row>`, `<hbox>`, or `<vbox>` to fully control a column's align, row/column span, and width in an individual row.
 
 

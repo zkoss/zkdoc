@@ -17,6 +17,6 @@ ZK also allows you to change default queue name and scope that a binder subscrib
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')"
     binder="@init(value='xxx.MyBinder', queueScope='session')">
 ```
-For available scopes, please refer [ZK Developer's Reference/Event Handling/Event Queues](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Event_Handling/Event_Queues).
+For available scopes, please refer [ZK Developer's Reference/Event Handling/Event Queues](/zk_dev_ref/Event_Handling/Event_Queues).
 
 For binder class customization(This feature is reserved for framework architect, NOT recommended for app developer!), your implementation must extends [AnnotateBinder](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/AnnotateBinder.html)

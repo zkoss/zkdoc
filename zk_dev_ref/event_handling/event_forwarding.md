@@ -81,7 +81,7 @@ You can also use a component
 within your ZUML pages to specify a target component to which you would
 like to forward a specific event. This is especially useful if you want
 to forward events across different
-[IdSpace](http://books.zkoss.org/wiki/ZK_Developer's_Reference/UI_Composing/ID_Space)
+[IdSpace](/zk_dev_ref/UI_Composing/ID_Space)
 such as forwarding events from a component in an included ZUML page to
 the main page component. For example,
 

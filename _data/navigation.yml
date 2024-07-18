@@ -31,102 +31,102 @@ zk_essentials:
   - title: "Introduction"
     children:
       - title: "Overview"
-        url: /essentials/intro/overview
+        url: /zk_essentials/intro/overview
       - title: "Project Structure"
-        url: /essentials/intro/project_structure
+        url: /zk_essentials/intro/project_structure
   - title: "1. User Interface and Layout"
-    url: /essentials/user_interface_and_layout/README
+    url: /zk_essentials/user_interface_and_layout/README
     children:
       - title: "Build the View"
-        url: /essentials/user_interface_and_layout/build_the_view
+        url: /zk_essentials/user_interface_and_layout/build_the_view
       - title: "Include a Separate Page"
-        url: /essentials/user_interface_and_layout/include_a_separate_page
+        url: /zk_essentials/user_interface_and_layout/include_a_separate_page
       - title: "Apply CSS"
-        url: /essentials/user_interface_and_layout/apply_css
+        url: /zk_essentials/user_interface_and_layout/apply_css
   - title: "2. Controlling Components"
-    url: /essentials/controlling_components/README
+    url: /zk_essentials/controlling_components/README
     children:
       - title: "Fast Prototyping"
-        url: /essentials/controlling_components/in_zscript
+        url: /zk_essentials/controlling_components/in_zscript
       - title: "In Controller"
-        url: /essentials/controlling_components/in_controller
+        url: /zk_essentials/controlling_components/in_controller
       - title: "By Data Binding"
-        url: /essentials/controlling_components/by_data_binding
+        url: /zk_essentials/controlling_components/by_data_binding
   - title: "3. Handling User Input"
-    url: /essentials/handling_user_input/README
+    url: /zk_essentials/handling_user_input/README
     children:
       - title: "MVC Pattern"
-        url: /essentials/handling_user_input/mvc_approach
+        url: /zk_essentials/handling_user_input/mvc_approach
         children:
           - title: "Construct a Form Style Page"
-            url: /essentials/handling_user_input/mvc_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvc_approach/construct-a-form-style-page
           - title: "Populate Components with Data"
-            url: /essentials/handling_user_input/mvc_approach/populate-components-with-data
+            url: /zk_essentials/handling_user_input/mvc_approach/populate-components-with-data
           - title: "Save & Reload Data"
-            url: /essentials/handling_user_input/mvc_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvc_approach/save-and-reload-data
       - title: "MVVM Pattern"
-        url: /essentials/handling_user_input/mvvm_approach
+        url: /zk_essentials/handling_user_input/mvvm_approach
         children:
           - title: "Construct a Form Style Page"
-            url: /essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
           - title: "Load Data into Components"
-            url: /essentials/handling_user_input/mvvm_approach/load-data-to-components
+            url: /zk_essentials/handling_user_input/mvvm_approach/load-data-to-components
           - title: "Save & Reload Data"
-            url: /essentials/handling_user_input/mvvm_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvvm_approach/save-and-reload-data
   - title: "4. Implementing CRUD"
-    url: /essentials/implementing_crud/README
+    url: /zk_essentials/implementing_crud/README
     children:
       - title: "MVC Pattern"
-        url: /essentials/implementing_crud/mvc_approach
+        url: /zk_essentials/implementing_crud/mvc_approach
       - title: "MVVM Pattern"
-        url: /essentials/implementing_crud/mvvm_approach
+        url: /zk_essentials/implementing_crud/mvvm_approach
   - title: "5. Shadow Components"
-    url: /essentials/shadow_components/README
+    url: /zk_essentials/shadow_components/README
     children:
       - title: "Iterate a Collection"
-        url: /essentials/shadow_components/iterate_a_collection
+        url: /zk_essentials/shadow_components/iterate_a_collection
       - title: "Flow Control"
-        url: /essentials/shadow_components/flow_control
+        url: /zk_essentials/shadow_components/flow_control
       - title: "Reuse Components with a Template"
-        url: /essentials/shadow_components/reuse_components_with_template
+        url: /zk_essentials/shadow_components/reuse_components_with_template
   - title: "6. Navigation and Template"
-    url: /essentials/navigation_and_template/README
+    url: /zk_essentials/navigation_and_template/README
     children:
       - title: "Page Based"
-        url: /essentials/navigation_and_template/page_based
+        url: /zk_essentials/navigation_and_template/page_based
       - title: "AJAX Based - MVC"
-        url: /essentials/navigation_and_template/ajax_based
+        url: /zk_essentials/navigation_and_template/ajax_based
       - title: "AJAX Based - MVVM"
-        url: /essentials/navigation_and_template/ajax_based_navigation_-_mvvm
+        url: /zk_essentials/navigation_and_template/ajax_based_navigation_-_mvvm
   - title: "7. Authentication"
-    url: /essentials/authentication/README
+    url: /zk_essentials/authentication/README
     children:
       - title: "Session"
-        url: /essentials/authentication/session
+        url: /zk_essentials/authentication/session
       - title: "Secure Your Pages"
-        url: /essentials/authentication/secure_your_pages
+        url: /zk_essentials/authentication/secure_your_pages
       - title: "Login"
-        url: /essentials/authentication/login
+        url: /zk_essentials/authentication/login
       - title: "Logout"
-        url: /essentials/authentication/logout
+        url: /zk_essentials/authentication/logout
   - title: "8. Spring Integration"
-    url: /essentials/spring_integration/README
+    url: /zk_essentials/spring_integration/README
     children:
       - title: "Configuration"
-        url: /essentials/spring_integration/configuration
+        url: /zk_essentials/spring_integration/configuration
       - title: "Register Spring Beans"
-        url: /essentials/spring_integration/register_spring_beans
+        url: /zk_essentials/spring_integration/register_spring_beans
       - title: "Wire Spring Beans"
-        url: /essentials/spring_integration/wire_spring_beans
+        url: /zk_essentials/spring_integration/wire_spring_beans
   - title: "9. JPA Integration"
-    url: /essentials/jpa_integration/README
+    url: /zk_essentials/jpa_integration/README
     children:
       - title: "Configuration"
-        url: /essentials/jpa_integration/configuration
+        url: /zk_essentials/jpa_integration/configuration
       - title: "DAO Implementation"
-        url: /essentials/jpa_integration/dao_implementation
+        url: /zk_essentials/jpa_integration/dao_implementation
       - title: "Conclusion"
-        url: /essentials/jpa_integration/conclusion
+        url: /zk_essentials/jpa_integration/conclusion
 
 zk_mvvm_ref:
   - title: "Introduction"

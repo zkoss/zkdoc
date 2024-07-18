@@ -171,9 +171,9 @@ size of the response, if the Client engine needs to render a lot (e.g. a
 Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
 the data sent to the client using [Render on
-Demand](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Client_Render_on_Demand)
+Demand](/zk_dev_ref/Performance_Tips/Client_Render_on_Demand)
 or
-[Pagination](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Use_Live_Data_and_Paging)
+[Pagination](/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Use_Live_Data_and_Paging)
 (Most users don't need 1000 lines visible at once)
 
 Performance degrading over time when using the application (while
@@ -221,7 +221,7 @@ at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in
 the source code (enabling
-[debug-js](http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_debug-js_Element)
+[debug-js](/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element)
 will help when using this feature).
 
 The small peak (at 2800ms) on the left side is my actual event
@@ -541,14 +541,14 @@ current component tree) for a user are stored in the session. Therefore
 one should check the following settings:
 
 - [ZK Session
-  Cleaner](http://books.zkoss.org/wiki/ZK_Configuration_Reference/web.xml/ZK_Session_Cleaner)
+  Cleaner](/zk_config_ref/web.xml/ZK_Session_Cleaner)
 
   
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
 - [Session
-  Configuration](http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_session-config_Element)
+  Configuration](/zk_config_ref/zk.xml/The_session-config_Element)
 
   
 check session timeout, either here or in web.xml
@@ -556,7 +556,7 @@ check session timeout, either here or in web.xml
 check max desktops per session, if you want to put a limit here
 
 - [Desktop
-  Configuration](http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_desktop-config_Element)
+  Configuration](/zk_config_ref/zk.xml/The_desktop-config_Element)
 
   
 if desktops stay alive too long, check the desktop timeout
@@ -616,7 +616,7 @@ might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
 [http://books.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Tips/Reuse_Desktops
 reusing
-desktops](http://books.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Tips/Reuse_Desktops_reusing_desktops)
+desktops](/zk_dev_ref/Performance_Tips/Reuse_Desktops_reusing_desktops)
 can help.
 
 ### ZK Server Configuration

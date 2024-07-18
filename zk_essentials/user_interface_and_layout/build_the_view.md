@@ -11,7 +11,7 @@ In addition to above ways,  [richlet](http://books.zkoss.org/wiki/ZK%20Developer
 
 
 # Write a ZUL File
-To create components in ZUML, you need to create a file with the file extension "**.zul**". In zul files, an XML element(tag) represent one component, and you can configure each component's style, behavior, and function by setting the element's attributes. Please refer to [ZK Component Reference](http://books.zkoss.org/wiki/ZK_Component_Reference) and [Javadoc](http://zkoss.org/javadoc/latest/zk/) for complete component attributes.
+To create components in ZUML, you need to create a file with the file extension "**.zul**". In zul files, an XML element(tag) represent one component, and you can configure each component's style, behavior, and function by setting the element's attributes. Please refer to [ZK Component Reference](/zk_component_ref) and [Javadoc](http://zkoss.org/javadoc/latest/zk/) for complete component attributes.
 
 A very simple, classic zul example is like:
 ```xml
@@ -204,7 +204,7 @@ aligned to the center.
 ```
 
 -   Line 2: The
-    [*Vbox*](http://books.zkoss.org/wiki/ZK_Component_Reference/Layouts/Vbox), like
+    [*Vbox*](/zk_component_ref/Layouts/Vbox), like
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
 -   Line 3: You can use [ EL

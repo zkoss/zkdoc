@@ -4,8 +4,7 @@
 
 # Cookie Validation
 
-In order to provide the handling of [HTTP
-cookies](http://www.ietf.org/rfc/rfc2965.txt) for developers, ZATS Mimic
+In order to provide the handling of [HTTP cookies](http://www.ietf.org/rfc/rfc2965.txt) for developers, ZATS Mimic
 introduces a group of methods on
 [Client](http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/Client.html).
 ZATS Mimic seamlessly maintains cookies after connecting with a ZK

@@ -6,7 +6,7 @@ Before we declare data binding annotation for a new custom component, only load 
 Create a Custom Component
 =========================
 
-In order to explain how to declare data binding definition, we create a macro component with a custom class as an example. (Please [ refer here](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/Macro_Component/Implement_Custom_Java_Class) for details.) The macro component is named "EditableLabel". It's a label with in-place editor. This component display a label first. When we double click it, it switch to a textbox for editing and change label's value.
+In order to explain how to declare data binding definition, we create a macro component with a custom class as an example. (Please [ refer here](/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class) for details.) The macro component is named "EditableLabel". It's a label with in-place editor. This component display a label first. When we double click it, it switch to a textbox for editing and change label's value.
 
 ``` java
 public class EditableLabel extends HtmlMacroComponent {
@@ -62,7 +62,7 @@ public class EditableLabel extends HtmlMacroComponent {
 Declare Data Binding in Language Addon XML
 ==========================================
 
-In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding](http://books.zkoss.org/wiki/ZK_Component_Reference/Annotation/Data_Binding) and [ Language Definition](http://books.zkoss.org/wiki/ZK_Client-side_Reference/Language_Definition). Here we only cover mostly commonly used attributes.
+In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding](/zk_component_ref/Annotation/Data_Binding) and [ Language Definition](http://books.zkoss.org/wiki/ZK_Client-side_Reference/Language_Definition). Here we only cover mostly commonly used attributes.
 
 For our example, the key point is to declare when to save component's "value" property to a ViewModel's member variable. The saving time is specified by **event name**.
 
@@ -131,7 +131,7 @@ public String getValue() {
 }
 ```
 
-The syntax of annotation's element is the same as [ZUML's annotations](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Annotations/Annotate_in_ZUML).
+The syntax of annotation's element is the same as [ZUML's annotations](/zk_dev_ref/Annotations/Annotate_in_ZUML).
 
 **`@ZKBIND( [ATTRIBUTE_NAME1]=[ATTRIBUTE_VALUE1], ...)`**
 

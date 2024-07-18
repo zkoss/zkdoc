@@ -1,7 +1,6 @@
 
 
-We write the test case with JUnit 4 annotation, please refer to [JUnit 4
-tutorial](http://www.vogella.com/tutorials/JUnit/article.html).
+We write the test case with JUnit 4 annotation, please refer to [JUnit 4 tutorial](http://www.vogella.com/tutorials/JUnit/article.html).
 
 The following test case will mimic a user clicking the button and verify
 whether the label's value is "Hello Mimic" or not.

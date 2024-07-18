@@ -17,7 +17,7 @@ users can simply drag and drop the file(s) they want to upload into
 `Dropupload` and the uploading process will start automatically. The
 behaviour and operation of this `Dropupload` component is similar to
 ZK's [**file upload
-button**](http://books.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Button#File_Upload)
+button**](/zk_component_ref/Essential_Components/Button#File_Upload)
 but with better user experience and performance.
 
 # Example
@@ -171,7 +171,7 @@ file.
 # Customized File Viewer
 
 Similar to [**file upload
-button**](http://books.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Button#File_Upload),
+button**](/zk_component_ref/Essential_Components/Button#File_Upload),
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 

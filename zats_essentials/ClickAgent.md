@@ -16,8 +16,7 @@ you wanted to select a <b>listitem</b>, use `SelectAgent`,for checkbox,
 use `CheckAgent`. Which operation agent you choose would depend on the
 intention.
 
-According to [ZK Component
-Referenece](http://books.zkoss.org/wiki/ZK_Component_Reference/Base_Components/HtmlBasedComponent),
+According to [ZK Component Referenece](/zk_component_ref/Base_Components/HtmlBasedComponent),
 **all components that inherit `HtmlBasedComponent` supports click,
 double click, and right click**.
 

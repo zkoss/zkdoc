@@ -71,7 +71,7 @@ could use `button.setAutodisable()` in Java or `autodisable="self"` in
 ZUL to prevent DoS resulting from repeated button onClicks which might
 hold up precious server resources. For more details on Button
 autodisable refer
-[here](http://books.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Button#Autodisable)
+[here](/zk_component_ref/Essential_Components/Button#Autodisable)
 
 In addition to this, each and every ZK ajax request carries an
 additional http header called **ZK-SID**. The purpose of this ZK-SID

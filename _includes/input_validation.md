@@ -1,6 +1,6 @@
 # User Input Validation
 
-Each ZK input component provides a built-in input validation by `constraint` attribute. You can specify [a pre-defined constraint rule](http://books.zkoss.org/wiki/ZK Component Reference/Base Components/InputElement#Validation)
+Each ZK input component provides a built-in input validation by `constraint` attribute. You can specify [a pre-defined constraint rule](/zk_component_ref/Base Components/InputElement#Validation)
 to activate it, then the validation works without writing any code in a controller. For example:
 
 ```xml

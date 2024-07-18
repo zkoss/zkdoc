@@ -8,7 +8,7 @@ have applied for a Heroku account.
 # Deploy ZK Project to Heroku
 
 Heroku **only** allow **Maven Projects**. Follow this
-[guide](http://books.zkoss.org/wiki/ZK_Installation_Guide/Setting_up_IDE/Maven/Create_and_Run_ZK_Application_with_Maven_Archetype)
+[guide](/zk_installation_guide/Setting_up_IDE/Maven/Create_and_Run_ZK_Application_with_Maven_Archetype)
 to create a ZK-Maven Project. After you have created a ZK-Maven project,
 you can decide to run with either Jetty or Tomcat.
 

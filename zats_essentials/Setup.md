@@ -21,8 +21,7 @@ first.
     </dependency>
 ```
 
-Check [CE
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic-ext96/)
+Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic-ext96/)
 for the latest version.
 
 ### Jakarta EE
@@ -36,8 +35,7 @@ for the latest version.
     </dependency>
 ```
 
-Check [CE
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic/)
+Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic/)
 for the latest version.
 
 {% include version-badge.html version=7.0.0 %}
