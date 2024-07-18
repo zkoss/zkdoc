@@ -26,7 +26,7 @@ By following this pattern, ZK supports MVVM approach which controls components b
 
 Since the ViewModel contains no reference to UI components, you cannot
 control components directly by their setter and getter. Therefore, ZK supports a data binding mechanism, ZK Bind, to synchronize data and handle events and respond between the View and ViewModel. Additionally, this mechanism also has to bridge events from the View to the action provided by the ViewModel. In this binding system,
-the [**binder**](http://books.zkoss.org/wiki/ZK Developer's Reference/MVVM/DataBinding/Binder) plays the key role to operate the whole mechanism. The binder is like a broker and responsible for communication between View and ViewModel.
+the [**binder**](/zk_dev_ref/MVVM/DataBinding/Binder) plays the key role to operate the whole mechanism. The binder is like a broker and responsible for communication between View and ViewModel.
 
 In brief, MVVM approach allows you to **control components with data binding** (not by API).
 

@@ -62,7 +62,7 @@ public class EditableLabel extends HtmlMacroComponent {
 Declare Data Binding in Language Addon XML
 ==========================================
 
-In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding](/zk_component_ref/Annotation/Data_Binding) and [ Language Definition](http://books.zkoss.org/wiki/ZK_Client-side_Reference/Language_Definition). Here we only cover mostly commonly used attributes.
+In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding](/zk_component_ref/Annotation/Data_Binding) and [ Language Definition](/zk_client_side_ref/Language_Definition). Here we only cover mostly commonly used attributes.
 
 For our example, the key point is to declare when to save component's "value" property to a ViewModel's member variable. The saving time is specified by **event name**.
 

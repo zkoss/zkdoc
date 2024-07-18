@@ -172,11 +172,11 @@ If you have problem switching from the evaluation repository to the
 licensed one, please check the followings:
 
 - 1 **Remove evaluation repository**, [use ZK EE repository
-  instead](http://books.zkoss.org/wiki/ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Repository)
+  instead](/zk_pivottable_essentials/Quick_Start/Using_Maven#Repository)
 - 2\. [Login
-  authentication](http://books.zkoss.org/wiki/ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Login_authentication)
+  authentication](/zk_pivottable_essentials/Quick_Start/Using_Maven#Login_authentication)
 - 3\. [Delete maven local repository evaluation
-  cache](http://books.zkoss.org/wiki/ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Purge_local_repository_evaluation_cache)
+  cache](/zk_pivottable_essentials/Quick_Start/Using_Maven#Purge_local_repository_evaluation_cache)
 
 ##### Purge local repository evaluation cache
 

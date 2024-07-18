@@ -16,7 +16,7 @@ the developer tool.
 
 - Before start customizing your own component styles, first, follow the
   instruction, [compile LESS to DSP during development
-  phase](http://books.zkoss.org/wiki/ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/Compile_LESS#Compile_LESS_to_DSP_during_Development_phase)
+  phase](/zk_style_customization_guide/Integrate_with_LESS/How_ZK_works_with_LESS/Compile_LESS#Compile_LESS_to_DSP_during_Development_phase)
   to have your ZKLess Servlet ready.
 
 <!-- -->

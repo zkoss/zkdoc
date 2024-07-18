@@ -84,7 +84,7 @@ public class SidebarChapter2Controller extends SelectorComposer<Component>{
 It is very common that we need to initialize components when a zul file
 is loaded. In our example, we need to create `<row>` in `<grid>` for
 the sidebar, therefore we should override a [ composer life-cycle
-method](http://books.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controller/Composer#Lifecycle)
+method](/zk_dev_ref/MVC/Controller/Composer#Lifecycle)
 `doAfterCompose(Component)`. The passed argument, `comp`, is the
 component that the controller applies to, which in our example is the
 `Grid`. ZK will call this method after the applied component, `<grid>` , and its all child components are created, so we can change components' attributes or even create other components in it.

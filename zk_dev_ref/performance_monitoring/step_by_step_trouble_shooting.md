@@ -608,7 +608,7 @@ Or you can access Statistics in Java code:
 
 related documentation
 
-- <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_listener_Element/The_org.zkoss.zk.ui.util.Monitor_interface>
+- <(/zk_config_ref/zk.xml/The_listener_Element/The_org.zkoss.zk.ui.util.Monitor_interface>
 - <http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Statistic.html>
 
 If you see more Sessions than you expect, your session/desktop timeout
@@ -623,31 +623,31 @@ can help.
 
 - check debug mode → zk config should **not** be enabled (disabled by
   default)
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_debug-js_Element>
+  - <(/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element>
 
 <!-- -->
 
 - check caching config → should **not** be disabled (enabled by default)
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.classWebResource.cache>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.WPD.cache>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.WCS.cache>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.web.classWebResource.cache>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.WPD.cache>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.WCS.cache>
 
 <!-- -->
 
 - check compression settings → should **not** be disabled (enabled by
   default)
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/web.xml/ZK_AU_Engine#The_Initial_Parameters>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/web.xml/ZK_Loader#The_Initial_Parameters>
+  - <(/zk_config_ref/web.xml/ZK_AU_Engine#The_Initial_Parameters>
+  - <(/zk_config_ref/web.xml/ZK_Loader#The_Initial_Parameters>
 
 <!-- -->
 
 - consider/check render on demand settings
   - <http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Client_Render_on_Demand>
   - <http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.client.rod>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.grid.initRodSize>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.listbox.initRodSize>
-  - <http://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.tree.initRodSize>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.client.rod>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.grid.initRodSize>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.listbox.initRodSize>
+  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.tree.initRodSize>
     (ZK 7)
 
 <!-- -->

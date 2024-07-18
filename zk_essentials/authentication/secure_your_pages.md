@@ -74,7 +74,7 @@ public class AuthenticationServiceChapter7Impl extends AuthenticationServiceChap
 
 ## Page Initialization
 
-ZK allows you to [ run some code before ZK Loader instantiates any component](http://books.zkoss.org/wiki/ZK%20Developer's%20Reference/UI%20Patterns/Page%20Initialization)
+ZK allows you to [ run some code before ZK Loader instantiates any component](/zk_dev_ref/UI%20Patterns/Page%20Initialization)
 by implementing an `org.zkoss.zk.ui.util.Initiator`.
 When we apply an initiator to a zul, ZK will invoke our initiator before creating components.
 

@@ -242,7 +242,7 @@ curly braces.
 
 If you want to move an error message box by scrolling, please use
 [data-scrollable
-attribute](http://books.zkoss.org/wiki/ZUML_Reference/ZUML/Namespaces/Client_Attribute/Data-Scrollable).
+attribute](/zuml_ref/ZUML/Namespaces/Client_Attribute/Data-Scrollable).
 
 ## Custom Constraint
 

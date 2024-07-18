@@ -48,7 +48,7 @@ You can use EL expression to call a method in a ViewModel.
 
 Call Tag Library's Methods
 --------------------------
-We could call [tag library's methods in a zul with EL expression](http://books.zkoss.org/wiki/ZUML_Reference/ZUML/Processing_Instructions/taglib) equally, we can also call them in a data binding expression and this calling can be nested. The syntax is as follows:
+We could call [tag library's methods in a zul with EL expression](/zuml_ref/ZUML/Processing_Instructions/taglib) equally, we can also call them in a data binding expression and this calling can be nested. The syntax is as follows:
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 ...
@@ -61,7 +61,7 @@ We could call [tag library's methods in a zul with EL expression](http://books.z
 
 Call Xel Methods
 ----------------------
-The [xel method](http://books.zkoss.org/wiki/ZUML_Reference/ZUML/Processing_Instructions/xel-method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
+The [xel method](/zuml_ref/ZUML/Processing_Instructions/xel-method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
 ```xml
 <?xel-method prefix="x" name="max"
     class="java.lang.Math"

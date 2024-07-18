@@ -32,7 +32,7 @@ public class FooViewModel {
 
 Wire from Variable Resolver
 ---------------------------
-First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive](http://books.zkoss.org/wiki/ZUML_Reference/ZUML/Processing_Instructions/variable-resolver). Here is the example of registering variable resolvers with annotations.
+First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive](/zuml_ref/ZUML/Processing_Instructions/variable-resolver). Here is the example of registering variable resolvers with annotations.
 ```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooViewModel {
@@ -94,6 +94,6 @@ When wiring variables, the predefined sequence to look for variable resolvers is
 
 1.  The variable resolver defined in the ZUML document.
 2.  The variable resolver annotated registered in the class with the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation.
-3.  If none of above is found, it looks for [the implicit objects](http://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects), such as session and page.
+3.  If none of above is found, it looks for [the implicit objects](/zuml_ref/EL_Expressions/Implicit_Objects), such as session and page.
 
 
