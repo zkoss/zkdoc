@@ -5,10 +5,9 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache  #required by minimal-mistakes
   - jekyll-paginate
-minimal_mistakes_skin: "air"
-title: "ZK Document"
-#title_link: "https://keikai.io"
+minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
+logo: /assets/images/ZK-logo.svg
 
 search                    : true
 search_full_content       : true
@@ -123,7 +122,6 @@ defaults:
       sidebar:
         nav: "zuml_ref"
 
-
 comments:
   provider: "disqus"
   disqus:
@@ -131,10 +129,3 @@ comments:
 atom_feed:
   hide: true
 # disqus admin is hawkchen@potix.com
-    
-#repository: "username/repo-name"
-#logo: "/assets/images/88x88.png"
-# predefined properties
-# base path of developer reference
-#devref: "/dev-ref"
-#devref_image_folder: "/assets/images/dev-ref"

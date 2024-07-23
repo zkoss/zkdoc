@@ -13,9 +13,9 @@ Because `page.url` ends with `.html` by default.
 
 
 # Preview at Local
-1. install necessary gem
+* install necessary gem for one time
 `bundle install`
-2. start a local web server
+* each time just start a local web server
 `preview.sh`
 
 Ref: [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll)
