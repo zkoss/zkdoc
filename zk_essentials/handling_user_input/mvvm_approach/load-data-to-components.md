@@ -96,7 +96,7 @@ an attribute and a ViewModel's property is called **property binding**.
 Once the binding is established, ZK will synchronize (load or save)
 data between components and the ViewModel for us automatically.
 
-![ ](/essential/images/ze-Mvvm-databinding-role.png)
+![ ](/zk_essentials/images/ze-Mvvm-databinding-role.png)
 
 
 ## Load a User
@@ -120,7 +120,7 @@ For the first row of this form, we want to show the user name, then we can load 
 
 ## Load a Collection Object, Country List
 This form needs a drop-down list that contains a list of countries. When a user visits the page, the data in drop-down list should be ready. To achieve this, we have to load the country list from the ViewModel.
-![ ](/essential/images/ze-ch5-collection.png)
+![ ](/zk_essentials/images/ze-ch5-collection.png)
 
 In order to provide a dropdown list, we put a `<listbox>` in a `select` mold.
  ``` xml

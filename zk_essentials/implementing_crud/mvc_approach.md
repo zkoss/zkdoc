@@ -132,7 +132,7 @@ public class TodoListController extends SelectorComposer<Component>{
 There is a priority radiogroup in todo item detail editor appeared on
 the right hand side when you select an item.
 
-![ center](/essential/images/ze-ch6-priority.png  " center")
+![ center](/zk_essentials/images/ze-ch6-priority.png  " center")
 
 <div style="text-align:center">
 <strong>Todo Item's Priority Radiogroup</strong>
@@ -210,7 +210,7 @@ public class TodoListController extends SelectorComposer<Component>{
 
 After typing the todo item name, we can save the item by either clicking
 the button with the plus icon
-(![inline](/essential/images/ze-ch6-plus.png)) or pressing
+(![inline](/zk_essentials/images/ze-ch6-plus.png)) or pressing
 "Enter" key. Therefore, we have to listen to 2 events: `onClick` and
 `onOK`. For handling other key pressing events, please refer to
 [ZK\_Developer's\_Reference/UI\_Patterns/Keystroke\_Handling](/zk_dev_ref/UI%20Patterns/Keystroke%20Handling).
@@ -502,7 +502,7 @@ public class TodoListController extends SelectorComposer<Component>{
 
 Implement deletion feature is similar to completing a todo item. We also
 forward each delete button's
-(![](images//zk_essentials/images/ze-ch6-cross.png "fig:Tutorial-ch6-cross.png")) `onClick`
+(![](/zk_essentials/images/ze-ch6-cross.png "fig:Tutorial-ch6-cross.png")) `onClick`
 event to the *Listbox* that encloses those buttons.
 
 **Forward delete button's `onClick`**

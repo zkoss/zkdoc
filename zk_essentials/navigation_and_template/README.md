@@ -11,7 +11,7 @@ to help users keep track of where they are. Luckily, since 8.0 ZK provides **Tem
 
 In this chapter, the example application we are going to build looks as follows:
 
-![](images//zk_essentials/images/ze-ch7-ajax-based.png)
+![](/zk_essentials/images/ze-ch7-ajax-based.png)
 
 The sidebar is used for navigation control. There are 7 menu items on the sidebar, and the lower 4 items lead you to different functions. They only change the central area's content. All other areas are unchanged to maintain a consistent layout style during the navigation.
 

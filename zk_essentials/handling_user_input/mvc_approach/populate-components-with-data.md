@@ -80,7 +80,7 @@ This form needs a drop-down list that contains a list of countries. When a user 
 be ready. To achieve this, we have to initialize a drop-down list in the
 controller.
 
-![ ](/essential/images/ze-ch5-collection.png)
+![ ](/zk_essentials/images/ze-ch5-collection.png)
 
 
 By setting `<listbox>` in "select" mold, We will have a drop-down list instead of a table-like component on the page.
