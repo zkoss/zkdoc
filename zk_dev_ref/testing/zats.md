@@ -23,7 +23,7 @@ frequent unit testing during an agile development process.
 
 The concept is as follows:
 
-![](images/Smalltalk-ZatsMimicConcept.png)
+![](/zk_dev_ref/images/Smalltalk-ZatsMimicConcept.png)
 
 Testers write test cases to simulate user actions such as clicking or
 typing with operation agents. Operation agent communicates with server
@@ -41,7 +41,7 @@ and one button with no other content at first. It has only one function:
 when a user clicks the button, the label shows "Hello Mimic" as shown in
 the image below. We are going to verify this behavior.
 
-![](images/Smalltalk-mimic-hello.png)
+![](/zk_dev_ref/images/Smalltalk-mimic-hello.png)
 
 **ZUL of our simple application**
 

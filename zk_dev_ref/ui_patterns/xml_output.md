@@ -33,7 +33,7 @@ The following is an example that generates the SVG output. It looks very
 similar to the XML output you want to generate, except you can use
 zscript, EL expressions, macro components and other ZK features.
 
-![](images/XML_SVG.png)
+![](/zk_dev_ref/images/XML_SVG.png)
 
 ``` xml
  <?page contentType="image/svg+xml;charset=UTF-8"?>

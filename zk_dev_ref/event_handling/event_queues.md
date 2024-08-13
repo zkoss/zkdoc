@@ -8,7 +8,7 @@ explicitly specifying or having knowledge of intended recipients. By
 subscribing, a receiving module (subscriber) receives messages that the
 subscriber has registered an interest in, without explicitly specifying
 or knowing the publisher.
-![](images/Eventqueue-concept.jpg "Eventqueue-concept.jpg")
+![](/zk_dev_ref/images/Eventqueue-concept.jpg "Eventqueue-concept.jpg")
 
 ZK generalizes the event queue to support the server push. The use is
 straightforward: specifying the scope of a given event queue as

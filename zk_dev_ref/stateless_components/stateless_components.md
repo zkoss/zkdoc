@@ -55,7 +55,7 @@ title="Stateful_component_overview.jpg" />
 <figcaption>Stateful_component_overview.jpg</figcaption>
 </figure>
 
-![](images/Stateless_component_overview.jpg)
+![](/zk_dev_ref/images/Stateless_component_overview.jpg)
 
 ### Component State Management
 

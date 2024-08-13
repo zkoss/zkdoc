@@ -65,7 +65,7 @@ follows:
 
 Then, the result
 
-![](images/DrGroupsModel.png)
+![](/zk_dev_ref/images/DrGroupsModel.png)
 
 # Sorting and Regrouping
 
@@ -109,7 +109,7 @@ Suppose you have the data in a two-dimensional array (see below), and
 you want to allow the user to group them based on a field selected by
 the user (such as food's name or food's calories).
 
-![](images/DrGroupsModelArray.png)
+![](/zk_dev_ref/images/DrGroupsModelArray.png)
 
 ``` java
 //Data

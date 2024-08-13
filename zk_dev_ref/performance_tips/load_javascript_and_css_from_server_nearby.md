@@ -6,7 +6,7 @@
 > generate the URLs of JavaScript and CSS (and images it refers) from
 > the server near the clients.
 
-![](images/URLEncoder.png)
+![](/zk_dev_ref/images/URLEncoder.png)
 
 <span style="font-weight: bold;color:red;" >\*Notice :</span> the ZK
 static resource server is an application server which you <b>deploy only

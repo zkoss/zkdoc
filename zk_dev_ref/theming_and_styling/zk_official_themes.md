@@ -127,13 +127,13 @@ Themes](ZK_Developer's_Reference/Theming_and_Styling/Switching_Themes).
 
 Iceblue(**default**), Poppy, Marigold, Olive, Aurora, Lavender
 
-![](images/ZK85_Theme_Lite.png)
+![](/zk_dev_ref/images/ZK85_Theme_Lite.png)
 
 ## Dark themes
 
 Ruby, Amber, Emerald, Aquamarine, Montana, Violet
 
-![](images/ZK85_Theme_Dark.png)
+![](/zk_dev_ref/images/ZK85_Theme_Dark.png)
 
 ## Mix-match
 
@@ -141,7 +141,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![](images/ZK85_Theme_Mix.png)
+![](/zk_dev_ref/images/ZK85_Theme_Mix.png)
 
 ## Accessibility-ready themes
 

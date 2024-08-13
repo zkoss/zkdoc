@@ -50,7 +50,7 @@ for us.
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![](images/Icon_info.png "Icon_info.png") **Note:** If you don't use Maven,
+![](/zk_dev_ref/images/Icon_info.png "Icon_info.png") **Note:** If you don't use Maven,
 please refer to Spring Security Reference Documentation to check which
 JAR files are needed.
 
@@ -367,7 +367,7 @@ and a user with "ROLE_USER" can see a disabled "Delete" button. But a
 user with "ROLE_EDITOR" can see the "Delete" button and be able to click
 it.
 
-![](images/spring-security-anonymous.png)
+![](/zk_dev_ref/images/spring-security-anonymous.png)
 
 <div style="text-align:center">
 
@@ -375,7 +375,7 @@ it.
 
 </div>
 
-![](images/spring-security-user.png)
+![](/zk_dev_ref/images/spring-security-user.png)
 
 <div style="text-align:center">
 
@@ -383,7 +383,7 @@ it.
 
 </div>
 
-![](images/spring-security-editor.png)
+![](/zk_dev_ref/images/spring-security-editor.png)
 
 <div style="text-align:center">
 

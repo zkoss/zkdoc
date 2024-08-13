@@ -77,7 +77,7 @@ For example, see the following ZUML page
 
 will form ID spaces as follows:
 
-![](images/zk_the_id_space.jpg)
+![](/zk_dev_ref/images/zk_the_id_space.jpg)
 
 As depicted in the figure, there are three spaces: P, A and C. Space P
 includes P, A, F and G. Space A includes A, B, C and D. Space C includes

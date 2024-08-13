@@ -50,7 +50,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 }
 ```
 
-![](images/St201107-listbox.png‎)
+![](/zk_dev_ref/images/St201107-listbox.png‎)
 
 > ------------------------------------------------------------------------
 >

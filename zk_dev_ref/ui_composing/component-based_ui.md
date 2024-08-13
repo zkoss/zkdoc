@@ -11,11 +11,7 @@ property to normal and setting its width to a definite 250 pixels.
 Enclosed in the <javadoc>org.zkoss.zul.Window</javadoc> component are
 two <javadoc>org.zkoss.zul.Button</javadoc> components.
 
-<figure>
-<img src="images/ZKEssentials_Intro_Hello.png
-title="ZKEssentials_Intro_Hello.png" />
-<figcaption>ZKEssentials_Intro_Hello.png</figcaption>
-</figure>
+![](/zk_dev_ref/images/ZKEssentials_Intro_Hello.png)
 
 As shown above, there are two ways to declare UI: XML-based approach and
 pure-Java approach. You can mix them if you like.
@@ -108,7 +104,7 @@ is a collection of pages. It represents a browser window (a tab or a
 frame of the browser)[^1]. You might image a desktop representing an
 independent HTTP request.
 
-![](images/ZKEssentials_Intro_MultiPage.png)
+![](/zk_dev_ref/images/ZKEssentials_Intro_MultiPage.png)
 
 A desktop is also a logic scope that an application can access in a
 request. Each time a request is sent from the client, it is associated

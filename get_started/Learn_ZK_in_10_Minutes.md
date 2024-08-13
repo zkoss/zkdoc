@@ -141,7 +141,7 @@ In the registration form above, the "Submit button" is disabled at the
 beginning, and it is only enabled (clickable) when a user checks the
 "Term of use" checkbox.
 
-![](Simplezk-check-submit.gif)
+![](/get_started/images/Simplezk-check-submit.gif)
 
 As ZK is an event-driven framework, a user action is therefore handled
 by an event listener. ZK provides an annotation [ **@Listen** to
@@ -205,7 +205,7 @@ Design](ZK_Developer%27s_Reference/UI_Patterns/Responsive_Design).
 
 # Easy Backend Integration
 
-![](_multi-layers.jpg)
+![](/get_started/images/Multi-layers.jpg)
 
 As ZK allows you to control UI via a controller on the server-side, the
 controller is, therefore, the main extension point to integrate any Java

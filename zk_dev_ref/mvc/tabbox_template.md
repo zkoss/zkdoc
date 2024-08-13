@@ -55,7 +55,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 ]]></zscript>
 ```
 
-![](images/St201311-tabbox.png‎)
+![](/zk_dev_ref/images/St201311-tabbox.png‎)
 
 > ------------------------------------------------------------------------
 >
