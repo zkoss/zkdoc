@@ -11,10 +11,10 @@ approach to build the application here. This approach is very intuitive
 and flexible and gives you full control of components. In addition, you
 can also choose to go with the **MVVM** approach that is covered in [
 Get ZK Up and Running with
-MVVM](ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVVM).
+MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
 
 You can download the complete source code under the [ Start from Example
-Project](#Start_from_Example_Project) section.
+Project](#start_from_example_project) section.
 
 {% include tutorial-common.md %}
 

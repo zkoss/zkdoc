@@ -11,7 +11,7 @@ approach that is classified as the **Model-View-ViewModel (MVVM)**
 design pattern. Using this approach, ZK can control components for you
 automatically and it separates the UI from its controller clearly. In
 addition, you can also choose to go with the <b>MVC</b> approach that is
-covered in another tutorial [^1].
+covered in [another tutorial](/get_started/Get_ZK_Up_and_Running_with_MVC).
 
 {% include tutorial-common.md %}
 
@@ -19,7 +19,8 @@ covered in another tutorial [^1].
 
 The approach we introduce here to control user interaction is to **let
 ZK control UI components for you**. This approach is classified to
-**Model-View-ViewModel** (**MVVM**) design pattern. [^2] This pattern
+**Model-View-ViewModel** (**MVVM**) design pattern.(See [MVVM in Developer's
+Reference](ZK_Developer's_Reference/MVVM)) This pattern
 divides an application into three parts.
 
 The **Model** consists of application data and business rules.
@@ -254,14 +255,15 @@ specified in `@NotifyChange`.
 
 The way to display a collection of data with data binding is very
 similar to the way in the MVC approach. we will use a special tag,
-<template>[^3], to control the rendering of each item. The only
+[`<template>`](ZK_Developer's_Reference/MVC/View/Template), to control the rendering of each item. The only
 difference is we should use data binding expression instead of EL.
 
-Steps to use <template>:
+Steps to use `<template>`:
 
 1.  Use **<template>** to enclose components that we want to create
     iteratively.
-2.  Set template's "name" attribute to "model". [^4]
+2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/MVC/View/Template/Listbox
+    Template](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template))
 3.  Use implicit variable, **each**, to assign domain object's
     properties to component's attributes.
 
@@ -316,21 +318,4 @@ previous sections.
         </hbox>
 ```
 
-You can view complete zul at
-[Github](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)
-
-# References
-
-<references/>
-
-[^1]: [ZK Getting Started/Get ZK Up and Running with
-    MVC](ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVC)
-
-[^2]: [ MVVM in Developer's
-    Reference](ZK_Developer's_Reference/MVVM)
-
-[^3]: [ZK Developer's
-    Reference/MVC/View/Template](ZK_Developer's_Reference/MVC/View/Template)
-
-[^4]: [ZK Developer's Reference/MVC/View/Template/Listbox
-    Template](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template)
+You can view complete zul at [Github](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)
