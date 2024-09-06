@@ -19,8 +19,8 @@ covered in [another tutorial](/get_started/Get_ZK_Up_and_Running_with_MVC).
 
 The approach we introduce here to control user interaction is to **let
 ZK control UI components for you**. This approach is classified to
-**Model-View-ViewModel** (**MVVM**) design pattern.(See [MVVM in Developer's
-Reference](ZK_Developer's_Reference/MVVM)) This pattern
+**Model-View-ViewModel** (**MVVM**) design pattern. For complete information, please see [MVVM in Developer's
+Reference](https://books.zkoss.org/zk-mvvm-book/10.0/index.html). This pattern
 divides an application into three parts.
 
 The **Model** consists of application data and business rules.
@@ -255,7 +255,7 @@ specified in `@NotifyChange`.
 
 The way to display a collection of data with data binding is very
 similar to the way in the MVC approach. we will use a special tag,
-[`<template>`](ZK_Developer's_Reference/MVC/View/Template), to control the rendering of each item. The only
+[`<template>`](https://www.zkoss.org/wiki/ZK_Developer's_Reference/MVC/View/Template), to control the rendering of each item. The only
 difference is we should use data binding expression instead of EL.
 
 Steps to use `<template>`:
@@ -263,7 +263,7 @@ Steps to use `<template>`:
 1.  Use **<template>** to enclose components that we want to create
     iteratively.
 2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/MVC/View/Template/Listbox
-    Template](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template))
+    Template](https://www.zkoss.org/wiki/ZK_Developer's_Reference/MVC/View/Template/Listbox_Template))
 3.  Use implicit variable, **each**, to assign domain object's
     properties to component's attributes.
 

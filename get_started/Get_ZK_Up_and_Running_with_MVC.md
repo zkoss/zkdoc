@@ -9,12 +9,9 @@ modern web application with ZK. The target application we are going to
 build is a simple car catalog application. We will use the **MVC**
 approach to build the application here. This approach is very intuitive
 and flexible and gives you full control of components. In addition, you
-can also choose to go with the **MVVM** approach that is covered in [
-Get ZK Up and Running with
-MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
+can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
 
-You can download the complete source code under the [ Start from Example
-Project](#start_from_example_project) section.
+You can download the complete source code under the [ Start from Example Project](#start_from_example_project) section.
 
 {% include tutorial-common.md %}
 
@@ -23,7 +20,7 @@ Project](#start_from_example_project) section.
 The next step after building the UI is to make it respond to user
 interaction. The pattern we introduce here is to **control ZK components
 directly by their API**. We call this [**Model-View-Controller**
-(**MVC**) design pattern](ZK_Developer's_Reference/MVC). This
+(**MVC**) design pattern](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC). This
 pattern divides an application into 3 parts.
 
 The **Model** consists of application data and business rules.
@@ -76,18 +73,17 @@ public class SearchController extends SelectorComposer<Component> {
 After a controller is created, we associate it with its corresponding UI
 component. Associating a controller with a component is just specifying
 a fully-qualified class name for the target component's `apply`
-attribute. The following code shows how to associate a controller with a
-<window>.
+attribute. The following code shows how to associate a controller with a `<window>`.
 
-**Extracted from
-[searchMvc.zul](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/webapp/searchMvc.zul)**
+**Extracted from [searchMvc.zul](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/webapp/searchMvc.zul)**
 
-``` xml
+```xml
     <window title="Search" width="600px" border="normal"
     apply="tutorial.SearchController">
     <!-- omit other components for brevity -->
     </window>
 ```
+
 
 After associating the controller with the *window* component, the
 controller can listen to events sent from UI and retrieve components
@@ -114,8 +110,7 @@ have to register a listener method, `search()`, to "Search" button's
 
 `@Listen("[EVENT_NAME] = #[COMPONENT_ID]")`
 
-For complete selector syntax, please refer to [SelectorComposer
-javadoc](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html).
+For complete selector syntax, please refer to [SelectorComposer javadoc](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html).
 
 The final code looks like:
 
@@ -147,13 +142,11 @@ you should get ZK-created component objects instead of calling
 
 Steps to retrieve components:
 
-1.  Declare a variable with target component type (e.g. `Listbox`,
-    `Label`...)
+1.  Declare a variable with target component type (e.g. `Listbox`, `Label`...)
 2.  Name the variable as component's ID.
       
     Matching ID is the default rule to match a component for `@Wire`,
-    and please refer to [ Wire Components in Developer's
-    Reference](ZK_Developer's_Reference/MVC/Controller/Wire_Components)
+    and please refer to [Wire Components in Developer's Reference](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controller/Wire%20Components)
     to know other ways.
 3.  Annotate the variable with `@Wire`.
 
@@ -204,13 +197,12 @@ public class SearchController extends SelectorComposer<Component> {
 - Line 8: Notice that `setModel()` only accepts a `ListModel` object, so
   we can use `org.zkoss.zul.ListModelList` to wrap search result list.
   There are other `ListModel` objects for different collection types,
-  please refer to [ List Model in Developer's
-  Reference](ZK_Developer's_Reference/MVC/Model/List_Model).
+  please refer to [ List Model in Developer's Reference](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Model/List%20Model).
   To change data item displayed in a `Listbox`, call
   `carListbox.setModel()`. The model of a component is the data the
   component holds and we can change the model to change the data
-  rendering on the screen, please refer to [ Model-Driven
-  Rendering](ZK_Developer%27s_Reference/MVC/Model#Model-Driven_Rendering)
+  rendering on the screen, please refer to [Model-Driven
+  Rendering](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Model#Model-Driven_Rendering)
 
 ## Displaying a Data Collection
 
@@ -219,7 +211,7 @@ corresponding event listener, but we would still find that content of
 *listbox* doesn't show the search result correctly. That is because we
 haven't specified how to render data model on the *listbox*. Now, we
 will use a special tag,
-[<template>](ZK_Developer's_Reference/MVC/View/Template), to
+[<template>](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/View/Template), to
 control the rendering of each car. ZK will render each object in the
 data model according to components inside <template/>.
 
@@ -232,7 +224,7 @@ Steps to use <template>:
     to component's attributes.
 
 Please refer to [ZK Developer's Reference/MVC/View/Template/Listbox
-Template](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template)
+Template](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/View/Template/Listbox%20Template)
 for more details.
 
 **Extracted from
@@ -263,8 +255,7 @@ for more details.
 - Line 9: The "each" is a variable that references to a domain object in
   the model list which is `Car` in our example application. We can use
   it to access domain object's property with EL, e.g. `${each.price}`.
-- Line 11: Concatenate 2 strings with [ EL 3
-  syntax](ZK_Developer%27s_Reference/UI_Composing/ZUML/EL_Expressions#EL_3.0_Support):
+- Line 11: Concatenate 2 strings with [ EL 3 syntax](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/ZUML/EL_Expressions#EL_3.0_Support):
   `(+=)`
 
 ## Implementing "View Car Details"

@@ -68,23 +68,21 @@ the above registration form
 - Line 1: One tag represents one component. Some components can have
   child components. In this example, a *window* contains a *grid*.
 - Line 2: CSS flexible width, please see
-  [ZK%20Developer's%20Reference/UI%20Patterns/Hflex%20and%20Vflex](ZK%20Developer's%20Reference/UI%20Patterns/Hflex%20and%20Vflex)
-- Line 4: ZK contains [font awesome
-  icons](https://fontawesome.com/v4.7.0/icons/) by default, you can
+  [Hflex and Vflex](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/UI%20Patterns/Hflex%20and%20Vflex)
+- Line 4: ZK contains [Font Awesome
+  icons](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/Integration/Presentation%20Layer/Font%20Awesome) by default, you can
   specify icon CSS class at `iconSclass`.
 - Line 18: You may give "id" attribute to a component, so you can
   control them in a Java controller.
 
 ZK also allows you to create UI programmatically like how you use Java
-Swing within a [
-Richlet](ZK%20Developer's%20Reference/UI%20Composing/Richlet).
+Swing within a [Richlet](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/UI%20Composing/Richlet).
 
 ZK UI components are like building blocks; you can combine, mix-match,
 or inherit and make them into a new component to fulfill diverse
 requirements. This versatility increases reusability and modularity. See
-[ shadow
-elements](ZK_Developer%27s_Reference/UI_Composing/Shadow_for_MVC),[
-Macro](ZK_Developer%27s_Reference/UI_Composing/Macro_Component).
+[ shadow elements](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/Shadow_for_MVC),
+[Macro](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/Macro_Component).
 
 # Intuitive UI Controlling
 
@@ -99,7 +97,7 @@ which inherits ZK's
 [**SelectorComposer**](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 for a ZUL. Then, you can retrieve the UI component's Java object by
 annotating [ **@Wire** on the controller's member
-variables](ZK%20Developer's%20Reference/MVC/Controller/Wire%20Components).
+variables](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controller/Wire%20Components).
 After this has been done, you can then control and manipulate UI by
 accessing those annotated member variables.
 
@@ -146,7 +144,7 @@ beginning, and it is only enabled (clickable) when a user checks the
 As ZK is an event-driven framework, a user action is therefore handled
 by an event listener. ZK provides an annotation [ **@Listen** to
 register an event listener by selector
-syntax](ZK%20Developer's%20Reference/MVC/Controller/Wire%20Event%20Listeners).
+syntax](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controller/Wire%20Event%20Listeners).
 To achieve the above feature, you can annotate a method to listen to an
 "onCheck" event of "Accept Term of Use" checkbox. Whenever a user
 checks/unchecks the checkbox to trigger the "onCheck" event, ZK invokes
@@ -195,13 +193,13 @@ drag & drop, and hotkey, etc. to your application.
 What we have introduced so far is MVC pattern, which controls UI by
 components API. Another way is data binding, please see [ Get ZK Up and
 Running with
-MVVM](ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVVM).
+MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
 
 # Support Responsive Design
 
 ZK provides various features for you to apply responsive design, please
 read [ Responsive
-Design](ZK_Developer%27s_Reference/UI_Patterns/Responsive_Design).
+Design](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Responsive_Design).
 
 # Easy Backend Integration
 
@@ -282,7 +280,7 @@ public class RegistrationSpringComposer extends SelectorComposer<Component> {
 ZK provides a zkspringboot-starter addon to help you work with
 Springboot easily, please refer to [ Create and Run Your First ZK
 Application with Spring
-Boot](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Spring_Boot).
+Boot](https://www.zkoss.org/wiki/ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Spring_Boot).
 
 # Source Code
 
@@ -293,11 +291,9 @@ You can get the complete source code mentioned in this page at
 
 # What's Next
 
-- [ Quick Start](ZK_Installation_Guide/Quick_Start)
+- [ Quick Start](https://www.zkoss.org/wiki/ZK_Installation_Guide/Quick_Start)
   - Start to develop with ZK with your familiar tools including Eclipse,
-    IntelliJ, NetBean, Maven, Gradle, or Spring Boot.
-- [ Start in MVC
-  pattern](ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVC)
-- [ Start in MVVM
-  pattern](ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVVM)
+    IntelliJ, Maven, Gradle, or Spring Boot.
+- [ Start in MVC pattern](/get_started/Get_ZK_Up_and_Running_with_MVC)
+- [ Start in MVVM pattern](/get_started/Get_ZK_Up_and_Running_with_MVVM)
 - [ZK Demo](http://www.zkoss.org/zkdemo/)
