@@ -18,7 +18,7 @@ and function can be configured upon your desire.
 **ZUL**, an XML-formatted and easy-to-read language, is used to describe
 the above registration form
 
-``` xml
+{% highlight xml linenos %}
 <window border="normal" hflex="min" style="margin:0px auto;" title="Welcome! New User">
     <grid id="formGrid" hflex="min" ctrlKeys="^h">
         <auxhead>
@@ -63,7 +63,7 @@ the above registration form
     </grid>
 ...
 </window>
-```
+{% endhighlight %}
 
 - Line 1: One tag represents one component. Some components can have
   child components. In this example, a *window* contains a *grid*.
@@ -101,7 +101,7 @@ variables](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controlle
 After this has been done, you can then control and manipulate UI by
 accessing those annotated member variables.
 
-``` java
+{% highlight java linenos %}
 package org.zkoss.simple;
 
 // some import statements are omitted for brevity.
@@ -114,7 +114,7 @@ public class RegistrationComposer extends SelectorComposer<Component> {
     @Wire
     private Checkbox acceptTermBox;
 }
-```
+{% endhighlight %}
 
 - **line 7,10**: Variable names "submitButton" and "acceptTermBox"
   corresponds to components' id attributes which are specified at
@@ -151,7 +151,7 @@ checks/unchecks the checkbox to trigger the "onCheck" event, ZK invokes
 the annotated method. We implement the above UI effect by changing the
 properties of a component (Java object) in the annotated method.
 
-``` java
+{% highlight java linenos %}
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
@@ -177,7 +177,7 @@ public class RegistrationComposer extends SelectorComposer<Component> {
     }
 
 }
-```
+{% endhighlight %}
 
 - **line 14**: Use @Listen to declare a method to handle the *onCheck*
   event of "acceptTermBox".
@@ -217,8 +217,7 @@ With the help of ZK's UI controller - **SelectorComposer**, it is easy
 to integrate your legacy system service class, domain object, and any
 third-party library such as Log4j.
 
-``` java
-
+{% highlight java linenos %}
 public class RegistrationIntegrateComposer extends SelectorComposer<Component> {
 
     //omit other variables for brevity
@@ -234,7 +233,7 @@ public class RegistrationIntegrateComposer extends SelectorComposer<Component> {
         //...
     }
 }
-```
+{% endhighlight %}
 
 - **Line 4,12:** Call Log4j to log error.
 - **Line 5,11:** Use your service object in the controller.
@@ -284,10 +283,8 @@ Boot](https://www.zkoss.org/wiki/ZK_Installation_Guide/Quick_Start/Create_and_Ru
 
 # Source Code
 
-You can get the complete source code mentioned in this page at
-[github](https://github.com/zkoss-demo/gettingStarted/tree/master)
+You can get the complete source code mentioned in this page at [github](https://github.com/zkoss-demo/gettingStarted/tree/master)
 
-<references/>
 
 # What's Next
 
