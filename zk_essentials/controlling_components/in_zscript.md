@@ -44,7 +44,7 @@ We can declare variables and write statements in `<zscript>`. ZK will run it whe
 ```
 
 -   Line 5: Define an event listener method like a normal Java method, and it redirects a browser according to the passed variable.
--   Line 8: The [execution](/zuml_ref/EL%20Expressions/Implicit%20Objects%20(Predefined%20Variables)
+-   Line 8: The [execution](https://books.zkoss.org/wiki/ZUML_Reference/EL%20Expressions/Implicit%20Objects%20(Predefined%20Variables)
     is a implicit variable which you can use it directly without
     declaration. It's a wrapper object of `HttpServletRequest`.
 

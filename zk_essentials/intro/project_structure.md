@@ -58,4 +58,4 @@ Installation Guide \\ Create and Run Your First ZK Application
 Manually](/zk_installation_guide/Quick%20Start/Create%20and%20Run%20Your%20First%20ZK%20Application%20Manually).
 The "zk.xml" is optional configuration descriptor of ZK. Provide this
 file if you need to configure ZK differently from the default behavior.
-Refer to [ZK Configuration Reference/zk.xml](/zk_config_ref/zk.xml) for more detail.
+Refer to [ZK Configuration Reference/zk.xml](https://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml) for more detail.

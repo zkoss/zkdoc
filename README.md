@@ -1,6 +1,10 @@
 # ZK Document Website
 
 
+## Sidebar
+support 3 levels of hierarchy. See `nav_list`.
+
+
 # Document Folder Structure
 * each book has its own folder
 

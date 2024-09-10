@@ -3,7 +3,7 @@
 To complete the page, we need to put those individual pages into
 corresponding area of the *BorderLayout*.
 
-For all areas, we use *`<apply>`*, [a shadow component](/shadow_components/README.md), to combine separated pages, and it doesn't consume extra server memory. This component can inject a separated zul for you when the parent zul is loaded. This usage is presented below:
+For all areas, we use *`<apply>`*, [a shadow component](/zk_essentials/shadow_components/), to combine separated pages, and it doesn't consume extra server memory. This component can inject a separated zul for you when the parent zul is loaded. This usage is presented below:
 
 **chapter1/index.zul**
 ```xml

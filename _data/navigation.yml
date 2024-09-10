@@ -1,8 +1,8 @@
 main:
   - title: "ZK Getting Started"
     url: /get_started/Learn_ZK_in_10_Minutes
-#  - title: "ZK Essentials"
-#    url: /zk_essentials/intro/overview
+  - title: "ZK Essentials"
+    url: /zk_essentials/intro/overview
 #  - title: "ZK Developer's Reference"
 #    url: /zk_dev_ref/Overture/Overture
 #  - title: "ZK MVVM Reference"
