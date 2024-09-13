@@ -87,7 +87,7 @@ $ mvn eclipse:eclipse
 ```
 
 - Refer to
-  [here](ZK_Installation_Guide/Setting_up_IDE/Maven/Create_and_Run_ZK_Application_with_Maven_Archetype#Import_a_Maven_project_into_Eclipse)
+  [here](Setting_up_IDE/Maven/Create_and_Run_ZK_Application_with_Maven_Archetype#Import_a_Maven_project_into_Eclipse)
   to import into Eclipse.
 
 # Deploy changes to OpenShift

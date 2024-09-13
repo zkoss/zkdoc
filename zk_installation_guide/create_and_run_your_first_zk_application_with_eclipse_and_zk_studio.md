@@ -5,7 +5,7 @@ to simplify the development of ZK applications with Eclipse.
 
 If you prefer to install it manually or use with other IDE, please refer
 to [Create and Run Your First ZK Application
-Manually](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_Manually).
+Manually](Quick_Start/Create_and_Run_Your_First_ZK_Application_Manually).
 
 # Prepare Eclipse
 
@@ -61,7 +61,7 @@ Before deploying and testing your application, you have to install an
 application server (such as Tomcat) and specify the server in Eclipse.
 For more information on how to install an application server, please see
 [ZK Installation Guide/Setting up
-Servers/Tomcat](ZK_Installation_Guide/Setting_up_Servers/Tomcat).
+Servers/Tomcat](Setting_up_Servers/Tomcat).
 
 To specify the server in Eclipse, please follow the instructions below:
 
@@ -73,7 +73,7 @@ To specify the server in Eclipse, please follow the instructions below:
     - For example, the root directory of **Apache Tomcat** might be
       `C:\Program Files\Apache Software Foundation\Tomcat 6.0`
     - For how to install Tomcat, please refer to [this
-      section](ZK_Installation_Guide/Setting_up_Servers/Tomcat)
+      section](Setting_up_Servers/Tomcat)
 5.  Click **Finish**
 
 # Create a "Hello World" application from scratch with ZK Sutdio

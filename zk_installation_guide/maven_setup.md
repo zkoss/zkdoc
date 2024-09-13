@@ -391,7 +391,7 @@ For Maven to successfully resolve these dependencies **groupid** and
 they constitute what is known as Maven repository coordinates. For a
 complete list of all ZK library groupid and artifactid combinations
 please take a look at a [sample
-pom.xml](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Repository_without_IDE#Sample_of_pom.xml)
+pom.xml](Setting_up_IDE/Maven/Use_ZK_Maven_Repository_without_IDE#Sample_of_pom.xml)
 file that lists dependencies for all publically available ZK libraries
 on ZK Maven repository.
 

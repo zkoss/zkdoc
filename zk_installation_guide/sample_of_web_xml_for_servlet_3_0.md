@@ -18,4 +18,4 @@ On the other hand, if `metadata-complete=“true”` was specified in
 `WEB-INF/web.xml` (i.e., the support of pluggability is disabled), you
 have to configure ZK servlets and listeners manually as described in
 [the Sample of web.xml for Servlet
-2.4](ZK_Installation_Guide/ZK_Background/Sample_of_web.xml_for_Servlet_2.4).
+2.4](ZK_Background/Sample_of_web.xml_for_Servlet_2.4).

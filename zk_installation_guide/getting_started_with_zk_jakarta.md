@@ -10,7 +10,7 @@ softwares described in this example when installing yourself.
 # Environment setup
 
 Please refer to the [ the eclipse and maven quick start
-guide](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+guide](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 environment setup.
 
 # Project configuration
@@ -38,7 +38,7 @@ ZK supports the Jakarta servlet configuration starting from ZK
 
 For a more in-depth look at the pom.xml file configuration, please refer
 to the [ the Resolving ZK Framework Artifacts via Maven
-page](ZK_Installation_Guide/Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
+page](Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
 .
 
 If your project uses the servlet-API dependency, you will need to update
@@ -136,7 +136,7 @@ support up to jetty 9, which is not compatible with Jakarta servlet.
 ## Run from maven
 
 Refer to the approach described in [ the eclipse and maven quick
-start](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+start](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 guide.
 
 When configuring your application's pom file, use a jetty version that
@@ -151,7 +151,7 @@ You can then start your project as a maven build, using
 
 You can run in debug mode on a Tomcat server from eclipse by following
 the configuration shown in the [ quick start with Eclipse and Tomcat
-](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
+](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
 guide, while using a [\| compatible tomcat
 version](http://tomcat.apache.org/whichversion.html).
 

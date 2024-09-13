@@ -167,12 +167,11 @@ The server will stop at breakpoints.
 
 ## Import a Gradle project into your IDE
 
-<figure>
-<img src="images/zk-gradle-idea-run-config.png
-title="An exemplary development run config for IntelliJ IDEA" />
+
+![](images/zk-gradle-idea-run-config.png)
 <figcaption>An exemplary development run config for IntelliJ
 IDEA</figcaption>
-</figure>
+
 
 The [example project](https://github.com/zkoss-demo/zk-gradle) doesn't
 include or require any IDE specific settings and can be imported into

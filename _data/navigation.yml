@@ -901,21 +901,17 @@ zk_installation_guide:
       - title: "Resin"
         url: "/zk_installation_guide/resin"
   - title: "Setting up OS"
-    url: "/zk_installation_guide/setting_up_os"
     children:
       - title: "Linux"
         url: "/zk_installation_guide/linux"
       - title: "IOS"
         url: "/zk_installation_guide/ios"
   - title: "Setting up IDE"
-    url: "/zk_installation_guide/setting_up_ide"
     children:
       - title: "Eclipse with ZK Studio"
         url: "/zk_installation_guide/eclipse_with_zk_studio"
       - title: "Eclipse without ZK Studio"
         url: "/zk_installation_guide/eclipse_without_zk_studio"
-      - title: "Eclipse with Maven"
-        url: "/zk_installation_guide/eclipse_with_maven"
       - title: "XML Editor"
         url: "/zk_installation_guide/xml_editor"
 zk_style_customization_guide:

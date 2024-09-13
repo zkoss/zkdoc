@@ -13,7 +13,7 @@
 `since 6.0.1`
 
 - [Create a ZK project by ZK
-  Studio](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
+  Studio](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
 - Add the following portlet.xml file under /WEB-INF
 
 ``` xml
@@ -127,104 +127,93 @@
 - Click *Administration* tab at the top of the page
 
   
-<figure>
-<img src="images/websphere_v8_01.png title="websphere_v8_01.png"
-width="800" />
-<figcaption>websphere_v8_01.png</figcaption>
-</figure>
+
+![](images/websphere_v8_01.png)
+
+
 
 - Select *Web Module* then click the *install* button.
 
   
-<figure>
-<img src="images/websphere_v8_02.png title="websphere_v8_02.png"
-width="800" />
-<figcaption>websphere_v8_02.png</figcaption>
-</figure>
+
+![](images/websphere_v8_02.png)
+
+
 
 - Click *Choose File* button to select the war file then press the
   *Next* button.
 
   
-<figure>
-<img src="images/websphere_v8_03.png title="websphere_v8_03.png"
-width="800" />
-<figcaption>websphere_v8_03.png</figcaption>
-</figure>
+
+![](images/websphere_v8_03.png)
+
+
 
 - Check the war information and choose *Start application*, then click
   the *Finish* button.
 
   
-<figure>
-<img src="images/websphere_v8_04.png title="websphere_v8_04.png"
-width="800" />
-<figcaption>websphere_v8_04.png</figcaption>
-</figure>
+
+![](images/websphere_v8_04.png)
+
+
 
 - Go back to *Home* page
 
   
-<figure>
-<img src="images/websphere_v8_05.png title="websphere_v8_05.png"
-width="800" />
-<figcaption>websphere_v8_05.png</figcaption>
-</figure>
+
+![](images/websphere_v8_05.png)
+
+
 
 - Click *Edit Mode*
 
   
-<figure>
-<img src="images/websphere_v8_06.png title="websphere_v8_06.png"
-width="800" />
-<figcaption>websphere_v8_06.png</figcaption>
-</figure>
+
+![](images/websphere_v8_06.png)
+
+
 
 - Click *New Sibling Page*
 
   
-<figure>
-<img src="images/websphere_v8_07.png title="websphere_v8_07.png"
-width="800" />
-<figcaption>websphere_v8_07.png</figcaption>
-</figure>
+
+![](images/websphere_v8_07.png)
+
+
 
 - Enter "Page name" and "Friendly URL Name"
 
   
-<figure>
-<img src="images/websphere_v8_08.png title="websphere_v8_08.png"
-width="800" />
-<figcaption>websphere_v8_08.png</figcaption>
-</figure>
+
+![](images/websphere_v8_08.png)
+
+
 
 - Click *Content* -\> *All* -\> in the search box, enter the portlet
   name defined in portlet.xml
 
   
-<figure>
-<img src="images/websphere_v8_09.png title="websphere_v8_09.png"
-width="800" />
-<figcaption>websphere_v8_09.png</figcaption>
-</figure>
+
+![](images/websphere_v8_09.png)
+
+
 
 - Drag and drop the portlet into the created new page and click *Save*
   button.
 
   
-<figure>
-<img src="images/websphere_v8_10.png title="websphere_v8_10.png"
-width="800" />
-<figcaption>websphere_v8_10.png</figcaption>
-</figure>
+
+![](images/websphere_v8_10.png)
+
+
 
 - ZK project is now deployed in a Websphere Portal
 
   
-<figure>
-<img src="images/websphere_v8_11.png title="websphere_v8_11.png"
-width="800" />
-<figcaption>websphere_v8_11.png</figcaption>
-</figure>
+
+![](images/websphere_v8_11.png)
+
+
 
 

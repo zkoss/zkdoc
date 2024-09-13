@@ -4,7 +4,7 @@
 
 The recommended way to use ZK in NetBeans is to import a maven project.
 Reference [ this
-document](ZK_Installation_Guide/Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
+document](Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
 for sample pom file.
 
 # Install NetBeans REM
@@ -44,7 +44,7 @@ IDE](https://netbeans.apache.org/download/index.html) and install
     ![](images/ZKInstallationGuide_NetBeans_SelectNewZKProject.png "ZKInstallationGuide_NetBeans_SelectNewZKProject.png")  
       
 3.  Confirm and create a new ZK project.  
-    ![](images/_ZKInstallationGuide_NetBeans_CreateNewZKProject.png "_ZKInstallationGuide_NetBeans_CreateNewZKProject.png")  
+    ![](images/ZKInstallationGuide_NetBeans_CreateNewZKProject.png "_ZKInstallationGuide_NetBeans_CreateNewZKProject.png")  
       
 4.  Select the ZK project folder, and right click "Run" to deploy the
     project on Glassfish  

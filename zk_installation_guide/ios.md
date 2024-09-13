@@ -18,11 +18,10 @@ To solve this issue, you could specify the width in a meta tag called
 For more information, please refer to [Safari Developer
 Library](http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW24).
 
-<figure>
-<img src="images/install_ios_viewpoint.jpg
-title="install_ios_viewpoint.jpg" />
-<figcaption>install_ios_viewpoint.jpg</figcaption>
-</figure>
+
+![](images/install_ios_viewpoint.jpg)
+
+
 
 # onClick Event
 
