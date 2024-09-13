@@ -37,8 +37,4 @@ Notice that ZK supports Servlet 2.3 but the web.xml configuration file
 is a bit different. Also notice that ZK 6 and later no longer support
 Java 1.4.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

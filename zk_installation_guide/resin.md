@@ -16,8 +16,4 @@
 
 by Peter Manchev
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

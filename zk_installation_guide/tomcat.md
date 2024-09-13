@@ -52,8 +52,4 @@ If you are new to Java IDE, you might take a look at [Setting up Eclipse
 with ZK
 Studio](ZK_Installation_Guide/Setting_up_IDE/Eclipse_with_ZK_Studio).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

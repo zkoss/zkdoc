@@ -43,8 +43,4 @@ Element](/zk_config_ref/zk.xml/The_device-config_Element/The_server-push-class_E
 and [Server Push
 Configuration](/zk_dev_ref/Server_Push/Configuration)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

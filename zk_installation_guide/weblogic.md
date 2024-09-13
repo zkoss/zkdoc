@@ -33,8 +33,4 @@ Libraries that have to be copied include bsh.jar,
 commons-fileupload.jar, commons-el.jar, pxcommon.jar, pxweb.jar, zk.jar,
 zul.jar, and zhtml.jar.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -99,11 +99,7 @@ error.
 
 <references/>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: This plugin should be installed when you use WTP as your
     development server.

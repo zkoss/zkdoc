@@ -131,8 +131,4 @@ add the following lines in your zk.xml
 </system-config> 
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -44,8 +44,4 @@ containas all files in bsh-core-version.jar.
 
 by Mars Chen (Taiwan)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

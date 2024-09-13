@@ -118,8 +118,4 @@ and the root element could be any valid ZUL component, such as window.
 - [Develop ZK Applications with
   Eclipse](http://www.zkoss.org/smalltalks/eclipse/ek.html)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

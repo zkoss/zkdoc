@@ -64,8 +64,4 @@ scratch.
 </web-app>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -112,8 +112,4 @@ After Tomcat is started the application should be available under
 
 <http://localhost:8080/myZK/hello.zul>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -74,8 +74,4 @@ JSP portlet.
   <figcaption>ZK_Installation_Guide_WebLogic_Portal_08.png</figcaption>
   </figure>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -227,8 +227,4 @@ width="800" />
 <figcaption>websphere_v8_11.png</figcaption>
 </figure>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

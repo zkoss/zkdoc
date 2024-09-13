@@ -58,8 +58,4 @@ Check WC_defaulthost
 
 ![](images/wb7-zkdemo.png)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -19,7 +19,7 @@ plugin for ZK application development contributed by Mr. Jumper Chen.
     Or from the welcome screen: select Configure \> Plugins  
       
 3.  Type **ZK** into the search bar, and then install it.  
-    ![](images/_ZKInstallationGuide_IntelliJ_InstallZKPlugin.png "_ZKInstallationGuide_IntelliJ_InstallZKPlugin.png")  
+    ![](images/ZKInstallationGuide_IntelliJ_InstallZKPlugin.png "ZKInstallationGuide_IntelliJ_InstallZKPlugin.png")  
       
 4.  After installation, restart IntelliJ when prompted to activate the
     plugin.
@@ -34,13 +34,13 @@ plugin for ZK application development contributed by Mr. Jumper Chen.
     ![](images/ZKInstallationGuide_IntelliJ_SelectNewZKProject.png "ZKInstallationGuide_IntelliJ_SelectNewZKProject.png")  
       
 3.  Fill in the information about your project and press "Next".  
-    ![](images/_ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png "_ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png")  
+    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png "ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png")  
       
 4.  Check all the information about your project and press "Next".  
-    ![](images/_ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png "_ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png")  
+    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png "ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png")  
       
 5.  Fill in the project location and press "Finish".  
-    ![](images/_ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png "_ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png")  
+    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png "ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png")  
       
 
 # Run the ZK Project

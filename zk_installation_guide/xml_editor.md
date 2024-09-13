@@ -13,8 +13,4 @@ be enabled automatically. Here is an example.
 Notice that you have to specify the schema location in the root element,
 and the root element could be any valid ZUL component, such as window.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

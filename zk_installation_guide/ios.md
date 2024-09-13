@@ -33,8 +33,4 @@ In IOS device (ipad/iphone) you have to specify the following CSS
 <component style="cursor:pointer">
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

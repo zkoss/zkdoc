@@ -41,8 +41,4 @@ After installing Eclipse and ZK Studio, please take a look at [Create
 and Run Your First ZK Application with Eclipse and ZK
 Studio](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

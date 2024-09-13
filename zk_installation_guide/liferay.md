@@ -807,8 +807,4 @@ Please download the following war file to view this example in detail
 [ZK 5 / Liferay Integration - jquery
 conflict](http://www.zkoss.org/forum/listComment/11051)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

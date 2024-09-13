@@ -28,13 +28,8 @@ M2eclipse](ZK_Installation_Guide/Setting_up_IDE/Maven/Setting_up_Maven_on_Eclips
   **\[Archetypes\]**, click *Add Remote Catalog* and type in the catalog
   file as illustrated:
     
-  <figure>
-  <img
-  src="ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png"
-  title="ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png" />
-  <figcaption>ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png</figcaption>
-  </figure>
-
+  ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png)
+ 
 [`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)
 
 - Click **Verify** and then **OK** to add the catalog.
@@ -110,8 +105,8 @@ there are two possible workarounds:
   title="ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png" />
   <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png</figcaption>
   </figure>
-- The property *zk-version-since* might be
-  <font color="red">missing</font>.<ref>
+- The property *zk-version-since* might be missing.
+
 
 Users who are running this wizard for the first time, ZK Archetype would
 not have been downloaded into m2eclipse yet, and as a result may not
@@ -126,7 +121,6 @@ clicking ‘Finish’ to end the ZK Maven web project wizard. When
 re-running the wizard, the zk-version-since property should appear in
 the list this time.
 
-</ref>
 
 - Click **Finish** and the Eclipse status bar should say ' *Creating
   zk-archetype-webapp* ' and ' *Updating Maven Dependencies* '. If this
@@ -134,63 +128,27 @@ the list this time.
   download the necessary dependencies to compile and run this example,
   and would be stored in *.m2/repository* in the user's home directory.
     
-  <figure>
-  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png
-  title="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png" />
-  <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png</figcaption>
-  </figure>
+![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
 
-------------------------------------------------------------------------
-
-<references/>
-
-------------------------------------------------------------------------
 
 ## Run the application
 
-1.  Go to **Run As** \> **Maven build...**
-      
-    <figure>
-    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png
-    title="ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png" />
-    <figcaption>ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png</figcaption>
-    </figure>
+1.  Go to **Run As** \> **Maven build...** ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png)
 2.  In the goals field, enter *jetty:stop jetty:run* and tick *Skip
-    Tests* then click "Apply" then "Run".
-      
-    <figure>
-    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png
-    title="ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png" />
-    <figcaption>ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png</figcaption>
-    </figure>
-3.  View the result in your browser.
+    Tests* then click "Apply" then "Run". ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png)
+3.  View the result in your browser via `http://localhost:8080/mywebapp/index.zul`
 
-[[`http://localhost:8080/mywebapp/index.zul`](http://localhost:8080/mywebapp/index.zul)](http://localhost:8080/mywebapp/index.zul)
 
 ## Packaging your project into a Web Application Archive (WAR)
 
-1.  Go to **Run As** \> **Maven install**
-      
-    <figure>
-    <img src="images/ZK_Installation_Guide_maven_Archetype_pak1.png
-    title="ZK_Installation_Guide_maven_Archetype_pak1.png" />
-    <figcaption>ZK_Installation_Guide_maven_Archetype_pak1.png</figcaption>
-    </figure>
+1.  Go to **Run As** \> **Maven install** ![](/zk_installation_guide/images/ZK_Installation_Guide_maven_Archetype_step1.png)
 2.  The project will then be packed into a war file and a zip file with
-    source code.
-      
-    <figure>
-    <img src="images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png
-    title="ZK_Installation_Guide_Quick_Start_Maven_package_project.png" />
-    <figcaption>ZK_Installation_Guide_Quick_Start_Maven_package_project.png</figcaption>
-    </figure>
+    source code. ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png)
+
 
 # Create a Maven Project with a Command Line Interface
 
-Before starting, you need to [install
-maven](https://maven.apache.org/download.cgi) and [set
-up](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
-first.
+Before starting, you need to [install maven](https://maven.apache.org/download.cgi) and [setup](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)first.
 
 - Go to the folder in Eclipse workspace, then run the following command:
 
@@ -266,29 +224,16 @@ command (using 2.4 as a fallback -
 The project created by archetypes above should have a maven jetty plugin
 configured, you can just run the project with the command below:
 
-`mvn jetty:run`
+`mvn jetty:run`
 
 ## Import a Maven project into Eclipse
 
-- **\[File\]** -\> **\[Import\]** -\> **\[Maven\]** --\> **\[Existing
-  Maven Projects\]**
-    
-  <figure>
-  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_import.png
-  title="ZK_Installation_Guide_Quick_Start_Maven_import.png" />
-  <figcaption>ZK_Installation_Guide_Quick_Start_Maven_import.png</figcaption>
-  </figure>
+- **\[File\]** -\> **\[Import\]** -\> **\[Maven\]** --\> **\[Existing Maven Projects\]**
+
+  ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_import.png)
 - After this, the user should now get a new project in the Package
   explorer.
-    
-  <figure>
-  <img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png
-  title="ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png" />
-  <figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png</figcaption>
-  </figure>
 
-# Version History
+  ![](/zk_installation_guide/images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+

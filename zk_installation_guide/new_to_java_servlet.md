@@ -22,8 +22,4 @@ containers.
 [Rich Java](http://richjava.wordpress.com/) offers a good tutorial about
 Java Servlet.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

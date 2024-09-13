@@ -36,11 +36,7 @@ Please refer to [this
 discussion](http://stackoverflow.com/questions/3218732/jasper-reports-pdf-generation-issue)
 for more information.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: The default installation includes only `openjdk-6-jre-headless`
     and `openjdk-6-jre-lib`.

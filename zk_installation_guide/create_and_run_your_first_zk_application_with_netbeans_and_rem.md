@@ -66,8 +66,4 @@ IDE](https://netbeans.apache.org/download/index.html) and install
     ![](images/ZKInstallationGuide_NetBeans_RunZKDemo.png "ZKInstallationGuide_NetBeans_RunZKDemo.png")  
       
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
