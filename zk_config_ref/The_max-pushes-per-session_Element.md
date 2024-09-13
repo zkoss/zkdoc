@@ -18,8 +18,4 @@ Notices that
   it. When specifying this, it is better to specify the maximum allowed
   number of desktops.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

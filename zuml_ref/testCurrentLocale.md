@@ -16,8 +16,4 @@ belongs to the specified language and/or country.
 - country - the country code, e.g., US. Ignored if null. If empty, it
   means no country code at all.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

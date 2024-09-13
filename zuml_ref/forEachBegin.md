@@ -12,8 +12,4 @@ no iteration is performed.
 Note: `forEachStatus.index` always starts from 0, no matter what
 `forEachBegin` is.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

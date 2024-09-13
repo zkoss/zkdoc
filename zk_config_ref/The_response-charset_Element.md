@@ -15,8 +15,4 @@ empty string as follows.
 <response-charset></response-charset>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

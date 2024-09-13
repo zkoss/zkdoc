@@ -33,8 +33,4 @@ For the syntax of annotations, please refer to [ZK Developer's
 Reference:
 Annotations](ZK_Developer's_Reference/Annotations).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

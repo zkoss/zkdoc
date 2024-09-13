@@ -26,8 +26,4 @@ For example,
 ((DesktopCtrl)desktop).enableServerPush(new org.zkoss.zk.ui.impl.PollingServerPush());
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

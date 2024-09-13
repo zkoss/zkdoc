@@ -13,8 +13,4 @@ To disable the serialization of BeanShell method(s).
 </library-property>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

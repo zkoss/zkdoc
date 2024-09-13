@@ -55,8 +55,4 @@ org.zkoss.zk.ui.metainfo.MessageLoader The loader .load(StringBuffer
 out, Execution exec) need to load the additional client-side messages
 and append them to the output buffer.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

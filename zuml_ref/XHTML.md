@@ -21,8 +21,4 @@ Tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags) and
 [Performance
 Tips](ZK_Developer's_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

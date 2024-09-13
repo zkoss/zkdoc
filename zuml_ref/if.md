@@ -16,8 +16,4 @@ column of a grid, you might use something like this:
 </row>
 ```
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

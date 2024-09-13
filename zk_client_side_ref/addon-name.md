@@ -9,8 +9,4 @@ addon. The name must be unique if it is referenced by other addons (with
 the [depends
 element](ZK_Client-side_Reference/Language_Definition/depends)).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

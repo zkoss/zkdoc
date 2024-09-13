@@ -170,8 +170,4 @@ paging and scroll bar.
   **title cell**.
 - A cell in data area is called a **data cell**.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

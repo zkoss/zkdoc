@@ -25,11 +25,7 @@ For example,
 >
 > <references/>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: Notice that the package names are all changed, and the dependency
     of JSP EL is removed, so it is OK to run under any Web server

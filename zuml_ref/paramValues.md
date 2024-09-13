@@ -20,8 +20,4 @@ String[] values = param.get("something");
 </zscript>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

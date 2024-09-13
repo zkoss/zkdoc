@@ -2,8 +2,4 @@
 
 The space owner of this component. It is the same as `self.spaceOwner`.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

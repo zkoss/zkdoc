@@ -27,8 +27,4 @@ fields). True means to open all nodes. Default value is false.
     </library-property>
 ```
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

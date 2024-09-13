@@ -123,10 +123,6 @@ Always use the stackup technique.
 
 Never use the stackup technique.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: Available since ZK 5.0. For prior version, specify `true` instead.

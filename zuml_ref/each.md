@@ -59,8 +59,4 @@ in an event listener, unless you store the value first. For more
 information, please refer to [ZK Developer's Reference: Iterative
 Evaluation](ZK_Developer's_Reference/UI_Composing/ZUML/Iterative_Evaluation).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

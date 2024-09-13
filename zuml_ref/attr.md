@@ -9,8 +9,4 @@ i.e.,
 Generates an attribute for HTML/XML, name="value". If value is null or
 empty (if String), "" is generated.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

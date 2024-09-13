@@ -27,8 +27,4 @@ Ajax-as-a-Service.
   - [Experiment on EAI, Mashup and
     Ajax-as-a-Service](http://blog.zkoss.org/index.php/2009/08/16/experiment-on-eai-mashup-and-ajax-as-a-service)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

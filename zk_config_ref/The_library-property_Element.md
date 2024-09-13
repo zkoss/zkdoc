@@ -15,8 +15,4 @@ For a complete list of available library properties, please refer to
 [the Library Properties
 section](ZK_Configuration_Reference/zk.xml/The_Library_Properties).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

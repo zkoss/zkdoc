@@ -2,8 +2,4 @@
 
 The current page.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

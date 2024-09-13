@@ -11,8 +11,4 @@ different after reboot. It helps to avoid the consistency between the
 browser and the server. However, it is useful to turn this option on if
 you want to debug and test the application.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

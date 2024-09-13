@@ -208,8 +208,4 @@ color only, add extra style like this:
 }
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

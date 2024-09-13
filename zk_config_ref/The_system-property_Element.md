@@ -12,8 +12,4 @@ above example is equivalent to
  System.setProperty("any name", "any value");
 ```
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

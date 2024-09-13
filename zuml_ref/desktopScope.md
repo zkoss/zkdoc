@@ -6,8 +6,4 @@ as the `getAttributes` method in the
 
 It is mainly used to communicate among pages in the same desktop.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

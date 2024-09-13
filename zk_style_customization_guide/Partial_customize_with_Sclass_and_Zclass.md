@@ -118,8 +118,4 @@ title="styleguide-sclass-advanced2.png" />
 <figcaption>styleguide-sclass-advanced2.png</figcaption>
 </figure>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -16,8 +16,4 @@ If an EL expression is used, it can return a class name, a class
 instance, or a component instance. Notice that, if the expression
 returns a component, the component should not belong to any pages.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

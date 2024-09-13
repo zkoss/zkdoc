@@ -25,8 +25,4 @@ instead. Notice, if both specified, [the web-app-factory-class
 element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_web-app-factory-class_Element)
 has the higher priority.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

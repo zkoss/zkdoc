@@ -214,8 +214,4 @@ title="styleguide-window-design.png" />
 
 ![](images/styleguide-window.png)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

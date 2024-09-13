@@ -389,8 +389,4 @@ class="sourceCode css"><code class="sourceCode css"><span id="cb6-1"><a href="#c
 </tbody>
 </table>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

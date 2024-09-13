@@ -26,8 +26,4 @@ of [the richlet-mapping
 element](ZK_Configuration_Reference/zk.xml/The_richlet-mapping_Element)
 as described in the next section.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

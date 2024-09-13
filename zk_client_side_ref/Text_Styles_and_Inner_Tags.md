@@ -39,8 +39,4 @@ getTextNode_: function () {
 }
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -24,8 +24,4 @@ with HTML/XML. For example,
 
 - s - the string to encode
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

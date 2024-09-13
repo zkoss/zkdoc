@@ -37,8 +37,4 @@ more information.
     of the [`style`
     component](ZK_Component_Reference/Essential_Components/Style).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

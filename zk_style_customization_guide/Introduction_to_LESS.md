@@ -61,8 +61,4 @@ will output
 }
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

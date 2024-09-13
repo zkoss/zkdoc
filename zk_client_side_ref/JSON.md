@@ -77,11 +77,7 @@ service to a component by calling
 >
 > <references/>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: More precisely, they are converted to
     <javadoc>org.zkoss.json.JSONObject</javadoc> (a map) and

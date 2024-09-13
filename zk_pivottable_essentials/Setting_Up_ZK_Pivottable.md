@@ -10,8 +10,4 @@
 Simply include the Pivottable jar in your ZK project, then it is
 available for you.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

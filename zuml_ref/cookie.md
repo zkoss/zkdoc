@@ -2,8 +2,4 @@
 
 A map of cookies of the request. (String, Cookie).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -15,8 +15,4 @@ class has a proper constructor.
 - arg1 - the first argument to be passed to the constructor.
 - arg2 - the second argument to be passed to the constructor.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

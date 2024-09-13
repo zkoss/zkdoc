@@ -38,8 +38,4 @@ only if the client is Internet Explorer 6. For the available types you
 could check, please refer to
 <javadoc method="isBrowser(javax.servlet.ServletRequest, java.lang.String)">org.zkoss.web.servlet.Servlets</javadoc>.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

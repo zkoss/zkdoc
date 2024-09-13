@@ -15,8 +15,4 @@ For example,
 For more information, please refer to [ZK Client-side
 Reference](ZK_Client-side_Reference).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

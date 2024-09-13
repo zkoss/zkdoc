@@ -10,8 +10,4 @@ Does the HTTP encoding for an URI query parameter. For example, '/' is
 translated to '%2F'. Both name and value must be encoded separately.
 Example, encodeURIComponent(name) + '=' + encodeURIComponent(value).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -196,8 +196,4 @@ There are several ways to attach a widget to the DOM tree
     to make a widget a child of another widget that are already attached
     to the DOM tree.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

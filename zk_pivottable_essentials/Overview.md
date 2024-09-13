@@ -40,8 +40,4 @@ book.
 
 IE8+, latest Chrome/Firefox/Safari/Opera
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

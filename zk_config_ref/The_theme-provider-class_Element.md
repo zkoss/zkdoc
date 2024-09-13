@@ -21,8 +21,4 @@ provider has the highest priority.
 For more information, please refer to [ZK Developer's
 Reference](ZK_Developer's_Reference/Theming_and_Styling/Theme_Providers).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

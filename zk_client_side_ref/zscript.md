@@ -26,8 +26,4 @@ void alert(Object m) {
 </zscript>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

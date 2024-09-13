@@ -233,8 +233,4 @@ components from [ the XHTML component
 set](ZUML_Reference/ZUML/Languages/XHTML) implements
 <javadoc type="interface">org.zkos.zk.ui.ext.RawId</javadoc>.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

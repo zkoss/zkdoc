@@ -34,8 +34,4 @@ The name of the component definition that represents a label.
 
 The property of the component definition for holding the text.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

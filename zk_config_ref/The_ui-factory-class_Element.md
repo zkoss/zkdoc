@@ -47,8 +47,4 @@ after it started, you can specify this implementation.</p></td>
 </tbody>
 </table>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -14,8 +14,4 @@ components for the Ajax devices (i.e., the browsers).
 For more information, please refer to [ZK Component
 Reference](ZK_Component_Reference).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

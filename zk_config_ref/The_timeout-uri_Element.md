@@ -30,8 +30,4 @@ For more information, please refer to [ZK Developer's Reference/UI
 Patterns/Session Timeout
 Management](ZK_Developer's_Reference/UI_Patterns/Session_Timeout_Management).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

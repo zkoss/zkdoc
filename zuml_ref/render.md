@@ -8,8 +8,4 @@ i.e.,
 
 Renders a DSP fragment.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

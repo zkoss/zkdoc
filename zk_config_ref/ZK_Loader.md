@@ -157,8 +157,4 @@ prefix. To retrieve the request's actual URL, you can check the value
 returned by the
 <javadoc method="getRequestPath" type="interface">org.zkoss.zk.ui.Page</javadoc>.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

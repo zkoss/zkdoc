@@ -6,10 +6,6 @@ so on[^1].
 >
 > <references/>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: For browsers, an AU request is an Ajax request.

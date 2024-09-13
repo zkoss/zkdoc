@@ -142,8 +142,4 @@ sections is for handling so-called ZK widget event
 register a DOM-level event too by the use of jQuery (API:
 <javadoc directory="jsdoc">\_global\_.jq</javadoc>).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

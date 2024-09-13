@@ -85,8 +85,4 @@ ignored if the value specified to this attribute is evaluated to false.
 Specifies the condition *not* to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to true.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

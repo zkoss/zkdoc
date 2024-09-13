@@ -31,8 +31,4 @@ has been and removed, please use
 instead. For example, replace `${forEachStatus.previous.each.label}`
 with `${forEachStatus.previous.current.label}`.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

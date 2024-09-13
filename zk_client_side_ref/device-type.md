@@ -12,8 +12,4 @@ Example,
 <device-type>ajax</device-type>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

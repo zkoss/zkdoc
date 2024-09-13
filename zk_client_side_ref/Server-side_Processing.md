@@ -159,11 +159,7 @@ instantiating an event. For example,
 zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: A deferrable event listener is an event listener that also
     implements

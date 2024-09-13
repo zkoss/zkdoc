@@ -8,8 +8,4 @@ i.e.,
 
 Returns the value of the given library property, or null if not found.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

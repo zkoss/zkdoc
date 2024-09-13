@@ -78,8 +78,4 @@ You could specify any number of arguments. It will be passed to the
 any name for the arguments, but, in the prior version, the first
 argument must be named as `arg0`, the second is `arg1` and so on.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

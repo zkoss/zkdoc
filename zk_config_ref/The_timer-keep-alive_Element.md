@@ -84,8 +84,4 @@ public class DoesNothingTimer implements Composer {
 }
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

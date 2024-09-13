@@ -85,8 +85,4 @@ window.
 Notice that each page has its own interpreter to evaluate the zscript
 code.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

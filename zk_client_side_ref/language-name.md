@@ -14,8 +14,4 @@ Example,
 <language-name>xul/html</language-name>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

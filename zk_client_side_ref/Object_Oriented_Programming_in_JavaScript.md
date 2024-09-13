@@ -459,8 +459,4 @@ MyClass = zk.$extends(zk.Object, {
 });
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

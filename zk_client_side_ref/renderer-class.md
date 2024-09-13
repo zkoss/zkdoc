@@ -14,8 +14,4 @@ Example,
 <renderer-class>org.zkoss.zul.impl.PageRenderer</renderer-class>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -166,8 +166,4 @@ Hide both '+' and '-' icon
 }
 ```
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

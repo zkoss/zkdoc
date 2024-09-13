@@ -8,8 +8,4 @@ i.e.,
 
 Returns the class of the given class name.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

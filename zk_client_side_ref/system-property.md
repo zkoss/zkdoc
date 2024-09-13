@@ -9,8 +9,4 @@
 
 It specifies the system property (java.lang.System).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

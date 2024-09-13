@@ -53,8 +53,4 @@ event.
 </div>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

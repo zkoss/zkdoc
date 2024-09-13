@@ -17,8 +17,4 @@ the proper implementation, such as
 </device-config>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

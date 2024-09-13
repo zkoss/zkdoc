@@ -80,8 +80,4 @@ loading](ZK_Developer's_Reference/Performance_Tips/Minimize_Number_of_JavaScript
 </language-addon>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

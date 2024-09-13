@@ -115,8 +115,4 @@ a field in the field control and pass
 <javadoc directory="zkpvt">org.zkoss.pivot.ui.PivotFieldControlChangeEvent</javadoc>
 to a listener.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

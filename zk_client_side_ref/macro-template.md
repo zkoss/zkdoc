@@ -20,8 +20,4 @@ Example,
 
 The class used to instantiate a macro component.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

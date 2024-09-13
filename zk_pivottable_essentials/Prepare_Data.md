@@ -304,8 +304,4 @@ Iterable<List<Object>> filteredData = PivotModels.filter
 
  
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

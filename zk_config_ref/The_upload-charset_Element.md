@@ -12,8 +12,4 @@ If the uploaded file is binary, there is no encoding issue at all.
 Notice that the `upload-charset-finder-class` element has the higher
 priority.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -351,8 +351,4 @@ Assume the image below is our target design for Tabbox component.
     
   ![](images/styleguide-accordion.png)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -17,8 +17,4 @@ details.
 
 - value - the value to convert
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

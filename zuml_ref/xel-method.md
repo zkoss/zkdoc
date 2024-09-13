@@ -40,8 +40,4 @@ Specifies the class that the method is defined in.
 The signature of the method. Note: the method must be public static. In
 additions, Java 5 Generics are *not* allowed.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

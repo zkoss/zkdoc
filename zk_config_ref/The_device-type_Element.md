@@ -14,8 +14,4 @@ Notice that only `<timeout-uri>` and `<automatic-timeout>` depend on
 this. Others, such as \<session-timeout\>, are applied to all devices,
 regardless what is specified here.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

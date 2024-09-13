@@ -33,8 +33,4 @@ Example, 'a string' and "hello world"</p></td>
 </tbody>
 </table>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

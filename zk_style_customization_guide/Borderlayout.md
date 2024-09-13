@@ -329,8 +329,4 @@ like the following.
 </borderlayout>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

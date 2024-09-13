@@ -244,8 +244,4 @@ title="styleguide-nav-design.png" />
 
 ![](images/styleguide-nav.png)
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

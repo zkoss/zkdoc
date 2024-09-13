@@ -8,8 +8,4 @@ i.e.,
 
 Concatenates three strings together. Note: null is considered as empty.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

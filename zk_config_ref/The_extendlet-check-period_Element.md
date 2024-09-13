@@ -14,8 +14,4 @@ are immutable and not need to check if modified. However, in a
 development environment, you might still want to check out if they are
 deployed without reloading the JAR files.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

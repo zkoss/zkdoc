@@ -40,8 +40,4 @@ CacheFilter](http://www.opensymphony.com/oscache/wiki/CacheFilter.html).
   enough to preserve the most updated content and always reuses the
   cached page.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

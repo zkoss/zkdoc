@@ -12,8 +12,4 @@ Converts the specified object to a string.
 
 - value - the value to convert
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -18,8 +18,4 @@ disable-event-thread
 element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_disable-event-thread_Element)
 for details.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

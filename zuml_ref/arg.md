@@ -23,8 +23,4 @@ included page, say `my.zul`. On the other hand, all events, including
 the `onCreate`'s listener, use the `getArg` method of the
 <javadoc>org.zkoss.zk.ui.event.CreateEvent</javadoc> class.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

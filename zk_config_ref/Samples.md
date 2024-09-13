@@ -29,8 +29,4 @@ Here is a sample of `/metainfo/zk/config.xml` (from zkex.jar):
 As shown, you could specify the listener and library properties in
 `/metainfo/zk/config.xml`.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

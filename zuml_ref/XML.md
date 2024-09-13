@@ -18,8 +18,4 @@ However, the XML component set also provide some components for
 different functionality. For more information please refer to [ZK
 Component Reference](ZK_Component_Reference/XML_Components).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

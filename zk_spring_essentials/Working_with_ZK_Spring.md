@@ -3,8 +3,4 @@ ZK Spring integration Library contains 2 modules; ZK Spring Core
 Spring Security). The Following sections will go into details of both
 modules and demonstrate the features .
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

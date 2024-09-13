@@ -14,8 +14,4 @@ window, without disabling them.
 
 **Note**: in ZK 3.0.3 and earlier, the option is default to true.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -247,8 +247,4 @@ that are available only to certain browsers, such as accessibility and
 [Section
 508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12#Web).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

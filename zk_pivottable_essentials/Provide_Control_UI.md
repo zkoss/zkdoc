@@ -159,8 +159,4 @@ title="ZKPivotEsn_pfc_control_05.png" />
 >
 > <references/>
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

@@ -16,8 +16,4 @@ defines a shortcut.
 <namespace>http://www.zkoss.org/2005/zul</namespace>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -10,8 +10,4 @@ must implement the
 <javadoc type="interface">org.zkoss.zk.ui.util.ConfigParser</javadoc>
 interface.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -18,8 +18,4 @@ class has a proper constructor.
 
 `${c:new1('java.lang.Integer', 2)}`
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

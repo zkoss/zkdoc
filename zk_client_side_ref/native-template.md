@@ -24,8 +24,4 @@ Example,
 
 The class used to instantiate a natve component.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

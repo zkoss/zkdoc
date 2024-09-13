@@ -41,8 +41,4 @@ following is the type WPD recognized:
 | javax.servlet.ServletContext              | The current servlet context. |
 | Others                                    | null                         |
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

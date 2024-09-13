@@ -17,8 +17,4 @@ Example,
 which means this configuration won't be parsed until
 `/metainfo/zk/config.xml` in both `zkex` and `zkmax` are parsed.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

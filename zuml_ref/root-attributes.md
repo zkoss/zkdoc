@@ -33,8 +33,4 @@ evaluated to null, the corresponding attribute won't be generated.
 "*any-value*" = Any numbers of names and values are allowed. The value
 could contain EL expressions.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

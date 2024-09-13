@@ -15,8 +15,4 @@ If you are using Servlet 2.3, please use
     </listener>
 ```
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

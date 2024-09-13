@@ -15,8 +15,4 @@ Example,
 <extension>xul</extension>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

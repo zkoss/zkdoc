@@ -13,8 +13,4 @@ By default, <javadoc>org.zkoss.zk.ui.http.SimpleSessionCache</javadoc>
 is used and it stores the ZK session in an attribute of the native
 session (i.e., `HttpSession` or `PortletSession`).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

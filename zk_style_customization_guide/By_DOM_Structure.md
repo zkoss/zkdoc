@@ -291,8 +291,4 @@ describes a non-splittable icon.
 </tbody>
 </table>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

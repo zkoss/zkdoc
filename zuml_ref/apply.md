@@ -36,8 +36,4 @@ system-level composer. For more information, please refer to [ZK
 Developer's Reference: System-level
 Composers](ZK_Developer's_Reference/MVC/Controller/Composer#System-level_Composer).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

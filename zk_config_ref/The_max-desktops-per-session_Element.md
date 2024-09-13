@@ -31,8 +31,4 @@ You have to reload the page and try again.</code>
 you have to make this number much larger since it means the maximum
 allowed number of desktops *per system*.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

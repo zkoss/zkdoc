@@ -22,8 +22,4 @@ Allowed values include "robot", "ie", "ie6", "ie6-", "ie7", "ie8",
 Note: "ie6-" means Internet Explorer 6 only; not Internet Explorer 7 or
 other.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

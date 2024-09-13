@@ -24,8 +24,4 @@ theme. Please refer to [ZK Developer's
 Reference](ZK_Developer's_Reference/Theming_and_Styling/Theme_Customization)
 for more details about theming and styling.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

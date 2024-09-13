@@ -29,8 +29,4 @@ pages or servlets. Also, they are ignored if the page is a `zhtml` file.
  </window>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

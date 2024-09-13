@@ -31,8 +31,4 @@ zk.zAu.cmd0.bookmark = function (bk, replace) {
 };
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

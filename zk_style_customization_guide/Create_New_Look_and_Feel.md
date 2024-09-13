@@ -107,8 +107,4 @@ theme jar file. You can then use the theme jar (see [ usage
 instruction](ZK_Developer's_Reference/Theming_and_Styling/ZK_Official_Themes#Installation))
 in other ZK web projects as well.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

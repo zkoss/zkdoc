@@ -10,8 +10,4 @@ element](ZK_Configuration_Reference/zk.xml/The_listener_Element),
 except it is specified in a JAR file's `config.xml` rather than
 `WEB-INF/zk.xml`.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

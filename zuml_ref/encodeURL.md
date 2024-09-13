@@ -32,8 +32,4 @@ is found.
 
 - uri - the URI to encode
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

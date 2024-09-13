@@ -21,8 +21,4 @@ for better Search Engine Optimization (SEO).
 </system-config>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

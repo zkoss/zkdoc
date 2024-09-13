@@ -46,8 +46,4 @@ independent sessions for each request.</p></td>
 </tbody>
 </table>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

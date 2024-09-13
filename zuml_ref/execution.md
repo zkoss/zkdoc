@@ -2,8 +2,4 @@
 
 The current execution.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

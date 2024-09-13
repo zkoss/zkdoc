@@ -323,8 +323,4 @@ buttons, inputs, and tables.
 @dragDisAllowBackgroundColor:  #C13634;
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -16,8 +16,4 @@ with this method.
 <input value="${c:eatQuot(param.some)}"/>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

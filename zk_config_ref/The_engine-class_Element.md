@@ -12,8 +12,4 @@ interface.
 One instance of the UI engine is created and shared for each Web
 application, so you have to synchronize the access properly.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

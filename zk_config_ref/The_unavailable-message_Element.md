@@ -16,8 +16,4 @@ support this device.
 </device-config>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

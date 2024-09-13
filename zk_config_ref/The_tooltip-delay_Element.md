@@ -8,8 +8,4 @@ It specifies the time, in milliseconds, to wait before popping up the
 tooltip when the user moves the mouse pointer over particular UI
 components.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

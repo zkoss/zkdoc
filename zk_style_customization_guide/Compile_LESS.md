@@ -254,8 +254,4 @@ zkMavenWebProject - src/main/webapp
 - Now you can modify LESS and see the result by refreshing your browser
   page.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

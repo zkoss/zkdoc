@@ -10,8 +10,4 @@ Encoding URL to theme specific prefix the context path and to provide
 session info, if necessary. If URL contains "\*", it is resolved to the
 current Locale and the browser code.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

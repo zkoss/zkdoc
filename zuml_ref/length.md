@@ -15,8 +15,4 @@ string/array/collection/map is empty:
 ${empty foo}
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

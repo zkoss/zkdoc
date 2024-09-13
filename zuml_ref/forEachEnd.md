@@ -9,8 +9,4 @@ iterations ends at the last element.
 If `forEachEnd` is greater than or equals to the number of elements, the
 iteration ends at the last element.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

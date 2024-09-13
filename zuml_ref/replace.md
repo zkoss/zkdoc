@@ -8,8 +8,4 @@ i.e.,
 
 Replaces all occurrances of 'from' in 'src' with 'to'.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

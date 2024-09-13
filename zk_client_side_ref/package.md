@@ -54,8 +54,4 @@ However, you have to turn it off, if you use a
 that will generate the output depending on a varying condition (such as
 Locale and time zone).
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

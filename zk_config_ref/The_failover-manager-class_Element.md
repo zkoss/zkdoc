@@ -17,8 +17,4 @@ specifying the
 <javadoc>org.zkoss.zk.ui.http.SerializableUiFactory</javadoc> class in
 the `ui-factory-class` element as described above.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

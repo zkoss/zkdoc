@@ -26,8 +26,4 @@ For example,
 </window>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

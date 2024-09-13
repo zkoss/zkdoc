@@ -12,8 +12,4 @@ depicted as follows.
  
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

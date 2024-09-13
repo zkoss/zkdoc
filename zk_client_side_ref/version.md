@@ -40,8 +40,4 @@ which means `foo.MyAddon.UID` must be 1.0.3, and
 <javadoc method="getVersion()" type="interface">org.zkoss.zk.ui.WebApp</javadoc>
 must be 5.0.0 or later.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

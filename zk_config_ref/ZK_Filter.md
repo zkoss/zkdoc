@@ -76,8 +76,4 @@ example,
     </filter-mapping>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

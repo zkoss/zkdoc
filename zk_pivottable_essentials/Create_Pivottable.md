@@ -111,8 +111,4 @@ Other actions are available through call Pivottable API and PivotModel
 API. The next section will introduce samples of wiring these API to the
 user interface.
 
-## Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+#

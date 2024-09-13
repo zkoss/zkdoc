@@ -230,11 +230,7 @@ private class EncodedURL implements DeferedValue {
 >
 > <references/>
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: It is because `smartUpdate` is usually called in an event
     listener, which might run at the event thread (if it is turned on).

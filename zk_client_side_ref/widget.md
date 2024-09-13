@@ -20,8 +20,4 @@ JavaScript. It also assumes that there is a JavaScript file with the
 same name in the same directory. For example, the above example will
 cause WPD to embed A.js, Cell.js, Div.js and Span.js.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

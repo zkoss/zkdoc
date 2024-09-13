@@ -79,8 +79,4 @@ to proxy a function such that `this` will refer to the widget when the
 method is called. Also notice that the event name used with jQuery does
 not start with `on`.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

@@ -16,8 +16,4 @@ The current event. It is available for the event listener only.
 </zscript>
 ```
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

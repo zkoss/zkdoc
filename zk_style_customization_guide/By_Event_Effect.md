@@ -69,8 +69,4 @@ invalid state.
   
 readonly state.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

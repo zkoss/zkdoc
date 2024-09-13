@@ -23,11 +23,7 @@ of the coercion rules.
 
 - The handling of an empty string and null is the same
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 [^1]: obj represents the object being corerced
 

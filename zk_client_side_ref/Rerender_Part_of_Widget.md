@@ -55,8 +55,4 @@ child widgets except caption are not redrawn.
 You can implement your own skipper. Refer to
 <javadoc directory="jsdoc">zk.Skipper</javadoc> for details.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

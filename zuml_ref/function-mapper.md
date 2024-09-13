@@ -49,8 +49,4 @@ Prior to ZK 3.6.2, only the second signature is checked if one or more
 argument is specified, and it assumes `arg0` as the first argument,
 `arg1` as the second, and so on.
 
-# Version History
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
