@@ -6,7 +6,7 @@ and **ZK Storage View**. If the bundled version is not the very latest
 one or not the one you wish to work with, please follow the next section
 to manually download and link to the latest version.
 
-![](images/images/studio-project-zks.png)
+![](images/studio-project-zks.png)
 
 # Manually Download and Configure
 

@@ -4,4 +4,4 @@ including the **Properties** view, the **ZK Storage View**, the
 clicking **\[Window\]/\[Open Perspective\]/\[Others\]** and selecting
 **ZK**, and it will look like this:
 
-![](images/images/studio-perspective.png)
+![](images/studio-perspective.png)
