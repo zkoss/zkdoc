@@ -101,7 +101,7 @@ list. This might produce some delay at the client side because of server
 processing time and network latency.
 
 See also:
-[Combobox#Autocomplete_by_ListSubModel](/zk_component_ref/Input/Combobox#Autocomplete_by_ListSubModel)
+[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/Input/Combobox#Autocomplete_by_ListSubModel)
 
 ``` xml
     <zscript><![CDATA[

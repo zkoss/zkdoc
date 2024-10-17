@@ -1,6 +1,6 @@
 # Data Binding
 
-In the following sections, we will cover ZK Bind's annotations used on a ZUL. They are all used in **component's attribute** and have general format described in [ Annotate in ZUML](/zk_dev_ref/Annotations/Annotate_in_ZUML):
+In the following sections, we will cover ZK Bind's annotations used on a ZUL. They are all used in **component's attribute** and have general format described in [ Annotate in ZUML]({{site.baseurl}}/zk_dev_ref/Annotations/Annotate_in_ZUML):
 
 **@AnnotationName(*attr-value1, attr-name2=attr-value2*)**
 

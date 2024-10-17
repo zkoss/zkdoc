@@ -22,7 +22,7 @@ By following this pattern, ZK supports MVVM approach which controls components b
 * ZK UI components plays View.
 * MyServiceClass is not a real class name. It represents any class which is usually implemented by you performs business logic like searching or authentication.
 
-![](/zk_essentials/images/mvvm.png)
+![]({{site.baseurl}}/zk_essentials/images/mvvm.png)
 
 Since the ViewModel contains no reference to UI components, you cannot
 control components directly by their setter and getter. Therefore, ZK supports a data binding mechanism, ZK Bind, to synchronize data and handle events and respond between the View and ViewModel. Additionally, this mechanism also has to bridge events from the View to the action provided by the ViewModel. In this binding system,

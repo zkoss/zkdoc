@@ -4,7 +4,7 @@
 is a collection of callbacks that the implementation could know when a
 request is sent, arrives or is processed.
 
-![](/zk_dev_ref/images/performancemeter.png)
+![]({{site.baseurl}}/zk_dev_ref/images/performancemeter.png)
 
 As shown above, T1-T5 identifies the following callbacks.
 

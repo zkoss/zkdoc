@@ -232,7 +232,7 @@ specific object type according to the method declaration.
 **Note:** developer can implement a custom
 <javadoc type="interface">org.zkoss.bind.Converter</javadoc> and specify
 it into [the ZK library
-properties](/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.bind.jsonBindingParamConverter.class).
+properties]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.bind.jsonBindingParamConverter.class).
 
 ### MVC Example
 
@@ -269,4 +269,4 @@ specific object type according to the method declaration.
 **Note:** developer can implement a custom
 <javadoc type="interface">org.zkoss.util.Converter</javadoc> and specify
 it into [the ZK library
-properties](/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.ui.jsonServiceParamConverter.class).
+properties]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.ui.jsonServiceParamConverter.class).

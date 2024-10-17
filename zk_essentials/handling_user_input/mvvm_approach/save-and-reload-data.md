@@ -201,7 +201,7 @@ and move to next field, the line of text is changed even you don't press
 the "Save" button. This could be a problem because it would mislead users,
 making them think they have changed their profile, so we want to remove such behavior.
 
-![](/zk_essentials/images/ze-ch5-unsaved.png)
+![]({{site.baseurl}}/zk_essentials/images/ze-ch5-unsaved.png)
 
 <div style="text-align:center">
 <strong>Unsaved Input Changes Data</strong>
@@ -307,7 +307,7 @@ After applying form binding, any user's input will not actually change
 click the "Save" button, ZK puts the middle object's data back to the
 ViewModel's properties (`currentUser`).
 
-![ ](/zk_essentials/images/ze-ch5-form-binding.png)
+![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-form-binding.png)
 
 <div style="text-align:center">
 <strong>Unsaved Input Doesn't Change Data</strong>

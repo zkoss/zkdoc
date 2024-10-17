@@ -77,11 +77,11 @@ retrieve the original event, you could invoke
 ## Using a component Path
 
 You can also use a component
-[Path](/zk_dev_ref/Access_UI_Components_with_Path)
+[Path]({{site.baseurl}}/zk_dev_ref/Access_UI_Components_with_Path)
 within your ZUML pages to specify a target component to which you would
 like to forward a specific event. This is especially useful if you want
 to forward events across different
-[IdSpace](/zk_dev_ref/UI_Composing/ID_Space)
+[IdSpace]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space)
 such as forwarding events from a component in an included ZUML page to
 the main page component. For example,
 
@@ -95,7 +95,7 @@ the main page component. For example,
 ```
 
 Now in your included page use
-[Path](/zk_dev_ref/Access_UI_Components_with_Path)
+[Path]({{site.baseurl}}/zk_dev_ref/Access_UI_Components_with_Path)
 while forwarding events to mainWindow `Window` component.
 
 ``` xml

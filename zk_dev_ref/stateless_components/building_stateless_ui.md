@@ -38,7 +38,7 @@ We will use the simple shopping cart application as an example to
 introduce the basic features of stateless components ([download the
 shopping cart example
 project](https://github.com/zkoss-demo/zk10-shopping-cart-demo)):
-![](/zk_dev_ref/images/Shoppingcart.png "Shoppingcart.png")
+![]({{site.baseurl}}/zk_dev_ref/images/Shoppingcart.png "Shoppingcart.png")
 
 # Building UI with Richlet
 

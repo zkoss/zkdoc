@@ -1,6 +1,6 @@
 # User Input Validation
 
-Each ZK input component provides a built-in input validation by `constraint` attribute. You can specify [a pre-defined constraint rule](/zk_component_ref/Base Components/InputElement#Validation)
+Each ZK input component provides a built-in input validation by `constraint` attribute. You can specify [a pre-defined constraint rule]({{site.baseurl}}/zk_component_ref/Base Components/InputElement#Validation)
 to activate it, then the validation works without writing any code in a controller. For example:
 
 ```xml
@@ -33,4 +33,4 @@ to activate it, then the validation works without writing any code in a controll
 Then, the input component will show the specified error message when an
 input value violates a specified constraint rule.
 
-![ ](/zk_essentials/images/ze-ch5-email-constraint.png)
+![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-email-constraint.png)

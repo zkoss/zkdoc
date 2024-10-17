@@ -11,7 +11,7 @@ approach that is classified as the **Model-View-ViewModel (MVVM)**
 design pattern. Using this approach, ZK can control components for you
 automatically and it separates the UI from its controller clearly. In
 addition, you can also choose to go with the <b>MVC</b> approach that is
-covered in [another tutorial](/get_started/Get_ZK_Up_and_Running_with_MVC).
+covered in [another tutorial]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVC).
 
 {% include tutorial-common.md %}
 

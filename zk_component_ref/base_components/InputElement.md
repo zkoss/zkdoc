@@ -173,7 +173,7 @@ In cases where a longer sentence with a comma separator is required, you can enc
 
 #### Scrollable Error Message
 
-If you need to display an error message box that moves with scrolling, you can use [the `data-scrollable` attribute](/zuml_ref/ZUML/Namespaces/Client_Attribute/Data-Scrollable). This attribute allows the error message box to remain visible even when the page is scrolled.
+If you need to display an error message box that moves with scrolling, you can use [the `data-scrollable` attribute]({{site.baseurl}}/zuml_ref/ZUML/Namespaces/Client_Attribute/Data-Scrollable). This attribute allows the error message box to remain visible even when the page is scrolled.
 
 
 ### Custom Constraint

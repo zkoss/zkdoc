@@ -15,7 +15,7 @@ For example,
     </if>
 </div>
 ```
-![Mvvm_shadow_diagram](/zk_mvvm_ref/images/Mvvm-shadow-diagram.png)
+![Mvvm_shadow_diagram]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-shadow-diagram.png)
 
 As shown in the diagram above, the tree is separated into two parts - **Logical Tree** and **Composed Tree**.
 - **Logical Tree** is created by ZK page parser to construct a page definition tree and then instantiate it into a **Composed Tree**.

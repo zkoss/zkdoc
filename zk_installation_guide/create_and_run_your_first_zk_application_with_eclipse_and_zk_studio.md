@@ -10,7 +10,7 @@ Manually](Quick_Start/Create_and_Run_Your_First_ZK_Application_Manually).
 # Prepare Eclipse
 
 You can follow [ZK Studio Installation
-Guide](/zk_studio_essentials/Installation) to
+Guide]({{site.baseurl}}/zk_studio_essentials/Installation) to
 install ZK Studio. There are prerequisites you have to set up before
 installing ZK Studio:
 

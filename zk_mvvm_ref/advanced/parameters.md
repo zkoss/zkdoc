@@ -23,7 +23,7 @@ A Local Command Example
 -----------------------
 Assume we have data in grid. It's common to put a button at the end of a row to manipulate it, like delete or update. We usually need index or domain object of a row to perform a action like update.
 
-![Mvvm-binding-parameters](/zk_mvvm_ref/images/Mvvm-binding-parameters.png)
+![Mvvm-binding-parameters]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-binding-parameters.png)
 
 Here is the zul of above screenshot:
 

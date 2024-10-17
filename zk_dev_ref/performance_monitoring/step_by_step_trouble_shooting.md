@@ -171,9 +171,9 @@ size of the response, if the Client engine needs to render a lot (e.g. a
 Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
 the data sent to the client using [Render on
-Demand](/zk_dev_ref/Performance_Tips/Client_Render_on_Demand)
+Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Client_Render_on_Demand)
 or
-[Pagination](/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Use_Live_Data_and_Paging)
+[Pagination]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Use_Live_Data_and_Paging)
 (Most users don't need 1000 lines visible at once)
 
 Performance degrading over time when using the application (while
@@ -221,7 +221,7 @@ at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in
 the source code (enabling
-[debug-js](/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element)
+[debug-js]({{site.baseurl}}/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element)
 will help when using this feature).
 
 The small peak (at 2800ms) on the left side is my actual event
@@ -372,7 +372,7 @@ In eclipse a very obvious case might look like this (just imaginarily
 replace Thread.sleep() with db.query(), url.openConnection(),
 webService.get() ...):
 
-![](/zk_dev_ref/images/suspended_process.png)
+![]({{site.baseurl}}/zk_dev_ref/images/suspended_process.png)
 
 #### Not so lucky
 
@@ -463,7 +463,7 @@ notice on your CPU, as the thread is just sleeping.
 
 Starting the sampler will show the actual "Hot Spots" like this.
 
-![](/zk_dev_ref/images/_sampler-result.png)
+![]({{site.baseurl}}/zk_dev_ref/images/_sampler-result.png)
 
 The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
@@ -516,7 +516,7 @@ public class LineChartComposer extends SelectorComposer {
 If we don't know where to look in the code we can use a Heap Dump to
 locate it.
 
-![](/zk_dev_ref/images/heap-dump.png)
+![]({{site.baseurl}}/zk_dev_ref/images/heap-dump.png)
 
 I clicked the "find" button to find the 20 biggest objects on the heap.
 The results tell us the following.
@@ -530,7 +530,7 @@ If it wasn't that obvious like here, one can always switch to the
 "Instances" view and check which objects are referring to this big
 array.
 
-![](/zk_dev_ref/images/heap-dump-instances.png)
+![]({{site.baseurl}}/zk_dev_ref/images/heap-dump-instances.png)
 
 Also here we could trace the references up to the Desktop/Session
 objects.
@@ -541,14 +541,14 @@ current component tree) for a user are stored in the session. Therefore
 one should check the following settings:
 
 - [ZK Session
-  Cleaner](/zk_config_ref/web.xml/ZK_Session_Cleaner)
+  Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/ZK_Session_Cleaner)
 
   
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
 - [Session
-  Configuration](/zk_config_ref/zk.xml/The_session-config_Element)
+  Configuration]({{site.baseurl}}/zk_config_ref/zk.xml/The_session-config_Element)
 
   
 check session timeout, either here or in web.xml
@@ -556,7 +556,7 @@ check session timeout, either here or in web.xml
 check max desktops per session, if you want to put a limit here
 
 - [Desktop
-  Configuration](/zk_config_ref/zk.xml/The_desktop-config_Element)
+  Configuration]({{site.baseurl}}/zk_config_ref/zk.xml/The_desktop-config_Element)
 
   
 if desktops stay alive too long, check the desktop timeout
@@ -616,7 +616,7 @@ might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
 [http://books.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Tips/Reuse_Desktops
 reusing
-desktops](/zk_dev_ref/Performance_Tips/Reuse_Desktops_reusing_desktops)
+desktops]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Reuse_Desktops_reusing_desktops)
 can help.
 
 ### ZK Server Configuration
@@ -699,14 +699,14 @@ When using Sampler or Profiler, it's better to specify **Profile only
 packages** in the settings. Therefore, it will only show those classes
 you concern instead of irrelevant classes.
 
-![](/zk_dev_ref/images/profile-only-package.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/profile-only-package.jpg)
 
 ## Locate Hot Spots
 
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![](/zk_dev_ref/images/_hotSpots.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/_hotSpots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -714,4 +714,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![](/zk_dev_ref/images/_forwardCall.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/_forwardCall.jpg)

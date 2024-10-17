@@ -107,7 +107,7 @@ ViewModel with data binding expression.
 
 
 We can create a new todo item by either clicking the button with plus
-icon (![inline](/zk_essentials/images/ze-ch6-plus.png)) or
+icon (![inline]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or
 pressing the "Enter" key, therefore we can bind these two events to the
 same command method that adds a todo item.
 

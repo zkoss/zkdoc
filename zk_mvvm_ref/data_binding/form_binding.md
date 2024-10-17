@@ -9,7 +9,7 @@ after the user confirmation. Form binding provides a middle object to store unco
 Form binding can keep target object in ViewModel unchanged before executing a Command for confirmation. Before saving to ViewModel's properties (target object) upon a Command, we can save input in Form binding's middle object. When the command is executed (e.g. button is clicked), input data is really saved to ViewModel's properties. Developers can achieve the whole process easily just by writing ZK bind expression, as it reduces developer's burden of cleaning dirty data manually or implementing the buffer himself.
 
 ## The data flow among ZUL, middle object, and the target object is illustrated below:
-![MVVM Form Binding](/zk_mvvm_ref/images/Mvvm-form-binding.png)
+![MVVM Form Binding]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-form-binding.png)
 
 
 ## Problems Using Property Binding in a Form

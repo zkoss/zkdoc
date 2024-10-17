@@ -10,7 +10,7 @@ For example, you can publish a *doClick* command in your view model with an *onC
 
 **Client Binding** provides 4 methods - 2 on the client-side, and 2 on the server-side. Their relationships can be illustrated by the following diagram:
 
-![ZK8_Client_Binding_Diagrammatic_Sketch](/zk_mvvm_ref/images/ZK8_Client_Binding_Chart01.jpg)
+![ZK8_Client_Binding_Diagrammatic_Sketch]({{site.baseurl}}/zk_mvvm_ref/images/ZK8_Client_Binding_Chart01.jpg)
 
 #### On client-side
 

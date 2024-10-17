@@ -22,7 +22,7 @@ If the property is one of Java Collection type object like ` List ` or ` Set `, 
 
 Implicit Iteration Variable
 ---------------------------
-After binding collection type property as a data source, we have to specify how to render each object of the model with [&lt;template&gt;](/zk_dev_ref/MVC/View/Template) and ZK will create components according to the fragment specified in ` <template>` iteratively. There are 2 implicit variables we can use in ` <template>`.
+After binding collection type property as a data source, we have to specify how to render each object of the model with [&lt;template&gt;]({{site.baseurl}}/zk_dev_ref/MVC/View/Template) and ZK will create components according to the fragment specified in ` <template>` iteratively. There are 2 implicit variables we can use in ` <template>`.
 
 **each**, iteration object variable which references to each object of the model. We can use it to access an object's properties with dot notation, e.g. `each.name`.
 
@@ -173,7 +173,7 @@ The example above is to use a tree like data structure that the sub-template wil
 
 #### Dynamic menu bar screenshot
 
-![Mvvm-dynamic-menu](/zk_mvvm_ref/images/Mvvm-dynamic-menu.png)
+![Mvvm-dynamic-menu]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-dynamic-menu.png)
 
 Selection in Collection
 =======================

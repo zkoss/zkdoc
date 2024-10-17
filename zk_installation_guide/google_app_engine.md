@@ -147,13 +147,13 @@ to disable the serializing of zscript methods for the whole application.
   package[^1]
 
 When it comes to [Server
-Push](/zk_dev_ref/Server_Push),
+Push]({{site.baseurl}}/zk_dev_ref/Server_Push),
 since App Engine doesn't allow creating new threads, so session scope or
 application scope event queue cannot be used with App Engine. If you
 require server push feature, you should use
-[timer](/zk_component_ref/Essential_Components/Timer)
+[timer]({{site.baseurl}}/zk_component_ref/Essential_Components/Timer)
 instead of [event
-queue](/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues)
+queue]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues)
 in an App Engine environment.
 
 ------------------------------------------------------------------------

@@ -69,7 +69,7 @@ example,
 
 And, the result
 
-![](/zk_dev_ref/images/DrFlex1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlex1.png‎)
 
 Here is another example that we'd like to grow the tabbox to fit the
 rest of the space:
@@ -97,7 +97,7 @@ Notice you could specify `style="overflow: auto"` in the tabpanel such
 that the scrollbar will be inside the tabbox rather than the browser
 window if the content is too large to fit.
 
-![](/zk_dev_ref/images/DrFlexTabbox.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlexTabbox.png‎)
 
 # Proportional Flexibility
 
@@ -115,7 +115,7 @@ take space proportionally per the given vflex/hflex value. For example,
 
 And, the result is
 
-![](/zk_dev_ref/images/DrFlex2.png)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlex2.png)
 
 Here is another example (hflex):
 
@@ -126,7 +126,7 @@ Here is another example (hflex):
 </hlayout>
 ```
 
-![](/zk_dev_ref/images/DrFlexErr1Fix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1Fix.png)
 
 # Minimum Flexibility
 
@@ -158,7 +158,7 @@ just high/wide enough to hold all of its child components. Specifying
 </borderlayout>
 ```
 
-![](/zk_dev_ref/images/vflexborderlayout.png)
+![]({{site.baseurl}}/zk_dev_ref/images/vflexborderlayout.png)
 
 As you can see, the height of the north region of the outer borderlayout
 is determined by its child borderlayout. And the height of the inner
@@ -270,7 +270,7 @@ second as follows.
 
 The result is
 
-![](/zk_dev_ref/images/DrGridFlex.png)
+![]({{site.baseurl}}/zk_dev_ref/images/DrGridFlex.png)
 
 Notice that we also specify `hflex="1"` to the textbox, so it will take
 up the whole space.
@@ -516,7 +516,7 @@ but it makes it div eventually).
 
 And, the result is as follows - the width has no effect:
 
-![](/zk_dev_ref/images/DrFlexErr1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1.png‎)
 
 This limitation can be solved by the use of
 [hlayout](ZK_Component_Reference/Layouts/Hlayout) and
@@ -530,7 +530,7 @@ This limitation can be solved by the use of
 </hlayout>
 ```
 
-![](/zk_dev_ref/images/DrFlexErr1Fix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1Fix.png)
 
 ## Hflex Must Align Correctly
 
@@ -547,7 +547,7 @@ its siblings. For example,
 As shown below, the second div is not aligned vertically with the first
 div, so is the width not as expected:
 
-![](/zk_dev_ref/images/DrFlexErr2.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr2.png‎)
 
 This limitation can be solved by use of
 [hlayout](ZK_Component_Reference/Layouts/Hlayout) and

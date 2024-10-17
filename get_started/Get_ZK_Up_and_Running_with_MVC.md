@@ -9,7 +9,7 @@ modern web application with ZK. The target application we are going to
 build is a simple car catalog application. We will use the **MVC**
 approach to build the application here. This approach is very intuitive
 and flexible and gives you full control of components. In addition, you
-can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
+can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM).
 
 You can download the complete source code under the [ Start from Example Project](#start_from_example_project) section.
 
@@ -37,7 +37,7 @@ from Model to change View's presentation.
 
 ## The Flow to Handle a User Action
 
-![](/get_started/images/tutorial-mvc.png)
+![]({{site.baseurl}}/get_started/images/Tutorial-mvc.png)
 
 1.  When a user interacts with a component (e.g. click a button) on a
     ZUL, the user action triggers an event.

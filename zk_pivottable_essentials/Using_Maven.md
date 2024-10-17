@@ -2,7 +2,7 @@
 
 This section describes the Maven settings required to use ZK Pivottable
 in your application. Please refer to [this
-article](/zk_installation_guide/Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
+article]({{site.baseurl}}/zk_installation_guide/Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
 for the Maven settings for ZK Framework.
 
 ## Dependency
@@ -172,11 +172,11 @@ If you have problem switching from the evaluation repository to the
 licensed one, please check the followings:
 
 - 1 **Remove evaluation repository**, [use ZK EE repository
-  instead](/zk_pivottable_essentials/Quick_Start/Using_Maven#Repository)
+  instead]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Repository)
 - 2\. [Login
-  authentication](/zk_pivottable_essentials/Quick_Start/Using_Maven#Login_authentication)
+  authentication]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Login_authentication)
 - 3\. [Delete maven local repository evaluation
-  cache](/zk_pivottable_essentials/Quick_Start/Using_Maven#Purge_local_repository_evaluation_cache)
+  cache]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Purge_local_repository_evaluation_cache)
 
 ##### Purge local repository evaluation cache
 

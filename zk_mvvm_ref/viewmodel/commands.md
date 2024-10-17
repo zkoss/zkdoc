@@ -5,7 +5,7 @@ The ViewModel is an abstraction of the View. The View is responsible for display
 
 As ViewModel acts as a role like Controller, developers can bind a UI component's event to a Command by specifying Command's name which is similar to registering an event listener. Multiple events can bind to the same Command. When a user interacts with a component (e.g. click a button), the component fire an event then the data binding mechanism triggers the execution of a Command. The Command may modify ViewModel's properties and then the information displayed on View changes.
 
-![MVVM ViewModel Command](/zk_mvvm_ref/images/Mvvm-viewmodel-command.png)
+![MVVM ViewModel Command]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-viewmodel-command.png)
 
 The Command is implemented as ViewModel's method. Because ViewModel is a POJO, in order to make a data binding mechanism to identify which method represents a Command, developers have to annotate the method with ZK-provided `@Command` annotation. We'll use the term: **Command method** to depict the specially annotated method of a ViewModel in the later section. These methods usually manipulate ViewModel's property, like deleting an item. Firing a component's event triggers the execution of the bound command, that is invoking the Command method. During executing the Command, the developer also has to specify what properties change to notify through Java annotation that we will describe in [later section](../syntax/notifychange.html)
 

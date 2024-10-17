@@ -2,7 +2,7 @@
 
 Here we use a simple scenario to explain how MVVM works in ZK. Assume that a user click a button then "Hello World" text appears. The flow is as follows:
 
-![MVVM Flow](/zk_mvvm_ref/images/SmallTalk_MVVM_HELLO_FLOW.png)
+![MVVM Flow]({{site.baseurl}}/zk_mvvm_ref/images/SmallTalk_MVVM_HELLO_FLOW.png)
 
 As stated in the paragraph earlier, the binder synchronizes data between UI and ViewModel.
 

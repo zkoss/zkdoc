@@ -4,7 +4,7 @@ model, view, and controller. It is strongly suggested to apply the MVC
 pattern to your application, not only because it is easy to develop and
 maintain, but also the performance is great.
 
-![](/zk_dev_ref/images/MVC.png)
+![]({{site.baseurl}}/zk_dev_ref/images/MVC.png)
 
 <div style="margin: 3px 3px 0; padding: 0px 30px; border-radius: 5px; border:1px solid #999;">
 

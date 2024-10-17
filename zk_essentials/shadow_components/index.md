@@ -37,7 +37,7 @@ Before using shadow elements, make sure you include the required jar - `zuti.jar
 
 ## Navigation Menu Example
 In this chapter, we will demonstrate the power of shadow components with a navigation menu example shown below:
-![](/zk_essentials/images/ze-ch7-menu.png)
+![]({{site.baseurl}}/zk_essentials/images/ze-ch7-menu.png)
 
 The menu is made by templates containing shadow components, and it can render different menu hierarchies without any change. You can switch 2 sets of menu hierarchy via the radio group on the right hand side. This example demonstrates how to reuse a common view pattern.
 

@@ -13,7 +13,7 @@ components readily at hand. You can rapidly create your own user
 interface with various ZK components. Each component's style, behavior,
 and function can be configured upon your desire.
 
-![](/get_started/images/Getstarted-simpleZK-UI.jpeg)
+![]({{site.baseurl}}/get_started/images/Getstarted-simpleZK-UI.jpeg)
 
 **ZUL**, an XML-formatted and easy-to-read language, is used to describe
 the above registration form
@@ -139,7 +139,7 @@ In the registration form above, the "Submit button" is disabled at the
 beginning, and it is only enabled (clickable) when a user checks the
 "Term of use" checkbox.
 
-![](/get_started/images/Simplezk-check-submit.gif)
+![]({{site.baseurl}}/get_started/images/Simplezk-check-submit.gif)
 
 As ZK is an event-driven framework, a user action is therefore handled
 by an event listener. ZK provides an annotation [ **@Listen** to
@@ -193,7 +193,7 @@ drag & drop, and hotkey, etc. to your application.
 What we have introduced so far is MVC pattern, which controls UI by
 components API. Another way is data binding, please see [ Get ZK Up and
 Running with
-MVVM](/get_started/Get_ZK_Up_and_Running_with_MVVM).
+MVVM]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM).
 
 # Support Responsive Design
 
@@ -203,7 +203,7 @@ Design](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Respon
 
 # Easy Backend Integration
 
-![](/get_started/images/Multi-layers.jpg)
+![]({{site.baseurl}}/get_started/images/Multi-layers.jpg)
 
 As ZK allows you to control UI via a controller on the server-side, the
 controller is, therefore, the main extension point to integrate any Java
@@ -291,6 +291,6 @@ You can get the complete source code mentioned in this page at [github](https://
 - [ Quick Start](https://www.zkoss.org/wiki/ZK_Installation_Guide/Quick_Start)
   - Start to develop with ZK with your familiar tools including Eclipse,
     IntelliJ, Maven, Gradle, or Spring Boot.
-- [ Start in MVC pattern](/get_started/Get_ZK_Up_and_Running_with_MVC)
-- [ Start in MVVM pattern](/get_started/Get_ZK_Up_and_Running_with_MVVM)
+- [ Start in MVC pattern]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVC)
+- [ Start in MVVM pattern]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM)
 - [ZK Demo](http://www.zkoss.org/zkdemo/)
