@@ -37,6 +37,12 @@ main:
 #    url: /zk_jsp_tags_essentials/before_you_start
 #  - title: "ZK Studio Essentials"
 #    url: /zk_studio_essentials/Introduction
+  - title: "Latest JavaDoc"
+    url: https://zkoss.org/javadoc/latest/zk/
+  - title: "Latest JavaScript Doc"
+    url: https://zkoss.org/javadoc/latest/jsdoc/
+  - title: Legacy APIs
+    url: http://www.zkoss.org/javadoc/olderapi.jsp
 
 
 get_started:

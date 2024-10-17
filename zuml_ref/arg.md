@@ -21,6 +21,6 @@ Notice that `arg` is available only when creating the components for the
 included page, say `my.zul`. On the other hand, all events, including
 `onCreate`, are processed later. Thus, if you want to access `arg` in
 the `onCreate`'s listener, use the `getArg` method of the
-<javadoc>org.zkoss.zk.ui.event.CreateEvent</javadoc> class.
+[org.zkoss.zk.ui.event.CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html).
 
 
