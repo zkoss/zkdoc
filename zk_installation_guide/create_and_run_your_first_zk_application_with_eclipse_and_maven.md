@@ -72,7 +72,7 @@ there are two possible workarounds:
 - Make sure *Create a simple project* is unticked in the first screen of
   the New Maven Project wizard and click **Next \>**.
 
-  ![]({{site.baseurl}}/zk_installation_guide/images/ZK_Installation_Guide_Maven_Archetype_step1.png)
+  ![]({{site.baseurl}}/zk_installation_guide/images/zk_installation_guide_maven_archetype_step1.png)
 - From the *Select an Archetype* screen, select **ZK Maven Archetype**
   from the catalog dropdown list.
 
