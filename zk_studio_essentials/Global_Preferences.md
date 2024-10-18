@@ -17,8 +17,7 @@ proxy, you may setup proxy URL and port to make it work.
 # ZK Account
 
 This page shows the activation status of your ZK account. You can
-directly activate your ZK Forum account here. ![ center \|
-600px](studio-preference-account.png " center | 600px")
+directly activate your ZK Forum account here. ![](images/studio-preference-account.png)
 
 For more information, please refer to [ Activate ZK
 Studio](ZK_Studio_Essentials/Installation#Activate_ZK_Studio)
