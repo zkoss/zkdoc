@@ -23,16 +23,16 @@ main:
 #    url: /zk_client_side_ref/Introduction
 #  - title: "ZK Charts"
 #    url: /zk_charts_essentials/Introduction
-#  - title: "ZK Pivottable"
-#    url: /zk_pivottable_essentials/Quick_Start
-#  - title: "ZK Calendar"
-#    url: /zk_calendar_essentials/Introduction
+  - title: "ZK Pivottable"
+    url: /zk_pivottable_essentials/Quick_Start
+  - title: "ZK Calendar"
+    url: /zk_calendar_essentials/Introduction
   - title: "Keikai"
     url: https://doc.keikai.io/
-#  - title: "ZK Spring Essentials"
-#    url: /zk_spring_essentials/Introduction
-#  - title: "ZATS"
-#    url: /zats_essentials/Introduction
+  - title: "ZK Spring Essentials"
+    url: /zk_spring_essentials/Introduction
+  - title: "ZATS"
+    url: /zats_essentials/Introduction
   - title: "ZK JSP Tags Essentials"
     url: /zk_jsp_tags_essentials/before_you_start
   - title: "ZK Studio Essentials"

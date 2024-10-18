@@ -60,7 +60,7 @@ UI with user-clicked date/time.
     }
 ```
 
-![](images/_creationbox-popup.jpg)
+![](images/creationbox-popup.jpg)
 
 ## Create New Item
 
@@ -92,8 +92,7 @@ to instantiate a `DefaultCalendarItem`:
 # Read
 
 To display items on a Calendar you need to create a CalendarModel,
-please refer to [ Displaying Calendar
-Items](ZK_Calendar_Essentials/Displaying_Calendar_Items).
+please refer to [Displaying Calendar Items](ZK_Calendar_Essentials/Displaying_Calendar_Items).
 
 # Update
 
