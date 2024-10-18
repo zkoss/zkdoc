@@ -21,8 +21,8 @@ main:
 #    url: /zk_component_dev_essentials/ZK_Component_Overview
 #  - title: "ZK Client-side Reference"
 #    url: /zk_client_side_ref/Introduction
-#  - title: "ZK Charts"
-#    url: /zk_charts_essentials/Introduction
+  - title: "ZK Charts"
+    url: /zk_charts_essentials/Introduction
   - title: "ZK Pivottable"
     url: /zk_pivottable_essentials/Quick_Start
   - title: "ZK Calendar"
@@ -491,7 +491,7 @@ zk_calendar_essentials:
             url: "/zk_calendar_essentials/working_with_2_1/storing_event_data_in_memory"
           - title: "Presenting Event Data"
             url: "/zk_calendar_essentials/working_with_2_1/presenting_event_data"
-zk_chart_essentials:
+zk_charts_essentials:
   - title: "Introduction"
     url: "/zk_chart_essentials/introduction"
   - title: "Example Code"

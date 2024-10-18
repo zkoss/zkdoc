@@ -47,10 +47,10 @@ defaults:
       sidebar:
         nav: "zk_calendar_essentials"
   - scope:
-      path: "zk_chart_essentials"
+      path: "zk_charts_essentials"
     values:
       sidebar:
-        nav: "zk_chart_essentials"
+        nav: "zk_charts_essentials"
   - scope:
       path: "zk_client_side_ref"
     values:
