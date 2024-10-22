@@ -1,6 +1,8 @@
 **Syntax:**
 
-<device-type>*`a_type`*</device-type>
+```xml
+<device-type>a_type</device-type>
+```
 
 ` [Required for a language definition]`
 

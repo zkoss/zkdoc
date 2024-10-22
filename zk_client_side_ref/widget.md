@@ -1,6 +1,7 @@
 **Syntax:**
-
-<widget name="''widgetName''"/>
+```xml
+<widget name="widgetName"/>
+```
 
 It specifies the widget's name.
 

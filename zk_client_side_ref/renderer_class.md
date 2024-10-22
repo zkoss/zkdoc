@@ -1,8 +1,9 @@
 **Syntax:**
+```xml
+<renderer-class>a_class</renderer-class>
+```
 
-<renderer-class>`''a_class'`</renderer-class>
-
-`[Required for a language definition]`
+`[Required for a language definition]`
 
 It specifies the Java class used to render a page for the given
 language. It must implement

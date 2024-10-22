@@ -159,7 +159,7 @@ need to override a Widget's `getDragMessage_()` and return a text, see
 drag-and-drop utilities. By customizing it, all widgets in the whole
 application will be affected.
 
-For example, if you would like to customize ''ghosting" of the DOM
+For example, if you would like to customize ghosting" of the DOM
 element being dragged, you can override
 <javadoc method="ghost(zk.Draggable, _global_.Offset, _global_.String)" directory="jsdoc">zk.DnD</javadoc>
 as follows.

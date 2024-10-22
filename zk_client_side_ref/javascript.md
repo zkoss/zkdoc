@@ -1,12 +1,15 @@
 **Syntax:**
 
-`<javascript package="`*`pkg_name`*`" [merge="`**`false`**`|true"]/>`  
-<javascript package="''pkg_name''" merge="''a_package_to_merge_to''"/>  
-`<javascript package="`*`pkg_name`*`" [ondemand="`**`false`**`|true"/>`  
-<javascript src="''a_uri''"/>  
+
+```xml
+<javascript package="`pkg_name`" [merge="false|true"]/>  
+<javascript package="pkg_name" merge="a_package_to_merge_to"/>
+<javascript package="`pkg_name`" [ondemand="false|true"/>  
+<javascript src="a_uri"/>  
 <javascript>  
-*`js_code`*  
+js_code  
 </javascript>
+```
 
 It specifies the JavaScript package or file that has to be loaded to the
 client. It could also specify the content (the JavaScript code snippet)

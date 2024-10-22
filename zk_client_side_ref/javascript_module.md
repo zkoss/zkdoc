@@ -1,6 +1,8 @@
 **Syntax:**
 
-<javascript-module name="''name''" version="''version''"/>
+```xml
+<javascript-module name="name" version="version"/>
+```
 
 It specifies the version of a JavaScript module. The specified version
 will be associated with the URL used to load Javascript packages (such

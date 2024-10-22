@@ -1,8 +1,10 @@
 **Syntax:**
 
+```xml
 <zscript language="Java|Groovy|Python|Ruby|JavaScript">  
-` `*`the code snippet`*  
+ the code snippet  
 </zscript>
+```
 
 It specifies the zscript code to be evaluated when the corresponding
 interpreter being loaded by a page. In other words, it specified the

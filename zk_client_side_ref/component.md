@@ -4,35 +4,35 @@
 
 ``` xml
  <component>
-   <component-name>''a_name''</component-name>
-   <extends>''a_name''</extends>
-   <component-class>''a_class_name''</component-class>
-   <widget-class>''a_class_name''</widget-class>
+   <component-name>a_name</component-name>
+   <extends>a_name</extends>
+   <component-class>a_class_name</component-class>
+   <widget-class>a_class_name</widget-class>
  
    <mold>
-     <mold-name>''a_mold''</mold-name>
-     <mold-uri>''a_uri''</mold-uri>
+     <mold-name>a_mold</mold-name>
+     <mold-uri>a_uri</mold-uri>
    </mold>
  
-   <text-as>''a_property_name''</text-as>
+   <text-as>a_property_name</text-as>
  
    <property>
-     <property-name>''a_name''</property-name>
-     <property-value>''a_value''</property-value>
+     <property-name>a_name</property-name>
+     <property-value>a_value</property-value>
    </property>
  
    <annotation>
-     <annotation-name>''an_annotation_name''</annotation-name>
-     <property-name>''a_property_name''</property-name>
+     <annotation-name>an_annotation_name</annotation-name>
+     <property-name>a_property_name</property-name>
      <attribute>
-       <attribute-name>''an_annotation_attr_name''</attribute-name>
-       <attribute-value>''an_annotation_attr_value''</attribute-value>
+       <attribute-name>an_annotation_attr_name</attribute-name>
+       <attribute-value>an_annotation_attr_value</attribute-value>
      </attribute>
    </annotation>
  
     <custom-attribute>
-     <attribute-name>''a_custom_attr_name''</attribute-name>
-     <attribute-value>''a_custom_attr_value''</attribute-value>
+     <attribute-name>a_custom_attr_name</attribute-name>
+     <attribute-value>a_custom_attr_value</attribute-value>
    </custom-attribute>
  </component>
 ```

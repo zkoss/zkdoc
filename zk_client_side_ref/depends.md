@@ -1,6 +1,8 @@
 **Syntax:**
 
-<depends>*`a_list_of_addon_names`*</depends>
+```xml
+<depends>a_list_of_addon_names</depends>
+```
 
 It specifies which language (e.g. `zul` or `zhtml`) or language addon
 (e.g. `zkex`, `zkmax`) this addon depends on. If specified, this addon

@@ -22,7 +22,7 @@ widgets' mold js are bundled with ZK jar files under the path:
 - `[ZK_JAR]`: could be `zul.jar, zkex.jar, zkmax.jar`
 - `[WIDGET_PACKAGE]`: a widget's package folder like java package e.g.
   the mold js of `zul.messh.paging` is at `zul/mesh`
-- `*.js`: file name is the widget name e.g. `paging.js`
+- .js`: file name is the widget name e.g. `paging.js`
 
 Copy the built-in mold js to your project's same path and rename to a
 readable name, e.g. in a maven project, you need to put `paging.js`

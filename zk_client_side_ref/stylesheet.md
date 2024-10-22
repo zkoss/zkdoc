@@ -1,9 +1,11 @@
 **Syntax:**
 
-<stylesheet href="''a_uri''" type="text/css"/>  
+```xml
+<stylesheet href="a_uri" type="text/css"/>  
 <stylesheet>  
-` `*`css_definitions`*  
+` `css_definitions  
 </stylesheet>
+```
 
 It specifies a CSS file that should be loaded to the client, or the CSS
 content. Notice that, if specified, the CSS file is always loaded.

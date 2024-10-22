@@ -1,6 +1,8 @@
 **Syntax:**
 
-<namespace>*`a_namespace`*</namespace>
+```xml
+<namespace>a_namespace</namespace>
+```
 
 ` [Required for a language definition]`
 

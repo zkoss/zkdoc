@@ -1,10 +1,6 @@
 # Overview
 
-<figure>
-<img src="images/ZKComDevEss_widget_component_application.png
-title="ZKComDevEss_widget_component_application.png" />
-<figcaption>ZKComDevEss_widget_component_application.png</figcaption>
-</figure>
+![](images/ZKComDevEss_widget_component_application.png)
 
 A UI object visible to a user at the client is hosted by a JavaScript
 object[^1] called a widget

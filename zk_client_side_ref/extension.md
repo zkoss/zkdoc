@@ -1,6 +1,8 @@
 **Syntax:**
 
-<extension>*`a_ext`*</extension>
+```xml
+<extension>a_ext</extension>
+```
 
 `[Required for a language definition]`
 

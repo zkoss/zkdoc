@@ -1,8 +1,10 @@
 **Syntax:**
 
+```xml
 <macro-template>  
-`  `<macro-class>*`a_class_represents_macro`*</macro-class>  
+    <macro-class>a_class_represents_macro</macro-class>  
 </macro-template>
+```
 
 It specifies the class used to instantiate a macro component.
 

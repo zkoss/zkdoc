@@ -1,9 +1,11 @@
 **Syntax:**
 
+```xml
 <label-template>  
-`  `<component-name>*`a_component_name`*</component-name>  
-`  `<component-attribute>*`a_property`*</component-attribute>  
+    <component-name>a_component_name</component-name>  
+    <component-attribute>a_property</component-attribute>  
 </label-template>
+```
 
 It specifies how to instantiate a label. When [the
 text](ZUML_Reference/ZUML/Texts) is found in a ZUML document,

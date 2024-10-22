@@ -1,10 +1,12 @@
 **Syntax:**
 
+```xml
 <version>  
-`   `<version-class>*`a_class`*</version-class>  
-`   `<version-uid>*`a_version`*</version-uid>  
-`   `<zk-version>*`a_version`*</zk-version>  
+    <version-class>a_class</version-class>  
+    <version-uid>a_version</version-uid>  
+    <zk-version>a_version</zk-version>  
 </version>
+```
 
 `[Optional]`
 

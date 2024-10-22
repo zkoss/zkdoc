@@ -1,9 +1,11 @@
 **Syntax:**
 
+```xml
 <library-property>  
-`  `<name>*`a_name`*</name>  
-`  `<value>*`a_value`*</value>  
+    <name>a_name</name>  
+    <value>a_value</value>  
 </library-property>
+```
 
 ` [Optional]`
 

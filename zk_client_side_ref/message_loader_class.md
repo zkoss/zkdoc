@@ -1,7 +1,8 @@
-
-
 **Syntax:**
+
+```xml
 <message-loader-class>*class.qualified.name*</message-loader-class>
+```
 
 Specifies an additional message loader class to load extra messages or
 customize default msgzk or msgzul entries. If the message loader declare

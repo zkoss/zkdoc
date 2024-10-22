@@ -1,8 +1,10 @@
 **Syntax:**
 
+```xml
 <native-template>  
-`  `<native-class>*`a_class_represents_native`*</native-class>  
+    <native-class>a_class_represents_native</native-class>  
 </native-template>
+```
 
 It specifies the class used to instantiate a native component. The
 native component is used only when ZK Loader is rendering a ZUML

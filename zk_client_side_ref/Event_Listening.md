@@ -28,7 +28,7 @@ declaring a server-side listener, the steps are:
     <http://www.zkoss.org/2005/zk/client> (aka., client)
 2.  write your logic in JavaScript
 
-'''Implementation Notes:
+'Implementation Notes:
 
 - `this` references to the event target widget.
 - Use `this.$f()` to reference fellow widgets

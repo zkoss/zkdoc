@@ -1,6 +1,8 @@
 **syntax**
 
-<function class="''foo.MyClass''" singature="''java.lang.String'' ''funcName''(''Class0'', ''Class1'')"/>
+```xml
+<function class="foo.MyClass" singature="java.lang.String funcName(Class0, Class1)"/>
+```
 
 Specifies a static method (aka., a function) that should be called when
 a WPD file is interpreted. The returned string will be generated

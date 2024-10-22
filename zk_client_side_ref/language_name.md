@@ -1,6 +1,8 @@
 **Syntax:**
 
-<language-name>*`a_name`*</language-name>
+```xml
+<language-name>a_name</language-name>
+```
 
 `[Required]`
 
