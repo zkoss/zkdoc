@@ -25,7 +25,7 @@ client, representing an UI object to interact with the user. To interact
 with the user, a widget has a visual appearance and handle events
 happening at the client.
 
-![](images/_ChangeLabelFlow.png)
+![](images/ChangeLabelFlow.png)
 
 A component and a widget work hand-in-hand to deliver UI to an user and
 to notify the application about a user's activity, such as clicking and
@@ -39,7 +39,7 @@ user clicks the button widget, the onClick event will be sent back to
 the server and notify the application.
 
 <figure>
-<img src="images/_WidgetAndComponent2.png
+<img src="images/WidgetAndComponent2.png
 title="Though not required, application can run at the client to control widgets directly" />
 <figcaption>Though not required, application can run at the client to
 control widgets directly</figcaption>
@@ -54,7 +54,7 @@ order of columns of a grid at the client, while the application running
 at the server handle the reloading of the whole content of the grid.
 
 <figure>
-<img src="images/_WidgetWithoutComponent.png
+<img src="images/WidgetWithoutComponent.png
 title="Widget running without component" />
 <figcaption>Widget running without component</figcaption>
 </figure>
@@ -135,7 +135,7 @@ method of the peer widget.</p></td>
 
 # Widget and DOM
 
-![](images/_WidgetComponentDOM.png)
+![](images/WidgetComponentDOM.png)
 
 A widget is an UI object at the client. Like Swing's component, creating
 a widget doesn't make it visible to the user. Rather, you have to attach

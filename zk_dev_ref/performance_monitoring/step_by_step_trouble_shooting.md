@@ -463,17 +463,13 @@ notice on your CPU, as the thread is just sleeping.
 
 Starting the sampler will show the actual "Hot Spots" like this.
 
-![]({{site.baseurl}}/zk_dev_ref/images/_sampler-result.png)
+![]({{site.baseurl}}/zk_dev_ref/images/sampler-result.png)
 
 The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
 the method name.
 
-<figure>
-<img src="images/_sampler-snapshot-combined.png
-title="_sampler-snapshot-combined.png" width="900" />
-<figcaption>_sampler-snapshot-combined.png</figcaption>
-</figure>
+![]({{site.baseUrl}}/images/sampler-snapshot-combined.png)
 
 In the call tree we actually see what is happening inside in more
 detail:
@@ -706,7 +702,7 @@ you concern instead of irrelevant classes.
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![]({{site.baseurl}}/zk_dev_ref/images/_hotSpots.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/hotSpots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -714,4 +710,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![]({{site.baseurl}}/zk_dev_ref/images/_forwardCall.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/forwardCall.jpg)

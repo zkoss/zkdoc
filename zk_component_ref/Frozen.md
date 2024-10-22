@@ -17,7 +17,7 @@ scroll starting position.
 
 # Example
 
-![](images/_ZKComRef_Frozen_Example.png)
+![](images/ZKComRef_Frozen_Example.png)
 
 ``` xml
 <grid width="600px">

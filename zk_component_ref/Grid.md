@@ -989,7 +989,7 @@ developers to add more information on each row. For example,
 For example,
 
 <figure>
-<img src="images/_ZKComRef_Grid_Columns_Menu.png
+<img src="images/ZKComRef_Grid_Columns_Menu.png
 title="_ZKComRef_Grid_Columns_Menu.png" />
 <figcaption>_ZKComRef_Grid_Columns_Menu.png</figcaption>
 </figure>
@@ -1019,7 +1019,7 @@ show an ungroup icon for user to reset the group. {% include edition-availabilit
 include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="images/_ZKComRef_Grid_Columns_Menu_Ungroup.PNG
+<img src="images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG
 title="_ZKComRef_Grid_Columns_Menu_Ungroup.PNG" />
 <figcaption>_ZKComRef_Grid_Columns_Menu_Ungroup.PNG</figcaption>
 </figure>

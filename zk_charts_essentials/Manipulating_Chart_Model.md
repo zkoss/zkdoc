@@ -1067,11 +1067,7 @@ public class ColumnRangeChartComposer extends SelectorComposer<Div> {
 
 ## Error Bar Chart
 
-<figure>
-<img src="images/_ErrorbarChartDemo.png title="_ErrorbarChartDemo.png"
-width="480" height="300" />
-<figcaption>_ErrorbarChartDemo.png</figcaption>
-</figure>
+![](images/ErrorbarChartDemo.png)
 
 ``` xml
 <div apply="demo.ErrorBarChartComposer">

@@ -256,7 +256,7 @@ the progress of a task.
 
 You can control a loadingbar with the LoadingbarControl.
 
-![]({{site.baseurl}}/zk_dev_ref/images/_Loadingbar.gif)
+![]({{site.baseurl}}/zk_dev_ref/images/Loadingbar.gif)
 
 ``` java
 // create a LoadingbarControl for control the loadingbar
@@ -275,7 +275,7 @@ loadingbarCtrl.start(20, "top", false);
 
 You can turn on/off the indeterminate animation:
 
-![]({{site.baseurl}}/zk_dev_ref/images/_Loadingbar2.gif)
+![]({{site.baseurl}}/zk_dev_ref/images/Loadingbar2.gif)
 
 ``` java
 loadingbarCtrl.update(true); // set loadingbar indeterminate true

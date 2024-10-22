@@ -1187,7 +1187,7 @@ Listbox's header becomes floating and sticky on the top of the page.
 For example, {% include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="images/_ZKComRef_Listbox_Columns_Menu.PNG
+<img src="images/ZKComRef_Listbox_Columns_Menu.PNG
 title="_ZKComRef_Listbox_Columns_Menu.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu.PNG</figcaption>
 </figure>
@@ -1217,7 +1217,7 @@ show an ungroup icon for user to reset the group. {% include edition-availabilit
 include version-badge.html version=6.5.0 %}
 
 <figure>
-<img src="images/_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG
+<img src="images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG
 title="_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu_Ungroup.PNG</figcaption>
 </figure>

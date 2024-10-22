@@ -70,7 +70,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 ### Auto
 
 <figure>
-<img src="images/_ZKComRef_Listbox_Columns_Menu.PNG
+<img src="images/ZKComRef_Listbox_Columns_Menu.PNG
 title="_ZKComRef_Listbox_Columns_Menu.PNG" />
 <figcaption>_ZKComRef_Listbox_Columns_Menu.PNG</figcaption>
 </figure>
