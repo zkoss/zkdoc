@@ -17,8 +17,8 @@ main:
 #    url: /zk_config_ref/web.xml
 #  - title: "ZK Style Customization Guide"
 #    url: /zk_style_customization_guide/Introduction
-#  - title: "ZK Component Development Essentials"
-#    url: /zk_component_dev_essentials/ZK_Component_Overview
+  - title: "ZK Component Development Essentials"
+    url: /zk_component_dev_essentials/ZK_Component_Overview
   - title: "ZK Client-side Reference"
     url: /zk_client_side_ref/Introduction
   - title: "ZK Charts"
@@ -751,7 +751,7 @@ zk_client_side_ref:
         url: "/zk_client_side_ref/widget"
 zk_component_dev_essentials:
   - title: "ZK Component Overview"
-    url: "f/zk_component_overview"
+    url: "/zk_component_overview"
     children:
       - title: "What is a ZK component"
         url: "/zk_component_dev_essentials/what_is_a_zk_component"
