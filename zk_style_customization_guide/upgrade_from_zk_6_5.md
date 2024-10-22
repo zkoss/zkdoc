@@ -5,8 +5,6 @@ for all components in ZK 7 instead of the **content-box** model. It
 means a specified CSS property - width/min-width and height/min-height -
 on the element will consider border width.
 
-<div style="margin-left: 10px">
-
 ## Upgrade Example
 
 In ZK 6.5, assuming you have specified a DIV with a fixed width, `102px`
@@ -49,7 +47,6 @@ their default mold to improve performance. However, you do not need to
 change your Component.setMold() code since ZK handles this
 transparently.
 
-<div style="margin-left: 10px">
 
 ## Upgrade sample
 
@@ -86,7 +83,6 @@ to modify the CSS class names (from z-component-mold to z-component) in
 most situations. Check [ Tip 2 Appendix](#Tip_2_Appendix) for
 the complete list of affected components.
 
-</div>
 
 # Tip 3: Component Zclass
 
@@ -110,7 +106,6 @@ For example,
 Then, if you want to customize the content part of window for all modes,
 simply override CSS class *z-window-content*.
 
-<div style="margin-left: 10px">
 
 ## Upgrade sample
 
@@ -153,7 +148,6 @@ To adapt this change for ZK 7, check [ Tip 3
 Appendix](#Tip_3_Appendix) for the complete list of related
 changes eliminating CSS classes.
 
-</div>
 
 # Tip 4: DOM Structure
 
@@ -163,7 +157,6 @@ therefore, the complex 3 x 3 grid structure is no longer needed.
 
 ![](images/Button2.png)
 
-<div style="margin-left: 10px">
 
 ## Upgrade Sample
 
@@ -226,7 +219,6 @@ structure first, then move your existing customization style into the
 new CSS class. Check [ Tip 4 Appendix](#Tip_4_Appendix) for
 the complete list that removes the 3 x 3 (or 3x1) grid structure..
 
-</div>
 
 # Tip 5: CSS Class Naming
 
@@ -275,8 +267,7 @@ like **\[disabled\]** to make it more intuitive.
 
 ## Upgrade Sample
 
-In this [
-smalltalk](Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2)
+In this [smalltalk](Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2)
 we demonstrate how to customize comboitem style when it is selected by
 overriding CSS class *z-comboitem-seld* in ZK 6.5 as follows:
 
@@ -307,7 +298,6 @@ z-component-*shortname* to z-component-*fullname*). Check [ Tip 5
 Appendix](#Tip_5_Appendix) for the complete list of ZK 7 CSS
 class naming rule.
 
-</div>
 
 # Tip 6: Image Icons and Font Icons
 
@@ -319,7 +309,6 @@ use font icons in ZK application by simply replace prefix **fa** to
 **z-icon**, for example, *z-icon-caret-up* represents a [triangle arrow
 up](http://fortawesome.github.io/Font-Awesome/icon/caret-up/) font icon.
 
-<div style="margin-left:10px">
 
 ## Upgrade Sample
 
@@ -357,7 +346,6 @@ or
 }
 ```
 
-</div>
 
 # Tip 7: Scrollbar
 
@@ -367,7 +355,6 @@ style. Here we will demonstrate how to style it. Or, if you do not wish
 to custom your scrollbar, we will also demonstrate how to disable it and
 use browser default scrollbar instead.
 
-<div style="margin-left:10px">
 
 ## Customize Scrollbar Style
 
@@ -403,8 +390,8 @@ to slide indicator. Therefore, we need to override CSS class as follows:
 
 You can check the customized result.
 
-<File:ZK7_scrollbar_1.png> \| ZK 7 default scrollbar style
-<File:ZK7_scrollbar_2.png> \| Customized scrollbar style
+| ![](images/ZK7_scrollbar_1.png) | ZK 7 default scrollbar style |
+| ![](images/ZK7_scrollbar_2.png) | Customized scrollbar style |
 
 ## Use Browser Default scrollbar
 
@@ -426,20 +413,20 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 mold</p></th>
-<th><p>| ZK 7 mold</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 mold</p></th>
+<th><p> ZK 7 mold</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Button</p></td>
-<td><p>| os<br />
+<td><p> Button</p></td>
+<td><p> os<br />
 trendy</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Textbox<br />
+<td><p> Textbox<br />
 Intbox<br />
 Decimalbox<br />
 Longbox<br />
@@ -450,21 +437,21 @@ Datebox<br />
 Timebox<br />
 Spinner<br />
 Doublespinner</p></td>
-<td><p>| default<br />
+<td><p> default<br />
 rounded</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Splitter</p></td>
-<td><p>| default<br />
+<td><p> Splitter</p></td>
+<td><p> default<br />
 os</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Tabbox</p></td>
-<td><p>| accordion<br />
+<td><p> Tabbox</p></td>
+<td><p> accordion<br />
 accordion-lite</p></td>
-<td><p>| accordion</p></td>
+<td><p> accordion</p></td>
 </tr>
 </tbody>
 </table>
@@ -474,20 +461,20 @@ accordion-lite</p></td>
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 mold</p></th>
-<th><p>| ZK 7 mold</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 mold</p></th>
+<th><p> ZK 7 mold</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Button</p></td>
-<td><p>| os<br />
+<td><p> Button</p></td>
+<td><p> os<br />
 trendy</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Textbox<br />
+<td><p> Textbox<br />
 Intbox<br />
 Decimalbox<br />
 Longbox<br />
@@ -498,21 +485,21 @@ Datebox<br />
 Timebox<br />
 Spinner<br />
 Doublespinner</p></td>
-<td><p>| default<br />
+<td><p> default<br />
 rounded</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Splitter</p></td>
-<td><p>| default<br />
+<td><p> Splitter</p></td>
+<td><p> default<br />
 os</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Tabbox</p></td>
-<td><p>| accordion<br />
+<td><p> Tabbox</p></td>
+<td><p> accordion<br />
 accordion-lite</p></td>
-<td><p>| accordion</p></td>
+<td><p> accordion</p></td>
 </tr>
 </tbody>
 </table>
@@ -522,76 +509,76 @@ accordion-lite</p></td>
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 sample</p></th>
-<th><p>| ZK 7 sample</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 sample</p></th>
+<th><p> ZK 7 sample</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Splitter</p></td>
-<td><p>| z-splitter-hor<br />
+<td><p> Splitter</p></td>
+<td><p> z-splitter-hor<br />
 z-splitter-ver</p></td>
-<td><p>| z-splitter z-splitter-horizontal<br />
+<td><p> z-splitter z-splitter-horizontal<br />
 z-splitter z-splitter-vertical</p></td>
 </tr>
 <tr class="even">
-<td><p>| Slider</p></td>
-<td><p>| z-slider-hor<br />
+<td><p> Slider</p></td>
+<td><p> z-slider-hor<br />
 z-slider-ver</p></td>
-<td><p>| z-slider z-slider-horizontal<br />
+<td><p> z-slider z-slider-horizontal<br />
 z-slider z-slider-vertical</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Menubar</p></td>
-<td><p>| z-menubar-hor<br />
+<td><p> Menubar</p></td>
+<td><p> z-menubar-hor<br />
 z-menubar-ver</p></td>
-<td><p>| z-menubar z-menubar-horizontal<br />
+<td><p> z-menubar z-menubar-horizontal<br />
 z-menubar z-menubar-vertical</p></td>
 </tr>
 <tr class="even">
-<td><p>| Toolbar</p></td>
-<td><p>| z-toolbar-tabs</p></td>
-<td><p>| z-toolbar z-toolbar-tabs</p></td>
+<td><p> Toolbar</p></td>
+<td><p> z-toolbar-tabs</p></td>
+<td><p> z-toolbar z-toolbar-tabs</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Combobutton</p></td>
-<td><p>| z-combobutton-toolbar</p></td>
-<td><p>| z-combobutton z-combobutton-toolbar</p></td>
+<td><p> Combobutton</p></td>
+<td><p> z-combobutton-toolbar</p></td>
+<td><p> z-combobutton z-combobutton-toolbar</p></td>
 </tr>
 <tr class="even">
-<td><p>| Separator</p></td>
-<td><p>| z-separator-horizontal<br />
+<td><p> Separator</p></td>
+<td><p> z-separator-horizontal<br />
 z-separator-vertical</p></td>
-<td><p>| z-separator z-separator-horizontal<br />
+<td><p> z-separator z-separator-horizontal<br />
 z-separator z-separator-vertical</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Groupbox</p></td>
-<td><p>| z-groupbox-3d</p></td>
-<td><p>| z-groupbox z-groupbox-3d</p></td>
+<td><p> Groupbox</p></td>
+<td><p> z-groupbox-3d</p></td>
+<td><p> z-groupbox z-groupbox-3d</p></td>
 </tr>
 <tr class="even">
-<td><p>| Tabbox</p></td>
-<td><p>| z-tabbox<br />
+<td><p> Tabbox</p></td>
+<td><p> z-tabbox<br />
 <br />
 z-tabbox-ver<br />
 <br />
 z-tabbox-accordion</p></td>
-<td><p>| z-tabbox z-tabbox-top<br />
+<td><p> z-tabbox z-tabbox-top<br />
 z-tabbox z-tabbox-bottom<br />
 z-tabbox z-tabbox-left<br />
 z-tabbox z-tabbox-right<br />
 z-tabbox z-tabbox-accordion</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Window</p></td>
-<td><p>| z-window-embedded<br />
+<td><p> Window</p></td>
+<td><p> z-window-embedded<br />
 z-window-modal<br />
 z-window-highlighted<br />
 z-window-overlapped<br />
 z-window-popup</p></td>
-<td><p>| z-window z-window-embedded<br />
+<td><p> z-window z-window-embedded<br />
 z-window z-window-modal<br />
 z-window z-window-highlighted<br />
 z-window z-window-overlapped<br />
@@ -605,20 +592,20 @@ z-window z-window-popup</p></td>
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 mold</p></th>
-<th><p>| ZK 7 mold</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 mold</p></th>
+<th><p> ZK 7 mold</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Button</p></td>
-<td><p>| os<br />
+<td><p> Button</p></td>
+<td><p> os<br />
 trendy</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Textbox<br />
+<td><p> Textbox<br />
 Intbox<br />
 Decimalbox<br />
 Longbox<br />
@@ -629,21 +616,21 @@ Datebox<br />
 Timebox<br />
 Spinner<br />
 Doublespinner</p></td>
-<td><p>| default<br />
+<td><p> default<br />
 rounded</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Splitter</p></td>
-<td><p>| default<br />
+<td><p> Splitter</p></td>
+<td><p> default<br />
 os</p></td>
-<td><p>| default</p></td>
+<td><p> default</p></td>
 </tr>
 <tr class="even">
-<td><p>| Tabbox</p></td>
-<td><p>| accordion<br />
+<td><p> Tabbox</p></td>
+<td><p> accordion<br />
 accordion-lite</p></td>
-<td><p>| accordion</p></td>
+<td><p> accordion</p></td>
 </tr>
 </tbody>
 </table>
@@ -653,76 +640,76 @@ accordion-lite</p></td>
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 sample</p></th>
-<th><p>| ZK 7 sample</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 sample</p></th>
+<th><p> ZK 7 sample</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Splitter</p></td>
-<td><p>| z-splitter-hor<br />
+<td><p> Splitter</p></td>
+<td><p> z-splitter-hor<br />
 z-splitter-ver</p></td>
-<td><p>| z-splitter z-splitter-horizontal<br />
+<td><p> z-splitter z-splitter-horizontal<br />
 z-splitter z-splitter-vertical</p></td>
 </tr>
 <tr class="even">
-<td><p>| Slider</p></td>
-<td><p>| z-slider-hor<br />
+<td><p> Slider</p></td>
+<td><p> z-slider-hor<br />
 z-slider-ver</p></td>
-<td><p>| z-slider z-slider-horizontal<br />
+<td><p> z-slider z-slider-horizontal<br />
 z-slider z-slider-vertical</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Menubar</p></td>
-<td><p>| z-menubar-hor<br />
+<td><p> Menubar</p></td>
+<td><p> z-menubar-hor<br />
 z-menubar-ver</p></td>
-<td><p>| z-menubar z-menubar-horizontal<br />
+<td><p> z-menubar z-menubar-horizontal<br />
 z-menubar z-menubar-vertical</p></td>
 </tr>
 <tr class="even">
-<td><p>| Toolbar</p></td>
-<td><p>| z-toolbar-tabs</p></td>
-<td><p>| z-toolbar z-toolbar-tabs</p></td>
+<td><p> Toolbar</p></td>
+<td><p> z-toolbar-tabs</p></td>
+<td><p> z-toolbar z-toolbar-tabs</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Combobutton</p></td>
-<td><p>| z-combobutton-toolbar</p></td>
-<td><p>| z-combobutton z-combobutton-toolbar</p></td>
+<td><p> Combobutton</p></td>
+<td><p> z-combobutton-toolbar</p></td>
+<td><p> z-combobutton z-combobutton-toolbar</p></td>
 </tr>
 <tr class="even">
-<td><p>| Separator</p></td>
-<td><p>| z-separator-horizontal<br />
+<td><p> Separator</p></td>
+<td><p> z-separator-horizontal<br />
 z-separator-vertical</p></td>
-<td><p>| z-separator z-separator-horizontal<br />
+<td><p> z-separator z-separator-horizontal<br />
 z-separator z-separator-vertical</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Groupbox</p></td>
-<td><p>| z-groupbox-3d</p></td>
-<td><p>| z-groupbox z-groupbox-3d</p></td>
+<td><p> Groupbox</p></td>
+<td><p> z-groupbox-3d</p></td>
+<td><p> z-groupbox z-groupbox-3d</p></td>
 </tr>
 <tr class="even">
-<td><p>| Tabbox</p></td>
-<td><p>| z-tabbox<br />
+<td><p> Tabbox</p></td>
+<td><p> z-tabbox<br />
 <br />
 z-tabbox-ver<br />
 <br />
 z-tabbox-accordion</p></td>
-<td><p>| z-tabbox z-tabbox-top<br />
+<td><p> z-tabbox z-tabbox-top<br />
 z-tabbox z-tabbox-bottom<br />
 z-tabbox z-tabbox-left<br />
 z-tabbox z-tabbox-right<br />
 z-tabbox z-tabbox-accordion</p></td>
 </tr>
 <tr class="odd">
-<td><p>| Window</p></td>
-<td><p>| z-window-embedded<br />
+<td><p> Window</p></td>
+<td><p> z-window-embedded<br />
 z-window-modal<br />
 z-window-highlighted<br />
 z-window-overlapped<br />
 z-window-popup</p></td>
-<td><p>| z-window z-window-embedded<br />
+<td><p> z-window z-window-embedded<br />
 z-window z-window-modal<br />
 z-window z-window-highlighted<br />
 z-window z-window-overlapped<br />
@@ -736,15 +723,15 @@ z-window z-window-popup</p></td>
 <table>
 <thead>
 <tr class="header">
-<th><p>| Component</p></th>
-<th><p>| ZK 6.5 DOM structure</p></th>
-<th><p>| ZK 7 DOM structure</p></th>
+<th><p> Component</p></th>
+<th><p> ZK 6.5 DOM structure</p></th>
+<th><p> ZK 7 DOM structure</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>| Button</p></td>
-<td><p>| Trendy mold</p>
+<td><p> Button</p></td>
+<td><p> Trendy mold</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-button&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;table&gt;</span></span>
@@ -766,13 +753,13 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/tr&gt;</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/table&gt;</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/span&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-button&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td><p>| Caption</p></td>
-<td><p>|</p>
+<td><p> Caption</p></td>
+<td>
 <div class="sourceCode" id="cb3"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;table</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-caption&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;tr&gt;</span></span>
@@ -780,15 +767,15 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;td</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-caption-r&quot;</span><span class="kw">&gt;&lt;/td&gt;</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/tr&gt;</span></span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/table&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb4"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-caption&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-caption-content&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="odd">
-<td><p>| Combobutton</p></td>
-<td><p>|</p>
+<td><p> Combobutton</p></td>
+<td>
 <div class="sourceCode" id="cb5"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-combobutton&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;table&gt;</span></span>
@@ -814,7 +801,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="
 <span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/tr&gt;</span></span>
 <span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/table&gt;</span></span>
 <span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/span&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb6"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-combobutton&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;span</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-combobutton-content&quot;</span><span class="kw">&gt;</span></span>
@@ -826,24 +813,24 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb6-1"><a href="
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/span&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td><p>| Textbox<br />
+<td><p> Textbox<br />
 Intbox<br />
 Decimalbox<br />
 Longbox<br />
 Doublebox</p></td>
-<td><p>| rounded mold</p>
+<td><p> rounded mold</p>
 <div class="sourceCode" id="cb7"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-component-rounded&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;input</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-component-rounded-inp&quot;</span> <span class="kw">/&gt;</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;i</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-component-rounded-right-edge&quot;</span> <span class="kw">/&gt;</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/i&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb8"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;input</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-component&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="odd">
-<td><p>| Groupbox</p></td>
-<td><p>|</p>
+<td><p> Groupbox</p></td>
+<td>
 <div class="sourceCode" id="cb9"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-groupbox&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-groupbox-tl&quot;</span><span class="kw">&gt;</span></span>
@@ -858,7 +845,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb9-1"><a href="
 <span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-groupbox-cnt&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb10"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-groupbox&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-groupbox-header&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
@@ -866,8 +853,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb10-1"><a href=
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td><p>| Panel</p></td>
-<td><p>|</p>
+<td><p> Panel</p></td>
+<td>
 <div class="sourceCode" id="cb11"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-panel&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-panel-tl&quot;</span><span class="kw">&gt;</span></span>
@@ -898,7 +885,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href=
 <span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb12"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-panel&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-panel-head&quot;</span><span class="kw">&gt;</span></span>
@@ -910,8 +897,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href=
 <span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="odd">
-<td><p>| Window</p></td>
-<td><p>|</p>
+<td><p> Window</p></td>
+<td>
 <div class="sourceCode" id="cb13"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-window&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-window-tl&quot;</span><span class="kw">&gt;</span></span>
@@ -935,7 +922,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href=
 <span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-window-br&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
 <span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb14"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-window&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-window-header&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
@@ -943,8 +930,8 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href=
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td><p>| Tab</p></td>
-<td><p>| horizontal / vertical orient</p>
+<td><p> Tab</p></td>
+<td><p> horizontal / vertical orient</p>
 <div class="sourceCode" id="cb15"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;li</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-tab&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;a</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-tab-close&quot;</span><span class="kw">&gt;&lt;/a&gt;</span></span>
@@ -954,7 +941,7 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb15-1"><a href=
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
 <span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/li&gt;</span></span></code></pre></div></td>
-<td><p>|</p>
+<td>
 <div class="sourceCode" id="cb16"><pre
 class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;li</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-tab&quot;</span><span class="kw">&gt;</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;a</span> <span class="er">class</span><span class="ot">=</span><span class="st">&quot;z-tab-content&quot;</span><span class="kw">&gt;</span></span>
@@ -968,53 +955,53 @@ class="sourceCode html"><code class="sourceCode html"><span id="cb16-1"><a href=
 
 # Tip 5 Appendix
 
-| \| Category         | \| ZK 6.5 class name | \| ZK 7 class name                                                           |
-|---------------------|----------------------|------------------------------------------------------------------------------|
-| Layout Elements     | \| -outer            | \| -outer                                                                    |
-|                     | \| -body             | \| -body                                                                     |
-|                     | \| -header           | \| -header                                                                   |
-|                     | \| -inner            | \| -inner                                                                    |
-|                     | \| **-cnt**          | \| -content                                                                  |
-|                     | \| -footer           | \| -footer                                                                   |
-|                     | \| -noheader         | \| -noheader                                                                 |
-|                     | \| -noborder         | \| -noborder                                                                 |
-|                     | \| **-nofooter**     | \| *deprecated*\*                                                            |
-| Other Elements      | \| -faker            | \| -faker                                                                    |
-|                     | \| -text             | \| -text                                                                     |
-|                     | \| **-inp**          | \| -input                                                                    |
-|                     | \| **-sep**          | \| -separator                                                                |
-|                     | -img                 | \| -image (for comoponent's API, such as Button.setImage())                  |
-|                     |                      | \| -icon (for comopnent's interaction, such as drop-down button on combobox) |
-|                     | \| **-pp**           | \| -popup                                                                    |
-|                     | \| **-btn**          | \| -button                                                                   |
-| Switch Icons        | \| -close            | \| -close                                                                    |
-|                     | \| **-colps**        | \| -collapse                                                                 |
-|                     | \| **-colpsd**       | \| -collapsed                                                                |
-|                     | \| **-exp**          | \| -expand                                                                   |
-|                     | \| **-expd**         | \| -expanded                                                                 |
-| Resize Icons        | \| **-max**          | \| -maximize                                                                 |
-|                     | \| **-maxd**         | \| -maximized                                                                |
-|                     | \| **-min**          | \| -minimize                                                                 |
-|                     | \| **-mind**         | \| *deprecated*\*                                                            |
-| Split Icons         | \| **-splt**         | \| -splitter                                                                 |
-|                     | \| -ns               | \| -nosplitter                                                               |
-| Orient and Position | \| **-ver**          | \| -vertical                                                                 |
-|                     | \| **-hor**          | \| -horizontal                                                               |
-|                     | \| -start            | \| -start                                                                    |
-|                     | \| -center           | \| -center                                                                   |
-|                     | \| -end              | \| -end                                                                      |
-| Event Effect        | \| **-clk**          | \| :active or -click                                                         |
-|                     | \| -focus            | \| :focus or -focus                                                          |
-|                     | \| **-over**         | \| :hover or -hover                                                          |
-|                     | \| -drag             | \| -drag                                                                     |
-|                     | \| **-drop**         | \| *deprecated*\*                                                            |
-|                     | \| **-seld**         | \| -selected                                                                 |
-|                     | \| **-ck**           | \| -checked                                                                  |
-|                     | \| **-unck**         | \| -unchecked                                                                |
-|                     | \| **-disd**         | \| \[disabled\] or -disabled                                                 |
-|                     | \| **-visi**         | \| :visited or -visited                                                      |
-|                     | \| **-hide**         | \| *deprecated*\*                                                            |
-|                     | \| -invalid          | \| -invalid                                                                  |
-|                     | \| -readonly         | \| \[readonly\] or -readonly                                                 |
+|  Category         |  ZK 6.5 class name | ZK 7 class name                                                      |
+|---------------------|----------------------|----------------------------------------------------------------------|
+| Layout Elements     |  -outer            | -outer                                                               |
+|                     |  -body             | -body                                                                |
+|                     |  -header           | -header                                                              |
+|                     |  -inner            | -inner                                                               |
+|                     |  **-cnt**          | -content                                                             |
+|                     |  -footer           | -footer                                                              |
+|                     |  -noheader         | -noheader                                                            |
+|                     |  -noborder         | -noborder                                                            |
+|                     |  **-nofooter**     | *deprecated*                                                         |
+| Other Elements      |  -faker            | -faker                                                               |
+|                     |  -text             | -text                                                                |
+|                     |  **-inp**          | -input                                                               |
+|                     |  **-sep**          | -separator                                                           |
+|                     | -img                 | -image (for comoponent's API, such as Button.setImage())             |
+|                     |                      | -icon (for comopnent's interaction, such as drop-down button on combobox) |
+|                     |  **-pp**           | -popup                                                               |
+|                     |  **-btn**          | -button                                                              |
+| Switch Icons        |  -close            | -close                                                               |
+|                     |  **-colps**        | -collapse                                                            |
+|                     |  **-colpsd**       | -collapsed                                                           |
+|                     |  **-exp**          | -expand                                                              |
+|                     |  **-expd**         | -expanded                                                            |
+| Resize Icons        |  **-max**          | -maximize                                                            |
+|                     |  **-maxd**         | -maximized                                                           |
+|                     |  **-min**          | -minimize                                                            |
+|                     |  **-mind**         | *deprecated*                                                         |
+| Split Icons         |  **-splt**         | -splitter                                                            |
+|                     |  -ns               | -nosplitter                                                          |
+| Orient and Position |  **-ver**          | -vertical                                                            |
+|                     |  **-hor**          | -horizontal                                                          |
+|                     |  -start            | -start                                                               |
+|                     |  -center           | -center                                                              |
+|                     |  -end              | -end                                                                 |
+| Event Effect        |  **-clk**          | :active or -click                                                    |
+|                     |  -focus            | :focus or -focus                                                     |
+|                     |  **-over**         | :hover or -hover                                                     |
+|                     |  -drag             | -drag                                                                |
+|                     |  **-drop**         | *deprecated*                                                         |
+|                     |  **-seld**         | -selected                                                            |
+|                     |  **-ck**           | -checked                                                             |
+|                     |  **-unck**         | -unchecked                                                           |
+|                     |  **-disd**         | \[disabled\] or -disabled                                            |
+|                     |  **-visi**         | :visited or -visited                                                 |
+|                     |  **-hide**         | *deprecated*                                                         |
+|                     |  -invalid          | -invalid                                                             |
+|                     |  -readonly         | \[readonly\] or -readonly                                            |
 
 - deprecated means it is never used in 7.0

@@ -15,8 +15,8 @@ main:
     url: /zk_installation_guide/before_you_start
 #  - title: "ZK Configuration Reference"
 #    url: /zk_config_ref/web.xml
-#  - title: "ZK Style Customization Guide"
-#    url: /zk_style_customization_guide/Introduction
+  - title: "ZK Style Customization Guide"
+    url: /zk_style_customization_guide/Introduction
   - title: "ZK Component Development Essentials"
     url: /zk_component_dev_essentials/ZK_Component_Overview
   - title: "ZK Client-side Reference"
