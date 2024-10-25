@@ -10,4 +10,4 @@ The page's hyperlinks consist of two types:
 The Welcome Page can be opened by clicking **\[Help\]/\[ZK Help\]/\[ZK
 Welcome Page\]**
 
-![](images/studio-welcome-page.png)
+![]({{site.baseUrl}}/zk_studio_essentials/studio-welcome-page.png)

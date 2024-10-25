@@ -27,4 +27,4 @@ The ZUL Palette supports ZUML tag name filtering. Upon typing a
 component's name into the filter text box to search, the palette will
 filter listed components automatically.
 
-![](images/studio-palette-filter.png)
+![]({{site.baseUrl}}/zk_studio_essentials/studio-palette-filter.png)

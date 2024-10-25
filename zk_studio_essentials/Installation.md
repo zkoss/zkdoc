@@ -69,14 +69,14 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 \> \[Eclipse Markpetplace\]** and search **"zk studio"** you'll find
 **ZK Studio** to install.
 
-![](images/Eclipse36_marketplace.png)
+![]({{site.baseUrl}}/zk_studio_essentials/Eclipse36_marketplace.png)
 
 ## Update Site
 
 1.  Open Eclipse, click the **\[Help\]** menu and select **\[Install New
     Software...\]**. A install window will popup, and then click **Add**
       
-    ![](images/zkstudio_installation_35_1.png)
+    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_1.png)
 
       
 2.  Name the site as **"ZK Studio"** and copy corresponding update
@@ -88,71 +88,52 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     The URL of ZK Studio for Eclipse 3.7:
     <http://studio.zkoss.org/resource/plugins/eclipse_3_7>
 
-    ![](images/zkstudio_installation_35_2.png)
+    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_2.png)
 
       
 3.  Expand the update entry of ZK Studio, check **ZK Studio** and then
     click **Next**
       
-    ![](images/zkstudio_installation_35_3.png)
+    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_3.png)
 
     The Eclipse Installation System will now attempt to retrieve
     information from the update site. This will take some time depending
     on your eclipse environment, please be patient.
 4.  Click **Next** on the pop-up install wizard dialog.
       
-    ![](images/zkstudio_installation_35_4.png)
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_4.png)
+
+Check **"I accept the terms of the license agrement"** and click **Finish** on the wizard dialog.
+
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_4_licenses.png)
 
       
 
-    Check **"I accept the terms of the license agrement"** and click
-    **Finish** on the wizard dialog.
+The Installation process will now begin.
 
-    <figure>
-    <img src="images/zkstudio_installation_35_4_licenses.png"
-    title=" center | 600px" />
-    <figcaption> center | 600px</figcaption>
-    </figure>
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_5.png)
 
-      
 
-    The Installation process will now begin.
+If there is a pop-up dialog with unsigned content warning, please click **OK** to continue.
 
-    ![](images/zkstudio_installation_35_5.png)
-
-      
-
-    If there is a pop-up dialog with unsigned content warning, please
-    click **OK** to continue.
-
-    <figure>
-    <img src="images/zkstudio_installation_35_5_warning.png"
-    title=" center | 500px" />
-    <figcaption> center | 500px</figcaption>
-    </figure>
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_5_warning.png)
 
       
 5.  Once the installation is complete, please restart Eclipse as
     prompted.
       
-    ![](images/zkstudio_installation_35_6.png)
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_6.png)
 
 ## Offline Installation
 
-1.  Download the offline installation zip file from [ZK Studio download
-    page](http://www.zkoss.org/download/zkstudio).
-2.  The step is the same as step 1 we do for [ Update
-    Site](#_Update_Site). Open Eclipse, click **\[Help\]**
+1.  Download the offline installation zip file from [ZK Studio download page](http://www.zkoss.org/download/zkstudio).
+2.  The step is the same as step 1 we do for [ Update Site](#_Update_Site). Open Eclipse, click **\[Help\]**
     menu and select **\[Install New Software...\]**. An install window
     will popup, click **Add**
 3.  Click **Archive...** to open a file explorer. Then, use file
     explorer to choose downloaded file and click "OK" to install.
       
-    <figure>
-    <img src="images/zkstudio_installation_35_manual_2.png"
-    title=" center | 500px" />
-    <figcaption> center | 500px</figcaption>
-    </figure>
+![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_manual_2.png)
 
 ## Activate ZK Studio
 
@@ -194,7 +175,7 @@ Add the plugin below in a pom.xml.
 
 Run the goal with
 
-`mvn jetty:run`
+`mvn jetty:run`
 
 - [Gradle
   gretty](http://akhikhl.github.io/gretty-doc/Getting-started.html)

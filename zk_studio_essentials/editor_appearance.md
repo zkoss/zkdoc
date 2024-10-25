@@ -12,13 +12,13 @@ Preferences > XML > XML Files > Editor > Appearance
 
 
 
-![Editor appearance settings for XML files in Eclipse](images/Editor-default-appearance.png)
+![Editor appearance settings for XML files in Eclipse]({{site.baseUrl}}/zk_studio_essentials/Editor-default-appearance.png)
 
 ## Editor Configuration for Dark Theme
 
 If you are using a dark theme, the out-of-the-box settings for the XML editor can be difficult to read.
 
-![Editor autocomplete popup in dark theme with default settings](images/Editor-dark-mode-default.png)
+![Editor autocomplete popup in dark theme with default settings]({{site.baseUrl}}/zk_studio_essentials/Editor-dark-mode-default.png)
 
 The following settings are a possible set of values for better XML readability, including in ZUL files, when using a dark theme:
 
@@ -32,4 +32,4 @@ The following settings are a possible set of values for better XML readability, 
 
 Custom colors can be defined by selecting "Define custom colors" in the color picker, then filling in the custom values for red, green, and blue.
 
-![Editor custom colors selection](images/Editor-custom-colors.png)
+![Editor custom colors selection]({{site.baseUrl}}/zk_studio_essentials/Editor-custom-colors.png)
