@@ -1,6 +1,6 @@
 **Syntax:**
 
-<debug-js>`true|``false`</debug-js>
+<debug-js>true|false</debug-js>
 
 `[Default: `false`]`
 

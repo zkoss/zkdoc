@@ -1,6 +1,6 @@
 **Syntax:**
 
-<crawlable>`true|``false`</crawlable>
+<crawlable>true|false</crawlable>
 
 `[Default: false (disabled)]`  
 `[Since 5.0.0]`  

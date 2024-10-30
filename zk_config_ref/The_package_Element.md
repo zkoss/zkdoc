@@ -1,7 +1,7 @@
 **Syntax:**
 
 <package>  
-`   `<package-name>*`a_JS_package_name`*</package-name>  
+`   `<package-name>a_JS_package_name</package-name>  
 </package>
 
 `[Default: `<i>`none`</i>`]`

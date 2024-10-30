@@ -1,8 +1,8 @@
 **Syntax:**
 
-<theme-uri>*`a_theme_uri`*</theme-uri>
+<theme-uri>a_theme_uri</theme-uri>
 
-`[Default: `*`none`*`]`
+`[Default: `none`]`
 
 It specifies the URI of an addition theme (aka., a style sheet file).
 

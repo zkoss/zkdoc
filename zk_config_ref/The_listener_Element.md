@@ -1,7 +1,7 @@
 **Syntax:**
 
 <listener>  
-`    `<listener-class>*`a_class_name`*</listener-class>  
+`    `<listener-class>a_class_name</listener-class>  
 </listener>
 
 It is used to specify the class name of a listener. The use is the same

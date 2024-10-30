@@ -1,6 +1,6 @@
 **Syntax:**
 
-<disable-zscript>`false``|true`</disable-zscript>
+<disable-zscript>false|true</disable-zscript>
 
 `[Default: false (enabled)]`
 

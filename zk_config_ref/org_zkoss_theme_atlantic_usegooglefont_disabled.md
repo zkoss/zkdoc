@@ -1,6 +1,6 @@
 **Property:** org.zkoss.theme.atlantic.useGoogleFont.disabled
 
-`Default: `*`false`*
+`Default: `false
 
 By default Atlantic theme imports Google font, but some countries (e.g.
 China) are blocked from accessing that font or there is no internet

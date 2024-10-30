@@ -1,6 +1,6 @@
 **Syntax:**
 
-<keep-across-visits>`true|``false`</keep-across-visits>
+<keep-across-visits>true|false</keep-across-visits>
 
 `[Default: `false`]`
 

@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.WebApp.name`
 
-`Default: ``ZK`
+Default: `ZK`
 
 It specifies the application name. It is the return value of
 <javadoc method="getAppName()" type="interface">org.zkoss.zk.ui.WebApp</javadoc>.

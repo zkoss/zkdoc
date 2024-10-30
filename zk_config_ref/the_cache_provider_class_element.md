@@ -1,6 +1,6 @@
 **Syntax:**
 
-<cache-provider-class>*`a_class_name`*</cache-provider-class>
+<cache-provider-class>a_class_name</cache-provider-class>
 
 `[Default: `org.zkoss.zk.ui.impl.SessionDesktopCacheProvider`]`
 

@@ -1,6 +1,6 @@
 **Syntax:**
 
-<timer-keep-alive>`true|``false`</timer-keep-alive>
+<timer-keep-alive>true|false</timer-keep-alive>
 
 `[Default: false]`
 

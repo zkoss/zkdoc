@@ -2,7 +2,7 @@
 
 `org.zkoss.bind.appConverters`
 
-`Default: `*`none`*
+`Default: `none
 
 Register application level converters and only have one instance shard
 between all binders.

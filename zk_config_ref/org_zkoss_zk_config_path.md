@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.config.path`
 
-`Default: `*`none`*
+`Default: `none
 
 It specifies another configuration file in addition to `WEB-INF/zk.xml`.
 This is useful if you have two or more environments, such as testing and

@@ -1,6 +1,6 @@
 **Property:**
 
-*`class`*`.mold`
+class`.mold`
 
 `Default: none`  
 `[Since 5.0.0]`

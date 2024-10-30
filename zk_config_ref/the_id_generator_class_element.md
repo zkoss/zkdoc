@@ -1,8 +1,8 @@
 **Syntax:**
 
-<id-generator-class>*`a_class_name`*</id-generator-class>
+<id-generator-class>a_class_name</id-generator-class>
 
-`[Default: `*`none`*`]`
+`[Default: `none`]`
 
 It specifies which class should be used to generate the UUID of page and
 components, and ID of desktops. The class must have a default

@@ -1,6 +1,6 @@
 **Syntax:**
 
-<au-writer-class>*`a_class_name`*</au-writer-class>
+<au-writer-class>a_class_name</au-writer-class>
 
 `[Default: `org.zkoss.zk.au.http.HttpAuWriter` for ZK CE and PE, or `org.zkoss.zkmax.au.http.SmartAuWriter` for ZK EE]`
 

@@ -1,6 +1,6 @@
 **Syntax:**
 
-<timeout-message>*`a_message`*</timeout-message>
+<timeout-message>a_message</timeout-message>
 
 `[Optional]`
 

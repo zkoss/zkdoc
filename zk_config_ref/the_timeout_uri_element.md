@@ -1,6 +1,6 @@
 **Syntax:**
 
-<timeout-uri>*`a_uri`*</timeout-uri>
+<timeout-uri>a_uri</timeout-uri>
 
 `[Optional]`  
 `[Since 3.6.3]`  

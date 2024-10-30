@@ -1,7 +1,7 @@
 **Syntax:**
 
 <language-config>  
-`    `<addon-uri>*`a_uri`*</addon-uri>  
+`    `<addon-uri>a_uri</addon-uri>  
 `    `<language-uri>`''a_uri`</language-uri>  
 </language-config>
 

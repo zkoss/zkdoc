@@ -1,6 +1,6 @@
 **Syntax:**
 
-<web-app-class>*`a_class_name`*</web-app-class>
+<web-app-class>a_class_name</web-app-class>
 
 `[Default: `org.zkoss.zk.ui.http.SimpleWebApp`]`
 

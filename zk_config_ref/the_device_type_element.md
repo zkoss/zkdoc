@@ -1,6 +1,6 @@
 **Syntax:**
 
-<device-type>*`device_type`*`|``ajax`</device-type>
+<device-type>device_type|ajax`</device-type>
 
 `[Optional]`  
 `[Since 3.6.3]`  

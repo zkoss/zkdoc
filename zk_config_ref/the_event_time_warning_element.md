@@ -1,6 +1,6 @@
 **Syntax:**
 
-<event-time-warning>*`a_number`*</event-time-warning>
+<event-time-warning>a_number</event-time-warning>
 
 `[Default: 600]`
 

@@ -1,6 +1,6 @@
 **Syntax:**
 
-<automatic-timeout>`true|``false`</automatic-timeout>
+<automatic-timeout>true|false</automatic-timeout>
 
 `[Optional]`  
 `[Since 3.6.3]`  

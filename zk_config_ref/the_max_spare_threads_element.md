@@ -1,6 +1,6 @@
 **Syntax:**
 
-<max-spare-threads>*`a_number`*</max-spare-threads>
+<max-spare-threads>a_number</max-spare-threads>
 
 `[Default: 100]`
 

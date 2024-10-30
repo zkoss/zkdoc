@@ -1,6 +1,6 @@
 **Syntax:**
 
-<max-upload-size>*`a_number`*</max-upload-size>
+<max-upload-size>a_number</max-upload-size>
 
 `[Default: 5120]`
 

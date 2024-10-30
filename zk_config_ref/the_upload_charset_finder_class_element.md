@@ -1,6 +1,6 @@
 **Syntax:**
 
-<upload-charset-finder-class>*`a_class_name`*</upload-charset-finder-class>
+<upload-charset-finder-class>a_class_name</upload-charset-finder-class>
 
 `[Default: null]`
 

@@ -1,8 +1,8 @@
 **Syntax:**
 
-<failover-manager-class>*`a_class_name`*</failover-manager-class>
+<failover-manager-class>a_class_name</failover-manager-class>
 
-`[Default: `*`none`*`]`
+`[Default: `none`]`
 
 It specifies which class should be used to handle the failover. This is
 called to recover a desktop, when ZK cannot locate the desktop. The

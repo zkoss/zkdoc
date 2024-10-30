@@ -1,8 +1,8 @@
 **Syntax:**
 
-<label-location>*`a_uri`*</label-location>
+<label-location>a_uri</label-location>
 
-`[Default: ``/WEB-INF/zk-label.properties``]`
+[Default: `/WEB-INF/zk-label.properties`]
 
 It specifies the location of the properties file for [the
 internationalization

@@ -1,8 +1,8 @@
 **Syntax:**
 
-<session-timeout>*`a_number_in_seconds`*</session-timeout>
+<session-timeout>a_number_in_seconds</session-timeout>
 
-`[Default: 0 `*`(depending on the Web server)`*`]`
+`[Default: 0 `(depending on the Web server)`]`
 
 It specifies the time, in seconds, between client requests before a
 session is invalidated. A negative time indicates the session should

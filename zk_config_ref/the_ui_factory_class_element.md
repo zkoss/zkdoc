@@ -1,6 +1,6 @@
 **Syntax:**
 
-<ui-factory-class>*`a_class_name`*</ui-factory-class>
+<ui-factory-class>a_class_name</ui-factory-class>
 
 [Default: `org.zkoss.zk.ui.http.SimpleUiFactory`]
 

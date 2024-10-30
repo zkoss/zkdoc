@@ -1,6 +1,6 @@
 **Syntax:**
 
-<web-app-factory-class>*`a_class_name`*</web-app-factory-class>
+<web-app-factory-class>a_class_name</web-app-factory-class>
 
 `[Default: none (and `org.zkoss.zk.ui.http.SimpleWebApp` is used)]`
 

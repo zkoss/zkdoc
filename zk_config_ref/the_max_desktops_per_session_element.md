@@ -1,6 +1,6 @@
 **Syntax:**
 
-<max-desktops-per-session>*`a_number`*</max-desktops-per-session>
+<max-desktops-per-session>a_number</max-desktops-per-session>
 
 `[Default: 15]`
 

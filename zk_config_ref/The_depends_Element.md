@@ -1,6 +1,6 @@
 **Syntax:**
 
-<depends>*`a_list_of_config_names`*</depends>
+<depends>a_list_of_config_names</depends>
 
 `[Optional]`
 

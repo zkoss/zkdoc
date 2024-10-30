@@ -1,6 +1,6 @@
 **Syntax:**
 
-<enable-source-map>`true|``false`</enable-source-map>
+<enable-source-map>true|false</enable-source-map>
 
 `[Default: `false`]`
 

@@ -1,9 +1,9 @@
 **Syntax:**
 
 <error-page>  
-`    `<device-type>`''a_device_type|``ajax`</device-type>  
-`    `<exception-type>*`a_class_name`*</exception-type>  
-`    `<location>*`a_uri`*</location>  
+    `<device-type>`''a_device_type|ajax</device-type>  
+`    `<exception-type>a_class_name</exception-type>  
+`    `<location>a_uri</location>  
 </error-page>
 
 It specifies an error page used when an uncaught exception is thrown in

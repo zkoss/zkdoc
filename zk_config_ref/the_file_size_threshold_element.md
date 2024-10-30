@@ -1,6 +1,6 @@
 **Syntax:**
 
-<file-size-threshold>*`a_number`*</file-size-threshold>
+<file-size-threshold>a_number</file-size-threshold>
 
 `[Default: 128]`
 

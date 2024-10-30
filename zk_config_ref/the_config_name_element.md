@@ -1,6 +1,6 @@
 **Syntax:**
 
-<config-name>*`a_name`*</config-name>
+<config-name>a_name</config-name>
 
 `[Required]`
 

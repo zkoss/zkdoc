@@ -1,6 +1,6 @@
 **Syntax:**
 
-<send-client-errors>`true|``false`</send-client-errors>
+<send-client-errors>true|false</send-client-errors>
 
 `[Default: `false`]`
 

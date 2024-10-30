@@ -1,6 +1,6 @@
 **Syntax:**
 
-<session-cache-class>*`a_class_name`*</session-cache-class>
+<session-cache-class>a_class_name</session-cache-class>
 
 `[Default: `org.zkoss.zk.ui.http.SimpleSessionCache`]`
 

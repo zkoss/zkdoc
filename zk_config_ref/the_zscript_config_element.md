@@ -1,8 +1,8 @@
 **Syntax:**
 
 <zscript-config>  
-`    `<language-name>*`a_programming_language`*</language-name>  
-`    `<interpreter-class>*`a_class_name`*</interpreter-class>  
+`    `<language-name>a_programming_language</language-name>  
+`    `<interpreter-class>a_class_name</interpreter-class>  
 </zscript-config>
 
 `[Optional]`

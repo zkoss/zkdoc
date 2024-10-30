@@ -1,6 +1,6 @@
 **Syntax:**
 
-<device-class>*`a_class_name`*</device-class>
+<device-class>a_class_name</device-class>
 
 `[Optional]`
 

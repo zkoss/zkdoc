@@ -1,6 +1,6 @@
 **Syntax:**
 
-<engine-class>*`a_class_name`*</engine-class>
+<engine-class>a_class_name</engine-class>
 
 `[Default: `org.zkoss.zk.ui.impl.UiEngineImpl`]`
 

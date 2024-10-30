@@ -1,6 +1,6 @@
 **Syntax:**
 
-<config-parser-class>*`a_class_name`*</config-parser-class>
+<config-parser-class>a_class_name</config-parser-class>
 
 `[Default: none]`  
 `[Since 5.0.0]`

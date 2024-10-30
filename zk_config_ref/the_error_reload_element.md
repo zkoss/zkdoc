@@ -3,10 +3,10 @@
 **Syntax:**
 
 <error-reload>  
-`    [`<device-type>*`deviceType`*`|``ajax`</device-type>`]`  
-`    `<error-code>*`an_error_code`*</error-code>  
-`    `<reload-uri>*`an_uri`*</reload-uri>  
-`    [`<connection-type>`server-push|``au`</connection-type>`]`  
+    [`<device-type>deviceType|ajax`</device-type>`]  
+`    `<error-code>an_error_code</error-code>  
+`    `<reload-uri>an_uri</reload-uri>  
+    [`<connection-type>`server-push|au`</connection-type>`]  
 </error-reload>
 
 `[Default: show an error message]`

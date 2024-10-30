@@ -1,6 +1,6 @@
 **Syntax:**
 
-<desktop-timeout>*`a_number`*</desktop-timeout>
+<desktop-timeout>a_number</desktop-timeout>
 
 `[Default: 3600]`
 

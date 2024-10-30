@@ -1,6 +1,6 @@
 **Syntax:**
 
-<file-repository>*`directory_path`*</file-repository>
+<file-repository>directory_path</file-repository>
 
 `[Default: null] (will use System.getProperty("java.io.tmpdir"))`
 
