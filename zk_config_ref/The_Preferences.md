@@ -5,7 +5,7 @@ The preferences are similar to the library properties: they are
 application-specific name/value pairs. You could use them to configure
 your application and ZK engine. However, unlike the library properties,
 preferences are stored in
-<javadoc>org.zkoss.zk.ui.util.Configuration</javadoc> and can be
+`org.zkoss.zk.ui.util.Configuration` and can be
 retrieved by use of
 <javadoc method="getPreference(java.lang.String, java.lang.String)">org.zkoss.zk.ui.util.Configuration</javadoc>.
 

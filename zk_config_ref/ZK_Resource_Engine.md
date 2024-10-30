@@ -1,6 +1,6 @@
 # DHtmlResourceServlet
 
-`[Optional] Class: `<javadoc>` org.zkoss.zk.au.http.DHtmlResourceServlet`</javadoc>
+`[Optional] Class: `` org.zkoss.zk.au.http.DHtmlResourceServlet`
 
 ZK Resource Engine, it is a servlet that handles static resources. After
 you configure this servlet, ZK will retrieve its own static resources

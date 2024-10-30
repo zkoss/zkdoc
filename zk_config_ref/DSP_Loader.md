@@ -1,6 +1,6 @@
 # InterpreterServlet
 
-`[Optional] Class: `<javadoc>`org.zkoss.web.servlet.dsp.InterpreterServlet`</javadoc>
+`[Optional] Class: ``org.zkoss.web.servlet.dsp.InterpreterServlet`
 
 DSP Loader is a servlet used to process the DSP files. DSP is a JSP-like
 template technology.

@@ -5,7 +5,7 @@ By default, ZK communicates with a server in
 or [Fetch
 API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 asynchronously. Now you can switch to WebSocket. Then
-<javadoc>org.zkoss.zkmax.au.websocket.WebSocketEndPoint</javadoc>
+`org.zkoss.zkmax.au.websocket.WebSocketEndPoint`
 handles ping/pong messages from and to the client. This feature works
 only for browsers that support WebSocket natively.
 

@@ -3,7 +3,7 @@
 `Location: WEB-INF/web.xml`
 
 **\[Required\] Class:**
-<javadoc>org.zkoss.zk.ui.http.DHtmlLayoutServlet</javadoc>
+`org.zkoss.zk.ui.http.DHtmlLayoutServlet`
 
 ZK Loader is a servlet used to load ZUML pages when the Web server
 receives URL requests sent by the users.
