@@ -23,4 +23,4 @@ For example,
 > <references/>
 
 [^1]: For more information, please refer to [ The preference
-    Element](ZK_Configuration_Reference/zk.xml/The_preference_Element).
+    Element]({{site.baseUrl}}/zk_config_ref/The_preference_Element).

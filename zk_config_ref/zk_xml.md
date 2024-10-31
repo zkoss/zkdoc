@@ -29,7 +29,7 @@ library or system property called `org.zkoss.zk.config.path`. It is
 useful if some of the configuration can not be part of the WAR file
 (such as depending on the deployment environment). For more information,
 please refer to [this
-section](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.config.path).
+section]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.config.path).
 
 Notice that `zk.xml` found in the classpath is parsed first, then
 `WEB-INF/zk.xml`, and finally the additional configuration file. It

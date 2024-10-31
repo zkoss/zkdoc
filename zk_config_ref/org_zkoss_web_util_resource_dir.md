@@ -59,7 +59,7 @@ one in `zul.jar`.
 ## debug-js enabled
 
 Notice that if
-[debug-js](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_debug-js_Element)
+[debug-js]({{site.baseUrl}}/zk_config_ref/The_client-config_Element/The_debug-js_Element)
 is turned on, ZK will actually look for `Textbox.src.js` rather than
 `Textbox.js` in the above example. Thus, it is suggested to put both
 files:

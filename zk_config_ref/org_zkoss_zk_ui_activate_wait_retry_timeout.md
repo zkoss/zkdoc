@@ -16,7 +16,7 @@ minutes.
 
 If you'd like to abort the activation (and then end the waiting thread),
 you also have to specify [
-org.zkoss.zk.ui.activate.wait.retry.abort](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.abort)
+org.zkoss.zk.ui.activate.wait.retry.abort]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.abort)
 to true.
 
 ``` xml

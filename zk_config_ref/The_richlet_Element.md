@@ -23,7 +23,7 @@ is called.
 
 Once declaring a richlet, you can map it to any number of URL by the use
 of [the richlet-mapping
-element](ZK_Configuration_Reference/zk.xml/The_richlet-mapping_Element)
+element]({{site.baseUrl}}/zk_config_ref/The_richlet-mapping_Element)
 as described in the next section.
 
 

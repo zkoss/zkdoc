@@ -20,9 +20,9 @@ the `org.zkoss.zk.ui.impl.AbstractWebApp` or
 ```
 
 Alternatively, you could use [the web-app-factory-class
-element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_web-app-factory-class_Element)
+element]({{site.baseUrl}}/zk_config_ref/The_system-config_Element/The_web-app-factory-class_Element)
 instead. Notice, if both specified, [the web-app-factory-class
-element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_web-app-factory-class_Element)
+element]({{site.baseUrl}}/zk_config_ref/The_system-config_Element/The_web-app-factory-class_Element)
 has the higher priority.
 
 

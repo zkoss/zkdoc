@@ -10,9 +10,9 @@
 It specifies the additional [language addons and/or
 definitions](ZK_Client-side_Reference/Language_Definition).
 
-The use is the same as [ZK Configuration Reference/zk.xml/The
+The use is the same as [ZK Configuration Reference/The
 language-config
-Element](ZK_Configuration_Reference/zk.xml/The_language-config_Element),
+Element]({{site.baseUrl}}/zk_config_ref/The_language-config_Element),
 except it is specified in a JAR file's `config.xml` rather than
 `WEB-INF/zk.xml`.
 

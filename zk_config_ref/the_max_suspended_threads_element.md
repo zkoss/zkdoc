@@ -18,7 +18,7 @@ exception and handle it in a different way.'
 Notice that this option is applicable only if the event processing
 thread is enabled (it is disabled by default). Please refer to [the
 disable-event-thread
-element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_disable-event-thread_Element)
+element]({{site.baseUrl}}/zk_config_ref/The_system-config_Element/The_disable-event-thread_Element)
 for details.
 
 

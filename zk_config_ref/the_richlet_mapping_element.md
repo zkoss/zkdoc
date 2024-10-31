@@ -1,5 +1,5 @@
 Once [a richlet is
-declared](ZK_Configuration_Reference/zk.xml/The_richlet_Element),
+declared]({{site.baseUrl}}/zk_config_ref/The_richlet_Element),
 you could map it to any number of URL by using `richlet-mapping` as
 depicted below.
 
@@ -15,8 +15,8 @@ depicted below.
 ```
 
 When mapping, you should consider the `servlet-mapping` of [ZK
-Loader](ZK_Configuration_Reference/web.xml/ZK_Loader) in
-[web.xml](ZK_Configuration_Reference/web.xml), for example,
+Loader]({{site.baseUrl}}/zk_config_ref/web.xml/ZK_Loader) in
+[web.xml]({{site.baseUrl}}/zk_config_ref/web.xml), for example,
 if you want the Richlet work with `/path/*`, you may specify the
 servlet-mapping in web.xml as follows:
 

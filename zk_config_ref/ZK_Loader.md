@@ -16,7 +16,7 @@ depend on the ZK loader.
 ```
 
 Here is [a complete
-sample](ZK_Configuration_Reference/web.xml/Sample_of_web.xml).
+sample]({{site.baseUrl}}/zk_config_ref/web.xml/Sample_of_web.xml).
 
 # The Initial Parameters
 
@@ -47,7 +47,7 @@ additions to <code>zul</code> and <code>zhtml</code> files).</p></td>
 <td><p>resource-uri</p></td>
 <td><p>[Optional]</p>
 <p>It specifies the URI which the <a
-href="ZK_Configuration_Reference/web.xml/ZK_Resource_Engine"
+href="{{site.baseUrl}}/zk_config_ref/web.xml/ZK_Resource_Engine"
 title="wikilink"> ZK Resource engine</a> is mapped to.</p>
 <p>For example, if the ZK Resource engine is mapped to
 <code>/zkres/*</code>, by the use of <code>servlet-mapping</code>, then
@@ -105,7 +105,7 @@ use `xul` and `html` as the extension; just map them to ZK Loader too.
 ```
 
 Here is [a complete
-sample](ZK_Configuration_Reference/web.xml/Sample_of_web.xml).
+sample]({{site.baseUrl}}/zk_config_ref/web.xml/Sample_of_web.xml).
 
 # Map URL to Richlets
 

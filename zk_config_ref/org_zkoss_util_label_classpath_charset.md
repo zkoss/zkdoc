@@ -9,7 +9,7 @@ located in classpath.
 
 To define the charset for zk-label.properties located in Web's resource,
 please refer to [the org.zkoss.util.label.web.charset
-property](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.label.web.charset).
+property]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.util.label.web.charset).
 
 Please refer to [ZK Developer's Reference:
 Internationalization](ZK_Developer's_Reference/Internationalization/Labels)
