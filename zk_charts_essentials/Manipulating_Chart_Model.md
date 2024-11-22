@@ -171,11 +171,10 @@ instead.
 
 ## Pie Chart
 
-<figure>
-<img src="images/PieChartDemo.png title="PieChartDemo.png" width="480"
-height="300" />
-<figcaption>PieChartDemo.png</figcaption>
-</figure>
+
+
+![](images/PieChartDemo.png)
+
 
 ``` xml
 <div apply="demo.PieChartComposer">
@@ -205,11 +204,10 @@ public class PieChartComposer extends SelectorComposer<Div> {
 
 ## Funnel Chart
 
-<figure>
-<img src="images/FunnelChartDemo.png title="FunnelChartDemo.png" width="480"
-height="300" />
-<figcaption>FunnelChartDemo.png</figcaption>
-</figure>
+
+
+![](images/FunnelChartDemo.png)
+
 
 ``` xml
 <div apply="demo.FunnelChartComposer">
@@ -243,11 +241,10 @@ public class FunnelChartComposer extends SelectorComposer<Div> {
 
 ### Basic Line Chart
 
-<figure>
-<img src="images/LineChartDemo.png title="LineChartDemo.png" width="480"
-height="300" />
-<figcaption>LineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/LineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.LineChartComposer">
@@ -281,11 +278,10 @@ public class LineChartComposer extends SelectorComposer<Div> {
 
 ### XY Line Chart
 
-<figure>
-<img src="images/XYLineChartDemo.png title="XYLineChartDemo.png" width="480"
-height="300" />
-<figcaption>XYLineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYLineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYLineChartComposer">
@@ -321,11 +317,10 @@ public class XYLineChartComposer extends SelectorComposer<Div> {
 
 ### Basic Spline Chart
 
-<figure>
-<img src="images/SplineChartDemo.png title="SplineChartDemo.png" width="480"
-height="300" />
-<figcaption>SplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/SplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.SplineChartComposer">
@@ -359,11 +354,10 @@ public class SplineChartComposer extends SelectorComposer<Div> {
 
 ### XY Spline Chart
 
-<figure>
-<img src="images/XYSplineChartDemo.png title="XYSplineChartDemo.png"
-width="480" height="300" />
-<figcaption>XYSplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYSplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYSplineChartComposer">
@@ -399,11 +393,10 @@ public class XYSplineChartComposer extends SelectorComposer<Div> {
 
 ### Basic Area Chart
 
-<figure>
-<img src="images/AreaChartDemo.png title="AreaChartDemo.png" width="480"
-height="300" />
-<figcaption>AreaChartDemo.png</figcaption>
-</figure>
+
+
+![](images/AreaChartDemo.png)
+
 
 ``` xml
 <div apply="demo.AreaChartComposer">
@@ -437,11 +430,10 @@ public class AreaChartComposer extends SelectorComposer<Div> {
 
 ### XY Area Chart
 
-<figure>
-<img src="images/XYAreaChartDemo.png title="XYAreaChartDemo.png" width="480"
-height="300" />
-<figcaption>XYAreaChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYAreaChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYAreaChartComposer">
@@ -475,11 +467,10 @@ public class XYAreaChartComposer extends SelectorComposer<Div> {
 
 ### Stacked Area Chart
 
-<figure>
-<img src="images/StackedAreaChartDemo.png title="StackedAreaChartDemo.png"
-width="480" height="300" />
-<figcaption>StackedAreaChartDemo.png</figcaption>
-</figure>
+
+
+![](images/StackedAreaChartDemo.png)
+
 
 ``` xml
 <div apply="demo.StackedAreaChartComposer">
@@ -515,11 +506,10 @@ public class StackedAreaChartComposer extends SelectorComposer<Div> {
 
 ### XY Stacked Area Chart
 
-<figure>
-<img src="images/XYStackedAreaChartDemo.png title="XYStackedAreaChartDemo.png"
-width="480" height="300" />
-<figcaption>XYStackedAreaChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYStackedAreaChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYStackedAreaChartComposer">
@@ -557,11 +547,10 @@ public class XYStackedAreaChartComposer extends SelectorComposer<Div> {
 
 ### Basic Area Spline Chart
 
-<figure>
-<img src="images/AreaSplineChartDemo.png title="AreaSplineChartDemo.png"
-width="480" height="300" />
-<figcaption>AreaSplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/AreaSplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.AreaSplineChartComposer">
@@ -595,11 +584,10 @@ public class AreaSplineChartComposer extends SelectorComposer<Div> {
 
 ### XY Area Spline Chart
 
-<figure>
-<img src="images/XYAreaSplineChartDemo.png title="XYAreaSplineChartDemo.png"
-width="480" height="300" />
-<figcaption>XYAreaSplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYAreaSplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYAreaSplineChartComposer">
@@ -633,11 +621,10 @@ public class XYAreaSplineChartComposer extends SelectorComposer<Div> {
 
 ### Stacked Area Spline Chart
 
-<figure>
-<img src="images/StackedAreaSplineChartDemo.png
-title="StackedAreaSplineChartDemo.png" width="480" height="300" />
-<figcaption>StackedAreaSplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/StackedAreaSplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.StackedAreaSplineChartComposer">
@@ -673,11 +660,10 @@ public class StackedAreaSplineChartComposer extends SelectorComposer<Div> {
 
 ### XY Stacked Area Spline Chart
 
-<figure>
-<img src="images/XYStackedAreaSplineChartDemo.png
-title="XYStackedAreaSplineChartDemo.png" width="480" height="300" />
-<figcaption>XYStackedAreaSplineChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYStackedAreaSplineChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYStackedAreaSplineChartComposer">
@@ -715,11 +701,10 @@ public class XYStackedAreaSplineChartComposer extends SelectorComposer<Div> {
 
 ### Basic Bar Chart
 
-<figure>
-<img src="images/BarChartDemo.png title="BarChartDemo.png" width="480"
-height="300" />
-<figcaption>BarChartDemo.png</figcaption>
-</figure>
+
+
+![](images/BarChartDemo.png)
+
 
 ``` xml
 <div apply="demo.BarChartComposer">
@@ -753,11 +738,10 @@ public class BarChartComposer extends SelectorComposer<Div> {
 
 ### XY Bar Chart
 
-<figure>
-<img src="images/XYBarChartDemo.png title="XYBarChartDemo.png" width="480"
-height="300" />
-<figcaption>XYBarChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYBarChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYBarChartComposer">
@@ -791,11 +775,10 @@ public class XYBarChartComposer extends SelectorComposer<Div> {
 
 ### Stacked Bar Chart
 
-<figure>
-<img src="images/StackedBarChartDemo.png title="StackedBarChartDemo.png"
-width="480" height="300" />
-<figcaption>StackedBarChartDemo.png</figcaption>
-</figure>
+
+
+![](images/StackedBarChartDemo.png)
+
 
 ``` xml
 <div apply="demo.StackedBarChartComposer">
@@ -831,11 +814,10 @@ public class StackedBarChartComposer extends SelectorComposer<Div> {
 
 ### XY Stacked Bar Chart
 
-<figure>
-<img src="images/XYStackedBarChartDemo.png title="XYStackedBarChartDemo.png"
-width="480" height="300" />
-<figcaption>XYStackedBarChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYStackedBarChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYStackedBarChartComposer">
@@ -873,11 +855,10 @@ public class XYStackedBarChartComposer extends SelectorComposer<Div> {
 
 ### Basic Column Chart
 
-<figure>
-<img src="images/ColumnChartDemo.png title="ColumnChartDemo.png" width="480"
-height="300" />
-<figcaption>ColumnChartDemo.png</figcaption>
-</figure>
+
+
+![](images/ColumnChartDemo.png)
+
 
 ``` xml
 <div apply="demo.ColumnChartComposer">
@@ -911,11 +892,10 @@ public class ColumnChartComposer extends SelectorComposer<Div> {
 
 ### XY Column Chart
 
-<figure>
-<img src="images/XYColumnChartDemo.png title="XYColumnChartDemo.png"
-width="480" height="300" />
-<figcaption>XYColumnChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYColumnChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYColumnChartComposer">
@@ -949,11 +929,10 @@ public class XYColumnChartComposer extends SelectorComposer<Div> {
 
 ### Stacked Column Chart
 
-<figure>
-<img src="images/StackedColumnChartDemo.png title="StackedColumnChartDemo.png"
-width="480" height="300" />
-<figcaption>StackedColumnChartDemo.png</figcaption>
-</figure>
+
+
+![](images/StackedColumnChartDemo.png)
+
 
 ``` xml
 <div apply="demo.StackedColumnChartComposer">
@@ -989,11 +968,10 @@ public class StackedColumnChartComposer extends SelectorComposer<Div> {
 
 ### XY Stacked Column Chart
 
-<figure>
-<img src="images/XYStackedColumnChartDemo.png
-title="XYStackedColumnChartDemo.png" width="480" height="300" />
-<figcaption>XYStackedColumnChartDemo.png</figcaption>
-</figure>
+
+
+![](images/XYStackedColumnChartDemo.png)
+
 
 ``` xml
 <div apply="demo.XYStackedColumnChartComposer">
@@ -1029,11 +1007,10 @@ public class XYStackedColumnChartComposer extends SelectorComposer<Div> {
 
 ## Column Range Chart
 
-<figure>
-<img src="images/ColumnRangeChartDemo.png title="ColumnRangeChartDemo.png"
-width="480" height="300" />
-<figcaption>ColumnRangeChartDemo.png</figcaption>
-</figure>
+
+
+![](images/ColumnRangeChartDemo.png)
+
 
 ``` xml
 <div apply="demo.ColumnRangeChartComposer">
@@ -1101,11 +1078,10 @@ public class ErrorBarChartComposer extends SelectorComposer<Div> {
 
 ## Scatter Chart
 
-<figure>
-<img src="images/ScatterChartDemo.png title="ScatterChartDemo.png" width="480"
-height="300" />
-<figcaption>ScatterChartDemo.png</figcaption>
-</figure>
+
+
+![](images/ScatterChartDemo.png)
+
 
 ``` xml
 <div apply="demo.ScatterChartComposer">
@@ -1139,11 +1115,10 @@ public class ScatterChartComposer extends SelectorComposer<Div> {
 
 ## Area Range Chart
 
-<figure>
-<img src="images/AreaRangeChartDemo.png title="AreaRangeChartDemo.png"
-width="480" height="300" />
-<figcaption>AreaRangeChartDemo.png</figcaption>
-</figure>
+
+
+![](images/AreaRangeChartDemo.png)
+
 
 ``` xml
 <div apply="demo.AreaRangeChartComposer">
@@ -1177,11 +1152,10 @@ public class AreaRangeChartComposer extends SelectorComposer<Div> {
 
 ## Area Spline Range Chart
 
-<figure>
-<img src="images/AreaSplineRangeChartDemo.png
-title="AreaSplineRangeChartDemo.png" width="480" height="300" />
-<figcaption>AreaSplineRangeChartDemo.png</figcaption>
-</figure>
+
+
+![](images/AreaSplineRangeChartDemo.png)
+
 
 ``` xml
 <div apply="demo.AreaSplineRangeChartComposer">
@@ -1215,11 +1189,10 @@ public class AreaSplineRangeChartComposer extends SelectorComposer<Div> {
 
 ## Bubble Chart
 
-<figure>
-<img src="images/BubbleChartDemo.png title="BubbleChartDemo.png" width="480"
-height="300" />
-<figcaption>BubbleChartDemo.png</figcaption>
-</figure>
+
+
+![](images/BubbleChartDemo.png)
+
 
 ``` xml
 <div apply="demo.BubbleChartComposer">
@@ -1253,11 +1226,10 @@ public class BubbleChartComposer extends SelectorComposer<Div> {
 
 ## Waterfall Chart
 
-<figure>
-<img src="images/WaterfallChartDemo.png title="WaterfallChartDemo.png"
-width="480" height="300" />
-<figcaption>WaterfallChartDemo.png</figcaption>
-</figure>
+
+
+![](images/WaterfallChartDemo.png)
+
 
 ``` xml
 <div apply="demo.WaterfallChartComposer">
@@ -1287,11 +1259,10 @@ public class WaterfallChartComposer extends SelectorComposer<Div> {
 
 ## Dial Chart
 
-<figure>
-<img src="images/DialChartDemo.png title="DialChartDemo.png" width="480"
-height="300" />
-<figcaption>DialChartDemo.png</figcaption>
-</figure>
+
+
+![](images/DialChartDemo.png)
+
 
 ``` xml
 <div apply="demo.DialChartComposer">
@@ -1331,11 +1302,10 @@ public class DialChartComposer extends SelectorComposer<Div> {
 
 ## Polar Chart
 
-<figure>
-<img src="images/PolarChartDemo.png title="PolarChartDemo.png" width="480"
-height="300" />
-<figcaption>PolarChartDemo.png</figcaption>
-</figure>
+
+
+![](images/PolarChartDemo.png)
+
 
 ``` xml
 <div apply="demo.PolarChartComposer">

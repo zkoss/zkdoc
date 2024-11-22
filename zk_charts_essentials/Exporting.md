@@ -30,11 +30,9 @@ screen.
 
 For example,
 [export-images.zul](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/webapp/export-images.zul),
-**the original chart on the screen**: ![ 900px \|
-center](zkchart-essentials-chart-on-screen.png " 900px | center")
+**the original chart on the screen**: ![](images/zkchart-essentials-chart-on-screen.png)
 
-**The exported result:** ![ 900px \|
-center](zkchart-essentials-exported-chart.png " 900px | center")
+**The exported result:** ![](images/zkchart-essentials-exported-chart.png)
 
 Differences:
 

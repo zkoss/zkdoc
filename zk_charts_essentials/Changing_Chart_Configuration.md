@@ -47,8 +47,7 @@ and find the corresponding configuration options.
 # The API Corresponding to Highcharts Options
 
 Since [Highcharts](http://highcharts.com) is the client-side widget ZK
-Charts integrates, we design ZK Charts' API mapping to [Highcharts
-options](https://api.highcharts.com/highcharts/). ZK Charts has
+Charts integrates, we design ZK Charts' API mapping to [Highcharts options](https://api.highcharts.com/highcharts/). ZK Charts has
 corresponding Java APIs (getter/setter) for most Hightcharts options.
 
 For example, assuming the option below you want to use is:
@@ -65,33 +64,28 @@ Each option has a getter and setter Java API in zkcharts:
 - setter:
   `chart.getPlotOptions().getLine().setEnableMouseTracking(false)`
 
-So you can check [Highcharts configuration
-options](http://api.highcharts.com/highcharts/) first for an option's
+So you can check [Highcharts configuration options](http://api.highcharts.com/highcharts/) first for an option's
 function then call the corresponding Java API.
 
-Please see [Highcharts API
-reference](https://api.highcharts.com/highcharts/) for complete options
-and its description.
+Please see [Highcharts API reference](https://api.highcharts.com/highcharts/) for complete options and its description.
 
 # Supported Version
 
 Please remember to check which Highcharts version is available for an
 option.
 
-<figure>
-<img src="images/zkcharts-essentials-apiVersion.jpg
-title="zkcharts-essentials-apiVersion.jpg" />
-<figcaption>zkcharts-essentials-apiVersion.jpg</figcaption>
-</figure>
+
+
+![](images/zkcharts-essentials-apiVersion.jpg)
+
 
 You can know the version of Highcharts bundled in ZK Charts by checking
 `chart.wpd` in a developer tool. (search **Highcharts**)
 
-<figure>
-<img src="images/zkcharts-essentials-highchartsVersion.png
-title="zkcharts-essentials-highchartsVersion.png" />
-<figcaption>zkcharts-essentials-highchartsVersion.png</figcaption>
-</figure>
+
+
+![](images/zkcharts-essentials-highchartsVersion.png)
+
 
 # Use addExtraAttr() for Options without Setter
 

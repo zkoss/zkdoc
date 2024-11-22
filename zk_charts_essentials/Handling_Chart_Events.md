@@ -47,8 +47,7 @@ public class ShiftComposer extends SelectorComposer<Window> {
 }
 ```
 
-Congratulations! Now you can interact with the chart. Here is what it
-shows: ![ center](shiftPoint.gif " center")
+Congratulations! Now you can interact with the chart. Here is what it shows: ![](images/ShiftPoint.gif)
 
 # ClickEvent Usage
 
