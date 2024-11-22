@@ -2,14 +2,14 @@
 
 # Understanding ZK cache breaking by URL
 
-ZK applications rely on a number of resource files loaded by the client.
+ZK applications rely on a number of resource files loaded by a browser.
 These resources are mainly JS and CSS packages, but can also include
 images or other binaries necessary on client side. To improve
 performance, default ZK applications will use the following caching
 strategy. Resources are served to the client via a URL containing a hash
-value of the ZK version. If the ZK version doesn't change, this hash
+value of the ZK version e.g. `http://myapp/zkau/web/b33ca6ab/mycss.css`. If the ZK version doesn't change, this hash
 value will stay identical between server restarts, sessions, and page
-loading. This allows clients to cache ZK resources, since the URL
+loading. This allows browsers to cache ZK resources, since the URL
 doesn't change between page loads, and thus reduce page initialization
 times on client side.
 
@@ -25,45 +25,42 @@ resources.
 
 # Loading resources through the ZK cache enabled URLs
 
-Resources declared from the classpath, or from ZK
+Resources loaded from the classpath, by `~./`, or from ZK
 [ClassWebResources](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.util.resource.dir)
-folder will be delivered to the clients through the same URL patterns as
+folder will be delivered to browsers through the same URL patterns as
 the internal ZK resources. This can apply to resources declared globally
-in lang-addon, or locally in a page with a script or style tag.
+in `lang-addon`, or locally in a page with a script or style tag.
 
-# Forcing a cache clear on non-ZK resources
 
-Since clients may cache a specific version of resources declared this
-way, they will not update them unless forced to do so by a clear-cache,
-a forced refresh, or a ZK version change. A simple way to break the
-cache when a new version of your resources must be downloaded is to use
-the built-in hashed value in the resource URLs. As stated before, the
-value will change if the ZK version changes. However, it will also
-change if the webapp build id changes.
+# Forcing Cache Clearing for Non-ZK Resources
 
-This can be done by creating a new WebApp class extending the default
-SimpleWebApp and overriding the default getBuild() method. The build
-returned can be generated automatically on webapp init to force the
-clients to update on every server restart. It could also be defined
-manually as a string, or retrieved from a database to only force a
-restart when the developer updates the version id.
+Browsers may cache resources referenced in your application, and updates to those resources might not be reflected without a cache-clearing mechanism. To address this, ZK provides the following ways to force cache clearing by updating resource URLs with built-in hashed values.
 
-## Cache breaking with zk.xml property
 
-The `org.zkoss.zk.ui.versionInfo.enabled` can be used with a STRING
-value. If a STRING is declared as the value, this string will be used as
-salt when generating the URL version hash. As a result, making a change
-to this property will cause a new hash to be generated, and can be used
-to force a cache break on all resources loaded through the version cache
-url. This includes all internal ZK resources, such as JS and CSS content
-from the ZK libraries.
+## 1. Use the `versionInfo` Property in `zk.xml`
+
+Specify a custom string for the `org.zkoss.zk.ui.versionInfo.enabled` library property in your `zk.xml` file. This string acts as a "salt" in the URL hash generation. By changing this string, you trigger a new hash, effectively invalidating cached resources.
+
+### Steps:
+1. Open your `zk.xml` file.
+2. Add or update the following property:
+```xml
+   <library-property>
+       <name>org.zkoss.zk.ui.versionInfo.enabled</name>
+       <value>my-custom-version-1</value>
+   </library-property>
+```
+3. Deploy the updated configuration. A new URL hash is generated, invalidating the cache.
 
 More information is available here:
 [org.zkoss.zk.ui.versionInfo.enabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.versionInfo.enabled)
 
-## Examples
 
-Generating a random number on startup
+## 2. Create a Custom WebApp Class
+Override the default `SimpleWebApp` class and implement a custom `getBuild()` method. This ensures unique build values for resource URLs.
+
+### Example 1: Force Cache Clearing on Server Restart
+This example appends a timestamp to the build version to force cache clearing each time the server restarts:
 
 ``` java
 public class ForceResourcesUpdateWebapp extends SimpleWebApp {
@@ -83,7 +80,8 @@ public class ForceResourcesUpdateWebapp extends SimpleWebApp {
 }
 ```
 
-Manually setting a version id
+### Example 2: Use a Fixed Build Version
+This example appends a static version string to the build:
 
 ``` java
 public class ForceResourcesUpdateWebapp extends SimpleWebApp {
@@ -94,8 +92,8 @@ public class ForceResourcesUpdateWebapp extends SimpleWebApp {
 }
 ```
 
-Once the webapp class has been created, it must be declared in zk.xml
-such as:
+Once the webapp class has been 
+created, you need to declare it in `zk.xml` such as:
 
 ``` xml
     <system-config>
@@ -103,13 +101,8 @@ such as:
     </system-config>
 ```
 
-## Code samples
+### Additional Resources
 
-The following samples are available in github
-
-- [Cache break on webapp
-  restart](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/performance/controlcache/ForceResourcesUpdateOnRestartWebapp.java)
-- [Cache break on build ID
-  change](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/performance/controlcache/ForceResourcesUpdateOnBuildChangeWebapp.java)
-- [Custom webapp class declaration in
-  zk.xml](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/WEB-INF/zk.xml#L587)
+- [Cache break on webapp restart](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/performance/controlcache/ForceResourcesUpdateOnRestartWebapp.java)
+- [Cache break on build ID change](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/performance/controlcache/ForceResourcesUpdateOnBuildChangeWebapp.java)
+- [Custom webapp class declaration in zk.xml](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/WEB-INF/zk.xml#L587)
