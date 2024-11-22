@@ -115,14 +115,9 @@ specify such URL in a component path-related attribute like:
 
 ## Modular Resource Sharing
 
-It can be used as a default shared folder path for a jar. When you
-create a sub-module project, you can put some shared resources or
-reusable template zul files under this folder. Then, package the
-sub-module as a jar and include the sub-module jar in the main project.
-The main project can easily access those reusable resources by this
-special URL. Notice that the zul files under this special resource path
-are publicly accessed with a URL in a browser, you should not put any
-sensitive data in it.
+The `~./` path simplifies sharing resources across projects. For example, when creating a sub-module project, you can store reusable assets such as CSS files, images, JavaScript, or ZUL templates in this path. By packaging the sub-module as a JAR and including it in your main project, the main project can easily access these resources using the `~./` path.
+
+This approach makes it convenient to manage and reuse static resources without duplicating files across projects. However, since files under the `~./` path are publicly accessible, avoid placing sensitive or confidential data in these folders.
 
 # Application-wide Named <Apply>
 
