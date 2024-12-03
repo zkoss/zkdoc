@@ -144,10 +144,10 @@ In other words, it removes the DOM element that was created.</p></td>
 ## Droppable Visual Feedback
 
 When you drag a listitem to a droppable component, it shows a plus icon:
-![](images/is-droppable.png "is-droppable.png")
+![](images/is-droppable.png)
 
 If drag it to a non-droppable component, it shows a ban icon:
-![](images/not-droppable.png "not-droppable.png")
+![](images/not-droppable.png)
 
 But other components don't provide this visual feedback by default, you
 need to override a Widget's `getDragMessage_()` and return a text, see

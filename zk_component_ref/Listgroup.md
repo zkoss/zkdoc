@@ -16,11 +16,7 @@ Adds the ability for single level grouping to the Listbox.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Listgroup_Example.PNG
-title="ZKComRef_Listgroup_Example.PNG" />
-<figcaption>ZKComRef_Listgroup_Example.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Listgroup_Example.PNG)
 
 ``` xml
  <?xml version="1.0" encoding="UTF-8"?>

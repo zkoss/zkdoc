@@ -14,11 +14,7 @@ A `tabs` is the container for the `tab` components.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Containers_Tabs.PNG
-title="ZKComRef_Containers_Tabs.PNG" />
-<figcaption>ZKComRef_Containers_Tabs.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Containers_Tabs.PNG)
 
 ``` xml
 <zk>

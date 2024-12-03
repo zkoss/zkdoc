@@ -11,11 +11,7 @@
 When user swipe on the content of Listbox, the friendly scrollbar will
 appear.
 
-<figure>
-<img src="images/Listbox_Tablet_Example.png
-title="Listbox_Tablet_Example.png" />
-<figcaption>Listbox_Tablet_Example.png</figcaption>
-</figure>
+![](images/Listbox_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.

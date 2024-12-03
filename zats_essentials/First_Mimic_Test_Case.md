@@ -8,11 +8,7 @@ with no other content at first. It has only one function: when a user
 clicks the button, the label shows "Hello Mimic" as shown in the image
 below.
 
-<figure>
-<img src="images/Smalltalk-mimic-hello.png"
-title="Smalltalk-mimic-hello.png" />
-<figcaption>Smalltalk-mimic-hello.png</figcaption>
-</figure>
+![](images/Smalltalk-mimic-hello.png")
 
 **ZUL of our simple application**
 

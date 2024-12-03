@@ -36,11 +36,7 @@ frequent unit testing during a agile development process.
 
 The concept is as follows:
 
-<figure>
-<img src="images/Smalltalk-ZatsMimicConcept.png"
-title="Smalltalk-ZatsMimicConcept.png" />
-<figcaption>Smalltalk-ZatsMimicConcept.png</figcaption>
-</figure>
+![](images/Smalltalk-ZatsMimicConcept.png")
 
 Testers write test cases to simulate user action such as clicking or
 typing with operation agents. Operation agent communicates with server

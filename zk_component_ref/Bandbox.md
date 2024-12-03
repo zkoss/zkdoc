@@ -22,11 +22,7 @@ to represent the popup window as a search dialog.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Bandbox_Example.png
-title="ZKComRef_Bandbox_Example.png" />
-<figcaption>ZKComRef_Bandbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Bandbox_Example.png)
 
 ``` xml
     <bandbox>
@@ -76,11 +72,7 @@ and then close the popup.
 
 ## Autodrop
 
-<figure>
-<img src="images/ZKComRef_Bandbox_Autodrop.PNG
-title="ZKComRef_Bandbox_Autodrop.PNG" />
-<figcaption>ZKComRef_Bandbox_Autodrop.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Bandbox_Autodrop.PNG)
 
 By default, the popup window won't be opened until user clicks the
 button, or presses `Alt+DOWN` on the keyboard. However, you can set the
@@ -277,7 +269,7 @@ zul.jar.
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="images/bandbox_mold_rounded.png
+<td><p>![](images/bandbox_mold_rounded.png
 title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

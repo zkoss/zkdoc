@@ -22,11 +22,7 @@ up.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Groupbox_Example.png
-title="ZKComRef_Groupbox_Example.png" />
-<figcaption>ZKComRef_Groupbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Groupbox_Example.png)
 
 ``` xml
  <groupbox width="250px">
@@ -66,11 +62,7 @@ gb.setParent(outer);
 
 Specify the CSS style for the content block of the groupbox.
 
-<figure>
-<img src="images/ZKComRef_Groupbox_ContentStyle.png
-title="ZKComRef_Groupbox_ContentStyle.png" />
-<figcaption>ZKComRef_Groupbox_ContentStyle.png</figcaption>
-</figure>
+![](images/ZKComRef_Groupbox_ContentStyle.png)
 
 ``` xml
 <groupbox width="250px" mold="3d"
@@ -88,11 +80,7 @@ title="ZKComRef_Groupbox_ContentStyle.png" />
 
 Specify the CSS class for the content block of the groupbox.
 
-<figure>
-<img src="images/ZKComRef_Groupbox_ContentStyle.png
-title="ZKComRef_Groupbox_ContentStyle.png" />
-<figcaption>ZKComRef_Groupbox_ContentStyle.png</figcaption>
-</figure>
+![](images/ZKComRef_Groupbox_ContentStyle.png)
 
 ``` xml
 <zk>
@@ -238,11 +226,7 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td><figure>
-<img src="images/groupbox_mold_default.png
-title="groupbox_mold_default.png" />
-<figcaption>groupbox_mold_default.png</figcaption>
-</figure></td>
+<td>![](images/groupbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>

@@ -16,11 +16,7 @@ audio. Developers might be able to control the play of an audio by the
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Audio_Example.png
-title="ZKComRef_Audio_Example.png" />
-<figcaption>ZKComRef_Audio_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Audio_Example.png)
 
 ``` xml
  <audio src="music.wav" controls="true"></audio>

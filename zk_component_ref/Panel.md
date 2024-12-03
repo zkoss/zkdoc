@@ -29,11 +29,7 @@ can be used throughout the panel.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Panel_Simple_Examples.PNG
-title="ZKComRef_Panel_Simple_Examples.PNG" />
-<figcaption>ZKComRef_Panel_Simple_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Panel_Simple_Examples.PNG)
 
 ``` xml
     <panel height="20%"  style="margin-bottom:10px"

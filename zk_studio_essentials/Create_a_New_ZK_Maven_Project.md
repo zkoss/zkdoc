@@ -17,19 +17,19 @@ continue the following steps.
 
 1\. Select **\[File\]/\[New\]/\[Project\]** to open a New Project
 dialog. Then choose **Maven Project** under **Maven** item and click
-"Next \>". ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project-wizard.png " center | 500px")
+"Next \>". ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project-wizard.png)
 
-2\. Select location. We usually use default workspace location. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project-wizard-2.png " center | 500px")
+2\. Select location. We usually use default workspace location. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project-wizard-2.png)
 
 3\. Enter "zk" in filter to search ZK maven archetypes and select what
-you want. Click **Next**. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-archetype.png " center | 500px")
+you want. Click **Next**. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-archetype.png)
 
 - Notice: If you cannot find ZK maven archetypes, please refer to [ Add ZK Maven Archeype](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven#Add_ZK_Maven_Archetype).
 
 4\. Enter preferred ZK version in `zk-version-since` and click
-**Finish**. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-archetype-parameter.png " center | 500px")
+**Finish**. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-archetype-parameter.png)
 
-5\. The new ZK maven project is created with ZK dependencies added. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project.png " center | 400px")
+5\. The new ZK maven project is created with ZK dependencies added. ![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-project.png)
 
 # Run ZK Maven Project
 
@@ -44,6 +44,6 @@ center \| 500px]({{site.baseUrl}}/zk_studio_essentials/studio-maven-run-jetty.pn
   needs to download some necessary resources, please be patient.
 
 3\. You can see the server starting messages showing up in Console view.
-![ center \| 600px]({{site.baseUrl}}/zk_studio_essentials/studio-maven-run-console.png " center | 600px")
+![]({{site.baseUrl}}/zk_studio_essentials/studio-maven-run-console.png)
 
 Then visit <http://localhost:8080/yourprojectname> to see the result.

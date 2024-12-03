@@ -132,7 +132,7 @@ public class TodoListController extends SelectorComposer<Component>{
 There is a priority radiogroup in todo item detail editor appeared on
 the right hand side when you select an item.
 
-![ center]({{site.baseurl}}/zk_essentials/images/ze-ch6-priority.png  " center")
+![]({{site.baseurl}}/zk_essentials/images/ze-ch6-priority.png )
 
 <div style="text-align:center">
 <strong>Todo Item's Priority Radiogroup</strong>
@@ -502,7 +502,7 @@ public class TodoListController extends SelectorComposer<Component>{
 
 Implement deletion feature is similar to completing a todo item. We also
 forward each delete button's
-(![]({{site.baseurl}}/zk_essentials/images/ze-ch6-cross.png "fig:Tutorial-ch6-cross.png")) `onClick`
+(![]({{site.baseurl}}/zk_essentials/images/ze-ch6-cross.png)) `onClick`
 event to the *Listbox* that encloses those buttons.
 
 **Forward delete button's `onClick`**

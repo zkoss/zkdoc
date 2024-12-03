@@ -31,11 +31,7 @@ should not have to encode it again.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Applet_Examples.PNG
-title="ZKComRef_Applet_Examples.PNG" />
-<figcaption>ZKComRef_Applet_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Applet_Examples.PNG)
 
 ``` xml
     <applet codebase="img/" code="ticker.class" msg="ZK is Simple and Rich!" width="580px" />

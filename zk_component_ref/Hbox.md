@@ -26,11 +26,7 @@ of TABLE).
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Hbox_Simple_Examples.PNG
-title="ZKComRef_Hbox_Simple_Examples.PNG" />
-<figcaption>ZKComRef_Hbox_Simple_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Hbox_Simple_Examples.PNG)
 
 ``` xml
 <zk>
@@ -52,11 +48,7 @@ title="ZKComRef_Hbox_Simple_Examples.PNG" />
 
 ## Align and Pack
 
-<figure>
-<img src="images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG
-title="ZKComRef_Hbox_Simple_Examples_align_pack.PNG" />
-<figcaption>ZKComRef_Hbox_Simple_Examples_align_pack.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG)
 
 ``` xml
 <zk xmlns:n="native">

@@ -17,11 +17,7 @@ application contains a *lisbox* with 1000 *listitems* and has a simple
 logic: when a user selects an item, the label at the bottom will display
 the item's content. Each *listcell* has one child component *label*.
 
-<figure>
-<img src="images/Smalltalk-mimic-render.png"
-title="Smalltalk-mimic-render.png" />
-<figcaption>Smalltalk-mimic-render.png</figcaption>
-</figure>
+![](images/Smalltalk-mimic-render.png")
 
 **RenderTest.java**
 

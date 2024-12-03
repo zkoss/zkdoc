@@ -17,11 +17,7 @@ in a Multislider.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Sliderbuttons.png
-title="ZKComRef_Sliderbuttons.png" />
-<figcaption>ZKComRef_Sliderbuttons.png</figcaption>
-</figure>
+![](images/ZKComRef_Sliderbuttons.png)
 
 ``` xml
 <zk>

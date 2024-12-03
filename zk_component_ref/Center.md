@@ -16,11 +16,7 @@ child.
 
 # Example
 
-<figure>
-<img src="images/ZKCompRef_Borderlayout.jpg
-title="ZKCompRef_Borderlayout.jpg" />
-<figcaption>ZKCompRef_Borderlayout.jpg</figcaption>
-</figure>
+![](images/ZKCompRef_Borderlayout.jpg)
 
 ``` xml
 <borderlayout height="450px">

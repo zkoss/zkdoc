@@ -10,11 +10,7 @@
 
 Big icons for tablet devices
 
-<figure>
-<img src="images/Doublespinner_Tablet_Example.png
-title="Doublespinner_Tablet_Example.png" />
-<figcaption>Doublespinner_Tablet_Example.png</figcaption>
-</figure>
+![](images/Doublespinner_Tablet_Example.png)
 
 # Unsupported API
 

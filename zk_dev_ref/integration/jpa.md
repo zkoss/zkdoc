@@ -76,7 +76,7 @@ The minimal Maven dependencies you need are:
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png "Icon_info.png") **Note:** If you don't use Maven,
+![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png) **Note:** If you don't use Maven,
 please refer to JPA vendor's documentation to know which JAR file you
 need.
 

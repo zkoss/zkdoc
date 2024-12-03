@@ -38,11 +38,7 @@ declaration. For more details see the section on Axillary Headers below.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Grid_Example.png
-title="ZKComRef_Grid_Example.png" />
-<figcaption>ZKComRef_Grid_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Example.png)
 
 ``` xml
  <window title="Grid Demo" border="normal" width="360px">
@@ -220,11 +216,7 @@ Paging](ZK%20Component%20Reference/Supplementary/Paging), you
 can assign the `paginal` attribute explicitly. Note: if it is not set
 explicitly, it is the same as the `paging` property.
 
-<figure>
-<img src="images/ZKComRef_Grid_Paginal.png
-title="ZKComRef_Grid_Paginal.png" />
-<figcaption>ZKComRef_Grid_Paginal.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Paginal.png)
 
 ``` xml
  
@@ -495,11 +487,7 @@ In the following example, we prepared a list model called `strset`,
 assign it to a grid using the `model` attribute. Then, the grid will do
 the rest.
 
-<figure>
-<img src="images/ZKComRef_Grid_LiveData.png
-title="ZKComRef_Grid_LiveData.png" />
-<figcaption>ZKComRef_Grid_LiveData.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_LiveData.png)
 
 ``` xml
 <window title="Live Grid" border="normal" width="100px">
@@ -557,11 +545,7 @@ and this even works under ROD.
 
 # Scrollable Grid
 
-<figure>
-<img src="images/ZKComRef_Grid_ScrollableGrid.png
-title="ZKComRef_Grid_ScrollableGrid.png" />
-<figcaption>ZKComRef_Grid_ScrollableGrid.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_ScrollableGrid.png)
 
 A grid can be scrollable and has a frozen header if you specify the
 `height` attribute and there is not enough space to display all data.
@@ -627,11 +611,7 @@ configuration in zk.xml.
 In addition to column headers, you can specify auxiliary headers with
 the `auxhead` and `auxheader` components as follows.
 
-<figure>
-<img src="images/ZKComRef_Grid_AuxiliaryHeaders.png
-title="ZKComRef_Grid_AuxiliaryHeaders.png" />
-<figcaption>ZKComRef_Grid_AuxiliaryHeaders.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_AuxiliaryHeaders.png)
 
 ``` xml
 <grid>
@@ -700,21 +680,13 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation.jpg
-title="Auxheader_rowspan_limitation.jpg" />
-<figcaption>Auxheader_rowspan_limitation.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation01.jpg
-title="Auxheader_rowspan_limitation01.jpg" />
-<figcaption>Auxheader_rowspan_limitation01.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
@@ -742,11 +714,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation02.jpg
-title="Auxheader_rowspan_limitation02.jpg" />
-<figcaption>Auxheader_rowspan_limitation02.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component will
 depend the Column component. Thus, if you'd like to specify the width in
@@ -779,11 +747,7 @@ make the empty Columns component invisible. For example,
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation03.jpg
-title="Auxheader_rowspan_limitation03.jpg" />
-<figcaption>Auxheader_rowspan_limitation03.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation03.jpg)
 
 # Properties
 
@@ -988,11 +952,7 @@ developers to add more information on each row. For example,
 
 For example,
 
-<figure>
-<img src="images/ZKComRef_Grid_Columns_Menu.png
-title="_ZKComRef_Grid_Columns_Menu.png" />
-<figcaption>_ZKComRef_Grid_Columns_Menu.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Columns_Menu.png)
 
 ``` xml
 <zk>
@@ -1018,11 +978,7 @@ When the user groups the content of the grid, the column's menu will
 show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
 include version-badge.html version=6.5.0 %}
 
-<figure>
-<img src="images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG
-title="_ZKComRef_Grid_Columns_Menu_Ungroup.PNG" />
-<figcaption>_ZKComRef_Grid_Columns_Menu_Ungroup.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
 
 **Note:** If the Grid contains with Model, *GroupsModel*, you have to
 register an *onUngroup* event for column to show an ungroup icon and
@@ -1102,11 +1058,7 @@ to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
 <javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
 
-<figure>
-<img src="images/ZKComRef_Grid_Grouping.png
-title="ZKComRef_Grid_Grouping.png" />
-<figcaption>ZKComRef_Grid_Grouping.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Grouping.png)
 
 ``` xml
 <zk>

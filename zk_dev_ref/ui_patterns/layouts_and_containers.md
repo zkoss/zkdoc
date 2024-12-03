@@ -365,11 +365,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/DrBorderlayout_Center_scrolling.png
-title="DrBorderlayout_Center_scrolling.png" />
-<figcaption>DrBorderlayout_Center_scrolling.png</figcaption>
-</figure></td>
+<td>![](images/DrBorderlayout_Center_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> height=</span><span class="st">&quot;300px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -818,11 +814,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/DrGroupbox3d_scrolling.png
-title="DrGroupbox3d_scrolling.png" />
-<figcaption>DrGroupbox3d_scrolling.png</figcaption>
-</figure></td>
+<td>![](images/DrGroupbox3d_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">groupbox</span><span class="ot"> mold=</span><span class="st">&quot;3d&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    contentStyle=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>

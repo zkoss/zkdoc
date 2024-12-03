@@ -15,11 +15,7 @@ Used to create a separator between menu items..
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Menuseparator.png
-title="ZKComRef_Menuseparator.png" />
-<figcaption>ZKComRef_Menuseparator.png</figcaption>
-</figure>
+![](images/ZKComRef_Menuseparator.png)
 
 ``` xml
 <menubar>

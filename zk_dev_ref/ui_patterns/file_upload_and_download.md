@@ -84,11 +84,7 @@ server to a local folder. For example,
 <button label="Download a file" onClick='Filedownload.save("~./zklogo.png", null);'/>
 ```
 
-<figure>
-<img src="images/10000000000002AF000001BB582C2DD7.png
-title="10000000000002AF000001BB582C2DD7.png" />
-<figcaption>10000000000002AF000001BB582C2DD7.png</figcaption>
-</figure>
+![](images/10000000000002AF000001BB582C2DD7.png)
 
 The file could be a static resource, an input stream, a file, a URL and
 others. Please refer to [ZK Component

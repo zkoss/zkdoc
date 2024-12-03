@@ -3,11 +3,7 @@ The widget class must extend from
 classes. There are several skeletal implementations available. The
 skeletal implementations are shown in the image below.
 
-<figure>
-<img src="images/ZKComDevEss_widget_hierarchy.png"
-title="ZKComDevEss_widget_hierarchy.png" />
-<figcaption>ZKComDevEss_widget_hierarchy.png</figcaption>
-</figure>
+![](images/ZKComDevEss_widget_hierarchy.png")
 
 For the purposes of this tutorial, we will use
 <javadoc directory="jsdoc">zk.Widget</javadoc>. Before we proceed, we

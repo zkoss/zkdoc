@@ -78,9 +78,9 @@ renders a Step object with your data.
 
 Set whether the labels in children steps are wrapped. (Default: false)
 
-true: ![](images/Stepber-WrappedLabels.png "Stepber-WrappedLabels.png")
+true: ![](images/Stepber-WrappedLabels.png)
 
-false: ![](images/Stepbar-example.png "Stepbar-example.png")
+false: ![](images/Stepbar-example.png)
 
 # Supported Events
 

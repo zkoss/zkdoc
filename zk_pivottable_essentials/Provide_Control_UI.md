@@ -64,22 +64,14 @@ public class PivotController extends GenericForwardComposer {
 
 It will look like:
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_01.png"
-title="ZKPivotEsn_pfc_control_01.png" />
-<figcaption>ZKPivotEsn_pfc_control_01.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_01.png")
 
 The fields in the four area are draggable. You can move them to other
 pools, so the model and pivot table will be updated accordingly.
 
 Sort options are available on row and column fields.
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_02.png"
-title="ZKPivotEsn_pfc_control_02.png" />
-<figcaption>ZKPivotEsn_pfc_control_02.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_02.png")
 
  
 
@@ -98,19 +90,11 @@ You can specify layout on PivotFieldControl:
 
 vertical:
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_03_v.png"
-title="ZKPivotEsn_pfc_control_03_v.png" />
-<figcaption>ZKPivotEsn_pfc_control_03_v.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_03_v.png")
 
 horizontal:
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_03_h.png"
-title="ZKPivotEsn_pfc_control_03_h.png" />
-<figcaption>ZKPivotEsn_pfc_control_03_h.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_03_h.png")
 
 ### Labels
 
@@ -141,19 +125,11 @@ pivot.fieldControl.rowListTitle=My Rows
 
 Then you shall see the label is changed:
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_04.png"
-title="ZKPivotEsn_pfc_control_04.png" />
-<figcaption>ZKPivotEsn_pfc_control_04.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_04.png")
 
 All the available keys are defined as the following:
 
-<figure>
-<img src="images/ZKPivotEsn_pfc_control_05.png"
-title="ZKPivotEsn_pfc_control_05.png" />
-<figcaption>ZKPivotEsn_pfc_control_05.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_pfc_control_05.png")
 
 > ------------------------------------------------------------------------
 >

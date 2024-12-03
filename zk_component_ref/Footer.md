@@ -19,11 +19,7 @@ Unlike Column, you could place any child in a grid footer.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Foot_Example.png
-title="ZKComRef_Foot_Example.png" />
-<figcaption>ZKComRef_Foot_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Foot_Example.png)
 
 ``` xml
  <grid width="300px">

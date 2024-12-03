@@ -29,11 +29,7 @@ the developer tool.
 
   
   
-<figure>
-<img src="images/Zkless_servlet_scaffod.png
-title="Zkless_servlet_scaffod.png" />
-<figcaption>Zkless_servlet_scaffod.png</figcaption>
-</figure>
+![](images/Zkless_servlet_scaffod.png)
 
 # Step to Customize Component by LESS
 

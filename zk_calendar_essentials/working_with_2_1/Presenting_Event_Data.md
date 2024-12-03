@@ -70,8 +70,4 @@ ZK Calendar.
 
 The above code's output is shown below.
 
-<figure>
-<img src="images/ZKCalEss_MemoryModelResult.png
-title="ZKCalEss_MemoryModelResult.png" />
-<figcaption>ZKCalEss_MemoryModelResult.png</figcaption>
-</figure>
+![](images/ZKCalEss_MemoryModelResult.png)

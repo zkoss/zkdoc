@@ -28,11 +28,7 @@ The visible group is called *selected*, which can be retrieved by use of
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Tabbox_Examples.PNG
-title="ZKComRef_Tabbox_Examples.PNG" />
-<figcaption>ZKComRef_Tabbox_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Tabbox_Examples.PNG)
 
 ``` xml
 <zk>
@@ -74,11 +70,7 @@ controls in the tab bar acting like a menu system.
 Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient
 Tabbox.
 
-<figure>
-<img src="images/ZKComRef_Tabbox_Toolbar_Examples.png
-title="ZKComRef_Tabbox_Toolbar_Examples.png" />
-<figcaption>ZKComRef_Tabbox_Toolbar_Examples.png</figcaption>
-</figure>
+![](images/ZKComRef_Tabbox_Toolbar_Examples.png)
 
 ``` xml
 <tabbox width="250px">
@@ -119,7 +111,7 @@ includes 3 tabpanels and all of them use the maximum height.
 
 Note: The Client ROD feature will be disabled if it is set to true.
 
-![](images/tabbox_maximalHeight_0.png "tabbox_maximalHeight_0.png")![](images/tabbox_maximalHeight_1.png "tabbox_maximalHeight_1.png")![](images/tabbox_maximalHeight_2.png "tabbox_maximalHeight_2.png")
+![](images/tabbox_maximalHeight_0.png)![](images/tabbox_maximalHeight_1.png)![](images/tabbox_maximalHeight_2.png)
 
 ``` xml
 <tabbox maximalHeight="true" width="300px">
@@ -204,62 +196,19 @@ zul.jar.
 <td><center>
 <p>accordion</p>
 </center></td>
-<td><figure>
-<img src="images/tabbox_mold_accordion.png
-title="tabbox_mold_accordion.png" />
-<figcaption>tabbox_mold_accordion.png</figcaption>
-</figure></td>
+<td>![](images/tabbox_mold_accordion.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>accordion-lite</p>
 </center></td>
-<td><p><img src="images/tabbox_mold_accordion-lite.png
-title="tabbox_mold_accordion-lite.png"
-alt="tabbox_mold_accordion-lite.png" /> {% include DeprecatedSince.md version=7.0.0 %}</p></td>
-</tr>
-</tbody>
-</table>
-
-# Supported Orients
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Screenshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>top</p>
-</center></td>
-<td>![](images/tabbox_orient_top.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>left</p>
-</center></td>
-<td><figure>
-<img src="images/tabbox_orient_vertical.png
-title="tabbox_orient_vertical.png" />
-<figcaption>tabbox_orient_vertical.png</figcaption>
-</figure></td>
+<td><p>![](images/tabbox_mold_accordion-lite.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>right</p>
 </center></td>
-<td><figure>
-<img src="images/tabbox_orient_vertical-right.png
-title="tabbox_orient_vertical-right.png" />
-<figcaption>tabbox_orient_vertical-right.png</figcaption>
-</figure></td>
+<td>![](images/tabbox_orient_vertical-right.png)</td>
 </tr>
 <tr class="even">
 <td><center>

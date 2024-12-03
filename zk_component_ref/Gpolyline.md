@@ -15,11 +15,7 @@ points and visible zoom level(0~3).
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Gpolyline_Example.png
-title="ZKComRef_Gpolyline_Example.png" />
-<figcaption>ZKComRef_Gpolyline_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Gpolyline_Example.png)
 
 ``` xml
     <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>

@@ -99,21 +99,13 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation.jpg
-title="Auxheader_rowspan_limitation.jpg" />
-<figcaption>Auxheader_rowspan_limitation.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation01.jpg
-title="Auxheader_rowspan_limitation01.jpg" />
-<figcaption>Auxheader_rowspan_limitation01.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
@@ -141,11 +133,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation02.jpg
-title="Auxheader_rowspan_limitation02.jpg" />
-<figcaption>Auxheader_rowspan_limitation02.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component depend
 on the Column component. Thus, if you'd like to specify the width in the
@@ -178,11 +166,7 @@ empty Columns component invisible. For example,
 </grid>
 ```
 
-<figure>
-<img src="images/Auxheader_rowspan_limitation03.jpg
-title="Auxheader_rowspan_limitation03.jpg" />
-<figcaption>Auxheader_rowspan_limitation03.jpg</figcaption>
-</figure>
+![](images/Auxheader_rowspan_limitation03.jpg)
 
 # Supported Events
 

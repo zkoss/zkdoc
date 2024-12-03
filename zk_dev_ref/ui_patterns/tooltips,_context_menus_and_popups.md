@@ -113,11 +113,7 @@ Here is another example: context menus versus right clicks.
 </zk>
 ```
 
-<figure>
-<img src="images/100000000000017500000052E60F488A.png
-title="100000000000017500000052E60F488A.png" />
-<figcaption>100000000000017500000052E60F488A.png</figcaption>
-</figure>
+![](images/100000000000017500000052E60F488A.png)
 
 Notice that the `menupopup` is not visible until a user right-clicks on
 a component that is associated with its’ ID.

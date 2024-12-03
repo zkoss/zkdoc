@@ -105,11 +105,7 @@ the operation is in progress or has finished. For example,
 Clients.showBusy(window, "Waiting for server...");
 ```
 
-<figure>
-<img src="images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png</figcaption>
-</figure>
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png)
 
 ## showNotification
 
@@ -128,12 +124,7 @@ Clients.showNotification(msg); // display a global notification box
 Clients.showNotification(msg, component); // display a notification box pointing to a component
 ```
 
-<figure>
-<img
-src="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png"
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png</figcaption>
-</figure>
+![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png")
 
 You can also specify its position, style, and duration (for
 auto-dismiss):
@@ -144,21 +135,11 @@ Clients.showNotification(msg, type, component, position, duration);
 
 Type determines the style of the notification box.
 
-<figure>
-<img
-src="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png"
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png</figcaption>
-</figure>
+![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png")
 
 Here are the available positions:
 
-<figure>
-<img
-src="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png"
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png</figcaption>
-</figure>
+![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png")
 
 ### Closable
 
@@ -170,12 +151,7 @@ box manually.
 Clients.showNotification(msg, closable); 
 ```
 
-<figure>
-<img
-src="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png"
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png</figcaption>
-</figure>
+![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png")
 
 ### Multiline
 
@@ -208,11 +184,7 @@ This class offers a collection of methods showing a toast notification,
 which is dismissed upon left click (like a Popup). Unlike Notification,
 Toast is stackable.
 
-<figure>
-<img src="images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png
-title="ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png" />
-<figcaption>ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png</figcaption>
-</figure>
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
 
 ``` java
 Toast.show(msg); // display a toast notification

@@ -25,11 +25,7 @@ for more details.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Fragment_Example.png
-title="ZKComRef_Fragment_Example.png" />
-<figcaption>ZKComRef_Fragment_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Fragment_Example.png)
 
 ``` xml
 <zk>

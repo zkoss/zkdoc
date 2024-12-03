@@ -141,11 +141,7 @@ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK
 Assume the image below is our target design for Borderlayout component
 and Splitter component.
 
-<figure>
-<img src="images/styleguide-borderlayout-design.png
-title="styleguide-borderlayout-design.png" />
-<figcaption>styleguide-borderlayout-design.png</figcaption>
-</figure>
+![](images/styleguide-borderlayout-design.png)
 
 ## Implementation Details
 
@@ -307,11 +303,7 @@ title="styleguide-borderlayout-design.png" />
 
 ## Final result
 
-<figure>
-<img src="images/styleguide-borderlayout.png
-title="styleguide-borderlayout.png" />
-<figcaption>styleguide-borderlayout.png</figcaption>
-</figure>
+![](images/styleguide-borderlayout.png)
 
 # Additional Customization
 

@@ -18,11 +18,7 @@ column is mainly to define attributes for each cell in the grid.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Grid_Example.png‎
-title="ZKComRef_Grid_Example.png‎" />
-<figcaption>ZKComRef_Grid_Example.png‎</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Example.png‎)
 
 ``` xml
     <window title="Grid Demo" border="normal" width="50%">

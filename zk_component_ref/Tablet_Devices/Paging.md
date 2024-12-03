@@ -16,11 +16,7 @@ attribute.
 <listbox mold="paging" pageSize="5" xmlns:ca="client/attribute" ca:data-swipeable="true"></listbox>
 ```
 
-<figure>
-<img src="images/Paging_Tablet_Example.png
-title="Paging_Tablet_Example.png" />
-<figcaption>Paging_Tablet_Example.png</figcaption>
-</figure>
+![](images/Paging_Tablet_Example.png)
 
 # Version History
 

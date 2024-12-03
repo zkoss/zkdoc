@@ -170,7 +170,7 @@ In the ZUL Editor, you can navigate to the Java class specified in
 **use="**ClassName**"** and **apply="**ClassName**"** attributes using
 Hyperlink Navigation.
 
-![ center \| 700px](studio-hyperlink.png " center | 700px") ![ center \|
+![](studio-hyperlink.png) ![ center \|
 700px](studio-hyperlink-class.png " center | 700px")
 
 (For this to work you need to set a source file for that class. If the

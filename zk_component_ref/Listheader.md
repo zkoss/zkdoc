@@ -17,11 +17,7 @@ a list box. Its parent must be `Listhead`.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Listbox_Example.png
-title="ZKComRef_Listbox_Example.png" />
-<figcaption>ZKComRef_Listbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Listbox_Example.png)
 
 ``` xml
  <window title="listbox demo" border="normal" width="250px">

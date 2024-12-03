@@ -16,11 +16,7 @@ An edit box for holding a constrained double.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Doublespinner.png
-title="ZKComRef_Doublespinner.png" />
-<figcaption>ZKComRef_Doublespinner.png</figcaption>
-</figure>
+![](images/ZKComRef_Doublespinner.png)
 
 ``` xml
      <doublespinner step="0.5" />
@@ -39,11 +35,7 @@ title="ZKComRef_Doublespinner.png" />
 Because inplace editing function in ZK is pure client side action, so we
 can use client api to modify the width (server side do not need to know)
 
-<figure>
-<img src="images/ZK_Component_Reference-Input-Spinner-inplace.jpg
-title="ZK_Component_Reference-Input-Spinner-inplace.jpg" />
-<figcaption>ZK_Component_Reference-Input-Spinner-inplace.jpg</figcaption>
-</figure>
+![](images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
 
 ``` xml
 <zk xmlns:c="client">

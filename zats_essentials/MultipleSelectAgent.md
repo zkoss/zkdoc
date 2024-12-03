@@ -20,11 +20,7 @@ that can switch the *listbox* between single and multiple selection
 mode. When we select one or more items, the label at the bottom will
 display all selected item's label.
 
-<figure>
-<img src="images/Smalltalk-mimic-multipleselect.png"
-title="Smalltalk-mimic-multipleselect.png" />
-<figcaption>Smalltalk-mimic-multipleselect.png</figcaption>
-</figure>
+![](images/Smalltalk-mimic-multipleselect.png")
 
 In the test case below, we perform three different tests;
 

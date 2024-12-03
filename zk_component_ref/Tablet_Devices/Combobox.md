@@ -17,11 +17,7 @@ Automatically disabled APIs:
 
 Big icons for tablet devices
 
-<figure>
-<img src="images/Combobox_Tablet_Example.png
-title="Combobox_Tablet_Example.png" />
-<figcaption>Combobox_Tablet_Example.png</figcaption>
-</figure>
+![](images/Combobox_Tablet_Example.png)
 
 # Version History
 

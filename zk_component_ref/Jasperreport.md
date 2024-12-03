@@ -45,11 +45,7 @@ Seven](https://github.com/Jaspersoft/jasperreports-pdf-lib7).
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Jasperreport_Examples.PNG
-title="ZKComRef_Jasperreport_Examples.PNG" />
-<figcaption>ZKComRef_Jasperreport_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Jasperreport_Examples.PNG)
 
 ``` xml
     <jasperreport id="report" height="360px" />

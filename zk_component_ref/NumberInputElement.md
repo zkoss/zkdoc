@@ -22,11 +22,7 @@ all of the NumberInputElement.
 
 For example,
 
-<figure>
-<img src="images/NumberInputElement-Locales.png
-title="NumberInputElement-Locales.png" />
-<figcaption>NumberInputElement-Locales.png</figcaption>
-</figure>
+![](images/NumberInputElement-Locales.png)
 
 ``` xml
 <grid width="550px">

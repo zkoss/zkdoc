@@ -36,11 +36,7 @@ An edit box for holding a constrained integer.
 Because inplace editing function in ZK is pure client side action, so we
 can use client api to modify the width (server side do not need to know)
 
-<figure>
-<img src="images/ZK_Component_Reference-Input-Spinner-inplace.jpg
-title="ZK_Component_Reference-Input-Spinner-inplace.jpg" />
-<figcaption>ZK_Component_Reference-Input-Spinner-inplace.jpg</figcaption>
-</figure>
+![](images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
 
 ``` xml
 <zk xmlns:c="client">
@@ -154,7 +150,7 @@ zul.jar.
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="images/spinner_mold_rounded.png
+<td><p>![](images/spinner_mold_rounded.png
 title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

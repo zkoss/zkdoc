@@ -35,7 +35,7 @@ visibility](http://www.w3.org/TR/page-visibility/).
 In a chatroom application, you detect a user who switches to another
 tab, then notify other users. Please check the [complete
 source](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/events/chatroom.zul).
-![ center](chatroom.png " center")
+![](chatroom.png)
 
 # Version History
 

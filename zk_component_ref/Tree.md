@@ -5,8 +5,7 @@
 - Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
 - Java API: <javadoc>org.zkoss.zul.Tree </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Tree </javadoc>
-- Style Guide: [
-  Tree](ZK_Style_Guide/XUL_Component_Specification/Tree)
+- Style Guide: [Tree](ZK_Style_Guide/XUL_Component_Specification/Tree)
 
 # Employment/Purpose
 
@@ -28,11 +27,7 @@ tree will display nothing in its content.
 
 ## 2-Column Tree
 
-<figure>
-<img src="images/ZKComRef_Tree_Example.png
-title="ZKComRef_Tree_Example.png" />
-<figcaption>ZKComRef_Tree_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Tree_Example.png)
 
 ``` xml
 <window title="tree demo" border="normal" width="400px" >
@@ -283,11 +278,7 @@ the model instead of the tree itself.
 
 ## The Checkmark Property
 
-<figure>
-<img src="images/ZKComRef_Tree_checkmark.png
-title="ZKComRef_Tree_checkmark.png" />
-<figcaption>ZKComRef_Tree_checkmark.png</figcaption>
-</figure>
+![](images/ZKComRef_Tree_checkmark.png)
 
 The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each tree item. If the `multiple` attribute is
@@ -397,17 +388,11 @@ tree.setModel(model);
 tree.setMultiple(true);
 ```
 
-<figure>
-<video src="DefaultTristateTreeModel_demo.mov"
-title="DefaultTristateTreeModel_demo.mov" width="1400" controls=""><a
-href="DefaultTristateTreeModel_demo.mov">Video</a></video>
-<figcaption>DefaultTristateTreeModel_demo.mov</figcaption>
-</figure>
+
+<video src="DefaultTristateTreeModel_demo.mov")
 
 Treecols's header checkmark also support tristate
-<img src="images/DefaultTristateTreeModelwithTreecol.png
-title="DefaultTristateTreeModelwithTreecol.png" width="700"
-alt="DefaultTristateTreeModelwithTreecol.png" />
+![](images/DefaultTristateTreeModelwithTreecol.png)
 
 # Properties
 

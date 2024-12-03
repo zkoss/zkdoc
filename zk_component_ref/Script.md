@@ -17,11 +17,7 @@ by the most of browsers. The simplest format is as follows.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Script_Example.png
-title="ZKComRef_Script_Example.png" />
-<figcaption>ZKComRef_Script_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Script_Example.png)
 
 ``` xml
 <window id="win">

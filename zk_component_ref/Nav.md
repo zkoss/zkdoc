@@ -47,11 +47,7 @@ API. The code snippets as shown below:
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZKComRef_Nav_badgeText.png
-title="ZKComRef_Nav_badgeText.png" />
-<figcaption>ZKComRef_Nav_badgeText.png</figcaption>
-</figure></td>
+<td>![](images/ZKComRef_Nav_badgeText.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">nav</span><span class="ot"> label=</span><span class="st">&quot;Get Started&quot;</span><span class="ot"> iconSclass=</span><span class="st">&quot;z-icon-th-list&quot;</span><span class="ot"> badgeText=</span><span class="st">&quot;3&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">navitem</span><span class="ot"> label=</span><span class="st">&quot;Step One&quot;</span> /&gt;</span>

@@ -166,7 +166,7 @@ zul.jar.
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="images/timebox_mold_rounded.png
+<td><p>![](images/timebox_mold_rounded.png
 title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

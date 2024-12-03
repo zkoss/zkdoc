@@ -25,11 +25,7 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout.png title="ZKCompRef_GoldenLayout.png"
-width="910" />
-<figcaption>ZKCompRef_GoldenLayout.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout.png )
 
 ``` xml
     <goldenlayout vflex="1" hflex="1">
@@ -117,25 +113,13 @@ From the example above, it's possible to divide in two ways.
 <tbody>
 <tr class="odd">
 <td><center>
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_areas.png
-title="ZKCompRef_GoldenLayout_areas.png" />
-<figcaption>ZKCompRef_GoldenLayout_areas.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_areas.png)
 </center></td>
 <td><center>
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_vertical.png
-title="ZKCompRef_GoldenLayout_vertical.png" />
-<figcaption>ZKCompRef_GoldenLayout_vertical.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_vertical.png)
 </center></td>
 <td><center>
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_horizontal.png
-title="ZKCompRef_GoldenLayout_horizontal.png" />
-<figcaption>ZKCompRef_GoldenLayout_horizontal.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_horizontal.png)
 </center></td>
 </tr>
 </tbody>
@@ -152,43 +136,23 @@ in <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>.
 
 north
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_region_north.png
-title="ZKCompRef_GoldenLayout_region_north.png" />
-<figcaption>ZKCompRef_GoldenLayout_region_north.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_region_north.png)
 
 east
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_region_east.png
-title="ZKCompRef_GoldenLayout_region_east.png" />
-<figcaption>ZKCompRef_GoldenLayout_region_east.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_region_east.png)
 
 south
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_region_south.png
-title="ZKCompRef_GoldenLayout_region_south.png" />
-<figcaption>ZKCompRef_GoldenLayout_region_south.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_region_south.png)
 
 west
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_region_west.png
-title="ZKCompRef_GoldenLayout_region_west.png" />
-<figcaption>ZKCompRef_GoldenLayout_region_west.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_region_west.png)
 
 stack
 
-<figure>
-<img src="images/ZKCompRef_GoldenLayout_region_stack.png
-title="ZKCompRef_GoldenLayout_region_stack.png" />
-<figcaption>ZKCompRef_GoldenLayout_region_stack.png</figcaption>
-</figure>
+![](images/ZKCompRef_GoldenLayout_region_stack.png)
 
 # Supported Events
 

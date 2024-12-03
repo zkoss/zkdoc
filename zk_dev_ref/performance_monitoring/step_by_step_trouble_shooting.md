@@ -5,8 +5,7 @@ determine a bottleneck in a slow performing ZK application.
 Additionally, it offers some conclusions and tips, what the next steps
 would be after identifying the problem area.
 
-A flow chart to summarize the whole trouble shooting process: ![ center
-\| 700px](performance_debug.png " center | 700px")
+A flow chart to summarize the whole troubleshooting process: ![](performance_debug.png)
 
 ## Identify the Bottleneck
 
@@ -22,27 +21,17 @@ browsers provide very sophisticated tools supporting the search for a
 bottleneck and draw some conclusions, and eliminate other possible
 causes easily.
 
-<figure>
-<img src="images/chrome_developer_tools_network.png title="chrome network tab"
-width="400" />
-<figcaption>chrome network tab</figcaption>
-</figure>
+
+![](images/chrome_developer_tools_network.png)
 
 Developer tools - Net(work) :  
-Chrome -\> \[F12\] / \[CTRL + SHIFT + I\]
-
-Firefox -\> \[CTRL + SHIFT + Q\]
-
-Firefox with Firebug -\> \[F12\]
-
-IE9+ -\> \[F12\]
-
-IE8 & others -\> fiddler2
+* Chrome -\> \[F12\] / \[CTRL + SHIFT + I\]
+* Firefox -\> \[CTRL + SHIFT + Q\]
 
 Investigating the network traffic by following the questions below the
 biggest problem area(s) should become apparent after a few minutes:
 
-**1. Are there one or more long running requests?**
+**1. Are there one or more long-running requests?**
 
 NO → [\#Client Side Issue](#Client_Side_Issue)
 
@@ -70,12 +59,7 @@ NO (dynamic request into ZK application)
 wording and
 explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
-<figure>
-<img src="images/chrome_developer_tools_network_timing.png
-title="Example showing a long waiting time i.e. server takes 3.83 seconds to create the response" />
-<figcaption>Example showing a long waiting time i.e. server takes 3.83
-seconds to create the response</figcaption>
-</figure>
+![](images/chrome_developer_tools_network_timing.png)
 
 **CONNECTING** (or one of Proxy, DNS Lookup, Blocking, SSL)
 
@@ -201,17 +185,13 @@ You'll get a nice view like this: (**Update**: since chrome version 58
 the "profiles" and "timeline" are combined in the "performance"-tab
 [more...](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/))
 
-<figure>
-<img src="images/js_profile_flame_chart.png title="js_profile_flame_chart.png"
-width="890" />
-<figcaption>js_profile_flame_chart.png</figcaption>
-</figure>
+![](images/js_profile_flame_chart.png )
 
 This brilliant visualization of the JS execution flow and stack depth
 can be used / interpreted in many ways to extract the information you
 require.
 
-<img src="images/js_timeline_events.png
+![](images/js_timeline_events.png
 title="Another interesting view to determine the render time is the Timeline - Events view in Chrome"
 width="300"
 alt="Another interesting view to determine the render time is the Timeline - Events view in Chrome" />

@@ -223,10 +223,10 @@ first.
 
 If you don't know the zul's path or if the path is incorrect, just visit
 <http://localhost:8080>. A browser will show a link with the correct
-context path: ![ center \| 800px](jettyRoot.png " center | 800px")
+context path: ![](jettyRoot.png)
 
 Click the link and it will list folders then you can navigate to find
-the zul. ![ center](listFolder.png " center")
+the zul. ![](listFolder.png)
 
 # How to get Browser Performance Profile
 

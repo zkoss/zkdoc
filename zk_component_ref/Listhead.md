@@ -16,11 +16,7 @@ surpport Listheader as its child.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Listbox_Example.png
-title="ZKComRef_Listbox_Example.png" />
-<figcaption>ZKComRef_Listbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Listbox_Example.png)
 
 ``` xml
  <window title="listbox demo" border="normal" width="250px">
@@ -69,11 +65,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 
 ### Auto
 
-<figure>
-<img src="images/ZKComRef_Listbox_Columns_Menu.PNG
-title="_ZKComRef_Listbox_Columns_Menu.PNG" />
-<figcaption>_ZKComRef_Listbox_Columns_Menu.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Listbox_Columns_Menu.PNG)
 
 ``` xml
 <zk>
@@ -98,11 +90,7 @@ to change this default behavior.
 
 ### Customized Menupopup
 
-<figure>
-<img src="images/ZKComRef_Listbox_Columns_Customized_Menu.png
-title="ZKComRef_Listbox_Columns_Customized_Menu.png" />
-<figcaption>ZKComRef_Listbox_Columns_Customized_Menu.png</figcaption>
-</figure>
+![](images/ZKComRef_Listbox_Columns_Customized_Menu.png)
 
 ``` xml
     <menupopup id="editPopup">

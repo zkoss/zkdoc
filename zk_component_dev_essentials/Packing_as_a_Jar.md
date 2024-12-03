@@ -127,7 +127,7 @@ what do they look like, example from zul.jar
             </td>
             <td>
                 <p><strong>The example from zul.jar</strong>
-                    <img src="{{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_configuration1.jpg" />
+                    ![]({{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_configuration1.jpg)
                 </p>
             </td>
         </tr>
@@ -163,7 +163,7 @@ what do they look like, example from zul.jar
             </td>
             <td>
                 <p><strong>The example from zul.jar</strong>
-                    <img src="{{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_component1.jpg" />
+                    ![]({{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_component1.jpg)
                 </p>
             </td>
         </tr>
@@ -247,7 +247,7 @@ dependency with other package.</em></li>
 </ul></li>
 </ul></td>
 <td><p><strong>Example for box from zul.jar</strong> 
-<img src="{{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_widget1.jpg"/></p></td>
+![]({{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_widget1.jpg)</p></td>
 </tr>
 </tbody>
 </table>
@@ -312,7 +312,7 @@ in xxx.css.dsp files through
 </ul></li>
 </ul></td>
 <td><p><strong>Example from zul.jar</strong></p>
-<img src="{{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_static_resources1.jpg"/></td>
+![]({{site.baseUrl}}/zk_component_dev_essentials/images/Jar_File_static_resources1.jpg)</td>
 </tr>
 </tbody>
 </table>

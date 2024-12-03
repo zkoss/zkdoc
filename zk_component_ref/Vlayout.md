@@ -21,11 +21,7 @@ instead.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Hlayout_Simple_Example.PNG
-title="ZKComRef_Hlayout_Simple_Example.PNG" />
-<figcaption>ZKComRef_Hlayout_Simple_Example.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Hlayout_Simple_Example.PNG)
 
 ``` xml
 <zk>

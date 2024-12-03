@@ -15,11 +15,7 @@ with client/attribute.
 <calendar xmlns:ca="client/attribute" ca:data-swipeable="true" />
 ```
 
-<figure>
-<img src="images/Calendar_Tablet_Example.png
-title="Calendar_Tablet_Example.png" />
-<figcaption>Calendar_Tablet_Example.png</figcaption>
-</figure>
+![](images/Calendar_Tablet_Example.png)
 
 # Version History
 

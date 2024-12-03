@@ -35,29 +35,17 @@ the multi-selection and the select order.
 
 When no item is selected or focused, <b>emptyMessage</b> is visible.
 
-<figure>
-<img src="images/CompREF_Chosenbox_msgEx_01.png
-title="CompREF_Chosenbox_msgEx_01.png" />
-<figcaption>CompREF_Chosenbox_msgEx_01.png</figcaption>
-</figure>
+![](images/CompREF_Chosenbox_msgEx_01.png)
 
 When there is no data to be shown in the model and data 0 already
 selected, <b>noResultText</b> appears.
 
-<figure>
-<img src="images/CompREF_Chosenbox_msgEx_02.png
-title="CompREF_Chosenbox_msgEx_02.png" />
-<figcaption>CompREF_Chosenbox_msgEx_02.png</figcaption>
-</figure>
+![](images/CompREF_Chosenbox_msgEx_02.png)
 
 When there is no item in the model but it is creatable,
 <b>createMessage</b> appears.
 
-<figure>
-<img src="images/CompREF_Chosenbox_msgEx_03.png
-title="CompREF_Chosenbox_msgEx_03.png" />
-<figcaption>CompREF_Chosenbox_msgEx_03.png</figcaption>
-</figure>
+![](images/CompREF_Chosenbox_msgEx_03.png)
 
 ``` xml
     <zscript>

@@ -21,11 +21,7 @@ Panel](ZK_Component_Reference/Containers/Panel)
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Portallayout_Example.PNG
-title="ZKComRef_Portallayout_Example.PNG" />
-<figcaption>ZKComRef_Portallayout_Example.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Portallayout_Example.PNG)
 
 ``` xml
 <portallayout>

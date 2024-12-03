@@ -100,11 +100,7 @@ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK
 Assume the image below is our target design for Window component. No
 border, gradient background, rounded corner or shadow effects.
 
-<figure>
-<img src="images/styleguide-window-design.png
-title="styleguide-window-design.png" />
-<figcaption>styleguide-window-design.png</figcaption>
-</figure>
+![](images/styleguide-window-design.png)
 
 ## Implementation Details
 

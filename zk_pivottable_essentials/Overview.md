@@ -8,11 +8,7 @@ ZK Pivottable brings the power of spreadsheet’s pivot table to Java web
 applications, enabling developers to take advantage of a readymade
 component for demonstrating complex sets of data online.
 
-<figure>
-<img src="images/ZK_Pivot_Esn_difference.png"
-title="ZK_Pivot_Esn_difference.png" />
-<figcaption>ZK_Pivot_Esn_difference.png</figcaption>
-</figure>
+![](images/ZK_Pivot_Esn_difference.png")
 
 ## Visual Demo
 

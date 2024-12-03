@@ -58,11 +58,7 @@ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK
 Assume the image below is our target design for Button component. No
 border, gradient background, rounded corner or shadow effects.
 
-<figure>
-<img src="images/styleguide-button-design.png
-title="styleguide-button-design.png" />
-<figcaption>styleguide-button-design.png</figcaption>
-</figure>
+![](images/styleguide-button-design.png)
 
 ## Implementation Details
 

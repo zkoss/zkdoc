@@ -21,11 +21,7 @@ Columnchildren can only allow Panel as its child.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Columnlayout_Example.png
-title="ZKComRef_Columnlayout_Example.png" />
-<figcaption>ZKComRef_Columnlayout_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Columnlayout_Example.png)
 
 ``` xml
 <columnlayout>

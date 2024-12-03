@@ -31,11 +31,7 @@ client by providing JavaScript code that overrides
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Calendar_Example.png
-title="ZKComRef_Calendar_Example.png" />
-<figcaption>ZKComRef_Calendar_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Calendar_Example.png)
 
 ``` xml
      <calendar id="cal" onChange="in.value = cal.value"/>
@@ -54,11 +50,7 @@ Check
 This is achieved by overriding the default renderer at the client to
 customize the appearance of days on ZK's Calendar. For example,
 
-<figure>
-<img src="images/ZKComRef_Calendar_Example2.png
-title="ZKComRef_Calendar_Example2.png" />
-<figcaption>ZKComRef_Calendar_Example2.png</figcaption>
-</figure>
+![](images/ZKComRef_Calendar_Example2.png)
 
 ``` xml
 <zk>
@@ -80,11 +72,7 @@ title="ZKComRef_Calendar_Example2.png" />
 Calendar supports to show a week number of the year. {% include edition-availability.html edition=pe %}
 {% include version-badge.html version=6.5.0 %}
 
-<figure>
-<img src="images/ZKComRef_Calendar_Week_Of_Year.PNG
-title="ZKComRef_Calendar_Week_Of_Year.PNG" />
-<figcaption>ZKComRef_Calendar_Week_Of_Year.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Calendar_Week_Of_Year.PNG)
 
 ``` xml
 <calendar weekOfYear="true" />

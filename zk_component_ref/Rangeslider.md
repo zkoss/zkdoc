@@ -64,11 +64,7 @@ minimum value. (if min is 0, then it displays "0 20 40 ...")
 If the MarkScale is 0 and there is no Map information in Marks (see
 above), the marks will be empty.
 
-<figure>
-<img src="images/ZKComRef_RangesliderNoMarks.png
-title="ZKComRef_RangesliderNoMarks.png" />
-<figcaption>ZKComRef_RangesliderNoMarks.png</figcaption>
-</figure>
+![](images/ZKComRef_RangesliderNoMarks.png)
 
 ## Max
 

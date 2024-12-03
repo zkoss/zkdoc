@@ -46,12 +46,12 @@ Another example, it will detect the drag action:
 </zk>
 ```
 
-**Drop area** ![](images/initial-run.png "initial-run.png")
+**Drop area** ![](images/initial-run.png)
 
-**File dragged over area** ![](images/dragged-over.png "dragged-over.png")
+**File dragged over area** ![](images/dragged-over.png)
 
 **Image uploaded and displayed**
-![](images/uploaded-image.png "uploaded-image.png")
+![](images/uploaded-image.png)
 
 # Maxsize
 
@@ -106,8 +106,8 @@ when dropping attachments to emails.
 
 ## Example
 
-![](images/Dropupload_Anchor.png "Dropupload_Anchor.png")
-![](images/Dropupload_Anchor_1.png "Dropupload_Anchor_1.png")
+![](images/Dropupload_Anchor.png)
+![](images/Dropupload_Anchor_1.png)
 
 ``` xml
 <zk>
@@ -175,22 +175,14 @@ button**]({{site.baseurl}}/zk_component_ref/Essential_Components/Button#File_Upl
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
-<figure>
-<img src="images/DefaultFileUploadVeiwer.JPG
-title="DefaultFileUploadVeiwer.JPG" />
-<figcaption>DefaultFileUploadVeiwer.JPG</figcaption>
-</figure>
+![](images/DefaultFileUploadVeiwer.JPG)
 
 Alternatively, developers can also design customized File Viewer by
 implementing a JavaScript class to handle the display screen when
 uploading files. Below is an example of a customized file viewer where
 the progress bar is shown at the bottom of the browser.
 
-<figure>
-<img src="images/CustomizedFileUploadVeiwer.JPG
-title="CustomizedFileUploadVeiwer.JPG" />
-<figcaption>CustomizedFileUploadVeiwer.JPG</figcaption>
-</figure>
+![](images/CustomizedFileUploadVeiwer.JPG)
 
 ``` javascript
 foo.MyFileViewer = zk.$extends(zk.Object, {

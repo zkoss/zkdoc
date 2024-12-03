@@ -16,11 +16,7 @@ display, etc.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Gscreen_Example.png
-title="ZKComRef_Gscreen_Example.png" />
-<figcaption>ZKComRef_Gscreen_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Gscreen_Example.png)
 
 ``` xml
 <window title="Google Maps" border="normal" width="520px">

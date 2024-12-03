@@ -70,11 +70,7 @@ the lower margin. Notice: the total space between two input fields is
 Another example illustrated an interesting layout by the use of zero
 spacing.
 
-<figure>
-<img src="images/100000000000009300000077C9A14E08.png
-title="100000000000009300000077C9A14E08.png" />
-<figcaption>100000000000009300000077C9A14E08.png</figcaption>
-</figure>
+![](images/100000000000009300000077C9A14E08.png)
 
 ``` xml
 <window title="Box Layout Demo" border="normal">
@@ -136,11 +132,7 @@ orientation of a box can be horizontal or vertical depending on the
 
 ## Align and Pack
 
-<figure>
-<img src="images/ZKComRef_Vbox_Simple_Example_align_pack.PNG
-title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
-<figcaption>ZKComRef_Vbox_Simple_Example_align_pack.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
 ``` xml
 <zk xmlns:n="http://www.zkoss.org/2005/zk/native">

@@ -61,11 +61,7 @@ text line2...
 By specifying a true, the tabbox can insert a long space or format the
 content inside textbox conveniently. For example,
 
-<figure>
-<img src="images/ZKComRef_Textbox_Tabbable.png
-title="ZKComRef_Textbox_Tabbable.png" />
-<figcaption>ZKComRef_Textbox_Tabbable.png</figcaption>
-</figure>
+![](images/ZKComRef_Textbox_Tabbable.png)
 
 ``` xml
 <textbox tabbable="true"/>

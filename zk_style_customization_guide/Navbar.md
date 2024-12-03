@@ -100,11 +100,7 @@ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK
 Assume the image below is our target design for Navbar component - no
 border, gradient background, rounded corner or shadow effects.
 
-<figure>
-<img src="images/styleguide-nav-design.png
-title="styleguide-nav-design.png" />
-<figcaption>styleguide-nav-design.png</figcaption>
-</figure>
+![](images/styleguide-nav-design.png)
 
 ## Implementation Details
 

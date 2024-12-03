@@ -1,11 +1,6 @@
 
 
-<figure>
-<img src="images/ZKComDevEss_widget_component_application.png
-title="Widget and component works hand in hand to deliver UI to user and notify the application about a user&#39;s activity" />
-<figcaption>Widget and component works hand in hand to deliver UI to
-user and notify the application about a user's activity</figcaption>
-</figure>
+![](images/ZKComDevEss_widget_component_application.png)
 
 There are two kind of UI objects: components and widget. A component is
 a Java object running at the server, representing an UI object that an
@@ -38,12 +33,7 @@ the client to change the visual appearance, as shown right. When the
 user clicks the button widget, the onClick event will be sent back to
 the server and notify the application.
 
-<figure>
-<img src="images/WidgetAndComponent2.png
-title="Though not required, application can run at the client to control widgets directly" />
-<figcaption>Though not required, application can run at the client to
-control widgets directly</figcaption>
-</figure>
+![](images/WidgetAndComponent2.png)
 
 Thought not required, a widget is usually implemented with most
 functions of a component. That means developers can control them
@@ -53,11 +43,7 @@ development cost. For example, an application might hide or change the
 order of columns of a grid at the client, while the application running
 at the server handle the reloading of the whole content of the grid.
 
-<figure>
-<img src="images/WidgetWithoutComponent.png
-title="Widget running without component" />
-<figcaption>Widget running without component</figcaption>
-</figure>
+![](images/WidgetWithoutComponent.png)
 
 Furthermore, a developer can create a widget at the client, and the
 widget will not have any peer component at the server as shown right.

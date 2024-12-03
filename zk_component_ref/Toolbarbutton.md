@@ -36,11 +36,7 @@ Toolbar](ZK_Component_Reference/Essential_Components/Toolbar)
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Toolbarbutton_Example.png
-title="ZKComRef_Toolbarbutton_Example.png" />
-<figcaption>ZKComRef_Toolbarbutton_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Toolbarbutton_Example.png)
 
 ``` xml
 <window title="toolbar demo" border="normal" width="300px">
@@ -69,11 +65,7 @@ title="ZKComRef_Toolbarbutton_Example.png" />
 
 {% include version-badge.html version=6.0.0 %}
 
-<figure>
-<img src="images/Toolbarbutton_togglemode.png
-title="Toolbarbutton_togglemode.png" />
-<figcaption>Toolbarbutton_togglemode.png</figcaption>
-</figure>
+![](images/Toolbarbutton_togglemode.png)
 
 In the toggle mode (`mode="toggle"`), the toolbarbutton will display as
 checked after a user clicked it, and will be released after the next

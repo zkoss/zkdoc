@@ -64,17 +64,13 @@ Assume you create a combobox like:
 ```
 
 When you type 'C', it will auto-complete with "Cool".
-![](images/ZKComRef_Combobox_Example.PNG "ZKComRef_Combobox_Example.PNG")
+![](images/ZKComRef_Combobox_Example.PNG)
 
 Be aware that a user still can enter a non-existing item.
 
 ## Default Selection
 
-<figure>
-<img src="images/combobox_onAfterRender.png
-title="combobox_onAfterRender.png" />
-<figcaption>combobox_onAfterRender.png</figcaption>
-</figure>
+![](images/combobox_onAfterRender.png)
 
 ``` xml
     <zscript><![CDATA[
@@ -271,11 +267,7 @@ descriptive or assign an image to every item.
 </zk>
 ```
 
-<figure>
-<img src="images/ZKComRef_Combobox_Description.PNG
-title="ZKComRef_Combobox_Description.PNG" />
-<figcaption>ZKComRef_Combobox_Description.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Combobox_Description.PNG)
 
 Akin to other components that support images, you are able to use the
 `setImageContent` method to assign a dynamically generated image to the
@@ -288,11 +280,7 @@ The `onOpen` event is sent to the application when a user opens the
 drop-down list. To defer the creation of combo items, you can use the
 `fulfill` attribute as shown below.
 
-<figure>
-<img src="images/ZKComRef_Combobox_Example.PNG
-title="ZKComRef_Combobox_Example.PNG" />
-<figcaption>ZKComRef_Combobox_Example.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Combobox_Example.PNG)
 
 ``` xml
 <zk>
@@ -470,17 +458,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td><figure>
-<img src="images/combobox_mold_default.png
-title="combobox_mold_default.png" />
-<figcaption>combobox_mold_default.png</figcaption>
-</figure></td>
+<td>![](images/combobox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p><img src="images/combobox_mold_rounded.png
+<td><p>![](images/combobox_mold_rounded.png
 title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

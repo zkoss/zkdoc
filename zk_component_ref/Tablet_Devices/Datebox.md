@@ -10,11 +10,7 @@
 
 Big icons for tablet devices
 
-<figure>
-<img src="images/Datebox_Tablet_Example.png
-title="Datebox_Tablet_Example.png" />
-<figcaption>Datebox_Tablet_Example.png</figcaption>
-</figure>
+![](images/Datebox_Tablet_Example.png)
 
 # Version History
 

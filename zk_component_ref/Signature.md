@@ -100,7 +100,7 @@ setting.
 ## Scanned Paper Form
 
 You can load a scanned paper form as a background and save it with a
-signature. ![](images/Paper-form.jpg "Paper-form.jpg")
+signature. ![](images/Paper-form.jpg)
 
 # Saves Signature Image
 

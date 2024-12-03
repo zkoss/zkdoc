@@ -29,7 +29,7 @@ Then check if there is any mixed-version jar.
 
 # The resource you request is no longer available
 
-![ right](no-longer-available.png " right")
+![](no-longer-available.png)
 `The resource you request is no longer available: /ui/handling.zul (z_na20). This is normally caused by timeout, or opening too many Web pages. You have to reload the page and try again.`
 
 ## Suggestion

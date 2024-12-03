@@ -22,11 +22,7 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-<figure>
-<img src="images/ZKCompRef_Borderlayout.jpg
-title="ZKCompRef_Borderlayout.jpg" />
-<figcaption>ZKCompRef_Borderlayout.jpg</figcaption>
-</figure>
+![](images/ZKCompRef_Borderlayout.jpg)
 
 ``` xml
 <borderlayout height="450px">
@@ -153,11 +149,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/DrBorderlayout_Center_scrolling.png
-title="DrBorderlayout_Center_scrolling.png" />
-<figcaption>DrBorderlayout_Center_scrolling.png</figcaption>
-</figure></td>
+<td>![](images/DrBorderlayout_Center_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> height=</span><span class="st">&quot;300px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>

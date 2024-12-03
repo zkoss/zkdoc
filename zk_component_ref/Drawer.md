@@ -19,7 +19,7 @@ details into the Drawer for a better user experience.
 
 In this example we dock a drawer on the right side and put detailed file
 information into the drawer.
-![](images/ZK-Drawer-Example.png "ZK-Drawer-Example.png")
+![](images/ZK-Drawer-Example.png)
 
 ![](images/ZK-Drawer-Example.gif)
 

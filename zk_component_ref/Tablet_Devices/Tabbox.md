@@ -17,11 +17,7 @@ with client attribute.
 </tabbox>
 ```
 
-<figure>
-<img src="images/Tabbox_Tablet_Example.png
-title="Tabbox_Tablet_Example.png" />
-<figcaption>Tabbox_Tablet_Example.png</figcaption>
-</figure>
+![](images/Tabbox_Tablet_Example.png)
 
 # Friendly Scrolling Support
 
@@ -35,11 +31,7 @@ For example,
 <tabpanel style="overflow:auto">
 ```
 
-<figure>
-<img src="images/Tabbox_Tablet_Scrolling_Example.png
-title="Tabbox_Tablet_Scrolling_Example.png" />
-<figcaption>Tabbox_Tablet_Scrolling_Example.png</figcaption>
-</figure>
+![](images/Tabbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

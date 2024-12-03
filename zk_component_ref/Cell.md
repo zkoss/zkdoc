@@ -19,11 +19,7 @@ control the alignment and row/column span.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Cell_Example.png
-title="ZKComRef_Cell_Example.png" />
-<figcaption>ZKComRef_Cell_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Cell_Example.png)
 
 ``` xml
 <zk>
@@ -64,11 +60,7 @@ title="ZKComRef_Cell_Example.png" />
 </zk>
 ```
 
-<figure>
-<img src="images/ZKComRef_Cell_Example_Hbox.png
-title="ZKComRef_Cell_Example_Hbox.png" />
-<figcaption>ZKComRef_Cell_Example_Hbox.png</figcaption>
-</figure>
+![](images/ZKComRef_Cell_Example_Hbox.png)
 
 ``` xml
 <zk>
@@ -122,11 +114,7 @@ For example, consider the following scenario:
 Although they look alike, the DOM structures generated for the two table
 cells are slightly different:
 
-<figure>
-<img src="images/ZK5ComRef_Cell_DOM_Comparison.png
-title="ZK5ComRef_Cell_DOM_Comparison.png" />
-<figcaption>ZK5ComRef_Cell_DOM_Comparison.png</figcaption>
-</figure>
+![](images/ZK5ComRef_Cell_DOM_Comparison.png)
 
 With a Cell component given, there is no inner `<div>` element
 generated, which grants you a more flexible control to the DOM

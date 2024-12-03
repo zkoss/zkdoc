@@ -44,11 +44,7 @@ arrow on the right hand side will show the menu whereas clicking the
 main button (the left hand side) will fire the onClick event. The red
 outline is used to highlight the clickable areas of the Menu.
 
-<figure>
-<img src="images/ZKComRef_Menu_onClick.png
-title="ZKComRef_Menu_onClick.png" />
-<figcaption>ZKComRef_Menu_onClick.png</figcaption>
-</figure>
+![](images/ZKComRef_Menu_onClick.png)
 
 The code to register an onClick event is shown below:
 

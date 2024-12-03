@@ -23,7 +23,7 @@ cell.
 
 This event is triggered when a user clicks on an existing calendar item.
 
-![](images/onitemedit.gif " center") Event name in 2.1:
+![](images/onitemedit.gif) Event name in 2.1:
 [ON_EVENT_EDIT(onEventEdit)](https://www.zkoss.org/javadoc/zkcal/2.1.5/org/zkoss/calendar/event/CalendarsEvent.html#ON_EVENT_EDIT)
 
 ## [CalendarsEvent.ON_ITEM_UPDATE](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/event/CalendarsEvent.html#ON_ITEM_UPDATE)

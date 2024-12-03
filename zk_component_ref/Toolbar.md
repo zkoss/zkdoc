@@ -26,11 +26,7 @@ Toolbarbutton](ZK_Component_Reference/Essential_Components/Toolbarbutton)
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Toolbar_Example.png
-title="ZKComRef_Toolbar_Example.png" />
-<figcaption>ZKComRef_Toolbar_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Toolbar_Example.png)
 
 ``` xml
 <window title="Toolbar window" border="normal" width="300px">
@@ -57,11 +53,7 @@ shows a popup that contains those buttons not fitting in the toolbar.
 
 Default: false.
 
-<figure>
-<img src="images/Toolbar-overflowPopup.png
-title="Toolbar-overflowPopup.png" />
-<figcaption>Toolbar-overflowPopup.png</figcaption>
-</figure>
+![](images/Toolbar-overflowPopup.png)
 
 ``` xml
     <toolbar overflowPopup="true" width="350px" style="border: 1px black solid;">
@@ -85,11 +77,7 @@ Cheatsheet](http://fontawesome.io/cheatsheet/).
 
 Default: `...` symbol
 
-<figure>
-<img src="images/Toolbar-overflowPopupIconSclass.png
-title="Toolbar-overflowPopupIconSclass.png" />
-<figcaption>Toolbar-overflowPopupIconSclass.png</figcaption>
-</figure>
+![](images/Toolbar-overflowPopupIconSclass.png)
 
 ``` xml
     <toolbar overflowPopup="true" overflowPopupIconSclass="z-icon-plus-square" width="350px" style="border: 1px black solid;">

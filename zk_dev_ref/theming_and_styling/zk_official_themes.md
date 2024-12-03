@@ -88,11 +88,7 @@ supports both desktop and tablets.
 See below to take a quick view at the look and feel of **Atlantic**,
 click image to view original size.
 
-<figure>
-<img src="images/atlantic-look-and-feel.png
-title=" none | thumb | 300px | Atlantic" />
-<figcaption> none | thumb | 300px | Atlantic</figcaption>
-</figure>
+![](images/atlantic-look-and-feel.png)
 
 ## Not to Import Google Font
 

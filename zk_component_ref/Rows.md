@@ -16,11 +16,7 @@ Defines the rows of a grid. Each child of a rows element should be a
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Grid_Example.png‎
-title="ZKComRef_Grid_Example.png‎" />
-<figcaption>ZKComRef_Grid_Example.png‎</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Example.png‎)
 
 ``` xml
 <window title="Grid Demo" border="normal" width="360px">

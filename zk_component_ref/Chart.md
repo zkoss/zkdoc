@@ -45,11 +45,7 @@ The 3D chart is not supported on all chart types.
 
 ## Pie Chart 3D
 
-<figure>
-<img src="images/ZKComRef_Chart_Pie_3D.png
-title="ZKComRef_Chart_Pie_3D.png" />
-<figcaption>ZKComRef_Chart_Pie_3D.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Pie_3D.png)
 
 ``` xml
 <chart id="piechart3d" title="Pie Chart 3D" width="500" height="250"
@@ -107,11 +103,7 @@ title="ZKComRef_Chart_Pie_3D.png" />
 
 ## Bar Chart 3D
 
-<figure>
-<img src="images/ZKComRef_Chart_Bar_3D.png
-title="ZKComRef_Chart_Bar_3D.png" />
-<figcaption>ZKComRef_Chart_Bar_3D.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Bar_3D.png)
 
 ``` xml
 <chart id="barchart3d" title="Bar Chart 3D" width="500" height="250"
@@ -133,11 +125,7 @@ title="ZKComRef_Chart_Bar_3D.png" />
 
 ## Stacked Bar
 
-<figure>
-<img src="images/ZKComRef_Chart_Stacked_Bar.png
-title="ZKComRef_Chart_Stacked_Bar.png" />
-<figcaption>ZKComRef_Chart_Stacked_Bar.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Stacked_Bar.png)
 
 ``` xml
 <chart id="sbarchart" title="Stacked Bar" width="500" height="250"
@@ -159,11 +147,7 @@ title="ZKComRef_Chart_Stacked_Bar.png" />
 
 ## Stacked Bar 3D
 
-<figure>
-<img src="images/ZKComRef_Chart_Stacked_Bar_3D.png
-title="ZKComRef_Chart_Stacked_Bar_3D.png" />
-<figcaption>ZKComRef_Chart_Stacked_Bar_3D.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Stacked_Bar_3D.png)
 
 ``` xml
 <chart id="sbarchart3d" title="Stacked Bar 3D" width="500"
@@ -207,11 +191,7 @@ title="ZKComRef_Chart_Stacked_Bar_3D.png" />
 
 ## Line Chart 3D
 
-<figure>
-<img src="images/ZKComRef_Chart_Line_3D.png
-title="ZKComRef_Chart_Line_3D.png" />
-<figcaption>ZKComRef_Chart_Line_3D.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Line_3D.png)
 
 ``` xml
 <chart id="linechart3d" title="Line Chart 3D" width="500"
@@ -255,11 +235,7 @@ title="ZKComRef_Chart_Line_3D.png" />
 
 ## Stacked Area Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Stacked_Area.png
-title="ZKComRef_Chart_Stacked_Area.png" />
-<figcaption>ZKComRef_Chart_Stacked_Area.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Stacked_Area.png)
 
 ``` xml
 <chart id="sareachart" title="Stacked Area Chart" width="500"
@@ -281,11 +257,7 @@ title="ZKComRef_Chart_Stacked_Area.png" />
 
 ## Waterfall Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Waterfall.png
-title="ZKComRef_Chart_Waterfall.png" />
-<figcaption>ZKComRef_Chart_Waterfall.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Waterfall.png)
 
 ``` xml
 <chart id="waterfall" title="Waterfall Chart" width="500"
@@ -330,11 +302,7 @@ title="ZKComRef_Chart_Waterfall.png" />
 
 ## Scatter Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Scatter.png
-title="ZKComRef_Chart_Scatter.png" />
-<figcaption>ZKComRef_Chart_Scatter.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Scatter.png)
 
 ``` xml
 <chart id="scatter" title="Scatter Chart" width="500" height="250"
@@ -357,11 +325,7 @@ title="ZKComRef_Chart_Scatter.png" />
 
 ## Time Series Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Timeseries.png
-title="ZKComRef_Chart_Timeseries.png" />
-<figcaption>ZKComRef_Chart_Timeseries.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Timeseries.png)
 
 ``` xml
 <chart id="timeseries" title="Time Series Chart" width="500"
@@ -384,11 +348,7 @@ title="ZKComRef_Chart_Timeseries.png" />
 
 ## XY Area Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_XY_Area.png
-title="ZKComRef_Chart_XY_Area.png" />
-<figcaption>ZKComRef_Chart_XY_Area.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_XY_Area.png)
 
 ``` xml
 <chart id="xyarea" title="XY Area Chart" width="500" height="250"
@@ -411,11 +371,7 @@ title="ZKComRef_Chart_XY_Area.png" />
 
 ## XY Line Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_XY_Line.png
-title="ZKComRef_Chart_XY_Line.png" />
-<figcaption>ZKComRef_Chart_XY_Line.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_XY_Line.png)
 
 ``` xml
 <chart id="xyline" title="XY Line Chart" width="500" height="250"
@@ -438,11 +394,7 @@ title="ZKComRef_Chart_XY_Line.png" />
 
 ## Step Area Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Step_Area.png
-title="ZKComRef_Chart_Step_Area.png" />
-<figcaption>ZKComRef_Chart_Step_Area.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Step_Area.png)
 
 ``` xml
 <chart id="steparea" title="Step Area Chart" width="500"
@@ -494,11 +446,7 @@ title="ZKComRef_Chart_Step_Area.png" />
 
 ## XY Stacked Area Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_XY_Stacked_Area.png
-title="ZKComRef_Chart_XY_Stacked_Area.png" />
-<figcaption>ZKComRef_Chart_XY_Stacked_Area.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_XY_Stacked_Area.png)
 
 ``` xml
 <chart id="xystackedarea" title="XY Stacked Area Chart" width="500"
@@ -521,11 +469,7 @@ title="ZKComRef_Chart_XY_Stacked_Area.png" />
 
 ## XY Bar Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_XY_Bar.png
-title="ZKComRef_Chart_XY_Bar.png" />
-<figcaption>ZKComRef_Chart_XY_Bar.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_XY_Bar.png)
 
 ``` xml
 <chart id="xybar" title="XY Bar Chart" width="500" height="250"
@@ -548,11 +492,7 @@ title="ZKComRef_Chart_XY_Bar.png" />
 
 ## Histogram Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Histogram.png
-title="ZKComRef_Chart_Histogram.png" />
-<figcaption>ZKComRef_Chart_Histogram.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Histogram.png)
 
 ``` xml
 <chart id="histogram" title="Histogram Chart" width="500"
@@ -575,11 +515,7 @@ title="ZKComRef_Chart_Histogram.png" />
 
 ## Candlestick Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Candlestick.png
-title="ZKComRef_Chart_Candlestick.png" />
-<figcaption>ZKComRef_Chart_Candlestick.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Candlestick.png)
 
 ``` xml
 <chart id="candlestick" title="Candlestick Chart" width="500"
@@ -613,11 +549,7 @@ title="ZKComRef_Chart_Candlestick.png" />
 
 ## High Low Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Highlow.png
-title="ZKComRef_Chart_Highlow.png" />
-<figcaption>ZKComRef_Chart_Highlow.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Highlow.png)
 
 ``` xml
 <chart id="highlow" title="High Low Chart" width="500" height="250"
@@ -651,11 +583,7 @@ title="ZKComRef_Chart_Highlow.png" />
 
 ## Bubble Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Bubble.png
-title="ZKComRef_Chart_Bubble.png" />
-<figcaption>ZKComRef_Chart_Bubble.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Bubble.png)
 
 ``` xml
 <chart id="bubble" title="Bubble Chart" width="500" height="250"
@@ -678,11 +606,7 @@ title="ZKComRef_Chart_Bubble.png" />
 
 ## Horizontal Bubble Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_HBubble.png
-title="ZKComRef_Chart_HBubble.png" />
-<figcaption>ZKComRef_Chart_HBubble.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_HBubble.png)
 
 ``` xml
 <chart id="hbubble" title="Horizontal Bubble Chart" width="500"
@@ -705,11 +629,7 @@ title="ZKComRef_Chart_HBubble.png" />
 
 ## Wafer Map Chart
 
-<figure>
-<img src="images/ZKComRef_Chart_Wafer_Map.png
-title="ZKComRef_Chart_Wafer_Map.png" />
-<figcaption>ZKComRef_Chart_Wafer_Map.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Wafer_Map.png)
 
 ``` xml
 <chart id="wafermap" title="Wafer Map Chart" width="500"
@@ -1120,11 +1040,7 @@ employing a foreign language within your chart. The example demonstrates
 setting a font and using it with a foreign language, in this case
 Chinese.
 
-<figure>
-<img src="images/ZKComRef_Chart_Font_Examples.png
-title="ZKComRef_Chart_Font_Examples.png" />
-<figcaption>ZKComRef_Chart_Font_Examples.png</figcaption>
-</figure>
+![](images/ZKComRef_Chart_Font_Examples.png)
 
 ``` xml
     <zscript>

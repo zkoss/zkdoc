@@ -28,11 +28,7 @@ nodom element.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Idspace_Example.png
-title="ZKComRef_Idspace_Example.png" />
-<figcaption>ZKComRef_Idspace_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Idspace_Example.png)
 
 ``` xml
 <idspace>

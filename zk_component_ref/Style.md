@@ -23,7 +23,7 @@ The style component used to specify `CSS` styles for the owner desktop.
 # Example
 
   
-![](images/ZKComRef_Style_Example.png "ZKComRef_Style_Example.png")
+![](images/ZKComRef_Style_Example.png)
 
 ``` xml
 <style> a{ color:red; }</style>

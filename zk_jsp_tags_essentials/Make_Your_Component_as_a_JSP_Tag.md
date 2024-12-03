@@ -1,7 +1,6 @@
 ZK JSP Tags support all [ZUL components](ZK_Component_Reference). That is, every ZUL
 component has a corresponding JSP tag. If you want to make your custom
-ZK component(ex: a [ Composite Component](ZK_Developer's_Reference/UI_Composing/Composite_Component)
-) as a JSP tag, you could do as follows:
+ZK component(ex: a [ Composite Component](ZK_Developer's_Reference/UI_Composing/Composite_Component) as a JSP tag, you could do as follows:
 
 1\. Create a Java class like this:
 

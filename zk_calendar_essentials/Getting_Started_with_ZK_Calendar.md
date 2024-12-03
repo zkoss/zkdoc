@@ -53,11 +53,7 @@ This gives you the very first ZK Calendar application. When a server
 starts, navigate to index.zul and the following page should be
 displayed.
 
-<figure>
-<img src="images/ZKCalEss_Simple_calendar_application.png
-title=" center | 900px" />
-<figcaption> center | 900px</figcaption>
-</figure>
+![](images/ZKCalEss_Simple_calendar_application.png)
 
 Congratulations! That is all it takes to embed ZK Calendar within your
 ZK application.

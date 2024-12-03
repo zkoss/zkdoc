@@ -5,37 +5,21 @@
 - **\[File\]** -\> **\[New\]** -\> **\[Other\]** --\> **\[Maven
   Project\]**
     
-  <figure>
-  <img src="images/ZK_Installation_Guide_Maven_step1.png"
-  title="ZK_Installation_Guide_Maven_step1.png" />
-  <figcaption>ZK_Installation_Guide_Maven_step1.png</figcaption>
-  </figure>
+  ![](images/ZK_Installation_Guide_Maven_step1.png")
 - Make sure *Create a simple project* is unticked in the first screen of
   the New Maven Project wizard and click **Next \>**.
     
-  <figure>
-  <img src="images/ZK_Installation_Guide_Maven_Archetype_step1.png"
-  title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
-  <figcaption>ZK_Installation_Guide_Maven_Archetype_step1.png</figcaption>
-  </figure>
+  ![](images/ZK_Installation_Guide_Maven_Archetype_step1.png")
 - From the *Select an Archetype* screen, select **zk**[^1] from the
   catalog dropdown list.
     
-  <figure>
-  <img src="images/ZKComDevEss_Maven_CreateComponent_setp4.png‎"
-  title="ZKComDevEss_Maven_CreateComponent_setp4.png‎" />
-  <figcaption>ZKComDevEss_Maven_CreateComponent_setp4.png‎</figcaption>
-  </figure>
+  ![](images/ZKComDevEss_Maven_CreateComponent_setp4.png")
 - Select the *zk-archetype-component* from the list. (At time of writing
   this is at version **0.8.0**).
 - Next, fill in details for *group id, artifact id, version* number and
   *package* name.
     
-  <figure>
-  <img src="images/ZKComDevEss_Maven_CreateComponent_setp5.png‎"
-  title="ZKComDevEss_Maven_CreateComponent_setp5.png‎" />
-  <figcaption>ZKComDevEss_Maven_CreateComponent_setp5.png‎</figcaption>
-  </figure>
+  ![](images/ZKComDevEss_Maven_CreateComponent_setp5.png")
 
   - If property *zk-version-since* or *component class* is
     <font color="red">missing</font>.<ref>
@@ -63,11 +47,7 @@ to all other properties)
   download the necessary dependencies to compile and run this example,
   and would be stored in *.m2/repository* in your home directory.
     
-  <figure>
-  <img src="images/ZKComDevEss_Maven_CreateComponent_setp6.png‎"
-  title="ZKComDevEss_Maven_CreateComponent_setp6.png‎" />
-  <figcaption>ZKComDevEss_Maven_CreateComponent_setp6.png‎</figcaption>
-  </figure>
+  ![](images/ZKComDevEss_Maven_CreateComponent_setp6.png")
 
 ------------------------------------------------------------------------
 
@@ -79,21 +59,13 @@ to all other properties)
 
 1.  Go to **Run Configurations**
       
-    <figure>
-    <img src="images/ZKComDevEss_Maven_CreateComponent_run1.png"
-    title="ZKComDevEss_Maven_CreateComponent_run1.png" />
-    <figcaption>ZKComDevEss_Maven_CreateComponent_run1.png</figcaption>
-    </figure>
+![](images/ZKComDevEss_Maven_CreateComponent_run1.png")
 2.  Double click on **Jetty Webapp**
     - It will automatically fill-out **Project** / **Port** /
       **Context** / **WebApp Dir**
 
       
-    <figure>
-    <img src="images/ZKComDevEss_Maven_CreateComponent_run2.png"
-    title="ZKComDevEss_Maven_CreateComponent_run2.png" />
-    <figcaption>ZKComDevEss_Maven_CreateComponent_run2.png</figcaption>
-    </figure>
+![](images/ZKComDevEss_Maven_CreateComponent_run2.png")
 3.  Click **Run** and start browsing local ZK application at
     <http://127.0.0.1:8080/mycomps/>
 
@@ -101,19 +73,11 @@ to all other properties)
 
 1.  Go to **Run As** \> **Maven package** (or **Maven install**)
       
-    <figure>
-    <img src="images/ZKComDevEss_Maven_CreateComponent_pak1.png"
-    title="ZKComDevEss_Maven_CreateComponent_pak1.png" />
-    <figcaption>ZKComDevEss_Maven_CreateComponent_pak1.png</figcaption>
-    </figure>
+![](images/ZKComDevEss_Maven_CreateComponent_pak1.png")
 2.  The project will then be packed into a jar file and a zip file with
     source code.
       
-    <figure>
-    <img src="images/ZKComDevEss_Maven_CreateComponent_pak2.png"
-    title="ZKComDevEss_Maven_CreateComponent_pak2.png" />
-    <figcaption>ZKComDevEss_Maven_CreateComponent_pak2.png</figcaption>
-    </figure>
+![](images/ZKComDevEss_Maven_CreateComponent_pak2.png")
 
 ## Use the command line version of Maven to create a project
 
@@ -184,19 +148,11 @@ Y:
 - **\[File\]** -\> **\[Import\]** -\> **\[Maven\]** --\> **\[Existing
   Maven Projects\]**
     
-  <figure>
-  <img src="images/ZKComDevEss_Maven_CreateComponent_import1.png"
-  title="ZKComDevEss_Maven_CreateComponent_import1.png" />
-  <figcaption>ZKComDevEss_Maven_CreateComponent_import1.png</figcaption>
-  </figure>
+  ![](images/ZKComDevEss_Maven_CreateComponent_import1.png")
 - After this, the user should now get a new project in the Package
   explorer.
     
-  <figure>
-  <img src="images/ZKComDevEss_Maven_CreateComponent_setp6.png‎"
-  title="ZKComDevEss_Maven_CreateComponent_setp6.png‎" />
-  <figcaption>ZKComDevEss_Maven_CreateComponent_setp6.png‎</figcaption>
-  </figure>
+  ![](images/ZKComDevEss_Maven_CreateComponent_setp6.png")
 
 [^1]: To add a ZK archetype catalog, click **Configure** then refer to [
     Create and Run Your First ZK Application with Eclipse and

@@ -92,7 +92,7 @@ navigating through the pagination. For example,
 
 Under `os` mold, the component renders a list of paging anchors for
 users to jump to the specific page:
-![](images/PagingAnchor.jpg "PagingAnchor.jpg")
+![](images/PagingAnchor.jpg)
 
 This attribute determines the max number of rendered paging anchors.
 

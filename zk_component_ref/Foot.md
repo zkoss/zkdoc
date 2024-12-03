@@ -17,11 +17,7 @@ Footer](ZK_Component_Reference/Data/Grid/Footer)) for a grid
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Foot_Example.png
-title="ZKComRef_Foot_Example.png" />
-<figcaption>ZKComRef_Foot_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Foot_Example.png)
 
 ``` xml
 <grid width="300px">

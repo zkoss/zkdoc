@@ -69,11 +69,7 @@ by
 {% include version-badge.html version=6.0.1 %} ZK supports the following position
 string:
 
-<figure>
-<img src="images/ZKComRef_Popup_Position_601.png
-title="ZKComRef_Popup_Position_601.png" />
-<figcaption>ZKComRef_Popup_Position_601.png</figcaption>
-</figure>
+![](images/ZKComRef_Popup_Position_601.png)
 
 overlap, overlap_end, overlap_before, overlap_after are kept (still
 available) for backward compatibility. They are identical with top_left,
@@ -97,11 +93,7 @@ The following illustrates the simplicity of usage,
 Upon clicking the button the popup component will appear in the relative
 position specified. In this case the position is just above the button.
 
-<figure>
-<img src="images/ZKComRef_Popup_Beforestart.png
-title="ZKComRef_Popup_Beforestart.png" />
-<figcaption>ZKComRef_Popup_Beforestart.png</figcaption>
-</figure>
+![](images/ZKComRef_Popup_Beforestart.png)
 
 ## Methods
 

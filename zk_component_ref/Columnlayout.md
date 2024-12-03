@@ -27,11 +27,7 @@ Each column may have any number of any type of components.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Columnlayout_Example.png
-title="ZKComRef_Columnlayout_Example.png" />
-<figcaption>ZKComRef_Columnlayout_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Columnlayout_Example.png)
 
 ``` xml
     <columnlayout>
@@ -68,11 +64,7 @@ title="ZKComRef_Columnlayout_Example.png" />
 
 Each column may have any number of any type of components.
 
-<figure>
-<img src="images/ZKComRef_Columnlayout_Example_ZK6.png
-title="ZKComRef_Columnlayout_Example_ZK6.png" />
-<figcaption>ZKComRef_Columnlayout_Example_ZK6.png</figcaption>
-</figure>
+![](images/ZKComRef_Columnlayout_Example_ZK6.png)
 
 ``` xml
 <columnlayout>

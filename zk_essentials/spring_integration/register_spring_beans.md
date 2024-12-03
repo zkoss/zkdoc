@@ -18,9 +18,7 @@ retrieve them when a composer uses them. (Please use scoped-proxy even
 for a singleton scoped bean, because scope of Spring beans doesn't match
 scope of composers. Scoped-proxy can ensure composers get the latest
 bean under their context. For furthermore explanation, please refer to [
-Developer's Reference/Integration/Middleware
-Layer/Spring](ZK_Developer%27s_Reference/Integration/Middleware_Layer/Spring "wikilink")
-)
+Developer's Reference/Integration/Middleware Layer/Spring](ZK_Developer%27s_Reference/Integration/Middleware_Layer/Spring)
 
 ```java
 @Service("authService")

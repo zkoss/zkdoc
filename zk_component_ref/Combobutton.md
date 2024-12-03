@@ -29,11 +29,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 - Combobutton with Popup
 
-<figure>
-<img src="images/ZKComRef_Combobutton_with_Popup.jpg
-title="ZKComRef_Combobutton_with_Popup.jpg" />
-<figcaption>ZKComRef_Combobutton_with_Popup.jpg</figcaption>
-</figure>
+![](images/ZKComRef_Combobutton_with_Popup.jpg)
 
 ``` xml
     <combobutton label="popup" image="/img/network.gif">
@@ -64,11 +60,7 @@ title="ZKComRef_Combobutton_with_Popup.jpg" />
 
 - Combobutton with Menupopup
 
-<figure>
-<img src="images/ZKComRef_Combobutton_with_Menupopup.jpg
-title="ZKComRef_Combobutton_with_Menupopup.jpg" />
-<figcaption>ZKComRef_Combobutton_with_Menupopup.jpg</figcaption>
-</figure>
+![](images/ZKComRef_Combobutton_with_Menupopup.jpg)
 
 ``` xml
     <combobutton label="menu popup" image="/img/network.gif">
@@ -85,11 +77,7 @@ title="ZKComRef_Combobutton_with_Menupopup.jpg" />
 
 - Combobutton as Toolbarbutton
 
-<figure>
-<img src="images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎
-title="ZKComRef_Combobutton_ToolbarbuttonMold.png‎" />
-<figcaption>ZKComRef_Combobutton_ToolbarbuttonMold.png‎</figcaption>
-</figure>
+![](images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎)
 
 ``` xml
 <zk>

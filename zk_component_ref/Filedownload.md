@@ -22,11 +22,7 @@ window, a file download dialog is shown at the browser if one of the
 `save` methods is called. Then, the user can specify the location in his
 local file system to save the file.
 
-<figure>
-<img src="images/10000000000002AF000001BB582C2DD7.png
-title="10000000000002AF000001BB582C2DD7.png" />
-<figcaption>10000000000002AF000001BB582C2DD7.png</figcaption>
-</figure>
+![](images/10000000000002AF000001BB582C2DD7.png)
 
 ``` xml
 <button label="Download">

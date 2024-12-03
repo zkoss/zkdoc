@@ -18,11 +18,7 @@ For example,
 <groupbox contentStyle="overflow:auto">
 ```
 
-<figure>
-<img src="images/Groupbox_Tablet_Scrolling_Example.png
-title="Groupbox_Tablet_Scrolling_Example.png" />
-<figcaption>Groupbox_Tablet_Scrolling_Example.png</figcaption>
-</figure>
+![](images/Groupbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

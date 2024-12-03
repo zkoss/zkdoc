@@ -15,11 +15,7 @@ points, visible zoom level(0~3), and fill color, etc..
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Gpolygon_Example.png
-title="ZKComRef_Gpolygon_Example.png" />
-<figcaption>ZKComRef_Gpolygon_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Gpolygon_Example.png)
 
 ``` xml
     <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>

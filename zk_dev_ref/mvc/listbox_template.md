@@ -148,11 +148,8 @@ listbox-in-listbox:
 </zk>
 ```
 
-<figure>
-<img src="images/St201107-listbox-in-listbox.png‎
-title="St201107-listbox-in-listbox.png‎" />
-<figcaption>St201107-listbox-in-listbox.png‎</figcaption>
-</figure>
+![](images/St201107-listbox-in-listbox.png)
+
 
 ### How to retrieve the outer template's data in the inner template
 

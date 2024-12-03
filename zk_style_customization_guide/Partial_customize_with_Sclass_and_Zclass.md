@@ -83,11 +83,7 @@ do the job:
 
 you can see that the style is not applied.
 
-<figure>
-<img src="images/styleguide-sclass-advanced1.png
-title="styleguide-sclass-advanced1.png" />
-<figcaption>styleguide-sclass-advanced1.png</figcaption>
-</figure>
+![](images/styleguide-sclass-advanced1.png)
 
 However, we can use CSS class rule with "***sclass zclass***" pattern to
 achieve this goal. Modify the style like the following:
@@ -112,10 +108,6 @@ achieve this goal. Modify the style like the following:
 
 the style is now correctly applied.
 
-<figure>
-<img src="images/styleguide-sclass-advanced2.png
-title="styleguide-sclass-advanced2.png" />
-<figcaption>styleguide-sclass-advanced2.png</figcaption>
-</figure>
+![](images/styleguide-sclass-advanced2.png)
 
 

@@ -71,11 +71,7 @@ radiogroup component to the radio component explicitly by the use of
 or
 <javadoc method="setRadiogroup(org.zkoss.zul.Radiogroup)">org.zkoss.zul.Radio</javadoc>.
 
-<figure>
-<img src="images/ZKComRef_Radiogroup_Grid.png
-title="ZKComRef_Radiogroup_Grid.png" />
-<figcaption>ZKComRef_Radiogroup_Grid.png</figcaption>
-</figure>
+![](images/ZKComRef_Radiogroup_Grid.png)
 
 ``` xml
 <zk>

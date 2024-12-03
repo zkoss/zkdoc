@@ -196,11 +196,7 @@ also determine its width upon its parent, which is 150px.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZK6DevRef_Vlayout_Hflex.png
-title="ZK6DevRef_Vlayout_Hflex.png" />
-<figcaption>ZK6DevRef_Vlayout_Hflex.png</figcaption>
-</figure></td>
+<td>![](images/ZK6DevRef_Vlayout_Hflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span><span class="ot"> height=</span><span class="st">&quot;75px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;150px&lt;/<span class="kw">div</span>&gt;</span>
@@ -220,11 +216,7 @@ height** of siblings, which is 30px in the following sample.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZK6DevRef_Hlayout_Vflex.png
-title="ZK6DevRef_Hlayout_Vflex.png" />
-<figcaption>ZK6DevRef_Hlayout_Vflex.png</figcaption>
-</figure></td>
+<td>![](images/ZK6DevRef_Hlayout_Vflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;30px&lt;/<span class="kw">div</span>&gt;</span>
@@ -283,11 +275,7 @@ set hflex="min" to Grid and each Column to keep Grid with minimal size.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZK5DevRef_GridColumn_FormHflex.png
-title="ZK5DevRef_GridColumn_FormHflex.png" />
-<figcaption>ZK5DevRef_GridColumn_FormHflex.png</figcaption>
-</figure></td>
+<td>![](images/ZK5DevRef_GridColumn_FormHflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -316,11 +304,7 @@ hflex="1" to Datebox.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZK5DevRef_GridColumn_FormHflex2.png
-title="ZK5DevRef_GridColumn_FormHflex2.png" />
-<figcaption>ZK5DevRef_GridColumn_FormHflex2.png</figcaption>
-</figure></td>
+<td>![](images/ZK5DevRef_GridColumn_FormHflex2.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -351,11 +335,7 @@ a Cell and set hflex="1" to the element.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZK5DevRef_GridColumn_FormHflex_colspan.png
-title="ZK5DevRef_GridColumn_FormHflex_colspan.png" />
-<figcaption>ZK5DevRef_GridColumn_FormHflex_colspan.png</figcaption>
-</figure></td>
+<td>![](images/ZK5DevRef_GridColumn_FormHflex_colspan.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>

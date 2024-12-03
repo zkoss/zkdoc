@@ -90,16 +90,8 @@ CKEditor will open a new window and list all images in the file browser.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZKCompRef_CKEditor_filebrowser2.png
-title="ZKCompRef_CKEditor_filebrowser2.png" />
-<figcaption>ZKCompRef_CKEditor_filebrowser2.png</figcaption>
-</figure></td>
-<td><figure>
-<img src="images/ZKCompRef_CKEditor_filebrowser3.png
-title="ZKCompRef_CKEditor_filebrowser3.png" />
-<figcaption>ZKCompRef_CKEditor_filebrowser3.png</figcaption>
-</figure></td>
+<td>![](images/ZKCompRef_CKEditor_filebrowser2.png)</td>
+<td>![](images/ZKCompRef_CKEditor_filebrowser3.png)</td>
 </tr>
 </tbody>
 </table>
@@ -130,16 +122,8 @@ application can access its own folder.
 <table>
 <tbody>
 <tr class="odd">
-<td><figure>
-<img src="images/ZKCompRef_CKEditor_fileupload.png
-title="ZKCompRef_CKEditor_fileupload.png" />
-<figcaption>ZKCompRef_CKEditor_fileupload.png</figcaption>
-</figure></td>
-<td><figure>
-<img src="images/ZKCompRef_CKEditor_fileupload2.png
-title="ZKCompRef_CKEditor_fileupload2.png" />
-<figcaption>ZKCompRef_CKEditor_fileupload2.png</figcaption>
-</figure></td>
+<td>![](images/ZKCompRef_CKEditor_fileupload.png)</td>
+<td>![](images/ZKCompRef_CKEditor_fileupload2.png)</td>
 </tr>
 </tbody>
 </table>
@@ -407,19 +391,7 @@ location with the help of two toolbars:
 - A balloon toolbar that appears next to the selected editable document
   element (offering inline content formatting tools).
 - A block toolbar accessible using the toolbar handle button
-  <img src="images/DragIndicator.png title="DragIndicator.png" width="15"
-  alt="DragIndicator.png" /> attached to the editable content area and
-  following the selection in the document (bringing additional block
-  formatting tools). The
-  <img src="images/DragIndicator.png title="DragIndicator.png" width="15"
-  alt="DragIndicator.png" /> button is also a handle that can be used to
-  drag and drop blocks around the content.
-
-<figure>
-<img src="images/BalloonBlockEditor.jpg title="BalloonBlockEditor.jpg"
-width="700" />
-<figcaption>BalloonBlockEditor.jpg</figcaption>
-</figure>
+  ![](images/DragIndicator.png )
 
 ## Inline Editor
 
@@ -482,11 +454,7 @@ public void doAfterCompose(Window comp) throws Exception {
 </ckeditor>
 ```
 
-<figure>
-<img src="images/CKEditor5Example.png title="CKEditor5Example.png"
-width="600" />
-<figcaption>CKEditor5Example.png</figcaption>
-</figure>
+![](images/CKEditor5Example.png )
 
 ## Custom Configuration
 

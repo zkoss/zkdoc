@@ -33,11 +33,7 @@ field,
 
 gives
 
-<figure>
-<img src="images/ZKPivotEsn_work_pivot_24.png"
-title="ZKPivotEsn_work_pivot_24.png" />
-<figcaption>ZKPivotEsn_work_pivot_24.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_work_pivot_24.png")
 
 and
 
@@ -47,11 +43,7 @@ and
 
 will give
 
-<figure>
-<img src="images/ZKPivotEsn_work_pivot_22.png"
-title="ZKPivotEsn_work_pivot_22.png" />
-<figcaption>ZKPivotEsn_work_pivot_22.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_work_pivot_22.png")
 
  
 
@@ -71,11 +63,7 @@ For example,
 
 results in
 
-<figure>
-<img src="images/ZKPivotEsn_work_pivot_26.png"
-title="ZKPivotEsn_work_pivot_26.png" />
-<figcaption>ZKPivotEsn_work_pivot_26.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_work_pivot_26.png")
 
 ## Paging
 
@@ -88,11 +76,7 @@ example,
 <pivottable model="${model}" pageSize="10" dataOrient="row" />
 ```
 
-<figure>
-<img src="images/ZKPivotEsn_work_pivot_32.png"
-title="ZKPivotEsn_work_pivot_32.png" />
-<figcaption>ZKPivotEsn_work_pivot_32.png</figcaption>
-</figure>
+![](images/ZKPivotEsn_work_pivot_32.png")
 
 Note:
 

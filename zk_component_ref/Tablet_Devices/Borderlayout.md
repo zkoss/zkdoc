@@ -17,11 +17,7 @@ user's swipe on the edge of the region with client/attribute.
 </borderlayout>
 ```
 
-<figure>
-<img src="images/Borderlayout_Tablet_Swipe_Example.png
-title="Borderlayout_Tablet_Swipe_Example.png" />
-<figcaption>Borderlayout_Tablet_Swipe_Example.png</figcaption>
-</figure>
+![](images/Borderlayout_Tablet_Swipe_Example.png)
 
 # Friendly Scrolling Support
 
@@ -35,11 +31,7 @@ For example,
 <west title="West" size="20%" autoscroll="true" />
 ```
 
-<figure>
-<img src="images/Borderlayout_Tablet_Scrolling_Example.png
-title="Borderlayout_Tablet_Scrolling_Example.png" />
-<figcaption>Borderlayout_Tablet_Scrolling_Example.png</figcaption>
-</figure>
+![](images/Borderlayout_Tablet_Scrolling_Example.png)
 
 **Note:** to disable the friendly scrollbar, please use the following
 setting.

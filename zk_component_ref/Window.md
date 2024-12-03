@@ -25,11 +25,7 @@ components, a window has the following characteristics.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Window_Multiple_Examples.PNG
-title="ZKComRef_Window_Multiple_Examples.PNG" />
-<figcaption>ZKComRef_Window_Multiple_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Window_Multiple_Examples.PNG)
 
 ``` xml
     <window title="Embedded Style" border="normal" width="200px">Hello,
@@ -258,11 +254,7 @@ You can override it to do whatever you want. Or, you can register your
 own listener to change the default behavior. For example, you might
 choose to hide the window rather than close it.
 
-<figure>
-<img src="images/10000000000000CE000000546D42136E.png
-title="10000000000000CE000000546D42136E.png" />
-<figcaption>10000000000000CE000000546D42136E.png</figcaption>
-</figure>
+![](images/10000000000000CE000000546D42136E.png)
 
 ``` xml
 <window closable="true" title="Detach on Close" border="normal" width="200px"
@@ -295,11 +287,7 @@ You can customize the look and feel of window's content block by
 specifying the `contentStyle` property
 (<javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>).
 
-<figure>
-<img src="images/10000000000000CB0000003292CB8174.png
-title="10000000000000CB0000003292CB8174.png" />
-<figcaption>10000000000000CB0000003292CB8174.png</figcaption>
-</figure>
+![](images/10000000000000CB0000003292CB8174.png)
 
 ``` xml
 <zk>
@@ -314,11 +302,7 @@ title="10000000000000CB0000003292CB8174.png" />
 A typical use of the `contentStyle` attribute is to make a window
 scrollable as follows.
 
-<figure>
-<img src="images/100000000000009C0000006819656516.png
-title="100000000000009C0000006819656516.png" />
-<figcaption>100000000000009C0000006819656516.png</figcaption>
-</figure>
+![](images/100000000000009C0000006819656516.png)
 
 ``` xml
 <window id="win" title="Hi" width="150px" height="100px" contentStyle="overflow:auto" border="normal">
@@ -436,53 +420,7 @@ of the page.
 <p>parent</p>
 </center></td>
 <td><p>Position the window relative to the top-left corner of the parent
-component. See specific details in the <a href="#popup"
-title="wikilink"> popup section</a>. If <code>left</code> or
-<code>top</code> is also specified, the position will be offset from the
-top-left corner of the parent component by the same amount.</p>
-<p>This position <strong>cannot</strong> be combined with other
-positions mentioned in the previous table.</p></td>
-</tr>
-</tbody>
-</table>
-
-## Sizable
-
-If you allow users to resize the window, you can set the `sizable`
-attribute to true as follows.
-
-``` xml
-<window id="win" title="Sizable Window" border="normal" width="200px" sizable="true">
-    This is a sizable window.
-    <button label="Change Sizable" onClick="win.sizable = !win.sizable"/>
-</window>
-```
-
-Once allowed, users can resize the window by dragging the borders.
-
-### The onSize Event
-
-Once a user resizes the window, the `onSize` event is sent with an
-instance of the `org.zkoss.zul.event.SizeEvent`. Notice that the window
-is resized before the`onSize` event is sent. In other words, the event
-serves as a notification that you generally ignore. Of course, you can
-do whatever you want in the event listener.
-
-**Note**: If the user drags the upper or left border, the `onMove` event
-is also sent since the position has changed, too.
-
-## Title and Caption
-
-A window might have a title, a caption and a border. The title is
-specified by the `title` attribute. The caption is specified by
-declaring a child component called `caption`. All children of the
-`caption` component will appear on right hand side of the title.
-
-<figure>
-<img src="images/10000000000001640000004CEB4969A9.png
-title="10000000000001640000004CEB4969A9.png" />
-<figcaption>10000000000001640000004CEB4969A9.png</figcaption>
-</figure>
+component. See specific details in the <a href="#popup")
 
 ``` xml
 <zk>
@@ -507,11 +445,7 @@ title="10000000000001640000004CEB4969A9.png" />
 You are also able to specify a label and an image within a caption, and
 then the appearance is as follows.
 
-<figure>
-<img src="images/10000000000000CD00000042FABAB4CE.png
-title="10000000000000CD00000042FABAB4CE.png" />
-<figcaption>10000000000000CD00000042FABAB4CE.png</figcaption>
-</figure>
+![](images/10000000000000CD00000042FABAB4CE.png)
 
 ``` xml
  

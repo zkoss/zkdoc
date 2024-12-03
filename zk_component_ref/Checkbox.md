@@ -14,11 +14,7 @@ A checkbox.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Checkbox_Example.png
-title="ZKComRef_Checkbox_Example.png" />
-<figcaption>ZKComRef_Checkbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Checkbox_Example.png)
 
 ``` xml
 <window title="Checkbox demo" border="normal" width="350px">
@@ -53,12 +49,13 @@ overriding class.
 
 Default:
 
-![](images/Switch-off.png "Switch-off.png") ![](images/Switch-on.png "Switch-on.png")
+![](images/Switch-off.png) 
+![](images/Switch-on.png)
 
 Customized in CSS:
 
-![](images/Switch-off-customized.png "Switch-off-customized.png")
-![](images/Switch-on-customized.png "Switch-on-customized.png")
+![](images/Switch-off-customized.png)
+![](images/Switch-on-customized.png)
 
 ``` css
 .z-checkbox-switch-off > .z-checkbox-mold {
@@ -79,12 +76,12 @@ Customized in CSS:
 
 Default:
 
-![](images/Toggle-off.png "Toggle-off.png") ![](images/Toggle-on.png "Toggle-on.png")
+![](images/Toggle-off.png) ![](images/Toggle-on.png)
 
 Customized in CSS:
 
-![](images/Toggle-off-customized.png "Toggle-off-customized.png")
-![](images/Toggle-on-customized.png "Toggle-on-customized.png")
+![](images/Toggle-off-customized.png)
+![](images/Toggle-on-customized.png)
 
     .z-checkbox-toggle-off > .z-checkbox-mold {
         background-color: red;
@@ -127,7 +124,7 @@ changing `checked` attribute will set `indeterminate` to `false`.
     <checkbox indeterminate="true"/>
 ```
 
-Display a checkbox like: ![](images/Indeterminate.png "Indeterminate.png")
+Display a checkbox like: ![](images/Indeterminate.png)
 
 # Supported Events
 

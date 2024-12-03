@@ -132,17 +132,9 @@ respectively:
 The header contexts and data fields corresponding to a cell are
 illustrated as the following:
 
-<figure>
-<img src="images/ZKPvtEsn_HeaderContext_02.png"
-title="ZKPvtEsn_HeaderContext_02.png" />
-<figcaption>ZKPvtEsn_HeaderContext_02.png</figcaption>
-</figure>
+![](images/ZKPvtEsn_HeaderContext_02.png")
 
-<figure>
-<img src="images/ZKPvtEsn_HeaderContext_03.png"
-title="ZKPvtEsn_HeaderContext_03.png" />
-<figcaption>ZKPvtEsn_HeaderContext_03.png</figcaption>
-</figure>
+![](images/ZKPvtEsn_HeaderContext_03.png")
 
  
 

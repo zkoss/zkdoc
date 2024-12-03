@@ -18,11 +18,7 @@ This component allows users to crop a selected range of image.
 
 # Example
 
-<figure>
-<img src="images/ZKCompRef_Cropper.png title="ZKCompRef_Cropper.png"
-width="700" />
-<figcaption>ZKCompRef_Cropper.png</figcaption>
-</figure>
+![](images/ZKCompRef_Cropper.png )
 
 ``` xml
 <cropper x="50" y="100" w="100" h="100" onCrop="img.setContent(event.getMedia())" width="800px"

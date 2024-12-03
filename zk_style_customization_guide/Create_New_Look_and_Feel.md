@@ -22,21 +22,13 @@ will explain the theme creation procedures step by step.
   Project\]**
 
   
-<figure>
-<img src="images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png
-title="ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png" />
-<figcaption>ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png</figcaption>
-</figure>
+![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png)
 
 - Make sure **Create a simple project** is unchecked in the first screen
   of the New Maven Project wizard and click **Next \>** button.
 
   
-<figure>
-<img src="images/ZK_Installation_Guide_Maven_Archetype_step1.png
-title="ZK_Installation_Guide_Maven_Archetype_step1.png" />
-<figcaption>ZK_Installation_Guide_Maven_Archetype_step1.png</figcaption>
-</figure>
+![](images/ZK_Installation_Guide_Maven_Archetype_step1.png)
 
 - From the **Select an Archetype** screen, select ZK Maven Archetype
   from the catalog dropdown list. Then Select ***zk-archetype-theme***

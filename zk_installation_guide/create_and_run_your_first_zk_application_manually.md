@@ -38,7 +38,7 @@ When developing ZK web applications, you must follow this structure so
 that the application can be deployed in any J2EE compliant web servers.
 
 *All you need to do is create a web application directory with related
-files.* ![](images/J2EEWebApplication.jpg "J2EEWebApplication.jpg")
+files.* ![](images/J2EEWebApplication.jpg)
 
 - Now i create one for example named
   <span style="color:green">**myZK**</span>

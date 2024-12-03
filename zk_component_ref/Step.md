@@ -34,14 +34,14 @@ inside a Stepbar and shouldn't be used without a Stepbar.
 Whether this step is completed. (Default: false)
 
 The default visual style:
-![](images/Step-complete-default.png "Step-complete-default.png")
+![](images/Step-complete-default.png)
 
 ## Error
 
 Whether this step is in error. (Default: false)
 
 The default visual style:
-![](images/Step-error-default.png "Step-error-default.png")
+![](images/Step-error-default.png)
 
 The priority of `error` is higher than `complete`. If both properties
 are set, the result will be an error state visually.

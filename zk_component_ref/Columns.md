@@ -18,11 +18,7 @@ element.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Grid_Example.png‎
-title="ZKComRef_Grid_Example.png‎" />
-<figcaption>ZKComRef_Grid_Example.png‎</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Example.png‎)
 
 ``` xml
     <grid>
@@ -63,11 +59,7 @@ each column.
 
 ### Auto
 
-<figure>
-<img src="images/ZKComRef_Grid_Columns_Menu.png
-title="ZKComRef_Grid_Columns_Menu.png" />
-<figcaption>ZKComRef_Grid_Columns_Menu.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Columns_Menu.png)
 
 ``` xml
     <grid>
@@ -81,11 +73,7 @@ title="ZKComRef_Grid_Columns_Menu.png" />
 
 ### Customized Menupopup
 
-<figure>
-<img src="images/ZKComRef_Grid_Columns_Customized_Menu.png
-title="ZKComRef_Grid_Columns_Customized_Menu.png" />
-<figcaption>ZKComRef_Grid_Columns_Customized_Menu.png</figcaption>
-</figure>
+![](images/ZKComRef_Grid_Columns_Customized_Menu.png)
 
 ``` xml
 <window title="Column's Menu Demo" border="normal" width="500px">

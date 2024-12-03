@@ -32,11 +32,7 @@ splitlayout](ZK%20Component%20Reference/Layouts/Splitlayout).
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Vbox_Simple_Example.PNG
-title="ZKComRef_Vbox_Simple_Example.PNG" />
-<figcaption>ZKComRef_Vbox_Simple_Example.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Vbox_Simple_Example.PNG)
 
 ``` xml
 <zk>
@@ -60,11 +56,7 @@ title="ZKComRef_Vbox_Simple_Example.PNG" />
 
 {% include version-badge.html version=5.0.0 %}
 
-<figure>
-<img src="images/ZKComRef_Vbox_Simple_Example_align_pack.PNG
-title="ZKComRef_Vbox_Simple_Example_align_pack.PNG" />
-<figcaption>ZKComRef_Vbox_Simple_Example_align_pack.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
 ``` xml
 <zk xmlns:n="native">

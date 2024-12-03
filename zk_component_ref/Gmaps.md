@@ -62,11 +62,7 @@ You can specify a client-id at `client` attribute: \
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Gmaps_Example.png
-title="ZKComRef_Gmaps_Example.png" />
-<figcaption>ZKComRef_Gmaps_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Gmaps_Example.png)
 
 ``` xml
  <window title="Gmaps Demo" border="normal" width="520px">

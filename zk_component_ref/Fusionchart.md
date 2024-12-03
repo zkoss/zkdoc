@@ -265,7 +265,7 @@ color .
 ```
 
 The color is changed after we set the config ,here's the demo image.
-![](images/Fusionchart_barchartconfig.png "Fusionchart_barchartconfig.png")
+![](images/Fusionchart_barchartconfig.png)
 
 ## Line Chart
 

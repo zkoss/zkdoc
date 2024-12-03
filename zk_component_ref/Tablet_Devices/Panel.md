@@ -17,11 +17,7 @@ For example,
 <panelchildren style="overflow:auto">
 ```
 
-<figure>
-<img src="images/Panel_Tablet_Scrolling_Example.png
-title="Panel_Tablet_Scrolling_Example.png" />
-<figcaption>Panel_Tablet_Scrolling_Example.png</figcaption>
-</figure>
+![](images/Panel_Tablet_Scrolling_Example.png)
 
 # Version History
 

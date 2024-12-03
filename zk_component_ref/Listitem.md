@@ -15,11 +15,7 @@ A list item.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Listbox_Example.png
-title="ZKComRef_Listbox_Example.png" />
-<figcaption>ZKComRef_Listbox_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Listbox_Example.png)
 
 ``` xml
  <window title="listbox demo" border="normal" width="250px">

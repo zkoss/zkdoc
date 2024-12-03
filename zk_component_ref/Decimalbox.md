@@ -16,11 +16,7 @@ An edit box for holding big decimal value .
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Decimalbox_Examples.PNG
-title="ZKComRef_Decimalbox_Examples.PNG" />
-<figcaption>ZKComRef_Decimalbox_Examples.PNG</figcaption>
-</figure>
+![](images/ZKComRef_Decimalbox_Examples.PNG)
 
 ``` xml
  <decimalbox value="155"/>

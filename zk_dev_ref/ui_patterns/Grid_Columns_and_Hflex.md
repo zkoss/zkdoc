@@ -42,9 +42,8 @@ title="wikilink">Treecol</a></li>
 
 There are basically two approaches to control the width of a column:
 width and hflex. They could be specified in the column's header, such as
-[column](ZK_Component_Reference/Data/Grid/Column "wikilink") and
-[listheader](ZK_Component_Reference/Data/Listbox/Listheader "wikilink").
-).
+[column](ZK_Component_Reference/Data/Grid/Column) and
+[listheader](ZK_Component_Reference/Data/Listbox/Listheader ).
 
 While width
 (<javadoc method="setWidth(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
@@ -120,11 +119,7 @@ different use cases.
   width specification. (the exact widths of columns are rendered by
   browser automatically)
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_Default.png
-title="ZK5DevRef_GridColumn_Default.png" />
-<figcaption>ZK5DevRef_GridColumn_Default.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_Default.png)
 
 ### Proportional Width
 
@@ -139,11 +134,7 @@ section](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex#Flexibility_and_Re
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_hflex.png
-title="ZK5DevRef_GridColumn_hflex.png" />
-<figcaption>ZK5DevRef_GridColumn_hflex.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_hflex.png)
 
 ### Minimum Flexibility
 
@@ -169,11 +160,7 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_nospan.png
-title="ZK5DevRef_GridColumn_nospan.png" />
-<figcaption>ZK5DevRef_GridColumn_nospan.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_nospan.png)
 
 - If you want your contents to fill the whole grid to eliminate the
   blank space, you can set **span=true** to make it proportionally
@@ -188,11 +175,7 @@ title="ZK5DevRef_GridColumn_nospan.png" />
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_span.png
-title="ZK5DevRef_GridColumn_span.png" />
-<figcaption>ZK5DevRef_GridColumn_span.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_span.png)
 
 - If you want the rest of the space to be assigned to one of the
   columns, set **span** to a number. The number is 0-based index of
@@ -207,11 +190,7 @@ title="ZK5DevRef_GridColumn_span.png" />
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_span0.png
-title="ZK5DevRef_GridColumn_span0.png" />
-<figcaption>ZK5DevRef_GridColumn_span0.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_span0.png)
 
 - If you want the size of the Listbox determined by its content, assign
   **hflex=min** on the Grid, and make sure all the Listheaders either
@@ -226,11 +205,7 @@ title="ZK5DevRef_GridColumn_span0.png" />
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_sizedByCnt.png
-title="ZK5DevRef_GridColumn_sizedByCnt.png" />
-<figcaption>ZK5DevRef_GridColumn_sizedByCnt.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_sizedByCnt.png)
 
 ## Data Length : Long
 
@@ -250,11 +225,7 @@ title="ZK5DevRef_GridColumn_sizedByCnt.png" />
 - **Default** : ZK data component will wrap the text to fit the width of
   column.
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_DefaultLong.png
-title="ZK5DevRef_GridColumn_DefaultLong.png" />
-<figcaption>ZK5DevRef_GridColumn_DefaultLong.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_DefaultLong.png)
 
 ### Scrollbar
 
@@ -279,11 +250,7 @@ beforehand.
     </listhead>
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_DefaultWidth.png
-title="ZK5DevRef_GridColumn_DefaultWidth.png" />
-<figcaption>ZK5DevRef_GridColumn_DefaultWidth.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_DefaultWidth.png)
 
 ### Minimum Flexibility
 
@@ -303,11 +270,7 @@ title="ZK5DevRef_GridColumn_DefaultWidth.png" />
  
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_LongHflex.png
-title="ZK5DevRef_GridColumn_LongHflex.png" />
-<figcaption>ZK5DevRef_GridColumn_LongHflex.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_LongHflex.png)
 
 ### Mixed Flexibility and width
 
@@ -322,11 +285,7 @@ title="ZK5DevRef_GridColumn_LongHflex.png" />
  
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_MixhflexnumWidth.png
-title="ZK5DevRef_GridColumn_MixhflexnumWidth.png" />
-<figcaption>ZK5DevRef_GridColumn_MixhflexnumWidth.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_MixhflexnumWidth.png)
 
 #### Width + Hflex min
 
@@ -339,11 +298,7 @@ title="ZK5DevRef_GridColumn_MixhflexnumWidth.png" />
  
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_MixhflexMinWidth.png
-title="ZK5DevRef_GridColumn_MixhflexMinWidth.png" />
-<figcaption>ZK5DevRef_GridColumn_MixhflexMinWidth.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_MixhflexMinWidth.png)
 
 #### Width + Hflex min + Hflex proportion
 
@@ -356,11 +311,7 @@ title="ZK5DevRef_GridColumn_MixhflexMinWidth.png" />
  
 ```
 
-<figure>
-<img src="images/ZK5DevRef_GridColumn_MixhflAllh.png
-title="ZK5DevRef_GridColumn_MixhflAllh.png" />
-<figcaption>ZK5DevRef_GridColumn_MixhflAllh.png</figcaption>
-</figure>
+![](images/ZK5DevRef_GridColumn_MixhflAllh.png)
 
 ## Data Length : Dynamic
 

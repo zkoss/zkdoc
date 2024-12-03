@@ -15,11 +15,7 @@ on its width and height
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Anchorlayout_Example.png
-title="ZKComRef_Anchorlayout_Example.png" />
-<figcaption>ZKComRef_Anchorlayout_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Anchorlayout_Example.png)
 
 ``` xml
 <window title="anchorlayout Demo" border="normal" 

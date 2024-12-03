@@ -83,11 +83,7 @@ parts. The main component area is where date time events are displayed
 and the top of the Calendar component is used to display the daylong
 event.
 
-<figure>
-<img src="images/ZKCalEss_Default_mold.jpg
-title="ZKCalEss_Default_mold.jpg" />
-<figcaption>ZKCalEss_Default_mold.jpg</figcaption>
-</figure>
+![](images/ZKCalEss_Default_mold.jpg)
 
 ### The Month Mold
 

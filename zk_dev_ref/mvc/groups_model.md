@@ -97,11 +97,7 @@ and re-grouping as described below:
     and
     <javadoc method="setSortDescending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>.
 
-<figure>
-<img src="images/Grouping_model_explain.png
-title="Grouping_model_explain.png" />
-<figcaption>Grouping_model_explain.png</figcaption>
-</figure>
+![](images/Grouping_model_explain.png)
 
 # Example: Grouping Tabular Data
 

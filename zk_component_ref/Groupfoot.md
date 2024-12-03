@@ -17,11 +17,7 @@ getSclass(): the same as grid's sclass.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Group_Example.png
-title="ZKComRef_Group_Example.png" />
-<figcaption>ZKComRef_Group_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Group_Example.png)
 
 ``` xml
  <?xml version="1.0" encoding="UTF-8"?>

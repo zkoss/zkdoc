@@ -13,11 +13,7 @@ information about the swipe displacement, duration, and direction.
 
 # Example
 
-<figure>
-<img src="images/SwipeEventExample_Update.png
-title="SwipeEventExample_Update.png" />
-<figcaption>SwipeEventExample_Update.png</figcaption>
-</figure>
+![](images/SwipeEventExample_Update.png)
 
 The swipe event can be registered in any component which can be swiped
 by user on tablet devices.

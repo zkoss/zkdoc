@@ -23,11 +23,7 @@ several ways to customize the separator.
 
 # Example
 
-<figure>
-<img src="images/ZKComRef_Separator_Example.png
-title="ZKComRef_Separator_Example.png" />
-<figcaption>ZKComRef_Separator_Example.png</figcaption>
-</figure>
+![](images/ZKComRef_Separator_Example.png)
 
 ``` xml
  line 1 by separator
