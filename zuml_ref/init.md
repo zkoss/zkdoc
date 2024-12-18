@@ -44,7 +44,7 @@ If you'd like to apply an initiator for every page, you don't need to
 specify it on every page. Rather, you could install a system-level
 initiator. For more information, please refer to [ZK Developer's
 Reference: System-level
-Initiators](ZK_Developer's_Reference/UI_Patterns/Page_Initialization#System-level_Initiator).
+Initiators]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Page_Initialization#System-level_Initiator).
 
 # class
 

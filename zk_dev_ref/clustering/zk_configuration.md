@@ -74,7 +74,7 @@ thread cannot be migrated from one machine to another.
 
 It is disabled by default. For more information, please refer to the
 [Event
-Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
 section.
 
 ## Global Desktop Cache

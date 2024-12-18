@@ -1,5 +1,5 @@
 As described in [the MVC: Template
-section](ZK_Developer's_Reference/MVC/View/Template), a
+section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template), a
 template is a ZUML fragment that defines how to create components. A
 template is enclosed with [the template
 element](ZUML_Reference/ZUML/Elements/template) as shown
@@ -92,13 +92,13 @@ We suggest using shadow component
 as a replacement of children binding.
 
 [ ZK Data
-Binding](ZK_Developer's_Reference/MVVM/Data_Binding) provides
+Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding) provides
 a powerful way called [Children
-Binding](ZK_Developer's_Reference/MVVM/Data_Binding/Children_Binding)
+Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding/Children_Binding)
 to render a template based on the data (such as a list of elements).
 Moreover, the UI will be updated automatically if the data has been
 changed. For more information, please refer to [the Children Binding
-section](ZK_Developer's_Reference/MVVM/Data_Binding/Children_Binding).
+section]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding/Children_Binding).
 
 # Version History
 

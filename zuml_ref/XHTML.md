@@ -17,8 +17,8 @@ applications to modify the client dynamically (at the server). If you
 don't need it (it is generally true), you should use the [Native
 namespace](ZUML_Reference/ZUML/Namespaces/Native) instead.
 For more information, please refer to [HTML
-Tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags) and
+Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags) and
 [Performance
-Tips](ZK_Developer's_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace).
+Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace).
 
 

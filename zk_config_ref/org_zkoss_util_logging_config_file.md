@@ -9,7 +9,7 @@ It specifies the logging configuration file which is used to configure
 the logging of ZK internal functions. You generally don't need it unless
 you'd like to know how ZK operates internally. For more information,
 please refer to [ZK Developer's Reference:
-Logger](ZK_Developer's_Reference/Supporting_Utilities/Logger).
+Logger]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/Logger).
 
 For example,
 

@@ -30,7 +30,7 @@ CacheFilter](http://www.opensymphony.com/oscache/wiki/CacheFilter.html).
   2.  You turn on the cacheable flag with [the page
       directive](ZUML_Reference/ZUML/Processing_Instructions/page)
 - Don't turn on this option, if you [reuse the
-  desktops](ZK_Developer's_Reference/Performance_Tips/Reuse_Desktops)
+  desktops]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Reuse_Desktops)
   by use of
   <javadoc type="interface">org.zkoss.zk.ui.util.DesktopRecycle</javadoc>.
   After all, a desktop can be reused only if it has been removed (and

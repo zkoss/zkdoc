@@ -82,7 +82,7 @@ rather than the real format as follows.
 Then the real format of the timebox will be decided at run time
 depending the configuration. For more information, please refer to [ZK
 Developer's Reference: Date and Time
-Formatting](ZK_Developer's_Reference/Internationalization/Date_and_Time_Formatting).
+Formatting]({{site.baseurl}}/zk_dev_ref/Internationalization/Date_and_Time_Formatting).
 
 ## Locale
 

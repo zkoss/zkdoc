@@ -94,7 +94,7 @@ a tomcat cluster environment.
 
 - Line 3, turn on Serializable UI Factory for ZK, please refer to this [
   ZK
-  Configuration](ZK_Developer's_Reference/Clustering/ZK_Configuration).
+  Configuration]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration).
 - Line 7, if there are more than three Tomcat cluster nodes, or you are
   using a different cluster-manager such as
   [Hazelcast](https://hazelcast.com/) and other solutions instead, you

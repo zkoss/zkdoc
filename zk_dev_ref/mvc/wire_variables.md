@@ -131,7 +131,7 @@ example,
 
 where `$composer` is a built-in variable referring to the composer. For
 more information, please refer to [the Composer
-section](ZK_Developer's_Reference/MVC/Controller/Composer).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
 
 > ------------------------------------------------------------------------
 >

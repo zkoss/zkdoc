@@ -63,7 +63,7 @@ the HTTP session alive
 For 5.0.6 and earlier, the above statement will cause the interpreter to
 start and thus cause some performance penalty. However, for better
 performance, you could use [a
-composer](ZK_Developer's_Reference/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
 as follows.
 
 ``` xml

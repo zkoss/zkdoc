@@ -1,5 +1,5 @@
 Similar to
-[Listbox](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
 you can render a selectbox with a template. However, notice that, unlike
 other components, selectbox doesn't allow any child component, so you
 have to render each item as a string. For example,

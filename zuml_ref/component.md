@@ -164,7 +164,7 @@ components. Unlike other directives, the class can be defined with
 `zscript`.
 
 For implementing a macro component, please refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
+Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
 
 ## extends
 

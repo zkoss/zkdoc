@@ -92,11 +92,11 @@ such as
 - `@Listen("onClick = button[label='Clear']")`
 
 For more information, please refer to the following sections: [Wire
-Components](ZK_Developer's_Reference/MVC/Controller/Wire_Components),
+Components]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components),
 [Wire
-Variables](ZK_Developer's_Reference/MVC/Controller/Wire_Variables)
+Variables]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
 and [Wire Event
-Listeners](ZK_Developer's_Reference/MVC/Controller/Wire_Event_Listeners).
+Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners).
 
 ## Apply Composers
 
@@ -266,7 +266,7 @@ annotation. As its name suggests,
 <javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
 will be used to retrieve Spring-managed beans when `@WireVariable` is
 encountered. For more information, please refer to [the Wire Variables
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Variables).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables).
 
 Notice that the variables will be wired before instantiating the
 component and its children, so it is OK to access them in the ZUML

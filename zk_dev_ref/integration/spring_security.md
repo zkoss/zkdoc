@@ -599,7 +599,7 @@ configure <error-page> in `zk.xml`.
 Then, create the error handling page. To avoid users visiting the page
 directly, we put it under `/WEB-INF`. This error handling page displays
 nothing but a [ page
-initiator](ZK_Developer's_Reference/UI_Patterns/Page_Initialization)
+initiator]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Page_Initialization)
 to redirect an unauthenticated user to the login page.
 
 **handleAccessDenied.zul**

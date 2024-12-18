@@ -12,7 +12,7 @@ To use Google App Engine for Java, you have to take one additional step:
 be ready for clustering, such as implementing serializable. For more
 information, please refer to [ZK Developer's Reference:
 Clustering/Programming
-Tips](ZK_Developer's_Reference/Clustering/Programming_Tips).**
+Tips]({{site.baseurl}}/zk_dev_ref/Clustering/Programming_Tips).**
 
 # Configure Your App Engine Project
 

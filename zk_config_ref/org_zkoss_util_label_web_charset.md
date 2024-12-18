@@ -16,5 +16,5 @@ org.zkoss.util.label.classpath.charset
 property]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.util.label.classpath.charset).
 
 Please refer to [ZK Developer's Reference:
-Internationalization](ZK_Developer's_Reference/Internationalization/Labels)
+Internationalization]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels)
 for more information about zk-label.properties.

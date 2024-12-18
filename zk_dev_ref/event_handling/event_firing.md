@@ -82,16 +82,16 @@ until the request has been served and responded. Thus, we could send
 back some busy messages to let the user know what has happened, and echo
 back an event to do the long operation. For more information, please
 refer to the [Long Operations: Use Echo
-Events](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Echo_Events)
+Events]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events)
 section.
 
 [^1]: Please don't confuse it with the event queues discussed in the [
     event
-    queues](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+    queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
     section, which are application-specific, while the system event
     queue is invisible to application developers.
 
 [^2]: By default, the event thread is disabled. Please refer to the
     [Event
-    Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+    Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
     section for more information.

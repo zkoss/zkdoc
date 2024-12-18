@@ -11,7 +11,7 @@
 `Idspace` is just like a
 [Div](ZK_Component_Reference/Containers/Div) but implements
 the [ID
-space](ZK_Developer's_Reference/UI_Composing/ID_Space), all
+space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space), all
 descendant components of Idspace (including the Idspace itself) form an
 independent ID space. Thus, you could use an idspace as the topmost
 component to group components. This way developers only need to maintain

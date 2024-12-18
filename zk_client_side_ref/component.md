@@ -152,7 +152,7 @@ Suppose we want to make all window's border default to `normal`, we
 could do as follows.
 
 [Customization
-Reference](ZK_Developer's_Reference/Customization/Component_Properties)
+Reference]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties)
 
 ``` xml
 <property>

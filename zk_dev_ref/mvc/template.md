@@ -44,9 +44,9 @@ model allow you to specify a template to control how to render each
 item. In the following sections, we discuss them in details. If you'd
 like to know how to use templates manually in Java, please refer to [the
 UI Patterns: Templates
-section](ZK_Developer's_Reference/UI_Patterns/Templating/Templates).
+section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating/Templates).
 
 Notice that please read [the Listbox Template
-section](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template)
+section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template)
 first, even though you're rendering other kind of UI. It described the
 common concepts and tricks of using templates.

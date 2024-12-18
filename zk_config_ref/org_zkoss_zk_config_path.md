@@ -42,7 +42,7 @@ as one of the arguments when starting the Web server.
 
 Another example is to provide an ID generator for the testing purpose.
 For more information, please refer to [ZK Developer's Reference: Testing
-Tips](ZK_Developer's_Reference/Testing/Testing_Tips#Different_Configuration_for_Different_Environment).
+Tips]({{site.baseurl}}/zk_dev_ref/Testing/Testing_Tips#Different_Configuration_for_Different_Environment).
 
 # Version History
 

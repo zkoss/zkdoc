@@ -14,7 +14,7 @@ main window rather than register to both the menu item and button.
 
 Forwarding an event is straightforward: just posting or sending the
 event again. However, there is a better way:
-[composer](ZK_Developer's_Reference/MVC/Controller/Composer).
+[composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
 The composer can be the central place to handle the events. For example,
 you could invoke `openDialog` in the event handler for the menu item and
 button as shown below:

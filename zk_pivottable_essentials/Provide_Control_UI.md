@@ -117,7 +117,7 @@ Or, to set the label by label files, you need to add a prefix
 
 zk-label.properties<reference>For more information, please refer to [ZK
 Developer's Reference:
-Labels](ZK_Developer's_Reference/Internationalization/Labels).</reference>
+Labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels).</reference>
 
 ``` perl
 pivot.fieldControl.rowListTitle=My Rows

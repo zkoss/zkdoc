@@ -1,12 +1,18 @@
 When a tree (<javadoc>org.zkoss.zul.Tree</javadoc>) is assigned with a
-model, a default renderer is assigned too[^1]. The default renderer will
+model, a default renderer is assigned too. The default renderer will
 assume that each tree item has only one column, and it converts the data
-into a string directly[^2]. If you want to display multiple columns or
+into a string directly. If you want to display multiple columns or
 retrieve a particular field of the data, you have to implement
 <javadoc type="interface">org.zkoss.zul.TreeitemRenderer</javadoc> to
 handle the rendering.
 
-For example,
+The hierarchical structure is:
+
+`Treeitem` > `Treerow` > `Treecell`
+
+ZK passes a `Treeitem`, you need to create `Treerow` and `Treecell` upon your data and requirements.
+
+For example:
 
 ``` java
 public class HostTreeRenderer implements TreeitemRenderer {
@@ -27,21 +33,8 @@ public class HostTreeRenderer implements TreeitemRenderer {
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
-
-# Version History
-
-| Version | Date          | Content                            |
-|---------|---------------|------------------------------------|
-| 6.0.0   | February 2012 | The index argument was introduced. |
-
-[^1]: For the concept about component, model and renderer, please refer
-    to [the Model-driven Display
-    section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
-
-[^2]: If the tree is assigned a template called `model`, then the
+* For the concept about component, model and renderer, please refer
+    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/MVC/List_Model#Model-driven_Display).
+* If the tree is assigned a template called `model`, then the
     template will be used to render the tree. For more information,
-    please refer to [the Tree Template
-    section](ZK_Developer's_Reference/MVC/View/Template/Tree_Template).
+    please refer to [the Tree Template section]({{site.baseurl}}/zk_dev_ref/MVC/Template/Tree_Template).

@@ -12,7 +12,7 @@ Engine.
 
 A typical use of this interface is to determine the locale and/or time
 zone of the request. Please refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/Internationalization) for
+Reference]({{site.baseurl}}/zk_dev_ref/Internationalization) for
 the details of Internationalization.
 
 You can register any number of the request interceptors

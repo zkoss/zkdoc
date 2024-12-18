@@ -269,7 +269,7 @@ one.
 # Comparison
 
 Although the behavior of ShadowTemplate and [Macro
-component](ZK_Developer's_Reference/UI_Composing/Macro_Component)
+component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component)
 looks similar, there are some differences.
 
 |                     | ShadowTemplate                                                                                                                 | Macro Component                                                                     |

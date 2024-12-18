@@ -5,7 +5,7 @@
 A richlet is a small Java program that composes a user interface in Java
 for serving the user's request. Before composing UI in Java, we suggest
 you to know basic concept:[ UI Composing/Component-based
-UI](ZK_Developer's_Reference/UI_Composing/Component-based_UI)
+UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
 first.
 
 When a user requests the content of an URL, ZK Loader checks if the
@@ -261,7 +261,7 @@ methods, such as
 allowing developers to load ZUML documents dynamically. You could load a
 ZUML document from any source you like, such as database. Please refer
 to the [Load ZUML in
-Java](ZK_Developer's_Reference/UI_Composing/ZUML/Load_ZUML_in_Java)
+Java]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Load_ZUML_in_Java)
 for details.
 
 # Use Spring in Richlet
@@ -280,9 +280,9 @@ Then you could load Spring beans by using a utility class
 [^1]: A normal HTTP request; not an Ajax request. Ajax requests are
     handled in the same way as ZUML. For more information please refer
     to the [Event
-    Handling](ZK_Developer's_Reference/Event_Handling)
+    Handling]({{site.baseurl}}/zk_dev_ref/Event_Handling)
     section
 
 [^2]: For more information, please refer to [Component-based
-    UI](ZK_Developer's_Reference/UI_Composing/Component-based_UI)
+    UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
     section

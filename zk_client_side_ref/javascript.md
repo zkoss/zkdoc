@@ -70,7 +70,7 @@ for packages that shall not be cached, such as your own locale-dependent
 messages.
 
 For more information, please refer to the [Performance
-Tips](ZK_Developer's_Reference/Performance_Tips/Minimize_Number_of_JavaScript_Files_to_Load)
+Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Minimize_Number_of_JavaScript_Files_to_Load)
 section.
 
 # ondemand

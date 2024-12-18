@@ -10,7 +10,7 @@ or aborted.
 > ------------------------------------------------------------------------
 >
 > Notice that it is useless unless [the event processing
-> threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+> threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
 > are enabled (it is disabled by default).
 
 If a listener implements this interface, an instance is created, and

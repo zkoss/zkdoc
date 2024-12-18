@@ -1,5 +1,5 @@
 Similar to
-[Listbox](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
 you can render a combobox with a template:
 
 ``` xml

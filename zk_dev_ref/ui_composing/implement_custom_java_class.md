@@ -62,11 +62,11 @@ As shown,
 will wire variables, components and event listeners automatically, so we
 could access them directly (such as the `mc_who` member). For more
 information, please refer to [the Wire Components
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Components),
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components),
 [the Wire Variables
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Variables)
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
 and [Wire Event
-Listeners](ZK_Developer's_Reference/MVC/Controller/Wire_Event_Listeners)
+Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
 sections.
 
 Also notice that the `arg` variable is still available to the template

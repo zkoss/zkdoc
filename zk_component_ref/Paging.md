@@ -99,7 +99,7 @@ This attribute determines the max number of rendered paging anchors.
 # Limitation
 
 Paging can not apply [
-stubonly](ZK_Developer's_Reference/Performance_Tips/Specify_Stubonly_for_Client-only_Components)
+stubonly]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components)
 at the same time. For example,
 
 ``` xml
@@ -114,7 +114,7 @@ at the same time. For example,
 ```
 
 Although paging will
-[invalidate](ZK_Developer's_Reference/UI_Composing/Component-based_UI#Invalidate_a_Component)
+[invalidate]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#Invalidate_a_Component)
 `listbox` and its children, `stubonly` needs the referred widget in
 client side which is detached during paging and throws mounting error.
 

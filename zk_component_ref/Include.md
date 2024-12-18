@@ -128,7 +128,7 @@ The code below demonstrates how to use the *instant* mode:
 ```
 
 Notice the `include` component itself is [a ID space
-owner](ZK_Developer's_Reference/UI_Composing/ID_Space), so
+owner]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space), so
 there is no issue of ID conflicts. But, it also means you have to use
 <javadoc>org.zkoss.zk.ui.Path</javadoc> or other techniques to retrieve
 the child components.
@@ -149,7 +149,7 @@ For example:
 Then, you could retrieve the values by use [the arg
 object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
 as described in [the Load ZUML in Java
-section](ZK_Developer's_Reference/UI_Composing/ZUML/Load_ZUML_in_Java).
+section]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Load_ZUML_in_Java).
 
 > ------------------------------------------------------------------------
 >
@@ -426,9 +426,9 @@ user still cannot access the page, the feed back is much better (with a
 *semi-ready* page than totally blank).
 
 This feature is actually done by the use of the so-called [echo
-event](ZK_Developer's_Reference/Event_Handling/Event_Firing).
+event]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Firing).
 For more information, please refer to the [Long Operations: Use Echo
-Events](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Echo_Events)
+Events]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events)
 section.
 
 This feature cannot be used with the `instant` mode. If the `auto` mode

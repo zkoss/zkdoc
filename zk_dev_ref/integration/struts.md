@@ -98,7 +98,7 @@ As shown above, notice that
 
 For more information, please refer to [ZK Developer's
 Reference/Integration/Use_ZK_in_JSP#HTML_Form the Use ZK in JSP
-section](ZK_Developer's_Reference/Integration/Use_ZK_in_JSP#HTML_Form_the_Use_ZK_in_JSP_section).
+section]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP#HTML_Form_the_Use_ZK_in_JSP_section).
 
 # Avoid Filtering ZK AU Requests
 

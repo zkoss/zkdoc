@@ -29,7 +29,7 @@ Notice that if you have a variable resolver used for every page, you
 don't have to declare it on every page. Rather, you could register a
 system-level variable resolver. For more information, please refer to
 [ZK Developer's Reference: System-level Variable
-Resolvers](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions#System-level_Variable_Resolver).
+Resolvers]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#System-level_Variable_Resolver).
 
 # class
 

@@ -31,6 +31,6 @@ component's namespace, such as `zul`. For example,
 
 For the syntax of annotations, please refer to [ZK Developer's
 Reference:
-Annotations](ZK_Developer's_Reference/Annotations).
+Annotations]({{site.baseurl}}/zk_dev_ref/Annotations).
 
 

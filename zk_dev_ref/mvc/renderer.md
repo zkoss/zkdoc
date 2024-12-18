@@ -16,5 +16,5 @@ customized by an implementation of
 
 If you prefer to define the rendering of each item in the ZUML document,
 you can use
-[templates](ZK_Developer's_Reference/MVC/View/Template)
+[templates]({{site.baseurl}}/zk_dev_ref/MVC/View/Template)
 instead.

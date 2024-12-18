@@ -32,9 +32,9 @@ For example,
 
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display
-    section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
+    section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
 
 [^2]: If the Organigram is assigned a template called `model`, then the
     template will be used to render the Organigram. For more
     information, please refer to [the Organigram Template
-    section](ZK_Developer's_Reference/MVC/View/Template/Organigram_Template).
+    section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Organigram_Template).

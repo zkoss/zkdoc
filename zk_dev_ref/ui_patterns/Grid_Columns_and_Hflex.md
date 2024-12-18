@@ -124,7 +124,7 @@ different use cases.
 ### Proportional Width
 
 You can use the **hflex** we have mentioned in [previous
-section](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex#Flexibility_and_Resizing "wikilink").
+section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Flexibility_and_Resizing "wikilink").
 
 ``` xml
     <listhead>

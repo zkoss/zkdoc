@@ -88,7 +88,7 @@ enhanced later as the project progresses.
       
     If a URL is mapped to a richlet, ZK invokes the richlet to handle
     all UI composition. For more information, please refer to
-    [Richlet](ZK_Developer's_Reference/UI_Composing/Richlet).
+    [Richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet).
 3.  After interpreting the whole page, the ZK loader will render the
     result to an HTML page. The HTML page is then sent back to the
     browser accompanied by the ZK Client Engine.

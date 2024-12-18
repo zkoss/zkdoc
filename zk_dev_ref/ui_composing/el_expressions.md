@@ -79,9 +79,9 @@ EL expressions are evaluated on the server when the page is rendered.
 Thus, an EL variable can access:
 
 - Components by [using its
-  ID](ZK_Developer's_Reference/UI_Composing/Component-based_UI)
+  ID]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
 - Variables defined in
-  [zscript](ZK_Developer's_Reference/UI_Composing/ZUML/Scripts_in_ZUML)
+  [zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML)
 - [Implicit
   objects](ZUML_Reference/EL_Expressions/Implicit_Objects)
 - Scoped attributes

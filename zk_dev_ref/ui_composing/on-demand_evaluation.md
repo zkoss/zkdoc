@@ -8,7 +8,7 @@ visible. This technique is called load-on-demand or render-on-demand.
 For example, you could split a ZUML document into multiple pages, and
 then load the required ones when necessary. Please refer to the [Load
 ZUML in
-Java](ZK_Developer's_Reference/UI_Composing/ZUML/Load_ZUML_in_Java)
+Java]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Load_ZUML_in_Java)
 section for how to load a ZUML document dynamically.
 
 It improves the performance both at the server and client sides. It is
@@ -132,7 +132,7 @@ matter which condition is satisfied.
 If you specify an URI without any conditions, the ZUML document of the
 URI will be loaded from the very beginning. In other words, it has the
 same effect as using
-[include](ZK_Developer's_Reference/UI_Composing/ZUML/Include).
+[include]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include).
 
 ``` xml
 <div fulfill="=another.zul"/>

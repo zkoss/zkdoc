@@ -105,7 +105,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
 where we assume `isLogin` is an EL function that returns whether the
 user has logged in. For more information, please refer to the
 [Conditional
-Evaluation](ZK_Developer's_Reference/UI_Composing/ZUML/Conditional_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Conditional_Evaluation)
 section.
 
 You could forward to another page by the use of

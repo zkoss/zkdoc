@@ -105,12 +105,12 @@ above, if C calls `getSpaceOwner` it will get C itself, if C calls
 # Composer and Fellow Auto-wiring
 
 With [ZK Developer's
-Reference/MVC](ZK_Developer's_Reference/MVC), you generally
+Reference/MVC]({{site.baseurl}}/zk_dev_ref/MVC), you generally
 don't need to look up fellows manually. Rather, they could be *wired*
 automatically by using the
-[auto-wiring](ZK_Developer's_Reference/MVC/Controller/Wire_Variables)
+[auto-wiring]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
 feature of [a
-composer](ZK_Developer's_Reference/MVC/Controller). For
+composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller). For
 example,
 
 ``` java
@@ -140,7 +140,7 @@ Once the ZUML document above is rendered, an instance of MyComposer will
 be instantiated, and the `input` member will also be initialized with
 the fellow named `input`. This process is called "auto-wiring". For more
 information, please refer to the [Wire
-Components](ZK_Developer's_Reference/MVC/Controller/Wire_Components)
+Components]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components)
 section.
 
 # Find Component Manually

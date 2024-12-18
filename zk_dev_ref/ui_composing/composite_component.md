@@ -1,7 +1,7 @@
 
 
 Like a [macro
-component](ZK_Developer's_Reference/UI_Composing/Macro_Component),
+component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component),
 a composite component is an approach to compose a component based on a
 template. Unlike a macro component, a composite component has to create
 and wire the child components by itself, and handle ID space if
@@ -17,7 +17,7 @@ it is easier), while using a composite component otherwise.
 >
 > If you'd like to assemble UI at runtime (aka., templating), please
 > refer to [the Templating
-> section](ZK_Developer's_Reference/UI_Patterns/Templating)
+> section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating)
 > for more information.
 
 # Implement a Composite Component
@@ -56,7 +56,7 @@ To implement a Java class we shall:
 1.  Extend from the component class you want.
 2.  (Optional) Implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc> to
     make it an [ID space
-    owner](ZK_Developer's_Reference/UI_Composing/Component-based_UI#ID_Space).
+    owner]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space).
 3.  Render the template in the constructor by the use of
     <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
     or others.
@@ -117,9 +117,9 @@ the component with the same ID. Similarly,
 is used to wire event listeners.
 
 For more information, please refer to [the Wire Components
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Variables)
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
 and [Wire Event the Listeners
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Event_Listeners)
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
 sections.
 
 > ------------------------------------------------------------------------
@@ -171,12 +171,12 @@ automatically. As shown, we annotate
 resolve Spring-managed bean.
 
 For more information, please refer to [the Wire Variables
-section](ZK_Developer's_Reference/MVC/Controller/Wire_Variables).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables).
 
 ### ID Space
 
 Unless you extend a component that is an [ID space
-owner](ZK_Developer's_Reference/UI_Composing/Component-based_UI#ID_Space)
+owner]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space)
 (such as <javadoc>org.zkoss.zul.Window</javadoc>), all child components
 specified in the template will be in the same ID space as its parent. It
 might be convenient at the first glance. However, it will cause ID
@@ -249,7 +249,7 @@ follows.
 ```
 
 For more information, please refer to [Customization: Component
-Properties](ZK_Developer's_Reference/Customization/Component_Properties#Application-wide_Initialization).
+Properties]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties#Application-wide_Initialization).
 
 ## Define Components with Java Annotations
 

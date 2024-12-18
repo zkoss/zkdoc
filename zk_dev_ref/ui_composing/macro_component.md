@@ -20,7 +20,7 @@ component and how to use it.
 There is a similar concept called composite components. Unlike macros,
 you could derive from any component but you have to do the loading of
 ZUML manually. For more information please refer to the [Composite
-Component](ZK_Developer's_Reference/UI_Composing/Composite_Component)
+Component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component)
 section.
 
 # Definition, Declaration and Use
@@ -119,7 +119,7 @@ ${arg.includer.parent}
 Notice that `arg.includer` is different from the so-called inline
 macros. The inline macros are special macro components and used for
 inline expansion. For more information please refer to [Inline
-Macros](ZK_Developer's_Reference/UI_Composing/Macro_Component/Inline_Macros)
+Macros]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Inline_Macros)
 section.
 
 ## Pass Initial Properties
@@ -193,7 +193,7 @@ ua.setWho("Joe");
 ```
 
 Please refer to the [Implement Custom Java
-Class](ZK_Developer's_Reference/UI_Composing/Macro_Component/Implement_Custom_Java_Class)
+Class]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class)
 section for details.
 
 ## Change Template at Runtime

@@ -4,7 +4,7 @@ Here we describe how to implement a groups model
 (<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>). For the
 concept of component, model and render, please refer to [the
 Model-driven Display
-section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
 
 A groups model is used to drive components that support groups of data.
 The groups of data is a two-level tree of data: a list of grouped data

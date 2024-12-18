@@ -367,7 +367,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 For a complete list of controls that you could apply to the columns of
 grid, listbox and tree, please refer to [ZK Developer's Reference/UI
 Patterns/Grid's Columns and
-Hflex](ZK_Developer's_Reference/UI_Patterns/Grid's_Columns_and_Hflex).
+Hflex]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Grid's_Columns_and_Hflex).
 
 # Flexibility versus Percentage
 

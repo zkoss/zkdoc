@@ -198,4 +198,4 @@ ZUML document directly[^2].
     containing a ZUML document. The latter is a Java object of
     <javadoc>org.zkoss.zk.ui.Page</javadoc> that represents [a portion
     of a
-    desktop](ZK_Developer's_Reference/UI_Composing/Component-based_UI#Desktop.2C_Page_and_Component).
+    desktop]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#Desktop.2C_Page_and_Component).

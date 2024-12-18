@@ -303,7 +303,7 @@ public class SpringOrderDao {
 # Lazy Initialization Issue Under Render on Demand
 
 Some AU requests cannot be interfered by developers like "[Render On
-Demand](ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
+Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
 request. The rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have

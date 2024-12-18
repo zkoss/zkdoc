@@ -26,7 +26,7 @@ For example,
 ```
 
 For more information, please refer to [ZK Developer's Reference: Error
-Handling](ZK_Developer's_Reference/UI_Patterns/Error_Handling).
+Handling]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Error_Handling).
 
 # Acceptable Path
 

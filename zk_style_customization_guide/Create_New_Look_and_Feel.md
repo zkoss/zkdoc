@@ -96,7 +96,7 @@ a new look and feel using LESS
 After the theme is completely tuned based on flat design, right click on
 the Atlantic project and execute **Run As \> Maven install** to generate
 theme jar file. You can then use the theme jar (see [ usage
-instruction](ZK_Developer's_Reference/Theming_and_Styling/ZK_Official_Themes#Installation))
+instruction]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/ZK_Official_Themes#Installation))
 in other ZK web projects as well.
 
 

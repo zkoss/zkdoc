@@ -18,7 +18,7 @@ that it is used only if the <timeout-uri> is **not** specified.
 
 For more information, please refer to [ZK Developer's Reference/UI
 Patterns/Session Timeout
-Management](ZK_Developer's_Reference/UI_Patterns/Session_Timeout_Management).
+Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Session_Timeout_Management).
 
 ## Internationalization
 

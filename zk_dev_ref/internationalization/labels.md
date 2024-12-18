@@ -423,13 +423,13 @@ ${c:label('another.key')}
 [^1]: It is the value returned by
     <javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>. For
     more information, please refer to [the Locale
-    section](ZK_Developer's_Reference/Internationalization/Locale).
+    section]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale).
 
 [^2]: If you prefer a different charset, please refer to [the Encoding
     Character Set section](#Encoding_character_set).
 
 [^3]: Please refer to
-    [here](ZK_Developer's_Reference/Internationalization/Labels/The_Format_of_Properties_Files)
+    [here]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels/The_Format_of_Properties_Files)
     for more details about the format of a properties file, such as the
     use of multiple lines and EL expressions.
 

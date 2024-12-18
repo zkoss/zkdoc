@@ -547,7 +547,7 @@ such as <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> or
 <javadoc type="interface">org.zkoss.zul.DefaultTreeModel</javadoc>, the
 model open state is authoritative and will override the individual
 component's open state. please refer to [ the TreeModel
-documentation](ZK_Developer's_Reference/MVC/Model/Tree_Model#Open_Tree_Nodes)
+documentation]({{site.baseurl}}/zk_dev_ref/MVC/Model/Tree_Model#Open_Tree_Nodes)
 on this topic.
 
 ``` xml

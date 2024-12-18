@@ -46,7 +46,7 @@ JavaScript files that will be initially loaded:
 This means that the browser will trigger 15 requests to load the 15
 JavaScript files. Even if each file is not too big, it still takes more
 time to connect to the server and download it. However, we can specify a
-[ DSP](ZK_Developer's_Reference/Supporting_Utilities/DSP)
+[ DSP]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/DSP)
 file to include several JavaScript into one and declare it at the top of
 the index.zul.
 

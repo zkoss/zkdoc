@@ -122,7 +122,7 @@ The rule to access variables across pages is the same as to do so in
 pure ZK document. For more detailed information about
 Page(<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>), please
 refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/UI_Composing/Component-based_UI).
+Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI).
 
 # Component Tag Declaration
 

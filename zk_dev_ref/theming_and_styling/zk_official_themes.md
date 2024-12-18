@@ -117,7 +117,7 @@ theme pack jar first:
 
 Then apply a theme according to [ZK Developer's Reference/Theming and
 Styling/Switching
-Themes](ZK_Developer's_Reference/Theming_and_Styling/Switching_Themes).
+Themes]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Switching_Themes).
 
 ## Lite themes
 

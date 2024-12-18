@@ -12,7 +12,7 @@ Represents a key pressed by the user.
 
 For more information, please refer to [ZK Developer's Reference:
 Keystroke
-Handling](ZK_Developer's_Reference/UI_Patterns/Keystroke_Handling).
+Handling]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Keystroke_Handling).
 
 # Example
 

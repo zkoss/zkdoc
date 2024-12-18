@@ -10,6 +10,6 @@ them using [axe - Web Accessibility
 Testing](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd).
 
 To know more details, please refer to [ Accessibility-ready
-themes](ZK_Developer's_Reference/Theming_and_Styling/ZK_Official_Themes#Accessibility-ready_themes)
+themes]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/ZK_Official_Themes#Accessibility-ready_themes)
 
 ![]({{site.baseurl}}/zk_dev_ref/images/wcag_themes.png)

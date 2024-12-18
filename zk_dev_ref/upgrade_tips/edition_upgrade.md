@@ -99,7 +99,7 @@ Some of the default behavior changes after you upgraded the ZK edition.
 For example in the case of server push, with CE, it uses client polling.
 Once you upgrade to PE, the default push becomes comet push, and with EE
 it uses servlet 3 comet. [ Learn more
-here](ZK_Developer's_Reference/Server_Push/Configuration).
+here]({{site.baseurl}}/zk_dev_ref/Server_Push/Configuration).
 
 ## Require configuration
 

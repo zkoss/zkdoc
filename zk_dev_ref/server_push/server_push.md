@@ -11,18 +11,18 @@ They are both supported in ZK.
 
 Different approaches have different pros and cons, and we will discuss
 them in the
-[Configuration](ZK_Developer's_Reference/Server_Push/Configuration)
+[Configuration]({{site.baseurl}}/zk_dev_ref/Server_Push/Configuration)
 section.
 
 No matter which implementation you choose, the usage is the same. The
 [Event
-Queue](ZK_Developer's_Reference/Server_Push/Event_Queues) is
+Queue]({{site.baseurl}}/zk_dev_ref/Server_Push/Event_Queues) is
 the high-level API, and this is a suggested approach for its simplicity.
 However, if you prefer to access the low-level API directly, you could
 refer to the [Asynchronous
-Tasks](ZK_Developer's_Reference/Server_Push/Asynchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Asynchronous_Tasks)
 and [Synchronous
-Tasks](ZK_Developer's_Reference/Server_Push/Synchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Synchronous_Tasks)
 sections, depending on whether your task can be executed asynchronously.
 
 # Browser Concurrent Connection Limitation

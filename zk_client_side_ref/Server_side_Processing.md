@@ -165,5 +165,5 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
     implements
     <javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>.
     Please refer to [ZK Developer's Reference: Event
-    Listening](ZK_Developer's_Reference/Event_Handling/Event_Listening)
+    Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Listening)
     for details.

@@ -31,7 +31,7 @@ specify the correct device. For example,
 ```
 
 Please refer to [ZK Developer's Reference/UI Patterns/Session Timeout
-Management](ZK_Developer's_Reference/UI_Patterns/Session_Timeout_Management)
+Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Session_Timeout_Management)
 for more information.
 
 ### Page-level Automatic Timeout

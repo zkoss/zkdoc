@@ -173,7 +173,7 @@ as follows.
 Then the real format of the datebox will be decided at run-time
 depending on the configuration. For more information, please refer to
 [ZK Developer's Reference: Date and Time
-Formatting](ZK_Developer's_Reference/Internationalization/Date_and_Time_Formatting).
+Formatting]({{site.baseurl}}/zk_dev_ref/Internationalization/Date_and_Time_Formatting).
 
 In addition, you could specify the format for both date and time by
 using the syntax:

@@ -193,7 +193,7 @@ include version-badge.html version=7.0.2 %}
 
 - To make Borderlayout dependable on the size of its child components,
   [vflex
-  feature](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
+  feature]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 

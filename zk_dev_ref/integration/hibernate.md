@@ -109,7 +109,7 @@ public class HibernateUtil {
 For *open session in view* pattern, we need an interceptor to open
 sessions. In ZK, we need to intercept all requests including AU
 requests, so we implement ZK's [ Life Cycle
-Listener](ZK_Developer's_Reference/Customization/Life_Cycle_Listener)
+Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)
 to achieve this. (Our listener's implementation is based on the filter
 mentioned by a Hibernate article "Open Session in View". [^5].) This
 listener opens a session and begins a transaction at the beginning of an
@@ -390,7 +390,7 @@ public class SpringOrderDao {
 To use this Spring-based DAO in a composer (or a ViewModel), ZK provides
 several ways like variable resolvers. Please refer to [ZK Developer's
 Reference/Integration/Middleware
-Layer/Spring](ZK_Developer's_Reference/Integration/Middleware_Layer/Spring).
+Layer/Spring]({{site.baseurl}}/zk_dev_ref/Integration/Middleware_Layer/Spring).
 
 # Lazy Initialization Issue among AU Requests
 
@@ -519,7 +519,7 @@ public class OrderDao {
 
 Some AU requests cannot be interfered by developers,such as a "[Render
 On
-Demand](ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
+Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
 request where the rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have

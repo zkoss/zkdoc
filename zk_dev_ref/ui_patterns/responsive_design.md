@@ -9,7 +9,7 @@ Reference](ZK_Component_Reference/Tablet_Devices).
 # Fluid Layouts
 
 You can adjust the component size using either [ *vflex* or
-*hflex*](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex)
+*hflex*]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex)
 instead of giving components a fixed height and/or width in pixels.
 
 For example,

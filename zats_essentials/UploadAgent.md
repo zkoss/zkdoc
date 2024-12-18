@@ -165,7 +165,7 @@ public void test() throws Exception {
 
 [^1]: For more details, please refer to [ZK Developer's Reference/UI
     Patterns/File Upload and
-    Download](ZK_Developer's_Reference/UI_Patterns/File_Upload_and_Download)
+    Download]({{site.baseurl}}/zk_dev_ref/UI_Patterns/File_Upload_and_Download)
     and [ZK Component Reference/Essential
     Components/Fileupload](ZK_Component_Reference/Essential_Components/Fileupload)
 

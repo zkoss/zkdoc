@@ -12,7 +12,7 @@ exception, when parsing a ZUML page with the zscript code.
 
 It is suggested for production system, since [the performance of Java
 interpretation is not
-good](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes)
+good]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
 and the BeanShell interpreter does not work well in the clustering
 environment.
 

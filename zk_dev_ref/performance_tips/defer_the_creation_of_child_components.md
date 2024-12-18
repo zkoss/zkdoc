@@ -22,7 +22,7 @@ becomes visible.
 ```
 
 For more information, please refer to the [On-demand
-Evaluation](ZK_Developer's_Reference/UI_Composing/ZUML/On-demand_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/On-demand_Evaluation)
 section.
 
 {{ ZKDevelopersReferencePageFooter}}

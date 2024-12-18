@@ -11,7 +11,7 @@ extend the correct abstract model type. For a ListModel extend from
 extend <javadoc>org.zkoss.zul.AbstractGroupsModel</javadoc> and for a
 TreeModel extend <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> as
 described in [the Model
-section](ZK_Developer's_Reference/MVC/Model). To implement a
+section]({{site.baseurl}}/zk_dev_ref/MVC/Model). To implement a
 model that supports sorting, you have to implement
 <javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> too. Each
 time a user requires sorting,

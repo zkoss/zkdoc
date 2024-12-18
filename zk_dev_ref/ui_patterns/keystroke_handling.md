@@ -34,7 +34,7 @@ For example:
 ```
 
 Then, you could implement [a
-composer](ZK_Developer's_Reference/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
 as follows.
 
 ``` java

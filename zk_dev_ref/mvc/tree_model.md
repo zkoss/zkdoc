@@ -4,7 +4,7 @@ Here we describe how to implement a tree model
 (<javadoc type="interface">org.zkoss.zul.TreeModel</javadoc>). You shall
 understand the interaction among a component, a model, and a renderer,
 please refer to [the Model-driven Display
-section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
 
 # Choose a Proper Model Class
 

@@ -1,6 +1,6 @@
 ZK is a Java framework. Technically you could use any Java test tools
 you prefer. Here we describe the testing tips and
-[ZTL](ZK_Developer's_Reference/Testing/ZTL) (the official
+[ZTL]({{site.baseurl}}/zk_dev_ref/Testing/ZTL) (the official
 test tool based on Selenium).
 
 [ZK Jmeter plugin](https://blog.zkoss.org/2013/08/06/zk-jmeter-plugin/)

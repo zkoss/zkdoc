@@ -9,9 +9,9 @@ of the server might vary from one server to another, but the ZUML
 document is the same.
 
 Notice that if you would like to access EJB in Java (such as in [a
-composer](ZK_Developer's_Reference/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
 or in [a
-richlet](ZK_Developer's_Reference/UI_Composing/Richlet)), you
+richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet)), you
 could skip this section (since you could use the approach described in
 any EJB guide).
 
@@ -103,7 +103,7 @@ Then, we could access them as follows.
 
 The variables provided by a variable resolver is also available to the
 Java code in
-[zscript](ZK_Developer's_Reference/UI_Composing/ZUML/Scripts_in_ZUML).
+[zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML).
 For example,
 
 ``` xml

@@ -13,7 +13,7 @@ tutorial](http://docs.oracle.com/javaee/6/tutorial/doc/gjbnr.html).
 # Access a CDI Bean in a ZUL
 
 ZUL provides a feature called [ variable
-resolver](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
+resolver]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
 that allows users to access CDI bean using EL expression. To do this,
 simply put the below directive on top of a ZUML page:
 

@@ -4,7 +4,7 @@ Here we describe how to implement a matrix model
 (<javadoc type="interface">org.zkoss.zkmax.zul.MatrixModel</javadoc>).
 For the concept of component, model and renderer, please refer to [the
 Model-driven Display
-section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
 for *MatrixModel* because [
@@ -157,7 +157,7 @@ model data has been changed.
 
 *MatrixModel* is the same as *ListModel* when notify for data updates,
 please refer to [
-ListMode#Notify_for_Data_Updates](ZK_Developer's_Reference/MVC/Model/List_Model#Notify_for_Data_Updates)
+ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Notify_for_Data_Updates)
 
 ## Resource
 

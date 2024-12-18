@@ -55,7 +55,7 @@ HTML tags won't contain any ZUL component.
 
 **Notice** that you could create the native components in Java too. For
 more information, please refer to [the native
-namespace](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
 section.
 
 ``` java
@@ -117,4 +117,4 @@ Once set, descendant components unless it was set explicitly.
 [^2]: Non-native components could be stub-ized too by use of
     <javadoc method="setStubonly(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
     For more information, please refer
-    [here](ZK_Developer's_Reference/Performance_Tips/Specify_Stubonly_for_Client-only_Components).
+    [here]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components).

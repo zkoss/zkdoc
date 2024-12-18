@@ -16,12 +16,12 @@ statement disables the generation of the URIs of the default theme
 ```
 
 You rarely need it. Rather, implementing [a theme
-provider](ZK_Developer's_Reference/Theming_and_Styling/Theme_Providers)
+provider]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Theme_Providers)
 is a more controllable alternative.
 
 It is usually used with the `theme-uri` element to replace the default
 theme. Please refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/Theming_and_Styling/Theme_Customization)
+Reference]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Theme_Customization)
 for more details about theming and styling.
 
 

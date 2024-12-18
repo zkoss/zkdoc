@@ -1,5 +1,5 @@
 Here we describe how to provide more effects for [client-side
-actions](ZK_Developer's_Reference/UI_Patterns/Actions_and_Effects).
+actions]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Actions_and_Effects).
 
 The allowed effects are actually the names of methods defined in
 <javadoc directory="jsdoc">zk.eff.Actions</javadoc>. Thus, to add a new

@@ -1,5 +1,5 @@
 In addition to [ Defer the Creation of Child
-Components](ZK_Developer's_Reference/Performance_Tips/Defer_the_Creation_of_Child_Components),
+Components]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Defer_the_Creation_of_Child_Components),
 you can defer the rendering of the widgets at the client by the use of
 the `renderdefer` attribute. It is a technique to make a sophisticated
 page appear earlier.

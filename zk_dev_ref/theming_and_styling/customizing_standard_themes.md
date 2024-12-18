@@ -7,7 +7,7 @@ breeze and silver gray.
 
 Please see [ZK Developer's Reference/Theming and Styling/Creating Custom
 Themes/Theme
-Template](ZK_Developer's_Reference/Theming_and_Styling/Creating_Custom_Themes/Theme_Template).
+Template]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Creating_Custom_Themes/Theme_Template).
 
 # Change Font Size and Family
 
@@ -41,7 +41,7 @@ specifying different values.
 Notice that the library properties control the theme for the whole
 application. If you want to provide <i>per-user</i> theme (like zkdemo
 does), you have to [ implement a theme
-provider](ZK_Developer's_Reference/Theming_and_Styling/Theme_Providers).
+provider]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Theme_Providers).
 
 ## Font Size
 

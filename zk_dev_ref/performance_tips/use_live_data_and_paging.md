@@ -14,7 +14,7 @@ paging mold such as
 ```
 
 For more information of using and implementing a model, please refer to
-[the Model section](ZK_Developer's_Reference/MVC/Model) and
+[the Model section]({{site.baseurl}}/zk_dev_ref/MVC/Model) and
 [ZK Component Reference:
 Listbox](ZK_Component_Reference/Data/Listbox#Live_Data).
 

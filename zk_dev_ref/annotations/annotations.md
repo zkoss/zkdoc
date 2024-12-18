@@ -7,5 +7,5 @@ components. Rather, they are mainly used for UI designers to annotate
 metadata, such that it controls how a tool or a utility shall do at
 run-time. The content and meanings of annotations totally depend on the
 tools or the utilities the developer uses. For example, [ZK
-Bind](ZK_Developer's_Reference/MVVM/Data_Binding) examines
+Bind]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding) examines
 annotations to know how to load and store the value of a component.

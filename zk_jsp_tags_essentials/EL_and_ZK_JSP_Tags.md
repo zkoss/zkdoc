@@ -52,7 +52,7 @@ zscript variables directly:
 In pure ZK, the variable accessibility scope is based on the concept of
 ID Space(If you don't know what ID Space is for, please refer to [ZK
 Developer's
-Reference](ZK_Developer's_Reference/UI_Composing/ID_Space)).
+Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space)).
 In ZK JSP environment, it is totally the same as the pure ZK. For
 example:
 

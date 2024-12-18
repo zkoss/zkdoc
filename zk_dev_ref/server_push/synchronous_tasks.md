@@ -14,7 +14,7 @@ later. On the other hand, if the task can be encapsulated as an event
 listener
 (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>),
 you could execute it asynchronously -- please refer to the [Asynchronous
-Tasks](ZK_Developer's_Reference/Server_Push/Asynchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Asynchronous_Tasks)
 section for more information.
 
 # Enable Server Push

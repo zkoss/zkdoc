@@ -23,13 +23,13 @@ EventQueue que = EventQueues.lookup("chat", EventQueues.APPLICATION, true);
 
 For more information about event queues, please refer to the [Event
 Handling: Event
-Queues](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
 section.
 
 For the information about low-level API, please refer to [Asynchronous
-Tasks](ZK_Developer's_Reference/Server_Push/Asynchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Asynchronous_Tasks)
 section, if the task can execute asynchronously; or [Synchronous
-Tasks](ZK_Developer's_Reference/Server_Push/Synchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Synchronous_Tasks)
 if it must execute synchronously.
 
 # Version History

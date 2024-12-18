@@ -31,12 +31,12 @@ following section.
 ## Composer and Event Listener Autowiring
 
 With [ZK Developer's
-Reference/MVC](ZK_Developer's_Reference/MVC), you generally
+Reference/MVC]({{site.baseurl}}/zk_dev_ref/MVC), you generally
 do not need to register event listeners manually. Rather, they can be
 registered automatically by the use of the
-[auto-wiring](ZK_Developer's_Reference/MVC/Controller/Wire_Event_Listeners)
+[auto-wiring]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
 feature of [a
-composer](ZK_Developer's_Reference/MVC/Controller). For
+composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller). For
 example,
 
 ``` java
@@ -91,7 +91,7 @@ components within the given ID space. You could associate any component
 that properly represents a scope of your application to manage.
 
 For more information please refer to the [Wire Event
-Listeners](ZK_Developer's_Reference/MVC/Controller/Wire_Event_Listeners)
+Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
 section.
 
 ## Deferrable Event Listeners

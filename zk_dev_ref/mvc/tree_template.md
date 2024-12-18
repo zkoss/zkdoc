@@ -1,5 +1,5 @@
 Similar to
-[Listbox](ZK_Developer's_Reference/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
 you can also define a customer rendering with a template for a tree:
 
 ``` xml

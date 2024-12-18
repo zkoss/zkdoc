@@ -71,7 +71,7 @@ file](ZK_Client-side_Reference/Widget_Package_Descriptor).
 
 For example, you could have a WPD file and make it loaded with the zk
 package (so [it speeds up the
-loading](ZK_Developer's_Reference/Performance_Tips/Minimize_Number_of_JavaScript_Files_to_Load)).
+loading]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Minimize_Number_of_JavaScript_Files_to_Load)).
 
 ``` xml
 <language-addon>

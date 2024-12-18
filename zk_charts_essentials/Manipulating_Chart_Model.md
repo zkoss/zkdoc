@@ -3,12 +3,12 @@
 Models are the perfect way for developers to interact with the charts as
 they shield developers from complexities that they need not know or
 interact with. In addition to this ZK model supports many design
-patterns including [ MVC](ZK_Developer's_Reference/MVC/Model)
+patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/MVC/Model)
 and [ MVVM](ZK_Developer%27s_Reference/MVVM), which are both
 fully supported patterns.
 
 ZK provides [ chart
-models](ZK_Developer's_Reference/MVC/Model/Chart_Model) to
+models]({{site.baseurl}}/zk_dev_ref/MVC/Model/Chart_Model) to
 handle data in the chart. Manipulating chart model with charts is the
 same as other ZK components handling their supporting models. We've used
 MVC approach to create the chart in the previous section - [ Create your

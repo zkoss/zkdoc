@@ -13,7 +13,7 @@ also means the DOM element's IDs will change from one test run to
 another.
 
 If your test code runs at the server (such
-[ZATS](ZK_Developer's_Reference/Testing/ZATS) and JUnit), it
+[ZATS]({{site.baseurl}}/zk_dev_ref/Testing/ZATS) and JUnit), it
 is not an issue at all (since DOM elements are available at the client
 only). However, if your test tool runs in a browser, you have to locate
 an element with one of the following approaches:
@@ -29,7 +29,7 @@ Let me explain them in detail.
 ## Approach 1: Locate by a component's ID
 
 With [Server+client
-architecture](ZK_Developer's_Reference/Overture/Architecture_Overview),
+architecture]({{site.baseurl}}/zk_dev_ref/Overture/Architecture_Overview),
 ZK maintains an *identical* world at the client. If your test tool is
 able to access JavaScript at the client, your test code can depend on a
 component's ID and its widget's parent-child relationship as your
@@ -70,7 +70,7 @@ since it can be retrieved from a widget's
 
 [ZTL](http://code.google.com/p/zk-ztl/) is a typical example that takes
 this approach. For more information, please refer to the [ZTL
-section](ZK_Developer's_Reference/Testing/ZTL).
+section]({{site.baseurl}}/zk_dev_ref/Testing/ZTL).
 
 ## Approach 2: Use ID Generator
 

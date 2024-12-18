@@ -88,7 +88,7 @@ below.
 ## Used with forEach
 
 Like any other elements, you can use the [forEach
-attribute](ZK_Developer's_Reference/UI_Composing/ZUML/Iterative_Evaluation)
+attribute]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation)
 (so are if and unless). The `forEach` attribute is evaluated first, so
 the following is the same as multiple cases.
 

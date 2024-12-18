@@ -6,7 +6,7 @@ plugin used to intercept the AU requests
 By plugging in an AU service, you could
 
 - Ignore some AU requests (such as [hostile
-  requests](ZK_Developer's_Reference/Security_Tips/Block_Request_for_Inaccessible_Widgets))
+  requests]({{site.baseurl}}/zk_dev_ref/Security_Tips/Block_Request_for_Inaccessible_Widgets))
 - Change the default way of handling an AU request
 - Handle application-specific AU requests
 
@@ -23,7 +23,7 @@ Unlike desktops, a component can have at most one AU service.
 If you want to plug an AU service, you could implement
 <javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> and
 register it in zk.xml as described in [Life Cycle
-Listener](ZK_Developer's_Reference/Customization/Life_Cycle_Listener).
+Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener).
 
 ``` java
 public class MyDesktopInit implements DesktopInit {

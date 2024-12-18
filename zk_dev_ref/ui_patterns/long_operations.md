@@ -14,15 +14,15 @@ There are basically two approaches:
 
 The first approach could be done with a technique called *echo events*
 as described in [the Use Echo Events
-section](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Echo_Events).
+section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events).
 
 The second approach can be done in several ways, such as starting a
 working thread to do the long operation and then using a timer to check
 if the data is ready and show to the client. However, there is a simple
 approach: use [an event
-queue](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+queue]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
 to run an asynchronous listener as described in [the Use Event Queues
-section](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Event_Queues).
+section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues).
 
 In addition to the above approaches, there is a special mechanism called
 piggyback, which could be used to piggy back UI updates without extra

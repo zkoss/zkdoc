@@ -110,7 +110,7 @@ sample]({{site.baseUrl}}/zk_config_ref/web.xml/Sample_of_web.xml).
 # Map URL to Richlets
 
 Assume you have a
-[richlet](ZK_Developer's_Reference/UI_Composing/Richlet)
+[richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet)
 named `foo.FooRichlet`. Then, you could configure it as follows.
 
 First, declare the richlet:

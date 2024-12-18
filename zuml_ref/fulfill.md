@@ -33,7 +33,7 @@ that you could specify at most one URI in a fulfill attribute.
 
 For more information, please refer to [ZK Developer's Reference:
 On-demand
-Evaluation](ZK_Developer's_Reference/UI_Composing/ZUML/On-demand_Evaluation).
+Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/On-demand_Evaluation).
 
 # The onFulfill Event
 

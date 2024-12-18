@@ -75,4 +75,4 @@ by calling
 
 [^1]: Then, the application is able to run in a clustering environment.
     For more information, please refer to the [Clustering
-    section](ZK_Developer's_Reference/Clustering/ZK_Configuration)
+    section]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration)

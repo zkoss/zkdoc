@@ -6,11 +6,11 @@ framework[^1].
 
 You could skip this chapter if you'd like to use ZK's templating
 technology, such as [Templating:
-composition](ZK_Developer's_Reference/UI_Patterns/Templating/Composition),
+composition]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating/Composition),
 [Servlet's
-inclusion](ZK_Developer's_Reference/UI_Composing/ZUML/Include)
+inclusion]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
 (javax.servlet.RequestDispatcher's include) and [macro
-components](ZK_Developer's_Reference/UI_Composing/Macro_Component).
+components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component).
 
 ZK also supports many powerful layout components, such as portallayout,
 borderlayout, tablelayout, columnlayout and so on[^2]. You could use
@@ -273,7 +273,7 @@ Queues](ZK_Developer%27s_Reference/Event_Handling/Event_Queues).
     Reference](ZK_Component_Reference).
 
 [^3]: You might take a look at [Use ZK in
-    JSP](ZK_Developer's_Reference/Integration/Use_ZK_in_JSP)
+    JSP]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP)
     for more information.
 
 [^4]: In short, component's UUID must be unquie in the same session. It

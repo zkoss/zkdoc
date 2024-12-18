@@ -60,7 +60,7 @@ component](ZUML_Reference/ZUML/Languages/XHTML). It is
 convenient if you want to manipulate them dynamically. However, it costs
 more memory since ZK has to maintain the states of each HTML tag. Thus,
 it is suggested to use [the native
-namespace](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
 for the portion whose content won't be changed dynamically.
 
 # ZK Filter versus UI Factory

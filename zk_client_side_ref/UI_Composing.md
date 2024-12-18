@@ -300,7 +300,7 @@ later.
     object. For Android devices, it is a Java object.
 
 [^2]: A widget in the same [ID
-    space](ZK_Developer's_Reference/UI_Composing/ID_Space).
+    space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space).
 
 [^3]: Since ZK 5.0.2
 

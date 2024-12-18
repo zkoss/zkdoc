@@ -167,7 +167,7 @@ Notice we have to specify the name property such that its value will be
 sent with the given name. For more information of using HTML FORM,
 please refer to [ZK Developer's Reference/Integration/Use ZK in
 JSP#HTML_Form:ZK Developer's Reference: HTML
-Form](ZK_Developer's_Reference/Integration/Use_ZK_in_JSP#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
+Form]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
 
 ## Side Effect: Chrome and Safari
 

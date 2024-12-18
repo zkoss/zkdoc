@@ -1,7 +1,7 @@
 
 
 The [event
-queue](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+queue]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
 provides a simple way to execute a so-called asynchronous event listener
 in parallel to other event listeners. Thus, it won't block the user from
 accessing other functions even if the asynchronous event listener takes
@@ -13,7 +13,7 @@ used in the environment that does not allow the use of working threads,
 such as [Google App Engine](http://code.google.com/appengine/).
 
 In addition, it will start [a server
-push](ZK_Developer's_Reference/Server_Push) automatically to
+push]({{site.baseurl}}/zk_dev_ref/Server_Push) automatically to
 send the UI updates back when it is ready. If you prefer to use the
 client polling or a particular implementation, you could start it
 manually by use of

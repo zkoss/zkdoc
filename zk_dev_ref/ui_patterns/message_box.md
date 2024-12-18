@@ -52,7 +52,7 @@ Alternatively, you can examine the event name:
 shall implement
 <javadoc  type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
 For more information, please refer to [ZK Developer's Reference:
-Clustering](ZK_Developer's_Reference/Clustering/Programming_Tips).
+Clustering]({{site.baseurl}}/zk_dev_ref/Clustering/Programming_Tips).
 
 # Message Boxes with Event Thread
 

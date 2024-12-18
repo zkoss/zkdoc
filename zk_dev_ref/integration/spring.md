@@ -79,7 +79,7 @@ You can enable Spring's classpath scanning to register beans.
 # Access a Spring Bean in a ZUL
 
 ZUL provides a feature called [ variable
-resolver](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
+resolver]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
 that allows users to access Spring bean using EL expressions. Simply put
 the below directive on top of a ZUML page:
 

@@ -392,7 +392,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 - To make Borderlayout dependent on the size of its child components,
   [vflex
-  feature](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
+  feature]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
@@ -670,7 +670,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 container providing captioning, bordering, overlapping, draggable,
 closable, sizable, and many other features. Window is also the owner of
 [an ID
-space](ZK_Developer's_Reference/UI_Composing/ID_Space), such
+space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space), such
 that each child component and its IDs are in one independent window so
 as to avoid the IDs of child components conflicting with one another.
 

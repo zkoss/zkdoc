@@ -6,7 +6,7 @@
 
 It specifies the location of the properties file for [the
 internationalization
-labels](ZK_Developer's_Reference/Internationalization/Labels).
+labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels).
 If you have multiple properties files, you could specify them one by
 one. For example,
 

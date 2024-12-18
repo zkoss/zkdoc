@@ -166,7 +166,7 @@ returns false).</p></td>
 
 | Version | Description                                          | Example Location                                                                                                                                                                                 |
 |---------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.6     | Smalltalk: Toolbar and Menus                         | [ZK Developer's Reference: Tooltips, Context Menus and Popups](ZK_Developer's_Reference/UI_Patterns/Tooltips,_Context_Menus_and_Popups)                                               |
+| 3.6     | Smalltalk: Toolbar and Menus                         | [ZK Developer's Reference: Tooltips, Context Menus and Popups]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Tooltips,_Context_Menus_and_Popups)                                               |
 | 3.6     | A way to specify the position of the Popup component | [New Features of ZK 3.6.1](Small_Talks/2009/April/New_Features_of_ZK_3.6.1#A_way_to_specify_the_position_of_the_Popup_component_A_way_to_specify_the_position_of_the_Popup_component) |
 | 3.6     | Popup, tooltip and context positions                 | [New Features of ZK 3.6.3](Small_Talks/2009/November/New_Features_of_ZK_3.6.3#Popup.2C_tooltip_and_context_positions_Popup,_tooltip_and_context_positions)                            |
 

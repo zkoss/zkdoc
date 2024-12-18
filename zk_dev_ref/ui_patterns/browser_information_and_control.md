@@ -41,7 +41,7 @@ client, you can store the client info in the session's attribute.
 
 For example, we could use it to control the default time zone (For more
 information about time zone, please refer to the [Time
-Zone](ZK_Developer's_Reference/Internationalization/Time_Zone)
+Zone]({{site.baseurl}}/zk_dev_ref/Internationalization/Time_Zone)
 section).
 
 ``` java
@@ -137,7 +137,7 @@ After the loading is completed, you could invoke
 (or
 <javadoc method="clearBusy()">org.zkoss.zk.ui.util.Clients</javadoc>)to
 clean it up. For more information, please refer to the [Use Echo
-Events](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Echo_Events)
+Events]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events)
 section.
 
 ## Log the Message to Browser

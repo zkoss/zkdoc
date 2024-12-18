@@ -1,7 +1,7 @@
 
 
 If you are not familiar with XML, please take a look at [XML
-Background](ZK_Developer's_Reference/UI_Composing/ZUML/XML_Background)
+Background]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/XML_Background)
 first.
 
 # An XML Element Represents a Component
@@ -126,7 +126,7 @@ of the collection.
 
 For more information about special attributes, please refer to the
 [Iterative
-Evaluation](ZK_Developer's_Reference/UI_Composing/ZUML/Iterative_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation)
 section and the [ZUML
 Reference](ZUML_Reference/ZUML/Attributes)
 

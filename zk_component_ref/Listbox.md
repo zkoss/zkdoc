@@ -1360,7 +1360,7 @@ the value as **ignore.change**.
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
-Tips](ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand).
+Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand).
 
 ## org.zkoss.zul.listbox.preloadSize
 

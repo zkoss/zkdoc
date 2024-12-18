@@ -8,7 +8,7 @@ Essentials](ZK_Component_Development_Essentials).
 
 If you would like to change the default configuration of a ZK
 application, please refer to [ZK Developer's Reference: Packing
-Code](ZK_Developer's_Reference/Customization/Packing_Code).
+Code]({{site.baseurl}}/zk_dev_ref/Customization/Packing_Code).
 
 # Language Definition
 

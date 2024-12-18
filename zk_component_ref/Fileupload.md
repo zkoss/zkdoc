@@ -69,7 +69,7 @@ in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
 -- for more information, please refer to [ZK Developer's Reference: Life
 Cycle
-Listener](ZK_Developer's_Reference/Customization/Life_Cycle_Listener)).
+Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)).
 
 To implement a custom template, please take a look at [the default
 template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/fileuploaddlg.zul).

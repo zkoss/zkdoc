@@ -101,7 +101,7 @@ carefully.
 ## Client-side Actions
 
 The [client-side
-action](ZK_Developer's_Reference/UI_Patterns/Actions_and_Effects)
+action]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Actions_and_Effects)
 is not encoded and the options are interpreted as a JSON object. In most
 cases we expect the values to come from the server-side. However, if you
 allow end-users to specify them (not recommended), you should encode

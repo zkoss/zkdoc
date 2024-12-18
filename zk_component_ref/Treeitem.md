@@ -131,7 +131,7 @@ always returning True (meaning that by default, all TreeItems will be
 marked as selectable during rendering)
 
 Refer to
-[ZK_Developer's_Reference/MVC/Model/Tree_Model#Selection](ZK_Developer's_Reference/MVC/Model/Tree_Model#Selection)
+[ZK_Developer's_Reference/MVC/Model/Tree_Model#Selection]({{site.baseurl}}/zk_dev_ref/MVC/Model/Tree_Model#Selection)
 in regard to SelectionControl customization.
 
 # Supported Events

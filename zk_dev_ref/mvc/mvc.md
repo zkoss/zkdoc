@@ -28,12 +28,12 @@ Reference\].
 # View
 
 The *view* is UI -- a composition of
-[components](ZK_Developer's_Reference/UI_Composing/Component-based_UI).
+[components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI).
 As described in the [UI
-Composing](ZK_Developer's_Reference/UI_Composing) section, UI
+Composing]({{site.baseurl}}/zk_dev_ref/UI_Composing) section, UI
 can be implemented by [a ZUML
-document](ZK_Developer's_Reference/UI_Composing/ZUML) or [in
-Java](ZK_Developer's_Reference/UI_Composing/Richlet). For the
+document]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML) or [in
+Java]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet). For the
 sake of description, ZUML is used to illustrate the concept and
 features.
 
@@ -49,7 +49,7 @@ abstracted by implementing
 
 For typical database access, the glue logic (i.e., control) can be
 handled by a generic feature called [Data
-Binding](ZK_Developer's_Reference/MVVM/Data_Binding). In
+Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding). In
 other words, the read and write operations can be handled automatically
 by a generic Data Binding, and you don't need to write the glue logic at
 all.

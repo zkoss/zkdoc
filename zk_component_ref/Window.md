@@ -15,7 +15,7 @@ A window is, like HTML DIV tag, used to group components. Unlike other
 components, a window has the following characteristics.
 
 - A window is an owner of [an ID
-  space](ZK_Developer's_Reference/UI_Composing/ID_Space). Any
+  space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space). Any
   component contained in a window, including itself, could be found by
   use of
   <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>,
@@ -207,7 +207,7 @@ enable the event processing thread, please refer to [ZK Configuration Reference]
 >
 > Notice that, for better integration with other frameworks, such as
 > Spring, it is suggested to *disable* the event processing thread
-> (default). For more information, please refer to the [Event Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+> (default). For more information, please refer to the [Event Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
 > section.
 
 Once the event thread is enabled, a modal window will behave differently

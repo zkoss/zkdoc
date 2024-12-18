@@ -89,5 +89,5 @@ mentioned above.
 Like configuring a locale, you can prepare the time zone for the given
 session by the use of the request interceptor. Please refer to [the
 Locale
-section](ZK_Developer's_Reference/Internationalization/Locale#The_Request_Interceptor)
+section]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale#The_Request_Interceptor)
 for more information.

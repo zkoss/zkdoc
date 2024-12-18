@@ -8,7 +8,7 @@ functionality to ZUML.
 >
 > For introduction of languages vs standard namespaces, please refer to
 > [ZK Developer's
-> References](ZK_Developer's_Reference/UI_Composing/ZUML/XML_Namespaces).
+> References]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/XML_Namespaces).
 
 <table>
 <thead>

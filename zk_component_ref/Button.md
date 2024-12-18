@@ -192,7 +192,7 @@ if (something_happens) {
 ### Enable Autodisable for All Buttons
 
 As described in [ZK Developer's Reference:
-Customization](ZK_Developer's_Reference/Customization/Component_Properties),
+Customization]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties),
 you could customize ZK to enable `autodisable` for all button by
 specifying the following in the custom language addon:
 

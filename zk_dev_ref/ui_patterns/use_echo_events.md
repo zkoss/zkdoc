@@ -12,7 +12,7 @@ The better approach is to send back some busy messages to let the user
 know what happens during processing the long operation. It can be done
 easily with event echoing. If you prefer to allow the user to keep
 accessing other functions, please refer to the [Use Event
-Queues](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues)
 section, which is powerful but more sophisticated to implement.
 
 Event echoing for a long operation basically takes three steps

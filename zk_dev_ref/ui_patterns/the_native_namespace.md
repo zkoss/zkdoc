@@ -61,15 +61,15 @@ code snippet is incorrect, since there is no component called `x`.
 If you want to change them dynamically, you could:
 
 1.  Use [client-side
-    code](ZK_Developer's_Reference/UI_Composing/Client-side_UI_Composing)
+    code]({{site.baseurl}}/zk_dev_ref/UI_Composing/Client-side_UI_Composing)
     to modify the browser's DOM tree at the client. Notice that, since
     ZK doesn't create the widget at the client too, you have to
     manipulate the DOM tree directly.
 2.  Use the [html
-    component](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_html_Component)
+    component]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_html_Component)
     if you won't mix ZUL with HTML tags.
 3.  Use [XHTML component
-    set](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_XHTML_Component_Set)
+    set]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_XHTML_Component_Set)
     as described in the following section.
 
 For example, we can modify the DOM tree with jQuery as follows:
@@ -82,10 +82,10 @@ For example, we can modify the DOM tree with jQuery as follows:
 ```
 
 The rule of thumb is to use [the native
-namespace](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
 if possible. If you need to change the content dynamically, you might
 consider [the html
-component](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_html_Component)
+component]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_html_Component)
 first. If still not applicable, use [the XHTML component
 set](ZUML_Reference/ZUML/Languages/XHTML).
 

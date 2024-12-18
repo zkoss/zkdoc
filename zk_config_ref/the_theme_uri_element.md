@@ -8,7 +8,7 @@ It specifies the URI of an addition theme (aka., a style sheet file).
 
 Like other URI, it accepts `*` for loading browser and Locale dependent
 style sheet. Please refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/Internationalization/Locale-Dependent_Resources)
+Reference]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale-Dependent_Resources)
 for more details.
 
 You can specify any number of `them-uri` as follows.
@@ -22,7 +22,7 @@ You can specify any number of `them-uri` as follows.
 
 If you want to replace a default theme, you have to use `theme-uri` with
 `disable-theme-uri`. Please refer to [ZK Developer's
-Reference](ZK_Developer's_Reference/Theming_and_Styling) for
+Reference]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling) for
 more information.
 
 **Notice:**

@@ -8,7 +8,7 @@
 XML component sets. It is used to generate (static) XML document, such
 as [RSS feed](http://www.whatisrss.com/). For introduction please refer
 to [ZK Developer's
-Reference](ZK_Developer's_Reference/UI_Patterns/XML_Ouput).
+Reference]({{site.baseurl}}/zk_dev_ref/UI_Patterns/XML_Ouput).
 
 Most of XML elements with the XML namespace are mapped to a general XML
 component (<javadoc>org.zkoss.zml.XmlNativeComponent</javadoc>) that

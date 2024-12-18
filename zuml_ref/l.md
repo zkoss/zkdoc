@@ -7,7 +7,7 @@ i.e.,
 <javadoc method="getLabel(java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
 
 Returns the label of the given key defined in [the internationalization
-labels](ZK_Developer's_Reference/Internationalization/Labels).
+labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels).
 
 The label is based on the current Locale
 (<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).

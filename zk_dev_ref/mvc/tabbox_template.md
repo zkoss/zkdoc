@@ -144,4 +144,4 @@ For example,
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
     [the Composer
-    section](ZK_Developer's_Reference/MVC/Controller/Composer)
+    section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)

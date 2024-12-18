@@ -46,4 +46,4 @@ them together in a ZUML document as follows:
 
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display
-    section](ZK_Developer's_Reference/MVC/Model/List_Model#Model-driven_Display).
+    section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).

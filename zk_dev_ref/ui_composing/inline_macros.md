@@ -76,7 +76,7 @@ On the other hand, regular macros allow the component developers to
 provide a custom Java class to represent the component so a better
 abstraction and addition functionality can be implemented. We will
 discuss it more in the [following
-section](ZK_Developer's_Reference/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
+section]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
 
 > ------------------------------------------------------------------------
 >

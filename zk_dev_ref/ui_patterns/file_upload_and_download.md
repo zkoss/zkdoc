@@ -101,4 +101,4 @@ for correct usages.
 [^1]: If you enabled the use of event threads, you could use
     <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> and
     related. For more information, please refer to [the Event Thread
-    section](ZK_Developer's_Reference/UI_Patterns/Event_Threads/File_Upload).
+    section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads/File_Upload).

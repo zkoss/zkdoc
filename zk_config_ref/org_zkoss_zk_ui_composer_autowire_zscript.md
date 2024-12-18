@@ -25,7 +25,7 @@ off.
 Notice that, to have the best performance, it is recommended not to use
 zscript at all. For more more details, please refer to [ZK Developer's
 Reference: Performance
-Tips](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes).
+Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes).
 
 If you don't use any zscript, this option does not matter since ZK is
 smart enough to skip the wiring of zscript variables automatically.

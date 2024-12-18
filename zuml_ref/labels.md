@@ -1,7 +1,7 @@
 # labels - java.util.Map
 
 A map of all [internationalization
-labels](ZK_Developer's_Reference/Internationalization/Labels)
+labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels)
 belonging to the current locale
 (<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
 

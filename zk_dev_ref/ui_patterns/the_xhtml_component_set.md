@@ -42,7 +42,7 @@ shown below.
 ```
 
 On the other hand, the [native
-namespace](ZK_Developer's_Reference/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
 will cause *native* HTML tags to be generated. It means you can not
 modify the content dynamically on the server. Notice that you still can
 handle them dynamically at the client.

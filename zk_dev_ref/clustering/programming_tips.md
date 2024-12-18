@@ -30,7 +30,7 @@ void foo() {
 
 Notice that it is not recommended to use zscript in the clustering
 environment. After all, the [performance of
-BeanShell](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes)
+BeanShell]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
 is not good.
 
 ## Event Listeners
@@ -159,10 +159,10 @@ between the requests.
 
 It also implies you cannot use a working thread to handle a long
 operation. Rather, you have to use the so-called [Echo
-Event](ZK_Developer's_Reference/Event_Handling/Event_Firing#Echo_an_Event).
+Event]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Firing#Echo_an_Event).
 
 Users of ZK 5.0.5 or prior cannot deploy the [event
-queues](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
 for the session and application scope. However, users of ZK 5.0.6 or
 later have no such limitation.
 

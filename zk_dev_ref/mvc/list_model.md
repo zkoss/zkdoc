@@ -11,7 +11,7 @@ the display of the listbox is controlled by the model, and an optional
 renderer. The model is used to provide data, while the renderer is used
 to provide the custom look. By default, the data is shown as a
 single-column grid/listbox. If it is not what you want, please refer to
-[the View section](ZK_Developer's_Reference/MVC/View) for
+[the View section]({{site.baseurl}}/zk_dev_ref/MVC/View) for
 writing a custom renderer.
 
 # Model-driven Rendering

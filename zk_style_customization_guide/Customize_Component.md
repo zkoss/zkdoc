@@ -101,7 +101,7 @@ by simply refreshing the browser.
     </code> in **window.zul** page.
   - Remove ZK Less Servlet settings in web.xml.
   - [ Enable DSP Loader
-    Servlet](ZK_Developer's_Reference/Supporting_Utilities/DSP)
+    Servlet]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/DSP)
     in web.xml
   - Put window.css.dsp files (can be found under **less** folder)
     wherever you want. Then add the following settings in zk.xml file.

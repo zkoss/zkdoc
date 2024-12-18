@@ -97,7 +97,7 @@ It is illegal to access components attached to other desktops[^1]. If
 you want to retrieve component, you may use
 <javadoc>org.zkoss.zul.Include</javadoc> instead of
 <javadoc>org.zkoss.zul.Iframe</javadoc>. Or, you could use [Event
-Queues](ZK_Developer's_Reference/Event_Handling/Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
@@ -139,7 +139,7 @@ void publish() {
 
 For more information please take a look at [ZK Developer's Reference:
 Event
-Queues](ZK_Developer's_Reference/Event_Handling/Event_Queues).
+Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues).
 
 # onload
 
@@ -218,5 +218,5 @@ to.</p></td>
 
 
 [^1]: For more information please refer to the [Component-based
-    UI](ZK_Developer's_Reference/UI_Composing/Component-based_UI)
+    UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
     section

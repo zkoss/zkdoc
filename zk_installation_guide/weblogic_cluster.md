@@ -6,7 +6,7 @@ and [Weblogic](#weblogic.xml).
 ## zk.xml
 
 - Turn on Serializable UI Factory for ZK, please refer to [ this
-  documentation](ZK_Developer's_Reference/Clustering/ZK_Configuration).
+  documentation]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration).
 
 ``` xml
 <zk>

@@ -324,7 +324,7 @@ invoking
     (<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>)
     is a controller that can be associated with a component for handling
     the UI in Java. For the information, please refer to [the Composer
-    section](ZK_Developer's_Reference/MVC/Controller/Composer).
+    section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
 
 [^5]: Of course, the performance of
     <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>

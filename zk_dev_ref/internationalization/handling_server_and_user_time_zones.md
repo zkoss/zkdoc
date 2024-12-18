@@ -24,7 +24,7 @@ to a frame of reference for time.
 
 Be sure you know how ZK determines its server time zone by reading
 [Internationalization/Time
-Zone](ZK_Developer's_Reference/Internationalization/Time_Zone).
+Zone]({{site.baseurl}}/zk_dev_ref/Internationalization/Time_Zone).
 
 # Use of server's time zone
 
@@ -126,7 +126,7 @@ ZK itself doesn't perform time calculations. As a Java framework, ZK
 will delegate the task of manipulating time to the relevant Java APIs.
 
 ZK can retrieve the client's locale and time zone information [from the
-clientInfoEvent](ZK_Developer's_Reference/UI_Patterns/Browser_Information_and_Control).
+clientInfoEvent]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_Information_and_Control).
 
 A common option is to use Java DateFormat to parse and display time in a
 locale-sensitive manner. For most use cases,

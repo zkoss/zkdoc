@@ -10,7 +10,7 @@ Here we discuss the general concepts applicable to both approaches. For
 information of ZK JSP Tags, please refer to [ZK JSP Tags
 Essentials](ZK_JSP_Tags_Essentials). It is also worth to take
 a look at the [HTML
-Tags](ZK_Developer's_Reference/UI_Patterns/HTML_Tags)
+Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags)
 section.
 
 # Prerequisite

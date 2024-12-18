@@ -4,7 +4,7 @@
 
 ZK supports to add an event listener on zul or in Java, please refer to
 [ZK Developer's Reference/Event Handling/Event
-Listening](ZK_Developer's_Reference/Event_Handling/Event_Listening).
+Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Listening).
 
 # Supported Events
 

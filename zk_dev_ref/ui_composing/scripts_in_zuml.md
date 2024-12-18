@@ -4,9 +4,9 @@ To make it easier to create a dynamic web page, the ZUML document allows
 you to embed the script code. Notice that there are two types of script
 code: server-side and client-side. How the client-side code can be
 embedded is discussed in the [Client-side UI
-Composing](ZK_Developer's_Reference/UI_Composing/Client-side_UI_Composing)
+Composing]({{site.baseurl}}/zk_dev_ref/UI_Composing/Client-side_UI_Composing)
 and [Client-side Event
-Listening](ZK_Developer's_Reference/Event_Handling/Client-side_Event_Listening)
+Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Client-side_Event_Listening)
 sections. Here we will discuss how to embed the server-side script code
 in a ZUML document.
 
@@ -23,7 +23,7 @@ even recompiling.
 Notice that the performance of BeanShell is not good and, like any
 interpreter, typos can be found only when it is evaluated. For more
 information, please refer to [the Performance Tips
-section](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes)
+section]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
 
 # 2 Places to Embed
 
@@ -144,7 +144,7 @@ property.
 Again, the code is Java interpreted at run time and running on the
 server. For client-side listening, please refer to the [Client-side
 Event
-Listening](ZK_Developer's_Reference/Event_Handling/Client-side_Event_Listening)
+Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Client-side_Event_Listening)
 section.
 
 For the sake of discussion, we call it zscript no matter the code is
@@ -169,7 +169,7 @@ example,
 # Distinguish `zscript` from EL
 
 Keep in mind, [an EL
-expression](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions)
+expression]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions)
 is enclosed by \${ }.
 
 For example, `${self.label}` and `${ok.label}` are both EL expressions
@@ -203,7 +203,7 @@ You cannot mix the use of EL expressions with zscript:
 Also notice that the evaluation of EL expressions is very fast, so EL
 can be used in a production system. On the other hand, [zscript is
 suggested to use only in prototyping or
-quick-fix](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes).
+quick-fix]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes).
 
 ## Variables Defined in zscript Visible to EL
 
@@ -226,7 +226,7 @@ The default interpreter is based on
 
 The Java interpreter is a *multi-scope* interpreter. It creates a scope
 for each [ID
-space](ZK_Developer's_Reference/UI_Composing/Component-based_UI#ID_Space).
+space]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space).
 Since ID space is hierarchical, so are the scopes. If a variable cannot
 be found in the current ID space, it will go further to parent's ID
 space to try to resolve the variable.
@@ -318,4 +318,4 @@ Reference](ZUML_Reference/Extensions/zscript).
 [^2]: Built in id space owner includes
     <javadoc>org.zkoss.zul.Window</javadoc>,
     <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro
-    components](ZK_Developer's_Reference/UI_Composing/Macro_Component).
+    components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component).

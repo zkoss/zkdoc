@@ -102,7 +102,7 @@ In a complex templating environment, it might not be appropriate to put
 fragments in the target page (e.g., `foo/index.zul` in the above
 example), since you might want to use the same collection of fragments
 in several target pages. It can be easily by use of [the include
-component](ZK_Developer's_Reference/UI_Composing/ZUML/Include)
+component]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
 as follows.
 
 ``` xml
@@ -129,7 +129,7 @@ documents, such as
 If you want to use <javadoc>org.zkoss.zk.ui.util.Composition</javadoc>
 inside any of the containers (like Div, Window, Tabbox), you have to use
 [the include
-component](ZK_Developer's_Reference/UI_Composing/ZUML/Include)
+component]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
 and set its mode *Defer* :  
 **Note**: You have to specify
 <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as of the initiators

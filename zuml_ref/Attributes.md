@@ -48,4 +48,4 @@ one-by-one.
 > <references/>
 
 [^1]: For introductory, please refer to [ZK Developer's
-    Reference](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions).
+    Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions).

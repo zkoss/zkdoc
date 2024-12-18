@@ -23,13 +23,13 @@ list some guides about how to use ZK:
 
 <!-- -->
 
-- [ZK Developer's Reference](ZK_Developer's_Reference)
+- [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref)
 
 **Note:** ZK JSP Tags is one of solutions to use ZK within JSP. It
 provides a set of JSP tags that allow developers to specify ZK
 components in JSP tags. It is recommended to read the [ZK Developer's
 Reference: Use ZK in
-JSP](ZK_Developer's_Reference/Integration/Use_ZK_in_JSP)
+JSP]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP)
 section before you start.
 
 # What to Download
