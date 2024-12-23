@@ -23,6 +23,19 @@ special location. You can add `gpolyline` and `gpolygon` to indicate a
 path or an area. You can also overlay `gimage` and `gscreen` to indicate
 very special places.
 
+# Setup
+This component requires you to include a separate dependency before using it:
+
+```xml
+		<dependency>
+			<groupId>org.zkoss.zkforge</groupId>
+			<artifactId>gmapsz</artifactId>
+			<version>${gmap.version}</version>
+		</dependency>
+```
+Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for available version.
+
+
 # Authentication
 
 ## Configure in Application Scope
@@ -61,13 +74,43 @@ You can specify a client-id at `client` attribute: \
 ```
 
 # Example
+## Basic
 
+```xml
+<gmaps width="500px" height="300px"/>
+```
+
+## Init the center of the Map
+
+```xml
+<gmaps width="500px" height="300px" lat="37.7765" lng="-122.4140"/>
+```
+
+## Map Movement and Animation
+
+To move the Maps center smoothly, you can control it by calling `Gmaps.panTo()` Java method as follows:
+```xml
+<gmaps id="map" width="500px" height="300px"/>
+<button label="panTo" onClick="map.panTo(37.4569, -122.1569)"/>
+```
+
+## Change the Zoom Level
+
+```xml
+<gmaps id="map" width="500px" height="300px"/>
+<slider maxpos="17" curpos="${map.zoom}" onScroll="map.setZoom(self.curpos)"/>
+```
+
+## Adding Controls to the Map
+
+```xml
+<gmaps width="500px" height="300px" showSmallCtrl="true"/>
+```
+
+## Use with Ginfo and Gmarker
 ![](images/ZKComRef_Gmaps_Example.png)
 
 ``` xml
- <window title="Gmaps Demo" border="normal" width="520px">
-    <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key';"/>
-
     <!-- you may wish to specify the version of google map API manually for some reason, 
         use version="[version]" to do it.
         ex: <gmaps version="3.25" id="mymap" ... /> -->
@@ -91,7 +134,6 @@ You can specify a client-id at `client` attribute: \
             }
         </attribute>
     </gmaps>
- </window>
 ```
 
 # Properties
