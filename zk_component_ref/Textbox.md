@@ -15,9 +15,7 @@ A `textbox` is used to let users input textual data.
 
 You could assign `value, type, constraint, rows, cols` to a textbox
 using the corresponding properties. When you assign the property `type`
-to a string value "password" when `multiline` is false (`multiline` will
-be `true` if you set rows larger than 1 or set `multiline` to `true`
-directly) then any character in this component will replace by '\*'.
+to a string value "password" when `multiline` is false then any character in this component will replace by '\*'.
 
 You could also assign a constraint value with a regular expression
 string or a default constraint expression (available value is "no
@@ -56,8 +54,10 @@ text line2...
 
 # Properties
 
-## Tabbable
+## Multiline
+If `true`, zk renders a multiline textbox. The `multiline` will also be `true` if you set `rows` larger than `1`.
 
+## Tabbable
 By specifying a true, the tabbox can insert a long space or format the
 content inside textbox conveniently. For example,
 
@@ -85,10 +85,8 @@ The default is **false**.
 
 ## Type
 
-The `type` attribute can be used with the `textbox` based components and
-can be given the value `password`. By setting the type as password the
-text that is entered into the box cannot be viewed and is replaced by
-stars.
+The `type` attribute determines the component-rendered HTML element `<input type="?">`.
+By setting the type as `password`, the text that is entered into the box cannot be viewed and is replaced by `*`.
 
 ``` xml
 Username: <textbox/>
@@ -97,8 +95,7 @@ Password: <textbox type="password"/>
 
 `{% include version-badge.html version=6.5.0 %}`
 
-The `type` attribute support HTML 5 defined types `tel`, `email` and
-`url`.
+The `type` attribute support HTML 5 defined types `tel`, `email` and `url`.
 
 ``` xml
 Phone: <textbox type="tel"/>

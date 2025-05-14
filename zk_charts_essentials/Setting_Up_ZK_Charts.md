@@ -21,47 +21,42 @@ charts.jar as a library
 If your project is managed by Maven already, you can adopt ZK Charts
 easily by simply adding a dependency like the following [^1]:
 
-\<source lang="xml" line="false\>
+```xml
 
-`   `<dependency>  
-`       `<groupId>`org.zkoss.chart`</groupId>  
-`       `<artifactId>`zkcharts`</artifactId>  
-`       `<version>`7.2.1.0-Eval`</version>`  //this is just an example. Please use the latest version`  
-`   `</dependency>
-
-</source>
+    <dependency>  
+        <groupId>org.zkoss.chart</groupId>  
+        <artifactId>zkcharts</artifactId>  
+        <version>11.4.7.0-Eval</version>  //this is just an example. Please use the latest version  
+    </dependency>
+```
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository) as well.
 
 ### Evaluating users (60-days free evaluation)
 
-- <http://mavensync.zkoss.org/eval>
+- http://mavensync.zkoss.org/eval
 
-**Note**: ZK Charts evaluation version is put in**ZK PE-eval / EE-
-eval** maven repository. Please add the following config if you want to
-try the evaluation version. \<source lang="xml" line="false\>
+**Note**: ZK Charts evaluation version is put in**ZK PE-eval / EE-eval** maven repository. Please add the following config if you want to
+try the evaluation version.
 
-`   `<repositories>  
-`       `<repository>  
-`           `<id>`ZK PE/EE Evaluation`</id>  
-`           `<url>[`https://mavensync.zkoss.org/eval/`](https://mavensync.zkoss.org/eval/)</url>  
-`       `</repository>  
-`   `</repositories>
+```xml
+    <repositories>  
+        <repository>  
+            <id>ZK PE/EE Evaluation</id>  
+            <url>https://mavensync.zkoss.org/eval/</url>  
+        </repository>  
+    </repositories>
+```
 
-</source>
-
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ### Premium users only
 
-- <span style="color:red">**Notice**</span>: Need [Login
-  authentication](ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Login_authentication)
+- <span style="color:red">**Notice**</span>: Need [Login authentication](ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Login_authentication)
 
   
 If you are our customer, please apply for a premium maven account to use
 ZK Premium Maven Repository.
 
-- <https://maven.zkoss.org/repo/zk/ee>
+- https://maven.zkoss.org/repo/zk/ee
 
 ``` xml
 <repositories>
@@ -190,7 +185,7 @@ Highcharts.version
 
 ZK Charts loads a license file from the default path:
 
-**WEB-INF/classes/metainfo/chart/license**
+`WEB-INF/classes/metainfo/chart/license`
 
 If the license is loaded successfully, you should see some license
 information printed on your application console like:
@@ -207,7 +202,3 @@ information printed on your application console like:
      To renew, obtain more licenses, or if you require help, please contact info@zkoss.org.
 ```
 
-[^1]: If you didn't setup zk maven repository yet, you have to [ setup
-    zk maven
-    repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository)
-    as well.

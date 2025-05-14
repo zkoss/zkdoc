@@ -134,19 +134,55 @@ public class SystemConfiguration {
 - The delegating variable-resolver will look-up the bean named
   `userPreference` automatically for you.
 
-# Wire a Spring Bean
+# Wire a Spring Bean in a Controller
 
-It is a very common requirement that we need a Spring bean in a
-composer, e.g. calling an authentication bean to do login. You can
-inject Spring beans into ZK Composer/ViewModel in the following ways.
+It is a common requirement that we need a Spring bean in a Controller
+(composer/ViewModel), e.g. calling an authentication bean to do login.
+You can inject Spring beans into ZK Composer/ViewModel in the following
+2 approaches.
+
+| Approach          | Spring @Autowire                     | ZK @WireVariable                             |
+|-------------------|--------------------------------------|----------------------------------------------|
+| **Primary Use**   | Spring-managed ZK controller         | ZK-managed controller                        |
+| **Configuration** | Requires Spring bean registration    | Requires ZK's \`DelegatingVariableResolver\` |
+| **Flexibility**   | Injects based on type or bean id     | Injects based on bean id                     |
+| **Usage**         | Spring-managed Composer or ViewModel | Any ZK Composer or ViewModel                 |
 
 ## Spring's @Autowire
 
 ZK stores a Composer/ViewModel as a component's attribute, and you can
 dynamically add/remove components at any time. If you want a fresh new
 state of a component when each time you add/create it, you should
-declare a Composer/ViewModel in `prototype` scoped. Then you can use
+declare a Composer/ViewModel as a `prototype` bean. Then you can use
 `@Autowire` to wire Spring beans into a Composer/ViewModel.
+
+``` java
+@Component
+@Scope("prototype")
+public class MyComposer extends SelectorComposer<Window> {
+
+    @Autowired
+    private MyService myService;
+
+}
+```
+
+### Apply a Spring Bean Composer/ViewModel
+
+If you choose this way, you need to specify a Spring bean id when you
+apply a composer or ViewModel:
+
+``` xml
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<vlayout apply="${orderBeanComposer}" >
+...
+<window viewModel="@id('vm') @init(orderBeanVm)">
+```
+
+- Line 1: see
+  [\#Access_a_Spring_Bean_in_a_ZUL](#Access_a_Spring_Bean_in_a_ZUL)
+- Line 2, 4: you should specify the bean id of your controller instead
+  of the full-qualified class name.
 
 ## Wire a Spring bean in a Composer
 
@@ -154,10 +190,10 @@ Alternatively, ZK provides another way to wire a Spring bean to a
 composer which is not a Spring-managed bean. When we apply a
 `SelectorComposer` to a ZUL with
 `org.zkoss.zkplus.spring.DelegatingVariableResolver` mentioned in the
-previous section, we can apply annotation, `@WireVariable` on a variable
-we want to wire a Spring bean with. ZK will then wire the corresponding
-Spring bean on the variable using a variable name that's the same as the
-bean's name. Or, you can specify the bean's name with
+previous section, we can apply annotation, `@WireVariable` on a member
+field we want to wire a Spring bean with. ZK will then wire the
+corresponding Spring bean on the variable **using a variable name that's
+the same as the bean's name**. Or, you can specify the bean's name with
 `@WireVariable("beanName")`.
 
 **A composer that wires Spring beans**
@@ -271,11 +307,20 @@ public class SpringComposer extends SelectorComposer<Window> {
 }
 ```
 
-# Integrate Spring Webflow and Security
+# Using Scoped-Proxy in a Clustering Environment
 
-ZK also provides integration to other Spring projects such as Spring
-Security and Spring Webflow with ZK Spring. Please refer to [ZK Spring
-Essentials](ZK_Spring_Essentials) for details.
+We recommend you to apply scoped-proxy on those beans used in a composer
+(or a ViewModel) and are not serialized during a session replication. A
+reference to a bean might be invalid after session replication in a
+clustering environment. Hence, even if you use a singleton bean, it's
+better to use the scoped proxy bean. See [Spring Framework
+Reference](https://docs.spring.io/spring-framework/docs/5.3.9/reference/html/core.html#beans-factory-scopes-other-injection)
+
+# ZK Spring Addon
+
+ZK also provides additional features for Spring and Spring Security.
+Please refer to [ZK Spring Essentials](ZK_Spring_Essentials)
+for details.
 
 # Example Source Code
 
