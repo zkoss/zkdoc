@@ -5,6 +5,12 @@
 To get started follow these simple steps or clone/run one of the
 available demos.
 
+**Prerequisite**
+
+We assume you already include zk dependencies, if not, please include
+zk. See
+[{{site.baseurl}}/zk_installation_guide/Maven%20Setup](ZK%20Installation%20Guide/Maven%20Setup).
+
 **1. Download/unzip a standard [Spring
 Initializr](https://start.spring.io/) project**
 
@@ -55,7 +61,7 @@ in src/main/resources/application.properties
 
 **5. Run the application**
 
-execute the command (on windows omit the './' prefix)
+execute the command (on Windows omit the './' prefix)
 
     ./mvnw spring-boot:run
 
@@ -82,22 +88,27 @@ while allowing customization where needed.
 
 ## Differences to a "normal" ZK Web Application
 
+If you choose to use `jar` packaging, there are some differences from a
+normal `war` packaging web application.
+
 ### Configuration
 
-As Spring Boot prefers Java- over XML-configuration and doesn't require
+As Spring Boot prefers Java- over XML configuration and doesn't require
 a classical src/main/webapp-folder (and no WEB-INF/). Hence the ZK
-configuration files are moved to a different files/folders:
+configuration files are moved to different files/folders:
 
 **zk.xml** and **zk-label.properties** were moved to a classpath
 location:
 
-`src/main/webapp/WEB-INF/zk.xml -> src/main/resources/`**`metainfo/zk`**`/zk.xml`  
-`src/main/webapp/WEB-INF/zk-label.properties -> src/main/resources/`**`metainfo`**`/zk-label.properties`
+```text
+src/main/webapp/WEB-INF/zk.xml -> src/main/resources/metainfo/zk/zk.xml  
+src/main/webapp/WEB-INF/zk-label.properties -> src/main/resources/metainfo/zk-label.properties
+```
 
 **web.xml** configuration such as servlets/filters are configured the
 "Spring Boot Way" using java configuration
 
-`src/main/webapp/WEB-INF/web.xml -> auto configuration is provided by the zkspringboot-starter dependency (configurable via `[`application.properties`](https://github.com/zkoss/zkspringboot#configuration-options-for-spring-boot-style-applicationproperties)`)`
+src/main/webapp/WEB-INF/web.xml -> auto configuration is provided by the zkspringboot-starter dependency (configurable via [`application.properties`](https://github.com/zkoss/zkspringboot#configuration-options-for-spring-boot-style-applicationproperties)`)`
 
 After adding the zkspringboot-starter dependency the
 @SpringBootApplicatio-annotation is sufficient to make initialize ZK.
@@ -111,19 +122,19 @@ public class Application  {
 }
 ```
 
-For a single-page-application all you need is to specify a view name as
+For a single-page application all you need is to specify a view name as
 the zk.homepage parameter in the application.properties (or specify a
 richlet).
 
 Multiple zul-files as entry points for your application are defined
-using Spring-MVC's @GetMapping annotatios.
+using Spring-MVC's @GetMapping annotations.
 
 see:
 
 - [application.properties](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/application.properties)
   -\> homepage / view-resolver / richlet config
 - [DemoApplication.java](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/java/org/zkoss/zkspringboot/demo/DemoApplication.java)
-  -\> application specific page mappings
+  -\> application-specific page mappings
 
 ### Application structure
 
@@ -152,10 +163,11 @@ like this:
 
 General resource folders are:
 
-- [src/main/resources/static](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/static)
+- [src/main/resources/static](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/static) -
   Spring Boot's resource folder
-- [src/main/resources/web](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web)
-  ZK's class-web-resource folder
+- [src/main/resources/web](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web) -
+  ZK's [classpath web resource
+  path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path)
 
 Spring Boot resources are referenced by urls starting with `'/'` ZK
 resources (including zul files) are prefixed with `'~./'`
@@ -245,3 +257,17 @@ your run configuration.
 
 This will disable resource caches allowing to replace zul/css/js/image
 files without restarting the application.
+
+# Use a Different Springboot Version
+
+Since `zkspringboot-starter` may not include a spring-boot starter
+version you want by default, you can easily include your desired version
+in Maven like:
+
+``` xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${another-version}</version>
+        </dependency>
+```
