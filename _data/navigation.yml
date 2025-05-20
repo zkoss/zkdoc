@@ -9,8 +9,8 @@ main:
 #    url: /zk_mvvm_ref/intro/introduction_of_mvvm
 #  - title: "ZK Component Reference"
 #    url: /zk_component_ref/introduction
-#  - title: "ZUML Reference"
-#    url: /zuml_ref/Languages
+  - title: "ZUML Reference"
+    url: /zuml_ref/Languages
   - title: "ZK Installation Guide"
     url: /zk_installation_guide/before_you_start
   - title: "ZK Configuration Reference"
@@ -2773,7 +2773,7 @@ zuml_ref:
   - title: "template"
     url: "/zuml_ref/template"
   - title: "zk"
-    url: "/zuml_ref/zk_element"
+    url: "/zuml_ref/zk"
   - title: "zscript"
     url: "/zuml_ref/zscript"
   - title: "Attributes"
