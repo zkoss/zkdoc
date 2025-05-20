@@ -1,5 +1,3 @@
-
-
 # Fileupload
 
 - Demonstration: [File
@@ -72,7 +70,10 @@ Cycle
 Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)).
 
 To implement a custom template, please take a look at [the default
-template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/fileuploaddlg.zul).
+template for ZK
+9](https://github.com/zkoss/zk/blob/v9.6.5/zul/src/archive/web/zul/html/fileuploaddlg.zul)
+or [the default template for ZK
+10](https://github.com/zkoss/zk/blob/master/zul/src/main/resources/web/zul/html/fileuploaddlg.zul).
 
 ## Example Usage
 
@@ -288,17 +289,13 @@ Upload your hot shot:
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
-
-
 
 | Version | Date     | Content                                                                                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>. Used if the event thread is disabled. |
-
-
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK
     Configuration Reference:

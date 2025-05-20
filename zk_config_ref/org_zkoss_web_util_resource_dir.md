@@ -14,7 +14,11 @@ The latest versions containing a fix are:
 
 ` org.zkoss.web.util.resource.dir`
 
+{% include GlobalLibraryProperty %}
+
 `Default: `<i>`none`</i>
+
+{% include version-badge.html version=5.0.0 %}
 
 It specifies a directory, where ZK will load the so-called Class-Web
 Resources (CWR), in addition to the class path. CWR includes JavaScript
@@ -76,20 +80,36 @@ purpose).
 
 ZK loads the JavaScript file under the [ class path web resource
 path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path),
-`WEB-INF/classes/web/js`, in a **higher** priority than JavaScript
+**`WEB-INF/classes/web/js`**, in a **higher** priority than JavaScript
 files in ZK jar (e.g. zul.jar). So that you can put javascript files
 there to override the JavaScript files in ZK jar under the corresponding
 path.
 
-Assume you have a Maven project, you need to put JavaScript files under
-the path: `src/main/resources/web/[JAVASCRIPT_PATH_IN_JAR]`
+### Steps
 
-So the js files will be packaged into `WEB-INF/classes/web/`.
+1.  Check the js path in a jar.
+      
+    Assuming you want to override
+    `zkcharts.jar/web/js/chart/ext/highchart.js`.
+2.  create 2 files for overriding:
+    1.  `highchart.js` - compressed, minified. ZK loads this file when
+        no <debug-js> specified in zk.xml
+    2.  `highchart.src.js` - uncompressed, with comments. ZK loads this
+        file when <debug-js>`true`</debug-js> specified in zk.xml
+3.  Put your custom js file under `WEB-INF/classes/web/`.
+      
+    Assume you have a Maven project, you need to put JavaScript files
+    under the path: `src/main/resources/web/[JAVASCRIPT_PATH_IN_JAR]`.
+    So the js files will be packaged into `WEB-INF/classes/web/`.
 
-The picture below demonstrates how to override javascript files under
-`zkcharts.jar/web/js/chart/ext`:
+    The picture below demonstrates how to override javascript files
+    under `zkcharts.jar/web/js/chart/ext`:
 
 ![](images/overrideByClasspathWebResourcePath.png)
 
-After doing this, ZK will load highcharts.js under
-`WEB-INF/classes/web/` instead of that js in the zkcharts.jar.
+After doing this, ZK will load the js files under `WEB-INF/classes/web/`
+instead of that js in the zkcharts.jar.
+
+{% include version-badge.html version=10.0.0 %} This approach works in a different
+way. We need to combine the js with other js in the same package. If you
+have such requirements, please contact with zk support.
