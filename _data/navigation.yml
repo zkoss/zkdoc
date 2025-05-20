@@ -1821,6 +1821,10 @@ zk_dev_ref:
         children:
           - title: "Spring"
             url: "/zk_dev_ref/Integration/Spring"
+          - title: "Spring Boot"
+            url: "/zk_dev_ref/Integration/springboot"
+          - title: "Quarkus"
+            url: "/zk_dev_ref/Integration/quarkus"
           - title: "CDI"
             url: "/zk_dev_ref/Integration/CDI"
           - title: "EJB"

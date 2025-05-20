@@ -29,7 +29,7 @@ Then check if there is any mixed-version jar.
 
 # The resource you request is no longer available
 
-![](no-longer-available.png)
+![](images/no-longer-available.png)
 `The resource you request is no longer available: /ui/handling.zul (z_na20). This is normally caused by timeout, or opening too many Web pages. You have to reload the page and try again.`
 
 ## Suggestion
@@ -42,14 +42,14 @@ It could be caused by
 
 Please check them.
 
-# Client Error
+# Javascript Error in a Browser
 
 `Severe: [Desktop z_wew:/mypage.zul] client error: Failed to mount: Cannot read property 'colSpan' of undefined`
 
 ## Suggestion
 
 Usually, a failed to mount error is caused by a bug in the specific
-widget code, invalid custom javascript, missing javascript packages or
+widget code, invalid custom JavaScript, missing JavaScript packages or
 files, or other causes affecting the client.
 
 When encountering a failed to mount error box, we suggest you to check:
@@ -57,11 +57,11 @@ When encountering a failed to mount error box, we suggest you to check:
 - **Javascript console on a browser**
 
 Open a browser developer tools \> console tab. You should find one or
-more javascript errors in the console. Please expand the error stack
+more JavaScript errors in the console. Please expand the error stack
 trace and provide these full error stacks in the support ticket. This
 can help us pinpoint the exact cause of the issue.
 
-To make the stack trace readable, you have to enable javascript debug
+To make the stack trace readable, you have to enable JavaScript debug
 mode in zk.xml
 
 ``` xml
@@ -72,10 +72,22 @@ mode in zk.xml
 
 Restart your zk application.
 
+- **Send to Your Server**
+
+{% include version-badge.html version=10.0.0 %}
+
 You can enable [the send-client-errors
 element](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_send-client-errors_Element)
 in zk.xml to send client errors to the server for logging the page url
 where the error occurred and its stack trace.
+
+This feature is particularly useful in production environments where
+system administrators or developers are not always available when an
+end-user encounters a JavaScript error. End-users often struggle to
+reproduce the issue, making it difficult to diagnose and resolve
+problems. By logging these errors on the server, developers gain access
+to crucial debugging information that helps investigate and address
+issues effectively.
 
 ``` xml
 <client-config>
@@ -85,14 +97,14 @@ where the error occurred and its stack trace.
 
 - **Network tab on a browser developer tool**
 
-Open a browser developer tools \> network tab. ZK does not load every
-package from page initialization. Instead, packages will be loaded on
-demand. For example, the `zul.inp.wpd` (input package) will be loaded if
-you add an input component to your page. If a browser was unable to
-locate or load the relevant package for a newly added widget class, you
-should see a failed request for this package. This request should also
-display a return code. Anything other than "200 - success" should be
-documented and added to the support ticket.
+Open a browser developer tools \> network tab. ZK does not load every JS
+package at page initialization. Instead, packages are loaded on demand.
+For example, the `zul.inp.wpd` (input package) will be loaded if you add
+an input component to your page. If a browser could not locate or load
+the relevant package for a newly added widget class, you should see a
+failed request for this package. This request should also display a
+return code. Anything other than "200 - success" should be documented
+and added to the support ticket.
 
 # java.lang.IllegalStateException: Access denied: component, <Listcell z_27_b53>, belongs to another desktop: \[Desktop g272\]
 
@@ -127,9 +139,9 @@ Please review your code for the following potential issues:
 - The purpose of storing (or passing) a component is to communicate with
   another component.
 
-### pass data, not the component
+### Pass data, not the component
 
-The first principle is: **pass data, not the component**
+The principle is: **pass data, not the component**
 
 For example, if you want to get user input from a textbox, don't pass
 the textbox, pass `textbox.getValue()` instead.
@@ -141,3 +153,24 @@ If you still need to pass a component for later use:
 - set an attribute in a Desktop
 - [ pass a component via a Desktop scope event
   queue](ZK_Developer%27s_Reference/UI_Patterns/Communication/Inter-Desktop_Communication)
+
+# Server is temporarily out of service - Error 467
+
+If you see this error message after making a large update, such as
+editing a large amount of text in a ZKCkeditor text editor, you may have
+reached your webserver's maximum post size.
+
+Some web servers, specifically tomcat, have a maxPostSize of 2Mb by
+default. Tomcat doesn't reject requests which reach this limit. Instead,
+tomcat will truncate the request and allow it through. This may cause
+the 467 error, which indicates that ZK failed to locate the desktop
+associated with the page in the request data.
+
+You can verify this by opening the client-side developer tools, and
+checking the request headers field, which contains the request size.
+
+## Suggestions
+
+If you want to allow users to send larger requests, you will need to
+apply the relevant settings on your webserver. On tomcat, the relevant
+setting is maxPostSize
