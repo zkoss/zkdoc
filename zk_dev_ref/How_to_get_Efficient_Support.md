@@ -29,7 +29,7 @@ for us to find enough clues and provide timely support. Instead of
 providing a screenshot, please follow the tips and instructions below
 when submitting your issue.
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZK_MeetRpoblem01.png)
+![](ZK_MeetRpoblem01.png)
 
 ## Provide Sufficient information
 
@@ -84,7 +84,7 @@ You can check if there is any JavaScript error by opening the developer
 tool. For example, press F12 to open the chrome developer tool/ Console
 tab:
 
-![]({{site.baseurl}}/zk_dev_ref/images/chrome-js-error.png)
+![](chrome-js-error.png)
 
 You can extract the error message by:
 
@@ -106,21 +106,22 @@ this URL, remember to turn on the js debug in your zk.xml.
     issue
 2.  Do the steps to reproduce your problem
 3.  Send request details as HAR to us
-      
-    \* [Save all network requests to a HAR file in
-    Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
 
-    \* Save request details as HAR in Firefox ![
-    center](save-har-firefox.png " center")
+:\* [Save all network requests to a HAR file in
+Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
+![ center](save-har-chrome.png " center")
 
-    \* [Save request details as HAR in
-    Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
+:\* Save request details as HAR in Firefox ![
+center](save-har-firefox.png " center")
+
+:\* [Save request details as HAR in
+Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 
 If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
 like:
 
-![]({{site.baseurl}}/zk_dev_ref/images/au-request.png)
+![](au-request.png)
 
 ### Provide Related Source
 
@@ -205,6 +206,26 @@ specify the corresponding addon name. For example:
 
 \]\] ===
 
+# How to Apply a Java Patch
+
+When there is a bug, we provide a workaround with a Java file. Here are
+the steps to apply it:
+
+1.  Put the patched Java file in its package under your project source
+
+e.g. `org.zkoss.zul`
+
+1.  Compile it with your project source
+
+Then it can override the same Java class in the ZK jar.
+
+## Example
+
+Got a patched `org.zkoss.bind.impl.BinderImpl`.
+
+1.  create a package `org.zkoss.bind.impl` in your project source
+2.  put `BinderImpl.java` under the package
+
 # How to Run a Sample Maven Project
 
 In order to narrow down the problem and eliminate differences caused by
@@ -223,10 +244,10 @@ first.
 
 If you don't know the zul's path or if the path is incorrect, just visit
 <http://localhost:8080>. A browser will show a link with the correct
-context path: ![](jettyRoot.png)
+context path: ![ center \| 800px](jettyRoot.png " center | 800px")
 
 Click the link and it will list folders then you can navigate to find
-the zul. ![](listFolder.png)
+the zul. ![ center](listFolder.png " center")
 
 # How to get Browser Performance Profile
 
