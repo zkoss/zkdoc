@@ -1,5 +1,3 @@
-
-
 # Label
 
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
@@ -15,7 +13,7 @@ will be automatically converted to a label.
 
 # Example
 
-![](images/ZKComRef_Label.PNG)
+![](ZKComRef_Label.PNG)
 
 ``` xml
  <window title="Label Demo" >
@@ -50,7 +48,11 @@ as new line, space and tab, are preserved.
 
 A label component represents a piece of text.
 
-![](images/ZKComRef_Label_Example2.png)
+<figure>
+<img src="ZKComRef_Label_Example2.png"
+title="ZKComRef_Label_Example2.png" />
+<figcaption>ZKComRef_Label_Example2.png</figcaption>
+</figure>
 
 ``` xml
 <window border="normal"> 
@@ -80,6 +82,9 @@ references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_
 # Properties
 
 ## Pre, Hyphen, Maxlength and Multiline
+
+{% include removedSince\| 10.0.0 %} Hyphen is removed. Use CSS to
+achieve it.
 
 {% include version-badge.html version=5.0.0 %}
 
@@ -309,19 +314,4 @@ only preserves new lines and white space at the beginning of each line.
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
 

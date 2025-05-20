@@ -1,5 +1,3 @@
-
-
 # Longbox
 
 - Demonstration:
@@ -34,7 +32,7 @@ with a formatting string. The default value is `null`.
 <longbox format="#,##0"/>
 ```
 
-` Since 8.5.2`
+` Since 8.5.2`
 
 You can provide a locale to format the number by specify the String
 starts with "locale:"
@@ -74,6 +72,14 @@ Notes:
 <longbox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
+### min & max constraint
+
+{% include versionSince\| 10.2.0 %} {% include ZK EE %}
+
+``` xml
+<spinner constraint="min -2 max 6"/>
+```
+
 # Inherited Functions
 
 Please refer to [
@@ -107,19 +113,4 @@ for inherited functions.
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
 

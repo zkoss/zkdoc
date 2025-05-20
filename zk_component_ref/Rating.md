@@ -1,5 +1,3 @@
-
-
 # Rating
 
 - Java API: <javadoc>org.zkoss.zul.Rating</javadoc>
@@ -9,8 +7,17 @@
 
 # Employment/Purpose
 
-The rating component is a component that allows user selecting an rate
-that is smaller than the maximum number.
+The rating component is a component that allows users to select a rating
+value that is smaller than the maximum number.
+
+It is ideal for various applications, including e-commerce platforms
+where customers can rate products to share their satisfaction, and media
+sites where users can evaluate movies or articles. It is also useful for
+students to provide feedback on courses and instructors in educational
+environments. Additionally, social media platforms can utilize the
+Rating component to allow users to express opinions on posts, enhancing
+engagement. Overall, it serves as a versatile tool for collecting user
+feedback across different domains.
 
 # Examples
 
@@ -111,14 +118,4 @@ rated.</p></td>
 
 # Supported Children
 
-`* none`
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+`* none`

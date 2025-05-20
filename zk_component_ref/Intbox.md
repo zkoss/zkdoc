@@ -1,5 +1,3 @@
-
-
 # Intbox
 
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
@@ -75,6 +73,14 @@ Notes:
 <intbox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
+### min & max constraint
+{% include version-badge.html version=10.2.0 %}
+{% include ZK EE %}
+
+``` xml
+<spinner constraint="min -2 max 6"/>
+```
+
 # Inherited Functions
 
 Please refer to [
@@ -115,5 +121,3 @@ for inherited functions.
 |---------|-----------------------------------------|------------------------------------------------------------------------------------------------|
 | 3.6     | Leading zero in Intbox                  | [<http://www.zkoss.org/forum/listComment/10271>](http://www.zkoss.org/forum/listComment/10271) |
 | 3.6     | Constraint Intbox to accept only digits | [<http://www.zkoss.org/forum/listComment/4603>](http://www.zkoss.org/forum/listComment/4603)   |
-
-

@@ -1,5 +1,3 @@
-
-
 # Listbox
 
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
@@ -21,7 +19,11 @@ in its content.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+<figure>
+<img src="ZKComRef_Listbox_Example.png"
+title="ZKComRef_Listbox_Example.png" />
+<figcaption>ZKComRef_Listbox_Example.png</figcaption>
+</figure>
 
 ``` xml
  <window title="listbox demo" border="normal" width="250px">
@@ -155,7 +157,8 @@ This mold supports having Listgroups and renders them as HTML
 </listbox>
 ```
 
-{% include Notice.html text="Listbox doesn't send onClick event for listitem under this mold." %}
+{% include Notice\|text=Listbox doesn't send onClick event for listitem
+under this mold. %}
 
 # Keyboard Navigation Listbox
 
@@ -411,7 +414,7 @@ Note: If the `multiple` attribute is false, radio buttons are displayed
 instead, as demonstrated by the right hand listbox.
 
 To enable Select all feature, there are some constraints as below: {%
-include version-badge.html version=5.0.11 %}
+include versionSince\| 5.0.11 %}
 
 Select all checkbox in listheader is only available if ROD is false.
 
@@ -1141,7 +1144,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 ## Ungroup Column Menu
 
 When the user groups the content of the listbox, the column's menu will
-show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition=ee %} {%
 include version-badge.html version=6.5.0 %}
 
 ![](images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
@@ -1300,7 +1303,7 @@ The following code demonstrates how to freeze a column within a Grid:
     </listbox>
 ```
 
-{% include version-badge.html version=5.0.0 %}
+{% include versionSince\| 5.0.0 %}
 
 - For further details, please refer to [ Frozen
   component](ZK_Component_Reference/Supplementary/Frozen)
@@ -1310,8 +1313,8 @@ The following code demonstrates how to freeze a column within a Grid:
 
 ## org.zkoss.zul.listbox.rightSelect
 
-`[default: true]`  
-`[inherit: true]`[^3]
+`[default: true]`  
+`[inherit: true]`
 
 It specifies that the selection will be toggled when user right clicks
 on an item, if the checkmark is enabled
@@ -1321,8 +1324,8 @@ state.
 
 ## org.zkoss.zul.listbox.groupSelect
 
-`[default: false]`  
-`[inherit: true]`[^4]
+`[default: false]`  
+`[inherit: true]`
 
 {% include version-badge.html version=5.0.7 %}
 
@@ -1332,10 +1335,10 @@ will be in effect for the whole application.)
 
 ## org.zkoss.zul.listbox.autoSort
 
-`[default: false]`  
-`[inherit: true]`[^5]
+`[default: false]`  
+`[inherit: true]`
 
-{% include version-badge.html version=5.0.7 %}
+{% include versionSince\| 5.0.7 %}
 
 Specifies whether to sort the model when the following cases:
 
@@ -1355,8 +1358,8 @@ the value as **ignore.change**.
 
 ## org.zkoss.zul.listbox.rod
 
-`[default: false]`  
-`[inherit: true]`[^6]
+`[default: false]`  
+`[inherit: true]`
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
@@ -1364,8 +1367,8 @@ Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Hu
 
 ## org.zkoss.zul.listbox.preloadSize
 
-`[default: 50]`  
-`[inherit: true]`[^7]
+`[default: 50]`  
+`[inherit: true]`
 
 {% include version-badge.html version=6.0.1 %}
 
@@ -1377,8 +1380,8 @@ and not paging
 
 ## org.zkoss.zul.listbox.initRodSize
 
-`[default: 50]`  
-`[inherit: true]`[^8]
+`[default: 50]`  
+`[inherit: true]`
 
 {% include version-badge.html version=6.0.1 %}
 
@@ -1390,17 +1393,15 @@ and not paging
 
 ## org.zkoss.zul.listbox.autohidePaging
 
-`[default: true]`  
-`[inherit: true]`[^9]
+`[default: true]`  
+`[inherit: true]`
 
 {% include version-badge.html version=7.0.1 %}
 
 It specifies whether to enable autohide property for internal paging
 component.
 
-> ------------------------------------------------------------------------
->
-> <references/>
+
 
 # Supported Events
 
@@ -1516,11 +1517,9 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, `[` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, `[` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, `[` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, `[` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
+[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, `[` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, `[` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, `[` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, `[` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
 
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                                                                                                         |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1545,23 +1544,7 @@ zul.jar.
 | 8.6.0   | Oct 2018       | [ZK-2756](http://tracker.zkoss.org/browse/ZK-2756): Listbox supports listgroup like optgroup in select mold                                                                                     |
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 
-
-
 [^1]: The concept is similar to Swings (`javax.swing.ListModel`).
 
 [^2]: This feature is a bit different from XUL, where listhead and
     listheader are used.
-
-[^3]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
-
-[^4]: `Same as above.`
-
-[^5]: `Same as above.`
-
-[^6]: `Same as above.`
-
-[^7]: `Same as above.`
-
-[^8]: `Same as above.`
-
-[^9]: `Same as above.`

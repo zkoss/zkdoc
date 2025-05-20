@@ -1,5 +1,3 @@
-
-
 # Window
 
 - Demonstration:
@@ -189,25 +187,31 @@ based on the current viewport.
 
 ### Enforce Gaining the Focus
 
-If there is a modal(highlighted) window on a page when a user clicks any
-place on the page. The window will enforce the focus on its first
-focusable child component.
+When a modal (or highlighted) window is displayed, ZK enforces focus on
+its first focusable child component if a user clicks anywhere on the
+page. This behavior ensures that users remain within the context of the
+modal interaction, which is a common design pattern for modal dialogs.
+The enforced focus prevents users from interacting with the background
+content, maintaining the modal window’s purpose as a self-contained
+prompt requiring user attention.
 
 ## Modal Windows and Event Processing Threads
 
-{% include Notice.html text="Event processing thread is disabled by default since 5.0. For the older version, it is enabled by default" %}
-
-By default, events are processed in the same thread that serves the HTTP
+{% include Notice\|text=Event processing thread is disabled by default
+since 5.0. For the older version, it is enabled by default %} By
+default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
 process events in an individual thread, such that the event listener
 could suspend the execution at any time, and resume later. For how to
-enable the event processing thread, please refer to [ZK Configuration Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
+enable the event processing thread, please refer to [ZK Configuration
+Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
 
 > ------------------------------------------------------------------------
 >
 > Notice that, for better integration with other frameworks, such as
 > Spring, it is suggested to *disable* the event processing thread
-> (default). For more information, please refer to the [Event Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
+> (default). For more information, please refer to the [Event
+> Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
 > section.
 
 Once the event thread is enabled, a modal window will behave differently
@@ -302,7 +306,11 @@ specifying the `contentStyle` property
 A typical use of the `contentStyle` attribute is to make a window
 scrollable as follows.
 
-![](images/100000000000009C0000006819656516.png)
+<figure>
+<img src="100000000000009C0000006819656516.png"
+title="100000000000009C0000006819656516.png" />
+<figcaption>100000000000009C0000006819656516.png</figcaption>
+</figure>
 
 ``` xml
 <window id="win" title="Hi" width="150px" height="100px" contentStyle="overflow:auto" border="normal">
@@ -420,7 +428,48 @@ of the page.
 <p>parent</p>
 </center></td>
 <td><p>Position the window relative to the top-left corner of the parent
-component. See specific details in the <a href="#popup")
+component. See specific details in the [popup section](#popup). If <code>left</code> or
+<code>top</code> is also specified, the position will be offset from the
+top-left corner of the parent component by the same amount.</p>
+<p>This position <strong>cannot</strong> be combined with other
+positions mentioned in the previous table.</p></td>
+</tr>
+</tbody>
+</table>
+
+## Sizable
+
+If you allow users to resize the window, you can set the `sizable`
+attribute to true as follows.
+
+``` xml
+<window id="win" title="Sizable Window" border="normal" width="200px" sizable="true">
+    This is a sizable window.
+    <button label="Change Sizable" onClick="win.sizable = !win.sizable"/>
+</window>
+```
+
+Once allowed, users can resize the window by dragging the borders.
+
+### The onSize Event
+
+Once a user resizes the window, the `onSize` event is sent with an
+instance of the `org.zkoss.zul.event.SizeEvent`. Notice that the window
+is resized before the`onSize` event is sent. In other words, the event
+serves as a notification that you generally ignore. Of course, you can
+do whatever you want in the event listener.
+
+**Note**: If the user drags the upper or left border, the `onMove` event
+is also sent since the position has changed, too.
+
+## Title and Caption
+
+A window might have a title, a caption and a border. The title is
+specified by the `title` attribute. The caption is specified by
+declaring a child component called `caption`. All children of the
+`caption` component will appear on right hand side of the title.
+
+![](images/10000000000001640000004CEB4969A9.png)
 
 ``` xml
 <zk>
@@ -567,7 +616,3 @@ The</p>
 | 5.0+    | How to create a modal Window and communicate with it              | <http://www.zkoss.org/forum/listComment/9785> |
 | 3.6+    | Best practises on creating a pop-up window to display PDF reports | <http://www.zkoss.org/forum/listComment/9305> |
 |         |                                                                   |                                               |
-
-
-
-

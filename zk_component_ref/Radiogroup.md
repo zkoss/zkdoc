@@ -1,5 +1,3 @@
-
-
 # Radiogroup
 
 - Demonstration:
@@ -38,6 +36,9 @@ radio, if any, must be a radio group.
 
 ## Radiogroup as an Ancestor of Radio
 
+When used without a model, the radiogroup can contain arbitrary
+components in addition to Radio.
+
 ZK groups radio components into the same radio group if they share the
 same ancestor, not just direct parent. It allows a more sophisticated
 layout. For example,
@@ -61,7 +62,7 @@ layout. For example,
 
 ## A Row of a Grid as a Radio Group
 
-{% include version-badge.html version=5.0.4 %}
+{% include versionSince\| 5.0.4 %}
 
 Sometimes it is not possible to make the radiogroup component as an
 ancestor of all radio components. For example, each row of a grid might
@@ -204,13 +205,3 @@ under the radiogroup is checked.</p></td>
 | 5.0     | Radiogroup and selection                   | [<http://www.zkoss.org/forum/listComment/12148>](http://www.zkoss.org/forum/listComment/12148) |
 | 5.0     | Radiogroup, data binding and TypeConverter | [<http://www.zkoss.org/forum/listComment/7011>](http://www.zkoss.org/forum/listComment/7011)   |
 | 6.0.0   | Introduce model to Radiogroup              |                                                                                                |
-
-# Version History
-
-
-
-| Version | Date        | Content                                                            |
-|---------|-------------|--------------------------------------------------------------------|
-| 5.0.4   | August 2010 | Allow a radio component associated with a non-ancestor radiogroup. |
-
-

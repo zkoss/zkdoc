@@ -1,13 +1,9 @@
-
-
 # Bandpopup
 
-- Demonstration:
-  [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
+- Demonstration: [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: <javadoc>org.zkoss.zul.Bandpopup</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandpopup</javadoc>
-- Style Guide: [
-  Bandpopup](ZK_Style_Guide/XUL_Component_Specification/Bandpopup)
+- Style Guide: [Bandpopup](ZK_Style_Guide/XUL_Component_Specification/Bandpopup)
 
 # Employment/Purpose
 

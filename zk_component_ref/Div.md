@@ -1,5 +1,3 @@
-
-
 # Div
 
 - Demonstration: N/A
@@ -9,12 +7,17 @@
 # Employment/Purpose
 
 `Div` is one of the most lightweight containers to group child
-components for, say, assigning CSS or making more sophisticated layout.
-It is the same as HTML DIV tag. Div is displayed as block that the
-following sibling won't be displayed in the same vertical position; as
-if there is a line break before and after it.
+components for, say, assigning CSS or making a more sophisticated
+layout. It renders an HTML DIV tag in a browser. Div is displayed as a
+block that the following sibling won't be displayed in the same vertical
+position, as if there is a line break before and after it.
 
-# Example
+# align
+
+To change the alignment of div, you can use CSS to achieve e.g.
+`style="text-align:right"`
+
+{% include remove-since.html version=10.0.0 %}
 
 ![](images/ZKComRef_Div_Example.png)
 
@@ -29,44 +32,10 @@ if there is a line break before and after it.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [
   XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
 
