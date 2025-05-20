@@ -62,19 +62,22 @@ side in ZK. For example,
 Clients.evalJavaScript("zk.log('Hi.');");
 ```
 
-To handle javascript errors triggered by evalJavascript,
+{% include RemovedSince.html version=9.6.0 %}To handle javascript errors triggered
+by evalJavascript,
 [org.zkoss.zk.ui.ScriptErrorListener.class](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.ScriptErrorListener.class)
 is provided.
 
 ## focus
 
+{% include RemovedSince.html version=9.5.0 %}
+
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus(org.zkoss.zk.ui.Component>)
-Clients.focus(Component component)\]
+Clients.focus(Component component)\] for MVC
 
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus(java.lang.String>)
-Clients.focus(String selector)\]
+Clients.focus(String selector)\] for MVVM.
 
-Focus the given component or the selector matched component.
+Focus the given component or the selector-matched component.
 
 ## scrollIntoView
 
@@ -83,6 +86,8 @@ Clients.scrollIntoView(Component cmp)\]
 
 Scrolls the parent of the given component, so the given one becomes
 visible in the view.
+
+{% include RemovedSince.html version=9.5.0 %}
 
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#scrollIntoView(java.lang.String>)
 Clients.scrollIntoView(String selector)\]
@@ -109,8 +114,10 @@ Clients.showBusy(window, "Waiting for server...");
 
 ## showNotification
 
+{% include RemovedSince.html version=6.0.1 %}
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification(java.lang.String>)
-Clients.showNotification()\] It is advised to use [Notification
+Clients.showNotification()\] {% include RemovedSince.html version=9.0.0 %} It is
+advised to use [Notification
 class](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html)
 which was introduced in ZK 9 instead.
 
@@ -143,8 +150,8 @@ Here are the available positions:
 
 ### Closable
 
-Notification now supports closable to let users close the notification
-box manually.
+{% include RemovedSince.html version=6.5.0 %} Notification now supports closable to
+let users close the notification box manually.
 
 ``` java
 // add close icon on the top right corner of notification box
@@ -163,13 +170,29 @@ Clients.showNotification("msg1 <br/> msg2 <br/>");
 
 # Notification
 
+{% include RemovedSince.html version=9.0.0 %}
+
 [org.zkoss.zk.ui.util.Notification](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html)
 
-This class offers a collection of methods showing a notification box,
-which is dismissed upon left click (like a Popup). You can either
-display a global notification (bigger) or a smaller notification
-specific to another component (smaller with an arrow pointing to the
-target component).
+The Notification class provides a set of static methods to display a
+notification box, which are dismissed upon a left mouse click (similar
+to a popup).
+
+You can choose between:
+
+- Global Notifications:
+
+These are centered and styled prominently, suitable for broadcasting
+general messages to the users.
+
+- Component-Targeted Notifications:
+
+These are smaller, contextual messages that appear near a specific UI
+component, with an arrow pointing to the component.
+
+Note: Only one component-targeted notification can be displayed at a
+time. Showing a new one will automatically dismiss the previous
+notification.
 
 ``` java
 Notification.show(msg); // display a global notification box
@@ -178,11 +201,16 @@ Notification.show(msg, component); // display a notification box pointing to a c
 
 # Toast
 
+{% include edition-availability.html edition=ee %} {% include RemovedSince.html version=9.0.0 %}
+
 [org.zkoss.zkmax.ui.util.Toast](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Toast.html)
 
-This class offers a collection of methods showing a toast notification,
-which is dismissed upon left click (like a Popup). Unlike Notification,
-Toast is stackable.
+This class offers a set of static methods showing a toast-style
+notification, which is dismissed either automatically or upon user
+interaction (e.g., left click).
+
+Unlike Notification, Toast supports multiple concurrent messages and
+will stack them on screen without replacing previously shown toasts.
 
 ![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
 
@@ -191,8 +219,14 @@ Toast.show(msg); // display a toast notification
 Toast.show(msg, "warning", "top_right"); // display a toast notification on top-right of the browser viewport
 ```
 
-You can also specify its position, style, duration (for auto-dismiss)
-and closable:
+## Advanced Usage
+
+You can customize the toast by specifying:
+
+- Type (style): e.g., "info", "success", "warning", "error"
+- Position: location within the browser viewport
+- Duration: time in milliseconds before auto-dismissal
+- Closable: whether the user can manually close it
 
 ``` java
 Toast.show(msg, type, position, duration, closable);
@@ -220,6 +254,8 @@ is provided.
 ```
 
 # Loadingbar
+
+{% include edition-availability.html edition=ee %} {% include RemovedSince.html version=9.0.0 %}
 
 [org.zkoss.zkmax.ui.util.Loadingbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Loadingbar.html)
 

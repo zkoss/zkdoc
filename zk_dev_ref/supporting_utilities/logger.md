@@ -11,6 +11,7 @@ Engine](ZK_Installation_Guide/Setting_up_Servers/Google_App_Engine).
 
 # How to Configure Logging
 
+{$ include version-badge.html version=7.0.0 %}
 ZK uses [SLF4J](http://www.slf4j.org/) as its internal logging system,
 and developers can follow the [SLF4J
 document](http://www.slf4j.org/manual.html) to use the logging in ZK.
@@ -34,6 +35,8 @@ to exclude the dependency first like:
 </dependency>
 ```
 
+{% include RemovedSince.html version=9.5.0 %}
+
 ZK maven dropped the transitive dependency of **slf4j-jdk14**. If a
 developer decides to enable logging, include either **Log4j**,
 **Simple**, or **Logback** implementation in their maven pom.xml file,
@@ -47,7 +50,11 @@ e.g.
 </dependency>
 ```
 
-ZK uses [the standard
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
+
+{% include DeprecatedSince\| 7.0.0 %} ZK uses [the standard
 logger](http://docs.oracle.com/javase/1.4.2/docs/guide/util/logging/overview.html)
 to log messages. You could control what to log by configuring the
 logging of the Web server you are using. The configuration usually
@@ -63,8 +70,13 @@ configuration mechanism:
 
 ## Prepare a logging configuration file
 
-A logging configuration file is a standard properties file. Each line is
-a key-value pair in the following format:
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
+
+{% include DeprecatedSince\| 7.0.0 %} A logging configuration file is a
+standard properties file. Each line is a key-value pair in the following
+format:
 
 ``` xml
 ''a.package.or.a.class'' = ''level''
@@ -84,6 +96,12 @@ Here is an example of a configuration file.
 ```
 
 ### Allowed Levels
+
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
+
+{% include DeprecatedSince\|7.0.0 %}
 
 <table>
 <thead>
@@ -143,11 +161,16 @@ DEBUG</p></td>
 
 ### Specify the handler for Jetty and servers that don't turn on the standard logger
 
-Some Web servers, such as Jetty, don't turn on the standard logger by
-default. Thus, in the logging configuration file, you have to configure
-the handler too. For example, you can turn on the
-`java.util.logging.ConsoleHandler` to write the logs to the console by
-adding the following lines to the logging configuration file:
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
+
+{% include DeprecatedSince\|7.0.0 %} Some Web servers, such as Jetty,
+don't turn on the standard logger by default. Thus, in the logging
+configuration file, you have to configure the handler too. For example,
+you can turn on the `java.util.logging.ConsoleHandler` to write the logs
+to the console by adding the following lines to the logging
+configuration file:
 
 ``` xml
 handlers = java.util.logging.ConsoleHandler
@@ -175,8 +198,12 @@ org.zkoss.bind=FINE
 
 ## Specify the configuration file in a library property
 
-To let ZK load the logging configuration file, you have to specify in a
-library property called
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
+
+{% include DeprecatedSince\|7.0.0 %} To let ZK load the logging
+configuration file, you have to specify in a library property called
 [org.zkoss.util.logging.config.file](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.logging.config.file).
 For example,
 
@@ -220,6 +247,10 @@ For more information, please refer to [ZK Configuration
 Reference](ZK_Configuration_Reference/web.xml/ZK_Loader).
 
 # How to Log
+
+{% include RemovedSince.html version=10.0.0 %}
+
+Use SLF4J API for logging instead.
 
 Class: <javadoc>org.zkoss.util.logging.Log</javadoc>
 

@@ -266,6 +266,17 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
 
 # EL 3.0 Support
 
-Since ZK 8, ZK supports some syntaxes of Java EE 7 Expression Language
-3, see
+{% include RemovedSince.html version=8.0.0 %} ZK supports some syntaxes of Java EE
+7 Expression Language 3, see
 [examples](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/el_expression.html).
+
+``` xml
+<?import org.zkoss.xel.fn.* ?>
+CommonFns.formatNumber(Object, String, Locale) : ${CommonFns.formatNumber(12345, '$ ###,###,###.00', null)}
+
+square root of 16: ${Math.sqrt(16)}
+```
+
+- Line 1: import directive is require to call CommonFns
+- Line 4: `java.lang.*` is imported by default without specifying import
+  explicitly.

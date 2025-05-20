@@ -44,6 +44,8 @@ macro.
 
 # The by-template Format
 
+{% include version-badge.html version=8.0.0 %}
+
 **Syntax:**
 
 <?component name="''myName''" templateURI="''/mypath/my.zul''"
@@ -75,17 +77,18 @@ To define a new component, you have to specify at least one `class`
 attribute, which is used by ZK to instantiate a new instance of the
 component.
 
-# Define Initial Attribute Value
+# Initialize Attribute Value
 
 In addition to defining a new component, you can override properties of
-existent components by specifying the `extends` element with the
+existing components by specifying the `extends` element with the
 component's name to extend from (aka., extendee). In other words, if
 `extends` is specified, the definition of the extendee is loaded as the
 default value and then override only properties that are specified in
 this directive.
 
-If the name of extendee and extender is the same, it means the extender
-will override the definition of extendee.
+If the name of the extended(parent) and the extender(child) is the same,
+it means the extender(child) will override the definition of the
+extended(parent).
 
 For example, assume you want to use `MyWindow` instead of the default
 window, <javadoc>org.zkoss.zul.Window</javadoc> for all windows defined

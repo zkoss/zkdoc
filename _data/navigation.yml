@@ -921,7 +921,7 @@ zk_installation_guide:
       - title: "XML Editor"
         url: "/zk_installation_guide/xml_editor"
   - title: "Building ZK from Source"
-    url: "/zk_installation_guide/build_from_source"
+    url: "/zk_installation_guide/building_from_source"
 
 zk_style_customization_guide:
   - title: "Introduction"

@@ -1,5 +1,3 @@
-
-
 Here we describe how to handle errors. An error is caused by an
 exception that is not caught by the application. An exception might be
 thrown in two situations:
@@ -18,7 +16,7 @@ different from other servlets.
 By default, the Web server displays an error page showing the error
 message and stack trace. For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/Exception.png)
+![](Exception.png)
 
 You can customize the error handling by specifying the error page in
 `WEB-INF/web.xml` as follows[^1].
@@ -48,14 +46,15 @@ the error page you specified, /error/error.zul. Upon forwarding, the Web
 server passes a set of request attributes to the error page to describe
 what happens. These attributes are as follows.
 
-| Request Attribute                  | Type                |
-|------------------------------------|---------------------|
-| javax.servlet.error.status_code    | java.lang.Integer   |
-| javax.servlet.error.exception_type | java.lang.Class     |
-| javax.servlet.error.message        | java.lang.String    |
-| javax.servlet.error.exception      | java.lang.Throwable |
-| javax.servlet.error.request_uri    | java.lang.String    |
-| javax.servlet.error.servlet_name   | java.lang.String    |
+| Request Attribute                                                      | Type                                  |
+|------------------------------------------------------------------------|---------------------------------------|
+| javax.servlet.error.status_code                                        | java.lang.Integer                     |
+| javax.servlet.error.exception_type                                     | java.lang.Class                       |
+| javax.servlet.error.message                                            | java.lang.String                      |
+| javax.servlet.error.exception                                          | java.lang.Throwable                   |
+| javax.servlet.error.request_uri                                        | java.lang.String                      |
+| javax.servlet.error.servlet_name                                       | java.lang.String                      |
+| {% include versionSince\| 10.2.0 %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> |
 
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`
@@ -104,7 +103,11 @@ public class ErrorHandlingComposer extends SelectorComposer<Component> {
 
 ## Error Handling when the Client Engine crashes
 
-![](images/error_handling_crash_screen.png)
+<figure>
+<img src="error_handling_crash_screen.png"
+title="error_handling_crash_screen.png" />
+<figcaption>error_handling_crash_screen.png</figcaption>
+</figure>
 
 In rare cases, the client engine stops working before even the error
 handling is initialized (e.g. when ZK's core scripts, e.g. zk.wpd, fail
@@ -144,7 +147,7 @@ For example, suppose we have the following code:
 Then, if you click the button, the following error message will be
 shown.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Exception-au.png)
+![](Exception-au.png)
 
 ## Configure Error Handling Page
 
@@ -179,13 +182,14 @@ the <error-page>'s declaration sequence in zk.xml.
 In addition, ZK passes a set of request(Execution) attributes to the
 error page to describe what happens. These attributes are as follows:
 
-| Request Attribute Name             | Type                | Content                                                          |
-|------------------------------------|---------------------|------------------------------------------------------------------|
-| javax.servlet.error.exception_type | java.lang.Class     | the thrown error object's class i.e. return `Throwable.getClass` |
-| javax.servlet.error.message        | java.lang.String    | the all thrown error messages combined                           |
-| javax.servlet.error.exception      | java.lang.Throwable | the thrown error object                                          |
-| javax.servlet.error.status_code    | java.lang.Integer   | 500                                                              |
-| javax.servlet.error.error_page     | java.lang.String    | the error handling page URL configured in zk.xml                 |
+| Request Attribute Name                                                 | Type                                  | Content                                                          |
+|------------------------------------------------------------------------|---------------------------------------|------------------------------------------------------------------|
+| javax.servlet.error.exception_type                                     | java.lang.Class                       | the thrown error object's class i.e. return `Throwable.getClass` |
+| javax.servlet.error.message                                            | java.lang.String                      | the all thrown error messages combined                           |
+| javax.servlet.error.exception                                          | java.lang.Throwable                   | the thrown error object                                          |
+| javax.servlet.error.status_code                                        | java.lang.Integer                     | 500                                                              |
+| javax.servlet.error.error_page                                         | java.lang.String                      | the error handling page URL configured in zk.xml                 |
+| {% include versionSince\| 10.2.0 %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> | a list containing all thrown error objects                       |
 
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`
@@ -217,7 +221,7 @@ KillerApp encounters an error: ${requestScope['javax.servlet.error.message']}
 
 Then, when the button is clicked, the following will be shown.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Exception-au2.png)
+![](Exception-au2.png)
 
 # Handling a Custom Exception
 

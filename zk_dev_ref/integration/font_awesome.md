@@ -1,9 +1,14 @@
 # Font Awesome Bundled
 
+{% include versionSince\| 7.0.0 %}
+
 Starting from ZK 7.0.0 integrates [Font Awesome
 4.0.1](https://fontawesomelib.com/releases/4.0.1/list/all/index.html)
 with the prefix **z-icon**. You don't need to manually include Font
 Awesome CSS because it's already packaged with ZK jar.
+
+You can check [the page to display all supported
+icons](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
 
 # Basic Usage
 
@@ -19,7 +24,7 @@ Cheatsheet](http://fontawesome.io/cheatsheet/).
 For example, to add a home icon on a Button,
 
 ``` xml
-    <button iconSclass="z-icon-home" />
+    <button iconSclass="z-icon-home z-icon-solid" />
 ```
 
 If you want to use other Font Awesome functions such as the animation
@@ -32,6 +37,8 @@ class to iconSclass. For example,
     <button iconSclass="z-icon-home fa-2x fa-rotate-90" />
 ```
 
+{$ include version-badge.html version=8.0.0 %}
+
 ZK 8.0.0 integrates Font Awesome 4.3.0. Also, with ZK 8 there is no need
 to include an external font awesome CSS link to use an animation icon.
 Therefore the example above becomes
@@ -41,8 +48,12 @@ Therefore the example above becomes
     <button iconSclass="z-icon-home z-icon-2x z-icon-rotate-90" />
 ```
 
+{$ include version-badge.html version=8.5.2 %}
+
 ZK 8.5.2 integrates [Font Awesome
 4.7.0](https://fontawesome.com/v4.7.0/icons/).
+
+{$ include version-badge.html version=10.0.0 %}
 
 ZK 10.0.0 integrates [Font Awesome 6.4.2 free
 icons](https://fontawesome.com/v6/search?o=r&m=free) and supports both
@@ -56,9 +67,13 @@ Font Awesome 4 syntax and Font Awesome 6 syntax with styles specified:
     <button iconSclass="z-icon-bell z-icon-regular" />
 ```
 
+This version includes 10 animation effect, please check [this
+page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
+
 # IconTooltip
 
-The iconTooltip attribute is introduced for adding a tooltip to an icon.
+{$ include version-badge.html version=10.0.0 %} The iconTooltip attribute is
+introduced for adding a tooltip to an icon.
 
 ``` xml
     <button iconSclass="z-icon-home" iconTooltip="home"/>
@@ -66,8 +81,8 @@ The iconTooltip attribute is introduced for adding a tooltip to an icon.
 
 # Multiple icons and tooltips
 
-One LabelImageElement can have multiple icons and tooltips set using
-Java API:
+{$ include version-badge.html version=10.0.0 %} One LabelImageElement can have
+multiple icons and tooltips set using Java API:
 
 ``` java
     e.setIconSclasses(new String[] {"z-icon-home", "z-icon-podcast"});
