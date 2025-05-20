@@ -1,3 +1,5 @@
+
+
 # Grid
 
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
@@ -973,7 +975,7 @@ For example,
 ## Ungroup Column Menu
 
 When the user groups the content of the grid, the column's menu will
-show an ungroup icon for user to reset the group. {% include edition-availability.html edition=ee %} {%
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
 include version-badge.html version=6.5.0 %}
 
 ![](images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
@@ -1159,8 +1161,8 @@ The following code demonstrates how to freeze a column within a Grid:
 
 ## org.zkoss.zul.grid.rod
 
-`[default: false]`  
-`[inherit: true]`
+`[default: false]`  
+`[inherit: true]`[^1]
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
@@ -1168,8 +1170,8 @@ Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Hu
 
 ## org.zkoss.zul.grid.autoSort
 
-`[default: false]`  
-`[inherit: true]`
+`[default: false]`  
+`[inherit: true]`[^2]
 
 {% include version-badge.html version=5.0.7 %} Specifies whether to sort the model
 when the following cases:
@@ -1190,8 +1192,8 @@ the value as **ignore.change**.
 
 ## org.zkoss.zul.grid.preloadSize
 
-`[default: 50]`  
-`[inherit: true]`
+`[default: 50]`  
+`[inherit: true]`[^3]
 
 {% include version-badge.html version=6.0.1 %} Specifies the number of rows to
 preload when receiving the rendering request from the client. It is used
@@ -1202,8 +1204,8 @@ not paging
 
 ## org.zkoss.zul.grid.initRodSize
 
-`[default: 50]`  
-`[inherit: true]`
+`[default: 50]`  
+`[inherit: true]`[^4]
 
 {% include version-badge.html version=6.0.1 %} Specifies the number of rows rendered
 when the Grid first render. It is used only if live data
@@ -1213,8 +1215,8 @@ not paging
 
 ## org.zkoss.zul.grid.autohidePaging
 
-`[default: true]`  
-`[inherit: true]`
+`[default: true]`  
+`[inherit: true]`[^5]
 
 {% include version-badge.html version=7.0.1 %}
 
@@ -1296,7 +1298,7 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Columns`](ZK_Component_Reference/Data/Grid/Columns)`, `[` Rows`](ZK_Component_Reference/Data/Grid/Rows)`, `[` Foot`](ZK_Component_Reference/Data/Grid/Foot)
+`*`[` Columns`](ZK_Component_Reference/Data/Grid/Columns)`, `[` Rows`](ZK_Component_Reference/Data/Grid/Rows)`, `[` Foot`](ZK_Component_Reference/Data/Grid/Foot)
 
 # Version History
 
@@ -1317,4 +1319,14 @@ zul.jar.
 | 8.5.0   | Oct 2017     | [ZK-3690](http://tracker.zkoss.org/browse/ZK-3690): Added visibleRows property for Grid (the same as rows property of Listbox and Tree)                                                         |
 | 9.6.0   | Mar 2021     | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 
+
+
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
+
+[^2]: `Same as above.`
+
+[^3]: `Same as above.`
+
+[^4]: `Same as above.`
+
+[^5]: `Same as above.`
