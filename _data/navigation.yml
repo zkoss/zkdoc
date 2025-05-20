@@ -479,6 +479,8 @@ zk_calendar_essentials:
     url: "/zk_calendar_essentials/themes"
   - title: "Customization"
     url: "/zk_calendar_essentials/customization"
+  - title: "Upgrade Note"
+    url: "/zk_calendar_essentials/upgrade_note"
   - title: "Working with 2.1"
     url: "/zk_calendar_essentials/working_with_2.1"
     children:
