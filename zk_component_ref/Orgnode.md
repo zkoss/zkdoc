@@ -6,7 +6,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgnode
   </javadoc>
 
-`{% include edition-availability.html edition=ee %}`
+`{% include edition-availability.html edition="ee" %}`
 
 {% include version-badge.html version=8.6.0 %}
 

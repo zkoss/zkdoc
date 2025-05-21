@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkex.sel.Listgroup</javadoc>
 - Style Guide: [
   Listgroup](ZK_Style_Guide/XUL_Component_Specification/Listgroup)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

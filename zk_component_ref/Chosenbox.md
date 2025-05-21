@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
 - Style Guide: [
   Chosenbox](ZK_Style_Guide/XUL_Component_Specification/Chosenbox)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

@@ -10,7 +10,7 @@
 - Style Guide: [
   Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

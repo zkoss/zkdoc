@@ -8,7 +8,7 @@
 - JavaScript API:
   [Navbar](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navbar.html)
 - Style Guide:
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

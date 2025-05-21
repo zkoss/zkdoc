@@ -78,7 +78,7 @@ sorted the row of this column.</p></td>
 <p><code>onGroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition=pe %}
+<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition="pe" %}
 Denotes user has grouped all the cells under a column.</p></td>
 </tr>
 <tr class="odd">
@@ -86,7 +86,7 @@ Denotes user has grouped all the cells under a column.</p></td>
 <p><code>onUngroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition=pe %}
+<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %} Denotes user has ungrouped all the
 cells under a column.</p></td>
 </tr>

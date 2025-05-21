@@ -13,7 +13,7 @@ Quarkus](Small_Talks/2023/May/Creating_and_deploying_ZK_Apps_with_Quarkus)
 ## Websockets
 
 {$ include version-badge.html version=10.1.0 %}
-{% include edition-availability.html edition=ee %}
+{% include edition-availability.html edition="ee" %}
 
 Starting from ZK 10.1.0, ZK provides a plugin to support
 quarkus-websockets. ZK Quarkus websocket support is activated by adding

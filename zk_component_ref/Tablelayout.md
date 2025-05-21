@@ -2,7 +2,7 @@
 
 # Tablelayout
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)

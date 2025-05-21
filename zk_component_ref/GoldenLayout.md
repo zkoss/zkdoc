@@ -2,7 +2,7 @@
 
 # GoldenLayout
 
-{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition=pe %}
+{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>
 - JavaScript API:

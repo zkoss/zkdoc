@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
 - Style Guide: [
   Biglistbox](ZK_Style_Guide/XUL_Component_Specification/Biglistbox)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

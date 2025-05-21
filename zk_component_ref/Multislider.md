@@ -8,7 +8,7 @@
 - JavaScript API:
   [Multislider](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/slider/Multislider.html)
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 

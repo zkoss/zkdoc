@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
 - Style Guide: [
   Groupfoot](ZK_Style_Guide/XUL_Component_Specification/Groupfoot)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

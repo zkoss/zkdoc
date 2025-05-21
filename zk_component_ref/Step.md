@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Step</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Step</javadoc>
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 

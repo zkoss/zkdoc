@@ -65,7 +65,7 @@ scroll starting position.
 
 # Smooth scrolling
 
-{% include edition-availability.html edition=pe %}{% include version-badge.html version=8.5.0 %} The frozen columns
+{% include edition-availability.html edition="pe" %}{% include version-badge.html version=8.5.0 %} The frozen columns
 position are maintained, and the other columns uses CSS scrolling to
 move smoothly while the scroll position is updated.
 
@@ -76,7 +76,7 @@ the other columns are replaced while the scroll position is updated.
 
 ## Scroll to Hide Columns
 
-{% include edition-availability.html edition=pe %}{% include version-badge.html version=8.5.0 %} With smooth
+{% include edition-availability.html edition="pe" %}{% include version-badge.html version=8.5.0 %} With smooth
 scrolling, the Grid does not add white space to the last column by
 default.
 
@@ -86,7 +86,7 @@ columns except the last one. ![](hide-columns.png)
 
 # Frozen on the Right
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.2 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.2 %}
 
 Make columns frozen at the right-hand side.
 

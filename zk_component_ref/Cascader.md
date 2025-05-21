@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Cascader</javadoc>
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 
 # Employment/Purpose
 

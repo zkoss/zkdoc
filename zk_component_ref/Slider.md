@@ -91,7 +91,7 @@ below.
 
 # Knob Mold
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %} Set the mold
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %} Set the mold
 property to "knob" will enable knob slider. So the slider can act as a
 normal knob. The knob can controlled by wheel, drag, click and enter a
 value to the input element.

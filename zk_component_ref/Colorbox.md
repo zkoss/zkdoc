@@ -9,7 +9,7 @@
 - Style Guide: [
   Colorbox](ZK_Style_Guide/XUL_Component_Specification/Colorbox)
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

@@ -68,7 +68,7 @@ child.
 ## Caption
 
 A layout region might have a caption, which is specified by declaring a
-child component called caption. {% include edition-availability.html edition=pe %} {% include
+child component called caption. {% include edition-availability.html edition="pe" %} {% include
 version-badge.html version=6.5.0 %}
 
 ``` xml

@@ -1142,7 +1142,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 ## Ungroup Column Menu
 
 When the user groups the content of the listbox, the column's menu will
-show an ungroup icon for user to reset the group. {% include edition-availability.html edition=ee %} {%
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition="ee" %} {%
 include version-badge.html version=6.5.0 %}
 
 ![](images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)

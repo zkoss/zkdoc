@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.GoldenPanel</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.GoldenPanel</javadoc>
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 {% include version-badge.html version=8.6.0 %}
 

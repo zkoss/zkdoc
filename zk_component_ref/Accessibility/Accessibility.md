@@ -9,7 +9,7 @@ attributes.
 For general accessibility information, please refer to [ZK Developer's
 Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/Accessibility).
 
-{% include edition-availability.html edition=pe %} Note: the following subsections are only applied for
+{% include edition-availability.html edition="pe" %} Note: the following subsections are only applied for
 ZK EE version only.
 
 

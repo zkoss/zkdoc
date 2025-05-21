@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Splitlayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Splitlayout</javadoc>
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

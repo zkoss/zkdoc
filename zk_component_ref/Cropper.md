@@ -6,7 +6,7 @@
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cropper</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Cropper</javadoc>
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Browser Support
 

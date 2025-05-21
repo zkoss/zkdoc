@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
 - Style Guide: [
   Listgroupfoot](ZK_Style_Guide/XUL_Component_Specification/Listgroupfoot)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

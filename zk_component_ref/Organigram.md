@@ -6,7 +6,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Organigram
   </javadoc>
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 

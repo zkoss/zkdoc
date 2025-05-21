@@ -7,7 +7,7 @@
   <javadoc directory="jsdoc">zkmax.layout.RowLayout</javadoc>
 - Style Guide: [
   RowLayout](ZK_Style_Guide/XUL_Component_Specification)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

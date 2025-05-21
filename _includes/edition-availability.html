@@ -1,6 +1,57 @@
-<div class="edition-availability">
-    <div class="option ce{% if include.edition == 'ee' %}{% elsif include.edition == 'pe' %} selected{% endif %}">CE
-    </div>
-    <div class="option pe{% if include.edition == 'pe' %} selected{% endif %}">PE</div>
-    <div class="option ee{% if include.edition == 'ee' or include.edition == 'pe' %} selected{% endif %}">EE</div>
+{% comment %}
+Edition Availability Component for ZK Documentation
+Parameters:
+- edition: The minimum edition required for the feature (ce, pe, or ee)
+- inline: (optional) If set to true, the component will be displayed inline
+Usage:
+{% include edition-availability.html edition="ee" %}
+{% include edition-availability.html edition="pe" inline=true %}
+{% endcomment %}
+
+<div class="edition-availability{% if include.inline %} inline{% endif %}">
+    <div class="option ce{% if include.edition == 'ce' %} selected{% else %} unavailable{% endif %}">CE</div>
+    <div class="option pe{% if include.edition == 'ce' or include.edition == 'pe' %} selected{% else %} unavailable{% endif %}">PE</div>
+    <div class="option ee selected">EE</div>
 </div>
+
+<style>
+    .edition-availability {
+        display: flex;
+        margin: 10px 0;
+        width: fit-content;
+        border-radius: 3px;
+        overflow: hidden;
+        font-size: 0.85rem;
+        font-weight: 500;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+        &.inline {
+            display: inline-flex;
+            margin: 0 5px;
+            vertical-align: middle;
+            font-size: 0.75rem;
+        }
+
+        .option {
+            padding: 4px 10px;
+            text-align: center;
+            min-width: 40px;
+            color: white;
+
+            &.ce,
+            &.pe,
+            &.ee {
+                background-color: #008DB7;
+            }
+
+            &.unavailable {
+                background-color: #e0e0e0;
+                color: #666;
+            }
+
+            &.selected {
+                font-weight: bold;
+            }
+        }
+    }
+</style>

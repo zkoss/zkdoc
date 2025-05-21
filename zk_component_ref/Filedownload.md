@@ -39,7 +39,7 @@ local file system to save the file.
 
 # The Resumable Download
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 In certain situations, you might prefer to generate an URL that can be
 used even if the desktop becomes invalid. For example, you want to allow

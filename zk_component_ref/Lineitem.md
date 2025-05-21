@@ -6,7 +6,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Lineitem
   </javadoc>
 
-{% include edition-availability.html edition=ee %}
+{% include edition-availability.html edition="ee" %}
 
 {% include version-badge.html version=9.0.0 %}
 

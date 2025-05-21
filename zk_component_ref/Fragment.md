@@ -8,7 +8,7 @@
   <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
 - Style Guide: N/A
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 # Purpose
 

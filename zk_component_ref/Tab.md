@@ -36,7 +36,7 @@ You could put a label and an image on it by `label`and
 ## Caption
 
 A tab might have a caption, which is specified by declaring a child
-component called caption. {% include edition-availability.html edition=pe %} {% include
+component called caption. {% include edition-availability.html edition="pe" %} {% include
 version-badge.html version=6.5.0 %}
 ![](images/ZKComRef_Containers_Tab_Caption.PNG)
 

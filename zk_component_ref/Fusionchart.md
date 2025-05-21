@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
 - Style Guide: N/A
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the
   3rd party library that it's based on - Fusioncharts free, has moved
   out of flash and stopped supporting it.

@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
 - Style Guide: N/A
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

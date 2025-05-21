@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.nav.Coachmark</javadoc>
 
-{% include edition-availability.html edition=pe %}
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

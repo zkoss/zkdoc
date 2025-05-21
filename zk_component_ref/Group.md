@@ -7,7 +7,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
 - Style Guide: [
   Group](ZK_Style_Guide/XUL_Component_Specification/Group)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

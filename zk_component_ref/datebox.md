@@ -261,7 +261,7 @@ You can control the 2DigitYearStart by the use of the library property,
 
 ## Show Week Number
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=6.5.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=6.5.0 %}
 
 Datebox supports to show a week number of the year in a calendar.
 

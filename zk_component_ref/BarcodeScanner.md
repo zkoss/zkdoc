@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barscanner.Barcodescanner</javadoc>
 
-{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition=pe %}
+{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
 
 # Browser Support
 

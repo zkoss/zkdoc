@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Cardlayout</javadoc>
 - Style Guide: N/A
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

@@ -2,7 +2,7 @@
 
 # Timepicker
 
-{% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition=pe %}
+{% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition="pe" %}
 
 - Java API: <javadoc>org.zkoss.zkmax.zul.Timepicker</javadoc>
 - JavaScript API:

@@ -8,7 +8,7 @@
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
 - Style Guide: [
   Detail](ZK_Style_Guide/XUL_Component_Specification/Detail)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

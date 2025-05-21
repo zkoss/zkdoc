@@ -9,7 +9,7 @@
   <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
 - Style Guide: [
   Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
-- {% include edition-availability.html edition=pe %}
+- {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

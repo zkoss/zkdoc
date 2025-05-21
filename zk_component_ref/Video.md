@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Video</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Video</javadoc>
 
-{% include edition-availability.html edition=pe %} {% include version-badge.html version=8.6.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose
 
