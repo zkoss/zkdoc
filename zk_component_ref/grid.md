@@ -927,7 +927,7 @@ header becomes floating and sticky on the top of the page.
 
 # Master Detail
 
-{% include edition-availability.html edition="ee" %} Grid supports master-detail layout which enables
+{% include edition-availability.html edition=ee %} Grid supports master-detail layout which enables
 developers to add more information on each row. For example,
 
 ![](images/ZKComRef_Grid_Detail.png)
@@ -975,7 +975,7 @@ For example,
 ## Ungroup Column Menu
 
 When the user groups the content of the grid, the column's menu will
-show an ungroup icon for user to reset the group. {% include edition-availability.html edition="pe" %} {%
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
 include version-badge.html version=6.5.0 %}
 
 ![](images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
