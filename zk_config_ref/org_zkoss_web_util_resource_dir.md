@@ -12,11 +12,11 @@ The latest versions containing a fix are:
 
 **Property:**
 
-` org.zkoss.web.util.resource.dir`
+`org.zkoss.web.util.resource.dir`
 
-{% include GlobalLibraryProperty %}
+{% include GlobalLibraryProperty.md %}
 
-`Default: `<i>`none`</i>
+`Default: `none`
 
 {% include version-badge.html version=5.0.0 %}
 
@@ -78,8 +78,7 @@ purpose).
 
 ## Overriding JavaScript in a ZK JAR
 
-ZK loads the JavaScript file under the [ class path web resource
-path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path),
+ZK loads the JavaScript file under the [ class path web resource path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path),
 **`WEB-INF/classes/web/js`**, in a **higher** priority than JavaScript
 files in ZK jar (e.g. zul.jar). So that you can put javascript files
 there to override the JavaScript files in ZK jar under the corresponding

@@ -17,7 +17,7 @@ position, as if there is a line break before and after it.
 To change the alignment of div, you can use CSS to achieve e.g.
 `style="text-align:right"`
 
-{% include remove-since.html version=10.0.0 %}
+{% include RemovedSince.html version=10.0.0 %}
 
 ![](images/ZKComRef_Div_Example.png)
 

@@ -99,9 +99,8 @@ spacing.
 
 ## Heights and Widths
 
-{% include remove-since.html version=10.0.0 %} 
-{% include Notice\|text=Deprecated.
-As of release 5.0.0, use Cell instead. %}
+{% include RemovedSince.html version=10.0.0 %} 
+{% include Notice.html text='Deprecated. As of release 5.0.0, use Cell instead.' %}
 
 You can control the width for each cell inside a `hbox` with `widths`
 attribute as follows (don't specify on each cell):

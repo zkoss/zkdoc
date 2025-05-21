@@ -1,6 +1,6 @@
 # Font Awesome Bundled
 
-{% include versionSince\| 7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 
 Starting from ZK 7.0.0 integrates [Font Awesome
 4.0.1](https://fontawesomelib.com/releases/4.0.1/list/all/index.html)

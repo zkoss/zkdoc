@@ -83,7 +83,7 @@ references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_
 
 ## Pre, Hyphen, Maxlength and Multiline
 
-{% include removedSince\| 10.0.0 %} Hyphen is removed. Use CSS to
+{% include RemovedSince.html version=10.0.0 %} Hyphen is removed. Use CSS to
 achieve it.
 
 {% include version-badge.html version=5.0.0 %}

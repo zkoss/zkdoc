@@ -75,7 +75,7 @@ Notes:
 
 ### min & max constraint
 {% include version-badge.html version=10.2.0 %}
-{% include ZK EE %}
+{% include edition-availability.html edition=ee %}
 
 ``` xml
 <spinner constraint="min -2 max 6"/>
@@ -83,8 +83,7 @@ Notes:
 
 # Inherited Functions
 
-Please refer to [
-NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+Please refer to [NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
 for inherited functions.
 
 # Supported Events
@@ -108,8 +107,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+- Inherited Supported Events: [NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
 
 # Supported Children
 

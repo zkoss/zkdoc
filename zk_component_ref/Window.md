@@ -197,21 +197,18 @@ prompt requiring user attention.
 
 ## Modal Windows and Event Processing Threads
 
-{% include Notice\|text=Event processing thread is disabled by default
-since 5.0. For the older version, it is enabled by default %} By
-default, events are processed in the same thread that serves the HTTP
+{% include Notice.html text='Event processing thread is disabled by default since 5.0. For the older version, it is enabled by default' %} 
+By default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
 process events in an individual thread, such that the event listener
 could suspend the execution at any time, and resume later. For how to
-enable the event processing thread, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
+enable the event processing thread, please refer to [ZK Configuration Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
 
 > ------------------------------------------------------------------------
 >
 > Notice that, for better integration with other frameworks, such as
 > Spring, it is suggested to *disable* the event processing thread
-> (default). For more information, please refer to the [Event
-> Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+> (default). For more information, please refer to the [Event Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
 > section.
 
 Once the event thread is enabled, a modal window will behave differently

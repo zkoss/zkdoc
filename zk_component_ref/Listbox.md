@@ -157,8 +157,7 @@ This mold supports having Listgroups and renders them as HTML
 </listbox>
 ```
 
-{% include Notice\|text=Listbox doesn't send onClick event for listitem
-under this mold. %}
+{% include Notice.html text="Listbox doesn't send onClick event for listitem under this mold." %}
 
 # Keyboard Navigation Listbox
 
@@ -194,7 +193,7 @@ When using the paging mold and vflex, you can also turn on autopaging
 such that Listbox will determine the page size automatically based on
 the available height.
 
-{% include Notice.html  text="This feature only works when each row has the same height." %}
+{% include Notice.html text="This feature only works when each row has the same height." %}
 
 {% include version-badge.html version=5.0.2 %}
 
@@ -413,8 +412,7 @@ the right listbox to the left listbox.
 Note: If the `multiple` attribute is false, radio buttons are displayed
 instead, as demonstrated by the right hand listbox.
 
-To enable Select all feature, there are some constraints as below: {%
-include versionSince\| 5.0.11 %}
+To enable Select all feature, there are some constraints as below: {% include version-badge.html version=5.0.11 %}
 
 Select all checkbox in listheader is only available if ROD is false.
 
@@ -1303,7 +1301,7 @@ The following code demonstrates how to freeze a column within a Grid:
     </listbox>
 ```
 
-{% include versionSince\| 5.0.0 %}
+{% include version-badge.html version=5.0.0 %}
 
 - For further details, please refer to [ Frozen
   component](ZK_Component_Reference/Supplementary/Frozen)
@@ -1313,8 +1311,8 @@ The following code demonstrates how to freeze a column within a Grid:
 
 ## org.zkoss.zul.listbox.rightSelect
 
-`[default: true]`  
-`[inherit: true]`
+`[default: true]`  
+`[inherit: true]`
 
 It specifies that the selection will be toggled when user right clicks
 on an item, if the checkmark is enabled
@@ -1324,8 +1322,8 @@ state.
 
 ## org.zkoss.zul.listbox.groupSelect
 
-`[default: false]`  
-`[inherit: true]`
+`[default: false]`  
+`[inherit: true]`
 
 {% include version-badge.html version=5.0.7 %}
 
@@ -1335,10 +1333,10 @@ will be in effect for the whole application.)
 
 ## org.zkoss.zul.listbox.autoSort
 
-`[default: false]`  
-`[inherit: true]`
+`[default: false]`  
+`[inherit: true]`
 
-{% include versionSince\| 5.0.7 %}
+{% include version-badge.html version=5.0.7 %}
 
 Specifies whether to sort the model when the following cases:
 
@@ -1358,8 +1356,8 @@ the value as **ignore.change**.
 
 ## org.zkoss.zul.listbox.rod
 
-`[default: false]`  
-`[inherit: true]`
+`[default: false]`  
+`[inherit: true]`
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
@@ -1367,8 +1365,8 @@ Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Hu
 
 ## org.zkoss.zul.listbox.preloadSize
 
-`[default: 50]`  
-`[inherit: true]`
+`[default: 50]`  
+`[inherit: true]`
 
 {% include version-badge.html version=6.0.1 %}
 
@@ -1380,8 +1378,8 @@ and not paging
 
 ## org.zkoss.zul.listbox.initRodSize
 
-`[default: 50]`  
-`[inherit: true]`
+`[default: 50]`  
+`[inherit: true]`
 
 {% include version-badge.html version=6.0.1 %}
 
@@ -1393,8 +1391,8 @@ and not paging
 
 ## org.zkoss.zul.listbox.autohidePaging
 
-`[default: true]`  
-`[inherit: true]`
+`[default: true]`  
+`[inherit: true]`
 
 {% include version-badge.html version=7.0.1 %}
 
@@ -1517,7 +1515,7 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, `[` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, `[` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, `[` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, `[` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
+[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, ' [` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, ' [` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, ' [` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, ' [` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
 
 # Version History
 

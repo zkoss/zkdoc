@@ -54,8 +54,7 @@ e.g.
 
 Use SLF4J API for logging instead.
 
-{% include DeprecatedSince\| 7.0.0 %} ZK uses [the standard
-logger](http://docs.oracle.com/javase/1.4.2/docs/guide/util/logging/overview.html)
+{% include DeprecatedSince.md version=7.0.0 %} ZK uses [the standard logger](http://docs.oracle.com/javase/1.4.2/docs/guide/util/logging/overview.html)
 to log messages. You could control what to log by configuring the
 logging of the Web server you are using. The configuration usually
 varies from one server to another. However, you could use the
@@ -74,7 +73,7 @@ configuration mechanism:
 
 Use SLF4J API for logging instead.
 
-{% include DeprecatedSince\| 7.0.0 %} A logging configuration file is a
+{% include DeprecatedSince.md version=7.0.0 %} A logging configuration file is a
 standard properties file. Each line is a key-value pair in the following
 format:
 
@@ -101,7 +100,7 @@ Here is an example of a configuration file.
 
 Use SLF4J API for logging instead.
 
-{% include DeprecatedSince\|7.0.0 %}
+{% include DeprecatedSince.md version=7.0.0 %}
 
 <table>
 <thead>
@@ -165,7 +164,7 @@ DEBUG</p></td>
 
 Use SLF4J API for logging instead.
 
-{% include DeprecatedSince\|7.0.0 %} Some Web servers, such as Jetty,
+{% include DeprecatedSince.md version=7.0.0 %} Some Web servers, such as Jetty,
 don't turn on the standard logger by default. Thus, in the logging
 configuration file, you have to configure the handler too. For example,
 you can turn on the `java.util.logging.ConsoleHandler` to write the logs
@@ -202,7 +201,7 @@ org.zkoss.bind=FINE
 
 Use SLF4J API for logging instead.
 
-{% include DeprecatedSince\|7.0.0 %} To let ZK load the logging
+{% include DeprecatedSince.md version=7.0.0 %} To let ZK load the logging
 configuration file, you have to specify in a library property called
 [org.zkoss.util.logging.config.file](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.logging.config.file).
 For example,
