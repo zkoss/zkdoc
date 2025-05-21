@@ -14,7 +14,7 @@ The latest versions containing a fix are:
 
 `org.zkoss.web.util.resource.dir`
 
-{% include GlobalLibraryProperty.md %}
+{% include GlobalLibraryProperty.html %}
 
 `Default: `none`
 
