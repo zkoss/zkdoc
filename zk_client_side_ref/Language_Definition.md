@@ -30,16 +30,20 @@ A language addon serves to extend a language definition within the ZK
 framework. You can include a language addon using any of the following
 methods:
 
-Path Convention Loading:  
+## Path Convention Loading
 
 - **In a web application (WAR):** Ensure that the file is named
   **lang-addon.xml**. Put the file at
-  `/WEB-INF/classes/metainfo/zk/lang-addon.xml`. This location makes the
-  file accessible to the classpath.
-- **In a jar file:** Put the file at
-  `mymodule.jar/metainfo/zk/lang-addon.xml`.
 
-zk.xml:  
+`/WEB-INF/classes/metainfo/zk/lang-addon.xml`.
+
+This location makes the file accessible to the classpath.
+
+- **In a jar file:** Put the file at
+
+`mymodule.jar/metainfo/zk/lang-addon.xml`.
+
+## zk.xml
 
 Specify the file path using the `<language-config>` element in
 **zk.xml**. This method allows you to use any file name for the
@@ -47,7 +51,7 @@ configuration file. Learn more about this configuration at
 [\<language-config\> in
 zk.xml](ZK_Configuration_Reference/zk.xml/The_language-config_Element).
 
-config.xml:  
+## config.xml
 
 For JAR files, specify the file path in the configuration file located
 at `/metainfo/zk/config.xml`. This approach is useful when the
@@ -64,3 +68,5 @@ language add-ons based on their
 A language addon is a variant of a language definition. They are almost
 the same, except for the naming and it must specify the
 [<addon-name>](ZK_Client-side_Reference/Language_Definition/addon-name).
+
+{% include DoctypeDisallowed.md %}

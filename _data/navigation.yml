@@ -753,7 +753,7 @@ zk_client_side_ref:
         url: "/zk_client_side_ref/widget"
 zk_component_dev_essentials:
   - title: "ZK Component Overview"
-    url: "/zk_component_overview"
+    url: "/zk_component_dev_essentials/zk_component_overview"
     children:
       - title: "What is a ZK component"
         url: "/zk_component_dev_essentials/what_is_a_zk_component"
@@ -1299,7 +1299,7 @@ zk_config_ref:
           - title: "org.zkoss.zul.tree.throttleMillis"
             url: "/zk_config_ref/org_zkoss_zul_tree_throttleMillis"
           - title: "preserve-all-blank"
-            url: "/zk_config_ref/preserve-all-blank"
+            url: "/zk_config_ref/preserve_all_blank"
       - title: "The listener Element"
         url: "/zk_config_ref/the_listener_element"
         children:

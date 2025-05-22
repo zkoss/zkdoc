@@ -11,6 +11,8 @@ of the following elements under the root element.
 
 You can place zk.xml in either a WAR file or a JAR file.
 
+{% include DoctypeDisallowed.md %}
+
 ## WEB-INF/zk.xml
 
 `zk.xml` is usually packed with a Web application and it should be
@@ -18,11 +20,14 @@ located under `WEB-INF`.
 
 ## metainfo/zk/zk.xml
 
+{% include version-badge.html version=3.6.0 %}
 For library providers, `zk.xml` is better to pack with a JAR file. This
 can be done by placing zk.xml in the `metainfo/zk` directory
 identifiable by the classpath (i.e., in a JAR file).
 
 ## Additional Configuration File
+
+{% include version-badge.html version=5.0.7 %}
 
 In addition, you could specify an additional configuration file in a
 library or system property called `org.zkoss.zk.config.path`. It is
@@ -38,6 +43,8 @@ priority, and `WEB-INF/zk.xml` (since the later will overrides the
 previous one if conflicts).
 
 # XML Schema Definition
+
+{% include version-badge.html version=8.6.1 %}
 
 You could specify the XML schema in the zk.xml as shown below. Many XML
 editors works better, such as when with auto-complete, if XML schema is
