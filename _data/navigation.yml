@@ -14,7 +14,7 @@ main:
   - title: "ZK Installation Guide"
     url: /zk_installation_guide/before_you_start
   - title: "ZK Configuration Reference"
-    url: /zk_config_ref/web.xml
+    url: /zk_config_ref/web_xml
   - title: "ZK Style Customization Guide"
     url: /zk_style_customization_guide/Introduction
   - title: "ZK Component Development Essentials"
@@ -165,7 +165,7 @@ zk_mvvm_ref:
       - title: "Detail Operation Flow"
         url: /zk_mvvm_ref/intro/detail_operation_flow/
   - title: "ViewModel"
-    url: "/zk_mvvm_ref/viewmodel/README"
+    url: "/zk_mvvm_ref/viewmodel/viewmodel"
     children:
       - title: "Initialization and finalization"
         url: "/zk_mvvm_ref/viewmodel/initialization"
@@ -176,7 +176,7 @@ zk_mvvm_ref:
       - title: "Notification"
         url: "/zk_mvvm_ref/viewmodel/notification"
   - title: "Data Binding"
-    url: "/zk_mvvm_ref/data_binding/README"
+    url: "/zk_mvvm_ref/data_binding/index"
     children:
       - title: "EL Expression"
         url: "/zk_mvvm_ref/data_binding/el_expression"
@@ -210,7 +210,7 @@ zk_mvvm_ref:
       - title: "Client Binding"
         url: "/zk_mvvm_ref/data_binding/client_binding_api"
   - title: "Shadow Elements"
-    url: "/zk_mvvm_ref/shadow_elements/README"
+    url: "/zk_mvvm_ref/shadow_elements/index"
     children:
       - title: "Iterate Collections"
         url: "/zk_mvvm_ref/shadow_elements/iterate_collections"
@@ -219,9 +219,9 @@ zk_mvvm_ref:
       - title: "UI Template Injection"
         url: "/zk_mvvm_ref/shadow_elements/ui_template_injection"
   - title: "Client MVVM"
-    url: "/zk_mvvm_ref/client_mvvm/README"
+    url: "/zk_mvvm_ref/client_mvvm/index"
   - title: "Advanced"
-    url: "/zk_mvvm_ref/advanced/README"
+    url: "/zk_mvvm_ref/advanced/index"
     children:
       - title: "Parameters"
         url: "/zk_mvvm_ref/advanced/parameters"
@@ -248,7 +248,7 @@ zk_mvvm_ref:
       - title: "Performance Tips"
         url: "/zk_mvvm_ref/advanced/performance-tips"
   - title: "Configuration"
-    url: "/zk_mvvm_ref/configuration/README"
+    url: "/zk_mvvm_ref/configuration/index"
   - title: "Annotations in ViewModel"
     url: "/zk_mvvm_ref/syntax/viewmodel"
     children:
