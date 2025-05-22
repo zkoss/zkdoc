@@ -1614,10 +1614,10 @@ zk_dev_ref:
               - title: "Item Renderer"
                 url: "/zk_dev_ref/MVC/Item_Renderer"
   - title: "Stateless Components"
-    url: "/zk_dev_ref/Stateless Components/Stateless_Components"
+    url: "/zk_dev_ref/Stateless_Components/Stateless_Components"
     children:
       - title: "Building Stateless UI"
-        url: "/zk_dev_ref/Stateless Components/Building_Stateless_UI"
+        url: "/zk_dev_ref/Stateless_Components/Building_Stateless_UI"
   - title: "Annotations"
     url: "/zk_dev_ref/Annotations/Annotations"
     children:
@@ -1650,7 +1650,7 @@ zk_dev_ref:
       - title: "Hflex and Vflex"
         url: "/zk_dev_ref/UI_Patterns/Hflex_and_Vflex"
       - title: "Grid's Columns and Hflex"
-        url: "/zk_dev_ref/UI_Patterns/Grid's_Columns_and_Hflex"
+        url: "/zk_dev_ref/UI_Patterns/Grids_Columns_and_Hflex"
       - title: "Tooltips, Context Menus and Popups"
         url: "/zk_dev_ref/UI_Patterns/Tooltips,_Context_Menus_and_Popups"
       - title: "Keystroke Handling"
