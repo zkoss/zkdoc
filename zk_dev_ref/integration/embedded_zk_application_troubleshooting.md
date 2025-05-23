@@ -8,7 +8,7 @@ framework interactions, ZK workflows).
 This guide aims to cover the most common challenges and provide tips on
 how to address them and successfully embed your ZK page. It separates
 these challenges into three categories: CORS challenges are related to
-Cross-Origin content policies at webserver and web browser level; Outer
+Cross-Origin content policies at a web server and web browser level; Outer
 page challenges are related to the host page which will include the ZK
 embedded page; and ZK challenges are related to the ZK page and the ZK
 server themselves.
@@ -33,7 +33,7 @@ CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 ## SSL requirement
 
-To fulfil CORS policy requirements, the embedded app must be accessible
+To fulfill CORS policy requirements, the embedded app must be accessible
 through a URL using the https protocol, encrypted with a valid SSL
 certificate.
 
@@ -132,7 +132,7 @@ dependent, we recommend that you check how to access the window object
 in your choice of Framework.
 
 Once you have access to the window object, you can use ZK functions such
-as the lookup function located at \`window.zk.\$(selector)\`
+as the lookup function located at `window.zk.$(selector)`
 
 # ZK Related troubleshooting
 
@@ -182,8 +182,8 @@ folder as the stylesheet.
 
 ## Resolving urls
 
-If you use a ZK component such as <image src=”relative/url/image.png”/>
-or a \<button image=” relative/url/image.png”/\> in embedded mode, the
+If you use a ZK component such as `<image src=”relative/url/image.png”/>`
+or a `<button image=”relative/url/image.png”/>` in embedded mode, the
 page will try to resolve this url relative to the outer page.
 
 You can consider two options to resolve this image’s url.
@@ -224,7 +224,7 @@ in css:
 ## Active desktop clearing
 
 Since the embedded page is dependent of the outer page, it may be unable
-to fulfil the standard desktop clearing, if the network conditions cause
+to fulfill the standard desktop clearing, if the network conditions cause
 the outer page to close before the inner page can complete the removal
 workflow.
 
