@@ -2679,7 +2679,6 @@ zk_component_ref:
       - title: "Unsupported Components"
         url: "/zk_component_ref/accessibility/unsupported_components"
   - title: "Removed Components"
-    url: "/zk_component_ref/removedcomponents"
     children:
       - title: "Applet"
         url: "/zk_component_ref/applet"
