@@ -8,7 +8,7 @@ you are able to develop ZK-based applications easily and efficiently.
 
 ZK Studio includes the tools shown and listed below:
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-introduction.png)
+![](images/studio-introduction.png)
 
 1.  **ZUL Editor**: ZUL Editor is a document editor for writing \*.zul
     files.

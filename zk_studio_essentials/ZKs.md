@@ -4,7 +4,7 @@ ZKs stands for **ZK Storage**. It is the mechanism by which ZK studio
 manages ZK releases that your ZK project or ZK studio may use. You can
 see the contents of ZK Storage in the **ZK Storage View**
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view.png)
+![](images/studio-storage-view.png)
 
 # ZK Binary Distribution Management
 
@@ -15,12 +15,12 @@ To browse and install ZK binary releases, open ZK Storage view and click
 **\[Window\]/\[Show View\]/\[Other\]** and selecting **ZK / ZK Storage
 View**.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view-download.png)
+![](images/studio-storage-view-download.png)
 
 Click on the icon, and the Installation dialog will popup where you can
 browse and select.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-release-install-process.png)
+![](images/studio-release-install-process.png)
 
 After clicking **Start**, the installation process will be triggered and
 selected releases will appear in your ZK Storage.
@@ -39,22 +39,22 @@ View\]/\[Other\]** and selecting **ZK / ZK Storage View**.
 
 Step 1: Click **Import** in ZK Storage View.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view-import.png)
+![](images/studio-storage-view-import.png)
 
 Step 2: Click **File Import** and a file dialog will appear, choose the
 ZK archive file you have downloaded, and click **Finish** to import.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view-import-dialog.png)
+![](images/studio-storage-view-import-dialog.png)
 
 Step 3: You can see that the imported ZK release appears under "ZK
 Releases" item.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view-import-result.png)
+![](images/studio-storage-view-import-result.png)
 
 To remove a ZK release, simply right click on it and click **Delete a
 Package**.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-storage-view-delete.png)
+![](images/studio-storage-view-delete.png)
 
 ### Configure ZK Binary Distribution
 
@@ -65,4 +65,4 @@ ZK Studio will automatically choose the latest version of those imported
 ZK Packages as the default package. You can remove unwanted ZK package
 by selecting the row in **ZK Package** then click **Remove**.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-preference-package.png)
+![](images/studio-preference-package.png)

@@ -3,7 +3,7 @@ currently selected ZUL Editor. It can be opened by clicking
 **\[Window\]/\[Show View\]/\[Outline\]**. Through this view, you can
 quickly get a big picture of the components you have used in a ZUL.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-outline-view.png)
+![](images/studio-outline-view.png)
 
 Each component in this view is prefixed with an icon to distinguish
 different tag elements. Any modification made to the zul file will be

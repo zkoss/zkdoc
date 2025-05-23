@@ -69,14 +69,14 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 \> \[Eclipse Markpetplace\]** and search **"zk studio"** you'll find
 **ZK Studio** to install.
 
-![]({{site.baseUrl}}/zk_studio_essentials/Eclipse36_marketplace.png)
+![](images/Eclipse36_marketplace.png)
 
 ## Update Site
 
 1.  Open Eclipse, click the **\[Help\]** menu and select **\[Install New
     Software...\]**. A install window will popup, and then click **Add**
       
-    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_1.png)
+    ![](images/zkstudio_installation_35_1.png)
 
       
 2.  Name the site as **"ZK Studio"** and copy corresponding update
@@ -88,41 +88,41 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
     The URL of ZK Studio for Eclipse 3.7:
     <http://studio.zkoss.org/resource/plugins/eclipse_3_7>
 
-    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_2.png)
+    ![](images/zkstudio_installation_35_2.png)
 
       
 3.  Expand the update entry of ZK Studio, check **ZK Studio** and then
     click **Next**
       
-    ![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_3.png)
+    ![](images/zkstudio_installation_35_3.png)
 
     The Eclipse Installation System will now attempt to retrieve
     information from the update site. This will take some time depending
     on your eclipse environment, please be patient.
 4.  Click **Next** on the pop-up install wizard dialog.
       
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_4.png)
+![](images/zkstudio_installation_35_4.png)
 
 Check **"I accept the terms of the license agrement"** and click **Finish** on the wizard dialog.
 
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_4_licenses.png)
+![](images/zkstudio_installation_35_4_licenses.png)
 
       
 
 The Installation process will now begin.
 
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_5.png)
+![](images/zkstudio_installation_35_5.png)
 
 
 If there is a pop-up dialog with unsigned content warning, please click **OK** to continue.
 
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_5_warning.png)
+![](images/zkstudio_installation_35_5_warning.png)
 
       
 5.  Once the installation is complete, please restart Eclipse as
     prompted.
       
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_6.png)
+![](images/zkstudio_installation_35_6.png)
 
 ## Offline Installation
 
@@ -133,7 +133,7 @@ If there is a pop-up dialog with unsigned content warning, please click **OK** t
 3.  Click **Archive...** to open a file explorer. Then, use file
     explorer to choose downloaded file and click "OK" to install.
       
-![]({{site.baseUrl}}/zk_studio_essentials/zkstudio_installation_35_manual_2.png)
+![](images/zkstudio_installation_35_manual_2.png)
 
 ## Activate ZK Studio
 

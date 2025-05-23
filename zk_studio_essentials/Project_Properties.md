@@ -8,7 +8,7 @@ Otherwise, **Package Setting** page is invisible.
 
 # ZK
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-project-preference-zk.png)
+![](images/studio-project-preference-zk.png)
 
 This preference page lists the version number, library location, and the
 add-ons currently available for the current project's ZK package.
@@ -18,7 +18,7 @@ case any library jar files in this project is out of sync.
 
 ## Package Setting
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-project-preference-package.png)
+![](images/studio-project-preference-package.png)
 
 This preference page allows the user to change the project's ZK package.
 To change the project's ZK package, select a different ZK Package on the
@@ -46,7 +46,7 @@ controls whether Eclipse will overwrite all ZK library files .
 This preference page lists some of the options you can turn on/off to
 improve the performance of the ZUL Editor.
 
-![]({{site.baseUrl}}/zk_studio_essentials/studio-project-preference-editor.png)
+![](images/studio-project-preference-editor.png)
 
 - **Enable mark occurrence**
 
