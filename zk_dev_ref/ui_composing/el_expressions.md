@@ -266,7 +266,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
 
 # EL 3.0 Support
 
-{% include RemovedSince.html version=8.0.0 %} ZK supports some syntaxes of Java EE
+{% include version-badge.html version=8.0.0 %} ZK supports some syntaxes of Java EE
 7 Expression Language 3, see
 [examples](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/el_expression.html).
 

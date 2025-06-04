@@ -35,7 +35,7 @@ to exclude the dependency first like:
 </dependency>
 ```
 
-{% include RemovedSince.html version=9.5.0 %}
+{% include version-badge.html version=9.5.0 %}
 
 ZK maven dropped the transitive dependency of **slf4j-jdk14**. If a
 developer decides to enable logging, include either **Log4j**,

@@ -62,17 +62,16 @@ side in ZK. For example,
 Clients.evalJavaScript("zk.log('Hi.');");
 ```
 
-{% include RemovedSince.html version=9.6.0 %}To handle javascript errors triggered
+{% include version-badge.html version=9.6.0 %}To handle javascript errors triggered
 by evalJavascript,
 [org.zkoss.zk.ui.ScriptErrorListener.class](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.ScriptErrorListener.class)
 is provided.
 
 ## focus
 
-{% include RemovedSince.html version=9.5.0 %}
+{% include version-badge.html version=9.5.0 %}
 
-\[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus(org.zkoss.zk.ui.Component>)
-Clients.focus(Component component)\] for MVC
+[Clients.focus(Component component)](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus(org.zkoss.zk.ui.Component)) for MVC
 
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus(java.lang.String>)
 Clients.focus(String selector)\] for MVVM.
@@ -80,14 +79,12 @@ Clients.focus(String selector)\] for MVVM.
 Focus the given component or the selector-matched component.
 
 ## scrollIntoView
+[Clients.scrollIntoView(Component cmp)](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#scrollIntoView(org.zkoss.zk.ui.Component))
 
-\[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#scrollIntoView(org.zkoss.zk.ui.Component>)
-Clients.scrollIntoView(Component cmp)\]
 
-Scrolls the parent of the given component, so the given one becomes
-visible in the view.
+Scrolls the parent of the given component, so the given one becomes visible in the view.
 
-{% include RemovedSince.html version=9.5.0 %}
+{% include version-badge.html version=9.5.0 %}
 
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#scrollIntoView(java.lang.String>)
 Clients.scrollIntoView(String selector)\]
@@ -114,9 +111,9 @@ Clients.showBusy(window, "Waiting for server...");
 
 ## showNotification
 
-{% include RemovedSince.html version=6.0.1 %}
+{% include version-badge.html version=6.0.1 %}
 \[<http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification(java.lang.String>)
-Clients.showNotification()\] {% include RemovedSince.html version=9.0.0 %} It is
+Clients.showNotification()\] {% include version-badge.html version=9.0.0 %} It is
 advised to use [Notification
 class](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html)
 which was introduced in ZK 9 instead.
@@ -150,7 +147,7 @@ Here are the available positions:
 
 ### Closable
 
-{% include RemovedSince.html version=6.5.0 %} Notification now supports closable to
+{% include version-badge.html version=6.5.0 %} Notification now supports closable to
 let users close the notification box manually.
 
 ``` java
@@ -170,7 +167,7 @@ Clients.showNotification("msg1 <br/> msg2 <br/>");
 
 # Notification
 
-{% include RemovedSince.html version=9.0.0 %}
+{% include version-badge.html version=9.0.0 %}
 
 [org.zkoss.zk.ui.util.Notification](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html)
 
@@ -201,7 +198,7 @@ Notification.show(msg, component); // display a notification box pointing to a c
 
 # Toast
 
-{% include edition-availability.html edition="ee" %} {% include RemovedSince.html version=9.0.0 %}
+{% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
 
 [org.zkoss.zkmax.ui.util.Toast](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Toast.html)
 
@@ -255,7 +252,7 @@ is provided.
 
 # Loadingbar
 
-{% include edition-availability.html edition="ee" %} {% include RemovedSince.html version=9.0.0 %}
+{% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
 
 [org.zkoss.zkmax.ui.util.Loadingbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Loadingbar.html)
 
