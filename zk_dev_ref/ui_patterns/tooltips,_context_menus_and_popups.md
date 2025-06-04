@@ -1,5 +1,3 @@
-
-
 The support of tooltips, context menus and popups is generic. Any
 components inherited from
 <javadoc>org.zkoss.zul.impl.XulElement</javadoc> can handle them in the
@@ -116,7 +114,7 @@ Here is another example: context menus versus right clicks.
 ![](images/100000000000017500000052E60F488A.png)
 
 Notice that the `menupopup` is not visible until a user right-clicks on
-a component that is associated with its’ ID.
+a component that is associated with its' ID.
 
 **Tip:** If you want to disable browser's default context menu, you can
 set the `context` attribute of a component to a non-existent ID.
@@ -161,7 +159,7 @@ property instead. For example,
 </zk>
 ```
 
-# Position of Popup
+## Position of Popup
 
 The context-menu/tooltip/popups can be shown by a position from Popup or
 the location of x and y, you can specify position with the following
@@ -210,6 +208,12 @@ mouse pointer.
 
 **Note:** The parentheses '()' are required to dynamically calculate
 position on the client side.
+
+## Scrolling Behavior with `data-scrollable`
+
+For popups displayed within scrollable containers, the client-side `data-scrollable` attribute can be used to control whether the popup scrolls along with the container. This attribute is particularly relevant for error boxes, combobox popups, and datebox popups.
+
+For more details, refer to the [`data-scrollable` client attribute documentation](/zuml_ref/data_scrollable).
 
 ## Toggle Popup
 

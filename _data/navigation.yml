@@ -742,15 +742,8 @@ zk_client_side_ref:
         url: "/zk_client_side_ref/zscript"
   - title: "Widget Package Descriptor"
     url: "/zk_client_side_ref/widget_package_descriptor"
-    children:
-      - title: "function"
-        url: "/zk_client_side_ref/function"
-      - title: "package"
-        url: "/zk_client_side_ref/package"
-      - title: "script"
-        url: "/zk_client_side_ref/script"
-      - title: "widget"
-        url: "/zk_client_side_ref/widget"
+  - title: "Client-Side Attributes"
+    url: "/zk_client_side_ref/client_attributes"
 zk_component_dev_essentials:
   - title: "ZK Component Overview"
     url: "/zk_component_dev_essentials/zk_component_overview"

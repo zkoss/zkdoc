@@ -1,13 +1,12 @@
-------------------------------------------------------------------------
 
 # `data-scrollable="true"`
 
 If you specify the attribute with `true` on a
-[ContainerWidget](http://www.zkoss.org/javadoc/7.0.3/jsdoc/zul/ContainerWidget.html)
+[ContainerWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html)
 or
-[MeshWidget](http://www.zkoss.org/javadoc/7.0.3/jsdoc/zul/mesh/MeshWidget.html)
+[MeshWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.MeshWidget.html)
 including
-<window>`, `<groupbox>`, `<panelchildren>`, `<tabpanel>`, `<grid>`, `<listbox>`, `<tree>,
+<window>`, `<groupbox>`, `<panelchildren>`, `<tabpanel>`, `<grid>`, `<listbox>`, `<tree> (a scrollable container),
 the **error message box** (poped up by violating rules in `constraint`
 attribute), combobox popup, datebox popup, inside the container
 component will also move by scrolling[^1]. Those popups will disappear
@@ -79,14 +78,10 @@ scrollbar, please use the following setting[^2].
 </div>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
+# references/
+* For more information, please refer to https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html
 
-[^1]: For more information, please refer to
-    <http://www.zkoss.org/javadoc/7.0.1/jsdoc/zul/ContainerWidget.html>
-
-[^2]: For more information, please refer to [ZK Component Reference
+* For more information, please refer to [ZK Component Reference
     Tablet Devices:
     Listbox](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Listbox#Friendly_Scrolling_Support),
     [ZK Component Reference Tablet Devices:

@@ -1,6 +1,6 @@
 To prevent conflict with 'next' and 'previous' button on the virtual
-keyboard on iPad. The input element should apply data-fixScrollPosition
-attribute[^1].
+keyboard on iPad. The input element should apply `data-fixScrollPosition`
+attribute.
 
 ``` xml
 <div xmlns:ca="client/attribute">
@@ -8,9 +8,4 @@ attribute[^1].
 </div>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
-
-[^1]: For more information, please refer to
-    <http://tracker.zkoss.org/browse/ZK-1285>
+For more information, please refer to http://tracker.zkoss.org/browse/ZK-1285
