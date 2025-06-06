@@ -5,17 +5,18 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache  #required by minimal-mistakes
   - jekyll-paginate
+  - jekyll-sitemap
 minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
 logo: /assets/images/ZK-logo.svg
 
+#  Lunr search only indexes collection documents e.g. posts or any custom collections you have. It does not currently index site.pages. so we use google search from https://programmablesearchengine.google.com/controlpanel/all
 search                    : true
 search_full_content       : true
-#  Lunr search only indexes collection documents e.g. posts or any custom collections you have. It does not currently index site.pages. so we use google search.
 search_provider: google
 google:
   search_engine_id: a4a9ff8c389a44148
-
+# check page indexing at https://search.google.com/search-console
 
 #analytics:
 #  provider: "google-gtag"
