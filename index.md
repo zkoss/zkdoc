@@ -13,7 +13,7 @@ layout: default
     <div class="row my-4">
       {% include book.html image="images/core.svg" title="ZK Getting Started" link="/get_started/Learn_ZK_in_10_Minutes" %}
       {% include book.html image="images/core.svg" title="ZK Essentials" link="/zk_essentials/intro/overview" %}
-      {% include book.html image="images/core.svg" title="ZK Developer's Reference" link="/zk_dev_ref/Overture/Overture" %}
+      {% include book.html image="images/core.svg" title="ZK Developer's Reference" link="/zk_dev_ref/overture/overture" %}
       {% include book.html image="images/core.svg" title="ZK MVVM Reference" link="/zk_mvvm_ref/intro/introduction_of_mvvm" %}
     </div>
     <div class="row my-4">
