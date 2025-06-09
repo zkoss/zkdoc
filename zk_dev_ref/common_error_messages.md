@@ -1,5 +1,3 @@
-
-
 This section explains those common error messages you might encounter
 while developing with ZK, so you can figure out what's going wrong and
 eliminate them.
@@ -23,7 +21,7 @@ Make sure you use the correct, single source of ZK jar.
 
 If you use Maven, list the final resolved dependencies:
 
-` mvn dependency:list`
+`mvn dependency:list`
 
 Then check if there is any mixed-version jar.
 
@@ -174,3 +172,44 @@ checking the request headers field, which contains the request size.
 If you want to allow users to send larger requests, you will need to
 apply the relevant settings on your webserver. On tomcat, the relevant
 setting is maxPostSize
+
+
+# Server is Temporarily Out of Service / Service Unavailable
+
+Users may encounter error messages:
+
+`The server is temporarily out of service. Would you like to try again?`
+
+This error indicates that the server is currently unable to process requests. This can be due to a variety of reasons, including:
+
+- Temporary server overload or high traffic
+- Backend service downtime or maintenance
+- Network connectivity issues between client and server
+- Exceeding server resource limits (e.g., maxPostSize on Tomcat)
+- Unexpected backend crashes or restarts
+
+## What to Do
+
+1. **Retry the Operation**
+   - Wait a few moments and try again. Many outages are brief.
+
+2. **Check System Status**
+   - If available, consult your system status page or dashboard for maintenance notifications or known outages.
+
+3. **Network Troubleshooting**
+   - Ensure your internet connection is stable.
+   - Try accessing the service from a different network or device.
+
+4. **Check for Large Requests**
+- If the error occurs after submitting a large form or file, you may have exceeded server limits (see Error 467 above).
+
+5. **Ask Colleagues**
+- Confirm with others if the issue is widespread or isolated to your environment.
+
+6. **Escalate if Persistent**
+If the problem persists, contact support. Please provide:
+- The exact error message
+- Timestamp of the error
+- Steps to reproduce
+- Any relevant screenshots or logs
+

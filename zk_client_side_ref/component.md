@@ -44,7 +44,8 @@ completely-new component with it's own Java class or JavaScript widget.
 # Usage Examples
 
 ## Set Default Value for Button in Application-scope
-
+You can use this approach to initialize a component's attribute with a default value globally.
+ 
 ``` xml
     <component>
         <component-name>button</component-name>

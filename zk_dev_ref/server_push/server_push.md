@@ -27,12 +27,13 @@ sections, depending on whether your task can be executed asynchronously.
 
 # Browser Concurrent Connection Limitation
 
-The server push (exception polling) establishes an open connection.
+The Comet server push (except polling) establishes an open connection, long polling.
 Modern web browsers typically impose a limitation on the number of
-simultaneous HTTP connections that can be established with a single
+simultaneous HTTP/1.1 connections that can be established with a single
 domain. According to the HTTP specification outlined in RFC2616, this
-constraint is commonly set to a maximum of **6** concurrent connections
-per domain.
+constraint is commonly set to a maximum of **6** concurrent connections per domain.
 
 See [Browser connection
 limitations](https://docs.diffusiondata.com/cloud/latest/manual/html/designguide/solution/support/connection_limitations.html).
+
+If you use HTTP/2, there is no connection limitation as it uses a single multiplexed connection for all requests.

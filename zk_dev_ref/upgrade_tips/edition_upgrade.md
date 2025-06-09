@@ -1,7 +1,12 @@
 # Feature comparison
 
-ZK Framework is offered in 3 editions, CE, PE, and EE. CE is the basic
-version, and EE comes with the most complete features. To see what
+ZK Framework is offered in 3 editions:
+* CE
+* PE
+* EE
+
+CE is the basic
+version, while EE offers the most comprehensive features. To see what
 features are included in each edition, visit the [Feature
 Page](https://www.zkoss.org/whyzk/Features).
 
@@ -11,11 +16,15 @@ CE, PE, and EE, but separate licenses are required to use these add-ons.
 
 # Upgrade the Library
 
-To upgrade from CE to ZK PE or EE (or PE/EE Evaluation Copy), download
+To upgrade from CE to ZK PE or EE (or PE/EE Evaluation):
+
+* Binary zip: download
 the corresponding PE/EE (or Evaluation) binary files from the [Download
-Page](https://www.zkoss.org/download/zk?ee), or specify the evaluation
+Page](https://www.zkoss.org/download/zk?ee)
+
+* Maven: specify the evaluation
 repository and include required PE/EE dependencies if you use maven. [
-Maven instructions here](ZK_Installation_Guide/Maven_Setup).
+Maven instructions here](/zk_installation_guide/maven_setup).
 
 Download instructions for paying customers were given at the time of the
 purchase. If you are not sure, [contact

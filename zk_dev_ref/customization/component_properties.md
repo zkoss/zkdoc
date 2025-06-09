@@ -1,12 +1,12 @@
  With [component
 definitions](ZK_Client-side_Reference/Language_Definition/component),
 we could specify the initial values for the properties, attributes and
-annotations of a component.
+annotations of a component. If you want to set the initial value of a property (such as `showTodayLink` for `Datebox`, or any other property for any component) globally across your application, you can use the language addon mechanism described above.
 
 # Properties
 
-Depending on the requirement, you could change the initial value of a
-property for a particular ZUML document or for the whole application.
+Depending on the requirement, you can change the initial value of a
+property(attribute) for a particular ZUML document or for the whole application.
 
 Notice that the initial values are applicable only to the component
 instantiated by ZK Loaders. It has no effect if you instantiate it in
