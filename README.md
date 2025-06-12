@@ -74,32 +74,23 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 
 # Books in alphabetical order
 1. Getting Started
-1. ZATS Essentials
-1. ZK Calendar Essentials
-1. ZK Charts Essentials
-1. ZK Client-side Reference
-1. ZK Component Development Essentials
-1. ZK Component Reference
-1. ZK Configuration Reference
-1. ZK Developer's Reference
-1. ZK Essentials
-1. ZK Installation Guide
-1. ZK JSP Tags Essentials
-1. ZK MVVM Reference
-1. ZK Pivottable Essentials
-1. ZK Spring Essentials
-1. ZK Studio Essentials
-1. ZK Style Customization Guide
-1. ZUML Reference
-
-# published order
-1. ZK JSP Tags Essentials
 2. ZATS Essentials
-3. ZK PivotTable Essentials
-4. ZK Studio Essentials
-5. ZK Spring Essentials
+3. ZK Calendar Essentials
+4. ZK Charts Essentials
+5. ZK Client-side Reference
 6. ZK Component Development Essentials
-7. ZK Calendar Essentials
+7. ZK Component Reference
+8. ZK Configuration Reference
+9. ZK Developer's Reference
+10. ZK Essentials
+11. ZK Installation Guide
+12. ZK JSP Tags Essentials
+13. ZK MVVM Reference
+14. ZK Pivottable Essentials
+15. ZK Spring Essentials
+16. ZK Studio Essentials
+17. ZK Style Customization Guide
+18. ZUML Reference
 
 # Editor Guidelines
 ## Sections to remove
@@ -112,6 +103,9 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 * replace `<img src="([^"]*)"` with `<img src="images/$1`
 ## check page link
 * `\[([^\]]+)\]\((https?:\/\/[^\)]+)\)`
+## image link
+* Books having 1 level, use relative path for images.
+* Books having multiple levels, use absolute path for images.
 
 # Books Overview
 ## Getting Started

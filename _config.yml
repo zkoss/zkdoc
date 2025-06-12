@@ -5,7 +5,7 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache  #required by minimal-mistakes
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-sitemap #even the theme already configured, need to configure here to take effect on github pages
 minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
 logo: /assets/images/ZK-logo.svg
