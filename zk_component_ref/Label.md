@@ -13,7 +13,7 @@ will be automatically converted to a label.
 
 # Example
 
-![](ZKComRef_Label.PNG)
+![](images/ZKComRef_Label.PNG)
 
 ``` xml
  <window title="Label Demo" >
@@ -48,11 +48,7 @@ as new line, space and tab, are preserved.
 
 A label component represents a piece of text.
 
-<figure>
-<img src="ZKComRef_Label_Example2.png"
-title="ZKComRef_Label_Example2.png" />
-<figcaption>ZKComRef_Label_Example2.png</figcaption>
-</figure>
+![](images/ZKComRef_Label_Example2.png)
 
 ``` xml
 <window border="normal"> 

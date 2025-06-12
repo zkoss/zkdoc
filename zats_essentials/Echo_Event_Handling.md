@@ -1,9 +1,8 @@
 
 
-`Since 1.1.0`
+`Since 1.1.0`
 
-[ Echo
-event](ZK%20Developer's%20Reference/UI%20Patterns/Long%20Operations/Use%20Echo%20Events)
+[ Echo event]({{site.baseurl}}/zk_dev_ref/ui_patterns/Long_Operations/Use_Echo_Events)
 is used to implement long operations. When you send an echo event, the
 event won't be processed in the current execution. Rather, it is
 processed in the next AU request sent (echoed back) from the client. In

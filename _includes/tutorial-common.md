@@ -14,7 +14,7 @@ You can get [the source code of this article](https://github.com/zkoss-demo/gett
 your IDE without starting from scratch. Please follow the README to run
 the project.
 
-If you want to start a new project, please refer to [ZK Installation Guide/Quick Start](https://www.zkoss.org/wiki/ZK%20Installation%20Guide/Quick%20Start ).
+If you want to start a new project, please refer to [ZK Installation Guide/Quick Start](/{{site.baseurl}}/zk_installation_guide/Quick_Start).
 
 # Declaring Domain Class
 
@@ -68,12 +68,12 @@ components, so developers can rapidly build their desired user interface
 by combining and mix-matching these components without having to create
 a page from scratch.
 
-In ZK, you can use [ZK User Interface Markup Language(ZUML)](https://www.zkoss.org/wiki/ZUML_Reference ), an XML-formatted language, to
+In ZK, you can use [ZK User Interface Markup Language(ZUML)](/{{site.baseurl}/zuml_ref ), an XML-formatted language, to
 describe UI. By ZK's convention, the files to describe the user
 interface with ZUML uses **.zul** as the name suffix. In zul files, one
 component is represented as an XML element (tag) and you can configure
 each component's style, behavior, and function by setting XML element's
-attributes. (check [ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference ) for details)
+attributes. (check [ZK Component Reference](/{{site.baseurl}/zk_component_ref) for details)
 
 In this example application, first of all, we want to use a `Window`
 with the specified title and normal border as our application's frame.
@@ -125,7 +125,7 @@ Keyword:
 - Line 1~2: Specifying the `id` attribute for some components allows you
   to control them by referencing their *id*.
 - Line 3: You can use built-in Font Awesome icon at `iconSclass`. Please
-  refer to [LabelImageElement#IconSclass](https://www.zkoss.org/wiki/ZK_Component_Reference/Base_Components/LabelImageElement#IconSclass )
+  refer to [LabelImageElement#IconSclass](/{{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#IconSclass )
   for details.
 
 ## Car List Area

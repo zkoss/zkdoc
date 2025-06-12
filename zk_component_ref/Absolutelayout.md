@@ -8,6 +8,8 @@
   <javadoc directory="jsdoc">zul.layout.Absolutelayout</javadoc>
 - Style Guide: N/A
 
+{%include version-badge.html version="6.0.0" %}
+
 # Employment/Purpose
 
 An Absolutelayout component can contain absolute positioned multiple
@@ -15,7 +17,7 @@ absolutechildren components.
 
 # Example
 
-![](images/ZKComRef_Absolutelayout_Example.png)
+![](/zk_component_ref/images/ZKComRef_Absolutelayout_Example.png)
 
 ``` xml
 <?component name="window" extends="window" border="normal" width="300px" height="300px"?>
@@ -61,25 +63,9 @@ absolutechildren components.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-`*`[`Absolutechildren`](ZK_Component_Reference/Layouts/Absolutelayout/Absolutechildren)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date            | Content                              |
-|---------|-----------------|--------------------------------------|
-| 6.0.0   | October 4, 2011 | Add the new Absolutelayout component |
-
+`*`[`Absolutechildren`]({{site.baseurl}}/zk_component_ref/Layouts/Absolutelayout/Absolutechildren)
 

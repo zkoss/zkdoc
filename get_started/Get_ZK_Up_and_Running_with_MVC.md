@@ -20,7 +20,7 @@ You can download the complete source code under the [ Start from Example Project
 The next step after building the UI is to make it respond to user
 interaction. The pattern we introduce here is to **control ZK components
 directly by their API**. We call this [**Model-View-Controller**
-(**MVC**) design pattern](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC). This
+(**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/MVC). This
 pattern divides an application into 3 parts.
 
 The **Model** consists of application data and business rules.
@@ -37,7 +37,7 @@ from Model to change View's presentation.
 
 ## The Flow to Handle a User Action
 
-![]({{site.baseurl}}/get_started/images/Tutorial-mvc.png)
+![](images/Tutorial-mvc.png)
 
 1.  When a user interacts with a component (e.g. click a button) on a
     ZUL, the user action triggers an event.
@@ -146,7 +146,7 @@ Steps to retrieve components:
 2.  Name the variable as component's ID.
       
     Matching ID is the default rule to match a component for `@Wire`,
-    and please refer to [Wire Components in Developer's Reference](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Controller/Wire%20Components)
+    and please refer to [Wire Components in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/Controller/Wire_Components)
     to know other ways.
 3.  Annotate the variable with `@Wire`.
 
@@ -197,12 +197,11 @@ public class SearchController extends SelectorComposer<Component> {
 - Line 8: Notice that `setModel()` only accepts a `ListModel` object, so
   we can use `org.zkoss.zul.ListModelList` to wrap search result list.
   There are other `ListModel` objects for different collection types,
-  please refer to [ List Model in Developer's Reference](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/Model/List%20Model).
+  please refer to [ List Model in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/Model/List_Model).
   To change data item displayed in a `Listbox`, call
   `carListbox.setModel()`. The model of a component is the data the
   component holds and we can change the model to change the data
-  rendering on the screen, please refer to [Model-Driven
-  Rendering](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Model#Model-Driven_Rendering)
+  rendering on the screen, please refer to [Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/Model#Model-Driven_Rendering)
 
 ## Displaying a Data Collection
 
@@ -211,7 +210,7 @@ corresponding event listener, but we would still find that content of
 *listbox* doesn't show the search result correctly. That is because we
 haven't specified how to render data model on the *listbox*. Now, we
 will use a special tag,
-[<template>](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/View/Template), to
+[<template>]({{site.baseurl}}/zk_dev_ref/mvc/View/Template), to
 control the rendering of each car. ZK will render each object in the
 data model according to components inside <template/>.
 
@@ -223,8 +222,7 @@ Steps to use <template>:
 3.  Use implicit variable, `each`, to assign domain object's properties
     to component's attributes.
 
-Please refer to [ZK Developer's Reference/MVC/View/Template/Listbox
-Template](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/View/Template/Listbox%20Template)
+Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/View/Template/Listbox_Template)
 for more details.
 
 **Extracted from
@@ -255,7 +253,7 @@ for more details.
 - Line 9: The "each" is a variable that references to a domain object in
   the model list which is `Car` in our example application. We can use
   it to access domain object's property with EL, e.g. `${each.price}`.
-- Line 11: Concatenate 2 strings with [ EL 3 syntax](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/ZUML/EL_Expressions#EL_3.0_Support):
+- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/ZUML/EL_Expressions#EL_3.0_Support):
   `(+=)`
 
 ## Implementing "View Car Details"

@@ -5,8 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.A</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.A</javadoc>
-- Style Guide: [
-  A](ZK_Style_Guide/XUL_Component_Specification/A)
+- Style Guide: [A]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/A)
 
 # Employment/Purpose
 
@@ -59,8 +58,7 @@ if (something_happens) {
 
 ### Enable Autodisable for All Anchors
 
-As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties),
+As described in [ZK Developer's Reference:Customization]({{site.baseurl}}/zk_dev_ref/customization/Component_Properties),
 you could customize ZK to enable `autodisable` for all anchors by
 specifying the following in the custom language addon:
 
@@ -115,11 +113,11 @@ navigating to it. \<syntaxhighlight lang='xml\>
 Please refer to [download
 attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
 
-## [Filedownload API](ZK_Developer%27s_Reference/UI_Patterns/File_Upload_and_Download#File_Download)
+## [Filedownload API]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download#File_Download)
 
 # Example
 
-![](images/ZKComRef_A_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
 
 ``` xml
 <a href="http://www.zkoss.org" label="Visit ZK!"/>
@@ -175,7 +173,7 @@ Desktop.getDirectory().
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 

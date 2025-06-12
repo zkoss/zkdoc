@@ -14,7 +14,7 @@ feature_row:
     btn_class: "btn--inverse"
   - image_path: /main/images/sample.jpeg
     title: "ZK Component Reference"
-    url: /ZK_Component_Reference/Base_Components/AbstractComponent
+    url: /{{site.baseurl}}/zk_component_ref/base_components/AbstractComponent
     excerpt: "provides a comprehensive guide to the properties, events, and features of ZK components"
     btn_label: "Read"
     btn_class: "btn--inverse"

@@ -10,7 +10,7 @@ these components, the closed component is consequently detached from
 desktop by default. Of course, you can write event handler to override
 this behavior, for example to hide a component instead of detaching it.
 
-![](images/Smalltalk-mimic-close.png")
+![](images/Smalltalk-mimic-close.png)
 
 The test below is quite simple, close each component and check if they
 are detached one by one.

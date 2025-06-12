@@ -11,7 +11,7 @@ cases where components are not able to type in *string* such as
 We will use a todo list application to demonstrate the usage
 of`InputAgent`. Here is the application's UI:
 
-![](images/Smalltalk-MimicLibrary-todolist.png")
+![](images/Smalltalk-MimicLibrary-todolist.png)
 
 The following test case verifies "Add" function, we enter values into 3
 fields: <b>item name</b>, <b>priority</b>, and <b>date</b>, and click

@@ -8,7 +8,7 @@ with no other content at first. It has only one function: when a user
 clicks the button, the label shows "Hello Mimic" as shown in the image
 below.
 
-![](images/Smalltalk-mimic-hello.png")
+![](images/Smalltalk-mimic-hello.png)
 
 **ZUL of our simple application**
 

@@ -4,8 +4,8 @@
 
 We usually implement file downloading through
 <javadoc>org.zkoss.zul.Filedownload</javadoc> when some events are
-triggered [^1]. Following is a simple implementation of downloading a
-file:
+triggered (For more details, please refer to
+[ZK_Component_Reference/Essential_Components/Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/Filedownload)). Following is a simple implementation of downloading a file:
 
 **download.zul**
 
@@ -33,9 +33,6 @@ The download mechanism is a process involving two steps. When you invoke
 download URL. Then, ZK client engine downloads such file according to
 the referred URL.
 
-**Notes**
-
-<references/>
 
 # Download Files in a Test Case
 
@@ -75,7 +72,5 @@ public void test() throws Exception {
   the content of resource files in binary through the input stream to
   verify the result.
 
- 
 
-[^1]: For more details, please refer to
-    [ZK_Component_Reference/Essential_Components/Filedownload](ZK_Component_Reference/Essential_Components/Filedownload)
+

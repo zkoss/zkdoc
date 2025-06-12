@@ -19,8 +19,7 @@ covered in [another tutorial]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running
 
 The approach we introduce here to control user interaction is to **let
 ZK control UI components for you**. This approach is classified to
-**Model-View-ViewModel** (**MVVM**) design pattern. For complete information, please see [MVVM in Developer's
-Reference](https://books.zkoss.org/zk-mvvm-book/10.0/index.html). This pattern
+**Model-View-ViewModel** (**MVVM**) design pattern. For complete information, please see [MVVM in Developer's Reference]({{site.baseurl}}/zk_mvvm_ref/introduction_of_mvvm). This pattern
 divides an application into three parts.
 
 The **Model** consists of application data and business rules.
@@ -49,7 +48,7 @@ Here we use the search function to explain how MVVM works in ZK. Assume
 that a user click "Search" button then *listbox* updates its content.
 The flow is as follows:
 
-![]({{site.baseurl}}/get_started/images/Tutorial-mvvm.png)
+![](images/Tutorial-mvvm.png)
 
 1.  A user clicks "Search" button and a corresponding event is sent.
 2.  ZK's binder invokes the corresponding command method in the
@@ -255,15 +254,14 @@ specified in `@NotifyChange`.
 
 The way to display a collection of data with data binding is very
 similar to the way in the MVC approach. we will use a special tag,
-[`<template>`](https://www.zkoss.org/wiki/ZK_Developer's_Reference/MVC/View/Template), to control the rendering of each item. The only
+[`<template>`]({site.baseurl}}/zk_dev_ref/mvc/View/Template), to control the rendering of each item. The only
 difference is we should use data binding expression instead of EL.
 
 Steps to use `<template>`:
 
 1.  Use **<template>** to enclose components that we want to create
     iteratively.
-2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/MVC/View/Template/Listbox
-    Template](https://www.zkoss.org/wiki/ZK_Developer's_Reference/MVC/View/Template/Listbox_Template))
+2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/View/Template/Listbox_Template))
 3.  Use implicit variable, **each**, to assign domain object's
     properties to component's attributes.
 

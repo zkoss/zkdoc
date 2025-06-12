@@ -17,7 +17,7 @@ absolutely positioned within Absolutelayout component by either setting
 
 # Example
 
-![](images/ZKComRef_Absolutelayout_Example.png)
+![](/zk_component_ref/images/ZKComRef_Absolutelayout_Example.png)
 
 ``` xml
 <?component name="window" extends="window" border="normal" width="300px" height="300px"?>
@@ -64,7 +64,7 @@ absolutely positioned within Absolutelayout component by either setting
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

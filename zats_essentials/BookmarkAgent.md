@@ -1,7 +1,6 @@
 
 
-This agent helps users to mimic changing a [
-bookmark]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_History_Management)
+This agent helps users to mimic changing a [bookmark]({{site.baseurl}}/zk_dev_ref/ui_patterns/Browser_History_Management)
 on a **`DesktopAgent`** like changing URL anchor of a browser.
 
 ``` java
