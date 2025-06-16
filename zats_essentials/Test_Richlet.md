@@ -8,8 +8,10 @@ and the test code would be no different to testing a ZUML file. ZATS
 Mimic's built-in web configuration does not support Richlet, however, we
 can specify the folder containing custom web configuration (**web.xml**
 and **zk.xml**) for the testing environment through the constructor of
-\[<http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DefaultZatsEnvironment.html#DefaultZatsEnvironment(java.lang.String>)
-DefaultZatsEnvironment\] when testing `Richlet`.
+[DefaultZatsEnvironment](http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DefaultZatsEnvironment.html#DefaultZatsEnvironment(java.lang.String>) when testing `Richlet`.
+
+For Richlet, please refer to [ZK Developer's Reference/UI Composing/Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/Richlet)
+
 
 Following is a simple `Richlet` example, we assume that the **web.xml**
 and **zk.xml** are placed in the **src/main/webapp/WEB-INF** folder:
@@ -85,12 +87,3 @@ public void test() {
   testing `Richlet`.
 - **Line 22**: Release `DefaultZatsEnvironment` manually when the
   testing is done.
-
-**Notes**
-
-<references/>
-
- 
-
-[^1]: For more details, please refer to
-    [ZK_Developer%27s_Reference/UI_Composing/Richlet](ZK_Developer%27s_Reference/UI_Composing/Richlet)

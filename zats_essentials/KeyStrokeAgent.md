@@ -7,8 +7,7 @@
 **All components that inherit `HtmlBasedComponent` supports this
 operation**. When calling `stroke()`, you have to provide special string
 for control keys. Please refer to
-\[<http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Keystroke_Handling>\|
-Keystroke Handling in Developer's Reference\].
+[Keystroke Handling in Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/Keystroke_Handling).
 
 For example, **^#left** means *Ctrl+Left*, and **@#f3** means *Alt+F3*.
 

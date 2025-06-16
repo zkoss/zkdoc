@@ -1,6 +1,6 @@
 
 
-`Since 1.1.0`
+`Since 1.1.0`
 
 ZK provides the <javadoc>org.zkoss.zul.Include</javadoc> component[^1]
 and
@@ -10,6 +10,9 @@ or JSP. In ZATS Mimic, we can test ZUL pages which are included by outer
 pages directly; simply use the `Client.connect(String)` method to
 connect to the ZUL page (like how you would normally do) you want to
 test.
+
+For more details, please refer to [ZK Developer's Reference/UI_Composing/ZUML/Include]({{site.baseurl}}/zk_dev_ref/ui_composing/ZUML/Include), [ZK Component Reference/essential_components/Include]({{site.baseurl}}/zk_component_ref/essential_components/Include), and [ZK Developer's Reference/ui_composing/ZUML/Load_ZUML_in_Java]({{site.baseurl}}/zk_dev_ref/ui_composing/ZUML/Load_ZUML_in_Java)
+
 
 # Test Included ZUL Pages with Arguments
 
@@ -49,16 +52,3 @@ public void test() {
 - **Line 12-13**: Prepare arguments for included ZUL page.
 - **Line 15**: Connect to included ZUL page with arguments.
 
-**Notes**
-
-<references/>
-
- 
-
-[^1]: For more details, please refer to
-    [ZK_Developer%27s_Reference/UI_Composing/ZUML/Include](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include)
-    and
-    [ZK_Component_Reference/Essential_Components/Include](ZK_Component_Reference/Essential_Components/Include)
-
-[^2]: For more details, please refer to
-    [ZK_Developer%27s_Reference/UI_Composing/ZUML/Load_ZUML_in_Java](ZK_Developer%27s_Reference/UI_Composing/ZUML/Load_ZUML_in_Java)

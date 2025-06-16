@@ -1,6 +1,6 @@
  
 
-`Since 1.1.0`
+`Since 1.1.0`
 
 ZATS Mimic introduces the `UploadAgent` to simulate file uploading
 operation and `UploadAgent` supports single or multiple file uploading.
@@ -21,7 +21,9 @@ To implement an uploading feature, you can simply use the
 you can choose to use a button components such as
 <javadoc>org.zkoss.zul.Button</javadoc>,
 <javadoc>org.zkoss.zul.Menuitem</javadoc>,
-<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> and so on.[^1] then set
+<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> and so on. (See [ZK Developer's Reference/UI
+Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download)
+and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/Fileupload)) Then set
 `true` to `upload` attribute of these components; users can then click
 and select a file to upload through a browser dialog, as illustrated
 below:
@@ -57,7 +59,7 @@ public void test() throws Exception {
 
 Since **ZK 6.0.0**, components now also support mutiple uploads at once
 if they have `multiple=true` flag and users using web browsers
-supporting HTML5.[^2] `UploadAgent` also supports multiple files
+supporting HTML5.(See [ZK Component Reference/Essential Components/Button#Upload]({{site.baseurl}}/zk_component_ref/essential_components/Button#Upload)) `UploadAgent` also supports multiple files
 uploading at once. Following is a typical example of uploading multiple
 files:
 
@@ -86,7 +88,8 @@ public void test() throws Exception {
 
 Another way to implement upload feature is to use the static method
 <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> as an event
-handler.[^3] This static method will open up an uploading dialog and
+handler.(See [ZK Component Reference/Essential
+Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/essential_components/Fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
 
@@ -160,18 +163,3 @@ public void test() throws Exception {
 </tr>
 </tbody>
 </table>
-
- 
-
-[^1]: For more details, please refer to [ZK Developer's Reference/UI
-    Patterns/File Upload and
-    Download]({{site.baseurl}}/zk_dev_ref/UI_Patterns/File_Upload_and_Download)
-    and [ZK Component Reference/Essential
-    Components/Fileupload](ZK_Component_Reference/Essential_Components/Fileupload)
-
-[^2]: For more detail, please refer to
-    [ZK_Component_Reference/Essential_Components/Button#Upload](ZK_Component_Reference/Essential_Components/Button#Upload)
-
-[^3]: For more detail, please refer to [ZK Component Reference/Essential
-    Components/Fileupload#Invoke the Static Method:
-    get](ZK_Component_Reference/Essential_Components/Fileupload#Invoke_the_Static_Method:_get)
