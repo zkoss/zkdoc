@@ -16,7 +16,7 @@ data. It accepts a TreeModel.
 
 # Example
 
-![](images/cascader-basic.png)
+![](/zk_component_ref/images/cascader-basic.png)
 
 ``` xml
     <zscript><![CDATA[
@@ -120,7 +120,7 @@ the client.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
 
 # Supported Children
 

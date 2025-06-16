@@ -31,7 +31,7 @@ should not have to encode it again.
 
 # Example
 
-![](images/ZKComRef_Applet_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Applet_Examples.PNG)
 
 ``` xml
     <applet codebase="img/" code="ticker.class" msg="ZK is Simple and Rich!" width="580px" />
@@ -59,7 +59,7 @@ should not have to encode it again.
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
 
 # Supported Children
 

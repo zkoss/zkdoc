@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Calendar</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Calendar</javadoc>
 - Style Guide: [
-  Calendar](ZK_Style_Guide/XUL_Component_Specification/Calendar)
+  Calendar]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Calendar)
 
 # Employment/Purpose
 
@@ -20,7 +20,7 @@ value of the `getFirstDayOfWeek` method in the `java.util.Calendar`).
 Since 5.0.3, you can control the first day of the week by the use of the
 session attribute and the library property. Please refer to [The First
 Day of the
-Week](ZK_Developer%27s_Reference/Internationalization/The_First_Day_of_the_Week)
+Week]({{site.baseurl}}/zk_dev_ref/internationalization/The_First_Day_of_the_Week)
 for details.
 
 # Customization
@@ -31,7 +31,7 @@ client by providing JavaScript code that overrides
 
 # Example
 
-![](images/ZKComRef_Calendar_Example.png)
+![](/zk_component_ref/images/ZKComRef_Calendar_Example.png)
 
 ``` xml
      <calendar id="cal" onChange="in.value = cal.value"/>
@@ -40,7 +40,7 @@ client by providing JavaScript code that overrides
 
 ## Date Range Selector
 
-![](images/dateRangeSelector.png)
+![](/zk_component_ref/images/dateRangeSelector.png)
 
 Check
 [calendar.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/input/calendar.zul#L21)
@@ -50,7 +50,7 @@ Check
 This is achieved by overriding the default renderer at the client to
 customize the appearance of days on ZK's Calendar. For example,
 
-![](images/ZKComRef_Calendar_Example2.png)
+![](/zk_component_ref/images/ZKComRef_Calendar_Example2.png)
 
 ``` xml
 <zk>
@@ -72,7 +72,7 @@ customize the appearance of days on ZK's Calendar. For example,
 Calendar supports to show a week number of the year. {% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %}
 
-![](images/ZKComRef_Calendar_Week_Of_Year.PNG)
+![](/zk_component_ref/images/ZKComRef_Calendar_Week_Of_Year.PNG)
 
 ``` xml
 <calendar weekOfYear="true" />
@@ -84,7 +84,7 @@ Calendar supports to show a week number of the year. {% include edition-availabi
 
 You can control the 2DigitYearStart by the use of the library property.
 Please refer to [
-org.zkoss.web.preferred.2DigitYearStart](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.preferred.2DigitYearStart)
+org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.web.preferred.2DigitYearStart)
 for details.
 
 # Constraint
@@ -92,7 +92,7 @@ for details.
 {% include version-badge.html version=8.5.2 %}
 
 This component also supports `constraint` like [ZK Component
-Reference/Input/Datebox#Constraint](ZK_Component_Reference/Input/Datebox#Constraint)
+Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/Input/Datebox#Constraint)
 
 # Supported Events
 
@@ -117,7 +117,7 @@ EE]</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
@@ -136,7 +136,7 @@ EE]</p></td>
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.3   | June, 2010   | Calendar Day Renderer                                                                                                                                                                                                                                         |
-| 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week](ZK_Developer%27s_Reference/Internationalization/The_First_Day_of_the_Week) for details. |
+| 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/The_First_Day_of_the_Week) for details. |
 | 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](http://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                         |
 

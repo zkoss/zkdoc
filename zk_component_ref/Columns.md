@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Columns</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Columns</javadoc>
 - Style Guide: [
-  Columns](ZK_Style_Guide/XUL_Component_Specification/Column)
+  Columns]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Column)
 
 # Employment/Purpose
 
@@ -18,7 +18,7 @@ element.
 
 # Example
 
-![](images/ZKComRef_Grid_Example.png‎)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
 
 ``` xml
     <grid>
@@ -59,7 +59,7 @@ each column.
 
 ### Auto
 
-![](images/ZKComRef_Grid_Columns_Menu.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
 
 ``` xml
     <grid>
@@ -73,7 +73,7 @@ each column.
 
 ### Customized Menupopup
 
-![](images/ZKComRef_Grid_Columns_Customized_Menu.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Customized_Menu.png)
 
 ``` xml
 <window title="Column's Menu Demo" border="normal" width="500px">
@@ -100,7 +100,7 @@ columns as its column menu.
 Specifies whether a user is allowed to resize a column's width by
 dragging the vertical bar between two adjacent columns.
 
-![](images/Sizable.png)
+![](/zk_component_ref/images/Sizable.png)
 
 ### Double-Click to Auto-Fit
 
@@ -131,15 +131,15 @@ column provides the auto-fitting feature.
 </table>
 
 - Inherited Supported Events: [
-  HeadersElement](ZK_Component_Reference/Base_Components/HeadersElement#Supported_Events)
+  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/HeadersElement#Supported_Events)
 
 # Supported Children
 
-`*`[` Column`](ZK_Component_Reference/Data/Grid/Column)
+`*`[` Column`]({{site.baseurl}}/zk_component_ref/Data/Grid/Column)
 
 # Use Cases
 
-[ Grid](ZK_Component_Reference/Data/Grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/Data/Grid#Use_Cases)
 
 # Version History
 

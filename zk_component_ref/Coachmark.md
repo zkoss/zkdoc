@@ -23,7 +23,7 @@ of operations in the desired order.
 
 ## Basic
 
-![](images/Coachmark-4.png)
+![](/zk_component_ref/images/Coachmark-4.png)
 
 ``` xml
     <button id="infoButton" label="Information" />
@@ -76,7 +76,7 @@ The target component that the Coachmark will point itself to. You need
 to specify a component's id or an EL expression that resolved to a
 component e.g. `${self.previousSibling}`
 
-![](images/Coachmark-1.png)
+![](/zk_component_ref/images/Coachmark-1.png)
 
 ``` xml
     <button id="infoButton" label="button"/>
@@ -99,7 +99,7 @@ The positions of a coachmark. Below are the available values:
 | <b>right</b>  | end_before   | end_center    | end_after   |
 
 See
-[Popup#Position](ZK_Component_Reference/Essential_Components/Popup#Position)
+[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/Popup#Position)
 
 ## Next
 
@@ -156,7 +156,7 @@ component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

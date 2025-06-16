@@ -22,13 +22,13 @@ for.
 
 # Example
 
-![](images/qrcode.png)
+![](/zk_component_ref/images/qrcode.png)
 
 ``` xml
  <barcode type="qr" value="https://www.zkoss.org/" height="100px"/>
 ```
 
-![](images/code128.png)
+![](/zk_component_ref/images/code128.png)
 
 ``` xml
  <barcode type="code128" value="https://www.zkoss.org/" height="100px"/>

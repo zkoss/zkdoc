@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Column</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Column</javadoc>
 - Style Guide:
-  [Column](ZK_Style_Guide/XUL_Component_Specification/Column)
+  [Column]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Column)
 
 # Employment/Purpose
 
@@ -18,7 +18,7 @@ column is mainly to define attributes for each cell in the grid.
 
 # Example
 
-![](images/ZKComRef_Grid_Example.png‎)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
 
 ``` xml
     <window title="Grid Demo" border="normal" width="50%">
@@ -94,7 +94,7 @@ cells under a column.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HeaderElement](ZK_Component_Reference/Base_Components/HeaderElement#Supported_Events)
+  HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/HeaderElement#Supported_Events)
 
 # Supported Children
 
@@ -102,7 +102,7 @@ cells under a column.</p></td>
 
 # Use Cases
 
-[ Grid](ZK_Component_Reference/Data/Grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/Data/Grid#Use_Cases)
 
 # Version History
 

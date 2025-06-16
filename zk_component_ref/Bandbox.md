@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Bandbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandbox</javadoc>
 - Style Guide: [
-  Bandbox](ZK_Style_Guide/XUL_Component_Specification/Bandbox)
+  Bandbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Bandbox)
 
 # Employment/Purpose
 
@@ -22,7 +22,7 @@ to represent the popup window as a search dialog.
 
 # Example
 
-![](images/ZKComRef_Bandbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
 
 ``` xml
     <bandbox>
@@ -72,7 +72,7 @@ and then close the popup.
 
 ## Autodrop
 
-![](images/ZKComRef_Bandbox_Autodrop.PNG)
+![](/zk_component_ref/images/ZKComRef_Bandbox_Autodrop.PNG)
 
 By default, the popup window won't be opened until user clicks the
 button, or presses `Alt+DOWN` on the keyboard. However, you can set the
@@ -204,12 +204,12 @@ Notes:
 
 {% include version-badge.html version=8.6.2 %} Specify the sclass name of the
 Bandbox button icon. For built-in icon, please see
-[ZK_Component_Reference/Base_Components/LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement).
+[{{site.baseurl}}/zk_component_ref/base_components/LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement).
 
 # Inherited Functions
 
 Please refer to [
-Textbox](ZK_Component_Reference/Input/Textbox) for inherited
+Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox) for inherited
 functions.
 
 # Supported Events
@@ -240,7 +240,7 @@ opening or closing the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Textbox](ZK_Component_Reference/Input/Textbox#Supported_Events)
+  Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox#Supported_Events)
 
 # Supported Molds
 
@@ -263,13 +263,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/bandbox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/bandbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](images/bandbox_mold_rounded.png
+<td><p>![](/zk_component_ref/images/bandbox_mold_rounded.png
 title="bandbox_mold_rounded.png" alt="bandbox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>
@@ -278,7 +278,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`*`[` Bandpopup `](ZK_Component_Reference/Input/Bandpopup)
+`*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/Input/Bandpopup)
 
 # Use Cases
 

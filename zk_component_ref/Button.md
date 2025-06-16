@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Button</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Button</javadoc>
 - Style Guide: [
-  Button](ZK_Style_Guide/XUL_Component_Specification/Button)
+  Button]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Button)
 
 # Employment/Purpose
 
@@ -23,7 +23,7 @@ enhanced and can be customized easily.
 
 # Example
 
-![](images/ZKComRef_Button.jpg)
+![](/zk_component_ref/images/ZKComRef_Button.jpg)
 
 ``` xml
     <button label="Left" image="/img/network.gif" width="125px"/>
@@ -44,7 +44,7 @@ identifiable by a URL.
 # File Upload
 
 A button or a [
-Toolbarbutton](ZK_Component_Reference/Essential_Components/Toolbarbutton#File_Upload)
+Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/Toolbarbutton#File_Upload)
 can be used to upload files. All you need to do is:
 
 1.  Specify the `upload` attribute with `true`
@@ -131,7 +131,7 @@ by adding the following to `/WEB-INF/zk.xml`
 # File Download and browser processed links
 
 Similar to [ file download link
-problem](ZK_Component_Reference/Essential_Components/A#File_download_link_problem),
+problem]({{site.baseurl}}/zk_component_ref/essential_components/A#File_download_link_problem),
 if you specify `href` to use a button for downloading, or if you are
 using a browser-processed link such as `mailto:`, `tel:`, or other
 similar user-processed instruction which would trigger a page unloading
@@ -192,7 +192,7 @@ if (something_happens) {
 ### Enable Autodisable for All Buttons
 
 As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties),
+Customization]({{site.baseurl}}/zk_dev_ref/customization/Component_Properties),
 you could customize ZK to enable `autodisable` for all button by
 specifying the following in the custom language addon:
 
@@ -344,7 +344,7 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
 ### Customize Upload Size Exceeding Message
 
 {% include version-badge.html version=8.0.0 %} Please refer to [ZK Developer's
-Reference/Internationalization](ZK_Developer%27s_Reference/Internationalization/Warning_and_Error_Messages#Change_particular_message).
+Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/Warning_and_Error_Messages#Change_particular_message).
 
 For Example, (in WEB-INF/zk-label.properties)
 
@@ -358,7 +358,7 @@ size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 # Inherited Functions
 
 Please refer to [
-LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement)
+LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement)
 for inherited functions.
 
 # Supported Events
@@ -403,7 +403,7 @@ uploaded a file to the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Molds
 
@@ -426,19 +426,19 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/button_mold_default.png)</td>
+<td>![](/zk_component_ref/images/button_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>trendy</p>
 </center></td>
-<td>![](images/button_mold_trendy.png)</td>
+<td>![](/zk_component_ref/images/button_mold_trendy.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](images/button_mold_os.png)</td>
+<td>![](/zk_component_ref/images/button_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

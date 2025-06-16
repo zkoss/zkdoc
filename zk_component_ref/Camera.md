@@ -30,7 +30,7 @@ use the features of the Camera component.
 Note that some browsers such as Google Chrome will only accept webcam
 and microphone access from a trusted (HTTPS) source.
 
-![](images/RequestCamera.png)
+![](/zk_component_ref/images/RequestCamera.png)
 
 The Camera component also provides a method `requestCamera()` to request
 user's media devices before starting recording or taking snapshots.
@@ -120,7 +120,7 @@ event. To handle this, you can listen to onMaxsizeExceed and get the
 upload size from event.getData().
 
 Default: please refer to
-[max-upload-size](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_max-upload-size_Element)
+[max-upload-size]({{site.baseurl}}/zk_config_ref/zk.xml/The_system-config_Element/The_max-upload-size_Element)
 
 ``` xml
   <camera maxsize="1024" onMaxsizeExceed="event.getData()" />
@@ -169,9 +169,9 @@ recorded time exceeds the maximum length.
 `onSnapshotUpload` will be notified after calling snapshot().
 
 You can easily integrate the Camera component with
-[Video](https://www.zkoss.org/wiki/ZK_Component_Reference/Multimedia_and_Miscellaneous/Video)
+[Video]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Video)
 and
-[Image](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Image).
+[Image]({{site.baseurl}}/zk_component_ref/essential_components/Image).
 
 For example:
 
@@ -226,12 +226,12 @@ Inspect DOM on a browser and you will see an html tag \<i\> before
 names will apply to tag \<i\> depending on different states of the
 camera.
 
-![](images/CameraDOM.png)
+![](/zk_component_ref/images/CameraDOM.png)
 
 For example, if you want to customize the paused icon, you can override
 css classes like the following:
 
-![](images/Pause.png)
+![](/zk_component_ref/images/Pause.png)
 
 ``` css
     .z-camera-pause {
@@ -314,7 +314,7 @@ camera is unavailable after requesting media devices from user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

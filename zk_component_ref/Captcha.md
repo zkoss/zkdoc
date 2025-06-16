@@ -20,7 +20,7 @@ a purposive text.
 
 # Example
 
-![](images/captcha.png)
+![](/zk_component_ref/images/captcha.png)
 
 ``` xml
  <vbox>
@@ -50,7 +50,7 @@ a purposive text.
 </table>
 
 - Inherited Supported Events: [
-  Image](ZK_Component_Reference/Essential_Components/Image#Supported_Events)
+  Image]({{site.baseurl}}/zk_component_ref/essential_components/Image#Supported_Events)
 
 # Supported Children
 
@@ -69,7 +69,7 @@ a purposive text.
 Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
 [ZK Installation Guide:
-Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
+Linux]({{site.baseurl}}/zk_installation_guide/Setting_up_OS/Linux).
 
 # Version History
 

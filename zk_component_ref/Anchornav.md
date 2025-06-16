@@ -15,9 +15,8 @@
 
 This component synchronizes the scrolling position on a page or within
 ZK containers (Div, Window, etc.) with [
-<a>](ZK%20Component%20Reference/Essential%20Components/A) and
-[
-<button>](ZK%20Component%20Reference/Essential%20Components/Button).
+<a>]({{site.baseurl}}/zk_component_ref/essential_components/A) and
+[<button>]({{site.baseurl}}/zk_component_ref/essential_components/Button).
 It allows you to both navigate to desired ZK components on a page and to
 highlight the current navigation link based on the current scroll
 position.
@@ -26,7 +25,7 @@ position.
 
 By default, the Anchornav will watch the scroll position of a page.
 
-![](images/anchornav.gif)
+![]({{site.baseurl}}/zk_component_ref/images/anchornav.gif)
 
 ``` xml
 <zk xmlns:ca="client/attribute">
@@ -114,7 +113,7 @@ position of the page.
 # Supported Events
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 

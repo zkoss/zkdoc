@@ -15,7 +15,7 @@ BandScrollEvent will be sent with name as "onBandScrollEvent" after the
 bandinfo component has been moved by the user.
 
 The components which are supported this event are: [ Bandinfo
-](ZK_Component_Reference/Diagrams_and_Reports/Timeline/Bandinfo).
+]({{site.baseurl}}/zk_component_ref/Diagrams_and_Reports/Timeline/Bandinfo).
 
 # Example
 

@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Comboitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Comboitem</javadoc>
 - Style Guide: [
-  Comboitem](ZK_Style_Guide/XUL_Component_Specification/Comboitem)
+  Comboitem]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Comboitem)
 
 # Employment/Purpose
 
@@ -14,7 +14,7 @@ An item of a combo box.
 
 # Example
 
-![](images/ZKComRef_Combobox_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
 
 ``` xml
  <combobox>
@@ -46,7 +46,7 @@ An item of a combo box.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 

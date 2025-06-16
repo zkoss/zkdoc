@@ -22,7 +22,7 @@ window, a file download dialog is shown at the browser if one of the
 `save` methods is called. Then, the user can specify the location in his
 local file system to save the file.
 
-![](images/10000000000002AF000001BB582C2DD7.png)
+![](/zk_component_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 ``` xml
 <button label="Download">
@@ -105,7 +105,7 @@ Triggering a file download in the main context of a ZK page can cause
 the client-engine to terminate while the page is still open.
 
 Refer to the [Developer
-Reference](ZK_Developer%27s_Reference/UI_Patterns/File_Upload_and_Download)
+Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download)
 guide for in-depth details.
 
 # Limitation of IE 6/7/8
@@ -115,7 +115,7 @@ Internet Explorer 6, 7, and 8[^1] will show up a warning message on top
 of the browser as snapshot below ("To help protect your security,
 Internet Explorer...").
 
-![](images/IePreventDownload.png)
+![](/zk_component_ref/images/IePreventDownload.png)
 
 If a user allows the download (right-click and select
 `Download File...`), IE will eventually reload the page. It means the
@@ -165,9 +165,9 @@ input components inside HTML FORM. For example,
 
 Notice we have to specify the name property such that its value will be
 sent with the given name. For more information of using HTML FORM,
-please refer to [ZK Developer's Reference/Integration/Use ZK in
+please refer to [ZK Developer's Reference/integration/Use ZK in
 JSP#HTML_Form:ZK Developer's Reference: HTML
-Form]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
+Form]({{site.baseurl}}/zk_dev_ref/integration/Use_ZK_in_JSP#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
 
 ## Side Effect: Chrome and Safari
 

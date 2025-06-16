@@ -19,7 +19,7 @@ To change the alignment of div, you can use CSS to achieve e.g.
 
 {% include RemovedSince.html version=10.0.0 %}
 
-![](images/ZKComRef_Div_Example.png)
+![](/zk_component_ref/images/ZKComRef_Div_Example.png)
 
 ``` xml
 <div align="left" width="300px">
@@ -33,7 +33,7 @@ To change the alignment of div, you can use CSS to achieve e.g.
 # Supported Events
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

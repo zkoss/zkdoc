@@ -22,7 +22,7 @@ The 3D chart is not supported on all chart types.
 
 ## Pie Chart
 
-![](images/ZKComRef_Chart.png)
+![](/zk_component_ref/images/ZKComRef_Chart.png)
 
 ``` xml
 <chart id="mychart" title="Pie Chart Demo" width="550" height="400"
@@ -45,7 +45,7 @@ The 3D chart is not supported on all chart types.
 
 ## Pie Chart 3D
 
-![](images/ZKComRef_Chart_Pie_3D.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Pie_3D.png)
 
 ``` xml
 <chart id="piechart3d" title="Pie Chart 3D" width="500" height="250"
@@ -63,7 +63,7 @@ The 3D chart is not supported on all chart types.
 
 ## Ring Chart
 
-![](images/ZKComRef_Chart_Ring.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Ring.png)
 
 ``` xml
 <chart id="ringchart" title="Ring Chart" width="500" height="250"
@@ -81,7 +81,7 @@ The 3D chart is not supported on all chart types.
 
 ## Bar Chart
 
-![](images/ZKComRef_Chart_Bar.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Bar.png)
 
 ``` xml
 <chart id="barchart" title="Bar Chart" width="500" height="250"
@@ -103,7 +103,7 @@ The 3D chart is not supported on all chart types.
 
 ## Bar Chart 3D
 
-![](images/ZKComRef_Chart_Bar_3D.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Bar_3D.png)
 
 ``` xml
 <chart id="barchart3d" title="Bar Chart 3D" width="500" height="250"
@@ -125,7 +125,7 @@ The 3D chart is not supported on all chart types.
 
 ## Stacked Bar
 
-![](images/ZKComRef_Chart_Stacked_Bar.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar.png)
 
 ``` xml
 <chart id="sbarchart" title="Stacked Bar" width="500" height="250"
@@ -147,7 +147,7 @@ The 3D chart is not supported on all chart types.
 
 ## Stacked Bar 3D
 
-![](images/ZKComRef_Chart_Stacked_Bar_3D.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar_3D.png)
 
 ``` xml
 <chart id="sbarchart3d" title="Stacked Bar 3D" width="500"
@@ -169,7 +169,7 @@ The 3D chart is not supported on all chart types.
 
 ## Line Chart
 
-![](images/ZKComRef_Chart_Line.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Line.png)
 
 ``` xml
 <chart id="linechart" title="Line Chart" width="500" height="250"
@@ -191,7 +191,7 @@ The 3D chart is not supported on all chart types.
 
 ## Line Chart 3D
 
-![](images/ZKComRef_Chart_Line_3D.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Line_3D.png)
 
 ``` xml
 <chart id="linechart3d" title="Line Chart 3D" width="500"
@@ -213,7 +213,7 @@ The 3D chart is not supported on all chart types.
 
 ## Area Chart
 
-![](images/ZKComRef_Chart_Area.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Area.png)
 
 ``` xml
 <chart id="areachart" title="Area Chart" width="500" height="250"
@@ -235,7 +235,7 @@ The 3D chart is not supported on all chart types.
 
 ## Stacked Area Chart
 
-![](images/ZKComRef_Chart_Stacked_Area.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Area.png)
 
 ``` xml
 <chart id="sareachart" title="Stacked Area Chart" width="500"
@@ -257,7 +257,7 @@ The 3D chart is not supported on all chart types.
 
 ## Waterfall Chart
 
-![](images/ZKComRef_Chart_Waterfall.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Waterfall.png)
 
 ``` xml
 <chart id="waterfall" title="Waterfall Chart" width="500"
@@ -279,7 +279,7 @@ The 3D chart is not supported on all chart types.
 
 ## Polar Chart
 
-![](images/ZKComRef_Chart_Polar.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Polar.png)
 
 ``` xml
 <chart id="polar" title="Polar Chart" width="500" height="250"
@@ -302,7 +302,7 @@ The 3D chart is not supported on all chart types.
 
 ## Scatter Chart
 
-![](images/ZKComRef_Chart_Scatter.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Scatter.png)
 
 ``` xml
 <chart id="scatter" title="Scatter Chart" width="500" height="250"
@@ -325,7 +325,7 @@ The 3D chart is not supported on all chart types.
 
 ## Time Series Chart
 
-![](images/ZKComRef_Chart_Timeseries.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Timeseries.png)
 
 ``` xml
 <chart id="timeseries" title="Time Series Chart" width="500"
@@ -348,7 +348,7 @@ The 3D chart is not supported on all chart types.
 
 ## XY Area Chart
 
-![](images/ZKComRef_Chart_XY_Area.png)
+![](/zk_component_ref/images/ZKComRef_Chart_XY_Area.png)
 
 ``` xml
 <chart id="xyarea" title="XY Area Chart" width="500" height="250"
@@ -371,7 +371,7 @@ The 3D chart is not supported on all chart types.
 
 ## XY Line Chart
 
-![](images/ZKComRef_Chart_XY_Line.png)
+![](/zk_component_ref/images/ZKComRef_Chart_XY_Line.png)
 
 ``` xml
 <chart id="xyline" title="XY Line Chart" width="500" height="250"
@@ -394,7 +394,7 @@ The 3D chart is not supported on all chart types.
 
 ## Step Area Chart
 
-![](images/ZKComRef_Chart_Step_Area.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Step_Area.png)
 
 ``` xml
 <chart id="steparea" title="Step Area Chart" width="500"
@@ -417,7 +417,7 @@ The 3D chart is not supported on all chart types.
 
 ## Step Chart
 
-![](images/ZKComRef_Chart_Step.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Step.png)
 
 ``` xml
 <chart id="step" title="Step Chart" width="500" height="250"
@@ -446,7 +446,7 @@ The 3D chart is not supported on all chart types.
 
 ## XY Stacked Area Chart
 
-![](images/ZKComRef_Chart_XY_Stacked_Area.png)
+![](/zk_component_ref/images/ZKComRef_Chart_XY_Stacked_Area.png)
 
 ``` xml
 <chart id="xystackedarea" title="XY Stacked Area Chart" width="500"
@@ -469,7 +469,7 @@ The 3D chart is not supported on all chart types.
 
 ## XY Bar Chart
 
-![](images/ZKComRef_Chart_XY_Bar.png)
+![](/zk_component_ref/images/ZKComRef_Chart_XY_Bar.png)
 
 ``` xml
 <chart id="xybar" title="XY Bar Chart" width="500" height="250"
@@ -492,7 +492,7 @@ The 3D chart is not supported on all chart types.
 
 ## Histogram Chart
 
-![](images/ZKComRef_Chart_Histogram.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Histogram.png)
 
 ``` xml
 <chart id="histogram" title="Histogram Chart" width="500"
@@ -515,7 +515,7 @@ The 3D chart is not supported on all chart types.
 
 ## Candlestick Chart
 
-![](images/ZKComRef_Chart_Candlestick.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Candlestick.png)
 
 ``` xml
 <chart id="candlestick" title="Candlestick Chart" width="500"
@@ -549,7 +549,7 @@ The 3D chart is not supported on all chart types.
 
 ## High Low Chart
 
-![](images/ZKComRef_Chart_Highlow.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Highlow.png)
 
 ``` xml
 <chart id="highlow" title="High Low Chart" width="500" height="250"
@@ -583,7 +583,7 @@ The 3D chart is not supported on all chart types.
 
 ## Bubble Chart
 
-![](images/ZKComRef_Chart_Bubble.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Bubble.png)
 
 ``` xml
 <chart id="bubble" title="Bubble Chart" width="500" height="250"
@@ -606,7 +606,7 @@ The 3D chart is not supported on all chart types.
 
 ## Horizontal Bubble Chart
 
-![](images/ZKComRef_Chart_HBubble.png)
+![](/zk_component_ref/images/ZKComRef_Chart_HBubble.png)
 
 ``` xml
 <chart id="hbubble" title="Horizontal Bubble Chart" width="500"
@@ -629,7 +629,7 @@ The 3D chart is not supported on all chart types.
 
 ## Wafer Map Chart
 
-![](images/ZKComRef_Chart_Wafer_Map.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Wafer_Map.png)
 
 ``` xml
 <chart id="wafermap" title="Wafer Map Chart" width="500"
@@ -651,7 +651,7 @@ The 3D chart is not supported on all chart types.
 
 ## Gantt Chart
 
-![](images/ZKComRef_Chart_Gantt.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Gantt.png)
 
 ``` xml
 <chart id="gantt" title="Gantt Chart" width="700" height="400"
@@ -699,7 +699,7 @@ The 3D chart is not supported on all chart types.
 
 ## Wind Chart
 
-![](images/ZKComRef_Chart_Wind.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Wind.png)
 
 ``` xml
 <chart id="wind" title="Wind Plot" width="700" height="400"
@@ -735,7 +735,7 @@ The 3D chart is not supported on all chart types.
 
 ## Dial Chart
 
-![](images/ZKComRef_Chart_Dial.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Dial.png)
 
 ``` xml
 <window onOK="doOK()" width="350px">
@@ -1040,7 +1040,7 @@ employing a foreign language within your chart. The example demonstrates
 setting a font and using it with a foreign language, in this case
 Chinese.
 
-![](images/ZKComRef_Chart_Font_Examples.png)
+![](/zk_component_ref/images/ZKComRef_Chart_Font_Examples.png)
 
 ``` xml
     <zscript>
@@ -1082,7 +1082,7 @@ JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
 # Supported Events
 
 - Inherited Supported Events: [
-  Imagemap](ZK_Component_Reference/Essential_Components/Imagemap#Supported_Events)
+  Imagemap]({{site.baseurl}}/zk_component_ref/essential_components/Imagemap#Supported_Events)
 
 # Supported Children
 
@@ -1102,7 +1102,7 @@ JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
 Chart depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
 [ZK Installation Guide:
-Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
+Linux]({{site.baseurl}}/zk_installation_guide/Setting_up_OS/Linux).
 
 # Version History
 

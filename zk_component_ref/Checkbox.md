@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Checkbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Checkbox</javadoc>
 - Style Guide: [
-  Checkbox](ZK_Style_Guide/XUL_Component_Specification/Checkbox)
+  Checkbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Checkbox)
 
 # Employment/Purpose
 
@@ -14,7 +14,7 @@ A checkbox.
 
 # Example
 
-![](images/ZKComRef_Checkbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Checkbox_Example.png)
 
 ``` xml
 <window title="Checkbox demo" border="normal" width="350px">
@@ -49,13 +49,13 @@ overriding class.
 
 Default:
 
-![](images/Switch-off.png) 
-![](images/Switch-on.png)
+![](/zk_component_ref/images/Switch-off.png) 
+![](/zk_component_ref/images/Switch-on.png)
 
 Customized in CSS:
 
-![](images/Switch-off-customized.png)
-![](images/Switch-on-customized.png)
+![](/zk_component_ref/images/Switch-off-customized.png)
+![](/zk_component_ref/images/Switch-on-customized.png)
 
 ``` css
 .z-checkbox-switch-off > .z-checkbox-mold {
@@ -76,12 +76,12 @@ Customized in CSS:
 
 Default:
 
-![](images/Toggle-off.png) ![](images/Toggle-on.png)
+![](/zk_component_ref/images/Toggle-off.png) ![](/zk_component_ref/images/Toggle-on.png)
 
 Customized in CSS:
 
-![](images/Toggle-off-customized.png)
-![](images/Toggle-on-customized.png)
+![](/zk_component_ref/images/Toggle-off-customized.png)
+![](/zk_component_ref/images/Toggle-on-customized.png)
 
     .z-checkbox-toggle-off > .z-checkbox-mold {
         background-color: red;
@@ -98,7 +98,7 @@ tristate mold, when users click on the checkbox, it will switch between
 checked, unchecked and indeterminate states. This is different from the
 default mold which has only checked and unchecked states.
 
-![](images/Tristate.png)
+![](/zk_component_ref/images/Tristate.png)
 
 ``` xml
 <checkbox mold="tristate"></checkbox>
@@ -124,7 +124,7 @@ changing `checked` attribute will set `indeterminate` to `false`.
     <checkbox indeterminate="true"/>
 ```
 
-Display a checkbox like: ![](images/Indeterminate.png)
+Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 
 # Supported Events
 
@@ -168,7 +168,7 @@ component is checked or unchecked.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 

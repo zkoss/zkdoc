@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Center</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.layout.Center</javadoc>
 - Style Guide:
-  [Center](ZK_Style_Guide/XUL_Component_Specification/Borderlayout/Default_(Center))
+  [Center]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Borderlayout/Default_(Center))
 
 # Employment/Purpose
 
@@ -16,7 +16,7 @@ child.
 
 # Example
 
-![](images/ZKCompRef_Borderlayout.jpg)
+![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ``` xml
 <borderlayout height="450px">
@@ -92,7 +92,7 @@ version-badge.html version=6.5.0 %}
 # How to Layout
 
 For more details, please refer to
-[Borderlayout](ZK_Component_Reference/Layouts/Borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#How_to_Layout).
 
 # Supported Events
 
@@ -116,7 +116,7 @@ For more details, please refer to
 </table>
 
 - Inherited Supported Events: [
-  LayoutRegion](ZK_Component_Reference/Base_Components/LayoutRegion#Supported_Events)
+  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/LayoutRegion#Supported_Events)
 
 # Supported Children
 
@@ -124,7 +124,7 @@ For more details, please refer to
 
 # Use Cases
 
-[Borderlayout](ZK_Component_Reference/Layouts/Borderlayout#Use_Cases)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#Use_Cases)
 
 # Version History
 

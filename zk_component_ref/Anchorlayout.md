@@ -8,6 +8,8 @@
   <javadoc directory="jsdoc">zul.layout.Anchorlayout</javadoc>
 - Style Guide: N/A
 
+{% include version-badge.html version="6.0.0" %}
+
 # Employment/Purpose
 
 An anchorlayout lays out a container which can resize it's children base
@@ -15,7 +17,7 @@ on its width and height
 
 # Example
 
-![](images/ZKComRef_Anchorlayout_Example.png)
+![]({{site.baseurl}}/zk_component_ref/images/ZKComRef_Anchorlayout_Example.png)
 
 ``` xml
 <window title="anchorlayout Demo" border="normal" 
@@ -89,24 +91,8 @@ on its width and height
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-`*`[`Anchorchildren`](ZK_Component_Reference/Layouts/Anchorlayout/Anchorchildren)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date            | Content                            |
-|---------|-----------------|------------------------------------|
-| 6.0.0   | October 4, 2011 | Add the new Anchorlayout component |
-
-
+* [Anchorchildren]({{site.baseurl}}/zk_component_ref/Layouts/Anchorlayout/Anchorchildren)

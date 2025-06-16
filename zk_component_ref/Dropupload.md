@@ -17,7 +17,7 @@ users can simply drag and drop the file(s) they want to upload into
 `Dropupload` and the uploading process will start automatically. The
 behaviour and operation of this `Dropupload` component is similar to
 ZK's [**file upload
-button**]({{site.baseurl}}/zk_component_ref/Essential_Components/Button#File_Upload)
+button**]({{site.baseurl}}/zk_component_ref/essential_components/Button#File_Upload)
 but with better user experience and performance.
 
 # Example
@@ -46,12 +46,12 @@ Another example, it will detect the drag action:
 </zk>
 ```
 
-**Drop area** ![](images/initial-run.png)
+**Drop area** ![](/zk_component_ref/images/initial-run.png)
 
-**File dragged over area** ![](images/dragged-over.png)
+**File dragged over area** ![](/zk_component_ref/images/dragged-over.png)
 
 **Image uploaded and displayed**
-![](images/uploaded-image.png)
+![](/zk_component_ref/images/uploaded-image.png)
 
 # Maxsize
 
@@ -106,8 +106,8 @@ when dropping attachments to emails.
 
 ## Example
 
-![](images/Dropupload_Anchor.png)
-![](images/Dropupload_Anchor_1.png)
+![](/zk_component_ref/images/Dropupload_Anchor.png)
+![](/zk_component_ref/images/Dropupload_Anchor_1.png)
 
 ``` xml
 <zk>
@@ -171,18 +171,18 @@ file.
 # Customized File Viewer
 
 Similar to [**file upload
-button**]({{site.baseurl}}/zk_component_ref/Essential_Components/Button#File_Upload),
+button**]({{site.baseurl}}/zk_component_ref/essential_components/Button#File_Upload),
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
-![](images/DefaultFileUploadVeiwer.JPG)
+![](/zk_component_ref/images/DefaultFileUploadVeiwer.JPG)
 
 Alternatively, developers can also design customized File Viewer by
 implementing a JavaScript class to handle the display screen when
 uploading files. Below is an example of a customized file viewer where
 the progress bar is shown at the bottom of the browser.
 
-![](images/CustomizedFileUploadVeiwer.JPG)
+![](/zk_component_ref/images/CustomizedFileUploadVeiwer.JPG)
 
 ``` javascript
 foo.MyFileViewer = zk.$extends(zk.Object, {
@@ -283,7 +283,7 @@ $init: function (uplder, file) {
 # Customize Upload Size Exceeding Message
 
 Please refer to
-[ZK_Component_Reference/Essential_Components/Button#Customize_Upload_Size_Exceeding_Message](ZK_Component_Reference/Essential_Components/Button#Customize_Upload_Size_Exceeding_Message)
+[{{site.baseurl}}/zk_component_ref/essential_components/Button#Customize_Upload_Size_Exceeding_Message]({{site.baseurl}}/zk_component_ref/essential_components/Button#Customize_Upload_Size_Exceeding_Message)
 
 # Event For Completed Uploads
 
@@ -349,7 +349,7 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 

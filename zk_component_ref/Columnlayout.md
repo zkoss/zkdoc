@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.layout.Columnlayout</javadoc>
 - Style Guide:
-  [Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
+  [Columnlayout]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Columnlayout)
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -17,7 +17,7 @@ A columnlayout is a layout which can have multiple columns while each
 column may have any number of panels placed vertically with different
 heights. When using Columnlayout, you have to assign width (either
 percent or pixel) on every
-[Columnchildren](ZK_Component_Reference/Layouts/Columnlayout/Columnchildren),
+[Columnchildren]({{site.baseurl}}/zk_component_ref/Layouts/Columnlayout/Columnchildren),
 otherwise the result may depend on the browser and may not be as
 expected.
 
@@ -27,7 +27,7 @@ Each column may have any number of any type of components.
 
 # Example
 
-![](images/ZKComRef_Columnlayout_Example.png)
+![](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
 
 ``` xml
     <columnlayout>
@@ -64,7 +64,7 @@ Each column may have any number of any type of components.
 
 Each column may have any number of any type of components.
 
-![](images/ZKComRef_Columnlayout_Example_ZK6.png)
+![](/zk_component_ref/images/ZKComRef_Columnlayout_Example_ZK6.png)
 
 ``` xml
 <columnlayout>
@@ -168,11 +168,11 @@ Each column may have any number of any type of components.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-[Columnchildren](ZK_Component_Reference/Layouts/Columnlayout/Columnchildren)
+[Columnchildren]({{site.baseurl}}/zk_component_ref/Layouts/Columnlayout/Columnchildren)
 
 # Use Cases
 

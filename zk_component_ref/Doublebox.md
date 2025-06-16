@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Doublebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Doublebox</javadoc>
 - Style Guide: [
-  Doublebox](ZK_Style_Guide/XUL_Component_Specification/Doublebox)
+  Doublebox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Doublebox)
 
 # Employment/Purpose
 
@@ -15,7 +15,7 @@ An edit box for holding an float point value (double).
 
 # Example
 
-![](images/ZKComRef_Doublebox_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Doublebox_Examples.PNG)
 
 ``` xml
  <doublebox value="2.3"/>
@@ -75,7 +75,7 @@ Notes:
 # Inherited Functions
 
 Please refer to [
-NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement)
 for inherited functions.
 
 # Supported Events
@@ -100,7 +100,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement#Supported_Events)
 
 # Supported Children
 

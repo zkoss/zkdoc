@@ -3,19 +3,19 @@
 This section outlines components which are designed to handle data
 display.
 
-[Grid](ZK_Component_Reference/Data/Grid) and
-[listbox](ZK_Component_Reference/Data/Listbox) are both used
+[Grid]({{site.baseurl}}/zk_component_ref/Data/Grid) and
+[listbox]({{site.baseurl}}/zk_component_ref/Data/Listbox) are both used
 to display tabular data, while
-[tree](ZK_Component_Reference/Data/Tree) to display
+[tree]({{site.baseurl}}/zk_component_ref/Data/Tree) to display
 hierarchical data. However, both listbox and tree allow the user to
 select one or multiple items it displays, while grid doesn't.
 
-[Grid](ZK_Component_Reference/Data/Grid),
-[listbox](ZK_Component_Reference/Data/Listbox) and
-[tree](ZK_Component_Reference/Data/Tree) all allow developers
+[Grid]({{site.baseurl}}/zk_component_ref/Data/Grid),
+[listbox]({{site.baseurl}}/zk_component_ref/Data/Listbox) and
+[tree]({{site.baseurl}}/zk_component_ref/Data/Tree) all allow developers
 to separate long content into multiple pages. For more information,
 please refer to the
-[Paging](ZK_Component_Reference/Supplementary/Paging)
+[Paging]({{site.baseurl}}/zk_component_ref/Supplementary/Paging)
 component.
 
 

@@ -16,7 +16,7 @@ audio. Developers might be able to control the play of an audio by the
 
 # Example
 
-![](images/ZKComRef_Audio_Example.png)
+![](/zk_component_ref/images/ZKComRef_Audio_Example.png)
 
 ``` xml
  <audio src="music.wav" controls="true"></audio>
@@ -92,11 +92,11 @@ end.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
+`* `[`Track`]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Track)
 
 # Use Cases
 

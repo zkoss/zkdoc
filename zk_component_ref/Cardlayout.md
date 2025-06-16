@@ -18,12 +18,12 @@ when `next()` or `previous()` is called, transition of components
 through animation will occur whereas the `orient` attribute decides
 whether the direction of the animation is horizontal or vertical.
 
-![](images/ZKComRef_Cardlayout_Horizontal.png)
-![](images/ZKComRef_Cardlayout_Vertical.png)
+![](/zk_component_ref/images/ZKComRef_Cardlayout_Horizontal.png)
+![](/zk_component_ref/images/ZKComRef_Cardlayout_Vertical.png)
 
 # Example
 
-![](images/cardlayout.gif)
+![](/zk_component_ref/images/cardlayout.gif)
 
 ``` xml
     <cardlayout id="card" width="300px" height="200px" style="border:3px solid orange" selectedIndex="1">
@@ -79,7 +79,7 @@ setting.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

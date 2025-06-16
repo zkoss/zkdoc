@@ -6,7 +6,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.Decimalbox</javadoc>
 - Style Guide: [
-  Decimalbox](ZK_Style_Guide/XUL_Component_Specification/Decimalbox)
+  Decimalbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Decimalbox)
 
 # Employment/Purpose
 
@@ -14,7 +14,7 @@ An edit box for holding big decimal value .
 
 # Example
 
-![](images/ZKComRef_Decimalbox_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Decimalbox_Examples.PNG)
 
 ``` xml
  <decimalbox value="155"/>
@@ -86,7 +86,7 @@ Notes:
 # Inherited Functions
 
 Please refer to [
-NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement)
 for inherited functions.
 
 # Supported Events
@@ -111,7 +111,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement#Supported_Events)
 
 # Supported Children
 

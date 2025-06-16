@@ -38,13 +38,13 @@ by enable="false".
 
 Barcodescanner requires access to the camera API from the client's
 browser. Please refer to the [Camera component, Request Permission
-First](ZK_Component_Reference/Multimedia_and_Miscellaneous/Camera#Request_Permission_First)
+First]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Camera#Request_Permission_First)
 documentation section regarding API permissions requests and secure
 access.
 
 # Example
 
-![](images/BsQR.png)
+![](/zk_component_ref/images/BsQR.png)
 
 ``` xml
  <barcodescanner type="qr,code128" continuous="true" interval="500" height="100px"
@@ -307,7 +307,7 @@ barcode scanner detect a barcode message.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

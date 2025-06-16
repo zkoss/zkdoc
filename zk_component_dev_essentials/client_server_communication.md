@@ -1,7 +1,7 @@
 The following diagram outlines how communication works between a ZK
 Widget and Component.
 
-![](images/ZKComDevEss_fire_event.png")
+![](images/ZKComDevEss_fire_event.png)
 
 <javadoc directory="jsdoc" method="fire(_global_.String, zk.Object, _global_.Map, int)">zk.Widget</javadoc>
 fires a client event (an instance of

@@ -7,13 +7,13 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
 - Style Guide: [
-  Chosenbox](ZK_Style_Guide/XUL_Component_Specification/Chosenbox)
+  Chosenbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Chosenbox)
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 A component similar to [
-Combobox](ZK_Component_Reference/Input/Combobox) but handles
+Combobox]({{site.baseurl}}/zk_component_ref/Input/Combobox) but handles
 the multi-selection and the select order.
 
 # Example
@@ -35,17 +35,17 @@ the multi-selection and the select order.
 
 When no item is selected or focused, <b>emptyMessage</b> is visible.
 
-![](images/CompREF_Chosenbox_msgEx_01.png)
+![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_01.png)
 
 When there is no data to be shown in the model and data 0 already
 selected, <b>noResultText</b> appears.
 
-![](images/CompREF_Chosenbox_msgEx_02.png)
+![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_02.png)
 
 When there is no item in the model but it is creatable,
 <b>createMessage</b> appears.
 
-![](images/CompREF_Chosenbox_msgEx_03.png)
+![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_03.png)
 
 ``` xml
     <zscript>
@@ -71,7 +71,7 @@ The rendering process is pretty fast with a few items but may cause
 performance issue when the model exceeds 40,000 items and rendering them
 all at once.
 
-![](images/CompREF_Chosenbox_01.png)
+![](/zk_component_ref/images/CompREF_Chosenbox_01.png)
 
 ``` xml
     <zscript>
@@ -238,7 +238,7 @@ selected tag.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
 
 # Supported Molds
 

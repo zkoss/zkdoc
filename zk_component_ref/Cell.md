@@ -7,19 +7,19 @@
 - Java API: <javadoc>org.zkoss.zul.Cell</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Cell</javadoc>
 - Style Guide: [
-  Cell](ZK_Style_Guide/XUL_Component_Specification/Cell)
+  Cell]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Cell)
 
 # Employment/Purpose
 
 We design this generic cell component to be embedded into [
-Row](ZK_Component_Reference/Data/Grid/Row) or [
-Hbox](ZK_Component_Reference/Layouts/Hbox) or [
-Vbox](ZK_Component_Reference/Layouts/Vbox) in order to fully
+Row]({{site.baseurl}}/zk_component_ref/Data/Grid/Row) or [
+Hbox]({{site.baseurl}}/zk_component_ref/Layouts/Hbox) or [
+Vbox]({{site.baseurl}}/zk_component_ref/Layouts/Vbox) in order to fully
 control the alignment and row/column span.
 
 # Example
 
-![](images/ZKComRef_Cell_Example.png)
+![](/zk_component_ref/images/ZKComRef_Cell_Example.png)
 
 ``` xml
 <zk>
@@ -60,7 +60,7 @@ control the alignment and row/column span.
 </zk>
 ```
 
-![](images/ZKComRef_Cell_Example_Hbox.png)
+![](/zk_component_ref/images/ZKComRef_Cell_Example_Hbox.png)
 
 ``` xml
 <zk>
@@ -114,7 +114,7 @@ For example, consider the following scenario:
 Although they look alike, the DOM structures generated for the two table
 cells are slightly different:
 
-![](images/ZK5ComRef_Cell_DOM_Comparison.png)
+![](/zk_component_ref/images/ZK5ComRef_Cell_DOM_Comparison.png)
 
 With a Cell component given, there is no inner `<div>` element
 generated, which grants you a more flexible control to the DOM
@@ -146,7 +146,7 @@ a Div to wrap them.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 

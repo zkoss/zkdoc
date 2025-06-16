@@ -4,7 +4,7 @@
 - Java API: <javadoc>org.zkoss.zul.Box</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
 - Style Guide: [
-  Box](ZK_Style_Guide/XUL_Component_Specification/Box)
+  Box]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Box)
 
 # Employment/Purpose
 
@@ -20,21 +20,21 @@ can think of a box as one row or one column from an HTML table.
 
 A box is the generic component that can be used for horizontal and
 vertical layouts. However, it is generally more convenient by the use of
-[hbox](ZK_Component_Reference/Layouts/Hbox) and
-[vbox](ZK_Component_Reference/Layouts/Vbox) directly.
+[hbox]({{site.baseurl}}/zk_component_ref/Layouts/Hbox) and
+[vbox]({{site.baseurl}}/zk_component_ref/Layouts/Vbox) directly.
 
-Notice that [hbox](ZK_Component_Reference/Layouts/Hbox) and
-[vbox](ZK_Component_Reference/Layouts/Vbox) are designed to
+Notice that [hbox]({{site.baseurl}}/zk_component_ref/Layouts/Hbox) and
+[vbox]({{site.baseurl}}/zk_component_ref/Layouts/Vbox) are designed to
 provide more sophisticated layout, such as splitter, alignment and
 packing. If you need only the layout feature, it is suggest to use [
-Hlayout](ZK_Component_Reference/Layouts/Hlayout) and [
-Vlayout](ZK_Component_Reference/Layouts/Vlayout) instead,
+Hlayout]({{site.baseurl}}/zk_component_ref/Layouts/Hlayout) and [
+Vlayout]({{site.baseurl}}/zk_component_ref/Layouts/Vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
 # Example
 
-![](images/ZKComRef_Box_Example.png)
+![](/zk_component_ref/images/ZKComRef_Box_Example.png)
 
 ``` xml
  <zk>
@@ -68,7 +68,7 @@ the lower margin. Notice: the total space between two input fields is
 Another example illustrated an interesting layout by the use of zero
 spacing.
 
-![](images/100000000000009300000077C9A14E08.png)
+![](/zk_component_ref/images/100000000000009300000077C9A14E08.png)
 
 ``` xml
 <window title="Box Layout Demo" border="normal">
@@ -131,7 +131,7 @@ orientation of a box can be horizontal or vertical depending on the
 
 ## Align and Pack
 
-![](images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
+![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
 ``` xml
 <zk xmlns:n="http://www.zkoss.org/2005/zk/native">
@@ -241,7 +241,7 @@ You will see the Box width exceed 200px. Also check the
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Molds
 
@@ -264,13 +264,13 @@ zul.jar.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](images/box_mold_horizontal.png)</td>
+<td>![](/zk_component_ref/images/box_mold_horizontal.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](images/box_mold_vertical.png)</td>
+<td>![](/zk_component_ref/images/box_mold_vertical.png)</td>
 </tr>
 </tbody>
 </table>

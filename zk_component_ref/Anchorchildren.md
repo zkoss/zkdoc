@@ -8,6 +8,8 @@
   <javadoc directory="jsdoc">zul.layout.Anchorchildren</javadoc>
 - Style Guide: N/A
 
+{% include version-badge.html version="6.0.0" %}
+
 # Employment/Purpose
 
 The children of Anchorlayout that can anchor to the position that
@@ -15,7 +17,7 @@ according to the size of the Anchorlayout.
 
 # Example
 
-![](images/ZKComRef_Anchorlayout_Example.png)
+![]({{site.baseurl}}/zk_component_ref/images/ZKComRef_Anchorlayout_Example.png)
 
 ``` xml
 <window title="anchorlayout Demo" border="normal" 
@@ -68,45 +70,8 @@ according to the size of the Anchorlayout.
 ```
 
 # Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
 `*All`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date            | Content                              |
-|---------|-----------------|--------------------------------------|
-| 6.0.0   | October 4, 2011 | Add the new Anchorchildren component |
-
-

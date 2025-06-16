@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
 - Style Guide: [
-  Auxhead](ZK_Style_Guide/XUL_Component_Specification/Auxhead)
+  Auxhead]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Auxhead)
 
 # Employment/Purpose
 
@@ -21,7 +21,7 @@ with grid/listbox/tree.
 
 An auxiliary header.
 
-![](images/ZKComRef_Auxheader.png)
+![](/zk_component_ref/images/ZKComRef_Auxheader.png)
 
 ``` xml
 
@@ -72,7 +72,7 @@ An auxiliary header.
 # The Limitation of rowspan
 
 For better performance, every instance of
-[Column](ZK_Component_Reference/Data/Grid/Column) will create
+[Column]({{site.baseurl}}/zk_component_ref/Data/Grid/Column) will create
 an invisible HTML TH element called *faker*. However, with some complex
 combination of `rowspan` and `colspan`, Grid might not be able to
 generate the correct number of *faker* to represent each column.
@@ -99,18 +99,18 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-![](images/Auxheader_rowspan_limitation01.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
 add an empty
-[Columns](ZK_Component_Reference/Data/Grid/Columns). For
+[Columns]({{site.baseurl}}/zk_component_ref/Data/Grid/Columns). For
 example, the code in the previous example can be fixed as follows:
 
 ``` xml
@@ -133,7 +133,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation02.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component depend
 on the Column component. Thus, if you'd like to specify the width in the
@@ -166,7 +166,7 @@ empty Columns component invisible. For example,
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation03.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
 
 # Supported Events
 
@@ -190,7 +190,7 @@ empty Columns component invisible. For example,
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/HeaderElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/HeaderElement#Supported_Events)
 
 # Supported Children
 

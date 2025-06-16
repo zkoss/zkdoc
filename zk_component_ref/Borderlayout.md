@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Borderlayout</javadoc>
 - Style Guide:
-  [Borderlayout](ZK_Style_Guide/XUL_Component_Specification/Borderlayout/Default)
+  [Borderlayout]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Borderlayout/Default)
 
 # Employment/Purpose
 
@@ -22,7 +22,7 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-![](images/ZKCompRef_Borderlayout.jpg)
+![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ``` xml
 <borderlayout height="450px">
@@ -79,7 +79,7 @@ that East and West also takes on the height of Center.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrBorderlayout.png)</td>
+<td>![](/zk_component_ref/images/DrBorderlayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -114,7 +114,7 @@ child component.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrBorderlayout_flex.png)</td>
+<td>![](/zk_component_ref/images/DrBorderlayout_flex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -149,7 +149,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrBorderlayout_Center_scrolling.png)</td>
+<td>![](/zk_component_ref/images/DrBorderlayout_Center_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> height=</span><span class="st">&quot;300px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -193,14 +193,14 @@ include version-badge.html version=7.0.2 %}
 
 - To make Borderlayout dependable on the size of its child components,
   [vflex
-  feature]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
+  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/Hflex_and_Vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrBorderlayout_grow.png)</td>
+<td>![](/zk_component_ref/images/DrBorderlayout_grow.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
@@ -324,11 +324,11 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
 
 # Supported Children
 
-`*`[` North`](ZK_Component_Reference/Layouts/Borderlayout/North)`, `[` South`](ZK_Component_Reference/Layouts/Borderlayout/South)`, `[` Center`](ZK_Component_Reference/Layouts/Borderlayout/Center)`, `[` West`](ZK_Component_Reference/Layouts/Borderlayout/West)`, `[` East`](ZK_Component_Reference/Layouts/Borderlayout/East)
+`*`[` North`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/North)`, `[` South`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/South)`, `[` Center`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/Center)`, `[` West`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/West)`, `[` East`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/East)
 
 # Use Cases
 

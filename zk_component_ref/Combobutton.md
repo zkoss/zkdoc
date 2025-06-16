@@ -7,7 +7,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Combobutton</javadoc>
 - Style Guide: [
-  Combobutton](ZK_Style_Guide/XUL_Component_Specification/Combobutton)
+  Combobutton]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Combobutton)
 
 # Employment/Purpose
 
@@ -29,7 +29,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 - Combobutton with Popup
 
-![](images/ZKComRef_Combobutton_with_Popup.jpg)
+![](/zk_component_ref/images/ZKComRef_Combobutton_with_Popup.jpg)
 
 ``` xml
     <combobutton label="popup" image="/img/network.gif">
@@ -60,7 +60,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 - Combobutton with Menupopup
 
-![](images/ZKComRef_Combobutton_with_Menupopup.jpg)
+![](/zk_component_ref/images/ZKComRef_Combobutton_with_Menupopup.jpg)
 
 ``` xml
     <combobutton label="menu popup" image="/img/network.gif">
@@ -77,7 +77,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 - Combobutton as Toolbarbutton
 
-![](images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎)
+![](/zk_component_ref/images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎)
 
 ``` xml
 <zk>
@@ -120,7 +120,7 @@ button is disabled when it is clicked.
 ```
 
 Moreover, it support other [ properties inherited from
-Button](ZK_Component_Reference/Essential_Components/Button#Properties)
+Button]({{site.baseurl}}/zk_component_ref/essential_components/Button#Properties)
 in stead of upload.
 
 # Supported Events
@@ -160,7 +160,7 @@ directly.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Button](ZK_Component_Reference/Essential_Components/Button#Supported_Events)
+  Button]({{site.baseurl}}/zk_component_ref/essential_components/Button#Supported_Events)
 
 # Supported Molds
 
@@ -173,8 +173,8 @@ The **tbbtn** mold is renamed to **toolbar** mold
 
 # Supported Children
 
-[ Popup](ZK_Component_Reference/Essential_Components/Popup) [
-Menupopup](ZK_Component_Reference/Essential_Components/Menu/Menupopup)
+[ Popup]({{site.baseurl}}/zk_component_ref/essential_components/Popup) [
+Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/Menu/Menupopup)
 
 # Use Cases
 

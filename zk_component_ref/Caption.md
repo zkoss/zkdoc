@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Caption</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Caption</javadoc>
 - Style Guide: [
-  Caption](ZK_Style_Guide/XUL_Component_Specification/Caption)
+  Caption]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Caption)
 
 # Employement/Purpose
 
@@ -48,7 +48,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 
 # Example
 
-![](images/ZKComRef_Caption_Example.png)
+![](/zk_component_ref/images/ZKComRef_Caption_Example.png)
 
 ``` xml
  <zk>
@@ -88,7 +88,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
 
 # Supported Children
 
@@ -98,7 +98,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 
 | Version | Description                                                                                             | Example Location                                                                           |
 |---------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 5.0     | How to use the title and caption inside a [Window](ZK_Component_Reference/Containers/Window) | [Title and Caption](ZK_Component_Reference/Containers/Window#Title_and_Caption) |
+| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/Containers/Window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/Containers/Window#Title_and_Caption) |
 
 # Version History
 

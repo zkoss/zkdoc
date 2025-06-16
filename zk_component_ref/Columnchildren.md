@@ -8,7 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
 - Style Guide: [
-  Columnlayout](ZK_Style_Guide/XUL_Component_Specification/Columnlayout)
+  Columnlayout]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Columnlayout)
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -21,7 +21,7 @@ Columnchildren can only allow Panel as its child.
 
 # Example
 
-![](images/ZKComRef_Columnlayout_Example.png)
+![](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
 
 ``` xml
 <columnlayout>
@@ -121,11 +121,11 @@ Columnchildren can only allow Panel as its child.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-`*`[` Panel`](ZK_Component_Reference/Containers/Panel)
+`*`[` Panel`]({{site.baseurl}}/zk_component_ref/Containers/Panel)
 
 {% include version-badge.html version=6.0.0 %}
 

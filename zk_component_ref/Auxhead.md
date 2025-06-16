@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Auxhead</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Auxhead</javadoc>
 - Style Guide: [
-  Auxhead](ZK_Style_Guide/XUL_Component_Specification/Auxhead)
+  Auxhead]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Auxhead)
 
 # Employment/Purpose
 
@@ -15,7 +15,7 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 
 # Example
 
-![](images/ZKComRef_Auxheader.png)
+![](/zk_component_ref/images/ZKComRef_Auxheader.png)
 
 ``` xml
 <grid>
@@ -84,11 +84,11 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
 
 # Supported Children
 
-`*`[` Auxheader`](ZK_Component_Reference/Supplementary/Auxheader)
+`*`[` Auxheader`]({{site.baseurl}}/zk_component_ref/Supplementary/Auxheader)
 
 # Use Cases
 

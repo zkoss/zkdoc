@@ -38,7 +38,7 @@ Microsoft Word and OpenOffice.
 
 # Example
 
-![](images/ZKCompRef_CKEditor.png)
+![](/zk_component_ref/images/ZKCompRef_CKEditor.png)
 
 ``` xml
 <ckeditor width="850px">
@@ -63,7 +63,7 @@ Microsoft Word and OpenOffice.
 </ckeditor>
 ```
 
-![](images/ZKCompRef_CKEditor2.png)
+![](/zk_component_ref/images/ZKCompRef_CKEditor2.png)
 
 ## Enable save button
 
@@ -90,8 +90,8 @@ CKEditor will open a new window and list all images in the file browser.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZKCompRef_CKEditor_filebrowser2.png)</td>
-<td>![](images/ZKCompRef_CKEditor_filebrowser3.png)</td>
+<td>![](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser2.png)</td>
+<td>![](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser3.png)</td>
 </tr>
 </tbody>
 </table>
@@ -122,8 +122,8 @@ application can access its own folder.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZKCompRef_CKEditor_fileupload.png)</td>
-<td>![](images/ZKCompRef_CKEditor_fileupload2.png)</td>
+<td>![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload.png)</td>
+<td>![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload2.png)</td>
 </tr>
 </tbody>
 </table>
@@ -373,7 +373,7 @@ Build** are currently not supported.
 Classic editor shows a boxed editing area with a toolbar, placed in a
 specific position on the page.
 
-![](images/ClassicEditor.jpg)
+![](/zk_component_ref/images/ClassicEditor.jpg)
 
 ## Balloon Editor
 
@@ -381,7 +381,7 @@ Balloon editor lets you create your content directly in its target
 location with the help of a balloon toolbar that appears next to the
 selected editable document element.
 
-![](images/BalloonEditor.jpg)
+![](/zk_component_ref/images/BalloonEditor.jpg)
 
 ## Balloon Block Editor
 
@@ -391,7 +391,7 @@ location with the help of two toolbars:
 - A balloon toolbar that appears next to the selected editable document
   element (offering inline content formatting tools).
 - A block toolbar accessible using the toolbar handle button
-  ![](images/DragIndicator.png )
+  ![](/zk_component_ref/images/DragIndicator.png )
 
 ## Inline Editor
 
@@ -399,7 +399,7 @@ Inline editor lets you create your content directly in its target
 location with the help of a floating toolbar that apprears when the
 editable text is focused.
 
-![](images/InlineEditor.jpg)
+![](/zk_component_ref/images/InlineEditor.jpg)
 
 ## How to use?
 
@@ -454,7 +454,7 @@ public void doAfterCompose(Window comp) throws Exception {
 </ckeditor>
 ```
 
-![](images/CKEditor5Example.png )
+![](/zk_component_ref/images/CKEditor5Example.png )
 
 ## Custom Configuration
 

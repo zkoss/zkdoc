@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Combobox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Combobox</javadoc>
 - Style Guide: [
-  Combobox](ZK_Style_Guide/XUL_Component_Specification/Combobox)
+  Combobox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Combobox)
 
 # Employment/Purpose
 
@@ -23,7 +23,7 @@ text that is not part of the list of prefilled values.
 
 For the use case of searching and selecting items in a list of options,
 without allowing custom text, refer to the
-[Searchbox](ZK_Component_Reference/Input/Searchbox) component
+[Searchbox]({{site.baseurl}}/zk_component_ref/Input/Searchbox) component
 instead.
 
 # Examples
@@ -31,10 +31,10 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox](ZK_Component_Reference/Input/Searchbox), [
+[Searchbox]({{site.baseurl}}/zk_component_ref/Input/Searchbox), [
 Listbox select
-mold](ZK_Component_Reference/Data/Listbox#Select_Mold) or [
-Selectbox](ZK%20Component%20Reference/Essential%20Components/Selectbox).
+mold]({{site.baseurl}}/zk_component_ref/Data/Listbox#Select_Mold) or [
+Selectbox](ZK_component_reference/essential_components/Selectbox).
 
 ``` xml
 <style>
@@ -64,13 +64,13 @@ Assume you create a combobox like:
 ```
 
 When you type 'C', it will auto-complete with "Cool".
-![](images/ZKComRef_Combobox_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
 
 Be aware that a user still can enter a non-existing item.
 
 ## Default Selection
 
-![](images/combobox_onAfterRender.png)
+![](/zk_component_ref/images/combobox_onAfterRender.png)
 
 ``` xml
     <zscript><![CDATA[
@@ -267,7 +267,7 @@ descriptive or assign an image to every item.
 </zk>
 ```
 
-![](images/ZKComRef_Combobox_Description.PNG)
+![](/zk_component_ref/images/ZKComRef_Combobox_Description.PNG)
 
 Akin to other components that support images, you are able to use the
 `setImageContent` method to assign a dynamically generated image to the
@@ -280,7 +280,7 @@ The `onOpen` event is sent to the application when a user opens the
 drop-down list. To defer the creation of combo items, you can use the
 `fulfill` attribute as shown below.
 
-![](images/ZKComRef_Combobox_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
 
 ``` xml
 <zk>
@@ -355,7 +355,7 @@ of the combobox. Instead, you should use the `value` property of the
 ## Constraint
 
 Please see
-[ZK_Component_Reference/Base_Components/InputElement#Constraint](ZK_Component_Reference/Base_Components/InputElement#Constraint).
+[{{site.baseurl}}/zk_component_ref/base_components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/InputElement#Constraint).
 
 ## PopupWidth
 
@@ -385,7 +385,7 @@ Combobox button icon.
 # Inherited Functions
 
 Please refer to [
-Textbox](ZK_Component_Reference/Input/Textbox) for inherited
+Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox) for inherited
 functions.
 
 # Supported Events
@@ -435,7 +435,7 @@ the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Textbox](ZK_Component_Reference/Input/Textbox#Supported_Events)
+  Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox#Supported_Events)
 
 # Supported Molds
 
@@ -458,13 +458,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/combobox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/combobox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](images/combobox_mold_rounded.png
+<td><p>![](/zk_component_ref/images/combobox_mold_rounded.png
 title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>
@@ -473,7 +473,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`* `[` Comboitem`](ZK_Component_Reference/Input/Combobox/Comboitem)
+`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/Input/Combobox/Comboitem)
 
 # Use Cases
 
