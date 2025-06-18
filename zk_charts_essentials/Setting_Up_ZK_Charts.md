@@ -3,8 +3,7 @@
 ## Download the Jar and Install Manually
 
 - [Downloaded the latest ZK](http://www.zkoss.org/download/zk.dsp)
-- [Downloaded the latest ZK
-  Charts](http://www.zkoss.org/download/zkcharts)
+- [Downloaded the latest ZK Charts](http://www.zkoss.org/download/zkcharts)
 
 Depending on your IDE the steps will be different, however, the most
 important part is to include both ZK Charts and ZK’s JAR files in your
@@ -12,8 +11,7 @@ project. The project should be a ZK Project or a Web Application Project
 depending on what environment you are using. Then, place the charts jar
 under **WEB-INF/lib** folder.
 
-The easiest way to create a compatible project is to use [ZK
-Studio](http://www.zkoss.org/download/zkstudio.dsp) and then include
+The easiest way to create a compatible project is to use [ZK Studio](http://www.zkoss.org/download/zkstudio.dsp) and then include
 charts.jar as a library
 
 ## Maven Project
@@ -69,8 +67,7 @@ ZK Premium Maven Repository.
 
 - Login authentication
 
-Please refer to the [official
-documentation](http://maven.apache.org/settings.html#Servers) of Apache
+Please refer to the [official documentation](http://maven.apache.org/settings.html#Servers) of Apache
 Maven project for storing login authentication credentials in the global
 settings file.
 

@@ -58,8 +58,7 @@ Apply [ClientBindComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/cli
 
 ### Option 2: Enable it globally
 
-Specify [default-applied
-binding composer]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.defaultcomposer.class) in `zk.xml` like:
+Specify [default-applied binding composer]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.defaultcomposer.class) in `zk.xml` like:
 
 ```xml
 <library-property>
@@ -233,8 +232,7 @@ For example, the return value of a getter method should not be always a
 
 # Client MVVM Linter - a checking tool
 
-[ZK Client MVVM
-Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview-introducing-zk-client-mvvm-linter/)
+[ZK Client MVVM Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview-introducing-zk-client-mvvm-linter/)
 can scan your zul and java files to find out those unsupported MVVM usages under client MVVM enabled. See [linter starter](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/tree/master) know how to use it. 
 
 

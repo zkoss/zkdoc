@@ -11,8 +11,7 @@ apply it to almost all widgets.
 
 CSA allows the developer to control some actions without JavaScript. If
 you want to have the full control (and are OK to write some JavaScript
-code), please refer to [ZK Client-side
-Reference]({{site.baseurl}}/zk_client_side_ref/general_control) for the
+code), please refer to [ZK Client-side Reference]({{site.baseurl}}/zk_client_side_ref/general_control) for the
 complete control of the client-side behavior.
 
 # How to Apply Client-side Actions
@@ -57,8 +56,7 @@ Security Note: the options is actually a JavaScript object (i.e., a map,
 <javadoc directory="jsdoc">\_global\_.Map</javadoc>), and ZK passes
 whatever is being specified to the client for evaluation. Thus, if you
 allow the user to specify the effect, you shall encode it first to avoid
-[cross-site
-scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting).
+[cross-site scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting).
 
 > ------------------------------------------------------------------------
 >
@@ -115,14 +113,11 @@ is changed. Then, you could do as follows:
 </label>
 ```
 
-For more information, please refer to [ZK Client-side Reference: Widget
-Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
+For more information, please refer to [ZK Client-side Reference: Widget Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
 
 ## Custom Effects
 
-For adding your custom effects, please refer to [ZK Client-side
-Reference: Customization: Actions and
-Effects]({{site.baseurl}}/zk_client_side_ref/customization/actions_and_effects)
+For adding your custom effects, please refer to [ZK Client-side Reference: Customization: Actions and Effects]({{site.baseurl}}/zk_client_side_ref/customization/actions_and_effects)
 for details.
 
 # Notes for Upgrading from ZK 3

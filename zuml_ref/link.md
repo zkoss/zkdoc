@@ -30,8 +30,7 @@ page or servlets. Also, they are ignored if the page is a `zhtml` file.
 
 # Alternatives
 
-In addition, you could use [ Script
-component]({{site.baseurl}}/zk_component_ref/essential_components/script)
+In addition, you could use [ Script component]({{site.baseurl}}/zk_component_ref/essential_components/script)
 to embed JavaScript code. The Script component supports more features
 such as defer, but it has some memory footprint on the server (since it
 is a component).

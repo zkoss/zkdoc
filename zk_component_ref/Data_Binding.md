@@ -4,8 +4,7 @@ Data binding synchronizes data between View and ViewModel according to
 component definition's annotation. The annotation specifies when to save
 (or load) which attribute, how to convert, validate and render the data.
 It can be found in `metainfo\zk\lang-addon.xml` of zkbind.jar. Please
-refer to [ZK Client-side Reference/Language
-Definition]({{site.baseurl}}/zk_client_side_ref/language_definition)
+refer to [ZK Client-side Reference/Language Definition]({{site.baseurl}}/zk_client_side_ref/language_definition)
 about how to configure language definition and its addon. If you want
 data binding can works on your newly-created component, you should
 define its own annotations.

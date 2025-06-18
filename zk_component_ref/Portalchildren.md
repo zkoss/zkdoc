@@ -12,11 +12,9 @@
 
 # Employment/Purpose
 
-The column of [
-Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
+The column of [ Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
 
-Child of Portalchildren can only be [
-Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
+Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
 
 # Example
 
@@ -145,8 +143,7 @@ Meaningful only if frame design is applied.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

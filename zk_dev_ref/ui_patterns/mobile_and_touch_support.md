@@ -10,8 +10,7 @@ following actions:
 
 - Detect if the device is mobile, and of which category
 - Wire dedicated touch event listeners
-- Load and apply [Tablet UI
-  improvements]({{site.baseurl}}/zk_component_ref/tablet_devices)
+- Load and apply [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices)
 
 ## Mobile detection
 
@@ -63,8 +62,7 @@ You may want to disable touch event support, for example to force hybrid
 devices to use only mouse controls.
 
 Touch event support can be disabled with the
-[org.zkoss.zkmax.touch.disabled library
-property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.touch.disabled).
+[org.zkoss.zkmax.touch.disabled library property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.touch.disabled).
 
 Set to true to disable dedicated touch event support.
 
@@ -89,8 +87,7 @@ ZK component, which improves their usability on mobile devices. This
 includes replacing dropdowns by scrollers, replacing scrolls with
 swipes, etc.
 
-For the full list of changes, please refer to [Tablet UI
-improvements]({{site.baseurl}}/zk_component_ref/tablet_devices).
+For the full list of changes, please refer to [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices).
 
 ### disabling Tablet UI Improvements
 
@@ -99,8 +96,7 @@ to use the same control on all clients, instead of using client-specific
 controls.
 
 Tablet UI Improvements can be disabled with the
-[org.zkoss.zkmax.tablet.ui.disabled library
-property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled).
+[org.zkoss.zkmax.tablet.ui.disabled library property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled).
 
 Set to true to disable dedicated touch event support.
 

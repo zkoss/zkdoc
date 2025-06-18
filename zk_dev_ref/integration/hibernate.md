@@ -6,8 +6,7 @@ object-oriented model to relational model and vice versa. *Hibernate* is
 the most popular ORM framework in Java world. We will talk about some
 integration topics in this chapter such as lazy initialization with
 Spring. If you haven't read about basic concepts and installation of
-Hibernate, please refer to [Hibernate
-Dcumentation](http://www.hibernate.org/docs). The example we give in
+Hibernate, please refer to [Hibernate Dcumentation](http://www.hibernate.org/docs). The example we give in
 this chapter is based on Hibernate **4.0.0.final** and Spring
 **3.1.2.RELEASE**.
 
@@ -108,8 +107,7 @@ public class HibernateUtil {
 
 For *open session in view* pattern, we need an interceptor to open
 sessions. In ZK, we need to intercept all requests including AU
-requests, so we implement ZK's [ Life Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)
+requests, so we implement ZK's [ Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)
 to achieve this. (Our listener's implementation is based on the filter
 mentioned by a Hibernate article "Open Session in View". [^5].) This
 listener opens a session and begins a transaction at the beginning of an
@@ -388,9 +386,7 @@ public class SpringOrderDao {
 ```
 
 To use this Spring-based DAO in a composer (or a ViewModel), ZK provides
-several ways like variable resolvers. Please refer to [ZK Developer's
-Reference/integration/Middleware
-Layer/Spring]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring).
+several ways like variable resolvers. Please refer to [ZK Developer's Reference/integration/Middleware Layer/Spring]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring).
 
 # Lazy Initialization Issue among AU Requests
 
@@ -450,8 +446,7 @@ re-load the object with Hibernate session or we'll get
 
 <div style="text-align:center">
 
-[source of above
-screen](https://code.google.com/p/zkbooks/source/browse/trunk/developersreference/integration.hibernate/src/main/webapp/homemade/order.zul)
+[source of above screen](https://code.google.com/p/zkbooks/source/browse/trunk/developersreference/integration.hibernate/src/main/webapp/homemade/order.zul)
 
 </div>
 
@@ -517,9 +512,7 @@ public class OrderDao {
 
 # Lazy Initialization Issue Under Render on Demand
 
-Some AU requests cannot be interfered by developers,such as a "[Render
-On
-Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
+Some AU requests cannot be interfered by developers,such as a "[Render On Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
 request where the rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have
@@ -690,20 +683,14 @@ All source code used in this chapter can be found
 
 [^1]: Hibernate in Action, Christian Bauer, Gavin King, Manning
 
-[^2]: [Unit of Work in Hibernate Core Reference
-    Manual](http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html_single/#transactions-basics-uow)
+[^2]: [Unit of Work in Hibernate Core Reference Manual](http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html_single/#transactions-basics-uow)
 
-[^3]: [Open Session in
-    View\Problem](https://community.jboss.org/wiki/OpenSessionInView#The_problem)
+[^3]: [Open Session in View\Problem](https://community.jboss.org/wiki/OpenSessionInView#The_problem)
 
-[^4]: [Hibernate Reference Documentation\\
-    Tutorial](http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html_single/#tutorial-firstapp-helpers)
+[^4]: [Hibernate Reference Documentation\\ Tutorial](http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html_single/#tutorial-firstapp-helpers)
 
-[^5]: [Open Session in View\Using an
-    intercepto](https://community.jboss.org/wiki/OpenSessionInView#Using_an_interceptor)
+[^5]: [Open Session in View\Using an intercepto](https://community.jboss.org/wiki/OpenSessionInView#Using_an_interceptor)
 
-[^6]: [Hibernate Reference Documentation/contextual
-    session](http://docs.jboss.org/hibernate/orm/4.1/manual/en-US/html_single/#architecture-current-session)
+[^6]: [Hibernate Reference Documentation/contextual session](http://docs.jboss.org/hibernate/orm/4.1/manual/en-US/html_single/#architecture-current-session)
 
-[^7]: The reason is explained in a [Hibernate article "Open Session in
-    View"](https://community.jboss.org/wiki/OpenSessionInView#Why_cant_Hibernate_just_load_objects_on_demand)
+[^7]: The reason is explained in a [Hibernate article "Open Session in View"](https://community.jboss.org/wiki/OpenSessionInView#Why_cant_Hibernate_just_load_objects_on_demand)

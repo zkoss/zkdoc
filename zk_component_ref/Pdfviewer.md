@@ -2,8 +2,7 @@
 
 # Pdfviewer
 
-- Demonstration: [Embed PDF Documents in Your ZK
-  Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
+- Demonstration: [Embed PDF Documents in Your ZK Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
 - Java API: <javadoc>org.zkoss.zkex.zul.Pdfviewer</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
@@ -66,8 +65,7 @@ Or just specify it as an initial zoom level:
 # Cross-Origin Resource Sharing (CORS)
 
 If you want to load a remote PDF document, please make sure the response
-headers contain the necessary [CORS
-headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) or it
+headers contain the necessary [CORS headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) or it
 won’t be allowed to be loaded.
 
 # Enable Fullscreen
@@ -141,8 +139,7 @@ has changed the rotation angle.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

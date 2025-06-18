@@ -3,8 +3,7 @@
 ## Install Eclipse
 
 1.  Visit [Eclipse download page](http://www.eclipse.org/downloads/) and
-    download [Eclipse IDE for Java EE
-    Developers](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/ganymede/SR2/eclipse-jee-ganymede-SR2-win32.zip)
+    download [Eclipse IDE for Java EE Developers](http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/ganymede/SR2/eclipse-jee-ganymede-SR2-win32.zip)
 2.  Uncompress it to a proper directory
 3.  Then, eclipse is ready to start.
     - For example, you could double-click eclipse.exe to start Eclipse
@@ -13,8 +12,7 @@
 # Setting up Eclipse without ZK Studio
 
 Here is the description of using ZK with Eclipse *without* ZK Studio.
-However, it is recommended to use [ZK Studio for
-Eclipse](http://www.zkoss.org/product/zkstudio.dsp), which is much more
+However, it is recommended to use [ZK Studio for Eclipse](http://www.zkoss.org/product/zkstudio.dsp), which is much more
 powerful and easier to use.
 
 ## How to setup the zul.xsd schema into Eclipse
@@ -115,7 +113,6 @@ and the root element could be any valid ZUL component, such as window.
 
 # See Also
 
-- [Develop ZK Applications with
-  Eclipse](http://www.zkoss.org/smalltalks/eclipse/ek.html)
+- [Develop ZK Applications with Eclipse](http://www.zkoss.org/smalltalks/eclipse/ek.html)
 
 

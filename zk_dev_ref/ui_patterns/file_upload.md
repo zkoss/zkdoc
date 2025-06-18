@@ -28,8 +28,7 @@ For example,
 
 If you prefer to use a dialog
 (<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>), please
-take a look at [ ZK Component Reference:
-Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Event_Thread_Disabled)
+take a look at [ ZK Component Reference: Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Event_Thread_Disabled)
 for more inormation.
 
 ## File Upload with Event Thread

@@ -9,13 +9,11 @@ creating an automated test on client side, selecting the right DOM node
 is useful to check that the browser state is correct, and selecting a
 widget can be useful to read states or trigger workflows.
 
-More technical information are available in the [ZK client
-API](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/jq.html).
+More technical information are available in the [ZK client API](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/jq.html).
 
 ## jQuery selectors in pure JavaScript
 
-The [library
-selectors](https://api.jquery.com/category/selectors/%7CjQuery) can
+The [library selectors](https://api.jquery.com/category/selectors/%7CjQuery) can
 target one or multiple UI objects using the selector syntax.
 
 For example, the DOM element with the ‘id=”object1”’ attribute can be

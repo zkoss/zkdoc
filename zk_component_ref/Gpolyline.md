@@ -34,8 +34,7 @@ points and visible zoom level(0~3).
 {% include version-badge.html version=3.3.0 %}
 
 In order to preserve bandwidth the polyline/polygon path coordinates are
-encoded (default) with a [lossy
-algorithm](https://developers.google.cn/maps/documentation/utilities/polylinealgorithm)
+encoded (default) with a [lossy algorithm](https://developers.google.cn/maps/documentation/utilities/polylinealgorithm)
 (i.e. some precision is lost - visible at high zoom levels). In cases
 where the highest precision is needed (e.g. when editing a
 polyline/polygon) this encoding can be disabled by setting
@@ -63,8 +62,7 @@ of increased network request and response sizes.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

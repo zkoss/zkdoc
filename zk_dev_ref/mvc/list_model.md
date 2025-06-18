@@ -120,8 +120,7 @@ public class FooModel extends AbstractListModel {
         ...
 ```
 
-For more realistic examples, please refer to [example
-project](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/mvc/model/listModel.zul).
+For more realistic examples, please refer to [example project](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/mvc/model/listModel.zul).
 
 # Notify for Data Updates
 

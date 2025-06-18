@@ -5,8 +5,7 @@
 Although Gradle doesn't provide a counterpart like Maven archetype, you
 still can initialize your build script based on it. The steps are:
 
-1\. [Create your pom.xml with Maven
-archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_maven_archetype)
+1\. [Create your pom.xml with Maven archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_maven_archetype)
 
 2\. Run `gradle init` in the same folder as pom.xml You will see the
 message:
@@ -30,8 +29,7 @@ The example project is located on
 To use it all you need is a command line interface (and optional: git).
 
 Since gradle is a complex tool a basic understanding about gradle itself
-will help understanding the example -\> please refer to the [gradle
-documentation](https://docs.gradle.org/) pages.
+will help understanding the example -\> please refer to the [gradle documentation](https://docs.gradle.org/) pages.
 
 ## Download/Clone the example project
 
@@ -104,8 +102,7 @@ list available tasks (shows many more options ...)
 
 ### Run with Gretty
 
-The example can be run using the [gradle plugin:
-org.gretty](https://plugins.gradle.org/plugin/org.gretty)
+The example can be run using the [gradle plugin: org.gretty](https://plugins.gradle.org/plugin/org.gretty)
 
 `   ./gradlew appRun`
 
@@ -177,8 +174,6 @@ The [example project](https://github.com/zkoss-demo/zk-gradle) doesn't
 include or require any IDE specific settings and can be imported into
 your preferred IDE supporting gradle.
 
-In **Eclipse** you can use the [buildship
-plugin](https://projects.eclipse.org/projects/tools.buildship)
+In **Eclipse** you can use the [buildship plugin](https://projects.eclipse.org/projects/tools.buildship)
 
-For **IntelliJ IDEA** just follow the Help page: [Working with Gradle
-Projects](https://www.jetbrains.com/help/idea/gradle.html)
+For **IntelliJ IDEA** just follow the Help page: [Working with Gradle Projects](https://www.jetbrains.com/help/idea/gradle.html)

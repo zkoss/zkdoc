@@ -5,12 +5,9 @@ components and include discussions of XHTML and XML components.
 
 > ------------------------------------------------------------------------
 >
-> - For introductory concepts, please refer to [ZK Developer's
->   Reference: UI
->   Composing]({{site.baseurl}}/zk_dev_ref/ui_composing).
+> - For introductory concepts, please refer to [ZK Developer's > Reference: UI > Composing]({{site.baseurl}}/zk_dev_ref/ui_composing).
 > - For general operations, such as drag-and-drop, hflex/vflex, tooltips
->   and context menus, please refer to [ZK Developer's Reference: UI
->   Patterns]({{site.baseurl}}/zk_dev_ref/ui_patterns).
+>   and context menus, please refer to [ZK Developer's Reference: UI > Patterns]({{site.baseurl}}/zk_dev_ref/ui_patterns).
 
 The guide follows a distinctive pattern outlining the following items:
 

@@ -8,19 +8,15 @@ Here we use [JBoss](http://jboss.org) as the example. The configuration
 of the server might vary from one server to another, but the ZUML
 document is the same.
 
-Notice that if you would like to access EJB in Java (such as in [a
-composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
-or in [a
-richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)), you
+Notice that if you would like to access EJB in Java (such as in [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+or in [a richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)), you
 could skip this section (since you could use the approach described in
 any EJB guide).
 
 # Use JndiVariableResolver to Resolve EJB in EL Expressions
 
 Referencing an EJB in an EL expression is straightforward: specifying
-<javadoc>org.zkoss.zkplus.jndi.JndiVariableResolver</javadoc> in [the
-variable-resolver
-directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+<javadoc>org.zkoss.zkplus.jndi.JndiVariableResolver</javadoc> in [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 For example,
 
 ```xml

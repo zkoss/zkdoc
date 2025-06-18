@@ -9,8 +9,7 @@ If you don't want a property to be serialized, use Java <code>transient</code> k
 If the value of an attribute is not serializable, it will be ignored.
 Thus, it will become null after de-serialized. So, it is better to make
 them all serializable (such as implementing java.io.Serializable), or
-handle the serialization manually (refer to the [Clustering
-Listeners](##Clustering_Listeners) section below) .
+handle the serialization manually (refer to the [Clustering Listeners](##Clustering_Listeners) section below) .
 
 ## zscript
 
@@ -28,8 +27,7 @@ void foo() {
 - The value of variables must be serializable
 
 Notice that it is not recommended to use zscript in the clustering
-environment. After all, the [performance of
-BeanShell]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
+environment. After all, the [performance of BeanShell]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
 is not good.
 
 ## Event Listeners
@@ -157,11 +155,9 @@ invoke it in another request, since the session might be passivated
 between the requests.
 
 It also implies you cannot use a working thread to handle a long
-operation. Rather, you have to use the so-called [Echo
-Event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing#Echo_an_Event).
+operation. Rather, you have to use the so-called [Echo Event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing#Echo_an_Event).
 
-Users of ZK 5.0.5 or prior cannot deploy the [event
-queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+Users of ZK 5.0.5 or prior cannot deploy the [event queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 for the session and application scope. However, users of ZK 5.0.6 or
 later have no such limitation.
 

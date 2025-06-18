@@ -2,8 +2,7 @@
 
 # Inputgroup
 
-- Demonstration: [Inputgroup – organize your input
-  components](https://blog.zkoss.org/2019/08/16/zk-9-preview-inputgroup-organize-your-input-components/)
+- Demonstration: [Inputgroup – organize your input components](https://blog.zkoss.org/2019/08/16/zk-9-preview-inputgroup-organize-your-input-components/)
 - Java API: <javadoc>org.zkoss.zul.Inputgroup</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Inputgroup</javadoc>
@@ -83,8 +82,7 @@ Specify the orientation.
 </tbody>
 </table>
 
-- Inherited Supported Events from [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events from [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Captcha</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Captcha</javadoc>
 
-- [Available in ZK PE and EE
-  only](http://www.zkoss.org/product/edition.dsp)
+- [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Employment/Purpose
 
@@ -49,8 +48,7 @@ a purposive text.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Image]({{site.baseurl}}/zk_component_ref/essential_components/image#Supported_Events)
+- Inherited Supported Events: [ Image]({{site.baseurl}}/zk_component_ref/essential_components/image#Supported_Events)
 
 # Supported Children
 
@@ -68,8 +66,7 @@ a purposive text.
 
 Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
-[ZK Installation Guide:
-Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
+[ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
 
 # Version History
 

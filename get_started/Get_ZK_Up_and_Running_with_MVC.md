@@ -19,8 +19,7 @@ You can download the complete source code under the [ Start from Example Project
 
 The next step after building the UI is to make it respond to user
 interaction. The pattern we introduce here is to **control ZK components
-directly by their API**. We call this [**Model-View-Controller**
-(**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/mvc). This
+directly by their API**. We call this [**Model-View-Controller** (**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/mvc). This
 pattern divides an application into 3 parts.
 
 The **Model** consists of application data and business rules.
@@ -126,8 +125,7 @@ public class SearchController extends SelectorComposer<Component> {
 
 - Line 3: `searchButton` is the button's id specified in the zul, and
   you can find it in the previous zul. For complete selector syntax,
-  please refer to [SelectorComposer
-  javadoc](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html).
+  please refer to [SelectorComposer javadoc](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html).
 - Line 4: Event listener must be a public method.
 
 ## Controlling UI Components

@@ -1,9 +1,7 @@
 ## Prerequisites
 
-- Downloaded ZK 5 from [ZK
-  download](http://www.zkoss.org/download/zk.dsp)
-- Downloaded ZK Pivottable from [ZK Pivottable
-  download](http://www.zkoss.org/download/zkpivottable.dsp)
+- Downloaded ZK 5 from [ZK download](http://www.zkoss.org/download/zk.dsp)
+- Downloaded ZK Pivottable from [ZK Pivottable download](http://www.zkoss.org/download/zkpivottable.dsp)
 
 ## Install
 

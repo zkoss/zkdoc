@@ -37,8 +37,7 @@ As shown above, the attribute value could span multiple lines.
 
 # Alternatives
 
-Alternatively, you could use [the script
-component]({{site.baseurl}}/zk_component_ref/essential_components/script)
+Alternatively, you could use [the script component]({{site.baseurl}}/zk_component_ref/essential_components/script)
 to embed JavaScript code. The script component supports more features
 such as defer, but it has some memory footprint at the server (since it
 is a component).

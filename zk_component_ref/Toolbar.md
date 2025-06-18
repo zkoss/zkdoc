@@ -18,10 +18,8 @@ toolbar.
 The toolbar has two orientation: `horizontal`and `vertical.`It controls
 how the buttons are placed.
 
-See also : [
-Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
-[
-Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton)
+See also : [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
+[ Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton)
 
 # Example
 
@@ -71,8 +69,7 @@ Default: false.
 
 When overflowPopup="true", you can customize a toolbar `...` symbol just
 specify the `overflowPopupIconSclass` attribute. For a complete list of
-icons, please refer to [FontAwesome
-Cheatsheet](http://fontawesome.io/cheatsheet/).
+icons, please refer to [FontAwesome Cheatsheet](http://fontawesome.io/cheatsheet/).
 
 Default: `...` symbol
 
@@ -110,8 +107,7 @@ Default: `...` symbol
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

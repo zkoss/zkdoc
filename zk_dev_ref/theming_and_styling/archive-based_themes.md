@@ -3,10 +3,7 @@
 Before creating a new ZK theme, web designers need to understand its
 directory structure, let's start off by discovering where the default
 theme (a.k.a. breeze) is. Basically, the default theme is contained
-inside three java archive files: zul.jar ([ZK
-CE](http://www.zkoss.org/product/edition.dsp)), zkex.jar ([ZK
-PE](http://www.zkoss.org/product/edition.dsp)) and zkmax.jar ([ZK
-EE](http://www.zkoss.org/product/edition.dsp)). **Note:** freshly or
+inside three java archive files: zul.jar ([ZK CE](http://www.zkoss.org/product/edition.dsp)), zkex.jar ([ZK PE](http://www.zkoss.org/product/edition.dsp)) and zkmax.jar ([ZK EE](http://www.zkoss.org/product/edition.dsp)). **Note:** freshly or
 evaluation versions will have a special suffix to indicate the zk
 version and the build date. (e.g. zul-6.5.1.FL.20121204.jar).
 

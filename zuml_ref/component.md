@@ -54,8 +54,7 @@ macro.
 Defines a named
 [<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
 element on that page with a predefined templateURI and default optional
-parameters. ([Application wide
-configuration]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Application-wide_Named_.3CApply.3E))
+parameters. ([Application wide configuration]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Application-wide_Named_.3CApply.3E))
 
 # The by-class Format
 
@@ -166,8 +165,7 @@ Used to specify the class to instantiate an instance of such kind of
 components. Unlike other directives, the class can be defined with
 `zscript`.
 
-For implementing a macro component, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class).
+For implementing a macro component, please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class).
 
 ## extends
 

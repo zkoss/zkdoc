@@ -22,8 +22,7 @@ The value can be one of the following:
   [`file:///home/http/zk.xml`](file:///home/http/zk.xml) and
   [`file:///C:/test/zk.xml`](file:///C:/test/zk.xml), if you use
   Windows. Notice it must start with [`file://`](file://) (For more
-  information about the URI of a file, please refer to [File URI
-  scheme](http://en.wikipedia.org/wiki/File_URI_scheme).)
+  information about the URI of a file, please refer to [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).)
 - **A URL**, such as `http://foo.com/config/zk.xml`. Notice it must
   starts with [`http://`](http://), [`https://`](https://), and
   [`ftp://`](ftp://).
@@ -41,8 +40,7 @@ For example, assume you put the configuration in a file called
 as one of the arguments when starting the Web server.
 
 Another example is to provide an ID generator for the testing purpose.
-For more information, please refer to [ZK Developer's Reference: Testing
-Tips]({{site.baseurl}}/zk_dev_ref/testing/testing_tips#Different_Configuration_for_Different_Environment).
+For more information, please refer to [ZK Developer's Reference: Testing Tips]({{site.baseurl}}/zk_dev_ref/testing/testing_tips#Different_Configuration_for_Different_Environment).
 
 # Version History
 

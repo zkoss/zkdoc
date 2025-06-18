@@ -1,5 +1,4 @@
-For problems about installation, please see [ Installation Trouble
-Shooting]({{site.baseurl}}/zk_studio_essentials/installation#Trouble_Shooting).
+For problems about installation, please see [ Installation Trouble Shooting]({{site.baseurl}}/zk_studio_essentials/installation#Trouble_Shooting).
 
 # Activation
 

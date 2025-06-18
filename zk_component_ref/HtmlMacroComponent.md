@@ -121,8 +121,7 @@ N/A
 </tbody>
 </table>
 
-See also events inherited from [ HtmlBasedComponent's Supported
-Events]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_events).
+See also events inherited from [ HtmlBasedComponent's Supported Events]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_events).
 
 # Supported Children
 

@@ -40,6 +40,5 @@ application requirements.
 >
 > **Note**: A deferrable event won't be sent to the client immediately,
 > so the `onPiggyback` event is triggered only if a non-deferrable event
-> is fired. For more information, please refer to the [Deferrable Event
-> Listeners]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Deferrable_Event_Listeners)
+> is fired. For more information, please refer to the [Deferrable Event > Listeners]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Deferrable_Event_Listeners)
 > section.

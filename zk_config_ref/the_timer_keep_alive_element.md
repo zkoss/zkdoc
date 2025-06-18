@@ -8,9 +8,7 @@ It specifies whether to keep the session alive, when receiving the
 `onTimer` event.
 
 A session is considered as timeout (and then invalidated), if it doesn't
-receive any client requests in the specified timeout interval (see [the
-session-timeout
-element]({{site.baseUrl}}/zk_config_ref/The_session-config_Element/The_session-timeout_Element)
+receive any client requests in the specified timeout interval (see [the session-timeout element]({{site.baseUrl}}/zk_config_ref/The_session-config_Element/The_session-timeout_Element)
 for more information).
 
 By setting this option to true, the `onTimer` event, just like any other
@@ -62,8 +60,7 @@ the HTTP session alive
 
 For 5.0.6 and earlier, the above statement will cause the interpreter to
 start and thus cause some performance penalty. However, for better
-performance, you could use [a
-composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+performance, you could use [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
 as follows.
 
 ```xml

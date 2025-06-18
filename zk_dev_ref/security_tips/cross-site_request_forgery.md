@@ -24,8 +24,7 @@ way of handling user related information.
 
 # ZK and CSRF attack limitations
 
-According to OWASP mentioned [CSRF
-Limitations](https://en.wikipedia.org/wiki/Cross-site_request_forgery#Limitations),
+According to OWASP mentioned [CSRF Limitations](https://en.wikipedia.org/wiki/Cross-site_request_forgery#Limitations),
 in order to mount a successful CSRF attack several things have to
 happen:
 
@@ -73,9 +72,7 @@ Token Pattern**. Generally, this is done by inserting a unique token
 usually referred as **CSRF token** in the generated HTML and checking it
 at the server side on form submission. ZK employs a similar technique in
 the form of **desktop ID**. Each requested URL in ZK web application
-associates a Desktop instance on the server side. Please refer to [
-Desktop and
-Pages](ZK_Developer's_Guide/Fundamental_ZK/Basic_Concepts/Page_and_Desktop)
+associates a Desktop instance on the server side. Please refer to [ Desktop and Pages](ZK_Developer's_Guide/Fundamental_ZK/Basic_Concepts/Page_and_Desktop)
 for more details on the concept of a Desktop in ZK.
 
 ZK desktop is discarded and re-created each time a new page is loaded in

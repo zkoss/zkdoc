@@ -104,8 +104,7 @@ left to right are as follows:
 
 
 
-[^1]: The information is from [JSP
-    Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
+[^1]: The information is from [JSP Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
 
 [^2]: Used to change the precedence of operators.
 

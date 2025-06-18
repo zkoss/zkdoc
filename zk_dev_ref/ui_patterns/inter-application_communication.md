@@ -31,8 +31,7 @@ are using Tomcat.
 ## Limitation
 
 Cross-context access is not always allowed in a container, e.g. Tomcat,
-you need to [enable
-crossContext](https://tomcat.apache.org/tomcat-9.0-doc/config/context.html)
+you need to [enable crossContext](https://tomcat.apache.org/tomcat-9.0-doc/config/context.html)
 first before including another context resources.
 
 # Use Cookie

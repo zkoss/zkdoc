@@ -30,15 +30,13 @@ specify the correct device. For example,
 </session-config>
 ```
 
-Please refer to [ZK Developer's Reference/UI Patterns/Session Timeout
-Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management)
+Please refer to [ZK Developer's Reference/UI Patterns/Session Timeout Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management)
 for more information.
 
 ### Page-level Automatic Timeout
 
 If you want to specify whether or not to automatically timeout for
-particular pages, you can use [ the page
-directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
+particular pages, you can use [ the page directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
 
 Moreover, it is better to turn off the automatic timeout for the timeout
 page you want to redirect to (if the page is a ZUML page). For example,

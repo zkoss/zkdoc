@@ -20,8 +20,7 @@ purpose. This navigation way switches functions by only replacing a
 group of components instead of whole page and therefore has faster
 response than page-based one. But it doesn't change a browser's URL when
 each time switching to a different function. However, if you want users
-can keep track of different functions with bookmark, please refer to [
-Browser History Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management).
+can keep track of different functions with bookmark, please refer to [ Browser History Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management).
 
 We will demonstrate AJAX-based navigation with the same layout example.
 

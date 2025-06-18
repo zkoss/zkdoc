@@ -28,8 +28,7 @@ applications but will make previous examples integrate with Spring.
 
 ## Source Code
 
-As we mentioned in the Introduction, our source code has [ 3
-branches](../project_structure.md)
+As we mentioned in the Introduction, our source code has [ 3 branches](../project_structure.md)
 in github. The source code of this chapter's example belongs to the
 branch: **zk8-spring**. You can select the branch and click
 "zip" icon to download as a zip.

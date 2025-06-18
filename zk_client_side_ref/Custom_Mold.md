@@ -6,8 +6,7 @@ structure doesn't fulfill your requirements, for example, you want to:
 - render one more element, `<i/>`, to show an icon
 - render some elements in a different position
 
-Then you need to create a custom [
-mold]({{site.baseurl}}/zk_dev_ref/theming_and_styling/molds)
+Then you need to create a custom [ mold]({{site.baseurl}}/zk_dev_ref/theming_and_styling/molds)
 to render different DOM elements.
 
 # Create Mold js
@@ -33,17 +32,14 @@ under:
 ## Modify Mold
 
 After mold js is ready, you can start to modify it. You can use
-[Template
-literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+[Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 to improve the readability (IE not supported).
 
 # Register Custom Mold
 
 With a mold js, you still need to register this custom mold on the
-component. So you need to create a [
-lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
-and [ register the custom
-mold]({{site.baseurl}}/zk_client_side_ref/language_definition/component#Custom_Mold).
+component. So you need to create a [ lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
+and [ register the custom mold]({{site.baseurl}}/zk_client_side_ref/language_definition/component#Custom_Mold).
 
 # Apply Custom Mold
 

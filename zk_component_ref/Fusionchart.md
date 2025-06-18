@@ -14,8 +14,7 @@
 
 # Employment/Purpose
 
-The Fusionchart which integrates the [FusionCharts
-Free](http://www.fusioncharts.com/free/) with ZK. The technology makes
+The Fusionchart which integrates the [FusionCharts Free](http://www.fusioncharts.com/free/) with ZK. The technology makes
 use of Flash to draw charts and enables the user to customize the style
 of charts such as bar or line colors.
 

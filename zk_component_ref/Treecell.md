@@ -2,8 +2,7 @@
 
 # Treecell
 
-- Demonstration: [Tree (Dynamic
-  Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treecell</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecell</javadoc>
 
@@ -85,8 +84,7 @@ contain any components in it, such as label, image, textbox etc.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

@@ -37,5 +37,4 @@ the redraw method directly.
 
 # Multiple Molds
 
-Need to declare each mold in [ language
-addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language-addon).
+Need to declare each mold in [ language addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language-addon).

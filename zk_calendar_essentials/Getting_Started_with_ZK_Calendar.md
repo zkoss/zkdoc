@@ -8,12 +8,10 @@ ZK Calendar is GPL/Commercial dual-licensed.
 # Setup by Maven
 
 We recommend managing your project with Maven. First, you check the
-available version in [ZK Maven CE
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/calendar/calendar/).
+available version in [ZK Maven CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/calendar/calendar/).
 Then, you can adopt ZK Calendar easily by simply adding a dependency
 like the following example. (If you didn't setup zk maven repository
-yet, you have to [ setup zk maven
-repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository).)
+yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository).)
 
 ```xml
 <dependency>
@@ -25,10 +23,8 @@ repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_m
 
 # Manually Installing the ZK Calendar JAR
 
-1.  [Downloaded ZK CE 7.0.3 or
-    above](http://www.zkoss.org/download/zk.dsp)
-2.  [Downloaded ZK Calendar
-    Binary](http://www.zkoss.org/download/zkcalendar.dsp)
+1.  [Downloaded ZK CE 7.0.3 or above](http://www.zkoss.org/download/zk.dsp)
+2.  [Downloaded ZK Calendar Binary](http://www.zkoss.org/download/zkcalendar.dsp)
 3.  Extract those 2 zip files, include all JAR files by putting them
     into your project's `/WEB-INF/lib`
 
@@ -60,5 +56,4 @@ ZK application.
 
 # Example Project
 
-You can find all example codes mentioned in this book at [the example
-project](https://github.com/zkoss/zkcalendar/tree/master/essentials).
+You can find all example codes mentioned in this book at [the example project](https://github.com/zkoss/zkcalendar/tree/master/essentials).

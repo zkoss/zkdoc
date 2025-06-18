@@ -3,8 +3,7 @@
 By default, the format of date and time, especially the format of
 [Datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
 [Timebox]({{site.baseurl}}/zk_component_ref/input/timebox), is
-determined by the JVM's default and [the current
-locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
+determined by the JVM's default and [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In this section, we will discuss how to configure ZK to use a format
 other than the JVM. For example, you could configure ZK to use the
@@ -32,9 +31,7 @@ The format of date and time is decided in the following sequence.
     property (i.e., <javadoc >org.zkoss.lang.Library</javadoc>). If so,
     it will be used by assuming the value is a class of
     <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>.
-4.  If none of them is found, it uses the JVM's default based on [the
-    current
-    locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
+4.  If none of them is found, it uses the JVM's default based on [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In other words, to configure ZK to use a format other than the JVM's
 default, you have to:
@@ -56,8 +53,7 @@ thread safe.
 Also notice that you could specify `short`, `long` and other *standard*
 styling in the format property of datebox and timebox, such that the
 corresponding format of the styling will be used instead of the default,
-`meidum`. For more information, please refer to [the Per-component
-Format section](#Per-component_Format).
+`meidum`. For more information, please refer to [the Per-component Format section](#Per-component_Format).
 
 ## Application-level Format
 
@@ -145,8 +141,7 @@ the medium styling for time.
 
 ### Per-component Locale
 
-In addition to [the current
-locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale),
+In addition to [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale),
 you could specify the locale for individual instances of datebox and
 timebox. Then, the real format will depend on the locale and the format
 you specified. For example,
@@ -190,8 +185,7 @@ zk.afterLoad('zul.lang', function() {
 });//zk.afterLoad
 ```
 
-You can load the JavaScript file as a [ locale dependent
-JavaScript]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
+You can load the JavaScript file as a [ locale dependent JavaScript]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
 to override the date string for a specific locale.
 
 # Version History

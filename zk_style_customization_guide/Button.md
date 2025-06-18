@@ -1,7 +1,6 @@
 # Component Reference
 
-Component Reference: [
-Button]({{site.baseurl}}/zk_component_ref/essential_components/button)
+Component Reference: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button)
 
 # DOM Structure
 
@@ -41,8 +40,7 @@ Check complete LESS source for Button from
 ## LESS Variables
 
 The following LESS variables are used for the Button component. Check
-other variables from [
-here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+other variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
 
 | Variables            | Default Value |
 |----------------------|---------------|
@@ -64,8 +62,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color

@@ -27,9 +27,7 @@ list some guides about how to use ZK:
 
 **Note:** ZK JSP Tags is one of solutions to use ZK within JSP. It
 provides a set of JSP tags that allow developers to specify ZK
-components in JSP tags. It is recommended to read the [ZK Developer's
-Reference: Use ZK in
-JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
+components in JSP tags. It is recommended to read the [ZK Developer's Reference: Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
 section before you start.
 
 # What to Download
@@ -39,6 +37,5 @@ section before you start.
 | ZK 5.0.0 or later          | The binary distribution of ZK.(including all required Jar files and settings). |
 | ZK JSP Tags 1.4.0 or later | The binary distribution of ZK JSP Tags.                                        |
 
-- Download latest binary files from [ZK
-  Download](http://www.zkoss.org/download/)
+- Download latest binary files from [ZK Download](http://www.zkoss.org/download/)
 

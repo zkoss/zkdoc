@@ -19,9 +19,7 @@ some code from server to client.
 
 This section provides more detailed information about client-side
 programming, though it is written more for application developers. If
-you're not familiar with ZK's component development, please refer to [ZK
-Component Development
-Essentials](ZK_Component_Development_Essentials) first.
+you're not familiar with ZK's component development, please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials) first.
 
 In this section, we will discuss the details of the client-side control
 and programming.

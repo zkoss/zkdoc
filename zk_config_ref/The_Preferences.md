@@ -22,5 +22,4 @@ For example,
 >
 > <references/>
 
-[^1]: For more information, please refer to [ The preference
-    Element]({{site.baseUrl}}/zk_config_ref/The_preference_Element).
+[^1]: For more information, please refer to [ The preference Element]({{site.baseUrl}}/zk_config_ref/The_preference_Element).

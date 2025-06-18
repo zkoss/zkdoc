@@ -74,5 +74,4 @@ by calling
 <javadoc method="getPageDefinitionDirectly(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.
 
 [^1]: Then, the application is able to run in a clustering environment.
-    For more information, please refer to the [Clustering
-    section]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration)
+    For more information, please refer to the [Clustering section]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration)

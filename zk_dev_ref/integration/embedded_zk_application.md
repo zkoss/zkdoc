@@ -111,8 +111,7 @@ We'll embed ZK into the non-ZK web application.
 - line 13: load **demo.zul** (of the ZK application) into the DOM
   Element with id **embeddedZK**.
 
-To see more information, please download the [Demo
-project](https://github.com/zkoss-demo/zkembedded-demo).
+To see more information, please download the [Demo project](https://github.com/zkoss-demo/zkembedded-demo).
 
 # API in embedded.js
 
@@ -123,8 +122,7 @@ We provide two methods to embed ZK.
 The "domId" means after loading resource from "ZKSrc", the content of
 "domId" (HTML DOM Element) would be replaced with the ZK content.
 
-This function returns a [Promise
-object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise),
+This function returns a [Promise object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise),
 which means that we can call functions after ZK is ready.
 
 ```javascript
@@ -199,8 +197,7 @@ Then we can include embedded.js in html in the following way
 After loading the ZK contents, we could use the ZK Client command
 binding to control the ZK components on a page.
 
-To see more information, please refer to [ZK MVVM Book - Client command
-binding](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/client_binding_api.html).
+To see more information, please refer to [ZK MVVM Book - Client command binding](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/client_binding_api.html).
 
 # Cross-Origin Resource Sharing
 
@@ -217,8 +214,7 @@ Access-Control-Allow-Methods: GET, POST
 
 This can be done by configuring your server (e.g. nginx, apache-httpd,
 tomcat, spring-boot...) appropriately and is **not** ZK-specific. Please
-refer to the related documentation (e.g. [MDN: Cross-Origin Resource
-Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))
+refer to the related documentation (e.g. [MDN: Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))
 and your specific server configuration guides.
 
 # Limitations

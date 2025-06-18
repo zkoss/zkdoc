@@ -5,9 +5,7 @@
 It is convenient to use zscript in ZUML, but it comes with a price:
 slower performance. The degradation varies from one application to
 another. It is suggested to use zscript only for fast prototyping, POC,
-or small projects. For large websites, it is suggested to use [ZK
-MVC]({{site.baseurl}}/zk_dev_ref/mvc)/[ZK
-MVVM](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) instead. For
+or small projects. For large websites, it is suggested to use [ZK MVC]({{site.baseurl}}/zk_dev_ref/mvc)/[ZK MVVM](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) instead. For
 example, with ZK MVC
 
 ```xml
@@ -16,15 +14,12 @@ example, with ZK MVC
 ```
 
 You can handle all events and components in `foo.MyComposer`. By the use
-of [
-auto-wiring]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Composer_and_Event_Listener_Autowiring),
+of [ auto-wiring]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Composer_and_Event_Listener_Autowiring),
 it is straightforward to handle events and components.
 
 ## Event Handler Is zscript
 
-In addition to the `zscript` element, [ the event handler declared in a
-ZUL
-page]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Declare_an_Event_Handler_in_a_ZUL_page)
+In addition to the `zscript` element, [ the event handler declared in a ZUL page]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Declare_an_Event_Handler_in_a_ZUL_page)
 is also interpreted at the runtime. For example,
 
 ```xml
@@ -36,9 +31,7 @@ performance, they should be replaced too.
 
 ## Turn off the use of zscript
 
-If you decide not to use zscript at all, you could turn on [the
-disable-script
-configuration]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_disable-zscript_element)
+If you decide not to use zscript at all, you could turn on [the disable-script configuration]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_disable-zscript_element)
 as follows, such that an exception will be thrown if zscript is used.
 
 ```xml

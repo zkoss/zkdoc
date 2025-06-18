@@ -28,10 +28,8 @@ with any widget. For example, the toolbarbutton can now be used to
 upload a file. In addition to this, the display of the upload status has
 been enhanced and can be customized easily.
 
-See also : [
-Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
-[
-Toolbar]({{site.baseurl}}/zk_component_ref/essential_components/toolbar)
+See also : [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
+[ Toolbar]({{site.baseurl}}/zk_component_ref/essential_components/toolbar)
 
 # Example
 
@@ -137,8 +135,7 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
+- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
 
 # Supported Children
 

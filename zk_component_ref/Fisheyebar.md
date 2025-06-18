@@ -8,8 +8,7 @@
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.menu.Fisheyebar</javadoc>
 
-- [Available in ZK PE and EE
-  only](http://www.zkoss.org/product/edition.dsp)
+- [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Employment/Purpose
 
@@ -68,8 +67,7 @@ menu on the Mac OS.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

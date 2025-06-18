@@ -7,8 +7,7 @@ ZK.
 
 There are hundreds of projects which extend ZK's functionality by
 boosting programmer productivity, providing sample code and many others.
-For more projects, you could search [ZK
-Project-Info](http://forum.zkoss.org/questions/scope:all/sort:activity-desc/tags:project-info/page:1/),
+For more projects, you could search [ZK Project-Info](http://forum.zkoss.org/questions/scope:all/sort:activity-desc/tags:project-info/page:1/),
 [Google Code](http://code.google.com/query/#q=zk),
 [Sourceforge.net](http://sourceforge.net/search/?q=zk),
 [GitHub](http://github.com/search?langOverride=&q=zk&repo=&start_value=1&type=Repositories),
@@ -24,8 +23,7 @@ ZK applications with [Eclipse IDE](http://www.eclipse.org).
 ## [REM](http://rem1.sourceforge.net/)
 
 REM is a [NetBeans](http://www.netbeans.org/) module for ZK. It
-simplifies the development of ZK with [NetBeans
-IDE](http://www.netbeans.org/).
+simplifies the development of ZK with [NetBeans IDE](http://www.netbeans.org/).
 
 ## [ZATS](http://www.zkoss.org/product/zats)
 
@@ -46,16 +44,13 @@ This provides users with a ZK sandbox environment.
 
 Use this plugin's embedded Jetty distribution to run web applications in
 Eclipse. This helps to speed up the ZK development by minimizing the
-deployment time. The project is maintained by [Tony
-Wang](https://github.com/tony1223), a member of the ZK Team.
+deployment time. The project is maintained by [Tony Wang](https://github.com/tony1223), a member of the ZK Team.
 
 # Libraries and Integrations
 
 ## [ZK Spring](http://www.zkoss.org/product/zkspring)
 
-ZK Spring integrates ZK and [Spring
-framework](http://www.springsource.org/). It supports Spring, [Spring
-Security](http://static.springsource.org/spring-security/site/), and
+ZK Spring integrates ZK and [Spring framework](http://www.springsource.org/). It supports Spring, [Spring Security](http://static.springsource.org/spring-security/site/), and
 [Spring Web Flow](http://www.springsource.org/webflow).
 
 ## [ZK JSP Tags](http://www.zkoss.org/product/zkjsp)
@@ -89,8 +84,7 @@ controller and view (such as ZUML document).
 
 ## [ZK CDI](http://code.google.com/p/zkcdi/)
 
-ZK CDI is integrated with ZK and [JBoss Weld CDI
-RI](http://seamframework.org/Weld).
+ZK CDI is integrated with ZK and [JBoss Weld CDI RI](http://seamframework.org/Weld).
 
 ## [ZK Seam](http://code.google.com/p/zkseam2/)
 
@@ -132,6 +126,5 @@ existing CSS syntax.
 
 ## [ZK Incubator Widgets](http://code.google.com/p/zk-widgets/)
 
-[ZK Incubator
-Widgets](https://github.com/jumperchen/zk-widgets-google-code) hosts a
+[ZK Incubator Widgets](https://github.com/jumperchen/zk-widgets-google-code) hosts a
 collection of incubator widgets, tools and add-ons.

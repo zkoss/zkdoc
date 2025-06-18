@@ -4,21 +4,18 @@
 to simplify the development of ZK applications with Eclipse.
 
 If you prefer to install it manually or use with other IDE, please refer
-to [Create and Run Your First ZK Application
-Manually](quick_start/Create_and_Run_Your_First_ZK_Application_Manually).
+to [Create and Run Your First ZK Application Manually](quick_start/Create_and_Run_Your_First_ZK_Application_Manually).
 
 # Prepare Eclipse
 
-You can follow [ZK Studio Installation
-Guide]({{site.baseurl}}/zk_studio_essentials/installation) to
+You can follow [ZK Studio Installation Guide]({{site.baseurl}}/zk_studio_essentials/installation) to
 install ZK Studio. There are prerequisites you have to set up before
 installing ZK Studio:
 
 ## Java SE Development Kit (JDK)
 
 Java SE Development Kit version 1.6 or later is required in order to run
-Eclipse with ZK Studio, you can download them from [Oracle official
-website](http://www.oracle.com/technetwork/java/javase/downloads). Note
+Eclipse with ZK Studio, you can download them from [Oracle official website](http://www.oracle.com/technetwork/java/javase/downloads). Note
 that if you are with ZK 9+ then JDK 1.8 or later is required.
 
 ## Eclipse IDE for Java EE Developers
@@ -33,14 +30,12 @@ ZK Studio is an Eclipse Plug-in so you must install Eclipse in advance.
       
     You can double-click `eclipse.exe` to start Eclipse under Windows.
 
-You can refer to [**WTP Tutorials – Building and Running a Web
-Application**](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html)
+You can refer to [**WTP Tutorials – Building and Running a Web Application**](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html)
 for a tutorial.
 
 ## Installing ZK Studio
 
-Please follow the [ installation
-guide]({{site.baseurl}}/zk_studio_essentials/installation#Installation_Guide)
+Please follow the [ installation guide]({{site.baseurl}}/zk_studio_essentials/installation#Installation_Guide)
 to install ZK Studio.
 
 ## Application Servers
@@ -60,8 +55,7 @@ Tomcat requires configuration before it works with Eclipse, please see
 Before deploying and testing your application, you have to install an
 application server (such as Tomcat) and specify the server in Eclipse.
 For more information on how to install an application server, please see
-[ZK Installation Guide/Setting up
-Servers/Tomcat](Setting_up_Servers/Tomcat).
+[ZK Installation Guide/Setting up Servers/Tomcat](Setting_up_Servers/Tomcat).
 
 To specify the server in Eclipse, please follow the instructions below:
 
@@ -72,8 +66,7 @@ To specify the server in Eclipse, please follow the instructions below:
     in your computer
     - For example, the root directory of **Apache Tomcat** might be
       `C:\Program Files\Apache Software Foundation\Tomcat 6.0`
-    - For how to install Tomcat, please refer to [this
-      section](Setting_up_Servers/Tomcat)
+    - For how to install Tomcat, please refer to [this section](Setting_up_Servers/Tomcat)
 5.  Click **Finish**
 
 # Create a "Hello World" application from scratch with ZK Sutdio
@@ -82,8 +75,7 @@ To specify the server in Eclipse, please follow the instructions below:
 
 Select **File \\ New \\ Project...** in Eclipse's menu and it will
 display a new project wizard. Click **ZK Project** to create a new ZK
-project. For detailed steps, please refer to [Create a New ZK
-Project]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/new_zk_project)
+project. For detailed steps, please refer to [Create a New ZK Project]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/new_zk_project)
 
 ## Create a new ZUL file
 

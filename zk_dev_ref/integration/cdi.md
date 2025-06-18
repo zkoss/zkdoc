@@ -7,13 +7,11 @@ in a loosely coupled and type safe way. We will talk about several ways
 of integration including injecting and accessing CDI beans under
 different conditions. We assume that readers have knowledge in basic CDI
 configuration and concept such as bean scope, we will therefore not
-cover those topics here. Please refer to [Oracle's CDI
-tutorial](http://docs.oracle.com/javaee/6/tutorial/doc/gjbnr.html).
+cover those topics here. Please refer to [Oracle's CDI tutorial](http://docs.oracle.com/javaee/6/tutorial/doc/gjbnr.html).
 
 # Access a CDI Bean in a ZUL
 
-ZUL provides a feature called [ variable
-resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
+ZUL provides a feature called [ variable resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
 that allows users to access CDI bean using EL expression. To do this,
 simply put the below directive on top of a ZUML page:
 

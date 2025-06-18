@@ -331,10 +331,8 @@ element as follows.
 
 # download
 
-- Please download the [source(Tomcat 5.5 (and above) +
-  MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/Mysql_tomcat.war/download)
-- Please download the [source(JBoss +
-  MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/jboss%2Bmysql.zip/download)
+- Please download the [source(Tomcat 5.5 (and above) + MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/Mysql_tomcat.war/download)
+- Please download the [source(JBoss + MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/jboss%2Bmysql.zip/download)
 
 [^1]: Thanks Thomas Muller
     ([<http://asconet.org:8000/antville/oberinspector>](http://asconet.org:8000/antville/oberinspector))

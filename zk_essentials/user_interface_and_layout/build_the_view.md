@@ -65,15 +65,13 @@ Now, let's built our example application's main layout. create a new text file w
 ```
 
 -   Line 2: Each XML tag represents one component, and the tag name is
-    equal to the component name. The attribute [ "hflex" and
-    "vflex"](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
+    equal to the component name. The attribute [ "hflex" and "vflex"](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
     controls the horizontal and vertical size flexibility of a
     component. We set them to "1" which means *Fit-the-Rest*
     flexibility. Hence, the `<borderlayout>` will stretch itself to fill
     all available space of whole page in width and height because it is
     a root component. Only one component is allowed inside `<north>` in
-    addition to a [
-    `<caption>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/caption).
+    addition to a [ `<caption>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/caption).
 -   Line 3: `<north>`* is a child component that can only be put inside a `<borderlayout>`. You can also fix a component's height by specifying
     a pixel value to avoid its height changing due to browser sizes.
 -   Line 6, 7: Setting `collapsible` to true allows you to collapse the
@@ -207,10 +205,8 @@ aligned to the center.
     [*Vbox*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/vbox), like
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
--   Line 3: You can use [ EL
-    expressions](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions) in the tag
-    element's body or an attribute. There are also many [ implicit
-    objects](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)),
+-   Line 3: You can use [ EL expressions](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions) in the tag
+    element's body or an attribute. There are also many [ implicit objects](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)),
     and `desktop` is one of them. Refer to
     `org.zkoss.zk.ui.Desktop`'s Javadoc to find out
     available properties.

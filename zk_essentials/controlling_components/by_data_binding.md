@@ -1,7 +1,6 @@
 # MVVM Pattern
 In addition to the MVC approach, ZK also allows you to design your
-application in another architecture: [ *MVVM
-(Model-View-ViewModel)*](http://books.zkoss.org/zk-mvvm-book/8.0/index.html).
+application in another architecture: [ *MVVM (Model-View-ViewModel)*](http://books.zkoss.org/zk-mvvm-book/8.0/index.html).
 This architecture also divides an application into 3 roles: **View**, **Model**,
 and **ViewModel**.
 * **Model** is responsible for exposing data while performing business

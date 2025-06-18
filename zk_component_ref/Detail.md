@@ -2,8 +2,7 @@
 
 # Detail
 
-- Demonstration: [Grid (Master
-  detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
+- Demonstration: [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
 - Java API: <javadoc>org.zkoss.zul.Detail</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
 
@@ -97,8 +96,7 @@ the component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

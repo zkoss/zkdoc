@@ -1,12 +1,7 @@
 # Component Reference
 
-Component Reference: [
-Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout), [
-North]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north), [
-South]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/south), [
-Center]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/center),
-[ West]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/west), [
-East]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/east)
+Component Reference: [ Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout), [ North]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north), [ South]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/south), [ Center]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/center),
+[ West]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/west), [ East]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/east)
 
 # DOM Structure
 
@@ -58,10 +53,8 @@ East]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/east)
 
   East:
   [Chevron-right](http://fortawesome.github.io/Font-Awesome/icon/chevron-right/)
-- Line 12, 14: [Ellipsis-horizontal Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/ellipsis-horizontal/)
-  used for North and South, [Ellipsis-vertical Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/ellipsis-vertical/)
+- Line 12, 14: [Ellipsis-horizontal Icon Font](http://fortawesome.github.io/Font-Awesome/icon/ellipsis-horizontal/)
+  used for North and South, [Ellipsis-vertical Icon Font](http://fortawesome.github.io/Font-Awesome/icon/ellipsis-vertical/)
   used for East and West.
 - Line 13: Caret-direction Icon Font used forNorth, South, East and
   West.
@@ -126,8 +119,7 @@ Check complete LESS source for Borderlayout from
 ## LESS Variables
 
 The following LESS variables are used for Splitter between North, South,
-East and West components. Check other variables from [
-here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+East and West components. Check other variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
 
 | Variables              | Default Value |
 |------------------------|---------------|
@@ -147,8 +139,7 @@ and Splitter component.
 
 ### Setup environment and Analyze design
 
-- Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color for Borderlayout (include North, South, East, West, and

@@ -2,8 +2,7 @@
 
 # Auxheader
 
-- Demonstration: [Grid (Merged
-  Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
+- Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
 - Java API: <javadoc>org.zkoss.zul.Auxheader</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
@@ -187,8 +186,7 @@ empty Columns component invisible. For example,
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

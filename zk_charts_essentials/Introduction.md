@@ -12,9 +12,7 @@ Since [Highcharts](https://www.highcharts.com/docs/index) (and the
 documented, we don't replicate this information in this guide. If you
 are searching for a specific Highcharts feature or configuration
 property, please refer to the Highcharts documentation first. In order
-to implement the chart configuration with ZK Charts refer to [ Changing
-Chart
-Configuration]({{site.baseurl}}/zk_charts_essentials/working_with_zk_charts/changing_chart_configuration)
+to implement the chart configuration with ZK Charts refer to [ Changing Chart Configuration]({{site.baseurl}}/zk_charts_essentials/working_with_zk_charts/changing_chart_configuration)
 
 ![](images/ZK_charts_intro.png)
 

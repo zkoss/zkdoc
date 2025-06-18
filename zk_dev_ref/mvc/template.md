@@ -1,6 +1,5 @@
 A template is a ZUML fragment that defines how to create components. A
-template is enclosed with [the template
-element](ZUML_Reference/ZUML/Elements/template) as shown
+template is enclosed with [the template element](ZUML_Reference/ZUML/Elements/template) as shown
 below.
 
 ```xml
@@ -42,11 +41,8 @@ How a template is used depends on the component it associates with and
 the tools you use. Currently, all components that support the concept of
 model allow you to specify a template to control how to render each
 item. In the following sections, we discuss them in details. If you'd
-like to know how to use templates manually in Java, please refer to [the
-UI Patterns: Templates
-section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/templates).
+like to know how to use templates manually in Java, please refer to [the UI Patterns: Templates section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/templates).
 
-Notice that please read [the Listbox Template
-section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template)
+Notice that please read [the Listbox Template section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template)
 first, even though you're rendering other kind of UI. It described the
 common concepts and tricks of using templates.

@@ -23,9 +23,7 @@
     [issue](https://bugs.eclipse.org/bugs/show_bug.cgi?id=401664), ZK
     may throw NullPointerException (HttpServletRequest#getContentPath()
     returns a null value ...) with Servlet 3-supported Jetty. You should
-    not use the default Servlet 3 Comet server push ([Servlet 3
-    Asynchronous Processing-based
-    Comet](http://books.zkoss.org/wiki/Small_Talks/2012/February/New_Features_of_ZK_6#ZK_Comet_supports_Servlet_3_Asynchronous_Processing)).
+    not use the default Servlet 3 Comet server push ([Servlet 3 Asynchronous Processing-based Comet](http://books.zkoss.org/wiki/Small_Talks/2012/February/New_Features_of_ZK_6#ZK_Comet_supports_Servlet_3_Asynchronous_Processing)).
     You should use ***org.zkoss.zkex.ui.comet.CometServerPush*** instead
     by applying the following config:
 
@@ -38,9 +36,7 @@ zk.xml
  </device-config>
 ```
 
-Refer to [The server-push-class
-Element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
-and [Server Push
-Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration)
+Refer to [The server-push-class Element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
+and [Server Push Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration)
 
 

@@ -53,8 +53,7 @@ Used to create a separator between menu items..
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
@@ -62,11 +61,9 @@ Used to create a separator between menu items..
 
 # Use Cases
 
-[
-Menu]({{site.baseurl}}/zk_component_ref/essential_components/menu#Use_Cases)
+[ Menu]({{site.baseurl}}/zk_component_ref/essential_components/menu#Use_Cases)
 
-[
-Menubar]({{site.baseurl}}/zk_component_ref/essential_components/menu/menubar#Use_Cases)
+[ Menubar]({{site.baseurl}}/zk_component_ref/essential_components/menu/menubar#Use_Cases)
 
 # Version History
 

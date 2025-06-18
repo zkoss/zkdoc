@@ -11,8 +11,7 @@
 A window is, like HTML DIV tag, used to group components. Unlike other
 components, a window has the following characteristics.
 
-- A window is an owner of [an ID
-  space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space). Any
+- A window is an owner of [an ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space). Any
   component contained in a window, including itself, could be found by
   use of
   <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>,
@@ -504,9 +503,7 @@ then the appearance is as follows.
 
 # Troubleshooting with browser issues
 
-- There's an issue for Listbox/Grid in a window, please reference [Grid
-  in window get a wrong display in
-  IE7/IE6](https://sourceforge.net/tracker/?func=detail&atid=785191&aid=3291179&group_id=152762%7C3291179)
+- There's an issue for Listbox/Grid in a window, please reference [Grid in window get a wrong display in IE7/IE6](https://sourceforge.net/tracker/?func=detail&atid=785191&aid=3291179&group_id=152762%7C3291179)
 
 # Common Dialogs
 
@@ -598,8 +595,7 @@ The</p>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

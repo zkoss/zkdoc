@@ -5,10 +5,8 @@
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: <javadoc>org.zkoss.zul.Menu</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menu</javadoc>
-- Style Guide: [ Menu in
-  Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menu_in_menubar),
-  [ Menu in
-  Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menu_in_menupopup)
+- Style Guide: [ Menu in Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menu_in_menubar),
+  [ Menu in Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menu_in_menupopup)
 
 # Employment/Purpose
 
@@ -79,8 +77,7 @@ The code to register an onClick event is shown below:
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

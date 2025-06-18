@@ -10,10 +10,8 @@
 # Employment/Purpose
 
 It lets you specify some timed text tracks like captions or subtitles
-for media components such as [
-Audio]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/audio)
-or [
-Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video).
+for media components such as [ Audio]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/audio)
+or [ Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video).
 
 # Example
 
@@ -139,8 +137,7 @@ Specify what language this track is. It's required if the kind is
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

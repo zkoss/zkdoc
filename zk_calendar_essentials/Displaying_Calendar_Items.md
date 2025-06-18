@@ -94,11 +94,9 @@ To show a tooltip when an end-user hover this mouse on an calendar item,
 you need to:
 
 1.  create a popup
-2.  link the popup with your calendars with [
-    tooltip]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups#Tooltips)
+2.  link the popup with your calendars with [ tooltip]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups#Tooltips)
     attribute.
-3.  implement the logic to show a tooltip in an [ onItemTooltip
-    listener]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners#CalendarsEvent.ON_ITEM_TOOLTIP).
+3.  implement the logic to show a tooltip in an [ onItemTooltip listener]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners#CalendarsEvent.ON_ITEM_TOOLTIP).
 
 ```xml
     <calendars height="100%"  beginTime="8"
@@ -135,9 +133,7 @@ selector.
 This is a good way to assign styles to categories of items.
 
 If you need to assign styles to individual items, you can use the style,
-contentStyle and headerStyle properties instead: ![Areas targeted by
-each style
-attributes](images/Calendar-style-targets.png "Areas targeted by each style attributes")
+contentStyle and headerStyle properties instead: ![Areas targeted by each style attributes](images/Calendar-style-targets.png "Areas targeted by each style attributes")
 
 ```java
     calendarItem.setStyle("background-color: #0093f9"); //affects the whole item

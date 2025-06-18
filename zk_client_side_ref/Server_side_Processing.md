@@ -94,8 +94,7 @@ To plug it to the component, you could invoke
 
 # Client Event Declaration
 
-As described in [the previous
-section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
+As described in [the previous section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
 a widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) will be
 sent to the server, only if *the server needs it*.
 
@@ -164,6 +163,5 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 [^1]: A deferrable event listener is an event listener that also
     implements
     <javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>.
-    Please refer to [ZK Developer's Reference: Event
-    Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening)
+    Please refer to [ZK Developer's Reference: Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening)
     for details.

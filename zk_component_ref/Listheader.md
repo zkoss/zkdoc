@@ -2,8 +2,7 @@
 
 # Listheader
 
-- Demonstration: [Listbox
-  (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
+- Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: <javadoc>org.zkoss.zul.Listheader</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Listheader</javadoc>
@@ -93,8 +92,7 @@ cells under a column.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

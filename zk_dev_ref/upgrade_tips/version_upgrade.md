@@ -9,15 +9,12 @@ fall-back mechanism is available.
 # Upgrade References
 
 An introductory smalltalk is published for every MAJOR and MINOR
-release. For example [ New Features of ZK
-9.5](https://www.zkoss.org/wiki/Small_Talks/2020/September/New_Features_of_ZK_9.5.0).
+release. For example [ New Features of ZK 9.5](https://www.zkoss.org/wiki/Small_Talks/2020/September/New_Features_of_ZK_9.5.0).
 The smalltalk highlights the most important changes as well as provides
-upgrade tips for upgrading to that specific version. View [all New
-Features articles](https://www.zkoss.org/wiki/Category:New_Features).
+upgrade tips for upgrading to that specific version. View [all New Features articles](https://www.zkoss.org/wiki/Category:New_Features).
 
 A detailed release note containing a list of fixed issues is available
-for every new release, including hotfixes. For example, [ZK 9.0.0
-release notes](https://www.zkoss.org/product/zk/releasenote/9.0.0). The
+for every new release, including hotfixes. For example, [ZK 9.0.0 release notes](https://www.zkoss.org/product/zk/releasenote/9.0.0). The
 [full release history](https://www.zkoss.org/product/zk/releasenote/)
 can be found here.
 
@@ -184,8 +181,7 @@ title="wikilink"> Release Smalltalk</a></p></td>
 </tbody>
 </table>
 
-[Check all security fixes in the
-tracker](https://tracker.zkoss.org/issues/?jql=labels_%3D_security)
+[Check all security fixes in the tracker](https://tracker.zkoss.org/issues/?jql=labels_%3D_security)
 
 # Upgrade Process
 
@@ -198,8 +194,7 @@ project. It is important to make sure all ZK jar files are in the same
 version.
 
 Then, fix any compilation errors and configure the required fallback
-settings by referencing the [ Upgrade
-References](#Upgrade_References).
+settings by referencing the [ Upgrade References](#Upgrade_References).
 
 # Checklist
 
@@ -213,8 +208,7 @@ To estimate the upgrading effort, we suggest a checklist:
     it after the upgrade.
 2.  Check configuration description (zk.xml)
       
-    Check each property in zk.xml upon [ ZK Configuration
-    Reference]({{site.baseurl}}/zk_config_ref/zk.xml) to see if
+    Check each property in zk.xml upon [ ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/zk.xml) to see if
     there is any change in the new version.
 3.  Check Custom Appearance (CSS)
       
@@ -226,8 +220,7 @@ To estimate the upgrading effort, we suggest a checklist:
     review it for the new version.
 5.  Check Bug Patches
       
-    Check [Bug Tracker](https://tracker.zkoss.org/) or [release
-    note](https://www.zkoss.org/product/zk/releasenote/) for the
+    Check [Bug Tracker](https://tracker.zkoss.org/) or [release note](https://www.zkoss.org/product/zk/releasenote/) for the
     existing bug patch. If that bug is fixed in the new version, you can
     remove the patch.
 6.  Check for Java Compiler Error

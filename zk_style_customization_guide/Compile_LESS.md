@@ -26,8 +26,7 @@ You could choose either one of them depends on your preferences.
   [document](http://ant.apache.org/manual/install.html) to install
   Apache Ant.
 - Download the following necessary jars into your ***project/lib***
-  folder from [zk
-  repository](https://github.com/zkoss/zk/tree/7.0-Stable/dist/lib/ext)
+  folder from [zk repository](https://github.com/zkoss/zk/tree/7.0-Stable/dist/lib/ext)
   (right click -\> save as).
   - yuicompressor.jar
   - zkjszips.jar

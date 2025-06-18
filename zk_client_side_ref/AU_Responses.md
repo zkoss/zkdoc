@@ -1,7 +1,6 @@
 An AU response is the command sent from the server to the client for
 synchronizing back the server's states and performing some
-functionality. In response to the [AU
-request]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
+functionality. In response to the [AU request]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
 sent by the client, the server could send one or multiple AU responses
 to the client. Each AU response consists of a command and a sequence of
 data. The command is a string, and the data could be any objects (as

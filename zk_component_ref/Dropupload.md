@@ -16,8 +16,7 @@
 users can simply drag and drop the file(s) they want to upload into
 `Dropupload` and the uploading process will start automatically. The
 behaviour and operation of this `Dropupload` component is similar to
-ZK's [**file upload
-button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload)
+ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload)
 but with better user experience and performance.
 
 # Example
@@ -128,10 +127,8 @@ when dropping attachments to emails.
 
 # Accept
 
-{% include version-badge.html version=10.0.0 %} This attribute specifies [the MIME
-types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
-that the server accepts. Similar to [the maxsize
-attribute](#Maxsize), if one of the files does not match the
+{% include version-badge.html version=10.0.0 %} This attribute specifies [the MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+that the server accepts. Similar to [the maxsize attribute](#Maxsize), if one of the files does not match the
 acceptable file types, nothing will be uploaded. For example, the
 following example only accepts audio and .png files:
 
@@ -170,8 +167,7 @@ file.
 
 # Customized File Viewer
 
-Similar to [**file upload
-button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload),
+Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload),
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
@@ -348,8 +344,7 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

@@ -10,8 +10,7 @@
 
 # Employment/Purpose
 
-The column of [
-Rowlayout]({{site.baseurl}}/zk_component_ref/layouts/rowlayout).
+The column of [ Rowlayout]({{site.baseurl}}/zk_component_ref/layouts/rowlayout).
 
 # Properties
 
@@ -60,8 +59,7 @@ By default, the offset of Rowchildren is 0.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Version History
 

@@ -115,9 +115,7 @@ ZUL
 Or, to set the label by label files, you need to add a prefix
 `pivot.fieldControl.` to the key:
 
-zk-label.properties<reference>For more information, please refer to [ZK
-Developer's Reference:
-Labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).</reference>
+zk-label.properties<reference>For more information, please refer to [ZK Developer's Reference: Labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).</reference>
 
 ```perl
 pivot.fieldControl.rowListTitle=My Rows

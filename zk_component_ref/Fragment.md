@@ -143,8 +143,7 @@ and collection rendering.
 </zk>
 ```
 
-- For further details, please refer to [Shadow
-  components](http://books.zkoss.org/zkessentials-book/master/shadow_components/index.html)
+- For further details, please refer to [Shadow components](http://books.zkoss.org/zkessentials-book/master/shadow_components/index.html)
   directly.
 
 # Data Validation
@@ -284,8 +283,7 @@ position, pressed keys, entered text, and selected text.
 |                                                         | onfocusout          |
 
 - For further details about how to retrieve the event object, please
-  refer to [Retrieve Event
-  Object](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object)
+  refer to [Retrieve Event Object](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object)
   directly.
 
 # Properties

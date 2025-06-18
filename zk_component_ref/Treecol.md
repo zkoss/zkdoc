@@ -2,8 +2,7 @@
 
 # Treecol
 
-- Demonstration: [Tree (Dynamic
-  Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treecol</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecol</javadoc>
 
@@ -88,8 +87,7 @@ the treeitem of this treecol.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

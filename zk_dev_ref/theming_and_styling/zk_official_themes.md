@@ -67,12 +67,8 @@ support desktop only.
 See below to take a quick view at the look and feel of Breeze, Sapphire
 and Silvertail, click image to view original size.
 
-![ left \| thumb \| 269px \|
-Breeze](breeze-look-and-feel.png " left | thumb | 269px | Breeze") ![
-left \| thumb \| 269px \|
-Sapphire](sapphire-look-and-feel.png " left | thumb | 269px | Sapphire")
-![ left \| thumb \| 269px \|
-Silvertail](silvertail-look-and-feel.png " left | thumb | 269px | Silvertail")
+![ left \| thumb \| 269px \| Breeze](breeze-look-and-feel.png " left | thumb | 269px | Breeze") ![ left \| thumb \| 269px \| Sapphire](sapphire-look-and-feel.png " left | thumb | 269px | Sapphire")
+![ left \| thumb \| 269px \| Silvertail](silvertail-look-and-feel.png " left | thumb | 269px | Silvertail")
 
 <div style="clear: both">
 </div>
@@ -92,8 +88,7 @@ click image to view original size.
 
 ## Not to Import Google Font
 
-Please refer to [ZK Configuration Reference/zk.xml/The Library
-Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.theme.atlantic.usegooglefont.disabled)
+Please refer to [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.theme.atlantic.usegooglefont.disabled)
 
 # ZK Theme Pack
 
@@ -115,9 +110,7 @@ theme pack jar first:
         </dependency>
 ```
 
-Then apply a theme according to [ZK Developer's Reference/Theming and
-Styling/Switching
-Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes).
+Then apply a theme according to [ZK Developer's Reference/Theming and Styling/Switching Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes).
 
 ## Lite themes
 
@@ -144,16 +137,10 @@ and Material
 These themes conform to the WCAG2-compliant contrast level and focus
 styles. Note that for WCAG compliance, in addition to using a WCAG
 theme, you will also need to include the za11y (zk-accessibility) module
-to your project. Read [Developer's
-Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility)
+to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility)
 for more information.
 
-![ left \| thumb \| 269px \| WCAG
-(Blue)](Wcag_blue.png " left | thumb | 269px | WCAG (Blue)") ![ left \|
-thumb \| 269px \| WCAG
-Navy](Wcag_navy.png " left | thumb | 269px | WCAG Navy") ![ left \|
-thumb \| 269px \| WCAG
-Purple](Wcag_purple.png " left | thumb | 269px | WCAG Purple")
+![ left \| thumb \| 269px \| WCAG (Blue)](Wcag_blue.png " left | thumb | 269px | WCAG (Blue)") ![ left \| thumb \| 269px \| WCAG Navy](Wcag_navy.png " left | thumb | 269px | WCAG Navy") ![ left \| thumb \| 269px \| WCAG Purple](Wcag_purple.png " left | thumb | 269px | WCAG Purple")
 
 <div style="clear: both">
 </div>
@@ -167,8 +154,7 @@ the minimum code change. Each theme in the theme pack has a
 corresponding compact theme. The compact themes have smaller font size,
 padding, margin, but keep the same color design. it's more suitable for
 migrating from an old theme like breeze without breaking the page
-layout. Learn more at [8.6 New
-Features](https://www.zkoss.org/wiki/Small_Talks/2018/November/New_Features_of_ZK_8.6.0#Refresh_Theme_without_Code_Change_-_Compact_Theme).
+layout. Learn more at [8.6 New Features](https://www.zkoss.org/wiki/Small_Talks/2018/November/New_Features_of_ZK_8.6.0#Refresh_Theme_without_Code_Change_-_Compact_Theme).
 
 # Installation
 
@@ -177,10 +163,7 @@ Features](https://www.zkoss.org/wiki/Small_Talks/2018/November/New_Features_of_Z
       download and register.
     - Sapphire, Silvertail, Atlantic (Deprecated since 10.0.0) - from
       [github](http://github.com/zkoss/zkthemes/releases)
-    - ZK Theme Pack - download from [premium
-      downloads](https://www.zkoss.org/download/premium#zktheme) or [ZK
-      EE maven
-      repository]({{site.baseurl}}/zk_installation_guide/maven_setup#PE_.2F_EE_.28premium_users_only.299).
+    - ZK Theme Pack - download from [premium downloads](https://www.zkoss.org/download/premium#zktheme) or [ZK EE maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup#PE_.2F_EE_.28premium_users_only.299).
 2.  Place theme.jar file under "**projectName/WEB-INF/lib**" folder.
 3.  Apply preferred theme by a library property in **zk.xml** file under
     "**projectName/WEB-INF**" folder
@@ -269,17 +252,13 @@ iceblue ---\> **iceblue_c**
 
 You can include multiple themes in the same application and allow your
 end-users to choose their preferred themes. For more information please
-refer to [Switching
-Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes)
+refer to [Switching Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes)
 
 # Customizing a Theme
 
-To build a custom theme based on a standard ZK theme, read [Customize a
-standard
-theme]({{site.baseurl}}/zk_dev_ref/theming_and_styling/customizing_standard_themes).
+To build a custom theme based on a standard ZK theme, read [Customize a standard theme]({{site.baseurl}}/zk_dev_ref/theming_and_styling/customizing_standard_themes).
 
-Also, reference [Theming and
-Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling).
+Also, reference [Theming and Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling).
 
 # Version History
 

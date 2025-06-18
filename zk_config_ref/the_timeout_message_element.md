@@ -16,9 +16,7 @@ that it is used only if the <timeout-uri> is **not** specified.
 </session-config>
 ```
 
-For more information, please refer to [ZK Developer's Reference/UI
-Patterns/Session Timeout
-Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management).
+For more information, please refer to [ZK Developer's Reference/UI Patterns/Session Timeout Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management).
 
 ## Internationalization
 
@@ -33,8 +31,7 @@ key and prefix it with `label:` as follows.
 ```
 
 Then, you have to prepare the zk-label properties files as described in
-[ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
+[ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 
 ```text
 #zk-label.properties

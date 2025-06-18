@@ -9,8 +9,7 @@ softwares described in this example when installing yourself.
 
 # Environment setup
 
-Please refer to the [ the eclipse and maven quick start
-guide](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+Please refer to the [ the eclipse and maven quick start guide](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 environment setup.
 
 # Project configuration
@@ -37,8 +36,7 @@ ZK supports the Jakarta servlet configuration starting from ZK
 ```
 
 For a more in-depth look at the pom.xml file configuration, please refer
-to the [ the Resolving ZK Framework Artifacts via Maven
-page](Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
+to the [ the Resolving ZK Framework Artifacts via Maven page](Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
 .
 
 If your project uses the servlet-API dependency, you will need to update
@@ -86,8 +84,7 @@ Note: use latest version, 5.12.2 is the earliest Keikai release with a
 
 ## Addons and plugins transitive dependencies
 
-Maven will automatically [resolve transitive
-dependencies](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
+Maven will automatically [resolve transitive dependencies](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)
 provided by a given dependencies.
 
 In the case of ZK addons such as Keikai, the addons list default ZK core
@@ -135,13 +132,11 @@ support up to jetty 9, which is not compatible with Jakarta servlet.
 
 ## Run from maven
 
-Refer to the approach described in [ the eclipse and maven quick
-start](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+Refer to the approach described in [ the eclipse and maven quick start](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 guide.
 
 When configuring your application's pom file, use a jetty version that
-supports servlet 5.0. For example, the 11.0.X version of the [\|
-jetty-maven-plugin](https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin)
+supports servlet 5.0. For example, the 11.0.X version of the [\| jetty-maven-plugin](https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-maven-plugin)
 supports this specification.
 
 You can then start your project as a maven build, using
@@ -150,10 +145,8 @@ You can then start your project as a maven build, using
 ## Run on server through eclipse
 
 You can run in debug mode on a Tomcat server from eclipse by following
-the configuration shown in the [ quick start with Eclipse and Tomcat
-](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
-guide, while using a [\| compatible tomcat
-version](http://tomcat.apache.org/whichversion.html).
+the configuration shown in the [ quick start with Eclipse and Tomcat ](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
+guide, while using a [\| compatible tomcat version](http://tomcat.apache.org/whichversion.html).
 
 ## Run on server and remotely debug with JPDA
 

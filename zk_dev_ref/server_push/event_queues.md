@@ -22,15 +22,11 @@ but rare). For example,
 EventQueue que = EventQueues.lookup("chat", EventQueues.APPLICATION, true);
 ```
 
-For more information about event queues, please refer to the [Event
-Handling: Event
-Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+For more information about event queues, please refer to the [Event Handling: Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 section.
 
-For the information about low-level API, please refer to [Asynchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
-section, if the task can execute asynchronously; or [Synchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/server_push/synchronous_tasks)
+For the information about low-level API, please refer to [Asynchronous Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
+section, if the task can execute asynchronously; or [Synchronous Tasks]({{site.baseurl}}/zk_dev_ref/server_push/synchronous_tasks)
 if it must execute synchronously.
 
 # Version History

@@ -5,8 +5,7 @@
 In ZK 8.0.0, we have introduced shadow elements, such as a boilerplate
 code, to help application developers compose HTML layouts with dynamic
 data. It is inspired by Shadow DOM to enable better composition of ZK
-components. For more details, please check out our [ZK MVVM
-Reference](https://books.zkoss.org/zk-mvvm-book/10.0/shadow_elements/index.html).
+components. For more details, please check out our [ZK MVVM Reference](https://books.zkoss.org/zk-mvvm-book/10.0/shadow_elements/index.html).
 You can also use shadow elements with the MVC pattern; however, there
 are some differences. We will discuss this more in the following
 sections.
@@ -47,8 +46,7 @@ Before using shadow elements, make sure you include the required jar -
 
 # Wire Shadow Components
 
-Like wiring a UI component, you can [ wire a shadow
-component](ZK_Developer's_Reference/mvc/Controller/Wire_Components#Shadow_Selectors).
+Like wiring a UI component, you can [ wire a shadow component](ZK_Developer's_Reference/mvc/Controller/Wire_Components#Shadow_Selectors).
 
 # Use ShadowTemplate
 
@@ -268,8 +266,7 @@ one.
 
 # Comparison
 
-Although the behavior of ShadowTemplate and [Macro
-component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component)
+Although the behavior of ShadowTemplate and [Macro component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component)
 looks similar, there are some differences.
 
 |                     | ShadowTemplate                                                                                                                 | Macro Component                                                                     |

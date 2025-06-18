@@ -13,9 +13,7 @@ The hlayout component is a simple horizontal oriented layout. It layouts
 its child components horizontally in a row.
 
 Notice that hlayout and vlayout do **not** support a splitter inside. If
-you need it, please use [
-Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and [
-Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) instead.
+you need it, please use [ Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and [ Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) instead.
 
 # Example
 
@@ -126,8 +124,7 @@ alignment explicitly in the inner hlayout if needed. For example,
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

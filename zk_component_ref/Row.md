@@ -2,8 +2,7 @@
 
 # Row
 
-- Demonstration: [Grid (Simple
-  Grid)](http://www.zkoss.org/zkdemo/grid/simple)
+- Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Row</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Row</javadoc>
 
@@ -88,8 +87,7 @@ Default getSclass(): the same as grid's sclass.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

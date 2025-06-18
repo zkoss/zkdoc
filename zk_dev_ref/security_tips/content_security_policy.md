@@ -20,9 +20,7 @@ See more: [Content Security Policy Level 2](https://www.w3.org/TR/CSP2/)
 To use CSP in your web application, the first thing you need to know is
 that not all the browsers support CSP.
 
-(Support browsers: [Content Security Policy
-1.0](https://caniuse.com/#feat=contentsecuritypolicy), [Content Security
-Policy Level 2](https://caniuse.com/#feat=contentsecuritypolicy2))
+(Support browsers: [Content Security Policy 1.0](https://caniuse.com/#feat=contentsecuritypolicy), [Content Security Policy Level 2](https://caniuse.com/#feat=contentsecuritypolicy2))
 
 To enable CSP, you can either configure your web server to return the
 CSP HTTP header, or use the

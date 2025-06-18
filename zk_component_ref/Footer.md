@@ -2,16 +2,14 @@
 
 # Footer
 
-- Demonstration: [Grid (Header and
-  footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
+- Demonstration: [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
 - Java API: <javadoc>org.zkoss.zul.Footer</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Footer</javadoc>
 
 
 # Employment/Purpose
 
-A column of the footer of a grid ([
-Grid]({{site.baseurl}}/zk_component_ref/data/grid)). Its parent must be
+A column of the footer of a grid ([ Grid]({{site.baseurl}}/zk_component_ref/data/grid)). Its parent must be
 [ Foot]({{site.baseurl}}/zk_component_ref/data/grid/foot).
 
 Unlike Column, you could place any child in a grid footer.
@@ -70,8 +68,7 @@ Unlike Column, you could place any child in a grid footer.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
+- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
 
 # Supported Children
 

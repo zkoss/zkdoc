@@ -231,8 +231,7 @@ object's items collection, we should re-load the `Order` object with JPA
 
 <div style="text-align:center">
 
-[source of above
-screen](https://code.google.com/p/zkbooks/source/browse/trunk/developersreference/integration.jpa/src/main/webapp/order.zul)
+[source of above screen](https://code.google.com/p/zkbooks/source/browse/trunk/developersreference/integration.jpa/src/main/webapp/order.zul)
 
 </div>
 
@@ -302,8 +301,7 @@ public class SpringOrderDao {
 
 # Lazy Initialization Issue Under Render on Demand
 
-Some AU requests cannot be interfered by developers like "[Render On
-Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
+Some AU requests cannot be interfered by developers like "[Render On Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
 request. The rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have
@@ -473,8 +471,6 @@ All source code used in this chapter can be found
 
 <references/>
 
-[^1]: [Unit of Work in Hibernate EntityManager User
-    Guide](http://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html_single/#transactions-basics-uow)
+[^1]: [Unit of Work in Hibernate EntityManager User Guide](http://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html_single/#transactions-basics-uow)
 
-[^2]: The reason is explained in a [Hibernate article "Open Session in
-    View"](https://community.jboss.org/wiki/OpenSessionInView#Why_cant_Hibernate_just_load_objects_on_demand)
+[^2]: The reason is explained in a [Hibernate article "Open Session in View"](https://community.jboss.org/wiki/OpenSessionInView#Why_cant_Hibernate_just_load_objects_on_demand)

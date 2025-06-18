@@ -28,8 +28,7 @@ In this case, the security measures and restrictions associated with
 CORS policies will apply to communications to the Embedded app server
 from the browser.
 
-[Further reading regarding
-CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+[Further reading regarding CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 
 ## SSL requirement
 
@@ -47,9 +46,7 @@ NOTE: Necessary headers will depend on both applications' structures and
 relationships, but you will find below a general case example for a
 generic web application.
 
-For the minimum ZK headers configuration, please refer to [the main
-zEmbedded
-documentation]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/embedded_zk_application#Cross-Origin_Resource_Sharing)
+For the minimum ZK headers configuration, please refer to [the main zEmbedded documentation]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/embedded_zk_application#Cross-Origin_Resource_Sharing)
 
 ```numberLines
 Access-Control-Allow-Origin: One or more URLs allowed to load the Embedded application. 
@@ -62,8 +59,7 @@ Access-Control-Allow-Credentials: true
 
 This can be done by configuring your server (e.g. nginx, apache-httpd,
 tomcat, spring-boot...) appropriately and is **not** ZK-specific. Please
-refer to the related documentation (e.g. [MDN: Cross-Origin Resource
-Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))
+refer to the related documentation (e.g. [MDN: Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS))
 and your specific server configuration guides.
 
 ## Same-site cookies and Secure cookies
@@ -163,12 +159,9 @@ example). Since the page is loaded with a different browser window URL
 than the page requests content, any resource served to the client with a
 relative URL will point to
 
-Loading resources with [
-lang-addon]({{site.baseurl}}/zk_client_side_ref/language_definition) The
-best way to globally add [
-stylesheets](ZK_Client-side_Reference/Language_Definition/stylesheet)
-and [
-scripts](ZK_Client-side_Reference/Language_Definition/javascript)
+Loading resources with [ lang-addon]({{site.baseurl}}/zk_client_side_ref/language_definition) The
+best way to globally add [ stylesheets](ZK_Client-side_Reference/Language_Definition/stylesheet)
+and [ scripts](ZK_Client-side_Reference/Language_Definition/javascript)
 to your application, and have these resources loaded as part of the
 embedding process is to declare them in lang-addon.
 
@@ -234,5 +227,4 @@ session. You can proactively clear desktops by reducing the session
 timeout for your web container.
 
 Alternatively, you can implement a desktop Watchdog on the basis of the
-desktop watchdog structure [\| described
-here](https://gist.github.com/cor3000/b7e7d1c988c105d2bac437ddcda10601).
+desktop watchdog structure [\| described here](https://gist.github.com/cor3000/b7e7d1c988c105d2bac437ddcda10601).

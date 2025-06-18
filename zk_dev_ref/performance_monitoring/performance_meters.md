@@ -81,8 +81,7 @@ requestId-1 - requestCompleteAtServer
 
 # Register as a Listener
 
-Once implemented, you need to register it as a [
-listener]({{site.baseurl}}/zk_config_ref/the_listener_element)
+Once implemented, you need to register it as a [ listener]({{site.baseurl}}/zk_config_ref/the_listener_element)
 in `WEB-INF/zk.xml` to make it work: (assume the class is called
 foo.MyMeter):
 

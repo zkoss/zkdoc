@@ -3,12 +3,10 @@
 This section describes what a language definition and addon are. It is
 required for component development. However, you could skip it if you
 won't develop components. For more information about component
-development, please refer to [ZK Component Development
-Essentials](ZK_Component_Development_Essentials).
+development, please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials).
 
 If you would like to change the default configuration of a ZK
-application, please refer to [ZK Developer's Reference: Packing
-Code]({{site.baseurl}}/zk_dev_ref/customization/packing_code).
+application, please refer to [ZK Developer's Reference: Packing Code]({{site.baseurl}}/zk_dev_ref/customization/packing_code).
 
 # Language Definition
 
@@ -48,8 +46,7 @@ This location makes the file accessible to the classpath.
 Specify the file path using the `<language-config>` element in
 **zk.xml**. This method allows you to use any file name for the
 configuration file. Learn more about this configuration at
-[\<language-config\> in
-zk.xml]({{site.baseurl}}/zk_config_ref/the_language-config_element).
+[\<language-config\> in zk.xml]({{site.baseurl}}/zk_config_ref/the_language-config_element).
 
 ## config.xml
 

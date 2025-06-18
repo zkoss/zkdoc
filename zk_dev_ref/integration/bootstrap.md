@@ -3,13 +3,10 @@ is a very popular front-end framework for building responsive,
 mobile-first sites. It can be a good companion for ZK with the following
 usages:
 
-- Layout a page with [the responsive grid
-  system](https://getbootstrap.com/docs/4.6/layout/grid/)
-- Style a page with [utility CSS
-  classes](https://getbootstrap.com/docs/4.6/utilities/borders/)
+- Layout a page with [the responsive grid system](https://getbootstrap.com/docs/4.6/layout/grid/)
+- Style a page with [utility CSS classes](https://getbootstrap.com/docs/4.6/utilities/borders/)
 
-See the integration example: [admin
-template](https://github.com/zkoss-demo/admin-template)
+See the integration example: [admin template](https://github.com/zkoss-demo/admin-template)
 
 # Include JAR
 

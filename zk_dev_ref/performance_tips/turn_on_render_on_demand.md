@@ -22,8 +22,7 @@ Listitems, the components will be all in memory, which does not give you
 any performance benefits on the server-side. (The client-side still
 enjoys a boost.)
 
-Notice that you can [ enable this feature in different
-scopes]({{site.baseurl}}/zk_config_ref/the_library_properties).
+Notice that you can [ enable this feature in different scopes]({{site.baseurl}}/zk_config_ref/the_library_properties).
 
 # Grid
 
@@ -162,8 +161,7 @@ and not paging (\<mold="paging"\>).
 
 # Tree
 
-To turn off ROD for a tree, you need to specify [
-org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.tree.initrodsize)
+To turn off ROD for a tree, you need to specify [ org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.tree.initrodsize)
 with -1:
 
 ```xml
@@ -172,8 +170,7 @@ with -1:
 
 # Limitation
 
-`hflex="min"` [ has a not-resizing
-limitation]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility_Doesn.27t_Change_a_Component.27s_Size_Dynamically),
+`hflex="min"` [ has a not-resizing limitation]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility_Doesn.27t_Change_a_Component.27s_Size_Dynamically),
 so if you specify it on a <grid>`/`<column>
 (<listbox>`/`<listheader>`, or `<tree>`/`<treecol>), a component doesn't
 resize the column when you scrolls down to see a wider item. Because the

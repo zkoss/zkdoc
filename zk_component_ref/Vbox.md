@@ -18,16 +18,13 @@ components will be placed underneath each other in a column.
 
 Notice that hbox and vbox are designed to provide a more sophisticated
 layout, such as splitter, alignment, and packing. If you need only the
-layout feature, it is suggested to use [
-Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [
-Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
+layout feature, it is suggested to use [ Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
 ## Splitlatyout
 
-If you need a splitter, please use [
-splitlayout](zk_component_ref/Layouts/Splitlayout).
+If you need a splitter, please use [ splitlayout](zk_component_ref/Layouts/Splitlayout).
 
 # Example
 
@@ -48,8 +45,7 @@ splitlayout](zk_component_ref/Layouts/Splitlayout).
 
 # Properties
 
-- **Inherited** Properties: [
-  Box]({{site.baseurl}}/zk_component_ref/containers/box#Properties)
+- **Inherited** Properties: [ Box]({{site.baseurl}}/zk_component_ref/containers/box#Properties)
 
 ## Align and Pack
 
@@ -147,8 +143,7 @@ You will see the Box width exceed 200px. Also check the
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Box]({{site.baseurl}}/zk_component_ref/containers/box#Supported_Events)
+- Inherited Supported Events: [ Box]({{site.baseurl}}/zk_component_ref/containers/box#Supported_Events)
 
 # Supported Children
 

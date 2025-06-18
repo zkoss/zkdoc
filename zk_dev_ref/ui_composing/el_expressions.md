@@ -2,8 +2,7 @@
 
 EL expressions are designed to make a ZUML document easier to access
 objects available in the application, such as the application data and
-parameters. For a complete introduction, please refer to [ZUML
-Reference/EL Expressions](ZUML_Reference/EL_Expressions).
+parameters. For a complete introduction, please refer to [ZUML Reference/EL Expressions](ZUML_Reference/EL_Expressions).
 
 An EL expression is an expression enclosed with `${` and `}`, i.e., the
 syntax `${expr}`. For example,
@@ -47,8 +46,7 @@ Multiple EL expressions could be specified in a single attribute:
 | \${empty param.add}            | true if the request parameter named `add` is null or an empty string |
 | \${param\['mycom.productId'\]} | The value of the request parameter named `mycom.productId`           |
 
-- The example is from [JSP
-  Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
+- The example is from [JSP Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
 - For more information please refer to
   [Operators](ZUML_Reference/EL_Expressions/Operators) and
   [Literals](ZUML_Reference/EL_Expressions/Literals).
@@ -78,12 +76,10 @@ For more information please refer to
 EL expressions are evaluated on the server when the page is rendered.
 Thus, an EL variable can access:
 
-- Components by [using its
-  ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+- Components by [using its ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
 - Variables defined in
   [zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
-- [Implicit
-  objects](ZUML_Reference/EL_Expressions/Implicit_Objects)
+- [Implicit objects](ZUML_Reference/EL_Expressions/Implicit_Objects)
 - Scoped attributes
 
 ```xml
@@ -183,8 +179,7 @@ every page.
 
 This can be done by specifying a variable resolver you have implemented
 in `WEB-INF/zk.xml` as follows. For more information, please refer to
-[ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
+[ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
 ```xml
 <listener>
@@ -193,9 +188,7 @@ Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 ```
 
 Then, when a page is created each time, an instance of the specified
-class will be instantiated and registered as if it is specified in [the
-variable-resolver
-element](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+class will be instantiated and registered as if it is specified in [the variable-resolver element](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 
 Notice that since a new instance of the variable resolver is created on
 each page, there will not be any concurrency issues.
@@ -254,8 +247,7 @@ called taglib, such as
 </taglib>
 ```
 
-Then, you can use them by specifying it in a [taglib
-directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
+Then, you can use them by specifying it in a [taglib directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
 
 ```xml
 <?taglib uri="/WEB-INF/tld/my.tld" prefix="my"?>

@@ -109,8 +109,7 @@ simply override CSS class *z-window-content*.
 
 ## Upgrade sample
 
-In this [
-smalltalk](https://www.zkoss.org/wiki/Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
+In this [ smalltalk](https://www.zkoss.org/wiki/Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
 we showed how to customize window component's close icon for all modes
 as follows:
 
@@ -144,8 +143,7 @@ In ZK 7, you can remove *-mode* part for all modes.
 
 ## Brief Summary
 
-To adapt this change for ZK 7, check [ Tip 3
-Appendix](#Tip_3_Appendix) for the complete list of related
+To adapt this change for ZK 7, check [ Tip 3 Appendix](#Tip_3_Appendix) for the complete list of related
 changes eliminating CSS classes.
 
 
@@ -294,8 +292,7 @@ In ZK 7, the CSS class name is change to full name
 
 In most situations, to upgrade to ZK 7.0 from ZK 6.5 based on these
 changes is to modify CSS class names with full naming patterns (from
-z-component-*shortname* to z-component-*fullname*). Check [ Tip 5
-Appendix](#Tip_5_Appendix) for the complete list of ZK 7 CSS
+z-component-*shortname* to z-component-*fullname*). Check [ Tip 5 Appendix](#Tip_5_Appendix) for the complete list of ZK 7 CSS
 class naming rule.
 
 
@@ -303,17 +300,14 @@ class naming rule.
 
 In order to reduce page loading time, we use font icons in ZK 7 to
 replace original image icons. There are a lot of web icon fonts on the
-market, here we integrate in ZK 7 with [Font Awesome
-4.0.1](http://fortawesome.github.io/Font-Awesome/). Thus, it is easy to
+market, here we integrate in ZK 7 with [Font Awesome 4.0.1](http://fortawesome.github.io/Font-Awesome/). Thus, it is easy to
 use font icons in ZK application by simply replace prefix **fa** to
-**z-icon**, for example, *z-icon-caret-up* represents a [triangle arrow
-up](http://fortawesome.github.io/Font-Awesome/icon/caret-up/) font icon.
+**z-icon**, for example, *z-icon-caret-up* represents a [triangle arrow up](http://fortawesome.github.io/Font-Awesome/icon/caret-up/) font icon.
 
 
 ## Upgrade Sample
 
-In this [
-smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2),
+In this [ smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2),
 we customize combobox button with custom image as follows:
 
 ```css

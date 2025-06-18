@@ -17,8 +17,6 @@ where the first line specifies the page title, the second line creates a
 root component with title and border, and the third line creates a
 button with label and an event listener.
 
-For introduction of ZUML, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml). If
-you are not familiar with XML, please take a look at [XML
-Background]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_background)
+For introduction of ZUML, please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml). If
+you are not familiar with XML, please take a look at [XML Background]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_background)
 first.

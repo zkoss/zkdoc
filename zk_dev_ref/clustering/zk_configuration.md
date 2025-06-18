@@ -19,14 +19,10 @@ session is about to deactivate.
 
 Please refer to the following links for detailed settings.
 
-- [Tomcat
-  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
-- [WebLogic
-  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)
-- [Google App
-  Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
-- [JBoss
-  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
+- [Tomcat Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
+- [WebLogic Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)
+- [Google App Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
+- [JBoss Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
 
 # Turn on Log
 
@@ -39,8 +35,7 @@ ignored since it is common for a developer to forget to declare a value
 or a listener as serializable.
 
 To detect this problem, you can turn on the logger for
-`org.zkoss.io.serializable` to the DEBUG level (). Please read [
-Logger](ZK_Developer's_Reference/Supporting_Utilities/Logger)
+`org.zkoss.io.serializable` to the DEBUG level (). Please read [ Logger](ZK_Developer's_Reference/Supporting_Utilities/Logger)
 for details.
 
 # Disable the Use of zscript
@@ -67,14 +62,12 @@ double check that none are enabled accidentally.
 
 ## Event Processing Thread
 
-Do not enable [ the event processing
-thread]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads).
+Do not enable [ the event processing thread]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads).
 The event processing thread might be suspended, while the (suspended)
 thread cannot be migrated from one machine to another.
 
 It is disabled by default. For more information, please refer to the
-[Event
-Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
+[Event Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
 section.
 
 ## Global Desktop Cache

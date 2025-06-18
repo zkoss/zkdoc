@@ -16,8 +16,7 @@ customizable.
 
 # Example
 
-[
-Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
+[ Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
 
 # Supported Events
 
@@ -46,8 +45,7 @@ gmarker component with latitude and longitude information.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Ginfo]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo#Supported_Events)
+- Inherited Supported Events: [ Ginfo]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo#Supported_Events)
 
 # Supported Children
 

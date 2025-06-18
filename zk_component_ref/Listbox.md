@@ -102,8 +102,7 @@ The Listbox has two molds: `default` and `select`.
 
 ## Select Mold
 
-Suggest using [
-Selectbox](zk_component_ref/essential_components/Selectbox).
+Suggest using [ Selectbox](zk_component_ref/essential_components/Selectbox).
 
 If the `select` mold is used, Listbox renders an HTML `<select>` tag
 instead.
@@ -177,8 +176,7 @@ you don't need to specify a paging component explicitly as above unless
 you want to have different visual layout or to control multiple
 `listbox` and `grid`controls with one paging component.
 
-Please refer to the [
-Grid]({{site.baseurl}}/zk_component_ref/data/grid#Paging) for more
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Paging) for more
 details.
 
 ## Autopaging
@@ -458,8 +456,7 @@ In other words, all other items will remain their selection state.
 
 If you prefer to **deselect all other items** and select the item being
 clicked (which the behavior of ZK 5.0.4 and earlier), you could specify
-true to this library property called [
-`org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.listbox.checkmarkdeselectothers)
+true to this library property called [ `org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.listbox.checkmarkdeselectothers)
 in `WEB-INF/zk.xml`:
 
 ```xml
@@ -894,8 +891,7 @@ child.
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [
-Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
 more details.
 
 ## Drop-Down List
@@ -1130,8 +1126,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 </zk>
 ```
 
-- For further details, please refer to [ Listhead
-  component]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)
+- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)
   directly.
 
 ## Ungroup Column Menu
@@ -1259,15 +1254,11 @@ supported in Grouping Grid, and Listbox with the
 
 For more information, please take a look at these smalltalks,
 
-- [ Learn About Grouping with Listbox and
-  Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
-- [ About How Grouping Works with Live
-  Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
-- [ Add Summary Field For
-  Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
+- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
-Or refer to [ Listgroup
-component]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)
+Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)
 directly.
 
 # Frozen Component
@@ -1298,8 +1289,7 @@ The following code demonstrates how to freeze a column within a Grid:
 
 {% include version-badge.html version=5.0.0 %}
 
-- For further details, please refer to [ Frozen
-  component]({{site.baseurl}}/zk_component_ref/frozen)
+- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Custom Attributes
@@ -1355,8 +1345,7 @@ the value as **ignore.change**.
 `[inherit: true]`
 
 It specifies whether to enable ROD (render-on-demand). For more
-information, please refer to [ZK Developer's Reference: Performance
-Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand).
+information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand).
 
 ## org.zkoss.zul.listbox.preloadSize
 
@@ -1467,8 +1456,7 @@ items.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

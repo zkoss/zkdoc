@@ -5,23 +5,19 @@
 First, you have to prepare a Web server. You can use any Web servers
 that support Java Servlet (2.3 or later). Here we introduce the
 installation of [Tomcat](http://tomcat.apache.org). For other servers
-and more information, please refer to [Setting up
-Servers](Setting_up_Servers).
+and more information, please refer to [Setting up Servers](Setting_up_Servers).
 
 1.  Visit [Tomcat Official Site](http://tomcat.apache.org/)
 2.  Select the correct binary distribution for your environment and
     download
-    - For Windows, you might download and execute [32-bit/64-bit Windows
-      Service
-      Installer](http://apache.stu.edu.tw//tomcat/tomcat-6/v6.0.29/bin/apache-tomcat-6.0.29.exe),
+    - For Windows, you might download and execute [32-bit/64-bit Windows Service Installer](http://apache.stu.edu.tw//tomcat/tomcat-6/v6.0.29/bin/apache-tomcat-6.0.29.exe),
       and then follow the instructions
     - For any download/installation problems, please refer to
       <http://tomcat.apache.org/tomcat-6.0-doc/index.html>
 
 ## Download ZK Libraries
 
-ZK libraries can be downloaded from [ZK
-Download](http://www.zkoss.org/download/zk.dsp) and then save it to a
+ZK libraries can be downloaded from [ZK Download](http://www.zkoss.org/download/zk.dsp) and then save it to a
 proper location.
 
 # Create your first application
@@ -63,13 +59,9 @@ The deployment descriptor is a heart of any J2EE web applications, so
 *every web application **must have** a web.xml deployment descriptor
 directly under <u>WEB-INF</u> folder*.
 
-- For the content of <u>web.xml</u>, please refer to [Sample of web.xml
-  for Servlet
-  3.0](ZK_Background/Sample_of_web.xml_for_Servlet_3.0),
-  [Sample of web.xml for Servlet
-  2.4](ZK_Background/Sample_of_web.xml_for_Servlet_2.4)
-  or [Sample of web.xml for Servlet
-  2.3](ZK_Background/Sample_of_web.xml_for_Servlet_2.3),
+- For the content of <u>web.xml</u>, please refer to [Sample of web.xml for Servlet 3.0](ZK_Background/Sample_of_web.xml_for_Servlet_3.0),
+  [Sample of web.xml for Servlet 2.4](ZK_Background/Sample_of_web.xml_for_Servlet_2.4)
+  or [Sample of web.xml for Servlet 2.3](ZK_Background/Sample_of_web.xml_for_Servlet_2.3),
   depending on your Web server support.
 
 ### Create First ZUL file
@@ -104,8 +96,7 @@ Here is a simple zul file named **hello.zul**.
 To run the application in Tomcat you have to copy the myZK.war into the
 folder TOMCAT_DIR/webapps/. Then start the application server using
 TOMCAT_DIR/bin/startup.bat (or startup.sh on linux). For additional
-information please check the [Tomcat deployment
-documentation](http://tomcat.apache.org/tomcat-6.0-doc/deployer-howto.html).
+information please check the [Tomcat deployment documentation](http://tomcat.apache.org/tomcat-6.0-doc/deployer-howto.html).
 
 After Tomcat is started the application should be available under
 (assuming the default tomcat configuration):

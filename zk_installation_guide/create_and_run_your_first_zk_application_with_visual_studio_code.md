@@ -12,23 +12,19 @@ choice. That being said a few pointers to get started below.
 
 ## Install Visual Studio Code
 
-Install VS Code from the [official
-website](https://code.visualstudio.com/).
+Install VS Code from the [official website](https://code.visualstudio.com/).
 
 ### Java Support in VS Code
 
 As ZK is based on JAVA the first thing to add is java support to VS Code
-[following the official
-guide](https://code.visualstudio.com/docs/languages/java).
+[following the official guide](https://code.visualstudio.com/docs/languages/java).
 
-The [Extension Pack for
-Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+The [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
 works sufficiently well.
 
 ### ZUL Support in VS Code
 
-The ZK plugin for VS Code is available in the [VS Code
-Marketplace](https://marketplace.visualstudio.com/items?itemName=zkoss.vscode-zk-autocomplete).
+The ZK plugin for VS Code is available in the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=zkoss.vscode-zk-autocomplete).
 
 Highlighted features include syntax highlighting, autocompletion,
 element/attribute suggestion, auto tag closing and linking to Java file.

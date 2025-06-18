@@ -74,8 +74,7 @@ these attributes. For example:
   can use JSP or whatever servlet you prefer.
 - From java code the request attributes are accessible via
   <javadoc class="true"  method="getAttribute(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>
-  or from the [requestScope (implicit
-  object)](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)/requestScope).
+  or from the [requestScope (implicit object)](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)/requestScope).
 
 ```java
 
@@ -123,8 +122,7 @@ users to report the errors manually or automatically extract and send
 them to an error handling service that is accessible at that time (not
 part of ZK).
 
-Please check [the list of error
-codes]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_init-crash-script_element).
+Please check [the list of error codes]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_init-crash-script_element).
 You can configure both the timeout and the error message presented to
 users with the elements below:
 
@@ -152,8 +150,7 @@ shown.
 ## Configure Error Handling Page
 
 You can customize the error handling by specifying the error page in
-`WEB-INF/zk.xml` as described in [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_error-page_element).
+`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_error-page_element).
 For example,
 
 ```xml
@@ -253,10 +250,7 @@ public class YourException extends java.io.IOException{...}
 
 Ref: <http://tracker.zkoss.org/browse/ZK-3679>
 
-Because `HttpServlet` only [throws these 2 checked exceptions
-(ServletException, IOException)
-above](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html#doGet-javax.servlet.http.HttpServletRequest-javax.servlet.http.HttpServletResponse-).
+Because `HttpServlet` only [throws these 2 checked exceptions (ServletException, IOException) above](https://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServlet.html#doGet-javax.servlet.http.HttpServletRequest-javax.servlet.http.HttpServletResponse-).
 
-[^1]: Please refer to Chapter 10.9 of [Java Servlet
-    Specification](http://download.oracle.com/otn-pub/jcp/servlet-3.0-fr-eval-oth-JSpec/servlet-3_0-final-spec.pdf)
+[^1]: Please refer to Chapter 10.9 of [Java Servlet Specification](http://download.oracle.com/otn-pub/jcp/servlet-3.0-fr-eval-oth-JSpec/servlet-3_0-final-spec.pdf)
     for more details.

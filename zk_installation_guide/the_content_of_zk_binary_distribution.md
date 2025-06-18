@@ -85,8 +85,7 @@ stated explicitly, it is shipped in all distributions.
 | zuljsp.jar     | Required if you want to use **ZK JSP** Tags.              | GPL     | ZK EE only        |
 
 - ckez.jar not shipped with the binary distribution since ZK 6.5.1. You
-  could get it from its [GitHub
-  repository](https://github.com/zkoss/zkckeditor/releases)
+  could get it from its [GitHub repository](https://github.com/zkoss/zkckeditor/releases)
 
 > ------------------------------------------------------------------------
 >
@@ -244,8 +243,7 @@ href="https://tracker.zkoss.org/browse/ZK-4712">ZK-4712</a>)</p></td>
 - The interpreters for Groovy (groovy.jar), Ruby (jruby.jar), Python
   (jython.jar), JavaScript (js.jar), MVEL (mvel.jar) and OGNL (ognl.jar)
   are not shipped with the binary distribution since ZK 6. You could get
-  them from their websites, or from [ZK's Git
-  repository](https://github.com/zkoss/zk/tree/master/dist/lib/ext).
+  them from their websites, or from [ZK's Git repository](https://github.com/zkoss/zk/tree/master/dist/lib/ext).
 
 ### /dist/src
 

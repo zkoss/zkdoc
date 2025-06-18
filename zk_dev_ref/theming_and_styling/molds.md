@@ -34,8 +34,7 @@ And you could set `tabbox`'s mold to "accordion" to change the look.
 
 # Supported Mold
 
-To know which mold a component supports, please refer to [ZK Component
-Reference](ZK_Component_Reference).
+To know which mold a component supports, please refer to [ZK Component Reference](ZK_Component_Reference).
 
 # Custom Mold
 

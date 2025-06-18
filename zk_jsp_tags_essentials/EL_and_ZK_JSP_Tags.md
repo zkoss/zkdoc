@@ -50,9 +50,7 @@ zscript variables directly:
 # ZK ID Space Concept in EL
 
 In pure ZK, the variable accessibility scope is based on the concept of
-ID Space(If you don't know what ID Space is for, please refer to [ZK
-Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space)).
+ID Space(If you don't know what ID Space is for, please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space)).
 In ZK JSP environment, it is totally the same as the pure ZK. For
 example:
 
@@ -100,9 +98,7 @@ or application's attributes. Like this:
 
 As you can see, you can get those variables back to zscript area using
 requestScope, sessionScope, and applicationScope. To know more about how
-to use these implicit ZK keywords, please refer to [ ZUML Reference:
-Implicit
-Objects](ZUML_Reference/EL_Expressions/Implicit_Objects).
+to use these implicit ZK keywords, please refer to [ ZUML Reference: Implicit Objects](ZUML_Reference/EL_Expressions/Implicit_Objects).
 
 Please be careful about using those implicit objects and their life
 cycles. For example, following example will show "null" instead of "This

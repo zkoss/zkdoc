@@ -28,10 +28,8 @@ not declared in taglib.
 Formats a Date into a date/time string with the given pattern, locale,
 timezone, date style, and time style.
 
-You can call it by [
-EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
-or declaring a [
-xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
+You can call it by [ EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
+or declaring a [ xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 
 > ------------------------------------------------------------------------
 >

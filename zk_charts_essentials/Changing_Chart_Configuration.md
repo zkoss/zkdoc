@@ -39,9 +39,7 @@ assign it to chart:
 # Look For Features You Need
 
 ZKChart is a ZK component that integrates Highcharts, please check
-[ZKChart Demo](https://www.zkoss.org/zkchartsdemo), [Highcharts
-Demo](https://www.highcharts.com/demo), or [Highcharts API
-Reference](https://api.highcharts.com/highcharts/) for features you want
+[ZKChart Demo](https://www.zkoss.org/zkchartsdemo), [Highcharts Demo](https://www.highcharts.com/demo), or [Highcharts API Reference](https://api.highcharts.com/highcharts/) for features you want
 and find the corresponding configuration options.
 
 # The API Corresponding to Highcharts Options
@@ -91,8 +89,7 @@ You can know the version of Highcharts bundled in ZK Charts by checking
 
 If you find there is a Highcharts option without a corresponding ZK
 Charts API, you still can set the option with `addExtraAttr()` method.
-For example, there is an option [series /
-fillOpacity](http://api.highcharts.com/highcharts/series%3Carea%3E.fillOpacity)
+For example, there is an option [series / fillOpacity](http://api.highcharts.com/highcharts/series%3Carea%3E.fillOpacity)
 without a setter available.
 
 ![](images/zkcharts-essentials-fillOpacity.png)

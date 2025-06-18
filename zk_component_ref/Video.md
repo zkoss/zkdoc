@@ -35,8 +35,7 @@ tag, and supports the following properties: `src`, `autoplay`,
 
 ## Supported Formats
 
-[mp4, WebM,
-ogg](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#File_formats)
+[mp4, WebM, ogg](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#File_formats)
 
 # autoplay
 
@@ -173,8 +172,7 @@ space (right image).
 
 # Display Subtitles
 
-To display subtitles or captions on a video, please see [
-Track]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track).
+To display subtitles or captions on a video, please see [ Track]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track).
 
 # StateChangeEvent
 
@@ -234,8 +232,7 @@ when invoking play(), stop() or pause().</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

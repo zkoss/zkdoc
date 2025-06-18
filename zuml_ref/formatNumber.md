@@ -23,10 +23,8 @@ For example,
 There is another extended built-in function, not declared in taglib:
 <javadoc method="formatNumber(java.lang.Object, java.lang.String, java.util.Locale)">org.zkoss.xel.fn.CommonFns</javadoc>.
 
-You can call it by [
-EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
-or declaring a [
-xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
+You can call it by [ EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
+or declaring a [ xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 
 **Parameters:** In both default and extended functions:
 

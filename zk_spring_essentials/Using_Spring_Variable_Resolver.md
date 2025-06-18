@@ -3,8 +3,7 @@
 Access Spring managed bean within ZK framework
 
 We assume you are already familiar with the Spring Framework - If not
-please **refer to the official and extensive [Spring Framework
-Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/).**
+please **refer to the official and extensive [Spring Framework Documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/).**
 
 ### DelegatingVariableResolver
 

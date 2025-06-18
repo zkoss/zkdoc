@@ -2,8 +2,7 @@
 
 # Auxhead
 
-- Demonstration: [Grid (Merged
-  Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
+- Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
 - Java API: <javadoc>org.zkoss.zul.Auxhead</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Auxhead</javadoc>
 
@@ -81,8 +80,7 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

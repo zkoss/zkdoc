@@ -40,8 +40,7 @@ By default, it is `au` which are the Ajax reqests sent by the widgets
 running at the client.
 
 If you want to specify the error page for the server push (comet-based),
-you have to specify `server-push` as shown in the example [
-below](#error-code)
+you have to specify `server-push` as shown in the example [ below](#error-code)
 
 ## device-type
 

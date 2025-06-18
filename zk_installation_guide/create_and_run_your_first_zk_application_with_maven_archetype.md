@@ -2,8 +2,7 @@
 
 # What is Archetype
 
-[Maven
-archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
+[Maven archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)
 serves as a pom.xml template. So you can start from a predefined
 template without writing everything from the scratch. It can help you
 quickly set up a Maven project with some predefined dependencies and
@@ -11,9 +10,7 @@ settings.
 
 # Create a Project based on Archetype
 
-Before starting, you need to [install
-maven](https://maven.apache.org/download.cgi) and [set
-up](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+Before starting, you need to [install maven](https://maven.apache.org/download.cgi) and [set up](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 first.
 
 - Go to your new project folder, then run the following command:

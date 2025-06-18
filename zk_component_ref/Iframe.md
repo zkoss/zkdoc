@@ -51,8 +51,7 @@ by use of `iframe`, as long as the client supports its format.
 </window>
 ```
 
-Live iframe demo is available [in the zk
-demo](https://www.zkoss.org/zkdemo/composite/iframe).
+Live iframe demo is available [in the zk demo](https://www.zkoss.org/zkdemo/composite/iframe).
 
 # The onURIChange Event
 
@@ -96,8 +95,7 @@ window, aka., another desktop if a ZUML document is included.
 It is illegal to access components attached to other desktops[^1]. If
 you want to retrieve component, you may use
 <javadoc>org.zkoss.zul.Include</javadoc> instead of
-<javadoc>org.zkoss.zul.Iframe</javadoc>. Or, you could use [Event
-Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+<javadoc>org.zkoss.zul.Iframe</javadoc>. Or, you could use [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
@@ -137,9 +135,7 @@ void publish() {
 }
 ```
 
-For more information please take a look at [ZK Developer's Reference:
-Event
-Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
+For more information please take a look at [ZK Developer's Reference: Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
 
 # onload
 
@@ -147,13 +143,11 @@ If you'd like to do something when iframe's content has been loaded, you
 could listen to the `onload` event. However, unlike onChange and others,
 you could not listen the widget-level event
 (<javadoc directory="jsdoc">zk.Event</javadoc> and listened by use of
-[Client-side Event
-Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)),
+[Client-side Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)),
 because the onload event might be fired before the widget has been bound
 to DOM.
 
-Rather, you shall use [the client-attribute
-namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+Rather, you shall use [the client-attribute namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 to register a DOM-level listener as follows.
 
 ```xml
@@ -194,8 +188,7 @@ to.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
@@ -217,6 +210,5 @@ to.</p></td>
 
 
 
-[^1]: For more information please refer to the [Component-based
-    UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+[^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
     section

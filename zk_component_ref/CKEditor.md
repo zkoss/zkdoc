@@ -2,12 +2,10 @@
 
 # ZK CKEditor
 
-- Demonstration: [WYSIWYG
-  Editor](http://www.zkoss.org/zkdemo/input/wysiwyg_editor)
+- Demonstration: [WYSIWYG Editor](http://www.zkoss.org/zkdemo/input/wysiwyg_editor)
 - Java API: N/A
 - JavaScript API: N/A
-- Source code: [GitHub
-  zkoss/zkckeditor](https://github.com/zkoss/zkckeditor) after 3.6.0.0.
+- Source code: [GitHub zkoss/zkckeditor](https://github.com/zkoss/zkckeditor) after 3.6.0.0.
 
 # Maven
 
@@ -22,8 +20,7 @@ has a different group id from ZK other components.
         </dependency>
 ```
 
-Check the latest version on [CE
-repository](http://mavensync.zkoss.org/maven2/org/zkoss/zkforge/ckez/).
+Check the latest version on [CE repository](http://mavensync.zkoss.org/maven2/org/zkoss/zkforge/ckez/).
 
 # Employment/Purpose
 
@@ -100,9 +97,7 @@ CKEditor will open a new window and list all images in the file browser.
 
 {% include version-badge.html version=3.6.0.2 %} If you wish to customize your own
 file browser, you can change the location by calling
-CKeditor.setFilebrowserImageUploadUrl(page_url), and refer to [CKEditor
-Developers
-Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
+CKeditor.setFilebrowserImageUploadUrl(page_url), and refer to [CKEditor Developers Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
 to create your custom file browser.
 
 # File upload
@@ -132,9 +127,7 @@ application can access its own folder.
 
 {% include version-badge.html version=3.6.0.2 %} If you wish to customize your own
 file upload handler, you can change the location by calling
-CKeditor.setFileUploadHandlePage(page_url), and refer to [CKEditor
-Developers
-Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
+CKeditor.setFileUploadHandlePage(page_url), and refer to [CKEditor Developers Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
 to create your custom file upload handler.
 
 # Copy-Paste Images
@@ -144,8 +137,7 @@ machine to CKEditor.
 
 {% include version-badge.html version=4.17.1.0 %} If file upload is enabled,
 pasting a local image will upload the image to the server. If it's
-disabled, pasting a local image will insert an image with [data
-URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
+disabled, pasting a local image will insert an image with [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
 
 # Custom Configuration
 
@@ -191,8 +183,7 @@ editor.setConfig(configMap);
 
 You can implement a custom plugin to enable the save button and fire the
 onChange event to the server to save the editor's content. Please refer
-to [the example
-zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/input/ckeditor.zul).
+to [the example zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/input/ckeditor.zul).
 
 ## Resizable attribute and Sizing
 
@@ -242,8 +233,7 @@ You can make CKEditor read-only with its config.
     /resources/**web/js/ckez/ext/CKeditor/plugins/**
 3.  setup in a custom config js
       
-    Then provide a **config.js** mentioned at [ Custom
-    Configuration](#Custom_Configuration).
+    Then provide a **config.js** mentioned at [ Custom Configuration](#Custom_Configuration).
 
 {% include Notice.html text="Since ZK Ckeditor is a Java wrapper of js
 CKEditor, the installed plugins just work at the client side and cannot
@@ -251,8 +241,7 @@ be controlled in Java by default." %}
 
 ## Example
 
-1.  Download [Line Height
-    plugin](https://ckeditor.com/cke4/addon/lineheight)
+1.  Download [Line Height plugin](https://ckeditor.com/cke4/addon/lineheight)
 2.  Put its js files under
       
     `/resources/web/js/ckez/ext/CKeditor/plugins/lineheight`
@@ -284,8 +273,7 @@ allowing existing users to transition smoothly and enjoy this
 next-generation experience.
 
 **Note on Licensing:** CKEditor 5 has a different license than CKEditor
-4. Before downloading ckeditor.js, check [CKEditor's official
-website](https://ckeditor.com/) to understand the terms and obtain the
+4. Before downloading ckeditor.js, check [CKEditor's official website](https://ckeditor.com/) to understand the terms and obtain the
 appropriate license for your project.
 
 ### Difference between CKEditor 5 and 4
@@ -356,8 +344,7 @@ or a local path under **webapp root**
 source code.
 
 **Note on Licensing:** CKEditor 5 has a different license than CKEditor
-4. Before downloading ckeditor.js, check [CKEditor's official
-website](https://ckeditor.com/) to understand the terms and obtain the
+4. Before downloading ckeditor.js, check [CKEditor's official website](https://ckeditor.com/) to understand the terms and obtain the
 appropriate license for your project.
 
 ## Supported editor types
@@ -522,8 +509,7 @@ for **Simple Upload**.
 Before starting, make sure you have downloaded the **Simple Upload**
 plugin.
 
-According to [documentation of Simple
-Upload](https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/simple-upload-adapter.html#configuration),
+According to [documentation of Simple Upload](https://ckeditor.com/docs/ckeditor5/latest/features/images/image-upload/simple-upload-adapter.html#configuration),
 we must set **simpleUpload.uploadUrl** with config object before we can
 upload files to our own server. This step **<span style="color:red">can
 be omitted</span>** in ZK CKEditor 5 Wrapper, because the bottom layer

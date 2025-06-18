@@ -36,8 +36,7 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 # Customized Properties
 
 Tbeditor provides a way for users to customize their own properties,
-check [official
-document](http://alex-d.github.io/Trumbowyg/documentation.html) for the
+check [official document](http://alex-d.github.io/Trumbowyg/documentation.html) for the
 details. (Not all properties are supported, for example, localization,
 and custom skin, are not supported.)
 

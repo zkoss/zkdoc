@@ -581,9 +581,7 @@ for an unauthenticated user (not log in yet), we can even do more:
 redirect the anonymous user to the login page. We will show how to
 achieve this in ZK:
 
-First, we have to catch the exception thrown in an event listener by [
-ZK error handling
-mechanism](ZK_Developer's_Reference/ui_patterns/Error_Handling),
+First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](ZK_Developer's_Reference/ui_patterns/Error_Handling),
 configure <error-page> in `zk.xml`.
 
 **zk.xml**
@@ -598,8 +596,7 @@ configure <error-page> in `zk.xml`.
 
 Then, create the error handling page. To avoid users visiting the page
 directly, we put it under `/WEB-INF`. This error handling page displays
-nothing but a [ page
-initiator]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization)
+nothing but a [ page initiator]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization)
 to redirect an unauthenticated user to the login page.
 
 **handleAccessDenied.zul**

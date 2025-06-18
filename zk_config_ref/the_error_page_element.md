@@ -25,8 +25,7 @@ For example,
     </error-page>
 ```
 
-For more information, please refer to [ZK Developer's Reference: Error
-Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/error_handling).
+For more information, please refer to [ZK Developer's Reference: Error Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/error_handling).
 
 # Acceptable Path
 

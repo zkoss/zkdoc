@@ -1072,8 +1072,7 @@ You can customize a chart's appearance by providing your own
 `ChartEngine`. It can save your effort by extending `JFreeChartEngine`
 and override its `prepareJFreeChart()`. Then manipulate the passed
 `JFreeChart` to change a chart's rendering. You also need to find
-related API in [JFreeChart
-JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
+related API in [JFreeChart JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
 
 ```xml
 <chart engine="foo.MyJfreeChartEngine"/>
@@ -1081,8 +1080,7 @@ JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
 
 # Supported Events
 
-- Inherited Supported Events: [
-  Imagemap]({{site.baseurl}}/zk_component_ref/essential_components/imagemap#Supported_Events)
+- Inherited Supported Events: [ Imagemap]({{site.baseurl}}/zk_component_ref/essential_components/imagemap#Supported_Events)
 
 # Supported Children
 
@@ -1101,8 +1099,7 @@ JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.19/overview-summary.html).
 
 Chart depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
-[ZK Installation Guide:
-Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
+[ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
 
 # Version History
 

@@ -93,5 +93,4 @@ If you need to generate the embedded HTML tags directly without the
 enclosing `SPAN` tag, you can use the xhtml component set or the native
 namespace as described in the following section.
 
-[^1]: Fore more information please refer to [ZUML
-    Reference](ZUML_Reference/ZUML/Texts).
+[^1]: Fore more information please refer to [ZUML Reference](ZUML_Reference/ZUML/Texts).

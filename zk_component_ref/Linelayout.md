@@ -22,8 +22,7 @@ the line area contains the line and the point.
 
 # Browser Support
 
-- This component is based on [CSS
-  Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) and is
+- This component is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) and is
   compatible with browsers that support CSS Flexbox such as IE11+,
   Chrome and Firefox. Please check browser compatibility before using
   it.
@@ -119,8 +118,7 @@ Please refer to FirstScale.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

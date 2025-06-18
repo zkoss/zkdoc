@@ -7,6 +7,5 @@ custom scopes for Spring-managed beans, and securing ZK components. In
 the following chapters, we will describe how to use these features with
 example codes and details.
 
-Please check [the example
-project](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec)
+Please check [the example project](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec)
 for sample usages.

@@ -27,8 +27,7 @@ selected releases will appear in your ZK Storage.
 
 ### Import ZK Binary Distribution From Local File System
 
-To download the latest ZK release, please visit [ZK Download
-Page](http://www.zkoss.org/download/zk).
+To download the latest ZK release, please visit [ZK Download Page](http://www.zkoss.org/download/zk).
 
 To import a ZK release from local file system, open the **ZK Storage
 View** and click on the **import** icon to import a ZK archive (for

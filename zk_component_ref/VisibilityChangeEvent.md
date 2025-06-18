@@ -13,8 +13,7 @@ This event is fired when users change a browser page visibility e.g.
 switch to another tab or switch back. You should listen to this event on
 the root component of a page.
 
-ZK implements it based on [W3C page
-visibility](http://www.w3.org/TR/page-visibility/).
+ZK implements it based on [W3C page visibility](http://www.w3.org/TR/page-visibility/).
 
 # Example
 
@@ -33,8 +32,7 @@ visibility](http://www.w3.org/TR/page-visibility/).
 ## Chatroom
 
 In a chatroom application, you detect a user who switches to another
-tab, then notify other users. Please check the [complete
-source](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/events/chatroom.zul).
+tab, then notify other users. Please check the [complete source](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/events/chatroom.zul).
 ![](chatroom.png)
 
 # Version History

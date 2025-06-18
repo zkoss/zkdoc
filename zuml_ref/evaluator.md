@@ -147,8 +147,7 @@ instantiation).
 
 In addition, the class's names specified in the import attribute must be
 a fully qualified name (including the package's name). In other words,
-it ignores the classes imported by [the import
-directive](ZUML_Reference/ZUML/Processing_Instructions/import).
+it ignores the classes imported by [the import directive](ZUML_Reference/ZUML/Processing_Instructions/import).
 
 # Version History
 

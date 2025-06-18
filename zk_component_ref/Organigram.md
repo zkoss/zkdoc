@@ -15,13 +15,11 @@ tree data structure, it also support TreeModel to hold data, Organigram
 only accept one `Orgchildren` as child, developers can put
 `Orgchildren`, `Orgitem` and `Orgnode` in `Organigram` to display data.
 
-`Organigram` supports [Client Render on
-Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
+`Organigram` supports [Client Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 
 # Browser Support
 
-- For IE, this component only supports 11+, it is based on [CSS
-  Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex),
+- For IE, this component only supports 11+, it is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex),
   please check browser compatibility before using it.
 
 # Example
@@ -109,11 +107,9 @@ Example:
 you can also render Organigram with your customized Renderer and
 Template, please refer to:
 
-[Organigram
-Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template)
+[Organigram Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template)
 
-[Organigram
-Renderer]({{site.baseurl}}/zk_dev_ref/mvc/view/renderer/organigram_renderer)
+[Organigram Renderer]({{site.baseurl}}/zk_dev_ref/mvc/view/renderer/organigram_renderer)
 
 # Supported Events
 
@@ -144,8 +140,7 @@ the user has selected a new item in the organigram.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

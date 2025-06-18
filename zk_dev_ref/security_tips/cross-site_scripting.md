@@ -1,7 +1,6 @@
 # Overview
 
-[Cross-site
-scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) (XSS) is a
+[Cross-site scripting](http://en.wikipedia.org/wiki/Cross-site_scripting) (XSS) is a
 type of computer security vulnerability typically found in web
 applications that enables malicious attackers to inject client-side
 scripts into web pages viewed by other users. Because HTML documents
@@ -33,16 +32,14 @@ alert('xss')
 
 ## Attributes to Generate Texts
 
-[
-Label](ZK_component_reference/essential_components/Label)
+[ Label](ZK_component_reference/essential_components/Label)
 component's `value` and those attributes that generate texts into a page
 including `label, title, tooltiptext, placeholder, name, type`, and
 message like `createMessage, emptyMessage`. (ZK encodes them with
 `zUtl.encodeXML()` at client-side.)
 
 Since ZK implicitly turns an EL expression like `${myMessage}` on a zul
-into a [
-Label](ZK_component_reference/essential_components/Label),
+into a [ Label](ZK_component_reference/essential_components/Label),
 so it's encoded, too.
 
 # What ZK Doesn't Encode
@@ -55,10 +52,8 @@ ZK provides several ways to write HTML tags in a zul, including
 
 <html>
 
-component\]\], [ native
-namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace),
-and [ xhtml
-components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set).
+component\]\], [ native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace),
+and [ xhtml components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set).
 Since their purpose is to allow you to write HTML tags directly, ZK
 doesn't encode them.
 
@@ -100,8 +95,7 @@ carefully.
 
 ## Client-side Actions
 
-The [client-side
-action]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects)
+The [client-side action]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects)
 is not encoded and the options are interpreted as a JSON object. In most
 cases we expect the values to come from the server-side. However, if you
 allow end-users to specify them (not recommended), you should encode
@@ -121,6 +115,5 @@ As a framework, ZK tries to maintain a good balance between flexibility
 and default settings. Regarding attributes that are not escaped by
 default, application developers should use ZK
 <javadoc method="escapeXML(java.lang.String)">org.zkoss.xml.XMLs</javadoc>
-or [Apache Commons Lang's
-StringEscapeUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringEscapeUtils.html)
+or [Apache Commons Lang's StringEscapeUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringEscapeUtils.html)
 to sanitize user input if you are taking user input as these attributes.

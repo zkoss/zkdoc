@@ -60,8 +60,7 @@ the menupopup will show up as shown below.
 ![]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
-refer to [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_tooltip-delay_element)
+refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_tooltip-delay_element)
 for more information.
 
 # Context Menus
@@ -181,8 +180,7 @@ format:
 </zk>
 ```
 
-Check [Popup
-Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
+Check [Popup Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
 for detailed description.
 
 The position is now more customizable and can be done by specifying a
@@ -217,8 +215,7 @@ For more details, refer to the [`data-scrollable` client attribute documentation
 
 ## Toggle Popup
 
-The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup
-Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#Toggle_Popup)
+The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#Toggle_Popup)
 for detailed description.
 
 ## Override the Reference Component
@@ -260,8 +257,7 @@ while.
 Like onClick, ZK Client Engine simulates the click, if the user touches
 the DOM element associated with the popup property.
 
-For more information, please refer to [Safari Developer
-Library](http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/HandlingEvents/HandlingEvents.html#//apple_ref/doc/uid/TP40006511-SW1).
+For more information, please refer to [Safari Developer Library](http://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/HandlingEvents/HandlingEvents.html#//apple_ref/doc/uid/TP40006511-SW1).
 
 # Version History
 

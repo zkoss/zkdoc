@@ -58,5 +58,4 @@ public void createData() {
 ```
 
 This code can then be incorporated to function as the in memory model
-for ZK Calendar. We discuss this in [ Presenting Event
-Data]({{site.baseurl}}/zk_calendar_essentials/working_with_zk_calendar/displaying_zk_calendar_event_data/presenting_event_data)
+for ZK Calendar. We discuss this in [ Presenting Event Data]({{site.baseurl}}/zk_calendar_essentials/working_with_zk_calendar/displaying_zk_calendar_event_data/presenting_event_data)

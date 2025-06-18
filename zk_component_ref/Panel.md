@@ -74,8 +74,7 @@ true. The example ZUL below shows a panel which can be resized.
 
 ## Draggable
 
-When used with [
-Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
+When used with [ Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
 the draggable property
 (<javadoc method="setDraggable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
 can be used to control whether the panel is draggable under the portal
@@ -132,8 +131,7 @@ Here is the effect with different borders:
 
 ## Title
 
-Besides this attribute, you could use [
-Caption]({{site.baseurl}}/zk_component_ref/containers/caption) to define
+Besides this attribute, you could use [ Caption]({{site.baseurl}}/zk_component_ref/containers/caption) to define
 a more sophisticated caption (aka., title). If the panel has a caption
 whose label <javadoc method="getLabel()">org.zkoss.zul.Caption</javadoc>
 is not empty, then this attribute is ignored. (Default: empty).
@@ -281,13 +279,11 @@ The</p>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-- [
-  Panelchildren]({{site.baseurl}}/zk_component_ref/containers/panel/panel_children)
+- [ Panelchildren]({{site.baseurl}}/zk_component_ref/containers/panel/panel_children)
 
 # Use Cases
 

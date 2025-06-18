@@ -72,8 +72,7 @@ time of restarting an application server.
 
 # Use a Server without Packaging and Deploying WAR
 
-Configure [Jetty maven
-plugin](https://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin) in a
+Configure [Jetty maven plugin](https://wiki.eclipse.org/Jetty/Feature/Jetty_Maven_Plugin) in a
 `pom.xml` can start your project in a few seconds which speeds up the
 iteration of writing code and testing.
 
@@ -94,5 +93,4 @@ iteration of writing code and testing.
 
 # Spring Boot
 
-With Spring Boot, please reference [this development
-config](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/java/org/zkoss/zkspringboot/demo/DevelopmentConfig.java).
+With Spring Boot, please reference [this development config](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/java/org/zkoss/zkspringboot/demo/DevelopmentConfig.java).

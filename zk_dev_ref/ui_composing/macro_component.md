@@ -4,8 +4,7 @@ There are two ways to implement a component. One is to implement a
 component in a Java class, extending from other component or one of the
 skeletal implementations with an optional JavaScript class. It is
 flexible and, technically, is also able to implement any functionality
-you want. For more information please refer to [ZK Component Development
-Essentials](ZK_Component_Development_Essentials).
+you want. For more information please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials).
 
 On the other hand, we could implement a new component by using the
 others and composing them in a ZUML page. In other words, we could
@@ -19,8 +18,7 @@ component and how to use it.
 
 There is a similar concept called composite components. Unlike macros,
 you could derive from any component but you have to do the loading of
-ZUML manually. For more information please refer to the [Composite
-Component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)
+ZUML manually. For more information please refer to the [Composite Component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)
 section.
 
 # Definition, Declaration and Use
@@ -53,8 +51,7 @@ macro component. Then we could create a page, say
 ## Declare Macro Component
 
 Before using a macro component, you have to declare it first. It is
-straightforward to use [component
-directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+straightforward to use [component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 For example, we could add the first line to the page that is going to
 use the *username* macro component:
 
@@ -118,8 +115,7 @@ ${arg.includer.parent}
 
 Notice that `arg.includer` is different from the so-called inline
 macros. The inline macros are special macro components and used for
-inline expansion. For more information please refer to [Inline
-Macros]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/inline_macros)
+inline expansion. For more information please refer to [Inline Macros]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/inline_macros)
 section.
 
 ## Pass Initial Properties
@@ -192,8 +188,7 @@ ua.setParent(wnd);
 ua.setWho("Joe");
 ```
 
-Please refer to the [Implement Custom Java
-Class]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class)
+Please refer to the [Implement Custom Java Class]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class)
 section for details.
 
 ## Change Template at Runtime

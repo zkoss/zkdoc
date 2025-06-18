@@ -57,11 +57,9 @@ In zk.xml
 
 ## API Key
 
-**Important:** Since 2016 an [API Key is
-mandatory](https://developers.google.com/maps/faq#keysystem) in order to
+**Important:** Since 2016 an [API Key is mandatory](https://developers.google.com/maps/faq#keysystem) in order to
 use the gmaps API. The APIKey is defined as a global JS variable as in
-the examples below. Also check out the [trouble
-shooting](#Trouble_Shooting) section. **NOTE**: You'll have
+the examples below. Also check out the [trouble shooting](#Trouble_Shooting) section. **NOTE**: You'll have
 to upgrade to version **3.0.4** (older versions don't work anymore)
 
 See [Example](#Example) below.
@@ -235,8 +233,7 @@ MapZoomEvent</a></p>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Work with MVVM
 

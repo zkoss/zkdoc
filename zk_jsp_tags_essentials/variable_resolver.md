@@ -12,8 +12,7 @@ The class must be specified in the `use` attribute[^1], and it must
 implement
 <javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>.
 
-For more information please refer to [ZUML
-Reference](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+For more information please refer to [ZUML Reference](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 
 Fir example,
 

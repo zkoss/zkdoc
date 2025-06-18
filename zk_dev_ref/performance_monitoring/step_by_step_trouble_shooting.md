@@ -41,8 +41,7 @@ YES
 
 **2. Is it a static resource?**
 
-YES (js, css, images...) → check [\#ZK Server
-Configuration](#ZK_Server_Configuration) (debug / cache /
+YES (js, css, images...) → check [\#ZK Server Configuration](#ZK_Server_Configuration) (debug / cache /
 compression) → STILL SLOW → [\#Network Issue](#Network_Issue)
 
 NO (dynamic request into ZK application)
@@ -55,9 +54,7 @@ NO (dynamic request into ZK application)
 **3. Which PHASE of the request is slowest ?**
 
   
-(wording based on Chrome developer tools - **EDIT** [Chrome updated
-wording and
-explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
+(wording based on Chrome developer tools - **EDIT** [Chrome updated wording and explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
 ![](/zk_dev_ref/images/chrome_developer_tools_network_timing.png)
 
@@ -147,15 +144,13 @@ with different browsers, to identify the configuration causing the
 issue.
 
 If client performance among configurations / browsers is equally bad,
-the issue will more likely be found in the Rendering area → [\#Client
-Side Profiling](#Client_Side_Profiling)
+the issue will more likely be found in the Rendering area → [\#Client Side Profiling](#Client_Side_Profiling)
 
 Once you identified the client side rendering takes very long, check the
 size of the response, if the Client engine needs to render a lot (e.g. a
 Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
-the data sent to the client using [Render on
-Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
+the data sent to the client using [Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 or
 [Pagination]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/use_live_data_and_paging)
 (Most users don't need 1000 lines visible at once)
@@ -312,8 +307,7 @@ value in IO wait times.
 You'll most likely know which external resources you are accessing in
 your code, so commenting these out and temporarily replacing them with
 mock implementations will help you exclude these culprits. If you are
-not aware of any external resources: continue with [ Server Side
-Profiling](#Server_Side_Profiling) to identify the places
+not aware of any external resources: continue with [ Server Side Profiling](#Server_Side_Profiling) to identify the places
 that take most time when creating the response.
 
 Here are some helpful tools to determine busy or waiting processes:
@@ -325,11 +319,9 @@ Linux:
 
 Windows:
 
-- [Process
-  explorer](http://technet.microsoft.com/en-us/sysinternals/bb896653) (a
+- [Process explorer](http://technet.microsoft.com/en-us/sysinternals/bb896653) (a
   better "task manager")
-- Perfmon.exe (please check [this
-  tutorial](http://www.computerperformance.co.uk/HealthCheck/Disk_Health.htm#Disk_Bottleneck_2)
+- Perfmon.exe (please check [this tutorial](http://www.computerperformance.co.uk/HealthCheck/Disk_Health.htm#Disk_Bottleneck_2)
   for more details)
 
 ### Performance Debugging/Logging/Tracing
@@ -391,10 +383,8 @@ There are several Profiling tools in various price ranges and there is
 JVisualVM (included in the JDK) so it should be available everywhere.
 
 This is a nice tutorial about how to get started with JVisualVM :
-[Profiling with VisualVM - Part
-1](https://blogs.oracle.com/nbprofiler/entry/profiling_with_visualvm_part_1)
-and [Part
-2](https://blogs.oracle.com/nbprofiler/entry/profiling_with_visualvm_part_2)
+[Profiling with VisualVM - Part 1](https://blogs.oracle.com/nbprofiler/entry/profiling_with_visualvm_part_1)
+and [Part 2](https://blogs.oracle.com/nbprofiler/entry/profiling_with_visualvm_part_2)
 
 **Sampling example using JVisualVM**
 
@@ -516,23 +506,20 @@ sessions consuming too much memory in ZK Desktops (containing the
 current component tree) for a user are stored in the session. Therefore
 one should check the following settings:
 
-- [ZK Session
-  Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/zk_session_cleaner)
+- [ZK Session Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/zk_session_cleaner)
 
   
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
-- [Session
-  Configuration]({{site.baseurl}}/zk_config_ref/the_session-config_element)
+- [Session Configuration]({{site.baseurl}}/zk_config_ref/the_session-config_element)
 
   
 check session timeout, either here or in web.xml
 
 check max desktops per session, if you want to put a limit here
 
-- [Desktop
-  Configuration]({{site.baseurl}}/zk_config_ref/the_desktop-config_element)
+- [Desktop Configuration]({{site.baseurl}}/zk_config_ref/the_desktop-config_element)
 
   
 if desktops stay alive too long, check the desktop timeout
@@ -542,8 +529,7 @@ browser crashes, this mechanism will not work and the desktop will stay
 in the session, until it times out, consuming memory for the complete
 component tree of the orphaned desktop.
 
-Also a good read: [10 Tips for using the Eclipse Memory
-Analyzer](http://eclipsesource.com/blogs/2013/01/21/10-tips-for-using-the-eclipse-memory-analyzer/)
+Also a good read: [10 Tips for using the Eclipse Memory Analyzer](http://eclipsesource.com/blogs/2013/01/21/10-tips-for-using-the-eclipse-memory-analyzer/)
 
 #### Monitoring ZK
 
@@ -590,9 +576,7 @@ related documentation
 If you see more Sessions than you expect, your session/desktop timeout
 might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
-[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops
-reusing
-desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops_reusing_desktops)
+[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops reusing desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops_reusing_desktops)
 can help.
 
 ### ZK Server Configuration
@@ -664,10 +648,8 @@ with JDK (or you can download from its website).
 
 You can watch the following :
 
-- [Introduction to Java
-  VisualVM](https://www.youtube.com/watch?v=z8n7Bg7-A4I)
-- [Ninjas’ guide to getting started with
-  VisualVM](https://engineering.talkdesk.com/ninjas-guide-to-getting-started-with-visualvm-f8bff061f7e7)
+- [Introduction to Java VisualVM](https://www.youtube.com/watch?v=z8n7Bg7-A4I)
+- [Ninjas’ guide to getting started with VisualVM](https://engineering.talkdesk.com/ninjas-guide-to-getting-started-with-visualvm-f8bff061f7e7)
 
 ## Limit Profile Packages
 

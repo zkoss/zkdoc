@@ -3,10 +3,7 @@
 Before creating a new ZK theme, web designers need to understand its
 directory structure, let's start off by discovering where the default
 theme (a.k.a. breeze) is. Basically, the default theme is contained
-inside three java archive files: zul.jar ([ZK
-CE](http://www.zkoss.org/product/edition.dsp)), zkex.jar ([ZK
-PE](http://www.zkoss.org/product/edition.dsp)) and zkmax.jar ([ZK
-EE](http://www.zkoss.org/product/edition.dsp)). **Note:** freshly or
+inside three java archive files: zul.jar ([ZK CE](http://www.zkoss.org/product/edition.dsp)), zkex.jar ([ZK PE](http://www.zkoss.org/product/edition.dsp)) and zkmax.jar ([ZK EE](http://www.zkoss.org/product/edition.dsp)). **Note:** freshly or
 evaluation versions will have special suffix to indicate the zk version
 and the build date. (e.g. zul-6.5.1.FL.20121204.jar).
 
@@ -116,8 +113,7 @@ public class MainViewModel {
 ```
 
 Now, the component style modifications shall begin. Please refer to this
-[
-smalltalk](https://www.zkoss.org/wiki/Small_Talks/2013/January/Packaging_Themes_Inside_Folders_in_ZK_6.5.2)
+[ smalltalk](https://www.zkoss.org/wiki/Small_Talks/2013/January/Packaging_Themes_Inside_Folders_in_ZK_6.5.2)
 for a more detailed example on doing this. Here would just summarize the
 steps.
 
@@ -239,8 +235,7 @@ if ("EE".equals(WebApps.getEdition()))
 ```
 
 This code fragment can be written in several places. For an example
-incorporating MVVM, please refer to the section [Modify the theme
-resource](#Modify_the_theme_resources). To make the
+incorporating MVVM, please refer to the section [Modify the theme resource](#Modify_the_theme_resources). To make the
 folder-based theme available at application startup, write a class
 implementing the
 [WebAppInit](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)
@@ -277,5 +272,4 @@ following configuration item.
 [^1]: ZK Default Theme Extractor Utility. Please download at
     [github](https://gist.github.com/raw/4334775/e5d669bb873443aa03f8febffccd3fc4b2518ecb/ztx.bat).
 
-[^2]: Please refer to [ZK Installation
-    Guide]({{site.baseurl}}/zk_installation_guide/before_you_start)
+[^2]: Please refer to [ZK Installation Guide]({{site.baseurl}}/zk_installation_guide/before_you_start)

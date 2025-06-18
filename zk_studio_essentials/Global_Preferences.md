@@ -19,8 +19,7 @@ proxy, you may setup proxy URL and port to make it work.
 This page shows the activation status of your ZK account. You can
 directly activate your ZK Forum account here. ![](images/studio-preference-account.png)
 
-For more information, please refer to [ Activate ZK
-Studio]({{site.baseurl}}/zk_studio_essentials/installation#Activate_ZK_Studio)
+For more information, please refer to [ Activate ZK Studio]({{site.baseurl}}/zk_studio_essentials/installation#Activate_ZK_Studio)
 
 # ZK Packages
 
@@ -33,8 +32,7 @@ version of your imported ZK Packages.
 ![](images/studio-preference-package.png)
 
 Another way to import ZK package is through ZK Storage view, please
-refer to [Configure ZK Binary
-Distribution]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks#Configure_ZK_Binary_Distribution)
+refer to [Configure ZK Binary Distribution]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks#Configure_ZK_Binary_Distribution)
 
 # ZUL Editor
 

@@ -1,7 +1,6 @@
 # ZK DSP Functions
 
-ZK provides many useful theme functions that can be used in [
-DSP]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
+ZK provides many useful theme functions that can be used in [ DSP]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
 files. Here we will introduce these functions that are used for CSS
 style.
 
@@ -160,9 +159,7 @@ For example,
 /* omitted */
 ```
 
-Here we define mixins according to [ Core
-Functions](#Core_Functions) and [ Theme
-Functions](#Theme_Functions) and extra useful mixins:
+Here we define mixins according to [ Core Functions](#Core_Functions) and [ Theme Functions](#Theme_Functions) and extra useful mixins:
 
 ## Core Functions in Mixins
 

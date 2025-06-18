@@ -50,8 +50,7 @@ to maintain a 1/3rd to 2/3rd width ratio.
 </div>
 ```
 
-[Git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/1-zkflex.zul)
+[Git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/1-zkflex.zul)
 
 # CSS flexible box
 
@@ -91,8 +90,7 @@ that CSS flex and ZK are not dependent on each-other.
 </div>
 ```
 
-[Git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/2-cssflex.jsp)
+[Git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/2-cssflex.jsp)
 
 # Bootstrap grid
 
@@ -147,8 +145,7 @@ system.
 <div class="box content2 col-xs-6">MenuItem 2</div>
 ```
 
-[Git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/3-bootstrapflex.jsp)
+[Git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/3-bootstrapflex.jsp)
 
 # CSS Media queries
 
@@ -181,8 +178,7 @@ system.
         [style set 2]
 ```
 
-[Git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/4-mediaquery.jsp)
+[Git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/4-mediaquery.jsp)
 
 # Media queries in CSS Bootstrap grid
 
@@ -218,8 +214,7 @@ or larger.
 <div class="box content1 col-xs-12 col-md-3">MenuItem 1</div>
 ```
 
-[Git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/5-bootstrapmediaquery.jsp)
+[Git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/fluidDesign/5-bootstrapmediaquery.jsp)
 
 # Applying the bootstrap grid system to ZK components
 
@@ -233,8 +228,7 @@ processing instructions, or style components.
 ```
 
 Alternatively, if the style is used in all pages, it can be deployed
-globally [through language
-definition]({{site.baseurl}}/zk_client_side_ref/language_definition/stylesheet),
+globally [through language definition]({{site.baseurl}}/zk_client_side_ref/language_definition/stylesheet),
 in lang-addon.xml:
 
 ```xml

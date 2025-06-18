@@ -6,10 +6,8 @@ focuses on distributed computing and web services.
 ZK Framework is based on the servlet specification, which is part of
 both Java EE and Jakarta EE specifications.
 
-More information about Jakarta EE is [available on the project's
-homepage](https://jakarta.ee/about/) More information about Java EE is
-[available on the project's
-homepage](https://www.oracle.com/java/technologies/java-ee-glance.html)
+More information about Jakarta EE is [available on the project's homepage](https://jakarta.ee/about/) More information about Java EE is
+[available on the project's homepage](https://www.oracle.com/java/technologies/java-ee-glance.html)
 
 From a ZK developer point of view, the differences between the two are
 minor. Different version of the servlet specification will provide

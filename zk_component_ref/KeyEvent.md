@@ -10,9 +10,7 @@
 
 Represents a key pressed by the user.
 
-For more information, please refer to [ZK Developer's Reference:
-Keystroke
-Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).
+For more information, please refer to [ZK Developer's Reference: Keystroke Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).
 
 # Example
 

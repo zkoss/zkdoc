@@ -7,15 +7,13 @@
 
 XML component sets. It is used to generate (static) XML document, such
 as [RSS feed](http://www.whatisrss.com/). For introduction please refer
-to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/xml_ouput).
+to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/xml_ouput).
 
 Most of XML elements with the XML namespace are mapped to a general XML
 component (<javadoc>org.zkoss.zml.XmlNativeComponent</javadoc>) that
 will generate the element and all its attributes to the client directly.
 
 However, the XML component set also provide some components for
-different functionality. For more information please refer to [ZK
-Component Reference]({{site.baseurl}}/zk_component_ref/xml_components).
+different functionality. For more information please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/xml_components).
 
 

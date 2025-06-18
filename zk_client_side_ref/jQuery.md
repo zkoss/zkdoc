@@ -11,8 +11,7 @@ jq(mySelector).css( "background-color" );
 ```
 
 You should consider implementing your client code with the bundled
-jQuery first. For API details, please refer to [jQuery
-Documentation](http://docs.jquery.com/Main_Page) for details.
+jQuery first. For API details, please refer to [jQuery Documentation](http://docs.jquery.com/Main_Page) for details.
 
 # Version
 

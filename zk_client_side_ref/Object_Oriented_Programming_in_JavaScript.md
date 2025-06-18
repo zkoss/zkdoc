@@ -10,16 +10,13 @@ Similar to Java, the JavaScript code is loaded on demand, but it is
 loaded on per-package basis rather than per-class (i.e., the whole
 package is loaded if needed).
 
-The dependence of the packages is defined in the so-called [Widget
-Package
-Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor)
+The dependence of the packages is defined in the so-called [Widget Package Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor)
 (aka., WPD). If it is about to load a package, all packages it depends
 will be loaded too.
 
 ## Define a Package
 
-A package is usually defined implicitly by the use of [a WPD
-file]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor),
+A package is usually defined implicitly by the use of [a WPD file]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor),
 such as
 
 ```xml

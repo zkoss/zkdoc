@@ -1,5 +1,4 @@
- With [component
-definitions]({{site.baseurl}}/zk_client_side_ref/language_definition/component),
+ With [component definitions]({{site.baseurl}}/zk_client_side_ref/language_definition/component),
 we could specify the initial values for the properties, attributes and
 annotations of a component. If you want to set the initial value of a property (such as `showTodayLink` for `Datebox`, or any other property for any component) globally across your application, you can use the language addon mechanism described above.
 
@@ -18,8 +17,7 @@ after instantiating a component).
 
 Suppose we want to assign `normal` to the border property
 (<javadoc method="setBorder(java.lang.String)">org.zkoss.zul.Window</javadoc>)
-of all windows in a ZUML document, then we could use [the component
-directive](ZUML_Reference/ZUML/Processing_Instructions/component)
+of all windows in a ZUML document, then we could use [the component directive](ZUML_Reference/ZUML/Processing_Instructions/component)
 as follows.
 
 ```xml
@@ -30,8 +28,7 @@ as follows.
 ## Application-wide Initialization
 
 If you prefer to have the same initial value for all ZUML documents, you
-could specify it in [a language
-addon]({{site.baseurl}}/zk_client_side_ref/language_definition). For
+could specify it in [a language addon]({{site.baseurl}}/zk_client_side_ref/language_definition). For
 example, we could prepare a file called `WEB-INF/lang-addon.xml` with
 the following content:
 
@@ -59,8 +56,7 @@ Then, we could specify this file by adding the following content to
     </language-config>
 ```
 
-For more information, please refer to [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_language-config_element).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_language-config_element).
 
 # Molds
 
@@ -101,8 +97,7 @@ initial value of a custom attribute in a ZUML document.
 ## Application-wide Initialization
 
 Similar to customizing the initial value of a property, you could
-specify the following in [a language
-addon]({{site.baseurl}}/zk_client_side_ref/language_definition) to
+specify the following in [a language addon]({{site.baseurl}}/zk_client_side_ref/language_definition) to
 assign an initial value of a attribute to a component.
 
 ```xml

@@ -1,12 +1,8 @@
 # Component Reference
 
-Component Reference: [
-Nav]({{site.baseurl}}/zk_component_ref/essential_components/nav), [
-Navbar]({{site.baseurl}}/zk_component_ref/essential_components/nav/navbar),
-[
-Navitem]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem),
-[
-Navseparator]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
+Component Reference: [ Nav]({{site.baseurl}}/zk_component_ref/essential_components/nav), [ Navbar]({{site.baseurl}}/zk_component_ref/essential_components/nav/navbar),
+[ Navitem]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem),
+[ Navseparator]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
 
 # DOM Structure
 
@@ -38,8 +34,7 @@ Navseparator]({{site.baseurl}}/zk_component_ref/essential_components/nav/navsepa
 
 - Line 1: **z-navbar-orient** represents Navbar orient
   (z-navbar-horizontal or z-navbar-vertical)
-- Line 7,17: Can be any Icon Font from [Font
-  Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
+- Line 7,17: Can be any Icon Font from [Font Awesome](http://fortawesome.github.io/Font-Awesome/icons/).
 
 # LESS Source
 
@@ -78,8 +73,7 @@ orient have different styles.
 ## LESS Variables
 
 The following LESS variables are used for Navbar, Nav, Navitem and
-Navseparator components. Check other variables from [
-here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+Navseparator components. Check other variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
 
 | Variables                   | Default Value                                   |
 |-----------------------------|-------------------------------------------------|
@@ -106,8 +100,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ this
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ this instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color

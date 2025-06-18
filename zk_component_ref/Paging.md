@@ -2,10 +2,7 @@
 
 # Paging
 
-- Demonstration: [Paging (with
-  Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with
-  Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with
-  Tree)](http://www.zkoss.org/zkdemo/tree/paging)
+- Demonstration: [Paging (with Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with Tree)](http://www.zkoss.org/zkdemo/tree/paging)
 - Java API: <javadoc>org.zkoss.zul.Paging</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Paging</javadoc>
 
@@ -42,8 +39,7 @@ When a user clicks on the hyperlinks, the `onPaging` event is sent with
 an instance of <javadoc>org.zkoss.zul.event.PagingEvent</javadoc> to the
 paging component. To decide which portion of your 100 items are visible,
 you should add a listener to the paging component. Please note that the
-code below is pseudo code. For real examples, please refer to [User
-Cases](#Use_Cases) below.
+code below is pseudo code. For real examples, please refer to [User Cases](#Use_Cases) below.
 
 ```xml
 <zk>
@@ -97,8 +93,7 @@ This attribute determines the max number of rendered paging anchors.
 
 # Limitation
 
-Paging can not apply [
-stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components)
+Paging can not apply [ stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components)
 at the same time. For example,
 
 ```xml
@@ -143,8 +138,7 @@ the user.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

@@ -1,7 +1,6 @@
 Unlike pages, you cannot access two desktops at the same time. You
 cannot send or post an event from one desktop to another directly
-either. Rather, we have to use [an event
-queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+either. Rather, we have to use [an event queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 with a proper scope, such as group, session or application -- depending
 on where the other desktop is located.
 
@@ -13,8 +12,7 @@ is still possible to have multiple desktops in one browser window:
 - Use HTML IFRAME or FRAMESET to integrate multiple ZUML pages
 - Use a portal server to integrate multiple ZK portlets
 - Assemble multiple ZUML pages at the client, such as the templating
-  technology described in [this
-  section]({{site.baseurl}}/zk_dev_ref/integration/use_zk_as_fragment_in_foreign_templating_framework)
+  technology described in [this section]({{site.baseurl}}/zk_dev_ref/integration/use_zk_as_fragment_in_foreign_templating_framework)
 
 In this case, you could communicate among desktops by the use of an
 event queue with the group scope
@@ -29,8 +27,7 @@ que.subscribe(new EventListener() {
 });
 ```
 
-Notice that the desktop-scoped event queue does not require [Server
-Push]({{site.baseurl}}/zk_dev_ref/server_push), so there is no
+Notice that the desktop-scoped event queue does not require [Server Push]({{site.baseurl}}/zk_dev_ref/server_push), so there is no
 performance impact at all.
 
 Here is a dumb example: chat among iframes.

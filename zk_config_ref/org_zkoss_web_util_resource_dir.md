@@ -7,8 +7,7 @@ The latest versions containing a fix are:
 
 - for CE users 8.0.2.2 or later
   [downloads](https://www.zkoss.org/download/zk)
-- for PE/EE users 6.5.8.2, 7.0.8.1, 8.0.2.2, 8.0.3.1 or later [premium
-  downloads](https://www.zkoss.org/download/premium)
+- for PE/EE users 6.5.8.2, 7.0.8.1, 8.0.2.2, 8.0.3.1 or later [premium downloads](https://www.zkoss.org/download/premium)
 
 **Property:**
 

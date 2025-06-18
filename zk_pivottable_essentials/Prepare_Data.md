@@ -77,8 +77,7 @@ model.setFieldType("Agent", PivotField.Type.ROW);
 model.setFieldType("Price", PivotField.Type.DATA);
 ```
 
-Here we don't set a Calculator, the [default calculator "sum or
-count"](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/impl/TabularPivotField.html#DEFAULT_CALCULATOR)
+Here we don't set a Calculator, the [default calculator "sum or count"](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/impl/TabularPivotField.html#DEFAULT_CALCULATOR)
 will be used.
 
 This will result in a Pivottable that looks like
@@ -114,8 +113,7 @@ Note:
 - You need **at least one data field**.
 
 Hint: If you can't wait to play around with the component, you can jump
-to [ next
-section]({{site.baseurl}}/zk_pivottable_essentials/working_with_pivottable/create_pivottable)
+to [ next section]({{site.baseurl}}/zk_pivottable_essentials/working_with_pivottable/create_pivottable)
 and come back to read further if necessary.
 
  

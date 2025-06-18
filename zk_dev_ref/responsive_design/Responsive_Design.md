@@ -14,8 +14,7 @@ segment the UI experience into multiple parts. These UI fragments would
 then be arranged based on the client's properties such as client width
 or device type.
 
-All examples can be found here : [Git
-sources](https://github.com/zkoss/zkbooks/tree/master/developersreference/developersreference/src/main/webapp/responsiveDesign)
+All examples can be found here : [Git sources](https://github.com/zkoss/zkbooks/tree/master/developersreference/developersreference/src/main/webapp/responsiveDesign)
 
 ## Definitions
 

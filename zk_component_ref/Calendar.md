@@ -17,9 +17,7 @@ The first day of the week is decided by the locale (actually the return
 value of the `getFirstDayOfWeek` method in the `java.util.Calendar`).
 
 Since 5.0.3, you can control the first day of the week by the use of the
-session attribute and the library property. Please refer to [The First
-Day of the
-Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
+session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
 for details.
 
 # Customization
@@ -82,16 +80,14 @@ Calendar supports to show a week number of the year. {% include edition-availabi
 {% include version-badge.html version=8.6.2 %}
 
 You can control the 2DigitYearStart by the use of the library property.
-Please refer to [
-org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.preferred.2digityearstart)
+Please refer to [ org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.preferred.2digityearstart)
 for details.
 
 # Constraint
 
 {% include version-badge.html version=8.5.2 %}
 
-This component also supports `constraint` like [ZK Component
-Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/input/datebox#Constraint)
+This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/input/datebox#Constraint)
 
 # Supported Events
 
@@ -115,8 +111,7 @@ EE]</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

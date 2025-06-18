@@ -19,6 +19,5 @@ example,
 
 Here is a list of the implementations that ZK supports by default. You
 could implement your own, if it does not fulfill your requirement. If
-the templating is stateful and dynamical, you might consider [ZK
-Spring](http://www.zkoss.org/product/zkspring.dsp) for using Spring Web
+the templating is stateful and dynamical, you might consider [ZK Spring](http://www.zkoss.org/product/zkspring.dsp) for using Spring Web
 Flow instead.

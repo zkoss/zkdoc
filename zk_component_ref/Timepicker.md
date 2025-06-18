@@ -54,9 +54,7 @@ than the real format as follows.
 ```
 
 Then the real format of the timepicker will be decided at run time
-depending the configuration. For more information, please refer to [ZK
-Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
+depending the configuration. For more information, please refer to [ZK Developer's Reference: Date and Time Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 ## Minimum Time
 
@@ -97,8 +95,7 @@ could specify the interval by using an integer (unit: 1 second).
 
 # Inherited Functions
 
-Please refer to [
-FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
+Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -122,8 +119,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Children
 

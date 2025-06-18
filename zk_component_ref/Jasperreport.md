@@ -33,15 +33,13 @@ dependency manually like:
 ## 3rd Party Vulnerability Notice
 
 Jasperreport uses another external library called itext 2, and there are
-[some
-vulnerabilities](https://security.snyk.io/package/maven/org.bouncycastle:bcprov-jdk15on)
+[some vulnerabilities](https://security.snyk.io/package/maven/org.bouncycastle:bcprov-jdk15on)
 reported on `org.bouncycastle:bcprov-jdk15on`, which is a dependency of
 itext 2. If you are concerned, you can exclude that dependency, it does
 not affect the use or the PDF exporting of this component.
 Alternatively, Jasperreport does provide a separate PDF Exporter with a
 newer version of itext which does not contain the affected bouncycastle
-lib. For more information, please check [JasperReports PDF Exporter Lib
-Seven](https://github.com/Jaspersoft/jasperreports-pdf-lib7).
+lib. For more information, please check [JasperReports PDF Exporter Lib Seven](https://github.com/Jaspersoft/jasperreports-pdf-lib7).
 
 # Example
 
@@ -131,8 +129,7 @@ Default: "report"
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Supported_Events)
+- Inherited Supported Events: [ Iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Supported_Events)
 
 # Supported Children
 
@@ -198,8 +195,7 @@ report.setType("pdf"); // report is the Jasperreport component
 ## Linux
 
 Jasperreport depends on the fonts you use in the report. For more
-information, please refer to [ZK Installation Guide:
-Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
+information, please refer to [ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
 
 # Version History
 

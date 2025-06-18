@@ -19,8 +19,7 @@ official ZK library to</b>, not your whole application.
 2.  Add **library-property** configuration to the
     <span style="color:green;font-style:italic;">zk.xml</span>
       
-    Document : [ZK Configuration Reference/zk.xml/The Library
-    Properties/org.zkoss.web.servlet.http.URLEncoder]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.servlet.http.urlencoder).
+    Document : [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.web.servlet.http.URLEncoder]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.servlet.http.urlencoder).
 3.  Host ZK static resource server
 
 Following is a sample :
@@ -81,5 +80,4 @@ public class TestEncoder implements URLEncoder {
 3.  deploy such special **ZK WAR** to a server near your customer and
     add the URL to your implementation of URLEncoder.
 
-<i>Don't know how to deploy on server ? Please refer to [Installation
-Guide](ZK_Installation_Guide)</i>.
+<i>Don't know how to deploy on server ? Please refer to [Installation Guide](ZK_Installation_Guide)</i>.

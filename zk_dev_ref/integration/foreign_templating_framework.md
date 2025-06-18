@@ -5,12 +5,9 @@ using Ajax to request ZUL pages separately in a foreign templating
 framework[^1].
 
 You could skip this chapter if you'd like to use ZK's templating
-technology, such as [Templating:
-composition]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/composition),
-[Servlet's
-inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
-(javax.servlet.RequestDispatcher's include) and [macro
-components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
+technology, such as [Templating: composition]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/composition),
+[Servlet's inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
+(javax.servlet.RequestDispatcher's include) and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
 
 ZK also supports many powerful layout components, such as portallayout,
 borderlayout, tablelayout, columnlayout and so on[^2]. You could use
@@ -135,8 +132,7 @@ anything described above).
 
 ### Server-side memory optimization: turn off browser cache
 
-As described in [Use ZK in
-JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#Browser_Cache),
+As described in [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#Browser_Cache),
 the memory footprint at the server can be improved by turning off the
 browser cache for the HTML page that will load ZUL pages later. For
 example, we could add `no-cache` and `expires` as follows (line 4 and
@@ -252,8 +248,7 @@ desktops.
 Since they are in different desktops, you have to use the *group-scoped*
 event queue[^5] if you want to send events from one desktop (such as
 leftside.zul) to another (such as rightside.zul). For more information,
-please refer to [Event
-Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
+please refer to [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
 
 > ------------------------------------------------------------------------
 >
@@ -269,11 +264,9 @@ Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
     framework and allows developers to assemble UI at both server and
     client.
 
-[^2]: For more information, please refer to [ZK Component
-    Reference](ZK_Component_Reference).
+[^2]: For more information, please refer to [ZK Component Reference](ZK_Component_Reference).
 
-[^3]: You might take a look at [Use ZK in
-    JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
+[^3]: You might take a look at [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
     for more information.
 
 [^4]: In short, component's UUID must be unquie in the same session. It

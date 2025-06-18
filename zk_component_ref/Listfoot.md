@@ -9,8 +9,7 @@
 
 # Employment/Purpose
 
-Like [
-Listhead]({{site.baseurl}}/zk_component_ref/data/listbox/listhead), each
+Like [ Listhead]({{site.baseurl}}/zk_component_ref/data/listbox/listhead), each
 listbox has at most one `Listfoot`.
 
 # Example
@@ -69,8 +68,7 @@ listbox has at most one `Listfoot`.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -15,8 +15,7 @@ Component designers are free to designate a component definition to any
 component set they prefer, as long as there is no name conflict[^1].
 
 For introduction of languages vs standard namespaces, please refer to
-[ZK Developer's
-References]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_namespaces).
+[ZK Developer's References]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_namespaces).
 
 # Language Identification
 
@@ -58,10 +57,8 @@ The default language is decided based on the extension of the filename
 (<javadoc method="getByExtension(java.lang.String)">org.zkoss.zk.ui.metainfo.LanguageDefinition</javadoc>).
 In addition, a language is associated with one or multiple extensions
 (defined by the component developer). For example, the extensions
-associated with the [xul/html
-language](ZUML_Reference/ZUML/Languages/ZUL) are `zul` and
-`xul`, while the [xhtml
-language](ZUML_Reference/ZUML/Languages/XHTML) (aka., a
+associated with the [xul/html language](ZUML_Reference/ZUML/Languages/ZUL) are `zul` and
+`xul`, while the [xhtml language](ZUML_Reference/ZUML/Languages/XHTML) (aka., a
 component set) is associated with the extensions including `zhtml`,
 `html`, `html`, and `xhtml`.
 
@@ -263,13 +260,10 @@ section.</p></td>
 | 5.0.4   | August, 2010  | The shortcut was introduced to make it easy to specify a standard namespace, such as native, client and zk. |
 | 5.0.5   | October, 2010 | The shortcut was introduced to make it easy to specify a component set, such as zul and zhtml.              |
 
-[^1]: For more information please refer to [ZK Component Development
-    Essentials](ZK_Component_Development_Essentials)
+[^1]: For more information please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials)
 
-[^2]: For more information please refer to the [Native
-    Namespace](ZUML_Reference/ZUML/Namespaces/Native) section
+[^2]: For more information please refer to the [Native Namespace](ZUML_Reference/ZUML/Namespaces/Native) section
 
-[^3]: Notice that there are so-called [Standard
-    Namespaces](ZUML_Reference/ZUML/Namespaces) associated
+[^3]: Notice that there are so-called [Standard Namespaces](ZUML_Reference/ZUML/Namespaces) associated
     with XML namespaces (for a ZUML document) to provide special
     functionality (than specify components).

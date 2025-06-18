@@ -2,16 +2,13 @@
 
 # ListModel
 
-- Demonstration: [Listbox (Live
-  Data)](http://www.zkoss.org/zkdemo/userguide/#g8)
+- Demonstration: [Listbox (Live Data)](http://www.zkoss.org/zkdemo/userguide/#g8)
 - Java API: <javadoc>org.zkoss.zul.ListModel</javadoc>
 - JavaScript API: N/A
 
 # Employment/Purpose
 
-This interface defines the methods that components like [
-Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and [
-Grid]({{site.baseurl}}/zk_component_ref/data/grid) use to get the
+This interface defines the methods that components like [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and [ Grid]({{site.baseurl}}/zk_component_ref/data/grid) use to get the
 content of items.
 
 # Example

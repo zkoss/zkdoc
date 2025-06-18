@@ -7,8 +7,7 @@
 </label-template>
 ```
 
-It specifies how to instantiate a label. When [the
-text](ZUML_Reference/ZUML/Texts) is found in a ZUML document,
+It specifies how to instantiate a label. When [the text](ZUML_Reference/ZUML/Texts) is found in a ZUML document,
 ZK Loader will first check if the so-called
 [text-as]({{site.baseurl}}/zk_client_side_ref/language_definition/component)
 property is defined. If so, the setter is called to pass the text to the

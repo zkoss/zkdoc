@@ -62,8 +62,7 @@ Session timeout.
 Sometimes it is better to redirect to another page that gives users a
 more complete description and guides them to the other resources, or
 asks them to login again. You can specify the target URI, that you want
-to redirect users to when timeout, with [the timeout-uri
-element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-uri_Element)
+to redirect users to when timeout, with [the timeout-uri element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-uri_Element)
 in `WEB-INF/zk.xml`. For example, the target URI is /timeout.zul and
 then you can add the following lines to zk.xml.
 
@@ -100,8 +99,7 @@ you can specify an empty URI as follows.
 # Total Control in JavaScript
 
 If you want more amazing effect, you could provide some JavaScript code
-and configure ZK to run it if timeout. For example, [our
-demo](http://www.zkoss.org/zkdemo) shows up a message on the top of
+and configure ZK to run it if timeout. For example, [our demo](http://www.zkoss.org/zkdemo) shows up a message on the top of
 window with some animation, and then automatically reloads if it detects
 any mouse move (it means the user is back).
 
@@ -124,8 +122,7 @@ JavaScript.
 By default, the session-timeout mechanism is triggered only if the
 client sends back a request (such as clicking on a button). If you
 prefer to prompt the user even if it doesn't do anything, you could
-specify the [automatic-timeout
-element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_automatic-timeout_Element)
+specify the [automatic-timeout element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_automatic-timeout_Element)
 in `WEB-INF/zk.xml` as follows.
 
 ```xml
@@ -141,8 +138,7 @@ message, redirecting to another page, or running some JavaScript code).
 ## Page-level Automatic Timeout
 
 If you want to specify whether to automatically timeout for particular
-pages, you can use [ the page
-directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
+pages, you can use [ the page directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
 
 Moreover, it is better to turn off the automatic timeout for the timeout
 page you want to redirect to (if the page is a ZUML page). For example,

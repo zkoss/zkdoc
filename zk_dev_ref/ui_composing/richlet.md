@@ -4,8 +4,7 @@
 
 A richlet is a small Java program that composes a user interface in Java
 for serving the user's request. Before composing UI in Java, we suggest
-you to know basic concept:[ UI Composing/Component-based
-UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+you to know basic concept:[ UI Composing/Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
 first.
 
 When a user requests the content of an URL, ZK Loader checks if the
@@ -84,8 +83,7 @@ public class TestRichlet extends GenericRichlet {
 ```
 
 In Richlet, you have to compose UI on your own, but some components only
-support specific child components. We recommend you to read [ZK
-Component Reference](ZK_Component_Reference) before you start
+support specific child components. We recommend you to read [ZK Component Reference](ZK_Component_Reference) before you start
 to build.
 
 As shown above (line 27), we have to invoke
@@ -260,16 +258,13 @@ methods, such as
 <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
 allowing developers to load ZUML documents dynamically. You could load a
 ZUML document from any source you like, such as database. Please refer
-to the [Load ZUML in
-Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)
+to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)
 for details.
 
 # Use Spring in Richlet
 
 To use Spring-managed beans in richlets you need the context loader
-listener that creates spring application context as described in [ZK
-Spring Essentials/Getting Started with ZK Spring/Setting Up ZK
-Spring]({{site.baseurl}}/zk_spring_essentials/getting_started_with_zk_spring/setting_up_zk_spring).
+listener that creates spring application context as described in [ZK Spring Essentials/Getting Started with ZK Spring/Setting Up ZK Spring]({{site.baseurl}}/zk_spring_essentials/getting_started_with_zk_spring/setting_up_zk_spring).
 Then you could load Spring beans by using a utility class
 <javadoc>org.zkoss.zkplus.spring.SpringUtil</javadoc>:
 
@@ -279,10 +274,8 @@ Then you could load Spring beans by using a utility class
 
 [^1]: A normal HTTP request; not an Ajax request. Ajax requests are
     handled in the same way as ZUML. For more information please refer
-    to the [Event
-    Handling]({{site.baseurl}}/zk_dev_ref/event_handling)
+    to the [Event Handling]({{site.baseurl}}/zk_dev_ref/event_handling)
     section
 
-[^2]: For more information, please refer to [Component-based
-    UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+[^2]: For more information, please refer to [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
     section

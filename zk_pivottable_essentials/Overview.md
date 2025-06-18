@@ -21,8 +21,7 @@ information much more easily from raw data.
 
 ## Live Demo
 
-You can also play with our [live
-demo](http://www.zkoss.org/zkdemo/application/pivottable).
+You can also play with our [live demo](http://www.zkoss.org/zkdemo/application/pivottable).
 
 # Download Example Codes
 

@@ -4,8 +4,7 @@ ZKComponentReferenceAccessibilityNamingReference.md %}
 
 Cardlayout is often used along with other components to achieve the
 carousel effect. If you are using cardlayout for carousel, check here
-for [carousel
-practice](https://www.w3.org/TR/wai-aria-practices/#carousel).
+for [carousel practice](https://www.w3.org/TR/wai-aria-practices/#carousel).
 
 ### Sample
 

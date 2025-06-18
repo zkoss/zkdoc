@@ -3,9 +3,7 @@ usages.
 
 # Get Charts
 
-Get a `Charts` by `wireComponents()`, please refer to [MVVM Reference /
-Wire
-Components](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/wire_components.html)
+Get a `Charts` by `wireComponents()`, please refer to [MVVM Reference / Wire Components](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/wire_components.html)
 
 ```java
 public class ShiftViewModel {

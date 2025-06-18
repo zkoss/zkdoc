@@ -1,5 +1,4 @@
-To track the Ajax traffic with [Google
-Analytics](http://www.google.com/analytics/) or other statistic
+To track the Ajax traffic with [Google Analytics](http://www.google.com/analytics/) or other statistic
 services, you have to override a client-side API:
 <javadoc directory="jsdoc" method="beforeSend(_global_.String, zk.Event, zk.Desktop)">\_global\_.zAu</javadoc>.
 This method will be called each time ZK Client is about to send an Ajax

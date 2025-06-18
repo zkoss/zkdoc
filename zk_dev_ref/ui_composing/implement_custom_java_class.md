@@ -61,12 +61,9 @@ As shown,
 <javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
 will wire variables, components and event listeners automatically, so we
 could access them directly (such as the `mc_who` member). For more
-information, please refer to [the Wire Components
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
-[the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
-and [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
+information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
+[the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
+and [Wire Event Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 sections.
 
 Also notice that the `arg` variable is still available to the template
@@ -81,8 +78,7 @@ though it is more useful if a custom implementation is provided.
 # Declare Macro with Custom Java Class
 
 To make ZK Loader know which custom Java class to use, we have to
-specify the `class` attribute when declaring it in the [component
-directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+specify the `class` attribute when declaring it in the [component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 For example,
 
 ```xml

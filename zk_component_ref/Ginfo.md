@@ -15,8 +15,7 @@ in pure text or HTML.
 
 # Example
 
-[
-Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
+[ Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
 
 # Supported Events
 
@@ -39,8 +38,7 @@ Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

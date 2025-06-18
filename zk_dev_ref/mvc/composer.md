@@ -17,8 +17,7 @@ Loader for doing:
 - Exception handling
 - Component instantiation monitoring and filtering
 
-A composer can be [configured as a system-level
-composer]({{site.baseurl}}/zk_config_ref/the_listener_element/the_org.zkoss.zk.ui.util.composer_interface),
+A composer can be [configured as a system-level composer]({{site.baseurl}}/zk_config_ref/the_listener_element/the_org.zkoss.zk.ui.util.composer_interface),
 such that it will be called each time a ZUML document is loaded.
 
 ## Implement Composers
@@ -91,12 +90,9 @@ such as
 
 - `@Listen("onClick = button[label='Clear']")`
 
-For more information, please refer to the following sections: [Wire
-Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
-[Wire
-Variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
-and [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
+For more information, please refer to the following sections: [Wire Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
+[Wire Variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
+and [Wire Event Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
 
 ## Apply Composers
 
@@ -105,8 +101,7 @@ component, so that the composer can control the associated components
 and its child components.
 
 Associating a composer to a component is straightforward: just specify
-the class to [the apply
-attribute](ZUML_Reference/ZUML/Attributes/apply) of the XML
+the class to [the apply attribute](ZUML_Reference/ZUML/Attributes/apply) of the XML
 element you want to control. For example,
 
 ```xml
@@ -265,8 +260,7 @@ with the
 annotation. As its name suggests,
 <javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
 will be used to retrieve Spring-managed beans when `@WireVariable` is
-encountered. For more information, please refer to [the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
+encountered. For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 
 Notice that the variables will be wired before instantiating the
 component and its children, so it is OK to access them in the ZUML
@@ -418,8 +412,7 @@ To register it, specify the composer you implemented in
 </listener>
 ```
 
-For more information, please refer to [ZK Configuration
-Reference/zk.xml]({{site.baseurl}}/zk_config_ref/the_listener_element).
+For more information, please refer to [ZK Configuration Reference/zk.xml]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
 Each time a ZK page, including ZK pages and richlets, is created, ZK
 will instantiate one instance for each registered system-level composer

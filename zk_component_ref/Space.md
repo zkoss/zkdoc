@@ -46,8 +46,7 @@ words, <space> is equivalent to <separator orient="horizontal">
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Separator]({{site.baseurl}}/zk_component_ref/essential_components/separator#Supported_Events)
+- Inherited Supported Events: [ Separator]({{site.baseurl}}/zk_component_ref/essential_components/separator#Supported_Events)
 
 # Supported Children
 

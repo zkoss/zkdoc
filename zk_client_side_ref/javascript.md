@@ -33,12 +33,10 @@ It specifies the package to load.
 `[Optional]`
 
 It specifies the URI of the JavaScript file to load. The URI can accept
-[ Classpath Web Resource
-Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
+[ Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
 `~./` (such as "~./foo/whatever.js").
 
-If this addon [ depends on another
-addon]({{site.baseurl}}/zk_client_side_ref/language_definition/depends),
+If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/language_definition/depends),
 ZK generates its javaScript into a output page's <code>
 
 <head>
@@ -69,8 +67,7 @@ element (without the `ondemand` attribute). In most cases, you shall use
 for packages that shall not be cached, such as your own locale-dependent
 messages.
 
-For more information, please refer to the [Performance
-Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/minimize_number_of_javascript_files_to_load)
+For more information, please refer to the [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/minimize_number_of_javascript_files_to_load)
 section.
 
 # ondemand

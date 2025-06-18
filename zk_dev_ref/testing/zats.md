@@ -71,8 +71,7 @@ public class HelloComposer extends SelectorComposer {
 }
 ```
 
-We write the test case with JUnit 4 annotation, please refer to [JUnit 4
-in 60 seconds](http://www.cavdar.net/2008/07/21/junit-4-in-60-seconds).
+We write the test case with JUnit 4 annotation, please refer to [JUnit 4 in 60 seconds](http://www.cavdar.net/2008/07/21/junit-4-in-60-seconds).
 
 The following test case will mimic a user clicking the button and verify
 whether or not the label's value is "Hello Mimic".

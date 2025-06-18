@@ -14,8 +14,7 @@ strings in the client's JavaScript engine. The ZK client engine uses
 evaluated scripts when building client-side objects. As a result, ZK
 clients require access to the "eval" source.
 
-[See the MDN CSP documentation for more
-information.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#unsafe_eval_expressions)
+[See the MDN CSP documentation for more information.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#unsafe_eval_expressions)
 
 ### 'unsafe-inline' source expression
 
@@ -33,8 +32,7 @@ such as wpd files containing widget classes.
 </script>
 ```
 
-[See the MDN CSP documentation for more
-information.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#unsafe_inline_script)
+[See the MDN CSP documentation for more information.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#unsafe_inline_script)
 
 ## Unsecured CSP for inline and eval scripts
 
@@ -54,8 +52,7 @@ and 'unsafe-eval' as allowed sources, we can use a nonce (a unique ID)
 declared in the CSP header to only allow properly identified scripts to
 be created by unsafe-inline and unsafe-eval sources.
 
-This can be achieved using the ['strict-dynamic'
-CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#strict-dynamic).
+This can be achieved using the ['strict-dynamic' CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#strict-dynamic).
 
 The 'strict-dynamic' source expression specifies a nonce (or hash),
 which acts as a one-time-use password. Scripts in this page which have
@@ -85,8 +82,7 @@ Response header:
 ```
 
 Note: When inspecting the script element from the browser's developer
-tools, [the nonce attribute will not be
-visible](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#nonce-attributes%3Aattr-nonce).
+tools, [the nonce attribute will not be visible](https://html.spec.whatwg.org/multipage/urls-and-fetching.html#nonce-attributes%3Aattr-nonce).
 This is intended, as it prevents other sources from trying to obtain a
 valid nonce in order to bypass security during the page lifecycle.
 
@@ -106,8 +102,7 @@ specified, the slot's value is the empty string.*
 ## Trust propagation
 
 Scripts which are trusted using 'strict-dynamic' may load additional
-scripts, which receive the same trust, as described in the [MDN
-documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#strict-dynamic).
+scripts, which receive the same trust, as described in the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src#strict-dynamic).
 
 *The 'strict-dynamic' source expression specifies that the trust
 explicitly given to a script present in the markup, by accompanying it
@@ -121,8 +116,7 @@ additional resources loaded by them.
 
 ## Creating a ZK CSP filter
 
-All code referenced in this section is available on the matching [Github
-project](https://github.com/zkoss/zkbooks/tree/master/csp-filter).
+All code referenced in this section is available on the matching [Github project](https://github.com/zkoss/zkbooks/tree/master/csp-filter).
 
 ### Java class
 
@@ -172,8 +166,7 @@ recompress the response content before writing it to the response.
     response.flushBuffer();
 ```
 
-[See full class in
-github.](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/java/org/zkoss/support/zkdemo_csp_filter/ZkCspFilterStrictDynamic.java)
+[See full class in github.](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/java/org/zkoss/support/zkdemo_csp_filter/ZkCspFilterStrictDynamic.java)
 
 ### Disable the Response Compression
 
@@ -196,8 +189,7 @@ disable the response compression in `DHtmlLayoutServlet`:
 
 This allows the capture wrapper in the filter before being compressed.
 
-[See
-here](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/webapp/WEB-INF/web.xml#L55-L58)
+[See here](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/webapp/WEB-INF/web.xml#L55-L58)
 
 We can then declare our filter, and set filter-mapping entries for ZK
 documents returned by the ZK layout servlet.
@@ -234,8 +226,7 @@ documents returned by the ZK layout servlet.
     </filter-mapping>
 ```
 
-See [web.xml in
-github](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/webapp/WEB-INF/web.xml#L10-L29full).
+See [web.xml in github](https://github.com/zkoss/zkbooks/blob/master/csp-filter/src/main/webapp/WEB-INF/web.xml#L10-L29full).
 
 ### resulting page response
 

@@ -2,8 +2,7 @@
 
 # Listhead
 
-- Demonstration: [Listbox
-  (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
+- Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: <javadoc>org.zkoss.zul.Listhead</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listhead</javadoc>
 
@@ -83,8 +82,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 `listItem`s will be categorized by the label of its children
 (`listcell`s). You could extend
 (<javadoc>org.zkoss.zul.ListitemComparator</javadoc>) and assign to the
-`listheader` ([sorting
-properties]({{site.baseurl}}/zk_component_ref/data/listbox#The_SortAscending_and_SortDescending_Properties))
+`listheader` ([sorting properties]({{site.baseurl}}/zk_component_ref/data/listbox#The_SortAscending_and_SortDescending_Properties))
 to change this default behavior.
 
 ### Customized Menupopup
@@ -165,8 +163,7 @@ For example,
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
+- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
 
 # Supported Children
 

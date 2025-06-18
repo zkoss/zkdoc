@@ -5,12 +5,10 @@
 `Default: ``false`
 
 A library property indicates that, if the time waiting for activation is
-longer than the value specified in [
-org.zkoss.zk.ui.activate.wait.retry.timeout]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.timeout),
+longer than the value specified in [ org.zkoss.zk.ui.activate.wait.retry.timeout]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.timeout),
 the activation will be aborted and the thread will end.
 
-It has no function if [
-org.zkoss.zk.ui.activate.wait.retry.timeout]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.timeout)
+It has no function if [ org.zkoss.zk.ui.activate.wait.retry.timeout]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.timeout)
 is not specified (with a positive value).
 
 ```xml

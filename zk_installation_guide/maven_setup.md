@@ -13,8 +13,7 @@ ZK has 3 editions:
 - **PE** (professional edition)
 - **EE** (enterprise edition)
 
-Please check [the description about ZK
-Editions](http://www.zkoss.org/product/edition.dsp) to know the
+Please check [the description about ZK Editions](http://www.zkoss.org/product/edition.dsp) to know the
 differences among them and find the proper edition for you.
 
 # Add ZK Maven Repository to Your Projects
@@ -65,8 +64,7 @@ technical problems in advance.
 
 ## PE / EE (premium users only)
 
-- <span style="color:red">**Notice**</span> : Needs [Login
-  authentication](#Login_authentication)
+- <span style="color:red">**Notice**</span> : Needs [Login authentication](#Login_authentication)
 
 If you are our customer or ZOL licensed user you can contact
 info@zkoss.org to apply for a premium maven account to use ZK PE/EE (or
@@ -86,8 +84,7 @@ any other licensed ZK product) maven repository.
 ### Login authentication
 
 Licensed Professional and Enterprise customers will be given a set of
-user names and password upon your request. According to the [official
-doc](http://maven.apache.org/settings.html#Servers) of Apache Maven,
+user names and password upon your request. According to the [official doc](http://maven.apache.org/settings.html#Servers) of Apache Maven,
 users can create global settings for maven.
 
 - Location (if not-existed, you can create it manually)
@@ -285,12 +282,10 @@ users can create global settings for maven.
 If you have problems switching from the evaluation repository to the
 licensed one, please check the followings:
 
-- 1\. Remove evaluation repository, [ use PE / EE repository
-  instead](#PE_.2F_EE_.28premium_users_only.29)
+- 1\. Remove evaluation repository, [ use PE / EE repository instead](#PE_.2F_EE_.28premium_users_only.29)
 - 2\. Check if [ Login authentication](#Login_authentication)
   is set up correctly
-- 3\. [ Delete cached local
-  copy](#Purge_local_repository_evaluation_cache)
+- 3\. [ Delete cached local copy](#Purge_local_repository_evaluation_cache)
 
 ### Purge local repository evaluation cache
 
@@ -336,8 +331,7 @@ mvn clean
 
 Depending upon your project requirements your project might depend on
 different ZK edition. You can declare these dependencies in the pom.xml
-file, and Maven can resolve them by automatically connecting to [ZK
-Maven repository](http://mavensync.zkoss.org/maven2). Here is how you
+file, and Maven can resolve them by automatically connecting to [ZK Maven repository](http://mavensync.zkoss.org/maven2). Here is how you
 can declare a dependency for the main ZK library and zul library for
 your project.
 
@@ -390,8 +384,7 @@ For Maven to successfully resolve these dependencies **groupid** and
 **artifactid** must match with those published on ZK Maven repository as
 they constitute what is known as Maven repository coordinates. For a
 complete list of all ZK library groupid and artifactid combinations
-please take a look at a [sample
-pom.xml](Setting_up_IDE/Maven/Use_ZK_Maven_Repository_without_IDE#Sample_of_pom.xml)
+please take a look at a [sample pom.xml](Setting_up_IDE/Maven/Use_ZK_Maven_Repository_without_IDE#Sample_of_pom.xml)
 file that lists dependencies for all publically available ZK libraries
 on ZK Maven repository.
 
@@ -643,8 +636,7 @@ This will be helpful when you modify your dependencies of projects.
 
 # BOM
 
-ZK provides a ["bill of materials"
-(BOM)](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management)
+ZK provides a ["bill of materials" (BOM)](http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management)
 which can be used by your projects simplify a pom.xml. You can use it as
 a parent POM or import it like:
 
@@ -662,10 +654,8 @@ a parent POM or import it like:
     </dependencyManagement>
 ```
 
-For a complete example, you can reference [pom.xml of this
-project](https://github.com/zkoss-demo/gettingStarted/tree/master/getZkUp).
-You can also read [a spring boot
-document](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html)
+For a complete example, you can reference [pom.xml of this project](https://github.com/zkoss-demo/gettingStarted/tree/master/getZkUp).
+You can also read [a spring boot document](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html)
 to understand BOM usage.
 
 # Version History

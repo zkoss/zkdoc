@@ -37,8 +37,7 @@ ZK determines the current locale in the following sequence:
     <javadoc>org.zkoss.lang.Library</javadoc>). If so, use it.
 4.  If none of them is found, it uses the locale defined in the Servlet
     request (i.e., `ServletRequest.getLocale()`). This is determined by
-    [the browser language
-    setting](https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DDesktop).
+    [the browser language setting](https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DDesktop).
 
 With this sequence in mind, you could configure ZK to use the correct
 locale based on the application requirements.

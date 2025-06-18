@@ -2,8 +2,7 @@
 
 # Listcell
 
-- Demonstration: [Listbox (Keystroke
-  Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
+- Demonstration: [Listbox (Keystroke Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
 - Java API: <javadoc>org.zkoss.zul.Listcell</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listcell</javadoc>
 
@@ -37,8 +36,7 @@ A list cell.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

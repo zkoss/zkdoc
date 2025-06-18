@@ -9,8 +9,7 @@ to be suspended.
 
 > ------------------------------------------------------------------------
 >
-> Notice that it is useless unless [the event processing
-> threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
+> Notice that it is useless unless [the event processing > threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
 > are enabled (it is disabled by default).
 
 If a listener implements this interface, an instance is created, and

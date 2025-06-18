@@ -2,8 +2,7 @@
 
 # Drawer
 
-- Demonstration: [Introduce a new ZK Addon:
-  Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
+- Demonstration: [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Drawer</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Drawer</javadoc>
 
@@ -53,8 +52,7 @@ close the Drawer.
 # Change Animation Speed
 
 This component respects the `data-animationspeed` attribute, please see
-[
-Data-AnimationSpeed](ZUML_Reference/ZUML/Namespaces/Client_Attribute/Data-AnimationSpeed)
+[ Data-AnimationSpeed](ZUML_Reference/ZUML/Namespaces/Client_Attribute/Data-AnimationSpeed)
 
 # Properties
 
@@ -122,8 +120,7 @@ component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

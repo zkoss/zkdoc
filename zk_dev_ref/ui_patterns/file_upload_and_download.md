@@ -87,8 +87,7 @@ server to a local folder. For example,
 ![](/zk_dev_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 The file could be a static resource, an input stream, a file, a URL and
-others. Please refer to [ZK Component
-Reference]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
+others. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
 and <javadoc>org.zkoss.zul.Filedownload</javadoc> for more information.
 
 ## File Download Link
@@ -100,5 +99,4 @@ for correct usages.
 
 [^1]: If you enabled the use of event threads, you could use
     <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> and
-    related. For more information, please refer to [the Event Thread
-    section]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads/file_upload).
+    related. For more information, please refer to [the Event Thread section]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads/file_upload).

@@ -7,8 +7,7 @@ beans' dependency injection relationship. We will talk about several
 integration ways including wiring and accessing beans in various
 conditions. We assume that readers have knowledge in Spring's basic
 configuration and concept such as bean scope, we will therefore not
-cover these topics here. Please refer to [Spring
-documentation](http://www.springsource.org/spring-framework#documentation).
+cover these topics here. Please refer to [Spring documentation](http://www.springsource.org/spring-framework#documentation).
 
 # Configuration
 
@@ -78,8 +77,7 @@ You can enable Spring's classpath scanning to register beans.
 
 # Access a Spring Bean in a ZUL
 
-ZUL provides a feature called [ variable
-resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
+ZUL provides a feature called [ variable resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
 that allows users to access Spring bean using EL expressions. Simply put
 the below directive on top of a ZUML page:
 
@@ -313,8 +311,7 @@ We recommend you to apply scoped-proxy on those beans used in a composer
 (or a ViewModel) and are not serialized during a session replication. A
 reference to a bean might be invalid after session replication in a
 clustering environment. Hence, even if you use a singleton bean, it's
-better to use the scoped proxy bean. See [Spring Framework
-Reference](https://docs.spring.io/spring-framework/docs/5.3.9/reference/html/core.html#beans-factory-scopes-other-injection)
+better to use the scoped proxy bean. See [Spring Framework Reference](https://docs.spring.io/spring-framework/docs/5.3.9/reference/html/core.html#beans-factory-scopes-other-injection)
 
 # ZK Spring Addon
 

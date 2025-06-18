@@ -2,8 +2,7 @@
 
 # Frozen
 
-- Demonstration: [Spreadsheet
-  Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
+- Demonstration: [Spreadsheet Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
 - Java API: <javadoc>org.zkoss.zul.Frozen</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Frozen</javadoc>
 
@@ -117,8 +116,7 @@ Make columns frozen at the right-hand side.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

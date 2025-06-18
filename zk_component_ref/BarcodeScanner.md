@@ -37,8 +37,7 @@ by enable="false".
 # Request Camera API permission
 
 Barcodescanner requires access to the camera API from the client's
-browser. Please refer to the [Camera component, Request Permission
-First]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/camera#Request_Permission_First)
+browser. Please refer to the [Camera component, Request Permission First]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/camera#Request_Permission_First)
 documentation section regarding API permissions requests and secure
 access.
 
@@ -306,8 +305,7 @@ barcode scanner detect a barcode message.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

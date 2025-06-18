@@ -93,8 +93,7 @@ configurations.
 You aren't required to add any special configuration for JPA to work.
 Here we add a Spring provided `OpernEntityMangerInViewFilter` to resolve
 an issue caused by lazy-fetching in one-to-many mapping. Please refer to
-[ Developer's
-Reference](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/integration/persistence Layer/JPA)
+[ Developer's Reference](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/integration/persistence Layer/JPA)
 for this issue in more detail.
 
 **Extracted from web.xml**

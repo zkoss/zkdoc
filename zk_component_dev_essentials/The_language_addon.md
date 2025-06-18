@@ -44,6 +44,4 @@ inside **<mold>**. You can specify more than one mold.
 After creating the component descriptor language-addon we need to create
 the widget package descriptor.
 
-For more information, please refer to [ZK Client-side Reference:
-Language
-Definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
+For more information, please refer to [ZK Client-side Reference: Language Definition]({{site.baseurl}}/zk_client_side_ref/language_definition).

@@ -11,7 +11,6 @@ specification is applicable, such as
 <javadoc>org.zkoss.zul.Grid</javadoc>. It basically contains all rich
 components for the Ajax devices (i.e., the browsers).
 
-For more information, please refer to [ZK Component
-Reference](ZK_Component_Reference).
+For more information, please refer to [ZK Component Reference](ZK_Component_Reference).
 
 

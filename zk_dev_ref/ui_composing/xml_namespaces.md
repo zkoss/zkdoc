@@ -1,12 +1,9 @@
 In a ZUML document, an XML namespace is used to identify either a
-special functionality or a component set. We call the former [a standard
-namespace](ZUML_Reference/ZUML/Namespaces) and the latter [a
-language](ZUML_Reference/ZUML/Languages).
+special functionality or a component set. We call the former [a standard namespace](ZUML_Reference/ZUML/Namespaces) and the latter [a language](ZUML_Reference/ZUML/Languages).
 
 # Standard Namespaces
 
-For example, the [client
-namespace](ZUML_Reference/ZUML/Namespaces/Client) is used to
+For example, the [client namespace](ZUML_Reference/ZUML/Namespaces/Client) is used to
 indicate that an XML attribute shall be interpreted as a client-side
 control.
 
@@ -38,8 +35,7 @@ should be generated *natively* rather than a component. For example,
 where `n:table`, `n:tr` and `n:td` are native, i.e., they are generated
 directly to the client without creating a component for each of them.
 
-For more information, please refer to [ZUML
-Reference](ZUML_Reference/ZUML/Namespaces).
+For more information, please refer to [ZUML Reference](ZUML_Reference/ZUML/Namespaces).
 
 # Languages
 
@@ -73,8 +69,7 @@ example, `foo.zul` implies the default language is
 [ZUL](ZUML_Reference/ZUML/Languages/ZUL). The default
 language is used if an XML element is not specified with any XML
 namespace. For example, `window` in the previous example will be
-considered as a component definition of [the ZUL
-langauge](ZUML_Reference/ZUML/Languages/ZUL).
+considered as a component definition of [the ZUL langauge](ZUML_Reference/ZUML/Languages/ZUL).
 
 If the extension is zhtml (such as `foo.zhtml`), the default language
 will be [XHTML](ZUML_Reference/ZUML/Languages/XHTML). Thus,
@@ -88,8 +83,7 @@ solve it, you could specify the XML namespace explicitly as follows.
 </p>
 ```
 
-For more information about identifying a language, pelase refer to [ZUML
-Reference](ZUML_Reference/ZUML/Languages#Language_Identification).
+For more information about identifying a language, pelase refer to [ZUML Reference](ZUML_Reference/ZUML/Languages#Language_Identification).
 
 # Version History
 

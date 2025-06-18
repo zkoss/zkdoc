@@ -44,8 +44,7 @@ For example, you could implement a SEORenderer listener to generate a
 snippet of JavaScript code that will be embedded into every page.
 
 Notice that, if specified, this class will be instantiated and invoked
-even if [the crawlable
-option]({{site.baseUrl}}/zk_config_ref/The_system-config_Element/The_crawlable_Element)
+even if [the crawlable option]({{site.baseUrl}}/zk_config_ref/The_system-config_Element/The_crawlable_Element)
 is not enabled.
 
 **Instantiation:** An independent instance of the given class is
@@ -55,9 +54,7 @@ lost after called.
 
 # Real Example
 
-You can also take a look at the ZK's blog about [another approach to SEO
-in ZK
-Applications](http://blog.zkoss.org/index.php/2011/03/17/make-zk-application-work-with-seo/).
+You can also take a look at the ZK's blog about [another approach to SEO in ZK Applications](http://blog.zkoss.org/index.php/2011/03/17/make-zk-application-work-with-seo/).
 
 > ------------------------------------------------------------------------
 >

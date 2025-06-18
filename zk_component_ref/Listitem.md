@@ -2,8 +2,7 @@
 
 # Listitem
 
-- Demonstration: [Listbox (Keystroke
-  Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
+- Demonstration: [Listbox (Keystroke Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
 - Java API: <javadoc>org.zkoss.zul.Listitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listitem</javadoc>
 
@@ -72,8 +71,7 @@ A list item.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -113,8 +111,7 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 
 # Use Cases
 
-See [
-Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Use_Cases).
+See [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Use_Cases).
 
 # Version History
 

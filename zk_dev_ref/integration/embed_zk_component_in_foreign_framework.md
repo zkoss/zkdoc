@@ -11,8 +11,7 @@ For the sake of description, we call it the embedded component.
 >
 > Note: If it is OK for your developers to work on ZUL directly, it is
 > more convenient and powerful to use the inclusion (such as
-> \<jsp:include\>) or [ZK JSP
-> Tags](http://www.zkoss.org/product/zkjsp.dsp), and you don't have to
+> \<jsp:include\>) or [ZK JSP > Tags](http://www.zkoss.org/product/zkjsp.dsp), and you don't have to
 > wrap them into a native element.
 
 # Prerequisite

@@ -121,8 +121,7 @@ can declare multiple pages like this:
 The rule to access variables across pages is the same as to do so in
 pure ZK document. For more detailed information about
 Page(<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>), please
-refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
+refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
 
 # Component Tag Declaration
 
@@ -171,8 +170,7 @@ Let us see a simple JSP page:
 To support ZK's dynamic component definition in JSP page parsing
 life-cycle, we introduced two JSP tags, one is for definition, the
 <z:component> tag, and the other is for declaration, the <z:ui> tag. In
-zk jsp demo( [downloadable archive is
-here](http://code.google.com/p/zkjsp/downloads/list)), you can take a
+zk jsp demo( [downloadable archive is here](http://code.google.com/p/zkjsp/downloads/list)), you can take a
 look at index.jsp to see how it works:
 
 ```xml

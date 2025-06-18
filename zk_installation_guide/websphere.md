@@ -23,10 +23,8 @@
 >
 > ZK supports Servlet 2.3, 2.4 and later. The only difference is the
 > content of WEB-INF/web.xml is a little bit different. Please refer to
-> [Sample of
-> web.xml](ZK_Background/Sample_of_web.xml)
-> and [Sample of web.xml for Servlet
-> 2.3](ZK_Background/Sample_of_web.xml_for_Servlet_2.3).
+> [Sample of > web.xml](ZK_Background/Sample_of_web.xml)
+> and [Sample of web.xml for Servlet > 2.3](ZK_Background/Sample_of_web.xml_for_Servlet_2.3).
 
 ### IBM WebSphere 7
 

@@ -2,8 +2,7 @@
 
 # Datebox
 
-- Demonstration: [Date and
-  Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
+- Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: <javadoc>org.zkoss.zul.Datebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Datebox</javadoc>
 
@@ -171,8 +170,7 @@ as follows.
 
 Then the real format of the datebox will be decided at run-time
 depending on the configuration. For more information, please refer to
-[ZK Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
+[ZK Developer's Reference: Date and Time Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 In addition, you could specify the format for both date and time by
 using the syntax:
@@ -189,8 +187,7 @@ For example,
 
 #### Warning
 
-Because [Java default locale provider changes since JDK
-9](http://openjdk.java.net/jeps/252), the built-in formats (e.g. `long`)
+Because [Java default locale provider changes since JDK 9](http://openjdk.java.net/jeps/252), the built-in formats (e.g. `long`)
 for some locales might change since JDK 9. We recommend you to use a
 fixed format pattern.
 
@@ -225,8 +222,7 @@ multiple-eras calendar systems including:
 ![](/zk_component_ref/images/jp-calendar.jpg)
 ![](/zk_component_ref/images/buddhist-calendar.jpg)
 
-See [complete locale
-list](https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html).
+See [complete locale list](https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html).
 
 Reference:
 [Era](https://docs.oracle.com/javase/8/docs/api/java/time/chrono/Era.html)
@@ -247,8 +243,7 @@ the return value of the `getFirstDayOfWeek` method in the
 
 {% include version-badge.html version=5.0.3 %} You can control the first day of the
 week by the use of the session attribute and the library property.
-Please refer to [The First Day of the
-Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
+Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
 for details.
 
 ## 2DigitYearStart
@@ -329,8 +324,7 @@ example:
 
 # Inherited Functions
 
-Please refer to [
-FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
+Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -358,8 +352,7 @@ the component is changed by user.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Molds
 

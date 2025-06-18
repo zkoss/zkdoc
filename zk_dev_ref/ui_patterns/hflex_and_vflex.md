@@ -21,8 +21,7 @@ has the same effect as leaving the flex attribute out entirely.
 # 2 Different Underlying Implementations
 
 ZK 9 implements hflex/vflex in a whole new, more performant way -- by
-[CSS3
-flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox),
+[CSS3 flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox),
 which is supported by modern browsers natively. With this change, it
 doesn't calculate an element's size in javascript thus improving the
 client-side performance. This change should be transparent for
@@ -34,8 +33,7 @@ still sets width by JavaScript.
 ## Fall Back to the Old Way
 
 However, if your application depends on the previous implementation, you
-can fall back by the property [
-org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.css.flex).
+can fall back by the property [ org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.css.flex).
 
 # Prerequisite: Parent Requires Width/Height Specified
 
@@ -365,9 +363,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 </table>
 
 For a complete list of controls that you could apply to the columns of
-grid, listbox and tree, please refer to [ZK Developer's Reference/UI
-Patterns/Grid's Columns and
-Hflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/grid's_columns_and_hflex).
+grid, listbox and tree, please refer to [ZK Developer's Reference/UI Patterns/Grid's Columns and Hflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/grid's_columns_and_hflex).
 
 # Flexibility versus Percentage
 
@@ -427,8 +423,7 @@ As described in the previous section, a vertical scrollbar will appear,
 since both the vertical padding and the 100% height are specified.
 
 **Solution**: you shall *not* change the default CSS styling of BODY.
-Rather, you could enclose the content with [the div
-component]({{site.baseurl}}/zk_component_ref/containers/div), and then
+Rather, you could enclose the content with [the div component]({{site.baseurl}}/zk_component_ref/containers/div), and then
 specify `vflex="1"` and the padding to the div component. For example,
 
 ```xml

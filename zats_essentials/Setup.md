@@ -80,8 +80,7 @@ Also remember to add dependencies of your preferred **unit test
 framework**, e.g. JUnit or TestNG.
 
 The above XML is just a sample, you can use another version available in
-[ZK Maven
-repository](http://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic-ext6/).
+[ZK Maven repository](http://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic-ext6/).
 
 ZATS mimic depends on Jetty (`org.eclipse.jetty:jetty-webapp`) and Rhino
 (`org.mozilla:rhino`), and these dependencies are already configured in

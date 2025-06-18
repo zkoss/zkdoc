@@ -42,9 +42,7 @@ and value `./abc`.
 
 If you'd like to apply an initiator for every page, you don't need to
 specify it on every page. Rather, you could install a system-level
-initiator. For more information, please refer to [ZK Developer's
-Reference: System-level
-Initiators]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization#System-level_Initiator).
+initiator. For more information, please refer to [ZK Developer's Reference: System-level Initiators]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization#System-level_Initiator).
 
 # class
 

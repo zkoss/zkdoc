@@ -66,8 +66,7 @@ Allow you to specify built-in icon CSS classes, see
 
 # Supported Events
 
-- Inherited Supported Events: [
-  LabelElement]({{site.baseurl}}/zk_component_ref/base_components/labelelement#Supported_Events)
+- Inherited Supported Events: [ LabelElement]({{site.baseurl}}/zk_component_ref/base_components/labelelement#Supported_Events)
 
 # Supported Children
 

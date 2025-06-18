@@ -2,8 +2,7 @@
 
 # Column
 
-- Demonstration: [Grid (Simple
-  Grid)](http://www.zkoss.org/zkdemo/grid/simple)
+- Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Column</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Column</javadoc>
 
@@ -92,8 +91,7 @@ cells under a column.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

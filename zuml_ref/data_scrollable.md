@@ -81,10 +81,6 @@ scrollbar, please use the following setting[^2].
 # references/
 * For more information, please refer to https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html
 
-* For more information, please refer to [ZK Component Reference
-    Tablet Devices:
-    Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/listbox#Friendly_Scrolling_Support),
-    [ZK Component Reference Tablet Devices:
-    Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/grid#Friendly_Scrolling_Support),
-    [ZK Component Reference Tablet Devices:
-    Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/tree#Friendly_Scrolling_Support).
+* For more information, please refer to [ZK Component Reference Tablet Devices: Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/listbox#Friendly_Scrolling_Support),
+    [ZK Component Reference Tablet Devices: Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/grid#Friendly_Scrolling_Support),
+    [ZK Component Reference Tablet Devices: Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/tree#Friendly_Scrolling_Support).

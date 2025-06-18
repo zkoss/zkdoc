@@ -33,8 +33,7 @@ In addition, you could specify an additional configuration file in a
 library or system property called `org.zkoss.zk.config.path`. It is
 useful if some of the configuration can not be part of the WAR file
 (such as depending on the deployment environment). For more information,
-please refer to [this
-section]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.config.path).
+please refer to [this section]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.config.path).
 
 Notice that `zk.xml` found in the classpath is parsed first, then
 `WEB-INF/zk.xml`, and finally the additional configuration file. It
@@ -59,5 +58,4 @@ xsi:schemaLocation="http://www.zkoss.org/2005/zk/config http://www.zkoss.org/200
 The ZK schema can be downloaded from
 [<http://www.zkoss.org/2005/zk/config/zk.xsd>](http://www.zkoss.org/2005/zk/config/zk.xsd).
 In addition, you can find `zk.xsd` under the `dist/xsd` directory in the
-[ZK binary
-distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
+[ZK binary distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).

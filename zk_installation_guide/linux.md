@@ -21,8 +21,7 @@ sudo /etc/init.d/tomcat6 restart
 # Jaspserreport
 
 [Jasperreprot]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/jasperreport)
-is based on [the JasperReports
-project](http://jasperforge.org/projects/jasperreports). To make it run
+is based on [the JasperReports project](http://jasperforge.org/projects/jasperreports). To make it run
 correctly under Linux, you have to make sure all fonts that you use are
 installed.
 
@@ -32,8 +31,7 @@ sudo /etc/init.d/tomcat6 restart
 ```
 
 The procedure to install fonts might depend on the version you use.
-Please refer to [this
-discussion](http://stackoverflow.com/questions/3218732/jasper-reports-pdf-generation-issue)
+Please refer to [this discussion](http://stackoverflow.com/questions/3218732/jasper-reports-pdf-generation-issue)
 for more information.
 
 

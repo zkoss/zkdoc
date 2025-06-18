@@ -11,8 +11,7 @@
 
 # Employment/Purpose
 
-A component similar to [
-Combobox]({{site.baseurl}}/zk_component_ref/input/combobox) but handles
+A component similar to [ Combobox]({{site.baseurl}}/zk_component_ref/input/combobox) but handles
 the multi-selection and the select order.
 
 # Example
@@ -236,8 +235,7 @@ selected tag.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Molds
 

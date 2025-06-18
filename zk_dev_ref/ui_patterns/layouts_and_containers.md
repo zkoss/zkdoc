@@ -10,8 +10,7 @@ Users are allowed to nest one from another to create desired UI.
 
 This section provides brief introductions for some of the layout
 components in ZK. For detailed information and the complete list of
-layouts, please refer to [ZK Component Reference:
-Layouts]({{site.baseurl}}/zk_component_ref/layouts).
+layouts, please refer to [ZK Component Reference: Layouts]({{site.baseurl}}/zk_component_ref/layouts).
 
 ## Hlayout and Vlayout
 
@@ -391,8 +390,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 ### Grown by children
 
 - To make Borderlayout dependent on the size of its child components,
-  [vflex
-  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
+  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
@@ -599,8 +597,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 This section provides a brief introduction for some of the container
 components in ZK. For detailed information and a complete list of
-containers, please refer to [ZK Component Reference:
-Containers]({{site.baseurl}}/zk_component_ref/containers).
+containers, please refer to [ZK Component Reference: Containers]({{site.baseurl}}/zk_component_ref/containers).
 
 ## Div and Span
 
@@ -669,8 +666,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 [Window]({{site.baseurl}}/zk_component_ref/containers/window) is a
 container providing captioning, bordering, overlapping, draggable,
 closable, sizable, and many other features. Window is also the owner of
-[an ID
-space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), such
+[an ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), such
 that each child component and its IDs are in one independent window so
 as to avoid the IDs of child components conflicting with one another.
 

@@ -1,7 +1,6 @@
 # Overview
 
-With the [native
-namespace](ZUML_Reference/ZUML/Namespaces/Native), an XML
+With the [native namespace](ZUML_Reference/ZUML/Namespaces/Native), an XML
 element in a ZUML document will be interpreted as a native tag that will
 be sent to the browser directly, rather than becoming a ZK component.
 
@@ -60,16 +59,13 @@ code snippet is incorrect, since there is no component called `x`.
 
 If you want to change them dynamically, you could:
 
-1.  Use [client-side
-    code]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
+1.  Use [client-side code]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
     to modify the browser's DOM tree at the client. Notice that, since
     ZK doesn't create the widget at the client too, you have to
     manipulate the DOM tree directly.
-2.  Use the [html
-    component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
+2.  Use the [html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
     if you won't mix ZUL with HTML tags.
-3.  Use [XHTML component
-    set]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set)
+3.  Use [XHTML component set]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set)
     as described in the following section.
 
 For example, we can modify the DOM tree with jQuery as follows:
@@ -81,13 +77,10 @@ For example, we can modify the DOM tree with jQuery as follows:
 </zk>
 ```
 
-The rule of thumb is to use [the native
-namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
+The rule of thumb is to use [the native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 if possible. If you need to change the content dynamically, you might
-consider [the html
-component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
-first. If still not applicable, use [the XHTML component
-set](ZUML_Reference/ZUML/Languages/XHTML).
+consider [the html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
+first. If still not applicable, use [the XHTML component set](ZUML_Reference/ZUML/Languages/XHTML).
 
 # Relation with Other Components
 

@@ -57,6 +57,4 @@ example, the following is the content of `zul.db`'s WPD:
 </package>
 ```
 
-For more information, please refer to [ZK Client-side Reference: Widget
-Package
-Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor).
+For more information, please refer to [ZK Client-side Reference: Widget Package Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor).

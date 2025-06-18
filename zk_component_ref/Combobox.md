@@ -30,10 +30,7 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox), [
-Listbox select
-mold]({{site.baseurl}}/zk_component_ref/data/listbox#Select_Mold) or [
-Selectbox](zk_component_ref/essential_components/Selectbox).
+[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/data/listbox#Select_Mold) or [ Selectbox](zk_component_ref/essential_components/Selectbox).
 
 ```xml
 <style>
@@ -383,8 +380,7 @@ Combobox button icon.
 
 # Inherited Functions
 
-Please refer to [
-Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
+Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
 functions.
 
 # Supported Events
@@ -433,8 +429,7 @@ the component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
+- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
 
 # Supported Molds
 

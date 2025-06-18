@@ -42,10 +42,8 @@ feature.
 Notice that, since there is at most one thread to access the UI of a
 given desktop, the event listener must NOT be time-consuming. Otherwise,
 it will block other event listeners from execution. Thus, if you have a
-long operation to do, you could use [event queue's asynchronous event
-listener]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues#Asynchronous_Event_Listener),
-or implement it as [a synchronous
-task]({{site.baseurl}}/zk_dev_ref/server_push/synchronous_tasks)
+long operation to do, you could use [event queue's asynchronous event listener]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues#Asynchronous_Event_Listener),
+or implement it as [a synchronous task]({{site.baseurl}}/zk_dev_ref/server_push/synchronous_tasks)
 and handle lengthy operation outside of the activation block.
 
 # Version History

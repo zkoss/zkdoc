@@ -112,8 +112,7 @@ Clients.showBusy(window, "Waiting for server...");
 
 {% include version-badge.html version=6.0.1 %}
 [Clients.showNotification()](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification-java.lang.String) {% include version-badge.html version=9.0.0 %} It is
-advised to use [Notification
-class](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html) which was introduced in ZK 9 instead.
+advised to use [Notification class](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html) which was introduced in ZK 9 instead.
 
 Shows a notification box, which is dismissed upon left click (like a
 Popup). You can either display a global notification (bigger) or a

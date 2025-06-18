@@ -278,8 +278,7 @@ explicitly, it is the same as the `paging` property.
 
 ## The Paging Property
 
-It is a read-only attribute representing the child [
-Paging](zk_component_ref/paging)
+It is a read-only attribute representing the child [ Paging](zk_component_ref/paging)
 component that is created automatically. It is null if you assign
 external paging via the `paginal` attribute. You rarely need to access
 this attribute as it is generally better to use the `paginal` attribute.
@@ -936,8 +935,7 @@ developers to add more information on each row. For example,
             </detail>
 ```
 
-- For further details, please refer to [ Detail
-  component]({{site.baseurl}}/zk_component_ref/detail)
+- For further details, please refer to [ Detail component]({{site.baseurl}}/zk_component_ref/detail)
   directly.
 
 # Columns Menu
@@ -960,8 +958,7 @@ For example,
 </zk>
 ```
 
-- For further details, please refer to [ Columns
-  component]({{site.baseurl}}/zk_component_ref/columns)
+- For further details, please refer to [ Columns component]({{site.baseurl}}/zk_component_ref/columns)
   directly.
 
 ## Ungroup Column Menu
@@ -1039,8 +1036,7 @@ rows. The code below demonstrates how to do this:
 
 {% include version-badge.html version=5.0.0 %}
 
-- For further details, please refer to [ Cell
-  component]({{site.baseurl}}/zk_component_ref/cell)
+- For further details, please refer to [ Cell component]({{site.baseurl}}/zk_component_ref/cell)
   directly.
 
 # Group Component
@@ -1118,13 +1114,10 @@ supported in Grouping Grid, and Listbox with the
 For more information, please take a look at these smalltalks,
 
 - [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
-- [ About How Grouping Works with Live
-  Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
-- [ Add Summary Field For
-  Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
-Or refer to [ Group
-component]({{site.baseurl}}/zk_component_ref/group) directly.
+Or refer to [ Group component]({{site.baseurl}}/zk_component_ref/group) directly.
 
 # Frozen Component
 
@@ -1144,8 +1137,7 @@ The following code demonstrates how to freeze a column within a Grid:
 
 {% include version-badge.html version=5.0.0 %}
 
-- For further details, please refer to [ Frozen
-  component]({{site.baseurl}}/zk_component_ref/frozen)
+- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Custom Attributes
@@ -1156,8 +1148,7 @@ The following code demonstrates how to freeze a column within a Grid:
 `[inherit: true]`[^1]
 
 It specifies whether to enable ROD (render-on-demand). For more
-information, please refer to [ZK Developer's Reference: Performance
-Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
+information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
 
 ## org.zkoss.zul.grid.autoSort
 
@@ -1252,8 +1243,7 @@ is enabled and user changed the size of the content.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

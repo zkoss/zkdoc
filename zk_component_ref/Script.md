@@ -60,8 +60,7 @@ elements are already generated.
 
 ## Load Javascript in head tag - script directive
 
-Instead of using this component, you can use [the script
-directive](ZUML_Reference/ZUML/Processing_Instructions/script)
+Instead of using this component, you can use [the script directive](ZUML_Reference/ZUML/Processing_Instructions/script)
 instead. It does not support `defer`, but it consumes no memory since no
 component is created. And it generated `<script>` in HTML `<head>`, so
 the specified script will be loaded earlier than body DOM is created.
@@ -91,8 +90,7 @@ global variables and functions as follows:
 
 # Supported Events
 
-- Inherited Supported Events: [
-  AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
+- Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
 
 # Supported Children
 

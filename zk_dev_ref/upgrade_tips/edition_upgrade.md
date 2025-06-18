@@ -7,8 +7,7 @@ ZK Framework is offered in 3 editions:
 
 CE is the basic
 version, while EE offers the most comprehensive features. To see what
-features are included in each edition, visit the [Feature
-Page](https://www.zkoss.org/whyzk/Features).
+features are included in each edition, visit the [Feature Page](https://www.zkoss.org/whyzk/Features).
 
 Note that some of the add-ons like ZK Charts, Pivottable, and Keikai
 Spreadsheet are not part of ZK CE, PE, or EE. They can be used with ZK
@@ -19,16 +18,13 @@ CE, PE, and EE, but separate licenses are required to use these add-ons.
 To upgrade from CE to ZK PE or EE (or PE/EE Evaluation):
 
 * Binary zip: download
-the corresponding PE/EE (or Evaluation) binary files from the [Download
-Page](https://www.zkoss.org/download/zk?ee)
+the corresponding PE/EE (or Evaluation) binary files from the [Download Page](https://www.zkoss.org/download/zk?ee)
 
 * Maven: specify the evaluation
-repository and include required PE/EE dependencies if you use maven. [
-Maven instructions here](/zk_installation_guide/maven_setup).
+repository and include required PE/EE dependencies if you use maven. [ Maven instructions here](/zk_installation_guide/maven_setup).
 
 Download instructions for paying customers were given at the time of the
-purchase. If you are not sure, [contact
-us](https://www.zkoss.org/support/about/contact) with your License
+purchase. If you are not sure, [contact us](https://www.zkoss.org/support/about/contact) with your License
 Certificate Number and we will help.
 
 ## Evaluation vs. Official version
@@ -78,8 +74,7 @@ You will need to download them from their download pages, or, include
 the dependency in your maven POM file.
 
 If you wish to use a specific feature, reference the document page of
-that feature, or [ the content (jar) of binary
-distributions]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution)
+that feature, or [ the content (jar) of binary distributions]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution)
 to see if it is already in the core package, or if you need to specify a
 different jar file or dependency.
 
@@ -92,14 +87,12 @@ to set it up.
 ## Features enabled by default
 
 After upgrading to PE/EE, some of the features are enabled by default.
-For example, the [ client render on
-demand]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
+For example, the [ client render on demand]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
 feature will be enabled by default to improve the client-side
 performance. Also, with EE, the Tablet UI will be enabled by default,
 when a tablet or mobile device connects to your application the
 tablet-supported components will switch themselves to the tablet theme.
-You can manually [ disable them in
-zk.xml]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled)
+You can manually [ disable them in zk.xml]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled)
 if you are not ready.
 
 ## Change of default behavior
@@ -107,20 +100,17 @@ if you are not ready.
 Some of the default behavior changes after you upgraded the ZK edition.
 For example in the case of server push, with CE, it uses client polling.
 Once you upgrade to PE, the default push becomes comet push, and with EE
-it uses servlet 3 comet. [ Learn more
-here]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
+it uses servlet 3 comet. [ Learn more here]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
 
 ## Require configuration
 
 Some PE/EE features are now available for you to use, but you will have
 to enable them by yourself. For example if you have a big grid or
-listbox, you can [ turn on render on
-demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)
+listbox, you can [ turn on render on demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)
 to boost its performance.
 
 Please reference the documentation of each feature to see if any
-configuration is required and [contact
-us](https://www.zkoss.org/support/about/contact) if you have any
+configuration is required and [contact us](https://www.zkoss.org/support/about/contact) if you have any
 questions.
 
 {{ ZKDevelopersReferencePageFooter}}

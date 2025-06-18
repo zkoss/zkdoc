@@ -179,8 +179,7 @@ default pseudo classes available:
 ```
 
 The `nth-child` and `nth-last-child` pseudo classes parameters can also
-take a pattern, which follows [CSS3
-specification](http://www.w3.org/TR/css3-selectors/#nth-child-pseudo).
+take a pattern, which follows [CSS3 specification](http://www.w3.org/TR/css3-selectors/#nth-child-pseudo).
 
 ## Asterisk
 

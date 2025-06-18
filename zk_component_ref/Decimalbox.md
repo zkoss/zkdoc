@@ -31,9 +31,7 @@ with a formatting string. The default value is `null`.
 ```
 
 {% include version-badge.html version=8.5.2 %} You can provide a locale to format
-the number by specifying a value starting with "locale:", e.g. [Indian
-numbering
-system](https://en.wikipedia.org/wiki/Indian_numbering_system):
+the number by specifying a value starting with "locale:", e.g. [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system):
 
 ```xml
 <decimalbox format="locale:en-In"/>
@@ -84,8 +82,7 @@ Notes:
 
 # Inherited Functions
 
-Please refer to [
-NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
+Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -109,8 +106,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
+- Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

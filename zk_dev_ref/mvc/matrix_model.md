@@ -2,13 +2,10 @@
 
 Here we describe how to implement a matrix model
 (<javadoc type="interface">org.zkoss.zkmax.zul.MatrixModel</javadoc>).
-For the concept of component, model and renderer, please refer to [the
-Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
-for *MatrixModel* because [
-Biglistbox]({{site.baseurl}}/zk_component_ref/data/biglistbox) is
+for *MatrixModel* because [ Biglistbox]({{site.baseurl}}/zk_component_ref/data/biglistbox) is
 designed to handle unlimited data set, therefore, there is no need to
 handle model data in memory. This usage is application-dependent and
 varies from case to case. However, you can extend your own
@@ -156,14 +153,11 @@ model data has been changed.
 ## Notify for Data Updates
 
 *MatrixModel* is the same as *ListModel* when notify for data updates,
-please refer to [
-ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Notify_for_Data_Updates)
+please refer to [ ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Notify_for_Data_Updates)
 
 ## Resource
 
-All of the examples above can be found here - [Github's FakerMatrixModel
-source
-code](https://github.com/zkoss/zk/blob/master/zktest/src/org/zkoss/zktest/test2/big/FakerMatrixModel.java)
+All of the examples above can be found here - [Github's FakerMatrixModel source code](https://github.com/zkoss/zk/blob/master/zktest/src/org/zkoss/zktest/test2/big/FakerMatrixModel.java)
 
 # Version History
 

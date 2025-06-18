@@ -2,8 +2,7 @@
 
 # Treechildren
 
-- Demonstration: [Tree (Dynamic
-  Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treechildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Treechildren</javadoc>
@@ -89,8 +88,7 @@ the `pageSize`property
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

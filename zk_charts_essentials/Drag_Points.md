@@ -29,8 +29,7 @@ performed:
 - drag: during drag, when the user moves the element
 - drop: once the user releases the drag, and the element is dropped
 
-In this client-side handler, we can use the [zAu.send
-function]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing)
+In this client-side handler, we can use the [zAu.send function]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing)
 to forward this event to the server.
 
 Note: avoid sending the drag handler if not necessary, since this
@@ -79,8 +78,6 @@ function(e){ // callback from dragStart, drag, or drop, e is the highcharts even
 }
 ```
 
-Demo sample [in
-github](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/java/org/zkoss/zkcharts/essentials/customizing/DraggablePointComposer.java)
+Demo sample [in github](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/java/org/zkoss/zkcharts/essentials/customizing/DraggablePointComposer.java)
 
-Reference: [Highcharts API
-Rerenence](https://api.highcharts.com/highcharts/plotOptions.series.dragDrop)
+Reference: [Highcharts API Rerenence](https://api.highcharts.com/highcharts/plotOptions.series.dragDrop)

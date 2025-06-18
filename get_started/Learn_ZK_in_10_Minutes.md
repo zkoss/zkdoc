@@ -94,8 +94,7 @@ To control the UI, firstly, you need to implement a controller class
 which inherits ZK's
 [**SelectorComposer**](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 for a ZUL. Then, you can retrieve the UI component's Java object by
-annotating [ **@Wire** on the controller's member
-variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
+annotating [ **@Wire** on the controller's member variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
 After this has been done, you can then control and manipulate UI by
 accessing those annotated member variables.
 
@@ -140,9 +139,7 @@ beginning, and it is only enabled (clickable) when a user checks the
 ![](images/Simplezk-check-submit.gif)
 
 As ZK is an event-driven framework, a user action is therefore handled
-by an event listener. ZK provides an annotation [ **@Listen** to
-register an event listener by selector
-syntax]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
+by an event listener. ZK provides an annotation [ **@Listen** to register an event listener by selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
 To achieve the above feature, you can annotate a method to listen to an
 "onCheck" event of "Accept Term of Use" checkbox. Whenever a user
 checks/unchecks the checkbox to trigger the "onCheck" event, ZK invokes
@@ -189,15 +186,12 @@ drag & drop, and hotkey, etc. to your application.
 ## MVVM Pattern
 
 What we have introduced so far is MVC pattern, which controls UI by
-components API. Another way is data binding, please see [ Get ZK Up and
-Running with
-MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm).
+components API. Another way is data binding, please see [ Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm).
 
 # Support Responsive Design
 
 ZK provides various features for you to apply responsive design, please
-read [ Responsive
-Design]({{site.baseurl}}/zk_dev_ref/ui_patterns/responsive_design).
+read [ Responsive Design]({{site.baseurl}}/zk_dev_ref/ui_patterns/responsive_design).
 
 # Easy Backend Integration
 
@@ -275,9 +269,7 @@ public class RegistrationSpringComposer extends SelectorComposer<Component> {
 # Work with Spring-boot
 
 ZK provides a zkspringboot-starter addon to help you work with
-Springboot easily, please refer to [ Create and Run Your First ZK
-Application with Spring
-Boot]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot).
+Springboot easily, please refer to [ Create and Run Your First ZK Application with Spring Boot]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot).
 
 # Source Code
 

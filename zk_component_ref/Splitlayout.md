@@ -21,14 +21,11 @@ Also, like other ZK layout components, it supports hflex and vflex,
 indicating that users can divide the area into three or more spaces by
 putting the splitlayouts into the outer Splitlayout.
 
-Comparing to [
-Splitter](zk_component_ref/Layouts/Splitter), this
+Comparing to [ Splitter](zk_component_ref/Layouts/Splitter), this
 component has several advantages:
 
 1.  [ Splitter](zk_component_ref/Layouts/Splitter)
-    can only be used inside [
-    Hbox](zk_component_ref/Layouts/Hbox)/[
-    Vbox](zk_component_ref/Layouts/Vbox).
+    can only be used inside [ Hbox](zk_component_ref/Layouts/Hbox)/[ Vbox](zk_component_ref/Layouts/Vbox).
     Splitlayout has no such limitation.
 2.  Hbox/Vbox are both rendered with HTML which is heavy for a browser.
     Splitlayout is rendered with div which is more light-weighted.
@@ -151,8 +148,7 @@ splitlayout.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

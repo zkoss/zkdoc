@@ -11,8 +11,7 @@ maintain, but also the performance is great.
 **Alternative: MVVM**
 
 MVVM represents **Model**, **View**, and **ViewModel**. MVVM is
-identical to the [Presentation
-Model](http://martinfowler.com/eaaDev/PresentationModel.html) introduced
+identical to the [Presentation Model](http://martinfowler.com/eaaDev/PresentationModel.html) introduced
 by Martin Fowler. It is a variant of the MVC design pattern. Unlike MVC,
 the control logic is implemented in a POJO class called the *view
 model*. It provides the further abstraction that a view model assumes
@@ -29,11 +28,8 @@ Reference\].
 
 The *view* is UI -- a composition of
 [components]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
-As described in the [UI
-Composing]({{site.baseurl}}/zk_dev_ref/ui_composing) section, UI
-can be implemented by [a ZUML
-document]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) or [in
-Java]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet). For the
+As described in the [UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing) section, UI
+can be implemented by [a ZUML document]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) or [in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet). For the
 sake of description, ZUML is used to illustrate the concept and
 features.
 
@@ -48,8 +44,7 @@ abstracted by implementing
 <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>.
 
 For typical database access, the glue logic (i.e., control) can be
-handled by a generic feature called [Data
-Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding). In
+handled by a generic feature called [Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding). In
 other words, the read and write operations can be handled automatically
 by a generic Data Binding, and you don't need to write the glue logic at
 all.

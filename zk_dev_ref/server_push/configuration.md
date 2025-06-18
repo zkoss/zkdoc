@@ -6,9 +6,7 @@ Since ZK 6, in addition to
 a third Server Push implementation - Asynchronous Processing
 <javadoc>org.zkoss.zkmax.ui.comet.CometServerPush</javadoc>. As their
 names suggest, they implement the Client-Polling, Comet (aka.,
-long-polling) and Servlet 3 Comet ([Servlet 3 Asynchronous
-Processing-based
-Comet](http://books.zkoss.org/wiki/Small_Talks/2012/February/New_Features_of_ZK_6#ZK_Comet_supports_Servlet_3_Asynchronous_Processing))
+long-polling) and Servlet 3 Comet ([Servlet 3 Asynchronous Processing-based Comet](http://books.zkoss.org/wiki/Small_Talks/2012/February/New_Features_of_ZK_6#ZK_Comet_supports_Servlet_3_Asynchronous_Processing))
 server pushes. Client-polling is available in all editions, Comet Server
 Push is available in ZK PE and EE, while ZK EE supports Servlet 3 Comet
 Push.
@@ -52,8 +50,7 @@ For example,
 ## Application-level Configuration
 
 If you would like to change the default server push for the whole
-application, you could use [the server-push-class
-element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
+application, you could use [the server-push-class element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
 as follows.
 
 ```xml
@@ -98,8 +95,7 @@ milliseconds).
   seconds. Default: 5.
 - The larger the factor, the longer the delay tends to be.
 
-It could be configured in `WEB-INF/zk.xml` by use of [the preference
-element]({{site.baseurl}}/zk_config_ref/the_preference_element)
+It could be configured in `WEB-INF/zk.xml` by use of [the preference element]({{site.baseurl}}/zk_config_ref/the_preference_element)
 as follows.
 
 ```xml
@@ -148,8 +144,7 @@ the server, and leaving immediately if no data is available.
 its own configuration parameters such as retry delay, retry count, and
 ajax timeout.
 
-Configure these parameters by using [the preference
-element]({{site.baseurl}}/zk_config_ref/the_preference_element)
+Configure these parameters by using [the preference element]({{site.baseurl}}/zk_config_ref/the_preference_element)
 in your `WEB-INF/zk.xml` e.g.
 
 ```xml
@@ -190,8 +185,7 @@ it aborts. (unit: milliseconds).
 
 # Error Handling
 
-The configuration of the errors is handled by [the client-reload
-element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
+The configuration of the errors is handled by [the client-reload element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
 specified in `WEB-INF/zk.xml`. The markup below demonstrates an example
 of catching an error of the server push:
 

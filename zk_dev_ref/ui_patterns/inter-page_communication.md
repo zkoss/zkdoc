@@ -5,8 +5,7 @@ you can use events to notify each other.
 # Identify a Page
 
 To communicate among pages, we have to assign an identifier to the
-target page. In ZUML, it is done by the use of [the page
-directive](ZUML_Reference/ZUML/Processing_Instructions/page):
+target page. In ZUML, it is done by the use of [the page directive](ZUML_Reference/ZUML/Processing_Instructions/page):
 
 ```xml
 <?page id=" foo"?>
@@ -48,8 +47,7 @@ component.)
  comp.getDesktop().getAttribute("some"); //is equivalent to previous line
 ```
 
-In `zscript` and EL expressions, you could use the [implicit
-objects](ZUML_Reference/EL_Expressions/Implicit_Objects):
+In `zscript` and EL expressions, you could use the [implicit objects](ZUML_Reference/EL_Expressions/Implicit_Objects):
 `componentScope`, `pageScope`, `desktopScope`,
 `sessionScope, requestScope` and `applicationScope`.
 

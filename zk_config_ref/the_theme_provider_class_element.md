@@ -18,7 +18,6 @@ what are specified in `disable-theme-uri`). And, only the return
 collection of URIs are actually generated. In other words, the theme
 provider has the highest priority.
 
-For more information, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_providers).
+For more information, please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_providers).
 
 

@@ -42,8 +42,7 @@ identifiable by a URL.
 
 # File Upload
 
-A button or a [
-Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton#File_Upload)
+A button or a [ Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton#File_Upload)
 can be used to upload files. All you need to do is:
 
 1.  Specify the `upload` attribute with `true`
@@ -129,8 +128,7 @@ by adding the following to `/WEB-INF/zk.xml`
 
 # File Download and browser processed links
 
-Similar to [ file download link
-problem]({{site.baseurl}}/zk_component_ref/essential_components/a#File_download_link_problem),
+Similar to [ file download link problem]({{site.baseurl}}/zk_component_ref/essential_components/a#File_download_link_problem),
 if you specify `href` to use a button for downloading, or if you are
 using a browser-processed link such as `mailto:`, `tel:`, or other
 similar user-processed instruction which would trigger a page unloading
@@ -190,8 +188,7 @@ if (something_happens) {
 
 ### Enable Autodisable for All Buttons
 
-As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
+As described in [ZK Developer's Reference: Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
 you could customize ZK to enable `autodisable` for all button by
 specifying the following in the custom language addon:
 
@@ -337,13 +334,11 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
   HTML5-supported browsers
 - `accept`: {% include version-badge.html version=7.0.0 %} specifies the MIME types
   of files that the server accepts, the setting only works with
-  HTML5-supported browsers. [MIME type
-  list](http://www.iana.org/assignments/media-types/media-types.xhtml).
+  HTML5-supported browsers. [MIME type list](http://www.iana.org/assignments/media-types/media-types.xhtml).
 
 ### Customize Upload Size Exceeding Message
 
-{% include version-badge.html version=8.0.0 %} Please refer to [ZK Developer's
-Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
+{% include version-badge.html version=8.0.0 %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
 
 For Example, (in WEB-INF/zk-label.properties)
 
@@ -356,8 +351,7 @@ size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 
 # Inherited Functions
 
-Please refer to [
-LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -401,8 +395,7 @@ uploaded a file to the component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Molds
 

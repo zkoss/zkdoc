@@ -11,15 +11,13 @@ We assume you already include zk dependencies, if not, please include
 zk. See
 [{{site.baseurl}}/zk_installation_guide/maven_setup]({{site.baseurl}}/zk_installation_guide/maven_setup).
 
-**1. Download/unzip a standard [Spring
-Initializr](https://start.spring.io/) project**
+**1. Download/unzip a standard [Spring Initializr](https://start.spring.io/) project**
 
 (no addons needed, tested with version 2.0.4.RELEASE)
 
 **2. Add ZK's maven-repository and the zkspringboot-starter dependency**
 
-In pom.xml add: replace \${zkspringboot.version} with the [latest
-version](http://mavensync.zkoss.org/maven2/org/zkoss/zkspringboot/zkspringboot-starter/)
+In pom.xml add: replace \${zkspringboot.version} with the [latest version](http://mavensync.zkoss.org/maven2/org/zkoss/zkspringboot/zkspringboot-starter/)
 
 ```xml
     <repositories>
@@ -80,8 +78,7 @@ The demo projects are located on
 To run them all you need is a command line interface (and optional:
 git).
 
-These examples are derived from the [Spring Boot - Getting Started
-Guide](https://spring.io/guides/gs/spring-boot/) replacing the
+These examples are derived from the [Spring Boot - Getting Started Guide](https://spring.io/guides/gs/spring-boot/) replacing the
 **springboot-starter-web** dependency by **zkspringboot-starter** to
 enable convenient auto-configuration for the most common usage scenarios
 while allowing customization where needed.
@@ -143,8 +140,7 @@ class web resource folder
 [src/main/resources/web/zul/](https://github.com/zkoss/zkspringboot/tree/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web/zul/)
 
 You can configure any folder below **src/main/resources/web** using the
-`zk.zul-view-resolver-prefix`-property [in
-application.properties](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/application.properties).
+`zk.zul-view-resolver-prefix`-property [in application.properties](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/application.properties).
 The extension .zul is added automatically by the default value of
 `zk.zul-view-resolver-suffix`.
 
@@ -166,8 +162,7 @@ General resource folders are:
 - [src/main/resources/static](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/static) -
   Spring Boot's resource folder
 - [src/main/resources/web](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web) -
-  ZK's [classpath web resource
-  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+  ZK's [classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
 
 Spring Boot resources are referenced by urls starting with `'/'` ZK
 resources (including zul files) are prefixed with `'~./'`
@@ -195,8 +190,7 @@ web.xml (note it is in src/**test**/webapp so it doesn't affect the
 production deployment).
 
 As of now you can specify your test context configuration class (e.g.
-`zk.springboot.Application`) as a [context parameter inside
-web.xml](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar-zats/src/test/webapp/WEB-INF/web.xml).
+`zk.springboot.Application`) as a [context parameter inside web.xml](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar-zats/src/test/webapp/WEB-INF/web.xml).
 The customized ContextLoaderListener
 ([ZatsSpringBootContextLoaderListener.java](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-autoconfig/src/main/java/org/zkoss/zkspringboot/zats/ZatsSpringBootContextLoaderListener.java))
 reads this parameter and initializes the application context

@@ -117,8 +117,7 @@ The `setActive` will not cause a `menupopup` to be opened. An explicit
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup#Supported_Events)
+- Inherited Supported Events: [ Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup#Supported_Events)
 
 # Supported Children
 

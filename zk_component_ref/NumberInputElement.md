@@ -2,8 +2,7 @@
 
 # Number Input Element
 
-- Demonstration: [Number Input
-  Element](http://www.zkoss.org/zkdemo/userguide/#f2)
+- Demonstration: [Number Input Element](http://www.zkoss.org/zkdemo/userguide/#f2)
 - Java API: <javadoc>org.zkoss.zul.impl.NumberInputElement</javadoc>
 - JavaScript API: N/A
 
@@ -90,8 +89,7 @@ For example,
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FormatInputElemen]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElemen]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Children
 

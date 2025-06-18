@@ -53,8 +53,7 @@ secure host in chrome flags. IMPORTANT NOTE: This is for development
 purposes only, and shouldn't be considered as a workaround for actual
 users, since it requires modifying hidden security settings in Chrome.
 
-To activate this setting, see the [testing powerful
-features](https://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins/#testing-powerful-features)
+To activate this setting, see the [testing powerful features](https://www.chromium.org/Home/chromium-security/deprecating-powerful-features-on-insecure-origins/#testing-powerful-features)
 section in the chromium info page.
 
 step by step:
@@ -313,8 +312,7 @@ camera is unavailable after requesting media devices from user.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

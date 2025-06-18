@@ -1,5 +1,4 @@
-We collect all style-related files into [ZK theme template project at
-Github](https://github.com/zkoss/zkThemeTemplate), making it much easier
+We collect all style-related files into [ZK theme template project at Github](https://github.com/zkoss/zkThemeTemplate), making it much easier
 to create a custom theme. The main idea here is to have a ZK template
 theme as the **base theme**, which then allows ZK app developers to fork
 the repository and commit your changes in your repository to create your
@@ -9,15 +8,13 @@ new custom theme.
 
 The general steps are:
 
-1.  Fork [the zkThemeTemplate
-    repository](https://github.com/zkoss/zkThemeTemplate)
+1.  Fork [the zkThemeTemplate repository](https://github.com/zkoss/zkThemeTemplate)
 2.  initialize the theme project
 3.  modify [LESS](https://lesscss.org/) files and preview
 4.  build a jar
 5.  apply to your project
 
-For detailed steps, please see [README in
-zkThemeTemplate](https://github.com/zkoss/zkThemeTemplate)
+For detailed steps, please see [README in zkThemeTemplate](https://github.com/zkoss/zkThemeTemplate)
 
 # Benefits
 

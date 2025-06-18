@@ -2,8 +2,7 @@
 
 # Filedownload
 
-- Demonstration: [File
-  Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
+- Demonstration: [File Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
 - Java API: <javadoc>org.zkoss.zul.Filedownload</javadoc>
 - JavaScript API: N/A
 
@@ -104,8 +103,7 @@ it in a library property called
 Triggering a file download in the main context of a ZK page can cause
 the client-engine to terminate while the page is still open.
 
-Refer to the [Developer
-Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
+Refer to the [Developer Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
 guide for in-depth details.
 
 # Limitation of IE 6/7/8
@@ -165,9 +163,7 @@ input components inside HTML FORM. For example,
 
 Notice we have to specify the name property such that its value will be
 sent with the given name. For more information of using HTML FORM,
-please refer to [ZK Developer's Reference/integration/Use ZK in
-JSP#HTML_Form:ZK Developer's Reference: HTML
-Form]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
+please refer to [ZK Developer's Reference/integration/Use ZK in JSP#HTML_Form:ZK Developer's Reference: HTML Form]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
 
 ## Side Effect: Chrome and Safari
 

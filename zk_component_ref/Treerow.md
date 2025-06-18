@@ -2,8 +2,7 @@
 
 # Treerow
 
-- Demonstration: [Tree (Dynamic
-  Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treerow</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treerow</javadoc>
 
@@ -87,8 +86,7 @@ in it, such as label, image, textbox etc.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

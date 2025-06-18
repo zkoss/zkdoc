@@ -2,8 +2,7 @@
 
 A method (as if in an EventListener) in
 [SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
-can subscribe to an [
-EventQueue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+can subscribe to an [ EventQueue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 by
 [@Subscribe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/select/annotation/Subscribe.html).
 For example,

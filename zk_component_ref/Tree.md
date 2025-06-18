@@ -215,8 +215,7 @@ The following code demonstrates how to freeze a column within a Tree:
 
 {% include version-badge.html version=7.0.0 %}
 
-- For further details, please refer to [ Frozen
-  component]({{site.baseurl}}/zk_component_ref/frozen)
+- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Selection
@@ -401,8 +400,7 @@ Treecols's header checkmark also support tristate
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [
-Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
 more details.
 
 ## SizedByContent
@@ -546,8 +544,7 @@ If the Tree is controlled by a
 such as <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> or
 <javadoc type="interface">org.zkoss.zul.DefaultTreeModel</javadoc>, the
 model open state is authoritative and will override the individual
-component's open state. please refer to [ the TreeModel
-documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
+component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
 on this topic.
 
 ```xml
@@ -728,8 +725,7 @@ is enabled and user changed the size of the content.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

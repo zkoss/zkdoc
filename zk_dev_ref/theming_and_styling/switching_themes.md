@@ -54,9 +54,7 @@ application as a default theme.
 </library-property>
 ```
 
-Check the complete theme name of the theme pack at [ZK Developer's
-Reference/Theming and Styling/ZK Official Themes#All Theme Names of
-Theme
+Check the complete theme name of the theme pack at [ZK Developer's Reference/Theming and Styling/ZK Official Themes#All Theme Names of Theme
 Pack]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#All_Theme_Names_of_Theme_Pack)
 
 # Dynamically switching themes using Cookies

@@ -96,9 +96,7 @@ dialog select **Run As / Run on Server**
 with "Manually define a new server" option selected. Then Select
 **Apache / Tomcat v6.0 Server** in the "server type" area and then click
 **Finish**. If you haven't created a corresponding "server runtime
-environment", please refer to [WTP Tutorials – Building and Running a
-Web
-Application](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html).
+environment", please refer to [WTP Tutorials – Building and Running a Web Application](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html).
 
 ![](images/studio-run-select-server.png)
 

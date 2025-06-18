@@ -80,8 +80,7 @@ There are two additional parameters in the API:
 - boolean open: Expand all header tree nodes for the export, but the
   model itself it not changed.
 - String\[\] titles: The text in the title cells (data title, column
-  title, row title, respectively). See [ title cells
-  definition]({{site.baseurl}}/zk_pivottable_essentials/quick_start/concept#Trivia).
+  title, row title, respectively). See [ title cells definition]({{site.baseurl}}/zk_pivottable_essentials/quick_start/concept#Trivia).
 
  
 

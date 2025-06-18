@@ -8,14 +8,12 @@ Certificate number when you submit your question so that we can
 associate you with the right company.
 
 If you do not have remote consulting hours or if you are not sure,
-please read [Customer
-FAQ](https://www.zkoss.org/wiki/Customers/FAQ#What_is_my_current_ZK_Package.3F)
+please read [Customer FAQ](https://www.zkoss.org/wiki/Customers/FAQ#What_is_my_current_ZK_Package.3F)
 or contact us at info@zkoss.org.
 
 # [Find Known Issues](https://tracker.zkoss.org/issues/)
 
-If you think you encounter a bug, you can search for the bug in [our
-tracker](https://tracker.zkoss.org/issues). If it's a known bug, there
+If you think you encounter a bug, you can search for the bug in [our tracker](https://tracker.zkoss.org/issues). If it's a known bug, there
 is sometimes a workaround mentioned in the tracker. You can apply the
 workaround before you get the official release.
 
@@ -40,9 +38,7 @@ Providing sufficient information helps us support you more efficiently.
 1.  the complete server-side error or the client-side error if any (read
     [\#Check JavaScript Error](#Check_JavaScript_Error))
 2.  complete exception stack trace (if any)
-3.  A reproducible sample (please read [\#Tips for creating a
-    reproducible
-    sample](#Tips_for_creating_a_reproducible_sample)
+3.  A reproducible sample (please read [\#Tips for creating a reproducible sample](#Tips_for_creating_a_reproducible_sample)
 4.  Precise and clear steps to reproduce the issue
 5.  ZK version and edition
       
@@ -52,8 +48,7 @@ Providing sufficient information helps us support you more efficiently.
     e.g. Firefox 60
 7.  If it is hard to create a sample, you can provide an URL so that the
     support team can access it. When providing this URL, remember to
-    [turn on the js
-    debug]({{site.baseurl}}/zk_config_ref/the_client_config_element/the_debug_js_element)
+    [turn on the js debug]({{site.baseurl}}/zk_config_ref/the_client_config_element/the_debug_js_element)
     in your zk.xml.
 8.  Application servers (e.g. JBoss 6, if it's necessary).
 9.  If your case happens only in your specific environment, it is
@@ -107,15 +102,12 @@ this URL, remember to turn on the js debug in your zk.xml.
 2.  Do the steps to reproduce your problem
 3.  Send request details as HAR to us
 
-:\* [Save all network requests to a HAR file in
-Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
+:\* [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
 ![ center](save-har-chrome.png " center")
 
-:\* Save request details as HAR in Firefox ![
-center](save-har-firefox.png " center")
+:\* Save request details as HAR in Firefox ![ center](save-har-firefox.png " center")
 
-:\* [Save request details as HAR in
-Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
+:\* [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 
 If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
@@ -153,9 +145,7 @@ If you need to include a javascript file on every zul, there are 2 ways:
 
 ### By language addon
 
-Create a `lang-addon.xml` according to [ ZK Client-side
-Reference/Language
-Definition#Language_Addon]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
+Create a `lang-addon.xml` according to [ ZK Client-side Reference/Language Definition#Language_Addon]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
 and include the javascript file with <javascript>. For example:
 
 ```xml
@@ -169,8 +159,7 @@ and include the javascript file with <javascript>. For example:
 ```
 
 - Line 4: see the next section
-- Line 5: a path starting with `~./` is a [ classpath web resource
-  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+- Line 5: a path starting with `~./` is a [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
   which is a special path supported by ZK
 - Line 6: You can also link a file under your web application context
   root
@@ -252,8 +241,7 @@ the zul. ![ center](listFolder.png " center")
 # How to get Browser Performance Profile
 
 If you are running into a performance issue, you can first check out
-[Step by Step Trouble
-Shooting]({{site.baseurl}}/zk_dev_ref/performance_monitoring/step_by_step_trouble_shooting)
+[Step by Step Trouble Shooting]({{site.baseurl}}/zk_dev_ref/performance_monitoring/step_by_step_trouble_shooting)
 and do a first step analysis using browser's developer tools.
 
 ## [By Chrome developer tool](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance)

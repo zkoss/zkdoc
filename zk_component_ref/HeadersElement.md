@@ -2,8 +2,7 @@
 
 # Headers Element
 
-- Demonstration: [Headers
-  Element](http://www.zkoss.org/zkdemo/userguide/#g13)
+- Demonstration: [Headers Element](http://www.zkoss.org/zkdemo/userguide/#g13)
 - Java API: <javadoc>org.zkoss.zul.impl.HeadersElement</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.HeadWidget</javadoc>
@@ -42,8 +41,7 @@ resized one of the columns.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

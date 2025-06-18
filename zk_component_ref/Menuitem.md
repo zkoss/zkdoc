@@ -6,10 +6,8 @@
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: <javadoc>org.zkoss.zul.Menuitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menuitem</javadoc>
-- Style Guide: [ Menuitem in
-  Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menuitem_in_menubar),
-  [ Menuitem in
-  Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menuitem_in_menupopup)
+- Style Guide: [ Menuitem in Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menuitem_in_menubar),
+  [ Menuitem in Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menuitem_in_menupopup)
 
 # Employment/Purpose
 
@@ -94,8 +92,7 @@ if (something_happens) {
 
 ### Enable Autodisable for All Menuitems
 
-As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
+As described in [ZK Developer's Reference: Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
 you could customize ZK to enable `autodisable` for all menuitem by
 specifying the following in the custom language addon:
 
@@ -250,8 +247,7 @@ uploaded a file to the component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

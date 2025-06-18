@@ -95,8 +95,7 @@ Sometimes we have to forward to another page. For example, when a user
 visits a page that requires authorization, we could forward it to a
 login page[^2].
 
-The simplest way is to use the [forward
-directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
+The simplest way is to use the [forward directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
 
 ```xml
 <?forward uri="/login.zul" if="${!foo:isLogin()}"?>
@@ -104,8 +103,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
 
 where we assume `isLogin` is an EL function that returns whether the
 user has logged in. For more information, please refer to the
-[Conditional
-Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/conditional_evaluation)
+[Conditional Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/conditional_evaluation)
 section.
 
 You could forward to another page by the use of
@@ -204,8 +202,7 @@ exists in the client browser.
 >
 > <references/>
 
-[^1]: It actually sets [the refresh
-    header](http://www.metatags.org/meta_http_equiv_refresh).
+[^1]: It actually sets [the refresh header](http://www.metatags.org/meta_http_equiv_refresh).
 
 [^2]: In addition to forwarding, we could popup a window to ask them to
     login, i.e., without leaving the current desktop

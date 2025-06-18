@@ -1,8 +1,7 @@
 
 
 [M2eclipse](https://www.eclipse.org/m2e/) is the first and most mature
-of the projects aimed at integrating [Apache
-Maven](https://maven.apache.org/) within the Eclipse IDE.
+of the projects aimed at integrating [Apache Maven](https://maven.apache.org/) within the Eclipse IDE.
 
 # Prepare Eclipse
 
@@ -11,16 +10,14 @@ Maven](https://maven.apache.org/) within the Eclipse IDE.
 Please follow the installation guide for your Eclipse:
 
   
-[ Install
-Eclipse](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio#Install_Eclipse)
+[ Install Eclipse](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio#Install_Eclipse)
 
 ## Install M2eclipse
 
 Please follow the installation guide for your M2eclipse:
 
   
-[ Install
-M2eclipse](Setting_up_IDE/Maven/Setting_up_Maven_on_Eclipse)
+[ Install M2eclipse](Setting_up_IDE/Maven/Setting_up_Maven_on_Eclipse)
 
 ## Add ZK Maven Archetype
 
@@ -41,8 +38,7 @@ this is most likely due to a bug in the m2eclipse plugin in v0.12.x,
 Until m2eclipse 0.13.x or newer versions are released and available,
 there are two possible workarounds:
 
-1.  Install the "*older version*" 0.10.x from the [Installing
-    m2eclipse](http://m2eclipse.sonatype.org/installing-m2eclipse.html)
+1.  Install the "*older version*" 0.10.x from the [Installing m2eclipse](http://m2eclipse.sonatype.org/installing-m2eclipse.html)
     website. Users will first need to uninstall m2eclipse 0.12.x,
     restart, and then install 0.10.x available from the following site:
       
@@ -56,9 +52,7 @@ there are two possible workarounds:
     latest M2eclipse plugin from the Installing m2eclipse website.)
 3.  Create the plugin from the archetype using the Maven command line
     tool mvn, then use import existing maven project to add the
-    generated project to Eclipse. For more details, please refer to [
-    Use the command line version of Maven to create a
-    project](#Use_the_command_line_version_of_Maven_to_create_a_project).
+    generated project to Eclipse. For more details, please refer to [ Use the command line version of Maven to create a project](#Use_the_command_line_version_of_Maven_to_create_a_project).
 
 
 # Create a "Hello World" application with ZK Maven Archetype

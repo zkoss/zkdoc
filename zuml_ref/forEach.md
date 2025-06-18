@@ -58,7 +58,6 @@ specify
 and/or
 [forEachEnd](ZUML_Reference/ZUML/Attributes/forEachEnd).
 
-Fore more examples, please refer to [ZK Developer's Reference: Iterative
-Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
+Fore more examples, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
 
 

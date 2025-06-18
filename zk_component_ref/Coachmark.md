@@ -56,8 +56,7 @@ of operations in the desired order.
 
 This component uses CSS keyframes. Browsers that support CSS keyframes
 (IE10+, Edge, Chrome, Firefox, Safari) are compatible with this feature.
-Please check [browser
-compatibility](https://caniuse.com/?search=%40keyframes).
+Please check [browser compatibility](https://caniuse.com/?search=%40keyframes).
 
 # Open / Close the Coachmark
 
@@ -155,8 +154,7 @@ component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

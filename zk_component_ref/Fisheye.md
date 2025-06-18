@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkex.zul.Fisheye</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.menu.Fisheye</javadoc>
 
-- [Available in ZK PE and EE
-  only](http://www.zkoss.org/product/edition.dsp)
+- [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Employment/Purpose
 
@@ -85,8 +84,7 @@ of how to do this.
 
 # Inherited Functions
 
-Please refer to [
-LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -110,8 +108,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

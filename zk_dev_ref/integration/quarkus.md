@@ -5,8 +5,7 @@ applications, as well as cloud-based applications and self-contained
 services runnable from a single package (such as microservices)
 
 For general information regarding ZK usage in Quarkus, please refer to
-the smalltalk [Small Talks/2023/May/Creating and deploying ZK Apps with
-Quarkus](https://www.zkoss.org/wiki/Small_Talks/2023/May/Creating_and_deploying_ZK_Apps_with_Quarkus)
+the smalltalk [Small Talks/2023/May/Creating and deploying ZK Apps with Quarkus](https://www.zkoss.org/wiki/Small_Talks/2023/May/Creating_and_deploying_ZK_Apps_with_Quarkus)
 
 # Quarkus specific configuration
 
@@ -30,8 +29,7 @@ the zk-quarkus plugin to the project:
 Then, websockets can be activated in the same way as other ZK
 applications. Refer to the websocket guide for more information.
 
-[ZK Developer's Reference/integration/Miscellaneous/Websocket
-Channel]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/websocket_channel)
+[ZK Developer's Reference/integration/Miscellaneous/Websocket Channel]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/websocket_channel)
 
 ## Quarkus ArC / CDI Beans
 
@@ -40,8 +38,7 @@ delegating resolver implementation is incompatible with the CDI version
 used by Quarkus.
 
 To use Quarkus ArC / CDI Beans in ZK 10.0.0, please use the
-QuarkusCdiDelegatingVariableResolver available [on this tracker
-ticket](https://tracker.zkoss.org/browse/ZK-5458)
+QuarkusCdiDelegatingVariableResolver available [on this tracker ticket](https://tracker.zkoss.org/browse/ZK-5458)
 
 ## Packaging
 

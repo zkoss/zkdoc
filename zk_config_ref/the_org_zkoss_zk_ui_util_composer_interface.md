@@ -5,8 +5,7 @@
 A listener could implement
 <javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>, such
 that it can process the creation of ZK pages like a composer specified
-in [the apply
-attribute](ZUML_Reference/ZUML/Attributes/apply). It is also
+in [the apply attribute](ZUML_Reference/ZUML/Attributes/apply). It is also
 known as *system-level composers*.
 
 Each time a ZK page, including ZK pages and richlets, is created, ZK

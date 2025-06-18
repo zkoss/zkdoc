@@ -3,26 +3,21 @@
 [Spring Security](https://spring.io/projects/spring-security) is a
 widely-adopted framework. It can also work with ZK without problems.
 This doesn't even need zkspring-security. This page will show you how to
-do it. We assume you know the basics of [Spring
-Boot](https://spring.io/projects/spring-boot) and Spring Security. (You
-can read a Spring Security guide: [Securing a Web
-Application](https://spring.io/guides/gs/securing-web/) ) So here we
+do it. We assume you know the basics of [Spring Boot](https://spring.io/projects/spring-boot) and Spring Security. (You
+can read a Spring Security guide: [Securing a Web Application](https://spring.io/guides/gs/securing-web/) ) So here we
 just mention those configurations specific to ZK framework.
 
 The example code mentioned here only works for Spring Security 4/5.
 
 # ZK Spring Boot Starter
 
-Spring encourages users to start with Spring Boot. So Please include [
-zk spring boot
-starter]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot),
+Spring encourages users to start with Spring Boot. So Please include [ zk spring boot starter]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot),
 and it will automatically configure for you with most commonly-used
 settings.
 
 # Spring Boot Starter Security
 
-Follow [Securing a Web
-Application](https://spring.io/guides/gs/securing-web/), we add the
+Follow [Securing a Web Application](https://spring.io/guides/gs/securing-web/), we add the
 following elements:
 
 ```xml
@@ -110,11 +105,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 
 - Line 7: We need to disable spring CSRF to make ZK AU pass security
-  filter. But don't worry. [ ZK already has its own CSRF
-  mechanism](ZK_Developer's_Reference/Security_Tips/Cross-site_Request_Forgery).
-- Line 13: This line blocks the public access to [ ZK class path web
-  resource
-  folder]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path).
+  filter. But don't worry. [ ZK already has its own CSRF mechanism](ZK_Developer's_Reference/Security_Tips/Cross-site_Request_Forgery).
+- Line 13: This line blocks the public access to [ ZK class path web resource folder]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path).
 - Line 18-19: Assume we want all pages under `/secure` are protected and
   require an authentication.
 
@@ -144,12 +136,10 @@ No matter how you design a login page, remember to enclose it with a
 
 # Download Demo Project
 
-[github - zkoss/zkspringboot -
-zkspringboot-security-demo](https://github.com/zkoss/zkspringboot/tree/master/zkspringboot-demos/zkspringboot-security-demo)
+[github - zkoss/zkspringboot - zkspringboot-security-demo](https://github.com/zkoss/zkspringboot/tree/master/zkspringboot-demos/zkspringboot-security-demo)
 
 For an example without springboot (warfile with spring and
-zk-spring-security), please refer to: [github - zkoss/zkspring -
-zkspringessentials/zkspringcoresec](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec)
+zk-spring-security), please refer to: [github - zkoss/zkspring - zkspringessentials/zkspringcoresec](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec)
 
 # Debug
 
@@ -173,5 +163,4 @@ like:
 
 # Reference
 
-- [Spring Security Reference
-  5.5.8.RELEASE](https://docs.spring.io/spring-security/site/docs/5.5.8/reference/html5/)
+- [Spring Security Reference 5.5.8.RELEASE](https://docs.spring.io/spring-security/site/docs/5.5.8/reference/html5/)

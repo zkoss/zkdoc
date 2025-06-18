@@ -171,8 +171,7 @@ win.appendChild(new Label("foo"));
 ```
 
 A component is a POJO object. If you do not have any reference to it, it
-will be recycled when JVM starts [garbage
-collection](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29).
+will be recycled when JVM starts [garbage collection](http://en.wikipedia.org/wiki/Garbage_collection_%28computer_science%29).
 
 There are two ways to attach a component to a page:
 
@@ -323,8 +322,7 @@ invoking
 [^4]: A composer
     (<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>)
     is a controller that can be associated with a component for handling
-    the UI in Java. For the information, please refer to [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+    the UI in Java. For the information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 [^5]: Of course, the performance of
     <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>

@@ -116,8 +116,7 @@ Charts, a gradient is defined by
 <javadoc directory="zkcharts">org.zkoss.chart.LinearGradient</javadoc>
 or
 <javadoc directory="zkcharts">org.zkoss.chart.RadialGradient</javadoc>,
-they have similar attributes to [SVG
-Gradients](http://www.w3.org/TR/SVG11/pservers.html#Gradients).
+they have similar attributes to [SVG Gradients](http://www.w3.org/TR/SVG11/pservers.html#Gradients).
 
 #### Linear Gradient
 
@@ -294,8 +293,7 @@ public class DrilldownOnDemandComposer implements Composer<Charts> {
         chart.setOptions(options);
 ```
 
-- Reference [Highcharts
-  Configuration](https://api.highcharts.com/highcharts/lang.decimalPoint)
+- Reference [Highcharts Configuration](https://api.highcharts.com/highcharts/lang.decimalPoint)
 
 # Data Label
 

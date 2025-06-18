@@ -804,7 +804,6 @@ Please download the following war file to view this example in detail
 
 <http://devenphillips.blogspot.com/2009/04/developing-liferay-portlets-with-zk.html>
 
-[ZK 5 / Liferay Integration - jquery
-conflict](http://www.zkoss.org/forum/listComment/11051)
+[ZK 5 / Liferay Integration - jquery conflict](http://www.zkoss.org/forum/listComment/11051)
 
 

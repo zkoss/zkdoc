@@ -192,8 +192,7 @@ doClick_: function (evt) {
 ```
 
 **Note** that this approach is suggested for better performance since no
-real DOM-level event registration is required (as described in [the next
-section]({{site.baseurl}}/zk_client_side_ref/notifications/dom_events)).
+real DOM-level event registration is required (as described in [the next section]({{site.baseurl}}/zk_client_side_ref/notifications/dom_events)).
 
 ## Event Propgation
 
@@ -315,10 +314,8 @@ evt.stop({au: true});
 >
 > <references/>
 
-[^1]: For more information, please refer to the [AU
-    Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
+[^1]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
     section.
 
-[^2]: For more information, please refer to the [AU
-    Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
+[^2]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
     section.

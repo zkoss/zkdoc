@@ -83,8 +83,7 @@ is rendered on demand. It means the template can be rendered very late,
 after the page is rendered, after the user scrolls down to make an item
 visible, and so on. Thus, in the template, you *cannot* reference
 anything that is available only in the page rendering phase. For
-example, you can't reference [the arg
-variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
+example, you can't reference [the arg variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
 in a template:
 
 ```xml
@@ -162,9 +161,7 @@ demand. When ZK is rendering the inner template, the previous iteration
 has already gone. There is no way to retrieve the iteration information
 of the outer template.
 
-Rather, you have to traverse the component tree or use [the
-custom-attributes
-element](ZUML_Reference/ZUML/Elements/custom-attributes).
+Rather, you have to traverse the component tree or use [the custom-attributes element](ZUML_Reference/ZUML/Elements/custom-attributes).
 
 Here is an example of traversing the component tree to retrieve the data
 in the outer template, as shown at line 9 below. Notice that, each data
@@ -191,8 +188,7 @@ is, as described before, stored in the component's value property.
 ```
 
 If the component tree is deep, It is tedious and somehow error prone.
-Alternatively, you can store the information into [a custom
-attribute](ZUML_Reference/ZUML/Elements/custom-attributes)
+Alternatively, you can store the information into [a custom attribute](ZUML_Reference/ZUML/Elements/custom-attributes)
 and then retrieve it later, as shown at line 4 and 10 below.
 
 ```xml
@@ -261,9 +257,7 @@ grouping and non-grouping objects).
     <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> for
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
-    [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+    [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 [^3]: On the other hand, it returns the previous iteration information
-    when using with [the forEach
-    attribute](ZUML_Reference/ZUML/Attributes/forEach).
+    when using with [the forEach attribute](ZUML_Reference/ZUML/Attributes/forEach).

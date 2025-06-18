@@ -1,13 +1,10 @@
 # Setup Tomcat Cluster environment
 
-- Please refer to [Tomcat
-  Document](http://tomcat.apache.org/tomcat-7.0-doc/cluster-howto.html)
+- Please refer to [Tomcat Document](http://tomcat.apache.org/tomcat-7.0-doc/cluster-howto.html)
   to set up cluster environment.
 - For configuring with Apache http server, refer to
-  - [ How to Run ZK on Apache + Tomcat clustering, Part
-    I](https://www.zkoss.org/wiki/Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
-  - [ How to Run ZK on Apache + Tomcat clustering, Part
-    II](https://www.zkoss.org/wiki/Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
+  - [ How to Run ZK on Apache + Tomcat clustering, Part I](https://www.zkoss.org/wiki/Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
+  - [ How to Run ZK on Apache + Tomcat clustering, Part II](https://www.zkoss.org/wiki/Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
 
 ## Using more than 3 nodes with ZK
 
@@ -92,9 +89,7 @@ a tomcat cluster environment.
 </zk>
 ```
 
-- Line 3, turn on Serializable UI Factory for ZK, please refer to this [
-  ZK
-  Configuration]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
+- Line 3, turn on Serializable UI Factory for ZK, please refer to this [ ZK Configuration]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
 - Line 7, if there are more than three Tomcat cluster nodes, or you are
   using a different cluster-manager such as
   [Hazelcast](https://hazelcast.com/) and other solutions instead, you

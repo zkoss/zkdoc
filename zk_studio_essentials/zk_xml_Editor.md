@@ -7,5 +7,4 @@ zk.xml\]** from the context menu.
 
 The zk.xml editor provides content assist when editing the ZK
 configuration file. For detailed descriptions of every element in
-zk.xml, please refer to [ ZK Configuration Reference :
-zk.xml]({{site.baseurl}}/zk_config_ref/zk.xml)
+zk.xml, please refer to [ ZK Configuration Reference : zk.xml]({{site.baseurl}}/zk_config_ref/zk.xml)

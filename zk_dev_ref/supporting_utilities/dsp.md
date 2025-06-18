@@ -38,9 +38,7 @@ to write Web pages in DSP syntax.
 Though standard components of ZK use DSP as a template technology, they
 are handled directly by ZK loader.
 
-Using DSP requires including a jar explicitly, please read [ ZK
-Configuration Reference...DSP
-Loader#Optional_Jar]({{site.baseurl}}/zk_config_ref/web.xml/dsp_loader#Optional_Jar)
+Using DSP requires including a jar explicitly, please read [ ZK Configuration Reference...DSP Loader#Optional_Jar]({{site.baseurl}}/zk_config_ref/web.xml/dsp_loader#Optional_Jar)
 
 # A Sample of DSP
 

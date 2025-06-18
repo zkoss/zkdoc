@@ -33,8 +33,7 @@ points, visible zoom level(0~3), and fill color, etc..
 
 {% include version-badge.html version=3.3.0 %}
 
-see: [ Gpolyline -
-Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Disable_Path_Encoding)
+see: [ Gpolyline - Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Disable_Path_Encoding)
 
 # Supported Events
 
@@ -57,8 +56,7 @@ Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gm
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Gpolyline]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Supported_Events)
+- Inherited Supported Events: [ Gpolyline]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Supported_Events)
 
 # Supported Children
 

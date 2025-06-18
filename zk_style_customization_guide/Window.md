@@ -1,7 +1,6 @@
 # Component Reference
 
-Component Reference: [
-Window]({{site.baseurl}}/zk_component_ref/containers/window)
+Component Reference: [ Window]({{site.baseurl}}/zk_component_ref/containers/window)
 
 # DOM Structure
 
@@ -33,13 +32,10 @@ Window]({{site.baseurl}}/zk_component_ref/containers/window)
   z-window-modal
 
   z-window-highlighted
-- Line 4: [Close Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
-- Line 7: [Resize-full Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/resize-full/)
+- Line 4: [Close Icon Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
+- Line 7: [Resize-full Icon Font](http://fortawesome.github.io/Font-Awesome/icon/resize-full/)
   used.
-- Line 10: [Minus Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/minus/) used.
+- Line 10: [Minus Icon Font](http://fortawesome.github.io/Font-Awesome/icon/minus/) used.
 
 # LESS Source
 
@@ -84,8 +80,7 @@ Check complete LESS source for Window from
 ## LESS Variables
 
 The following LESS variables are used for Window component. Check other
-variables from [
-here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
 
 | Variables              | Default Value |
 |------------------------|---------------|
@@ -106,8 +101,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color

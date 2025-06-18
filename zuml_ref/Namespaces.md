@@ -7,8 +7,7 @@ functionality to ZUML.
 > ------------------------------------------------------------------------
 >
 > For introduction of languages vs standard namespaces, please refer to
-> [ZK Developer's
-> References]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_namespaces).
+> [ZK Developer's > References]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_namespaces).
 
 <table>
 <thead>
@@ -158,5 +157,4 @@ Namespace</a>.</p></td>
 </table>
 
 For more information of XHTML, ZUL and other component sets, please
-refer to [ the Languages
-section](ZUML_Reference/ZUML/Languages).
+refer to [ the Languages section](ZUML_Reference/ZUML/Languages).

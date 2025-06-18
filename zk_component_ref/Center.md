@@ -114,8 +114,7 @@ For more details, please refer to
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
+- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
 
 # Supported Children
 

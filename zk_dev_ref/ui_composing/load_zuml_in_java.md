@@ -49,8 +49,7 @@ will be attached to the current page.
 ## The arg Object
 
 The `Map` passed to the `createComponents()` can be accessed on the page
-being created by use of [the arg
-object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg).
+being created by use of [the arg object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg).
 For example,
 
 ```xml
@@ -196,6 +195,4 @@ ZUML document directly[^2].
 [^2]: Don't confuse a ZUML page with
     <javadoc>org.zkoss.zk.ui.Page</javadoc>. The former refers to a file
     containing a ZUML document. The latter is a Java object of
-    <javadoc>org.zkoss.zk.ui.Page</javadoc> that represents [a portion
-    of a
-    desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).
+    <javadoc>org.zkoss.zk.ui.Page</javadoc> that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).

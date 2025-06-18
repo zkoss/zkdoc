@@ -1,7 +1,6 @@
 # Overview
 
-Like [ZUL](ZUML_Reference/ZUML/Languages/ZUL), the [XHTML
-component set](ZUML_Reference/ZUML/Languages/XHTML) is a
+Like [ZUL](ZUML_Reference/ZUML/Languages/ZUL), the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML) is a
 collection of components. Unlike ZUL, which is designed to have rich
 features, each XHTML component represents an HTML tag. For example, the
 following XML element will cause ZK Loader to create a component called
@@ -12,8 +11,7 @@ following XML element will cause ZK Loader to create a component called
 ```
 
 XHTML component supports HTML5 tag attributes, and these attributes
-could be accessed by MVVM. About MVVM, please refer to the [MVVM
-document](http://books.zkoss.org/zk-mvvm-book/8.0/introduction_of_mvvm.html).
+could be accessed by MVVM. About MVVM, please refer to the [MVVM document](http://books.zkoss.org/zk-mvvm-book/8.0/introduction_of_mvvm.html).
 
 # Dynamic Update
 
@@ -41,8 +39,7 @@ shown below.
  </window>
 ```
 
-On the other hand, the [native
-namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
+On the other hand, the [native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 will cause *native* HTML tags to be generated. It means you can not
 modify the content dynamically on the server. Notice that you still can
 handle them dynamically at the client.
@@ -112,8 +109,7 @@ where
 
 1.  Since the extension is `zhtml`, the default namespace is XHTML.
     Thus, we have to specify the zk and zul namespace explicitly.
-    - Notice that we have to specify the [zk
-      namespace](ZUML_Reference/ZUML/Namespaces/ZK) too,
+    - Notice that we have to specify the [zk namespace](ZUML_Reference/ZUML/Namespaces/ZK) too,
       because XHTML will cause ZK Loader to consider any unrecognized
       element as native HTML tag.
 2.  We have to specify HTML, HEAD and BODY to make it a valid HTML

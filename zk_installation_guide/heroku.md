@@ -1,7 +1,6 @@
 # Get Your Heroku Ready
 
-Refer to [Getting Started with
-Heroku](http://devcenter.heroku.com/articles/quickstart) for getting
+Refer to [Getting Started with Heroku](http://devcenter.heroku.com/articles/quickstart) for getting
 Heroku ready. You should have Ruby, Git, and Heroku Gem installed and
 have applied for a Heroku account.
 

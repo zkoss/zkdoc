@@ -25,8 +25,7 @@ zk.afterLoad('calendar', function() {
 });//zk.afterLoad
 ```
 
-Then load the script with [
-land-addon.xml]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Defined_in_a_JS_File)
+Then load the script with [ land-addon.xml]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Defined_in_a_JS_File)
 
 # Date Format in Captions
 

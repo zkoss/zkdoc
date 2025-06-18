@@ -13,8 +13,7 @@ generally more convenient to execute it synchronously as described
 later. On the other hand, if the task can be encapsulated as an event
 listener
 (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>),
-you could execute it asynchronously -- please refer to the [Asynchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
+you could execute it asynchronously -- please refer to the [Asynchronous Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
 section for more information.
 
 # Enable Server Push
@@ -108,11 +107,8 @@ public class WorkingThread extends Thread {
   <javadoc method="activate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>,
   such that it can be done in parallel with other threads.
 
-For a real example, please refer to small talks: [Simple and Intuitive
-Server Push with a Chat Room
-Example](https://www.zkoss.org/wiki/Small_Talks/2007/August/Simple_and_Intuitive_Server_Push_with_a_Chat_Room_Example)
-and [Server Push with a Stock Chart
-Example](https://www.zkoss.org/wiki/Small_Talks/2008/May/Server_Push_with_a_Stock_Chart_Example).
+For a real example, please refer to small talks: [Simple and Intuitive Server Push with a Chat Room Example](https://www.zkoss.org/wiki/Small_Talks/2007/August/Simple_and_Intuitive_Server_Push_with_a_Chat_Room_Example)
+and [Server Push with a Stock Chart Example](https://www.zkoss.org/wiki/Small_Talks/2008/May/Server_Push_with_a_Stock_Chart_Example).
 
 [^1]: For better performance, it is suggested to disable the server push
     if it is no longer used in the given desktop.

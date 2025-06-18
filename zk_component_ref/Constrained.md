@@ -8,8 +8,7 @@
 
 # Employment/Purpose
 
-Decorates a component that its value is constrained by [
-Constraint]({{site.baseurl}}/zk_component_ref/supporting_classes/constraint).
+Decorates a component that its value is constrained by [ Constraint]({{site.baseurl}}/zk_component_ref/supporting_classes/constraint).
 
 # Example
 

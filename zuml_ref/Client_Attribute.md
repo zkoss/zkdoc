@@ -38,8 +38,7 @@ the `attribute` element as follows.
 
 The other use of the client-attribute namespace is to specify attributes
 that are available only to certain browsers, such as accessibility and
-[Section
-508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12#Web).
+[Section 508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12#Web).
 
 ## Binding to client attribute from MVVM view model
 
@@ -112,9 +111,7 @@ have an extra functionality. For example, (jQuery's mask)
 
       </code> tag should be your data-handler script.
 
-To see more examples, please refer to [ZK8: Simple but Powerful; Using
-Data-handler API to Work with Front-End
-Technologies](http://blog.zkoss.org/index.php/2015/08/25/zk8-simple-but-powerful-using-data-handler-api-to-work-with-front-end-technologies/)
+To see more examples, please refer to [ZK8: Simple but Powerful; Using Data-handler API to Work with Front-End Technologies](http://blog.zkoss.org/index.php/2015/08/25/zk8-simple-but-powerful-using-data-handler-api-to-work-with-front-end-technologies/)
 and [Github](https://github.com/zkoss/zk8-datahandler) (you can design
 your own data-attribute handler and contribute this project).
 
@@ -129,8 +126,7 @@ your own data-attribute handler and contribute this project).
 | 5.0.3   | July 2010 | The client-attribute namespace was introduced.                                    |
 | 8.0.0   | May 2015  | [Support client data attributes handler](http://tracker.zkoss.org/browse/ZK-2730) |
 
-[^1]: For more information, please refer to [ZK Component Reference:
-    iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
+[^1]: For more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
 
 [^2]: Required
 

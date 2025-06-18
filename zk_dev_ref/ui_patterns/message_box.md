@@ -51,8 +51,7 @@ Alternatively, you can examine the event name:
 **Notice**: If you want to make it run under clustering environment, you
 shall implement
 <javadoc  type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
-For more information, please refer to [ZK Developer's Reference:
-Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
+For more information, please refer to [ZK Developer's Reference: Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
 # Message Boxes with Event Thread
 

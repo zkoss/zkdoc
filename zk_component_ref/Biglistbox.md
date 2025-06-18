@@ -2,8 +2,7 @@
 
 # Biglistbox
 
-- Demonstration: [
-  Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
+- Demonstration: [ Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Biglistbox</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
@@ -13,8 +12,7 @@
 # Employment/Purpose
 
 A component to handle a huge data sets and provides the same and as many
-as the functionalities of [
-Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) including
+as the functionalities of [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) including
 selection, sorting, keystroke navigation, ROD(rendering-on-demand), and
 so on..
 
@@ -218,8 +216,7 @@ about the row index and the column index.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

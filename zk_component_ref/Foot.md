@@ -2,16 +2,14 @@
 
 # Foot
 
-- Demonstration: [Grid (Header and
-  footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
+- Demonstration: [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
 - Java API: <javadoc>org.zkoss.zul.Foot</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Foot</javadoc>
 
 
 # Employment/Purpose
 
-Defines a set of footers ( [
-Footer]({{site.baseurl}}/zk_component_ref/data/grid/footer)) for a grid
+Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/data/grid/footer)) for a grid
 ( [ Grid]({{site.baseurl}}/zk_component_ref/data/grid)).
 
 # Example
@@ -68,8 +66,7 @@ Footer]({{site.baseurl}}/zk_component_ref/data/grid/footer)) for a grid
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

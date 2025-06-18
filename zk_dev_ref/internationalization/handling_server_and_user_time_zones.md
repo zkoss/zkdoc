@@ -23,8 +23,7 @@ I'll call you at 10 o'clock GMT+0" are usable sentences since they point
 to a frame of reference for time.
 
 Be sure you know how ZK determines its server time zone by reading
-[internationalization/Time
-Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone).
+[internationalization/Time Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone).
 
 # Use of server's time zone
 
@@ -125,8 +124,7 @@ string" matching the user's locale and time zone information.
 ZK itself doesn't perform time calculations. As a Java framework, ZK
 will delegate the task of manipulating time to the relevant Java APIs.
 
-ZK can retrieve the client's locale and time zone information [from the
-clientInfoEvent]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_information_and_control).
+ZK can retrieve the client's locale and time zone information [from the clientInfoEvent]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_information_and_control).
 
 A common option is to use Java DateFormat to parse and display time in a
 locale-sensitive manner. For most use cases,
@@ -182,9 +180,6 @@ the previous option and convert server time to client time instead.
 
 # Runnable samples
 
-A runnable time and date sample is available [in
-github](https://github.com/zkoss/zkbooks/tree/master/developersreference).
-[Main composer
-class](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/internationalization/DateboxTimezoneComposer.java)
-and [display zul
-page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/internationalization/datebox-timezone.zul).
+A runnable time and date sample is available [in github](https://github.com/zkoss/zkbooks/tree/master/developersreference).
+[Main composer class](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/internationalization/DateboxTimezoneComposer.java)
+and [display zul page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/internationalization/datebox-timezone.zul).

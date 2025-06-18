@@ -21,8 +21,7 @@ button with label and an event listener.
 
 **Auto-completion with Schema**
 
-When working with a ZUML document, it is suggested to use [ZK
-Studio](http://www.zkoss.org/product/zkstudio.dsp) since it provides a
+When working with a ZUML document, it is suggested to use [ZK Studio](http://www.zkoss.org/product/zkstudio.dsp) since it provides a
 lot of features to simplify editing, such as *content assist* and
 *visual editor*.
 
@@ -39,8 +38,7 @@ when with auto-complete, if XML schema is specified correctly.
 The ZUL schema can be downloaded from
 [<http://www.zkoss.org/2005/zul/zul.xsd>](http://www.zkoss.org/2005/zul/zul.xsd).
 In addition, you can find `zul.xsd` under the `dist/xsd` directory in
-the [ZK binary
-distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
+the [ZK binary distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
 
 This section is about the general use of ZUML. For a complete reference,
 please refer to [ZUML Reference](ZUML_Reference).

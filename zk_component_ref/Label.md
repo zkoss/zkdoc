@@ -71,8 +71,7 @@ follows:
 Since ZUML is XML, not HTML, so it doesn't accept
 <strong>`&`</strong>`nbsp;`. However, you can use
 <strong>`&`</strong>`#160;` instead. For the whole list, please refer th
-[List of XML and HTML character entity
-references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
+[List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
 
 # Properties
 
@@ -303,8 +302,7 @@ only preserves new lines and white space at the beginning of each line.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

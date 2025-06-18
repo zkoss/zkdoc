@@ -2,13 +2,11 @@
 
 {% include version-badge.html version=7.0.0 %}
 
-Starting from ZK 7.0.0 integrates [Font Awesome
-4.0.1](https://fontawesomelib.com/releases/4.0.1/list/all/index.html)
+Starting from ZK 7.0.0 integrates [Font Awesome 4.0.1](https://fontawesomelib.com/releases/4.0.1/list/all/index.html)
 with the prefix **z-icon**. You don't need to manually include Font
 Awesome CSS because it's already packaged with ZK jar.
 
-You can check [the page to display all supported
-icons](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
+You can check [the page to display all supported icons](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
 
 # Basic Usage
 
@@ -18,8 +16,7 @@ attribute. All subclasses of
 (e.g. button) and some components with an icon (e.g. combobox, bandbox)
 support `iconSclass`. Some components have attributes that contain
 "iconSclass" e.g. `errorboxIconSclass` or `overflowPopupIconSclass` For
-a complete list of icon CSS classes, please refer to [FontAwesome
-Cheatsheet](http://fontawesome.io/cheatsheet/).
+a complete list of icon CSS classes, please refer to [FontAwesome Cheatsheet](http://fontawesome.io/cheatsheet/).
 
 For example, to add a home icon on a Button,
 
@@ -50,13 +47,11 @@ Therefore the example above becomes
 
 {$ include version-badge.html version=8.5.2 %}
 
-ZK 8.5.2 integrates [Font Awesome
-4.7.0](https://fontawesome.com/v4.7.0/icons/).
+ZK 8.5.2 integrates [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/icons/).
 
 {$ include version-badge.html version=10.0.0 %}
 
-ZK 10.0.0 integrates [Font Awesome 6.4.2 free
-icons](https://fontawesome.com/v6/search?o=r&m=free) and supports both
+ZK 10.0.0 integrates [Font Awesome 6.4.2 free icons](https://fontawesome.com/v6/search?o=r&m=free) and supports both
 Font Awesome 4 syntax and Font Awesome 6 syntax with styles specified:
 
 ```xml
@@ -67,8 +62,7 @@ Font Awesome 4 syntax and Font Awesome 6 syntax with styles specified:
     <button iconSclass="z-icon-bell z-icon-regular" />
 ```
 
-This version includes 10 animation effect, please check [this
-page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
+This version includes 10 animation effect, please check [this page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
 
 # IconTooltip
 
@@ -94,8 +88,7 @@ attributes.
 
 # Not Supported Usages
 
-The following usages mentioned in [Font Awesome official
-document](https://fontawesome.com/docs/web/) are not supported:
+The following usages mentioned in [Font Awesome official document](https://fontawesome.com/docs/web/) are not supported:
 
 - Duotone
 - Stacking icons

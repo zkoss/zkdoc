@@ -22,8 +22,7 @@ also sends updates if these values change while browsing the page. This
 event will fire during page initialization and whenever the client
 properties change, for example, change of tablet orientation or when
 desktop browser resized. More information of this event can be found in
-the [ClientInfoEvent
-documentation]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent).
+the [ClientInfoEvent documentation]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent).
 
 This event can be leveraged in the MVC pattern, using a controller to
 alter the page structure based on the information returned from the
@@ -71,8 +70,7 @@ Full example available on
 
 The same structure can be created following the MVVM pattern using the
 [@MatchMedia](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/matchmedia.html)
-annotation introduced in ZK 8.0.2 and [Shadow
-Elements](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/shadow_elements.html)
+annotation introduced in ZK 8.0.2 and [Shadow Elements](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/shadow_elements.html)
 introduced in ZK 8.0.0
 
 The MVVM is a natural fit for this task, since it already provides a
@@ -80,8 +78,7 @@ clear separation between data and view. On the ViewModel side, the
 @MatchMedia annotation will trigger whenever the associated media query
 condition is fulfilled.
 
-[More information on Media
-Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+[More information on Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
 
 The UI state is represented by a single ViewModel field and control the
 view. On the view side, Shadow Elements are used to instantiate and
@@ -116,8 +113,7 @@ UI experience. A template generated using responsive design can
 incorporate fluid design elements to subdivide this template’s display
 options.
 
-For example, based on the [fluid design
-examples]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design),
+For example, based on the [fluid design examples]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design),
 we can add bootstrap grid entries for extra-small, small and medium
 states to the small layout generated in ZK.
 

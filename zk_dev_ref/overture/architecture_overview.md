@@ -80,8 +80,7 @@ enhanced later as the project progresses.
     configured URL pattern. A ZK loader will be invoked to serve this
     request.
       
-    For more information, please refer to [ZK Configuration
-    Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader)
+    For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader)
 2.  The ZK loader loads a specified page and interprets that page to
     create ZK components accordingly and instantiates specified
     controllers (Composer/ViewModel).
@@ -176,8 +175,7 @@ implement an event listener with
 applicable.
 
 [^1]: It depends on the client. For Ajax-enabled browsers, it is a
-    JavaScript object. For [ZK Reach for
-    Android](http://code.google.com/p/zkreach/), it is a Java object
+    JavaScript object. For [ZK Reach for Android](http://code.google.com/p/zkreach/), it is a Java object
     running on an Android device.
 
 [^2]: A widget could choose to stop this bubble-up propagation by use of

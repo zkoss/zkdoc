@@ -121,10 +121,8 @@ below the start of the next range. In case of range conflict, both
 methods will be called and the last one called will simply overwrite any
 previous values.
 
-[More information on Media
-Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
-[git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/responsiveDesign/ResponsiveTemplateViewModel.java#L20)
+[More information on Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+[git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/java/org/zkoss/reference/developer/responsiveDesign/ResponsiveTemplateViewModel.java#L20)
 
 ## Building the main page
 
@@ -163,8 +161,7 @@ in the main page, based on the targeted templateURI attribute.
 <apply viewTemplate="@load(vm.viewTemplate)" dataModel="@load(vm.dataModel)" templateURI="templates/staticVerticalLayout.zul"/>
 ```
 
-[git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/responsiveComponentTemplating/responsivenessingrid.zul)
+[git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/responsiveComponentTemplating/responsivenessingrid.zul)
 
 ## Building the panel view
 
@@ -244,5 +241,4 @@ states.
 <grid model="@load(dataModel)  @template(viewTemplate)">
 ```
 
-[git
-source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/responsiveComponentTemplating/templates/responsiveGrid.zul)
+[git source](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/responsiveDesign/responsiveComponentTemplating/templates/responsiveGrid.zul)

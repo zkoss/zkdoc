@@ -6,15 +6,13 @@ operates internally.
 
 Notice that, if you are using Google App Engine, you can *not* configure
 the logging as described in this chapter. For more information, please
-refer to [Setting up Google App
-Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine).
+refer to [Setting up Google App Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine).
 
 # How to Configure Logging
 
 {$ include version-badge.html version=7.0.0 %}
 ZK uses [SLF4J](http://www.slf4j.org/) as its internal logging system,
-and developers can follow the [SLF4J
-document](http://www.slf4j.org/manual.html) to use the logging in ZK.
+and developers can follow the [SLF4J document](http://www.slf4j.org/manual.html) to use the logging in ZK.
 
 By default, ZK maven setting will bundle the **slf4j-jdk14**
 implementation as its default logging.[^1] If developers want to change
@@ -242,8 +240,7 @@ Rather, you can configure
 </servlet>
 ```
 
-For more information, please refer to [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader).
 
 # How to Log
 
@@ -277,8 +274,7 @@ The typical use is as follows.
 
 # Reference
 
-- [Apache Log4j Security
-  Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html)
+- [Apache Log4j Security Vulnerabilities](https://logging.apache.org/log4j/2.x/security.html)
 
 # Version History
 

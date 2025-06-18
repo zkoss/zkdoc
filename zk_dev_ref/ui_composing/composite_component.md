@@ -1,7 +1,6 @@
 
 
-Like a [macro
-component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component),
+Like a [macro component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component),
 a composite component is an approach to compose a component based on a
 template. Unlike a macro component, a composite component has to create
 and wire the child components by itself, and handle ID space if
@@ -16,8 +15,7 @@ it is easier), while using a composite component otherwise.
 > ------------------------------------------------------------------------
 >
 > If you'd like to assemble UI at runtime (aka., templating), please
-> refer to [the Templating
-> section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
+> refer to [the Templating > section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 > for more information.
 
 # Implement a Composite Component
@@ -55,8 +53,7 @@ To implement a Java class we shall:
 
 1.  Extend from the component class you want.
 2.  (Optional) Implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc> to
-    make it an [ID space
-    owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
+    make it an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 3.  Render the template in the constructor by the use of
     <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
     or others.
@@ -116,10 +113,8 @@ the component with the same ID. Similarly,
 <javadoc method="wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.select.Selectors</javadoc>
 is used to wire event listeners.
 
-For more information, please refer to [the Wire Components
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
-and [Wire Event the Listeners
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
+For more information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
+and [Wire Event the Listeners section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 sections.
 
 > ------------------------------------------------------------------------
@@ -129,17 +124,14 @@ sections.
 > help of \[<http://github.com/zanyking/ZK-Composite>\| ZK Composite\],
 > components are created and wired automatically based on the Java
 > annotations you provide. In other words, Step 3 and 4 are done
-> automatically. For more information, please refer to the [Define
-> Components with Java
-> Annotations](#Define_Components_with_Java_Annotations)
+> automatically. For more information, please refer to the [Define > Components with Java > Annotations](#Define_Components_with_Java_Annotations)
 > section.
 
 ### Wire Spring-managed Beans
 
 <javadoc method="wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)">org.zkoss.zk.ui.select.Selectors</javadoc>
 will wire variables that can be resolved by the registered variable
-resolver. In addition to [the variable-resolver
-directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver),
+resolver. In addition to [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver),
 you can create any variable resolver manually and pass it as the third
 argument.
 <javadoc method="newVariableResolvers(java.lang.Class, java.lang.Class)">org.zkoss.zk.ui.select.Selectors</javadoc>
@@ -170,13 +162,11 @@ automatically. As shown, we annotate
 <javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc> to
 resolve Spring-managed bean.
 
-For more information, please refer to [the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
+For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 
 ### ID Space
 
-Unless you extend a component that is an [ID space
-owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space)
+Unless you extend a component that is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space)
 (such as <javadoc>org.zkoss.zul.Window</javadoc>), all child components
 specified in the template will be in the same ID space as its parent. It
 might be convenient at the first glance. However, it will cause ID
@@ -200,8 +190,7 @@ need to implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc>.
 
 Like macros and any other primitive components, you have to declare a
 composite component before using it. This can be done by using
-[component
-directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+[component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 Then, we could use it the same way (they are actually primitive
 components). For example,
 
@@ -220,14 +209,12 @@ components). For example,
 
 If a composite component is used in multiple pages, it is better to
 define it in the application level, such that it can be accessed in any
-page without any [component
-directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+page without any [component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 
 There are basic two approaches to define a component in the application
 level:
 
-1.  Define it in an XML file which is called [a language
-    addon]({{site.baseurl}}/zk_client_side_ref/language_definition).
+1.  Define it in an XML file which is called [a language addon]({{site.baseurl}}/zk_client_side_ref/language_definition).
 2.  Define it with Java annotations.
 
 ## Define Components in a Language Addon
@@ -248,15 +235,13 @@ follows.
 </language-addon>
 ```
 
-For more information, please refer to [Customization: Component
-Properties]({{site.baseurl}}/zk_dev_ref/customization/component_properties#Application-wide_Initialization).
+For more information, please refer to [Customization: Component Properties]({{site.baseurl}}/zk_dev_ref/customization/component_properties#Application-wide_Initialization).
 
 ## Define Components with Java Annotations
 
 Instead of maintaining the definitions in the language addon as
 described above, you can define the component with Java annotation with
-a utility called [ZK
-Composite](https://github.com/zanyking/ZK-Composite). For example,
+a utility called [ZK Composite](https://github.com/zanyking/ZK-Composite). For example,
 
 ```java
 @Composite(name="username", macroURI="/WEB-INF/partial/username.zul")
@@ -281,8 +266,6 @@ maintain a separate XML file (the language addon). Furthermore, it will
 create the components and wire them automatically based on the
 annotations.
 
-Notice that it requires [additional JAR
-files](http://github.com/zanyking/ZK-Composite/downloads), please refer
-to [Small Talks: Define Composite Component using Java Annotation in
-ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
+Notice that it requires [additional JAR files](http://github.com/zanyking/ZK-Composite/downloads), please refer
+to [Small Talks: Define Composite Component using Java Annotation in ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
 for the details.

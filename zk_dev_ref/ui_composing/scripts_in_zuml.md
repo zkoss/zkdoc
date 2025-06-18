@@ -3,10 +3,8 @@
 To make it easier to create a dynamic web page, the ZUML document allows
 you to embed the script code. Notice that there are two types of script
 code: server-side and client-side. How the client-side code can be
-embedded is discussed in the [Client-side UI
-Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
-and [Client-side Event
-Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
+embedded is discussed in the [Client-side UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
+and [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
 sections. Here we will discuss how to embed the server-side script code
 in a ZUML document.
 
@@ -22,8 +20,7 @@ even recompiling.
 
 Notice that the performance of BeanShell is not good and, like any
 interpreter, typos can be found only when it is evaluated. For more
-information, please refer to [the Performance Tips
-section]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
+information, please refer to [the Performance Tips section]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
 
 # 2 Places to Embed
 
@@ -35,8 +32,7 @@ execute when the event is received.
 
 ## zscript
 
-First, you could embed the code inside the [zscript
-element](ZUML_Reference/ZUML/Elements/zscript), such that
+First, you could embed the code inside the [zscript element](ZUML_Reference/ZUML/Elements/zscript), such that
 they will be evaluated when the page is rendered[^1]. For example,
 
 ```xml
@@ -142,9 +138,7 @@ letter must be an **upper** case. Otherwise, it will be considered as a
 property.
 
 Again, the code is Java interpreted at run time and running on the
-server. For client-side listening, please refer to the [Client-side
-Event
-Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
+server. For client-side listening, please refer to the [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
 section.
 
 For the sake of discussion, we call it zscript no matter the code is
@@ -153,8 +147,7 @@ embedded in the `zscript` element or in an event handler.
 ### Attribute
 
 If the code is too complicated, you could specify the event handle in
-the [attribute
-element](ZUML_Reference/ZUML/Elements/attribute). For
+the [attribute element](ZUML_Reference/ZUML/Elements/attribute). For
 example,
 
 ```xml
@@ -168,8 +161,7 @@ example,
 
 # Distinguish `zscript` from EL
 
-Keep in mind, [an EL
-expression]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions)
+Keep in mind, [an EL expression]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions)
 is enclosed by \${ }.
 
 For example, `${self.label}` and `${ok.label}` are both EL expressions
@@ -201,9 +193,7 @@ You cannot mix the use of EL expressions with zscript:
 ```
 
 Also notice that the evaluation of EL expressions is very fast, so EL
-can be used in a production system. On the other hand, [zscript is
-suggested to use only in prototyping or
-quick-fix]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes).
+can be used in a production system. On the other hand, [zscript is suggested to use only in prototyping or quick-fix]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes).
 
 ## Variables Defined in zscript Visible to EL
 
@@ -225,8 +215,7 @@ The default interpreter is based on
 ## Scope for Each ID Space
 
 The Java interpreter is a *multi-scope* interpreter. It creates a scope
-for each [ID
-space]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
+for each [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 Since ID space is hierarchical, so are the scopes. If a variable cannot
 be found in the current ID space, it will go further to parent's ID
 space to try to resolve the variable.
@@ -285,8 +274,7 @@ variable and it is invisible to EL expressions. On the other hand,
 expressions. Notice that `abc` is not declared but assigned directly,
 and it causes a global variable to be created.
 
-Please refer to the [Beanshell
-Documentation](http://beanshell.org/docs.html) and search "scoping" and
+Please refer to the [Beanshell Documentation](http://beanshell.org/docs.html) and search "scoping" and
 "local" for more information.
 
 # Use Other Languages
@@ -308,8 +296,7 @@ For example,
 
 In addition, you could add your own interpreter by implementing
 <javadoc type="interface">org.zkoss.zk.scripting.Interpreter</javadoc>.
-For more information, please refer to [ZUML
-Reference](ZUML_Reference/Extensions/zscript).
+For more information, please refer to [ZUML Reference](ZUML_Reference/Extensions/zscript).
 
 [^1]: The zscript element has an attribute called
     [deferred](ZUML_Reference/ZUML/Elements/zscript#deferred)
@@ -317,5 +304,4 @@ Reference](ZUML_Reference/Extensions/zscript).
 
 [^2]: Built in id space owner includes
     <javadoc>org.zkoss.zul.Window</javadoc>,
-    <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro
-    components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
+    <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).

@@ -191,8 +191,7 @@ include version-badge.html version=7.0.2 %}
 ### Grown by children
 
 - To make Borderlayout dependable on the size of its child components,
-  [vflex
-  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
+  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
@@ -322,8 +321,7 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

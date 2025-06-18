@@ -11,8 +11,7 @@ the server to respond much slower.
 The better approach is to send back some busy messages to let the user
 know what happens during processing the long operation. It can be done
 easily with event echoing. If you prefer to allow the user to keep
-accessing other functions, please refer to the [Use Event
-Queues]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
+accessing other functions, please refer to the [Use Event Queues]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
 section, which is powerful but more sophisticated to implement.
 
 Event echoing for a long operation basically takes three steps
@@ -21,9 +20,7 @@ Event echoing for a long operation basically takes three steps
     <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
     to show a busy message and block the user from accessing any
     function
-    - Of course, you could have any effect you like, such as showing [a
-      modal
-      window]({{site.baseurl}}/zk_component_ref/containers/window).
+    - Of course, you could have any effect you like, such as showing [a modal window]({{site.baseurl}}/zk_component_ref/containers/window).
       <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
       is yet a built-in approach for showing the busy message.
 2.  Invoke

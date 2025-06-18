@@ -14,8 +14,7 @@
 
 A generic applet component.
 
-If the properties are not enough, you can use [ the Client-Attribute
-namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+If the properties are not enough, you can use [ the Client-Attribute namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 to specify them.
 
 ```xml
@@ -58,8 +57,7 @@ should not have to encode it again.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

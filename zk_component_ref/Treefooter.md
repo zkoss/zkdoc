@@ -82,8 +82,7 @@ You could place any child in a tree footer.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
+- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
 
 # Supported Children
 

@@ -1,5 +1,4 @@
-Here we describe how to provide more effects for [client-side
-actions]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects).
+Here we describe how to provide more effects for [client-side actions]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects).
 
 The allowed effects are actually the names of methods defined in
 <javadoc directory="jsdoc">zk.eff.Actions</javadoc>. Thus, to add a new

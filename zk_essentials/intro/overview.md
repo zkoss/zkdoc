@@ -3,8 +3,7 @@
 ZK is a component-based UI framework that enables you to build Rich
 Internet Application (*RIA*) and mobile applications without having to
 learn JavaScript or AJAX. You can build highly-interactive and
-responsive AJAX web applications in pure **Java**. ZK provides [hundreds
-of components](http://www.zkoss.org/zkdemo/) which are designed for various purposes, some for
+responsive AJAX web applications in pure **Java**. ZK provides [hundreds of components](http://www.zkoss.org/zkdemo/) which are designed for various purposes, some for
 displaying large amount of data and some for user input. We can easily
 create components in an XML-formatted language, **ZUL**.
 
@@ -12,8 +11,7 @@ All user actions on a page such as clicking and typing can be easily
 handled in a Controller. You can manipulate components to respond to
 users action in a Controller and the changes you made will reflect to
 browsers automatically. You don't need to care about communication
-details between browsers and servers, ZK will handle AJAX details for you. In addition to manipulating components directly i.e. [MVC
-(Model-View-Controller) approach](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/mvc), ZK also supports [MVVM (Model-View-ViewModel) approach](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) which decouples the Controller and
+details between browsers and servers, ZK will handle AJAX details for you. In addition to manipulating components directly i.e. [MVC (Model-View-Controller) approach](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/mvc), ZK also supports [MVVM (Model-View-ViewModel) approach](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) which decouples the Controller and
 View. These two approaches are mutually interchangeable,
 and you can choose one of them upon your architectural consideration.
 

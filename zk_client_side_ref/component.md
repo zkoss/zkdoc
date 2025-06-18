@@ -80,8 +80,7 @@ initial properties and so on.
 
 ## depend required
 
-if your component extends a component, most likely you need to specify [
-<depends>]({{site.baseurl}}/zk_client_side_ref/language_definition/depends)
+if your component extends a component, most likely you need to specify [ <depends>]({{site.baseurl}}/zk_client_side_ref/language_definition/depends)
 to ensure parsing order.
 
 # component-class
@@ -100,9 +99,7 @@ must be a JavaScript class. It is required if you define a new
 component.
 
 Since EL expressions are allowed, the widget class being associated with
-a component could be decided at runtime. Please refer to [Blog: Totally
-Different Look per User Without Modifying
-Application](http://blog.zkoss.org/index.php/2010/08/02/totally-different-look-per-user-without-modifying-application/)
+a component could be decided at runtime. Please refer to [Blog: Totally Different Look per User Without Modifying Application](http://blog.zkoss.org/index.php/2010/08/02/totally-different-look-per-user-without-modifying-application/)
 for an example.
 
 # mold
@@ -137,8 +134,7 @@ Then you can specify the mold on the component like
 You can specify:
 
 - a path relative to a widget js
-- [ classpath web resource
-  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+- [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
 
 # property
 
@@ -152,8 +148,7 @@ setting has no effect.
 Suppose we want to make all window's border default to `normal`, we
 could do as follows.
 
-[Customization
-Reference]({{site.baseurl}}/zk_dev_ref/customization/component_properties)
+[Customization Reference]({{site.baseurl}}/zk_dev_ref/customization/component_properties)
 
 ```xml
 <property>

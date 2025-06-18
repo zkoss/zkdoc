@@ -2,8 +2,7 @@
 
 # Treeitem
 
-- Demonstration: [Tree (Dynamic
-  Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treeitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treeitem</javadoc>
 
@@ -75,8 +74,7 @@ button.
  </window>
 ```
 
-More examples please refer to [
-Tree]({{site.baseurl}}/zk_component_ref/data/tree#The_open_Property_and_the_onOpen_Event)
+More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/data/tree#The_open_Property_and_the_onOpen_Event)
 
 # Label and Image
 
@@ -161,8 +159,7 @@ time the component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

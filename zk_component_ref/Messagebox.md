@@ -119,8 +119,7 @@ example,
 
 {% include version-badge.html version=6.0.0 %}
 
-By default, the label of a button is loaded from [the message
-file]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages)
+By default, the label of a button is loaded from [the message file]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages)
 based on the current locale. However, you could assign any label you'd
 like.
 
@@ -163,12 +162,9 @@ by invoking
 Notice that it affects all message boxes used in an application. It is
 typically called when the application starts (i.e., in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
--- for more information, please refer to [ZK Developer's Reference: Life
-Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
+-- for more information, please refer to [ZK Developer's Reference: Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
-To implement a custom template, please take a look at [the default
-template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/messagebox.zul).
+To implement a custom template, please take a look at [the default template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/messagebox.zul).
 
 ## The Width and Parameters
 
@@ -272,11 +268,9 @@ This messagebox will show without any buttons.
 [^1]: If you want to make it running under clustering environment, you
     should implement
     <javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
-    For more information, please refer to [ZK Developer's Reference:
-    Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
+    For more information, please refer to [ZK Developer's Reference: Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
-[^2]: Here we assume [the event thread is
-    disabled]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
+[^2]: Here we assume [the event thread is disabled]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
     (default). If the event thread is enabled, the show method will
     suspend until the user clicks a button. Thus, you could know which
     button is clicked by simply examining the returned value.

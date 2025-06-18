@@ -86,8 +86,7 @@ controller.
 **ATTENTION**: As seen below the "scopedCtrl"-controller has the
 "prototype"-scope. This implies that a new instance is created every
 time you resolve it by name, even in the same page. However you can
-still reference the exact same instance using [ an implicit
-variable]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer#Retrieve_Composer_in_EL_Expressions).
+still reference the exact same instance using [ an implicit variable]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer#Retrieve_Composer_in_EL_Expressions).
 
 ### Java
 

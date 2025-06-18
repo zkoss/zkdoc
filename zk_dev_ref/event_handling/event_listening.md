@@ -30,13 +30,11 @@ following section.
 
 ## Composer and Event Listener Autowiring
 
-With [ZK Developer's
-Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
+With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
 do not need to register event listeners manually. Rather, they can be
 registered automatically by the use of the
 [auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
-feature of [a
-composer]({{site.baseurl}}/zk_dev_ref/mvc/controller). For
+feature of [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller). For
 example,
 
 ```java
@@ -62,8 +60,7 @@ using the event name followed by a selector string identifying the
 component(s) (for more selector syntax examples see
 <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>). The
 composer will register each annotated method as an event listener to the
-selected component automatically **in the same [ ID
-space](ZK_Developer's_Reference/ui_composing/ID_Space)**.
+selected component automatically **in the same [ ID space](ZK_Developer's_Reference/ui_composing/ID_Space)**.
 Then, in the ZUL page, you can specify the `apply` attribute to
 associate the composer with a component.
 
@@ -90,8 +87,7 @@ Though not limited, a composer is usually associated with an ID space
 components within the given ID space. You could associate any component
 that properly represents a scope of your application to manage.
 
-For more information please refer to the [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
+For more information please refer to the [Wire Event Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 section.
 
 ## Deferrable Event Listeners

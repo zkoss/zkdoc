@@ -88,8 +88,7 @@ is rendered on demand. It means the template can be rendered very late,
 after the page is rendered, after the user scrolls down to make an item
 visible, and so on. Thus, in the template, you *cannot* reference
 anything that is available only in the page rendering phase. For
-example, you can't reference [the arg
-variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
+example, you can't reference [the arg variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
 in a template:
 
 ```xml
@@ -143,5 +142,4 @@ For example,
     <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> for
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
-    [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+    [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)

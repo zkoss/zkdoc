@@ -1,8 +1,7 @@
 In ZK Calendar the default time zone is the first timezone which was
 added. If no time zone was entered then the system’s time zone is taken
 as default (by `java.util.TimeZone.getDefault()`). All the dates in the
-Calendar component use [UTC coordinated universal
-time](http://en.wikipedia.org/wiki/UTC). If you wish to show the date
+Calendar component use [UTC coordinated universal time](http://en.wikipedia.org/wiki/UTC). If you wish to show the date
 and time with regard to your settings you need to use the function
 <mp>getDefaultTimeZone()</mp> to retrieve the local time and use that to
 format your date and time.

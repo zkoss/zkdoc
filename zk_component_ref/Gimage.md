@@ -46,25 +46,9 @@ swlat="37.44215478" swlng="-122.14273453" nelat="37.45033195" nelng="-122.131919
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events:[ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events) 
 
 # Supported Children
 
 `*None`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
 

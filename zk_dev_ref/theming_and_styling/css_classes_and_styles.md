@@ -1,11 +1,9 @@
 
 
-CSS ([Cascading Style
-Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)) is a style
+CSS ([Cascading Style Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)) is a style
 sheet language used to describe the presentation of a (HTML) document.
 It is an important part of ZK to customize component's look and feel. If
-you are not familiar with CSS, please refer to [CSS
-Tutorial](http://www.w3schools.com/css/default.asp).
+you are not familiar with CSS, please refer to [CSS Tutorial](http://www.w3schools.com/css/default.asp).
 
 There are a set of methods that could be used to set CSS styles for an
 individual component.
@@ -82,8 +80,7 @@ component's mold has.
 Rule of thumb: specify zclass if you want to customize the look
 completely. Otherwise, use sclass to customize one or a few CSS styles.
 
-For more information, please refer to [ZK Style
-Guide]({{site.baseurl}}/zk_style_customization_guide/zk_class_concept/zclass).
+For more information, please refer to [ZK Style Guide]({{site.baseurl}}/zk_style_customization_guide/zk_class_concept/zclass).
 
 # content style and sclass
 

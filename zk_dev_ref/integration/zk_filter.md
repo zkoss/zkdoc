@@ -32,8 +32,7 @@ process.
 
 The `extension` parameter (`init-param`) defines the language of the
 dynamical output. By default, it is `html`, since most legacy servlets
-generate an HTML document. If the output is [a ZUL
-document](ZUML_Reference/ZUML/Languages/ZUL), you could
+generate an HTML document. If the output is [a ZUL document](ZUML_Reference/ZUML/Languages/ZUL), you could
 specify `zul` as the extension.
 
 Notice that, if you want to filter the output from include and/or
@@ -55,12 +54,10 @@ example,
 # Performance Consideration for Filtering XHTML
 
 If the extension is html (and the output is XHTML), it means each HTML
-tag will be converted to [an XHTML
-component](ZUML_Reference/ZUML/Languages/XHTML). It is
+tag will be converted to [an XHTML component](ZUML_Reference/ZUML/Languages/XHTML). It is
 convenient if you want to manipulate them dynamically. However, it costs
 more memory since ZK has to maintain the states of each HTML tag. Thus,
-it is suggested to use [the native
-namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
+it is suggested to use [the native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 for the portion whose content won't be changed dynamically.
 
 # ZK Filter versus UI Factory
@@ -72,5 +69,4 @@ such as from the database, you could implement
 generally done by extending from
 <javadoc>org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc> and overriding
 <javadoc method="getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.
-For more information, please refer to [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).

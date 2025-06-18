@@ -57,8 +57,7 @@ statement, then the user gets the result as depicted below.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Image]({{site.baseurl}}/zk_component_ref/essential_components/image#Supported_Events)
+- Inherited Supported Events: [ Image]({{site.baseurl}}/zk_component_ref/essential_components/image#Supported_Events)
 
 # Supported Children
 

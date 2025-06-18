@@ -3,8 +3,7 @@
 # Event Listener
 
 ZK supports to add an event listener on zul or in Java, please refer to
-[ZK Developer's Reference/Event Handling/Event
-Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening).
+[ZK Developer's Reference/Event Handling/Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening).
 
 # Supported Events
 
@@ -16,8 +15,7 @@ This event is triggered when a user clicks an empty cell in the time
 cell.
 
 ![ center](images/onitemcreate.gif) Event name in 2.1:
-[ON_EVENT_CREATE
-(onEventCreate)](https://www.zkoss.org/javadoc/zkcal/2.1.5/org/zkoss/calendar/event/CalendarsEvent.html#ON_EVENT_CREATE)
+[ON_EVENT_CREATE (onEventCreate)](https://www.zkoss.org/javadoc/zkcal/2.1.5/org/zkoss/calendar/event/CalendarsEvent.html#ON_EVENT_CREATE)
 
 ## [CalendarsEvent.ON_ITEM_EDIT](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/event/CalendarsEvent.html#ON_ITEM_EDIT)
 
@@ -55,8 +53,7 @@ event to show a tooltip for an item.
 ## [CalendarsEvent.ON_WEEK_CLICK](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/event/CalendarsEvent.html#ON_WEEK_CLICK)
 
 Calendars fires this event when you click the week number of the year on
-the left-hand side when you set [
-weekOfYear="true"]({{site.baseurl}}/zk_calendar_essentials/component_attributes#weekOfYear).
+the left-hand side when you set [ weekOfYear="true"]({{site.baseurl}}/zk_calendar_essentials/component_attributes#weekOfYear).
 
 ![](/zk_calendar_essentials/images/OnWeekClick.gif)
 
@@ -69,8 +66,7 @@ texts (TUE 10/3) on the top of the component.
 
 ![](/zk_calendar_essentials/images/OnDayClick.gif)
 
-It passes an [Event
-object](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html),
+It passes an [Event object](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html),
 not CalendarsEvent, to your event listener, and you can get the clicked
 date:
 

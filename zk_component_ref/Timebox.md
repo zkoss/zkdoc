@@ -2,8 +2,7 @@
 
 # Timebox
 
-- Demonstration: [Date and
-  Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
+- Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: <javadoc>org.zkoss.zul.Timebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Timebox</javadoc>
 
@@ -79,9 +78,7 @@ rather than the real format as follows.
 ```
 
 Then the real format of the timebox will be decided at run time
-depending the configuration. For more information, please refer to [ZK
-Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
+depending the configuration. For more information, please refer to [ZK Developer's Reference: Date and Time Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 ## Locale
 
@@ -110,8 +107,7 @@ convert the specified text well.
 
 # Inherited Functions
 
-Please refer to [
-FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
+Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -135,8 +131,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Molds
 

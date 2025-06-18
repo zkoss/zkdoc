@@ -1,7 +1,6 @@
 # Component Reference
 
-Component Reference: [
-Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
+Component Reference: [ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
 
 # DOM Structure
 
@@ -42,13 +41,10 @@ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
   - z-tabbox-bottom,
   - z-tabbox-left or
   - z-tabbox-right
-- Line 7: [Close Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
-- Line 22: [Chevron-left Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/chevron-left/)
+- Line 7: [Close Icon Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
+- Line 22: [Chevron-left Icon Font](http://fortawesome.github.io/Font-Awesome/icon/chevron-left/)
   used for tab scrolling.
-- Line 25: [Chevron-right Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/chevron-right/)
+- Line 25: [Chevron-right Icon Font](http://fortawesome.github.io/Font-Awesome/icon/chevron-right/)
   used for tab scrolling.
 
 ## Accordion Mold
@@ -72,8 +68,7 @@ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
 </div>
 ```
 
-- Line 7: [Close Icon
-  Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
+- Line 7: [Close Icon Font](http://fortawesome.github.io/Font-Awesome/icon/times/) used.
 
 # LESS Source
 
@@ -129,8 +124,7 @@ Check complete LESS source for Tabbox from
 ## LESS Variables
 
 The following LESS variables are used for Tabbox component. Check other
-variables from [
-here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
 
 | Variables                   | Default Value |
 |-----------------------------|---------------|
@@ -153,8 +147,7 @@ Assume the image below is our target design for Tabbox component.
 
 ### Setup environment and Analyze design
 
-- Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color

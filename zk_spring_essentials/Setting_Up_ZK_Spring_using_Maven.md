@@ -6,14 +6,10 @@ archetype will include required ZK and spring dependencies and ZK maven
 evaluation repository.
 
 If you use maven in a command line console, you need to specify ZK
-archetype catalog URL to generate your project. Please refer to [ Create
-a Maven Project with a Command Line
-Interface]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
+archetype catalog URL to generate your project. Please refer to [ Create a Maven Project with a Command Line Interface]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
 
 If you use eclipse, you can add the catalog URL via Window / Preferences
-/ Maven / Archetypes, please refer to [ZK Installation Guide/Quick
-Start/Create and Run Your First ZK Application with Eclipse and
-Maven#Add ZK Maven
+/ Maven / Archetypes, please refer to [ZK Installation Guide/Quick Start/Create and Run Your First ZK Application with Eclipse and Maven#Add ZK Maven
 Archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)
 
 # Adding ZK Spring Dependencies
@@ -48,8 +44,7 @@ For ZK **8+** or above, you should use **4.0.0** or above.
 </dependency>
 ```
 
-Check the available versions at [CE
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-core/).
+Check the available versions at [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-core/).
 
 **ZK Spring Security**
 
@@ -61,8 +56,7 @@ repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-core/).
 </dependency>
 ```
 
-Check the available versions at [CE
-repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-security/)
+Check the available versions at [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-security/)
 
 **ZK Spring Webflow**
 
@@ -70,8 +64,7 @@ discontinued since 4.0.0
 
 ## ZKSpring 6
 
-Notice that this version depends on [Spring Framework
-6.0](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) and
+Notice that this version depends on [Spring Framework 6.0](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) and
 requires Jakarta EE.
 
 # Configuration in web.xml
@@ -88,10 +81,8 @@ framework.
 
 # Example Project
 
-- [zkspring example project for spring 5 or
-  before](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec).
-- [zkspring example project for spring
-  6](https://github.com/zkoss/zkspring/tree/6.0.0/zkspringessentials/zkspringcoresec)
+- [zkspring example project for spring 5 or before](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec).
+- [zkspring example project for spring 6](https://github.com/zkoss/zkspring/tree/6.0.0/zkspringessentials/zkspringcoresec)
 
 # Version History
 

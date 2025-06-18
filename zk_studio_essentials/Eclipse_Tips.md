@@ -5,9 +5,7 @@ Many keyboard shortcuts are configurable via **Preference** window
 preference page to configure keyboard shortcuts (or so called "hotkey")
 is located in **General/Keys** preference page.
 
-You can refer to the ["*Customizing Key bindings*" section of Eclipse
-official
-help](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm).
+You can refer to the ["*Customizing Key bindings*" section of Eclipse official help](http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.user/concepts/accessibility/keyboardshortcuts.htm).
 
 # Add Source Code and Javadoc Resource to JAR File
 

@@ -7,8 +7,7 @@ expressions.
 
 This can be done easily by implementing
 <javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>/<javadoc type="interface">org.zkoss.zk.ui.util.InitiatorExt</javadoc>,
-and then specifying it with [the init
-directive](ZUML_Reference/ZUML/Processing_Instructions/init).
+and then specifying it with [the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 
 ```xml
 <?init class="com.foo.MyInitial"?>
@@ -24,8 +23,7 @@ the variable in the page's attributes.
 > **Notice** that the provision of variables for EL expression is
 > generally better to be done with
 > <javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>
-> (and then specified it with [the variable-resolver
-> directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)).
+> (and then specified it with [the variable-resolver > directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)).
 
 For example, suppose we have a class, `CustomerManager`, that can be
 used to load all customers, then we could prepare a variable to store
@@ -69,9 +67,7 @@ register a system-level initiator, rather than specifying it on every
 page.
 
 It could be done by specifying the initiator you implemented in
-`WEB-INF/zk.xml` as follows. For more information, please refer to [ZK
-Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
+`WEB-INF/zk.xml` as follows. For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
 ```xml
 <listener>
@@ -82,8 +78,7 @@ Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 Once specified, an instance of the given class will be instantiated for
 each page (<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>),
 and then its method will be called as if they are specified in the page
-([the init
-directive](ZUML_Reference/ZUML/Processing_Instructions/init)).
+([the init directive](ZUML_Reference/ZUML/Processing_Instructions/init)).
 
 # Exception Handling
 

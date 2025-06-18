@@ -13,8 +13,7 @@
 # Employment/Purpose
 
 A dropdown list that allows users to search and select items. Since it
-contains a separate search field (unlike [
-Combobox](zk_component_ref/Input/Combobox)), it can
+contains a separate search field (unlike [ Combobox](zk_component_ref/Input/Combobox)), it can
 avoid end-users from inputting a non-existed item.
 
 # Example
@@ -196,8 +195,7 @@ sends this event after opening or closing the component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

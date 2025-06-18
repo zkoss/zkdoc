@@ -1,7 +1,6 @@
 ZK creates a component (one of the derives of
 <javadoc>org.zkoss.zhtml.AbstractTag</javadoc>) for each XML element
-specified with the [XHTML component
-set](ZUML_Reference/ZUML/Languages/XHTML). In other words, ZK
+specified with the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML). In other words, ZK
 will maintain their states on the server. However, if you won't change
 their states dynamically (i.e., after instantiated), you could use the
 [native namespace](ZUML_Reference/ZUML/Namespaces/Native)
@@ -48,14 +47,12 @@ incorrect.
 <button label="add" onClick="new Li().setParent(x)"/>
 ```
 
-If you have to change them dynamically, you still have to use the [XHTML
-component set](ZUML_Reference/ZUML/Languages/XHTML), or you
+If you have to change them dynamically, you still have to use the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML), or you
 could use <javadoc>org.zkoss.zul.Html</javadoc> alternatively, if the
 HTML tags won't contain any ZUL component.
 
 **Notice** that you could create the native components in Java too. For
-more information, please refer to [the native
-namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
+more information, please refer to [the native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 section.
 
 ```java

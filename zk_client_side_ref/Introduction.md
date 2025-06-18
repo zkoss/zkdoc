@@ -7,7 +7,6 @@ if you'd like to have more control of the client, please refer to the
 and [Customization]({{site.baseurl}}/zk_client_side_ref/customization)
 sections. The other sections are more for component development.
 
-If you would like to develop a component, you should read [ZK Component
-Development Essentials](ZK_Component_Development_Essentials)
+If you would like to develop a component, you should read [ZK Component Development Essentials](ZK_Component_Development_Essentials)
 first for the introduction. Then, you could reference this book if there
 is an issue.

@@ -14,12 +14,6 @@ Notice that JavaScript is readable by any user, so be careful not to
 expose sensitive data or business logic when migrating some code from
 server to client.
 
-- About client-side UI composing, please refer to [ZK Client-side
-  Reference: UI
-  Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing).
-- About customizing client-side widget's behavior, please refer to [ZK
-  Client-side Reference: Widget
-  Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
-- About client-side event handling, please refer to [ZK Client-side
-  Reference: Event
-  Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+- About client-side UI composing, please refer to [ZK Client-side Reference: UI Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing).
+- About customizing client-side widget's behavior, please refer to [ZK Client-side Reference: Widget Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
+- About client-side event handling, please refer to [ZK Client-side Reference: Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)

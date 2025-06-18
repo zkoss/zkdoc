@@ -40,8 +40,7 @@ manually if necessary. Since a session is associated with the same
 client, you can store the client info in the session's attribute.
 
 For example, we could use it to control the default time zone (For more
-information about time zone, please refer to the [Time
-Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone)
+information about time zone, please refer to the [Time Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone)
 section).
 
 ```java
@@ -100,8 +99,7 @@ yet.
  }
 ```
 
-- Line 2: [All modern browsers now don't support showing a custom
-  message](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#compatibility_notes).
+- Line 2: [All modern browsers now don't support showing a custom message](https://developer.mozilla.org/en-US/docs/Web/API/Window/beforeunload_event#compatibility_notes).
   So just pass a non-null string as a parameter to activate the
   confirmation dialog.
 
@@ -136,8 +134,7 @@ After the loading is completed, you could invoke
 <javadoc method="clearBusy(org.zkoss.zk.ui.Component)">org.zkoss.zk.ui.util.Clients</javadoc>
 (or
 <javadoc method="clearBusy()">org.zkoss.zk.ui.util.Clients</javadoc>)to
-clean it up. For more information, please refer to the [Use Echo
-Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
+clean it up. For more information, please refer to the [Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 section.
 
 ## Log the Message to Browser
@@ -173,14 +170,12 @@ want to invoke a function of a client-side widget.
 Clients.response(new AuScript(null, "alert('Hello, Client')"));
 ```
 
-For client-side API, please refer to [JavaScript
-API](http://www.zkoss.org/javadoc/latest/jsdoc/).
+For client-side API, please refer to [JavaScript API](http://www.zkoss.org/javadoc/latest/jsdoc/).
 
 # Browser Page Visibility State
 
 In order to develop power and CPU efficient web applications, W3C
-publishes a specification named [Page
-Visibility](http://www.w3.org/TR/page-visibility/) in HTML 5 which
+publishes a specification named [Page Visibility](http://www.w3.org/TR/page-visibility/) in HTML 5 which
 defines a means for site developers to programmatically determine the
 current visibility state of the page. In this specification, there are
 two attributes defined: *hidden* and *visibilityState*, where *hidden*

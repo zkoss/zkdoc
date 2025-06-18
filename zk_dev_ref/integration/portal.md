@@ -2,8 +2,7 @@
 
 Here we describe the standard configuration. Depending on the portal
 server, you might have more than one configuration to set. For more
-information, please refer to [ZK Installation
-Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).
+information, please refer to [ZK Installation Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).
 
 ## WEB-INF/portlet.xml
 
@@ -41,8 +40,7 @@ zero to prevent portals from caching the result.
 
 ZK portlet loader actually delegates the loading of ZUML documents to ZK
 Loader (<javadoc>org.zkoss.zk.ui.http.DHtmlLayoutServlet</javadoc>).
-Thus, you have to configure `WEB-INF/web.xml` as specified in [ZK
-Installation Guide](ZK_Installation_Guide), even if you want
+Thus, you have to configure `WEB-INF/web.xml` as specified in [ZK Installation Guide](ZK_Installation_Guide), even if you want
 to use only portlets.
 
 # Use ZK Portlet
@@ -79,5 +77,4 @@ higher the priority.
 
 How to pass a request parameter or attribute to a portlet depends on the
 portal. You have to consult the user's guide of your favorite portal for
-details, or refer to [ZK Installation
-Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).
+details, or refer to [ZK Installation Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).

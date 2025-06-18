@@ -26,14 +26,11 @@ appropriate.
 
 Here we describe how to compose UI in JavaScript at the client-side.
 
-- For client-side event handling, please refer to the [Client-side Event
-  Handling]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+- For client-side event handling, please refer to the [Client-side Event Handling]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
   section.
 - For more information about the relationship among components, widgets,
-  and DOM, please refer to the [Components and
-  Widgets]({{site.baseurl}}/zk_client_side_ref/component_development/components_and_widgets).
-- For developing a component, please refer to the [Component
-  Development]({{site.baseurl}}/zk_client_side_ref/component_development)
+  and DOM, please refer to the [Components and Widgets]({{site.baseurl}}/zk_client_side_ref/component_development/components_and_widgets).
+- For developing a component, please refer to the [Component Development]({{site.baseurl}}/zk_client_side_ref/component_development)
   section.
 
 > ------------------------------------------------------------------------
@@ -62,9 +59,7 @@ It is suggested that the client-side UI composing is better designed to
 minimize the network round-trip, provide effects and other enhancement,
 while the most, if not all, of the application is better to be done at
 the server. Thus, here we only discuss this kind of addon, aka., fusion.
-For pure-client approach, please refer to [Small Talk: ZK 5.0 and
-Client-centric
-Approach](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5.0_and_Client-centric_Approach).
+For pure-client approach, please refer to [Small Talk: ZK 5.0 and Client-centric Approach](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5.0_and_Client-centric_Approach).
 
 Depending on your requirement, there are typically two situations we
 could *fuse* the client-side code:
@@ -82,18 +77,15 @@ event as follows.
 </div>
 ```
 
-As shown, we have to use the [client
-namespace](ZUML_Reference/ZUML/Namespaces/Client) to indicate
+As shown, we have to use the [client namespace](ZUML_Reference/ZUML/Namespaces/Client) to indicate
 the onFocus attribute which is for the client-side event listener. It is
-done by applying [XML
-namespace](http://www.w3schools.com/xml/xml_namespaces.asp):
+done by applying [XML namespace](http://www.w3schools.com/xml/xml_namespaces.asp):
 
 - Add the `xmlns:w="client"` attribute
 - Prefix `w:` before onFocus
 
 For more information about the client-side event listener, please refer
-to the [Event
-Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+to the [Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
 section.
 
 The other typical situation to fuse the client-side code is to override
@@ -253,8 +245,7 @@ attached yet). For example,
     w:onClick="new zul.wgt.Label({value: 'Clicked'}).replaceHTML('#anchor')"/>
 ```
 
-where we use the [native
-namespace](ZUML_Reference/ZUML/Namespaces/Native) to create a
+where we use the [native namespace](ZUML_Reference/ZUML/Namespaces/Native) to create a
 DOM element and then replace it with the label widget.
 
 > ------------------------------------------------------------------------
@@ -299,8 +290,7 @@ later.
 [^1]: It actually depends on the device. For Ajax, it is a JavaScript
     object. For Android devices, it is a Java object.
 
-[^2]: A widget in the same [ID
-    space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space).
+[^2]: A widget in the same [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space).
 
 [^3]: Since ZK 5.0.2
 

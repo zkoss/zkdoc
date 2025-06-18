@@ -31,8 +31,7 @@ Let me explain them in detail.
 
 ## Approach 1: Locate by a component's ID
 
-With [Server+client
-architecture]({{site.baseurl}}/zk_dev_ref/overture/architecture_overview),
+With [Server+client architecture]({{site.baseurl}}/zk_dev_ref/overture/architecture_overview),
 ZK maintains an *identical* world at the client. If your test tool is
 able to access JavaScript at the client, your test code can depend on a
 component's ID and its widget's parent-child relationship as your
@@ -72,8 +71,7 @@ since it can be retrieved from a widget's
 <javadoc directory="jsdoc" method="$n()">zk.Widget</javadoc>.
 
 [ZTL](http://code.google.com/p/zk-ztl/) is a typical example that takes
-this approach. For more information, please refer to the [ZTL
-section]({{site.baseurl}}/zk_dev_ref/testing/ztl).
+this approach. For more information, please refer to the [ZTL section]({{site.baseurl}}/zk_dev_ref/testing/ztl).
 
 ## Approach 2: Use ID Generator for Fixed or Predictable UUIDs in Automated Testing
 

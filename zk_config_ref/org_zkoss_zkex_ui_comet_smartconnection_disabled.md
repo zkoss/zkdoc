@@ -8,8 +8,7 @@
 `Default: `<i>`true`</i>  
 `[Since 7.0.1]`
 
-It specifies whether to disable the use of [HTML5's Page Visibility
-API](http://www.w3.org/TR/page-visibility/) for handling Comet-based
+It specifies whether to disable the use of [HTML5's Page Visibility API](http://www.w3.org/TR/page-visibility/) for handling Comet-based
 server push.
 
 By default, ZK detects if the browser support the HTML5's Page

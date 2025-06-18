@@ -1,8 +1,7 @@
 Here we describe how to implement a custom renderer for a listbox
 (<javadoc type="interface">org.zkoss.zul.ListitemRenderer</javadoc>).
 For the concepts about component, model and renderer, please refer to
-[the Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+[the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 When a listbox (<javadoc>org.zkoss.zul.Listbox</javadoc>) is assigned
 with a model, a default renderer is assigned too. The default renderer
@@ -42,5 +41,4 @@ public class MyRenderer implements ListitemRenderer{
 
 [^1]: If the listbox is assigned a template called `model`, then the
     template will be used to render the listbox. For more information,
-    please refer to [the Listbox Template
-    section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template).
+    please refer to [the Listbox Template section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template).

@@ -3,8 +3,7 @@
 Here we describe how to implement a tree model
 (<javadoc type="interface">org.zkoss.zul.TreeModel</javadoc>). You shall
 understand the interaction among a component, a model, and a renderer,
-please refer to [the Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 # Choose a Proper Model Class
 
@@ -494,19 +493,16 @@ implementation generally doesn't have to implement it explicitly.
 **Note:** If your tree model contains a lot of nodes, please also
 implement
 <javadoc method="getPath(E)" type="interface">org.zkoss.zul.TreeModel</javadoc>
-to get better performance, by default it is implemented by [Depth-first
-search](http://en.wikipedia.org/wiki/Depth-first_search) to get the path
+to get better performance, by default it is implemented by [Depth-first search](http://en.wikipedia.org/wiki/Depth-first_search) to get the path
 from a tree node.
 
 # Leaf Node
 
 The <javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> has 2 constructors:
 
-- `DefaultTreeNode(data)`: create a [leaf
-  node](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)which
+- `DefaultTreeNode(data)`: create a [leaf node](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)which
   cannot have children added to it.
-- `DefaultTreeNode(data, children)`: create a [branch
-  node](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)
+- `DefaultTreeNode(data, children)`: create a [branch node](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)
   which can have children added to it.
 
 ZK renders a rotating triangle to expand/collapse a node in front of a

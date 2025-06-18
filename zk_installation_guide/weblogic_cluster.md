@@ -5,8 +5,7 @@ and [Weblogic](#weblogic.xml).
 
 ## zk.xml
 
-- Turn on Serializable UI Factory for ZK, please refer to [ this
-  documentation]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
+- Turn on Serializable UI Factory for ZK, please refer to [ this documentation]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
 
 ```xml
 <zk>
@@ -55,8 +54,7 @@ For Weblogic version 12c
 </wls:weblogic-web-app>
 ```
 
-As mentioned in [Weblogic's
-document](http://download.oracle.com/docs/cd/E12840_01/wls/docs103/webapp/weblogic_xml.html#wp1071982)
+As mentioned in [Weblogic's document](http://download.oracle.com/docs/cd/E12840_01/wls/docs103/webapp/weblogic_xml.html#wp1071982)
 
 **`replicated`**` — Same as memory, but session data is replicated across the clustered servers.`
 

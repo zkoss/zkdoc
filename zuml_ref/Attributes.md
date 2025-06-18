@@ -47,5 +47,4 @@ one-by-one.
 >
 > <references/>
 
-[^1]: For introductory, please refer to [ZK Developer's
-    Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions).
+[^1]: For introductory, please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions).

@@ -81,8 +81,7 @@ Notes:
 
 # Inherited Functions
 
-Please refer to [
-NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
+Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -106,8 +105,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
+- Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

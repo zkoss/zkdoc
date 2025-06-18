@@ -7,10 +7,8 @@ few library jars, and make some configuration changes to your project.
 
 - Download [ZK Framework](http://www.zkoss.org/download/zk.dsp)
   binaries.
-- Download [ZK
-  Pivottable](http://www.zkoss.org/download/zkpivottable.dsp) binaries.
-- Download [ZK JSP Tags
-  Library](http://www.zkoss.org/download/zkjsp.dsp) binaries.
+- Download [ZK Pivottable](http://www.zkoss.org/download/zkpivottable.dsp) binaries.
+- Download [ZK JSP Tags Library](http://www.zkoss.org/download/zkjsp.dsp) binaries.
 
 ### Configuration
 

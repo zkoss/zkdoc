@@ -127,8 +127,7 @@ The code below demonstrates how to use the *instant* mode:
 </window>
 ```
 
-Notice the `include` component itself is [a ID space
-owner]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), so
+Notice the `include` component itself is [a ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), so
 there is no issue of ID conflicts. But, it also means you have to use
 <javadoc>org.zkoss.zk.ui.Path</javadoc> or other techniques to retrieve
 the child components.
@@ -146,21 +145,16 @@ For example:
  <include src="mypage" some="something" another="${expr}"/>
 ```
 
-Then, you could retrieve the values by use [the arg
-object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
-as described in [the Load ZUML in Java
-section]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java).
+Then, you could retrieve the values by use [the arg object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
+as described in [the Load ZUML in Java section]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java).
 
 > ------------------------------------------------------------------------
 >
-> In the `defer` mode, the values have to be retrieved by [the
-> requestScope
-> object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope).
+> In the `defer` mode, the values have to be retrieved by [the > requestScope > object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope).
 >
 > ------------------------------------------------------------------------
 >
-> Unfortunately there is [a
-> bug](https://sourceforge.net/tracker/?func=detail&aid=3142583&group_id=152762&atid=785191)
+> Unfortunately there is [a > bug](https://sourceforge.net/tracker/?func=detail&aid=3142583&group_id=152762&atid=785191)
 > in 5.0.5, so it won't work unless you use 5.0.6 or later.
 
 ## Defer
@@ -208,10 +202,8 @@ mode. First, you can pass them with the query string.
 Then, in the included page, you can access them with
 <javadoc method="getParameter(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the `param`
-object](ZUML_Reference/EL_Expressions/Implicit_Objects/param)
-or [the paramValues
-object](ZUML_Reference/EL_Expressions/Implicit_Objects/paramValues)
+the included page), you can use [the `param` object](ZUML_Reference/EL_Expressions/Implicit_Objects/param)
+or [the paramValues object](ZUML_Reference/EL_Expressions/Implicit_Objects/paramValues)
 to access them.
 
 ```xml
@@ -232,8 +224,7 @@ With the dynamic properties, you can pass non-String-typed values. In
 the included page, you can access them with
 <javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the requestScope
-object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope)
+the included page), you can use [the requestScope object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope)
 to access them.
 
 ```xml
@@ -425,10 +416,8 @@ loading of the included page will then take place later. Though the end
 user still cannot access the page, the feed back is much better (with a
 *semi-ready* page than totally blank).
 
-This feature is actually done by the use of the so-called [echo
-event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing).
-For more information, please refer to the [Long Operations: Use Echo
-Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
+This feature is actually done by the use of the so-called [echo event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing).
+For more information, please refer to the [Long Operations: Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 section.
 
 This feature cannot be used with the `instant` mode. If the `auto` mode
@@ -450,8 +439,7 @@ content is generated directly, and they might be evaluated before
 widgets are rendered (depending on the browser and the complexity of a
 page).
 
-For more information, please refer to the [\#Include Non-ZUML
-Pages](#Include_Non-ZUML_Pages) section.
+For more information, please refer to the [\#Include Non-ZUML Pages](#Include_Non-ZUML_Pages) section.
 
 > ------------------------------------------------------------------------
 >
@@ -478,8 +466,7 @@ Pages](#Include_Non-ZUML_Pages) section.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

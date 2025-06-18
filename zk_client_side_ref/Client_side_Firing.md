@@ -36,8 +36,7 @@ converted to an AU request and sent to the server, if
     server[^1]. Notice that, to minimize the traffic, ZK Client Engine
     sends the AU request only if one of the following conditions is
     satisfied:
-    - The event is declared as [an important
-      event]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing#Important_Events)
+    - The event is declared as [an important event]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing#Important_Events)
       (at server).
     - The server has registered an event listener
       (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>)
@@ -50,8 +49,7 @@ converted to an AU request and sent to the server, if
 zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
 
-For more information, please refer to [the next
-section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing).
+For more information, please refer to [the next section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing).
 
 > ------------------------------------------------------------------------
 >
@@ -70,8 +68,7 @@ next section.
 # Fire Event Directly to Server
 
 If you would like to fire an event to the server directly, you could
-invoke [zAu.send(Event,
-int)](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/zAu.html#send-zk.Event-int-).
+invoke [zAu.send(Event, int)](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/zAu.html#send-zk.Event-int-).
 In other words, the event won't go through the target widget's listeners
 and will be sent to the server, no matter if it has a peer component or
 anything else.

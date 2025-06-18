@@ -3,9 +3,7 @@
 1.  Visit [Tomcat Official Site](http://tomcat.apache.org/)
 2.  Select the correct binary distribution for your environment and
     download
-    - For Windows, you might download and execute [32-bit/64-bit Windows
-      Service
-      Installer](http://apache.stu.edu.tw//tomcat/tomcat-6/v6.0.29/bin/apache-tomcat-6.0.29.exe),
+    - For Windows, you might download and execute [32-bit/64-bit Windows Service Installer](http://apache.stu.edu.tw//tomcat/tomcat-6/v6.0.29/bin/apache-tomcat-6.0.29.exe),
       and then follow the instructions
     - Any download/install problem, please refer to
       <http://tomcat.apache.org/tomcat-6.0-doc/index.html>
@@ -48,8 +46,6 @@ creating your own application directly.*
 When developing an application, we usually use IDE to deploy it. For
 more information, please refer to the document of your IDE.
 
-If you are new to Java IDE, you might take a look at [Setting up Eclipse
-with ZK
-Studio](Setting_up_IDE/Eclipse_with_ZK_Studio).
+If you are new to Java IDE, you might take a look at [Setting up Eclipse with ZK Studio](Setting_up_IDE/Eclipse_with_ZK_Studio).
 
 

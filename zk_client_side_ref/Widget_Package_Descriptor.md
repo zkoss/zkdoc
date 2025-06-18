@@ -1,8 +1,7 @@
 This section describes what a **Widget Package Descriptor** is. This is
 required for the component. However, you could skip it if you do not
 have to develop components. For more information about component
-development, please refer to [ZK Component Development
-Essentials](ZK_Component_Development_Essentials).
+development, please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials).
 
 The Widget Package Descriptor (WPD) is a file describing the information
 of a package, such as its widget classes and external JavaScript files.

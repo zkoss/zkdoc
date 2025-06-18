@@ -11,10 +11,8 @@
 
 A group box is used to group components together. A border is typically
 drawn around the components to show that they are related. The label
-across the top of the group box can be created by using [
-Caption]({{site.baseurl}}/zk_component_ref/containers/caption)
-component. It works much like the HTML legend element. Unlike [
-Window]({{site.baseurl}}/zk_component_ref/containers/window), a group
+across the top of the group box can be created by using [ Caption]({{site.baseurl}}/zk_component_ref/containers/caption)
+component. It works much like the HTML legend element. Unlike [ Window]({{site.baseurl}}/zk_component_ref/containers/window), a group
 box is not an owner of the ID space. It cannot be overlapped or popped
 up.
 
@@ -112,8 +110,7 @@ For example,
 <groupbox width="250px" mold="3d" closable="true">
 ```
 
-**Note:** the function can only be applied when the [
-Caption]({{site.baseurl}}/zk_component_ref/containers/caption) exists.
+**Note:** the function can only be applied when the [ Caption]({{site.baseurl}}/zk_component_ref/containers/caption) exists.
 
 ## Open/Close
 
@@ -200,8 +197,7 @@ component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

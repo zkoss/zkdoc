@@ -8,10 +8,8 @@ will explain the theme creation procedures step by step.
 
 # Prerequisites
 
-1.  Eclipse with maven plug-in installed (see [ installation
-    guide]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)).
-2.  ZK maven archetype installed (see [ installation
-    guide]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)).
+1.  Eclipse with maven plug-in installed (see [ installation guide]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)).
+2.  ZK maven archetype installed (see [ installation guide]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)).
 3.  Create a demo project by ZK maven archetype to check the design.
 4.  Familiar with LESS.
 5.  Familiar with ZK Component's DOM structure.
@@ -86,8 +84,7 @@ a new look and feel using LESS
           <value>atlantic</value>
       </library-property>
       ```
-    - Follow this [
-      instruction]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Run_the_application)
+    - Follow this [ instruction]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Run_the_application)
       to start up the demo project and check the style.
 6.  Repeat Step 1 to 5 for every component and elements.
 
@@ -95,8 +92,7 @@ a new look and feel using LESS
 
 After the theme is completely tuned based on flat design, right click on
 the Atlantic project and execute **Run As \> Maven install** to generate
-theme jar file. You can then use the theme jar (see [ usage
-instruction]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#Installation))
+theme jar file. You can then use the theme jar (see [ usage instruction]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#Installation))
 in other ZK web projects as well.
 
 

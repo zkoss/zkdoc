@@ -7,13 +7,10 @@ patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/mvc/model)
 and [ MVVM]({{site.baseurl}}/zk_dev_ref/mvvm), which are both
 fully supported patterns.
 
-ZK provides [ chart
-models]({{site.baseurl}}/zk_dev_ref/mvc/model/chart_model) to
+ZK provides [ chart models]({{site.baseurl}}/zk_dev_ref/mvc/model/chart_model) to
 handle data in the chart. Manipulating chart model with charts is the
 same as other ZK components handling their supporting models. We've used
-MVC approach to create the chart in the previous section - [ Create your
-first ZK
-Charts]({{site.baseurl}}/zk_charts_essentials/getting_started_with_zk_charts/create_your_first_zk_charts).
+MVC approach to create the chart in the previous section - [ Create your first ZK Charts]({{site.baseurl}}/zk_charts_essentials/getting_started_with_zk_charts/create_your_first_zk_charts).
 In this section, we will create another example of manipulating the
 chart model in the MVVM approach.
 

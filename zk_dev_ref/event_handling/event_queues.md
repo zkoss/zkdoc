@@ -262,9 +262,7 @@ another thread**. There is **no current execution** available. It is
 long operation without blocking users from accessing other UI in a
 browser.
 
-For more information and examples, please refer to [the Long Operations:
-Use Event
-Queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
+For more information and examples, please refer to [the Long Operations: Use Event Queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
 section.
 
 # Clean Up
@@ -328,8 +326,7 @@ addition, a thread is created to forward the event to subscribers.
 ZK supports several server push implementations and configurations
 including client-polling and
 [comet](http://en.wikipedia.org/wiki/Comet_(programming)), please refer
-to [
-Server_Push/Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
+to [ Server_Push/Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
 
 # Use Case
 

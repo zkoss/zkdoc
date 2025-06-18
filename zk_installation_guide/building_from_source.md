@@ -53,6 +53,5 @@ Since ZK 10, we have switched from Maven to Gradle as the build tool.
 
 # Jakarta EE
 
-You can use a tool like [Eclipse
-Transformer](https://github.com/eclipse/transformer) that transforms ZK
+You can use a tool like [Eclipse Transformer](https://github.com/eclipse/transformer) that transforms ZK
 CE JAR to Jakarta EE-compatible JAR.

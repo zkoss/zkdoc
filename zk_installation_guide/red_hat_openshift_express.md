@@ -8,15 +8,13 @@
   [video](https://www.redhat.com/openshift/community/blogs/deploying-java-apps-to-the-cloud-with-the-openshift-eclipse-plug-in)
   that demonstrates how you can use Eclipse plugin to do so. If you are
   doing so, you do not need to follow the next a few steps.
-- Refer to [OpenShift User
-  Guide](https://access.redhat.com/documentation/en-US/OpenShift_Online/2.0/html/Client_Tools_Installation_Guide/index.html)
+- Refer to [OpenShift User Guide](https://access.redhat.com/documentation/en-US/OpenShift_Online/2.0/html/Client_Tools_Installation_Guide/index.html)
   for required client tools.
   1.  Prerequisites for Red Hat Enterprise Linux or Fedora:
       - RHEL 6 and up or Fedora 14 and up.
       - Express repo file
         [openshift.repo](https://openshift.redhat.com/app/repo/openshift.repo)
-      - View [video
-        walkthrough](http://www.youtube.com/watch?v=KLtbuvyJFFE)
+      - View [video walkthrough](http://www.youtube.com/watch?v=KLtbuvyJFFE)
   2.  Prerequisites for Other Linuxes:
       - Root access
       - Ruby 1.8 or higher installed or available to be installed

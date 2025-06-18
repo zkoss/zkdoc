@@ -15,8 +15,7 @@ s4=keyboard
 ```
 
 The default encoding of a properties file is assumed to be **UTF-8**. If
-you want to use a different encoding, please refer to [the Use Encoding
-Other Than UTF-8 section](#Use_Encoding_Other_Than_UTF-8).
+you want to use a different encoding, please refer to [the Use Encoding Other Than UTF-8 section](#Use_Encoding_Other_Than_UTF-8).
 
 A properties file is usually used to contain the internationalization
 labels of an application, but technically you could use it in any
@@ -144,8 +143,7 @@ group2.second=come after ${group1.first}
 ```
 
 In addition to referencing another property, you could reference any
-implicit object specified in [ZUML Reference: Implicit
-Objects](ZUML_Reference/EL_Expressions/Implicit_Objects) if
+implicit object specified in [ZUML Reference: Implicit Objects](ZUML_Reference/EL_Expressions/Implicit_Objects) if
 it is part of an HTTP request (excluding component/page).
 
 For example,
@@ -167,8 +165,7 @@ If you prefer another encoding, please specify it in a library property
 called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
-For more information, please refer to [ZK Configuration
-Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.charset).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.charset).
 
 # Version History
 

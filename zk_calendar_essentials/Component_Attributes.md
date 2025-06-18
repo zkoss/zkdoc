@@ -22,8 +22,7 @@ run with the default values.
 
 ## Only Toolbar Allowed
 
-Only a [
-toolbar](ZK_component_reference/essential_components/Toolbar)
+Only a [ toolbar](ZK_component_reference/essential_components/Toolbar)
 is allowed as its child:
 
 ```xml
@@ -142,6 +141,4 @@ Determine whether to show the week number of one year.
 
 # Add Application Logic
 
-If you want to add, remove, or show items on a Calendars, please read [
-Implementing Event
-Listeners]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners).
+If you want to add, remove, or show items on a Calendars, please read [ Implementing Event Listeners]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners).

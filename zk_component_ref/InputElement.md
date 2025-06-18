@@ -244,8 +244,7 @@ component caused a validation error.</p></td>
 </tbody>
 </table>
 
-[ Inherited Supported Events from
-XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+[ Inherited Supported Events from XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

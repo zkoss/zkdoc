@@ -11,5 +11,4 @@ prior, the default mode is `defer`, which is backward-compatible with
 the prior version. Since ZK 5, the default mode is `auto` for easier
 control.
 
-For more information, please refer to [ZK Component
-Reference]({{site.baseurl}}/zk_component_ref/essential_components/include).
+For more information, please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/essential_components/include).

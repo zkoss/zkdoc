@@ -59,8 +59,7 @@ arg0="/WEB-INF/layout/template.zul"?>
 
 As shown, a fragment is defined by specifying an annotation as
 `self="@define(`*`name`*`)"`. Furthermore, the template is specified in
-[the init
-directive](ZUML_Reference/ZUML/Processing_Instructions/init).
+[the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 
 Then, when the user visits this page (`foo/index.zul` in the above
 example), <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> will:
@@ -101,8 +100,7 @@ rendered one-by-one.
 In a complex templating environment, it might not be appropriate to put
 fragments in the target page (e.g., `foo/index.zul` in the above
 example), since you might want to use the same collection of fragments
-in several target pages. It can be easily by use of [the include
-component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
+in several target pages. It can be easily by use of [the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 as follows.
 
 ```xml
@@ -128,8 +126,7 @@ documents, such as
 
 If you want to use <javadoc>org.zkoss.zk.ui.util.Composition</javadoc>
 inside any of the containers (like Div, Window, Tabbox), you have to use
-[the include
-component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
+[the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 and set its mode *Defer* :  
 **Note**: You have to specify
 <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as of the initiators

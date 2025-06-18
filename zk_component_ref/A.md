@@ -109,8 +109,7 @@ navigating to it. \<syntaxhighlight lang='xml\>
 
 </syntaxhighlight>
 
-Please refer to [download
-attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
+Please refer to [download attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
 
 ## [Filedownload API]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download#File_Download)
 
@@ -171,8 +170,7 @@ Desktop.getDirectory().
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

@@ -123,8 +123,7 @@ different use cases.
 
 ### Proportional Width
 
-You can use the **hflex** we have mentioned in [previous
-section]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Flexibility_and_Resizing "wikilink").
+You can use the **hflex** we have mentioned in [previous section]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Flexibility_and_Resizing "wikilink").
 
 ```xml
     <listhead>
@@ -316,8 +315,7 @@ beforehand.
 ## Data Length : Dynamic
 
 If users can't control the data size, that means, you should take both
-the [short data](#Data_Length_:_Short "wikilink") and the [long
-data](#Data_Length_:_Long "wikilink") situation into consideration.
+the [short data](#Data_Length_:_Short "wikilink") and the [long data](#Data_Length_:_Long "wikilink") situation into consideration.
 
 Now we have several attributes, rules, and situations, please choose the
 right solution for your case.

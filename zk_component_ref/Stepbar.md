@@ -32,8 +32,7 @@ of a multi-step task.
 It is compatible with browsers that fully support CSS flexbox, like IE
 11, Edge, Firefox, Opera, Chrome, and Safari.
 
-IE10 is not supported as it only partially supports flexbox. [Check
-flexbox browser support](https://caniuse.com/flexbox).
+IE10 is not supported as it only partially supports flexbox. [Check flexbox browser support](https://caniuse.com/flexbox).
 
 # Properties
 
@@ -57,8 +56,7 @@ mode, they can only activate in order.
 
 ## Model
 
-The step model associated with this stepbar. (Learn [ Model-Driven
-Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
+The step model associated with this stepbar. (Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
 You can use <javadoc>org.zkoss.zkmax.zul.DefaultStepModel</javadoc>,
 wrap an existing <javadoc>org.zkoss.zul.ListModelList</javadoc> by
@@ -67,8 +65,7 @@ DefaultStepModel's constructor, or implement
 
 ## StepRenderer
 
-The renderer used to render each step.(Learn [ Model-Driven
-Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
+The renderer used to render each step.(Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
 You can specify your own
 <javadoc>org.zkoss.zkmax.zul.StepRenderer</javadoc> at this attribute to
@@ -108,8 +105,7 @@ client.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

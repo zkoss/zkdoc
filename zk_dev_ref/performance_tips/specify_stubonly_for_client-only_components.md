@@ -157,10 +157,8 @@ registering the client side event listener, such as
 
 In other words, the stub-only components behave the same at the client.
 
-Refer to [Client Side
-Programming](https://www.zkoss.org/wiki/Small_Talks/2010/April/Client_Side_Programming)
-and [ZK Client-side Reference: General
-Control]({{site.baseurl}}/zk_client_side_ref/general_control) for more
+Refer to [Client Side Programming](https://www.zkoss.org/wiki/Small_Talks/2010/April/Client_Side_Programming)
+and [ZK Client-side Reference: General Control]({{site.baseurl}}/zk_client_side_ref/general_control) for more
 information.
 
 # Version History

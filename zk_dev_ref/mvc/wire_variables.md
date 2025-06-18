@@ -47,8 +47,7 @@ public class FooComposer extends SelectorComposer<Window> {
 
 There are two approaches to register a variable resolver: the
 <javadoc type="interface">org.zkoss.zk.ui.select.annotation.VariableResolver</javadoc>
-annotation or [the variable-resolver
-directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+annotation or [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 Here is the example of registering variable resolvers with annotations.
 
 ```java
@@ -130,8 +129,7 @@ example,
 ```
 
 where `$composer` is a built-in variable referring to the composer. For
-more information, please refer to [the Composer
-section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+more information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 > ------------------------------------------------------------------------
 >
@@ -205,11 +203,9 @@ following locations:
 Searching in zscript and xel variables can be enabled with library
 properties:
 
-[enable zscript variable
-wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.zscript)
+[enable zscript variable wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.zscript)
 
-[enable xel variable
-wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.xel)
+[enable xel variable wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.xel)
 
 # Wire CDI-managed Beans
 
@@ -236,8 +232,7 @@ Here is the sequence of wiring:
       with the
       <javadoc type="interface">org.zkoss.zk.ui.select.annotation.VariableResolver</javadoc>
       annotation.
-  3.  If none is found, it looks for [the implicit
-      objects](ZUML_Reference/EL_Expressions/Implicit_Objects),
+  3.  If none is found, it looks for [the implicit objects](ZUML_Reference/EL_Expressions/Implicit_Objects),
       such as session and page.
 
 # Version History

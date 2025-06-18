@@ -1,7 +1,6 @@
 **Property:** org.zkoss.web.servlet.http.embedded.enabled
 
-Set to use embedded ZK. See [Embedded ZK
-Application]({{site.baseurl}}/zk_dev_ref/integration/miscellenous/embedded_zk_application)
+Set to use embedded ZK. See [Embedded ZK Application]({{site.baseurl}}/zk_dev_ref/integration/miscellenous/embedded_zk_application)
 for additional information.
 
 `Default: false (since ZK 9.0.0)`

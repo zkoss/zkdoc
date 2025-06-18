@@ -25,9 +25,7 @@ vertical layouts. However, it is generally more convenient by the use of
 Notice that [hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
 [vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) are designed to
 provide more sophisticated layout, such as splitter, alignment and
-packing. If you need only the layout feature, it is suggest to use [
-Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [
-Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
+packing. If you need only the layout feature, it is suggest to use [ Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
@@ -239,8 +237,7 @@ You will see the Box width exceed 200px. Also check the
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 

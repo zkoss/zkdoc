@@ -114,8 +114,7 @@ accept the XML fragment. For example,
 In other words, you don't have to escape the special characters (\< and
 \>) with `CDATA`. In addition, you could leverage the full power of ZUML
 such as [the zk element](ZUML_Reference/ZUML/Elements/zk) and
-[the forEach
-attribute](ZUML_Reference/ZUML/Attributes/forEach). For
+[the forEach attribute](ZUML_Reference/ZUML/Attributes/forEach). For
 example,
 
 ```xml

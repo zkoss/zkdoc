@@ -99,8 +99,7 @@ Then, you can declare them in a zul:
 `[Required]`
 
 It specifies the configuration's name. The name must be unique if it is
-referenced by other configuration files (with [the depends
-element](#The_depends_Element)).
+referenced by other configuration files (with [the depends element](#The_depends_Element)).
 
 ### The depends Element
 

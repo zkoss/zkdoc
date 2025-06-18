@@ -2,8 +2,7 @@
 
 # Columns
 
-- Demonstration: [Grid (Simple
-  Grid)](http://www.zkoss.org/zkdemo/grid/simple)
+- Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Columns</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Columns</javadoc>
 
@@ -129,8 +128,7 @@ column provides the auto-fitting feature.
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
+- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
 
 # Supported Children
 

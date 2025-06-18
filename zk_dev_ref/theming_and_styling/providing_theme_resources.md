@@ -27,8 +27,7 @@ browser to cache the CSS file.
 
 > ------------------------------------------------------------------------
 >
-> For information of 3.6 and earlier, please refer to [ ZK 3 Theme
-> Provider](ZK_Developer's_Guide/ZK_in_Depth/Style_customization/Theme#ZK_3_Theme_Provider).
+> For information of 3.6 and earlier, please refer to [ ZK 3 Theme > Provider](ZK_Developer's_Guide/ZK_in_Depth/Style_customization/Theme#ZK_3_Theme_Provider).
 
 # Examples
 
@@ -248,8 +247,7 @@ In addition to String instances, you can return instances of
 collection of
 <javadoc method="getThemeURIs(org.zkoss.zk.ui.Execution,java.util.List)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>,
 such that you can control more about the generated CSS link. For
-example, if you want to add a CSS link for [the media
-type](http://www.w3.org/TR/CSS2/media.html), say, `print, handheld`,
+example, if you want to add a CSS link for [the media type](http://www.w3.org/TR/CSS2/media.html), say, `print, handheld`,
 then you can do as follows.
 
 ```java

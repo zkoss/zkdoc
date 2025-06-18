@@ -1,7 +1,6 @@
 # Fileupload
 
-- Demonstration: [File
-  Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
+- Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
 - Java API: <javadoc>org.zkoss.zul.Fileupload</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Fileupload</javadoc>
@@ -36,8 +35,7 @@ can use it directly as follows.
 ...
 ```
 
-Please refer to [Button:
-Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)
+Please refer to [Button: Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)
 for details.
 
 # Invoke the Static Method: get
@@ -65,15 +63,10 @@ Notice that it affects all Fileupload popups subsequently created in an
 application. It is typically called when the application starts (i.e.,
 in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
--- for more information, please refer to [ZK Developer's Reference: Life
-Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
+-- for more information, please refer to [ZK Developer's Reference: Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
-To implement a custom template, please take a look at [the default
-template for ZK
-9](https://github.com/zkoss/zk/blob/v9.6.5/zul/src/archive/web/zul/html/fileuploaddlg.zul)
-or [the default template for ZK
-10](https://github.com/zkoss/zk/blob/master/zul/src/main/resources/web/zul/html/fileuploaddlg.zul).
+To implement a custom template, please take a look at [the default template for ZK 9](https://github.com/zkoss/zk/blob/v9.6.5/zul/src/archive/web/zul/html/fileuploaddlg.zul)
+or [the default template for ZK 10](https://github.com/zkoss/zk/blob/master/zul/src/main/resources/web/zul/html/fileuploaddlg.zul).
 
 ## Example Usage
 
@@ -240,8 +233,7 @@ dialog).
 This component depends on Apache Commons Fileupload
 ([DiskFileItemFactory](https://commons.apache.org/proper/commons-fileupload/apidocs/org/apache/commons/fileupload/disk/DiskFileItemFactory.html)),
 so `org.apache.commons.io.FileCleanerTracker` will delete those
-temporary files created during uploading. Please refer to [Resource
-cleanup](https://commons.apache.org/proper/commons-fileupload/using.html)
+temporary files created during uploading. Please refer to [Resource cleanup](https://commons.apache.org/proper/commons-fileupload/using.html)
 
 You can verify this cleanup by enforcing garbage collecting with
 JVisualVM.
@@ -278,8 +270,7 @@ Upload your hot shot:
 </tbody>
 </table>
 
-- Inherited Supported Events: [
-  Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
+- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
 
 # Supported Children
 
@@ -297,6 +288,4 @@ Upload your hot shot:
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>. Used if the event thread is disabled. |
 
-[^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK
-    Configuration Reference:
-    disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).
+[^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).

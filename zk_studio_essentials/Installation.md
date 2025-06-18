@@ -5,8 +5,7 @@ There are some software you need to install before installing ZK Studio.
 ## Java SE Development Kit (JDK)
 
 Java version 6 or later is required in order to run Eclipse with ZK
-Studio, you can download it from [Oracle official
-site](http://www.oracle.com/technetwork/java/javase/downloads).
+Studio, you can download it from [Oracle official site](http://www.oracle.com/technetwork/java/javase/downloads).
 
 ## Eclipse IDE for Java EE Developers
 
@@ -27,9 +26,7 @@ can locate these files in your extracted eclipse folder.
     [here](http://www.eclipsezone.com/eclipse/forums/t61618.html) and
     [here](http://blog.xam.dk/archives/68-Eclipse-and-memory-settings.html).
 2.  We also recommend setting Eclipse's default JRE to JDK, please refer
-    to the "Setup/Preferences" section in [WTP Tutorials – Building and
-    Running a Web
-    Application](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html).
+    to the "Setup/Preferences" section in [WTP Tutorials – Building and Running a Web Application](http://www.eclipse.org/webtools/community/tutorials/BuildJ2EEWebApp/BuildJ2EEWebApp.html).
 
 ## Application Servers
 
@@ -44,8 +41,7 @@ downloaded at [Apache Tomcat](http://tomcat.apache.org).
 Download the zip file of Tomcat distribution and extract it to a proper
 location (with no illegal characters or space in the path). Tomcat
 requires configuration before it can be used with Eclipse, this process
-is described in the following link [ Running the ZK
-Project]({{site.baseurl}}/zk_studio_essentials/begin_your_first_zk_project/create_a_new_zk_project#Running_the_ZK_Project).
+is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk_studio_essentials/begin_your_first_zk_project/create_a_new_zk_project#Running_the_ZK_Project).
 
 **Tips:**
 
@@ -146,11 +142,9 @@ ZK Studio 2.0.4 and later doesn't require activation.
 Visual Editor is a deprecated feature, it is no longer included in ZK
 Studio. There are several alternatives:
 
-- install [run jetty run
-  plugin](https://marketplace.eclipse.org/content/run-jetty-run) for
+- install [run jetty run plugin](https://marketplace.eclipse.org/content/run-jetty-run) for
   eclipse
-- [jetty Maven
-  plugin](https://www.eclipse.org/jetty/documentation/9.3.x/jetty-maven-plugin.html)
+- [jetty Maven plugin](https://www.eclipse.org/jetty/documentation/9.3.x/jetty-maven-plugin.html)
 
 Add the plugin below in a pom.xml.
 
@@ -177,8 +171,7 @@ Run the goal with
 
 `mvn jetty:run`
 
-- [Gradle
-  gretty](http://akhikhl.github.io/gretty-doc/Getting-started.html)
+- [Gradle gretty](http://akhikhl.github.io/gretty-doc/Getting-started.html)
 - [jetty-runner](https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-runner)
 - [webapp-runner (Tomcat)](https://github.com/jsimone/webapp-runner)
 

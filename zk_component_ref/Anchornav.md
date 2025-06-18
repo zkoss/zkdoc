@@ -2,8 +2,7 @@
 
 # Anchornav
 
-- Demonstration: [Anchornav: A new ZK Addon for scrolling within a
-  page](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
+- Demonstration: [Anchornav: A new ZK Addon for scrolling within a page](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
 - Java API:
   [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
 - JavaScript API:
@@ -14,8 +13,7 @@
 # Employment/Purpose
 
 This component synchronizes the scrolling position on a page or within
-ZK containers (Div, Window, etc.) with [
-<a>]({{site.baseurl}}/zk_component_ref/essential_components/a) and
+ZK containers (Div, Window, etc.) with [ <a>]({{site.baseurl}}/zk_component_ref/essential_components/a) and
 [<button>]({{site.baseurl}}/zk_component_ref/essential_components/button).
 It allows you to both navigate to desired ZK components on a page and to
 highlight the current navigation link based on the current scroll
@@ -49,8 +47,7 @@ By default, the Anchornav will watch the scroll position of a page.
 ```
 
 - Line 4~6: `$win1` is an ID selector which means the widget of the
-  component whose ID is `win1`. Please see [Widget
-  selector](https://www.zkoss.org/javadoc/latest/jsdoc/zk/Widget.html#Z:Z:D-zk.Object-_global_.Map-)
+  component whose ID is `win1`. Please see [Widget selector](https://www.zkoss.org/javadoc/latest/jsdoc/zk/Widget.html#Z:Z:D-zk.Object-_global_.Map-)
   for details.
 
 A or Button components can be used as anchor links, and targets are
@@ -112,8 +109,7 @@ position of the page.
 
 # Supported Events
 
-- Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
