@@ -16,7 +16,7 @@ To trigger an event, you could invoke
 <javadoc method="postEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>.
 For example,
 
-``` java
+```java
 Events.postEvent("onClick", button, null); //simulate a click
 ```
 
@@ -42,7 +42,7 @@ waiting for execution, you could use
 <javadoc method="sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>
 to trigger the event.
 
-``` java
+```java
 Events.sendEvent("onMyEvent", component, mydata);
 ```
 
@@ -72,7 +72,7 @@ Rather, it is processed in the following request when the event is
 <i>echoed</i> back from the client. Here is an example of using
 <javadoc method="echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>:
 
-``` java
+```java
    Events.echoEvent("onMyEvent", component, mydata);
 ```
 
@@ -82,16 +82,16 @@ until the request has been served and responded. Thus, we could send
 back some busy messages to let the user know what has happened, and echo
 back an event to do the long operation. For more information, please
 refer to the [Long Operations: Use Echo
-Events]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events)
+Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 section.
 
 [^1]: Please don't confuse it with the event queues discussed in the [
     event
-    queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+    queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
     section, which are application-specific, while the system event
     queue is invisible to application developers.
 
 [^2]: By default, the event thread is disabled. Please refer to the
     [Event
-    Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
+    Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
     section for more information.

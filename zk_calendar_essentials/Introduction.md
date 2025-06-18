@@ -11,13 +11,13 @@ zones, and permission control.
 Go to see [Online
 Demo](https://www.zkoss.org/zkdemo/zk_calendar/zk_calendar)
 
-![](images/ZKCalEss_CalendarIntroduction.png)
+![](/zk_calendar_essentials/images/ZKCalEss_CalendarIntroduction.png)
 
 # Important Change
 
-- [New look and feel](ZK%20Calendar%20Essentials/Themes)
+- [New look and feel](ZK_Calendar_Essentials/Themes)
 - [ Some event name and class name
-  renaming](ZK_Calendar_Essentials/Displaying_Calendar_Items)
+  renaming]({{site.baseurl}}/zk_calendar_essentials/displaying_calendar_items)
 - Support java 8 new date API
   ([`java.time.*`](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html))
 - Require Java 8 or above

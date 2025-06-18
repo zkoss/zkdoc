@@ -5,7 +5,7 @@ the [MVC approach](../mvc_approach/construct-a-form-style-page.md).
 
 
 **Extracted from chapter3/profile-mvvm-property.zul**
-``` xml
+```xml
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <window border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
     <caption src="/imgs/profile.png" sclass="fn-caption"

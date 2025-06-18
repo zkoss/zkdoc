@@ -14,7 +14,7 @@ Example, here is the [ZUL
 namespace](ZUML_Reference/ZUML/Languages/ZUL) and it also
 defines a shortcut.
 
-``` xml
+```xml
 <namespace>http://www.zkoss.org/2005/zul</namespace>
 ```
 

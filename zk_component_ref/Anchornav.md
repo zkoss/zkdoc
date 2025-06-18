@@ -15,8 +15,8 @@
 
 This component synchronizes the scrolling position on a page or within
 ZK containers (Div, Window, etc.) with [
-<a>]({{site.baseurl}}/zk_component_ref/essential_components/A) and
-[<button>]({{site.baseurl}}/zk_component_ref/essential_components/Button).
+<a>]({{site.baseurl}}/zk_component_ref/essential_components/a) and
+[<button>]({{site.baseurl}}/zk_component_ref/essential_components/button).
 It allows you to both navigate to desired ZK components on a page and to
 highlight the current navigation link based on the current scroll
 position.
@@ -27,7 +27,7 @@ By default, the Anchornav will watch the scroll position of a page.
 
 ![]({{site.baseurl}}/zk_component_ref/images/anchornav.gif)
 
-``` xml
+```xml
 <zk xmlns:ca="client/attribute">
     <anchornav>
         <listbox sizedByContent="true" hflex="min">
@@ -67,7 +67,7 @@ To scroll a container, you need to associate a named Anchornav with a
 container component by setting the client-attribute:
 `ca:data-anchornav-scroll`:
 
-``` xml
+```xml
 <div ca:data-anchornav-scroll="a1">
      <!-- other components -->
 </div>
@@ -86,7 +86,7 @@ with the ca:data-anchornav-scroll attribute such as:
 Note: This is necessary when using a scrollbar inside a component,
 rather than the document-level scrollbar
 
-``` xml
+```xml
 <zk xmlns:ca="client/attribute">
   <anchornav name="a1" width="250px">
 ...
@@ -113,7 +113,7 @@ position of the page.
 # Supported Events
 
 - Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

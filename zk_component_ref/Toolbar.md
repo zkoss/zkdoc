@@ -5,8 +5,7 @@
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)
 - Java API: <javadoc>org.zkoss.zul.Toolbar</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Toolbar</javadoc>
-- Style Guide: [
-  Toolbar](ZK_Style_Guide/XUL_Component_Specification/Toolbar)
+
 
 # Employment/Purpose
 
@@ -20,15 +19,15 @@ The toolbar has two orientation: `horizontal`and `vertical.`It controls
 how the buttons are placed.
 
 See also : [
-Button](ZK_Component_Reference/Essential_Components/Button),
+Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
 [
-Toolbarbutton](ZK_Component_Reference/Essential_Components/Toolbarbutton)
+Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton)
 
 # Example
 
-![](images/ZKComRef_Toolbar_Example.png)
+![](/zk_component_ref/images/ZKComRef_Toolbar_Example.png)
 
-``` xml
+```xml
 <window title="Toolbar window" border="normal" width="300px">
     <toolbar>
         <toolbarbutton label="Left" />
@@ -53,9 +52,9 @@ shows a popup that contains those buttons not fitting in the toolbar.
 
 Default: false.
 
-![](images/Toolbar-overflowPopup.png)
+![](/zk_component_ref/images/Toolbar-overflowPopup.png)
 
-``` xml
+```xml
     <toolbar overflowPopup="true" width="350px" style="border: 1px black solid;">
         <toolbarbutton label="one" iconSclass="z-icon-home"/>
         <toolbarbutton label="two" iconSclass="z-icon-home"/>
@@ -77,9 +76,9 @@ Cheatsheet](http://fontawesome.io/cheatsheet/).
 
 Default: `...` symbol
 
-![](images/Toolbar-overflowPopupIconSclass.png)
+![](/zk_component_ref/images/Toolbar-overflowPopupIconSclass.png)
 
-``` xml
+```xml
     <toolbar overflowPopup="true" overflowPopupIconSclass="z-icon-plus-square" width="350px" style="border: 1px black solid;">
         <toolbarbutton label="one" iconSclass="z-icon-home"/>
         <toolbarbutton label="two" iconSclass="z-icon-home"/>
@@ -112,7 +111,7 @@ Default: `...` symbol
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -136,13 +135,13 @@ footer of a panel.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/toolbar_mold_default.png)</td>
+<td>![](/zk_component_ref/images/toolbar_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>panel</p>
 </center></td>
-<td>![](images/toolbar_mold_panel.png)</td>
+<td>![](/zk_component_ref/images/toolbar_mold_panel.png)</td>
 </tr>
 </tbody>
 </table>

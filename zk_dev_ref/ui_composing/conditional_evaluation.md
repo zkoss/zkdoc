@@ -5,11 +5,11 @@ The component creation can be conditional. By specifying the `if`,
 associated component. It is also the most straightforward way.
 
 For example, suppose that we want to use
-[label](ZK_Component_Reference/Essential_Components/Label),
+[label]({{site.baseurl}}/zk_component_ref/essential_components/label),
 if readonly, and
-[textbox](ZK_Component_Reference/Input/Textbox), otherwise:
+[textbox]({{site.baseurl}}/zk_component_ref/input/textbox), otherwise:
 
-``` xml
+```xml
 <label value="${customer.label}" if="${param.readonly == 'true'}"/>
 <textbox value="${customer.value}" unless="${param.readonly == 'true'}"/>
 ```
@@ -19,13 +19,13 @@ child components are ignored too.
 
 Here is another example:
 
-``` xml
+```xml
 <window if="${a==1}" unless="${b==2}">
     ...    
 </window>
 ```
 
-- [window](ZK_Component_Reference/Containers/Window) is
+- [window]({{site.baseurl}}/zk_component_ref/containers/window) is
   created only if `a` is 1 and `b` is not 2.
 
 # Switch and Case
@@ -37,7 +37,7 @@ It is similar to Java's switch statement.
 
 For example,
 
-``` xml
+```xml
 <zk switch="${fruit}">
     <zk case="apple">    
     Evaluated only if ${fruit} is apple    
@@ -64,7 +64,7 @@ and is evaluated if all the cases above it failed to match.
 You can specify a list of cases in one case attribute, such that a
 section of a ZUML document has to be evaluated if one of them matches.
 
-``` xml
+```xml
 <zk switch="${fruit}">
     <zk case="apple, ${special}">    
     Evaluated if ${fruit} is either apple or ${special}    
@@ -77,7 +77,7 @@ section of a ZUML document has to be evaluated if one of them matches.
 Regular expressions are allowed in the `case` attribute too, as shown
 below.
 
-``` xml
+```xml
 <zk switch="${fruit}">
     <zk case="/ap*.e/">
     Evaluate if the regular expression, ap*.e"., matches the switch condition.
@@ -88,17 +88,17 @@ below.
 ## Used with forEach
 
 Like any other elements, you can use the [forEach
-attribute]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation)
+attribute]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation)
 (so are if and unless). The `forEach` attribute is evaluated first, so
 the following is the same as multiple cases.
 
-``` xml
+```xml
 <zk case="${each}" forEach="apple, orange">
 ```
 
 is equivalent to
 
-``` xml
+```xml
 <zk case= "apple, orange">
 ```
 
@@ -113,7 +113,7 @@ attribute, and the ZK Loader will evaluate its child elements (the `zk`
 elements with the `when` attribute) one-by-one until the first one
 matches:
 
-``` xml
+```xml
 <zk choose="">
     <zk when="${fruit == 'apple'}">    
     Evaluated if the when condition is true.

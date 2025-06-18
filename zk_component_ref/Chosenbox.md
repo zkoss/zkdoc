@@ -6,14 +6,13 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Chosenbox</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
-- Style Guide: [
-  Chosenbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Chosenbox)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 A component similar to [
-Combobox]({{site.baseurl}}/zk_component_ref/Input/Combobox) but handles
+Combobox]({{site.baseurl}}/zk_component_ref/input/combobox) but handles
 the multi-selection and the select order.
 
 # Example
@@ -47,7 +46,7 @@ When there is no item in the model but it is creatable,
 
 ![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_03.png)
 
-``` xml
+```xml
     <zscript>
         ListModelList model = new ListModelList(Locale.getAvailableLocales());
     </zscript>
@@ -73,7 +72,7 @@ all at once.
 
 ![](/zk_component_ref/images/CompREF_Chosenbox_01.png)
 
-``` xml
+```xml
     <zscript>
         ListModelList model = new ListModelList(Locale.getAvailableLocales());
     </zscript>
@@ -89,9 +88,9 @@ list. This might produce some delay at the client side because of server
 processing time and network latency.
 
 See also:
-[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/Input/Combobox#Autocomplete_by_ListSubModel)
+[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/input/combobox#Autocomplete_by_ListSubModel)
 
-``` xml
+```xml
     <zscript><![CDATA[
         ListModelList model = new ListModelList(Locale.getAvailableLocales());
         ListSubModel subModel = ListModels.toListSubModel(model);
@@ -238,7 +237,7 @@ selected tag.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Molds
 

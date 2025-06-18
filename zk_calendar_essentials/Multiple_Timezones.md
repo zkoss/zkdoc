@@ -9,7 +9,7 @@ format your date and time.
 
 For example:
 
-``` java
+```java
 SimpleDateFormat create_sdf = new SimpleDateFormat("HH:mm");
 create_sdf.setTimeZone(calendars.getDefaultTimeZone());
                 

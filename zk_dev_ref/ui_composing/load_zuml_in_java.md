@@ -14,7 +14,7 @@ execution first.
 
 For example,
 
-``` Java
+```java
 public class Controller extends SelectorComposer {
     @Wire
     private Window main; //assumed wired automatically
@@ -31,7 +31,7 @@ public class Controller extends SelectorComposer {
 There are several ways to create components based on a ZUML document.
 One of the most common approaches is to create components from a URI.
 
-``` Java
+```java
 Map arg = new HashMap();
 arg.put("myKey", someValue);
 Executions.createComponents("/foo/my.zul", parent, arg); //attach to page as root if parent is null
@@ -53,13 +53,13 @@ being created by use of [the arg
 object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg).
 For example,
 
-``` xml
+```xml
 <button label="Submit" if="${arg.myKey}"/>
 ```
 
 or
 
-``` java
+```java
 Executions.getCurrent().getArg().get("myKey");
 ```
 
@@ -73,7 +73,7 @@ a utility.
 
 For example:
 
-``` Java
+```java
 Map arg = new HashMap();
 arg.put("someName", someValue);
 Component[] comps = Executions.getCurrent().createComponents("/foo/my.zul", arg); //won't be attached to a page
@@ -110,7 +110,7 @@ in database) and then pass it to
 For example, suppose we want to create a component from a remote site.
 Then, we could represent the resource as a URL and do as follows.
 
-``` xml
+```xml
 public void loadFromWeb(java.net.URL src, Component parent) {
     Executions.createComponentsDirectly(
         new java.io.InputStreamReader(src.openStream(), "UTF-8"), parent, null);
@@ -198,4 +198,4 @@ ZUML document directly[^2].
     containing a ZUML document. The latter is a Java object of
     <javadoc>org.zkoss.zk.ui.Page</javadoc> that represents [a portion
     of a
-    desktop]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#Desktop.2C_Page_and_Component).
+    desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).

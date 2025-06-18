@@ -6,8 +6,7 @@
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
 - Java API: <javadoc>org.zkoss.zul.Caption</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Caption</javadoc>
-- Style Guide: [
-  Caption]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Caption)
+
 
 # Employement/Purpose
 
@@ -26,7 +25,7 @@ components.
 By default the preload function is disabled, so users have to specify
 the *custom-attributes* and set it to true. For example,
 
-``` xml
+```xml
 <caption image="xxx.png" label="caption">
   <custom-attributes org.zkoss.zul.image.preload=”true”/>
 </caption>
@@ -36,7 +35,7 @@ Or specify it just below the root component.
 
 For example,
 
-``` xml
+```xml
 <window>
   <custom-attributes org.zkoss.zul.image.preload=”true”/>
   <caption image="xxx.png" label="caption">
@@ -50,7 +49,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 
 ![](/zk_component_ref/images/ZKComRef_Caption_Example.png)
 
-``` xml
+```xml
  <zk>
      <window border="normal" width="350px">
           <caption label="This is a caption"/>
@@ -88,7 +87,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
@@ -98,7 +97,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 
 | Version | Description                                                                                             | Example Location                                                                           |
 |---------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/Containers/Window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/Containers/Window#Title_and_Caption) |
+| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/containers/window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/containers/window#Title_and_Caption) |
 
 # Version History
 

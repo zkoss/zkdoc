@@ -5,8 +5,7 @@
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: <javadoc>org.zkoss.zul.Menubar</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menubar</javadoc>
-- Style Guide: [
-  Menubar](ZK_Style_Guide/XUL_Component_Specification/Menubar)
+
 
 # Employment/Purpose
 
@@ -14,9 +13,9 @@ A container usually contains more than one menu elements.
 
 # Example
 
-![](images/ZKComRef_Menubar.png)
+![](/zk_component_ref/images/ZKComRef_Menubar.png)
 
-``` xml
+```xml
 <menubar id="menubar">
     <menu label="File">
         <menupopup onOpen="alert(self.id)">
@@ -48,9 +47,9 @@ A container usually contains more than one menu elements.
 The code below demonstrates how easy it is to make the Menubar
 scrollable!
 
-![](images/scrollableMenu.gif)
+![](/zk_component_ref/images/scrollableMenu.gif)
 
-``` xml
+```xml
 <menubar width="200px" scrollable="true">
  ...
 </menubar>
@@ -78,11 +77,11 @@ scrollable!
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Menu`](ZK_Component_Reference/Essential_Components/Menu)`, `[` Menuitem`](ZK_Component_Reference/Essential_Components/Menu/Menuitem)`, `[` Menuseparator`](ZK_Component_Reference/Essential_Components/Menu/Menuseparator)
+`*`[` Menu`]({{site.baseurl}}/zk_component_ref/essential_components/menu)`, `[` Menuitem`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuitem)`, `[` Menuseparator`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuseparator)
 
 # Use Cases
 

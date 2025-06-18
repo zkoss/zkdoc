@@ -39,7 +39,7 @@ and sending an AU request.
 
 If load a zul 3 times:
 
-``` properties
+```properties
 # first load zul
 requestId1st - requestStartAtServer
 requestId1st - requestCompleteAtServer
@@ -61,7 +61,7 @@ requestId3rd - requestCompleteAtServer
 
 If you send 2 AU requests, you will see a log like:
 
-``` properties
+```properties
 # 1st au
 requestId - requestReceiveAtClient
 requestId - requestCompleteAtClient
@@ -82,11 +82,11 @@ requestId-1 - requestCompleteAtServer
 # Register as a Listener
 
 Once implemented, you need to register it as a [
-listener](ZK_Configuration_Reference/zk.xml/The_listener_Element)
+listener]({{site.baseurl}}/zk_config_ref/the_listener_element)
 in `WEB-INF/zk.xml` to make it work: (assume the class is called
 foo.MyMeter):
 
-``` xml
+```xml
     <listener>
         <listener-class>foo.MyMeter</listener-class>
     </listener>

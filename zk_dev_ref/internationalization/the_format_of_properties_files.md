@@ -6,7 +6,7 @@ as `zk-label.properties`.
 A properties file is a simple text file. The file contains a list of
 `key=value` pairs, such as
 
-``` properties
+```properties
 # This is the default LabelsBundle.properties file
 s1=computer
 s2=disk
@@ -32,7 +32,7 @@ By default, a property is a text specified right after the equal sign.
 If the property's value has multiple lines, you could use the following
 format:
 
-``` properties
+```properties
 multilines={
 line 1
 line 2
@@ -45,7 +45,7 @@ line.
 
 Then you should put the value in a multiple-line label:
 
-``` xml
+```xml
 <label multiline="true" value="${labels.multilines}"/>
 ```
 
@@ -53,13 +53,13 @@ Then you should put the value in a multiple-line label:
 
 Alternatively, you can write a value with `<br>`:
 
-``` properties
+```properties
 lines=1st line <br> 2nd line
 ```
 
 Then render it in an HTML `span`
 
-``` xml
+```xml
 <zk xmlns:h="native">
     <h:span>${labels.lines}</h:span>
 </zk>
@@ -72,14 +72,14 @@ is common to separate them by naming the key with dots (**.**) like the
 Java package name. For the sake of description, we call them segmented
 keys. For example,
 
-``` properties
+```properties
 order.fruit.name = Orange
 order.fruit.description = A common fruit
 ```
 
 It can be simplified by use of the following syntax:
 
-``` properties
+```properties
 order.fruit.  {
 name = Orange
 description = A common fruit
@@ -94,7 +94,7 @@ The segmented key could be accessed in two ways.
 First, with an implicit object called
 [labels](ZUML_Reference/EL_Expressions/Implicit_Objects/labels):
 
-``` xml
+```xml
 <textbox value="${labels.order.fruit.name}"/>
 ```
 
@@ -102,7 +102,7 @@ Second, with an EL function called
 [l](ZUML_Reference/EL_Expressions/Core_Methods/l) and/or
 [l2](ZUML_Reference/EL_Expressions/Core_Methods/l2):
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <label value="${c:l('order.fruit.name')}">
 ```
@@ -122,7 +122,7 @@ an entry (`fruit`) in the above example.
 You could put a comment line by starting with the sharp sign (**\#**),
 such as
 
-``` properties
+```properties
 #This is a comment line that will be ignored when loaded
 ```
 
@@ -131,14 +131,14 @@ such as
 EL expressions are allowed for a property's value. For example, you
 could reference a property's value in another property, such as
 
-``` properties
+```properties
 first=the first label
 second=come after ${first} 
 ```
 
 Segmented keys are also allowed:
 
-``` properties
+```properties
 group1.first=the first group
 group2.second=come after ${group1.first} 
 ```
@@ -152,7 +152,7 @@ For example,
 [param](ZUML_Reference/EL_Expressions/Implicit_Objects/param)
 references to a request's parameter:
 
-``` properties
+```properties
 message=Thank ${param.user} for using
 ```
 
@@ -168,7 +168,7 @@ called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
 For more information, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.label.web.charset).
+Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.charset).
 
 # Version History
 

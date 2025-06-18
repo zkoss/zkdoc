@@ -1,6 +1,6 @@
 The syntax of an EL expressions is `${expr}`. For example,
 
-``` xml
+```xml
  <element attr1="${bean.property}".../>
  ${map[entry]}
  <another-element>${3+counter} is ${empty map}</another-element>
@@ -10,7 +10,7 @@ When an EL expression is used as an attribute value, it could return any
 kind of objects as long as the component accepts it. For example, the
 following expression will be evaluated as a Boolean object.
 
-``` xml
+```xml
  <window if="${some > 10}">
 ```
 
@@ -31,5 +31,5 @@ There are several ways to associate Java objects with EL expressions.
     [zscript](ZUML_Reference/ZUML/Elements/zscript)
 
 Here is the detailed information for each feature. For introductory,
-please refer to [ZK Developer's Reference](ZK_Developer's_Reference/UI_Composing/ZUML/EL_Expressions).
+please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions).
 

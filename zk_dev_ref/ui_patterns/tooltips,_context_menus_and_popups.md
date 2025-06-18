@@ -12,9 +12,9 @@ the mouse over the target component), the component representing the
 customized look is shown.
 
 The component representing the customized look must be a
-[Popup](ZK_Component_Reference/Essential_Components/Popup)
+[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
 component or one of derives, such as
-[Menupopup](ZK_Component_Reference/Essential_Components/Menu/Menupopup),
+[Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup),
 while the target component (which causes the customized look to show up)
 can be any kind of component.
 
@@ -37,7 +37,7 @@ or
 <javadoc method="setTooltip(org.zkoss.zul.Popup)">org.zkoss.zul.impl.XulElement</javadoc>).
 For example,
 
-``` xml
+```xml
 <zk>
     <image src="/img/earth.png" tooltip="msg"/>
 
@@ -57,11 +57,11 @@ For example,
 Then, when the user moves the mouse pointer over the image for a while,
 the menupopup will show up as shown below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTooltip.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
 refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_tooltip-delay_Element)
+Reference]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_tooltip-delay_element)
 for more information.
 
 # Context Menus
@@ -69,7 +69,7 @@ for more information.
 Providing a customized context menu is the same, except it uses the
 `context` property instead. For example,
 
-``` xml
+```xml
 <zk>
     <listbox>
         <listitem label="Right Click Me!" context="status"/>
@@ -84,14 +84,14 @@ Providing a customized context menu is the same, except it uses the
 </zk>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/drContext.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drcontext.png)
 
 As shown above, you could use <javadoc>org.zkoss.zul.Popup</javadoc> so
 the context menu is not limited to a menupopup.
 
 Here is another example: context menus versus right clicks.
 
-``` xml
+```xml
 <zk>
     <menupopup id="editPopup">
         <menuitem label="Undo"/>
@@ -111,7 +111,7 @@ Here is another example: context menus versus right clicks.
 </zk>
 ```
 
-![](images/100000000000017500000052E60F488A.png)
+![](/zk_dev_ref/images/100000000000017500000052E60F488A.png)
 
 Notice that the `menupopup` is not visible until a user right-clicks on
 a component that is associated with its' ID.
@@ -122,13 +122,13 @@ set the `context` attribute of a component to a non-existent ID.
 The `popup` component is a generic popup and you are able to place any
 kind of component inside of popup. For example,
 
-``` xml
+```xml
 <zk>
     <label value="Right Click Me!" context="any"/>
 </zk>
 ```
 
-``` xml
+```xml
 <zk>
     <label value="Right Click Me!" context="any"/>
     
@@ -146,7 +146,7 @@ kind of component inside of popup. For example,
 Providing a customized popup is the same, except it uses the `popup`
 property instead. For example,
 
-``` xml
+```xml
 <zk>
     <label value="Click Me!" popup="status"/>
 
@@ -165,7 +165,7 @@ The context-menu/tooltip/popups can be shown by a position from Popup or
 the location of x and y, you can specify position with the following
 format:
 
-``` xml
+```xml
 <zk>
     <label value="Click Me!" popup="status, at_pointer"/>
     <label value="Click Me!" popup="status, after_pointer"/>
@@ -182,13 +182,13 @@ format:
 ```
 
 Check [Popup
-Component](ZK_Component_Reference/Essential_Components/Popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
+Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
 for detailed description.
 
 The position is now more customizable and can be done by specifying a
 formula that executes on client side, for example,
 
-``` xml
+```xml
 <zk>
     <!-- bottom right of mouse pointer -->
     <label value="Click Me!" popup="status, x=(zk.currentPointer[0] + 30), y=(zk.currentPointer[1] + 50)"/>
@@ -218,7 +218,7 @@ For more details, refer to the [`data-scrollable` client attribute documentation
 ## Toggle Popup
 
 The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup
-Component](ZK_Component_Reference/Essential_Components/Popup#Toggle_Popup)
+Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#Toggle_Popup)
 for detailed description.
 
 ## Override the Reference Component
@@ -227,7 +227,7 @@ The reference component of the position can be overridden in ZK 9.5.0.
 For example, you want the popup to stick to the `Textbox`, not the
 triggering button.
 
-``` xml
+```xml
 <zk>
   <inputgroup>
     <textbox id="addr"/>

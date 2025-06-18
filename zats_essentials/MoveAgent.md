@@ -11,7 +11,7 @@ attribute.
 
 ![](images/Zats-mimic-move.png)
 
-``` java
+```java
 
 
 desktopAgent.query("window").as(MoveAgent.class).moveTo(20,40);

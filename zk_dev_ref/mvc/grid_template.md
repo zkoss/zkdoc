@@ -1,8 +1,8 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can define a customer rendering with a template for a grid:
 
-``` xml
+```xml
 <grid model="${books}">
     <columns>
         <column label="ISBN" sort="auto"/>
@@ -39,7 +39,7 @@ object. If it is not defined, it will look for the template called
 `model` instead (i.e., the same template is used for rendering the
 grouping and non-grouping objects).
 
-``` xml
+```xml
 <grid mode="${fooGroupsModel}">
    <template name="model:group">
       <group open="${groupingInfo.open}">....</group>

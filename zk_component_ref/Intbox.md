@@ -3,8 +3,7 @@
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Intbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Intbox</javadoc>
-- Style Guide: [
-  Intbox](ZK_Style_Guide/XUL_Component_Specification/Intbox)
+
 
 # Employment/Purpose
 
@@ -12,13 +11,13 @@ An `intbox` is used to let users input integer data.
 
 # Example
 
-![](images/ZKComRef_Intbox.png)
+![](/zk_component_ref/images/ZKComRef_Intbox.png)
 
 While input invalid data:
 
-![](images/ZKComRef_Intbox2.png)
+![](/zk_component_ref/images/ZKComRef_Intbox2.png)
 
-``` xml
+```xml
  <window title="Intbox Demo" border="normal" width="200px">
      int box:<intbox/>
  </window>
@@ -31,14 +30,14 @@ While input invalid data:
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <intbox format="#,##0"/>
 ```
 
 {% include version-badge.html version=8.5.2 %} You can provide a locale to format
 the number by specify the String starts with "locale:"
 
-``` xml
+```xml
 <intbox format="locale:zh-TW"/>
 ```
 
@@ -51,14 +50,14 @@ You could specify what value to accept for input controls by use of the
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <intbox constraint="no negative,no empty"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <intbox constraint="no negative: it shall not be negative"/>
 ```
 
@@ -69,7 +68,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <intbox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
@@ -77,13 +76,13 @@ Notes:
 {% include version-badge.html version=10.2.0 %}
 {% include edition-availability.html edition="ee" %}
 
-``` xml
+```xml
 <spinner constraint="min -2 max 6"/>
 ```
 
 # Inherited Functions
 
-Please refer to [NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+Please refer to [NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -107,7 +106,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+- Inherited Supported Events: [NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

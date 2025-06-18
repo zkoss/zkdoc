@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @NotifyCommand(value="commandName", onChange="_vm_.expression")
 ```
 
@@ -20,7 +20,7 @@ Notice that the `commandName` which gets triggered is a command in our view mode
 Example
 =======
 
-``` java
+```java
 @NotifyCommand(value="upateData", onChange="_vm_.data")
 public class VM {
     private Map<String, String> data = new HashMap<String, String>();
@@ -35,7 +35,7 @@ public class VM {
 
 #### Combine with `@ToClientCommand` :
 
-``` java
+```java
 @NotifyCommand(value="upateData", onChange="_vm_.count")
 @ToClientCommand("upateData")
 public class VM{

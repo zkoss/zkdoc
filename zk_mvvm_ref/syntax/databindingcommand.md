@@ -45,7 +45,7 @@ Notice that it only works in the matched attribute format: "on" + action (ex. on
 Example
 =======
 
-``` xml
+```xml
 <button label="Save" onClick="@command('saveOrder')"/>
 
 <button label="Delete" onClick="@command(empty vm.selected.id ? 'deleteOrder' : 'confirmDelete')"/>

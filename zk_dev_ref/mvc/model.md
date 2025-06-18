@@ -67,13 +67,13 @@ a UI component.
 ## Use Composer to Assign Model
 
 A typical way is to use [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
 to assign the model. For example, assume the UI component is a grid and
 we have a method called `getFooModel` returning the data to show on the
 grid, then we could implement a composer, say `foo.FooComposer` as
 follows:
 
-``` java
+```java
 public class FooComposer implements Composer {
     public void doAfterCompose(Component comp) throws Exception {
         ((Grid)comp).setModel(getFooModel());
@@ -83,7 +83,7 @@ public class FooComposer implements Composer {
 
 Then, you could assign it in ZUML as follows:
 
-``` xml
+```xml
 <grid apply="foo.FooComposer">
 ...
 ```
@@ -91,11 +91,11 @@ Then, you could assign it in ZUML as follows:
 ## Use Data Binding
 
 If you are using [data
-binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding), you can
+binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding), you can
 have the data binder to assign the model for you. For example, assume
 that you have a `ListModelList persons`, then:
 
-``` xml
+```xml
 <listbox model="@init(vm.persons)">
 ```
 
@@ -105,7 +105,7 @@ EL is another common way to assign the model. For example, assume you
 have a variable resolver called `foo.FooVariableResolver` implementing
 <javadoc>org.zkoss.xel.VariableResolver</javadoc> as follows.
 
-``` java
+```java
 public class FooVariableResolver implements VariableResolver {
     public Object resolveVariable(String name) {
         if ("persons".equals(name)) //found
@@ -118,7 +118,7 @@ public class FooVariableResolver implements VariableResolver {
 
 Then, you could specify it in ZUML as follows:
 
-``` xml
+```xml
 <?variable-resolver class="foo.FooVariableResolver"?>
 
 <listbox model="${persons}">
@@ -129,7 +129,7 @@ The other approach is to use the function mapper. For example, assume
 you have an implementation called `foo.CustomerListModel`, then you
 could use it to drive a listbox as follows.
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
 <listbox model="${c:new('foo.CustomerListModel')}"/>
 ```
@@ -137,10 +137,10 @@ could use it to drive a listbox as follows.
 ## Use zscript
 
 If you are building a prototype, you could use
-[zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML)
+[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
 to assign the model directly. For example,
 
-``` xml
+```xml
 <zk>
     <zscript>
     ListModel infos = new ListModelArray(
@@ -158,5 +158,5 @@ to assign the model directly. For example,
 mix of Java code in ZUML is not easy to maintain, it is suggested
 **not** to use this approach in a production system. Please refer to
 [Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
 for more information.

@@ -3,7 +3,7 @@ component and widget referred to as the component definition. The path
 of the file must be **/metainfo/zk/lang-addon.xml** and be located in
 the Java class path.
 
-``` xml
+```xml
 <language-addon>
     <addon-name>simplelabel</addon-name>
     <language-name>xul/html</language-name>
@@ -27,7 +27,7 @@ their descriptions.
 | Name            | Description                                                                                      |
 |-----------------|--------------------------------------------------------------------------------------------------|
 | addon-name      | A unique name for this addon                                                                     |
-| annotation      | [Annotation setting for Data Binding](ZK_Component_Reference/Annotation/Data_Binding) |
+| annotation      | [Annotation setting for Data Binding]({{site.baseurl}}/zk_component_ref/annotation/data_binding) |
 | language-name   | The language name that this addon belongs to (for instance, xul/html or zhtml)                   |
 | component-name  | A unique name of the component in the language of this addon                                     |
 | component-class | The name of the component class (Java class)                                                     |
@@ -46,4 +46,4 @@ the widget package descriptor.
 
 For more information, please refer to [ZK Client-side Reference:
 Language
-Definition](ZK_Client-side_Reference/Language_Definition).
+Definition]({{site.baseurl}}/zk_client_side_ref/language_definition).

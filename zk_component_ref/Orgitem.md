@@ -26,7 +26,7 @@ node, such that user could open and close the item by clicking on the
 
 # Example
 
-![](images/Orgitem_example.png)
+![](/zk_component_ref/images/Orgitem_example.png)
 
         <organigram width="600px">
             <orgchildren>
@@ -108,13 +108,13 @@ they are actually placed in the node (of the child Orgnode).
 Furthermore, if the Orgnode is not created, they will be created
 automatically. For example,
 
-``` xml
+```xml
     <orgitem label="Hello"/>
 ```
 
 is equivalent to
 
-``` xml
+```xml
     <orgitem>
         <orgnode label="Hello"/>
     </orgitem>
@@ -124,7 +124,7 @@ It also means you cannot attach an Orgnode child to the Orgitem, after
 setImage or setLabel was invoked. It means, though a bit subtle, the
 following will cause an exception:
 
-``` xml
+```xml
     <orgitem label="Hello"> <!-- Orgnode is created automatically because of setLabel -->
         <orgnode/> <!-- exception since only one Orgnode is allowed per Orgitem -->
     </orgitem>
@@ -134,7 +134,7 @@ When your Organigram only contains image and text, It is a convenient
 way to create Organigram without Orgnode tags, if you want to put other
 components in Orgnode, you could write like following:
 
-``` xml
+```xml
     <zscript><![CDATA[
         Orgchildren orgchildren;
         void newItem(String label) {
@@ -184,11 +184,11 @@ time the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Orgnode`](ZK_Component_Reference/Layouts/Organigram/Orgnode)`, `[` Orgchildren`](ZK_Component_Reference/Layouts/Organigram/Orgchildren)
+`*`[` Orgnode`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgnode)`, `[` Orgchildren`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgchildren)
 
 # Version History
 

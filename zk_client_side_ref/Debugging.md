@@ -21,9 +21,9 @@ By default, the JavaScript files (ZK packages) will be compressed and
 cached, which is hard to step in and debug. You can turn off the
 compression and the cache of JavaScript files by specifying the
 following in
-[`WEB-INF/zk.xml`](ZK_Configuration_Reference/zk.xml):
+[`WEB-INF/zk.xml`]({{site.baseurl}}/zk_config_ref/zk.xml):
 
-``` xml
+```xml
 <client-config>
     <debug-js>true</debug-js>
 </client-config>
@@ -43,7 +43,7 @@ Sometimes, you need to get the product version at runtime for debugging.
 Please run the following JavaScript statements in your browser's
 console:
 
-``` javascript
+```javascript
 zk.version;
 zk.getVersion('gmaps');
 zk.getVersion('zss');

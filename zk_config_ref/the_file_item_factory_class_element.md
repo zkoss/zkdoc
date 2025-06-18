@@ -11,7 +11,7 @@ interface.
 
 For example,
 
-``` java
+```java
 public class Foo implements DiskFileItemFactory {
     public FileItem createItem(String fieldName, String contentType,
             boolean isFormField, final String fileName, int sizeThreshold,

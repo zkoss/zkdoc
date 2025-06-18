@@ -5,7 +5,7 @@
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
 - Java API: <javadoc>org.zkoss.zul.Timer</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Timer</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -15,7 +15,7 @@ timer won't fire any event until it is attached to a page.
 
 # Example
 
-``` xml
+```xml
 <label id="now" />
 <timer id="timer" delay="1000" repeats="true"
     onTimer="now.setValue(new Date().toString())" />
@@ -49,7 +49,7 @@ class.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

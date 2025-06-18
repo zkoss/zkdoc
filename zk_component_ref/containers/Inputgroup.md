@@ -41,7 +41,7 @@ The Inputgroup component can be used in various ways to enhance the user interfa
 
    Try it
 
-   * [Inputgroup with Basic](https://zkfiddle.org/sample/3j1g0he/1-ZK-Component-Reference-Inputgroup-Basic-Example?v=latest&t=Iceblue%20Compact)
+   * [Inputgroup with Basic](https://zkfiddle.org/sample/3j1g0he/1-ZK-Component-Reference-Inputgroup-Basic-Example?v=latest&t=Iceblue_Compact)
 
 2. **Vertical Orientation:**
    
@@ -66,7 +66,7 @@ The Inputgroup component can be used in various ways to enhance the user interfa
 
    Try it
 
-   * [Inputgroup with Vertical](https://zkfiddle.org/sample/35fiuq3/1-ZK-Component-Reference-Inputgroup-Vertical-Example?v=latest&t=Iceblue%20Compact)
+   * [Inputgroup with Vertical](https://zkfiddle.org/sample/35fiuq3/1-ZK-Component-Reference-Inputgroup-Vertical-Example?v=latest&t=Iceblue_Compact)
 
 ## Properties
 ### Orient
@@ -76,6 +76,6 @@ The Inputgroup component can be used in various ways to enhance the user interfa
   - `vertical`: Components are displayed vertically.
 
 ## Supported Children
-- [`Label`](../Essential_Components/Label.md)
+- [`Label`](../essential_components/Label.md)
 - [`InputElement`](../base_components/InputElement.md)
 - [`LabelImageElement`](../base_components/LabelImageElement.md)

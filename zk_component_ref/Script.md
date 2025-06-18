@@ -6,7 +6,7 @@
   [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)
 - Java API: <javadoc>org.zkoss.zul.Script</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Script</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -17,9 +17,9 @@ by the most of browsers. The simplest format is as follows.
 
 # Example
 
-![](images/ZKComRef_Script_Example.png)
+![](/zk_component_ref/images/ZKComRef_Script_Example.png)
 
-``` xml
+```xml
 <window id="win">
     <button label="change color" onClick='Clients.evalJavaScript("myfunc()")' />
 </window>
@@ -37,7 +37,7 @@ the page is loaded. By specifying `defer="true"`, the JavaScript code
 won't be evaluated until all ZK widgets are created and bound to the DOM
 tree.
 
-``` xml
+```xml
 <textbox id="inp"/>
 <script defer="true">
    this.$f("inp").setValue("initialized");
@@ -48,7 +48,7 @@ The defer attribute can be used with a JavaScript file as shown below.
 Then, the JavaScript file will be loaded after all widgets are created
 and bound to the DOM tree.
 
-``` xml
+```xml
 <script src="/js/foo.js" defer="true"/>
 ```
 
@@ -66,7 +66,7 @@ instead. It does not support `defer`, but it consumes no memory since no
 component is created. And it generated `<script>` in HTML `<head>`, so
 the specified script will be loaded earlier than body DOM is created.
 
-``` xml
+```xml
 <?script src="~./js/zk.debug.wpd"?>
 <?script content="jq.IE6_ALPHAFIX='.png';"?>
 ```
@@ -79,7 +79,7 @@ the specified script will be loaded earlier than body DOM is created.
 Another alternative is the HTML SCRIPT tag. For example, we can define
 global variables and functions as follows:
 
-``` xml
+```xml
 <n:script xmlns:n="native"><!-- use the native namespace -->
     var a_global_variable;
     function a_global_function () {
@@ -92,7 +92,7 @@ global variables and functions as follows:
 # Supported Events
 
 - Inherited Supported Events: [
-  AbstractComponent](ZK_Component_Reference/Base_Components/AbstractComponent#Supported_Events)
+  AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
 
 # Supported Children
 
@@ -102,6 +102,6 @@ global variables and functions as follows:
 
 | Version | Description           | Example Location                                                                                                                                                                      |
 |---------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0     | Overview and Tutorial | [Client Side Programming](Small_Talks/2010/April/Client_Side_Programming) [ZK Client-side Reference: General Control](ZK_Client-side_Reference/General_Control) |
+| 5.0     | Overview and Tutorial | [Client Side Programming](https://www.zkoss.org/wiki/Small_Talks/2010/April/Client_Side_Programming) [ZK Client-side Reference: General Control]({{site.baseurl}}/zk_client_side_ref/general_control) |
 
 

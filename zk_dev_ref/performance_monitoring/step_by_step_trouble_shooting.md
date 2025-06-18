@@ -22,7 +22,7 @@ bottleneck and draw some conclusions, and eliminate other possible
 causes easily.
 
 
-![](images/chrome_developer_tools_network.png)
+![](/zk_dev_ref/images/chrome_developer_tools_network.png)
 
 Developer tools - Net(work) :  
 * Chrome -\> \[F12\] / \[CTRL + SHIFT + I\]
@@ -59,7 +59,7 @@ NO (dynamic request into ZK application)
 wording and
 explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
-![](images/chrome_developer_tools_network_timing.png)
+![](/zk_dev_ref/images/chrome_developer_tools_network_timing.png)
 
 **CONNECTING** (or one of Proxy, DNS Lookup, Blocking, SSL)
 
@@ -155,9 +155,9 @@ size of the response, if the Client engine needs to render a lot (e.g. a
 Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
 the data sent to the client using [Render on
-Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Client_Render_on_Demand)
+Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 or
-[Pagination]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Use_Live_Data_and_Paging)
+[Pagination]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/use_live_data_and_paging)
 (Most users don't need 1000 lines visible at once)
 
 Performance degrading over time when using the application (while
@@ -185,13 +185,13 @@ You'll get a nice view like this: (**Update**: since chrome version 58
 the "profiles" and "timeline" are combined in the "performance"-tab
 [more...](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/))
 
-![](images/js_profile_flame_chart.png )
+![](/zk_dev_ref/images/js_profile_flame_chart.png )
 
 This brilliant visualization of the JS execution flow and stack depth
 can be used / interpreted in many ways to extract the information you
 require.
 
-![](images/js_timeline_events.png
+![](/zk_dev_ref/images/js_timeline_events.png
 title="Another interesting view to determine the render time is the Timeline - Events view in Chrome"
 width="300"
 alt="Another interesting view to determine the render time is the Timeline - Events view in Chrome" />
@@ -201,7 +201,7 @@ at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in
 the source code (enabling
-[debug-js]({{site.baseurl}}/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element)
+[debug-js]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_debug-js_element)
 will help when using this feature).
 
 The small peak (at 2800ms) on the left side is my actual event
@@ -329,7 +329,7 @@ Windows:
   explorer](http://technet.microsoft.com/en-us/sysinternals/bb896653) (a
   better "task manager")
 - Perfmon.exe (please check [this
-  tutorial](http://www.computerperformance.co.uk/HealthCheck/Disk_Health.htm#Disk%20Bottleneck%202)
+  tutorial](http://www.computerperformance.co.uk/HealthCheck/Disk_Health.htm#Disk_Bottleneck_2)
   for more details)
 
 ### Performance Debugging/Logging/Tracing
@@ -401,7 +401,7 @@ and [Part
 here is a small example showing 2 different kinds of time performance
 issues (a busy loop, and a suspended thread (sleeping)):
 
-``` java
+```java
     @Override
     public void doAfterCompose(Component comp) throws Exception {
         super.doAfterCompose(comp);
@@ -480,7 +480,7 @@ memory, and not being released again, after a Garbage Collection.
 Here is a very simple case using JVisualVM. Take this Composer code
 snippet which allocates a lot of memory.
 
-``` java
+```java
 public class LineChartComposer extends SelectorComposer {
     @Wire("#linechart")
     private Chart lineChart;
@@ -517,14 +517,14 @@ current component tree) for a user are stored in the session. Therefore
 one should check the following settings:
 
 - [ZK Session
-  Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/ZK_Session_Cleaner)
+  Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/zk_session_cleaner)
 
   
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
 - [Session
-  Configuration]({{site.baseurl}}/zk_config_ref/zk.xml/The_session-config_Element)
+  Configuration]({{site.baseurl}}/zk_config_ref/the_session-config_element)
 
   
 check session timeout, either here or in web.xml
@@ -532,7 +532,7 @@ check session timeout, either here or in web.xml
 check max desktops per session, if you want to put a limit here
 
 - [Desktop
-  Configuration]({{site.baseurl}}/zk_config_ref/zk.xml/The_desktop-config_Element)
+  Configuration]({{site.baseurl}}/zk_config_ref/the_desktop-config_element)
 
   
 if desktops stay alive too long, check the desktop timeout
@@ -554,7 +554,7 @@ desktop).
 
 Add a listener to zk.xml
 
-``` xml
+```xml
 <listener>
     <listener-class>org.zkoss.zk.ui.util.Statistic</listener-class>
 </listener>
@@ -562,7 +562,7 @@ Add a listener to zk.xml
 
 Example of a small monitoring page:
 
-``` xml
+```xml
 <zk>
    <label multiline="true">
       Active Desktops: ${desktop.webApp.configuration.monitor.activeDesktopCount}
@@ -576,7 +576,7 @@ Example of a small monitoring page:
 
 Or you can access Statistics in Java code:
 
-``` java
+```java
  Statistic statistic = (Statistic) WebApps.getCurrent().getConfiguration().getMonitor();
  statistic.getActiveDesktopCount();
  statistic.getActiveSessionCount();
@@ -584,29 +584,29 @@ Or you can access Statistics in Java code:
 
 related documentation
 
-- <(/zk_config_ref/zk.xml/The_listener_Element/The_org.zkoss.zk.ui.util.Monitor_interface>
+- <(/zk_config_ref/The_listener_Element/The_org.zkoss.zk.ui.util.Monitor_interface>
 - <http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Statistic.html>
 
 If you see more Sessions than you expect, your session/desktop timeout
 might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
-[http://books.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Tips/Reuse_Desktops
+[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops
 reusing
-desktops]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Reuse_Desktops_reusing_desktops)
+desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops_reusing_desktops)
 can help.
 
 ### ZK Server Configuration
 
 - check debug mode → zk config should **not** be enabled (disabled by
   default)
-  - <(/zk_config_ref/zk.xml/The_client-config_Element/The_debug-js_Element>
+  - <(/zk_config_ref/The_client-config_Element/The_debug-js_Element>
 
 <!-- -->
 
 - check caching config → should **not** be disabled (enabled by default)
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.web.classWebResource.cache>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.WPD.cache>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.WCS.cache>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.web.classWebResource.cache>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zk.WPD.cache>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zk.WCS.cache>
 
 <!-- -->
 
@@ -618,18 +618,18 @@ can help.
 <!-- -->
 
 - consider/check render on demand settings
-  - <http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Client_Render_on_Demand>
-  - <http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.client.rod>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.grid.initRodSize>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.listbox.initRodSize>
-  - <(/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zul.tree.initRodSize>
+  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand>
+  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.client.rod>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.grid.initRodSize>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.listbox.initRodSize>
+  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.tree.initRodSize>
     (ZK 7)
 
 <!-- -->
 
 - check
-  <http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips>
+  <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips>
 
 ## Network Issue
 
@@ -682,7 +682,7 @@ you concern instead of irrelevant classes.
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![]({{site.baseurl}}/zk_dev_ref/images/hotSpots.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/hotspots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -690,4 +690,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![]({{site.baseurl}}/zk_dev_ref/images/forwardCall.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/forwardcall.jpg)

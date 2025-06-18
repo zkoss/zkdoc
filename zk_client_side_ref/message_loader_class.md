@@ -18,13 +18,13 @@ Example,
 
 - Lang-addon.xml
 
-``` xml
+```xml
 <message-loader-class>foo.bar.MyCustomMessageLoader</message-loader-class>
 ```
 
 - foo.bar.MyCustomMessageLoader.java
 
-``` java
+```java
 public class MyCustomMessageLoader implements MessageLoader {
 
     @Override
@@ -37,13 +37,13 @@ public class MyCustomMessageLoader implements MessageLoader {
 
 - \[/src/main/resources/web\]/mycustom-msgzk.js
 
-``` javascript
+```javascript
 msgzk.MYCUSTOM='customized';
 ```
 
 - \[/src/main/resources/web\]/mycustom-msgzk_de.js
 
-``` javascript
+```javascript
 msgzk.MYCUSTOM='angepasst';
 ```
 

@@ -6,28 +6,28 @@ It is convenient to use zscript in ZUML, but it comes with a price:
 slower performance. The degradation varies from one application to
 another. It is suggested to use zscript only for fast prototyping, POC,
 or small projects. For large websites, it is suggested to use [ZK
-MVC]({{site.baseurl}}/zk_dev_ref/MVC)/[ZK
+MVC]({{site.baseurl}}/zk_dev_ref/mvc)/[ZK
 MVVM](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) instead. For
 example, with ZK MVC
 
-``` xml
+```xml
  <window apply="foo.MyComposer">
 //omitted
 ```
 
 You can handle all events and components in `foo.MyComposer`. By the use
 of [
-auto-wiring](ZK_Component_Reference/Common_Operations/Event_Handling/Event_Listening#Composer_and_Event_Listener_Autowiring),
+auto-wiring]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Composer_and_Event_Listener_Autowiring),
 it is straightforward to handle events and components.
 
 ## Event Handler Is zscript
 
 In addition to the `zscript` element, [ the event handler declared in a
 ZUL
-page](ZK_Component_Reference/Common_Operations/Event_Handling/Event_Listening#Declare_an_Event_Handler_in_a_ZUL_page)
+page]({{site.baseurl}}/zk_component_ref/common_operations/event_handling/event_listening#Declare_an_Event_Handler_in_a_ZUL_page)
 is also interpreted at the runtime. For example,
 
-``` xml
+```xml
   <button label="OK" onClick="doSomething()"/>
 ```
 
@@ -38,10 +38,10 @@ performance, they should be replaced too.
 
 If you decide not to use zscript at all, you could turn on [the
 disable-script
-configuration](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_disable-zscript_Element)
+configuration]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_disable-zscript_element)
 as follows, such that an exception will be thrown if zscript is used.
 
-``` xml
+```xml
 <system-config>
     <disable-zscript>true</disable-zscript>
 </system-config>
@@ -52,7 +52,7 @@ as follows, such that an exception will be thrown if zscript is used.
 If you still need to write zscript codes, you can specify the `deferred`
 attribute to defer the evaluation of zscript codes as follows.
 
-``` xml
+```xml
 <zscript deferred="true">
 </zscript>
 ```
@@ -65,7 +65,7 @@ and speeds up page rendering.
 In the following example, the interpreter is loaded only when the button
 is clicked:
 
-``` xml
+```xml
 <window id="w">
     <zscript deferred="true">
      void addMore() {
@@ -85,19 +85,19 @@ page is loaded. In other words, all deferred zscript will be evaluated
 when the page is loaded if the `onCreate` event listener is written in
 zscript as shown below.
 
-``` xml
+```xml
 <window onCreate="init()">
 ```
 
 Rather, it is better to rewrite it as
 
-``` xml
+```xml
 <window use="my.MyWindow">
 ```
 
 Then, prepare `MyWindow.java` as shown below.
 
-``` java
+```java
  package my;
  public class MyWindow extends Window {
      public void onCreate() { //to process the onCreate event
@@ -111,7 +111,7 @@ interface as shown below. Note: the `afterCompose` method of the
 `AfterCompose` interface is evaluated at the Component Creation phase,
 while the `onCreate` event is evaluated in the Event Processing Phase.
 
-``` java
+```java
  package my;
  public class MyWindow extends Window implements org.zkoss.zk.ui.ext.AfterCompose {
      public void afterCompose() { //to initialize the window
@@ -126,7 +126,7 @@ when a user clicks a button, the `onClick` event is sent to the button.
 However, developers may need to forward the event to the window
 component by the use of the `onClick` event listener as follows.
 
-``` xml
+```xml
 <window id="w" onOK='alert("on OK")'>
     <button label="OK" onClick='Events.postEvent("onOK", w, null)'/>
 </window>
@@ -137,7 +137,7 @@ by *not* using zscript at all. Thus, you can rewrite the above code
 snippet either with `EventListener` or by specifying the `forward`
 attribute as follows.
 
-``` xml
+```xml
 <window apply="foo.MyComposer">
     <button label="OK" forward="onOK"/>
 </window>

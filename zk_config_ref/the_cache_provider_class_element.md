@@ -32,7 +32,7 @@ Available implementations are as follows.
 <td><p>It stores all desktops from the same session in one single cache.
 It is simple and fast, but not supporting clustering by default. To
 support clustering, please check the <a
-href="ZK_Developer%27s_Reference/Clustering/ZK_Configuration"
+href="{{site.baseurl}}/zk_dev_ref/clustering/zk_configuration"
 title="wikilink"> configuration for clustering</a>.</p></td>
 </tr>
 <tr class="even">

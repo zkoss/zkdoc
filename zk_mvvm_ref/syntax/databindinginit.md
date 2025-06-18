@@ -43,26 +43,26 @@ Example
 =======
 
 #### Usage example in viewModel attribute
-``` xml
+```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ChildrenMenuVM')">
 </window>
 ```
 
 #### Usage example in form attribute
-``` xml
+```xml
 <vbox form="@id('fx') @init(vm.myForm) @load(vm.person) @save(vm.person, before='save')">
 </vbox>
 ```
 
 #### Pass arguments
-``` xml
+```xml
 <window width="400px" apply="org.zkoss.bind.BindComposer"
 	viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.databinding.InitVM', arg1='myValue')">
     <!-- other components -->
 </window>
 ```
 
-``` java
+```java
 public class InitVM {
 
     @Init

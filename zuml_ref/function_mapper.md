@@ -41,7 +41,7 @@ are passed to the constructor as an instance of `Map`. If the second
 signature is found, the values of arguments are passed to the
 constructor as an array of objects. For example,
 
-``` xml
+```xml
 <?function-mapper class="foo.Foo" whatever="anything"?>
 ```
 

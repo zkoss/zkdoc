@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Tablechildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Tablechildren</javadoc>
-- Style Guide: [
-  Tablelayout](ZK_Style_Guide/XUL_Component_Specification/Tablelayout)
+
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Employment/Purpose
@@ -22,9 +21,9 @@ The child of tablechildren can be any component.
 
 # Example
 
-![](images/ZKComRef_Tablelayout_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
 
-``` xml
+```xml
 <tablelayout columns="2">
     <tablechildren>
         <panel title="Table 1" border="normal" maximizable="true"
@@ -57,9 +56,9 @@ The child of tablechildren can be any component.
 
 The child of tablechildren can be any component.
 
-![](images/ZKComRef_Tablelayout_Example_ZK6.PNG‎)
+![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG‎)
 
-``` xml
+```xml
     <tablelayout columns="2">
         <tablechildren>
             <label value="Table 1" />
@@ -100,11 +99,11 @@ The child of tablechildren can be any component.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Panel`](ZK_Component_Reference/Containers/Panel)
+`*`[` Panel`]({{site.baseurl}}/zk_component_ref/containers/panel)
 
 {% include version-badge.html version=6.0.0 %}
 
@@ -113,7 +112,7 @@ The child of tablechildren can be any component.
 # Use Cases
 
 [ Tablelayout
-](ZK_Component_Reference/Layouts/Tablelayout#Use_Cases)
+]({{site.baseurl}}/zk_component_ref/layouts/tablelayout#Use_Cases)
 
 # Version History
 

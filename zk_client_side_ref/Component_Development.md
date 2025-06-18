@@ -7,4 +7,4 @@ server-side and client-side.
   Essentials](ZK_Component_Development_Essentials).
 - For information about the communication between the client and server,
   please refer to [the Communication
-  section](ZK_Client-side_Reference/Communication).
+  section]({{site.baseurl}}/zk_client_side_ref/communication).

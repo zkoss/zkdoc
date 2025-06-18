@@ -13,19 +13,19 @@ different look.
 For example, assign zclass **btn** to a button component in zul page
 like this
 
-``` xml
+```xml
 <!-- index.zul -->
 <button zclass="btn"/>
 ```
 
 will generate the following output
 
-``` html
+```html
 <!-- HTML output -->
 <button class="btn" />
 ```
 
-``` html
+```html
 <!-- ZK default HTML output -->
 <button class="z-button" />
 ```

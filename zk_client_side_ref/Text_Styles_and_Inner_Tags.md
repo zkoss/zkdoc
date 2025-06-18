@@ -14,7 +14,7 @@ won't have any effect to the text's styles.
 
 For example, assume that the widget's HTML representation is as follows.
 
-``` xml
+```xml
 <span><input type="checkbox"/><label>Text</label></span>
 ```
 
@@ -25,7 +25,7 @@ It can be resolved as follows.
 First, generates the style for the inner tag (i.e., <label> in the above
 case) by calling zk.Widget#domTextStyleAttr\_
 
-``` javascript
+```javascript
 out.push('<label', this.domTextStyleAttr_(), '>',...);
 ```
 
@@ -33,7 +33,7 @@ Second, override
 <javadoc directory="jsdoc" method="getTextNode_()">zk.Widget</javadoc>
 to return the DOM element that embeds the text.
 
-``` javascript
+```javascript
 getTextNode_: function () {
     return zDom.firstChild(this.getNode(), "LABEL");
 }

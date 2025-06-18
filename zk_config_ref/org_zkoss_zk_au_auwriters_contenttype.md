@@ -6,7 +6,7 @@ It specifies the Content-Type of the AU response.
 
 For example:
 
-``` xml
+```xml
   <library-property>
     <name>org.zkoss.zk.au.AuWriters.ContentType</name>
     <value>json/application;charset=UTF-8</value>

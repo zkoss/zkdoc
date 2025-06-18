@@ -28,8 +28,8 @@ Click ![inline]({{site.baseurl}}/zk_essentials/images/ze-ch6-cross.png) to delet
 In this chapter, we will show how to implement the target application
 using both the MVC and MVVM approaches. If you are not familiar with
 these two approaches, we suggest you to read [ Get ZK Up and Running
-with MVC]({{site.baseurl}}/get_started/Get ZK Up_and_Running_with_MVC )
+with MVC]({{site.baseurl}}/get_started/get ZK Up_and_Running_with_MVC )
 and [ Get ZK Up and Running with
-MVVM]({{site.baseurl}}/get_started/Get ZK Up_and_Running_with_MVVM ).
+MVVM]({{site.baseurl}}/get_started/get ZK Up_and_Running_with_MVVM ).
 These two approaches are mutually interchangeable. You can choose one of
 them depending on your situation.

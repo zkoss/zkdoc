@@ -13,7 +13,7 @@ the ZK application. Following is a typical example of cookie validation:
 
 **cookie.zul**
 
-``` xml
+```xml
 <zk>
     <div apply="CookieComposer">
         <button id="change" label="change" />
@@ -23,7 +23,7 @@ the ZK application. Following is a typical example of cookie validation:
 
 **CookieComposer.java**
 
-``` java
+```java
 public class CookieComposer extends SelectorComposer<Component> {
     public void doAfterCompose(Component comp) throws Exception {
         super.doAfterCompose(comp);
@@ -48,7 +48,7 @@ public class CookieComposer extends SelectorComposer<Component> {
 
 **Test.java**
 
-``` java
+```java
 @Test
 public void Test() {
     Client client = Zats.newClient();
@@ -76,7 +76,7 @@ cookie to remind a user of his/her last read page number:
 
 **cookie.zul**
 
-``` xml
+```xml
 <zk>
     <div apply="CookieComposer">
         <label id="msg" value="first time reading" />
@@ -88,7 +88,7 @@ cookie to remind a user of his/her last read page number:
 
 **CookieComposer**
 
-``` java
+```java
 public class CookieComposer extends SelectorComposer<Component> {
     @Wire
     private Label msg;
@@ -112,7 +112,7 @@ public class CookieComposer extends SelectorComposer<Component> {
 
 **Test.java**
 
-``` java
+```java
 @Test
 public void test() {
     Client client = Zats.newClient();

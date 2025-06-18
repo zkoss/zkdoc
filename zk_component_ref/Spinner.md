@@ -6,8 +6,7 @@
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Spinner</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Spinner</javadoc>
-- Style Guide: [
-  Spinner](ZK_Style_Guide/XUL_Component_Specification/Spinner)
+
 
 # Employment/Purpose
 
@@ -15,9 +14,9 @@ An edit box for holding a constrained integer.
 
 # Example
 
-![](images/ZKComRef_Spinner.png)
+![](/zk_component_ref/images/ZKComRef_Spinner.png)
 
-``` xml
+```xml
  <window title="Spinner" border="normal" width="150px">
      <spinner />
  </window>
@@ -27,7 +26,7 @@ An edit box for holding a constrained integer.
 
 ## Fixed Width
 
-``` xml
+```xml
 <spinner width="100px" inplace="true" value="30" />
 ```
 
@@ -36,9 +35,9 @@ An edit box for holding a constrained integer.
 Because inplace editing function in ZK is pure client side action, so we
 can use client api to modify the width (server side do not need to know)
 
-![](images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
+![](/zk_component_ref/images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
 
-``` xml
+```xml
 <zk xmlns:c="client">
   <spinner inplace="true" value="240" width="30px" c:onFocus='this.setWidth("60px")' c:onBlur='this.setWidth("30px")' />
 </zk>
@@ -51,14 +50,14 @@ can use client api to modify the width (server side do not need to know)
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <spinner format="#,##0.##"/>
 ```
 
 {% include version-badge.html version=8.5.2 %} You can provide a locale to format
 the number by specifying the String starts with "locale:"
 
-``` xml
+```xml
 <spinner format="locale:zh-TW"/>
 ```
 
@@ -71,14 +70,14 @@ minimum and maximum to spinner.
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <spinner constraint="no empty,min -2 max 6"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <spinner constraint="no empty,min -2 max 6: between -2 to 6"/>
 ```
 
@@ -89,14 +88,14 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <spinner constraint="no empty,min -2 max 6: ${c:l('err.msg.spinner')}"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -121,7 +120,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Molds
 
@@ -144,13 +143,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/spinner_mold_default.png)</td>
+<td>![](/zk_component_ref/images/spinner_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](images/spinner_mold_rounded.png
+<td><p>![](/zk_component_ref/images/spinner_mold_rounded.png
 title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

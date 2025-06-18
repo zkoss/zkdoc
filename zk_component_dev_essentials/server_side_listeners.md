@@ -9,7 +9,7 @@ addClientEvent.
 The following example demonstrates declaring a clear event at the
 server.
 
-``` java
+```java
 static {
         addClientEvent(SimpleLabel.class, ClearEvent.NAME, 0);
     }
@@ -20,7 +20,7 @@ it will not be sent from the client. However, in our example there is a
 problem if the event is not sent back. Let’s cast our mind back to the
 service method we implemented.
 
-``` java
+```java
 public void service(org.zkoss.zk.au.AuRequest request, boolean everError) {
         final String cmd = request.getCommand();
 

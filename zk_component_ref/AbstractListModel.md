@@ -8,7 +8,7 @@
 
 # Employment/Purpose
 
-A skeletal implementation for [ListModel]({{site.baseurl}}/zk_component_ref/Supporting_Classes/ListModel).
+A skeletal implementation for [ListModel]({{site.baseurl}}/zk_component_ref/supporting_classes/listmodel).
 
 # Example
 

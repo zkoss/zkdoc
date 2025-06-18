@@ -10,7 +10,7 @@ be retrieved when the `init` method of
 <javadoc method="init(org.zkoss.zk.ui.RichletConfig)" type="interface">org.zkoss.zk.ui.Richlet</javadoc>
 is called.
 
-``` xml
+```xml
 <richlet>
     <richlet-name>Test</richlet-name>
     <richlet-class>org.zkoss.zkdemo.TestRichlet</richlet-class>

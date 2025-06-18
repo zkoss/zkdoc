@@ -11,7 +11,7 @@ request.
 For example, suppose we have a long operation that is processed in a
 working thread, then:
 
-``` xml
+```xml
 <window id="main" title="Working Thread" onPiggyback="checkResult()">
     <zscript>
      List result = Collections.synchronizedList(new LinkedList());
@@ -41,5 +41,5 @@ application requirements.
 > **Note**: A deferrable event won't be sent to the client immediately,
 > so the `onPiggyback` event is triggered only if a non-deferrable event
 > is fired. For more information, please refer to the [Deferrable Event
-> Listeners]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Listening#Deferrable_Event_Listeners)
+> Listeners]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Deferrable_Event_Listeners)
 > section.

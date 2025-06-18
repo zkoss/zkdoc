@@ -1,4 +1,4 @@
-``` java
+```java
 Class class(String className);
 ```
 

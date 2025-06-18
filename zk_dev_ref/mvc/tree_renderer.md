@@ -14,7 +14,7 @@ ZK passes a `Treeitem`, you need to create `Treerow` and `Treecell` upon your da
 
 For example:
 
-``` java
+```java
 public class HostTreeRenderer implements TreeitemRenderer {
     public void render(Treeitem treeitem, Object data, int index) throws Exception {
         Treerow row = treeitem.getTreerow();
@@ -34,7 +34,7 @@ public class HostTreeRenderer implements TreeitemRenderer {
 ```
 
 * For the concept about component, model and renderer, please refer
-    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/MVC/List_Model#Model-driven_Display).
+    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 * If the tree is assigned a template called `model`, then the
     template will be used to render the tree. For more information,
-    please refer to [the Tree Template section]({{site.baseurl}}/zk_dev_ref/MVC/Template/Tree_Template).
+    please refer to [the Tree Template section]({{site.baseurl}}/zk_dev_ref/mvc/template/tree_template).

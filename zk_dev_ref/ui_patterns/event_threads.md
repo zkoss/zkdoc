@@ -13,10 +13,10 @@ developer can suspend and resume the execution at any time, without
 blocking the Servlet thread from sending back the responses to the
 browser. To turn it on, you have to specify the following in
 `WEB-INF/zk.xml` ([ZK Configuration Guide:
-disable-event-thread](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_disable-event-thread_Element)
+disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_disable-event-thread_element)
 , after ZK 5, the event processing thread is disabled by default.)
 
-``` xml
+```xml
 <system-config>
     <disable-event-thread>false</disable-event-thread>
 </system-config>

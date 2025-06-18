@@ -81,14 +81,14 @@ enhanced later as the project progresses.
     request.
       
     For more information, please refer to [ZK Configuration
-    Reference](ZK_Configuration_Reference/web.xml/ZK_Loader)
+    Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader)
 2.  The ZK loader loads a specified page and interprets that page to
     create ZK components accordingly and instantiates specified
     controllers (Composer/ViewModel).
       
     If a URL is mapped to a richlet, ZK invokes the richlet to handle
     all UI composition. For more information, please refer to
-    [Richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet).
+    [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet).
 3.  After interpreting the whole page, the ZK loader will render the
     result to an HTML page. The HTML page is then sent back to the
     browser accompanied by the ZK Client Engine.
@@ -105,7 +105,7 @@ enhanced later as the project progresses.
     going to send an Ajax request back, another execution flow will
     start as described in the following section.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Load-page.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/load-page.jpg)
 
 # Execution Flow of Serving an Ajax Request
 

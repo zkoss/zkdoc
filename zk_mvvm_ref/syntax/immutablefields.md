@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ImmutableFields
 ```
 
@@ -19,7 +19,7 @@ Unlike [@Immutable](immutable.md), this annotation still enables proxy createion
 Example
 =======
 
-``` java
+```java
 public class VM {
     @ImmutableFields
     public Foo getFoo() {} // this Foo will still be proxied, but not its date field.
@@ -29,7 +29,7 @@ public class Foo {
 }
 ```
 
-``` java
+```java
 public class VM {
     public Foo getFoo() {} // this Foo will still be proxied, but not its date field.
 }

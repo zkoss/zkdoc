@@ -10,7 +10,7 @@ name is a concatenation of the class name of the component and `mold`.
 For example, the property for the button's default mold is called
 `org.zkoss.zul.Button.mold`.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.Button.mold</name>
     <value>trendy</value>

@@ -14,7 +14,7 @@ later. On the other hand, if the task can be encapsulated as an event
 listener
 (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>),
 you could execute it asynchronously -- please refer to the [Asynchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Asynchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
 section for more information.
 
 # Enable Server Push
@@ -26,7 +26,7 @@ it.
 It can be done by use of
 <javadoc method="enableServerPush(boolean)" type="interface">org.zkoss.zk.ui.Desktop</javadoc>:
 
-``` java
+```java
 desktop.enableServerPush(true);
 ```
 
@@ -62,7 +62,7 @@ follows.
 
 Here is an example code that illustrates the usages:
 
-``` java
+```java
 public class WorkingThread extends Thread {
     public void run() {
         try {
@@ -110,9 +110,9 @@ public class WorkingThread extends Thread {
 
 For a real example, please refer to small talks: [Simple and Intuitive
 Server Push with a Chat Room
-Example](Small_Talks/2007/August/Simple_and_Intuitive_Server_Push_with_a_Chat_Room_Example)
+Example](https://www.zkoss.org/wiki/Small_Talks/2007/August/Simple_and_Intuitive_Server_Push_with_a_Chat_Room_Example)
 and [Server Push with a Stock Chart
-Example](Small_Talks/2008/May/Server_Push_with_a_Stock_Chart_Example).
+Example](https://www.zkoss.org/wiki/Small_Talks/2008/May/Server_Push_with_a_Stock_Chart_Example).
 
 [^1]: For better performance, it is suggested to disable the server push
     if it is no longer used in the given desktop.

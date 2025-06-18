@@ -4,7 +4,7 @@ It is also possible to create XHTML components in Java. The XHTML
 components are mapped to classes by ZK which means you can implement
 something like this:
 
-``` java
+```java
 Td myTd = new Td();
 ```
 
@@ -22,13 +22,13 @@ created and a proper HTML tag will be generated accordingly. In other
 words, any component name is legal as long as the targeted browser
 supports.
 
-``` xml
+```xml
 <marquee align="top">...</marquee>
 ```
 
 is equivalent to
 
-``` java
+```java
 new Raw("marquee").setDynamicProperty("align", "top");
 ```
 

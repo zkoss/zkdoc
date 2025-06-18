@@ -22,7 +22,7 @@ flexing.
 flexbox to render flex components, with the exception of
 hflex/vflex="min"
 
-In-depth information regarding flexing in ZK can be found in the [Hflex and Vflex section](ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex).
+In-depth information regarding flexing in ZK can be found in the [Hflex and Vflex section]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex).
 
 ## Using ZK flex
 
@@ -41,7 +41,7 @@ alt="zk flex illustration" />
 In this example, menuitem1 and menuitem 2 will grow and shrink together
 to maintain a 1/3rd to 2/3rd width ratio.
 
-``` xml
+```xml
 <div id="menuitem1" hflex="1" sclass="box content1">
     MenuItem 1
 </div>
@@ -75,7 +75,7 @@ value of 0, menuitem3 become static and will not resize.
 Note: This example doesn't use ZK components, in order to demonstrate
 that CSS flex and ZK are not dependent on each-other.
 
-``` xml
+```xml
 <style>
     .panel{
         height:80px;
@@ -115,7 +115,7 @@ The grid system uses a 12 columns layout which can be used to
 proportionally grow or shrink each item based on the number of columns
 used.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Grid_system1.png)
+![]({{site.baseurl}}/zk_dev_ref/images/grid_system1.png)
 
 For this first bootstrap grid example, we will only use 3 DOM classes:
 
@@ -142,7 +142,7 @@ In this example, menuitem1 is defined to use 2 columns, and menuitem2 is
 defined to use 6 columns of the 12 columns available in bootstrap grid
 system.
 
-``` xml
+```xml
 <div class="box content1 col-xs-2">MenuItem 1</div>
 <div class="box content2 col-xs-6">MenuItem 2</div>
 ```
@@ -171,7 +171,7 @@ In this example, menuitem1 is defined to use 2 columns, and menuitem2 is
 defined to use 6 columns of the 12 columns available in bootstrap grid
 system.
 
-``` xml
+```xml
 @media(min-width:1200px){
     .content1{
         [style set 1]
@@ -214,7 +214,7 @@ In this example, menuitem1 will use 12 columns on width ranging from
 extra small to medium, then switch to using 3 columns on medium screens
 or larger.
 
-``` xml
+```xml
 <div class="box content1 col-xs-12 col-md-3">MenuItem 1</div>
 ```
 
@@ -228,16 +228,16 @@ source](https://github.com/zkoss/zkbooks/blob/master/developersreference/develop
 Additional stylesheets can be loaded on a page-by-page basis using
 processing instructions, or style components.
 
-``` xml
+```xml
 <?link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.css"?>
 ```
 
 Alternatively, if the style is used in all pages, it can be deployed
 globally [through language
-definition](ZK_Client-side_Reference/Language_Definition/stylesheet),
+definition]({{site.baseurl}}/zk_client_side_ref/language_definition/stylesheet),
 in lang-addon.xml:
 
-``` xml
+```xml
 <stylesheet href="/resources/bootstrap/css/bootstrap.css" type="text/css"/>
 ```
 
@@ -249,7 +249,7 @@ attribute in zul (or setSclass(...) method in Java). This is an easy way
 to add rendering information to be used by the bootstrap grid system, or
 other client-side responsive providers.
 
-``` xml
+```xml
 <div id="top" sclass="box panel container"> <!-- container DOM class -->
     <div sclass="row"> <!-- row DOM class -->
         <div id="menuitem1" sclass="box content1 col-xs-12 col-md-6"> <!-- col-xs-12 and col-md-6 DOM class -->

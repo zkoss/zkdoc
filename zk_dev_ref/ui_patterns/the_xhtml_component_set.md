@@ -7,7 +7,7 @@ features, each XHTML component represents an HTML tag. For example, the
 following XML element will cause ZK Loader to create a component called
 <javadoc>org.zkoss.zhtml.Ul</javadoc>.
 
-``` xml
+```xml
 <h:ul xmlns:h="xhtml">
 ```
 
@@ -24,7 +24,7 @@ shown below.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/html_1.png)
 
-``` xml
+```xml
  <window title="mix HTML demo" xmlns:h="xhtml">
      <h:table border="1">
          <h:tr id="row1">
@@ -42,7 +42,7 @@ shown below.
 ```
 
 On the other hand, the [native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 will cause *native* HTML tags to be generated. It means you can not
 modify the content dynamically on the server. Notice that you still can
 handle them dynamically at the client.
@@ -54,7 +54,7 @@ set only if there is no better way for doing it.
 For example, we could rewrite the previous sample with the native
 namespace and some client-side code as follows.
 
-``` xml
+```xml
 <window title="mix HTML demo" xmlns:n="native">
      <n:table border="1">
          <n:tr id="row1">
@@ -91,7 +91,7 @@ these tags are generated automatically if the filename extension is
 For example, suppose we have a file called foo.zhtml, then the content
 might look as follows.
 
-``` xml
+```xml
 <?link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"?>
 <html xmlns:zk="zk" xmlns:z="zul">
   <head>

@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Combobutton</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Combobutton</javadoc>
-- Style Guide: [
-  Combobutton]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Combobutton)
+
 
 # Employment/Purpose
 
@@ -31,7 +30,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 ![](/zk_component_ref/images/ZKComRef_Combobutton_with_Popup.jpg)
 
-``` xml
+```xml
     <combobutton label="popup" image="/img/network.gif">
         <popup>
             <vbox>
@@ -62,7 +61,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 ![](/zk_component_ref/images/ZKComRef_Combobutton_with_Menupopup.jpg)
 
-``` xml
+```xml
     <combobutton label="menu popup" image="/img/network.gif">
         <menupopup>
             <menuitem label="Index"/>
@@ -79,7 +78,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 ![](/zk_component_ref/images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎)
 
-``` xml
+```xml
 <zk>
     <window border="normal" title="test win"
         width="300px">
@@ -115,12 +114,12 @@ while mouseover the right drop down icon of Combobutton.
 The simplest use is to specify it with `self` as follows. Then, the
 button is disabled when it is clicked.
 
-``` xml
+```xml
 <combobutton label="popup" autodrop="true" />
 ```
 
 Moreover, it support other [ properties inherited from
-Button]({{site.baseurl}}/zk_component_ref/essential_components/Button#Properties)
+Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Properties)
 in stead of upload.
 
 # Supported Events
@@ -160,7 +159,7 @@ directly.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Button]({{site.baseurl}}/zk_component_ref/essential_components/Button#Supported_Events)
+  Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
 
 # Supported Molds
 
@@ -173,8 +172,8 @@ The **tbbtn** mold is renamed to **toolbar** mold
 
 # Supported Children
 
-[ Popup]({{site.baseurl}}/zk_component_ref/essential_components/Popup) [
-Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/Menu/Menupopup)
+[ Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) [
+Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup)
 
 # Use Cases
 

@@ -28,39 +28,39 @@ its own session, then one session state might override another session.
 For configuring Apache + Tomcat, please refer to
 
 - [How to Run ZK on Apache + Tomcat clustering, Part
-  I](Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
+  I](https://www.zkoss.org/wiki/Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
 - [How to Run ZK on Apache + Tomcat clustering, Part
-  II](Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
+  II](https://www.zkoss.org/wiki/Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
 
 More detail settings
 
 - [ Tomcat
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/Tomcat_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
 
 # Google App Engine
 
 For configuring Google App Engine, please refer to
 
 - [ZK Installation Guide: Google App
-  Engine](ZK_Installation_Guide/Setting_up_Servers/Google_App_Engine)
+  Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
 
 # Apache + JBoss
 
 For configuring JBoss, please refer to
 
 - [ JBoss
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/JBoss_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
 
 # Glassfish
 
 For configuring Glassfish, please refer to
 
 - [ Glassfish
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/Glassfish_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/glassfish_cluster)
 
 # WebLogic
 
 For configuring WebLogic, please refer to
 
 - [ WebLogic
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/WebLogic_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)

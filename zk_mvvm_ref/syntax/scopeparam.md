@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ScopeParam
 
 @ScopeParam(scopes=Scope.APPLICATION)
@@ -15,7 +15,7 @@ Syntax
 
 **A list of all scopes enumeration:**
 
-``` java
+```java
 enum Scope {
     //EXECUTION is since 8.6.0
     COMPONENT, SPACE, PAGE, DESKTOP, EXECUTION, SESSION, APPLICATION // single scope
@@ -43,7 +43,7 @@ The value can be omitted if name is the same as the annotated parameter.
 Example
 =======
 
-``` java
+```java
 public class ScopeParamVM {
 
     @Init

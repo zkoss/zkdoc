@@ -1,7 +1,7 @@
 A property usually has a getter and a setter. The getter is
 straightforward:
 
-``` javascript
+```javascript
 _value: '', //default value
  
 getValue: function () {
@@ -20,7 +20,7 @@ it is null.
 How we update depends on the DOM content. In this example, we use HTML's
 span to enclose the value, so we only need to change innerHTML.
 
-``` javascript
+```javascript
 setValue: function(value) {
  if (this._value != value) {
   this._value = value;

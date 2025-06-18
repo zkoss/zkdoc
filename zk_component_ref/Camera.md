@@ -35,7 +35,7 @@ and microphone access from a trusted (HTTPS) source.
 The Camera component also provides a method `requestCamera()` to request
 user's media devices before starting recording or taking snapshots.
 
-``` xml
+```xml
   <camera id="camera" />
   <button onClick="camera.requestCamera()" />
 ```
@@ -76,7 +76,7 @@ recording, please invoke pause().
 
 isRecording() can check whether the camera is recording or not.
 
-``` xml
+```xml
   <camera id="camera" />
   <button onClick="camera.setRecording(true)" />
 ```
@@ -88,7 +88,7 @@ specifying the value of audio; the valid value is boolean.
 
 Default: true
 
-``` xml
+```xml
   <camera audio="false" />
 ```
 
@@ -105,7 +105,7 @@ specifying width and height in 'px'.
 If you intend to take a snapshot, you must turn on the preview screen
 first, or nothing will be shown.
 
-``` xml
+```xml
   <camera width="600px" previewRecord="true" />
 ```
 
@@ -120,9 +120,9 @@ event. To handle this, you can listen to onMaxsizeExceed and get the
 upload size from event.getData().
 
 Default: please refer to
-[max-upload-size]({{site.baseurl}}/zk_config_ref/zk.xml/The_system-config_Element/The_max-upload-size_Element)
+[max-upload-size]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_max-upload-size_element)
 
-``` xml
+```xml
   <camera maxsize="1024" onMaxsizeExceed="event.getData()" />
 ```
 
@@ -136,7 +136,7 @@ onLengthLimitExceed.
 
 Default: 60
 
-``` xml
+```xml
   <camera lengthLimit="120" onLengthLimitExceed="doSomething()" />
 ```
 
@@ -150,7 +150,7 @@ which is used to describe a camera's capabilities.
 
 The following string requests a user-facing (front) camera of a phone;
 
-``` xml
+```xml
 <camera constraintsString='{"video": {"facingMode": {"exact": "user"}}}'>
 ```
 
@@ -169,9 +169,9 @@ recorded time exceeds the maximum length.
 `onSnapshotUpload` will be notified after calling snapshot().
 
 You can easily integrate the Camera component with
-[Video]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Video)
+[Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video)
 and
-[Image]({{site.baseurl}}/zk_component_ref/essential_components/Image).
+[Image]({{site.baseurl}}/zk_component_ref/essential_components/image).
 
 For example:
 
@@ -179,7 +179,7 @@ To integrate these components, you can write codes as shown below, and
 after the video or snapshot is uploaded, you can see the results
 immediately.
 
-``` xml
+```xml
   <camera onVideoUpload='video.setContent(event.getMedia())' 
           onSnapshotUpload='image.setContent(event.getMedia())' />
   <video id="video" />
@@ -200,11 +200,11 @@ For example:
 If you want to do something after the recording starts, you can write
 codes as shown below (MVVM pattern):
 
-``` xml
+```xml
   <camera onStateChange="@command('stateChange', event=event)" />
 ```
 
-``` java
+```java
   @Command
   public void stateChange(@BindingParam("event") StateChangeEvent event) {
     if (event.getState() == Camera.START) {
@@ -233,7 +233,7 @@ css classes like the following:
 
 ![](/zk_component_ref/images/Pause.png)
 
-``` css
+```css
     .z-camera-pause {
         width: 30px;
         height: 30px;
@@ -314,7 +314,7 @@ camera is unavailable after requesting media devices from user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

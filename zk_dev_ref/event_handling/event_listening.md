@@ -6,7 +6,7 @@ An event listener is a class implementing
 <javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>.
 For example,
 
-``` java
+```java
 public class MyListener implements EventListener {
     public void onEvent(Event event) {
         Messagebox.show("Hello");
@@ -19,7 +19,7 @@ receive the event by the use of
 <javadoc method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>.
 For example,
 
-``` java
+```java
 button.addEventListener("onClick", new MyListener());
 ```
 
@@ -31,15 +31,15 @@ following section.
 ## Composer and Event Listener Autowiring
 
 With [ZK Developer's
-Reference/MVC]({{site.baseurl}}/zk_dev_ref/MVC), you generally
+Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
 do not need to register event listeners manually. Rather, they can be
 registered automatically by the use of the
-[auto-wiring]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
+[auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 feature of [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller). For
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller). For
 example,
 
-``` java
+```java
 public class MyComposer extends SelectorComposer {
     @Listen("onClick = button#hi")
     public void showHi() {
@@ -63,11 +63,11 @@ component(s) (for more selector syntax examples see
 <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>). The
 composer will register each annotated method as an event listener to the
 selected component automatically **in the same [ ID
-space](ZK%20Developer's%20Reference/UI%20Composing/ID%20Space)**.
+space](ZK_Developer's_Reference/ui_composing/ID_Space)**.
 Then, in the ZUL page, you can specify the `apply` attribute to
 associate the composer with a component.
 
-``` xml
+```xml
 <window id="mywin" apply="MyComposer">
     <textbox/>
     <button id="hi"/>
@@ -78,7 +78,7 @@ associate the composer with a component.
 If the listener needs to access the event, just declare it as the
 argument:
 
-``` java
+```java
     @Listen("onClick = button#hi")
     public void showHi(MouseEvent event) {
       Messsagebox.show("Hello, " + event.getName());
@@ -91,7 +91,7 @@ components within the given ID space. You could associate any component
 that properly represents a scope of your application to manage.
 
 For more information please refer to the [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
+Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 section.
 
 ## Deferrable Event Listeners
@@ -110,7 +110,7 @@ To make an event listener deferrable, you have to implement
 (with `EventListener`) and return true for the `isDeferrable` method as
 follows.
 
-``` java
+```java
  public class DeferrableListener implements EventListener, Deferrable {
      private boolean _modified;
      public void onEvent(Event event) {
@@ -155,7 +155,7 @@ implemented or not.
 A typical example is to use a page-level event listener to maintain the
 modification flag as follows (pseudo code).
 
-``` java
+```java
 page.addEventListener("onChange", new EventListener() {
     public void onEvent(Event event) {
         modified = true;
@@ -173,7 +173,7 @@ page or as a member of a component class.
 An event handler can be declared in a ZUL page by specifying an event
 attribute[^1]. For example,
 
-``` xml
+```xml
 <button label="hi" onClick='alert("Hello")'/>
 ```
 
@@ -183,7 +183,7 @@ you prefer to use another language, you could specify the language name
 in front of it. For example, the following uses Groovy as the
 interpreter:
 
-``` xml
+```xml
 <button label="hi" onClick="groovy:alert('Hi, Groovy')"/>
 ```
 
@@ -220,7 +220,7 @@ Suggestion:
 The other way to have an event handler is to declare it as a member of a
 component class. For example,
 
-``` java
+```java
 public class MyButton extends Button {
     public void onClick() {
         Messagebox.show("Hello");
@@ -231,7 +231,7 @@ public class MyButton extends Button {
 If the event handler needs to handle the event, it can declare the event
 as the argument as follows.
 
-``` java
+```java
 public class MyButton extends Button {
     public void onClick(MouseEvent event) {
         Messagebox.show("Hello, "+event.getName());

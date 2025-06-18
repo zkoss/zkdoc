@@ -5,8 +5,6 @@
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
 - Java API: <javadoc>org.zkoss.zul.Grid</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Grid</javadoc>
-- Style Guide:
-  [Grid](ZK_Style_Guide/XUL_Component_Specification/Grid)
 
 # Employment/Purpose
 
@@ -38,9 +36,9 @@ declaration. For more details see the section on Axillary Headers below.
 
 # Example
 
-![](images/ZKComRef_Grid_Example.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
-``` xml
+```xml
  <window title="Grid Demo" border="normal" width="360px">
      <zscript>
      class Comp implements Comparator {
@@ -86,9 +84,9 @@ declaration. For more details see the section on Axillary Headers below.
  </window>
 ```
 
-![](images/grid_onAfterRender.png)
+![](/zk_component_ref/images/grid_onAfterRender.png)
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
         ListModelList lm = new ListModelList(Arrays.asList(new String[] { "David",
@@ -118,7 +116,7 @@ size and active page on the component is still supported, model now
 provides api for paging control, which makes using model more
 convenient.
 
-``` xml
+```xml
     <zscript><![CDATA[
     import org.zkoss.zul.ext.Pageable;
 
@@ -159,9 +157,9 @@ discussed in the previous section. Paging is enabled by setting the
 the content into several pages and displays one page at a time as
 depicted below.
 
-![](images/ZKComRef_Grid_Paging.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Paging.png)
 
-``` xml
+```xml
  
 <grid width="300px" mold="paging" pageSize="4">
     <columns>
@@ -208,17 +206,15 @@ numeric value. By default, it is 20.
 
 ## The Paginal Property
 
-If you prefer to place the [
-Paging](ZK%20Component%20Reference/Supplementary/Paging)
+If you prefer to place the [Paging](zk_component_ref/paging)
 component in a different location or if you want to control two or more
-grids with the same [
-Paging](ZK%20Component%20Reference/Supplementary/Paging), you
+grids with the same [Paging](zk_component_ref/paging), you
 can assign the `paginal` attribute explicitly. Note: if it is not set
 explicitly, it is the same as the `paging` property.
 
-![](images/ZKComRef_Grid_Paginal.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Paginal.png)
 
-``` xml
+```xml
  
 <vbox>
     <paging id="pg" pageSize="4"/>
@@ -283,7 +279,7 @@ explicitly, it is the same as the `paging` property.
 ## The Paging Property
 
 It is a read-only attribute representing the child [
-Paging](ZK%20Component%20Reference/Supplementary/Paging)
+Paging](zk_component_ref/paging)
 component that is created automatically. It is null if you assign
 external paging via the `paginal` attribute. You rarely need to access
 this attribute as it is generally better to use the `paginal` attribute.
@@ -304,7 +300,7 @@ If you want to implement "create-on-demand" feature, you can add a event
 listener to the grid for the `onPaging` event. The line below
 demonstrates how to add an EventListener.
 
-``` java
+```java
 grid.addEventListener(org.zkoss.zul.event.ZulEvents.ON_PAGING, new MyListener());
 ```
 
@@ -319,7 +315,7 @@ available space.
 
 For example,
 
-``` xml
+```xml
 <grid id="grid" autopaging="true" mold="paging" vflex="1">
     <columns>
         <column label="column1"/>
@@ -332,19 +328,15 @@ For example,
 </grid>
 ```
 
-![](images/Grid_autopageSize.png)
+![](/zk_component_ref/images/Grid_autopageSize.png)
 
 **Note:** Autopaging depends on a fixed row height for all rows (i.e.
-you can't use line wrapping text in cells or the \`
-
-<details>
-
-\` component). Because of that, once enabled, ZK will apply fixed height
+you can't use line wrapping text in cells or the `<details>` component). Because of that, once enabled, ZK will apply fixed height
 for each row with the following CSS by default. If you want to change
 the height, please overwrite the CSS rule as your preference. But this
 feature only works when each row has the same height.
 
-``` css
+```css
 .z-grid-autopaging .z-row-cnt {
     height: 30px;
     overflow: hidden;
@@ -371,7 +363,7 @@ two rows of the grid, and then assign its instances to the
 `compare` method is passed two <javadoc>org.zkoss.zul.Row</javadoc>
 instances.
 
-``` xml
+```xml
 <zk>
     <zscript>
          class MyRowComparator implements Comparator {
@@ -423,7 +415,7 @@ The `sort` method is the underlying implementation of the default
 using Java code. For example, you might have to call this method after
 adding rows (assuming they not in the proper order).
 
-``` java
+```java
 Row row = new Row();
 row.setParent(rows);
 row.appendChild(...);
@@ -440,20 +432,18 @@ Note: the `sort` method checks the sort direction (by calling
 `getSortDirection`). It sorts the rows only if the sort direction is
 different. To enforce the sorting, do as follows.
 
-``` java
+```java
 column.setSortDirection("natural");
 sort(myorder);
 ```
 
 The above code is equivalent to the following.
 
-``` java
+```java
 sort(myorder, true);
 ```
 
-<font color="red">Update: </font> see more about sorting [Multiple Field
-Sorting on
-Listbox](Small_Talks/2009/January/Multiple_Field_Sorting_on_Listbox).
+See more about sorting [Multiple Field Sorting onListbox](http://books.zkoss.org/wiki/Small%20Talks/2009/January/Multiple%20Field%20Sorting%20on%20Listbox).
 
 # Live Data
 
@@ -487,9 +477,9 @@ In the following example, we prepared a list model called `strset`,
 assign it to a grid using the `model` attribute. Then, the grid will do
 the rest.
 
-![](images/ZKComRef_Grid_LiveData.png)
+![](/zk_component_ref/images/ZKComRef_Grid_LiveData.png)
 
-``` xml
+```xml
 <window title="Live Grid" border="normal" width="100px">
     <zscript><![CDATA[
         String[] data = new String[30];
@@ -512,7 +502,7 @@ If you allow users to sort a grid with live data, you have to implement
 the interface, <javadoc>org.zkoss.zul.ListModelExt</javadoc>, in
 addition to the <javadoc>org.zkoss.zul.ListModel</javadoc>.
 
-``` java
+```java
 class MyListModel implements ListModel, ListModelExt {
     public void sort(Comparator cmpr, boolean ascending) {
         //do the real sorting
@@ -532,7 +522,7 @@ instances. These are registered by the `addListDataListener` method. In
 most cases, all the data is changed, so the list model usually sends the
 following event:
 
-``` java
+```java
 new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1) 
 ```
 
@@ -545,12 +535,12 @@ and this even works under ROD.
 
 # Scrollable Grid
 
-![](images/ZKComRef_Grid_ScrollableGrid.png)
+![](/zk_component_ref/images/ZKComRef_Grid_ScrollableGrid.png)
 
 A grid can be scrollable and has a frozen header if you specify the
 `height` attribute and there is not enough space to display all data.
 
-``` xml
+```xml
 <grid span="true" sizedByContent="true" width="500px" height="130px">
     <columns>
         <column label="Head 1"/>
@@ -596,7 +586,7 @@ is not visible unless user mouse over on the content. To turn off the
 floating scrollbar and use original scrollbar, please add the following
 configuration in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.nativebar</name>
     <value>true</value>
@@ -611,9 +601,9 @@ configuration in zk.xml.
 In addition to column headers, you can specify auxiliary headers with
 the `auxhead` and `auxheader` components as follows.
 
-![](images/ZKComRef_Grid_AuxiliaryHeaders.png)
+![](/zk_component_ref/images/ZKComRef_Grid_AuxiliaryHeaders.png)
 
-``` xml
+```xml
 <grid>
     <auxhead>
         <auxheader label="H1'07" colspan="6"/>
@@ -653,7 +643,7 @@ Unlike `column`/`columns`, which can only be used with `grid`,
 ## The Limitation of rowspan
 
 For better performance, every instance of
-[Column](ZK_Component_Reference/Data/Grid/Column) will create
+[Column]({{site.baseurl}}/zk_component_ref/column) will create
 an invisible HTML TH element called *faker*. However, with some complex
 combination of `rowspan` and `colspan`, Grid might not be able to
 generate the correct number of *faker* to represent each column.
@@ -661,7 +651,7 @@ generate the correct number of *faker* to represent each column.
 For example, it is wrong if the number of the column components are not
 the same as the number of columns in each row as shown below:
 
-``` xml
+```xml
 <grid width="200px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -680,21 +670,21 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-![](images/Auxheader_rowspan_limitation01.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
 add an empty
-[Columns](ZK_Component_Reference/Data/Grid/Columns). For
+[Columns]({{site.baseurl}}/zk_component_ref/columns). For
 example, the code in the previous example can be fixed as follows:
 
-``` xml
+```xml
 <grid width="200px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -714,7 +704,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation02.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component will
 depend the Column component. Thus, if you'd like to specify the width in
@@ -722,7 +712,7 @@ the Column component, please note that it will take some space even if
 there are no label in all Column components. The workaround is simple:
 make the empty Columns component invisible. For example,
 
-``` xml
+```xml
 <grid width="350px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -747,7 +737,7 @@ make the empty Columns component invisible. For example,
 </grid>
 ```
 
-![](images/Auxheader_rowspan_limitation03.jpg)
+![](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
 
 # Properties
 
@@ -767,14 +757,14 @@ specifying `sizedByContent` a grid for a much more predictable result.
 By default, when sizedByContent is true, a column only takes the
 required space.
 
-![](images/ZKComRef_Grid_Nospan.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Nospan.png)
 
 If you want to span the width of the columns to occupy the whole grid,
 you could specify true to this attribute
 
-![](images/ZKComRef_Grid_Span.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Span.png)
 
-``` xml
+```xml
     <grid sizedByContent="true" span="true" width="800px">
         <columns>
             <column label="Time Message" />
@@ -805,7 +795,7 @@ either one of them.
 {% include version-badge.html version=5.0.7 %} Specify a string at this attribute to
 show a message when a Grid has no items.
 
-``` xml
+```xml
         <grid emptyMessage="No items match your search">
         </grid>
 ```
@@ -817,7 +807,7 @@ If you allow users to resize the width of your columns, you can set the
 resize the widths of columns by dragging the border between adjacent
 `column` components.
 
-``` xml
+```xml
 <window>
     <grid>
         <columns id="cs" sizable="true">
@@ -874,7 +864,7 @@ is omitted, 1 is assumed.
 
 For example,
 
-``` xml
+```xml
 <grid>
     <columns>
         <column label="Left" align="left"/><column label="Center" align="center"/>
@@ -919,7 +909,7 @@ After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Grid's header out of visible range in a viewport, the Grid's
 header becomes floating and sticky on the top of the page.
 
-``` xml
+```xml
   <grid sclass="z-sticky-header">
     <!-- columns, rows... -->
   </grid>
@@ -927,12 +917,14 @@ header becomes floating and sticky on the top of the page.
 
 # Master Detail
 
-{% include edition-availability.html edition=ee %} Grid supports master-detail layout which enables
+{% include edition-availability.html edition=ee %} 
+Grid supports master-detail layout which enables
 developers to add more information on each row. For example,
 
-![](images/ZKComRef_Grid_Detail.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
 
-``` xml
+
+```xml
     <rows>
         <row>
             <detail open="true">
@@ -945,16 +937,16 @@ developers to add more information on each row. For example,
 ```
 
 - For further details, please refer to [ Detail
-  component](ZK_Component_Reference/Data/Grid/Detail)
+  component]({{site.baseurl}}/zk_component_ref/detail)
   directly.
 
 # Columns Menu
 
 For example,
 
-![](images/ZKComRef_Grid_Columns_Menu.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
 
-``` xml
+```xml
 <zk>
     <grid>
         <columns menupopup="auto">
@@ -969,7 +961,7 @@ For example,
 ```
 
 - For further details, please refer to [ Columns
-  component](ZK_Component_Reference/Data/Grid/Columns)
+  component]({{site.baseurl}}/zk_component_ref/columns)
   directly.
 
 ## Ungroup Column Menu
@@ -978,7 +970,7 @@ When the user groups the content of the grid, the column's menu will
 show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
 include version-badge.html version=6.5.0 %}
 
-![](images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
 
 **Note:** If the Grid contains with Model, *GroupsModel*, you have to
 register an *onUngroup* event for column to show an ungroup icon and
@@ -986,7 +978,7 @@ then replace the current model with a *ListModel* to reset the group.
 
 For example,
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
   int cnt = 0;
@@ -1037,7 +1029,7 @@ and the style. You can now use the rowspan or the colspan property to
 layout your Grid, for example a content cell can now cross over multiple
 rows. The code below demonstrates how to do this:
 
-``` xml
+```xml
 <row>
     <cell sclass="years" rowspan="12">
         ...
@@ -1048,7 +1040,7 @@ rows. The code below demonstrates how to do this:
 {% include version-badge.html version=5.0.0 %}
 
 - For further details, please refer to [ Cell
-  component](ZK_Component_Reference/Supplementary/Cell)
+  component]({{site.baseurl}}/zk_component_ref/cell)
   directly.
 
 # Group Component
@@ -1058,9 +1050,9 @@ to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
 <javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
 
-![](images/ZKComRef_Grid_Grouping.png)
+![](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
 
-``` xml
+```xml
 <zk>
     <zscript>
     import org.zkoss.zkdemo.userguide.*;
@@ -1125,15 +1117,14 @@ supported in Grouping Grid, and Listbox with the
 
 For more information, please take a look at these smalltalks,
 
-- [ Learn About Grouping with Listbox and
-  Grid](Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
+- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
 - [ About How Grouping Works with Live
-  Data](Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+  Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
 - [ Add Summary Field For
-  Grouping](Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+  Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
 Or refer to [ Group
-component](ZK_Component_Reference/Data/Grid/Group) directly.
+component]({{site.baseurl}}/zk_component_ref/group) directly.
 
 # Frozen Component
 
@@ -1143,7 +1134,7 @@ components easier to read, interpret and handle.
 
 The following code demonstrates how to freeze a column within a Grid:
 
-``` xml
+```xml
 <grid>
     <frozen style="background: #dfded8" columns="3">
         ...
@@ -1154,7 +1145,7 @@ The following code demonstrates how to freeze a column within a Grid:
 {% include version-badge.html version=5.0.0 %}
 
 - For further details, please refer to [ Frozen
-  component](ZK_Component_Reference/Supplementary/Frozen)
+  component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Custom Attributes
@@ -1166,7 +1157,7 @@ The following code demonstrates how to freeze a column within a Grid:
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand).
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
 
 ## org.zkoss.zul.grid.autoSort
 
@@ -1262,7 +1253,7 @@ is enabled and user changed the size of the content.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -1285,20 +1276,20 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/grid_mold_default.png)</td>
+<td>![](/zk_component_ref/images/grid_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](images/grid_mold_paging.png)</td>
+<td>![](/zk_component_ref/images/grid_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>
 
 # Supported Children
 
-`*`[` Columns`](ZK_Component_Reference/Data/Grid/Columns)`, `[` Rows`](ZK_Component_Reference/Data/Grid/Rows)`, `[` Foot`](ZK_Component_Reference/Data/Grid/Foot)
+`*`[` Columns`]({{site.baseurl}}/zk_component_ref/columns)`, `[` Rows`]({{site.baseurl}}/zk_component_ref/rows)`, `[` Foot`]({{site.baseurl}}/zk_component_ref/foot)
 
 # Version History
 
@@ -1321,7 +1312,7 @@ zul.jar.
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
 
 [^2]: `Same as above.`
 

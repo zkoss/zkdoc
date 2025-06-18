@@ -1,4 +1,4 @@
-``` java
+```java
 Class isInstance(Object class, Object value);
 ```
 

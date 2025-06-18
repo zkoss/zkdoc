@@ -18,7 +18,7 @@ Servlet 2.4 or later), and web.servlet-2.3.xml (for servers supporting
 only Servlet 2.3). You could copy one of them instead of creating from
 scratch.
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"

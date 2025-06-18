@@ -21,9 +21,9 @@ min property.
 
 # Example
 
-![](images/ZKComRef_Rangeslider.png)
+![](/zk_component_ref/images/ZKComRef_Rangeslider.png)
 
-``` xml
+```xml
   <rangeslider startValue="10" endValue="90"/>
 
   <rangeslider orient="vertical" startValue="20" endValue="80" markScale="20" />
@@ -64,7 +64,7 @@ minimum value. (if min is 0, then it displays "0 20 40 ...")
 If the MarkScale is 0 and there is no Map information in Marks (see
 above), the marks will be empty.
 
-![](images/ZKComRef_RangesliderNoMarks.png)
+![](/zk_component_ref/images/ZKComRef_RangesliderNoMarks.png)
 
 ## Max
 
@@ -129,7 +129,7 @@ user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -9,7 +9,7 @@ between all binders.
 
 Sample usage: add the following settings in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.appConverters</name>
     <value>foo=my.FooConverter,bar=my.BarConverter</value>
@@ -18,7 +18,7 @@ Sample usage: add the following settings in zk.xml:
 
 Then use them by converter name.
 
-``` xml
+```xml
 <label value="@load(vm.message) @converter('foo')"/>
 <label value="@load(vm.message) @converter('bar')"/>
 ```

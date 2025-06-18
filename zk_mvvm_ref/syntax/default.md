@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @Default("defaultValue")
 ```
 
@@ -20,13 +20,13 @@ Example
 =======
 
 #### Pass parameter from a zul
-``` xml
+```xml
 <button id="first" onClick="@command('cmd', arg2=100)"/>
 <button id="second" onClick="@command('cmd')"/>
 ```
 
 #### Example to assign default value
-``` java
+```java
 @Command
 public void cmd(@Default("false") Boolean arg1, @BindingParam("arg2") @Default("3") Integer arg2) {
     // method body

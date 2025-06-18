@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Fusionchart</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
-- Style Guide: N/A
+
 - {% include edition-availability.html edition="pe" %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the
   3rd party library that it's based on - Fusioncharts free, has moved
@@ -136,9 +136,9 @@ Chart component.
 
 #### Vertical Bar Chart
 
-![](images/Barchart_2d.png)
+![](/zk_component_ref/images/Barchart_2d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.BarchartComposer">
         <fusionchart id="mychart" title="Bar Chart" type="bar" width="500" height="250" />
@@ -146,7 +146,7 @@ Chart component.
 </zk>
 ```
 
-``` java
+```java
 public class BarchartComposer extends SelectorComposer<Div> {
     
     @Wire
@@ -172,9 +172,9 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 #### Horizontal Bar Chart
 
-![](images/Barchart_2d_h.png)
+![](/zk_component_ref/images/Barchart_2d_h.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.BarchartComposer">
         <fusionchart id="mychart" title="Horizontal Bar Chart" type="bar" orient="horizontal" width="500" height="250" />
@@ -182,7 +182,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class BarchartComposer extends SelectorComposer<Div> {
     
     @Wire
@@ -208,9 +208,9 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 ### 3D Vertical Bar Chart
 
-![](images/Barchart_3d.png)
+![](/zk_component_ref/images/Barchart_3d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.BarchartComposer">
         <fusionchart id="mychart" title="3D Bar Chart" type="bar" threeD="true" width="500" height="250" />
@@ -218,7 +218,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class BarchartComposer extends SelectorComposer<Div> {
     
     @Wire
@@ -248,7 +248,7 @@ You could set the color of all categories in the CategoryChartConfig,
 here's a sample code for setting first one and second one to different
 color .
 
-``` java
+```java
     CategoryChartConfig config = new CategoryChartConfig();
         config.setAnimation(false);  //You could turn off the animation ,which default is enabled.
 
@@ -265,13 +265,13 @@ color .
 ```
 
 The color is changed after we set the config ,here's the demo image.
-![](images/Fusionchart_barchartconfig.png)
+![](/zk_component_ref/images/Fusionchart_barchartconfig.png)
 
 ## Line Chart
 
-![](images/Linechart.png)
+![](/zk_component_ref/images/Linechart.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.LinechartComposer">
         <fusionchart id="mychart" title="Line Chart" type="line" width="500" height="250" />
@@ -279,7 +279,7 @@ The color is changed after we set the config ,here's the demo image.
 </zk>
 ```
 
-``` java
+```java
 public class LinechartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -325,7 +325,7 @@ public class LinechartComposer extends SelectorComposer<Div> {
 
 #### Line Chart Configurations
 
-``` java
+```java
         CategoryChartConfig config = new CategoryChartConfig();
         config.setAnimation(false);  //You could turn off the animation ,which default is enabled.
         config.getChartProperties().addProperty("rotateNames", "1"); 
@@ -346,9 +346,9 @@ public class LinechartComposer extends SelectorComposer<Div> {
 
 ### 2D Pie Chart
 
-![](images/Piechart_2d.png)
+![](/zk_component_ref/images/Piechart_2d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.PiechartComposer">
         <fusionchart id="mychart" title="2D Pie Chart" type="pie" width="500" height="250" />
@@ -356,7 +356,7 @@ public class LinechartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class PiechartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -379,9 +379,9 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ### 3D Pie Chart
 
-![](images/Piechart_3d.png)
+![](/zk_component_ref/images/Piechart_3d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.PiechartComposer">
         <fusionchart id="mychart" title="3D Pie Chart" type="pie" threeD="true" width="500" height="250" />
@@ -389,7 +389,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class PiechartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -414,9 +414,9 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 `{% include version-badge.html version=6.5.3 %}`
 
-![](images/Funnelchart.png)
+![](/zk_component_ref/images/Funnelchart.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.FunnelchartComposer ">
         <fusionchart id="mychart" width="550" height="400" type="funnel" />
@@ -424,7 +424,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class FunnelchartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -453,9 +453,9 @@ public class FunnelchartComposer extends SelectorComposer<Div> {
 
 ### 2D Combination Chart
 
-![](images/Combinationchart_2d.png)
+![](/zk_component_ref/images/Combinationchart_2d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.CombinationchartComposer">
         <fusionchart id="mychart" title="2D Combination Charts" type="combination" width="500" height="250" />
@@ -463,7 +463,7 @@ public class FunnelchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class CombinationchartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -502,9 +502,9 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 3D Combination Chart
 
-![](images/Combinationchart_3d.png)
+![](/zk_component_ref/images/Combinationchart_3d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.CombinationchartComposer">
         <fusionchart id="mychart" title="3D Combination Charts" type="combination" threeD="true" width="500" height="250" />
@@ -512,7 +512,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class CombinationchartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -553,9 +553,9 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 2D Stacked Chart
 
-![](images/Stackedchart_2d.png)
+![](/zk_component_ref/images/Stackedchart_2d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.StackedchartComposer">
         <fusionchart id="mychart" title="2D Stacked Charts" type="stacked_bar" width="500" height="250" />
@@ -563,7 +563,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class StackedchartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -590,9 +590,9 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ### 3D Stacked Chart
 
-![](images/Stackedchart_3d.png)
+![](/zk_component_ref/images/Stackedchart_3d.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.StackedchartComposer">
         <fusionchart id="mychart" title="3D Stacked Charts" type="stacked_bar" threeD="true" width="500" height="250" />
@@ -600,7 +600,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class StackedchartComposer extends SelectorComposer<Div> {
 
     @Wire
@@ -627,9 +627,9 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ## Area Chart
 
-![](images/Areachart.png)
+![](/zk_component_ref/images/Areachart.png)
 
-``` xml
+```xml
 <zk>
     <window border="none"  apply="demo.AreachartComposer">
         <fusionchart id="mychart" title="Area Charts" type="area" width="500" height="250" />
@@ -637,7 +637,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class AreachartComposer extends SelectorComposer<Div> {
     @Wire
     private Fusionchart mychart;
@@ -663,9 +663,9 @@ public class AreachartComposer extends SelectorComposer<Div> {
 
 ## Gantt Chart
 
-![](images/Gantt.png)
+![](/zk_component_ref/images/Gantt.png)
 
-``` xml
+```xml
 <zk>
     <div  apply="demo.GanttchartComposer">
         <fusionchart id="mychart" title="Gantt Chart" type="gantt" width="500" height="250" />
@@ -673,7 +673,7 @@ public class AreachartComposer extends SelectorComposer<Div> {
 </zk>
 ```
 
-``` java
+```java
 public class GanttchartComposer extends SelectorComposer<Div> {
     @Wire
     private Fusionchart mychart;
@@ -722,7 +722,7 @@ from event object, including clicked series, category, and value.
 The following sample will show how to get an event object and display
 information on a message dialog.
 
-``` java
+```java
 public class FusionchartComposer extends SelectorComposer<Div> {
     @Wire
     private Fusionchart mychart;

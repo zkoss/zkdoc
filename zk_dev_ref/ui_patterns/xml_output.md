@@ -13,9 +13,9 @@ Using ZK to generate XML output is straightforward:
 3.  Maps the file extension to the XML component set
 
 The XML component set also provides some special components, such as
-[transformer](ZK_Component_Reference/XML_Components/Transformer)
+[transformer]({{site.baseurl}}/zk_component_ref/xml_components/transformer)
 that supports XSTL. For more information please refer to [XML
-Components](ZK_Component_Reference/XML_Components).
+Components]({{site.baseurl}}/zk_component_ref/xml_components).
 
 # Use the XML Component Set
 
@@ -33,9 +33,9 @@ The following is an example that generates the SVG output. It looks very
 similar to the XML output you want to generate, except you can use
 zscript, EL expressions, macro components and other ZK features.
 
-![]({{site.baseurl}}/zk_dev_ref/images/XML_SVG.png)
+![]({{site.baseurl}}/zk_dev_ref/images/xml_svg.png)
 
-``` xml
+```xml
  <?page contentType="image/svg+xml;charset=UTF-8"?>
  <svg  height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
  xmlns:z="zk">
@@ -52,7 +52,7 @@ zscript, EL expressions, macro components and other ZK features.
 
 The generated output will be
 
-``` xml
+```xml
 <svg xmlns="http://www.w3.org/2000/svg"  height="100%"
     version="1.1">
     <circle style="fill:purple" cx="80" cy="50" r="30">
@@ -94,7 +94,7 @@ To let ZK Loader process the file, you have to associate it with the ZK
 Loader in `WEB-INF/web.xml`. In this example, we map all files with the
 `.svg` extension to ZK Loader[^2]:
 
-``` xml
+```xml
  <servlet-mapping>
      <servlet-name>zkLoader</servlet-name>
      <url-pattern>*.svg</url-pattern>
@@ -112,7 +112,7 @@ XML component set (aka., the XML language) explicitly in
 `WEB-INF/zk.xml`. In this example, we map `.svg` to the XML component
 set:
 
-``` xml
+```xml
  <language-mapping>
      <language-name>xml</language-name>
      <extension>svg</extension>

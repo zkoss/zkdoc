@@ -14,9 +14,9 @@ Starting from this chapter, we will show how to implement an example
 application using both the MVC and MVVM approaches. If you are not
 familiar with these two approaches, we suggest that you read [ Get ZK Up
 and Running with
-MVC]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVC) and [
+MVC]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc) and [
 Get ZK Up and Running with
-MVVM]({{site.baseurl}}/get_started/Get ZK Up_and_Running_with_MVVM).
+MVVM]({{site.baseurl}}/get_started/get ZK Up_and_Running_with_MVVM).
 These two approaches are mutually interchangeable. You can choose one of
 them depending on your situation. Please refer to [ Approach
-Comparison]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM#Approach_Comparison).
+Comparison]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm#Approach_Comparison).

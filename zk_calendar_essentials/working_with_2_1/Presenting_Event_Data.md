@@ -4,7 +4,7 @@ a fully working readonly calendar which creates random events when the
 button is clicked. This gives a full example using a memory model with
 ZK Calendar.
 
-``` java
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <zk xmlns="http://www.zkoss.org/2005/zul">
     <window height="100%" >
@@ -70,4 +70,4 @@ ZK Calendar.
 
 The above code's output is shown below.
 
-![](images/ZKCalEss_MemoryModelResult.png)
+![](/zk_calendar_essentials/images/ZKCalEss_MemoryModelResult.png)

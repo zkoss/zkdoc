@@ -45,7 +45,7 @@ session's attributes or application's attributes.
 The registration in `WEB-INF/zk.xml` is the same, no matter what
 interface you implement:
 
-``` xml
+```xml
 <listener>
     <listener-class>my.MyImplementation</listener-class>
 </listener>
@@ -54,6 +54,6 @@ interface you implement:
 The registration in Java is done by
 <javadoc method="addListener(java.lang.Class)">org.zkoss.zk.ui.util.Configuration</javadoc>.
 
-``` java
+```java
 webapp.getConfiguration().addListener(my.MyImplementation.class);
 ```

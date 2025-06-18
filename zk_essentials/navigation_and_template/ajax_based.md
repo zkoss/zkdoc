@@ -21,7 +21,7 @@ group of components instead of whole page and therefore has faster
 response than page-based one. But it doesn't change a browser's URL when
 each time switching to a different function. However, if you want users
 can keep track of different functions with bookmark, please refer to [
-Browser History Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_History_Management).
+Browser History Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management).
 
 We will demonstrate AJAX-based navigation with the same layout example.
 
@@ -71,7 +71,7 @@ still need to initialize sidebar configuration:
 
 **AJAX-based navigation's sidebar configuration**
 
-``` java
+```java
 public class SidebarPageConfigAjaxbasedImpl implements SidebarPageConfig{
 
     HashMap<String,SidebarPage> pageMap = new LinkedHashMap<String,SidebarPage>();

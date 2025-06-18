@@ -14,12 +14,12 @@ main window rather than register to both the menu item and button.
 
 Forwarding an event is straightforward: just posting or sending the
 event again. However, there is a better way:
-[composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
+[composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 The composer can be the central place to handle the events. For example,
 you could invoke `openDialog` in the event handler for the menu item and
 button as shown below:
 
-``` java
+```java
 public class FooComposer extends SelectorComposer {
    @Listen("onClick = menuitem#item1; onClick = button#btn")
    private void openDialog() {
@@ -34,7 +34,7 @@ Event forwarding can be done with [the forward
 attribute](ZUML_Reference/ZUML/Attributes/forward) in ZUML.
 For example,
 
-``` xml
+```xml
 <window id="mywin">
     <button label="Save" forward="onSave"/>
     <button label="Cancel" forward="onCancel"/>
@@ -50,14 +50,14 @@ event and the component. For example, `window` needs only to handle the
 could introduce another UI to trigger onSave without modifying the event
 listener. For example,
 
-``` xml
+```xml
     <menuitem label="Save" forward="onSave"/>
 ```
 
 Of course, you can use the composer and ZUML's forward together to have
 more maintainable code.
 
-``` java
+```java
 public class BetterComposer
 extends org.zkoss.zk.ui.select.SelectorComposer {
     @Listen("onSave = #mywin")
@@ -77,15 +77,15 @@ retrieve the original event, you could invoke
 ## Using a component Path
 
 You can also use a component
-[Path]({{site.baseurl}}/zk_dev_ref/Access_UI_Components_with_Path)
+[Path]({{site.baseurl}}/zk_dev_ref/access_ui_components_with_path)
 within your ZUML pages to specify a target component to which you would
 like to forward a specific event. This is especially useful if you want
 to forward events across different
-[IdSpace]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space)
+[IdSpace]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space)
 such as forwarding events from a component in an included ZUML page to
 the main page component. For example,
 
-``` xml
+```xml
 <?page id="mainPage" ?>
 <window id="mainWindow" apply="BetterComposer">
 ...
@@ -95,10 +95,10 @@ the main page component. For example,
 ```
 
 Now in your included page use
-[Path]({{site.baseurl}}/zk_dev_ref/Access_UI_Components_with_Path)
+[Path]({{site.baseurl}}/zk_dev_ref/access_ui_components_with_path)
 while forwarding events to mainWindow `Window` component.
 
-``` xml
+```xml
    <button forward="//mainPage/mainWindow.onSave" /> <!-- default forward event is onClick -->
 ```
 
@@ -107,7 +107,7 @@ while forwarding events to mainWindow `Window` component.
 You can specify any application-specific data in the forward attribute
 by surrounding it with the parenthesis as shown below:
 
-``` xml
+```xml
  <button forward="onCancel(abort)"/><!-- "abort" is passed -->
  <button forward="onPrint(${inf})"/><!-- the object returned by ${inf} is passed -->
 ```
@@ -120,7 +120,7 @@ ZK MVC controller, you have to get the original event by using
 **getOrigin()**, then you can access the data by **getData()**  
 \*Example : ZUL
 
-``` xml
+```xml
 <tabbox id="ctrl" apply="composer1">
   <tabs>
      <tab id="tb1" label="News" forward="ctrl.onSelectTab(0)"></tab>
@@ -131,7 +131,7 @@ ZK MVC controller, you have to get the original event by using
 
 - Example Composer (composer1)
 
-``` java
+```java
     @Listen("onSelectTab = #ctrl")
     public void doChangeTab(ForwardEvent e) { 
         MouseEvent me = (MouseEvent) e.getOrigin();
@@ -145,7 +145,7 @@ If you want to forward several events at once, you can specify them in
 the forward attribute by separating them with commas **`,`**. For
 example,
 
-``` xml
+```xml
  <textbox forward="onChanging=onUpdating, onChange=some.onUpdate"/>
 ```
 

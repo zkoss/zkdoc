@@ -8,7 +8,7 @@ The component’s Java class must extend
 derivative classes. There are several derived classes all providing
 different levels of functionality. The derived classes are shown below.
 
-![](images/ZKComDevEss_component_hierarchy.png")
+![](images/ZKComDevEss_component_hierarchy.png)
 
 For tutorial purpose, we use
 <javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>, which is the base

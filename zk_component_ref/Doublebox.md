@@ -6,8 +6,7 @@
   [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Doublebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Doublebox</javadoc>
-- Style Guide: [
-  Doublebox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Doublebox)
+
 
 # Employment/Purpose
 
@@ -17,7 +16,7 @@ An edit box for holding an float point value (double).
 
 ![](/zk_component_ref/images/ZKComRef_Doublebox_Examples.PNG)
 
-``` xml
+```xml
  <doublebox value="2.3"/>
 ```
 
@@ -28,7 +27,7 @@ An edit box for holding an float point value (double).
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <doublebox format="#,##0.##"/>
 ```
 
@@ -37,7 +36,7 @@ with a formatting string. The default value is `null`.
 You can provide a locale to format the number by specify the String
 starts with "locale:"
 
-``` xml
+```xml
 <doublebox format="locale:zh-TW"/>
 ```
 
@@ -50,14 +49,14 @@ the `constraint`property. It could be a combination of `no positive`,
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <doublebox constraint="no negative,no empty"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <doublebox constraint="no negative: it shall not be negative"/>
 ```
 
@@ -68,14 +67,14 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <doublebox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -100,7 +99,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

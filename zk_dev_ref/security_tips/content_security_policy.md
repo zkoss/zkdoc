@@ -55,13 +55,13 @@ execution contexts.
 
 1\. Only allows loading resources from the same origin.
 
-``` xml
+```xml
 default-src 'self';
 ```
 
 2\. Allows loading scripts from the same origin and Google Analytics.
 
-``` xml
+```xml
 script-src 'self' www.google-analytics.com;
 ```
 
@@ -73,7 +73,7 @@ when loading scripts and CSS files. However, you can still use CSP in ZK
 to enhance supported parts and make your application safer than before.
 Here's an example of a relaxed policy used in a ZK application:
 
-``` xml
+```xml
 <?header name="Content-Security-Policy-Report-Only"
         value="default-src 'none';
         script-src 'self' 'unsafe-inline' 'unsafe-eval';

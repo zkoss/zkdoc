@@ -29,14 +29,14 @@ This chapter shares with you what the ZK framework has done in terms of
 accessibility in general, and how you can specify additional
 application-specific accessible information. For the details of each
 component, please refer to [ZK Component
-Reference/Accessibility](ZK_Component_Reference/Accessibility).
+Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility).
 
 # Enable Accessibility Support
 
 ZK accessibility module is a separate, optional jar, you have to include
 it manually to enable it.
 
-``` xml
+```xml
         <dependency>
             <groupId>org.zkoss.zk</groupId>
             <artifactId>za11y</artifactId>
@@ -59,21 +59,21 @@ developer tool to inspect the widget.
 
 **textbox.zul**
 
-``` xml
+```xml
 <textbox />
 ```
 
 Visit the zul page and inspect the textbox with a browser developer
 tool, you will see some aria attributes rendered:
 
-``` html
+```html
 <input id="h5AP0" class="z-textbox" type="text" 
        aria-disabled="false" aria-readonly="false">
 ```
 
 Some components render special ARIA attributes, please refer to [ZK
 Component
-Reference/Accessibility](ZK_Component_Reference/Accessibility).
+Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility).
 
 # Specify ARIA Attributes
 
@@ -82,7 +82,7 @@ You can specify arbitrary ARIA attribute as needed on a component with
 "client/attribute"](https://www.zkoss.org/wiki/ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 like:
 
-``` xml
+```xml
 <zk  xmlns:ca="client/attribute">
     <div ca:aria-hidden="true"/>
     <textbox ca:aria-label="${field}"/>
@@ -96,7 +96,7 @@ There are 3 ways to associate an input component with a label:
 
 ## Enclose with a label
 
-``` xml
+```xml
 <zk xmlns:h="native" xmlns:ca="client/attribute">
     <h:label>Address
         <textbox/>
@@ -105,7 +105,7 @@ There are 3 ways to associate an input component with a label:
 
 ## Specify at aria-label
 
-``` xml
+```xml
 <zk xmlns:h="native" xmlns:ca="client/attribute">
     <custom-attributes field="Account:"/>
     ${field}
@@ -114,7 +114,7 @@ There are 3 ways to associate an input component with a label:
 
 ## Specify at aria-labelledby
 
-``` xml
+```xml
 <zk xmlns:h="native" xmlns:ca="client/attribute">
     <label value="price" id="priceLabel"/>
     <textbox ca:aria-labelledby="${priceLabel.uuid}"/>
@@ -131,7 +131,7 @@ mouse/touch support, landmarks and so on.
 
 [Check demo source at Github](https://github.com/zkoss-demo/za11y-demo)
 
-![]({{site.baseurl}}/zk_dev_ref/images/Wcag_demo.png)
+![]({{site.baseurl}}/zk_dev_ref/images/wcag_demo.png)
 
 # Screen Reader
 

@@ -12,7 +12,7 @@ files identified as
 and then use [the l
 function](ZUML_Reference/EL_Expressions/Core_Methods/l).
 
-``` xml
+```xml
  <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
  <window title="${c:l('my.title')}">
  ...
@@ -23,7 +23,7 @@ If you want to load a TLD file from your Web application, you can
 specify the path directly. For example, suppose you have a custom TLD at
 `/WEB-INF/tld/my.tld`, then you could specify it as follows.
 
-``` xml
+```xml
  <?taglib uri="/WEB-INF/tld/my.tld" prefix="my"?>
 <listbox>
     <listitem label="${each.name}" forEach="${my:getCustomers()}"/>

@@ -1,7 +1,7 @@
 
 
 If you are not familiar with XML, please take a look at [XML
-Background]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/XML_Background)
+Background]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_background)
 first.
 
 # An XML Element Represents a Component
@@ -11,7 +11,7 @@ like \<zk\> and \<attribute\>. Thus, the following example will cause
 three components (window, textbox and button) to be created when ZK
 Loader processes it.
 
-``` xml
+```xml
 <window>
   <textbox/>
   <button/>
@@ -28,7 +28,7 @@ textbox is the first child and button is the second.
 There are a few elements dedicated to special functionality rather than
 a component. For example,
 
-``` xml
+```xml
  <zk>...</zk>
 ```
 
@@ -38,7 +38,7 @@ component (say, `hbox` or `div`), it is not part of the component tree
 being created. In other words, it does not represent any components. For
 example,
 
-``` xml
+```xml
  <window>
      <zk if="${whatever}">
          <textbox/>
@@ -49,7 +49,7 @@ example,
 
 is equivalent to
 
-``` xml
+```xml
  <window>
      <textbox if="${whatever}"/>
      <textbox if="${whatever}"/>
@@ -70,7 +70,7 @@ precisely,
 <javadoc method="setTitle(java.lang.String)">org.zkoss.zul.Window</javadoc>
 will be called with the argument `"Hello"`.
 
-``` xml
+```xml
 <window title="Hello"/>
 ```
 
@@ -78,7 +78,7 @@ Like JSP, you could use EL for the value of any attributes. The
 following example assigns the value of the request parameter called name
 to window's title.
 
-``` xml
+```xml
 <window title="${param.name}"/>
 ```
 
@@ -91,7 +91,7 @@ If the attribute name starts with `on` and the third letter is
 uppercase, an event listener is assigned. For example, we can register
 an event listener to handle the onClick event as follows:
 
-``` xml
+```xml
 <button onClick="do_something_in_Java())"/>
 ```
 
@@ -100,7 +100,7 @@ interpreted[^1] when the event is received. You could specify different
 languages by prefixing the language name. For example, we could write
 the event listener in Groovy as follows.
 
-``` xml
+```xml
 <vlayout onClick="groovy:self.appendChild(new Label('New'));">
 Click me!
 </vlayout>
@@ -118,7 +118,7 @@ forEach attribute is used to specify a collection of objects such that
 the XML element it belongs will be evaluated repeatedly for each object
 of the collection.
 
-``` xml
+```xml
 <listbox>
     <listitem forEach="${customers}" label="${each.name}"/>
 </listbox>
@@ -126,7 +126,7 @@ of the collection.
 
 For more information about special attributes, please refer to the
 [Iterative
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation)
 section and the [ZUML
 Reference](ZUML_Reference/ZUML/Attributes)
 
@@ -135,7 +135,7 @@ Reference](ZUML_Reference/ZUML/Attributes)
 In general, an XML text is interpreted as a label component. For
 example,
 
-``` xml
+```xml
 <window>
   Begin ${foo.whatever}
 </window>
@@ -143,7 +143,7 @@ example,
 
 is equivalent to
 
-``` xml
+```xml
 <window>
   <label value="Begin ${foo.whatever}"/>
 </window>
@@ -156,13 +156,13 @@ element can be interpreted as the value of a component's particular
 property. For example, <javadoc>org.zkoss.zul.Html</javadoc> is one of
 these kinds of components, and
 
-``` xml
+```xml
 <html>Begin ${foo.whatever}</html>
 ```
 
 is equivalent to
 
-``` xml
+```xml
 <html content="Begin ${foo.whatever}"/>
 ```
 
@@ -178,7 +178,7 @@ Each XML processing instruction specifies the instruction on how to
 process the XML document. It is called directives in ZK. For example,
 the following specifies the page title and style.
 
-``` xml
+```xml
 <?page title="Grey background" style="background: grey"?>
 ```
 

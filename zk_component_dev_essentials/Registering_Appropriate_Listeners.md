@@ -13,7 +13,7 @@ so we need to register appropriate listeners in the bind\_ method and
 remove the listeners in the unbind\_ method to avoid any memory leak.
 Here is the code to do so.
 
-``` javascript
+```javascript
 bind_ : function(evt) {
         this.$supers('bind_', arguments);
         this.domListen_(this.$n().lastChild, "onClick", '_doClear');
@@ -42,7 +42,7 @@ we registered a callback named <mp>"\_doClear"</mp>. In this
 <mp>\_doClear</mp> method we need to clear/restore the text depending on
 the widget state and fire the onClear method. The code is as follows:
 
-``` javascript
+```javascript
 _doClear: function(evt) {
 
         this._cleared = !(this._cleared);

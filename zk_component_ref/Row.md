@@ -6,8 +6,7 @@
   Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Row</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Row</javadoc>
-- Style Guide: [
-  Row](ZK_Style_Guide/XUL_Component_Specification/Row)
+
 
 # Employment/Purpose
 
@@ -19,9 +18,9 @@ Default getSclass(): the same as grid's sclass.
 
 # Example
 
-![](images/ZKComRef_Grid_Example.png‎)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
 
-``` xml
+```xml
 <window title="Grid Demo" border="normal" width="360px">
     <zscript>
         class Comp implements Comparator {
@@ -90,7 +89,7 @@ Default getSclass(): the same as grid's sclass.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

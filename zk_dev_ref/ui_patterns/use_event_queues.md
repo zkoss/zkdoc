@@ -1,7 +1,7 @@
 
 
 The [event
-queue]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 provides a simple way to execute a so-called asynchronous event listener
 in parallel to other event listeners. Thus, it won't block the user from
 accessing other functions even if the asynchronous event listener takes
@@ -13,14 +13,14 @@ used in the environment that does not allow the use of working threads,
 such as [Google App Engine](http://code.google.com/appengine/).
 
 In addition, it will start [a server
-push]({{site.baseurl}}/zk_dev_ref/Server_Push) automatically to
+push]({{site.baseurl}}/zk_dev_ref/server_push) automatically to
 send the UI updates back when it is ready. If you prefer to use the
 client polling or a particular implementation, you could start it
 manually by use of
 <javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)" type="interface">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>,
 such as:
 
-``` java
+```java
 ((DesktopCtrl)desktop).enableServerPush(
     new org.zkoss.zk.ui.impl.PollingServerPush(2000,5000,-1));
 ```
@@ -47,7 +47,7 @@ update the result of the long operation back to the browser.
 
 For example,
 
-``` xml
+```xml
 <window title="test of long operation" border="normal">
     <html><![CDATA[
     <ul>
@@ -115,7 +115,7 @@ In addition, you don't need to publish an event at the end of the
 asynchronous event listener -- the synchronous event listener is invoked
 automatically.
 
-``` xml
+```xml
 <window title="test of long operation" border="normal">
     <zscript>
     void print(String msg) {
@@ -160,7 +160,7 @@ twice. If you prefer to simply disable the button, you could use
 <javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Button</javadoc>.
 For example,
 
-``` xml
+```xml
   <button label="async long op" autodisable="+self">
 ...
 ```
@@ -169,7 +169,7 @@ Then, the button will be disabled automatically when it is pressed.
 Notice that we prefix `self` with `+`, and it means you have to enable
 it manually (once it is OK to run again).
 
-``` java
+```java
 if (ready)
     button.setDisabled(false); //enable it when ready
 ```

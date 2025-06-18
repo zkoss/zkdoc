@@ -30,9 +30,9 @@ the line area contains the line and the point.
 
 # Example
 
-![](images/Linelayout-1.png)
+![](/zk_component_ref/images/Linelayout-1.png)
 
-``` xml
+```xml
   <zscript>
     ListModel model = new ListModelList(new String[] {
         "2019-Q1",
@@ -57,9 +57,9 @@ the line area contains the line and the point.
 Whether the linelayout displays vertically or horizontally. The default
 value is "vertical".
 
-![](images/Linelayout-3.png)
+![](/zk_component_ref/images/Linelayout-3.png)
 
-``` xml
+```xml
   <linelayout orient="horizontal" lineStyle="background:rgba(0,0,0,0.5)" >
     <lineitem>
       <label>8 am</label>
@@ -120,11 +120,11 @@ Please refer to FirstScale.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Lineitem`](ZK_Component_Reference/Layouts/Linelayout/Lineitem)
+`*`[` Lineitem`]({{site.baseurl}}/zk_component_ref/layouts/linelayout/lineitem)
 
 # Version History
 

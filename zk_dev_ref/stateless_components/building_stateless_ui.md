@@ -8,7 +8,7 @@ Filter in your `WEB-INF/web.xml` file.
 
 ## Including Required Jar
 
-``` groovy
+```groovy
 dependencies {
     implementation "org.zkoss.zk:stateless:${zkVersion}"
     ...
@@ -17,7 +17,7 @@ dependencies {
 
 ## Dispatcher Richlet Filter
 
-``` xml
+```xml
 <filter>
     <filter-name>DispatcherRichletFilter</filter-name>
     <filter-class>org.zkoss.stateless.ui.http.DispatcherRichletFilter</filter-class>
@@ -38,7 +38,7 @@ We will use the simple shopping cart application as an example to
 introduce the basic features of stateless components ([download the
 shopping cart example
 project](https://github.com/zkoss-demo/zk10-shopping-cart-demo)):
-![]({{site.baseurl}}/zk_dev_ref/images/Shoppingcart.png)
+![]({{site.baseurl}}/zk_dev_ref/images/shoppingcart.png)
 
 # Building UI with Richlet
 
@@ -55,7 +55,7 @@ will invoke the corresponding method.
 For example below, the `index()` URL will be **<protocal>://
 <host name: port> /shoppingCart**.
 
-``` java
+```java
     @RichletMapping("/shoppingCart")
     public class DemoRichlet implements StatelessRichlet {
         @RichletMapping("")
@@ -81,7 +81,7 @@ path appends to the class-level path.
 Hence, the final URL is the combination of the class-level path and
 method-level mapping one, for example:
 
-``` XML
+```xml
 http://localhost:8080/[CLASS_LEVEL PATH]/[METHOD_LEVEL PATH]
 ```
 
@@ -108,14 +108,14 @@ components:
 
 **Classic Component in ZK 9**
 
-``` java
+```java
 Button button = new Button("add items");
 button.setSclass("add-items");
 ```
 
 **Equivalent Stateless Component in ZK 10**
 
-``` java
+```java
 IButton.of("add items")
 .withSclass("add-items");
 ```
@@ -123,7 +123,7 @@ IButton.of("add items")
 Therefor, for the method with URL mapping, we should return a list of
 components like:
 
-``` java
+```java
     @RichletMapping("")
     public List<IComponent> index() {
         return asList(
@@ -141,7 +141,7 @@ components like:
 To wire an action handler method for an event, you need to call
 `withAction(ActionHandler action)` with a **public method** reference:
 
-``` java
+```java
 IButton.of("add item +")
     .withSclass("add-items")
     .withAction(ActionType.onClick(this::addItem)) 
@@ -174,7 +174,7 @@ will pass the corresponding parameters you specified.
   [ActionTarget](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/stateless/action/ActionTarget.html)
   for other targets.
 
-``` java
+```java
     public void addItem(@ActionVariable(targetId = ActionTarget.SELF, field = "id") String orderId) {
     }
 ```
@@ -185,7 +185,7 @@ will pass the corresponding parameters you specified.
 
 If you register an action handler on an input component like ICombobox:
 
-``` java
+```java
 ICombobox.of(initProductSize)
     .withReadonly(true)
     .withAction(ActionType.onChange(this::doSizeChange))
@@ -194,7 +194,7 @@ ICombobox.of(initProductSize)
 Declare `InputData` in the handler's signature, ZK will pass user input
 to you:
 
-``` java
+```java
 public void doSizeChange(InputData data, 
                          @ActionVariable(targetId = ActionTarget.PARENT, field = "id") String uuid){
     String value = data.getValue();
@@ -220,7 +220,7 @@ to manipulate by describing its location with `Locator`.
 
 ### By Component ID
 
-``` java
+```java
 Locator.ofId("myId")
 ```
 
@@ -231,7 +231,7 @@ action handler method signature, ZK will pass it to the method. For
 example, if I wire the method below with the spinner above for quantity
 change:
 
-``` java
+```java
 public void doQuantityChange(Self self,...)
 ```
 
@@ -241,7 +241,7 @@ public void doQuantityChange(Self self,...)
 
 If you have a Locator, you can find another component based on it like
 
-``` java
+```java
 self.nextSibling();
 self.closest() //find its parent component
 self.firstChild()
@@ -249,7 +249,7 @@ self.firstChild()
 
 ## Add Child Components
 
-``` java
+```java
 public void addItem(@ActionVariable(targetId = ActionTarget.SELF, field = "id") String id) {
     UiAgent.getCurrent()
            .appendChild(Locator.ofId(SHOPPING_CART_ROWS),
@@ -259,7 +259,7 @@ public void addItem(@ActionVariable(targetId = ActionTarget.SELF, field = "id") 
 
 ## Change a Component's Property
 
-``` java
+```java
 UiAgent.getCurrent()
     .smartUpdate(Helper.getPriceLocator(self), 
                  new ILabel.Updater().value(String.valueOf(price)))
@@ -271,7 +271,7 @@ UiAgent.getCurrent()
 
 The following code removes a component specified by `Locator`.
 
-``` java
+```java
     public void doDelete(@ActionVariable(targetId = ActionTarget.PARENT, field = "id") String id) {
         ...
         UiAgent.getCurrent().remove(Locator.ofId(id));
@@ -280,7 +280,7 @@ The following code removes a component specified by `Locator`.
 
 ### Clear Child Components
 
-``` java
+```java
 UiAgent.getCurrent()
     // empty the shopping cart rows
     .replaceChildren(Locator.ofId(SHOPPING_CART_ROWS))
@@ -292,7 +292,7 @@ Many users still prefer to build UI in a zul because it's more readable
 than java code. In a stateless richlet, zk also provides a way to build
 UI in a zul:
 
-``` java
+```java
 @RichletMapping("/zul")
 public class ZulRichlet implements StatelessRichlet {
     @RichletMapping("")
@@ -310,7 +310,7 @@ usage
 When using a zul, you need to apply `@Action` on a method instead of
 `withAction()` to wire an action hander:
 
-``` java
+```java
     @Action(from = "#calculate", type = Events.ON_CLICK)
     public void calculate(@ActionVariable(targetId = "firstMember") int firstMemberValue,
                           @ActionVariable(targetId = "secondMember") int secondMemberValue,
@@ -320,4 +320,4 @@ When using a zul, you need to apply `@Action` on a method instead of
 - Line 1: this line wires the method as an action handler for onClick
   event on a component whose id is `calculate`. Specify a component
   selector in `from`, e.g. `#calculate` is ID selector. see
-  [ZK_Developer%27s_Reference/MVC/Controller/Wire_Components#CSS3-like_Selectors](ZK_Developer%27s_Reference/MVC/Controller/Wire_Components#CSS3-like_Selectors)
+  [{{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components#CSS3-like_Selectors]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components#CSS3-like_Selectors)

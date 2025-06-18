@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ExecutionArgParam
 
 @ExecutionArgParam("keyString")
@@ -31,7 +31,7 @@ Example
 Assume we want to pass an argument to an included ZUL that uses a ViewModel: ` ExecutionParamVM`.
 
 #### outer ZUL
-``` xml
+```xml
 <window >
     <include arg1="foo" src="executionparam-inner.zul"/>
 </window>
@@ -39,7 +39,7 @@ Assume we want to pass an argument to an included ZUL that uses a ViewModel: ` E
 
 We use annotation to retrieve execution's argument with key "arg1".
 
-``` java
+```java
 public class ExecutionParamVM {
 
     private String arg1;
@@ -53,7 +53,7 @@ public class ExecutionParamVM {
 ```
 
 #### executionparam-inner.zul
-``` xml
+```xml
 <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ExecutionParamVM')">
     <label value="@load(vm.arg1)"/>
 </vbox>

@@ -67,20 +67,20 @@ the above registration form
 
 - Line 1: One tag represents one component. Some components can have
   child components. In this example, a *window* contains a *grid*.
-- Line 2: CSS flexible width, please see [Hflex and Vflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/Hflex_and_Vflex)
-- Line 4: ZK contains [Font Awesome icons]({{site.baseurl}}/zk_dev_ref/integration/Presentation_Layer/Font_Awesome) by default, you can
+- Line 2: CSS flexible width, please see [Hflex and Vflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
+- Line 4: ZK contains [Font Awesome icons]({{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome) by default, you can
   specify icon CSS class at `iconSclass`.
 - Line 18: You may give "id" attribute to a component, so you can
   control them in a Java controller.
 
 ZK also allows you to create UI programmatically like how you use Java
-Swing within a [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/Richlet).
+Swing within a [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet).
 
 ZK UI components are like building blocks; you can combine, mix-match,
 or inherit and make them into a new component to fulfill diverse
 requirements. This versatility increases reusability and modularity. See
-[ shadow elements]({{site.baseurl}}/zk_dev_ref/ui_composing/Shadow_for_MVC),
-[Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/Macro_Component).
+[ shadow elements]({{site.baseurl}}/zk_dev_ref/ui_composing/shadow_for_mvc),
+[Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
 
 # Intuitive UI Controlling
 
@@ -95,7 +95,7 @@ which inherits ZK's
 [**SelectorComposer**](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 for a ZUL. Then, you can retrieve the UI component's Java object by
 annotating [ **@Wire** on the controller's member
-variables]({{site.baseurl}}/zk_dev_ref/mvc/Controller/Wire_Components).
+variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
 After this has been done, you can then control and manipulate UI by
 accessing those annotated member variables.
 
@@ -121,7 +121,7 @@ public class RegistrationComposer extends SelectorComposer<Component> {
 We can then use the controller above to control our UI components by
 specifying attribute "apply" in the ZUL.
 
-``` xml
+```xml
     <window border="normal" width="400px" title="Welcome! New User"
     apply="org.zkoss.simple.RegistrationComposer">
     <!-- omit other components for brevity -->
@@ -142,7 +142,7 @@ beginning, and it is only enabled (clickable) when a user checks the
 As ZK is an event-driven framework, a user action is therefore handled
 by an event listener. ZK provides an annotation [ **@Listen** to
 register an event listener by selector
-syntax]({{site.baseurl}}/zk_dev_ref/mvc/Controller/Wire_Event_Listeners).
+syntax]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
 To achieve the above feature, you can annotate a method to listen to an
 "onCheck" event of "Accept Term of Use" checkbox. Whenever a user
 checks/unchecks the checkbox to trigger the "onCheck" event, ZK invokes
@@ -191,13 +191,13 @@ drag & drop, and hotkey, etc. to your application.
 What we have introduced so far is MVC pattern, which controls UI by
 components API. Another way is data binding, please see [ Get ZK Up and
 Running with
-MVVM]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM).
+MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm).
 
 # Support Responsive Design
 
 ZK provides various features for you to apply responsive design, please
 read [ Responsive
-Design]({{site.baseurl}}/zk_dev_ref/ui_patterns/Responsive_Design).
+Design]({{site.baseurl}}/zk_dev_ref/ui_patterns/responsive_design).
 
 # Easy Backend Integration
 
@@ -250,7 +250,7 @@ Hibernate, JPA or other persistence framework. It is in your controller
 that you should use these classes to implement your application's
 feature.
 
-``` java
+```java
 
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class RegistrationSpringComposer extends SelectorComposer<Component> {
@@ -277,7 +277,7 @@ public class RegistrationSpringComposer extends SelectorComposer<Component> {
 ZK provides a zkspringboot-starter addon to help you work with
 Springboot easily, please refer to [ Create and Run Your First ZK
 Application with Spring
-Boot]({{site.baseurl}}/zk_installation_guide/quick_start/Create_and_Run_Your_First_ZK_Application_with_Spring_Boot).
+Boot]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot).
 
 # Source Code
 
@@ -286,9 +286,9 @@ You can get the complete source code mentioned in this page at [github](https://
 
 # What's Next
 
-- [ Quick Start]({{site.baseurl}}/zk_installation_guide/Quick_Start)
+- [ Quick Start]({{site.baseurl}}/zk_installation_guide/quick_start)
   - Start to develop with ZK with your familiar tools including Eclipse,
     IntelliJ, Maven, Gradle, or Spring Boot.
-- [ Start in MVC pattern]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVC)
-- [ Start in MVVM pattern]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM)
+- [ Start in MVC pattern]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc)
+- [ Start in MVVM pattern]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm)
 - [ZK Demo](http://www.zkoss.org/zkdemo/)

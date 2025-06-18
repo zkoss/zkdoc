@@ -26,7 +26,7 @@ to your project's pom.xml.
 
 - <https://mavensync.zkoss.org/maven2>
 
-``` xml
+```xml
  <repositories>
     <repository>
       <id>ZK CE</id>
@@ -42,7 +42,7 @@ The evaluation version has the exactly same features as the official
 before you adopt the official ones. This can eliminate the potential
 technical problems in advance.
 
-``` xml
+```xml
  <repositories>
     <repository>
       <id>ZK PE/EE Evaluation</id>
@@ -55,7 +55,7 @@ technical problems in advance.
   Jul. 18 2014. If you use it, please specify the version to *\*-Eval*
   for all of ZK dependencies. For example:
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zk</artifactId>
@@ -74,7 +74,7 @@ any other licensed ZK product) maven repository.
 
 - <https://maven.zkoss.org/repo/zk/ee>
 
-``` xml
+```xml
  <repositories>
     <repository>
       <id>ZK EE</id>
@@ -101,7 +101,7 @@ users can create global settings for maven.
   as your repository, you need to add login authentication like
   following example
 
-``` xml
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -119,7 +119,7 @@ users can create global settings for maven.
 
 ### Sample of pom.xml for licensed Professional Package
 
-``` xml
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -156,7 +156,7 @@ users can create global settings for maven.
 
 ### Sample of pom.xml for licensed Enterprise Package
 
-``` xml
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -296,7 +296,7 @@ licensed one, please check the followings:
 
 1\. Add purge-local-repository plugin in pom.xml
 
-``` XML
+```xml
     <build>
         <plugins>
             <plugin>
@@ -328,7 +328,7 @@ licensed one, please check the followings:
 
 2\. Invoke **maven clean** to delete local zkex & zkmax repository
 
-``` xml
+```xml
 mvn clean
 ```
 
@@ -343,7 +343,7 @@ your project.
 
 ## EE
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zkmax</artifactId>
@@ -353,7 +353,7 @@ your project.
 
 ## PE
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zkex</artifactId>
@@ -363,7 +363,7 @@ your project.
 
 ## CE
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zul</artifactId>
@@ -373,7 +373,7 @@ your project.
 
 ## Optional
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zkplus</artifactId>
@@ -400,7 +400,7 @@ on ZK Maven repository.
 Here is a sample pom.xml for a simple Java project that uses the ZK
 maven repository.
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"   
 xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -433,7 +433,7 @@ in your pom.xml according to which ZK edition you use.
 
 ### ZK CE
 
-``` xml
+```xml
 <dependencies>
     <dependency>
       <groupId>org.zkoss.zk</groupId>
@@ -445,7 +445,7 @@ in your pom.xml according to which ZK edition you use.
 
 ### ZK PE
 
-``` xml
+```xml
 <dependencies>
     <dependency>
       <groupId>org.zkoss.zk</groupId>
@@ -457,7 +457,7 @@ in your pom.xml according to which ZK edition you use.
 
 ### ZK EE
 
-``` xml
+```xml
 <dependencies>
     <dependency>
       <groupId>org.zkoss.zk</groupId>
@@ -472,7 +472,7 @@ in your pom.xml according to which ZK edition you use.
 The following dependencies are optional and available for all editions.
 You can include them according to your needs.
 
-``` xml
+```xml
 <dependencies>
 <!-- It's available since ZK 8. If you want to use shadow component/template injection, include this -->
     <dependency>
@@ -648,7 +648,7 @@ ZK provides a ["bill of materials"
 which can be used by your projects simplify a pom.xml. You can use it as
 a parent POM or import it like:
 
-``` xml
+```xml
     <dependencyManagement>
         <dependencies>
             <dependency>

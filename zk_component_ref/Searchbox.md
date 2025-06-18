@@ -14,14 +14,14 @@
 
 A dropdown list that allows users to search and select items. Since it
 contains a separate search field (unlike [
-Combobox](ZK%20Component%20Reference/Input/Combobox)), it can
+Combobox](zk_component_ref/Input/Combobox)), it can
 avoid end-users from inputting a non-existed item.
 
 # Example
 
-![](images/Searchbox-example.png)
+![](/zk_component_ref/images/Searchbox-example.png)
 
-``` xml
+```xml
 <zscript>
 ListModel model = new ListModelArray(new String[] {
   "North America", "South America", "Europe", "Asia", "Africa", "Oceania", "Antarctica"
@@ -72,7 +72,7 @@ joining all the `toString()` result of items by commas.
 Can accept a Class name as a string, in which case an instance of that
 class will be created automatically, or an object already instantiated.
 
-``` xml
+```xml
     <searchbox model="${model}" itemConverter="foo.bar.MyConverter" />
     <searchbox model="${model}" itemConverter="${myConverterObject}" />
 ```
@@ -107,7 +107,7 @@ selections with ListModel API, e.g. `model.setMultiple(true)`. Please do
 not set multiple on searchbox directly. You should set multiple on the
 model instead.
 
-``` java
+```java
 List Items = new ArrayList();
 for (int i = 0; i < 1000; i++) {
     Items.add("data "+i);
@@ -197,7 +197,7 @@ sends this event after opening or closing the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

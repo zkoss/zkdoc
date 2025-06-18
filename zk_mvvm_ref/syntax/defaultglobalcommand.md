@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @DefaultGlobalCommand
 ```
 
@@ -21,7 +21,7 @@ Example
 =======
 
 #### Mark a default global command method
-``` java
+```java
 @DefaultGlobalCommand
 public void defaultAction() {
     // method body

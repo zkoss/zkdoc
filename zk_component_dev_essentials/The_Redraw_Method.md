@@ -3,7 +3,7 @@ When a widget is attached to the DOM tree,
 is called to generate the HTML content. For example, assume you want to
 use <mp>HTML SPAN</mp> tag to house the content, we can do as follows.
 
-``` javascript
+```javascript
 redraw: function (out) {
  out.push('<span', this.domAttrs_(), '>', this.getValue(), '</span>');
 }

@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @BindingParam
 
 @BindingParam("keyString")
@@ -33,7 +33,7 @@ Example
 =======
 
 #### Command binding that pass parameters*
-``` xml
+```xml
 <listbox model="@load(vm.items)" selectedItem="@bind(vm.selected)" hflex="true" height="300px">
     <listhead>
         <listheader label="Name"/>
@@ -51,7 +51,7 @@ Example
 ```
 
 #### Command method in ViewModel with binding parameter
-``` java
+```java
 @Command
 public void popupMessage(@BindingParam("myKey") String target, @BindingParam String content) {
     // method body
@@ -84,4 +84,4 @@ public void dataChange(@BindingParam DataObject data) {
     // do something here.
 }
 ```
-For more information, please visit [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.bind.jsonBindingParamConverter.class).
+For more information, please visit [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.jsonbindingparamconverter.class).

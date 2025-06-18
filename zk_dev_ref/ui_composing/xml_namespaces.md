@@ -14,7 +14,7 @@ In the following example, `w:onFocus` is a client-side listener since
 `w:` is specified, while `onChange` is an event attribute of a
 component.
 
-``` xml
+```xml
 <combobox xmlns:w="client" w:onFocus="this.open()" onChange="doOnChange()"/>
 ```
 
@@ -22,7 +22,7 @@ The [native namespace](ZUML_Reference/ZUML/Namespaces/Native)
 is another standard namespace used to indicate that an XML element
 should be generated *natively* rather than a component. For example,
 
-``` xml
+```xml
 <n:table xmlns:n="native">
   <n:tr>
     <n:td>Username</n:td>
@@ -64,7 +64,7 @@ resolved. For example, in the following example, ZK needs to know
 `window` belongs to the xul/html language, so its component definition
 can be retrieved correctly.
 
-``` xml
+```xml
 <window>
 ```
 
@@ -81,7 +81,7 @@ will be [XHTML](ZUML_Reference/ZUML/Languages/XHTML). Thus,
 `window` in the previous example will be interpreted incorrectly. To
 solve it, you could specify the XML namespace explicitly as follows.
 
-``` xml
+```xml
 <!-- foo.zhtml -->
 <p> <!-- assumed from the XHTML language -->
     <u:window xmlns:u="zul"/> <!-- ZK Loader will search the ZUL language instead -->

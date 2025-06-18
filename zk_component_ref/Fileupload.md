@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zul.Fileupload</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Fileupload</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -19,7 +19,7 @@ dialog to upload files.
 <javadoc>org.zkoss.zul.Fileupload</javadoc> itself is a component. You
 can use it directly as follows.
 
-``` xml
+```xml
 <fileupload label="Upload">
    <attribute name="onUpload">
    org.zkoss.util.media.Media media = event.getMedia();
@@ -31,13 +31,13 @@ can use it directly as follows.
 <javadoc>org.zkoss.zul.Fileupload</javadoc> is actually a button with
 `upload=true`. In other words, the above is equivalent to
 
-``` xml
+```xml
 <button label="Upload" upload="true">
 ...
 ```
 
 Please refer to [Button:
-Upload](ZK_Component_Reference/Essential_Components/Button#Upload)
+Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)
 for details.
 
 # Invoke the Static Method: get
@@ -67,7 +67,7 @@ in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
 -- for more information, please refer to [ZK Developer's Reference: Life
 Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)).
+Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
 To implement a custom template, please take a look at [the default
 template for ZK
@@ -88,7 +88,7 @@ By default, the `onUpload` event is sent to all root components. For
 example, <javadoc>org.zkoss.zul.Div</javadoc> will, in the following
 example, receive the `onUpload` event since it is the root component:
 
-``` xml
+```xml
 <div onUpload="processMedia(event.getMedias());">
     <zscript deferred="true"><![CDATA[
     import org.zkoss.util.media.Media;
@@ -125,7 +125,7 @@ specify the event listener when invoke Fileupload.get().
 
 For example:
 
-``` xml
+```xml
 <zk>
     <vbox>
        <button label="Upload">
@@ -171,7 +171,7 @@ the component in the desktop's attribute called
 For example, we could have the button to receive the onUpload event as
 follows:
 
-``` xml
+```xml
 <zk>
     <zscript deferred="true"><![CDATA[
     import org.zkoss.util.media.Media;
@@ -208,7 +208,7 @@ If the event thread is enable, the uploaded file will be returned
 directly by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>
 and other static methods, such as:
 
-``` xml
+```xml
 <zk>
     <button label="Upload">
     <attribute name="onClick">{
@@ -251,7 +251,7 @@ JVisualVM.
 Here is an example that uses <javadoc>org.zkoss.zul.Fileupload</javadoc>
 as a component:
 
-``` xml
+```xml
 <image id="img" />
 Upload your hot shot:
 <fileupload label="Upload" onUpload="img.setContent(event.media)" />
@@ -279,7 +279,7 @@ Upload your hot shot:
 </table>
 
 - Inherited Supported Events: [
-  Button](ZK_Component_Reference/Essential_Components/Button#Supported_Events)
+  Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
 
 # Supported Children
 
@@ -299,4 +299,4 @@ Upload your hot shot:
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK
     Configuration Reference:
-    disable-event-thread](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
+    disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).

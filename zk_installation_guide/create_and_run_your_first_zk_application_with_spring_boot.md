@@ -9,7 +9,7 @@ available demos.
 
 We assume you already include zk dependencies, if not, please include
 zk. See
-[{{site.baseurl}}/zk_installation_guide/Maven%20Setup](ZK%20Installation%20Guide/Maven%20Setup).
+[{{site.baseurl}}/zk_installation_guide/maven_setup]({{site.baseurl}}/zk_installation_guide/maven_setup).
 
 **1. Download/unzip a standard [Spring
 Initializr](https://start.spring.io/) project**
@@ -21,7 +21,7 @@ Initializr](https://start.spring.io/) project**
 In pom.xml add: replace \${zkspringboot.version} with the [latest
 version](http://mavensync.zkoss.org/maven2/org/zkoss/zkspringboot/zkspringboot-starter/)
 
-``` xml
+```xml
     <repositories>
         <repository>
             <id>ZK CE</id>
@@ -45,7 +45,7 @@ version](http://mavensync.zkoss.org/maven2/org/zkoss/zkspringboot/zkspringboot-s
 
 e.g: src/main/resources/web/hello.zul
 
-``` xml
+```xml
 <zk>
     <window title="Hello ZK - Spring Boot!" border="normal">
         You are using ZK version <label value="${session.webApp.version}"/>
@@ -113,7 +113,7 @@ src/main/webapp/WEB-INF/web.xml -> auto configuration is provided by the zksprin
 After adding the zkspringboot-starter dependency the
 @SpringBootApplicatio-annotation is sufficient to make initialize ZK.
 
-``` java
+```java
 @SpringBootApplication
 public class Application  {
     public static void main(String[] args) {
@@ -156,7 +156,7 @@ preferred).
 Inside the Zk application zul files (to be included) can be referenced
 like this:
 
-``` xml
+```xml
     <include src="~./zul/mvvm-page1.zul"/>
     <apply templateURI="~./zul/mvvm-page1.zul"/>
 ```
@@ -167,14 +167,14 @@ General resource folders are:
   Spring Boot's resource folder
 - [src/main/resources/web](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web) -
   ZK's [classpath web resource
-  path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path)
+  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
 
 Spring Boot resources are referenced by urls starting with `'/'` ZK
 resources (including zul files) are prefixed with `'~./'`
 
 e.g.
 
-``` xml
+```xml
     <image src="/img/zklogo1.png"/>      <!-- src/main/resources/static/img/zklogo1.png -->
     <image src="~./img/zklogo1.png"/>    <!-- src/main/resources/web/img/zklogo3.png -->
 ```
@@ -264,7 +264,7 @@ Since `zkspringboot-starter` may not include a spring-boot starter
 version you want by default, you can easily include your desired version
 in Maven like:
 
-``` xml
+```xml
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

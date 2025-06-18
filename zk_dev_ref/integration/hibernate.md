@@ -51,7 +51,7 @@ Spring).
 
 The minimal Maven dependency you need is:
 
-``` xml
+```xml
 
     <dependency>
       <groupId>org.hibernate</groupId>
@@ -63,7 +63,7 @@ The minimal Maven dependency you need is:
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png) **Note:** If you don't use Maven,
+![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
 please refer to Hibernate Reference Documentation to know which JAR file
 you need.
 
@@ -81,7 +81,7 @@ example.
 
 **Utility class to get SessionFactory**
 
-``` java
+```java
 package org.zkoss.reference.developer.hibernate.dao;
 
 import org.hibernate.SessionFactory;
@@ -109,7 +109,7 @@ public class HibernateUtil {
 For *open session in view* pattern, we need an interceptor to open
 sessions. In ZK, we need to intercept all requests including AU
 requests, so we implement ZK's [ Life Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)
+Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)
 to achieve this. (Our listener's implementation is based on the filter
 mentioned by a Hibernate article "Open Session in View". [^5].) This
 listener opens a session and begins a transaction at the beginning of an
@@ -118,7 +118,7 @@ end of the execution.
 
 **Extracted from OpenSessionInViewListener**
 
-``` java
+```java
 
 public class OpenSessionInViewListener implements ExecutionInit, ExecutionCleanup {
     private static final Log log = Log.lookup(OpenSessionInViewListener.class);
@@ -161,7 +161,7 @@ Add configuration in zk.xml to make the listener work.
 
 **Configure listener in zk.xml**
 
-``` xml
+```xml
 <zk>
     <listener>
         <listener-class>org.zkoss.reference.developer.hibernate.web.OpenSessionInViewListener</listener-class>
@@ -177,7 +177,7 @@ Hibernate session to perform the operation.
 
 **Simple DAO implementation**
 
-``` java
+```java
 public class OrderDao {
 
     public List<Order> findAll() {
@@ -207,7 +207,7 @@ objects.
 
 **Use DAO in a ViewModel**
 
-``` java
+```java
 
 public class OrderViewModel {
 
@@ -247,7 +247,7 @@ related code snippets.
 The minimal dependencies you need are Hibernate-Core, Spring-Web,
 Spring-ORM, and Cglib:
 
-``` xml
+```xml
 
     <dependency>
         <groupId>org.hibernate</groupId>
@@ -275,7 +275,7 @@ We use basic configuration for Spring.
 
 **Spring configuration for Hibernate**
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:context="http://www.springframework.org/schema/context"
@@ -340,7 +340,7 @@ please refer to Spring's Javadoc.
 
 **Configure OpenSessionInViewFilter in web.xml**
 
-``` xml
+```xml
 
     <filter>
         <filter-name>OpenSessionInViewFilter</filter-name>
@@ -359,7 +359,7 @@ For a Spring-powered DAO, we can use injected `SessionFactory` and
 
 **DAO empowered by Spring**
 
-``` java
+```java
 
 @Repository
 public class SpringOrderDao {
@@ -389,8 +389,8 @@ public class SpringOrderDao {
 
 To use this Spring-based DAO in a composer (or a ViewModel), ZK provides
 several ways like variable resolvers. Please refer to [ZK Developer's
-Reference/Integration/Middleware
-Layer/Spring]({{site.baseurl}}/zk_dev_ref/Integration/Middleware_Layer/Spring).
+Reference/integration/Middleware
+Layer/Spring]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring).
 
 # Lazy Initialization Issue among AU Requests
 
@@ -420,7 +420,7 @@ selected in the order. One order may contain many order items
 fetching . When we select an order, the *Grid* displays detailed items
 of the selected order which means accessing a lazy-loaded collection.
 
-``` java
+```java
 @Entity
 @Table(name="orders")
 public class Order {
@@ -446,7 +446,7 @@ also accesses a detached `Order` object's items collection, we should
 re-load the object with Hibernate session or we'll get
 `LazyInitializationException`.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Hibernate-beginning.png)
+![]({{site.baseurl}}/zk_dev_ref/images/hibernate-beginning.png)
 
 <div style="text-align:center">
 
@@ -460,7 +460,7 @@ object and reload it.
 
 **Reload selected object**
 
-``` java
+```java
 
 public class OrderViewModel {
 
@@ -498,7 +498,7 @@ retrieve the collection for us. After doing so, we can eliminate
 
 **Re-attach to a session**
 
-``` java
+```java
 
 public class OrderDao {
 
@@ -519,7 +519,7 @@ public class OrderDao {
 
 Some AU requests cannot be interfered by developers,such as a "[Render
 On
-Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
+Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
 request where the rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have
@@ -532,7 +532,7 @@ collection's size (`each.items.size()` )of an `Order` object.
 
 **Listbox that accesses lazy-loaded property**
 
-``` xml
+```xml
 
     <window title="" border="normal" width="600px" apply="org.zkoss.bind.BindComposer"
         viewModel="@id('vm') @init('org.zkoss.reference.developer.hibernate.vm.RodViewModel')">
@@ -569,7 +569,7 @@ component requests it.
 
 **Reloaded ListModel**
 
-``` java
+```java
 public class OrderListModel extends AbstractListModel<Order>{
 
     private OrderDao orderDao;
@@ -607,7 +607,7 @@ in cache without re-querying again.
 
 **Lived ListModel**
 
-``` java
+```java
 public class LiveOrderListModel extends AbstractListModel<Order>{
 
     private OrderDao orderDao;

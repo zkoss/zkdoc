@@ -60,7 +60,7 @@ included by other Servlets.</p></td>
 Notice it is optional. You need to specify it only if you want to use
 DSP pages (\*.dsp) in your Web application.
 
-``` xml
+```xml
     <servlet>
         <servlet-name>dspLoader</servlet-name>
         <servlet-class>org.zkoss.web.servlet.dsp.InterpreterServlet</servlet-class>
@@ -77,7 +77,7 @@ InterpreterServlet is split into a separate jar. It's no longer inside
 zweb.jar by default. If you want to use this servlet, you need to
 include the dependency below explicitly:
 
-``` xml
+```xml
         <dependency>
             <groupId>org.zkoss.common</groupId>
             <artifactId>zweb-dsp</artifactId>

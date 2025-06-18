@@ -21,7 +21,7 @@ data members will be applied in the constructor.
 
 For example, suppose we have a macro template as follows.
 
-``` xml
+```xml
 <hlayout id="mc_layout">
     Username: <textbox id="mc_who"/>
 </hlayout>
@@ -29,7 +29,7 @@ For example, suppose we have a macro template as follows.
 
 Then, we could implement a Java class for it:
 
-``` java
+```java
 package foo;
 
 import org.zkoss.zk.ui.select.annotation.*;
@@ -62,11 +62,11 @@ As shown,
 will wire variables, components and event listeners automatically, so we
 could access them directly (such as the `mc_who` member). For more
 information, please refer to [the Wire Components
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components),
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
 [the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
 and [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
+Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 sections.
 
 Also notice that the `arg` variable is still available to the template
@@ -85,7 +85,7 @@ specify the `class` attribute when declaring it in the [component
 directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 For example,
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul"
    class="foo.Username"?>
 ```
@@ -105,7 +105,7 @@ meaningful setter, say, setWho, directly rather than
 <javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.ext.DynamicPropertied</javadoc>.
 In addition, the instantiation could be as simple as follows:
 
-``` Java
+```java
 Username ua = new Username();
 ua.setParent(wnd);
 ua.setWho("Joe");
@@ -122,7 +122,7 @@ template.
 
 For example, assume we have a macro defined as follows.
 
-``` xml
+```xml
 <hlayout>
     Username: <textbox id="who" value="${arg.who}"/>
 </hlayout>
@@ -130,7 +130,7 @@ For example, assume we have a macro defined as follows.
 
 Then, the following codes work correctly.
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul"?>
 <zk>
     <username/>
@@ -140,7 +140,7 @@ Then, the following codes work correctly.
 
 However, the following codes *do not* work.
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul"?>
 <username id="who"/>
 ```
@@ -151,7 +151,7 @@ ID space as its child components. There are two alternative solutions:
 1\. Use a special prefix for the identifiers of child components of a
 macro component. For example, `"mc_who"` instead of `"who"`.
 
-``` xml
+```xml
 <hlayout>
     Username: <textbox id="mc_who" value="${arg.who}"/>
 </hlayout>
@@ -159,7 +159,7 @@ macro component. For example, `"mc_who"` instead of `"who"`.
 
 2\. Use the `window` component to create an additional ID space.
 
-``` xml
+```xml
 <window>
     <hlayout>
         Username: <textbox id="who" value="${arg.who}"/>
@@ -177,7 +177,7 @@ components in a setProperty method.
 
 For example,
 
-``` java
+```java
 package foo;
 
 import org.zkoss.zk.ui.select.annotation.*;
@@ -212,7 +212,7 @@ public class Username extends HtmlMacroComponent {
 Also, you can add a forward event to the newly added component and
 forward the event to a macro component.
 
-``` java
+```java
 public class Username extends HtmlMacroComponent {
     // omitted
 
@@ -230,7 +230,7 @@ public class Username extends HtmlMacroComponent {
 
 Then use the forward event to communicate with other components.
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul" class="foo.Username"?>
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MacroVM')">
     <username who="John" label="Username" gender="@load(vm.gender)" onGenderChange="@command('changeGender')" />

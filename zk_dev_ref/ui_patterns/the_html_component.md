@@ -1,11 +1,11 @@
 # Overview
 
 One of the simplest ways is to use a XUL component called
-[html](ZK_Component_Reference/Essential_Components/Html) to
+[html]({{site.baseurl}}/zk_component_ref/essential_components/html) to
 embed whatever HTML tags you want. The html component works like an HTML
 SPAN tag enclosing the HTML fragment. For example,
 
-``` xml
+```xml
  <window border="normal" title="Html Demo">
      <html><![CDATA[
          <h4>Hi, ${parent.title}</h4>
@@ -35,7 +35,7 @@ enclose the content when attached to the browser's DOM tree. In other
 words, it generates the following HTML tags when attached to the
 browser's DOM tree.
 
-``` xml
+```xml
  <span id="z_4a_3">
      <h4>Hi, Html Demo</h4>
      <p>It is the content of the html component.</p>
@@ -47,7 +47,7 @@ browser's DOM tree.
 The `html` component is no different to other XUL components. For
 example, you specify the CSS style and change its content dynamically.
 
-``` xml
+```xml
 <zk>
     <html id="h" style="border: 1px solid blue;background: yellow">
     <![CDATA[
@@ -62,7 +62,7 @@ example, you specify the CSS style and change its content dynamically.
 
 You can change its content dynamically.
 
-``` java
+```java
 htm.setContent("<ul><li>New content</li></ul>");
 ```
 
@@ -71,7 +71,7 @@ htm.setContent("<ul><li>New content</li></ul>");
 Since `SPAN` is used to enclose the embedded HTML tags, the following
 code snippet is incorrect.
 
-``` xml
+```xml
 <zk>
     <html><![CDATA[
             <ul>

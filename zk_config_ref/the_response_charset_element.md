@@ -11,7 +11,7 @@ DHtmlLayoutServlet).
 If you want to use the container's default value, you can specify an
 empty string as follows.
 
-``` xml
+```xml
 <response-charset></response-charset>
 ```
 

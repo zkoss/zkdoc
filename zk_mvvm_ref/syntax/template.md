@@ -18,7 +18,7 @@ Example
 =======
 
 #### Dynamic template upon iteration status variable
-``` xml
+```xml
 <combobox model="@bind(item.options ) @template(forEachStatus.index eq 0 or forEachStatus.index eq 2 ? 'model1' : 'model2')">
     <template name="model1" var="option">
         <comboitem label="@bind(optionStatus)" description="@bind(option)"/>
@@ -30,7 +30,7 @@ Example
 ```
 
 #### Recursive usage
-``` xml
+```xml
 <vlayout id="vlayout" children="@load(vm.nodes) @template('greenBox')">
     <template name="greenBox" var="node">
         <vlayout style="padding-left:10px; border:2px solid green;">

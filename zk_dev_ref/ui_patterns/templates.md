@@ -1,11 +1,11 @@
 As described in [the MVC: Template
-section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template), a
+section]({{site.baseurl}}/zk_dev_ref/mvc/view/template), a
 template is a ZUML fragment that defines how to create components. A
 template is enclosed with [the template
 element](ZUML_Reference/ZUML/Elements/template) as shown
 below.
 
-``` xml
+```xml
 <window>
     <template name="foo">
       <textbox/>
@@ -32,7 +32,7 @@ To create the components defined in the template, just invoke the
 <javadoc method="create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)">org.zkoss.zk.ui.util.Template</javadoc>.
 For example,
 
-``` java
+```java
 comp.getTemplate("foo").create(comp, null, null, null);
 ```
 
@@ -47,7 +47,7 @@ For more detailed information about the variable resolver, please refer
 to [ZUML
 Reference](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 
-``` java
+```java
 public class TemplateBasedRenderer implements ListitemRenderer {
     public void render(Listitem item, final Object data, int index) {
         final Listbox listbox = (Listbox)item.getParent();
@@ -70,7 +70,7 @@ In addition, the template allows users to specify any number of
 parameters with any name, and these parameters can be retrieved back by
 the `getParameters` method of the `Template` interface:
 
-``` xml
+```xml
 <template name="foo" var1="value1" var2="${el2}">
 ...
 </template>
@@ -79,7 +79,7 @@ the `getParameters` method of the `Template` interface:
 If the content of a template is located elsewhere as a separate file, to
 reference it, specify it in the `src` attribute as follows.
 
-``` xml
+```xml
 <template name="foo" src="foo.zul">
 ...
 </template>
@@ -92,13 +92,13 @@ We suggest using shadow component
 as a replacement of children binding.
 
 [ ZK Data
-Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding) provides
+Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding) provides
 a powerful way called [Children
-Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding/Children_Binding)
+Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding/children_binding)
 to render a template based on the data (such as a list of elements).
 Moreover, the UI will be updated automatically if the data has been
 changed. For more information, please refer to [the Children Binding
-section]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding/Children_Binding).
+section]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding/children_binding).
 
 # Version History
 

@@ -14,7 +14,7 @@ are searching for a specific Highcharts feature or configuration
 property, please refer to the Highcharts documentation first. In order
 to implement the chart configuration with ZK Charts refer to [ Changing
 Chart
-Configuration](ZK_Charts_Essentials/Working_with_ZK_Charts/Changing_Chart_Configuration)
+Configuration]({{site.baseurl}}/zk_charts_essentials/working_with_zk_charts/changing_chart_configuration)
 
 ![](images/ZK_charts_intro.png)
 

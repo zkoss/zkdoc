@@ -55,7 +55,7 @@ Sometimes we need to control the timing of saving or loading instead of dependin
 Assume that there is an order management application with a database. The following zul example is one of its page, listbox displays order list and doublebox is for editing an order detail.
 
 #### Save before a command
-``` xml
+```xml
 <listbox model="@load(vm.orders)" selectedItem="@bind(vm.selected)" hflex="true" height="200px">
     <template name="model" var="item">
         <listitem >

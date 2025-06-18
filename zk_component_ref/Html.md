@@ -6,7 +6,7 @@
   [Html](http://www.zkoss.org/zkdemo/composite/html_element)
 - Java API: <javadoc>org.zkoss.zul.Html</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Html</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -19,9 +19,9 @@ in it.
 
 # Example
 
-![](images/ZKComRef_Html.png)
+![](/zk_component_ref/images/ZKComRef_Html.png)
 
-``` xml
+```xml
  <window id="win" title="Html Demo" border="normal">
      <html><![CDATA[
          <h4>Hi, ${win.title}</h4>
@@ -37,7 +37,7 @@ The `html` component generates the HTML `SPAN` tag to enclose the
 content. In other words, it generates the following HTML tags when
 rendered to the browser.
 
-``` xml
+```xml
  <span id=”...”>
      <h4>Hi, Html Demo</h4>
      <p>It is the content of the html component.</p>
@@ -53,7 +53,7 @@ On Chrome, if <code>
 </code>'s sibling use `vflex` to set hight flexibly, developer must
 override `.z-html` CSS like this:
 
-``` css
+```css
 .z-html {
     display:block;
 }
@@ -61,7 +61,7 @@ override `.z-html` CSS like this:
 
 or
 
-``` css
+```css
 .z-html {
     display: inline-block;
 }
@@ -95,7 +95,7 @@ Without this setting, `offsetHeight` of <code>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
@@ -105,7 +105,7 @@ Without this setting, `offsetHeight` of <code>
 
 | Version | Description                                  | Example Location                                                                                     |
 |---------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 3.6     | Work with HTML tags: The Html component      | [The Html component](ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags/The_html_Component) |
+| 3.6     | Work with HTML tags: The Html component      | [The Html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component) |
 | 3.6     | herf attribute in Html component             | [<http://www.zkoss.org/forum/listComment/4745>](http://www.zkoss.org/forum/listComment/4745)         |
 | 3.6     | Use Html component to escape HTML characters | [<http://www.zkoss.org/forum/listComment/11118>](http://www.zkoss.org/forum/listComment/11118)       |
 

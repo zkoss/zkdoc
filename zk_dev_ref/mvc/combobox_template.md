@@ -1,8 +1,8 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can render a combobox with a template:
 
-``` xml
+```xml
 <combobox model="${infos}">
     <template name="model">
         <comboitem label="${each[0]}: ${each[1]}"/>
@@ -13,7 +13,7 @@ you can render a combobox with a template:
 where we assume there is a list model
 (<javadoc>org.zkoss.zul.ListModel</javadoc>) called `infos` such as:
 
-``` java
+```java
 ListModel infos = new ListModelArray(
     new String[][] {
         {"Apple", "10kg"},

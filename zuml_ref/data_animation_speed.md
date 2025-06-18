@@ -2,7 +2,7 @@ To change the animation speed, you can apply data-animationspeed
 attribute. The valid value can be 'slow', 'fast' or any integer, same as
 jQuery. When you specify 0 as the value, it means no animation.
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
     <panel title="Panel" ca:data-animationspeed="0" 
     width="500px" border="normal" collapsible="true">

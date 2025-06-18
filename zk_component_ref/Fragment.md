@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Fragment</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
-- Style Guide: N/A
+
 
 {% include edition-availability.html edition="pe" %}
 
@@ -20,14 +20,14 @@ dynamic.
 
 To manipulate HTML elements dynamically, ZK supports several ways in
 addition to this component. Please refer to
-[ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags](ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags)
+[{{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
 for more details.
 
 # Example
 
-![](images/ZKComRef_Fragment_Example.png)
+![](/zk_component_ref/images/ZKComRef_Fragment_Example.png)
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('org.zkoss.fragment.demo.VM2')" validationMessages="@id('vmsgs')"
               form="@id('fx') @load(vm) @save(vm, before='submit') @validator(vm.formValidator)"
@@ -51,7 +51,7 @@ the native HTML elements.
 Remember to mark the fragment content with the CDATA section to avoid
 being parsed by server-side binder and causing problems:
 
-``` xml
+```xml
     <fragment><![CDATA[
         ...
     ]]></fragment>
@@ -92,7 +92,7 @@ expressions including bean dot notation, arithmetic operator, `!`, and
 This component also provides a virtual `textContent` attribute for HTML
 elements to insert data into the tag.
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('org.zkoss.zktest.test2.F85_ZK_3681_Command_VM')"
               status="@bind(vm.status)"><![CDATA[
@@ -114,7 +114,7 @@ elements to insert data into the tag.
 In this example, we use `if` and `forEach` tags together for condition
 and collection rendering.
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('org.zkoss.zktest.test2.F85_ZK_3681_Shadow_VM')"
         issues="@bind(vm.issues)"><![CDATA[
@@ -153,7 +153,7 @@ and collection rendering.
 
 To ensure data is correct and useful, we can leverage ZK's validators.
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('org.zkoss.fragment.demo.VM1')" validationMessages="@id('vmsgs')"
               prop1="@bind(vm.prop1) @validator(vm.validator1)"
@@ -171,7 +171,7 @@ simply bind the messages onto Fragment properties.
 Here we can use form-binding and form validators to validate all the
 fields.
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('foo.BarVM')" validationMessages="@id('vmsgs')"
      form="@id('fx') @load(vm.currentUser) @save(vm.currentUser, before='submit') @validator('formBeanValidator', prefix='p_')"
@@ -209,7 +209,7 @@ You can use an implicit object (vmsgs) to get the client-side invalid
 messages. The `@jsvalidator` has its own validation message holder not
 shared with server-side.
 
-``` xml
+```xml
 <zk>
     <fragment viewModel="@id('vm') @init('foo.BarVM')" someprop="@bind(vm.prop1)"><![CDATA[
         <input type="text" value="@bind(someprop) @jsvalidator('validateExample')"/>

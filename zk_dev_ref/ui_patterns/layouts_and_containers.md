@@ -11,12 +11,12 @@ Users are allowed to nest one from another to create desired UI.
 This section provides brief introductions for some of the layout
 components in ZK. For detailed information and the complete list of
 layouts, please refer to [ZK Component Reference:
-Layouts](ZK_Component_Reference/Layouts).
+Layouts]({{site.baseurl}}/zk_component_ref/layouts).
 
 ## Hlayout and Vlayout
 
-[Hlayout](ZK_Component_Reference/Layouts/Hlayout) and
-[Vlayout](ZK_Component_Reference/Layouts/Vlayout) are simple
+[Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) are simple
 and light-weighted layout components that arrange their children to be
 displayed horizontally and vertically respectively. Also, they are
 easily customizable as they are made up of HTML DIVs.
@@ -24,7 +24,7 @@ easily customizable as they are made up of HTML DIVs.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhlayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -32,7 +32,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -55,7 +55,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhlayout_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -63,7 +63,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout_scrolling.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -80,7 +80,7 @@ Users are allowed to change sclass to control alignment.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_alignment.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhlayout_alignment.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">zk</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hlayout</span><span class="ot"> sclass=</span><span class="st">&quot;z-valign-top&quot;</span>&gt;</span>
@@ -107,25 +107,25 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Hbox and Vbox
 
-Similar to [Hlayout](ZK_Component_Reference/Layouts/Hlayout)
-and [Vlayout](ZK_Component_Reference/Layouts/Vlayout),
-[Hbox](ZK_Component_Reference/Layouts/Hbox) and
-[Vbox](ZK_Component_Reference/Layouts/Vbox) arrange their
+Similar to [Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout)
+and [Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout),
+[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) arrange their
 children to be displayed horizontally and vertically respectively.
-[Hbox](ZK_Component_Reference/Layouts/Hbox) and
-[Vbox](ZK_Component_Reference/Layouts/Vbox) provide more
+[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) provide more
 functionalities such as splitter, align and pack. However, their
 **performance is slower**, so it is suggested to use
-[Hlayout](ZK_Component_Reference/Layouts/Hlayout) and
-[Vlayout](ZK_Component_Reference/Layouts/Vlayout) if you'd
+[Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) if you'd
 like to use them a lot in a UI, unless you need the features that only
-[Hbox](ZK_Component_Reference/Layouts/Hbox) and
-[Vbox](ZK_Component_Reference/Layouts/Vbox) support.
+[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) support.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHbox.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhbox.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -134,7 +134,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVbox.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
@@ -154,7 +154,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhlayout_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hbox</span>&gt;</span>
@@ -164,7 +164,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout_scrolling.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">vbox</span>&gt;</span>
@@ -183,7 +183,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_align.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhbox_align.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Hbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;align: center&quot;</span> /&gt;</span>
@@ -195,7 +195,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_pack.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhbox_pack.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Hbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;pack: center&quot;</span> /&gt;</span>
@@ -207,7 +207,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_align.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_align.png)</td>
 <td><div class="sourceCode" id="cb3"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Vbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;align: center&quot;</span> /&gt;</span>
@@ -219,7 +219,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#c
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_pack.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_pack.png)</td>
 <td><div class="sourceCode" id="cb4"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Vbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;pack: center&quot;</span> /&gt;</span>
@@ -234,15 +234,15 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#c
 </table>
 
 For more detailed information, please refer to
-[Hbox](ZK_Component_Reference/Layouts/Hbox) and
-[Vbox](ZK_Component_Reference/Layouts/Vbox).
+[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox).
 
 - Users are also allowed to use "cell" to control each cell's alignment.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drhbox_cell.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span><span class="ot"> width=</span><span class="st">&quot;500px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
@@ -262,7 +262,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span></code></pre></div></td>
 </tr>
 <tr class="even">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_cell.png)</td>
 <td><div class="sourceCode" id="cb2"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> align=</span><span class="st">&quot;stretch&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
@@ -286,7 +286,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 
 ## Borderlayout
 
-[Borderlayout](ZK_Component_Reference/Layouts/Borderlayout)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout)
 divides its child components into to five areas: North, South, East,
 West and Center. The heights of North and South are first decided, the
 remaining space is then given to Center as its height. Note that East
@@ -295,7 +295,7 @@ and West also take on the height of Center.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrBorderlayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -330,7 +330,7 @@ child component.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrBorderlayout_flex.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_flex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -365,7 +365,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrBorderlayout_Center_scrolling.png)</td>
+<td>![](/zk_dev_ref/images/DrBorderlayout_Center_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> height=</span><span class="st">&quot;300px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
@@ -392,14 +392,14 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 - To make Borderlayout dependent on the size of its child components,
   [vflex
-  feature]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility)
+  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrBorderlayout_grow.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_grow.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
@@ -430,7 +430,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
   a container, users have to specify a fixed height in order for
   Borderlayout to be visible.
 
-``` xml
+```xml
 <zk>
     <window title="win" border="normal">
         <borderlayout height="200px">
@@ -458,7 +458,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
   component, therefore, users can also put Borderlayout in a container
   with a fixed height.
 
-``` xml
+```xml
 <zk>
     <window title="win" border="normal" height="200px">
         <borderlayout>
@@ -484,12 +484,12 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Columnlayout
 
-[Columnlayout](ZK_Component_Reference/Layouts/Columnlayout)
+[Columnlayout]({{site.baseurl}}/zk_component_ref/layouts/columnlayout)
 places its child components into multiple columns while each column
 allows any number of child components placed vertically with different
 heights (but with the same widths). Unlike
-[portallayout](ZK_Component_Reference/Layouts/Portallayout),
-[Columnlayout](ZK_Component_Reference/Layouts/Columnlayout)
+[portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
+[Columnlayout]({{site.baseurl}}/zk_component_ref/layouts/columnlayout)
 does *not allow* end users the ability to move child components to
 different locations at will (although of course, developers are allowed
 to use the ZK application to re-arrange the order of children
@@ -498,7 +498,7 @@ components).
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrColumnlayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drcolumnlayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">columnlayout</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">columnchildren</span><span class="ot"> width=</span><span class="st">&quot;30%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
@@ -521,7 +521,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Portallayout
 
-[Portallayout](ZK_Component_Reference/Layouts/Portallayout)
+[Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
 places its child components into multiple columns while each column can
 allow any number of child components to be placed vertically with
 different heights (but with the same widths). Users are also allowed to
@@ -530,7 +530,7 @@ move any of them to any area desired like that of a portal.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrPortallayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drportallayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">portallayout</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">portalchildren</span><span class="ot"> width=</span><span class="st">&quot;40%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
@@ -556,14 +556,14 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Tablelayout
 
-[Tablelayout](ZK_Component_Reference/Layouts/Tablelayout)
+[Tablelayout]({{site.baseurl}}/zk_component_ref/layouts/tablelayout)
 places its child components in a table. Ths implementation is based on
 an HTML TABLE tag.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrTablelayout.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drtablelayout.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tablelayout</span><span class="ot"> columns=</span><span class="st">&quot;2&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tablechildren</span>&gt;</span>
@@ -600,12 +600,12 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 This section provides a brief introduction for some of the container
 components in ZK. For detailed information and a complete list of
 containers, please refer to [ZK Component Reference:
-Containers](ZK_Component_Reference/Containers).
+Containers]({{site.baseurl}}/zk_component_ref/containers).
 
 ## Div and Span
 
-[Div](ZK_Component_Reference/Containers/Div) and
-[span](ZK_Component_Reference/Containers/Span) are the most
+[Div]({{site.baseurl}}/zk_component_ref/containers/div) and
+[span]({{site.baseurl}}/zk_component_ref/containers/span) are the most
 light-weighted containers to group child components. They work the same
 way as HTML DIV and SPAN tags respectively. Div is a block element that
 would cause line break for the following sibling i.e. the child and its
@@ -616,7 +616,7 @@ and its siblings on the same line (horizontal position).
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrDivSpan.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drdivspan.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;border: 1px solid blue&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  this is</span>
@@ -646,7 +646,7 @@ Div:
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrDiv_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drdiv_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
@@ -666,18 +666,18 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Window
 
-[Window](ZK_Component_Reference/Containers/Window) is a
+[Window]({{site.baseurl}}/zk_component_ref/containers/window) is a
 container providing captioning, bordering, overlapping, draggable,
 closable, sizable, and many other features. Window is also the owner of
 [an ID
-space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space), such
+space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), such
 that each child component and its IDs are in one independent window so
 as to avoid the IDs of child components conflicting with one another.
 
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrWindow.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drwindow.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;A&quot;</span><span class="ot"> closable=</span><span class="st">&quot;true&quot;</span><span class="ot"> sizable=</span><span class="st">&quot;true&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> mode=</span><span class="st">&quot;overlapped&quot;</span>&gt;</span>
@@ -699,7 +699,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrWindow_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drwindow_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;window&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span></span>
@@ -720,8 +720,8 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Panel
 
-Like [Window](ZK_Component_Reference/Containers/Window),
-[panel](ZK_Component_Reference/Containers/Panel) is another
+Like [Window]({{site.baseurl}}/zk_component_ref/containers/window),
+[panel]({{site.baseurl}}/zk_component_ref/containers/panel) is another
 powerful container supporting captioning, bordering, overlapping and
 many other features. However,
 <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc> is not
@@ -731,7 +731,7 @@ the same ID space of its parent.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drpanel.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;A&quot;</span><span class="ot"> framable=</span><span class="st">&quot;true&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot"> maximizable=</span><span class="st">&quot;true&quot;</span><span class="ot"> collapsible=</span><span class="st">&quot;true&quot;</span>&gt;</span>
@@ -755,7 +755,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrPanel_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drpanel_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;panel&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span> </span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
@@ -777,9 +777,9 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Groupbox
 
-[Groupbox](ZK_Component_Reference/Containers/Groupbox) is a
+[Groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox) is a
 light-weighted way to group child components together. It supports
-["caption"](ZK_Component_Reference/Containers/Caption) and
+["caption"]({{site.baseurl}}/zk_component_ref/containers/caption) and
 "border", however, it does not support overlapping or resizing. Like
 Panel, <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc> is
 not implemented by this component either.
@@ -787,7 +787,7 @@ not implemented by this component either.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrGroupbox3d.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drgroupbox3d.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">groupbox</span><span class="ot"> mold=</span><span class="st">&quot;3d&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;Fruits&quot;</span>/&gt;</span>
@@ -814,7 +814,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/DrGroupbox3d_scrolling.png)</td>
+<td>![](/zk_dev_ref/images/DrGroupbox3d_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">groupbox</span><span class="ot"> mold=</span><span class="st">&quot;3d&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    contentStyle=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>
@@ -831,7 +831,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Tabbox
 
-[Tabbox](ZK_Component_Reference/Containers/Tabbox) is a
+[Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox) is a
 container used to display a set of tabbed groups of components. A row of
 tabs can be displayed at the top (or left) of the tabbox; users can
 switch between each tab group by a simple click.
@@ -841,7 +841,7 @@ implemented by this component either.
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drtabbox.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tabbox</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tabs</span>&gt;</span>
@@ -867,7 +867,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <table>
 <tbody>
 <tr class="odd">
-<td>![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox_scrolling.png)</td>
+<td>![]({{site.baseurl}}/zk_dev_ref/images/drtabbox_scrolling.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tabbox</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabs</span>&gt;</span>

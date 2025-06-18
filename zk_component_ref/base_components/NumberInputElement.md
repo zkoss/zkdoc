@@ -58,7 +58,7 @@ For example:
 ```
 
 Try it
-*  [Number Input Elements](https://zkfiddle.org/sample/2kqnun7/1-ZK-Component-Reference-NumberInputElement-Example?v=latest&t=Iceblue%20Compact)
+*  [Number Input Elements](https://zkfiddle.org/sample/2kqnun7/1-ZK-Component-Reference-NumberInputElement-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Supported Children

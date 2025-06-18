@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Anchorlayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Anchorlayout</javadoc>
-- Style Guide: N/A
+
 
 {% include version-badge.html version="6.0.0" %}
 
@@ -17,9 +17,9 @@ on its width and height
 
 # Example
 
-![]({{site.baseurl}}/zk_component_ref/images/ZKComRef_Anchorlayout_Example.png)
+![]({{site.baseurl}}/zk_component_ref/images/zkcomref_anchorlayout_example.png)
 
-``` xml
+```xml
 <window title="anchorlayout Demo" border="normal" 
     height="100%">
     <anchorlayout id="al"  vflex="1"
@@ -91,8 +91,8 @@ on its width and height
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-* [Anchorchildren]({{site.baseurl}}/zk_component_ref/Layouts/Anchorlayout/Anchorchildren)
+* [Anchorchildren]({{site.baseurl}}/zk_component_ref/layouts/anchorlayout/anchorchildren)

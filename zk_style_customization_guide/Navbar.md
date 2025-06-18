@@ -1,16 +1,16 @@
 # Component Reference
 
 Component Reference: [
-Nav](ZK_Component_Reference/Essential_Components/Nav), [
-Navbar](ZK_Component_Reference/Essential_Components/Nav/Navbar),
+Nav]({{site.baseurl}}/zk_component_ref/essential_components/nav), [
+Navbar]({{site.baseurl}}/zk_component_ref/essential_components/nav/navbar),
 [
-Navitem](ZK_Component_Reference/Essential_Components/Nav/Navitem),
+Navitem]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem),
 [
-Navseparator](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
+Navseparator]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
 
 # DOM Structure
 
-``` html
+```html
 <div class="z-navbar z-navbar-orient">
     <ul>
         <!-- Navitem -->
@@ -46,7 +46,7 @@ Navseparator](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
 Basically, LESS source is correspondent to its DOM structure, and each
 orient have different styles.
 
-``` css
+```css
 /* navbar */
 .z-navbar {
     /* overall style */
@@ -107,7 +107,7 @@ border, gradient background, rounded corner or shadow effects.
 ### Setup environment and Analyze design
 
 - Check [ this
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component)
+  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -150,7 +150,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Change color by overriding zk less variables.
 
-``` css
+```css
 @import "~./zul/less/_header.less";
 
 @navColor:                     #FFFFFF;
@@ -165,7 +165,7 @@ border, gradient background, rounded corner or shadow effects.
 - Modify LESS mixin .navLevel(@level) to adopt darkened background on
   each level.
 
-``` css
+```css
 .navLevel(@level) {
     .z-nav-content,
     .z-navitem-content {
@@ -188,7 +188,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Nav, Navitem size to match target design.
 
-``` css
+```css
 .z-nav,
 .z-navitem {
     &-content {
@@ -201,7 +201,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Nav, Navitem text style to match target design.
 
-``` css
+```css
 .z-nav,
 .z-navitem {
     &-text {
@@ -214,7 +214,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Badge Text style inside Nav to match target design.
 
-``` css
+```css
 /* Add extra style inside .navLevel(@level) function */
 .navLevel(@level) {
     /* omitted */

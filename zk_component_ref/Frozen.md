@@ -6,8 +6,7 @@
   Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
 - Java API: <javadoc>org.zkoss.zul.Frozen</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Frozen</javadoc>
-- Style Guide: [
-  Frozen](ZK_Style_Guide/XUL_Component_Specification/Frozen)
+
 
 # Employment/Purpose
 
@@ -17,9 +16,9 @@ scroll starting position.
 
 # Example
 
-![](images/ZKComRef_Frozen_Example.png)
+![](/zk_component_ref/images/ZKComRef_Frozen_Example.png)
 
-``` xml
+```xml
 <grid width="600px">
     <frozen columns="2" start="1"/>
     <columns>
@@ -90,7 +89,7 @@ columns except the last one. ![](hide-columns.png)
 
 Make columns frozen at the right-hand side.
 
-``` xml
+```xml
 <listbox>
     <frozen rightColumns="1"/>
 ...
@@ -119,7 +118,7 @@ Make columns frozen at the right-hand side.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

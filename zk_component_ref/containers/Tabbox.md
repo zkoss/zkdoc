@@ -43,7 +43,7 @@ The example below demonstrates the usage of a Tabbox component with two sets of 
 
 Try it
 
-* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue%20Compact)
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Properties and Features
@@ -81,7 +81,7 @@ Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient Tabbox.
 
 Try it
 
-* [Tabbox Toolbar](https://zkfiddle.org/sample/27mram5/1-ZK-Component-Reference-Tabbox-Toolbar-Example?v=latest&t=Iceblue%20Compact)
+* [Tabbox Toolbar](https://zkfiddle.org/sample/27mram5/1-ZK-Component-Reference-Tabbox-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
 
 ### MaximalHeight
@@ -121,7 +121,7 @@ Note: The Client ROD feature will be disabled if it is set to true.
 
 Try it
 
-* [Tabbox MaximalHeight](https://zkfiddle.org/sample/3b2hmvq/1-ZK-Component-Reference-Tabbox-MaximalHeight-Example?v=latest&t=Iceblue%20Compact)
+* [Tabbox MaximalHeight](https://zkfiddle.org/sample/3b2hmvq/1-ZK-Component-Reference-Tabbox-MaximalHeight-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Events
 
@@ -148,4 +148,4 @@ Try it
 ## Supported Children
 - [`Tabs`](Tabs.md): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
 - [`Tabpanels`](Tabpanels.md): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.
-- [`Toolbar`](../Essential_Components/Toolbar.md): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.
+- [`Toolbar`](../essential_components/Toolbar.md): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.

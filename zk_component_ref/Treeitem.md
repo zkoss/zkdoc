@@ -6,7 +6,7 @@
   Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treeitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treeitem</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -25,9 +25,9 @@ button.
 
 # Example
 
-![](images/ZKComRef_Treeitem.png)
+![](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
-``` xml
+```xml
 
 <window title="tree demo" border="normal" width="400px">
     <tree id="tree" width="90%">
@@ -76,7 +76,7 @@ button.
 ```
 
 More examples please refer to [
-Tree](ZK_Component_Reference/Data/Tree#The_open_Property_and_the_onOpen_Event)
+Tree]({{site.baseurl}}/zk_component_ref/data/tree#The_open_Property_and_the_onOpen_Event)
 
 # Label and Image
 
@@ -89,13 +89,13 @@ they are actually placed in the first treecell (of the child treerow).
 Furthermore, if the treecell or treerow are not created, they will be
 created automatically. For example,
 
-``` xml
+```xml
 <treeitem label="hello"/>
 ```
 
 is equivalent to
 
-``` xml
+```xml
 <treeitem>
   <treerow>
     <treecell label="hello"/>
@@ -106,7 +106,7 @@ It also means you cannot attach a treerow child to the treeitem, after
 setImage or setLabel was invoked. It means, though a bit subtle, the
 following will cause an exception:
 
-``` xml
+```xml
 <treeitem label="hello"> <!-- treerow is created automatically because of setLabel -->
   <treerow/> <!-- exception since only one treerow is allowed per treeitem -->
 </treeitem>
@@ -131,7 +131,7 @@ always returning True (meaning that by default, all TreeItems will be
 marked as selectable during rendering)
 
 Refer to
-[ZK_Developer's_Reference/MVC/Model/Tree_Model#Selection]({{site.baseurl}}/zk_dev_ref/MVC/Model/Tree_Model#Selection)
+[{{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Selection]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Selection)
 in regard to SelectionControl customization.
 
 # Supported Events
@@ -162,11 +162,11 @@ time the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Treerow`](ZK_Component_Reference/Data/Tree/Treerow)`, `[` Treechildren`](ZK_Component_Reference/Data/Tree/Treechildren)
+`*`[` Treerow`]({{site.baseurl}}/zk_component_ref/data/tree/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/data/tree/treechildren)
 
 # Use Cases
 

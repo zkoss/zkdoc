@@ -22,7 +22,7 @@ The example illustrates the usage of the `Span` component in a ZK application. W
 
 Try it
 
-* [Span Example](https://zkfiddle.org/sample/1lopfso/1-ZK-Component-Reference-Span-Example?v=latest&t=Iceblue%20Compact)
+* [Span Example](https://zkfiddle.org/sample/1lopfso/1-ZK-Component-Reference-Span-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Supported Children

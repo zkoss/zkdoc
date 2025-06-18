@@ -20,7 +20,7 @@ to handle it.
 
 Here is an example (from <javadoc>org.zkoss.zul.Radio</javadoc>):
 
-``` java
+```java
 public void service(org.zkoss.zk.au.AuRequest request, boolean everError) {
     final String cmd = request.getCommand();
     if (cmd.equals(Events.ON_CHECK)) {
@@ -49,7 +49,7 @@ plug, the performance of the implementation should be good. In addition,
 this method should return true if it has been processed to avoid any
 further processing.
 
-``` java
+```java
 public class FooAuService implements AuService {
     public boolean service(AuRequest request, boolean everError) {
         final String cmd = request.getCommand();
@@ -70,7 +70,7 @@ add it to a desktop by
 <javadoc method="addListener(java.lang.Object)">org.zkoss.zk.ui.Desktop</javadoc>.
 Then, specify the listener to `WEB-INF/zk.xml`. For example,
 
-``` java
+```java
 package foo;
 public class FooDesktopInit implements DesktopInit {
     public void init(Desktop desktop,  Object request) throws Exception {
@@ -81,7 +81,7 @@ public class FooDesktopInit implements DesktopInit {
 
 and, in `WEB-INF/zk.xml`
 
-``` xml
+```xml
 <listener>
     <listener-class>foo.FooDesktopInit</listener-class>
 </listener>
@@ -95,7 +95,7 @@ To plug it to the component, you could invoke
 # Client Event Declaration
 
 As described in [the previous
-section](ZK_Client-side_Reference/Communication/AU_Requests/Client-side_Firing),
+section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
 a widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) will be
 sent to the server, only if *the server needs it*.
 
@@ -104,7 +104,7 @@ To declare an event that a server *might* need it, you have to invoke
 It is a static method and usually called in a static clause as shown
 below.
 
-``` java
+```java
 public class A extends LabelImageElement {
     static {
         addClientEvent(A.class, Events.ON_FOCUS, 0);
@@ -133,7 +133,7 @@ as important by specifying
 <javadoc method="CE_IMPORTANT" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
 as follows.
 
-``` java
+```java
 static {
     addClientEvent(InputElement.class, Events.ON_CHANGE, CE_IMPORTANT|CE_REPEAT_IGNORE);
 }
@@ -155,7 +155,7 @@ straightforward by specifying the `toServer` option in
 <javadoc directory="jsdoc" method="opts">zk.Event</javadoc> when
 instantiating an event. For example,
 
-``` javascript
+```javascript
 zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
 
@@ -165,5 +165,5 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
     implements
     <javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>.
     Please refer to [ZK Developer's Reference: Event
-    Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Listening)
+    Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening)
     for details.

@@ -11,7 +11,7 @@ receives URL requests sent by the users.
 Notice that you must specify `load-on-startup` since many other servlets
 depend on the ZK loader.
 
-``` xml
+```xml
 <load-on-startup>1</load-on-startup>
 ```
 
@@ -83,7 +83,7 @@ It is suggested to map this servlet to the `zul` and `zhtml` extensions
 as shown below to process ZUML pages. It is OK if you want to prefer to
 use `xul` and `html` as the extension; just map them to ZK Loader too.
 
-``` xml
+```xml
     <servlet>
         <description>ZK loader for evaluating ZUML pages</description>
         <servlet-name>zkLoader</servlet-name>
@@ -110,12 +110,12 @@ sample]({{site.baseUrl}}/zk_config_ref/web.xml/Sample_of_web.xml).
 # Map URL to Richlets
 
 Assume you have a
-[richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet)
+[richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)
 named `foo.FooRichlet`. Then, you could configure it as follows.
 
 First, declare the richlet:
 
-``` xml
+```xml
 <richlet>
     <richlet-name>Foo</richlet-name>
     <richlet-class>foo.FooRichlet</richlet-class>
@@ -124,7 +124,7 @@ First, declare the richlet:
 
 Second, map the richlet to any number of URL you want:
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Foo</richlet-name>
     <url-pattern>/foo</url-pattern>
@@ -140,7 +140,7 @@ following declaration to `web.xml`. Once enabled, you can add as many as
 richlets as you want without modifying `web.xml` any more. Of course,
 `url-pattern` could be any pattern you prefer.
 
-``` xml
+```xml
 <servlet-mapping>
     <servlet-name>zkLoader</servlet-name>
     <url-pattern>/zk/*</url-pattern><!-- any pattern you prefer -->

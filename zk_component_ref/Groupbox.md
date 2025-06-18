@@ -6,25 +6,23 @@
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
 - Java API: <javadoc>org.zkoss.zul.Groupbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Groupbox</javadoc>
-- Style Guide:
-  [Groupbox](ZK_Style_Guide/XUL_Component_Specification/Groupbox)
 
 # Employment/Purpose
 
 A group box is used to group components together. A border is typically
 drawn around the components to show that they are related. The label
 across the top of the group box can be created by using [
-Caption](ZK_Component_Reference/Containers/Caption)
+Caption]({{site.baseurl}}/zk_component_ref/containers/caption)
 component. It works much like the HTML legend element. Unlike [
-Window](ZK_Component_Reference/Containers/Window), a group
+Window]({{site.baseurl}}/zk_component_ref/containers/window), a group
 box is not an owner of the ID space. It cannot be overlapped or popped
 up.
 
 # Example
 
-![](images/ZKComRef_Groupbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Groupbox_Example.png)
 
-``` xml
+```xml
  <groupbox width="250px">
      <caption label="Fruits"/>
      <radiogroup>
@@ -37,7 +35,7 @@ up.
 
 ## Java Example
 
-``` java
+```java
 Groupbox gb = new Groupbox();
 
 new Caption("Here is Caption").setParent(gb);
@@ -62,9 +60,9 @@ gb.setParent(outer);
 
 Specify the CSS style for the content block of the groupbox.
 
-![](images/ZKComRef_Groupbox_ContentStyle.png)
+![](/zk_component_ref/images/ZKComRef_Groupbox_ContentStyle.png)
 
-``` xml
+```xml
 <groupbox width="250px" mold="3d"
     contentStyle="border: 3px blue dashed;border-top:0px">
     <caption label="Fruits"/>
@@ -80,9 +78,9 @@ Specify the CSS style for the content block of the groupbox.
 
 Specify the CSS class for the content block of the groupbox.
 
-![](images/ZKComRef_Groupbox_ContentStyle.png)
+![](/zk_component_ref/images/ZKComRef_Groupbox_ContentStyle.png)
 
-``` xml
+```xml
 <zk>
 <style>
 .mygroupbox-cnt {
@@ -110,12 +108,12 @@ Specify whether the groupbox can be collapsed or not.
 
 For example,
 
-``` xml
+```xml
 <groupbox width="250px" mold="3d" closable="true">
 ```
 
 **Note:** the function can only be applied when the [
-Caption](ZK_Component_Reference/Containers/Caption) exists.
+Caption]({{site.baseurl}}/zk_component_ref/containers/caption) exists.
 
 ## Open/Close
 
@@ -124,7 +122,7 @@ Default: **true**
 Specify the display of the groupbox, whether it is open or closed. For
 example,
 
-``` xml
+```xml
 <groupbox width="250px" mold="3d" open="false">
 ```
 
@@ -142,9 +140,9 @@ visually. It is efficient, but it has some limitations:
 
 If it is an issue, you could use the 3d mold instead.
 
-![](images/groupbox-3d.jpg)
+![](/zk_component_ref/images/groupbox-3d.jpg)
 
-``` xml
+```xml
  <groupbox width="250px" mold="3d">
      <caption label="Fruits"/>
      <radiogroup>
@@ -165,7 +163,7 @@ groupbox, the limitation is gone.
 If you prefer to use the 3d mold as default, you could configure ZK by
 adding the following to `/WEB-INF/zk.xml`
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.Groupbox.mold</name>
     <value>3d</value>
@@ -203,7 +201,7 @@ component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -226,13 +224,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/groupbox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/groupbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>3d</p>
 </center></td>
-<td>![](images/groupbox_mold_3d.png)</td>
+<td>![](/zk_component_ref/images/groupbox_mold_3d.png)</td>
 </tr>
 </tbody>
 </table>

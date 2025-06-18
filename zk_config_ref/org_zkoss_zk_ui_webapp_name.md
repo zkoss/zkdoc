@@ -7,13 +7,13 @@ Default: `ZK`
 It specifies the application name. It is the return value of
 <javadoc method="getAppName()" type="interface">org.zkoss.zk.ui.WebApp</javadoc>.
 It also determins the default title of
-[Messagebox](ZK_Component_Reference/Supporting_Classes/Messagebox)
+[Messagebox]({{site.baseurl}}/zk_component_ref/supporting_classes/messagebox)
 and build-in warning/error dialogs e.g. file upload size exceeding
 error.
 
 For example,
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
 <preference>
     <name>org.zkoss.zk.ui.WebApp.name</name>

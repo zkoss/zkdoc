@@ -1,5 +1,5 @@
  With [component
-definitions](ZK_Client-side_Reference/Language_Definition/component),
+definitions]({{site.baseurl}}/zk_client_side_ref/language_definition/component),
 we could specify the initial values for the properties, attributes and
 annotations of a component. If you want to set the initial value of a property (such as `showTodayLink` for `Datebox`, or any other property for any component) globally across your application, you can use the language addon mechanism described above.
 
@@ -22,7 +22,7 @@ of all windows in a ZUML document, then we could use [the component
 directive](ZUML_Reference/ZUML/Processing_Instructions/component)
 as follows.
 
-``` xml
+```xml
 <?component name="window" extends="window" border="normal"?>
 <window title="Border"/>
 ```
@@ -31,11 +31,11 @@ as follows.
 
 If you prefer to have the same initial value for all ZUML documents, you
 could specify it in [a language
-addon](ZK_Client-side_Reference/Language_Definition). For
+addon]({{site.baseurl}}/zk_client_side_ref/language_definition). For
 example, we could prepare a file called `WEB-INF/lang-addon.xml` with
 the following content:
 
-``` xml
+```xml
 <language-addon>
     <addon-name>myapp</addon-name>
     <language-name>xul/html</language-name>
@@ -53,14 +53,14 @@ the following content:
 Then, we could specify this file by adding the following content to
 `WEB-INF/zk.xml`:
 
-``` xml
+```xml
     <language-config>
         <addon-uri>/WEB-INF/lang-addon.xml</addon-uri>
     </language-config>
 ```
 
 For more information, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_language-config_Element).
+Reference]({{site.baseurl}}/zk_config_ref/the_language-config_element).
 
 # Molds
 
@@ -73,7 +73,7 @@ property. As shown, the library is named as *`ClassName`*`.mold`. For
 example, if you would like to specify `trendy` as the initial mold of a
 button, then you could add the following to `WEB-INF/zk.xml`:
 
-``` xml
+```xml
     <library-property>
         <name>org.zkoss.zul.Button.mold</name>
         <value>trendy</value>
@@ -84,7 +84,7 @@ button, then you could add the following to `WEB-INF/zk.xml`:
 
 Like properties, you could assign an attribute's initial value for a
 given component in the whole application (like calling
-\[<https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html#setAttribute(java.lang.String,%20java.lang.Object,%20boolean>)
+\[<https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html#setAttribute(java.lang.String,_java.lang.Object,_boolean>)
 Component.setAttribute()\]).
 
 Notice that the initial values are applicable only to the component
@@ -102,10 +102,10 @@ initial value of a custom attribute in a ZUML document.
 
 Similar to customizing the initial value of a property, you could
 specify the following in [a language
-addon](ZK_Client-side_Reference/Language_Definition) to
+addon]({{site.baseurl}}/zk_client_side_ref/language_definition) to
 assign an initial value of a attribute to a component.
 
-``` xml
+```xml
 <language-addon>
     <addon-name>myapp</addon-name>
     <language-name>xul/html</language-name>

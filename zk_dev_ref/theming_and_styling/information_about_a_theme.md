@@ -14,7 +14,7 @@ files). Standard theme information is provided by
 
 ## Example
 
-``` java
+```java
 import org.zkoss.web.theme.Theme;
 
 public class MyTheme extends Theme {

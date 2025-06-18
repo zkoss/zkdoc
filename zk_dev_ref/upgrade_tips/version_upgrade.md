@@ -10,7 +10,7 @@ fall-back mechanism is available.
 
 An introductory smalltalk is published for every MAJOR and MINOR
 release. For example [ New Features of ZK
-9.5](Small_Talks/2020/September/New_Features_of_ZK_9.5.0).
+9.5](https://www.zkoss.org/wiki/Small_Talks/2020/September/New_Features_of_ZK_9.5.0).
 The smalltalk highlights the most important changes as well as provides
 upgrade tips for upgrading to that specific version. View [all New
 Features articles](https://www.zkoss.org/wiki/Category:New_Features).
@@ -185,7 +185,7 @@ title="wikilink"> Release Smalltalk</a></p></td>
 </table>
 
 [Check all security fixes in the
-tracker](https://tracker.zkoss.org/issues/?jql=labels%20%3D%20security)
+tracker](https://tracker.zkoss.org/issues/?jql=labels_%3D_security)
 
 # Upgrade Process
 
@@ -208,13 +208,13 @@ To estimate the upgrading effort, we suggest a checklist:
 1.  Check Custom Components
       
     check if there is any
-    [ZK_Component_Development_Essentials/Creating_the_Configuration_Files/The_language-addon](ZK_Component_Development_Essentials/Creating_the_Configuration_Files/The_language-addon)
+    [{{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language-addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language-addon)
     that might declare custom components. Since you might need to review
     it after the upgrade.
 2.  Check configuration description (zk.xml)
       
     Check each property in zk.xml upon [ ZK Configuration
-    Reference](ZK_Configuration_Reference/zk.xml) to see if
+    Reference]({{site.baseurl}}/zk_config_ref/zk.xml) to see if
     there is any change in the new version.
 3.  Check Custom Appearance (CSS)
       

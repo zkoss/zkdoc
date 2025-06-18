@@ -55,7 +55,7 @@ For ZUL pages, we put them in separate folders for each chapter
 under `src/main/webapp/`. Under "WEB-INF" folder, **web.xml** contains
 minimal configuration to run ZK and for its detail please refer to [ ZK
 Installation Guide \\ Create and Run Your First ZK Application
-Manually]({{site.baseurl}}/zk_installation_guide/Quick%20Start/Create%20and%20Run%20Your%20First%20ZK%20Application%20Manually).
+Manually]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_manually).
 The "zk.xml" is optional configuration descriptor of ZK. Provide this
 file if you need to configure ZK differently from the default behavior.
-Refer to [ZK Configuration Reference/zk.xml](https://books.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml) for more detail.
+Refer to [ZK Configuration Reference/zk.xml](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_config_ref/zk.xml) for more detail.

@@ -3,7 +3,7 @@
 # Combobox
 
 - Component Reference:
-  [Combobox](ZK_Component_Reference/Input/Combobox)
+  [Combobox]({{site.baseurl}}/zk_component_ref/input/combobox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
@@ -17,7 +17,7 @@ Automatically disabled APIs:
 
 Big icons for tablet devices
 
-![](images/Combobox_Tablet_Example.png)
+![](/zk_component_ref/images/Combobox_Tablet_Example.png)
 
 # Version History
 

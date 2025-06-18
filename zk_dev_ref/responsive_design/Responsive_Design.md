@@ -46,9 +46,9 @@ sources](https://github.com/zkoss/zkbooks/tree/master/developersreference/develo
 
 - Fluid design: Elements are resized, but their layout does not change.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Fluid.png)
+![]({{site.baseurl}}/zk_dev_ref/images/fluid.png)
 
 - Responsive design: A different layout is generated based on the size
   of screen.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Responsive.png)
+![]({{site.baseurl}}/zk_dev_ref/images/responsive.png)

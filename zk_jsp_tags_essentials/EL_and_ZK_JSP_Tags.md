@@ -10,7 +10,7 @@ Loader.
 
 Please take a look at the sample code below:
 
-``` xml
+```xml
 <zk:page>
     <zk:window id="myWin" title="My window's title.">
     </zk:window>
@@ -21,7 +21,7 @@ Please take a look at the sample code below:
 In JSP EL, you can access ZK components as JavaBeans using its id. Or
 you can even use your own Java class: For example,
 
-``` xml
+```xml
 <zk:page>
     <zk:window id="myWin" use="org.zkoss.jspdemo.MyWindow" myValue="this is value">
         <h1> ${self.myValue}"<h1/>
@@ -38,7 +38,7 @@ As you can see the \<h1\> tag is inside *myWin*, you can use ZK keyword
 The most powerful feature in ZK JSP EL is that you can also access
 zscript variables directly:
 
-``` xml
+```xml
 <zk:page>
     <zk:zscript>
         String zsStr = "This is a zscript variable";
@@ -52,11 +52,11 @@ zscript variables directly:
 In pure ZK, the variable accessibility scope is based on the concept of
 ID Space(If you don't know what ID Space is for, please refer to [ZK
 Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space)).
+Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space)).
 In ZK JSP environment, it is totally the same as the pure ZK. For
 example:
 
-``` xml
+```xml
 <zk:page>
     <zk:zscript>
         String A = "This is page scope A";
@@ -83,7 +83,7 @@ According to JSP specification, if you want to use scriptlet variable in
 EL or any non scriptlet area, you must put them into request, session,
 or application's attributes. Like this:
 
-``` xml
+```xml
 <%
     String myStr = "scriptlet String";
     request.setAttribute("myStr",myStr);
@@ -108,7 +108,7 @@ Please be careful about using those implicit objects and their life
 cycles. For example, following example will show "null" instead of "This
 is scriptlet string.":
 
-``` xml
+```xml
 <%
     String myStr = "This is scriptlet string.";
     request.setAttribute("myStr",myStr);
@@ -130,7 +130,7 @@ old one. Sometimes in JSTL foreach tag, we want to store the variable of
 iterator in generated ZK components, here the **\<custom-attribute
 ...\>** is an approach:
 
-``` xml
+```xml
 <%
     String[] strArr = new String[5];
     //init myStrs...

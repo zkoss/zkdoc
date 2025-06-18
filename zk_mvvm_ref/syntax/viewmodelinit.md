@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @Init
 
 @Init(superclass=true)
@@ -99,7 +99,7 @@ class CorrectChild extends Parent {
 
 Example
 =======
-``` java
+```java
 public class FooViewModel {
     @Init
     public void initFoo() {

@@ -1,7 +1,7 @@
 
 
 Like a [macro
-component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component),
+component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component),
 a composite component is an approach to compose a component based on a
 template. Unlike a macro component, a composite component has to create
 and wire the child components by itself, and handle ID space if
@@ -17,7 +17,7 @@ it is easier), while using a composite component otherwise.
 >
 > If you'd like to assemble UI at runtime (aka., templating), please
 > refer to [the Templating
-> section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating)
+> section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 > for more information.
 
 # Implement a Composite Component
@@ -43,7 +43,7 @@ argument).
 Suppose we have a template as follows, and it is placed at
 `/WEB-INF/composite/username.zul`.
 
-``` xml
+```xml
 <zk>
   Usename: <textbox id="mc_who"/>
 </zk>
@@ -56,7 +56,7 @@ To implement a Java class we shall:
 1.  Extend from the component class you want.
 2.  (Optional) Implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc> to
     make it an [ID space
-    owner]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space).
+    owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 3.  Render the template in the constructor by the use of
     <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
     or others.
@@ -71,7 +71,7 @@ To implement a Java class we shall:
 
 For example,
 
-``` Java
+```java
 package foo;
 
 import org.zkoss.zk.ui.IdSpace;
@@ -117,9 +117,9 @@ the component with the same ID. Similarly,
 is used to wire event listeners.
 
 For more information, please refer to [the Wire Components
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
 and [Wire Event the Listeners
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners)
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
 sections.
 
 > ------------------------------------------------------------------------
@@ -147,7 +147,7 @@ provides a convenient way to instantiate variable resolvers. For
 example, let us say we'd like to wire Spring-manage beans, then we can
 do as follows.
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver)
 public class Username extends Row implements IdSpace {
     @WireVariable
@@ -171,12 +171,12 @@ automatically. As shown, we annotate
 resolve Spring-managed bean.
 
 For more information, please refer to [the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables).
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 
 ### ID Space
 
 Unless you extend a component that is an [ID space
-owner]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space)
+owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space)
 (such as <javadoc>org.zkoss.zul.Window</javadoc>), all child components
 specified in the template will be in the same ID space as its parent. It
 might be convenient at the first glance. However, it will cause ID
@@ -188,7 +188,7 @@ It can be done easily by implementing an extra interface
 <javadoc>org.zkoss.zk.ui.IdSpace</javadoc>. No other method needs to be
 implemented.
 
-``` java
+```java
 public class Username extends Row implements IdSpace {
 ...
 ```
@@ -205,7 +205,7 @@ directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 Then, we could use it the same way (they are actually primitive
 components). For example,
 
-``` xml
+```xml
 <?component name="username" extends="row" class="foo.Username"?>
 
 <grid>
@@ -227,7 +227,7 @@ There are basic two approaches to define a component in the application
 level:
 
 1.  Define it in an XML file which is called [a language
-    addon](ZK_Client-side_Reference/Language_Definition).
+    addon]({{site.baseurl}}/zk_client_side_ref/language_definition).
 2.  Define it with Java annotations.
 
 ## Define Components in a Language Addon
@@ -237,7 +237,7 @@ definitions or customizing the standard components. For example, you can
 define the username component described in the previous section as
 follows.
 
-``` xml
+```xml
 <language-addon>
     <addon-name>myapp</addon-name>
     <component>
@@ -249,7 +249,7 @@ follows.
 ```
 
 For more information, please refer to [Customization: Component
-Properties]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties#Application-wide_Initialization).
+Properties]({{site.baseurl}}/zk_dev_ref/customization/component_properties#Application-wide_Initialization).
 
 ## Define Components with Java Annotations
 
@@ -258,7 +258,7 @@ described above, you can define the component with Java annotation with
 a utility called [ZK
 Composite](https://github.com/zanyking/ZK-Composite). For example,
 
-``` java
+```java
 @Composite(name="username", macroURI="/WEB-INF/partial/username.zul")
 public class Username extends Rows implements IdSpace {
     @Wire
@@ -284,5 +284,5 @@ annotations.
 Notice that it requires [additional JAR
 files](http://github.com/zanyking/ZK-Composite/downloads), please refer
 to [Small Talks: Define Composite Component using Java Annotation in
-ZK6](Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
+ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
 for the details.

@@ -18,7 +18,7 @@ it is required or not.
 
 Example,
 
-``` xml
+```xml
 <javascript package="zul.box"/>
 ```
 
@@ -34,11 +34,11 @@ It specifies the package to load.
 
 It specifies the URI of the JavaScript file to load. The URI can accept
 [ Classpath Web Resource
-Path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path),
+Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
 `~./` (such as "~./foo/whatever.js").
 
 If this addon [ depends on another
-addon](ZK_Client-side_Reference/Language_Definition/depends),
+addon]({{site.baseurl}}/zk_client_side_ref/language_definition/depends),
 ZK generates its javaScript into a output page's <code>
 
 <head>
@@ -57,7 +57,7 @@ merge several packages into one.
 Since ZK 6, it is allowed to specify the target package in the merge
 attribute. For example,
 
-``` xml
+```xml
 <javascript package="foo.lang" merge="zul.lang"/>
 ```
 
@@ -70,7 +70,7 @@ for packages that shall not be cached, such as your own locale-dependent
 messages.
 
 For more information, please refer to the [Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Minimize_Number_of_JavaScript_Files_to_Load)
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/minimize_number_of_javascript_files_to_load)
 section.
 
 # ondemand

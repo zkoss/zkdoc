@@ -5,19 +5,19 @@ the developer’s application which would respond appropriately telling
 when the widget should update. This interaction is demonstrated in the
 following diagram.
 
-![](images/ZKComDevEss_widget_component_application.png")
+![](images/ZKComDevEss_widget_component_application.png)
 
 For example, when an application invokes the setLabel method to change
 the label of a button component, the setLabel method of corresponding
 button widget (aka., peer widget) will be invoked at the client to
 change the visual appearance (as shown below).
 
-![](images/ZKComDevEss_button_labels.png")
+![](images/ZKComDevEss_button_labels.png)
 
 When the user clicks the button widget, the onClick event will be sent
 back to the server and notify the application (as demonstrated below).
 
-![](images/ZKComDevEss_button_click.png")
+![](images/ZKComDevEss_button_click.png)
 
 In addition to manipulate a component at the server, it is also possible
 to control a widget at the client. For example, an application may hide

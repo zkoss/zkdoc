@@ -17,7 +17,7 @@ component.
 
 For example, (usemacro.zul)
 
-``` xml
+```xml
 <?init zscript="macro.zs"?>
 <?component name="username" macroURI="macro.zul" class="Username"?>
 <window id="wnd">
@@ -28,7 +28,7 @@ For example, (usemacro.zul)
 
 (macro.zs)
 
-``` java
+```java
 import org.zkoss.zk.ui.*;
 import org.zkoss.zul.*;
 
@@ -44,7 +44,7 @@ public class Username extends HtmlMacroComponent {
 
 (macro.zul)
 
-``` xml
+```xml
 <grid id="mc_grid">
     <rows>
         <row id="r">
@@ -61,7 +61,7 @@ Turn off auto wire mechanism by specifying the Library Property
 "org.zkoss.zk.ui.macro.autowire.disabled" to "true" in WEB-INF/zk.xml.
 If you did not specify the Library Property, the default is false.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.macro.autowire.disabled</name>
         <value>true</value>
@@ -73,7 +73,7 @@ or turn off auto forward events by specifying the Library Property
 WEB-INF/zk.xml. If you did not specify the Library Property, the default
 is false.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.macro.autoforward.disabled</name>
         <value>true</value>
@@ -87,7 +87,7 @@ in
 <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
 as follows.
 
-``` java
+```java
 public void afterCompose() {
     super.afterCompose(); //create components
 
@@ -122,7 +122,7 @@ N/A
 </table>
 
 See also events inherited from [ HtmlBasedComponent's Supported
-Events](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_events).
+Events]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_events).
 
 # Supported Children
 

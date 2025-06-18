@@ -1,7 +1,7 @@
 # ZK DSP Functions
 
 ZK provides many useful theme functions that can be used in [
-DSP](ZK_Developer%27s_Reference/Supporting_Utilities/DSP)
+DSP]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
 files. Here we will introduce these functions that are used for CSS
 style.
 
@@ -13,7 +13,7 @@ Here we will only introduce functions that are related to CSS style. To
 use these functions in a DSP page, declare tag library with it's prefix
 as follows:
 
-``` html
+```html
 <%-- *.css.dsp file --%>
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 ```
@@ -72,7 +72,7 @@ Theme functions are defined in
 functions are focused on CSS 3 supported styles. To use these functions
 in a DSP page, declare tag library with it's prefix as follows:
 
-``` html
+```html
 <%-- *.css.dsp file --%>
 <%@ taglib uri="http://www.zkoss.org/dsp/web/theme" prefix="t" %>
 ```
@@ -154,7 +154,7 @@ already defined to ZK LESS mixins. To use ZK LESS mixins, simply import
 
 For example,
 
-``` html
+```html
 @import "~./zul/less/_zkmixins.less";
 
 /* omitted */

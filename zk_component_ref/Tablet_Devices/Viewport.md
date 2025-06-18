@@ -7,7 +7,7 @@
 The default viewport content generated in ZK when using tablet device
 is:
 
-``` xml
+```xml
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 ```
 
@@ -19,7 +19,7 @@ processing instructions.
 ## Library Properties
 
 {% include version-badge.html version=6.5.0 %} The default value of
-[org.zkoss.zul.tablet.meta.viewport.disabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.tablet.meta.viewport.disabled)
+[org.zkoss.zul.tablet.meta.viewport.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.tablet.meta.viewport.disabled)
 property is `false`. If it is set to `true`, ZK won't render viewport
 content for all pages. Thus, users can specify the viewport on each ZUL
 page by [meta
@@ -32,7 +32,7 @@ specific pages by overwriting viewport content in [page
 instruction](ZUML_Reference/ZUML/Processing_Instructions/page)
 as follows:
 
-``` xml
+```xml
 <?page viewport="width=device-width, initial-scale=1.0"?>
 ```
 

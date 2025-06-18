@@ -14,7 +14,7 @@ at the server.
 
 Example,
 
-``` xml
+```xml
 <native-template>
     <native-class>org.zkoss.zk.ui.HtmlNativeComponent</native-class>
 </native-template>

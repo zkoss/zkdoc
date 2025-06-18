@@ -7,7 +7,7 @@ structure doesn't fulfill your requirements, for example, you want to:
 - render some elements in a different position
 
 Then you need to create a custom [
-mold](ZK_Developer%27s_Reference/Theming_and_Styling/Molds)
+mold]({{site.baseurl}}/zk_dev_ref/theming_and_styling/molds)
 to render different DOM elements.
 
 # Create Mold js
@@ -41,15 +41,15 @@ to improve the readability (IE not supported).
 
 With a mold js, you still need to register this custom mold on the
 component. So you need to create a [
-lang-addon.xml](ZK_Client-side_Reference/Language_Definition#Language_Addon)
+lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
 and [ register the custom
-mold](ZK_Client-side_Reference/Language_Definition/component#Custom_Mold).
+mold]({{site.baseurl}}/zk_client_side_ref/language_definition/component#Custom_Mold).
 
 # Apply Custom Mold
 
 Specify the mold name you register in `lang-addon.xml` on target
 component's `mold` attribute.
 
-``` xml
+```xml
 <paging mold="tooltip"/>
 ```

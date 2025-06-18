@@ -25,7 +25,7 @@ If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor
 components.
 
-``` xml
+```xml
 <listbox>
   <custom-attributes org.zkoss.zul.listbox.autoSort="true"/>
 ...

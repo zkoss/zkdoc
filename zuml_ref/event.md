@@ -2,7 +2,7 @@
 
 The current event. It is available for the event listener only.
 
-``` xml
+```xml
 <textbox onChanging="react(event.value)" />
 <combobox onChanging="autoComplete()" />
 <zscript>

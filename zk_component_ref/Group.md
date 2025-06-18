@@ -5,22 +5,21 @@
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
 - Java API: <javadoc>org.zkoss.zul.Group</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
-- Style Guide: [
-  Group](ZK_Style_Guide/XUL_Component_Specification/Group)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 Adds the ability for single level grouping to the [
-Grid](ZK_Component_Reference/Data/Grid).
+Grid]({{site.baseurl}}/zk_component_ref/data/grid).
 
 Default getSclass(): the same as grid's sclass.
 
 # Example
 
-![](images/ZKComRef_Group_Example.png)
+![](/zk_component_ref/images/ZKComRef_Group_Example.png)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <zk>
      Grid support Groupfoot in Group
@@ -98,7 +97,7 @@ the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Row](ZK_Component_Reference/Data/Grid/Row#Supported_Events)
+  Row]({{site.baseurl}}/zk_component_ref/data/grid/row#Supported_Events)
 
 # Supported Children
 
@@ -106,7 +105,7 @@ the component is opened.</p></td>
 
 # Use Cases
 
-[ Grid](ZK_Component_Reference/Data/Grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
 
 # Version History
 

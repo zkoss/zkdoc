@@ -9,14 +9,14 @@ The class must implement the
 `org.zkoss.util.resource.Loader` interface and it must
 have a constructor as follows.
 
-``` java
+```java
 public FooLoader(org.zkoss.zk.ui.WebApp wapp) { //assume FooLoader is the implementation class
      ...
 ```
 
 The default iimplementation is straightforward:
 
-``` java
+```java
 private static class MyLoader extends org.zkoss.web.util.resource.ResourceLoader {
     private final WebApp _wapp;
     private MyLoader(WebApp wapp) {

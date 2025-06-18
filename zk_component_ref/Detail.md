@@ -6,8 +6,7 @@
   detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
 - Java API: <javadoc>org.zkoss.zul.Detail</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
-- Style Guide: [
-  Detail]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Detail)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -21,7 +20,7 @@ multiple detail rows are on the same row.
 
 ![](/zk_component_ref/images/detail.png)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
     Please open/close the +/- button, and the layout of this page shows
@@ -99,7 +98,7 @@ the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

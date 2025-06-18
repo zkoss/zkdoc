@@ -13,7 +13,7 @@ up:
 
 For example,
 
-``` xml
+```xml
 <pivottable id="pivot" />
 <checkbox label="Enable grand total for columns" 
     onCheck='pivot.setGrandTotalForColumns(self.isChecked())' />
@@ -37,7 +37,7 @@ Thus we have provided a macro component to simply the work.
 
 ZUL:
 
-``` xml
+```xml
 <pivottable id="pivot" />
 <pivot-field-control id="pfc" height="300px" /
 ><!-- Remember to specify height -->
@@ -45,7 +45,7 @@ ZUL:
 
 Composer:
 
-``` java
+```java
 public class PivotController extends GenericForwardComposer {
     private Pivottable pivot;
     private TabularPivotModel _model;
@@ -64,14 +64,14 @@ public class PivotController extends GenericForwardComposer {
 
 It will look like:
 
-![](images/ZKPivotEsn_pfc_control_01.png")
+![](images/ZKPivotEsn_pfc_control_01.png)
 
 The fields in the four area are draggable. You can move them to other
 pools, so the model and pivot table will be updated accordingly.
 
 Sort options are available on row and column fields.
 
-![](images/ZKPivotEsn_pfc_control_02.png")
+![](images/ZKPivotEsn_pfc_control_02.png)
 
  
 
@@ -81,7 +81,7 @@ Sort options are available on row and column fields.
 
 You can specify layout on PivotFieldControl:
 
-``` xml
+```xml
 <pivot-field-control height="300px" width="300px" layout="square" />
 <!-- square is the default layout -->
 <pivot-field-control height="600px" width="150px" layout="vertical" />
@@ -90,11 +90,11 @@ You can specify layout on PivotFieldControl:
 
 vertical:
 
-![](images/ZKPivotEsn_pfc_control_03_v.png")
+![](images/ZKPivotEsn_pfc_control_03_v.png)
 
 horizontal:
 
-![](images/ZKPivotEsn_pfc_control_03_h.png")
+![](images/ZKPivotEsn_pfc_control_03_h.png)
 
 ### Labels
 
@@ -106,7 +106,7 @@ Setting by custom attributes, you shall do like the following:
 
 ZUL
 
-``` xml
+```xml
 <pivot-field-control id="pfc" height="300px">
     <custom-attributes rowListTitle="My Rows:" />
 </pivot-field-control>
@@ -117,19 +117,19 @@ Or, to set the label by label files, you need to add a prefix
 
 zk-label.properties<reference>For more information, please refer to [ZK
 Developer's Reference:
-Labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels).</reference>
+Labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).</reference>
 
-``` perl
+```perl
 pivot.fieldControl.rowListTitle=My Rows
 ```
 
 Then you shall see the label is changed:
 
-![](images/ZKPivotEsn_pfc_control_04.png")
+![](images/ZKPivotEsn_pfc_control_04.png)
 
 All the available keys are defined as the following:
 
-![](images/ZKPivotEsn_pfc_control_05.png")
+![](images/ZKPivotEsn_pfc_control_05.png)
 
 > ------------------------------------------------------------------------
 >

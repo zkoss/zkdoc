@@ -1,8 +1,8 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can also define a customer rendering with a template for a tree:
 
-``` xml
+```xml
 <tree model="${files}">
     <treecols>
         <treecol label="Path"/>

@@ -23,7 +23,7 @@ We can use simplified syntax to init view model. Notice that the id of the view 
 @init at Component's Attribute
 ==============================
 It's common to use it to initialize a component's attribute with a constant value or a ViewModel's property. The binder loads it once and doesn't synchronize it afterward during following user interaction.
-``` xml
+```xml
     <label value="@init(vm.message)"/>
 
     <label value="@init(123)"/>

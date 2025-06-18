@@ -7,30 +7,30 @@ can apply to the following components:
 <tbody>
 <tr class="odd">
 <td><ul>
-<li><a href="ZK_Component_Reference/Data/Listbox"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox"
 title="wikilink">Listbox</a>
 <ul>
-<li><a href="ZK_Component_Reference/Data/Listbox/Listhead"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox/listhead"
 title="wikilink">Listhead</a></li>
-<li><a href="ZK_Component_Reference/Data/Listbox/Listheader"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox/listheader"
 title="wikilink">Listheader</a></li>
 </ul></li>
 </ul></td>
 <td><ul>
-<li><a href="ZK_Component_Reference/Data/Grid" title="wikilink">Grid</a>
+<li><a href="{{site.baseurl}}/zk_component_ref/data/grid" title="wikilink">Grid</a>
 <ul>
-<li><a href="ZK_Component_Reference/Data/Grid/Columns"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/grid/columns"
 title="wikilink">Columns</a></li>
-<li><a href="ZK_Component_Reference/Data/Grid/Column"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/grid/column"
 title="wikilink">Column</a></li>
 </ul></li>
 </ul></td>
 <td><ul>
-<li><a href="ZK_Component_Reference/Data/Tree" title="wikilink">Tree</a>
+<li><a href="{{site.baseurl}}/zk_component_ref/data/tree" title="wikilink">Tree</a>
 <ul>
-<li><a href="ZK_Component_Reference/Data/Tree/Treecols"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/tree/treecols"
 title="wikilink">Treecols</a></li>
-<li><a href="ZK_Component_Reference/Data/Tree/Treecol"
+<li><a href="{{site.baseurl}}/zk_component_ref/data/tree/treecol"
 title="wikilink">Treecol</a></li>
 </ul></li>
 </ul></td>
@@ -42,8 +42,8 @@ title="wikilink">Treecol</a></li>
 
 There are basically two approaches to control the width of a column:
 width and hflex. They could be specified in the column's header, such as
-[column](ZK_Component_Reference/Data/Grid/Column) and
-[listheader](ZK_Component_Reference/Data/Listbox/Listheader ).
+[column]({{site.baseurl}}/zk_component_ref/data/grid/column) and
+[listheader]({{site.baseurl}}/zk_component_ref/data/listbox/listheader ).
 
 While width
 (<javadoc method="setWidth(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
@@ -83,7 +83,7 @@ different use cases.
 
 ## Data Length : Short
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
     String[] msgs2 = {
@@ -119,14 +119,14 @@ different use cases.
   width specification. (the exact widths of columns are rendered by
   browser automatically)
 
-![](images/ZK5DevRef_GridColumn_Default.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_Default.png)
 
 ### Proportional Width
 
 You can use the **hflex** we have mentioned in [previous
-section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Flexibility_and_Resizing "wikilink").
+section]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Flexibility_and_Resizing "wikilink").
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" hflex="1"/>
             <listheader label="Description" hflex="2"/>
@@ -134,14 +134,14 @@ section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex#Flexibility_and
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_hflex.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_hflex.png)
 
 ### Minimum Flexibility
 
 In the case of **hflex=min**, column's width will just fit the contents.
 As you can see, there might be blank space on the right of the listbox.
 
-``` xml
+```xml
         <zscript><![CDATA[
     String[] msgs2 = {
             "Application Developer's Perspective",
@@ -160,13 +160,13 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_nospan.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_nospan.png)
 
 - If you want your contents to fill the whole grid to eliminate the
   blank space, you can set **span=true** to make it proportionally
   expanded.
 
-``` xml
+```xml
     <listbox width="800px" span="true">
     <listhead>
             <listheader label="Product" hflex="min"/>
@@ -175,13 +175,13 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_span.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_span.png)
 
 - If you want the rest of the space to be assigned to one of the
   columns, set **span** to a number. The number is 0-based index of
   columns.
 
-``` xml
+```xml
     <listbox width="800px" span="0">
     <listhead>
             <listheader label="Product" hflex="min" />
@@ -190,13 +190,13 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_span0.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_span0.png)
 
 - If you want the size of the Listbox determined by its content, assign
   **hflex=min** on the Grid, and make sure all the Listheaders either
   have **hflex=min** or a fixed **width**.
 
-``` xml
+```xml
     <listbox hflex='min'>
     <listhead>
             <listheader label="Product" hflex="min" />
@@ -205,11 +205,11 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_sizedByCnt.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_sizedByCnt.png)
 
 ## Data Length : Long
 
-``` xml
+```xml
         <zscript><![CDATA[
         String[] msgs2 = {
             "Application Developer's Perspective", 
@@ -225,7 +225,7 @@ As you can see, there might be blank space on the right of the listbox.
 - **Default** : ZK data component will wrap the text to fit the width of
   column.
 
-![](images/ZK5DevRef_GridColumn_DefaultLong.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultLong.png)
 
 ### Scrollbar
 
@@ -242,7 +242,7 @@ This is a simple way to avoid text wrapped by given proper width.
 However, it can be difficult if you don't know the content length
 beforehand.
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" width="250px"/>
             <listheader label="Description" width="470px"/>
@@ -250,7 +250,7 @@ beforehand.
     </listhead>
 ```
 
-![](images/ZK5DevRef_GridColumn_DefaultWidth.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultWidth.png)
 
 ### Minimum Flexibility
 
@@ -261,7 +261,7 @@ beforehand.
   minimum hflex or specifying a width could disappear if not enough
   space in the listbox.
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" hflex="min" />
             <listheader label="Description" hflex="min" />
@@ -270,13 +270,13 @@ beforehand.
  
 ```
 
-![](images/ZK5DevRef_GridColumn_LongHflex.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_LongHflex.png)
 
 ### Mixed Flexibility and width
 
 #### Width + Hflex proportion
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" width="120px" />
             <listheader label="Description" hflex="2" />
@@ -285,11 +285,11 @@ beforehand.
  
 ```
 
-![](images/ZK5DevRef_GridColumn_MixhflexnumWidth.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexnumWidth.png)
 
 #### Width + Hflex min
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" width="150px" />
             <listheader label="Description" hflex="min" />
@@ -298,11 +298,11 @@ beforehand.
  
 ```
 
-![](images/ZK5DevRef_GridColumn_MixhflexMinWidth.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexMinWidth.png)
 
 #### Width + Hflex min + Hflex proportion
 
-``` xml
+```xml
     <listhead>
             <listheader label="Product" width="120px" />
             <listheader label="Description" hflex="min" />
@@ -311,7 +311,7 @@ beforehand.
  
 ```
 
-![](images/ZK5DevRef_GridColumn_MixhflAllh.png)
+![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflAllh.png)
 
 ## Data Length : Dynamic
 

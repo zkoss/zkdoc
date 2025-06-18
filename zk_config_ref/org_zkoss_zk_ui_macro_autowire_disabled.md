@@ -6,7 +6,7 @@
 
 Turn on/off auto wire mechanism for macro component
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.macro.autowire.disabled</name>
         <value>true</value>

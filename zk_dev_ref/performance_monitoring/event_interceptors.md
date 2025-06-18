@@ -11,7 +11,7 @@ and
 Once implemented, you could register it by specifying the following in
 `WEB-INF/zk.xml` (assume the class is called foo.MyEventMeter):
 
-``` xml
+```xml
 <zk>
     <listener>
         <listener-class>foo.MyEventMeter</listener-class>

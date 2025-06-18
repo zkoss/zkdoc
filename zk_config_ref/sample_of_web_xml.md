@@ -1,4 +1,4 @@
-``` xml
+```xml
 
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

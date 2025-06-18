@@ -2,7 +2,7 @@ The allowed child elements include `session-timeout` and
 `max-desktops-per-session`. You might have multiple `session-config`
 elements in one `zk.xml`.
 
-``` xml
+```xml
  <session-config>
      <session-timeout>1800</session-timeout>
      <timer-keep-alive>false</timer-keep-alive>

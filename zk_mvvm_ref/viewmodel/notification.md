@@ -242,14 +242,14 @@ public class DurationViewModel  {
 
 You can add an `@AutoNotifyChange` on a view model class to enable this feature explicitly or specify the library property `org.zkoss.bind.viewModel.autoNotifyChange.enabled` to `true` in zk.xml to enable this feature by default without the need of an annotation.
 
-``` java
+```java
 @AutoNotifyChange
 public class MyVM {
 
 }
 ```
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.viewModel.autoNotifyChange.enabled</name>
     <value>true</value>
@@ -258,7 +258,7 @@ public class MyVM {
 
 When Auto NotifyChange is turned on, you don't have to specify any `@NotifyChange` on `@Command` methods anymore. Instead you should call the setter to notify ZK.
 
-``` java
+```java
 @Command
 public void cmd(@BindingParam("name") String name) {
     // _name = name; // old

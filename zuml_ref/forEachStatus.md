@@ -5,7 +5,7 @@ The status of an iteration. It is an instance of
 ZK exposes the information relative to the iteration taking place when
 evaluating the iterative element.
 
-``` xml
+```xml
 <listbox width="100px">
     <listitem label="${forEachStatus.index}: ${each}" forEach="Best, Better, Good"/>
 </listbox>
@@ -19,7 +19,7 @@ To retrieve the information of the outer iterator if an iteration is
 nested, you could use
 <javadoc method="getPrevious()" type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>.
 
-``` xml
+```xml
 <listbox forEach="${matrix}">
     <listitem label="${forEachStatus.previous.each.label}: ${each}" forEach=${each.items}/> <!-- nested-->
 </listbox>

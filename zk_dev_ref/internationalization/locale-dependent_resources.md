@@ -10,9 +10,9 @@ browser-dependent resources including JavaScript, CSS, and images.
 ZK can handle this for you automatically by specifying a URL with
 **asterisk** `*`. This feature is supported by all components that
 accept a URL, e.g. the src of [
-\<script\>](ZK%20Component%20Reference/Essential%20Components/Script)
+\<script\>](ZK_component_reference/essential_components/Script)
 or [
-\<?script?\>](ZUML%20Reference/ZUML/Processing%20Instructions/script).
+\<?script?\>](ZUML_Reference/ZUML/Processing_Instructions/script).
 The algorithm is as follows.
 
 ## Absolute or Relative Path
@@ -53,13 +53,13 @@ For example:
 
 **zul**
 
-``` xml
+```xml
 <style src="/i18n/css-*/mycss*.css" />
 ```
 
 The result in an HTML with Chrome:
 
-``` html
+```html
 <link ... href="/i18n/css-saf/mycss.css" ...>
 ```
 

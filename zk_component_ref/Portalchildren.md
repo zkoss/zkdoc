@@ -7,23 +7,22 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Portalchildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Portalchildren</javadoc>
-- Style Guide: [
-  Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 The column of [
-Portallayout](ZK_Component_Reference/Layouts/Portallayout)
+Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
 
 Child of Portalchildren can only be [
-Panel](ZK_Component_Reference/Containers/Panel)
+Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
 
 # Example
 
-![](images/ZKComRef_Portallayout_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Portallayout_Example.PNG)
 
-``` xml
+```xml
 <portallayout>
     <portalchildren width="50%">
         <panel height="150px" title="Yahoo">
@@ -73,9 +72,9 @@ move it to the appropriate column. If the panel does not have a panel
 title, you can drag the small dragging button at the top of the panel to
 move.
 
-![](images/Kanban-1.png)
+![](/zk_component_ref/images/Kanban-1.png)
 
-``` xml
+```xml
 <zk>
   <style>
     .z-panel {
@@ -147,11 +146,11 @@ Meaningful only if frame design is applied.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Panel`](ZK_Component_Reference/Containers/Panel)
+`*`[` Panel`]({{site.baseurl}}/zk_component_ref/containers/panel)
 
 # Use Cases
 

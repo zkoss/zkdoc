@@ -2,7 +2,7 @@
 
 Syntax
 ======
-``` java
+```java
 @SmartNotifyChange("anotherProperty")
 
 @SmartNotifyChange({"firstProperty", "secondProperty"})
@@ -21,7 +21,7 @@ Usually the annotation is used with `@Command`.
 
 Example
 =======
-``` java
+```java
 public class OrderVM {
 
     //other code...

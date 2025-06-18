@@ -30,5 +30,5 @@ For all areas, we use *`<apply>`*, [a shadow component]({{site.baseurl}}/zk_esse
     folder.
 -   Line 6, 9, 12, 15: Specify a separated zul path at `templateURI` attribute to inject a page into current page.
 
-For CE users, you still can use [`<include>`](https://www.zkoss.org/wiki/ZK%20Component%20Reference/Essential%20Components/Include) as an alternative to `<apply>`.
+For CE users, you still can use [`<include>`](https://www.zkoss.org/wiki/ZK_component_reference/essential_components/Include) as an alternative to `<apply>`.
 Note: the `<include>` component's API is different from `<apply>`. For example, `<include>` uses the `src="..."` attribute instead of the `templateURI="..."` attribute to target the included page. Please refer to the documentation link above for more informations.

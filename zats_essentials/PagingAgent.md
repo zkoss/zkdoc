@@ -17,7 +17,7 @@ index** (**start from zero**) instead of page number (start from one).
 
 The following code demonstrates the usage:
 
-``` java
+```java
 
         ComponentAgent paging = desktop.query("listbox > paging");
         paging.as(PagingAgent.class).moveTo(1);

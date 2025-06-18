@@ -11,21 +11,21 @@ If you visit a page with the URL like
 
 Then you can retrieve parameters' value with the syntax below:
 
-``` xml
+```xml
 ${param.p1}
 ${param.p2}
 ```
 
 And the reulst will be:
 
-``` xml
+```xml
 v1
 v2
 ```
 
 To retrieve all possible parameter values, use `paramValues` instead.
 
-``` xml
+```xml
 ${param.something}
 ${paramValues.something[0]}
 ```
@@ -33,7 +33,7 @@ ${paramValues.something[0]}
 Notice that, in zscript, there is no `paramValues`. `Param` is a map of
 possible values, `Map<String, String[]>`.
 
-``` xml
+```xml
 <zscript>
 String[] values = param.get("something");
 </zscript>

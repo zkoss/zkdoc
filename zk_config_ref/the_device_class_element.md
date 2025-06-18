@@ -10,7 +10,7 @@ interface. Instead of implementing it from scratch, you can derive from
 the proper implementation, such as
 `org.zkoss.zk.device.AjaxDevice`.
 
-``` xml
+```xml
 <device-config>
     <device-type>ajax</device-type>
     <device-class>my.MyAjaxDevice</device-class>

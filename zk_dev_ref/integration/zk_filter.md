@@ -8,7 +8,7 @@ HTML, it must be a valid XHTML document.
 To enable ZK Filter, you have to configure `WEB-INF/web.xml`, as shown
 below.
 
-``` xml
+```xml
 <filter>
     <filter-name>zkFilter</filter-name>
     <filter-class>org.zkoss.zk.ui.http.DHtmlLayoutFilter</filter-class>
@@ -41,7 +41,7 @@ forward, remember to specify the dispatcher element with REQUEST and/or
 INCLUDE. Consult the Java Servlet Specification for details. For
 example,
 
-``` xml
+```xml
 <filter-mapping>
     <filter-name>zkFilter</filter-name>
     <url-pattern>/my/dyna/*</url-pattern>
@@ -60,7 +60,7 @@ component](ZUML_Reference/ZUML/Languages/XHTML). It is
 convenient if you want to manipulate them dynamically. However, it costs
 more memory since ZK has to maintain the states of each HTML tag. Thus,
 it is suggested to use [the native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 for the portion whose content won't be changed dynamically.
 
 # ZK Filter versus UI Factory
@@ -73,4 +73,4 @@ generally done by extending from
 <javadoc>org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc> and overriding
 <javadoc method="getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.
 For more information, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element).
+Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).

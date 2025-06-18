@@ -10,7 +10,7 @@ Cache One Page Size of Data
 
 Assume we are going to display large amount of personal information in a *Listbox*. Because there are too many of them, they cannot be displayed at one time. One way is set "rows" to limit the visible rows, and another way is to use "paging" mold.
 
-``` xml
+```xml
 <window width="400px" apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.advance.HugeDataVM')">
     Use custom ListModel:
@@ -36,7 +36,7 @@ Assume we are going to display large amount of personal information in a *Listbo
 As querying all data is time-consuming, we need to implement a custom [ListModel](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) for the *Listbox*. This custom `ListModel` contains no data at the beginning, it queries data from a database until each time the *Listbox* request the data from it. Because we have limited visible rows, when a *Listbox* renders its *Listitem*s, it only gets part of data for those visible rows instead of all data. During one execution, *Listbox* will call `ListModel.getElememtAt(int index)` several times to get a range of data it requires for rendering. To avoid performing one query for each `getElementAt()` calling, we query a page size of data and store it as the execution's attribute at the first `getElementAt()` calling. In the subsequent callings, we just get the item from the cache without querying to a database. This implementation reduces query time drastically and user still can browse all data. Thus this implementation solves the problem and works fine under *Listbox*'s paging or default mold.
 
 #### Live cached ListModel implementation
-``` java
+```java
 public class LivePersonListModel extends AbstractListModel<Person> {
 
     private PersonDao personDao;

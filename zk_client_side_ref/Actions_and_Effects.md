@@ -1,11 +1,11 @@
 Here we describe how to provide more effects for [client-side
-actions]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Actions_and_Effects).
+actions]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects).
 
 The allowed effects are actually the names of methods defined in
 <javadoc directory="jsdoc">zk.eff.Actions</javadoc>. Thus, to add a new
 effect, you have to add a new method to it. For example,
 
-``` xml
+```xml
 zk.eff.Actions.fooIn = function (n, opts) {
     //your own effect to make the node visible, such as
     //zk(n).slideIn(this, opts);
@@ -14,7 +14,7 @@ zk.eff.Actions.fooIn = function (n, opts) {
 
 Then, you could use it in the client-side action:
 
-``` xml
+```xml
 <div action="show: fooIn">
 ....
 </div>
@@ -31,7 +31,7 @@ Notice that, before invoking jQuery's effects, you should invoke
 <javadoc directory="jsdoc" method="defaultAnimaOpts(zk.Widget, _global_.Map, _global_.Array, boolean)">\_global\_.jqzk</javadoc>
 to prepare the initial options for animation. For example,
 
-``` javascript
+```javascript
 this.defaultAnimaOpts(wgt, opts, prop, true).jq
     .css(css).show().animate(anima, { //the rest depending the jQuery effect you use
         queue: false, easing: opts.easing, duration: opts.duration || 400,

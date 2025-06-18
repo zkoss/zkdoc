@@ -31,7 +31,7 @@ If there is no ViewModel attribute specified, the binder itself will become the 
 
 Wire Variable Automatically
 ---------------------------
-If a member field is annotated by `@WireVariable` in a ViewModel, the variable (if existed) will be wired into this field automatically before connecting Binder and ViewModel. Read [Wire Variable]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables) for more detail
+If a member field is annotated by `@WireVariable` in a ViewModel, the variable (if existed) will be wired into this field automatically before connecting Binder and ViewModel. Read [Wire Variable]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables) for more detail
 about wiring variables. Following is a example that shows how to wire a `messagService` variable to the ViewModel.
 ```java
 public class OrderVM {

@@ -6,8 +6,6 @@
 - Java API: <javadoc>org.zkoss.zul.Menupopup</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.menu.Menupopup</javadoc>
-- Style Guide: [
-  Menupopup](ZK_Style_Guide/XUL_Component_Specification/Menupopup)
 
 # Employment/Purpose
 
@@ -25,9 +23,9 @@ Default HtmlBasedComponent.getSclass(): menupopup.
 
 # Example
 
-![](images/ZKComRef_Menubar.png)
+![](/zk_component_ref/images/ZKComRef_Menubar.png)
 
-``` xml
+```xml
 
 <menubar id="menubar">
     <menu label="File">
@@ -63,7 +61,7 @@ menupopup by click. That means if you click the target component, it
 will cause the menupopup to show up, click on the target component again
 will hide the menupopup.
 
-``` xml
+```xml
 <button label="left click" popup="mp, type=toggle"/>
 <menupopup id="mp">
     <menuitem label="menupopup"/>
@@ -81,7 +79,7 @@ neither disabled nor invisible.
 The `setActive` will not cause a `menupopup` to be opened. An explicit
 `open` is needed if the `menupopup` is not showed.
 
-``` xml
+```xml
 <button label="Highlight Index" onClick="mnuHelp.open(); mnuHelp.getMenupopup().setActive(0);" />
 <menubar>
     <menu label="Help" id="mnuHelp">
@@ -120,11 +118,11 @@ The `setActive` will not cause a `menupopup` to be opened. An explicit
 </table>
 
 - Inherited Supported Events: [
-  Popup](ZK_Component_Reference/Essential_Components/Popup#Supported_Events)
+  Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup#Supported_Events)
 
 # Supported Children
 
-`*`[` Menu `](ZK_Component_Reference/Essential_Components/Menu)`, `[` Menuitem `](ZK_Component_Reference/Essential_Components/Menu/Menuitem)`, `[` Menuseparator`](ZK_Component_Reference/Essential_Components/Menu/Menuseparator)
+`*`[` Menu `]({{site.baseurl}}/zk_component_ref/essential_components/menu)`, `[` Menuitem `]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuitem)`, `[` Menuseparator`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuseparator)
 
 # Use Cases
 

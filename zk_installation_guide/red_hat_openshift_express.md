@@ -39,7 +39,7 @@
 Run **rhc-create-domain** command to create an unique domain name for
 your application.
 
-``` bash
+```bash
 $ rhc-create-domain -n DomainName -l rhlogin -p password
 ```
 
@@ -53,7 +53,7 @@ $ rhc-create-domain -n DomainName -l rhlogin -p password
 Run **rhc-create-app** command and OpenShift will create a maven project
 with default page automatically.
 
-``` bash
+```bash
 $ rhc-create-app -a AppName -t Type -l rhlogin -p password
 ```
 
@@ -82,7 +82,7 @@ If you wish to use Eclipse,
 
 - Run the following command to support Eclipse.
 
-``` bash
+```bash
 $ mvn eclipse:eclipse
 ```
 
@@ -104,7 +104,7 @@ There are two options to deploy the changes:
 This option is simple and recommended. Just push the source code with
 "git push" command.
 
-``` bash
+```bash
 $ cd AppName
 $ git add .
 $ git commit -a -m "Commit Message"
@@ -119,7 +119,7 @@ visit <http://AppName-DomainName.rhcloud.com/> to see your application.
 If you do not wish OpenShift to build your project automatically, you
 have to remove <b>pom.xml</b> file and all the source code.
 
-``` bash
+```bash
 $ cd AppName
 $ git rm -r src/ pom.xml
 ```
@@ -127,7 +127,7 @@ $ git rm -r src/ pom.xml
 Then, copy the pre-built war file into **deployments** folder and rename
 it to ROOT.war[^1]
 
-``` bash
+```bash
 $ cp target/prebuilt.war deployments/ROOT.war
 $ git add .
 $ git commit -a -m "Commit Message"
@@ -143,7 +143,7 @@ see the result
 
 # Sample
 
-- \[<http://sourceforge.net/projects/zkforge/files/Small%20Talks/ZK%20Sandbox%20for%20OpenShift/>?
+- \[<http://sourceforge.net/projects/zkforge/files/Small_Talks/ZK_Sandbox_for_OpenShift/>?
   Download\] the sample maven project named openshift_zksandbox.zip.
 - Sandbox sample is deployed on OpenShift at
   <http://zksandbox-zksupport.rhcloud.com/>.

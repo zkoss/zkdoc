@@ -21,9 +21,9 @@ component.
 
 # Example
 
-![](images/ZKComRef_Idspace_Example.png)
+![](/zk_component_ref/images/ZKComRef_Idspace_Example.png)
 
-``` xml
+```xml
 <nodom viewModel="@id('vm')@init('foo.MyViewModel')">
     <window border="normal">
         <button id="btn" label="@init(vm.label)" />

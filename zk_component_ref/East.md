@@ -6,8 +6,7 @@
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: <javadoc>org.zkoss.zul.East</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.layout.East</javadoc>
-- Style Guide: [
-  East]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Borderlayout/Default_(East))
+
 
 # Employment/Purpose
 
@@ -18,7 +17,7 @@ child.
 
 ![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
-``` xml
+```xml
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
@@ -66,7 +65,7 @@ child.
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#How_to_Layout).
 
 # Properties and Features
 
@@ -94,7 +93,7 @@ For more details, please refer to
 </table>
 
 - Inherited Supported Events: [
-  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/LayoutRegion#Supported_Events)
+  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
 
 # Supported Children
 
@@ -102,7 +101,7 @@ For more details, please refer to
 
 # Use Cases
 
-[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#Use_Cases)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#Use_Cases)
 
 # Version History
 

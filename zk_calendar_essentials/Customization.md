@@ -3,11 +3,11 @@
 If there is not enough space to show events in one day, the Calendar
 will show a "more items" link:
 
-![](images/moreEventLink.png)
+![](/zk_calendar_essentials/images/moreEventLink.png)
 
 The default text is from a javascript object.
 
-``` javascript
+```javascript
 msgcal.dayMORE = "+{0} more";
 msgcal.monthMORE = "+{0} more";
 ```
@@ -17,7 +17,7 @@ create a javascript file and load it. For example,
 
 **msgcal_zh.js**
 
-``` javascript
+```javascript
 zk.afterLoad('calendar', function() {
     msgcal = {};
     msgcal.dayMORE = "+{0} 事件";
@@ -26,7 +26,7 @@ zk.afterLoad('calendar', function() {
 ```
 
 Then load the script with [
-land-addon.xml](ZK_Developer%27s_Reference/Internationalization/Warning_and_Error_Messages#Defined_in_a_JS_File)
+land-addon.xml]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Defined_in_a_JS_File)
 
 # Date Format in Captions
 
@@ -72,12 +72,12 @@ implementation, there are 2 ways:
 
 **By Java**
 
-``` java
+```java
 calendar.setDateFormatter(new MyDateFormatter());
 ```
 
 **By ZUL**
 
-``` xml
+```xml
 <calendars dateFormatter="org.zkoss.calendar.essentials.MyDateFormatter"/>
 ```

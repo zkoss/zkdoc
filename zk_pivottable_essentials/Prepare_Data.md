@@ -14,14 +14,14 @@ is a standard implementation of
 constructor takes an Iterable and a String List, for raw data and column
 labels respectively.
 
-``` java
+```java
     public TabularPivotModel(Iterable<? extends List<?>> 
         data, List<String> columns) { ... }
 ```
 
 Here is a simple example of constructing a TabularPivotModel.
 
-``` java
+```java
     public static TabularPivotModel getModel() {
         return new TabularPivotModel(getData(), getColumns());
     }
@@ -66,7 +66,7 @@ In addition to providing data, you also need to specify how you want to
 categorize it. For example, given the previously constructed
 TabularPivotModel
 
-``` java
+```java
 // what to show on column headers (how you categorize the x-axis)
 model.setFieldType("Airline", PivotField.Type.COLUMN);
 
@@ -88,7 +88,7 @@ This will result in a Pivottable that looks like
 Of course, to utilize the power of Pivottable, you can specify multiple
 fields as column, row, and data fields.
 
-``` java
+```java
 // columns are categorized by Airline, then Flight
 model.setFieldType("Airline", PivotField.Type.COLUMN);
 model.setFieldType("Flight", PivotField.Type.COLUMN);
@@ -115,7 +115,7 @@ Note:
 
 Hint: If you can't wait to play around with the component, you can jump
 to [ next
-section](ZK_Pivottable_Essentials/Working_With_Pivottable/Create_Pivottable)
+section]({{site.baseurl}}/zk_pivottable_essentials/working_with_pivottable/create_pivottable)
 and come back to read further if necessary.
 
  
@@ -127,7 +127,7 @@ the data, or set subtotals to rows or columns.
 
 For example, to change summary type:
 
-``` java
+```java
 // assume "Price" and "Mileage" were added as data fields
 TabularPivotField field = model.getField("Price");
 model.setFieldSummary(field, StandardCalculator.AVERAGE);
@@ -154,7 +154,7 @@ Note:
 To set subtotals on column or row, you have to specify on a column field
 or row field:
 
-``` java
+```java
 // assume "Agent", "Customer" are column fields
 TabularPivotField field = model.getField("Agent");
 model.setFieldSubtotals(field, new Calculator[]{
@@ -188,7 +188,7 @@ month.
 
 In this case we can specify a GroupHandler to the field:
 
-``` java
+```java
 // suppose "Date" is a column field, whose value is a Java Date object
 TabularPivotField field = model.getField("Date");
 field.setGroupHandler(new GroupHandler(){
@@ -207,7 +207,7 @@ field.setGroupHandler(new GroupHandler(){
 You can provide a custom comparator on each field to sort the nodes on
 the corresponding level of header tree. For example:
 
-``` java
+```java
 // for Customer field, compare their last names, and then their first names
 model.setFieldKeyComparator("Customer", new Comparator<Object>() {
     public int compare(Object k1, Object k2) {
@@ -232,7 +232,7 @@ column fields.
 The setFieldKeyOrder method is a shortcut of the method above, which is
 equivalent to setting the comparator to one of the defaults.
 
-``` java
+```java
 // sets the comparator to the default one with descending natural order
 model.setFieldKeyOrder("Date", false);
 // sets the comparator to the default one with ascending natural order
@@ -246,7 +246,7 @@ model.setFieldKeyOrder("Date", true);
 
 To use data from database, simply prepare the List by an SQL query.
 
-``` java
+```java
 // you can get webapp from Desktop
 public List<List<Object>> getData(WebApp webapp, final String[] columns) throws SQLException {    
     final boolean selectStar = columns == null || columns.length == 0;
@@ -292,7 +292,7 @@ To filter the input data of a TabularPivotModel, you can either prepare
 it by yourself (in the case of data from database), or use the utility
 class PivotModels to help:
 
-``` java
+```java
 Iterable<List<Object>> data = ... // your input data
 Iterable<List<Object>> filteredData = PivotModels.filter
 (data, new Filter<List<Object>>() {

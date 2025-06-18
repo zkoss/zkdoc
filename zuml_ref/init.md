@@ -23,7 +23,7 @@ class must implement the
 <javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>
 interface.
 
-``` xml
+```xml
  <?init class="MyInit1"?>
  <?init class="MyInit2"?>
 ```
@@ -31,7 +31,7 @@ interface.
 Since 3.6.2, you can use any (readable) name instead of `arg0` and so
 on. For example,
 
-``` xml
+```xml
 <?init class="org.zkoss.zkplus.databind.AnnotateDataBinderInit" root="./abc"?>
 ```
 
@@ -44,7 +44,7 @@ If you'd like to apply an initiator for every page, you don't need to
 specify it on every page. Rather, you could install a system-level
 initiator. For more information, please refer to [ZK Developer's
 Reference: System-level
-Initiators]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Page_Initialization#System-level_Initiator).
+Initiators]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization#System-level_Initiator).
 
 # class
 

@@ -12,7 +12,7 @@ Represents a key pressed by the user.
 
 For more information, please refer to [ZK Developer's Reference:
 Keystroke
-Handling]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Keystroke_Handling).
+Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).
 
 # Example
 
@@ -47,7 +47,7 @@ N/A
 
 | Version | Description                      | Example Location                                                                    |
 |---------|----------------------------------|-------------------------------------------------------------------------------------|
-| 3.6     | Smalltalk: Keylistener Component | [Keylistener Component](Small_Talks/2007/November/Keylistener_Component) |
+| 3.6     | Smalltalk: Keylistener Component | [Keylistener Component](https://www.zkoss.org/wiki/Small_Talks/2007/November/Keylistener_Component) |
 
 # Version History
 

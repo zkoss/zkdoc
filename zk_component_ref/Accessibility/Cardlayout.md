@@ -11,7 +11,7 @@ practice](https://www.w3.org/TR/wai-aria-practices/#carousel).
 
 Here is a simple traffic light carousel:
 
-``` xml
+```xml
     <div ca:role="region" ca:aria-roledescription="carousel" ca:aria-label="traffic light" tabindex="0">
         <div>
             <button ca:aria-label="Previous Slide" onClick="card.previous()">previous</button>

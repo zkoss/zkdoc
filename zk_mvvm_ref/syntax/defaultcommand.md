@@ -3,7 +3,7 @@
 
 Syntax
 ======
-``` java
+```java
 @DefaultCommand
 ```
 
@@ -19,7 +19,7 @@ Example
 =======
 
 #### Mark method as default
-``` java
+```java
 @DefaultCommand
 public void defaultAction() {
     // method body

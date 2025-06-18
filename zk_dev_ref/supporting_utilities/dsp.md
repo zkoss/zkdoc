@@ -12,7 +12,7 @@ though extensible through TLD files, are different from JSP tags.
 If you want to use DSP in your Web applications, you have to set up
 `WEB-INF/web.xml` to add the following lines.
 
-``` xml
+```xml
     <servlet>
         <description><![CDATA[
  The servlet loads the DSP pages.
@@ -40,11 +40,11 @@ are handled directly by ZK loader.
 
 Using DSP requires including a jar explicitly, please read [ ZK
 Configuration Reference...DSP
-Loader#Optional_Jar](ZK_Configuration_Reference/web.xml/DSP_Loader#Optional_Jar)
+Loader#Optional_Jar]({{site.baseurl}}/zk_config_ref/web.xml/dsp_loader#Optional_Jar)
 
 # A Sample of DSP
 
-``` html
+```html
 <%@ page contentType="text/css;charset=UTF-8" %>
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 

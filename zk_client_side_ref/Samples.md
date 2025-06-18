@@ -4,7 +4,7 @@
 
 Here is a sample (from zkmax's lang-addon.xml):
 
-``` xml
+```xml
 <language-addon>
     <addon-name>zkmax</addon-name>
     <depends>zkex</depends>
@@ -35,7 +35,7 @@ Here is a sample (from zkmax's lang-addon.xml):
 
 Here is a sample (from zul.jar/lang.xml):
 
-``` xml
+```xml
 <language>
     <language-name>xul/html</language-name>
     <device-type>ajax</device-type>

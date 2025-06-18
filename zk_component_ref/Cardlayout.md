@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Cardlayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Cardlayout</javadoc>
-- Style Guide: N/A
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -25,7 +25,7 @@ whether the direction of the animation is horizontal or vertical.
 
 ![](/zk_component_ref/images/cardlayout.gif)
 
-``` xml
+```xml
     <cardlayout id="card" width="300px" height="200px" style="border:3px solid orange" selectedIndex="1">
         <div vflex="1" hflex="1" style="background-color:yellow;padding:20px">card 1</div>
         <div vflex="1" hflex="1" style="background-color:green;padding:20px">card 2</div>
@@ -79,7 +79,7 @@ setting.
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

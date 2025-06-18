@@ -27,7 +27,7 @@ Then check if there is any mixed-version jar.
 
 # The resource you request is no longer available
 
-![](images/no-longer-available.png)
+![](/zk_dev_ref/images/no-longer-available.png)
 `The resource you request is no longer available: /ui/handling.zul (z_na20). This is normally caused by timeout, or opening too many Web pages. You have to reload the page and try again.`
 
 ## Suggestion
@@ -62,7 +62,7 @@ can help us pinpoint the exact cause of the issue.
 To make the stack trace readable, you have to enable JavaScript debug
 mode in zk.xml
 
-``` xml
+```xml
 <client-config>
 <debug-js>true</debug-js>
 </client-config>
@@ -75,7 +75,7 @@ Restart your zk application.
 {% include version-badge.html version=10.0.0 %}
 
 You can enable [the send-client-errors
-element](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_send-client-errors_Element)
+element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_send-client-errors_element)
 in zk.xml to send client errors to the server for logging the page url
 where the error occurred and its stack trace.
 
@@ -87,7 +87,7 @@ problems. By logging these errors on the server, developers gain access
 to crucial debugging information that helps investigate and address
 issues effectively.
 
-``` xml
+```xml
 <client-config>
 <send-client-errors>true</send-client-errors>
 </client-config>
@@ -150,7 +150,7 @@ If you still need to pass a component for later use:
 
 - set an attribute in a Desktop
 - [ pass a component via a Desktop scope event
-  queue](ZK_Developer%27s_Reference/UI_Patterns/Communication/Inter-Desktop_Communication)
+  queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/communication/inter-desktop_communication)
 
 # Server is temporarily out of service - Error 467
 

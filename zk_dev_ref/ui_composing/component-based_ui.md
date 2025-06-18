@@ -11,7 +11,7 @@ property to normal and setting its width to a definite 250 pixels.
 Enclosed in the <javadoc>org.zkoss.zul.Window</javadoc> component are
 two <javadoc>org.zkoss.zul.Button</javadoc> components.
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZKEssentials_Intro_Hello.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_hello.png)
 
 As shown above, there are two ways to declare UI: XML-based approach and
 pure-Java approach. You can mix them if you like.
@@ -36,7 +36,7 @@ means that only one document root is allowed. To specify multiple roots,
 you have to enclose the root components with the `zk` tag. `zk` tag is a
 special tag that does not create components. For example,
 
-``` xml
+```xml
 <zk>
     <window/> <!-- the first root component -->
     <div/> <!-- the second root component -->
@@ -51,13 +51,13 @@ are live structures. It means that you can add, remove or clear a child
 by manipulating the returned list directly. For example, to detach all
 children, you could do it in one statement:
 
-``` xml
+```xml
 comp.getChildren().clear();
 ```
 
 It is equivalent to
 
-``` xml
+```xml
 for (Iterator it = comp.getChildren().iterator(); it.hasNext();) {
     it.next();
     it.remove();
@@ -67,7 +67,7 @@ for (Iterator it = comp.getChildren().iterator(); it.hasNext();) {
 Note that the following code will never work because it would cause
 ConcurrentModificationException.
 
-``` xml
+```xml
 for (Iterator it = comp.getChildren().iterator(); it.hasNext();)
     ((Component)it.next()).detach();
 ```
@@ -78,7 +78,7 @@ The following statement will fail for sure because the list is live and
 a component will be detached first before we move it to different
 location.
 
-``` java
+```java
 Collections.sort(comp.getChildren());
 ```
 
@@ -104,7 +104,7 @@ is a collection of pages. It represents a browser window (a tab or a
 frame of the browser)[^1]. You might image a desktop representing an
 independent HTTP request.
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZKEssentials_Intro_MultiPage.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_multipage.png)
 
 A desktop is also a logic scope that an application can access in a
 request. Each time a request is sent from the client, it is associated
@@ -124,7 +124,7 @@ The second page is created when the
 with the defer mode. For example, two pages will be created if the
 following is visited:
 
-``` xml
+```xml
 <!-- the main page -->
 <window>
   <include src="another.zul" mode="defer"/> <!-- creates another page -->
@@ -136,7 +136,7 @@ Notice that if the mode is not specified (i.e., the instant mode),
 new page. Rather, it will append all components created by `another.zul`
 as its own child components. For example,
 
-``` xml
+```xml
 <window>
   <include src="another.zul"/> <!-- default: instant mode -->
 </window>
@@ -145,7 +145,7 @@ as its own child components. For example,
 is equivalent to the following (except div is not a space owner, see
 below)
 
-``` xml
+```xml
 <window>
   <div>
     <zscript>
@@ -165,7 +165,7 @@ A component is available at the client only if it is attached to a page.
 For example, the window created below will not be available at the
 client.
 
-``` java
+```java
 Window win = new Window();
 win.appendChild(new Label("foo"));
 ```
@@ -192,7 +192,7 @@ one page, it will be detached automatically from the previous parent or
 page when it is attached to another component or page. For example, `b`
 will be a child of `win2` and `win1` has no child at the end.
 
-``` xml
+```xml
 Window win1 = new Window;
 Button b = new Button();
 win1.appendChild(b);
@@ -242,13 +242,13 @@ desktop. This typically happens when you cache a component accidentally.
 For example, the following code will cause an exception if it is loaded
 multiple times.
 
-``` xml
+```xml
 <window apply="foo.Foo"/> <!-- cause foo.Foo to be instantiated and executed -->
 ```
 
 and `foo.Foo` is defined as follows[^4].
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.*;
 import org.zkoss.zul.*;
@@ -265,7 +265,7 @@ public class Foo implements org.zkoss.zk.ui.util.Composer {
 
 The exception is similar to the following:
 
-``` text
+```text
 org.zkoss.zk.ui.UiException: The parent and child must be in the same desktop: <Window u1EP0>
     org.zkoss.zk.ui.AbstractComponent.checkParentChild(AbstractComponent.java:1057)
     org.zkoss.zk.ui.AbstractComponent.insertBefore(AbstractComponent.java:1074)
@@ -284,7 +284,7 @@ All components are cloneable (java.lang.Cloneable). It is simple to
 replicate components by invoking
 <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>.
 
-``` java
+```java
 main.appendChild(listbox.clone());
 ```
 
@@ -324,7 +324,7 @@ invoking
     (<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>)
     is a controller that can be associated with a component for handling
     the UI in Java. For the information, please refer to [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 [^5]: Of course, the performance of
     <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>

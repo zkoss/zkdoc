@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Listheader</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Listheader</javadoc>
-- Style Guide: [
-  Listheader](ZK_Style_Guide/XUL_Component_Specification/Listheader)
+
 
 # Employment/Purpose
 
@@ -17,9 +16,9 @@ a list box. Its parent must be `Listhead`.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
          <listbox id="box">
              <listhead sizable="true">
@@ -95,7 +94,7 @@ cells under a column.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HeaderElement](ZK_Component_Reference/Base_Components/HeaderElement#Supported_Events)
+  HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

@@ -2,7 +2,7 @@
 
 `Since 1.1.0`
 
-[ Echo event]({{site.baseurl}}/zk_dev_ref/ui_patterns/Long_Operations/Use_Echo_Events)
+[ Echo event]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 is used to implement long operations. When you send an echo event, the
 event won't be processed in the current execution. Rather, it is
 processed in the next AU request sent (echoed back) from the client. In
@@ -12,7 +12,7 @@ request immediately after receiving an echo event. In `PIGGYBACK` mode,
 Mimic `Client` will then send custom events back to server together with
 the next AU request instead of sending it back immediately.
 
-``` java
+```java
 public enum EchoEventMode {
 
     /** immediately reply custom events back to server when receiving echo events    */

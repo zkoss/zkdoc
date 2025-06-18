@@ -6,8 +6,7 @@
   Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Rows</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Rows</javadoc>
-- Style Guide: [
-  Rows](ZK_Style_Guide/XUL_Component_Specification/Row)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ Defines the rows of a grid. Each child of a rows element should be a
 
 # Example
 
-![](images/ZKComRef_Grid_Example.png‎)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
 
-``` xml
+```xml
 <window title="Grid Demo" border="normal" width="360px">
     <zscript>
         class Comp implements Comparator {
@@ -87,11 +86,11 @@ Defines the rows of a grid. Each child of a rows element should be a
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Row`](ZK_Component_Reference/Data/Grid/Row)`, `[` Group`](ZK_Component_Reference/Data/Grid/Group)`, `[` Groupfoot`](ZK_Component_Reference/Data/Grid/Groupfoot)
+`*`[` Row`]({{site.baseurl}}/zk_component_ref/data/grid/row)`, `[` Group`]({{site.baseurl}}/zk_component_ref/data/grid/group)`, `[` Groupfoot`]({{site.baseurl}}/zk_component_ref/data/grid/groupfoot)
 
 # Use Cases
 

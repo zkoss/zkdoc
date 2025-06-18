@@ -16,7 +16,7 @@ accordingly.
 
 <div style="width:610px;margin-left:auto;margin-right:auto">
 
-![](studio-palette-drag-component.png) ![ 300px \|
+![](images/studio-palette-drag-component.png) ![ 300px \|
 top](studio-palette-drop-component.png " 300px | top")
 
 </div>

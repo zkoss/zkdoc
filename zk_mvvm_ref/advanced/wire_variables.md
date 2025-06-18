@@ -2,7 +2,7 @@
 
 Wire Variables
 ==============
-We can use ` @WireVariable ` to wire variables **from implicit objects or registered variable resolvers** in a ViewModel as we do in a composer (please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables).
+We can use ` @WireVariable ` to wire variables **from implicit objects or registered variable resolvers** in a ViewModel as we do in a composer (please refer to [ZK Developer's Reference/mvc/Controller/Wire Variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 Because ** [BindComposer](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindComposer.html) wires those variables for us before calling initial method **. But it will **not**
 wire components and listeners automatically like a composer. To achieve it, please refer to [Advance/Wire Components](./wire_components.html) and [Advance/Wire Event Listeners](./wire_event_listeners.html).
 
@@ -32,7 +32,7 @@ public class FooViewModel {
 
 Wire from Variable Resolver
 ---------------------------
-First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive]({{site.baseurl}}/zuml_ref/ZUML/Processing_Instructions/variable-resolver). Here is the example of registering variable resolvers with annotations.
+First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive]({{site.baseurl}}/zuml_ref/zuml/processing_instructions/variable-resolver). Here is the example of registering variable resolvers with annotations.
 ```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooViewModel {
@@ -82,7 +82,7 @@ Then, you could bind it in the ZUL document. For example,
 ```xml
 <grid model="@load(vm.users)">
 ```
-You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/MVC/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables#Warning:_Not_a_good_idea_to_have_Spring_managing_the_composer) for the reason.
+You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/mvc/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables#Warning:_Not_a_good_idea_to_have_Spring_managing_the_composer) for the reason.
 
 Wire CDI-managed Beans
 ======================
@@ -94,6 +94,6 @@ When wiring variables, the predefined sequence to look for variable resolvers is
 
 1.  The variable resolver defined in the ZUML document.
 2.  The variable resolver annotated registered in the class with the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation.
-3.  If none of above is found, it looks for [the implicit objects]({{site.baseurl}}/zuml_ref/EL_Expressions/Implicit_Objects), such as session and page.
+3.  If none of above is found, it looks for [the implicit objects]({{site.baseurl}}/zuml_ref/el_expressions/implicit_objects), such as session and page.
 
 

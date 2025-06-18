@@ -5,7 +5,7 @@
 - Java API: <javadoc>org.zkoss.zul.Radiogroup</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Radiogroup</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -14,9 +14,9 @@ button may be selected at a time.
 
 # Example
 
-![](images/ZKComRef_radio.png)
+![](/zk_component_ref/images/ZKComRef_radio.png)
 
-``` xml
+```xml
 <window title="Radiobox &amp; Radio Demo" width="200px" border="normal">
     <vbox>
         <radiogroup onCheck="fruit.value = self.selectedItem.label">
@@ -43,7 +43,7 @@ ZK groups radio components into the same radio group if they share the
 same ancestor, not just direct parent. It allows a more sophisticated
 layout. For example,
 
-``` xml
+```xml
 <radiogroup>
   <vlayout>
     <hlayout>
@@ -72,9 +72,9 @@ radiogroup component to the radio component explicitly by the use of
 or
 <javadoc method="setRadiogroup(org.zkoss.zul.Radiogroup)">org.zkoss.zul.Radio</javadoc>.
 
-![](images/ZKComRef_Radiogroup_Grid.png)
+![](/zk_component_ref/images/ZKComRef_Radiogroup_Grid.png)
 
-``` xml
+```xml
 <zk>
   <radiogroup id="popular"/>
   <radiogroup id="fun"/>
@@ -111,7 +111,7 @@ or
 {% include version-badge.html version=6.0.0 %}
 
 Like a listbox, radiogroup supports
-[ListModel](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Model/List_Model),
+[ListModel]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model),
 so that developers are able to separate the data from the view. In other
 words, developers only need to provide the data by implementing the
 <javadoc type="interface">org.zkoss.zul.ListModel</javadoc> interface,
@@ -149,9 +149,9 @@ In the following example, we prepared a ListModel called `strset`,
 assign it to a radigroup using the `model` attribute. Then, the
 radigroup will do the rest.
 
-![](images/Radiogroup.png)
+![](/zk_component_ref/images/Radiogroup.png)
 
-``` xml
+```xml
     <zscript><![CDATA[
         String[] data = new String[5];
         for(int j=0; j < data.length; ++j) {
@@ -192,7 +192,7 @@ under the radiogroup is checked.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -9,7 +9,7 @@ subscribing, a receiving module (subscriber) receives messages that the
 subscriber has registered an interest in, without explicitly specifying
 or knowing the publisher.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Eventqueue-concept.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/eventqueue-concept.jpg)
 
 ZK generalizes the event queue to support the server push. The use is
 straightforward: specifying the scope of a given event queue as
@@ -18,19 +18,19 @@ straightforward: specifying the scope of a given event queue as
 <javadoc method="SESSION">org.zkoss.zk.ui.event.EventQueues</javadoc>,
 but rare). For example,
 
-``` java
+```java
 EventQueue que = EventQueues.lookup("chat", EventQueues.APPLICATION, true);
 ```
 
 For more information about event queues, please refer to the [Event
 Handling: Event
-Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 section.
 
 For the information about low-level API, please refer to [Asynchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Asynchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
 section, if the task can execute asynchronously; or [Synchronous
-Tasks]({{site.baseurl}}/zk_dev_ref/Server_Push/Synchronous_Tasks)
+Tasks]({{site.baseurl}}/zk_dev_ref/server_push/synchronous_tasks)
 if it must execute synchronously.
 
 # Version History

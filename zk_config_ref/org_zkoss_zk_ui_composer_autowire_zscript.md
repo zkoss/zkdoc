@@ -14,7 +14,7 @@ some performance degrade if there are a lot of zscript code used in a
 page. You could specify this library variable as the follows to turn it
 off.
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
 <library-property>
     <name>org.zkoss.zk.ui.composer.autowire.zscript</name>
@@ -25,7 +25,7 @@ off.
 Notice that, to have the best performance, it is recommended not to use
 zscript at all. For more more details, please refer to [ZK Developer's
 Reference: Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes).
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes).
 
 If you don't use any zscript, this option does not matter since ZK is
 smart enough to skip the wiring of zscript variables automatically.

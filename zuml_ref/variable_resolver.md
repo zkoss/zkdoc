@@ -21,7 +21,7 @@ The following is an example when using ZK with the Spring framework. It
 resolves Java Beans declared in the Spring framework, such that you
 access them directly.
 
-``` xml
+```xml
  <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 ```
 
@@ -29,7 +29,7 @@ Notice that if you have a variable resolver used for every page, you
 don't have to declare it on every page. Rather, you could register a
 system-level variable resolver. For more information, please refer to
 [ZK Developer's Reference: System-level Variable
-Resolvers]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#System-level_Variable_Resolver).
+Resolvers]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#System-level_Variable_Resolver).
 
 # class
 
@@ -57,7 +57,7 @@ are passed to the constructor as an instance of `Map`. If the second
 signature is found, the values of arguments are passed to the
 constructor as an array of objects.
 
-``` xml
+```xml
 <?variable-resolver class="foo.Foo" whatever="anything"?>
 ```
 

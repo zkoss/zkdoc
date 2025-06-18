@@ -17,7 +17,7 @@ are the same as the regular macro components (i.e., non-inline).
 For example, suppose we have a macro definition (aka., template) as
 follows:
 
-``` xml
+```xml
 <!-- username.zul: (macro definition) -->
 <row>
     Username
@@ -27,7 +27,7 @@ follows:
 
 We can declare it as an inline macro as follows:
 
-``` xml
+```xml
 <!-- target page -->
 <?component name="username" inline="true" macroURI="username.zul"?>
 <grid>
@@ -39,7 +39,7 @@ We can declare it as an inline macro as follows:
 
 Then, it is equivalent to:
 
-``` xml
+```xml
 <grid>
     <rows>
         <row>
@@ -76,7 +76,7 @@ On the other hand, regular macros allow the component developers to
 provide a custom Java class to represent the component so a better
 abstraction and addition functionality can be implemented. We will
 discuss it more in the [following
-section]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
+section]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class).
 
 > ------------------------------------------------------------------------
 >
@@ -92,7 +92,7 @@ exist).
 
 `inline.zul`: (the macro definition)
 
-``` xml
+```xml
 <row>
     <textbox value="${arg.col1}"/>
     <textbox value="${arg.col2}"/>
@@ -101,7 +101,7 @@ exist).
 
 `useinline.zul`: (the target page)
 
-``` xml
+```xml
 <?component name="myrow" macroURI="inline.zul" inline="true"?>
 <window title="Test of inline macros" border="normal">
     <zscript><![CDATA[

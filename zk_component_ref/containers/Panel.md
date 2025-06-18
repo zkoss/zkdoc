@@ -12,7 +12,7 @@ The Panel component in ZK is a versatile container that serves as a foundational
 
 ### Simple Panel Example
 
-![Panel Simple Examples](ZKComRef_Panel_Simple_Examples.PNG)
+![Panel Simple Examples](images/ZKComRef_Panel_Simple_Examples.PNG)
 
 ```xml
 <panel height="20%" style="margin-bottom:10px"
@@ -27,7 +27,7 @@ In the above example, a Panel is created with specified attributes such as heigh
 
 Try it
 
-* [Panel Example](https://zkfiddle.org/sample/1t41t2r/1-ZK-Component-Reference-Panel-Example?v=latest&t=Iceblue%20Compact)
+* [Panel Example](https://zkfiddle.org/sample/1t41t2r/1-ZK-Component-Reference-Panel-Example?v=latest&t=Iceblue_Compact)
 
 ### Java Example
 
@@ -62,7 +62,7 @@ The Panel can be resized by setting the `sizable` attribute to `true`. The examp
 
 Try it
 
-* [Panel Sizable](https://zkfiddle.org/sample/1bajqva/1-ZK-Component-Reference-Panel-Sizable-Example?v=latest&t=Iceblue%20Compact)
+* [Panel Sizable](https://zkfiddle.org/sample/1bajqva/1-ZK-Component-Reference-Panel-Sizable-Example?v=latest&t=Iceblue_Compact)
 
 ### Draggable
 
@@ -92,7 +92,7 @@ When used with a PortalLayout, the `draggable` property can control whether the 
 
 Try it
 
-* [Panel Dragable](https://zkfiddle.org/sample/2rds9kh/1-ZK-Component-Reference-Panel-Draggable-Example?v=latest&t=Iceblue%20Compact)
+* [Panel Dragable](https://zkfiddle.org/sample/2rds9kh/1-ZK-Component-Reference-Panel-Draggable-Example?v=latest&t=Iceblue_Compact)
 
 
 
@@ -125,14 +125,14 @@ To enable a scrollbar when the content exceeds the panel height, set `style="ove
 
 Try it
 
-* [Panel Scrollable](https://zkfiddle.org/sample/lhk9fh/1-ZK-Component-Reference-Panel-Scrollable-Example?v=latest&t=Iceblue%20Compact)
+* [Panel Scrollable](https://zkfiddle.org/sample/lhk9fh/1-ZK-Component-Reference-Panel-Scrollable-Example?v=latest&t=Iceblue_Compact)
 
 
 ### Toolbar Positions
 
 Panel supports three toolbar positions: `Top`, `Bottom`, and `Foot`. These toolbars can be added to the panel for specific functionalities.
 
-![Panel Positions](Panel-des.gif)
+![Panel Positions](images/Panel-des.gif)
 
 ```xml
 <panel id="panel" width="500px" height="550px"
@@ -156,7 +156,7 @@ Panel supports three toolbar positions: `Top`, `Bottom`, and `Foot`. These toolb
 
 Try it
 
-* [Panel Scrollable](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue%20Compact)
+* [Panel Scrollable](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
 
 - Top Toolbar (Line 5): It is used to display a toolbar at the top, close to the body content of the panel.
@@ -181,4 +181,4 @@ For more details, refer to [Using Panel to Lay out Your Website](https://www.zko
 ## Supported Children
 - [`Caption`](Caption.md): Indicates that the `Panel` can only have one child component of type `Caption`.
 - [`Panelchildren`](Panelchildren.md): Indicates that the `Panel` can only have one child component of type `Panelchildren`.
-- [`Toolbar`](../Essential_Components/Toolbar.md): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.
+- [`Toolbar`](../essential_components/Toolbar.md): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.

@@ -6,7 +6,7 @@
   Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
 - Java API: <javadoc>org.zkoss.zul.Filedownload</javadoc>
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -24,7 +24,7 @@ local file system to save the file.
 
 ![](/zk_component_ref/images/10000000000002AF000001BB582C2DD7.png)
 
-``` xml
+```xml
 <button label="Download">
     <attribute name="onClick">{
         java.io.InputStream is = desktop.getWebApp().getResourceAsStream("/test/download.html");
@@ -58,7 +58,7 @@ To use resumable download, you have to invoke the `saveResumable` method
 of <javadoc>org.zkoss.zkmax.zul.Filedownload</javadoc> instead of `save`
 as depicted below:
 
-``` xml
+```xml
 <window title="Save Resumable" border="normal">
     <button label="download"
     onClick='Filedownload.saveResumable("foo.txt", "text/plain", null)'/>
@@ -92,7 +92,7 @@ it in a library property called
 `org.zkoss.zkmax.zul.FiledownloadListener.class`. For examle, in
 `zk.xml`, you can do:
 
-``` javascript
+```javascript
 <library-property>
   <name>org.zkoss.zkmax.zul.FiledownloadListener.class</name>
   <value>com.foo.MyDownloadListener</value>
@@ -105,7 +105,7 @@ Triggering a file download in the main context of a ZK page can cause
 the client-engine to terminate while the page is still open.
 
 Refer to the [Developer
-Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download)
+Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
 guide for in-depth details.
 
 # Limitation of IE 6/7/8
@@ -128,7 +128,7 @@ and then use FORM submit, instead of invoking
 <javadoc>org.zkoss.zul.Filedownload</javadoc>, to redirect to the page
 for real download. For example,
 
-``` xml
+```xml
 <!-- download.zul: the page that guides users to download -->
 <h:form xmlns:h="native" action="real-download.jsp" target="_blank"> <!-- a form -->
     <button label="Download" type="submit"/> <!-- use a submit button -->
@@ -140,7 +140,7 @@ servlet. ZK provides utilities to simplify the task:
 <javadoc method="write(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.util.media.Media, boolean, boolean)">org.zkoss.web.servlet.http.Https</javadoc>
 and <javadoc>org.zkoss.util.media.AMedia</javadoc>. For example,
 
-``` xml
+```xml
 <%-- real-download.jsp: the page really downloads the file to response --%>
 
 <%@ page import="org.zkoss.web.servlet.http.Https, org.zkoss.util.media.AMedia" %>
@@ -156,7 +156,7 @@ If the user could input more information to select the file to download,
 we could enhance `download.zul` in the above example by adding more
 input components inside HTML FORM. For example,
 
-``` xml
+```xml
 <h:form xmlns:h="native" action="real-download.jsp" target="_blank">
     <datebox name="when"/>
     <button label="Download" type="submit"/>
@@ -167,7 +167,7 @@ Notice we have to specify the name property such that its value will be
 sent with the given name. For more information of using HTML FORM,
 please refer to [ZK Developer's Reference/integration/Use ZK in
 JSP#HTML_Form:ZK Developer's Reference: HTML
-Form]({{site.baseurl}}/zk_dev_ref/integration/Use_ZK_in_JSP#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
+Form]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
 
 ## Side Effect: Chrome and Safari
 
@@ -177,7 +177,7 @@ Chrome and Safari: it opens an additional blank browser window (so the
 user has to close it manually). Thus, it is better to detect the browser
 first and apply the HTML Form approach only if it is Internet Explorer.
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <h:form xmlns:h="native" action="real-download.jsp" target="_blank"
  if="${c:browser('ie')}">

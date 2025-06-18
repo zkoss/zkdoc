@@ -22,7 +22,7 @@ other than `"false"`, to the draggable property by the use of
 <javadoc method="setDraggable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>.
 To disable it, assign it with `"false"`.
 
-``` xml
+```xml
 <image draggable="true"/>
 ```
 
@@ -30,7 +30,7 @@ Similarly, you could make a component droppable by assigning `"true"` to
 the droppable property by the use of
 <javadoc method="setDroppable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>.
 
-``` xml
+```xml
 <hbox droppable="true"/>
 ```
 
@@ -56,7 +56,7 @@ not the component being dragged.
 The following is a simple example that allows users to reorder list
 items by drag-and-drop.
 
-``` xml
+```xml
     Unique Visitors of ZK:
     <listbox id="src" multiple="true" width="300px">
         <listhead>
@@ -109,7 +109,7 @@ status of these items won't be changed. Usually only the dragged item is
 moved, but you can handle all the selected items at once by looking up
 the set of all selected items as depicted below.
 
-``` java
+```java
 public void onDrop(DropEvent evt) {
     Set selected = ((Listitem)evt.getDragged()).getListbox().getSelectedItems();
     //then, you can handle the whole set at once
@@ -120,7 +120,7 @@ Notice that the dragged item may not be selected. Thus, you may prefer
 to change the selection to the dragged item for this case, as shown
 below.
 
-``` java
+```java
 Listitem li = (Listitem)evt.getDragged();
     if (li.isSelected()) {
         Set selected = ((Listitem)evt.getDragged()).getListbox().getSelectedItems();
@@ -142,7 +142,7 @@ To have better visual effect, you could identify each type of draggable
 components with an identifier, and then assign the identifier to the
 `draggable` property.
 
-``` xml
+```xml
 <listitem draggable="email"/>
  ...
 <listitem draggable="contact"/>
@@ -152,7 +152,7 @@ Then, you could specify a list of identifiers to the `droppable`
 property to limit what can be dropped. For example, the following image
 accepts only `email` and `contact`.
 
-``` xml
+```xml
 <image src="/img/send.png" droppable="email, contact" onDrop="send(event.dragged)"/>
 ```
 
@@ -160,7 +160,7 @@ To accept any kind of draggable components, you could specify `"true"`
 to the `droppable` property. For example, the following image accepts
 any kind of draggable components.
 
-``` xml
+```xml
 <image src="/img/trash.png" droppable="true" onDrop="remove(event.dragged)"/>
 ```
 
@@ -172,6 +172,6 @@ the `droppable` property assigned to `"true"` could accept it.
 
 The effects of drag-and-drop can be customized. It requires some
 client-side programming. Please refer to [ZK Client-side
-Reference/Customization/Drag-and-Drop
-Effects](ZK_Client-side_Reference/Customization/Drag-and-Drop_Effects)
+Reference/customization/Drag-and-Drop
+Effects]({{site.baseurl}}/zk_client_side_ref/customization/drag-and-drop_effects)
 for more information.

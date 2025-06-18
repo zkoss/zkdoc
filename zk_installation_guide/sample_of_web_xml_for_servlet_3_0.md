@@ -3,7 +3,7 @@ ZK's servlets and listeners in `WEB-INF/web.xml` at all. (Make sure you
 include
 [zkwebfragment.jar](https://mavensync.zkoss.org/eval/org/zkoss/zk/zkwebfragment/))
 
-``` xml
+```xml
 <web-app xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"

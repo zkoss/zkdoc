@@ -14,7 +14,7 @@ To add a watch (i.e., listen to a client activity), you could use
 <javadoc method="listen(_global_.Map)" directory="jsdoc">\_global\_.zWatch</javadoc>
 as follows:
 
-``` java
+```java
 zWatch.listen({
     onSize: this,
     onShow: this,
@@ -35,7 +35,7 @@ the following:
 
 Here is an example of a client activity listener:
 
-``` js
+```js
 var listener = {
     onCommandReady: function(controller) {
         zk.log(arguments[0].name);
@@ -56,7 +56,7 @@ zWatch.listen({onCommandReady: listener,
 
 ## Size Event Listener
 
-``` js
+```js
 var sizeListener = {
     onSize: function(controller) {
         zk.log(arguments[0].name);
@@ -75,7 +75,7 @@ var sizeListener = {
 
 The signature of the listener function is as follows.
 
-``` java
+```java
 function onWhatever(controller, arg0, arg1...) {
   //controller.origin: the object passed as the first argument to zWatch.fire or zWatch.fireDown
   //controller.fireDown(something) and controller.fire(something):
@@ -92,7 +92,7 @@ or
 
 Here is the pseudo-code for the controller:
 
-``` java
+```java
 interface Controller {
   /** event name */
   name;
@@ -132,7 +132,7 @@ To unlisten, you could use
 <javadoc method="unlisten(_global_.Map)" directory="jsdoc">\_global\_.zWatch</javadoc>
 as follows:
 
-``` java
+```java
 zWatch.unlisten({
     onSize: this,
     onShow: this,
@@ -154,7 +154,7 @@ functions:
 For example, if a widget resizes itself, it could fire down onSize as
 follows.
 
-``` xml
+```xml
 zWatch.fireDown("onSize", wgt);
 ```
 
@@ -225,7 +225,7 @@ the specified widget will be called.
 It is called before the desktop is removed. For example, it can be used
 in embedded ZK.
 
-``` javascript
+```javascript
 desktop.listen({onBeforeDestroy:function(){
     console.log("before destroy this desktop")
 }});

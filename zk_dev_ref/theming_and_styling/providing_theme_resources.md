@@ -28,7 +28,7 @@ browser to cache the CSS file.
 > ------------------------------------------------------------------------
 >
 > For information of 3.6 and earlier, please refer to [ ZK 3 Theme
-> Provider](ZK_Developer's_Guide/ZK_in_Depth/Style_Customization/Theme#ZK_3_Theme_Provider).
+> Provider](ZK_Developer's_Guide/ZK_in_Depth/Style_customization/Theme#ZK_3_Theme_Provider).
 
 # Examples
 
@@ -39,7 +39,7 @@ In the following example, we store the preferred font size and the skin
 
 **`Since 7.0.0, the font size attributes are deprecated because of using LESS.`**
 
-``` java
+```java
 package my;
 public class MyThemeProvider implements ThemeProvder {
     public Collection getThemeURIs(Execution exec, List uris) {
@@ -101,7 +101,7 @@ refer to [the next section](#A_Cacheable_Example).
 
 Then, you configure `WEB-INF/zk.xml` by adding the following lines.
 
-``` xml
+```xml
  <desktop-config>
      <theme-provider-class>my.MyThemeProvider</theme-provider-class>
  </desktop-config>
@@ -124,7 +124,7 @@ that each different theme is represented with a different URL. The
 injection can be done easily with the inner class called
 <javadoc>org.zkoss.zk.ui.util.ThemeProvider.Aide</javadoc>. For example,
 
-``` java
+```java
 final String fsc = getFontSizeCookie(exec);
 if (fsc != null && fsc.length() > 0) {
     for (ListIterator it = uris.listIterator(); it.hasNext();) {
@@ -146,7 +146,7 @@ returns a two-element array if the fragment is found. The first element
 is the URI without fragment, and the second element is the fragment. For
 example,
 
-``` java
+```java
 public String beforeWCS(Execution exec, String uri) {
     final String[] dec = Aide.decodeURI(uri);
     if (dec != null) {
@@ -169,7 +169,7 @@ public String beforeWCS(Execution exec, String uri) {
 
 Here is a complete example:
 
-``` java
+```java
 public class CacheableThemeProvider implements ThemeProvider{
     private static String DEFAULT_WCS = "~./zul/css/zk.wcs";
 
@@ -252,7 +252,7 @@ example, if you want to add a CSS link for [the media
 type](http://www.w3.org/TR/CSS2/media.html), say, `print, handheld`,
 then you can do as follows.
 
-``` java
+```java
 public Collection getThemeURIs(Execution exec, List uris) {
    uris.add(new StyleSheet("/theme/foo.css", "text/css", "print, handheld", false));
    return uris;

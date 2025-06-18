@@ -10,7 +10,7 @@ framework jars).
 Since 10, breeze is no longer supported, you can use `iceblue_c`, if you
 migrate from an old theme:
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.theme</groupId>
     <artifactId>iceblue_c</artifactId>
@@ -21,7 +21,7 @@ migrate from an old theme:
 For example, since 8.6, the default theme is iceblue. If you want to use
 **breeze**, you need to include its jar first:
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.theme</groupId>
     <artifactId>breeze</artifactId>
@@ -47,7 +47,7 @@ application as a default theme.
 
 **zk.xml**
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.theme.preferred</name>
     <value>deepsea</value> <!-- no whitespace in theme names -->
@@ -57,14 +57,14 @@ application as a default theme.
 Check the complete theme name of the theme pack at [ZK Developer's
 Reference/Theming and Styling/ZK Official Themes#All Theme Names of
 Theme
-Pack]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/ZK_Official_Themes#All_Theme_Names_of_Theme_Pack)
+Pack]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#All_Theme_Names_of_Theme_Pack)
 
 # Dynamically switching themes using Cookies
 
 To provide different themes for different end users (sessions), you can
 use cookies since it's stored in a browser.
 
-``` java
+```java
 Themes.setTheme(Executions.getCurrent(), "custom");
 Executions.sendRedirect("");
 ```
@@ -80,7 +80,7 @@ property change affects the whole application (all end users).
 
 **Programmatically:**
 
-``` java
+```java
 Library.setProperty("org.zkoss.theme.preferred", "custom");
 Executions.sendRedirect("");
 ```
@@ -103,7 +103,7 @@ by writing a custom
 If you would like to communicate theme name via session instead, you
 would create a class like the following:
 
-``` java
+```java
 package foo;
 
 public class SessionThemeResolver implements ThemeResolver {
@@ -127,7 +127,7 @@ public class SessionThemeResolver implements ThemeResolver {
 
 and configure the custom ThemeResolver in **WEB-INF/zk.xml**.
 
-``` xml
+```xml
 <zk>
     <desktop-config>
         <theme-resolver-class>foo.SessionThemeResolver</theme-resolver-class>

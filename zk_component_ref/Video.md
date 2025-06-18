@@ -17,9 +17,9 @@ generated video. Users can control the video by `play`, `stop` and
 
 # Example
 
-![](images/Player-Sample.png)
+![](/zk_component_ref/images/Player-Sample.png)
 
-``` xml
+```xml
  <video src="zk.mp4" controls="true" autoplay="true" loop="true" />
 ```
 
@@ -53,7 +53,7 @@ multiple source files in different formats for different browsers. If
 the first format is not supported by the browser, it will fallback to
 the 2nd format. For example:
 
-``` xml
+```xml
  <video src="zk.mp4, zk.webm, zk.ogg" />
 ```
 
@@ -63,7 +63,7 @@ For security reasons, fullScreen API can only be initiated by an user
 gesture. Therefore the Video component only provides a client-side
 method `enableFullScreen()` to enable the full screen mode.
 
-``` xml
+```xml
 <video id="player" src="zk.mp4" controls="true"/>
 <button xmlns:w="client" w:onClick="zk.$('$player').enableFullScreen()" />
 ```
@@ -77,9 +77,9 @@ the Video.
 When the theater mode is enabled, user can click anywhere on the page
 outside the Video to disable theater mode and return to the normal view.
 
-![](images/Player-turnOffLight.png)
+![](/zk_component_ref/images/Player-turnOffLight.png)
 
-``` xml
+```xml
  <video src="zk.mp4" dimBackground="true" />
 ```
 
@@ -89,7 +89,7 @@ following css code.
 You can also customize the background in your preference by simply
 overriding .z-video-dim-background in css.
 
-``` css
+```css
 <style>
 .z-video-dim-background {
     background: black;
@@ -105,7 +105,7 @@ video playing speed. The valid value depends on the displayed browser.
 
 Default: 1.0
 
-``` xml
+```xml
  <video src="zk.mp4" playbackRate="0.5" />
 ```
 
@@ -114,7 +114,7 @@ Default: 1.0
 The Video component provides `setCurrentTime(double)` to jump to the
 specified time-point (in seconds) of the playback video.
 
-``` xml
+```xml
  <video src="zk.mp4" currentTime="60" />
 ```
 
@@ -126,7 +126,7 @@ video.
 playing="true" is same as invoking `play()`; playing="false" is same as
 invoking `pause()`.
 
-``` xml
+```xml
  <video src="zk.mp4" playing="false" />
 ```
 
@@ -137,7 +137,7 @@ The value should range between 0.0 and 1.0.
 
 Default: 1.0
 
-``` xml
+```xml
  <video src="zk.mp4" volume="0.5" />
 ```
 
@@ -147,7 +147,7 @@ The Video component provides `setMuted(boolean)` to mute the video.
 
 Default: false
 
-``` xml
+```xml
  <video src="zk.mp4" muted="true" />
 ```
 
@@ -166,7 +166,7 @@ space (right image).
 
 <file:ClipToFit(false).png> <file:ClipToFit(true).png>
 
-``` xml
+```xml
   <video width="300px" height="320px" src="zk.mp4" style="border: 1px solid red;" />
   <video width="300px" height="320px" src="zk.mp4" style="border: 1px solid red;" clipToFit="true" />
 ```
@@ -174,7 +174,7 @@ space (right image).
 # Display Subtitles
 
 To display subtitles or captions on a video, please see [
-Track](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track).
+Track]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track).
 
 # StateChangeEvent
 
@@ -188,11 +188,11 @@ For example:
 If you want to do something after the video starts to play, you can
 write codes as shown below (MVVM style).
 
-``` xml
+```xml
   <video onStateChange="@command('stateChange', event=event)" />
 ```
 
-``` java
+```java
   @Command
   public void stateChange(@BindingParam("event") StateChangeEvent event) {
     if (event.getState() == Video.PLAY) {
@@ -235,11 +235,11 @@ when invoking play(), stop() or pause().</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`* `[`Track`](ZK_Component_Reference/Multimedia_and_Miscellaneous/Track)
+`* `[`Track`]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track)
 
 # Version History
 

@@ -3,7 +3,7 @@
 # Tabbox
 
 - Component Reference:
-  [Tabbox](ZK_Component_Reference/Containers/Tabbox)
+  [Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # SwipeEvent Support
@@ -11,13 +11,13 @@
 Tabbox support to switch the tab by user swipe on the edge of content
 with client attribute.
 
-``` xml
+```xml
 <tabbox xmlns:ca="client/attribute" ca:data-swipeable="true">
     <!-- omitted -->
 </tabbox>
 ```
 
-![](images/Tabbox_Tablet_Example.png)
+![](/zk_component_ref/images/Tabbox_Tablet_Example.png)
 
 # Friendly Scrolling Support
 
@@ -27,11 +27,11 @@ style to auto.
 
 For example,
 
-``` xml
+```xml
 <tabpanel style="overflow:auto">
 ```
 
-![](images/Tabbox_Tablet_Scrolling_Example.png)
+![](/zk_component_ref/images/Tabbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

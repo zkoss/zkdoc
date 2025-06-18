@@ -16,7 +16,7 @@ template](https://github.com/zkoss-demo/admin-template)
 To avoid downloading bootstrap manually, it's convenient to include it
 by [WebJars](https://www.webjars.org/) with Maven.
 
-``` xml
+```xml
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bootstrap</artifactId>
@@ -28,13 +28,13 @@ by [WebJars](https://www.webjars.org/) with Maven.
 
 ## Page Scope
 
-``` xml
+```xml
 <?link rel="stylesheet" href="/webjars/bootstrap/4.6.0/css/bootstrap.min.css"?>
 ```
 
 ## Application Scope
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <language-addon>
     <addon-name>bootstrap</addon-name>
@@ -44,4 +44,4 @@ by [WebJars](https://www.webjars.org/) with Maven.
 ```
 
 See
-[ZK%20Client-side%20Reference/Language%20Definition/stylesheet](ZK%20Client-side%20Reference/Language%20Definition/stylesheet)
+[ZK_Client-side_Reference/Language_Definition/stylesheet](ZK_Client-side_Reference/Language_Definition/stylesheet)

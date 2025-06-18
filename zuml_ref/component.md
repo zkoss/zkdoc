@@ -55,7 +55,7 @@ Defines a named
 [<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
 element on that page with a predefined templateURI and default optional
 parameters. ([Application wide
-configuration](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Application-wide_Named_.3CApply.3E))
+configuration]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Application-wide_Named_.3CApply.3E))
 
 # The by-class Format
 
@@ -94,7 +94,7 @@ For example, assume you want to use `MyWindow` instead of the default
 window, <javadoc>org.zkoss.zul.Window</javadoc> for all windows defined
 in this ZUML page. Then, you can declare it as follows.
 
-``` xml
+```xml
  <?component name="window" extends="window" class="foo.MyWindow"?>
  ...
  <window>
@@ -104,7 +104,7 @@ in this ZUML page. Then, you can declare it as follows.
 
 It is equivalent to the following codes.
 
-``` xml
+```xml
  <window use="MyWindow">
  ...
  </window>
@@ -114,14 +114,14 @@ In addition, you could specify the properties to initialize. For
 example, you want to use the style class called blue for all buttons
 used in this page, then you could:
 
-``` xml
+```xml
  <?component name="button" extends="button" sclass="blue"?>
 ```
 
 Similarly, you could use the following definition to use OK as the
 default label for all buttons specified in this page.
 
-``` xml
+```xml
 <?component name="button" extends="button" label="OK"?>
 ```
 
@@ -130,7 +130,7 @@ manually (by `zscript` or by Java codes). If you still want them to be
 applied with the initialial properties, you could invoke the
 `applyProperties` method as follows.
 
-``` xml
+```xml
  <zscript>
      Button btn = new Button();
      btn.applyProperties(); //apply the initial properties
@@ -152,7 +152,7 @@ Notice that the list of composers specified here is always applied even
 if the component has its own apply condition. For example, both
 BaseComposer and FooComposer are applied in the following example,
 
-``` xml
+```xml
 <?component name="window" extends="window" apply="BaseComposer"?>
 <window apply="FooComposer">
 </window>
@@ -167,7 +167,7 @@ components. Unlike other directives, the class can be defined with
 `zscript`.
 
 For implementing a macro component, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class).
+Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class).
 
 ## extends
 
@@ -190,7 +190,7 @@ page. The language attribute is used for locating the component
 definition specified in the extends attribute. For example, the
 following statement works even if it is used in a ZHTML file.
 
-``` javascript
+```javascript
 <?component name="foo" extends="button" language="xul/html"?>
 ```
 

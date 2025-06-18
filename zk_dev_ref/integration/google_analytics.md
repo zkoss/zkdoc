@@ -9,7 +9,7 @@ any statistic service you prefer.
 Here we use Google Analytics as an example to illustrate how to override
 it.
 
-``` java
+```java
 try {
 var pageTracker = _gat._getTracker("UA-xxxx"); //whatever code your website is assigned
 pageTracker._setDomainName("zkoss.org");

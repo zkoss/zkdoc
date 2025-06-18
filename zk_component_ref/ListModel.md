@@ -10,8 +10,8 @@
 # Employment/Purpose
 
 This interface defines the methods that components like [
-Listbox](ZK_Component_Reference/Data/Listbox) and [
-Grid](ZK_Component_Reference/Data/Grid) use to get the
+Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and [
+Grid]({{site.baseurl}}/zk_component_ref/data/grid) use to get the
 content of items.
 
 # Example

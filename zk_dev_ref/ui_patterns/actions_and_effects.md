@@ -12,7 +12,7 @@ apply it to almost all widgets.
 CSA allows the developer to control some actions without JavaScript. If
 you want to have the full control (and are OK to write some JavaScript
 code), please refer to [ZK Client-side
-Reference](ZK_Client-side_Reference/General_Control) for the
+Reference]({{site.baseurl}}/zk_client_side_ref/general_control) for the
 complete control of the client-side behavior.
 
 # How to Apply Client-side Actions
@@ -31,7 +31,7 @@ of the predefined effects, such as slideDown and slideUp.
 For example, we could use the *slide-down* effect to display a window as
 follows[^1].
 
-``` xml
+```xml
 <zk>
     <button label="Show a modal window" onClick="wnd.doModal()"/>
     <window id="wnd" title="Modal" border="normal" width="300px"
@@ -44,7 +44,7 @@ follows[^1].
 In addition, you could specify additional options by enclosing them with
 the parentheses as follows.
 
-``` xml
+```xml
 <div action="show: slideDown({duration: 1000}); hide: slideUp({duration: 300})">
 ....
 </div>
@@ -58,7 +58,7 @@ Security Note: the options is actually a JavaScript object (i.e., a map,
 whatever is being specified to the client for evaluation. Thus, if you
 allow the user to specify the effect, you shall encode it first to avoid
 [cross-site
-scripting]({{site.baseurl}}/zk_dev_ref/Security_Tips/Cross-site_scripting).
+scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting).
 
 > ------------------------------------------------------------------------
 >
@@ -101,7 +101,7 @@ label's value
 (<javadoc method="setValue(java.lang.String)">org.zkoss.zul.Label</javadoc>)
 is changed. Then, you could do as follows:
 
-``` xml
+```xml
 <label id="inf2">
     <attribute w:name="setValue">
     function (value, fromServer) {
@@ -116,13 +116,13 @@ is changed. Then, you could do as follows:
 ```
 
 For more information, please refer to [ZK Client-side Reference: Widget
-Customization](ZK_Client-side_Reference/General_Control/Widget_Customization).
+Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
 
 ## Custom Effects
 
 For adding your custom effects, please refer to [ZK Client-side
 Reference: Customization: Actions and
-Effects](ZK_Client-side_Reference/Customization/Actions_and_Effects)
+Effects]({{site.baseurl}}/zk_client_side_ref/customization/actions_and_effects)
 for details.
 
 # Notes for Upgrading from ZK 3

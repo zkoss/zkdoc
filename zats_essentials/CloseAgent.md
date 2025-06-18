@@ -15,7 +15,7 @@ this behavior, for example to hide a component instead of detaching it.
 The test below is quite simple, close each component and check if they
 are detached one by one.
 
-``` java
+```java
 
     @Test
     public void testAgent() {

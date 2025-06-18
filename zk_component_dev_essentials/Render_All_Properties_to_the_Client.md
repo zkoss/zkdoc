@@ -12,7 +12,7 @@ is straightforward. As shown below, all you need to do is to invoke
 as width and height), and then the render method to render the property
 defined in this class.
 
-``` java
+```java
 protected void renderProperties(org.zkoss.zk.ui.sys.ContentRenderer renderer)
 throws java.io.IOException {
  super.renderProperties(renderer);

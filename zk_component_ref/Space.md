@@ -5,8 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Space</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Space</javadoc>
-- Style Guide: [
-  Separator](ZK_Style_Guide/XUL_Component_Specification/Separator)
+
 
 # Employment/Purpose
 
@@ -15,9 +14,9 @@ words, <space> is equivalent to <separator orient="horizontal">
 
 # Example
 
-![](images/ZKComRef_Space_Example.png)
+![](/zk_component_ref/images/ZKComRef_Space_Example.png)
 
-``` xml
+```xml
  <zk>
      <space bar="true"/>
      <space bar="true"/>
@@ -48,7 +47,7 @@ words, <space> is equivalent to <separator orient="horizontal">
 </table>
 
 - Inherited Supported Events: [
-  Separator](ZK_Component_Reference/Essential_Components/Separator#Supported_Events)
+  Separator]({{site.baseurl}}/zk_component_ref/essential_components/separator#Supported_Events)
 
 # Supported Children
 

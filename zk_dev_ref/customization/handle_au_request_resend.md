@@ -5,13 +5,13 @@ We provide a way for developer to customize the error handling.
 
 For example,
 
-``` javascript
+```javascript
 zAu.ajaxErrorHandler = function (req, status, statusText, ajaxReqTries) {
     if (ajaxReqTries == null)
         ajaxReqTries = 3; // retry 3 times
         
     // reset the resendTimeout, for more detail, please refer to 
-    // (/zk_config_ref/zk.xml/The_client-config_Element/The_auto-resend-timeout_Element 
+    // (/zk_config_ref/The_client-config_Element/The_auto-resend-timeout_Element 
     zk.resendTimeout = 2000;//wait 2 seconds to resend.
     
     if (!zAu.confirmRetry("FAILED_TO_RESPONSE", status+(statusText?": "+statusText:"")))

@@ -10,7 +10,7 @@ and Zclass.
 Using sclass is very easy, simply add another CSS class name within the
 component in line 8:
 
-``` xml
+```xml
 <zk>
     <style>
     .mybutton {
@@ -34,7 +34,7 @@ Normally, zclass is used to customize a totally different look and feel
 to that of the default one. For example, if you only apply border-radius
 and gradient background style like the following
 
-``` xml
+```xml
 <zk>
     <style>
     .mybutton {
@@ -63,7 +63,7 @@ cannot override the style by just using sclass as described above. For
 example, if we try to style menu text color to blue and we use sclass to
 do the job:
 
-``` xml
+```xml
 <zk>
     <style>
     .mymenu {
@@ -88,7 +88,7 @@ you can see that the style is not applied.
 However, we can use CSS class rule with "***sclass zclass***" pattern to
 achieve this goal. Modify the style like the following:
 
-``` xml
+```xml
 <zk>
     <style>
     .mymenu .z-menu-text {

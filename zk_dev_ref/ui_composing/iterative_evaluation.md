@@ -4,7 +4,7 @@ By default, ZK instantiates a component for each XML element. If you
 would like to generate a collection of components, you could specify the
 forEach attribute. For example,
 
-``` xml
+```xml
 <listbox>
     <listitem label="${each}" forEach="Apple, Orange, Strawberry"/>
 </listbox>
@@ -12,7 +12,7 @@ forEach attribute. For example,
 
 is equivalent to
 
-``` xml
+```xml
 <listbox>
     <listitem label="Apple"/>
     <listitem label="Orange"/>
@@ -35,7 +35,7 @@ If you have a variable holding a collection of objects, you can specify
 it directly in the forEach attribute. For example, assume that you have
 a variable called `grades` as follows.
 
-``` java
+```java
 grades = new String[] {"Best", "Better", "Good"};
 ```
 
@@ -43,7 +43,7 @@ Then, you can iterate them by the use of the forEach attribute as
 follows. Notice that you have to use EL expression to specify the
 collection.
 
-``` xml
+```xml
 <listbox>
     <listitem label="${each}" forEach="${grades}"/>    
 </listbox>
@@ -88,7 +88,7 @@ forEach attribute.
 In the following example, we use nested iterative elements to generate
 two listboxes.
 
-``` xml
+```xml
 <hlayout>
     <zscript>
     classes = new String[] {"College", "Graduate"};
@@ -115,7 +115,7 @@ If you have to iterate a collection of items for multiple XML elements,
 you could group them with the
 [zk](ZUML_Reference/ZUML/Elements/zk) element as shown below.
 
-``` xml
+```xml
 <zk forEach="${cond}">
     ${each.name}
     <textbox value="${each.value}"/>
@@ -132,7 +132,7 @@ it interprets the `forEach`, if and unless attribute it might have.
 You could access the `each` and `forEachStatus` object directly in
 zscript such as:
 
-``` xml
+```xml
 <window>
     <button label="${each}" forEach="apple, orange">
         <zscript>
@@ -147,7 +147,7 @@ these objects are actually stored in the parent component's attributes
 (<javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>).
 For example,
 
-``` java
+```java
 public class Foo implements Composer {
     public void doAfterCompose(Component comp) throws Exception {
         Object each = comp.getParent().getAttribute("each"); //retrieve the each object
@@ -169,7 +169,7 @@ which `forEach` is associated has been evaluated.
 
 For example, the following code will not work:
 
-``` xml
+```xml
 <button label="${each}" forEach="${countries}"
     onClick="alert(each)"/> <!-- incorrect!! --> 
 ```
@@ -180,7 +180,7 @@ There is a simple solution: store the value in the component's
 attribute, so you can retrieve it when the event listener is called. For
 example,
 
-``` xml
+```xml
 <button label="${each}" forEach="${countries}"
     onClick='alert(self.getAttribute("country"))'>
         <custom-attributes country="${each}"/>
@@ -196,7 +196,7 @@ and/or
 [forEachEnd](ZUML_Reference/ZUML/Attributes/forEachEnd)
 attributes.
 
-``` xml
+```xml
 <grid>
     <rows>
         <row forEach="${foos}" forEachBegin="${param.begin}" forEachEnd="${param.end}">

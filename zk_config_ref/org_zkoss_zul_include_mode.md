@@ -12,4 +12,4 @@ the prior version. Since ZK 5, the default mode is `auto` for easier
 control.
 
 For more information, please refer to [ZK Component
-Reference](ZK_Component_Reference/Essential_Components/Include).
+Reference]({{site.baseurl}}/zk_component_ref/essential_components/include).

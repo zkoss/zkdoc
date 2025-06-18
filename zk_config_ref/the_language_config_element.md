@@ -8,7 +8,7 @@
 `[Optional]`
 
 It specifies the additional [language addons and/or
-definitions](ZK_Client-side_Reference/Language_Definition).
+definitions]({{site.baseurl}}/zk_client_side_ref/language_definition).
 
 The use is the same as [ZK Configuration Reference/The
 language-config

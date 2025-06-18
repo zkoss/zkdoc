@@ -3,7 +3,7 @@ In earlier versions like ZK 9.0, MVVM requires the creation of various server-si
 
 The client MVVM also starts from a ZUL and a ViewModel, but the binding information will be passed to the client-side with ZK widgets. When the widgets are created and rendered on a browser, the bindings will also be created at the same time. To clearly indicate 2 different MVVM features, we call server MVVM for the one before ZK 9. 
 
-![](images//zk_mvvm_ref/images/client_mvvm_mechanism.jpeg)
+![](/zk_mvvm_ref/images/client_mvvm_mechanism.jpeg)
 
 The introduction of client MVVM in ZK 10 represents a significant evolution in the framework, particularly in how data binding and UI component management are handled. This new approach brings notable improvements in memory usage and overall performance, primarily due to key changes in the handling of UI components and data bindings. 
 
@@ -50,7 +50,7 @@ Add the listener for client MVVM in `zk.xml`:
 
 Apply [ClientBindComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/clientbind/ClientBindComposer.html) with the target ViewModel a ZUL like:
 
-``` xml
+```xml
 <div apply="org.zkoss.clientbind.ClientBindComposer" viewModel="..." >
     <!-- other components -->
 </div>
@@ -59,9 +59,9 @@ Apply [ClientBindComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/cli
 ### Option 2: Enable it globally
 
 Specify [default-applied
-binding composer](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.bind.defaultComposer.class) in `zk.xml` like:
+binding composer]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.defaultcomposer.class) in `zk.xml` like:
 
-``` xml
+```xml
 <library-property>
    <name>org.zkoss.bind.defaultComposer.class</name>
    <value>org.zkoss.clientbind.ClientBindComposer</value>
@@ -70,7 +70,7 @@ binding composer](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/T
 
 Then, you can use a ViewModel without explicitly specifying a composer:
 
-``` xml
+```xml
 <div viewModel="..." >
     <!-- other components -->
 </div>
@@ -89,7 +89,7 @@ differences compared to the server MVVM.
 
 EL expression - `${expr}` and EL 3 are not supported. For Example, the following expressions are not supported:
 
-``` xml
+```xml
 <label value="${expr}" />
 <label value="@load(('Hi, ' += vm.person.firstName += ' ' += vm.person.lastName))" />
 <label value="@load((vm.names.stream().filter(x -> x.contains(vm.filter)).toList()))" />
@@ -108,15 +108,15 @@ via a Java object. You have to stick to the MVVM pattern.
 
 Traversing components, like using `self` and `.parent` are not supported.
 
-``` xml
+```xml
 <button onClick="@command('delete', index=self.parent.parent.index)"/>
 ```
 
 
-[@Listen](https://www.zkoss.org/wiki/ZK_Developer's_Reference/Event_Handling/Event_Listening), [@Wire](../advanced/wire_components.html), [@WireVariable](../advanced/wire_components.html), and [@SelectorParam](../syntax/selectorparam.html) are not supported.
+[@Listen]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening), [@Wire](../advanced/wire_components.html), [@WireVariable](../advanced/wire_components.html), and [@SelectorParam](../syntax/selectorparam.html) are not supported.
 You cannot use [@BindingParam](../syntax/bindingparam.html) and [@ContextParam](../syntax/contextparam.html) to get components.
 
-``` java
+```java
 @Command
 public void commandA(@BindingParam Component otherComponent,
                      @ContextParam(ContextType.COMPONENT) Component targetComponent) {
@@ -126,11 +126,11 @@ public void commandA(@BindingParam Component otherComponent,
 
 Note that even though you cannot get a component, you still **can** use `@BindingParam` to retrieve values and other `ContextType`.
 
-``` xml
+```xml
 <button label="click it" onClick="@command('commandB', foo='something', bar='somethingelse')" />
 ```
 
-``` java
+```java
 @Command
 public void commandB(@BindingParam("foo") String foo,
                      @ContextParam(ContextType.PAGE) Page page,
@@ -143,7 +143,7 @@ public void commandB(@BindingParam("foo") String foo,
 Component related API might return null (no component on the
     server-side).
 
-``` java
+```java
 @Command
 public void commandB(@ContextParam(ContextType.TRIGGER_EVENT) MouseEvent event) {
     // event.getTarget() is null.
@@ -162,7 +162,7 @@ Deferred Binding is no longer supported. This feature is to avoid
 unnecessary AU requests (data updates). Since client MVVM does those
 bindings on the client-side, it doesn't require such an update.
 
-``` xml
+```xml
 <textbox value="@bind(vm.text1)">
     <custom-attributes org.zkoss.bind.event.deferPost="false"/>
 </textbox>
@@ -179,12 +179,12 @@ changed.
 Conditional binding works differently when the command updates the value
 without doing `@NotifyChange`. For example:
 
-``` xml
+```xml
 <label value="@load(vm.text, after='doChange')" />
 <button label="Do Change" onClick="@command('doChange')" />
 ```
 
-``` java
+```java
 public String text = "123";
 @Command
 public void doChange() {
@@ -202,7 +202,7 @@ In client MVVM, the value will remain "123". If you intend to see
 `AnnotateDataBinder` is the old ZK binding in zkplus module. And the
 Binder API is for server MVVM. For example:
 
-``` xml
+```xml
 <window id="myWin" viewModel="@id('vm') @init('...')">
     <button id="changeNameBtn" label="change name">
         <attribute name="onClick"><![CDATA[
@@ -215,7 +215,7 @@ Binder API is for server MVVM. For example:
 
 Or using custom Binder:
 
-``` xml
+```xml
 <window viewModel="..." binder="@id('mybinder') @init(vm.binder)">
 </window>
 ```
@@ -284,7 +284,7 @@ It depends on the number of components and the type and amount of bindings you a
 
 
 ## How is client MVVM different from fragment?
-* [fragment](https://www.zkoss.org/wiki/ZK%20Component%20Reference/Containers/Fragment) integrates Vue framework.
+* [fragment](https://www.zkoss.org/wiki/ZK_component_reference/Containers/Fragment) integrates Vue framework.
 
 Since Vue supports different data binding syntax from ZK MVVM, not all features can be integrated with ZK. The integration focuses on supporting basic and commonly shared data binding syntax.
 
@@ -293,4 +293,4 @@ Since Vue supports different data binding syntax from ZK MVVM, not all features 
 Hence, it can support a more complete set of data-binding syntax and behavior. Also, it allows you to migrate your existing server MVVM to client MVVM easily.
 
 ## Is client MVVM specific for clustering environment?
-The client MVVM is not specifically designed for a clustered environment, it has the same level of clustering support as server MVVM. It still keeps the Desktop and some component states in a server. When deploying to a clustering environment, you still need to follow the instructions in [ZK Developer's Reference/Clustering](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Clustering).
+The client MVVM is not specifically designed for a clustered environment, it has the same level of clustering support as server MVVM. It still keeps the Desktop and some component states in a server. When deploying to a clustering environment, you still need to follow the instructions in [ZK Developer's Reference/Clustering]({{site.baseurl}}/zk_dev_ref/clustering).

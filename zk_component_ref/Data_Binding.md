@@ -5,7 +5,7 @@ component definition's annotation. The annotation specifies when to save
 (or load) which attribute, how to convert, validate and render the data.
 It can be found in `metainfo\zk\lang-addon.xml` of zkbind.jar. Please
 refer to [ZK Client-side Reference/Language
-Definition]({{site.baseurl}}/zk_client_side_ref/Language_Definition)
+Definition]({{site.baseurl}}/zk_client_side_ref/language_definition)
 about how to configure language definition and its addon. If you want
 data binding can works on your newly-created component, you should
 define its own annotations.
@@ -89,7 +89,7 @@ Let's take a look at some examples.
 
 **Textbox's data binding annotation**
 
-``` xml
+```xml
 
     <component>
         <component-name>textbox</component-name>
@@ -138,7 +138,7 @@ Let's take a look at some examples.
 
 **Selectbox's data binding annotation**
 
-``` xml
+```xml
 
     <component>
         <component-name>selectbox</component-name>

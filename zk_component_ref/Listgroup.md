@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Listgroup</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.sel.Listgroup</javadoc>
-- Style Guide: [
-  Listgroup](ZK_Style_Guide/XUL_Component_Specification/Listgroup)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -16,9 +15,9 @@ Adds the ability for single level grouping to the Listbox.
 
 # Example
 
-![](images/ZKComRef_Listgroup_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Listgroup_Example.PNG)
 
-``` xml
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <zk>
      Listbox support Grouping
@@ -96,11 +95,11 @@ the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Listitem](ZK_Component_Reference/Data/Listbox/Listitem#Supported_Events)
+  Listitem]({{site.baseurl}}/zk_component_ref/data/listbox/listitem#Supported_Events)
 
 # Supported Children
 
-`*`[` Listcell`](ZK_Component_Reference/Data/Listbox/Listcell)
+`*`[` Listcell`]({{site.baseurl}}/zk_component_ref/data/listbox/listcell)
 
 # Use Cases
 

@@ -3,7 +3,7 @@ template is enclosed with [the template
 element](ZUML_Reference/ZUML/Elements/template) as shown
 below.
 
-``` xml
+```xml
 <window>
     <template name="foo">
       <textbox/>
@@ -28,7 +28,7 @@ create the components repeatedly based on the template by invoking
 A component can be assigned with multiple templates. Each of them is
 identified by the **name** attribute.
 
-``` xml
+```xml
 <div>
     <template name="t1">
         <grid model="${foo}"/>
@@ -44,9 +44,9 @@ model allow you to specify a template to control how to render each
 item. In the following sections, we discuss them in details. If you'd
 like to know how to use templates manually in Java, please refer to [the
 UI Patterns: Templates
-section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating/Templates).
+section]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/templates).
 
 Notice that please read [the Listbox Template
-section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template)
+section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template)
 first, even though you're rendering other kind of UI. It described the
 common concepts and tricks of using templates.

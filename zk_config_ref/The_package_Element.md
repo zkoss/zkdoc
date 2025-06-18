@@ -15,7 +15,7 @@ For example, if this server provides the client packages for
 `foo.fly.*`, then the following shall be specified to enable
 Ajax-as-a-Service.
 
-``` xml
+```xml
 <client-config>
     <package>
         <package-name>foo.fly</package-name>

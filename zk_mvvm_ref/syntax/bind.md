@@ -17,7 +17,7 @@ It's like a shortcut annotation that combines both ` @save ` and ` @load `. When
 Example
 =======
 
-``` xml
+```xml
 <textbox id="t2" value="@bind(vm.user.account)"/>
 
 <doublebox id="pbox" value="@bind(vm.selected.price)"/>

@@ -11,13 +11,13 @@ If no configuration specified, ZK Calendar renders in the default theme.
 
 # Look and Feel
 
-![](images/Zk_calendar3_themes.png)
+![](/zk_calendar_essentials/images/Zk_calendar3_themes.png)
 
 # Follow ZK Theme by Default
 
 By default, Calendars will automatically switch to a theme according to
 what you specified in the property [
-`org.zkoss.theme.preferred`](ZK%20Developer's%20Reference/Theming%20and%20Styling/Switching%20Themes).
+`org.zkoss.theme.preferred`](ZK_Developer's_Reference/theming_and_styling/Switching_Themes).
 
 Here is the built-in rule:
 
@@ -62,7 +62,7 @@ montana, violet and spaceblack, cardinal, mysteriousgreen, zen</p></td>
 Specify one of the following theme names above in `zk.xml` with the
 library property below:
 
-``` xml
+```xml
     <library-property>
         <name>org.zkoss.calendar.theme.preferred</name>
         <value>dark</value>

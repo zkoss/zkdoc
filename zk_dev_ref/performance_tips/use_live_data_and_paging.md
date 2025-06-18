@@ -8,14 +8,14 @@ Then, the items are sent to the client only if they become visible.
 In addition, the performance will be improved more if you also use the
 paging mold such as
 
-``` xml
+```xml
 <listbox model="${mymodel}" mold="paging">
 ...
 ```
 
 For more information of using and implementing a model, please refer to
-[the Model section]({{site.baseurl}}/zk_dev_ref/MVC/Model) and
+[the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model) and
 [ZK Component Reference:
-Listbox](ZK_Component_Reference/Data/Listbox#Live_Data).
+Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Live_Data).
 
 {{ ZKDevelopersReferencePageFooter}}

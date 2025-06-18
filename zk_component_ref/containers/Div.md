@@ -23,7 +23,7 @@ The example demonstrates the usage of the `Div` component by creating two separa
 ```
 
 Try it
-*  [Div with text alignment](https://zkfiddle.org/sample/1d30bqc/1-ZK-Component-Reference-Div-Example?v=latest&t=Iceblue%20Compact)
+*  [Div with text alignment](https://zkfiddle.org/sample/1d30bqc/1-ZK-Component-Reference-Div-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Children
 

@@ -2,7 +2,7 @@
 
 Special Attribute Issue
 =======================
-ZK Bind is a post-processing work on components after they have been created and it can control most attributes to change a component's status. However, there are [some special attributes]({{site.baseurl}}/zuml_ref/ZUML/Attributes) such as `if` and
+ZK Bind is a post-processing work on components after they have been created and it can control most attributes to change a component's status. However, there are [some special attributes]({{site.baseurl}}/zuml_ref/zuml/attributes) such as `if` and
 `forEach` in which ZK Bind can't work on because these attributes' value are determined and fixed when components are created. Therefore, binding these special attributes takes no effect on components, but you may want to use the functions that these special attributes provide, here we demonstrate alternative methods in MVVM approach.
 
 The "if" Versus the "visible"

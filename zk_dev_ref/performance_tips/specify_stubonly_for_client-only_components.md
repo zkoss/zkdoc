@@ -11,7 +11,7 @@ special property called `stubonly`
 Once specified with `true`, its states won't be maintained on the server
 (and all states are maintained at the client). For example,
 
-``` xml
+```xml
 <hbox stubonly="true">
 </hbox>
 ```
@@ -29,7 +29,7 @@ For example, in the following snippet, only `textbox` is <i>not</i>
 stub-only, while `hbox`, `splitter`, `listbox`, `listitem` and labels
 are all stub-only.
 
-``` xml
+```xml
 <hbox stubonly="true">
   a stub-only label
   <textbox stubonly="false"/>
@@ -58,7 +58,7 @@ following snippet, it is safe to click the `invalidate` button. From an
 end user's point of view, there is no difference whether `stubonly` is
 specified or not.
 
-``` xml
+```xml
  <window>
   <button label="self.parent.invalidate()"/>
   <vbox stubonly="true">
@@ -68,10 +68,10 @@ specified or not.
 ```
 
 It is a special case that
-[paging](ZK_Component_Reference/Supplementary/Paging) and
+[paging]({{site.baseurl}}/zk_component_ref/supplementary/paging) and
 `stubonly` cannot be applied at the same time. For example,
 
-``` xml
+```xml
 <listbox mold="paging" pageSize="1" >
     <listitem >
         <listcell stubonly="true"/>
@@ -83,7 +83,7 @@ It is a special case that
 ```
 
 Although paging will
-[invalidate]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#Invalidate_a_Component)
+[invalidate]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Invalidate_a_Component)
 `listbox` and its children, `stubonly` needs the referred widget in
 client side which is detached during paging and throws mounting error.
 
@@ -94,7 +94,7 @@ is removed when the component is removed. Thus, you can't reuse a
 component if the component has some stub components and it is detached.
 For example, the following code won't work:
 
-``` java
+```java
 public class MyListener implements EventListener {
    private static Window win;
    public void onEvent(Event evt) throws Exception{
@@ -136,7 +136,7 @@ For example, in the following snippet,
 [org.zkoss.zk.ui.event.StubEvent:onStub](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StubEvent.html)
 will be generated to `System.out`.
 
-``` xml
+```xml
 <textbox stubonly="true" 
 onChange='System.out.println(event.getClass().getName()+":"+event.getName())'/>
 ```
@@ -151,16 +151,16 @@ The client-side widget of a component is the same no matter if it is
 stub only. Thus, the application can have the full control by
 registering the client side event listener, such as
 
-``` xml
+```xml
 <textbox stubonly="true" w:onChange="doSomething(this.value)" xmlns:w="client"/>
 ```
 
 In other words, the stub-only components behave the same at the client.
 
 Refer to [Client Side
-Programming](Small_Talks/2010/April/Client_Side_Programming)
+Programming](https://www.zkoss.org/wiki/Small_Talks/2010/April/Client_Side_Programming)
 and [ZK Client-side Reference: General
-Control](ZK_Client-side_Reference/General_Control) for more
+Control]({{site.baseurl}}/zk_client_side_ref/general_control) for more
 information.
 
 # Version History

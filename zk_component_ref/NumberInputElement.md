@@ -22,9 +22,9 @@ all of the NumberInputElement.
 
 For example,
 
-![](images/NumberInputElement-Locales.png)
+![](/zk_component_ref/images/NumberInputElement-Locales.png)
 
-``` xml
+```xml
 <grid width="550px">
         <columns>
             <column hflex="min" label="Locale(Correct Result)" />
@@ -91,7 +91,7 @@ For example,
 </table>
 
 - Inherited Supported Events: [
-  FormatInputElemen](ZK_Component_Reference/Base_Components/FormatInputElement#Supported_Events)
+  FormatInputElemen]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Children
 

@@ -2,7 +2,7 @@ Here we describe how to implement a chart model
 (<javadoc type="interface">org.zkoss.zul.ChartModel</javadoc>). For the
 concept of component, model and render, please refer to [the
 Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 Depending on the type of chart you want, you could implement one of
 <javadoc type="interface">org.zkoss.zul.PieModel</javadoc>,
@@ -15,7 +15,7 @@ directly, such as <javadoc>org.zkoss.zul.SimplePieModel</javadoc>,
 
 For example, we could have a composer as follows.
 
-``` java
+```java
 public class ProgrammerModelComposer extends SelectorComposer<Component> {
     public void doAfterCompose(Component comp) throws Exception {
         PieModel piemodel = new SimplePieModel();
@@ -30,7 +30,7 @@ public class ProgrammerModelComposer extends SelectorComposer<Component> {
 
 Then, you could use it in a ZUML document:
 
-``` xml
+```xml
 <chart title="Pie Chart" width="500" height="250" type="pie" threeD="false" fgAlpha="128"
  apply="foo.ProgrammerModelComposer"/>
 ```

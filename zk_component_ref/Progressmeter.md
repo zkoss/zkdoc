@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Progressmeter</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Progressmeter</javadoc>
-- Style Guide: [
-  Progressmeter](ZK_Style_Guide/XUL_Component_Specification/Progressmeter)
+
 
 # Employment/Purpose
 
@@ -17,9 +16,9 @@ completed. The value property must be in the range between 0 and 100.
 
 # Example
 
-![](images/ZKComRef_Progressmeter_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Progressmeter_Example.PNG)
 
-``` xml
+```xml
      <progressmeter value="10"/>
 ```
 
@@ -54,7 +53,7 @@ real value of the progressmeter will be hidden.(default false)
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

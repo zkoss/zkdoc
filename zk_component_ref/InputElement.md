@@ -11,15 +11,15 @@
 
 InputElement is a super class for components which handle user key
 input, such as
-[`textbox`](ZK_Component_Reference/Input/Textbox)`,`
-[`intbox`](ZK_Component_Reference/Input/Intbox)`,`
-[`decimalbox`](ZK_Component_Reference/Input/Decimalbox)`,`
-[`doublebox`](ZK_Component_Reference/Input/Doublebox),
-[`datebox`](ZK_Component_Reference/Input/Datebox),
-[`timebox`](ZK_Component_Reference/Input/Timebox),
-[`spinner`](ZK_Component_Reference/Input/Spinner),
-[`combobox`](ZK_Component_Reference/Input/Combobox), and
-[`bandbox`](ZK_Component_Reference/Input/Bandbox).
+[`textbox`]({{site.baseurl}}/zk_component_ref/input/textbox)`,`
+[`intbox`]({{site.baseurl}}/zk_component_ref/input/intbox)`,`
+[`decimalbox`]({{site.baseurl}}/zk_component_ref/input/decimalbox)`,`
+[`doublebox`]({{site.baseurl}}/zk_component_ref/input/doublebox),
+[`datebox`]({{site.baseurl}}/zk_component_ref/input/datebox),
+[`timebox`]({{site.baseurl}}/zk_component_ref/input/timebox),
+[`spinner`]({{site.baseurl}}/zk_component_ref/input/spinner),
+[`combobox`]({{site.baseurl}}/zk_component_ref/input/combobox), and
+[`bandbox`]({{site.baseurl}}/zk_component_ref/input/bandbox).
 
 Some features are implemented in this class, such as constraint,
 disabled, maxlength, name, readonly, and so on.
@@ -28,7 +28,7 @@ You should not use this class directly, please use the inherited class.
 
 # Example
 
-``` xml
+```xml
 <grid>
     <rows>
         <row>
@@ -55,7 +55,7 @@ You should not use this class directly, please use the inherited class.
 </grid>
 ```
 
-![](images/CrInputs.png)
+![](/zk_component_ref/images/CrInputs.png)
 
 # Validation
 
@@ -79,7 +79,7 @@ To use the default constraint, you could specify a list of conditions in
 <javadoc method="setConstraint(java.lang.String)">org.zkoss.zul.impl.InputElement</javadoc>,
 such as `no positive` and `no empty`. For example,
 
-``` xml
+```xml
 <textbox constraint="no empty"/>
 <intbox constraint="no negative,no zero"/>
 ```
@@ -149,9 +149,9 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#c
 <code>after_end</code><br />
 <code>...</code></p></td>
 <td><p>Specifies the position of the error box. Please refer to <a
-href="ZK_Component_Reference/Essential_Components/Popup")
+href="{{site.baseurl}}/zk_component_ref/essential_components/popup")
 
-``` xml
+```xml
 <textbox placeholder="Please type some text" />
 ```
 
@@ -163,7 +163,7 @@ tag in the component. The inputAttributes can take a Map with attribute
 names as the keys or a String separated by ";" and followed the
 name=value rule.
 
-``` xml
+```xml
 <bandbox inputAttributes="${map}"></bandbox>
 <datebox inputAttributes="autocorrect=off;spellcheck=ture"></datebox>
 ```
@@ -245,7 +245,7 @@ component caused a validation error.</p></td>
 </table>
 
 [ Inherited Supported Events from
-XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

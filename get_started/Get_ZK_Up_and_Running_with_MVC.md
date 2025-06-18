@@ -9,7 +9,7 @@ modern web application with ZK. The target application we are going to
 build is a simple car catalog application. We will use the **MVC**
 approach to build the application here. This approach is very intuitive
 and flexible and gives you full control of components. In addition, you
-can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVVM).
+can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm).
 
 You can download the complete source code under the [ Start from Example Project](#start_from_example_project) section.
 
@@ -20,7 +20,7 @@ You can download the complete source code under the [ Start from Example Project
 The next step after building the UI is to make it respond to user
 interaction. The pattern we introduce here is to **control ZK components
 directly by their API**. We call this [**Model-View-Controller**
-(**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/MVC). This
+(**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/mvc). This
 pattern divides an application into 3 parts.
 
 The **Model** consists of application data and business rules.
@@ -58,7 +58,7 @@ controller class by simply extending
 [SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 :
 
-``` java
+```java
 package tutorial;
 
 // omit import for brevity
@@ -114,7 +114,7 @@ For complete selector syntax, please refer to [SelectorComposer javadoc](http://
 
 The final code looks like:
 
-``` java
+```java
 public class SearchController extends SelectorComposer<Component> {
 
     @Listen("onClick = #searchButton")
@@ -146,7 +146,7 @@ Steps to retrieve components:
 2.  Name the variable as component's ID.
       
     Matching ID is the default rule to match a component for `@Wire`,
-    and please refer to [Wire Components in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/Controller/Wire_Components)
+    and please refer to [Wire Components in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components)
     to know other ways.
 3.  Annotate the variable with `@Wire`.
 
@@ -154,7 +154,7 @@ Then ZK will "wire" a corresponding ZK component object to the variable
 we declared. After this has been done, we can then control and
 manipulate UI by accessing those annotated member variables.
 
-``` java
+```java
 
 public class SearchController extends SelectorComposer<Component> {
 
@@ -179,7 +179,7 @@ You can get a component's state in a browser with its getter methods,
 invisible with setter, `setVisible(false)`, to achieve some dynamic UI
 effect.
 
-``` java
+```java
 public class SearchController extends SelectorComposer<Component> {
     //omit codes to get components
 
@@ -197,11 +197,11 @@ public class SearchController extends SelectorComposer<Component> {
 - Line 8: Notice that `setModel()` only accepts a `ListModel` object, so
   we can use `org.zkoss.zul.ListModelList` to wrap search result list.
   There are other `ListModel` objects for different collection types,
-  please refer to [ List Model in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/Model/List_Model).
+  please refer to [ List Model in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model).
   To change data item displayed in a `Listbox`, call
   `carListbox.setModel()`. The model of a component is the data the
   component holds and we can change the model to change the data
-  rendering on the screen, please refer to [Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/Model#Model-Driven_Rendering)
+  rendering on the screen, please refer to [Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering)
 
 ## Displaying a Data Collection
 
@@ -210,7 +210,7 @@ corresponding event listener, but we would still find that content of
 *listbox* doesn't show the search result correctly. That is because we
 haven't specified how to render data model on the *listbox*. Now, we
 will use a special tag,
-[<template>]({{site.baseurl}}/zk_dev_ref/mvc/View/Template), to
+[<template>]({{site.baseurl}}/zk_dev_ref/mvc/view/template), to
 control the rendering of each car. ZK will render each object in the
 data model according to components inside <template/>.
 
@@ -222,13 +222,13 @@ Steps to use <template>:
 3.  Use implicit variable, `each`, to assign domain object's properties
     to component's attributes.
 
-Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/View/Template/Listbox_Template)
+Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template)
 for more details.
 
 **Extracted from
 [searchMvc.zul](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/webapp/searchMvc.zul)**
 
-``` xml
+```xml
 <listbox id="carListbox" rows="3" emptyMessage="No car found in the result">
     <listhead>
         <listheader label="Model" />
@@ -253,7 +253,7 @@ for more details.
 - Line 9: The "each" is a variable that references to a domain object in
   the model list which is `Car` in our example application. We can use
   it to access domain object's property with EL, e.g. `${each.price}`.
-- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/ZUML/EL_Expressions#EL_3.0_Support):
+- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#EL_3.0_Support):
   `(+=)`
 
 ## Implementing "View Car Details"
@@ -269,7 +269,7 @@ priceLabel, and descriptionLabel and assign value to them with setter.
 
 [SearchController.java](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/java/tutorial/SearchController.java)
 
-``` java
+```java
 
 public class SearchController extends SelectorComposer<Component> {
 

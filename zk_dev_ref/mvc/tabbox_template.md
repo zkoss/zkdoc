@@ -4,7 +4,7 @@ The template used to control the rendering of each tab and tabpanel must
 be named `model:tab` and `model:tabpanel` and declared right inside the
 `tabbox` element. For example,
 
-``` xml
+```xml
 <div apply="foo.FruitProvider">
 <tabbox id="mytab" model="${$composer.fruits}">
     <template name="model:tab">
@@ -38,7 +38,7 @@ In this example, we assume the `$composer.fruits` expression returns a
 two-dimensional array[^1], and is provided by the `foo.FruitProvider`
 composer such as follows[^2].
 
-``` java
+```java
 <zscript><![CDATA[
 public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
     public ListModelArray fruits = new ListModelArray(
@@ -55,7 +55,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 ]]></zscript>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/St201311-tabbox.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/st201311-tabbox.png‎)
 
 > ------------------------------------------------------------------------
 >
@@ -92,7 +92,7 @@ example, you can't reference [the arg
 variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
 in a template:
 
-``` xml
+```xml
 <div apply="foo.FruitProvider">
 <tabbox id="mytab" model="${$composer.fruits}">
     <template name="model:tab">
@@ -112,7 +112,7 @@ attributes
 (<javadoc method="getAttributes()" type="interface">org.zkoss.zul.Component</javadoc>.
 For example,
 
-``` xml
+```xml
 <div apply="foo.FruitProvider">
 <tabbox id="mytab" model="${$composer.fruits}">
     <custom-attributes foo="${arg.foo}"/><!-- store it for later use -->
@@ -144,4 +144,4 @@ For example,
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
     [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
+    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)

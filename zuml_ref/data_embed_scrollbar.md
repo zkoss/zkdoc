@@ -3,7 +3,7 @@ component (like Grid, Listbox, and Tree) and the layout region component
 (like Center, South, North, and so on) should apply data-embedscrollbar
 attribute.
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
 <grid ca:data-embedscrollbar="false"></grid>
 </div>

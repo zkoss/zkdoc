@@ -5,7 +5,7 @@
 - Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Captcha</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Captcha</javadoc>
-- Style Guide: N/A
+
 - [Available in ZK PE and EE
   only](http://www.zkoss.org/product/edition.dsp)
 
@@ -22,7 +22,7 @@ a purposive text.
 
 ![](/zk_component_ref/images/captcha.png)
 
-``` xml
+```xml
  <vbox>
      <captcha id="cpa" length="5" width="200px" height="50px"/>
  </vbox>
@@ -50,7 +50,7 @@ a purposive text.
 </table>
 
 - Inherited Supported Events: [
-  Image]({{site.baseurl}}/zk_component_ref/essential_components/Image#Supported_Events)
+  Image]({{site.baseurl}}/zk_component_ref/essential_components/image#Supported_Events)
 
 # Supported Children
 
@@ -69,7 +69,7 @@ a purposive text.
 Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
 [ZK Installation Guide:
-Linux]({{site.baseurl}}/zk_installation_guide/Setting_up_OS/Linux).
+Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
 
 # Version History
 

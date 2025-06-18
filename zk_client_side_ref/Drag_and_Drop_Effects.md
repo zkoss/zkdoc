@@ -12,7 +12,7 @@ requirement.
 If you want to customize a particular widget, you could do as
 follows[^1].
 
-``` javascript
+```javascript
 var superwgt = {};
 zk.override(wgt, superwgt, {
     initDrag_: function () {
@@ -25,7 +25,7 @@ zk.override(wgt, superwgt, {
 If you want to override all widgets of particular class, say, Combobox,
 you could do as follows.
 
-``` javascript
+```javascript
 var supercomobox = {};
 zk.override(zul.inp.Combobox.prototype, supercomobox, {
     initDrag_: function () {
@@ -38,7 +38,7 @@ zk.override(zul.inp.Combobox.prototype, supercomobox, {
 If you override <javadoc directory="jsdoc">zk.Widget</javadoc>, then all
 widgets are affected[^2].
 
-``` javascript
+```javascript
 var supercomobox = {};
 zk.override(zul.inp.Combobox.prototype, supercomobox, {
     initDrag_: function () {
@@ -52,12 +52,12 @@ Custom widget class approach: you can extend a default ZK widget class
 into your own extended widget class. This class can be assigned from zul
 using the `xmlns:w="client"` namespace, and the
 `w:use="custom.MyCustomClass"` [attribute on the target
-component](ZK_Client-side_Reference/General_Control/Widget_Customization#Specify_Your_Own_Widget_Class),
+component]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization#Specify_Your_Own_Widget_Class),
 or using
 [component.setWidgetClass(...)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#setWidgetClass-java.lang.String-)
 from Java.
 
-``` javascript
+```javascript
     zk.$package("custom");
     zk.afterLoad("zul.wgt", function () {
         custom.MyButton = zk.$extends(zul.wgt.Button, {
@@ -164,7 +164,7 @@ element being dragged, you can override
 <javadoc method="ghost(zk.Draggable, _global_.Offset, _global_.String)" directory="jsdoc">zk.DnD</javadoc>
 as follows.
 
-``` javascript
+```javascript
 var superghost = zk.DnD.ghost;
 zk.DnD.ghost = function (drag, ofs, msg) {
     if (msg != null)

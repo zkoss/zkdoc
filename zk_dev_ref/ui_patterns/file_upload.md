@@ -6,7 +6,7 @@ When the event thread is disable (default), it is recommended to use
 <javadoc>org.zkoss.zul.Menuitem</javadoc> with upload="true" instead.
 For example,
 
-``` xml
+```xml
 <zk>
     <zscript>
     void upload(UploadEvent event) {
@@ -29,7 +29,7 @@ For example,
 If you prefer to use a dialog
 (<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>), please
 take a look at [ ZK Component Reference:
-Fileupload](ZK_Component_Reference/Essential_Components/Fileupload#Event_Thread_Disabled)
+Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Event_Thread_Disabled)
 for more inormation.
 
 ## File Upload with Event Thread
@@ -44,7 +44,7 @@ However, if the event thread is enabled, you can get uploaded Media
 returned by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>
 and other overloadded static methods.
 
-``` xml
+```xml
 <zk>
     <button label="Upload">
     <attribute name="onClick">{

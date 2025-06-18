@@ -14,7 +14,7 @@ Reference](ZUML_Reference/ZUML/Processing_Instructions/init).
 
 Fir example,
 
-``` xml
+```xml
 <zk:init use="foo.MyInit"/>
 ...
 <zk:page>

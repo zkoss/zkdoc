@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkex.zul.Jasperreport</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
-- Style Guide: N/A
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -22,7 +22,7 @@ This component is used to generate a Jasper report into an inline frame.
 default. If you need to use this component, you have to include the
 dependency manually like:
 
-``` xml
+```xml
 <dependency>
     <groupId>net.sf.jasperreports</groupId>
     <artifactId>jasperreports</artifactId>
@@ -45,9 +45,9 @@ Seven](https://github.com/Jaspersoft/jasperreports-pdf-lib7).
 
 # Example
 
-![](images/ZKComRef_Jasperreport_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Jasperreport_Examples.PNG)
 
-``` xml
+```xml
     <jasperreport id="report" height="360px" />
     
     <zscript>
@@ -71,7 +71,7 @@ The Jasperreport component API provides a way to specify export
 parameters. To do so, you should put a Map containing export parameters
 within the parameters Map, with key `"exportParameter"`. For example:
 
-``` java
+```java
     Map parameters = new HashMap();
     Map exportParams = new HashMap();
     exportParams.put("net.sf.jasperreports.export.mypropertyname", true);
@@ -87,7 +87,7 @@ which case when the report is exported as Excel format there will be one
 sheet generated for each page. To override this setting, set it as an
 export parameter as the following:
 
-``` java
+```java
     Map parameters = new HashMap();
     Map exportParams = new HashMap();
     exportParams.put(JRXlsAbstractExporterParameter.PROPERTY_ONE_PAGE_PER_SHEET.toString(), false);
@@ -106,7 +106,7 @@ Note: exportName can not be empty or null.
 
 Default: "report"
 
-``` xml
+```xml
 <jasperreport exportName="test"/>
 ```
 
@@ -132,7 +132,7 @@ Default: "report"
 </table>
 
 - Inherited Supported Events: [
-  Iframe](ZK_Component_Reference/Essential_Components/Iframe#Supported_Events)
+  Iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Supported_Events)
 
 # Supported Children
 
@@ -144,14 +144,14 @@ Default: "report"
 
 ### Java Code
 
-``` java
+```java
 //Jasperreport report;
 report.setType("pdf"); // report is the Jasperreport component
 ```
 
 ### Zul Code
 
-``` xml
+```xml
 <jasperreport id="report" type="pdf" />
 ```
 
@@ -199,7 +199,7 @@ report.setType("pdf"); // report is the Jasperreport component
 
 Jasperreport depends on the fonts you use in the report. For more
 information, please refer to [ZK Installation Guide:
-Linux](ZK_Installation_Guide/Setting_up_OS/Linux).
+Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
 
 # Version History
 

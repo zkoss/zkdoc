@@ -21,7 +21,7 @@ Notice that these header directives are effective only for the main ZUL
 page. In other words, they are ignored if a page is included by another
 pages or servlets. Also, they are ignored if the page is a `zhtml` file.
 
-``` xml
+```xml
  <?meta name="keywords" content="HTML, CSS, XML" ?>
 
  <window title="My App">

@@ -10,7 +10,7 @@ For example, you can publish a *doClick* command in your view model with an *onC
 
 **Client Binding** provides 4 methods - 2 on the client-side, and 2 on the server-side. Their relationships can be illustrated by the following diagram:
 
-![ZK8_Client_Binding_Diagrammatic_Sketch]({{site.baseurl}}/zk_mvvm_ref/images/ZK8_Client_Binding_Chart01.jpg)
+![ZK8_Client_Binding_Diagrammatic_Sketch]({{site.baseurl}}/zk_mvvm_ref/images/zk8_client_binding_chart01.jpg)
 
 #### On client-side
 
@@ -80,5 +80,5 @@ The client command annotation allows us to put the commands we want for notifyin
 Two examples for using client-binding:
 - ZK Blog :[
 ZK8: Work with Polymer Components using ZK’s new client side binding API](http://blog.zkoss.org/index.php/2015/03/11/zk8-work-with-native-web-components-using-the-new-zk-client-side-data-binding-api/)
-- ZK Small Talk :[ZK8 Series: Interact with Client Side Libaries using ZK's New Client Side Binding](http://books.zkoss.org/wiki/Small_Talks/2015/April/ZK8_Series:_Interact_with_Client_Side_Libaries_using_ZK8%27s_New_Client_Side_Binding)
+- ZK Small Talk :[ZK8 Series: Interact with Client Side Libaries using ZK's New Client Side Binding](http://books.zkoss.org/wiki/Small_Talks/2015/April/ZK8_Series:_Interact_with_Client_Side_Libaries_using_ZK8's_New_Client_Side_Binding)
 

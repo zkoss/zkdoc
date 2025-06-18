@@ -5,7 +5,7 @@
 `Default: `<i>`true`</i>
 
 It specifies whether to apply [Client Render on
-Demand](ZK_Developer%27s_Reference/Performance_Tips/Client_Render_on_Demand).
+Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand).
 This property is not used for Grid and Listbox.
 
 Notice that you can enable or disable this feature a particular

@@ -7,7 +7,7 @@ assigned to the created component. Each XML processing instruction
 describes how to process the whole page, such as the page title. For
 example,
 
-``` xml
+```xml
 <?page title="Super Application"?>
 <window title="Super Hello" border="normal">
     <button label="hi" onClick='alert("hi")'/>
@@ -18,7 +18,7 @@ root component with title and border, and the third line creates a
 button with label and an event listener.
 
 For introduction of ZUML, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML). If
+Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml). If
 you are not familiar with XML, please take a look at [XML
-Background]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/XML_Background)
+Background]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_background)
 first.

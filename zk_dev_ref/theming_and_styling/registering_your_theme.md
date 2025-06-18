@@ -8,7 +8,7 @@ the name of the theme. It will be assumed that the theme is for desktop
 only, and its resources should be retrieved from a jar file. For
 example,
 
-``` java
+```java
 Themes.register("custom");
 ```
 
@@ -17,7 +17,7 @@ folder. To indicate that a theme is folder-based, please use
 <javadoc>org.zkoss.web.theme.StandardTheme.ThemeOrigin</javadoc> to
 specify the origin of the theme resources, like below.
 
-``` java
+```java
 Themes.register("custom", ThemeOrigin.FOLDER);
 ```
 
@@ -27,7 +27,7 @@ tablet only, or both. To signify that a theme also serves tablet
 devices, please attach a **"tablet:"** prefix in front of the theme name
 when registering. For example,
 
-``` java
+```java
 Themes.register("tablet:custom");
 ```
 
@@ -53,7 +53,7 @@ For example, a custom ThemeRegistry could be created by implementing
 or extending one of the standard implementations, depending on the ZK
 edition you are using.
 
-``` java
+```java
 package foo;
 
 public class CustomThemeRegistry implements ThemeRegistry {
@@ -63,7 +63,7 @@ public class CustomThemeRegistry implements ThemeRegistry {
 
 And then, configure the custom ThemeRegistry in **WEB-INF/zk.xml**.
 
-``` xml
+```xml
 <zk>
     <desktop-config>
         <theme-registry-class>foo.CustomThemeRegistry</theme-registry-class>

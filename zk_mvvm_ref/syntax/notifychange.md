@@ -2,7 +2,7 @@
 
 Syntax
 ======
-``` java
+```java
 @NotifyChange("anotherProperty")
 
 @NotifyChange({"firstProperty", "secondProperty"})
@@ -24,7 +24,7 @@ Use "." to enforce reloading the instance of the class in where the annotation l
 
 Example
 =======
-``` java
+```java
 public class OrderVM {
 
     //other code...

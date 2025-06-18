@@ -22,7 +22,7 @@ line to build the ZK Jar files.
 
 For example,
 
-``` bash
+```bash
 $ svn checkout https://zk1.svn.sourceforge.net/svnroot/zk1/releases/5.0.5/zul zul
 $ cd zul
 $ mvn clean package
@@ -30,4 +30,4 @@ $ mvn clean package
 
 **See Also**
 
-- [ZK%20Installation%20Guide/Maven%20Setup](ZK%20Installation%20Guide/Maven%20Setup)
+- [{{site.baseurl}}/zk_installation_guide/maven_setup]({{site.baseurl}}/zk_installation_guide/maven_setup)

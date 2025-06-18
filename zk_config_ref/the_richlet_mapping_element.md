@@ -3,7 +3,7 @@ declared]({{site.baseUrl}}/zk_config_ref/The_richlet_Element),
 you could map it to any number of URL by using `richlet-mapping` as
 depicted below.
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Test</richlet-name>
     <url-pattern>/test</url-pattern>
@@ -20,7 +20,7 @@ Loader]({{site.baseUrl}}/zk_config_ref/web.xml/ZK_Loader) in
 if you want the Richlet work with `/path/*`, you may specify the
 servlet-mapping in web.xml as follows:
 
-``` xml
+```xml
 <servlet-mapping>
     <servlet-name>zkLoader</servlet-name>
     <url-pattern>/path/*</url-pattern>
@@ -29,7 +29,7 @@ servlet-mapping in web.xml as follows:
 
 and specify the richlet-mapping as follows:
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Test</richlet-name>
     <url-pattern>/*</url-pattern>
@@ -46,7 +46,7 @@ url-pattern in filter-mapping. For example,
 
 In web.xml
 
-``` xml
+```xml
 <filter>
     <filter-name>RichletFilter</filter-name>
     <filter-class>org.zkoss.zk.ui.http.RichletFilter</filter-class>
@@ -60,7 +60,7 @@ In web.xml
 
 In zk.xml
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Test</richlet-name>
     <url-pattern>/zk/foo/*</url-pattern>
@@ -74,7 +74,7 @@ by
 <javadoc type="interface" method="getRequestPath()">org.zkoss.zk.ui.Page</javadoc>
 of the current page.
 
-``` java
+```java
  public void service(Page page) {
      if ("/some/more/hi".equals(page.getRequestPath()) {
          ...

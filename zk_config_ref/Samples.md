@@ -1,6 +1,6 @@
 Here is a sample of `/metainfo/zk/config.xml` (from zkex.jar):
 
-``` xml
+```xml
 <config>
     <config-name>zkex</config-name><!-- used to resolve dependency -->
     <depends>zk</depends>

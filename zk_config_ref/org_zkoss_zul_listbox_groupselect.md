@@ -7,7 +7,7 @@
 
 Giving true on this property makes Listgroups selectable in Listbox.
 
-``` xml
+```xml
 <listbox>
     <custom-attributes org.zkoss.zul.listbox.groupSelect="true"/>
     ...

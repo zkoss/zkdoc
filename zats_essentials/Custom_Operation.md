@@ -4,7 +4,7 @@
 
 Currently, ZATS Mimic supports many operations of ZK components,
 however, there are still cases where operations are not yet covered. For
-example, you create a custom component which receives custom [AU requests]({{site.baseurl}}/zk_client_side_ref/Communication/AU_Requests/Client-side_Firing),
+example, you create a custom component which receives custom [AU requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
 or a new ZK component in which Mimic doesn't support yet. In such cases,
 existing operation agents are not able to help you to test it.
 Therefore, in ZATS Mimic1.1.0 we introduce a new agent called `AuAgent`
@@ -18,7 +18,7 @@ About creating your custom components, please refer to [ZK Component Development
 
 **Application with custom component**
 
-``` xml
+```xml
 <mycomponent id="my" />
 ```
 
@@ -27,7 +27,7 @@ component and verifies the result.
 
 **Test Case**
 
-``` java
+```java
     @Test
     public void test() throws Exception{
         DesktopAgent desktop = Zats.newClient().connect("/essentials/custom.zul");

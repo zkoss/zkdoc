@@ -7,7 +7,7 @@ Furthermore, it always returns `Messagebox.OK`. Thus, it is meaningless
 to show buttons other than the OK button. For example, the `if` clause
 in the following example is never true.
 
-``` java
+```java
  if (Messagebox.show("Delete?", "Prompt", Messagebox.YES|Messagebox.NO,
      Messagebox.QUESTION) == Messagebox.YES) {
      this_never_executes();
@@ -16,7 +16,7 @@ in the following example is never true.
 
 Rather, you have to provide an event listener as follows.
 
-``` java
+```java
  Messagebox.show("Delete?", "Prompt", Messagebox.YES|Messagebox.NO,
      Messagebox.QUESTION,
      new EventListener() {
@@ -37,7 +37,7 @@ button's identifier, such as `Messagebox.YES`.
 
 Alternatively, you can examine the event name:
 
-``` java
+```java
  public void onEvent(Event evt) {
      if ("onYes".equals(evt.getName())) {
          doYes(); //the Yes button is pressed
@@ -52,7 +52,7 @@ Alternatively, you can examine the event name:
 shall implement
 <javadoc  type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
 For more information, please refer to [ZK Developer's Reference:
-Clustering]({{site.baseurl}}/zk_dev_ref/Clustering/Programming_Tips).
+Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
 # Message Boxes with Event Thread
 
@@ -61,7 +61,7 @@ If the event thread is enabled,
 will suspend the thread until the end user makes the choice. Thus, the
 following code works correctly.
 
-``` java
+```java
  if (Messagebox.show("Delete?", "Prompt", Messagebox.YES|Messagebox.NO,
      Messagebox.QUESTION) == Messagebox.YES) {
      //execute only if the YES button is clicked

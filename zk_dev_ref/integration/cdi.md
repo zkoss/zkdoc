@@ -13,7 +13,7 @@ tutorial](http://docs.oracle.com/javaee/6/tutorial/doc/gjbnr.html).
 # Access a CDI Bean in a ZUL
 
 ZUL provides a feature called [ variable
-resolver]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
+resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
 that allows users to access CDI bean using EL expression. To do this,
 simply put the below directive on top of a ZUML page:
 
@@ -24,7 +24,7 @@ Then, in the rest of your page, you can access a CDI bean which has
 
 **Session scoped bean**
 
-``` java
+```java
 @SessionScoped @Named
 public class UserPreference implements Serializable{
 ...
@@ -36,7 +36,7 @@ public class UserPreference implements Serializable{
 
 **Application scoped bean**
 
-``` java
+```java
 @ApplicationScoped @Named
 public class SystemConfiguration implements Serializable{
 ...
@@ -48,7 +48,7 @@ public class SystemConfiguration implements Serializable{
 
 **Access bean using EL in a ZUL**
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.cdi.DelegatingVariableResolver"?>
 ...
             <hlayout>
@@ -86,7 +86,7 @@ Example code are as follow:
 
 **A composer injected with a CDI bean**
 
-``` java
+```java
 
 public class ResolverComposer extends SelectorComposer<Window> {
 
@@ -108,7 +108,7 @@ public class ResolverComposer extends SelectorComposer<Window> {
 
 **A ZUL with CDI variable resolver**
 
-``` xml
+```xml
 
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window title="Access Bean with different scopes" border="normal" width="700px"
@@ -122,7 +122,7 @@ public class ResolverComposer extends SelectorComposer<Window> {
 Like wiring in a composer, we apply CDI variable resolver with directive
 and `@WireVariable` to inject CDI beans.
 
-``` java
+```java
 
 public class MyViewModel{
 
@@ -145,7 +145,7 @@ public class MyViewModel{
 }
 ```
 
-``` xml
+```xml
 
 <?variable-resolver class="org.zkoss.zkplus.cdi.DelegatingVariableResolver"?>
 <window border="normal" width="500px"
@@ -168,7 +168,7 @@ apply `@WireVariable` on variables like shown in the previous section.
 
 Example code are as follows:
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.cdi.DelegatingVariableResolver.class)
 public class MyComposer extends SelectorComposer<Window> {
 

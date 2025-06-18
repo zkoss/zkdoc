@@ -28,14 +28,14 @@ sent if there is no event listener at the server (for better
 performance). In other words, the following statement won't fire any
 `onTimer` event to the server.
 
-``` xml
+```xml
 <timer repeats="true" running="true" delay="1000"/>
 ```
 
 Thus, if you have to add an event listener to enable the
 timer-keep-alive feature, such as
 
-``` xml
+```xml
 <timer repeats="true" running="true" delay="1000" onTimer=""/>
 ```
 
@@ -47,7 +47,7 @@ session alive using a <timer>-element you can force the request to use
 HTTP/AJAX with the following additional event options. This will keep
 the HTTP session alive
 
-``` xml
+```xml
 <timer repeats="true" running="true" delay="10000"
        xmlns:w="client"
        w:onTimer="event.opts.toServer=true; event.opts.forceAjax=true;" />
@@ -63,16 +63,16 @@ the HTTP session alive
 For 5.0.6 and earlier, the above statement will cause the interpreter to
 start and thus cause some performance penalty. However, for better
 performance, you could use [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
 as follows.
 
-``` xml
+```xml
 <timer repeats="true" running="true" delay="1000" apply="foo.DoesNothingTimer"/>
 ```
 
 And, then implement `foo.DoesNothingTimer` as follows.
 
-``` java
+```java
 public class DoesNothingTimer implements Composer {
     public void doAfterCompose(Component comp) throws Exception {
         comp.addEventListener("onTimer", new SerializableEventListener() {

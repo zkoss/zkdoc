@@ -6,8 +6,7 @@
   Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: <javadoc>org.zkoss.zul.Timebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Timebox</javadoc>
-- Style Guide: [
-  Timebox](ZK_Style_Guide/XUL_Component_Specification/Timebox)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ An edit box for holding a time (a java.util.Date Object) , but only Hour
 
 # Example
 
-![](images/ZKCompRef_Timebox.png)
+![](/zk_component_ref/images/ZKCompRef_Timebox.png)
 
-``` xml
+```xml
 <timebox cols="11"/>
 ```
 
@@ -34,7 +33,7 @@ You could specify what value to accept for input controls by use of the
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <timebox constraint="no empty: cannot be empty"/>
 ```
 
@@ -45,7 +44,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <timebox constraint="no empty: ${c:l('err.time.required')}"/>
 ```
 
@@ -57,13 +56,13 @@ formatting of the
 
 Below is an example of using *a* within the format.
 
-``` xml
+```xml
 <timebox cols="20" format="a hh:mm:ss"/>
 ```
 
 24 hours mode:
 
-``` xml
+```xml
  
 <timebox cols="8" format="HH:mm:ss"/>
 ```
@@ -74,7 +73,7 @@ types of styling: short, medium, long and full (representing the styling
 of java.text.DateFormat). For example, you could specify the styling
 rather than the real format as follows.
 
-``` xml
+```xml
 <timebox format="short"/>
 <timebox format="long"/>
 ```
@@ -82,7 +81,7 @@ rather than the real format as follows.
 Then the real format of the timebox will be decided at run time
 depending the configuration. For more information, please refer to [ZK
 Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/Internationalization/Date_and_Time_Formatting).
+Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 ## Locale
 
@@ -91,7 +90,7 @@ By default, the real format depends on the current locale (i.e.,
 However, you could specify the locale for an individual instance such
 as:
 
-``` xml
+```xml
 <timebox format="medium" locale="de_DE"/>
 <timebox format="long" locale="fr"/>
 ```
@@ -101,7 +100,7 @@ as:
 You should set `text` attribute after `format` attribute or ZK might not
 convert the specified text well.
 
-``` xml
+```xml
 <timebox format="hh:mm:ss a" locale="en" text="12:00:00 AM"/>
 ```
 
@@ -112,7 +111,7 @@ convert the specified text well.
 # Inherited Functions
 
 Please refer to [
-FormatInputElement](ZK_Component_Reference/Base_Components/FormatInputElement)
+FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -137,7 +136,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  FormatInputElement](ZK_Component_Reference/Base_Components/FormatInputElement#Supported_Events)
+  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Molds
 
@@ -160,13 +159,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/timebox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/timebox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](images/timebox_mold_rounded.png
+<td><p>![](/zk_component_ref/images/timebox_mold_rounded.png
 title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
 include version-badge.html version=5.0.0 %}</p></td>
 </tr>

@@ -3,7 +3,7 @@
 # Listbox
 
 - Component Reference:
-  [Listbox](ZK_Component_Reference/Data/Listbox)
+  [Listbox]({{site.baseurl}}/zk_component_ref/data/listbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -11,12 +11,12 @@
 When user swipe on the content of Listbox, the friendly scrollbar will
 appear.
 
-![](images/Listbox_Tablet_Example.png)
+![](/zk_component_ref/images/Listbox_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.
 
-``` xml
+```xml
 <listbox xmlns:a="client/attribute" a:data-scrollable="false"/>
 ```
 
@@ -24,7 +24,7 @@ setting.
 containing images inside listcell, please add image preload attribute as
 follows.
 
-``` xml
+```xml
 <listbox>
     <custom-attributes org.zkoss.zul.image.preload="true"/>
 </listbox>

@@ -3,11 +3,10 @@
 # Button
 
 - Demonstration: [Button](http://www.zkoss.org/zkdemo/input/button) and
-  [Fileupload](Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
+  [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: <javadoc>org.zkoss.zul.Button</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Button</javadoc>
-- Style Guide: [
-  Button]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Button)
+
 
 # Employment/Purpose
 
@@ -25,7 +24,7 @@ enhanced and can be customized easily.
 
 ![](/zk_component_ref/images/ZKComRef_Button.jpg)
 
-``` xml
+```xml
     <button label="Left" image="/img/network.gif" width="125px"/>
     <button label="Right" image="/img/network.gif" dir="reverse" width="125px"/>
     <button label="Above" image="/img/network.gif" orient="vertical" width="125px"/>
@@ -44,13 +43,13 @@ identifiable by a URL.
 # File Upload
 
 A button or a [
-Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/Toolbarbutton#File_Upload)
+Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton#File_Upload)
 can be used to upload files. All you need to do is:
 
 1.  Specify the `upload` attribute with `true`
 2.  Handles the `onUpload` event
 
-``` xml
+```xml
 <button upload="true" label="Fileupload" onUpload="myProcessUpload(event.getMedia())"/>
 ```
 
@@ -64,7 +63,7 @@ examining the return value of
 
 1\. Write your own AuLoader
 
-``` java
+```java
 package test;  
 
 import org.apache.commons.fileupload.FileUploadBase.SizeLimitExceededException; 
@@ -84,7 +83,7 @@ public class MyUploader extends AuUploader {
 
 2\. Apply it in the web.xml
 
-``` xml
+```xml
 <servlet>   
    <description>The asynchronous update engine for ZK</description>     
    <servlet-name>auEngine</servlet-name>    
@@ -112,7 +111,7 @@ visually. It is efficient, but it has some limitations:
 
 If it is an issue, you could use the trendy mold instead.
 
-``` xml
+```xml
 <button label="OK" mold="trendy"/>
 ```
 
@@ -121,7 +120,7 @@ If it is an issue, you could use the trendy mold instead.
 If you prefer to use the trendy mold as default, you could configure ZK
 by adding the following to `/WEB-INF/zk.xml`
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.Button.mold</name>
     <value>trendy</value>
@@ -131,13 +130,13 @@ by adding the following to `/WEB-INF/zk.xml`
 # File Download and browser processed links
 
 Similar to [ file download link
-problem]({{site.baseurl}}/zk_component_ref/essential_components/A#File_download_link_problem),
+problem]({{site.baseurl}}/zk_component_ref/essential_components/a#File_download_link_problem),
 if you specify `href` to use a button for downloading, or if you are
 using a browser-processed link such as `mailto:`, `tel:`, or other
 similar user-processed instruction which would trigger a page unloading
 event, you also need to specify `target`:
 
-``` xml
+```xml
 <button label="download" href="/myfile.pdf" target="_blank"/>
 ```
 
@@ -156,7 +155,7 @@ requests), which is common if the request takes long to serve.
 The simplest use is to specify it with `self` as follows. Then, the
 button is disabled when it is clicked.
 
-``` xml
+```xml
 <button id="ok" label="OK" autodisable="self" />
 ```
 
@@ -164,7 +163,7 @@ If you'd like to disable several buttons, you could specify all of them
 in this property by separating with a comma. For example, the following
 disables both buttons, when one of them is clicked.
 
-``` xml
+```xml
 <button id="ok" label="OK" autodisable="ok,cancel" />
 <button id="cancel" label="Cancel" autodisable="ok,cancel" />
 ```
@@ -175,14 +174,14 @@ prefer to enable them manually (i.e., by calling
 <javadoc method="setDisabled(boolean)">org.zkoss.zul.Button</javadoc>
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
-``` xml
+```xml
 <button id="ok" label="OK" autodisable="+self, +cancel" />
 ```
 
 Then, you could enable them manually under the situation depending on
 your application's requirement, such as
 
-``` java
+```java
 if (something_happens) {
    ok.setDisabled(false);
    cancel.setDisabled(false);
@@ -192,11 +191,11 @@ if (something_happens) {
 ### Enable Autodisable for All Buttons
 
 As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/customization/Component_Properties),
+Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
 you could customize ZK to enable `autodisable` for all button by
 specifying the following in the custom language addon:
 
-``` xml
+```xml
 <language-addon>
     <component>
         <component-name>button</component-name>
@@ -233,7 +232,7 @@ you could specify a URL for the `href` property
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
-``` xml
+```xml
 <zk>
     <window title="example">
         <button label="click me" onClick="do_something_in_Java()"/>
@@ -259,7 +258,7 @@ For end users, there is no difference between the use of
 and
 <javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
 
-``` xml
+```xml
 <zk>
     <window>        
         <button label="redirect" onClick="Executions.sendRedirect(&quot;another.zul&quot;)"/>
@@ -288,7 +287,7 @@ sets the button's type. It is designed to work with the HTML <code>
 
 </code> and Servlets. For example,
 
-``` xml
+```xml
 <n:form action="/foo/my_handler" xmlns:n="native">
   <textbox/>
   <button type="submit" label="Submit"/>
@@ -302,7 +301,7 @@ By specifying the upload property
 (<javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Button</javadoc>),
 you could make a button used for uploading files. For example,
 
-``` xml
+```xml
 <button label="Upload" upload="true" onUpload="handle(event.media)"/>
 ```
 
@@ -316,7 +315,7 @@ and
 If you want to customize the handling of the file upload at the client,
 you can specify a JavaScript class when calling this method:
 
-``` xml
+```xml
 <button upload="foo.Upload"/> <!-- assume you implement a JavaScript class: foo.Upload -->
 ```
 
@@ -324,7 +323,7 @@ you can specify a JavaScript class when calling this method:
 
 Some options for the upload can be specified as follows:
 
-``` xml
+```xml
 <button label="Upload" 
 upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, native"/>
 ```
@@ -344,11 +343,11 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
 ### Customize Upload Size Exceeding Message
 
 {% include version-badge.html version=8.0.0 %} Please refer to [ZK Developer's
-Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/Warning_and_Error_Messages#Change_particular_message).
+Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
 
 For Example, (in WEB-INF/zk-label.properties)
 
-``` xml
+```xml
 MZul.2105=The request was rejected because its size ({0}) exceeds the configured maximum ({1})
 ```
 
@@ -358,7 +357,7 @@ size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 # Inherited Functions
 
 Please refer to [
-LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement)
+LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -403,7 +402,7 @@ uploaded a file to the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Molds
 

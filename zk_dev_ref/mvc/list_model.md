@@ -11,16 +11,16 @@ the display of the listbox is controlled by the model, and an optional
 renderer. The model is used to provide data, while the renderer is used
 to provide the custom look. By default, the data is shown as a
 single-column grid/listbox. If it is not what you want, please refer to
-[the View section]({{site.baseurl}}/zk_dev_ref/MVC/View) for
+[the View section]({{site.baseurl}}/zk_dev_ref/mvc/view) for
 writing a custom renderer.
 
 # Model-driven Rendering
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrListModelRenderer.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drlistmodelrenderer.png)
 
 As shown, the listbox retrieves elements from the specified model[^1],
 and then invokes the renderer, if specified, to compose the
-[listitem](ZK_Component_Reference/Data/Listbox/Listitem) for
+[listitem]({{site.baseurl}}/zk_component_ref/data/listbox/listitem) for
 the element.
 
 The retrieval of elements is done by invoking
@@ -55,7 +55,7 @@ without implementing by yourselves:
 
 For example,
 
-``` java
+```java
 void setModel(List data) {
     listbox.setModel(new ListModelList(data));
 }
@@ -77,7 +77,7 @@ Alternatively, you could load all data when
 <javadoc method="getSize()" type="interface">org.zkoss.zul.ListModel</javadoc>
 is called. For example,
 
-``` java
+```java
 public class FooModel extends AbstractListModel {
     private List _data;
     public int getSize() {
@@ -108,7 +108,7 @@ next invocation of
 is in the subset, we could return it immediately. Here is the pseudo
 code:
 
-``` java
+```java
 public class FooModel extends AbstractListModel {
     public List _subset;
     public int _startAt;
@@ -142,7 +142,7 @@ if your implementation is extended from
 
 For example, (pseudo code)
 
-``` java
+```java
 public void removeRange(int fromIndex, int toIndex) {
     removeElements(fromIndex, toIndex); //remove elements from fromIndex (inclusive) to toIndex (exclusive)
     fireEvent(ListDataEvent.INTERVAL_REMOVED, fromIndex, index - 1);
@@ -183,7 +183,7 @@ commonly used:
 You can get selected objects by
 [getSelection()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html#getSelection--)
 
-``` java
+```java
 private ListModelList<Locale> listModel = new ListModelList<>(Locale.getAvailableLocales());
 ...
 listModel.getSelection().iterator(); //iterate it to get all selected Locale objects
@@ -203,7 +203,7 @@ and serves as a simple example to change "selectable" items.
 Please note that if your data model is much larger, you may implement it
 on your own to get rid of the performance impact.
 
-``` java
+```java
 model.setSelectionControl(new AbstractListModel.DefaultSelectionControl(model) {
     public boolean isSelectable(Object e) {
         int i = model.indexOf(e);
@@ -263,7 +263,7 @@ will be called.
 
 For example, (pseudo code)
 
-``` java
+```java
 public class FooModel extends AbstractListModel implements Sortable {
     public void sort(Comparator cmpr, final boolean ascending) {
         sortData(cmpr); //sort your data here

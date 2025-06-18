@@ -8,7 +8,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Applet</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.med.Applet</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -18,7 +18,7 @@ If the properties are not enough, you can use [ the Client-Attribute
 namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 to specify them.
 
-``` xml
+```xml
 <applet  xmlns:ca="client/attribute"
   ca:whatever_name="whatever_value"/>
 ```
@@ -33,7 +33,7 @@ should not have to encode it again.
 
 ![](/zk_component_ref/images/ZKComRef_Applet_Examples.PNG)
 
-``` xml
+```xml
     <applet codebase="img/" code="ticker.class" msg="ZK is Simple and Rich!" width="580px" />
 ```
 
@@ -59,7 +59,7 @@ should not have to encode it again.
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

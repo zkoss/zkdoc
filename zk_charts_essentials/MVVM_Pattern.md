@@ -7,7 +7,7 @@ Get a `Charts` by `wireComponents()`, please refer to [MVVM Reference /
 Wire
 Components](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/wire_components.html)
 
-``` java
+```java
 public class ShiftViewModel {
     @Wire
     Charts chart;
@@ -29,7 +29,7 @@ public class ShiftViewModel {
 Because you usually need `ChartsEvent` API, you can get it by
 `@ContextParam` like:
 
-``` java
+```java
     @Command
     public void shiftPoint(@ContextParam(ContextType.TRIGGER_EVENT) ChartsEvent event) {
         // retrieve the point object.

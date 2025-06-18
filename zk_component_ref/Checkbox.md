@@ -5,8 +5,7 @@
 - Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
 - Java API: <javadoc>org.zkoss.zul.Checkbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Checkbox</javadoc>
-- Style Guide: [
-  Checkbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Checkbox)
+
 
 # Employment/Purpose
 
@@ -16,7 +15,7 @@ A checkbox.
 
 ![](/zk_component_ref/images/ZKComRef_Checkbox_Example.png)
 
-``` xml
+```xml
 <window title="Checkbox demo" border="normal" width="350px">
     <checkbox id="apple" label="Apple" onCheck="doChecked()" />
     <checkbox id="orange" label="Orange" onCheck="doChecked()" />
@@ -40,7 +39,7 @@ A checkbox.
 Checkbox: switch and toggle, you can customize the mold in css by
 overriding class.
 
-``` xml
+```xml
   <checkbox mold="switch" />
   <checkbox mold="toggle" />
 ```
@@ -57,7 +56,7 @@ Customized in CSS:
 ![](/zk_component_ref/images/Switch-off-customized.png)
 ![](/zk_component_ref/images/Switch-on-customized.png)
 
-``` css
+```css
 .z-checkbox-switch-off > .z-checkbox-mold {
     background-color: red;
 }
@@ -100,14 +99,14 @@ default mold which has only checked and unchecked states.
 
 ![](/zk_component_ref/images/Tristate.png)
 
-``` xml
+```xml
 <checkbox mold="tristate"></checkbox>
 ```
 
 We provide a new API `getState()` return CHECKED, UNCHECKED or
 INDETERMINATE.
 
-``` java
+```java
 State state = checkbox.getState() // CHECKED, UNCHECKED or INDETERMINATE
 ```
 
@@ -120,7 +119,7 @@ Indeterminate is a state that is neither checked nor unchecked.
 Note: changing `indeterminate` will not affect the `checked` value, but
 changing `checked` attribute will set `indeterminate` to `false`.
 
-``` xml
+```xml
     <checkbox indeterminate="true"/>
 ```
 
@@ -168,7 +167,7 @@ component is checked or unchecked.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

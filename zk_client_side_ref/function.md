@@ -11,7 +11,7 @@ code snippet.
 
 Example,
 
-``` xml
+```xml
 <package name="zul.lang" cacheable="false">
     <script src="msgzul*.js"/>
     <function class="org.zkoss.zul.impl.Utils"

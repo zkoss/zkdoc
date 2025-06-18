@@ -8,7 +8,7 @@ application can manipulate. A component has all the behavior that an UI
 object should have, except it doesn't have the visual part. For example,
 the following code snippet creates a window and a textbox.
 
-``` java
+```java
 Window w = new Window();
 w.setTitle();
 w.appendChild(new Textbox());
@@ -49,7 +49,7 @@ Furthermore, a developer can create a widget at the client, and the
 widget will not have any peer component at the server as shown right.
 For example,
 
-``` javascript
+```javascript
 //JavaScript
 var w = new zk.wgt.Button();
 w.setLabel('OK');
@@ -91,7 +91,7 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pw<span class="op">.</span><span class="fu">replaceHTML</span>(uuid)<span class="op">;</span></span></code></pre></div></td>
 <td><p>Attach the component to the specified page, and a peer widget
 will be created automatically at the client later (after processing the
-<a href="ZK_Client-side_Reference/Communication/AU_Requests"
+<a href="{{site.baseurl}}/zk_client_side_ref/communication/au_requests"
 title="wikilink">AU Requests</a>).</p></td>
 </tr>
 <tr class="even">

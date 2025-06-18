@@ -49,7 +49,7 @@ If you want to use the same locale for all users, you can specify the
 locale in the library property. For example, you could specify the
 following in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.preferred.locale</name>
     <value>de</value>
@@ -62,7 +62,7 @@ Furthermore, to avoid typos, you could use
 <javadoc method="PREFERRED_LOCALE">org.zkoss.web.Attributes</javadoc> as
 follows.
 
-``` java
+```java
 Library.setProperty(Attributes.PREFERRED_LOCALE, "de");
 ```
 
@@ -74,7 +74,7 @@ the attribute in a session.
 
 For example, you can do this when a user logins.
 
-``` java
+```java
 import org.zkoss.web.Attributes;
 ...
 
@@ -101,7 +101,7 @@ It must implement the
 <javadoc type="interface">org.zkoss.zk.ui.util.RequestInterceptor</javadoc>
 interface. For example,
 
-``` java
+```java
 import java.util.Locale;
 
 import javax.servlet.http.Cookie;
@@ -132,7 +132,7 @@ To make it effective, you have to register it in WEB-INF/zk.xml as a
 listener. Once registered, the request method is called each time ZK
 receives a request.
 
-``` xml
+```xml
 <listener>
     <listener-class>MyLocaleProvider</listener-class>
 </listener>
@@ -166,7 +166,7 @@ whole page by use of
 
 For example,
 
-``` java
+```java
 session.setAttribute(Attributes.PREFERRED_LOCALE, locale);
 Executions.sendRedirect(null); //reload the same page
 ```
@@ -188,7 +188,7 @@ while the setting of the default locale can be done by the use of
 
 For example,
 
-``` java
+```java
 session.setAttribute(Attributes.PREFERRED_LOCALE, locale);
 Clients.reloadMessages(locale);
 Locales.setThreadLocal(locale);

@@ -4,13 +4,13 @@ the annotations.
 
 To annotate a component definition, you have to specify the annotations
 in [a language
-definition](ZK_Client-side_Reference/Language_Definition).
+definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
 For example, we could extend the definition of bandbox to add
 annotations. Please refer to [ZK Component Reference/Annotation/Data
-Binding](ZK_Component_Reference/Annotation/Data_Binding) for
+Binding]({{site.baseurl}}/zk_component_ref/annotation/data_binding) for
 detail.
 
-``` xml
+```xml
 <component>
     <component-name>bandbox</component-name>
     <extends>bandbox</extends>

@@ -30,13 +30,13 @@ Example
 =======
 
 #### Use built-in validator named beanValidator
-``` xml
+```xml
 <window id="win" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init(foo.MyViewModel)">
     <textbox value="@bind(vm.user.lastName) @validator('beanValidator')"/>
 </window>
 ```
 
 #### Use custom validator
-``` xml
+```xml
 <datebox id="cdbox" value="@bind(fx.creationDate) @validator(vm.creationDateValidator)"/>
 ```

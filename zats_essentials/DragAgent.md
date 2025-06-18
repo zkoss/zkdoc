@@ -18,7 +18,7 @@ Assume that we have two listbox: leftBox, rightBox, you can drag
 The following code represents how to drag a *listitem* from left
 *listbox* to right *listbox*.
 
-``` java
+```java
 
         //move 1 item from left to right
         ComponentAgent draggedItem = leftBox.query("listcell[label='ZK Forge']").getParent();

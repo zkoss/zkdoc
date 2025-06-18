@@ -4,7 +4,7 @@ file. The file must be placed under the directory,
 is SimpleLabel and the package name is com.foo, the file path is
 **/web/js/com/foo/SimpleLabel.js**.
 
-``` javascript
+```javascript
 com.foo.SimpleLabel = zk.$extends(zk.Widget, {
     _value : '', // default value
 

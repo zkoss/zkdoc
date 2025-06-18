@@ -22,13 +22,13 @@ This event is fired when users left-click on a cell.
 
 For example,
 
-``` xml
+```xml
 <pivottable model="${model}" onPivotPopup='alert("Pivot Popup!")' />
 ```
 
 To get the clicked cell data:
 
-``` java
+```java
     @Listen("onPivotPopup = #pivot")
     public void onPivotPopup$pivot(PivotUIEvent e){
         System.out.println(pivotmodel.getValue(e.getRowContext().getNode(), -1,
@@ -45,7 +45,7 @@ This event is fired when user's cursor hovers on a cell.
 
 For example,
 
-``` xml
+```xml
 <pivottable model="${model}" 
     onPivotTooltip='label.value = "(" + event.x + ", " + event.y + ")"' />
 <label id="label" />
@@ -62,7 +62,7 @@ This event is fired when a user right-clicks on a cell.
 
 For example,
 
-``` xml
+```xml
 <pivottable model="${model}" onPivotContext='menupopup.open(self, "at_pointer")' />
 <menupopup id="menupopup">
     <menuitem label="My Menuitem" />
@@ -81,7 +81,7 @@ PivotUIEvent provides the following information:
 - The row and column indices on which the event occurs
 - Cursor coordinate relative to Pivottable component.
 
-``` java
+```java
 public void onPivotPopup$pivot(PivotUIEvent event) {
     int fieldType = event.getFieldType(); // area
     PivotField dataField = event.getDataField(); // data field

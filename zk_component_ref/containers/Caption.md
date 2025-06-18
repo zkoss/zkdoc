@@ -56,7 +56,7 @@ The example showcases the usage of the Caption component within a Window and Gro
 ```
 
 Try it
-*  [Caption with Window](https://zkfiddle.org/sample/3scdgri/1-ZK-Component-Reference-Caption-Example?v=latest&t=Iceblue%20Compact)
+*  [Caption with Window](https://zkfiddle.org/sample/3scdgri/1-ZK-Component-Reference-Caption-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Children
 `*ALL`: Indicates that the Caption component can have any kind of ZK component as its child element. This means that you can include any ZK component within the Caption component, allowing for flexible and customizable caption designs.

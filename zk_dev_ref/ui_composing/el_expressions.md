@@ -8,7 +8,7 @@ Reference/EL Expressions](ZUML_Reference/EL_Expressions).
 An EL expression is an expression enclosed with `${` and `}`, i.e., the
 syntax `${expr}`. For example,
 
-``` xml
+```xml
  <element attr1="${bean.property}".../>
  ${map[entry]}
  <another-element>${3+counter} is ${empty map}</another-element>
@@ -19,7 +19,7 @@ kind of objects as long as the attribute allows. For example, the
 following expressions will be evaluated to `boolean` and `int`
 respectively.
 
-``` xml
+```xml
  <window if="${some > 10}"><!-- boolean -->
    <progressmetter value="${progress}"/><!-- integer -->
 ```
@@ -29,7 +29,7 @@ correct one. If a failure has occurred, an exception is thrown.
 
 Multiple EL expressions could be specified in a single attribute:
 
-``` xml
+```xml
 <window title="${foo.name}: ${foo.version}">
 ```
 
@@ -79,14 +79,14 @@ EL expressions are evaluated on the server when the page is rendered.
 Thus, an EL variable can access:
 
 - Components by [using its
-  ID]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
+  ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
 - Variables defined in
-  [zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML)
+  [zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
 - [Implicit
   objects](ZUML_Reference/EL_Expressions/Implicit_Objects)
 - Scoped attributes
 
-``` xml
+```xml
 <!-- self is an implicit object referring to the component itself -->
 <textbox id="tb" value="${self.parent.title}"/>
 
@@ -119,7 +119,7 @@ below:
 Hence, if there is an attribute value in a smaller scope, it will shadow
 the same attribute in the larger scope.
 
-``` xml
+```xml
 <div id="parent">
     <zscript><![CDATA[
     //the smaller scope (lower one) can shadow the upper one
@@ -150,7 +150,7 @@ If you would like to support many variables, you could implement a
 variable resolver: a class that implements
 <javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>.
 
-``` java
+```java
 package foo;
 public class CustomerResolver implements org.zkoss.xel.VariableResolver {
     public Object resolveVariable(String name) {
@@ -167,7 +167,7 @@ Then, you could specify it in a
 [variable-resolver](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)
 directive, such as:
 
-``` xml
+```xml
 <?variable-resolver class="foo.CustomerResolve"?>
 
 <listbox>
@@ -184,9 +184,9 @@ every page.
 This can be done by specifying a variable resolver you have implemented
 in `WEB-INF/zk.xml` as follows. For more information, please refer to
 [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_listener_Element).
+Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
-``` xml
+```xml
 <listener>
     <listener-class>foo.MyVariableResolver</listener-class>
 </listener>
@@ -208,7 +208,7 @@ The collection object could be retrieved by invoking a static method.
 For example, suppose that we have a class and a static method as
 follows:
 
-``` java
+```java
 package foo;
 public class Customer {
     public static Collection<Customer> getAll(String condition) {
@@ -225,7 +225,7 @@ Then, we could retrieve them with the
 [xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method)
 directive:
 
-``` xml
+```xml
 <?xel-method prefix="c" name="getAllCustomers" class="foo.Customer"
    signature="java.util.Collection getAll(java.lang.String)"?><!-- Generics not allowed -->
 <listbox>
@@ -238,7 +238,7 @@ directive:
 If you have several static methods, you can declare them in an XML file
 called taglib, such as
 
-``` xml
+```xml
 <taglib>
     <function>
         <name>getAllCustomers</name>
@@ -257,7 +257,7 @@ called taglib, such as
 Then, you can use them by specifying it in a [taglib
 directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
 
-``` xml
+```xml
 <?taglib uri="/WEB-INF/tld/my.tld" prefix="my"?>
 <listbox>
     <listitem label="${each.name}" forEach="${my:getAllCustomers('*')}"/>
@@ -270,7 +270,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/taglib).
 7 Expression Language 3, see
 [examples](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/el_expression.html).
 
-``` xml
+```xml
 <?import org.zkoss.xel.fn.* ?>
 CommonFns.formatNumber(Object, String, Locale) : ${CommonFns.formatNumber(12345, '$ ###,###,###.00', null)}
 

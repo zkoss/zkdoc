@@ -7,7 +7,7 @@
 Only components that inherit `org.zkoss.zul.impl.InputElement` supports
 `FocusAgent`.
 
-``` java
+```java
 
 inputComponent.as(FocusAgent.class).focus();
 

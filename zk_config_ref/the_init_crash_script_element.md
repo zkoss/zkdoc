@@ -16,7 +16,7 @@ by writing a javascript function which is assigned to
 
 For example,
 
-``` xml
+```xml
 <client-config>
     <init-crash-script><![CDATA[
         window.zkShowCrashMessage = function (code) {

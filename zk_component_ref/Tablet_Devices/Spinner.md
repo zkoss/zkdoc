@@ -3,14 +3,14 @@
 # Spinner
 
 - Component Reference:
-  [Spinner](ZK_Component_Reference/Input/Spinner)
+  [Spinner]({{site.baseurl}}/zk_component_ref/input/spinner)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
 
 Big icons for tablet devices
 
-![](images/Spinner_Tablet_Example.png)
+![](/zk_component_ref/images/Spinner_Tablet_Example.png)
 
 # Unsupported API
 

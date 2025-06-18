@@ -5,7 +5,7 @@
 
 Syntax
 ======
-``` java
+```java
 @AutoNotifyChange
 ```
 
@@ -19,7 +19,7 @@ If the view model class is annotated with this annotation, every setter method i
 
 Example
 =======
-``` java
+```java
 @AutoNotifyChange
 public class OrderVM {
 

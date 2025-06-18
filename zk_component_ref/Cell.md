@@ -6,22 +6,21 @@
   Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
 - Java API: <javadoc>org.zkoss.zul.Cell</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Cell</javadoc>
-- Style Guide: [
-  Cell]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Cell)
+
 
 # Employment/Purpose
 
 We design this generic cell component to be embedded into [
-Row]({{site.baseurl}}/zk_component_ref/Data/Grid/Row) or [
-Hbox]({{site.baseurl}}/zk_component_ref/Layouts/Hbox) or [
-Vbox]({{site.baseurl}}/zk_component_ref/Layouts/Vbox) in order to fully
+Row]({{site.baseurl}}/zk_component_ref/data/grid/row) or [
+Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) or [
+Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) in order to fully
 control the alignment and row/column span.
 
 # Example
 
 ![](/zk_component_ref/images/ZKComRef_Cell_Example.png)
 
-``` xml
+```xml
 <zk>
     <grid>
         <columns>
@@ -62,7 +61,7 @@ control the alignment and row/column span.
 
 ![](/zk_component_ref/images/ZKComRef_Cell_Example_Hbox.png)
 
-``` xml
+```xml
 <zk>
     <window title="hbox" border="normal" width="320px">
         <hbox width="300px" pack="center">
@@ -94,7 +93,7 @@ styling.
 
 For example, consider the following scenario:
 
-``` xml
+```xml
     <grid>
         <columns>
             <column label="A" />
@@ -146,7 +145,7 @@ a Div to wrap them.
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

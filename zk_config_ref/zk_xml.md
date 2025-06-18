@@ -50,7 +50,7 @@ You could specify the XML schema in the zk.xml as shown below. Many XML
 editors works better, such as when with auto-complete, if XML schema is
 specified correctly.
 
-``` xml
+```xml
 <zk xmlns="http://www.zkoss.org/2005/zk/config"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.zkoss.org/2005/zk/config http://www.zkoss.org/2005/zk/config/zk.xsd">
@@ -60,4 +60,4 @@ The ZK schema can be downloaded from
 [<http://www.zkoss.org/2005/zk/config/zk.xsd>](http://www.zkoss.org/2005/zk/config/zk.xsd).
 In addition, you can find `zk.xsd` under the `dist/xsd` directory in the
 [ZK binary
-distribution](https://www.zkoss.org/wiki/ZK_Installation_Guide/ZK_Background/The_Content_of_ZK_Binary_Distribution).
+distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).

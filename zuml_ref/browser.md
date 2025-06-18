@@ -1,4 +1,4 @@
-``` java
+```java
 boolean browser(String type);
 ```
 

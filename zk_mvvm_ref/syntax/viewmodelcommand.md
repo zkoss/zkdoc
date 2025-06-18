@@ -2,7 +2,7 @@
 
 Syntax
 ======
-``` java
+```java
 @Command()
 
 @Command("commandName")
@@ -23,7 +23,7 @@ We can also use parameter related annotations on initial method's parameters; pl
 Example
 =======
 #### Method name as command name
-``` java
+```java
 @Command
 public void search() {
     items = new ListModelList<Item>();
@@ -32,7 +32,7 @@ public void search() {
 }
 ```
 #### Specify command name
-``` java
+```java
 @Command("delete")
 public void deleteOrder() {
     getService().delete(selected); //delete selected

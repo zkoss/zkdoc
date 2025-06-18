@@ -5,9 +5,9 @@
   to set up cluster environment.
 - For configuring with Apache http server, refer to
   - [ How to Run ZK on Apache + Tomcat clustering, Part
-    I](Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
+    I](https://www.zkoss.org/wiki/Small_Talks/2007/April/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_I)
   - [ How to Run ZK on Apache + Tomcat clustering, Part
-    II](Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
+    II](https://www.zkoss.org/wiki/Small_Talks/2007/May/How_to_Run_ZK_on_Apache_+_Tomcat_clustering,_Part_II)
 
 ## Using more than 3 nodes with ZK
 
@@ -17,7 +17,7 @@
 
 ## Sample of server.xml
 
-``` xml
+```xml
 <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" channelSendOptions="6">
     <Manager className="org.apache.catalina.ha.session.DeltaManager"
         expireSessionsOnShutdown="false"
@@ -66,7 +66,7 @@ a tomcat cluster environment.
 
 - Add the `distributable` element in `WEB-INF/web.xml`.
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <web-app  xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -80,7 +80,7 @@ a tomcat cluster environment.
 
 ## zk.xml
 
-``` xml
+```xml
 <zk>
     <system-config>
         <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>
@@ -94,7 +94,7 @@ a tomcat cluster environment.
 
 - Line 3, turn on Serializable UI Factory for ZK, please refer to this [
   ZK
-  Configuration]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration).
+  Configuration]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
 - Line 7, if there are more than three Tomcat cluster nodes, or you are
   using a different cluster-manager such as
   [Hazelcast](https://hazelcast.com/) and other solutions instead, you

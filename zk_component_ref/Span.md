@@ -15,9 +15,9 @@ siblings; as if there are *no* line breaks between them.
 
 # Example
 
-![](images/ZKComRef_Span_Example.png)
+![](/zk_component_ref/images/ZKComRef_Span_Example.png)
 
-``` xml
+```xml
 <span>
     Name:
     <textbox />
@@ -46,7 +46,7 @@ siblings; as if there are *no* line breaks between them.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

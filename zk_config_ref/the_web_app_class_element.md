@@ -13,7 +13,7 @@ interfaces. Instead of implementing from scratch, you can extend it from
 the `org.zkoss.zk.ui.impl.AbstractWebApp` or
 `org.zkoss.zk.ui.http.SimpleWebApp` classes.
 
-``` xml
+```xml
 <system-config>
   <web-app-class>foo.MyKillerApp</web-app-class>
 </system-config>

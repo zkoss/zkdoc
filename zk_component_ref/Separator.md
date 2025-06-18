@@ -5,8 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Separator</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Separator</javadoc>
-- Style Guide: [
-  Separator](ZK_Style_Guide/XUL_Component_Specification/Separator)
+
 
 # Employment/Purpose
 
@@ -23,9 +22,9 @@ several ways to customize the separator.
 
 # Example
 
-![](images/ZKComRef_Separator_Example.png)
+![](/zk_component_ref/images/ZKComRef_Separator_Example.png)
 
-``` xml
+```xml
  line 1 by separator
  <separator />
  line 2 by separator
@@ -61,7 +60,7 @@ several ways to customize the separator.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -2,13 +2,13 @@
 
 A Web application jumping from one URL to another is usually caused by
 the user's click on a hyperlink, such as clicking on a
-[button](ZK_Component_Reference/Essential_Components/Button),
-[toolbarbutton](ZK_Component_Reference/Essential_Components/Toolbarbutton),
-[menuitem](ZK_Component_Reference/Essential_Components/Menu/Menuitem)
-and [a](ZK_Component_Reference/Essential_Components/A) that
+[button]({{site.baseurl}}/zk_component_ref/essential_components/button),
+[toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton),
+[menuitem]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuitem)
+and [a]({{site.baseurl}}/zk_component_ref/essential_components/a) that
 is associated with the `href` attribute.
 
-``` xml
+```xml
 <button label="Next" href="next.zul"/>
 ```
 
@@ -23,7 +23,7 @@ Redirecting to another URL is straightforward: pass the URL to
 <javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
 A typical use case is to redirect after authenticating the user's login.
 
-``` java
+```java
 if (someCondition())
    Executions.sendRedirect("/ready.zul");
 ```
@@ -44,7 +44,7 @@ any JavaScript code.
 
 For example,
 
-``` java
+```java
 if (!isLogin()) {
     Execution exec = Executions.getCurrent();
     HttpServletResponse response = (HttpServletResponse)exec.getNativeResponse();
@@ -66,7 +66,7 @@ To check whether to redirect can be packed as
 <javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>, see
 below for an example:
 
-``` java
+```java
 public class AuthenticateInit extends org.zkoss.zk.ui.util.GenericInitiator {
     public void doInit(Page page, Map args) throws Exception {
         if (!isLogin()) {
@@ -81,7 +81,7 @@ public class AuthenticateInit extends org.zkoss.zk.ui.util.GenericInitiator {
 
 Then, you could specify it in your ZUML document:
 
-``` xml
+```xml
 <?init class="foo.AuthenticateInit"?>
 ```
 
@@ -98,14 +98,14 @@ login page[^2].
 The simplest way is to use the [forward
 directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
 
-``` xml
+```xml
 <?forward uri="/login.zul" if="${!foo:isLogin()}"?>
 ```
 
 where we assume `isLogin` is an EL function that returns whether the
 user has logged in. For more information, please refer to the
 [Conditional
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Conditional_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/conditional_evaluation)
 section.
 
 You could forward to another page by the use of
@@ -132,7 +132,7 @@ rmDesktop command holding the relevant desktop ID is fired to let the
 server know that server-side objects used in the current page can be
 discarded.
 
-![](images/OnBeforeUnload1.png )
+![](/zk_dev_ref/images/OnBeforeUnload1.png )
 
 Usually, onBeforeUnload will be triggered by outgoing navigation or by
 closing a browser tab. However, file download may also cause a browser’s
@@ -148,7 +148,7 @@ includes triggering unload). Once the target replies with a non-document
 content (ie a file to download), the browser will interrupt navigation
 and handle the file while remaining on the previous page.
 
-``` xml
+```xml
 <zk>
     <a href="./myFile.zip">my file</a>
 </zk>
@@ -157,7 +157,7 @@ and handle the file while remaining on the previous page.
 At this point however, the client engine has already triggered rmDesktop
 and the current desktop is no longer available.
 
-![](images/OnBeforeUnload2.png )
+![](/zk_dev_ref/images/OnBeforeUnload2.png )
 
 To avoid this issue, download in ZK should receive a target.
 
@@ -169,7 +169,7 @@ since no navigation is performed in its context. Since the result of
 navigating to this url is not a document, the new blank tab will
 automatically be closed as soon as the download starts.
 
-``` xml
+```xml
 <zk>
     <a href="./myFile.zip" target="_blank">my file</a>
 </zk>
@@ -182,7 +182,7 @@ possible to target a different context in the same page. To do so, the
 page should contain a hidden iframe, and perform the download through
 it.
 
-``` xml
+```xml
 <zk>
     <a href="./myFile.zip" target="myHiddenIframe">my file</a>
     <iframe name="myHiddenIframe" visible="false"/>

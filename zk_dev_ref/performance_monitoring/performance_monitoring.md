@@ -20,8 +20,8 @@ For sample implementations, you might take a look at the following
 articles:
 
 - [Performance Monitoring of ZK
-  Applicaiton](Small_Talks/2009/June/Performance_Monitoring_of_ZK_Applicaiton)
+  Applicaiton](https://www.zkoss.org/wiki/Small_Talks/2009/June/Performance_Monitoring_of_ZK_Applicaiton)
 - [A ZK Performance
-  Monitor](Small_Talks/2010/January/A_ZK_Performance_Monitor)
+  Monitor](https://www.zkoss.org/wiki/Small_Talks/2010/January/A_ZK_Performance_Monitor)
 - [Real-time Performance Monitoring of Ajax Event
-  Handlers](Small_Talks/2010/April/Real-time_Performance_Monitoring_of_Ajax_Event_Handlers)
+  Handlers](https://www.zkoss.org/wiki/Small_Talks/2010/April/Real-time_Performance_Monitoring_of_Ajax_Event_Handlers)

@@ -23,7 +23,7 @@ candidates to render or omit certain parts of a zul file.
 After declaring the taglib the functions are available with the
 specified prefix.
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/zkspring/security" prefix="sec"?>
 <zk>
 
@@ -45,7 +45,7 @@ As in all zul pages, the taglib function can also be used in a
 component's attributes. For example, to disable a button according to a
 role:
 
-``` xml
+```xml
 <button label="Transfer Money" disabled="${sec:isNoneGranted('ROLE_SUPERVISOR')}" .../>
 ```
 
@@ -73,7 +73,7 @@ You can call the methods of
 ([org.zkoss.spring.security.SecurityUtil](https://www.zkoss.org/javadoc/latest/zkspring-security/org/zkoss/spring/security/SecurityUtil.html))
 in java code directly, to build the UI conditionally:
 
-``` java
+```java
 if (SecurityUtil.isAllGranted("ROLE_SUPERVISOR")) {
     Button btn = new Button();
     ...
@@ -89,7 +89,7 @@ The `DelegatingVariableResolver` adds an implicit object
 to EL expressions. Depending on the type of the principal object you can
 access also nested properties.
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <div>
   <label value="authentication.name"/> = ${authentication.name}

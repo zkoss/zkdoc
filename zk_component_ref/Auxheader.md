@@ -7,8 +7,6 @@
 - Java API: <javadoc>org.zkoss.zul.Auxheader</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
-- Style Guide: [
-  Auxhead]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Auxhead)
 
 # Employment/Purpose
 
@@ -23,7 +21,7 @@ An auxiliary header.
 
 ![](/zk_component_ref/images/ZKComRef_Auxheader.png)
 
-``` xml
+```xml
 
 <grid>
     <auxhead>
@@ -72,7 +70,7 @@ An auxiliary header.
 # The Limitation of rowspan
 
 For better performance, every instance of
-[Column]({{site.baseurl}}/zk_component_ref/Data/Grid/Column) will create
+[Column]({{site.baseurl}}/zk_component_ref/data/grid/column) will create
 an invisible HTML TH element called *faker*. However, with some complex
 combination of `rowspan` and `colspan`, Grid might not be able to
 generate the correct number of *faker* to represent each column.
@@ -80,7 +78,7 @@ generate the correct number of *faker* to represent each column.
 For example, it is wrong if the number of the column components are not
 the same as the number of columns in each row as shown below:
 
-``` xml
+```xml
 <grid width="200px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -110,10 +108,10 @@ structure:
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
 add an empty
-[Columns]({{site.baseurl}}/zk_component_ref/Data/Grid/Columns). For
+[Columns]({{site.baseurl}}/zk_component_ref/data/grid/columns). For
 example, the code in the previous example can be fixed as follows:
 
-``` xml
+```xml
 <grid width="200px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -141,7 +139,7 @@ Column component, it means it will take some space even when there are
 no label in all Column components. The workaround is simple: make the
 empty Columns component invisible. For example,
 
-``` xml
+```xml
 <grid width="350px">
     <auxhead>
         <auxheader label="A" rowspan="2" />
@@ -190,7 +188,7 @@ empty Columns component invisible. For example,
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/HeaderElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
 
 # Supported Children
 

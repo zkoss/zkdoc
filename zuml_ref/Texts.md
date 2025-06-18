@@ -1,6 +1,6 @@
 In general, a XML text is interpreted as a label component. For example,
 
-``` xml
+```xml
 <window>
   Begin ${foo.whatever}
 </window>
@@ -8,7 +8,7 @@ In general, a XML text is interpreted as a label component. For example,
 
 is equivalent to
 
-``` xml
+```xml
 <window>
   <label value="Begin ${foo.whatever}"/>
 </window>
@@ -22,13 +22,13 @@ could decide to make ZK Loader interpret the nest text as the value of a
 predefined property. For example, <javadoc>org.zkoss.zul.Html</javadoc>
 is one of this kind of components, and
 
-``` xml
+```xml
 <html>Begin ${foo.whatever}</html>
 ```
 
 is equivalent to
 
-``` xml
+```xml
 <html content="Begin ${foo.whatever}"/>
 ```
 
@@ -102,7 +102,7 @@ instead</p></td>
 Since ZK 6, components that consider the text as a property's value will
 accept the XML fragment. For example,
 
-``` xml
+```xml
 <html>
   <ol style="border: 1px solid blue">
     <li>Apple</li>
@@ -118,7 +118,7 @@ such as [the zk element](ZUML_Reference/ZUML/Elements/zk) and
 attribute](ZUML_Reference/ZUML/Attributes/forEach). For
 example,
 
-``` xml
+```xml
 <html>
   <ol>
     <li forEach="Apple, Orange">${each}</li>

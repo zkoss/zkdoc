@@ -6,8 +6,7 @@
   [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Textbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Textbox</javadoc>
-- Style Guide: [
-  Textbox](ZK_Style_Guide/XUL_Component_Specification/Textbox)
+
 
 # Employment/Purpose
 
@@ -25,9 +24,9 @@ a notification will pop up.
 
 # Example
 
-![](images/ZKCompRef_Textbox.png)
+![](/zk_component_ref/images/ZKCompRef_Textbox.png)
 
-``` xml
+```xml
 <textbox value="text..." />
 <textbox value="secret" type="password" />
 <textbox constraint="/.+@.+\.[a-z]+/: Please enter an e-mail address" />
@@ -42,7 +41,7 @@ text line2...
 To specify multilines value, you can use the attribute element or
 `&#x0d;` as shown below
 
-``` xml
+```xml
 <textbox rows="5" cols="40">
     <attribute name="value">
 text line1... 
@@ -61,9 +60,9 @@ If `true`, zk renders a multiline textbox. The `multiline` will also be `true` i
 By specifying a true, the tabbox can insert a long space or format the
 content inside textbox conveniently. For example,
 
-![](images/ZKComRef_Textbox_Tabbable.png)
+![](/zk_component_ref/images/ZKComRef_Textbox_Tabbable.png)
 
-``` xml
+```xml
 <textbox tabbable="true"/>
 ```
 
@@ -79,7 +78,7 @@ When submitByEnter="false", press Enter will move to next line.
 
 The default is **false**.
 
-``` xml
+```xml
 <textbox submitByEnter="true" onOK=""/>
 ```
 
@@ -88,7 +87,7 @@ The default is **false**.
 The `type` attribute determines the component-rendered HTML element `<input type="?">`.
 By setting the type as `password`, the text that is entered into the box cannot be viewed and is replaced by `*`.
 
-``` xml
+```xml
 Username: <textbox/>
 Password: <textbox type="password"/>
 ```
@@ -97,7 +96,7 @@ Password: <textbox type="password"/>
 
 The `type` attribute support HTML 5 defined types `tel`, `email` and `url`.
 
-``` xml
+```xml
 Phone: <textbox type="tel"/>
 Email: <textbox type="email"/>
 WebSite: <textbox type="url"/>
@@ -106,12 +105,12 @@ WebSite: <textbox type="url"/>
 ## Constraint
 
 Please refert to [ZK Component Reference/Base
-Components/InputElement#Constraint](ZK_Component_Reference/Base_Components/InputElement#Constraint).
+Components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint).
 
 # Inherited Functions
 
 Please refer to [
-InputElement](ZK_Component_Reference/Base_Components/InputElement)
+InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement)
 for inherited functions, such as in-place edition.
 
 # Supported Events
@@ -136,7 +135,7 @@ for inherited functions, such as in-place edition.
 </table>
 
 - Inherited Supported Events: [
-  InputElement](ZK_Component_Reference/Base_Components/InputElement#Supported_Events)
+  InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Supported_Events)
 
 # Supported Children
 

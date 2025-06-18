@@ -1,4 +1,4 @@
-``` java
+```java
 java.lang.String encodeThemeURL(java.lang.String)
 ```
 

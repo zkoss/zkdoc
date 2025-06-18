@@ -6,8 +6,7 @@
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: <javadoc>org.zkoss.zul.South</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.layout.South</javadoc>
-- Style Guide: [
-  South](ZK_Style_Guide/XUL_Component_Specification/Borderlayout/Default_(South))
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ child.
 
 # Example
 
-![](images/ZKCompRef_Borderlayout.jpg)
+![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
-``` xml
+```xml
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
@@ -89,12 +88,12 @@ child.
 </table>
 
 - Inherited Supported Events: [
-  LayoutRegion](ZK_Component_Reference/Base_Components/LayoutRegion#Supported_Events)
+  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
 
 # How to Layout
 
 For more details, please refer to
-[Borderlayout](ZK_Component_Reference/Layouts/Borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#How_to_Layout).
 
 # Supported Children
 
@@ -102,7 +101,7 @@ For more details, please refer to
 
 # Use Cases
 
-[Borderlayout](ZK_Component_Reference/Layouts/Borderlayout#Use_Cases)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#Use_Cases)
 
 # Version History
 

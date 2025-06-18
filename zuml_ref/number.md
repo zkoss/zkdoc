@@ -1,4 +1,4 @@
-``` java
+```java
 Number number(Object value);
 ```
 

@@ -10,7 +10,7 @@ order.
 
 ![](images/Zats-mimic-group.png)
 
-``` java
+```java
  
 
             ComponentAgent sortingColumn = desktop.query("column[label='Author']");

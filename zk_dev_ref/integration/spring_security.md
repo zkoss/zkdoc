@@ -16,7 +16,7 @@ We need to add dependencies for Spring Security and Maven's transitive
 dependency management can include all necessary dependencies of Spring
 for us.
 
-``` xml
+```xml
         <!-- Spring Security -->
         <dependency>
             <groupId>org.springframework.security</groupId>
@@ -50,7 +50,7 @@ for us.
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png) **Note:** If you don't use Maven,
+![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
 please refer to Spring Security Reference Documentation to check which
 JAR files are needed.
 
@@ -63,7 +63,7 @@ configuration in `web.xml` is as follows:
 
 **web.xml**
 
-``` xml
+```xml
     <!-- Loads the Spring application context configuration -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -80,7 +80,7 @@ we don't need to add extra configuration in `web.xml`.
 
 **applicationContext.xml**
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -105,7 +105,7 @@ we don't need to add extra configuration in `web.xml`.
 The first configuration you should add to use Spring Security is a
 filter declaration in `web.xml`:
 
-``` xml
+```xml
 
     <filter>
         <filter-name>springSecurityFilterChain</filter-name>
@@ -131,7 +131,7 @@ context file:
 
 **applicationContext-security.xml**
 
-``` xml
+```xml
 
 <beans:beans xmlns="http://www.springframework.org/schema/security" 
     xmlns:beans="http://www.springframework.org/schema/beans"
@@ -216,7 +216,7 @@ grant access to anonymous users
 
 **applicationContext-security.xml**
 
-``` xml
+```xml
     <!--  HTTP configuration sample -->
     <http auto-config="true">
         <!-- ZK AU requests -->
@@ -249,7 +249,7 @@ default configuration.
 
 **applicationContext-security.xml**
 
-``` xml
+```xml
 
     <!--  HTTP configuration sample -->
     <http auto-config="true">
@@ -272,7 +272,7 @@ HTML's form in a zul.
 
 **login.zul**
 
-``` xml
+```xml
 
     ...
     <html:form action="j_spring_security_check" method="POST" 
@@ -305,7 +305,7 @@ our own authentication.
 
 **MyUserDetailsService**
 
-``` java
+```java
 
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -347,7 +347,7 @@ Then specify `user-service-ref` with our `MyUserDetailsService`.
 
 **applicationContext-security.xml**
 
-``` xml
+```xml
 
     <authentication-manager>
         <authentication-provider user-service-ref="myUserDetailsService">
@@ -410,7 +410,7 @@ his authorities.
 
 **SecurityUtil.java**
 
-``` java
+```java
 package org.zkoss.reference.developer.spring.security;
 
 //omit import
@@ -452,7 +452,7 @@ You can read the file in the source code.
 
 **security.tld**
 
-``` xml
+```xml
 <taglib>
     <uri>http://www.zkoss.org/demo/integration/security</uri>
     <description>
@@ -477,7 +477,7 @@ directive.
 
 **articleContent.zul**
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/zkspring/security" prefix="sec"?>
 ...
 
@@ -510,7 +510,7 @@ follows:
 
 **applicationContext-security.xml**
 
-``` xml
+```xml
 <global-method-security secured-annotations="enabled" />
 ```
 
@@ -518,7 +518,7 @@ Then add `@Secure` to those methods you want to secure with permissions.
 
 **ArticleService.java**
 
-``` java
+```java
 public interface ArticleService {
 
     @Secured({"ROLE_USER", "IS_AUTHENTICATED_ANONYMOUSLY"})
@@ -550,7 +550,7 @@ button:
 
 **permission checking in an event listener**
 
-``` java
+```java
 @VariableResolver(DelegatingVariableResolver.class)
 public class ArticleContentViewCtrl extends SelectorComposer<Component> {
 
@@ -583,12 +583,12 @@ achieve this in ZK:
 
 First, we have to catch the exception thrown in an event listener by [
 ZK error handling
-mechanism](ZK%20Developer's%20Reference/UI%20Patterns/Error%20Handling),
+mechanism](ZK_Developer's_Reference/ui_patterns/Error_Handling),
 configure <error-page> in `zk.xml`.
 
 **zk.xml**
 
-``` xml
+```xml
 
     <error-page>
         <exception-type>org.springframework.security.access.AccessDeniedException</exception-type>
@@ -599,12 +599,12 @@ configure <error-page> in `zk.xml`.
 Then, create the error handling page. To avoid users visiting the page
 directly, we put it under `/WEB-INF`. This error handling page displays
 nothing but a [ page
-initiator]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Page_Initialization)
+initiator]({{site.baseurl}}/zk_dev_ref/ui_patterns/page_initialization)
 to redirect an unauthenticated user to the login page.
 
 **handleAccessDenied.zul**
 
-``` xml
+```xml
 
 <?init class="org.zkoss.reference.developer.spring.security.ui.error.AjaxAccessDeniedHandler"?>
 <zk>
@@ -618,7 +618,7 @@ custom page.
 
 **AjaxAccessDeniedHandler.java**
 
-``` java
+```java
 public class AjaxAccessDeniedHandler extends GenericInitiator {
 
     public void doInit(Page page, Map<String, Object> args) throws Exception {

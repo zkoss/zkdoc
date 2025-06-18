@@ -20,7 +20,7 @@ This component allows users to crop a selected range of image.
 
 ![](/zk_component_ref/images/ZKCompRef_Cropper.png )
 
-``` xml
+```xml
 <cropper x="50" y="100" w="100" h="100" onCrop="img.setContent(event.getMedia())" width="800px"
  toolbarVisible="true"  src="swimming-pool.jpg"/>
     <image id="img"/>
@@ -126,7 +126,7 @@ cropped the image.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

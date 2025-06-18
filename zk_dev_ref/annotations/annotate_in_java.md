@@ -3,7 +3,7 @@ You could annotate a component or a property in Java by the use of
 
 For example,
 
-``` java
+```java
 Listbox listbox = new Listbox();
 listbox.addAnnotation(null, "foo", null); //null in the first argument means to annotate listbox
 Label label = new Label();

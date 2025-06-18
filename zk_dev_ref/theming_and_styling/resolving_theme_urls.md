@@ -14,7 +14,7 @@ is for redirecting the retrieval of stylesheets inside a ThemeProvider.
 
 # Example Usage (inside \*.css.dsp)
 
-``` css
+```css
 tr.z-row-over > td.z-row-inner, tr.z-row-over > .z-cell {
     background-image: url(${c:encodeThemeURL('~./zul/img/grid/column-over.png')});
 }
@@ -22,7 +22,7 @@ tr.z-row-over > td.z-row-inner, tr.z-row-over > .z-cell {
 
 # Example Usage (inside a ThemeProvider):
 
-``` java
+```java
 ...
 public String beforeWidgetCSS(Execution exec, String uri) {
     if (uri.startsWith("~./zul/css/") ||

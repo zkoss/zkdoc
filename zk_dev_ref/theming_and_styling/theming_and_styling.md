@@ -6,4 +6,4 @@ Customization Guide](ZK_Style_Customization_Guide).
 
 To apply an overall, consistent design on all components, please see [ZK
 Developer's Reference/Theming and Styling/Creating Custom
-Themes]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Creating_Custom_Themes).
+Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/creating_custom_themes).

@@ -6,8 +6,7 @@ This chapter describes each component's detailed accessibility
 information including keyboard support and some important ARIA
 attributes.
 
-For general accessibility information, please refer to [ZK Developer's
-Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/Accessibility).
+For general accessibility information, please refer to [ZK Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility/accessibility).
 
 {% include edition-availability.html edition="pe" %} Note: the following subsections are only applied for
 ZK EE version only.

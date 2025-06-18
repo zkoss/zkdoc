@@ -4,7 +4,7 @@ model, view, and controller. It is strongly suggested to apply the MVC
 pattern to your application, not only because it is easy to develop and
 maintain, but also the performance is great.
 
-![]({{site.baseurl}}/zk_dev_ref/images/MVC.png)
+![]({{site.baseurl}}/zk_dev_ref/images/mvc.png)
 
 <div style="margin: 3px 3px 0; padding: 0px 30px; border-radius: 5px; border:1px solid #999;">
 
@@ -28,12 +28,12 @@ Reference\].
 # View
 
 The *view* is UI -- a composition of
-[components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI).
+[components]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
 As described in the [UI
-Composing]({{site.baseurl}}/zk_dev_ref/UI_Composing) section, UI
+Composing]({{site.baseurl}}/zk_dev_ref/ui_composing) section, UI
 can be implemented by [a ZUML
-document]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML) or [in
-Java]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet). For the
+document]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) or [in
+Java]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet). For the
 sake of description, ZUML is used to illustrate the concept and
 features.
 
@@ -49,7 +49,7 @@ abstracted by implementing
 
 For typical database access, the glue logic (i.e., control) can be
 handled by a generic feature called [Data
-Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding). In
+Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding). In
 other words, the read and write operations can be handled automatically
 by a generic Data Binding, and you don't need to write the glue logic at
 all.
@@ -69,9 +69,9 @@ DAOs.
 
 In addition to handling the data in a controller, some components
 support the abstraction model to uncouple UI and data. For example,
-[grid](ZK_Component_Reference/Data/Grid),
-[listbox](ZK_Component_Reference/Data/Listbox) and
-[combobox](ZK_Component_Reference/Input/Combobox) support
+[grid]({{site.baseurl}}/zk_component_ref/data/grid),
+[listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and
+[combobox]({{site.baseurl}}/zk_component_ref/input/combobox) support
 <javadoc>org.zkoss.zul.ListModel</javadoc>, while
-[tree](ZK_Component_Reference/Data/Tree) supports
+[tree]({{site.baseurl}}/zk_component_ref/data/tree) supports
 <javadoc>org.zkoss.zul.TreeModel</javadoc>.

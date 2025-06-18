@@ -5,7 +5,7 @@
 - Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
 - Java API: <javadoc>org.zkoss.zul.Iframe</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Iframe</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -43,9 +43,9 @@ by use of `iframe`, as long as the client supports its format.
 
 # Example
 
-![](images/ZKComRef_Iframe.png)
+![](/zk_component_ref/images/ZKComRef_Iframe.png)
 
-``` xml
+```xml
 <window id="win" title="This is an Iframe Demo!">
     <iframe style="width:99%; height:400px;border:3px inset;" src="iframe-target-url-here" />
 </window>
@@ -73,7 +73,7 @@ iframe, you can monitor the URL by writing a JavaScript method called
 <javadoc directory="jsdoc" method="onIframeURLChange(_global_.String, _global_.String)">\_global\_.\_global\_</javadoc>
 as follows.
 
-``` xml
+```xml
  //Part of your, say, PHP page
  <script type="text/script">
  function onIframeURLChange(uuid, url) {
@@ -97,7 +97,7 @@ It is illegal to access components attached to other desktops[^1]. If
 you want to retrieve component, you may use
 <javadoc>org.zkoss.zul.Include</javadoc> instead of
 <javadoc>org.zkoss.zul.Iframe</javadoc>. Or, you could use [Event
-Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
@@ -118,7 +118,7 @@ Since ZK 5.0.4, the concept of group has been introduced to enable the
 use of a group-scope event queue which facilitates easy communication
 between the instances. The code below demonstrates some examples:
 
-``` javascript
+```javascript
 EventQueue que = EventQueues.lookup("groupTest", EventQueues.GROUP, true);
 
 que.subscribe(new EventListener() {
@@ -139,7 +139,7 @@ void publish() {
 
 For more information please take a look at [ZK Developer's Reference:
 Event
-Queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues).
+Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
 
 # onload
 
@@ -148,7 +148,7 @@ could listen to the `onload` event. However, unlike onChange and others,
 you could not listen the widget-level event
 (<javadoc directory="jsdoc">zk.Event</javadoc> and listened by use of
 [Client-side Event
-Listening](ZK_Client-side_Reference/General_Control/Event_Listening)),
+Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)),
 because the onload event might be fired before the widget has been bound
 to DOM.
 
@@ -156,7 +156,7 @@ Rather, you shall use [the client-attribute
 namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 to register a DOM-level listener as follows.
 
-``` xml
+```xml
 <iframe src="https://www.google.com"  height="300px"
   xmlns:ca="client/attribute"
   ca:onload="do_whater_you_want()"/>
@@ -195,7 +195,7 @@ to.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
@@ -218,5 +218,5 @@ to.</p></td>
 
 
 [^1]: For more information please refer to the [Component-based
-    UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
+    UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
     section

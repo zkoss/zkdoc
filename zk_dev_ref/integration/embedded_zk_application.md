@@ -14,7 +14,7 @@ We use library property to enable the embedded feature.
 
 For example: (In **zk.xml**)
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.servlet.http.embedded.enabled</name>
     <value>true</value>
@@ -36,7 +36,7 @@ EmbeddedServlet
 
 **web.xml**
 
-``` xml
+```xml
     <servlet>
         <servlet-name>zkEmbedded</servlet-name>
         <servlet-class>org.zkoss.zkmax.ui.http.EmbeddedServlet</servlet-class>
@@ -51,7 +51,7 @@ Then target the url as mapped above:
 
 **HostPage.html**
 
-``` html
+```html
 <script id="embeddedScript" src="http://zkembedded-app/zkEmbedded" />
 ```
 
@@ -61,7 +61,7 @@ Then target the url as mapped above:
 
 **HostPage.html**
 
-``` html
+```html
 <script id="embeddedScript" src="http://zkembedded-app/zkau/web/js/zkmax/embedded/index.js" />
 ```
 
@@ -73,7 +73,7 @@ Discontinued in ZK 10.0.0 and later
 
 **HostPage.html**
 
-``` html
+```html
 <script id="embeddedScript" src="http://zkembedded-app/zkau/web/js/zkmax/embedded/embedded.js" />
 ```
 
@@ -88,7 +88,7 @@ We'll embed ZK into the non-ZK web application.
 
 **index.html**
 
-``` html
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -127,7 +127,7 @@ This function returns a [Promise
 object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise),
 which means that we can call functions after ZK is ready.
 
-``` javascript
+```javascript
 zEmbedded.load('embeddedZK', 'http://zkembedded-app/demo.zul')
   .then(function(result) {
     zk.log('ZK is ready!' + result.widget.uuid); //result contains the first widget
@@ -149,7 +149,7 @@ associated with the failure.
 
 To handle the URL redirection, we can specify the ZK Host URL.
 
-``` html
+```html
 <script id="embeddedScript" src="/embedded/embedded.js"></script>
 <script>
     zEmbedded.load('embeddedZK', '/embedded/demo.zul', '/embedded');
@@ -158,11 +158,11 @@ To handle the URL redirection, we can specify the ZK Host URL.
 
 Notice that the URL redirection should rewrite the locations:
 
-``` javascript
+```javascript
 /embedded/embedded.js -> http://zkembedded-app/zkau/web/js/zkmax/embedded/embedded.js
 ```
 
-``` javascript
+```javascript
 /embedded -> http://zkembedded-app/embedded
 ```
 
@@ -177,7 +177,7 @@ DOM Element. Use "skipError = true" to ignore error messages.
 
 Since ZK 10, we can set the zkEmbedded servlet in **web.xml**
 
-``` xml
+```xml
 <servlet>
     <servlet-name>zkEmbedded</servlet-name>
     <servlet-class>org.zkoss.zkmax.ui.http.EmbeddedServlet</servlet-class>
@@ -190,7 +190,7 @@ Since ZK 10, we can set the zkEmbedded servlet in **web.xml**
 
 Then we can include embedded.js in html in the following way
 
-``` xml
+```xml
 <script src="/${webappRoot}/zkEmbedded"></script>
 ```
 
@@ -207,7 +207,7 @@ binding](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/client_binding_api
 In Cross Origin scenarios the responses from the ZK application need to
 set at least the following CORS headers:
 
-``` javascript
+```javascript
 Access-Control-Allow-Origin: [allowed embedding origins]
 Access-Control-Allow-Headers: zk-sid
 Access-Control-Expose-Headers: zk-sid, zk-error

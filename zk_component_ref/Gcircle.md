@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -14,7 +14,7 @@ points, fill color, etc..
 
 # Example
 
-``` xml
+```xml
 <window title="Google Maps" border="normal" width="520px">
     <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>
     <gmaps id="mymap" width="500px" height="300px" showSmallCtrl="true">
@@ -49,7 +49,7 @@ points, fill color, etc..
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

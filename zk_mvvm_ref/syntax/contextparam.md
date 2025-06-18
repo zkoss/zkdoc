@@ -3,12 +3,12 @@
 Syntax
 ======
 
-``` java
+```java
 @ContextParam(ContextType.PAGE)
 ```
 
 #### Enumeration of all context
-``` java
+```java
 enum ContextType {
     BIND_CONTEXT,   //BindContext instance
     BINDER,         //Binder instance
@@ -38,7 +38,7 @@ Example
 =======
 
 #### Retrieve various context object in a ViewModel
-``` java
+```java
 @Init
 public void init(
     @ContextParam(ContextType.EXECUTION) Execution execution,
@@ -58,14 +58,14 @@ public void init(
 
 The following is another example.
 
-``` xml
+```xml
 <vbox id="vbox" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('eg.ContextParamVM')">
     <button id="cmd" label="cmd" onClick="@command('cmd')"/>
 </vbox>
 ```
 
 #### A ViewModel used by above zul
-``` java
+```java
 public class ContextParamVM {
     @Command
     public void cmd(

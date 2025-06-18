@@ -6,8 +6,7 @@
   Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treecols</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecols</javadoc>
-- Style Guide: [
-  Treecols](ZK_Style_Guide/XUL_Component_Specification/Treecol)
+
 
 # Employment/Purpose
 
@@ -17,9 +16,9 @@ column will appear as a column at the top of the tree.
 
 # Example
 
-![](images/ZKComRef_Treeitem.png)
+![](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px">
     <tree id="tree" width="90%">
         <treecols sizable="true">
@@ -88,11 +87,11 @@ column will appear as a column at the top of the tree.
 </table>
 
 - Inherited Supported Events: [
-  HeadersElement](ZK_Component_Reference/Base_Components/HeadersElement#Supported_Events)
+  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
 
 # Supported Children
 
-`*`[` Treecol `](ZK_Component_Reference/Data/Tree/Treecol)
+`*`[` Treecol `]({{site.baseurl}}/zk_component_ref/data/tree/treecol)
 
 # Use cases
 

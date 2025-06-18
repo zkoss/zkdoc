@@ -8,7 +8,7 @@ Register Application Level Converters
 
 You can register application level converters<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appConverters*) in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.appConverters</name>
     <value>foo=my.FooConverter,bar=my.BarConverter</value>
@@ -17,7 +17,7 @@ You can register application level converters<sub>[1]</sub> by setting library-p
 
 Then use them by converter name.
 
-``` xml
+```xml
 <label value="@load(vm.message) @converter('foo')"/>
 <label value="@load(vm.message) @converter('bar')"/>
 ```
@@ -32,7 +32,7 @@ Register Application Level Validators
 
 You can register application level validators<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appValidators*) in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.appValidators</name>
     <value>foo=my.FooValidator,bar=my.BarValidator</value>
@@ -41,7 +41,7 @@ You can register application level validators<sub>[1]</sub> by setting library-p
 
 Then use them by validator name.
 
-``` xml
+```xml
 <textbox value="@bind(vm.name) @validator('foo')"/>
 <textbox value="@bind(vm.value) @validator('bar')"/>
 ```
@@ -57,7 +57,7 @@ Turn on printing ZK Bind debugging information will print lots of messages durin
 
 To enable it, add the configuration below (default is `false`) in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.DebuggerFactory.enable</name>
     <value>true</value>
@@ -132,7 +132,7 @@ Debugging Tool: ZK Binding Tracker
 
 The above configuration will print messages on the server's console, and it is system-wide, which means debugging information of all pages will be printed and it might become hard to read. We therefore hereby present you a tool: **ZK Binding Tracker** which is a Chrome extension that can be installed on your Chrome browser. It can display the debugging information for the current ZUL page in rich format.
 
-![Binding tracker introduction]({{site.baseurl}}/zk_mvvm_ref/images/Binding_tracker_introduction.png)
+![Binding tracker introduction]({{site.baseurl}}/zk_mvvm_ref/images/binding_tracker_introduction.png)
 
 For more details, please refer to [Small\_Talks/2013/June/ZK\_Binding\_Tracker\_-\_A\_Chrome\_Extension](http://books.zkoss.org/wiki/Small_Talks/2013/June/ZK_Binding_Tracker_-_A_Chrome_Extension).
 

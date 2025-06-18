@@ -36,7 +36,7 @@ N/A
 </table>
 
 - Inherited Supported Events: [
-  InputElement](ZK_Component_Reference/Base_Components/InputElement#Supported_Events)
+  InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Supported_Events)
 
 # Supported Children
 

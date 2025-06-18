@@ -213,7 +213,7 @@ the button with the plus icon
 (![inline]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or pressing
 "Enter" key. Therefore, we have to listen to 2 events: `onClick` and
 `onOK`. For handling other key pressing events, please refer to
-[ZK\_Developer's\_Reference/UI\_Patterns/Keystroke\_Handling](https://books.zkoss.org/wiki/ZK_Developer%27s_Reference/UI%20Patterns/Keystroke%20Handling).
+[ZK\_Developer's\_Reference/UI\_Patterns/Keystroke\_Handling](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).
 
 ```java
 public class TodoListController extends SelectorComposer<Component>{
@@ -415,7 +415,7 @@ implement this feature, the first problem is: how do we know which
 *Checkbox* is checked as there are many of them. We cannot listen to a
 *Checkbox* event as they are created in template using
 `@Listen("onCheck = #todoListbox checkbox")`,thus are created
-dynamically. Therefore, we introduce the [ "Event Forwarding"](https://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Event%20Handling/Event%20Forwarding)
+dynamically. Therefore, we introduce the [ "Event Forwarding"](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/event_handling/event_forwarding)
 feature to demonstrate ZK's flexibility. This feature can forward an
 event from a component to another component, so we can forward an
 `onCheck` event from each *Checkbox* to the *Listbox* that encloses it,

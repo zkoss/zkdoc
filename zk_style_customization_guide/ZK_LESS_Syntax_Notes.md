@@ -3,7 +3,7 @@
 If you are using control-flow tags like <c:if> in your ZK-Less files,
 you have to be really care with the situations like below:
 
-``` html
+```html
  .z-selector {
       border-left-color: @border;
       <c:if test="${zk.ie == 8}">
@@ -16,7 +16,7 @@ If **@border** and **@border4IE8** happens to be the same, Less will
 optimize them and only keep the last expression while compiling.
 Therefore, the above Less expression is equivalent to the following:
 
-``` html
+```html
  .z-selector {
   // removed by less
   <c:if test="${zk.ie == 8}">
@@ -28,7 +28,7 @@ Therefore, the above Less expression is equivalent to the following:
 So, to be safe, please change the order of your Less expressions like
 this:
 
-``` html
+```html
  .z-selector {
   <c:if test="${zk.ie == 8}">
   border-left-color: @border4IE8;
@@ -40,7 +40,7 @@ this:
 Here, when **@border** and **@border4IE8** are the same, the compiled
 CSS looks like:
 
-``` html
+```html
  .z-selector {
   <c:if test="${zk.ie == 8}">
   </c:if>
@@ -50,7 +50,7 @@ CSS looks like:
 
 and if they are different, the result is:
 
-``` html
+```html
  .z-selector {
   <c:if test="${zk.ie == 8}">
   border-left-color: red;

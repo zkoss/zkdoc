@@ -10,7 +10,7 @@ softwares described in this example when installing yourself.
 # Environment setup
 
 Please refer to the [ the eclipse and maven quick start
-guide](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+guide](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 environment setup.
 
 # Project configuration
@@ -24,7 +24,7 @@ ZK supports the Jakarta servlet configuration starting from ZK
 9.6.0-jakarta. When updating your pom file, you need to include the
 -jakarta suffix in your dependencies version configuration:
 
-``` xml
+```xml
 <dependency>
 <zk.version>9.6.0-jakarta</zk.version>
 <!--<zk.version>9.6.0-jakarta-Eval</zk.version> -->
@@ -48,7 +48,7 @@ for a list of available versions.
 
 For example, you may need to replace
 
-``` xml
+```xml
 <dependency>
     <groupId>javax.servlet</groupId>
     <artifactId>javax.servlet-api</artifactId>
@@ -59,7 +59,7 @@ For example, you may need to replace
 
 by
 
-``` xml
+```xml
 <dependency>
     <groupId>jakarta.servlet</groupId>
     <artifactId>jakarta.servlet-api</artifactId>
@@ -136,7 +136,7 @@ support up to jetty 9, which is not compatible with Jakarta servlet.
 ## Run from maven
 
 Refer to the approach described in [ the eclipse and maven quick
-start](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+start](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
 guide.
 
 When configuring your application's pom file, use a jetty version that
@@ -151,7 +151,7 @@ You can then start your project as a maven build, using
 
 You can run in debug mode on a Tomcat server from eclipse by following
 the configuration shown in the [ quick start with Eclipse and Tomcat
-](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
+](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
 guide, while using a [\| compatible tomcat
 version](http://tomcat.apache.org/whichversion.html).
 

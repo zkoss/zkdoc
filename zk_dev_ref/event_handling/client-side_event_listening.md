@@ -14,4 +14,4 @@ any, with the client-side listener.
 
 For more information about handling events at the client, please refer
 to [ZK Client-side Reference: Event
-Listening](ZK_Client-side_Reference/General_Control/Event_Listening).
+Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening).

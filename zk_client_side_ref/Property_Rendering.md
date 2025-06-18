@@ -21,7 +21,7 @@ client.
 > Notice that this section describes how to synchronize states of a
 > component to the widget. To synchronize states back to a component,
 > refer to [the AU Requests
-> section](ZK_Client-side_Reference/Communication/AU_Requests/Client-side_Firing).
+> section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing).
 
 # Render All Properties When Attached
 
@@ -46,7 +46,7 @@ is straightforward: call back `super.renderProperties` to render
 inherited properties, and then call one of the `render` methods to
 render the properties of the component.
 
-``` java
+```java
 protected void renderProperties(ContentRenderer renderer)
 throws IOException {
  super.renderProperties(renderer);
@@ -60,7 +60,7 @@ Notice that the render methods of
 empty string, and `false` automatically. Thus, the `if` statement in the
 following example is redundant.
 
-``` java
+```java
 if (value != null && value .length() != 0) //redundant since render will check
     render(renderer, "name", value); //does nothing if null or empty
 ```
@@ -70,7 +70,7 @@ should invoke the render methods of
 <javadoc type="interface">org.zkoss.zk.ui.sys.ContentRenderer</javadoc>,
 such as
 
-``` java
+```java
 render.render("name", value);
 ```
 
@@ -98,7 +98,7 @@ files are loaded.
 
 For example,
 
-``` java
+```java
 protected void renderProperties(org.zkoss.zk.ui.sys.ContentRenderer renderer)
 throws java.io.IOException {
   //assume js is the JavaScript code snippet
@@ -125,7 +125,7 @@ indexed search engines.
 
 For example,
 
-``` javascript
+```javascript
 renderer.render("z_ea", "content");
 ```
 
@@ -140,7 +140,7 @@ or
 If the content has to decode first (from &lt; to \<), prefix the
 property name with '\$'.
 
-``` javascript
+```javascript
 renderer.render("z_ea", "$content");
 ```
 
@@ -151,7 +151,7 @@ before creating the widgets.
 
 For example,
 
-``` java
+```java
 renderer.render("z_pk", "com.foo,com.foo.more");
 ```
 
@@ -169,7 +169,7 @@ Also notice that
 <javadoc method="redraw(java.io.Writer)" type="interface">org.zkoss.zk.ui.Component</javadoc>
 won't be called immediately. Rather, ZK Update Engine will accumulate
 all updates, and then optimize the number of commands ([AU
-responses](ZK_Client-side_Reference/Communication/AU_Responses))
+responses]({{site.baseurl}}/zk_client_side_ref/communication/au_responses))
 that need to be sent.
 
 # Dynamic Update a Property
@@ -179,7 +179,7 @@ component has to send the updated value to the peer widget. It is done
 by calling one of the smartUpdate methods of
 <javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc>. For example,
 
-``` java
+```java
 public void setValue(String value) {
  if (!_value.equals(value)) {
   _value = value;
@@ -212,7 +212,7 @@ For example,
 <javadoc method="encodeURL(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
 is better to be called when rendering components[^1]:
 
-``` java
+```java
 public void setSrc(String src) {
  if (!Objects.equals(_src, src)) {
   _src = src;

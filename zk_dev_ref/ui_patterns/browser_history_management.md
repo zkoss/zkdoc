@@ -48,7 +48,7 @@ Notice that it is *not* the bookmarks that users add to the browser
 For example, assume you want to bookmark the state when the Next button
 is clicked, then you do as follows.
 
-``` xml
+```xml
 <button label="Next" onClick='desktop.setBookmark("Step-2")'/>
 ```
 
@@ -57,7 +57,7 @@ the URL.
 
 If you press the BACK button, you will see as follows.
 
-![](images/1000000000000284000000226A7DEE65.png)
+![](/zk_dev_ref/images/1000000000000284000000226A7DEE65.png)
 
 ## Listen to onBookmarkChange and Change the State Accordingly
 
@@ -78,7 +78,7 @@ represented.
 To listen to the `onBookmarkChange` event, you can add an event listener
 to any pages of the desktop, or to any of its root components.
 
-``` xml
+```xml
 <window onBookmarkChange="goto(event.bookmark)">
     <zscript>
      void goto(String bookmark) {
@@ -101,7 +101,7 @@ you could represent each state with one ZUML page, and then use
 `createComponents` to create all components in it when
 `onBookmarkChange` is received.
 
-``` java
+```java
  if ("Step-2".equals(bookmark)) {
      //1. Remove components, if any, representing the previous state
      try {
@@ -119,7 +119,7 @@ you could represent each state with one ZUML page, and then use
 
 In this example, we bookmark each tab selection.
 
-``` xml
+```xml
 <window id="wnd" title="Bookmark Demo" width="400px" border="normal">
     <zscript>
      page.addEventListener(Events.ON_BOOKMARK_CHANGE,
@@ -158,7 +158,7 @@ might want to change the bookmark of the page (the container), such that
 you can restore to the `iframe` to the right content. To do this, you
 have to listen to the `onURIChange` event as follows.
 
-``` xml
+```xml
 <window onURIChange="desktop.bookmark = storeURI(event.getTarget(), event.getURI())">
     <iframe src="${uri_depends_on_bookmark}" forward="onURIChange"/>
 </window>
@@ -170,7 +170,7 @@ The `onURIChange` event is sent as an instance of
 Notice that the `onURIChange` event is sent only if the iframe contains
 another ZK page. If it contains a non-ZK page, you have to handle it
 manually. Please refer to [ZK Component Reference:
-iframe](ZK_Component_Reference/Essential_Components/Iframe#Integrate_with_Other_Technologies)
+iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Integrate_with_Other_Technologies)
 for more information.
 
 [^1]: Each bookmark is an arbitrary string added to the browser's

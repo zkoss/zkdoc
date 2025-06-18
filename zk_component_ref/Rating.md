@@ -21,23 +21,23 @@ feedback across different domains.
 
 # Examples
 
-![](images/rating.gif)
+![](/zk_component_ref/images/rating.gif)
 
 ## Default
 
-``` xml
+```xml
 <rating rating="3"/>
 ```
 
 ## Custom Icon
 
-``` xml
+```xml
  <rating iconSclass="z-icon-bolt"/>
 ```
 
 ### CSS
 
-``` xml
+```xml
     <style>
         .myGiftIcon:before {
             content: '🎁';
@@ -114,7 +114,7 @@ rated.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

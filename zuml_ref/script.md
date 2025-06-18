@@ -24,7 +24,7 @@ encodes the URI of the `href` and `src` attribute (by use of
 So you can specify an absolute or relative path. ZK generates all other
 attributes directly to the client.
 
-``` xml
+```xml
 <?script src="/js/foo.js"?>
 <?script content="var foo = true; if (zk.ie) doSomething();"?>
 
@@ -38,7 +38,7 @@ As shown above, the attribute value could span multiple lines.
 # Alternatives
 
 Alternatively, you could use [the script
-component](ZK_Component_Reference/Essential_Components/Script)
+component]({{site.baseurl}}/zk_component_ref/essential_components/script)
 to embed JavaScript code. The script component supports more features
 such as defer, but it has some memory footprint at the server (since it
 is a component).

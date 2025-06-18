@@ -12,7 +12,7 @@ By default, it is 8760 (the same as other class Web resources). Notice
 that the resource is reloaded. If you want to turn off the cache of the
 CSS files of class Web resources, you can specify a non-positive value.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.classWebResource.cache.CSS.hours</name>
     <value>8760</value>

@@ -10,14 +10,14 @@ Redirect including SSO (Single-Sign-On) handling has always been a
 common challenge in Ajax, and that's no exception when it comes to ZK.
 You may have run into this error:
 
-``` text
+```text
 The response could not be parsed: Expected JSON format (please check console for details).
 Unexpected token '<':
 ```
 
 Or in an older ZK version:
 
-``` text
+```text
 The server is temporarily out of service.
 Would you like to try again?
 
@@ -32,7 +32,7 @@ It usually happens when:
 If you check developer tool \> Network, you should see a 302 Redirect
 response on a ZK AU request:
 
-![]({{site.baseurl}}/zk_dev_ref/images/Redirect302.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/redirect302.jpg)
 
 If this happens, it's most likely you have a service that intercepts
 HTTP requests (e.g. a security filter) and redirects the AU request to a
@@ -57,7 +57,7 @@ response code **403 Forbidden** instead of 302 for the situation
 mentioned above (session expired or invalid access token).
 
 Then, configure [ the error-reload
-Element](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_error-reload_Element),
+Element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
 so that ZK can handle 403 by reloading the specified login page.
 
 In some special setups, you might need to override javascript function

@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @Immutable
 ```
 
@@ -23,14 +23,14 @@ This also reduces the resources needed in the application.
 Example
 =======
 
-``` java
+```java
 @Immutable
 public class SysConfiguration {
 	// class body
 }
 ```
 
-``` java
+```java
 public class DataObject {
 
     //other code...

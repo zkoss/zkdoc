@@ -4,24 +4,24 @@ can save user input back to a ViewModel automatically. For example in
 the below zul, user input is saved automatically when you move the focus
 out of the *Textbox*.
 
-``` xml
+```xml
         <textbox value="@save(vm.currentUser.fullName)" .../>
 ```
 
 For the property `currentUser`, we want to both save user input back to
 the ViewModel and load value from the ViewModel, so the code becomes:
 
-``` xml
+```xml
         <textbox value="@load(vm.currentUser.fullName)@save(vm.currentUser.fullName)" .../>
 ```
 
 The syntax is quite long. ZK knows your pain and provides a shortcut syntax: `@bind`:
-``` xml
+```xml
         <textbox value="@bind(vm.currentUser.fullName)" .../>
 ```
 
 Therefore, we can save and load other `currentUser` property with `@bind` like:
-``` xml
+```xml
 ...
     <rows>
         ...
@@ -87,7 +87,7 @@ for each of them:
 
 **Define commands in a ViewModel**
 
-``` java
+```java
 
 public class ProfileViewModel implements Serializable{
     ...
@@ -133,7 +133,7 @@ All properties in a ViewModel:
 
 **Define notification & commands in a ViewModel**
 
-``` java
+```java
 
 public class ProfileViewModel implements Serializable{
     ...
@@ -176,7 +176,7 @@ defined two commands: `save` and `reload`.
 Then, we can bind `onClick` event to above commands with command binding
 `@command('commandName')` as follows:
 
-``` xml
+```xml
 ...
         <hlayout>
             <button onClick="@command('save')" label="Save"/>
@@ -234,7 +234,7 @@ Steps to use a form binding:
 
 **extracted from chapter3/profile-mvvm.zul**
 
-``` xml
+```xml
 ...
     <grid width="500px"
     form="@id('fx')@load(vm.currentUser)@save(vm.currentUser, before='save')">

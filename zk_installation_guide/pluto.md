@@ -4,7 +4,7 @@
 
 Define the definition of porlet in web.xml
 
-``` xml
+```xml
 <web-app> 
     <display-name>ZK Portlets</display-name> 
  
@@ -74,7 +74,7 @@ Define the definition of porlet in web.xml
 
 Define a ZK portlet in portlet.xml.
 
-``` xml
+```xml
 <portlet-app 
 xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" 
 version="1.0" 
@@ -125,7 +125,7 @@ is no good solution. But here is a workaround that ZK stores desktop in
 application scope instead of session scope to avoid the problem. Please
 add the following lines in your zk.xml
 
-``` xml
+```xml
 <system-config> 
     <cache-provider-class>org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider</cache-provider-class> 
 </system-config> 

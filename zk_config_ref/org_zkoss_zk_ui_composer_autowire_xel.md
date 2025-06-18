@@ -14,7 +14,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)).
 For example, You could specify this library variable as follows to turn
 it off.
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
     <library-property>
         <name>org.zkoss.zk.ui.composer.autowire.xel</name>

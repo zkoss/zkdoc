@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Listgroupfoot</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
-- Style Guide: [
-  Listgroupfoot](ZK_Style_Guide/XUL_Component_Specification/Listgroupfoot)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -16,9 +15,9 @@ GroupFooter serves as a summary listitem of listgroup.
 
 # Example
 
-![](images/ZKComRef_Listgroup_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Listgroup_Example.PNG)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
  <zk>
      Listbox support Grouping
@@ -91,7 +90,7 @@ GroupFooter serves as a summary listitem of listgroup.
 </table>
 
 - Inherited Supported Events: [
-  Listitem](ZK_Component_Reference/Data/Listbox/Listitem#Supported_Events)
+  Listitem]({{site.baseurl}}/zk_component_ref/data/listbox/listitem#Supported_Events)
 
 # Supported Children
 

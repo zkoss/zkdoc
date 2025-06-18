@@ -13,9 +13,9 @@ repository](https://mavensync.zkoss.org/maven2/org/zkoss/calendar/calendar/).
 Then, you can adopt ZK Calendar easily by simply adding a dependency
 like the following example. (If you didn't setup zk maven repository
 yet, you have to [ setup zk maven
-repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository).)
+repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository).)
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.calendar</groupId>
     <artifactId>calendar</artifactId>
@@ -43,7 +43,7 @@ include calendar.jar as a library.
 After setup, we can create an `index.zul` with the content below to
 verify the setup works or not.
 
-``` xml
+```xml
 <zk>
     <calendars/>
 </zk>
@@ -53,7 +53,7 @@ This gives you the very first ZK Calendar application. When a server
 starts, navigate to index.zul and the following page should be
 displayed.
 
-![](images/ZKCalEss_Simple_calendar_application.png)
+![](/zk_calendar_essentials/images/ZKCalEss_Simple_calendar_application.png)
 
 Congratulations! That is all it takes to embed ZK Calendar within your
 ZK application.

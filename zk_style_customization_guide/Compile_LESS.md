@@ -8,7 +8,7 @@ by the [official-website](http://nodejs.org/) to install Node.js.
 Node version 0.10.30 or above is required. To check your Node.js
 version, simply run:
 
-``` bash
+```bash
 node --version
 ```
 
@@ -38,7 +38,7 @@ You could choose either one of them depends on your preferences.
 - Execute the following command under your project folder to install
   ZK-Less' node package.
 
-``` bash
+```bash
 cd project_folder
 npm install zkless-engine
 ```
@@ -47,7 +47,7 @@ npm install zkless-engine
   under project folder, and change the input folder and output folder as
   needed.
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <project name="less.compile" default="lessc" basedir=".">
     <target name="lessc">
@@ -81,7 +81,7 @@ npm install zkless-engine
 
 - Execute **`ant`** command in command line tool, i.e:
 
-``` bash
+```bash
 cd project_folder
 ant lessc
 ```
@@ -92,13 +92,13 @@ ant lessc
 - Execute the following command to install the native LESS engine by
   [Less.js](http://lesscss.org/)
 
-``` bash
+```bash
 npm install -g less
 ```
 
 - Modify pom.xml in maven project
 
-``` xml
+```xml
 <!-- Add Plugin Repository -->
 <pluginRepositories>
     <pluginRepository>
@@ -164,13 +164,13 @@ Steps to use **ZKLessServlet** within a Maven Project:
 - Have Node.js installed in your environment.
 - Install the native LESS engine by the following command:
 
-``` bash
+```bash
 npm install -g less
 ```
 
 - Add maven dependency if you are using maven.
 
-``` xml
+```xml
 <repositories>
     <repository>
         <id>ZK CE</id>
@@ -191,7 +191,7 @@ npm install -g less
 
 - Add servlet settings in web.xml
 
-``` xml
+```xml
 <web-app>
     <!-- omitted other servlets -->
     <servlet>
@@ -230,7 +230,7 @@ Remember to put all your LESS files and import resources under
 
 Project structure should look like the following:
 
-``` java
+```java
 zkMavenWebProject - src/main/webapp
     WEB-INF
         web.xml
@@ -243,7 +243,7 @@ zkMavenWebProject - src/main/webapp
 
 - Use test.less inside test.zul as follows
 
-``` xml
+```xml
 <!-- test.zul -->
 <?link rel="stylesheet" href="../less/test.less"?>
 <zk>

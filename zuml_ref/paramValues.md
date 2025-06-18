@@ -6,7 +6,7 @@ ServletRequest.getParameterValues()\]
 
 To retrieve the first value of a parameter if any, use `param` instead.
 
-``` xml
+```xml
 ${param.something}
 ${paramValues.something[1]}
 ```
@@ -14,7 +14,7 @@ ${paramValues.something[1]}
 Notice that, in zscript, there is no `paramValues`. `Param` is a map of
 possible values, `Map<String, String[]>`.
 
-``` xml
+```xml
 <zscript>
 String[] values = param.get("something");
 </zscript>

@@ -18,7 +18,7 @@ audio. Developers might be able to control the play of an audio by the
 
 ![](/zk_component_ref/images/ZKComRef_Audio_Example.png)
 
-``` xml
+```xml
  <audio src="music.wav" controls="true"></audio>
 ```
 
@@ -38,7 +38,7 @@ the properties like `autoplay`, `controls`, `loop`, `muted` and
 audio formats,so we could specify multiple source files in different
 formats for different browsers. For examples:
 
-``` xml
+```xml
  <audio src="music.wav, music.mp3, music.ogg" controls="true"></audio>
 ```
 
@@ -92,11 +92,11 @@ end.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`* `[`Track`]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Track)
+`* `[`Track`]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track)
 
 # Use Cases
 

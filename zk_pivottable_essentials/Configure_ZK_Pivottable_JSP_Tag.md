@@ -24,7 +24,7 @@ few library jars, and make some configuration changes to your project.
 2.  Add <javadoc>org.zkoss.zk.au.http.DHtmlUpdateServlet</javadoc> and
     its mapping into **web.xml** as shown below
 
-``` xml
+```xml
     <servlet>
         <description>The asynchronous update engine for ZK</description>
         <servlet-name>auEngine</servlet-name>

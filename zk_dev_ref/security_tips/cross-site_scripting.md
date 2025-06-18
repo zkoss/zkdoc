@@ -27,14 +27,14 @@ alert('xss')
 
 </code>:
 
-``` xml
+```xml
 <textbox value="${any_value}"/>
 ```
 
 ## Attributes to Generate Texts
 
 [
-Label](ZK%20Component%20Reference/Essential%20Components/Label)
+Label](ZK_component_reference/essential_components/Label)
 component's `value` and those attributes that generate texts into a page
 including `label, title, tooltiptext, placeholder, name, type`, and
 message like `createMessage, emptyMessage`. (ZK encodes them with
@@ -42,7 +42,7 @@ message like `createMessage, emptyMessage`. (ZK encodes them with
 
 Since ZK implicitly turns an EL expression like `${myMessage}` on a zul
 into a [
-Label](ZK%20Component%20Reference/Essential%20Components/Label),
+Label](ZK_component_reference/essential_components/Label),
 so it's encoded, too.
 
 # What ZK Doesn't Encode
@@ -50,15 +50,15 @@ so it's encoded, too.
 ## Components used to Generate HTML Directly
 
 ZK provides several ways to write HTML tags in a zul, including
-\[\[ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags/The_html_Component
+\[\[{{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component
 \| ZK
 
 <html>
 
 component\]\], [ native
-namespace](ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags/The_native_Namespace),
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace),
 and [ xhtml
-components](ZK_Developer%27s_Reference/UI_Patterns/HTML_Tags/The_XHTML_Component_Set).
+components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set).
 Since their purpose is to allow you to write HTML tags directly, ZK
 doesn't encode them.
 
@@ -73,7 +73,7 @@ example, if the value of `any_content`, in the following example, is
 generated directly without proper encoding, it may be vulnerable to XSS
 attacks.
 
-``` xml
+```xml
 <html>${any_content}</html>
 ```
 
@@ -86,7 +86,7 @@ As the name says this utility allows more direct client-side access.
 Thus the methods don't encode the strings passed into them to allow
 formatting of the messages at the client-side, e.g.:
 
-``` java
+```java
 Clients.showNotification("Successfully processed: <br/>" + myTextbox.getValue());
 ```
 
@@ -101,7 +101,7 @@ carefully.
 ## Client-side Actions
 
 The [client-side
-action]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Actions_and_Effects)
+action]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects)
 is not encoded and the options are interpreted as a JSON object. In most
 cases we expect the values to come from the server-side. However, if you
 allow end-users to specify them (not recommended), you should encode

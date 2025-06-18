@@ -11,7 +11,7 @@ both "false", it represents "original size". To maximize a component,
 you should set maximized to **true** and minimized to **false**. To
 minimize it, set maximized to **false** and minimized to **true**.
 
-``` java
+```java
 
 ComponentAgent window = desktopAgent.query("window");
 
@@ -35,7 +35,7 @@ and **height**. As test case runs in a simulated environment, there is
 no screen rendering involved, it simply changes target component's width
 and height.,
 
-``` java
+```java
 
 ComponentAgent window = desktopAgent.query("window");
 

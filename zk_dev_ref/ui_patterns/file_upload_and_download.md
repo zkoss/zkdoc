@@ -11,7 +11,7 @@ below:
 
 For example:
 
-``` xml
+```xml
 <zk>
     <zscript>
     void upload(UploadEvent event) {
@@ -34,7 +34,7 @@ You can control the maximal allowed number of files, the maximal allowed
 size, and other options. Please refer to
 [org.zkoss.zul.Button.setUpload()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload-java.lang.String-).
 
-``` xml
+```xml
 <menupopup>
     <menuitem label="Upload" upload="true,maxsize=-1,native"/>
 </menupopup>
@@ -53,12 +53,12 @@ in an event listener.
 
 Here is an example:
 
-``` xml
+```xml
     <a iconSclass="z-icon-upload" ...
        apply="org.zkoss.reference.developer.uipattern.UploadComposer"/>
 ```
 
-``` java
+```java
 
 public class UploadComposer extends SelectorComposer {
 
@@ -76,29 +76,29 @@ public class UploadComposer extends SelectorComposer {
 
 # File Download
 
-[Filedownload](ZK_Component_Reference/Essential_Components/Filedownload)
+[Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
 provides a set of utilities to prompt a user to download a file from the
 server to a local folder. For example,
 
-``` xml
+```xml
 <button label="Download a file" onClick='Filedownload.save("~./zklogo.png", null);'/>
 ```
 
-![](images/10000000000002AF000001BB582C2DD7.png)
+![](/zk_dev_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 The file could be a static resource, an input stream, a file, a URL and
 others. Please refer to [ZK Component
-Reference](ZK_Component_Reference/Essential_Components/Filedownload)
+Reference]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
 and <javadoc>org.zkoss.zul.Filedownload</javadoc> for more information.
 
 ## File Download Link
 
 Clicking a file download link terminates client engine to work, please
 refer to
-[ZK_Component_Reference/Essential_Components/A#File_Download_Link](ZK_Component_Reference/Essential_Components/A#File_Download_Link)
+[{{site.baseurl}}/zk_component_ref/essential_components/a#File_Download_Link]({{site.baseurl}}/zk_component_ref/essential_components/a#File_Download_Link)
 for correct usages.
 
 [^1]: If you enabled the use of event threads, you could use
     <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> and
     related. For more information, please refer to [the Event Thread
-    section]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads/File_Upload).
+    section]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads/file_upload).

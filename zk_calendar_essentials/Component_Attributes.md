@@ -11,7 +11,7 @@ etc.
 
 For example:
 
-``` xml
+```xml
 <window title="Bare ZK Calendar" border="normal">
     <calendars />
 </window>
@@ -23,10 +23,10 @@ run with the default values.
 ## Only Toolbar Allowed
 
 Only a [
-toolbar](ZK%20Component%20Reference/Essential%20Components/Toolbar)
+toolbar](ZK_component_reference/essential_components/Toolbar)
 is allowed as its child:
 
-``` XML
+```xml
     <calendars>
         <toolbar>...</toolbar>
     </calendars>
@@ -48,7 +48,7 @@ will be displayed.
 
 Sets the date formatter. In fact, there are 5 places in the calendar
 must have different date display. See
-[ZK_Calendar_Essentials/Customization](ZK_Calendar_Essentials/Customization).
+[{{site.baseurl}}/zk_calendar_essentials/customization]({{site.baseurl}}/zk_calendar_essentials/customization).
 
 ## readonly
 
@@ -66,7 +66,7 @@ Determine the first day of a week to be displayed on the calendar.
 ## model
 
 Specify a model to add or remove items in a calendar. See
-[ZK_Calendar_Essentials/CRUD_Calendar_Items](ZK_Calendar_Essentials/CRUD_Calendar_Items)
+[{{site.baseurl}}/zk_calendar_essentials/crud_calendar_items]({{site.baseurl}}/zk_calendar_essentials/crud_calendar_items)
 
 ## mold
 
@@ -83,7 +83,7 @@ parts. The main component area is where date time events are displayed
 and the top of the Calendar component is used to display the daylong
 event.
 
-![](images/ZKCalEss_Default_mold.jpg)
+![](/zk_calendar_essentials/images/ZKCalEss_Default_mold.jpg)
 
 ### The Month Mold
 
@@ -91,7 +91,7 @@ In the month mold, the content of each day has no background color, the
 text is colored and the item over one day has a background color with
 white text. When using the month mold, each row represents one week.
 
-![](images/ZKCalEss_Month_mold.jpg)
+![](/zk_calendar_essentials/images/ZKCalEss_Month_mold.jpg)
 
 By just changing one attribute ZK affords us exceptional power. But how
 do we change this attribute? The next section explains how.
@@ -104,17 +104,17 @@ The Calendar can display 1 or multiple time zones according to what you
 specify below. Then the first time zone you specify will be the
 Calendar's default time zone.
 
-``` xml
+```xml
 <calendars timeZone="Finland=GMT+2, Taiwan=GMT+8"/>
 ```
 
-![](images/zkcal-timeZone.png)
+![](/zk_calendar_essentials/images/zkcal-timeZone.png)
 
 ## width , height
 
 Set the size of the component, for example:
 
-``` xml
+```xml
 <calendars width="400px" height="600px"/>
 ```
 
@@ -126,11 +126,11 @@ Supported Value: an integer between 0 - 23
 
 Sets the beginning hour of a day.
 
-``` xml
+```xml
 <calendars beginTime="8"/>
 ```
 
-![](images/zkcal-beginTime.png)
+![](/zk_calendar_essentials/images/zkcal-beginTime.png)
 
 ## weekOfYear
 
@@ -138,10 +138,10 @@ default: `false`
 
 Determine whether to show the week number of one year.
 
-![](images/WeekOfyear.jpg)
+![](/zk_calendar_essentials/images/WeekOfyear.jpg)
 
 # Add Application Logic
 
 If you want to add, remove, or show items on a Calendars, please read [
 Implementing Event
-Listeners](ZK_Calendar_Essentials/Implementing_Event_Listeners).
+Listeners]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners).

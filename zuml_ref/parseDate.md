@@ -1,6 +1,6 @@
 The default method:
 
-``` java
+```java
 Date parseDate(String source, String pattern);
 ```
 
@@ -18,7 +18,7 @@ string to produce a date with the given pattern, locale, timezone, date
 style and time style.
 
 You can call it by [
-EL](ZUML%20Reference/EL%20Expressions/Static%20Fields%20and%20Methods)
+EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
 or declaring a [
 xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 

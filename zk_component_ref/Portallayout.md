@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Portallayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Portallayout</javadoc>
-- Style Guide: [
-  Portallayout](ZK_Style_Guide/XUL_Component_Specification/Portallayout)
+
 
 {% include edition-availability.html edition="pe" %}
 
@@ -25,9 +24,9 @@ depend on the browser, and not as expected.
 
 # Example
 
-![](images/zkcomref_portallayout.gif)
+![](/zk_component_ref/images/zkcomref_portallayout.gif)
 
-``` xml
+```xml
     <portallayout height="100%">
         <portalchildren width="50%">
             <panel height="50%" title="Calendar" border="normal">
@@ -60,7 +59,7 @@ depend on the browser, and not as expected.
 If you want the portallayout to be displayed as a row-based layout, you
 can specify `orient="horizontal"`.
 
-``` xml
+```xml
 <portallayout orient="horizontal">
     <portalchildren width="50%">
         ...
@@ -111,11 +110,11 @@ an event caused by a portal being moved.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Portalchildren`](ZK_Component_Reference/Layouts/Portallayout/Portalchildren)
+`*`[` Portalchildren`]({{site.baseurl}}/zk_component_ref/layouts/portallayout/portalchildren)
 
 # Version History
 

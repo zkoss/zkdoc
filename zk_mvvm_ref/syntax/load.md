@@ -31,7 +31,7 @@ Command name must correspond to the name specified in Java annotation ` @Command
 Example
 =======
 
-``` xml
+```xml
 <label value="@load(vm.user.id)"/>
 
 <label value="@load(vm.user.permission, after='showPermission')"/>

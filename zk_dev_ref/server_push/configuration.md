@@ -44,7 +44,7 @@ implementation by the use of
 <javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)" type="interface">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
 For example,
 
-``` java
+```java
 ((DesktopCtrl)desktop).enableServerPush(
     new org.zkoss.zk.ui.impl.PollingServerPush(2000,5000,-1));
 ```
@@ -53,10 +53,10 @@ For example,
 
 If you would like to change the default server push for the whole
 application, you could use [the server-push-class
-element](ZK_Configuration_Reference/zk.xml/The_device-config_Element/The_server-push-class_Element)
+element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
 as follows.
 
-``` xml
+```xml
 <device-config>
     <device-type>ajax</device-type>
     <server-push-class>org.zkoss.zk.ui.impl.PollingServerPush</server-push-class>
@@ -99,10 +99,10 @@ milliseconds).
 - The larger the factor, the longer the delay tends to be.
 
 It could be configured in `WEB-INF/zk.xml` by use of [the preference
-element](ZK_Configuration_Reference/zk.xml/The_preference_Element)
+element]({{site.baseurl}}/zk_config_ref/the_preference_element)
 as follows.
 
-``` xml
+```xml
 <preference>
     <name>PollingServerPush.delay.min</name>
     <value>3000</value>
@@ -131,7 +131,7 @@ In additions, you could specify them in the constructor:
 <javadoc method="PollingServerPush(int, int, int)">org.zkoss.zk.ui.impl.PollingServerPush</javadoc>.
 For example,
 
-``` java
+```java
 ((DesktopCtrl)desktop).enableServerPush(
     new org.zkoss.zk.ui.impl.PollingServerPush(2000,10000,3));
 ```
@@ -149,10 +149,10 @@ its own configuration parameters such as retry delay, retry count, and
 ajax timeout.
 
 Configure these parameters by using [the preference
-element](ZK_Configuration_Reference/zk.xml/The_preference_Element)
+element]({{site.baseurl}}/zk_config_ref/the_preference_element)
 in your `WEB-INF/zk.xml` e.g.
 
-``` xml
+```xml
 <preference>
     <name>CometServerPush.retry.delay</name>
     <value>3000</value><!-- 3 seconds delay between each retry-->
@@ -191,11 +191,11 @@ it aborts. (unit: milliseconds).
 # Error Handling
 
 The configuration of the errors is handled by [the client-reload
-element](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_error-reload_Element),
+element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
 specified in `WEB-INF/zk.xml`. The markup below demonstrates an example
 of catching an error of the server push:
 
-``` xml
+```xml
 <error-reload>
     <device-type>ajax</device-type>
     <connection-type>server-push</connection-type>

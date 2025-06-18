@@ -9,7 +9,7 @@ to cleanup an event processing thread, after it has processed an event.
 > ------------------------------------------------------------------------
 >
 > Notice that it is useless unless [the event processing
-> threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
+> threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
 > are enabled (it is disabled by default).
 
 If a listener implements this interface, an instance is created, and

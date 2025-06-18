@@ -16,7 +16,7 @@ also means the DOM element's IDs will change from one test run to
 another.
 
 If your test code runs at the server (such
-[ZATS]({{site.baseurl}}/zk_dev_ref/Testing/ZATS) and JUnit), it
+[ZATS]({{site.baseurl}}/zk_dev_ref/testing/zats) and JUnit), it
 is not an issue at all (since DOM elements are available at the client
 only). However, if your test tool runs in a browser, you have to locate
 an element with one of the following approaches:
@@ -32,7 +32,7 @@ Let me explain them in detail.
 ## Approach 1: Locate by a component's ID
 
 With [Server+client
-architecture]({{site.baseurl}}/zk_dev_ref/Overture/Architecture_Overview),
+architecture]({{site.baseurl}}/zk_dev_ref/overture/architecture_overview),
 ZK maintains an *identical* world at the client. If your test tool is
 able to access JavaScript at the client, your test code can depend on a
 component's ID and its widget's parent-child relationship as your
@@ -61,7 +61,7 @@ widget tree
 <javadoc directory="jsdoc" method="nextSibling">zk.Widget</javadoc> and
 so on).
 
-``` javascript
+```javascript
 jq('@window[border="normal"]') //returns a list of window whose border is normal
 jq('$x'); //returns the widget whose component ID is x, <div id="x"/>
 jq('$x $y'); //returns the widget whose ID is y and it is in an ID space owned by x
@@ -73,7 +73,7 @@ since it can be retrieved from a widget's
 
 [ZTL](http://code.google.com/p/zk-ztl/) is a typical example that takes
 this approach. For more information, please refer to the [ZTL
-section]({{site.baseurl}}/zk_dev_ref/Testing/ZTL).
+section]({{site.baseurl}}/zk_dev_ref/testing/ztl).
 
 ## Approach 2: Use ID Generator for Fixed or Predictable UUIDs in Automated Testing
 
@@ -86,7 +86,7 @@ testing, to use
 <javadoc type="class">org.zkoss.zk.ui.impl.StaticIdGenerator</javadoc>,
 simply add it to zk.xml.
 
-``` xml
+```xml
 <system-config>
     <id-generator-class>org.zkoss.zk.ui.impl.StaticIdGenerator</id-generator-class>
 </system-config>
@@ -97,10 +97,10 @@ To implement a custom ID generator, you have to do the following:
 - Implement a Java class that implements
   <javadoc type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>.
 - Specify the Java class FQCN at
-  [id-generator-class](ZK_Configuration_Reference/zk.xml/The_system-config_Element)
+  [id-generator-class]({{site.baseurl}}/zk_config_ref/the_system-config_element)
   element in `zk.xml`. For example,
 
-``` xml
+```xml
 <system-config>
     <id-generator-class>my.IdGenerator</id-generator-class>
 </system-config>
@@ -122,7 +122,7 @@ environment (such as specifying ID generator for testing), you could put
 the configuration in a separate file, say,
 `WEB-INF/config/zk-testing.xml` with the following content.
 
-``` xml
+```xml
 <zk>
   <system-config>
     <id-generator-class>my.IdGenerator</id-generator-class>
@@ -139,7 +139,7 @@ arguments when starting the Web server.
 If you want to generate UUID with some conditions, you might also want
 to disable UUID recycling. ( It will reuse all the UUIDs from removed
 components.) You could set the properties
-[org.zkoss.zk.ui.uuidRecycle.disabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.uuidRecycle.disabled)
+[org.zkoss.zk.ui.uuidRecycle.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.uuidrecycle.disabled)
 in zk.xml.
 
 <!--

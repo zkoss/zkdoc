@@ -8,7 +8,7 @@ You have to configure the following setting for
 - According to JBoss' tutorial, it is required to add the following
   settings in `WEB-INF/web.xml` if you are doing clustering in JBoss.
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <web-app  xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -28,7 +28,7 @@ You have to configure the following setting for
 
 For example,
 
-``` xml
+```xml
 <jboss-web>
     <context-root>warFileName</context-root> <!-- context-root should be the same with war file name -->    
     <replication-config>

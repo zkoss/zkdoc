@@ -6,7 +6,7 @@
   [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)
 - Java API: <javadoc>org.zkoss.zul.Selectbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Selectbox</javadoc>
-- Style Guide: N/A
+
 
  {% include version-badge.html version=6.0.0 %}
 
@@ -19,9 +19,9 @@ server.
 
 # Example
 
-![](images/selectbox9.png)
+![](/zk_component_ref/images/selectbox9.png)
 
-``` xml
+```xml
 <zk>
     <zscript>
         <![CDATA[
@@ -39,7 +39,7 @@ server.
 To give the selectbox an initial value, for example, Tony, add the
 following code after the model is created:
 
-``` java
+```java
 model.addToSelection ("Tony");
 ```
 
@@ -47,7 +47,7 @@ model.addToSelection ("Tony");
 
 Here is the MVVM way:
 
-``` xml
+```xml
     <zscript><![CDATA[
     public class MyUserBean {
         private String[] userList = { "Tony", "Ryan", "Jumper", "Wing", "Sam" };
@@ -118,7 +118,7 @@ the user has selected a new item in the selectbox.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

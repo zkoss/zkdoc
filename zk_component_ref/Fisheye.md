@@ -6,8 +6,7 @@
   [Fisheye](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
 - Java API: <javadoc>org.zkoss.zkex.zul.Fisheye</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.menu.Fisheye</javadoc>
-- Style Guide: [
-  Fisheyebar](ZK_Style_Guide/XUL_Component_Specification/Fisheyebar)
+
 - [Available in ZK PE and EE
   only](http://www.zkoss.org/product/edition.dsp)
 
@@ -17,9 +16,9 @@ A fisheye item
 
 # Example
 
-![](images/ZKComRef_fisheyebar.png)
+![](/zk_component_ref/images/ZKComRef_fisheyebar.png)
 
-``` xml
+```xml
 <zk>
     <div height="450px">
         <checkbox label="Attach icon edge at bottom"
@@ -54,7 +53,7 @@ For example you can create an image using the Java2D libraries and then
 set the content of the fisheye to the created image, below is an example
 of how to do this.
 
-``` xml
+```xml
 <?page title="Auto Generated index.zul"?>
 <zk>
     <window title="test of autodisable">
@@ -87,7 +86,7 @@ of how to do this.
 # Inherited Functions
 
 Please refer to [
-LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement)
+LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -112,7 +111,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

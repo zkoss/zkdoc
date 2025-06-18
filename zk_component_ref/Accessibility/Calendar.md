@@ -39,7 +39,7 @@
 This is achieved by overriding the default renderer at the client to
 customize the aria-label of days on ZK's Calendar.
 
-``` xml
+```xml
 <zk>
     <script><![CDATA[
         zk.afterLoad('zul.db', function(){

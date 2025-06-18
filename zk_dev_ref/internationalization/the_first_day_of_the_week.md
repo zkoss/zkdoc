@@ -6,8 +6,8 @@ returned by the `getFirstDayOfWeek` method of the `java.util.Calendar`
 class.
 
 However, you can configure it differently, and it will affect how
-[datebox](ZK_Component_Reference/Input/Datebox) and
-[calendar](ZK_Component_Reference/Input/Calendar) components
+[datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
+[calendar]({{site.baseurl}}/zk_component_ref/input/calendar) components
 behave.
 
 # The decision sequence of the first day of the week
@@ -38,7 +38,7 @@ same application, you can specify it in the library property. The
 allowed values include 1 (Sunday), 2 (Monday), .. and 7 (Saturday). For
 example, you could specify the following in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.preferred.firstDayOfWeek</name>
     <value>7</value><!-- Saturday -->
@@ -53,7 +53,7 @@ and
 <javadoc method="PREFERRED_FIRST_DAY_OF_WEEK">org.zkoss.web.Attributes</javadoc>
 as follows.
 
-``` java
+```java
 webApp.setAttribute(org.zkoss.web.Attributes.PREFERRED_FIRST_DAY_OF_WEEK, java.util.Calendar.SATURDAY);
 ```
 
@@ -69,14 +69,14 @@ By specifying a value to the session attribute called
 you can control the first day of the week for the given session. The
 allowed values include Calendar.SUNDAY, Calendar.MONDAY and so on.
 
-``` java
+```java
 session.setAttribute(org.zkoss.web.Attributes.PREFERRED_FIRST_DAY_OF_WEEK, java.util.Calendar.SATURDAY);
   //then, the current session's first day of the week will be Saturday
 ```
 
 For example, you can do this when a user logins.
 
-``` java
+```java
  void login(String username, String password) {
      //check password
      ...

@@ -14,7 +14,7 @@ If the clients are far away from the server, you might override this
 class by encoding the URL of JavaScript and CSS files with a server
 nearby. Thus, it could shorten the time to load a page. For more
 information, please refer to [Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Load_JavaScript_and_CSS_from_Server_Nearby).
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/load_javascript_and_css_from_server_nearby).
 
 In a sophisticated environment, e.g., [Reverse
 Proxy](http://en.wikipedia.org/wiki/Reverse_proxy), the encoded URL

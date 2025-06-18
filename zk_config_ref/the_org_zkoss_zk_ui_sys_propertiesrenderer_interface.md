@@ -17,7 +17,7 @@ evaluated first, and the the application-specific one.
 For example, assume you have an implementation called `foo.MyRenderer`,
 then you could specify it in `WEB-INF/zk.xml`
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
 <listener>
     <listener-class>foo.MyRenderer</listener-class>
@@ -27,7 +27,7 @@ then you could specify it in `WEB-INF/zk.xml`
 And, assume you'd like to generate an extra property if the component is
 a datebox, you could do as follows.
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.sys.*;
 import org.zkoss.zk.ui.Component;

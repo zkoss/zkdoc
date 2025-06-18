@@ -24,13 +24,13 @@ for.
 
 ![](/zk_component_ref/images/qrcode.png)
 
-``` xml
+```xml
  <barcode type="qr" value="https://www.zkoss.org/" height="100px"/>
 ```
 
 ![](/zk_component_ref/images/code128.png)
 
-``` xml
+```xml
  <barcode type="code128" value="https://www.zkoss.org/" height="100px"/>
 ```
 
@@ -40,7 +40,7 @@ The Barcode has 18 types for 1D and 1 type for 2D by default. After
 choosing the type of barcode, and you can render the barcode as the type
 you choose.
 
-``` xml
+```xml
  <barcode type="qr"/>
 ```
 
@@ -51,7 +51,7 @@ Barcode Type (Default).
 
 value is a string attribute that barcode component want to render.
 
-``` xml
+```xml
  <barcode type="qr" value="https://www.zkoss.org"/>
 ```
 
@@ -61,7 +61,7 @@ Note: Some of the type only support a specific format of value.
 
 Height is a string attribute to define the height of barcode component.
 
-``` xml
+```xml
  <barcode type="qr" value="https://www.zkoss.org" height="100px"/>
 ```
 
@@ -76,7 +76,7 @@ Note:
 The displayValue is the boolean attribute to decide whether the show the
 value under the barcode or not.
 
-``` xml
+```xml
  <barcode type="code128" displayValue="true"/>
 ```
 
@@ -89,7 +89,7 @@ Default: `10`
 It's an integer attribute that decides the text font size under the 1D
 barcode.
 
-``` xml
+```xml
  <barcode type="code128" fonSize="20"/>
 ```
 
@@ -100,7 +100,7 @@ Note: This attribute is only implement for 1D format.
 The barWidth is a integer attribute that deciding the single bar width
 of barcode image.
 
-``` xml
+```xml
  <barcode type="code128" barWidth="2"/>
 ```
 
@@ -119,7 +119,7 @@ register the library as the
 
 below.
 
-``` xml
+```xml
 <?script src="mybarcodeLibrary.js"?>
 <script>
     ...
@@ -143,7 +143,7 @@ source file at WEB-INF/lang-addon.xml.
 
 myRegister.js
 
-``` xml
+```xml
     zk.afterLoad('zkmax.barcode', function () {
         zkmax.barcode.Barcode.registerLibrary(function mybarcode(wgt) {
             ...
@@ -154,7 +154,7 @@ myRegister.js
 
 WEB-INF/lang-addon.xml
 
-``` xml
+```xml
     <javascript src="mybarcodeLibrary.js">
     <javascript src="myRegister.js">
 ```

@@ -4,7 +4,7 @@ The current item of the collection being iterated, when ZK evaluates an
 iterative element. An iterative element is an element with the forEach
 attribute.
 
-``` xml
+```xml
 <listbox width="100px">
     <listitem label="${each}" forEach="${contacts}" />
 </listbox>
@@ -16,7 +16,7 @@ To retrieve the index of the iteration, or the previous `each` object in
 nested forEach, you have to use another implicit object called
 [forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus).
 
-``` xml
+```xml
 <listbox forEach="${matrix}">
     <listitem label="${forEachStatus.previous.each.label}: ${each}" forEach=${each.items}/> <!-- nested-->
 </listbox>
@@ -26,7 +26,7 @@ nested forEach, you have to use another implicit object called
 
 You could access the `each` object directly in zscript such as:
 
-``` xml
+```xml
 <window>
     <button label="${each}" forEach="apple, orange">
         <zscript>
@@ -39,7 +39,7 @@ You could access the `each` object directly in zscript such as:
 The `each` object is actually stored in the parent component's
 attribute, so you could retrieve it in pure Java as follows.
 
-``` java
+```java
 public class Foo implements Composer {
     public void doAfterCompose(Component comp) throws Exception {
         Object each = comp.getParent().getAttribute("each"); //retrieve the each object
@@ -57,6 +57,6 @@ However, the value of `each` is reset after the XML element that
 `forEach` is associated has been evaluated. Thus, you cannot access it
 in an event listener, unless you store the value first. For more
 information, please refer to [ZK Developer's Reference: Iterative
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation).
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
 
 

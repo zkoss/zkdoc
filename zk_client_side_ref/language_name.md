@@ -12,7 +12,7 @@ the whole system.
 
 Example,
 
-``` xml
+```xml
 <language-name>xul/html</language-name>
 ```
 

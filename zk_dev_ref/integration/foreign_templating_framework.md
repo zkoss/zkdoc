@@ -6,11 +6,11 @@ framework[^1].
 
 You could skip this chapter if you'd like to use ZK's templating
 technology, such as [Templating:
-composition]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating/Composition),
+composition]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/composition),
 [Servlet's
-inclusion]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
+inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 (javax.servlet.RequestDispatcher's include) and [macro
-components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component).
+components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
 
 ZK also supports many powerful layout components, such as portallayout,
 borderlayout, tablelayout, columnlayout and so on[^2]. You could use
@@ -27,7 +27,7 @@ them to have similar or better effect, and skip this chapter.
 To use ZK components correctly, the templating page must specify DOCTYPE
 as follows.
 
-``` html
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -40,7 +40,7 @@ as follows.
 Though optional, it is suggested to disable the browser to cache the
 result page. It can be done as follows.
 
-``` xml
+```xml
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Pragma" content="no-cache" />
@@ -60,7 +60,7 @@ if a ZUL page is included by `jsp:include`, then it won't generate
 HTML/HEAD/BODY, such that the following JSP page will be rendered
 correctly.
 
-``` xml
+```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%-- a JSP page --%>
@@ -87,7 +87,7 @@ HEAD and BODY tags. To disable it, you could specify a special parameter
 called `zk.redrawCtrl=page`. For example, you might have a HTML page
 that loads a ZUL page at the client with jQuery as follows.
 
-``` xml
+```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
@@ -118,7 +118,7 @@ or not.
 
 For example,
 
-``` xml
+```xml
 <window title="whatever content you want"/>
   <custom-attributes scope="request" org.zkoss.zk.ui.page.redrawCtrl="page"/>
   ...
@@ -136,13 +136,13 @@ anything described above).
 ### Server-side memory optimization: turn off browser cache
 
 As described in [Use ZK in
-JSP]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP#Browser_Cache),
+JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#Browser_Cache),
 the memory footprint at the server can be improved by turning off the
 browser cache for the HTML page that will load ZUL pages later. For
 example, we could add `no-cache` and `expires` as follows (line 4 and
 5):
 
-``` xml
+```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
@@ -162,7 +162,7 @@ example, we could add `no-cache` and `expires` as follows (line 4 and
 In addition, we have to specify a request-scoped attribute called
 `org.zkoss.zk.desktop.nocache` in the ZUL page being loaded as follows:
 
-``` xml
+```xml
 <window title="whatever content you want"/>
   <custom-attributes scope="request" org.zkoss.zk.desktop.nocache="true"
     org.zkoss.zk.ui.page.redrawCtrl="page"/>
@@ -201,7 +201,7 @@ If a ZUL page is loaded separately with Ajax, an independent desktop is
 created. For example, the following HTML page will create three
 desktops.
 
-``` xml
+```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -253,7 +253,7 @@ Since they are in different desktops, you have to use the *group-scoped*
 event queue[^5] if you want to send events from one desktop (such as
 leftside.zul) to another (such as rightside.zul). For more information,
 please refer to [Event
-Queues](ZK_Developer%27s_Reference/Event_Handling/Event_Queues).
+Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
 
 > ------------------------------------------------------------------------
 >
@@ -273,7 +273,7 @@ Queues](ZK_Developer%27s_Reference/Event_Handling/Event_Queues).
     Reference](ZK_Component_Reference).
 
 [^3]: You might take a look at [Use ZK in
-    JSP]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP)
+    JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
     for more information.
 
 [^4]: In short, component's UUID must be unquie in the same session. It

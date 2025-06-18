@@ -12,7 +12,7 @@ below.
 
 **ZUL of our simple application**
 
-``` xml
+```xml
 
 <zk>
     <window title="hello" border="normal" width="300px" apply="org.zkoss.zats.example.hello.HelloComposer">
@@ -24,7 +24,7 @@ below.
 
 **Composer of our simple application**
 
-``` java
+```java
 
 public class HelloComposer extends SelectorComposer {
     
@@ -72,7 +72,7 @@ to retrieve `ComponentAgent` with selector syntax.
 For available selector syntax, please refer to <javadoc>
 org.zkoss.zk.ui.select.SelectorComposer </javadoc> or [Small
 Talks/2011/January/Envisage ZK 6: An Annotation Based Composer For
-MVC](Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC)
+MVC](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC)
 
 <javadoc directory="zats">org.zkoss.zats.mimic.ComponentAgent </javadoc>  
 Mimics a ZK component and determines which operation you can perform on

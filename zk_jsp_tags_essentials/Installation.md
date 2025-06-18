@@ -21,7 +21,7 @@ easily by simply adding a dependency[^1]
 
 For projects depending on ZK **5.0.x**, add the following dependency:
 
-``` xml
+```xml
 
 <dependency>
     <groupId>org.zkoss.zk</groupId>
@@ -32,7 +32,7 @@ For projects depending on ZK **5.0.x**, add the following dependency:
 
 For projects depending on ZK **6.5.x**, add the following dependency:
 
-``` xml
+```xml
 
 <dependency>
     <groupId>org.zkoss.zk</groupId>
@@ -41,14 +41,14 @@ For projects depending on ZK **6.5.x**, add the following dependency:
 </dependency>
 ```
 
-If you didn't setup zk maven repository yet, you have to [ setup zk maven repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository) too.
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) too.
 
 # Configuration of Direct ZK Context EL Support in web.xml
 
 In JSP page, you may want to use EL to access ZK Component's property,
 for example:
 
-``` xml
+```xml
 <z:window id="myWin" use="org.zkoss.jspdemo.MyWindow" myValue="special value of MyWindow">
     <ol>
         <c:forEach var="bean" items="${myWin.beans}">
@@ -62,7 +62,7 @@ for example:
 In order to support this, You have to add an additional setting in
 web.xml:
 
-``` xml
+```xml
 <listener>
     <description>ZK JSP Tags environment initiation </description>
     <display-name>ZK JSP Initiator</display-name>

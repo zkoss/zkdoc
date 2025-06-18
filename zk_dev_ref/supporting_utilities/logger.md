@@ -7,7 +7,7 @@ operates internally.
 Notice that, if you are using Google App Engine, you can *not* configure
 the logging as described in this chapter. For more information, please
 refer to [Setting up Google App
-Engine](ZK_Installation_Guide/Setting_up_Servers/Google_App_Engine).
+Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine).
 
 # How to Configure Logging
 
@@ -21,7 +21,7 @@ implementation as its default logging.[^1] If developers want to change
 that implementation for **Log4j**, **Simple**, or **Logback**, they have
 to exclude the dependency first like:
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.common</groupId>
     <artifactId>zcommon</artifactId>
@@ -42,7 +42,7 @@ developer decides to enable logging, include either **Log4j**,
 **Simple**, or **Logback** implementation in their maven pom.xml file,
 e.g.
 
-``` xml
+```xml
 <dependency> 
     <groupId>ch.qos.logback</groupId>
     <artifactId>logback-classic</artifactId>
@@ -77,13 +77,13 @@ Use SLF4J API for logging instead.
 standard properties file. Each line is a key-value pair in the following
 format:
 
-``` xml
+```xml
 ''a.package.or.a.class'' = ''level''
 ```
 
 Here is an example of a configuration file.
 
-``` xml
+```xml
  org.zkoss.zk.ui.impl.UiEngineImpl=FINER
     #Make the log level of the specified class to FINER
  org.zkoss.zk.ui.http=DEBUG
@@ -171,7 +171,7 @@ you can turn on the `java.util.logging.ConsoleHandler` to write the logs
 to the console by adding the following lines to the logging
 configuration file:
 
-``` xml
+```xml
 handlers = java.util.logging.ConsoleHandler
 
 java.util.logging.ConsoleHandler.level = FINER
@@ -181,7 +181,7 @@ java.util.logging.ConsoleHandler.formatter = java.util.logging.SimpleFormatter
 Here is another example that configures the console and a file to be the
 target of the logs:
 
-``` xml
+```xml
 handlers = java.util.logging.FileHandler, java.util.logging.ConsoleHandler
 
 java.util.logging.ConsoleHandler.level = FINER
@@ -203,10 +203,10 @@ Use SLF4J API for logging instead.
 
 {% include DeprecatedSince.md version=7.0.0 %} To let ZK load the logging
 configuration file, you have to specify in a library property called
-[org.zkoss.util.logging.config.file](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.logging.config.file).
+[org.zkoss.util.logging.config.file]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.logging.config.file).
 For example,
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.util.logging.config.file</name>
     <value>conf/zk-log.properties</value>
@@ -231,7 +231,7 @@ Rather, you can configure
 <javadoc>org.zkoss.zk.ui.http.DHtmlLayoutServlet</javadoc> in
 `WEB-INF/web.xml` as follows.
 
-``` xml
+```xml
 <servlet>
     <servlet-name>zkLoader</servlet-name>
     <servlet-class>org.zkoss.zk.ui.http.DHtmlLayoutServlet</servlet-class>
@@ -243,7 +243,7 @@ Rather, you can configure
 ```
 
 For more information, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/web.xml/ZK_Loader).
+Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader).
 
 # How to Log
 
@@ -265,7 +265,7 @@ The logger used by ZK is based on the standard logger,
 
 The typical use is as follows.
 
-``` java
+```java
  import org.zkoss.util.logging.Log;
  class MyClass {
      private static final Log log = Log.lookup(MyClass.class);

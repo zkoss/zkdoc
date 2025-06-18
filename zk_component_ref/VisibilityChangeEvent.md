@@ -20,7 +20,7 @@ visibility](http://www.w3.org/TR/page-visibility/).
 
 ## Basic
 
-``` xml
+```xml
 <window title="window" border="normal">
     <attribute name="onVisibilityChange">
         if (!event.isHidden())

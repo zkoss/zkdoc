@@ -11,7 +11,7 @@ because each `Series` can be rendered as different chart types.
 You don't need to instantiate `Series` by yourselves, just call
 `getSeries(index)` and its underlying implementation creates for you:
 
-``` java
+```java
 Charts chart;
 ...
 Series series0 = chart.getSeries(0);
@@ -30,7 +30,7 @@ Here is a simple example.
 
 [SeriesComposer.java](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/java/org/zkoss/zkcharts/essentials/SeriesComposer.java)
 
-``` java
+```java
 public class SeriesComposer extends SelectorComposer<Window> {
 
     @Wire
@@ -61,7 +61,7 @@ public class SeriesComposer extends SelectorComposer<Window> {
 
 # Clear/Remove Series
 
-``` java
+```java
     @Listen("onClick = #clear")
     public void clear(){
         int seriesSize = chart.getSeriesSize();

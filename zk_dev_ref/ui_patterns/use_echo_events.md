@@ -12,7 +12,7 @@ The better approach is to send back some busy messages to let the user
 know what happens during processing the long operation. It can be done
 easily with event echoing. If you prefer to allow the user to keep
 accessing other functions, please refer to the [Use Event
-Queues]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues)
+Queues]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
 section, which is powerful but more sophisticated to implement.
 
 Event echoing for a long operation basically takes three steps
@@ -23,7 +23,7 @@ Event echoing for a long operation basically takes three steps
     function
     - Of course, you could have any effect you like, such as showing [a
       modal
-      window](ZK_Component_Reference/Containers/Window).
+      window]({{site.baseurl}}/zk_component_ref/containers/window).
       <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
       is yet a built-in approach for showing the busy message.
 2.  Invoke
@@ -37,7 +37,7 @@ Event echoing for a long operation basically takes three steps
 For example, assume the long operation is called `doLongOperation`,
 then:
 
-``` xml
+```xml
 <window id="w" width="200px" title="Test echoEvent" border="normal">
   <attribute name="onLater">
   doLongOperation(); //take long to execute
@@ -61,7 +61,7 @@ user can be further improved by the use of
 <javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Button</javadoc>.
 For example,
 
-``` xml
+```xml
   <button label="Echo Event" autodisable="self">
 ...
 ```

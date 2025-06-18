@@ -1,6 +1,6 @@
 The default method:
 
-``` java
+```java
 String formatNumber(Object number, String pattern);
 ```
 
@@ -13,7 +13,7 @@ pattern.
 
 For example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <zk>
     <label value="${c:formatNumber(2332315231, '$ ###,###,###.00')}" />
@@ -24,7 +24,7 @@ There is another extended built-in function, not declared in taglib:
 <javadoc method="formatNumber(java.lang.Object, java.lang.String, java.util.Locale)">org.zkoss.xel.fn.CommonFns</javadoc>.
 
 You can call it by [
-EL](ZUML%20Reference/EL%20Expressions/Static%20Fields%20and%20Methods)
+EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
 or declaring a [
 xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 

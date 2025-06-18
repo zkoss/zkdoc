@@ -53,7 +53,7 @@ Providing sufficient information helps us support you more efficiently.
 7.  If it is hard to create a sample, you can provide an URL so that the
     support team can access it. When providing this URL, remember to
     [turn on the js
-    debug](https://www.zkoss.org/wiki/ZK%20Configuration%20Reference/zk.xml/The%20client-config%20Element/The%20debug-js%20Element)
+    debug]({{site.baseurl}}/zk_config_ref/the_client_config_element/the_debug_js_element)
     in your zk.xml.
 8.  Application servers (e.g. JBoss 6, if it's necessary).
 9.  If your case happens only in your specific environment, it is
@@ -137,12 +137,12 @@ how you can include the js file for different scopes.
 ## Page-Scope
 
 - Use the script directive
-  \[\[ZUML%20Reference/ZUML/Processing%20Instructions/script \|
+  \[\[ZUML_Reference/ZUML/Processing_Instructions/script \|
   <?script?>
 
   \]\]
 - Use the script component
-  \[\[ZK%20Component%20Reference/Essential%20Components/Script \|
+  \[\[ZK_component_reference/essential_components/Script \|
   <script>
 
   \]\]
@@ -155,10 +155,10 @@ If you need to include a javascript file on every zul, there are 2 ways:
 
 Create a `lang-addon.xml` according to [ ZK Client-side
 Reference/Language
-Definition#Language_Addon](ZK_Client-side_Reference/Language_Definition#Language_Addon)
+Definition#Language_Addon]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
 and include the javascript file with <javascript>. For example:
 
-``` xml
+```xml
 <language-addon>
     <addon-name>patch-addon</addon-name><!-- give a meaningful name -->
     <language-name>xul/html</language-name>
@@ -170,7 +170,7 @@ and include the javascript file with <javascript>. For example:
 
 - Line 4: see the next section
 - Line 5: a path starting with `~./` is a [ classpath web resource
-  path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path)
+  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
   which is a special path supported by ZK
 - Line 6: You can also link a file under your web application context
   root
@@ -199,7 +199,7 @@ specify the corresponding addon name. For example:
 <depends>`za11y`</depends>
 
 === Use
-\[\[ZK_Configuration_Reference/zk.xml/The_device-config_Element/The_embed_Element
+\[\[{{site.baseurl}}/zk_config_ref/the_device-config_element/the_embed_element
 \|
 
 <embed>
@@ -253,7 +253,7 @@ the zul. ![ center](listFolder.png " center")
 
 If you are running into a performance issue, you can first check out
 [Step by Step Trouble
-Shooting](https://www.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Monitoring/Step_by_Step_Trouble_Shooting)
+Shooting]({{site.baseurl}}/zk_dev_ref/performance_monitoring/step_by_step_trouble_shooting)
 and do a first step analysis using browser's developer tools.
 
 ## [By Chrome developer tool](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance)

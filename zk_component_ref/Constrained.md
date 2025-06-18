@@ -9,7 +9,7 @@
 # Employment/Purpose
 
 Decorates a component that its value is constrained by [
-Constraint]({{site.baseurl}}/zk_component_ref/Supporting_Classes/Constraint).
+Constraint]({{site.baseurl}}/zk_component_ref/supporting_classes/constraint).
 
 # Example
 

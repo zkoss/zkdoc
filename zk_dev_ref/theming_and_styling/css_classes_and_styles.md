@@ -34,13 +34,13 @@ information about how individual component is styled, please refer to
 
 Specifying the style is straightforward:
 
-``` xml
+```xml
 <textbox style="color: red; font-style: oblique;"/>
 ```
 
 or, in Java:
 
-``` xml
+```xml
 Textbox tb = new Textbox();
 tb.setStyle("color: red; font-style: oblique;");
 ```
@@ -51,7 +51,7 @@ In addition, you could specify the style class by use of
 <javadoc method="setSclass(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>,
 such that you could apply the same CSS style to multiple components.
 
-``` xml
+```xml
 <window>
     <style>
         .red {
@@ -67,7 +67,7 @@ such that you could apply the same CSS style to multiple components.
 You could apply multiple style classes too. As shown below, just
 separate them with a space.
 
-``` xml
+```xml
 <textbox sclass="red error"/>
 ```
 
@@ -83,19 +83,19 @@ Rule of thumb: specify zclass if you want to customize the look
 completely. Otherwise, use sclass to customize one or a few CSS styles.
 
 For more information, please refer to [ZK Style
-Guide](ZK_Style_Guide/ZK_Class_Concept/Zclass).
+Guide]({{site.baseurl}}/zk_style_customization_guide/zk_class_concept/zclass).
 
 # content style and sclass
 
 Some container components such as
-[window](ZK_Component_Reference/Containers/Window),
-[groupbox](ZK_Component_Reference/Containers/Groupbox),
-[detail](ZK_Component_Reference/Data/Grid/Detail) have a
+[window]({{site.baseurl}}/zk_component_ref/containers/window),
+[groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox),
+[detail]({{site.baseurl}}/zk_component_ref/data/grid/detail) have a
 content block, you have to use `contentStyle` to set its style.
 
 For example,
 
-``` xml
+```xml
 <window title="below is content"  contentStyle="background:yellow">
     Hello, World!    
 </window>
@@ -105,7 +105,7 @@ For example,
 
 A typical use of contentStyle is to make a window scrollable as follows.
 
-``` xml
+```xml
 <window title="Scroll Example" width="150px" height="100px" contentStyle="overflow:auto" >
 This is a long line to spread over several lines, and more content to display.
 Finally, the scrollbar becomes visible.

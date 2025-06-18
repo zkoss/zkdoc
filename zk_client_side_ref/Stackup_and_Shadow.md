@@ -7,7 +7,7 @@ z-index issue when a page contains, say, a PDF iframe.
 For example, the following codes will cause the menupopup obscured by
 the iframe.
 
-``` xml
+```xml
 <zk>
 <menubar >
     <menu label="test">
@@ -33,7 +33,7 @@ default, so the menupopup is obscured by the iframe as shown below.
 To resolve this, you could specify `'auto'`[^1] to `zk.useStackup` as
 follows.
 
-``` xml
+```xml
 <?script content="zk.useStackup='auto'"?>
 <zk>
 <menubar >
@@ -44,7 +44,7 @@ follows.
 In addition, you have to specify `true` to the `autohide` property of
 the `iframe` component as following.
 
-``` xml
+```xml
 <iframe style="background-color:transparent" src="/test2/B1896797.pdf" 
 autohide="true"/>
 ```
@@ -89,7 +89,7 @@ Firefox has a problem to show a PDF iframe if two or more iframes are
 overlapped. In other words, we have to apply the `autohide` technique
 instead of the `stackup` technique. For example,
 
-``` xml
+```xml
 <?script content="zk.useStackup = 'auto/gecko';"?>
 <zk>
 <window title="iframe/pdf" border="normal" width="500px" mode="overlapped">

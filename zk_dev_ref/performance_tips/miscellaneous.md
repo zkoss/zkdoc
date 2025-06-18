@@ -10,7 +10,7 @@ of buttons (with `trendy`) in the same page.
 
 The default mold can be changed easily. For example,
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.Button.mold</name>
     <value>trendy</value>
@@ -18,7 +18,7 @@ The default mold can be changed easily. For example,
 ```
 
 Refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_Library_Properties/class.mold)
+Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/class.mold)
 for more information.
 
 # Prolong the Period to Check Whether a File Is Modified
@@ -29,7 +29,7 @@ you can prolong the period to check whether a page is modified by
 specifying `file-check-period` in `WEB-INF/zk.xml` as shown below. By
 default, it is 5 seconds.
 
-``` xml
+```xml
 <desktop-config>
     <file-check-period>600</file-check-period><!-- unit: seconds -->
 </desktop-config>

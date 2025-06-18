@@ -6,7 +6,7 @@
 > generate the URLs of JavaScript and CSS (and images it refers) from
 > the server near the clients.
 
-![]({{site.baseurl}}/zk_dev_ref/images/URLEncoder.png)
+![]({{site.baseurl}}/zk_dev_ref/images/urlencoder.png)
 
 <span style="font-weight: bold;color:red;" >\*Notice :</span> the ZK
 static resource server is an application server which you <b>deploy only
@@ -20,14 +20,14 @@ official ZK library to</b>, not your whole application.
     <span style="color:green;font-style:italic;">zk.xml</span>
       
     Document : [ZK Configuration Reference/zk.xml/The Library
-    Properties/org.zkoss.web.servlet.http.URLEncoder](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.servlet.http.URLEncoder).
+    Properties/org.zkoss.web.servlet.http.URLEncoder]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.servlet.http.urlencoder).
 3.  Host ZK static resource server
 
 Following is a sample :
 
 ## Configuration
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.servlet.http.URLEncoder</name>
     <value>org.zkoss.test.TestEncoder</value> <!-- Where the Implementation Class is -->
@@ -36,7 +36,7 @@ Following is a sample :
 
 ## Implementation
 
-``` java
+```java
 package org.zkoss.test;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletRequest;

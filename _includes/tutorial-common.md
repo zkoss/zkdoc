@@ -5,7 +5,7 @@ Our target application is a simple car catalog application. This application has
 - **View details.**
   - Click an item from the car list, the area below the car list will show the selected car's details including model, price, description, and preview.
 
-![]({{site.baseurl}}/get_started/images/Tutorial-searchexample.png)
+![]({{site.baseurl}}/get_started/images/tutorial-searchexample.png)
 
 
 # Start from Example Project
@@ -14,13 +14,13 @@ You can get [the source code of this article](https://github.com/zkoss-demo/gett
 your IDE without starting from scratch. Please follow the README to run
 the project.
 
-If you want to start a new project, please refer to [ZK Installation Guide/Quick Start](/{{site.baseurl}}/zk_installation_guide/Quick_Start).
+If you want to start a new project, please refer to [ZK Installation Guide/Quick Start](/{{site.baseurl}}/zk_installation_guide/quick_start).
 
 # Declaring Domain Class
 
 The following is the domain object that represents a car.
 
-``` java
+```java
 
 public class Car {
     private Integer id;
@@ -36,7 +36,7 @@ public class Car {
 We then define a service class to perform the business logic (search
 cars) shown below:
 
-``` java
+```java
 public interface CarService {
 
     /**
@@ -103,7 +103,7 @@ the <window> (from top to bottom):
 2.  car list
 3.  car details.
 
-![]({{site.baseurl}}/get_started/images/Tutorial-ui-3areas.png)
+![]({{site.baseurl}}/get_started/images/tutorial-ui-3areas.png)
 
 ## Search Area
 
@@ -125,7 +125,7 @@ Keyword:
 - Line 1~2: Specifying the `id` attribute for some components allows you
   to control them by referencing their *id*.
 - Line 3: You can use built-in Font Awesome icon at `iconSclass`. Please
-  refer to [LabelImageElement#IconSclass](/{{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#IconSclass )
+  refer to [LabelImageElement#IconSclass](/{{site.baseurl}}/zk_component_ref/base_components/labelimageelement#IconSclass )
   for details.
 
 ## Car List Area
@@ -140,7 +140,7 @@ with a collection of data.
 **Extracted from
 [search.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/search.zul)**
 
-``` xml
+```xml
 <listbox id="carListbox" emptyMessage="No car found in the result" rows="5">
     <listhead>
         <listheader label="Model" />

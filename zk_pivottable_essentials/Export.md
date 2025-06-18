@@ -9,7 +9,7 @@ For example,
 
 ## XLS Format
 
-``` java
+```java
 ByteArrayOutputStream out = new ByteArrayOutputStream();
 PivotExportContext context = Exports.getExportContext(pivot, false, null);
 Exports.exportExcel(out, "xls", context, null); // writes Pivottable information to the output stream
@@ -27,7 +27,7 @@ It needs extra jar files including
 - ooxml-schemas-1.1.jar
 - xmlbeans-2.3.0.jar
 
-``` java
+```java
 ByteArrayOutputStream out = new ByteArrayOutputStream();
 PivotExportContext context = Exports.getExportContext(pivot, false, null);
 Exports.exportExcel(out, "xlsx", context, null); // writes Pivottable information to the output stream
@@ -44,7 +44,7 @@ You can specify custom styles by passing a
 <javadoc directory="zkpvt">org.zkoss.pivot.util.poi.CellStyleConfigurator</javadoc>.
 For example,
 
-``` java
+```java
 Exports.exportExcel(out, "xls", context, new CellStyleConfigurator() {
     public void config(PivotExportCell.Type type, Cell cell, StyleFactory styleFactory) {
         switch (type) {
@@ -66,7 +66,7 @@ a table/sheet data structure. You can construct it from a Pivottable, or
 from a PivotModel and a PivotRenderer (so you don't need a component
 instance).
 
-``` java
+```java
 // construct from a Pivottable
 PivotExportContext context = Exports.getExportContext(pivot, open, titles); 
 
@@ -81,7 +81,7 @@ There are two additional parameters in the API:
   model itself it not changed.
 - String\[\] titles: The text in the title cells (data title, column
   title, row title, respectively). See [ title cells
-  definition](ZK_Pivottable_Essentials/Quick_Start/Concept#Trivia).
+  definition]({{site.baseurl}}/zk_pivottable_essentials/quick_start/concept#Trivia).
 
  
 
@@ -89,7 +89,7 @@ There are two additional parameters in the API:
 
 You can also export to CSV format in a similar manner. For example,
 
-``` java
+```java
 ByteArrayOutputStream out = new ByteArrayOutputStream();
 PivotExportContext context = Exports.getExportContext(pivot, true, TITLES);
 Exports.exportCSV(out, context);

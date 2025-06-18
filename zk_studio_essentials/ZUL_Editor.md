@@ -170,13 +170,13 @@ In the ZUL Editor, you can navigate to the Java class specified in
 **use="**ClassName**"** and **apply="**ClassName**"** attributes using
 Hyperlink Navigation.
 
-![](studio-hyperlink.png) ![ center \|
+![](images/studio-hyperlink.png) ![ center \|
 700px](studio-hyperlink-class.png " center | 700px")
 
 (For this to work you need to set a source file for that class. If the
 class is within a JAR File which does not have a corresponding source
 file, please refer to [ Add Source Code and Javadoc Resource to JAR
-File](ZK_Studio_Essentials/Eclipse_Tips#Add_Source_Code_and_Javadoc_Resource_to_JAR_File)
+File]({{site.baseurl}}/zk_studio_essentials/eclipse_tips#Add_Source_Code_and_Javadoc_Resource_to_JAR_File)
 for more information on how to do this.)
 
 ## Zscript Hyperlinks
@@ -205,6 +205,6 @@ then follow the above instruction.
 You can use a keyboard shortcut to accomplish this task, the default
 source format keyboard shortcut is **'Ctrl + Shift + F**. You can
 reconfigure the keyboard shortcut as described in [Configure Keyboard
-Shortcuts](ZK_Studio_Essentials/Eclipse_Tips#Configure_Keyboard_Shortcuts).
+Shortcuts]({{site.baseurl}}/zk_studio_essentials/eclipse_tips#Configure_Keyboard_Shortcuts).
 
 ![](images/sourceFormat.png)

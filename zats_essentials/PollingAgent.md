@@ -33,7 +33,7 @@ update the component attributes after an user triggering a long server
 operation. We will need `PollingAgent` to simulate sending the dummy
 client polling request and wait server to complete its long operation.
 
-``` java
+```java
 @Test
 public void test() throws Exception {
         DesktopAgent desktop = Zats.newClient().connect("/long.zul");

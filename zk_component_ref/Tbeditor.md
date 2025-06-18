@@ -27,9 +27,9 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 
 # Example
 
-![](images/Zkcompref_tbeditor.png )
+![](/zk_component_ref/images/Zkcompref_tbeditor.png )
 
-``` xml
+```xml
 <tbeditor id="tb" value="this is a demo for &lt;b&gt;trumbowy&lt;/b&gt; editor!!" />
 ```
 
@@ -43,7 +43,7 @@ and custom skin, are not supported.)
 
 Here is a simple example of how to programmatic change the property:
 
-``` java
+```java
 Map config = new HashMap();
 config.put("btns", new String[] {"bold", "italic", "link"});
 config.put("closable", true);

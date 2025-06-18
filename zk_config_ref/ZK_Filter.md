@@ -61,7 +61,7 @@ included by other Servlets.</p></td>
 ZK Filter can be mapped to any servlet or JSP page you want. For
 example,
 
-``` xml
+```xml
     <filter>
         <filter-name>zkFilter</filter-name>
         <filter-class>org.zkoss.zk.ui.http.DHtmlLayoutFilter</filter-class>

@@ -74,7 +74,7 @@ Setting up the environment:
 Also, please make sure the ZK Application is configured to process
 \*.css.dsp by the following configuration in **WEB-INF/web.xml**.
 
-``` xml
+```xml
 <servlet>
     <servlet-name>dspLoader</servlet-name>
     <servlet-class>org.zkoss.web.servlet.dsp.InterpreterServlet</servlet-class>
@@ -98,7 +98,7 @@ registration could be done in the initialization code of the view model.
 
 For example,
 
-``` java
+```java
 ...
 import org.zkoss.zul.theme.Themes;
 import org.zkoss.web.theme.StandardTheme.ThemeOrigin;
@@ -117,7 +117,7 @@ public class MainViewModel {
 
 Now, the component style modifications shall begin. Please refer to this
 [
-smalltalk](Small_Talks/2013/January/Packaging_Themes_Inside_Folders_in_ZK_6.5.2)
+smalltalk](https://www.zkoss.org/wiki/Small_Talks/2013/January/Packaging_Themes_Inside_Folders_in_ZK_6.5.2)
 for a more detailed example on doing this. Here would just summarize the
 steps.
 
@@ -134,7 +134,7 @@ path resolution. For example, to refer to
 **zul/img/input/combo-btn.png** under the **dark** theme folder, use the
 following syntax.
 
-``` css
+```css
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 ...
 .z-combobox {
@@ -147,7 +147,7 @@ root (e.g. /theme/dark/).
 
 After all this has been done, the components should have their views
 customized. Please refer to this
-[article]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Understanding_the_Theming_Subsystem/Switching_Themes)
+[article]({{site.baseurl}}/zk_dev_ref/theming_and_styling/understanding_the_theming_subsystem/switching_themes)
 
 </ref>
 
@@ -166,7 +166,7 @@ its theme name must be prefixed with **"tablet:"'' before making
 registration. For example, to notify the web application that**dark'''
 theme is tablet-capable, please use the following code snippet.
 
-``` java
+```java
 Themes.register("tablet:dark", ThemeOrigin.FOLDER);
 ```
 
@@ -209,7 +209,7 @@ configuration setting in **WEB-INF/zk.xml**. Please note that the value
 for the theme root folder cannot have leading and trailing forward
 slashes.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.theme.folder.root</name>
     <value>view/themes</value>
@@ -231,7 +231,7 @@ the folder accordingly.
 Before the folder-based theme can be used, it must be registered first.
 The relevant code is as follows.
 
-``` java
+```java
 Themes.register("darkstar", ThemeOrigin.FOLDER);
 // For ZK EE, also make customized tablet theme available
 if ("EE".equals(WebApps.getEdition()))
@@ -246,7 +246,7 @@ implementing the
 [WebAppInit](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)
 interface and place the above code inside the init() function.
 
-``` java
+```java
 public class DarkstarThemeWebAppInit implements WebAppInit {
     public void init(WebApp webapp) throws Exception {
         Themes.register("darkstar", ThemeOrigin.FOLDER);
@@ -260,7 +260,7 @@ public class DarkstarThemeWebAppInit implements WebAppInit {
 The configuration file **WEB-INF/zk.xml** must also include the
 following configuration item.
 
-``` xml
+```xml
 <listener>
     <listener-class>DarkstarThemeWebAppInit</listener-class>
 </listener>
@@ -278,4 +278,4 @@ following configuration item.
     [github](https://gist.github.com/raw/4334775/e5d669bb873443aa03f8febffccd3fc4b2518ecb/ztx.bat).
 
 [^2]: Please refer to [ZK Installation
-    Guide]({{site.baseurl}}/zk_installation_guide/Before_You_Start)
+    Guide]({{site.baseurl}}/zk_installation_guide/before_you_start)

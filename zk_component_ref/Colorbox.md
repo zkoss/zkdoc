@@ -6,8 +6,7 @@
   [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)
 - Java API: <javadoc>org.zkoss.zkex.zul.Colorbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zkex.inp.Colorbox</javadoc>
-- Style Guide: [
-  Colorbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Colorbox)
+
 
 {% include edition-availability.html edition="pe" %}
 
@@ -19,7 +18,7 @@ A Colorbox used to retrieve an input that the user can select a color.
 
 ![](/zk_component_ref/images/ZKComRef_Colorbox_Examples.PNG)
 
-``` xml
+```xml
 <colorbox color="#FFFFFF" />
 ```
 
@@ -40,7 +39,7 @@ By setting `content` attribute of <code>
 
 ![](/zk_component_ref/images/ZKComRef_Colorbox_Examples2.PNG)
 
-``` xml
+```xml
     <menubar id="menubar" >
         <menu label="Color" iconSclass="z-icon-binoculars">
             <menupopup>
@@ -77,7 +76,7 @@ application with the onChange event if its content is changed</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -6,8 +6,7 @@
   (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: <javadoc>org.zkoss.zul.Listhead</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listhead</javadoc>
-- Style Guide: [
-  Listhead](ZK_Style_Guide/XUL_Component_Specification/Listheader)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ surpport Listheader as its child.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
          <listbox id="box">
              <listhead sizable="true">
@@ -65,9 +64,9 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 
 ### Auto
 
-![](images/ZKComRef_Listbox_Columns_Menu.PNG)
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
 
-``` xml
+```xml
 <zk>
     <listbox>
         <listhead menupopup="auto">
@@ -85,14 +84,14 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 (`listcell`s). You could extend
 (<javadoc>org.zkoss.zul.ListitemComparator</javadoc>) and assign to the
 `listheader` ([sorting
-properties](ZK_Component_Reference/Data/Listbox#The_SortAscending_and_SortDescending_Properties))
+properties]({{site.baseurl}}/zk_component_ref/data/listbox#The_SortAscending_and_SortDescending_Properties))
 to change this default behavior.
 
 ### Customized Menupopup
 
-![](images/ZKComRef_Listbox_Columns_Customized_Menu.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Customized_Menu.png)
 
-``` xml
+```xml
     <menupopup id="editPopup">
         <menuitem label="Group" image="~./zul/img/grid/menu-group.png"/>
         <menuitem label="Sort Ascending" image="~./zul/img/grid/menu-arrowup.png"/>
@@ -120,7 +119,7 @@ listheaders in the same listhead with an empty string.
 
 For example,
 
-``` xml
+```xml
 <listbox width="200px">
     <listhead>
         <listheader hflex="1" />
@@ -167,11 +166,11 @@ For example,
 </table>
 
 - Inherited Supported Events: [
-  HeadersElement](ZK_Component_Reference/Base_Components/HeadersElement#Supported_Events)
+  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
 
 # Supported Children
 
-`*`[` Listheader `](ZK_Component_Reference/Data/Listbox/Listheader)
+`*`[` Listheader `]({{site.baseurl}}/zk_component_ref/data/listbox/listheader)
 
 # Use Cases
 

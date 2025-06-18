@@ -10,13 +10,13 @@ The map of data can be retrieve by the use of
 
 For example, assume we fire an event at the client as follows.
 
-``` javascript
+```javascript
 wgt.fire('onFly', {x: 10, y: 20});
 ```
 
 Then, we can retrieve and process it at the server as follows:
 
-``` java
+```java
 public class Fly extends AbstractComponet {
   static {
     addClientEvent(Fly.class, "onFly", CE_IMPORTANT); //assume it is an important event
@@ -54,7 +54,7 @@ If the data is not a map, it can be retrieved with the empty key:
 | wgt.fire("onFly", \["sky", 123\]);                          | List data = (List)request.getData().get(""); String sky = (String)data.get(0); Integer val = (Integer)data.get(1);                                                                 |
 | wgt.fire("onFly", {left:'10px', top:20px', more:\[1, 2\]}); | Map data = request.getData(); String left = (String)data.get("left"); String top = (String)data.get("top"); List more = (List)data.get("more"); Integer v1 = (Integer)more.get(0); |
 
-``` java
+```java
 Map data = request.getData();
 String left = (String)data.get("left");
 String top = (String)data.get("left");
@@ -63,7 +63,7 @@ String top = (String)data.get("left");
 For custom data types, you can implement `toJSON` (at the client) to
 convert a JavaScript object to a string in custom way.
 
-``` javascript
+```javascript
 MyClass.prototype.toJSON = function (key) { //key usually meaningless
    return this.uuid;
 };

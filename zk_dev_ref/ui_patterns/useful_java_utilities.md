@@ -50,13 +50,13 @@ This method sends an AU Response to execute the given JavaScript on
 client side, which is the standard way of calling JavaScript from server
 side in ZK. For example,
 
-``` java
+```java
 Clients.evalJavaScript("zk.log('Hi.');");
 ```
 
 {% include version-badge.html version=9.6.0 %}To handle javascript errors triggered
 by evalJavascript,
-[org.zkoss.zk.ui.ScriptErrorListener.class](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.ScriptErrorListener.class)
+[org.zkoss.zk.ui.ScriptErrorListener.class]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.scripterrorlistener.class)
 is provided.
 
 ## focus
@@ -102,11 +102,11 @@ Display/dismiss a busy message which can cover a component or the whole
 page. So you can block all interaction to components and let users know
 the operation is in progress or has finished. For example,
 
-``` java
+```java
 Clients.showBusy(window, "Waiting for server...");
 ```
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png)
 
 ## showNotification
 
@@ -120,45 +120,45 @@ Popup). You can either display a global notification (bigger) or a
 notification specific to another component (smaller with an arrow
 pointing to the target component).
 
-``` java
+```java
 Clients.showNotification(msg); // display a global notification box
 Clients.showNotification(msg, component); // display a notification box pointing to a component
 ```
 
-![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png")
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png)
 
 You can also specify its position, style, and duration (for
 auto-dismiss):
 
-``` java
+```java
 Clients.showNotification(msg, type, component, position, duration);
 ```
 
 Type determines the style of the notification box.
 
-![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png")
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png)
 
 Here are the available positions:
 
-![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png")
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png)
 
 ### Closable
 
 {% include version-badge.html version=6.5.0 %} Notification now supports closable to
 let users close the notification box manually.
 
-``` java
+```java
 // add close icon on the top right corner of notification box
 Clients.showNotification(msg, closable); 
 ```
 
-![](ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png")
+![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png)
 
 ### Multiline
 
 To show a multiline message, just append `<br/>` in the message string.
 
-``` java
+```java
 Clients.showNotification("msg1 <br/> msg2 <br/>");
 ```
 
@@ -188,7 +188,7 @@ Note: Only one component-targeted notification can be displayed at a
 time. Showing a new one will automatically dismiss the previous
 notification.
 
-``` java
+```java
 Notification.show(msg); // display a global notification box
 Notification.show(msg, component); // display a notification box pointing to a component
 ```
@@ -206,9 +206,9 @@ interaction (e.g., left click).
 Unlike Notification, Toast supports multiple concurrent messages and
 will stack them on screen without replacing previously shown toasts.
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
 
-``` java
+```java
 Toast.show(msg); // display a toast notification
 Toast.show(msg, "warning", "top_right"); // display a toast notification on top-right of the browser viewport
 ```
@@ -222,7 +222,7 @@ You can customize the toast by specifying:
 - Duration: time in milliseconds before auto-dismissal
 - Closable: whether the user can manually close it
 
-``` java
+```java
 Toast.show(msg, type, position, duration, closable);
 ```
 
@@ -237,10 +237,10 @@ Here are the available positions:
 ## Animation Speed
 
 To specify the duration of opening and closing animation,
-[org.zkoss.zkmax.ui.util.Toast.animationSpeed](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zkmax.ui.util.Toast.animationSpeed)
+[org.zkoss.zkmax.ui.util.Toast.animationSpeed]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.ui.util.toast.animationspeed)
 is provided.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zkmax.ui.util.Toast.animationSpeed</name>
     <value>500</value>
@@ -258,9 +258,9 @@ the progress of a task.
 
 You can control a loadingbar with the LoadingbarControl.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Loadingbar.gif)
+![]({{site.baseurl}}/zk_dev_ref/images/loadingbar.gif)
 
-``` java
+```java
 // create a LoadingbarControl for control the loadingbar
 LoadingbarControl loadingbarCtrl = Loadingbar.createLoadingbar("myId"); 
 loadingbarCtrl.start();
@@ -271,25 +271,25 @@ loadingbarCtrl.finish();
 You can also specify its value(0~100), position(top/bottom) and
 indeterminate(true/false):
 
-``` java
+```java
 loadingbarCtrl.start(20, "top", false);
 ```
 
 You can turn on/off the indeterminate animation:
 
-![]({{site.baseurl}}/zk_dev_ref/images/Loadingbar2.gif)
+![]({{site.baseurl}}/zk_dev_ref/images/loadingbar2.gif)
 
-``` java
+```java
 loadingbarCtrl.update(true); // set loadingbar indeterminate true
 ```
 
 ## Animation Speed
 
 To specify the Loadingbar animation speed,
-[org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed)
+[org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.ui.util.loadingbar.animationspeed)
 is provided.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed</name>
     <value>500</value>

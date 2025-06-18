@@ -16,7 +16,7 @@ customize the message, please use the timeout-message element.
 To reload the same URI again, you can specify an *empty* content as
 follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-uri></timeout-uri>
@@ -28,6 +28,6 @@ Notice that this setting is applied only to the specified device
 
 For more information, please refer to [ZK Developer's Reference/UI
 Patterns/Session Timeout
-Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Session_Timeout_Management).
+Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management).
 
 

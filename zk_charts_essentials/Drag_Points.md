@@ -7,7 +7,7 @@ drag to move a data point in a chart:
 
 `DraggablePointComposer.java`
 
-``` java
+```java
     private Charts chart;
 ...
 
@@ -30,13 +30,13 @@ performed:
 - drop: once the user releases the drag, and the element is dropped
 
 In this client-side handler, we can use the [zAu.send
-function](ZK_Client-side_Reference/Communication/AU_Requests/Client-side_Firing)
+function]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing)
 to forward this event to the server.
 
 Note: avoid sending the drag handler if not necessary, since this
 handler may fire a large number of requests while the user is dragging.
 
-``` java
+```java
     @Wire
     private Charts chart; //use the chart component as anchor
     
@@ -66,7 +66,7 @@ handler may fire a large number of requests while the user is dragging.
 
 Here is a decompressed version of the handler script for clarification:
 
-``` javascript
+```javascript
 function(e){ // callback from dragStart, drag, or drop, e is the highcharts event containing the point data
     zAu.send( // send an event to the server
         new zk.Event( // create a new event with the following parameters

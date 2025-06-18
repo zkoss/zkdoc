@@ -5,8 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Hlayout</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Hlayout</javadoc>
-- Style Guide: [
-  Hlayout](ZK_Style_Guide/XUL_Component_Specification/Hlayout)
+
 
 # Employment/Purpose
 
@@ -15,14 +14,14 @@ its child components horizontally in a row.
 
 Notice that hlayout and vlayout do **not** support a splitter inside. If
 you need it, please use [
-Hbox](ZK_Component_Reference/Layouts/Hbox) and [
-Vbox](ZK_Component_Reference/Layouts/Vbox) instead.
+Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and [
+Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) instead.
 
 # Example
 
-![](images/ZKComRef_Hlayout_Simple_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
 
-``` xml
+```xml
 <zk>
      <vlayout>
          <button label="Button 1"/>
@@ -40,7 +39,7 @@ Vbox](ZK_Component_Reference/Layouts/Vbox) instead.
 The default spacing between two child components is `0.3em`. You are
 allowed to modify it if you like:
 
-``` xml
+```xml
 <vlayout spacing="0">
   <textbox/>
   <button label="Click Me"/>
@@ -54,7 +53,7 @@ allowed to modify it if you like:
 `sclass="z-valign-top"`, and to *bottom* by `sclass="z-valign-bottom"`.
 For example,
 
-``` xml
+```xml
 <vlayout>
     <hlayout>
         center: <textbox/>
@@ -74,7 +73,7 @@ The default value of alignment has been changed to *top*. You can change
 it to *middle* (aka., *center*) by specifying `valign="middle"`, and
 *bottom* by `valign="bottom"`. For example,
 
-``` xml
+```xml
     <hlayout id="hlOne" height="100px">
         <button id="lbOne" label="align top" />
         <window width="100px" height="100px" title="test window" border="normal" />
@@ -97,7 +96,7 @@ there are some limitations for IE6. First, the vertical alignment is
 inherited to the inner hlayout. Thus, you have to specify the middle
 alignment explicitly in the inner hlayout if needed. For example,
 
-``` xml
+```xml
 <hlayout sclass="z-valign-bottom">
     bottom: <textbox/>
     <vlayout>
@@ -128,7 +127,7 @@ alignment explicitly in the inner hlayout if needed. For example,
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

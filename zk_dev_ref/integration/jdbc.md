@@ -12,7 +12,7 @@ The simplest way to use JDBC, like any JDBC tutorial might suggest, is
 to use `java.sql.DriverManager`. Here is an example to store the name
 and email into a [MySQL](http://www.mysql.com/) database.
 
-``` java
+```java
  
 public class JdbcComposer extends SelectorComposer<Window> {
 
@@ -61,7 +61,7 @@ public class JdbcComposer extends SelectorComposer<Window> {
 }
 ```
 
-``` xml
+```xml
 <window title="JDBC demo" border="normal" apply="org.zkoss.reference.developer.integration.JdbcComposer">
      <vbox>
          <hbox>Name : <textbox id="name"/></hbox>
@@ -117,7 +117,7 @@ After configuring the connection pool (which will be discussed in the
 following section), you could use JNDI to retrieve an connection as
 follows.
 
-``` java
+```java
 public class DatasourceComposer extends SelectorComposer<Window> {
 
     @Wire
@@ -171,7 +171,7 @@ public class DatasourceComposer extends SelectorComposer<Window> {
 }
 ```
 
-``` xml
+```xml
 <window title="JDBC demo" border="normal" apply="org.zkoss.reference.developer.integration.DatasourceComposer">
      <vbox>
          <hbox>Name : <textbox id="name"/></hbox>
@@ -201,7 +201,7 @@ To configure connection pool for Tomcat 5.5, you have to edit
 the <Context> element. The information that depends on your installation
 and usually need to be changed is marked in the blue color.
 
-``` xml
+```xml
  <!-- The name you used above, must match _exactly_ here!
      The connection pool will be bound into JNDI with the name
      "java:/comp/env/jdbc/MyDB"
@@ -217,7 +217,7 @@ and usually need to be changed is marked in the blue color.
 Then, in `web.xml`, you have to add the following content under the
 <web-app> element as follows.
 
-``` xml
+```xml
  <resource-ref>
    <res-ref-name>jdbc/MyDB</res-ref-name>
    <res-type>javax.sql.DataSource</res-type>
@@ -244,7 +244,7 @@ changed is marked in the blue color.
 
 `mysql-ds.xml:`
 
-``` xml
+```xml
  <datasources>
      <local-tx-datasource>
          <!-- This connection pool will be bound into JNDI with the name
@@ -287,7 +287,7 @@ to add a `jboss-web.xml` file under the WEB-INF folder.
 
 `jboss-web.xml`
 
-``` xml
+```xml
 <jboss-web>
 <resource-ref> 
     <res-ref-name>jdbc/MyDB</res-ref-name> 
@@ -299,7 +299,7 @@ to add a `jboss-web.xml` file under the WEB-INF folder.
 In `web.xml`, you have to add the following content under the <web-app>
 element as follows.
 
-``` xml
+```xml
  <resource-ref>
    <res-ref-name>jdbc/MyDB</res-ref-name>
    <res-type>javax.sql.DataSource</res-type>
@@ -309,7 +309,7 @@ element as follows.
 
 ### JBoss + PostgreSQL
 
-``` xml
+```xml
  <datasources>
      <local-tx-datasource>
      <!-- This connection pool will be bound into JNDI with the name
@@ -332,9 +332,9 @@ element as follows.
 # download
 
 - Please download the [source(Tomcat 5.5 (and above) +
-  MySQL)](https://sourceforge.net/projects/zkforge/files/Small%20Talks/JDBC%28JNDI%20sample%29/Mysql_tomcat.war/download)
+  MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/Mysql_tomcat.war/download)
 - Please download the [source(JBoss +
-  MySQL)](https://sourceforge.net/projects/zkforge/files/Small%20Talks/JDBC%28JNDI%20sample%29/jboss%2Bmysql.zip/download)
+  MySQL)](https://sourceforge.net/projects/zkforge/files/Small_Talks/JDBC%28JNDI_sample%29/jboss%2Bmysql.zip/download)
 
 [^1]: Thanks Thomas Muller
     ([<http://asconet.org:8000/antville/oberinspector>](http://asconet.org:8000/antville/oberinspector))

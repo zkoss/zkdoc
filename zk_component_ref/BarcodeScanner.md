@@ -38,7 +38,7 @@ by enable="false".
 
 Barcodescanner requires access to the camera API from the client's
 browser. Please refer to the [Camera component, Request Permission
-First]({{site.baseurl}}/zk_component_ref/Multimedia_and_Miscellaneous/Camera#Request_Permission_First)
+First]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/camera#Request_Permission_First)
 documentation section regarding API permissions requests and secure
 access.
 
@@ -46,7 +46,7 @@ access.
 
 ![](/zk_component_ref/images/BsQR.png)
 
-``` xml
+```xml
  <barcodescanner type="qr,code128" continuous="true" interval="500" height="100px"
   onDetect='Clients.log(event.getType() + " " + event.getResult())'/>
 ```
@@ -60,7 +60,7 @@ default. After choosing the type of barcode, the component can scan the
 barcode of the type you choose. You also can scan multiple types at one
 time separated by a comma, for example
 
-``` xml
+```xml
  <barcodescanner type="qr,code128"/>
 ```
 
@@ -96,7 +96,7 @@ detecting accuracy.
 Continuous is a boolean attribute to let the Barcodescanner can interval
 scan or not.
 
-``` xml
+```xml
  <barcodescanner type="qr" continuous="true"/>
 ```
 
@@ -105,7 +105,7 @@ scan or not.
 The interval is a subsidiary, integer attribute for continuous scan. The
 interval="500" means the scanner will scan once every 500 millisecond.
 
-``` xml
+```xml
  <barcodescanner type="code128" continuous="true" interval="500"/>
 ```
 
@@ -114,7 +114,7 @@ interval="500" means the scanner will scan once every 500 millisecond.
 The enable is boolean attribute to switch the BarcodeScanner. You can
 use the zk mvvm mechanism to to switch the BarcodeScanner.
 
-``` xml
+```xml
  <window viewModel="@id('vm')@init('xxxVM')">
    <barcodescanner type="code128" enable= "@bind('vm.enable')"/>
  </window>
@@ -128,7 +128,7 @@ barcode widget. The mechanism is like the `registerLibrary()` in
 Barcode. The constructor is a json-format parameter to define the
 required setting for the library.
 
-``` javascript
+```javascript
 constructor = 
 {
     create: the function to create a reader prototype,
@@ -147,7 +147,7 @@ object. The way to register is
 zkmax.barscanner.Barcodescanner.registerLibrary(...). Here is an example
 that how we inject the quagga library object into the widget:
 
-``` xml
+```xml
 <?script src="myBarcodescannerLibrary.js"?>
 <script>
     ...
@@ -168,7 +168,7 @@ that how we inject the quagga library object into the widget:
 
 And, you need to implement some methods to build the reader.
 
-``` xml
+```xml
 <?script src="implementation.js"?>
 <script>
    ...
@@ -215,7 +215,7 @@ at `WEB-INF/lang-addon.xml`.
 
 myRegister.js
 
-``` javascript
+```javascript
     zk.afterLoad('zkmax.barcode', function () {
         zkmax.barscanner.Barcodescanner.registerLibrary(function mybarcode(wgt) {
             ...
@@ -307,7 +307,7 @@ barcode scanner detect a barcode message.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -1,4 +1,4 @@
-``` java
+```java
 String cat3(String s1, String s2, String s3);
 ```
 

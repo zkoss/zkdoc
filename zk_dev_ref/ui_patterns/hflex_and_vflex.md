@@ -35,7 +35,7 @@ still sets width by JavaScript.
 
 However, if your application depends on the previous implementation, you
 can fall back by the property [
-org.zkoss.zul.css.flex="false"](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.css.flex).
+org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.css.flex).
 
 # Prerequisite: Parent Requires Width/Height Specified
 
@@ -44,7 +44,7 @@ its size is decided by its children), the flexible component won't take
 any space. For example, the inner div (with vflex) in the following
 example takes no space:
 
-``` xml
+```xml
 <div><!--Wrong! The height is required since it is minimal height by default-->
   <datebox width="150px"/>
   <div vflex="1" style="background: yellow"/><!--height will be zero since height not specified in parent div-->
@@ -60,7 +60,7 @@ The simplest use of flex is to have one component to take the rest of
 the space of its parent (or the page, if it is the root component). For
 example,
 
-``` xml
+```xml
 <zk>
   <datebox/>
   <div vflex="1" style="background: yellow"/>
@@ -69,12 +69,12 @@ example,
 
 And, the result
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlex1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflex1.png‎)
 
 Here is another example that we'd like to grow the tabbox to fit the
 rest of the space:
 
-``` xml
+```xml
 <zk>
    <datebox/>
    <tabbox vflex="1">
@@ -97,7 +97,7 @@ Notice you could specify `style="overflow: auto"` in the tabpanel such
 that the scrollbar will be inside the tabbox rather than the browser
 window if the content is too large to fit.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlexTabbox.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflextabbox.png‎)
 
 # Proportional Flexibility
 
@@ -106,7 +106,7 @@ to determine the proportion among flexible components. That is, you can
 give different integers to differentiate child components so they will
 take space proportionally per the given vflex/hflex value. For example,
 
-``` xml
+```xml
 <div width="200px" height="50px">
     <div style="background: blue" vflex="1" hflex="1"/>
     <div style="background: yellow" vflex="2" hflex="1"/>
@@ -115,18 +115,18 @@ take space proportionally per the given vflex/hflex value. For example,
 
 And, the result is
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlex2.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drflex2.png)
 
 Here is another example (hflex):
 
-``` xml
+```xml
 <hlayout width="200px">
     <div style="background: blue" hflex="1">1</div>
     <div style="background: yellow" hflex="2">2</div>
 </hlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1Fix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
 
 # Minimum Flexibility
 
@@ -135,7 +135,7 @@ by its children. Or I shall say, the size of the parent component is
 just high/wide enough to hold all of its child components. Specifying
 `vflex/hflex="min"` can fulfill this fit-the-content requirement.
 
-``` xml
+```xml
 <borderlayout height="200px" width="400px">
     <north title="North" vflex="min">
         <borderlayout vflex="min">
@@ -168,7 +168,7 @@ child region.
 Also notice that the flex property
 (<javadoc method="setFlex(boolean)">org.zkoss.zul.LayoutRegion</javadoc>)
 is unique to borderlayout
-([north](ZK_Component_Reference/Layouts/Borderlayout/North)
+([north]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north)
 and others). Don't confuse it with hflex or vflex.
 
 ## Don't specify Minimum on a parent and 1 on a child
@@ -183,7 +183,7 @@ finally. But there are workarounds, please read the following sections.
 In the case below, we see nothing for the incorrect usage (`min` on the
 parent - vlayout, `1` on the child - div):
 
-``` xml
+```xml
 <vlayout hflex="min" height="30px">
     <div hflex="1" vflex="1" style="background: yellow"></div>
 </vlayout>
@@ -196,7 +196,7 @@ also determine its width upon its parent, which is 150px.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZK6DevRef_Vlayout_Hflex.png)</td>
+<td>![](/zk_dev_ref/images/ZK6DevRef_Vlayout_Hflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span><span class="ot"> height=</span><span class="st">&quot;75px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;150px&lt;/<span class="kw">div</span>&gt;</span>
@@ -216,7 +216,7 @@ height** of siblings, which is 30px in the following sample.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZK6DevRef_Hlayout_Vflex.png)</td>
+<td>![](/zk_dev_ref/images/ZK6DevRef_Hlayout_Vflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;30px&lt;/<span class="kw">div</span>&gt;</span>
@@ -230,7 +230,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 However, in the following use case, we should see nothing as it is an
 incorrect usage:
 
-``` xml
+```xml
 <hlayout width="100px" vflex="min">
     <div hflex="1" vflex="1" style="background: yellow"></div>
 </hlayout>
@@ -239,15 +239,15 @@ incorrect usage:
 # Grid's Column and Flexibility
 
 If hflex is specified in the header of
-[grid](ZK_Component_Reference/Data/Grid),
-[listbox](ZK_Component_Reference/Data/Listbox) and
-[tree](ZK_Component_Reference/Data/Tree), it is applied to
+[grid]({{site.baseurl}}/zk_component_ref/data/grid),
+[listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and
+[tree]({{site.baseurl}}/zk_component_ref/data/tree), it is applied to
 the whole column (including the header and contents).
 
 For example, we could assign 33% to the first column and 66% to the
 second as follows.
 
-``` xml
+```xml
 <grid width="300px">
     <columns>
         <column label="Name" hflex="1"/>
@@ -262,7 +262,7 @@ second as follows.
 
 The result is
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrGridFlex.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drgridflex.png)
 
 Notice that we also specify `hflex="1"` to the textbox, so it will take
 up the whole space.
@@ -275,7 +275,7 @@ set hflex="min" to Grid and each Column to keep Grid with minimal size.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZK5DevRef_GridColumn_FormHflex.png)</td>
+<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -304,7 +304,7 @@ hflex="1" to Datebox.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZK5DevRef_GridColumn_FormHflex2.png)</td>
+<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex2.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -335,7 +335,7 @@ a Cell and set hflex="1" to the element.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZK5DevRef_GridColumn_FormHflex_colspan.png)</td>
+<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex_colspan.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -367,14 +367,14 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 For a complete list of controls that you could apply to the columns of
 grid, listbox and tree, please refer to [ZK Developer's Reference/UI
 Patterns/Grid's Columns and
-Hflex]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Grid's_Columns_and_Hflex).
+Hflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/grid's_columns_and_hflex).
 
 # Flexibility versus Percentage
 
 The use of hflex and vflex is similar to the use of percentage in width
 and height. For example,
 
-``` xml
+```xml
 <div width="200px" height="200px">
     <div height="33%" style="background: blue">1</div>
     <div height="66%" style="background: yellow">2</div>
@@ -394,7 +394,7 @@ recommended because of the following issues:
 - The percentage does *not* support *take-the-rest-space*. For example,
   the following doesn't work:
 
-``` xml
+```xml
 <!-- a vertical scrollbar appear (not as expected) -->
 <div height="100%">
     <datebox/>
@@ -406,7 +406,7 @@ recommended because of the following issues:
 
 By default, ZK's theme configures the document's BODY tag as follows.
 
-``` css
+```css
 body {
     height: 100%;
     padding: 0 5px;
@@ -416,7 +416,7 @@ body {
 Sometimes you might prefer to add some padding vertically, but it
 *cannot* be done by changing BODY's styling as follows.
 
-``` css
+```css
 body {
     height: 100%;
     padding: 5px; /* WRONG! It causes vertical scrollbar to appear since the 100% height is used with vertical padding */
@@ -428,10 +428,10 @@ since both the vertical padding and the 100% height are specified.
 
 **Solution**: you shall *not* change the default CSS styling of BODY.
 Rather, you could enclose the content with [the div
-component](ZK_Component_Reference/Containers/Div), and then
+component]({{site.baseurl}}/zk_component_ref/containers/div), and then
 specify `vflex="1"` and the padding to the div component. For example,
 
-``` xml
+```xml
 <div style="padding: 5px 0" vflex="1">
     <grid>
         <rows>
@@ -448,7 +448,7 @@ window changes its size to increase or decrease the extra space, the
 child components with vflex/hflex will recalculate themselves to
 accommodate the new size.
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
         int[] str = new int[100];
@@ -481,12 +481,12 @@ when we change the browser height.
 
 ## Span Ignores Width and Height
 
-[Span](ZK_Component_Reference/Containers/Span) ignores the
+[Span]({{site.baseurl}}/zk_component_ref/containers/span) ignores the
 width and height, so hflex and vflex have no effect on them (unless you
 specify [display:block](http://www.quirksmode.org/css/display.html) --
 but it makes it div eventually).
 
-``` xml
+```xml
 <!-- this example does not work -->
 <div width="200px">
     <span style="background: blue" hflex="1">1</span>
@@ -496,13 +496,13 @@ but it makes it div eventually).
 
 And, the result is as follows - the width has no effect:
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png‎)
 
 This limitation can be solved by the use of
-[hlayout](ZK_Component_Reference/Layouts/Hlayout) and
-[div](ZK_Component_Reference/Containers/Div) as follows.
+[hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[div]({{site.baseurl}}/zk_component_ref/containers/div) as follows.
 
-``` xml
+```xml
 <!-- this is correct -->
 <hlayout width="200px">
     <div style="background: blue" hflex="1">1</div>
@@ -510,14 +510,14 @@ This limitation can be solved by the use of
 </hlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr1Fix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
 
 ## Hflex Must Align Correctly
 
 Hflex will be wrong if a component is not aligned in the same *row* with
 its siblings. For example,
 
-``` xml
+```xml
 <div width="200px">
   <div style="background: blue" hflex="1">1</div><!-- not work since it won't be aligned with sibling div -->
   <div style="background: yellow" hflex="2">2</div>
@@ -527,11 +527,11 @@ its siblings. For example,
 As shown below, the second div is not aligned vertically with the first
 div, so is the width not as expected:
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrFlexErr2.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png‎)
 
 This limitation can be solved by use of
-[hlayout](ZK_Component_Reference/Layouts/Hlayout) and
-[div](ZK_Component_Reference/Containers/Div) as shown in the
+[hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[div]({{site.baseurl}}/zk_component_ref/containers/div) as shown in the
 previous subsection.
 
 ## Input elements have incorrect margin values in WebKit browsers
@@ -542,7 +542,7 @@ an input element are considered 2px by browsers, where they are really
 textbox, intbox, etc. For example, in the following case the Textbox
 does not occupy the entire Div width in Chrome:
 
-``` xml
+```xml
     <div width="300px" style="border: 1px solid green">
         <textbox hflex="1" />
     </div>
@@ -550,7 +550,7 @@ does not occupy the entire Div width in Chrome:
 
 You can work around this by specifying Textbox margin to be 0:
 
-``` xml
+```xml
     <style>
         input.nomargin {
             margin-left: 0;
@@ -578,7 +578,7 @@ its content. You can need to call
 
 For example,
 
-``` xml
+```xml
 <zk>
     <div id="div" vflex="1" hflex="1" style="background: blue">blue</div>
     <button label="vflex to min">

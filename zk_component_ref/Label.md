@@ -3,8 +3,7 @@
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Label</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Label</javadoc>
-- Style Guide: [
-  Label](ZK_Style_Guide/XUL_Component_Specification/Label)
+
 
 # Employment/Purpose
 
@@ -13,9 +12,9 @@ will be automatically converted to a label.
 
 # Example
 
-![](images/ZKComRef_Label.PNG)
+![](/zk_component_ref/images/ZKComRef_Label.PNG)
 
-``` xml
+```xml
  <window title="Label Demo" >
  <grid>
      <rows>
@@ -48,9 +47,9 @@ as new line, space and tab, are preserved.
 
 A label component represents a piece of text.
 
-![](images/ZKComRef_Label_Example2.png)
+![](/zk_component_ref/images/ZKComRef_Label_Example2.png)
 
-``` xml
+```xml
 <window border="normal"> 
     Hello World
 </window>
@@ -59,9 +58,9 @@ A label component represents a piece of text.
 If you want to add an attribute to a label, it has to be written as
 follows:
 
-![](images/ZKComRef_Label_Example3.png)
+![](/zk_component_ref/images/ZKComRef_Label_Example3.png)
 
-``` xml
+```xml
 <window border="normal">
     <label style="color: red" value="Hello World" />
 </window>
@@ -160,9 +159,9 @@ tabs.</p></td>
 </tbody>
 </table>
 
-![](images/ZKComRef_Label_Text_ZK5.png)
+![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
-``` xml
+```xml
 <window border="normal" width="300px">
     <vbox id="result">
         <label id="lb1" pre="true"></label>
@@ -254,9 +253,9 @@ is hyphenated.</p></td>
 </tbody>
 </table>
 
-![](images/ZKComRef_Label_Text_ZK3.png)
+![](/zk_component_ref/images/ZKComRef_Label_Text_ZK3.png)
 
-``` xml
+```xml
  
 <window border="normal" width="300px">
     <vbox id="result">
@@ -305,7 +304,7 @@ only preserves new lines and white space at the beginning of each line.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

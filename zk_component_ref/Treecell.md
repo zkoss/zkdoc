@@ -6,8 +6,7 @@
   Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: <javadoc>org.zkoss.zul.Treecell</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecell</javadoc>
-- Style Guide: [
-  Treerow](ZK_Style_Guide/XUL_Component_Specification/Treerow)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ contain any components in it, such as label, image, textbox etc.
 
 # Example
 
-![](images/ZKComRef_Treeitem.png)
+![](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px">
     <tree id="tree" width="90%">
         <treecols sizable="true">
@@ -87,7 +86,7 @@ contain any components in it, such as label, image, textbox etc.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

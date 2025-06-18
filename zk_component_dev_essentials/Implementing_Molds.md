@@ -5,13 +5,13 @@ path of the directory in this example will be
 
 Let us assume we want to generate the following DOM content:
 
-``` html
+```html
 <span>value</span>
 ```
 
 Then, the content of simple-label.js will be as follows.
 
-``` javascript
+```javascript
 function (out) {
  out.push('<span', this.domAttrs_(), '>', this.getValue(), '</span>');
 }
@@ -38,4 +38,4 @@ the redraw method directly.
 # Multiple Molds
 
 Need to declare each mold in [ language
-addon](ZK_Component_Development_Essentials/Creating_the_Configuration_Files/The_language-addon).
+addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language-addon).

@@ -12,7 +12,7 @@ To use Google App Engine for Java, you have to take one additional step:
 be ready for clustering, such as implementing serializable. For more
 information, please refer to [ZK Developer's Reference:
 Clustering/Programming
-Tips]({{site.baseurl}}/zk_dev_ref/Clustering/Programming_Tips).**
+Tips]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).**
 
 # Configure Your App Engine Project
 
@@ -28,7 +28,7 @@ The content is similar to other ZK application except the AU engine has
 to be mapped to `/zkau`, too (in additions to `/zkau/*`. Otherwise, AU
 requests won't be sent to the AU engine. Here is is an example.
 
-``` xml
+```xml
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
     <listener>
         <description>ZK listener for session cleanup</description>
@@ -77,7 +77,7 @@ thread, so we have to disable the resend mechanism.
 
 Here is an example.
 
-``` xml
+```xml
 <zk>
     <!-- clustering environment -->
     <system-config>
@@ -113,7 +113,7 @@ GAE).
 App Engine requires one addition configuration file named
 `appengine-web.xml`. It resides in the `WEB-INF` directory.
 
-``` xml
+```xml
 <sessions-enabled>true</sessions-enabled>
 
 <static-files>
@@ -136,7 +136,7 @@ or later. In additions, there are some other limitations.
 
 It runs correctly locally but not if uploaded. It could be done by
 specifying as a [library
-property](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.scripting.bsh.method.serializable)
+property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.scripting.bsh.method.serializable)
 to disable the serializing of zscript methods for the whole application.
 
 </ref>
@@ -147,13 +147,13 @@ to disable the serializing of zscript methods for the whole application.
   package[^1]
 
 When it comes to [Server
-Push]({{site.baseurl}}/zk_dev_ref/Server_Push),
+Push]({{site.baseurl}}/zk_dev_ref/server_push),
 since App Engine doesn't allow creating new threads, so session scope or
 application scope event queue cannot be used with App Engine. If you
 require server push feature, you should use
-[timer]({{site.baseurl}}/zk_component_ref/Essential_Components/Timer)
+[timer]({{site.baseurl}}/zk_component_ref/essential_components/timer)
 instead of [event
-queue]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Event_Queues)
+queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
 in an App Engine environment.
 
 ------------------------------------------------------------------------
@@ -170,7 +170,7 @@ the 1 mega bytes. To avoid this, you can implement
 remove other desktops in the desktop cache and specify it in
 WEB-INF/zk.xml as a listener. For example,
 
-``` java
+```java
 public class MyDesktopInit implements DesktopInit {
   public void init(Desktop desktop, Object req) throws Exception {    
     HttpServletRequest request = (HttpServletRequest) req;     
@@ -187,7 +187,7 @@ public class MyDesktopInit implements DesktopInit {
 
 # Sample
 
-[Download](http://sourceforge.net/projects/zk1/files/ZK%20for%20Google%20App%20Engine/)
+[Download](http://sourceforge.net/projects/zk1/files/ZK_for_Google_App_Engine/)
 a sample application named zk-gae.
 
 In additions, you could visit
@@ -200,7 +200,7 @@ demo is [here](http://tags42.appspot.com/borderlayout/borderlayout.zul).
 | Version | Date           | Content                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | June 2011      | Add ClusterSessionPatch listener to zk.xml for enforce GAE to write session.                                                                                                                                                                                                                                                                                                                                                        |
-| 5.0.9   | September 2011 | In 5.0.7/5.0.8, we introduced a feature allowing developers to log the serialization. Unfortunately, it broke one of GAE restriction: java.util.logging.LogManager is not accessible. It is fixed in 5.0.9 but specifying a library property called [org.zkoss.util.logging.hierarchy.disabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.logging.hierarchy.disabled) in `WEB-INF/zk.xml`. |
+| 5.0.9   | September 2011 | In 5.0.7/5.0.8, we introduced a feature allowing developers to log the serialization. Unfortunately, it broke one of GAE restriction: java.util.logging.LogManager is not accessible. It is fixed in 5.0.9 but specifying a library property called [org.zkoss.util.logging.hierarchy.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.logging.hierarchy.disabled) in `WEB-INF/zk.xml`. |
 
 [^1]: You will see a warning, `... Component captcha ignored.`, in the
     application log, refer to the JRE [white

@@ -1,4 +1,4 @@
-``` java
+```java
 String encodeURL(String uri);
 ```
 

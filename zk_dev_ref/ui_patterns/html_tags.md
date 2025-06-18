@@ -11,12 +11,12 @@ Component|</p>
 <html>
 <p>component]]</p></th>
 <th><p><a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/HTML_Tags/The_native_Namespace"
+href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags/The_native_Namespace"
 title="wikilink">native namespace</a></p></th>
 <th><p><a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/HTML_Tags/The_XHTML_Component_Set"
+href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags/The_XHTML_Component_Set"
 title="wikilink">XHTML components</a></p></th>
-<th><p><a href="ZK_Developer&#39;s_Reference/Integration/Use_ZK_in_JSP"
+<th><p><a href="ZK_Developer&#39;s_Reference/integration/Use_ZK_in_JSP"
 title="wikilink">JSP</a></p></th>
 </tr>
 </thead>
@@ -68,7 +68,7 @@ role="doc-endnotes">
 <li id="fn1">We cannot update content dynamically at the server.
 However, we could modify the DOM tree directly at the client. Please
 refer to the <a
-href="ZK_Developer&#39;s_Reference/UI_Composing/Client-side_UI_Composing"
+href="ZK_Developer&#39;s_Reference/ui_composing/Client-side_UI_Composing"
 title="wikilink">Client-side UI Composing</a> section.<a href="#fnref1"
 class="footnote-back" role="doc-backlink">↩︎</a></li>
 <li id="fn2">Technically you could modify the browser's DOM tree
@@ -83,10 +83,10 @@ role="doc-backlink">↩︎</a></li>
 </aside>
 
 In addition, you could use
-[iframe](ZK_Component_Reference/Essential_Components/Iframe)
+[iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe)
 to embed a complete HTML document which might be from a different
 website with different technology. Or, use
-[include](ZK_Component_Reference/Essential_Components/Include)
+[include]({{site.baseurl}}/zk_component_ref/essential_components/include)
 to include an HTML fragment.
 
 > ------------------------------------------------------------------------

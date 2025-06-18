@@ -15,7 +15,7 @@ component.
 
 Resize the window component to show different sized images accordingly.
 
-``` xml
+```xml
 <window title="AfterSizeEvent" border="normal" width="250px" height="200px" 
 maximizable="true" sizable="true">
     <attribute name="onAfterSize"><![CDATA[

@@ -5,7 +5,7 @@ widget classes. For example we would place it under **web/js/com/foo**.
 
 Below is an example **zk.wpd** of our SimpleLabel.
 
-``` xml
+```xml
 <package name="com.foo" language="xul/html">
     <widget name="SimpleLabel"/>
 </package>
@@ -31,7 +31,7 @@ example, `zul.grid` depends on `zul.mesh` and `zul.menu`. This can
 easily be specified by placing them within the `depends` attribute as
 follows.
 
-``` xml
+```xml
 <package name="zul.grid" language="xul/html" depends="zul.mesh,zul.menu">
     <widget name="Column"/>
     <widget name="Columns"/>
@@ -49,7 +49,7 @@ If a JavaScript package has to include other JavaScript files, this can
 be done easily by specifying the file with the `script` element. For
 example, the following is the content of `zul.db`'s WPD:
 
-``` xml
+```xml
 <package name="zul.db" language="xul/html" depends="zk.fmt,zul.inp">
     <script src="datefmt.js"/>
     <widget name="Calendar"/>
@@ -59,4 +59,4 @@ example, the following is the content of `zul.db`'s WPD:
 
 For more information, please refer to [ZK Client-side Reference: Widget
 Package
-Descriptor](ZK_Client-side_Reference/Widget_Package_Descriptor).
+Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor).

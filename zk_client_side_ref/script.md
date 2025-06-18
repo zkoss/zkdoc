@@ -8,7 +8,7 @@ embed the JavaScript code directly.
 
 Example,
 
-``` xml
+```xml
   <script src="a.js"/>
   <script>
 function doIt() {
@@ -23,7 +23,7 @@ function doIt() {
 The path of an external JavaScript file. It is suggested to use a path
 related to the directory of the WPD file. For example,
 
-``` xml
+```xml
  <script src="abc.js"/>
  <script src="../foo/def.js"/>
 ```

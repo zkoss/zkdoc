@@ -6,14 +6,14 @@ to the root element as an additional CSS class.
 For example, assign `sclass` **foo-pretty** to a button component in zul
 page like this
 
-``` xml
+```xml
 <!-- index.zul -->
 <button sclass="foo-pretty"/>
 ```
 
 will generate the following output
 
-``` html
+```html
 <!-- HTML output -->
 <button class="z-button foo-pretty" />
 ```

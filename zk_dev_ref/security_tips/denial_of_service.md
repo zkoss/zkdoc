@@ -37,7 +37,7 @@ desktop represents an HTML page for a browser. In other words, this
 number controls the number of concurrent browser windows allowed per
 session.
 
-``` xml
+```xml
 <session-config>          
      <max-desktops-per-session>a_number</max-desktops-per-session>
 </session-config>
@@ -54,7 +54,7 @@ it creates a request and the request ends after the response is sent to
 the browser. In other words, this number controls how many concurrent
 requests the same user can send.
 
-``` xml
+```xml
 <session-config>
        <max-requests-per-session>a_number</max-requests-per-session>
 </session-config>
@@ -71,7 +71,7 @@ could use `button.setAutodisable()` in Java or `autodisable="self"` in
 ZUL to prevent DoS resulting from repeated button onClicks which might
 hold up precious server resources. For more details on Button
 autodisable refer
-[here]({{site.baseurl}}/zk_component_ref/Essential_Components/Button#Autodisable)
+[here]({{site.baseurl}}/zk_component_ref/essential_components/button#Autodisable)
 
 In addition to this, each and every ZK ajax request carries an
 additional http header called **ZK-SID**. The purpose of this ZK-SID

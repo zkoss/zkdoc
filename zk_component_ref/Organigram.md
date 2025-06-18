@@ -16,7 +16,7 @@ only accept one `Orgchildren` as child, developers can put
 `Orgchildren`, `Orgitem` and `Orgnode` in `Organigram` to display data.
 
 `Organigram` supports [Client Render on
-Demand](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/Client_Render_on_Demand)
+Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 
 # Browser Support
 
@@ -26,9 +26,9 @@ Demand](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/C
 
 # Example
 
-![](images/Organigram_example.png)
+![](/zk_component_ref/images/Organigram_example.png)
 
-``` xml
+```xml
     <organigram width="600px">
         <orgchildren>
             <orgitem label="Item1">
@@ -57,9 +57,9 @@ Demand](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Performance_Tips/C
 
 # Model-Driven Display
 
-![](images/Organigram_example2.png)
+![](/zk_component_ref/images/Organigram_example2.png)
 
-``` xml
+```xml
     <zscript><![CDATA[
         DefaultTreeNode root = new DefaultTreeNode(null, new DefaultTreeNode[]{
             new DefaultTreeNode("Item1", new DefaultTreeNode[]{
@@ -88,9 +88,9 @@ to get the selected Orgitem.
 
 Example:
 
-![](images/Organigram_selection.png)
+![](/zk_component_ref/images/Organigram_selection.png)
 
-``` xml
+```xml
     <organigram width="600px" onSelect="Clients.log(self.getSelectedItem().getLabel())">
         <orgchildren>
             <orgitem label="Item1">
@@ -110,10 +110,10 @@ you can also render Organigram with your customized Renderer and
 Template, please refer to:
 
 [Organigram
-Template](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/View/Template/Organigram_Template)
+Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template)
 
 [Organigram
-Renderer](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/View/Renderer/Organigram_Renderer)
+Renderer]({{site.baseurl}}/zk_dev_ref/mvc/view/renderer/organigram_renderer)
 
 # Supported Events
 
@@ -145,11 +145,11 @@ the user has selected a new item in the organigram.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Orgchildren`](ZK_Component_Reference/Layouts/Organigram/Orgchildren)
+`*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgchildren)
 
 # Version History
 

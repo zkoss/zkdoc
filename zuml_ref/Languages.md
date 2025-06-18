@@ -16,7 +16,7 @@ component set they prefer, as long as there is no name conflict[^1].
 
 For introduction of languages vs standard namespaces, please refer to
 [ZK Developer's
-References]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/XML_Namespaces).
+References]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/xml_namespaces).
 
 # Language Identification
 
@@ -27,7 +27,7 @@ resolved. For example, in the following example, ZK needs to know if
 `window` belongs to the xul/html language, so its component definition
 can be retrieved correctly.
 
-``` xml
+```xml
 <window>
 ```
 
@@ -76,7 +76,7 @@ to configure `WEB-INF/web.xml` correctly. For example, if you want to
 map all `*.xul` files to ZK Loader, you could add the following to
 `WEB-INF/web.xml`:
 
-``` xml
+```xml
 <servlet-mapping>
     <servlet-name>zkLoader</servlet-name>
     <url-pattern>*.xul</url-pattern>
@@ -103,7 +103,7 @@ For example, you map ZK Loader to `*.foo`, which is not associated with
 any language. Then, you have to specify the XML namespace as shown in
 the following example:
 
-``` xml
+```xml
 <window xmlns="http://www.zkoss.org/2005/zul">
 ...
 ```
@@ -121,7 +121,7 @@ use XML namespaces to distinguish them too. For example, the xhtml
 language's namespace is http://www.w3.org/1999/xhtml, and we could mix
 the use as follows.
 
-``` xml
+```xml
 <window xmlns:h="http://www.w3.org/1999/xhtml">
     <h:table>
         <h:tr>
@@ -141,7 +141,7 @@ component[^2]. The associated XML namespace of the native namespace is
 http://www.zkoss.org/2005/zk/native, so we can rewrite the previous
 example to be more efficient:
 
-``` xml
+```xml
 <window xmlns:h="http://www.zkoss.org/2005/zk/native">
     <h:table>
         <h:tr>
@@ -166,7 +166,7 @@ last word of the namespace URI. For example, `zul` for
 `xhtml` for <http://www.w3.org/1999/xhtml>. Thus, we can simply the
 previous example as follows.
 
-``` xml
+```xml
 <window xmlns:h="xhtml">
     <h:table>
         <h:tr>
@@ -225,7 +225,7 @@ tags to ZK components. Since they are components, you can add and remove
 them dynamically (and control it at the server). For more information
 please refer to the <a href="ZUML_Reference/ZUML/Languages/XHTML"
 title="wikilink">XHTML Namespace</a> section or <a
-href="ZK_Component_Reference/XHTML_Components" title="wikilink">ZK
+href="{{site.baseurl}}/zk_component_ref/xhtml_components" title="wikilink">ZK
 Component Reference</a>.</p>
 <p><strong>Performance Tip:</strong> The XHTML language is designed to
 allow application to modify the client dynamically (at the server). If

@@ -10,7 +10,7 @@ share the application data through the websocket channel.
 
 ## Websocket Server
 
-``` java
+```java
 @ServerEndpoint(value ="/echo/",
     configurator = ZKWebSocket.class)
 public class EchoServer {
@@ -55,7 +55,7 @@ to receive the data storage from a websocket session (the storage is a
 thread-safe implementation). Note that the websocket session must have a
 **dtid** value which is sent from client as follows.
 
-``` js
+```js
 // Create a new instance of the websocket
 var webSocket = new WebSocket("ws://localhost:8080/zkwebsocket/echo/?dtid=" + zk.$('$win').desktop.uuid);
 ```
@@ -64,7 +64,7 @@ var webSocket = new WebSocket("ws://localhost:8080/zkwebsocket/echo/?dtid=" + zk
 
 ### MVVM Example
 
-``` xml
+```xml
 <window id="win" apply="org.zkoss.bind.BindComposer"
             viewModel="@id('vm') @init('org.zkoss.foo.ZKWebSocketViewModel')">
         <groupbox title="ZK">
@@ -74,7 +74,7 @@ var webSocket = new WebSocket("ws://localhost:8080/zkwebsocket/echo/?dtid=" + zk
 </window>
 ```
 
-``` java
+```java
 @ToServerCommand("update")
 public class ZKWebSocketViewModel {
 
@@ -116,7 +116,7 @@ or vice versa.
 
 ### MVC Example
 
-``` xml
+```xml
 <window id="win" apply="org.zkoss.foo.ZKWebSocketComposer">
         <groupbox title="ZK">
             <hlayout>count: <label id="label" /></hlayout>
@@ -125,7 +125,7 @@ or vice versa.
 </window>
 ```
 
-``` java
+```java
 public class ZKWebSocketComposer extends SelectorComposer<Window> {
     @Wire Label label;
     @Wire Button btn;
@@ -176,7 +176,7 @@ at the [\#Communication](#Communication) section.
 
 Here is the MVVM way to send a command from client to server.
 
-``` js
+```js
 // Create a new instance of the websocket
 var webSocket = new WebSocket("ws://localhost:8080/zkwebsocket/echo/?dtid=" + zk.$('$win').desktop.uuid);
 
@@ -190,7 +190,7 @@ webSocket.onmessage = function(event) {
 
 Here is the MVC way to send a command from client to server.
 
-``` js
+```js
 // Create a new instance of the websocket
 var webSocket = new WebSocket("ws://localhost:8080/zkwebsocket/echo/?dtid=" + zk.$('$win').desktop.uuid);
 
@@ -207,13 +207,13 @@ webSocket.onmessage = function(event) {
 When a user triggers a command with some data from client to server, the
 data should be in a Map (or says Object) type. For example,
 
-``` js
+```js
     zkbind.$('$win').command('update', {foo: 'myfoo', bar: {title: 'myBarTitle'}});
 ```
 
 In the Java code
 
-``` java
+```java
     public static class Bar {
         private String title;
         public void setTitle(String title) { this.title = title; }
@@ -232,20 +232,20 @@ specific object type according to the method declaration.
 **Note:** developer can implement a custom
 <javadoc type="interface">org.zkoss.bind.Converter</javadoc> and specify
 it into [the ZK library
-properties]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.bind.jsonBindingParamConverter.class).
+properties]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.jsonbindingparamconverter.class).
 
 ### MVC Example
 
 When a user triggers a command with some data from client to server, the
 data should be in an array type in order. For example,
 
-``` js
+```js
     zkservice.$('$win').command('update', [{foo: "myfoo"}, {bar: "mybar"}]); // the arguments should be in order within an array.
 ```
 
 In the Java code
 
-``` java
+```java
 ...
     public static class MyFoo {
         private String foo;
@@ -269,4 +269,4 @@ specific object type according to the method declaration.
 **Note:** developer can implement a custom
 <javadoc type="interface">org.zkoss.util.Converter</javadoc> and specify
 it into [the ZK library
-properties]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.zk.ui.jsonServiceParamConverter.class).
+properties]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.jsonserviceparamconverter.class).

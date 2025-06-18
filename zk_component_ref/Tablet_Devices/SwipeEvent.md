@@ -13,12 +13,12 @@ information about the swipe displacement, duration, and direction.
 
 # Example
 
-![](images/SwipeEventExample_Update.png)
+![](/zk_component_ref/images/SwipeEventExample_Update.png)
 
 The swipe event can be registered in any component which can be swiped
 by user on tablet devices.
 
-``` xml
+```xml
 <tabbox height="300px" width="300px">
     <tabs>
         <tab label="tab 1" />

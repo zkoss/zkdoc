@@ -8,14 +8,14 @@ client scrolling. On large models, this will avoid sending the full
 content during page rendering.
 
 See
-\[<https://www.zkoss.org/wiki/ZK_Developer's_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand#ROD:_Listbox>,
+\[<{{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand#ROD:_Listbox>,
 performance documentation\] for additional information.
 
 `Default: false`
 
 **apply on one component**
 
-``` xml
+```xml
 <listbox>
   <custom-attributes org.zkoss.zul.listbox.rod="true"/>
 ...
@@ -23,7 +23,7 @@ performance documentation\] for additional information.
 
 **apply globally**
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.listbox.rod</name>
     <value>true</value>

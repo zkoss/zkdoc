@@ -3,17 +3,17 @@
 Models are the perfect way for developers to interact with the charts as
 they shield developers from complexities that they need not know or
 interact with. In addition to this ZK model supports many design
-patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/MVC/Model)
-and [ MVVM](ZK_Developer%27s_Reference/MVVM), which are both
+patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/mvc/model)
+and [ MVVM]({{site.baseurl}}/zk_dev_ref/mvvm), which are both
 fully supported patterns.
 
 ZK provides [ chart
-models]({{site.baseurl}}/zk_dev_ref/MVC/Model/Chart_Model) to
+models]({{site.baseurl}}/zk_dev_ref/mvc/model/chart_model) to
 handle data in the chart. Manipulating chart model with charts is the
 same as other ZK components handling their supporting models. We've used
 MVC approach to create the chart in the previous section - [ Create your
 first ZK
-Charts](ZK_Charts_Essentials/Getting_Started_with_ZK_Charts/Create_your_first_ZK_Charts).
+Charts]({{site.baseurl}}/zk_charts_essentials/getting_started_with_zk_charts/create_your_first_zk_charts).
 In this section, we will create another example of manipulating the
 chart model in the MVVM approach.
 
@@ -23,7 +23,7 @@ and put the data we want to handle:
 
 #### ChartData.java
 
-``` java
+```java
 public class ChartData {
 
     static public XYModel getXYModel() {
@@ -49,7 +49,7 @@ Declare a POJO VM as well as the property's getter method.
 
 #### ChartVM.java
 
-``` java
+```java
 public class ChartVM {
 
     public XYModel getModel() {
@@ -62,7 +62,7 @@ Reference the ViewModel in ZUL:
 
 #### chart.zul
 
-``` xml
+```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('ChartVM')">
     <charts type="bar" model="@bind(vm.model)" />
 </window>
@@ -176,14 +176,14 @@ instead.
 ![](images/PieChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.PieChartComposer">
     <charts id="chart" type="pie" width="480" 
         height="300" title="Pie Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class PieChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -209,14 +209,14 @@ public class PieChartComposer extends SelectorComposer<Div> {
 ![](images/FunnelChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.FunnelChartComposer">
     <charts id="chart" type="funnel" width="480" height="300" 
         title="Funnel Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class FunnelChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -246,14 +246,14 @@ public class FunnelChartComposer extends SelectorComposer<Div> {
 ![](images/LineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.LineChartComposer">
     <charts id="chart" type="line" width="480" 
         height="300" title="Line Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class LineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -283,14 +283,14 @@ public class LineChartComposer extends SelectorComposer<Div> {
 ![](images/XYLineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYLineChartComposer">
     <charts id="chart" type="line" width="480" 
         height="300" title="XY Line Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYLineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -322,14 +322,14 @@ public class XYLineChartComposer extends SelectorComposer<Div> {
 ![](images/SplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.SplineChartComposer">
     <charts id="chart" type="spline" width="480" 
         height="300" title="Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class SplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -359,14 +359,14 @@ public class SplineChartComposer extends SelectorComposer<Div> {
 ![](images/XYSplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYSplineChartComposer">
     <charts id="chart" type="spline" width="480" 
         height="300" title="XY Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYSplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -398,14 +398,14 @@ public class XYSplineChartComposer extends SelectorComposer<Div> {
 ![](images/AreaChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.AreaChartComposer">
     <charts id="chart" type="area" width="480" 
         height="300" title="Area Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class AreaChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -435,14 +435,14 @@ public class AreaChartComposer extends SelectorComposer<Div> {
 ![](images/XYAreaChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYAreaChartComposer">
     <charts id="chart" type="area" width="480" 
         height="300" title="XY Area Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYAreaChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -472,14 +472,14 @@ public class XYAreaChartComposer extends SelectorComposer<Div> {
 ![](images/StackedAreaChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.StackedAreaChartComposer">
     <charts id="chart" type="area" width="480" 
         height="300" title="Stacked Area Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class StackedAreaChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -511,14 +511,14 @@ public class StackedAreaChartComposer extends SelectorComposer<Div> {
 ![](images/XYStackedAreaChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYStackedAreaChartComposer">
     <charts id="chart" type="area" width="480" 
         height="300" title="XY Stacked Area Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYStackedAreaChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -552,14 +552,14 @@ public class XYStackedAreaChartComposer extends SelectorComposer<Div> {
 ![](images/AreaSplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.AreaSplineChartComposer">
     <charts id="chart" type="areaspline" width="480" 
         height="300" title="Area Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class AreaSplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -589,14 +589,14 @@ public class AreaSplineChartComposer extends SelectorComposer<Div> {
 ![](images/XYAreaSplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYAreaSplineChartComposer">
     <charts id="chart" type="areaspline" width="480" 
         height="300" title="XY Area Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYAreaSplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -626,14 +626,14 @@ public class XYAreaSplineChartComposer extends SelectorComposer<Div> {
 ![](images/StackedAreaSplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.StackedAreaSplineChartComposer">
     <charts id="chart" type="areaspline" width="480" 
         height="300" title="Stacked Area Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class StackedAreaSplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -665,14 +665,14 @@ public class StackedAreaSplineChartComposer extends SelectorComposer<Div> {
 ![](images/XYStackedAreaSplineChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYStackedAreaSplineChartComposer">
     <charts id="chart" type="areaspline" width="480" 
         height="300" title="XY Stacked Area Spline Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYStackedAreaSplineChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -706,14 +706,14 @@ public class XYStackedAreaSplineChartComposer extends SelectorComposer<Div> {
 ![](images/BarChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.BarChartComposer">
     <charts id="chart" type="bar" width="480" 
         height="300" title="Bar Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class BarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -743,14 +743,14 @@ public class BarChartComposer extends SelectorComposer<Div> {
 ![](images/XYBarChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYBarChartComposer">
     <charts id="chart" type="bar" width="480" 
         height="300" title="XY Bar Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYBarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -780,14 +780,14 @@ public class XYBarChartComposer extends SelectorComposer<Div> {
 ![](images/StackedBarChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.StackedBarChartComposer">
     <charts id="chart" type="bar" width="480" 
         height="300" title="Stacked Bar Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class StackedBarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -819,14 +819,14 @@ public class StackedBarChartComposer extends SelectorComposer<Div> {
 ![](images/XYStackedBarChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYStackedBarChartComposer">
     <charts id="chart" type="bar" width="480" 
         height="300" title="XY Stacked Bar Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYStackedBarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -860,14 +860,14 @@ public class XYStackedBarChartComposer extends SelectorComposer<Div> {
 ![](images/ColumnChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.ColumnChartComposer">
     <charts id="chart" type="column" width="480" 
         height="300" title="Column Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class ColumnChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -897,14 +897,14 @@ public class ColumnChartComposer extends SelectorComposer<Div> {
 ![](images/XYColumnChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYColumnChartComposer">
     <charts id="chart" type="column" width="480" 
         height="300" title="XY Column Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYColumnChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -934,14 +934,14 @@ public class XYColumnChartComposer extends SelectorComposer<Div> {
 ![](images/StackedColumnChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.StackedColumnChartComposer">
     <charts id="chart" type="column" width="480" 
         height="300" title="Stacked Column Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class StackedColumnChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -973,14 +973,14 @@ public class StackedColumnChartComposer extends SelectorComposer<Div> {
 ![](images/XYStackedColumnChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.XYStackedColumnChartComposer">
     <charts id="chart" type="column" width="480" 
         height="300" title="XY Stacked Column Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class XYStackedColumnChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1012,14 +1012,14 @@ public class XYStackedColumnChartComposer extends SelectorComposer<Div> {
 ![](images/ColumnRangeChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.ColumnRangeChartComposer">
     <charts id="chart" type="columnrange" width="480" 
         height="300" title="Column Range Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class ColumnRangeChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1046,14 +1046,14 @@ public class ColumnRangeChartComposer extends SelectorComposer<Div> {
 
 ![](images/ErrorbarChartDemo.png)
 
-``` xml
+```xml
 <div apply="demo.ErrorBarChartComposer">
     <charts id="chart" type="errorbar" width="480" 
         height="300" title="Error Bar Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class ErrorBarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1083,14 +1083,14 @@ public class ErrorBarChartComposer extends SelectorComposer<Div> {
 ![](images/ScatterChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.ScatterChartComposer">
     <charts id="chart" type="scatter" width="480" 
         height="300" title="Scatter Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class ScatterChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1120,14 +1120,14 @@ public class ScatterChartComposer extends SelectorComposer<Div> {
 ![](images/AreaRangeChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.AreaRangeChartComposer">
     <charts id="chart" type="arearange" width="480" 
         height="300" title="Area Range Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class AreaRangeChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1157,14 +1157,14 @@ public class AreaRangeChartComposer extends SelectorComposer<Div> {
 ![](images/AreaSplineRangeChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.AreaSplineRangeChartComposer">
     <charts id="chart" type="areasplinerange" width="480" 
         height="300" title="Area Spline Range Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class AreaSplineRangeChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1194,14 +1194,14 @@ public class AreaSplineRangeChartComposer extends SelectorComposer<Div> {
 ![](images/BubbleChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.BubbleChartComposer">
     <charts id="chart" type="bubble" width="480" 
         height="300" title="Bubble Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class BubbleChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1231,14 +1231,14 @@ public class BubbleChartComposer extends SelectorComposer<Div> {
 ![](images/WaterfallChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.WaterfallChartComposer">
     <charts id="chart" type="waterfall" width="480" 
         height="300" title="Waterfall Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class WaterfallChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1264,14 +1264,14 @@ public class WaterfallChartComposer extends SelectorComposer<Div> {
 ![](images/DialChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.DialChartComposer">
     <charts id="chart" type="gauge" width="480" 
         height="300" title="Dial Chart Demo"/>
 </div>
 ```
 
-``` java
+```java
 public class DialChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -1307,14 +1307,14 @@ public class DialChartComposer extends SelectorComposer<Div> {
 ![](images/PolarChartDemo.png)
 
 
-``` xml
+```xml
 <div apply="demo.PolarChartComposer">
     <charts id="chart" width="480" height="300" 
         title="Polar Chart Demo" polar="true"/>
 </div>
 ```
 
-``` java
+```java
 public class PolarChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;

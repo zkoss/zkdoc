@@ -21,7 +21,7 @@ rule applies to *treeitem* and *comboitem*.
 
 **TodoTest.java**
 
-``` java
+```java
 
 public class TodoTest {
     @Test

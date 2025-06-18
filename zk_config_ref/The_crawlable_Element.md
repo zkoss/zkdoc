@@ -15,7 +15,7 @@ enable it by using the example below.
 **Suggestion** : If your website is used by external users, turn this on
 for better Search Engine Optimization (SEO).
 
-``` xml
+```xml
 <system-config>
    <crawlable>true</crawlable>
 </system-config>

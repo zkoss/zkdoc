@@ -49,7 +49,7 @@ sources, such as a database, you could override it.
 
 The pseudo code will look like the following:
 
-``` java
+```java
 public class MyUiFactory extends SimpleUiFactory {
     @Override
     public PageDefinition getPageDefinition(RequestInfo ri, String path) {
@@ -75,4 +75,4 @@ by calling
 
 [^1]: Then, the application is able to run in a clustering environment.
     For more information, please refer to the [Clustering
-    section]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration)
+    section]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration)

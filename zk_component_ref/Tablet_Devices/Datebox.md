@@ -3,14 +3,14 @@
 # Datebox
 
 - Component Reference:
-  [Datebox](ZK_Component_Reference/Input/Datebox)
+  [Datebox]({{site.baseurl}}/zk_component_ref/input/datebox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
 
 Big icons for tablet devices
 
-![](images/Datebox_Tablet_Example.png)
+![](/zk_component_ref/images/Datebox_Tablet_Example.png)
 
 # Version History
 

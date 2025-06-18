@@ -1,10 +1,10 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can render a biglistbox with a template. However, notice that,
 unlike other components, biglistbox doesn't allow any child component,
 so you have to render each item as a string. For example,
 
-``` xml
+```xml
 <biglistbox hflex="1" vflex="1" model="${data}" >
     <!-- Template example -->
     <template name="heads">
@@ -28,7 +28,7 @@ where we assume there is a matrix model
 ([FakerMatrixModel](https://github.com/zkoss/zk/blob/master/zktest/src/org/zkoss/zktest/test2/big/FakerMatrixModel.java))
 called `data` such as:
 
-``` java
+```java
 FakerMatrixModel model = new FakerMatrixModel(100, 100);
 ```
 

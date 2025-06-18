@@ -6,14 +6,14 @@ depending on how `createComponents` is called.
 
 It is the same as self.desktop.execution.arg.
 
-``` java
+```java
 params.put("name", "John");
 Executions.createComponents("/my.zul", null, params);
 ```
 
 Then, in my.zul,
 
-``` xml
+```xml
 <window title="${arg.name}">
 ```
 

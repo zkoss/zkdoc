@@ -17,13 +17,13 @@ Follow the simple steps below to start using ZK Spring library.
   classpath.
 - Because ZK Spring depends on ZK, please follow [ZK Installation
   Guide/Quick Start/Create and Run Your First ZK Application
-  Manually](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_Manually)
+  Manually]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_manually)
   to setup ZK first.
 - In addition, you also need to declare Spring ContextLoaderListener in
   the **web.xml** to be able to declare and register your Spring beans
   with Spring framework.
 
-``` xml
+```xml
 
 <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

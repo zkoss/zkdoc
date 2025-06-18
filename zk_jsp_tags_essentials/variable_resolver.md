@@ -17,7 +17,7 @@ Reference](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 
 Fir example,
 
-``` xml
+```xml
 <zk:variable-resolver use="foo.MyResolver"/>
 ...
 <zk:page>

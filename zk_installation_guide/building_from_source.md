@@ -18,7 +18,7 @@ e.g. add a suffix "-xyz".
 
 1. Remove the script related to ZK EE in `bin/upver.sh`.
 
-``` bash
+```bash
 ...
 cd $ZKCML # remove the lines starting here
 upVer zkcml-parent

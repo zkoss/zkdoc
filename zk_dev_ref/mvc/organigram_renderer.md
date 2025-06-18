@@ -9,7 +9,7 @@ to handle the rendering.
 
 For example,
 
-``` java
+```java
     public class MyRenderer implements OrgitemRenderer {
         public void render(Orgitem orgitem, Object data, int index) throws Exception {
             final Button button = new Button(Objects.toString(data));
@@ -32,9 +32,9 @@ For example,
 
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display
-    section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 [^2]: If the Organigram is assigned a template called `model`, then the
     template will be used to render the Organigram. For more
     information, please refer to [the Organigram Template
-    section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Organigram_Template).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template).

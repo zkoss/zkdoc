@@ -14,9 +14,9 @@ any, with the client-side listener.
 
 Here we describe how to handle events at the client. For client-side UI
 manipulation, please refer to the [UI
-Composing](ZK_Client-side_Reference/General_Control/UI_Composing)
+Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing)
 and [Widget
-Customization](ZK_Client-side_Reference/General_Control/Widget_Customization)
+Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization)
 sections.
 
 # Declare a Client-side Listener in ZUML
@@ -38,7 +38,7 @@ declaring a server-side listener, the steps are:
 
 For example,
 
-``` xml
+```xml
 <combobox xmlns:w="client" w:onFocus="this.open()"/>
 ```
 
@@ -46,7 +46,7 @@ Notice that EL expressions are allowed in the JavaScript code (for the
 client-side listener). Thus, it is straightforward to embed the
 server-side data to the client-side listener. For example,
 
-``` xml
+```xml
 <window id="wnd" title="main">
 <combobox xmlns:w="client" w:onFocus="zk.log('${wnd.title}')"/>
 </window>
@@ -57,7 +57,7 @@ If you want to escape it, place a backslash between \$ and {, such as
 
 For more information about manipulating widgets at the client, please
 refer to the [UI
-Composing](ZK_Client-side_Reference/General_Control/UI_Composing)
+Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing)
 section.
 
 ## Client-side Event Listener First then Server-side
@@ -67,7 +67,7 @@ listeners. They will be both invoked. Of course, the client-side
 listener is called first, and then the server-side listener. For
 example,
 
-``` xml
+```xml
   <combobox xmlns:w="client" w:onFocus="this.open()"
    onFocus='self.parent.appendChild(new Label("focus"))'/>
 ```
@@ -80,7 +80,7 @@ receive the event, you could invoke
 For example, the server-side listener won't be invoked in the following
 example:
 
-``` xml
+```xml
   <combobox xmlns:w="client" w:onFocus="this.open(); event.stop();"
    onFocus='self.parent.appendChild(new Label("focus"))'/>
 ```
@@ -96,7 +96,7 @@ The other way to declare a client-side listener at the server is
 <javadoc method="setWidgetListener(java.lang.String, java.lang.String)">org.zkoss.zk.ui.Component</javadoc>.
 For example,
 
-``` java
+```java
 combobox.setWidgetListener("onFocus", "this.open()");
 ```
 
@@ -113,7 +113,7 @@ Listening an event at the client could be done by calling
 <javadoc directory="jsdoc" method="listen(_global_.Map, int)">zk.Widget</javadoc>.
 For example,
 
-``` xml
+```xml
 <window>
     <bandbox id="bb"/>
     <script defer="true">

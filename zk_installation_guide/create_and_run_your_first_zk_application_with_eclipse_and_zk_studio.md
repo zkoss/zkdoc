@@ -5,12 +5,12 @@ to simplify the development of ZK applications with Eclipse.
 
 If you prefer to install it manually or use with other IDE, please refer
 to [Create and Run Your First ZK Application
-Manually](Quick_Start/Create_and_Run_Your_First_ZK_Application_Manually).
+Manually](quick_start/Create_and_Run_Your_First_ZK_Application_Manually).
 
 # Prepare Eclipse
 
 You can follow [ZK Studio Installation
-Guide]({{site.baseurl}}/zk_studio_essentials/Installation) to
+Guide]({{site.baseurl}}/zk_studio_essentials/installation) to
 install ZK Studio. There are prerequisites you have to set up before
 installing ZK Studio:
 
@@ -40,7 +40,7 @@ for a tutorial.
 ## Installing ZK Studio
 
 Please follow the [ installation
-guide](ZK_Studio_Essentials/Installation#Installation_Guide)
+guide]({{site.baseurl}}/zk_studio_essentials/installation#Installation_Guide)
 to install ZK Studio.
 
 ## Application Servers
@@ -83,7 +83,7 @@ To specify the server in Eclipse, please follow the instructions below:
 Select **File \\ New \\ Project...** in Eclipse's menu and it will
 display a new project wizard. Click **ZK Project** to create a new ZK
 project. For detailed steps, please refer to [Create a New ZK
-Project](ZK_Studio_Essentials/Features_of_ZK_Studio/New_ZK_Project)
+Project]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/new_zk_project)
 
 ## Create a new ZUL file
 

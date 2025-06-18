@@ -10,7 +10,7 @@ constructor (without any argument), and implement the
 <javadoc type="interface">org.zkoss.zk.ui.sys.WebAppFactory</javadoc>
 interface.
 
-``` xml
+```xml
 <system-config>
   <web-app-factory-class>foo.MyKillerAppFactory</web-app-factory-class>
 </system-config>

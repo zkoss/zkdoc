@@ -15,7 +15,7 @@ To change the default interpreter for the whole page, you could use the
 directive](ZUML_Reference/ZUML/Processing_Instructions/page)
 by specifying the zscriptLanguage attribute, such as
 
-``` xml
+```xml
 <?page zscriptLanguage="Groovy"?>
 <window border="normal">
     <vbox id="vb">
@@ -32,7 +32,7 @@ by specifying the zscriptLanguage attribute, such as
 You could choose an interpreter for a particular zscript element by
 specifying the language attribute as follows.
 
-``` xml
+```xml
 <zscript language="Ruby">
 (Java::Label.new 'New').parent = $vb
 </zscript>
@@ -43,7 +43,7 @@ specifying the language attribute as follows.
 You could choose an interpreter for a particular event handler by
 prefixing it with the language name as follows.
 
-``` xml
+```xml
 <button label="alert" onClick="python:alert('Hi, Python')"/>
 ```
 
@@ -58,10 +58,10 @@ However, it is easy to extend:
     <javadoc>org.zkoss.zk.scripting.util.GenericInterpreter</javadoc>
     for simplicity.
 2.  Declare the scripting language in either
-    [WEB-INF/zk.xml](ZK_Configuration_Reference/zk.xml/The_zscript-config_Element),
+    [WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_zscript-config_element),
     or `zk/config.xml`.
 
-``` xml
+```xml
 <zscript-config>
     <language-name>SuperJava</language-name><!-- case insensitive -->
     <interpreter-class>my.MySuperJavaInterpreter</interpreter-class>    

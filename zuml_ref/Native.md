@@ -9,7 +9,7 @@ element represents a HTML tag. Unlike the xhtml language, there is no
 component associated with, so the performance is much better but you
 cannot change it dynamically.
 
-``` xml
+```xml
 <n:table xmlns:n="native">
   <n:tr>
     <n:td>Username</n:td>

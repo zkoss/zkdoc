@@ -17,9 +17,9 @@ A container is used to display `navitem`, it should be placed inside a
 
 # Example
 
-![](images/ZKComRef_Nav.png)
+![](/zk_component_ref/images/ZKComRef_Nav.png)
 
-``` xml
+```xml
 <navbar orient="vertical" width="200px">
     <navitem label="Home" iconSclass="z-icon-home" />
     <nav label="Get Started" iconSclass="z-icon-th-list" badgeText="3">
@@ -47,7 +47,7 @@ API. The code snippets as shown below:
 <table>
 <tbody>
 <tr class="odd">
-<td>![](images/ZKComRef_Nav_badgeText.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_badgeText.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">nav</span><span class="ot"> label=</span><span class="st">&quot;Get Started&quot;</span><span class="ot"> iconSclass=</span><span class="st">&quot;z-icon-th-list&quot;</span><span class="ot"> badgeText=</span><span class="st">&quot;3&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">navitem</span><span class="ot"> label=</span><span class="st">&quot;Step One&quot;</span> /&gt;</span>
@@ -84,11 +84,11 @@ opened or closed a nav component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
+`*`[` Nav`]({{site.baseurl}}/zk_component_ref/essential_components/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
 
 # Use Cases
 

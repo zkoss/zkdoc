@@ -4,7 +4,7 @@ To use ZK in a clustering environment, you have to use the serializable
 UI factory. It could be done by specifying the following statement in
 `WEB-INF/zk.xml`:
 
-``` xml
+```xml
     <system-config>
         <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>
     </system-config>
@@ -20,13 +20,13 @@ session is about to deactivate.
 Please refer to the following links for detailed settings.
 
 - [Tomcat
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/Tomcat_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
 - [WebLogic
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/WebLogic_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)
 - [Google App
-  Engine](ZK_Installation_Guide/Setting_up_Servers/Google_App_Engine)
+  Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
 - [JBoss
-  Cluster](ZK_Installation_Guide/Setting_up_Servers/JBoss_Cluster)
+  Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
 
 # Turn on Log
 
@@ -40,7 +40,7 @@ or a listener as serializable.
 
 To detect this problem, you can turn on the logger for
 `org.zkoss.io.serializable` to the DEBUG level (). Please read [
-Logger](ZK%20Developer's%20Reference/Supporting%20Utilities/Logger)
+Logger](ZK_Developer's_Reference/Supporting_Utilities/Logger)
 for details.
 
 # Disable the Use of zscript
@@ -53,7 +53,7 @@ used in a clustering environment. To avoid accidental or unintended use
 it is recommended to disable zscript in your ZK application with the
 following configuration (in zk.xml):
 
-``` xml
+```xml
 <system-config>
     <disable-zscript>true</disable-zscript>
 </system-config>
@@ -68,13 +68,13 @@ double check that none are enabled accidentally.
 ## Event Processing Thread
 
 Do not enable [ the event processing
-thread](ZK_Developer%27s_Reference/UI_Patterns/Event_Threads).
+thread]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads).
 The event processing thread might be suspended, while the (suspended)
 thread cannot be migrated from one machine to another.
 
 It is disabled by default. For more information, please refer to the
 [Event
-Threads]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
+Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
 section.
 
 ## Global Desktop Cache

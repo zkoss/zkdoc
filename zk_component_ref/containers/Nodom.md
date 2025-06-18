@@ -38,7 +38,7 @@ public class MyViewModel {
 
 Try it
 
-* [Nodom Example](https://zkfiddle.org/sample/1l6ppia/2-ZK-Component-Reference-Nodom-Example?v=latest&t=Iceblue%20Compact)
+* [Nodom Example](https://zkfiddle.org/sample/1l6ppia/2-ZK-Component-Reference-Nodom-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Children
 

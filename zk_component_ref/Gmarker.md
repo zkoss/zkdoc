@@ -6,7 +6,7 @@
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: N/A
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -17,7 +17,7 @@ customizable.
 # Example
 
 [
-Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
+Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
 
 # Supported Events
 
@@ -38,7 +38,7 @@ Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
 <p><code>onMapDrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapDropEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/mapdropevent" title="wikilink">
 MapDropEvent</a></p>
 <p>Notifies that some component is dragged and dropped on the gmaps or
 gmarker component with latitude and longitude information.</p></td>
@@ -47,7 +47,7 @@ gmarker component with latitude and longitude information.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Ginfo](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Ginfo#Supported_Events)
+  Ginfo]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo#Supported_Events)
 
 # Supported Children
 

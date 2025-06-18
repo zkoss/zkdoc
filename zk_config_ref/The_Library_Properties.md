@@ -23,7 +23,7 @@ For example,
 
 **Single value**
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.Button.mold</name>
     <value>trendy</value>
@@ -32,7 +32,7 @@ For example,
 
 **Multiple values**
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.proxy.IgnoredProxyClasses</name>
     <appendable>true</appendable>
@@ -51,7 +51,7 @@ For example,
 Notice that **not all properties support this scope**, please check each
 property's page. Put <custom-attributes> in a zul out of any component:
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.listbox.rod="false"/>
 
 <listbox id="box1">
@@ -66,7 +66,7 @@ property's page. Put <custom-attributes> in a zul out of any component:
 Notice that **not all properties support this scope**, please check each
 property's page. Put <custom-attributes> under a specific component:
 
-``` xml
+```xml
 
 <listbox>
     <custom-attributes org.zkoss.zul.listbox.rod="false"/>

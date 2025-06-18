@@ -14,7 +14,7 @@ provide a way to update the timezone information.
 
 2\. In zk.xml, specify file.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.moment.timezone.path</name>
     <value>/data/2017a.json</value>
@@ -28,14 +28,14 @@ tool, and search the following keyword in `zk.wpd`.
 
 Check built-in time zone data:
 
-``` js
+```js
     loadData({
         "version": "2023c",
 ```
 
 Load external data by this property:
 
-``` js
+```js
 var tzdata ={
     "version": "2023d",
 ```

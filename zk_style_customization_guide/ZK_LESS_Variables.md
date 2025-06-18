@@ -9,7 +9,7 @@ feel.
 Define base font styles including font family, font size and
 line-height.
 
-``` css
+```css
 // Font Family
 @baseTitleFontFamily:          "Helvetica Neue", Helvetica, Arial, sans-serif;
 @baseContentFontFamily:        Arial, Sans-serif;
@@ -28,7 +28,7 @@ line-height.
 
 Define base width and height.
 
-``` css
+```css
 // Component Height
 @baseHeight:                   8px;
 @baseIconHeight:               @baseHeight * 2; // 16px
@@ -52,7 +52,7 @@ Define base width and height.
 
 Define text color, border color, background color and gradient colors.
 
-``` css
+```css
 // Text color
 @baseTextColor:                #000000;
 @textColorGray:                #555555;
@@ -77,7 +77,7 @@ Define text color, border color, background color and gradient colors.
 Define icon's font color (all icon font used in ZK comes from
 [font-awesome](http://fortawesome.github.io/Font-Awesome/)).
 
-``` css
+```css
 // Icon Font
 @iconColor:                    #636363;
 @iconHoverColor:               #636363;
@@ -89,7 +89,7 @@ Define icon's font color (all icon font used in ZK comes from
 Define style for component states: active, focus, hover, disabled,
 invalid, read-only, selected, selectedhover, checked, and collapsed.
 
-``` css
+```css
 // Active
 @activeColor:                  @baseTextColor;
 @activeBorderColor:            #499EB3;
@@ -147,7 +147,7 @@ belongs to each individual component.
 Define global border and background style for specific DOM element
 buttons, inputs, and tables.
 
-``` css
+```css
 // Button
 @buttonBorderColor:            #A9A9A9;
 @buttonGradientStart:          #FEFEFE;
@@ -169,7 +169,7 @@ buttons, inputs, and tables.
 
 ## Container Components
 
-``` css
+```css
 // window
 @windowBorderColor:            #9C9C9C;
 @windowBackgroundColor:        #D9E5EF;
@@ -186,7 +186,7 @@ buttons, inputs, and tables.
 
 ## Data Components
 
-``` css
+```css
 // group (group, listgroup)
 @groupGradientStart:           #FFFFFF;
 @groupGradientEnd:             #E9F2FB;
@@ -214,7 +214,7 @@ buttons, inputs, and tables.
 
 ## Essential Components
 
-``` css
+```css
 // popup
 @popupBorderColor:             @baseBorderColor;
 @popupBackgroundColor:         @baseBackgroundColor;
@@ -255,7 +255,7 @@ buttons, inputs, and tables.
 
 ## Input Components
 
-``` css
+```css
 // calendar
 @calendarTitleColor:           @textColorGrayLight;
 @calendarTitleHoverColor:      @textColorGrayLight;
@@ -291,7 +291,7 @@ buttons, inputs, and tables.
 
 ## Layout Components
 
-``` css
+```css
 // splitter (hbox, vbox, borderlayout)
 @splitterSize:                 8px;
 @splitterGradientStart:        #FDFDFD;
@@ -300,7 +300,7 @@ buttons, inputs, and tables.
 
 ## Misc Components
 
-``` css
+```css
 // mask and loading
 @maskBackgroundColor:          #E0E1E3;
 @loadingBackgroundColor:       #E3E3E3;

@@ -18,7 +18,7 @@ first.
 
 - Go to your new project folder, then run the following command:
 
-``` text
+```text
  mvn archetype:generate -DarchetypeCatalog=https://mavensync.zkoss.org/maven2/
 ```
 

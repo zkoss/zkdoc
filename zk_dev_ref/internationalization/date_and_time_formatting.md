@@ -1,10 +1,10 @@
 # Overview
 
 By default, the format of date and time, especially the format of
-[Datebox](ZK_Component_Reference/Input/Datebox) and
-[Timebox](ZK_Component_Reference/Input/Timebox), is
+[Datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
+[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox), is
 determined by the JVM's default and [the current
-locale]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale).
+locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In this section, we will discuss how to configure ZK to use a format
 other than the JVM. For example, you could configure ZK to use the
@@ -34,7 +34,7 @@ The format of date and time is decided in the following sequence.
     <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>.
 4.  If none of them is found, it uses the JVM's default based on [the
     current
-    locale]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale).
+    locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In other words, to configure ZK to use a format other than the JVM's
 default, you have to:
@@ -66,7 +66,7 @@ implementation of
 <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc> in the
 library property. For example,
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.preferred.dateFormatInfo</name>
     <value>foo.MyDateFormatInfo</value>
@@ -85,7 +85,7 @@ session's attribute.
 
 For example, you could do this when a user logins.
 
-``` java
+```java
 import org.zkoss.web.Attributes;
 ...
 
@@ -102,12 +102,12 @@ where we assume the implementation is named `foo.MyDateFormatInfo`.
 
 ## Per-component Format
 
-[Datebox](ZK_Component_Reference/Input/Datebox) and
-[Timebox](ZK_Component_Reference/Input/Timebox) allow a
+[Datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
+[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox) allow a
 developer to specify any format they prefer for any instance. For
 example,
 
-``` xml
+```xml
 <datebox format="MM d, yyyy"/>
 <timebox format="HH:mm"/>
 ```
@@ -123,7 +123,7 @@ There are four different styles: short, medium, long and full
 (representing the styling defined in java.text.DateFormat, SHORT,
 MEDIUM, LONG and FULL). For example,
 
-``` xml
+```xml
 <datebox format="short"/>
 <datebox format="long"/>
 <timebox format="medium"/>
@@ -136,7 +136,7 @@ any, or the JVM's default.
 In addition, you could specify the date/time format in the syntax of
 `styling_for_date+styling_for_time`, such as:
 
-``` xml
+```xml
 <datebox format="long+medium"/>
 ```
 
@@ -146,12 +146,12 @@ the medium styling for time.
 ### Per-component Locale
 
 In addition to [the current
-locale]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale),
+locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale),
 you could specify the locale for individual instances of datebox and
 timebox. Then, the real format will depend on the locale and the format
 you specified. For example,
 
-``` xml
+```xml
 <datebox format="medium" locale="de"/>
 <timebox format="long" locale="fr"/>
 ```
@@ -168,7 +168,7 @@ text by yourselves.
 
 The default values in English are:
 
-``` javascript
+```javascript
 zk.DOW_1ST=0;
 zk.MINDAYS=1;
 zk.ERA="AD";
@@ -184,14 +184,14 @@ zk.APM=['AM','PM'];
 
 You can override just part of them like:
 
-``` javascript
+```javascript
 zk.afterLoad('zul.lang', function() {
     zk.SDOW=['Sun_gl','Mon_gl','Tue_gl','Wed_gl','Thr_gl','Fri_gl','Sat_gl']; //set your date string
 });//zk.afterLoad
 ```
 
 You can load the JavaScript file as a [ locale dependent
-JavaScript]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale-Dependent_Resources)
+JavaScript]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
 to override the date string for a specific locale.
 
 # Version History

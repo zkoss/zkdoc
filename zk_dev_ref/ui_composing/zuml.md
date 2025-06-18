@@ -9,7 +9,7 @@ assigned to the created component. Each XML processing instruction
 describes how to process the whole page, such as the page title. For
 example,
 
-``` xml
+```xml
 <?page title="Super Application"?>
 <window title="Super Hello" border="normal">
     <button label="hi" onClick='alert("hi")'/>
@@ -30,7 +30,7 @@ If you prefer not to use ZK Studio, you could specify the XML schema in
 a ZUML document as shown below. Many XML editors work better, such as
 when with auto-complete, if XML schema is specified correctly.
 
-``` xml
+```xml
  <window xmlns="http://www.zkoss.org/2005/zul"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd">
@@ -40,7 +40,7 @@ The ZUL schema can be downloaded from
 [<http://www.zkoss.org/2005/zul/zul.xsd>](http://www.zkoss.org/2005/zul/zul.xsd).
 In addition, you can find `zul.xsd` under the `dist/xsd` directory in
 the [ZK binary
-distribution](ZK_Installation_Guide/ZK_Background/The_Content_of_ZK_Binary_Distribution).
+distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
 
 This section is about the general use of ZUML. For a complete reference,
 please refer to [ZUML Reference](ZUML_Reference).

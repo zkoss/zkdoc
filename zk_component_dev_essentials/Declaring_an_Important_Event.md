@@ -10,7 +10,7 @@ CE_REPEAT_IGNORE please refer to the Java API:
 For example, we require the <mp>onClear</mp> event to be sent to the
 server at all times so we are required to declare the following:
 
-``` java
+```java
 static {
         addClientEvent(SimpleLabel.class, ClearEvent.NAME, CE_IMPORTANT);
     }

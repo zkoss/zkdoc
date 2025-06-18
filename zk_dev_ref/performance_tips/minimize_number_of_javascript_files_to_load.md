@@ -46,13 +46,13 @@ JavaScript files that will be initially loaded:
 This means that the browser will trigger 15 requests to load the 15
 JavaScript files. Even if each file is not too big, it still takes more
 time to connect to the server and download it. However, we can specify a
-[ DSP]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/DSP)
+[ DSP]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
 file to include several JavaScript into one and declare it at the top of
 the index.zul.
 
 For example, **/macros/zksandbox.js.dsp**
 
-``` xml
+```xml
 <%@ page contentType="text/javascript;charset=UTF-8" %>
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 <%@ taglib uri="http://www.zkoss.org/dsp/zk/core" prefix="z" %>
@@ -89,7 +89,7 @@ ${z:setCWRCacheControl()}
 
 **index.zul**
 
-``` xml
+```xml
 <?script type="text/javascript" src="/macros/zksandbox.js.dsp"?>
 // omitted
 ```
@@ -99,14 +99,14 @@ ${z:setCWRCacheControl()}
 If a package is used by all your pages, you could configure it system
 wide by specifying the packages in the language add-on. Please refer to
 [ZK Configuration Reference/zk.xml/The language-config
-Element](ZK_Configuration_Reference/zk.xml/The_language-config_Element)
+Element]({{site.baseurl}}/zk_config_ref/the_language-config_element)
 for how to specify a language add-on.
 
 For example, if the zul.wnd package
 (<javadoc directory="jsdoc">zul.wnd.Window</javadoc>) is required for
 all pages, then you could add the following to the language add-on.
 
-``` xml
+```xml
 <javascript package="zul.wnd" merge="true"/>
 ```
 
@@ -131,7 +131,7 @@ As described above, both `zul` and `zul.wgt` packages are merged into
 the `zk` package. If you prefer to load them separately, you could
 disable it by specifying the ondemand attribute as follows.
 
-``` xml
+```xml
 <javascript package="zul" ondemand="true"/>
 <javascript package="zul.wgt" ondemand="true"/>
 ```

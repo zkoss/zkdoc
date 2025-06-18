@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @GlobalCommand
 
 @GlobalCommand("commandName")
@@ -26,14 +26,14 @@ Example
 =======
 
 #### Method name as command name
-``` java
+```java
 @GlobalCommand
 public void show() {
     // method body
 }
 ```
 #### Specify command name
-``` java
+```java
 @GlobalCommand("delete")
 @Command("delete")
 public void deleteOrder() {

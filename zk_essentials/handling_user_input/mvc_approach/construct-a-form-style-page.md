@@ -28,13 +28,13 @@ We build the frame of this form first:
 ```
 
 -   Line 4, 5:
-    [`<caption>`](https://books.zkoss.org/wiki/ZK_Component_Reference/Containers/Caption)
-    can be used to build compound header with an image for a [`<window>`](https://books.zkoss.org/wiki/ZK_Component_Reference/Containers/Window ).
--   Line 6: [`<vlayout>`](https://books.zkoss.org/wiki/ZK_Component_Reference/Layouts/Vlayout) is
+    [`<caption>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/caption)
+    can be used to build compound header with an image for a [`<window>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/window ).
+-   Line 6: [`<vlayout>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/vlayout) is
     a light-weight layout component which arranges its child components
     vertically without splitter, align, and pack support.
 -   Line 11:
-[`<hlayout>`](https://books.zkoss.org/wiki/ZK_Component_Reference/Layouts/Hlayout), like `<vlayout>`, but arranges its child components horizontally.
+[`<hlayout>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/hlayout), like `<vlayout>`, but arranges its child components horizontally.
 
 
 ##A Grid Makes a Form
@@ -98,9 +98,9 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
             </rows>
         </grid>
 ```
-- Line 3: [`hflex="min"`](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility) can limit the column's width just wider enough to hold each row's content without a line break.
+- Line 3: [`hflex="min"`]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility) can limit the column's width just wider enough to hold each row's content without a line break.
 -   Line 8:
-[`<cell>`](https://books.zkoss.org/wiki/ZK_Component_Reference/Supplementary/Cell) is
+[`<cell>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/supplementary/cell) is
     used inside `<row>`, `<hbox>`, or `<vbox>` to fully control a column's align, row/column span, and width in an individual row.
 
 

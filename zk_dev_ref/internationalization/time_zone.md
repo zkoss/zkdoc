@@ -40,7 +40,7 @@ If you want to use the same time zone for all users of the same
 application, you can specify the time zone in the library property. For
 example, you could specify the following in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.preferred.timeZone</name>
     <value>GMT-8</value>
@@ -56,7 +56,7 @@ Furthermore, to avoid typos, you could use
 <javadoc method="PREFERRED_TIME_ZONE">org.zkoss.web.Attributes</javadoc>
 as follows.
 
-``` java
+```java
 Library.setProperty(Attributes.PREFERRED_TIME_ZONE, "PST");
 ```
 
@@ -68,7 +68,7 @@ the attribute in a session.
 
 For example, you can do this when a user logins.
 
-``` java
+```java
  void login(String username, String password) {
      //check password
      ...
@@ -89,5 +89,5 @@ mentioned above.
 Like configuring a locale, you can prepare the time zone for the given
 session by the use of the request interceptor. Please refer to [the
 Locale
-section]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale#The_Request_Interceptor)
+section]({{site.baseurl}}/zk_dev_ref/internationalization/locale#The_Request_Interceptor)
 for more information.

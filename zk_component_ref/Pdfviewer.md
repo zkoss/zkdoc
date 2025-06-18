@@ -18,9 +18,9 @@ in a browser.
 
 # Example
 
-![](images/ZK-pdfviewer-example.png)
+![](/zk_component_ref/images/ZK-pdfviewer-example.png)
 
-``` xml
+```xml
 <pdfviewer src="/pdf/sample.pdf" />
 ```
 
@@ -35,7 +35,7 @@ Pdfviewer accepts only one child: <toolbar>. You can customize the
 toolbar by adding your own one. By default, the position of the toolbar
 is at the top. You can use CSS to do more tweaks.
 
-``` xml
+```xml
 <pdfviewer id="pv2">
   <toolbar>
     <toolbarbutton iconSclass="z-icon-fw z-icon-fast-backward"
@@ -59,7 +59,7 @@ now.
 
 Or just specify it as an initial zoom level:
 
-``` xml
+```xml
 <pdfviewer id="pv" src="/pdf/sample.pdf" zoom="fit-page-width" />
 ```
 
@@ -77,7 +77,7 @@ responding to user interaction (i.g. event handlers). Therefore the
 component only provides a client-side method `toggleFullscreen()` to
 enable the full-screen mode.
 
-``` xml
+```xml
 <pdfviewer id="pv" src="/pdf/sample.pdf" />
 <button xmlns:w="client" w:onClick="zk.$('$pv').toggleFullscreen()" />
 ```
@@ -88,7 +88,7 @@ This component depends on <https://github.com/mozilla/pdf.js>. To check
 the bundled pdfjs version, open a browser developer tool \> Console tab,
 and run the code below:
 
-``` js
+```js
 pdfjsLib.version
 ```
 
@@ -142,7 +142,7 @@ has changed the rotation angle.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

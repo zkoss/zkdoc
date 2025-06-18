@@ -9,7 +9,7 @@ when developing (hot-swap).
 
 `Default: false`
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.disableMethodCache</name>
     <value>true</value>

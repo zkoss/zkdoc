@@ -20,7 +20,7 @@ Create this binding on a component's custom attribute whose name can be referred
 Example
 =======
 
-``` xml
+```xml
 <div p="@ref(vm.selectedPerson)">
     <label value="@load(p.id)"/>
     <label value="@load(p.name)"/>

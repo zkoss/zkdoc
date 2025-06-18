@@ -16,13 +16,13 @@ Then update the point's position like below:
 
 ### shift.zul
 
-``` xml
+```xml
 <charts id="chart" type="bubble" apply="org.zkoss.zkcharts.essentials.ShiftComposer"/>
 ```
 
 ### ShiftComposer.java
 
-``` java
+```java
 public class ShiftComposer extends SelectorComposer<Window> {
     @Wire
     Charts chart;
@@ -55,7 +55,7 @@ What if we want to select the bubble and move it to the location where
 the mouse was clicked? It can be done by modifying the previous sample
 code as below:
 
-``` java
+```java
     ...
 
     public void doAfterCompose(Window comp) throws Exception {

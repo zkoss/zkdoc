@@ -11,5 +11,5 @@ like to modify zk-labels.properties without restarting the server, you
 could disable it.
 
 Please refer to [ZK Developer's Reference:
-Internationalization]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels)
+Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 for more information about zk-label.properties.

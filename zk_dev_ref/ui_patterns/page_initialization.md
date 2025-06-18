@@ -10,7 +10,7 @@ This can be done easily by implementing
 and then specifying it with [the init
 directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 
-``` xml
+```xml
 <?init class="com.foo.MyInitial"?>
 ```
 
@@ -31,7 +31,7 @@ For example, suppose we have a class, `CustomerManager`, that can be
 used to load all customers, then we could prepare a variable to store
 all customers as follows.
 
-``` java
+```java
 public class AllCustomerFinder implements Initiator, InitiatorExt {
 
     @Override
@@ -45,7 +45,7 @@ public class AllCustomerFinder implements Initiator, InitiatorExt {
 
 Then, we could use the initiator in a ZUML document as follows.
 
-``` xml
+```xml
  <?init class="my.AllCustomerFinder" name="customers"?>
 
  <listbox id="personList" width="800px" rows="5">
@@ -71,9 +71,9 @@ page.
 It could be done by specifying the initiator you implemented in
 `WEB-INF/zk.xml` as follows. For more information, please refer to [ZK
 Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_listener_Element).
+Reference]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
-``` xml
+```xml
 <listener>
     <listener-class>foo.MyInitiator</listener-class>
 </listener>
@@ -97,7 +97,7 @@ a page by implementing
 > listener, which could be handled by the use of
 > <javadoc type="interface">org.zkoss.zk.ui.util.ExecutionCleanup</javadoc>.
 
-``` java
+```java
 import org.zkoss.zk.ui.Page;
 import org.zkoss.zk.ui.util.Initiator;
 import org.zkoss.zk.ui.util.InitiatorExt;

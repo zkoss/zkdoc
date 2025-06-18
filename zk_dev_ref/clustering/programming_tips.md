@@ -20,7 +20,7 @@ environment, but there are some limitations.
 - BeanShell's function is not serializable. For example, the following
   won't work:
 
-``` xml
+```xml
 void foo() {
 }
 ```
@@ -29,7 +29,7 @@ void foo() {
 
 Notice that it is not recommended to use zscript in the clustering
 environment. After all, the [performance of
-BeanShell]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
+BeanShell]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
 is not good.
 
 ## Event Listeners
@@ -44,7 +44,7 @@ The simplest way to make an event listener serializable is to implement
 
 For example,
 
-``` java
+```java
 button.addEventListener(Events.ON_CLICK,
   new SerializableEventListener() {
     public void onEvent(Event event) {
@@ -158,10 +158,10 @@ between the requests.
 
 It also implies you cannot use a working thread to handle a long
 operation. Rather, you have to use the so-called [Echo
-Event]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Firing#Echo_an_Event).
+Event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing#Echo_an_Event).
 
 Users of ZK 5.0.5 or prior cannot deploy the [event
-queues]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 for the session and application scope. However, users of ZK 5.0.6 or
 later have no such limitation.
 

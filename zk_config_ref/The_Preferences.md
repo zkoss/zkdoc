@@ -11,7 +11,7 @@ retrieved by use of
 
 For example,
 
-``` xml
+```xml
 <preference>
     <name>org.zkoss.zk.ui.WebApp.name</name>
     <value>My Killer Application</value>

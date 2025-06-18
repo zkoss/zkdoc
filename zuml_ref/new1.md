@@ -1,4 +1,4 @@
-``` java
+```java
 Object new1(Object cls, Object arg);
 ```
 

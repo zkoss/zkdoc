@@ -1,10 +1,10 @@
 ZK JSP Tags support all [ZUL components](ZK_Component_Reference). That is, every ZUL
 component has a corresponding JSP tag. If you want to make your custom
-ZK component(ex: a [ Composite Component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component) as a JSP tag, you could do as follows:
+ZK component(ex: a [ Composite Component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) as a JSP tag, you could do as follows:
 
 1\. Create a Java class like this:
 
-``` java
+```java
 public class FooTag extends org.zkoss.jsp.zul.impl.BranchTag {
     protected String getJspTagName(){
         return "foo";// the component name you defined in lang-addon.xml
@@ -17,13 +17,13 @@ be used to look for the component definition from [the ZUL component
 set](ZUML_Reference/ZUML/Languages/ZUL).
 
 Notice that the name must be the same you specify in your [component
-definition](ZK_Client-side_Reference/Language_Definition).
+definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
 
 2\. Follow the JSP specification to declare your JSP tag in
 [TLD](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPTags6.html).
 For example:
 
-``` xml
+```xml
 <tag>
 <name>foo</name>
     <tag-class>com.foo.FooTag</tag-class>

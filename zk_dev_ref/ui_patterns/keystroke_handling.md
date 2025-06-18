@@ -16,7 +16,7 @@ To handle ESC key pressing, you can listen to the event:
 
 For example:
 
-``` xml
+```xml
     <grid id="form" apply="org.zkoss.reference.developer.uipattern.KeystrokeComposer">
         <rows>
             <row>Username:
@@ -34,10 +34,10 @@ For example:
 ```
 
 Then, you could implement [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
 as follows.
 
-``` java
+```java
 package org.zkoss.reference.developer.uipattern;
 
 import org.zkoss.zk.ui.Component;
@@ -98,7 +98,7 @@ them specifies the `ctrlKeys` property that matches the keystroke.
 
 For example,
 
-``` xml
+```xml
 <vbox ctrlKeys="@c^a#f10^#f3" onCtrlKey="doSomething(event.getKeyCode())">
     <textbox/>
     <datebox/>
@@ -271,13 +271,13 @@ below:</p></td>
 # Document-level Keystrokes
 
 If you set the library property
-[org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled)
+[org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.invokefirstrootforafterkeydown.enabled)
 to `true` and there is no widget gaining a focus when an end-user
 presses a keystroke, ZK will fire a key event to **the first root
 component that has an onCtrlKey listener**. For example, when visiting
 the following page, the `div` component will receive the `onOK` event.
 
-``` xml
+```xml
 <div onOK="doSomething(event)" ctrlKeys="^K" onCtrlKey="doSomething(event)" >
 press enter key or ctrl+k.
 <zscript><![CDATA[
@@ -296,7 +296,7 @@ even though no widget ever gains the focus.
 Keystrokes are propagated up from the widget gaining the focus to the
 first ancestor widget that handles the keystroke. For example,
 
-``` xml
+```xml
 <div onOK="doFirst()">
    <textbox id="t1"/>
    <div onOK="doSecond()">

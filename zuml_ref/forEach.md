@@ -22,7 +22,7 @@ For each iteration, two variables, `each` and `forEachStatus`, are
 assigned automatically to let developers control how to evaluate the
 associated element.
 
-``` xml
+```xml
 
 <hbox>
     <zscript>
@@ -59,6 +59,6 @@ and/or
 [forEachEnd](ZUML_Reference/ZUML/Attributes/forEachEnd).
 
 Fore more examples, please refer to [ZK Developer's Reference: Iterative
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Iterative_Evaluation).
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
 
 

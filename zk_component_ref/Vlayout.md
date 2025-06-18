@@ -14,16 +14,16 @@ components will be placed underneath each other in a column.
 
 Notice that hlayout and vlayout do not support splitter, alignment and
 packing. If you need them, please use [ZK Component
-Reference/Layouts/Hbox](ZK_Component_Reference/Layouts/Hbox)
+Reference/Layouts/Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox)
 and [ZK Component
-Reference/Layouts/Vbox](ZK_Component_Reference/Layouts/Vbox)
+Reference/Layouts/Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox)
 instead.
 
 # Example
 
-![](images/ZKComRef_Hlayout_Simple_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
 
-``` xml
+```xml
 <zk>
      <vlayout>
          <button label="Button 1"/>
@@ -41,7 +41,7 @@ instead.
 The default spacing between two child components is `0.3em`. You could
 modify it if you like:
 
-``` xml
+```xml
 <hlayout spacing="0">
   <textbox/>
   <button label="Click Me"/>
@@ -58,7 +58,7 @@ The window's height below (line 6) will grow when we hide the
 blue-background div. This also works for `vflex="min"` which doesn't
 auto resize in a normal case.
 
-``` xml
+```xml
     <vlayout height="400px" style="border: solid 1px">
         <button onClick="div.setVisible(false)" label="hide the blue box below"/>
         <div style="height: 400px;background-color: lightblue" id="div">
@@ -75,7 +75,7 @@ auto resize in a normal case.
 The default align is left. You can change by specifying a CSS rule at
 "style": `text-align:right`, `text-align:center`
 
-``` XML
+```xml
         <vlayout style="text-align:right">
             <button/>
             <button/>

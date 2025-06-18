@@ -10,7 +10,7 @@ For example, tabbox supports both `default` and `accordion` molds.
 
 If `tabbox`'s `mold` is not set, it uses the default mold.
 
-``` xml
+```xml
 <tabbox>
     <tabs>
         <tab label="First tab" />
@@ -22,7 +22,7 @@ If `tabbox`'s `mold` is not set, it uses the default mold.
 
 And you could set `tabbox`'s mold to "accordion" to change the look.
 
-``` xml
+```xml
 <tabbox mold="accordion">
     <tabs>
         <tab label="First tab" />
@@ -40,4 +40,4 @@ Reference](ZK_Component_Reference).
 # Custom Mold
 
 To largely change how a component renders in a browser, see
-[ZK_Client-side_Reference/Customization/Custom_Mold](ZK_Client-side_Reference/Customization/Custom_Mold).
+[{{site.baseurl}}/zk_client_side_ref/customization/custom_mold]({{site.baseurl}}/zk_client_side_ref/customization/custom_mold).

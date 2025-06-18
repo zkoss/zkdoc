@@ -11,7 +11,7 @@ widget's methods you specified and does not affect other widgets on the
 same page. For example, suppose you want to change a label's CSS style
 when its value is changed, then you can write the code as follows:
 
-``` xml
+```xml
 <zk xmlns:w="http://www.zkoss.org/2005/zk/client">
       <label>
             <attribute w:name="setValue">
@@ -47,7 +47,7 @@ where
 - You can specify EL expressions in the content of the attribute, such
   as
 
-``` xml
+```xml
 <label w:setValue='function (value) { this.$setValue(value + "${whatever}")}' />
 ```
 
@@ -62,7 +62,7 @@ by the use of
 <javadoc method="setWidgetOverride(java.lang.String, java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
 at the server. For example,
 
-``` java
+```java
 myLabel.setWidgetOverride("setValue",
     "function (value) {this.$setValue('overloaded setValue');}");
 ```
@@ -80,7 +80,7 @@ Property](http://www.w3schools.com/jsref/jsref_prototype_math.asp)).
 
 For example,
 
-``` xml
+```xml
 <window xmlns:w="http://www.zkoss.org/2005/zk/client">
     <label id="labelone" value="label one"/>
     <label id="labeltwo" value="label two"/>
@@ -105,7 +105,7 @@ overriden.
 It's easy to include an overridden js in multiple zul files. Here is a
 sample:
 
-``` js
+```js
 zk.afterLoad('zul.inp', function() { //specify zk widget package name
     var exWidget = {};
     zk.override(zul.inp.ComboWidget.prototype, exWidget, { //specify zk full widget name
@@ -128,7 +128,7 @@ You can override a method or a field no matter it exists or not. For
 example, you can use this feature to pass an application-specific data
 to a widget, such as
 
-``` xml
+```xml
 <label value="hello" w:myOption="'${param.enabled}'"/>
 ```
 
@@ -142,7 +142,7 @@ anything, such as `new Date()`.
 You could specify your own implementation instead of the default widget
 class (at the client) as follows.
 
-``` xml
+```xml
 <zk xmlns:w="http://www.zkoss.org/2005/zk/client">
   ...
   <button w:use="foo.MyButton"/>
@@ -151,7 +151,7 @@ class (at the client) as follows.
 
 where `foo.MyButton` is a widget you implement. For example,
 
-``` javascript
+```javascript
 zk.$package("foo");
 zk.afterLoad("zul.wgt", function () {
   foo.MyButton = zk.$extends(zul.wgt.Button, {
@@ -178,7 +178,7 @@ include it to take effect on widgets.
 If you just want to override widgets on some pages, you can use one of
 the following:
 
-- \[\[ZK_Component_Reference/Essential_Components/Script\|
+- \[\[{{site.baseurl}}/zk_component_ref/essential_components/script\|
   <script>
 
   component\]\]
@@ -196,12 +196,8 @@ the following:
 To override all widgets in the whole application, you need to include
 the js file in every page with:
 
-- \[\[ZK%20Configuration%20Reference/zk.xml/The%20device-config%20Element/The%20embed%20Element
-  \|
-  <embed>
-
-  in zk.xml\]\]
-- [ZK_Client-side_Reference/Language_Definition/javascript](ZK_Client-side_Reference/Language_Definition/javascript)
+- [<embed> in zk.xml]({{site.baseurl}}/zk_config_ref/the_device_config_element/the_embed_element)
+- [{{site.baseurl}}/zk_client_side_ref/language_definition/javascript]({{site.baseurl}}/zk_client_side_ref/language_definition/javascript)
 
 # The Client-Attribute Namespace
 
@@ -217,14 +213,14 @@ the browser -- ZK does not handle or filter it at all.
 For example, you want to listen to the `onload` event, and then you can
 do as follows. Fore more information, please refer to [ZK Component
 Reference:
-iframe](ZK_Component_Reference/Essential_Components/Iframe#onload).
+iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
 
-``` xml
+```xml
 <iframe src="http://www.google.com"  height="300px"
   xmlns:ca="client/attribute" ca:onload="do_whater_you_want()"/>
 ```
 
-``` xml
+```xml
 <zk xmlns:ca="client/attribute">
     HTML 5 spell check enabled:
     <textbox ca:spellcheck="true"/>
@@ -234,7 +230,7 @@ iframe](ZK_Component_Reference/Essential_Components/Iframe#onload).
 If the attribute contains colon or other special characters, you can use
 the `attribute` element as follows:
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
   <attribute ca:name="ns:whatever">
   whatever_value_you_want

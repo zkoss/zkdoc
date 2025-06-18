@@ -6,16 +6,16 @@
 `[Since 6.5.2]`
 
 It specifies the image will be preloaded or not for
-[LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement)
+[LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
 and
-[Image](ZK_Component_Reference/Essential_Components/Image)
+[Image]({{site.baseurl}}/zk_component_ref/essential_components/image)
 component.
 
 If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor
 components.
 
-``` xml
+```xml
 <image>
     <custom-attributes org.zkoss.zul.image.preload="true"/>
 ...

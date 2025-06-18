@@ -20,7 +20,7 @@ field or method parameter is of type
 will be wired to the correct implicit object. However, in other cases,
 an exception will be thrown.
 
-``` java
+```java
 public class FooComposer extends SelectorComposer<Window> {
     
     @WireVariable
@@ -51,7 +51,7 @@ annotation or [the variable-resolver
 directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 Here is the example of registering variable resolvers with annotations.
 
-``` java
+```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooComposer extends SelectorComposer<Gird> {
 ....
@@ -63,7 +63,7 @@ a variable, you have to annotate it with the
 <javadoc type="interface">org.zkoss.zk.ui.select.annotation.WireVariable</javadoc>
 annotation. For example,
 
-``` java
+```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooComposer extends SelectorComposer<Gird> {
     @WireVariable
@@ -85,7 +85,7 @@ with `@VariableResolver`. Then, you can annotate `@WireVariable` to wire
 a Spring-managed bean. It's wired according to its variable name as the
 bean's \*id\*. For example,
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class PasswordSetter extends SelectorComposer<Window> {
     @WireVariable
@@ -108,7 +108,7 @@ Notice that the variables are wired before instantiating the component
 and its children, so you can use them in EL expressions. For example,
 assume we have a composer as follows.
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class UsersComposer extends SelectorComposer<Window> {
     @WireVariable
@@ -123,7 +123,7 @@ public class UsersComposer extends SelectorComposer<Window> {
 Then, you could reference to `getUsers()` in the ZUML document. For
 example,
 
-``` xml
+```xml
 <window apply="UsersComposer">
     <grid model="${$composer.users}">
 ...
@@ -131,7 +131,7 @@ example,
 
 where `$composer` is a built-in variable referring to the composer. For
 more information, please refer to [the Composer
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 > ------------------------------------------------------------------------
 >
@@ -143,13 +143,13 @@ There is a tendency to make the composer a Spring-managed bean. For
 example, assume we have a composer called `passwordSetter` and managed
 by Spring, then we might do as follows.
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window apply="${passwordSetter}">
 ...
 ```
 
-``` java
+```java
 @Component
 public class PasswordSetter extends SelectorComposer {
    @Autowired User user;
@@ -206,10 +206,10 @@ Searching in zscript and xel variables can be enabled with library
 properties:
 
 [enable zscript variable
-wiring](ZK%20Configuration%20Reference/zk.xml/The%20Library%20Properties/org.zkoss.zk.ui.composer.autowire.zscript)
+wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.zscript)
 
 [enable xel variable
-wiring](ZK%20Configuration%20Reference/zk.xml/The%20Library%20Properties/org.zkoss.zk.ui.composer.autowire.xel)
+wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.xel)
 
 # Wire CDI-managed Beans
 

@@ -11,7 +11,7 @@ only for browsers that support WebSocket natively.
 
 To enable WebSocket connection, add the following listener into zk.xml
 
-``` xml
+```xml
 <listener>
     <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>
 </listener>

@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Scrollview</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Scrollview</javadoc>
-- Style Guide: N/A
+
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Employment/Purpose
@@ -36,7 +36,7 @@ You can scroll up/down to see other window components with the following
 sample ZUL.
 [image:ScrollviewExample_Update.png](image:ScrollviewExample_Update.png)
 
-``` xml
+```xml
 <scrollview vflex="1" hflex="1">
     <zk forEach="1,2,3,4,5">
         <window title="window ${each}" border="normal" >
@@ -53,7 +53,7 @@ sample ZUL.
 The default orient of child components inside Scrollview is
 **`vertical`**. You can also change it to **`horizontal`**.
 
-``` xml
+```xml
 <scrollview vflex="1" hflex="1" orient="horizontal" />
 ```
 
@@ -96,7 +96,7 @@ user is scrolling a scrollable component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

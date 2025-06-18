@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Borderlayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Borderlayout</javadoc>
-- Style Guide:
-  [Borderlayout]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Borderlayout/Default)
+
 
 # Employment/Purpose
 
@@ -24,7 +23,7 @@ all kinds of components) to form a complicated layout.
 
 ![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
-``` xml
+```xml
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
@@ -179,7 +178,7 @@ visible unless user mouse over on the region. To turn off the floating
 scrollbar and use browser's default scrollbar, please add the following
 configuration in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.nativebar</name>
     <value>true</value>
@@ -193,7 +192,7 @@ include version-badge.html version=7.0.2 %}
 
 - To make Borderlayout dependable on the size of its child components,
   [vflex
-  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/Hflex_and_Vflex#Minimum_Flexibility)
+  feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
@@ -231,7 +230,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
   a container, users have to specify a fixed height in order for
   Borderlayout to be visible.
 
-``` xml
+```xml
 <zk>
     <window title="win" border="normal">
         <borderlayout height="200px">
@@ -259,7 +258,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
   component, therefore, users can also put Borderlayout in a container
   with a fixed height.
 
-``` xml
+```xml
 <zk>
     <window title="win" border="normal" height="200px">
         <borderlayout>
@@ -295,7 +294,7 @@ to disable the animation effects of this component.
 If you prefer to disable the animation effects as default, you could
 configure ZK by adding the following to `/WEB-INF/zk.xml`
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.borderlayout.animation.disabled</name>
     <value>true</value>
@@ -324,11 +323,11 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
-`*`[` North`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/North)`, `[` South`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/South)`, `[` Center`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/Center)`, `[` West`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/West)`, `[` East`]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout/East)
+`*`[` North`]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north)`, `[` South`]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/south)`, `[` Center`]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/center)`, `[` West`]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/west)`, `[` East`]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/east)
 
 # Use Cases
 

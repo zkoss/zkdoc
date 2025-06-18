@@ -18,7 +18,7 @@ data. It accepts a TreeModel.
 
 ![](/zk_component_ref/images/cascader-basic.png)
 
-``` xml
+```xml
     <zscript><![CDATA[
     DefaultTreeModel treeModel = new DefaultTreeModel(new DefaultTreeNode("ROOT",
             Arrays.asList(new DefaultTreeNode[]{
@@ -120,7 +120,7 @@ the client.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent#Supported_Events)
+  HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

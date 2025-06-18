@@ -9,7 +9,7 @@ ListModel, render required Row(s)/Listitem(s) on the server, then create
 only the required corresponding widgets and render the DOM elements
 really needed in the browser. It improves the performance and saves
 memory significantly on both the server and browser sides.
-![]({{site.baseurl}}/zk_dev_ref/images/Rod_demonstration.gif)
+![]({{site.baseurl}}/zk_dev_ref/images/rod_demonstration.gif)
 
 # Prerequisite
 
@@ -23,7 +23,7 @@ any performance benefits on the server-side. (The client-side still
 enjoys a boost.)
 
 Notice that you can [ enable this feature in different
-scopes](ZK_Configuration_Reference/zk.xml/The_Library_Properties).
+scopes]({{site.baseurl}}/zk_config_ref/the_library_properties).
 
 # Grid
 
@@ -31,7 +31,7 @@ If you want to enable Grid ROD for the whole application, you can
 specify a library property called <javadoc>org.zkoss.zul.Grid</javadoc>
 rod with `true`. For example, specify the following in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.grid.rod</name>
     <value>true</value>
@@ -42,7 +42,7 @@ Or, if you prefer to enable it for a particular page, then specify
 `true` to a page's attribute called
 <javadoc>org.zkoss.zul.Grid</javadoc> rod, such as
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.grid.rod="true" scope="page"/>
 ```
 
@@ -50,7 +50,7 @@ Or, if you prefer to enable it for all descendant grids of a particular
 component, then specify `true` to the component's attribute. You can
 enable it for a subset of the descendant grids. For example,
 
-``` xml
+```xml
 <window>
   <custom-attributes org.zkoss.zul.grid.rod="true"/> <!-- enable it for descendant grids of window -->
   <grid ...>
@@ -88,7 +88,7 @@ considered if Grid is using live data
 not using paging mold
 (<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.grid.initRodSize="30"/>
 ```
 
@@ -99,7 +99,7 @@ specify a library property called
 <javadoc>org.zkoss.zul.Listbox</javadoc> rod with `true`. For example,
 specify the following in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.listbox.rod</name>
     <value>true</value>
@@ -110,7 +110,7 @@ Or, if you prefer to enable it for a particular page, then specify
 `true` to a page's attribute called
 <javadoc>org.zkoss.zul.Listbox</javadoc> rod, such as
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.listbox.rod="true" scope="page"/>
 ```
 
@@ -119,7 +119,7 @@ particular component, then specify `true` to the component's attribute.
 And, you can enable it for a subset of the descendant listboxs. For
 example,
 
-``` xml
+```xml
 <window>
   <custom-attributes org.zkoss.zul.listbox.rod="true"/> <!-- enable it for descendant listboxs of window -->
   <listbox ...>
@@ -156,24 +156,24 @@ It is used only if live data
 (<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
 and not paging (\<mold="paging"\>).
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.listbox.initRodSize="30"/>
 ```
 
 # Tree
 
 To turn off ROD for a tree, you need to specify [
-org.zkoss.zul.tree.initRodSize](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.tree.initRodSize)
+org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.tree.initrodsize)
 with -1:
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.tree.initRodSize="-1"/>
 ```
 
 # Limitation
 
 `hflex="min"` [ has a not-resizing
-limitation](ZK_Developer%27s_Reference/UI_Patterns/Hflex_and_Vflex#Minimum_Flexibility_Doesn.27t_Change_a_Component.27s_Size_Dynamically),
+limitation]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility_Doesn.27t_Change_a_Component.27s_Size_Dynamically),
 so if you specify it on a <grid>`/`<column>
 (<listbox>`/`<listheader>`, or `<tree>`/`<treecol>), a component doesn't
 resize the column when you scrolls down to see a wider item. Because the

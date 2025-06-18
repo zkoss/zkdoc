@@ -8,12 +8,12 @@ It specifies the URI of an addition theme (aka., a style sheet file).
 
 Like other URI, it accepts `*` for loading browser and Locale dependent
 style sheet. Please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale-Dependent_Resources)
+Reference]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
 for more details.
 
 You can specify any number of `them-uri` as follows.
 
-``` xml
+```xml
  <desktop-config>
      <theme-uri>/my/blue**.css</theme-uri>
      <theme-uri>/my/second.css</theme-uri>
@@ -22,7 +22,7 @@ You can specify any number of `them-uri` as follows.
 
 If you want to replace a default theme, you have to use `theme-uri` with
 `disable-theme-uri`. Please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling) for
+Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling) for
 more information.
 
 **Notice:**
@@ -35,6 +35,6 @@ more information.
     you have more than one style sheets.
 3.  You can specify extra CSS files for individual ZUML pages by the use
     of the [`style`
-    component](ZK_Component_Reference/Essential_Components/Style).
+    component]({{site.baseurl}}/zk_component_ref/essential_components/style).
 
 

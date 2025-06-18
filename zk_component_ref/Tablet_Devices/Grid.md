@@ -3,7 +3,7 @@
 # Grid
 
 - Component Reference:
-  [Grid](ZK_Component_Reference/Data/Grid)
+  [Grid]({{site.baseurl}}/zk_component_ref/data/grid)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -11,12 +11,12 @@
 When user swipe on the content of Grid, the friendly scrollbar will
 appear.
 
-![](images/Grid_Tablet_Example.png)
+![](/zk_component_ref/images/Grid_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.
 
-``` xml
+```xml
 <grid xmlns:a="client/attribute" a:data-scrollable="false"/>
 ```
 
@@ -24,7 +24,7 @@ setting.
 containing images inside cell, please add image preload attribute as
 follows.
 
-``` xml
+```xml
 <grid>
     <custom-attributes org.zkoss.zul.image.preload="true"/>
 </grid>

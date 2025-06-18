@@ -22,22 +22,22 @@ indicating that users can divide the area into three or more spaces by
 putting the splitlayouts into the outer Splitlayout.
 
 Comparing to [
-Splitter](ZK%20Component%20Reference/Layouts/Splitter), this
+Splitter](zk_component_ref/Layouts/Splitter), this
 component has several advantages:
 
-1.  [ Splitter](ZK%20Component%20Reference/Layouts/Splitter)
+1.  [ Splitter](zk_component_ref/Layouts/Splitter)
     can only be used inside [
-    Hbox](ZK%20Component%20Reference/Layouts/Hbox)/[
-    Vbox](ZK%20Component%20Reference/Layouts/Vbox).
+    Hbox](zk_component_ref/Layouts/Hbox)/[
+    Vbox](zk_component_ref/Layouts/Vbox).
     Splitlayout has no such limitation.
 2.  Hbox/Vbox are both rendered with HTML which is heavy for a browser.
     Splitlayout is rendered with div which is more light-weighted.
 
 # Example
 
-![](images/ZKComRef_Splitlayout_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Splitlayout_Examples.PNG)
 
-``` xml
+```xml
     <splitlayout  vflex="1" hflex="1">
         <div sclass="area" hflex="1" vflex="1">
             <label value="Area 1"/>
@@ -98,7 +98,7 @@ component.
 
 Specify `hflex`/`vflex` on 2 children like:
 
-``` xml
+```xml
         <splitlayout  vflex="1" >
             <div sclass="area" vflex="2">
                 ...
@@ -152,7 +152,7 @@ splitlayout.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

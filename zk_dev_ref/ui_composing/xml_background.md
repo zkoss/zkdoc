@@ -21,7 +21,7 @@ It is, though optional, a good idea to specify the encoding in your XML
 so that the XML parser can interpret it correctly. Note: it must be on
 the first line of the XML document.
 
-``` xml
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
 ```
 
@@ -36,7 +36,7 @@ An XML element is everything from (including) the element's start tag to
 An element can contain other elements, let it be simple text or a
 mixture of both. Elements can also have attributes. For example,
 
-``` xml
+```xml
 <window title="abc">
   <button label="click me"/>
 </window>
@@ -122,14 +122,14 @@ only **ONE** tree is allowed.
 For example, for being a whole zul file, the following is allowed as it
 has only one root component.
 
-``` xml
+```xml
 <button/>
 ```
 
 And for being a whole zul file, the following is not allowed as it has
 more than one root component.
 
-``` xml
+```xml
 <button/>
 <button/>
 ```
@@ -138,7 +138,7 @@ You can solve the problem simply by adding a tag to enclose the whole
 zul file to serve as the parent node, so that the zul file has one
 single tree again.
 
-``` xml
+```xml
 <window>
     <button />
     <button />
@@ -233,7 +233,7 @@ to represent the `<` character.
 Alternatively, you could tell XML parser not to interpret a piece of
 text by using `CDATA`. See the following:
 
-``` xml
+```xml
  <zscript>
  <![CDATA[
  void myfunc(int a, int b) {
@@ -284,7 +284,7 @@ Both the single quote (') and the double quote (") can be used, so if
 the value has double quotes, you could use the single quote to enclose
 it. For example,
 
-``` xml
+```xml
 <button onClick='alert("Hello, There")'/>
 ```
 
@@ -296,7 +296,7 @@ A comment is used to leave a note or to temporarily disable a block of
 XML code. To add a comment in XML, use `<!--` and `-->` to mark the
 comment body.
 
-``` xml
+```xml
  <window>
  <!-- this is a comment and ignored by ZK -->
  </window>
@@ -308,7 +308,7 @@ A processing instruction is used to carry out the instruction to the
 program that processes the XML document. A processing instruction is
 enclosed with \<? and ?\>. For example,
 
-``` xml
+```xml
 <?page title="Foo"?>
 ```
 

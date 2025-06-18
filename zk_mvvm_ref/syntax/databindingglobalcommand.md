@@ -31,7 +31,7 @@ It could be any name; it's used as a key for parameter related Java annotation i
 Example
 =======
 
-``` xml
+```xml
 <button label="Save" onClick="@command('saveOrder') @global-command('refresh')"/>
 
 <button label="ShowAll" onClick="@global-command('show')"/>

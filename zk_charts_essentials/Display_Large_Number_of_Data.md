@@ -5,7 +5,7 @@ ways to handle it:
 
 give a large width and allow overflow-x:
 
-``` xml
+```xml
 <charts id="chart" type="line"  width="3000"/>
 <style>
     .z-charts{
@@ -18,7 +18,7 @@ give a large width and allow overflow-x:
 
 After enabling the x-axis zoom:
 
-``` java
+```java
 chart.setZoomType("x");
 ```
 

@@ -7,6 +7,6 @@ will override the configuration specified in `/metainfo/zk/config.xml`.
 By use of `config.xml`, a JAR file could change the default
 configuration without a user's notice, such as adding a desktop
 listener, setting a library property, and so on. For more information,
-please refer to [ZK Developer's Reference: Packing Code](ZK_Developer's_Reference/Customization/Packing_Code).
+please refer to [ZK Developer's Reference: Packing Code]({{site.baseurl}}/zk_dev_ref/customization/packing_code).
 
 {% include DoctypeDisallowed.md %}

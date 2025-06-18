@@ -15,9 +15,9 @@ inside a Stepbar and shouldn't be used without a Stepbar.
 
 # Example
 
-![](images/Stepbar-example.png)
+![](/zk_component_ref/images/Stepbar-example.png)
 
-``` xml
+```xml
 <zk>
     <stepbar linear="false" activeIndex="2" width="600px">
         <step title="First Step" iconSclass="z-icon-home"/>
@@ -34,14 +34,14 @@ inside a Stepbar and shouldn't be used without a Stepbar.
 Whether this step is completed. (Default: false)
 
 The default visual style:
-![](images/Step-complete-default.png)
+![](/zk_component_ref/images/Step-complete-default.png)
 
 ## Error
 
 Whether this step is in error. (Default: false)
 
 The default visual style:
-![](images/Step-error-default.png)
+![](/zk_component_ref/images/Step-error-default.png)
 
 The priority of `error` is higher than `complete`. If both properties
 are set, the result will be an error state visually.
@@ -55,7 +55,7 @@ accordingly.
 
 [center ](File:Step-iconsclass.png)
 
-``` xml
+```xml
     <stepbar width="800px">
         <step title="Custom Step icon" iconSclass="z-icon-star-o"/>
         <step title="Custom Error" error="true" iconSclass="z-icon-bug"/>
@@ -64,7 +64,7 @@ accordingly.
 ```
 
 Please read
-[ZK_Component_Reference/Base_Components/LabelImageElement#IconSclass](ZK_Component_Reference/Base_Components/LabelImageElement#IconSclass)
+[{{site.baseurl}}/zk_component_ref/base_components/labelimageelement#IconSclass]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#IconSclass)
 to know more available build-in icons.
 
 ## Title
@@ -93,7 +93,7 @@ Set the title (label) of each step. (Default: empty)
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -16,7 +16,7 @@ The example below demonstrates the placement of a Drawer on the right side of th
 
 ![ZK-Drawer-Example](ZK-Drawer-Example.png)
 
-![ZK-Drawer-Example](ZK-Drawer-Example.gif)
+![ZK-Drawer-Example](images/ZK-Drawer-Example.gif)
 
 In this example, a button labeled "Show File Info" is used to trigger the opening of the Drawer component with the title "File Information". Within the Drawer, a grid layout is applied to display specific file details such as Name, Size, and Dimensions.
 
@@ -45,7 +45,7 @@ In this example, a button labeled "Show File Info" is used to trigger the openin
 ```
 
 Try it
-*  [Drawer with Grid](https://zkfiddle.org/sample/1g9so9c/1-ZK-Component-Reference-Drawer-Example?v=latest&t=Iceblue%20Compact)
+*  [Drawer with Grid](https://zkfiddle.org/sample/1g9so9c/1-ZK-Component-Reference-Drawer-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Open / Close the Drawer
@@ -60,7 +60,7 @@ The Drawer component supports the `data-animationspeed` attribute for adjusting 
 
 ### Autodrop
 
-![ZK-Drawer-Autodrop](ZK-Drawer-Autodrop.gif)
+![ZK-Drawer-Autodrop](images/ZK-Drawer-Autodrop.gif)
 
 When enabled, the drawer will automatically open when the mouse cursor approaches the page edge. Note that this feature is not currently supported on mobile devices.
 

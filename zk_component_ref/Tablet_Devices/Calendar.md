@@ -3,7 +3,7 @@
 # Calendar
 
 - Component Reference:
-  [Calendar](ZK_Component_Reference/Input/Calendar)
+  [Calendar]({{site.baseurl}}/zk_component_ref/input/calendar)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -11,11 +11,11 @@
 Calendar can support to switch the view by user swipe on the content
 with client/attribute.
 
-``` xml
+```xml
 <calendar xmlns:ca="client/attribute" ca:data-swipeable="true" />
 ```
 
-![](images/Calendar_Tablet_Example.png)
+![](/zk_component_ref/images/Calendar_Tablet_Example.png)
 
 # Version History
 

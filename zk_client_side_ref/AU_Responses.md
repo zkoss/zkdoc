@@ -1,7 +1,7 @@
 An AU response is the command sent from the server to the client for
 synchronizing back the server's states and performing some
 functionality. In response to the [AU
-request](ZK_Client-side_Reference/Communication/AU_Requests)
+request]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
 sent by the client, the server could send one or multiple AU responses
 to the client. Each AU response consists of a command and a sequence of
 data. The command is a string, and the data could be any objects (as
@@ -25,7 +25,7 @@ to to <javadoc directory="jsdoc" method="cmd0">\_global\_.zAu</javadoc>
 or <javadoc directory="jsdoc" method="cmd1">\_global\_.zAu</javadoc>,
 depending on your requirement. For example,
 
-``` javascript
+```javascript
 zk.zAu.cmd0.bookmark = function (bk, replace) {
     //...
 };

@@ -16,10 +16,10 @@ server to client.
 
 - About client-side UI composing, please refer to [ZK Client-side
   Reference: UI
-  Composing](ZK_Client-side_Reference/General_Control/UI_Composing).
+  Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing).
 - About customizing client-side widget's behavior, please refer to [ZK
   Client-side Reference: Widget
-  Customization](ZK_Client-side_Reference/General_Control/Widget_Customization).
+  Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
 - About client-side event handling, please refer to [ZK Client-side
   Reference: Event
-  Listening](ZK_Client-side_Reference/General_Control/Event_Listening)
+  Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)

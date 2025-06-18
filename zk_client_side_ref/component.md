@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-``` xml
+```xml
  <component>
    <component-name>a_name</component-name>
    <extends>a_name</extends>
@@ -46,7 +46,7 @@ completely-new component with it's own Java class or JavaScript widget.
 ## Set Default Value for Button in Application-scope
 You can use this approach to initialize a component's attribute with a default value globally.
  
-``` xml
+```xml
     <component>
         <component-name>button</component-name>
         <extends>button</extends>
@@ -81,7 +81,7 @@ initial properties and so on.
 ## depend required
 
 if your component extends a component, most likely you need to specify [
-<depends>](ZK_Client-side_Reference/Language_Definition/depends)
+<depends>]({{site.baseurl}}/zk_client_side_ref/language_definition/depends)
 to ensure parsing order.
 
 # component-class
@@ -115,7 +115,7 @@ If you just want to register a custom mold for the existing ZK
 component, just extends the standard component and specify the mold
 like:
 
-``` XML
+```xml
     <component>
         <component-name>tabbox</component-name>
         <extends>tabbox</extends>
@@ -128,7 +128,7 @@ like:
 
 Then you can specify the mold on the component like
 
-``` xml
+```xml
 <tabbox mold="adjacent">
 ```
 
@@ -138,7 +138,7 @@ You can specify:
 
 - a path relative to a widget js
 - [ classpath web resource
-  path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path)
+  path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
 
 # property
 
@@ -153,9 +153,9 @@ Suppose we want to make all window's border default to `normal`, we
 could do as follows.
 
 [Customization
-Reference]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties)
+Reference]({{site.baseurl}}/zk_dev_ref/customization/component_properties)
 
-``` xml
+```xml
 <property>
     <property-name>border</property-name>
     <property-value>normal</property-value>
@@ -164,7 +164,7 @@ Reference]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties)
 
 Another example , to turn off combobox's autocomplete.
 
-``` xml
+```xml
 <component>
     <component-name>combobox</component-name>                      <!-- required -->
     <component-class>org.zkoss.zul.Combobox</component-class>      <!-- required -->
@@ -183,12 +183,12 @@ Another example , to turn off combobox's autocomplete.
 It specifies the name of the property to assign the text enclosed by the
 XML element. If omitted (default), the text will be interpreted as a
 label and a label component defined in
-[label-template](ZK_Client-side_Reference/Language_Definition/label-template)
+[label-template]({{site.baseurl}}/zk_client_side_ref/language_definition/label-template)
 will be used.
 
 For example, if you specify
 
-``` xml
+```xml
 <component>
   <component-name>foo</component-name>
   <text-as>content</text-as>
@@ -196,7 +196,7 @@ For example, if you specify
 
 then, the following ZUML document
 
-``` xml
+```xml
 <foo>the content of foo</foo>
 ```
 
@@ -217,7 +217,7 @@ element, it will override <extends>.
 
 This feature requires `zuti` module:
 
-``` xml
+```xml
 <language-addon>
     <addon-name>my-addon</addon-name>
     <version>0.1</version>
@@ -227,7 +227,7 @@ This feature requires `zuti` module:
 
 ## Define a Custom Component
 
-``` xml
+```xml
     <component>
         <component-name>megamenu</component-name>
         <template-uri>/uiComposing/megaMenuParameterized.zul</template-uri>
@@ -245,7 +245,7 @@ This feature requires `zuti` module:
 Then those custom components are available in application scope, and you
 can use it in any zul like other components:
 
-``` xml
+```xml
 <megamenu>
 ```
 

@@ -16,13 +16,13 @@ you wanted to select a <b>listitem</b>, use `SelectAgent`,for checkbox,
 use `CheckAgent`. Which operation agent you choose would depend on the
 intention.
 
-According to [ZK Component Referenece]({{site.baseurl}}/zk_component_ref/base_components/HtmlBasedComponent),
+According to [ZK Component Referenece]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent),
 **all components that inherit `HtmlBasedComponent` supports click,
 double click, and right click**.
 
 **ClickTest.java**
 
-``` java
+```java
 public class ClickTest {
 
     //remove other methods for brevity

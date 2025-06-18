@@ -21,7 +21,7 @@ Retrieves the current execution which contains HTTP request/response.
 
 ## get HttpServletRequest
 
-``` java
+```java
 HttpServletRequest req = (HttpServletRequest)Executions.getCurrent().getNativeRequest();
 ```
 
@@ -39,6 +39,6 @@ Retrieves the current ZK-wrapped session.
 
 ## Get HttpSession
 
-``` java
+```java
 HttpSession nativeSession = (HttpSession) Sessions.getCurrent().getNativeSession();
 ```

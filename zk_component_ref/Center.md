@@ -6,8 +6,7 @@
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: <javadoc>org.zkoss.zul.Center</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.layout.Center</javadoc>
-- Style Guide:
-  [Center]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Borderlayout/Default_(Center))
+
 
 # Employment/Purpose
 
@@ -18,7 +17,7 @@ child.
 
 ![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
-``` xml
+```xml
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
@@ -71,7 +70,7 @@ A layout region might have a caption, which is specified by declaring a
 child component called caption. {% include edition-availability.html edition="pe" %} {% include
 version-badge.html version=6.5.0 %}
 
-``` xml
+```xml
 <borderlayout>
     <center>
         <caption label="search" image="/img/live.gif">
@@ -92,7 +91,7 @@ version-badge.html version=6.5.0 %}
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#How_to_Layout).
 
 # Supported Events
 
@@ -116,7 +115,7 @@ For more details, please refer to
 </table>
 
 - Inherited Supported Events: [
-  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/LayoutRegion#Supported_Events)
+  LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
 
 # Supported Children
 
@@ -124,7 +123,7 @@ For more details, please refer to
 
 # Use Cases
 
-[Borderlayout]({{site.baseurl}}/zk_component_ref/Layouts/Borderlayout#Use_Cases)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#Use_Cases)
 
 # Version History
 

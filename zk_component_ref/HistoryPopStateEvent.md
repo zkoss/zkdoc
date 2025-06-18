@@ -21,7 +21,7 @@ event.
 The example shows how to push a history state and handle a
 `HistoryPopStateEvent` object.
 
-``` xml
+```xml
 <zk>
   <tabbox id="tb" height="300px">
     <attribute name="onSelect"><![CDATA[
@@ -62,7 +62,7 @@ The example shows how to push a history state and handle a
 
 You can handle events in an MVC fashion.
 
-``` java
+```java
 public class TestComposer extends SelectorComposer<Tabbox> {
   @Wire
   private Tabbox tb;
@@ -83,7 +83,7 @@ Or you can use a special annotition
 <javadoc type="interface">org.zkoss.bind.annotation.HistoryPopState</javadoc>
 if you prefer MVVM.
 
-``` java
+```java
 public class TestVM {
   private int selectedIndex = 0;
   

@@ -9,7 +9,7 @@
 It specifies the message to show when the session is timeout. Notice
 that it is used only if the <timeout-uri> is **not** specified.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-message>Session timeout. Please reload.</timeout-message>
@@ -18,14 +18,14 @@ that it is used only if the <timeout-uri> is **not** specified.
 
 For more information, please refer to [ZK Developer's Reference/UI
 Patterns/Session Timeout
-Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Session_Timeout_Management).
+Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management).
 
 ## Internationalization
 
 If you want to specify a Locale-dependent message, you could specify the
 key and prefix it with `label:` as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-message>label:timeout</timeout-message>
@@ -34,9 +34,9 @@ key and prefix it with `label:` as follows.
 
 Then, you have to prepare the zk-label properties files as described in
 [ZK Developer's
-Reference](ZK_Developer%27s_Reference/Internationalization/Labels).
+Reference]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 
-``` text
+```text
 #zk-label.properties
 timeout={
 Session timeout.
@@ -53,7 +53,7 @@ it with `script:`.
 For example, if you have a function called `foo.timeout` to handle the
 timeout effect, then you could configure `WEB-INF/zk.xml` as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-message>script:foo.timeout('Session Timeout')</timeout-message>

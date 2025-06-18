@@ -1,4 +1,4 @@
-``` java
+```java
 String l(String key);
 ```
 
@@ -7,7 +7,7 @@ i.e.,
 <javadoc method="getLabel(java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
 
 Returns the label of the given key defined in [the internationalization
-labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels).
+labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 
 The label is based on the current Locale
 (<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
@@ -18,7 +18,7 @@ The label is based on the current Locale
 
 For example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 
 <window title="${c:l('app.title')}">

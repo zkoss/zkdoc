@@ -1,13 +1,13 @@
 # labels - java.util.Map
 
 A map of all [internationalization
-labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels)
+labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 belonging to the current locale
 (<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
 
 For example, if you have a property file as follows:
 
-``` text
+```text
 owner=Foo Inc.
 application.name=Killer
 application.title=Killer 2011
@@ -15,7 +15,7 @@ application.title=Killer 2011
 
 Then, you could access them with this implicit object as follows.
 
-``` xml
+```xml
 <grid>
    <row>${labels.owner}</row>
    <row>${labels.application.name}</row>
@@ -28,7 +28,7 @@ expressions could retrieve them correctly. More precisely, ZK groups the
 segmented labels as map. For example, `${labels.app}` was resolved as a
 map containing two entries (`title` and `description`).
 
-``` xml
+```xml
 app.title=Foo
 app.description=A super application
 ```
@@ -37,7 +37,7 @@ If you have a key named as the prefix of the other keys, you have to use
 `$` to access it. For example, `${labels.app.$}` is required to resolve
 the label with key named `app`.
 
-``` xml
+```xml
 app=Application
 app.title=Foo
 app.description=A super application

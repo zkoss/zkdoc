@@ -3,13 +3,13 @@ components depends on.
 
 # Chart and Captcha
 
-[Chart](ZK_Component_Reference/Diagrams_and_Reports/Chart)
+[Chart]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/chart)
 and
-[Captcha](ZK_Component_Reference/Essential_Components/Captcha)
+[Captcha]({{site.baseurl}}/zk_component_ref/essential_components/captcha)
 depends on Java Swing. To make Swing works correctly under Linux, you
 have to install `openjdk-6-jre`[^1]
 
-``` bash
+```bash
 sudo apt-get install openjdk-6-jre
 sudo /etc/init.d/tomcat6 restart
 ```
@@ -20,13 +20,13 @@ sudo /etc/init.d/tomcat6 restart
 
 # Jaspserreport
 
-[Jasperreprot](ZK_Component_Reference/Diagrams_and_Reports/Jasperreport)
+[Jasperreprot]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/jasperreport)
 is based on [the JasperReports
 project](http://jasperforge.org/projects/jasperreports). To make it run
 correctly under Linux, you have to make sure all fonts that you use are
 installed.
 
-``` bash
+```bash
 sudo aptitude install msttcorefonts
 sudo /etc/init.d/tomcat6 restart
 ```

@@ -15,7 +15,7 @@ the top of your ZUML page.
 
 Lets define a simple bean first
 
-``` java
+```java
 package org.zkoss.zkspringessentials.beans;
 public class SimpleBean {
         private String message;
@@ -33,7 +33,7 @@ Spring offers different ways of declaring your beans. The classical way
 is to declare this bean in your applicationContext.xml Spring
 configuration file as below.
 
-``` xml
+```xml
 <bean id="simpleBean" class="org.zkoss.zkspringessentials.beans.SimpleBean">
     <constructor-arg value="Hello from a simple bean"/>
 </bean>
@@ -42,7 +42,7 @@ configuration file as below.
 The alternative Java Config to achieve the same (choose for yourself:
 Spring and ZK will treat both beans equivalently during runtime):
 
-``` java
+```java
     @Bean
     public SimpleBean simpleBean() {
         return new SimpleBean("Hello from a simple bean");
@@ -58,7 +58,7 @@ annotations.
 
 You can access SimpleBean by its bean id in ZSCRIPT as shown below
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <zk>
 <zscript>
@@ -75,7 +75,7 @@ You can access SimpleBean by its bean id in ZSCRIPT as shown below
 Similarly you can also access Spring managed beans in any EL expressions
 as shown below
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <zk>
 <window title="Bean in EL Expression" width="640px" border="normal" >
@@ -90,7 +90,7 @@ The same
 <javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
 also resolves Spring beans in ZK Databinding expressions:
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <zk>
 <window title="Bean in Databinding Annotation" width="640px" border="normal" 
@@ -109,7 +109,7 @@ using a utility class
 <javadoc method="getBean()">org.zkoss.zkplus.spring.SpringUtil</javadoc>.
 Here is an example code to demonstrate this
 
-``` xml
+```xml
 <zk>
 <zscript>
         import org.zkoss.zkplus.spring.SpringUtil;

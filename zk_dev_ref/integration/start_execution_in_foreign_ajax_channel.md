@@ -17,7 +17,7 @@ execute. Finally, you invoke
 <javadoc method="close()">org.zkoss.zkplus.embed.Bridge</javadoc> to
 close the execution.
 
-``` java
+```java
 Bridge bridge = Bridge.start(svlctx, request, response, desktop);
 try {
     //execution started, do whatever you want
@@ -37,7 +37,7 @@ try {
 In JSF 2.0 developers can initiate Ajax request using jsf.ajax.request
 [^1] For e.g.
 
-``` xml
+```xml
 ...
    <h:commandButton id="save" value="Save"
     onclick="jsf.ajax.request(this, event, {execute:'@all'}); return false;" actionListener="${myBean.saveDetails}">
@@ -47,7 +47,7 @@ In JSF 2.0 developers can initiate Ajax request using jsf.ajax.request
 
 and in your ActionListener
 
-``` java
+```java
 @ManagedBean
 @SessionScoped
 public class MyBean {

@@ -25,7 +25,7 @@ of operations in the desired order.
 
 ![](/zk_component_ref/images/Coachmark-4.png)
 
-``` xml
+```xml
     <button id="infoButton" label="Information" />
     <coachmark target="infoButton" onTargetClick="self.close()">
         <label>Wellcome! click here for more information!</label>
@@ -35,7 +35,7 @@ of operations in the desired order.
 
 ## Multiple Steps
 
-``` xml
+```xml
         <button label="Step 1" sclass="big-margin"/>
         <coachmark target="${self.previousSibling}" next="mark2" onTargetClick="self.next()" >
             click here
@@ -78,7 +78,7 @@ component e.g. `${self.previousSibling}`
 
 ![](/zk_component_ref/images/Coachmark-1.png)
 
-``` xml
+```xml
     <button id="infoButton" label="button"/>
     <coachmark target="infoButton">
             <label>Wellcome!</label>
@@ -99,7 +99,7 @@ The positions of a coachmark. Below are the available values:
 | <b>right</b>  | end_before   | end_center    | end_after   |
 
 See
-[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/Popup#Position)
+[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/popup#Position)
 
 ## Next
 
@@ -156,7 +156,7 @@ component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

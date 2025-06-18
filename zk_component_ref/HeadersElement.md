@@ -43,11 +43,11 @@ resized one of the columns.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-[` Header Element`](ZK_Component_Reference/Base_Components/HeaderElement)
+[` Header Element`]({{site.baseurl}}/zk_component_ref/base_components/headerelement)
 
 # Use cases
 

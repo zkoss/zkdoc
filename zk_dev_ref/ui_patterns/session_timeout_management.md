@@ -17,15 +17,15 @@ called automatic timeout.
 By default, a message is shown to prompt the user and prevent from
 further accessing as depicted below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrSessTimeout.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drsesstimeout.png)
 
 ## Custom Message
 
 You could show a custom message by specifying
-[`timeout-message`](ZK_Configuration_Reference/zk.xml/The_session-config_Element#The_timeout-message_Element)
+[`timeout-message`]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-message_Element)
 in `WEB-INF/zk.xml`. For example,
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-message>Session timeout. Please reload.</timeout-message>
@@ -37,7 +37,7 @@ in `WEB-INF/zk.xml`. For example,
 If you want to specify a Locale-dependent message, you could specify the
 key and prefix it with `label:` as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <timeout-message>label:timeout</timeout-message>
@@ -46,10 +46,10 @@ key and prefix it with `label:` as follows.
 
 Then, you have to prepare the zk-label properties files as described in
 the
-[Labels](ZK_Developer%27s_Reference/Internationalization/Labels)
+[Labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 section.
 
-``` text
+```text
 #zk-label.properties
 timeout={
 Session timeout.
@@ -63,11 +63,11 @@ Sometimes it is better to redirect to another page that gives users a
 more complete description and guides them to the other resources, or
 asks them to login again. You can specify the target URI, that you want
 to redirect users to when timeout, with [the timeout-uri
-element](ZK_Configuration_Reference/zk.xml/The_session-config_Element#The_timeout-uri_Element)
+element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-uri_Element)
 in `WEB-INF/zk.xml`. For example, the target URI is /timeout.zul and
 then you can add the following lines to zk.xml.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>    
     <timeout-uri>/timeout.zul</timeout-uri>    
@@ -77,7 +77,7 @@ then you can add the following lines to zk.xml.
 In addition to `WEB-INF/zk.xml`, you could change the redirected URI
 manually as follows.
 
-``` java
+```java
 Devices.setTimeoutURI("ajax", "/timeout.zul");
 ```
 
@@ -90,7 +90,7 @@ Devices.setTimeoutURI("ajax", "/timeout.zul");
 If you prefer to reload the page instead of redirecting to other URI,
 you can specify an empty URI as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>    
     <timeout-uri></timeout-uri>    
@@ -108,7 +108,7 @@ any mouse move (it means the user is back).
 For example, if you have a function called `foo.timeout` to handle the
 timeout effect, then you could configure `WEB-INF/zk.xml` as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <automatic-timeout>true</automatic-timeout>
@@ -125,10 +125,10 @@ By default, the session-timeout mechanism is triggered only if the
 client sends back a request (such as clicking on a button). If you
 prefer to prompt the user even if it doesn't do anything, you could
 specify the [automatic-timeout
-element](ZK_Configuration_Reference/zk.xml/The_session-config_Element#The_automatic-timeout_Element)
+element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_automatic-timeout_Element)
 in `WEB-INF/zk.xml` as follows.
 
-``` xml
+```xml
 <session-config>
     <device-type>ajax</device-type>
     <automatic-timeout/>
@@ -147,7 +147,7 @@ directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
 Moreover, it is better to turn off the automatic timeout for the timeout
 page you want to redirect to (if the page is a ZUML page). For example,
 
-``` xml
+```xml
 <!-- my timeout page -->
 <?page automaticTimeout="false"?>
 ...
@@ -161,7 +161,7 @@ user surfs away.
 
 To do that, you first configure WEB/zk.xml as follows.
 
-``` xml
+```xml
 <session-config>
   <timer-keep-alive>true</timer-keep-alive>
 </session-config>
@@ -169,7 +169,7 @@ To do that, you first configure WEB/zk.xml as follows.
 
 and create a timer in your ZUL page:
 
-``` xml
+```xml
 <timer id="timerKeepAliveSession" repeats="true" delay="600000" onTimer=""/>
 ```
 
@@ -179,7 +179,7 @@ browser away. The delay (600000 is 10 minutes) shall be as long as
 possible but smaller than your session timeout.
 
 The
-[timer-keep-alive](ZK_Configuration_Reference/zk.xml/The_session-config_Element#The_timer-keep-alive_Element)
+[timer-keep-alive]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timer-keep-alive_Element)
 element is used to specify whether the session shall consider timer as a
 normal request. If it is considered as a normal request, the session
 timeout mechanism will be restarted when it is received. Otherwise, the

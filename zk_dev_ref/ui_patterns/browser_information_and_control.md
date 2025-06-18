@@ -15,7 +15,7 @@ which you can retrieve the information of the client.
 
 For example,
 
-``` xml
+```xml
 <grid onClientInfo="onClientInfo(event)">
     <rows>
         <row>Time Zone <label id="tm"/></row>
@@ -41,10 +41,10 @@ client, you can store the client info in the session's attribute.
 
 For example, we could use it to control the default time zone (For more
 information about time zone, please refer to the [Time
-Zone]({{site.baseurl}}/zk_dev_ref/Internationalization/Time_Zone)
+Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone)
 section).
 
-``` java
+```java
 session.setAttribute("org.zkoss.web.preferred.timeZone", event.getTimeZone());
 ```
 
@@ -59,7 +59,7 @@ beginning), you could ask the client to re-send the request again with
 <javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
 For example,
 
-``` java
+```java
  import org.zkoss.util.TimeZones;
  ...
   if (!TimeZones.getCurrent().equals(event.getTimeZone()) {
@@ -75,7 +75,7 @@ the client's visual presentation (more precisely, the browser window),
 such as printing, submitting, resizing and so on. For example, you can
 scroll the browser window (aka., the desktop) as follows.
 
-``` java
+```java
  Clients.scrollBy(100, 0);
 ```
 
@@ -92,7 +92,7 @@ the current page to another URL, you can call
 For example, when a user is composing a mail that is not sent or saved
 yet.
 
-``` java
+```java
  if (mail.isDirty()) {
      Clients.confirmClose("any string");
  } else {
@@ -109,7 +109,7 @@ After activating, when the user tries to leave a page, a browser will
 show a confirmation dialog (each browser has its own default dialog with
 a default message):
 
-![]({{site.baseurl}}/zk_dev_ref/images/confirmClose.png)
+![]({{site.baseurl}}/zk_dev_ref/images/confirmclose.png)
 
 To disable the confirmation dialog, just invoke
 <javadoc method="confirmClose(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
@@ -128,7 +128,7 @@ if only a component is not accessible, or
 <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
 if the whole browser is not accessible. For example,
 
-``` java
+```java
 showBusy(grid, "Loading data...");
 ```
 
@@ -137,7 +137,7 @@ After the loading is completed, you could invoke
 (or
 <javadoc method="clearBusy()">org.zkoss.zk.ui.util.Clients</javadoc>)to
 clean it up. For more information, please refer to the [Use Echo
-Events]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Long_Operations/Use_Echo_Events)
+Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 section.
 
 ## Log the Message to Browser
@@ -147,7 +147,7 @@ messages to the browser for debugging by the use of
 <javadoc method="log(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>.
 For example,
 
-``` java
+```java
 //in Java
 void doSomething() {
    Clients.log("doSomething called");
@@ -169,7 +169,7 @@ For example, we could use
 while <javadoc>org.zkoss.zk.au.out.AuInvoke</javadoc> is better if you
 want to invoke a function of a client-side widget.
 
-``` java
+```java
 Clients.response(new AuScript(null, "alert('Hello, Client')"));
 ```
 
@@ -195,7 +195,7 @@ send back an instance of the
 from which you can retrieve the page visibility state of the current
 page.
 
-``` xml
+```xml
 <zk>
     <label>
     Open/Change to another tab in the browser and go back this tab

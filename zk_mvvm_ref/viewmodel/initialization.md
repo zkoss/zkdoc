@@ -46,7 +46,7 @@ public class ParentViewModel {
 public class ChildViewModel extends ParentViewModel {
 }
 ```
-The initial method can retrieve various context object by applying annotation on its parameter, please refer [Advanced/Parameters](../advanced/parameters.html).
+The initial method can retrieve various context object by applying annotation on its parameter, please refer [advanced/Parameters](../advanced/parameters.html).
 
 ## Destroy Method
 > Since 8.5.2
@@ -55,7 +55,7 @@ In contrast with `@Init`, a `@Destroy` method exists to do finalization of a vie
 
 The execution order is different from `@Init`. The destroy method of child view model will be executed first, then the parents'.
 
-``` java
+```java
 public class FooViewModel {
     @Destroy
     public void destroyFoo() {

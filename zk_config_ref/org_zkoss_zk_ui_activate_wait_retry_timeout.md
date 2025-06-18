@@ -19,7 +19,7 @@ you also have to specify [
 org.zkoss.zk.ui.activate.wait.retry.abort]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.abort)
 to true.
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
 <library-property>
     <name>org.zkoss.zk.ui.activate.wait.retry.timeout</name>

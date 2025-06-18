@@ -21,7 +21,7 @@ The following XML code snippet demonstrates two different styles of windows:
 
 Try it
 
-* [Window](https://zkfiddle.org/sample/o0987d/1-ZK-Component-Reference-Window-Example?v=latest&t=Iceblue%20Compact)
+* [Window](https://zkfiddle.org/sample/o0987d/1-ZK-Component-Reference-Window-Example?v=latest&t=Iceblue_Compact)
 
 In the example above, the first window is displayed in an embedded style, while the second window is in an overlapped style.
 
@@ -57,7 +57,7 @@ For example,
 
 Try it
 
-* [Window Modes](https://zkfiddle.org/sample/2t9v3om/1-ZK-Component-Reference-Window-Modes-Example?v=latest&t=Iceblue%20Compact)
+* [Window Modes](https://zkfiddle.org/sample/2t9v3om/1-ZK-Component-Reference-Window-Modes-Example?v=latest&t=Iceblue_Compact)
 
 ## Embedded
 An embedded window is placed inline with other components and cannot be repositioned since it is determined by the browser.
@@ -69,7 +69,7 @@ An overlapped window can be dragged around and its position can be set using `se
 <window title="My Overlapped" width="300px" mode="overlapped"></window>
 ```
 
-An overlapped window is typically used to display the information that should co-exist with the current operation and should appear for a long time. You might have multiple overlapped windows and each for different set of information. If you want to show the information that will appear only temporarily (dismissed as soon as a user clicks somewhere else), you could use the popup mode as described in the next section, or the [Popup](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Popup) component.
+An overlapped window is typically used to display the information that should co-exist with the current operation and should appear for a long time. You might have multiple overlapped windows and each for different set of information. If you want to show the information that will appear only temporarily (dismissed as soon as a user clicks somewhere else), you could use the popup mode as described in the next section, or the [Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) component.
 
 ## Popup
 A popup window is similar to overlapped windows, except it is automatically closed when user clicks on any component other than the popup window itself or any of its descendants. Of course, you could dismiss it manually by making it invisible or detaching it.
@@ -90,11 +90,11 @@ For example, we could display a popup window right after a button as depicted be
 
 Try it
 
-* [Window Popup](https://zkfiddle.org/sample/189e13/1-ZK-Component-Reference-Window-Popup-Example?v=latest&t=Iceblue%20Compact)
+* [Window Popup](https://zkfiddle.org/sample/189e13/1-ZK-Component-Reference-Window-Popup-Example?v=latest&t=Iceblue_Compact)
 
 where we specify `position="parent"`, and make it as a child of a span component. The span component acts as an anchor point and the window is posited based on it.
 
-In additions to popup windows, you could use [Popup](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Popup) for displaying a popup. The popup component has more control how to position it (by the use of [Popup.open(Component, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component,%20java.lang.String))).
+In additions to popup windows, you could use [Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) for displaying a popup. The popup component has more control how to position it (by the use of [Popup.open(Component, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component,_java.lang.String))).
 
 ## Modal and Highlighted
 Modal and highlighted windows provide a similar visual effect of blocking background content and enforcing focus on the window. Closing a modal window can be done by making it invisible or detaching it.
@@ -153,7 +153,7 @@ In the following example, the window hides itself when the close button is click
 
 Try it
 
-* [Window onClose](https://zkfiddle.org/sample/1okml07/1-ZK-Component-Reference-Window-OnClose-Example?v=latest&t=Iceblue%20Compact)
+* [Window onClose](https://zkfiddle.org/sample/1okml07/1-ZK-Component-Reference-Window-OnClose-Example?v=latest&t=Iceblue_Compact)
 
 **Note**: If the window is a popup, the `onOpen` event will be triggered with `open=false` when the popup is closed by clicking outside the window or pressing `ESC`.
 
@@ -180,7 +180,7 @@ For example,
 
 Try it
 
-* [Window ContentStyle](https://zkfiddle.org/sample/2qn6u7j/1-ZK-Component-Reference-Window-ContentStyle-Example?v=latest&t=Iceblue%20Compact)
+* [Window ContentStyle](https://zkfiddle.org/sample/2qn6u7j/1-ZK-Component-Reference-Window-ContentStyle-Example?v=latest&t=Iceblue_Compact)
 
 ### Scrollable Window
 
@@ -196,7 +196,7 @@ The `contentStyle` attribute can be used to make a window scrollable by setting 
 
 Try it
 
-* [Window Scrollable](https://zkfiddle.org/sample/1ikflcp/1-ZK-Component-Reference-Window-Scrollable-Example?v=latest&t=Iceblue%20Compact)
+* [Window Scrollable](https://zkfiddle.org/sample/1ikflcp/1-ZK-Component-Reference-Window-Scrollable-Example?v=latest&t=Iceblue_Compact)
 
 ### Position
 
@@ -213,7 +213,7 @@ The `position`'s value can be a combination of the following constants by separa
 
 Try it
 
-* [Window Position](https://zkfiddle.org/sample/374g5t/1-ZK-Component-Reference-Window-Position-Example?v=latest&t=Iceblue%20Compact)
+* [Window Position](https://zkfiddle.org/sample/374g5t/1-ZK-Component-Reference-Window-Position-Example?v=latest&t=Iceblue_Compact)
 
 
 | Constant | Description |
@@ -249,7 +249,7 @@ For example,
 
 Try it
 
-* [Window Sizable](https://zkfiddle.org/sample/2muvpdl/1-ZK-Component-Reference-Window-Sizable-Example?v=latest&t=Iceblue%20Compact)
+* [Window Sizable](https://zkfiddle.org/sample/2muvpdl/1-ZK-Component-Reference-Window-Sizable-Example?v=latest&t=Iceblue_Compact)
 
 #### onSize Event
 Once a user resizes the window, the onSize event is sent with an instance of the `org.zkoss.zul.event.SizeEvent`. Notice that the window is resized before the `onSize` event is sent. In other words, the event serves as a notification that you generally ignore. Of course, you can do whatever you want in the event listener.
@@ -283,7 +283,7 @@ A window in ZK can have a title, a caption, and a border. The title is specified
 
 Try it
 
-* [Window Caption](https://zkfiddle.org/sample/3pfhoku/1-ZK-Component-Reference-Window-Caption-Example?v=latest&t=Iceblue%20Compact)
+* [Window Caption](https://zkfiddle.org/sample/3pfhoku/1-ZK-Component-Reference-Window-Caption-Example?v=latest&t=Iceblue_Compact)
 
 
 Additionally, you can specify a label and an image within a caption, as shown below:
@@ -301,7 +301,7 @@ Additionally, you can specify a label and an image within a caption, as shown be
 
 Try it
 
-* [Window Caption](https://zkfiddle.org/sample/176o4ka/1-ZK-Component-Reference-Window-Caption-Image-Example?v=latest&t=Iceblue%20Compact)
+* [Window Caption](https://zkfiddle.org/sample/176o4ka/1-ZK-Component-Reference-Window-Caption-Image-Example?v=latest&t=Iceblue_Compact)
 
 ## Common Dialogs
 

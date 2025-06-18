@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Listfooter</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Listfooter</javadoc>
-- Style Guide: [
-  Listfooter](ZK_Style_Guide/XUL_Component_Specification/Listfooter)
+
 
 # Employment/Purpose
 
@@ -19,9 +18,9 @@ Note: `Listcell` also accepts children.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
          <listbox id="box">
              <listhead sizable="true">
@@ -74,7 +73,7 @@ Note: `Listcell` also accepts children.
 </table>
 
 - Inherited Supported Events: [
-  FooterElement](ZK_Component_Reference/Base_Components/FooterElement#Supported_Events)
+  FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
 
 # Supported Children
 

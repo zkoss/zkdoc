@@ -5,7 +5,6 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.A</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.A</javadoc>
-- Style Guide: [A]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/A)
 
 # Employment/Purpose
 
@@ -23,7 +22,7 @@ requests), which is common if the request takes long to serve.
 The simplest use is to specify it with `self` as follows. Then, the
 anchor is disabled when it is clicked.
 
-``` xml
+```xml
 <a id="ok" label="OK" autodisable="self" />
 ```
 
@@ -31,7 +30,7 @@ If you'd like to disable several anchors, you could specify all of them
 in this property by separating with a comma. For example, the following
 disables both anchors, when one of them is clicked.
 
-``` xml
+```xml
 <a id="ok" label="OK" autodisable="ok,cancel" />
 <a id="cancel" label="Cancel" autodisable="ok,cancel" />
 ```
@@ -42,14 +41,14 @@ prefer to enable them manually (i.e., by calling
 <javadoc method="setDisabled(boolean)">org.zkoss.zul.A</javadoc>
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
-``` xml
+```xml
 <a id="ok" label="OK" autodisable="+self, +cancel" />
 ```
 
 Then, you could enable them manually under the situation depending on
 your application's requirement, such as
 
-``` java
+```java
 if (something_happens) {
    ok.setDisabled(false);
    cancel.setDisabled(false);
@@ -58,11 +57,11 @@ if (something_happens) {
 
 ### Enable Autodisable for All Anchors
 
-As described in [ZK Developer's Reference:Customization]({{site.baseurl}}/zk_dev_ref/customization/Component_Properties),
+As described in [ZK Developer's Reference:Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
 you could customize ZK to enable `autodisable` for all anchors by
 specifying the following in the custom language addon:
 
-``` xml
+```xml
 <language-addon>
     <language-name>xul/html</language-name>
     <component>
@@ -113,20 +112,20 @@ navigating to it. \<syntaxhighlight lang='xml\>
 Please refer to [download
 attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
 
-## [Filedownload API]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download#File_Download)
+## [Filedownload API]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download#File_Download)
 
 # Example
 
 ![](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
 
-``` xml
+```xml
 <a href="http://www.zkoss.org" label="Visit ZK!"/>
 ```
 
 In addition, you could add child components to
 <javadoc>org.zkoss.zul.A</javadoc> too:
 
-``` xml
+```xml
 <a href="http://www.zkoss.org" label="Visit ZK!" image="zk.png">
   <grid>
     <rows>
@@ -142,7 +141,7 @@ child component is used.
 
 The href attribute can be an URI. For example,
 
-``` xml
+```xml
 <a href="/foo" label="Foo" />
 <a href="goo" label="Goo" />
 ```
@@ -173,7 +172,7 @@ Desktop.getDirectory().
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

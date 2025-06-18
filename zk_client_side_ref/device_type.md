@@ -10,7 +10,7 @@ It specifies the device type.
 
 Example,
 
-``` xml
+```xml
 <device-type>ajax</device-type>
 ```
 

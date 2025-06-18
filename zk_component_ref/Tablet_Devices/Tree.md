@@ -3,7 +3,7 @@
 # Tree
 
 - Component Reference:
-  [Tree](ZK_Component_Reference/Data/Tree)
+  [Tree]({{site.baseurl}}/zk_component_ref/data/tree)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -11,12 +11,12 @@
 When user swipe on the content of Tree, the friendly scrollbar will
 appear.
 
-![](images/Tree_Tablet_Example.png)
+![](/zk_component_ref/images/Tree_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.
 
-``` xml
+```xml
 <tree xmlns:a="client/attribute" a:data-scrollable="false"/>
 ```
 
@@ -24,7 +24,7 @@ setting.
 containing images inside treecell, please add image preload attribute as
 follows.
 
-``` xml
+```xml
 <tree>
     <custom-attributes org.zkoss.zul.image.preload="true"/>
 </tree>

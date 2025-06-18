@@ -6,7 +6,7 @@ services runnable from a single package (such as microservices)
 
 For general information regarding ZK usage in Quarkus, please refer to
 the smalltalk [Small Talks/2023/May/Creating and deploying ZK Apps with
-Quarkus](Small_Talks/2023/May/Creating_and_deploying_ZK_Apps_with_Quarkus)
+Quarkus](https://www.zkoss.org/wiki/Small_Talks/2023/May/Creating_and_deploying_ZK_Apps_with_Quarkus)
 
 # Quarkus specific configuration
 
@@ -19,7 +19,7 @@ Starting from ZK 10.1.0, ZK provides a plugin to support
 quarkus-websockets. ZK Quarkus websocket support is activated by adding
 the zk-quarkus plugin to the project:
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.quarkus</groupId>
     <artifactId>zk-quarkus</artifactId>
@@ -30,8 +30,8 @@ the zk-quarkus plugin to the project:
 Then, websockets can be activated in the same way as other ZK
 applications. Refer to the websocket guide for more information.
 
-[ZK Developer's Reference/Integration/Miscellaneous/Websocket
-Channel](ZK_Developer's_Reference/Integration/Miscellaneous/Websocket_Channel)
+[ZK Developer's Reference/integration/Miscellaneous/Websocket
+Channel]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/websocket_channel)
 
 ## Quarkus ArC / CDI Beans
 

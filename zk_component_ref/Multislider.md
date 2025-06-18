@@ -22,9 +22,9 @@ property.
 
 # Example
 
-![](images/ZKComRef_Multislider.png)
+![](/zk_component_ref/images/ZKComRef_Multislider.png)
 
-``` xml
+```xml
   <multislider>
     <sliderbuttons startValue="10" endValue="70"/>
     <sliderbuttons startValue="20" endValue="50"/>
@@ -104,10 +104,10 @@ be displayed.
 # Supported Events
 
 - Inherited Supported Events: [
-  Rangeslider](ZK_Component_Reference/Input/Rangeslider#Supported_Events)
+  Rangeslider]({{site.baseurl}}/zk_component_ref/input/rangeslider#Supported_Events)
 
 # Supported Children
 
-`*`[` Sliderbuttons`](ZK_Component_Reference/Input/Sliderbuttons)
+`*`[` Sliderbuttons`]({{site.baseurl}}/zk_component_ref/input/sliderbuttons)
 
 

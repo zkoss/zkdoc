@@ -11,7 +11,7 @@ the number of changed items (by adding or removing) is over the
 threshold, client widget will redraw its DOM elements instead of just
 rendering changed items only.
 
-``` xml
+```xml
 <listbox>
     <custom-attributes org.zkoss.zul.invalidateThreshold="200"/>
 ...

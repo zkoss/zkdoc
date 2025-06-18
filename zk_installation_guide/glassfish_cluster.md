@@ -13,7 +13,7 @@ glassfish cluster environment.
 
 - Add the `distributable` element in `WEB-INF/web.xml`.
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <web-app  xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
@@ -32,7 +32,7 @@ glassfish cluster environment.
 
 For example,
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE sun-web-app PUBLIC "-//Sun Microsystems, Inc.//DTD GlassFish Application Server 3.0 Servlet 3.0//EN" 
         "http://www.sun.com/software/appserver/dtds/sun-web-app_3_0-0.dtd">

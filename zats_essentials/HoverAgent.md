@@ -11,7 +11,7 @@ You have to query the target component agent first, then call
 ![](images/Zats-mimic-moveOver.png)
 ![](images/Zats-mimic-moveOut.png)
 
-``` java
+```java
 
 desktopAgent.query("button").as(HoverAgent.class).moveOver();
 

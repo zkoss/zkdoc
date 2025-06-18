@@ -59,7 +59,7 @@ EJB jar, then you don't need above arrangement.
 ### Underlying Details
 
 In enterprise application server, each module has its own class loader
-like: ![]({{site.baseurl}}/zk_dev_ref/images/HierachicalClassLoader.jpg)
+like: ![]({{site.baseurl}}/zk_dev_ref/images/hierachicalclassloader.jpg)
 
 When ZK creates a proxy object based on EJB class with javassist, it
 uses the target object's class loader. In this case, it's EJB's class
@@ -67,7 +67,7 @@ loader.
 
 **The related code in javassist:3.28.0-GA**
 
-``` java
+```java
 public class ProxyFactory {
 ...
     protected ClassLoader getClassLoader0() {

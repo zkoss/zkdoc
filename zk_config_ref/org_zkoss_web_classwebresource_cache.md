@@ -18,7 +18,7 @@ version.
 If you are developing a component, it is better to turn it off (so you
 can force browser to load modified CSS and JS files by pressing F5).
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.classWebResource.cache</name>
     <value>false</value>

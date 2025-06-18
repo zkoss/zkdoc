@@ -4,9 +4,9 @@ To make it easier to create a dynamic web page, the ZUML document allows
 you to embed the script code. Notice that there are two types of script
 code: server-side and client-side. How the client-side code can be
 embedded is discussed in the [Client-side UI
-Composing]({{site.baseurl}}/zk_dev_ref/UI_Composing/Client-side_UI_Composing)
+Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
 and [Client-side Event
-Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Client-side_Event_Listening)
+Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
 sections. Here we will discuss how to embed the server-side script code
 in a ZUML document.
 
@@ -23,7 +23,7 @@ even recompiling.
 Notice that the performance of BeanShell is not good and, like any
 interpreter, typos can be found only when it is evaluated. For more
 information, please refer to [the Performance Tips
-section]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes)
+section]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes)
 
 # 2 Places to Embed
 
@@ -39,7 +39,7 @@ First, you could embed the code inside the [zscript
 element](ZUML_Reference/ZUML/Elements/zscript), such that
 they will be evaluated when the page is rendered[^1]. For example,
 
-``` xml
+```xml
 <zscript>
 //inside is zscript
 //you can declare variable, function, and even Java class here.
@@ -72,7 +72,7 @@ must be replaced with &lt;, & with &amp; and so on. In addition to
 encoding individual characters, you can also enclose the whole code with
 XML CDATA as follows.
 
-``` xml
+```xml
 <zscript><![CDATA[
 if (some < another && another < last) //OK since CDATA is used
    doSomething();
@@ -90,7 +90,7 @@ As depicted CDATA is represented with and `]]>`.
 You could define a class declared in a ZUML document, and the class is
 accessible only in the page it was defined. For example,
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
 <zscript><![CDATA[
@@ -133,7 +133,7 @@ FooModel model = new FooModel();
 Second, you could put the code inside an event handler, such that it
 will execute when the event is received, as depicted below.
 
-``` xml
+```xml
 <button onClick='alert("event handler for onXXX inside ZUML is also zscript")'/>
 ```
 
@@ -144,7 +144,7 @@ property.
 Again, the code is Java interpreted at run time and running on the
 server. For client-side listening, please refer to the [Client-side
 Event
-Listening]({{site.baseurl}}/zk_dev_ref/Event_Handling/Client-side_Event_Listening)
+Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
 section.
 
 For the sake of discussion, we call it zscript no matter the code is
@@ -157,7 +157,7 @@ the [attribute
 element](ZUML_Reference/ZUML/Elements/attribute). For
 example,
 
-``` xml
+```xml
 <button label="hi">
     <attribute name="onClick"><![DATA[
     if (anything > best)
@@ -169,13 +169,13 @@ example,
 # Distinguish `zscript` from EL
 
 Keep in mind, [an EL
-expression]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions)
+expression]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions)
 is enclosed by \${ }.
 
 For example, `${self.label}` and `${ok.label}` are both EL expressions
 in the following example:
 
-``` xml
+```xml
 <window>    
     <button label="ok" id="${self.label}"/>
     ${ok.label}     
@@ -185,7 +185,7 @@ in the following example:
 On the other hand, in the following example, `alert(self.label)` is not
 an EL expression. Rather, it's the zscript code:
 
-``` xml
+```xml
 <window>    
     <button label="ok" onClick='alert(self.label)'/>        
 </window>
@@ -193,7 +193,7 @@ an EL expression. Rather, it's the zscript code:
 
 You cannot mix the use of EL expressions with zscript:
 
-``` xml
+```xml
 <window>    
     <!-- It's wrong, for java don't accept syntax as ${}-->
     <button label="ok" onClick='alert(${self.label})'/>     
@@ -203,14 +203,14 @@ You cannot mix the use of EL expressions with zscript:
 Also notice that the evaluation of EL expressions is very fast, so EL
 can be used in a production system. On the other hand, [zscript is
 suggested to use only in prototyping or
-quick-fix]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Compiled_Java_Codes).
+quick-fix]({{site.baseurl}}/zk_dev_ref/performance_tips/use_compiled_java_codes).
 
 ## Variables Defined in zscript Visible to EL
 
 A variable defined in zscript is visible to EL expression, unless it is
 a local variable, which will be discussed later.
 
-``` xml
+```xml
 <zscript>
 Date now = new Date();
 </zscript>
@@ -226,7 +226,7 @@ The default interpreter is based on
 
 The Java interpreter is a *multi-scope* interpreter. It creates a scope
 for each [ID
-space]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#ID_Space).
+space]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 Since ID space is hierarchical, so are the scopes. If a variable cannot
 be found in the current ID space, it will go further to parent's ID
 space to try to resolve the variable.
@@ -235,7 +235,7 @@ For example, in the following example, two logical scopes are created
 for window[^2] `A` and `B` respectively. Therefore, `var2` is visible
 only to window `B`, while `var1` is visible to both window `A` and `B`.
 
-``` xml
+```xml
 <window id="A">
     <zscript>var1 = "abc";</zscript>
     <window id="B">
@@ -254,7 +254,7 @@ If a variable is declared inside a pair of curly braces, it is visible
 only to the scope defined by the curly braces. It is called a local
 variable. For example,
 
-``` xml
+```xml
 <zscript>
 void echo() {
    String a_local_variable;
@@ -264,7 +264,7 @@ void echo() {
 
 Here is another example,
 
-``` xml
+```xml
 <window>
     <zscript>
     {
@@ -294,7 +294,7 @@ Documentation](http://beanshell.org/docs.html) and search "scoping" and
 Currently, zscript supports Java, Groovy, Ruby, JavaScript and Python.
 For example,
 
-``` xml
+```xml
 <?page zscriptLanguage="Groovy"?>
 <window border="normal">
     <vbox id="vb">
@@ -318,4 +318,4 @@ Reference](ZUML_Reference/Extensions/zscript).
 [^2]: Built in id space owner includes
     <javadoc>org.zkoss.zul.Window</javadoc>,
     <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro
-    components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component).
+    components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).

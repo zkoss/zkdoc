@@ -6,7 +6,7 @@
 `[Since 3.6.2]`
 
 It specifies which properties file for [the internationalization
-labels]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels)
+labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 are named and located.
 
 For 5.0.7 and later, it is suggested to use [the label-location

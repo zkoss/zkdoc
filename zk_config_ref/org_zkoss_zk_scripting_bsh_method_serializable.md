@@ -6,7 +6,7 @@
 
 To disable the serialization of BeanShell method(s).
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.scripting.bsh.method.serializable</name>
     <value>false</value>

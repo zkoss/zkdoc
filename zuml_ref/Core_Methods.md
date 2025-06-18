@@ -3,7 +3,7 @@ called http://www.zkoss.org/dsp/web/core.
 
 For example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 
 <window title="${c:l('app.title')}">

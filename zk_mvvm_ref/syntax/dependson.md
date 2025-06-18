@@ -2,7 +2,7 @@
 
 Syntax
 ======
-``` java
+```java
 @DependsOn
 ```
 
@@ -16,7 +16,7 @@ It has the same function as ` @NotifyChange ` but with an inverse meaning. It is
 
 Example
 =======
-``` java
+```java
 public class FullnameViewModel {
     private String firstname;
     private String lastname;

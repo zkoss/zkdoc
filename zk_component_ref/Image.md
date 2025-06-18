@@ -6,7 +6,7 @@
   [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)
 - Java API: <javadoc>org.zkoss.zul.Image</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Image</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -18,7 +18,7 @@ located. This approach is similar to what HTML supports. It is useful
 if you want to display a static image, or any image that can be
 identified by URL.
 
-``` xml
+```xml
  <image src="/my.png">
 ```
 
@@ -29,7 +29,7 @@ for identifying a Locale dependent image. For example, if you have
 different images for different Locales, you could use the following
 code.
 
-``` xml
+```xml
 <image src="/my*.png"/>
 ```
 
@@ -39,7 +39,7 @@ preferred Locale. Zk will try to locate the image file called
 finally `/my.png`.
 
 Please refer to
-[ZK%20Developer's%20Reference/Internationalization/Locale-Dependent%20Resources](ZK%20Developer's%20Reference/Internationalization/Locale-Dependent%20Resources)
+[ZK_Developer's_Reference/internationalization/Locale-Dependent_Resources](ZK_Developer's_Reference/internationalization/Locale-Dependent_Resources)
 for more details.
 
 Secondly, you could use the `setContent` method to set the content of an
@@ -50,7 +50,7 @@ useful if an image is generated dynamically.
 For example, you can generate a map for the location specified by a user
 as demonstrated below.
 
-``` xml
+```xml
 <zk>
     Location: <textbox onChange="updateMap(self.value)"/>
     Map: <image id="image"/>
@@ -91,7 +91,7 @@ Since version 3.0.7 ZK allows image, button and related components to
 support RenderedImage directly without a format conversion. Here is the
 example code,
 
-``` xml
+```xml
 <window title="Test of Live Image">
     <image id="img"/>
     <zscript>
@@ -125,7 +125,7 @@ components.
 By default the preload function is disabled, so users have to specify
 the *custom-attributes* to be true. For example,
 
-``` xml
+```xml
 <image src="xxx.png">
     <custom-attributes org.zkoss.zul.image.preload="true" />
 </image>
@@ -135,7 +135,7 @@ Or specify just below the root component.
 
 For example,
 
-``` xml
+```xml
 <window>
     <custom-attributes org.zkoss.zul.image.preload="true" />
     <button image="xxx.png" />
@@ -150,7 +150,7 @@ zk.xml as a library properity.
 
 For example,
 
-``` xml
+```xml
 <!-- zk.xml -->
 <zk>
     <library-property>
@@ -162,7 +162,7 @@ For example,
 
 # Specifying Alt Attribute
 
-``` xml
+```xml
 <zk xmlns:c="client/attribute">
     <image src="/multimedia/zklogo3.png" c:alt="zk logo"/>
 </zk>
@@ -190,7 +190,7 @@ For example,
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

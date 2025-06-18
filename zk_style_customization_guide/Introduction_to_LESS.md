@@ -19,7 +19,7 @@ also try it online from <http://less2css.org/>
 
 Define variables with "@" sign and use it as follows:
 
-``` css
+```css
 @green: #46A546;
 
 .greendiv {
@@ -29,7 +29,7 @@ Define variables with "@" sign and use it as follows:
 
 will output
 
-``` css
+```css
 .greendiv {
     background: #46A546;
 }
@@ -39,7 +39,7 @@ will output
 
 Define a mixins as follows:
 
-``` css
+```css
 .top-border-radius(@size) {
     -webkit-border-radius: @size @size 0 0;
        -moz-border-radius: @size @size 0 0;
@@ -53,7 +53,7 @@ Define a mixins as follows:
 
 will output
 
-``` css
+```css
 .topRoundedDiv {
     -webkit-border-radius: 5px 5px 0 0;
        -moz-border-radius: 5px 5px 0 0;

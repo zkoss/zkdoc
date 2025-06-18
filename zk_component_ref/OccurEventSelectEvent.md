@@ -16,7 +16,7 @@ OccurEventSelectEvent will be sent with name as "onOccurEventSelectEvent
 the user.
 
 The components which are supported this event are: [ Bandinfo
-](ZK_Component_Reference/Diagrams_and_Reports/Timeline/Bandinfo).
+]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/timeline/bandinfo).
 
 # Example
 

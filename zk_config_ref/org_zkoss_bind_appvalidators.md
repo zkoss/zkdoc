@@ -9,7 +9,7 @@ between all binders.
 
 Sample usage: add the following settings in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.appValidators</name>
     <value>foo=my.FooValidator,bar=my.BarValidator</value>
@@ -18,7 +18,7 @@ Sample usage: add the following settings in zk.xml:
 
 Then use them by converter name.
 
-``` xml
+```xml
 <textbox value="@load(vm.name) @validator('foo')"/>
 <textbox value="@load(vm.value) @validator('bar')"/>
 ```

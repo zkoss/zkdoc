@@ -8,7 +8,7 @@ line breaks and spaces) between zul elements.
 
 Considering this source:
 
-``` xml
+```xml
           <label value="text" />
           <a>link</a>
 ```
@@ -26,14 +26,14 @@ in the source.
 
 Considering the following source:
 
-``` xml
+```xml
           <label value="text" /><a>link</a>
 ```
 
 will always return: textlink, since no whitespace exists between the
 label and the link element.
 
-``` xml
+```xml
 <library-property>
     <name>preserve-all-blank</name>
     <value>false</value>

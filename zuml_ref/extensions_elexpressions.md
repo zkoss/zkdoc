@@ -6,7 +6,7 @@ your own implementation, you could specify it with the [evaluator
 directive](ZUML_Reference/ZUML/Processing_Instructions/evaluator).
 For example,
 
-``` xml
+```xml
 <?evaluator name="mvel"
     import="org.zkoss.zul.Datebox,org.zkoss.zul.Combobox"?>
 

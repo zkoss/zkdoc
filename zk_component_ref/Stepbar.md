@@ -15,9 +15,9 @@ of a multi-step task.
 
 # Example
 
-![](images/stepbar-example.jpg)
+![](/zk_component_ref/images/stepbar-example.jpg)
 
-``` xml
+```xml
 <zk>
     <stepbar activeIndex="1" width="600px">
         <step title="First Step" />
@@ -53,12 +53,12 @@ Non-linear means users can toggle the active steps easily by clicking on
 any step even if the step is not the next one in the sequence. In linear
 mode, they can only activate in order.
 
-![](images/Stepbar-linear.gif)
+![](/zk_component_ref/images/Stepbar-linear.gif)
 
 ## Model
 
 The step model associated with this stepbar. (Learn [ Model-Driven
-Rendering](ZK_Developer%27s_Reference/MVC/Model#Model-Driven_Rendering))
+Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
 You can use <javadoc>org.zkoss.zkmax.zul.DefaultStepModel</javadoc>,
 wrap an existing <javadoc>org.zkoss.zul.ListModelList</javadoc> by
@@ -68,7 +68,7 @@ DefaultStepModel's constructor, or implement
 ## StepRenderer
 
 The renderer used to render each step.(Learn [ Model-Driven
-Rendering](ZK_Developer%27s_Reference/MVC/Model#Model-Driven_Rendering))
+Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
 You can specify your own
 <javadoc>org.zkoss.zkmax.zul.StepRenderer</javadoc> at this attribute to
@@ -78,9 +78,9 @@ renders a Step object with your data.
 
 Set whether the labels in children steps are wrapped. (Default: false)
 
-true: ![](images/Stepber-WrappedLabels.png)
+true: ![](/zk_component_ref/images/Stepber-WrappedLabels.png)
 
-false: ![](images/Stepbar-example.png)
+false: ![](/zk_component_ref/images/Stepbar-example.png)
 
 # Supported Events
 
@@ -109,11 +109,11 @@ client.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Step`](ZK_Component_Reference/Supplementary/Stepbar/Step)
+`*`[` Step`]({{site.baseurl}}/zk_component_ref/stepbar/step)
 
 # Use Cases
 

@@ -3,14 +3,14 @@
 # Colorbox
 
 - Component Reference:
-  [Colorbox](ZK_Component_Reference/Input/Colorbox)
+  [Colorbox]({{site.baseurl}}/zk_component_ref/input/colorbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
 
 Big icons for tablet devices
 
-![](images/Colorbox_Tablet_Example.png)
+![](/zk_component_ref/images/Colorbox_Tablet_Example.png)
 
 # Version History
 

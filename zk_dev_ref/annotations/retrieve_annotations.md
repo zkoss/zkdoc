@@ -6,7 +6,7 @@ purpose.
 
 The following is an example to dump all annotations of a component:
 
-``` java
+```java
  void dump(StringBuffer sb, Component comp) {
     ComponentCtrl compCtrl = (ComponentCtrl)comp;
      sb.append(comp.getId()).append(": ")

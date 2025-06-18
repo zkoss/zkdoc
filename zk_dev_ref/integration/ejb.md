@@ -9,9 +9,9 @@ of the server might vary from one server to another, but the ZUML
 document is the same.
 
 Notice that if you would like to access EJB in Java (such as in [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer)
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
 or in [a
-richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet)), you
+richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)), you
 could skip this section (since you could use the approach described in
 any EJB guide).
 
@@ -23,7 +23,7 @@ variable-resolver
 directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 For example,
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.jndi.JndiVariableResolver" ?>
 <window>
 ...
@@ -33,7 +33,7 @@ For example,
 Depending your configuration, you might have to pass extra information
 about JNDI to it such as:
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.jndi.JndiVariableResolver"
   arg0="ZkEJB3Demo"
   arg1="mail=java:comp/env/mailing,sec=java:comp/security/module" ?>
@@ -65,7 +65,7 @@ follows:
 
 **`jboss-web.xml`**:
 
-``` xml
+```xml
 <ejb-local-ref>
     <ejb-ref-name>personLocalBean</ejb-ref-name>
     <ejb-ref-type>Session</ejb-ref-type>
@@ -76,7 +76,7 @@ follows:
 
 **`web.xml`**:
 
-``` xml
+```xml
 <ejb-local-ref>
     <ejb-ref-name>personLocalBean</ejb-ref-name>
     <ejb-ref-type>Session</ejb-ref-type>
@@ -87,7 +87,7 @@ follows:
 
 Then, we could access them as follows.
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.jndi.JndiVariableResolver" ?>
 <listbox width="600px">
     <listhead sizable="true">
@@ -103,10 +103,10 @@ Then, we could access them as follows.
 
 The variables provided by a variable resolver is also available to the
 Java code in
-[zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML).
+[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml).
 For example,
 
-``` xml
+```xml
 <zscript>
 personLocalBean.createDemoData();
 </zscript>
@@ -118,7 +118,7 @@ Persistence units are not bound into JNDI by default, so we have to
 define JBoss specific properties in `persistence.xml` to bind them into
 JNDI. For example,
 
-``` xml
+```xml
 </persistence-unit>
     <properties>
         <property name="jboss.entity.manager.factory.jndi.name" value="java:comp/entityManagerFactory"/>

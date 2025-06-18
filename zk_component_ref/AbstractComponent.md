@@ -50,6 +50,6 @@ N/A
 
 | Version | Date        | Content                                                                                                                                                                                                                    |
 |---------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.4   | August 2010 | `stubonly` is introduced to ZK EE to minimize the memory footprint for large applications. Refer to [ here]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components) for details. |
+| 5.0.4   | August 2010 | `stubonly` is introduced to ZK EE to minimize the memory footprint for large applications. Refer to [ here]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components) for details. |
 
 

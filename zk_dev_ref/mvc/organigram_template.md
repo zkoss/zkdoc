@@ -1,9 +1,9 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can also define a customer rendering with a template for an
 organigram:
 
-``` xml
+```xml
     <zscript><![CDATA[
     DefaultTreeNode root = new DefaultTreeNode(null, new DefaultTreeNode[]{
         new DefaultTreeNode("Item1", new DefaultTreeNode[]{

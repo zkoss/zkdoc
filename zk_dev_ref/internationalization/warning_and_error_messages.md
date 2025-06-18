@@ -42,7 +42,7 @@ For example, assuming you want to customize `MZk.NOT_FOUND` in German
 translation (`msgzk_de.properties`), then you can add the following to
 `WEB-INF/zk-label_de.properties`:
 
-``` xml
+```xml
 MZk.3000=my customized message here
 ```
 
@@ -102,7 +102,7 @@ override particular message
 `msgzk.LOADING=CS langauge specific message"` and include this js file
 via `lang-addon.xml` as below
 
-``` xml
+```xml
 <language-addon>
   <addon-name>test</addon-name>
   <language-name>xul/html</language-name>
@@ -118,7 +118,7 @@ as shown above
 Finally include your lang-addon.xml in zk.xml using language-config
 element as shown below
 
-``` xml
+```xml
 <language-config>
     <addon-uri>/WEB-INF/lang-addon.xml</addon-uri>
 </language-config>
@@ -137,7 +137,7 @@ Clients.reloadMessages(Locale) is triggered.
 
 It can be defined in a language addon using the <message-loader-class>
 element. Please refer to the [client-side
-reference](ZK_Client-side_Reference/Language_Definition/message-loader-class)
+reference]({{site.baseurl}}/zk_client_side_ref/language_definition/message-loader-class)
 documentation for more details.
 
 # Version History

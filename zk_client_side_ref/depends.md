@@ -12,7 +12,7 @@ parsed.
 
 Example,
 
-``` xml
+```xml
 <depends>zkex, zkmax</depends>
 ```
 

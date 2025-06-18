@@ -8,7 +8,7 @@ It specifies a class to create a component instead of the default one.
 In the following example, `MyWindow` is used instead of the default
 class, <javadoc type="interface">org.zkoss.zul.Window</javadoc>.
 
-``` xml
+```xml
 <window use="MyWindow"/>
 ```
 

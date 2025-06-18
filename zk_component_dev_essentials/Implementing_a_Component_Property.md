@@ -1,7 +1,7 @@
 A property usually has a getter and a setter. The getter is
 straightforward:
 
-``` java
+```java
 private String _value = ""; //a data member
  
 public String getValue() {
@@ -14,7 +14,7 @@ achieved by using the
 <javadoc method="smartUpdate(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.AbstractComponent</javadoc>
 function.
 
-``` java
+```java
 public void setValue(String value) {
  if (!_value.equals(value)) {
   _value = value;

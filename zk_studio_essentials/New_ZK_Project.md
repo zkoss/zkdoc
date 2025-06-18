@@ -18,7 +18,7 @@ while ZK Studio does the rest for you.
     [here](https://www.zkoss.org/download/zk) and import it into ZK
     Studio, please refer to [ Import ZK Binary Distribution From Local
     File
-    System](ZK_Studio_Essentials/Features_of_ZK_Studio/ZKs#Import_ZK_Binary_Distribution_From_Local_File_System)
+    System]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks#Import_ZK_Binary_Distribution_From_Local_File_System)
 3.  You can modify the **Source folders** and **Default output folder**
     if you like. Then, click **Next**.
       

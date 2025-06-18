@@ -76,7 +76,7 @@ directly under <u>WEB-INF</u> folder*.
 
 Here is a simple zul file named **hello.zul**.
 
-``` xml
+```xml
  <window title="My First ZK Application" border="normal">
     Hello World!
  </window>

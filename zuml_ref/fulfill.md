@@ -33,7 +33,7 @@ that you could specify at most one URI in a fulfill attribute.
 
 For more information, please refer to [ZK Developer's Reference:
 On-demand
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/On-demand_Evaluation).
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/on-demand_evaluation).
 
 # The onFulfill Event
 
@@ -47,7 +47,7 @@ For example, if you use the `wireVariables` method of the
 call `wireVariables` again to wire the new components in the `onFulfill`
 event.
 
-``` xml
+```xml
 <div fulfill="b1.onClick, b2.onOpen" onFulfill="Components.wireVariables(self, controller)">
     ...
 </div>

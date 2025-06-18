@@ -19,7 +19,7 @@ tree directly at the client.
 For example, suppose you want to listen to the `onload` event, you can
 do as follows[^1].
 
-``` xml
+```xml
 <iframe src="http://www.google.com"  height="300px"
   xmlns:ca="client/attribute"
   ca:onload="do_whater_you_want()"/>
@@ -28,7 +28,7 @@ do as follows[^1].
 If the attribute contains colon or other special characters, you can use
 the `attribute` element as follows.
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
   <attribute ca:name="ns:whatever">
   whatever_value_you_want
@@ -49,7 +49,7 @@ and must be follow the same rules as the special attributes.
 The client attribute must be initialized using the \`\${value}\` syntax,
 and doesn't support \`@init\`, \`@load\` or \`@bind\`.
 
-``` xml
+```xml
 <!-- "forEach" versus children binding  -->
 <div xmlns:ca="client/attribute">
     <!-- correct use for non-dynamic attribute values -->
@@ -70,13 +70,13 @@ have an extra functionality. For example, (jQuery's mask)
 
 **Zul File:**
 
-``` xml
+```xml
 <textbox xmlns:ca="client/attribute" ca:data-mask="00:00:00" onChange='Clients.log(self.value)'/>
 ```
 
 **zk.xml:**
 
-``` xml
+```xml
 <client-config> 
     <data-handler>
         <name>mask</name><!-- the attribute name, i.e. data-mask -->
@@ -130,7 +130,7 @@ your own data-attribute handler and contribute this project).
 | 8.0.0   | May 2015  | [Support client data attributes handler](http://tracker.zkoss.org/browse/ZK-2730) |
 
 [^1]: For more information, please refer to [ZK Component Reference:
-    iframe](ZK_Component_Reference/Essential_Components/Iframe#onload).
+    iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
 
 [^2]: Required
 

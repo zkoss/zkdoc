@@ -1,5 +1,5 @@
 In addition to [ Defer the Creation of Child
-Components]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Defer_the_Creation_of_Child_Components),
+Components]({{site.baseurl}}/zk_dev_ref/performance_tips/defer_the_creation_of_child_components),
 you can defer the rendering of the widgets at the client by the use of
 the `renderdefer` attribute. It is a technique to make a sophisticated
 page appear earlier.
@@ -7,7 +7,7 @@ page appear earlier.
 For example, we can defer the rendering of the inner window for 100
 milliseconds as shown below
 
-``` xml
+```xml
 <window title="Render Defer" border="normal">
     The following is rendered after 100 milliseconds.
     <window title="inner" width="300px" height="200px" border="normal"
@@ -28,7 +28,7 @@ elements.
 
 Here is another example in pure Java.
 
-``` java
+```java
 Tabpanel tp = new Tabpanel();
 tp.setRenderdefer(0);
 ```
@@ -45,7 +45,7 @@ responsive.
 on a child component, it's necessary to consider how the final style is
 shown after finishing "renderdefer". For example,
 
-``` xml
+```xml
 <zk xmlns:w="client">
 <style>
     .always-scroll .z-grid-body {

@@ -6,9 +6,9 @@
 - Java API: <javadoc>org.zkoss.zul.Menu</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menu</javadoc>
 - Style Guide: [ Menu in
-  Menubar](ZK_Style_Guide/XUL_Component_Specification/Menubar/Menu_in_Menubar),
+  Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menu_in_menubar),
   [ Menu in
-  Menupopup](ZK_Style_Guide/XUL_Component_Specification/Menupopup/Menu_in_Menupopup)
+  Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menu_in_menupopup)
 
 # Employment/Purpose
 
@@ -18,9 +18,9 @@ displayed. This element is also used to create submenus of `Menupopup`.
 
 # Example
 
-![](images/ZKComRef_Menu.png)
+![](/zk_component_ref/images/ZKComRef_Menu.png)
 
-``` xml
+```xml
 <menubar>
  <menu label="File">
      <menupopup>
@@ -44,11 +44,11 @@ arrow on the right hand side will show the menu whereas clicking the
 main button (the left hand side) will fire the onClick event. The red
 outline is used to highlight the clickable areas of the Menu.
 
-![](images/ZKComRef_Menu_onClick.png)
+![](/zk_component_ref/images/ZKComRef_Menu_onClick.png)
 
 The code to register an onClick event is shown below:
 
-``` xml
+```xml
 <menubar>
     <menu label="Topmost" onClick='alert(1);'>
         <menupopup>
@@ -80,11 +80,11 @@ The code to register an onClick event is shown below:
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Menupopup`](ZK_Component_Reference/Essential_Components/Menu/Menupopup)
+`*`[` Menupopup`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup)
 
 # Use Cases
 

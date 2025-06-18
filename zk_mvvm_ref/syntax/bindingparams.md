@@ -6,7 +6,7 @@
 Syntax
 ======
 
-``` java
+```java
 @BindingParams
 ```
 
@@ -27,7 +27,7 @@ Example
 =======
 
 #### A plain old Java object (POJO)
-``` java
+```java
 public class Message {
     private String myKey;
     private String content;
@@ -51,7 +51,7 @@ public class Message {
 ```
 
 #### Command binding that pass parameters
-``` xml
+```xml
 <listbox model="@load(vm.items)" selectedItem="@bind(vm.selected)" hflex="true" height="300px">
     <listhead>
         <listheader label="Name"/>
@@ -69,7 +69,7 @@ public class Message {
 ```
 
 #### Command method in ViewModel with binding parameter
-``` java
+```java
 @Command
 public void popupMessage(@BindingParams Message message) {
     // method body

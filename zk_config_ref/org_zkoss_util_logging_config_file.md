@@ -9,11 +9,11 @@ It specifies the logging configuration file which is used to configure
 the logging of ZK internal functions. You generally don't need it unless
 you'd like to know how ZK operates internally. For more information,
 please refer to [ZK Developer's Reference:
-Logger]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/Logger).
+Logger]({{site.baseurl}}/zk_dev_ref/supporting_utilities/logger).
 
 For example,
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.util.logging.config.file</name>
     <value>conf/zk-log.properties</value>

@@ -3,14 +3,14 @@
 # Timebox
 
 - Component Reference:
-  [Timebox](ZK_Component_Reference/Input/Timebox)
+  [Timebox]({{site.baseurl}}/zk_component_ref/input/timebox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
 
 Big icons for tablet devices
 
-![](images/Timebox_Tablet_Example.png)
+![](/zk_component_ref/images/Timebox_Tablet_Example.png)
 
 # Version History
 

@@ -4,13 +4,13 @@
 
 ## Maven Project
 
-Please [ setup zk Maven repository]({{site.baseurl}}/zk_installation_guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository) first.
+Please [ setup zk Maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) first.
 
 {% include version-badge.html version=9.6.0 %}
 
 ### Java EE
 
-``` xml
+```xml
     <dependency>
       <groupId>org.zkoss.zats</groupId>
       <artifactId>zats-mimic-ext96</artifactId>
@@ -24,7 +24,7 @@ for the latest version.
 
 ### Jakarta EE
 
-``` xml
+```xml
     <dependency>
       <groupId>org.zkoss.zats</groupId>
       <artifactId>zats-mimic</artifactId>
@@ -40,7 +40,7 @@ for the latest version.
 
 Add the following dependency:
 
-``` xml
+```xml
 
     <dependency>
       <groupId>org.zkoss.zats</groupId>
@@ -54,7 +54,7 @@ Add the following dependency:
 
 Add the following dependency:
 
-``` xml
+```xml
 
     <dependency>
       <groupId>org.zkoss.zats</groupId>
@@ -66,7 +66,7 @@ Add the following dependency:
 
 {% include version-badge.html version=5.0.0 %} Add the following dependency:
 
-``` xml
+```xml
 
     <dependency>
       <groupId>org.zkoss.zats</groupId>
@@ -124,7 +124,7 @@ classpath.
 Also remember to add jar files of your preferred unit test framework,
 e.g. JUnit.
 
-``` xml
+```xml
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

@@ -5,8 +5,7 @@
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
 - Java API: <javadoc>org.zkoss.zul.Tabpanels</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabpanels</javadoc>
-- Style Guide: [
-  Tabbox](ZK_Style_Guide/XUL_Component_Specification/Tabbox)
+
 
 # Employment/Purpose
 
@@ -15,9 +14,9 @@ tabpanel components.
 
 # Example
 
-![](images/ZKComRef_Containers_Tabs.PNG)
+![](/zk_component_ref/images/ZKComRef_Containers_Tabs.PNG)
 
-``` xml
+```xml
 <zk>
     <tabbox width="400px">
         <tabs>
@@ -65,16 +64,16 @@ tabpanel components.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
 [
-Tabpanel](ZK_Component_Reference/Containers/Tabbox/Tabpanel)
+Tabpanel]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanel)
 
 # Use Cases
 
-[ Tabbox](ZK_Component_Reference/Containers/Tabbox#Use_Cases)
+[ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
 
 # Version History
 

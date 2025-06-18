@@ -3,8 +3,7 @@
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
 - Java API: <javadoc>org.zkoss.zul.Listbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listbox</javadoc>
-- Style Guide: [
-  Listbox](ZK_Style_Guide/XUL_Component_Specification/Listbox)
+
 
 # Employment/Purpose
 
@@ -19,9 +18,9 @@ in its content.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
     <listbox id="box">
         <listhead sizable="true">
@@ -61,9 +60,9 @@ in its content.
 In theory, a list cell can contain any other components, as demonstrated
 below.
 
-![](images/ZKComRef_Listbox_Example_ContainComponents.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example_ContainComponents.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox width="250px">
@@ -104,14 +103,14 @@ The Listbox has two molds: `default` and `select`.
 ## Select Mold
 
 Suggest using [
-Selectbox](ZK%20Component%20Reference/Essential%20Components/Selectbox).
+Selectbox](zk_component_ref/essential_components/Selectbox).
 
 If the `select` mold is used, Listbox renders an HTML `<select>` tag
 instead.
 
-![](images/1000000000000085000000343B08C7D1.png)
+![](/zk_component_ref/images/1000000000000085000000343B08C7D1.png)
 
-``` xml
+```xml
  
     <listbox mold="select">
         <listitem label="Matthew"/>
@@ -140,9 +139,9 @@ value to each item using the `setValue` method.
 This mold supports having Listgroups and renders them as HTML
 <optgroup>.
 
-![](images/Select-mold-optgroup.png)
+![](/zk_component_ref/images/Select-mold-optgroup.png)
 
-``` xml
+```xml
 <listbox mold="select">
     <listgroup label="Support"/>
     <listitem label="Matthew"/>
@@ -179,7 +178,7 @@ you want to have different visual layout or to control multiple
 `listbox` and `grid`controls with one paging component.
 
 Please refer to the [
-Grid](ZK_Component_Reference/Data/Grid#Paging) for more
+Grid]({{site.baseurl}}/zk_component_ref/data/grid#Paging) for more
 details.
 
 ## Autopaging
@@ -197,7 +196,7 @@ the available height.
 applied the following CSS by default. If you want to change the height,
 please overwrite the CSS rule as your preference.
 
-``` css
+```css
 .z-listbox-autopaging .z-listcell-cnt {
     height: 30px;
     overflow: hidden;
@@ -209,7 +208,7 @@ please overwrite the CSS rule as your preference.
 **Note:** In ZK 7, we change the naming *.z-listcell-cnt* to
 *.z-listcell-content*. {% include version-badge.html version=7.0.3 %}
 
-``` css
+```css
 .z-listbox-autopaging .z-listitem {
     height: 80px; /* set custom height */
 }
@@ -240,7 +239,7 @@ By default, when a user clicks on an HTML <code><button>, <input>,
 user clicks the textbox in the following example, the selection state of
 the item won't be changed (only the textbox gains the focus).
 
-``` xml
+```xml
 <listitem>
     <listcell>
         <textbox/>
@@ -258,7 +257,7 @@ specify a list of tags in the nonselectableTags property
 For example, if you want to select the item, no matter what tag the user
 clicks, you could specify an empty string as follows.
 
-``` xml
+```xml
 <listbox nonselectableTags="">
     <listitem><listcell><textbox/></listcell></listitem>
     <listitem><listcell><button label="button"/></listcell></listitem>
@@ -269,7 +268,7 @@ clicks, you could specify an empty string as follows.
 
 If you only want to ignore BUTTON and INPUT only, you could specify:
 
-``` xml
+```xml
 <!-- The tag here means HTML tag, not ZUL tag -->
 <listbox nonselectableTags="button, input"/> 
 ```
@@ -285,7 +284,7 @@ checkmark, you could specify `*`. Notice that you have to specify
 This setting also allows to select and copy a text in a listcell with
 ctrl+c.
 
-``` xml
+```xml
     <listbox checkmark="true" nonselectableTags="*">
         <listitem>
             <listcell>
@@ -312,11 +311,11 @@ To select multiple items, you can:
 
 - press `Ctrl` to select separate items:
 
-![](images/listbox-select-separately.png)
+![](/zk_component_ref/images/listbox-select-separately.png)
 
 - press `Shift` to select consecutive items:
 
-![](images/listbox-select-consecutive.png)
+![](/zk_component_ref/images/listbox-select-consecutive.png)
 
 ### Enable with a ListModel
 
@@ -326,7 +325,7 @@ multiple selection with the <strong>ListModel</strong>
 . Please **do not** set <strong>multiple</strong> on listbox directly,
 and set <strong>multiple</strong> on the model instead.
 
-``` xml
+```xml
 ...
 List Items = new ArrayList();
 for (int i = 0; i < 1000; i++) {
@@ -344,14 +343,14 @@ model.setMultiple(true);
 The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each list item.
 
-![](images/ZKComRef_Listbox_Checkmark.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Checkmark.png)
 
 In the following example, you will notice how a checkbox is added
 automatically when you move a list item from the left listbox to the
 right one. The checkbox is then removed when you move a list item from
 the right listbox to the left listbox.
 
-``` xml
+```xml
 <zk>
     <hbox>
         <listbox id="src" rows="0" multiple="true" width="200px">
@@ -403,7 +402,7 @@ the right listbox to the left listbox.
 </zk>
 ```
 
-![](images/ZKComRef_Listbox_Checkmark2.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Checkmark2.png)
 
 Note: If the `multiple` attribute is false, radio buttons are displayed
 instead, as demonstrated by the right hand listbox.
@@ -423,7 +422,7 @@ ListModelList)
 The Select all checkbox on listheader now support onCheckSelectAll event
 that can determine whether it is checked or not.
 
-``` xml
+```xml
 <listbox checkmark="true" multiple="true" width="350px">
     <custom-attributes org.zkoss.zul.listbox.rod="false"/>
     <attribute name="onCheckSelectAll"><![CDATA[
@@ -460,10 +459,10 @@ In other words, all other items will remain their selection state.
 If you prefer to **deselect all other items** and select the item being
 clicked (which the behavior of ZK 5.0.4 and earlier), you could specify
 true to this library property called [
-`org.zkoss.zul.listbox.checkmarkDeselectOthers`](ZK%20Configuration%20Reference/zk.xml/The%20Library%20Properties/org.zkoss.zul.listbox.checkmarkDeselectOthers)
+`org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.listbox.checkmarkdeselectothers)
 in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.listbox.checkmarkDeselectOthers</name>
     <value>true</value>
@@ -480,7 +479,7 @@ If you prefer not to select/deselect item on right click, you could
 specify false to this library property called
 `org.zkoss.zul.listbox.rightSelect` in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.listbox.rightSelect</name>
     <value>false</value>
@@ -500,9 +499,9 @@ The simplest way is `sort="auto"`. Then, when a user clicks a
 listheader, listbox sorts the column based on the **'label** of each
 listcell in a **case-insensitive** way.
 
-![](images/ZKComRef_Listbox_Sorting.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Sorting.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox width="200px">
@@ -524,9 +523,9 @@ property to sort. By default, it sorts in a case-sensitive way with
 In the following example, we demonstrate how to sort a person object
 based on its First Name, Last Name, or Age.
 
-![](images/ZKComRef_Listbox_Auto_Sorting.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Auto_Sorting.png)
 
-``` xml
+```xml
     <zscript>
         <![CDATA[
 
@@ -582,7 +581,7 @@ To sort in case-insensitive, you can apply one of the functions below:
 - UPPER()
 - LOWER()
 
-``` xml
+```xml
 <listheader label="First Name" sort="auto(UPPER(firstName))" />
 ```
 
@@ -601,7 +600,7 @@ For example, assume you want to sort based on the value of list items,
 rather than list cell's label, then you assign an instance of
 `ListitemComparator` to these attributes as follows.
 
-``` xml
+```xml
     <zscript>
         import org.zkoss.zul.*;
         Comparator asc = new ListitemComparator(-1, true, true);
@@ -621,7 +620,7 @@ direction icon** to indicate "ascending" or "descending". It **doesn't
 sort** the data. If list items are sorted before adding to the listbox,
 you should set this attribute explicitly.
 
-``` xml
+```xml
 <listheader sortDirection="ascending"/>
 ```
 
@@ -649,7 +648,7 @@ items using Java code. For example, you may have to call this method
 after adding items (assuming that they are not added in the proper
 order).
 
-``` java
+```java
 new Listem("New Stuff").setParent(listbox);
 if (!"natural".header.getSortDirection())
     header.sort("ascending".equals(header.getSortDirection()));
@@ -697,13 +696,13 @@ interface for rendering a item of data into the listbox.
 3 Set the data in the `model` attribute and, optionally, the renderer in
 the `itemRenderer` attribute.
 
-![](images/ZKComRef_Listbox_LiveData.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_LiveData.png)
 
 In the following example, we prepared a list model called `strset`,
 assigned it to a list box through the `model` attribute. Then, the
 listbox will do the rest.
 
-``` xml
+```xml
 <window title="Livedata Demo" border="normal" width="200px">
     <zscript><![CDATA[
         String[] data = new String[30];
@@ -730,7 +729,7 @@ If you allow users to sort a listbox with live data, you have to
 implement the interface, <javadoc>org.zkoss.zul.ext.Sortable</javadoc>,
 in addition to the <javadoc>org.zkoss.zul.ListModel</javadoc>.
 
-``` java
+```java
 class MyListModel implements ListModel, Sortable {
     public void sort(Comparator cmpr, boolean ascending) {
         //do the real sorting
@@ -754,7 +753,7 @@ are registered by
 In most cases, all the data is changed, so the list model usually sends
 the following event:
 
-``` java
+```java
 new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1)
 ```
 
@@ -783,9 +782,9 @@ the visible area into the current view (visible area), you can call
 The simplest format is as follows. It is a single-column and
 single-selection list box.
 
-![](images/ZKComRef_Listbox_SingleColumn.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_SingleColumn.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox width="200px">
@@ -805,9 +804,9 @@ To define a multi-column list, the number of listcells must match the
 number of columns with a row. For example if there are 4 columns then
 each row must contain 4 listcells.
 
-![](images/ZKComRef_Listbox_MultiColumn.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_MultiColumn.png)
 
-``` xml
+```xml
 <zk>
     <listbox width="200px"> 
         <listitem>
@@ -832,9 +831,9 @@ You can specify column headers by using `listhead` and `listheader`,
 please see the code below[^2]. In addition to a label, you can specify
 an image as the header by `image` attribute.
 
-![](images/ZKComRef_Listbox_ColumnHeaders.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_ColumnHeaders.png)
 
-``` xml
+```xml
  
     <listbox width="200px">
         <listhead>
@@ -856,9 +855,9 @@ You could specify the column footers by using `listfoot` and
 list box, it must be the first child, and a `listfoot` instance the last
 child.
 
-![](images/ZKComRef_Listbox_ColumnFooters.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_ColumnFooters.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox width="200px">
@@ -896,7 +895,7 @@ Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
 Please refer to the [
-Grid](ZK_Component_Reference/Data/Grid#Auxiliary_Headers) for
+Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
 more details.
 
 ## Drop-Down List
@@ -905,9 +904,9 @@ You can create a drop-down list by setting the listbox's mold to select
 and making the box a single row. Notice you cannot use multi-column for
 the drop-down list.
 
-![](images/1000000000000049000000488DCF4463.png)
+![](/zk_component_ref/images/1000000000000049000000488DCF4463.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox mold="select" rows="1">
@@ -925,9 +924,9 @@ A list box will be scrollable if it has a defined or automatically
 calculated height (e.g. by specifying the `rows`, `height` or `vflex`
 attribute) and there is not enough space to display all the list items.
 
-![](images/ZKComRef_Listbox_Scrollable.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Scrollable.png)
 
-``` xml
+```xml
  
 <zk>
     <listbox width="250px" rows="4">
@@ -966,7 +965,7 @@ is not visible unless user mouse over on the content. To turn off the
 floating scrollbar and use original scrollbar, please add the following
 configuration in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.nativebar</name>
     <value>true</value>
@@ -999,14 +998,14 @@ result.
 {% include version-badge.html version=5.0.6 %} By default, when sizedByContent is
 true, the listheaders only take the required space.
 
-![](images/ZKComRef_Listbox_Nospan.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Nospan.png)
 
 If you want to span the width of the listheaders to occupy the whole
 listbox, you can specify true to this attribute
 
-![](images/ZKComRef_Listbox_Span.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Span.png)
 
-``` xml
+```xml
 <listbox sizedByContent="true" span="true" width="800px">
     <listhead>
         <listheader label="Time Message" />
@@ -1027,7 +1026,7 @@ listbox, you can specify true to this attribute
 
 See
 [listbox-sizedByContent.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/listbox/listbox-sizedByContent.zul)
-![](images/listbox-sizedByContent.png)
+![](/zk_component_ref/images/listbox-sizedByContent.png)
 
 ## Rows
 
@@ -1050,7 +1049,7 @@ This property is ignored if the `rows` attribute is specified.
 The `emptyMessage` attribute is used to show a message when we have no
 items. {% include version-badge.html version=5.0.7 %}
 
-``` xml
+```xml
         <listbox id="test1" emptyMessage="No items match your search">
         
             <listhead sizable="true">
@@ -1084,9 +1083,9 @@ the auto-fitting functionality. {% include version-badge.html version=5.0.0 %}
 
 ## The onAfterRender Event
 
-![](images/listbox_onAfterRender.png)
+![](/zk_component_ref/images/listbox_onAfterRender.png)
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
         ListModelList lm = new ListModelList(Arrays.asList(new String[] { "David",
@@ -1105,7 +1104,7 @@ After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Listbox's header out of visible range in a viewport, the
 Listbox's header becomes floating and sticky on the top of the page.
 
-``` xml
+```xml
   <listbox sclass="z-sticky-header">
     <!-- listhead, listitem... -->
   </listbox>
@@ -1115,9 +1114,9 @@ Listbox's header becomes floating and sticky on the top of the page.
 
 For example, {% include version-badge.html version=6.5.0 %}
 
-![](images/ZKComRef_Listbox_Columns_Menu.PNG)
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
 
-``` xml
+```xml
 <zk>
     <listbox>
         <listhead menupopup="auto">
@@ -1132,7 +1131,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 ```
 
 - For further details, please refer to [ Listhead
-  component](ZK_Component_Reference/Data/Listbox/Listhead)
+  component]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)
   directly.
 
 ## Ungroup Column Menu
@@ -1141,7 +1140,7 @@ When the user groups the content of the listbox, the column's menu will
 show an ungroup icon for user to reset the group. {% include edition-availability.html edition="ee" %} {%
 include version-badge.html version=6.5.0 %}
 
-![](images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
 
 **Note:** If the Listbox contains with Model, *GroupsModel*, you have to
 register an *onUngroup* event for listheader to show an ungroup icon and
@@ -1149,7 +1148,7 @@ then replace the current model with a *ListModel* to reset the group.
 
 For example,
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
   int cnt = 0;
@@ -1200,9 +1199,9 @@ to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
 <javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
 
-![](images/ZKComRef_Listbox_Grouping.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
 
-``` xml
+```xml
 <zk>
     <listbox>
         <listhead sizable="true">
@@ -1261,14 +1260,14 @@ supported in Grouping Grid, and Listbox with the
 For more information, please take a look at these smalltalks,
 
 - [ Learn About Grouping with Listbox and
-  Grid](Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
+  Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
 - [ About How Grouping Works with Live
-  Data](Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+  Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
 - [ Add Summary Field For
-  Grouping](Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+  Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
 Or refer to [ Listgroup
-component](ZK_Component_Reference/Data/Listbox/Listgroup)
+component]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)
 directly.
 
 # Frozen Component
@@ -1279,7 +1278,7 @@ components easier to read, interpret and handle.
 
 The following code demonstrates how to freeze a column within a Grid:
 
-``` xml
+```xml
     <listbox>
         <listhead>
             <listheader label="header 1"/>
@@ -1300,7 +1299,7 @@ The following code demonstrates how to freeze a column within a Grid:
 {% include version-badge.html version=5.0.0 %}
 
 - For further details, please refer to [ Frozen
-  component](ZK_Component_Reference/Supplementary/Frozen)
+  component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Custom Attributes
@@ -1357,7 +1356,7 @@ the value as **ignore.change**.
 
 It specifies whether to enable ROD (render-on-demand). For more
 information, please refer to [ZK Developer's Reference: Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand).
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand).
 
 ## org.zkoss.zul.listbox.preloadSize
 
@@ -1469,7 +1468,7 @@ items.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -1492,26 +1491,26 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/listbox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/listbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>select</p>
 </center></td>
-<td>![](images/listbox_mold_select.png)</td>
+<td>![](/zk_component_ref/images/listbox_mold_select.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](images/listbox_mold_paging.png)</td>
+<td>![](/zk_component_ref/images/listbox_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>
 
 # Supported Children
 
-[` Listitem`](ZK_Component_Reference/Data/Listbox/Listitem)`, ' [` Listhead`](ZK_Component_Reference/Data/Listbox/Listhead)`, ' [` Listfoot`](ZK_Component_Reference/Data/Listbox/Listfoot)`, ' [` Listgroup`](ZK_Component_Reference/Data/Listbox/Listgroup)`, ' [` Listgroupfoot`](ZK_Component_Reference/Data/Listbox/Listgroupfoot)
+[` Listitem`]({{site.baseurl}}/zk_component_ref/data/listbox/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/data/listbox/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/data/listbox/listgroupfoot)
 
 # Version History
 

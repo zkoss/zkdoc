@@ -5,7 +5,7 @@
 A layout region may have a caption, which is specified by declaring a
 child component `<caption>`.
 
-``` xml
+```xml
 <borderlayout>
     <north>
         <caption label="search" image="/img/live.gif"/>

@@ -1,11 +1,11 @@
 # Component Reference
 
 Component Reference: [
-Window](ZK_Component_Reference/Containers/Window)
+Window]({{site.baseurl}}/zk_component_ref/containers/window)
 
 # DOM Structure
 
-``` html
+```html
 <div class="z-window z-window-mode">
     <div class="z-window-header">
         <div class="z-window-icon z-window-close">
@@ -46,7 +46,7 @@ Window](ZK_Component_Reference/Containers/Window)
 Basically, LESS source is correspondent to its DOM structure, and each
 mode have different styles.
 
-``` css
+```css
 .z-window {
     /* basic style */
 
@@ -107,7 +107,7 @@ border, gradient background, rounded corner or shadow effects.
 ### Setup environment and Analyze design
 
 - Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component)
+  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -139,7 +139,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Change color by overriding zk less variables.
 
-``` css
+```css
 @import "~./zul/less/_header.less";
 
 @windowBorderColor: #E3E3E3;
@@ -150,7 +150,7 @@ border, gradient background, rounded corner or shadow effects.
 - Remove rounded corners, border color and gradient background by
   overriding zk less variables.
 
-``` css
+```css
 @baseBorderRadius: 0;
 @baseBorderColor: #FFFFFF;
 @baseGradientStart: #FFFFFF;
@@ -159,7 +159,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Header Title Text.
 
-``` css
+```css
 .z-window {
     &-header {
         .fontStyle(@baseTitleFontFamily, 24px, normal, #ACACAC);
@@ -171,7 +171,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Icons in Header.
 
-``` css
+```css
 .z-window {
     &-icon {
         font-size: 12px;
@@ -193,7 +193,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Content style and remove shadow effects.
 
-``` css
+```css
 .z-window {
     &-content {
         border: 0;

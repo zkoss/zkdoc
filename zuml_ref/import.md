@@ -2,14 +2,14 @@
 
 **Syntax**
 
-``` xml
+```xml
 <?import ''class-name1'' ''class-name2'' ?>
 ```
 
 It imports a class or a package of classes. It works like Java's import
 statement. For example,
 
-``` xml
+```xml
 <?import com.foo.composer.FooComposer?>
 <?import com.foo.init.*?>
 
@@ -21,7 +21,7 @@ statement. For example,
 After import, we can invoke the static method or field defined in
 imported class with el statement. For example,
 
-``` xml
+```xml
 <?import com.foo.FooClass ?>
 <!-- or we can import com.foo.* -->
 <label value="${FooClass.staticMethod()}"></label>
@@ -32,7 +32,7 @@ imported class with el statement. For example,
 
 **Syntax to Import Directives**
 
-``` xml
+```xml
  <?import src="..."?>
  <?import src="..." directives="..."?>
 ```
@@ -52,7 +52,7 @@ ZUML page, and then import them into another ZUML page, such that both
 zul pages share the same set of component definitions, additional to the
 system default.
 
-``` xml
+```xml
  <!-- special.zul: Common Definitions -->
  <?init zscript="/WEB-INF/macros/special.zs"?>
  <?component name="special" macroURI="/WEB-INF/macros/special.zuml" class="Special"?>
@@ -65,7 +65,7 @@ Where the `Special` class is assumed to be defined in
 Then, other ZUML pages can share the same set of component definitions
 as follows.
 
-``` xml
+```xml
  <?import src="special.zul"?>
  ...
  <special/><!-- you can use the component defined in special.zul -->
@@ -109,7 +109,7 @@ and `import` (with class) directives are imported.
 
 Specify a list of directive names separated by comma. For example,
 
-``` xml
+```xml
  <?import src="/template/taglibs.zul" directives="taglib, xel-method"?>
  <?import src="/template/java.zul" directives="import"?><!-- only <?import class="..."?> -->
 ```

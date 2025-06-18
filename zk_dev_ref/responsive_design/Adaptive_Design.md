@@ -23,7 +23,7 @@ event will fire during page initialization and whenever the client
 properties change, for example, change of tablet orientation or when
 desktop browser resized. More information of this event can be found in
 the [ClientInfoEvent
-documentation](ZK_Component_Reference/Tablet_Devices/Events/ClientInfoEvent).
+documentation]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent).
 
 This event can be leveraged in the MVC pattern, using a controller to
 alter the page structure based on the information returned from the
@@ -54,7 +54,7 @@ the page.
 Registering the ClientInfo event listener on the page's root component
 to define actions upon changes on client properties:
 
-``` java
+```java
 //ClientInfoEvent is used to perform actions when client size (or orientation) is changed
 comp.addEventListener(Events.ON_CLIENT_INFO, new EventListener<ClientInfoEvent>() {
     public void onEvent(ClientInfoEvent event) throws Exception {
@@ -97,7 +97,7 @@ possible template.
 Using @MatchMedia to perform actions when media query conditions are
 fulfilled:
 
-``` java
+```java
     @NotifyChange("layoutState")
     @MatchMedia("all and (min-width: 1200px)")
     public void handleBigLayout(){
@@ -117,11 +117,11 @@ incorporate fluid design elements to subdivide this template’s display
 options.
 
 For example, based on the [fluid design
-examples](ZK_Developer's_Reference/Responsive_Design/Fluid_Design),
+examples]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design),
 we can add bootstrap grid entries for extra-small, small and medium
 states to the small layout generated in ZK.
 
-![]({{site.baseurl}}/zk_dev_ref/images/3-BSintegrationschema.png)
+![]({{site.baseurl}}/zk_dev_ref/images/3-bsintegrationschema.png)
 
 In this case, we add fluid transitions to the MVVM adaptive example to
 build three fluid state on top of two adaptive states. The same adaptive
@@ -152,7 +152,7 @@ at client side.
 Integrating both fluid and adaptive design to build a fully responsive
 document:
 
-``` xml
+```xml
 <div id="content" height="80px" sclass="panel">
     <!--    Replacing templates: responsive design -->
     <apply template="@load(vm.layoutState)">

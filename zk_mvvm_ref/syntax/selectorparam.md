@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @SelectorParam
 
 @SelectorParam("#componentId")
@@ -42,7 +42,7 @@ The value can be omitted if name is the same as the annotated parameter.
 Example
 =======
 
-``` xml
+```xml
 <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.SelectorParamVM')">
 
     <hbox><label id="message"/></hbox>
@@ -55,7 +55,7 @@ Example
 ```
 
 #### Example to pass components by selector
-``` java
+```java
 public class SelectorParamVM {
 
     @Command

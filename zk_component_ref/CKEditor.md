@@ -14,7 +14,7 @@
 You need to include CKEditor jar in pom.xml before using it because it
 has a different group id from ZK other components.
 
-``` xml
+```xml
         <dependency>
             <groupId>org.zkoss.zkforge</groupId>
             <artifactId>ckez</artifactId>
@@ -40,7 +40,7 @@ Microsoft Word and OpenOffice.
 
 ![](/zk_component_ref/images/ZKCompRef_CKEditor.png)
 
-``` xml
+```xml
 <ckeditor width="850px">
 <attribute name="value"><![CDATA[
 <table width="200" cellspacing="1" cellpadding="1" border="1">
@@ -69,7 +69,7 @@ Microsoft Word and OpenOffice.
 
 It will enable the "Save" button when inside a form.
 
-``` xml
+```xml
 <zk xmlns:n="http://www.zkoss.org/2005/zk/native">
     <n:form>
     <ckeditor width="50%" />
@@ -83,7 +83,7 @@ ZK CKEditor provides a default image file browser for browsing the
 images in a server path you specify. When you click "Browse Server",
 CKEditor will open a new window and list all images in the file browser.
 
-``` xml
+```xml
     <ckeditor filebrowserImageBrowseUrl="img"/>
 ```
 
@@ -115,7 +115,7 @@ file upload handler for uploading the files to the folder you specify.
 You can only specify a folder under the web context root because a web
 application can access its own folder.
 
-``` xml
+```xml
     <ckeditor filebrowserImageBrowseUrl="img" filebrowserImageUploadUrl="img"/>
 ```
 
@@ -155,7 +155,7 @@ Prepare a javascript file for configuration like:
 
 **config.js**
 
-``` javascript
+```javascript
 CKEDITOR.editorConfig = function(config) {
     //enable spell checker
     config.disableNativeSpellChecker = false;
@@ -172,13 +172,13 @@ complete configuration options.
 Specify the configuration file at `customConfigurationsPath` attribute
 with the absolute path.
 
-``` xml
+```xml
 <ckeditor customConfigurationsPath="/config.js"/>
 ```
 
 ## in Java
 
-``` xml
+```xml
     <ckeditor id="editor"/>
     <zscript><![CDATA[
 Map configMap = new HashMap();
@@ -203,7 +203,7 @@ zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/we
 The ZK CKEditor container can be resizable with the resizable attribute
 since 4.16.1.1.
 
-``` xml
+```xml
  <ckeditor resizable="true" .../>
 ```
 
@@ -221,7 +221,7 @@ div dimensions do not change.
 
 You can make CKEditor read-only with its config.
 
-``` xml
+```xml
     <ckeditor id="editorReadOnly" width="50%" height="500px" value="This is read-only example"/>
     <zscript><![CDATA[
     editorReadOnly.setConfig(Map.of("readOnly", true));
@@ -258,7 +258,7 @@ be controlled in Java by default." %}
     `/resources/web/js/ckez/ext/CKeditor/plugins/lineheight`
 3.  Setup in your custom config js
 
-``` javascript
+```javascript
 CKEDITOR.editorConfig = function(config) {
      config.extraPlugins = 'lineheight';
 }
@@ -306,7 +306,7 @@ To access the licensed copy, use the ZK EE repository
 (https://maven.zkoss.org/repo/zk/ee). You must be logged in to access
 the ZK EE repository.
 
-``` xml
+```xml
         <dependency>
             <groupId>org.zkoss.zkforge</groupId>
             <artifactId>ckez</artifactId>
@@ -336,7 +336,7 @@ If you use a customized CKEditor 5 build, the path will be inside a
 
 Specify through the official CDN
 
-``` xml
+```xml
 <library-property>
     <name>org.zkforge.ckez.CKSource</name>
     <value>https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js</value>        
@@ -345,7 +345,7 @@ Specify through the official CDN
 
 or a local path under **webapp root**
 
-``` xml
+```xml
 <library-property>
     <name>org.zkforge.ckez.CKSource</name>
     <value>/ckeditor5-40.1.0/build/ckeditor.js</value>    
@@ -406,20 +406,20 @@ editable text is focused.
 Once we have set the source code, we can use the **ckeditor** component
 in zul file.
 
-``` xml
+```xml
 <ckeditor/>
 ```
 
 If you want to preset the content of the editor, you can use `value`
 attribute
 
-``` xml
+```xml
 <ckeditor value="Hello ZK CKEditor 5!"/>
 ```
 
 And of course, you can control it through Java API.
 
-``` java
+```java
 @Wire
 private CKeditor myEditor;
 
@@ -431,7 +431,7 @@ public void doAfterCompose(Window comp) throws Exception {
 
 ### Example
 
-``` xml
+```xml
 <ckeditor width="850px">
 <attribute name="value"><![CDATA[
 <table width="200" cellspacing="1" cellpadding="1" border="1">
@@ -462,7 +462,7 @@ If you wish to customize the configuration for each component, you can
 use the `customConfigurationsPath` attribute to specify the location of
 the JavaScript file under the **webapp root** for customization.
 
-``` xml
+```xml
 <ckeditor customConfigurationsPath="/config.js" />
 ```
 
@@ -471,7 +471,7 @@ And configure the personalized settings in the JavaScript file.
 **Note: The configuration JavaScript file must start with `{` and end
 with `}` because the API will parse it as an JavaScript object.**
 
-``` javascript
+```javascript
 {
     toolbar: ['redo', '|', 'undo', ...]
 }
@@ -479,7 +479,7 @@ with `}` because the API will parse it as an JavaScript object.**
 
 And you can also set the configuration by `config` attribute.
 
-``` java
+```java
 @Wire
 private CKeditor myEditor;
 
@@ -499,7 +499,7 @@ the setting of `customConfigurationsPath`.**
 Run the following javascript to get all available toolbar items provided
 by plugins
 
-``` javascript
+```javascript
 Array.from( zk.$('@ckeditor')._editor.ui.componentFactory.names() );
 ```
 
@@ -533,7 +533,7 @@ The only thing you need to do is set the `simpleUploadUrl` attribute to
 specify the path to upload the file to the server, the path is start
 from the **webapp root**.
 
-``` xml
+```xml
 <ckeditor simpleUploadUrl="img"/>
 ```
 
@@ -549,7 +549,7 @@ Default: Automatically adapted according to the content height.
 If height is specified, and the content height is greater than the
 editor's height, a scroll bar will be automatically appear.
 
-``` xml
+```xml
 <ckeditor height="30%"/>
 ```
 
@@ -557,7 +557,7 @@ editor's height, a scroll bar will be automatically appear.
 
 Default: Fill the current width (equals to )
 
-``` xml
+```xml
 <ckeditor width="300px"/>
 ```
 
@@ -565,7 +565,7 @@ Default: Fill the current width (equals to )
 
 Default: `readOnly="false"`
 
-``` xml
+```xml
 <ckeditor readOnly="true"/>
 ```
 
@@ -574,7 +574,7 @@ Default: `readOnly="false"`
 If you put multiple ckeditor in a inline-block, they'll render according
 to their `hflex` ratio.
 
-``` xml
+```xml
 <hlayout>
     <ckeditor hflex="1"/>
     <ckeditor hflex="2"/>
@@ -584,7 +584,7 @@ to their `hflex` ratio.
 Or you can use `hflex="min"`, its width will be fixed to the width when
 the editor is rendered.
 
-``` xml
+```xml
 <ckeditor hflex="min"/>
 ```
 
@@ -593,7 +593,7 @@ the editor is rendered.
 Place ckeditor in a label with a specified height and specify `vflex`
 ratio.
 
-``` xml
+```xml
 <div height="500px">
     <ckeditor vflex="1"/>
     <ckeditor vflex="2"/>
@@ -603,7 +603,7 @@ ratio.
 Or you can use `vflex="min"`, its height will be fixed to the height
 when the editor is rendered (according to the content height).
 
-``` xml
+```xml
 <ckeditor vflex="min"/>
 ```
 
@@ -664,7 +664,7 @@ the server annotation as follows:
 
 **WEB-INF/ckez-bind-addon.xml**
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <language-addon>
     <!-- The name of this addon. It must be unique -->
@@ -704,7 +704,7 @@ the server annotation as follows:
 
 then add it into WEB-INF/zk.xml
 
-``` xml
+```xml
 <zk>
     <language-config>
         <addon-uri>/WEB-INF/ckez-bind-addon.xml</addon-uri>

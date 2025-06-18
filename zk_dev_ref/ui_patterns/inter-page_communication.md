@@ -8,7 +8,7 @@ To communicate among pages, we have to assign an identifier to the
 target page. In ZUML, it is done by the use of [the page
 directive](ZUML_Reference/ZUML/Processing_Instructions/page):
 
-``` xml
+```xml
 <?page id=" foo"?>
 <window id="main"/>
 ```
@@ -19,7 +19,7 @@ or by use of a utility class called
 <javadoc>org.zkoss.zk.ui.Path</javadoc>. For example, the following
 statements could access the *main* window above:
 
-``` java
+```java
 comp.getDesktop().getPage("foo").getFellow("main");
 Path.getComponent("//foo/main");
 ```
@@ -42,7 +42,7 @@ share data. Another way is using the scope argument to identify which
 scope you want to access. (In the following example, assuming comp is a
 component.)
 
-``` java
+```java
  comp.setAttribute("some","anyObject");
  comp.getAttribute("some", comp.DESKTOP_SCOPE);
  comp.getDesktop().getAttribute("some"); //is equivalent to previous line
@@ -53,7 +53,7 @@ objects](ZUML_Reference/EL_Expressions/Implicit_Objects):
 `componentScope`, `pageScope`, `desktopScope`,
 `sessionScope, requestScope` and `applicationScope`.
 
-``` xml
+```xml
 <window>
     <zscript><![CDATA[
         desktop.setAttribute("some","anyObject");
@@ -74,7 +74,7 @@ to notify a component in the target page.
 
 For example,
 
-``` java
+```java
  Events.postEvent(new Event("SomethingHappens",
      comp.getDesktop().getPage("foo").getFellow("main"));
 ```
@@ -85,6 +85,6 @@ will be put into
 <javadoc method="getData()">org.zkoss.zk.ui.event.Event</javadoc>. You
 could pass the data you want with it.
 
-``` java
+```java
 Events.postEvent("onTest", target, "this will be send");    
 ```

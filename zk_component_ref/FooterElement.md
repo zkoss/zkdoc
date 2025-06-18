@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.impl.FooterElement</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.FooterWidget</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -38,7 +38,7 @@ N/A
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

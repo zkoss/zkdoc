@@ -14,7 +14,7 @@ documentation](http://www.springsource.org/spring-framework#documentation).
 
 The minimal Maven dependency you need is :
 
-``` xml
+```xml
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -29,7 +29,7 @@ The minimal Maven dependency you need is :
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png) **Note:** If you don't use Maven,
+![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
 please refer to Spring Framework Reference Documentation to know which
 JAR file you need.
 
@@ -40,7 +40,7 @@ have to setup is the following:
 
 **Spring related configuration in web.xml**
 
-``` xml
+```xml
     <!-- Loads the Spring application context configuration -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -55,7 +55,7 @@ You can enable Spring's classpath scanning to register beans.
 
 **WEB-INF/applicationContext.xml**
 
-``` xml
+```xml
 
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -79,7 +79,7 @@ You can enable Spring's classpath scanning to register beans.
 # Access a Spring Bean in a ZUL
 
 ZUL provides a feature called [ variable
-resolver]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions#Variable_Resolver)
+resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
 that allows users to access Spring bean using EL expressions. Simply put
 the below directive on top of a ZUML page:
 
@@ -90,7 +90,7 @@ directly using its **bean id**.
 
 Assume that we have 2 beans:
 
-``` java
+```java
 
 @Component
 @Scope("session")
@@ -102,7 +102,7 @@ public class UserPreference {
 - User preference should be distinct for each user but shared among
   multiple requests. It is suitable to be a session-scoped bean.
 
-``` java
+```java
 @Component
 public class SystemConfiguration {
 ...
@@ -114,7 +114,7 @@ public class SystemConfiguration {
 
 **Access Spring beans with EL**
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window title="Access Bean with different scopes" border="normal" width="700px"
     apply="org.zkoss.reference.developer.composer.ResolverComposer">
@@ -156,7 +156,7 @@ state of a component when each time you add/create it, you should
 declare a Composer/ViewModel as a `prototype` bean. Then you can use
 `@Autowire` to wire Spring beans into a Composer/ViewModel.
 
-``` java
+```java
 @Component
 @Scope("prototype")
 public class MyComposer extends SelectorComposer<Window> {
@@ -172,7 +172,7 @@ public class MyComposer extends SelectorComposer<Window> {
 If you choose this way, you need to specify a Spring bean id when you
 apply a composer or ViewModel:
 
-``` xml
+```xml
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <vlayout apply="${orderBeanComposer}" >
 ...
@@ -198,7 +198,7 @@ the same as the bean's name**. Or, you can specify the bean's name with
 
 **A composer that wires Spring beans**
 
-``` java
+```java
 public class ResolverComposer extends SelectorComposer<Window> {
 
     @WireVariable
@@ -221,7 +221,7 @@ public class ResolverComposer extends SelectorComposer<Window> {
 
 **A ZUL with Spring variable resolver**
 
-``` xml
+```xml
 
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window title="Access Bean with different scopes" border="normal" width="700px"
@@ -238,7 +238,7 @@ example below we put variable resolver in a zul with a directive.
 
 **A ViewModel that wires a Spring bean**
 
-``` java
+```java
 
 public class OrderVM {
 
@@ -251,7 +251,7 @@ public class OrderVM {
 
 **The zul uses OrderVM with a Spring variable resolver**
 
-``` xml
+```xml
 
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <zk>
@@ -277,7 +277,7 @@ apply `@WireVariable` on variables like we did in the previous section.
 
 Example code are as follows:
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class SpringComposer extends SelectorComposer<Window> {
 
@@ -292,7 +292,7 @@ public class SpringComposer extends SelectorComposer<Window> {
 `org.zkoss.zkplus.spring.SpringUtil` is a utility class that allows you
 to get Spring-managed beans by their name in Java.
 
-``` java
+```java
 public class SpringComposer extends SelectorComposer<Window> {
 
     @Wire("#number")

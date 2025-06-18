@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkex.zul.Fisheyebar</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.menu.Fisheyebar</javadoc>
-- Style Guide: [
-  Fisheyebar](ZK_Style_Guide/XUL_Component_Specification/Fisheyebar)
+
 - [Available in ZK PE and EE
   only](http://www.zkoss.org/product/edition.dsp)
 
@@ -19,9 +18,9 @@ menu on the Mac OS.
 
 # Example
 
-![](images/ZKComRef_fisheyebar.png)
+![](/zk_component_ref/images/ZKComRef_fisheyebar.png)
 
-``` xml
+```xml
 <zk>
     <div height="450px">
         <checkbox label="Attach icon edge at bottom"
@@ -70,11 +69,11 @@ menu on the Mac OS.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Fisheye`](ZK_Component_Reference/Essential_Components/Fisheye)
+`*`[` Fisheye`]({{site.baseurl}}/zk_component_ref/essential_components/fisheye)
 
 # Use Cases
 

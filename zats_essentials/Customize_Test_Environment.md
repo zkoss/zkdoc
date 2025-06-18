@@ -3,7 +3,7 @@
 In a test case, we usually use `Zats` to initialize the test case
 environment, it will load **Mimic built-in web.xml** and **zk.xml**.
 
-``` java
+```java
 
     @BeforeClass
     public static void init(){
@@ -35,7 +35,7 @@ First, create your own `ZatsEnvironment` by
 connect to ZUL. The rest are the same as you do under default
 configuration.
 
-``` java
+```java
 
 public class EnvironmentTest{
 
@@ -68,7 +68,7 @@ Beside WEB-INF's path, you can also specify your **web application
 context root path** by passing 2nd parameter to
 `DefaultZatsEnvironment`'s constructor.
 
-``` java
+```java
 
 public class EnvironmentTest{
 

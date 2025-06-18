@@ -5,8 +5,7 @@
 - Java API: <javadoc>org.zkoss.zul.Decimalbox</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.Decimalbox</javadoc>
-- Style Guide: [
-  Decimalbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Decimalbox)
+
 
 # Employment/Purpose
 
@@ -16,7 +15,7 @@ An edit box for holding big decimal value .
 
 ![](/zk_component_ref/images/ZKComRef_Decimalbox_Examples.PNG)
 
-``` xml
+```xml
  <decimalbox value="155"/>
 ```
 
@@ -27,7 +26,7 @@ An edit box for holding big decimal value .
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <decimalbox format="#,##0.##"/>
 ```
 
@@ -36,7 +35,7 @@ the number by specifying a value starting with "locale:", e.g. [Indian
 numbering
 system](https://en.wikipedia.org/wiki/Indian_numbering_system):
 
-``` xml
+```xml
 <decimalbox format="locale:en-In"/>
 ```
 
@@ -52,14 +51,14 @@ the `constraint`property. It could be a combination of `no positive`,
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <decimalbox constraint="no negative,no empty"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <decimalbox constraint="no negative: it shall not be negative"/>
 ```
 
@@ -70,7 +69,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <decimalbox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
@@ -79,14 +78,14 @@ Notes:
 {% include version-badge.html version=10.2.0 %}
 {% include edition-availability.html edition="ee" %}
 
-``` xml
+```xml
 <spinner constraint="min -2 max 6"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -111,7 +110,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

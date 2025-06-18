@@ -5,8 +5,7 @@
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
 - Java API: <javadoc>org.zkoss.zul.Tab</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tab</javadoc>
-- Style Guide: [
-  Tabbox](ZK_Style_Guide/XUL_Component_Specification/Tabbox)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ You could put a label and an image on it by `label`and
 
 # Example
 
-![](images/ZKComRef_Containers_Tab.PNG)
+![](/zk_component_ref/images/ZKComRef_Containers_Tab.PNG)
 
-``` xml
+```xml
 <tabbox width="400px">
     <tabs>
         <tab label="Tab 1" image="/img/folder.gif" />
@@ -38,9 +37,9 @@ You could put a label and an image on it by `label`and
 A tab might have a caption, which is specified by declaring a child
 component called caption. {% include edition-availability.html edition="pe" %} {% include
 version-badge.html version=6.5.0 %}
-![](images/ZKComRef_Containers_Tab_Caption.PNG)
+![](/zk_component_ref/images/ZKComRef_Containers_Tab_Caption.PNG)
 
-``` xml
+```xml
 <tabbox width="400px">
     <tabs>
         <tab label="Tab 1" image="/img/folder.gif" />
@@ -81,7 +80,7 @@ listen to onClose event** like `@Listen("onClose = tab")` because a Tab
 is not created when wiring a listener. You can forward onClose event to
 its parent like:
 
-``` xml
+```xml
 <tabbox id="tabbox">
     <template name="model:tab">
         <tab closable="true" forward="onClose=tabbox.onTabClose(${each})"/>
@@ -124,7 +123,7 @@ shall detach itself.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
@@ -132,7 +131,7 @@ shall detach itself.</p></td>
 
 # Use Cases
 
-[ Tabbox](ZK_Component_Reference/Containers/Tabbox#Use_Cases)
+[ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
 
 # Version History
 

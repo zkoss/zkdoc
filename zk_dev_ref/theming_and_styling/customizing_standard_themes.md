@@ -7,7 +7,7 @@ breeze and silver gray.
 
 Please see [ZK Developer's Reference/Theming and Styling/Creating Custom
 Themes/Theme
-Template]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Creating_Custom_Themes/Theme_Template).
+Template]({{site.baseurl}}/zk_dev_ref/theming_and_styling/creating_custom_themes/theme_template).
 
 # Change Font Size and Family
 
@@ -17,7 +17,7 @@ attributes available/required anymore)
 If you want to define the default font family **for all ZK components
 only**:
 
-``` css
+```css
 [class*="z-"]:not([class*="z-icon-"]) {
     font-family: Arial;
 }
@@ -26,7 +26,7 @@ only**:
 If you want to define the default font family for **the whole page
 body** (including html native element):
 
-``` css
+```css
 body *:not([class*="z-icon-"]) {
     font-family: Arial;
 }
@@ -41,7 +41,7 @@ specifying different values.
 Notice that the library properties control the theme for the whole
 application. If you want to provide <i>per-user</i> theme (like zkdemo
 does), you have to [ implement a theme
-provider]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Theme_Providers).
+provider]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_providers).
 
 ## Font Size
 
@@ -107,7 +107,7 @@ fonts, such as <code>toolbar</code>.</p></td>
 To change the default value, you can specify the library properties in
 `WEB-INF/zk.xml` as follows.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.theme.fontSizeM</name>
     <value>12px</value>
@@ -159,7 +159,7 @@ to override the default setting. For example, if you want to customize
 the look and feel of the `a` component, you can provide a CSS file with
 the following content.
 
-``` css
+```css
 .z-a-disd {
     color: #C5CACB !important;
     cursor: default!important;
@@ -174,7 +174,7 @@ the following content.
 
 Then, specify it in `WEB-INF/zk.xml` as follows.
 
-``` xml
+```xml
  <desktop-config>
      <theme-uri>/css/my.css</theme-uri>
  </desktop-config>

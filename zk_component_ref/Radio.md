@@ -5,8 +5,7 @@
 - Demonstration: [Radio](http://www.zkoss.org/zkdemo/input/radio_button)
 - Java API: <javadoc>org.zkoss.zul.Radio</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Radio</javadoc>
-- Style Guide: [
-  Radio](ZK_Style_Guide/XUL_Component_Specification/Radio)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ radio button with the same group may be selected at a time.
 
 # Example
 
-![](images/ZKComRef_radio.png)
+![](/zk_component_ref/images/ZKComRef_radio.png)
 
-``` xml
+```xml
     <vlayout>
         <radiogroup onCheck="fruit.value = self.selectedItem.label">
             <radio label="Apple"/>
@@ -52,7 +51,7 @@ radio button with the same group may be selected at a time.
 </table>
 
 - Inherited Supported Events: [
-  Checkbox](ZK_Component_Reference/Input/Checkbox#Supported_Events)
+  Checkbox]({{site.baseurl}}/zk_component_ref/input/checkbox#Supported_Events)
 
 # Supported Children
 
@@ -66,7 +65,7 @@ radio button with the same group may be selected at a time.
 | 3.6     | Radiogroup radio's in seperate table/grid rows | [<http://www.zkoss.org/forum/listComment/9002>](http://www.zkoss.org/forum/listComment/9002) |
 
 See also: [
-Radiogroup](ZK_Component_Reference/Input/Radiogroup#Use_Cases)
+Radiogroup]({{site.baseurl}}/zk_component_ref/input/radiogroup#Use_Cases)
 
 # Version History
 

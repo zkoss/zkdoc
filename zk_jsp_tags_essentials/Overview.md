@@ -7,7 +7,7 @@ This section demonstrates how to use ZK JSP tags in your JSP document.
 To use ZK components correctly, the JSP page must specify DOCTYPE as
 follows.
 
-``` html
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -22,7 +22,7 @@ By default, ZK will set the CSS style of the BODY tag to
 height (i.e., the browser's default), you could specify `height:auto` to
 the BODY tag (optional).
 
-``` xml
+```xml
 <body style="height:auto">
 ...
 ```
@@ -32,7 +32,7 @@ the BODY tag (optional).
 Though optional, it is suggested to disable the browser to cache the
 result page. It can be done as follows.
 
-``` xml
+```xml
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Pragma" content="no-cache" />
@@ -44,7 +44,7 @@ to drop desktops once the user navigates to other URL. It is optional
 but it saves memory since the browser page is not cached and safe to
 remove if the user navigates away.
 
-``` xml
+```xml
 <%
     request.setAttribute(org.zkoss.zk.ui.sys.Attributes.NO_CACHE, Boolean.TRUE);
 %>
@@ -59,7 +59,7 @@ Using ZK JSP Tags is the same as using other JSP tag libraries. You can
 declare a \<%@taglib %\> to define the prefix and mapping URI of the ZK
 JSP Tags as follows:
 
-``` html
+```html
 <%@ taglib uri="http://www.zkoss.org/jsp/zul" prefix="z" %>
 ```
 
@@ -79,7 +79,7 @@ tags, then zk will generate only the desired JS and CSS.
 
 This is also required by some features such like hflex/vflex.
 
-``` xml
+```xml
 <head>
     <z:zkhead />
        ...
@@ -93,7 +93,7 @@ It will manage the Ajax connections of each component. In JSP, you have
 to specify a <page> tag to initialize the Desktop instance if it's not
 existed:
 
-``` xml
+```xml
 <z:page zscriptlanguage="java" >
 
 ...
@@ -108,7 +108,7 @@ The page tag also creates a Page instance automatically, and this page
 instance is a container to contain components. In one JSP document, you
 can declare multiple pages like this:
 
-``` xml
+```xml
 <z:page  id="pg1" style="height:100px;width=300px">
 // The ZK Components declaration Area...
 </z:page>
@@ -122,14 +122,14 @@ The rule to access variables across pages is the same as to do so in
 pure ZK document. For more detailed information about
 Page(<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>), please
 refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI).
+Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
 
 # Component Tag Declaration
 
 After declaring page tag, now we can add some component tags into it.
 For example:
 
-``` xml
+```xml
 <z:page>
     <z:window id="myWin" title="ZK JSP Tags Demo">
         Hello ZK JSP Tags! <z:textbox/>
@@ -145,7 +145,7 @@ tag instead of <zk> tag.
 
 Let us see a simple JSP page:
 
-``` xml
+```xml
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://www.zkoss.org/jsp/zul" prefix="z"%>
@@ -175,7 +175,7 @@ zk jsp demo( [downloadable archive is
 here](http://code.google.com/p/zkjsp/downloads/list)), you can take a
 look at index.jsp to see how it works:
 
-``` xml
+```xml
 <z:component name="hp-link" extends="toolbarbutton" class="org.zkoss.jspdemo.ui.HPLink" />
 ...
 <z:ui tag="hp-link" url="./foreach.jsp" label="forEach Demo" />

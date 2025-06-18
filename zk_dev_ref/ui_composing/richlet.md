@@ -5,7 +5,7 @@
 A richlet is a small Java program that composes a user interface in Java
 for serving the user's request. Before composing UI in Java, we suggest
 you to know basic concept:[ UI Composing/Component-based
-UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
+UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
 first.
 
 When a user requests the content of an URL, ZK Loader checks if the
@@ -39,7 +39,7 @@ the only thing you have to do is to override
 <javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>.
 The method is called when an associated URL is requested. For example,
 
-``` java
+```java
  package org.zkoss.reference.developer.uicomposing;
 
 import org.zkoss.zk.ui.*;
@@ -127,7 +127,7 @@ components among different invocations of
 
 For example, the following code is illegal:
 
-``` java
+```java
 public class MyRichlet extends GenericRichlet {
     private Window main; //Not a good idea to share
     public void service(Page page) {
@@ -163,7 +163,7 @@ many richlets as you want without modifying `web.xml`.
 
 With servlet-mapping:
 
-``` xml
+```xml
 <servlet-mapping>
     <servlet-name>zkLoader</servlet-name>
     <url-pattern>/zk/*</url-pattern>
@@ -172,7 +172,7 @@ With servlet-mapping:
 
 You can use `RichletFilter` instead.
 
-``` xml
+```xml
 <filter>
     <filter-name>RichletFilter</filter-name>
     <filter-class>org.zkoss.zk.ui.http.RichletFilter</filter-class>
@@ -194,7 +194,7 @@ richlet).
 For each richlet you implement, you can define it in `WEB-INF/zk.xml`
 with the statement similar to the following:
 
-``` xml
+```xml
 <richlet>
     <richlet-name>Test</richlet-name><!-- your preferred name -->
     <richlet-class>org.zkoss.zkdemo.TestRichlet</richlet-class><!-- your class name, of course -->
@@ -204,7 +204,7 @@ with the statement similar to the following:
 After defining a richlet, you can map it to any number of URLs using the
 `richlet-mapping` element as shown below.
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Test</richlet-name>
     <url-pattern>/test</url-pattern>
@@ -219,7 +219,7 @@ After defining a richlet, you can map it to any number of URLs using the
 prefix of url-pattern of the filter-mapping into the url-pattern of
 richlet-mapping. For example,
 
-``` xml
+```xml
 <richlet-mapping>
     <richlet-name>Test</richlet-name>
     <url-pattern>/test</url-pattern>
@@ -242,7 +242,7 @@ the URI ends with `/*`, it is matched to all requests with the same
 prefix. To retrieve the request's actual URL, you can check the value
 returned by the `getRequestPath` method of the current page.
 
-``` java
+```java
  public void service(Page page) {
      if ("/some/more/hi".equals(page.getRequestPath()) {
          ...
@@ -261,7 +261,7 @@ methods, such as
 allowing developers to load ZUML documents dynamically. You could load a
 ZUML document from any source you like, such as database. Please refer
 to the [Load ZUML in
-Java]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Load_ZUML_in_Java)
+Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)
 for details.
 
 # Use Spring in Richlet
@@ -269,20 +269,20 @@ for details.
 To use Spring-managed beans in richlets you need the context loader
 listener that creates spring application context as described in [ZK
 Spring Essentials/Getting Started with ZK Spring/Setting Up ZK
-Spring](ZK_Spring_Essentials/Getting_Started_with_ZK_Spring/Setting_Up_ZK_Spring).
+Spring]({{site.baseurl}}/zk_spring_essentials/getting_started_with_zk_spring/setting_up_zk_spring).
 Then you could load Spring beans by using a utility class
 <javadoc>org.zkoss.zkplus.spring.SpringUtil</javadoc>:
 
-``` java
+```java
     Object bean = SpringUtil.getBean(beanName);
 ```
 
 [^1]: A normal HTTP request; not an Ajax request. Ajax requests are
     handled in the same way as ZUML. For more information please refer
     to the [Event
-    Handling]({{site.baseurl}}/zk_dev_ref/Event_Handling)
+    Handling]({{site.baseurl}}/zk_dev_ref/event_handling)
     section
 
 [^2]: For more information, please refer to [Component-based
-    UI]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI)
+    UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
     section

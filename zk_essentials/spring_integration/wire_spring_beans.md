@@ -14,7 +14,7 @@ ViewModels) as Spring beans, so that we can use Spring's `@Autowire`. We
 don't recommend to do so. The main reason is that none of Spring bean's
 scope matches ZK's composer's life cycle, for details please refer to [
 Developer's
-Reference](ZK_Developer%27s_Reference/Integration/Middleware_Layer/Spring "wikilink").
+Reference]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring "wikilink").
 
 **Wire beans in a composer**
 

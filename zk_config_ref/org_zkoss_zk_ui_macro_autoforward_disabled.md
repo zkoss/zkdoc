@@ -6,7 +6,7 @@
 
 Turn on/off auto forward mechanism for macro component
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.macro.autoforward.disabled</name>
     <value>true</value>

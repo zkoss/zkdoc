@@ -18,7 +18,7 @@ Loader for doing:
 - Component instantiation monitoring and filtering
 
 A composer can be [configured as a system-level
-composer](ZK_Configuration_Reference/zk.xml/The_listener_Element/The_org.zkoss.zk.ui.util.Composer_interface),
+composer]({{site.baseurl}}/zk_config_ref/the_listener_element/the_org.zkoss.zk.ui.util.composer_interface),
 such that it will be called each time a ZUML document is loaded.
 
 ## Implement Composers
@@ -32,7 +32,7 @@ example, in the following controller and zul,
 
 Controller:
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Wire;
@@ -66,7 +66,7 @@ public class MyComposer extends SelectorComposer<Window> {
 
 ZUL:
 
-``` XML
+```xml
 <window apply="foo.MyComposer">
     <div>
         Input: <textbox id="input" />
@@ -92,11 +92,11 @@ such as
 - `@Listen("onClick = button[label='Clear']")`
 
 For more information, please refer to the following sections: [Wire
-Components]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components),
+Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
 [Wire
-Variables]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
+Variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
 and [Wire Event
-Listeners]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Event_Listeners).
+Listeners]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
 
 ## Apply Composers
 
@@ -109,7 +109,7 @@ the class to [the apply
 attribute](ZUML_Reference/ZUML/Attributes/apply) of the XML
 element you want to control. For example,
 
-``` xml
+```xml
 <grid apply="foo.MyComposer">
     <rows>
         <row>
@@ -126,7 +126,7 @@ element you want to control. For example,
 You could specify multiple composers; just separate them with commas.
 They will be called from left to right.
 
-``` xml
+```xml
 <div apply="foo.Composer1, foo2.Composer2">
 ```
 
@@ -135,7 +135,7 @@ They will be called from left to right.
 In addition to the class name, you could specify an instance too. For
 example, suppose you have an instance called `fooComposer`, then
 
-``` xml
+```xml
 <grid apply="${fooComposer}">
 ```
 
@@ -182,7 +182,7 @@ composer is stored in three component attributes called:
 Therefore, you can access the composer with one of the above variables
 e.g.
 
-``` xml
+```xml
 <window id="mywin" apply="MyComposer">
      <textbox value="${mywin$composer.title}"/>
      <textbox value="${$composer.title}"/> <!- also refer to MyComposer -->
@@ -196,7 +196,7 @@ assigned with composers, you might have to use ID to distinguish them.
 The second name (*`id`*`$`*`ClassName`*) is useful, if there are
 multiple composers applied.
 
-``` xml
+```xml
 <window apply="foo.Handle1, foo.Handle2">
     <textbox value="${$Handle1.title}"/>
     <textbox value="${$Handle2.name}"/>
@@ -208,7 +208,7 @@ multiple composers applied.
 If you prefer to name the composer by yourself, you could specify the
 name in a component attribute called `composerName`. For example,
 
-``` xml
+```xml
 <window apply="MyComposer">
     <custom-attributes composerName="mc"/> <!-- name the composer as mc -->
 
@@ -224,7 +224,7 @@ described above, the composer will be stored as a component attribute
 that is accessible directly in EL expressions. Thus, you could provide
 the data easily by declaring a public getter method. For example,
 
-``` java
+```java
 public class UsersComposer extends org.zkoss.zk.ui.select.SelectorComposer<Window> {
     public ListModel<User> getUsers() {
         //return a collection of users
@@ -234,7 +234,7 @@ public class UsersComposer extends org.zkoss.zk.ui.select.SelectorComposer<Windo
 
 Then, you could access it as follows.
 
-``` xml
+```xml
 <window title="User List" border="normal" apply="foo.UsersComposer">
     <grid model="${$composer.users}>
 ...
@@ -246,7 +246,7 @@ Here is another example that we wire Spring-managed beans with the
 <javadoc type="interface">org.zkoss.zk.ui.select.WireVariable</javadoc>
 annotation.
 
-``` java
+```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class UsersComposer extends SelectorComposer<Window> {
     @WireVariable
@@ -266,13 +266,13 @@ annotation. As its name suggests,
 <javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
 will be used to retrieve Spring-managed beans when `@WireVariable` is
 encountered. For more information, please refer to [the Wire Variables
-section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables).
+section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 
 Notice that the variables will be wired before instantiating the
 component and its children, so it is OK to access them in the ZUML
 document, as below.
 
-``` xml
+```xml
 <window title="User List" border="normal" apply="foo.UsersComposer">
     <grid model="${$composer.users}>
 ...
@@ -297,7 +297,7 @@ If you want to initialize a component's properties with some default
 values, after ZK creates it, you should override
 <javadoc method="doAfterCompose(T)">org.zkoss.zk.ui.select.SelectorComposer</javadoc>.
 
-``` java
+```java
 public class MyComposer extends SelectorComposer<Grid> {
    public void doAfterCompose(Grid comp) {
       super.doAfterCompose(comp); //wire variables and event listeners
@@ -327,7 +327,7 @@ For example, we could handle the exception by overriding
 and/or
 <javadoc method="doFinally()">org.zkoss.zk.ui.util.ComposerExt</javadoc>.
 
-``` java
+```java
 public class MyComposer<T extends Component> extends SelectorComposer<T> {
     public boolean doCatch(Throwable ex) {
         return ignorable(ex); //return true if ex could be ignored
@@ -367,7 +367,7 @@ For example, suppose we have a composer implementing both
 <javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>,
 and it is assigned as followed
 
-``` xml
+```xml
     <panel apply="foo.MyFullComposer">
         <panelchildren>
         <div>
@@ -391,7 +391,7 @@ will be called for each child, the generic type should be
 <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> rather
 than the component's type to which the composer is applied. For example,
 
-``` java
+```java
 public class MyFullComposer extends SelectorComposer<Component> implements FullComposer {
 ...
 ```
@@ -400,7 +400,7 @@ public class MyFullComposer extends SelectorComposer<Component> implements FullC
 
 Here is a lifecycle of the invocation of a composer:
 
-![]({{site.baseurl}}/zk_dev_ref/images/Composer.PNG)
+![]({{site.baseurl}}/zk_dev_ref/images/composer.png)
 
 # System-level Composer
 
@@ -412,14 +412,14 @@ every page.
 To register it, specify the composer you implemented in
 `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <listener>
     <listener-class>foo.MyComposer</listener-class>
 </listener>
 ```
 
 For more information, please refer to [ZK Configuration
-Reference/zk.xml](ZK_Configuration_Reference/zk.xml/The_listener_Element).
+Reference/zk.xml]({{site.baseurl}}/zk_config_ref/the_listener_element).
 
 Each time a ZK page, including ZK pages and richlets, is created, ZK
 will instantiate one instance for each registered system-level composer

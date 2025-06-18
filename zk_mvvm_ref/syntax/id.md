@@ -22,7 +22,7 @@ Example
 =======
 
 #### Usage in viewModel attribute
-``` xml
+```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ChildrenMenuVM')"
 	validationMessages = "@id('vmsgs')">
 </window>
@@ -40,7 +40,7 @@ We can use simplified syntax to init view model. Notice that the id of the view 
 
 **Usage in form attribute**
 
-``` xml
+```xml
 <grid form="@id('fx') @load(vm.user) @save(vm.user,before='register')">
 </grid>
 ```

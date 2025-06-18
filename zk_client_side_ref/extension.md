@@ -12,7 +12,7 @@ and the first one is the default one.
 
 Example,
 
-``` xml
+```xml
 <extension>zul</extension>
 <extension>xul</extension>
 ```

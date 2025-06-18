@@ -14,7 +14,7 @@ To register an AU extension, you could specify the name and the class
 name as the initial parameter of the declaration of ZK Update Engine in
 `WEB-INF/web.xml`. For more information, please refer to [ZK
 Configuration
-Reference](ZK_Configuration_Reference/web.xml/ZK_AU_Engine).
+Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_au_engine).
 
 If you want to register it in Java, you could use
 <javadoc method="addAuExtension(java.lang.String, org.zkoss.zk.au.http.AuExtension)">org.zkoss.zk.au.http.DHtmlUpdateServlet</javadoc>

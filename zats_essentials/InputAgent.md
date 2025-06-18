@@ -20,7 +20,7 @@ that a to-do item is added to the *listbox*.
 
 **TodoTest.java**
 
-``` java
+```java
 
 public class TodoTest {
 
@@ -79,7 +79,7 @@ post-processing.
 
 ![](images/Zats-mimic-typing.png)
 
-``` java
+```java
 
 desktopAgent.query("textbox").as(InputAgent.class).typing("a");
 ```
@@ -91,7 +91,7 @@ starting and ending index (ending index is exclusive).
 
 ![](images/Zats-mimic-selection.png)
 
-``` java
+```java
 
 desktopAgent.query("textbox").as(Input.class).select(0,3);
 ```
@@ -106,7 +106,7 @@ as the parameter.
 
 ![](images/Zats-mimic-input.png)
 
-``` java
+```java
 
 desktop.query("slider").as(InputAgent.class).input(40);
 ```

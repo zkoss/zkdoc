@@ -16,9 +16,9 @@ rearrange them by dragging the tab.
 
 # Example
 
-![](images/ZKCompRef_GoldenLayout.png )
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
 
-``` xml
+```xml
     <goldenlayout vflex="1" hflex="1">
         <attribute name="areas">
             A A B
@@ -143,7 +143,7 @@ minimized this GoldenPanel.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

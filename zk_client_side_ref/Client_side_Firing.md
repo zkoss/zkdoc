@@ -17,7 +17,7 @@ and
 <javadoc method="fireX(zk.Event, int)" directory="jsdoc">zk.Widget</javadoc>.
 For example,
 
-``` javascript
+```javascript
 onCloseClick: function () {
  this.fire('onClose');
 }
@@ -37,7 +37,7 @@ converted to an AU request and sent to the server, if
     sends the AU request only if one of the following conditions is
     satisfied:
     - The event is declared as [an important
-      event](ZK_Client-side_Reference/Communication/AU_Requests/Server-side_Processing#Important_Events)
+      event]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing#Important_Events)
       (at server).
     - The server has registered an event listener
       (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>)
@@ -46,12 +46,12 @@ converted to an AU request and sent to the server, if
     <javadoc directory="jsdoc" method="opts">zk.Event</javadoc> of the
     event. For example,
 
-``` javascript
+```javascript
 zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
 
 For more information, please refer to [the next
-section](ZK_Client-side_Reference/Communication/AU_Requests/Server-side_Processing).
+section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing).
 
 > ------------------------------------------------------------------------
 >

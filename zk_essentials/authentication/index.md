@@ -11,7 +11,7 @@ name on the right side of the header.
 
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch8-index.png)
 
-For third party framework integration approach to secure your application, please refer to [ZK Deverloper's Reference/Integration/Security](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/Integration/Security)
+For third party framework integration approach to secure your application, please refer to [ZK Deverloper's Reference/integration/Security](https://www.zkoss.org/wiki/ZK_Developer's_Reference/integration/Security)
 
 
 

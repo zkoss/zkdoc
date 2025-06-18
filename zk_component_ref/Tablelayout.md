@@ -9,8 +9,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Tablelayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Tablelayout</javadoc>
-- Style Guide: [
-  TableLayout](ZK_Style_Guide/XUL_Component_Specification/Tablelayout)
+
 
 # Employment/Purpose
 
@@ -20,9 +19,9 @@ specified to create complex layouts within the table.
 
 # Example
 
-![](images/ZKComRef_Tablelayout_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
 
-``` xml
+```xml
 <tablelayout columns="2">
     <tablechildren>
         <panel title="Table 1" border="normal" maximizable="true"
@@ -55,9 +54,9 @@ specified to create complex layouts within the table.
 
 The child of tablechildren can be any component:
 
-![](images/ZKComRef_Tablelayout_Example_ZK6.PNG‎)
+![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
 
-``` xml
+```xml
     <tablelayout columns="2">
         <tablechildren>
             <label value="Table 1" />
@@ -98,11 +97,11 @@ The child of tablechildren can be any component:
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Tablechildren`](ZK_Component_Reference/Layouts/Tablelayout/TableChildren)
+`*`[` Tablechildren`]({{site.baseurl}}/zk_component_ref/layouts/tablelayout/tablechildren)
 
 # Use Cases
 

@@ -5,8 +5,7 @@
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
 - Java API: <javadoc>org.zkoss.zul.Panel</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wnd.Panel</javadoc>
-- Style Guide: [
-  Panel](ZK_Style_Guide/XUL_Component_Specification/Panel)
+
 
 # Employment/Purpose
 
@@ -29,9 +28,9 @@ can be used throughout the panel.
 
 # Example
 
-![](images/ZKComRef_Panel_Simple_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Panel_Simple_Examples.PNG)
 
-``` xml
+```xml
     <panel height="20%"  style="margin-bottom:10px"
            title="Panel1" border="normal" maximizable="true" closable="true"
            collapsible="true">
@@ -42,7 +41,7 @@ can be used throughout the panel.
 
 ## Java Example
 
-``` java
+```java
 Panel panel = new Panel();
 panel.setTitle("Here is Title");
 panel.setBorder("normal");
@@ -60,7 +59,7 @@ pc.appendChild(new Label("Here is Content"));
 The panel can now be resized as long as the attribute sizable is set to
 true. The example ZUL below shows a panel which can be resized.
 
-``` xml
+```xml
 <panel sizable="true" id="panel" framable="true" width="500px" height="400px"
     title="Panel"
     maximizable="true" minimizable="true" border="normal"
@@ -76,13 +75,13 @@ true. The example ZUL below shows a panel which can be resized.
 ## Draggable
 
 When used with [
-Portallayout](ZK_Component_Reference/Layouts/Portallayout),
+Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
 the draggable property
 (<javadoc method="setDraggable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
 can be used to control whether the panel is draggable under the portal
 layout.
 
-``` xml
+```xml
 <portallayout>
    <portalchildren style="padding: 5px" width="30%">
       <panel height="150px" title="Google Tools" border="normal"
@@ -114,7 +113,7 @@ no border.
 
 Here is the effect with different borders:
 
-![](images/DrPanelBorder.png)
+![](/zk_component_ref/images/DrPanelBorder.png)
 
 > ------------------------------------------------------------------------
 >
@@ -134,7 +133,7 @@ Here is the effect with different borders:
 ## Title
 
 Besides this attribute, you could use [
-Caption](ZK_Component_Reference/Containers/Caption) to define
+Caption]({{site.baseurl}}/zk_component_ref/containers/caption) to define
 a more sophisticated caption (aka., title). If the panel has a caption
 whose label <javadoc method="getLabel()">org.zkoss.zul.Caption</javadoc>
 is not empty, then this attribute is ignored. (Default: empty).
@@ -153,7 +152,7 @@ clicks the button. (Default: false)
 To make the scrollbar appear when content exceeds panel height, specify
 `style="overflow: auto"` on Panelchildren.
 
-``` xml
+```xml
 <panel height="200px">
     <panelchildren style="overflow: auto">
         <div style="background: #999966" height="195px" />
@@ -167,9 +166,9 @@ To make the scrollbar appear when content exceeds panel height, specify
 Panel supports three kinds of <javadoc>org.zkoss.zul.Toolbar</javadoc>
 positions: `Top`, `Bottom` and `Foot`. For example:
 
-![](images/Panel-des.gif)
+![](/zk_component_ref/images/Panel-des.gif)
 
-``` xml
+```xml
 <panel id="panel" framable="true" width="500px" height="550px"
     title="Panel component" floatable="true" movable="true"
     maximizable="true" minimizable="true" border="normal"
@@ -197,7 +196,7 @@ positions: `Top`, `Bottom` and `Foot`. For example:
   the body content with a few padding. (It is an option)
 
 Please refer
-[Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website](Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website)
+[Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website](https://www.zkoss.org/wiki/Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website)
 for details.
 
 # Supported Events
@@ -283,12 +282,12 @@ The</p>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
 - [
-  Panelchildren](ZK_Component_Reference/Containers/Panel/Panel_Children)
+  Panelchildren]({{site.baseurl}}/zk_component_ref/containers/panel/panel_children)
 
 # Use Cases
 

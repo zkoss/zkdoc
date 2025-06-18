@@ -10,7 +10,7 @@ can specify the folder containing custom web configuration (**web.xml**
 and **zk.xml**) for the testing environment through the constructor of
 [DefaultZatsEnvironment](http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DefaultZatsEnvironment.html#DefaultZatsEnvironment(java.lang.String>) when testing `Richlet`.
 
-For Richlet, please refer to [ZK Developer's Reference/UI Composing/Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/Richlet)
+For Richlet, please refer to [ZK Developer's Reference/UI Composing/Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)
 
 
 Following is a simple `Richlet` example, we assume that the **web.xml**
@@ -18,7 +18,7 @@ and **zk.xml** are placed in the **src/main/webapp/WEB-INF** folder:
 
 **web.xml**
 
-``` xml
+```xml
 <servlet-mapping>
     <servlet-name>zkLoader</servlet-name>
     <url-pattern>/zk/*</url-pattern>
@@ -27,7 +27,7 @@ and **zk.xml** are placed in the **src/main/webapp/WEB-INF** folder:
 
 **zk.xml**
 
-``` xml
+```xml
 <richlet>
     <richlet-name>MyRichlet</richlet-name>
     <richlet-class>foo.MyRichlet</richlet-class>
@@ -40,7 +40,7 @@ and **zk.xml** are placed in the **src/main/webapp/WEB-INF** folder:
 
 **MyRichlet.java**
 
-``` java
+```java
 public class MyRichlet extends GenericRichlet {
     public void service(Page page) throws Exception {
         final Label message = new Label("foo");
@@ -65,7 +65,7 @@ public class MyRichlet extends GenericRichlet {
 
 Following is a typical example of testing `Richlet`:
 
-``` java
+```java
 @Test
 public void test() {
     DefaultZatsEnvironment env = new DefaultZatsEnvironment("./src/main/webapp/WEB-INF");

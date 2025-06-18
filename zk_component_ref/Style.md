@@ -6,7 +6,7 @@
   [Style](http://www.zkoss.org/zkdemo/styling/custom_style)
 - Java API: <javadoc>org.zkoss.zul.Style </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Style</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -23,9 +23,9 @@ The style component used to specify `CSS` styles for the owner desktop.
 # Example
 
   
-![](images/ZKComRef_Style_Example.png)
+![](/zk_component_ref/images/ZKComRef_Style_Example.png)
 
-``` xml
+```xml
 <style> a{ color:red; }</style>
 ```
 
@@ -51,7 +51,7 @@ The style component used to specify `CSS` styles for the owner desktop.
 </table>
 
 - Inherited Supported Events: [
-  AbstractComponent](ZK_Component_Reference/Base_Components/AbstractComponent#Supported_Events)
+  AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
 
 # Supported Children
 

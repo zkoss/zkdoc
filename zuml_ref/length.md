@@ -1,4 +1,4 @@
-``` java
+```java
 int length(Object value);
 ```
 
@@ -11,7 +11,7 @@ Returns the length of a string, array, collection or map.
 Notice that there is a bulit-in operator to test if a
 string/array/collection/map is empty:
 
-``` xml
+```xml
 ${empty foo}
 ```
 

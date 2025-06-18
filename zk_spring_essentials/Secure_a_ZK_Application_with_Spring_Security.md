@@ -15,7 +15,7 @@ The example code mentioned here only works for Spring Security 4/5.
 
 Spring encourages users to start with Spring Boot. So Please include [
 zk spring boot
-starter](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Spring_Boot),
+starter]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot),
 and it will automatically configure for you with most commonly-used
 settings.
 
@@ -25,7 +25,7 @@ Follow [Securing a Web
 Application](https://spring.io/guides/gs/securing-web/), we add the
 following elements:
 
-``` xml
+```xml
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -40,7 +40,7 @@ For simplicity, we just register 2 URL mappings:
 - `/login`: login page
 - `/secure/{page}`: all secure pages
 
-``` java
+```java
 @SpringBootApplication
 @Controller
 public class Application {
@@ -67,7 +67,7 @@ Then put the corresponding zul under `web/zul` folder.
 
 # Web Security Configuration
 
-``` java
+```java
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -111,10 +111,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 - Line 7: We need to disable spring CSRF to make ZK AU pass security
   filter. But don't worry. [ ZK already has its own CSRF
-  mechanism](ZK%20Developer's%20Reference/Security%20Tips/Cross-site%20Request%20Forgery).
+  mechanism](ZK_Developer's_Reference/Security_Tips/Cross-site_Request_Forgery).
 - Line 13: This line blocks the public access to [ ZK class path web
   resource
-  folder](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path).
+  folder]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path).
 - Line 18-19: Assume we want all pages under `/secure` are protected and
   require an authentication.
 
@@ -127,7 +127,7 @@ No matter how you design a login page, remember to enclose it with a
 
 </code> and the login URL you specify in the web security config.
 
-``` xml
+```xml
     <n:form action="/login" method="POST">
         <grid width="450px">
             ...
@@ -163,7 +163,7 @@ For log4j, you can set
 Check what spring security does internally for a request in the log
 like:
 
-``` text
+```text
 2022-11-29 09:29:25 [TRACE] FilterChainProxy:245 - Trying to match request against DefaultSecurityFilterChain [RequestMatcher=Mvc [pattern='/login.zul*'], Filters=[]] (1/2)
 2022-11-29 09:29:25 [TRACE] FilterChainProxy:245 - Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5534e6f1, org.springframework.security.web.context.SecurityContextHolderFilter@4c6fc3e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@aa8dce8, org.springframework.security.web.authentication.logout.LogoutFilter@6ad112de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18a0721b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ae2fa13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66e12c3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44485db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f6f0fe2, org.springframework.security.web.access.ExceptionTranslationFilter@22604c7e, org.springframework.security.web.access.intercept.AuthorizationFilter@4d8f2cfd]] (2/2)
 2022-11-29 09:29:25 [TRACE] FilterChainProxy:245 - Trying to match request against DefaultSecurityFilterChain [RequestMatcher=any request, Filters=[org.springframework.security.web.session.DisableEncodeUrlFilter@5534e6f1, org.springframework.security.web.context.SecurityContextHolderFilter@4c6fc3e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@aa8dce8, org.springframework.security.web.authentication.logout.LogoutFilter@6ad112de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@18a0721b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2ae2fa13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66e12c3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44485db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f6f0fe2, org.springframework.security.web.access.ExceptionTranslationFilter@22604c7e, org.springframework.security.web.access.intercept.AuthorizationFilter@4d8f2cfd]] (2/2)

@@ -6,7 +6,7 @@ For example, <javadoc directory="jsdoc">zul.wgt.Groupbox</javadoc>
 rerenders only itself and the caption child, if any, when `setClosable`
 is called, as follows.
 
-``` javascript
+```javascript
 setClosable: function (closable) {
     if (this._closable != closable) {
         this._closable = closable;
@@ -34,7 +34,7 @@ In addition to passing a skipper to
 the widget has to implement the mold method (redraw) to handle the
 skipper:
 
-``` javascript
+```javascript
 function (out, skipper) {
     out.push('<fieldset', this.domAttrs_(), '>');
     var cap = this.caption;

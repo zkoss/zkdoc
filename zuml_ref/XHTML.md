@@ -10,15 +10,15 @@ dynamically (and control it on the server). For more information please
 refer to the [XHTML
 Namespace](ZUML_Reference/ZUML/Languages/XHTML) section or
 [ZK Component
-Reference](ZK_Component_Reference/XHTML_Components).
+Reference]({{site.baseurl}}/zk_component_ref/xhtml_components).
 
 **Performance Tip:** The XHTML language is designed to allow
 applications to modify the client dynamically (at the server). If you
 don't need it (it is generally true), you should use the [Native
 namespace](ZUML_Reference/ZUML/Namespaces/Native) instead.
 For more information, please refer to [HTML
-Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags) and
+Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags) and
 [Performance
-Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace).
+Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/use_native_namespace_instead_of_xhtml_namespace).
 
 

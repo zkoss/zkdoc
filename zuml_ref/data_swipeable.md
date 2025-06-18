@@ -4,7 +4,7 @@ Each layout region in borderlayout can support the closing and opening
 of the region area by user's swipe on the edge of the region with
 client/attribute[^1].
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
   <borderlayout xmlns:ca="client/attribute" ca:data-swipeable="true">
   whatever_value_you_want
@@ -15,7 +15,7 @@ client/attribute[^1].
 Tabbox supports the switching of tabs by user swiping on the edge of the
 content with client attribute[^2].
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
   <tabbox xmlns:ca="client/attribute" ca:data-swipeable="true">
   whatever_value_you_want
@@ -27,7 +27,7 @@ Within Tree, Grid, and Listbox, Paging can support the navigation to the
 previous or the next page by user swiping on the edge of the content
 with client attribute[^3].
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
 <listbox mold="paging" pageSize="5" xmlns:ca="client/attribute" ca:data-swipeable="true"></listbox>
 </div>
@@ -36,7 +36,7 @@ with client attribute[^3].
 Calendar can support the switching of view by user swiping on the
 content with client attribute[^4].
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
 <calendar xmlns:ca="client/attribute" ca:data-swipeable="true" />
 </div>
@@ -48,16 +48,16 @@ content with client attribute[^4].
 
 [^1]: For more information, please refer to [ZK Component Reference
     Tablet Devices:
-    Borderlayout](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Borderlayout#SwipeEvent_Support).
+    Borderlayout]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/borderlayout#SwipeEvent_Support).
 
 [^2]: For more information, please refer to [ZK Component Reference
     Tablet Devices:
-    Tabbox](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Tabbox#SwipeEvent_Support).
+    Tabbox]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/tabbox#SwipeEvent_Support).
 
 [^3]: For more information, please refer to [ZK Component Reference
     Tablet Devices:
-    Paging](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Paging#SwipeEvent_Support).
+    Paging]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/paging#SwipeEvent_Support).
 
 [^4]: For more information, please refer to [ZK Component Reference
     Tablet Devices:
-    Calendar](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Calendar#Friendly_Scrolling_Support).
+    Calendar]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/calendar#Friendly_Scrolling_Support).

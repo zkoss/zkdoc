@@ -7,7 +7,7 @@ be sent to the browser directly, rather than becoming a ZK component.
 
 For example,
 
-``` xml
+```xml
  <n:ul xmlns:n="native">
      <n:li>
      <textbox/>
@@ -20,7 +20,7 @@ For example,
 
 will attach the following HTML tags to the browser's DOM tree:
 
-``` xml
+```xml
  <ul>
      <li>
      <input id="z_a3_2"/>
@@ -53,7 +53,7 @@ However, the disadvantage that is you cannot access or change them
 (neither component nor widget) dynamically. For example, the following
 code snippet is incorrect, since there is no component called `x`.
 
-``` xml
+```xml
  <n:ul id="x" xmlns:n="native"/>
  <button label="add" onClick="new Li().setParent(x)"/> <!-- Failed since x is not available at the server -->
 ```
@@ -61,20 +61,20 @@ code snippet is incorrect, since there is no component called `x`.
 If you want to change them dynamically, you could:
 
 1.  Use [client-side
-    code]({{site.baseurl}}/zk_dev_ref/UI_Composing/Client-side_UI_Composing)
+    code]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
     to modify the browser's DOM tree at the client. Notice that, since
     ZK doesn't create the widget at the client too, you have to
     manipulate the DOM tree directly.
 2.  Use the [html
-    component]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_html_Component)
+    component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
     if you won't mix ZUL with HTML tags.
 3.  Use [XHTML component
-    set]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_XHTML_Component_Set)
+    set]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set)
     as described in the following section.
 
 For example, we can modify the DOM tree with jQuery as follows:
 
-``` xml
+```xml
 <zk xmlns:n="native" xmlns:w="client">
     <n:input id="inp"/>
     <button label="change" w:onClick="jq('#inp')[0].value = 'clicked'"/>
@@ -82,10 +82,10 @@ For example, we can modify the DOM tree with jQuery as follows:
 ```
 
 The rule of thumb is to use [the native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 if possible. If you need to change the content dynamically, you might
 consider [the html
-component]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_html_Component)
+component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component)
 first. If still not applicable, use [the XHTML component
 set](ZUML_Reference/ZUML/Languages/XHTML).
 
@@ -95,7 +95,7 @@ Though no component is associated with the element specified with the
 native namespace, you still could manipulate its parent, such as
 invalidate and move. For example, the following works correctly.
 
-``` xml
+```xml
 <window border="normal" title="Redraw">
   <n:ul xmlns:n="native">
      <n:li>ZK is simply best</n:li>
@@ -120,7 +120,7 @@ on the version you use and might be changed in the future.
 You could use the native namespace in Java too. For example, you could
 create a native table directly as follows.
 
-``` java
+```java
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.HtmlNativeComponent;
 import org.zkoss.zul.Datebox;
@@ -147,7 +147,7 @@ method could be used to set the attributes of the tag.
 In summary, the above example is equivalent to the following ZUML
 document:
 
-``` xml
+```xml
 <table border="1"  xmlns="native" xmlns:u="zul">
     <tr>
         <td>When:</td>
@@ -162,14 +162,14 @@ If the HTML tag you want to output requires an XML namespace (such as
 XAML), you can use the following format to specify the URI of the XML
 namespace you want to output:
 
-``` xml
+```xml
 <element xmlns="native:URI-of-another-namespace">
 ```
 
 For example, if you want to output the XAML tags directly to the client,
 you can specify XAML's XML namespace as follows.
 
-``` xml
+```xml
 <div>
     <Canvas xmlns="native:http://schemas.microsoft.com/client/2007">
       <TextBlock>Hello World!</TextBlock>
@@ -179,7 +179,7 @@ you can specify XAML's XML namespace as follows.
 
 Then, the result DOM structure will be similar to the following[^2]:
 
-``` xml
+```xml
 <div id="zk_uuid">
      <canvas xmlns="http://schemas.microsoft.com/client/2007">
           <textblock>Hello World!</textblock>

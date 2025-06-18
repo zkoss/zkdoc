@@ -5,8 +5,7 @@
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
 - Java API: <javadoc>org.zkoss.zul.Tabpanel</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabpanel</javadoc>
-- Style Guide: [
-  Tabbox](ZK_Style_Guide/XUL_Component_Specification/Tabbox)
+
 
 # Employment/Purpose
 
@@ -17,9 +16,9 @@ content for a group of components within a tab panel. The first
 
 # Example
 
-![](images/ZKComRef_Containers_Tabs.PNG)
+![](/zk_component_ref/images/ZKComRef_Containers_Tabs.PNG)
 
-``` xml
+```xml
 <zk>
     <tabbox width="400px">
         <tabs>
@@ -67,7 +66,7 @@ content for a group of components within a tab panel. The first
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
@@ -81,7 +80,7 @@ content for a group of components within a tab panel. The first
 | 3.6     | How to make a tabpanel loaded on demand  | [<http://www.zkoss.org/forum/listComment/6236>](http://www.zkoss.org/forum/listComment/6236) |
 
 See also: [
-Tabbox](ZK_Component_Reference/Containers/Tabbox#Use_Cases)
+Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
 
 # Version History
 

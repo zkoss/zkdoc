@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Inputgroup</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Inputgroup</javadoc>
-- Style Guide: N/A
+
 
 {% include version-badge.html version=9.0.0 %} 
 
@@ -18,9 +18,9 @@ the input component, merging them like a new form-input component.
 
 # Example
 
-![](images/Inputgroup_basic.png)
+![](/zk_component_ref/images/Inputgroup_basic.png)
 
-``` xml
+```xml
 <zk>
     <inputgroup>
         @<textbox />
@@ -47,9 +47,9 @@ the input component, merging them like a new form-input component.
 
 Specify the orientation.
 
-![](images/Inputgroup_vertical.png)
+![](/zk_component_ref/images/Inputgroup_vertical.png)
 
-``` xml
+```xml
 <inputgroup orient="vertical">
     First and last name<textbox/><textbox/>
 </inputgroup>
@@ -84,7 +84,7 @@ Specify the orientation.
 </table>
 
 - Inherited Supported Events from [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

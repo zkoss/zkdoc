@@ -4,7 +4,7 @@ With a PivotModel, we can easily create a Pivottable component.
 
 Given a PivotModel, creating a Pivottable is as simple as
 
-``` xml
+```xml
 <pivottable model="${model}" />
 ```
 
@@ -14,7 +14,7 @@ Given a PivotModel, creating a Pivottable is as simple as
 
 You can show or hide grand total rows or columns by specfiying
 
-``` xml
+```xml
 <pivottable model="${model}" grandTotalForColumns="false" 
     grandTotalForRows="false" />
 ```
@@ -27,23 +27,23 @@ Data orientation means how to arrange data when there are more than one
 data fields. For example, if we specify "Price" and "Mileage" as data
 field,
 
-``` xml
+```xml
 <pivottable model="${model}" dataOrient="column" />
 ```
 
 gives
 
-![](images/ZKPivotEsn_work_pivot_24.png")
+![](images/ZKPivotEsn_work_pivot_24.png)
 
 and
 
-``` xml
+```xml
 <pivottable model="${model}" dataOrient="row" />
 ```
 
 will give
 
-![](images/ZKPivotEsn_work_pivot_22.png")
+![](images/ZKPivotEsn_work_pivot_22.png)
 
  
 
@@ -53,7 +53,7 @@ Pivottable can accept up to 3 child components, which will represent the
 3 title cells in the order of data title, column title, and row title.
 For example,
 
-``` xml
+```xml
 <pivottable model="${model}">
     <div style="color: red">My Data Title</div>
     <div style="color: blue">My Column Title</div>
@@ -63,7 +63,7 @@ For example,
 
 results in
 
-![](images/ZKPivotEsn_work_pivot_26.png")
+![](images/ZKPivotEsn_work_pivot_26.png)
 
 ## Paging
 
@@ -71,12 +71,12 @@ As you have noticed, Pivottable has built-in paging support. Like Paging
 on Grid or Listbox, you can set page size and current page number. For
 example,
 
-``` xml
+```xml
 <!-- suppose model has Price, Mileage, Date as data field -->
 <pivottable model="${model}" pageSize="10" dataOrient="row" />
 ```
 
-![](images/ZKPivotEsn_work_pivot_32.png")
+![](images/ZKPivotEsn_work_pivot_32.png)
 
 Note:
 

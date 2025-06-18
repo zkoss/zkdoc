@@ -10,7 +10,7 @@ In ZK's term, a **theme** is a collection of stylesheets and associated
 images for all ZK components.
 
 Please create a new custom theme according to [Theme
-Template](ZK%20Developer's%20Reference/Theming%20and%20Styling/Creating%20Custom%20Themes/Theme%20Template).
+Template](ZK_Developer's_Reference/theming_and_styling/Creating_Custom_Themes/Theme_Template).
 
 Themes could be packaged inside a folder. A new theme can be created by
 first cloning the folder containing an existing theme and then making

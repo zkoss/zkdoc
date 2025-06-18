@@ -5,8 +5,7 @@
 - Demonstration: [Tooltips and Popup](http://www.zkoss.org/zkdemo/popup)
 - Java API: <javadoc>org.zkoss.zul.Popup</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Popup</javadoc>
-- Style Guide: [
-  Popup](ZK_Style_Guide/XUL_Component_Specification/Popup)
+
 
 # Employment/Purpose
 
@@ -14,7 +13,7 @@ The popup is a container that does not have any special frame. You can
 associate a popup with any component by specifying the popup's id at one
 of the following attributes:
 
-``` xml
+```xml
     <button popup="popup_id"/>
     <button tooltip="popup_id"/>
     <button context="popup_id"/>
@@ -26,9 +25,9 @@ of the following attributes:
 
 # Example
 
-![](images/ZKComRef_Popup.PNG)
+![](/zk_component_ref/images/ZKComRef_Popup.PNG)
 
-``` xml
+```xml
 <separator bar="true" />
 <label value="Tooptip for Another Popup" tooltip="any" />
 <popup id="any" width="300px">
@@ -40,9 +39,9 @@ of the following attributes:
 </popup>
 ```
 
-![](images/ZKComRef_Popup2.PNG)
+![](/zk_component_ref/images/ZKComRef_Popup2.PNG)
 
-``` xml
+```xml
 <textbox popup="popup, position=after_start"/>
 <popup id="popup" width="300px">
     <vbox>
@@ -61,7 +60,7 @@ by
 - built-in position
 - x, y coordinate
 
-``` XML
+```xml
 <button popup="popup_id, position=overlap_end"/>
 <button popup="popup_id, x=50,y=50"/>
 ```
@@ -69,7 +68,7 @@ by
 {% include version-badge.html version=6.0.1 %} ZK supports the following position
 string:
 
-![](images/ZKComRef_Popup_Position_601.png)
+![](/zk_component_ref/images/ZKComRef_Popup_Position_601.png)
 
 overlap, overlap_end, overlap_before, overlap_after are kept (still
 available) for backward compatibility. They are identical with top_left,
@@ -79,11 +78,11 @@ top_right, bottom_left, and bottom_right, respectively.
 
 The 14 possible positions are provided below:
 
-![](images/ZKComRef_Popup_Position.png)
+![](/zk_component_ref/images/ZKComRef_Popup_Position.png)
 
 The following illustrates the simplicity of usage,
 
-``` xml
+```xml
 <popup id="pp">
     Here is popup
 </popup>
@@ -93,7 +92,7 @@ The following illustrates the simplicity of usage,
 Upon clicking the button the popup component will appear in the relative
 position specified. In this case the position is just above the button.
 
-![](images/ZKComRef_Popup_Beforestart.png)
+![](/zk_component_ref/images/ZKComRef_Popup_Beforestart.png)
 
 ## Methods
 
@@ -112,7 +111,7 @@ has not shown up yet, clicking the target component will cause the popup
 to show up. If the popup is showing up, clicking on the target component
 again will toggle the popup to hide. The usage is in the below code.
 
-``` xml
+```xml
 <button label="Popup" popup="id, type=toggle"/>
 ```
 
@@ -121,7 +120,7 @@ again will toggle the popup to hide. The usage is in the below code.
 The tooltip attribute can also support a delay, the following code
 outlines how to accomplish this.
 
-``` xml
+```xml
 <label value="Tooltip" tooltip="popup_id, position=before_start, delay=500"/>
 ```
 
@@ -156,7 +155,7 @@ returns false).</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
@@ -166,9 +165,9 @@ returns false).</p></td>
 
 | Version | Description                                          | Example Location                                                                                                                                                                                 |
 |---------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.6     | Smalltalk: Toolbar and Menus                         | [ZK Developer's Reference: Tooltips, Context Menus and Popups]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Tooltips,_Context_Menus_and_Popups)                                               |
-| 3.6     | A way to specify the position of the Popup component | [New Features of ZK 3.6.1](Small_Talks/2009/April/New_Features_of_ZK_3.6.1#A_way_to_specify_the_position_of_the_Popup_component_A_way_to_specify_the_position_of_the_Popup_component) |
-| 3.6     | Popup, tooltip and context positions                 | [New Features of ZK 3.6.3](Small_Talks/2009/November/New_Features_of_ZK_3.6.3#Popup.2C_tooltip_and_context_positions_Popup,_tooltip_and_context_positions)                            |
+| 3.6     | Smalltalk: Toolbar and Menus                         | [ZK Developer's Reference: Tooltips, Context Menus and Popups]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups)                                               |
+| 3.6     | A way to specify the position of the Popup component | [New Features of ZK 3.6.1](https://www.zkoss.org/wiki/Small_Talks/2009/April/New_Features_of_ZK_3.6.1#A_way_to_specify_the_position_of_the_Popup_component_A_way_to_specify_the_position_of_the_Popup_component) |
+| 3.6     | Popup, tooltip and context positions                 | [New Features of ZK 3.6.3](https://www.zkoss.org/wiki/Small_Talks/2009/November/New_Features_of_ZK_3.6.3#Popup.2C_tooltip_and_context_positions_Popup,_tooltip_and_context_positions)                            |
 
 # Version History
 

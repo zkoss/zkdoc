@@ -17,9 +17,9 @@ container that usually contains nav elements.
 
 # Example
 
-![](images/ZKComRef_Nav.png)
+![](/zk_component_ref/images/ZKComRef_Nav.png)
 
-``` xml
+```xml
 <navbar orient="vertical" width="200px">
     <navitem label="Home" iconSclass="z-icon-home" />
     <nav label="Get Started" iconSclass="z-icon-th-list" badgeText="3">
@@ -55,13 +55,13 @@ A `navbar` could be placed in a vertical or horizontal orientation, the
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](images/ZKComRef_Nav_hor.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_hor.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](images/ZKComRef_Nav.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav.png)</td>
 </tr>
 </tbody>
 </table>
@@ -92,7 +92,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](images/ZKComRef_Nav_Hor_Cld.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_Hor_Cld.png)</td>
 </tr>
 <tr class="even">
 <td><center>
@@ -101,7 +101,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>horizontal</p>
 </center></td>
-<td>![](images/ZKComRef_Nav_Hor_No.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
@@ -110,7 +110,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](images/ZKComRef_Nav_Ver_Cld.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png)</td>
 </tr>
 <tr class="even">
 <td><center>
@@ -119,7 +119,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 <td><center>
 <p>vertical</p>
 </center></td>
-<td>![](images/ZKComRef_Nav_Ver_No.png)</td>
+<td>![](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png)</td>
 </tr>
 </tbody>
 </table>
@@ -132,7 +132,7 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 be disabled setting `autoclose="false"`, which keeps nav elements open
 until they are clicked again by the user.
 
-``` xml
+```xml
     <navbar orient="vertical" autoclose="false">
         <nav label="nav 1">
             <navitem label="nav 1.1"/>
@@ -171,11 +171,11 @@ the user has selected a navitem in the navbar.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Nav`](ZK_Component_Reference/Essential_Components/Nav)`, `[` Navitem`](ZK_Component_Reference/Essential_Components/Nav/Navitem)`,`[` Navseparator`](ZK_Component_Reference/Essential_Components/Nav/Navseparator)
+`*`[` Nav`]({{site.baseurl}}/zk_component_ref/essential_components/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
 
 # Use Cases
 

@@ -12,7 +12,7 @@ is changed.
 The name is either a package or the prefix of it. It matches any package
 that starts with the given name. For example,
 
-``` xml
+```xml
 <javascript-module name="foo" version="1.5.0"/>
 ```
 

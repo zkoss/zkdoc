@@ -21,7 +21,7 @@ need to remove the original one and add a new one for updating an item.
 To allow users input, we need to build UI for properties of
 `DefaultCalendarItem`. Here is a simple example:
 
-``` xml
+```xml
         <popup id="creationBox">
             <vlayout>
                 <datebox id="beginBox" placeholder="beginning date" format="yyyy-MM-dd HH:mm" hflex="min"/>
@@ -43,7 +43,7 @@ To allow users input, we need to build UI for properties of
 Then we need to add an event listener to open this popup and initialize
 UI with user-clicked date/time.
 
-``` java
+```java
     @Listen(CalendarsEvent.ON_ITEM_CREATE + " = #calendars")
     public void showCreationBox(CalendarsEvent event) {
         //initialize datebox with the user-clicked date/time
@@ -60,14 +60,14 @@ UI with user-clicked date/time.
     }
 ```
 
-![](images/creationbox-popup.jpg)
+![](/zk_calendar_essentials/images/creationbox-popup.jpg)
 
 ## Create New Item
 
 When an end-user clicks "Create" button, it invokes the listener below
 to instantiate a `DefaultCalendarItem`:
 
-``` java
+```java
     @Listen(Events.ON_CLICK + " = button[label='Create']")
     public void create() {
         DefaultCalendarItem item = new CalendarItemBuilder()
@@ -92,7 +92,7 @@ to instantiate a `DefaultCalendarItem`:
 # Read
 
 To display items on a Calendar you need to create a CalendarModel,
-please refer to [Displaying Calendar Items](ZK_Calendar_Essentials/Displaying_Calendar_Items).
+please refer to [Displaying Calendar Items]({{site.baseurl}}/zk_calendar_essentials/displaying_calendar_items).
 
 # Update
 
@@ -102,7 +102,7 @@ When an end-user drag to move or change the time span of a calendar
 item, we also need to handle the event. So the user-dragged item is
 really updated.
 
-``` java
+```java
     @Listen(CalendarsEvent.ON_ITEM_UPDATE + " = #calendars")
     public void move(CalendarsEvent event) {
         selectedItem = (DefaultCalendarItem) event.getCalendarItem();
@@ -127,7 +127,7 @@ editing.
 
 Load item properties from the clicked item.
 
-``` java
+```java
 
     @Listen(CalendarsEvent.ON_ITEM_EDIT + " = #calendars")
     public void edit(CalendarsEvent event) {
@@ -146,7 +146,7 @@ Load item properties from the clicked item.
 Because of immutability, we still need to remove the old item and create
 a new one with updated properties.
 
-``` java
+```java
     @Listen(Events.ON_CLICK + " = button[label='Update']")
     public void update() {
         model.remove(selectedItem);
@@ -166,7 +166,7 @@ a new one with updated properties.
 When an end-user clicks an existed item, we already save it to
 selectedItem.
 
-``` java
+```java
 @Listen(CalendarsEvent.ON_ITEM_EDIT + " = #calendars")
 public void edit(CalendarsEvent event) {
     selectedItem = (DefaultCalendarItem) event.getCalendarItem();
@@ -174,7 +174,7 @@ public void edit(CalendarsEvent event) {
 
 Therefore, the "Delete" button listener just removes the selected item.
 
-``` java
+```java
     @Listen(Events.ON_CLICK + " = button[label='Delete']")
     public void delete() {
         model.remove(selectedItem);

@@ -7,7 +7,7 @@
 Specifies an EL function that could be used in EL expressions. For
 example,
 
-``` xml
+```xml
  <?xel-method prefix="c" name="forName"
      class="java.lang.Class"
      signature="java.lang.Class forName(java.lang.String)"?>

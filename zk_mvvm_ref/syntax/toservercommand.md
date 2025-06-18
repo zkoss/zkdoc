@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ToServerCommand("commandName")
 @ToServerCommand({"commandName1", "commandName2"})
 ```
@@ -20,7 +20,7 @@ Description
 Example
 =======
 
-``` java
+```java
 @ToServerCommand("doCountChange")
 public class VM{
     private int count = 0;

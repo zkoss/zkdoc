@@ -18,7 +18,7 @@ The `device-type` element is optional. If omitted, `ajax` is assumed.
 
 For example,
 
-``` xml
+```xml
     <error-page>
         <exception-type>java.lang.Throwable</exception-type>
         <location>/WEB-INF/sys/error.zul</location>
@@ -26,7 +26,7 @@ For example,
 ```
 
 For more information, please refer to [ZK Developer's Reference: Error
-Handling]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Error_Handling).
+Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/error_handling).
 
 # Acceptable Path
 

@@ -19,7 +19,7 @@ users for an decision.
 The simplest use of a message box is to inform the user something is
 done. For example,
 
-``` java
+```java
 Messagebox.show("The backup has been done.");
 Messagebox.show("Failed to access the information", null, 0,  Messagebox.ERROR);
 ```
@@ -33,7 +33,7 @@ different look, such as the buttons, icon and title. Please refer to
 If you'd like to know which button is clicked, you have to implement an
 event listener[^1]. For example,
 
-``` java
+```java
 Messagebox.show("Something is changed. Are you sure?", 
     "Question", Messagebox.OK | Messagebox.CANCEL,
     Messagebox.QUESTION,
@@ -68,7 +68,7 @@ Since ZK 6, the event listener will be invoked with an instance of
 <javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc>, and it is easy
 to retrieve the button being clicked from it. For example,
 
-``` java
+```java
 Messagebox.show("Something is changed. Are you sure?", 
     "Question", Messagebox.OK | Messagebox.CANCEL,
     Messagebox.QUESTION,
@@ -94,7 +94,7 @@ If you'd like to assign the order, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
 as follows.
 
-``` java
+```java
  Messagebox.show("Cancel the operation?",
     new Messagebox.Button[] {Messagebox.Button.NO, Messagebox.Button.YES},
         new EventListener<Messagebox.ClickEvent>() { //optional
@@ -111,7 +111,7 @@ If you don't care the order, you could use a combination of constants,
 such as <javadoc method="OK">org.zkoss.zul.Messagebox</javadoc>. For
 example,
 
-``` java
+```java
  Messagebox.show("Cancel the operation?", null, Messagebox.YES+Messagebox.NO, null);
 ```
 
@@ -120,11 +120,11 @@ example,
 {% include version-badge.html version=6.0.0 %}
 
 By default, the label of a button is loaded from [the message
-file]({{site.baseurl}}/zk_dev_ref/Internationalization/Warning_and_Error_Messages)
+file]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages)
 based on the current locale. However, you could assign any label you'd
 like.
 
-``` java
+```java
 onClick='Messagebox.show("Yes and No", "Custom Labels",
     new Messagebox.Button[] {Messagebox.Button.YES, Messagebox.Button.NO},
     new String[] {"Yes, it is correct"},
@@ -144,10 +144,10 @@ You could change it by invoking
 
 Since 5.0.6, you could specify the application's name with a library
 property called
-[org.zkoss.zk.ui.WebApp.name](ZK_Configuration_Reference/zk.xml/The_Preferences/org.zkoss.zk.ui.WebApp.name).
+[org.zkoss.zk.ui.WebApp.name]({{site.baseurl}}/zk_config_ref/the_preferences/org.zkoss.zk.ui.webapp.name).
 For example, you could specify the following in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.WebApp.name</name>
     <value>My Killer Application</value>
@@ -165,7 +165,7 @@ typically called when the application starts (i.e., in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
 -- for more information, please refer to [ZK Developer's Reference: Life
 Cycle
-Listener]({{site.baseurl}}/zk_dev_ref/Customization/Life_Cycle_Listener)).
+Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
 To implement a custom template, please take a look at [the default
 template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/messagebox.zul).
@@ -179,7 +179,7 @@ The `params` argument in
 allows you to customize a message dialog further. For example, you could
 make the dialog wider with the parameter called `width` as shown below.
 
-``` java
+```java
 Map params = new HashMap();
 params.put("width", 500);
 Messagebox.show("This is a very long statement and meaningless to see if it looks ok with the given width.",
@@ -200,7 +200,7 @@ it is rarely required.
 {% include version-badge.html version=7.0.1 %} User also can customize the style of
 message dialog with the parameter called `sclass` as below.
 
-``` java
+```java
 Map params = new HashMap();
 params.put("sclass", "myMessagebox");
 Messagebox.show("It's a customized style message box.",
@@ -220,7 +220,7 @@ If you'd like to show a non-buttons dialog, you could use
 <javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
 with an empty array as follows.
 
-``` java
+```java
  Messagebox.show("Cancel the operation?",
     new Messagebox.Button[0], null);
 ```
@@ -273,10 +273,10 @@ This messagebox will show without any buttons.
     should implement
     <javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
     For more information, please refer to [ZK Developer's Reference:
-    Clustering]({{site.baseurl}}/zk_dev_ref/Clustering/Programming_Tips).
+    Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
 [^2]: Here we assume [the event thread is
-    disabled]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Event_Threads)
+    disabled]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
     (default). If the event thread is enabled, the show method will
     suspend until the user clicks a button. Thus, you could know which
     button is clicked by simply examining the returned value.

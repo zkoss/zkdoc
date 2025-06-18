@@ -26,7 +26,7 @@ resources.
 # Loading resources through the ZK cache enabled URLs
 
 Resources loaded from the classpath, by `~./`, or from ZK
-[ClassWebResources](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.web.util.resource.dir)
+[ClassWebResources]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.util.resource.dir)
 folder will be delivered to browsers through the same URL patterns as
 the internal ZK resources. This can apply to resources declared globally
 in `lang-addon`, or locally in a page with a script or style tag.
@@ -53,7 +53,7 @@ Specify a custom string for the `org.zkoss.zk.ui.versionInfo.enabled` library pr
 3. Deploy the updated configuration. A new URL hash is generated, invalidating the cache.
 
 More information is available here:
-[org.zkoss.zk.ui.versionInfo.enabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.versionInfo.enabled)
+[org.zkoss.zk.ui.versionInfo.enabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.versioninfo.enabled)
 
 
 ## 2. Create a Custom WebApp Class
@@ -62,7 +62,7 @@ Override the default `SimpleWebApp` class and implement a custom `getBuild()` me
 ### Example 1: Force Cache Clearing on Server Restart
 This example appends a timestamp to the build version to force cache clearing each time the server restarts:
 
-``` java
+```java
 public class ForceResourcesUpdateWebapp extends SimpleWebApp {
 
     private String randomizer;
@@ -83,7 +83,7 @@ public class ForceResourcesUpdateWebapp extends SimpleWebApp {
 ### Example 2: Use a Fixed Build Version
 This example appends a static version string to the build:
 
-``` java
+```java
 public class ForceResourcesUpdateWebapp extends SimpleWebApp {
         @Override
     public String getBuild() {
@@ -95,7 +95,7 @@ public class ForceResourcesUpdateWebapp extends SimpleWebApp {
 Once the webapp class has been 
 created, you need to declare it in `zk.xml` such as:
 
-``` xml
+```xml
     <system-config>
       <web-app-class>foo.bar.ForceResourcesUpdateWebapp</web-app-class>
     </system-config>

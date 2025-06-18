@@ -23,7 +23,7 @@ Cheatsheet](http://fontawesome.io/cheatsheet/).
 
 For example, to add a home icon on a Button,
 
-``` xml
+```xml
     <button iconSclass="z-icon-home z-icon-solid" />
 ```
 
@@ -31,7 +31,7 @@ If you want to use other Font Awesome functions such as the animation
 icon, you can include the external Font Awesome CSS link and add the CSS
 class to iconSclass. For example,
 
-``` xml
+```xml
 <?link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"?>
     <button iconSclass="z-icon-bell fa-spin" />
     <button iconSclass="z-icon-home fa-2x fa-rotate-90" />
@@ -43,7 +43,7 @@ ZK 8.0.0 integrates Font Awesome 4.3.0. Also, with ZK 8 there is no need
 to include an external font awesome CSS link to use an animation icon.
 Therefore the example above becomes
 
-``` xml
+```xml
     <button iconSclass="z-icon-bell z-icon-spin" />
     <button iconSclass="z-icon-home z-icon-2x z-icon-rotate-90" />
 ```
@@ -59,7 +59,7 @@ ZK 10.0.0 integrates [Font Awesome 6.4.2 free
 icons](https://fontawesome.com/v6/search?o=r&m=free) and supports both
 Font Awesome 4 syntax and Font Awesome 6 syntax with styles specified:
 
-``` xml
+```xml
     <!--Font Awesome 4 syntax-->
     <button iconSclass="z-icon-bell" />
     <!--Font Awesome 6 syntax-->
@@ -75,7 +75,7 @@ page](https://github.com/zkoss/zkbooks/blob/master/developersreference/developer
 {$ include version-badge.html version=10.0.0 %} The iconTooltip attribute is
 introduced for adding a tooltip to an icon.
 
-``` xml
+```xml
     <button iconSclass="z-icon-home" iconTooltip="home"/>
 ```
 
@@ -84,7 +84,7 @@ introduced for adding a tooltip to an icon.
 {$ include version-badge.html version=10.0.0 %} One LabelImageElement can have
 multiple icons and tooltips set using Java API:
 
-``` java
+```java
     e.setIconSclasses(new String[] {"z-icon-home", "z-icon-podcast"});
     e.setIconTooltips(new String[] {"tooltip1", "tooltip2"});
 ```
@@ -109,7 +109,7 @@ classes): Any css class can be applied to customize. Notice you need to
 manually include related CSS or font file. For example, the bootstrap
 glyphicons can be used here too:
 
-``` xml
+```xml
     <button iconSclass="glyphicon glyphicon-envelope" />
 ```
 
@@ -119,7 +119,7 @@ initializing. Therefore using `hflex="min"` with iconSclass may not get
 the desired result. Moreover, the final width of icons might not be the
 same. To make the width of icons always be fixed, add `z-icon-fw`.
 
-``` xml
+```xml
     <button iconSclass="z-icon-fw z-icon-home" />
     <button iconSclass="z-icon-fw z-icon-bell z-icon-spin" />
 ```

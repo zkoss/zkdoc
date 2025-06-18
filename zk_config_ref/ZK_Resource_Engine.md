@@ -9,7 +9,7 @@ Without this servlet, ZK retrieves by requesting `/zkau`.
 
 Mapping URL to ZK Resource Engine is straightforward:
 
-``` xml
+```xml
     <servlet>
         <servlet-name>resourceEngine</servlet-name>
         <servlet-class>org.zkoss.zk.au.http.DHtmlResourceServlet</servlet-class>

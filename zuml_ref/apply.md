@@ -12,7 +12,7 @@ interface. And then, you can do the initialization in the
 `doAfterCompose` method, since it is called after the component and all
 its children are instantiated.
 
-``` xml
+```xml
  <window apply="foo.MyComposer"/>
 ```
 
@@ -34,6 +34,6 @@ If you have a composer that you'd like to apply to every page, you don't
 need to specify it in every page. Rather, you could register a
 system-level composer. For more information, please refer to [ZK
 Developer's Reference: System-level
-Composers]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer#System-level_Composer).
+Composers]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer#System-level_Composer).
 
 

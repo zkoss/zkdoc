@@ -45,7 +45,7 @@ Version 6.5.2 introduced the ability to apply the feature through the `zk.xml` c
 In this example, the `org.zkoss.zul.image.preload` property is set to `true` in the `zk.xml` file at the library level, enabling image preloading for all applicable components.
 
 ## IconSclass
-The Label Image Element allows you to specify built-in icon CSS classes to style the displayed icons. For more information on available icon classes, refer to the [ZK Font Awesome documentation](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Integration/Presentation_Layer/Font_Awesome).
+The Label Image Element allows you to specify built-in icon CSS classes to style the displayed icons. For more information on available icon classes, refer to the [ZK Font Awesome documentation]({{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome).
 
 ## Supported Children
 `*ALL`: Allows encoding any ZK component as its child.

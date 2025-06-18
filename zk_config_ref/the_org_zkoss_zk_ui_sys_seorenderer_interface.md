@@ -16,7 +16,7 @@ and sent to the client[^2].
 For example, assume you have an implementation called
 `foo.MySEORenderer`, then you could specify it in `WEB-INF/zk.xml`
 
-``` xml
+```xml
 <!-- in WEB-INF/zk.xml -->
 <listener>
     <listener-class>foo.MySEORenderer</listener-class>
@@ -27,7 +27,7 @@ You could generate anything that you'd like the search engine to index
 in
 <javadoc type="interface" method="render(org.zkoss.zk.ui.Page,  java.io.Writer)">org.zkoss.zk.ui.sys.SEORenderer</javadoc>:
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.sys.SEORenderer;
 import org.zkoss.zk.ui.Page;

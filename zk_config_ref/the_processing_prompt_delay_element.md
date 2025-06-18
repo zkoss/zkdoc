@@ -1,6 +1,6 @@
 **Syntax:**
 
-``` xml
+```xml
  <processing-prompt-delay>a_number_in_milliseconds</processing-prompt-delay>
 ```
 

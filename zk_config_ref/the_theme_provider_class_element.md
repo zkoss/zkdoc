@@ -19,6 +19,6 @@ collection of URIs are actually generated. In other words, the theme
 provider has the highest priority.
 
 For more information, please refer to [ZK Developer's
-Reference]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Theme_Providers).
+Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_providers).
 
 

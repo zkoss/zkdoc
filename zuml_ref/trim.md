@@ -1,4 +1,4 @@
-``` java
+```java
 String trim(String value);
 ```
 

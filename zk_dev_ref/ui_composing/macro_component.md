@@ -20,7 +20,7 @@ component and how to use it.
 There is a similar concept called composite components. Unlike macros,
 you could derive from any component but you have to do the loading of
 ZUML manually. For more information please refer to the [Composite
-Component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component)
+Component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)
 section.
 
 # Definition, Declaration and Use
@@ -44,7 +44,7 @@ For example, assume that we want to pack a label and a text box as a
 macro component. Then we could create a page, say
 `/WEB-INF/macros/username.zul`, as follows.
 
-``` xml
+```xml
 <hlayout>
     Username: <textbox/>
 </hlayout>
@@ -58,7 +58,7 @@ directives](ZUML_Reference/ZUML/Processing_Instructions/component).
 For example, we could add the first line to the page that is going to
 use the *username* macro component:
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul"?>
 ```
 
@@ -69,14 +69,14 @@ attribute).
 If you prefer to make a macro component available to all pages, you
 could add the component definition to the so-called language addon and
 add it to
-[WEB-INF/zk.xml](ZK_Configuration_Reference/zk.xml/The_language-config_Element).
+[WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_language-config_element).
 
 ## Use Macro Component
 
 Using a macro component in a ZUML page is the same as the use of any
 other components. There is no difference at all.
 
-``` xml
+```xml
 <window>
     <username/>
 </window>
@@ -87,7 +87,7 @@ other components. There is no difference at all.
 Like an ordinary component, you can specify properties (a.k.a.,
 attributes) when using a macro component. For example,
 
-``` xml
+```xml
 <?component name="username" macroURI="/WEB-INF/macros/username.zul"?>
 <window>
     <username who="John" label="Username"/>
@@ -99,7 +99,7 @@ to the template (aka., the macro definition; `macroURI`) via a variable
 called `arg`. Then, from the template, you could access these properties
 by the use of EL expressions as shown below:
 
-``` xml
+```xml
 <hlayout>
     ${arg.label}: <textbox value="${arg.who}"/>
 </hlayout>
@@ -112,14 +112,14 @@ In addition to properties (aka., attributes), a property called
 itself. With this, we could reference other information such as its
 parent:
 
-``` xml
+```xml
 ${arg.includer.parent}
 ```
 
 Notice that `arg.includer` is different from the so-called inline
 macros. The inline macros are special macro components and used for
 inline expansion. For more information please refer to [Inline
-Macros]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Inline_Macros)
+Macros]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/inline_macros)
 section.
 
 ## Pass Initial Properties
@@ -128,20 +128,20 @@ Sometimes it is helpful to pass a list of initial properties that will
 be used to initialize a component when it is instantiated. It can be
 done easily as follows.
 
-``` xml
+```xml
 <?component name="mycomp" macroURI="/macros/mycomp.zul"
    myprop="myval" another="anotherval"?>
 ```
 
 Therefore,
 
-``` xml
+```xml
 <mycomp/>
 ```
 
 is equivalent to
 
-``` xml
+```xml
 <mycomp myprop="myval1" another="anotherval"/>
 ```
 
@@ -173,7 +173,7 @@ To instantiate a macro component in Java, you could do the followings.
 
 For example,
 
-``` Java
+```java
 HtmlMacroComponent ua = (HtmlMacroComponent)
     page.getComponentDefinition("username", false).newInstance(page, null);
 ua.setParent(wnd);
@@ -186,14 +186,14 @@ It is a bit tedious. If you implement your own custom Java class
 (instead of <javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc>), it
 will be simpler. For example,
 
-``` Java
+```java
 Username ua = new Username();
 ua.setParent(wnd);
 ua.setWho("Joe");
 ```
 
 Please refer to the [Implement Custom Java
-Class]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class)
+Class]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class)
 section for details.
 
 ## Change Template at Runtime
@@ -202,7 +202,7 @@ You could change the template dynamically by the use of
 <javadoc method="setMacroURI(java.lang.String)">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>.
 For example,
 
-``` xml
+```xml
 <username id="ua"/>
 <button onClick="ua.setMacroURI(&quot;another.zul&quot;)"/>
 ```

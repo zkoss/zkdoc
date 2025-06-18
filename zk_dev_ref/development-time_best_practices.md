@@ -17,7 +17,7 @@ easily remove it for production in the future.
 
 **zk.xml**
 
-``` xml
+```xml
     <library-property>
         <name>org.zkoss.zk.config.path</name>
         <value>/WEB-INF/zk-dev.xml</value>
@@ -26,7 +26,7 @@ easily remove it for production in the future.
 
 **zk-dev.xml**
 
-``` xml
+```xml
     <system-config>
         <disable-zscript>false</disable-zscript>
     </system-config>

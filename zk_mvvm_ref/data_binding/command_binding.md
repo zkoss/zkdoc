@@ -54,7 +54,7 @@ public class OrderVM {
 ```
 - Line 3: When clicking “Save” button or menuitem, the binder will invoke ` saveOrder() ` in a ViewModel.
 
-You can pass parameters to a command method. Please refer [Advanced/Parameters](../advanced/parameters.html).
+You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters.html).
 
 > Since 9.5.0
 
@@ -127,7 +127,7 @@ Validation is also included in the command execution. It is performed in the `VA
 ### Phases of Command Execution
 Following is the phases of a Command Execution:
 
-![MVVM Command Execution]({{site.baseurl}}/zk_mvvm_ref/images/Mvvm-command-execution.png)
+![MVVM Command Execution]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-command-execution.png)
 
 - When a bound ZK event enters the binder, the `COMMAND` phase will be invoked and all phases within the `COMMAND` phase will start to execute one by one
 - In the `VALIDATION` phase, binder first collects all the properties that needs to be verified. Then, it calls each validator of save-binding that is related to this command. In each call to a validator, binder provides a new `ValidationContext` which contains the main property and other collected properties. This means, you can do dependent validation with collected properties, for example, checking whether the shipping date is larger than the creation date. If any validator reports invalid by calling `ValidationContext.setInvalid ()`, binder ignores all subsequent phases and loads other properties that has been notified for a change.

@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ImmutableElements
 ```
 
@@ -22,7 +22,7 @@ Adding and removing items in the collection are tracked, but not changes to the 
 Example
 =======
 
-``` java
+```java
 public class CustomVM {
 
     @ImmutableElements

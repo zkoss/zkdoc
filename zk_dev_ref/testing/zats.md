@@ -4,7 +4,7 @@
 can help users test their ZK-based application. This suite has following
 modules:
 
-[ ZATS Mimic](ZATS_Essentials/Mimic_Library), a unit-test
+[ ZATS Mimic]({{site.baseurl}}/zats_essentials/mimic_library), a unit-test
 library that can be used with any well-known unit test framework (e.g.
 JUnit and TestNG) to test your ZUL without an application server or a
 browser.
@@ -23,7 +23,7 @@ frequent unit testing during an agile development process.
 
 The concept is as follows:
 
-![]({{site.baseurl}}/zk_dev_ref/images/Smalltalk-ZatsMimicConcept.png)
+![]({{site.baseurl}}/zk_dev_ref/images/smalltalk-zatsmimicconcept.png)
 
 Testers write test cases to simulate user actions such as clicking or
 typing with operation agents. Operation agent communicates with server
@@ -41,11 +41,11 @@ and one button with no other content at first. It has only one function:
 when a user clicks the button, the label shows "Hello Mimic" as shown in
 the image below. We are going to verify this behavior.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Smalltalk-mimic-hello.png)
+![]({{site.baseurl}}/zk_dev_ref/images/smalltalk-mimic-hello.png)
 
 **ZUL of our simple application**
 
-``` xml
+```xml
 
 <zk>
     <window title="hello" border="normal" width="300px" apply="org.zkoss.zats.example.hello.HelloComposer">
@@ -57,7 +57,7 @@ the image below. We are going to verify this behavior.
 
 **Composer of our simple application**
 
-``` java
+```java
 
 public class HelloComposer extends SelectorComposer {
     
@@ -79,7 +79,7 @@ whether or not the label's value is "Hello Mimic".
 
 '''HelloTest.java"
 
-``` java
+```java
 
 //remove import for brevity
 public class HelloTest {

@@ -1,13 +1,13 @@
 # Component Reference
 
 Component Reference: [
-Tabbox](ZK_Component_Reference/Containers/Tabbox)
+Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
 
 # DOM Structure
 
 ## Default Mold
 
-``` html
+```html
 <div class="z-tabbox z-tabbox-orient z-tabbox-scroll">
     <div class="z-tabs">
         <ul class="z-tabs-content">
@@ -53,7 +53,7 @@ Tabbox](ZK_Component_Reference/Containers/Tabbox)
 
 ## Accordion Mold
 
-``` html
+```html
 <div class="z-tabbox z-tabbox-accordion">
     <div class="z-tabpanels">
         <div class="z-tabpanel">
@@ -80,7 +80,7 @@ Tabbox](ZK_Component_Reference/Containers/Tabbox)
 Basically, LESS source is correspondent to its DOM structure and each
 orientation have different styles.
 
-``` css
+```css
 .z-tabbox {
     /* basic style */
 
@@ -154,7 +154,7 @@ Assume the image below is our target design for Tabbox component.
 ### Setup environment and Analyze design
 
 - Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component)
+  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -192,7 +192,7 @@ Assume the image below is our target design for Tabbox component.
 
 - Change overall color by overriding built-in zk less variables.
 
-``` css
+```css
 @import "~./zul/less/_header.less";
 
 @baseBorderColor: #E3E3E3;
@@ -206,7 +206,7 @@ Assume the image below is our target design for Tabbox component.
 
 - Modify scrollable button size
 
-``` css
+```css
 .z-tabbox {
     &-icon {
         .iconFontStyle(12px, #FFFFFF);
@@ -240,7 +240,7 @@ Assume the image below is our target design for Tabbox component.
 
 - Modify Tab size and text size
 
-``` css
+```css
 .z-tab {
     font-size: 16px;
     /* omitted */
@@ -305,7 +305,7 @@ Assume the image below is our target design for Tabbox component.
 
 - Modify Accordion size
 
-``` css
+```css
 .z-tabbox {
     &-accordion {
         /* omitted */

@@ -7,7 +7,7 @@ The following code demonstrates how to generate and store a few random
 events in the
 <javadoc>org.zkoss.calendar.impl.SimpleCalendarModel</javadoc>.
 
-``` java
+```java
 SimpleCalendarModel scm = new SimpleCalendarModel();
 
 public void addToModel(CalendarEvent ce) {
@@ -59,4 +59,4 @@ public void createData() {
 
 This code can then be incorporated to function as the in memory model
 for ZK Calendar. We discuss this in [ Presenting Event
-Data](ZK_Calendar_Essentials/Working_with_ZK_Calendar/Displaying_ZK_Calendar_Event_Data/Presenting_Event_Data)
+Data]({{site.baseurl}}/zk_calendar_essentials/working_with_zk_calendar/displaying_zk_calendar_event_data/presenting_event_data)

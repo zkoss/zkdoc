@@ -11,7 +11,7 @@ approach that is classified as the **Model-View-ViewModel (MVVM)**
 design pattern. Using this approach, ZK can control components for you
 automatically and it separates the UI from its controller clearly. In
 addition, you can also choose to go with the <b>MVC</b> approach that is
-covered in [another tutorial]({{site.baseurl}}/get_started/Get_ZK_Up_and_Running_with_MVC).
+covered in [another tutorial]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc).
 
 {% include tutorial-common.md %}
 
@@ -83,7 +83,7 @@ property "carList".
 
 **SearchViewModel.java**
 
-``` java
+```java
 package tutorial;
 
 import java.util.List;
@@ -122,7 +122,7 @@ For the "search" command, it looks like this:
 
 **SearchViewModel.java**
 
-``` java
+```java
 package tutorial;
 
 import java.util.List;
@@ -168,7 +168,7 @@ following syntax:
 
 **Extracted from searchMvvm.zul**
 
-``` xml
+```xml
     <window title="Search" width="600px" border="normal" 
             viewModel="@id('vm') @init('tutorial.SearchViewModel')">
     ...
@@ -209,7 +209,7 @@ the *Listbox* 's data with ViewModel's `carList`, so we should bind its
 
 **Extracted from searchMvvm.zul**
 
-``` xml
+```xml
 
         <hbox>
             Keyword:
@@ -236,7 +236,7 @@ syntax:
 
 **Extracted from searchMvvm.zul**
 
-``` xml
+```xml
         <hbox>
             Keyword:
             <textbox value="@save(vm.keyword)" />
@@ -261,13 +261,13 @@ Steps to use `<template>`:
 
 1.  Use **<template>** to enclose components that we want to create
     iteratively.
-2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/View/Template/Listbox_Template))
+2.  Set template's "name" attribute to "model".(See [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template))
 3.  Use implicit variable, **each**, to assign domain object's
     properties to component's attributes.
 
 **Extracted from searchMvvm.zul**
 
-``` xml
+```xml
 
         <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result">
             <listhead>
@@ -300,7 +300,7 @@ previous sections.
     ViewModel. Then ZK reloads `selectedCar`'s properties to those bound
     attributes.
 
-``` xml
+```xml
         <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result"
         selectedItem="@save(vm.selectedCar)">
         <!-- omit child components -->

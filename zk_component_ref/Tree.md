@@ -5,7 +5,7 @@
 - Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
 - Java API: <javadoc>org.zkoss.zul.Tree </javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Tree </javadoc>
-- Style Guide: [Tree](ZK_Style_Guide/XUL_Component_Specification/Tree)
+
 
 # Employment/Purpose
 
@@ -27,9 +27,9 @@ tree will display nothing in its content.
 
 ## 2-Column Tree
 
-![](images/ZKComRef_Tree_Example.png)
+![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px" >
     <tree id="tree" rows="5">
         <treecols sizable="true">
@@ -75,9 +75,9 @@ tree will display nothing in its content.
 
 ## Default Selection
 
-![](images/tree_onAfterRender.png)
+![](/zk_component_ref/images/tree_onAfterRender.png)
 
-``` xml
+```xml
     <zscript><![CDATA[
     DefaultTreeModel stm = new DefaultTreeModel(new DefaultTreeNode("ROOT",
         Arrays.asList(new DefaultTreeNode[]{
@@ -125,7 +125,7 @@ available space. {% include version-badge.html version=5.0.2 %}
 applied the following CSS by default. If you want to change the height,
 please overwrite the CSS rule as your preference.
 
-``` css
+```css
 .z-tree-autopaging .z-treecell-cnt,
 .z-dottree-autopaging .z-treecell-cnt,
 .z-filetree-autopaging .z-treecell-cnt,
@@ -160,7 +160,7 @@ easier to read, interpret and handle.
 
 The following code demonstrates how to freeze a column within a Tree:
 
-``` xml
+```xml
 <tree id="tree" rows="5" width="600px">
     <frozen columns="2" start="1" />
     <treecols sizable="true">
@@ -216,7 +216,7 @@ The following code demonstrates how to freeze a column within a Tree:
 {% include version-badge.html version=7.0.0 %}
 
 - For further details, please refer to [ Frozen
-  component](ZK_Component_Reference/Supplementary/Frozen)
+  component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
 # Selection
@@ -235,7 +235,7 @@ For example, when a user clicks the textbox in the following example,
 the selection state of the item won't be changed (only the textbox gains
 the focus).
 
-``` xml
+```xml
 <treeitem>
   <treerow>
     <treecell><textbox/></treecell>
@@ -249,7 +249,7 @@ specify a list of tags in the nonselectableTags property
 For example, if you want to select the item, no matter what tag the user
 clicks, you could specify an empty string as follows.
 
-``` xml
+```xml
 <tree nonselectableTags="">
   <treechildren>
     <treeitem>
@@ -262,7 +262,7 @@ only when the user clicks on the checkmark, you could specify `*`.
 Notice that you have to specify checkmark="true" as well (otherwise, no
 item is selectable).
 
-``` xml
+```xml
 <tree checkmark="true" nonselectableTags="*">
 ```
 
@@ -278,7 +278,7 @@ the model instead of the tree itself.
 
 ## The Checkmark Property
 
-![](images/ZKComRef_Tree_checkmark.png)
+![](/zk_component_ref/images/ZKComRef_Tree_checkmark.png)
 
 The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each tree item. If the `multiple` attribute is
@@ -298,7 +298,7 @@ clicked (which the behavior of ZK 5.0.4 and earlier), you could specify
 true to this library property called
 `org.zkoss.zul.tree.checkmarkDeselectOthers` in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.tree.checkmarkDeselectOthers</name>
     <value>true</value>
@@ -315,7 +315,7 @@ If you prefer not to select/deselect item on right click, you could
 specify false to this library property called
 `org.zkoss.zul.tree.rightSelect` in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.tree.rightSelect</name>
     <value>false</value>
@@ -351,7 +351,7 @@ will throw a IllegalArgumentException.
 default tristate tree model is provided in ZK EE, let's take a look at a
 simple demonstration.
 
-``` java
+```java
 DefaultTristateTreeModel model = new DefaultTristateTreeModel(
     new DefaultTreeNode(null,
         new DefaultTreeNode[] {
@@ -392,7 +392,7 @@ tree.setMultiple(true);
 <video src="DefaultTristateTreeModel_demo.mov")
 
 Treecols's header checkmark also support tristate
-![](images/DefaultTristateTreeModelwithTreecol.png)
+![](/zk_component_ref/images/DefaultTristateTreeModelwithTreecol.png)
 
 # Properties
 
@@ -402,7 +402,7 @@ Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
 Please refer to the [
-Grid](ZK_Component_Reference/Data/Grid#Auxiliary_Headers) for
+Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
 more details.
 
 ## SizedByContent
@@ -465,9 +465,9 @@ A tree will be scrollable if you specify the rows attribute or the
 height attribute and there is not enough space to display all the tree
 items.
 
-![](images/scrollable_tree.png)
+![](/zk_component_ref/images/scrollable_tree.png)
 
-``` xml
+```xml
 <tree rows="4">
     <treecols>
         <treecol label="Name"/>
@@ -523,7 +523,7 @@ is not visible unless user mouse over on the content. To turn off the
 floating scrollbar and use original scrollbar, please add the following
 configuration in zk.xml.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.nativebar</name>
     <value>true</value>
@@ -547,10 +547,10 @@ such as <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> or
 <javadoc type="interface">org.zkoss.zul.DefaultTreeModel</javadoc>, the
 model open state is authoritative and will override the individual
 component's open state. please refer to [ the TreeModel
-documentation]({{site.baseurl}}/zk_dev_ref/MVC/Model/Tree_Model#Open_Tree_Nodes)
+documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
 on this topic.
 
-``` xml
+```xml
 <treeitem open="false">
 ```
 
@@ -571,7 +571,7 @@ After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Tree's header out of visible range in a viewport, the Tree's
 header becomes floating and sticky on the top of the page.
 
-``` xml
+```xml
   <tree sclass="z-sticky-header">
     <!-- treecols, treeitem... -->
   </tree>
@@ -583,7 +583,7 @@ As illustrated below, you could listen to the `onOpen` event, and then
 load the children of a tree item. You can do the same thing using group
 boxes.
 
-``` xml
+```xml
 <zk>
     <tree width="200px">
         <treecols>
@@ -729,7 +729,7 @@ is enabled and user changed the size of the content.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -752,26 +752,26 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/tree_mold_default.png)</td>
+<td>![](/zk_component_ref/images/tree_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>paging</p>
 </center></td>
-<td>![](images/tree_mold_paging.png)</td>
+<td>![](/zk_component_ref/images/tree_mold_paging.png)</td>
 </tr>
 </tbody>
 </table>
 
 # Supported Children
 
-`*`[` Treecols`](ZK_Component_Reference/Data/Tree/Treecols)`, `[` Treechildren`](ZK_Component_Reference/Data/Tree/Treechildren)`, `[` Treefoot`](ZK_Component_Reference/Data/Tree/Treefoot)
+`*`[` Treecols`]({{site.baseurl}}/zk_component_ref/data/tree/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/data/tree/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/data/tree/treefoot)
 
 # Use Cases
 
 | Version | Description                                          | Example Location                                                                                                             |
 |---------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| 3.6     | Smalltalk: Building a Complex Tree with Grid-in-Grid | [Building a Complex Tree with Grid-in-Grid](Small_Talks/2009/September/Building_a_Complex_Tree_with_Grid-in-Grid) |
+| 3.6     | Smalltalk: Building a Complex Tree with Grid-in-Grid | [Building a Complex Tree with Grid-in-Grid](https://www.zkoss.org/wiki/Small_Talks/2009/September/Building_a_Complex_Tree_with_Grid-in-Grid) |
 | 3.6     | Expand all items of a Tree at start                  | [<http://www.zkoss.org/forum/listComment/9379>](http://www.zkoss.org/forum/listComment/9379)                                 |
 
 # Browser Limitations
@@ -837,8 +837,8 @@ tree to work around.</p></td>
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
 
-[^2]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`](ZK_Configuration_Reference/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
+[^2]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
 
 [^3]: `Same as above.`

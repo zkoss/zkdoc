@@ -11,7 +11,7 @@
 # Install ZK Studio
 
 Follow [ZK Studio Installation
-Guide](ZK_Studio_Essentials/Installation) to install ZK
+Guide]({{site.baseurl}}/zk_studio_essentials/installation) to install ZK
 Studio.
 
 # Defining a Server Runtime
@@ -39,6 +39,6 @@ To specify the server in eclipse, please do as follows.
 
 After installing Eclipse and ZK Studio, please take a look at [Create
 and Run Your First ZK Application with Eclipse and ZK
-Studio](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio).
+Studio](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio).
 
 

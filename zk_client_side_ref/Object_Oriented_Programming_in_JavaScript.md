@@ -12,17 +12,17 @@ package is loaded if needed).
 
 The dependence of the packages is defined in the so-called [Widget
 Package
-Descriptor](ZK_Client-side_Reference/Widget_Package_Descriptor)
+Descriptor]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor)
 (aka., WPD). If it is about to load a package, all packages it depends
 will be loaded too.
 
 ## Define a Package
 
 A package is usually defined implicitly by the use of [a WPD
-file](ZK_Client-side_Reference/Widget_Package_Descriptor),
+file]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor),
 such as
 
-``` xml
+```xml
 <package name="zul.grid" language="xul/html" depends="zul.mesh,zul.menu">
     <widget name="Grid"/>
     <widget name="Row"/>
@@ -34,7 +34,7 @@ You rarely need to define it explicitly, but, if you want, you could use
 <javadoc directory="jsdoc" method="$package(_global_.String)">\_global\_.zk</javadoc>.
 For example,
 
-``` javascript
+```javascript
 zk.$package('com.foo');
 ```
 
@@ -56,7 +56,7 @@ code right after the invocation of
 Rather, you should specify the code in the second argument as a function
 (<javadoc directory="jsdoc">\_global\_.Function</javadoc>). For example,
 
-``` javascript
+```javascript
 zk.load("zul.inp, zul.layout", function () { //load zul.inp and zul.layout
     new zul.layout.Hlayout({
         children: [new zul.inp.Textbox({value: 'foo'}]
@@ -81,7 +81,7 @@ might be loaded when your code is running. For example, we could
 customize <javadoc directory="jsdoc">zul.inp.SimpleConstraint</javadoc>
 as follows.
 
-``` javascript
+```javascript
 zk.afterLoad('zul.inp', function () {
   zu.inp.SimpleConstraint.prototype.validate = function (inp, val) {
     //...customized validation
@@ -99,7 +99,7 @@ a separate package, you could use
 <javadoc directory="jsdoc" method="depends(_global_.String, _global_.String)">\_global\_.zk</javadoc>
 as follows.
 
-``` javascript
+```javascript
 zPkg.depends('zul.inp', 'com.foo');
 ```
 
@@ -117,7 +117,7 @@ you have to extend from it or one of the deriving classes.
 To define a new class, you could use
 <javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>.
 
-``` javascript
+```javascript
 zk.$package('com.foo');
 
 com.foo.Location = zk.$extends(zk.Object, {
@@ -158,7 +158,7 @@ To access the superclass's method, you have to use
 or
 <javadoc method="$supers(_global_.String, _global_.Array)" directory="jsdoc">zk.Object</javadoc>.
 
-``` javascript
+```javascript
 com.foo.ShiftLocation = zk.$extends(com.foo.Location, {
  distance: function (loc) {
    if (loc == null) return 0;
@@ -178,7 +178,7 @@ only one method called distance per class, no matter what signature it
 might have. So, it is safer (and easier) to pass whatever arguments that
 it might have to the superclass. It can be done by the use of `$supers`.
 
-``` javascript
+```javascript
 distance: function (loc) {
  if (loc == null) return 0;
  return this.$supers('distance', arguments); //pass whatever arguments the caller applied
@@ -191,7 +191,7 @@ Unlike Java, the constructor is always called
 <javadoc method="$init()" directory="jsdoc">zk.Object</javadoc>, and it
 won't invoke the superclass's constructor automatically.
 
-``` javascript
+```javascript
 com.foo.Location = zk.$extends(zk.Object, {
  $init: function (x, y) {
   this.x = x;
@@ -203,7 +203,7 @@ com.foo.Location = zk.$extends(zk.Object, {
 Because the superclass's constructor won't be invoked automatically, you
 have to invoke it manually as follows.
 
-``` javascript
+```javascript
 com.foo.ShiftLocation = zk.$extends(com.foo.Location, {
  $init: function (x, y, delta) {
   this.$super('$init', x + delta, y + delta);
@@ -228,7 +228,7 @@ To test if an object is an instance of a class, use
 or
 <javadoc method="isInstance(zk.Object)" directory="jsdoc">zk.Object</javadoc>.
 
-``` javascript
+```javascript
 if (f.$instanceof(com.foo.Location)) {
 }
 if (com.foo.Location.isInstance(f)) { //the same as above
@@ -241,7 +241,7 @@ Each object has a data member called
 <javadoc method="$class" directory="jsdoc">zk.Object</javadoc>, that
 refers to the class it was instantiated from.
 
-``` javascript
+```javascript
 var foo = new com.foo.Location();
 zk.log(foo.$class == com.foo.Location); //true
 ```
@@ -249,7 +249,7 @@ zk.log(foo.$class == com.foo.Location); //true
 Unlike Java, you can access all static members by the use of the class,
 including the derived class.
 
-``` javascript
+```javascript
 MyClass = zk.$extends(zk.Object, {}, {
  static0: function () {}
 });
@@ -262,7 +262,7 @@ MyDerive.static1(); //OK
 
 However, you cannot access static members via the object.
 
-``` javascript
+```javascript
 var md = new MyDerive();
 md.static0(); //Fail
 md.static1(); //Fail
@@ -277,7 +277,7 @@ In addition to static members, each class has two important methods,
 and
 <javadoc method="isAssignableFrom(zk.Class)" directory="jsdoc">zk.Object</javadoc>.
 
-``` javascript
+```javascript
 zk.log(com.foo.Location.isAssignableFrom(com.foo.ShiftLocation)); //true
 zk.log(com.foo.Location.isInstance(foo)); //true
 ```
@@ -292,7 +292,7 @@ and postfix a member with '\_' to indicate protected. Notice it doesn't
 prevent the user to call but it helps users not to call something he
 should not.
 
-``` javascript
+```javascript
 MyClass = zk.$extends(zk.Object, {
  _data: 23, //private data
  check_: function () { //a protected method
@@ -307,7 +307,7 @@ MyClass = zk.$extends(zk.Object, {
 Some JavaScript utilities the number of arguments to decide whether it
 is a getter or a setter.
 
-``` javascript
+```javascript
 location: function (value) { //not recommended
  if (arguments.length) this.location = value;
  else return value;
@@ -318,7 +318,7 @@ However, it is too easy to get confused (at least, with Java's
 signature) as the program becomes sophisticated. So it is suggested to
 follow Java's convention (though JavaScript file is slightly bigger):
 
-``` javascript
+```javascript
 getLocation: function () {
  return this._location;
 },
@@ -330,7 +330,7 @@ setLocation: function (value) {
 In addition, ZK provides a simple way to declare getter and setters by
 enclosing them with a special name \$define. For example,
 
-``` javascript
+```javascript
 $define: {
     location: null,
     label: function (val) {
@@ -347,7 +347,7 @@ when it is called. For more information, please refer to
 However, if a property is read-only, you can still declare it without
 `get`:
 
-``` javascript
+```javascript
 distance: function (loc) {
   return Math.sqrt(Math.pow(this.x - loc.x, 2) + Math.pow(this.y - loc.y, 2));
 }
@@ -356,7 +356,7 @@ distance: function (loc) {
 Furthermore, if a property is read-only and not dynamic, you can allow
 users to access it directly:
 
-``` javascript
+```javascript
 if (widget.type == 'zul.wgt.Div') {
 }
 ```
@@ -371,7 +371,7 @@ dynamically.
 To add a method to all instances of a given class, add the method to
 `prototype`:
 
-``` javascript
+```javascript
 foo.MyClass = zk.$extends(zk.Object, {
 });
 
@@ -382,7 +382,7 @@ foo.MyClass.prototype.myfunc = function (arg) {
 
 To add a method to a particular instance:
 
-``` javascript
+```javascript
 var o = new foo.MyClass();
 o.myfunc = function (arg) {
  this.doSomething(arg);
@@ -391,7 +391,7 @@ o.myfunc = function (arg) {
 
 To add a static method:
 
-``` javascript
+```javascript
 foo.Myclass.myfunc = function () {
  //...
 };
@@ -409,7 +409,7 @@ and any object that with these two methods can be passed to it.
 - You have to specify `this` explicitly. Remember it is JavaScript, so
   the default object is `window` if you don't.
 
-``` javascript
+```javascript
 $init: function () {
  $super('$init'); //Wrong! It is equivalent to window.$super('$init')
 }
@@ -419,7 +419,7 @@ $init: function () {
   to invoke it manually. On the other hand, you can, unlike Java, do
   whatever you want before calling the superclass's `$init`.
 
-``` javascript
+```javascript
 $init: function (widget) {
  //codes are allowed here
  this.$super('$init', widget);
@@ -433,7 +433,7 @@ $init: function (widget) {
   the definition of `MyClass` when the class is defined in the following
   example.
 
-``` javascript
+```javascript
 MyClass = zk.$extends(zk.Object, {
  data: []
 });
@@ -442,7 +442,7 @@ MyClass = zk.$extends(zk.Object, {
 It means that all instances of MyClass will share the same copy of this
 array. For example,
 
-``` javascript
+```javascript
 var a = new MyClass(), b = new MyClass();
 a.data.push('abc');
 zk.log(b.data.length); //it becomes 1 since a.data and b.data is actually the same
@@ -451,7 +451,7 @@ zk.log(b.data.length); //it becomes 1 since a.data and b.data is actually the sa
 Thus, to assign mutable objects, such as arrays and maps ({}), it is
 better to assign in the constructor.
 
-``` javascript
+```javascript
 MyClass = zk.$extends(zk.Object, {
  $init: function () {
   this.data = []; //it is called every time an instance is instantiated

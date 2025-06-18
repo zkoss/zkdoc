@@ -22,8 +22,8 @@ you can choose to use a button components such as
 <javadoc>org.zkoss.zul.Button</javadoc>,
 <javadoc>org.zkoss.zul.Menuitem</javadoc>,
 <javadoc>org.zkoss.zul.Toolbarbutton</javadoc> and so on. (See [ZK Developer's Reference/UI
-Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/File_Upload_and_Download)
-and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/Fileupload)) Then set
+Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
+and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload)) Then set
 `true` to `upload` attribute of these components; users can then click
 and select a file to upload through a browser dialog, as illustrated
 below:
@@ -40,7 +40,7 @@ We can cast these components described above as `UploadAgent` and
 perform file uploading. Following is a typical example of a single file
 uploading:
 
-``` java
+```java
 @Test
 public void test() throws Exception {
     File file = getFile();
@@ -59,11 +59,11 @@ public void test() throws Exception {
 
 Since **ZK 6.0.0**, components now also support mutiple uploads at once
 if they have `multiple=true` flag and users using web browsers
-supporting HTML5.(See [ZK Component Reference/Essential Components/Button#Upload]({{site.baseurl}}/zk_component_ref/essential_components/Button#Upload)) `UploadAgent` also supports multiple files
+supporting HTML5.(See [ZK Component Reference/Essential Components/Button#Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)) `UploadAgent` also supports multiple files
 uploading at once. Following is a typical example of uploading multiple
 files:
 
-``` java
+```java
 @Test
 public void test() throws Exception {
     File[] files = getFiles();
@@ -89,13 +89,13 @@ public void test() throws Exception {
 Another way to implement upload feature is to use the static method
 <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> as an event
 handler.(See [ZK Component Reference/Essential
-Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/essential_components/Fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
+Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
 
 ![](images/Zats_upload_dialog.png)
 
-``` xml
+```xml
             <label id="label1" value="click label1 will invoke fileupload.get()" onClick="Fileupload.get();" />
             <label id="label2" value="click label2 will invoke fileupload.get(3)" onClick="Fileupload.get(3);" />
 ```
@@ -105,7 +105,7 @@ In this case, we can retrieve `UploadAgent` from
 example of file uploading with
 <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>:
 
-``` java
+```java
 @Test
 public void test() throws Exception {
     File[] files = getFiles();

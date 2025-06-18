@@ -15,7 +15,7 @@ the matching criteria for wiring, or leave it empty to wire by
 
 ZUL:
 
-``` xml
+```xml
 <window apply="foo.MyComposer">
     <textbox />
     <button id="btn" />
@@ -27,7 +27,7 @@ ZUL:
 
 Controller:
 
-``` java
+```java
     @Wire
     Button btn; // wire to the button with id "btn"
     @Wire("window > textbox")
@@ -54,7 +54,7 @@ The syntax elements of selectors are described as the following:
 
 The component type as in ZUML definition, case insensitive.
 
-``` java
+```java
     @Wire("button")
     Button btn; // wire to the first button.
 ```
@@ -63,7 +63,7 @@ The component type as in ZUML definition, case insensitive.
 
 Combinator constraints the relative position of components.
 
-``` java
+```java
     @Wire("window button")
     Button btn0; // wire to the first button who has an ancestor window
     @Wire("window > button") // ">" refers to child
@@ -76,7 +76,7 @@ Combinator constraints the relative position of components.
 
 You can have any number of levels of combinators:
 
-``` java
+```java
     @Wire("window label + button")
     Button btn4; // wire to the first button whose previous sibling is a label with an ancestor window.
 ```
@@ -85,7 +85,7 @@ You can have any number of levels of combinators:
 
 The component id.
 
-``` java
+```java
     @Wire("label#lb")
     Label label; // wire to the first label of id "lb" in the same id space of the root component
     @Wire("#btn")
@@ -95,7 +95,7 @@ The component id.
 Unlike CSS3, the id only refers to the component in the same IdSpace of
 the previous level or root component. For example, given zul
 
-``` xml
+```xml
 <window apply="foo.MyComposer">
     <div>
         <window id="win">
@@ -109,7 +109,7 @@ the previous level or root component. For example, given zul
 </window>
 ```
 
-``` java
+```java
     @Wire("#btn")
     Button btnA; // wire to button 2
     @Wire("#win #btn")
@@ -127,7 +127,7 @@ the previous level or root component. For example, given zul
 
 The sclass of component. For example,
 
-``` xml
+```xml
 <window apply="foo.MyComposer">
     <div>
         <button /><!-- button 1 -->
@@ -141,7 +141,7 @@ The sclass of component. For example,
 </window>
 ```
 
-``` java
+```java
     @Wire(".myclass button")
     Button btnA; // wire to button 2
     @Wire("div.myclass button")
@@ -156,7 +156,7 @@ calling the corresponding getter method on the component.
 - Note: `[id="myid"]` does not restrict id space like `#myid` does, so
   they are **not** equivalent.
 
-``` java
+```java
     @Wire("button[label='submit']")
     Button btn; // wire to the first button whose getLabel() call returns "submit"
 ```
@@ -166,7 +166,7 @@ calling the corresponding getter method on the component.
 A pseudo class is a custom criterion on a component. There are a few
 default pseudo classes available:
 
-``` java
+```java
     @Wire("div:root") // matches only the root component
     @Wire("div:first-child") // matches if the component is the first child among its siblings
     @Wire("div:last-child") // matches if the component is the last child among its siblings
@@ -187,7 +187,7 @@ specification](http://www.w3.org/TR/css3-selectors/#nth-child-pseudo).
 Asterisk simply matches anything. It is more useful when working with
 combinators:
 
-``` java
+```java
     @Wire("*")
     Component rt; // wire to any component first met, which is the root.
     @Wire("window#win > * > textbox")
@@ -201,7 +201,7 @@ combinators:
 Multiple selectors separated by commas refer to an OR condition. For
 example,
 
-``` java
+```java
     @Wire("grid, listbox, tree")
     MeshElement mesh; // wire to the first grid, listbox or tree component
     @Wire("#win timebox, #win datebox")
@@ -222,7 +222,7 @@ added.
 - **::shadow** select all shadow roots, which are shadow elements,
   hosted by a non-shadow element.
 
-``` xml
+```xml
 <div id="host">
     <apply id="root" dynamicValue="true"><!-- set dynamicValue="true" to avoid being removed after render -->
         <if id="if1" test="@load(vm.showLabel)"><!-- using @load will also prevent this element from being removed -->
@@ -237,7 +237,7 @@ added.
 
 Here are some examples of using shadow selectors with the above zul
 
-``` java
+```java
     @Wire(":host") // wire to the div with id "host", as it is the only shadow host
     @Wire(":host(#div2)") // wire to nothing, no shadow host with the id "div2" exists
     @Wire("::shadow") // wire to the apply with id "root", as it is the only shadow root
@@ -257,7 +257,7 @@ latter case, it is equivalent to call the method with the matched
 component as the parameter. This feature allows a more delicate control
 on handling auto-wires.
 
-``` java
+```java
     @Wire("grid#users")
     private void initUserGrid(Grid grid) {
         // ... your own handling
@@ -292,7 +292,7 @@ Collection as the parameter.
 - If it wires by method and the selector matches no components, an empty
   collection will be passed into the method call.
 
-``` java
+```java
     @Wire("textbox")
     List<Textbox> boxes; // wire to an ArrayList containing all matched textboxes
     @Wire("button")
@@ -336,7 +336,7 @@ and the rest are covered by depth first search (DFS). In brief, the more
 ids you specify in the **first few levels** of a selector string, the
 more boost you can obtain in component finding. For example,
 
-``` java
+```java
     @Wire("#win #hl > #btn") // fast, as it is entirely handled by getFellow()
 
     @Wire("window hlayout > button") // slower, entirely handled by DFS
@@ -352,7 +352,7 @@ more boost you can obtain in component finding. For example,
 In the case of multiple selectors, only the first few **identical levels
 with ids** enjoy the performance gain.
 
-``` java
+```java
     @Wire("#win #hl > button, #win #hl > toolbarbutton") 
     // the first two levels have boost
 

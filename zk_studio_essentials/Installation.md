@@ -45,7 +45,7 @@ Download the zip file of Tomcat distribution and extract it to a proper
 location (with no illegal characters or space in the path). Tomcat
 requires configuration before it can be used with Eclipse, this process
 is described in the following link [ Running the ZK
-Project](ZK_Studio_Essentials/Begin_Your_First_ZK_Project/Create_a_New_ZK_Project#Running_the_ZK_Project).
+Project]({{site.baseurl}}/zk_studio_essentials/begin_your_first_zk_project/create_a_new_zk_project#Running_the_ZK_Project).
 
 **Tips:**
 
@@ -154,7 +154,7 @@ Studio. There are several alternatives:
 
 Add the plugin below in a pom.xml.
 
-``` xml
+```xml
     <build>
         <plugins>
             <plugin>
@@ -199,13 +199,13 @@ management of ZK Studio, i.e. the Bouncy Castle Cryptography Provider.
 
 First you need to check your jvm version. For Ubuntu/Debian users, run
 
-``` text
+```text
 $ update-java-alternatives –l
 ```
 
 You should be seeing:
 
-``` text
+```text
 java-6-sun 63 /usr/lib/jvm/java-6-sun
 ```
 
@@ -214,7 +214,7 @@ To get your Bouncy Castle running correctly:
 - 1.Search for java.security in /path_to_your_jvm/jre/lib/security
 - 2.Should look like:
 
-``` text
+```text
 #......
 # (some info)
 #......
@@ -229,7 +229,7 @@ security.provider.8=sun.security.smartcardio.SunPCSC
   security.provider.X=org.bouncycastle.jce.provider.BouncyCastleProvider
   as the last provider. In the sample above you will add
 
-``` text
+```text
 security.provider.9=org.bouncycastle.jce.provider.BouncyCastleProvider
 ```
 

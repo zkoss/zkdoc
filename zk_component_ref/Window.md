@@ -4,8 +4,7 @@
   [Window](http://www.zkoss.org/zkdemo/window/positioning)
 - Java API: <javadoc>org.zkoss.zul.Window</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wnd.Window</javadoc>
-- Style Guide: [
-  Window](ZK_Style_Guide/XUL_Component_Specification/Window)
+
 
 # Employement/Purpose
 
@@ -13,7 +12,7 @@ A window is, like HTML DIV tag, used to group components. Unlike other
 components, a window has the following characteristics.
 
 - A window is an owner of [an ID
-  space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space). Any
+  space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space). Any
   component contained in a window, including itself, could be found by
   use of
   <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>,
@@ -23,9 +22,9 @@ components, a window has the following characteristics.
 
 # Example
 
-![](images/ZKComRef_Window_Multiple_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Window_Multiple_Examples.PNG)
 
-``` xml
+```xml
     <window title="Embedded Style" border="normal" width="200px">Hello,
         Embedded!
     </window>
@@ -47,7 +46,7 @@ A window could be in one of five different modes:
 You could change the mode by the use of
 <javadoc method="setMode(java.lang.String)">org.zkoss.zul.Window</javadoc>.
 
-``` xml
+```xml
 <window title="Hi, I'm Overlapped" border="normal" mode="overlapped">
 ...
 </window>
@@ -61,7 +60,7 @@ Alternatively, you could invoke one of
 <javadoc method="doEmbedded()">org.zkoss.zul.Window</javadoc>, as shown
 below.
 
-``` xml
+```xml
 <zk>
     <window id="win" title="Hi!" border="normal" width="200px">    
         <caption>        
@@ -93,7 +92,7 @@ and
 <javadoc method="setTop(java.lang.String)">org.zkoss.zul.Window</javadoc>
 based on the entire scrollable area.
 
-``` xml
+```xml
 <window title="My Overlapped" width="300px" mode="overlapped">
 </window>
 ```
@@ -104,7 +103,7 @@ time. You might have multiple overlapped windows and each for different
 set of information. If you want to show the information that will appear
 only temporarily (dismissed as soon as a user clicks somewhere else),
 you could use the popup mode as described in the next section, or the
-[Popup](ZK_Component_Reference/Essential_Components/Popup)
+[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
 component.
 
 ## Popup
@@ -125,7 +124,7 @@ with `parent`.
 For example, we could display a popup window right after a button as
 depicted below.
 
-``` xml
+```xml
 <zk>
     <toolbarbutton label="More info" onClick="info.doPopup()"/><span>
     <window id="info" visible="false" width="120px" border="normal" position="parent">
@@ -136,12 +135,12 @@ depicted below.
 ```
 
 where we specify `position="parent"`, and make it as a child of a
-[span](ZK_Component_Reference/Containers/Span) component. The
+[span]({{site.baseurl}}/zk_component_ref/containers/span) component. The
 span component acts as an anchor point and the window is posited based
 on it.
 
 In additions to popup windows, you could use
-[Popup](ZK_Component_Reference/Essential_Components/Popup)
+[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
 for displaying a popup. The popup component has more control how to
 position it (by the use of
 <javadoc method="open(org.zkoss.zk.ui.Component, java.lang.String)">org.zkoss.zul.Popup</javadoc>).
@@ -161,7 +160,7 @@ tabbing.
 For instance, you could access only the textbox and button in the
 following example:
 
-![](images/Modalwindow.png)
+![](/zk_component_ref/images/Modalwindow.png)
 
 You can have multiple modal windows at the same time, and a user can
 only access the last modal window. Once the last modal is dismissed
@@ -202,13 +201,13 @@ By default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
 process events in an individual thread, such that the event listener
 could suspend the execution at any time, and resume later. For how to
-enable the event processing thread, please refer to [ZK Configuration Reference](ZK_Configuration_Reference/zk.xml/The_system-config_Element#The_disable-event-thread_Element).
+enable the event processing thread, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).
 
 > ------------------------------------------------------------------------
 >
 > Notice that, for better integration with other frameworks, such as
 > Spring, it is suggested to *disable* the event processing thread
-> (default). For more information, please refer to the [Event Threads](ZK_Developer's_Reference/UI_Patterns/Event_Threads)
+> (default). For more information, please refer to the [Event Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
 > section.
 
 Once the event thread is enabled, a modal window will behave differently
@@ -222,7 +221,7 @@ As depicted in the following example, `f1()` is called only after `win1`
 is dismissed, while `g1()` is called immediately right after `win2`
 becomes highlighted:
 
-``` xml
+```xml
 win1.doModal(); //the execution is suspended until win1 is closed
 f1();
 win2.doHighlighted(); //the execution won't be suspended
@@ -255,9 +254,9 @@ You can override it to do whatever you want. Or, you can register your
 own listener to change the default behavior. For example, you might
 choose to hide the window rather than close it.
 
-![](images/10000000000000CE000000546D42136E.png)
+![](/zk_component_ref/images/10000000000000CE000000546D42136E.png)
 
-``` xml
+```xml
 <window closable="true" title="Detach on Close" border="normal" width="200px"
  onClose="self.visible = false; event.stopPropagation();">
      In this example, this window hides itself when the close button is clicked.
@@ -288,9 +287,9 @@ You can customize the look and feel of window's content block by
 specifying the `contentStyle` property
 (<javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>).
 
-![](images/10000000000000CB0000003292CB8174.png)
+![](/zk_component_ref/images/10000000000000CB0000003292CB8174.png)
 
-``` xml
+```xml
 <zk>
     <window title="My Window" border="normal" width="200px" contentStyle="background:yellow">
         Hello, World!
@@ -304,12 +303,12 @@ A typical use of the `contentStyle` attribute is to make a window
 scrollable as follows.
 
 <figure>
-<img src="100000000000009C0000006819656516.png"
+<img src="images/100000000000009C0000006819656516.png"
 title="100000000000009C0000006819656516.png" />
 <figcaption>100000000000009C0000006819656516.png</figcaption>
 </figure>
 
-``` xml
+```xml
 <window id="win" title="Hi" width="150px" height="100px" contentStyle="overflow:auto" border="normal">
      This is a long line wrapped over several lines, and more content to display. 
      Finally, the scrollbar becomes visible.
@@ -334,7 +333,7 @@ position and ignore `left` and `top`.
 For example, the following code snippet positions the window to the
 right-bottom corner.
 
-``` xml
+```xml
 <window width="300px" mode="overlapped" position="right,bottom">
  ...
 ```
@@ -439,7 +438,7 @@ positions mentioned in the previous table.</p></td>
 If you allow users to resize the window, you can set the `sizable`
 attribute to true as follows.
 
-``` xml
+```xml
 <window id="win" title="Sizable Window" border="normal" width="200px" sizable="true">
     This is a sizable window.
     <button label="Change Sizable" onClick="win.sizable = !win.sizable"/>
@@ -466,9 +465,9 @@ specified by the `title` attribute. The caption is specified by
 declaring a child component called `caption`. All children of the
 `caption` component will appear on right hand side of the title.
 
-![](images/10000000000001640000004CEB4969A9.png)
+![](/zk_component_ref/images/10000000000001640000004CEB4969A9.png)
 
-``` xml
+```xml
 <zk>
     <window title="Demo" border="normal" width="350px">
         <caption>
@@ -491,9 +490,9 @@ declaring a child component called `caption`. All children of the
 You are also able to specify a label and an image within a caption, and
 then the appearance is as follows.
 
-![](images/10000000000000CD00000042FABAB4CE.png)
+![](/zk_component_ref/images/10000000000000CD00000042FABAB4CE.png)
 
-``` xml
+```xml
  
 <zk>
     <window id="win" title="Main" border="normal" width="200px">
@@ -514,9 +513,9 @@ then the appearance is as follows.
 The XUL component set supports the following common dialogs to simplify
 some common tasks.
 
-- [Messagebox](ZK_Component_Reference/Supporting_Classes/Messagebox)
-- [Fileupload](ZK_Component_Reference/Essential_Components/Fileupload)
-- [Filedownload](ZK_Component_Reference/Essential_Components/Filedownload)
+- [Messagebox]({{site.baseurl}}/zk_component_ref/supporting_classes/messagebox)
+- [Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload)
+- [Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
 
 # Supported Events
 
@@ -600,7 +599,7 @@ The</p>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

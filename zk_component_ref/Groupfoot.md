@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Groupfoot</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
-- Style Guide: [
-  Groupfoot](ZK_Style_Guide/XUL_Component_Specification/Groupfoot)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -17,9 +16,9 @@ getSclass(): the same as grid's sclass.
 
 # Example
 
-![](images/ZKComRef_Group_Example.png)
+![](/zk_component_ref/images/ZKComRef_Group_Example.png)
 
-``` xml
+```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <zk>
      Grid support Groupfoot in Group
@@ -88,7 +87,7 @@ getSclass(): the same as grid's sclass.
 </table>
 
 - Inherited Supported Events: [
-  Listitem](ZK_Component_Reference/Data/Listbox/Listitem#Supported_Events)
+  Listitem]({{site.baseurl}}/zk_component_ref/data/listbox/listitem#Supported_Events)
 
 # Supported Children
 

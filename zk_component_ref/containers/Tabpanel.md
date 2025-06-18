@@ -46,7 +46,7 @@ The example demonstrates the usage of `tabpanel` within a tabbox and tabpanels i
 
 Try it
 
-* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue%20Compact)
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Children
 

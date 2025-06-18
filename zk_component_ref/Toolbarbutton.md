@@ -3,12 +3,11 @@
 # Toolbarbutton
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
-  [Fileupload](Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
+  [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: <javadoc>org.zkoss.zul.Toolbarbutton</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Toolbarbutton</javadoc>
-- Style Guide: [
-  Toolbarbutton](ZK_Style_Guide/XUL_Component_Specification/Toolbarbutton)
+
 
 # Employment/Purpose
 
@@ -30,15 +29,15 @@ upload a file. In addition to this, the display of the upload status has
 been enhanced and can be customized easily.
 
 See also : [
-Button](ZK_Component_Reference/Essential_Components/Button),
+Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
 [
-Toolbar](ZK_Component_Reference/Essential_Components/Toolbar)
+Toolbar]({{site.baseurl}}/zk_component_ref/essential_components/toolbar)
 
 # Example
 
-![](images/ZKComRef_Toolbarbutton_Example.png)
+![](/zk_component_ref/images/ZKComRef_Toolbarbutton_Example.png)
 
-``` xml
+```xml
 <window title="toolbar demo" border="normal" width="300px">
     <caption>
         <toolbarbutton label="button3" image="/img/network.gif" />
@@ -65,14 +64,14 @@ Toolbar](ZK_Component_Reference/Essential_Components/Toolbar)
 
 {% include version-badge.html version=6.0.0 %}
 
-![](images/Toolbarbutton_togglemode.png)
+![](/zk_component_ref/images/Toolbarbutton_togglemode.png)
 
 In the toggle mode (`mode="toggle"`), the toolbarbutton will display as
 checked after a user clicked it, and will be released after the next
 click. It will fire <javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc>
 when state changed.
 
-``` xml
+```xml
 <window title="Toolbarbutton" border="normal" width="250px" >
     <toolbar >
         <toolbarbutton label="File system" mode="toggle" >
@@ -98,7 +97,7 @@ is:
 1.  Specify the `upload` attribute with true
 2.  Handles the `onUpload` event.
 
-``` xml
+```xml
 <toolbarbutton upload="true" label="Fileupload" onUpload="myProcessUpload(event.getMedia())"/>
 ```
 
@@ -139,7 +138,7 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 </table>
 
 - Inherited Supported Events: [
-  Button](ZK_Component_Reference/Essential_Components/Button#Supported_Events)
+  Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
 
 # Supported Children
 

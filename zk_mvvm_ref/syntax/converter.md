@@ -30,11 +30,11 @@ Example
 =======
 
 #### Use built-in converter named formatedNumber
-``` xml
+```xml
 <label value="@load(item.price) @converter('formatedNumber', format='###,##0.00')"/>
 ```
 
 #### Use custom converter
-``` xml
+```xml
 <label value="@load(vm.selected.totalPrice) @converter(vm.totalPriceConverter)"/>
 ```

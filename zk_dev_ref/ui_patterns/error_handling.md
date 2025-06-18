@@ -33,7 +33,7 @@ wrapped and can be handled using the <exception-type> element directly.
 must extend `ServletException` or `IOException`. So the Web container
 can handle them directly in `doGet` or `doPost` method.
 
-``` xml
+```xml
 <!-- WEB-INF/web.xml -->
 <error-page>
     <exception-type>java.lang.Throwable</exception-type>    
@@ -62,7 +62,7 @@ what happens. These attributes are as follows.
 Then, on the error page, you can display your custom information using
 these attributes. For example:
 
-``` xml
+```xml
 <window title="Error ${requestScope['javax.servlet.error.status_code']}">
     Cause: ${requestScope['javax.servlet.error.message']}    
 </window>
@@ -77,7 +77,7 @@ these attributes. For example:
   or from the [requestScope (implicit
   object)](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)/requestScope).
 
-``` java
+```java
 
 public class ErrorHandlingComposer extends SelectorComposer<Component> {
 
@@ -124,12 +124,12 @@ them to an error handling service that is accessible at that time (not
 part of ZK).
 
 Please check [the list of error
-codes](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_init-crash-script_Element).
+codes]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_init-crash-script_element).
 You can configure both the timeout and the error message presented to
 users with the elements below:
 
-- [<init-crash-script>](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_init-crash-script_Element)
-- [<init-crash-timeout>](ZK_Configuration_Reference/zk.xml/The_client-config_Element/The_init-crash-timeout_Element)
+- [<init-crash-script>]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_init-crash-script_element)
+- [<init-crash-timeout>]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_init-crash-timeout_element)
 
 # Handling Errors Thrown in Event Listeners
 
@@ -140,7 +140,7 @@ indicate the error.
 
 For example, suppose we have the following code:
 
-``` xml
+```xml
 <button label="Cause Error" onClick='throw new NullPointerException("Unknown Value")'/>
 ```
 
@@ -153,10 +153,10 @@ shown.
 
 You can customize the error handling by specifying the error page in
 `WEB-INF/zk.xml` as described in [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_error-page_Element).
+Reference]({{site.baseurl}}/zk_config_ref/the_error-page_element).
 For example,
 
-``` xml
+```xml
 <!-- zk.xml -->
 <error-page>
     <exception-type>java.lang.Throwable</exception-type>    
@@ -200,7 +200,7 @@ e.g. the page URL, `getPage().getRequestPath()`.
 
 For example, you can specify the following content as the error page.
 
-``` xml
+```xml
 <window title="Error ${requestScope['javax.servlet.error.status_code']}"
 width="50%" border="normal" mode="modal" closable="true">
     <vlayout>
@@ -233,7 +233,7 @@ being wrapped:
 
 ## For unchecked:
 
-``` java
+```java
 public class YourException extends java.lang.RuntimeException{...}
 ```
 
@@ -241,13 +241,13 @@ Ref: <http://tracker.zkoss.org/browse/ZK-2638>
 
 ## For checked:
 
-``` java
+```java
 public class YourException extends javax.servlet.ServletException{...}
 ```
 
 or
 
-``` java
+```java
 public class YourException extends java.io.IOException{...}
 ```
 

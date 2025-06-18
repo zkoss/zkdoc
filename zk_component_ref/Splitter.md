@@ -5,13 +5,12 @@
 - Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
 - Java API: <javadoc>org.zkoss.zul.Splitter</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Splitter</javadoc>
-- Style Guide: [
-  Splitter](ZK_Style_Guide/XUL_Component_Specification/Splitter)
+
 
 # Employment/Purpose
 
 (Suggest to use [
-Splitlayout](ZK_Component_Reference/Layouts/Splitlayout))
+Splitlayout]({{site.baseurl}}/zk_component_ref/layouts/splitlayout))
 
 When the splitter is dragged, the sibling components of the splitter are
 resized. If `getCollapse()` is true, a grippy is placed inside the
@@ -19,15 +18,15 @@ splitter, and one sibling component of the splitter is collapsed when
 the grippy is clicked.
 
 This component can only be used inside a [
-Box](ZK_Component_Reference/Layouts/Box), [
-Vbox](ZK_Component_Reference/Layouts/Vbox), or [
-Hbox](ZK_Component_Reference/Layouts/Hbox).
+Box]({{site.baseurl}}/zk_component_ref/layouts/box), [
+Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox), or [
+Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox).
 
 # Example
 
-![](images/ZKComRef_Splitter_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Splitter_Examples.PNG)
 
-``` xml
+```xml
 <hbox spacing="0" >
     <vbox height="200px">
         Column 1-1: The left-top box. To know whether a splitter is collapsed,
@@ -105,7 +104,7 @@ application.
 If you want to change the styling to be more similar to OS's look as
 follows.
 
-![](images/DrSplitterOS.png)
+![](/zk_component_ref/images/DrSplitterOS.png)
 
 You could specify
 <javadoc method="setZclass(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
@@ -115,7 +114,7 @@ is vertical or horizontal.
 Here is an example that switches the styling between the default and
 OS-look:
 
-``` xml
+```xml
 <window>
     <panel title="Splitter" border="normal" width="500px">
         <panelchildren>
@@ -175,7 +174,7 @@ OS-look:
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -198,13 +197,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/splitter_mold_default.png)</td>
+<td>![](/zk_component_ref/images/splitter_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](images/splitter_mold_os.png)</td>
+<td>![](/zk_component_ref/images/splitter_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

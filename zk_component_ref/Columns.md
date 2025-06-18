@@ -6,8 +6,7 @@
   Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: <javadoc>org.zkoss.zul.Columns</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Columns</javadoc>
-- Style Guide: [
-  Columns]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Column)
+
 
 # Employment/Purpose
 
@@ -20,7 +19,7 @@ element.
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
 
-``` xml
+```xml
     <grid>
         <columns sizable="true">
             <column label="Type" hflex="min"/>
@@ -61,7 +60,7 @@ each column.
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
 
-``` xml
+```xml
     <grid>
         <columns menupopup="auto">
             <column label="Author" sort="auto"/>
@@ -75,7 +74,7 @@ each column.
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Columns_Customized_Menu.png)
 
-``` xml
+```xml
 <window title="Column's Menu Demo" border="normal" width="500px">
     <menupopup id="editPopup">
         <menuitem label="Group" image="~./zul/img/grid/menu-group.png"/>
@@ -131,15 +130,15 @@ column provides the auto-fitting feature.
 </table>
 
 - Inherited Supported Events: [
-  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/HeadersElement#Supported_Events)
+  HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
 
 # Supported Children
 
-`*`[` Column`]({{site.baseurl}}/zk_component_ref/Data/Grid/Column)
+`*`[` Column`]({{site.baseurl}}/zk_component_ref/data/grid/column)
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/Data/Grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
 
 # Version History
 

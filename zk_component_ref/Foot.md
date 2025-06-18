@@ -6,20 +6,19 @@
   footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
 - Java API: <javadoc>org.zkoss.zul.Foot</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Foot</javadoc>
-- Style Guide: [
-  Footer](ZK_Style_Guide/XUL_Component_Specification/Footer)
+
 
 # Employment/Purpose
 
 Defines a set of footers ( [
-Footer](ZK_Component_Reference/Data/Grid/Footer)) for a grid
-( [ Grid](ZK_Component_Reference/Data/Grid)).
+Footer]({{site.baseurl}}/zk_component_ref/data/grid/footer)) for a grid
+( [ Grid]({{site.baseurl}}/zk_component_ref/data/grid)).
 
 # Example
 
-![](images/ZKComRef_Foot_Example.png)
+![](/zk_component_ref/images/ZKComRef_Foot_Example.png)
 
-``` xml
+```xml
 <grid width="300px">
     <columns>
         <column label="Type" width="50px"/>
@@ -70,15 +69,15 @@ Footer](ZK_Component_Reference/Data/Grid/Footer)) for a grid
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Footer`](ZK_Component_Reference/Data/Grid/Footer)
+`*`[` Footer`]({{site.baseurl}}/zk_component_ref/data/grid/footer)
 
 # Use Cases
 
-[ Grid](ZK_Component_Reference/Data/Grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
 
 # Version History
 

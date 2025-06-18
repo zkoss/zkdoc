@@ -29,7 +29,7 @@ easily by simply adding a dependency like the following [^1]:
         <version>11.4.7.0-Eval</version>  //this is just an example. Please use the latest version  
     </dependency>
 ```
-If you didn't setup zk maven repository yet, you have to [ setup zk maven repository](ZK_Installation_Guide/Setting_up_IDE/Maven/Use_ZK_Maven_Artifacts/Resolving_ZK_Framework_Artifacts_via_Maven#How_to_Use_ZK_Maven_Repository) as well.
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) as well.
 
 ### Evaluating users (60-days free evaluation)
 
@@ -50,7 +50,7 @@ try the evaluation version.
 
 ### Premium users only
 
-- <span style="color:red">**Notice**</span>: Need [Login authentication](ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Login_authentication)
+- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
 
   
 If you are our customer, please apply for a premium maven account to use
@@ -58,7 +58,7 @@ ZK Premium Maven Repository.
 
 - https://maven.zkoss.org/repo/zk/ee
 
-``` xml
+```xml
 <repositories>
     <repository>
         <id>ZK EE</id>
@@ -78,7 +78,7 @@ settings file.
   - Maven installation root: <u>\$M2_HOME/conf/settings.xml</u> - OR -
   - User's Maven root: <u>\${user.home}/.m2/settings.xml</u>
 
-``` xml
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -98,7 +98,7 @@ settings file.
 
 - Sample of pom.xml for using licensed ZK Charts
 
-``` xml
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -168,7 +168,7 @@ settings file.
 
 You can display ZK Charts version in a zul page with EL:
 
-``` xml
+```xml
 <?import org.zkoss.chart.Version ?>
 
     Charts ${Version.UID}
@@ -177,7 +177,7 @@ You can display ZK Charts version in a zul page with EL:
 To know bundled Highcharts version, evaluate the javascript variable
 below:
 
-``` javascript
+```javascript
 Highcharts.version
 ```
 
@@ -190,7 +190,7 @@ ZK Charts loads a license file from the default path:
 If the license is loaded successfully, you should see some license
 information printed on your application console like:
 
-``` text
+```text
 *** Potix Corporation License Information ***
 
      Licensed Company: test1

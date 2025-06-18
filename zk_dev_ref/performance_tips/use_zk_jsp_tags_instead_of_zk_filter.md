@@ -9,7 +9,7 @@ If some part of UI is made of HTML tags (such as header and banner), you
 could use JSP as the main page, implement the parts with dynamic content
 in ZUL, and then put them together with \<jsp:include\>. For example,
 
-``` xml
+```xml
 <%-- main.jsp --%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -31,7 +31,7 @@ in ZUL, and then put them together with \<jsp:include\>. For example,
 If you prefer to use ZK components directly in a JSP page, you could use
 [ZK JSP tags](http://www.zkoss.org/product/zkjsp). For example,
 
-``` xml
+```xml
 <%-- another.jsp --%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -62,7 +62,7 @@ it.
 The above example is equivalent to the following code snippet, if a ZUL
 page is used,
 
-``` xml
+```xml
 <!-- another.zul -->
 <?page complete="true"?>
 <n:html xmlns="http://www.w3.org/1999/xhtml" xmlns:n="http://www.zkoss.org/2005/zk/native">

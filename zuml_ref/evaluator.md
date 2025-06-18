@@ -17,7 +17,7 @@ attribute. The other is the class attribute.
 For example, if you want to use MVEL[^1], you can specify the name as
 follows.
 
-``` xml
+```xml
  <?evaluator name="mvel"?>
  <window id="w" title="MVEL Demo">
      ${new org.zkoss.zul.Textbox().setParent(w)}
@@ -96,7 +96,7 @@ implement the
 interface. Or, you can specify the following content in
 `metainfo/xel/config.xml`.
 
-``` xml
+```xml
  <config>
      <xel-config>
          <evaluator-name>Super</evaluator-name><!-- case insensitive -->
@@ -117,7 +117,7 @@ The implementation used to evaluate the XEL expressions. In addition to
 the name attribute, you can specify the class directly. For example, you
 can use MVEL by specifying class as follows.
 
-``` xml
+```xml
  <?evaluator class="org.zkoss.zkmax.xel.mvel.MVELFactory"?>
  <window id="w" title="MVEL Demo">
      ${new org.zkoss.zul.Textbox().setParent(w)}
@@ -131,7 +131,7 @@ can use MVEL by specifying class as follows.
 Specifies a list of classes separated with comma to import for
 evaluating the expression in this page. For example, with MVEL:
 
-``` xml
+```xml
  <?evaluator class="org.zkoss.zkmax.xel.mvel.MVELFactory"
  import="org.zkoss.zul.Datebox,org.zkoss.zul.Combobox"?>
  <window id="w" title="MVEL Demo">

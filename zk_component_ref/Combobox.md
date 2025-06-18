@@ -5,8 +5,7 @@
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
 - Java API: <javadoc>org.zkoss.zul.Combobox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Combobox</javadoc>
-- Style Guide: [
-  Combobox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Combobox)
+
 
 # Employment/Purpose
 
@@ -23,7 +22,7 @@ text that is not part of the list of prefilled values.
 
 For the use case of searching and selecting items in a list of options,
 without allowing custom text, refer to the
-[Searchbox]({{site.baseurl}}/zk_component_ref/Input/Searchbox) component
+[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox) component
 instead.
 
 # Examples
@@ -31,12 +30,12 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox]({{site.baseurl}}/zk_component_ref/Input/Searchbox), [
+[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox), [
 Listbox select
-mold]({{site.baseurl}}/zk_component_ref/Data/Listbox#Select_Mold) or [
-Selectbox](ZK_component_reference/essential_components/Selectbox).
+mold]({{site.baseurl}}/zk_component_ref/data/listbox#Select_Mold) or [
+Selectbox](zk_component_ref/essential_components/Selectbox).
 
-``` xml
+```xml
 <style>
 .z-combobox-readonly>input{
     background-color: initial;
@@ -55,7 +54,7 @@ with first-matched, existing items.
 
 Assume you create a combobox like:
 
-``` xml
+```xml
  <combobox>
      <comboitem label="Simple and Rich"/>
      <comboitem label="Cool!"/>
@@ -72,7 +71,7 @@ Be aware that a user still can enter a non-existing item.
 
 ![](/zk_component_ref/images/combobox_onAfterRender.png)
 
-``` xml
+```xml
     <zscript><![CDATA[
         ListModelList model = new ListModelList(Arrays.asList(new String[] { "David",
                 "Thomas", "Steven" }));
@@ -101,7 +100,7 @@ Be aware that a user still can enter a non-existing item.
 By specifying the selection, you can invoke the addSelection() to select
 a default value, For example,
 
-``` xml
+```xml
 <combobox id="combobox" width="100px">
     <attribute name="onCreate"><![CDATA[
         List list2 = new ArrayList();
@@ -126,7 +125,7 @@ The `value` stores the selected \`comboitem\`'s `label` value and
 
 If you select the 1st item:
 
-``` xml
+```xml
         <combobox value="@bind(vm.inputValue)" selectedItem="@bind(vm.selectedValue)" >
             <comboitem label="label 1" value="value1" />
             <comboitem label="label 2" value="value2" />
@@ -146,7 +145,7 @@ list that has the same starting string in a case-insensitive way.
 The straightforward way to implement the autocomplete feature is to
 listen to the onChanging event. For example,
 
-``` xml
+```xml
 <combobox>
   <attribute name="onChanging"><![CDATA[
   self.getChildren().clear(); //remove all children
@@ -180,11 +179,11 @@ ListModel.
 
 For example,
 
-``` xml
+```xml
 <combobox apply="org.zkoss.reference.component.input.MyAutoCompleteComposer"/>
 ```
 
-``` java
+```java
 public class MyAutoCompleteComposer extends SelectorComposer<Component> {
     @Wire("combobox")
     private Combobox combobox;
@@ -235,14 +234,14 @@ might be annoying for experienced users.
 If you prefer the combobox to drop down the list when the user types a
 character, you could specify the autodrop attribute as follows.
 
-``` xml
+```xml
 <combobox autodrop="true"/>
 ```
 
 If you prefer to drop down the list when gaining the focus, you could
 provide a client-side listener as follows.
 
-``` xml
+```xml
 <combobox w:onFocus="this.open()" xmlns:w="client"/>
 ```
 
@@ -251,7 +250,7 @@ provide a client-side listener as follows.
 You are able to add a description to each combo item to make it more
 descriptive or assign an image to every item.
 
-``` xml
+```xml
 <zk>
     <combobox>
         <comboitem label="Simple and Rich"
@@ -282,7 +281,7 @@ drop-down list. To defer the creation of combo items, you can use the
 
 ![](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
 
-``` xml
+```xml
 <zk>
     <combobox fulfill="onOpen">
         <comboitem label="Simple and Rich"/>
@@ -295,7 +294,7 @@ drop-down list. To defer the creation of combo items, you can use the
 Alternatively, you can listen to the `onOpen` event and prepare the
 drop-down list or change it dynamically as demonstrated below.
 
-``` xml
+```xml
 <zk>
     <zscript>
         void prepare() 
@@ -326,7 +325,7 @@ sometimes called auto-complete.
 As illustrated below, you can populate the drop-down list based on what
 user is entering.
 
-``` xml
+```xml
 <zk>
     <zscript>
          void suggest() 
@@ -355,7 +354,7 @@ of the combobox. Instead, you should use the `value` property of the
 ## Constraint
 
 Please see
-[{{site.baseurl}}/zk_component_ref/base_components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/InputElement#Constraint).
+[{{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint).
 
 ## PopupWidth
 
@@ -385,7 +384,7 @@ Combobox button icon.
 # Inherited Functions
 
 Please refer to [
-Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox) for inherited
+Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
 functions.
 
 # Supported Events
@@ -435,7 +434,7 @@ the component is opened.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox#Supported_Events)
+  Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
 
 # Supported Molds
 
@@ -473,7 +472,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/Input/Combobox/Comboitem)
+`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/input/combobox/comboitem)
 
 # Use Cases
 

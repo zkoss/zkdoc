@@ -5,8 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Treefoot</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treefoot</javadoc>
-- Style Guide:
-  [Treefooter](ZK_Style_Guide/XUL_Component_Specification/Treefooter)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ will appear as a footer at the bottom of the tree.
 
 # Example
 
-![](images/ZKComRef_Tree_Example.png)
+![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px" >
     <tree id="tree" rows="5">
         <treecols sizable="true">
@@ -84,15 +83,15 @@ will appear as a footer at the bottom of the tree.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Treefooter`](ZK_Component_Reference/Data/Tree/Treefooter)
+`*`[` Treefooter`]({{site.baseurl}}/zk_component_ref/data/tree/treefooter)
 
 # Use Cases
 
-[ Tree](ZK_Component_Reference/Data/Tree#Use_Cases)
+[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Use_Cases)
 
 # Version History
 

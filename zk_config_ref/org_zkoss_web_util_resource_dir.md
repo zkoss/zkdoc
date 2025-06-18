@@ -37,7 +37,7 @@ For example, assuming that we have a JavaScript package called
 `foo.great` and we want to put it to `WEB-INF/cwr`, we have to specify
 the following in `WEB-INF/zk.xml`:
 
-``` xml
+```xml
     <library-property>
         <name>org.zkoss.web.util.resource.dir</name>
         <value>/WEB-INF/cwr</value>
@@ -78,7 +78,7 @@ purpose).
 
 ## Overriding JavaScript in a ZK JAR
 
-ZK loads the JavaScript file under the [ class path web resource path](ZK_Developer%27s_Reference/UI_Composing/ZUML/Include_a_Page#Classpath_Web_Resource_Path),
+ZK loads the JavaScript file under the [ class path web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
 **`WEB-INF/classes/web/js`**, in a **higher** priority than JavaScript
 files in ZK jar (e.g. zul.jar). So that you can put javascript files
 there to override the JavaScript files in ZK jar under the corresponding

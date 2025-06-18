@@ -30,7 +30,7 @@ defined component directly. Thus, we introduce a special tag called `ui`
 that has a special attribute called `tag` to allow us to specify the
 component's name. For example:
 
-``` xml
+```xml
 <zk:component name="username" inline="true" macroURI="/macro/username.zul">
 ...
 <zk:page>

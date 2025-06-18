@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Area</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Area</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -17,7 +17,7 @@ of the area the user clicked.
 
 # Example
 
-``` xml
+```xml
 <imagemap src="/img/sun.jpg" onClick="alert(event.area)">
     <area id="First" coords="0, 0, 100, 100"/>
     <area id="Second" shape="circle" coords="200, 200, 100"/>
@@ -92,7 +92,7 @@ first one takes precedence.
 </table>
 
 - Inherited Supported Events: [
-  AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/AbstractComponent#Supported_Events)
+  AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
 
 # Supported Children
 

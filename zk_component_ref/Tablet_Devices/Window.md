@@ -3,7 +3,7 @@
 # Window
 
 - Component Reference:
-  [Window](ZK_Component_Reference/Containers/Window)
+  [Window]({{site.baseurl}}/zk_component_ref/containers/window)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -14,11 +14,11 @@ appear. To enable this, please specifiy the contentStyle with
 
 For example,
 
-``` xml
+```xml
 <window contentStyle="overflow:auto">
 ```
 
-![](images/Window_Tablet_Scrolling_Example.png)
+![](/zk_component_ref/images/Window_Tablet_Scrolling_Example.png)
 
 # Version History
 

@@ -10,7 +10,7 @@
 document to another with a [XSTL](http://en.wikipedia.org/wiki/XSLT)
 template.
 
-``` xml
+```xml
  <?page contentType="text/html;charset=UTF-8"?>
  <x:transformer xsl="book.xsl" xmlns:x="xml">
      <book>
@@ -29,7 +29,7 @@ and the element is generated directly.
 
 Then, let us assume the content of `book.xsl` is as follows.
 
-``` xml
+```xml
  <xsl:stylesheet version="1.0"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
      <xsl:template match="/">
@@ -58,7 +58,7 @@ Then, let us assume the content of `book.xsl` is as follows.
 
 Then, the generated XML output will be XHTML as follows.
 
-``` xml
+```xml
 
 <html>
     <head>

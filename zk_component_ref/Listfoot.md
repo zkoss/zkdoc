@@ -5,20 +5,19 @@
 - Demonstration: N/A
 - Java API: <javadoc>org.zkoss.zul.Listfoot</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listfoot</javadoc>
-- Style Guide: [
-  Listfooter](ZK_Style_Guide/XUL_Component_Specification/Listfooter)
+
 
 # Employment/Purpose
 
 Like [
-Listhead](ZK_Component_Reference/Data/Listbox/Listhead), each
+Listhead]({{site.baseurl}}/zk_component_ref/data/listbox/listhead), each
 listbox has at most one `Listfoot`.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
          <listbox id="box">
              <listhead sizable="true">
@@ -71,11 +70,11 @@ listbox has at most one `Listfoot`.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Listfooter`](ZK_Component_Reference/Data/Listbox/Listfooter)
+`*`[` Listfooter`]({{site.baseurl}}/zk_component_ref/data/listbox/listfooter)
 
 # Use Cases
 

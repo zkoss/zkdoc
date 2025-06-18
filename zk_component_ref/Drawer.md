@@ -23,7 +23,7 @@ information into the drawer.
 
 ![](/zk_component_ref/images/ZK-Drawer-Example.gif)
 
-``` xml
+```xml
 <button label="Show File Info" onClick="fi.open()"/>
 <drawer id="fi" title="File information">
   <grid>
@@ -123,7 +123,7 @@ component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

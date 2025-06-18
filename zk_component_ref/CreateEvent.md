@@ -24,7 +24,7 @@ When the data binder processed a collection of data in, say, a grid or a
 listbox, it will detach the original one, and then clone it to represent
 each item of the data. For example,
 
-``` xml
+```xml
 <listbox model="@{person.interests}">
     <listitem self="@{each=obj}" value="@{obj}" onCreate="foo()"/>
 </listbox>
@@ -68,7 +68,7 @@ assumes `this` to be the original component), the event listener shall
 implement <javadoc>org.zkoss.zk.ui.util.ComponentCloneListener</javadoc>
 to clone the listener by itself. For example,
 
-``` java
+```java
 public FooCreateListener implements EventListener, ComponentCloneListener {
   private Listitem _item;
   public FooListener(Listitem item) {
@@ -88,7 +88,7 @@ Instead of implementing
 <javadoc method="getTarget()">org.zkoss.zk.ui.event.Event</javadoc>
 could be easier to make a listener safe to clone.
 
-``` java
+```java
 public FooCreateListener implements EventListener, ComponentCloneListener {
   public void onEvent(Event evt) {
     Listitem item = (Listitem)evt.getTarget();

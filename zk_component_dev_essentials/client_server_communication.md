@@ -23,7 +23,7 @@ The above image demonstrates that the onClear event is sent to the
 server and processed. The code to do is located in the component’s Java
 file *SimpleLabel.java* and is as follows.
 
-``` java
+```java
 public void service(org.zkoss.zk.au.AuRequest request, boolean everError) {
         final String cmd = request.getCommand();
 
@@ -40,7 +40,7 @@ Here the ClearEvent is in fact a completely customized event created for
 the purposes of this component. The event created using its static
 method <mp>getClearEvent</mp> is shown below.
 
-``` java
+```java
 public static final ClearEvent getClearEvent(AuRequest request) {
             final Component comp = request.getComponent();
             final Map data=request.getData();

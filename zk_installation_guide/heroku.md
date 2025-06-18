@@ -8,7 +8,7 @@ have applied for a Heroku account.
 # Deploy ZK Project to Heroku
 
 Heroku **only** allow **Maven Projects**. Follow this
-[guide]({{site.baseurl}}/zk_installation_guide/Setting_up_IDE/Maven/Create_and_Run_ZK_Application_with_Maven_Archetype)
+[guide]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/create_and_run_zk_application_with_maven_archetype)
 to create a ZK-Maven Project. After you have created a ZK-Maven project,
 you can decide to run with either Jetty or Tomcat.
 
@@ -17,7 +17,7 @@ you can decide to run with either Jetty or Tomcat.
 1.  Modify **pom.xml** to add embedded **Jetty** web container for
     running on Heroku.
 
-``` xml
+```xml
 <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-dependency-plugin</artifactId>
@@ -50,7 +50,7 @@ execute the application
 
 </li>
 
-``` bash
+```bash
 web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target/*.war
 ```
 
@@ -61,7 +61,7 @@ web: java $JAVA_OPTS -jar target/dependency/jetty-runner.jar --port $PORT target
 1.  Create **Main.java** in **src/main/java** with package **launch** to
     start embedded Tomcat server.
 
-``` java
+```java
 package launch;
 
 import java.io.File;
@@ -103,7 +103,7 @@ work
 
 b\) Add embedded **Tomcat** web container for running on Heroku.
 
-``` xml
+```xml
 <!-- <packaging>war</packaging> -->
 ...
 <dependency>
@@ -171,7 +171,7 @@ execute the application
 
 </li>
 
-``` bash
+```bash
 web: sh target/bin/webapp
 ```
 
@@ -183,7 +183,7 @@ Once the server is ready, we can deploy to Heroku.
 
 1.  Initialize git repository.
 
-``` bash
+```bash
 cd projectName
 git init
 ```
@@ -196,7 +196,7 @@ repository.
 
 </li>
 
-``` bash
+```bash
 target
 ```
 
@@ -206,7 +206,7 @@ Commit project source code to git repository.
 
 </li>
 
-``` bash
+```bash
 git add .
 git commit -m "CommitMessageNote"
 ```
@@ -218,7 +218,7 @@ random *AppName* that can be changed later:
 
 </li>
 
-``` bash
+```bash
 heroku create --stack cedar
 ```
 
@@ -228,7 +228,7 @@ Deploy the code
 
 </li>
 
-``` bash
+```bash
 git push heroku master
 ```
 
@@ -238,7 +238,7 @@ Rename the *AppName* (Optional)
 
 </li>
 
-``` bash
+```bash
 heroku rename newname
 ```
 
@@ -248,7 +248,7 @@ Visit the application
 
 </li>
 
-``` bash
+```bash
 heroku open
 ```
 
@@ -261,7 +261,7 @@ steps below:
 
 1.  Commit project source code to git repository.
 
-``` bash
+```bash
 git add .
 git commit -m "CommitMessageNote"
 ```
@@ -272,7 +272,7 @@ Deploy the code
 
 </li>
 
-``` bash
+```bash
 git push heroku master
 ```
 
@@ -282,7 +282,7 @@ Visit the changes
 
 </li>
 
-``` bash
+```bash
 heroku open
 ```
 
@@ -290,7 +290,7 @@ heroku open
 
 # Sample
 
-- [Download](http://sourceforge.net/projects/zkforge/files/Small%20Talks/ZK%20Sandbox%20for%20Heroku/)
+- [Download](http://sourceforge.net/projects/zkforge/files/Small_Talks/ZK_Sandbox_for_Heroku/)
   the sample maven project named heroku_zksandbox.zip.
 - Sandbox sample is deployed on Heroku at
   [<http://zksandbox.herokuapp.com/>](http://zksandbox.herokuapp.com/).

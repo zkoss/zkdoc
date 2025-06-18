@@ -7,14 +7,14 @@
 By default, the macro component will wire the UI components to the data
 member automatically based on CSS selectors, as described in [ZK
 Developer's Reference: Wire
-Components]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components).
+Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
 
 If you prefer to wire by the name convention (as
 `org.zkoss.zk.ui.GenericAutowireComposer` does), you
 can specify this library to `true` as follows. Notice that
 wiring-by-name-convention is the default approach taken by ZK 5.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.macro.autowire.convention</name>
         <value>true</value>

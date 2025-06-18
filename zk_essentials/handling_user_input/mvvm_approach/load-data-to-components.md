@@ -14,7 +14,7 @@ displays 2 kinds of data:
 * country list
 
 The ViewModel should look like the following:
-``` java
+```java
 public class ProfileViewModel implements Serializable{
 
     //services
@@ -46,7 +46,7 @@ public class ProfileViewModel implements Serializable{
 ## Initialize a ViewModel
 
 Since the ViewModel is just a POJO, we can initialize its member fields in a constructor.
-``` java
+```java
 public class ProfileViewModel implements Serializable{
 ...
     public ProfileViewModel(){
@@ -74,7 +74,7 @@ The id is like a variable and we access the ViewModel's
 properties by the ID, e.g. `vm.name`. Whilst the full-qualified class name is used to instantiate the ViewModel object itself. So the component that a ViewModel is bound to becomes the **Root View Component** for the ViewModel. All child components of this Root View Component are bound to the same ViewModel and its properties, so we usually bind a page's root component to a ViewModel.
 
 
-``` xml
+```xml
 <window viewModel="@id('vm') @init('org.zkoss.essentials.chapter3.mvvm.ProfileViewModel')"
     border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
 ...
@@ -96,12 +96,12 @@ an attribute and a ViewModel's property is called **property binding**.
 Once the binding is established, ZK will synchronize (load or save)
 data between components and the ViewModel for us automatically.
 
-![ ]({{site.baseurl}}/zk_essentials/images/ze-Mvvm-databinding-role.png)
+![ ]({{site.baseurl}}/zk_essentials/images/ze-mvvm-databinding-role.png)
 
 
 ## Load a User
 For the first row of this form, we want to show the user name, then we can load `User`'s `account` property to a `<label>` `value` attribute with data binding syntax `@Load`:
-``` xml
+```xml
 ...
     <rows>
         <row>
@@ -123,7 +123,7 @@ This form needs a drop-down list that contains a list of countries. When a user 
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-collection.png)
 
 In order to provide a dropdown list, we put a `<listbox>` in a `select` mold.
- ``` xml
+ ```xml
      <cell>
          <listbox mold="select" width="200px">
          </listbox>
@@ -133,7 +133,7 @@ In order to provide a dropdown list, we put a `<listbox>` in a `select` mold.
 ### Load a Data Model
 Our ViewModel already returns a countryList. You might find `getCountryList()` return a `List` instead of a `ListModelList`, but don't worry. ZK will convert it automatically. To make the countryList as a data model of `<listbox>`, we have to bind it at `model` attribute:
 
-``` xml
+```xml
     <cell>
         <listbox model="@load(vm.countryList)" mold="select" width="200px">
         </listbox>
@@ -143,7 +143,7 @@ Our ViewModel already returns a countryList. You might find `getCountryList()` r
 ### Define Listbox Template
 The last part is to define a template, so that `<listbox>` can know how to render its data model with `<listitem>`. If you don't define it, `<listbox>` renders the model with a default built-in template.
 
-``` xml
+```xml
     <cell>
         <listbox model="@load(vm.countryList)" mold="select" width="200px">
             <template name="model">
@@ -153,7 +153,7 @@ The last part is to define a template, so that `<listbox>` can know how to rende
     </cell>
 ...
 ```
-- Line 3: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/MVC/View/Template/Listbox%20Template).
+- Line 3: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](https://www.zkoss.org/wiki/ZK_Developer's_Reference/mvc/View/Template/Listbox_Template).
 -   Line 4: The `each` is an implicit variable that you can use
     without declaration inside `<template>`, and it represents one object of the data model for each iteration when rendering. We use
     this variable with dot notation at component attributes to reference a data object's property . In our example, we just set it at `<listitem>`'s label.

@@ -30,7 +30,7 @@ In the test case below, we perform three different tests;
 
 **MultipleSelectTest**
 
-``` java
+```java
 
     @Test
     public void testAgent() {

@@ -3,7 +3,7 @@
 - Demonstration: [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: <javadoc>org.zkoss.zul.Bandpopup</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandpopup</javadoc>
-- Style Guide: [Bandpopup]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Bandpopup)
+
 
 # Employment/Purpose
 
@@ -17,7 +17,7 @@ component.
 
 ![](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
 
-``` xml
+```xml
    
 <bandbox id="bd">
     <bandpopup>
@@ -72,7 +72,7 @@ component.
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

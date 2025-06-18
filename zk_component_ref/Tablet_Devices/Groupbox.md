@@ -1,7 +1,7 @@
 # Groupbox
 
 - Component Reference:
-  [Groupbox](ZK_Component_Reference/Containers/Groupbox)
+  [Groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Enforce 3D Mold
@@ -16,11 +16,11 @@ appear. To enable this, please specifiy the contentStyle with
 
 For example,
 
-``` xml
+```xml
 <groupbox contentStyle="overflow:auto">
 ```
 
-![](images/Groupbox_Tablet_Scrolling_Example.png)
+![](/zk_component_ref/images/Groupbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

@@ -19,7 +19,7 @@ this event.
 To register this event can resize the layout to fit the whole screen for
 user.
 
-``` xml
+```xml
 <tabbox id="tbx" height="400px" width="600px">
         <attribute name="onClientInfo"><![CDATA[
             ClientInfoEvent oe = (ClientInfoEvent) event;

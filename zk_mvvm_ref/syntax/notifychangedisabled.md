@@ -2,7 +2,7 @@
 
 Syntax
 ======
-``` java
+```java
 @NotifyChangeDisabled
 ```
 
@@ -16,7 +16,7 @@ To disable the default notification when binder sets a property.
 
 Example
 =======
-``` java
+```java
 public class OrderVM {
 
     //other code...

@@ -19,7 +19,7 @@ spring bean configuration file or use Java Config as shown below.
 
 #### Java Config (since 4.0.0)
 
-``` java
+```java
 import org.zkoss.spring.config.ZkScopesConfigurer;
 
 @Configuration
@@ -31,7 +31,7 @@ public class YourApplicationConfiguration {
 
 #### XML Config
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -46,7 +46,7 @@ public class YourApplicationConfiguration {
 
 #### Previous version 3.2 (or earlier)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -66,7 +66,7 @@ your configuration file.
 
 Let's take a look at the main page source
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window title="Custom Scopes Example - Main Page" border="normal" height="100px" width="400px" 
@@ -87,13 +87,13 @@ controller.
 "prototype"-scope. This implies that a new instance is created every
 time you resolve it by name, even in the same page. However you can
 still reference the exact same instance using [ an implicit
-variable](ZK_Developer%27s_Reference/MVC/Controller/Composer#Retrieve_Composer_in_EL_Expressions).
+variable]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer#Retrieve_Composer_in_EL_Expressions).
 
 ### Java
 
 The SimpleMessageBean is set to "desktop"-scope using the `@Scope`.
 
-``` java
+```java
 @Component("msgBean")
 @Scope("desktop")
 public class SimpleMessageBean {
@@ -112,7 +112,7 @@ public class SimpleMessageBean {
 Being a "prototype"-scoped bean the controller can use `@Autowired` to
 get the SimpleMessageBean injected.
 
-``` java
+```java
 @Component("scopedCtrl")
 @Scope("desktop")
 public class ScopedController extends SelectorComposer {
@@ -144,7 +144,7 @@ public class ScopedController extends SelectorComposer {
 The onClick listener of the "Show Window"-button (above line 21-25),
 append "customScopesWindow.zul" (code below) to the current desktop.
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <window title="Custom Scopes Example - Window Page" border="normal" height="100px"

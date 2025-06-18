@@ -13,7 +13,7 @@ a ZUML document.
 
 Example,
 
-``` xml
+```xml
 <zscript language="Java">
 import java.util.*;
 import java.lang.*;

@@ -5,7 +5,7 @@ count the number of desktops, sessions and requests.
 Once implemented, you could register it by specifying the following in
 `WEB-INF/zk.xml` (assume the class is called foo.MyStatistic):
 
-``` xml
+```xml
 <zk>
     <listener>
         <listener-class>foo.MyStatistic</listener-class>

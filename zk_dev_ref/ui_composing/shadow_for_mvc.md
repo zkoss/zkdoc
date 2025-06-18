@@ -14,7 +14,7 @@ sections.
 In the MVC pattern, developers can declare shadow tags in zul files, but
 the behavior is very different without MVVM annotation. For example,
 
-``` xml
+```xml
 <apply template="any" />
 <template name="any">
     ...
@@ -37,7 +37,7 @@ components you can only create in Java code.
 Before using shadow elements, make sure you include the required jar -
 `zuti.jar`. With maven, you should add the dependency below:
 
-``` xml
+```xml
     <dependency>
         <groupId>org.zkoss.zk</groupId>
         <artifactId>zuti</artifactId>
@@ -48,7 +48,7 @@ Before using shadow elements, make sure you include the required jar -
 # Wire Shadow Components
 
 Like wiring a UI component, you can [ wire a shadow
-component](ZK%20Developer's%20Reference/MVC/Controller/Wire%20Components#Shadow_Selectors).
+component](ZK_Developer's_Reference/mvc/Controller/Wire_Components#Shadow_Selectors).
 
 # Use ShadowTemplate
 
@@ -76,7 +76,7 @@ string before setting another.
 
 Assume we have a zul file like this:
 
-``` xml
+```xml
 <zk>
     <div apply="DemoComposer">
         <div id="host1"></div>
@@ -91,7 +91,7 @@ Assume we have a zul file like this:
 
 and in DemoComposer.java
 
-``` java
+```java
 @Wire
 Div host1;
 
@@ -113,7 +113,7 @@ components are attached to `host1`.
 
 If we have a button to change the template:
 
-``` java
+```java
     @Listen("onClick = #btn")
     public void clickBtn() {
         st.setTemplate("othertemplate");
@@ -127,7 +127,7 @@ the new ones. Note: developers have to call `apply(host)` method again.
 If developers want to apply other shadow hosts, please apply null first
 and then reapply like this:
 
-``` java
+```java
 st.apply(null);
 st.apply(otherHost);
 ```
@@ -151,7 +151,7 @@ iterative rendering.
 The basic usage is simple. Here we demonstrate by using the previous
 sample code:
 
-``` xml
+```xml
 <zk>
     <div apply="DemoComposer">
         <div id="host1"></div>
@@ -167,7 +167,7 @@ sample code:
 The `each` in line 6, 7, 8 represents each item in ListModel, and in
 DemoComposer.java
 
-``` java
+```java
 @Wire
 Div host1;
 ListModel model = new ListModelList(Arrays.asList(new String[]{"1", "2", "3"}));
@@ -196,7 +196,7 @@ More advanced usage is to assign
 resolve template by evaluating the variable reference from model in
 runtime.
 
-``` xml
+```xml
 <zk>
     <div id="root" apply="DemoComposer">
         <div id="host1"></div>
@@ -269,7 +269,7 @@ one.
 # Comparison
 
 Although the behavior of ShadowTemplate and [Macro
-component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component)
+component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component)
 looks similar, there are some differences.
 
 |                     | ShadowTemplate                                                                                                                 | Macro Component                                                                     |

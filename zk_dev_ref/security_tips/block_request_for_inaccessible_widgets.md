@@ -9,7 +9,7 @@ unexpected actions. Thus, it is recommended not to create an element if
 it is not supposed to be accessible. For example, the first statement is
 safer than the second one in the following example:
 
-``` xml
+```xml
 <button unless="${accessible}"/>
 <button visible="${accessible}"/>
 ```
@@ -40,7 +40,7 @@ verify access on the server side.
 To apply it to the whole application, just specify the following in
 `zk.xml` as follows:
 
-``` xml
+```xml
 <listener>
     <listener-class>org.zkoss.zkmax.au.InaccessibleWidgetBlockService$DesktopInit</listener-class>
 </listener>
@@ -92,7 +92,7 @@ behavior of
 <javadoc>org.zkoss.zkmax.au.InaccessibleWidgetBlockService</javadoc>.
 For example,
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zkmax.au.IWBS.events</name>
     <value>onClick,onChange,onSelect</value>
@@ -107,7 +107,7 @@ application or for a particular desktop, you can implement the
 unwanted requests. The implementation of `AuService` is straightforward.
 For example, the following example blocks only `onClick` of `Button`:
 
-``` java
+```java
 public class MyBlockService implements org.zkoss.zk.au.AuService {
     public boolean service(AuRequest request, boolean everError) {
         final Component comp = request.getComponent();

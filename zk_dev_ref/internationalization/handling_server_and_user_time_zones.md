@@ -23,8 +23,8 @@ I'll call you at 10 o'clock GMT+0" are usable sentences since they point
 to a frame of reference for time.
 
 Be sure you know how ZK determines its server time zone by reading
-[Internationalization/Time
-Zone]({{site.baseurl}}/zk_dev_ref/Internationalization/Time_Zone).
+[internationalization/Time
+Zone]({{site.baseurl}}/zk_dev_ref/internationalization/time_zone).
 
 # Use of server's time zone
 
@@ -36,7 +36,7 @@ matching point in time in its own time zone. If the server is on GMT+0
 time zone, for example, it will receive Jan 1st 2022, with a time of
 04:00 at GMT+0
 
-![](images/Universal_time_conversion.png)
+![](/zk_dev_ref/images/Universal_time_conversion.png)
 
 In this case, the displayed times of "GMT+0 00:00", "GMT+4 04:00" and
 "GMT+8 08:00" all represent the same point in time. They all convert to
@@ -59,7 +59,7 @@ and time expressed relative to the end-user.
 
 ## Default time of the day selection in ZK Datebox
 
-The [ Datebox](ZK%20Component%20Reference/Input/Datebox) has
+The [ Datebox](ZK_component_reference/Input/Datebox) has
 the ability to provide date selection with or without time-of-day.
 
 Depending on how the Datebox is set up, it can cater to a number of use
@@ -68,7 +68,7 @@ cases.
 This table shows which position in time-of-day (Hours, minutes, seconds)
 will be sent to the server as part of the Date selection.
 
-``` java
+```java
 //does not contain time information
 userInputDatebox.setFormat("yyyy-MM-dd");
 //contains time information
@@ -126,7 +126,7 @@ ZK itself doesn't perform time calculations. As a Java framework, ZK
 will delegate the task of manipulating time to the relevant Java APIs.
 
 ZK can retrieve the client's locale and time zone information [from the
-clientInfoEvent]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_Information_and_Control).
+clientInfoEvent]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_information_and_control).
 
 A common option is to use Java DateFormat to parse and display time in a
 locale-sensitive manner. For most use cases,
@@ -134,7 +134,7 @@ locale-sensitive manner. For most use cases,
 is a good option to transform a date object formatted as server time
 into the user's own time zone.
 
-``` java
+```java
 SimpleDateFormat userSimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"); //creates a SimpleDateFormat formatter
 userSimpleDateFormat.setTimeZone(TimeZone.getTimeZone(clientZoneId)); //Select the time zone in which the Date object should be displayed
 String formattedTimeInUserTimezone = userSimpleDateFormat.format(userInputDatebox.getValue()); //retrieve and parse a Date object
@@ -148,9 +148,9 @@ time zone.
 
 Starting in ZK 9, ZK Components extending
 [DateTimeFormatInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/DateTimeFormatInputElement.html)
-([Datebox](ZK_Component_Reference/Input/Datebox),
-[Timebox](ZK_Component_Reference/Input/Timebox) and
-[Timepicker](ZK_Component_Reference/Input/Timepicker))
+([Datebox]({{site.baseurl}}/zk_component_ref/input/datebox),
+[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox) and
+[Timepicker]({{site.baseurl}}/zk_component_ref/input/timepicker))
 provide the option to retrieve the user input value as:
 
 - [LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html)

@@ -7,7 +7,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.Timepicker</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Timepicker</javadoc>
-- Style Guide: [ Timepicker](ZK_Style_Customization_Guide)
+
 
 # Employment/Purpose
 
@@ -16,9 +16,9 @@ Hour, Minute, and Second are used.
 
 # Example
 
-![](images/ZKCompRef_Timepicker.png)
+![](/zk_component_ref/images/ZKCompRef_Timepicker.png)
 
-``` xml
+```xml
 <timepicker/>
 ```
 
@@ -34,7 +34,7 @@ formatting of the
 
 Below is an example of using *a* within the format.
 
-``` xml
+```xml
 <zk>
     <window title="Test">
         <timepicker format="a hh:mm:ss"/>
@@ -48,7 +48,7 @@ of styling: short, and medium (representing the styling of
 java.text.DateFormat). For example, you could specify the styling rather
 than the real format as follows.
 
-``` xml
+```xml
 <timepicker format="short"/>
 <timepicker format="medium"/>
 ```
@@ -56,14 +56,14 @@ than the real format as follows.
 Then the real format of the timepicker will be decided at run time
 depending the configuration. For more information, please refer to [ZK
 Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/Internationalization/Date_and_Time_Formatting).
+Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 ## Minimum Time
 
 By default, the options of timepicker start at 0:00 AM, you could
 specify another minimum time by using a java.util.Date Object.
 
-``` xml
+```xml
 <zscript>
     import java.util.Date;
     Date min = new Date();
@@ -77,7 +77,7 @@ specify another minimum time by using a java.util.Date Object.
 By default, the options of timepicker end before 12:00 AM, you could
 specify another maximum time by using a java.util.Date Object.
 
-``` xml
+```xml
 <zscript>
     import java.util.Date;
     Date max = new Date();
@@ -91,14 +91,14 @@ specify another maximum time by using a java.util.Date Object.
 By default, the interval of the options in timepicker is one hour, you
 could specify the interval by using an integer (unit: 1 second).
 
-``` xml
+```xml
 <timepicker format="HH:mm a" interval="600" />
 ```
 
 # Inherited Functions
 
 Please refer to [
-FormatInputElement](ZK_Component_Reference/Base_Components/FormatInputElement)
+FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -123,7 +123,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  FormatInputElement](ZK_Component_Reference/Base_Components/FormatInputElement#Supported_Events)
+  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Children
 

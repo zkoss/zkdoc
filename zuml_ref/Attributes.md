@@ -12,14 +12,14 @@ following example, ZK Loader will invoke
 than
 <javadoc method="setMode(java.lang.String)">org.zkoss.zul.Window</javadoc>.
 
-``` xml
+```xml
 <window mode="${foo}">
 ...
 ```
 
 The values of attributes usually consist of EL expressions. For example,
 
-``` xml
+```xml
 <listbox forEach="${matrix}">
     <listitem label="${forEachStatus.previous.each.label}: ${each}" forEach=${each.items}/> <!-- nested-->
 </listbox>
@@ -48,4 +48,4 @@ one-by-one.
 > <references/>
 
 [^1]: For introductory, please refer to [ZK Developer's
-    Reference]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions).
+    Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions).

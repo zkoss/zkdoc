@@ -25,9 +25,9 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-![](images/ZKCompRef_GoldenLayout.png )
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
 
-``` xml
+```xml
     <goldenlayout vflex="1" hflex="1">
         <attribute name="areas">
             A A B
@@ -113,13 +113,13 @@ From the example above, it's possible to divide in two ways.
 <tbody>
 <tr class="odd">
 <td><center>
-![](images/ZKCompRef_GoldenLayout_areas.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png)
 </center></td>
 <td><center>
-![](images/ZKCompRef_GoldenLayout_vertical.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png)
 </center></td>
 <td><center>
-![](images/ZKCompRef_GoldenLayout_horizontal.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png)
 </center></td>
 </tr>
 </tbody>
@@ -136,23 +136,23 @@ in <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>.
 
 north
 
-![](images/ZKCompRef_GoldenLayout_region_north.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_north.png)
 
 east
 
-![](images/ZKCompRef_GoldenLayout_region_east.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_east.png)
 
 south
 
-![](images/ZKCompRef_GoldenLayout_region_south.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_south.png)
 
 west
 
-![](images/ZKCompRef_GoldenLayout_region_west.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_west.png)
 
 stack
 
-![](images/ZKCompRef_GoldenLayout_region_stack.png)
+![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_stack.png)
 
 # Supported Events
 
@@ -176,11 +176,11 @@ stack
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` GoldenPanel`](ZK_Component_Reference/Layouts/GoldenLayout/GoldenPanel)
+`*`[` GoldenPanel`]({{site.baseurl}}/zk_component_ref/layouts/goldenlayout/goldenpanel)
 
 # Version History
 

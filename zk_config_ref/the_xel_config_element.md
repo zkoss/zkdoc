@@ -1,7 +1,7 @@
 The allowed child elements include `evaluator-class`. At most one
 `xel-config` element is allowed for each `zk.xml`.
 
-``` xml
+```xml
  <xel-config>
      <evaluator-class>my.MyExpressionFactory</evaluator-class>
  </xel-config>

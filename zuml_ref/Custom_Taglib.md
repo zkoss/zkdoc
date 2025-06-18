@@ -6,7 +6,7 @@ the function elements. All others are ignored.
 
 Here is an example:
 
-``` xml
+```xml
 <taglib>
     <function>
         <name>browser</name>
@@ -41,7 +41,7 @@ In addition, you could import all public static methods with an element
 called `import`, and the name of EL function will be the same as the
 method name. For example,
 
-``` xml
+```xml
 <import>
     <import-name>Labels</import-name>
     <import-class>org.zkoss.util.resource.Labels</import-class>
@@ -53,7 +53,7 @@ method name. For example,
 The custom taglib document could be specified as follows (assuming you
 have a taglib called `/WEB-INF/tld/foo.tld`):
 
-``` xml
+```xml
 <?taglib uri="/WEB-INF/tld/foo.tld" prefix="f"?>
 ```
 
@@ -64,7 +64,7 @@ in the classpath. For example, you could put it under
 Then, in this file (`config.xml`), you could specify any number of the
 mapping as follows.
 
-``` xml
+```xml
 <config>
     <config-name>myTag</config-name> <!-- required since ZK 8 -->
     <taglib>
@@ -83,7 +83,7 @@ Notice that <taglib-location> must be a path accessible by the classpath
 
 Then, you can declare them in a zul:
 
-``` xml
+```xml
 <?taglib uri="http://www.foo.com/myfirst" prefix="f"?>
 <?taglib uri="http://www.foo.com/mysecond" prefix="s"?>
 ```
@@ -116,7 +116,7 @@ configurations are parsed.
 
 Example,
 
-``` xml
+```xml
 <depends>zk</depends>
 ```
 

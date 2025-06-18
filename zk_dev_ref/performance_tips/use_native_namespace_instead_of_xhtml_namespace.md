@@ -13,7 +13,7 @@ For example, the following code snippet creates five components (one
 <javadoc>org.zkoss.zul.Textbox</javadoc> and two
 <javadoc>org.zkoss.zhtml.Td</javadoc>).
 
-``` xml
+```xml
 <h:table xmlns:h="xhtml">
     <h:tr>
         <h:td>Name</h:td>
@@ -27,7 +27,7 @@ For example, the following code snippet creates five components (one
 On the other hand, the following code snippet won't create components
 for any elements specified with the native space (with prefix `n:`)[^1].
 
-``` xml
+```xml
 <n:table xmlns:n="native">
     <n:tr>
         <n:td>Name</n:td>
@@ -43,7 +43,7 @@ so they have no counterpart at the server. You cannot change their
 states dynamically. For example, the following code snippet is
 incorrect.
 
-``` xml
+```xml
 <n:ul id="x" xmlns:n="native"/>
 <button label="add" onClick="new Li().setParent(x)"/>
 ```
@@ -55,10 +55,10 @@ HTML tags won't contain any ZUL component.
 
 **Notice** that you could create the native components in Java too. For
 more information, please refer to [the native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 section.
 
-``` java
+```java
     HtmlNativeComponent n =
         new HtmlNativeComponent("table", "<tr><td>When:</td><td>", "</td></tr>");
     n.setDynamicProperty("border", "1");
@@ -87,7 +87,7 @@ have to set this attribute to false, since the server does not maintain
 the states of stub-ized components (thus, it cannot be restored when
 attached back).
 
-``` xml
+```xml
 <div>
     <custom-attributes org.zkoss.zk.ui.stub.native="false"/>
     <n:table xmlns:n="native"> <!-- won't be stub-ized -->
@@ -117,4 +117,4 @@ Once set, descendant components unless it was set explicitly.
 [^2]: Non-native components could be stub-ized too by use of
     <javadoc method="setStubonly(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
     For more information, please refer
-    [here]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components).
+    [here]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components).

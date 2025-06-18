@@ -6,7 +6,7 @@ Here's a list of the themes in which you can choose from:
 
 - Default Theme
 
-``` java
+```java
     chart.setTheme(Theme.DEFAULT);
 ```
 
@@ -14,7 +14,7 @@ Here's a list of the themes in which you can choose from:
 
 - Grid Theme
 
-``` java
+```java
     chart.setTheme(Theme.GRID);
 ```
 
@@ -22,7 +22,7 @@ Here's a list of the themes in which you can choose from:
 
 - Skies Theme
 
-``` java
+```java
     chart.setTheme(Theme.SKIES);
 ```
 
@@ -30,7 +30,7 @@ Here's a list of the themes in which you can choose from:
 
 - Gray Theme
 
-``` java
+```java
     chart.setTheme(Theme.GRAY);
 ```
 
@@ -38,7 +38,7 @@ Here's a list of the themes in which you can choose from:
 
 - Dark Blue Theme
 
-``` java
+```java
     chart.setTheme(Theme.DARK_BLUE);
 ```
 
@@ -46,7 +46,7 @@ Here's a list of the themes in which you can choose from:
 
 - Dark Green Theme
 
-``` java
+```java
     chart.setTheme(Theme.DARK_GREEN);
 ```
 
@@ -62,7 +62,7 @@ See all themes at
 The component defines 10 default colors, you can provide a different set
 of colors:
 
-``` java
+```java
     String[] colors = {
             "red",
             "blue",
@@ -85,7 +85,7 @@ of colors:
 
 ## Change a Series Color
 
-``` java
+```java
 charts.getSeries().setColor("#aabbcc"); //change a specific series
 ```
 
@@ -125,7 +125,7 @@ Linear gradient contains attributes `x1`, `y2`, `x2` and `y2` to define
 the start and end position of the gradient. It can be assigned like
 below:
 
-``` java
+```java
     // Create a linear gradient which x1=0, y1=0, x2 = 0, y2=1 with percentages represent values
     LinearGradient linearGradient2 = new LinearGradient(0, 0, 0, 1);
 
@@ -135,7 +135,7 @@ below:
 
 The stop attributes can be assigned as below:
 
-``` java
+```java
    // Same as lineraGradient.addStop(0, "#EEEEEE"); lineraGradient.addStop(1, "#CCCCCC");
     lineraGradient.setsStop("#EEEEEE", "#CCCCCC");
 ```
@@ -143,14 +143,14 @@ The stop attributes can be assigned as below:
 For example, we can apply the linear gradient color to the series as
 below:
 
-``` xml
+```xml
 <div apply="ColorfulColumnChartComposer">
     <charts id="chart" type="column" width="480" 
         height="300" title="Colorful Column Chart"/>
 </div>
 ```
 
-``` java
+```java
 public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -195,7 +195,7 @@ public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
 Radial gradient is similar to linear gradient, but it specifies the
 attributes to define the outermost circle instead of line position:
 
-``` java
+```java
   // cx=0.4, cy=0.3, cr=0.6
   RadialGradient radialGradient = new RadialGradient(0.4, 0.3, 0.6);
   radialGradient.setStops("#EEEEEE", "#CCCCCC");
@@ -203,14 +203,14 @@ attributes to define the outermost circle instead of line position:
 
 For example, here is pacman chart with radial gradient fill:
 
-``` java
+```java
 <div apply="demo.PacmanChartComposer">
     <charts id="chart" type="pie" width="480" 
         height="300" title="Pacman Chart"/>
 </div>
 ```
 
-``` java
+```java
 public class PacmanChartComposer extends SelectorComposer<Div> {
     @Wire
     Charts chart;
@@ -253,7 +253,7 @@ you can enable this feature by
 `chart.getXAxis().getLabels().setUseHTML(true)`. Please refer to the
 example code below for details:
 
-``` java
+```java
 public class HtmlLabelComposer extends SelectorComposer<Component> {
 
     @Wire
@@ -283,7 +283,7 @@ Then, the axis label will become a hyperlink. (see the image below)
 
 # Change Decimal Point or Thousands Separator
 
-``` java
+```java
 public class DrilldownOnDemandComposer implements Composer<Charts> {
 ...
         Lang lang = new Lang();
@@ -303,7 +303,7 @@ Show x / y values in a custom format, e.g. 2000 -\> 2K.
 
 **org.zkoss.zkcharts.essentials.customizing.HtmlLabelComposer**
 
-``` java
+```java
     private void setDatalabelFormatter() {
         JavaScriptValue js = new JavaScriptValue("function(){if ( this.y > 1000 ) return Highcharts.numberFormat( this.y/1000, 1) + \"K\"; \n" +
                 "else \n" +

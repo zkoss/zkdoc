@@ -6,7 +6,7 @@
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: N/A
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -16,7 +16,7 @@ in pure text or HTML.
 # Example
 
 [
-Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
+Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
 
 # Supported Events
 
@@ -40,7 +40,7 @@ Gmaps](ZK_Component_Reference/Diagrams_and_Reports/Gmaps#Example)
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

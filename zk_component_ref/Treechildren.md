@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Treechildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Treechildren</javadoc>
-- Style Guide: [
-  Treechildren](ZK_Style_Guide/XUL_Component_Specification/Treechildren)
+
 
 # Employment/Purpose
 
@@ -20,9 +19,9 @@ the `pageSize`property
 
 # Example
 
-![](images/ZKComRef_Treeitem.png)
+![](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px">
     <tree id="tree" width="90%">
         <treecols sizable="true">
@@ -91,11 +90,11 @@ the `pageSize`property
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Treeitem`](ZK_Component_Reference/Data/Tree/Treeitem)
+`*`[` Treeitem`]({{site.baseurl}}/zk_component_ref/data/tree/treeitem)
 
 # Use Cases
 

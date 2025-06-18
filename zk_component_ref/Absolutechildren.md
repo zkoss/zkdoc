@@ -6,7 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Absolutechildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Absolutechildren</javadoc>
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -19,7 +19,7 @@ absolutely positioned within Absolutelayout component by either setting
 
 ![](/zk_component_ref/images/ZKComRef_Absolutelayout_Example.png)
 
-``` xml
+```xml
 <?component name="window" extends="window" border="normal" width="300px" height="300px"?>
 <zk>
     <absolutelayout>
@@ -64,7 +64,7 @@ absolutely positioned within Absolutelayout component by either setting
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

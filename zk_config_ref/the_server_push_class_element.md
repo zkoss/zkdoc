@@ -10,7 +10,7 @@ implement the
 <javadoc type="interface">org.zkoss.zk.ui.sys.ServerPush</javadoc>
 interface.
 
-``` xml
+```xml
  <device-config>
      <device-type>ajax</device-type>
      <server-push-class>my.ServerPush</server-push-class>
@@ -22,7 +22,7 @@ can choose an implement for a particular class by the use of
 <javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
 For example,
 
-``` java
+```java
 ((DesktopCtrl)desktop).enableServerPush(new org.zkoss.zk.ui.impl.PollingServerPush());
 ```
 

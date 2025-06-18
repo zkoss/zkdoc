@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Panelchildren</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wnd.Panelchildren</javadoc>
-- Style Guide: [
-  Panel](ZK_Style_Guide/XUL_Component_Specification/Panel)
+
 
 # Employment/Purpose
 
@@ -18,9 +17,9 @@ setHeight(String) are read-only.
 
 # Example
 
-![](images/ZKComRef_Panel_Simple_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Panel_Simple_Examples.PNG)
 
-``` xml
+```xml
 <panel height="100px" width="200px" style="margin-bottom:10px"
      title="Panel1" border="normal" maximizable="true"
      collapsible="true">
@@ -54,7 +53,7 @@ setHeight(String) are read-only.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
@@ -62,7 +61,7 @@ setHeight(String) are read-only.
 
 # Use Cases
 
-[ Panel](ZK_Component_Reference/Containers/Panel#Use_Cases)
+[ Panel]({{site.baseurl}}/zk_component_ref/containers/panel#Use_Cases)
 
 # Version History
 

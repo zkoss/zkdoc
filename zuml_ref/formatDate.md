@@ -1,6 +1,6 @@
 The default method:
 
-``` java
+```java
 String formatDate(Date date, String pattern);
 ```
 
@@ -11,7 +11,7 @@ i.e.,
 Formats a Date into a date/time string with the given pattern. For
 example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <zk>
     <zscript>
@@ -29,7 +29,7 @@ Formats a Date into a date/time string with the given pattern, locale,
 timezone, date style, and time style.
 
 You can call it by [
-EL](ZUML%20Reference/EL%20Expressions/Static%20Fields%20and%20Methods)
+EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
 or declaring a [
 xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 

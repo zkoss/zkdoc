@@ -1,6 +1,6 @@
 When a <javadoc>org.zkoss.zul.Grid</javadoc> is assigned with a model, a
 default renderer is assigned too (see [the Model-driven Display
-]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display)).
+]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display)).
 The default renderer will assume that each row has only one column, and
 it converts the data into a string directly[^1]. If you want to display
 multiple columns or retrieve a particular field of the data, you have to
@@ -10,7 +10,7 @@ to handle the rendering and assign it by
 
 For example,
 
-``` java
+```java
 public class FoodGroupRenderer implements RowRenderer, java.io.Serializable {
     public void render(Row row, Object obj, int index) {
         if (row instanceof Group) {
@@ -38,4 +38,4 @@ public class FoodGroupRenderer implements RowRenderer, java.io.Serializable {
 [^1]: If the grid is assigned a template called `model`, then the
     template will be used to render the grid. For more information,
     please refer to [the Grid Template
-    section]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Grid_Template).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/grid_template).

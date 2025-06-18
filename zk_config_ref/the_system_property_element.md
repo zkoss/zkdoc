@@ -1,4 +1,4 @@
-``` xml
+```xml
 <system-property>
     <name>any name</name>
     <value>any value</value>
@@ -8,7 +8,7 @@
 Specifies a system properties with the `system-property` element. The
 above example is equivalent to
 
-``` java
+```java
  System.setProperty("any name", "any value");
 ```
 

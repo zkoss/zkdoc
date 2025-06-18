@@ -14,7 +14,7 @@ specify as many as attributes you want. These attributes can be
 retrieved by the `getAttribute` method of the `Component` interface with
 the specified scope.
 
-``` xml
+```xml
  <custom-attributes cd="${param.cd}" a.b="ab"/>
 ```
 
@@ -27,7 +27,7 @@ not specified and enclosed with a component, the component is the
 default scope. If not specified and not enclosed with a component, the
 default scope is `page` (since 5.0.8). For example,
 
-``` xml
+```xml
 <zk>
     <custom-attributes a="A"/><!-- assign to page's attribute (since 5.0.8) -->
     <button label="show a" onClick='alert(page.getAttribute("a"))'/>
@@ -51,7 +51,7 @@ attribute.
 If you want to specify a list of values, you can specify the `composite`
 attribute with `list` as follows.
 
-``` xml
+```xml
  <custom-attributes simple="apple, ${more}" composite="list"/>
 ```
 
@@ -61,7 +61,7 @@ Then, it is converted to a list with two elements. The first element is
 If you want to specify a map of values, you can specify the `composite`
 attribute with `map` as follows.
 
-``` xml
+```xml
  <custom-attributes simple="juice=apple, flavor=${more}" composite="map"/>
 ```
 

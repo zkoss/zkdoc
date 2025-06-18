@@ -1,4 +1,4 @@
-``` java
+```java
 java.lang.String eatQuot(java.lang.String)
 ```
 
@@ -12,7 +12,7 @@ NOT contain any quotations. It is used to avoid JavaScript injection.
 For exmple, in DSP or JSP pages, the following codes is better to escape
 with this method.
 
-``` xml
+```xml
 <input value="${c:eatQuot(param.some)}"/>
 ```
 

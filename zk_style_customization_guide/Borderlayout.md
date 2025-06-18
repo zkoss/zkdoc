@@ -1,16 +1,16 @@
 # Component Reference
 
 Component Reference: [
-Borderlayout](ZK_Component_Reference/Layouts/Borderlayout), [
-North](ZK_Component_Reference/Layouts/Borderlayout/North), [
-South](ZK_Component_Reference/Layouts/Borderlayout/South), [
-Center](ZK_Component_Reference/Layouts/Borderlayout/Center),
-[ West](ZK_Component_Reference/Layouts/Borderlayout/West), [
-East](ZK_Component_Reference/Layouts/Borderlayout/East)
+Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout), [
+North]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north), [
+South]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/south), [
+Center]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/center),
+[ West]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/west), [
+East]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/east)
 
 # DOM Structure
 
-``` html
+```html
 <div class="z-borderlayout">
     <!-- North -->
     <div>
@@ -96,7 +96,7 @@ East](ZK_Component_Reference/Layouts/Borderlayout/East)
 Basically, LESS source is correspondent to its DOM structure. North,
 South, East and West have different styles.
 
-``` css
+```css
 /* borderlayout and it's icon */
 .z-borderlayout {
     &-icon {}
@@ -148,7 +148,7 @@ and Splitter component.
 ### Setup environment and Analyze design
 
 - Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component)
+  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color for Borderlayout (include North, South, East, West, and
@@ -195,7 +195,7 @@ and Splitter component.
 
 - Modify **Borderlayout Icon** color and size.
 
-``` css
+```css
 .z-borderlayout {
     /* omitted */
 
@@ -219,7 +219,7 @@ and Splitter component.
 - Modify **Borderlayout Title** (North, South, East, West and Center)
   color and size.
 
-``` css
+```css
 .z-north,
 .z-south,
 .z-west,
@@ -255,7 +255,7 @@ and Splitter component.
 - Modify **Splitter** (North, South, East, West and Center) color and
   size.
 
-``` css
+```css
 .z-east,
 .z-west,
 .z-north,
@@ -314,7 +314,7 @@ CSS. However, it can still be customized by
 <javadoc method="setCmargins(java.lang.String)">org.zkoss.zul.LayoutRegion</javadoc>
 like the following.
 
-``` xml
+```xml
 <borderlayout width="600px" height="400px">
     <east title="East" size="20%" collapsible="true" splittable="true" cmargins="0, 3, 0, 0">
     </east>

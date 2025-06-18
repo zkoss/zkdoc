@@ -12,7 +12,7 @@ content. Notice that, if specified, the CSS file is always loaded.
 
 Example,
 
-``` xml
+```xml
 <stylesheet href="~./zul/css/zk.wcs" type="text/css"/>
 ```
 

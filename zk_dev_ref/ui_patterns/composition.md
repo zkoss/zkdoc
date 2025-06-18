@@ -23,7 +23,7 @@ ZUML page.
 A template document is a ZUML document that defines how to assemble the
 fragments. For example,
 
-``` xml
+```xml
 <!-- /WEB-INF/layout/template.zul -->
 <vbox>
   <hbox self="@insert(content)"/>
@@ -46,7 +46,7 @@ define a collection of fragments that a template might use, and then
 specify <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as one of
 the initiators of the document:
 
-``` xml
+```xml
 <!-- foo/index.zul -->
 <?init class="org.zkoss.zk.ui.util.Composition"
 arg0="/WEB-INF/layout/template.zul"?>
@@ -72,7 +72,7 @@ example), <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> will:
 
 Thus, here is the result
 
-``` xml
+```xml
 <vbox>
   <hbox>
     <window title="window1" width="100px"/>
@@ -88,7 +88,7 @@ Thus, here is the result
 
 You could apply multiple templates to a single page too:
 
-``` xml
+```xml
 <?init class="org.zkoss.zk.ui.util.Composition"
 arg0="/WEB-INF/layout/template0.zul" arg1="/WEB-INF/layout/template1.zul"?>
 ```
@@ -102,10 +102,10 @@ In a complex templating environment, it might not be appropriate to put
 fragments in the target page (e.g., `foo/index.zul` in the above
 example), since you might want to use the same collection of fragments
 in several target pages. It can be easily by use of [the include
-component]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
+component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 as follows.
 
-``` xml
+```xml
 <!-- foo/index.zul -->
 <?init class="org.zkoss.zk.ui.util.Composition"
 arg0="/WEB-INF/layout/template.zul"?>
@@ -115,7 +115,7 @@ arg0="/WEB-INF/layout/template.zul"?>
 Then, you could group fragments into one or multiple individual ZUL
 documents, such as
 
-``` xml
+```xml
 <!-- /WEB-INF/layout/fragments.zul -->
 <zk>
   <window self="@define(content)" title="window1" width="100px"/>
@@ -129,20 +129,20 @@ documents, such as
 If you want to use <javadoc>org.zkoss.zk.ui.util.Composition</javadoc>
 inside any of the containers (like Div, Window, Tabbox), you have to use
 [the include
-component]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include)
+component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 and set its mode *Defer* :  
 **Note**: You have to specify
 <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as of the initiators
 of the 'fragments')
 
-``` xml
+```xml
 <!-- foo/index.zul -->
 <window title="This is a window" border="normal">
   <include src="/WEB-INF/layout/fragments.zul" mode="defer" />
 </window>
 ```
 
-``` xml
+```xml
 <!-- /WEB-INF/layout/fragments.zul -->
 <?init class="org.zkoss.zk.ui.util.Composition" arg0="/WEB-INF/layout/template.zul"?>
 <zk>

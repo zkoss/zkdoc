@@ -1,4 +1,4 @@
-``` java
+```java
 java.util.Locale getCurrentLocale();
 ```
 

@@ -8,13 +8,13 @@ evaluation repository.
 If you use maven in a command line console, you need to specify ZK
 archetype catalog URL to generate your project. Please refer to [ Create
 a Maven Project with a Command Line
-Interface](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
+Interface]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
 
 If you use eclipse, you can add the catalog URL via Window / Preferences
 / Maven / Archetypes, please refer to [ZK Installation Guide/Quick
 Start/Create and Run Your First ZK Application with Eclipse and
 Maven#Add ZK Maven
-Archetype](ZK_Installation_Guide/Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven#Add_ZK_Maven_Archetype)
+Archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)
 
 # Adding ZK Spring Dependencies
 
@@ -29,7 +29,7 @@ For ZK **8+** or above, you should use **4.0.0** or above.
 
 **Required for both modules**
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zkplus</artifactId>
@@ -39,7 +39,7 @@ For ZK **8+** or above, you should use **4.0.0** or above.
 
 **ZK Spring Core**
 
-``` xml
+```xml
 
 <dependency>
     <groupId>org.zkoss.zk</groupId>
@@ -53,7 +53,7 @@ repository](https://mavensync.zkoss.org/maven2/org/zkoss/zk/zkspring-core/).
 
 **ZK Spring Security**
 
-``` xml
+```xml
 <dependency>
     <groupId>org.zkoss.zk</groupId>
     <artifactId>zkspring-security</artifactId>
@@ -80,7 +80,7 @@ You need to declare Spring `ContextLoaderListener` in the `web.xml` file
 to be able to declare and register your Spring beans with Spring
 framework.
 
-``` xml
+```xml
 <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 </listener>

@@ -42,7 +42,7 @@ The example below demonstrates the usage of the `tabpanels` component within a `
 
 Try it
 
-* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue%20Compact)
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Supported Children

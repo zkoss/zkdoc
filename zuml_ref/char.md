@@ -1,4 +1,4 @@
-``` java
+```java
 char char(Object value);
 ```
 

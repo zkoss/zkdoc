@@ -124,7 +124,7 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-
 <td><p>x</p></td>
 <td><p>onBind</p></td>
 <td><p>handle it by registering a listener according to <a
-href="https://www.zkoss.org/wiki/ZK_Client-side_Reference/General_Control/Event_Listening">Event
+href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
 Listening</a> ZK fires it in afterMount, starting from the inner-most
 child then its parent, and so on.</p></td>
 </tr>
@@ -132,7 +132,7 @@ child then its parent, and so on.</p></td>
 <td><p>x</p></td>
 <td><p>onSize</p></td>
 <td><p>handle it by registering a listener according to <a
-href="https://www.zkoss.org/wiki/ZK_Client-side_Reference/General_Control/Event_Listening">Event
+href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
 Listening</a> ZK fires it when you resize a widget and propagates this
 event to its children.</p></td>
 </tr>
@@ -140,7 +140,7 @@ event to its children.</p></td>
 <td><p>x</p></td>
 <td><p>onAfterSize</p></td>
 <td><p>handle it by registering a listener according to <a
-href="https://www.zkoss.org/wiki/ZK_Client-side_Reference/General_Control/Event_Listening">Event
+href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
 Listening</a> ZK fires it when each time ZK completes
 rendering/re-rendering a widget and propagates this event to its
 children.</p></td>
@@ -149,7 +149,7 @@ children.</p></td>
 <td><p>x</p></td>
 <td><p>onUnbind</p></td>
 <td><p>handle it by registering a listener according to <a
-href="https://www.zkoss.org/wiki/ZK_Client-side_Reference/General_Control/Event_Listening">Event
+href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
 Listening</a> ZK fires it when ZK removes a widget from a page.</p></td>
 </tr>
 </tbody>
@@ -158,7 +158,7 @@ Listening</a> ZK fires it when ZK removes a widget from a page.</p></td>
 Events that can be handled by overriding a method
 
 Please read
-[ZK_Client-side_Reference/General_Control/Event_Listening](ZK_Client-side_Reference/General_Control/Event_Listening)
+[{{site.baseurl}}/zk_client_side_ref/general_control/event_listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
 for listening to widget events.
 
 ## Listen by Overriding a Method
@@ -166,7 +166,7 @@ for listening to widget events.
 Thus, the simplest way to listen a DOM event is to override the
 corresponding method. For example,
 
-``` javascript
+```javascript
 doMouseDown_: function (evt) {
     //do whatever you want
     this.$supers('doMouseDown_', arguments); //invoke parent.fireX() and so on
@@ -184,7 +184,7 @@ original DOM element can be found by the use of
 If you want to listen and disable the default behavior, just not to call
 the super class:
 
-``` javascript
+```javascript
 doClick_: function (evt) {
     this.fireX(evt);
     //don't call this.$supers to avoid the event propagation
@@ -193,7 +193,7 @@ doClick_: function (evt) {
 
 **Note** that this approach is suggested for better performance since no
 real DOM-level event registration is required (as described in [the next
-section](ZK_Client-side_Reference/Notifications/DOM_Events)).
+section]({{site.baseurl}}/zk_client_side_ref/notifications/dom_events)).
 
 ## Event Propgation
 
@@ -237,7 +237,7 @@ happens. This is also known as capturing. It can be done by setting
 <javadoc method="mouseCapture" directory="jsdoc">\_global\_.zk</javadoc>
 as follows.
 
-``` javascript
+```javascript
 doMouseDown_: function () {
     zk.mouseCapture = this;
     this.$supers('doMouseDown_', arguments);
@@ -259,7 +259,7 @@ happens. It is also known as capturing. It can be done by setting
 <javadoc method="keyCapture" directory="jsdoc">\_global\_.zk</javadoc>
 as follows.
 
-``` javascript
+```javascript
 doKeyDown_: function () {
     zk.keyCapture = this;
     this.$supers('doKeyDown_', arguments);
@@ -284,7 +284,7 @@ described in the previous subsections.
 
 The signature of an event listener is as follows.
 
-``` javascript
+```javascript
 function (event) { //an instance of zk.Event
 }
 ```
@@ -307,7 +307,7 @@ server by invoking
 <javadoc method="stop(_global_.Map)" directory="jsdoc">zk.Event</javadoc>
 with `{au:true}`, such as
 
-``` javascript
+```javascript
 evt.stop({au: true});
 ```
 
@@ -316,9 +316,9 @@ evt.stop({au: true});
 > <references/>
 
 [^1]: For more information, please refer to the [AU
-    Requests](ZK_Client-side_Reference/Communication/AU_Requests)
+    Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
     section.
 
 [^2]: For more information, please refer to the [AU
-    Requests](ZK_Client-side_Reference/Communication/AU_Requests)
+    Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
     section.

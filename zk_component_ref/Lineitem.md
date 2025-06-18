@@ -49,9 +49,9 @@ is vertical / top when it is horizontal). The default value is false.
 Once the first child is displayed in the first or last area, the second
 child will be displayed in the other area.
 
-![](images/Lineitem-opposite.png)
+![](/zk_component_ref/images/Lineitem-opposite.png)
 
-``` xml
+```xml
  
 <zk>
     <linelayout height="400px">

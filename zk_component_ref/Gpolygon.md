@@ -6,7 +6,7 @@
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 # Employment/Purpose
 
@@ -15,9 +15,9 @@ points, visible zoom level(0~3), and fill color, etc..
 
 # Example
 
-![](images/ZKComRef_Gpolygon_Example.png)
+![](/zk_component_ref/images/ZKComRef_Gpolygon_Example.png)
 
-``` xml
+```xml
     <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>
     <gmaps id="mymap" width="500px" height="300px" showSmallCtrl="true">
         <gpolygon path="37.42838786,-122.13998795,
@@ -34,7 +34,7 @@ points, visible zoom level(0~3), and fill color, etc..
 {% include version-badge.html version=3.3.0 %}
 
 see: [ Gpolyline -
-Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline#Disable_Path_Encoding)
+Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Disable_Path_Encoding)
 
 # Supported Events
 
@@ -58,7 +58,7 @@ Disable_Path_Encoding](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyli
 </table>
 
 - Inherited Supported Events: [
-  Gpolyline](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline#Supported_Events)
+  Gpolyline]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline#Supported_Events)
 
 # Supported Children
 

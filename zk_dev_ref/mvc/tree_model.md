@@ -4,7 +4,7 @@ Here we describe how to implement a tree model
 (<javadoc type="interface">org.zkoss.zul.TreeModel</javadoc>). You shall
 understand the interaction among a component, a model, and a renderer,
 please refer to [the Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 # Choose a Proper Model Class
 
@@ -40,7 +40,7 @@ before it is displayed.
 For example, suppose we want to show a tree of file information, and the
 file information is stored as `FileInfo`:
 
-``` java
+```java
 public class FileInfo {
     public final String path;
     public final String description;
@@ -54,7 +54,7 @@ public class FileInfo {
 Then, we can create a tree of file information with
 <javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> as follows:
 
-``` java
+```java
 TreeModel model = new DefaultTreeModel(
   new DefaultTreeNode(null,
     new DefaultTreeNode[] {
@@ -75,7 +75,7 @@ TreeModel model = new DefaultTreeModel(
 
 Here, we render `FileInfo` in a custom renderer:
 
-``` java
+```java
 import org.zkoss.zul.*;
 public class FileInfoRenderer implements TreeitemRenderer<DefaultTreeNode<FileInfo>> {
     public void render(Treeitem item, DefaultTreeNode<FileInfo> data, int index) throws Exception {
@@ -90,7 +90,7 @@ public class FileInfoRenderer implements TreeitemRenderer<DefaultTreeNode<FileIn
 
 Next, bind them together in a composer:
 
-``` java
+```java
 public class FileInfoTreeController extends SelectorComposer {
     @Wire
     private Tree tree;
@@ -106,7 +106,7 @@ public class FileInfoTreeController extends SelectorComposer {
 
 Then, we can put them together in a ZUML document:
 
-``` xml
+```xml
 <div apply="org.zkoss.reference.developer.mvc.model.FileInfoTreeController">
     <tree id="tree">
         <treecols>
@@ -119,7 +119,7 @@ Then, we can put them together in a ZUML document:
 
 Then, the result:
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTreeModel2.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drtreemodel2.png)
 
 Notice that you can manipulate the tree dynamically (such as adding a
 node with
@@ -137,7 +137,7 @@ setData(), removeFromParent()).
 To demonstrate the example, first we add create, update and delete
 buttons in a .zul:
 
-``` xml
+```xml
 <tree id="tree">
 ...
 </tree>
@@ -180,7 +180,7 @@ that can manipulate the tree dynamically.
 Here we register onClick event to create Button in
 `foo.FileInfoTreeController`:
 
-``` java
+```java
 //wire components as member fields
 private Textbox pathTbx;
 private Textbox descriptionTbx;
@@ -235,7 +235,7 @@ that can delete the selected tree item from its parent node.
 Here we register onClick event to update and delete Button in
 `foo.FileInfoTreeController`:
 
-``` java
+```java
 //register onClick event for updating edited data in tree model
 public void onClick$update() {
     Treeitem selectedTreeItem = treeGrid.getSelectedItem();
@@ -268,7 +268,7 @@ public void onClick$delete() {
 For updating tree node data, we have to modify `render()` of
 `foo.FileInfoRenderer`:
 
-``` java
+```java
 public void render(Treeitem item, DefaultTreeNode<FileInfo> data, int index) throws Exception {
     FileInfo fi = data.getData();
     if (tr == null) {
@@ -297,7 +297,7 @@ child directly if it is in the cache.
 
 For example (pseudo code):
 
-``` java
+```java
 public class MyModel extends AbstractTreeModel<Object> {
     public Object getChild(Object parent, int index) {
         Object[] children = _cache.get(parent); //assume you have a cache for children of a given node
@@ -335,7 +335,7 @@ consume more memory.
 Here is a simple example, which generates a 4-level tree and each branch
 has 5 children:
 
-``` java
+```java
 package foo;
 public class LoadOnDemandModel extends AbstractTreeModel<Object> {
     public LoadOnDemandModel() {
@@ -365,7 +365,7 @@ public class LoadOnDemandModel extends AbstractTreeModel<Object> {
 
 Then, we assign this model to a tree:
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
 <tree model="${c:new('org.zkoss.reference.developer.mvc.model.LoadOnDemandModel')}">
     <treecols>
@@ -376,7 +376,7 @@ Then, we assign this model to a tree:
 
 And, the result looks like this:
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTreeModel1.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drtreemodel1.png)
 
 # Sorting
 
@@ -391,7 +391,7 @@ will be called.
 
 For example, (pseudo code)
 
-``` java
+```java
 public class FooModel extends AbstractTreeModel implements Sortable {
     public void sort(Comparator cmpr, final boolean ascending) {
         sortData(cmpr); //sort your data here
@@ -462,7 +462,7 @@ is a simple example to change "selectable" items.
 Please note that if your data model is much larger, you may implement on
 it your own to get rid of the performance impact.
 
-``` java
+```java
 model.setSelectionControl(new AbstractTreeModel.DefaultSelectionControl(model) {
     public boolean isSelectable(Object e) {
         int i = model.indexOf(e);
@@ -512,7 +512,7 @@ The <javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> has 2 constructors:
 ZK renders a rotating triangle to expand/collapse a node in front of a
 branch node, but a leaf node doesn't have that triangle.
 
-![]({{site.baseurl}}/zk_dev_ref/images/leafBranch.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/leafbranch.jpg)
 
 If you want to display a leaf node, you should use
 `DefaultTreeNode(data)`, otherwise even if you provide a zero-size list
@@ -524,7 +524,7 @@ expand the node, it shows nothing. It might confuse users.
 the 2nd boolean argument to determine whether to render a branch node
 without children as a leaf node.
 
-``` java
+```java
 DefaultTreeModel model2 = new DefaultTreeModel(root, true);
 ```
 

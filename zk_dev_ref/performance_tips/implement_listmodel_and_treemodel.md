@@ -11,7 +11,7 @@ extend the correct abstract model type. For a ListModel extend from
 extend <javadoc>org.zkoss.zul.AbstractGroupsModel</javadoc> and for a
 TreeModel extend <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> as
 described in [the Model
-section]({{site.baseurl}}/zk_dev_ref/MVC/Model). To implement a
+section]({{site.baseurl}}/zk_dev_ref/mvc/model). To implement a
 model that supports sorting, you have to implement
 <javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> too. Each
 time a user requires sorting,
@@ -21,7 +21,7 @@ re-generates the SQL statement accordingly.
 
 Here is some pseudocode for a custom ListModel:
 
-``` java
+```java
 public class FooListModel extends AbstractListModel implements Sortable {
     private int _size = -1;
     private Object[] _cache;
@@ -91,7 +91,7 @@ might be called multiple times.
 Here is some pseudo for a custom TreeModel which renders an Apache
 Commons VFS FileObject to be able to browse a filesystem:
 
-``` java
+```java
 public class VfsTreeModel extends AbstractTreeModel<FileObject> {
     public VfsTreeModel(FileObject root){
         super(root);
@@ -174,9 +174,9 @@ where possible with a suitable eviction strategy.
 
 For a real example, please refer to [Small Talk: Handling sortable huge
 data using
-ZK](Small_Talks/2011/March/Handling_sortable_huge_data_using_ZK)
+ZK](https://www.zkoss.org/wiki/Small_Talks/2011/March/Handling_sortable_huge_data_using_ZK)
 and/or [Small Talk: Handling huge data using
-ZK](Small_Talks/2009/July/Handling_huge_data_using_ZK).
+ZK](https://www.zkoss.org/wiki/Small_Talks/2009/July/Handling_huge_data_using_ZK).
 
 # Version History
 

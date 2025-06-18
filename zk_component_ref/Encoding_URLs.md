@@ -5,14 +5,14 @@ means, unlike XUL, it doesn't prefix the servlet context path to
 attributes for specifying URL. For example, the following codes will not
 work (unless the servlet context is "").
 
-``` xml
+```xml
  <img href="/my/good.png"/>
 ```
 
 Instead, you should use the <mp>encodeURL</mp> function in EL
 expressions as follows.
 
-``` xml
+```xml
  <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="p"?>
  ...
  <img href="${p:encodeURL('/my/good.png')}"/>
@@ -21,7 +21,7 @@ expressions as follows.
 In Java, you should use the method,
 <javadoc method="encodeURL(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>.
 
-``` xml
+```xml
  <img id="another"/>
  <zscript>
    another.setDynamicAttribute("href",

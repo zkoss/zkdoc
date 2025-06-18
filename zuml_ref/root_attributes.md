@@ -10,13 +10,13 @@ is the `html` tag. In other words, the attributes specified in the
 `root-attribute` directives will become the attributes of the `html`
 element of the generated output. For example,
 
-``` xml
+```xml
  <?root-attributes xmlns:v="urn:schemas-microsoft-com:vml"?>
 ```
 
 will cause the HTML output to be generated with the following snippet
 
-``` xml
+```xml
  <html xmlns="[http://www.w3.org/1999/xhtml http://www.w3.org/1999/xhtml]"
  xmlns:v="urn:schemas-microsoft-com:vml">
 ```

@@ -17,7 +17,7 @@ Notice that these header directives are effective only for the main ZUL
 page. In other words, they are ignored if a page is included by another
 page or servlets. Also, they are ignored if the page is a `zhtml` file.
 
-``` xml
+```xml
 <?link rel="alternate" type="application/rss+xml" title="RSS feed"
   href="/rssfeed.php"?>
 <?link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"?>
@@ -31,7 +31,7 @@ page or servlets. Also, they are ignored if the page is a `zhtml` file.
 # Alternatives
 
 In addition, you could use [ Script
-component](ZK_Component_Reference/Essential_Components/Script)
+component]({{site.baseurl}}/zk_component_ref/essential_components/script)
 to embed JavaScript code. The Script component supports more features
 such as defer, but it has some memory footprint on the server (since it
 is a component).

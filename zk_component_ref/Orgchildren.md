@@ -18,7 +18,7 @@ children.
 
 # Example
 
-![](images/Orgchildren_example.png)
+![](/zk_component_ref/images/Orgchildren_example.png)
 
         <organigram width="600px">
             <orgchildren>
@@ -57,11 +57,11 @@ children.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Orgitem`](ZK_Component_Reference/Layouts/Organigram/Orgitem)
+`*`[` Orgitem`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgitem)
 
 # Version History
 

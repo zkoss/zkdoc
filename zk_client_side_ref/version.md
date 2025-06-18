@@ -21,7 +21,7 @@ The specified class, if any, must have a static field called `UID`. ZK
 will compare its value with the version specified in \<version-uid\>.
 For example,
 
-``` java
+```java
 package foo;
 public class MyAddon {
     public static final String UID = "1.0.3";
@@ -30,7 +30,7 @@ public class MyAddon {
 
 Then, you could specify it as follows.
 
-``` xml
+```xml
 <version>
     <version-class>foo.MyAddon</version-class>
     <version-uid>1.0.3</version-uid>

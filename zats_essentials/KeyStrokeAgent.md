@@ -7,11 +7,11 @@
 **All components that inherit `HtmlBasedComponent` supports this
 operation**. When calling `stroke()`, you have to provide special string
 for control keys. Please refer to
-[Keystroke Handling in Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/Keystroke_Handling).
+[Keystroke Handling in Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).
 
 For example, **^#left** means *Ctrl+Left*, and **@#f3** means *Alt+F3*.
 
-``` java
+```java
 
 component.as(KeyStrokeAgent.class).stroke("$#left");
 ```

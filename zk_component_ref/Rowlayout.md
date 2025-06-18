@@ -5,8 +5,7 @@
 - Java API: <javadoc>org.zkoss.zkmax.zul.RowLayout</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.RowLayout</javadoc>
-- Style Guide: [
-  RowLayout](ZK_Style_Guide/XUL_Component_Specification)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -19,7 +18,7 @@ skip columns for extra space without inserting space-inducing elements.
 The following diagram illustrates the rowlayout/rowchildren components
 and their various configurable parameters.
 
-![](images/ZKComRef_Rowlayout.PNG )
+![](/zk_component_ref/images/ZKComRef_Rowlayout.PNG )
 
 # Example
 
@@ -36,7 +35,7 @@ columns to skip ahead.
 
 ## Equally Divided
 
-``` xml
+```xml
     <rowlayout ncols="12">
         <forEach begin="1" end="3">
             <rowchildren colspan="4" style="background-color: skyblue">
@@ -48,7 +47,7 @@ columns to skip ahead.
 
 ## Position Offset
 
-``` xml
+```xml
     <rowlayout ncols="12">
         <rowchildren colspan="4" style="background-color: skyblue" offset="2">
             offset 2 columns
@@ -58,7 +57,7 @@ columns to skip ahead.
 
 ## Column Spacing
 
-``` xml
+```xml
     <rowlayout ncols="12" spacing="100%">
         <forEach begin="1" end="3">
             <rowchildren colspan="4" style="background-color: skyblue">
@@ -93,11 +92,11 @@ center](rowlayout-examples.png " center")
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Rowchildren`](ZK_Component_Reference/Layouts/Rowlayout/Rowchildren)
+`*`[` Rowchildren`]({{site.baseurl}}/zk_component_ref/layouts/rowlayout/rowchildren)
 
 # Use Cases
 

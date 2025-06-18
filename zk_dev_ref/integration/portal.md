@@ -3,7 +3,7 @@
 Here we describe the standard configuration. Depending on the portal
 server, you might have more than one configuration to set. For more
 information, please refer to [ZK Installation
-Guide](ZK_Installation_Guide/Setting_up_Servers).
+Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).
 
 ## WEB-INF/portlet.xml
 
@@ -12,7 +12,7 @@ To use it, you first have to add the following portlet definition for
 `WEB-INF/portlet.xml`. Notice that `expiration-cache` must be set to
 zero to prevent portals from caching the result.
 
-``` xml
+```xml
  <portlet>
      <description>ZK loader for ZUML pages</description>
      <portlet-name>zkPortletLoader</portlet-name>
@@ -80,4 +80,4 @@ higher the priority.
 How to pass a request parameter or attribute to a portlet depends on the
 portal. You have to consult the user's guide of your favorite portal for
 details, or refer to [ZK Installation
-Guide](ZK_Installation_Guide/Setting_up_Servers).
+Guide]({{site.baseurl}}/zk_installation_guide/setting_up_servers).

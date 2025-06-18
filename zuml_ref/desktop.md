@@ -2,7 +2,7 @@
 
 The current desktop. It is the same as `self.desktop`.
 
-``` java
+```java
  desktop.getPage("main");
  
 ```

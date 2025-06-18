@@ -16,7 +16,7 @@ when you scroll them out of the visible area.
 
 **Usage example**
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
     <window height="100px" contentStyle="overflow:auto" ca:data-scrollable="true">
         <textbox constraint="no empty"/>
@@ -36,7 +36,7 @@ scrolling.
 
 **Usage example**
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
     <window height="100px" contentStyle="overflow:auto" ca:data-scrollable="true">
         <label value="Left click" popup="pop"/><separator/>
@@ -50,7 +50,7 @@ scrolling.
 
 - Click the label, trigger a popup, and scroll down.
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
     <window height="100px" contentStyle="overflow:auto" ca:data-scrollable="true">
         <label value="Right click" context="ctx"/>
@@ -72,7 +72,7 @@ scrollbar, please use the following setting[^2].
 
 `tablet only`
 
-``` xml
+```xml
 <div xmlns:ca="client/attribute">
     <listbox ca:data-scrollable="false"/>
 </div>
@@ -83,8 +83,8 @@ scrollbar, please use the following setting[^2].
 
 * For more information, please refer to [ZK Component Reference
     Tablet Devices:
-    Listbox](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Listbox#Friendly_Scrolling_Support),
+    Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/listbox#Friendly_Scrolling_Support),
     [ZK Component Reference Tablet Devices:
-    Grid](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Grid#Friendly_Scrolling_Support),
+    Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/grid#Friendly_Scrolling_Support),
     [ZK Component Reference Tablet Devices:
-    Tree](ZK_Component_Reference/Tablet_Devices/UI_Enhancements/Tree#Friendly_Scrolling_Support).
+    Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/tree#Friendly_Scrolling_Support).

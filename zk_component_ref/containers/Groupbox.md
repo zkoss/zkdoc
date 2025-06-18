@@ -23,7 +23,7 @@ In the provided example, a Groupbox is used to group a set of Radio components u
 ```
 
 Try it
-*  [Groupbox with Caption](https://zkfiddle.org/sample/1j5b78e/1-ZK-Component-Reference-Groupbox-Example?v=latest&t=Iceblue%20Compact)
+*  [Groupbox with Caption](https://zkfiddle.org/sample/1j5b78e/1-ZK-Component-Reference-Groupbox-Example?v=latest&t=Iceblue_Compact)
 
 
 ### Java Example
@@ -69,7 +69,7 @@ Specifies the CSS style for the content block of the groupbox.
 
 Try it
 
-*  [Groupbox ContentStyle](https://zkfiddle.org/sample/1k2vv2g/1-ZK-Component-Reference-Groupbox-ContentStyle-Example?v=latest&t=Iceblue%20Compact)
+*  [Groupbox ContentStyle](https://zkfiddle.org/sample/1k2vv2g/1-ZK-Component-Reference-Groupbox-ContentStyle-Example?v=latest&t=Iceblue_Compact)
 
 
 ### ContentSclass
@@ -99,7 +99,7 @@ Specifies the CSS class for the content block of the groupbox.
 
 Try it
 
-* [Groupbox ContentSclass](https://zkfiddle.org/sample/304je74/1-ZK-Component-Reference-Groupbox-ContentSclass-Example?v=latest&t=Iceblue%20Compact)
+* [Groupbox ContentSclass](https://zkfiddle.org/sample/304je74/1-ZK-Component-Reference-Groupbox-ContentSclass-Example?v=latest&t=Iceblue_Compact)
 
 ### Closable
 Default: `true`.

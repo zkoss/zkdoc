@@ -47,7 +47,7 @@ mentioned previously is now resolved.
 
 The minimal Maven dependencies you need are:
 
-``` xml
+```xml
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
@@ -76,7 +76,7 @@ The minimal Maven dependencies you need are:
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
 
-![]({{site.baseurl}}/zk_dev_ref/images/Icon_info.png) **Note:** If you don't use Maven,
+![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
 please refer to JPA vendor's documentation to know which JAR file you
 need.
 
@@ -87,7 +87,7 @@ environment.
 
 **Spring configuration**
 
-``` xml
+```xml
     <!-- omit headers -->
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
@@ -122,7 +122,7 @@ lazy-loaded objects.
 
 **Configure OpenEntityManagerInViewFilter in web.xml**
 
-``` xml
+```xml
 
     <filter>
         <filter-name>OpenEntityManagerInViewFilter</filter-name>
@@ -143,7 +143,7 @@ work.
 
 **DAO empowered by Spring**
 
-``` java
+```java
 @Repository
 public class SpringOrderDao {
 
@@ -201,7 +201,7 @@ lazy-loaded collection.
 
 **Order and OrderItem**
 
-``` java
+```java
 @Entity
 @Table(name="orders")
 public class Order {
@@ -227,7 +227,7 @@ However, if we click the second row which accesses a detached `Order`
 object's items collection, we should re-load the `Order` object with JPA
 `EntityManager` or we'll get `LazyInitializationException`.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Hibernate-beginning.png)
+![]({{site.baseurl}}/zk_dev_ref/images/hibernate-beginning.png)
 
 <div style="text-align:center">
 
@@ -241,7 +241,7 @@ object and reload it.
 
 **Reload selected object**
 
-``` java
+```java
 public class SpringOrderViewModel {
 
     @WireVariable
@@ -281,7 +281,7 @@ for us. After doing so, we can eliminate `LazyInitializationException`.
 
 **Reload detached object**
 
-``` java
+```java
 
 @Repository
 public class SpringOrderDao {
@@ -303,7 +303,7 @@ public class SpringOrderDao {
 # Lazy Initialization Issue Under Render on Demand
 
 Some AU requests cannot be interfered by developers like "[Render On
-Demand]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)"
+Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
 request. The rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have
@@ -317,7 +317,7 @@ collection's size (`each.items.size()` )of an `Order` object.
 
 **Listbox that accesses lazy-loaded property**
 
-``` xml
+```xml
 
     <window title="" border="normal" width="600px" apply="org.zkoss.bind.BindComposer"
         viewModel="@id('vm') @init('org.zkoss.reference.developer.jpa.vm.RodViewModel')">
@@ -354,7 +354,7 @@ component requests it.
 
 **Reloaded ListModel**
 
-``` java
+```java
 public class OrderListModel extends AbstractListModel<Order>{
 
     private SpringOrderDao orderDao;
@@ -392,7 +392,7 @@ in cache without re-querying it again.
 
 **Lived ListModel**
 
-``` java
+```java
 public class LiveOrderListModel extends AbstractListModel<Order>{
 
     private SpringOrderDao orderDao;

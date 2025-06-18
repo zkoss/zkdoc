@@ -31,7 +31,7 @@ e.g. a javascript patch or a custom widget javascript. For example, if
 you want to show the progress bar in the center of the browser window,
 you can specify the following:
 
-``` xml
+```xml
 <device-config>
     <device-type>ajax</device-type>
     <embed><![CDATA[
@@ -53,7 +53,7 @@ Notice that you need to specify your **application context path** in the
 source path. Becuase ZK directly puts the content into a response
 without any encoding.
 
-``` xml
+```xml
 <device-config>
    <device-type>ajax</device-type>
    <embed><![CDATA[

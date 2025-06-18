@@ -95,7 +95,7 @@ interface.
 
 For example, assume the custom theme is named **darkstar**,
 
-``` java
+```java
 package foo;
 
 public class DarkstarThemeWebAppInit implements WebAppInit {
@@ -113,7 +113,7 @@ public class DarkstarThemeWebAppInit implements WebAppInit {
 Also, make sure that **metainfo/zk/config.xml** contained the following
 configuration.
 
-``` xml
+```xml
 <config>
 ...
     <listener>
@@ -144,7 +144,7 @@ path resolution. For example, to refer to
 **zul/img/input/combo-btn.png** under the **dark** theme folder, use the
 following syntax.
 
-``` css
+```css
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 ...
 .z-combobox {
@@ -157,7 +157,7 @@ root (e.g. /theme/dark/).
 
 After all this has been done, the components should have their views
 customized. Please refer to this
-[article]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Understanding_the_Theming_Subsystem/Switching_Themes)
+[article]({{site.baseurl}}/zk_dev_ref/theming_and_styling/understanding_the_theming_subsystem/switching_themes)
 
 </ref>
 
@@ -176,7 +176,7 @@ its theme name must be prefixed with **"tablet:"'' before making
 registration. For example, to notify the web application that**dark'''
 theme is tablet-capable, please use the following code snippet.
 
-``` java
+```java
 Themes.register("tablet:dark");
 ```
 

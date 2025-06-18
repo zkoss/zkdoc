@@ -10,7 +10,7 @@ do not enable it in the production environment.
 
 The printed message looks like:
 
-``` text
+```text
 [0]ADD-BINDING[add-binding:prop-init]   vm.element.name > value <label uuid="j5VUb" id="" />     at [file:/data/zk/git/zk/zktest/src/archive/bind/basic/allfunction.zul, line:27, nearby column: 45]
 [0]ADD-BINDING[add-binding:prop-load]   vm.element.name > value <textbox uuid="j5VUd" id="" />   at [file:/data/zk/git/zk/zktest/src/archive/bind/basic/allfunction.zul, line:29, nearby column: 47]
 [0]ADD-BINDING[add-binding:prop-save]   value > vm.element.name <textbox uuid="j5VUd" id="" />   at [file:/data/zk/git/zk/zktest/src/archive/bind/basic/allfunction.zul, line:29, nearby column: 47]

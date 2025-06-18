@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @HeaderParam
 
 @HeaderParam("keyString")
@@ -28,7 +28,7 @@ The value can be omitted if name is the same as the annotated parameter.
 Example
 =======
 
-``` java
+```java
 public class HttpParamVM {
 
     String headerParam;

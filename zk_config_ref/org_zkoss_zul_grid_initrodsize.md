@@ -15,7 +15,7 @@ If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor
 components.
 
-``` xml
+```xml
 <grid>
   <custom-attributes org.zkoss.zul.grid.initRodSize="30"/>
 ...

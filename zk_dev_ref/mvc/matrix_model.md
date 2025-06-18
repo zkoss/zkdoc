@@ -4,11 +4,11 @@ Here we describe how to implement a matrix model
 (<javadoc type="interface">org.zkoss.zkmax.zul.MatrixModel</javadoc>).
 For the concept of component, model and renderer, please refer to [the
 Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
 for *MatrixModel* because [
-Biglistbox](ZK_Component_Reference/Data/Biglistbox) is
+Biglistbox]({{site.baseurl}}/zk_component_ref/data/biglistbox) is
 designed to handle unlimited data set, therefore, there is no need to
 handle model data in memory. This usage is application-dependent and
 varies from case to case. However, you can extend your own
@@ -32,7 +32,7 @@ and simple <b><i>List</i></b> for traversing huge data sets.
 In this example, we create a *FakerKeyList* to implement the *List*
 interface for *MatrixModel* to handle the partial big data in memory.
 
-``` java
+```java
 private class FakerKeyList<T> extends AbstractList<T> {
     final int _size;
     Map<String, T> _updateCache = new HashMap<String,T> ();
@@ -88,7 +88,7 @@ data for this example.
 In this example, we create a <b>FakerMatrixModel</b> to implement
 <b>MatrixModel</b>. Following is the fragment code:
 
-``` java
+```java
 public class FakerMatrixModel<Head extends List, Row extends List, Cell, Header> extends
         AbstractListModel<Row> implements MatrixModel<Row, Head, Cell, Header>, Sortable {
 
@@ -134,7 +134,7 @@ methods.
 
 For example,
 
-``` java
+```java
     public void sort(Comparator cmpr, boolean ascending) {
         _sorting = cmpr;
         _sortDir = ascending;
@@ -157,7 +157,7 @@ model data has been changed.
 
 *MatrixModel* is the same as *ListModel* when notify for data updates,
 please refer to [
-ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Notify_for_Data_Updates)
+ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Notify_for_Data_Updates)
 
 ## Resource
 

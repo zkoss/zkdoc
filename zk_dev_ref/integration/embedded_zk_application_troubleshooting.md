@@ -49,9 +49,9 @@ generic web application.
 
 For the minimum ZK headers configuration, please refer to [the main
 zEmbedded
-documentation](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Integration/Miscellaneous/Embedded_ZK_Application#Cross-Origin_Resource_Sharing)
+documentation]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/embedded_zk_application#Cross-Origin_Resource_Sharing)
 
-``` numberLines
+```numberLines
 Access-Control-Allow-Origin: One or more URLs allowed to load the Embedded application. 
 //This should contain the full context of the Outer app, including the protocol. Ex: https://subdomain.myOuterApp.foo
 Access-Control-Request-Method: GET, POST, HEAD, OPTIONS
@@ -164,11 +164,11 @@ than the page requests content, any resource served to the client with a
 relative URL will point to
 
 Loading resources with [
-lang-addon](ZK_Client-side_Reference/Language_Definition) The
+lang-addon]({{site.baseurl}}/zk_client_side_ref/language_definition) The
 best way to globally add [
-stylesheets](ZK%20Client-side%20Reference/Language%20Definition/stylesheet)
+stylesheets](ZK_Client-side_Reference/Language_Definition/stylesheet)
 and [
-scripts](ZK%20Client-side%20Reference/Language%20Definition/javascript)
+scripts](ZK_Client-side_Reference/Language_Definition/javascript)
 to your application, and have these resources loaded as part of the
 embedding process is to declare them in lang-addon.
 
@@ -204,13 +204,13 @@ is not dependent of the application’s domain name and context.
 
 in zul:
 
-``` xml
+```xml
  <button label="" iconSclass="myimage"  .../>
 ```
 
 in css:
 
-``` css
+```css
 /* loaded from lang-addon*/
 .myimage::after{
     content: "";

@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @NotifyCommands({
 	@NotifyCommand(value="commandName1", onChange="_vm_.expression1"),
 	@NotifyCommand(value="commandName2", onChange="_vm_.expression2")
@@ -23,7 +23,7 @@ Notice that the `commandName` which gets triggered is a command in our view mode
 Example
 =======
 
-``` java
+```java
 @NotifyCommands({
 	@NotifyCommand(value="upateData1", onChange="_vm_.data1"),
 	@NotifyCommand(value="upateData2", onChange="_vm_.data2")
@@ -47,7 +47,7 @@ public class VM {
 ```
 #### Combine with `@ToClientCommand` :
 
-``` java
+```java
 @NotifyCommands({
 	@NotifyCommand(value="upateData1", onChange="_vm_.data1"),
 	@NotifyCommand(value="upateData2", onChange="_vm_.data2")

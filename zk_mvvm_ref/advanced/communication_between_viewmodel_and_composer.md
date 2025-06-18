@@ -11,7 +11,7 @@ We know that global command is triggered by [ binder sending events into event q
 For example, after adding a product, you want to tell ` ShoppingCartViewModel ` to refresh shopping cart's items. Assuming that we do not change the default setting such that ShoppingCartViewModel's binder (receiver) subscribes to the default event queue.
 
 #### Send a global command in a composer (Sender)
-``` java
+```java
 public class MyComposer extends SelectorComposer {
 
     @Listen("onAddProductOrder=#PrdoDiv #prodGrid row productOrder")
@@ -29,7 +29,7 @@ public class MyComposer extends SelectorComposer {
 In the `ShoppingCartViewModel`, we should declare a global command method named `updateShoppingCart` to receive this command request and refresh cart items. The code snippet below shows this.
 
 #### Global command in a ViewModel (Receiver)
-``` java
+```java
 public class ShoppingCartViewModel {
     @GlobalCommand
     @NotifyChange("cartItems")
@@ -41,7 +41,7 @@ public class ShoppingCartViewModel {
 }
 ```
 -   As [a binder subscribes to desktop scope event queue by default](../data_binding/binder.html), we only need to declare a global command.
--   To receive parameters with global command, please refer to [Advanced/Parameters\#A\_Global\_Command\_Example](./parameters.html#a-global-command-example).
+-   To receive parameters with global command, please refer to [advanced/Parameters\#A\_Global\_Command\_Example](./parameters.html#a-global-command-example).
 
 Posting a Command from a ViewModel to a Composer
 ================================================
@@ -50,7 +50,7 @@ As a ViewModel has a binder attached to it, triggering a global command doesn't 
 Assuming that we want to inform a composer to update shopping cart's items.
 
 #### Bind global command in a ZUL (Sender)
-``` xml
+```xml
 <window apply="org.zkoss.bind.BindComposer" binder="@init(queueName='myqueue')"
     viewModel="@id('vm') @init('example.MyViewModel')">
     <button id="addProduct" label="Add" onClick="@global-command('updateShoppingCart')"/>
@@ -61,7 +61,7 @@ Assuming that we want to inform a composer to update shopping cart's items.
 As mentioned earlier, global command is sent by event queue, the composer (receiver) should subscribe to the same scope event queue to receive this global command.
 
 #### To subscribe global command (Receiver) to the event queue
-``` java
+```java
 public class MyComposesr extends SelectorComposer<Component> {
 
     @Subscribe("myqueue")
@@ -75,6 +75,6 @@ public class MyComposesr extends SelectorComposer<Component> {
 }
 ```
 -   Subscribe to a queue named 'myqueue' because previous binder publishes to this queue.
--   For ` @Subscribe `, please refer to [ZK Developer's Reference/MVC/Controller/Subscribe to EventQueues]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Subscribe_to_EventQueues).
--   To subscribe an event queue by method call, please refer to [ZK Developer's Reference/Event Handling/Event Queues\#Subscribe\_to\_an\_Event\_Queue]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues#Subscribe_to_an_Event_Queue)
+-   For ` @Subscribe `, please refer to [ZK Developer's Reference/mvc/Controller/Subscribe to EventQueues]({{site.baseurl}}/zk_dev_ref/mvc/controller/subscribe_to_eventqueues).
+-   To subscribe an event queue by method call, please refer to [ZK Developer's Reference/Event Handling/Event Queues\#Subscribe\_to\_an\_Event\_Queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues#Subscribe_to_an_Event_Queue)
 

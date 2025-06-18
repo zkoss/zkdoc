@@ -21,7 +21,7 @@ have the best performance (particularly for a huge tree), it is better
 to make all tree item closed initially. You can observe this behavior
 with developer tool.
 
-``` xml
+```xml
 <treeitem forEach="${data}" open="false">
     <treerow>
         <treecell label="${each.name}"/>
@@ -74,10 +74,10 @@ to make the orgitem closed initially if proper.
 
 If you want to disable Client ROD for the whole application, you can
 specify a library property called
-[`org.zkoss.zul.client.rod`](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.client.rod)
+[`org.zkoss.zul.client.rod`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
 with false. For example, specify the following in zk.xml:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.client.rod</name>
     <value>false</value>
@@ -87,7 +87,7 @@ with false. For example, specify the following in zk.xml:
 Or, if you prefer to disable it for a particular page, then specify
 false to a page's attribute called `org.zkoss.zul.client.rod`, such as
 
-``` xml
+```xml
 <custom-attributes org.zkoss.zul.client.rod="false" scope="page"/>
 ```
 
@@ -95,7 +95,7 @@ Or, if you prefer to disable it for all descendants of a particular
 component, then specify false to a component's attribute. And, you can
 enable it for a subset of the descendants. For example,
 
-``` xml
+```xml
 <window>
   <custom-attributes org.zkoss.zul.client.rod="false"/> <!-- disable it for descendants of window -->
   <div>

@@ -20,9 +20,9 @@ it also provides undo, save and clear methods.
 
 # Example
 
-![](images/Signature.png)
+![](/zk_component_ref/images/Signature.png)
 
-``` xml
+```xml
 <signature width="600px" height="300px" penColor="white" backgroundColor="#AED6F1" penSize="6"/>
 ```
 
@@ -42,7 +42,7 @@ right)
 The toolbar contains 3 buttons: undo button, clear button, and save
 button. They are visible by default. If you can hide them:
 
-``` xml
+```xml
 <signature toolbarVisible="false"/>
 ```
 
@@ -52,13 +52,13 @@ message after icons on the buttons, we provide three attributes:
 
 Default:
 
-![](images/Signature_toolbar.png)
+![](/zk_component_ref/images/Signature_toolbar.png)
 
 Customized:
 
-![](images/Signature_toolbar2.png)
+![](/zk_component_ref/images/Signature_toolbar2.png)
 
-``` xml
+```xml
 <signature undoLabel="Undo" clearLabel="Clear" saveLabel="Save"/>
 ```
 
@@ -93,23 +93,23 @@ The background color and image will be saved by default. If you don't
 want to save the background color and image, please use the following
 setting.
 
-``` xml
+```xml
 <signature backgroundIncluded="false"/>
 ```
 
 ## Scanned Paper Form
 
 You can load a scanned paper form as a background and save it with a
-signature. ![](images/Paper-form.jpg)
+signature. ![](/zk_component_ref/images/Paper-form.jpg)
 
 # Saves Signature Image
 
 After clicking "Save" button, the component will upload the signature to
 a server. You can listen `onSave` to get the uploaded signature and show
 it with
-[Image](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Image):
+[Image]({{site.baseurl}}/zk_component_ref/essential_components/image):
 
-``` xml
+```xml
     <signature onSave="image.setContent(event.getMedia())"/>
     <image id="image"/>
 ```
@@ -118,7 +118,7 @@ it with
 
 If you see `SizeLimitExceededException`, you can adjust max uploading
 file size by [
-file-size-threshold](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_max-upload-size_Element).
+file-size-threshold]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_max-upload-size_element).
 
 # Supported Events
 

@@ -5,13 +5,13 @@ any other custom JSP tag.
 
 First, you need to declare ZK JSP taglib as shown below.
 
-``` xml
+```xml
 <%@ taglib prefix="zk" uri="http://www.zkoss.org/jsp/zul"%>
 ```
 
 Then, you can start using ZK Pivottable in your JSP page like below.
 
-``` xml
+```xml
 <zk:pivottable id="pivot" />
 ```
 
@@ -21,7 +21,7 @@ ZUL component tag.
 Below is another example of using the pivottable component with the
 width and height specified.
 
-``` xml
+```xml
 <zk:pivottable id="pivot" 
      height="500px" />
 ```
@@ -35,7 +35,7 @@ controller to supply the raw data.
 Here is a more complete example of using pivottable component in a JSP
 page.
 
-``` xml
+```xml
 ...
 <%@ taglib prefix="zss" uri="http://www.zkoss.org/jsp/zul"%>
 <html>
@@ -72,7 +72,7 @@ First, the controller would extends the
 controller, you would use the "Wire" annotation to automatically refer
 to the pivottable with the id "pivot".
 
-``` java
+```java
 public class PivotJspComposer extends SelectorComposer<Pivottable> {
     ...
     @Wire
@@ -89,7 +89,7 @@ else, typically from databases through the use of DAO's. Lines 11-13
 represents the intermediate data conversion dictated by incompatible
 data types.
 
-``` java
+```java
 ...
     static List<List<Object>> getData() {
         ...
@@ -111,7 +111,7 @@ data types.
 
 Also, you would need to give labels to each column of the data.
 
-``` java
+```java
 ...
     private static List<String> getColumns() {
         return Arrays.asList(new String[] {
@@ -126,7 +126,7 @@ Also, you would need to give labels to each column of the data.
 After the raw data has been prepared, we are now ready to supply it to
 the pivottable in the form of a data model.
 
-``` java
+```java
 ...
     // Data model for pivottable
     private TabularPivotModel pivotModel;

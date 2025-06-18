@@ -41,7 +41,7 @@ You could make a standard component as a space owner by extending it to
 implement <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>.
 For example,
 
-``` java
+```java
 public class IdGrid extends Grid implements IdSpace {
    //no method implementation required
 }
@@ -58,7 +58,7 @@ a part of space Y.
 
 For example, see the following ZUML page
 
-``` xml
+```xml
 <?page id="P"?>
 <zk>
     <window id="A">
@@ -105,15 +105,15 @@ above, if C calls `getSpaceOwner` it will get C itself, if C calls
 # Composer and Fellow Auto-wiring
 
 With [ZK Developer's
-Reference/MVC]({{site.baseurl}}/zk_dev_ref/MVC), you generally
+Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
 don't need to look up fellows manually. Rather, they could be *wired*
 automatically by using the
-[auto-wiring]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Variables)
+[auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
 feature of [a
-composer]({{site.baseurl}}/zk_dev_ref/MVC/Controller). For
+composer]({{site.baseurl}}/zk_dev_ref/mvc/controller). For
 example,
 
-``` java
+```java
 public class MyComposer extends SelectorComposer {
     @Wire
     private Textbox input; //will be wired automatically if there is a fellow named input
@@ -130,7 +130,7 @@ public class MyComposer extends SelectorComposer {
 Then, you could associate this composer to a component by specifying the
 apply attribute as shown below.
 
-``` xml
+```xml
 <window apply="MyComposer">
     <textbox id="input"/>
 </window>
@@ -140,7 +140,7 @@ Once the ZUML document above is rendered, an instance of MyComposer will
 be instantiated, and the `input` member will also be initialized with
 the fellow named `input`. This process is called "auto-wiring". For more
 information, please refer to the [Wire
-Components]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Wire_Components)
+Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components)
 section.
 
 # Find Component Manually
@@ -159,7 +159,7 @@ and
 are the methods to look for a component by use of CSS selectors. For
 example,
 
-``` java
+```java
 comp.query("#ok"); //look for a component whose ID is ok in the same ID space
 comp.query("window #ok"); //look for a window and then look for a component with ID=ok in the window
 comp.queryAll("window button"); //look for a window and then look for all buttons in the window
@@ -180,7 +180,7 @@ component among ID spaces. The way of using it is similar to
 
 The formal syntax of the paths
 
-``` text
+```text
 /[/]SPACE_OWNER_ID/[SPACE_OWNER_ID...]/FELLOW_ID
 ```
 
@@ -189,7 +189,7 @@ The formal syntax of the paths
 
 For example:
 
-``` java
+```java
 //Two different ways to get the same component E
 Path.getComponent("/A/C/E");//if call Path.getComponent under the same page.
 new Path("/A/C", "E").getComponent(); //the same as new Path("/A/C/E").getComponent()
@@ -205,14 +205,14 @@ If a component belongs to another page, we can retrieve it by starting
 with the page's ID. Notice that double slashes have to be specified in
 front of the page's ID.
 
-``` java
+```java
 Path.getComponent("//P/A/C/E");//for page, you have to use // as prefix
 ```
 
 Notice that the page's ID can be assigned with the use of the page
 directive as follows.
 
-``` xml
+```xml
 <?page id="foo"?>
 <window/>
 ```

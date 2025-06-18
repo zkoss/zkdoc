@@ -6,8 +6,7 @@
   Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
 - Java API: <javadoc>org.zkoss.zul.Listitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listitem</javadoc>
-- Style Guide: [
-  Listitem](ZK_Style_Guide/XUL_Component_Specification/Listitem)
+
 
 # Employment/Purpose
 
@@ -15,9 +14,9 @@ A list item.
 
 # Example
 
-![](images/ZKComRef_Listbox_Example.png)
+![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
-``` xml
+```xml
  <window title="listbox demo" border="normal" width="250px">
     <listbox id="box">
         <listhead sizable="true">
@@ -74,7 +73,7 @@ A list item.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -97,25 +96,25 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/listbox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/listbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>select</p>
 </center></td>
-<td>![](images/listbox_mold_select.png)</td>
+<td>![](/zk_component_ref/images/listbox_mold_select.png)</td>
 </tr>
 </tbody>
 </table>
 
 # Supported Children
 
-`*`[` Listcell`](ZK_Component_Reference/Data/Listbox/Listcell)
+`*`[` Listcell`]({{site.baseurl}}/zk_component_ref/data/listbox/listcell)
 
 # Use Cases
 
 See [
-Listbox](ZK_Component_Reference/Data/Listbox#Use_Cases).
+Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Use_Cases).
 
 # Version History
 

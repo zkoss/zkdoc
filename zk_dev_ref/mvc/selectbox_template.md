@@ -1,10 +1,10 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can render a selectbox with a template. However, notice that, unlike
 other components, selectbox doesn't allow any child component, so you
 have to render each item as a string. For example,
 
-``` xml
+```xml
 <selectbox model="${users}" onSelect='alert(model.get(event.getData()));'>
     <template name="model">
         Name is ${each}
@@ -15,7 +15,7 @@ have to render each item as a string. For example,
 where we assume there is a list model
 (<javadoc>org.zkoss.zul.ListModel</javadoc>) called `users` such as:
 
-``` java
+```java
 ListModelList model = new ListModelList(new String[] { "Tony", "Ryan", "Jumper", "Wing", "Sam" });
 ```
 

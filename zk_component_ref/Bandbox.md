@@ -6,8 +6,6 @@
   [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: <javadoc>org.zkoss.zul.Bandbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandbox</javadoc>
-- Style Guide: [
-  Bandbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Bandbox)
 
 # Employment/Purpose
 
@@ -24,7 +22,7 @@ to represent the popup window as a search dialog.
 
 ![](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
 
-``` xml
+```xml
     <bandbox>
         <bandpopup>
             <listbox style="max-width:300px"
@@ -62,7 +60,7 @@ to represent the popup window as a search dialog.
 A popup window could contain any components, so it is the developer’s
 job to close the popup and copy any needed value from it.
 
-``` xml
+```xml
 <listbox width="200px"
    onSelect="bd.value=self.selectedItem.label; bd.close();">
 ```
@@ -80,7 +78,7 @@ button, or presses `Alt+DOWN` on the keyboard. However, you can set the
 the popup will be opened. This is helpful for novice users, but it might
 be annoying for experienced users.
 
-``` xml
+```xml
 <zk>
     <bandbox id="bd" autodrop="true">
         <bandpopup>
@@ -96,7 +94,7 @@ If the user opens the popup window the `onOpen` event is sent to the
 application. By using the `fulfill` attribute with the `onOpen` value as
 shown below, you can defer the creation of the popup window.
 
-``` xml
+```xml
 <bandbox id="test">
     <bandpopup fulfill="test.onOpen">
      ...
@@ -107,7 +105,7 @@ shown below, you can defer the creation of the popup window.
 Alternatively, you can prepare the popup window in Java by listening to
 the `onOpen` event, as depicted below.
 
-``` xml
+```xml
 <zk>
     <bandbox id="band" onOpen="prepare()"/>
     
@@ -129,7 +127,7 @@ Since a bandbox is also a text box, you are also able to listen to an
 popup window in any fashion. The code below illustrates capturing the
 user key and displaying information accordingly.
 
-``` xml
+```xml
 <zk>
     <bandbox id="band" autodrop="true" onChanging="suggest()"/>
     <zscript>
@@ -159,14 +157,14 @@ and/or a regular expression.
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <bandbox constraint="no empty,/^A/"/>
 ```
 
 To specify a regular expression, you may have to use the character `/`
 to enclose the regular expression as follows.
 
-``` xml
+```xml
 <bandbox constraint="/^A/"/>
 ```
 
@@ -175,7 +173,7 @@ Notes:
 - The above statement is XML, so do *not* use `\\` to specify a
   backslash. However typing `\\` is necessary, if writing in Java.
 
-``` java
+```java
 new Bandbox().setConstraint("/.+@.+\\.[a-z]+/");
 ```
 
@@ -185,7 +183,7 @@ new Bandbox().setConstraint("/.+@.+\\.[a-z]+/");
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <bandbox constraint="/^A/: only allowed the item start with A"/>
 ```
 
@@ -196,7 +194,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <bandbox constraint="/^A/: ${c:l('err.startwith.required')}"/>
 ```
 
@@ -204,12 +202,12 @@ Notes:
 
 {% include version-badge.html version=8.6.2 %} Specify the sclass name of the
 Bandbox button icon. For built-in icon, please see
-[{{site.baseurl}}/zk_component_ref/base_components/LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/LabelImageElement).
+[{{site.baseurl}}/zk_component_ref/base_components/labelimageelement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement).
 
 # Inherited Functions
 
 Please refer to [
-Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox) for inherited
+Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
 functions.
 
 # Supported Events
@@ -240,7 +238,7 @@ opening or closing the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  Textbox]({{site.baseurl}}/zk_component_ref/Input/Textbox#Supported_Events)
+  Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
 
 # Supported Molds
 
@@ -278,7 +276,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/Input/Bandpopup)
+`*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/input/bandpopup)
 
 # Use Cases
 

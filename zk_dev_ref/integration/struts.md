@@ -11,7 +11,7 @@ tutorial](http://struts.apache.org/2.x/hello-world-using-struts-2.html)
 as an example. We could provide a ZUL page called `HelloWorld.zul` to
 replace `HelloWorld.jsp` as follows.
 
-``` xml
+```xml
 <?page title="Hello World!"?>
 
 <h:h2 xmlns:h="xhtml">
@@ -25,7 +25,7 @@ provided by Struts and your action handler.
 Then, you map the `hello` action to `HelloWorld.zul` by modifying
 `WEB-INF/classes/struts.xml` as follows.
 
-``` xml
+```xml
 <action name="hello" class="org.apache.struts.helloworld.action.HelloWorldAction" method="execute">
     <result name="success">/HelloWorld.zul</result>
 </action>
@@ -45,7 +45,7 @@ retrieved by invoking
 <javadoc type="interface" method="getAttribute(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>.
 For example,
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.util.Composer;
 import org.zkoss.zk.ui.*;
@@ -69,7 +69,7 @@ However, sometimes you have to redirect back to submit-based URL (maybe
 another action with parameters). It can be done easily by enclosing the
 input components with HTML FORM. For example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <n:form action="${c:encodeURL('/login.action')}" method="POST" xmlns:n="native">
 <grid>
@@ -97,15 +97,15 @@ As shown above, notice that
   to encode an URL.
 
 For more information, please refer to [ZK Developer's
-Reference/Integration/Use_ZK_in_JSP#HTML_Form the Use ZK in JSP
-section]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP#HTML_Form_the_Use_ZK_in_JSP_section).
+Reference/integration/Use_ZK_in_JSP#HTML_Form the Use ZK in JSP
+section]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form_the_Use_ZK_in_JSP_section).
 
 # Avoid Filtering ZK AU Requests
 
 When adopting Struts, we usually apply its filter to all URL in
 `web.xml` like:
 
-``` xml
+```xml
     <filter>
         <filter-name>struts2</filter-name>
         <filter-class>
@@ -129,7 +129,7 @@ components works abnormally. You might see a similar error message like:
 To avoid this problem, you can add the line below in `struts.xml` to
 exclude ZK au requests for struts filter
 
-``` xml
+```xml
 <struts>
    <constant name="struts.action.excludePattern" value="/zkau"/>
    <!-- other configurations -->

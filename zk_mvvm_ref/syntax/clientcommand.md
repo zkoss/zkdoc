@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ClientCommand(commandNames)
 ```
 
@@ -18,7 +18,7 @@ Description
 Example
 =======
 
-``` java
+```java
 @ClientCommand("doCountChange")
 public class VM {
     private int count = 0;

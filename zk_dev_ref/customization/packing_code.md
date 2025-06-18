@@ -21,7 +21,7 @@ The content of `/metainfo/zk/config.xml` is similar to `WEB-INF/zk.xml`,
 except only a subset of configurations is allowed. Here is a sample
 (zkex.jar 's config.xml)[^2]:
 
-``` xml
+```xml
 <config>
     <config-name>zkex</config-name><!-- used to resolve dependency -->
     <depends>zk</depends>
@@ -59,7 +59,7 @@ implementing
 then specifying it as a listener in `/metainfo/zk/config.xml`. For
 example,
 
-``` java
+```java
 public class MyJARInit implements WebAppInit {
     public void init(WebApp wapp) throws Exception {
         //do whatever init you need
@@ -75,7 +75,7 @@ invoke
 <javadoc method="getConfiguration()">org.zkoss.zk.ui.WebApp</javadoc> as
 follows.
 
-``` java
+```java
     public void init(WebApp wapp) throws Exception {
         Configuration config = wapp.getConfiguration();
 ...
@@ -83,8 +83,8 @@ follows.
 
 [^1]: For more information, please refer to [ZK Client-side Reference:
     Language
-    Definition](ZK_Client-side_Reference/Language_Definition).
+    Definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
 
 [^2]: For more information, please refer to [ZK Configuration Reference:
     JAR File's
-    config.xml](ZK_Configuration_Reference/JAR_File's_config.xml).
+    config.xml]({{site.baseurl}}/zk_config_ref/jar_file's_config.xml).

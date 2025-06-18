@@ -6,9 +6,9 @@ and [Weblogic](#weblogic.xml).
 ## zk.xml
 
 - Turn on Serializable UI Factory for ZK, please refer to [ this
-  documentation]({{site.baseurl}}/zk_dev_ref/Clustering/ZK_Configuration).
+  documentation]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration).
 
-``` xml
+```xml
 <zk>
     <system-config>
         <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>
@@ -27,7 +27,7 @@ and [Weblogic](#weblogic.xml).
 
 For example,
 
-``` xml
+```xml
 <!DOCTYPE weblogic-web-app PUBLIC "-//BEA Systems, Inc.//DTD Web Application 8.1//EN"
  "http://www.bea.com/servers/wls810/dtd/weblogic810-web-jar.dtd">
 
@@ -43,7 +43,7 @@ For example,
 
 For Weblogic version 12c
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <wls:weblogic-web-app
     xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-web-app"

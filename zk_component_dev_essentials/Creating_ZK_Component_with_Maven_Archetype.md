@@ -97,7 +97,7 @@ to all other properties)
   and *groupId* is set to **org.test**, *artifactId* to **mycomps**,
   *version* to **1.0-SNAPSHOT** and *package* to **org.test.mycomps**.
 
-``` text
+```text
 $ mvn archetype:generate -DarchetypeCatalog=http://mavensync.zkoss.org/maven2/
 [INFO] Scanning for projects...
 [INFO] Searching repository for plugin with prefix: 'archetype'.
@@ -156,5 +156,5 @@ Y:
 
 [^1]: To add a ZK archetype catalog, click **Configure** then refer to [
     Create and Run Your First ZK Application with Eclipse and
-    Maven]({{site.baseurl}}/zk_installation_guide/quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_Maven)
+    Maven]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)
     for the complete instruction.

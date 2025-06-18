@@ -14,7 +14,7 @@ You can implement your own JSON converter for non-EE version or use the
 built-in converter in EE version. In EE version, you can switch the
 implementation of the json converter in zk.xml
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.bind.jsonBindingParamConverter.class</name>
     <value>org.zkoss.zkmax.bind.GsonConverter</value>

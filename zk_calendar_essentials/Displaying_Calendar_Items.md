@@ -30,7 +30,7 @@ between events on the calendar and events fired by the ZK framework."
 
 You can simply create a `CalendarItem` with the default builder:
 
-``` java
+```java
  DefaultCalendarItem calendarItem = new DefaultCalendarItem.Builder()
                 .withTitle("my title")
                 .withContent("my content")
@@ -41,12 +41,12 @@ You can simply create a `CalendarItem` with the default builder:
 ```
 
 If you don't specify the title, it displays **\[begin time - end
-time\]** at an item's header: ![](images/Calendar-item.png)
+time\]** at an item's header: ![](/zk_calendar_essentials/images/Calendar-item.png)
 
 If an item is shorter than half an hour, it appends the content in the
 header:
 
-![](images/Calendar-item-halfhour.png)
+![](/zk_calendar_essentials/images/Calendar-item-halfhour.png)
 
 # Create a CalendarModel
 
@@ -54,7 +54,7 @@ You can instantiate a `SimpleCalendarModel` with a collection of
 `DefaultCalendarItem` or add a `DefaultCalendarItem` after
 instantiation.
 
-``` java
+```java
 private SimpleCalendarModel model;
 ...
     model = new SimpleCalendarModel(CalendarItemGenerator.generateList());
@@ -73,7 +73,7 @@ private SimpleCalendarModel model;
 After creating a `SimpleCalendarModel`, we need to associate a component
 with the model, so that Calendar will render items to a browser.
 
-``` java
+```java
 public class DisplayComposer extends SelectorComposer {
 
     @Wire("calendars")
@@ -95,12 +95,12 @@ you need to:
 
 1.  create a popup
 2.  link the popup with your calendars with [
-    tooltip](ZK_Developer%27s_Reference/UI_Patterns/Tooltips,_Context_Menus_and_Popups#Tooltips)
+    tooltip]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups#Tooltips)
     attribute.
 3.  implement the logic to show a tooltip in an [ onItemTooltip
-    listener](ZK_Calendar_Essentials/Implementing_Event_Listeners#CalendarsEvent.ON_ITEM_TOOLTIP).
+    listener]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners#CalendarsEvent.ON_ITEM_TOOLTIP).
 
-``` xml
+```xml
     <calendars height="100%"  beginTime="8"
      apply="org.zkoss.calendar.essentials.DisplayTooltipComposer"
      tooltip="tooltipPopup, position=after_pointer"/>
@@ -119,11 +119,11 @@ the sclass attribute will add a CSS class on the top DOM node of the
 calendar item, which allow the whole element to be used in a css
 selector.
 
-``` java
+```java
     calendarItem.setSclass("myClass");
 ```
 
-``` css
+```css
     .myClass{ //selector for the whole node
         //my-css-property: myValue;
     }
@@ -139,7 +139,7 @@ contentStyle and headerStyle properties instead: ![Areas targeted by
 each style
 attributes](images/Calendar-style-targets.png "Areas targeted by each style attributes")
 
-``` java
+```java
     calendarItem.setStyle("background-color: #0093f9"); //affects the whole item
     calendarItem.setHeaderStyle("background-color: red; color: white;"); //affects the header node, may override setStyle for this node
     calendarItem.setContentStyle("background-color: rgb(255, 255, 0); color: white;"); //affects the content node, may override setStyle for this node

@@ -4,7 +4,7 @@ handled.
 
 The shall be placed outside of `<zk:page>`. For example:
 
-``` xml
+```xml
 
 <zk:init .../>
 <zk:component .../>

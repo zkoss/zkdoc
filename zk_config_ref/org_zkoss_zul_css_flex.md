@@ -5,18 +5,18 @@
 Set to use CSS3 flex implementation in ZK Flex.
 
 See [ZK
-Flex](https://www.zkoss.org/wiki/ZK_Developer's_Reference/UI_Patterns/Hflex_and_Vflex)
+Flex]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
 for additional information.
 
 `Default: true `
 
-``` xml
+```xml
 <component>
   <custom-attributes org.zkoss.zul.css.flex="true"/>
 ...
 ```
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.css.flex</name>
     <value>true</value>

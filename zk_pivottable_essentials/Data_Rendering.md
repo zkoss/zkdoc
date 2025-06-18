@@ -23,7 +23,7 @@ a basic implementation of
 <javadoc directory="zkpvt">org.zkoss.pivot.PivotRendererExt</javadoc>,
 to be the default renderer and a skeleton class to extend from.
 
-``` java
+```java
 public class SimplePivotRenderer implements PivotRendererExt {
     
     private DecimalFormat _fnf = new DecimalFormat("##,###.00");
@@ -121,7 +121,7 @@ PivotRendererExt, PivotUIEvent, etc) methods. It represents a position
 in PivotRenderer has two PivotHeaderContext object, for row and column
 respectively:
 
-``` java
+```java
     public String renderCellSClass(Object data, Pivottable table,
             PivotHeaderContext rowContext, PivotHeaderContext columnContext,
             PivotField dataField) {
@@ -132,9 +132,9 @@ respectively:
 The header contexts and data fields corresponding to a cell are
 illustrated as the following:
 
-![](images/ZKPvtEsn_HeaderContext_02.png")
+![](images/ZKPvtEsn_HeaderContext_02.png)
 
-![](images/ZKPvtEsn_HeaderContext_03.png")
+![](images/ZKPvtEsn_HeaderContext_03.png)
 
  
 
@@ -144,7 +144,7 @@ You can also hilde the +/- icon by css as needed. e.g.,
 
 Hide the '-' icon
 
-``` css
+```css
 .z-pivottable-icon-expd {
     display: none;
 }
@@ -152,7 +152,7 @@ Hide the '-' icon
 
 Hide both '+' and '-' icon
 
-``` css
+```css
 .z-pivottable-icon {
     display: none;
 }

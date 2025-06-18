@@ -9,7 +9,7 @@
 # Employment/Purpose
 
 Identifies components that can be used as "rubber stamps" to paint the
-cells in a [ Listbox](ZK_Component_Reference/Data/Listbox).
+cells in a [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox).
 
 # Example
 

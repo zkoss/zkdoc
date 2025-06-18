@@ -12,7 +12,7 @@ removed. Second, specify the class in `WEB-INF/zk.xml`. For example, let
 us assume the class you implement is called `foo.MyRecycle`, then add
 the following to `zk.xml`
 
-``` xml
+```xml
 <listener>
     <listener-class>foo.MyRecycle</listener-class>
 </listener>
@@ -31,7 +31,7 @@ method.
 For example, we can limit the URL to cache to `"/long-op/*"`, and
 re-generate the page if it has been served for more than 5 minutes.
 
-``` java
+```java
 public class MyRecycle extends org.zkoss.zkmax.ui.util.DesktopRecycle {
   protected boolean shallCache(Desktop desktop, String path, int cause) {
     return path.startsWith("/long-op");

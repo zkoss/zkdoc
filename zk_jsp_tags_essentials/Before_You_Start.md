@@ -29,7 +29,7 @@ list some guides about how to use ZK:
 provides a set of JSP tags that allow developers to specify ZK
 components in JSP tags. It is recommended to read the [ZK Developer's
 Reference: Use ZK in
-JSP]({{site.baseurl}}/zk_dev_ref/Integration/Use_ZK_in_JSP)
+JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
 section before you start.
 
 # What to Download

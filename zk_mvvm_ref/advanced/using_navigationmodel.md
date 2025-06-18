@@ -42,7 +42,7 @@ public class MyVM {
 - The path string `AAA/AAA1` means level 1 is AAA and level 2 is AAA1.
 
 #### Nested level in ZUML
-``` xml
+```xml
 <apply level="@load(vm.navModel.root)">
     // do some level 1 thing...
     <apply level2="@load(level.child)">
@@ -57,7 +57,7 @@ Render a level
 In each level, we defined different properties like `level` or `level2` to store the **[NavigationLevel](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/NavigationLevel.html)** object. So we can get the current navigated object by calling `getCurrent()`.
 
 #### ZUML
-``` xml
+```xml
 <apply level="@load(vm.navModel.root)">
     Name: <label value="@load(level.current.name)" />
 </apply>
@@ -69,13 +69,13 @@ Navigate a level
 You can bind a `@command` which is calling `navigateTo` for navigating items.
 
 #### ZUML
-``` xml
+```xml
 <a label="Navigate to BBB"
    onClick="@command('navTo', level=level, key='BBB')" />
 ```
 
 #### ViewModel
-``` java
+```java
 @Command
 public void navTo(@BindingParam("level") NavigationLevel level,
                   @BindingParam("key") String key) {
@@ -85,7 +85,7 @@ public void navTo(@BindingParam("level") NavigationLevel level,
 
 `NavigationModel` also provides the method for navigating many levels at once, `navigateToByPath`.
 
-``` java
+```java
 @Command
 public void navByPath(@BindingParam("path") String path) {
     this.navModel.navigateToByPath(path);
@@ -98,7 +98,7 @@ Iterate a level
 To list all items in a level, use `getItems()` or `getItemIterator()` to a list of `Pair` objects which x is key and y is value.
 
 #### ZUML
-``` xml
+```xml
 <forEach items="@load(level.items)">
     <a label="@init(each.x)"
        onClick="@command('navTo', level=level, key=self.label)" />

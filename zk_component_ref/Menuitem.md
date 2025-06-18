@@ -3,13 +3,13 @@
 # Menuitem
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu) and
-  [Fileupload](Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
+  [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: <javadoc>org.zkoss.zul.Menuitem</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menuitem</javadoc>
 - Style Guide: [ Menuitem in
-  Menubar](ZK_Style_Guide/XUL_Component_Specification/Menubar/Menuitem_in_Menubar),
+  Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menuitem_in_menubar),
   [ Menuitem in
-  Menupopup](ZK_Style_Guide/XUL_Component_Specification/Menupopup/Menuitem_in_Menupopup)
+  Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menuitem_in_menupopup)
 
 # Employment/Purpose
 
@@ -23,9 +23,9 @@ been enhanced and can be customized easily.
 
 # Example
 
-![](images/ZKComRef_Menuitem.png)
+![](/zk_component_ref/images/ZKComRef_Menuitem.png)
 
-``` xml
+```xml
 <menubar>
  <menu label="File">
      <menupopup>
@@ -42,7 +42,7 @@ been enhanced and can be customized easily.
 
 # Fileupload Example
 
-``` xml
+```xml
 <menuitem upload="true" label="Customized Attach" onUpload='alert("File is uploaded!")'/>
 ```
 
@@ -59,7 +59,7 @@ requests), which is common if the request takes too long to serve.
 The simplest use is to specify it with `self` as follows. Then, the
 menuitem is disabled when it is clicked.
 
-``` xml
+```xml
 <menuitem id="ok" label="OK" autodisable="self" />
 ```
 
@@ -67,7 +67,7 @@ If you'd like to disable several menuitems, you could specify all of
 them in this property by separating with a comma. For example, the
 following disables both menuitems, when one of them is clicked.
 
-``` xml
+```xml
 <menuitem id="ok" label="OK" autodisable="ok,cancel" />
 <menuitem id="cancel" label="Cancel" autodisable="ok,cancel" />
 ```
@@ -78,14 +78,14 @@ prefer to enable them manually (i.e., by calling
 <javadoc method="setDisabled(boolean)">org.zkoss.zul.Menuitem</javadoc>
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
-``` xml
+```xml
 <menuitem id="ok" label="OK" autodisable="+self, +cancel" />
 ```
 
 Then, you could enable them manually under the situation depending on
 your application's requirement, such as
 
-``` java
+```java
 if (something_happens) {
    ok.setDisabled(false);
    cancel.setDisabled(false);
@@ -95,11 +95,11 @@ if (something_happens) {
 ### Enable Autodisable for All Menuitems
 
 As described in [ZK Developer's Reference:
-Customization]({{site.baseurl}}/zk_dev_ref/Customization/Component_Properties),
+Customization]({{site.baseurl}}/zk_dev_ref/customization/component_properties),
 you could customize ZK to enable `autodisable` for all menuitem by
 specifying the following in the custom language addon:
 
-``` xml
+```xml
 <language-addon>
     <component>
         <component-name>menuitem</component-name>
@@ -136,7 +136,7 @@ a URL for the `href` property
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
-``` xml
+```xml
 <zk>
     <menubar>
         <menuitem label="click me" onClick="do_something_in_Java()"/>
@@ -162,7 +162,7 @@ For end users, there is no difference between the use of
 and
 <javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
 
-``` xml
+```xml
 <zk>
     <menubar>       
         <menuitem label="redirect" onClick="Executions.sendRedirect(&quot;another.zul&quot;)"/>
@@ -186,7 +186,7 @@ By specifying the upload property
 (<javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>),
 you could make a menuitem used for uploading files. For example,
 
-``` xml
+```xml
 <menuitem upload="true" label="Upload" onUpload='alert(event.media)'/>
 ```
 
@@ -200,13 +200,13 @@ and
 If you want to customize the handling of the file upload at the client,
 you can specify a JavaScript class when calling this method:
 
-``` xml
+```xml
 <menuitem upload="foo.Upload"/> <!-- assume you implement a JavaScript class: foo.Upload -->
 ```
 
 Another options for the upload can be specified as follows:
 
-``` xml
+```xml
 <menuitem label="Upload" upload="true,maxsize=-1,native"/>
 ```
 
@@ -251,7 +251,7 @@ uploaded a file to the component.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

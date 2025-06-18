@@ -21,7 +21,7 @@ To change the alignment of div, you can use CSS to achieve e.g.
 
 ![](/zk_component_ref/images/ZKComRef_Div_Example.png)
 
-``` xml
+```xml
 <div align="left" width="300px">
     <doublebox />
 </div>
@@ -33,7 +33,7 @@ To change the alignment of div, you can use CSS to achieve e.g.
 # Supported Events
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

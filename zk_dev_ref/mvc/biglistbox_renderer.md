@@ -2,7 +2,7 @@ The implementation of a custom renderer for a Biglistbox
 (<javadoc type="interface">org.zkoss.zkmax.zul.MatrixRenderer</javadoc>)
 is straightforward[^1]:
 
-``` java
+```java
 public class DataRenderer implements org.zkoss.zkmax.zul.MatrixRenderer<List<String>> {
  
     @Override
@@ -30,7 +30,7 @@ Then, if we have a list model
 an instance of a custom renderer called `dataRenderer`, then we can put
 them together in a ZUML document as follows:
 
-``` xml
+```xml
 <biglistbox model="${data}" matrixRenderer="${dataRenderer}"/>
 ```
 
@@ -46,4 +46,4 @@ them together in a ZUML document as follows:
 
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display
-    section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).

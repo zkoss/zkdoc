@@ -32,7 +32,7 @@ queue is only visible in the whole application.
 You could locate an event queue by invoking one of the `lookup` methods
 of <javadoc>org.zkoss.zk.ui.event.EventQueues</javadoc>. For example,
 
-``` java
+```java
 EventQueues.lookup("myQueue"); //assumes the desktop scope
 EventQueues.lookup("anotherQueue", EventQueues.SESSION, true);
 EventQueues.lookup("anotherQueue", session, true);
@@ -216,7 +216,7 @@ browser tabs of the same session</li>
 
 To publish, just invoke one of the `publish()` of <javadoc>org.zkoss.zk.ui.event.EventQueue</javadoc> (returned by `lookup()`). For example,
 
-``` java
+```java
 EventQueues.lookup("my super queue", EventQueues.APPLICATION, true)
   .publish(new Event("onSomethingHapping", null, new SomeAdditionInfo()));
 ```
@@ -235,7 +235,7 @@ with a synchronous listener, just invoke
 event. You can manipulate ZK components, update UI by notifying a bean's
 change or implement your business logic. For example:
 
-``` java
+```java
 EventQueues.lookup("my super queue", EventQueues.APPLICATION, true).subscribe(
   new EventListener() {
     public void onEvent(Event evt) {
@@ -264,7 +264,7 @@ browser.
 
 For more information and examples, please refer to [the Long Operations:
 Use Event
-Queue](ZK_Developer's_Reference/UI_Patterns/Long_Operations/Use_Event_Queues)
+Queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
 section.
 
 # Clean Up
@@ -293,7 +293,7 @@ class name in the property called
 For example, let us say we want to introduce the JMS scope, then we can
 implement as follows (only pseudo-code):
 
-``` java
+```java
 public class MyEventQueueProvider extends org.zkoss.zk.ui.event.impl.EventQueueProviderImpl {
   public EventQueue lookup(String name, String scope, boolean autocreate) {
     if ("jms".equals(scope)) {
@@ -312,7 +312,7 @@ public class MyEventQueueProvider extends org.zkoss.zk.ui.event.impl.EventQueueP
 
 Then, specify the property in `WEB-INF/zk.xml`
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zk.ui.event.EventQueueProvider.class</name>
     <value>MyEventQueueProvider</value>
@@ -329,7 +329,7 @@ ZK supports several server push implementations and configurations
 including client-polling and
 [comet](http://en.wikipedia.org/wiki/Comet_(programming)), please refer
 to [
-Server_Push/Configuration](ZK_Developer%27s_Reference/Server_Push/Configuration).
+Server_Push/Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
 
 # Use Case
 
@@ -337,7 +337,7 @@ Server_Push/Configuration](ZK_Developer%27s_Reference/Server_Push/Configuration)
 
 Here is an example: chat.
 
-``` xml
+```xml
 <window title="Chat" border="normal">
     <zscript><![CDATA[
     import org.zkoss.zk.ui.event.*;
@@ -374,7 +374,7 @@ into two: page1.zul and page2.zul.
 
 **main.zul**
 
-``` xml
+```xml
 <zk>
     <include src="page1.zul"></include>
     <include src="page2.zul"></include>
@@ -383,13 +383,13 @@ into two: page1.zul and page2.zul.
 
 **page1.zul**
 
-``` xml
+```xml
 <window title="ZUL page 1" border="normal" apply="demo.WindowComposer1">
     <button id="btn" label="change label in ZUL page 2" />
 </window>
 ```
 
-``` java
+```java
 package demo;
 public class WindowComposer1 extends SelectorComposer {
 
@@ -407,13 +407,13 @@ public class WindowComposer1 extends SelectorComposer {
 
 **page2.zul**
 
-``` xml
+```xml
 <window title="ZUL page 2" border="normal" apply="demo.WindowComposer2">
     <label id="lbl" value="label in ZUL page 2" />
 </window>
 ```
 
-``` java
+```java
 package demo;
 public class WindowComposer2 extends SelectorComposer {
 

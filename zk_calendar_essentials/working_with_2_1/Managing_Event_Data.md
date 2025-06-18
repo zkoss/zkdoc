@@ -9,7 +9,7 @@ Using <javadoc>org.zkoss.calendar.impl.SimpleCalendarEvent</javadoc> is
 a simple affair. The code below demonstrates how to construct an
 instance and provide it with necessary data.
 
-``` java
+```java
 SimpleCalendarEvent sce = new SimpleCalendarEvent();
 
 sce.setBeginDate(new Date());
@@ -60,7 +60,7 @@ contract of the
 <javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>
 interface.
 
-``` java
+```java
 import java.util.Date;
 import org.zkoss.calendar.api.CalendarEvent;
 

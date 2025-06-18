@@ -11,7 +11,7 @@ language. It must implement
 
 Example,
 
-``` xml
+```xml
 <renderer-class>org.zkoss.zul.impl.PageRenderer</renderer-class>
 ```
 

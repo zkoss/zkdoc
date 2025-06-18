@@ -6,8 +6,7 @@
 - Java API: <javadoc>org.zkoss.zul.Treefooter</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Treefooter</javadoc>
-- Style Guide: [
-  Treefooter](ZK_Style_Guide/XUL_Component_Specification/Treefooter)
+
 
 # Employment/Purpose
 
@@ -16,9 +15,9 @@ You could place any child in a tree footer.
 
 # Example
 
-![](images/ZKComRef_Tree_Example.png)
+![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
-``` xml
+```xml
 <window title="tree demo" border="normal" width="400px" >
     <tree id="tree" rows="5">
         <treecols sizable="true">
@@ -84,7 +83,7 @@ You could place any child in a tree footer.
 </table>
 
 - Inherited Supported Events: [
-  FooterElement](ZK_Component_Reference/Base_Components/FooterElement#Supported_Events)
+  FooterElement]({{site.baseurl}}/zk_component_ref/base_components/footerelement#Supported_Events)
 
 # Supported Children
 
@@ -92,7 +91,7 @@ You could place any child in a tree footer.
 
 # Use Cases
 
-[ Tree](ZK_Component_Reference/Data/Tree#Use_Cases)
+[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Use_Cases)
 
 # Version History
 

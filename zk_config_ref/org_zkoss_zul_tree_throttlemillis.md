@@ -11,7 +11,7 @@ If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor
 components.
 
-``` xml
+```xml
 <tree>
   <custom-attributes org.zkoss.zul.tree.throttleMillis="200"/>
 ...

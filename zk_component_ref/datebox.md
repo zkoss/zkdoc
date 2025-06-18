@@ -6,8 +6,7 @@
   Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: <javadoc>org.zkoss.zul.Datebox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Datebox</javadoc>
-- Style Guide: [
-  Datebox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Datebox)
+
 
 # Employment/Purpose
 
@@ -42,7 +41,7 @@ the calendar at the client by JavaScript code that overrides
 
 ![](/zk_component_ref/images/ZKComRef_Datebox_Example.PNG)
 
-``` xml
+```xml
  <datebox lenient="true" buttonVisible="false" />
  <datebox lenient="false" buttonVisible="true" />
 ```
@@ -63,7 +62,7 @@ with one or multiple following values:
 
 It also supports an interval of dates. For example,
 
-``` xml
+```xml
 <datebox constraint="between 20071225 and 20071203"/>
 <datebox constraint="before 20071225"/>
 <datebox constraint="after 20071225"/>
@@ -82,7 +81,7 @@ It also supports an interval of dates. For example,
     parsed beginning and ending date with the `getBeginDate` and
     `getEndDate` methods.
 
-``` java
+```java
 ((SimpleDateConstraint)datebox.getConstraint()).getBeginDate();
 ```
 
@@ -91,7 +90,7 @@ It also supports an interval of dates. For example,
 To specify two or more constraints, use a comma to separate them as
 follows:
 
-``` xml
+```xml
 <datebox constraint="no past,no empty"/>
 ```
 
@@ -100,7 +99,7 @@ follows:
 If you prefer to display a different message from the default one, you
 can append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <datebox constraint="no empty, no future: now or never"/>
 ```
 
@@ -111,7 +110,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <datebox constraint="no empty, no future: ${c:l('err.date.nowornever')}"/>
 ```
 
@@ -126,7 +125,7 @@ available time zones.
 
 ![](/zk_component_ref/images/ZKComRef_Datebox_Timezone.png)
 
-``` xml
+```xml
 <datebox id="datebox1" format="M/d/yy KK:mm:ss a" width="150px" displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8" timeZonesReadonly="false"/>
 ```
 
@@ -137,14 +136,14 @@ with a formatting string. The default value is `null`. When the
 formatting of the `datebox` is null, it means the date will be outputted
 using the format `yyyy/MM/dd`.
 
-``` xml
+```xml
 <datebox format="MM/dd/yyyy"/>
 ```
 
 Like any other properties, you are able to change the format
 dynamically, as depicted below.
 
-``` xml
+```xml
 <datebox id="db"/>
 <button label="set MM-dd-yyyy" onClick='db.setFormat("MM-dd-yyyy")'/>
 ```
@@ -165,7 +164,7 @@ length option. It supports four different length options mentioned at
 For example, you could specify the styling rather than the real format
 as follows.
 
-``` xml
+```xml
 <datebox format="short"/>
 <datebox format="long"/>
 ```
@@ -173,18 +172,18 @@ as follows.
 Then the real format of the datebox will be decided at run-time
 depending on the configuration. For more information, please refer to
 [ZK Developer's Reference: Date and Time
-Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/Date_and_Time_Formatting).
+Formatting]({{site.baseurl}}/zk_dev_ref/internationalization/date_and_time_formatting).
 
 In addition, you could specify the format for both date and time by
 using the syntax:
 
-``` XML
+```xml
 format="option_for_date+option_for_time"
 ```
 
 For example,
 
-``` xml
+```xml
 <datebox format="medium+full"/>
 ```
 
@@ -208,7 +207,7 @@ run-time
 
 You can enforce the locale for an individual component such as:
 
-``` xml
+```xml
 <datebox locale="de-DE" format="full"/>
 <datebox locale="fr" format="full"/>
 ```
@@ -238,7 +237,7 @@ Reference:
 
 By default, the popup position is set to `after_start`, for other
 possible popup positions please refer to
-[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/Popup#Position).
+[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/popup#Position).
 
 ## The First Day of the Week
 
@@ -249,7 +248,7 @@ the return value of the `getFirstDayOfWeek` method in the
 {% include version-badge.html version=5.0.3 %} You can control the first day of the
 week by the use of the session attribute and the library property.
 Please refer to [The First Day of the
-Week]({{site.baseurl}}/zk_dev_ref/internationalization/The_First_Day_of_the_Week)
+Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
 for details.
 
 ## 2DigitYearStart
@@ -257,7 +256,7 @@ for details.
 {% include version-badge.html version=8.6.2 %}
 
 You can control the 2DigitYearStart by the use of the library property,
-[org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/zk.xml/The_Library_Properties/org.zkoss.web.preferred.2DigitYearStart).
+[org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.preferred.2digityearstart).
 
 ## Show Week Number
 
@@ -267,7 +266,7 @@ Datebox supports to show a week number of the year in a calendar.
 
 ![](/zk_component_ref/images/ZKComRef_Datebox_Week_Of_Year.PNG)
 
-``` xml
+```xml
 <datebox weekOfYear="true" />
 ```
 
@@ -279,7 +278,7 @@ Datebox supports a link to jump back to the date of today quickly
 
 ![](/zk_component_ref/images/ZKComRef_Datebox_Link_Of_Today.PNG)
 
-``` xml
+```xml
 <datebox id="db" showTodayLink="true" ></datebox>
 ```
 
@@ -291,7 +290,7 @@ By default, there is no Timebox in the popup Calendar. If the specified
 `format` attribute contains a time format (like below), it will show a
 Timebox at the bottom of the popup Calendar.
 
-``` xml
+```xml
 <datebox format="yyyy-MM-dd HH:mm"/>
 ```
 
@@ -311,7 +310,7 @@ Available values are:
 - `month`
 - `day`.
 
-``` xml
+```xml
 <datebox format="yyyy" selectLevel="year"/>
 ```
 
@@ -324,14 +323,14 @@ changing the timezone.
 
 example:
 
-``` xml
+```xml
 <datebox closePopupOnTimezoneChange="false" displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8" timeZonesReadonly="false"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/FormatInputElement)
+FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -360,7 +359,7 @@ the component is changed by user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/FormatInputElement#Supported_Events)
+  FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
 
 # Supported Molds
 
@@ -429,7 +428,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/The_First_Day_of_the_Week) for details. |
+| 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week) for details. |
 | 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
 | 5.0.7   | April, 2011  | <javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Datebox</javadoc> supported the styling.                                                                                                                                                          |
 | 5.0.7   | April, 2011  | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Datebox</javadoc> was introduced.                                                                                                                                                                 |

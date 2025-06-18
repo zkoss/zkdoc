@@ -9,7 +9,7 @@ configuration, we can call `chart.getTitle()` to get the
 <javadoc directory="zkcharts">org.zkoss.chart.Title</javadoc> class then
 modify its attributes as below:
 
-``` java
+```java
     // Get the title option of chart
     Title title = chart.getTitle();
 
@@ -23,7 +23,7 @@ Of course you can also create a new
 <javadoc directory="zkcharts">org.zkoss.chart.Title</javadoc> class and
 assign it to chart:
 
-``` java
+```java
     // Create a new Title
     Title title = new Title();
 
@@ -99,7 +99,7 @@ without a setter available.
 
 Thus, you can set it like:
 
-``` java
+```java
 public class OptionsWithouApiComposer extends SelectorComposer<Window> {
 
     @Wire
@@ -116,6 +116,6 @@ public class OptionsWithouApiComposer extends SelectorComposer<Window> {
 
 Another example:
 
-``` java
+```java
 chart.getPlotOptions().getColumnRange().addExtraAttr("grouping", new AnyVal<Boolean>(false));
 ```

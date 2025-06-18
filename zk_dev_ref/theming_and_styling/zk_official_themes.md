@@ -88,12 +88,12 @@ supports both desktop and tablets.
 See below to take a quick view at the look and feel of **Atlantic**,
 click image to view original size.
 
-![](images/atlantic-look-and-feel.png)
+![](/zk_dev_ref/images/atlantic-look-and-feel.png)
 
 ## Not to Import Google Font
 
 Please refer to [ZK Configuration Reference/zk.xml/The Library
-Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled)
+Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.theme.atlantic.usegooglefont.disabled)
 
 # ZK Theme Pack
 
@@ -107,7 +107,7 @@ versions and are compatible with ZK 8.5's default Iceblue theme.
 To apply a theme in the theme pack, your project should include the
 theme pack jar first:
 
-``` xml
+```xml
         <dependency>
             <groupId>org.zkoss.themepack</groupId>
             <artifactId>theme-pack</artifactId>
@@ -117,19 +117,19 @@ theme pack jar first:
 
 Then apply a theme according to [ZK Developer's Reference/Theming and
 Styling/Switching
-Themes]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling/Switching_Themes).
+Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes).
 
 ## Lite themes
 
 Iceblue(**default**), Poppy, Marigold, Olive, Aurora, Lavender
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZK85_Theme_Lite.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_lite.png)
 
 ## Dark themes
 
 Ruby, Amber, Emerald, Aquamarine, Montana, Violet
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZK85_Theme_Dark.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_dark.png)
 
 ## Mix-match
 
@@ -137,7 +137,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZK85_Theme_Mix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_mix.png)
 
 ## Accessibility-ready themes
 
@@ -145,7 +145,7 @@ These themes conform to the WCAG2-compliant contrast level and focus
 styles. Note that for WCAG compliance, in addition to using a WCAG
 theme, you will also need to include the za11y (zk-accessibility) module
 to your project. Read [Developer's
-Reference/Accessibility](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Accessibility)
+Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility)
 for more information.
 
 ![ left \| thumb \| 269px \| WCAG
@@ -180,14 +180,14 @@ Features](https://www.zkoss.org/wiki/Small_Talks/2018/November/New_Features_of_Z
     - ZK Theme Pack - download from [premium
       downloads](https://www.zkoss.org/download/premium#zktheme) or [ZK
       EE maven
-      repository](https://www.zkoss.org/wiki/ZK_Installation_Guide/Maven_Setup#PE_.2F_EE_.28premium_users_only.299).
+      repository]({{site.baseurl}}/zk_installation_guide/maven_setup#PE_.2F_EE_.28premium_users_only.299).
 2.  Place theme.jar file under "**projectName/WEB-INF/lib**" folder.
 3.  Apply preferred theme by a library property in **zk.xml** file under
     "**projectName/WEB-INF**" folder
 
 <div style="margin-left: 2em">
 
-``` xml
+```xml
 <!-- zk.xml -->
 <library-property>
     <name>org.zkoss.theme.preferred</name>
@@ -199,7 +199,7 @@ Features](https://www.zkoss.org/wiki/Small_Talks/2018/November/New_Features_of_Z
 
 ## Theme Artifact
 
-``` xml
+```xml
       <dependency>
         <groupId>org.zkoss.theme</groupId>
         <artifactId>breeze</artifactId>
@@ -270,16 +270,16 @@ iceblue ---\> **iceblue_c**
 You can include multiple themes in the same application and allow your
 end-users to choose their preferred themes. For more information please
 refer to [Switching
-Themes](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Switching_Themes)
+Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes)
 
 # Customizing a Theme
 
 To build a custom theme based on a standard ZK theme, read [Customize a
 standard
-theme](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Customizing_Standard_Themes).
+theme]({{site.baseurl}}/zk_dev_ref/theming_and_styling/customizing_standard_themes).
 
 Also, reference [Theming and
-Styling](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling).
+Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling).
 
 # Version History
 

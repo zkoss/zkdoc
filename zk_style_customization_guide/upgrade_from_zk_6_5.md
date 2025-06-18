@@ -10,7 +10,7 @@ on the element will consider border width.
 In ZK 6.5, assuming you have specified a DIV with a fixed width, `102px`
 including borders (2px) like:
 
-``` css
+```css
 .z-div {
     border: 1px solid #000000;
     width: 100px;
@@ -22,7 +22,7 @@ However, after upgrading to ZK 7 or above, the DIV width will become
 `box-sizing: border-box` applied by default. If you want to keep the DIV
 width as 102px in ZK 7, modify the original style as follows:
 
-``` css
+```css
 .z-div {
     border: 1px solid #000000;
     width: 102px;
@@ -31,7 +31,7 @@ width as 102px in ZK 7, modify the original style as follows:
 
 or
 
-``` css
+```css
 .z-div {
     border: 1px solid #000000;
     width: 100px;
@@ -51,12 +51,12 @@ transparently.
 ## Upgrade sample
 
 In this
-[smalltalk](Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
+[smalltalk](https://www.zkoss.org/wiki/Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
 we showed you how to customize the **button** component using CSS 3 with
 the *os* mold based on ZK 6.5. Originally the style for an os mold
 button was overridden using the class *z-button-os*.
 
-``` css
+```css
 .z-button-os {
     color: #FFFFFF;
     font-weight: bold;
@@ -68,7 +68,7 @@ While in ZK 6.5, the button has 2 separate mold implementations (trendy
 and os), now in ZK7 both molds share the same markup using the same CSS
 class "z-button" (default mold). Here the new style override:
 
-``` css
+```css
 .z-button {
     color: #FFFFFF;
     font-weight: bold;
@@ -96,7 +96,7 @@ modeclass*" pattern.
 
 For example,
 
-``` html
+```html
 <div class="z-window z-window-embedded">
     <div class="z-window-header"></div>
     <div class="z-window-content"></div>
@@ -110,11 +110,11 @@ simply override CSS class *z-window-content*.
 ## Upgrade sample
 
 In this [
-smalltalk](Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
+smalltalk](https://www.zkoss.org/wiki/Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
 we showed how to customize window component's close icon for all modes
 as follows:
 
-``` css
+```css
 .z-window-embedded-close,
 .z-window-overlapped-close,
 .z-window-popup-close,
@@ -133,7 +133,7 @@ as follows:
 
 In ZK 7, you can remove *-mode* part for all modes.
 
-``` css
+```css
 .z-window-close {
     background: url('../img/wnd-icon.png') no-repeat scroll 0 0;
 }
@@ -161,13 +161,13 @@ therefore, the complex 3 x 3 grid structure is no longer needed.
 ## Upgrade Sample
 
 In this
-[smalltalk](Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
+[smalltalk](https://www.zkoss.org/wiki/Small_Talks/2011/December/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3)
 we showed how to customize the **window** component using CSS 3 based on
 3 x 3 grid structure. Originally we had to override several CSS classes
 (z-component-**tl**, z-component-**tm**, z-component-**tr**, and etc.)
 to add rounded corners to the window head (line 9).
 
-``` css
+```css
 .z-window-embedded-tl,
 .z-window-embedded-tm,
 .z-window-embedded-tr {
@@ -193,7 +193,7 @@ to add rounded corners to the window head (line 9).
 
 In ZK 7, the DOM structure of the window component is simplified.
 
-``` html
+```html
 <div class="z-window">
     <div class="z-window-header"></div>
     <div class="z-window-content"></div>
@@ -203,7 +203,7 @@ In ZK 7, the DOM structure of the window component is simplified.
 Therefore, it is sufficient to just override the *z-window* class, to
 add rounded corners:
 
-``` css
+```css
 .z-window {
     border-radius: 4px 4px 0 0;
     /* omitted */
@@ -267,11 +267,11 @@ like **\[disabled\]** to make it more intuitive.
 
 ## Upgrade Sample
 
-In this [smalltalk](Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2)
+In this [smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2)
 we demonstrate how to customize comboitem style when it is selected by
 overriding CSS class *z-comboitem-seld* in ZK 6.5 as follows:
 
-``` css
+```css
 .z-combobox-pp .z-comboitem-over,
 .z-combobox-pp .z-comboitem-seld {
     color: #2BCCDA;
@@ -282,7 +282,7 @@ overriding CSS class *z-comboitem-seld* in ZK 6.5 as follows:
 In ZK 7, the CSS class name is change to full name
 *z-comboitem-selected*, therefore, you have to modify it as follows:
 
-``` css
+```css
 .z-combobox-popup .z-comboitem:hover,
 .z-combobox-popup .z-comboitem-selected {
     color: #2BCCDA;
@@ -313,10 +313,10 @@ up](http://fortawesome.github.io/Font-Awesome/icon/caret-up/) font icon.
 ## Upgrade Sample
 
 In this [
-smalltalk](Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2),
+smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Customize_Look_and_Feel_of_ZK_Components_Using_CSS3_-_Part_2),
 we customize combobox button with custom image as follows:
 
-``` css
+```css
 .z-combobox-btn {
     background: url('../img/combo-btn.png') no-repeat;
 }
@@ -326,7 +326,7 @@ However, after upgrade to ZK 7, you can see not only the image showed,
 the font icon that ZK 7 uses by default also shows up. To disable the
 font icon you can override the font icon CSS class as follows:
 
-``` css
+```css
 .z-combobox-button {
     background: url('../img/combo-btn.png') no-repeat;
 }
@@ -337,7 +337,7 @@ font icon you can override the font icon CSS class as follows:
 
 or
 
-``` css
+```css
 .z-combobox-button {
     background: url('../img/combo-btn.png') no-repeat;
 }
@@ -362,7 +362,7 @@ The custom scrollbar consists of two buttons to click for scrolling
 left/right, an indicator to represent current scroll position and a rail
 to slide indicator. Therefore, we need to override CSS class as follows:
 
-``` css
+```css
 /* Two buttons to click for scrolling left/right */
 .z-scrollbar-left, .z-scrollbar-right {
     background: #FFFFFF;
@@ -398,7 +398,7 @@ You can check the customized result.
 To disable custom scrollbar provided by ZK 7. Add the library property
 called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.zul.nativebar</name>
     <value>true</value>

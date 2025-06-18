@@ -29,7 +29,7 @@ In this example, an `Idspace` component is used as the topmost component to grou
 
 Try it
 
-* [Idspace Example](https://zkfiddle.org/sample/164o6hq/1-ZK-Component-Reference-Idspace-Example?v=latest&t=Iceblue%20Compact)
+* [Idspace Example](https://zkfiddle.org/sample/164o6hq/1-ZK-Component-Reference-Idspace-Example?v=latest&t=Iceblue_Compact)
 
 ## Supported Children
 

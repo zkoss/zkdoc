@@ -6,7 +6,7 @@
 
 To check a <b>*checkbox* , *radiogroup*, or *menuitem*</b>.
 
-``` java
+```java
 
 //check
 desktopAgent.query("#chechbox" + i).as(CheckAgent.class).check(true);

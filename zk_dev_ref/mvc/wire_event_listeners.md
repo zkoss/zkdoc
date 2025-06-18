@@ -9,11 +9,11 @@ of an event name and a selector, separated by a semicolon.
 
 ZK will look for the target component specified by the selector **in the
 same [ ID
-space](ZK%20Developer's%20Reference/UI%20Composing/ID%20Space)**.
+space](ZK_Developer's_Reference/ui_composing/ID_Space)**.
 
 For example,
 
-``` java
+```java
 @Listen("onClick = #btn0")
 public void submit(MouseEvent event) {
     // called when onClick is received on the component of id btn0.
@@ -35,7 +35,7 @@ listener:
 
 For example,
 
-``` java
+```java
 @Listen("onChange = textbox#input0")
 public void change() {
     // called when onChange is received on the textbox of id input0.
@@ -59,7 +59,7 @@ which component receives the event, you can retrieve it from
 
 For example,
 
-``` java
+```java
 @Listen("onClick = grid#myGrid > rows > row")
 public void click(MouseEvent event) {
     // called when onClick is received on any Row directly under the Grid of id myGrid
@@ -78,7 +78,7 @@ method.
 
 For example,
 
-``` java
+```java
 @Listen("onClick = button#submit; onOK = textbox#password")
 public void submit(Event event) {
     // called when onClick is received on #submit, or onOK (Enter key pressed) is received on #password
@@ -94,7 +94,7 @@ Listeners without a priority number will be set to 0 automatically.
 
 For example,
 
-``` java
+```java
 @Listen("onClick(1) = #btn0")
 public void submit1(MouseEvent event) {
         // called before submit2 method when onClick is received on the component of id btn0.

@@ -1,11 +1,11 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/MVC/View/Template/Listbox_Template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
 you can render a searchbox with a template. However, notice that, unlike
 other components, searchbox doesn't allow any child component, so you
 have to render each item as a string, a \<label\> or a \<html\>. For
 example,
 
-``` xml
+```xml
 <searchbox model="${users}">
     <template name="model">
         Name is ${each}
@@ -30,7 +30,7 @@ example,
 where we assume there is a list model
 (<javadoc>org.zkoss.zul.ListModel</javadoc>) called `users` such as:
 
-``` java
+```java
 ListModelList model = new ListModelList(new String[] { "Tony", "Ryan", "Jumper", "Wing", "Sam" });
 ```
 

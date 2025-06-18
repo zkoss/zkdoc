@@ -5,11 +5,11 @@
 We usually implement file downloading through
 <javadoc>org.zkoss.zul.Filedownload</javadoc> when some events are
 triggered (For more details, please refer to
-[ZK_Component_Reference/Essential_Components/Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/Filedownload)). Following is a simple implementation of downloading a file:
+[ZK_Component_Reference/Essential_Components/Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)). Following is a simple implementation of downloading a file:
 
 **download.zul**
 
-``` xml
+```xml
 <zk>
     <div apply="DownloadComposer">
         <button id="btn" label="download" />
@@ -19,7 +19,7 @@ triggered (For more details, please refer to
 
 **DownloadComposer.java**
 
-``` java
+```java
 public class DownloadComposer extends GenericForwardComposer {
     @Listen("onClick=#btn")
     public void download() throws IOException {
@@ -47,7 +47,7 @@ function are as follows:
     agent
 3.  fetch and verify the information or content of the resource
 
-``` java
+```java
 @Test
 public void test() throws Exception {
     DesktopAgent desktop = Zats.newClient().connect("/essentials/download.zul");

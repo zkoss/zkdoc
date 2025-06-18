@@ -3,7 +3,7 @@
 # Panel
 
 - Component Reference:
-  [Panel](ZK_Component_Reference/Containers/Panel)
+  [Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support
@@ -13,11 +13,11 @@ appear. To enable this, please specifiy the style with "overflow:auto"
 
 For example,
 
-``` xml
+```xml
 <panelchildren style="overflow:auto">
 ```
 
-![](images/Panel_Tablet_Scrolling_Example.png)
+![](/zk_component_ref/images/Panel_Tablet_Scrolling_Example.png)
 
 # Version History
 

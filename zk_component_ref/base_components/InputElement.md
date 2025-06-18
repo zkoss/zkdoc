@@ -57,7 +57,7 @@ The following example demonstrates the usage of various input elements in a `<gr
 ![Input Elements Example](CrInputs.png)
 
 Try it
-*  [Input Elements](https://zkfiddle.org/sample/25n9son/1-ZK-Component-Reference-InputElement-Example?v=latest&t=Iceblue%20Compact)
+*  [Input Elements](https://zkfiddle.org/sample/25n9son/1-ZK-Component-Reference-InputElement-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Validation
@@ -83,7 +83,7 @@ ZK allows specifying conditions using constraints such as `no empty` and `no neg
 | `between yyyyMMdd and yyyyMMdd`| Dates allowed only within a specified range. <br/> For example, <br/> `<datebox constraint="between 20231225 and 20241203"/>`|
 | `after yyyyMMdd`| Dates allowed after the specified date. <br/> For example, <br/> `<datebox constraint="after 20231225"/>` |
 | `before yyyyMMdd`| Dates allowed before the specified date. <br/> For example, <br/> `<datebox constraint="before 20231225"/>`|
-| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](../Essential_Components/Popup.md) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
+| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](../essential_components/Popup.md) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
 
 
 For example,
@@ -94,7 +94,7 @@ For example,
 ```
 
 Try it
-*  [Input Constraint](https://zkfiddle.org/sample/1h7fbim/1-ZK-Component-Reference-InputElement-Constraint-Example?v=latest&t=Iceblue%20Compact)
+*  [Input Constraint](https://zkfiddle.org/sample/1h7fbim/1-ZK-Component-Reference-InputElement-Constraint-Example?v=latest&t=Iceblue_Compact)
 
 
 #### Regular Expression
@@ -111,7 +111,7 @@ new Textbox().setContraint("/.+@.+\\.[a-z]+/");
 ```
 
 Try it
-*  [Input Regular Expression](https://zkfiddle.org/sample/16ljcgr/1-ZK-Component-Reference-InputElement-Regular-Expressi-Example?v=latest&t=Iceblue%20Compact)
+*  [Input Regular Expression](https://zkfiddle.org/sample/16ljcgr/1-ZK-Component-Reference-InputElement-Regular-Expressi-Example?v=latest&t=Iceblue_Compact)
 
 
 #### Flags
@@ -130,7 +130,7 @@ For example:
 ```
 
 Try it
-*  [Input Regular Expression Flag](https://zkfiddle.org/sample/1dpau85/1-ZK-Component-Reference-InputElement-Regular-Expressi-Example?v=latest&t=Iceblue%20Compact)
+*  [Input Regular Expression Flag](https://zkfiddle.org/sample/1dpau85/1-ZK-Component-Reference-InputElement-Regular-Expressi-Example?v=latest&t=Iceblue_Compact)
 
 Notice: the regular expression will always use global match no matter if the g flag is added or not.
 
@@ -149,7 +149,7 @@ of course, it supports multiple custom messages
 ```
 
 Try it
-*  [Input Multiple Constraints](https://zkfiddle.org/sample/1d6mvdu/1-ZK-Component-Reference-InputElement-Multiple-Constraints?v=latest&t=Iceblue%20Compact)
+*  [Input Multiple Constraints](https://zkfiddle.org/sample/1d6mvdu/1-ZK-Component-Reference-InputElement-Multiple-Constraints?v=latest&t=Iceblue_Compact)
 
 
 #### i18n Error Message
@@ -173,7 +173,7 @@ In cases where a longer sentence with a comma separator is required, you can enc
 
 #### Scrollable Error Message
 
-If you need to display an error message box that moves with scrolling, you can use [the `data-scrollable` attribute]({{site.baseurl}}/zuml_ref/ZUML/Namespaces/Client_Attribute/Data-Scrollable). This attribute allows the error message box to remain visible even when the page is scrolled.
+If you need to display an error message box that moves with scrolling, you can use [the `data-scrollable` attribute]({{site.baseurl}}/zuml_ref/zuml/namespaces/client_attribute/data-scrollable). This attribute allows the error message box to remain visible even when the page is scrolled.
 
 
 ### Custom Constraint
@@ -229,7 +229,7 @@ And, here is the result
 ![Custom Constraint](CrCustomConstraint.png)
 
 Try it
-*  [Input Custom Constraint](https://zkfiddle.org/sample/26fnvg1/1-ZK-Component-Reference-InputElement-Custom-Constraint?v=latest&t=Iceblue%20Compact)
+*  [Input Custom Constraint](https://zkfiddle.org/sample/26fnvg1/1-ZK-Component-Reference-InputElement-Custom-Constraint?v=latest&t=Iceblue_Compact)
 
 
 ### Validate at Client for Better Responsiveness
@@ -286,7 +286,7 @@ Example:
 ```
 
 Try it
-*  [Input Inplace](https://zkfiddle.org/sample/3dmfi4j/1-ZK-Component-Reference-InputElement-Inplace?v=latest&t=Iceblue%20Compact)
+*  [Input Inplace](https://zkfiddle.org/sample/3dmfi4j/1-ZK-Component-Reference-InputElement-Inplace?v=latest&t=Iceblue_Compact)
 
 
 ### Instant
@@ -320,7 +320,7 @@ For example,
 ```
 
 Try it
-*  [Input InputAttributes](https://zkfiddle.org/sample/33i8sgb/1-ZK-Component-Reference-InputElement-InputAttributes?v=latest&t=Iceblue%20Compact)
+*  [Input InputAttributes](https://zkfiddle.org/sample/33i8sgb/1-ZK-Component-Reference-InputElement-InputAttributes?v=latest&t=Iceblue_Compact)
 
 ## Supported Events
 

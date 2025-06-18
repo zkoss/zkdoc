@@ -5,8 +5,7 @@
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
 - Java API: <javadoc>org.zkoss.zul.Tabbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabbox</javadoc>
-- Style Guide: [
-  Tabbox](ZK_Style_Guide/XUL_Component_Specification/Tabbox)
+
 
 # Employment/Purpose
 
@@ -15,10 +14,10 @@ components. A row of tabs is displayed at the top (or left or other
 location) of tabbox which may be used to switch between each group. It
 allows developers to separate a large number of components into several
 groups (each group is contained in [a
-tabpanel](ZK_Component_Reference/Containers/Tabbox/Tabpanel)).
+tabpanel]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanel)).
 Only one group is visible at the time, such that the user interface
 won't be too complicate to read. Once [the
-tab](ZK_Component_Reference/Containers/Tabbox/Tab) of an
+tab]({{site.baseurl}}/zk_component_ref/containers/tabbox/tab) of an
 invisible group is clicked, it becomes visible and the previous visible
 group becomes invisible.
 
@@ -28,9 +27,9 @@ The visible group is called *selected*, which can be retrieved by use of
 
 # Example
 
-![](images/ZKComRef_Tabbox_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Tabbox_Examples.PNG)
 
-``` xml
+```xml
 <zk>
     <tabbox width="400px">
         <tabs>
@@ -63,16 +62,16 @@ The visible group is called *selected*, which can be retrieved by use of
 The Tabbox supports the inclusion of other controls within its tab bar,
 thus allowing more freedom and layout options when creating layouts
 which include a
-[toolbar](ZK_Component_Reference/Essential_Components/Toolbar).
+[toolbar]({{site.baseurl}}/zk_component_ref/essential_components/toolbar).
 The screenshot below demonstrates an example Tabbox which includes extra
 controls in the tab bar acting like a menu system.
 
 Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient
 Tabbox.
 
-![](images/ZKComRef_Tabbox_Toolbar_Examples.png)
+![](/zk_component_ref/images/ZKComRef_Tabbox_Toolbar_Examples.png)
 
-``` xml
+```xml
 <tabbox width="250px">
     <tabs>
         <tab label="Tab 1" closable="true" />
@@ -111,9 +110,9 @@ includes 3 tabpanels and all of them use the maximum height.
 
 Note: The Client ROD feature will be disabled if it is set to true.
 
-![](images/tabbox_maximalHeight_0.png)![](images/tabbox_maximalHeight_1.png)![](images/tabbox_maximalHeight_2.png)
+![](/zk_component_ref/images/tabbox_maximalHeight_0.png)![](/zk_component_ref/images/tabbox_maximalHeight_1.png)![](/zk_component_ref/images/tabbox_maximalHeight_2.png)
 
-``` xml
+```xml
 <tabbox maximalHeight="true" width="300px">
     <tabs id="tabs0">
         <tab label="Tab1" />
@@ -167,7 +166,7 @@ tabbox.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -190,36 +189,36 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/tabbox_mold_default.png)</td>
+<td>![](/zk_component_ref/images/tabbox_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>accordion</p>
 </center></td>
-<td>![](images/tabbox_mold_accordion.png)</td>
+<td>![](/zk_component_ref/images/tabbox_mold_accordion.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>accordion-lite</p>
 </center></td>
-<td><p>![](images/tabbox_mold_accordion-lite.png)</td>
+<td><p>![](/zk_component_ref/images/tabbox_mold_accordion-lite.png)</td>
 </tr>
 <tr class="odd">
 <td><center>
 <p>right</p>
 </center></td>
-<td>![](images/tabbox_orient_vertical-right.png)</td>
+<td>![](/zk_component_ref/images/tabbox_orient_vertical-right.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>bottom</p>
 </center></td>
-<td>![](images/tabbox_orient_bottom.png‎)</td>
+<td>![](/zk_component_ref/images/tabbox_orient_bottom.png‎)</td>
 </tr>
 </tbody>
 </table>
 
-``` xml
+```xml
 <tabbox orient="bottom">
 </tabbox>
 ```
@@ -230,6 +229,6 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Tabs`](ZK_Component_Reference/Containers/Tabbox/Tabs)`, `[` Tabpanels`](ZK_Component_Reference/Containers/Tabbox/Tabpanels)`, `[`Toolbar`](ZK_Component_Reference/Essential_Components/Toolbar)
+`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/essential_components/toolbar)
 
 

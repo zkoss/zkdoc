@@ -5,7 +5,7 @@
 Syntax
 ======
 
-``` java
+```java
 @Destroy
 
 @Destroy(superclass=true)
@@ -101,7 +101,7 @@ class CorrectChild extends Parent {
 
 Example
 =======
-``` java
+```java
 public class FooViewModel {
     @Destroy
     public void destroyFoo() {

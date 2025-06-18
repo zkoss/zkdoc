@@ -32,7 +32,7 @@ official documentation\].
 
 in pure html:
 
-``` xml
+```xml
   <div id="div1"></div>
   <script>
     console.log("scroll position: " + $('#div1').scrollTop());
@@ -55,7 +55,7 @@ nodes matching the criteria id=”object1”
 
 in a zk page:
 
-``` xml
+```xml
     <div sclass="class1"><div>
     <script>
         console.log("scroll position: " + jq(".class1').scrollTop());
@@ -89,7 +89,7 @@ id=”object1”
 
 In a zk page:
 
-``` xml
+```xml
     <textbox id="tb"/>
     <script>
         console.log("client-side textbox value: "zk.$("$tb").getValue());
@@ -111,7 +111,7 @@ nodes representing a ZK component.
 Using the \$ selector, it is possible to retrieve an object based on the
 component id.
 
-``` xml
+```xml
     <textbox id="tb"/>
     <script>
         console.log("client-side textbox value: "zk.$("$tb").getValue());
@@ -124,7 +124,7 @@ The "@" selector will match ZK components names. For example, if a
 <textbox/> component is created in a zul page, objects matching this
 component can be selected using the “@textbox” selector.
 
-``` xml
+```xml
     <textbox id="tb"/>
     <script>
         console.log("client-side textbox value: "zk.$("@textbox").getValue());
@@ -140,7 +140,7 @@ this DOM node.
 
 In a zk page:
 
-``` xml
+```xml
     <textbox id="tb"/>
     <script>
         var domNode = jq("$tb")[0];
@@ -160,7 +160,7 @@ widget.
 
 In a zk page:
 
-``` xml
+```xml
     <textbox id="tb" sclass="class1"/>
     <script>
         var jqObject = jq("$tb");
@@ -184,7 +184,7 @@ subnode of the listbox widget. However, if called on a textbox widget
 
 In a zk page:
 
-``` xml
+```xml
     <textbox id="tb" sclass="class1"/>
     <script>
         var zkWidget = zk.$("$tb");

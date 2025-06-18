@@ -4,7 +4,7 @@ Here we describe how to implement a groups model
 (<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>). For the
 concept of component, model and render, please refer to [the
 Model-driven Display
-section]({{site.baseurl}}/zk_dev_ref/MVC/Model/List_Model#Model-driven_Display).
+section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 A groups model is used to drive components that support groups of data.
 The groups of data is a two-level tree of data: a list of grouped data
@@ -31,7 +31,7 @@ If your data is already grouped and the grouping won't be changed, then
 you could use <javadoc>org.zkoss.zul.SimpleGroupsModel</javadoc> as
 follows:
 
-``` xml
+```xml
 <zk>
     <zscript>
         String[][] datas = new String[][] {
@@ -65,7 +65,7 @@ follows:
 
 Then, the result
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrGroupsModel.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodel.png)
 
 # Sorting and Regrouping
 
@@ -97,7 +97,7 @@ and re-grouping as described below:
     and
     <javadoc method="setSortDescending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>.
 
-![](images/Grouping_model_explain.png)
+![](/zk_dev_ref/images/Grouping_model_explain.png)
 
 # Example: Grouping Tabular Data
 
@@ -105,9 +105,9 @@ Suppose you have the data in a two-dimensional array (see below), and
 you want to allow the user to group them based on a field selected by
 the user (such as food's name or food's calories).
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrGroupsModelArray.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodelarray.png)
 
-``` java
+```java
 //Data
 Object[][] _foods = new Object[][] { //Note: the order does not matter
     new Object[] { "Vegetables", "Asparagus", "Vitamin K", 115, 43},
@@ -142,7 +142,7 @@ Object[][] _foods = new Object[][] { //Note: the order does not matter
 Then, we can make it a groups model by extending from
 <javadoc>org.zkoss.zul.GroupsModelArray</javadoc>:
 
-``` java
+```java
 //GroupsModel
 package foo;
 public class FoodGroupsModel extends GroupsModelArray {
@@ -164,7 +164,7 @@ public class FoodGroupsModel extends GroupsModelArray {
 In addition, we have to implement a comparator to group the data based
 on the given column as follows.
 
-``` java
+```java
 package foo;
 public class FoodComparator implements java.util.Comparator {
     int _col;
@@ -185,7 +185,7 @@ public class FoodComparator implements java.util.Comparator {
 Since the data will be displayed in multiple columns, we have to
 implement a renderer. Here is an example.
 
-``` java
+```java
 public class FoodGroupRenderer implements RowRenderer {
     public void render(Row row, java.lang.Object obj, int index) {
         if (row instanceof Group) {
@@ -206,7 +206,7 @@ public class FoodGroupRenderer implements RowRenderer {
 
 Finally we could group them together in a ZUML document as follows.
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" ?>
 <grid rowRenderer="${c:new('foo.FoodGroupRenderer')}"
    model="${c:new1('foo.FoodGroupsModel', c:new2('foo.FoodComparator', 0, true))}">
@@ -256,7 +256,7 @@ supports `auto(0)`, `auto(1)`, etc.
 
 Thus, we can simplify the above example as follows.
 
-``` xml
+```xml
 <grid apply="foo.FoodComposer">
     <columns menupopup="auto"> <!-- turn on column's menupopup -->
         <column label="Category" sort="auto(0)"
@@ -271,7 +271,7 @@ Thus, we can simplify the above example as follows.
 
 And, the composer is as follows.
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.util.Composer;
@@ -291,7 +291,7 @@ public class FoodComposer implements Composer {
 Suppose you have a collection of JavaBean objects (i.e., with the proper
 getter methods) as follows.
 
-``` java
+```java
 public class Food {
     String _category,  _name, _nutrients;
     int _percentageOfDaily, _calories;
@@ -325,7 +325,7 @@ Assume you want to use the value of the field that the user uses to
 group the data, then you could override
 <javadoc>org.zkoss.zul.GroupsModelArray</javadoc> as follows.
 
-``` java
+```java
 public class FoodGroupsModel extends GroupsModelArray {
     public FoodGroupsModel(Food[] foods) {
         super(foods, new FieldComparator("category", true));
@@ -347,7 +347,7 @@ where
 
 We also need a custom renderer:
 
-``` java
+```java
 package foo;
 import org.zkoss.lang.reflect.Fields;
 import org.zkoss.zk.ui.*;
@@ -398,7 +398,7 @@ to retrieve it. If the field name is in a compound format, such as
 > <javadoc method="setSort(java.lang.String)">org.zkoss.zul.Column</javadoc>,
 > i.e., "category".
 >
-> ``` java
+> ```java
 >         Column column = (Column)row.getGrid().getColumns().getChildren().get(index);
 >         String field = ((FieldComparator)column.getSortAscending()).getRawOrderBy();
 >         return Fields.get(food, field).toString();
@@ -406,7 +406,7 @@ to retrieve it. If the field name is in a compound format, such as
 
 Then, you could have the ZUML document as follows.
 
-``` xml
+```xml
 <grid apply="foo.FoodComposer">
     <columns menupopup="auto">
         <column label="Category" sort="auto(category)" sortDirection="ascending"/>
@@ -420,7 +420,7 @@ Then, you could have the ZUML document as follows.
 
 And, the composer is as follows.
 
-``` java
+```java
 package foo;
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.util.Composer;
@@ -455,7 +455,7 @@ override
 <javadoc method="createGroupFoot(java.lang.Object[], int, int)">org.zkoss.zul.GroupsModelArray</javadoc>.
 For example,
 
-``` java
+```java
 public class FoodGroupsModel extends GroupsModelArray {
     protected Object createGroupFoot(Object[] groupdata, int index, int col) {
         return "Total " + groupdata.length + " items";

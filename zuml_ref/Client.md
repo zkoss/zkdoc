@@ -8,7 +8,7 @@ event listeners and properties.
 
 For example,
 
-``` xml
+```xml
 <combobox xmlns:w="client" w:onFocus="this.open()"/>
 ```
 

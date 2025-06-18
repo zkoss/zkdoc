@@ -4,7 +4,7 @@
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)
 - JavaScript API: N/A
-- Style Guide: N/A
+
 
 Check [our Maven repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for the latest version.
 
@@ -44,7 +44,7 @@ Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmaps
 
 In zk.xml
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.gmaps.apiKey</name>
     <value>your_key</value>
@@ -108,9 +108,9 @@ To move the Maps center smoothly, you can control it by calling `Gmaps.panTo()` 
 ```
 
 ## Use with Ginfo and Gmarker
-![](images/ZKComRef_Gmaps_Example.png)
+![](/zk_component_ref/images/ZKComRef_Gmaps_Example.png)
 
-``` xml
+```xml
     <!-- you may wish to specify the version of google map API manually for some reason, 
         use version="[version]" to do it.
         ex: <gmaps version="3.25" id="mymap" ... /> -->
@@ -166,11 +166,11 @@ Specify which protocol to load the Maps API. Currently it supports
 <td><p><strong>Event:</strong>
 <javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
 the user has selected a new item(can be <a
-href="ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Ginfo"
+href="{{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo"
 title="wikilink"> Ginfo</a>, <a
-href="ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline"
+href="{{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline"
 title="wikilink"> Gpolyline</a>, or <a
-href="ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolygon"
+href="{{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolygon"
 title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
 </tr>
 <tr class="even">
@@ -178,7 +178,7 @@ title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
 <p><code>onInfoChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/InfoChangeEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/infochangeevent" title="wikilink">
 InfoChangeEvent</a></p>
 <p>Notifies that the current open information window has
 changed(opened/closed)</p></td>
@@ -188,7 +188,7 @@ changed(opened/closed)</p></td>
 <p><code>onMapDrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapDropEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/mapdropevent" title="wikilink">
 MapDropEvent</a></p>
 <p>Notifies that some component is dragged and dropped on the gmaps or
 gmarker component with latitude and longitude information.</p></td>
@@ -199,7 +199,7 @@ gmarker component with latitude and longitude information.</p></td>
 <p><code>onMapDoubleClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapMouseEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/mapmouseevent" title="wikilink">
 MapMouseEvent</a></p>
 <p>Notifies that some mouse action has been applied on the gmaps or
 gmarker component with latitude and longitude information.</p></td>
@@ -209,7 +209,7 @@ gmarker component with latitude and longitude information.</p></td>
 <p><code>onMapMove</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapMoveEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/mapmoveevent" title="wikilink">
 MapMoveEvent</a></p>
 <p>Notifies that the view center (latitude, longitude) of the gmaps has
 been moved.</p></td>
@@ -219,7 +219,7 @@ been moved.</p></td>
 <p><code>onMapTypeChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapTypeChangeEvent"
+href="{{site.baseurl}}/zk_component_ref/events/maptypechangeevent"
 title="wikilink"> MapTypeChangeEvent</a></p>
 <p>Notifies that the map type of the gmaps has been changed.</p></td>
 </tr>
@@ -228,7 +228,7 @@ title="wikilink"> MapTypeChangeEvent</a></p>
 <p><code>onMapZoom</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="ZK_Component_Reference/Events/MapZoomEvent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/events/mapzoomevent" title="wikilink">
 MapZoomEvent</a></p>
 <p>Notifies that the zoom level of the gmaps has been changed.</p></td>
 </tr>
@@ -236,7 +236,7 @@ MapZoomEvent</a></p>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Work with MVVM
 
@@ -253,7 +253,7 @@ You can download the sample project
 
 WEB-INF/gmapsz-bind-addon.xml
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <language-addon>
     <!-- The name of this addon. It must be unique -->
@@ -397,7 +397,7 @@ WEB-INF/gmapsz-bind-addon.xml
 
 then add it into WEB-INF/zk.xml
 
-``` xml
+```xml
 <zk>
     <language-config>
         <addon-uri>/WEB-INF/gmapsz-bind-addon.xml</addon-uri>
@@ -407,7 +407,7 @@ then add it into WEB-INF/zk.xml
 
 # Supported Children
 
-`*`[` Ginfo`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Ginfo)`, `[` Gmarker`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gmarker)`,`[` Gpolyline`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolyline)`,`[` Gpolygon`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gpolygon)`,`[` Gimage`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gimage)`,`[` Gscreen`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gscreen)`,`[` Gcircle`](ZK_Component_Reference/Diagrams_and_Reports/Gmaps/Gcircle)
+`*`[` Ginfo`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo)`, `[` Gmarker`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gmarker)`,`[` Gpolyline`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolyline)`,`[` Gpolygon`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gpolygon)`,`[` Gimage`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gimage)`,`[` Gscreen`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gscreen)`,`[` Gcircle`]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/gcircle)
 
 # Trouble Shooting
 

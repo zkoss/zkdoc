@@ -14,4 +14,4 @@ them and it is also a good source to know how a custom theme works.
 
 For more details about customize theme and how to apply customize CSS,
 please refer to [ Theming and
-Styling]({{site.baseurl}}/zk_dev_ref/Theming_and_Styling).
+Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling).

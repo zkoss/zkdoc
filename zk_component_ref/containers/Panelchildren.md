@@ -30,7 +30,7 @@ The following example demonstrates the usage of Panelchildren within Panel compo
 
 Try it
 
-* [Panelchildren Example](https://zkfiddle.org/sample/260lpts/1-ZK-Component-Reference-Panelchildren-Example?v=latest&t=Iceblue%20Compact)
+* [Panelchildren Example](https://zkfiddle.org/sample/260lpts/1-ZK-Component-Reference-Panelchildren-Example?v=latest&t=Iceblue_Compact)
 
 
 In the above example:

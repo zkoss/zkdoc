@@ -10,7 +10,7 @@ It specifies the class used to instantiate a macro component.
 
 Example,
 
-``` xml
+```xml
 <macro-template>
     <macro-class>org.zkoss.zk.ui.HtmlMacroComponent</macro-class>
 </macro-template>

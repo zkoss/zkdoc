@@ -8,8 +8,7 @@
   Tree)](http://www.zkoss.org/zkdemo/tree/paging)
 - Java API: <javadoc>org.zkoss.zul.Paging</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Paging</javadoc>
-- Style Guide: [
-  Paging](ZK_Style_Guide/XUL_Component_Specification/Paging)
+
 
 # Employment/Purpose
 
@@ -18,9 +17,9 @@ content into multiple pages. If a component has long content to display,
 you could separate them into pages, and then use a paging component as a
 controller to allow the user decide which page to display.
 
-The [listbox](ZK_Component_Reference/Data/Listbox),
-[grid](ZK_Component_Reference/Data/Grid) and
-[tree](ZK_Component_Reference/Data/Tree) components support
+The [listbox]({{site.baseurl}}/zk_component_ref/data/listbox),
+[grid]({{site.baseurl}}/zk_component_ref/data/grid) and
+[tree]({{site.baseurl}}/zk_component_ref/data/tree) components support
 the paging intrinsically, so you don't need to specify a paging
 component explicitly. In other words, they will instantiate and manage a
 paging component automatically if the paging mold is specified. Of
@@ -33,11 +32,11 @@ and/or trees with one single paging component.
 For example, suppose you have 100 items and prefer to show 20 items at a
 time, then you can use the paging components as follows.
 
-``` xml
+```xml
 <paging totalSize="100" pageSize="20"/>
 ```
 
-![](images/paging_mold_default.png)
+![](/zk_component_ref/images/paging_mold_default.png)
 
 When a user clicks on the hyperlinks, the `onPaging` event is sent with
 an instance of <javadoc>org.zkoss.zul.event.PagingEvent</javadoc> to the
@@ -46,7 +45,7 @@ you should add a listener to the paging component. Please note that the
 code below is pseudo code. For real examples, please refer to [User
 Cases](#Use_Cases) below.
 
-``` xml
+```xml
 <zk>
     <div id="content"/> <!-- the long content is displayed here -->
     <paging id="paging" />
@@ -82,7 +81,7 @@ Cases](#Use_Cases) below.
 used to disable the paging component. It can block the user from
 navigating through the pagination. For example,
 
-``` xml
+```xml
 <paging pageSize="2" disabled="true"/>
 ```
 
@@ -92,17 +91,17 @@ navigating through the pagination. For example,
 
 Under `os` mold, the component renders a list of paging anchors for
 users to jump to the specific page:
-![](images/PagingAnchor.jpg)
+![](/zk_component_ref/images/PagingAnchor.jpg)
 
 This attribute determines the max number of rendered paging anchors.
 
 # Limitation
 
 Paging can not apply [
-stubonly]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components)
+stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components)
 at the same time. For example,
 
-``` xml
+```xml
 <listbox mold="paging" pageSize="1" >
     <listitem >
         <listcell stubonly="true"/>
@@ -114,7 +113,7 @@ at the same time. For example,
 ```
 
 Although paging will
-[invalidate]({{site.baseurl}}/zk_dev_ref/UI_Composing/Component-based_UI#Invalidate_a_Component)
+[invalidate]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Invalidate_a_Component)
 `listbox` and its children, `stubonly` needs the referred widget in
 client side which is detached during paging and throws mounting error.
 
@@ -145,7 +144,7 @@ the user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -168,13 +167,13 @@ zul.jar.
 <td><center>
 <p>default</p>
 </center></td>
-<td>![](images/paging_mold_default.png)</td>
+<td>![](/zk_component_ref/images/paging_mold_default.png)</td>
 </tr>
 <tr class="even">
 <td><center>
 <p>os</p>
 </center></td>
-<td>![](images/paging_mold_os.png)</td>
+<td>![](/zk_component_ref/images/paging_mold_os.png)</td>
 </tr>
 </tbody>
 </table>

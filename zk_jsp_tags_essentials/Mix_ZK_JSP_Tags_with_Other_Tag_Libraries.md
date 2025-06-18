@@ -6,13 +6,13 @@ Here we illustrate it with an example: ZK JSP Tags + JSTL Tags.
 
 First, we have to specify JSTL TLD too:
 
-``` xml
+```xml
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 ```
 
 Then, we can mix the use as shown below:
 
-``` xml
+```xml
 <zk:window title="table and grid in window" border="normal" width="300px">
     <table border="1">
         <c:forEach var="i" begin="1" end="3" step="1" varStatus="status">

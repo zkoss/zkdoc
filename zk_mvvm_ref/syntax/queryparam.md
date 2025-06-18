@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @QueryParam
 
 @QueryParam("keyString")
@@ -32,7 +32,7 @@ Http request parameters is appended at URL like:
 
 `http://localhost:8080/zkbinddemo/httpparam.zul?param1=abc`
 
-``` java
+```java
 public class HttpParamVM {
 
     String queryParam;

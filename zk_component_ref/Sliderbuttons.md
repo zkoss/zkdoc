@@ -17,9 +17,9 @@ in a Multislider.
 
 # Example
 
-![](images/ZKComRef_Sliderbuttons.png)
+![](/zk_component_ref/images/ZKComRef_Sliderbuttons.png)
 
-``` xml
+```xml
 <zk>
   <multislider>
     <sliderbuttons startValue="10" endValue="70"/>
@@ -60,7 +60,7 @@ user.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

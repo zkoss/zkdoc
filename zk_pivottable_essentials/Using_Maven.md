@@ -2,7 +2,7 @@
 
 This section describes the Maven settings required to use ZK Pivottable
 in your application. Please refer to [this
-article]({{site.baseurl}}/zk_installation_guide/Setting_up_IDE/Maven/Resolving_ZK_Framework_Artifacts_via_Maven)
+article]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/resolving_zk_framework_artifacts_via_maven)
 for the Maven settings for ZK Framework.
 
 ## Dependency
@@ -13,7 +13,7 @@ or [premium
 repository](https://maven.zkoss.org/repo/zk/ee/org/zkoss/pivot/pivottable/)
 for available versions.
 
-``` xml
+```xml
 <dependencies>  
     <dependency>
         <groupId>org.zkoss.pivot</groupId>
@@ -32,7 +32,7 @@ whether you are evaluating or you are a premium user.
 
 - <http://mavensync.zkoss.org/eval>
 
-``` xml
+```xml
     <repositories>
         <repository>
             <id>ZK Evaluation Repository</id>
@@ -44,7 +44,7 @@ whether you are evaluating or you are a premium user.
 ### Premium users only
 
 - <span style="color:red">**Notice**</span>: Need [Login
-  authentication](ZK_Pivottable_Essentials/Quick_Start/Using_Maven#Login_authentication)
+  authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
 
   
 If you are our customer, please apply for a premium maven account to use
@@ -52,7 +52,7 @@ ZK Premium Maven Repository.
 
 - <https://maven.zkoss.org/repo/zk/ee>
 
-``` xml
+```xml
 <repositories>
     <repository>
         <id>ZK EE</id>
@@ -72,7 +72,7 @@ settings file.
   - Maven installation root: <u>\$M2_HOME/conf/settings.xml</u> - OR -
   - User's Maven root: <u>\${user.home}/.m2/settings.xml</u>
 
-``` xml
+```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
@@ -92,7 +92,7 @@ settings file.
 
 #### Sample of pom.xml for licensed ZK Pivottable Package
 
-``` xml
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -172,17 +172,17 @@ If you have problem switching from the evaluation repository to the
 licensed one, please check the followings:
 
 - 1 **Remove evaluation repository**, [use ZK EE repository
-  instead]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Repository)
+  instead]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Repository)
 - 2\. [Login
-  authentication]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Login_authentication)
+  authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
 - 3\. [Delete maven local repository evaluation
-  cache]({{site.baseurl}}/zk_pivottable_essentials/Quick_Start/Using_Maven#Purge_local_repository_evaluation_cache)
+  cache]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Purge_local_repository_evaluation_cache)
 
 ##### Purge local repository evaluation cache
 
 - 1\. Add purge-local-repository plugin in pom.xml
 
-``` xml
+```xml
     <build>
         <plugins>
             <plugin>
@@ -213,7 +213,7 @@ licensed one, please check the followings:
 
 - 2\. Invoke **maven clean** to delete local repository evaluation cache
 
-``` xml
+```xml
 mvn clean
 ```
 

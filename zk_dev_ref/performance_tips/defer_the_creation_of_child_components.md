@@ -4,7 +4,7 @@ to do this is by the use of the `fulfill` attribute. In the following
 example, the children of the second tab panel are created only if it
 becomes visible.
 
-``` xml
+```xml
 <tabbox>
     <tabs>
         <tab label="Preload" selected="true"/>
@@ -22,7 +22,7 @@ becomes visible.
 ```
 
 For more information, please refer to the [On-demand
-Evaluation]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/On-demand_Evaluation)
+Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/on-demand_evaluation)
 section.
 
 {{ ZKDevelopersReferencePageFooter}}

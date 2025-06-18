@@ -9,9 +9,9 @@
 # Employment/Purpose
 
 `Idspace` is just like a
-[Div](ZK_Component_Reference/Containers/Div) but implements
+[Div]({{site.baseurl}}/zk_component_ref/containers/div) but implements
 the [ID
-space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space), all
+space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), all
 descendant components of Idspace (including the Idspace itself) form an
 independent ID space. Thus, you could use an idspace as the topmost
 component to group components. This way developers only need to maintain
@@ -28,9 +28,9 @@ nodom element.
 
 # Example
 
-![](images/ZKComRef_Idspace_Example.png)
+![](/zk_component_ref/images/ZKComRef_Idspace_Example.png)
 
-``` xml
+```xml
 <idspace>
     <window border="normal">
         <button id="btn" label="button" />
@@ -63,7 +63,7 @@ nodom element.
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

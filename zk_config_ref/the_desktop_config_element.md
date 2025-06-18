@@ -1,7 +1,7 @@
 It is used to customize how ZK handles desktops. You might have multiple
 `desktop-config` elements in one `zk.xml`.
 
-``` xml
+```xml
  <desktop-config>
      <desktop-timeout>3600</desktop-timeout>
      <disable-theme-uri>~./zul/css/zk.wcs</disable-theme-uri>

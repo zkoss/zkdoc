@@ -7,7 +7,7 @@ whether the label's value is "Hello Mimic" or not.
 
 '''HelloTest.java"
 
-``` java
+```java
 
 //remove import for brevity
 public class HelloTest {

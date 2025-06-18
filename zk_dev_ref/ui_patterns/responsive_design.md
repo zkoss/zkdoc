@@ -4,19 +4,19 @@ The [Responsive
 Design](http://en.wikipedia.org/wiki/Responsive_Web_Design) in ZK
 separates the following three sections, for more features in tablet
 devices, please refer to [ Component
-Reference](ZK_Component_Reference/Tablet_Devices).
+Reference]({{site.baseurl}}/zk_component_ref/tablet_devices).
 
 # Fluid Layouts
 
 You can adjust the component size using either [ *vflex* or
-*hflex*]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Hflex_and_Vflex)
+*hflex*]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
 instead of giving components a fixed height and/or width in pixels.
 
 For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/Fluid_Layouts.PNG)
+![]({{site.baseurl}}/zk_dev_ref/images/fluid_layouts.png)
 
-``` xml
+```xml
 <hlayout vflex="1">
     <window title="Column 25%" vflex="1" hflex="1" sclass="column1" border="normal">
             toffee candy canes cheesecake gummies apple pie. Pie cupcake cheesecake sugar plum tart donut
@@ -52,9 +52,9 @@ Query](http://www.w3.org/TR/css3-mediaqueries/).
 
 For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/Adaptive_Layouts.PNG)
+![]({{site.baseurl}}/zk_dev_ref/images/adaptive_layouts.png)
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/theme" prefix="t"?>
 <zk>
 <style>
@@ -126,17 +126,17 @@ seamlessly whether they are on a PC's browser or a Tablet device. In
 some of the use cases the default styling is not satisfied for user to
 adjust the layout for different devices and screen sizes, therefore we
 can employ [ the
-ClientInfoEvent](ZK_Component_Reference/Tablet_Devices/Events/ClientInfoEvent)
+ClientInfoEvent]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent)
 to detect whether the browser's orientation changes, and then switch
 some components' orientation to conform that.
 
 For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/Responsive_Design.png)
+![]({{site.baseurl}}/zk_dev_ref/images/responsive_design.png)
 
 ## Zul Source Code
 
-``` xml
+```xml
 <zk>
 <zscript><![CDATA[
 void doOrientationChange(ClientInfoEvent evt) {
@@ -254,7 +254,7 @@ in ZK EE only](http://www.zkoss.org/product/edition.dsp).
 
 ## CSS Content
 
-``` css
+```css
 <%@ taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c" %>
 <%@ taglib uri="http://www.zkoss.org/dsp/web/theme" prefix="t" %>
 <%-- For tablet or orientation in portrait devices  --%>
@@ -382,13 +382,13 @@ The above example code can be downloaded here -
 We also recommend to read the articles below:
 
 - [
-  Responsive_Design_in_ZK_Part_1](Small_Talks/2017/August/Responsive_Design_in_ZK_Part_1)
+  Responsive_Design_in_ZK_Part_1](https://www.zkoss.org/wiki/Small_Talks/2017/August/Responsive_Design_in_ZK_Part_1)
 - [
-  Responsive_Design_in_ZK_Part_2](Small_Talks/2017/October/Responsive_Design_in_ZK_Part_2)
+  Responsive_Design_in_ZK_Part_2](https://www.zkoss.org/wiki/Small_Talks/2017/October/Responsive_Design_in_ZK_Part_2)
 - [
-  Responsive_Design_in_ZK_Part_3](Small_Talks/2017/October/Responsive_Design_in_ZK_Part_3)
+  Responsive_Design_in_ZK_Part_3](https://www.zkoss.org/wiki/Small_Talks/2017/October/Responsive_Design_in_ZK_Part_3)
 - [
-  Use_Bootstrap_with_ZK:\_Responsive_Admin_Template](Small_Talks/2019/August/Use_Bootstrap_with_ZK:_Responsive_Admin_Template)
+  Use_Bootstrap_with_ZK:\_Responsive_Admin_Template](https://www.zkoss.org/wiki/Small_Talks/2019/August/Use_Bootstrap_with_ZK:_Responsive_Admin_Template)
 
 # Version History
 

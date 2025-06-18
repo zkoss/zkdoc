@@ -5,8 +5,7 @@
 - Demonstration: [Hbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: <javadoc>org.zkoss.zul.Hbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
-- Style Guide: [
-  Hbox](ZK_Style_Guide/XUL_Component_Specification/Hbox)
+
 
 # Employment/Purpose
 
@@ -19,16 +18,16 @@ Notice that hbox and vbox are designed to provide a more sophisticated
 layout, such as splitter, alignment, and packing. ZK renders these 2
 components with an HTML table. If you only need the components for
 layout, we suggest using [
-Hlayout](ZK_Component_Reference/Layouts/Hlayout) and [
-Vlayout](ZK_Component_Reference/Layouts/Vlayout) instead,
+Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [
+Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
 # Example
 
-![](images/ZKComRef_Hbox_Simple_Examples.PNG)
+![](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples.PNG)
 
-``` xml
+```xml
 <zk>
     <vbox>
         <button label="Button 1" />
@@ -44,13 +43,13 @@ of TABLE).
 # Properties
 
 - **Inherited Properties**: [
-  Box](ZK_Component_Reference/Containers/Box#Properties)
+  Box]({{site.baseurl}}/zk_component_ref/containers/box#Properties)
 
 ## Align and Pack
 
-![](images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG)
+![](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG)
 
-``` xml
+```xml
 <zk xmlns:n="native">
     <style content=".box {| class='wikitable' | 
     <custom-attributes 
@@ -93,7 +92,7 @@ and the style. You can now use the rowspan or the colspan property to
 layout your Grid, for example a content cell can now cross over multiple
 rows. The code below demonstrates how to do this:
 
-``` xml
+```xml
 <hbox>
     <cell sclass="years">
         ...
@@ -112,7 +111,7 @@ element.
 
 For example,
 
-``` xml
+```xml
 <hbox height="200px" width="200px" style="border: 1px solid red">
     <textbox hflex="1" value="1" />
     <textbox hflex="1" value="1" />
@@ -144,7 +143,7 @@ You will see the Box width exceed 200px. Also check the
 </table>
 
 - Inherited Supported Events: [
-  Box](ZK_Component_Reference/Containers/Box#Supported_Events)
+  Box]({{site.baseurl}}/zk_component_ref/containers/box#Supported_Events)
 
 # Supported Children
 

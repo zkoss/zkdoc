@@ -5,8 +5,7 @@
 - Demonstration: [Vbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: <javadoc>org.zkoss.zul.Vbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
-- Style Guide: [
-  Vbox](ZK_Style_Guide/XUL_Component_Specification/Box)
+
 
 # Employment/Purpose
 
@@ -20,21 +19,21 @@ components will be placed underneath each other in a column.
 Notice that hbox and vbox are designed to provide a more sophisticated
 layout, such as splitter, alignment, and packing. If you need only the
 layout feature, it is suggested to use [
-Hlayout](ZK_Component_Reference/Layouts/Hlayout) and [
-Vlayout](ZK_Component_Reference/Layouts/Vlayout) instead,
+Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [
+Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
 ## Splitlatyout
 
 If you need a splitter, please use [
-splitlayout](ZK%20Component%20Reference/Layouts/Splitlayout).
+splitlayout](zk_component_ref/Layouts/Splitlayout).
 
 # Example
 
-![](images/ZKComRef_Vbox_Simple_Example.PNG)
+![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example.PNG)
 
-``` xml
+```xml
 <zk>
      <vbox>
          <button label="Button 1"/>
@@ -50,15 +49,15 @@ splitlayout](ZK%20Component%20Reference/Layouts/Splitlayout).
 # Properties
 
 - **Inherited** Properties: [
-  Box](ZK_Component_Reference/Containers/Box#Properties)
+  Box]({{site.baseurl}}/zk_component_ref/containers/box#Properties)
 
 ## Align and Pack
 
 {% include version-badge.html version=5.0.0 %}
 
-![](images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
+![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
-``` xml
+```xml
 <zk xmlns:n="native">
     <style content=".box {| class='wikitable' | 
     <custom-attributes 
@@ -100,7 +99,7 @@ rowspan or the colspan property to layout your Grid, for example a
 content cell can now cross over multiple rows. The code below
 demonstrates how to do this:
 
-``` xml
+```xml
 <vbox>
     <cell sclass="years">
         ...
@@ -117,7 +116,7 @@ element.
 
 For example,
 
-``` xml
+```xml
 <hbox height="200px" width="200px" style="border: 1px solid red">
     <textbox hflex="1" value="1" />
     <textbox hflex="1" value="1" />
@@ -149,7 +148,7 @@ You will see the Box width exceed 200px. Also check the
 </table>
 
 - Inherited Supported Events: [
-  Box](ZK_Component_Reference/Containers/Box#Supported_Events)
+  Box]({{site.baseurl}}/zk_component_ref/containers/box#Supported_Events)
 
 # Supported Children
 

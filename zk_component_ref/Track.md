@@ -11,15 +11,15 @@
 
 It lets you specify some timed text tracks like captions or subtitles
 for media components such as [
-Audio](ZK_Component_Reference/Multimedia_and_Miscellaneous/Audio)
+Audio]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/audio)
 or [
-Video](ZK_Component_Reference/Multimedia_and_Miscellaneous/Video).
+Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video).
 
 # Example
 
-![](images/Player-Sample.png)
+![](/zk_component_ref/images/Player-Sample.png)
 
-``` xml
+```xml
  <video src="course.mp4" controls="true">
    <track kind="captions" src="transcript.vtt" srclang="en" default="true"/>
    <track kind="subtitles" src="transcript_fr.vtt" srclang="fr"/>
@@ -28,9 +28,9 @@ Video](ZK_Component_Reference/Multimedia_and_Miscellaneous/Video).
  </video>
 ```
 
-![](images/ZKComRef_Audio_Example.png)
+![](/zk_component_ref/images/ZKComRef_Audio_Example.png)
 
-``` xml
+```xml
  <audio src="music.wav" controls="true">
    <track kind="captions" src="music_lyric.vtt" srclang="en" default="true"/>
    <track kind="subtitles" src="music_lyric_fr.vtt" srclang="fr"/>
@@ -140,7 +140,7 @@ Specify what language this track is. It's required if the kind is
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

@@ -7,7 +7,7 @@ package, what packages it depends and other information.
 
 Example,
 
-``` xml
+```xml
 <package name="zul.box" language="xul/html" depends="zul,zul.wgt">
     <script src="Layout.js" jsdoc="true"/>
     
@@ -33,7 +33,7 @@ The [language](ZUML_Reference/ZUML/Languages) name, such as
 
 If omitted, it means it does not belong to a particular language. It is
 better to specify one if the WPD document defines a
-[widget](ZK_Client-side_Reference/Widget_Package_Descriptor/widget).
+[widget]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor/widget).
 
 # depends
 
@@ -50,7 +50,7 @@ loading this package.
 It specifies whether the client is allowed to cache the output of this
 WPD file. By default, it is cacheable since the performance is better.
 However, you have to turn it off, if you use a
-[function](ZK_Client-side_Reference/Widget_Package_Descriptor/function)
+[function]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor/function)
 that will generate the output depending on a varying condition (such as
 Locale and time zone).
 

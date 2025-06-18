@@ -16,9 +16,9 @@ Used to create a separator between nav items..
 
 # Example
 
-![](images/ZKComRef_Navseparator.png)
+![](/zk_component_ref/images/ZKComRef_Navseparator.png)
 
-``` xml
+```xml
     <navbar orient="horizontal" collapsed="true">
         <navitem label="Inbox" iconSclass="z-icon-inbox" />
         <navitem label="Create New Task" iconSclass="z-icon-pencil"/>
@@ -57,7 +57,7 @@ Used to create a separator between nav items..
 </table>
 
 - Inherited Supported Events: [
-  XulElement](ZK_Component_Reference/Base_Components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Children
 

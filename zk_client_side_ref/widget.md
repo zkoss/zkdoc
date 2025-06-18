@@ -7,7 +7,7 @@ It specifies the widget's name.
 
 Example,
 
-``` xml
+```xml
 <package name="zul.wgt" language="xul/html" depends="zul">
     <widget name="A"/>
     <widget name="Cell"/>   

@@ -29,7 +29,7 @@ The example below demonstrates a `tabbox` with two tabs, each displaying a label
 
 Try it
 
-* [Tab Example](https://zkfiddle.org/sample/o3cb45/1-ZK-Component-Reference-Tab-Example?v=latest&t=Iceblue%20Compact)
+* [Tab Example](https://zkfiddle.org/sample/o3cb45/1-ZK-Component-Reference-Tab-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Properties and Features
@@ -61,7 +61,7 @@ Tabs can have a caption by declaring a child component called `caption`. The exa
 
 Try it
 
-* [Tab Caption](https://zkfiddle.org/sample/ale2h1/1-ZK-Component-Reference-Tab-Caption-Example?v=latest&t=Iceblue%20Compact)
+* [Tab Caption](https://zkfiddle.org/sample/ale2h1/1-ZK-Component-Reference-Tab-Caption-Example?v=latest&t=Iceblue_Compact)
 
 
 ### Closable
@@ -101,7 +101,7 @@ public class TabboxComposer extends SelectorComposer {
 
 Try it
 
-* [Tab Model](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue%20Compact)
+* [Tab Model](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
 
 ## Supported Events

@@ -3,12 +3,12 @@
 A method (as if in an EventListener) in
 [SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 can subscribe to an [
-EventQueue]({{site.baseurl}}/zk_dev_ref/Event_Handling/Event_Queues)
+EventQueue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 by
 [@Subscribe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/select/annotation/Subscribe.html).
 For example,
 
-``` java
+```java
 // in sender composer
 public void publish() {
     EventQueue<Event> eq = EventQueues.lookup("queue1", EventQueues.DESKTOP, true);
@@ -16,7 +16,7 @@ public void publish() {
 }
 ```
 
-``` java
+```java
 // in receiver composer
 @Subscribe("queue1")
 public void receive(Event event) {
@@ -39,7 +39,7 @@ communicate among composers. See also
 
 You can subscribe to EventQueue of different scopes.
 
-``` java
+```java
 @Subscribe(value = "queue2", scope = EventQueues.SESSION)
 public void method2(Event event) {
     // this method will be called when EventQueue "queue2" of Session scope is published
@@ -58,7 +58,7 @@ Group scope requires ZK EE. See also
 
 You can also listen to a specified event name.
 
-``` java
+```java
 @Subscribe(value = "queue2", eventName = "event1")
 public void method2(Event event) {
     // this method will be called when EventQueue "queue2" of Session scope is published
@@ -74,7 +74,7 @@ public void publish() {
 The method which subscribes to the EventQueue takes either no parameter
 or one parameter of a type Event.
 
-``` java
+```java
 @Subscribe("queue3")
 public void method3() { // the event parameter can be omitted
     // ...
@@ -83,7 +83,7 @@ public void method3() { // the event parameter can be omitted
 
 ZK automatically maps event data into the method parameters in order.
 
-``` java
+```java
 @Subscribe("queue3")
 public void method3(int i, String s) { 
     // i will be 100, s will be "eventData"
@@ -98,7 +98,7 @@ public void publish() {
 
 If you put the event at the first one, it also works well.
 
-``` java
+```java
 @Subscribe("queue3")
 public void method3(Event event, int i, String s) { 
     // ...

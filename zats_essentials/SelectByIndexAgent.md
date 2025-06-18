@@ -9,7 +9,7 @@ has no child components to select, therefore, it needs a different agent
 to mimic selecting operation. You have to give an **index** to select
 its item.
 
-``` java 
+```java 
 
 selectbox.as(SelectByIndexAgent.class).select(3);
 ```

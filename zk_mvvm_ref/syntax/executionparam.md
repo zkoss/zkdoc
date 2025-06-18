@@ -3,7 +3,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ExecutionParam
 
 @ExecutionParam("keyString")
@@ -31,7 +31,7 @@ Example
 Assume we want to pass an object by execution's attribute to an included ZUL that uses a ViewModel: ` ExecutionParamVM`.
 
 #### outer ZUL
-``` xml
+```xml
 <window id="w2">
     <zscript>
         void doClick() {
@@ -47,7 +47,7 @@ Assume we want to pass an object by execution's attribute to an included ZUL tha
 
 We use annotation to retrieve execution's attribute with key "param1".
 
-``` java
+```java
 
 public class ExecutionParamVM {
     private String param1;
@@ -60,7 +60,7 @@ public class ExecutionParamVM {
 }
 ```
 #### executionparam-inner.zul
-``` xml
+```xml
     <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ExecutionParamVM')">
         <label value="@load(vm.param1)"/>
     </vbox>

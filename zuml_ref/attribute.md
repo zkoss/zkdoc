@@ -9,7 +9,7 @@ element is the attribute value, while the `name` attribute specifies the
 attribute name. It is useful if the value of an attribute is
 sophisticated, or the attribute is conditional.
 
-``` xml
+```xml
  <button label="Hi">
    <attribute name="onClick">alert("Hi")</attribute>
  </button>
@@ -17,13 +17,13 @@ sophisticated, or the attribute is conditional.
 
 It is equivalent to
 
-``` xml
+```xml
  <button label="Hi" onClick="alert(&quot;Hi&quot;)"/>
 ```
 
 Another example:
 
-``` xml
+```xml
  <button>
    <attribute name="label" if="${param.happy}">Hello World!</attribute>
  </button>
@@ -32,7 +32,7 @@ Another example:
 In addition, you can specify a XML fragment as the value of the
 attribute. The XML fragment is so-called the native content.
 
-``` xml
+```xml
  <html>
      <attribute name="content">
          <ol>
@@ -47,7 +47,7 @@ components. They will be eventually converted to a String instance and
 assigned to the specified attribute. If values has three elements, the
 above example is equivalent to the following:
 
-``` xml
+```xml
  <html>
      <attribute name="content">
          <ol>

@@ -35,7 +35,7 @@ the following steps closely.
   and/or the lucene and jackrabbit directory depending on later
   configurations):
 
-``` text
+```text
 portal.release=professional
 portal.ctx=/myportal
 auto.deploy.dest.dir=../webapps
@@ -49,7 +49,7 @@ omniadmin.users=
   root_path to have a param value of '/myportal', so that the top of the
   web.xml will look as follows:
 
-``` xml
+```xml
 <?xml version="1.0"?>
 
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -77,7 +77,7 @@ omniadmin.users=
   does not use mysql database and wants liferay to use hSQLdb, strip out
   the first Resource element):
 
-``` xml
+```xml
 <Context path="/myportal" reloadable="true" >
     <Resource
         name="jdbc/LiferayPool"
@@ -114,14 +114,14 @@ omniadmin.users=
   find a file called load_render_portlet.jsp, open the file up and go to
   line 55-56 and it should look like the following:
 
-``` javascript
+```javascript
     function <%= namespace %>loadPortlet() {
         var path = "/c/portal/render_portlet";
 ```
 
 however it should look as follows:
 
-``` javascript
+```javascript
     function <%= namespace %>loadPortlet() {
         var path = "/myportal/c/portal/render_portlet";
 ```
@@ -151,7 +151,7 @@ ZK war.
 - First, in order to tell liferay about the portlet, create a class that
   looks like this:
 
-``` java
+```java
 /**
  * Copyright (c) 2000-2006 Liferay, LLC. All rights reserved.
  *
@@ -263,7 +263,7 @@ public class JSPPortlet extends GenericPortlet {
 - Next, create a 'liferay-display.xml' file that looks like the
   following in WEB-INF:
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE display PUBLIC "-//Liferay//DTD Display 4.0.0//EN" "http://www.liferay.com/dtd/liferay-display_4_0_0.dtd">
 
@@ -277,7 +277,7 @@ public class JSPPortlet extends GenericPortlet {
 - Now, also in the WEB-INF, create a file called 'liferay-portlet.xml'
   that looks like the following:
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 4.1.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_4_1_0.dtd">
 
@@ -316,7 +316,7 @@ public class JSPPortlet extends GenericPortlet {
 - Now again in WEB-INF create a 'portlet.xml' file that looks as
   follows:
 
-``` xml
+```xml
 <?xml version="1.0"?>
 
 <portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" version="1.0"
@@ -361,7 +361,7 @@ public class JSPPortlet extends GenericPortlet {
 - Finally, at the top of the web.xml file after <web-app> add the
   following (followed by the typical ZK stuff):
 
-``` xml
+```xml
 .
 .
 .
@@ -407,7 +407,7 @@ In order to integrate Liferay with ZK, add the following settings to the
 - And create a **zk_page** called **hello.zul**
 - .hello.zul
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <?page title="Hello"?>
 <zk>
@@ -420,7 +420,7 @@ In order to integrate Liferay with ZK, add the following settings to the
 
 - portlet.xml
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <portlet-app version="1.0" xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd">
@@ -461,7 +461,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http:
 
 - liferay-display.xml
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE display PUBLIC "-//Liferay//DTD DISPLAY 2.0.0//EN" "http://www.liferay.com/dtd/liferay-display_2_0_0.dtd">
 <display>
@@ -473,7 +473,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http:
 
 - liferay-portlet.xml
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE liferay-portlet-app PUBLIC "-//Liferay//DTD Portlet Application 5.2.0//EN" "http://www.liferay.com/dtd/liferay-portlet-app_5_2_0.dtd">
 <liferay-portlet-app>
@@ -498,7 +498,7 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http:
 
 - liferay-plugin-package.xml
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plugin-package PUBLIC "-//Liferay//DTD Plugin Package 4.3.6//EN" "http://www.liferay.com/dtd/liferay-plugin-package_4_3_0.dtd">
 <plugin-package>
@@ -537,7 +537,7 @@ Solution: use **jQueryPatch** and set appropriate **time delay value**
 for browser.  
 \*zk.xml
 
-``` xml
+```xml
 <zk>
 .
 .
@@ -566,7 +566,7 @@ Liferay deploys war files by its name, when the name
 to folder **HelloZK**
 
 **Download**  
-[DEPLOY_TO\_\_HelloZK.war](https://sourceforge.net/projects/zkforge/files/Small%20Talks/How%20to%20Install%20ZK%20on%20Liferay/DEPLOY_TO__HelloZK.war/download)
+[DEPLOY_TO\_\_HelloZK.war](https://sourceforge.net/projects/zkforge/files/Small_Talks/How_to_Install_ZK_on_Liferay/DEPLOY_TO__HelloZK.war/download)
 
 ## Running ZK 5 with Liferay 6
 
@@ -588,7 +588,7 @@ The main difference between Liferay 5.2 and Liferay 6.0 is
 
 - web.xml:
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
@@ -640,7 +640,7 @@ The main difference between Liferay 5.2 and Liferay 6.0 is
 - zk.xml:
 - use **JQueryRenderCachedPatch**
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
     <library-property>
@@ -660,7 +660,7 @@ The main difference between Liferay 5.2 and Liferay 6.0 is
   **JQueryRenderCachedPatch** if the home page of Liferay is not under
   the root(/) path
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <zk>
     <library-property>
@@ -685,7 +685,7 @@ add this to the setting
   **<header-portlet-javascript>/zkau/web/js/zk.wpd</header-portlet-javascript>**
   setting any more.
 
-``` xml
+```xml
 <liferay-portlet-app>
     <portlet>
         <portlet-name>HelloZK2</portlet-name>
@@ -709,7 +709,7 @@ add this to the setting
 
 - liferay-display.xml
 
-``` xml
+```xml
 <?xml version="1.0"?>
 <!DOCTYPE display PUBLIC "-//Liferay//DTD DISPLAY 2.0.0//EN" "http://www.liferay.com/dtd/liferay-display_2_0_0.dtd">
 
@@ -722,7 +722,7 @@ add this to the setting
 
 - liferay-plugin-package.xml
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plugin-package PUBLIC "-//Liferay//DTD Plugin Package 4.3.6//EN" "http://www.liferay.com/dtd/liferay-plugin-package_4_3_0.dtd">
 <plugin-package>
@@ -754,7 +754,7 @@ add this to the setting
 
 - portlet.xml
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <portlet-app version="1.0"
     xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd"
@@ -798,7 +798,7 @@ add this to the setting
 Please download the following war file to view this example in detail
 
 **Download**
-[DEPLOY_TO\_\_HelloZK2.war](https://sourceforge.net/projects/zkforge/files/Small%20Talks/How%20to%20Install%20ZK%20on%20Liferay/DEPLOY_TO__HelloZK2.war/download)
+[DEPLOY_TO\_\_HelloZK2.war](https://sourceforge.net/projects/zkforge/files/Small_Talks/How_to_Install_ZK_on_Liferay/DEPLOY_TO__HelloZK2.war/download)
 
 ## See also
 

@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @Transient
 ```
 
@@ -19,7 +19,7 @@ This is useful to implement calculated fields (often readonly) that depend on ot
 Example
 =======
 
-``` java
+```java
 public class VM {
     @Transient
     public Object getTotal() {

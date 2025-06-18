@@ -4,8 +4,7 @@
   [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: <javadoc>org.zkoss.zul.Longbox</javadoc>
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Longbox</javadoc>
-- Style Guide: [
-  Longbox](ZK_Style_Guide/XUL_Component_Specification/Longbox)
+
 
 # Employment/Purpose
 
@@ -13,9 +12,9 @@ A long`box` is used to let users input long data.
 
 # Example
 
-![](images/ZKComRef_longbox.jpg)
+![](/zk_component_ref/images/ZKComRef_longbox.jpg)
 
-``` xml
+```xml
  <window title="Longbox Demo" border="normal" width="400px">
      long box:<longbox width="250px"/>
  </window>
@@ -28,7 +27,7 @@ A long`box` is used to let users input long data.
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <longbox format="#,##0"/>
 ```
 
@@ -37,7 +36,7 @@ with a formatting string. The default value is `null`.
 You can provide a locale to format the number by specify the String
 starts with "locale:"
 
-``` xml
+```xml
 <longbox format="locale:zh-TW"/>
 ```
 
@@ -50,14 +49,14 @@ You could specify what value to accept for input controls by use of the
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <longbox constraint="no negative,no empty"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <intbox constraint="no negative: it shall not be negative"/>
 ```
 
@@ -68,7 +67,7 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <longbox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
@@ -76,14 +75,14 @@ Notes:
 
 {% include version-badge.html version=10.2.0 %} {% include version-badge.html version=EE %}
 
-``` xml
+```xml
 <spinner constraint="min -2 max 6"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -108,7 +107,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement](ZK_Component_Reference/Base_Components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Children
 

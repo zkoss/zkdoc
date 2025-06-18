@@ -18,7 +18,7 @@ should be 5. Before expanding, its visible item count is 1(only itself).
 
 **OpenTest.java**
 
-``` java
+```java
 
     @Test
     public void testAgent() {

@@ -3,14 +3,14 @@
 # Doublespinner
 
 - Component Reference:
-  [Doublespinner](ZK_Component_Reference/Input/Doublespinner)
+  [Doublespinner]({{site.baseurl}}/zk_component_ref/input/doublespinner)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement
 
 Big icons for tablet devices
 
-![](images/Doublespinner_Tablet_Example.png)
+![](/zk_component_ref/images/Doublespinner_Tablet_Example.png)
 
 # Unsupported API
 

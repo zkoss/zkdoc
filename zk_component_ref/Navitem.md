@@ -17,9 +17,9 @@ but it is rendered on a navbar.
 
 # Example
 
-![](images/ZKComRef_Nav.png)
+![](/zk_component_ref/images/ZKComRef_Nav.png)
 
-``` xml
+```xml
 <navbar orient="vertical" width="200px">
     <navitem label="Home" iconSclass="z-icon-home" />
     <nav label="Get Started" iconSclass="z-icon-th-list" badgeText="3">
@@ -58,7 +58,7 @@ a URL for the `href` property
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
-``` xml
+```xml
 <navbar>
     <navitem label="click me" onClick="do_something_in_Java()"/>
     <navitem label="don't click that one, click me" href="/another_page.zul"/>
@@ -82,7 +82,7 @@ For end users, there is no difference between the use of
 and
 <javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
 
-``` xml
+```xml
 <navbar>        
     <navitem label="redirect" onClick="Executions.sendRedirect(&quot;another.zul&quot;)"/>
     <navitem label="href" href="another.zul"/>
@@ -105,7 +105,7 @@ Your application won't be notified when users click the navitem.
 This property set the badge text for the `Navitem`, it is used to
 present more details of `Navitem`.
 
-``` xml
+```xml
     <navitem label="Step One" badgeText="1"/>
 ```
 
@@ -131,7 +131,7 @@ present more details of `Navitem`.
 </table>
 
 - Inherited Supported Events: [
-  LabelImageElement](ZK_Component_Reference/Base_Components/LabelImageElement#Supported_Events)
+  LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
 
 # Supported Children
 

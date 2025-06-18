@@ -7,8 +7,7 @@
 - Java API: <javadoc>org.zkoss.zul.Doublespinner</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.Doublespinner</javadoc>
-- Style Guide: [ Doublespinner
-  ]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Doublespinner)
+
 
 # Employment/Purpose
 
@@ -18,7 +17,7 @@ An edit box for holding a constrained double.
 
 ![](/zk_component_ref/images/ZKComRef_Doublespinner.png)
 
-``` xml
+```xml
      <doublespinner step="0.5" />
 ```
 
@@ -26,7 +25,7 @@ An edit box for holding a constrained double.
 
 ## Fixed Width
 
-``` xml
+```xml
 <doublespinner width="100px" inplace="true" value="30" />
 ```
 
@@ -37,7 +36,7 @@ can use client api to modify the width (server side do not need to know)
 
 ![](/zk_component_ref/images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
 
-``` xml
+```xml
 <zk xmlns:c="client">
   <doublespinner inplace="true" value="240" width="30px" c:onFocus='this.setWidth("60px")' c:onBlur='this.setWidth("30px")' />
 </zk>
@@ -50,7 +49,7 @@ can use client api to modify the width (server side do not need to know)
 You are able to format the field by providing specifying the attribute
 with a formatting string. The default value is `null`.
 
-``` xml
+```xml
 <doublespinner format="#,##0.##"/>
 ```
 
@@ -59,7 +58,7 @@ with a formatting string. The default value is `null`.
 You can provide a locale to format the number by specify the String
 starts with "locale:"
 
-``` xml
+```xml
 <doublespinner format="locale:zh-TW"/>
 ```
 
@@ -72,14 +71,14 @@ minimum and maximum to doublespinner.
 To specify two or more constraints, use comma to separate them as
 follows.
 
-``` xml
+```xml
 <doublespinner step="0.5" constraint="no empty,min -2.5 max 6.5"/>
 ```
 
 If you prefer to display different message to the default one, you can
 append the error message to the constraint with a colon.
 
-``` xml
+```xml
 <doublespinner step="0.5" constraint="no empty,min -2.5 max 6.5: between -2.5 to 6.5"/>
 ```
 
@@ -90,14 +89,14 @@ Notes:
 - To support multiple languages, you could use the 「l」 function as
   depicted in the **Internationalization** chapter.
 
-``` xml
+```xml
 <doublespinner step="0.5" constraint="no empty,min -2.5 max 6.5: ${c:l('err.msg.doublespinner')}"/>
 ```
 
 # Inherited Functions
 
 Please refer to [
-NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement)
+NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement)
 for inherited functions.
 
 # Supported Events
@@ -122,7 +121,7 @@ for inherited functions.
 </table>
 
 - Inherited Supported Events: [
-  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/NumberInputElement#Supported_Events)
+  NumberInputElement]({{site.baseurl}}/zk_component_ref/base_components/numberinputelement#Supported_Events)
 
 # Supported Molds
 

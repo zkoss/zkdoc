@@ -7,7 +7,7 @@
 It specifies the message that will be displayed if the client doesn't
 support this device.
 
-``` xml
+```xml
 <device-config>
     <device-type>ajax</device-type>
     <unavailable-message><![CDATA[

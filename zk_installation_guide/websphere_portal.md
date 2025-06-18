@@ -13,10 +13,10 @@
 `since 6.0.1`
 
 - [Create a ZK project by ZK
-  Studio](Quick_Start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
+  Studio](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
 - Add the following portlet.xml file under /WEB-INF
 
-``` xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <portlet-app version="2.0"
     xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"

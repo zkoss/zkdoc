@@ -3,7 +3,7 @@
 
 Syntax
 ======
-``` java
+```java
 @AfterCompose
 
 @AfterCompose(superclass=true)
@@ -98,7 +98,7 @@ class CorrectChild extends Parent {
 Example
 =======
 
-``` java
+```java
 public class FooViewModel {
     @AfterCompose
     public void doFoo() {

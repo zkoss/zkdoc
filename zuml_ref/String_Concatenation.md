@@ -1,7 +1,7 @@
 String concatenation has been introduced to make it easy to construct
 strings within EL expressions.
 
-``` xml
+```xml
     <zscript><![CDATA[
 
 String firstname = "Hawk";

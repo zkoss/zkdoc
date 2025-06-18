@@ -27,13 +27,13 @@ appropriate.
 Here we describe how to compose UI in JavaScript at the client-side.
 
 - For client-side event handling, please refer to the [Client-side Event
-  Handling](ZK_Client-side_Reference/General_Control/Event_Listening)
+  Handling]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
   section.
 - For more information about the relationship among components, widgets,
   and DOM, please refer to the [Components and
-  Widgets](ZK_Client-side_Reference/Component_Development/Components_and_Widgets).
+  Widgets]({{site.baseurl}}/zk_client_side_ref/component_development/components_and_widgets).
 - For developing a component, please refer to the [Component
-  Development](ZK_Client-side_Reference/Component_Development)
+  Development]({{site.baseurl}}/zk_client_side_ref/component_development)
   section.
 
 > ------------------------------------------------------------------------
@@ -48,7 +48,7 @@ state directly at the server. The modification is straightforward: call
 the correct method with the arguments you want. Notice that it is
 JavaScript for Ajax browsers.
 
-``` JavaScript
+```javaScript
 var foo = zk.Widget.$('$foo');
 foo.setValue("What's Up?");
 ```
@@ -64,7 +64,7 @@ while the most, if not all, of the application is better to be done at
 the server. Thus, here we only discuss this kind of addon, aka., fusion.
 For pure-client approach, please refer to [Small Talk: ZK 5.0 and
 Client-centric
-Approach](Small_Talks/2009/July/ZK_5.0_and_Client-centric_Approach).
+Approach](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5.0_and_Client-centric_Approach).
 
 Depending on your requirement, there are typically two situations we
 could *fuse* the client-side code:
@@ -76,7 +76,7 @@ For example, suppose we want to open the drop down when a commbox gains
 the focus, then we register a client-side event listener for the onFocus
 event as follows.
 
-``` xml
+```xml
 <div>
   <combobox xmlns:w="client" w:onFocus="this.open()"/>
 </div>
@@ -93,7 +93,7 @@ namespace](http://www.w3schools.com/xml/xml_namespaces.asp):
 
 For more information about the client-side event listener, please refer
 to the [Event
-Listening](ZK_Client-side_Reference/General_Control/Event_Listening)
+Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
 section.
 
 The other typical situation to fuse the client-side code is to override
@@ -105,7 +105,7 @@ Inside a client event listener, you can reference the widget using
 `this` and the event using `event`. In the following example, `this`
 refers to the label.
 
-``` xml
+```xml
 <window xmlns:w="client">
   <label value="change me by click" w:onClick="this.setValue('clicked');"/> 
 </window>
@@ -117,7 +117,7 @@ It works in a similar manner as
 <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>.
 For example,
 
-``` JavaScript
+```javaScript
 this.$f('foo').setValue('found');
 this.$().foo.setValue('found'); //equivalent to the above statement
 ```
@@ -129,7 +129,7 @@ spaces of the desktop. For example,
 
 ### find by a DOM element's ID
 
-``` JavaScript
+```javaScript
 zk.Widget.$('foo').setValue('found');
 ```
 
@@ -137,13 +137,13 @@ zk.Widget.$('foo').setValue('found');
 
 If there is a component in the zul like
 
-``` xml
+```xml
 <label id="foo"/>
 ```
 
 Then you can get its widget by
 
-``` JavaScript
+```javaScript
 zk.Widget.$('$foo');
 ```
 
@@ -155,7 +155,7 @@ widgets. And, `jq("$win1")` will select the DOM elements of all widgets
 whose ID is `win1`. (see
 <javadoc directory="jsdoc">\_global\_.jq</javadoc>).
 
-``` xml
+```xml
 <window xmlns:w="http://www.zkoss.org/2005/zk/client">
     <vbox>
         <label id="labelone" value="click to change"
@@ -175,7 +175,7 @@ whose ID is `win1`. (see
 To determine if an object is a specific widget, you can call
 `$instanceof` like:
 
-``` JavaScript
+```javaScript
 if (widget.$instanceof(zul.sel.Treeitem)){
     //widget is a Treeitem widget
 }
@@ -196,7 +196,7 @@ server. To an extreme extent, you could create all widgets at the client
 To instantiate a widget, we can pass all initial values into the
 constructor. For example,
 
-``` JavaScript
+```javaScript
 zk.load('zul.wnd');
 new zul.wnd.Window({
     title: 'Hello, World',
@@ -237,7 +237,7 @@ or
 <javadoc directory="jsdoc" method="insertBefore(zk.Widget, zk.Widget)">zk.Widget</javadoc>.
 For example,
 
-``` xml
+```xml
 <vlayout>
   <button label="Click Me" xmlns:w="client"
     w:onClick="this.parent.appendChild(new zul.wgt.Label({value: 'Clicked'}))"/>
@@ -247,7 +247,7 @@ For example,
 Besides, we could replace an existing DOM element with a widget (not
 attached yet). For example,
 
-``` xml
+```xml
   <n:div id="anchor" xmlns:n="native"/>
   <button label="Click Me" xmlns:w="client"
     w:onClick="new zul.wgt.Label({value: 'Clicked'}).replaceHTML('#anchor')"/>
@@ -274,7 +274,7 @@ package has been loaded, when you are going to instantiate
 <javadoc directory="jsdoc">zul.grid.Grid</javadoc>, you could do as
 follows.
 
-``` JavaScript
+```javaScript
 zk.load("zul.wnd,zul.grid", function () { //load zul.wnd and zul.grid if they aren't loaded yet
      //In this function, you could access zul.wnd.Window and zul.grid.Grid whatever you want
     new zul.wnd.Window({children: [new zul.grid.Grid()]});
@@ -300,7 +300,7 @@ later.
     object. For Android devices, it is a Java object.
 
 [^2]: A widget in the same [ID
-    space]({{site.baseurl}}/zk_dev_ref/UI_Composing/ID_Space).
+    space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space).
 
 [^3]: Since ZK 5.0.2
 

@@ -8,7 +8,7 @@ First, declare a chart component in a ZUML document. Specify `type` and
 
 ## chart.zul
 
-``` xml
+```xml
 <charts id="chart" type="line" title="Season Average Temperature" 
     apply="org.zkoss.zkcharts.essentials.FirstChartComposer"/>
 ```
@@ -18,7 +18,7 @@ which extends <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>
 
 ## First ChartComposer.java
 
-``` java
+```java
 public class FirstChartComposer extends SelectorComposer<Component> {
     @Wire
     Charts chart;
@@ -54,7 +54,7 @@ data.
 Moreover, if you want to change the configuration, you can add
 additional declarations in the composer:
 
-``` java
+```java
     // Get the legend option in chart
     Legend legend = chart.getLegend();
 

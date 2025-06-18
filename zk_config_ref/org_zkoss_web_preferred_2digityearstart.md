@@ -3,8 +3,8 @@
 By default, the 2-digit year start is set to 1929.
 
 However, you can configure it different, and it will affect how
-[datebox](ZK_Component_Reference/Input/Datebox) and
-[calendar](ZK_Component_Reference/Input/Calendar) components
+[datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
+[calendar]({{site.baseurl}}/zk_component_ref/input/calendar) components
 behave.
 
 The 2-digit year start is used for the format with "yy" pattern only,
@@ -20,7 +20,7 @@ in the library property (i.e.,
 
 Only allow positive integer. For example:
 
-``` xml
+```xml
 <library-property>
     <name>org.zkoss.web.preferred.2DigitYearStart</name>
     <value>1950</value>

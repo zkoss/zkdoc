@@ -3,19 +3,18 @@
 # Biglistbox
 
 - Demonstration: [
-  Demo](Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
+  Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
 - Java API: <javadoc>org.zkoss.zkmax.zul.Biglistbox</javadoc>
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
-- Style Guide: [
-  Biglistbox]({{site.baseurl}}/zk_style_customization_guide/XUL_Component_Specification/Biglistbox)
+
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 A component to handle a huge data sets and provides the same and as many
 as the functionalities of [
-Listbox]({{site.baseurl}}/zk_component_ref/Data/Listbox) including
+Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) including
 selection, sorting, keystroke navigation, ROD(rendering-on-demand), and
 so on..
 
@@ -23,7 +22,7 @@ so on..
 
 ![](/zk_component_ref/images/ZKComRef_Biglistbox.PNG)
 
-``` xml
+```xml
 <biglistbox hflex="1" vflex="1">
     <!-- Template example
     <template name="heads">
@@ -64,14 +63,14 @@ application-dependent and varies from case to case. However, you can
 extend your own implementation from the
 <javadoc>org.zkoss.zul.AbstractListModel</javadoc> skeleton class. For
 more details, please refer to this
-[smalltalk](Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK#Demo_Code_Details).
+[smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK#Demo_Code_Details).
 
 ## MatrixRenderer
 
 Here is an implementation example of
 <javadoc>org.zkoss.zkmax.zul.MatrixRenderer</javadoc>
 
-``` java
+```java
 new MatrixRenderer<List<String>>() {
 
     @Override
@@ -220,7 +219,7 @@ about the row index and the column index.</p></td>
 </table>
 
 - Inherited Supported Events: [
-  XulElement]({{site.baseurl}}/zk_component_ref/base_components/XulElement#Supported_Events)
+  XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
 
 # Supported Molds
 
@@ -234,10 +233,10 @@ about the row index and the column index.</p></td>
 
 | Version | Description                       | Example Location                                                                   |
 |---------|-----------------------------------|------------------------------------------------------------------------------------|
-| 6.0.1+  | Handling a Trillion Data Using ZK | [Small Talks](Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK) |
+| 6.0.1+  | Handling a Trillion Data Using ZK | [Small Talks](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK) |
 
 # Version History
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/zk.xml/The_library-property_Element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`

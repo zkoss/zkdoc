@@ -64,7 +64,7 @@ ZKComponentReferenceAccessibilityNamingReference.md %}
 
 ## Example
 
-``` xml
+```xml
 <zk xmlns:ca="client/attribute">
   <rangeslider ca:aria-label="range value" ca:data-ariaStartLabel="minimal range value"
       ca:data-ariaEndLabel="maximal range value"/>

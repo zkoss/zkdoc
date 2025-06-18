@@ -3,7 +3,7 @@
 The template used to control the rendering of each item must be named
 `model` and declared right inside the `listbox` element. For example,
 
-``` xml
+```xml
 <div apply="foo.FruitProvider">
     <listbox model="${$composer.fruits}">
     <listhead>
@@ -35,7 +35,7 @@ In this example, we assume the `$composer.fruits` expression returns a
 two-dimensional array[^1], and is provided by the `foo.FruitProvider`
 composer such as follows[^2].
 
-``` java
+```java
 public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
     public ListModelArray fruits = new ListModelArray(
             new String[][] {
@@ -50,7 +50,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 }
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/St201107-listbox.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/st201107-listbox.png‎)
 
 > ------------------------------------------------------------------------
 >
@@ -87,7 +87,7 @@ example, you can't reference [the arg
 variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
 in a template:
 
-``` xml
+```xml
 <listbox model="${$composer.fruits}" apply="foo.FruitProvider">
     <template name="model">
         <listitem>
@@ -103,7 +103,7 @@ attributes
 (<javadoc method="getAttributes()" type="interface">org.zkoss.zul.Component</javadoc>).
 For example,
 
-``` xml
+```xml
 <listbox model="${$composer.fruits}" apply="foo.FruitProvider">
     <custom-attributes foo="${arg.foo}"/><!-- store it for later use -->
     <template name="model">
@@ -120,7 +120,7 @@ For example,
 The template can be applied recursively. Here is an example of a
 listbox-in-listbox:
 
-``` xml
+```xml
 <zk>
     <zscript><![CDATA[
     ListModel quarters = new ListModelArray(new String[] {"Q1", "Q2", "Q3", "Q4"});
@@ -148,7 +148,7 @@ listbox-in-listbox:
 </zk>
 ```
 
-![](images/St201107-listbox-in-listbox.png)
+![](/zk_dev_ref/images/St201107-listbox-in-listbox.png)
 
 
 ### How to retrieve the outer template's data in the inner template
@@ -170,7 +170,7 @@ Here is an example of traversing the component tree to retrieve the data
 in the outer template, as shown at line 9 below. Notice that, each data
 is, as described before, stored in the component's value property.
 
-``` xml
+```xml
 <listbox model="${quarters}">
     <template name="model">
         <listitem>
@@ -195,7 +195,7 @@ Alternatively, you can store the information into [a custom
 attribute](ZUML_Reference/ZUML/Elements/custom-attributes)
 and then retrieve it later, as shown at line 4 and 10 below.
 
-``` xml
+```xml
 <listbox model="${quarters}">
     <template name="model">
         <listitem>
@@ -229,7 +229,7 @@ object. If it is not defined, it will look for the template called
 `model` instead (i.e., the same template is used for rendering the
 grouping and non-grouping objects).
 
-``` xml
+```xml
 <listbox model="${fooGroupsModel}">
    <template name="model:group">
       <listgroup open="${groupingInfo.open}" label="${each}"/>
@@ -262,7 +262,7 @@ grouping and non-grouping objects).
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
     [the Composer
-    section]({{site.baseurl}}/zk_dev_ref/MVC/Controller/Composer).
+    section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 [^3]: On the other hand, it returns the previous iteration information
     when using with [the forEach

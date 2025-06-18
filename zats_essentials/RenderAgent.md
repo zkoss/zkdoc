@@ -21,7 +21,7 @@ the item's content. Each *listcell* has one child component *label*.
 
 **RenderTest.java**
 
-``` java
+```java
 
     @Test
     public void testRendererAgent() {

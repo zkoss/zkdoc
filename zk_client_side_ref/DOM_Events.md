@@ -11,7 +11,7 @@ events, if possible, for better performance (by overriding the
 corresponding methods, such as
 <javadoc method="doClick_(zk.Event)" directory="jsdoc">zk.Widget</javadoc>).
 For more information, please refer to [the previous
-section](ZK_Client-side_Reference/Notifications/Widget_Events).
+section]({{site.baseurl}}/zk_client_side_ref/notifications/widget_events).
 
 # How to Listen and Unlisten
 
@@ -31,7 +31,7 @@ when a widget is un-bound from DOM elements, i.e., when
 <javadoc method="unbind_(zk.Skipper, _global_.Array)" directory="jsdoc">zk.Widget</javadoc>
 is called. For example,
 
-``` javascript
+```javascript
 bind_: function () {
     this.$supers('bind_', arguments);
     this.domListen_(this.getNode(), "onChange");
@@ -59,7 +59,7 @@ The use of jQuery (<javadoc directory="jsdoc">\_global\_.jq</javadoc>)
 is similar except using one of the event listening methods found in
 [jQuery](http://api.jquery.com/category/events/).
 
-``` javascript
+```javascript
 bind_: function () {
     this.$supers('bind_', arguments);
     jq(this.$n("form")).bind("reset", this.proxy(this._resetForm));

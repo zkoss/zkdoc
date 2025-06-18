@@ -14,7 +14,7 @@ properties files based on the current locale[^1]. A properties file is a
 simple text file encoded in UTF-8[^2]. The file contains a list of
 `key=value` pairs, such as[^3]
 
-``` text
+```text
 # This is the default LabelsBundle.properties file
 s1=computer
 s2=disk
@@ -67,7 +67,7 @@ called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
 For more information, please refer to [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.label.web.charset).
+Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.charset).
 
 # Access Internationalization Labels In ZUML
 
@@ -79,7 +79,7 @@ was introduced, such that you could access the internationalization
 labels (so-called internationalization labels) directly. For example,
 assume you have a label called `app.title`, and then you could:
 
-``` xml
+```xml
 <window title="${labels.app.title}">
 ...
 </window>
@@ -107,7 +107,7 @@ Notice that ZK groups the segmented labels as maps. For example,
 `${labels.app}` was resolved as a map containing two entries (`title`
 and `description`).
 
-``` xml
+```xml
 app.title=Foo
 app.description=A super application
 ```
@@ -119,7 +119,7 @@ named `a`.
 
 For example, in properties file:
 
-``` xml
+```xml
 app=Application
 app.title=Foo
 app.description=A super application
@@ -127,7 +127,7 @@ app.description=A super application
 
 In ZUL:
 
-``` xml
+```xml
 <window title="${labels.app.$}"><!-- shows "Application" -->
 ...
 </window>
@@ -141,7 +141,7 @@ In ZUL:
 With 5.0.6 or prior, you could get an internationalization label using
 `${c:l('key')}` in EL expression. For example,
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 
 <window title="${c:l('app.title')}">
@@ -169,11 +169,11 @@ For example, let us assume we want to generate a full name based on the
 current Locale, then we could use `${c:l2('key',args)}` to generate
 concatenated messages as follows.
 
-``` text
+```text
 fullname.format=full name is {0}
 ```
 
-``` xml
+```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 <label value="${c:l2('fullname.format', fullname)}">
 ```
@@ -197,7 +197,7 @@ To access labels in Java code (including zscript), you could use
 <javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
 and others.
 
-``` java
+```java
 String username = Labels.getLabel("username");
 ```
 
@@ -206,7 +206,7 @@ name based on the Locale, then we could use
 <javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
 to generate concatenated messages as follows.
 
-``` java
+```java
 public String getFullName(String firstName, String lastName) {
    return Labels.getLabel("fullname.format", new java.lang.Object[] {firstName, lastName});
 }
@@ -222,10 +222,10 @@ such as `"{1}, {0}"`.
 It is typical to partition the properties file into several modules for
 easy maintenance. Since 5.0.7 and later, you could specify the location
 for each of these properties file with [the label-location
-element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_label-location_Element).
+element]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_label-location_element).
 For example,
 
-``` xml
+```xml
 <system-config>
     <label-location>/WEB-INF/labels/order.properties</label-location>
     <label-location>/WEB-INF/labels/invoice.properties</label-location>
@@ -250,7 +250,7 @@ target environment is Windows, you could specify the drive too, such as
 The advantage is that additional properties files could be added after
 the project has been built into a WAR file.
 
-``` xml
+```xml
 <system-config>
     <label-location>file:///labels/order.properties</label-location>
     <label-location>file:///labels/invoice.properties</label-location>
@@ -265,7 +265,7 @@ configuration file is also specified at the run time and could be
 located in the file system (rather than the WAR file). It can be done by
 specifying the path of the configuration file in a library property
 called
-[org.zkoss.zk.config.path](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.config.path).
+[org.zkoss.zk.config.path]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.config.path).
 
 For 5.0.6 and older, you could use the approach described in the
 following section to load multiple properties files.
@@ -323,7 +323,7 @@ and return an input stream (java.io.InputStream).
 
 **Alernative 1: load as an input stream:**
 
-``` java
+```java
 public class FooDBLocator implements org.zkoss.util.resource.LabelLocator2 {
     private String _field;
     public FooDBLocator(String field) {
@@ -341,7 +341,7 @@ public class FooDBLocator implements org.zkoss.util.resource.LabelLocator2 {
 
 **Alernative 2: load as an URL:**
 
-``` java
+```java
 public class FooServletLocator implements org.zkoss.util.resource.LabelLocator {
     private ServletContext _svlctx;
     private String _name;
@@ -360,7 +360,7 @@ use of
 <javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc> as
 follows.
 
-``` java
+```java
 public class MyAppInit implements org.zkoss.zk.ui.util.WebAppInit {
     public void init(WebApp wapp) throws Exception {
         Labels.register(new FooDBLocator(("moduleX");
@@ -375,7 +375,7 @@ where we assume `moduleX` and `moduleY` are the database tables to load
 the properties, and `module-1.properties` and `module-2.properties` are
 two modules of messages you provide. Then, you configure it in
 `WEB-INF/zk.xml` as described in [ZK Configuration
-Reference](ZK_Configuration_Reference/zk.xml/The_listener_Element/The_org.zkoss.zk.ui.util.WebAppInit_interface).
+Reference]({{site.baseurl}}/zk_config_ref/the_listener_element/the_org.zkoss.zk.ui.util.webappinit_interface).
 
 > ------------------------------------------------------------------------
 >
@@ -390,7 +390,7 @@ However, it is easy to force ZK to reload by the use of
 
 For example, you could prepare a test paging for reloading as follows.
 
-``` xml
+```xml
 <zk>
 <button label="Reload Labels" onClick="org.zkoss.util.resource.Labels.reset();execution.sendRedirect(null);"/>
 Test result: ${foo} ${another.whatever}
@@ -404,7 +404,7 @@ could implement a static method and map it with
 [xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
 Then, you could reference it in EL expressions. For example,
 
-``` xml
+```xml
 <?xel-method prefix="c" name="label" class="foo.MyI18Ns" 
   signature="java.lang.String label(java.lang.String)"?>
 <window title="${c:label('app.title')}">
@@ -423,24 +423,24 @@ ${c:label('another.key')}
 [^1]: It is the value returned by
     <javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>. For
     more information, please refer to [the Locale
-    section]({{site.baseurl}}/zk_dev_ref/Internationalization/Locale).
+    section]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 [^2]: If you prefer a different charset, please refer to [the Encoding
     Character Set section](#Encoding_character_set).
 
 [^3]: Please refer to
-    [here]({{site.baseurl}}/zk_dev_ref/Internationalization/Labels/The_Format_of_Properties_Files)
+    [here]({{site.baseurl}}/zk_dev_ref/internationalization/labels/the_format_of_properties_files)
     for more details about the format of a properties file, such as the
     use of multiple lines and EL expressions.
 
 [^4]: Notice the directory and filename are configurable. For more
     information, please refer to [ZK Configuration Reference:
-    org.zkoss.util.label.web.location](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.util.label.web.location)
+    org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.location)
 
 [^5]: For more information about the URI of a file, please refer to
     [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).
 
 [^6]: For 5.0.7 and later, you could use [the label-location
-    element](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_label-location_Element)
+    element]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_label-location_element)
     if the properties file is located in the file system or in the Web
     application as described in the previous section.

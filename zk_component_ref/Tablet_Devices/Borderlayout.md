@@ -3,7 +3,7 @@
 # Borderlayout
 
 - Component Reference:
-  [Borderlayout](ZK_Component_Reference/Layouts/Borderlayout)
+  [Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # SwipeEvent Support
@@ -11,13 +11,13 @@
 Each layout region can support to close and open the region area by
 user's swipe on the edge of the region with client/attribute.
 
-``` xml
+```xml
 <borderlayout xmlns:ca="client/attribute" ca:data-swipeable="true">
 <!-- omitted -->
 </borderlayout>
 ```
 
-![](images/Borderlayout_Tablet_Swipe_Example.png)
+![](/zk_component_ref/images/Borderlayout_Tablet_Swipe_Example.png)
 
 # Friendly Scrolling Support
 
@@ -27,16 +27,16 @@ specify autoscroll to true.
 
 For example,
 
-``` xml
+```xml
 <west title="West" size="20%" autoscroll="true" />
 ```
 
-![](images/Borderlayout_Tablet_Scrolling_Example.png)
+![](/zk_component_ref/images/Borderlayout_Tablet_Scrolling_Example.png)
 
 **Note:** to disable the friendly scrollbar, please use the following
 setting.
 
-``` xml
+```xml
 <west autoscroll="false"/>
 ```
 

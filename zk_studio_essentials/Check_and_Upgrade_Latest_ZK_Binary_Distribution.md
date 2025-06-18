@@ -16,9 +16,9 @@ You can also download another ZK release to develop your ZK web
 application from [**ZK Recommended
 Releases**](http://www.zkoss.org/download/zk.dsp) and save it in your
 preferred location or download from [ ZK Storage
-view](ZK_Studio_Essentials/Features_of_ZK_Studio/ZKs).
+view]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks).
 
 ## Import ZK Release
 
 Please refer to [ ZK Studio Feature
-ZKs](ZK_Studio_Essentials/Features_of_ZK_Studio/ZKs)
+ZKs]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks)

@@ -9,7 +9,7 @@ blocks the end user from access components other than the modal window.
 However, at the server side, it works just like the overlapped mode – it
 returns immediately without waiting for user's closing the window.
 
-``` java
+```java
  win.doModal(); //returns once the mode is changed; not suspended
  System.out.println("next");
 ```
@@ -22,7 +22,7 @@ closes the modal window.
 With the Event thread, you might write your business logic right after
 `doModal()`.
 
-``` java
+```java
 win.doModal(); 
 doMyTask(); //your business logic, need to move it for a servlet thread
 ```

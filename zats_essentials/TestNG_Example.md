@@ -7,7 +7,7 @@ is written in TestNG's annotation, please refer to
 To run a TestNG test case, please refer to [Run
 TestNG](http://testng.org/doc/documentation-main.html#running-testng).
 
-``` java
+```java
 
 public class HelloTestNg {
     @BeforeClass

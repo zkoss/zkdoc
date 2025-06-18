@@ -24,7 +24,7 @@ with the curly braces (as shown in the third format).
 
 For example,
 
-``` xml
+```xml
 <listitem label="@bind(datasource='author',value='selected')"/>
 ```
 
@@ -34,14 +34,14 @@ and the `bind` annotation has two attributes: `datasource` and `value`.
 If the attribute name is not specified, the name is assumed to be
 `value`. For example, the following two statements are equivalent:
 
-``` xml
+```xml
 <textbox value="@bind(vm.p1.firstName)"/>
 <textbox value="@bind(value=vm.p1.firstName)"/>
 ```
 
 Here is a more complex example.
 
-``` xml
+```xml
 <textbox value="@save(vm.person.firstName,  before={'cmd1', 'cmd2'})"/>
 ```
 
@@ -55,14 +55,14 @@ document.
 To annotate the same property with multiple annotations, you could
 specify them one-by-one and separate them with a space, as shown below.
 
-``` xml
+```xml
 <textbox value="@bind(vm.value1) @validator('validator1')" errorMessage="@bind(vm.lastMessage1)" />
 ```
 
 In addition, you could annotate with multiple annotations that have the
 same name. For example,
 
-``` xml
+```xml
 <textbox value="@bind(vm.first) @bind(vm.second)"/>
 ```
 
@@ -73,7 +73,7 @@ where two annotations are annotated to the `value` property.
 To annotate a component, you could specify an annotation expression in a
 specific attribute called `self` as shown below.
 
-``` xml
+```xml
 <label self="@title(value='Hello World')"/>
 ```
 
@@ -91,7 +91,7 @@ If you'd like to specify both the value and the annotations of a given
 property, you could specify a namespace called annotation to distinguish
 them. For example,
 
-``` xml
+```xml
 <textbox value="a property's value" a:value="@save(vm.user)" xmlns:a="annotation"/>
 ```
 
@@ -104,7 +104,7 @@ If the value of a property looks like an annotation, you could specify a
 namespace other than annotation to tell ZK Loader not to interpret it as
 an annotation. For example,
 
-``` xml
+```xml
 <textbox u:value="@value()" xmlns:u="zul"/>
 ```
 

@@ -1,11 +1,11 @@
 # Component Reference
 
 Component Reference: [
-Button](ZK_Component_Reference/Essential_Components/Button)
+Button]({{site.baseurl}}/zk_component_ref/essential_components/button)
 
 # DOM Structure
 
-``` html
+```html
 <button class="z-button">
     <img class="z-button-image" />
 </button>
@@ -16,7 +16,7 @@ Button](ZK_Component_Reference/Essential_Components/Button)
 Basically, LESS source is correspondent to it's DOM structure, each
 state also have different styles.
 
-``` css
+```css
 .z-button {
     /* normal style */
 
@@ -65,7 +65,7 @@ border, gradient background, rounded corner or shadow effects.
 ### Setup environment and Analyze design
 
 - Check [ the
-  instruction](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component)
+  instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -95,7 +95,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Change text color and remove border and text-shadow effect:
 
-``` css
+```css
 .z-button {
     .fontStyle(@baseTitleFontFamily, 14px, normal, #FFFFFF);
     text-shadow: none; /* remove text shadow */
@@ -106,7 +106,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Remove rounded corner:
 
-``` css
+```css
 .z-button {
     .borderRadius(0);
 }
@@ -114,7 +114,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Normal state background:
 
-``` css
+```css
 .z-button {
     .verGradient(#5687A8, #5687A8); /* no gradient, pass the same color arguments for the function */
 }
@@ -122,7 +122,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Hover state:
 
-``` css
+```css
 .z-button {
     &:hover {
         color: #FFFFFF;
@@ -134,7 +134,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Pressed state:
 
-``` css
+```css
 .z-button {
     &:active {
         color: #FFFFFF;
@@ -146,7 +146,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Focus state:
 
-``` css
+```css
 .z-button {
     &:focus {
         color: #FFFFFF;
@@ -158,7 +158,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Disabled state:
 
-``` css
+```css
 .z-button {
     &[disabled] {
         color: #FFFFFF;
@@ -171,7 +171,7 @@ border, gradient background, rounded corner or shadow effects.
 
 - Modify Size:
 
-``` css
+```css
 .z-button {
     /* omitted */
     min-height: 32px;
@@ -187,14 +187,14 @@ border, gradient background, rounded corner or shadow effects.
 
 If icon font is used inside a button component as below:
 
-``` xml
+```xml
 <button label="Button" iconSclass="z-icon-flag" />
 ```
 
 The icon color is same as label by default, if you wish to change icon
 color only, add extra style like this:
 
-``` css
+```css
 .z-button {
     /* omitted */
 

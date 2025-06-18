@@ -21,7 +21,7 @@ components.
 By default the preload function is disabled, so users have to specify
 the *custom-attributes* and set it to true. For example,
 
-``` xml
+```xml
 <button image="xxx.png">
   <custom-attributes org.zkoss.zul.image.preload="true"/>
 </button>
@@ -31,7 +31,7 @@ Or specify it just below the root component.
 
 For example,
 
-``` xml
+```xml
 <window>
   <custom-attributes org.zkoss.zul.image.preload="true"/>
   <button image="xxx.png"/>
@@ -49,7 +49,7 @@ The feature can also applied from zk.xml as a library property.
 
 For example,
 
-``` xml
+```xml
 <!-- zk.xml -->
 <zk>
     <library-property>
@@ -62,12 +62,12 @@ For example,
 # IconSclass
 
 Allow you to specify built-in icon CSS classes, see
-[ZK_Developer%27s_Reference/Integration/Presentation_Layer/Font_Awesome](ZK_Developer%27s_Reference/Integration/Presentation_Layer/Font_Awesome)
+[{{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome]({{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome)
 
 # Supported Events
 
 - Inherited Supported Events: [
-  LabelElement](ZK_Component_Reference/Base_Components/LabelElement#Supported_Events)
+  LabelElement]({{site.baseurl}}/zk_component_ref/base_components/labelelement#Supported_Events)
 
 # Supported Children
 

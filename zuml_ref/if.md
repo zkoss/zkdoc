@@ -9,7 +9,7 @@ the condition is evaluated to false.
 For example, suppose you want to place either one label or another in a
 column of a grid, you might use something like this:
 
-``` xml
+```xml
 <row forEach="${salesPersonList}">                                      
   <label value="${each.salesPersonName}" if="${each.hasSalesPerson=='Y'}"/>
   <label value="-" style="float:center"  if="${each.hasSalesPerson!='Y'}"/>

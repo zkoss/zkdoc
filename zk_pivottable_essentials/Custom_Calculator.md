@@ -16,7 +16,7 @@ the summarization would be the division.
 To define a custom calculator, you must specify a ContextType so the
 model knows what to keep track of in accumulation phase.
 
-``` java
+```java
 public interface ContextualCalculator<C extends Context<C>> extends Calculator {
     
     public Number getResult(C context); // summarize the end result from the context
@@ -32,7 +32,7 @@ built-in context type are: `TODO`
 It is encouraged to make ContextType as singletons, as Calculators can
 share Context if they are of the same ContextType.
 
-``` java
+```java
 public interface ContextType<C extends Context<C>> {
     
     public C create(); // ContextType has the responsibility as a Context factory
@@ -55,7 +55,7 @@ StandardContextType.MIN_MAX already carries sufficient information to do
 so. We just need to define a ContextualCalculator based on the context
 type:
 
-``` java
+```java
 public class Range implements ContextualCalculator<MinMaxContext> {
     
     public static final Range INSTANCE = new Range();
@@ -88,7 +88,7 @@ calculates the number of distinct items in the collection), but the best
 approach on context is a Set. As there is no similar built-in context,
 we have to implement our own:
 
-``` java
+```java
 public class SetContext implements Context<SetContext> {
     
     private final Set<Object> _set = new HashSet<Object>();
@@ -117,7 +117,7 @@ public class SetContext implements Context<SetContext> {
 
 Then the summarization part becomes quite obvious:
 
-``` java
+```java
 public class DistinctCount implements ContextualCalculator<SetContext> {
     
     public static final DistinctCount INSTANCE = new DistinctCount();

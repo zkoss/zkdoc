@@ -13,7 +13,7 @@ The fundamental class for XUL elements.
 # Supported Events
 
 [ Inherited Supported Events from
-HtmlBasedComponent](ZK_Component_Reference/Base_Components/HtmlBasedComponent#Supported_Events)
+HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

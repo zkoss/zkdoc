@@ -6,16 +6,16 @@ If you are new to ZK and prefer to have some prior knowledge of ZK
 first, you could skip this section and come back later when you
 understand more about ZK.
 
-# [MVC]({{site.baseurl}}/zk_dev_ref/MVC) vs. [MVVM]({{site.baseurl}}/zk_dev_ref/MVVM) vs. [ZScript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML)
+# [MVC]({{site.baseurl}}/zk_dev_ref/mvc) vs. [MVVM]({{site.baseurl}}/zk_dev_ref/mvvm) vs. [ZScript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
 
 They serve different purposes and could work together. However, some
 developers get confused about these technologies.
 
 ## When to use MVC and/or MVVM
 
-[MVC]({{site.baseurl}}/zk_dev_ref/MVC) (Model-View-Control;
+[MVC]({{site.baseurl}}/zk_dev_ref/mvc) (Model-View-Control;
 aka., Model-View-Presenter) and
-[MVVM]({{site.baseurl}}/zk_dev_ref/MVVM) (Model-View-ViewModel;
+[MVVM]({{site.baseurl}}/zk_dev_ref/mvvm) (Model-View-ViewModel;
 aka., Presentation Model) are both design patterns that isolate the
 dependency among the domain data, the domain logic and the user
 interface. They are both supported by ZK, and they are praised for their
@@ -42,7 +42,7 @@ because it is quite straightforward.
 
 ## When to use zscript
 
-[Zscript]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Scripts_in_ZUML)
+[Zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
 allows you to embed Java code in ZUML pages. It speeds up the design
 cycle, so this can be a good approach for prototyping, POC and testing.
 Zscript is also good for exploiting ZK features and reporting bugs to
@@ -72,21 +72,21 @@ and <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc></li>
 <td><p>ZSCRIPT:</p></td>
 <td><ul>
 <li><a
-href="ZK_Developer&#39;s_Reference/UI_Composing/ZUML/Scripts_in_ZUML"
+href="ZK_Developer&#39;s_Reference/ui_composing/ZUML/Scripts_in_ZUML"
 title="wikilink">ZK Developer's Reference: Scripts in ZUML</a></li>
 <li><a
-href="ZK_Studio_Essentials/Features_of_ZK_Studio/Zscript_to_MVC_Extractor"
+href="{{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zscript_to_mvc_extractor"
 title="wikilink">ZK Studio Essentials: MVC Extractor</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-# [Data Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding)
+# [Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding)
 
 ## When to use
 
-[Data Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding)
+[Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding)
 automates the data-copy plumbing code (CRUD) between UI components and
 the data source. It is strongly suggested to use Data Binding whenever
 applicable because it can help boost programmers' productivity and the
@@ -96,24 +96,24 @@ code is easy to read and maintain.
 
 Barely. However, as Data Binding requires more time and effort to learn
 than [EL
-expressions]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/EL_Expressions),
+expressions]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions),
 EL expressions provide an alternative for people not familiar with ZK,
 especially during the UI design phase.
 
 ## Documentation links
 
 - [ZK Developer's Reference: Data
-  Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding)
+  Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding)
 
-# [ZUML]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet) vs. [JSP](ZK_JSP_Docs)
+# [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) vs. [JSP](ZK_JSP_Docs)
 
 ## When to use ZUML
 
-[ZUML]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML) is an
+[ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) is an
 XML-based approach to declare UI. It does not require any programming
 knowledge and it works well with
-[MVC]({{site.baseurl}}/zk_dev_ref/MVC), [Data
-Binding]({{site.baseurl}}/zk_dev_ref/MVVM/Data_Binding) and
+[MVC]({{site.baseurl}}/zk_dev_ref/mvc), [Data
+Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding) and
 others. ZUML is strongly suggested for usage unless you have different
 preferences (such as pure Java and JSP).
 
@@ -129,7 +129,7 @@ manipulate it dynamically.
 
 ## When to use Richlet
 
-A [richlet]({{site.baseurl}}/zk_dev_ref/UI_Composing/Richlet) is
+A [richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) is
 a small Java program that composes a user interface in Java for serving
 a user's request. You could try to use it if you prefer to compose UI in
 pure Java (like Swing).
@@ -149,7 +149,7 @@ page and then include it in ZUML pages if necessary.
 
 Notice that ZUML supports the use of HTML tags well (without JSP). For
 more information, please refer to the [ZK Developer's Reference: HTML
-Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags).
+Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags).
 
 ## Documentation links
 
@@ -158,23 +158,23 @@ Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags).
 <tr class="odd">
 <td><p>ZUML:</p></td>
 <td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/UI_Composing/ZUML"
+<li><a href="ZK_Developer&#39;s_Reference/ui_composing/ZUML"
 title="wikilink">ZK Developer's Reference: ZUML</a></li>
-<li><a href="ZK_Developer&#39;s_Reference/UI_Patterns/HTML_Tags"
+<li><a href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags"
 title="wikilink">ZK Developer's Reference: HTML Tags</a></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Richlet:</p></td>
 <td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/UI_Composing/Richlet"
+<li><a href="ZK_Developer&#39;s_Reference/ui_composing/Richlet"
 title="wikilink">ZK Developer's Reference: Richlet</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>JSP:</p></td>
 <td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/Integration/Use_ZK_in_JSP"
+<li><a href="ZK_Developer&#39;s_Reference/integration/Use_ZK_in_JSP"
 title="wikilink">ZK Developer's Reference: Use ZK in JSP</a> and <a
 href="ZK_JSP_Docs" title="wikilink">ZK JSP Tags</a></li>
 </ul></td>
@@ -182,7 +182,7 @@ href="ZK_JSP_Docs" title="wikilink">ZK JSP Tags</a></li>
 </tbody>
 </table>
 
-# [Bookmarks]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_History_Management) vs. Multiple Pages
+# [Bookmarks]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management) vs. Multiple Pages
 
 A traditional page-based Web framework forces developers to split an
 application into pages. On the other hand, Ajax (ZK) allows developers
@@ -197,15 +197,15 @@ administration with, let's say, data entry. Here are some guidelines:
   you might want to group it into a single page.
 - If SEO (i.e., able to be indexed by search engine) is important, it is
   better to split UI into multiple pages (and turn on [the crawlable
-  option](ZK_Configuration_Reference/zk.xml/The_system-config_Element/The_crawlable_Element)).
+  option]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_crawlable_element)).
 
 It does not matter whether the UI shares the same template (such as
 header and footer) or not because it will be easy anyway to create
 similar multiple pages (by the use of
-[inclusion]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include),
-[templating]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating)
+[inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include),
+[templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 and
-[composite]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component)).
+[composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)).
 
 ## When to use bookmarks (in single page)
 
@@ -213,7 +213,7 @@ After grouping a set of functionality into a single page, users can
 still click on the BACK and the FORWARD button to switch among the
 states of the single page and even bookmark on a particular state, as if
 there are multiple pages. This can be done by using [Browser History
-Management]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Browser_History_Management)
+Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management)
 (aka., bookmarks). You might consider this as a technique to simulate
 multiple pages (for a single page with multiple states).
 
@@ -222,7 +222,7 @@ multiple pages (for a single page with multiple states).
 If a set of functionality is logically independent of one another, you
 could make them as separated pages. To jump from one page to another,
 you could use the so-called
-[send-redirect]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Forward_and_Redirect)
+[send-redirect]({{site.baseurl}}/zk_dev_ref/ui_patterns/forward_and_redirect)
 technique.
 
 ## Documentation links
@@ -233,11 +233,11 @@ technique.
 <td><p>Bookmarks:</p></td>
 <td><ul>
 <li><a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/Browser_History_Management"
+href="ZK_Developer&#39;s_Reference/ui_patterns/Browser_History_Management"
 title="wikilink">ZK Developer's Reference: Browser History
 Management</a></li>
 <li><a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/Browser_Information_and_Control"
+href="ZK_Developer&#39;s_Reference/ui_patterns/Browser_Information_and_Control"
 title="wikilink">ZK Developer's Reference: Browser Information and
 Control</a></li>
 </ul></td>
@@ -246,13 +246,13 @@ Control</a></li>
 <td><p>Multiple Pages:</p></td>
 <td><ul>
 <li><a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/Forward_and_Redirect"
+href="ZK_Developer&#39;s_Reference/ui_patterns/Forward_and_Redirect"
 title="wikilink">ZK Developer's Reference: Forward and Redirect</a></li>
-<li><a href="ZK_Developer&#39;s_Reference/UI_Composing/ZUML/Include"
+<li><a href="ZK_Developer&#39;s_Reference/ui_composing/ZUML/Include"
 title="wikilink">ZK Developer's Reference: Include</a>, <a
-href="ZK_Developer&#39;s_Reference/UI_Patterns/Templating"
+href="ZK_Developer&#39;s_Reference/ui_patterns/Templating"
 title="wikilink">Templating</a> and <a
-href="ZK_Developer&#39;s_Reference/UI_Composing/Composite_Component"
+href="ZK_Developer&#39;s_Reference/ui_composing/Composite_Component"
 title="wikilink">Composite</a> for consistent UI across multiple
 pages.</li>
 </ul></td>
@@ -260,21 +260,21 @@ pages.</li>
 </tbody>
 </table>
 
-# [Native Namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace) vs. [XHTML Components]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_XHTML_Component_Set)
+# [Native Namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace) vs. [XHTML Components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set)
 
 ZK provides [several
-ways]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags) to use
+ways]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags) to use
 XHTML tags in a ZUML document. Here we will discuss [native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace)
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
 vs. [XHTML
-components]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_XHTML_Component_Set).
+components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set).
 In a ZUML document, they basically mean the same thing except for the
 XML namespace. Therefore it should be easy to switch between them.
 
 ## When to use native namespace
 
 With the use of an XML namespace called [the native
-namespace]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags/The_native_Namespace),
+namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace),
 you could declare any tags in ZUML as long as they are valid to the
 client (i.e., any HTML tags for a browser). It is suggested to use this
 technology if the HTML tags are static. For example, you will not be
@@ -294,20 +294,20 @@ component, it consumes the server's memory.
 ## Documentation links
 
 - [ZK Developer's Reference: HTML
-  Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags)
+  Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
 - [ZK Developer's Reference: Performance Tips\|Native vs.
-  XHTML]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace)
+  XHTML]({{site.baseurl}}/zk_dev_ref/performance_tips/use_native_namespace_instead_of_xhtml_namespace)
 - [ZK Developer's Reference: Performance Tips:
-  Stubonly]({{site.baseurl}}/zk_dev_ref/Performance_Tips/Specify_Stubonly_for_Client-only_Components)
+  Stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components)
 
-# [Include]({{site.baseurl}}/zk_dev_ref/UI_Composing/ZUML/Include), [Macro]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component), [Composite]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component) and [Templating]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating)
+# [Include]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include), [Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component), [Composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) and [Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 
 They allow developers to modularize the UI such that it becomes easier
 to develop, maintain and reuse.
 
 ## When to use include
 
-[Include](ZK_Component_Reference/Essential_Components/Include)
+[Include]({{site.baseurl}}/zk_component_ref/essential_components/include)
 allows you to include a ZUML page, a static page, a JSP page or the
 result of a servlet. This is the most suitable for usage if you would
 like to:
@@ -317,7 +317,7 @@ like to:
     to encapsulate a ZUML page[^1][^2]
 
 The limitation of
-[Include](ZK_Component_Reference/Essential_Components/Include)
+[Include]({{site.baseurl}}/zk_component_ref/essential_components/include)
 is that you can not encapsulate its behavior in a Java class (like macro
 or composite components do).
 
@@ -326,13 +326,13 @@ or composite components do).
 ## When to use macro components
 
 [Macro
-components]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component)
+components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component)
 allow developers to define a new component with a ZUML page. So if you
 would like to reuse a ZUML page across different pages, you can use it
 because
 
 1.  Though optional, you could [encapsulate the behavior in a Java
-    class]({{site.baseurl}}/zk_dev_ref/UI_Composing/Macro_Component/Implement_Custom_Java_Class)
+    class]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class)
 2.  It is easier to map a macro component to another URI, if necessary
 3.  There is no difference between the use of a macro component and
     other components
@@ -340,7 +340,7 @@ because
 ## When to use composite components
 
 [Composite
-component]({{site.baseurl}}/zk_dev_ref/UI_Composing/Composite_Component)
+component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)
 is another way to define a new component. With this approach, you could
 extend a new component from any existent components. However, you must
 implement a Java class to represent the component[^3]. Unlike macro
@@ -359,7 +359,7 @@ components defined in a ZUML document.
 
 ## When to use templating
 
-[Templating]({{site.baseurl}}/zk_dev_ref/UI_Patterns/Templating/Composition)
+[Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/composition)
 allows developers to define UI fragments and define how to assemble them
 into a complete UI at runtime. Its use is very different from other
 approaches. Feel free to use templating if you would like the overall
@@ -369,8 +369,8 @@ preferences.
 # Performance and Security
 
 For production systems, it is strongly recommended to take a look at the
-[Performance Tips]({{site.baseurl}}/zk_dev_ref/Performance_Tips)
-and [Security Tips]({{site.baseurl}}/zk_dev_ref/Security_Tips)
+[Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips)
+and [Security Tips]({{site.baseurl}}/zk_dev_ref/security_tips)
 sections first.
 
 # JSF
@@ -381,7 +381,7 @@ JSF is a page-based framework. Because it is too complicated to use, we
 strongly recommend you to deploy ZK. ZK can do whatever JSF can do or
 even better. However, if you have to use ZK with legacy JSF, please
 refer to the [Embed ZK Component in Foreign
-Framework]({{site.baseurl}}/zk_dev_ref/Integration/Embed_ZK_Component_in_Foreign_Framework)
+Framework]({{site.baseurl}}/zk_dev_ref/integration/embed_zk_component_in_foreign_framework)
 section[^5].
 
 > ------------------------------------------------------------------------
@@ -402,7 +402,7 @@ section[^5].
     Composite](https://github.com/zanyking/ZK-Composite). It allows to
     define a composite component with Java annotations. Please refer to
     [Small Talks: Define Composite Component using Java Annotation in
-    ZK6](Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
+    ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
     for the details.
 
 [^5]: Notice that [ZK JSF Components](ZK_JSF_Docs) is no

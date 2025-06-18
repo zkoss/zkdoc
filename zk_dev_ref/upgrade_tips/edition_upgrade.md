@@ -79,7 +79,7 @@ the dependency in your maven POM file.
 
 If you wish to use a specific feature, reference the document page of
 that feature, or [ the content (jar) of binary
-distributions](ZK_Installation_Guide/ZK_Background/The_Content_of_ZK_Binary_Distribution)
+distributions]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution)
 to see if it is already in the core package, or if you need to specify a
 different jar file or dependency.
 
@@ -93,13 +93,13 @@ to set it up.
 
 After upgrading to PE/EE, some of the features are enabled by default.
 For example, the [ client render on
-demand](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.client.rod)
+demand]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
 feature will be enabled by default to improve the client-side
 performance. Also, with EE, the Tablet UI will be enabled by default,
 when a tablet or mobile device connects to your application the
 tablet-supported components will switch themselves to the tablet theme.
 You can manually [ disable them in
-zk.xml](ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zkmax.tablet.ui.disabled)
+zk.xml]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled)
 if you are not ready.
 
 ## Change of default behavior
@@ -108,14 +108,14 @@ Some of the default behavior changes after you upgraded the ZK edition.
 For example in the case of server push, with CE, it uses client polling.
 Once you upgrade to PE, the default push becomes comet push, and with EE
 it uses servlet 3 comet. [ Learn more
-here]({{site.baseurl}}/zk_dev_ref/Server_Push/Configuration).
+here]({{site.baseurl}}/zk_dev_ref/server_push/configuration).
 
 ## Require configuration
 
 Some PE/EE features are now available for you to use, but you will have
 to enable them by yourself. For example if you have a big grid or
 listbox, you can [ turn on render on
-demand](ZK_Developer%27s_Reference/Performance_Tips/Listbox,_Grid_and_Tree_for_Huge_Data/Turn_on_Render_on_Demand)
+demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)
 to boost its performance.
 
 Please reference the documentation of each feature to see if any

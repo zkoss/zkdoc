@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @ToClientCommand("commandName")
 @ToClientCommand({"commandName1", "commandName2"})
 ```
@@ -21,7 +21,7 @@ Description
 Example
 =======
 
-``` java
+```java
 @ToClientCommand("doCountChange")
 public class VM{
     private int count = 0;
@@ -53,7 +53,7 @@ public class VM{
 #### Combine with `@NotifyCommand` :
 
 
-``` java
+```java
 @NotifyCommand(value="upateData", onChange="_vm_.count")
 @ToClientCommand("upateData")
 public class VM{

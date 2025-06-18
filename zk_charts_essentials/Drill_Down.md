@@ -23,7 +23,7 @@ calling `chart.addSeriesAsDrilldown`.
 
 **org.zkoss.zkcharts.essentials.DrilldownOnDemandComposer**
 
-``` java
+```java
         chart.addEventListener(ChartsEvents.ON_PLOT_DRILL_DOWN, (ChartsEvent e) -> {
             Point parent = e.getPoint();
             Point[] childPoints = loadPoints(parent); //e.g. from DB
@@ -66,7 +66,7 @@ needs to know which level the chart's data is to decide loading
 corresponding data. We can store the drill-down level as an attribute of
 *Charts* component.
 
-``` java
+```java
 package org.zkoss.zkcharts.essentials;
 
 import org.zkoss.chart.Charts;
@@ -117,7 +117,7 @@ click.
 
 **org.zkoss.zkcharts.essentials.DisplayMultipleSeriesComposer.java**
 
-``` java
+```java
     /**
      * Switch the chart's model with corresponding data.  
      */
@@ -145,7 +145,7 @@ our own drill-up button.
 
 **displayMultipleSeries.zul**
 
-``` xml
+```xml
 <zk>
     <window apply="org.zkoss.zkcharts.essentials.DisplayMultipleSeriesComposer" >
         <charts id="chart" type="column" title="Market Share" 
@@ -167,7 +167,7 @@ and change the button's visibility and cursor's style..
 **An event listener for drill-up button in
 DisplayMultipleSeriesComposer.java**
 
-``` java
+```java
 
     @Listen("onClick = #back")
     public void reloadMarket(){

@@ -5,14 +5,14 @@ triggered by clicking a button. If you click the "Save" button, the
 application will save your input and show a notification box.
 
 <div style="text-align:center">
-![](images//images/ze-ch5-save.png)
+![](/zk_essentials/images/ze-ch5-save.png)
 </div>
 <div style="text-align:center">
 <strong>Click "Save" button</strong>
 </div>
 
 In this section, we will demonstrate a more flexible way to define an
-event listener in a controller with [`@Listen`](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Controller/Wire_Event_Listeners) other than
+event listener in a controller with [`@Listen`]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners) other than
 calling `addEventListener()`.
 
 An event listener method should be public, have a void return type, and
@@ -20,12 +20,12 @@ have either no parameter or one parameter of the specific event type
 (corresponding to the event listened) with `@Listen` in a controller.
 You should specify event listening rule in the annotation's element
 value. Then ZK will "wire" the method to the specified components for
-specified events. ZK provides [various wiring selectors](https://books.zkoss.org/wiki/ZK_Developer%27s_Reference/MVC/Controller/Wire Event Listeners) to specify in the
+specified events. ZK provides [various wiring selectors](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/mvc/controller/wire Event Listeners) to specify in the
 annotation.
 
 ## Listen "Save" button Clicking
 
-``` java
+```java
 public class ProfileViewController extends SelectorComposer<Component>{
 
     @Listen("onClick=#saveProfile")
@@ -48,7 +48,7 @@ notification to the client.
 
 ## Handle "Save" Button Clicking
 
-``` java
+```java
 public class ProfileViewController extends SelectorComposer<Component>{
 ....
 
@@ -95,7 +95,7 @@ public class ProfileViewController extends SelectorComposer<Component>{
 To wire the event listener for "Reload" button's is similar as the previous
 one, but we use a different selector this time. And the method pushes saved user data to components using `setValue()`, so we can just call previously-implemented `refreshProfileView()`.
 
-``` java
+```java
 public class ProfileViewController extends SelectorComposer<Component>{
 
     ...

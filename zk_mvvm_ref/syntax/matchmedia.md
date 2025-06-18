@@ -4,7 +4,7 @@
 Syntax
 ======
 
-``` java
+```java
 @MatchMedia("mediaQuery")
 
 @MatchMedia({"mediaQuery1", "mediaQuery2"})
@@ -30,7 +30,7 @@ For example: There are two MatchMedia method @MatchMedia("all and (min-width: 30
 Example
 =======
 
-``` java
+```java
 String windowWidth = "700px";
 String applyTemplateName = "min501";
 

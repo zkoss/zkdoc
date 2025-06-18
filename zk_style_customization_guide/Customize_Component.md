@@ -1,5 +1,5 @@
 We have introduced how to execute [ partial customization with
-sclass](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Partical_customize_with_Sclass_and_Zclass)
+sclass](ZK_Style_Customization_Guide/Look_and_Feel_customization/Partical_customize_with_Sclass_and_Zclass)
 for specific components. Now we will introduce how to customize
 component style by LESS and make it the default style inside a project.
 Subsections are detailed samples on how you can customize components.
@@ -16,7 +16,7 @@ the developer tool.
 
 - Before start customizing your own component styles, first, follow the
   instruction, [compile LESS to DSP during development
-  phase]({{site.baseurl}}/zk_style_customization_guide/Integrate_with_LESS/How_ZK_works_with_LESS/Compile_LESS#Compile_LESS_to_DSP_during_Development_phase)
+  phase]({{site.baseurl}}/zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/compile_less#Compile_LESS_to_DSP_during_Development_phase)
   to have your ZKLess Servlet ready.
 
 <!-- -->
@@ -37,7 +37,7 @@ Here we will use **Window** component as an example to demonstrate how
 to customize a component.
 
 - 1\. Link to [ Window
-  Component](ZK_Style_Customization_Guide/Look_and_Feel_Customization/Customize_Component/Window)
+  Component](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component/Window)
   page or use browser's developer tool to check the DOM structure.
 - 2\. Create **window.less** file under **less** folder in ZK web
   project.
@@ -57,7 +57,7 @@ re-defining LESS variables as follows:
 
 <div style="margin-left: 3em">
 
-``` css
+```css
 @import "~./zul/less/_header.less";
 
 @windowBackgroundColor: #D9E5EF;
@@ -77,7 +77,7 @@ style modification.
 
 <div style="margin-left: 3em">
 
-``` xml
+```xml
 <?link rel="stylesheet" href="../less/window.less"?>
 <zk>
     <window title="Customize Window">
@@ -101,14 +101,14 @@ by simply refreshing the browser.
     </code> in **window.zul** page.
   - Remove ZK Less Servlet settings in web.xml.
   - [ Enable DSP Loader
-    Servlet]({{site.baseurl}}/zk_dev_ref/Supporting_Utilities/DSP)
+    Servlet]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
     in web.xml
   - Put window.css.dsp files (can be found under **less** folder)
     wherever you want. Then add the following settings in zk.xml file.
 
 <div style="margin-left: 3em">
 
-``` xml
+```xml
 <desktop-config>
     <theme-uri>/less/window.css.dsp</theme-uri>
 </desktop-config>

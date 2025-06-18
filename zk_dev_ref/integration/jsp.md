@@ -10,7 +10,7 @@ Here we discuss the general concepts applicable to both approaches. For
 information of ZK JSP Tags, please refer to [ZK JSP Tags
 Essentials](ZK_JSP_Tags_Essentials). It is also worth to take
 a look at the [HTML
-Tags]({{site.baseurl}}/zk_dev_ref/UI_Patterns/HTML_Tags)
+Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
 section.
 
 # Prerequisite
@@ -20,7 +20,7 @@ section.
 To use ZK components correctly, the JSP page must specify DOCTYPE as
 follows.
 
-``` html
+```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -35,7 +35,7 @@ By default, ZK will set the CSS style of the BODY tag to
 height (i.e., the browser's default) for you, you could specify
 `height:auto` to the BODY tag (optional).
 
-``` xml
+```xml
 <body style="height:auto">
 ...
 ```
@@ -45,7 +45,7 @@ height (i.e., the browser's default) for you, you could specify
 Though optional, it is suggested to disable the browser to cache the
 result page. It can be done as follows.
 
-``` xml
+```xml
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Pragma" content="no-cache" />
@@ -57,7 +57,7 @@ to drop desktops once the user navigates to other URL. It is optional
 but it saves memory since the browser page is not cached and safe to
 remove if the user navigates away.
 
-``` xml
+```xml
 <%
     request.setAttribute(org.zkoss.zk.ui.sys.Attributes.NO_CACHE, Boolean.TRUE);
 %>
@@ -72,7 +72,7 @@ ZK input components (datebox, slider, listbox and so on) work seamlessly
 with HTML form. In addition to Ajax, you could process input in batch
 with Servlets.
 
-``` xml
+```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <%@ taglib uri="http://www.zkoss.org/jsp/zul" prefix="z" %>
@@ -111,9 +111,9 @@ the component inside the form and then specify the `name` property.
 Thus, when the form is submitted, the value of, say, the datebox will be
 sent together with the name you specified. For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrForm.png)
+![]({{site.baseurl}}/zk_dev_ref/images/drform.png)
 
-``` xml
+```xml
 <window title="Submit" border="normal" xmlns:n="native">
     <n:form action="/fooLegacy">
         <grid>
@@ -149,7 +149,7 @@ sent together with the name you specified. For example,
 Once users press the submit button, a request is posted to the
 `/fooLegacy` servlet with the query string as follows.
 
-``` xml
+```xml
 ?when=Nov+10%2C+2010&name=Mark+Gates&department=Manufactory&type=new
 ```
 
@@ -166,7 +166,7 @@ In addition, the list boxes and tree controls also support the `name`
 property. If the `multiple` property is true and users select multiple
 items, then multiple name/value pairs are posted.
 
-``` xml
+```xml
  <listbox name="who" multiple="true" width="200px">
      <listhead>
          <listheader label="name"/>

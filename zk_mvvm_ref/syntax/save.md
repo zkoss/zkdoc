@@ -32,13 +32,13 @@ Example
 =======
 
 #### Basic usage
-``` xml
+```xml
 <textbox value="@load(vm.person.name) @save(vm.person.name, before='save')"/>
 
 <textbox value="@load(vm.person.name) @save(vm.person.name, before={'save', 'update'})"/>
 ```
 
 #### Saving and loading form attribute
-``` xml
+```xml
 <textbox value="@save(vm.number) @load(vm.number, after='cmd')"/>
 ```
