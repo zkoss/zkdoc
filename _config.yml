@@ -123,10 +123,6 @@ defaults:
       sidebar:
         nav: "zuml_ref"
 
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "zkdoc"
 atom_feed:
   hide: true
 # disqus admin is hawkchen@potix.com
