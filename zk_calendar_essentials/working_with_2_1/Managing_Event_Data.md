@@ -1,11 +1,11 @@
-The <javadoc>org.zkoss.calendar.impl.SimpleCalendarEvent</javadoc> is a
+The [org.zkoss.calendar.impl.SimpleCalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarEvent.html) is a
 out-of-box, default implementation of the interface
 <javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>
 which we can use directly in ZK Calendar applications.
 
 # How to use SimpleCalendarEvent
 
-Using <javadoc>org.zkoss.calendar.impl.SimpleCalendarEvent</javadoc> is
+Using [org.zkoss.calendar.impl.SimpleCalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarEvent.html) is
 a simple affair. The code below demonstrates how to construct an
 instance and provide it with necessary data.
 
@@ -108,5 +108,5 @@ public class MyCalendarEvent implements CalendarEvent {
 In a real implementation, the above class is useless as it does not
 contain any meaningful data. We could expand on the class so it could
 save state information. However, ZK Calendar already provides a class
-named <javadoc>org.zkoss.calendar.impl.SimpleCalendarEvent</javadoc>
+named [org.zkoss.calendar.impl.SimpleCalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarEvent.html)
 which provides the relevant functionality for you.

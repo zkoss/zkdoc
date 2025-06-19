@@ -1,7 +1,7 @@
 
 
 ZATS Mimic also supports the testing of
-<javadoc>org.zkoss.zk.ui.Richlet</javadoc>.[^1] Simply customize a few
+[org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html).[^1] Simply customize a few
 configurations for
 [DefaultZatsEnvironment](http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DefaultZatsEnvironment.html)
 and the test code would be no different to testing a ZUML file. ZATS

@@ -1,4 +1,4 @@
-When a <javadoc>org.zkoss.zul.Grid</javadoc> is assigned with a model, a
+When a [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html) is assigned with a model, a
 default renderer is assigned too (see [the Model-driven Display ]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display)).
 The default renderer will assume that each row has only one column, and
 it converts the data into a string directly[^1]. If you want to display

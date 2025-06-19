@@ -3,7 +3,7 @@
 # Listheader
 
 - Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
-- Java API: <javadoc>org.zkoss.zul.Listheader</javadoc>
+- Java API: [org.zkoss.zul.Listheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Listheader</javadoc>
 
@@ -67,7 +67,7 @@ a list box. Its parent must be `Listhead`.
 <p><code>onSort</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) Denotes user has
 sorted the row of this column.</p></td>
 </tr>
 <tr class="even">
@@ -75,7 +75,7 @@ sorted the row of this column.</p></td>
 <p><code>onGroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html)</p>
 <p><code>[ZK PE]</code></p>
 <p>{% include version-badge.html version=6.5.0 %} Denotes user has grouped all the
 cells under a column.</p></td>
@@ -85,7 +85,7 @@ cells under a column.</p></td>
 <p><code>onUngroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition="pe" %}
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) {% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %} Denotes user has ungrouped all the
 cells under a column.</p></td>
 </tr>

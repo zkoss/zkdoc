@@ -3,7 +3,7 @@
 # Listfooter
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Listfooter</javadoc>
+- Java API: [org.zkoss.zul.Listfooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfooter.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Listfooter</javadoc>
 

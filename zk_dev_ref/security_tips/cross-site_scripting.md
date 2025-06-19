@@ -59,7 +59,7 @@ doesn't encode them.
 
 ## Comboitem's `content`
 
-The <javadoc>org.zkoss.zul.Comboitem</javadoc>'s `content` attribute is
+The [org.zkoss.zul.Comboitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Comboitem.html)'s `content` attribute is
 designed to allow applications to generate HTML content directly. In
 other words, it is not encoded. In most cases we expect these values to
 come from the server-side. However, if your application takes user input

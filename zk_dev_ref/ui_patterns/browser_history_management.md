@@ -65,7 +65,7 @@ After adding a bookmark to the browser's history, users can then surf
 among these bookmarks such as pressing the BACK button to return to the
 previous bookmark. When the bookmark is changed, ZK will notify the
 application by broadcasting the `onBookmarkChange` event (an instance of
-the <javadoc>org.zkoss.zk.ui.event.BookmarkEvent</javadoc> class) to all
+the [org.zkoss.zk.ui.event.BookmarkEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/BookmarkEvent.html) class) to all
 root components in the desktop.
 
 Unlike traditional multi-page Web applications, you have to change the
@@ -96,7 +96,7 @@ want, when the `onBookmarkChange` event is received. It is totally up to
 you.
 
 A typical approach is to use one of the `createComponents` methods of
-the <javadoc>org.zkoss.zk.ui.Executions</javadoc> class. In other words,
+the [org.zkoss.zk.ui.Executions](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html) class. In other words,
 you could represent each state with one ZUML page, and then use
 `createComponents` to create all components in it when
 `onBookmarkChange` is received.
@@ -165,7 +165,7 @@ have to listen to the `onURIChange` event as follows.
 ```
 
 The `onURIChange` event is sent as an instance of
-<javadoc>org.zkoss.zk.ui.event.URIEvent</javadoc>.
+[org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html).
 
 Notice that the `onURIChange` event is sent only if the iframe contains
 another ZK page. If it contains a non-ZK page, you have to handle it

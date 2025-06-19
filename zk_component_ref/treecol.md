@@ -3,7 +3,7 @@
 # Treecol
 
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: <javadoc>org.zkoss.zul.Treecol</javadoc>
+- Java API: [org.zkoss.zul.Treecol](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecol</javadoc>
 
 
@@ -81,7 +81,7 @@ A `treecol`is a top column of tree, Its parent must be `Treecols`.
 <p><code>onSort</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has sorted
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has sorted
 the treeitem of this treecol.</p></td>
 </tr>
 </tbody>

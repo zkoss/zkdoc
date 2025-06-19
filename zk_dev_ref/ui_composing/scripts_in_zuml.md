@@ -303,5 +303,5 @@ For more information, please refer to [ZUML Reference](ZUML_Reference/Extensions
     that could make the evaluation as late as possible
 
 [^2]: Built in id space owner includes
-    <javadoc>org.zkoss.zul.Window</javadoc>,
+    [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html),
     <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).

@@ -3,7 +3,7 @@
 # Chosenbox
 
 - [Demonstration](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Chosenbox</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
 
@@ -192,7 +192,7 @@ situation. Supports: 0-9, A-Z (case insensitive), and `,.;'[]/\-=`
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Represents an event caused by user's the selection changed at the
 client.</p></td>
 </tr>
@@ -201,7 +201,7 @@ client.</p></td>
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Represents an event that indicates an open state that is changed at
 the client.</p></td>
 </tr>
@@ -210,7 +210,7 @@ the client.</p></td>
 <p><code>onSearch</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Represents an event that indicates users inputting an non-existing
 value by clicking ENTER or separator.</p></td>
 </tr>
@@ -219,7 +219,7 @@ value by clicking ENTER or separator.</p></td>
 <p><code>onSearching</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Represents an event sent back to the server caused by user's input
 text.</p></td>
 </tr>
@@ -228,7 +228,7 @@ text.</p></td>
 <p><code>onItemClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Represents an event sent back to the server caused by clicking a
 selected tag.</p></td>
 </tr>

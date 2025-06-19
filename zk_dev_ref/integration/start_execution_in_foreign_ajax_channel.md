@@ -4,7 +4,7 @@ Here we describe how to start a ZK execution in a foreign Ajax channel.
 For example, JSF 2 allows developers to send back JavaScript code to
 update the browser in JSF's Ajax channel.
 
-## <javadoc>org.zkoss.zkplus.embed.Bridge</javadoc>
+## [org.zkoss.zkplus.embed.Bridge](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html)
 
 Starting an execution in a foreign Ajax channel is straightforward:
 invoke
@@ -93,7 +93,7 @@ public class MyBean {
 
 | Version | Date           | Content                                                                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.5   | September 2010 | <javadoc>org.zkoss.zkplus.embed.Bridge</javadoc> was introduced to simplify the starting of an execution in foreign Ajax channel |
+| 5.0.5   | September 2010 | [org.zkoss.zkplus.embed.Bridge](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html) was introduced to simplify the starting of an execution in foreign Ajax channel |
 
 [^1]: For more information on
     [jsf.ajax.request](https://javaserverfaces.dev.java.net/nonav/docs/2.0/jsdocs/symbols/jsf.ajax.html#.request)

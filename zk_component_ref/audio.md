@@ -3,7 +3,7 @@
 # Audio
 
 - Demonstration: [Audio](http://www.zkoss.org/zksandbox/userguide/#u5)
-- Java API: <javadoc>org.zkoss.zul.Audio</javadoc>
+- Java API: [org.zkoss.zul.Audio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Audio.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.med.Audio</javadoc>
 
 # Employment/Purpose
@@ -84,7 +84,7 @@ write codes as shown below (MVVM pattern).
 <p><code>onStateChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.StateChangeEvent</javadoc> Notifies when
+[org.zkoss.zk.ui.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StateChangeEvent.html) Notifies when
 invoking play(), stop(), pause() or the audio is played to the
 end.</p></td>
 </tr>
@@ -109,7 +109,7 @@ end.</p></td>
 
 | Version | Date           | Content                                                                                                     |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------|
-| 7.0.0   | August, 2013   | <javadoc>org.zkoss.zul.Audio</javadoc> now supports HTML 5                                                  |
+| 7.0.0   | August, 2013   | [org.zkoss.zul.Audio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Audio.html) now supports HTML 5                                                  |
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks                           |
 | 9.6.0   | May 2021       | [ZK-4779](https://tracker.zkoss.org/browse/ZK-4779): audio supports to fire an event upon its playing state |
 

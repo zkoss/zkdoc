@@ -3,7 +3,7 @@
 # Dropupload
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zkmax.zul.Dropupload</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Dropupload</javadoc>
 
@@ -285,7 +285,7 @@ Please refer to
 
 After the upload is finished, the uploaded files can be retrieved from
 the companion event, which is an instance of
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc>. For example,
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html). For example,
 
 ```xml
 <zscript><![CDATA[
@@ -330,7 +330,7 @@ machines.
 <p><code>onUpload</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> This event will be
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be
 triggered once a user has uploaded a file.</p></td>
 </tr>
 <tr class="even">
@@ -338,7 +338,7 @@ triggered once a user has uploaded a file.</p></td>
 <p><code>onMaxFileCountExceed</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> This event will be
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be
 triggered when number of upload files exceed the maxFileCount.</p></td>
 </tr>
 </tbody>
@@ -362,7 +362,7 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 
 | Version | Date            | Content                                                                        |
 |---------|-----------------|--------------------------------------------------------------------------------|
-| 6.5.0   | June, 2012      | <javadoc>org.zkoss.zkmax.zul.Dropupload</javadoc> was introduced.              |
+| 6.5.0   | June, 2012      | [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html) was introduced.              |
 | 7.0.2   | March, 2014     | [ZK-2207](http://tracker.zkoss.org/browse/ZK-2207): Dropupload supports anchor |
 | 10.0.0  | September, 2023 | [ZK-4969](http://tracker.zkoss.org/browse/ZK-4969): Dropupload supports accept |
 

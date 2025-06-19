@@ -486,7 +486,7 @@ public class TodoListController extends SelectorComposer<Component>{
 -   Line 6: An event listener method can have a argument, but argument's
     type depends on which event you listen. As the customized event is
     forwarded from another component, the argument should be
-    <javadoc>org.zkoss.zk.ui.event.ForwardEvent</javadoc>. This method
+    [org.zkoss.zk.ui.event.ForwardEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ForwardEvent.html). This method
     set the `Todo` object of the selected item as complete and decorate
     *Listitem* with line-through by changing its `sclass`.
 -   Line 8: You should call `getOrigin()` to get the original event that

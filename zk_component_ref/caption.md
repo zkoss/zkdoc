@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
-- Java API: <javadoc>org.zkoss.zul.Caption</javadoc>
+- Java API: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Caption</javadoc>
 
 

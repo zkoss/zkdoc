@@ -3,7 +3,7 @@
 # Combobox
 
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
-- Java API: <javadoc>org.zkoss.zul.Combobox</javadoc>
+- Java API: [org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Combobox</javadoc>
 
 
@@ -161,15 +161,15 @@ To separate the data from the view (Combobox) better, we can implement
 <javadoc type="interface">org.zkoss.zul.ListSubModel</javadoc> and set
 it to Combobox. There are 2 ways:
 
-#### Use <javadoc>org.zkoss.zul.SimpleListModel</javadoc>
+#### Use [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 
-Unlike <javadoc>org.zkoss.zul.ListModelList</javadoc> and others,
-<javadoc>org.zkoss.zul.SimpleListModel</javadoc> implements
+Unlike [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) and others,
+[org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html) implements
 <javadoc type="interface">org.zkoss.zul.ListSubModel</javadoc> by
-default. You can use <javadoc>org.zkoss.zul.SimpleListModel</javadoc>
+default. You can use [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 directly but it handles only an array of data.
 
-#### Convert <javadoc>org.zkoss.zul.ListModel</javadoc> with <javadoc method="toListSubModel(org.zkoss.zul.ListModel)">org.zkoss.zul.ListModels</javadoc>
+#### Convert [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) with <javadoc method="toListSubModel(org.zkoss.zul.ListModel)">org.zkoss.zul.ListModels</javadoc>
 
 The methods convert ListModel to ListSubModel which proxies the original
 ListModel.
@@ -209,9 +209,9 @@ instead.
 > ------------------------------------------------------------------------
 >
 > **Note**: Passing an instance of
-> <javadoc>org.zkoss.zul.ListModelList</javadoc> directly to a combobox
+> [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) directly to a combobox
 > will show up all items in the list model, since it doesn't implement
-> <javadoc>org.zkoss.zul.ListSubModel</javadoc>.
+> [org.zkoss.zul.ListSubModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListSubModel.html).
 
 ## Readonly
 
@@ -346,7 +346,7 @@ user is entering.
 Notice that, when the `onChanging` event is received, the content of the
 combobox has not changed. Therefore, you cannot use the `value` property
 of the combobox. Instead, you should use the `value` property of the
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc>.
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html).
 
 ## Constraint
 
@@ -402,7 +402,7 @@ functions.
 <p>onSelect</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Represents an event caused by user's the list selection is changed at
 the client.</p></td>
 </tr>
@@ -411,7 +411,7 @@ the client.</p></td>
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component. Note: unlike
 <code>onClose</code>, this event is only a notification. The client
 sends this event after opening or closing the component.</p>
@@ -424,7 +424,7 @@ the component is opened.</p></td>
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 </tbody>
 </table>
@@ -482,7 +482,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 | Version | Date         | Content                                                                                                                                                                                       |
 |---------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 8.6.1   | January 2019 | [ZK-4185](https://tracker.zkoss.org/browse/ZK-4185): Combobox: provide option to reduce onSelect/onChange events when using keyboard                                                          |
-| 5.0.4   | August 2010  | <javadoc>org.zkoss.zul.ListModels</javadoc> was introduced to simply the implementation of autocomplete.                                                                                      |
+| 5.0.4   | August 2010  | [org.zkoss.zul.ListModels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModels.html) was introduced to simply the implementation of autocomplete.                                                                                      |
 | 5.0.4   | July 2010    | Combobox supported <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc> if it is also implemented with the specified <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. |
 | 5.0.4   | July 2010    | Supported onAfterRender event                                                                                                                                                                 |
 

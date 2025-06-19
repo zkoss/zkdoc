@@ -4,7 +4,7 @@ Like [ZUL](ZUML_Reference/ZUML/Languages/ZUL), the [XHTML component set](ZUML_Re
 collection of components. Unlike ZUL, which is designed to have rich
 features, each XHTML component represents an HTML tag. For example, the
 following XML element will cause ZK Loader to create a component called
-<javadoc>org.zkoss.zhtml.Ul</javadoc>.
+[org.zkoss.zhtml.Ul](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Ul.html).
 
 ```xml
 <h:ul xmlns:h="xhtml">
@@ -128,4 +128,4 @@ where
 > <references/>
 
 [^1]: `height:100%` is more for desktop-application-look, such as using
-    with <javadoc>org.zkoss.zul.Borderlayout</javadoc>.
+    with [org.zkoss.zul.Borderlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Borderlayout.html).

@@ -2,7 +2,7 @@
 
 - Demonstration:
   [Window](http://www.zkoss.org/zkdemo/window/positioning)
-- Java API: <javadoc>org.zkoss.zul.Window</javadoc>
+- Java API: [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wnd.Window</javadoc>
 
 
@@ -533,14 +533,14 @@ some common tasks.
 <p><code>onMove</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes the position of the window is moved by a user.</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onOpen</code></p>
 </center></td>
-<td><p><strong>Event:</strong><javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+<td><p><strong>Event:</strong>[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes user has opened or closed a component.</p>
 <p><strong><code>Note:</code></strong></p>
 <p>Unlike <code>onClose</code>, this event is only a notification.
@@ -556,7 +556,7 @@ The</p>
 <p><code>onClose</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes the close button is pressed by a user, and the</p>
 <p>component shall detach itself.</p></td>
 </tr>
@@ -565,7 +565,7 @@ The</p>
 <p><code>onMaximize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MaximizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)</p>
 <p>Denotes user has maximize a component.</p></td>
 </tr>
 <tr class="odd">
@@ -573,7 +573,7 @@ The</p>
 <p><code>onMinimize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MinimizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)</p>
 <p>Denotes user has minimize a component.</p></td>
 </tr>
 <tr class="even">
@@ -581,7 +581,7 @@ The</p>
 <p><code>onSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)</p>
 <p>Denotes the panel's size is updated by a user.</p></td>
 </tr>
 <tr class="odd">
@@ -589,7 +589,7 @@ The</p>
 <p><code>onZIndex</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ZIndexEvent</javadoc></p>
+[org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)</p>
 <p>Denotes the panel's zindex is updated by a user.</p></td>
 </tr>
 </tbody>

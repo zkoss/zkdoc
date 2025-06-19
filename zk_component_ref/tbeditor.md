@@ -71,7 +71,7 @@ tbeditor.setConfig(config);
 <td><center>
 <p><code>onChange</code></p>
 </center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
+<td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Denotes that the content of the component has been modified by a
 user</p></td>
 </tr>
@@ -79,7 +79,7 @@ user</p></td>
 <td><center>
 <p><code>onChanging</code></p>
 </center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
+<td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Denotes that a user is changing the content of an input component.
 Notice that the component's content (at the server) won't be changed
 until <code>onChange</code> is received. Thus, you have to invoke the

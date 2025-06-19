@@ -1,7 +1,7 @@
 # Div
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Div</javadoc>
+- Java API: [org.zkoss.zul.Div](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Div.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Div</javadoc>
 
 # Employment/Purpose

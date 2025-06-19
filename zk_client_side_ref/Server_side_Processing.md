@@ -5,7 +5,7 @@
 A widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) is
 converted to an AU request and then sent to the server. When the event
 arrives at the server, it is converted to be an instance of
-<javadoc>org.zkoss.zk.au.AuRequest</javadoc>), and then pass to the
+[org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html)), and then pass to the
 desktop for serving by invoking
 <javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
 If the request is targeting a component, the component's
@@ -18,7 +18,7 @@ Thus, if you implement a component, you could override
 <javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
 to handle it.
 
-Here is an example (from <javadoc>org.zkoss.zul.Radio</javadoc>):
+Here is an example (from [org.zkoss.zul.Radio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html)):
 
 ```java
 public void service(org.zkoss.zk.au.AuRequest request, boolean everError) {

@@ -4,7 +4,7 @@
 
 - Demonstration:
   [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)
-- Java API: <javadoc>org.zkoss.zul.Selectbox</javadoc>
+- Java API: [org.zkoss.zul.Selectbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Selectbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Selectbox</javadoc>
 
 
@@ -111,7 +111,7 @@ Here is the MVVM way:
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item in the selectbox.</p></td>
 </tr>
 </tbody>

@@ -3,7 +3,7 @@
 # Treechildren
 
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: <javadoc>org.zkoss.zul.Treechildren</javadoc>
+- Java API: [org.zkoss.zul.Treechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treechildren.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.sel.Treechildren</javadoc>
 

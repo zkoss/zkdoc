@@ -4,7 +4,7 @@
 
 {% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>
+- Java API: [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.GoldenLayout</javadoc>
 
@@ -132,7 +132,7 @@ like `north`, `east`, `south`, `west` and `stack` of a GoldenPanel. So
 we provide some GoldenPanel adding APIs to simulate these actions.
 Please refer to the addPanel APIs like
 <javadoc method="addPanel(GoldenPanel, GoldenPanel, String)">org.zkoss.zkmax.zul.GoldenLayout</javadoc>
-in <javadoc>org.zkoss.zkmax.zul.GoldenLayout</javadoc>.
+in [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html).
 
 north
 

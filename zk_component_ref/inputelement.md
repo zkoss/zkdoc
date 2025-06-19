@@ -3,7 +3,7 @@
 # Input Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.InputElement</javadoc>
+- Java API: [org.zkoss.zul.impl.InputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.InputWidget</javadoc>
 
@@ -60,17 +60,17 @@ You should not use this class directly, please use the inherited class.
 # Validation
 
 There are two ways to validate the value entered by a user: implementing
-<javadoc>org.zkoss.zul.Constraint</javadoc> or throwing
-<javadoc>org.zkoss.zk.ui.WrongValueException</javadoc>.
+[org.zkoss.zul.Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html) or throwing
+[org.zkoss.zk.ui.WrongValueException](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WrongValueException.html).
 
 ## Constraint
 
 An input element can be associated with a constraint
-(<javadoc>org.zkoss.zul.Constraint</javadoc>) to validate the value
+([org.zkoss.zul.Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html)) to validate the value
 entered by a user. There is a default implementation called
-<javadoc>org.zkoss.zul.SimpleConstraint</javadoc> that can handle many
+[org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html) that can handle many
 conditions. If it is not enough, you can implement your own constraint,
-or throw <javadoc>org.zkoss.zk.ui.WrongValueException</javadoc> as
+or throw [org.zkoss.zk.ui.WrongValueException](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WrongValueException.html) as
 described in the next sections.
 
 ### Built-in Constraints
@@ -187,7 +187,7 @@ name=value rule.
 <p><code>onChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc> Denotes the content
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes the content
 of an input component has been modified by the user.</p></td>
 </tr>
 <tr class="even">
@@ -195,7 +195,7 @@ of an input component has been modified by the user.</p></td>
 <p><code>onChanging</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc> Denotes that user is
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes that user is
 changing the content of an input component. Notice that the component's
 content (at the server) won't be changed until <code>onChange</code> is
 received. Thus, you have to invoke the
@@ -207,7 +207,7 @@ value.</p></td>
 <p><code>onSelection</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectionEvent</javadoc> Denotes that
+[org.zkoss.zk.ui.event.SelectionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html) Denotes that
 user is selecting a portion of the text of an input component. You can
 retrieve the start and end position of the selected text by use of the
 <code>getStart</code> and <code>getEnd</code>
@@ -218,7 +218,7 @@ methods.<strong></strong></p></td>
 <p><code>onFocus</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for
 <code>onFocus</code> is executed.</p></td>
@@ -228,7 +228,7 @@ focus at the client might be changed when the event listener for
 <p><code>onBlur</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be already changed when executing the
 <code>onBlur</code> listener.</p></td>
@@ -238,7 +238,7 @@ focus at the client might be already changed when executing the
 <p><code>onError</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ErrorEvent</javadoc> Denotes when a
+[org.zkoss.zk.ui.event.ErrorEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ErrorEvent.html) Denotes when a
 component caused a validation error.</p></td>
 </tr>
 </tbody>
@@ -291,5 +291,5 @@ web view to display the keyboard.</p></td>
 
 
 [^1]: The default constraint
-    (<javadoc>org.zkoss.zul.SimpleConstraint</javadoc>) validates all
+    ([org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html)) validates all
     constraints at the client side

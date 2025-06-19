@@ -3,7 +3,7 @@
 # Span
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Span</javadoc>
+- Java API: [org.zkoss.zul.Span](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Span.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Span</javadoc>
 
 # Employment/Purpose

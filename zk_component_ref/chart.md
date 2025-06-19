@@ -3,7 +3,7 @@
 # Chart
 
 - Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
-- Java API: <javadoc>org.zkoss.zul.Chart</javadoc>
+- Java API: [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Chart</javadoc>
 
 
@@ -1011,7 +1011,7 @@ get coordinates.
 
 Call
 <javadoc method="getAreaComponent()">org.zkoss.zk.ui.event.MouseEvent</javadoc>
-to retrieve the area component (<javadoc>org.zkoss.zul.Area</javadoc>)
+to retrieve the area component ([org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html))
 which users click on.
 
 There are several attributes you can get from the clicked Area:

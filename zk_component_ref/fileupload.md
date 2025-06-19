@@ -1,21 +1,21 @@
 # Fileupload
 
 - Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
-- Java API: <javadoc>org.zkoss.zul.Fileupload</javadoc>
+- Java API: [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Fileupload</javadoc>
 
 
 # Employment/Purpose
 
-There are two ways to use <javadoc>org.zkoss.zul.Fileupload</javadoc> as
+There are two ways to use [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html) as
 a component to upload files, or invoke
 <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> to open a
 dialog to upload files.
 
 # Use as a Component
 
-<javadoc>org.zkoss.zul.Fileupload</javadoc> itself is a component. You
+[org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html) itself is a component. You
 can use it directly as follows.
 
 ```xml
@@ -27,7 +27,7 @@ can use it directly as follows.
 </fileupload>
 ```
 
-<javadoc>org.zkoss.zul.Fileupload</javadoc> is actually a button with
+[org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html) is actually a button with
 `upload=true`. In other words, the above is equivalent to
 
 ```xml
@@ -78,7 +78,7 @@ files, the developer has to listen the `onUpload` event, which is sent
 when the uploading is completed.
 
 By default, the `onUpload` event is sent to all root components. For
-example, <javadoc>org.zkoss.zul.Div</javadoc> will, in the following
+example, [org.zkoss.zul.Div](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Div.html) will, in the following
 example, receive the `onUpload` event since it is the root component:
 
 ```xml
@@ -240,7 +240,7 @@ JVisualVM.
 
 # Example
 
-Here is an example that uses <javadoc>org.zkoss.zul.Fileupload</javadoc>
+Here is an example that uses [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
 as a component:
 
 ```xml

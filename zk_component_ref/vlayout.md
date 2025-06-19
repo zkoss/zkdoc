@@ -3,7 +3,7 @@
 # Vlayout
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Vlayout</javadoc>
+- Java API: [org.zkoss.zul.Vlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vlayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Vlayout</javadoc>
 

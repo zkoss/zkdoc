@@ -3,7 +3,7 @@
 # Groupfoot
 
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-- Java API: <javadoc>org.zkoss.zul.Groupfoot</javadoc>
+- Java API: [org.zkoss.zul.Groupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupfoot.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
 

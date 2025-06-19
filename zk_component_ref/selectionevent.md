@@ -3,7 +3,7 @@
 # SelectionEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.event.SelectionEvent</javadoc>
+- Java API: [org.zkoss.zk.ui.event.SelectionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

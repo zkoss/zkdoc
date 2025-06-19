@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Calendar](http://www.zkoss.org/zkdemo/reporting/simple_calendar)
-- Java API: <javadoc>org.zkoss.zul.Calendar</javadoc>
+- Java API: [org.zkoss.zul.Calendar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Calendar.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Calendar</javadoc>
 
 

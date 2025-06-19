@@ -344,7 +344,7 @@ lazy-loaded collection but objects in the list are already detached, and
 we will get `LazyInitailizationException`. During this rendering
 process, developers will not be notified and cannot interfere this
 process to reload detached objects. One solution is to **implement a
-custom <javadoc>org.zkoss.zul.ListModel</javadoc>** for the component.
+custom [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)** for the component.
 
 We demonstrate 2 implementations here for your reference. The first one
 is simpler but less efficient; it re-queries each detached object when a
@@ -377,7 +377,7 @@ public class OrderListModel extends AbstractListModel<Order>{
 }
 ```
 
-- Line 1: We extend <javadoc>org.zkoss.zul.AbstractListModel</javadoc>
+- Line 1: We extend [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)
   to build our list model for it to handle selection for us, but we have
   to override Order's `equals()` and `hashCode()`.
 - Line 14: Re-query the detached object by its id and return a

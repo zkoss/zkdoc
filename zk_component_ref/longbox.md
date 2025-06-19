@@ -2,7 +2,7 @@
 
 - Demonstration:
   [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: <javadoc>org.zkoss.zul.Longbox</javadoc>
+- Java API: [org.zkoss.zul.Longbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Longbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Longbox</javadoc>
 
 

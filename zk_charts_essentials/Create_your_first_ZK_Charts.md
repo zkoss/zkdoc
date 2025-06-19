@@ -14,7 +14,7 @@ First, declare a chart component in a ZUML document. Specify `type` and
 ```
 
 Use model to handle chart data, and set model to chart in a Controller
-which extends <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>
+which extends [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 
 ## First ChartComposer.java
 

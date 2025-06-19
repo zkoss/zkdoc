@@ -3,7 +3,7 @@
 # Pdfviewer
 
 - Demonstration: [Embed PDF Documents in Your ZK Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
-- Java API: <javadoc>org.zkoss.zkex.zul.Pdfviewer</javadoc>
+- Java API: [org.zkoss.zkex.zul.Pdfviewer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Pdfviewer.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
 
@@ -109,7 +109,7 @@ pdfjsLib.version
 <p><code>onPaging</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.PagingEvent</javadoc> Notifies one of the
+[org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the
 pages is selected by the user.</p></td>
 </tr>
 <tr class="even">
@@ -117,7 +117,7 @@ pages is selected by the user.</p></td>
 <p><code>onRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes the loading pdf
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf
 file is finished rendering.</p></td>
 </tr>
 <tr class="odd">
@@ -125,7 +125,7 @@ file is finished rendering.</p></td>
 <p><code>onZoom</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkex.ui.event.ZoomEvent</javadoc> Denotes user has
+[org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has
 changed the zoom level.</p></td>
 </tr>
 <tr class="even">
@@ -133,7 +133,7 @@ changed the zoom level.</p></td>
 <p><code>onRotate</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkex.ui.event.RotationEvent</javadoc> Denotes user
+[org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user
 has changed the rotation angle.</p></td>
 </tr>
 </tbody>

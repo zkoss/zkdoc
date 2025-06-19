@@ -241,7 +241,7 @@ grouping and non-grouping objects).
 
 - Note the *groupingInfo* is used to get the information of the grouping
   data. Please refer to
-  <javadoc>org.zkoss.zul.ext.GroupingInfo</javadoc>.
+  [org.zkoss.zul.ext.GroupingInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupingInfo.html).
 
 # Version History
 
@@ -254,7 +254,7 @@ grouping and non-grouping objects).
     the EL expressions specified in the template.
 
 [^2]: Here we use
-    <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> for
+    [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) for
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
     [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).

@@ -3,7 +3,7 @@
 A widget event is the widget-level event
 (<javadoc directory="jsdoc">zk.Event</javadoc>).
 
-Like <javadoc>org.zkoss.zk.event.Event</javadoc> at the server side, the
+Like [org.zkoss.zk.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/event/Event.html) at the server side, the
 widget event can be anything, and can be triggered by a widget or an
 application to notify a widget-level or application-level event, such as
 that a window has been moved.

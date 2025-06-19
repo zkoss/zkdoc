@@ -3,7 +3,7 @@
 # CreateEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.event.CreateEvent</javadoc>
+- Java API: [org.zkoss.zk.ui.event.CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose
@@ -65,7 +65,7 @@ is cloned when a component is cloned. By default, the new component will
 share the same listener with the original component. Sometimes, it might
 not be correct (for example, the listener might be an inner class that
 assumes `this` to be the original component), the event listener shall
-implement <javadoc>org.zkoss.zk.ui.util.ComponentCloneListener</javadoc>
+implement [org.zkoss.zk.ui.util.ComponentCloneListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentCloneListener.html)
 to clone the listener by itself. For example,
 
 ```java
@@ -84,7 +84,7 @@ public FooCreateListener implements EventListener, ComponentCloneListener {
 ```
 
 Instead of implementing
-<javadoc>org.zkoss.zk.ui.util.ComponentCloneListener</javadoc>, using
+[org.zkoss.zk.ui.util.ComponentCloneListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentCloneListener.html), using
 <javadoc method="getTarget()">org.zkoss.zk.ui.event.Event</javadoc>
 could be easier to make a listener safe to clone.
 

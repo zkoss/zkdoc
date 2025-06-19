@@ -2,13 +2,13 @@
 
 # Overview
 
-<javadoc>org.zkoss.zk.ui.Execution</javadoc> provides a collection of
+[org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) provides a collection of
 methods to allow you to create components based on a ZUML document, such
 as
 <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
 <javadoc method="createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>
 and many others. In addition,
-<javadoc>org.zkoss.zk.ui.Executions</javadoc> provides a similar
+[org.zkoss.zk.ui.Executions](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html) provides a similar
 collection of shortcuts so that you do not have to retrieve the current
 execution first.
 
@@ -38,7 +38,7 @@ Executions.createComponents("/foo/my.zul", parent, arg); //attach to page as roo
 ```
 
 where `parent` (an instance of
-<javadoc>org.zkoss.zk.ui.Component</javadoc>) will become the parent of
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)) will become the parent of
 the components specified in the ZUML document. If `parent` is null, the
 components specified in the ZUML documents will become the root
 components of the current page. In other words, the components created
@@ -130,13 +130,13 @@ content will be parsed each time `createComponentsDirectly` is called.
 
 It is OK if the invocation does not happen frequently. However, if you
 want to improve the performance, you could parse the content into
-<javadoc>org.zkoss.zk.ui.metainfo.PageDefinition</javadoc> by using
+[org.zkoss.zk.ui.metainfo.PageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/PageDefinition.html) by using
 <javadoc method="getPageDefinitionDirectly(org.zkoss.zk.ui.WebApp, java.lang.String, java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>,
 cache it, and then invoke
 <javadoc method="createComponents(org.zkoss.zk.ui.metainfo.PageDefinition, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
 to create them repeatedly.
 
-<javadoc>org.zkoss.zk.ui.metainfo.PageDefinition</javadoc> is a Java
+[org.zkoss.zk.ui.metainfo.PageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/PageDefinition.html) is a Java
 object representing a ZUML document. It is designed to allow ZK Loader
 to interpret even more efficiently. Unfortunately, it is not
 serializable, so you can not store it into database or other persistent
@@ -150,7 +150,7 @@ There are a few notices worth to know.
 ## No Page Created
 
 When creating components from a ZUML document as described above, no
-page (<javadoc>org.zkoss.zk.ui.Page</javadoc>) is created. Components
+page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) is created. Components
 are attached to the current page, to a component, or simply standalone.
 Since no page is created, there are a few differences than visiting a
 ZUML document directly[^2].
@@ -161,7 +161,7 @@ ZUML document directly[^2].
     [\<?link?\>](ZUML_Reference/ZUML/Processing_Instructions/link),
     [\<?header?\>](ZUML_Reference/ZUML/Processing_Instructions/header)
     and other directives controlling a page
-    (<javadoc>org.zkoss.zk.ui.Page</javadoc>) have no function. It means
+    ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) have no function. It means
     that you could not change the page's title, add JavaScript code, or
     add CSS with these directives in a ZUML document loaded in this way.
 2.  On the other hand, when
@@ -170,7 +170,7 @@ ZUML document directly[^2].
     and
     [\<?component?\>](ZUML_Reference/ZUML/Processing_Instructions/component)
     work correctly, they decide how a ZUML document is parsed rather
-    than how the current page (<javadoc>org.zkoss.zk.ui.Page</javadoc>)
+    than how the current page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html))
     should be.
 3.  The variables, functions and classes defined in zscript will be
     stored in the interpreter of the current page
@@ -193,6 +193,6 @@ ZUML document directly[^2].
     or in a working thread.
 
 [^2]: Don't confuse a ZUML page with
-    <javadoc>org.zkoss.zk.ui.Page</javadoc>. The former refers to a file
+    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html). The former refers to a file
     containing a ZUML document. The latter is a Java object of
-    <javadoc>org.zkoss.zk.ui.Page</javadoc> that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).
+    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).

@@ -3,7 +3,7 @@
 # Fusionchart
 
 - Demonstration:
-- Java API: <javadoc>org.zkoss.zkmax.zul.Fusionchart</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fusionchart.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
 

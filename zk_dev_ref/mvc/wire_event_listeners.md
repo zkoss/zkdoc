@@ -1,7 +1,7 @@
 # Wire Event Listeners
 
 To wire an event listener, you need to declare a method with
-<javadoc>org.zkoss.zk.ui.select.annotation.Listen</javadoc> annotation.
+[org.zkoss.zk.ui.select.annotation.Listen](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/Listen.html) annotation.
 The method should be public, with return type void, and have either no
 parameter or one parameter of the specific event type (corresponding to
 the event being listened to). The parameter of @Listen should be pairs

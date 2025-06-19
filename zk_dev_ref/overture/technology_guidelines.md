@@ -64,7 +64,7 @@ Developer's Reference: MVVM</a></li>
 href="ZK_Developer&#39;s_Reference/Performance_Tips/Use_Compiled_Java_Codes"
 title="wikilink">ZK Developer's Reference: Performance Tips</a></li>
 <li><javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
-and <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc></li>
+and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -332,8 +332,8 @@ by yourself[^4].
 
 Feel free to use composite components if you want to inherit the
 behavior from an existent component, such as
-<javadoc>org.zkoss.zul.Window</javadoc> and
-<javadoc>org.zkoss.zul.Cell</javadoc>, and enhance it to have child
+[org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html) and
+[org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html), and enhance it to have child
 components defined in a ZUML document.
 
 > ------------------------------------------------------------------------

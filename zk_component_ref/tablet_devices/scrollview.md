@@ -3,7 +3,7 @@
 # Scrollview
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zkmax.zul.Scrollview</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Scrollview](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Scrollview.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Scrollview</javadoc>
 
@@ -76,7 +76,7 @@ The default orient of child components inside Scrollview is
 <p><code>onScroll</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ScrollEvent</javadoc> <strong>In mobile
+[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) <strong>In mobile
 devices:</strong> Denotes that the content of a scrollable component has
 been scrolled by the user. Notice that you can check if it is scrolled
 outside/inside boundaries by invoking <code>getOutOfBound</code> method
@@ -89,7 +89,7 @@ scroll all the way to the top or to the end of the page.</p></td>
 <p><code>onScrolling</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ScrollEvent</javadoc> Denotes that the
+[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
 user is scrolling a scrollable component.</p></td>
 </tr>
 </tbody>

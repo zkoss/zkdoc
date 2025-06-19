@@ -20,10 +20,10 @@ you can also define a customer rendering with a template for a tree:
 ```
 
 assume `files` is an instance of
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc>. Notice since
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> is used, `each`
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html). Notice since
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) is used, `each`
 references an instance of
-<javadoc>org.zkoss.zul.DefaultTreeNode</javadoc>. Thus, to retrieve the
+[org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html). Thus, to retrieve the
 real data, use
 <javadoc method="getData()">org.zkoss.zul.DefaultTreeNode</javadoc>
 

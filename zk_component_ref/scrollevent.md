@@ -3,7 +3,7 @@
 # ScrollEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.event.ScrollEvent</javadoc>
+- Java API: [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose
@@ -20,7 +20,7 @@ It is used to notified the server that user is changing its content
 (changing is on progress and not finished).
 
 The components which are supported this event are:
-<javadoc>org.zkoss.zul.Slider</javadoc>.
+[org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html).
 
 # Example
 

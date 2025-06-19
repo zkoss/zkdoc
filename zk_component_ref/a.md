@@ -3,7 +3,7 @@
 # A
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.A</javadoc>
+- Java API: [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.A</javadoc>
 
 # Employment/Purpose
@@ -122,7 +122,7 @@ Please refer to [download attribute](https://developer.mozilla.org/en-US/docs/We
 ```
 
 In addition, you could add child components to
-<javadoc>org.zkoss.zul.A</javadoc> too:
+[org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) too:
 
 ```xml
 <a href="http://www.zkoss.org" label="Visit ZK!" image="zk.png">
@@ -188,7 +188,7 @@ Desktop.getDirectory().
 
 | Version | Date          | Content                                                                                 |
 |---------|---------------|-----------------------------------------------------------------------------------------|
-| 5.0.5   | October, 2010 | <javadoc>org.zkoss.zul.A</javadoc> supports any children.                               |
+| 5.0.5   | October, 2010 | [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) supports any children.                               |
 | 7.0.2   | May, 2014     | [Support autodisable property for A component](http://tracker.zkoss.org/browse/ZK-2237) |
 
 

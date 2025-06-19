@@ -3,7 +3,7 @@
 # Listfoot
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Listfoot</javadoc>
+- Java API: [org.zkoss.zul.Listfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfoot.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listfoot</javadoc>
 
 

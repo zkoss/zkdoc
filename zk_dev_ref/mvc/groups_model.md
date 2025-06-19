@@ -7,16 +7,16 @@ concept of component, model and render, please refer to [the Model-driven Displa
 A groups model is used to drive components that support groups of data.
 The groups of data is a two-level tree of data: a list of grouped data
 and each grouped data is a list of elements to display. Here is [a live demo](http://www.zkoss.org/zkdemo/grid/grouping). Currently, both
-<javadoc>org.zkoss.zul.Listbox</javadoc> and
-<javadoc>org.zkoss.zul.Grid</javadoc> support a list of grouped data.
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) and
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html) support a list of grouped data.
 
 Instead of implementing
 <javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>, it is
 suggested to extend from
-<javadoc>org.zkoss.zul.AbstractGroupsModel</javadoc>, or to use one of
+[org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractGroupsModel.html), or to use one of
 the default implementations as following:
 
-|             | <javadoc>org.zkoss.zul.SimpleGroupsModel</javadoc>                                       | <javadoc>org.zkoss.zul.GroupsModelArray</javadoc>                                                                                                                   |
+|             | [org.zkoss.zul.SimpleGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleGroupsModel.html)                                       | [org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html)                                                                                                                   |
 |-------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Usage       | The grouping is **immutable**, i.e., re-grouping is not allowed                          | Grouping is based on a comparator (java.util.Comparator)                                                                                                            |
 | Constructor | The data must be grouped, i.e., data\[0\] is the first group, data\[1\] the second, etc. | The data is *not* grouped, i.e., data\[0\] is the first element. The constructor requires a comparator that will be used to group them.                             |
@@ -25,7 +25,7 @@ the default implementations as following:
 # Example: Immutable Grouping Data
 
 If your data is already grouped and the grouping won't be changed, then
-you could use <javadoc>org.zkoss.zul.SimpleGroupsModel</javadoc> as
+you could use [org.zkoss.zul.SimpleGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleGroupsModel.html) as
 follows:
 
 ```xml
@@ -77,13 +77,13 @@ particular column. And,
 will be called if the user requests to sort the data based on a
 particular column.
 
-<javadoc>org.zkoss.zul.GroupsModelArray</javadoc> supports both sorting
+[org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html) supports both sorting
 and re-grouping as described below:
 
-- Sorting: <javadoc>org.zkoss.zul.GroupsModelArray</javadoc> sorts each
+- Sorting: [org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html) sorts each
   group separately by using the specified comparator
   (java.util.Comparator).
-- Re-grouping: <javadoc>org.zkoss.zul.GroupsModelArray</javadoc>
+- Re-grouping: [org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html)
   re-groups by assuming two data belong to the same group if the
   compared result is the same (i.e., the given java.util.Comparator
   returns 0).
@@ -137,7 +137,7 @@ Object[][] _foods = new Object[][] { //Note: the order does not matter
 ```
 
 Then, we can make it a groups model by extending from
-<javadoc>org.zkoss.zul.GroupsModelArray</javadoc>:
+[org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html):
 
 ```java
 //GroupsModel
@@ -232,7 +232,7 @@ Finally we could group them together in a ZUML document as follows.
 If it is not the behavior you want, you could override
 <javadoc method="sortGroupData(java.lang.Object, java.lang.Object[], java.util.Comparator, boolean, int)">org.zkoss.zul.GroupsModelArray</javadoc>.
 Of course, you could extend from
-<javadoc>org.zkoss.zul.AbstractGroupsModel</javadoc> to have total
+[org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractGroupsModel.html) to have total
 control.
 
 ## 5.0.6 and Later
@@ -244,7 +244,7 @@ First,
 will return the correct element, so you don't have to override it as
 shown above.
 
-Second, <javadoc>org.zkoss.zul.ArrayComparator</javadoc> was introduced,
+Second, [org.zkoss.zul.ArrayComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ArrayComparator.html) was introduced,
 so `foo.FoodComparator` is not required in the above example.
 
 Third,
@@ -320,7 +320,7 @@ public class Food {
 
 Assume you want to use the value of the field that the user uses to
 group the data, then you could override
-<javadoc>org.zkoss.zul.GroupsModelArray</javadoc> as follows.
+[org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html) as follows.
 
 ```java
 public class FoodGroupsModel extends GroupsModelArray {
@@ -335,7 +335,7 @@ public class FoodGroupsModel extends GroupsModelArray {
 
 where
 
-- We use <javadoc>org.zkoss.zul.FieldComparator</javadoc> to initialize
+- We use [org.zkoss.zul.FieldComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html) to initialize
   the groups at the `category` field.
 - We use an object array as the group head that carries the first
   element of the given group (`Food[]`), and the index of the column
@@ -447,7 +447,7 @@ is called (similar to
 <javadoc method="getGroup(int)" type="interface">org.zkoss.zul.GroupsModel</javadoc>
 shall return an object representing the group).
 
-If you use <javadoc>org.zkoss.zul.GroupsModelArray</javadoc>, you could
+If you use [org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html), you could
 override
 <javadoc method="createGroupFoot(java.lang.Object[], int, int)">org.zkoss.zul.GroupsModelArray</javadoc>.
 For example,

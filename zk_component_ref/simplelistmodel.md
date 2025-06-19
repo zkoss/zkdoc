@@ -3,12 +3,12 @@
 # SimpleListModel
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.SimpleListModel</javadoc>
+- Java API: [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 - JavaScript API: N/A
 
 # Employment/Purpose
 
-A simple implementation of <javadoc>ListModel</javadoc>.
+A simple implementation of [ListModel](https://www.zkoss.org/javadoc/latest/zk/ListModel.html).
 
 # Example
 

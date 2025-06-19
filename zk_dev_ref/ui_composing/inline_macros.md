@@ -58,7 +58,7 @@ macro too.
 As described above, an inline macro is expanded inline when it is used
 as if they are entered directly. On the other hand, ZK will create a
 component (an instance of
-<javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc> or deriving) to
+[org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html) or deriving) to
 represent the regular macro. That is, the macro component is created as
 the parent of the components that are defined in the template.
 

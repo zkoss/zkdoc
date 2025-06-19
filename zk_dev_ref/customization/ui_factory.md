@@ -4,9 +4,9 @@ components, and to load ZUML documents. You could customize it to
 provide the functionality you want.
 
 For example,
-<javadoc>org.zkoss.zk.ui.http.SerializableUiFactory</javadoc> is the
+[org.zkoss.zk.ui.http.SerializableUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SerializableUiFactory.html) is the
 factory used to instantiate sessions that are serializable[^1], while
-<javadoc>org.zkoss.zk.ui.http.SimpleUiFactory</javadoc>, the default
+[org.zkoss.zk.ui.http.SimpleUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SimpleUiFactory.html), the default
 factory, instantiates non-serializable sessions.
 
 Here are a list of customization you could do with UI Factory:
@@ -29,8 +29,8 @@ Here are a list of customization you could do with UI Factory:
     <javadoc method="newPage(org.zkoss.zk.ui.sys.RequestInfo, org.zkoss.zk.ui.Richlet, java.lang.String)" type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc>
 
 Notice that it is suggested to extend from either
-<javadoc>org.zkoss.zk.ui.http.SerializableUiFactory</javadoc> or
-<javadoc>org.zkoss.zk.ui.http.SimpleUiFactory</javadoc>, rather than to
+[org.zkoss.zk.ui.http.SerializableUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SerializableUiFactory.html) or
+[org.zkoss.zk.ui.http.SimpleUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SimpleUiFactory.html), rather than to
 implement
 <javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc> from
 scratch.

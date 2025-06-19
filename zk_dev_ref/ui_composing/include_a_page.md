@@ -37,7 +37,7 @@ mapped to a servlet. For example,
 
 When including a ZUML page, the components specified in the ZUML page
 will become the child components of the
-<javadoc>org.zkoss.zul.Include</javadoc> component.
+[org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component.
 
 For example, suppose we have two ZUL pages as follows:
 
@@ -59,7 +59,7 @@ Then, `listbox` in `second.zul` will become the child of `include` in
 `first.zul`.
 
 When including a non-ZUML page (such as JSP), the output of the page
-will be the content of the <javadoc>org.zkoss.zul.Include</javadoc>
+will be the content of the [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)
 component. Thus, the output must be a valid HTML fragment without <code>
 
 <html>

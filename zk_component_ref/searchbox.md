@@ -4,7 +4,7 @@
 
 - Demonstration:
   [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Searchbox</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Searchbox</javadoc>
 
@@ -63,7 +63,7 @@ by calling `open()` even if the component is in the disabled state.
 
 ## ItemConverter
 
-By implementing your own <javadoc>org.zkoss.util.Converter</javadoc>
+By implementing your own [org.zkoss.util.Converter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Converter.html)
 using the `org.zkoss.util.Converter` interface, you can generate the
 label that represents the selected items. The default implementation is
 joining all the `toString()` result of items by commas.
@@ -90,7 +90,7 @@ JavaScript.
 
 ### Search at Server-side
 
-When a <javadoc>org.zkoss.zul.ListSubModel</javadoc> is provided, not
+When a [org.zkoss.zul.ListSubModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListSubModel.html) is provided, not
 all items are rendered to the client initially. Instead, as a user types
 into the search input, the entered text is sent to the server where it
 is used to filter the ListSubModel and retrieve only the subset of items
@@ -163,14 +163,14 @@ Returns all selected items.
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Represents an event caused by the user that the list selection is
 changed at the client.</p></td>
 </tr>
@@ -179,7 +179,7 @@ changed at the client.</p></td>
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component. Note: unlike
 <code>onClose</code>, this event is only a notification. The client
 sends this event after opening or closing the component.</p></td>
@@ -189,7 +189,7 @@ sends this event after opening or closing the component.</p></td>
 <p><code>onSearching</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Notifies one that the user is searching by keywords.</p></td>
 </tr>
 </tbody>

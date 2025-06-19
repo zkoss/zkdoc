@@ -55,10 +55,10 @@ public class MyComposer extends SelectorComposer {
 ```
 
 As shown above, the method to listen is annotated with the
-<javadoc>org.zkoss.zk.ui.select.annotation.Listen</javadoc> annotation
+[org.zkoss.zk.ui.select.annotation.Listen](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/Listen.html) annotation
 using the event name followed by a selector string identifying the
 component(s) (for more selector syntax examples see
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>). The
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)). The
 composer will register each annotated method as an event listener to the
 selected component automatically **in the same [ ID space](ZK_Developer's_Reference/ui_composing/ID_Space)**.
 Then, in the ZUL page, you can specify the `apply` attribute to
@@ -83,7 +83,7 @@ argument:
 ```
 
 Though not limited, a composer is usually associated with an ID space
-(such as <javadoc>org.zkoss.zul.Window</javadoc>) to handle events and
+(such as [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)) to handle events and
 components within the given ID space. You could associate any component
 that properly represents a scope of your application to manage.
 
@@ -188,7 +188,7 @@ Important Builtin Variables
 - self - the component receiving the event. In the previous example, it
   is the button itself.
 - event - the event being received. In the previous example, it is an
-  instance of <javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc>.
+  instance of [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html).
 
 Notice that the event handler declared in this way is interpreted at run
 time, so it inherits all advantages and disadvantages of
@@ -260,7 +260,7 @@ as follows.
     (and without
     <javadoc type="interface">org.zkoss.zk.ui.event.Express</javadoc>)
     - It includes the method of a composer wired by
-      <javadoc>org.zkoss.zk.ui.util.GenericForwardComposer</javadoc>
+      [org.zkoss.zk.ui.util.GenericForwardComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericForwardComposer.html)
       because the event listener is used.
 4.  Event handlers defined as a class's method
 5.  Event listeners registered to a page by

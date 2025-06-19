@@ -139,11 +139,11 @@ same effect as using
 
 After ZK applies the fulfill condition, i.e., creates all descendant
 components, it fires the `onFulfill` event with an instance of
-<javadoc>org.zkoss.zk.ui.event.FulfillEvent</javadoc> to notify the
+[org.zkoss.zk.ui.event.FulfillEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/FulfillEvent.html) to notify the
 component for further processing if any.
 
 For example, if you use the `wireVariables` method of the
-<javadoc>org.zkoss.zk.ui.Components</javadoc> class, you might have to
+[org.zkoss.zk.ui.Components](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html) class, you might have to
 call `wireVariables` again to wire the new components in the `onFulfill`
 event.
 

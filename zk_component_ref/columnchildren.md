@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
-- Java API: <javadoc>org.zkoss.zkex.zul.Columnchildren</javadoc>
+- Java API: [org.zkoss.zkex.zul.Columnchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnchildren.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
 

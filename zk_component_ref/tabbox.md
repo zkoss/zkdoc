@@ -3,7 +3,7 @@
 # Tabbox
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: <javadoc>org.zkoss.zul.Tabbox</javadoc>
+- Java API: [org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabbox</javadoc>
 
 
@@ -156,7 +156,7 @@ Note: The Client ROD feature will be disabled if it is set to true.
 <p>onSelect</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Denotes user has selected a tab. onSelect is sent to both tab and
 tabbox.</p></td>
 </tr>

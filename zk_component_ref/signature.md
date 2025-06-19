@@ -4,7 +4,7 @@
 
 {% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Signature</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Signature](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Signature.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Signature</javadoc>
 
@@ -138,7 +138,7 @@ file size by [ file-size-threshold]({{site.baseurl}}/zk_config_ref/the_system-co
 <p>onSave</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> When user invoke
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) When user invoke
 the save method, the event would be triggered.</p></td>
 </tr>
 <tr class="even">
@@ -146,7 +146,7 @@ the save method, the event would be triggered.</p></td>
 <p>onClear</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> When user invoke the
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) When user invoke the
 clear method, the event would be triggered.</p></td>
 </tr>
 </tbody>

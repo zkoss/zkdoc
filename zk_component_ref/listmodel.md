@@ -3,7 +3,7 @@
 # ListModel
 
 - Demonstration: [Listbox (Live Data)](http://www.zkoss.org/zkdemo/userguide/#g8)
-- Java API: <javadoc>org.zkoss.zul.ListModel</javadoc>
+- Java API: [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

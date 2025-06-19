@@ -1,6 +1,6 @@
 Before using a theme, it must be registered so that the system knows
 about its existence and where to retrieve its resources (from a jar file
-or from a folder). <javadoc>org.zkoss.zul.theme.Themes</javadoc>
+or from a folder). [org.zkoss.zul.theme.Themes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/Themes.html)
 provides several static methods for registering your themes.
 
 Registration, in its simplest form, is to tell the web application about
@@ -14,7 +14,7 @@ Themes.register("custom");
 
 Starting from ZK 6.5.2, theme resources could also be retrieved from a
 folder. To indicate that a theme is folder-based, please use
-<javadoc>org.zkoss.web.theme.StandardTheme.ThemeOrigin</javadoc> to
+[org.zkoss.web.theme.StandardTheme.ThemeOrigin](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/StandardTheme/ThemeOrigin.html) to
 specify the origin of the theme resources, like below.
 
 ```java
@@ -33,11 +33,11 @@ Themes.register("tablet:custom");
 
 ## Creating a Custom Theme Registration Service
 
-<javadoc>org.zkoss.web.theme.ThemeRegistry</javadoc> defines the
+[org.zkoss.web.theme.ThemeRegistry](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/ThemeRegistry.html) defines the
 interface to create a repository of themes available to the web
-application. <javadoc>org.zkoss.zul.theme.DesktopThemeRegistry</javadoc>
+application. [org.zkoss.zul.theme.DesktopThemeRegistry](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/DesktopThemeRegistry.html)
 (for ZK CE/PE) and
-<javadoc>org.zkoss.zkmax.theme.ResponsiveThemeRegistry</javadoc> (for ZK
+[org.zkoss.zkmax.theme.ResponsiveThemeRegistry](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/theme/ResponsiveThemeRegistry.html) (for ZK
 EE) are the standard implementations that actually store the registered
 themes.
 
@@ -49,7 +49,7 @@ themes available.) If you would like to modify any of these behaviors,
 please provide a custom ThemeRegistry.
 
 For example, a custom ThemeRegistry could be created by implementing
-<javadoc>org.zkoss.web.theme.ThemeRegistry</javadoc> interface directly,
+[org.zkoss.web.theme.ThemeRegistry](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/ThemeRegistry.html) interface directly,
 or extending one of the standard implementations, depending on the ZK
 edition you are using.
 

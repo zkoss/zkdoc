@@ -3,7 +3,7 @@
 # Label Image Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.LabelImageElement</javadoc>
+- Java API: [org.zkoss.zul.impl.LabelImageElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.LabelImageWidget</javadoc>
 

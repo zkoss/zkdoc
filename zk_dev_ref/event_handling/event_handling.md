@@ -1,4 +1,4 @@
-An event (<javadoc>org.zkoss.zk.ui.event.Event</javadoc>) is used to
+An event ([org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)) is used to
 abstract an activity made by a user, a notification made by an
 application, and an invocation of server push. Thus, the application can
 handle different kinds of notifications and sources with a universal

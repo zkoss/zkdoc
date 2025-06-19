@@ -3,14 +3,14 @@
 To retrieve the information about the client, you can register an event
 listener for the `onClientInfo` event to a root component. To control
 the behavior of the client, you can use the utilities in the
-<javadoc>org.zkoss.zk.ui.util.Clients</javadoc> class.
+[org.zkoss.zk.ui.util.Clients](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html) class.
 
 # Browser Information
 
 Sometimes an application needs to know the client's information, such as
 time zone. Then, you can add an event listener for the `onClientInfo`
 event. Once the event is added, the client will send back an instance of
-the <javadoc>org.zkoss.zk.ui.event.ClientInfoEvent</javadoc> class, from
+the [org.zkoss.zk.ui.event.ClientInfoEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ClientInfoEvent.html) class, from
 which you can retrieve the information of the client.
 
 For example,
@@ -69,7 +69,7 @@ For example,
 
 # Browser Control
 
-<javadoc>org.zkoss.ui.util.Clients</javadoc> has utilities to control
+[org.zkoss.ui.util.Clients](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/util/Clients.html) has utilities to control
 the client's visual presentation (more precisely, the browser window),
 such as printing, submitting, resizing and so on. For example, you can
 scroll the browser window (aka., the desktop) as follows.
@@ -80,7 +80,7 @@ scroll the browser window (aka., the desktop) as follows.
 
 Here we describe some special controls that are worth noticing. For
 complete functionality, please refer to
-<javadoc>org.zkoss.ui.util.Clients</javadoc>.
+[org.zkoss.ui.util.Clients](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/util/Clients.html).
 
 ## Warn Users When Leaving a Page
 
@@ -156,14 +156,14 @@ void doSomething() {
 If you are familiar with JavaScript, you could have more control by
 sending any JavaScript code to the client for evaluation. It can be done
 by preparing the JavaScript code in
-<javadoc>org.zkoss.zk.au.out.AuInvoke</javadoc> or
-<javadoc>org.zkoss.zk.au.out.AuScript</javadoc>, and then send back to
+[org.zkoss.zk.au.out.AuInvoke](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuInvoke.html) or
+[org.zkoss.zk.au.out.AuScript](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuScript.html), and then send back to
 the client by calling
 <javadoc method="response(org.zkoss.zk.au.AuResponse)">org.zkoss.zk.ui.util.Clients</javadoc>.
 
 For example, we could use
-<javadoc>org.zkoss.zk.au.out.AuScript</javadoc> to inject any code,
-while <javadoc>org.zkoss.zk.au.out.AuInvoke</javadoc> is better if you
+[org.zkoss.zk.au.out.AuScript](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuScript.html) to inject any code,
+while [org.zkoss.zk.au.out.AuInvoke](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuInvoke.html) is better if you
 want to invoke a function of a client-side widget.
 
 ```java
@@ -186,7 +186,7 @@ states: hidden, visible, prerender, and unloaded.
 To get the two attributes, you can add an event listener for the
 `onVisibilityChange` event. Once the event is added, the client will
 send back an instance of the
-<javadoc>org.zkoss.zk.ui.event.VisibilityChangeEvent</javadoc> class,
+[org.zkoss.zk.ui.event.VisibilityChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/VisibilityChangeEvent.html) class,
 from which you can retrieve the page visibility state of the current
 page.
 
@@ -218,4 +218,4 @@ that support this HTML 5 API.
 | Version | Date           | Content                                                                                        |
 |---------|----------------|------------------------------------------------------------------------------------------------|
 | 5.0.8   | June, 2010     | <javadoc method="log(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc> was introduced. |
-| 6.5.1   | November, 2012 | <javadoc>org.zkoss.zk.ui.util.VisibilityChangeEvent</javadoc> was introduced.                  |
+| 6.5.1   | November, 2012 | [org.zkoss.zk.ui.util.VisibilityChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/VisibilityChangeEvent.html) was introduced.                  |

@@ -6,7 +6,7 @@ a widget. For example, with CSA, you could use the so-called
 *slide-down* effect to display a widget.
 
 It is a generic feature available to
-<javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>, so you could
+[org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html), so you could
 apply it to almost all widgets.
 
 CSA allows the developer to control some actions without JavaScript. If
@@ -130,8 +130,8 @@ have to rewrite them to make them work under ZK 5:
 2.  The action operation must be the name of one of the methods defined
     in <javadoc directory="jsdoc">zk.eff.Actions</javadoc> (while ZK 3
     is the JavaScript code).
-3.  It is part of <javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
-    (while ZK 3 is <javadoc>org.zkoss.zul.impl.XulElement</javadoc>).
+3.  It is part of [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
+    (while ZK 3 is [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)).
 
 # Version History
 

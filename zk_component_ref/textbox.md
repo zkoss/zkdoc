@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: <javadoc>org.zkoss.zul.Textbox</javadoc>
+- Java API: [org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Textbox</javadoc>
 
 

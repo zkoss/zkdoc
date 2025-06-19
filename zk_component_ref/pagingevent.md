@@ -3,7 +3,7 @@
 # PagingEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul..event.PagingEvent</javadoc>
+- Java API: [org.zkoss.zul..event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul//event/PagingEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

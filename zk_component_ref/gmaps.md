@@ -162,7 +162,7 @@ Specify which protocol to load the Maps API. Currently it supports
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item(can be <a
 href="{{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps/ginfo"
 title="wikilink"> Ginfo</a>, <a

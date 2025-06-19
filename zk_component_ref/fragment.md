@@ -3,7 +3,7 @@
 # Fragment
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zkmax.zul.Fragment</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
 
@@ -258,7 +258,7 @@ position, pressed keys, entered text, and selected text.
 
 | ZK Event object                                         | DOM event           |
 |---------------------------------------------------------|---------------------|
-| <javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc>     | onclick             |
+| [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)     | onclick             |
 |                                                         | oncontextmenu       |
 |                                                         | ondblclick          |
 |                                                         | onmousedown         |
@@ -268,16 +268,16 @@ position, pressed keys, entered text, and selected text.
 |                                                         | onmouseout          |
 |                                                         | onmouseup           |
 |                                                         | ondrag              |
-| <javadoc>org.zkoss.zk.ui.event.KeyEvent</javadoc>       | onkeydown           |
+| [org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)       | onkeydown           |
 |                                                         | onkeypress          |
 |                                                         | onkeyup             |
-| <javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc>     | onchange            |
+| [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)     | onchange            |
 |                                                         | oninput             |
-| <javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc>     | onchange (checkbox) |
+| [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html)     | onchange (checkbox) |
 |                                                         | oninput (checkbox)  |
-| <javadoc>org.zkoss.zk.ui.event.SelectionEvent</javadoc> | onselect            |
-| <javadoc>org.zkoss.zk.ui.event.DropEvent</javadoc>      | ondrop              |
-| <javadoc>org.zkoss.zk.ui.event.Event</javadoc>          | onblur              |
+| [org.zkoss.zk.ui.event.SelectionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html) | onselect            |
+| [org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html)      | ondrop              |
+| [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)          | onblur              |
 |                                                         | onfocus             |
 |                                                         | onfocusin           |
 |                                                         | onfocusout          |
@@ -312,7 +312,7 @@ position, pressed keys, entered text, and selected text.
 <p><code>onRecover</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Represents an event sent back to the server caused by an offline
 recovery.</p></td>
 </tr>

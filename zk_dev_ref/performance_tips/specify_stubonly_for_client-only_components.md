@@ -44,7 +44,7 @@ are all stub-only.
 
 When a component is stub only, it will be replaced with a special
 component called a stub component
-(<javadoc>org.zkoss.zk.ui.StubComponent</javadoc>) after rendered. In
+([org.zkoss.zk.ui.StubComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/StubComponent.html)) after rendered. In
 addition, the adjacent stub components might be merged to minimize the
 memory further. Thus, the application should not access the component
 again on the server, if it is specified as stub only.
@@ -129,7 +129,7 @@ converting a stub-only component to a stub component. In other words,
 the listener will be called if the corresponding event is fired.
 However, since the original component no longer exists, the event is
 fired in the most generic format: an instance of
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc>, rather than a derived
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html), rather than a derived
 class.
 
 For example, in the following snippet,

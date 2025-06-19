@@ -38,7 +38,7 @@ Then, the user could drag a draggable component, and then drop it to a
 droppable component.
 
 Since the draggable and droppable properties are implemented in
-<javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>, almost all the
+[org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html), almost all the
 components can become draggable or droppable.
 
 # The onDrop Event
@@ -46,7 +46,7 @@ components can become draggable or droppable.
 Once a user has dragged a component and dropped it to another component,
 the component that the user dropped the component to will be notified by
 the `onDrop` event. The `onDrop` event is an instance of
-<javadoc>org.zkoss.zk.ui.event.DropEvent</javadoc>. By calling
+[org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html). By calling
 <javadoc method="getDragged()">org.zkoss.zk.ui.event.DropEvent</javadoc>,
 you could retrieve what has been dragged (and dropped).
 

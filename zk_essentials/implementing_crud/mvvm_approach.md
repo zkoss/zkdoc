@@ -312,7 +312,7 @@ validator to avoid empty value of todo's subject.
 -   Line 2: Returning a validator object by a getter method makes it as
     a ViewModel's property, so we can bind it to an attribute.
 -   Line 3: In most case, we can create a validator by extending
-    <javadoc>org.zkoss.bind.validator.AbstractValidator</javadoc> and
+    [org.zkoss.bind.validator.AbstractValidator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/validator/AbstractValidator.html) and
     override `validate()` instead of creating from scratch.
 -   Line 7: Get user input from `ValidationContext`. In our example,
     because we will apply this validator to form binding, we expect

@@ -10,7 +10,7 @@ existing operation agents are not able to help you to test it.
 Therefore, in ZATS Mimic1.1.0 we introduce a new agent called `AuAgent`
 and it can help you perform custom operations with a condition that the
 custom component must implement a particular interface:
-<javadoc>org.zkoss.zk.ui.Component</javadoc>. You can then simulate your
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html). You can then simulate your
 component's custom operations by constructing your custom event data
 with `AuData` and send it with `AuAgent.post()`.
 

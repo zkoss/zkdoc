@@ -148,7 +148,7 @@ is equivalent to
 To instantiate a macro component in Java, you could do the followings.
 
 1.  Looks up the component definition
-    (<javadoc>org.zkoss.zk.ui.metainfo.ComponentDefinition</javadoc>)
+    ([org.zkoss.zk.ui.metainfo.ComponentDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/ComponentDefinition.html))
     with the use of
     <javadoc method="getComponentDefinition(java.lang.String, boolean)">org.zkoss.zk.ui.Page</javadoc>.
 2.  Invokes
@@ -179,7 +179,7 @@ ua.afterCompose(); //then the ZUML page is loaded and child components are creat
 ```
 
 It is a bit tedious. If you implement your own custom Java class
-(instead of <javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc>), it
+(instead of [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html)), it
 will be simpler. For example,
 
 ```java

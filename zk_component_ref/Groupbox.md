@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
-- Java API: <javadoc>org.zkoss.zul.Groupbox</javadoc>
+- Java API: [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Groupbox</javadoc>
 
 # Employment/Purpose
@@ -186,7 +186,7 @@ adding the following to `/WEB-INF/zk.xml`
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. Note:</p>
 <p>unlike <code>onClose</code>, this event is only a notification. The
 client sends this event after opening or closing the component.</p>

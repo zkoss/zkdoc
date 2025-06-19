@@ -1,7 +1,7 @@
 # arg - java.util.Map
 
 The `arg` argument passed to the `createComponents` method in the
-<javadoc>org.zkoss.zk.ui.Executions</javadoc> class. It might be `null`,
+[org.zkoss.zk.ui.Executions](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html) class. It might be `null`,
 depending on how `createComponents` is called.
 
 It is the same as self.desktop.execution.arg.

@@ -19,7 +19,7 @@ is equivalent to
 However, a component can be designed to accept the nested text as the
 value of a component property. In other words, a component designer
 could decide to make ZK Loader interpret the nest text as the value of a
-predefined property. For example, <javadoc>org.zkoss.zul.Html</javadoc>
+predefined property. For example, [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html)
 is one of this kind of components, and
 
 ```xml
@@ -132,6 +132,6 @@ legal XML document.
 
 | Version | Date           | Content                                                                                             |
 |---------|----------------|-----------------------------------------------------------------------------------------------------|
-| 5.0.7   | April 2011     | <javadoc>org.zkoss.zul.Tab</javadoc> allow the XML text as the label.                               |
+| 5.0.7   | April 2011     | [org.zkoss.zul.Tab](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html) allow the XML text as the label.                               |
 | 6.0.0   | September 2011 | The nested XML content was supported.                                                               |
 | 6.5.0   | September 2012 | [The Tab component support caption component as it's label](http://tracker.zkoss.org/browse/ZK-970) |

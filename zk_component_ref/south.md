@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
-- Java API: <javadoc>org.zkoss.zul.South</javadoc>
+- Java API: [org.zkoss.zul.South](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/South.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.layout.South</javadoc>
 
 

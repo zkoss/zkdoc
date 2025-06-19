@@ -2,7 +2,7 @@
 
 - Demonstration:
   [Radiogroup](http://www.zkoss.org/zkdemo/input/radio_button)
-- Java API: <javadoc>org.zkoss.zul.Radiogroup</javadoc>
+- Java API: [org.zkoss.zul.Radiogroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radiogroup.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Radiogroup</javadoc>
 
@@ -185,7 +185,7 @@ radigroup will do the rest.
 <p>onCheck</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc> Denotes when a radio
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a radio
 under the radiogroup is checked.</p></td>
 </tr>
 </tbody>

@@ -1,7 +1,7 @@
 
 
 Keystroke handling is generic. Any component inherited from
-<javadoc>org.zkoss.zul.impl.XulElement</javadoc> can handle the key
+[org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html) can handle the key
 event in the same way.
 
 # ENTER and ESC
@@ -87,7 +87,7 @@ to handle with
 Then, if any child component gains the focus and the user presses a
 keystroke that matches the combination, the `onCtrlKey` will be sent to
 the component with an instance of
-<javadoc>org.zkoss.zk.ui.event.KeyEvent</javadoc>.
+[org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html).
 
 Like ENTER and ESC, you could specify the listener and the `ctrlKeys`
 property in one of the ancestors. ZK will search the component having

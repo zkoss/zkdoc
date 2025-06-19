@@ -3,7 +3,7 @@
 # Drawer
 
 - Demonstration: [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Drawer</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Drawer</javadoc>
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
@@ -111,7 +111,7 @@ Sets the title of this drawer. `null` means no title.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component.</p>
 <p>Note: unlike <code>onClose</code>, this event is only a notification.
 The client sends this event after opening or closing the

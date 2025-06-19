@@ -3,7 +3,7 @@
 # Toolbar
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)
-- Java API: <javadoc>org.zkoss.zul.Toolbar</javadoc>
+- Java API: [org.zkoss.zul.Toolbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbar.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Toolbar</javadoc>
 
 

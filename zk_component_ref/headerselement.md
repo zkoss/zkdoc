@@ -3,7 +3,7 @@
 # Headers Element
 
 - Demonstration: [Headers Element](http://www.zkoss.org/zkdemo/userguide/#g13)
-- Java API: <javadoc>org.zkoss.zul.impl.HeadersElement</javadoc>
+- Java API: [org.zkoss.zul.impl.HeadersElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeadersElement.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.HeadWidget</javadoc>
 
@@ -35,7 +35,7 @@ N/A
 <p>onColSize</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.ColSizeEvent</javadoc> Denotes user has
+[org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) Denotes user has
 resized one of the columns.</p></td>
 </tr>
 </tbody>

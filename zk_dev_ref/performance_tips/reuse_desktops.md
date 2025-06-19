@@ -21,7 +21,7 @@ the following to `zk.xml`
 ### org.zkoss.zkmax.ui.util.DesktopRecycle
 
 ZK provides a default implementation, the
-<javadoc>org.zkoss.zkmax.ui.util.DesktopRecycle</javadoc> class, to
+[org.zkoss.zkmax.ui.util.DesktopRecycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/DesktopRecycle.html) class, to
 simplify the use. You can use it directly or extend from it. By default,
 it caches all desktops for all URIs. You can extend it to limit to
 certain paths by overriding the `shallRecycle` method, or not to use

@@ -17,11 +17,11 @@ The following are the usage steps:
 # Uploading Files for Components with `upload` attribute
 
 To implement an uploading feature, you can simply use the
-<javadoc>org.zkoss.zul.Fileupload</javadoc> component. Alternatively,
+[org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html) component. Alternatively,
 you can choose to use a button components such as
-<javadoc>org.zkoss.zul.Button</javadoc>,
-<javadoc>org.zkoss.zul.Menuitem</javadoc>,
-<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> and so on. (See [ZK Developer's Reference/UI Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
+[org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html),
+[org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html),
+[org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html) and so on. (See [ZK Developer's Reference/UI Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
 and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload)) Then set
 `true` to `upload` attribute of these components; users can then click
 and select a file to upload through a browser dialog, as illustrated
@@ -99,7 +99,7 @@ in the image below:
 ```
 
 In this case, we can retrieve `UploadAgent` from
-<javadoc>org.zkoss.zk.ui.DesktopAgent</javadoc>. Following is a typical
+[org.zkoss.zk.ui.DesktopAgent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/DesktopAgent.html). Following is a typical
 example of file uploading with
 <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>:
 
@@ -117,7 +117,7 @@ public void test() throws Exception {
 ```
 
 - **Line 14-15**: After triggering an event leading to an uploading
-  operation, we can cast <javadoc>org.zkoss.zk.ui.DesktopAgent</javadoc>
+  operation, we can cast [org.zkoss.zk.ui.DesktopAgent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/DesktopAgent.html)
   as a `UploadAgent` for uploading.
 - **Line 16-17**: We can also upload multiple files at once using
   <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>.

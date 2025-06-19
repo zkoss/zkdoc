@@ -69,7 +69,7 @@ extends org.zkoss.zk.ui.select.SelectorComposer {
 ```
 
 Notice that, as shown above, the event being forwarded is wrapped as an
-instance of <javadoc>org.zkoss.zk.ui.event.ForwardEvent</javadoc>. To
+instance of [org.zkoss.zk.ui.event.ForwardEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ForwardEvent.html). To
 retrieve the original event, you could invoke
 <javadoc method="getOrigin()">org.zkoss.zk.ui.event.ForwardEvent</javadoc>.
 

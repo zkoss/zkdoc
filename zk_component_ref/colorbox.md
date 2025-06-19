@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)
-- Java API: <javadoc>org.zkoss.zkex.zul.Colorbox</javadoc>
+- Java API: [org.zkoss.zkex.zul.Colorbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Colorbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zkex.inp.Colorbox</javadoc>
 
 
@@ -69,7 +69,7 @@ By setting `content` attribute of <code>
 <p>onChange</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc> Notifies the
+[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Notifies the
 application with the onChange event if its content is changed</p></td>
 </tr>
 </tbody>

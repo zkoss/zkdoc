@@ -1,5 +1,5 @@
 ZK creates a component (one of the derives of
-<javadoc>org.zkoss.zhtml.AbstractTag</javadoc>) for each XML element
+[org.zkoss.zhtml.AbstractTag](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/AbstractTag.html)) for each XML element
 specified with the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML). In other words, ZK
 will maintain their states on the server. However, if you won't change
 their states dynamically (i.e., after instantiated), you could use the
@@ -7,10 +7,10 @@ their states dynamically (i.e., after instantiated), you could use the
 instead.
 
 For example, the following code snippet creates five components (one
-<javadoc>org.zkoss.zhtml.Table</javadoc>,
-<javadoc>org.zkoss.zhtml.Tr</javadoc>,
-<javadoc>org.zkoss.zul.Textbox</javadoc> and two
-<javadoc>org.zkoss.zhtml.Td</javadoc>).
+[org.zkoss.zhtml.Table](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Table.html),
+[org.zkoss.zhtml.Tr](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Tr.html),
+[org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html) and two
+[org.zkoss.zhtml.Td](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Td.html)).
 
 ```xml
 <h:table xmlns:h="xhtml">
@@ -48,7 +48,7 @@ incorrect.
 ```
 
 If you have to change them dynamically, you still have to use the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML), or you
-could use <javadoc>org.zkoss.zul.Html</javadoc> alternatively, if the
+could use [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html) alternatively, if the
 HTML tags won't contain any ZUL component.
 
 **Notice** that you could create the native components in Java too. For
@@ -72,7 +72,7 @@ section.
 
 By default, a native component will be *stub-ized*, i.e., they will be
 replaced with a stateless component called
-<javadoc>org.zkoss.zk.ui.StubComponent</javadoc>, such that the memory
+[org.zkoss.zk.ui.StubComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/StubComponent.html), such that the memory
 footprint will be minimized[^2]
 
 Though rarely, you could disable the stubing by setting a component

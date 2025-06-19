@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Barcodescanner](http://www.zkoss.org/zksandbox/userguide/#u5)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Barcodescanner</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Barcodescanner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcodescanner.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barscanner.Barcodescanner</javadoc>
 
@@ -299,7 +299,7 @@ and `consistencyThreshold` both 1.
 <p><code>onDetect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.DetectEvent</javadoc> Notifies if the
+[org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the
 barcode scanner detect a barcode message.</p></td>
 </tr>
 </tbody>

@@ -3,14 +3,14 @@
 # Rows
 
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
-- Java API: <javadoc>org.zkoss.zul.Rows</javadoc>
+- Java API: [org.zkoss.zul.Rows](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rows.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Rows</javadoc>
 
 
 # Employment/Purpose
 
 Defines the rows of a grid. Each child of a rows element should be a
-<javadoc>org.zkoss.zul.Row</javadoc> element.
+[org.zkoss.zul.Row](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Row.html) element.
 
 # Example
 

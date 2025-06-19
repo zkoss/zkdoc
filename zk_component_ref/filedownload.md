@@ -3,17 +3,17 @@
 # Filedownload
 
 - Demonstration: [File Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
-- Java API: <javadoc>org.zkoss.zul.Filedownload</javadoc>
+- Java API: [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html)
 - JavaScript API: N/A
 
 
 # Employment/Purpose
 
-<javadoc>org.zkoss.zul.Filedownload</javadoc> provides a set of
+[org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html) provides a set of
 utilities to prompt a user for downloading a file from the server to the
 client.
 
-Notice that <javadoc>org.zkoss.zul.Filedownload</javadoc> is not a
+Notice that [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html) is not a
 component. Rather, it is a collection of utilities for file download.
 
 Unlike the `iframe` component that displays the file in the browser
@@ -54,7 +54,7 @@ download URL of the `save` method becomes obsolete as soon as the
 desktop (or session) is gone.
 
 To use resumable download, you have to invoke the `saveResumable` method
-of <javadoc>org.zkoss.zkmax.zul.Filedownload</javadoc> instead of `save`
+of [org.zkoss.zkmax.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Filedownload.html) instead of `save`
 as depicted below:
 
 ```xml
@@ -86,7 +86,7 @@ properties that can control the number of allowed resumable downloads.
 (( Default: 4096.
 
 If you want more advanced control, you can implement
-<javadoc>org.zkoss.zkmax.zul.FiledownloadListener</javadoc> and specify
+[org.zkoss.zkmax.zul.FiledownloadListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/FiledownloadListener.html) and specify
 it in a library property called
 `org.zkoss.zkmax.zul.FiledownloadListener.class`. For examle, in
 `zk.xml`, you can do:
@@ -108,7 +108,7 @@ guide for in-depth details.
 
 # Limitation of IE 6/7/8
 
-With this approach (<javadoc>org.zkoss.zul.Filedownload</javadoc>),
+With this approach ([org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html)),
 Internet Explorer 6, 7, and 8[^1] will show up a warning message on top
 of the browser as snapshot below ("To help protect your security,
 Internet Explorer...").
@@ -123,7 +123,7 @@ is a tedious user experience.
 
 To work around it, we have to prepare another page for real download,
 and then use FORM submit, instead of invoking
-<javadoc>org.zkoss.zul.Filedownload</javadoc>, to redirect to the page
+[org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html), to redirect to the page
 for real download. For example,
 
 ```xml
@@ -136,7 +136,7 @@ for real download. For example,
 And, the page for real download could be implemented with, say, JSP or a
 servlet. ZK provides utilities to simplify the task:
 <javadoc method="write(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.util.media.Media, boolean, boolean)">org.zkoss.web.servlet.http.Https</javadoc>
-and <javadoc>org.zkoss.util.media.AMedia</javadoc>. For example,
+and [org.zkoss.util.media.AMedia](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/media/AMedia.html). For example,
 
 ```xml
 <%-- real-download.jsp: the page really downloads the file to response --%>

@@ -73,7 +73,7 @@ you need.
 A simple way to implement a DAO is to control Hibernate sessions and
 transactions manually, hence we need a utility class to get
 `SessionFactory`. ZK's
-<javadoc>org.zkoss.zkplus.hibernate.HibernateUtil</javadoc> has been
+[org.zkoss.zkplus.hibernate.HibernateUtil](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/hibernate/HibernateUtil.html) has been
 deprecated since 6.0.2, you can write your own one according to the code
 example in Hibernate Reference Manual.[^4] Here we provide a simple
 example.
@@ -554,7 +554,7 @@ lazy-loaded collection but objects in the list are already detached, and
 we will get `LazyInitailizationException`. During this rendering
 process, developers will not be notified and cannot interfere this
 process to reload detached objects. One solution is to **implement a
-custom <javadoc>org.zkoss.zul.ListModel</javadoc>** for the component.
+custom [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)** for the component.
 
 We demonstrate 2 implementations here for your reference. The first one
 is simpler but less efficient; it re-queries each detached object when a
@@ -587,7 +587,7 @@ public class OrderListModel extends AbstractListModel<Order>{
 }
 ```
 
-- Line 1: We extends <javadoc>org.zkoss.zul.AbstractListModel</javadoc>
+- Line 1: We extends [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)
   to build our list model for it handles selection for us, but we have
   to implement Order's `equals()` and `hashCode()`.
 - Line 14: Re-query the detached object by its id and return a

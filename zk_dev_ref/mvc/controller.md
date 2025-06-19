@@ -4,7 +4,7 @@ The *controller* is a Java program that is used to glue UI (view) and
 Data (model) together.
 
 A simple UI does not require any controllers. For example, the data of a
-<javadoc>org.zkoss.zul.Listbox</javadoc> could be abstracted by
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) could be abstracted by
 implementing <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>
 as described in [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model).
 

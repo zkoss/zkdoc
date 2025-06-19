@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Fisheyebar](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
-- Java API: <javadoc>org.zkoss.zkex.zul.Fisheyebar</javadoc>
+- Java API: [org.zkoss.zkex.zul.Fisheyebar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheyebar.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.menu.Fisheyebar</javadoc>
 

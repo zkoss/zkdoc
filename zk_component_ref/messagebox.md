@@ -3,7 +3,7 @@
 # Messagebox
 
 - Demonstration: [Messagebox](http://www.zkoss.org/zkdemo/userguide/#l8)
-- Java API: <javadoc>org.zkoss.zul.Messagebox</javadoc>
+- Java API: [org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html)
 - JavaScript API: N/A
 
 # Employment/Purpose
@@ -26,7 +26,7 @@ Messagebox.show("Failed to access the information", null, 0,  Messagebox.ERROR);
 
 There are a lot of utilities that allow you to show a message in
 different look, such as the buttons, icon and title. Please refer to
-<javadoc>org.zkoss.zul.Messagebox</javadoc> for more information.
+[org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html) for more information.
 
 ## Take Actions Depending On Which Button Is Clicked
 
@@ -65,7 +65,7 @@ Close button on the right-top corner, the `onClose` event is fired.
 {% include version-badge.html version=6.0.0 %}
 
 Since ZK 6, the event listener will be invoked with an instance of
-<javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc>, and it is easy
+[org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html), and it is easy
 to retrieve the button being clicked from it. For example,
 
 ```java
@@ -259,7 +259,7 @@ This messagebox will show without any buttons.
 | Version | Date           | Content                                                                                                           |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | October 2011   | The order and labels of the buttons were assignable.                                                              |
-| 6.0.0   | October 2011   | <javadoc>org.zkoss.zul.Messagebox.ClickEvent</javadoc> was introduced to simplify the identification of a button. |
+| 6.0.0   | October 2011   | [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html) was introduced to simplify the identification of a button. |
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
 

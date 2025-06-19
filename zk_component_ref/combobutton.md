@@ -3,7 +3,7 @@
 # Combobutton
 
 - Demonstration:
-- Java API: <javadoc>org.zkoss.zul.Combobutton</javadoc>
+- Java API: [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Combobutton</javadoc>
 
@@ -140,7 +140,7 @@ in stead of upload.
 <p><code>onClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)</p>
 <p>Denotes when left button of Combobutton is clicked.</p></td>
 </tr>
 <tr class="even">
@@ -148,7 +148,7 @@ in stead of upload.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes when the child popup is opened or closed, it will not be
 fired if open or close child popup by call
 <javadoc method="setOpen(boolean)">org.zkoss.zul.Combobutton</javadoc>

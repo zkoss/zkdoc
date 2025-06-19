@@ -26,7 +26,7 @@ public class DataRenderer implements org.zkoss.zkmax.zul.MatrixRenderer<List<Str
 ```
 
 Then, if we have a list model
-(<javadoc>org.zkoss.zkmax.zul.MatrixModel</javadoc>) called `data`, and
+([org.zkoss.zkmax.zul.MatrixModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixModel.html)) called `data`, and
 an instance of a custom renderer called `dataRenderer`, then we can put
 them together in a ZUML document as follows:
 

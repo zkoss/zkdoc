@@ -3,7 +3,7 @@
 # Panel
 
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
-- Java API: <javadoc>org.zkoss.zul.Panel</javadoc>
+- Java API: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wnd.Panel</javadoc>
 
 
@@ -140,7 +140,7 @@ is not empty, then this attribute is ignored. (Default: empty).
 
 Specify whether to show a close button on the title bar or not. If
 closable, a button is displayed and the onClose event
-(<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc>) is sent if a user
+([org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)) is sent if a user
 clicks the button. (Default: false)
 
 # Miscellaneous
@@ -161,7 +161,7 @@ To make the scrollbar appear when content exceeds panel height, specify
 
 ## Toolbar positions
 
-Panel supports three kinds of <javadoc>org.zkoss.zul.Toolbar</javadoc>
+Panel supports three kinds of [org.zkoss.zul.Toolbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbar.html)
 positions: `Top`, `Bottom` and `Foot`. For example:
 
 ![](/zk_component_ref/images/Panel-des.gif)
@@ -216,7 +216,7 @@ for details.
 <p><code>onMove</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MoveEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)</p>
 <p>Denotes the position of the window is moved by a user.</p></td>
 </tr>
 <tr class="even">
@@ -224,7 +224,7 @@ for details.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes user has opened or closed a component.</p>
 <p><strong><code>Note:</code></strong></p>
 <p>Unlike <code>onClose</code>, this event is only a notification.
@@ -240,7 +240,7 @@ The</p>
 <p><code>onMaximize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MaximizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)</p>
 <p>Denotes user has maximized a component.</p></td>
 </tr>
 <tr class="even">
@@ -248,7 +248,7 @@ The</p>
 <p><code>onMinimize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MinimizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)</p>
 <p>Denotes user has minimized a component.</p></td>
 </tr>
 <tr class="odd">
@@ -256,7 +256,7 @@ The</p>
 <p><code>onClose</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes the close button is pressed by a user, and the</p>
 <p>component shall detach itself.</p></td>
 </tr>
@@ -265,7 +265,7 @@ The</p>
 <p><code>onSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)</p>
 <p>Denotes the panel's size is updated by a user.</p></td>
 </tr>
 <tr class="odd">
@@ -273,7 +273,7 @@ The</p>
 <p><code>onZIndex</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ZIndexEvent</javadoc></p>
+[org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)</p>
 <p>Denotes the panel's zindex is updated by a user.</p></td>
 </tr>
 </tbody>

@@ -4,7 +4,7 @@
 
 - Demonstration: N/A
 - Java API:
-  <javadoc>org.zkoss.zk.ui.event.VisibilityChangeEvent</javadoc>
+  [org.zkoss.zk.ui.event.VisibilityChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/VisibilityChangeEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

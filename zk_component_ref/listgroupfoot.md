@@ -3,7 +3,7 @@
 # Listgroupfoot
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Listgroupfoot</javadoc>
+- Java API: [org.zkoss.zul.Listgroupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroupfoot.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
 
@@ -93,7 +93,7 @@ GroupFooter serves as a summary listitem of listgroup.
 
 # Supported Children
 
-<javadoc>`org.zkoss.zul.Listcell`</javadoc>
+[`org.zkoss.zul.Listcell`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/Listcell`.html)
 
 # Use Cases
 

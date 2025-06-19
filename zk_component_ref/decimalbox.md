@@ -2,7 +2,7 @@
 
 - Demonstration:
   [Decimalbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: <javadoc>org.zkoss.zul.Decimalbox</javadoc>
+- Java API: [org.zkoss.zul.Decimalbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Decimalbox.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.Decimalbox</javadoc>
 

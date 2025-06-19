@@ -67,6 +67,6 @@ would like to load a ZUML document from resources other than Web pages,
 such as from the database, you could implement
 <javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc>. It is
 generally done by extending from
-<javadoc>org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc> and overriding
+[org.zkoss.zk.ui.impl.AbstractUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html) and overriding
 <javadoc method="getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.
 For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).

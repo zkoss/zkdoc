@@ -8,8 +8,8 @@ Depending on the type of chart you want, you could implement one of
 <javadoc type="interface">org.zkoss.zul.GanttModel</javadoc>,
 <javadoc type="interface">org.zkoss.zul.HiLoModel</javadoc>, etc. In
 addition, there are default implementations for them you could use
-directly, such as <javadoc>org.zkoss.zul.SimplePieModel</javadoc>,
-<javadoc>org.zkoss.zul.SimpleXYModel</javadoc>, etc.
+directly, such as [org.zkoss.zul.SimplePieModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimplePieModel.html),
+[org.zkoss.zul.SimpleXYModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleXYModel.html), etc.
 
 For example, we could have a composer as follows.
 

@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Include](http://www.zkoss.org/zkdemo/composite/include)
-- Java API: <javadoc>org.zkoss.zul.Include</javadoc>
+- Java API: [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Include</javadoc>
 
 
@@ -129,7 +129,7 @@ The code below demonstrates how to use the *instant* mode:
 
 Notice the `include` component itself is [a ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), so
 there is no issue of ID conflicts. But, it also means you have to use
-<javadoc>org.zkoss.zk.ui.Path</javadoc> or other techniques to retrieve
+[org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) or other techniques to retrieve
 the child components.
 
 ### Pass Values to the Included Page
@@ -258,7 +258,7 @@ example, you have to write
 ```
 
 Then, you could access their component by the use of
-<javadoc>org.zkoss.zk.ui.Path</javadoc> as follows.
+[org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) as follows.
 
 ```xml
 Path.getComponent('//first/textbox/'); 
@@ -323,7 +323,7 @@ zk.afterMount(function () {
 
 Alternatively, you could specify a custom attribute called
 `the org.zkoss.zul.include.html.defer` in the
-<javadoc>org.zkoss.zul.Include</javadoc> component (rather than using
+[org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component (rather than using
 <javadoc method="afterMount(_global_.Function, int)" directory="jsdoc">\_global\_.zk</javadoc>
 in the included component):
 

@@ -3,7 +3,7 @@
 # SimpleConstraint
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.SimpleConstraint</javadoc>
+- Java API: [org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.inp.SimpleConstraint</javadoc>
 

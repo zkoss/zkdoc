@@ -3,7 +3,7 @@
 # Listhead
 
 - Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
-- Java API: <javadoc>org.zkoss.zul.Listhead</javadoc>
+- Java API: [org.zkoss.zul.Listhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listhead.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listhead</javadoc>
 
 
@@ -81,7 +81,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 
 `listItem`s will be categorized by the label of its children
 (`listcell`s). You could extend
-(<javadoc>org.zkoss.zul.ListitemComparator</javadoc>) and assign to the
+([org.zkoss.zul.ListitemComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListitemComparator.html)) and assign to the
 `listheader` ([sorting properties]({{site.baseurl}}/zk_component_ref/data/listbox#The_SortAscending_and_SortDescending_Properties))
 to change this default behavior.
 

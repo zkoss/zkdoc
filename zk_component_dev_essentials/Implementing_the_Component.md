@@ -4,14 +4,14 @@ JavaScript. Firstly let’s discuss the creation of the server-side
 component.
 
 The component’s Java class must extend
-<javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc> or one of its
+[org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html) or one of its
 derivative classes. There are several derived classes all providing
 different levels of functionality. The derived classes are shown below.
 
 ![](images/ZKComDevEss_component_hierarchy.png)
 
 For tutorial purpose, we use
-<javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>, which is the base
+[org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html), which is the base
 class for HTML-based component.
 
 To implement a component class, we need to decide on

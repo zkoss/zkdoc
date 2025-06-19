@@ -1,6 +1,6 @@
 
 
-<javadoc>org.zkoss.zk.ui.util.Composition</javadoc> is one of the
+[org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) is one of the
 built-in templating implementations. The concept is simple:
 
 1.  Define a template (a ZUML document representing a complete UI)
@@ -10,7 +10,7 @@ built-in templating implementations. The concept is simple:
 Notice that the user shall visit the ZUML document with a collection of
 fragments rather than the template document.
 
-The advantage of <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> is
+The advantage of [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) is
 that you don't need additional configuration file.
 
 **Note**: the composition doesn't support mixing up ZUML and ZHTML
@@ -34,7 +34,7 @@ fragments. For example,
 As shown, the anchor (i.e., the component that a fragment will insert as
 children) is defined by specifying an annotation as
 `@insert(`*`name`*`)`. Then, when
-<javadoc>org.zkoss.zk.ui.util.Composition</javadoc> is applied to a ZUML
+[org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) is applied to a ZUML
 document with a collection of fragments, the matched fragment will
 become the child of the annotated component (such as `hbox` in the above
 example).
@@ -43,7 +43,7 @@ example).
 
 To apply a template to a ZUML document that a user visits, you have to
 define a collection of fragments that a template might use, and then
-specify <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as one of
+specify [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) as one of
 the initiators of the document:
 
 ```xml
@@ -62,7 +62,7 @@ As shown, a fragment is defined by specifying an annotation as
 [the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 
 Then, when the user visits this page (`foo/index.zul` in the above
-example), <javadoc>org.zkoss.zk.ui.util.Composition</javadoc> will:
+example), [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) will:
 
 1.  Load the template, and render it as the root components of this
     page(`foo/index.zul`)
@@ -124,12 +124,12 @@ documents, such as
 
 ## Positioning
 
-If you want to use <javadoc>org.zkoss.zk.ui.util.Composition</javadoc>
+If you want to use [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html)
 inside any of the containers (like Div, Window, Tabbox), you have to use
 [the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
 and set its mode *Defer* :  
 **Note**: You have to specify
-<javadoc>org.zkoss.zk.ui.util.Composition</javadoc> as of the initiators
+[org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) as of the initiators
 of the 'fragments')
 
 ```xml

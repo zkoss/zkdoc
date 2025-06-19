@@ -164,7 +164,7 @@ until they are clicked again by the user.
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a navitem in the navbar.</p></td>
 </tr>
 </tbody>

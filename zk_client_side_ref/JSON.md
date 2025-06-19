@@ -38,7 +38,7 @@ public class Fly extends AbstractComponet {
 
 Notice that
 
-- <javadoc>org.zkoss.zk.au.AuRequests</javadoc> provides a collection of
+- [org.zkoss.zk.au.AuRequests](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequests.html) provides a collection of
   utilities to convert it to int, long and boolean.
 - An integer number is converted to an instance of Integer if it is not
   overflow (i.e., less than Integer.MAX_VALUE). Otherwise, Long is
@@ -80,5 +80,5 @@ service to a component by calling
 
 
 [^1]: More precisely, they are converted to
-    <javadoc>org.zkoss.json.JSONObject</javadoc> (a map) and
-    <javadoc>org.zkoss.json.JSONObject</javadoc> (a list)
+    [org.zkoss.json.JSONObject](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/json/JSONObject.html) (a map) and
+    [org.zkoss.json.JSONObject](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/json/JSONObject.html) (a list)

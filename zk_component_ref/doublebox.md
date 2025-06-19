@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: <javadoc>org.zkoss.zul.Doublebox</javadoc>
+- Java API: [org.zkoss.zul.Doublebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublebox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Doublebox</javadoc>
 
 

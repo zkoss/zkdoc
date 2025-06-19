@@ -17,7 +17,7 @@ safer than the second one in the following example:
 # Block with `InaccessibleWidgetBlockService`
 
 ZK provides the
-\`<javadoc>org.zkoss.zkmax.au.InaccessibleWidgetBlockService</javadoc>\`
+\`[org.zkoss.zkmax.au.InaccessibleWidgetBlockService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/au/InaccessibleWidgetBlockService.html)\`
 to block events sent from inaccessible widgets with a default set of
 rules. An inaccessible widget is defined as one that is either disabled,
 invisible, or read-only. It's important to note that these default rules
@@ -89,7 +89,7 @@ they are disabled/read-only, as follows:
 If you just want to block particular events, not all events. Then, you
 can specify a list of events in `zk.xml` like below to control the
 behavior of
-<javadoc>org.zkoss.zkmax.au.InaccessibleWidgetBlockService</javadoc>.
+[org.zkoss.zkmax.au.InaccessibleWidgetBlockService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/au/InaccessibleWidgetBlockService.html).
 For example,
 
 ```xml
@@ -103,7 +103,7 @@ For example,
 
 If you want to block a request for inaccessible widgets for the whole
 application or for a particular desktop, you can implement the
-<javadoc>org.zkoss.zk.au.AuService</javadoc> interface to filter out
+[org.zkoss.zk.au.AuService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuService.html) interface to filter out
 unwanted requests. The implementation of `AuService` is straightforward.
 For example, the following example blocks only `onClick` of `Button`:
 

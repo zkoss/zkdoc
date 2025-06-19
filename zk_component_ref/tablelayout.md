@@ -6,7 +6,7 @@
 
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Tablelayout</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Tablelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablelayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Tablelayout</javadoc>
 

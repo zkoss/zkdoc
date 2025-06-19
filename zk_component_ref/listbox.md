@@ -1,7 +1,7 @@
 # Listbox
 
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
-- Java API: <javadoc>org.zkoss.zul.Listbox</javadoc>
+- Java API: [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listbox</javadoc>
 
 
@@ -666,7 +666,7 @@ Live Data** section further down.
 Like grid[^1], listbox supports *live data*. With live data, developers
 can separate data from the view. In other words, developers need only to
 provide the data by implementing the
-<javadoc>org.zkoss.zul.ListModel</javadoc> interface, rather than
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) interface, rather than
 manipulating the list box directly.
 
 The benefits are twofold:
@@ -678,11 +678,11 @@ The benefits are twofold:
 There are three steps to make use of live data.
 
 1 Prepare the data in the form of a
-<javadoc>org.zkoss.zul.ListModel</javadoc>. ZK has a concrete
-implementation called <javadoc>org.zkoss.zul.SimpleListModel</javadoc>
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html). ZK has a concrete
+implementation called [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 for representing an array of objects.
 
-2 Implement the <javadoc>org.zkoss.zul.ListitemRenderer</javadoc>
+2 Implement the [org.zkoss.zul.ListitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListitemRenderer.html)
 interface for rendering a item of data into the listbox.
 
 - - This is optional. If it is not specified the default renderer is
@@ -723,8 +723,8 @@ listbox will do the rest.
 ## Sorting with Live Data
 
 If you allow users to sort a listbox with live data, you have to
-implement the interface, <javadoc>org.zkoss.zul.ext.Sortable</javadoc>,
-in addition to the <javadoc>org.zkoss.zul.ListModel</javadoc>.
+implement the interface, [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html),
+in addition to the [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 ```java
 class MyListModel implements ListModel, Sortable {
@@ -744,7 +744,7 @@ rather than the listbox.
 After sorting, the list model will notify the listbox by invoking the
 <javadoc method="onChange(org.zkoss.zul.event.ListDataEvent)">org.zkoss.zul.event.ListDataListener</javadoc>
 method of the listbox' registered
-<javadoc>org.zkoss.zul.event.ListDataListener</javadoc> instances. These
+[org.zkoss.zul.event.ListDataListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataListener.html) instances. These
 are registered by
 <javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)">org.zkoss.zul.ListModel</javadoc>.
 In most cases, all the data is changed, so the list model usually sends
@@ -755,15 +755,15 @@ new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1)
 ```
 
 **Note**: the implementation of the
-<javadoc>org.zkoss.zul.ListModel</javadoc> and
-<javadoc>org.zkoss.zul.ext.Sortable</javadoc> is independent of the
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) and
+[org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) is independent of the
 visual presentation. In other words, they can be used with grids,
 listboxes and any other components supporting
-<javadoc>org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 If you require maximum flexibility, you should not depend on the actual
 component used, and instead use
-<javadoc>org.zkoss.zul.event.ListDataEvent</javadoc> to communicate
+[org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html) to communicate
 model changes.
 
 # Scroll a Listitem into Current View
@@ -1192,7 +1192,7 @@ GroupsModel model = new GroupsModelArray(foods, new ArrayComparator(0, true));
 Both Grid, and Listbox support Grouping concept, it enables developers
 to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
-<javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
 
 ![](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
 
@@ -1331,12 +1331,12 @@ Specifies whether to sort the model when the following cases:
   is set.
 - <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
   is called.
-- Model receives <javadoc>org.zkoss.zul.event.ListDataEvent</javadoc>and
+- Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
   <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
   is set.
 
 If you want to ignore sort when receiving
-<javadoc>org.zkoss.zul.event.ListDataEvent</javadoc>, you can specifies
+[org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html), you can specifies
 the value as **ignore.change**.
 
 ## org.zkoss.zul.listbox.rod
@@ -1404,7 +1404,7 @@ component.
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item in the listbox.</p></td>
 </tr>
 <tr class="even">
@@ -1412,7 +1412,7 @@ the user has selected a new item in the listbox.</p></td>
 <p><code>onFocus</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onFocus
 got executed.</p></td>
@@ -1422,7 +1422,7 @@ got executed.</p></td>
 <p><code>onBlur</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
 got executed.</p></td>
@@ -1432,14 +1432,14 @@ got executed.</p></td>
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="odd">
 <td><center>
 <p><code>onPageSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.PageSizeEvent</javadoc> Notifies the paging
+[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 (<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Listbox</javadoc>)
 is enabled and user changed the size of the content.</p></td>
@@ -1449,7 +1449,7 @@ is enabled and user changed the size of the content.</p></td>
 <p><code>onCheckSelectAll</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc> (Since 6.5.6)
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6)
 Notifies the checkbox on a listheader is checked to select all checkable
 items.</p></td>
 </tr>

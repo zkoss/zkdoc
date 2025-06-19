@@ -3,7 +3,7 @@
 # Grid
 
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
-- Java API: <javadoc>org.zkoss.zul.Grid</javadoc>
+- Java API: [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Grid</javadoc>
 
 # Employment/Purpose
@@ -359,7 +359,7 @@ property to enable the descending order.
 As illustrated below, you first implement a comparator that compares any
 two rows of the grid, and then assign its instances to the
 `sortAscending` and/or `sortDescending` attributes. Notice: the
-`compare` method is passed two <javadoc>org.zkoss.zul.Row</javadoc>
+`compare` method is passed two [org.zkoss.zul.Row](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Row.html)
 instances.
 
 ```xml
@@ -424,7 +424,7 @@ if (!"natural".column.getSortDirection())
 ```
 
 The default sorting algorithm is quick-sort (by use of the `sort` method
-from the <javadoc>org.zkoss.zk.ui.Components</javadoc> class). You can
+from the [org.zkoss.zk.ui.Components](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html) class). You can
 override it with your own implementation.
 
 Note: the `sort` method checks the sort direction (by calling
@@ -459,7 +459,7 @@ rather than manipulating the grid directly. The benefits are twofold.
 There are three steps to make use of live data.
 
 1 Prepare the data in the form of a `ListModel`. ZK has a concrete
-implementation called <javadoc>org.zkoss.zul.SimpleListModel</javadoc>
+implementation called [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 for representing an array of objects. 2 Implement the
 <javadoc type="interface">org.zkoss.zul.RowRenderer</javadoc> interface
 for rendering a row of data into the grid.
@@ -498,8 +498,8 @@ the rest.
 ## Sorting with Live Data
 
 If you allow users to sort a grid with live data, you have to implement
-the interface, <javadoc>org.zkoss.zul.ListModelExt</javadoc>, in
-addition to the <javadoc>org.zkoss.zul.ListModel</javadoc>.
+the interface, [org.zkoss.zul.ListModelExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelExt.html), in
+addition to the [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 ```java
 class MyListModel implements ListModel, ListModelExt {
@@ -848,7 +848,7 @@ sizable column provides the auto-fitting functionality.
 ### The onColSize Event
 
 Once a user resizes the width, the `onColSize` event is sent with an
-instance of <javadoc>org.zkoss.zul.event.ColSizeEvent</javadoc>. Notice
+instance of [org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html). Notice
 that the column's width is adjusted before the`onColSize` event is sent.
 In other words, the event serves as a notification that you can ignore.
 Of course, you can do whatever you want in the event listener.
@@ -1044,7 +1044,7 @@ rows. The code below demonstrates how to do this:
 Both Grid, and Listbox support Grouping concept, it enables developers
 to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
-<javadoc>org.zkoss.zul.GroupsModel</javadoc> interface..
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
 
@@ -1164,12 +1164,12 @@ when the following cases:
   is set.
 - <javadoc method="setSortDirection(String)">org.zkoss.zul.Column</javadoc>
   is called.
-- Model receives <javadoc>org.zkoss.zul.event.ListDataEvent</javadoc>and
+- Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
   <javadoc method="setSortDirection(String)">org.zkoss.zul.Column</javadoc>
   is set.
 
 If you want to ignore sort when receiving
-<javadoc>org.zkoss.zul.event.ListDataEvent</javadoc>, you can specifies
+[org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html), you can specifies
 the value as **ignore.change**.
 
 ## org.zkoss.zul.grid.preloadSize
@@ -1228,14 +1228,14 @@ components.
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onPageSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.PageSizeEvent</javadoc> Notifies the paging
+[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 (<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Grid</javadoc>)
 is enabled and user changed the size of the content.</p></td>

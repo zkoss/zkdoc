@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Html](http://www.zkoss.org/zkdemo/composite/html_element)
-- Java API: <javadoc>org.zkoss.zul.Html</javadoc>
+- Java API: [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Html</javadoc>
 
 

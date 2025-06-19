@@ -2,7 +2,7 @@ Here we describe how to implement a custom renderer for a tabbox
 (<javadoc type="interface">org.zkoss.zul.TabboxRenderer</javadoc>). For
 the concepts about component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
-When a tabbox (<javadoc>org.zkoss.zul.Tabbox</javadoc>) is assigned with
+When a tabbox ([org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html)) is assigned with
 a model, a default renderer is assigned too. The default renderer will
 assume that each tab has only one tabpanel, and it converts the data
 into a string directly[^1]. If you want to display a rich tabpanel or

@@ -3,7 +3,7 @@
 # Timer
 
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
-- Java API: <javadoc>org.zkoss.zul.Timer</javadoc>
+- Java API: [org.zkoss.zul.Timer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timer.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Timer</javadoc>
 
 
@@ -40,7 +40,7 @@ timer won't fire any event until it is attached to a page.
 <p><code>onTimer</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes the timer you specified has triggered an event. To know which
 timer, invoke the <code>getTarget</code> method in the Event
 class.</p></td>

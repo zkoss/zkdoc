@@ -2,7 +2,7 @@
 
 # Video
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Video</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Video.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Video</javadoc>
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
@@ -226,7 +226,7 @@ played to the end, the StateChangeEvent will be triggered.
 <p><code>onStateChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.StateChangeEvent</javadoc> Notifies
+[org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
 when invoking play(), stop() or pause().</p></td>
 </tr>
 </tbody>

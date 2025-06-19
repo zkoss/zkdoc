@@ -32,7 +32,7 @@ public void receive(Event event) {
 In the example above, when you publish an event in the EventQueue, the
 subscribed method will be called. This is a useful mechanism to
 communicate among composers. See also
-<javadoc>org.zkoss.zk.ui.event.EventQueue</javadoc>.
+[org.zkoss.zk.ui.event.EventQueue](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueue.html).
 
 # EventQueue Scope
 
@@ -51,7 +51,7 @@ public void publish() {
 
 Available scopes are: Desktop, Group, Session, Application. Note that
 Group scope requires ZK EE. See also
-<javadoc>org.zkoss.zk.ui.event.EventQueues</javadoc>.
+[org.zkoss.zk.ui.event.EventQueues](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html).
 
 # Event Name
 

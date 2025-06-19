@@ -40,13 +40,13 @@ There are several ways:
 ## Extend `SimpleDateFormatter`
 
 Extending the internal default implementation
-<javadoc>org.zkoss.calendar.impl.SimpleDateFormatter</javadoc> allows
+[org.zkoss.calendar.impl.SimpleDateFormatter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleDateFormatter.html) allows
 you to override part of captions.
 
 ## Implement `DateFormatter` interface
 
 If you like to start from scratch, you can implement
-<javadoc>org.zkoss.calendar.api.ZonedDateTimeFormatter</javadoc> or
+[org.zkoss.calendar.api.ZonedDateTimeFormatter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/ZonedDateTimeFormatter.html) or
 <javadoc type="interface">org.zkoss.calendar.api.DateFormatter</javadoc>
 interface which requires 5 methods to be implemented. These are as
 follows:

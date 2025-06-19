@@ -3,7 +3,7 @@
 # Abstract Component
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc>
+- Java API: [org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

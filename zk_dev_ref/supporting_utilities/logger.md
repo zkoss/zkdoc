@@ -226,7 +226,7 @@ current directory is.
 If you want to disable all loggers completely or change the level for
 all loggers, you don't need to prepare a logging configuration file.
 Rather, you can configure
-<javadoc>org.zkoss.zk.ui.http.DHtmlLayoutServlet</javadoc> in
+[org.zkoss.zk.ui.http.DHtmlLayoutServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/DHtmlLayoutServlet.html) in
 `WEB-INF/web.xml` as follows.
 
 ```xml
@@ -248,11 +248,11 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 
 Use SLF4J API for logging instead.
 
-Class: <javadoc>org.zkoss.util.logging.Log</javadoc>
+Class: [org.zkoss.util.logging.Log](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/logging/Log.html)
 
 The logger used by ZK is based on the standard logger,
 `java.util.logging.Logger`. However, we wrap it as
-<javadoc>org.zkoss.util.logging.Log</javadoc> to make it more efficient.
+[org.zkoss.util.logging.Log](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/logging/Log.html) to make it more efficient.
 
 > ------------------------------------------------------------------------
 >

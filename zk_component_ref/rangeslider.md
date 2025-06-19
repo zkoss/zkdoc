@@ -121,7 +121,7 @@ always be visible.
 <p>onRangeValueChange</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkex.zul.event.RangeValueChangeEvent</javadoc>
+[org.zkoss.zkex.zul.event.RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html)
 Denotes the range value of a component has been changed by the
 user.</p></td>
 </tr>

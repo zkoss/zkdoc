@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Jasperreport](http://www.zkoss.org/zkdemo/reporting/jasperreport)
-- Java API: <javadoc>org.zkoss.zkex.zul.Jasperreport</javadoc>
+- Java API: [org.zkoss.zkex.zul.Jasperreport](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Jasperreport.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
 

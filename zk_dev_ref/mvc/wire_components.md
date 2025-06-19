@@ -1,7 +1,7 @@
 # Wire Components
 
 In a controller that extends
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>, when you
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), when you
 specify a `@Wire` annotation on a field or setter method, the
 SelectorComposer will automatically find the target component and assign
 it to the field or pass it into the setter method. It only finds the
@@ -307,7 +307,7 @@ Collection as the parameter.
 # Wiring Sequence
 
 While extending from
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>, the fields
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), the fields
 and methods with the proper annotations will be wired automatically.
 Here is the sequence of wiring:
 

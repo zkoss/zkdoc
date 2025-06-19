@@ -3,7 +3,7 @@
 # AbstractListModel
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.AbstractListModel</javadoc>
+- Java API: [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

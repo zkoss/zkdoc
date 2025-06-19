@@ -1,4 +1,4 @@
-When a tree (<javadoc>org.zkoss.zul.Tree</javadoc>) is assigned with a
+When a tree ([org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)) is assigned with a
 model, a default renderer is assigned too. The default renderer will
 assume that each tree item has only one column, and it converts the data
 into a string directly. If you want to display multiple columns or

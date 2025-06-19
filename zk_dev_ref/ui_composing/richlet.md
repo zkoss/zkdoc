@@ -33,7 +33,7 @@ before mapping a URL to the richlet.
 A richlet must implement the
 <javadoc type="interface">org.zkoss.zk.ui.Richlet</javadoc> interface.
 However, you generally do not have to implement it from scratch. Rather,
-you could extend <javadoc>org.zkoss.zk.ui.GenericRichlet</javadoc>, and
+you could extend [org.zkoss.zk.ui.GenericRichlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/GenericRichlet.html), and
 the only thing you have to do is to override
 <javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>.
 The method is called when an associated URL is requested. For example,
@@ -115,8 +115,8 @@ resources. In other words, a richlet (the implementation of the
 ## Don't Share Components
 
 When a request (not Ajax request but regular HTTP request) is made by a
-user, a <javadoc>org.zkoss.zk.ui.Desktop</javadoc> and a
-<javadoc>org.zkoss.zk.ui.Page</javadoc> are created first, and then
+user, a [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) and a
+[org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) are created first, and then
 <javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>
 is invoked to serve the request[^1]. In other words, each request is
 served with an individual desktop and page. Therefore, we *cannot* share
@@ -253,7 +253,7 @@ returned by the `getRequestPath` method of the current page.
 
 # Load ZUML in Richlet
 
-<javadoc>org.zkoss.zk.ui.Execution</javadoc> provides a collection of
+[org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) provides a collection of
 methods, such as
 <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
 allowing developers to load ZUML documents dynamically. You could load a
@@ -266,7 +266,7 @@ for details.
 To use Spring-managed beans in richlets you need the context loader
 listener that creates spring application context as described in [ZK Spring Essentials/Getting Started with ZK Spring/Setting Up ZK Spring]({{site.baseurl}}/zk_spring_essentials/getting_started_with_zk_spring/setting_up_zk_spring).
 Then you could load Spring beans by using a utility class
-<javadoc>org.zkoss.zkplus.spring.SpringUtil</javadoc>:
+[org.zkoss.zkplus.spring.SpringUtil](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/SpringUtil.html):
 
 ```java
     Object bean = SpringUtil.getBean(beanName);

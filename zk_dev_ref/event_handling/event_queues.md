@@ -30,7 +30,7 @@ queue is only visible in the whole application.
 ## Locate an Event Queue
 
 You could locate an event queue by invoking one of the `lookup` methods
-of <javadoc>org.zkoss.zk.ui.event.EventQueues</javadoc>. For example,
+of [org.zkoss.zk.ui.event.EventQueues](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html). For example,
 
 ```java
 EventQueues.lookup("myQueue"); //assumes the desktop scope
@@ -214,7 +214,7 @@ browser tabs of the same session</li>
 
 ## Publish an Event
 
-To publish, just invoke one of the `publish()` of <javadoc>org.zkoss.zk.ui.event.EventQueue</javadoc> (returned by `lookup()`). For example,
+To publish, just invoke one of the `publish()` of [org.zkoss.zk.ui.event.EventQueue](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueue.html) (returned by `lookup()`). For example,
 
 ```java
 EventQueues.lookup("my super queue", EventQueues.APPLICATION, true)
@@ -222,7 +222,7 @@ EventQueues.lookup("my super queue", EventQueues.APPLICATION, true)
 ```
 
 The message used to communicate among publishers and subscribers is
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> object, so you can use
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) object, so you can use
 any of its subclasses you prefer.
 
 ## Subscribe with a Synchronous Event Listener
@@ -281,7 +281,7 @@ The same rule applies to a session-scoped event queue.
 
 The location and creation of an event queue are actually done by a
 so-called event queue provider. An event-queue provider must implement
-the <javadoc>org.zkoss.zk.ui.event.impl.EventQueueProvider</javadoc>
+the [org.zkoss.zk.ui.event.impl.EventQueueProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/impl/EventQueueProvider.html)
 interface.
 
 To customize it, just provide an implementation, and then specify the

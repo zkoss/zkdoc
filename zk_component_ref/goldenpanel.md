@@ -2,7 +2,7 @@
 
 # GoldenPanel
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.GoldenPanel</javadoc>
+- Java API: [org.zkoss.zkmax.zul.GoldenPanel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenPanel.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.GoldenPanel</javadoc>
 - {% include edition-availability.html edition="pe" %}
@@ -96,7 +96,7 @@ user action. And also the close icon will not show.
 <p><code>onActive</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 activated this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
@@ -104,7 +104,7 @@ activated this GoldenPanel.</p></td>
 <p><code>onPanelDrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has dropped
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has dropped
 this GoldenPanel.</p></td>
 </tr>
 <tr class="odd">
@@ -112,7 +112,7 @@ this GoldenPanel.</p></td>
 <p><code>onFlexSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has resized
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
 this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
@@ -120,7 +120,7 @@ this GoldenPanel.</p></td>
 <p><code>onClose</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has closed
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has closed
 this GoldenPanel.</p></td>
 </tr>
 <tr class="odd">
@@ -128,7 +128,7 @@ this GoldenPanel.</p></td>
 <p><code>onMaximize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 maximized this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
@@ -136,7 +136,7 @@ maximized this GoldenPanel.</p></td>
 <p><code>onMinimize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 minimized this GoldenPanel.</p></td>
 </tr>
 </tbody>

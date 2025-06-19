@@ -152,22 +152,22 @@ In addition to ZUML, you can also load browser- and Locale-dependent
 resources in Java. Here is a list of methods that you can use.
 
 - The `encodeURL`, `forward`, and `include` methods in
-  <javadoc>org.zkoss.zk.ui.Execution</javadoc> for encoding URL,
+  [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) for encoding URL,
   forwarding to another page and including a page. In most cases, these
   methods are all you need.
 - The `locate`, `forward`, and `include` method in
-  <javadoc>org.zkoss.web.servlet.Servlets</javadoc> for locating Web
+  [org.zkoss.web.servlet.Servlets](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/Servlets.html) for locating Web
   resouces. You rarely need them when developing ZK applications, but
   useful for writing a servlet, portlet or filter.
 - The `encodeURL` method in
-  <javadoc>org.zkoss.web.servlet.http.Encodes</javadoc> for encoding
+  [org.zkoss.web.servlet.http.Encodes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/http/Encodes.html) for encoding
   URL. You rarely need them when developing ZK applications, but useful
   for writing a Servlet, Portlet or Filter.
 
 <!-- -->
 
 - The `locate` method in
-  <javadoc>org.zkoss.util.resource.Locators</javadoc> for locating class
+  [org.zkoss.util.resource.Locators](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Locators.html) for locating class
   resources.
 
 [^1]: In the future editions, we will use different codes for browsers

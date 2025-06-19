@@ -3,7 +3,7 @@
 # Space
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Space</javadoc>
+- Java API: [org.zkoss.zul.Space](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Space.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Space</javadoc>
 
 

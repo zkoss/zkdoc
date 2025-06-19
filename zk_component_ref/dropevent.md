@@ -3,7 +3,7 @@
 # DropEvent
 
 - Demonstration: [DropEvent](http://www.zkoss.org/zkdemo/userguide/#a2)
-- Java API: <javadoc>org.zkoss.zk.ui.event.DropEvent</javadoc>
+- Java API: [org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

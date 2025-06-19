@@ -39,7 +39,7 @@ The *controller* is a Java program that is used to glue UI (view) and
 Data (model) together.
 
 For a simple UI, there is no need to prepare a controller. For example,
-the data of a <javadoc>org.zkoss.zul.Listbox</javadoc> could be
+the data of a [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) could be
 abstracted by implementing
 <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>.
 
@@ -50,7 +50,7 @@ by a generic Data Binding, and you don't need to write the glue logic at
 all.
 
 To implement a custom controller, you could extend from
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>, or implement
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), or implement
 <javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc> from
 scratch. Then, specify it in the element it wants to handle in a ZUML
 document.
@@ -67,6 +67,6 @@ support the abstraction model to uncouple UI and data. For example,
 [grid]({{site.baseurl}}/zk_component_ref/data/grid),
 [listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and
 [combobox]({{site.baseurl}}/zk_component_ref/input/combobox) support
-<javadoc>org.zkoss.zul.ListModel</javadoc>, while
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html), while
 [tree]({{site.baseurl}}/zk_component_ref/data/tree) supports
-<javadoc>org.zkoss.zul.TreeModel</javadoc>.
+[org.zkoss.zul.TreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html).

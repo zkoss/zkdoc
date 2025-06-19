@@ -3,7 +3,7 @@
 # Tab
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: <javadoc>org.zkoss.zul.Tab</javadoc>
+- Java API: [org.zkoss.zul.Tab](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tab</javadoc>
 
 
@@ -106,7 +106,7 @@ its parent like:
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Denotes user has selected a tab. onSelect is sent to both tab and
 tabbox.</p></td>
 </tr>
@@ -115,7 +115,7 @@ tabbox.</p></td>
 <p><code>onClose</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.ui.zk.ui.event.Event</javadoc></p>
+[org.zkoss.ui.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html)</p>
 <p>Denotes the close button is pressed by a user, and the component
 shall detach itself.</p></td>
 </tr>

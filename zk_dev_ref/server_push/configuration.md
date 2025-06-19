@@ -1,10 +1,10 @@
 
 
 Since ZK 6, in addition to
-<javadoc>org.zkoss.zk.ui.impl.PollingServerPush</javadoc> and
-<javadoc>org.zkoss.zkex.ui.comet.CometServerPush</javadoc>, ZK provides
+[org.zkoss.zk.ui.impl.PollingServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html) and
+[org.zkoss.zkex.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/comet/CometServerPush.html), ZK provides
 a third Server Push implementation - Asynchronous Processing
-<javadoc>org.zkoss.zkmax.ui.comet.CometServerPush</javadoc>. As their
+[org.zkoss.zkmax.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/comet/CometServerPush.html). As their
 names suggest, they implement the Client-Polling, Comet (aka.,
 long-polling) and Servlet 3 Comet ([Servlet 3 Asynchronous Processing-based Comet](http://books.zkoss.org/wiki/Small_Talks/2012/February/New_Features_of_ZK_6#ZK_Comet_supports_Servlet_3_Asynchronous_Processing))
 server pushes. Client-polling is available in all editions, Comet Server
@@ -15,17 +15,17 @@ The default implementation depends on which ZK edition you use:
 
 | ZK Edition | Technology        | ZK Implementation                                           |
 |------------|-------------------|-------------------------------------------------------------|
-| CE         | Client Polling    | <javadoc>org.zkoss.zk.ui.impl.PollingServerPush</javadoc>   |
-| PE         | Comet Server Push | <javadoc>org.zkoss.zkex.ui.comet.CometServerPush</javadoc>  |
-| EE         | Servlet 3 Comet   | <javadoc>org.zkoss.zkmax.ui.comet.CometServerPush</javadoc> |
+| CE         | Client Polling    | [org.zkoss.zk.ui.impl.PollingServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html)   |
+| PE         | Comet Server Push | [org.zkoss.zkex.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/comet/CometServerPush.html)  |
+| EE         | Servlet 3 Comet   | [org.zkoss.zkmax.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/comet/CometServerPush.html) |
 
 You can also configure ZK to use the one you prefer, or even use a
 custom server push.
 
 Note that Comet Server Push is available in ZK 5 EE only. By default, ZK
 5 CE and ZK 5 PE use
-<javadoc>org.zkoss.zk.ui.impl.PollingServerPush</javadoc>, and ZK 5 EE
-uses <javadoc>org.zkoss.zkmax.ui.comet.CometServerPush</javadoc>.
+[org.zkoss.zk.ui.impl.PollingServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html), and ZK 5 EE
+uses [org.zkoss.zkmax.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/comet/CometServerPush.html).
 
 # Choose an Implementation
 
@@ -69,7 +69,7 @@ The client-polling server push is implemented with an implicit timer at
 the client. The interval of the timer depends on the loading of the
 server. For example, the interval becomes longer if the time to get a
 response has become longer.
-<javadoc>org.zkoss.zk.ui.impl.PollingServerPush</javadoc> uses a timer
+[org.zkoss.zk.ui.impl.PollingServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html) uses a timer
 to peek if the server has any data to *push* back. The period between
 two peeks is determined by a few factors.
 
@@ -140,7 +140,7 @@ and waiting in the server until there is data to send back. Meanwhile,
 the client-polling server push is like sending a taxi periodically to
 the server, and leaving immediately if no data is available.
 
-<javadoc>org.zkoss.zkex.ui.comet.CometServerPush</javadoc> comes with
+[org.zkoss.zkex.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/comet/CometServerPush.html) comes with
 its own configuration parameters such as retry delay, retry count, and
 ajax timeout.
 
@@ -224,7 +224,7 @@ update.
 # WebSocketServerPush
 
 Since ZK 8.5.0, the WebSocket based Server Push
-<javadoc>org.zkoss.zkmax.au.websocket.WebSocketServerPush</javadoc> is
+[org.zkoss.zkmax.au.websocket.WebSocketServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/au/websocket/WebSocketServerPush.html) is
 provided. When WebSocket connection is enabled, this will be used as
 default, other configuration specifying which Server Push to use will be
 ignored.

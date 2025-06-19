@@ -1,15 +1,15 @@
 The default implementation of models, such as
-<javadoc>org.zkoss.zul.ListModelList</javadoc> and
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> assumes all data are
+[org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) and
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) assumes all data are
 available in the memory. It is not practical if a model has a lot of
 data. For huge amount of data, it is suggested to implement your own
 model by loading and caching only one portion of data at a time.
 
 To implement your own model for a component it is recommended that you
 extend the correct abstract model type. For a ListModel extend from
-<javadoc>org.zkoss.zul.AbstractListModel</javadoc>, for a GroupsModel
-extend <javadoc>org.zkoss.zul.AbstractGroupsModel</javadoc> and for a
-TreeModel extend <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> as
+[org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), for a GroupsModel
+extend [org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractGroupsModel.html) and for a
+TreeModel extend [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) as
 described in [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model). To implement a
 model that supports sorting, you have to implement
 <javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> too. Each
@@ -74,7 +74,7 @@ The field to sort against has to be retrieved from the given comparator.
 If you specify `"auto(fieldName)"` to
 <javadoc method="setSort(java.lang.String)">org.zkoss.zul.Listheader</javadoc>,
 then the comparator is an instance of
-<javadoc>org.zkoss.zul.FieldComparator</javadoc>, and you could retrieve
+[org.zkoss.zul.FieldComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html), and you could retrieve
 the field's name from
 <javadoc method="getRawOrderBy()">org.zkoss.zul.FieldComparator</javadoc>.
 

@@ -3,7 +3,7 @@ Here we describe how to implement a custom renderer for a listbox
 For the concepts about component, model and renderer, please refer to
 [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
-When a listbox (<javadoc>org.zkoss.zul.Listbox</javadoc>) is assigned
+When a listbox ([org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)) is assigned
 with a model, a default renderer is assigned too. The default renderer
 will assume that each list item has only one column, and it converts the
 data into a string directly[^1]. If you want to display multiple columns

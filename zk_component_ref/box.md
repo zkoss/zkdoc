@@ -1,7 +1,7 @@
 # Box
 
 - Demonstration: [Box](http://www.zkoss.org/zkdemo/layout/box)
-- Java API: <javadoc>org.zkoss.zul.Box</javadoc>
+- Java API: [org.zkoss.zul.Box](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Box.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
 
 

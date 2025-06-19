@@ -3,7 +3,7 @@
 # Cell
 
 - Demonstration: [Grid (Spreadsheet Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
-- Java API: <javadoc>org.zkoss.zul.Cell</javadoc>
+- Java API: [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Cell</javadoc>
 
 

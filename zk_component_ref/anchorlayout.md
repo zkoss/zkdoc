@@ -3,7 +3,7 @@
 # Anchorlayout
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Anchorlayout</javadoc>
+- Java API: [org.zkoss.zul.Anchorlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorlayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Anchorlayout</javadoc>
 

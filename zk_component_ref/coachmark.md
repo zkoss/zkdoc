@@ -4,7 +4,7 @@
 
 {% include version-badge.html version=9.0.0 %}
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Coachmark</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Coachmark](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Coachmark.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.nav.Coachmark</javadoc>
 
@@ -136,7 +136,7 @@ specified coachmark instead of the predefined "next" coachmark.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component.</p>
 <p>Note: unlike <code>onClose</code>, this event is only a notification.
 The client sends this event after the component is opened or
@@ -147,7 +147,7 @@ closed.</p></td>
 <p><code>onTargetClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc></p>
+[org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)</p>
 <p>Represents an event caused by a user's click on a highlighted target
 component.</p></td>
 </tr>

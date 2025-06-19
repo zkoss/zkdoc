@@ -90,7 +90,7 @@ it means the extender(child) will override the definition of the
 extended(parent).
 
 For example, assume you want to use `MyWindow` instead of the default
-window, <javadoc>org.zkoss.zul.Window</javadoc> for all windows defined
+window, [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html) for all windows defined
 in this ZUML page. Then, you can declare it as follows.
 
 ```xml

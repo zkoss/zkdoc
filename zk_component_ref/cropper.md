@@ -4,7 +4,7 @@
 
 {% include version-badge.html version=8.6.0 %}
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Cropper</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Cropper</javadoc>
 - {% include edition-availability.html edition="pe" %}
 
@@ -103,7 +103,7 @@ set to `image/png`
 <p><code>onChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has resized
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
 the selected range.</p></td>
 </tr>
 <tr class="even">
@@ -111,7 +111,7 @@ the selected range.</p></td>
 <p><code>onChanging</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user is resizing
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user is resizing
 the selected range.</p></td>
 </tr>
 <tr class="odd">
@@ -119,7 +119,7 @@ the selected range.</p></td>
 <p><code>onCrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
 cropped the image.</p></td>
 </tr>
 </tbody>

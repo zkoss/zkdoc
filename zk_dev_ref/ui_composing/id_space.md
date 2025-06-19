@@ -14,7 +14,7 @@ guaranteed only in the scope of an ID space. Thus, developers could
 maintain the subset of components separately without the need to worry
 if there are any conflicts with other subsets.
 
-Window (<javadoc>org.zkoss.zul.Window</javadoc>) is a typical component
+Window ([org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)) is a typical component
 that is an ID space. All descendant components of a window (including
 the window itself) form an independent ID space. Thus, you could use a
 window as the topmost component to group components. This way developers
@@ -29,10 +29,10 @@ the component is formed. Components in the same ID space are called
 When a page implements
 <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>, it becomes
 a space owner. In additions, the macro component and the include
-component (<javadoc>org.zkoss.zul.Include</javadoc>) can also be space
+component ([org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)) can also be space
 owners.
 
-Another example is `idspace` (<javadoc>org.zkoss.zul.Idspace</javadoc>).
+Another example is `idspace` ([org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)).
 It derives from `div`, and is the simplest component implementing
 <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>. If you
 don't need any feature of window, you could use `idspace` instead.
@@ -171,7 +171,7 @@ returns a list of all matched components.
 ## Path
 
 ZK provides a utility class called
-<javadoc>org.zkoss.zk.ui.Path</javadoc> to simplify the location of a
+[org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) to simplify the location of a
 component among ID spaces. The way of using it is similar to
 `java.io.File`. For example,
 

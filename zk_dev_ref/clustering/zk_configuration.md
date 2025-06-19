@@ -10,7 +10,7 @@ UI factory. It could be done by specifying the following statement in
     </system-config>
 ```
 
-<javadoc>org.zkoss.zk.ui.http.SerializableUiFactory</javadoc> is the UI
+[org.zkoss.zk.ui.http.SerializableUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SerializableUiFactory.html) is the UI
 factory that will instantiate serializable sessions such that the
 sessions, components, pages, and desktops will be serialized when a
 session is about to deactivate.
@@ -73,13 +73,13 @@ section.
 ## Global Desktop Cache
 
 Do not use
-<javadoc>org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider</javadoc>
+[org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/GlobalDesktopCacheProvider.html)
 (global desktop cache). The global desktop cache is stored in the
 servlet context, while only the data stored in sessions is migrated when
 failover takes place.
 
 The default is
-<javadoc>org.zkoss.zk.ui.impl.SessionDesktopCacheProvider</javadoc>
+[org.zkoss.zk.ui.impl.SessionDesktopCacheProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/SessionDesktopCacheProvider.html)
 instead of desktop-scoped desktop cache. Just make sure you don't
 configure it wrong.
 

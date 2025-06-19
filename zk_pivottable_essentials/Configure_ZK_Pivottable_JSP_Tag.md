@@ -19,7 +19,7 @@ few library jars, and make some configuration changes to your project.
       server - OR -
     - copy the binaries into one of the folders pointed to by your web
       application's classpath
-2.  Add <javadoc>org.zkoss.zk.au.http.DHtmlUpdateServlet</javadoc> and
+2.  Add [org.zkoss.zk.au.http.DHtmlUpdateServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/http/DHtmlUpdateServlet.html) and
     its mapping into **web.xml** as shown below
 
 ```xml

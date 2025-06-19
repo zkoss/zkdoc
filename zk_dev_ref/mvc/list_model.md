@@ -1,8 +1,8 @@
 
 
-<javadoc>org.zkoss.zul.Listbox</javadoc>,
-<javadoc>org.zkoss.zul.Grid</javadoc>, and
-<javadoc>org.zkoss.zul.Tabbox</javadoc> allow developers to separate the
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html),
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html), and
+[org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html) allow developers to separate the
 view and the model by implementing
 <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. Once the
 model is assigned (with
@@ -33,7 +33,7 @@ invoking
 <javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)" type="interface">org.zkoss.zul.ListModel</javadoc>.
 Thus, if the list model is not mutable, the implementation has to notify
 all the registered data listeners. It is generally suggested to extend
-from <javadoc>org.zkoss.zul.AbstractListModel</javadoc>, or use any of
+from [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), or use any of
 the default implementations, which provide a set of utilities for
 handling data listeners transparently. We will talk about it later in
 [\#Notify for Data Updates](#Notify_for_Data_Updates).
@@ -48,10 +48,10 @@ In most cases, you can use ZK default implementation of
 <javadoc type="interface">org.zkoss.zul.ListModel</javadoc> as the model
 without implementing by yourselves:
 
-- <javadoc>org.zkoss.zul.ListModelList</javadoc>
-- <javadoc>org.zkoss.zul.ListModelArray</javadoc>
-- <javadoc>org.zkoss.zul.ListModelSet</javadoc>
-- <javadoc>org.zkoss.zul.ListModelMap</javadoc>
+- [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html)
+- [org.zkoss.zul.ListModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelArray.html)
+- [org.zkoss.zul.ListModelSet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelSet.html)
+- [org.zkoss.zul.ListModelMap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelMap.html)
 
 For example,
 
@@ -131,12 +131,12 @@ that are registered by
 It can be done by invoking
 <javadoc method="fireEvent(int, int, int)">org.zkoss.zul.AbstractListModel</javadoc>
 if your implementation is extended from
-<javadoc>org.zkoss.zul.AbstractListModel</javadoc> or derived.
+[org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html) or derived.
 
 > ------------------------------------------------------------------------
 >
 > Notice that if you use one of the default implementations, such as
-> <javadoc>org.zkoss.zul.ListModelList</javadoc>, you don't need to
+> [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html), you don't need to
 > worry about it. The notification is handled transparently.
 
 For example, (pseudo code)
@@ -214,13 +214,13 @@ model.setSelectionControl(new AbstractListModel.DefaultSelectionControl(model) {
 ## Custom ListModel Supports Selection
 
 `Interface: `<javadoc type="interface">`org.zkoss.zul.ext.Selectable`</javadoc>  
-`Implementation: Implemented by `<javadoc>`org.zkoss.zul.AbstractListModel`</javadoc>
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractListModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractListModel`.html)
 
 If your data model also provides the collection of selected elements,
 you shall also implement
 <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc>. When
 using with a component supporting the selection (such as
-<javadoc>org.zkoss.zul.Listbox</javadoc>), the component will invoke
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)), the component will invoke
 <javadoc method="isSelected(E)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
 to display the selected elements correctly. In addition, if the end user
 selects or deselects an item,
@@ -240,7 +240,7 @@ is called), it has to fire the event, such as
 correct the selection[^2].
 
 All default implementations, including
-<javadoc>org.zkoss.zul.AbstractListModel</javadoc>, implement
+[org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), implement
 <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc>. Thus,
 your implementation generally doesn't need to handle the selection if it
 extends one of these classes.
@@ -279,7 +279,7 @@ to sort in the order specified in the `ascending` parameter.
 
 | Version | Date          | Content                                                                                                                                                                                                                                                             |
 |---------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 6.0.0   | February 2012 | All selection states are maintained in the list model. And, the application shall <i>not</i> access the component for the selection. Rather, the application shall invoke <javadoc>org.zkoss.zul.ext.Selectable</javadoc> for retrieving or changing the selection. |
+| 6.0.0   | February 2012 | All selection states are maintained in the list model. And, the application shall <i>not</i> access the component for the selection. Rather, the application shall invoke [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) for retrieving or changing the selection. |
 | 6.0.0   | February 2012 | <javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> was introduced and replaced `ListModelExt`.                                                                                                                                                          |
 
 [^1]: The listbox is smart enough to read the elements that are visible

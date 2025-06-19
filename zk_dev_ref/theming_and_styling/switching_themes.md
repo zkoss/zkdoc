@@ -67,7 +67,7 @@ Themes.setTheme(Executions.getCurrent(), "custom");
 Executions.sendRedirect("");
 ```
 
-Internally, <javadoc>org.zkoss.zul.theme.CookieThemeResolver</javadoc>
+Internally, [org.zkoss.zul.theme.CookieThemeResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/CookieThemeResolver.html)
 provides this functionality.
 
 # Dynamically Switching Themes Using Library Property
@@ -89,14 +89,14 @@ If the previous two options do not yield any result, the theme with the
 highest priority would be applied. Theme priority is usually assigned
 when registering a theme but could also be changed dynamically.
 
-Please refer to <javadoc>org.zkoss.zul.theme.Themes</javadoc> for its
+Please refer to [org.zkoss.zul.theme.Themes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/Themes.html) for its
 family of register() methods.
 
 # Customize the Theme Resolution Process
 
 Web developers could also add other ways for setting the current theme
 by writing a custom
-*<javadoc>org.zkoss.web.theme.ThemeResolver</javadoc>*'.
+*[org.zkoss.web.theme.ThemeResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/ThemeResolver.html)*'.
 
 If you would like to communicate theme name via session instead, you
 would create a class like the following:

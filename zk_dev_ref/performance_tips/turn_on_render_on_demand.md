@@ -27,7 +27,7 @@ Notice that you can [ enable this feature in different scopes]({{site.baseurl}}/
 # Grid
 
 If you want to enable Grid ROD for the whole application, you can
-specify a library property called <javadoc>org.zkoss.zul.Grid</javadoc>
+specify a library property called [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
 rod with `true`. For example, specify the following in zk.xml:
 
 ```xml
@@ -39,7 +39,7 @@ rod with `true`. For example, specify the following in zk.xml:
 
 Or, if you prefer to enable it for a particular page, then specify
 `true` to a page's attribute called
-<javadoc>org.zkoss.zul.Grid</javadoc> rod, such as
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html) rod, such as
 
 ```xml
 <custom-attributes org.zkoss.zul.grid.rod="true" scope="page"/>
@@ -95,7 +95,7 @@ not using paging mold
 
 If you want to enable Listbox ROD for the whole application, you can
 specify a library property called
-<javadoc>org.zkoss.zul.Listbox</javadoc> rod with `true`. For example,
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) rod with `true`. For example,
 specify the following in zk.xml:
 
 ```xml
@@ -107,7 +107,7 @@ specify the following in zk.xml:
 
 Or, if you prefer to enable it for a particular page, then specify
 `true` to a page's attribute called
-<javadoc>org.zkoss.zul.Listbox</javadoc> rod, such as
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) rod, such as
 
 ```xml
 <custom-attributes org.zkoss.zul.listbox.rod="true" scope="page"/>

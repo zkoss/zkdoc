@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Barcode](https://blog.zkoss.org/2018/09/05/8-6-preview-barcode-and-barcodescanner/)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Barcode</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.barcode.Barcode</javadoc>
 - {% include edition-availability.html edition="pe" %}
@@ -212,6 +212,6 @@ WEB-INF/lang-addon.xml
 
 | Version | Date        | Content                                            |
 |---------|-------------|----------------------------------------------------|
-| 8.6.0   | Apirl, 2018 | <javadoc>org.zkoss.zkmax.barcode.Barcode</javadoc> |
+| 8.6.0   | Apirl, 2018 | [org.zkoss.zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/barcode/Barcode.html) |
 
 

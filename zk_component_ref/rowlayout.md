@@ -2,7 +2,7 @@
 
 # Rowlayout
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.RowLayout</javadoc>
+- Java API: [org.zkoss.zkmax.zul.RowLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/RowLayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.RowLayout</javadoc>
 

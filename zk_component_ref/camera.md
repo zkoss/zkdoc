@@ -2,7 +2,7 @@
 
 # Camera
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Camera</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.med.Camera</javadoc>
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
@@ -266,7 +266,7 @@ css classes like the following:
 <p><code>onVideoUpload</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> Notifies after the
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
 video has been uploaded.</p></td>
 </tr>
 <tr class="even">
@@ -274,7 +274,7 @@ video has been uploaded.</p></td>
 <p><code>onSnapshotUpload</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> Notifies after the
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
 snapshot has been uploaded.</p></td>
 </tr>
 <tr class="odd">
@@ -282,7 +282,7 @@ snapshot has been uploaded.</p></td>
 <p><code>onMaxsizeExceed</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Notifies if the recorded
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
 size is bigger than the max size.</p></td>
 </tr>
 <tr class="even">
@@ -290,7 +290,7 @@ size is bigger than the max size.</p></td>
 <p><code>onLengthLimitExceed</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Notifies if the recorded
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
 length exceeds the max length.</p></td>
 </tr>
 <tr class="odd">
@@ -298,7 +298,7 @@ length exceeds the max length.</p></td>
 <p><code>onStateChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.StateChangeEvent</javadoc> Notifies
+[org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
 when invoking start(), stop(), pause() or resume().</p></td>
 </tr>
 <tr class="even">
@@ -306,7 +306,7 @@ when invoking start(), stop(), pause() or resume().</p></td>
 <p><code>onCameraUnavailable</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.DOMExceptionEvent</javadoc> Notifies if
+[org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if
 camera is unavailable after requesting media devices from user.</p></td>
 </tr>
 </tbody>

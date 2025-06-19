@@ -9,17 +9,17 @@ please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/m
 
 A <javadoc type="interface">org.zkoss.zul.TreeModel</javadoc> is the
 data model of a tree-like component, such as
-<javadoc>org.zkoss.zul.Tree</javadoc>.
+[org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html).
 
 If the tree data is small enough to be loaded completely into a
-TreeModel, you can use <javadoc>org.zkoss.zul.DefaultTreeModel</javadoc>
-which accepts <javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> to
+TreeModel, you can use [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html)
+which accepts [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) to
 construct a tree[^1].
 
 In a more complicated case, if you want to implement custom logic like
 load-on-demand and caching. Maybe the data is too large to load them all
 into a TreeModel at once. Then, we suggest you to extend
-<javadoc>org.zkoss.zul.AbstractTreeModel</javadoc>, which will handle
+[org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html), which will handle
 the data listeners transparently.
 
 > ------------------------------------------------------------------------
@@ -31,8 +31,8 @@ the data listeners transparently.
 If you prefer to use
 <javadoc type="interface">org.zkoss.zul.TreeNode</javadoc> to construct
 the tree dynamically, you can use
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> and
-<javadoc>org.zkoss.zul.DefaultTreeNode</javadoc>. The usage is
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) and
+[org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html). The usage is
 straightforward, but it means that the whole tree must be constructed
 before it is displayed.
 
@@ -51,7 +51,7 @@ public class FileInfo {
 ```
 
 Then, we can create a tree of file information with
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> as follows:
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) as follows:
 
 ```java
 TreeModel model = new DefaultTreeModel(
@@ -170,7 +170,7 @@ tree item.
 
 ## Add/Insert
 
-<javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> provides
+[org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) provides
 <javadoc method="add(org.zkoss.zul.TreeNode)">org.zkoss.zul.DefaultTreeNode</javadoc>
 and
 <javadoc method="insert(org.zkoss.zul.TreeNode, int)">org.zkoss.zul.DefaultTreeNode</javadoc>
@@ -225,7 +225,7 @@ to insert a new node before the specified index.
 
 ## Update/Delete
 
-<javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> provides
+[org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) provides
 <javadoc method="setData(java.lang.Object)">org.zkoss.zul.DefaultTreeNode</javadoc>
 which can update selected tree items and
 <javadoc method="removeFromParent()">org.zkoss.zul.DefaultTreeNode</javadoc>
@@ -307,7 +307,7 @@ public class MyModel extends AbstractTreeModel<Object> {
 ...
 ```
 
-By extending from <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc>,
+By extending from [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html),
 you have to implement three methods:
 <javadoc method="getChild(java.lang.Object, int)" type="interface">org.zkoss.zul.TreeModel</javadoc>,
 <javadoc method="getChildCount(java.lang.Object)" type="interface">org.zkoss.zul.TreeModel</javadoc>,
@@ -406,13 +406,13 @@ to sort in the order specified in the `ascending` parameter.
 # Selection
 
 `Interface: `<javadoc type="interface">`org.zkoss.zul.ext.TreeSelectableModel`</javadoc>  
-`Implementation: Implemented by `<javadoc>`org.zkoss.zul.AbstractTreeModel`</javadoc>
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
 
 If your data model also provides the collection of selected elements,
 you shall also implement
 <javadoc type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>.
 When using with a component supporting the selection (such as
-<javadoc>org.zkoss.zul.Tree</javadoc>), the component will invoke
+[org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)), the component will invoke
 <javadoc method="isPathSelected(int[])" type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>
 to display the selected elements correctly. In addition, if the end user
 selects or deselects an item,
@@ -432,9 +432,9 @@ is called), it has to fire the event, such as
 correct the selection[^3].
 
 All default implementations, including
-<javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> and
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> implement
-<javadoc>org.zkoss.zul.ext.TreeSelectableModel</javadoc>. Thus, your
+[org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) and
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) implement
+[org.zkoss.zul.ext.TreeSelectableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html). Thus, your
 implementation generally doesn't have to implement it explicitly.
 
 It is important to note that, once a tree is assigned with a tree model,
@@ -473,7 +473,7 @@ model.setSelectionControl(new AbstractTreeModel.DefaultSelectionControl(model) {
 # Open Tree Nodes
 
 `Interface: `<javadoc type="interface">`org.zkoss.zul.ext.TreeOpenableModel`</javadoc>  
-`Implementation: Implemented by `<javadoc>`org.zkoss.zul.AbstractTreeModel`</javadoc>
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
 
 By default, all tree nodes are closed. To control whether to open a tree
 node, you could implement
@@ -481,13 +481,13 @@ node, you could implement
 More importantly, to open a tree node, the application shall access the
 model's
 <javadoc type="interface">org.zkoss.zul.ext.TreeOpenableModel</javadoc>
-API, rather than accessing <javadoc>org.zkoss.zul.Treeitem</javadoc>
+API, rather than accessing [org.zkoss.zul.Treeitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treeitem.html)
 directly.
 
 All default implementations, including
-<javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> and
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> implement
-<javadoc>org.zkoss.zul.ext.TreeOpenableModel</javadoc>. Thus, your
+[org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) and
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) implement
+[org.zkoss.zul.ext.TreeOpenableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeOpenableModel.html). Thus, your
 implementation generally doesn't have to implement it explicitly.
 
 **Note:** If your tree model contains a lot of nodes, please also
@@ -498,7 +498,7 @@ from a tree node.
 
 # Leaf Node
 
-The <javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> has 2 constructors:
+The [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) has 2 constructors:
 
 - `DefaultTreeNode(data)`: create a [leaf node](https://en.wikipedia.org/wiki/Tree_(data_structure)#Terminology)which
   cannot have children added to it.
@@ -516,7 +516,7 @@ for `DefaultTreeNode(data, children)` constructor, ZK tree will still
 render the node as a branch node that contains no children. So when you
 expand the node, it shows nothing. It might confuse users.
 
-<javadoc>org.zkoss.zul.DefaultTreeModel</javadoc>'s constructor accepts
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html)'s constructor accepts
 the 2nd boolean argument to determine whether to render a branch node
 without children as a leaf node.
 
@@ -528,13 +528,13 @@ DefaultTreeModel model2 = new DefaultTreeModel(root, true);
 
 | Version                | Date          | Content                                                                                                                                                                                                                                                                                                               |
 |------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.6                  | January 2011  | <javadoc type="interface">org.zkoss.zul.TreeNode</javadoc>, <javadoc>org.zkoss.zul.DefaultTreeNode</javadoc> and <javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> were intrdocued.                                                                                                                                   |
+| 5.0.6                  | January 2011  | <javadoc type="interface">org.zkoss.zul.TreeNode</javadoc>, [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) and [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) were intrdocued.                                                                                                                                   |
 | 6.0.0                  | February 2012 | <javadoc type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc> and <javadoc type="interface">org.zkoss.zul.ext.TreeOpenableModel</javadoc> were introduced to replace <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc> and <javadoc type="interface">org.zkoss.zul.ext.Openable</javadoc>. |
-| 5.0.12 / 6.0.3 / 6.5.1 | October 2012  | <javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> adds a new constructor for configuring whether to treat the zero size of children node as a leaf node.                                                                                                                                                              |
+| 5.0.12 / 6.0.3 / 6.5.1 | October 2012  | [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) adds a new constructor for configuring whether to treat the zero size of children node as a leaf node.                                                                                                                                                              |
 
-[^1]: <javadoc>org.zkoss.zul.DefaultTreeModel</javadoc> is available
+[^1]: [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) is available
     since 5.0.6. For 5.0.5 or prior, please use
-    <javadoc>org.zkoss.zul.SimpleModel</javadoc>, which is similar
+    [org.zkoss.zul.SimpleModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleModel.html), which is similar
     except it assumes the tree structure is immutable
 
 [^2]: <javadoc method="getIndexOfChild(java.lang.Object, java.langObject)" type="interface">org.zkoss.zul.TreeModel</javadoc>

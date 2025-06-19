@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)
-- Java API: <javadoc>org.zkoss.zul.Script</javadoc>
+- Java API: [org.zkoss.zul.Script](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Script.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Script</javadoc>
 
 

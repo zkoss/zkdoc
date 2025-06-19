@@ -4,7 +4,7 @@
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
-- Java API: <javadoc>org.zkoss.zul.Menuitem</javadoc>
+- Java API: [org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menuitem</javadoc>
 - Style Guide: [ Menuitem in Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menuitem_in_menubar),
   [ Menuitem in Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menuitem_in_menupopup)
@@ -188,7 +188,7 @@ you could make a menuitem used for uploading files. For example,
 ```
 
 Once the file(s) are uploaded, the onUpload event will be sent with an
-instance of <javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc>. And,
+instance of [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html). And,
 you could retrieve the uploaded files from
 <javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
 and
@@ -233,7 +233,7 @@ where
 <p><code>onCheck</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes user has
 checked the item.</p></td>
 </tr>
 <tr class="even">
@@ -241,7 +241,7 @@ checked the item.</p></td>
 <p>onUpload</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
 uploaded a file to the component.</p></td>
 </tr>
 </tbody>

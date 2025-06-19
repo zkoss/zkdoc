@@ -3,7 +3,7 @@
 # Layout Region
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.LayoutRegion</javadoc>
+- Java API: [org.zkoss.zul.LayoutRegion](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.LayoutRegion</javadoc>
 
@@ -34,7 +34,7 @@ N/A
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> When a layout is
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a layout is
 collapsed or opened by a user, the onOpen event is sent to the
 application.</p></td>
 </tr>
@@ -43,7 +43,7 @@ application.</p></td>
 <p><code>onSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc> When a layout is
+[org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) When a layout is
 resized by a user, the onSize event is sent to the application.</p></td>
 </tr>
 <tr class="odd">
@@ -51,7 +51,7 @@ resized by a user, the onSize event is sent to the application.</p></td>
 <p><code>onSlide</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SlideEvent</javadoc> When a collapsed
+[org.zkoss.zk.ui.event.SlideEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SlideEvent.html) When a collapsed
 layout is slided (preview) by a user, the onSlide event is sent to the
 application.</p></td>
 </tr>

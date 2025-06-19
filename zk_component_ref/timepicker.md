@@ -4,7 +4,7 @@
 
 {% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition="pe" %}
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Timepicker</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Timepicker</javadoc>
 

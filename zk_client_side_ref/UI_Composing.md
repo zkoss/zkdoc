@@ -6,7 +6,7 @@ A UI object visible to a user at the client is hosted by a JavaScript
 object[^1] called a widget
 (<javadoc directory="jsdoc">zk.Widget</javadoc>). On the other hand, a
 component is a Java object
-(<javadoc>org.zkoss.zk.ui.Component</javadoc>) representing the UI
+([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)) representing the UI
 object at the server that an application manipulates directly. Once a
 component is attached to a page, a widget is created at the client
 automatically. Furthermore, any state change of the component at the

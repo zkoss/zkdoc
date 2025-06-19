@@ -1,11 +1,11 @@
 It is easy to store scheduled data in memory and can be done by using
-the <javadoc>org.zkoss.calendar.impl.SimpleCalendarModel</javadoc>. This
+the [org.zkoss.calendar.impl.SimpleCalendarModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarModel.html). This
 model provides functions to add and remove
 <javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>’s.
 
 The following code demonstrates how to generate and store a few random
 events in the
-<javadoc>org.zkoss.calendar.impl.SimpleCalendarModel</javadoc>.
+[org.zkoss.calendar.impl.SimpleCalendarModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarModel.html).
 
 ```java
 SimpleCalendarModel scm = new SimpleCalendarModel();

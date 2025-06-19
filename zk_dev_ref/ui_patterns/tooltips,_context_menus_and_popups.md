@@ -1,6 +1,6 @@
 The support of tooltips, context menus and popups is generic. Any
 components inherited from
-<javadoc>org.zkoss.zul.impl.XulElement</javadoc> can handle them in the
+[org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html) can handle them in the
 same way.
 
 To enable any of them, you have to prepare a component representing the
@@ -85,7 +85,7 @@ Providing a customized context menu is the same, except it uses the
 
 ![]({{site.baseurl}}/zk_dev_ref/images/drcontext.png)
 
-As shown above, you could use <javadoc>org.zkoss.zul.Popup</javadoc> so
+As shown above, you could use [org.zkoss.zul.Popup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html) so
 the context menu is not limited to a menupopup.
 
 Here is another example: context menus versus right clicks.

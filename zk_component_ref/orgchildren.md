@@ -2,7 +2,7 @@
 
 # Orgchildren
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Orgchildren </javadoc>
+- Java API: [org.zkoss.zkmax.zul.Orgchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgchildren.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgchildren
   </javadoc>
 

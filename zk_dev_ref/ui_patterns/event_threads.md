@@ -24,7 +24,7 @@ browser. To turn it on, you have to specify the following in
 In short, it is recommended to disable the event thread. Enable the
 event thread only if the project does not need to integrate other
 frameworks (such as Spring), depending on
-<javadoc>org.zkoss.zul.Messagebox</javadoc> and modal windows a lot, and
+[org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html) and modal windows a lot, and
 do not have a lot of concurrent users.
 
 Here are the advantages and limitations of using the Servlet thread to
@@ -56,7 +56,7 @@ copying the per-request information from the Servlet thread to the event
 processing thread.</p>
 <p>Threre are several implementations to solve the integration issue,
 such as
-<javadoc>org.zkoss/zkplus.hibernate.HibernateSessionContextListener</javadoc>
+[org.zkoss/zkplus.hibernate.HibernateSessionContextListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/hibernate/HibernateSessionContextListener.html)
 (they can be found under <a
 href="http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/package-summary.html">the
 org.zkoss.zkplus package</a>).</p></td>

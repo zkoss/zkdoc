@@ -91,7 +91,7 @@ Renders.render(svlctx, request, response,
   }, null, out);
 ```
 
-where we use <javadoc>org.zkoss.zk.ui.GenericRichlet</javadoc> to
+where we use [org.zkoss.zk.ui.GenericRichlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/GenericRichlet.html) to
 simplify the implementation of a richlet.
 
 # Example
@@ -166,4 +166,4 @@ public class WindowTag extends UIComponentBase {
 
 | Version | Date           | Content                                                                                                                              |
 |---------|----------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.5   | September 2010 | <javadoc>org.zkoss.zkplus.embed.Renders</javadoc> was introduced to simplify the making of a native element for a foreign framework. |
+| 5.0.5   | September 2010 | [org.zkoss.zkplus.embed.Renders](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Renders.html) was introduced to simplify the making of a native element for a foreign framework. |

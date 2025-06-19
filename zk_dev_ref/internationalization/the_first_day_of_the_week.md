@@ -26,7 +26,7 @@ The first day of the week is decided in the following sequence.
     so, use it.
 3.  It checks if a property called
     `org.zkoss.web.preferred.firstDayOfWeek` is defined in the library
-    property (i.e., <javadoc>org.zkoss.lang.Library</javadoc>). If so,
+    property (i.e., [org.zkoss.lang.Library](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html)). If so,
     use it.
 4.  If none of them is found, JVM's default will be used
     (`java.util.Calendar`).

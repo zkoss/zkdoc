@@ -1,6 +1,6 @@
 # Rating
 
-- Java API: <javadoc>org.zkoss.zul.Rating</javadoc>
+- Java API: [org.zkoss.zul.Rating](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rating.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Rating</javadoc>
 
 {% include version-badge.html version=8.6.0 %}
@@ -107,7 +107,7 @@ have an initial rating.)
 <p><code>onChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 rated.</p></td>
 </tr>
 </tbody>

@@ -14,10 +14,10 @@ is not present in ZK you can use the Raw object.
 
 ### Raw
 
-A special component, <javadoc>org.zkoss.zhtml.Raw</javadoc> is used to
+A special component, [org.zkoss.zhtml.Raw](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Raw.html) is used to
 represent any component that is not declared in the following section
 (i.e., not in lang.xml). In other words, if any unrecognized component
-name is found, an instance of <javadoc>org.zkoss.zhtml.Raw</javadoc> is
+name is found, an instance of [org.zkoss.zhtml.Raw](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Raw.html) is
 created and a proper HTML tag will be generated accordingly. In other
 words, any component name is legal as long as the targeted browser
 supports.

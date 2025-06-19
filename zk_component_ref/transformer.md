@@ -2,11 +2,11 @@
 
 # Transformer
 
-- Java API: <javadoc>org.zkoss.zml.Transformer</javadoc>
+- Java API: [org.zkoss.zml.Transformer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zml/Transformer.html)
 
 # Employment/Purpose
 
-<javadoc>org.zkoss.zml.Transformer</javadoc> is used to translate a XML
+[org.zkoss.zml.Transformer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zml/Transformer.html) is used to translate a XML
 document to another with a [XSTL](http://en.wikipedia.org/wiki/XSLT)
 template.
 

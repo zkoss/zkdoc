@@ -3,7 +3,7 @@
 # Footer
 
 - Demonstration: [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
-- Java API: <javadoc>org.zkoss.zul.Footer</javadoc>
+- Java API: [org.zkoss.zul.Footer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Footer.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Footer</javadoc>
 
 

@@ -1,7 +1,7 @@
 
 
 All XHTML components are derived from
-<javadoc>org.zkoss.zhtml.impl.AbstractTag</javadoc>.
+[org.zkoss.zhtml.impl.AbstractTag](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/impl/AbstractTag.html).
 
 An XHTML component is a thin wrapper that encapsulates a native HTML
 tag. It is different to a XUL component or other none-native component

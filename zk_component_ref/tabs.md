@@ -3,7 +3,7 @@
 # Tabs
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: <javadoc>org.zkoss.zul.Tabs</javadoc>
+- Java API: [org.zkoss.zul.Tabs](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabs.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabs</javadoc>
 
 

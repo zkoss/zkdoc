@@ -3,7 +3,7 @@
 # Tree
 
 - Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
-- Java API: <javadoc>org.zkoss.zul.Tree </javadoc>
+- Java API: [org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Tree </javadoc>
 
 
@@ -541,7 +541,7 @@ able to control what part of the tree is invisible.
 
 If the Tree is controlled by a
 <javadoc type="interface">org.zkoss.zul.ext.TreeOpenableModel</javadoc>
-such as <javadoc>org.zkoss.zul.AbstractTreeModel</javadoc> or
+such as [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) or
 <javadoc type="interface">org.zkoss.zul.DefaultTreeModel</javadoc>, the
 model open state is authoritative and will override the individual
 component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
@@ -640,13 +640,13 @@ when the following cases:
   is set.
 - <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
   is called.
-- Model receives <javadoc>org.zkoss.zul.event.TreeDataEvent</javadoc>
+- Model receives [org.zkoss.zul.event.TreeDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/TreeDataEvent.html)
   and
   <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
   is set.
 
 If you want to ignore sort when receiving
-<javadoc>org.zkoss.zul.event.TreeDataEvent</javadoc>, you can specifies
+[org.zkoss.zul.event.TreeDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/TreeDataEvent.html), you can specifies
 the value as **ignore.change**.
 
 ## org.zkoss.zul.tree.autohidePaging
@@ -682,7 +682,7 @@ component.
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc> Notifies one that
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item in the tree.</p></td>
 </tr>
 <tr class="even">
@@ -690,7 +690,7 @@ the user has selected a new item in the tree.</p></td>
 <p><code>onFocus</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onFocus
 got executed.</p></td>
@@ -700,7 +700,7 @@ got executed.</p></td>
 <p><code>onBlur</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
 got executed.</p></td>
@@ -710,14 +710,14 @@ got executed.</p></td>
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="odd">
 <td><center>
 <p><code>onPageSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.PageSizeEvent</javadoc> Notifies the paging
+[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 (<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Tree</javadoc>)
 is enabled and user changed the size of the content.</p></td>

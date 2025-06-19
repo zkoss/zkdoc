@@ -13,7 +13,7 @@ have to render each item as a string. For example,
 ```
 
 where we assume there is a list model
-(<javadoc>org.zkoss.zul.ListModel</javadoc>) called `users` such as:
+([org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)) called `users` such as:
 
 ```java
 ListModelList model = new ListModelList(new String[] { "Tony", "Ryan", "Jumper", "Wing", "Sam" });

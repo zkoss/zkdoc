@@ -9,7 +9,7 @@ please **refer to the official and extensive [Spring Framework Documentation](ht
 
 You can access any spring managed beans by its id within ZK, for
 example, on the ZUML page by declaring `variable-resolver` for
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc> at
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) at
 the top of your ZUML page.
 
 Lets define a simple bean first
@@ -49,7 +49,7 @@ Spring and ZK will treat both beans equivalently during runtime):
 ```
 
 Now using the
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 you can access this bean in ZSCRIPT, EL expressions and ZK data binding
 annotations.
 
@@ -86,7 +86,7 @@ as shown below
 #### Access Spring beans in ZK Databinding annotations
 
 The same
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 also resolves Spring beans in ZK Databinding expressions:
 
 ```xml
@@ -102,9 +102,9 @@ also resolves Spring beans in ZK Databinding expressions:
 ### SpringUtil
 
 You can also access Spring beans on a ZUML page without
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc> by
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) by
 using a utility class
-<javadoc>org.zkoss.zkplus.spring.SpringUtil</javadoc> method
+[org.zkoss.zkplus.spring.SpringUtil](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/SpringUtil.html) method
 <javadoc method="getBean()">org.zkoss.zkplus.spring.SpringUtil</javadoc>.
 Here is an example code to demonstrate this
 

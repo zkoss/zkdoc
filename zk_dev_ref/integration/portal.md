@@ -7,7 +7,7 @@ information, please refer to [ZK Installation Guide]({{site.baseurl}}/zk_install
 ## WEB-INF/portlet.xml
 
 To use it, you first have to add the following portlet definition for
-<javadoc>org.zkoss.zk.ui.http.DHtmlLayoutPortlet</javadoc> into
+[org.zkoss.zk.ui.http.DHtmlLayoutPortlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/DHtmlLayoutPortlet.html) into
 `WEB-INF/portlet.xml`. Notice that `expiration-cache` must be set to
 zero to prevent portals from caching the result.
 
@@ -39,7 +39,7 @@ zero to prevent portals from caching the result.
 ## WEB-INF/web.xml
 
 ZK portlet loader actually delegates the loading of ZUML documents to ZK
-Loader (<javadoc>org.zkoss.zk.ui.http.DHtmlLayoutServlet</javadoc>).
+Loader ([org.zkoss.zk.ui.http.DHtmlLayoutServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/DHtmlLayoutServlet.html)).
 Thus, you have to configure `WEB-INF/web.xml` as specified in [ZK Installation Guide](ZK_Installation_Guide), even if you want
 to use only portlets.
 

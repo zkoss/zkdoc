@@ -3,7 +3,7 @@
 # Anchorchildren
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Anchorchildren</javadoc>
+- Java API: [org.zkoss.zul.Anchorchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorchildren.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.layout.Anchorchildren</javadoc>
 

@@ -2,7 +2,7 @@
 
 # Track
 
-- Java API: <javadoc>org.zkoss.zul.Track</javadoc>
+- Java API: [org.zkoss.zul.Track](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Track.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.med.Track</javadoc>
 
 {% include version-badge.html version=9.5.0 %}

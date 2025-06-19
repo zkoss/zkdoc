@@ -3,7 +3,7 @@
 # Splitter
 
 - Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
-- Java API: <javadoc>org.zkoss.zul.Splitter</javadoc>
+- Java API: [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.box.Splitter</javadoc>
 
 
@@ -92,7 +92,7 @@ property
 ### onOpen Event
 
 When a splitter is collapsed or opened by a user, the `onOpen` event
-(<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc>) is sent to the
+([org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)) is sent to the
 application.
 
 ## OS Styling
@@ -162,7 +162,7 @@ OS-look:
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>When a splitter is collapsed or opened by a user, the
 <code>onOpen</code> event is sent to the application.</p></td>
 </tr>

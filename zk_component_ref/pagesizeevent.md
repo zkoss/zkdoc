@@ -2,7 +2,7 @@
 
 # PageSizeEvent
 
-- Java API: <javadoc>org.zkoss.zul.event.PageSizeEvent</javadoc>
+- Java API: [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html)
 
 # Employment/Purpose
 

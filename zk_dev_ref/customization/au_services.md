@@ -1,7 +1,7 @@
 An AU service
 (<javadoc type="interface">org.zkoss.zk.au.AuService</javadoc>) is a
 plugin used to intercept the AU requests
-(<javadoc>org.zkoss.zk.au.AuRequest</javadoc>) sent from the client.
+([org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html)) sent from the client.
 
 By plugging in an AU service, you could
 

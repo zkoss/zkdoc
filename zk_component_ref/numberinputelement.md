@@ -3,7 +3,7 @@
 # Number Input Element
 
 - Demonstration: [Number Input Element](http://www.zkoss.org/zkdemo/userguide/#f2)
-- Java API: <javadoc>org.zkoss.zul.impl.NumberInputElement</javadoc>
+- Java API: [org.zkoss.zul.impl.NumberInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/NumberInputElement.html)
 - JavaScript API: N/A
 
 # Employement/Purpose

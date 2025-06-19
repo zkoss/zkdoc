@@ -68,7 +68,7 @@ controller that directly wires the Java object to the pivottable
 component.
 
 First, the controller would extends the
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> class. In the
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) class. In the
 controller, you would use the "Wire" annotation to automatically refer
 to the pivottable with the id "pivot".
 

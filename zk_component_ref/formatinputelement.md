@@ -3,7 +3,7 @@
 # Format Input Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.FormatInputElement</javadoc>
+- Java API: [org.zkoss.zul.impl.FormatInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FormatInputElement.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

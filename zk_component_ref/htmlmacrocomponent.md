@@ -3,7 +3,7 @@
 # Html Macro Component
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+- Java API: [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

@@ -3,7 +3,7 @@
 # SwipeEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.event.SwipeEvent </javadoc>
+- Java API: [org.zkoss.zk.ui.event.SwipeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SwipeEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

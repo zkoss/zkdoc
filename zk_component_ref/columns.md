@@ -3,7 +3,7 @@
 # Columns
 
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
-- Java API: <javadoc>org.zkoss.zul.Columns</javadoc>
+- Java API: [org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Columns</javadoc>
 
 

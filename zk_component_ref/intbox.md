@@ -1,7 +1,7 @@
 # Intbox
 
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: <javadoc>org.zkoss.zul.Intbox</javadoc>
+- Java API: [org.zkoss.zul.Intbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Intbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Intbox</javadoc>
 
 

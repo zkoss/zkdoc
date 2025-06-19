@@ -3,7 +3,7 @@
 # InputEvent
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc>
+- Java API: [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

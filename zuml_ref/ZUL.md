@@ -7,8 +7,8 @@
 XUL-compliant component sets. We adopt
 [XUL](https://developer.mozilla.org/En/XUL) for this language, if the
 specification is applicable, such as
-<javadoc>org.zkoss.zul.Tabbox</javadoc> and
-<javadoc>org.zkoss.zul.Grid</javadoc>. It basically contains all rich
+[org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html) and
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html). It basically contains all rich
 components for the Ajax devices (i.e., the browsers).
 
 For more information, please refer to [ZK Component Reference](ZK_Component_Reference).

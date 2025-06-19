@@ -3,7 +3,7 @@
 # Cascader
 
 - [Demonstration](https://www.zkoss.org/zkdemo/combobox/cascader)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Cascader</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Cascader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cascader.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.inp.Cascader</javadoc>
 
@@ -48,7 +48,7 @@ users.
 ## ItemConverter
 
 Specify a full qualified class name that implements
-<javadoc>org.zkoss.util.Converter</javadoc>. The default implementation
+[org.zkoss.util.Converter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Converter.html). The default implementation
 is joining all the `toString()` result of items by slashes `/`.
 
 By implementing your own one, you can generate a custom text that
@@ -96,14 +96,14 @@ selected.
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Represents an event caused by user's the selection changed at the
 client.</p></td>
 </tr>
@@ -112,7 +112,7 @@ client.</p></td>
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Represents an event that indicates an open state that is changed at
 the client.</p></td>
 </tr>

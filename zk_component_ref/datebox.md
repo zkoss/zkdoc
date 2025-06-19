@@ -3,7 +3,7 @@
 # Datebox
 
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
-- Java API: <javadoc>org.zkoss.zul.Datebox</javadoc>
+- Java API: [org.zkoss.zul.Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Datebox</javadoc>
 
 
@@ -346,7 +346,7 @@ for inherited functions.
 <p><code>onTimeZoneChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes the time zone of
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of
 the component is changed by user.</p></td>
 </tr>
 </tbody>

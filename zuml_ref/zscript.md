@@ -54,7 +54,7 @@ However, it is easy to extend:
 1.  Provide a class that implements
     <javadoc type="interface">org.zkoss.zk.scripting.Interpreter</javadoc>.
     However, it is suggested to derive from
-    <javadoc>org.zkoss.zk.scripting.util.GenericInterpreter</javadoc>
+    [org.zkoss.zk.scripting.util.GenericInterpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/util/GenericInterpreter.html)
     for simplicity.
 2.  Declare the scripting language in either
     [WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_zscript-config_element),

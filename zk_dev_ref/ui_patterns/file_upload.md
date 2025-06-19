@@ -1,9 +1,9 @@
 # File Upload with Servlet Thread
 
 When the event thread is disable (default), it is recommended to use
-<javadoc>org.zkoss.zul.Button</javadoc>,
-<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> or
-<javadoc>org.zkoss.zul.Menuitem</javadoc> with upload="true" instead.
+[org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html),
+[org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html) or
+[org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html) with upload="true" instead.
 For example,
 
 ```xml
@@ -34,8 +34,8 @@ for more inormation.
 ## File Upload with Event Thread
 
 If the event thread is disabled, the developer can use
-<javadoc>org.zkoss.zul.Button</javadoc> or
-<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> with upload="true"
+[org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) or
+[org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html) with upload="true"
 instead. They behave the same no matter if the event thread is disabled
 or not.
 

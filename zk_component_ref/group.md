@@ -3,7 +3,7 @@
 # Group
 
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-- Java API: <javadoc>org.zkoss.zul.Group</javadoc>
+- Java API: [org.zkoss.zul.Group](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Group.html)
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
 
 - {% include edition-availability.html edition="pe" %}
@@ -84,7 +84,7 @@ Default getSclass(): the same as grid's sclass.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. Note:</p>
 <p>unlike <code>onClose</code>, this event is only a notification. The
 client sends this event after opening or closing the component.</p>

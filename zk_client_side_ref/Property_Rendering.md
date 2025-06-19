@@ -32,7 +32,7 @@ all properties, event listeners and so on.
 
 However, you don't have to implement
 <javadoc method="redraw(java.io.Writer)" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
-from ground up. <javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc>
+from ground up. [org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html)
 provides a default implementation, so you could override
 <javadoc method="renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)">org.zkoss.zk.ui.AbstractComponent</javadoc>
 instead.
@@ -55,7 +55,7 @@ throws IOException {
 ```
 
 Notice that the render methods of
-<javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc> will ignore `null`,
+[org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html) will ignore `null`,
 empty string, and `false` automatically. Thus, the `if` statement in the
 following example is redundant.
 
@@ -175,7 +175,7 @@ that need to be sent.
 When the application modifies a state that affects the peer widget, a
 component has to send the updated value to the peer widget. It is done
 by calling one of the smartUpdate methods of
-<javadoc>org.zkoss.zk.ui.AbstractComponent</javadoc>. For example,
+[org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html). For example,
 
 ```java
 public void setValue(String value) {

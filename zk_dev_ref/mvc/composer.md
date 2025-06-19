@@ -2,7 +2,7 @@
 
 A custom controller is called a composer in ZK. To implement it, you can
 simply extend
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>. Then,
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html). Then,
 specify it in the UI element that it wants to handle in a ZUML document.
 
 A composer usually does, but not limited to:
@@ -24,7 +24,7 @@ such that it will be called each time a ZUML document is loaded.
 
 To simplify the implementation of the controller part of UI, ZK provides
 several skeleton implementations. For example,
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>, as one of
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), as one of
 the most popular skeletons, wires components, variables and event
 listeners automatically based on Java annotations you specify. For
 example, in the following controller and zul,
@@ -79,7 +79,7 @@ ZUL:
 ```
 
 In addition to wiring components via identifiers, you could wire by a
-CSS3-like selector (<javadoc>org.zkoss.zk.ui.select.Selector</javadoc>),
+CSS3-like selector ([org.zkoss.zk.ui.select.Selector](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selector.html)),
 such as
 
 - `@Wire("#foo")`
@@ -147,8 +147,8 @@ an EL expression), you can store the composer into a component's
 attribute[^1].
 
 If the composer extends from one of ZK skeletal implementations (such as
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> and
-<javadoc>org.zkoss.zk.ui.util.GenericForwardComposer</javadoc>), it will
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) and
+[org.zkoss.zk.ui.util.GenericForwardComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericForwardComposer.html)), it will
 be stored into an attribute automatically. Thus, for the sake of
 convenience, you could extend from one of these classes, if you'd like
 to retrieve the composer back.
@@ -163,8 +163,8 @@ composer as described in the following sections.
 ### Default Names of Composer
 
 If a composer extends from one of ZK skeletal implementations (such as
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> and
-<javadoc>org.zkoss.zk.ui.util.GenericForwardComposer</javadoc>), the
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) and
+[org.zkoss.zk.ui.util.GenericForwardComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericForwardComposer.html)), the
 composer is stored in three component attributes called:
 
 - `$composer`
@@ -254,11 +254,11 @@ public class UsersComposer extends SelectorComposer<Window> {
 ```
 
 where we register a variable resolver called
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 with the
 <javadoc type="interface">org.zkoss.zk.ui.select.VariableResolver</javadoc>
 annotation. As its name suggests,
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 will be used to retrieve Spring-managed beans when `@WireVariable` is
 encountered. For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
 
@@ -312,7 +312,7 @@ public class MyComposer extends SelectorComposer<Grid> {
 If you want a composer to handle the exception and/or control the life
 cycle of rendering, you could also implement
 <javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>.
-Since <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> already
+Since [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) already
 implements this interface, you only need to override the method you care
 about if you extend from it.
 
@@ -344,7 +344,7 @@ In addition to controlling the given component, a composer can monitor
 the instantiation and exceptions for each child and the descendant
 component. It is done by implementing
 <javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>.
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> does not
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) does not
 implement this interface by default. Thus, you have to implement it
 explicitly.
 
@@ -455,7 +455,7 @@ called only for root components.
 
 | Version | Date       | Content                                                                                                                                                                          |
 |---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.8   | June, 2011 | <javadoc>org.zkoss.zk.ui.util.GenericAutowireComposer</javadoc> and its derives allow developers to specify a custom name by use of a component attribute called `composerName`. |
+| 5.0.8   | June, 2011 | [org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html) and its derives allow developers to specify a custom name by use of a component attribute called `composerName`. |
 
 [^1]: It can be done by invoking
     <javadoc method="setAttribute(java.lang.String, java.lang.Object)" type="interface">org.zkoss.zk.ui.Component</javadoc>,

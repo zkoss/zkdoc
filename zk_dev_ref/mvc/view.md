@@ -4,7 +4,7 @@ application's requirements.
 As described in
 [mvc/Model]({{site.baseurl}}/zk_dev_ref/mvc/model), some ZK
 components support Model-driven rendering, such as
-<javadoc>org.zkoss.zul.Listbox</javadoc>. There are two approaches you
+[org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html). There are two approaches you
 can customize the rendering of each item in a model:
 
 - [Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template): you

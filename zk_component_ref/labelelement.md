@@ -3,7 +3,7 @@
 # Label Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.LabelElement</javadoc>
+- Java API: [org.zkoss.zul.impl.LabelElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelElement.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

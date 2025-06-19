@@ -16,7 +16,7 @@ satisfied.
   <javadoc directory="jsdoc" method="fire(_global_.String, zk.Object, _global_.Map, int)">zk.Widget</javadoc>
   and not set.
 - The event is listened by a server-side
-  <javadoc>org.zkoss.zk.ui.Listener</javadoc>, or it must be an
+  [org.zkoss.zk.ui.Listener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Listener.html), or it must be an
   important event.
 
 The above image demonstrates that the onClear event is sent to the

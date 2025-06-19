@@ -3,7 +3,7 @@
 # Treerow
 
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: <javadoc>org.zkoss.zul.Treerow</javadoc>
+- Java API: [org.zkoss.zul.Treerow](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treerow.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treerow</javadoc>
 
 

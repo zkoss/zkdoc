@@ -3,7 +3,7 @@
 # Biglistbox
 
 - Demonstration: [ Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Biglistbox</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Biglistbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Biglistbox.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
 
@@ -54,19 +54,19 @@ rendering phase.
 ## MatrixModel
 
 By default, ZK does not provide a built-in model implementation class
-for <javadoc>org.zkoss.zkmax.zul.MatrixModel</javadoc> because
+for [org.zkoss.zkmax.zul.MatrixModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixModel.html) because
 Biglistbox is designed to handle unlimited data set, therefore, there is
 no need to handle model data in memory. This usage is
 application-dependent and varies from case to case. However, you can
 extend your own implementation from the
-<javadoc>org.zkoss.zul.AbstractListModel</javadoc> skeleton class. For
+[org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html) skeleton class. For
 more details, please refer to this
 [smalltalk](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK#Demo_Code_Details).
 
 ## MatrixRenderer
 
 Here is an implementation example of
-<javadoc>org.zkoss.zkmax.zul.MatrixRenderer</javadoc>
+[org.zkoss.zkmax.zul.MatrixRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixRenderer.html)
 
 ```java
 new MatrixRenderer<List<String>>() {
@@ -152,7 +152,7 @@ request from the client. It is used only if live data
 <p><code>onSelect</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SelectEvent</javadoc></p>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
 <p>Represents an event cause by user's the list selection is changed at
 the client.</p></td>
 </tr>
@@ -161,7 +161,7 @@ the client.</p></td>
 <p><code>onSort</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.SortEventExt</javadoc></p>
+[org.zkoss.zkmax.zul.event.SortEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/SortEventExt.html)</p>
 <p>Represents an event that indicates a sorting request to data for
 Biglistbox and provides more information about the column
 index.</p></td>
@@ -171,7 +171,7 @@ index.</p></td>
 <p><code>onScroll</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.ScrollEventExt</javadoc></p>
+[org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
 <p>Represents an event caused by that user is scrolling or has scrolled
 at the client for Biglistbox component and provides more information
 about the position X and Y data.</p></td>
@@ -181,7 +181,7 @@ about the position X and Y data.</p></td>
 <p><code>onScrollX</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.ScrollEventExt</javadoc></p>
+[org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
 <p>Represents an event caused by that user is scrolling or has scrolled
 the X-axis at the client for Biglistbox component and provides more
 information about the position X and Y data.</p></td>
@@ -191,7 +191,7 @@ information about the position X and Y data.</p></td>
 <p><code>onScrollY</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.ScrollEventExt</javadoc></p>
+[org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
 <p>Represents an event caused by that user is scrolling or has scrolled
 the Y-axis at the client for Biglistbox component and provides more
 information about the position X and Y data.</p></td>
@@ -201,7 +201,7 @@ information about the position X and Y data.</p></td>
 <p><code>onCellClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.CellClickEvent</javadoc></p>
+[org.zkoss.zkmax.zul.event.CellClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/CellClickEvent.html)</p>
 <p>Represents an event that indicates a clicking on a cell data for a
 matrix data component like Biglistbox, and provides more information
 about the row index and the column index.</p></td>
@@ -211,7 +211,7 @@ about the row index and the column index.</p></td>
 <p><code>onAfterRender</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p></td>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 </tbody>
 </table>

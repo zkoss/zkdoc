@@ -3,7 +3,7 @@
 # Menu
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
-- Java API: <javadoc>org.zkoss.zul.Menu</javadoc>
+- Java API: [org.zkoss.zul.Menu](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menu.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.menu.Menu</javadoc>
 - Style Guide: [ Menu in Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menu_in_menubar),
   [ Menu in Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menu_in_menupopup)

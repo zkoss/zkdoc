@@ -3,7 +3,7 @@
 # Auxheader
 
 - Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
-- Java API: <javadoc>org.zkoss.zul.Auxheader</javadoc>
+- Java API: [org.zkoss.zul.Auxheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxheader.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
 

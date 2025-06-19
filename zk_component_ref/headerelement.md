@@ -3,7 +3,7 @@
 # Header Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.HeaderElement</javadoc>
+- Java API: [org.zkoss.zul.impl.HeaderElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeaderElement.html)
 - JavaScript API: N/A
 
 # Employment/Purpose
@@ -33,7 +33,7 @@ N/A
 <p><code>onColSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.ColSizeEvent</javadoc> Notifies the parent
+[org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) Notifies the parent
 of a group of headers that the widths of two of its children are changed
 by the user.</p></td>
 </tr>

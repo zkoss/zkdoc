@@ -3,7 +3,7 @@
 # Treefoot
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Treefoot</javadoc>
+- Java API: [org.zkoss.zul.Treefoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefoot.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treefoot</javadoc>
 
 

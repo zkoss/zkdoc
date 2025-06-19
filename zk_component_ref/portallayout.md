@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Portallayout</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Portallayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portallayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Portallayout</javadoc>
 
@@ -94,7 +94,7 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 <p>onPortalDrop</p>
 </center></td>
 <td><p>{% include version-badge.html version=9.5.1 %} <strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.ui.event.PortalDropEvent</javadoc></p>
+[org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html)</p>
 <p>Represents an event after a portal is dropped and before a portal is
 moved.</p></td>
 </tr>
@@ -103,7 +103,7 @@ moved.</p></td>
 <p>onPortalMove</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.ui.event.PortalMoveEvent</javadoc> Represents
+[org.zkoss.zkmax.ui.event.PortalMoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalMoveEvent.html) Represents
 an event caused by a portal being moved.</p></td>
 </tr>
 </tbody>

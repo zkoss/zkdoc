@@ -9,15 +9,15 @@ discussed in the previous sections.
 In this section and subsections, we will focus on the model that ZK
 components support directly without custom glue logic. For example,
 implementing <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>
-to control the display of <javadoc>org.zkoss.zul.Listbox</javadoc> and
-<javadoc>org.zkoss.zul.Grid</javadoc>, and
+to control the display of [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) and
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html), and
 <javadoc type="interface">org.zkoss.zul.ChartModel</javadoc> to control
-<javadoc>org.zkoss.zul.Chart</javadoc>.
+[org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html).
 
 In addition to implementing these models, you could use one of the
 predefined implementations such as
-<javadoc>org.zkoss.zul.SimpleListModel</javadoc> and
-<javadoc>org.zkoss.zul.SimplePieModel</javadoc>. For detailed
+[org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html) and
+[org.zkoss.zul.SimplePieModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimplePieModel.html). For detailed
 description, please refer to the following sections.
 
 # Model-Driven Rendering
@@ -100,7 +100,7 @@ that you have a `ListModelList persons`, then:
 
 EL is another common way to assign the model. For example, assume you
 have a variable resolver called `foo.FooVariableResolver` implementing
-<javadoc>org.zkoss.xel.VariableResolver</javadoc> as follows.
+[org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html) as follows.
 
 ```java
 public class FooVariableResolver implements VariableResolver {

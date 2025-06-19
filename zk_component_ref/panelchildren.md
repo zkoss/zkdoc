@@ -3,7 +3,7 @@
 # Panel Children
 
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
-- Java API: <javadoc>org.zkoss.zul.Panelchildren</javadoc>
+- Java API: [org.zkoss.zul.Panelchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panelchildren.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wnd.Panelchildren</javadoc>
 

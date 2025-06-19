@@ -3,7 +3,7 @@
 # Treeitem
 
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: <javadoc>org.zkoss.zul.Treeitem</javadoc>
+- Java API: [org.zkoss.zul.Treeitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treeitem.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Treeitem</javadoc>
 
 
@@ -151,7 +151,7 @@ in regard to SelectionControl customization.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. It is useful to implement load-on-demand
 by listening to the onOpen event, and creating components when the first
 time the component is opened.</p></td>

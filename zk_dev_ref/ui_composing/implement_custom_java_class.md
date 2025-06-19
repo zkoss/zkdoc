@@ -4,7 +4,7 @@
 
 As described in the earlier sections, a macro component is instantiated
 to represent a regular macro. By default,
-<javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc> is assumed (and
+[org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html) is assumed (and
 instantiated). However, you can also provide a custom Java class to
 provide a better API to simplify the access and to encapsulate the
 implementation.
@@ -13,7 +13,7 @@ implementation.
 
 The implementation is straightforward. First, the custom Java class for
 macro components must extend from
-<javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc>. Second, though
+[org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html). Second, though
 optional, it is suggested to invoke
 <javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
 in the constructor[^1][^2], such that the template and the wiring of the
@@ -109,9 +109,9 @@ ua.setWho("Joe");
 
 # Macro Component and ID Space
 
-Like <javadoc>org.zkoss.zul.Window</javadoc>,
-<javadoc>org.zkoss.zk.ui.HtmlMacroComponent</javadoc> also implements
-<javadoc>org.zkoss.zk.ui.IdSpace</javadoc>. It means that a macro
+Like [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html),
+[org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html) also implements
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html). It means that a macro
 component (excluding inline macros) is a space owner. In other words, it
 is free to use whatever identifiers to identify components inside the
 template.

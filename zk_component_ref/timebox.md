@@ -3,7 +3,7 @@
 # Timebox
 
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
-- Java API: <javadoc>org.zkoss.zul.Timebox</javadoc>
+- Java API: [org.zkoss.zul.Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.db.Timebox</javadoc>
 
 

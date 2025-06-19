@@ -1,8 +1,8 @@
 # File Upload
 
-<javadoc>org.zkoss.zul.Button</javadoc>,
-<javadoc>org.zkoss.zul.Toolbarbutton</javadoc> and
-<javadoc>org.zkoss.zul.Menuitem</javadoc> support file upload
+[org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html),
+[org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html) and
+[org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html) support file upload
 out-of-box. In other words, you just need to enable it with the steps
 below:
 
@@ -88,7 +88,7 @@ server to a local folder. For example,
 
 The file could be a static resource, an input stream, a file, a URL and
 others. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
-and <javadoc>org.zkoss.zul.Filedownload</javadoc> for more information.
+and [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html) for more information.
 
 ## File Download Link
 

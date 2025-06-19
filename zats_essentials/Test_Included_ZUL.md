@@ -2,7 +2,7 @@
 
 `Since 1.1.0`
 
-ZK provides the <javadoc>org.zkoss.zul.Include</javadoc> component[^1]
+ZK provides the [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component[^1]
 and
 <javadoc method="createComponents(String, Component, Map)">org.zkoss.zk.ui.Execution</javadoc>
 method[^2] to include and/or reuse ZUL pages or others such as servlet

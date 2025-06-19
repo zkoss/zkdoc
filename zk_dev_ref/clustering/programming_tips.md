@@ -36,9 +36,8 @@ Event listeners have to be serializable. Otherwise, it will be ignored
 after serialization.
 
 The simplest way to make an event listener serializable is to implement
-<javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>
-(available since 5.0.6), instead of
-<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>.
+[org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html)
+(available since 5.0.6), instead of [org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html).
 
 For example,
 
@@ -53,8 +52,8 @@ button.addEventListener(Events.ON_CLICK,
 
 ## Data Models
 
-The data models, such as <javadoc>org.zkoss.zul.ListModel</javadoc> and
-<javadoc>org.zkoss.zul.ChartModel</javadoc>, have to be serializable.
+The data models, such as [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) and
+[org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html), have to be serializable.
 Otherwise, the UI object (such as grid) won't behave correctly. The
 implementations provided by ZK are serializable. However, the items to
 be stored in the data models have to be serializable too.
@@ -62,8 +61,8 @@ be stored in the data models have to be serializable too.
 ## Composers
 
 If you extend from ZK built-in composer like
-<javadoc>org.zkoss.zk.ui.util.GenericAutowireComposer</javadoc>, or
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> you have to
+[org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html), or
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) you have to
 make sure all of its members are serializable (or transient), since the
 implementation will keep a reference in the applied component.
 

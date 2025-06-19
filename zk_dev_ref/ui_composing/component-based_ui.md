@@ -6,10 +6,10 @@ composing an UI object is like assembling components. To alter UI one
 has to modify the states and relationships of components.
 
 For example, as shown below, we declared a
-<javadoc>org.zkoss.zul.Window</javadoc> component, enabling the border
+[org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html) component, enabling the border
 property to normal and setting its width to a definite 250 pixels.
-Enclosed in the <javadoc>org.zkoss.zul.Window</javadoc> component are
-two <javadoc>org.zkoss.zul.Button</javadoc> components.
+Enclosed in the [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html) component are
+two [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) components.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_hello.png)
 
@@ -23,9 +23,9 @@ might have multiple children.
 
 Some components accept only certain types of components as children.
 Some do not allow to have any children at all. For example,
-<javadoc>org.zkoss.zul.Grid</javadoc> in XUL accepts
-<javadoc>org.zkoss.zul.Columns</javadoc> and
-<javadoc>org.zkoss.zul.Rows</javadoc> as children only.
+[org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html) in XUL accepts
+[org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html) and
+[org.zkoss.zul.Rows](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rows.html) as children only.
 
 A component without any parents is called a **root component**. Each
 page is allowed to have multiple root components, even though this does
@@ -120,7 +120,7 @@ Both a desktop and a page can be created automatically when ZK Loader
 loads a ZUML page or calls a richlet
 (<javadoc type="interface" method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>).
 The second page is created when the
-<javadoc>org.zkoss.zul.Include</javadoc> component includes another page
+[org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component includes another page
 with the defer mode. For example, two pages will be created if the
 following is visited:
 
@@ -132,7 +132,7 @@ following is visited:
 ```
 
 Notice that if the mode is not specified (i.e., the instant mode),
-<javadoc>org.zkoss.zul.Include</javadoc> will not be able to create a
+[org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) will not be able to create a
 new page. Rather, it will append all components created by `another.zul`
 as its own child components. For example,
 

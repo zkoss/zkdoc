@@ -82,7 +82,7 @@ public class EventComposer extends SelectorComposer<Component> {
 # CalendarsEvent
 
 ZK will call your event listener method with an
-<javadoc>org.zkoss.calendar.event.CalendarsEvent</javadoc> as a
+[org.zkoss.calendar.event.CalendarsEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/event/CalendarsEvent.html) as a
 parameter when one of the `ON_ITEM_*` events is triggered. So you should
 declare your method signature like:
 

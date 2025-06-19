@@ -121,7 +121,7 @@ The idea is simple: when
 is called, we **inject** a special fragment to denote the content, such
 that each different theme is represented with a different URL. The
 injection can be done easily with the inner class called
-<javadoc>org.zkoss.zk.ui.util.ThemeProvider.Aide</javadoc>. For example,
+[org.zkoss.zk.ui.util.ThemeProvider.Aide](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider/Aide.html). For example,
 
 ```java
 final String fsc = getFontSizeCookie(exec);
@@ -243,7 +243,7 @@ public class CacheableThemeProvider implements ThemeProvider{
 # How to Specify the Media Types
 
 In addition to String instances, you can return instances of
-<javadoc>org.zkoss.web.servlet.StyleSheet</javadoc> in the returned
+[org.zkoss.web.servlet.StyleSheet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/StyleSheet.html) in the returned
 collection of
 <javadoc method="getThemeURIs(org.zkoss.zk.ui.Execution,java.util.List)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>,
 such that you can control more about the generated CSS link. For
@@ -261,4 +261,4 @@ public Collection getThemeURIs(Execution exec, List uris) {
 
 | Version | Date      | Content                                                                            |
 |---------|-----------|------------------------------------------------------------------------------------|
-| 5.0.3   | June 2010 | The media type was allowed in <javadoc>org.zkoss.web.servlet.StyleSheet</javadoc>. |
+| 5.0.3   | June 2010 | The media type was allowed in [org.zkoss.web.servlet.StyleSheet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/StyleSheet.html). |

@@ -25,8 +25,8 @@ to the client, so developers can't dynamically change the template
 content. For this purpose, we provide two kinds of Java classes for
 those who favor MVC:
 
-- <javadoc>org.zkoss.zuti.zul.ShadowTemplate</javadoc>
-- <javadoc>org.zkoss.zuti.zul.CollectionTemplate</javadoc>
+- [org.zkoss.zuti.zul.ShadowTemplate](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/ShadowTemplate.html)
+- [org.zkoss.zuti.zul.CollectionTemplate](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/CollectionTemplate.html)
 
 They are NOT like the typical shadow elements defined in zul but
 components you can only create in Java code.
@@ -50,9 +50,9 @@ Like wiring a UI component, you can [ wire a shadow component](ZK_Developer's_Re
 
 # Use ShadowTemplate
 
-<javadoc>org.zkoss.zuti.zul.ShadowTemplate</javadoc> is a utility class
+[org.zkoss.zuti.zul.ShadowTemplate](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/ShadowTemplate.html) is a utility class
 that allows developers to apply shadow elements in Java class. It has a
-similar behavior to <javadoc>org.zkoss.zuti.zul.Apply</javadoc>; for
+similar behavior to [org.zkoss.zuti.zul.Apply](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/Apply.html); for
 example, developers can specify the template or pass parameters. The
 difference is that developers must designate a boolean value, called
 **autodrop**, to indicate whether to drop those rendered children or
@@ -138,10 +138,10 @@ whichever hosts you want) will cause rendered components to be detached.
 
 # Use CollectionTemplate
 
-<javadoc>org.zkoss.zuti.zul.CollectionTemplate</javadoc> is similar to
-<javadoc>org.zkoss.zuti.zul.ShadowTemplate</javadoc>. The difference is
-that developers can assign <javadoc>org.zkoss.zul.ListModel</javadoc>
-and <javadoc>org.zkoss.zuti.zul.CollectionTemplateResolver</javadoc> for
+[org.zkoss.zuti.zul.CollectionTemplate](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/CollectionTemplate.html) is similar to
+[org.zkoss.zuti.zul.ShadowTemplate](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/ShadowTemplate.html). The difference is
+that developers can assign [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
+and [org.zkoss.zuti.zul.CollectionTemplateResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/CollectionTemplateResolver.html) for
 iterative rendering.
 
 ## Example
@@ -179,7 +179,7 @@ public void doAfterCompose(Component comp) throws Exception {
 }
 ```
 
-Developers have to prepare a <javadoc>org.zkoss.zul.ListModel</javadoc>
+Developers have to prepare a [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 and assign it to the `CollectionTemplate` instance; they will then see
 that the template is created multiple times. Similarly, in cases where
 either the template or model is changed, `apply(host)` must be triggered
@@ -190,7 +190,7 @@ as well, no matter if **autodrop** is true or false.
 ## CollectionTemplateResolver
 
 More advanced usage is to assign
-<javadoc>org.zkoss.zuti.zul.CollectionTemplateResolver</javadoc> to
+[org.zkoss.zuti.zul.CollectionTemplateResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/CollectionTemplateResolver.html) to
 resolve template by evaluating the variable reference from model in
 runtime.
 
@@ -255,7 +255,7 @@ template name or URI, and you will see template "male" is rendered when
 the gender of `Person` variable is male. That means,
 `CollectionTemplate` provides not only `setTemplate` and
 `setTemplateURI` but also supports determining template dynamically by
-giving <javadoc>org.zkoss.zuti.zul.CollectionTemplateResolver</javadoc>
+giving [org.zkoss.zuti.zul.CollectionTemplateResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/CollectionTemplateResolver.html)
 like line 14, so the template will be resolved by evaluating the
 variable reference from model in runtime.
 

@@ -148,7 +148,7 @@ is equivalent to
 
 Depending on the component's implementation, the text nested in an XML
 element can be interpreted as the value of a component's particular
-property. For example, <javadoc>org.zkoss.zul.Html</javadoc> is one of
+property. For example, [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html) is one of
 these kinds of components, and
 
 ```xml

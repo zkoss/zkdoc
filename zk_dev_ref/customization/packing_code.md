@@ -67,7 +67,7 @@ public class MyJARInit implements WebAppInit {
 ```
 
 Notice that many configurations can be done by accessing
-<javadoc>org.zkoss.zk.ui.util.Configuration</javadoc> directly. If you
+[org.zkoss.zk.ui.util.Configuration](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Configuration.html) directly. If you
 want to access it in
 <javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>,
 invoke

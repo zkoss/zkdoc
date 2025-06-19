@@ -15,7 +15,7 @@ target page. In ZUML, it is done by the use of [the page directive](ZUML_Referen
 Then we could retrieve it by use of
 <javadoc method="getPage(java.lang.String)" type="interface">org.zkoss.zk.ui.Desktop</javadoc>
 or by use of a utility class called
-<javadoc>org.zkoss.zk.ui.Path</javadoc>. For example, the following
+[org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html). For example, the following
 statements could access the *main* window above:
 
 ```java

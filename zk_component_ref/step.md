@@ -3,7 +3,7 @@
 # Step
 
 - Demonstration: \[<https://www.zkoss.org/zkdemo/menu/stepbar>\| Step\]
-- Java API: <javadoc>org.zkoss.zkmax.zul.Step</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Step](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Step.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Step</javadoc>
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}

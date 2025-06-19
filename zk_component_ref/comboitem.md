@@ -3,7 +3,7 @@
 # Comboitem
 
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
-- Java API: <javadoc>org.zkoss.zul.Comboitem</javadoc>
+- Java API: [org.zkoss.zul.Comboitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Comboitem.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Comboitem</javadoc>
 
 

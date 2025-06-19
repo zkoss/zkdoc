@@ -3,7 +3,7 @@
 # Slider
 
 - Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
-- Java API: <javadoc>org.zkoss.zul.Slider</javadoc>
+- Java API: [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.inp.Slider</javadoc>
 
 
@@ -133,7 +133,7 @@ of the knob. ScaleInput is the scale ratio of the input size.
 <p>onScroll</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ScrollEvent</javadoc> Denotes the content
+[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content
 of a scrollable component has been scrolled by the user.</p></td>
 </tr>
 <tr class="even">
@@ -141,7 +141,7 @@ of a scrollable component has been scrolled by the user.</p></td>
 <p>onScrolling</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ScrollEvent</javadoc> Denotes that the
+[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
 user is scrolling a scrollable component. Notice that the component's
 content (at the server) won't be changed until onScroll is received.
 Thus, you have to invoke the <code>getPos</code> method in the

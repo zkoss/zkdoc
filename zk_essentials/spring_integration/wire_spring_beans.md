@@ -82,7 +82,7 @@ public class AuthenticationInit implements Initiator {
 ```
 
 -   Line 9: After applying `@VariableResolver` and `@WireVariable`, use
-    <javadoc>org.zkoss.zk.ui.select.Selectors</javadoc> to wire Spring
+    [org.zkoss.zk.ui.select.Selectors](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html) to wire Spring
     beans manually.
 
 After completing above steps, integration of Spring is done. The

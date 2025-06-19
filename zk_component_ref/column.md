@@ -3,7 +3,7 @@
 # Column
 
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
-- Java API: <javadoc>org.zkoss.zul.Column</javadoc>
+- Java API: [org.zkoss.zul.Column](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.grid.Column</javadoc>
 
 
@@ -68,7 +68,7 @@ column is mainly to define attributes for each cell in the grid.
 <p><code>onSort</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) Denotes user has
 sorted the row of this column.</p></td>
 </tr>
 <tr class="even">
@@ -76,7 +76,7 @@ sorted the row of this column.</p></td>
 <p><code>onGroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition="pe" %}
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) {% include edition-availability.html edition="pe" %}
 Denotes user has grouped all the cells under a column.</p></td>
 </tr>
 <tr class="odd">
@@ -84,7 +84,7 @@ Denotes user has grouped all the cells under a column.</p></td>
 <p><code>onUngroup</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SortEvent</javadoc> {% include edition-availability.html edition="pe" %}
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) {% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %} Denotes user has ungrouped all the
 cells under a column.</p></td>
 </tr>

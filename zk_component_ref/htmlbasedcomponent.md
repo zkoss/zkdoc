@@ -3,7 +3,7 @@
 # Html Based Component
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+- Java API: [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
 - JavaScript API: <javadoc directory="jsdoc">zk.Widget</javadoc>
 
 # Employment/Purpose
@@ -30,7 +30,7 @@ implement methods common to HTML based components.
 <p><code>onDrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.DropEvent</javadoc> Denotes a user has
+[org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html) Denotes a user has
 dropped the dragged target to a component.</p></td>
 </tr>
 <tr class="even">
@@ -78,7 +78,7 @@ org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=
 <p><code>onOK</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.KeyEvent</javadoc></p>
+[org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)</p>
 <p>Denotes a user has pressed the <strong>ENTER</strong> key.</p></td>
 </tr>
 <tr class="even">
@@ -86,7 +86,7 @@ org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=
 <p><code>onCancel</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.KeyEvent</javadoc></p>
+[org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)</p>
 <p>Denotes a user has pressed the <strong>ESC</strong> key.</p></td>
 </tr>
 <tr class="odd">
@@ -94,7 +94,7 @@ org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=
 <p><code>onCtrlKey</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.KeyEvent</javadoc></p>
+[org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)</p>
 <p>Denotes a user has pressed a special key, such as PgUp, Home, and a
 key combined with the Ctrl or Alt key. Refer to the
 <code>ctrlKeys</code> Property section below for details.</p></td>
@@ -104,7 +104,7 @@ key combined with the Ctrl or Alt key. Refer to the
 <p><code>onAfterSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.AfterSizeEvent</javadoc> It's fired
+[org.zkoss.zk.ui.event.AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html) It's fired
 after</p>
 <ul>
 <li>a user resizes a sizable component in a browser</li>
@@ -116,7 +116,7 @@ after</p>
 <p><code>onCreate</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CreateEvent</javadoc></p></td>
+[org.zkoss.zk.ui.event.CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)</p></td>
 </tr>
 </tbody>
 </table>

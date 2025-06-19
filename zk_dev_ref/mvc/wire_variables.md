@@ -1,6 +1,6 @@
 # Wire Variables
 
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> not only
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) not only
 wires UI components, but also wires beans from implicit objects and
 registered variable resolvers.
 
@@ -57,7 +57,7 @@ public class FooComposer extends SelectorComposer<Gird> {
 }
 ```
 
-To have <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc> wire
+To have [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) wire
 a variable, you have to annotate it with the
 <javadoc type="interface">org.zkoss.zk.ui.select.annotation.WireVariable</javadoc>
 annotation. For example,
@@ -76,10 +76,10 @@ public class FooComposer extends SelectorComposer<Gird> {
 
 ## Wire Spring-managed Beans
 
-If you'd like <javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>
+If you'd like [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 to wire the Spring-managed beans, you can register the Spring variable
 resolver,
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc>
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 with `@VariableResolver`. Then, you can annotate `@WireVariable` to wire
 a Spring-managed bean. It's wired according to its variable name as the
 bean's \*id\*. For example,
@@ -99,7 +99,7 @@ public class PasswordSetter extends SelectorComposer<Window> {
 }
 ```
 
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc> is
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) is
 a variable resolver used to retrieve the Spring-managed bean, so the
 variable will be retrieved and instantiated by Spring.
 
@@ -178,8 +178,8 @@ more detailed information.
 ## Wire other variables in GenericForwardComposer based composers
 
 Composers extending
-<javadoc>org.zkoss.zk.ui.util.GenericAutowireComposer</javadoc> such as
-<javadoc>org.zkoss.zk.ui.util.GenericForwardComposer</javadoc> will
+[org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html) such as
+[org.zkoss.zk.ui.util.GenericForwardComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericForwardComposer.html) will
 automatically wire variables based on convention during
 doAfterCompose(Component comp).
 
@@ -211,12 +211,12 @@ properties:
 
 The approach to work with CDI is similar to the approach for Spring,
 except the variable resolver for CDI is
-<javadoc>org.zkoss.zkplus.cdi.DelegatingVariableResolver</javadoc>.
+[org.zkoss.zkplus.cdi.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/cdi/DelegatingVariableResolver.html).
 
 # Wiring Sequence
 
 When extending from
-<javadoc>org.zkoss.zk.ui.select.SelectorComposer</javadoc>, the fields
+[org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), the fields
 and methods with the proper annotations will be wired automatically.
 Here is the sequence of wiring:
 

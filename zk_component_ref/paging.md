@@ -3,7 +3,7 @@
 # Paging
 
 - Demonstration: [Paging (with Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with Tree)](http://www.zkoss.org/zkdemo/tree/paging)
-- Java API: <javadoc>org.zkoss.zul.Paging</javadoc>
+- Java API: [org.zkoss.zul.Paging](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Paging.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Paging</javadoc>
 
 
@@ -36,7 +36,7 @@ time, then you can use the paging components as follows.
 ![](/zk_component_ref/images/paging_mold_default.png)
 
 When a user clicks on the hyperlinks, the `onPaging` event is sent with
-an instance of <javadoc>org.zkoss.zul.event.PagingEvent</javadoc> to the
+an instance of [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) to the
 paging component. To decide which portion of your 100 items are visible,
 you should add a listener to the paging component. Please note that the
 code below is pseudo code. For real examples, please refer to [User Cases](#Use_Cases) below.
@@ -131,7 +131,7 @@ client side which is detached during paging and throws mounting error.
 <p><code>onPaging</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zul.event.PagingEvent</javadoc></p>
+[org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)</p>
 <p>Notifies one of the pages of a multi-page component is selected by
 the user.</p></td>
 </tr>

@@ -3,7 +3,7 @@
 # Frozen
 
 - Demonstration: [Spreadsheet Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
-- Java API: <javadoc>org.zkoss.zul.Frozen</javadoc>
+- Java API: [org.zkoss.zul.Frozen](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Frozen.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.mesh.Frozen</javadoc>
 
 

@@ -3,7 +3,7 @@
 # Menupopup
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
-- Java API: <javadoc>org.zkoss.zul.Menupopup</javadoc>
+- Java API: [org.zkoss.zul.Menupopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menupopup.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.menu.Menupopup</javadoc>
 

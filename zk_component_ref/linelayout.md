@@ -2,7 +2,7 @@
 
 # Linelayout
 
-- Java API: <javadoc>org.zkoss.zkmax.zul.Linelayout </javadoc>
+- Java API: [org.zkoss.zkmax.zul.Linelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Linelayout.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Linelayout
   </javadoc>
 

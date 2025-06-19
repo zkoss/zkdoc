@@ -4,7 +4,7 @@
 
 - Demonstration: [Button](http://www.zkoss.org/zkdemo/input/button) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
-- Java API: <javadoc>org.zkoss.zul.Button</javadoc>
+- Java API: [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Button</javadoc>
 
 
@@ -53,7 +53,7 @@ can be used to upload files. All you need to do is:
 ```
 
 When the file is uploaded, an instance of
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> is sent to the
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) is sent to the
 button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
 <javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>.
@@ -303,7 +303,7 @@ you could make a button used for uploading files. For example,
 ```
 
 Once the file(s) are uploaded, the onUpload event will be sent with an
-instance of <javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc>. And,
+instance of [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html). And,
 you could retrieve the uploaded files from
 <javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
 and
@@ -373,7 +373,7 @@ for inherited functions.
 <p><code>onFocus</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes when a component gets the focus.</p></td>
 </tr>
 <tr class="even">
@@ -381,7 +381,7 @@ for inherited functions.
 <p><code>onBlur</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes when a component loses the focus.</p></td>
 </tr>
 <tr class="odd">
@@ -389,7 +389,7 @@ for inherited functions.
 <p><code>onUpload</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
 uploaded a file to the component.</p></td>
 </tr>
 </tbody>

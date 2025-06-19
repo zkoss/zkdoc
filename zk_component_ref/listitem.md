@@ -3,7 +3,7 @@
 # Listitem
 
 - Demonstration: [Listbox (Keystroke Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
-- Java API: <javadoc>org.zkoss.zul.Listitem</javadoc>
+- Java API: [org.zkoss.zul.Listitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listitem.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listitem</javadoc>
 
 

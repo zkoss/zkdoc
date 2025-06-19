@@ -3,7 +3,7 @@
 # Checkbox
 
 - Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
-- Java API: <javadoc>org.zkoss.zul.Checkbox</javadoc>
+- Java API: [org.zkoss.zul.Checkbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Checkbox.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Checkbox</javadoc>
 
 
@@ -144,7 +144,7 @@ Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 <p><code>onFocus</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus.</p></td>
 </tr>
 <tr class="even">
@@ -152,7 +152,7 @@ gets the focus.</p></td>
 <p><code>onBlur</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc> Denotes when a component
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus.</p></td>
 </tr>
 <tr class="odd">
@@ -160,7 +160,7 @@ loses the focus.</p></td>
 <p>onCheck</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc> Denotes when a
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a
 component is checked or unchecked.</p></td>
 </tr>
 </tbody>

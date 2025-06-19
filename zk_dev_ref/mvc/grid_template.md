@@ -55,7 +55,7 @@ grouping and non-grouping objects).
 
 - Note the *groupingInfo* is used to get the information of the grouping
   data. Please refer to
-  <javadoc>org.zkoss.zul.ext.GroupingInfo</javadoc>.
+  [org.zkoss.zul.ext.GroupingInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupingInfo.html).
 
 # Version History
 

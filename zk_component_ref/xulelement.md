@@ -3,7 +3,7 @@
 # Xul Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.XulElement</javadoc>
+- Java API: [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.Widget</javadoc>
 
 # Employement/Purpose

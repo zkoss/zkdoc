@@ -3,7 +3,7 @@
 # Idspace
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Idspace</javadoc>
+- Java API: [org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.wgt.Idspace</javadoc>
 
 # Employment/Purpose

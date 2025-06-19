@@ -3,7 +3,7 @@
 # Stepbar
 
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Stepbar</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
 - JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Stepbar</javadoc>
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
@@ -58,8 +58,8 @@ mode, they can only activate in order.
 
 The step model associated with this stepbar. (Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
-You can use <javadoc>org.zkoss.zkmax.zul.DefaultStepModel</javadoc>,
-wrap an existing <javadoc>org.zkoss.zul.ListModelList</javadoc> by
+You can use [org.zkoss.zkmax.zul.DefaultStepModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/DefaultStepModel.html),
+wrap an existing [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) by
 DefaultStepModel's constructor, or implement
 [StepModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/StepModel.html).
 
@@ -68,7 +68,7 @@ DefaultStepModel's constructor, or implement
 The renderer used to render each step.(Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
 
 You can specify your own
-<javadoc>org.zkoss.zkmax.zul.StepRenderer</javadoc> at this attribute to
+[org.zkoss.zkmax.zul.StepRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/StepRenderer.html) at this attribute to
 renders a Step object with your data.
 
 ## WrappedLabels
@@ -98,7 +98,7 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 <p><code>onChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Represents an event caused by a user's selection changed at the
 client.</p></td>
 </tr>

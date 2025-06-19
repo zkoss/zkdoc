@@ -3,7 +3,7 @@
 # Iframe
 
 - Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
-- Java API: <javadoc>org.zkoss.zul.Iframe</javadoc>
+- Java API: [org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.utl.Iframe</javadoc>
 
 
@@ -57,7 +57,7 @@ Live iframe demo is available [in the zk demo](https://www.zkoss.org/zkdemo/comp
 
 When the user navigates the `iframe` component to another URL (or
 bookmark), an object of
-<javadoc>org.zkoss.zk.ui.event.URIEvent</javadoc> is sent to the
+[org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html) is sent to the
 `iframe` component. This event is usually used to bookmark the status of
 the `iframe` component, such that the right content can be restored
 later.
@@ -94,8 +94,8 @@ window, aka., another desktop if a ZUML document is included.
 
 It is illegal to access components attached to other desktops[^1]. If
 you want to retrieve component, you may use
-<javadoc>org.zkoss.zul.Include</javadoc> instead of
-<javadoc>org.zkoss.zul.Iframe</javadoc>. Or, you could use [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
+[org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) instead of
+[org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html). Or, you could use [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
@@ -179,7 +179,7 @@ element (rather than the widget).
 <p><code>onURIChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.URIEvent</javadoc></p>
+[org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html)</p>
 <p>Denotes the associated URI (<code>src</code>) has been changed by
 user.</p>
 <p>Use <code>getURI()</code> to retrieve the URI being changed

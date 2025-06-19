@@ -5,7 +5,7 @@ a composite component is an approach to compose a component based on a
 template. Unlike a macro component, a composite component has to create
 and wire the child components by itself, and handle ID space if
 necessary. The advantage is that a composite component can extend from
-any component, such as <javadoc>org.zkoss.zul.Row</javadoc>, such that
+any component, such as [org.zkoss.zul.Row](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Row.html), such that
 it is easier to fit to any situation (and no need for the inline
 concept).
 
@@ -21,10 +21,10 @@ it is easier), while using a composite component otherwise.
 # Implement a Composite Component
 
 First, you have to decide which component to extend from.
-<javadoc>org.zkoss.zul.Div</javadoc> is a common choice as it is a
+[org.zkoss.zul.Div](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Div.html) is a common choice as it is a
 simple component. However, here our example extends from
-<javadoc>org.zkoss.zul.Row</javadoc>, so it can be used under
-<javadoc>org.zkoss.zul.Rows</javadoc>, which the regular macros cannot.
+[org.zkoss.zul.Row](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Row.html), so it can be used under
+[org.zkoss.zul.Rows](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rows.html), which the regular macros cannot.
 
 Second, you have to implement a template (in a ZUML document) to define
 what child components the composite component has. Then, you have to
@@ -52,7 +52,7 @@ Suppose we have a template as follows, and it is placed at
 To implement a Java class we shall:
 
 1.  Extend from the component class you want.
-2.  (Optional) Implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc> to
+2.  (Optional) Implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) to
     make it an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 3.  Render the template in the constructor by the use of
     <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
@@ -159,7 +159,7 @@ public class Username extends Row implements IdSpace {
 <javadoc method="newVariableResolvers(java.lang.Class, java.lang.Class)">org.zkoss.zk.ui.select.Selectors</javadoc>
 will look for the `@VariableResolver` annotation and instantiate it
 automatically. As shown, we annotate
-<javadoc>org.zkoss.zkplus.spring.DelegatingVariableResolver</javadoc> to
+[org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) to
 resolve Spring-managed bean.
 
 For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
@@ -167,7 +167,7 @@ For more information, please refer to [the Wire Variables section]({{site.baseur
 ### ID Space
 
 Unless you extend a component that is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space)
-(such as <javadoc>org.zkoss.zul.Window</javadoc>), all child components
+(such as [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)), all child components
 specified in the template will be in the same ID space as its parent. It
 might be convenient at the first glance. However, it will cause ID
 conflict if we have multiple instances of the same composite component.
@@ -175,7 +175,7 @@ Thus, it is generally suggested to make the composite component a space
 owner.
 
 It can be done easily by implementing an extra interface
-<javadoc>org.zkoss.zk.ui.IdSpace</javadoc>. No other method needs to be
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html). No other method needs to be
 implemented.
 
 ```java
@@ -184,7 +184,7 @@ public class Username extends Row implements IdSpace {
 ```
 
 Of course, if you prefer not to have an additional ID space, you don't
-need to implement <javadoc>org.zkoss.zk.ui.IdSpace</javadoc>.
+need to implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html).
 
 # Use Composite Component
 

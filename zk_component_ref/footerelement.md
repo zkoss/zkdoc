@@ -3,7 +3,7 @@
 # Footer Element
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.impl.FooterElement</javadoc>
+- Java API: [org.zkoss.zul.impl.FooterElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.mesh.FooterWidget</javadoc>
 

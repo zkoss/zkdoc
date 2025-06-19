@@ -1,13 +1,13 @@
 # Overview
 
 A language
-(<javadoc>org.zkoss.zk.ui.metainfo.LanguageDefinition</javadoc>) is a
+([org.zkoss.zk.ui.metainfo.LanguageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html)) is a
 collection of component definitions. It is also known as a component
 set.
 
-For example, <javadoc>org.zkoss.zul.Window</javadoc>,
-<javadoc>org.zkoss.zul.Button</javadoc> and
-<javadoc>org.zkoss.zul.Combobox</javadoc> all belong to the same
+For example, [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html),
+[org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) and
+[org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html) all belong to the same
 language called `xul/html`. It is a ZK variant of XUL (and also known as
 `zul`).
 
@@ -21,7 +21,7 @@ For introduction of languages vs standard namespaces, please refer to
 
 When parsing a ZUML document, ZK Loader has to decide the language that
 a XML element is associated, such that the correct component definition
-(<javadoc>org.zkoss.zk.ui.metainfo.ComponentDefinition</javadoc>) can be
+([org.zkoss.zk.ui.metainfo.ComponentDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/ComponentDefinition.html)) can be
 resolved. For example, in the following example, ZK needs to know if
 `window` belongs to the xul/html language, so its component definition
 can be retrieved correctly.

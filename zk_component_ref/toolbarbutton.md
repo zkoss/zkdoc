@@ -4,7 +4,7 @@
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
-- Java API: <javadoc>org.zkoss.zul.Toolbarbutton</javadoc>
+- Java API: [org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zul.wgt.Toolbarbutton</javadoc>
 
@@ -66,7 +66,7 @@ See also : [ Button]({{site.baseurl}}/zk_component_ref/essential_components/butt
 
 In the toggle mode (`mode="toggle"`), the toolbarbutton will display as
 checked after a user clicked it, and will be released after the next
-click. It will fire <javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc>
+click. It will fire [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html)
 when state changed.
 
 ```xml
@@ -100,7 +100,7 @@ is:
 ```
 
 When the file is uploaded, an instance of
-<javadoc>org.zkoss.zk.ui.event.UploadEvent</javadoc> is sent to the
+[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) is sent to the
 button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
 <javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>.
@@ -128,7 +128,7 @@ examining the return value of
 <p>onCheck</p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.CheckEvent</javadoc> Denotes when
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when
 toolbarbutton is checked , only available in toggle mode . (since ZK
 6.0.0)</p></td>
 </tr>
@@ -158,5 +158,5 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 
 
 
-[^1]: Any <javadoc>org.zkoss.zul.Button</javadoc> can be used to upload
+[^1]: Any [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) can be used to upload
     files too.

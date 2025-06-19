@@ -5,7 +5,7 @@ indicate that this event is very important and should be sent to the
 server even if there is no server side listener registered for the
 event. For other flags such as CE_NON_DEFERRABLE (send immediately) or
 CE_REPEAT_IGNORE please refer to the Java API:
-<javadoc>org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>.
+[org.zkoss.zk.ui.sys.ComponentCtrl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html).
 
 For example, we require the <mp>onClear</mp> event to be sent to the
 server at all times so we are required to declare the following:

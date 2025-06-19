@@ -3,7 +3,7 @@
 # Constraint
 
 - Demonstration: N/A
-- Java API: <javadoc>org.zkoss.zul.Constraint</javadoc>
+- Java API: [org.zkoss.zul.Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

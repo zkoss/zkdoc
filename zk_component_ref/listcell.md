@@ -3,7 +3,7 @@
 # Listcell
 
 - Demonstration: [Listbox (Keystroke Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
-- Java API: <javadoc>org.zkoss.zul.Listcell</javadoc>
+- Java API: [org.zkoss.zul.Listcell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listcell.html)
 - JavaScript API: <javadoc directory="jsdoc">zul.sel.Listcell</javadoc>
 
 

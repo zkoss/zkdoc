@@ -4,7 +4,7 @@
 
 - Demonstration:
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
-- Java API: <javadoc>org.zkoss.zkmax.zul.Splitlayout</javadoc>
+- Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
 - JavaScript API:
   <javadoc directory="jsdoc">zkmax.layout.Splitlayout</javadoc>
 - {% include edition-availability.html edition="pe" %}
@@ -81,7 +81,7 @@ specified.
 ### onOpen Event
 
 When a splitlayout is collapsed or opened by a user, the `onOpen` event
-(<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc>) is sent to the
+([org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)) is sent to the
 application.
 
 ## Widths and Heights
@@ -132,7 +132,7 @@ not be smaller than the minWidths/minHeights.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>When a splitter is collapsed or opened by a user, the
 <code>onOpen</code> event is sent to the application.</p></td>
 </tr>
@@ -141,7 +141,7 @@ not be smaller than the minWidths/minHeights.
 <p><code>onDivisionSize</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zkmax.zul.event.DivisionSizeEvent</javadoc>
+[org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html)
 Represents an event that indicates two inner size of
 splitlayout.</p></td>
 </tr>

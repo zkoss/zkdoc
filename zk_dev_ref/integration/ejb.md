@@ -16,7 +16,7 @@ any EJB guide).
 # Use JndiVariableResolver to Resolve EJB in EL Expressions
 
 Referencing an EJB in an EL expression is straightforward: specifying
-<javadoc>org.zkoss.zkplus.jndi.JndiVariableResolver</javadoc> in [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) in [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 For example,
 
 ```xml
@@ -42,7 +42,7 @@ about JNDI to it such as:
 </window>
 ```
 
-<javadoc>org.zkoss.zkplus.jndi.JndiVariableResolver</javadoc> will
+[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) will
 resolve variables in the following order:
 
 1.  java:comp/env
@@ -123,7 +123,7 @@ JNDI. For example,
 ```
 
 Then, we could retrieve the entity manager factory by use of
-<javadoc>org.zkoss.zkplus.jndi.JndiVariableResolver</javadoc>.
+[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html).
 
 # Source Code
 

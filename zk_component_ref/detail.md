@@ -3,7 +3,7 @@
 # Detail
 
 - Demonstration: [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
-- Java API: <javadoc>org.zkoss.zul.Detail</javadoc>
+- Java API: [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)
 - JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
 
 - {% include edition-availability.html edition="pe" %}
@@ -85,7 +85,7 @@ multiple detail rows are on the same row.
 <p><code>onOpen</code></p>
 </center></td>
 <td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc> Denotes user has
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. Note:</p>
 <p>unlike <code>onClose</code>, this event is only a notification. The
 client sends this event after opening or closing the component.</p>
