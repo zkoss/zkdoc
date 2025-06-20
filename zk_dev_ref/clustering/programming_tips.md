@@ -4,6 +4,25 @@ Objects that are referenced by a UI object, such as components, pages, desktop, 
 ## Marking properties as transient
 If you don't want a property to be serialized, use Java <code>transient</code> keyword when declaring the property. This tells the serialization mechanism to ignore the field when writing the object's state. After deserialization, the value of a transient field will be null.
 
+### Reinitializing transient fields
+For transient fields that need to be reinitialized after deserialization, implement the `readObject` method:
+
+```java
+public class MyViewModel implements Serializable {
+    private static final long serialVersionUID = 1L;
+    
+    // Transient field that needs reinitialization
+    private transient DatabaseConnection dbConnection;
+    
+    // Custom deserialization method
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+        // Reinitialize transient fields after deserialization
+        dbConnection = DatabaseFactory.getConnection();
+    }
+}
+```
+
 ## Attributes of UI Objects
 
 If the value of an attribute is not serializable, it will be ignored.
@@ -48,6 +67,19 @@ button.addEventListener(Events.ON_CLICK,
         ....
     }
   });
+```
+
+## Logger Field
+A common source of serialization issues is logger fields. Always declare logger fields as `static` to avoid serialization problems:
+
+> Static fields are not part of the object's serialized state, so they are ignored during serialization and deserialization. This is because static fields belong to the class itself, not to any particular object instance.
+
+```java
+// Correct - static logger
+private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
+
+// Incorrect - instance logger will cause serialization errors
+private final Logger logger = LoggerFactory.getLogger(getClass());
 ```
 
 ## Data Models
