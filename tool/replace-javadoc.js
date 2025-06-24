@@ -26,8 +26,8 @@ class JavadocReplacer {
     const relativePath = path.relative(this.rootDir, filePath);
     let replacements = 0;
     
-    // Pattern to match <javadoc>className</javadoc> and <javadoc type="interface">className</javadoc>
-    const javadocRegex = /<javadoc(?:\s+type="[^"]*")?>([^<]*)<\/javadoc>/g;
+    // Pattern to match <javadoc>className</javadoc>, <javadoc type="interface">className</javadoc>, <javadoc method="methodName">className</javadoc>, and combined attributes
+    const javadocRegex = /<javadoc(?:\s+(?:type|method)="[^"]*")*\s*>([^<]*)<\/javadoc>/g;
     
     const newContent = content.replace(javadocRegex, (match, className) => {
       // Clean up the class name (trim whitespace)
@@ -37,19 +37,31 @@ class JavadocReplacer {
         return match; // Skip empty javadoc tags
       }
       
+      // Extract method attribute if present
+      const methodMatch = match.match(/method="([^"]+)"/);
+      const methodName = methodMatch ? methodMatch[1] : null;
+      
       // Convert class name to URL path
       // e.g., org.zkoss.zul.ChartModel -> org/zkoss/zul/ChartModel.html
-      const urlPath = cleanClassName.replace(/\./g, '/') + '.html';
+      let urlPath = cleanClassName.replace(/\./g, '/') + '.html';
+      
+      // Add method anchor if method attribute exists
+      if (methodName) {
+        urlPath += '#' + methodName;
+      }
+      
       const fullUrl = this.javadocBaseUrl + urlPath;
       
       // Create markdown link with the class name as link text
-      const markdownLink = `[${cleanClassName}](${fullUrl})`;
+      const linkText = methodName ? `${cleanClassName}#${methodName}` : cleanClassName;
+      const markdownLink = `[${linkText}](${fullUrl})`;
       
       replacements++;
       this.replacementsLog.push({
         file: relativePath,
         original: match,
         className: cleanClassName,
+        method: methodName,
         converted: markdownLink,
         url: fullUrl
       });
@@ -181,6 +193,9 @@ class JavadocReplacer {
       for (const change of changesByFile[file]) {
         report += `  Original:   ${change.original}\n`;
         report += `  Class:      ${change.className}\n`;
+        if (change.method) {
+          report += `  Method:     ${change.method}\n`;
+        }
         report += `  Converted:  ${change.converted}\n`;
         report += `  URL:        ${change.url}\n\n`;
       }
