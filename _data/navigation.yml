@@ -1784,6 +1784,8 @@ zk_dev_ref:
         url: /zk_dev_ref/clustering/server_configuration
       - title: Programming Tips
         url: /zk_dev_ref/clustering/programming_tips
+      - title: Session Replication
+        url: /zk_dev_ref/clustering/session_replication
   - title: Integration
     url: /zk_dev_ref/integration/integration
     children:

@@ -22,6 +22,10 @@ Each AU request changes a Desktop's status of a session, if 2 AU
 requests are processed by 2 different clustering nodes and each one has
 its own session, then one session state might override another session.
 
+## Session Replication vs Sticky Sessions
+
+While sticky sessions are the recommended approach for ZK clustering, some environments require session replication for high availability. For detailed session replication setup and troubleshooting, see [Session Replication]({{site.baseurl}}/zk_dev_ref/clustering/session_replication).
+
 # Apache + Tomcat
 
 For configuring Apache + Tomcat, please refer to
