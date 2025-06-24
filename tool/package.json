@@ -1,0 +1,25 @@
+{
+  "name": "link-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate-links": "node validate-links.js",
+    "validate-links-save": "node validate-links.js --save",
+    "validate-by-books": "node validate-links.js --by-books",
+    "validate-by-books-save": "node validate-links.js --by-books --save",
+    "lowercase-links": "node lowercase-links.js",
+    "lowercase-links-dry": "node lowercase-links.js --dry-run",
+    "lowercase-links-save": "node lowercase-links.js --save-report",
+    "lowercase-nav-urls": "node lowercase-nav-urls.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "js-yaml": "^4.1.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

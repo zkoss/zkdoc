@@ -203,6 +203,42 @@ Total links converted: 3,892
 ```
 
 # javadoc link replacement
+## lowercase-nav-urls.js
+
+Converts URLs to lowercase for a specified book in `_data/navigation.yml` while preserving titles.
+
+### Usage
+```bash
+node lowercase-nav-urls.js <book-name>
+```
+
+### Example
+```bash
+node lowercase-nav-urls.js zk_dev_ref
+```
+
+### Features
+- Automatically creates a backup of navigation.yml before making changes
+- Shows all URL changes that were made
+- Preserves all titles unchanged
+- Lists available books if an invalid book name is provided
+- Counts and reports the number of changes made
+
+### Example Output
+```
+Backup created: /path/to/_data/navigation.yml.backup.1750413470926
+
+Processing "zk_dev_ref" section...
+URL changes:
+  /zk_dev_ref/MVC/Template → /zk_dev_ref/mvc/template
+  /zk_dev_ref/MVC/Listbox_Template → /zk_dev_ref/mvc/listbox_template
+  ...
+
+Completed! 181 URLs converted to lowercase in "zk_dev_ref" section.
+Titles were preserved unchanged.
+```
+
+# javadoc link replacement
 zk javadoc root: https://www.zkoss.org/javadoc/latest/zk/
 e.g. a class ` org.zkoss.zul.ChartModel` is at https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html
 old javadoc link from mediawiki: `<javadoc>org.zkoss.zul.ChartModel</javadoc>`
