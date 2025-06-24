@@ -1,6 +1,6 @@
 The [org.zkoss.calendar.impl.SimpleCalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarEvent.html) is a
 out-of-box, default implementation of the interface
-<javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>
+[org.zkoss.calendar.api.CalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/CalendarEvent.html)
 which we can use directly in ZK Calendar applications.
 
 # How to use SimpleCalendarEvent
@@ -38,7 +38,7 @@ by the CSS specification.
 It is important when working with the calendar to effectively manage the
 event data of the calendar. The event data is contained in a class which
 implements
-<javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>.
+[org.zkoss.calendar.api.CalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/CalendarEvent.html).
 
 An implementing Object should provide the following functions:
 
@@ -57,7 +57,7 @@ An implementing Object should provide the following functions:
 
 The code snippet below details a basic class which would fulfill the
 contract of the
-<javadoc type="interface">org.zkoss.calendar.api.CalendarEvent</javadoc>
+[org.zkoss.calendar.api.CalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/CalendarEvent.html)
 interface.
 
 ```java

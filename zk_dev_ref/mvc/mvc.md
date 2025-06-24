@@ -41,7 +41,7 @@ Data (model) together.
 For a simple UI, there is no need to prepare a controller. For example,
 the data of a [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) could be
 abstracted by implementing
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 For typical database access, the glue logic (i.e., control) can be
 handled by a generic feature called [Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding). In
@@ -51,7 +51,7 @@ all.
 
 To implement a custom controller, you could extend from
 [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html), or implement
-<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc> from
+[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html) from
 scratch. Then, specify it in the element it wants to handle in a ZUML
 document.
 

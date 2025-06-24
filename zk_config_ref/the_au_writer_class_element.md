@@ -8,7 +8,7 @@ It specifies which class is used to implement the AU writer. The AU
 writer is used to generate the output and send it to the client. The
 class must have a default constructor (without any argument), and
 implement the
-<javadoc type="interface">org.zkoss.zk.au.AuWriter</javadoc> interface.
+[org.zkoss.zk.au.AuWriter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuWriter.html) interface.
 
 There are two built-in implementations, `HttpAuWriter` and
 `SmartAuWriter`. The former one sends the output the client after the

@@ -63,7 +63,7 @@ in the above example does *not* work in a portlet, since the native
 response is an instance of `javax.portlet.RenderResponse`.
 
 To check whether to redirect can be packed as
-<javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>, see
+[org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html), see
 below for an example:
 
 ```java

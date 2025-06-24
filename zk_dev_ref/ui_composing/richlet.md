@@ -31,7 +31,7 @@ before mapping a URL to the richlet.
 ## Implement a Richlet as a Java class
 
 A richlet must implement the
-<javadoc type="interface">org.zkoss.zk.ui.Richlet</javadoc> interface.
+[org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html) interface.
 However, you generally do not have to implement it from scratch. Rather,
 you could extend [org.zkoss.zk.ui.GenericRichlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/GenericRichlet.html), and
 the only thing you have to do is to override

@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.SessionInit`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.SessionInit</javadoc> to
+[org.zkoss.zk.ui.util.SessionInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/SessionInit.html) to
 initialize a session that is being created.
 
 When ZK Loader is going to create a session, it invokes the `init`

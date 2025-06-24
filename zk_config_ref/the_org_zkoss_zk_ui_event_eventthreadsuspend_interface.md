@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.event.EventThreadSuspend `
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.event.EventThreadSuspend</javadoc>,
+[org.zkoss.zk.ui.event.EventThreadSuspend](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventThreadSuspend.html),
 suthc that it will be called before an event processing thread is going
 to be suspended.
 

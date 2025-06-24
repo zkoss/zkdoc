@@ -116,7 +116,7 @@ instantiated *instantly* and added as children of the `include`
 component.
 
 Unlike the `defer` mode, no additional
-<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> instance is
+[org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) instance is
 created.
 
 The code below demonstrates how to use the *instant* mode:
@@ -178,14 +178,14 @@ another, say, JSP page) to contain the components defined in the
 included ZUML document.
 
 - In the `defer` mode, an instance of
-  <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> will be
+  [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) will be
   created.
 - In the `defer` mode, the instantiated components become the root of
-  the <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> instance.
+  the [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) instance.
   The `include` component itself has no child component at all.
 - In the `defer` mode, the page is included when the `include` component
   is rendered. Thus, the
-  <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> instance (and
+  [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) instance (and
   its content) is not available when loading the ZUML document that the
   `include` component belongs to. It means you cannot access any of its
   content until receiving an AU request from the client.

@@ -7,7 +7,7 @@
 It specifies which class is used to implement the desktop cache. The
 class must have a default constructor (without any argument), and
 implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.DesktopCacheProvider</javadoc>
+[org.zkoss.zk.ui.sys.DesktopCacheProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCacheProvider.html)
 interface.
 
 One instance of the cache provider is created and shared for each Web

@@ -37,14 +37,14 @@ public void service(org.zkoss.zk.au.AuRequest request, boolean everError) {
 
 If the AU request is sent by an application for custom service, you
 could implement
-<javadoc type="interface">org.zkoss.zk.au.AuService</javadoc> to serve
+[org.zkoss.zk.au.AuService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuService.html) to serve
 it and then plug it to the targeted component *or* desktop, depending on
 your requirement. If the request is targeting a desktop, you can only
 intercept it at the desktop-level. If targeting a component, you could
 intercept it at either component-level or desktop-level.
 
 Since all requests will be passed through
-<javadoc type="interface">org.zkoss.zk.au.AuService</javadoc> that you
+[org.zkoss.zk.au.AuService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuService.html) that you
 plug, the performance of the implementation should be good. In addition,
 this method should return true if it has been processed to avoid any
 further processing.
@@ -65,7 +65,7 @@ public class FooAuService implements AuService {
 ### Intercept at Desktop-level
 
 To plug it to the desktop, you could implement a listener of
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> to
+[org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) to
 add it to a desktop by
 <javadoc method="addListener(java.lang.Object)">org.zkoss.zk.ui.Desktop</javadoc>.
 Then, specify the listener to `WEB-INF/zk.xml`. For example,
@@ -117,7 +117,7 @@ Once declared, an event will be sent to the server if one of the
 following conditions is satisfied:
 
 1.  An event listener
-    (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>)
+    ([org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html))
     has been registered at the server.
 2.  The event has been declared as *important* (see below).
 
@@ -162,6 +162,6 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 
 [^1]: A deferrable event listener is an event listener that also
     implements
-    <javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>.
+    [org.zkoss.zk.ui.event.Deferrable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Deferrable.html).
     Please refer to [ZK Developer's Reference: Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening)
     for details.

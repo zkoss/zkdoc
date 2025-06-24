@@ -166,12 +166,12 @@ and when to send the event back to the server for further processing:
     component on the server, the event will be dropped.
 
 A non-deferred event listener is an event listener
-(<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>)
+([org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html))
 that does not implement
-<javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>. In
+[org.zkoss.zk.ui.event.Deferrable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Deferrable.html). In
 other words, to minimize the traffic from the client, you might want to
 implement an event listener with
-<javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc> if
+[org.zkoss.zk.ui.event.Deferrable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Deferrable.html) if
 applicable.
 
 [^1]: It depends on the client. For Ajax-enabled browsers, it is a

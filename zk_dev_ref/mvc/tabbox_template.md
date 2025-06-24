@@ -77,7 +77,7 @@ Of course, if you prefer to store other values, you can simply specify
 There is a variable called
 [forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus)
 providing the information of the iteration. It is an instance of
-<javadoc type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>.
+[org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html).
 For example, you could retrieve the iteration's index by use of
 `${forEachStatus.index}`.
 

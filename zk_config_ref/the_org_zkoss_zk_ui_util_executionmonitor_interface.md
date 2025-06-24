@@ -9,7 +9,7 @@ order and performance, while PerformanceMeter can be used to monitors
 the AU requests.
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ExecutionMonitor</javadoc>
+[org.zkoss.zk.ui.util.ExecutionMonitor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionMonitor.html)
 to monitor executions.
 
 **Instantiation:** Please note that a single listener is used for the

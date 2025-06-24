@@ -3,7 +3,7 @@
 ## Event Listener
 
 An event listener is a class implementing
-<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>.
+[org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html).
 For example,
 
 ```java
@@ -102,7 +102,7 @@ server's performance. For the sake of convenience, we call them the
 deferrable event listeners.
 
 To make an event listener deferrable, you have to implement
-<javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc>
+[org.zkoss.zk.ui.event.Deferrable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Deferrable.html)
 (with `EventListener`) and return true for the `isDeferrable` method as
 follows.
 
@@ -137,7 +137,7 @@ preserved.
 ## Page-level Event Listener
 
 Developers could add event listeners to a page
-(<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>) dynamically
+([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) dynamically
 by
 <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Page</javadoc>.
 Once added, all events of the specified name sent to any components of
@@ -145,7 +145,7 @@ the specified page will be sent to the listener.
 
 All event listeners added to a page (so-called page-level event
 listeners) are assumed to be deferrable, no matter if
-<javadoc type="interface">org.zkoss.zk.ui.event.Deferrable</javadoc> is
+[org.zkoss.zk.ui.event.Deferrable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Deferrable.html) is
 implemented or not.
 
 A typical example is to use a page-level event listener to maintain the
@@ -251,14 +251,14 @@ The order of precedence for listeners from the highest to the lowest is
 as follows.
 
 1.  Event listeners implemented with
-    <javadoc type="interface">org.zkoss.zk.ui.event.Express</javadoc>,
+    [org.zkoss.zk.ui.event.Express](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Express.html),
     and registered by
     <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>
 2.  Event handlers defined in a ZUML document
 3.  Event listeners registered by
     <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>
     (and without
-    <javadoc type="interface">org.zkoss.zk.ui.event.Express</javadoc>)
+    [org.zkoss.zk.ui.event.Express](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Express.html))
     - It includes the method of a composer wired by
       [org.zkoss.zk.ui.util.GenericForwardComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericForwardComposer.html)
       because the event listener is used.
@@ -277,6 +277,6 @@ event handlers and listeners are ignored.
 
 | Version | Date          | Content                                                                                                                                                            |
 |---------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.6   | November 2010 | <javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc> was introduced to simplify the instantiation of a serializable anonymous class |
+| 5.0.6   | November 2010 | [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html) was introduced to simplify the instantiation of a serializable anonymous class |
 
 [^1]: An event attribute is an attribute starting with `on`

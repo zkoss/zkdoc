@@ -267,7 +267,7 @@ This messagebox will show without any buttons.
 
 [^1]: If you want to make it running under clustering environment, you
     should implement
-    <javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
+    [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html).
     For more information, please refer to [ZK Developer's Reference: Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
 [^2]: Here we assume [the event thread is disabled]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)

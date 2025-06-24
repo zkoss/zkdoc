@@ -114,7 +114,7 @@ Like a listbox, radiogroup supports
 [ListModel]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model),
 so that developers are able to separate the data from the view. In other
 words, developers only need to provide the data by implementing the
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc> interface,
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) interface,
 rather than manipulating the radiogroup directly. The benefits are
 twofold.
 
@@ -125,7 +125,7 @@ twofold.
 There are three steps to make use of live data.
 
 1\. Store your data object in a
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 
   
 ZK provides several implementation implementations of `ListModel`, just

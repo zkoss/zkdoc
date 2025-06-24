@@ -19,7 +19,7 @@ following expression will be evaluated as a Boolean object.
 There are several ways to associate Java objects with EL expressions.
 
 1.  Implement a variable resolver
-    (<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>)
+    ([org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html))
     and specify it with the
     [variable-resolver](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)
     directive.

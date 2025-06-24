@@ -63,7 +63,7 @@ Developer's Reference: MVVM</a></li>
 <li><a
 href="ZK_Developer&#39;s_Reference/Performance_Tips/Use_Compiled_Java_Codes"
 title="wikilink">ZK Developer's Reference: Performance Tips</a></li>
-<li><javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
+<li>[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html)
 and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)</li>
 </ul></td>
 </tr>
@@ -299,7 +299,7 @@ result of a servlet. This is the most suitable for usage if you would
 like to:
 
 1.  Include a non-ZUML page
-2.  Use a page (<javadoc type="interface">org.zkoss.zul.Page</javadoc>)
+2.  Use a page ([org.zkoss.zul.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Page.html))
     to encapsulate a ZUML page[^1][^2]
 
 The limitation of
@@ -371,7 +371,7 @@ section[^5].
 > <references/>
 
 [^1]: You have to specify `mode="defer"` to create a
-    <javadoc type="interface">org.zkoss.zul.Page</javadoc> instance.
+    [org.zkoss.zul.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Page.html) instance.
 
 [^2]: Whether a page is required really depends on developer's
     preference. Introducing a page is more complicated but logically

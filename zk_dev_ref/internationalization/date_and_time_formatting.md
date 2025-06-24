@@ -16,28 +16,28 @@ The format of date and time is decided in the following sequence.
 1.  It checks if an attribute called
     `org.zkoss.web.preferred.dateFormatInfo` is defined in the HTTP
     session (i.e.,
-    <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc>). If so,
+    [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html)). If so,
     it will be used by assuming the value is an instance or a class of
-    <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>.
+    [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html).
 2.  It checks if an attribute called
     `org.zkoss.web.preferred.dateFormatInfo` is defined in the servlet
     context (i.e.,
-    <javadoc type="interface">org.zkoss.zk.ui.Application</javadoc>). If
+    [org.zkoss.zk.ui.Application](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Application.html)). If
     so, it will be used by assuming the value is an instance or a class
     of
-    <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>.
+    [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html).
 3.  It checks if a property called
     `org.zkoss.web.preferred.dateFormatInfo` is defined in the library
     property (i.e., <javadoc >org.zkoss.lang.Library</javadoc>). If so,
     it will be used by assuming the value is a class of
-    <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>.
+    [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html).
 4.  If none of them is found, it uses the JVM's default based on [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In other words, to configure ZK to use a format other than the JVM's
 default, you have to:
 
 1.  Implements
-    <javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc> to
+    [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html) to
     provide the format you want.
 2.  Specify the class or an instance of it in the session's attribute or
     application's attribute depending on the requirement of your
@@ -59,7 +59,7 @@ corresponding format of the styling will be used instead of the default,
 
 If you want to use the same format for all users, you could specify your
 implementation of
-<javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc> in the
+[org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html) in the
 library property. For example,
 
 ```xml
@@ -76,7 +76,7 @@ where we assume the implementation is named `foo.MyDateFormatInfo`.
 If you'd like to configure ZK to allow each user (aka., session) to have
 an independent format, you could store an instance of your
 implementation of
-<javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc> in the
+[org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html) in the
 session's attribute.
 
 For example, you could do this when a user logins.
@@ -126,7 +126,7 @@ MEDIUM, LONG and FULL). For example,
 ```
 
 Then, the real format will be decided by your implementation of
-<javadoc type="interface">org.zkoss.text.DateFormatInfo</javadoc>, if
+[org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html), if
 any, or the JVM's default.
 
 In addition, you could specify the date/time format in the syntax of

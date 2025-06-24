@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.UiLifeCycle`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.UiLifeCycle</javadoc> to
+[org.zkoss.zk.ui.util.UiLifeCycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/UiLifeCycle.html) to
 handle something depending on the life cycle of UI, such as attaching a
 component to a page, moving a component and so on.
 

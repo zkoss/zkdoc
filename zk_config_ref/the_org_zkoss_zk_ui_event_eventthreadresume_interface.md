@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.event.EventThreadResume`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.event.EventThreadResume</javadoc>,
+[org.zkoss.zk.ui.event.EventThreadResume](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventThreadResume.html),
 such that it will be called after an event processing thread is resumed
 or aborted.
 

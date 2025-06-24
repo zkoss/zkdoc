@@ -68,7 +68,7 @@ parameters. ([Application wide configuration]({{site.baseurl}}/zk_dev_ref/ui_com
 In addition to defining a component by a ZUML page (aka., a macro
 component), you could define a new component by implementing a class
 that implements the
-<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> interface.
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) interface.
 Then, use the `by-class` format to declare such kind of components for a
 page.
 

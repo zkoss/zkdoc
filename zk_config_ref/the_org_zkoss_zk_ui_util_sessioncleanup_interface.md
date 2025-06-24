@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.SessionCleanup`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.SessionCleanup</javadoc>
+[org.zkoss.zk.ui.util.SessionCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/SessionCleanup.html)
 to cleanup a session that is being destroyed.
 
 When ZK Loader is going to destroy a session, it invokes the `cleanup`

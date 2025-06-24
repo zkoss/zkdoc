@@ -144,7 +144,7 @@ the following.
 
 If you would like to support many variables, you could implement a
 variable resolver: a class that implements
-<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>.
+[org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html).
 
 ```java
 package foo;

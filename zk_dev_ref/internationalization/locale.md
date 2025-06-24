@@ -26,11 +26,11 @@ ZK determines the current locale in the following sequence:
 
 1.  It checks if an attribute called `org.zkoss.web.preferred.locale`
     defined in the HTTP session (or
-    <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc>). If so,
+    [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html)). If so,
     use it.
 2.  It checks if an attribute called `org.zkoss.web.preferred.locale`
     defined in the Servlet context (or
-    <javadoc type="interface">org.zkoss.zk.ui.Application</javadoc>). If
+    [org.zkoss.zk.ui.Application](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Application.html)). If
     so, use it.
 3.  It checks if a property called `org.zkoss.web.preferred.locale`
     defined in the library property (i.e.,
@@ -97,7 +97,7 @@ manipulating the cookies when the interceptor is called.
 
 A request interceptor is used to intercept each request being processed.
 It must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.RequestInterceptor</javadoc>
+[org.zkoss.zk.ui.util.RequestInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/RequestInterceptor.html)
 interface. For example,
 
 ```java

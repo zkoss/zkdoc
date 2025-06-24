@@ -4,9 +4,9 @@ need to do is:
 
 1.  enable server push
 2.  Implement the UI updates in an event listener (implement
-    <javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>
+    [org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html)
     or
-    <javadoc type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>).
+    [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html)).
 3.  Execute the listener asynchronously by
     <javadoc method="schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.Executions</javadoc>.
 

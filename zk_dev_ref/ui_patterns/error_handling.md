@@ -23,9 +23,9 @@ You can customize the error handling by specifying the error page in
 
 **Note:** When exceptions are thrown during the ZK UI Lifecycle they are
 wrapped into a
-<javadoc  type="class">org.zkoss.zk.ui.UiException</javadoc>. If you
+[org.zkoss.zk.ui.UiException](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/UiException.html). If you
 want to handle your own exceptions you can implement the
-<javadoc type="interface">org.zkoss.lang.Expectable</javadoc> on your
+[org.zkoss.lang.Expectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Expectable.html) on your
 exception type. Exceptions implementing this interface will not be
 wrapped and can be handled using the <exception-type> element directly.
 

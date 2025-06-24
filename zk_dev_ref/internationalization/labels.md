@@ -299,9 +299,9 @@ If you prefer to put the internationalization labels in, say, database,
 you could extend the label loader to load labels from other locations,
 say database. It can be done by registering a locator, which must
 implement either
-<javadoc type="interface">org.zkoss.util.resource.LabelLocator</javadoc>
+[org.zkoss.util.resource.LabelLocator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator.html)
 or
-<javadoc type="interface">org.zkoss.util.resource.LabelLocator2</javadoc>.
+[org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html).
 Then, invoking
 <javadoc method="register(org.zkoss.util.resource.LabelLocator)">org.zkoss.util.resource.Labels</javadoc>
 or
@@ -309,9 +309,9 @@ or
 to register it[^6].
 
 If you can represent your resource in URL, you could use
-<javadoc type="interface">org.zkoss.util.resource.LabelLocator</javadoc>
+[org.zkoss.util.resource.LabelLocator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator.html)
 (as shown below). If you have to load it by yourself, you could use
-<javadoc type="interface">org.zkoss.util.resource.LabelLocator2</javadoc>
+[org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html)
 and return an input stream (java.io.InputStream).
 
 **Alernative 1: load as an input stream:**
@@ -350,7 +350,7 @@ public class FooServletLocator implements org.zkoss.util.resource.LabelLocator {
 
 Then, we could register label locators when the application starts by
 use of
-<javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc> as
+[org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html) as
 follows.
 
 ```java
@@ -409,7 +409,7 @@ ${c:label('another.key')}
 
 | Version | Date         | Content                                                                                   |
 |---------|--------------|-------------------------------------------------------------------------------------------|
-| 5.0.5   | October 2010 | <javadoc type="interface">org.zkoss.util.resource.LabelLocator2</javadoc> was introduced. |
+| 5.0.5   | October 2010 | [org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html) was introduced. |
 | 5.0.7   | March 2011   | The `labels` object was introduced.                                                       |
 
 [^1]: It is the value returned by

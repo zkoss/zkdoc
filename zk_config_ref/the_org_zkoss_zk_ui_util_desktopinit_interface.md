@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.DesktopInit`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> to
+[org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) to
 initialize a new desktop.
 
 When ZK Loader created a new desktop, it invokes the `init` method of

@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.sys.SEORenderer`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.sys.SEORenderer</javadoc> to
+[org.zkoss.zk.ui.sys.SEORenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SEORenderer.html) to
 generate application-specific SEO content. The SEO content could be
 anything. It is visible to the search engine (for indexing), but it is
 not visible to the end users[^1]
@@ -64,7 +64,7 @@ You can also take a look at the ZK's blog about [another approach to SEO in ZK A
 
 | Version | Date       | Content                                                                                               |
 |---------|------------|-------------------------------------------------------------------------------------------------------|
-| 5.0.7   | April 2011 | <javadoc type="interface">org.zkoss.zk.ui.sys.SEORenderer</javadoc> could be specified as a listener. |
+| 5.0.7   | April 2011 | [org.zkoss.zk.ui.sys.SEORenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SEORenderer.html) could be specified as a listener. |
 
 [^1]: The SEO content will be replaced with the content of ZK components
     after the page has been rendered.

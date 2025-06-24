@@ -99,7 +99,7 @@ Then, prepare `MyWindow.java` as shown below.
 
 If you prefer to do the initialization right after the component (and
 all its children) is created, you can implement the
-<javadoc type="interface">org.zkoss.zk.ui.ext.AfterCompose</javadoc>
+[org.zkoss.zk.ui.ext.AfterCompose](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/AfterCompose.html)
 interface as shown below. Note: the `afterCompose` method of the
 `AfterCompose` interface is evaluated at the Component Creation phase,
 while the `onCreate` event is evaluated in the Event Processing Phase.

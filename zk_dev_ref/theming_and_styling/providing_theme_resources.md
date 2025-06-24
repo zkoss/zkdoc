@@ -3,7 +3,7 @@
 # ThemeProvider
 
 After switching to another theme, a
-<javadoc type="interface">org.zkoss.zk.ui.util.ThemeProvider</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html)
 allows you the full control of CSS styling, including but not limited to
 
 - Switch among multiple sets of stylesheets based on, say, the user's

@@ -85,7 +85,7 @@ Setting up the environment:
 Next, the new theme will need to be registered first before it could be
 used by the ZK application. For archive-based themes, this is done by
 providing an implementation of the
-<javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
+[org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)
 interface.
 
 **`Note:`**` the registered name should match the folder name.`

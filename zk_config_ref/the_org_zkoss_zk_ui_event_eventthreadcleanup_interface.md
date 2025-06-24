@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.event.EventThreadCleanup`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.event.EventThreadCleanup</javadoc>
+[org.zkoss.zk.ui.event.EventThreadCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventThreadCleanup.html)
 to cleanup an event processing thread, after it has processed an event.
 
 > ------------------------------------------------------------------------

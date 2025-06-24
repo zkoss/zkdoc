@@ -6,7 +6,7 @@
 Specifies the variable resolver that could be used by the `zscript`
 interpreter and the EL expressions to resolve unknown variables. The
 specified class must implement the
-<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>
+[org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)
 interface.
 
 You can specify multiple variable resolvers with multiple
@@ -35,7 +35,7 @@ system-level variable resolver. For more information, please refer to
 `[Required]`
 
 A class name that must implement the
-<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>
+[org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)
 interface. Unlike the `init` directive, the class name cannot be the
 class that is defined in zscript codes.
 

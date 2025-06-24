@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.EventInterceptor`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.EventInterceptor</javadoc>
+[org.zkoss.zk.ui.util.EventInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/EventInterceptor.html)
 to intercept when an event is sent, posted and processed.
 
 Once registered, an instance is created and shared within the whole

@@ -1,5 +1,5 @@
 This section describes how to develop the component at the server-side
-(<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>).
+([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)).
 
 **See Also**
 

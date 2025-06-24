@@ -5,7 +5,7 @@
 
 Specifies the function mapper that will be used by the EL expressions to
 resolve unknown functions. The specified class must implement the
-<javadoc type="interface">org.zkoss.xel.FunctionMapper</javadoc>
+[org.zkoss.xel.FunctionMapper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/FunctionMapper.html)
 interface.
 
 You can specify multiple variable resolvers with multiple
@@ -20,7 +20,7 @@ Notice that the `function-mapper` directives are evaluated before the
 `[Optional]`
 
 A class name must implement the
-<javadoc type="interface">org.zkoss.xel.FunctionMapper</javadoc>
+[org.zkoss.xel.FunctionMapper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/FunctionMapper.html)
 interface. Unlike the `init` directive, the class name cannot be the
 class that is defined in zscript codes.
 

@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.event.EventThreadInit`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.event.EventThreadInit</javadoc>
+[org.zkoss.zk.ui.event.EventThreadInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventThreadInit.html)
 to initialize an event processing thread, before an event is dispatched
 to it for processing.
 

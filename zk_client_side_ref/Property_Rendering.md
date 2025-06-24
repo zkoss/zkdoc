@@ -66,7 +66,7 @@ if (value != null && value .length() != 0) //redundant since render will check
 
 On the other hand, if you want to render null and an empty string, you
 should invoke the render methods of
-<javadoc type="interface">org.zkoss.zk.ui.sys.ContentRenderer</javadoc>,
+[org.zkoss.zk.ui.sys.ContentRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ContentRenderer.html),
 such as
 
 ```java
@@ -204,7 +204,7 @@ will be removed and re-created).
 Sometimes the value is not ready when `smartUpdate` is called, and it is
 better to retrieve when rendering the components. To defer the
 evaluation of a value, you can implement
-<javadoc type="interface">org.zkoss.zk.ui.util.DeferredValue</javadoc>.
+[org.zkoss.zk.ui.util.DeferredValue](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DeferredValue.html).
 
 For example,
 <javadoc method="encodeURL(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>

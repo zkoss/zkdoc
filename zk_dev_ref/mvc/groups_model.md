@@ -1,7 +1,7 @@
 
 
 Here we describe how to implement a groups model
-(<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>). For the
+([org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html)). For the
 concept of component, model and render, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 A groups model is used to drive components that support groups of data.
@@ -11,7 +11,7 @@ and each grouped data is a list of elements to display. Here is [a live demo](ht
 [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html) support a list of grouped data.
 
 Instead of implementing
-<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>, it is
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html), it is
 suggested to extend from
 [org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractGroupsModel.html), or to use one of
 the default implementations as following:
@@ -68,7 +68,7 @@ Then, the result
 
 If your groups model allows the end user to sort and/or to re-group
 (i.e., grouping data based on different criteria), you have to implement
-<javadoc type="interface">org.zkoss.zul.ext.GroupsSortableModel</javadoc>
+[org.zkoss.zul.ext.GroupsSortableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupsSortableModel.html)
 too. Then,
 <javadoc method="group(java.util.Comparator,boolean,int)" type="interface">org.zkoss.zul.ext.GroupsSortableModel</javadoc>
 will be called if the user requests to re-group the data based on a
@@ -88,7 +88,7 @@ and re-grouping as described below:
   compared result is the same (i.e., the given java.util.Comparator
   returns 0).
   - For better control, you could implement
-    <javadoc type="interface">org.zkoss.zul.GroupComparator</javadoc>,
+    [org.zkoss.zul.GroupComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupComparator.html),
     and pass an instance to, say,
     <javadoc method="setSortAscending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>
     and

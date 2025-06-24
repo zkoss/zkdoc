@@ -35,8 +35,8 @@ components, pages, desktops and even sessions.
 
 In Java , you could use "setAttribute()","removeAttribute()" and
 "getAttribute()" of
-<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>,
-<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and so on to
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html),
+[org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) and so on to
 share data. Another way is using the scope argument to identify which
 scope you want to access. (In the following example, assuming comp is a
 component.)

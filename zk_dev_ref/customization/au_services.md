@@ -1,5 +1,5 @@
 An AU service
-(<javadoc type="interface">org.zkoss.zk.au.AuService</javadoc>) is a
+([org.zkoss.zk.au.AuService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuService.html)) is a
 plugin used to intercept the AU requests
 ([org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html)) sent from the client.
 
@@ -20,7 +20,7 @@ If you want to plug a particular component, you could invoke
 Unlike desktops, a component can have at most one AU service.
 
 If you want to plug an AU service, you could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> and
+[org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) and
 register it in zk.xml as described in [Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener).
 
 ```java

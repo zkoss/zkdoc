@@ -1,4 +1,4 @@
-<javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc> is
+[org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html) is
 used to instantiate all UI objects, such as session, desktop, and
 components, and to load ZUML documents. You could customize it to
 provide the functionality you want.
@@ -32,7 +32,7 @@ Notice that it is suggested to extend from either
 [org.zkoss.zk.ui.http.SerializableUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SerializableUiFactory.html) or
 [org.zkoss.zk.ui.http.SimpleUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/SimpleUiFactory.html), rather than to
 implement
-<javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc> from
+[org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html) from
 scratch.
 
 > ------------------------------------------------------------------------

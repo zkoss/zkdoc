@@ -1,5 +1,5 @@
 To know the loading of an application, you could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.Monitor</javadoc> to
+[org.zkoss.zk.ui.util.Monitor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Monitor.html) to
 count the number of desktops, sessions and requests.
 
 Once implemented, you could register it by specifying the following in

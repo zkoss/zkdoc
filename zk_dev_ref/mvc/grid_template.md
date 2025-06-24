@@ -20,7 +20,7 @@ you can define a customer rendering with a template for a grid:
 ```
 
 where `books` is assumed as an instance of
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc> that
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) that
 contains a list of the Book instances while each Book instance has at
 least three getter methods: `getIsbn`, `getName` and `getDescription`.
 
@@ -33,7 +33,7 @@ and the template itself is not a component.
 # Template for GroupsModel
 
 When used with
-<javadoc type="interface">org.zkoss.zul.GroupsModel</javadoc>, grids
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html), grids
 will use the template called `model:grouping` for rendering the grouping
 object. If it is not defined, it will look for the template called
 `model` instead (i.e., the same template is used for rendering the

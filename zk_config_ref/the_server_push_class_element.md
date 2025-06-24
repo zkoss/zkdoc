@@ -7,7 +7,7 @@
 It specifies which class used to implement the server-push feature. The
 class must have a default constructor (without any argument), and
 implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.ServerPush</javadoc>
+[org.zkoss.zk.ui.sys.ServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ServerPush.html)
 interface.
 
 ```xml

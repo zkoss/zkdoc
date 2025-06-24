@@ -7,7 +7,7 @@
 It specifies which class is used to instantiate the instance of the
 implementation of the Web application. The class must have a default
 constructor (without any argument), and implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.WebAppFactory</javadoc>
+[org.zkoss.zk.ui.sys.WebAppFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/WebAppFactory.html)
 interface.
 
 ```xml

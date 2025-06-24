@@ -5,7 +5,7 @@ Data (model) together.
 
 A simple UI does not require any controllers. For example, the data of a
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) could be abstracted by
-implementing <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>
+implementing [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 as described in [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model).
 
 For typical database access, the glue logic (i.e., controller) can be

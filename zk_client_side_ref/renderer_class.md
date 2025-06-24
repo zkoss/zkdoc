@@ -7,7 +7,7 @@
 
 It specifies the Java class used to render a page for the given
 language. It must implement
-<javadoc type="interface">org.zkoss.zk.ui.sys.PageRenderer</javadoc>.
+[org.zkoss.zk.ui.sys.PageRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/PageRenderer.html).
 
 Example,
 

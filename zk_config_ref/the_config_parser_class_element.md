@@ -7,7 +7,7 @@
 
 Specifies an application-specific parser to parse `zk.xml`. The parser
 must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.ConfigParser</javadoc>
+[org.zkoss.zk.ui.util.ConfigParser](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ConfigParser.html)
 interface.
 
 

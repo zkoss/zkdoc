@@ -99,7 +99,7 @@ make sure all of its members are serializable (or transient), since the
 implementation will keep a reference in the applied component.
 
 When implementing from
-<javadoc type="interface">org.zkoss.zk.ui.Composer</javadoc> directly,
+[org.zkoss.zk.ui.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Composer.html) directly,
 the composer could be non-serializable if you don't keep a reference in
 any UI object. In other words, the composer will be dropped after
 <javadoc method="doAfterCompose(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
@@ -118,18 +118,18 @@ purposes:
 
 - Serialization Listeners: they are called when an object is about to be
   serialized, and after it has been de-serialized. Example:
-  <javadoc type="interface">org.zkoss.zk.ui.util.ComponentSerializationListener</javadoc>
+  [org.zkoss.zk.ui.util.ComponentSerializationListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentSerializationListener.html)
   and
-  <javadoc type="interface">org.zkoss.zk.ui.util.PageSerializationListener</javadoc>
+  [org.zkoss.zk.ui.util.PageSerializationListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PageSerializationListener.html)
 - Activation Listeners: they are called when a session is about to be
   passivated, and after it has been activated. Examples:
-  <javadoc type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc>
+  [org.zkoss.zk.ui.util.ComponentActivationListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentActivationListener.html)
   and
-  <javadoc type="interface">org.zkoss.zk.ui.util.PageActivationListener</javadoc>.
+  [org.zkoss.zk.ui.util.PageActivationListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PageActivationListener.html).
 
 To register a listener is straightforward: just implement the
 corresponding listener interface. For example, you could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc>
+[org.zkoss.zk.ui.util.ComponentActivationListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentActivationListener.html)
 if an object is stored in a component and wants to be called on
 activation and passivation.
 
@@ -142,17 +142,17 @@ the object is serialized.
 
 | Sequence | Description                                                                                                                                                                                                                                                                |
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionActivationListener</javadoc> for each object referenced by the <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc> that will be passivated           |
-| 2        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc> that will be passivated          |
-| 3        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> that will be passivated                   |
-| 4        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> that will be passivated    |
-| 5        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionSerializationListener</javadoc> for each object referenced by the <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc> that will be passivated        |
+| 1        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionActivationListener</javadoc> for each object referenced by the [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) that will be passivated           |
+| 2        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) that will be passivated          |
+| 3        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that will be passivated                   |
+| 4        | Invokes <javadoc method="willPassivate(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated    |
+| 5        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionSerializationListener</javadoc> for each object referenced by the [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) that will be passivated        |
 | 6        | Serializes the session                                                                                                                                                                                                                                                     |
-| 7        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc> that will be passivated       |
+| 7        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) that will be passivated       |
 | 8        | Serializes desktops of the session                                                                                                                                                                                                                                         |
-| 9        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> that will be passivated                |
+| 9        | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that will be passivated                |
 | 10       | Serializes pages of each desktop                                                                                                                                                                                                                                           |
-| 11       | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> that will be passivated |
+| 11       | Invokes <javadoc method="willSerialize(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated |
 | 12       | Serializes components of each page                                                                                                                                                                                                                                         |
 
 # Activation Flow
@@ -168,14 +168,14 @@ listener will be called to notify a session has been activated.
 | 2        | Deserializes desktops of the session                                                                                                                                                                                                                                        |
 | 3        | Deserializes pages of each desktop                                                                                                                                                                                                                                          |
 | 4        | Deserializes components of each page                                                                                                                                                                                                                                        |
-| 5        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> that will be passivated |
-| 6        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> that will be passivated                |
-| 7        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopSerializationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc> that will be passivated       |
-| 8        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionSerializationListener</javadoc> for each object referenced by the <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc> that will be passivated        |
-| 9        | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionActivationListener</javadoc> for each object referenced by the <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc> that will be passivated              |
-| 10       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc> that will be passivated             |
-| 11       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> that will be passivated                      |
-| 12       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc> for each object referenced by each <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> that will be passivated       |
+| 5        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated |
+| 6        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that will be passivated                |
+| 7        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopSerializationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) that will be passivated       |
+| 8        | Invokes <javadoc method="didDeserialize(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionSerializationListener</javadoc> for each object referenced by the [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) that will be passivated        |
+| 9        | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Session)" type="interface">org.zkoss.zk.ui.util.SessionActivationListener</javadoc> for each object referenced by the [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) that will be passivated              |
+| 10       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) that will be passivated             |
+| 11       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.util.PageActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that will be passivated                      |
+| 12       | Invokes <javadoc method="didActivate(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.ComponentActivationListener</javadoc> for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated       |
 
 # Working Thread Cannot Last Two or More Requests
 

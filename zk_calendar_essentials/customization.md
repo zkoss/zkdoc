@@ -47,7 +47,7 @@ you to override part of captions.
 
 If you like to start from scratch, you can implement
 [org.zkoss.calendar.api.ZonedDateTimeFormatter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/ZonedDateTimeFormatter.html) or
-<javadoc type="interface">org.zkoss.calendar.api.DateFormatter</javadoc>
+[org.zkoss.calendar.api.DateFormatter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/DateFormatter.html)
 interface which requires 5 methods to be implemented. These are as
 follows:
 
@@ -66,7 +66,7 @@ you require fine-grained control.
 ## Applying a Customized DateFormatter
 
 To make use of a customized
-<javadoc type="interface">org.zkoss.calendar.api.DateFormatter</javadoc>
+[org.zkoss.calendar.api.DateFormatter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/DateFormatter.html)
 implementation, there are 2 ways:
 
 **By Java**

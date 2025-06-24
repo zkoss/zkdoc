@@ -1,5 +1,5 @@
 The implementation of a custom renderer for a Biglistbox
-(<javadoc type="interface">org.zkoss.zkmax.zul.MatrixRenderer</javadoc>)
+([org.zkoss.zkmax.zul.MatrixRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixRenderer.html))
 is straightforward[^1]:
 
 ```java

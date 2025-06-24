@@ -8,11 +8,11 @@ tag. It is different to a XUL component or other none-native component
 in several ways.
 
 - By implementing the
-  <javadoc type="interface">org.zkoss.zk.ui.ext.RawId</javadoc>
+  [org.zkoss.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/RawId.html)
   interface, the universal identifier, <mp>getUuid</mp>, is the same as
   the identifier <mp>getId</mp>
 - By implementing the
-  <javadoc type="interface">org.zkoss.zk.ui.ext.DynamicAttributes</javadoc>
+  [org.zkoss.zk.ui.ext.DynamicAttributes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicAttributes.html)
   interface, all XHTML components support arbitrary attributes. In other
   words, any attribute name is legal (as long as the targeted browser
   supports)

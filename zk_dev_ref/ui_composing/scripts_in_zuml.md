@@ -295,7 +295,7 @@ For example,
 ```
 
 In addition, you could add your own interpreter by implementing
-<javadoc type="interface">org.zkoss.zk.scripting.Interpreter</javadoc>.
+[org.zkoss.zk.scripting.Interpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/Interpreter.html).
 For more information, please refer to [ZUML Reference](ZUML_Reference/Extensions/zscript).
 
 [^1]: The zscript element has an attribute called
@@ -304,4 +304,4 @@ For more information, please refer to [ZUML Reference](ZUML_Reference/Extensions
 
 [^2]: Built in id space owner includes
     [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html),
-    <javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
+    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).

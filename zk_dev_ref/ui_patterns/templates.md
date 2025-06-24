@@ -35,7 +35,7 @@ comp.getTemplate("foo").create(comp, null, null, null);
 ```
 
 The third argument of the `create` method is a variable resolver
-(<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>).
+([org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)).
 Depending on the requirement, you could pass any implementation you
 like. For example, the implementation of a listbox actually utilizes it
 to return the data being rendered; the code is similar to the following

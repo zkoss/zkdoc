@@ -6,5 +6,5 @@
 
 It specifies the name of the class used to provide the event queue. The
 class must implement the
-<javadoc type="interface">org.zkoss.zk.ui.event.impl.EventQueueProvider</javadoc>
+[org.zkoss.zk.ui.event.impl.EventQueueProvider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/impl/EventQueueProvider.html)
 interface.

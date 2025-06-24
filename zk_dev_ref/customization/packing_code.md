@@ -54,7 +54,7 @@ except only a subset of configurations is allowed. Here is a sample
 
 Sometimes you have to initialize a JAR file. It can be done by
 implementing
-<javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>, and
+[org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html), and
 then specifying it as a listener in `/metainfo/zk/config.xml`. For
 example,
 

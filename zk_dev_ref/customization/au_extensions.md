@@ -1,5 +1,5 @@
 An AU extension
-(<javadoc type="interface">org.zkoss.zk.au.http.AuExtension</javadoc>)
+([org.zkoss.zk.au.http.AuExtension](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/http/AuExtension.html))
 is a small program that can be plugged into ZK Update Engine
 ([org.zkoss.zk.au.http.DHtmlUpdateServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/http/DHtmlUpdateServlet.html)) and extend
 its functionality. Actually our file upload and multimedia viewing are

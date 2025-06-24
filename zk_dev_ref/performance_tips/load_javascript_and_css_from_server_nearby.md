@@ -15,7 +15,7 @@ official ZK library to</b>, not your whole application.
 # How-to
 
 1.  Implement the
-    <javadoc  type="interface">org.zkoss.web.servlet.http.Encodes.URLEncoder</javadoc>
+    [org.zkoss.web.servlet.http.Encodes.URLEncoder](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/http/Encodes/URLEncoder.html)
 2.  Add **library-property** configuration to the
     <span style="color:green;font-style:italic;">zk.xml</span>
       

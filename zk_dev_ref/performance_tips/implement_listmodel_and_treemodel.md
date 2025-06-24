@@ -12,7 +12,7 @@ extend [org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/
 TreeModel extend [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) as
 described in [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model). To implement a
 model that supports sorting, you have to implement
-<javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> too. Each
+[org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too. Each
 time a user requires sorting,
 <javadoc type="interface" method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
 will be called and the implementation usually clears the cache and

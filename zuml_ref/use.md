@@ -6,7 +6,7 @@
 
 It specifies a class to create a component instead of the default one.
 In the following example, `MyWindow` is used instead of the default
-class, <javadoc type="interface">org.zkoss.zul.Window</javadoc>.
+class, [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html).
 
 ```xml
 <window use="MyWindow"/>

@@ -39,7 +39,7 @@ converted to an AU request and sent to the server, if
     - The event is declared as [an important event]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/server-side_processing#Important_Events)
       (at server).
     - The server has registered an event listener
-      (<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>)
+      ([org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html))
       for it.
 2.  Or, the `toServer` option has been specified in
     <javadoc directory="jsdoc" method="opts">zk.Event</javadoc> of the

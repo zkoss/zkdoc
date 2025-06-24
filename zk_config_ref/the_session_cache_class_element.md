@@ -6,7 +6,7 @@
 
 It specifies the session cache used to store ZK sessions. It must
 implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.SessionCache</javadoc>
+[org.zkoss.zk.ui.sys.SessionCache](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SessionCache.html)
 interface.
 
 By default, `org.zkoss.zk.ui.http.SimpleSessionCache`

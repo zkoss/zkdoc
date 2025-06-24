@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.WebAppInit`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc> to
+[org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html) to
 initialize a ZK application when it has been loaded.
 
 When a ZK application has been loaded, it invokes the `init` method of

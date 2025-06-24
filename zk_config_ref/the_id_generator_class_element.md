@@ -7,7 +7,7 @@
 It specifies which class should be used to generate the UUID of page and
 components, and ID of desktops. The class must have a default
 constructor (without any argument), and implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>
+[org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html)
 interface.
 
 One instance of the ID generator is created and shared for each Web

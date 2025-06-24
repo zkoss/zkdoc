@@ -12,7 +12,7 @@ If the task of updating UI takes place in a working thread, it is
 generally more convenient to execute it synchronously as described
 later. On the other hand, if the task can be encapsulated as an event
 listener
-(<javadoc type="interface">org.zkoss.zk.ui.event.EventListener</javadoc>),
+([org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html)),
 you could execute it asynchronously -- please refer to the [Asynchronous Tasks]({{site.baseurl}}/zk_dev_ref/server_push/asynchronous_tasks)
 section for more information.
 

@@ -1,5 +1,5 @@
 Here we describe how to implement a custom renderer for a listbox
-(<javadoc type="interface">org.zkoss.zul.ListitemRenderer</javadoc>).
+([org.zkoss.zul.ListitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListitemRenderer.html)).
 For the concepts about component, model and renderer, please refer to
 [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
@@ -8,7 +8,7 @@ with a model, a default renderer is assigned too. The default renderer
 will assume that each list item has only one column, and it converts the
 data into a string directly[^1]. If you want to display multiple columns
 or retrieve a particular field of the data, you have to implement
-<javadoc type="interface">org.zkoss.zul.ListitemRenderer</javadoc> to
+[org.zkoss.zul.ListitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListitemRenderer.html) to
 handle the rendering.
 
 For example,

@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.WebAppCleanup`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.WebAppCleanup</javadoc>
+[org.zkoss.zk.ui.util.WebAppCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppCleanup.html)
 to cleanup a ZK application, when it is being destroyed.
 
 When a ZK application is going to be destroyed, it invokes the `cleanup`

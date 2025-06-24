@@ -1,5 +1,5 @@
 Though
-<javadoc type="interface">org.zkoss.zk.ui.util.EventInterceptor</javadoc>
+[org.zkoss.zk.ui.util.EventInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/EventInterceptor.html)
 is designed to allow developer to intercept how an event is processed,
 you could use it as callback to know how long it takes to process an
 event. The event processing time can be calculated by subtracting the

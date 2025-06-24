@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.PerformanceMeter`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+[org.zkoss.zk.ui.util.PerformanceMeter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html)
 to measure the performance. Unlike other listeners, there is at most one
 performance meter listener for each Web application. If you like, you
 can chain them together manually.

@@ -535,14 +535,14 @@ configuration in zk.xml.
 
 Each tree item contains the `open` property which is used to control
 whether to display its child items if the Tree is not controlled by a
-<javadoc type="interface">org.zkoss.zul.ext.TreeOpenableModel</javadoc>.
+[org.zkoss.zul.ext.TreeOpenableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeOpenableModel.html).
 The default value is true. By setting this property to false, you are
 able to control what part of the tree is invisible.
 
 If the Tree is controlled by a
-<javadoc type="interface">org.zkoss.zul.ext.TreeOpenableModel</javadoc>
+[org.zkoss.zul.ext.TreeOpenableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeOpenableModel.html)
 such as [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) or
-<javadoc type="interface">org.zkoss.zul.DefaultTreeModel</javadoc>, the
+[org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html), the
 model open state is authoritative and will override the individual
 component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
 on this topic.

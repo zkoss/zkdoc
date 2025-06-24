@@ -158,14 +158,14 @@ returns a collection of matched values.
 ### Autocomplete by ListSubModel
 
 To separate the data from the view (Combobox) better, we can implement
-<javadoc type="interface">org.zkoss.zul.ListSubModel</javadoc> and set
+[org.zkoss.zul.ListSubModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListSubModel.html) and set
 it to Combobox. There are 2 ways:
 
 #### Use [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 
 Unlike [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) and others,
 [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html) implements
-<javadoc type="interface">org.zkoss.zul.ListSubModel</javadoc> by
+[org.zkoss.zul.ListSubModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListSubModel.html) by
 default. You can use [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 directly but it handles only an array of data.
 
@@ -483,7 +483,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 |---------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 8.6.1   | January 2019 | [ZK-4185](https://tracker.zkoss.org/browse/ZK-4185): Combobox: provide option to reduce onSelect/onChange events when using keyboard                                                          |
 | 5.0.4   | August 2010  | [org.zkoss.zul.ListModels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModels.html) was introduced to simply the implementation of autocomplete.                                                                                      |
-| 5.0.4   | July 2010    | Combobox supported <javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc> if it is also implemented with the specified <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. |
+| 5.0.4   | July 2010    | Combobox supported [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) if it is also implemented with the specified [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html). |
 | 5.0.4   | July 2010    | Supported onAfterRender event                                                                                                                                                                 |
 
 

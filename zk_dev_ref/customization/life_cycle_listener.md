@@ -7,7 +7,7 @@ about to be destroyed.
 There are two steps:
 
 1.  Implements the corresponding interface. For example,
-    <javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
+    [org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)
     for application's initialization
 2.  Register it in `WEB-INF/zk.xml`, or in Java.
 
@@ -15,14 +15,14 @@ There are two steps:
 
 | Task                | Interface                                                                 |
 |---------------------|---------------------------------------------------------------------------|
-| Application Init    | <javadoc type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>       |
-| Application Cleanup | <javadoc type="interface">org.zkoss.zk.ui.util.WebAppCleanup</javadoc>    |
-| Session Init        | <javadoc type="interface">org.zkoss.zk.ui.util.SessionInit</javadoc>      |
-| Session Cleanup     | <javadoc type="interface">org.zkoss.zk.ui.util.SessionCleanup</javadoc>   |
-| Desktop Init        | <javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc>      |
-| Desktop Cleanup     | <javadoc type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>   |
-| Execution Init      | <javadoc type="interface">org.zkoss.zk.ui.util.ExecutionInit</javadoc>    |
-| Execution Cleanup   | <javadoc type="interface">org.zkoss.zk.ui.util.ExecutionCleanup</javadoc> |
+| Application Init    | [org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)       |
+| Application Cleanup | [org.zkoss.zk.ui.util.WebAppCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppCleanup.html)    |
+| Session Init        | [org.zkoss.zk.ui.util.SessionInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/SessionInit.html)      |
+| Session Cleanup     | [org.zkoss.zk.ui.util.SessionCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/SessionCleanup.html)   |
+| Desktop Init        | [org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html)      |
+| Desktop Cleanup     | [org.zkoss.zk.ui.util.DesktopCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html)   |
+| Execution Init      | [org.zkoss.zk.ui.util.ExecutionInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionInit.html)    |
+| Execution Cleanup   | [org.zkoss.zk.ui.util.ExecutionCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionCleanup.html) |
 
 Notice that ZK will instantiate an object from the class you registered
 for each callback. For example, an object is instantiated to invoke
@@ -30,8 +30,8 @@ for each callback. For example, an object is instantiated to invoke
 and another object instantiated to invoke
 <javadoc method="cleanup(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>,
 even if you register a class that implements both
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> and
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>.
+[org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) and
+[org.zkoss.zk.ui.util.DesktopCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html).
 
 If you have something that is initialized in the init callback and have
 to clean it up in the cleanup callback, you cannot store it as a data

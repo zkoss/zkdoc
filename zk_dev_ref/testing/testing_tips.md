@@ -24,7 +24,7 @@ an element with one of the following approaches:
 1.  Not to depend on a DOM element's ID. Rather, use a component's ID
     and/or component's parent-child-sibling relationship.
 2.  Implement
-    <javadoc type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>
+    [org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html)
     to generate UUID in a predictable and repeatable way
 
 Let me explain them in detail.
@@ -39,7 +39,7 @@ application code depends on the component's ID and component's
 parent-child relationship. They are *identical*, except one is
 JavaScript and called <javadoc directory="jsdoc">zk.Widget</javadoc>,
 while the other is Java and called
-<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html).
 
 This is a suggested approach since it is much easier to test an
 application at the same abstract level -- the component level, aka., the
@@ -81,7 +81,7 @@ UUID in a predictable and repeatable manner.
 
 Since ZK 7.0.0, ZK provides a static ID generator implementation for
 testing, to use
-<javadoc type="class">org.zkoss.zk.ui.impl.StaticIdGenerator</javadoc>,
+[org.zkoss.zk.ui.impl.StaticIdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/StaticIdGenerator.html),
 simply add it to zk.xml.
 
 ```xml
@@ -93,7 +93,7 @@ simply add it to zk.xml.
 To implement a custom ID generator, you have to do the following:
 
 - Implement a Java class that implements
-  <javadoc type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>.
+  [org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html).
 - Specify the Java class FQCN at
   [id-generator-class]({{site.baseurl}}/zk_config_ref/the_system-config_element)
   element in `zk.xml`. For example,

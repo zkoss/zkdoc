@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.RequestInterceptor`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.RequestInterceptor</javadoc>
+[org.zkoss.zk.ui.util.RequestInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/RequestInterceptor.html)
 to intercept each request made to the ZK Loader and ZK Update Engine.
 Once registered, an instance of the specified class is created and
 shared within the whole application. Then, the `request` method is
@@ -15,12 +15,12 @@ zone of the request. Please refer to [ZK Developer's Reference]({{site.baseurl}}
 the details of Internationalization.
 
 You can register any number of the request interceptors
-(<javadoc type="interface">org.zkoss.zk.ui.util.RequestInterceptor</javadoc>).
+([org.zkoss.zk.ui.util.RequestInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/RequestInterceptor.html)).
 
 **Note:**
 
 1.  Unlike
-    <javadoc type="interface">org.zkoss.zk.ui.util.ExecutionInit</javadoc>
+    [org.zkoss.zk.ui.util.ExecutionInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionInit.html)
     and many other listeners, an instance of the registered
     `RequestInterceptor` is created at the time of registration, and
     then it is shared by the whole application. Thus, you have to make

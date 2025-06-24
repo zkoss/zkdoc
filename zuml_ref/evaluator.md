@@ -92,7 +92,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#c
 You can provide additional implementation by the use of the `class`
 attribute, as described in the following section. The class must
 implement the
-<javadoc type="interface">org.zkoss.xel.ExpressionFactory</javadoc>
+[org.zkoss.xel.ExpressionFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/ExpressionFactory.html)
 interface. Or, you can specify the following content in
 `metainfo/xel/config.xml`.
 

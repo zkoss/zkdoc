@@ -61,7 +61,7 @@ as follows.
 ```
 
 where you could specify any implementation that implements
-<javadoc type="interface">org.zkoss.zk.ui.sys.ServerPush</javadoc>.
+[org.zkoss.zk.ui.sys.ServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ServerPush.html).
 
 # Client-Polling Configuration
 

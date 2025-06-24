@@ -27,7 +27,7 @@ and
 [forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus).
 The `each` object represents the item being iterated, while
 forEachStatus is an instance of
-<javadoc type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>,
+[org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html),
 from which you could retrieve the index and the previous forEach, if any
 (nested iterations).
 
@@ -80,7 +80,7 @@ element.
 ## The forEachStatus Object
 
 The `forEachStatus` object is an instance of
-<javadoc type="interface">org.zkoss.ui.util.ForEachStatus</javadoc>. It
+[org.zkoss.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/util/ForEachStatus.html). It
 holds the information about the current iteration. It is mainly used to
 get the item of the enclosing element that is also assigned with the
 forEach attribute.

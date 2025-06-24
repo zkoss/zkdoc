@@ -1,12 +1,12 @@
 Here we describe how to implement a chart model
-(<javadoc type="interface">org.zkoss.zul.ChartModel</javadoc>). For the
+([org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html)). For the
 concept of component, model and render, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 Depending on the type of chart you want, you could implement one of
-<javadoc type="interface">org.zkoss.zul.PieModel</javadoc>,
-<javadoc type="interface">org.zkoss.zul.XYModel</javadoc>,
-<javadoc type="interface">org.zkoss.zul.GanttModel</javadoc>,
-<javadoc type="interface">org.zkoss.zul.HiLoModel</javadoc>, etc. In
+[org.zkoss.zul.PieModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/PieModel.html),
+[org.zkoss.zul.XYModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/XYModel.html),
+[org.zkoss.zul.GanttModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GanttModel.html),
+[org.zkoss.zul.HiLoModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/HiLoModel.html), etc. In
 addition, there are default implementations for them you could use
 directly, such as [org.zkoss.zul.SimplePieModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimplePieModel.html),
 [org.zkoss.zul.SimpleXYModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleXYModel.html), etc.

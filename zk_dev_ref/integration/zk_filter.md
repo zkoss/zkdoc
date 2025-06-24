@@ -65,7 +65,7 @@ for the portion whose content won't be changed dynamically.
 ZK Filter is designed to handle the output of a legacy servlet. If you
 would like to load a ZUML document from resources other than Web pages,
 such as from the database, you could implement
-<javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc>. It is
+[org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html). It is
 generally done by extending from
 [org.zkoss.zk.ui.impl.AbstractUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html) and overriding
 <javadoc method="getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.

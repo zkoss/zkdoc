@@ -8,7 +8,7 @@
 
 It defines a new kind of component tag, which could be used in the JSP
 document. If the class attribute is declared, the class must implement
-<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html).
 
 ## Inline Macro Definition
 

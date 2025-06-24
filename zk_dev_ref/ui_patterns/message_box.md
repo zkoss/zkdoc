@@ -50,7 +50,7 @@ Alternatively, you can examine the event name:
 **Note**: The event name for the OK button is `onOK`, not `onOk`.
 **Notice**: If you want to make it run under clustering environment, you
 shall implement
-<javadoc  type="interface">org.zkoss.zk.ui.event.SerializableEventListener</javadoc>.
+[org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html).
 For more information, please refer to [ZK Developer's Reference: Clustering]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips).
 
 # Message Boxes with Event Thread

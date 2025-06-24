@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.DesktopCleanup`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>
+[org.zkoss.zk.ui.util.DesktopCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html)
 to cleanup a desktop when it is being destroyed.
 
 When ZK Loader is going to destroy a desktop, it invokes the `cleanup`

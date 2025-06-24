@@ -230,7 +230,7 @@ As you can see above, the data will automatically be converted into a
 specific object type according to the method declaration.
 
 **Note:** developer can implement a custom
-<javadoc type="interface">org.zkoss.bind.Converter</javadoc> and specify
+[org.zkoss.bind.Converter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Converter.html) and specify
 it into [the ZK library properties]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.jsonbindingparamconverter.class).
 
 ### MVC Example
@@ -266,5 +266,5 @@ As you can see above, the data will automatically be converted into a
 specific object type according to the method declaration.
 
 **Note:** developer can implement a custom
-<javadoc type="interface">org.zkoss.util.Converter</javadoc> and specify
+[org.zkoss.util.Converter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Converter.html) and specify
 it into [the ZK library properties]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.jsonserviceparamconverter.class).

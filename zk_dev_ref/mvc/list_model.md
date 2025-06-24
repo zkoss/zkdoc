@@ -4,7 +4,7 @@
 [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html), and
 [org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html) allow developers to separate the
 view and the model by implementing
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc>. Once the
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html). Once the
 model is assigned (with
 <javadoc method="setModel(org.zkoss.zul.ListModel)">org.zkoss.zul.Listbox</javadoc>),
 the display of the listbox is controlled by the model, and an optional
@@ -45,7 +45,7 @@ handling data listeners transparently. We will talk about it later in
 # Default ListModel Implementation
 
 In most cases, you can use ZK default implementation of
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc> as the model
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) as the model
 without implementing by yourselves:
 
 - [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html)
@@ -192,11 +192,11 @@ listModel.getSelection().iterator(); //iterate it to get all selected Locale obj
 
 With the multiple selection function in a data model, you have to
 implement a class for the
-<javadoc type="interface">org.zkoss.zul.ext.SelectionControl</javadoc>
+[org.zkoss.zul.ext.SelectionControl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/SelectionControl.html)
 to tell the data model which items are selectable and what it will
 perform a "select all" function with. The following implementation
 extends
-<javadoc type="class">org.zkoss.zul.AbstractListModel.DefaultSelectionControl</javadoc>
+[org.zkoss.zul.AbstractListModel.DefaultSelectionControl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel/DefaultSelectionControl.html)
 and serves as a simple example to change "selectable" items.
 
 Please note that if your data model is much larger, you may implement it
@@ -213,12 +213,12 @@ model.setSelectionControl(new AbstractListModel.DefaultSelectionControl(model) {
 
 ## Custom ListModel Supports Selection
 
-`Interface: `<javadoc type="interface">`org.zkoss.zul.ext.Selectable`</javadoc>  
+`Interface: `[`org.zkoss.zul.ext.Selectable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Selectable`.html)  
 `Implementation: Implemented by `[`org.zkoss.zul.AbstractListModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractListModel`.html)
 
 If your data model also provides the collection of selected elements,
 you shall also implement
-<javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc>. When
+[org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html). When
 using with a component supporting the selection (such as
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)), the component will invoke
 <javadoc method="isSelected(E)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
@@ -241,7 +241,7 @@ correct the selection[^2].
 
 All default implementations, including
 [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), implement
-<javadoc type="interface">org.zkoss.zul.ext.Selectable</javadoc>. Thus,
+[org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html). Thus,
 your implementation generally doesn't need to handle the selection if it
 extends one of these classes.
 
@@ -251,11 +251,11 @@ extends one of these classes.
 
 # Sorting
 
-`Interface: `<javadoc type="interface">`org.zkoss.zul.ext.Sortable`</javadoc>  
+`Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
 `Implementation: You have to implement it explicitly`
 
 To support sorting, the model must implement
-<javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> too.
+[org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too.
 Thus, when the end user clicks the header to request sorting,
 <javadoc method="sort(java.util.Comparator, boolean)" type="interface">org.zkoss.zul.ext.Sortable</javadoc>
 will be called.
@@ -280,7 +280,7 @@ to sort in the order specified in the `ascending` parameter.
 | Version | Date          | Content                                                                                                                                                                                                                                                             |
 |---------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | February 2012 | All selection states are maintained in the list model. And, the application shall <i>not</i> access the component for the selection. Rather, the application shall invoke [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) for retrieving or changing the selection. |
-| 6.0.0   | February 2012 | <javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> was introduced and replaced `ListModelExt`.                                                                                                                                                          |
+| 6.0.0   | February 2012 | [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) was introduced and replaced `ListModelExt`.                                                                                                                                                          |
 
 [^1]: The listbox is smart enough to read the elements that are visible
     at the client, such as the elements for the active page. It is

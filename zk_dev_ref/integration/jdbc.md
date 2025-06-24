@@ -92,7 +92,7 @@ it works efficiently only if there are at most tens concurrent users.
 
 To know when a desktop becomes invalid, you have to implement a listener
 by use of
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>.
+[org.zkoss.zk.ui.util.DesktopCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html).
 
 # Use a Connection Pool
 

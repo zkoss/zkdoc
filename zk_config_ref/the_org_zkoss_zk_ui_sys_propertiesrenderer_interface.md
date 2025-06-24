@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.sys.PropertiesRenderer`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.sys.PropertiesRenderer</javadoc>
+[org.zkoss.zk.ui.sys.PropertiesRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/PropertiesRenderer.html)
 to generate application-specific client-side properties of a component.
 
 Once registered,
@@ -50,4 +50,4 @@ whole application. Thus, the implementation must be thread safe.
 
 | Version | Date       | Content                                                                                    |
 |---------|------------|--------------------------------------------------------------------------------------------|
-| 5.0.7   | April 2011 | <javadoc type="interface">org.zkoss.zk.ui.sys.PropertiesRenderer</javadoc> was introduced. |
+| 5.0.7   | April 2011 | [org.zkoss.zk.ui.sys.PropertiesRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/PropertiesRenderer.html) was introduced. |

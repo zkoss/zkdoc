@@ -8,10 +8,10 @@ discussed in the previous sections.
 
 In this section and subsections, we will focus on the model that ZK
 components support directly without custom glue logic. For example,
-implementing <javadoc type="interface">org.zkoss.zul.ListModel</javadoc>
+implementing [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 to control the display of [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html) and
 [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html), and
-<javadoc type="interface">org.zkoss.zul.ChartModel</javadoc> to control
+[org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html) to control
 [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html).
 
 In addition to implementing these models, you could use one of the

@@ -5,7 +5,7 @@
 `[Optional]`
 
 It specifies the implementation class. The class must implement the
-<javadoc type="interface">org.zkoss.zk.device.Device</javadoc>
+[org.zkoss.zk.device.Device](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/device/Device.html)
 interface. Instead of implementing it from scratch, you can derive from
 the proper implementation, such as
 `org.zkoss.zk.device.AjaxDevice`.

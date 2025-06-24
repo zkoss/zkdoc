@@ -1,5 +1,5 @@
 Each UI object is represented by a component
-(<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>). In this
+([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)). In this
 section we will discuss how to declare UI, including [XML-based approach]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) and
 [pure-Java approach]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet).
 

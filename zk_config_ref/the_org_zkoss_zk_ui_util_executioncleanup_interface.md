@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.ExecutionCleanup`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ExecutionCleanup</javadoc>
+[org.zkoss.zk.ui.util.ExecutionCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionCleanup.html)
 to cleanup an execution that is being destroyed.
 
 When ZK Loader is going to destroy an execution, it invokes the

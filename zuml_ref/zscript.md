@@ -52,7 +52,7 @@ Currently ZK supports Java, JavaScript, Ruby, Groovy, and Python.
 However, it is easy to extend:
 
 1.  Provide a class that implements
-    <javadoc type="interface">org.zkoss.zk.scripting.Interpreter</javadoc>.
+    [org.zkoss.zk.scripting.Interpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/Interpreter.html).
     However, it is suggested to derive from
     [org.zkoss.zk.scripting.util.GenericInterpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/util/GenericInterpreter.html)
     for simplicity.

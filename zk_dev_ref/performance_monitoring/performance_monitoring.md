@@ -4,12 +4,12 @@ To improve the performance of an Ajax application, it is better to
 monitor the performance for identifying the bottleneck. Depending on the
 information you'd like to know, there are a few approaches.
 
-- <javadoc type="interface">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>:
+- [org.zkoss.zk.ui.util.PerformanceMeter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html):
   Monitoring the performance from the network speed, server-processing
   time and the client-rendering time.
-- <javadoc type="interface">org.zkoss.zk.ui.util.EventInterceptor</javadoc>:
+- [org.zkoss.zk.ui.util.EventInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/EventInterceptor.html):
   Monitoring the performance of each event listener.
-- <javadoc type="interface">org.zkoss.zk.ui.util.Monitor</javadoc>:
+- [org.zkoss.zk.ui.util.Monitor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Monitor.html):
   Monitoring the number of desktops, sessions and other system load.
 - There are a lot of performance monitor tools, such as
   [VisualVM](https://visualvm.github.io/) and

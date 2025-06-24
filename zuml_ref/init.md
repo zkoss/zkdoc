@@ -16,11 +16,11 @@ initialization.
 The initialization takes place before the page is evaluated and attached
 to a desktop. Thus, the `getDesktop`, `getId` and `getTitle` method will
 return null when initializing. To retrieve the current desktop, you
-could use <javadoc type="interface">org.zkoss.zk.ui.Execution</javadoc>.
+could use [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html).
 
 You could specify any number of the `init` directive. The specified
 class must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>
+[org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html)
 interface.
 
 ```xml
@@ -49,7 +49,7 @@ initiator. For more information, please refer to [ZK Developer's Reference: Syst
 `[Optional]`
 
 A class name must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>
+[org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html)
 interface. Unlike the `init` directive, the class name cannot be the
 class that is defined in zscript codes.
 

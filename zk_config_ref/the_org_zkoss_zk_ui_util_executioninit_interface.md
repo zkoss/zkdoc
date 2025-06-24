@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.ExecutionInit`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ExecutionInit</javadoc>
+[org.zkoss.zk.ui.util.ExecutionInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionInit.html)
 to initialize a new execution.
 
 When the ZK Loader and Update Engine created a new execution, it invokes

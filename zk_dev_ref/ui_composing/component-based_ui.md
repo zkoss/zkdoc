@@ -1,7 +1,7 @@
 # Overview
 
 Each UI object is represented by a component
-(<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>). Thus,
+([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)). Thus,
 composing an UI object is like assembling components. To alter UI one
 has to modify the states and relationships of components.
 
@@ -94,12 +94,12 @@ is a utility to simplify the job.
 
 # Desktop, Page and Component
 
-A page (<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>) is a
+A page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) is a
 collection of components. It represents a portion of the browser window.
 Only components attached to a page are available at the client. They are
 removed when they are detached from a page.
 
-A desktop (<javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc>)
+A desktop ([org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html))
 is a collection of pages. It represents a browser window (a tab or a
 frame of the browser)[^1]. You might image a desktop representing an
 independent HTTP request.
@@ -320,7 +320,7 @@ invoking
     upcoming version.
 
 [^4]: A composer
-    (<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>)
+    ([org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html))
     is a controller that can be associated with a component for handling
     the UI in Java. For the information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 

@@ -29,7 +29,7 @@ of the server side cache is [OpenSymphony CacheFilter](http://www.opensymphony.c
   2.  You turn on the cacheable flag with [the page directive](ZUML_Reference/ZUML/Processing_Instructions/page)
 - Don't turn on this option, if you [reuse the desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops)
   by use of
-  <javadoc type="interface">org.zkoss.zk.ui.util.DesktopRecycle</javadoc>.
+  [org.zkoss.zk.ui.util.DesktopRecycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopRecycle.html).
   After all, a desktop can be reused only if it has been removed (and
   turning on this option makes a desktop stays alive).
 - When working with Opera, ZK always keeps the desktop (until the number

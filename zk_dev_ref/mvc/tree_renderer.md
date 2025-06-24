@@ -3,7 +3,7 @@ model, a default renderer is assigned too. The default renderer will
 assume that each tree item has only one column, and it converts the data
 into a string directly. If you want to display multiple columns or
 retrieve a particular field of the data, you have to implement
-<javadoc type="interface">org.zkoss.zul.TreeitemRenderer</javadoc> to
+[org.zkoss.zul.TreeitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeitemRenderer.html) to
 handle the rendering.
 
 The hierarchical structure is:

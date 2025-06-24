@@ -80,7 +80,7 @@ public class TestComposer extends SelectorComposer<Tabbox> {
 - Line 5: Listen the onHistoryPopState event of the root component \#tb.
 
 Or you can use a special annotition
-<javadoc type="interface">org.zkoss.bind.annotation.HistoryPopState</javadoc>
+[org.zkoss.bind.annotation.HistoryPopState](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/annotation/HistoryPopState.html)
 if you prefer MVVM.
 
 ```java

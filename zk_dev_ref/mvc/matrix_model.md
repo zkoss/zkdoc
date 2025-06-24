@@ -1,7 +1,7 @@
 
 
 Here we describe how to implement a matrix model
-(<javadoc type="interface">org.zkoss.zkmax.zul.MatrixModel</javadoc>).
+([org.zkoss.zkmax.zul.MatrixModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixModel.html)).
 For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
@@ -10,7 +10,7 @@ designed to handle unlimited data set, therefore, there is no need to
 handle model data in memory. This usage is application-dependent and
 varies from case to case. However, you can extend your own
 implementation from the
-<javadoc type="interface">org.zkoss.zul.AbstractListModel</javadoc>
+[org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)
 skeleton class.
 
 To implement a *MatrixModel*, one needs to consider the performance
@@ -120,9 +120,9 @@ the **getElementAt(int)** method to receive row data from the
 ## Sortable Model
 
 The <b>MatrixModel</b> can also support
-<javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html)
 interface. In your implementor class you can just implement the
-<javadoc type="interface">org.zkoss.zul.ext.Sortable</javadoc> interface
+[org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) interface
 and provide
 <javadoc method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
 and

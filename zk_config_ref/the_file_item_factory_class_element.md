@@ -6,7 +6,7 @@
 
 It specifies the class that is used to create a file item for fileupload
 or null to use the default. The class must implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.DiskFileItemFactory</javadoc>
+[org.zkoss.zk.ui.sys.DiskFileItemFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DiskFileItemFactory.html)
 interface.
 
 For example,

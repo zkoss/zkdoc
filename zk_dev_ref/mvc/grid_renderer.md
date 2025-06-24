@@ -3,7 +3,7 @@ default renderer is assigned too (see [the Model-driven Display ]({{site.baseurl
 The default renderer will assume that each row has only one column, and
 it converts the data into a string directly[^1]. If you want to display
 multiple columns or retrieve a particular field of the data, you have to
-implement <javadoc type="interface">org.zkoss.zul.RowRenderer</javadoc>
+implement [org.zkoss.zul.RowRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/RowRenderer.html)
 to handle the rendering and assign it by
 [setRowRenderer()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setRowRenderer-org.zkoss.zul.RowRenderer-).
 

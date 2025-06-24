@@ -449,7 +449,7 @@ See more about sorting [Multiple Field Sorting onListbox](http://books.zkoss.org
 Like list boxes, grids support *live data*. With live data, developers
 are able to separate the data from the view. In other words, developers
 only need to provide the data by implementing the
-<javadoc type="interface">org.zkoss.zul.ListModel</javadoc> interface,
+[org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) interface,
 rather than manipulating the grid directly. The benefits are twofold.
 
 - It is easier to use different views to show the same set of data.
@@ -461,7 +461,7 @@ There are three steps to make use of live data.
 1 Prepare the data in the form of a `ListModel`. ZK has a concrete
 implementation called [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 for representing an array of objects. 2 Implement the
-<javadoc type="interface">org.zkoss.zul.RowRenderer</javadoc> interface
+[org.zkoss.zul.RowRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/RowRenderer.html) interface
 for rendering a row of data into the grid.
 
 - - This is optional. If it is not specified the default renderer is
@@ -516,7 +516,7 @@ is done by the list model, rather than the grid.
 
 After sorting, the list model will notify the grid by invoking the
 `onChange` method of the grid's registered
-<javadoc type="interface">org.zkoss.zul.event.ListDataListener</javadoc>
+[org.zkoss.zul.event.ListDataListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataListener.html)
 instances. These are registered by the `addListDataListener` method. In
 most cases, all the data is changed, so the list model usually sends the
 following event:

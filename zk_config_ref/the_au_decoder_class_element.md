@@ -6,13 +6,13 @@
 
 It specifies which class will be used to implement the AU decoder. The
 AU decoder is used to decode the AU requests. The class must implement
-<javadoc type="interface">org.zkoss.zk.au.AuDecoder</javadoc>.
+[org.zkoss.zk.au.AuDecoder](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuDecoder.html).
 
 By default, the AU request is sent in the JSON format. If you prefer to
 use another format, you could provide an implementation as follows.
 
 1.  Implement
-    <javadoc type="interface">org.zkoss.zk.au.AuDecoder</javadoc>. You
+    [org.zkoss.zk.au.AuDecoder](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuDecoder.html). You
     can reference the default implementation, inner class AuDecoder in
     `org.zkoss.zk.au.http.DHtmlUpdateServlet`.
 2.  Register it by specifying it with the `au-decoder-class` element in

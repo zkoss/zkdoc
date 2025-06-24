@@ -72,7 +72,7 @@ public void doTag() throws JspException, IOException {
 
 If you want to have more control, such as applying a composer provided
 by users or creating components from a ZUL page, you could implement a
-richlet (<javadoc type="interface">org.zkoss.zk.ui.Richlet</javadoc>)
+richlet ([org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html))
 and then invoke
 <javadoc method="render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer)">org.zkoss.zkplus.embed.Renders</javadoc>
 instead.

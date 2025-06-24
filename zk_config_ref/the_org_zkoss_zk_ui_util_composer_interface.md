@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.Composer`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>, such
+[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html), such
 that it can process the creation of ZK pages like a composer specified
 in [the apply attribute](ZUML_Reference/ZUML/Attributes/apply). It is also
 known as *system-level composers*.
@@ -19,12 +19,12 @@ process only certain pages, you can check the request path by calling
 (the desktop instance can be found in the given component).
 
 If the system-level composer also implements
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>, it
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html), it
 can be used to handle more situations, such as exceptions, like any
 other composer can do.
 
 If the system-level composer also implements
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>,
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html),
 it will be invoked when each component is created. It provides the
 finest grain of control but a wrong implementation might degrade the
 performance.
@@ -40,7 +40,7 @@ page, there is no threading issues.
   
 The system-level composers are applied to richlets too. In addition, a
 system-level composer can implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc> to
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html) to
 handle exceptions for a richlet, such as `doCatch` and `doFinally`.
 However, `doBeforeCompose` and `doBeforeComposeChildren` won't be
 called.
@@ -48,7 +48,7 @@ called.
 <!-- -->
 
   
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc> is
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html) is
 not applicable to richlets. In other words, system-level composers are
 called only for the root components.
 

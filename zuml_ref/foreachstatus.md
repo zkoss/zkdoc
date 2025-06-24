@@ -1,7 +1,7 @@
-# forEachStatus – <javadoc type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>
+# forEachStatus – [org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html)
 
 The status of an iteration. It is an instance of
-<javadoc type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>.
+[org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html).
 ZK exposes the information relative to the iteration taking place when
 evaluating the iterative element.
 

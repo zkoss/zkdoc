@@ -238,7 +238,7 @@ Then, you could access it as follows.
 ### Wire Spring-managed beans
 
 Here is another example that we wire Spring-managed beans with the
-<javadoc type="interface">org.zkoss.zk.ui.select.WireVariable</javadoc>
+[org.zkoss.zk.ui.select.WireVariable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/WireVariable.html)
 annotation.
 
 ```java
@@ -256,7 +256,7 @@ public class UsersComposer extends SelectorComposer<Window> {
 where we register a variable resolver called
 [org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 with the
-<javadoc type="interface">org.zkoss.zk.ui.select.VariableResolver</javadoc>
+[org.zkoss.zk.ui.select.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/VariableResolver.html)
 annotation. As its name suggests,
 [org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html)
 will be used to retrieve Spring-managed beans when `@WireVariable` is
@@ -281,9 +281,9 @@ document, as below.
 A composer could also handle the exceptions, if any, control the life
 cycle of rendering, and intercept how a child component is instantiated.
 It can be done by implementing the corresponding interfaces,
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html)
 and/or
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>.
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html).
 
 ## Initialize Components
 
@@ -311,7 +311,7 @@ public class MyComposer extends SelectorComposer<Grid> {
 
 If you want a composer to handle the exception and/or control the life
 cycle of rendering, you could also implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>.
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html).
 Since [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) already
 implements this interface, you only need to override the method you care
 about if you extend from it.
@@ -343,7 +343,7 @@ and/or
 In addition to controlling the given component, a composer can monitor
 the instantiation and exceptions for each child and the descendant
 component. It is done by implementing
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>.
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html).
 [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) does not
 implement this interface by default. Thus, you have to implement it
 explicitly.
@@ -351,14 +351,14 @@ explicitly.
 There is no implementation method needed for this interface. It is like
 a decorative interface to indicate that it requires the fine-grained
 full control. In other words, all methods declared in
-<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc> and
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html) and
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html)
 will be invoked one-by-one against each child and the descendant
 component.
 
 For example, suppose we have a composer implementing both
-<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc> and
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>,
+[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html) and
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html),
 and it is assigned as followed
 
 ```xml
@@ -376,13 +376,13 @@ Then,
 <javadoc type="interface" method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>
 will be called for datebox, textbox, div and then panel (in the order of
 *child-first-parent-last*). If
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc> is
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html) is
 not implemented, only the panel will be called.
 
 Notice that, because
 <javadoc type="interface" method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>
 will be called for each child, the generic type should be
-<javadoc type="interface">org.zkoss.zk.ui.Component</javadoc> rather
+[org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) rather
 than the component's type to which the composer is applied. For example,
 
 ```java
@@ -426,12 +426,12 @@ you can check the request path by calling
 (the desktop instance can be found through the given component).
 
 If the system-level composer also implements
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>, it
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html), it
 can be used to handle more situations, such as exceptions, like any
 other composer can do.
 
 If the system-level composer also implements
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc>,
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html),
 it will be invoked when each component is created. It provides the
 finest grain of control but a wrong implementation might degrade the
 performance.
@@ -442,12 +442,12 @@ page, there are no concurrency issues.
 ## Richlet
 
 A system-level composer can implement
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc> to
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html) to
 handle exceptions for a richlet, such as `doCatch` and `doFinally`.
 However, `doBeforeCompose` and `doBeforeComposeChildren` won't be
 called.
 
-<javadoc type="interface">org.zkoss.zk.ui.util.FullComposer</javadoc> is
+[org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html) is
 not applicable to richlets. In other words, system-level composers are
 called only for root components.
 

@@ -181,7 +181,7 @@ unique across different desktops (of the same session[^4]). The default
 ID generator can handle it well.
 
 However, if you use a customized
-<javadoc type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>, you
+[org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html), you
 have to generate component's UUID
 (<javadoc method="nextComponentUuid(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>)
 correctly. A typical trick is to encode desktop's ID as part of

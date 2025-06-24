@@ -12,11 +12,11 @@ Wiring from an implicit object is equivalent to calling
 <javadoc method="getImplicit(org.zkoss.zk.ui.Page, java.lang.String)">org.zkoss.zk.ui.Components</javadoc>,
 by the name specified on `@WireVariable`. If the name is absent and the
 field or method parameter is of type
-<javadoc type="interface">org.zkoss.zk.ui.Execution</javadoc>,
-<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>,
-<javadoc type="interface">org.zkoss.zk.ui.Desktop</javadoc>,
-<javadoc type="interface">org.zkoss.zk.ui.Session</javadoc>, or
-<javadoc type="interface">org.zkoss.zk.ui.WebApp</javadoc>, it still
+[org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html),
+[org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html),
+[org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html),
+[org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html), or
+[org.zkoss.zk.ui.WebApp](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html), it still
 will be wired to the correct implicit object. However, in other cases,
 an exception will be thrown.
 
@@ -46,7 +46,7 @@ public class FooComposer extends SelectorComposer<Window> {
 ## Wire from Variable Resolver
 
 There are two approaches to register a variable resolver: the
-<javadoc type="interface">org.zkoss.zk.ui.select.annotation.VariableResolver</javadoc>
+[org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
 annotation or [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
 Here is the example of registering variable resolvers with annotations.
 
@@ -59,7 +59,7 @@ public class FooComposer extends SelectorComposer<Gird> {
 
 To have [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) wire
 a variable, you have to annotate it with the
-<javadoc type="interface">org.zkoss.zk.ui.select.annotation.WireVariable</javadoc>
+[org.zkoss.zk.ui.select.annotation.WireVariable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/WireVariable.html)
 annotation. For example,
 
 ```java
@@ -223,14 +223,14 @@ Here is the sequence of wiring:
 - In
   <javadoc method="doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)">org.zkoss.zk.ui.util.ComposerExt</javadoc>,
   it wires variables to the fields and methods annotated with the
-  <javadoc type="interface">org.zkoss.zk.ui.select.annotation.WireVariable</javadoc>
+  [org.zkoss.zk.ui.select.annotation.WireVariable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/WireVariable.html)
   annotation. Here is the sequence of how it looks for the variable:
   1.  First, it will look for the variable resolver defined in the ZUML
       document (by use of
       <javadoc method="addVariableResolver(org.zkoss.xel.VariableResolver)">org.zkoss.zk.ui.Page</javadoc>).
   2.  Second, it looks for the variable resolver annotated at the class
       with the
-      <javadoc type="interface">org.zkoss.zk.ui.select.annotation.VariableResolver</javadoc>
+      [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
       annotation.
   3.  If none is found, it looks for [the implicit objects](ZUML_Reference/EL_Expressions/Implicit_Objects),
       such as session and page.

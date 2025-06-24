@@ -21,24 +21,24 @@ window as the topmost component to group components. This way developers
 only need to maintain the uniqueness of each subset separately.
 
 By and large, every component can form an ID space as long as it
-implements <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>.
+implements [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html).
 This type of component is called the space owner of the ID space after
 the component is formed. Components in the same ID space are called
 "fellows".
 
 When a page implements
-<javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>, it becomes
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html), it becomes
 a space owner. In additions, the macro component and the include
 component ([org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)) can also be space
 owners.
 
 Another example is `idspace` ([org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)).
 It derives from `div`, and is the simplest component implementing
-<javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>. If you
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html). If you
 don't need any feature of window, you could use `idspace` instead.
 
 You could make a standard component as a space owner by extending it to
-implement <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc>.
+implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html).
 For example,
 
 ```java
@@ -224,10 +224,10 @@ Application developers rarely need to access it.
 
 In general, UUID is independent of ID. UUID is assigned (generated) automatically by
 ZK framework, while ID is assigned by the application developers. However, if a component
-implements <javadoc type="interface">org.zkos.zk.ui.ext.RawId</javadoc>,
+implements [org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html),
 ID will become UUID if the application assigns one. Currently, only
 components from [ the XHTML component set](ZUML_Reference/ZUML/Languages/XHTML) implements
-<javadoc type="interface">org.zkos.zk.ui.ext.RawId</javadoc>.
+[org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html).
 
 A component's UUID is used by the ZK framework as the primary identifier for the corresponding HTML element in the rendered page. When ZK generates the client-side DOM, each component's root HTML element will have its `id` attribute set to the component's UUID. This ensures that every component can be uniquely referenced and manipulated on the client side, even if multiple components have the same developer-assigned ID within different ID spaces. The UUID is also used internally by ZK for event handling, client-server communication, and to maintain the mapping between server-side components and their client-side representations.
 

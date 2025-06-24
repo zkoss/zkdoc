@@ -2,7 +2,7 @@
 
 A map of custom attributes associated with the session. It is the same
 as the `getAttributes` method in the
-<javadoc type="interface">org.zkoss.zk.ui.Session</javadoc> interface.
+[org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) interface.
 
 If the client is based on HTTP, such as a Web browser, this is the same
 map of attributes stored in `javax.servlet.http.HttpSession`. In other

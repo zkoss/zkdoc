@@ -314,7 +314,7 @@ Here is the sequence of wiring:
 - In
   <javadoc method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>,
   it wires components to the fields and methods with the
-  <javadoc type="interface">org.zkoss.zk.ui.select.annotation.Wire</javadoc>
+  [org.zkoss.zk.ui.select.annotation.Wire](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/Wire.html)
   annotation.
 
 <!-- -->

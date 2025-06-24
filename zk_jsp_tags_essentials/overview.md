@@ -120,7 +120,7 @@ can declare multiple pages like this:
 
 The rule to access variables across pages is the same as to do so in
 pure ZK document. For more detailed information about
-Page(<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>), please
+Page([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)), please
 refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui).
 
 # Component Tag Declaration

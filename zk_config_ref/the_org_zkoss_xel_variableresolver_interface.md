@@ -3,7 +3,7 @@
 `org.zkoss.xel.VariableResolver`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>, and
+[org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html), and
 then it will be used as the default variable resolver of each page. In
 other words, the variable resolver defined will be available to all
 pages. It is also called the system-level variable resolver.

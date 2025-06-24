@@ -17,12 +17,12 @@ The first day of the week is decided in the following sequence.
 1.  It checks if an attribute called
     `org.zkoss.web.preferred.firstDayOfWeek` is defined in the HTTP
     session (aka.,
-    <javadoc type="interface">org.zkoss.zk.ui.Session</javadoc>). If so,
+    [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html)). If so,
     use it.
 2.  It checks if an attribute called
     `org.zkoss.web.preferred.firstDayOfWeek` is defined in the Servlet
     context (aka.,
-    <javadoc type="interface">org.zkoss.zk.ui.Application</javadoc>). If
+    [org.zkoss.zk.ui.Application](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Application.html)). If
     so, use it.
 3.  It checks if a property called
     `org.zkoss.web.preferred.firstDayOfWeek` is defined in the library

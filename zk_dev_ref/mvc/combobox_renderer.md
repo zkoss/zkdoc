@@ -3,7 +3,7 @@ with a model, a default renderer is assigned too[^1]. The default
 renderer will assume that the combobox displays the data as a
 string[^2]. If you want to display more sophisticated information or
 retrieve a particular field of the data, you have to implement
-<javadoc type="interface">org.zkoss.zul.ComboitemRenderer</javadoc> to
+[org.zkoss.zul.ComboitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ComboitemRenderer.html) to
 handle the rendering.
 
 For example,

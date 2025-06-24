@@ -6,5 +6,5 @@
 
 It specifies the name of the class used to provide the customized label
 loader. The class must implement the
-<javadoc type="interface">org.zkoss.util.resource.impl.LabelLoader</javadoc>
+[org.zkoss.util.resource.impl.LabelLoader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/impl/LabelLoader.html)
 interface.

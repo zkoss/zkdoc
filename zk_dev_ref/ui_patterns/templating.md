@@ -1,7 +1,7 @@
 Templating is a technique that allows developers to define UI fragments,
 and how to assemble them into a complete UI at runtime. With ZK, it can
 be done by the use of annotations and composers (or initators,
-<javadoc type="interface">org.zkoss.zk.ui.utilInitiator</javadoc>).
+[org.zkoss.zk.ui.utilInitiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/utilInitiator.html)).
 
 In general, templating can be done by specifying the name of a fragment
 as [annotations]({{site.baseurl}}/zk_dev_ref/annotations) in a

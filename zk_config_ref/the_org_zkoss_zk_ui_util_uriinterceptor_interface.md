@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.URIInterceptor`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.URIInterceptor</javadoc>
+[org.zkoss.zk.ui.util.URIInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/URIInterceptor.html)
 to intercept the retrieval of ZUML pages with the associated URI. Once
 registered, an instance of the specified class is created and shared
 within the whole application. Then, the `request` method is invoked,

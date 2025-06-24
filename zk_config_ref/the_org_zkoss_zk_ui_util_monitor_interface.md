@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.Monitor`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.Monitor</javadoc> to
+[org.zkoss.zk.ui.util.Monitor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Monitor.html) to
 monitor the statuses of ZK. Unlike other listeners, there is at most one
 monitor listener for each Web application. If you like, you can chain
 them together manually.

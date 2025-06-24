@@ -1,4 +1,4 @@
-# self - <javadoc type="interface">org.zkoss.zk.ui.Component</javadoc>
+# self - [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)
 
 The component itself. In other words, it is the closest component,
 depicted as follows.

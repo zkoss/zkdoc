@@ -207,7 +207,7 @@ method won't be called.
 
 If a widget event is not stopped and required by the server, it will be
 sent to the server, and converted to an instance of
-<javadoc type="interface">org.zkoss.zk.au.AuRequest</javadoc> at the
+[org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html) at the
 server[^1].
 
 In addition to the event propagation, the default implementation will

@@ -7,7 +7,7 @@
 It specifies which class is used to create desktops and pages, and to
 convert URL to a page definition. The class must have a default
 constructor (without any argument), and implement the
-<javadoc type="interface">org.zkoss.zk.ui.sys.UiFactory</javadoc>
+[org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html)
 interface.
 
 One instance of the UI factory is created and shared for each Web

@@ -720,7 +720,7 @@ Like [Window]({{site.baseurl}}/zk_component_ref/containers/window),
 [panel]({{site.baseurl}}/zk_component_ref/containers/panel) is another
 powerful container supporting captioning, bordering, overlapping and
 many other features. However,
-<javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc> is not
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is not
 implemented by this component, therefore, all of its children belong to
 the same ID space of its parent.
 
@@ -777,7 +777,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 light-weighted way to group child components together. It supports
 ["caption"]({{site.baseurl}}/zk_component_ref/containers/caption) and
 "border", however, it does not support overlapping or resizing. Like
-Panel, <javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc> is
+Panel, [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is
 not implemented by this component either.
 
 <table>
@@ -831,7 +831,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 container used to display a set of tabbed groups of components. A row of
 tabs can be displayed at the top (or left) of the tabbox; users can
 switch between each tab group by a simple click.
-<javadoc type="interface">org.zkoss.zk.ui.IdSpace</javadoc> is not
+[org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is not
 implemented by this component either.
 
 <table>

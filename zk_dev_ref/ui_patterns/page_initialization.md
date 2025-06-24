@@ -6,7 +6,7 @@ access, initialize some data, or prepare some variables for EL
 expressions.
 
 This can be done easily by implementing
-<javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>/<javadoc type="interface">org.zkoss.zk.ui.util.InitiatorExt</javadoc>,
+[org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html)/[org.zkoss.zk.ui.util.InitiatorExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/InitiatorExt.html),
 and then specifying it with [the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 
 ```xml
@@ -22,7 +22,7 @@ the variable in the page's attributes.
 >
 > **Notice** that the provision of variables for EL expression is
 > generally better to be done with
-> <javadoc type="interface">org.zkoss.xel.VariableResolver</javadoc>
+> [org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)
 > (and then specified it with [the variable-resolver > directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)).
 
 For example, suppose we have a class, `CustomerManager`, that can be
@@ -76,7 +76,7 @@ It could be done by specifying the initiator you implemented in
 ```
 
 Once specified, an instance of the given class will be instantiated for
-each page (<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc>),
+each page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)),
 and then its method will be called as if they are specified in the page
 ([the init directive](ZUML_Reference/ZUML/Processing_Instructions/init)).
 
@@ -90,7 +90,7 @@ a page by implementing
 >
 > **Notice** that it does not cover the exception thrown in an event
 > listener, which could be handled by the use of
-> <javadoc type="interface">org.zkoss.zk.ui.util.ExecutionCleanup</javadoc>.
+> [org.zkoss.zk.ui.util.ExecutionCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ExecutionCleanup.html).
 
 ```java
 import org.zkoss.zk.ui.Page;

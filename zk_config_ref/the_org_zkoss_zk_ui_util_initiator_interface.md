@@ -3,7 +3,7 @@
 `org.zkoss.zk.ui.util.Initiator`
 
 A listener could implement
-<javadoc type="interface">org.zkoss.zk.ui.util.Initiator</javadoc> to
+[org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html) to
 handle the initialization of a ZUML page and richlets, as if it is
 specified in [the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
 This kind of listeners is called system-level initiators.

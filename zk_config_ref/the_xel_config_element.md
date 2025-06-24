@@ -41,7 +41,7 @@ following:
     `org.zkoss.zkmax.xel.el.ApacheELFactory` by simply
     overriding the `newExpressionEvaluator` method. Of course, if you
     prefer, you can implement the
-    <javadoc type="interface">org.zkoss.xel.ExpressionFactory</javadoc>
+    [org.zkoss.xel.ExpressionFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/ExpressionFactory.html)
     interface directly.
 
 **Notes**

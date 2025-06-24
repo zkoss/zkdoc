@@ -11,7 +11,7 @@ type.
 If the uploaded file is binary, there is no encoding issue at all.
 
 The finder must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.CharsetFinder</javadoc>
+[org.zkoss.zk.ui.util.CharsetFinder](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/CharsetFinder.html)
 interface. Then, when a text file is uploaded, the `getCharset` method
 is called and it can determines the encoding based on the content type
 and/or the content of the uploaded file.

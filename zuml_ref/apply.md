@@ -7,7 +7,7 @@
 
 It specifies a class, a collection of classes that are used to
 initialize the component. The class must implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
+[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html)
 interface. And then, you can do the initialization in the
 `doAfterCompose` method, since it is called after the component and all
 its children are instantiated.
@@ -27,7 +27,7 @@ expressions specified in this attribute.
 
 If you want more control such as handling the exception, you can also
 implement the
-<javadoc type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+[org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html)
 interface.
 
 If you have a composer that you'd like to apply to every page, you don't

@@ -159,7 +159,7 @@ GAE limits the session memory to 1 mega bytes. If a user visits several
 pages (with different URLs) in the same browser session, there would be
 several desktops created and stored in the session, and it might run out
 the 1 mega bytes. To avoid this, you can implement
-<javadoc type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc> to
+[org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) to
 remove other desktops in the desktop cache and specify it in
 WEB-INF/zk.xml as a listener. For example,
 

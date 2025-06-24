@@ -7,8 +7,8 @@
 It specifies which class is used to implement the Web application. The
 class must have a default constructor (without any argument), and
 implement both the
-<javadoc type="interface">org.zkoss.zk.ui.WebApp</javadoc> and
-<javadoc type="interface">org.zkoss.zk.ui.sys.WebAppCtrl</javadoc>
+[org.zkoss.zk.ui.WebApp](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html) and
+[org.zkoss.zk.ui.sys.WebAppCtrl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/WebAppCtrl.html)
 interfaces. Instead of implementing from scratch, you can extend it from
 the `org.zkoss.zk.ui.impl.AbstractWebApp` or
 `org.zkoss.zk.ui.http.SimpleWebApp` classes.
