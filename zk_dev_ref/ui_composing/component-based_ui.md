@@ -108,9 +108,7 @@ independent HTTP request.
 
 A desktop is also a logic scope that an application can access in a
 request. Each time a request is sent from the client, it is associated
-with the desktop it belongs. The request is passed to \<javadoc
-method="service(org.zkoss.zk.au.AuRequest, boolean)"
-type="interface\>org.zkoss.zk.ui.sys.DesktopCtrl</javadoc> and then
+with the desktop it belongs. The request is passed to [org.zkoss.zk.ui.sys.DesktopCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean)) and then
 forwarded to
 [org.zkoss.zk.ui.sys.ComponentCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean)).
 This also means that the application can not access components in

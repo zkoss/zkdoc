@@ -6,7 +6,7 @@ configuration options. You can change a chart's appearance including
 title, series, tooltip, x/y axis, legend, data labels...etc by simply
 calling API. For example, if you want to change the title's
 configuration, we can call `chart.getTitle()` to get the
-<javadoc directory="zkcharts">org.zkoss.chart.Title</javadoc> class then
+[org.zkoss.chart.Title](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Title.html) class then
 modify its attributes as below:
 
 ```java
@@ -20,7 +20,7 @@ modify its attributes as below:
 ```
 
 Of course you can also create a new
-<javadoc directory="zkcharts">org.zkoss.chart.Title</javadoc> class and
+[org.zkoss.chart.Title](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Title.html) class and
 assign it to chart:
 
 ```java

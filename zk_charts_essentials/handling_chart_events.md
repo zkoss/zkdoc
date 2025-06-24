@@ -4,7 +4,7 @@ data.
 
 # ChartsEvent
 
-<javadoc directory="zkcharts">org.zkoss.chart.ChartsEvent</javadoc>
+[org.zkoss.chart.ChartsEvent](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/ChartsEvent.html)
 represents an event triggered by user's interaction. Please check out
 `event.zul` in the example project to see events firing.
 
@@ -82,9 +82,9 @@ code as below:
 
 - Line 17: you can get the x and y axis values of where the mouse was
   clicked from
-  <javadoc directory="zkcharts">org.zkoss.chart.ChartsClickEvent</javadoc>
+  [org.zkoss.chart.ChartsClickEvent](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/ChartsClickEvent.html)
   which extends
-  <javadoc directory="zk">org.zkoss.zk.ui.event.MouseEvent</javadoc>
+  [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)
 
 # Supported ChartsEvent
 
@@ -174,7 +174,7 @@ you drag your pointer within the chart. ZK will pass a
 **Note:**
 
 - see
-  <javadoc directory="zkcharts">org.zkoss.chart.ChartsEvents</javadoc>
+  [org.zkoss.chart.ChartsEvents](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/ChartsEvents.html)
   for more details.
 - `onPlotShow`, `onPlotHide`, and `onPlotLegendItemClick` are not
   applicable on a pie chart because they are fired when a legend

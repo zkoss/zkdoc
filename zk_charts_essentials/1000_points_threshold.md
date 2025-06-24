@@ -1,5 +1,5 @@
 If the data points
-(<javadoc directory="zkcharts">org.zkoss.chart.Point</javadoc>) of a
+([org.zkoss.chart.Point](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Point.html)) of a
 series are not Number and neither array, there is a 1000-points
 limitation for rendering a series. If a series contains more than 1000
 points, ZK Charts won't render that series.

@@ -41,7 +41,7 @@ try {
 
 The export utility provides a chance to handle Excel style via POI API.
 You can specify custom styles by passing a
-<javadoc directory="zkpvt">org.zkoss.pivot.util.poi.CellStyleConfigurator</javadoc>.
+[org.zkoss.pivot.util.poi.CellStyleConfigurator](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/util/poi/CellStyleConfigurator.html).
 For example,
 
 ```java

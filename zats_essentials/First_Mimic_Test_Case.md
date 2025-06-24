@@ -54,31 +54,31 @@ Steps to write a test case are as follows:
 Before diving into the source code of a test case, let me introduce some
 basic classes used in a test case.
 
-<javadoc directory="zats">org.zkoss.zats.mimic.Zats</javadoc>  
+[org.zkoss.zats.mimic.Zats](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/Zats.html)  
 It contains several utility methods to initialize and clean testing
 environment. By default, it starts server emulator **with built-in
 web.xml and zk.xml** bundled in ZATS Mimic's jar.
 
-<javadoc directory="zats"> org.zkoss.zats.mimic.Client</javadoc>  
+[org.zkoss.zats.mimic.Client](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/Client.html)  
 Acts like a browser to the server emulator and we use it to connect to a
 ZUL. One client keeps its session even connecting to different ZUL
 pages. If you want to create different sessions, you have to create
 another client object.
 
-<javadoc directory="zats">org.zkoss.zats.mimic.DesktopAgent </javadoc>  
+[org.zkoss.zats.mimic.DesktopAgent](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DesktopAgent.html)  
 Wraps ZK Desktop object, we usually call its `query()` or `queryAll()`
 to retrieve `ComponentAgent` with selector syntax.
 
 For available selector syntax, please refer to [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) or [Small Talks/2011/January/Envisage ZK 6: An Annotation Based Composer For MVC](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC)
 
-<javadoc directory="zats">org.zkoss.zats.mimic.ComponentAgent </javadoc>  
+[org.zkoss.zats.mimic.ComponentAgent](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/ComponentAgent.html)  
 Mimics a ZK component and determines which operation you can perform on
 it. We can also get ZK component property's value from it.
 
 It also has `query()` which means to find targets among its child
 components.
 
-<javadoc directory="zats">org.zkoss.zats.mimic.operation.OperationAgent</javadoc> `(ClickAgent, TypeAgent, SelectAgent...)`  
+[org.zkoss.zats.mimic.operation.OperationAgent](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/operation/OperationAgent.html) `(ClickAgent, TypeAgent, SelectAgent...)`  
 To mimic a user operation to a ZK component.
 
 We name it "Agent" as it's not really the user operation itself, it's an

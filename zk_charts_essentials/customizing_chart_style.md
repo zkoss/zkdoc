@@ -92,7 +92,7 @@ charts.getSeries().setColor("#aabbcc"); //change a specific series
 ## Customizing Colors
 
 ZK Charts uses
-<javadoc directory="zkcharts">org.zkoss.chart.Color</javadoc> class to
+[org.zkoss.chart.Color](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Color.html) class to
 apply the color to the color-changing method in the option, such as
 `setBackgroundColor()` or `setFillColor()`. `Color` supports solid color
 and gradient color.
@@ -113,9 +113,9 @@ any valid color format in browsers:
 
 A gradient is a smooth color transition from one color to another. In ZK
 Charts, a gradient is defined by
-<javadoc directory="zkcharts">org.zkoss.chart.LinearGradient</javadoc>
+[org.zkoss.chart.LinearGradient](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/LinearGradient.html)
 or
-<javadoc directory="zkcharts">org.zkoss.chart.RadialGradient</javadoc>,
+[org.zkoss.chart.RadialGradient](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/RadialGradient.html),
 they have similar attributes to [SVG Gradients](http://www.w3.org/TR/SVG11/pservers.html#Gradients).
 
 #### Linear Gradient

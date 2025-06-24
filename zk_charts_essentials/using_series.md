@@ -1,7 +1,7 @@
 
 
 Another way to add data to a chart is through
-<javadoc directory="zkcharts">org.zkoss.chart.Series</javadoc>. You have
+[org.zkoss.chart.Series](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Series.html). You have
 to use `Series` to combine multiple types of chart in one chart
 component like [this demo](https://www.zkoss.org/zkchartsdemo/combo)
 because each `Series` can be rendered as different chart types.
@@ -23,7 +23,7 @@ Series series1 = chart.getSeries(1);
 
 Call `setData()` to add data points to the series, and data could be
 Double, Integer, Number. If you want to show category, pass
-<javadoc directory="zkcharts">org.zkoss.chart.Point</javadoc> as
+[org.zkoss.chart.Point](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Point.html) as
 parameters.
 
 Here is a simple example.

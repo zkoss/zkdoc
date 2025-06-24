@@ -69,7 +69,7 @@ additional declarations in the composer:
     legend.setBorderWidth(0);
 ```
 
-The <javadoc directory="zkcharts">org.zkoss.chart.Legend</javadoc> of
+The [org.zkoss.chart.Legend](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Legend.html) of
 chart will be moved to the right of the chart without border.
 
 ![](images/FirstChartSettings.png)

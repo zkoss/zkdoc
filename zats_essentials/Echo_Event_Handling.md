@@ -26,6 +26,6 @@ public enum EchoEventMode {
 - Line 4: The default mode.
 
 However, you can change the default mode by the method
-<javadoc directory="zats" method="setEchoEventMode(org.zkoss.zats.mimic.EchoEventMode)" >org.zkoss.zats.mimic.Client</javadoc>
+[org.zkoss.zats.mimic.Client#setEchoEventMode(org.zkoss.zats.mimic.EchoEventMode)](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/Client.html#setEchoEventMode(org.zkoss.zats.mimic.EchoEventMode))
 
  

@@ -1,6 +1,6 @@
 # PivotUIEvent
 
-<javadoc directory="zkpvt">org.zkoss.pivot.event.PivotUIEvent</javadoc>
+[org.zkoss.pivot.event.PivotUIEvent](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/event/PivotUIEvent.html)
 is fired when user operates on the Pivottable. This event class covers
 the following types of Events: *onPivotNodeOpen, onPivotPopup,
 onPivotTooltip, onPivotContext*.
@@ -112,7 +112,7 @@ three variables: **header node**, **subtotal calculator**, and
 
 The <pivot-field-control> will fire this event after you drag to change
 a field in the field control and pass
-<javadoc directory="zkpvt">org.zkoss.pivot.ui.PivotFieldControlChangeEvent</javadoc>
+[org.zkoss.pivot.ui.PivotFieldControlChangeEvent](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/ui/PivotFieldControlChangeEvent.html)
 to a listener.
 
 #

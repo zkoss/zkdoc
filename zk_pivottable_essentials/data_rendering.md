@@ -18,9 +18,9 @@ PivotRenderer), which determines:
 ## SimplePivotRenderer
 
 We have provided
-<javadoc directory="zkpvt">org.zkoss.pivot.impl.SimplePivotRenderer</javadoc>,
+[org.zkoss.pivot.impl.SimplePivotRenderer](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/impl/SimplePivotRenderer.html),
 a basic implementation of
-<javadoc directory="zkpvt">org.zkoss.pivot.PivotRendererExt</javadoc>,
+[org.zkoss.pivot.PivotRendererExt](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/PivotRendererExt.html),
 to be the default renderer and a skeleton class to extend from.
 
 ```java

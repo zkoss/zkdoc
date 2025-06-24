@@ -15,7 +15,7 @@ In this section, we will create another example of manipulating the
 chart model in the MVVM approach.
 
 We get started by creating an
-<javadoc directory="zkcharts">org.zkoss.chart.model.XYModel</javadoc>
+[org.zkoss.chart.model.XYModel](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/model/XYModel.html)
 and put the data we want to handle:
 
 #### ChartData.java
@@ -159,9 +159,9 @@ Enjoy the graphical presentation of data!
 </table>
 
 **Note:** Since ZK 7.0.1,
-<javadoc directory="zk">org.zkoss.zul.ChartModel</javadoc> also supports
+[org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html) also supports
 ZK Charts as well, however, it is recommended to use the new ZK
-<javadoc directory="zkcharts">org.zkoss.chart.model.ChartsModel</javadoc>
+[org.zkoss.chart.model.ChartsModel](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/model/ChartsModel.html)
 instead.
 
 # Examples

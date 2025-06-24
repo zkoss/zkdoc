@@ -8,9 +8,9 @@ always need to prepare a PivotModel prior to using Pivottable.
 
 ## Construct a PivotModel
 
-<javadoc directory="zkpvt">org.zkoss.pivot.impl.TabularPivotModel</javadoc>
+[org.zkoss.pivot.impl.TabularPivotModel](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/impl/TabularPivotModel.html)
 is a standard implementation of
-<javadoc directory="zkpvt">org.zkoss.pivot.PivotModel</javadoc>. It's
+[org.zkoss.pivot.PivotModel](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/PivotModel.html). It's
 constructor takes an Iterable and a String List, for raw data and column
 labels respectively.
 
