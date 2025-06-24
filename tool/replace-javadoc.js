@@ -18,7 +18,7 @@ class JavadocReplacer {
     this.totalReplacements = 0;
     this.replacementsLog = [];
     this.dryRun = false;
-    this.javadocBaseUrl = 'https://www.zkoss.org/javadoc/latest/zk/';
+    this.javadocBaseUrl = 'https://www.zkoss.org/javadoc/latest/';
   }
 
   // Convert javadoc tags to markdown links
@@ -26,8 +26,8 @@ class JavadocReplacer {
     const relativePath = path.relative(this.rootDir, filePath);
     let replacements = 0;
     
-    // Pattern to match <javadoc>className</javadoc>, <javadoc type="interface">className</javadoc>, <javadoc method="methodName">className</javadoc>, and combined attributes
-    const javadocRegex = /<javadoc(?:\s+(?:type|method)="[^"]*")*\s*>([^<]*)<\/javadoc>/g;
+    // Pattern to match <javadoc>className</javadoc>, <javadoc type="interface">className</javadoc>, <javadoc method="methodName">className</javadoc>, and combined attributes including directory
+    const javadocRegex = /<javadoc(?:\s+(?:type|method|directory)="[^"]*")*\s*>([^<]*)<\/javadoc>/g;
     
     const newContent = content.replace(javadocRegex, (match, className) => {
       // Clean up the class name (trim whitespace)
@@ -41,6 +41,18 @@ class JavadocReplacer {
       const methodMatch = match.match(/method="([^"]+)"/);
       const methodName = methodMatch ? methodMatch[1] : null;
       
+      // Extract directory attribute if present
+      const directoryMatch = match.match(/directory="([^"]+)"/);
+      const directory = directoryMatch ? directoryMatch[1] : 'zk';
+      
+      // Skip processing for jsdoc directory (special case)
+      if (directoryMatch && directoryMatch[1] === 'jsdoc') {
+        return match; // Return original unchanged
+      }
+      
+      // Build the complete base URL
+      const baseUrl = this.javadocBaseUrl + directory + '/';
+      
       // Convert class name to URL path
       // e.g., org.zkoss.zul.ChartModel -> org/zkoss/zul/ChartModel.html
       let urlPath = cleanClassName.replace(/\./g, '/') + '.html';
@@ -50,7 +62,7 @@ class JavadocReplacer {
         urlPath += '#' + methodName;
       }
       
-      const fullUrl = this.javadocBaseUrl + urlPath;
+      const fullUrl = baseUrl + urlPath;
       
       // Create markdown link with the class name as link text
       const linkText = methodName ? `${cleanClassName}#${methodName}` : cleanClassName;
@@ -62,6 +74,7 @@ class JavadocReplacer {
         original: match,
         className: cleanClassName,
         method: methodName,
+        directory: directory,
         converted: markdownLink,
         url: fullUrl
       });
@@ -195,6 +208,9 @@ class JavadocReplacer {
         report += `  Class:      ${change.className}\n`;
         if (change.method) {
           report += `  Method:     ${change.method}\n`;
+        }
+        if (change.directory && change.directory !== 'zk') {
+          report += `  Directory:  ${change.directory}\n`;
         }
         report += `  Converted:  ${change.converted}\n`;
         report += `  URL:        ${change.url}\n\n`;
