@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+/**
+ * Javadoc Tag Replacer
+ * 
+ * This script processes markdown files to replace <javadoc> tags with proper markdown links
+ * to ZK Framework's online javadoc documentation. It handles both class and interface
+ * references, converting them to clickable links that point to the appropriate javadoc pages.
+ */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -18,8 +26,8 @@ class JavadocReplacer {
     const relativePath = path.relative(this.rootDir, filePath);
     let replacements = 0;
     
-    // Pattern to match <javadoc>className</javadoc>
-    const javadocRegex = /<javadoc>(.*?)<\/javadoc>/g;
+    // Pattern to match <javadoc>className</javadoc> and <javadoc type="interface">className</javadoc>
+    const javadocRegex = /<javadoc(?:\s+type="[^"]*")?>([^<]*)<\/javadoc>/g;
     
     const newContent = content.replace(javadocRegex, (match, className) => {
       // Clean up the class name (trim whitespace)
