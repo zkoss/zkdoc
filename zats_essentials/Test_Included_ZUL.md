@@ -4,7 +4,7 @@
 
 ZK provides the [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component[^1]
 and
-<javadoc method="createComponents(String, Component, Map)">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#createComponents(String, Component, Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(String, Component, Map))
 method[^2] to include and/or reuse ZUL pages or others such as servlet
 or JSP. In ZATS Mimic, we can test ZUL pages which are included by outer
 pages directly; simply use the `Client.connect(String)` method to

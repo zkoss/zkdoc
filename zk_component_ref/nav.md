@@ -41,7 +41,7 @@ more details of `Nav`. For example, a `Nav` with label "Get Started"
 contains three `Navitem` components. If we want to let user know how
 much items in the `Nav` without opening it, we can show the children
 numbers of current `Nav` by
-<javadoc class="false" method="setBadgeText(java.lang.String)">org.zkoss.zkmax.zul.Nav</javadoc>
+[org.zkoss.zkmax.zul.Nav#setBadgeText(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Nav.html#setBadgeText(java.lang.String))
 API. The code snippets as shown below:
 
 <table>

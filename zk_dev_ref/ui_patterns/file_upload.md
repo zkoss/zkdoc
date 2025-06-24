@@ -27,7 +27,7 @@ For example,
 ```
 
 If you prefer to use a dialog
-(<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>), please
+([org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get())), please
 take a look at [ ZK Component Reference: Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Event_Thread_Disabled)
 for more inormation.
 
@@ -40,7 +40,7 @@ instead. They behave the same no matter if the event thread is disabled
 or not.
 
 However, if the event thread is enabled, you can get uploaded Media
-returned by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>
+returned by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get())
 and other overloadded static methods.
 
 ```xml
@@ -66,7 +66,7 @@ and other overloadded static methods.
 </zk>
 ```
 
-As shown, <javadoc method="get(int)">org.zkoss.zul.Fileupload</javadoc>
+As shown, [org.zkoss.zul.Fileupload#get(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get(int))
 won't return until an end user uploads the files (and/or closes the
 dialog).
 

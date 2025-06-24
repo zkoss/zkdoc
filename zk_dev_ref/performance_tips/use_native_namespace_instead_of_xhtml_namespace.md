@@ -77,7 +77,7 @@ footprint will be minimized[^2]
 
 Though rarely, you could disable the stubing by setting a component
 attribute called `org.zkoss.zk.ui.stub.native` (i.e.,
-<javadoc method="STUB_NATIVE">org.zkoss.zk.ui.sys.Attributes</javadoc>).
+[org.zkoss.zk.ui.sys.Attributes#STUB_NATIVE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/Attributes.html#STUB_NATIVE)).
 A typical case is that suppose you have a component that has a native
 descendant, and you'd like to detach it and re-attach later. Then, you
 have to set this attribute to false, since the server does not maintain
@@ -107,11 +107,11 @@ Once set, descendant components unless it was set explicitly.
 
 [^1]: In fact, it will still create some components for the rerender
     purpose, such as
-    <javadoc method="invalidate()">org.zkoss.zk.ui.Component</javadoc>.
+    [org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate()).
     However, since they shall not be accessed, you could imagine them as
     not created at all.
 
 [^2]: Non-native components could be stub-ized too by use of
-    <javadoc method="setStubonly(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+    [org.zkoss.zk.ui.Component#setStubonly(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setStubonly(java.lang.String)).
     For more information, please refer
     [here]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components).

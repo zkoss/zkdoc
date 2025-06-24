@@ -86,10 +86,10 @@ Clients.showNotification("Successfully processed: <br/>" + myTextbox.getValue())
 ```
 
 When displaying user input using methods such as
-<javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>,
-<javadoc method="showNotification(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>,
+[org.zkoss.zk.ui.util.Clients#showBusy(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showBusy(java.lang.String)),
+[org.zkoss.zk.ui.util.Clients#showNotification(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification(java.lang.String)),
 or anything similar; or when using
-<javadoc method="evalJavaScript(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+[org.zkoss.zk.ui.util.Clients#evalJavaScript(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#evalJavaScript(java.lang.String))
 to dynamically concatenate JS code, user input should be escaped
 carefully.
 
@@ -114,6 +114,6 @@ All attributes of \[\[ZUML_Reference/ZUML/Processing_Instructions/page\|
 As a framework, ZK tries to maintain a good balance between flexibility
 and default settings. Regarding attributes that are not escaped by
 default, application developers should use ZK
-<javadoc method="escapeXML(java.lang.String)">org.zkoss.xml.XMLs</javadoc>
+[org.zkoss.xml.XMLs#escapeXML(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xml/XMLs.html#escapeXML(java.lang.String))
 or [Apache Commons Lang's StringEscapeUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/StringEscapeUtils.html)
 to sanitize user input if you are taking user input as these attributes.

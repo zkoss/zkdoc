@@ -27,7 +27,7 @@ You can register any number of the request interceptors
     sure it can be accessed concurrently.
 2.  The request parameters will be parsed with the proper locale and
     character encoding, after the
-    <javadoc method="request(org.zkoss.zk.ui.Session, java.lang.Object, java.lang.Object)">org.zkoss.zk.ui.util.RequestInterceptor</javadoc>
+    [org.zkoss.zk.ui.util.RequestInterceptor#request(org.zkoss.zk.ui.Session, java.lang.Object, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/RequestInterceptor.html#request(org.zkoss.zk.ui.Session, java.lang.Object, java.lang.Object))
     method is called. It is not recommended to call the `getParameter`
     or `getParameterValues` methods (of *javax.servlet.ServletRequest*)
     in this method.

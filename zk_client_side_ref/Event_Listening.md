@@ -90,7 +90,7 @@ to affect event firing behavior.
 # Declare a Client-side Listener in Java
 
 The other way to declare a client-side listener at the server is
-<javadoc method="setWidgetListener(java.lang.String, java.lang.String)">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#setWidgetListener(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setWidgetListener(java.lang.String, java.lang.String)).
 For example,
 
 ```java
@@ -128,7 +128,7 @@ where
     `script` widget, rather than the parent.
 3.  <javadoc directory="jsdoc" method="$f(_global_.String)">zk.Widget</javadoc>
     is equivalent to
-    <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>,
+    [org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)),
     except it is a JavaScript method (accessible at the client).
 
 ## Register DOM-level Event Listener

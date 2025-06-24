@@ -76,7 +76,7 @@ true. The example ZUL below shows a panel which can be resized.
 
 When used with [ Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
 the draggable property
-(<javadoc method="setDraggable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
+([org.zkoss.zk.ui.HtmlBasedComponent#setDraggable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setDraggable(java.lang.String)))
 can be used to control whether the panel is draggable under the portal
 layout.
 
@@ -133,7 +133,7 @@ Here is the effect with different borders:
 
 Besides this attribute, you could use [ Caption]({{site.baseurl}}/zk_component_ref/containers/caption) to define
 a more sophisticated caption (aka., title). If the panel has a caption
-whose label <javadoc method="getLabel()">org.zkoss.zul.Caption</javadoc>
+whose label [org.zkoss.zul.Caption#getLabel()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html#getLabel())
 is not empty, then this attribute is ignored. (Default: empty).
 
 ## Closable

@@ -84,7 +84,7 @@ and then its method will be called as if they are specified in the page
 
 The initiator can be used to handle the exception when ZK Loader renders
 a page by implementing
-<javadoc type="interface" method="doCatch(java.lang.Throwable)">org.zkoss.zk.ui.util.InitiatorExt</javadoc>
+[org.zkoss.zk.ui.util.InitiatorExt#doCatch(java.lang.Throwable)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/InitiatorExt.html#doCatch(java.lang.Throwable))
 
 > ------------------------------------------------------------------------
 >

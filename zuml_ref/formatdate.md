@@ -6,7 +6,7 @@ String formatDate(Date date, String pattern);
 
   
 i.e.,
-<javadoc method="formatDate(java.util.Date, java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#formatDate(java.util.Date, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatDate(java.util.Date, java.lang.String))
 
 Formats a Date into a date/time string with the given pattern. For
 example,
@@ -22,7 +22,7 @@ example,
 ```
 
 There is another extended built-in function:
-<javadoc method="formatDate(Date, String, Locale, TimeZone, String, String)">org.zkoss.xel.fn.CommonFns</javadoc>,
+[org.zkoss.xel.fn.CommonFns#formatDate(Date, String, Locale, TimeZone, String, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatDate(Date, String, Locale, TimeZone, String, String)),
 not declared in taglib.
 
 Formats a Date into a date/time string with the given pattern, locale,

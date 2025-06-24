@@ -54,7 +54,7 @@ element is associated with:
 ## Filename Extension
 
 The default language is decided based on the extension of the filename
-(<javadoc method="getByExtension(java.lang.String)">org.zkoss.zk.ui.metainfo.LanguageDefinition</javadoc>).
+([org.zkoss.zk.ui.metainfo.LanguageDefinition#getByExtension(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#getByExtension(java.lang.String))).
 In addition, a language is associated with one or multiple extensions
 (defined by the component developer). For example, the extensions
 associated with the [xul/html language](ZUML_Reference/ZUML/Languages/ZUL) are `zul` and

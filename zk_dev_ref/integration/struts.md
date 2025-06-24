@@ -41,7 +41,7 @@ like.
 
 The data (so-called model) provided by Struts (or the action) can be
 retrieved by invoking
-<javadoc type="interface" method="getAttribute(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String)).
 For example,
 
 ```java

@@ -64,7 +64,7 @@ child containers are displayed in the component.
 ## Collapse
 
 The collapse property
-(<javadoc method="setCollapse(java.lang.String)">org.zkoss.zkmax.zul.Splitlayout</javadoc>)
+([org.zkoss.zkmax.zul.Splitlayout#setCollapse(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html#setCollapse(java.lang.String)))
 specifies which side of the splitter is collapsed when its grippy
 (button) is clicked. If this property is not specified, the splitter
 will not cause a collapse.

@@ -103,7 +103,7 @@ tags.
 Also notice that, though the native HTML tags will be generated for the
 native namespace, ZK Loader actually creates a component to represent as
 many as these native HTML tags. Thus, if you invoke
-<javadoc method="getPreviousSibling()">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#getPreviousSibling()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getPreviousSibling())
 of the button above, it will return this component. However, don't
 access it since the real class/implementation of the component depends
 on the version you use and might be changed in the future.
@@ -131,7 +131,7 @@ public class TableCreator {
 ```
 
 As shown, the first argument of
-<javadoc method="HtmlNativeComponent(java.lang.String, java.lang.String, java.lang.String)">org.zkoss.zk.ui.HtmlNativeComponent</javadoc>
+[org.zkoss.zk.ui.HtmlNativeComponent#HtmlNativeComponent(java.lang.String, java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlNativeComponent.html#HtmlNativeComponent(java.lang.String, java.lang.String, java.lang.String))
 is the name of tag. The second argument specifies the content that will
 be generated right before the children, if any. The third specifies the
 content after the children, if any. In addition, the setDynamicProperty

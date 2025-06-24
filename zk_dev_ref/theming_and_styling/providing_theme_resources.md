@@ -91,7 +91,7 @@ public class MyThemeProvider implements ThemeProvder {
 ```
 
 Notice that we return -1 when
-<javadoc type="interface" method="getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider#getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html#getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String))
 is called to disallow the browser to cache the CSS file. It is necessary
 since we manipulate the content of the CSS file by setting the
 attributes (based on the cookie). It means the content might be
@@ -111,13 +111,13 @@ Then, you configure `WEB-INF/zk.xml` by adding the following lines.
 To improve the performance, it is better to allow the browser to cache
 the CSS file as often as possible. With the theme provider, it can be
 done by returning a positive number when
-<javadoc type="interface" method="getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider#getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html#getWCSCacheControl(org.zkoss.zk.ui.Execution, java.lang.String))
 is called. However, because the browser will use the cached version, we
 have to ensure the browser gets a different URL for each different
 theme. Here we illustrate a technique called **fragment injection**.
 
 The idea is simple: when
-<javadoc type="interface" method="getThemeURIs(org.zkoss.zk.ui.Execution, java.util.List)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider#getThemeURIs(org.zkoss.zk.ui.Execution, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html#getThemeURIs(org.zkoss.zk.ui.Execution, java.util.List))
 is called, we **inject** a special fragment to denote the content, such
 that each different theme is represented with a different URL. The
 injection can be done easily with the inner class called
@@ -137,10 +137,10 @@ if (fsc != null && fsc.length() > 0) {
 ```
 
 Then, we can retrieve the fragment we encoded into the URI later when
-<javadoc type="interface" method="beforeWCS(org.zkoss.zk.ui.Execution, java.lang.String)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider#beforeWCS(org.zkoss.zk.ui.Execution, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html#beforeWCS(org.zkoss.zk.ui.Execution, java.lang.String))
 is called. It can be done easily by use of
-<javadoc method="decodeURI(java.lang.String)">org.zkoss.zk.ui.util.ThemeProvider.Aide</javadoc>.
-<javadoc method="decodeURI(java.lang.String)">org.zkoss.zk.ui.util.ThemeProvider.Aide</javadoc>
+[org.zkoss.zk.ui.util.ThemeProvider.Aide#decodeURI(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider/Aide.html#decodeURI(java.lang.String)).
+[org.zkoss.zk.ui.util.ThemeProvider.Aide#decodeURI(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider/Aide.html#decodeURI(java.lang.String))
 returns a two-element array if the fragment is found. The first element
 is the URI without fragment, and the second element is the fragment. For
 example,
@@ -245,7 +245,7 @@ public class CacheableThemeProvider implements ThemeProvider{
 In addition to String instances, you can return instances of
 [org.zkoss.web.servlet.StyleSheet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/StyleSheet.html) in the returned
 collection of
-<javadoc method="getThemeURIs(org.zkoss.zk.ui.Execution,java.util.List)">org.zkoss.zk.ui.util.ThemeProvider</javadoc>,
+[org.zkoss.zk.ui.util.ThemeProvider#getThemeURIs(org.zkoss.zk.ui.Execution,java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ThemeProvider.html#getThemeURIs(org.zkoss.zk.ui.Execution,java.util.List)),
 such that you can control more about the generated CSS link. For
 example, if you want to add a CSS link for [the media type](http://www.w3.org/TR/CSS2/media.html), say, `print, handheld`,
 then you can do as follows.

@@ -26,9 +26,9 @@ There are two steps:
 
 Notice that ZK will instantiate an object from the class you registered
 for each callback. For example, an object is instantiated to invoke
-<javadoc method="init(org.zkoss.zk.ui.Desktop, java.lnag.Object)" type="interface">org.zkoss.zk.ui.util.DesktopInit</javadoc>,
+[org.zkoss.zk.ui.util.DesktopInit#init(org.zkoss.zk.ui.Desktop, java.lnag.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html#init(org.zkoss.zk.ui.Desktop, java.lnag.Object)),
 and another object instantiated to invoke
-<javadoc method="cleanup(org.zkoss.zk.ui.Desktop)" type="interface">org.zkoss.zk.ui.util.DesktopCleanup</javadoc>,
+[org.zkoss.zk.ui.util.DesktopCleanup#cleanup(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html#cleanup(org.zkoss.zk.ui.Desktop)),
 even if you register a class that implements both
 [org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) and
 [org.zkoss.zk.ui.util.DesktopCleanup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopCleanup.html).
@@ -37,7 +37,7 @@ If you have something that is initialized in the init callback and have
 to clean it up in the cleanup callback, you cannot store it as a data
 member. Rather, you have to maintain it by yourself, such as storing it
 in the desktop's attributes
-(<javadoc type="interface" method="setAttribute(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.Desktop</javadoc>),
+([org.zkoss.zk.ui.Desktop#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#setAttribute(java.lang.String, java.lang.Object))),
 session's attributes or application's attributes.
 
 # Registration
@@ -52,7 +52,7 @@ interface you implement:
 ```
 
 The registration in Java is done by
-<javadoc method="addListener(java.lang.Class)">org.zkoss.zk.ui.util.Configuration</javadoc>.
+[org.zkoss.zk.ui.util.Configuration#addListener(java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Configuration.html#addListener(java.lang.Class)).
 
 ```java
 webapp.getConfiguration().addListener(my.MyImplementation.class);

@@ -7,7 +7,7 @@ your application and ZK engine. However, unlike the library properties,
 preferences are stored in
 `org.zkoss.zk.ui.util.Configuration` and can be
 retrieved by use of
-<javadoc method="getPreference(java.lang.String, java.lang.String)">org.zkoss.zk.ui.util.Configuration</javadoc>.
+[org.zkoss.zk.ui.util.Configuration#getPreference(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Configuration.html#getPreference(java.lang.String, java.lang.String)).
 
 For example,
 

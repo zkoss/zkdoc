@@ -4,7 +4,7 @@ String join(Object[] value, String separator);
 
   
 i.e.,
-<javadoc method="join(java.lang.Object[], java.lang.String)">org.zkoss.xel.fn.StringFns</javadoc>
+[org.zkoss.xel.fn.StringFns#join(java.lang.Object[], java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#join(java.lang.Object[], java.lang.String))
 
 Joins the given array of values into a string and separated with the
 given separator

@@ -13,7 +13,7 @@ order. Each desktop has one system event queue and all events are
 handled sequentially.
 
 To trigger an event, you could invoke
-<javadoc method="postEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>.
+[org.zkoss.zk.ui.event.Events#postEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#postEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)).
 For example,
 
 ```java
@@ -22,7 +22,7 @@ Events.postEvent("onClick", button, null); //simulate a click
 
 In addition to posting an event to the end of the system event queue,
 you could specify a priority with
-<javadoc method="postEvent(int, java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>.
+[org.zkoss.zk.ui.event.Events#postEvent(int, java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#postEvent(int, java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)).
 By default, the priority is 0. The higher the priority the earlier an
 event is processed.
 
@@ -39,14 +39,14 @@ other events posted earlier or with higher priority are processed.
 If you prefer to trigger an event to a component directly and process it
 immediately, rather than placing it in the system event queue and
 waiting for execution, you could use
-<javadoc method="sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>
+[org.zkoss.zk.ui.event.Events#sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object))
 to trigger the event.
 
 ```java
 Events.sendEvent("onMyEvent", component, mydata);
 ```
 
-<javadoc method="sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>
+[org.zkoss.zk.ui.event.Events#sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#sendEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object))
 won't return until all handlers and listeners registered for this event
 have been processed. You could image it as a method of invocation. Also
 notice that the event handlers and listeners are invoked directly
@@ -70,7 +70,7 @@ event is then posted to the system event queue for processing.
 In other words, the event won't be processed in the current execution.
 Rather, it is processed in the following request when the event is
 <i>echoed</i> back from the client. Here is an example of using
-<javadoc method="echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>:
+[org.zkoss.zk.ui.event.Events#echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)):
 
 ```java
    Events.echoEvent("onMyEvent", component, mydata);

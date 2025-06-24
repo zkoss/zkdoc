@@ -56,7 +56,7 @@ will enable decimal slider. So the slider can represent decimal number.
 By default, the slider will move to the position of the try on which an
 user clicks. If you prefer to move in a fixed amount (like the scrollbar
 does), you could specify the amount of value to move by use of
-<javadoc method="setPageIncrement(int)">org.zkoss.zul.Slider</javadoc>.
+[org.zkoss.zul.Slider#setPageIncrement(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html#setPageIncrement(int)).
 
 ```xml
   <slider pageIncrement="10"/>
@@ -218,7 +218,7 @@ designs are changed.
 
 | Version | Date         | Content                                                                                     |
 |---------|--------------|---------------------------------------------------------------------------------------------|
-| 5.0.4   | August 2010  | <javadoc method="setPageIncrement(int)">org.zkoss.zul.Slider</javadoc> is supported.        |
+| 5.0.4   | August 2010  | [org.zkoss.zul.Slider#setPageIncrement(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html#setPageIncrement(int)) is supported.        |
 | 5.0.4   | August 2010  | Slider support for clicking to increment or decrement                                       |
 | 7.0.1   | January 2014 | [Slider support minimal position and decimal mode](http://tracker.zkoss.org/browse/ZK-2085) |
 

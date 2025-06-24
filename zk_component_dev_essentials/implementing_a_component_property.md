@@ -11,7 +11,7 @@ public String getValue() {
 
 The setter is similar except we have to notify the client. This is
 achieved by using the
-<javadoc method="smartUpdate(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#smartUpdate(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#smartUpdate(java.lang.String, java.lang.Object))
 function.
 
 ```java
@@ -24,7 +24,7 @@ public void setValue(String value) {
 ```
 
 The
-<javadoc method="smartUpdate(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#smartUpdate(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#smartUpdate(java.lang.String, java.lang.Object))
 function causes ZK Client Engine to call the <mp>setValue</mp> method of
 the peer widget (the first argument is the property name). Then, the
 widget can manipulate the DOM tree from there.

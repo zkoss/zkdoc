@@ -19,7 +19,7 @@ expressions as follows.
 ```
 
 In Java, you should use the method,
-<javadoc method="encodeURL(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#encodeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#encodeURL(java.lang.String)).
 
 ```xml
  <img id="another"/>

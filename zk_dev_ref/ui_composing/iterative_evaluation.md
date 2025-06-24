@@ -144,7 +144,7 @@ zscript such as:
 
 In a composer, you could retrieve them from the attributes, because
 these objects are actually stored in the parent component's attributes
-(<javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>).
+([org.zkoss.zk.ui.Component#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getAttribute(java.lang.String))).
 For example,
 
 ```java
@@ -159,7 +159,7 @@ public class Foo implements Composer {
 
 If the component is a root, you could retrieve them from the page's
 attributes
-(<javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Page</javadoc>).
+([org.zkoss.zk.ui.Page#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#getAttribute(java.lang.String))).
 
 ## Access each and forEachStatus in Event Listeners
 

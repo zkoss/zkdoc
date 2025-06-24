@@ -4,7 +4,7 @@ String trim(String value);
 
   
 i.e.,
-<javadoc method="trim(java.lang.String)">org.zkoss.xel.fn.StringFns</javadoc>
+[org.zkoss.xel.fn.StringFns#trim(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#trim(java.lang.String))
 
 Returns a copy of the string, with leading and trailing whitespace
 omitted.

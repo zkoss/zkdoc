@@ -73,7 +73,7 @@ code below is pseudo code. For real examples, please refer to [User Cases](#Use_
 
 {% include version-badge.html version=8.0.3 %}
 
-<javadoc method="setDisabled(boolean)">org.zkoss.zul.Paging</javadoc> is
+[org.zkoss.zul.Paging#setDisabled(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Paging.html#setDisabled(boolean)) is
 used to disable the paging component. It can block the user from
 navigating through the pagination. For example,
 

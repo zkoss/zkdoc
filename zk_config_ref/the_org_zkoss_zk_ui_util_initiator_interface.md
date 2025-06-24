@@ -10,12 +10,12 @@ This kind of listeners is called system-level initiators.
 
 Each time a ZK page is created, ZK will instantiate one instance for
 each registered system-level initiator and the invoke
-<javadoc method="doInit(org.zkoss.zk.ui.Page, java.util.Map)" type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>
+[org.zkoss.zk.ui.util.Initiator#doInit(org.zkoss.zk.ui.Page, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html#doInit(org.zkoss.zk.ui.Page, java.util.Map))
 and other methods.
 
 If you want to process only certain pages, you can check the request
 path by calling
-<javadoc method="getRequestPath()" type="interface">org.zkoss.zk.ui.Desktop</javadoc>
+[org.zkoss.zk.ui.Desktop#getRequestPath()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#getRequestPath())
 (the desktop instance can be found in the given component).
 
 **Instantiation:** An independent instance of the given class is

@@ -3,7 +3,7 @@
 When the event is processed in the Servlet thread (default), the
 execution cannot be suspended. Thus, the modal window behaves the same
 as the highlited window
-(<javadoc method="doHighlighted()">org.zkoss.zul.Window</javadoc>). At
+([org.zkoss.zul.Window#doHighlighted()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doHighlighted())). At
 the client side, the visual effect is the same: a semi-transparent mask
 blocks the end user from access components other than the modal window.
 However, at the server side, it works just like the overlapped mode – it
@@ -37,7 +37,7 @@ your code to another place. You can put it at:
 # Modal Windows with Event Thread
 
 If the event thread is enabled,
-<javadoc method="doModal()">org.zkoss.zul.Window</javadoc> will suspend
+[org.zkoss.zul.Window#doModal()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doModal()) will suspend
 the current thread. Thus, the "next" message won't be shown, until the
 modal window is closed.
 

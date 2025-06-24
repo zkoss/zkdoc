@@ -6,13 +6,13 @@ Date parseDate(String source, String pattern);
 
   
 i.e.,
-<javadoc method="parseDate(java.lang.String, java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#parseDate(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseDate(java.lang.String, java.lang.String))
 
 Parses text from the beginning of the given string to produce a date
 with the given pattern.
 
 There is another extended built-in function,
-<javadoc method="parseDate(java.lang.String, java.lang.String, java.util.Locale, java.util.TimeZone, java.lang.String, java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>,
+[org.zkoss.xel.fn.CommonFns#parseDate(java.lang.String, java.lang.String, java.util.Locale, java.util.TimeZone, java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseDate(java.lang.String, java.lang.String, java.util.Locale, java.util.TimeZone, java.lang.String, java.lang.String)),
 not declared in the taglib. Parses text from the beginning of the given
 string to produce a date with the given pattern, locale, timezone, date
 style and time style.

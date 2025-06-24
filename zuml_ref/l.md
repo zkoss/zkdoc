@@ -4,12 +4,12 @@ String l(String key);
 
   
 i.e.,
-<javadoc method="getLabel(java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#getLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#getLabel(java.lang.String))
 
 Returns the label of the given key defined in [the internationalization labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 
 The label is based on the current Locale
-(<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
+([org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent())).
 
 > For 5.0.7 and later, an implicit object called
 > [labels](ZUML_Reference/EL_Expressions/Implicit_Objects/labels)

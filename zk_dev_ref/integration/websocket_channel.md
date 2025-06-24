@@ -50,7 +50,7 @@ As you can see above, in line 2, we have to register a
 [org.zkoss.zk.ui.http.ZKWebSocket](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html) class into the
 configurator of the *ServerEndpoint* annotation. And in line 12 we can
 use the method of
-<javadoc method="getDesktopStorage(javax.websocket.Session)">org.zkoss.zk.ui.http.ZKWebSocket</javadoc>
+[org.zkoss.zk.ui.http.ZKWebSocket#getDesktopStorage(javax.websocket.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html#getDesktopStorage(javax.websocket.Session))
 to receive the data storage from a websocket session (the storage is a
 thread-safe implementation). Note that the websocket session must have a
 **dtid** value which is sent from client as follows.

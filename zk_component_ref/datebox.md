@@ -199,7 +199,7 @@ show an error message. It's a client-side validation.
 ## Locale
 
 Default: depends on the current locale (i.e.,
-<javadoc method="getCurrent()" >org.zkoss.util.Locales</javadoc>) at
+[org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent())) at
 run-time
 
 You can enforce the locale for an individual component such as:
@@ -423,8 +423,8 @@ include version-badge.html version=5.0.0 %}</p></td>
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week) for details. |
 | 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
-| 5.0.7   | April, 2011  | <javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Datebox</javadoc> supported the styling.                                                                                                                                                          |
-| 5.0.7   | April, 2011  | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Datebox</javadoc> was introduced.                                                                                                                                                                 |
+| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setFormat(java.lang.String)) supported the styling.                                                                                                                                                          |
+| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setLocale(java.util.Locale)) was introduced.                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                        |
 | 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox.                                                                                                                                                                    |
 

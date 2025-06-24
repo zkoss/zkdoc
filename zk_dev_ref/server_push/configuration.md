@@ -39,7 +39,7 @@ network connections that a server allows.
 
 You could configure a particular ZK page to use a particular
 implementation by the use of
-<javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)" type="interface">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
+[org.zkoss.zk.ui.sys.DesktopCtrl#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCtrl.html#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)).
 For example,
 
 ```java
@@ -124,7 +124,7 @@ as follows.
 ```
 
 In additions, you could specify them in the constructor:
-<javadoc method="PollingServerPush(int, int, int)">org.zkoss.zk.ui.impl.PollingServerPush</javadoc>.
+[org.zkoss.zk.ui.impl.PollingServerPush#PollingServerPush(int, int, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html#PollingServerPush(int, int, int)).
 For example,
 
 ```java

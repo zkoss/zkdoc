@@ -71,7 +71,7 @@ extends org.zkoss.zk.ui.select.SelectorComposer {
 Notice that, as shown above, the event being forwarded is wrapped as an
 instance of [org.zkoss.zk.ui.event.ForwardEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ForwardEvent.html). To
 retrieve the original event, you could invoke
-<javadoc method="getOrigin()">org.zkoss.zk.ui.event.ForwardEvent</javadoc>.
+[org.zkoss.zk.ui.event.ForwardEvent#getOrigin()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ForwardEvent.html#getOrigin()).
 
 ## Using a component Path
 
@@ -112,7 +112,7 @@ by surrounding it with the parenthesis as shown below:
 ```
 
 Then, you can retrieve the application-specific data by
-<javadoc method="getData()">org.zkoss.zk.ui.event.ForwardEvent</javadoc>.
+[org.zkoss.zk.ui.event.ForwardEvent#getData()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ForwardEvent.html#getData()).
 
 **Notice**: When using <i>forward</i> attribute in the ZUML(.zul) with
 ZK MVC controller, you have to get the original event by using

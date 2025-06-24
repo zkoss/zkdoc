@@ -55,7 +55,7 @@ They both execute before the inclusion.
 
 There are two ways to include another ZUML document: `instant` and
 `defer`. It is controlled by the property called mode
-(<javadoc method="setMode(java.lang.String)">org.zkoss.zul.Include</javadoc>).
+([org.zkoss.zul.Include#setMode(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setMode(java.lang.String))).
 By default, it is `auto`, i.e., the real mode is decided automatically
 as described below. Notice that the included file should not contain
 \<html\> tag.
@@ -64,7 +64,7 @@ as described below. Notice that the included file should not contain
 
 The `auto` mode (default) decides the mode based the page to include. If
 the page
-(<javadoc method="setSrc(java.lang.String)">org.zkoss.zul.Include</javadoc>)
+([org.zkoss.zul.Include#setSrc(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setSrc(java.lang.String)))
 is ended with the extension named `.zul`, `.zhtml`, `.html`, or
 `.xhtml`, the `instant` mode is assumed. Otherwise, the `defer` mode is
 assumed. If it is not the case (such as your ZUML page's extension is
@@ -110,7 +110,7 @@ The code below demonstrates how to use the *auto* mode:
 
 In the `instant` mode, the `include` component loads the page by the use
 of
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)" type="interface">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)).
 It means that the components defined in the included page are
 instantiated *instantly* and added as children of the `include`
 component.
@@ -135,7 +135,7 @@ the child components.
 ### Pass Values to the Included Page
 
 you can pass values through
-<javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zul.Include</javadoc>.
+[org.zkoss.zul.Include#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setDynamicProperty(java.lang.String, java.lang.Object)).
 Unlike the *defer* mode, the query string is not supported in the
 *instant* mode.
 
@@ -200,7 +200,7 @@ mode. First, you can pass them with the query string.
 ```
 
 Then, in the included page, you can access them with
-<javadoc method="getParameter(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#getParameter(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getParameter(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
 the included page), you can use [the `param` object](ZUML_Reference/EL_Expressions/Implicit_Objects/param)
 or [the paramValues object](ZUML_Reference/EL_Expressions/Implicit_Objects/paramValues)
@@ -213,7 +213,7 @@ to access them.
 Notice that you can only pass String-typed values with the query string.
 Alternatively, we can pass any kind of values with the so-called dynamic
 properties by use of
-<javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zul.Include</javadoc>
+[org.zkoss.zul.Include#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setDynamicProperty(java.lang.String, java.lang.Object))
 or, in ZUL, a dynamic property as follows:
 
 ```xml
@@ -222,7 +222,7 @@ or, in ZUL, a dynamic property as follows:
 
 With the dynamic properties, you can pass non-String-typed values. In
 the included page, you can access them with
-<javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
 the included page), you can use [the requestScope object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope)
 to access them.
@@ -355,7 +355,7 @@ First, use the `include` component with either the `instant` or `defer`
 mode to include whatever page you want (ZUML, JSP, JSF or whatever)
 inside a ZK document. Second, you can dynamically change it by changing
 the `src` property
-(<javadoc method="setSrc(java.lang.String)">org.zkoss.zul.Include</javadoc>.
+([org.zkoss.zul.Include#setSrc(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setSrc(java.lang.String)).
 
 For example, the following code would change the included page from
 `hello.zul` to `byebye.zul`, when an end user press the `Bye!` button.
@@ -379,7 +379,7 @@ an end user press the `Reload` button.
 ```
 
 Another way to reload is to invalidate the "include" component by use of
-<javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate())
 as follows.
 
 ```xml
@@ -388,7 +388,7 @@ as follows.
 ```
 
 Notice that
-<javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate())
 will cause the included page to be reloaded in both the `instance` and
 `defer` mode.
 
@@ -402,7 +402,7 @@ please refer to
 
 If an included page takes too long to load, you could specify true to
 the `progressing` property
-(<javadoc method="setProgressing(boolean)">org.zkoss.zul.Include</javadoc>).
+([org.zkoss.zul.Include#setProgressing(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html#setProgressing(boolean))).
 Thus, the included page won't load in the same HTTP request, so the
 including page will be ready to the client as soon as possible.
 

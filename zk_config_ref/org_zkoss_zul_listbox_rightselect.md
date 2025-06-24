@@ -5,7 +5,7 @@
 `Default: true`
 
 If a listbox's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>) is
+([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is
 enabled, the selection will be toggled when the user right clicks on an
 item.
 
@@ -27,4 +27,4 @@ components.
 | Version | Date         | Content                                                                                                                                                                                                                            |
 |---------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.5   | October 2010 | org.zkoss.zul.listbox.rightSelect and org.zkoss.zul.tree.rightSelect are introduced to control whether to toggle item selection or not when an item is right clicked on a tree or a listbox with checkmark.                        |
-| 5.0.7   | April 2011   | org.zkoss.zul.listbox.rightSelect and org.zkoss.zul.tree.rightSelect could be specified as component's attribute (<javadoc type="interface" method="getAttribute(java.lang.String, boolean)">org.zkoss.zk.ui.Component</javadoc>). |
+| 5.0.7   | April 2011   | org.zkoss.zul.listbox.rightSelect and org.zkoss.zul.tree.rightSelect could be specified as component's attribute ([org.zkoss.zk.ui.Component#getAttribute(java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getAttribute(java.lang.String, boolean))). |

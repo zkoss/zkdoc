@@ -13,9 +13,9 @@ or knowing the publisher.
 
 ZK generalizes the event queue to support the server push. The use is
 straightforward: specifying the scope of a given event queue as
-<javadoc method="APPLICATION">org.zkoss.zk.ui.event.EventQueues</javadoc>
+[org.zkoss.zk.ui.event.EventQueues#APPLICATION](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#APPLICATION)
 (or
-<javadoc method="SESSION">org.zkoss.zk.ui.event.EventQueues</javadoc>,
+[org.zkoss.zk.ui.event.EventQueues#SESSION](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#SESSION),
 but rare). For example,
 
 ```java

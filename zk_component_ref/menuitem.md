@@ -49,7 +49,7 @@ been enhanced and can be customized easily.
 ## Autodisable
 
 {% include version-badge.html version=5.0.7 %}
-<javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>
+[org.zkoss.zul.Menuitem#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setAutodisable(java.lang.String))
 is used to disable a menuitem automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant
 requests), which is common if the request takes too long to serve.
@@ -73,7 +73,7 @@ following disables both menuitems, when one of them is clicked.
 The menuitem will be enabled automatically, after the request has been
 served (i.e., the response has been sent back to the client). If you
 prefer to enable them manually (i.e., by calling
-<javadoc method="setDisabled(boolean)">org.zkoss.zul.Menuitem</javadoc>
+[org.zkoss.zul.Menuitem#setDisabled(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setDisabled(boolean))
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
 ```xml
@@ -113,11 +113,11 @@ specifying the following in the custom language addon:
 
 In addition to handling the onClick event, you could specify the URL in
 the href property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>),
+([org.zkoss.zul.Menuitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setHref(java.lang.String))),
 such that the browser will navigate to the URL you specified directly
 (without sending back any request to the server). If you prefer to visit
 the URL in another browser window, you could specify the name in
-<javadoc method="setTarget(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>
+[org.zkoss.zul.Menuitem#setTarget(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setTarget(java.lang.String))
 (just like using a HTML A tag).
 
 Notice that the end user could hold the `Control` key and click on the
@@ -129,7 +129,7 @@ does).
 There are two ways to add behavior to a `menuitem`. Firstly, you can
 specify a listener for the `onClick` event. Secondly, you could specify
 a URL for the `href` property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>).
+([org.zkoss.zul.Menuitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setHref(java.lang.String))).
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
@@ -151,13 +151,13 @@ application running on the server has no chance to process it.
 If you have to process it on the server or you have to decide whether to
 jump to another URL based on certain condition, you could listen to the
 onClick event, process it, and then invoke
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String))
 if it jumps to another URL.
 
 For end users, there is no difference between the use of
-<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>
+[org.zkoss.zul.Menuitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setHref(java.lang.String))
 and
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 
 ```xml
 <zk>
@@ -170,7 +170,7 @@ and
 
 Since the onClick event is sent to the server for processing, you are
 able to perform additional tasks before invoking
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>,
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)),
 such as redirecting to another page only if certain conditions are
 satisfied.
 
@@ -180,7 +180,7 @@ Your application won't be notified when users click the menuitem.
 ## Upload
 
 By specifying the upload property
-(<javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Menuitem</javadoc>),
+([org.zkoss.zul.Menuitem#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setUpload(java.lang.String))),
 you could make a menuitem used for uploading files. For example,
 
 ```xml
@@ -190,9 +190,9 @@ you could make a menuitem used for uploading files. For example,
 Once the file(s) are uploaded, the onUpload event will be sent with an
 instance of [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html). And,
 you could retrieve the uploaded files from
-<javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
+[org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia())
 and
-<javadoc method="getMedias()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
+[org.zkoss.zk.ui.event.UploadEvent#getMedias()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedias())
 
 If you want to customize the handling of the file upload at the client,
 you can specify a JavaScript class when calling this method:
@@ -265,6 +265,6 @@ uploaded a file to the component.</p></td>
 
 | Version | Date     | Content                                                                                                                                               |
 |---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.7   | May 2011 | <javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Menuitem</javadoc> was used to disable a menuitem automatically, when it is clicked. |
+| 5.0.7   | May 2011 | [org.zkoss.zul.Menuitem#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setAutodisable(java.lang.String)) was used to disable a menuitem automatically, when it is clicked. |
 
 

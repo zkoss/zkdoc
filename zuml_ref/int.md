@@ -4,7 +4,7 @@ int int(Object value);
 
   
 i.e.,
-<javadoc method="toInt(java.lang.Object)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#toInt(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#toInt(java.lang.Object))
 
 Converts the specified object to an integer.
 

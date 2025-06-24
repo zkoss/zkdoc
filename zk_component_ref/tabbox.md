@@ -20,8 +20,8 @@ invisible group is clicked, it becomes visible and the previous visible
 group becomes invisible.
 
 The visible group is called *selected*, which can be retrieved by use of
-<javadoc method="getSelectedPanel()">org.zkoss.zul.Tabbox</javadoc> or
-<javadoc method="getSelectedIndex()">org.zkoss.zul.Tabbox</javadoc>.
+[org.zkoss.zul.Tabbox#getSelectedPanel()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedPanel()) or
+[org.zkoss.zul.Tabbox#getSelectedIndex()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedIndex()).
 
 # Example
 

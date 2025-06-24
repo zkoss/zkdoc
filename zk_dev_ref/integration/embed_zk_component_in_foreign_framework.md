@@ -41,7 +41,7 @@ result page. It can be done as follows.
 # Embed a component directly
 
 The simplest way to embed is to invoke
-<javadoc method="render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Component, java.lang.String, java.io.Writer)">org.zkoss.zkplus.embed.Renders</javadoc>
+[org.zkoss.zkplus.embed.Renders#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Component, java.lang.String, java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Renders.html#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Component, java.lang.String, java.io.Writer))
 when it is time to output the content of the native element.
 
 For example, if you are implementing a JSP tag, then you can invoke the
@@ -74,7 +74,7 @@ If you want to have more control, such as applying a composer provided
 by users or creating components from a ZUL page, you could implement a
 richlet ([org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html))
 and then invoke
-<javadoc method="render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer)">org.zkoss.zkplus.embed.Renders</javadoc>
+[org.zkoss.zkplus.embed.Renders#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Renders.html#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer))
 instead.
 
 ```java
@@ -102,7 +102,7 @@ ZK Component as a native JSF component can be easily achieved by
 wrapping it as a custom JSF component
 [1](http://weblogs.java.net/blog/driscoll/archive/2009/10/09/jsf-2-custom-java-components-and-ajax-behaviors)
 and rendering it in *Render Response Phase* of JSF lifecycle by invoking
-<javadoc method="render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer)">org.zkoss.zkplus.embed.Renders</javadoc>
+[org.zkoss.zkplus.embed.Renders#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Renders.html#render(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Richlet, java.lang.String, java.io.Writer))
 
 ```java
 @FacesComponent(value = "window")

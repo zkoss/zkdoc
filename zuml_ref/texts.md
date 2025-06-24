@@ -51,45 +51,45 @@ property's value.
 <tr class="odd">
 <td><p>a</p></td>
 <td><p>label</p></td>
-<td><p><javadoc method="setLabel(java.lang.String)">org.zkoss.zul.A</javadoc></p></td>
+<td><p>[org.zkoss.zul.A#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html#setLabel(java.lang.String))</p></td>
 </tr>
 <tr class="even">
 <td><p>button</p></td>
 <td><p>label</p></td>
-<td><p><javadoc method="setLabel(java.lang.String)">org.zkoss.zul.Button</javadoc></p></td>
+<td><p>[org.zkoss.zul.Button#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setLabel(java.lang.String))</p></td>
 </tr>
 <tr class="odd">
 <td><p>comboitem</p></td>
 <td><p>content</p></td>
-<td><p><javadoc method="setContent(java.lang.String)">org.zkoss.zul.Comboitem</javadoc></p></td>
+<td><p>[org.zkoss.zul.Comboitem#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Comboitem.html#setContent(java.lang.String))</p></td>
 </tr>
 <tr class="even">
 <td><p>html</p></td>
 <td><p>content</p></td>
-<td><p><javadoc method="setContent(java.lang.String)">org.zkoss.zul.Html</javadoc></p></td>
+<td><p>[org.zkoss.zul.Html#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html#setContent(java.lang.String))</p></td>
 </tr>
 <tr class="odd">
 <td><p>label</p></td>
 <td><p>value</p></td>
-<td><p><javadoc method="setValue(java.lang.String)">org.zkoss.zul.Label</javadoc></p></td>
+<td><p>[org.zkoss.zul.Label#setValue(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html#setValue(java.lang.String))</p></td>
 </tr>
 <tr class="even">
 <td><p>script</p></td>
 <td><p>content</p></td>
-<td><p><javadoc method="setContent(java.lang.String)">org.zkoss.zul.Script</javadoc></p></td>
+<td><p>[org.zkoss.zul.Script#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Script.html#setContent(java.lang.String))</p></td>
 </tr>
 <tr class="odd">
 <td><p>style</p></td>
 <td><p>content</p></td>
-<td><p><javadoc method="setContent(java.lang.String)">org.zkoss.zul.Style</javadoc></p></td>
+<td><p>[org.zkoss.zul.Style#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Style.html#setContent(java.lang.String))</p></td>
 </tr>
 <tr class="even">
 <td><p>tab</p></td>
 <td><p>label</p></td>
-<td><p><javadoc method="setLabel(java.lang.String)">org.zkoss.zul.Tab</javadoc>
+<td><p>[org.zkoss.zul.Tab#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#setLabel(java.lang.String))
 (since 5.0.7)</p>
 <p><strong>Note:</strong> Since 6.5.0, please use
-<javadoc method="setLabel(java.lang.String)">org.zkoss.zul.Tab</javadoc>
+[org.zkoss.zul.Tab#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#setLabel(java.lang.String))
 instead</p></td>
 </tr>
 </tbody>

@@ -76,7 +76,7 @@ described in the next sections.
 ### Built-in Constraints
 
 To use the default constraint, you could specify a list of conditions in
-<javadoc method="setConstraint(java.lang.String)">org.zkoss.zul.impl.InputElement</javadoc>,
+[org.zkoss.zul.impl.InputElement#setConstraint(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html#setConstraint(java.lang.String)),
 such as `no positive` and `no empty`. For example,
 
 ```xml

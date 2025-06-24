@@ -6,7 +6,7 @@ String formatNumber(Object number, String pattern);
 
   
 i.e.,
-<javadoc method="formatNumber(java.lang.Object, java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#formatNumber(java.lang.Object, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatNumber(java.lang.Object, java.lang.String))
 
 Formats a number (Integer, BigDecimal...) into a string with the given
 pattern.
@@ -21,7 +21,7 @@ For example,
 ```
 
 There is another extended built-in function, not declared in taglib:
-<javadoc method="formatNumber(java.lang.Object, java.lang.String, java.util.Locale)">org.zkoss.xel.fn.CommonFns</javadoc>.
+[org.zkoss.xel.fn.CommonFns#formatNumber(java.lang.Object, java.lang.String, java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatNumber(java.lang.Object, java.lang.String, java.util.Locale)).
 
 You can call it by [ EL](ZUML_Reference/EL_Expressions/Static_Fields_and_Methods)
 or declaring a [ xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).

@@ -134,6 +134,6 @@ and configure the custom ThemeResolver in **WEB-INF/zk.xml**.
 ```
 
 To access the current theme resolver, please refer to
-<javadoc class="true" method="getThemeResolver()">org.zkoss.web.fn.ThemeFns</javadoc>
+[org.zkoss.web.fn.ThemeFns#getThemeResolver()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ThemeFns.html#getThemeResolver())
 and
-<javadoc class="true" method="setThemeResolver(org.zkoss.web.theme.ThemeRegistry)">org.zkoss.web.fn.ThemeFns</javadoc>.
+[org.zkoss.web.fn.ThemeFns#setThemeResolver(org.zkoss.web.theme.ThemeRegistry)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ThemeFns.html#setThemeResolver(org.zkoss.web.theme.ThemeRegistry)).

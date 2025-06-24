@@ -6,7 +6,7 @@
 view and the model by implementing
 [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html). Once the
 model is assigned (with
-<javadoc method="setModel(org.zkoss.zul.ListModel)">org.zkoss.zul.Listbox</javadoc>),
+[org.zkoss.zul.Listbox#setModel(org.zkoss.zul.ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(org.zkoss.zul.ListModel))),
 the display of the listbox is controlled by the model, and an optional
 renderer. The model is used to provide data, while the renderer is used
 to provide the custom look. By default, the data is shown as a
@@ -24,13 +24,13 @@ and then invokes the renderer, if specified, to compose the
 the element.
 
 The retrieval of elements is done by invoking
-<javadoc method="getSize()" type="interface">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel#getSize()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getSize())
 and
-<javadoc method="getElementAt(int)" type="interface">org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel#getElementAt(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getElementAt(int)).
 
 The listbox will register itself as a data listener to the list model by
 invoking
-<javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)" type="interface">org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel#addListDataListener(org.zkoss.zul.event.ListDataListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#addListDataListener(org.zkoss.zul.event.ListDataListener)).
 Thus, if the list model is not mutable, the implementation has to notify
 all the registered data listeners. It is generally suggested to extend
 from [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), or use any of
@@ -74,7 +74,7 @@ list, map, set or array. Then, you could use one of the default
 implementations as described above.
 
 Alternatively, you could load all data when
-<javadoc method="getSize()" type="interface">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel#getSize()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getSize())
 is called. For example,
 
 ```java
@@ -95,7 +95,7 @@ public class FooModel extends AbstractListModel {
 If the data amount is huge, it is not a good idea to load all of them at
 once. Rather, you shall load only the required subset. On the other
 hand, it is generally not a good idea to load single elements when
-<javadoc type="interface" method="getElementAt(int)">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel#getElementAt(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getElementAt(int))
 is called since the overhead loading from the database is significant.
 
 Thus, it is suggested to use SQL LIMIT or a similar feature to load only
@@ -104,7 +104,7 @@ is about 30, you could load 30 (or more, say 60, depending on
 performance or memory is more important to you). If an element is not
 loaded, you have to discard the previously loaded data if any. If the
 next invocation of
-<javadoc type="interface" method="getElementAt(int)">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel#getElementAt(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getElementAt(int))
 is in the subset, we could return it immediately. Here is the pseudo
 code:
 
@@ -127,9 +127,9 @@ For more realistic examples, please refer to [example project](https://github.co
 If you build your own `ListModel` implementation, when the data in the
 model is changed, the implementation must notify all the data listeners
 that are registered by
-<javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)" type="interface">org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel#addListDataListener(org.zkoss.zul.event.ListDataListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#addListDataListener(org.zkoss.zul.event.ListDataListener)).
 It can be done by invoking
-<javadoc method="fireEvent(int, int, int)">org.zkoss.zul.AbstractListModel</javadoc>
+[org.zkoss.zul.AbstractListModel#fireEvent(int, int, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html#fireEvent(int, int, int))
 if your implementation is extended from
 [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html) or derived.
 
@@ -221,22 +221,21 @@ you shall also implement
 [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html). When
 using with a component supporting the selection (such as
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)), the component will invoke
-<javadoc method="isSelected(E)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
+[org.zkoss.zul.ext.Selectable#isSelected(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#isSelected(E))
 to display the selected elements correctly. In addition, if the end user
 selects or deselects an item,
-<javadoc method="addSelection(E)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
+[org.zkoss.zul.ext.Selectable#addSelection(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#addSelection(E))
 and
-<javadoc method="removeSelection(java.lang.Object)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
+[org.zkoss.zul.ext.Selectable#removeSelection(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#removeSelection(java.lang.Object))
 will be called by the component to notify the model that the selection
 is changed. Then, you can update the selection into the persistent layer
 (such as database) if necessary.
 
 On the other hand, when the model detects the selection is changed (such
 as
-<javadoc method="addSelection(E)" type="interface">org.zkoss.zul.ext.Selectable</javadoc>
+[org.zkoss.zul.ext.Selectable#addSelection(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#addSelection(E))
 is called), it has to fire the event, such as
-<javadoc method="SELECTION_CHANGED">org.zkoss.zul.event.ListDataEvent
-</javadoc> to notify the component. It will cause the component to
+[org.zkoss.zul.event.ListDataEvent#SELECTION_CHANGED](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html#SELECTION_CHANGED) to notify the component. It will cause the component to
 correct the selection[^2].
 
 All default implementations, including
@@ -257,7 +256,7 @@ extends one of these classes.
 To support sorting, the model must implement
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too.
 Thus, when the end user clicks the header to request sorting,
-<javadoc method="sort(java.util.Comparator, boolean)" type="interface">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 will be called.
 
 For example, (pseudo code)

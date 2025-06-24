@@ -28,7 +28,7 @@ The format of date and time is decided in the following sequence.
     [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html).
 3.  It checks if a property called
     `org.zkoss.web.preferred.dateFormatInfo` is defined in the library
-    property (i.e., <javadoc >org.zkoss.lang.Library</javadoc>). If so,
+    property (i.e., [org.zkoss.lang.Library](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html)). If so,
     it will be used by assuming the value is a class of
     [org.zkoss.text.DateFormatInfo](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/text/DateFormatInfo.html).
 4.  If none of them is found, it uses the JVM's default based on [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
@@ -112,9 +112,9 @@ However, it is usually better to design a page that depends on the
 configuration as described above, rather than specify the format
 explicitly in each page. It can be done by specifying the styling rather
 than the real format in the format property
-(<javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Datebox</javadoc>
+([org.zkoss.zul.Datebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setFormat(java.lang.String))
 and
-<javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Timebox</javadoc>).
+[org.zkoss.zul.Timebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setFormat(java.lang.String))).
 There are four different styles: short, medium, long and full
 (representing the styling defined in java.text.DateFormat, SHORT,
 MEDIUM, LONG and FULL). For example,

@@ -4,7 +4,7 @@ Object new(Object cls);
 
   
 i.e. it calls
-<javadoc method="new_(java.lang.Object)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#new_(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#new_(java.lang.Object))
 
 Instantiates the given class. It assumes the given class has a default
 constructor.

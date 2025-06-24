@@ -5,7 +5,7 @@
 Default: `ZK`
 
 It specifies the application name. It is the return value of
-<javadoc method="getAppName()" type="interface">org.zkoss.zk.ui.WebApp</javadoc>.
+[org.zkoss.zk.ui.WebApp#getAppName()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#getAppName()).
 It also determins the default title of
 [Messagebox]({{site.baseurl}}/zk_component_ref/supporting_classes/messagebox)
 and build-in warning/error dialogs e.g. file upload size exceeding
@@ -22,7 +22,7 @@ For example,
 ```
 
 In addition, you could change the application's name in Java by invoking
-<javadoc method="setAppName(java.lang.String)" type="interface">org.zkoss.zk.ui.WebApp</javadoc>.
+[org.zkoss.zk.ui.WebApp#setAppName(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#setAppName(java.lang.String)).
 
 # Version History
 

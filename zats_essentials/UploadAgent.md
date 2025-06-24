@@ -86,7 +86,7 @@ public void test() throws Exception {
 # Uploading Files with `Fileupload.get()`
 
 Another way to implement upload feature is to use the static method
-<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> as an event
+[org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) as an event
 handler.(See [ZK Component Reference/Essential Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
@@ -101,7 +101,7 @@ in the image below:
 In this case, we can retrieve `UploadAgent` from
 [org.zkoss.zk.ui.DesktopAgent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/DesktopAgent.html). Following is a typical
 example of file uploading with
-<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>:
+[org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()):
 
 ```java
 @Test
@@ -120,7 +120,7 @@ public void test() throws Exception {
   operation, we can cast [org.zkoss.zk.ui.DesktopAgent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/DesktopAgent.html)
   as a `UploadAgent` for uploading.
 - **Line 16-17**: We can also upload multiple files at once using
-  <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>.
+  [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()).
 - **Line 18**: Don't forget to invoke `finish()`method.
 
 **Notes**

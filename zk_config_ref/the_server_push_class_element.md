@@ -19,7 +19,7 @@ interface.
 
 In addition to configuring the application's default implementation, you
 can choose an implement for a particular class by the use of
-<javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
+[org.zkoss.zk.ui.sys.DesktopCtrl#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCtrl.html#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)).
 For example,
 
 ```java

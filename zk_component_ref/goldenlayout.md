@@ -131,7 +131,7 @@ By user's drag drop, the GoldenPanels are usually dropped to a region
 like `north`, `east`, `south`, `west` and `stack` of a GoldenPanel. So
 we provide some GoldenPanel adding APIs to simulate these actions.
 Please refer to the addPanel APIs like
-<javadoc method="addPanel(GoldenPanel, GoldenPanel, String)">org.zkoss.zkmax.zul.GoldenLayout</javadoc>
+[org.zkoss.zkmax.zul.GoldenLayout#addPanel(GoldenPanel, GoldenPanel, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html#addPanel(GoldenPanel, GoldenPanel, String))
 in [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html).
 
 north

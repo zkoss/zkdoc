@@ -46,9 +46,9 @@ width and hflex. They could be specified in the column's header, such as
 [listheader]({{site.baseurl}}/zk_component_ref/data/listbox/listheader ).
 
 While width
-(<javadoc method="setWidth(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
+([org.zkoss.zk.ui.HtmlBasedComponent#setWidth(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setWidth(java.lang.String)))
 specifies the width in precise number (such as width="100px"), hflex
-(<javadoc method="setHflex(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
+([org.zkoss.zk.ui.HtmlBasedComponent#setHflex(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setHflex(java.lang.String)))
 specifies the proportional width (such as `hflex="1"`) or the minimal
 width (such as `hflex="min"`).
 
@@ -59,7 +59,7 @@ be some whitespace shown at the right side of the grid.
 
 If you prefer to make each column's width a bit wider to cover the whole
 grid, you could specify `span="true"` in grid/listbox/tree (such as
-<javadoc method="setSpan(java.lang.String)">org.zkoss.zul.Grid</javadoc>).
+[org.zkoss.zul.Grid#setSpan(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setSpan(java.lang.String))).
 If you want to make a particular column larger to cover the whole grid,
 you could specify a number, such as `span="2"` to expand the third
 column.
@@ -69,7 +69,7 @@ column.
 If you want to make each column as minimal as possible, you could
 specify `hflex="min"` for each column. Alternatively, you could specify
 `sizedByContent="true"` in the grid/listbox/tree
-(<javadoc method="setSizedByContent(boolean)">org.zkoss.zul.Grid</javadoc>).
+([org.zkoss.zul.Grid#setSizedByContent(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setSizedByContent(boolean))).
 In other words, it implies the width of a column that is *not* assigned
 with width and hflex shall be minimal.
 

@@ -12,7 +12,7 @@
 
 A header for a Groupbox, Window, and Panel. It may contain either a text
 label, using
-<javadoc method="setLabel(java.lang.String)">org.zkoss.zul.impl.LabelElement</javadoc>,
+[org.zkoss.zul.impl.LabelElement#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelElement.html#setLabel(java.lang.String)),
 or child elements for a more complex caption.
 
 # Preload Image

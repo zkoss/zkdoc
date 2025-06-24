@@ -55,7 +55,7 @@ The example shows how to push a history state and handle a
 ```
 
 - Line 6: Use
-  <javadoc class="true"  method="pushHistoryState(java.lang.Object,java.lang.String,java.lang.String)">org.zkoss.zk.ui.Desktop</javadoc>
+  [org.zkoss.zk.ui.Desktop#pushHistoryState(java.lang.Object,java.lang.String,java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#pushHistoryState(java.lang.Object,java.lang.String,java.lang.String))
   to push a history state.
 - Line 9: Listen `onHistoryPopState` on any root component to handle
   `HistoryPopStateEvent` object.

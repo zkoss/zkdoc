@@ -34,7 +34,7 @@ implement a Java class to put them together.
 
 The implementation of a template is straightforward. There is nothing
 special to handle. Since it is rendered by
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)),
 you could pass whatever data you prefer to it (through the `arg`
 argument).
 
@@ -55,15 +55,15 @@ To implement a Java class we shall:
 2.  (Optional) Implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) to
     make it an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
 3.  Render the template in the constructor by the use of
-    <javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
+    [org.zkoss.zk.ui.Executions#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
     or others.
 4.  (Optional) Wire variables, components and event listeners after
     rendering with the use of
-    <javadoc method="wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)">org.zkoss.zk.ui.select.Selectors</javadoc>
+    [org.zkoss.zk.ui.select.Selectors#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List))
     (wiring variables),
-    <javadoc method="wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean)">org.zkoss.zk.ui.select.Selectors</javadoc>
+    [org.zkoss.zk.ui.select.Selectors#wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean))
     (wiring components) and
-    <javadoc method="wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.select.Selectors</javadoc>
+    [org.zkoss.zk.ui.select.Selectors#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object))
     (wiring event listeners).
 
 For example,
@@ -100,17 +100,17 @@ public class Username extends Row implements IdSpace {
 ```
 
 After
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
 is called, all components specified in the template will be instantiated
 and become the child components of the composite component (Row). Notice
 that the URI must match the location of the template correctly.
 
 Depending on the implementation you want, you could wire the data
 members (`mc_who`) by calling
-<javadoc method="wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean)">org.zkoss.zk.ui.select.Selectors</javadoc>.
+[org.zkoss.zk.ui.select.Selectors#wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireComponents(org.zkoss.zk.ui.Component, java.lang.Object, boolean)).
 This method will search all data members and setter methods and *wire*
 the component with the same ID. Similarly,
-<javadoc method="wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.select.Selectors</javadoc>
+[org.zkoss.zk.ui.select.Selectors#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object))
 is used to wire event listeners.
 
 For more information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
@@ -129,12 +129,12 @@ sections.
 
 ### Wire Spring-managed Beans
 
-<javadoc method="wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)">org.zkoss.zk.ui.select.Selectors</javadoc>
+[org.zkoss.zk.ui.select.Selectors#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List))
 will wire variables that can be resolved by the registered variable
 resolver. In addition to [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver),
 you can create any variable resolver manually and pass it as the third
 argument.
-<javadoc method="newVariableResolvers(java.lang.Class, java.lang.Class)">org.zkoss.zk.ui.select.Selectors</javadoc>
+[org.zkoss.zk.ui.select.Selectors#newVariableResolvers(java.lang.Class, java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#newVariableResolvers(java.lang.Class, java.lang.Class))
 provides a convenient way to instantiate variable resolvers. For
 example, let us say we'd like to wire Spring-manage beans, then we can
 do as follows.
@@ -156,7 +156,7 @@ public class Username extends Row implements IdSpace {
 ...
 ```
 
-<javadoc method="newVariableResolvers(java.lang.Class, java.lang.Class)">org.zkoss.zk.ui.select.Selectors</javadoc>
+[org.zkoss.zk.ui.select.Selectors#newVariableResolvers(java.lang.Class, java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#newVariableResolvers(java.lang.Class, java.lang.Class))
 will look for the `@VariableResolver` annotation and instantiate it
 automatically. As shown, we annotate
 [org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) to

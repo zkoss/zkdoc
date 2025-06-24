@@ -18,7 +18,7 @@ complete control of the client-side behavior.
 
 To apply the client-side action to a widget, you have to assign a value
 to the `action` property
-(<javadoc method="setAction(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>).
+([org.zkoss.zk.ui.HtmlBasedComponent#setAction(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setAction(java.lang.String))).
 The syntax is as follows.
 
 `action="`*`action-name1`*`: `*`effect1`*`; `*`action-name2`*`: `*`effect2`*`"`
@@ -70,7 +70,7 @@ Here is a list of predefined actions.
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | show       | The show action is used to display a widget (making a widget visible). When a visible widget is attached to a page, the `show` action will take place too.                                                                  |
 | hide       | The hide action is used to hide a widget (making a widget invisible). When a visible widget is detached from a page, the `hide` action will take place too.                                                                 |
-| invalidate | The invalidate action is invoked when a visible widget is invalidated, i.e., when <javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc> is called. Example, `action="invalidate: slideDown"`. |
+| invalidate | The invalidate action is invoked when a visible widget is invalidated, i.e., when [org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate()) is called. Example, `action="invalidate: slideDown"`. |
 
 ## Predefined Effects
 
@@ -96,7 +96,7 @@ If you want to take some actions other than the predefined actions
 listed above, you have to override the corresponding method at the
 client. For example, suppose you'd like to change the color when a
 label's value
-(<javadoc method="setValue(java.lang.String)">org.zkoss.zul.Label</javadoc>)
+([org.zkoss.zul.Label#setValue(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html#setValue(java.lang.String)))
 is changed. Then, you could do as follows:
 
 ```xml

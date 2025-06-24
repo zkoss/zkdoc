@@ -36,7 +36,7 @@ on. For example,
 ```
 
 Then,
-<javadoc method="doInit(org.zkoss.zk.ui.Page, java.util.Map)" type="interface">org.zkoss.zk.ui.util.Initiator</javadoc>
+[org.zkoss.zk.ui.util.Initiator#doInit(org.zkoss.zk.ui.Page, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html#doInit(org.zkoss.zk.ui.Page, java.util.Map))
 will be called with a map, which contains an entry, whose name is `root`
 and value `./abc`.
 

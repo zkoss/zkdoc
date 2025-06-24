@@ -10,13 +10,13 @@ By plugging in an AU service, you could
 - Handle application-specific AU requests
 
 To plug an AU service to a desktop, you could invoke
-<javadoc method="addListener(java.lang.Object)" type="interface">org.zkoss.zk.ui.sys.Desktop</javadoc>.
+[org.zkoss.zk.ui.sys.Desktop#addListener(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/Desktop.html#addListener(java.lang.Object)).
 You could plug as many AU services as you want. Once plugged, all AU
 requests will go through the AU services (unless it was ignored by other
 AU service).
 
 If you want to plug a particular component, you could invoke
-<javadoc method="setAuService(org.zkoss.zk.au.AuService)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#setAuService(org.zkoss.zk.au.AuService)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAuService(org.zkoss.zk.au.AuService)).
 Unlike desktops, a component can have at most one AU service.
 
 If you want to plug an AU service, you could implement

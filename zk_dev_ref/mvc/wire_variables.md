@@ -9,7 +9,7 @@ registered variable resolvers.
 ## Wire from Implicit Objects
 
 Wiring from an implicit object is equivalent to calling
-<javadoc method="getImplicit(org.zkoss.zk.ui.Page, java.lang.String)">org.zkoss.zk.ui.Components</javadoc>,
+[org.zkoss.zk.ui.Components#getImplicit(org.zkoss.zk.ui.Page, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html#getImplicit(org.zkoss.zk.ui.Page, java.lang.String)),
 by the name specified on `@WireVariable`. If the name is absent and the
 field or method parameter is of type
 [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html),
@@ -221,13 +221,13 @@ and methods with the proper annotations will be wired automatically.
 Here is the sequence of wiring:
 
 - In
-  <javadoc method="doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)">org.zkoss.zk.ui.util.ComposerExt</javadoc>,
+  [org.zkoss.zk.ui.util.ComposerExt#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)),
   it wires variables to the fields and methods annotated with the
   [org.zkoss.zk.ui.select.annotation.WireVariable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/WireVariable.html)
   annotation. Here is the sequence of how it looks for the variable:
   1.  First, it will look for the variable resolver defined in the ZUML
       document (by use of
-      <javadoc method="addVariableResolver(org.zkoss.xel.VariableResolver)">org.zkoss.zk.ui.Page</javadoc>).
+      [org.zkoss.zk.ui.Page#addVariableResolver(org.zkoss.xel.VariableResolver)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#addVariableResolver(org.zkoss.xel.VariableResolver))).
   2.  Second, it looks for the variable resolver annotated at the class
       with the
       [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)

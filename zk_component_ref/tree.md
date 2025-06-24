@@ -117,7 +117,7 @@ deprecated because designs are changed.
 ## Autopaging
 
 When using the paging mold and vflex, you could also turn on autopaging
-(<javadoc method="setAutopaging( boolean)">org.zkoss.zul.Tree</javadoc>)
+([org.zkoss.zul.Tree#setAutopaging( boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging( boolean)))
 such that the page size will be adjusted automatically based on the
 available space. {% include version-badge.html version=5.0.2 %}
 
@@ -241,10 +241,10 @@ the focus).
 ```
 
 Sometimes it is not intuitive, such as using with inplace editing
-(<javadoc method="isInplace()">org.zkoss.zul.impl.InputElement</javadoc>).
+([org.zkoss.zul.impl.InputElement#isInplace()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html#isInplace())).
 If you want to have more control of whether to select an item, you could
 specify a list of tags in the nonselectableTags property
-(<javadoc method="setNonselectableTags(java.lang.String)">org.zkoss.zul.Tree</javadoc>).
+([org.zkoss.zul.Tree#setNonselectableTags(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setNonselectableTags(java.lang.String))).
 For example, if you want to select the item, no matter what tag the user
 clicks, you could specify an empty string as follows.
 
@@ -288,7 +288,7 @@ then a radio button will be displayed instead.
 ## Deselect Others when Clicking an Item with Checkmark
 
 If a tree's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Tree</javadoc>) is
+([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())) is
 enabled, the selection will be toggled when an user clicks an item. In
 other words, all other items will remain the same.
 
@@ -307,7 +307,7 @@ true to this library property called
 ## Toggle Selection when Right Clicking an Item with Checkmark
 
 If a tree's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Tree</javadoc>) is
+([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())) is
 enabled, the selection will be toggled when user right click on item.
 
 If you prefer not to select/deselect item on right click, you could
@@ -411,7 +411,7 @@ might have. If you want to have the minimal width (that fit the
 content), you could specify `hflex="min"` at the column (not the tree).
 
 However, the tree has a special mode called sized-by-content
-(<javadoc method="setSizedByContent(boolean)">org.zkoss.zul.Tree</javadoc>).
+([org.zkoss.zul.Tree#setSizedByContent(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setSizedByContent(boolean))).
 By specifying it to true, the column width will be adjusted
 automatically. However, it is controlled by the browser, so you have no
 100% control of it. For example, if a user resized a column, the final
@@ -619,7 +619,7 @@ boxes.
 
 It specifies the selection should be toggled when user right clicks on
 an item, if the checkmark is enabled
-(<javadoc method="isCheckmark()">org.zkoss.zul.Tree</javadoc>). If it is
+([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())). If it is
 turned off, right clicking on an item will change its selection state.
 
 > ------------------------------------------------------------------------
@@ -634,15 +634,15 @@ turned off, right clicking on an item will change its selection state.
 {% include version-badge.html version=5.0.7 %} It specifies whether to sort the model
 when the following cases:
 
-- <javadoc method="setModel (TreeModel)">org.zkoss.zul.Tree</javadoc>is
+- [org.zkoss.zul.Tree#setModel (TreeModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setModel (TreeModel))is
   called and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+  [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is set.
-- <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+- [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is called.
 - Model receives [org.zkoss.zul.event.TreeDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/TreeDataEvent.html)
   and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+  [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is set.
 
 If you want to ignore sort when receiving
@@ -719,7 +719,7 @@ got executed.</p></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
-(<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Tree</javadoc>)
+([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean)))
 is enabled and user changed the size of the content.</p></td>
 </tr>
 </tbody>

@@ -55,9 +55,9 @@ children visible. The onOpen event is then sent to the server to notify
 the application.
 
 You can also open or close the Orgitem by calling
-<javadoc method="setOpen(java.lang.Boolean)">org.zkoss.zkmax.zul.Orgitem</javadoc>
+[org.zkoss.zkmax.zul.Orgitem#setOpen(java.lang.Boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setOpen(java.lang.Boolean))
 and get the open state by calling
-<javadoc method="isOpen()">org.zkoss.zkmax.zul.Orgitem</javadoc>.
+[org.zkoss.zkmax.zul.Orgitem#isOpen()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#isOpen()).
 
 Example:
 
@@ -80,12 +80,12 @@ Example:
 By default, each Orgitem can be selected by users clicking or by
 programing:
 
-<javadoc method="setSelectedItem(org.zkoss.zkmax.zul.Orgitem)">org.zkoss.zkmax.zul.Organigram</javadoc>
+[org.zkoss.zkmax.zul.Organigram#setSelectedItem(org.zkoss.zkmax.zul.Orgitem)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html#setSelectedItem(org.zkoss.zkmax.zul.Orgitem))
 or
-<javadoc method="setSelected(java.lang.Boolean)">org.zkoss.zkmax.zul.Orgitem</javadoc>
+[org.zkoss.zkmax.zul.Orgitem#setSelected(java.lang.Boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setSelected(java.lang.Boolean))
 
 You can get the selected state by calling
-<javadoc method="isSelected()">org.zkoss.zkmax.zul.Orgitem</javadoc>
+[org.zkoss.zkmax.zul.Orgitem#isSelected()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#isSelected())
 
 If you don't allow users to select Orgitem, you can write as following:
 
@@ -100,9 +100,9 @@ Disabled has more obvious style to prompt users.
 # Label and Image
 
 Orgitem provides
-<javadoc method="setImage(java.lang.String)">org.zkoss.zkmax.zul.Orgitem</javadoc>
+[org.zkoss.zkmax.zul.Orgitem#setImage(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setImage(java.lang.String))
 and
-<javadoc method="setLabel(java.lang.String)">org.zkoss.zkmax.zul.Orgitem</javadoc>
+[org.zkoss.zkmax.zul.Orgitem#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setLabel(java.lang.String))
 to simplify the assignment of image and label to an Orgitem. However,
 they are actually placed in the node (of the child Orgnode).
 Furthermore, if the Orgnode is not created, they will be created

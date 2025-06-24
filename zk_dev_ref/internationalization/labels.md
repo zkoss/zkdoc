@@ -175,7 +175,7 @@ fullname.format=full name is {0}
 - We assume `fullname` is a string array (such as
   `new String[] {"Jimmy", "Shiau"}`).
 
-<javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#getLabel(java.lang.String, java.lang.Object[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getLabel(java.lang.String, java.lang.Object[]))
 assumes the content is a valid pattern accepted by
 [MessageFormat](http://download.oracle.com/javase/6/docs/api/java/text/MessageFormat.html),
 such as `"{1}, {0}"`.
@@ -187,8 +187,8 @@ single quotes" according to
 # Access Internationalization Labels In Java
 
 To access labels in Java code (including zscript), you could use
-<javadoc method="getLabel(java.lang.String)">org.zkoss.util.resource.Labels</javadoc>,
-<javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#getLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getLabel(java.lang.String)),
+[org.zkoss.util.resource.Labels#getLabel(java.lang.String, java.lang.Object[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getLabel(java.lang.String, java.lang.Object[]))
 and others.
 
 ```java
@@ -197,7 +197,7 @@ String username = Labels.getLabel("username");
 
 Here is a more complex example. Let us assume we want to generate a full
 name based on the Locale, then we could use
-<javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#getLabel(java.lang.String, java.lang.Object[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getLabel(java.lang.String, java.lang.Object[]))
 to generate concatenated messages as follows.
 
 ```java
@@ -206,7 +206,7 @@ public String getFullName(String firstName, String lastName) {
 }
 ```
 
-<javadoc method="getLabel(java.lang.String, java.lang.Object[])">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#getLabel(java.lang.String, java.lang.Object[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getLabel(java.lang.String, java.lang.Object[]))
 assumes the content is a valid pattern accepted by
 [MessageFormat](http://download.oracle.com/javase/6/docs/api/java/text/MessageFormat.html),
 such as `"{1}, {0}"`.
@@ -303,9 +303,9 @@ implement either
 or
 [org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html).
 Then, invoking
-<javadoc method="register(org.zkoss.util.resource.LabelLocator)">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#register(org.zkoss.util.resource.LabelLocator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#register(org.zkoss.util.resource.LabelLocator))
 or
-<javadoc method="register(org.zkoss.util.resource.LabelLocator2)">org.zkoss.util.resource.Labels</javadoc>
+[org.zkoss.util.resource.Labels#register(org.zkoss.util.resource.LabelLocator2)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#register(org.zkoss.util.resource.LabelLocator2))
 to register it[^6].
 
 If you can represent your resource in URL, you could use
@@ -378,7 +378,7 @@ two modules of messages you provide. Then, you configure it in
 The internationalization labels are loaded when a locale is used for the
 first time. It won't be reloaded automatically if the file is modified.
 However, it is easy to force ZK to reload by the use of
-<javadoc method="reset()">org.zkoss.util.resource.Labels</javadoc>.
+[org.zkoss.util.resource.Labels#reset()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#reset()).
 
 For example, you could prepare a test paging for reloading as follows.
 
@@ -413,7 +413,7 @@ ${c:label('another.key')}
 | 5.0.7   | March 2011   | The `labels` object was introduced.                                                       |
 
 [^1]: It is the value returned by
-    <javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>. For
+    [org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent()). For
     more information, please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 [^2]: If you prefer a different charset, please refer to [the Encoding Character Set section](#Encoding_character_set).

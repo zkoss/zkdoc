@@ -122,7 +122,7 @@ enhanced later as the project progresses.
 3.  If necessary, the ZK Client Engine will send an Ajax request to the
     ZK Update Engine on the server[^3].
 4.  Upon receiving Ajax requests, the ZK Update engine will invoke
-    <javadoc method="service(org.zkoss.zk.au.AuRequest,boolean)" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+    [org.zkoss.zk.ui.sys.ComponentCtrl#service(org.zkoss.zk.au.AuRequest,boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#service(org.zkoss.zk.au.AuRequest,boolean))
     for handling an AU request. ZK also wraps a AU request into
     [Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html)
     object.
@@ -130,7 +130,7 @@ enhanced later as the project progresses.
     the component that handles the request usually updates the states,
     if necessary, and then notifies the application by posting events to
     the current execution
-    (<javadoc method="postEvent(org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.event.Events</javadoc>).
+    ([org.zkoss.zk.ui.event.Events#postEvent(org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#postEvent(org.zkoss.zk.ui.event.Event))).
 6.  If any event is posted, the ZK Update Engine will process them
     one-by-one by invoking the event listeners.
 7.  The event listener, provided by an application, may choose either to
@@ -160,7 +160,7 @@ and when to send the event back to the server for further processing:
     another event is triggered and a non-deferrable event listener
     registered for it.
 3.  If the widget declares that the event is important
-    (<javadoc method="CE_IMPORTANT">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>),
+    ([org.zkoss.zk.ui.sys.ComponentCtrl#CE_IMPORTANT](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#CE_IMPORTANT)),
     the event will be queued for later transmission too.
 4.  If none of the above cases or the widget has no corresponding
     component on the server, the event will be dropped.

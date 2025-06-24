@@ -107,7 +107,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 ## Autodrop
 
-<javadoc method="setAutodrop(boolean)">org.zkoss.zul.Combobutton</javadoc>
+[org.zkoss.zul.Combobutton#setAutodrop(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html#setAutodrop(boolean))
 is used to set whether the child popup should drop down automatically
 while mouseover the right drop down icon of Combobutton.
 
@@ -151,7 +151,7 @@ in stead of upload.
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes when the child popup is opened or closed, it will not be
 fired if open or close child popup by call
-<javadoc method="setOpen(boolean)">org.zkoss.zul.Combobutton</javadoc>
+[org.zkoss.zul.Combobutton#setOpen(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html#setOpen(boolean))
 directly.</p></td>
 </tr>
 </tbody>

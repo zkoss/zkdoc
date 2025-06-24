@@ -79,9 +79,9 @@ More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/data/tre
 # Label and Image
 
 Treeitem provides
-<javadoc method="setImage(java.lang.String)">org.zkoss.zul.Treeitem</javadoc>
+[org.zkoss.zul.Treeitem#setImage(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treeitem.html#setImage(java.lang.String))
 and
-<javadoc method="setLabel(java.lang.String)">org.zkoss.zul.Treeitem</javadoc>
+[org.zkoss.zul.Treeitem#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treeitem.html#setLabel(java.lang.String))
 to simplify the assignment of image and label to a treeitem. However,
 they are actually placed in the first treecell (of the child treerow).
 Furthermore, if the treecell or treerow are not created, they will be

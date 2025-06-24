@@ -50,7 +50,7 @@ Messagebox.show("Something is changed. Are you sure?",
 ```
 
 The invocation of
-<javadoc method="show(java.lang.String, java.lang.String, int, java.lang.String)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String, java.lang.String, int, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, java.lang.String, int, java.lang.String))
 will return immediately after the invocation[^2]. Then, if the user
 clicks a button, the event listener will be invoked. You could examine
 the event name to know which button is clicked. If the user clicked the
@@ -91,7 +91,7 @@ Messagebox.show("Something is changed. Are you sure?",
 {% include version-badge.html version=6.0.0 %}
 
 If you'd like to assign the order, you could use
-<javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener))
 as follows.
 
 ```java
@@ -108,7 +108,7 @@ The buttons will be displayed in the same order as the array specified
 in the `buttons` argument.
 
 If you don't care the order, you could use a combination of constants,
-such as <javadoc method="OK">org.zkoss.zul.Messagebox</javadoc>. For
+such as [org.zkoss.zul.Messagebox#OK](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#OK). For
 example,
 
 ```java
@@ -137,9 +137,9 @@ argument, the default label will be used.
 ## The Default Title
 
 If the title is not specified in the application's name (returned by
-<javadoc method="getAppName()" type="interface">org.zkoss.zk.ui.WebApp</javadoc>).
+[org.zkoss.zk.ui.WebApp#getAppName()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#getAppName())).
 You could change it by invoking
-<javadoc method="setAppName(java.lang.String)" type="interface">org.zkoss.zk.ui.WebApp</javadoc>.
+[org.zkoss.zk.ui.WebApp#setAppName(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#setAppName(java.lang.String)).
 
 Since 5.0.6, you could specify the application's name with a library
 property called
@@ -158,10 +158,10 @@ For example, you could specify the following in `WEB-INF/zk.xml`:
 The UI of a message box is based on a ZUL file, so you could customize
 it by replacing it with your own implementation. It can be done easily
 by invoking
-<javadoc method="setTemplate(java.lang.String)">org.zkoss.zul.Messagebox</javadoc>.
+[org.zkoss.zul.Messagebox#setTemplate(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#setTemplate(java.lang.String)).
 Notice that it affects all message boxes used in an application. It is
 typically called when the application starts (i.e., in
-<javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
+[org.zkoss.zk.ui.util.WebAppInit#init(org.zkoss.zk.ui.WebApp)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html#init(org.zkoss.zk.ui.WebApp))
 -- for more information, please refer to [ZK Developer's Reference: Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
 To implement a custom template, please take a look at [the default template](https://github.com/zkoss/zk/blob/master/zul/src/archive/web/zul/html/messagebox.zul).
@@ -171,7 +171,7 @@ To implement a custom template, please take a look at [the default template](htt
 {% include version-badge.html version=6.0.0 %}
 
 The `params` argument in
-<javadoc method="show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map))
 allows you to customize a message dialog further. For example, you could
 make the dialog wider with the parameter called `width` as shown below.
 
@@ -213,7 +213,7 @@ Messagebox.show("It's a customized style message box.",
 {% include version-badge.html version=6.5.1 %}
 
 If you'd like to show a non-buttons dialog, you could use
-<javadoc method="show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener))
 with an empty array as follows.
 
 ```java

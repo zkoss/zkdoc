@@ -7,14 +7,14 @@
 
 Specifies whether to sort the model when the following cases:
 
-- <javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>
+- [org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel))
   is called and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+  [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is set.
-- <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+- [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is called.
 - Model receives `org.zkoss.zul.event.ListDataEvent`and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+  [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is set.
 
 If you want to ignore sort when receiving

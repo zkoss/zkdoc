@@ -8,20 +8,20 @@ you are not familiar with CSS, please refer to [CSS Tutorial](http://www.w3schoo
 There are a set of methods that could be used to set CSS styles for an
 individual component.
 
-- <javadoc method="setStyle(java.lang.String)" type="interface">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+- [org.zkoss.zk.ui.HtmlBasedComponent#setStyle(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setStyle(java.lang.String))
   assigns CSS styles directly to a component.
-- <javadoc method="setSclass(java.lang.String)" type="interface">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+- [org.zkoss.zk.ui.HtmlBasedComponent#setSclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setSclass(java.lang.String))
   (i.e., sclass) assigns one or multiple CSS style classes to a
   component.
-- <javadoc method="setZclass(java.lang.String)" type="interface">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+- [org.zkoss.zk.ui.HtmlBasedComponent#setZclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setZclass(java.lang.String))
   (i.e., zclass) assigns the main CSS style class to a component. Unlike
   style and sclass, if zclass is changed, all default CSS styles won't
   be applied.
 - Some components have a so-called content area and they have a separate
   set of methods to change the CSS style of the content area, such as
-  <javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>
+  [org.zkoss.zul.Window#setContentStyle(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setContentStyle(java.lang.String))
   and
-  <javadoc method="setContentSclass(java.lang.String)">org.zkoss.zul.Window</javadoc>.
+  [org.zkoss.zul.Window#setContentSclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setContentSclass(java.lang.String)).
 
 Notice that the DOM structures of many ZUL components are complicate,
 and CSS customization might depend on the DOM structure. For more
@@ -46,7 +46,7 @@ tb.setStyle("color: red; font-style: oblique;");
 # sclass
 
 In addition, you could specify the style class by use of
-<javadoc method="setSclass(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>,
+[org.zkoss.zk.ui.HtmlBasedComponent#setSclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setSclass(java.lang.String)),
 such that you could apply the same CSS style to multiple components.
 
 ```xml

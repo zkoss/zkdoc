@@ -68,9 +68,9 @@ Sometimes it is not possible to make the radiogroup component as an
 ancestor of all radio components. For example, each row of a grid might
 be an independent group. To solve this, you have to assign the
 radiogroup component to the radio component explicitly by the use of
-<javadoc method="setRadiogroup(java.lang.String)">org.zkoss.zul.Radio</javadoc>
+[org.zkoss.zul.Radio#setRadiogroup(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html#setRadiogroup(java.lang.String))
 or
-<javadoc method="setRadiogroup(org.zkoss.zul.Radiogroup)">org.zkoss.zul.Radio</javadoc>.
+[org.zkoss.zul.Radio#setRadiogroup(org.zkoss.zul.Radiogroup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html#setRadiogroup(org.zkoss.zul.Radiogroup)).
 
 ![](/zk_component_ref/images/ZKComRef_Radiogroup_Grid.png)
 
@@ -134,7 +134,7 @@ choose one upon your needs.
 2\. Set the `ListModel` at the `model` attribute.
 
 3\. **(Optional)** Implement the
-<javadoc type="interface">org.zkoss.zul.RadioRenderer<T></javadoc>
+[org.zkoss.zul.RadioRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/RadioRenderer.html)
 interface to render each radio and specify it in the `radioRenderer`
 attribute
 

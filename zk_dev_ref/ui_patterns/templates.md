@@ -25,9 +25,9 @@ too.
 
 Each template is stored as part of a component and can be retrieved by
 invoking the
-<javadoc method="getTemplate(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#getTemplate(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getTemplate(java.lang.String)).
 To create the components defined in the template, just invoke the
-<javadoc method="create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)">org.zkoss.zk.ui.util.Template</javadoc>.
+[org.zkoss.zk.ui.util.Template#create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Template.html#create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)).
 For example,
 
 ```java

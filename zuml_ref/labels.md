@@ -2,7 +2,7 @@
 
 A map of all [internationalization labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 belonging to the current locale
-(<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
+([org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent())).
 
 For example, if you have a property file as follows:
 
@@ -46,7 +46,7 @@ app.description=A super application
 >
 > **Under the hood:** The `labels` object is actually the map returned
 > by
-> <javadoc method="getSegmentedLabels()">org.zkoss.util.resource.Labels</javadoc>.
+> [org.zkoss.util.resource.Labels#getSegmentedLabels()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getSegmentedLabels()).
 > Furthermore, if the key of a property contains dot (**.**), all
 > properties with the same prefix are grouped as another map. For
 > example, `${labels.application}` (i.e.,

@@ -19,7 +19,7 @@ moved back to where it originated from.
 
 With ZK, you could make a component draggable by assigning any value,
 other than `"false"`, to the draggable property by the use of
-<javadoc method="setDraggable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>.
+[org.zkoss.zk.ui.HtmlBasedComponent#setDraggable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setDraggable(java.lang.String)).
 To disable it, assign it with `"false"`.
 
 ```xml
@@ -28,7 +28,7 @@ To disable it, assign it with `"false"`.
 
 Similarly, you could make a component droppable by assigning `"true"` to
 the droppable property by the use of
-<javadoc method="setDroppable(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>.
+[org.zkoss.zk.ui.HtmlBasedComponent#setDroppable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setDroppable(java.lang.String)).
 
 ```xml
 <hbox droppable="true"/>
@@ -47,7 +47,7 @@ Once a user has dragged a component and dropped it to another component,
 the component that the user dropped the component to will be notified by
 the `onDrop` event. The `onDrop` event is an instance of
 [org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html). By calling
-<javadoc method="getDragged()">org.zkoss.zk.ui.event.DropEvent</javadoc>,
+[org.zkoss.zk.ui.event.DropEvent#getDragged()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html#getDragged()),
 you could retrieve what has been dragged (and dropped).
 
 Notice that the target of the `onDrop` event is the droppable component,

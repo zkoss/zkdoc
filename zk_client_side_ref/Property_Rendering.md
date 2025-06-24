@@ -26,21 +26,21 @@ client.
 
 When ZK is about to render a new-attached component to the client (by
 new-attached we mean just attached to a desktop),
-<javadoc method="redraw(java.io.Writer)" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+[org.zkoss.zk.ui.sys.ComponentCtrl#redraw(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#redraw(java.io.Writer))
 is called to render the component, including the widget's class name,
 all properties, event listeners and so on.
 
 However, you don't have to implement
-<javadoc method="redraw(java.io.Writer)" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+[org.zkoss.zk.ui.sys.ComponentCtrl#redraw(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#redraw(java.io.Writer))
 from ground up. [org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html)
 provides a default implementation, so you could override
-<javadoc method="renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#renderProperties(org.zkoss.zk.ui.sys.ContentRenderer))
 instead.
 
 ## renderProperties
 
 Overriding
-<javadoc method="renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#renderProperties(org.zkoss.zk.ui.sys.ContentRenderer))
 is straightforward: call back `super.renderProperties` to render
 inherited properties, and then call one of the `render` methods to
 render the properties of the component.
@@ -76,11 +76,11 @@ render.render("name", value);
 ## redrawChildren
 
 After calling `renderProperties`, `redraw` calls
-<javadoc method="redrawChildren(java.io.Writer)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#redrawChildren(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#redrawChildren(java.io.Writer))
 to render the properties of children recursively.
 
 Here is the calling sequence of the default implementation of
-<javadoc method="redraw(java.io.Writer)">org.zkoss.zk.ui.AbstractComponent</javadoc>:
+[org.zkoss.zk.ui.AbstractComponent#redraw(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#redraw(java.io.Writer)):
 
 1.  `renderProperties(new JsContentRenderer());`
 2.  `redrawChildren(out);`
@@ -132,9 +132,9 @@ Then, the value of the `content` property will be retrieved from the
 inner HTML of the DOM element with the same UUID. Of course, the
 component has to render the value in the correct DOM element by the use
 of
-<javadoc method="renderCrawlableA(java.lang.String, java.lang.String)">org.zkoss.zul.impl.Utils</javadoc>
+[org.zkoss.zul.impl.Utils#renderCrawlableA(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/Utils.html#renderCrawlableA(java.lang.String, java.lang.String))
 or
-<javadoc method="renderCrawlableText(java.lang.String)">org.zkoss.zul.impl.Utils</javadoc>.
+[org.zkoss.zul.impl.Utils#renderCrawlableText(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/Utils.html#renderCrawlableText(java.lang.String)).
 
 If the content has to decode first (from &lt; to \<), prefix the
 property name with '\$'.
@@ -158,14 +158,14 @@ renderer.render("z_pk", "com.foo,com.foo.more");
 
 A component can enforce ZK Update Engine to redraw a component by
 calling
-<javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate()).
 Once called, the peer widget will be removed, and a new peer widget will
 be created to represent the new content. Thus, all modifications to the
 widget at client will be lost if not preserved (or synchronized back) to
 the server.
 
 Also notice that
-<javadoc method="redraw(java.io.Writer)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#redraw(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#redraw(java.io.Writer))
 won't be called immediately. Rather, ZK Update Engine will accumulate
 all updates, and then optimize the number of commands ([AU responses]({{site.baseurl}}/zk_client_side_ref/communication/au_responses))
 that need to be sent.
@@ -194,7 +194,7 @@ client.
 
 On the other hand, if a component is not yet attached to a desktop,
 `smartUpdate` will do nothing (since the peer widget doesn't exist). If
-<javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate())
 was called, `smartUpdate` does nothing and previous invocation of
 `smartUpdate` of the same request are ignored (since the peer widget
 will be removed and re-created).
@@ -207,7 +207,7 @@ evaluation of a value, you can implement
 [org.zkoss.zk.ui.util.DeferredValue](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DeferredValue.html).
 
 For example,
-<javadoc method="encodeURL(java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#encodeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#encodeURL(java.lang.String))
 is better to be called when rendering components[^1]:
 
 ```java

@@ -83,7 +83,7 @@ ${z:setCWRCacheControl()}
     zul.wgt, and zkmax** will be merged automatically into the ZK
     package, so you don't specify them in the the *zksandbox.js.dsp*
     file.
-5.  <javadoc method="setCacheControl(java.lang.String, int)">org.zkoss.zk.fn.DspFns</javadoc>
+5.  [org.zkoss.zk.fn.DspFns#setCacheControl(java.lang.String, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/fn/DspFns.html#setCacheControl(java.lang.String, int))
     is used to set the Cache-Control and Expires headers to 24 hours, so
     the JavaScript file will be cached for a day.
 

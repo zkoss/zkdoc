@@ -8,7 +8,7 @@ need to do is:
     or
     [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html)).
 3.  Execute the listener asynchronously by
-    <javadoc method="schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.Executions</javadoc>.
+    [org.zkoss.zk.ui.Executions#schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)).
 
 Here is the code snippet:
 
@@ -30,11 +30,11 @@ Here is the code snippet:
 ```
 
 - Line 10: You can manipulate ZK UI components in
-  <javadoc type="interface" method="onEvent(org.zkoss.zk.ui.Event)">org.zkoss.zk.ui.event.EventListener</javadoc>.
+  [org.zkoss.zk.ui.event.EventListener#onEvent(org.zkoss.zk.ui.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html#onEvent(org.zkoss.zk.ui.Event)).
   It is no different from any other event listener.
 
 Notice that
-<javadoc method="schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#schedule(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.Event))
 can be called anywhere, including another event listener or a task
 thread. In other words, you don't have to fork a new thread to use this
 feature.

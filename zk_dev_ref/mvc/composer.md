@@ -289,7 +289,7 @@ and/or
 
 If you want to initialize a component's properties with some default
 values, after ZK creates it, you should override
-<javadoc method="doAfterCompose(T)">org.zkoss.zk.ui.select.SelectorComposer</javadoc>.
+[org.zkoss.zk.ui.select.SelectorComposer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html#doAfterCompose(T)).
 
 ```java
 public class MyComposer extends SelectorComposer<Grid> {
@@ -317,9 +317,9 @@ implements this interface, you only need to override the method you care
 about if you extend from it.
 
 For example, we could handle the exception by overriding
-<javadoc method="doCatch(java.lang.Throwable)">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+[org.zkoss.zk.ui.util.ComposerExt#doCatch(java.lang.Throwable)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doCatch(java.lang.Throwable))
 and/or
-<javadoc method="doFinally()">org.zkoss.zk.ui.util.ComposerExt</javadoc>.
+[org.zkoss.zk.ui.util.ComposerExt#doFinally()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doFinally()).
 
 ```java
 public class MyComposer<T extends Component> extends SelectorComposer<T> {
@@ -330,9 +330,9 @@ public class MyComposer<T extends Component> extends SelectorComposer<T> {
 ```
 
 For involving the life cycle, you could override
-<javadoc method="doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)" type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+[org.zkoss.zk.ui.util.ComposerExt#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo))
 and/or
-<javadoc method="doBeforeComposeChildren(T)" type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>.
+[org.zkoss.zk.ui.util.ComposerExt#doBeforeComposeChildren(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeComposeChildren(T)).
 
 > ------------------------------------------------------------------------
 >
@@ -373,14 +373,14 @@ and it is assigned as followed
 ```
 
 Then,
-<javadoc type="interface" method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>
+[org.zkoss.zk.ui.util.Composer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(T))
 will be called for datebox, textbox, div and then panel (in the order of
 *child-first-parent-last*). If
 [org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html) is
 not implemented, only the panel will be called.
 
 Notice that, because
-<javadoc type="interface" method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>
+[org.zkoss.zk.ui.util.Composer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(T))
 will be called for each child, the generic type should be
 [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) rather
 than the component's type to which the composer is applied. For example,
@@ -417,12 +417,12 @@ For more information, please refer to [ZK Configuration Reference/zk.xml]({{site
 Each time a ZK page, including ZK pages and richlets, is created, ZK
 will instantiate one instance for each registered system-level composer
 and then invoke
-<javadoc method="doAfterCompose(T)" type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
+[org.zkoss.zk.ui.util.Composer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(T))
 for each root component. The system-level composer is usually used to
 process ZK pages after all components are instantiated successfully,
 such as adding a trademark. If you want to process only certain pages,
 you can check the request path by calling
-<javadoc method="getRequestPath()" type="interface">org.zkoss.zk.ui.Desktop</javadoc>
+[org.zkoss.zk.ui.Desktop#getRequestPath()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#getRequestPath())
 (the desktop instance can be found through the given component).
 
 If the system-level composer also implements
@@ -458,11 +458,11 @@ called only for root components.
 | 5.0.8   | June, 2011 | [org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html) and its derives allow developers to specify a custom name by use of a component attribute called `composerName`. |
 
 [^1]: It can be done by invoking
-    <javadoc method="setAttribute(java.lang.String, java.lang.Object)" type="interface">org.zkoss.zk.ui.Component</javadoc>,
+    [org.zkoss.zk.ui.Component#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAttribute(java.lang.String, java.lang.Object)),
     because the component's attribute can be referenced directly in EL
     expressions. Notice that if you want to reference it in EL
     expressions, you'd set the attribute in
-    <javadoc method="doBeforeComposeChildren(T)" type="interface">org.zkoss.zk.ui.util.ComposerExt</javadoc>
+    [org.zkoss.zk.ui.util.ComposerExt#doBeforeComposeChildren(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeComposeChildren(T))
     because
-    <javadoc method="doAfterCompose(T)" type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
+    [org.zkoss.zk.ui.util.Composer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(T))
     was called after all child components were instantiated.

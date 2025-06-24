@@ -302,7 +302,7 @@ The collapsed bar position is decide by
 <javadoc directory="jsdoc" method="getCmargins()">zul.layout.LayoutRegion</javadoc>.
 Therefore, it is not possible to change the position of collpased bar by
 CSS. However, it can still be customized by
-<javadoc method="setCmargins(java.lang.String)">org.zkoss.zul.LayoutRegion</javadoc>
+[org.zkoss.zul.LayoutRegion#setCmargins(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html#setCmargins(java.lang.String))
 like the following.
 
 ```xml

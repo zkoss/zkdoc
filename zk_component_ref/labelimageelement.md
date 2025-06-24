@@ -41,7 +41,7 @@ For example,
 
 As you can see, the *custom-attributes* will be checked recursively (see
 also
-<javadoc method="getAttribute(java.lang.String,boolean)">org.zkoss.zk.ui.ext.Scope</javadoc>).
+[org.zkoss.zk.ui.ext.Scope#getAttribute(java.lang.String,boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html#getAttribute(java.lang.String,boolean))).
 
 {% include version-badge.html version=6.5.2 %}
 

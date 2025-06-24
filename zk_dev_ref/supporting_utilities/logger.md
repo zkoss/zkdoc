@@ -258,7 +258,7 @@ The logger used by ZK is based on the standard logger,
 >
 > To log the message to the client rather than the console at the
 > server, you could use
-> <javadoc method="log(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+> [org.zkoss.zk.ui.util.Clients#log(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#log(java.lang.String))
 
 The typical use is as follows.
 

@@ -41,7 +41,7 @@ FORWARD buttons.
 
 Once you decide when to add a state to the browser's history, you can
 simply invoke
-<javadoc method="setBookmark(java.lang.String)" type="interface">org.zkoss.zk.ui.Desktop</javadoc>.
+[org.zkoss.zk.ui.Desktop#setBookmark(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#setBookmark(java.lang.String)).
 Notice that it is *not* the bookmarks that users add to the browser
 (aka., My Favorites in Internet Explorer).
 

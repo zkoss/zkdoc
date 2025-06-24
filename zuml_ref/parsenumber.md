@@ -6,13 +6,13 @@ Number parseNumber(String source, String pattern);
 
   
 i.e.,
-<javadoc method="parseNumber(java.lang.String, java.lang.String)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#parseNumber(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseNumber(java.lang.String, java.lang.String))
 
 Parses text from the beginning of the given string to produce a number
 with the given pattern.
 
 There is another extended built-in function,
-<javadoc method="parseNumber(java.lang.String, java.lang.String, java.util.Locale)">org.zkoss.xel.fn.CommonFns</javadoc>,
+[org.zkoss.xel.fn.CommonFns#parseNumber(java.lang.String, java.lang.String, java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseNumber(java.lang.String, java.lang.String, java.util.Locale)),
 not declared in taglib. Parses text from the beginning of the given
 string to produce a number with the given pattern and locale.
 

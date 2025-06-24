@@ -20,7 +20,7 @@ server.
 # Redirect to Another URL
 
 Redirecting to another URL is straightforward: pass the URL to
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 A typical use case is to redirect after authenticating the user's login.
 
 ```java
@@ -30,11 +30,11 @@ if (someCondition())
 
 You could also ask the browser to open another browser window from a
 given URL by the use of
-<javadoc method="sendRedirect(java.lang.String, java.lang.String)" type="interface">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#sendRedirect(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#sendRedirect(java.lang.String, java.lang.String)).
 
 ## Redirect When Loading
 
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String))
 is designed to be used when serving an AU request (aka., Ajax). If you
 want to redirect to another page when loading a ZUML document, it is
 more efficient to call
@@ -54,7 +54,7 @@ if (!isLogin()) {
 ```
 
 Notice that we invoke
-<javadoc method="setVoided(boolean)" type="interface">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#setVoided(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#setVoided(boolean))
 to *void* an execution, such that ZK Loader will abort the evaluation of
 a ZUML document (if you prefer not to generate any UI when redirecting).
 
@@ -107,7 +107,7 @@ user has logged in. For more information, please refer to the
 section.
 
 You could forward to another page by the use of
-<javadoc method="forward(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#forward(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#forward(java.lang.String))
 too.
 
 Notice that forwarding can be called only when loading a page. You

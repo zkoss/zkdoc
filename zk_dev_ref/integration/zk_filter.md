@@ -68,5 +68,5 @@ such as from the database, you could implement
 [org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html). It is
 generally done by extending from
 [org.zkoss.zk.ui.impl.AbstractUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html) and overriding
-<javadoc method="getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)">org.zkoss.zk.ui.impl.AbstractUiFactory</javadoc>.
+[org.zkoss.zk.ui.impl.AbstractUiFactory#getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html#getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)).
 For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).

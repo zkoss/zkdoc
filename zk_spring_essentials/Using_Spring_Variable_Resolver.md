@@ -105,7 +105,7 @@ You can also access Spring beans on a ZUML page without
 [org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) by
 using a utility class
 [org.zkoss.zkplus.spring.SpringUtil](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/SpringUtil.html) method
-<javadoc method="getBean()">org.zkoss.zkplus.spring.SpringUtil</javadoc>.
+[org.zkoss.zkplus.spring.SpringUtil#getBean()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/SpringUtil.html#getBean()).
 Here is an example code to demonstrate this
 
 ```xml

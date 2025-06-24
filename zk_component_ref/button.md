@@ -56,7 +56,7 @@ When the file is uploaded, an instance of
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) is sent to the
 button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
-<javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>.
+[org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia()).
 
 # Custom Error Message When Fileupload Over Maxsize
 
@@ -145,7 +145,7 @@ event, you also need to specify `target`:
 
 ## Autodisable
 
-<javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setAutodisable(java.lang.String))
 is used to disable a button automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant
 requests), which is common if the request takes long to serve.
@@ -169,7 +169,7 @@ disables both buttons, when one of them is clicked.
 The button will be enabled automatically, after the request has been
 served (i.e., the response has been sent back to the client). If you
 prefer to enable them manually (i.e., by calling
-<javadoc method="setDisabled(boolean)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setDisabled(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setDisabled(boolean))
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
 ```xml
@@ -209,11 +209,11 @@ specifying the following in the custom language addon:
 
 In addition to handling the onClick event, you could specify the URL in
 the href property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Button</javadoc>),
+([org.zkoss.zul.Button#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setHref(java.lang.String))),
 such that the browser will navigate to the URL you specified directly
 (without sending back any request to the server). If you prefer to visit
 the URL in another browser window, you could specify the name in
-<javadoc method="setTarget(java.lang.String)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setTarget(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setTarget(java.lang.String))
 (just like using a HTML A tag).
 
 Notice that the end user could hold the `Control` key and click on the
@@ -225,7 +225,7 @@ does).
 There are two ways to add behavior to a `button` and `toolbarbutton`.
 Firstly, you can specify a listener to the `onClick` event. Secondly,
 you could specify a URL for the `href` property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Button</javadoc>).
+([org.zkoss.zul.Button#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setHref(java.lang.String))).
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
@@ -247,13 +247,13 @@ application running at the server has no chance to process it.
 If you have to process it at the server or you have to decide whether to
 jump to another URL based on certain condition, you could listen to the
 onClick event, process it, and then invoke
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String))
 if it shall jump to another URL.
 
 For end users, there is no difference between the use of
-<javadoc method="setHref(java.lang.String)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setHref(java.lang.String))
 and
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 
 ```xml
 <zk>
@@ -266,7 +266,7 @@ and
 
 Since the onClick event is sent to the server for processing, you are
 able to perform additional tasks before invoking
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>,
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)),
 such as redirecting to another page only if certain conditions are
 satisfied.
 
@@ -277,7 +277,7 @@ Your application won't be notified when users click the button.
 
 {% include version-badge.html version=5.0.4 %}
 
-<javadoc method="setType(java.lang.String)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
 sets the button's type. It is designed to work with the HTML <code>
 
 <form>
@@ -295,7 +295,7 @@ sets the button's type. It is designed to work with the HTML <code>
 ## Upload
 
 By specifying the upload property
-(<javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Button</javadoc>),
+([org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))),
 you could make a button used for uploading files. For example,
 
 ```xml
@@ -305,9 +305,9 @@ you could make a button used for uploading files. For example,
 Once the file(s) are uploaded, the onUpload event will be sent with an
 instance of [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html). And,
 you could retrieve the uploaded files from
-<javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
+[org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia())
 and
-<javadoc method="getMedias()">org.zkoss.zk.ui.event.UploadEvent</javadoc>
+[org.zkoss.zk.ui.event.UploadEvent#getMedias()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedias())
 
 If you want to customize the handling of the file upload at the client,
 you can specify a JavaScript class when calling this method:
@@ -455,7 +455,7 @@ zul.jar.
 <tr class="odd">
 <td><p>5.0.4</p></td>
 <td><p>August 2010</p></td>
-<td><p><javadoc method="setType(java.lang.String)">org.zkoss.zul.Button</javadoc>
+<td><p>[org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
 was introduced to allow a button able to submit or reset a form.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">n:form</span><span class="ot"> action=</span><span class="st">&quot;a_uri&quot;</span><span class="ot"> xmlns:n=</span><span class="st">&quot;native&quot;</span>&gt;</span>
@@ -466,7 +466,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <tr class="even">
 <td><p>6.0.0</p></td>
 <td><p>December 2011</p></td>
-<td><p><javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Button</javadoc>
+<td><p>[org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
 the <em>multiple</em> setting was introduced to allow to choose multiple
 files to upload at the same time. (HTML5 supported browsers only)</p>
 <div class="sourceCode" id="cb2"><pre
@@ -475,7 +475,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <tr class="odd">
 <td><p>7.0.0</p></td>
 <td><p>September 2013</p></td>
-<td><p><javadoc method="setUpload(java.lang.String)">org.zkoss.zul.Button</javadoc>
+<td><p>[org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
 the <em>accept</em> setting was introduced to allow to specify the types
 of files that the server accepts. (HTML5 supported browsers only)</p>
 <div class="sourceCode" id="cb3"><pre

@@ -7,9 +7,9 @@
 Specifies how many pages (of treeitems) to keep rendered in memory (on
 the server side) when navigating the tree using pagination. It is used
 only if live data
-(<javadoc method="setModel(org.zkoss.zul.TreeModel)">org.zkoss.zul.Tree</javadoc>)
+([org.zkoss.zul.Tree#setModel(org.zkoss.zul.TreeModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setModel(org.zkoss.zul.TreeModel)))
 and in paging mold
-(<javadoc method="getPagingChild()">org.zkoss.zul.Tree</javadoc>).
+([org.zkoss.zul.Tree#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#getPagingChild())).
 
 If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor

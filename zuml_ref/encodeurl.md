@@ -4,7 +4,7 @@ String encodeURL(String uri);
 
   
 i.e.,
-<javadoc method="encodeURL(java.lang.String)">org.zkoss.web.fn.ServletFns</javadoc>
+[org.zkoss.web.fn.ServletFns#encodeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ServletFns.html#encodeURL(java.lang.String))
 
 Encodes a URL.
 

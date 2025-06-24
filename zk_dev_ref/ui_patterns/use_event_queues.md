@@ -15,7 +15,7 @@ In addition, it will start [a server push]({{site.baseurl}}/zk_dev_ref/server_pu
 send the UI updates back when it is ready. If you prefer to use the
 client polling or a particular implementation, you could start it
 manually by use of
-<javadoc method="enableServerPush(org.zkoss.zk.ui.sys.ServerPush)" type="interface">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>,
+[org.zkoss.zk.ui.sys.DesktopCtrl#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCtrl.html#enableServerPush(org.zkoss.zk.ui.sys.ServerPush)),
 such as:
 
 ```java
@@ -100,7 +100,7 @@ For example,
 
 An asynchronous event listener is <i>not</i> allowed to access the
 desktop, but it is allowed to invoke
-<javadoc method="publish(org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.event.EventQueue</javadoc>
+[org.zkoss.zk.ui.event.EventQueue#publish(org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueue.html#publish(org.zkoss.zk.ui.event.Event))
 to publish an event.
 
 ## A Simpler Approach
@@ -108,7 +108,7 @@ to publish an event.
 While subscribing the asynchronous and synchronous event listeners
 separately is generic, as illustrated above, the event queue provides a
 simple method to allow you to register them in one invocation:
-<javadoc method="subscribe(org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.event.EventQueue</javadoc>.
+[org.zkoss.zk.ui.event.EventQueue#subscribe(org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueue.html#subscribe(org.zkoss.zk.ui.event.EventListener, org.zkoss.zk.ui.event.EventListener)).
 In addition, you don't need to publish an event at the end of the
 asynchronous event listener -- the synchronous event listener is invoked
 automatically.
@@ -155,7 +155,7 @@ automatically.
 
 In the above example, we displayed a message if the button was pressed
 twice. If you prefer to simply disable the button, you could use
-<javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Button</javadoc>.
+[org.zkoss.zul.Button#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setAutodisable(java.lang.String)).
 For example,
 
 ```xml

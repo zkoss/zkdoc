@@ -73,7 +73,7 @@ these attributes. For example:
 - The error page can be any kind of servlets. In addition to ZUML, you
   can use JSP or whatever servlet you prefer.
 - From java code the request attributes are accessible via
-  <javadoc class="true"  method="getAttribute(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>
+  [org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
   or from the [requestScope (implicit object)](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)/requestScope).
 
 ```java

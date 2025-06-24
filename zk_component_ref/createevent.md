@@ -38,7 +38,7 @@ where the execution sequence is as follows.
     are created.
     1.  When handling `each`, the data binder detaches the listitem,
         invokes
-        <javadoc method="clone()">org.zkoss.zk.ui.Component</javadoc> to
+        [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone()) to
         make a clone for each item (person.interests), and attach the
         clone to the listbox.
 3.  The listitem created by ZK Loader receives `onCreate`.
@@ -85,7 +85,7 @@ public FooCreateListener implements EventListener, ComponentCloneListener {
 
 Instead of implementing
 [org.zkoss.zk.ui.util.ComponentCloneListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentCloneListener.html), using
-<javadoc method="getTarget()">org.zkoss.zk.ui.event.Event</javadoc>
+[org.zkoss.zk.ui.event.Event#getTarget()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#getTarget())
 could be easier to make a listener safe to clone.
 
 ```java

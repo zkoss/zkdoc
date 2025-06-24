@@ -4,7 +4,7 @@ String escapeXML(String s);
 
   
 i.e.,
-<javadoc method="escapeXML(java.lang.String)">org.zkoss.xml.XMLs</javadoc>
+[org.zkoss.xml.XMLs#escapeXML(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xml/XMLs.html#escapeXML(java.lang.String))
 
 Encodes a string that special characters are quoted to be compatible
 with HTML/XML. For example,

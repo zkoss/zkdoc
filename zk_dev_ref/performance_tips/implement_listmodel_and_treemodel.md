@@ -14,7 +14,7 @@ described in [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model). To impl
 model that supports sorting, you have to implement
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too. Each
 time a user requires sorting,
-<javadoc type="interface" method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 will be called and the implementation usually clears the cache and
 re-generates the SQL statement accordingly.
 
@@ -64,27 +64,27 @@ public class FooListModel extends AbstractListModel implements Sortable {
 ```
 
 The implementation of
-<javadoc type="interface" method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 generally has to purge the cache, store the sorting direction and field,
 and then fire
-<javadoc method="CONTENTS_CHANGED">org.zkoss.zul.event.ListDataEvent</javadoc>
+[org.zkoss.zul.event.ListDataEvent#CONTENTS_CHANGED](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html#CONTENTS_CHANGED)
 to reload the content.
 
 The field to sort against has to be retrieved from the given comparator.
 If you specify `"auto(fieldName)"` to
-<javadoc method="setSort(java.lang.String)">org.zkoss.zul.Listheader</javadoc>,
+[org.zkoss.zul.Listheader#setSort(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSort(java.lang.String)),
 then the comparator is an instance of
 [org.zkoss.zul.FieldComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html), and you could retrieve
 the field's name from
-<javadoc method="getRawOrderBy()">org.zkoss.zul.FieldComparator</javadoc>.
+[org.zkoss.zul.FieldComparator#getRawOrderBy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html#getRawOrderBy()).
 
 If you'd like to use your own comparator, you have to carry the
 information in it and then retrieve it back when
-<javadoc type="interface" method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 is called.
 
 Also notice that we cache the size to improve the performance, since
-<javadoc method="getSize()" type="interface">org.zkoss.zul.ListModel</javadoc>
+[org.zkoss.zul.ListModel#getSize()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getSize())
 might be called multiple times.
 
 Here is some pseudo for a custom TreeModel which renders an Apache

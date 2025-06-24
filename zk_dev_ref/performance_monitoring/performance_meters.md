@@ -9,15 +9,15 @@ request is sent, arrives or is processed.
 As shown above, T1-T5 identifies the following callbacks.
 
 - T1:
-  <javadoc type="interface" method="requestStartAtClient (java.lang.String, org.zkoss.zk.ui.Execution, long)">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+  [org.zkoss.zk.ui.util.PerformanceMeter#requestStartAtClient (java.lang.String, org.zkoss.zk.ui.Execution, long)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html#requestStartAtClient (java.lang.String, org.zkoss.zk.ui.Execution, long))
 - T2:
-  <javadoc type="interface" method="requestStartAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long)">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+  [org.zkoss.zk.ui.util.PerformanceMeter#requestStartAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html#requestStartAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long))
 - T3:
-  <javadoc type="interface" method="requestCompleteAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long)">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+  [org.zkoss.zk.ui.util.PerformanceMeter#requestCompleteAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html#requestCompleteAtServer(java.lang.String, org.zkoss.zk.ui.Execution, long))
 - T4:
-  <javadoc type="interface" method="requestReceiveAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long)">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+  [org.zkoss.zk.ui.util.PerformanceMeter#requestReceiveAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html#requestReceiveAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long))
 - T5:
-  <javadoc type="interface" method="requestCompleteAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long)">org.zkoss.zk.ui.util.PerformanceMeter</javadoc>
+  [org.zkoss.zk.ui.util.PerformanceMeter#requestCompleteAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html#requestCompleteAtClient(java.lang.String, org.zkoss.zk.ui.Execution, long))
 
 Thus,
 

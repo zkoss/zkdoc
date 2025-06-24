@@ -5,8 +5,8 @@
 [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) provides a collection of
 methods to allow you to create components based on a ZUML document, such
 as
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
-<javadoc method="createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)),
+[org.zkoss.zk.ui.Execution#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
 and many others. In addition,
 [org.zkoss.zk.ui.Executions](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html) provides a similar
 collection of shortcuts so that you do not have to retrieve the current
@@ -43,7 +43,7 @@ the components specified in the ZUML document. If `parent` is null, the
 components specified in the ZUML documents will become the root
 components of the current page. In other words, the components created
 by
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
 will be attached to the current page.
 
 ## The arg Object
@@ -66,7 +66,7 @@ Executions.getCurrent().getArg().get("myKey");
 
 If you want to create components that will not be attached to a page,
 you could use
-<javadoc method="createComponents(java.lang.String, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, java.util.Map)).
 It is useful if you want to maintain a cache of components or implement
 a utility.
 
@@ -82,12 +82,12 @@ cache.put("pool", comps); //you can store and use them later since they are not 
 ## Create Components in Working Thread
 
 With
-<javadoc method="createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>,
+[org.zkoss.zk.ui.Executions#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)),
 you could create components in a working thread without execution[^1],
 though it is rare.
 
 Of course, the components being created by
-<javadoc method="createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map))
 will not be attached to any pages. You have to attach them manually, if
 you want to show them to the client.
 
@@ -101,10 +101,10 @@ If the ZUML document is a resource of Web application (i.e., not
 accessible through ServletContext), you could use one of the
 `createComponentsDirectly` methods. For example, you could read the
 content into a string from database and pass it to
-<javadoc method="createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>.
+[org.zkoss.zk.ui.Execution#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)).
 Or, you could represent the content as a reader (say, representing BLOB
 in database) and then pass it to
-<javadoc method="createComponentsDirectly(java.io.Reader, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#createComponentsDirectly(java.io.Reader, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponentsDirectly(java.io.Reader, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
 
 For example, suppose we want to create a component from a remote site.
 Then, we could represent the resource as a URL and do as follows.
@@ -119,21 +119,21 @@ public void loadFromWeb(java.net.URL src, Component parent) {
 # Create from Page Definition
 
 When creating components from the URI (such as
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>),
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))),
 ZK Loader will cache the parsed result and reuse it to speed up the
 rendering.
 
 However, if you create components from the content directly (such as
-<javadoc method="createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>),
+[org.zkoss.zk.ui.Execution#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponentsDirectly(java.lang.String, java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))),
 there is no way to cache the parsed result. In other words, the ZUML
 content will be parsed each time `createComponentsDirectly` is called.
 
 It is OK if the invocation does not happen frequently. However, if you
 want to improve the performance, you could parse the content into
 [org.zkoss.zk.ui.metainfo.PageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/PageDefinition.html) by using
-<javadoc method="getPageDefinitionDirectly(org.zkoss.zk.ui.WebApp, java.lang.String, java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>,
+[org.zkoss.zk.ui.Executions#getPageDefinitionDirectly(org.zkoss.zk.ui.WebApp, java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#getPageDefinitionDirectly(org.zkoss.zk.ui.WebApp, java.lang.String, java.lang.String)),
 cache it, and then invoke
-<javadoc method="createComponents(org.zkoss.zk.ui.metainfo.PageDefinition, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#createComponents(org.zkoss.zk.ui.metainfo.PageDefinition, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(org.zkoss.zk.ui.metainfo.PageDefinition, org.zkoss.zk.ui.Component, java.util.Map))
 to create them repeatedly.
 
 [org.zkoss.zk.ui.metainfo.PageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/PageDefinition.html) is a Java
@@ -174,10 +174,10 @@ ZUML document directly[^2].
     should be.
 3.  The variables, functions and classes defined in zscript will be
     stored in the interpreter of the current page
-    (<javadoc method="getInterpreter(java.lang.String)">org.zkoss.zk.ui.Page</javadoc>).
+    ([org.zkoss.zk.ui.Page#getInterpreter(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#getInterpreter(java.lang.String))).
     - If
-      <javadoc method="createComponents(java.lang.String, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
-      <javadoc method="createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)">org.zkoss.zk.ui.Executions</javadoc>
+      [org.zkoss.zk.ui.Execution#createComponents(java.lang.String, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, java.util.Map)),
+      [org.zkoss.zk.ui.Executions#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(org.zkoss.zk.ui.WebApp, java.lang.String, java.util.Map))
       or similar is used to create components not attached to any page,
       the variables, functions and classes defined in the ZUML document
       will be lost. Thus, it is *not* a good idea to use zscript in this
@@ -188,7 +188,7 @@ ZUML document directly[^2].
 > <references/>
 
 [^1]: It means
-    <javadoc method="getCurrent()">org.zkoss.zk.ui.Executions</javadoc>
+    [org.zkoss.zk.ui.Executions#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#getCurrent())
     returns null. For example, it happens when the application starts,
     or in a working thread.
 

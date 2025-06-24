@@ -6,7 +6,7 @@ same way.
 To enable any of them, you have to prepare a component representing the
 customized look, and then specify this component or its ID in the
 corresponding properties (such as
-<javadoc method="setTooltip(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc>)
+[org.zkoss.zul.impl.XulElement#setTooltip(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(java.lang.String)))
 in the target component. Then, when the user triggers it (such as moving
 the mouse over the target component), the component representing the
 customized look is shown.
@@ -20,9 +20,9 @@ can be any kind of component.
 
 | What          | Condition                                                                 | API                                                                                                                                                                                 |
 |---------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tooltips[^1]  | When the user moves the mouse point over the target component for a while | <javadoc method="setTooltip(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc> or <javadoc method="setTooltip(org.zkoss.zul.Popup)">org.zkoss.zul.impl.XulElement</javadoc> |
-| Context Menus | When the user clicks the *right* button on the target component           | <javadoc method="setContext(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc> or <javadoc method="setContext(org.zkoss.zul.Popup)">org.zkoss.zul.impl.XulElement</javadoc> |
-| Popups        | When the user clicks the *left* button on the target component            | <javadoc method="setPopup(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc> or <javadoc method="setPopup(org.zkoss.zul.Popup)">org.zkoss.zul.impl.XulElement</javadoc>     |
+| Tooltips[^1]  | When the user moves the mouse point over the target component for a while | [org.zkoss.zul.impl.XulElement#setTooltip(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setTooltip(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(org.zkoss.zul.Popup)) |
+| Context Menus | When the user clicks the *right* button on the target component           | [org.zkoss.zul.impl.XulElement#setContext(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setContext(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(org.zkoss.zul.Popup)) |
+| Popups        | When the user clicks the *left* button on the target component            | [org.zkoss.zul.impl.XulElement#setPopup(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setPopup(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(org.zkoss.zul.Popup))     |
 
 > ------------------------------------------------------------------------
 >
@@ -32,9 +32,9 @@ can be any kind of component.
 
 To provide a custom tooltip, you could specify the ID of the custom
 tooltip in the target component's `tooltip`
-(<javadoc method="setTooltip(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc>
+([org.zkoss.zul.impl.XulElement#setTooltip(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(java.lang.String))
 or
-<javadoc method="setTooltip(org.zkoss.zul.Popup)">org.zkoss.zul.impl.XulElement</javadoc>).
+[org.zkoss.zul.impl.XulElement#setTooltip(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(org.zkoss.zul.Popup))).
 For example,
 
 ```xml
@@ -268,5 +268,5 @@ For more information, please refer to [Safari Developer Library](http://develope
 
 [^1]: Notice that if you'd like to have different text for the tooltip
     (rather than a fully customized look), you shall use
-    <javadoc method="setTooltiptext(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+    [org.zkoss.zk.ui.HtmlBasedComponent#setTooltiptext(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setTooltiptext(java.lang.String))
     instead (which is easier to use).

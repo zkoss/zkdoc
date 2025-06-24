@@ -83,9 +83,9 @@ i.e. you have to set one of the following attributes:
 
 Specifies the minimum number of rows rendered on the client. It is only
 considered if Grid is using live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
 not using paging mold
-(<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
 
 ```xml
 <custom-attributes org.zkoss.zul.grid.initRodSize="30"/>
@@ -152,7 +152,7 @@ listitems; i.e. you have to set one of the following attributes:
 
 Specifies the number of items rendered when the Listbox first renders.
 It is used only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel)))
 and not paging (\<mold="paging"\>).
 
 ```xml

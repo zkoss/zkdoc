@@ -4,7 +4,7 @@ String[] split(String value, String regex);
 
   
 i.e.,
-<javadoc method="split(java.lang.String, java.lang.String)">org.zkoss.xel.fn.StringFns</javadoc>
+[org.zkoss.xel.fn.StringFns#split(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#split(java.lang.String, java.lang.String))
 
 Splits this string to match the given regular expression.
 

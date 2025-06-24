@@ -18,7 +18,7 @@ As shown above, we enclose them with and `]]>` to prevent ZK Loader from
 interpreting the HTML tags embedded in the html element. In other words,
 they are not the child component. Rather, they are stored in the
 `content` property (by use of
-<javadoc method="setContent(java.lang.String)">org.zkoss.zul.Html</javadoc>[^1].
+[org.zkoss.zul.Html#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html#setContent(java.lang.String))[^1].
 In other words, `<h4>...</p>` will become the content of the `html`
 element.
 

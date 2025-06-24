@@ -17,7 +17,7 @@ then the first value of `forEachStatus.index` will be `5`.
 
 To retrieve the information of the outer iterator if an iteration is
 nested, you could use
-<javadoc method="getPrevious()" type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>.
+[org.zkoss.zk.ui.util.ForEachStatus#getPrevious()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getPrevious()).
 
 ```xml
 <listbox forEach="${matrix}">
@@ -25,9 +25,9 @@ nested, you could use
 </listbox>
 ```
 
-<javadoc method="getEach()" type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>
+[org.zkoss.zk.ui.util.ForEachStatus#getEach()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getEach())
 has been and removed, please use
-<javadoc method="getCurrent()" type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>
+[org.zkoss.zk.ui.util.ForEachStatus#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getCurrent())
 instead. For example, replace `${forEachStatus.previous.each.label}`
 with `${forEachStatus.previous.current.label}`.
 

@@ -51,9 +51,9 @@ example, you could specify the following in `WEB-INF/zk.xml`:
   `java.util.TimeZone.getTimeZone()`
 
 Alternatively, if you prefer to specify it in Java, you can invoke
-<javadoc method="setProperty(java.lang.String, java.lang.String)">org.zkoss.lang.Library</javadoc>.
+[org.zkoss.lang.Library#setProperty(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html#setProperty(java.lang.String, java.lang.String)).
 Furthermore, to avoid typos, you could use
-<javadoc method="PREFERRED_TIME_ZONE">org.zkoss.web.Attributes</javadoc>
+[org.zkoss.web.Attributes#PREFERRED_TIME_ZONE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/Attributes.html#PREFERRED_TIME_ZONE)
 as follows.
 
 ```java

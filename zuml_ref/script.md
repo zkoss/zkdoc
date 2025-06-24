@@ -20,7 +20,7 @@ declarations.
 You can specify whatever attributes you like; it is up to the browser to
 interpret. ZK only evaluates the `if` and `unless` attributes, and
 encodes the URI of the `href` and `src` attribute (by use of
-<javadoc method="encodeURL(java.lang.String)">org.zkoss.zk.ui.Execution</javadoc>).
+[org.zkoss.zk.ui.Execution#encodeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#encodeURL(java.lang.String))).
 So you can specify an absolute or relative path. ZK generates all other
 attributes directly to the client.
 

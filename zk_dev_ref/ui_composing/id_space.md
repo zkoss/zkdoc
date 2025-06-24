@@ -89,11 +89,11 @@ C and D are fellows of the same ID space.
 ## getFellow and getSpaceOwner
 
 The owner of an ID space could be retrieved by
-<javadoc method="getSpaceOwner()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#getSpaceOwner()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getSpaceOwner())
 and any components in an ID space could be retrieved by
-<javadoc method="getFellow(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>,
+[org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)),
 if it is assigned with an ID
-(<javadoc method="setId(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>).
+([org.zkoss.zk.ui.Component#setId(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setId(java.lang.String))).
 
 Notice that the `getFellow` method can be invoked against any components
 in the same ID space, not just the space owner. Similarly, the
@@ -150,9 +150,9 @@ filesystem's path.
 
 ## Selector
 
-<javadoc method="query(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#query(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#query(java.lang.String))
 and
-<javadoc method="queryAll(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#queryAll(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#queryAll(java.lang.String))
 are the methods to look for a component by use of CSS selectors. For
 example,
 
@@ -162,10 +162,10 @@ comp.query("window #ok"); //look for a window and then look for a component with
 comp.queryAll("window button"); //look for a window and then look for all buttons in the window
 ```
 
-<javadoc method="query(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#query(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#query(java.lang.String))
 returns the first matched component, or null if not found. On the other
 hand,
-<javadoc method="queryAll(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#queryAll(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#queryAll(java.lang.String))
 returns a list of all matched components.
 
 ## Path

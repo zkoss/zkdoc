@@ -11,11 +11,11 @@ known as *system-level composers*.
 Each time a ZK page, including ZK pages and richlets, is created, ZK
 will instantiate one instance for each registered system-level composer
 and then invoke
-<javadoc method="doAfterCompose(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.util.Composer</javadoc>
+[org.zkoss.zk.ui.util.Composer#doAfterCompose(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(org.zkoss.zk.ui.Component))
 with each root component. The system-level composer is usually used to
 post-process ZK pages, such as adding a trademark. If you want to
 process only certain pages, you can check the request path by calling
-<javadoc method="getRequestPath()" type="interface">org.zkoss.zk.ui.Desktop</javadoc>
+[org.zkoss.zk.ui.Desktop#getRequestPath()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#getRequestPath())
 (the desktop instance can be found in the given component).
 
 If the system-level composer also implements

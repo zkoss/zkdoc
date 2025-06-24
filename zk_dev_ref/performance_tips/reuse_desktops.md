@@ -6,7 +6,7 @@ information. However, if a page takes too long to generate, you can
 provide a plugin so-called *desktop recycle*.
 
 First, you implement the
-<javadoc type="interface" /javadoc>org.zkoss.zk.ui.util.DesktopRecycle</javadoc>
+[org.zkoss.zk.ui.util.DesktopRecycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopRecycle.html)
 interface to cache and reuse the desktops which are supposedly being
 removed. Second, specify the class in `WEB-INF/zk.xml`. For example, let
 us assume the class you implement is called `foo.MyRecycle`, then add
@@ -45,7 +45,7 @@ public class MyRecycle extends org.zkoss.zkmax.ui.util.DesktopRecycle {
 ### Implement Your Own Desktop Recycle
 
 It is straightforward to implement the
-<javadoc type="interface" >org.zkoss.zk.ui.util.DesktopRecycle</javadoc>
+[org.zkoss.zk.ui.util.DesktopRecycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopRecycle.html)
 interface from scratch, if you prefer. The basic idea is to cache the
 desktop when the `beforeRemove` method is invoked, and to reuse the
 cached desktop when the `beforeService` method is called.

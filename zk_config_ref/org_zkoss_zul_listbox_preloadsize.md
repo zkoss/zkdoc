@@ -10,9 +10,9 @@
 
 Specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel)))
 and not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Listbox</javadoc>).
+([org.zkoss.zul.Listbox#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#getPagingChild())).
 
 If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor

@@ -6,7 +6,7 @@ server. ZK Update Engine will unmarshal it back to a map. If an entry of
 the data is an array, it will be converted to a list[^1].
 
 The map of data can be retrieve by the use of
-<javadoc method="getData()">org.zkoss.zk.au.AuRequest</javadoc>.
+[org.zkoss.zk.au.AuRequest#getData()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html#getData()).
 
 For example, assume we fire an event at the client as follows.
 
@@ -71,7 +71,7 @@ MyClass.prototype.toJSON = function (key) { //key usually meaningless
 
 In addition to the default handling, You can add a custom AU request
 service to a component by calling
-<javadoc method="setAuService(org.zkoss.zk.au.AuService)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#setAuService(org.zkoss.zk.au.AuService)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAuService(org.zkoss.zk.au.AuService)).
 
 > ------------------------------------------------------------------------
 >

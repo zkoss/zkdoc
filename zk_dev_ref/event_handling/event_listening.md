@@ -16,7 +16,7 @@ public class MyListener implements EventListener {
 
 Then, you can register an event listener to the component that might
 receive the event by the use of
-<javadoc method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)).
 For example,
 
 ```java
@@ -139,7 +139,7 @@ preserved.
 Developers could add event listeners to a page
 ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) dynamically
 by
-<javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Page</javadoc>.
+[org.zkoss.zk.ui.Page#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)).
 Once added, all events of the specified name sent to any components of
 the specified page will be sent to the listener.
 
@@ -253,10 +253,10 @@ as follows.
 1.  Event listeners implemented with
     [org.zkoss.zk.ui.event.Express](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Express.html),
     and registered by
-    <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener))
 2.  Event handlers defined in a ZUML document
 3.  Event listeners registered by
-    <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener))
     (and without
     [org.zkoss.zk.ui.event.Express](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Express.html))
     - It includes the method of a composer wired by
@@ -264,12 +264,12 @@ as follows.
       because the event listener is used.
 4.  Event handlers defined as a class's method
 5.  Event listeners registered to a page by
-    <javadoc type="interface" method="addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)">org.zkoss.zk.ui.Page</javadoc>
+    [org.zkoss.zk.ui.Page#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#addEventListener(java.lang.String, org.zkoss.zk.ui.event.EventListener))
 
 ## Abort the Invocation Sequence
 
 You could abort the calling sequence by calling
-<javadoc method="stopPropagation()">org.zkoss.zk.ui.event.Event</javadoc>.
+[org.zkoss.zk.ui.event.Event#stopPropagation()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#stopPropagation()).
 Once one of the event listeners invokes this method, all the following
 event handlers and listeners are ignored.
 

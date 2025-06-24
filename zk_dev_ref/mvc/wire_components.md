@@ -312,7 +312,7 @@ and methods with the proper annotations will be wired automatically.
 Here is the sequence of wiring:
 
 - In
-  <javadoc method="doAfterCompose(T)">org.zkoss.zk.ui.util.Composer</javadoc>,
+  [org.zkoss.zk.ui.util.Composer#doAfterCompose(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html#doAfterCompose(T)),
   it wires components to the fields and methods with the
   [org.zkoss.zk.ui.select.annotation.Wire](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/Wire.html)
   annotation.
@@ -330,7 +330,7 @@ Here is the sequence of wiring:
 
 The selector utility is implemented by a mixed strategy. In a selector
 sequence, the first few levels with ids specified are handled by
-<javadoc method="getFellow(Component)">org.zkoss.zk.ui.Component</javadoc>,
+[org.zkoss.zk.ui.Component#getFellow(Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(Component)),
 and the rest are covered by depth first search (DFS). In brief, the more
 ids you specify in the **first few levels** of a selector string, the
 more boost you can obtain in component finding. For example,

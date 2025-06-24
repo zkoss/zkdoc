@@ -127,7 +127,7 @@ can use either <i><b>MatrixRenderer</b></i> interface or
 
 It specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data
-(<javadoc method="setModel(org.zkoss.zkmax.zul.MatrixModel)">org.zkoss.zkmax.zul.Biglistbox</javadoc>).
+([org.zkoss.zkmax.zul.Biglistbox#setModel(org.zkoss.zkmax.zul.MatrixModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Biglistbox.html#setModel(org.zkoss.zkmax.zul.MatrixModel))).
 
 > ------------------------------------------------------------------------
 >

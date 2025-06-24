@@ -25,7 +25,7 @@ happening at the client.
 A component and a widget work hand-in-hand to deliver UI to an user and
 to notify the application about a user's activity, such as clicking and
 dragging. For example, when an application invokes
-<javadoc method="setLabel(java.lang.String)">org.zkoss.zul.Button</javadoc>
+[org.zkoss.zul.Button#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setLabel(java.lang.String))
 to change the label of a button component, the
 <javadoc directory="jsdoc" method="setLabel(_global_.String)">zul.wgt.Button</javadoc>
 of corresponding button widget (aka., peer widget) will be invoked at

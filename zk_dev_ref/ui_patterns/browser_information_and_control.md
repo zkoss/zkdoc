@@ -55,7 +55,7 @@ received.
 
 If it is, though rarely, too late (i.e., it has to be done at the
 beginning), you could ask the client to re-send the request again with
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 For example,
 
 ```java
@@ -86,7 +86,7 @@ complete functionality, please refer to
 
 If you want to confirm a user when they try to reload, close, or leave
 the current page to another URL, you can call
-<javadoc method="confirmClose(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>.
+[org.zkoss.zk.ui.util.Clients#confirmClose(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#confirmClose(java.lang.String)).
 
 For example, when a user is composing a mail that is not sent or saved
 yet.
@@ -110,7 +110,7 @@ a default message):
 ![]({{site.baseurl}}/zk_dev_ref/images/confirmclose.png)
 
 To disable the confirmation dialog, just invoke
-<javadoc method="confirmClose(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+[org.zkoss.zk.ui.util.Clients#confirmClose(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#confirmClose(java.lang.String))
 with null.
 
 ZK cannot determine what's unsaved or dirty, you have to implement it by
@@ -121,9 +121,9 @@ yourselves. Then call this API in a proper timing.
 Sometimes a request may take a long time to process, and it is better to
 notify the user that it is under processing. It can be done by the use
 of
-<javadoc method="showBusy(org.zkoss.zk.ui.Component, java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+[org.zkoss.zk.ui.util.Clients#showBusy(org.zkoss.zk.ui.Component, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showBusy(org.zkoss.zk.ui.Component, java.lang.String))
 if only a component is not accessible, or
-<javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+[org.zkoss.zk.ui.util.Clients#showBusy(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showBusy(java.lang.String))
 if the whole browser is not accessible. For example,
 
 ```java
@@ -131,9 +131,9 @@ showBusy(grid, "Loading data...");
 ```
 
 After the loading is completed, you could invoke
-<javadoc method="clearBusy(org.zkoss.zk.ui.Component)">org.zkoss.zk.ui.util.Clients</javadoc>
+[org.zkoss.zk.ui.util.Clients#clearBusy(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#clearBusy(org.zkoss.zk.ui.Component))
 (or
-<javadoc method="clearBusy()">org.zkoss.zk.ui.util.Clients</javadoc>)to
+[org.zkoss.zk.ui.util.Clients#clearBusy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#clearBusy()))to
 clean it up. For more information, please refer to the [Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
 section.
 
@@ -141,7 +141,7 @@ section.
 
 In addition to logging messages to the console, you could log the
 messages to the browser for debugging by the use of
-<javadoc method="log(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>.
+[org.zkoss.zk.ui.util.Clients#log(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#log(java.lang.String)).
 For example,
 
 ```java
@@ -159,7 +159,7 @@ by preparing the JavaScript code in
 [org.zkoss.zk.au.out.AuInvoke](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuInvoke.html) or
 [org.zkoss.zk.au.out.AuScript](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuScript.html), and then send back to
 the client by calling
-<javadoc method="response(org.zkoss.zk.au.AuResponse)">org.zkoss.zk.ui.util.Clients</javadoc>.
+[org.zkoss.zk.ui.util.Clients#response(org.zkoss.zk.au.AuResponse)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#response(org.zkoss.zk.au.AuResponse)).
 
 For example, we could use
 [org.zkoss.zk.au.out.AuScript](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/out/AuScript.html) to inject any code,
@@ -217,5 +217,5 @@ that support this HTML 5 API.
 
 | Version | Date           | Content                                                                                        |
 |---------|----------------|------------------------------------------------------------------------------------------------|
-| 5.0.8   | June, 2010     | <javadoc method="log(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc> was introduced. |
+| 5.0.8   | June, 2010     | [org.zkoss.zk.ui.util.Clients#log(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#log(java.lang.String)) was introduced. |
 | 6.5.1   | November, 2012 | [org.zkoss.zk.ui.util.VisibilityChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/VisibilityChangeEvent.html) was introduced.                  |

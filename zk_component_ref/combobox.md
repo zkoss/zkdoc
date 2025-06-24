@@ -169,7 +169,7 @@ Unlike [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org
 default. You can use [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
 directly but it handles only an array of data.
 
-#### Convert [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) with <javadoc method="toListSubModel(org.zkoss.zul.ListModel)">org.zkoss.zul.ListModels</javadoc>
+#### Convert [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) with [org.zkoss.zul.ListModels#toListSubModel(org.zkoss.zul.ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModels.html#toListSubModel(org.zkoss.zul.ListModel))
 
 The methods convert ListModel to ListSubModel which proxies the original
 ListModel.
@@ -203,7 +203,7 @@ public class MyAutoCompleteComposer extends SelectorComposer<Component> {
 By default, it shows the first 15 items whose prefix starts with the
 user input. If you want to have a different value or a different
 comparator to find out matched items, you can invoke
-<javadoc method="toListSubModel(org.zkoss.zul.ListModel, java.util.Comparator, int)">org.zkoss.zul.ListModels</javadoc>
+[org.zkoss.zul.ListModels#toListSubModel(org.zkoss.zul.ListModel, java.util.Comparator, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModels.html#toListSubModel(org.zkoss.zul.ListModel, java.util.Comparator, int))
 instead.
 
 > ------------------------------------------------------------------------

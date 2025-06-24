@@ -69,7 +69,7 @@ The URL specified in the `url-pattern` element must start with `/`. If
 the URI ends with `/*`, then it is matched to all request with the same
 prefix. To retrieve the real request, you can check the value returned
 by
-<javadoc type="interface" method="getRequestPath()">org.zkoss.zk.ui.Page</javadoc>
+[org.zkoss.zk.ui.Page#getRequestPath()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#getRequestPath())
 of the current page.
 
 ```java

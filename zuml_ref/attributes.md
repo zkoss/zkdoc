@@ -8,9 +8,9 @@ of the argument's class).
 
 For example, suppose `${foo}` is evaluated to an integer in the
 following example, ZK Loader will invoke
-<javadoc method="setMode(int)">org.zkoss.zul.Window</javadoc>, rather
+[org.zkoss.zul.Window#setMode(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setMode(int)), rather
 than
-<javadoc method="setMode(java.lang.String)">org.zkoss.zul.Window</javadoc>.
+[org.zkoss.zul.Window#setMode(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setMode(java.lang.String)).
 
 ```xml
 <window mode="${foo}">

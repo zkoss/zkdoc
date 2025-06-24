@@ -9,7 +9,7 @@ to intercept when an event is sent, posted and processed.
 Once registered, an instance is created and shared within the whole
 application. If you want to intercept events only for a particular
 desktop, use
-<javadoc method="addListener(java.lang.Object)">org.zkoss.zk.ui.Desktop</javadoc>.
+[org.zkoss.zk.ui.Desktop#addListener(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#addListener(java.lang.Object)).
 
 **Instantiation:** For better performance, a single instance of the
 given class is instantiated when registered. It is then shared in the

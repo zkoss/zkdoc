@@ -70,10 +70,10 @@ If your groups model allows the end user to sort and/or to re-group
 (i.e., grouping data based on different criteria), you have to implement
 [org.zkoss.zul.ext.GroupsSortableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupsSortableModel.html)
 too. Then,
-<javadoc method="group(java.util.Comparator,boolean,int)" type="interface">org.zkoss.zul.ext.GroupsSortableModel</javadoc>
+[org.zkoss.zul.ext.GroupsSortableModel#group(java.util.Comparator,boolean,int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupsSortableModel.html#group(java.util.Comparator,boolean,int))
 will be called if the user requests to re-group the data based on a
 particular column. And,
-<javadoc method="sort(java.util.Comparator,boolean,int)" type="interface">org.zkoss.zul.ext.GroupsSortableModel</javadoc>
+[org.zkoss.zul.ext.GroupsSortableModel#sort(java.util.Comparator,boolean,int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/GroupsSortableModel.html#sort(java.util.Comparator,boolean,int))
 will be called if the user requests to sort the data based on a
 particular column.
 
@@ -90,9 +90,9 @@ and re-grouping as described below:
   - For better control, you could implement
     [org.zkoss.zul.GroupComparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupComparator.html),
     and pass an instance to, say,
-    <javadoc method="setSortAscending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>
+    [org.zkoss.zul.Column#setSortAscending(java.util.Comparator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortAscending(java.util.Comparator))
     and
-    <javadoc method="setSortDescending(java.util.Comparator)">org.zkoss.zul.Column</javadoc>.
+    [org.zkoss.zul.Column#setSortDescending(java.util.Comparator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDescending(java.util.Comparator)).
 
 ![](/zk_dev_ref/images/Grouping_model_explain.png)
 
@@ -230,7 +230,7 @@ Finally we could group them together in a ZUML document as follows.
 ```
 
 If it is not the behavior you want, you could override
-<javadoc method="sortGroupData(java.lang.Object, java.lang.Object[], java.util.Comparator, boolean, int)">org.zkoss.zul.GroupsModelArray</javadoc>.
+[org.zkoss.zul.GroupsModelArray#sortGroupData(java.lang.Object, java.lang.Object[], java.util.Comparator, boolean, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html#sortGroupData(java.lang.Object, java.lang.Object[], java.util.Comparator, boolean, int)).
 Of course, you could extend from
 [org.zkoss.zul.AbstractGroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractGroupsModel.html) to have total
 control.
@@ -240,7 +240,7 @@ control.
 Since 5.0.6, it is much easier to handle tabular data:
 
 First,
-<javadoc method="createGroupHead(java.lang.Object[], int, int)">org.zkoss.zul.GroupsModelArray</javadoc>
+[org.zkoss.zul.GroupsModelArray#createGroupHead(java.lang.Object[], int, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html#createGroupHead(java.lang.Object[], int, int))
 will return the correct element, so you don't have to override it as
 shown above.
 
@@ -248,7 +248,7 @@ Second, [org.zkoss.zul.ArrayComparator](https://www.zkoss.org/javadoc/latest/zk/
 so `foo.FoodComparator` is not required in the above example.
 
 Third,
-<javadoc method="setSort(java.lang.String)">org.zkoss.zul.Column</javadoc>
+[org.zkoss.zul.Column#setSort(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSort(java.lang.String))
 supports `auto(0)`, `auto(1)`, etc.
 
 Thus, we can simplify the above example as follows.
@@ -380,19 +380,19 @@ public class FoodGroupRenderer implements RowRenderer {
 The retrieval of the field's value is a bit tricky: since we will use
 `auto(fieldName)` to group and sort data for a given column (see the
 ZUML content listed below), we could retrieve the field's name by use of
-<javadoc method="getOrderBy()">org.zkoss.zul.FieldComparator</javadoc>,
+[org.zkoss.zul.FieldComparator#getOrderBy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html#getOrderBy()),
 which returns something like "name=category ASC". Then, use
-<javadoc method="get(java.lang.Object, java.lang.String)">org.zkoss.lang.reflect.Fields</javadoc>
+[org.zkoss.lang.reflect.Fields#get(java.lang.Object, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/reflect/Fields.html#get(java.lang.Object, java.lang.String))
 to retrieve it. If the field name is in a compound format, such as
 `something.yet.another`, you could use
-<javadoc method="getByCompound(java.lang.Object, java.lang.String)">org.zkoss.lang.reflect.Fields</javadoc>
+[org.zkoss.lang.reflect.Fields#getByCompound(java.lang.Object, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/reflect/Fields.html#getByCompound(java.lang.Object, java.lang.String))
 
 > ------------------------------------------------------------------------
 >
 > For 5.0.6 or later, you could use
-> <javadoc method="getRawOrderBy()">org.zkoss.zul.FieldComparator</javadoc>
+> [org.zkoss.zul.FieldComparator#getRawOrderBy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/FieldComparator.html#getRawOrderBy())
 > instead, which returns the field name you passed to
-> <javadoc method="setSort(java.lang.String)">org.zkoss.zul.Column</javadoc>,
+> [org.zkoss.zul.Column#setSort(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSort(java.lang.String)),
 > i.e., "category".
 >
 > ```java
@@ -442,14 +442,14 @@ public class FoodComposer implements Composer {
 
 If the groups model supports a foot (such as a summary of all data in
 the same group), you could return an object to represent the footer when
-<javadoc method="getGroupfoot(int)" type="interface">org.zkoss.zul.GroupsModel</javadoc>
+[org.zkoss.zul.GroupsModel#getGroupfoot(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html#getGroupfoot(int))
 is called (similar to
-<javadoc method="getGroup(int)" type="interface">org.zkoss.zul.GroupsModel</javadoc>
+[org.zkoss.zul.GroupsModel#getGroup(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html#getGroup(int))
 shall return an object representing the group).
 
 If you use [org.zkoss.zul.GroupsModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html), you could
 override
-<javadoc method="createGroupFoot(java.lang.Object[], int, int)">org.zkoss.zul.GroupsModelArray</javadoc>.
+[org.zkoss.zul.GroupsModelArray#createGroupFoot(java.lang.Object[], int, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModelArray.html#createGroupFoot(java.lang.Object[], int, int)).
 For example,
 
 ```java

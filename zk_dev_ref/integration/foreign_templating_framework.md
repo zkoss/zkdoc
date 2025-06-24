@@ -108,7 +108,7 @@ HTML, HEAD and BODY tags are disabled.
 If a ZUL page is always loaded as a fragment by the client, you could
 specify the request-scoped attribute called
 `org.zkoss.zk.ui.page.redrawCtrl`
-(<javadoc method="PAGE_REDRAW_CONTROL">org.zkoss.zk.ui.sys.Attributes</javadoc>)
+([org.zkoss.zk.ui.sys.Attributes#PAGE_REDRAW_CONTROL](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/Attributes.html#PAGE_REDRAW_CONTROL))
 with `page`, such that the generation of HTML, HEAD and BODY tags are
 always disabled no matter if the `zk.redrawCtrl` parameter is specified
 or not.
@@ -183,7 +183,7 @@ ID generator can handle it well.
 However, if you use a customized
 [org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html), you
 have to generate component's UUID
-(<javadoc method="nextComponentUuid(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.sys.IdGenerator</javadoc>)
+([org.zkoss.zk.ui.sys.IdGenerator#nextComponentUuid(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html#nextComponentUuid(org.zkoss.zk.ui.Desktop, org.zkoss.zk.ui.Component)))
 correctly. A typical trick is to encode desktop's ID as part of
 component's UUID.
 

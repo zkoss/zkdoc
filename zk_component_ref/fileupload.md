@@ -10,7 +10,7 @@
 
 There are two ways to use [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html) as
 a component to upload files, or invoke
-<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> to open a
+[org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) to open a
 dialog to upload files.
 
 # Use as a Component
@@ -41,8 +41,8 @@ for details.
 # Invoke the Static Method: get
 
 Fileupload provides a set of static methods to simplify file uploading,
-such as <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>,
-<javadoc method="get(java.lang.String, java.lang.String)">org.zkoss.zul.Fileupload</javadoc>,
+such as [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()),
+[org.zkoss.zul.Fileupload#get(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get(java.lang.String, java.lang.String)),
 and so on.
 
 The behavior is a little bit different depending on if the event thread
@@ -58,11 +58,11 @@ When using the static method Fileupload.get(...) to display a generic
 upload popup, the popup content is defined by a ZUL file, so you could
 customize it by replacing it with your own implementation. It can be
 done easily by invoking
-<javadoc method="setTemplate(java.lang.String)">org.zkoss.zul.Fileupload</javadoc>.
+[org.zkoss.zul.Fileupload#setTemplate(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#setTemplate(java.lang.String)).
 Notice that it affects all Fileupload popups subsequently created in an
 application. It is typically called when the application starts (i.e.,
 in
-<javadoc method="init(org.zkoss.zk.ui.WebApp)" type="interface">org.zkoss.zk.ui.util.WebAppInit</javadoc>
+[org.zkoss.zk.ui.util.WebAppInit#init(org.zkoss.zk.ui.WebApp)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html#init(org.zkoss.zk.ui.WebApp))
 -- for more information, please refer to [ZK Developer's Reference: Life Cycle Listener]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)).
 
 To implement a custom template, please take a look at [the default template for ZK 9](https://github.com/zkoss/zk/blob/v9.6.5/zul/src/archive/web/zul/html/fileuploaddlg.zul)
@@ -72,7 +72,7 @@ or [the default template for ZK 10](https://github.com/zkoss/zk/blob/master/zul/
 
 When the event thread is disabled (default), the execution won't be
 suspended when
-<javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> is called. In
+[org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) is called. In
 other words, the returned value is always null. To retrieve the uploaded
 files, the developer has to listen the `onUpload` event, which is sent
 when the uploading is completed.
@@ -198,7 +198,7 @@ follows:
 ## Event Thread Enabled (deprecated)
 
 If the event thread is enable, the uploaded file will be returned
-directly by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>
+directly by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get())
 and other static methods, such as:
 
 ```xml
@@ -224,7 +224,7 @@ and other static methods, such as:
 </zk>
 ```
 
-As shown, <javadoc method="get(int)">org.zkoss.zul.Fileupload</javadoc>
+As shown, [org.zkoss.zul.Fileupload#get(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get(int))
 won't return until the end user uploads the files (and/or closes the
 dialog).
 
@@ -286,6 +286,6 @@ Upload your hot shot:
 
 | Version | Date     | Content                                                                                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc>. Used if the event thread is disabled. |
+| 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()). Used if the event thread is disabled. |
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).

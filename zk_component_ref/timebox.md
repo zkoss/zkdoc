@@ -83,7 +83,7 @@ depending the configuration. For more information, please refer to [ZK Developer
 ## Locale
 
 By default, the real format depends on the current locale (i.e.,
-<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>.
+[org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent()).
 However, you could specify the locale for an individual instance such
 as:
 
@@ -183,7 +183,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 | Version | Date        | Content                                                                                                                                         |
 |---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.7   | April, 2011 | <javadoc method="setFormat(java.lang.String)">org.zkoss.zul.Timebox</javadoc> supported the styling.                                            |
-| 5.0.7   | April, 2011 | <javadoc method="setLocale(java.util.Locale)">org.zkoss.zul.Timebox</javadoc> was introduced to specify a locale other than the current locale. |
+| 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setFormat(java.lang.String)) supported the styling.                                            |
+| 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setLocale(java.util.Locale)) was introduced to specify a locale other than the current locale. |
 
 

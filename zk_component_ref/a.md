@@ -14,7 +14,7 @@ The same as HTML A tag.
 
 ## Autodisable
 
-<javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.A</javadoc>
+[org.zkoss.zul.A#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html#setAutodisable(java.lang.String))
 is used to disable an anchor automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant
 requests), which is common if the request takes long to serve.
@@ -38,7 +38,7 @@ disables both anchors, when one of them is clicked.
 The anchor will be enabled automatically, after the request has been
 served (i.e., the response has been sent back to the client). If you
 prefer to enable them manually (i.e., by calling
-<javadoc method="setDisabled(boolean)">org.zkoss.zul.A</javadoc>
+[org.zkoss.zul.A#setDisabled(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html#setDisabled(boolean))
 explicitly), you could prefix the ID with a plus (`+`). For example,
 
 ```xml

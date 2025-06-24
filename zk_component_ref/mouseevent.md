@@ -52,6 +52,6 @@ N/A
 
 | Version | Date        | Content                                                                                                                                                                                              |
 |---------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.4   | August 2010 | <javadoc method="getAreaComponent()">org.zkoss.zk.ui.event.MouseEvent</javadoc> is introduced to simplify the retrieval of the associated component (usually [org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html)). |
+| 5.0.4   | August 2010 | [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()) is introduced to simplify the retrieval of the associated component (usually [org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html)). |
 
 

@@ -4,7 +4,7 @@ BigDecimal decimal(Object value);
 
   
 i.e.,
-<javadoc method="toDecimal(java.lang.Object)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#toDecimal(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#toDecimal(java.lang.Object))
 
 Converts the specified object to a big decimal.
 

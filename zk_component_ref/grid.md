@@ -308,7 +308,7 @@ grid.addEventListener(org.zkoss.zul.event.ZulEvents.ON_PAGING, new MyListener())
 {% include version-badge.html version=5.0.2 %}
 
 When using the paging mold and vflex, you could also turn on autopaging
-(<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Grid</javadoc>)
+([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean)))
 such that the page size will be adjusted automatically based on the
 available space.
 
@@ -1158,14 +1158,14 @@ information, please refer to [ZK Developer's Reference: Performance Tips]({{site
 {% include version-badge.html version=5.0.7 %} Specifies whether to sort the model
 when the following cases:
 
-- <javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>is
+- [org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))is
   called and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Column</javadoc>
+  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
   is set.
-- <javadoc method="setSortDirection(String)">org.zkoss.zul.Column</javadoc>
+- [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
   is called.
 - Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Column</javadoc>
+  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
   is set.
 
 If you want to ignore sort when receiving
@@ -1180,9 +1180,9 @@ the value as **ignore.change**.
 {% include version-badge.html version=6.0.1 %} Specifies the number of rows to
 preload when receiving the rendering request from the client. It is used
 only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
 not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
 
 ## org.zkoss.zul.grid.initRodSize
 
@@ -1191,9 +1191,9 @@ not paging
 
 {% include version-badge.html version=6.0.1 %} Specifies the number of rows rendered
 when the Grid first render. It is used only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) and
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
 not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
 
 ## org.zkoss.zul.grid.autohidePaging
 
@@ -1237,7 +1237,7 @@ components.
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
-(<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Grid</javadoc>)
+([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean)))
 is enabled and user changed the size of the content.</p></td>
 </tr>
 </tbody>

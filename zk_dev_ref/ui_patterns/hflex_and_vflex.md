@@ -1,9 +1,9 @@
 
 
 Hflex
-(<javadoc method="setHflex(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
+([org.zkoss.zk.ui.HtmlBasedComponent#setHflex(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setHflex(java.lang.String)))
 and vflex
-(<javadoc method="setVflex(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>)
+([org.zkoss.zk.ui.HtmlBasedComponent#setVflex(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setVflex(java.lang.String)))
 indicate the flexibility of the component, which indicates how a
 component's parent distributes the remaining empty space among its
 children. Hflex controls the flexibility in the horizontal direction,
@@ -164,7 +164,7 @@ borderlayout, in this example, is determined by the height of its west
 child region.
 
 Also notice that the flex property
-(<javadoc method="setFlex(boolean)">org.zkoss.zul.LayoutRegion</javadoc>)
+([org.zkoss.zul.LayoutRegion#setFlex(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html#setFlex(boolean)))
 is unique to borderlayout
 ([north]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north)
 and others). Don't confuse it with hflex or vflex.
@@ -564,12 +564,12 @@ size once at the page creation. The component doesn't change its size
 accordingly even if you add or remove its child components (change its
 content size). Therefore, if you want to resize the component upon its
 content again, please call
-<javadoc method="resize(org.zkoss.zk.ui.Component)">org.zkoss.zk.ui.util.Clients</javadoc>.
+[org.zkoss.zk.ui.util.Clients#resize(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#resize(org.zkoss.zk.ui.Component)).
 
 The same rule applies when you change the content of a parent component
 to minimum hflex/vflex, the parent component doesn't resize itself upon
 its content. You can need to call
-<javadoc method="resize(org.zkoss.zk.ui.Component)">org.zkoss.zk.ui.util.Clients</javadoc>.
+[org.zkoss.zk.ui.util.Clients#resize(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#resize(org.zkoss.zk.ui.Component)).
 
 For example,
 

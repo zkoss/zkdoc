@@ -15,7 +15,7 @@ The implementation is straightforward. First, the custom Java class for
 macro components must extend from
 [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html). Second, though
 optional, it is suggested to invoke
-<javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+[org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
 in the constructor[^1][^2], such that the template and the wiring of the
 data members will be applied in the constructor.
 
@@ -58,7 +58,7 @@ public class Username extends HtmlMacroComponent {
 ```
 
 As shown,
-<javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+[org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
 will wire variables, components and event listeners automatically, so we
 could access them directly (such as the `mc_who` member). For more
 information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components),
@@ -68,7 +68,7 @@ sections.
 
 Also notice that the `arg` variable is still available to the template
 so as to represent properties set by
-<javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.ext.DynamicPropertied</javadoc>,
+[org.zkoss.zk.ui.ext.DynamicPropertied#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html#setDynamicProperty(java.lang.String, java.lang.Object)),
 though it is more useful if a custom implementation is provided.
 
 > ------------------------------------------------------------------------
@@ -98,7 +98,7 @@ is the same as other macro components.
 The main purpose of introducing a custom Java class is to simplify the
 use of a macro component in Java. For example, you could invoke a more
 meaningful setter, say, setWho, directly rather than
-<javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.ext.DynamicPropertied</javadoc>.
+[org.zkoss.zk.ui.ext.DynamicPropertied#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html#setDynamicProperty(java.lang.String, java.lang.Object)).
 In addition, the instantiation could be as simple as follows:
 
 ```java
@@ -237,16 +237,16 @@ Then use the forward event to communicate with other components.
 
 | Version | Date          | Content                                                                                  |
 |---------|---------------|------------------------------------------------------------------------------------------|
-| 5.0.5   | October, 2010 | <javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc> was introduced. |
+| 5.0.5   | October, 2010 | [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose()) was introduced. |
 
 [^1]: By default,
-    <javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+    [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
     is invoked when
-    <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+    [org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
     is called. In many cases, it is generally too late, so we suggest to
     invoke it in the constructor.
 
-[^2]: <javadoc method="compose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+[^2]: [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
     is introduced in 5.0.5. For 5.0.4 or earlier, please invoke
-    <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+    [org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
     instead.

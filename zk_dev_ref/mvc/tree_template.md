@@ -25,7 +25,7 @@ assume `files` is an instance of
 references an instance of
 [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html). Thus, to retrieve the
 real data, use
-<javadoc method="getData()">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#getData()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#getData())
 
 # Version History
 

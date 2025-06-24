@@ -4,7 +4,7 @@ boolean browser(String type);
 
   
 i.e.,
-<javadoc method="isBrowser(java.lang.String)">org.zkoss.web.fn.ServletFns</javadoc>
+[org.zkoss.web.fn.ServletFns#isBrowser(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ServletFns.html#isBrowser(java.lang.String))
 
 Returns if the current request comes from the browser of the specified
 type.

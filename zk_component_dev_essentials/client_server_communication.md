@@ -56,7 +56,7 @@ ClearEvent(String name, Component target, boolean cleared)**. The only
 custom information is the Boolean cleared which is the state we sent
 back when the event was fired. As demonstrated in the above code this is
 easily acquired using the
-<javadoc method="getBoolean(java.util.Map, java.lang.String)">org.zkoss.zk.au.AuRequests</javadoc>.
+[org.zkoss.zk.au.AuRequests#getBoolean(java.util.Map, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequests.html#getBoolean(java.util.Map, java.lang.String)).
 
 We have now followed the process of how data is transferred between the
 client and the server. Of course when building component we also need to

@@ -4,7 +4,7 @@ boolean startsWith(String value, String prefix);
 
   
 i.e.,
-<javadoc method="startsWith(java.lang.String, java.lang.String)">org.zkoss.xel.fn.StringFns</javadoc>
+[org.zkoss.xel.fn.StringFns#startsWith(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#startsWith(java.lang.String, java.lang.String))
 
 Tests if this string starts with the specified prefix.
 

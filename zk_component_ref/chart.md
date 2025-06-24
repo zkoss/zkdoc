@@ -1005,12 +1005,12 @@ The 3D chart is not supported on all chart types.
 # Clicked Area: Series, Legend
 
 In an onClick listener, you can call
-<javadoc method="getX()">org.zkoss.zk.ui.event.MouseEvent</javadoc> and
-<javadoc method="getY()">org.zkoss.zk.ui.event.MouseEvent</javadoc> to
+[org.zkoss.zk.ui.event.MouseEvent#getX()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getX()) and
+[org.zkoss.zk.ui.event.MouseEvent#getY()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getY()) to
 get coordinates.
 
 Call
-<javadoc method="getAreaComponent()">org.zkoss.zk.ui.event.MouseEvent</javadoc>
+[org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent())
 to retrieve the area component ([org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html))
 which users click on.
 
@@ -1118,7 +1118,7 @@ JVM. For the information to make it work under Linux, please refer to
 <td><p>5.0.4</p></td>
 <td><p>August 2010</p></td>
 <td><p>MouseEvent introduced a new method,
-<javadoc method="getAreaComponent()">org.zkoss.zk.ui.event.MouseEvent</javadoc>,
+[org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()),
 which simplifies the retrieval of the area component.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">Area</span> area <span class="op">=</span> <span class="op">(</span><span class="bu">Area</span><span class="op">)</span>event<span class="op">.</span><span class="fu">getAreaComponent</span><span class="op">();</span> <span class="co">//must be Area or null when used with chart</span></span>

@@ -72,6 +72,6 @@ And then, configure the custom ThemeRegistry in **WEB-INF/zk.xml**.
 ```
 
 To access the current theme registry, please refer to
-<javadoc class="true" method="getThemeRegistry()">org.zkoss.web.fn.ThemeFns</javadoc>
+[org.zkoss.web.fn.ThemeFns#getThemeRegistry()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ThemeFns.html#getThemeRegistry())
 and
-<javadoc class="true" method="setThemeRegistry(org.zkoss.web.theme.ThemeRegistry)">org.zkoss.web.fn.ThemeFns</javadoc>.
+[org.zkoss.web.fn.ThemeFns#setThemeRegistry(org.zkoss.web.theme.ThemeRegistry)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ThemeFns.html#setThemeRegistry(org.zkoss.web.theme.ThemeRegistry)).

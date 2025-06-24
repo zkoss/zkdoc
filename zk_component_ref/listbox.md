@@ -182,7 +182,7 @@ details.
 ## Autopaging
 
 When using the paging mold and vflex, you can also turn on autopaging
-(<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean)))
 such that Listbox will determine the page size automatically based on
 the available height.
 
@@ -248,10 +248,10 @@ the item won't be changed (only the textbox gains the focus).
 ### Click to Select Anyway
 
 Sometimes it is not intuitive, such as using with inplace editing
-(<javadoc method="isInplace()">org.zkoss.zul.impl.InputElement</javadoc>).
+([org.zkoss.zul.impl.InputElement#isInplace()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html#isInplace())).
 If you want to have more control of whether to select an item, you could
 specify a list of tags in the nonselectableTags property
-(<javadoc method="setNonselectableTags(java.lang.String)">org.zkoss.zul.Listbox</javadoc>).
+([org.zkoss.zul.Listbox#setNonselectableTags(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setNonselectableTags(java.lang.String))).
 For example, if you want to select the item, no matter what tag the user
 clicks, you could specify an empty string as follows.
 
@@ -450,7 +450,7 @@ that can determine whether it is checked or not.
 {% include version-badge.html version=5.0.5 %}
 
 If a listbox's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>) is set
+([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is set
 to **true**, the selection will be toggled when an user clicks an item.
 In other words, all other items will remain their selection state.
 
@@ -469,7 +469,7 @@ in `WEB-INF/zk.xml`:
 ## Toggle Selection when Right Clicking an Item with Checkmark
 
 {% include version-badge.html version=5.0.5 %} If a listbox's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>) is
+([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is
 enabled, the selection will be toggled when user right click on item.
 
 If you prefer not to select/deselect item on right click, you could
@@ -737,16 +737,16 @@ class MyListModel implements ListModel, Sortable {
 ```
 
 When a user wants to sort the listbox, the listbox will invoke
-<javadoc class="false" method="sort(java.util.Comparator,boolean)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator,boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator,boolean))
 to sort the data. In other words, the sorting is done by the list model,
 rather than the listbox.
 
 After sorting, the list model will notify the listbox by invoking the
-<javadoc method="onChange(org.zkoss.zul.event.ListDataEvent)">org.zkoss.zul.event.ListDataListener</javadoc>
+[org.zkoss.zul.event.ListDataListener#onChange(org.zkoss.zul.event.ListDataEvent)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataListener.html#onChange(org.zkoss.zul.event.ListDataEvent))
 method of the listbox' registered
 [org.zkoss.zul.event.ListDataListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataListener.html) instances. These
 are registered by
-<javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)">org.zkoss.zul.ListModel</javadoc>.
+[org.zkoss.zul.ListModel#addListDataListener(org.zkoss.zul.event.ListDataListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#addListDataListener(org.zkoss.zul.event.ListDataListener)).
 In most cases, all the data is changed, so the list model usually sends
 the following event:
 
@@ -1301,7 +1301,7 @@ The following code demonstrates how to freeze a column within a Grid:
 
 It specifies that the selection will be toggled when user right clicks
 on an item, if the checkmark is enabled
-(<javadoc method="isCheckmark()">org.zkoss.zul.Listbox</javadoc>). If it
+([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())). If it
 is turned off, right clicking on an item won't change its selection
 state.
 
@@ -1325,14 +1325,14 @@ will be in effect for the whole application.)
 
 Specifies whether to sort the model when the following cases:
 
-- <javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>
+- [org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel))
   is called and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+  [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is set.
-- <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+- [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is called.
 - Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Listheader</javadoc>
+  [org.zkoss.zul.Listheader#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html#setSortDirection(String))
   is set.
 
 If you want to ignore sort when receiving
@@ -1356,9 +1356,9 @@ information, please refer to [ZK Developer's Reference: Performance Tips]({{site
 
 It specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel)))
 and not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Listbox</javadoc>).
+([org.zkoss.zul.Listbox#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#getPagingChild())).
 
 ## org.zkoss.zul.listbox.initRodSize
 
@@ -1369,9 +1369,9 @@ and not paging
 
 Specifies the number of items rendered when the Listbox first render. It
 is used only if live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setModel(ListModel)))
 and not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Listbox</javadoc>).
+([org.zkoss.zul.Listbox#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#getPagingChild())).
 
 ## org.zkoss.zul.listbox.autohidePaging
 
@@ -1441,7 +1441,7 @@ got executed.</p></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
-(<javadoc method="setAutopaging(boolean)">org.zkoss.zul.Listbox</javadoc>)
+([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean)))
 is enabled and user changed the size of the content.</p></td>
 </tr>
 <tr class="even">

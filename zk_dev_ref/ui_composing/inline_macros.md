@@ -69,7 +69,7 @@ components. It is also easier to access all components defined in a
 macro since they are expanded inline. However, it also means that the
 developers must take care of `id` themselves. In addition, there is no
 way to instantiate inline macros in pure Java (rather,
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
 shall be used)[^1].
 
 On the other hand, regular macros allow the component developers to

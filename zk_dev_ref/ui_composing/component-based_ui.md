@@ -46,7 +46,7 @@ special tag that does not create components. For example,
 ## getChildren()
 
 Most of the collections returned by a component, such as
-<javadoc method="getChildren()" type="interface">org.zkoss.zk.ui.Component</javadoc>,
+[org.zkoss.zk.ui.Component#getChildren()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getChildren()),
 are live structures. It means that you can add, remove or clear a child
 by manipulating the returned list directly. For example, to detach all
 children, you could do it in one statement:
@@ -89,7 +89,7 @@ cannot handle a set correctly.
 
 Thus, we have to copy the list to another list or array and then sort
 it.
-<javadoc method="sort(java.util.List, java.util.Comparator)">org.zkoss.zk.ui.Components</javadoc>
+[org.zkoss.zk.ui.Components#sort(java.util.List, java.util.Comparator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html#sort(java.util.List, java.util.Comparator))
 is a utility to simplify the job.
 
 # Desktop, Page and Component
@@ -112,13 +112,13 @@ with the desktop it belongs. The request is passed to \<javadoc
 method="service(org.zkoss.zk.au.AuRequest, boolean)"
 type="interface\>org.zkoss.zk.ui.sys.DesktopCtrl</javadoc> and then
 forwarded to
-<javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>.
+[org.zkoss.zk.ui.sys.ComponentCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean)).
 This also means that the application can not access components in
 multiple desktops at the same time.
 
 Both a desktop and a page can be created automatically when ZK Loader
 loads a ZUML page or calls a richlet
-(<javadoc type="interface" method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>).
+([org.zkoss.zk.ui.Richlet#service(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#service(org.zkoss.zk.ui.Page))).
 The second page is created when the
 [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component includes another page
 with the defer mode. For example, two pages will be created if the
@@ -177,12 +177,12 @@ There are two ways to attach a component to a page:
 
 1.  Append it as a child of another component that is already attached
     to a page
-    (<javadoc method="appendChild(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.Component</javadoc>,
-    <javadoc method="insertBefore(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.Component</javadoc>,
+    ([org.zkoss.zk.ui.Component#appendChild(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#appendChild(org.zkoss.zk.ui.Component)),
+    [org.zkoss.zk.ui.Component#insertBefore(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#insertBefore(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component)),
     or
-    <javadoc method="setParent(org.zkoss.zk.ui.Component)" type="interface">org.zkoss.zk.ui.Component</javadoc>).
+    [org.zkoss.zk.ui.Component#setParent(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setParent(org.zkoss.zk.ui.Component))).
 2.  Invoke
-    <javadoc method="setPage(org.zkoss.zk.ui.Page)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#setPage(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setPage(org.zkoss.zk.ui.Page))
     to attach it to a page directly. It is also another way to make a
     component become a root component.
 
@@ -203,7 +203,7 @@ win2.appendChild(b); //implies detach b from win1
 To detach a Component from the page, you can either invoke
 `comp.setParent(null)` if it is not a root component or
 `comp.setPage(null)` if it is a root component.
-<javadoc method="detach()" type="interface">org.zkoss.zk.zk.ui.Component</javadoc>
+[org.zkoss.zk.zk.ui.Component#detach()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/zk/ui/Component.html#detach())
 is a shortcut to detach a component without knowing if it is a root
 component.
 
@@ -213,7 +213,7 @@ When a component is attached to a page, the component and all of its
 descendants will be rendered. On the other hand, when a state of an
 attached component is changed, only the changed state is sent to client
 for update (for better performance). Very rare, you might need to invoke
-<javadoc method="invalidate()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate())
 to force the component and its descendants to be rerendered[^2].
 
 There are only a few reasons to invalidate a component, but it is still
@@ -281,7 +281,7 @@ org.zkoss.zk.ui.UiException: The parent and child must be in the same desktop: <
 
 All components are cloneable (java.lang.Cloneable). It is simple to
 replicate components by invoking
-<javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone()).
 
 ```java
 main.appendChild(listbox.clone());
@@ -292,7 +292,7 @@ main.appendChild(listbox.clone());
 - It is a *deep clone*. That is, all children and descendants are cloned
   too.
 - The component returned by
-  <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+  [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())
   does not belong to any pages. It doesn't have a parent either. You
   have to attach it manually if necessary.
 - ID, if any, is preserved. Thus, you *cannot* attach the returned
@@ -302,7 +302,7 @@ Similarly, all components are serializable (java.io.Serializable). Like
 cloning, all children and descendants are serialized. If you serialize a
 component and then de-serialize it back, the result will be the same as
 invoking
-<javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>[^5].
+[org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())[^5].
 
 > ------------------------------------------------------------------------
 >
@@ -325,5 +325,5 @@ invoking
     the UI in Java. For the information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
 
 [^5]: Of course, the performance of
-    <javadoc method="clone()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())
     is much better.

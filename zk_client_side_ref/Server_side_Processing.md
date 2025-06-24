@@ -7,15 +7,15 @@ converted to an AU request and then sent to the server. When the event
 arrives at the server, it is converted to be an instance of
 [org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html)), and then pass to the
 desktop for serving by invoking
-<javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.DesktopCtrl</javadoc>.
+[org.zkoss.zk.ui.sys.DesktopCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/DesktopCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean)).
 If the request is targeting a component, the component's
-<javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+[org.zkoss.zk.ui.sys.ComponentCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean))
 will then be called to serve it.
 
 ## Component State Synchronization
 
 Thus, if you implement a component, you could override
-<javadoc method="service(org.zkoss.zk.au.AuRequest, boolean)">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+[org.zkoss.zk.ui.sys.ComponentCtrl#service(org.zkoss.zk.au.AuRequest, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#service(org.zkoss.zk.au.AuRequest, boolean))
 to handle it.
 
 Here is an example (from [org.zkoss.zul.Radio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html)):
@@ -67,7 +67,7 @@ public class FooAuService implements AuService {
 To plug it to the desktop, you could implement a listener of
 [org.zkoss.zk.ui.util.DesktopInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopInit.html) to
 add it to a desktop by
-<javadoc method="addListener(java.lang.Object)">org.zkoss.zk.ui.Desktop</javadoc>.
+[org.zkoss.zk.ui.Desktop#addListener(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#addListener(java.lang.Object)).
 Then, specify the listener to `WEB-INF/zk.xml`. For example,
 
 ```java
@@ -90,7 +90,7 @@ and, in `WEB-INF/zk.xml`
 ### Intercept at Component-level
 
 To plug it to the component, you could invoke
-<javadoc method="setAuService(org.zkoss.zk.au.AuService)" type="interface">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#setAuService(org.zkoss.zk.au.AuService)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAuService(org.zkoss.zk.au.AuService)).
 
 # Client Event Declaration
 
@@ -99,7 +99,7 @@ a widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) will be
 sent to the server, only if *the server needs it*.
 
 To declare an event that a server *might* need it, you have to invoke
-<javadoc method="addClientEvent(java.lang.Class, java.lang.String, int)">org.zkoss.zk.ui.AbstractComponent</javadoc>.
+[org.zkoss.zk.ui.AbstractComponent#addClientEvent(java.lang.Class, java.lang.String, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#addClientEvent(java.lang.Class, java.lang.String, int)).
 It is a static method and usually called in a static clause as shown
 below.
 
@@ -129,7 +129,7 @@ are used to synchronize the states back to the server, such as onChange.
 
 These events are called *important events*. You could declare an event
 as important by specifying
-<javadoc method="CE_IMPORTANT" type="interface">org.zkoss.zk.ui.sys.ComponentCtrl</javadoc>
+[org.zkoss.zk.ui.sys.ComponentCtrl#CE_IMPORTANT](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/ComponentCtrl.html#CE_IMPORTANT)
 as follows.
 
 ```java
@@ -147,7 +147,7 @@ if it does not have any non-deferrable event listener at the server[^1].
 
 ## Force Event to Send Back
 
-<javadoc method="addClientEvent(java.lang.Class, java.lang.String, int)">org.zkoss.zk.ui.AbstractComponent</javadoc>
+[org.zkoss.zk.ui.AbstractComponent#addClientEvent(java.lang.Class, java.lang.String, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#addClientEvent(java.lang.Class, java.lang.String, int))
 is usually used by a component developer since the first argument must
 be the component's class. For application developers, it is more
 straightforward by specifying the `toServer` option in

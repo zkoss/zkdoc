@@ -6,7 +6,7 @@
 `[Since 5.0.5]`
 
 If a tree's checkmark
-(<javadoc method="isCheckmark()">org.zkoss.zul.Tree</javadoc>) is
+([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())) is
 enabled, the selection will be toggled when a user clicks an item. In
 other words, all other items will remain the same.
 

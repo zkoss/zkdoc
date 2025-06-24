@@ -106,7 +106,7 @@ refers to the label.
 To retrieve a fellow[^2], you could use
 <javadoc directory="jsdoc" method="$f(_global_.String)">zk.Widget</javadoc>.
 It works in a similar manner as
-<javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>.
+[org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)).
 For example,
 
 ```javaScript

@@ -89,7 +89,7 @@ it to *middle* (aka., *center*) by specifying `valign="middle"`, and
 ## IE6 Limitation
 
 Notice that, since the vertical alignment is specified in the CSS class
-(<javadoc type="interface" method="setSclass(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>),
+([org.zkoss.zk.ui.Component#setSclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setSclass(java.lang.String))),
 there are some limitations for IE6. First, the vertical alignment is
 inherited to the inner hlayout. Thus, you have to specify the middle
 alignment explicitly in the inner hlayout if needed. For example,

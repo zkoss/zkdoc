@@ -16,7 +16,7 @@ is still possible to have multiple desktops in one browser window:
 
 In this case, you could communicate among desktops by the use of an
 event queue with the group scope
-(<javadoc method="GROUP">org.zkoss.zk.ui.event.EventQueues</javadoc>).
+([org.zkoss.zk.ui.event.EventQueues#GROUP](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#GROUP)).
 
 ```java
 EventQueue que = EventQueues.lookup("groupTest", EventQueues.GROUP, true);
@@ -89,7 +89,7 @@ And, this is the ZUML page being referenced (by iframe).
 
 Similarly, we could use an event queue to communicate among desktops
 belonging to different sessions. The only difference is to specify
-<javadoc method="APPLICATION">org.zkoss.zk.ui.event.EventQueues</javadoc>
+[org.zkoss.zk.ui.event.EventQueues#APPLICATION](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#APPLICATION)
 as the scope.
 
 ```java

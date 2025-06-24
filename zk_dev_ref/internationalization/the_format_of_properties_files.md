@@ -109,7 +109,7 @@ Second, with an EL function called
 ## Under the hood
 
 The `labels` object is actually the map returned by
-<javadoc method="getSegmentedLabels()">org.zkoss.util.resource.Labels</javadoc>.
+[org.zkoss.util.resource.Labels#getSegmentedLabels()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/Labels.html#getSegmentedLabels()).
 Furthermore, if the key of a property contains dots (`.`), i.e.,
 segmented, all properties with the same prefix are grouped as another
 map. For example, `${labels.order}` (i.e.,
@@ -176,5 +176,5 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 [^1]: If it is used for internationalization labels, it will be loaded
     automatically. If you want to use it in other situations, you have
     to invoke
-    <javadoc method="load(java.util.Map, java.io.InputStream, boolean)">org.zkoss.util.Maps</javadoc>
+    [org.zkoss.util.Maps#load(java.util.Map, java.io.InputStream, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Maps.html#load(java.util.Map, java.io.InputStream, boolean))
     or similar to load it manually.

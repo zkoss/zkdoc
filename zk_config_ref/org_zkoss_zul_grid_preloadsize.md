@@ -10,9 +10,9 @@
 
 Specifies the number of rows to preload when receiving the rendering
 request from the client. It is used only for live data
-(<javadoc method="setModel(ListModel)">org.zkoss.zul.Grid</javadoc>) but
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) but
 not paging
-(<javadoc method="getPagingChild()">org.zkoss.zul.Grid</javadoc>).
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
 
 If you prefer to configure a particular component, you could specify it
 as the custom attribute of the component or any of its ancestor

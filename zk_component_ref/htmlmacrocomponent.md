@@ -11,7 +11,7 @@
 The base class for macro components.
 
 {% include version-badge.html version=5.0.4 %} By default invoking
-<javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+[org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
 supports auto forward events and wire accessible variables to this
 component.
 
@@ -82,9 +82,9 @@ is false.
 
 In the early version, if you want to apply the auto-wiring, you can
 invoke
-<javadoc method="wireVariables(org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.Components</javadoc>
+[org.zkoss.zk.ui.Components#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object))
 in
-<javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>
+[org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
 as follows.
 
 ```java
@@ -137,7 +137,7 @@ See also events inherited from [ HtmlBasedComponent's Supported Events]({{site.b
 
 | Version | Date        | Content                                                                                                                                                                                                                                     |
 |---------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.3   | June 2010   | The corresponding DOM element is customizable. It defaults to SPAN (the same as prior version) but you can change it to any tag by use of <javadoc method="setEnclosingTag(java.lang.String)">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>. |
-| 5.0.4   | August 2010 | By default, invoking <javadoc method="afterCompose()">org.zkoss.zk.ui.HtmlMacroComponent</javadoc> supports auto forward events and wire accessible variables to this component.                                                            |
+| 5.0.3   | June 2010   | The corresponding DOM element is customizable. It defaults to SPAN (the same as prior version) but you can change it to any tag by use of [org.zkoss.zk.ui.HtmlMacroComponent#setEnclosingTag(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#setEnclosingTag(java.lang.String)). |
+| 5.0.4   | August 2010 | By default, invoking [org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose()) supports auto forward events and wire accessible variables to this component.                                                            |
 
 

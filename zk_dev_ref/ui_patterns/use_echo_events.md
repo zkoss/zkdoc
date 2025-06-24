@@ -17,14 +17,14 @@ section, which is powerful but more sophisticated to implement.
 Event echoing for a long operation basically takes three steps
 
 1.  Invoke
-    <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+    [org.zkoss.zk.ui.util.Clients#showBusy(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showBusy(java.lang.String))
     to show a busy message and block the user from accessing any
     function
     - Of course, you could have any effect you like, such as showing [a modal window]({{site.baseurl}}/zk_component_ref/containers/window).
-      <javadoc method="showBusy(java.lang.String)">org.zkoss.zk.ui.util.Clients</javadoc>
+      [org.zkoss.zk.ui.util.Clients#showBusy(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showBusy(java.lang.String))
       is yet a built-in approach for showing the busy message.
 2.  Invoke
-    <javadoc method="echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)">org.zkoss.zk.ui.event.Events</javadoc>
+    [org.zkoss.zk.ui.event.Events#echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#echoEvent(java.lang.String, org.zkoss.zk.ui.Component, java.lang.Object))
     to echo an event
 3.  Listen to the event being echoed and do the long operation in the
     listener
@@ -55,7 +55,7 @@ then:
 With event echoing, it might still take hundreds of milliseconds to have
 the busy message, especially with the slow connection. The feedback to
 user can be further improved by the use of
-<javadoc method="setAutodisable(java.lang.String)">org.zkoss.zul.Button</javadoc>.
+[org.zkoss.zul.Button#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setAutodisable(java.lang.String)).
 For example,
 
 ```xml

@@ -11,7 +11,7 @@ will be encapsulated as an instance of
 [org.zkoss.zk.ui.util.Template](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Template.html) and
 associated to a component. Then, the component can create the components
 repeatedly based on the template by invoking
-<javadoc type="interface" method="create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)">org.zkoss.zk.ui.util.Template</javadoc>.
+[org.zkoss.zk.ui.util.Template#create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Template.html#create(org.zkoss.zk.ui.Component, org.zkoss.zk.ui.Component, org.zkoss.xel.VariableResolver, org.zkoss.zk.ui.util.Composer)).
 
 A component can be assigned with multiple templates. Each of them is
 identified by the **name** attribute.
@@ -55,7 +55,7 @@ after the content specified directly inside it).
 `[Optional][Default: `*`none`*`]`
 
 Specifies a parameter that can be retrieved by use of
-<javadoc method="getParameters()">org.zkoss.zk.ui.util.Template</javadoc>.
+[org.zkoss.zk.ui.util.Template#getParameters()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Template.html#getParameters()).
 
 ## if
 

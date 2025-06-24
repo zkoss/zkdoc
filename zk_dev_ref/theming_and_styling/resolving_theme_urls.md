@@ -6,10 +6,10 @@ must be resolved once the theme changes.
 Several APIs were available to redirect theme resources to the correct
 location.
 
-<javadoc class="true" method="encodeThemeURL(java.lang.String)">org.zkoss.web.fn.ServletFns</javadoc>
+[org.zkoss.web.fn.ServletFns#encodeThemeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ServletFns.html#encodeThemeURL(java.lang.String))
 is for translating image locations inside \*.css.dsp files.
 
-<javadoc class="true" method="resolveThemeURL(java.lang.String)">org.zkoss.web.fn.ServletFns</javadoc>
+[org.zkoss.web.fn.ServletFns#resolveThemeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ServletFns.html#resolveThemeURL(java.lang.String))
 is for redirecting the retrieval of stylesheets inside a ThemeProvider.
 
 # Example Usage (inside \*.css.dsp)

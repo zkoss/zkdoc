@@ -15,5 +15,5 @@ name as the initial parameter of the declaration of ZK Update Engine in
 `WEB-INF/web.xml`. For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_au_engine).
 
 If you want to register it in Java, you could use
-<javadoc method="addAuExtension(java.lang.String, org.zkoss.zk.au.http.AuExtension)">org.zkoss.zk.au.http.DHtmlUpdateServlet</javadoc>
+[org.zkoss.zk.au.http.DHtmlUpdateServlet#addAuExtension(java.lang.String, org.zkoss.zk.au.http.AuExtension)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/http/DHtmlUpdateServlet.html#addAuExtension(java.lang.String, org.zkoss.zk.au.http.AuExtension))
 instead.

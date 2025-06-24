@@ -124,9 +124,9 @@ The <b>MatrixModel</b> can also support
 interface. In your implementor class you can just implement the
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) interface
 and provide
-<javadoc method="sort(java.util.Comparator, boolean)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 and
-<javadoc method="getSortDirection(java.util.Comparator)">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#getSortDirection(java.util.Comparator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#getSortDirection(java.util.Comparator))
 methods.
 
 For example,

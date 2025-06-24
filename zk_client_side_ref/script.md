@@ -36,6 +36,6 @@ It specifies the condition to embed the specified JavaScript file. For
 example, if `browser="ie6-"` is specified, the JavaSript file is embeded
 only if the client is Internet Explorer 6. For the available types you
 could check, please refer to
-<javadoc method="isBrowser(javax.servlet.ServletRequest, java.lang.String)">org.zkoss.web.servlet.Servlets</javadoc>.
+[org.zkoss.web.servlet.Servlets#isBrowser(javax.servlet.ServletRequest, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/Servlets.html#isBrowser(javax.servlet.ServletRequest, java.lang.String)).
 
 

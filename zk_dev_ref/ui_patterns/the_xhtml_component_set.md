@@ -71,7 +71,7 @@ namespace and some client-side code as follows.
 # ID and UUID
 
 Unlike other components, if you assign ID to an XHTML component, its
-UUID (<javadoc method="getUuid()">org.zkoss.zk.ui.Component</javadoc>)
+UUID ([org.zkoss.zk.ui.Component#getUuid()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getUuid()))
 is changed accordingly. It means you cannot have two XHTML components
 with the same ID, no matter if they are in different ID spaces.
 

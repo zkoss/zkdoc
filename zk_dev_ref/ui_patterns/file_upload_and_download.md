@@ -98,5 +98,5 @@ refer to
 for correct usages.
 
 [^1]: If you enabled the use of event threads, you could use
-    <javadoc method="get()">org.zkoss.zul.Fileupload</javadoc> and
+    [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) and
     related. For more information, please refer to [the Event Thread section]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads/file_upload).

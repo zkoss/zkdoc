@@ -8,13 +8,13 @@ update the browser in JSF's Ajax channel.
 
 Starting an execution in a foreign Ajax channel is straightforward:
 invoke
-<javadoc method="start(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Desktop)">org.zkoss.zkplus.embed.Bridge</javadoc>.
+[org.zkoss.zkplus.embed.Bridge#start(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html#start(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.zk.ui.Desktop)).
 Then, you are allowed to access the components, post events and do
 anything you like. At the end, you invoke
-<javadoc method="getResult()">org.zkoss.zkplus.embed.Bridge</javadoc> to
+[org.zkoss.zkplus.embed.Bridge#getResult()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html#getResult()) to
 retrieve the JavaScript code snippet and send it back to the client to
 execute. Finally, you invoke
-<javadoc method="close()">org.zkoss.zkplus.embed.Bridge</javadoc> to
+[org.zkoss.zkplus.embed.Bridge#close()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html#close()) to
 close the execution.
 
 ```java

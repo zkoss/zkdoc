@@ -9,7 +9,7 @@ anything. It is visible to the search engine (for indexing), but it is
 not visible to the end users[^1]
 
 Once registered,
-<javadoc type="interface" method="render(org.zkoss.zk.ui.Page, java.io.Writer)">org.zkoss.zk.ui.sys.SEORenderer</javadoc>
+[org.zkoss.zk.ui.sys.SEORenderer#render(org.zkoss.zk.ui.Page, java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SEORenderer.html#render(org.zkoss.zk.ui.Page, java.io.Writer))
 will be invoked each time the main page of a desktop has been rendered
 and sent to the client[^2].
 
@@ -25,7 +25,7 @@ For example, assume you have an implementation called
 
 You could generate anything that you'd like the search engine to index
 in
-<javadoc type="interface" method="render(org.zkoss.zk.ui.Page,  java.io.Writer)">org.zkoss.zk.ui.sys.SEORenderer</javadoc>:
+[org.zkoss.zk.ui.sys.SEORenderer#render(org.zkoss.zk.ui.Page,  java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SEORenderer.html#render(org.zkoss.zk.ui.Page,  java.io.Writer)):
 
 ```java
 package foo;

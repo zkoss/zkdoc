@@ -60,9 +60,9 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 
 By default, the data used to render a component will be stored to the
 component's value property automatically. For listitem, it is
-<javadoc method="setValue(T)">org.zkoss.zul.Listitem</javadoc>. Thus,
+[org.zkoss.zul.Listitem#setValue(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listitem.html#setValue(T)). Thus,
 you retrieve it back easily by invoking
-<javadoc method="getValue()">org.zkoss.zul.Listitem</javadoc>.
+[org.zkoss.zul.Listitem#getValue()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listitem.html#getValue()).
 
 Of course, if you prefer to store other values, you can simply specify
 `value="${whatever}"` to the `listitem` element in the template.
@@ -99,7 +99,7 @@ in a template:
 
 To work around, you have to store the value in, say, component's custom
 attributes
-(<javadoc method="getAttributes()" type="interface">org.zkoss.zul.Component</javadoc>).
+([org.zkoss.zul.Component#getAttributes()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Component.html#getAttributes())).
 For example,
 
 ```xml
@@ -155,7 +155,7 @@ listbox-in-listbox:
 Although
 [forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus)
 has an API called
-<javadoc method="getPrevious()" type="interface">org.zkoss.zk.ui.util.ForEachStatus</javadoc>,
+[org.zkoss.zk.ui.util.ForEachStatus#getPrevious()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getPrevious()),
 it always returns null[^3]. It is because the template is rendered on
 demand. When ZK is rendering the inner template, the previous iteration
 has already gone. There is no way to retrieve the iteration information

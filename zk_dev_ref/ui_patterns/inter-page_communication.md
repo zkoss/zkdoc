@@ -13,7 +13,7 @@ target page. In ZUML, it is done by the use of [the page directive](ZUML_Referen
 ```
 
 Then we could retrieve it by use of
-<javadoc method="getPage(java.lang.String)" type="interface">org.zkoss.zk.ui.Desktop</javadoc>
+[org.zkoss.zk.ui.Desktop#getPage(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#getPage(java.lang.String))
 or by use of a utility class called
 [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html). For example, the following
 statements could access the *main* window above:
@@ -24,7 +24,7 @@ Path.getComponent("//foo/main");
 ```
 
 As shown,
-<javadoc method="getComponent(java.lang.String)">org.zkoss.zk.ui.Path</javadoc>
+[org.zkoss.zk.ui.Path#getComponent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html#getComponent(java.lang.String))
 considers an ID starting with double slashes as a page's ID.
 
 # Use Attributes
@@ -65,9 +65,9 @@ In `zscript` and EL expressions, you could use the [implicit objects](ZUML_Refer
 
 You could communicate among pages in the same desktop. The way to
 communicate is to use the
-<javadoc method="postEvent(org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.event.Events</javadoc>
+[org.zkoss.zk.ui.event.Events#postEvent(org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#postEvent(org.zkoss.zk.ui.event.Event))
 or
-<javadoc method="sendEvent(org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.event.Events</javadoc>
+[org.zkoss.zk.ui.event.Events#sendEvent(org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#sendEvent(org.zkoss.zk.ui.event.Event))
 to notify a component in the target page.
 
 For example,
@@ -78,9 +78,9 @@ For example,
 ```
 
 You can also pass the data with the event object. The third parameter in
-<javadoc method="postEvent(org.zkoss.zk.ui.event.Event)">org.zkoss.zk.ui.event.Events</javadoc>
+[org.zkoss.zk.ui.event.Events#postEvent(org.zkoss.zk.ui.event.Event)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Events.html#postEvent(org.zkoss.zk.ui.event.Event))
 will be put into
-<javadoc method="getData()">org.zkoss.zk.ui.event.Event</javadoc>. You
+[org.zkoss.zk.ui.event.Event#getData()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#getData()). You
 could pass the data you want with it.
 
 ```java

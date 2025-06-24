@@ -40,9 +40,9 @@ EventQueues.lookup("anotherQueue", session, true);
 
 Notice that if you want to locate an event queue in a working thread
 (rather than an event listener), you have to use
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.Session)">org.zkoss.zk.ui.event.EventQueues</javadoc>
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session))
 or
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.Application)">org.zkoss.zk.ui.event.EventQueues</javadoc>,
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Application)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Application)),
 depending on your requirement.
 
 ## The Scope of an Event Queue
@@ -62,15 +62,15 @@ include a message queue to communicate among several servers.
 <tbody>
 <tr class="odd">
 <td><p>desktop</p></td>
-<td><p><javadoc method="lookup(java.lang.String, java.lang.String)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, java.lang.String, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc></p></td>
+<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))</p></td>
 <td><p>The event queue is visible only in the same desktop. (<a
 href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/impl/DesktopEventQueue.html">DesktopEventQueue</a>)</p></td>
 </tr>
 <tr class="even">
 <td><p>group</p></td>
-<td><p><javadoc method="lookup(java.lang.String, java.lang.String)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, java.lang.String, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc></p></td>
+<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))</p></td>
 <td><p>{% include version-badge.html version=5.0.4 %} {% include edition-availability.html edition="ee" %} The event
 queue is visible only in a group of desktops that belongs to the same
 browser tab(page). It is formed if an iframe or frameset is used. Some
@@ -81,10 +81,10 @@ efficient.</p></td>
 </tr>
 <tr class="odd">
 <td><p>session</p></td>
-<td><p><javadoc method="lookup(java.lang.String, java.lang.String)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, java.lang.String, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.Session)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc></p></td>
+<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean))</p></td>
 <td><p>The event queue is visible only in the same session. The
 <strong>server push will be enabled automatically</strong> if it
 subscribes a session-scoped event queue.</p>
@@ -100,10 +100,10 @@ later.</p></td>
 </tr>
 <tr class="even">
 <td><p>application</p></td>
-<td><p><javadoc method="lookup(java.lang.String, java.lang.String)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, java.lang.String, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.WebApp)">org.zkoss.zk.ui.event.EventQueues</javadoc><br />
-<javadoc method="lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean)">org.zkoss.zk.ui.event.EventQueues</javadoc></p></td>
+<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp))<br />
+[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean))</p></td>
 <td><p>The event queue is visible only in the whole application. The
 <strong>server push will be enabled automatically</strong>.</p>
 <p>Notice that the server push is disabled automatically if the current
@@ -250,7 +250,7 @@ By default, the subscribed event listeners are invoked the same way as
 invocations of the listeners for a posted event. They are invoked
 one-by-one. No two event listeners belonging to the same desktop will be
 invoked at the same time. In addition, it is invoked under an execution
-(i.e., <javadoc method="getCurrent">org.zkoss.zk.ui.Executions</javadoc>
+(i.e., [org.zkoss.zk.ui.Executions#getCurrent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#getCurrent)
 is never null). It is allowed to manipulate the components belonging to
 the current execution. For the sake of description, we call them
 synchronous event listeners.

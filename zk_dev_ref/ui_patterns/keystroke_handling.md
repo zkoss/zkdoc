@@ -83,7 +83,7 @@ specified).
 
 To handle the control keys, you have to specify the keystrokes you want
 to handle with
-<javadoc method="setCtrlKeys(java.lang.String)">org.zkoss.zul.impl.XulElement</javadoc>.
+[org.zkoss.zul.impl.XulElement#setCtrlKeys(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setCtrlKeys(java.lang.String)).
 Then, if any child component gains the focus and the user presses a
 keystroke that matches the combination, the `onCtrlKey` will be sent to
 the component with an instance of
@@ -104,7 +104,7 @@ For example,
 ```
 
 As shown, you could use
-<javadoc method="getKeyCode()">org.zkoss.zk.ui.event.KeyEvent</javadoc>
+[org.zkoss.zk.ui.event.KeyEvent#getKeyCode()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html#getKeyCode())
 to know which key was pressed.
 
 ## Allowed Control Keys

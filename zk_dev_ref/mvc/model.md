@@ -41,7 +41,7 @@ From one component's perspective, it also follows the MVC pattern: ![ center](mo
 - **Component (Controller)**
   - get data objects from a Model
   - as a data change listener of Model (by invoking
-    <javadoc method="addListDataListener(org.zkoss.zul.event.ListDataListener)" type="interface">org.zkoss.zul.ListModel</javadoc>)
+    [org.zkoss.zul.ListModel#addListDataListener(org.zkoss.zul.event.ListDataListener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#addListDataListener(org.zkoss.zul.event.ListDataListener)))
   - handle events from the client e.g. update the selection upon user
     clicking
 - **ListModel (Model)**

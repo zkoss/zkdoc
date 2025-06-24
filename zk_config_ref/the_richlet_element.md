@@ -7,7 +7,7 @@ The class name specified in the `richlet-class` element must implement
 the [org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html)
 interface. The name and value specified in the `init-param` element can
 be retrieved when the `init` method of
-<javadoc method="init(org.zkoss.zk.ui.RichletConfig)" type="interface">org.zkoss.zk.ui.Richlet</javadoc>
+[org.zkoss.zk.ui.Richlet#init(org.zkoss.zk.ui.RichletConfig)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#init(org.zkoss.zk.ui.RichletConfig))
 is called.
 
 ```xml

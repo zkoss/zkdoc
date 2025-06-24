@@ -4,7 +4,7 @@ boolean boolean(Object value);
 
   
 i.e.,
-<javadoc method="toBoolean(java.lang.Object)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#toBoolean(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#toBoolean(java.lang.Object))
 
 Converts the specified object to a boolean.
 

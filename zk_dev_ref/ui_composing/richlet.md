@@ -25,7 +25,7 @@ parsing ZUML is optimized.
 
 It is straightforward to implement a richlet. First, you have to
 implement the
-<javadoc typpe="interface">org.zkoss.zk.ui.Richlet</javadoc> interface
+[org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html) interface
 before mapping a URL to the richlet.
 
 ## Implement a Richlet as a Java class
@@ -35,7 +35,7 @@ A richlet must implement the
 However, you generally do not have to implement it from scratch. Rather,
 you could extend [org.zkoss.zk.ui.GenericRichlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/GenericRichlet.html), and
 the only thing you have to do is to override
-<javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>.
+[org.zkoss.zk.ui.Richlet#service(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#service(org.zkoss.zk.ui.Page)).
 The method is called when an associated URL is requested. For example,
 
 ```java
@@ -87,18 +87,18 @@ support specific child components. We recommend you to read [ZK Component Refere
 to build.
 
 As shown above (line 27), we have to invoke
-<javadoc method="setPage(Page page)">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#setPage(Page page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setPage(Page page))
 explicitly to attach a root component to a page so it will be available
 at the client.
 
 To have better control, you can even implement the
-<javadoc method="init(org.zkoss.zk.ui.RichletConfig)">org.zkoss.zk.ui.Richlet</javadoc>
-and <javadoc method="destroy()">org.zkoss.zk.ui.Richlet</javadoc>
+[org.zkoss.zk.ui.Richlet#init(org.zkoss.zk.ui.RichletConfig)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#init(org.zkoss.zk.ui.RichletConfig))
+and [org.zkoss.zk.ui.Richlet#destroy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#destroy())
 methods to initialize and to destroy any resources required by the
 richlet when it is loaded.
 
 In addition, you could implement
-<javadoc method="getLanguageDefinition()">org.zkoss.zk.ui.Richlet</javadoc>
+[org.zkoss.zk.ui.Richlet#getLanguageDefinition()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#getLanguageDefinition())
 to use a different language as default (for example, implementing a
 richlet for [mobile devices](http://code.google.com/p/zkreach/)). By
 default, [ZUL](ZUML_Reference/ZUML/Languages/ZUL) (aka.,
@@ -117,11 +117,11 @@ resources. In other words, a richlet (the implementation of the
 When a request (not Ajax request but regular HTTP request) is made by a
 user, a [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) and a
 [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) are created first, and then
-<javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>
+[org.zkoss.zk.ui.Richlet#service(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#service(org.zkoss.zk.ui.Page))
 is invoked to serve the request[^1]. In other words, each request is
 served with an individual desktop and page. Therefore, we *cannot* share
 components among different invocations of
-<javadoc method="service(org.zkoss.zk.ui.Page)">org.zkoss.zk.ui.Richlet</javadoc>.
+[org.zkoss.zk.ui.Richlet#service(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#service(org.zkoss.zk.ui.Page)).
 
 For example, the following code is illegal:
 
@@ -255,7 +255,7 @@ returned by the `getRequestPath` method of the current page.
 
 [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) provides a collection of
 methods, such as
-<javadoc method="createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)">org.zkoss.zk.ui.Execution</javadoc>,
+[org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)),
 allowing developers to load ZUML documents dynamically. You could load a
 ZUML document from any source you like, such as database. Please refer
 to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)

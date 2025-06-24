@@ -56,9 +56,9 @@ following in `WEB-INF/zk.xml`:
 ```
 
 Alternatively, if you prefer to specify it in Java, you could invoke
-<javadoc method="setProperty(java.lang.String, java.lang.String)">org.zkoss.lang.Library</javadoc>.
+[org.zkoss.lang.Library#setProperty(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html#setProperty(java.lang.String, java.lang.String)).
 Furthermore, to avoid typos, you could use
-<javadoc method="PREFERRED_LOCALE">org.zkoss.web.Attributes</javadoc> as
+[org.zkoss.web.Attributes#PREFERRED_LOCALE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/Attributes.html#PREFERRED_LOCALE) as
 follows.
 
 ```java
@@ -161,7 +161,7 @@ request), it is important to notice:
 
 The simplest way to solve the issues is to ask the browser to reload the
 whole page by use of
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 
 For example,
 
@@ -171,7 +171,7 @@ Executions.sendRedirect(null); //reload the same page
 ```
 
 Notice that
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String))
 will cause the client to reload the page, so any updates to the current
 desktop will be lost.
 
@@ -181,9 +181,9 @@ If you prefer to keep the current desktop, you have to ask the browser
 to reload the messages, and change the default locale used by the
 current thread if you're going to access any component and functionality
 that depends on it. The reloading of messages can be done by invoking
-<javadoc method="reloadMessages(java.util.Locale)">org.zkoss.zk.ui.util.Clients</javadoc>,
+[org.zkoss.zk.ui.util.Clients#reloadMessages(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#reloadMessages(java.util.Locale)),
 while the setting of the default locale can be done by the use of
-<javadoc method="setThreadLocal(java.util.Locale)">org.zkoss.util.Locales</javadoc>
+[org.zkoss.util.Locales#setThreadLocal(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#setThreadLocal(java.util.Locale))
 
 For example,
 

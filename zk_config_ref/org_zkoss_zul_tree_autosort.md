@@ -7,15 +7,15 @@
 
 Specifies whether to sort the model when the following cases:
 
-- <javadoc method="setModel (TreeModel)">org.zkoss.zul.Tree</javadoc>is
+- [org.zkoss.zul.Tree#setModel (TreeModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setModel (TreeModel))is
   called and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+  [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is set.
-- <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+- [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is called.
 - Model receives `org.zkoss.zul.event.TreeDataEvent`
   and
-  <javadoc method="setSortDirection(String)">org.zkoss.zul.Treecol</javadoc>
+  [org.zkoss.zul.Treecol#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html#setSortDirection(String))
   is set.
 
 If you want to ignore sorting when receiving

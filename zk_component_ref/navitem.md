@@ -38,11 +38,11 @@ but it is rendered on a navbar.
 
 In addition to handling the onClick event, you could specify the URL in
 the href property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zkmax.zul.Navitem</javadoc>),
+([org.zkoss.zkmax.zul.Navitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html#setHref(java.lang.String))),
 such that the browser will navigate to the URL you specified directly
 (without sending back any request to the server). If you prefer to visit
 the URL in another browser window, you could specify the name in
-<javadoc method="setTarget(java.lang.String)">org.zkoss.zkmax.zul.Navitem</javadoc>
+[org.zkoss.zkmax.zul.Navitem#setTarget(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html#setTarget(java.lang.String))
 (just like using a HTML A tag).
 
 Notice that the end user could hold the `Control` key and click on the
@@ -54,7 +54,7 @@ does).
 There are two ways to add behavior to a `navitem`. Firstly, you can
 specify a listener for the `onClick` event. Secondly, you could specify
 a URL for the `href` property
-(<javadoc method="setHref(java.lang.String)">org.zkoss.zkmax.zul.Navitem</javadoc>).
+([org.zkoss.zkmax.zul.Navitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html#setHref(java.lang.String))).
 If both are specified, the `href` property has the higher priority,
 i.e., the onClick event won't be sent.
 
@@ -74,13 +74,13 @@ application running on the server has no chance to process it.
 If you have to process it on the server or you have to decide whether to
 jump to another URL based on certain condition, you could listen to the
 onClick event, process it, and then invoke
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String))
 if it jumps to another URL.
 
 For end users, there is no difference between the use of
-<javadoc method="setHref(java.lang.String)">org.zkoss.zkmax.zul.Navitem</javadoc>
+[org.zkoss.zkmax.zul.Navitem#setHref(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html#setHref(java.lang.String))
 and
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>.
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)).
 
 ```xml
 <navbar>        
@@ -91,7 +91,7 @@ and
 
 Since the onClick event is sent to the server for processing, you are
 able to perform additional tasks before invoking
-<javadoc method="sendRedirect(java.lang.String)">org.zkoss.zk.ui.Executions</javadoc>,
+[org.zkoss.zk.ui.Executions#sendRedirect(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#sendRedirect(java.lang.String)),
 such as redirecting to another page only if certain conditions are
 satisfied.
 

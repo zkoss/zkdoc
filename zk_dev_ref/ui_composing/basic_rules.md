@@ -65,7 +65,7 @@ after it is created. The attribute name is the property name, while the
 attribute value is the value to assign. For example, the following
 example assigns `"Hello"` to the window's title property. More
 precisely,
-<javadoc method="setTitle(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setTitle(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setTitle(java.lang.String))
 will be called with the argument `"Hello"`.
 
 ```xml

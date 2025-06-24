@@ -23,7 +23,7 @@ pushing data for a given desktop, you have to enable the server push for
 it.
 
 It can be done by use of
-<javadoc method="enableServerPush(boolean)" type="interface">org.zkoss.zk.ui.Desktop</javadoc>:
+[org.zkoss.zk.ui.Desktop#enableServerPush(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html#enableServerPush(boolean)):
 
 ```java
 desktop.enableServerPush(true);
@@ -43,7 +43,7 @@ To update the UI synchronously in a working thread, we have to do as
 follows.
 
 1.  Invoke
-    <javadoc method="activate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>.
+    [org.zkoss.zk.ui.Executions#activate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#activate(org.zkoss.zk.ui.Desktop)).
     It has two purposes:
     1.  It grants the right to access the UI of the given desktop to the
         caller's thread.
@@ -55,7 +55,7 @@ follows.
         the client after finished.
 2.  Update UI any way you want, just like any regular event listener.
 3.  Invoke
-    <javadoc method="deactivate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>
+    [org.zkoss.zk.ui.Executions#deactivate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#deactivate(org.zkoss.zk.ui.Desktop))
     to return the control, such that other threads could have a chance
     to update UI.
 
@@ -98,13 +98,13 @@ public class WorkingThread extends Thread {
 ```
 
 - Line 9-15: the task between
-  <javadoc method="activate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>
+  [org.zkoss.zk.ui.Executions#activate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#activate(org.zkoss.zk.ui.Desktop))
   and
-  <javadoc method="deactivate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>
+  [org.zkoss.zk.ui.Executions#deactivate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#deactivate(org.zkoss.zk.ui.Desktop))
   has to take less time, since it blocks others, including the end users
   (of the desktop), from accessing the UI. It is suggested to prepare
   the data before
-  <javadoc method="activate(org.zkoss.zk.ui.Desktop)">org.zkoss.zk.ui.Executions</javadoc>,
+  [org.zkoss.zk.ui.Executions#activate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#activate(org.zkoss.zk.ui.Desktop)),
   such that it can be done in parallel with other threads.
 
 For a real example, please refer to small talks: [Simple and Intuitive Server Push with a Chat Room Example](https://www.zkoss.org/wiki/Small_Talks/2007/August/Simple_and_Intuitive_Server_Push_with_a_Chat_Room_Example)

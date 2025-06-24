@@ -1,7 +1,7 @@
 # Message Boxes with Servlet Thread
 
 When
-<javadoc method="show(java.lang.String)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String))
 is called, it returns immediately after showing the message dialog.
 Furthermore, it always returns `Messagebox.OK`. Thus, it is meaningless
 to show buttons other than the OK button. For example, the `if` clause
@@ -56,7 +56,7 @@ For more information, please refer to [ZK Developer's Reference: Clustering]({{s
 # Message Boxes with Event Thread
 
 If the event thread is enabled,
-<javadoc method="show(java.lang.String)">org.zkoss.zul.Messagebox</javadoc>
+[org.zkoss.zul.Messagebox#show(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String))
 will suspend the thread until the end user makes the choice. Thus, the
 following code works correctly.
 

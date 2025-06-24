@@ -42,7 +42,7 @@ This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_re
 ## Collapse
 
 The collapse property
-(<javadoc method="setCollapse(java.lang.String)">org.zkoss.zul.Splitter</javadoc>)
+([org.zkoss.zul.Splitter#setCollapse(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html#setCollapse(java.lang.String)))
 specifies which side of the splitter is collapsed when its grippy
 (button) is clicked. If this property is not specified, the splitter
 will not cause a collapse (and the grippy/button won't appear).
@@ -84,10 +84,10 @@ splitter in the same parent is collapsed so that its width or height is
 
 To know whether a splitter is collapsed, you can check the value of the
 `open` property
-(<javadoc method="isOpen()">org.zkoss.zul.Splitter</javadoc>). To open
+([org.zkoss.zul.Splitter#isOpen()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html#isOpen())). To open
 or collapse dynamically, you are able to set the value of the `open`
 property
-(<javadoc method="setOpen(boolean)">org.zkoss.zul.Splitter</javadoc>).
+([org.zkoss.zul.Splitter#setOpen(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html#setOpen(boolean))).
 
 ### onOpen Event
 
@@ -103,7 +103,7 @@ follows.
 ![](/zk_component_ref/images/DrSplitterOS.png)
 
 You could specify
-<javadoc method="setZclass(java.lang.String)">org.zkoss.zk.ui.HtmlBasedComponent</javadoc>
+[org.zkoss.zk.ui.HtmlBasedComponent#setZclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setZclass(java.lang.String))
 with `z-splitter-os-ver` or `z-splitter-os-hor`, depending on the orient
 is vertical or horizontal.
 

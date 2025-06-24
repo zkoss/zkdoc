@@ -150,21 +150,21 @@ To instantiate a macro component in Java, you could do the followings.
 1.  Looks up the component definition
     ([org.zkoss.zk.ui.metainfo.ComponentDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/ComponentDefinition.html))
     with the use of
-    <javadoc method="getComponentDefinition(java.lang.String, boolean)">org.zkoss.zk.ui.Page</javadoc>.
+    [org.zkoss.zk.ui.Page#getComponentDefinition(java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#getComponentDefinition(java.lang.String, boolean)).
 2.  Invokes
-    <javadoc method="newInstance(org.zkoss.zk.ui.Page, java.lang.String)">org.zkoss.zk.ui.metainfo.ComponentDefinition</javadoc>
+    [org.zkoss.zk.ui.metainfo.ComponentDefinition#newInstance(org.zkoss.zk.ui.Page, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/ComponentDefinition.html#newInstance(org.zkoss.zk.ui.Page, java.lang.String))
     to instantiate the component.
 3.  Invokes
-    <javadoc method="setParent(org.zkoss.zk.ui.Component)">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#setParent(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setParent(org.zkoss.zk.ui.Component))
     to attach the macro to a parent, if necessary.
 4.  Invokes
-    <javadoc method="applyProperties()">org.zkoss.zk.ui.Component</javadoc>
+    [org.zkoss.zk.ui.Component#applyProperties()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#applyProperties())
     to apply the initial properties defined in the component definition.
 5.  Invokes
-    <javadoc method="setDynamicProperty(java.lang.String, java.lang.Object)">org.zkoss.zk.ui.ext.DynamicPropertied</javadoc>
+    [org.zkoss.zk.ui.ext.DynamicPropertied#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html#setDynamicProperty(java.lang.String, java.lang.Object))
     to assign any properties you want.
 6.  Finally, invokes
-    <javadoc method="afterCompose()">org.zkoss.zk.ui.ext.AfterCompose</javadoc>
+    [org.zkoss.zk.ui.ext.AfterCompose#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/AfterCompose.html#afterCompose())
     to create components defined in the template
 
 For example,
@@ -194,7 +194,7 @@ section for details.
 ## Change Template at Runtime
 
 You could change the template dynamically by the use of
-<javadoc method="setMacroURI(java.lang.String)">org.zkoss.zk.ui.HtmlMacroComponent</javadoc>.
+[org.zkoss.zk.ui.HtmlMacroComponent#setMacroURI(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#setMacroURI(java.lang.String)).
 For example,
 
 ```xml

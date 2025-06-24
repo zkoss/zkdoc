@@ -10,13 +10,13 @@ property(attribute) for a particular ZUML document or for the whole application.
 Notice that the initial values are applicable only to the component
 instantiated by ZK Loaders. It has no effect if you instantiate it in
 pure Java (unless you invoke
-<javadoc method="applyProperties()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#applyProperties()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#applyProperties())
 after instantiating a component).
 
 ## Page-wide Initialization
 
 Suppose we want to assign `normal` to the border property
-(<javadoc method="setBorder(java.lang.String)">org.zkoss.zul.Window</javadoc>)
+([org.zkoss.zul.Window#setBorder(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setBorder(java.lang.String)))
 of all windows in a ZUML document, then we could use [the component directive](ZUML_Reference/ZUML/Processing_Instructions/component)
 as follows.
 
@@ -61,7 +61,7 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 # Molds
 
 A mold is yet another property
-(<javadoc method="setMold(java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>),
+([org.zkoss.zk.ui.Component#setMold(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setMold(java.lang.String))),
 so you could change the initial value as described in the previous
 section. However, since it is common to change the value, we allow
 developers to specify the mold for a given component in a library
@@ -86,7 +86,7 @@ Component.setAttribute()\]).
 Notice that the initial values are applicable only to the component
 instantiated by ZK Loaders. It has no effect if you instantiate it in
 pure Java (unless you invoke
-<javadoc method="applyProperties()" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#applyProperties()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#applyProperties())
 after instantiating a component).
 
 ## Page-wide Initialization

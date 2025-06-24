@@ -65,9 +65,9 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 
 By default, the data used to render a component will be stored to the
 component's value property automatically. For tab, it is
-<javadoc method="setValue(T)">org.zkoss.zul.Tab</javadoc>. Thus, you
+[org.zkoss.zul.Tab#setValue(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#setValue(T)). Thus, you
 retrieve it back easily by invoking
-<javadoc method="getValue()">org.zkoss.zul.Tab</javadoc>.
+[org.zkoss.zul.Tab#getValue()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#getValue()).
 
 Of course, if you prefer to store other values, you can simply specify
 `value="${whatever}"` to the `tab` element in the template.
@@ -108,7 +108,7 @@ in a template:
 
 To work around, you have to store the value in, say, component's custom
 attributes
-(<javadoc method="getAttributes()" type="interface">org.zkoss.zul.Component</javadoc>.
+([org.zkoss.zul.Component#getAttributes()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Component.html#getAttributes()).
 For example,
 
 ```xml

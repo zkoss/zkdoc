@@ -7,7 +7,7 @@ maintained on the server. A typical example is that an application might
 use some components, such as `hbox`, for layout and won't access it
 again after rendered. To minimize the memory footprint, ZK supports a
 special property called `stubonly`
-(<javadoc method="setStubonly(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>).
+([org.zkoss.zk.ui.Component#setStubonly(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setStubonly(java.lang.String))).
 Once specified with `true`, its states won't be maintained on the server
 (and all states are maintained at the client). For example,
 
@@ -142,7 +142,7 @@ onChange='System.out.println(event.getClass().getName()+":"+event.getName())'/>
 ```
 
 In addition, the target
-(<javadoc method="getTarget()">org.zkoss.zk.ui.event.Event</javadoc>) is
+([org.zkoss.zk.ui.event.Event#getTarget()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#getTarget())) is
 the stub component rather than the original one, `Textbox`.
 
 ## Client-side Programming

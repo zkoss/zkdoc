@@ -4,7 +4,7 @@ int lastIndexOf(Object value, Object element);
 
   
 i.e.,
-<javadoc method="lastIndexOf(java.lang.Object, java.lang.Object)">org.zkoss.xel.fn.CommonFns</javadoc>
+[org.zkoss.xel.fn.CommonFns#lastIndexOf(java.lang.Object, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#lastIndexOf(java.lang.Object, java.lang.Object))
 
 Returns the index within the value of the last occurrence of the
 specified element.

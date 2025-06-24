@@ -103,7 +103,7 @@ When the file is uploaded, an instance of
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) is sent to the
 button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
-<javadoc method="getMedia()">org.zkoss.zk.ui.event.UploadEvent</javadoc>.
+[org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia()).
 
 > ------------------------------------------------------------------------
 >

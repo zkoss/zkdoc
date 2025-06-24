@@ -51,7 +51,7 @@ public class Foo implements Composer {
 
 If the component is a root, you could retrieve them from page's
 attributes
-(<javadoc method="getAttribute(java.lang.String)" type="interface">org.zkoss.zk.ui.Page</javadoc>).
+([org.zkoss.zk.ui.Page#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html#getAttribute(java.lang.String))).
 
 However, the value of `each` is reset after the XML element that
 `forEach` is associated has been evaluated. Thus, you cannot access it

@@ -75,13 +75,13 @@ only accept one `Orgchildren` as child, developers can put
 `Organigram` supports single selection, Orgitem can be selected by users
 clicking or by programming:
 
-<javadoc method="setSelectedItem(org.zkoss.zkmax.zul.Orgitem)">org.zkoss.zkmax.zul.Organigram</javadoc>
+[org.zkoss.zkmax.zul.Organigram#setSelectedItem(org.zkoss.zkmax.zul.Orgitem)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html#setSelectedItem(org.zkoss.zkmax.zul.Orgitem))
 ,
-<javadoc method="setSelected(java.lang.Boolean)">org.zkoss.zkmax.zul.Orgitem</javadoc>.
+[org.zkoss.zkmax.zul.Orgitem#setSelected(java.lang.Boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setSelected(java.lang.Boolean)).
 
 When an Orgitem is selected, the onSelect event will sent back to the
 server to notify the application, you can call
-<javadoc method="getSelectedItem()">org.zkoss.zkmax.zul.Organigram</javadoc>
+[org.zkoss.zkmax.zul.Organigram#getSelectedItem()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html#getSelectedItem())
 to get the selected Orgitem.
 
 Example:

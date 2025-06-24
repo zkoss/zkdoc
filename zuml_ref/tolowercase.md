@@ -4,11 +4,11 @@ String toLowerCase(String value);
 
   
 i.e.,
-<javadoc method="toLowerCase(java.lang.String)">org.zkoss.xel.fn.StringFns</javadoc>
+[org.zkoss.xel.fn.StringFns#toLowerCase(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#toLowerCase(java.lang.String))
 
 Converts all of the characters in this string to lowercase using the
 rules of the current Locale
-(<javadoc method="getCurrent()">org.zkoss.util.Locales</javadoc>).
+([org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent())).
 
 **Parameters:**
 

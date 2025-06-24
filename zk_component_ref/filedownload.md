@@ -135,7 +135,7 @@ for real download. For example,
 
 And, the page for real download could be implemented with, say, JSP or a
 servlet. ZK provides utilities to simplify the task:
-<javadoc method="write(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.util.media.Media, boolean, boolean)">org.zkoss.web.servlet.http.Https</javadoc>
+[org.zkoss.web.servlet.http.Https#write(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.util.media.Media, boolean, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/http/Https.html#write(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.zkoss.util.media.Media, boolean, boolean))
 and [org.zkoss.util.media.AMedia](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/media/AMedia.html). For example,
 
 ```xml

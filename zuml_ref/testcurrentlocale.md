@@ -4,7 +4,7 @@ boolean testCurrent(String lang, String country);
 
   
 i.e.,
-<javadoc method="testCurrent(java.lang.String, java.lang.String) ">org.zkoss.util.Locales</javadoc>
+[org.zkoss.util.Locales#testCurrent(java.lang.String, java.lang.String) ](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#testCurrent(java.lang.String, java.lang.String) )
 
 Returns whether the current locale
 ([getCurrentLocale()](ZUML_Reference/EL_Expressions/Core_Methods/getCurrentLocale))

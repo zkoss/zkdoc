@@ -58,7 +58,7 @@ variables in EL expressions.
 
 In addition to ZUML, you can override a Widget's **method** or **field**
 by the use of
-<javadoc method="setWidgetOverride(java.lang.String, java.lang.String)" type="interface">org.zkoss.zk.ui.Component</javadoc>
+[org.zkoss.zk.ui.Component#setWidgetOverride(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setWidgetOverride(java.lang.String, java.lang.String))
 at the server. For example,
 
 ```java

@@ -122,7 +122,7 @@ Then, the result:
 
 Notice that you can manipulate the tree dynamically (such as adding a
 node with
-<javadoc method="add(org.zkoss.zul.TreeNode)">org.zkoss.zul.DefaultTreeNode</javadoc>).
+[org.zkoss.zul.DefaultTreeNode#add(org.zkoss.zul.TreeNode)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#add(org.zkoss.zul.TreeNode))).
 The tree shown at the browser will be modified accordingly.
 
 # Example: Create/Update/Delete operation with DefaultTreeNode
@@ -171,9 +171,9 @@ tree item.
 ## Add/Insert
 
 [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) provides
-<javadoc method="add(org.zkoss.zul.TreeNode)">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#add(org.zkoss.zul.TreeNode)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#add(org.zkoss.zul.TreeNode))
 and
-<javadoc method="insert(org.zkoss.zul.TreeNode, int)">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#insert(org.zkoss.zul.TreeNode, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#insert(org.zkoss.zul.TreeNode, int))
 that can manipulate the tree dynamically.
 
 Here we register onClick event to create Button in
@@ -218,17 +218,17 @@ public void onClick$create() {
 ```
 
 If index is not specified, we add a new node using
-<javadoc method="add(org.zkoss.zul.TreeNode)">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#add(org.zkoss.zul.TreeNode)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#add(org.zkoss.zul.TreeNode))
 at the bottom of the parent node by default, or we can also use
-<javadoc method="insert(org.zkoss.zul.TreeNode, int)">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#insert(org.zkoss.zul.TreeNode, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#insert(org.zkoss.zul.TreeNode, int))
 to insert a new node before the specified index.
 
 ## Update/Delete
 
 [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) provides
-<javadoc method="setData(java.lang.Object)">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#setData(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#setData(java.lang.Object))
 which can update selected tree items and
-<javadoc method="removeFromParent()">org.zkoss.zul.DefaultTreeNode</javadoc>
+[org.zkoss.zul.DefaultTreeNode#removeFromParent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html#removeFromParent())
 that can delete the selected tree item from its parent node.
 
 Here we register onClick event to update and delete Button in
@@ -287,10 +287,10 @@ Implementing all
 [org.zkoss.zul.TreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html) directly
 provides the maximal flexibility, such as load-on-demand and caching.
 For example, you don't have to load a node until
-<javadoc method="getChild(java.lang.Object, int)" type="interface">org.zkoss.zul.TreeModel</javadoc>
+[org.zkoss.zul.TreeModel#getChild(java.lang.Object, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getChild(java.lang.Object, int))
 is called. In addition, you could load and cache all children of a given
 node when
-<javadoc method="getChild(java.lang.Object, int)" type="interface">org.zkoss.zul.TreeModel</javadoc>
+[org.zkoss.zul.TreeModel#getChild(java.lang.Object, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getChild(java.lang.Object, int))
 is called the first time against a particular node, and then return a
 child directly if it is in the cache.
 
@@ -309,19 +309,19 @@ public class MyModel extends AbstractTreeModel<Object> {
 
 By extending from [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html),
 you have to implement three methods:
-<javadoc method="getChild(java.lang.Object, int)" type="interface">org.zkoss.zul.TreeModel</javadoc>,
-<javadoc method="getChildCount(java.lang.Object)" type="interface">org.zkoss.zul.TreeModel</javadoc>,
+[org.zkoss.zul.TreeModel#getChild(java.lang.Object, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getChild(java.lang.Object, int)),
+[org.zkoss.zul.TreeModel#getChildCount(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getChildCount(java.lang.Object)),
 and
-<javadoc method="isLeaf(java.lang.Object)" type="interface">org.zkoss.zul.TreeModel</javadoc>.
+[org.zkoss.zul.TreeModel#isLeaf(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#isLeaf(java.lang.Object)).
 Optionally, you could implement
-<javadoc method="getIndexOfChild(java.lang.Object, java.langObject)" type="interface">org.zkoss.zul.TreeModel</javadoc>[^2],
+[org.zkoss.zul.TreeModel#getIndexOfChild(java.lang.Object, java.langObject)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getIndexOfChild(java.lang.Object, java.langObject))[^2],
 if you have a better algorithm than iterating through all children of a
 given parent.
 
 ## Improving Performance
 
 You **should** override
-<javadoc method="getPath(E)" type="interface">org.zkoss.zul.TreeModel</javadoc>
+[org.zkoss.zul.TreeModel#getPath(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getPath(E))
 to implement an efficient way to deduce the sibling index of each
 ancestor of a node. Because the default implementation of `getPath()` in
 `AbstractTreeModel` will traverse from the root node to compute the
@@ -385,7 +385,7 @@ And, the result looks like this:
 To support the sorting, the model must implement
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too.
 Thus, when the end user clicks the header to request the sorting,
-<javadoc method="sort(java.util.Comparator, boolean)" type="interface">org.zkoss.zul.ext.Sortable</javadoc>
+[org.zkoss.zul.ext.Sortable#sort(java.util.Comparator, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html#sort(java.util.Comparator, boolean))
 will be called.
 
 For example, (pseudo code)
@@ -413,22 +413,21 @@ you shall also implement
 [org.zkoss.zul.ext.TreeSelectableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html).
 When using with a component supporting the selection (such as
 [org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)), the component will invoke
-<javadoc method="isPathSelected(int[])" type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>
+[org.zkoss.zul.ext.TreeSelectableModel#isPathSelected(int[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html#isPathSelected(int[]))
 to display the selected elements correctly. In addition, if the end user
 selects or deselects an item,
-<javadoc method="addSelectionPath(int[])" type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>
+[org.zkoss.zul.ext.TreeSelectableModel#addSelectionPath(int[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html#addSelectionPath(int[]))
 and
-<javadoc method="removeSelectionPath(int[])" type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>
+[org.zkoss.zul.ext.TreeSelectableModel#removeSelectionPath(int[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html#removeSelectionPath(int[]))
 will be called by the component to notify the model that the selection
 is changed. Then, you can update the selection into the persistent layer
 (such as database) if necessary.
 
 On the other hand, when the model detects the selection is changed (such
 as
-<javadoc method="addSelectionPath(int[])" type="interface">org.zkoss.zul.ext.TreeSelectableModel</javadoc>
+[org.zkoss.zul.ext.TreeSelectableModel#addSelectionPath(int[])](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html#addSelectionPath(int[]))
 is called), it has to fire the event, such as
-<javadoc method="SELECTION_CHANGED">org.zkoss.zul.event.TreeDataEvent
-</javadoc> to notify the component. It will cause the component to
+[org.zkoss.zul.event.TreeDataEvent#SELECTION_CHANGED](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/TreeDataEvent.html#SELECTION_CHANGED) to notify the component. It will cause the component to
 correct the selection[^3].
 
 All default implementations, including
@@ -492,7 +491,7 @@ implementation generally doesn't have to implement it explicitly.
 
 **Note:** If your tree model contains a lot of nodes, please also
 implement
-<javadoc method="getPath(E)" type="interface">org.zkoss.zul.TreeModel</javadoc>
+[org.zkoss.zul.TreeModel#getPath(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getPath(E))
 to get better performance, by default it is implemented by [Depth-first search](http://en.wikipedia.org/wiki/Depth-first_search) to get the path
 from a tree node.
 
@@ -537,7 +536,7 @@ DefaultTreeModel model2 = new DefaultTreeModel(root, true);
     [org.zkoss.zul.SimpleModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleModel.html), which is similar
     except it assumes the tree structure is immutable
 
-[^2]: <javadoc method="getIndexOfChild(java.lang.Object, java.langObject)" type="interface">org.zkoss.zul.TreeModel</javadoc>
+[^2]: [org.zkoss.zul.TreeModel#getIndexOfChild(java.lang.Object, java.langObject)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html#getIndexOfChild(java.lang.Object, java.langObject))
     is available in 5.0.6 and later.
 
 [^3]: Don't worry. The component is smart enough to prevent the dead

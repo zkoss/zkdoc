@@ -46,11 +46,11 @@ example, you could specify the following in `WEB-INF/zk.xml`:
 ```
 
 Alternatively, if you prefer to specify it in Java, you could invoke
-<javadoc method="setProperty(java.lang.String, java.lang.String)">org.zkoss.lang.Library</javadoc>.
+[org.zkoss.lang.Library#setProperty(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html#setProperty(java.lang.String, java.lang.String)).
 Furthermore, to avoid typos, you could use
-<javadoc method="setAttribute(java.lang.String, java.lang.Object)" type="interface">org.zkoss.zk.ui.WebApp</javadoc>
+[org.zkoss.zk.ui.WebApp#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#setAttribute(java.lang.String, java.lang.Object))
 and
-<javadoc method="PREFERRED_FIRST_DAY_OF_WEEK">org.zkoss.web.Attributes</javadoc>
+[org.zkoss.web.Attributes#PREFERRED_FIRST_DAY_OF_WEEK](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/Attributes.html#PREFERRED_FIRST_DAY_OF_WEEK)
 as follows.
 
 ```java
@@ -58,14 +58,14 @@ webApp.setAttribute(org.zkoss.web.Attributes.PREFERRED_FIRST_DAY_OF_WEEK, java.u
 ```
 
 As shown above, the allowed values of
-<javadoc method="setAttribute(java.lang.String, java.lang.Object)" type="interface">org.zkoss.zk.ui.WebApp</javadoc>
+[org.zkoss.zk.ui.WebApp#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#setAttribute(java.lang.String, java.lang.Object))
 include Calendar.SUNDAY, Calendar.MONDAY and so on.
 
 ## Per-user first-day-of-week
 
 By specifying a value to the session attribute called
 `org.zkoss.web.preferred.firstDayOfWeek` (i.e.,
-<javadoc method="PREFERRED_FIRST_DAY_OF_WEEK">org.zkoss.web.Attributes</javadoc>),
+[org.zkoss.web.Attributes#PREFERRED_FIRST_DAY_OF_WEEK](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/Attributes.html#PREFERRED_FIRST_DAY_OF_WEEK)),
 you can control the first day of the week for the given session. The
 allowed values include Calendar.SUNDAY, Calendar.MONDAY and so on.
 

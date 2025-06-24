@@ -84,7 +84,7 @@ as follows.
 where `uuid` is the ID of the element that you can retrieve by
 `document.getElementById`, and `url`is the new URL that the iframe is
 navigated to. Notice that `url` includes the context path, while
-<javadoc method="getURI()">org.zkoss.zk.ui.event.URIEvent</javadoc> does
+[org.zkoss.zk.ui.event.URIEvent#getURI()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html#getURI()) does
 *not*.
 
 # Retrieving Component inside Iframe

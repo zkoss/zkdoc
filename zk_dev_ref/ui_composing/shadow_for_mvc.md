@@ -58,10 +58,10 @@ difference is that developers must designate a boolean value, called
 **autodrop**, to indicate whether to drop those rendered children or
 not. If true, every time the user changes the template or detaches from
 the original host, ShadowTemplate will
-<javadoc method="recreate()">org.zkoss.zk.ui.HtmlShadowElement</javadoc>
+[org.zkoss.zk.ui.HtmlShadowElement#recreate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlShadowElement.html#recreate())
 or remove the children; otherwise, rendered children will remain. After
 instantiating ShadowTemplate instance, developers can trigger
-<javadoc method="apply(org.zkoss.zk.ui.Component)">org.zkoss.zuti.zul.ShadowTemplate</javadoc>
+[org.zkoss.zuti.zul.ShadowTemplate#apply(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/ShadowTemplate.html#apply(org.zkoss.zk.ui.Component))
 to compose the specified template, with shadow host passed as a
 parameter. Note: the passed host should be the same one if **autodrop**
 is true, or pass null to detach the original host first.
