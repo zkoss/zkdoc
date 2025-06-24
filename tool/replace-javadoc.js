@@ -45,21 +45,32 @@ class JavadocReplacer {
       const directoryMatch = match.match(/directory="([^"]+)"/);
       const directory = directoryMatch ? directoryMatch[1] : 'zk';
       
-      // Skip processing for jsdoc directory (special case)
+      let baseUrl, urlPath;
+      
+      // Handle jsdoc directory as special case
       if (directoryMatch && directoryMatch[1] === 'jsdoc') {
-        return match; // Return original unchanged
-      }
-      
-      // Build the complete base URL
-      const baseUrl = this.javadocBaseUrl + directory + '/';
-      
-      // Convert class name to URL path
-      // e.g., org.zkoss.zul.ChartModel -> org/zkoss/zul/ChartModel.html
-      let urlPath = cleanClassName.replace(/\./g, '/') + '.html';
-      
-      // Add method anchor if method attribute exists
-      if (methodName) {
-        urlPath += '#' + methodName;
+        // JSDoc special case: https://www.zkoss.org/javadoc/latest/jsdoc/classes/
+        baseUrl = this.javadocBaseUrl + 'jsdoc/classes/';
+        
+        // For jsdoc, class name like "zk.Widget" becomes "zk.Widget.html" (no path conversion)
+        urlPath = cleanClassName + '.html';
+        
+        // Add method anchor if method attribute exists
+        if (methodName) {
+          urlPath += '#' + methodName;
+        }
+      } else {
+        // Standard javadoc case
+        baseUrl = this.javadocBaseUrl + directory + '/';
+        
+        // Convert class name to URL path
+        // e.g., org.zkoss.zul.ChartModel -> org/zkoss/zul/ChartModel.html
+        urlPath = cleanClassName.replace(/\./g, '/') + '.html';
+        
+        // Add method anchor if method attribute exists
+        if (methodName) {
+          urlPath += '#' + methodName;
+        }
       }
       
       const fullUrl = baseUrl + urlPath;
