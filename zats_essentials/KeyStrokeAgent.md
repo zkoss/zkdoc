@@ -34,7 +34,7 @@ component.as(KeyStrokeAgent.class).stroke("$#left");
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Sub-class of <javadoc> org.zkoss.zk.ui.HtmlBasedComponent
+<td><p>Sub-class of <javadoc>org.zkoss.zk.ui.HtmlBasedComponent
 </javadoc></p></td>
 <td><p>5, 6</p></td>
 <td></td>

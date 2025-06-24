@@ -37,40 +37,35 @@ dropped the dragged target to a component.</p></td>
 <td><center>
 <p><code>onClick</code></p>
 </center></td>
-<td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MouseEvent</javadoc></p>
+<td><p><strong>Event:</strong> <javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc></p>
 <p>Denotes a user has clicked a component.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
 <p><code>onDoubleClick</code></p>
 </center></td>
-<td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MouseEvent</javadoc> Denotes a user has
+<td><p><strong>Event:</strong> <javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc> Denotes a user has
 double-clicked a component.</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onRightClick</code></p>
 </center></td>
-<td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MouseEvent</javadoc> Denotes a user has
+<td><p><strong>Event:</strong> <javadoc>org.zkoss.zk.ui.event.MouseEvent</javadoc> Denotes a user has
 right-clicked a component.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
 <p><code>onMouseOver</code></p>
 </center></td>
-<td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
+<td><p><strong>Event:</strong> <javadoc>org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
 %} Denotes a user has hovered over the component.</p></td>
 </tr>
 <tr class="even">
 <td><center>
 <p><code>onMouseOut</code></p>
 </center></td>
-<td><p><strong>Event:</strong> <javadoc>
-org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
+<td><p><strong>Event:</strong> <javadoc>org.zkoss.zk.ui.event.MoveEvent</javadoc> {% include version-badge.html version=5.0.3
 %} Denotes a user has moved out a component.</p></td>
 </tr>
 <tr class="odd">

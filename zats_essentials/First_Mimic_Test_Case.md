@@ -69,8 +69,7 @@ another client object.
 Wraps ZK Desktop object, we usually call its `query()` or `queryAll()`
 to retrieve `ComponentAgent` with selector syntax.
 
-For available selector syntax, please refer to <javadoc>
-org.zkoss.zk.ui.select.SelectorComposer </javadoc> or [Small Talks/2011/January/Envisage ZK 6: An Annotation Based Composer For MVC](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC)
+For available selector syntax, please refer to <javadoc>org.zkoss.zk.ui.select.SelectorComposer </javadoc> or [Small Talks/2011/January/Envisage ZK 6: An Annotation Based Composer For MVC](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC)
 
 <javadoc directory="zats">org.zkoss.zats.mimic.ComponentAgent </javadoc>  
 Mimics a ZK component and determines which operation you can perform on

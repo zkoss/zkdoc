@@ -34,8 +34,7 @@ specify.</p></td>
 <tr class="even">
 <td><p> CONVERTER</p></td>
 <td><p>  System converter for special properties.
-(<strong>optional</strong>) e.g. SelectedItem in listbox. see <javadoc>
-org.zkoss.bind.converter.sys.ListboxSelectedItemConverter
+(<strong>optional</strong>) e.g. SelectedItem in listbox. see <javadoc>org.zkoss.bind.converter.sys.ListboxSelectedItemConverter
 </javadoc></p></td>
 </tr>
 <tr class="odd">
@@ -183,8 +182,7 @@ Let's take a look at some examples.
 - The reason we use SAVE_REPLACEMENT is that Selectbox has no
   "selectedItem" attribute, so we save to another replacement attribute
   "selectedIndex". (line 27,28) Because those 2 attributes have
-  different type, we have to use a converter, <javadoc>
-  org.zkoss.bind.converter.sys.SelectboxSelectedItemConverter </javadoc>
+  different type, we have to use a converter, <javadoc>  org.zkoss.bind.converter.sys.SelectboxSelectedItemConverter </javadoc>
   to convert selectedItem. (line 31,32)
 
 # Version History
