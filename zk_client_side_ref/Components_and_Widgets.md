@@ -27,7 +27,7 @@ to notify the application about a user's activity, such as clicking and
 dragging. For example, when an application invokes
 [org.zkoss.zul.Button#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setLabel(java.lang.String))
 to change the label of a button component, the
-<javadoc directory="jsdoc" method="setLabel(_global_.String)">zul.wgt.Button</javadoc>
+[zul.wgt.Button#setLabel(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Button.html#setLabel(_global_.String))
 of corresponding button widget (aka., peer widget) will be invoked at
 the client to change the visual appearance, as shown right. When the
 user clicks the button widget, the onClick event will be sent back to
@@ -172,13 +172,13 @@ elements</p></td>
 There are several ways to attach a widget to the DOM tree
 
 1.  Invoke
-    <javadoc directory="jsdoc" method="replaceHTML(zk.Object, zk.Desktop, zk.Skipper)">zk.Widget</javadoc>
+    [zk.Widget#replaceHTML(zk.Object, zk.Desktop, zk.Skipper)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#replaceHTML(zk.Object, zk.Desktop, zk.Skipper))
     to replace an existent DOM element with the DOM element(s) of the
     widget (aka., the DOM content).
 2.  Invoke
-    <javadoc directory="jsdoc" method="appendChild(zk.Widget)">zk.Widget</javadoc>
+    [zk.Widget#appendChild(zk.Widget)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#appendChild(zk.Widget))
     or
-    <javadoc directory="jsdoc" method="insertBefore(zk.Widget, zk.Widget)">zk.Widget</javadoc>
+    [zk.Widget#insertBefore(zk.Widget, zk.Widget)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#insertBefore(zk.Widget, zk.Widget))
     to make a widget a child of another widget that are already attached
     to the DOM tree.
 

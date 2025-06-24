@@ -5,7 +5,7 @@
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: [org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.menu.Menuitem</javadoc>
+- JavaScript API: [zul.menu.Menuitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menuitem.html)
 - Style Guide: [ Menuitem in Menubar]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menubar/menuitem_in_menubar),
   [ Menuitem in Menupopup]({{site.baseurl}}/zk_style_customization_guide/xul_component_specification/menupopup/menuitem_in_menupopup)
 

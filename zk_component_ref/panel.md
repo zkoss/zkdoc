@@ -4,7 +4,7 @@
 
 - Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
 - Java API: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wnd.Panel</javadoc>
+- JavaScript API: [zul.wnd.Panel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panel.html)
 
 
 # Employment/Purpose

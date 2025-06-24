@@ -6,7 +6,7 @@
   [Fisheyebar](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
 - Java API: [org.zkoss.zkex.zul.Fisheyebar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheyebar.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.menu.Fisheyebar</javadoc>
+  [zkex.menu.Fisheyebar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.menu.Fisheyebar.html)
 
 - [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
 

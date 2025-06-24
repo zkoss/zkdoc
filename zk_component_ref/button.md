@@ -5,7 +5,7 @@
 - Demonstration: [Button](http://www.zkoss.org/zkdemo/input/button) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Button</javadoc>
+- JavaScript API: [zul.wgt.Button](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Button.html)
 
 
 # Employment/Purpose

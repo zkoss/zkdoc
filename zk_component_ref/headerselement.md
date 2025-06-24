@@ -5,7 +5,7 @@
 - Demonstration: [Headers Element](http://www.zkoss.org/zkdemo/userguide/#g13)
 - Java API: [org.zkoss.zul.impl.HeadersElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeadersElement.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.mesh.HeadWidget</javadoc>
+  [zul.mesh.HeadWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.HeadWidget.html)
 
 # Employment/Purpose
 

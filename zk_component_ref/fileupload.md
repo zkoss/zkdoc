@@ -3,7 +3,7 @@
 - Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
 - Java API: [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.wgt.Fileupload</javadoc>
+  [zul.wgt.Fileupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Fileupload.html)
 
 
 # Employment/Purpose

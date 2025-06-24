@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Anchorlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorlayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.layout.Anchorlayout</javadoc>
+  [zul.layout.Anchorlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorlayout.html)
 
 
 {% include version-badge.html version="6.0.0" %}

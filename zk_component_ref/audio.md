@@ -4,7 +4,7 @@
 
 - Demonstration: [Audio](http://www.zkoss.org/zksandbox/userguide/#u5)
 - Java API: [org.zkoss.zul.Audio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Audio.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.med.Audio</javadoc>
+- JavaScript API: [zul.med.Audio](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Audio.html)
 
 # Employment/Purpose
 

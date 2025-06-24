@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.impl.InputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.inp.InputWidget</javadoc>
+  [zul.inp.InputWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.InputWidget.html)
 
 # Employment/Purpose
 

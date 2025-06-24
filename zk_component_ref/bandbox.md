@@ -5,7 +5,7 @@
 - Demonstration:
   [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: [org.zkoss.zul.Bandbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandbox</javadoc>
+- JavaScript API: [zul.inp.Bandbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandbox.html)
 
 # Employment/Purpose
 

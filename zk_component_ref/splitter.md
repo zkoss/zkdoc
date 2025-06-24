@@ -4,7 +4,7 @@
 
 - Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
 - Java API: [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.box.Splitter</javadoc>
+- JavaScript API: [zul.box.Splitter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Splitter.html)
 
 
 # Employment/Purpose

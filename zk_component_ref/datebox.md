@@ -4,7 +4,7 @@
 
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: [org.zkoss.zul.Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.db.Datebox</javadoc>
+- JavaScript API: [zul.db.Datebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Datebox.html)
 
 
 # Employment/Purpose
@@ -34,7 +34,7 @@ An edit box for holding a date. After click on the calender, a
 
 {% include version-badge.html version=5.0.3 %} You can customize the rendering of
 the calendar at the client by JavaScript code that overrides
-<javadoc directory="jsdoc">zul.db.Renderer</javadoc>.
+[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Renderer.html).
 
 # Example
 

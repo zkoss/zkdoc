@@ -3,8 +3,7 @@
 # Orgnode
 
 - Java API: [org.zkoss.zkmax.zul.Orgnode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgnode.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgnode
-  </javadoc>
+- JavaScript API: [zkmax.layout.Orgnode](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgnode.html)
 
 `{% include edition-availability.html edition="ee" %}`
 

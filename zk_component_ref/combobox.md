@@ -4,7 +4,7 @@
 
 - Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
 - Java API: [org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.inp.Combobox</javadoc>
+- JavaScript API: [zul.inp.Combobox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Combobox.html)
 
 
 # Employment/Purpose

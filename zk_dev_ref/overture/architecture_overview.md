@@ -113,8 +113,8 @@ enhanced later as the project progresses.
 1.  The execution flow starts from a widget or the application. This is
     usually caused by the user's activity (or the application's
     requirement) and is done by posting a client-side event
-    (<javadoc directory="jsdoc">zk.Event</javadoc>) to a widget
-    (<javadoc method="fire(zk.Event,int)" directory="jsdoc">zk.Widget</javadoc>).
+    ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) to a widget
+    ([zk.Widget#fire(zk.Event,int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(zk.Event,int))).
 2.  The event is then bubbled up to the widget's parent, parent's
     parent, and finally the ZK Client Engine[^2]. The ZK Client Engine
     then decides whether and when to send the event back to the server
@@ -150,7 +150,7 @@ enhanced later as the project progresses.
 ## When to Send an Ajax Request
 
 When the ZK Client Engine receives a bubbled-up client-side event
-(<javadoc directory="jsdoc">zk.Event</javadoc>), it will decide whether
+([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)), it will decide whether
 and when to send the event back to the server for further processing:
 
 1.  If there is a non-deferrable event listener registered on the
@@ -179,7 +179,7 @@ applicable.
     running on an Android device.
 
 [^2]: A widget could choose to stop this bubble-up propagation by use of
-    <javadoc directory="jsdoc" method="stop(_global_.Map)">zk.Event</javadoc>
+    [zk.Event#stop(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#stop(_global_.Map))
 
 [^3]: . From the server's viewpoint, an Ajax request is another type of
     HTTP request.

@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Listgroupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroupfoot.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.sel.Listgroupfoot</javadoc>
+  [zkex.sel.Listgroupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroupfoot.html)
 
 - {% include edition-availability.html edition="pe" %}
 

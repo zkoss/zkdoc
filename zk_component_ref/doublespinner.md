@@ -6,7 +6,7 @@
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Doublespinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublespinner.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.inp.Doublespinner</javadoc>
+  [zul.inp.Doublespinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublespinner.html)
 
 
 # Employment/Purpose

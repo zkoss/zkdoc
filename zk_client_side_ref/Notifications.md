@@ -2,12 +2,12 @@ In this section, we discuss the notifications on the client side.
 
 There are 3 ways to notify:
 
-1.  widget events (<javadoc directory="jsdoc">zk.Event</javadoc>)
+1.  widget events ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html))
       
     A widget event is a widget-level event. It is used either to
     encapsulate a DOM event, or to represent a notification specific to
     a widget, or to an application.
-2.  DOM events (<javadoc directory="jsdoc">jq.Event</javadoc>)
+2.  DOM events ([jq.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/jq.Event.html))
       
     A DOM event (Event) is the DOM-level (i.e., low-level) event that is
     usually triggered by the browser. It is usually listened by a widget

@@ -4,7 +4,7 @@
 
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
 - Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Stepbar</javadoc>
+- JavaScript API: [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 

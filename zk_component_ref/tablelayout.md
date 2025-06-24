@@ -8,7 +8,7 @@
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
 - Java API: [org.zkoss.zkmax.zul.Tablelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablelayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Tablelayout</javadoc>
+  [zkmax.layout.Tablelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Tablelayout.html)
 
 
 # Employment/Purpose

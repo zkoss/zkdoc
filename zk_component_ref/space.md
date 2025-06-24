@@ -4,7 +4,7 @@
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Space](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Space.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Space</javadoc>
+- JavaScript API: [zul.wgt.Space](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Space.html)
 
 
 # Employment/Purpose

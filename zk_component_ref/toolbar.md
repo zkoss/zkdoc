@@ -4,7 +4,7 @@
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)
 - Java API: [org.zkoss.zul.Toolbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbar.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Toolbar</javadoc>
+- JavaScript API: [zul.wgt.Toolbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Toolbar.html)
 
 
 # Employment/Purpose

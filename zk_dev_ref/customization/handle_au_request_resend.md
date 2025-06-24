@@ -21,7 +21,7 @@ zAu.ajaxErrorHandler = function (req, status, statusText, ajaxReqTries) {
 ```
 
 For more detail on the arguments, please take a look at
-<javadoc directory="jsdoc" method="ajaxErrorHandler(java.lang.Object, int, _global_.String, int)">\_global\_.zAu</javadoc>
+[\_global\_.zAu#ajaxErrorHandler(java.lang.Object, int, _global_.String, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zAu.html#ajaxErrorHandler(java.lang.Object, int, _global_.String, int))
 
 # Version History
 

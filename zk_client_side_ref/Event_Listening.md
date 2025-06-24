@@ -30,7 +30,7 @@ declaring a server-side listener, the steps are:
 
 - `this` references to the event target widget.
 - Use `this.$f()` to reference fellow widgets
-  (<javadoc directory="jsdoc" method="$f()">zk.Widget</javadoc>)
+  ([zk.Widget#$f()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$f()))
 - `event` is referenced to
   [zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/zk/Event.html).
 
@@ -73,7 +73,7 @@ example,
 
 If you want to stop the event propagation such that the server won't
 receive the event, you could invoke
-<javadoc method="stop(_global_.Map)" directory="jsdoc">zk.Event</javadoc>.
+[zk.Event#stop(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#stop(_global_.Map)).
 For example, the server-side listener won't be invoked in the following
 example:
 
@@ -107,7 +107,7 @@ string to any content you want with Java.
 # Register a Client-side Listener in Client-Side JavaScript
 
 Listening an event at the client could be done by calling
-<javadoc directory="jsdoc" method="listen(_global_.Map, int)">zk.Widget</javadoc>.
+[zk.Widget#listen(_global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#listen(_global_.Map, int)).
 For example,
 
 ```xml
@@ -126,7 +126,7 @@ where
     is not able to retreive the bandbox (`bb`).
 2.  `script` is a widget (unlike `zscript`), so `this` references to the
     `script` widget, rather than the parent.
-3.  <javadoc directory="jsdoc" method="$f(_global_.String)">zk.Widget</javadoc>
+3.  [zk.Widget#$f(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$f(_global_.String))
     is equivalent to
     [org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)),
     except it is a JavaScript method (accessible at the client).
@@ -135,8 +135,8 @@ where
 
 Notice that the event listener handling discussed in the previous
 sections is for handling so-called ZK widget event
-(<javadoc directory="jsdoc">zk.Event</javadoc>). Though rare, you could
+([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)). Though rare, you could
 register a DOM-level event too by the use of jQuery (API:
-<javadoc directory="jsdoc">\_global\_.jq</javadoc>).
+[\_global\_.jq](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jq.html)).
 
 

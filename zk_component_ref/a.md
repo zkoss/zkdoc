@@ -4,7 +4,7 @@
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.A</javadoc>
+- JavaScript API: [zul.wgt.A](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.A.html)
 
 # Employment/Purpose
 

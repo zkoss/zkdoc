@@ -6,7 +6,7 @@
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
 - Java API: [org.zkoss.zkmax.zul.Tablechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablechildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Tablechildren</javadoc>
+  [zkmax.layout.Tablechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Tablechildren.html)
 
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 

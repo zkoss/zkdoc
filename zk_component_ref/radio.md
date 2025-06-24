@@ -4,7 +4,7 @@
 
 - Demonstration: [Radio](http://www.zkoss.org/zkdemo/input/radio_button)
 - Java API: [org.zkoss.zul.Radio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Radio</javadoc>
+- JavaScript API: [zul.wgt.Radio](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Radio.html)
 
 
 # Employment/Purpose

@@ -1,17 +1,17 @@
 
 
 In addtion to widget events
-(<javadoc directory="jsdoc">zk.Event</javadoc>) and DOM events
-(<javadoc directory="jsdoc">jq.Event</javadoc>), there are some special
+([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) and DOM events
+([jq.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/jq.Event.html)), there are some special
 notifications called client activity watches. They are used to notify
 special activities, such as when a widget becomes invisible, or a window
 is brought to the top. This kind of activity can be listened by
-so-called watch (<javadoc directory="jsdoc">\_global\_.zWatch</javadoc>)
+so-called watch ([\_global\_.zWatch](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html))
 
 # Listen to Client Activities
 
 To add a watch (i.e., listen to a client activity), you could use
-<javadoc method="listen(_global_.Map)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#listen(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#listen(_global_.Map))
 as follows:
 
 ```java
@@ -86,9 +86,9 @@ function onWhatever(controller, arg0, arg1...) {
 Where `controller` is a controller allowing you to control of the
 invocation sequence of the listeners, and `arg0` and others are the
 arguments that passed to
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 or
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>.
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)).
 
 Here is the pseudo-code for the controller:
 
@@ -106,19 +106,19 @@ interface Controller {
 ```
 
 - Line 5: it is the original object (usually a widget,
-  <javadoc directory="jsdoc">zk.Widget</javadoc>) passed as the first
+  [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)) passed as the first
   argument when
-  <javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+  [\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
   or
-  <javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+  [\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
   was called. In other words, it is the one that causes the client
   activity, e.g. the widget being dragged, shown, or sized. It is null
   if not available.
 - Line 7, 9: The fire() and fireDown() are used to fore the remaining
   listeners (caused by the same invocation of of
-  <javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+  [\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
   or
-  <javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>)
+  [\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)))
   to be invoked. If your listener doesn't call any of them, the other
   listeners are called in the same order of registration. The `ref` is
   optional. If specified, it will invoke only the listeners for the
@@ -129,7 +129,7 @@ interface Controller {
 # Unlisten
 
 To unlisten, you could use
-<javadoc method="unlisten(_global_.Map)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#unlisten(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#unlisten(_global_.Map))
 as follows:
 
 ```java
@@ -145,9 +145,9 @@ zWatch.unlisten({
 The client activity is triggered (aka., fired) by one of the following 2
 functions:
 
-- <javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>:
+- [\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)):
   will invoke the listeners on the target object
-- <javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>:
+- [\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)):
   will invokes the listeners on the target object and all of **its
   descendants** (i.e., the target object's children, grandchildren...).
 
@@ -160,7 +160,7 @@ zWatch.fireDown("onSize", wgt);
 
 The target object could be anything as long as the listener recognizes
 it, but ZK's standard widgets use
-<javadoc directory="jsdoc">zk.Widget</javadoc> only.
+[zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html) only.
 
 # Client Activities
 
@@ -183,7 +183,7 @@ change it to the correct size. Finally, the listener of afterSize could
 move the floating elements such as popups to the correct position.
 
 Notice
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 must be used to fire this event, so only the listeners of descendants of
 the specified widget will be called.
 
@@ -212,7 +212,7 @@ the correct size. Finally, the the listener of afterSize could move the
 floating elements such as popups to the correct position.
 
 Notice
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 must be used to fire this event, so only the listeners of descendants of
 the specified widget will be called.
 
@@ -235,14 +235,14 @@ desktop.listen({onBeforeDestroy:function(){
 
 `[fire]`
 
-It is called if a <javadoc directory="jsdoc">zk.Widget</javadoc>'s
+It is called if a [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)'s
 `bindLevel` is changed due to moving from one parent to another.
 
 Notice it won't be called if the widget is unbound and bound (i.e.,
 detached and attached).
 
 Notice
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 ## onCommandReady
@@ -255,7 +255,7 @@ It is called after the AU commands are processed and before
 triggered with a "setTimeout".
 
 Notice the
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 ## onEndDrag
@@ -296,7 +296,7 @@ It is called after a widget has gained the focus. It means the 'float'
 widget that is the parent of the focus widget shall become topmost.
 
 Notice
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 - Parameters
@@ -309,7 +309,7 @@ is used, so all listeners are invoked.
 It is called before a widget is going to become invisible.
 
 Notice
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 must be used to fire this event, so only the listeners of descendants of
 wgt will be called.
 
@@ -335,14 +335,14 @@ It is called after the response of the AU request has been sent back
 from the server and processed.
 
 Notice the
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 ## onRestore
 
 `[fireDown]`
 
-It is called when <javadoc directory="jsdoc">zk.Skipper</javadoc>
+It is called when [zk.Skipper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Skipper.html)
 restores the DOM elements.
 
 It is rarely required but to fix the browser's bug if any. Furthermore,
@@ -365,7 +365,7 @@ It is called when the browser window or the specified widget is
 scrolling.
 
 Notice the
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 - Parameters
@@ -380,7 +380,7 @@ It is called before sending the AU request to the server. The implicit
 argument indicates whether all AU requests being sent are implicit.
 
 Notice
-<javadoc method="fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fire(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 is used, so all listeners are invoked.
 
 ## onSize
@@ -401,7 +401,7 @@ Notice that a layout widget (such as Borderlayout and Hbox) must fire
 both `beforeSize` and `onSize` when it resizes.
 
 Notice
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 must be used to fire this event, so only the listeners of descendants of
 wgt will be called.
 
@@ -416,7 +416,7 @@ wgt will be called.
 It is called after a widget has become visible.
 
 Notice
-<javadoc method="fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)" directory="jsdoc">\_global\_.zWatch</javadoc>
+[\_global\_.zWatch#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zWatch.html#fireDown(_global_.String, java.lang.Object, _global_.Map, java.lang.Object...))
 must be used to fire this event, so only the listeners of descendants of
 wgt will be called.
 
@@ -439,9 +439,9 @@ It's fired after an end-user drags a component with a mouse.
 `[fireDown]`
 
 It is called when
-<javadoc directory="jsdoc" method="makeVParent()">\_global\_.jqzk</javadoc>
+[\_global\_.jqzk#makeVParent()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jqzk.html#makeVParent())
 or
-<javadoc directory="jsdoc" method="undoVParent()">\_global\_.jqzk</javadoc>
+[\_global\_.jqzk#undoVParent()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jqzk.html#undoVParent())
 is called to move a DOM element to/from `document.body`.
 
 It is rarely required but could be used to fix a browser's bug if any.

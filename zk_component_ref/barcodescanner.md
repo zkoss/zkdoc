@@ -6,7 +6,7 @@
   [Barcodescanner](http://www.zkoss.org/zksandbox/userguide/#u5)
 - Java API: [org.zkoss.zkmax.zul.Barcodescanner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcodescanner.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.barscanner.Barcodescanner</javadoc>
+  [zkmax.barscanner.Barcodescanner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barscanner.Barcodescanner.html)
 
 {% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
 

@@ -37,7 +37,7 @@ able to access JavaScript at the client, your test code can depend on a
 component's ID and its widget's parent-child relationship as your
 application code depends on the component's ID and component's
 parent-child relationship. They are *identical*, except one is
-JavaScript and called <javadoc directory="jsdoc">zk.Widget</javadoc>,
+JavaScript and called [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html),
 while the other is Java and called
 [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html).
 
@@ -48,16 +48,16 @@ widget level (rather than the DOM level).
 To retrieve widgets at the client, you can use one of the following
 JavaScript API:
 
-- <javadoc directory="jsdoc">\_global\_.jq</javadoc>
-- <javadoc directory="jsdoc" method="$(zk.Object, _global_.Map)">zk.Widget</javadoc>
+- [\_global\_.jq](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jq.html)
+- [zk.Widget#$(zk.Object, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$(zk.Object, _global_.Map))
 
-<javadoc directory="jsdoc">\_global\_.jq</javadoc> allows your test code
+[\_global\_.jq](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jq.html) allows your test code
 to access the components directly, so the test code could depend on a
 component's ID
-(<javadoc directory="jsdoc" method="id">zk.Widget</javadoc>) and the
+([zk.Widget#id](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#id)) and the
 widget tree
-(<javadoc directory="jsdoc" method="firstChild">zk.Widget</javadoc>,
-<javadoc directory="jsdoc" method="nextSibling">zk.Widget</javadoc> and
+([zk.Widget#firstChild](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#firstChild),
+[zk.Widget#nextSibling](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#nextSibling) and
 so on).
 
 ```javascript
@@ -68,7 +68,7 @@ jq('$x $y'); //returns the widget whose ID is y and it is in an ID space owned b
 
 With this approach, you still can verify the DOM structure if you want,
 since it can be retrieved from a widget's
-<javadoc directory="jsdoc" method="$n()">zk.Widget</javadoc>.
+[zk.Widget#$n()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$n()).
 
 [ZTL](http://code.google.com/p/zk-ztl/) is a typical example that takes
 this approach. For more information, please refer to the [ZTL section]({{site.baseurl}}/zk_dev_ref/testing/ztl).

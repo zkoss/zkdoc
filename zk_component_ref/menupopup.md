@@ -5,7 +5,7 @@
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menupopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menupopup.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.menu.Menupopup</javadoc>
+  [zul.menu.Menupopup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menupopup.html)
 
 # Employment/Purpose
 

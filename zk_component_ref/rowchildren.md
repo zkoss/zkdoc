@@ -4,7 +4,7 @@
 
 - Java API: [org.zkoss.zkmax.zul.Rowchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Rowchildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Rowchildren</javadoc>
+  [zkmax.layout.Rowchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Rowchildren.html)
 
 - {% include edition-availability.html edition="pe" %}
 

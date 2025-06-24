@@ -5,7 +5,7 @@ and application scope.
 
 # Per-Widget Customization
 
-<javadoc directory="jsdoc">zk.Widget</javadoc> has a set of methods for
+[zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html) has a set of methods for
 handling drag-and-drop. You could customize them based on your
 requirement.
 
@@ -35,7 +35,7 @@ zk.override(zul.inp.Combobox.prototype, supercomobox, {
 });
 ```
 
-If you override <javadoc directory="jsdoc">zk.Widget</javadoc>, then all
+If you override [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html), then all
 widgets are affected[^2].
 
 ```javascript
@@ -73,7 +73,7 @@ from Java.
 ```
 
 Here is a list of methods you could override. For a complete list,
-please refer to <javadoc directory="jsdoc">zk.Widget</javadoc>.
+please refer to [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html).
 
 <table>
 <thead>
@@ -84,20 +84,20 @@ please refer to <javadoc directory="jsdoc">zk.Widget</javadoc>.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><javadoc method="dropEffect_(boolean)" directory="jsdoc">zk.Widget</javadoc></p></td>
+<td><p>[zk.Widget#dropEffect_(boolean)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#dropEffect_(boolean))</p></td>
 <td><p>Called to have some visual effect when the user is dragging a
 widget over this widget and this widget is droppable. Notice it is the
 effect to indicate that a widget is droppable.</p></td>
 </tr>
 <tr class="even">
-<td><p><javadoc method="onDrop_(zk.Draggable, zk.Event)" directory="jsdoc">zk.Widget</javadoc></p></td>
+<td><p>[zk.Widget#onDrop_(zk.Draggable, zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#onDrop_(zk.Draggable, zk.Event))</p></td>
 <td><p>Called to fire the onDrop event. You could override it to
 implement some effects to indicate dropping.</p></td>
 </tr>
 <tr class="odd">
-<td><p><javadoc method="getDragOptions_(_global_.Map)" directory="jsdoc">zk.Widget</javadoc></p></td>
+<td><p>[zk.Widget#getDragOptions_(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#getDragOptions_(_global_.Map))</p></td>
 <td><p>Returns the options used to instantiate
-<javadoc directory="jsdoc">zk.Draggable</javadoc>. There is a lot what
+[zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html). There is a lot what
 you could customize with this method, since the options control many
 effects, such <code>starteffect</code>, <code>endeffect</code>,
 <code>change</code> and so on. Note: the dragOptions map received as
@@ -118,19 +118,19 @@ behavior is to copy the object, then modify and return the copy.</p>
                     }
                     return windowOptions;
                 }</code></pre>
-<p>Please refer to <javadoc directory="jsdoc">zk.Draggable</javadoc> and
+<p>Please refer to [zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html) and
 the source code for more information.</p></td>
 </tr>
 <tr class="even">
-<td><p><javadoc method="cloneDrag_(zk.Draggable, _global_.Offset)" directory="jsdoc">zk.Widget</javadoc></p></td>
+<td><p>[zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset))</p></td>
 <td><p>Called to create the visual effect representing what is being
 dragged. In other words, it creates the DOM element that will be moved
 with the mouse pointer when the user is dragging.</p></td>
 </tr>
 <tr class="odd">
-<td><p><javadoc method="uncloneDrag_(zk.Draggable)" directory="jsdoc">zk.Widget</javadoc></p></td>
+<td><p>[zk.Widget#uncloneDrag_(zk.Draggable)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#uncloneDrag_(zk.Draggable))</p></td>
 <td><p>Undo the visual effect created by
-<javadoc method="cloneDrag_(zk.Draggable, _global_.Offset)" directory="jsdoc">zk.Widget</javadoc>.
+[zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)).
 In other words, it removes the DOM element that was created.</p></td>
 </tr>
 </tbody>
@@ -154,13 +154,13 @@ need to override a Widget's `getDragMessage_()` and return a text, see
 
 # Application Scope Customization
 
-<javadoc directory="jsdoc">zk.DnD</javadoc> provides a collection of
+[zk.DnD](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.DnD.html) provides a collection of
 drag-and-drop utilities. By customizing it, all widgets in the whole
 application will be affected.
 
 For example, if you would like to customize ghosting" of the DOM
 element being dragged, you can override
-<javadoc method="ghost(zk.Draggable, _global_.Offset, _global_.String)" directory="jsdoc">zk.DnD</javadoc>
+[zk.DnD#ghost(zk.Draggable, _global_.Offset, _global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.DnD.html#ghost(zk.Draggable, _global_.Offset, _global_.String))
 as follows.
 
 ```javascript
@@ -172,7 +172,7 @@ zk.DnD.ghost = function (drag, ofs, msg) {
 }
 ```
 
-[^1]: <javadoc method="override(java.lang.Object, _global_.Map, _global_.Map)" directory="jsdoc">\_global\_.zk</javadoc>
+[^1]: [\_global\_.zk#override(java.lang.Object, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#override(java.lang.Object, _global_.Map, _global_.Map))
     is a utility to simplify the overriding of a method.
 
 [^2]: It is also a browser-level customization

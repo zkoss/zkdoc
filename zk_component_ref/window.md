@@ -3,7 +3,7 @@
 - Demonstration:
   [Window](http://www.zkoss.org/zkdemo/window/positioning)
 - Java API: [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wnd.Window</javadoc>
+- JavaScript API: [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)
 
 
 # Employement/Purpose

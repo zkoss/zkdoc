@@ -6,7 +6,7 @@
   [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
 - Java API: [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.inp.Searchbox</javadoc>
+  [zkmax.inp.Searchbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Searchbox.html)
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 

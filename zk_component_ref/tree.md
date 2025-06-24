@@ -4,7 +4,7 @@
 
 - Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
 - Java API: [org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.sel.Tree </javadoc>
+- JavaScript API: [zul.sel.Tree](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Tree.html)
 
 
 # Employment/Purpose

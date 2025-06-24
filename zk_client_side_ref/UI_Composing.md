@@ -4,7 +4,7 @@
 
 A UI object visible to a user at the client is hosted by a JavaScript
 object[^1] called a widget
-(<javadoc directory="jsdoc">zk.Widget</javadoc>). On the other hand, a
+([zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)). On the other hand, a
 component is a Java object
 ([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)) representing the UI
 object at the server that an application manipulates directly. Once a
@@ -104,7 +104,7 @@ refers to the label.
 ```
 
 To retrieve a fellow[^2], you could use
-<javadoc directory="jsdoc" method="$f(_global_.String)">zk.Widget</javadoc>.
+[zk.Widget#$f(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$f(_global_.String)).
 It works in a similar manner as
 [org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)).
 For example,
@@ -115,7 +115,7 @@ this.$().foo.setValue('found'); //equivalent to the above statement
 ```
 
 If you don't have a widget as a reference, you could use
-<javadoc directory="jsdoc" method="$(zk.Object, _global_.Map)">zk.Widget</javadoc>.
+[zk.Widget#$(zk.Object, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$(zk.Object, _global_.Map)).
 Notice it assumes there is only one widget with the given ID in all ID
 spaces of the desktop. For example,
 
@@ -145,7 +145,7 @@ In addition, you can use jQuery to select a DOM element of a widget[^3].
 For example `jq("@window")` will select DOM elements of all window
 widgets. And, `jq("$win1")` will select the DOM elements of all widgets
 whose ID is `win1`. (see
-<javadoc directory="jsdoc">\_global\_.jq</javadoc>).
+[\_global\_.jq](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jq.html)).
 
 ```xml
 <window xmlns:w="http://www.zkoss.org/2005/zk/client">
@@ -224,9 +224,9 @@ tree to make it visible to users[^4]. It can be done in one of two ways:
 2.  Replace or insert it to a DOM element
 
 You could use
-<javadoc directory="jsdoc" method="appendChild(zk.Widget)">zk.Widget</javadoc>
+[zk.Widget#appendChild(zk.Widget)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#appendChild(zk.Widget))
 or
-<javadoc directory="jsdoc" method="insertBefore(zk.Widget, zk.Widget)">zk.Widget</javadoc>.
+[zk.Widget#insertBefore(zk.Widget, zk.Widget)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#insertBefore(zk.Widget, zk.Widget)).
 For example,
 
 ```xml
@@ -258,11 +258,11 @@ ZK Client Engine loads a JavaScript package only when it is required. It
 minimizes the memory footprint at the client. However, this also means
 that you cannot run your JavaScript code until the required packages
 have been loaded. It can be done by the use of
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>.
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function)).
 For example, suppose you're not sure if the `zul.wnd` and `zul.grid`
 package has been loaded, when you are going to instantiate
-<javadoc directory="jsdoc">zul.wnd.Window</javadoc> and
-<javadoc directory="jsdoc">zul.grid.Grid</javadoc>, you could do as
+[zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html) and
+[zul.grid.Grid](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Grid.html), you could do as
 follows.
 
 ```javaScript
@@ -273,15 +273,15 @@ zk.load("zul.wnd,zul.grid", function () { //load zul.wnd and zul.grid if they ar
 ```
 
 where
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function))
 loads the `zul.wnd` and `zul.grid` packages and then invokes the
 function when they have been loaded.
 
 Notice that there is another method for similar purpose called
-<javadoc directory="jsdoc" method="aferLoad(_global_.String, _global_.Function)">\_global\_.zk</javadoc>.
+[\_global\_.zk#aferLoad(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#aferLoad(_global_.String, _global_.Function)).
 Unlike
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>,
-<javadoc directory="jsdoc" method="afterLoad(_global_.String, _global_.Function)">\_global\_.zk</javadoc>
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function)),
+[\_global\_.zk#afterLoad(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterLoad(_global_.String, _global_.Function))
 won't load the packages. Rather, it queues the given function and
 invokes it when the packages have been loaded. It is useful when you
 want to override the default behavior of a widget. We will discuss it

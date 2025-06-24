@@ -2,7 +2,7 @@
 
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
 - Java API: [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.sel.Listbox</javadoc>
+- JavaScript API: [zul.sel.Listbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listbox.html)
 
 
 # Employment/Purpose

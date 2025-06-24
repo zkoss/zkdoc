@@ -4,7 +4,7 @@
 
 - Demonstration: [Grid (Spreadsheet Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
 - Java API: [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Cell</javadoc>
+- JavaScript API: [zul.wgt.Cell](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Cell.html)
 
 
 # Employment/Purpose

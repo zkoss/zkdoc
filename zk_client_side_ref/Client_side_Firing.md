@@ -1,20 +1,20 @@
 
 
 In general, an AU request is caused by a widget event
-(<javadoc directory="jsdoc">zk.Event</javadoc>) that is going to be sent
+([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) that is going to be sent
 to the server. This happens when the widget event targets a widget that
 is created at the server, or with the `toServer` option (specified in
-<javadoc directory="jsdoc" method="opts">zk.Event</javadoc>). In
+[zk.Event#opts](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#opts)). In
 addition, you could invoke
-<javadoc method="fire(_global_.String, zk.Object, _global_.Map, int)" directory="jsdoc">zk.Widget</javadoc>
+[zk.Widget#fire(_global_.String, zk.Object, _global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(_global_.String, zk.Object, _global_.Map, int))
 explicitly to fire an AU request to the server.
 
 # Fire Event to Widget
 
 An event can be fired to a widget by the use of
-<javadoc method="fire(_global_.String, zk.Object, _global_.Map, int)" directory="jsdoc">zk.Widget</javadoc>
+[zk.Widget#fire(_global_.String, zk.Object, _global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(_global_.String, zk.Object, _global_.Map, int))
 and
-<javadoc method="fireX(zk.Event, int)" directory="jsdoc">zk.Widget</javadoc>.
+[zk.Widget#fireX(zk.Event, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fireX(zk.Event, int)).
 For example,
 
 ```javascript
@@ -26,7 +26,7 @@ onCloseClick: function () {
 The event will be *propagated* to the widget's parent, parent's parent
 and so on, until all ancestors are notified, or the propagation has been
 stopped by
-<javadoc method="stop(_global_.Map)" directory="jsdoc">zk.Event</javadoc>.
+[zk.Event#stop(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#stop(_global_.Map)).
 
 After the widget and all of its ancestors are notified, this event is
 converted to an AU request and sent to the server, if
@@ -42,7 +42,7 @@ converted to an AU request and sent to the server, if
       ([org.zkoss.zk.ui.event.EventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventListener.html))
       for it.
 2.  Or, the `toServer` option has been specified in
-    <javadoc directory="jsdoc" method="opts">zk.Event</javadoc> of the
+    [zk.Event#opts](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#opts) of the
     event. For example,
 
 ```javascript
@@ -58,8 +58,8 @@ For more information, please refer to [the next section]({{site.baseurl}}/zk_cli
 # Fire Event to Desktop
 
 At the client, a desktop
-(<javadoc directory="jsdoc">zk.Desktop</javadoc>) is also a widget
-(<javadoc directory="jsdoc">zk.Widget</javadoc>). So, firing an event to
+([zk.Desktop](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Desktop.html)) is also a widget
+([zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)). So, firing an event to
 a desktop is the same as firing to a widget.
 
 If you would like to fire an event to all desktops, please refer to the
@@ -96,5 +96,5 @@ other hand, it is not necessary to send the change of the value of a
 label widget, since the user won't be able to change it.
 
 [^1]: If a widget is created automatically because of a peer component,
-    <javadoc method="inServer" directory="jsdoc">zk.Widget</javadoc>
+    [zk.Widget#inServer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#inServer)
     will be true.

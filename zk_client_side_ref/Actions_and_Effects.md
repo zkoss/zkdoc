@@ -1,7 +1,7 @@
 Here we describe how to provide more effects for [client-side actions]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects).
 
 The allowed effects are actually the names of methods defined in
-<javadoc directory="jsdoc">zk.eff.Actions</javadoc>. Thus, to add a new
+[zk.eff.Actions](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.eff.Actions.html). Thus, to add a new
 effect, you have to add a new method to it. For example,
 
 ```xml
@@ -21,13 +21,13 @@ Then, you could use it in the client-side action:
 
 The signature of an effect method is as follows.
 
-`function (`<javadoc directory="jsdoc">`_global_.DOMElement`</javadoc>` n, `<javadoc directory="jsdoc">`_global_.Map`</javadoc>` opts);`
+`function (`[`_global_.DOMElement`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.DOMElement`.html)` n, `[`_global_.Map`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.Map`.html)` opts);`
 
 where `n` is the DOM element to apply the action, and `opts` is the
 options specified in the client-side action.
 
 Notice that, before invoking jQuery's effects, you should invoke
-<javadoc directory="jsdoc" method="defaultAnimaOpts(zk.Widget, _global_.Map, _global_.Array, boolean)">\_global\_.jqzk</javadoc>
+[\_global\_.jqzk#defaultAnimaOpts(zk.Widget, _global_.Map, _global_.Array, boolean)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jqzk.html#defaultAnimaOpts(zk.Widget, _global_.Map, _global_.Array, boolean))
 to prepare the initial options for animation. For example,
 
 ```javascript

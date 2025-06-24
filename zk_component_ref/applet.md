@@ -7,7 +7,7 @@
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Applet.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.med.Applet</javadoc>
+- JavaScript API: [zul.med.Applet](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Applet.html)
 
 
 # Employment/Purpose

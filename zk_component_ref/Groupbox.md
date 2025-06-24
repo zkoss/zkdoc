@@ -5,7 +5,7 @@
 - Demonstration:
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
 - Java API: [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Groupbox</javadoc>
+- JavaScript API: [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
 
 # Employment/Purpose
 

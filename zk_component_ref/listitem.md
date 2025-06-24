@@ -4,7 +4,7 @@
 
 - Demonstration: [Listbox (Keystroke Command)](http://www.zkoss.org/zkdemo/listbox/keystroke_command)
 - Java API: [org.zkoss.zul.Listitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listitem.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.sel.Listitem</javadoc>
+- JavaScript API: [zul.sel.Listitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listitem.html)
 
 
 # Employment/Purpose

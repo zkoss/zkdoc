@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.impl.FooterElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.mesh.FooterWidget</javadoc>
+  [zul.mesh.FooterWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.FooterWidget.html)
 
 
 # Employment/Purpose

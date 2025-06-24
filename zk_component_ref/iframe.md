@@ -4,7 +4,7 @@
 
 - Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
 - Java API: [org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.utl.Iframe</javadoc>
+- JavaScript API: [zul.utl.Iframe](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Iframe.html)
 
 
 # Employment/Purpose
@@ -69,7 +69,7 @@ a non-ZK page. For example, it won't be sent if it contains a PDF page.
 
 On the other hand, if you use other technologies to put a ZK page in an
 iframe, you can monitor the URL by writing a JavaScript method called
-<javadoc directory="jsdoc" method="onIframeURLChange(_global_.String, _global_.String)">\_global\_.\_global\_</javadoc>
+[\_global\_.\_global\_#onIframeURLChange(_global_.String, _global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.\_global\_.html#onIframeURLChange(_global_.String, _global_.String))
 as follows.
 
 ```xml
@@ -142,7 +142,7 @@ For more information please take a look at [ZK Developer's Reference: Event Queu
 If you'd like to do something when iframe's content has been loaded, you
 could listen to the `onload` event. However, unlike onChange and others,
 you could not listen the widget-level event
-(<javadoc directory="jsdoc">zk.Event</javadoc> and listened by use of
+([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html) and listened by use of
 [Client-side Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)),
 because the onload event might be fired before the widget has been bound
 to DOM.

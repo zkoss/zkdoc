@@ -6,7 +6,7 @@
 
 - Java API: [org.zkoss.zkmax.zul.Signature](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Signature.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.wgt.Signature</javadoc>
+  [zkmax.wgt.Signature](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Signature.html)
 
 # Browser Support
 

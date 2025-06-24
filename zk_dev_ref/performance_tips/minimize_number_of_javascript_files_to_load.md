@@ -102,7 +102,7 @@ wide by specifying the packages in the language add-on. Please refer to
 for how to specify a language add-on.
 
 For example, if the zul.wnd package
-(<javadoc directory="jsdoc">zul.wnd.Window</javadoc>) is required for
+([zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)) is required for
 all pages, then you could add the following to the language add-on.
 
 ```xml

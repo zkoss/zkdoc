@@ -4,7 +4,7 @@
 
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: [org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.grid.Columns</javadoc>
+- JavaScript API: [zul.grid.Columns](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Columns.html)
 
 
 # Employment/Purpose

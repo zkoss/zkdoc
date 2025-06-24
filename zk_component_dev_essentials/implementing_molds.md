@@ -28,7 +28,7 @@ to write the content to the end or to the beginning. It is by default an
 array, but the client application might use different kinds of objects.
 
 <mp>domAttrs\_</mp> is a (protected) method inherited from
-<javadoc  directory="jsdoc">zk.Widget</javadoc>. It returns all HTML
+[zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html). It returns all HTML
 attributes required, such as style, id and so on. You can override it if
 you want.
 

@@ -6,7 +6,7 @@
   [Barcode](https://blog.zkoss.org/2018/09/05/8-6-preview-barcode-and-barcodescanner/)
 - Java API: [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.barcode.Barcode</javadoc>
+  [zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barcode.Barcode.html)
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose

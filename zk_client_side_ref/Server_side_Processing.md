@@ -2,7 +2,7 @@
 
 ![](images/ClientEventAuRequest.png)
 
-A widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) is
+A widget event ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) is
 converted to an AU request and then sent to the server. When the event
 arrives at the server, it is converted to be an instance of
 [org.zkoss.zk.au.AuRequest](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/AuRequest.html)), and then pass to the
@@ -95,7 +95,7 @@ To plug it to the component, you could invoke
 # Client Event Declaration
 
 As described in [the previous section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
-a widget event (<javadoc directory="jsdoc">zk.Event</javadoc>) will be
+a widget event ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) will be
 sent to the server, only if *the server needs it*.
 
 To declare an event that a server *might* need it, you have to invoke
@@ -151,7 +151,7 @@ if it does not have any non-deferrable event listener at the server[^1].
 is usually used by a component developer since the first argument must
 be the component's class. For application developers, it is more
 straightforward by specifying the `toServer` option in
-<javadoc directory="jsdoc" method="opts">zk.Event</javadoc> when
+[zk.Event#opts](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#opts) when
 instantiating an event. For example,
 
 ```javascript

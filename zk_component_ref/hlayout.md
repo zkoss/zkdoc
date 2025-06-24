@@ -4,7 +4,7 @@
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Hlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hlayout.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.box.Hlayout</javadoc>
+- JavaScript API: [zul.box.Hlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Hlayout.html)
 
 
 # Employment/Purpose

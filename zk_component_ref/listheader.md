@@ -5,7 +5,7 @@
 - Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: [org.zkoss.zul.Listheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.sel.Listheader</javadoc>
+  [zul.sel.Listheader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listheader.html)
 
 
 # Employment/Purpose

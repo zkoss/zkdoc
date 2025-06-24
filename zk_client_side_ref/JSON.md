@@ -1,5 +1,5 @@
 The data of a widget event
-(<javadoc method="data" directory="jsdoc">zk.Event</javadoc>) is
+([zk.Event#data](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#data)) is
 serialized to a string (so-called marshal) by
 [JSON](http://www.json.org/js.html), when the event is sent back to the
 server. ZK Update Engine will unmarshal it back to a map. If an entry of

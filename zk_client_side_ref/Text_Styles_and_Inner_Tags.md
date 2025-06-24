@@ -4,9 +4,9 @@ tags.
 # Issue
 
 In general, the styles
-(<javadoc directory="jsdoc" method="setStyle(_global_.String)">zk.Widget</javadoc>)
+([zk.Widget#setStyle(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#setStyle(_global_.String)))
 are generated directly to the outer DOM element by the use of
-<javadoc directory="jsdoc" method="domAttrs_(_global_.Map)">zk.Widget</javadoc>.
+[zk.Widget#domAttrs_(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#domAttrs_(_global_.Map)).
 
 However, for some DOM structure, the text-related styles must be
 specified in some of the inner tags that contain the text. Otherwise, it
@@ -30,7 +30,7 @@ out.push('<label', this.domTextStyleAttr_(), '>',...);
 ```
 
 Second, override
-<javadoc directory="jsdoc" method="getTextNode_()">zk.Widget</javadoc>
+[zk.Widget#getTextNode_()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#getTextNode_())
 to return the DOM element that embeds the text.
 
 ```javascript

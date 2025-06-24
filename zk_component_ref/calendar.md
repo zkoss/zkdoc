@@ -5,7 +5,7 @@
 - Demonstration:
   [Calendar](http://www.zkoss.org/zkdemo/reporting/simple_calendar)
 - Java API: [org.zkoss.zul.Calendar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Calendar.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.db.Calendar</javadoc>
+- JavaScript API: [zul.db.Calendar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Calendar.html)
 
 
 # Employment/Purpose
@@ -24,7 +24,7 @@ for details.
 
 Since 5.0.3, the rendering of the calendar can be customized at the
 client by providing JavaScript code that overrides
-<javadoc directory="jsdoc">zul.db.Renderer</javadoc>.
+[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Renderer.html).
 
 # Example
 

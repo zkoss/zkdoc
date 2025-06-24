@@ -5,7 +5,7 @@
 - Demonstration:
   [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)
 - Java API: [org.zkoss.zul.Selectbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Selectbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Selectbox</javadoc>
+- JavaScript API: [zul.wgt.Selectbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Selectbox.html)
 
 
  {% include version-badge.html version=6.0.0 %}

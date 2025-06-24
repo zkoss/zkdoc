@@ -11,7 +11,7 @@ tree directly at the client.
 > ------------------------------------------------------------------------
 >
 > Notice that if the widget's DOM output
-> (<javadoc directory="jsdoc" method="redraw(_global_.Array)">zk.Widget</javadoc>)
+> ([zk.Widget#redraw(_global_.Array)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#redraw(_global_.Array)))
 > also has the same DOM attribute, both of them will be generated and it
 > is technically not legal. Thus, you should prevent the DOM attributes
 > that widget might output.

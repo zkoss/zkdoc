@@ -2,7 +2,7 @@
 
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Label](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Label</javadoc>
+- JavaScript API: [zul.wgt.Label](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Label.html)
 
 
 # Employment/Purpose

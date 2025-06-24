@@ -2,7 +2,7 @@ If a widget has a lot of child widgets, the performance will be better
 if you rerender only the portion(s) that don't have a lot of child
 widgets (and are not changed).
 
-For example, <javadoc directory="jsdoc">zul.wgt.Groupbox</javadoc>
+For example, [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
 rerenders only itself and the caption child, if any, when `setClosable`
 is called, as follows.
 
@@ -17,20 +17,20 @@ setClosable: function (closable) {
 ```
 
 It invokes
-<javadoc method="rerender(zk.Skipper)" directory="jsdoc">zk.Widget</javadoc>
+[zk.Widget#rerender(zk.Skipper)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#rerender(zk.Skipper))
 with a skipper (an instance of
-<javadoc directory="jsdoc">zk.Skipper</javadoc>). The skipper decides
+[zk.Skipper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Skipper.html)). The skipper decides
 what to skip (i.e., not to rerender), detach the skipped portion(s), and
 attach them back after rerendering. Thus, the skipped part won't be
 rerendered, nor unbound/bound, so the performance is better.
 
 In the above example, we use the
-<javadoc method="nonCaptionSkipper" directory="jsdoc">zk.Skipper</javadoc>
+[zk.Skipper#nonCaptionSkipper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Skipper.html#nonCaptionSkipper)
 instance to do the job. It skips all child widgets except the one called
 caption (i.e., `child != this.caption`).
 
 In addition to passing a skipper to
-<javadoc method="rerender(zk.Skipper)" directory="jsdoc">zk.Widget</javadoc>,
+[zk.Widget#rerender(zk.Skipper)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#rerender(zk.Skipper)),
 the widget has to implement the mold method (redraw) to handle the
 skipper:
 
@@ -53,6 +53,6 @@ implementation should not redraw the skipped part. In this case, all
 child widgets except caption are not redrawn.
 
 You can implement your own skipper. Refer to
-<javadoc directory="jsdoc">zk.Skipper</javadoc> for details.
+[zk.Skipper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Skipper.html) for details.
 
 

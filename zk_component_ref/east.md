@@ -5,7 +5,7 @@
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.East](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/East.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.layout.East</javadoc>
+- JavaScript API: [zul.layout.East](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.East.html)
 
 
 # Employment/Purpose

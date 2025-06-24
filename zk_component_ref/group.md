@@ -4,7 +4,7 @@
 
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
 - Java API: [org.zkoss.zul.Group](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Group.html)
-- JavaScript API: <javadoc directory="jsdoc">zkex.grid.Group</javadoc>
+- JavaScript API: [zkex.grid.Group](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Group.html)
 
 - {% include edition-availability.html edition="pe" %}
 

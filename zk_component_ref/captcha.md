@@ -4,7 +4,7 @@
 
 - Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Captcha](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Captcha.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Captcha</javadoc>
+- JavaScript API: [zul.wgt.Captcha](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Captcha.html)
 
 - [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
 

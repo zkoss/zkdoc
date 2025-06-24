@@ -5,7 +5,7 @@
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: [org.zkoss.zul.Treechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treechildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.sel.Treechildren</javadoc>
+  [zul.sel.Treechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treechildren.html)
 
 
 # Employment/Purpose

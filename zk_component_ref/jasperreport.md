@@ -6,7 +6,7 @@
   [Jasperreport](http://www.zkoss.org/zkdemo/reporting/jasperreport)
 - Java API: [org.zkoss.zkex.zul.Jasperreport](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Jasperreport.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.utl.Jasperreport</javadoc>
+  [zkex.utl.Jasperreport](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.utl.Jasperreport.html)
 
 - {% include edition-availability.html edition="pe" %}
 

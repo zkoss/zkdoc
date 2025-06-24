@@ -2,7 +2,7 @@
 
 - Demonstration: [Box](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Box](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Box.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
+- JavaScript API: [zul.box.Box](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Box.html)
 
 
 # Employment/Purpose

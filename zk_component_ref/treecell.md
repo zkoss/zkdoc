@@ -4,7 +4,7 @@
 
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: [org.zkoss.zul.Treecell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecell.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.sel.Treecell</javadoc>
+- JavaScript API: [zul.sel.Treecell](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treecell.html)
 
 
 # Employment/Purpose

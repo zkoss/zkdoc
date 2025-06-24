@@ -5,7 +5,7 @@
 - Demonstration:
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Spinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Spinner.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.inp.Spinner</javadoc>
+- JavaScript API: [zul.inp.Spinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Spinner.html)
 
 
 # Employment/Purpose

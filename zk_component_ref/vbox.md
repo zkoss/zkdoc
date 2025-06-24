@@ -4,7 +4,7 @@
 
 - Demonstration: [Vbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Vbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.box.Box</javadoc>
+- JavaScript API: [zul.box.Box](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Box.html)
 
 
 # Employment/Purpose

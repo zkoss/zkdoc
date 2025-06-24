@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.LayoutRegion](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.layout.LayoutRegion</javadoc>
+  [zul.layout.LayoutRegion](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.LayoutRegion.html)
 
 # Employment/Purpose
 

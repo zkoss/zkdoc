@@ -5,7 +5,7 @@
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
 - Java API: [org.zkoss.zul.Groupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupfoot.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.grid.Groupfoot</javadoc>
+  [zkex.grid.Groupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Groupfoot.html)
 
 - {% include edition-availability.html edition="pe" %}
 

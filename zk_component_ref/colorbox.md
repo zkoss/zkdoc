@@ -5,7 +5,7 @@
 - Demonstration:
   [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)
 - Java API: [org.zkoss.zkex.zul.Colorbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Colorbox.html)
-- JavaScript API: <javadoc directory="jsdoc">zkex.inp.Colorbox</javadoc>
+- JavaScript API: [zkex.inp.Colorbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.inp.Colorbox.html)
 
 
 {% include edition-availability.html edition="pe" %}

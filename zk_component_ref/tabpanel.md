@@ -4,7 +4,7 @@
 
 - Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
 - Java API: [org.zkoss.zul.Tabpanel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanel.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.tab.Tabpanel</javadoc>
+- JavaScript API: [zul.tab.Tabpanel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanel.html)
 
 
 # Employment/Purpose

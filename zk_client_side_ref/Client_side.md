@@ -1,5 +1,5 @@
 This section describes how to develop the component at the client side
-(<javadoc directory="jsdoc">zk.Widget</javadoc>).
+([zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)).
 
 **See Also**
 

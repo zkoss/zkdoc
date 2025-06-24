@@ -6,7 +6,7 @@
 
 - Java API: [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.GoldenLayout</javadoc>
+  [zkmax.layout.GoldenLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.GoldenLayout.html)
 
 # Browser Support
 

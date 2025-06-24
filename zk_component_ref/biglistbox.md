@@ -5,7 +5,7 @@
 - Demonstration: [ Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)
 - Java API: [org.zkoss.zkmax.zul.Biglistbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Biglistbox.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.big.Biglistbox</javadoc>
+  [zkmax.big.Biglistbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.big.Biglistbox.html)
 
 - {% include edition-availability.html edition="pe" %}
 

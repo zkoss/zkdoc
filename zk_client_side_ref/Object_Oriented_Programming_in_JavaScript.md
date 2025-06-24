@@ -28,7 +28,7 @@ such as
 ```
 
 You rarely need to define it explicitly, but, if you want, you could use
-<javadoc directory="jsdoc" method="$package(_global_.String)">\_global\_.zk</javadoc>.
+[\_global\_.zk#$package(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$package(_global_.String)).
 For example,
 
 ```javascript
@@ -37,21 +37,21 @@ zk.$package('com.foo');
 
 Similarly, you could, though rarely needed, import a package by the use
 of
-<javadoc directory="jsdoc" method="$import(_global_.String)">\_global\_.zk</javadoc>.
+[\_global\_.zk#$import(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$import(_global_.String)).
 
 Notice that, if the package is not loaded yet,
-<javadoc directory="jsdoc" method="$import(_global_.String)">\_global\_.zk</javadoc>
+[\_global\_.zk#$import(_global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$import(_global_.String))
 won't load the package but returns null.
 
 ## Load Packages
 
 To force one or multiple packages to load, you could use
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>.
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function)).
 Since ZK loads the packages asynchronously, you cannot access any of the
 code right after the invocation of
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>.
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function)).
 Rather, you should specify the code in the second argument as a function
-(<javadoc directory="jsdoc">\_global\_.Function</javadoc>). For example,
+([\_global\_.Function](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.Function.html)). For example,
 
 ```javascript
 zk.load("zul.inp, zul.layout", function () { //load zul.inp and zul.layout
@@ -66,16 +66,16 @@ new zul.inp.Textbox({value: 'foo'}); //WRONG! zul.inp not loaded yet
 
 If you have some code that should execute when a particular package is
 loaded, you could use
-<javadoc directory="jsdoc" method="afterLoad(_global_.String, _global_.Function)">\_global\_.zk</javadoc>.
+[\_global\_.zk#afterLoad(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterLoad(_global_.String, _global_.Function)).
 Unlike
-<javadoc directory="jsdoc" method="load(_global_.String, _global_.Function)">\_global\_.zk</javadoc>,
+[\_global\_.zk#load(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#load(_global_.String, _global_.Function)),
 it won't force the package(s) to load. Rather, it only registers a
 function that is called when the specified package(s) is loaded by
 others.
 
 It is useful to customize the default behavior of widgets, since they
 might be loaded when your code is running. For example, we could
-customize <javadoc directory="jsdoc">zul.inp.SimpleConstraint</javadoc>
+customize [zul.inp.SimpleConstraint](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.SimpleConstraint.html)
 as follows.
 
 ```javascript
@@ -93,7 +93,7 @@ not loaded yet.
 
 If the customization requires a lot of codes and you prefer to put it in
 a separate package, you could use
-<javadoc directory="jsdoc" method="depends(_global_.String, _global_.String)">\_global\_.zk</javadoc>
+[\_global\_.zk#depends(_global_.String, _global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#depends(_global_.String, _global_.String))
 as follows.
 
 ```javascript
@@ -106,13 +106,13 @@ In other words, `com.foo` will be loaded when `zul.inp` is loaded.
 # The JavaScript Class
 
 The root of the class hierarchy is
-<javadoc directory="jsdoc">zk.Object</javadoc>. To define a new class,
+[zk.Object](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html). To define a new class,
 you have to extend from it or one of the deriving classes.
 
 ## Define a Class
 
 To define a new class, you could use
-<javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>.
+[\_global\_.zk#$extends(zk.Class, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$extends(zk.Class, _global_.Map, _global_.Map)).
 
 ```javascript
 zk.$package('com.foo');
@@ -133,7 +133,7 @@ com.foo.Location = zk.$extends(zk.Object, {
 ```
 
 The first argument of
-<javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>
+[\_global\_.zk#$extends(zk.Class, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$extends(zk.Class, _global_.Map, _global_.Map))
 is the base class to extend from. In this case, we extend from
 `zk.Object`. The second argument is the (non-static) members of the
 class. In this case, we define two data members (x and y) and one method
@@ -146,14 +146,14 @@ means no static members at all.
 Unlike Java, the returned object is the class you defined. You can
 access it directly, such as `o.$instanceof(zk.Widget)`. In addition, the
 class object, unlike Java, is not an instance of another class. See more
-<javadoc directory="jsdoc">zk.Class</javadoc>.
+[zk.Class](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Class.html).
 
 ## Access Methods of Superclass
 
 To access the superclass's method, you have to use
-<javadoc method="$super(_global_.String, zk.Object...)" directory="jsdoc">zk.Object</javadoc>
+[zk.Object#$super(_global_.String, zk.Object...)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#$super(_global_.String, zk.Object...))
 or
-<javadoc method="$supers(_global_.String, _global_.Array)" directory="jsdoc">zk.Object</javadoc>.
+[zk.Object#$supers(_global_.String, _global_.Array)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#$supers(_global_.String, _global_.Array)).
 
 ```javascript
 com.foo.ShiftLocation = zk.$extends(com.foo.Location, {
@@ -165,7 +165,7 @@ com.foo.ShiftLocation = zk.$extends(com.foo.Location, {
 ```
 
 As shown above, `$super` is a method (inherited from
-<javadoc directory="jsdoc">zk.Object</javadoc>) to invoke a method
+[zk.Object](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html)) to invoke a method
 defined in the superclass. The first argument is the method name to
 invoke, and the rest of the arguments are what to pass to the
 superclass's method.
@@ -185,7 +185,7 @@ distance: function (loc) {
 ## Constructor
 
 Unlike Java, the constructor is always called
-<javadoc method="$init()" directory="jsdoc">zk.Object</javadoc>, and it
+[zk.Object#$init()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#$init()), and it
 won't invoke the superclass's constructor automatically.
 
 ```javascript
@@ -212,18 +212,18 @@ com.foo.ShiftLocation = zk.$extends(com.foo.Location, {
 
 The class metainfo is available in the class object, which is returned
 from
-<javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>.
+[\_global\_.zk#$extends(zk.Class, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$extends(zk.Class, _global_.Map, _global_.Map)).
 With the class object, you can access the static members, examine the
 class hierarchy and so on.
 
-A class is an instance of <javadoc directory="jsdoc">zk.Class</javadoc>.
+A class is an instance of [zk.Class](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Class.html).
 
 ## \$instanceof
 
 To test if an object is an instance of a class, use
-<javadoc method="$instanceof(zk.Class)" directory="jsdoc">zk.Object</javadoc>,
+[zk.Object#$instanceof(zk.Class)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#$instanceof(zk.Class)),
 or
-<javadoc method="isInstance(zk.Object)" directory="jsdoc">zk.Object</javadoc>.
+[zk.Object#isInstance(zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#isInstance(zk.Object)).
 
 ```javascript
 if (f.$instanceof(com.foo.Location)) {
@@ -235,7 +235,7 @@ if (com.foo.Location.isInstance(f)) { //the same as above
 ## \$class
 
 Each object has a data member called
-<javadoc method="$class" directory="jsdoc">zk.Object</javadoc>, that
+[zk.Object#$class](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#$class), that
 refers to the class it was instantiated from.
 
 ```javascript
@@ -270,9 +270,9 @@ MyDerive.static0(); //OK
 ### isInstance and isAssignableFrom
 
 In addition to static members, each class has two important methods,
-<javadoc method="isInstance(zk.Object)" directory="jsdoc">zk.Object</javadoc>
+[zk.Object#isInstance(zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#isInstance(zk.Object))
 and
-<javadoc method="isAssignableFrom(zk.Class)" directory="jsdoc">zk.Object</javadoc>.
+[zk.Object#isAssignableFrom(zk.Class)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Object.html#isAssignableFrom(zk.Class)).
 
 ```javascript
 zk.log(com.foo.Location.isAssignableFrom(com.foo.ShiftLocation)); //true
@@ -339,7 +339,7 @@ $define: {
 which defines four methods: getLocation, setLocation, getLabel and
 setLabel. In addition, setLabel() will invoke the specified function
 when it is called. For more information, please refer to
-<javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>.
+[\_global\_.zk#$extends(zk.Class, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$extends(zk.Class, _global_.Map, _global_.Map)).
 
 However, if a property is read-only, you can still declare it without
 `get`:
@@ -425,7 +425,7 @@ $init: function (widget) {
 ```
 
 - Data member defined in the second argument of
-  <javadoc directory="jsdoc" method="$extends(zk.Class, _global_.Map, _global_.Map)">\_global\_.zk</javadoc>
+  [\_global\_.zk#$extends(zk.Class, _global_.Map, _global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#$extends(zk.Class, _global_.Map, _global_.Map))
   are initialized only once. For example, an empty array is assigned to
   the definition of `MyClass` when the class is defined in the following
   example.

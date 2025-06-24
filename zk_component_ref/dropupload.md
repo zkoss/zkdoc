@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.wgt.Dropupload</javadoc>
+  [zkmax.wgt.Dropupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Dropupload.html)
 
 
 {% include edition-availability.html edition="pe" %}

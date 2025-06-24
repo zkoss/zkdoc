@@ -1,6 +1,6 @@
 To track the Ajax traffic with [Google Analytics](http://www.google.com/analytics/) or other statistic
 services, you have to override a client-side API:
-<javadoc directory="jsdoc" method="beforeSend(_global_.String, zk.Event, zk.Desktop)">\_global\_.zAu</javadoc>.
+[\_global\_.zAu#beforeSend(_global_.String, zk.Event, zk.Desktop)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zAu.html#beforeSend(_global_.String, zk.Event, zk.Desktop)).
 This method will be called each time ZK Client is about to send an Ajax
 request to the server. You could override it to record the requests on
 any statistic service you prefer.
@@ -32,4 +32,4 @@ zk.override(zAu, "beforeSend", function (uri, req) {
 ```
 
 Of course, you could only record the information you are interested by
-examining <javadoc method="name" directory="jsdoc">zk.Event</javadoc>.
+examining [zk.Event#name](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#name).

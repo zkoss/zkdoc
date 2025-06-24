@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.inp.SimpleConstraint</javadoc>
+  [zul.inp.SimpleConstraint](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.SimpleConstraint.html)
 
 # Employment/Purpose
 

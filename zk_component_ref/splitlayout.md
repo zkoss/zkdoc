@@ -6,7 +6,7 @@
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
 - Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Splitlayout</javadoc>
+  [zkmax.layout.Splitlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Splitlayout.html)
 - {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose

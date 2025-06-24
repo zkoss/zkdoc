@@ -5,7 +5,7 @@
 - Demonstration:
   [Style](http://www.zkoss.org/zkdemo/styling/custom_style)
 - Java API: [org.zkoss.zul.Style](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Style.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.utl.Style</javadoc>
+- JavaScript API: [zul.utl.Style](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Style.html)
 
 
 # Employment/Purpose

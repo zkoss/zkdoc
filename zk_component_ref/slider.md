@@ -4,7 +4,7 @@
 
 - Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
 - Java API: [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.inp.Slider</javadoc>
+- JavaScript API: [zul.inp.Slider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Slider.html)
 
 
 # Employment/Purpose

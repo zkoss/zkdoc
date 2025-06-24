@@ -4,7 +4,7 @@
 
 - Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
 - Java API: [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Chart</javadoc>
+- JavaScript API: [zul.wgt.Chart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Chart.html)
 
 
 {% include edition-availability.html edition="pe" %}

@@ -18,5 +18,5 @@ use another format, you could provide an implementation as follows.
 2.  Register it by specifying it with the `au-decoder-class` element in
     `WEB-INF/zk.xml`
 3.  Override a JavaScript method called
-    <javadoc directory="jsdoc" method="encode(int, zk.Event, zk.Desktop)">\_global\_.zAu</javadoc>
+    [\_global\_.zAu#encode(int, zk.Event, zk.Desktop)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zAu.html#encode(int, zk.Event, zk.Desktop))
     to encode to the custom format

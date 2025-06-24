@@ -5,7 +5,7 @@
 - Demonstration:
   [Include](http://www.zkoss.org/zkdemo/composite/include)
 - Java API: [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Include</javadoc>
+- JavaScript API: [zul.wgt.Include](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Include.html)
 
 
 # Employment/Purpose
@@ -296,7 +296,7 @@ content is evaluated first.
 There are two solutions to make it evaluate later:
 
 1.  Use
-    <javadoc method="afterMount(_global_.Function, int)" directory="jsdoc">\_global\_.zk</javadoc>
+    [\_global\_.zk#afterMount(_global_.Function, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterMount(_global_.Function, int))
     in the included page
 2.  Or, specify this custom attribute to defer the rendering in the
     includer.
@@ -304,7 +304,7 @@ There are two solutions to make it evaluate later:
 **Use zk.afterMount() in the included page**
 
 First, you could use
-<javadoc method="afterMount(_global_.Function, int)" directory="jsdoc">\_global\_.zk</javadoc>
+[\_global\_.zk#afterMount(_global_.Function, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterMount(_global_.Function, int))
 to defer the evaluation as follows in the included page:
 
 ```html
@@ -324,7 +324,7 @@ zk.afterMount(function () {
 Alternatively, you could specify a custom attribute called
 `the org.zkoss.zul.include.html.defer` in the
 [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component (rather than using
-<javadoc method="afterMount(_global_.Function, int)" directory="jsdoc">\_global\_.zk</javadoc>
+[\_global\_.zk#afterMount(_global_.Function, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterMount(_global_.Function, int))
 in the included component):
 
 ```xml

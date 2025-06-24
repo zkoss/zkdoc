@@ -4,7 +4,7 @@
 
 - Demonstration: [Paging (with Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with Tree)](http://www.zkoss.org/zkdemo/tree/paging)
 - Java API: [org.zkoss.zul.Paging](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Paging.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.mesh.Paging</javadoc>
+- JavaScript API: [zul.mesh.Paging](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Paging.html)
 
 
 # Employment/Purpose

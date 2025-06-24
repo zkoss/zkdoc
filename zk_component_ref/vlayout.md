@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Vlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vlayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.layout.Vlayout</javadoc>
+  [zul.layout.Vlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Vlayout.html)
 
 # Employment/Purpose
 

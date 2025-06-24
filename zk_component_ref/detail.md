@@ -4,7 +4,7 @@
 
 - Demonstration: [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
 - Java API: [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)
-- JavaScript API: <javadoc directory="jsdoc">zkex.grid.Detail</javadoc>
+- JavaScript API: [zkex.grid.Detail](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Detail.html)
 
 - {% include edition-availability.html edition="pe" %}
 

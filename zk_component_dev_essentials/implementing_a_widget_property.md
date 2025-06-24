@@ -14,7 +14,7 @@ DOM tree if it has been attached. A widget inherits a property called
 node which is assigned a reference to a DOM element if the widget has
 been attached to the DOM tree. If a widget is attached to DOM,
 <mp>this.desktop</mp> will be a reference to the desktop
-(<javadoc directory="jsdoc">zk.Desktop</javadoc>) it belongs. Otherwise,
+([zk.Desktop](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Desktop.html)) it belongs. Otherwise,
 it is null.
 
 How we update depends on the DOM content. In this example, we use HTML's

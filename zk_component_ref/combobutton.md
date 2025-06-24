@@ -5,7 +5,7 @@
 - Demonstration:
 - Java API: [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.wgt.Combobutton</javadoc>
+  [zul.wgt.Combobutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Combobutton.html)
 
 
 # Employment/Purpose

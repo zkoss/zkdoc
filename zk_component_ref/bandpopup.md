@@ -2,7 +2,7 @@
 
 - Demonstration: [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: [org.zkoss.zul.Bandpopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandpopup.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.inp.Bandpopup</javadoc>
+- JavaScript API: [zul.inp.Bandpopup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandpopup.html)
 
 
 # Employment/Purpose

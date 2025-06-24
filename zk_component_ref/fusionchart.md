@@ -5,7 +5,7 @@
 - Demonstration:
 - Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fusionchart.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.fusionchartz.Fusionchart</javadoc>
+  [zkmax.fusionchartz.Fusionchart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.fusionchartz.Fusionchart.html)
 
 - {% include edition-availability.html edition="pe" %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the

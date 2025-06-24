@@ -6,7 +6,7 @@
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: [org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.wgt.Toolbarbutton</javadoc>
+  [zul.wgt.Toolbarbutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Toolbarbutton.html)
 
 
 # Employment/Purpose

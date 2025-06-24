@@ -5,7 +5,7 @@
 {% include version-badge.html version=8.6.0 %}
 
 - Java API: [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.med.Cropper</javadoc>
+- JavaScript API: [zkmax.med.Cropper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Cropper.html)
 - {% include edition-availability.html edition="pe" %}
 
 # Browser Support

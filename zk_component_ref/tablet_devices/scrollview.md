@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zkmax.zul.Scrollview](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Scrollview.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Scrollview</javadoc>
+  [zkmax.layout.Scrollview](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Scrollview.html)
 
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 

@@ -4,7 +4,7 @@
   [Radiogroup](http://www.zkoss.org/zkdemo/input/radio_button)
 - Java API: [org.zkoss.zul.Radiogroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radiogroup.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.wgt.Radiogroup</javadoc>
+  [zul.wgt.Radiogroup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Radiogroup.html)
 
 
 # Employment/Purpose

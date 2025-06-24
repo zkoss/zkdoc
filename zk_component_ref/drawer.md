@@ -4,7 +4,7 @@
 
 - Demonstration: [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
 - Java API: [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.wgt.Drawer</javadoc>
+- JavaScript API: [zkmax.wgt.Drawer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Drawer.html)
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 

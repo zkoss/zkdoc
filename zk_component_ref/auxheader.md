@@ -5,7 +5,7 @@
 - Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
 - Java API: [org.zkoss.zul.Auxheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxheader.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.mesh.Auxheader</javadoc>
+  [zul.mesh.Auxheader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Auxheader.html)
 
 # Employment/Purpose
 

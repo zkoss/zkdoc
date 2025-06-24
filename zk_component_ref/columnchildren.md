@@ -6,7 +6,7 @@
   [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
 - Java API: [org.zkoss.zkex.zul.Columnchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnchildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.layout.Columnchildren</javadoc>
+  [zkex.layout.Columnchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnchildren.html)
 
 - {% include edition-availability.html edition="pe" %}
 

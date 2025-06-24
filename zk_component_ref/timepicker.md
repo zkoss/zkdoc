@@ -6,7 +6,7 @@
 
 - Java API: [org.zkoss.zkmax.zul.Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.inp.Timepicker</javadoc>
+  [zkmax.inp.Timepicker](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Timepicker.html)
 
 
 # Employment/Purpose

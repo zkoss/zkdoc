@@ -3,7 +3,7 @@
 # Camera
 
 - Java API: [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.med.Camera</javadoc>
+- JavaScript API: [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
 

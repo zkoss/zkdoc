@@ -5,7 +5,7 @@
 - Demonstration:
   [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
 - Java API: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Caption</javadoc>
+- JavaScript API: [zul.wgt.Caption](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Caption.html)
 
 
 # Employement/Purpose

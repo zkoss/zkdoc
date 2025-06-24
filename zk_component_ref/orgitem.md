@@ -3,8 +3,7 @@
 # Orgitem
 
 - Java API: [org.zkoss.zkmax.zul.Orgitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html)
-- JavaScript API: <javadoc directory="jsdoc">zkmax.layout.Orgitem
-  </javadoc>
+- JavaScript API: [zkmax.layout.Orgitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgitem.html)
 
 `{% include edition-availability.html edition="ee" %}`
 

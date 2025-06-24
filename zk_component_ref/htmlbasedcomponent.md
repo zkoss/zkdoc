@@ -4,7 +4,7 @@
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
-- JavaScript API: <javadoc directory="jsdoc">zk.Widget</javadoc>
+- JavaScript API: [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)
 
 # Employment/Purpose
 

@@ -4,7 +4,7 @@
 
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
 - Java API: [org.zkoss.zul.Timer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timer.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.utl.Timer</javadoc>
+- JavaScript API: [zul.utl.Timer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Timer.html)
 
 
 # Employment/Purpose

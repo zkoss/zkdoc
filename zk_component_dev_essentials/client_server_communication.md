@@ -3,9 +3,9 @@ Widget and Component.
 
 ![](images/ZKComDevEss_fire_event.png)
 
-<javadoc directory="jsdoc" method="fire(_global_.String, zk.Object, _global_.Map, int)">zk.Widget</javadoc>
+[zk.Widget#fire(_global_.String, zk.Object, _global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(_global_.String, zk.Object, _global_.Map, int))
 fires a client event (an instance of
-<javadoc directory="jsdoc">zk.Event</javadoc>), and the client event is
+[zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)), and the client event is
 converted to an AU request if all the following conditions are
 satisfied.
 
@@ -13,7 +13,7 @@ satisfied.
   automatically to represent a component. Notice that the Server states
   whether a widget is a peer of a component.
 - The event propagation is not stopped (i.e.,
-  <javadoc directory="jsdoc" method="fire(_global_.String, zk.Object, _global_.Map, int)">zk.Widget</javadoc>
+  [zk.Widget#fire(_global_.String, zk.Object, _global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(_global_.String, zk.Object, _global_.Map, int))
   and not set.
 - The event is listened by a server-side
   [org.zkoss.zk.ui.Listener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Listener.html), or it must be an

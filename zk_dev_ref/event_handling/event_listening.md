@@ -30,7 +30,7 @@ following section.
 
 ## Composer and Event Listener Autowiring
 
-With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
+With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc), you generally
 do not need to register event listeners manually. Rather, they can be
 registered automatically by the use of the
 [auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)

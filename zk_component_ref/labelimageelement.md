@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.impl.LabelImageElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.LabelImageWidget</javadoc>
+  [zul.LabelImageWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)
 
 # Employment/Purpose
 

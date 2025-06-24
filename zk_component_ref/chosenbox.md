@@ -5,7 +5,7 @@
 - [Demonstration](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
 - Java API: [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.inp.Chosenbox</javadoc>
+  [zkmax.inp.Chosenbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Chosenbox.html)
 
 - {% include edition-availability.html edition="pe" %}
 

@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Anchorchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorchildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.layout.Anchorchildren</javadoc>
+  [zul.layout.Anchorchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorchildren.html)
 
 
 {% include version-badge.html version="6.0.0" %}

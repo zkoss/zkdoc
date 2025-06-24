@@ -1,7 +1,7 @@
 # Rating
 
 - Java API: [org.zkoss.zul.Rating](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rating.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Rating</javadoc>
+- JavaScript API: [zul.wgt.Rating](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Rating.html)
 
 {% include version-badge.html version=8.6.0 %}
 

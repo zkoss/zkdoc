@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Absolutechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutechildren.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zul.layout.Absolutechildren</javadoc>
+  [zul.layout.Absolutechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Absolutechildren.html)
 
 
 # Employment/Purpose

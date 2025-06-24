@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Listgroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroup.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.sel.Listgroup</javadoc>
+  [zkex.sel.Listgroup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroup.html)
 
 - {% include edition-availability.html edition="pe" %}
 

@@ -5,7 +5,7 @@
 - Demonstration:
   [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)
 - Java API: [org.zkoss.zul.Image](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Image.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.wgt.Image</javadoc>
+- JavaScript API: [zul.wgt.Image](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Image.html)
 
 
 # Employment/Purpose

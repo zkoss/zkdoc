@@ -5,7 +5,7 @@
 - Demonstration: [Embed PDF Documents in Your ZK Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
 - Java API: [org.zkoss.zkex.zul.Pdfviewer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Pdfviewer.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkex.pdfviewer.Pdfviewer</javadoc>
+  [zkex.pdfviewer.Pdfviewer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.pdfviewer.Pdfviewer.html)
 
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
 

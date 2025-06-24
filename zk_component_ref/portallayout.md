@@ -6,7 +6,7 @@
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
 - Java API: [org.zkoss.zkmax.zul.Portallayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portallayout.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.layout.Portallayout</javadoc>
+  [zkmax.layout.Portallayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Portallayout.html)
 
 
 {% include edition-availability.html edition="pe" %}

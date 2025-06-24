@@ -4,7 +4,7 @@
 
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
 - Java API: [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
-- JavaScript API: <javadoc directory="jsdoc">zul.grid.Grid</javadoc>
+- JavaScript API: [zul.grid.Grid](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Grid.html)
 
 # Employment/Purpose
 

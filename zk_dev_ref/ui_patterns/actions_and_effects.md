@@ -53,7 +53,7 @@ which specifies the duration of sliding down is 100 milliseconds, and
 the duration of sliding up is 300 milliseconds.
 
 Security Note: the options is actually a JavaScript object (i.e., a map,
-<javadoc directory="jsdoc">\_global\_.Map</javadoc>), and ZK passes
+[\_global\_.Map](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.Map.html)), and ZK passes
 whatever is being specified to the client for evaluation. Thus, if you
 allow the user to specify the effect, you shall encode it first to avoid
 [cross-site scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting).
@@ -128,7 +128,7 @@ have to rewrite them to make them work under ZK 5:
 1.  The action names were changed and the support is limited to `show`
     and `hide` (while ZK 3 supports any `onxxx`).
 2.  The action operation must be the name of one of the methods defined
-    in <javadoc directory="jsdoc">zk.eff.Actions</javadoc> (while ZK 3
+    in [zk.eff.Actions](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.eff.Actions.html) (while ZK 3
     is the JavaScript code).
 3.  It is part of [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
     (while ZK 3 is [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)).

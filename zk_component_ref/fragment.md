@@ -5,7 +5,7 @@
 - Demonstration: N/A
 - Java API: [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
 - JavaScript API:
-  <javadoc directory="jsdoc">zkmax.wgt.Fragment</javadoc>
+  [zkmax.wgt.Fragment](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Fragment.html)
 
 
 {% include edition-availability.html edition="pe" %}
