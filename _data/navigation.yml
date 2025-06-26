@@ -1065,27 +1065,27 @@ zk_config_ref:
           - title: class.mold
             url: /zk_config_ref/class_mold
           - title: org.zkoss.bind.appConverters
-            url: /zk_config_ref/org_zkoss_bind_appConverters
+            url: /zk_config_ref/org_zkoss_bind_appconverters
           - title: org.zkoss.bind.appValidators
-            url: /zk_config_ref/org_zkoss_bind_appValidators
+            url: /zk_config_ref/org_zkoss_bind_appvalidators
           - title: org.zkoss.bind.DebuggerFactory.enable
-            url: /zk_config_ref/org_zkoss_bind_DebuggerFactory_enable
+            url: /zk_config_ref/org_zkoss_bind_debuggerfactory_enable
           - title: org.zkoss.bind.defaultComposer.class
-            url: /zk_config_ref/org_zkoss_bind_defaultComposer_class
+            url: /zk_config_ref/org_zkoss_bind_defaultcomposer_class
           - title: org.zkoss.bind.disableMethodCache
-            url: /zk_config_ref/org_zkoss_bind_disableMethodCache
+            url: /zk_config_ref/org_zkoss_bind_disablemethodcache
           - title: org.zkoss.bind.jsonBindingParamConverter.class
-            url: /zk_config_ref/org_zkoss_bind_jsonBindingParamConverter_class
+            url: /zk_config_ref/org_zkoss_bind_jsonbindingparamconverter_class
           - title: org.zkoss.bind.proxy.IgnoredProxyClasses
-            url: /zk_config_ref/org_zkoss_bind_proxy_IgnoredProxyClasses
+            url: /zk_config_ref/org_zkoss_bind_proxy_ignoredproxyclasses
           - title: org.zkoss.bind.proxy.ProxyDecoratorClass
-            url: /zk_config_ref/org_zkoss_bind_proxy_ProxyDecoratorClass
+            url: /zk_config_ref/org_zkoss_bind_proxy_proxydecoratorclass
           - title: org.zkoss.bind.viewModel.autoNotifyChange.enable
-            url: /zk_config_ref/org_zkoss_bind_viewModel_autoNotifyChange_enable
+            url: /zk_config_ref/org_zkoss_bind_viewmodel_autonotifychange_enable
           - title: org.zkoss.lang.contextClassLoader.class
-            url: /zk_config_ref/org_zkoss_lang_contextClassLoader_class
+            url: /zk_config_ref/org_zkoss_lang_contextclassloader_class
           - title: org.zkoss.theme.atlantic.useGoogleFont.disabled
-            url: /zk_config_ref/org_zkoss_theme_atlantic_useGoogleFont_disabled
+            url: /zk_config_ref/org_zkoss_theme_atlantic_usegooglefont_disabled
           - title: org.zkoss.util.label.cache
             url: /zk_config_ref/org_zkoss_util_label_cache
           - title: org.zkoss.util.label.classpath.charset
@@ -1097,31 +1097,31 @@ zk_config_ref:
           - title: org.zkoss.util.logging.config.file
             url: /zk_config_ref/org_zkoss_util_logging_config_file
           - title: org.zkoss.util.logging.realCauseBriefly
-            url: /zk_config_ref/org_zkoss_util_logging_realCauseBriefly
+            url: /zk_config_ref/org_zkoss_util_logging_realcausebriefly
           - title: org.zkoss.util.resource.LabelLoader.class
-            url: /zk_config_ref/org_zkoss_util_resource_LabelLoader_class
+            url: /zk_config_ref/org_zkoss_util_resource_labelloader_class
           - title: org.zkoss.web.classWebResource.cache
-            url: /zk_config_ref/org_zkoss_web_classWebResource_cache
+            url: /zk_config_ref/org_zkoss_web_classwebresource_cache
           - title: org.zkoss.web.classWebResource.cache.CSS.hours
-            url: /zk_config_ref/org_zkoss_web_classWebResource_cache_CSS_hours
+            url: /zk_config_ref/org_zkoss_web_classwebresource_cache_css_hours
           - title: org.zkoss.web.classWebResource.cache.etag
-            url: /zk_config_ref/org_zkoss_web_classWebResource_cache_etag
+            url: /zk_config_ref/org_zkoss_web_classwebresource_cache_etag
           - title: org.zkoss.web.util.resource.dir
             url: /zk_config_ref/org_zkoss_web_util_resource_dir
           - title: org.zkoss.web.preferred.2DigitYearStart
-            url: /zk_config_ref/org_zkoss_web_preferred_2DigitYearStart
+            url: /zk_config_ref/org_zkoss_web_preferred_2digityearstart
           - title: org.zkoss.web.servlet.http.URLEncoder
-            url: /zk_config_ref/org_zkoss_web_servlet_http_URLEncoder
+            url: /zk_config_ref/org_zkoss_web_servlet_http_urlencoder
           - title: org.zkoss.web.servlet.http.embedded.enabled
             url: /zk_config_ref/org_zkoss_web_servlet_http_embedded_enabled
           - title: org.zkoss.zk.au.AuWriters.ContentType
-            url: /zk_config_ref/org_zkoss_zk_au_AuWriters_ContentType
+            url: /zk_config_ref/org_zkoss_zk_au_auwriters_contenttype
           - title: org_zkoss_zk_config_path
             url: /zk_config_ref/org_zkoss_zk_config_path
           - title: org.zkoss.zk.moment.timezone.path
             url: /zk_config_ref/org_zkoss_zk_moment_timezone_path
           - title: org_zkoss_zk_portlet2_namespacedParameter_enabled
-            url: /zk_config_ref/org_zkoss_zk_portlet2_namespacedParameter_enabled
+            url: /zk_config_ref/org_zkoss_zk_portlet2_namespacedparameter_enabled
           - title: org.zkoss.zk.scripting.bsh.method.serializable
             url: /zk_config_ref/org_zkoss_zk_scripting_bsh_method_serializable
           - title: org_zkoss_zk_ui_activate_wait_retry_abort
@@ -1133,17 +1133,17 @@ zk_config_ref:
           - title: org.zkoss.zk.ui.composer.autowire.xel
             url: /zk_config_ref/org_zkoss_zk_ui_composer_autowire_xel
           - title: org.zkoss.zk.ui.EmulateIE7
-            url: /zk_config_ref/org_zkoss_zk_ui_EmulateIE7
+            url: /zk_config_ref/org_zkoss_zk_ui_emulateie7
           - title: org.zkoss.zk.ui.event.EventQueueProvider.class
-            url: /zk_config_ref/org_zkoss_zk_ui_event_EventQueueProvider_class
+            url: /zk_config_ref/org_zkoss_zk_ui_event_eventqueueprovider_class
           - title: org.zkoss.zk.ui.EventListener.duplicateIgnored
-            url: /zk_config_ref/org_zkoss_zk_ui_EventListener_duplicateIgnored
+            url: /zk_config_ref/org_zkoss_zk_ui_eventlistener_duplicateignored
           - title: org.zkoss.zk.ui.input.grouping.allowed
             url: /zk_config_ref/org_zkoss_zk_ui_input_grouping_allowed
           - title: org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled
-            url: /zk_config_ref/org_zkoss_zk_ui_invokeFirstRootForAfterKeyDown_enabled
+            url: /zk_config_ref/org_zkoss_zk_ui_invokefirstrootforafterkeydown_enabled
           - title: org.zkoss.zk.ui.jsonServiceParamConverter.class
-            url: /zk_config_ref/org_zkoss_zk_ui_jsonServiceParamConverter_class
+            url: /zk_config_ref/org_zkoss_zk_ui_jsonserviceparamconverter_class
           - title: org.zkoss.zk.ui.macro.autoforward.disabled
             url: /zk_config_ref/org_zkoss_zk_ui_macro_autoforward_disabled
           - title: org.zkoss.zk.ui.macro.autowire.disabled
@@ -1151,49 +1151,49 @@ zk_config_ref:
           - title: org.zkoss.zk.ui.macro.autowire.convention
             url: /zk_config_ref/org_zkoss_zk_ui_macro_autowire_convention
           - title: org.zkoss.zk.ui.metainfo.page.Loader.class
-            url: /zk_config_ref/org_zkoss_zk_ui_metainfo_page_Loader_class
+            url: /zk_config_ref/org_zkoss_zk_ui_metainfo_page_loader_class
           - title: org.zkoss.zk.ui.processMask.enabled
-            url: /zk_config_ref/org_zkoss_zk_ui_processMask_enabled
+            url: /zk_config_ref/org_zkoss_zk_ui_processmask_enabled
           - title: org.zkoss.zk.ui.uuidRecycle.disabled
-            url: /zk_config_ref/org_zkoss_zk_ui_uuidRecycle_disabled
+            url: /zk_config_ref/org_zkoss_zk_ui_uuidrecycle_disabled
           - title: org.zkoss.zk.ui.ScriptErrorListener.class
-            url: /zk_config_ref/org_zkoss_zk_ui_ScriptErrorListener_class
+            url: /zk_config_ref/org_zkoss_zk_ui_scripterrorlistener_class
           - title: org.zkoss.zk.ui.ShadowDefaultHost.class
-            url: /zk_config_ref/org_zkoss_zk_ui_ShadowDefaultHost_class
+            url: /zk_config_ref/org_zkoss_zk_ui_shadowdefaulthost_class
           - title: org.zkoss.zk.ui.sys.XMLResourcesLocator.class
-            url: /zk_config_ref/org_zkoss_zk_ui_sys_XMLResourcesLocator_class
+            url: /zk_config_ref/org_zkoss_zk_ui_sys_xmlresourceslocator_class
           - title: org.zkoss.zk.ui.versionInfo.enabled
-            url: /zk_config_ref/org_zkoss_zk_ui_versionInfo_enabled
+            url: /zk_config_ref/org_zkoss_zk_ui_versioninfo_enabled
           - title: org.zkoss.zk.WPD.cache
-            url: /zk_config_ref/org_zkoss_zk_WPD_cache
+            url: /zk_config_ref/org_zkoss_zk_wpd_cache
           - title: org.zkoss.zk.WCS.cache
-            url: /zk_config_ref/org_zkoss_zk_WCS_cache
+            url: /zk_config_ref/org_zkoss_zk_wcs_cache
           - title: org.zkoss.zk.ZUML.cache
-            url: /zk_config_ref/org_zkoss_zk_ZUML_cache
+            url: /zk_config_ref/org_zkoss_zk_zuml_cache
           - title: org.zkoss.zkex.ui.comet.smartconnection.disabled
             url: /zk_config_ref/org_zkoss_zkex_ui_comet_smartconnection_disabled
           - title: org.zkoss.zkplus.cdi.beanManager.jndiName
-            url: /zk_config_ref/org_zkoss_zkplus_cdi_beanManager_jndiName
+            url: /zk_config_ref/org_zkoss_zkplus_cdi_beanmanager_jndiname
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.connectionTimeout
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_connectionTimeout
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_connectiontimeout
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_pingIntervalSecond
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_pingintervalsecond
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingTimeoutSecond
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_pingTimeoutSecond
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_pingtimeoutsecond
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingSchedulingPoolSize
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_pingSchedulingPoolSize
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_pingschedulingpoolsize
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnection
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_reconnection
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_reconnection
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionAttempts
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_reconnectionAttempts
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_reconnectionattempts
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_reconnectionDelay
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_reconnectiondelay
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelayMax
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_reconnectionDelayMax
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_reconnectiondelaymax
           - title: org.zkoss.zkmax.au.IWBS.disable
-            url: /zk_config_ref/org_zkoss_zkmax_au_IWBS_disable
+            url: /zk_config_ref/org_zkoss_zkmax_au_iwbs_disable
           - title: org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern
-            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_WebSocketEndPoint_urlPattern
+            url: /zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_urlpattern
           - title: org.zkoss.zkmax.tablet.ui.disabled
             url: /zk_config_ref/org_zkoss_zkmax_tablet_ui_disabled
           - title: org.zkoss.zkmax.touch.disabled
@@ -1201,9 +1201,9 @@ zk_config_ref:
           - title: org.zkoss.zkmax.ui.comet.async.disabled
             url: /zk_config_ref/org_zkoss_zkmax_ui_comet_async_disabled
           - title: org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed
-            url: /zk_config_ref/org_zkoss_zkmax_ui_util_Loadingbar_animationSpeed
+            url: /zk_config_ref/org_zkoss_zkmax_ui_util_loadingbar_animationspeed
           - title: org.zkoss.zkmax.zul.FiledownloadListener.class
-            url: /zk_config_ref/org_zkoss_zkmax_zul_FiledownloadListener_class
+            url: /zk_config_ref/org_zkoss_zkmax_zul_filedownloadlistener_class
           - title: org.zkoss.zul.borderlayout.animation.disabled
             url: /zk_config_ref/org_zkoss_zul_borderlayout_animation_disabled
           - title: org.zkoss.zul.client.rod
@@ -1211,134 +1211,134 @@ zk_config_ref:
           - title: org.zkoss.zul.css.flex
             url: /zk_config_ref/org_zkoss_zul_css_flex
           - title: org.zkoss.zul.drop.allowNullDragged
-            url: /zk_config_ref/org_zkoss_zul_drop_allowNullDragged
+            url: /zk_config_ref/org_zkoss_zul_drop_allownulldragged
           - title: org.zkoss.zul.Filedownload.contentTypeAsIs
-            url: /zk_config_ref/org_zkoss_zul_Filedownload_contentTypeAsIs
+            url: /zk_config_ref/org_zkoss_zul_filedownload_contenttypeasis
           - title: org.zkoss.zul.include.mode
             url: /zk_config_ref/org_zkoss_zul_include_mode
           - title: org.zkoss.zul.image.preload
             url: /zk_config_ref/org_zkoss_zul_image_preload
           - title: org.zkoss.zul.invalidateThreshold
-            url: /zk_config_ref/org_zkoss_zul_invalidateThreshold
+            url: /zk_config_ref/org_zkoss_zul_invalidatethreshold
           - title: org.zkoss.zul.grid.autoSort
-            url: /zk_config_ref/org_zkoss_zul_grid_autoSort
+            url: /zk_config_ref/org_zkoss_zul_grid_autosort
           - title: org.zkoss.zul.grid.preloadSize
-            url: /zk_config_ref/org_zkoss_zul_grid_preloadSize
+            url: /zk_config_ref/org_zkoss_zul_grid_preloadsize
           - title: org.zkoss.zul.grid.initRodSize
-            url: /zk_config_ref/org_zkoss_zul_grid_initRodSize
+            url: /zk_config_ref/org_zkoss_zul_grid_initrodsize
           - title: org.zkoss.zul.grid.autohidePaging
-            url: /zk_config_ref/org_zkoss_zul_grid_autohidePaging
+            url: /zk_config_ref/org_zkoss_zul_grid_autohidepaging
           - title: org.zkoss.zul.grid.rod
             url: /zk_config_ref/org_zkoss_zul_grid_rod
           - title: org.zkoss.zul.listbox.checkmarkDeselectOthers
-            url: /zk_config_ref/org_zkoss_zul_listbox_checkmarkDeselectOthers
+            url: /zk_config_ref/org_zkoss_zul_listbox_checkmarkdeselectothers
           - title: org.zkoss.zul.listbox.rightSelect
-            url: /zk_config_ref/org_zkoss_zul_listbox_rightSelect
+            url: /zk_config_ref/org_zkoss_zul_listbox_rightselect
           - title: org.zkoss.zul.listbox.groupSelect
-            url: /zk_config_ref/org_zkoss_zul_listbox_groupSelect
+            url: /zk_config_ref/org_zkoss_zul_listbox_groupselect
           - title: org.zkoss.zul.listbox.autoSort
-            url: /zk_config_ref/org_zkoss_zul_listbox_autoSort
+            url: /zk_config_ref/org_zkoss_zul_listbox_autosort
           - title: org.zkoss.zul.listbox.preloadSize
-            url: /zk_config_ref/org_zkoss_zul_listbox_preloadSize
+            url: /zk_config_ref/org_zkoss_zul_listbox_preloadsize
           - title: org.zkoss.zul.listbox.rod
             url: /zk_config_ref/org_zkoss_zul_listbox_rod
           - title: org.zkoss.zul.listbox.initRodSize
-            url: /zk_config_ref/org_zkoss_zul_listbox_initRodSize
+            url: /zk_config_ref/org_zkoss_zul_listbox_initrodsize
           - title: org.zkoss.zul.listbox.autohidePaging
-            url: /zk_config_ref/org_zkoss_zul_listbox_autohidePaging
+            url: /zk_config_ref/org_zkoss_zul_listbox_autohidepaging
           - title: org.zkoss.zul.listbox.selectOnHighlight.disabled
-            url: /zk_config_ref/org_zkoss_zul_listbox_selectOnHighlight_disabled
+            url: /zk_config_ref/org_zkoss_zul_listbox_selectonhighlight_disabled
           - title: org.zkoss.zul.nativebar
             url: /zk_config_ref/org_zkoss_zul_nativebar
           - title: org.zkoss.zul.numberFormat
-            url: /zk_config_ref/org_zkoss_zul_numberFormat
+            url: /zk_config_ref/org_zkoss_zul_numberformat
           - title: org.zkoss.zul.progressbox.position
             url: /zk_config_ref/org_zkoss_zul_progressbox_position
           - title: org.zkoss.zul.tablet.meta.viewport.disabled
             url: /zk_config_ref/org_zkoss_zul_tablet_meta_viewport_disabled
           - title: org.zkoss.zul.theme.browserDefault
-            url: /zk_config_ref/org_zkoss_zul_theme_browserDefault
+            url: /zk_config_ref/org_zkoss_zul_theme_browserdefault
           - title: org.zkoss.zul.theme.fontFamilyC
-            url: /zk_config_ref/org_zkoss_zul_theme_fontFamilyC
+            url: /zk_config_ref/org_zkoss_zul_theme_fontfamilyc
           - title: org.zkoss.zul.theme.fontFamilytT
-            url: /zk_config_ref/org_zkoss_zul_theme_fontFamilytT
+            url: /zk_config_ref/org_zkoss_zul_theme_fontfamilytt
           - title: org.zkoss.zul.theme.fontSizeM
-            url: /zk_config_ref/org_zkoss_zul_theme_fontSizeM
+            url: /zk_config_ref/org_zkoss_zul_theme_fontsizem
           - title: org.zkoss.zul.theme.fontSizeMS
-            url: /zk_config_ref/org_zkoss_zul_theme_fontSizeMS
+            url: /zk_config_ref/org_zkoss_zul_theme_fontsizems
           - title: org.zkoss.zul.theme.fontSizeS
-            url: /zk_config_ref/org_zkoss_zul_theme_fontSizeS
+            url: /zk_config_ref/org_zkoss_zul_theme_fontsizes
           - title: org.zkoss.zul.theme.fontSizeXS
-            url: /zk_config_ref/org_zkoss_zul_theme_fontSizeXS
+            url: /zk_config_ref/org_zkoss_zul_theme_fontsizexs
           - title: org.zkoss.zul.tree.checkmarkDeselectOthers
-            url: /zk_config_ref/org_zkoss_zul_tree_checkmarkDeselectOthers
+            url: /zk_config_ref/org_zkoss_zul_tree_checkmarkdeselectothers
           - title: org.zkoss.zul.tree.initRodSize
-            url: /zk_config_ref/org_zkoss_zul_tree_initRodSize
+            url: /zk_config_ref/org_zkoss_zul_tree_initrodsize
           - title: org.zkoss.zul.tree.maxRodPageSize
-            url: /zk_config_ref/org_zkoss_zul_tree_maxRodPageSize
+            url: /zk_config_ref/org_zkoss_zul_tree_maxrodpagesize
           - title: org.zkoss.zul.tree.rightSelect
-            url: /zk_config_ref/org_zkoss_zul_tree_rightSelect
+            url: /zk_config_ref/org_zkoss_zul_tree_rightselect
           - title: org.zkoss.zul.tree.autoSort
-            url: /zk_config_ref/org_zkoss_zul_tree_autoSort
+            url: /zk_config_ref/org_zkoss_zul_tree_autosort
           - title: org.zkoss.zul.tree.autohidePaging
-            url: /zk_config_ref/org_zkoss_zul_tree_autohidePaging
+            url: /zk_config_ref/org_zkoss_zul_tree_autohidepaging
           - title: org.zkoss.zul.tree.selectOnHighlight.disabled
-            url: /zk_config_ref/org_zkoss_zul_tree_selectOnHighlight_disabled
+            url: /zk_config_ref/org_zkoss_zul_tree_selectonhighlight_disabled
           - title: org.zkoss.zul.tree.throttleMillis
-            url: /zk_config_ref/org_zkoss_zul_tree_throttleMillis
+            url: /zk_config_ref/org_zkoss_zul_tree_throttlemillis
           - title: preserve-all-blank
             url: /zk_config_ref/preserve_all_blank
       - title: The listener Element
         url: /zk_config_ref/the_listener_element
         children:
           - title: The org.zkoss.zk.ui.event.EventThreadCleanup interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_event_EventThreadCleanup_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_event_eventthreadcleanup_interface
           - title: The org.zkoss.zk.ui.event.EventThreadInit interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_event_EventThreadInit_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_event_eventthreadinit_interface
           - title: The org.zkoss.zk.ui.event.EventThreadResume interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_event_EventThreadResume_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_event_eventthreadresume_interface
           - title: The org.zkoss.zk.ui.event.EventThreadSuspend interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_event_EventThreadSuspend_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_event_eventthreadsuspend_interface
           - title: The org.zkoss.zk.ui.util.Composer interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_Composer_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_composer_interface
           - title: The org.zkoss.zk.ui.util.DesktopCleanup interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_DesktopCleanup_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_desktopcleanup_interface
           - title: The org.zkoss.zk.ui.util.DesktopInit interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_DesktopInit_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_desktopinit_interface
           - title: The org.zkoss.zk.ui.util.EventInterceptor interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_EventInterceptor_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_eventinterceptor_interface
           - title: The org.zkoss.zk.ui.util.ExecutionCleanup interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_ExecutionCleanup_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_executioncleanup_interface
           - title: The org.zkoss.zk.ui.util.ExecutionInit interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_ExecutionInit_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_executioninit_interface
           - title: The org.zkoss.zk.ui.util.ExecutionMonitor interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_ExecutionMonitor_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_executionmonitor_interface
           - title: The org.zkoss.zk.ui.util.Initiator interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_Initiator_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_initiator_interface
           - title: The org.zkoss.zk.ui.util.Monitor interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_Monitor_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_monitor_interface
           - title: The org.zkoss.zk.ui.util.PerformanceMeter interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_PerformanceMeter_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_performancemeter_interface
           - title: The org.zkoss.zk.ui.util.RequestInterceptor interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_RequestInterceptor_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_requestinterceptor_interface
           - title: The org.zkoss.zk.ui.util.SessionCleanup interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_SessionCleanup_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_sessioncleanup_interface
           - title: The org.zkoss.zk.ui.util.SessionInit interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_SessionInit_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_sessioninit_interface
           - title: The org.zkoss.zk.ui.util.UiLifeCycle interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_UiLifeCycle_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_uilifecycle_interface
           - title: The org.zkoss.zk.ui.util.URIInterceptor interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_URIInterceptor_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_uriinterceptor_interface
           - title: The org.zkoss.zk.ui.util.WebAppCleanup interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_WebAppCleanup_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_webappcleanup_interface
           - title: The org.zkoss.zk.ui.util.WebAppInit interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_util_WebAppInit_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_util_webappinit_interface
           - title: The org.zkoss.zk.ui.sys.PropertiesRenderer interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_sys_PropertiesRenderer_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_sys_propertiesrenderer_interface
           - title: The org.zkoss.zk.ui.sys.SEORenderer interface
-            url: /zk_config_ref/the_org_zkoss_zk_ui_sys_SEORenderer_interface
+            url: /zk_config_ref/the_org_zkoss_zk_ui_sys_seorenderer_interface
           - title: The org.zkoss.xel.VariableResolver interface
-            url: /zk_config_ref/the_org_zkoss_xel_VariableResolver_interface
+            url: /zk_config_ref/the_org_zkoss_xel_variableresolver_interface
       - title: The preference Element
         url: /zk_config_ref/the_preference_element
         children:
@@ -1346,7 +1346,7 @@ zk_config_ref:
             url: /zk_config_ref/the_preferences
             children:
               - title: org.zkoss.zk.ui.WebApp.name
-                url: /zk_config_ref/org_zkoss_zk_ui_WebApp_name
+                url: /zk_config_ref/org_zkoss_zk_ui_webapp_name
       - title: The richlet Element
         url: /zk_config_ref/the_richlet_element
         children:
