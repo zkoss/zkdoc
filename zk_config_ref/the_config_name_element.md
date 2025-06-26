@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <config-name>a_name</config-name>
+```
 
 `[Required]`
 

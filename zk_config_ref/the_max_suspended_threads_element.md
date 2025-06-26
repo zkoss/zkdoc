@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <max-suspended-threads>a_number</max-suspended-threads>
+```
 
 `[Default: -1 `(no limit)`]`
 

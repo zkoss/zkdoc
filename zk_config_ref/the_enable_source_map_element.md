@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <enable-source-map>true|false</enable-source-map>
+```
 
 `[Default: `false`]`
 

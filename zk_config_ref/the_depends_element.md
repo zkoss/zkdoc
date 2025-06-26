@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <depends>a_list_of_config_names</depends>
+```
 
 `[Optional]`
 

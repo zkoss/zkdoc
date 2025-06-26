@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <file-item-factory-class>`a_class_name''`</file-item-factory-class>
+```
 
 `[Default: null]`
 

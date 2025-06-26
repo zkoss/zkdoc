@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <unavailable-message>any_valid_fragment</unavailable-message>
+```
 
 [Optional][Default: depends on device]
 

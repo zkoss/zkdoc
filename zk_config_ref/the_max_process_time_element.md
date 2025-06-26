@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <max-process-time>a_number</max-process-time>
+```
 
 `[Default: 3000]`
 

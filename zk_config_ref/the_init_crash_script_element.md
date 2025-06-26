@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <init-crash-script>`javascript function assigned to ``window.zkShowCrashMessage`</init-crash-script>
+```
 
 `[Default: see crashmsg.js]`
 

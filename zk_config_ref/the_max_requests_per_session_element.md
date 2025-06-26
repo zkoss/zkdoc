@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <max-requests-per-session>a_number</max-requests-per-session>
+```
 
 `[Default: 5]`
 

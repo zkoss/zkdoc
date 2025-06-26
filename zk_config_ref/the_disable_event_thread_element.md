@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <disable-event-thread>true|false</disable-event-thread>
+```
 
 `Deprecated to enable the event thread according to Java Servlet Specification that may prohibit the creation of new threads`
 

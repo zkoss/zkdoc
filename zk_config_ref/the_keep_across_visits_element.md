@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <keep-across-visits>true|false</keep-across-visits>
+```
 
 `[Default: `false`]`
 

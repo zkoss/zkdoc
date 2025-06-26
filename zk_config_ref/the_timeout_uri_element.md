@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <timeout-uri>a_uri</timeout-uri>
+```
 
 `[Optional]`  
 `[Since 3.6.3]`  

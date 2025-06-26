@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <extendlet-check-period>a_number</extendlet-check-period>
+```
 
 `[Default: -1 (never expired)]`
 

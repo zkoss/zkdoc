@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <send-client-errors>true|false</send-client-errors>
+```
 
 `[Default: `false`]`
 

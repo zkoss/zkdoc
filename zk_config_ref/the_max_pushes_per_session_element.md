@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <max-pushes-per-session>a_number</max-pushes-per-session>
+```
 
 `[Default: -1]`
 

@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <repeat-uuid>true|false</repeat-uuid>
+```
 
 `[Default: false]`  
 `[Since 3.6.0]`

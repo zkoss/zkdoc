@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <failover-manager-class>a_class_name</failover-manager-class>
+```
 
 `[Default: `none`]`
 

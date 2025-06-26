@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <max-upload-size>a_number</max-upload-size>
+```
 
 `[Default: 5120]`
 

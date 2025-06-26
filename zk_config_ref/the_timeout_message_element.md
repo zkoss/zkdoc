@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <timeout-message>a_message</timeout-message>
+```
 
 `[Optional]`
 

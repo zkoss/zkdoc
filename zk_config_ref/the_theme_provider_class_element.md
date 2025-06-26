@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <theme-provider-class>a_class_name</theme-provider-class>
+```
 
 `[Default: `none`]`
 

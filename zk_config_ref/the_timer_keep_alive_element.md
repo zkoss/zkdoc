@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <timer-keep-alive>true|false</timer-keep-alive>
+```
 
 `[Default: false]`
 

@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <cache-provider-class>a_class_name</cache-provider-class>
+```
 
 `[Default: `org.zkoss.zk.ui.impl.SessionDesktopCacheProvider`]`
 

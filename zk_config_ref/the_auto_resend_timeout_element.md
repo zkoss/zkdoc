@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <auto-resend-timeout>a_number</auto-resend-timeout>
+```
 
 `[Default: 200]`  
 `[Since ZK 6.5.2]`

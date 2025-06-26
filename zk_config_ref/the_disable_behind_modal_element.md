@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <disable-behind-modal>true|false</disable-behind-modal>
+```
 
 `[Default: `false`]`  
 `[Deprecated as of release 5.0.0]`

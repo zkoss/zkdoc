@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <server-push-class>a_class_name</server-push-class>
+```
 
 `[Optional][Default: `depends on device and what edition you use`]`
 

@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <au-decoder-class>a_class_name</au-decoder-class>
+```
 
 `[Default: null (using the default JSON-based format)]`
 

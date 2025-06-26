@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <response-charset>a_charset|UTF-8`</response-charset>
+```
 
 `[Default: UTF-8]`
 

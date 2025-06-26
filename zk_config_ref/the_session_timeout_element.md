@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <session-timeout>a_number_in_seconds</session-timeout>
+```
 
 `[Default: 0 `(depending on the Web server)`]`
 

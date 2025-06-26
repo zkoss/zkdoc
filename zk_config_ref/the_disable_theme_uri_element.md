@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <disable-theme-uri>a_theme_uri</disable-theme-uri>
+```
 
 `[Default: `none`]`
 

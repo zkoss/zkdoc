@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <file-size-threshold>a_number</file-size-threshold>
+```
 
 `[Default: 128]`
 

@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <label-location>a_uri</label-location>
+```
 
 [Default: `/WEB-INF/zk-label.properties`]
 

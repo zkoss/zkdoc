@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <automatic-timeout>true|false</automatic-timeout>
+```
 
 `[Optional]`  
 `[Since 3.6.3]`  

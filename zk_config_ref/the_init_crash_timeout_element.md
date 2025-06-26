@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <init-crash-timeout>`a_number`</init-crash-timeout>
+```
 
 `[Default: 60 (sec)]`
 

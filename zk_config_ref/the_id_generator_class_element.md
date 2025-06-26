@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <id-generator-class>a_class_name</id-generator-class>
+```
 
 `[Default: `none`]`
 

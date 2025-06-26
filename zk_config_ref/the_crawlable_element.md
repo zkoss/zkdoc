@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <crawlable>true|false</crawlable>
+```
 
 `[Default: false (disabled)]`  
 `[Since 5.0.0]`  

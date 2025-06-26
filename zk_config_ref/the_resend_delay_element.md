@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <resend-delay>a_number</resend-delay>
+```
 
 `[Default: -1`[^1]`]`  
 `[Deprecated as of release 6.0.0]`

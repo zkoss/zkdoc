@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <debug-js>true|false</debug-js>
+```
 
 `[Default: `false`]`
 

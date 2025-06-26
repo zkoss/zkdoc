@@ -1,14 +1,14 @@
 **Syntax:**
 
+```xml
 <theme-uri>a_theme_uri</theme-uri>
+```
 
-`[Default: `none`]`
+Default: `none`
 
-It specifies the URI of an addition theme (aka., a style sheet file).
+It specifies the URI of an additional theme (aka., a style sheet file).
 
-Like other URI, it accepts `*` for loading browser and Locale dependent
-style sheet. Please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
-for more details.
+Like other URI, it accepts `*` for loading browser and Locale dependent style sheet. Please refer to [Locale-Dependent Resources]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources) for more details.
 
 You can specify any number of `them-uri` as follows.
 

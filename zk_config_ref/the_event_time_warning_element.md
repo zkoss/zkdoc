@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <event-time-warning>a_number</event-time-warning>
+```
 
 `[Default: 600]`
 

@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <upload-charset>a_charset|UTF-8`</upload-charset>
+```
 
 `[Default: UTF-8]`
 

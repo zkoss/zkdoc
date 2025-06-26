@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <theme-uri-handler-class>a_class_name</theme-uri-handler-class>
+```
 
 `[Default: `none`]`
 

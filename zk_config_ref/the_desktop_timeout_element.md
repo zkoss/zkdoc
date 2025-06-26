@@ -1,6 +1,6 @@
 **Syntax:**
 
-<desktop-timeout>a_number</desktop-timeout>
+```xml
 
 `[Default: 3600]`
 

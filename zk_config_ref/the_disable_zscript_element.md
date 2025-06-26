@@ -1,6 +1,8 @@
 **Syntax:**
 
+```xml
 <disable-zscript>false|true</disable-zscript>
+```
 
 `[Default: false (enabled)]`
 
