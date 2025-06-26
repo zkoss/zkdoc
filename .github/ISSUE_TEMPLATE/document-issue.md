@@ -7,11 +7,6 @@ assignees: hawkchen
 
 ---
 
-# Page URL
-Please provide the URL of the zkdoc page where you found the issue:
-
-[Paste the page URL here]
-
 # Issue type
 - [ ] Typo
 - [ ] Unclear explanation
@@ -24,5 +19,5 @@ Please describe the issue or suggestion in detail.
 # Expected improvement
 What change or addition would improve the documentation?
 
-## Additional context
+# Additional context
 Any other information or screenshots that might help.
