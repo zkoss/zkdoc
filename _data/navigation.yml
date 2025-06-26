@@ -24,13 +24,13 @@ main:
   - title: ZK Charts
     url: /zk_charts_essentials/introduction
   - title: ZK Pivottable
-    url: /zk_pivottable_essentials/Quick_Start
+    url: /zk_pivottable_essentials/quick_start
   - title: ZK Calendar
-    url: /zk_calendar_essentials/Introduction
+    url: /zk_calendar_essentials/introduction
   - title: Keikai
     url: https://doc.keikai.io/
   - title: ZK Spring Essentials
-    url: /zk_spring_essentials/Introduction
+    url: /zk_spring_essentials/introduction
   - title: ZATS
     url: /zats_essentials/Introduction
   - title: ZK JSP Tags Essentials
