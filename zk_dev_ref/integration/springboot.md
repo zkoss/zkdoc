@@ -1,2 +1,0 @@
-
-Please read [ZK Installation Guide/Quick Start/Create and Run Your First ZK Application with Spring Boot]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_spring_boot/)
