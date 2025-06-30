@@ -4,7 +4,7 @@
 <max-spare-threads>a_number</max-spare-threads>
 ```
 
-`[Default: 100]`
+`[Default: 100]`
 
 It specifies the maximum allowed number of the thread pool for queuing
 the idle event processing threads. ZK will reuse the idle event

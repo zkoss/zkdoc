@@ -4,7 +4,7 @@
 <theme-provider-class>a_class_name</theme-provider-class>
 ```
 
-`[Default: `none`]`
+`[Default: `none`]`
 
 It specifies the class to provide the theme (aka., a style sheet file)
 URI dynamically if you want to determine the theme based on the current

@@ -4,7 +4,7 @@
 
 (at page scope)
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 Turn on/off whether the user is allowed to key in the grouping character
 when entering a number. The grouping character depends on the Locale.

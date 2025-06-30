@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.portlet2.namespacedParameter.enabled`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 Specifies whether to use portlet namespace for resource request
 parameters.

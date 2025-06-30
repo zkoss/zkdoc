@@ -4,7 +4,7 @@
 <max-process-time>a_number</max-process-time>
 ```
 
-`[Default: 3000]`
+`[Default: 3000]`
 
 It specifies the maximum allowed time to process events, in
 milliseconds. It must be positive. ZK will keep processing the requests

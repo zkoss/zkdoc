@@ -5,8 +5,8 @@
 ```
 
 `[Optional]`  
-`[Since 3.6.3]`  
-`[Default: `<i>`null`</i>`]`
+`[Since 3.6.3]`  
+`[Default: ` `null``]`
 
 It specifies the target URI that will be used to redirect users to, when
 the desktop no longer exists – it is usually caused by session timeout.

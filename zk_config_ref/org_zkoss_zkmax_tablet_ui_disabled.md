@@ -2,7 +2,7 @@
 
 `org.zkoss.zkmax.tablet.ui.disabled`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 It specifies whether to disable the tablet UI.
 

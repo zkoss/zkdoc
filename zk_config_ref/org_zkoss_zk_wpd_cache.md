@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.WPD.cache`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 Specifies whether to cache the result of ZK WPD files (the JavaScript
 code for widgets) at the server. By default, it is enabled. It means the

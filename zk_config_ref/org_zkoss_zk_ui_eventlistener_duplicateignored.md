@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.EventListener.duplicateIgnored`
 
-`Default: `<i>`true`</i>`: allows one instance of event listener to be added multiple times to the listener list of a component or page.`
+Default:  `true``: allows one instance of event listener to be added multiple times to the listener list of a component or page.`
 
 If set to false, components and pages will check their internal listener
 list for the same instance of listener, and will return false instead of

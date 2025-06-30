@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.progressbox.position`
 
-`Default: left, top`
+`Default: left, top`
 
 It specifies how to display the progress box at the client. The progress
 box is a message used to indicate the AU requests being processed by the

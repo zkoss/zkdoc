@@ -2,8 +2,8 @@
 
 `org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed`
 
-`Default: 600`  
-`[Since 9.0.0]`
+`Default: 600`  
+`[Since 9.0.0]`
 
 Specifies the value moving animation speed of Loadingbar in
 milliseconds.

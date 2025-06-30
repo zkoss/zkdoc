@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.grid.autohidePaging`
 
-`Default: true`  
-`[Since 7.0.1]`
+`Default: true`  
+`[Since 7.0.1]`
 
 It specifies whether to enable autohide property for internal paging
 component.

@@ -2,9 +2,9 @@
 
 `org.zkoss.zk.ui.EmulateIE7`
 
-`Default: false`
+Default: `false`
 
-`[dropped in 9.0]`
+`[dropped in 9.0]`
 
 It specifies if we can make Internet Explorer 8 running in IE7
 compatible mode. This can be used if some of your JavaScript code

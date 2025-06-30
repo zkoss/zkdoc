@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.tree.throttleMillis`
 
-`Default: 300`
+`Default: 300`
 
 Specifies the millisecond of scrolling throttling in Tree render
 on-demand (ROD).

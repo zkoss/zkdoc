@@ -1,6 +1,6 @@
 **Listener:**
 
-`org.zkoss.zk.ui.event.EventThreadSuspend `
+`org.zkoss.zk.ui.event.EventThreadSuspend `
 
 A listener could implement
 [org.zkoss.zk.ui.event.EventThreadSuspend](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventThreadSuspend.html),

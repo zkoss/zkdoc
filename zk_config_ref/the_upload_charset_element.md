@@ -4,7 +4,7 @@
 <upload-charset>a_charset|UTF-8`</upload-charset>
 ```
 
-`[Default: UTF-8]`
+`[Default: UTF-8]`
 
 It specifies the charset (aka., encoding) for the uploaded text files if
 no charset is specified with the content type.

@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.image.preload`
 
-`Default: false`  
-`[Since 6.5.2]`
+Default: `false`  
+`[Since 6.5.2]`
 
 It specifies the image will be preloaded or not for
 [LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)

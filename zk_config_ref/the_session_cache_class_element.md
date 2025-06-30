@@ -4,7 +4,7 @@
 <session-cache-class>a_class_name</session-cache-class>
 ```
 
-`[Default: `org.zkoss.zk.ui.http.SimpleSessionCache`]`
+`[Default: `org.zkoss.zk.ui.http.SimpleSessionCache`]`
 
 It specifies the session cache used to store ZK sessions. It must
 implement the

@@ -4,7 +4,7 @@
 <enable-source-map>true|false</enable-source-map>
 ```
 
-`[Default: `false`]`
+`[Default: `false`]`
 
 It specifies whether to using source map to debug JavaScript files. By
 default, it is `false` and ZK loads the merged JavaScript files in the

@@ -4,7 +4,7 @@
 
 {% include NestedLibraryProperty.md %}
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 {% include version-badge.html version=10.2.0 %}
 

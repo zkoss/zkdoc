@@ -2,7 +2,7 @@
 
 `org.zkoss.bind.DebuggerFactory.enable`
 
-`Default: `false
+Default: false
 
 Turn on to enable log ZK Bind debugging information. It will print lots
 of messages during run-time which may be helpful for dubugging. Please

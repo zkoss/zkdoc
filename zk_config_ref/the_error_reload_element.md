@@ -3,13 +3,13 @@
 **Syntax:**
 
 <error-reload>  
-    [`<device-type>deviceType|ajax`</device-type>`]  
-`    `<error-code>an_error_code</error-code>  
-`    `<reload-uri>an_uri</reload-uri>  
-    [`<connection-type>`server-push|au`</connection-type>`]  
+    [`<device-type>deviceType|ajax`</device-type>`]  
+`    `<error-code>an_error_code</error-code>  
+`    `<reload-uri>an_uri</reload-uri>  
+    [`<connection-type>`server-push|au`</connection-type>`]  
 </error-reload>
 
-`[Default: show an error message]`
+`[Default: show an error message]`
 
 It specifies what URI to redirect the browser to. For example, if you
 prefer to redirect to the login page, say, `login.zul`, you can specify
@@ -32,8 +32,8 @@ the following in zk.xml:
 ## connection-type
 
 `Optional`  
-`Default: au`  
-`Allowed: au, server-push`
+`Default: au`  
+`Allowed: au, server-push`
 
 Specifies the connection type. It can be either `au` or `server-push`.
 By default, it is `au` which are the Ajax reqests sent by the widgets
@@ -45,8 +45,8 @@ you have to specify `server-push` as shown in the example [ below](#error-code)
 ## device-type
 
 `Optional`  
-`Default: ajax`  
-`[Since 3.6.3]`
+`Default: ajax`  
+`[Since 3.6.3]`
 
 Specifies the device type. By default, it is `ajax`. If you want to
 configure for ZK Mobile, use `mil`.

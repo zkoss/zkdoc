@@ -1,6 +1,6 @@
 # HttpSessionListener
 
-`[Required] Class: ` `org.zkoss.zk.ui.http.HttpSessionListener`
+`[Required] Class: ` `org.zkoss.zk.ui.http.HttpSessionListener`
 
 ZK Session Cleaner is a listener used to clean up memory when a HTTP
 session is destroyed.

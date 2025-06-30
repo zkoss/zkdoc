@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.tablet.meta.viewport.disabled`
 
-`Default: false`  
-`[Since 6.5.0]`
+Default: `false`  
+`[Since 6.5.0]`
 
 Specifies whether to generate a meta viewport tag or not for tablet
 devices. It is enabled by default.

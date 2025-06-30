@@ -7,7 +7,7 @@ Set to use CSS3 flex implementation in ZK Flex.
 See [ZK Flex]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
 for additional information.
 
-`Default: true `
+`Default: true `
 
 ```xml
 <component>

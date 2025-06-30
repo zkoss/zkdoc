@@ -4,7 +4,7 @@
 <file-repository>directory_path</file-repository>
 ```
 
-`[Default: null] (will use System.getProperty("java.io.tmpdir"))`
+`[Default: null] (will use System.getProperty("java.io.tmpdir"))`
 
 It specifies the directory in which uploaded files will be stored, if
 stored on disk.

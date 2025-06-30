@@ -4,7 +4,7 @@
 <ui-factory-class>a_class_name</ui-factory-class>
 ```
 
-[Default: `org.zkoss.zk.ui.http.SimpleUiFactory`]
+[Default: `org.zkoss.zk.ui.http.SimpleUiFactory`]
 
 It specifies which class is used to create desktops and pages, and to
 convert URL to a page definition. The class must have a default

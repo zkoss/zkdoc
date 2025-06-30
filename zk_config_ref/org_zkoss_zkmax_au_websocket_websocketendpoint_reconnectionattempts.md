@@ -1,7 +1,7 @@
 **Property:**
 org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionAttempts
 
-`Default: `<i>`Infinity`</i>
+Default:  `Infinity`
 
 The number of reconnection attempts before giving up for the WebSocket
 client.

@@ -1,6 +1,8 @@
-**Property:** org.zkoss.bind.defaultComposer.class
+**Property:** 
 
-`Default: `<i>`org.zkoss.bind.BindComposer`</i>
+`org.zkoss.bind.defaultComposer.class`
+
+`Default: org.zkoss.bind.BindComposer`
 
 Auto apply the composer when a component setting "viewModel" without
 "apply".

@@ -4,8 +4,8 @@
 <repeat-uuid>true|false</repeat-uuid>
 ```
 
-`[Default: false]`  
-`[Since 3.6.0]`
+`[Default: false]`  
+`[Since 3.6.0]`
 
 It specifies whether to use the same UUID sequence for desktops for each
 reboot. By default, it is turned off so the desktop's UUID is completely

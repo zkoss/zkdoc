@@ -4,8 +4,8 @@
 <crawlable>true|false</crawlable>
 ```
 
-`[Default: false (disabled)]`  
-`[Since 5.0.0]`  
+`[Default: false (disabled)]`  
+`[Since 5.0.0]`  
 
 You are not able to specify whether content is crawlable, this works by
 generating tags within your content where content only exists in the

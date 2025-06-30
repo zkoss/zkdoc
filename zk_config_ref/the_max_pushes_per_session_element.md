@@ -4,7 +4,7 @@
 <max-pushes-per-session>a_number</max-pushes-per-session>
 ```
 
-`[Default: -1]`
+`[Default: -1]`
 
 It specifies the maximum allowed number of concurrent server-push
 connections per session.

@@ -2,7 +2,7 @@
 
 `org.zkoss.bind.appValidators`
 
-`Default: `none
+Default: none
 
 Register application level validators and only have one instance shared
 between all binders.

@@ -1,10 +1,10 @@
 **Syntax:**
 
 ```xml
-<init-crash-script>`javascript function assigned to ``window.zkShowCrashMessage`</init-crash-script>
+<init-crash-script>`javascript function assigned to ``window.zkShowCrashMessage`</init-crash-script>
 ```
 
-`[Default: see crashmsg.js]`
+`[Default: see crashmsg.js]`
 
 If the client engine stops working before even the error handling is
 initialized (e.g. when ZK's core scripts fail to download - `zk.wpd`),

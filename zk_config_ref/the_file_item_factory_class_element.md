@@ -4,7 +4,7 @@
 <file-item-factory-class>`a_class_name''`</file-item-factory-class>
 ```
 
-`[Default: null]`
+`[Default: null]`
 
 It specifies the class that is used to create a file item for fileupload
 or null to use the default. The class must implement the

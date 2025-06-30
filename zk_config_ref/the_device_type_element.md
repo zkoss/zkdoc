@@ -5,8 +5,8 @@
 ```
 
 `[Optional]`  
-`[Since 3.6.3]`  
-`[Default: ajax]`
+`[Since 3.6.3]`  
+`[Default: ajax]`
 
 It specifies the device type that `<timeout-uri>` and
 `<automatic-timeout>` are applied to. By default, it is `ajax`. If you

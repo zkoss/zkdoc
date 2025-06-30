@@ -2,11 +2,11 @@
 
 `org.zkoss.zkex.ui.comet.smartconnection.disabled`
 
-`Default: `<i>`false`</i>  
-`[Since 6.5.1]`
+Default:  `false`  
+`[Since 6.5.1]`
 
-`Default: `<i>`true`</i>  
-`[Since 7.0.1]`
+Default:  `true`  
+`[Since 7.0.1]`
 
 It specifies whether to disable the use of [HTML5's Page Visibility API](http://www.w3.org/TR/page-visibility/) for handling Comet-based
 server push.

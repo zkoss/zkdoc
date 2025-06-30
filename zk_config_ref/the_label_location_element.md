@@ -4,7 +4,7 @@
 <label-location>a_uri</label-location>
 ```
 
-[Default: `/WEB-INF/zk-label.properties`]
+[Default: `/WEB-INF/zk-label.properties`]
 
 It specifies the location of the properties file for [the internationalization labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 If you have multiple properties files, you could specify them one by

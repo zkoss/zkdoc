@@ -4,7 +4,7 @@
 <web-app-class>a_class_name</web-app-class>
 ```
 
-`[Default: `org.zkoss.zk.ui.http.SimpleWebApp`]`
+`[Default: `org.zkoss.zk.ui.http.SimpleWebApp`]`
 
 It specifies which class is used to implement the Web application. The
 class must have a default constructor (without any argument), and

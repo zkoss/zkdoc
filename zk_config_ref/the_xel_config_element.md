@@ -9,7 +9,7 @@ The allowed child elements include `evaluator-class`. At most one
 
 ## The evaluator-class Element
 
-`[Default: `org.zkoss.xel.zel.ELFactory`]`
+`[Default: `org.zkoss.xel.zel.ELFactory`]`
 
 It specifies the class used to evaluate XEL (Extensible Expression
 Language) expressions. The specified class must implement the
@@ -18,7 +18,7 @@ interface.
 
 Since ZK 6, if not specified, ZK uses the new XEL implementation from
 the ZK EL Library (i.e., `zel.jar`), which supports new features seen in
-<i>Unified Expression Language 2.2</i> such as method calls and l-value.
+ Unified Expression Language 2.2 such as method calls and l-value.
 If ZK cannot find the `zel.jar` in your class-path, ZK will degrade to
 use the original ZK Commons EL(`zcommons-el.jar`).
 

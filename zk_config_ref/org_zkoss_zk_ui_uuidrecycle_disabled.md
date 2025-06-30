@@ -1,13 +1,13 @@
 **Property:**
 
-`org.zkoss.zk.ui.uuidRecycle.disabled `
+`org.zkoss.zk.ui.uuidRecycle.disabled `
 
-`Default: `<i>`false`</i>` (i.e., UUID recycle is enabled)`
+Default:  `false`` (i.e., UUID recycle is enabled)`
 
 Show the warning below to recommend disabling this feature. (i.e.
-specifying with <i>true</i>)
+specifying with  true)
 
-`UID recycle is enabled and it's better to disable it by specifying a library property 'org.zkoss.zk.ui.uuidRecycle.disabled' with true to prevent some unwanted widget uuid reusing at client side accidentally.`
+`UID recycle is enabled and it's better to disable it by specifying a library property 'org.zkoss.zk.ui.uuidRecycle.disabled' with true to prevent some unwanted widget uuid reusing at client side accidentally.`
 
 `Deprecated`
 

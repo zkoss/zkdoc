@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ZUML.cache`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 Specifies whether to cache the result of ZK ZUML files (the \*.zul files
 in the classpath loaded by `ZumlExtendlet`) at the server. By default,

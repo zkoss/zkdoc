@@ -4,7 +4,7 @@
 <keep-across-visits>true|false</keep-across-visits>
 ```
 
-`[Default: `false`]`
+`[Default: `false`]`
 
 It specifies whether to keep the desktop when a user reloads an URL or
 browses away to another URL. Since browsers won't cache HTML pages

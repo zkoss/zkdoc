@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.listbox.groupSelect`
 
-`Default: false`  
-`[Since 5.0.7]`
+Default: `false`  
+`[Since 5.0.7]`
 
 Giving true on this property makes Listgroups selectable in Listbox.
 
@@ -18,5 +18,5 @@ Giving true on this property makes Listgroups selectable in Listbox.
 
 | Version | Date | Content |
 |---------|------|---------|
-|         |      |         |
+|         |      |         |
 |         |      |         |

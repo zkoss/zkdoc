@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.composer.autowire.xel`
 
-`Default: `true` (it is default to `false` in 6.0)`
+Default: true` (it is default to `false` in 6.0)`
 
 It specifies whether
 `org.zkoss.zk.ui.util.GenericAutowireComposer` (and

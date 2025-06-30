@@ -4,7 +4,7 @@
 <max-suspended-threads>a_number</max-suspended-threads>
 ```
 
-`[Default: -1 `(no limit)`]`
+`[Default: -1 `(no limit)`]`
 
 It specifies the maximum allowed number of the suspended event
 processing threads. A negative value indicates that there is no limit at

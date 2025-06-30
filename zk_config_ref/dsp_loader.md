@@ -1,6 +1,6 @@
 # InterpreterServlet
 
-[Optional] Class: `org.zkoss.web.servlet.dsp.InterpreterServlet`
+[Optional] Class: `org.zkoss.web.servlet.dsp.InterpreterServlet`
 
 DSP Loader is a servlet used to process the DSP files. DSP is a JSP-like
 template technology.
@@ -32,11 +32,11 @@ though extensible through TLD files, are different from JSP tags.
 <tbody>
 <tr class="odd">
 <td><p>charset</p></td>
-<td><p>[Optional][Default: <code>UTF-8</code>]</p>
+<td><p>[Optional][Default: `UTF-8`]</p>
 <p>It specifies the default charset for the output of the DSP
 interpreter.</p>
 <p>If an empty string is specified as follows, the container's default
-is used. In other words, the <code>setCharacterEncoding</code> method of
+is used. In other words, the `setCharacterEncoding` method of
 <em>javax.servlet.ServletResponse</em> is not called.</p></td>
 </tr>
 <tr class="even">
@@ -47,9 +47,9 @@ class loader, in addition to the servlet context.</p></td>
 </tr>
 <tr class="odd">
 <td><p>compress</p></td>
-<td><p>[Optional][Default: <code>true</code>]</p>
+<td><p>[Optional][Default: `true`]</p>
 <p>It specifies whether to compress the output if the browser supports
-the compression (<code>Accept-Encoding</code>) and this Servlet is not
+the compression (`Accept-Encoding`) and this Servlet is not
 included by other Servlets.</p></td>
 </tr>
 </tbody>

@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.versionInfo.enabled`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 It specifies whether to show ZK version on each page.
 

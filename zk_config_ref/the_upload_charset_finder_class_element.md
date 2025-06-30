@@ -4,7 +4,7 @@
 <upload-charset-finder-class>a_class_name</upload-charset-finder-class>
 ```
 
-`[Default: null]`
+`[Default: null]`
 
 It specifies the finder that determines charset (aka.., encoding) for
 the uploaded text files if no charset is specified with the content

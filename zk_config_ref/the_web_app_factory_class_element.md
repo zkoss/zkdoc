@@ -4,7 +4,7 @@
 <web-app-factory-class>a_class_name</web-app-factory-class>
 ```
 
-`[Default: none (and `org.zkoss.zk.ui.http.SimpleWebApp` is used)]`
+`[Default: none (and `org.zkoss.zk.ui.http.SimpleWebApp` is used)]`
 
 It specifies which class is used to instantiate the instance of the
 implementation of the Web application. The class must have a default

@@ -4,7 +4,7 @@
 <max-upload-size>a_number</max-upload-size>
 ```
 
-`[Default: 5120]`
+`[Default: 5120]`
 
 It specifies the maximum allowed size, in **kilobytes**, to upload a
 file from a browser. A negative value indicates that there is no limit.

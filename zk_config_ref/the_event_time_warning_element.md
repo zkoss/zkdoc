@@ -4,7 +4,7 @@
 <event-time-warning>a_number</event-time-warning>
 ```
 
-`[Default: 600]`
+`[Default: 600]`
 
 It specifies the time, in seconds, to show a warning message if an event
 has been processed longer than it.

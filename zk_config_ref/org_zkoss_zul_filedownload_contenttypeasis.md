@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.Filedownload.contentTypeAsIs`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 It specifies whether to treat the Content-Type as is in `Filedownload`
 class.

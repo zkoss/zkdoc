@@ -2,8 +2,8 @@
 
 `org.zkoss.web.classWebResource.cache`
 
-`Default: true`  
-`[Since 3.6.3]`
+`Default: true`  
+`[Since 3.6.3]`
 
 It specifies whether to allow the browsers to cache so-called class Web
 resources[^1].
@@ -12,8 +12,8 @@ By default, it is true. It means the static class Web resources are
 cached in browsers if possible, unless you upgrade ZK to a different
 version.
 
-`Notice the you can control the immutable period of the CSS files of class Web resources with`  
-`another property called `org.zkoss.web.classWebResource.cache.CSS.hours`.`
+`Notice the you can control the immutable period of the CSS files of class Web resources with`  
+`another property called `org.zkoss.web.classWebResource.cache.CSS.hours`.`
 
 If you are developing a component, it is better to turn it off (so you
 can force browser to load modified CSS and JS files by pressing F5).

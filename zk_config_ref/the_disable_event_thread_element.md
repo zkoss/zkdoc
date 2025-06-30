@@ -4,11 +4,11 @@
 <disable-event-thread>true|false</disable-event-thread>
 ```
 
-`Deprecated to enable the event thread according to Java Servlet Specification that may prohibit the creation of new threads`
+`Deprecated to enable the event thread according to Java Servlet Specification that may prohibit the creation of new threads`
 
-`[Default: false]`
+`[Default: false]`
 
-`[Default: true](disabled)`
+`[Default: true](disabled)`
 
 It specifies whether to disable the use of the event processing thread.
 If disabled, no event processing thread will be used at all. In other

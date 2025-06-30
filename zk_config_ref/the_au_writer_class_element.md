@@ -4,7 +4,7 @@
 <au-writer-class>a_class_name</au-writer-class>
 ```
 
-`[Default: `org.zkoss.zk.au.http.HttpAuWriter` for ZK CE and PE, or `org.zkoss.zkmax.au.http.SmartAuWriter` for ZK EE]`
+`[Default: `org.zkoss.zk.au.http.HttpAuWriter` for ZK CE and PE, or `org.zkoss.zkmax.au.http.SmartAuWriter` for ZK EE]`
 
 It specifies which class is used to implement the AU writer. The AU
 writer is used to generate the output and send it to the client. The

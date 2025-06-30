@@ -15,7 +15,7 @@ The latest versions containing a fix are:
 
 {% include GlobalLibraryProperty.html %}
 
-`Default: `none`
+Default: none`
 
 {% include version-badge.html version=5.0.0 %}
 

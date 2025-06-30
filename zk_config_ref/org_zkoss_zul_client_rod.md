@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.client.rod`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 It specifies whether to apply [Client Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand).
 This property is not used for Grid and Listbox.

@@ -7,7 +7,7 @@ Set to disable method cache in MVVM.
 Notice that it is not recommended to use in production, you can use this
 when developing (hot-swap).
 
-`Default: false`
+Default: `false`
 
 ```xml
 <library-property>

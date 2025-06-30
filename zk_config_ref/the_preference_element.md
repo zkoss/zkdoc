@@ -1,8 +1,8 @@
 **Syntax:**
 
 <preference>  
-`    `<name>any name</name>  
-`    `<value>any value</value>  
+`    `<name>any name</name>  
+`    `<value>any value</value>  
 </preference>
 
 `[Optional]`

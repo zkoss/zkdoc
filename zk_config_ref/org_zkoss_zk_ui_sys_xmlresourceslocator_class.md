@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.sys.XMLResourcesLocator.class`
 
-`Default: `<i>`none`</i>` (it implies `org.zkoss.util.resource.ClassLocator`)`
+Default:  `none`` (it implies `org.zkoss.util.resource.ClassLocator`)`
 
 It specifies the name of the class used to load `metainfo/config.xml`,
 `metainfo/lang.xml` and `metainfo/lang-addon.xml`. By default, they are

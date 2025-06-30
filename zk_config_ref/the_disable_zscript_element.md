@@ -4,7 +4,7 @@
 <disable-zscript>false|true</disable-zscript>
 ```
 
-`[Default: false (enabled)]`
+`[Default: false (enabled)]`
 
 Specifies whether or not to disable the use of
 [zscript](ZUML_Reference/ZUML/Elements/zscript) (i.e., the

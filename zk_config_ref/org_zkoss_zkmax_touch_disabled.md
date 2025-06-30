@@ -4,7 +4,7 @@
 
 {% include GlobalLibraryProperty.html %}
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 {% include version-badge.html version=9.6.0 %}
 {% include edition-availability.html edition="ee" %}

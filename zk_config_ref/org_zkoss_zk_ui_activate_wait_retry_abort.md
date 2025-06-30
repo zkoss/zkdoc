@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.activate.wait.retry.abort`
 
-`Default: ``false`
+Default: `false`
 
 A library property indicates that, if the time waiting for activation is
 longer than the value specified in [ org.zkoss.zk.ui.activate.wait.retry.timeout]({{site.baseUrl}}/zk_config_ref/The_Library_Properties/org.zkoss.zk.ui.activate.wait.retry.timeout),

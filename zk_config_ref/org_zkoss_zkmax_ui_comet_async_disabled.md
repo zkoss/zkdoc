@@ -2,7 +2,7 @@
 
 `org.zkoss.zkmax.ui.comet.async.disabled`
 
-`Default: `<i>`auto`</i>
+Default:  `auto`
 
 It specifies whether to disable the use of Servlet 3's Asynchronous
 Support for handling Comet-based server push.

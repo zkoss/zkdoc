@@ -2,7 +2,7 @@
 
 `org.zkoss.util.label.cache`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 Specifies whether to cache zk-labels.properties. By default, it is
 enabled. It means the content of zk-labels.properties is loaded and

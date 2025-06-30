@@ -4,8 +4,8 @@
 <auto-resend-timeout>a_number</auto-resend-timeout>
 ```
 
-`[Default: 200]`  
-`[Since ZK 6.5.2]`
+`[Default: 200]`  
+`[Since ZK 6.5.2]`
 
 It specifies the timeout, in milliseconds, to re-send the AU request
 when the server's service unavailable or timeout.

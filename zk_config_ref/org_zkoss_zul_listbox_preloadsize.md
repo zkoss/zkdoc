@@ -1,12 +1,12 @@
 **Property:**
 
-`org.zkoss.zul.listbox.preloadSize `
+`org.zkoss.zul.listbox.preloadSize `
 
-`Default: 50`  
-`[Since 6.0.1]`
+`Default: 50`  
+`[Since 6.0.1]`
 
-`Default: 7`  
-`[Since 5.0.8]`
+`Default: 7`  
+`[Since 5.0.8]`
 
 Specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data

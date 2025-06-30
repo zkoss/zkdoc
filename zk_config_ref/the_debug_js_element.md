@@ -4,7 +4,7 @@
 <debug-js>true|false</debug-js>
 ```
 
-`[Default: `false`]`
+`[Default: `false`]`
 
 It specifies whether to load uncompressed JavaScript files. By default,
 it is `false` and ZK loads the compressed version of JavaScript files

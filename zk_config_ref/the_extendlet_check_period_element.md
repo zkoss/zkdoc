@@ -4,7 +4,7 @@
 <extendlet-check-period>a_number</extendlet-check-period>
 ```
 
-`[Default: -1 (never expired)]`
+`[Default: -1 (never expired)]`
 
 It specifies the time, in seconds, to wait before checking whether a
 resource loaded by an extendlet is modified. An extendlet is a processor

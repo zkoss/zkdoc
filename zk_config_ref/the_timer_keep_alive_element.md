@@ -4,7 +4,7 @@
 <timer-keep-alive>true|false</timer-keep-alive>
 ```
 
-`[Default: false]`
+`[Default: false]`
 
 It specifies whether to keep the session alive, when receiving the
 `onTimer` event.

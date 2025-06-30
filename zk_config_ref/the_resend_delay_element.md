@@ -4,8 +4,8 @@
 <resend-delay>a_number</resend-delay>
 ```
 
-`[Default: -1`[^1]`]`  
-`[Deprecated as of release 6.0.0]`
+`[Default: -1`[^1]`]`  
+`[Deprecated as of release 6.0.0]`
 
 It specifies the time, in milliseconds, to wait before resending the AU
 requests to the server. There are a couple of reasons an AU request is

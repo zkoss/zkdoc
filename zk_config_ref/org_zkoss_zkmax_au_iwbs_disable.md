@@ -2,7 +2,7 @@
 
 `org.zkoss.zkmax.au.IWBS.disable`
 
-`Default: false`
+Default: `false`
 
 It specifies whether to disable InaccessibleWidgetBlockService.
 

@@ -1,6 +1,6 @@
 # DHtmlLayoutServlet
 
-`Location: WEB-INF/web.xml`
+`Location: WEB-INF/web.xml`
 
 **\[Required\] Class:**
 `org.zkoss.zk.ui.http.DHtmlLayoutServlet`
@@ -35,12 +35,12 @@ Here is [a complete sample]({{site.baseUrl}}/zk_config_ref/web.xml/Sample_of_web
 <td><p>update-uri</p></td>
 <td><p>[Required]</p>
 <p>It specifies the URI which the ZK AU engine is mapped to.</p>
-<p>For example, if the ZK AU engine is mapped to <code>/zkau/*</code>,
-by the use of <code>servlet-mapping</code>, then specify
-<code>/zkau</code> for this parameter.</p>
+<p>For example, if the ZK AU engine is mapped to `/zkau/*`,
+by the use of `servlet-mapping`, then specify
+`/zkau` for this parameter.</p>
 <p>Note: if the servlet container is used with other Web server, like
 Apache, you have to map this update URI to the servlet container (in
-additions to <code>zul</code> and <code>zhtml</code> files).</p></td>
+additions to `zul` and `zhtml` files).</p></td>
 </tr>
 <tr class="even">
 <td><p>resource-uri</p></td>
@@ -49,27 +49,27 @@ additions to <code>zul</code> and <code>zhtml</code> files).</p></td>
 href="{{site.baseUrl}}/zk_config_ref/web.xml/ZK_Resource_Engine"
 title="wikilink"> ZK Resource engine</a> is mapped to.</p>
 <p>For example, if the ZK Resource engine is mapped to
-<code>/zkres/*</code>, by the use of <code>servlet-mapping</code>, then
-specify <code>/zkres</code> for this parameter.</p>
+`/zkres/*`, by the use of `servlet-mapping`, then
+specify `/zkres` for this parameter.</p>
 <p>Note: if the servlet container is used with other Web server, like
 Apache, you have to map this resource URI to the servlet container (in
-additions to <code>zul</code> and <code>zhtml</code> files).</p></td>
+additions to `zul` and `zhtml` files).</p></td>
 </tr>
 <tr class="odd">
 <td><p>compress</p></td>
-<td><p>[Optional][Default:<code>true</code>]</p>
+<td><p>[Optional][Default:`true`]</p>
 <p>It specifies whether to compress the output if the browser supports
-the compression (<code>Accept-Encoding</code>) and this Servlet is not
+the compression (`Accept-Encoding`) and this Servlet is not
 included by other Servlets.</p></td>
 </tr>
 <tr class="even">
 <td><p>log-level</p></td>
 <td><p>[Optional]</p>
-<p>It specifies the default log level for <code>org.zkoss</code>. If not
-specified, the system default (usually <code>INFO</code>) is used.</p>
-<p>Possible values: <code>OFF</code>, <code>ERROR</code>,
-<code>WARNING</code>, <code>INFO</code>, <code>DEBUG</code> and
-<code>FINER</code>. Please refer to <a
+<p>It specifies the default log level for `org.zkoss`. If not
+specified, the system default (usually `INFO`) is used.</p>
+<p>Possible values: `OFF`, `ERROR`,
+`WARNING`, `INFO`, `DEBUG` and
+`FINER`. Please refer to <a
 href="ZK_Developer&#39;s_Reference/Supporting_Utilities/Logger"
 title="wikilink">ZK Developer's Reference</a> for details.</p></td>
 </tr>

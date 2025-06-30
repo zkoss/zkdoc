@@ -2,7 +2,7 @@
 
 `org.zkoss.zkplus.cdi.beanManager.jndiName`
 
-`Default: `<i>`java:comp/env/BeanManager`</i>
+Default:  `java:comp/env/BeanManager`
 
 Specify a JNDI name for bean manager in CDI
 

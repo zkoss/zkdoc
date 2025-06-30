@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.WCS.cache`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 Specifies whether to cache the result of ZK WCS files (the stylesheets
 of components) at the server. By default, it is enabled. It means the

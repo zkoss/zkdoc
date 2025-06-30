@@ -1,9 +1,9 @@
 **Syntax:**
 
 <file-check-period>a_number</file-check-period>  
-`   `  
-`[Default: 5]`  
-`   `
+`   `  
+`[Default: 5]`  
+`   `
 
 It specifies the time, in seconds, to wait before checking whether a
 file is modified.

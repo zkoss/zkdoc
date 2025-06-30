@@ -2,10 +2,10 @@
 
 `org.zkoss.bind.proxy.IgnoredProxyClasses`
 
-`Default: `<i>`java.util.Date, java.sql.Date, java.sql.Timestamp, java.math.BigDecimal, java.math.BigInteger`</i>
+Default:  `java.util.Date, java.sql.Date, java.sql.Timestamp, java.math.BigDecimal, java.math.BigInteger`
 
 It specifies the name of the classes which would not be proxied.
-
+```xml
     <library-property>
         <name>org.zkoss.bind.proxy.IgnoredProxyClasses</name>
             <appendable>true</appendable>
@@ -17,3 +17,4 @@ It specifies the name of the classes which would not be proxied.
                 <value>java.math.BigInteger</value>
             </list>
     </library-property>
+```

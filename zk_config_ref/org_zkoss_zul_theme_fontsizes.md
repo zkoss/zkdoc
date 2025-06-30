@@ -4,6 +4,6 @@
 
 Default: 11px
 
-`[Since 3.6.0]`
+`[Since 3.6.0]`
 
 It specifies the size of the smaller font used in the ZUL CSS file.

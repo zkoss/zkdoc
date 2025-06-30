@@ -5,8 +5,8 @@
 ```
 
 `[Optional]`  
-`[Since 3.6.3]`  
-`[Default: false]`
+`[Since 3.6.3]`  
+`[Default: false]`
 
 It specifies whether or not to automatically redirect to the timeout
 URI.

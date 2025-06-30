@@ -1,30 +1,15 @@
 **Syntax:**
 
+```xml
 <embed>
-
 *any_valid_fragment*
-
 </embed>
-
+```
 `[Optional][Multiple]`
 
 It specifies the content that shall be added to the output generated and
 sent to the client when rendering a desktop. The syntax of the content
-will depend on the client. For Ajax clients(browsers), you can put
-\[<https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head#see_also>
-any tag that can be placed inside HTML <code>
-
-<head>
-
-</code>\], such as <code>
-
-<script>
-
-</code>, <code>
-
-<meta>
-
-</code>, and others.
+will depend on the client. For Ajax clients(browsers), you can put any tag that can be placed inside HTML [`<head>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head), such as `<script>`, `<meta>`, and others.
 
 This can be a way to include a javascript code snippet in all pages,
 e.g. a javascript patch or a custom widget javascript. For example, if

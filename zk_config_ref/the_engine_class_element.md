@@ -4,7 +4,7 @@
 <engine-class>a_class_name</engine-class>
 ```
 
-`[Default: `org.zkoss.zk.ui.impl.UiEngineImpl`]`
+`[Default: `org.zkoss.zk.ui.impl.UiEngineImpl`]`
 
 It specifies which class is used to implement the UI Engine. The class
 must have a default constructor (without any argument), and implement

@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.listbox.initRodSize`
 
-`Default: 100`
+`Default: 100`
 
 Specifies the number of items rendered when the Listbox first render. It
 is used only if live data

@@ -1,7 +1,7 @@
 **Syntax:**
 
 <system-config>  
-`   `  
+`   `  
 </system-config>
 
 `[Optional]`

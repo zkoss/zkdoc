@@ -1,6 +1,6 @@
 **Property:** org.zkoss.zk.au.AuWriters.ContentType
 
-`Default: `<i>`text/plain;charset=UTF-8`</i>
+Default:  `text/plain;charset=UTF-8`
 
 It specifies the Content-Type of the AU response.
 

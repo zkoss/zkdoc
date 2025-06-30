@@ -4,7 +4,7 @@
 <server-push-class>a_class_name</server-push-class>
 ```
 
-`[Optional][Default: `depends on device and what edition you use`]`
+`[Optional][Default: `depends on device and what edition you use`]`
 
 It specifies which class used to implement the server-push feature. The
 class must have a default constructor (without any argument), and

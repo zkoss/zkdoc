@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.listbox.checkmarkDeselectOthers`
 
-`Default: false`  
-`[Since 5.0.5]`
+Default: `false`  
+`[Since 5.0.5]`
 
 If a Listbox's checkmark
 ([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is

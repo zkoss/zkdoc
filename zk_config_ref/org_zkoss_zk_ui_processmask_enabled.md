@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.processMask.enabled`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 Specifies whether always to show a processing mask when doing a lengthy
 operation on the server side. The mask will cover the whole page to

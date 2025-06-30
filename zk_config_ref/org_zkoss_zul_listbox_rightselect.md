@@ -2,7 +2,7 @@
 
 `org.zkoss.zul.listbox.rightSelect`
 
-`Default: true`
+`Default: true`
 
 If a listbox's checkmark
 ([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is

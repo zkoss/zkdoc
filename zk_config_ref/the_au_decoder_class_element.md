@@ -4,7 +4,7 @@
 <au-decoder-class>a_class_name</au-decoder-class>
 ```
 
-`[Default: null (using the default JSON-based format)]`
+`[Default: null (using the default JSON-based format)]`
 
 It specifies which class will be used to implement the AU decoder. The
 AU decoder is used to decode the AU requests. The class must implement

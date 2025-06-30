@@ -4,7 +4,7 @@
 <send-client-errors>true|false</send-client-errors>
 ```
 
-`[Default: `false`]`
+`[Default: `false`]`
 
 It specifies whether client errors should be sent to the server for
 logging the page url where the error occurred and its stack trace. By

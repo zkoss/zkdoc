@@ -4,8 +4,8 @@
 <disable-behind-modal>true|false</disable-behind-modal>
 ```
 
-`[Default: `false`]`  
-`[Deprecated as of release 5.0.0]`
+`[Default: `false`]`  
+`[Deprecated as of release 5.0.0]`
 
 It specifies whether to disable all elements behind the modal window at
 the browser. If disabled, the performance is better.

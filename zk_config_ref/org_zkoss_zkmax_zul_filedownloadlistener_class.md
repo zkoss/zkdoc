@@ -2,8 +2,8 @@
 
 `org.zkoss.zkmax.zul.FiledownloadListener.class`
 
-`Default: `<i>`none`</i>  
-`[Since 3.5.0]`
+Default:  `none`  
+`[Since 3.5.0]`
 
 It specifies the name of the class that will be notified when a file
 download is happening. The class must implement the

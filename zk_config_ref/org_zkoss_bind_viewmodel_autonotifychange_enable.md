@@ -2,7 +2,7 @@
 
 `org.zkoss.bind.viewModel.autoNotifyChange.enable`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 Enable posting NotifyChange when setter method called.
 

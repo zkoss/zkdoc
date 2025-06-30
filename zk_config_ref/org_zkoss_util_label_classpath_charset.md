@@ -2,7 +2,7 @@
 
 `org.zkoss.util.label.classpath.charset`
 
-`Default: UTF-8`
+`Default: UTF-8`
 
 It defines the charset used to encode zk-label.properties if the file is
 located in classpath.

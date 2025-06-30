@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.scripting.bsh.method.serializable`
 
-`Default: `<i>`true`</i>
+Default:  `true`
 
 To disable the serialization of BeanShell method(s).
 

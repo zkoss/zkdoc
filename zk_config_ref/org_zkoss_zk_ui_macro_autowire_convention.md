@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.macro.autowire.convention`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 By default, the macro component will wire the UI components to the data
 member automatically based on CSS selectors, as described in [ZK Developer's Reference: Wire Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).

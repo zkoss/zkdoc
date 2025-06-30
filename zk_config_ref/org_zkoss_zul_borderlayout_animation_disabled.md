@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.borderlayout.animation.disabled`
 
-`Default: false`  
-`[Since 5.0.8]`
+Default: `false`  
+`[Since 5.0.8]`
 
 It specifies whether disable the animation of the `borderlayout`
 component.

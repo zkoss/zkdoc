@@ -2,7 +2,7 @@
 
 `org.zkoss.zk.ui.macro.autoforward.disabled`
 
-`Default: `<i>`false`</i>
+Default:  `false`
 
 Turn on/off auto forward mechanism for macro component
 

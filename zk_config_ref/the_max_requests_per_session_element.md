@@ -4,7 +4,7 @@
 <max-requests-per-session>a_number</max-requests-per-session>
 ```
 
-`[Default: 5]`
+`[Default: 5]`
 
 It specifies the maximum allowed number of concurrent requests per
 session. Each time a user types an URL at the browser, it creates a

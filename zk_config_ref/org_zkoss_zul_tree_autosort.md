@@ -2,8 +2,8 @@
 
 `org.zkoss.zul.tree.autoSort`
 
-`Default: false`  
-`[Since 5.0.7]`
+Default: `false`  
+`[Since 5.0.7]`
 
 Specifies whether to sort the model when the following cases:
 

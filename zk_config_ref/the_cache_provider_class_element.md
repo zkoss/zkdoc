@@ -4,7 +4,7 @@
 <cache-provider-class>a_class_name</cache-provider-class>
 ```
 
-`[Default: `org.zkoss.zk.ui.impl.SessionDesktopCacheProvider`]`
+`[Default: `org.zkoss.zk.ui.impl.SessionDesktopCacheProvider`]`
 
 It specifies which class is used to implement the desktop cache. The
 class must have a default constructor (without any argument), and
