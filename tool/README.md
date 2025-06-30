@@ -242,3 +242,20 @@ Titles were preserved unchanged.
 zk javadoc root: https://www.zkoss.org/javadoc/latest/zk/
 e.g. a class ` org.zkoss.zul.ChartModel` is at https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html
 old javadoc link from mediawiki: `<javadoc>org.zkoss.zul.ChartModel</javadoc>`
+
+# zk mediawiki image file
+The base URL is https://www.zkoss.org/wiki/File:
+e.g. the image data page of `SyntaxCheckRightBar.png` is at
+https://www.zkoss.org/wiki/File:SyntaxCheckRightBar.png
+Look for the image link in the DOM structure below
+
+```html
+<div class="fullImageLink" id="file">
+    <a href="/_w/images/6/6d/SyntaxCheckRightBar.png">
+    <img
+        alt="File:SyntaxCheckRightBar.png" src="/_w/images/6/6d/SyntaxCheckRightBar.png" decoding="async" width="582"
+        height="343"></a>
+    <div class="mw-filepage-resolutioninfo">No higher resolution available.</div>
+</div>
+```
+check `<a>` `href` attribute for the image link
