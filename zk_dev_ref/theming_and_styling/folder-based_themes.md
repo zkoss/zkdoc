@@ -91,7 +91,7 @@ ThemeOrigin.JAR is the default value, the extended theme registration
 API is only needed in the case of folder-based themes. Theme
 registration could be done in the initialization code of the view model.
 
-**`Note:`**` the registered name should match the folder name.`
+**`Note:`**` the registered name should match the folder name.`
 
 For example,
 

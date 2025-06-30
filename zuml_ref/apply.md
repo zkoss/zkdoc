@@ -1,7 +1,7 @@
 **Syntax**
 
 `apply="`*`a-class-name`*`"`  
-`apply="`*`class1`*`, `*`class2`*`,..."`  
+`apply="`*`class1`*`, `*`class2`*`,..."`  
 `apply="${`*`EL_returns_a_class_or_a_collection_of_classes`*`}"`  
 `apply="${`*`EL_returns_an_instance_or_a_collection_of_Composer_instances`*`}"`
 

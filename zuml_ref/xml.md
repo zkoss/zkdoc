@@ -1,9 +1,9 @@
-`Name: xml`  
-`File Extensions: xml`  
-`Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)  
-`Namespace shortcut: xml`  
-`Device: XML`  
-`Available only ZK EE`
+`Name: xml`  
+`File Extensions: xml`  
+`Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)  
+`Namespace shortcut: xml`  
+`Device: XML`  
+`Available only ZK EE`
 
 XML component sets. It is used to generate (static) XML document, such
 as [RSS feed](http://www.whatisrss.com/). For introduction please refer

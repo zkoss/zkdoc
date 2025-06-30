@@ -181,7 +181,7 @@ Assume the image below is our target design for Tabbox component.
 
 ### Modify tabbox.less file to achieve target design
 
-`Refer`[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
+`Refer`[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
 
 - Change overall color by overriding built-in zk less variables.
 

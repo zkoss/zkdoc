@@ -82,7 +82,7 @@ There are two additional parameters in the API:
 - String\[\] titles: The text in the title cells (data title, column
   title, row title, respectively). See [ title cells definition]({{site.baseurl}}/zk_pivottable_essentials/quick_start/concept#Trivia).
 
- 
+ 
 
 # Export to CSV
 
@@ -98,11 +98,11 @@ try {
 } catch (IOException e) {}
 ```
 
- 
+ 
 
 ## Version History
 
 | Version | Date      | Content                             |
 |---------|-----------|-------------------------------------|
 | 2.0.0   | May, 2012 | Support Microsoft Excel xlsx format |
-|         |           |                                     |
+|         |           |                                     |

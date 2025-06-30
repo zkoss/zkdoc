@@ -88,7 +88,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Modify button.less file to achieve target design
 
-`Refer `[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
+`Refer `[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
 
 - Change text color and remove border and text-shadow effect:
 

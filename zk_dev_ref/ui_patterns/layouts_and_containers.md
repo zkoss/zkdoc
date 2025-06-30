@@ -799,7 +799,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ### Scrolling
 
-<font color="red">`3d mold only`</font>
+<font color="red">`3d mold only`</font>
 
 - To make Groupbox scrollable, specify "overflow:auto" to
   "contentStyle".

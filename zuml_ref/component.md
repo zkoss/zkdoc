@@ -141,7 +141,7 @@ applied with the initialial properties, you could invoke the
 ## apply
 
 `[Optional]`  
-`[Since 3.6.0]`
+`[Since 3.6.0]`
 
 The apply condition, which is a list of composer's class names or EL
 expressions. If an EL expression is specified, it must return either a
@@ -178,7 +178,7 @@ of defining a brand-new one.
 
 ## language
 
-`[Optional][Since ZK 5.0.0]`
+`[Optional][Since ZK 5.0.0]`
 
 Specifies which language to look for the component definition to extends
 from. If omitted, the page's language is assumed.
@@ -194,29 +194,29 @@ following statement works even if it is used in a ZHTML file.
 
 ## macroURI
 
-`[Required if the by-macro format is used][EL is `*`not`*` allowed]`
+`[Required if the by-macro format is used][EL is `*`not`*` allowed]`
 
 Used with the by-macro format to specify the URI of the ZUML page, which
 is used as the template to create components.
 
 ## templateURI
 
-`[Required if the by-template format is used][EL is `*`not`*` allowed]`
+`[Required if the by-template format is used][EL is `*`not`*` allowed]`
 
 Used with the by-template format to specify the URI of the ZUML page,
 which is used as the template to create components.
 
 ## moldName
 
-`[Optional][Default: ``default``]`
+`[Optional][Default: ``default``]`
 
 Used with the by-class format to specify the mold name. If `moldName` is
 specified, `moldURI` must be specified, too.
 
 ## moldURI
 
-`[REMOVED, only for ZK < 5.0.0]`  
-`[Optional][EL is allowed]`
+`[REMOVED, only for ZK < 5.0.0]`  
+`[Optional][EL is allowed]`
 
 `moldURI="~./zul/in-my-jar.dsp"`  
 `moldURI="/WEB-INF/in-my-web.dsp"`  
@@ -242,4 +242,4 @@ are defined in this processing instruction.
 | Version | Date       | Content                                                        |
 |---------|------------|----------------------------------------------------------------|
 | 8.0.0   | 2015/10/06 | [\#The_by-template_Format](#The_by-template_Format) |
-|         |            |                                                                |
+|         |            |                                                                |

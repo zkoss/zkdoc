@@ -10,9 +10,9 @@ property, rather than a value to be assigned.
 
 The format of an annotation expression:
 
-**`@`***`annotation-name`*` `**`()`**  
-**`@`***`annotation-name`*` `**`(`**` `*`attr-name1`*` `**`=`**` `*`attr-value1`***`,`**` `*`attr-name2`*` `**`=`**` `*`attr-value2`*` `**`)`**  
-**`@`***`annotation-name`*` `**`(`**` `*`attr-name1`*` `**`=`**` `**`{`**` `*`attr-value1-1`***`,`**` `*`attr-value1-2`*` `**`},`**` `*`attr-name2`*` `**`=`**` `*`attr-value2`*` `**`)`**
+**`@`***`annotation-name`*` `**`()`**  
+**`@`***`annotation-name`*` `**`(`**` `*`attr-name1`*` `**`=`**` `*`attr-value1`***`,`**` `*`attr-name2`*` `**`=`**` `*`attr-value2`*` `**`)`**  
+**`@`***`annotation-name`*` `**`(`**` `*`attr-name1`*` `**`=`**` `**`{`**` `*`attr-value1-1`***`,`**` `*`attr-value1-2`*` `**`},`**` `*`attr-name2`*` `**`=`**` `*`attr-value2`*` `**`)`**
 
 As shown, an annotation consists of an annotation name and any number of
 attributes, and an attribute consists of an attribute name and an

@@ -85,14 +85,14 @@ to ensure parsing order.
 
 # component-class
 
-`[Required if no extends]`
+`[Required if no extends]`
 
 It specifies the component's Java class at the server side. It is
 required if you define a new component.
 
 # widget-class
 
-`[Required if no extends][EL expressions allowed]`
+`[Required if no extends][EL expressions allowed]`
 
 It specifies the widget's class at the client side. For Ajax clients, it
 must be a JavaScript class. It is required if you define a new
@@ -138,7 +138,7 @@ You can specify:
 
 # property
 
-`[Optional][EL expressions allowed in the property value]`
+`[Optional][EL expressions allowed in the property value]`
 
 It specifies an initial property. Once the property is specified, the
 corresponding setter will be called when ZK Loader instantiates from a

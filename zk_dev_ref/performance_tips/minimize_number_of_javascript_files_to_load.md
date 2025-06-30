@@ -27,21 +27,21 @@ In
 of [ZK Sanbox](http://www.zkoss.org/zksandbox) there are about 15
 JavaScript files that will be initially loaded:
 
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zk.wpd`](http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zk.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zul.lang.wpd`](http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zul.lang.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/macros/category.js`](http://www.zkoss.org/zksandbox/macros/category.js)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zkmax.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zkmax.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wgt.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wgt.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.utl.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.utl.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.layout.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.layout.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wnd.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wnd.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.tab.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.tab.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.inp.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.inp.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.box.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.box.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.sel.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.sel.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zk.fmt.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zk.fmt.wpd)  
-`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.mesh.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.mesh.wpd)
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zk.wpd`](http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zk.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zul.lang.wpd`](http://www.zkoss.org/zksandbox/zkau/web/947199ea/js/zul.lang.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/macros/category.js`](http://www.zkoss.org/zksandbox/macros/category.js)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zkmax.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zkmax.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wgt.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wgt.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.utl.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.utl.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.layout.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.layout.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wnd.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.wnd.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.tab.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.tab.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.inp.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.inp.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.box.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.box.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.sel.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.sel.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zk.fmt.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zk.fmt.wpd)  
+`* `[`http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.mesh.wpd`](http://www.zkoss.org/zksandbox/zkau/web/_zv2010062914/js/zul.mesh.wpd)
 
 This means that the browser will trigger 15 requests to load the 15
 JavaScript files. Even if each file is not too big, it still takes more

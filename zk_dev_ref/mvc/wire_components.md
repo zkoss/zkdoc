@@ -247,7 +247,7 @@ Here are some examples of using shadow selectors with the above zul
     @Wire("#host::shadow#root #if1") // wire to if with the id "if1", with performance boost
 ```
 
- 
+ 
 
 # Wiring by Method
 
@@ -275,7 +275,7 @@ In the example above, the SelectorComposer will find the grid of id
 - Do not confuse `@Wire` with `@Listen`, while the latter wires to
   events.
 
- 
+ 
 
 # Wiring a Collection
 
@@ -324,7 +324,7 @@ Here is the sequence of wiring:
   fields** and **methods** again, for some of the components might have
   been generated after doAfterCompose() call.
 
- 
+ 
 
 # Performance Tips
 
@@ -369,4 +369,4 @@ In brief, it is recommended to specify id in selector when you have a
 large component tree. If possible, you can specify id on all levels to
 maximize the performance gain from the algorithm.
 
- 
+ 

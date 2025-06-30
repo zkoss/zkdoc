@@ -10,7 +10,7 @@
 
 # Create ZK portlet project
 
-`since 6.0.1`
+`since 6.0.1`
 
 - [Create a ZK project by ZK Studio](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio)
 - Add the following portlet.xml file under /WEB-INF

@@ -2,9 +2,9 @@
 
 **Syntax**
 
-`<zk:component name="`*`componentName`*`" [class="`*`myPackage.myClass`*`"]`  
-`    [extends="`*`existentJavaClassName`*`"] [moldName="`*`myMoldName`*`"] [moldURI="`*`myMoldURI`*`"]`  
-`    [`*`prop1`*`="`*`value1`*`"] [`*`prop2`*`="`*`value2`*`"].../>`
+`<zk:component name="`*`componentName`*`" [class="`*`myPackage.myClass`*`"]`  
+`    [extends="`*`existentJavaClassName`*`"] [moldName="`*`myMoldName`*`"] [moldURI="`*`myMoldURI`*`"]`  
+`    [`*`prop1`*`="`*`value1`*`"] [`*`prop2`*`="`*`value2`*`"].../>`
 
 It defines a new kind of component tag, which could be used in the JSP
 document. If the class attribute is declared, the class must implement
@@ -14,8 +14,8 @@ document. If the class attribute is declared, the class must implement
 
 **Syntax**
 
-`<zk:component name="`*`componentName`*`" macroURI="`*`/mypath/my.zul`*`" inline="true"`  
-` [`*`prop1`*`="`*`value1`*`"] [`*`prop2`*`="`*`value2`*`"].../>`
+`<zk:component name="`*`componentName`*`" macroURI="`*`/mypath/my.zul`*`" inline="true"`  
+` [`*`prop1`*`="`*`value1`*`"] [`*`prop2`*`="`*`value2`*`"].../>`
 
 By specifying `inline="true"`, we could define an inline macro which
 will inline-expends the macro template (specified in macroURI) when it

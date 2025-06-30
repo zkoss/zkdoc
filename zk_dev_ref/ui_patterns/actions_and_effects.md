@@ -21,7 +21,7 @@ to the `action` property
 ([org.zkoss.zk.ui.HtmlBasedComponent#setAction(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setAction(java.lang.String))).
 The syntax is as follows.
 
-`action="`*`action-name1`*`: `*`effect1`*`; `*`action-name2`*`: `*`effect2`*`"`
+`action="`*`action-name1`*`: `*`effect1`*`; `*`action-name2`*`: `*`effect2`*`"`
 
 The action name (e.g., `action1`) has to be one of the predefined names,
 such as show and hide. The action effect (e.g., `effect1`) has to be one

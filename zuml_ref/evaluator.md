@@ -8,7 +8,7 @@ It specifies how to evaluate XEL expressions.
 
 # name
 
-`[Optional][Default: `*`none`*`][Case insensitive]`
+`[Optional][Default: `*`none`*`][Case insensitive]`
 
 The name of the implementation used to evaluate the XEL expressions.
 There are two ways to specify the implementation. One is the name
@@ -111,7 +111,7 @@ interface. Or, you can specify the following content in
 
 # class
 
-`[Optional][Default: `*`dependind on how xel-config is specified`*`]`
+`[Optional][Default: `*`dependind on how xel-config is specified`*`]`
 
 The implementation used to evaluate the XEL expressions. In addition to
 the name attribute, you can specify the class directly. For example, you
@@ -126,7 +126,7 @@ can use MVEL by specifying class as follows.
 
 # import
 
-`[Optiona][Default: `*`what are defined in taglib`*`]`
+`[Optiona][Default: `*`what are defined in taglib`*`]`
 
 Specifies a list of classes separated with comma to import for
 evaluating the expression in this page. For example, with MVEL:

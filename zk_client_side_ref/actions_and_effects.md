@@ -21,7 +21,7 @@ Then, you could use it in the client-side action:
 
 The signature of an effect method is as follows.
 
-`function (`[`_global_.DOMElement`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.DOMElement`.html)` n, `[`_global_.Map`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.Map`.html)` opts);`
+`function (`[`_global_.DOMElement`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.DOMElement`.html)` n, `[`_global_.Map`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/`_global_.Map`.html)` opts);`
 
 where `n` is the DOM element to apply the action, and `opts` is the
 options specified in the client-side action.

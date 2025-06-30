@@ -4,7 +4,7 @@
 <extension>a_ext</extension>
 ```
 
-`[Required for a language definition]`
+`[Required for a language definition]`
 
 It specifies the extension of a file or URI that should be associated
 with this language. You could have multiple extensions for a language,

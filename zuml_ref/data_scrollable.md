@@ -70,7 +70,7 @@ When a user swipes on the content of Listbox, Grid, Tree in a tablet
 device, the friendly scrollbar will appear. To disable the friendly
 scrollbar, please use the following setting[^2].
 
-`tablet only`
+`tablet only`
 
 ```xml
 <div xmlns:ca="client/attribute">

@@ -1,4 +1,4 @@
-` ZK EE tablet only`
+` ZK EE tablet only`
 
 Each layout region in borderlayout can support the closing and opening
 of the region area by user's swipe on the edge of the region with

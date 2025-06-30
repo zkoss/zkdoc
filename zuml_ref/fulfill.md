@@ -1,9 +1,9 @@
 **Syntax:**
 
 `fulfill="`*`conditon`*`"`  
-`fulfill="`*`conditon_1`*`, `*`conditon_2`*`,..."`  
+`fulfill="`*`conditon_1`*`, `*`conditon_2`*`,..."`  
 `fuffill="`*`condition`*`=`*`a_uri`*`"`  
-`fulfill="`*`conditon_1`*`, `*`conditon_2`*`=`*`a_uri`*`,..."`
+`fulfill="`*`conditon_1`*`, `*`conditon_2`*`=`*`a_uri`*`,..."`
 
 and the fulfill condition (`condition`, `condition_1` and `condition_2`)
 could be one of the following:

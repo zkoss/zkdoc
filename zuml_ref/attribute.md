@@ -2,7 +2,7 @@
 
 **Syntax:**
 
-`<attribute name="`*`myName`*`" [trim="true|`**`false`**`"] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]>`*`myValue`*</attribute>
+`<attribute name="`*`myName`*`" [trim="true|`**`false`**`"] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]>`*`myValue`*</attribute>
 
 It defines a XML attribute of the enclosing element. The content of the
 element is the attribute value, while the `name` attribute specifies the
@@ -66,21 +66,21 @@ Specifies the attribute name.
 
 ## trim
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 Specifies whether to omit the leading and trailing whitespaces of the
 attribute value.
 
 ## if
 
-`[Optional][Default: true]`
+`[Optional][Default: true]`
 
 Specifies the condition to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to false.
 
 ## unless
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 Specifies the condition *not* to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to true.

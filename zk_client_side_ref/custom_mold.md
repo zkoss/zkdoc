@@ -16,7 +16,7 @@ to render different DOM elements.
 It's better to customize a mold based on the built-in mold js. All
 widgets' mold js are bundled with ZK jar files under the path:
 
-`[ZK_JAR] / web / js / [WIDGET_PACKAGE] / mold / *.js`
+`[ZK_JAR] / web / js / [WIDGET_PACKAGE] / mold / *.js`
 
 - `[ZK_JAR]`: could be `zul.jar, zkex.jar, zkmax.jar`
 - `[WIDGET_PACKAGE]`: a widget's package folder like java package e.g.

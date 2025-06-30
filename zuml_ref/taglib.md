@@ -34,7 +34,7 @@ The syntax of a taglib document is described in the subsection:
 
 # uri
 
-`[Required][EL is `*`not`*` allowed]`
+`[Required][EL is `*`not`*` allowed]`
 
 A URL of the `taglib` file. Unlike other URL and URI, it doesn't
 interpret ~ or \* specially. And, the page and the `taglib` files it

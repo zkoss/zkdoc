@@ -111,7 +111,7 @@ To provide custom CSS class or custom style on data cell, override
 Samples of such customization can be found in the source code of
 Pivottable demo.
 
- 
+ 
 
 ## PivotHeaderContext
 
@@ -136,7 +136,7 @@ illustrated as the following:
 
 ![](images/ZKPvtEsn_HeaderContext_03.png)
 
- 
+ 
 
 ## Hide the Icon
 

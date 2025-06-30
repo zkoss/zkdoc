@@ -49,32 +49,32 @@ npm install zkless-engine
 ```xml
 <?xml version="1.0"?>
 <project name="less.compile" default="lessc" basedir=".">
-    <target name="lessc">
-        <exec executable="node">
-            <!-- location of the engine's core file -->
-            <arg value="${basedir}/node_modules/zkless-engine/lib/CpLess.js"/>
-            <!-- input folder that contains less files-->
-            <arg value="${basedir}/src/main/webapp"/>
-            <!-- output folder -->
-            <arg value="${basedir}/src/main/webapp"/>
-            <!-- path of zul.jar -->
-            <arg value="${basedir}/lib/zul.jar"/>
-        </exec>
-        <!-- compress the result using zk's Css Compressor -->
-        <java classname="CompressCss" fork="true">
-            <!-- input folder (same as above) -->
-            <arg value="${basedir}/src/main/webapp"/>
-            <!-- output folder (same as above) -->
-            <arg value="${basedir}/src/main/webapp"/>
-            <classpath>
-                <!-- required jars -->
-                <pathelement location="${basedir}/lib/zkjszips.jar"/>
-                <pathelement location="${basedir}/lib/yuicompressor.jar"/>
-                <pathelement location="${basedir}/lib/commons-io.jar"/>
-                <pathelement location="${basedir}/lib/CssCompressor.jar"/>
-            </classpath>
-        </java>
-    </target>
+    <target name="lessc">
+        <exec executable="node">
+            <!-- location of the engine's core file -->
+            <arg value="${basedir}/node_modules/zkless-engine/lib/CpLess.js"/>
+            <!-- input folder that contains less files-->
+            <arg value="${basedir}/src/main/webapp"/>
+            <!-- output folder -->
+            <arg value="${basedir}/src/main/webapp"/>
+            <!-- path of zul.jar -->
+            <arg value="${basedir}/lib/zul.jar"/>
+        </exec>
+        <!-- compress the result using zk's Css Compressor -->
+        <java classname="CompressCss" fork="true">
+            <!-- input folder (same as above) -->
+            <arg value="${basedir}/src/main/webapp"/>
+            <!-- output folder (same as above) -->
+            <arg value="${basedir}/src/main/webapp"/>
+            <classpath>
+                <!-- required jars -->
+                <pathelement location="${basedir}/lib/zkjszips.jar"/>
+                <pathelement location="${basedir}/lib/yuicompressor.jar"/>
+                <pathelement location="${basedir}/lib/commons-io.jar"/>
+                <pathelement location="${basedir}/lib/CssCompressor.jar"/>
+            </classpath>
+        </java>
+    </target>
 </project>
 ```
 
@@ -100,49 +100,49 @@ npm install -g less
 ```xml
 <!-- Add Plugin Repository -->
 <pluginRepositories>
-    <pluginRepository>
-        <id>zkmaven</id>
-        <name>ZK Maven Plugin Repository</name>
-        <url>http://mavensync.zkoss.org/maven2/</url>
-    </pluginRepository>
+    <pluginRepository>
+        <id>zkmaven</id>
+        <name>ZK Maven Plugin Repository</name>
+        <url>http://mavensync.zkoss.org/maven2/</url>
+    </pluginRepository>
 </pluginRepositories>
 <dependencies>
-    <!-- only needed if using _zkmixins.less provided by ZK -->
-    <dependency>
-        <groupId>org.zkoss.zk</groupId>
-        <artifactId>zul</artifactId>
-        <version>7.0.3</version>
-    </dependency>
+    <!-- only needed if using _zkmixins.less provided by ZK -->
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zul</artifactId>
+        <version>7.0.3</version>
+    </dependency>
 </dependencies>
 <build>
-    <plugins>
-        <!-- Add zkless-engine-maven-plugin -->
-        <plugin>
-            <groupId>org.zkoss.maven</groupId>
-            <artifactId>zkless-engine-maven-plugin</artifactId>
-            <version>0.9.6</version>
-            <executions>
-                <execution>
-                    <id>compile-less</id>
-                    <goals>
-                        <goal>lessc</goal>
-                    </goals>
-                    <configuration>
-                        <!-- LESS source folder -->
-                        <sourceDirectory>
-                            ${project.basedir}/src/main/resources
-                        </sourceDirectory>
-                        <!-- *.CSS.DSP output folder -->
-                        <outputDirectory>
-                            ${project.basedir}/src/main/resources
-                        </outputDirectory>
-                        <!-- Compress Option, default is true -->
+    <plugins>
+        <!-- Add zkless-engine-maven-plugin -->
+        <plugin>
+            <groupId>org.zkoss.maven</groupId>
+            <artifactId>zkless-engine-maven-plugin</artifactId>
+            <version>0.9.6</version>
+            <executions>
+                <execution>
+                    <id>compile-less</id>
+                    <goals>
+                        <goal>lessc</goal>
+                    </goals>
+                    <configuration>
+                        <!-- LESS source folder -->
+                        <sourceDirectory>
+                            ${project.basedir}/src/main/resources
+                        </sourceDirectory>
+                        <!-- *.CSS.DSP output folder -->
+                        <outputDirectory>
+                            ${project.basedir}/src/main/resources
+                        </outputDirectory>
+                        <!-- Compress Option, default is true -->
                         <!--  <compress>false</compress> -->
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
 </build>
 ```
 
@@ -192,32 +192,32 @@ npm install -g less
 
 ```xml
 <web-app>
-    <!-- omitted other servlets -->
-    <servlet>
-        <servlet-name>zkLess</servlet-name>
-        <servlet-class>org.zkoss.less.ZKLessServlet</servlet-class>
-        <init-param>
-            <param-name>org.zkoss.less.LessResource</param-name>
-            <!-- specify to the folder that contains *.less -->
-            <param-value>/less</param-value>
-        </init-param>
-        <init-param>
-            <param-name>org.zkoss.less.OutputFormat</param-name>
-            <!-- specify output file suffix, default .css.dsp -->
-            <param-value>.css.dsp</param-value>
-        </init-param>
-        <init-param>
-            <param-name>org.zkoss.less.CompressOutput</param-name>
-            <!-- compress output, default true -->
-            <param-value>true</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>zkLess</servlet-name>
-        <!-- specify to folder that contains *.less -->
-        <url-pattern>/less/*</url-pattern>
-    </servlet-mapping>
+    <!-- omitted other servlets -->
+    <servlet>
+        <servlet-name>zkLess</servlet-name>
+        <servlet-class>org.zkoss.less.ZKLessServlet</servlet-class>
+        <init-param>
+            <param-name>org.zkoss.less.LessResource</param-name>
+            <!-- specify to the folder that contains *.less -->
+            <param-value>/less</param-value>
+        </init-param>
+        <init-param>
+            <param-name>org.zkoss.less.OutputFormat</param-name>
+            <!-- specify output file suffix, default .css.dsp -->
+            <param-value>.css.dsp</param-value>
+        </init-param>
+        <init-param>
+            <param-name>org.zkoss.less.CompressOutput</param-name>
+            <!-- compress output, default true -->
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>zkLess</servlet-name>
+        <!-- specify to folder that contains *.less -->
+        <url-pattern>/less/*</url-pattern>
+    </servlet-mapping>
 </web-app>
 ```
 

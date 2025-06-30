@@ -213,8 +213,8 @@ model.setSelectionControl(new AbstractListModel.DefaultSelectionControl(model) {
 
 ## Custom ListModel Supports Selection
 
-`Interface: `[`org.zkoss.zul.ext.Selectable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Selectable`.html)  
-`Implementation: Implemented by `[`org.zkoss.zul.AbstractListModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractListModel`.html)
+`Interface: `[`org.zkoss.zul.ext.Selectable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Selectable`.html)  
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractListModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractListModel`.html)
 
 If your data model also provides the collection of selected elements,
 you shall also implement
@@ -250,8 +250,8 @@ extends one of these classes.
 
 # Sorting
 
-`Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
-`Implementation: You have to implement it explicitly`
+`Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
+`Implementation: You have to implement it explicitly`
 
 To support sorting, the model must implement
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too.

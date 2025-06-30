@@ -1,7 +1,7 @@
-`Name: annotation`  
-`Namespace: `[`http://www.zkoss.org/2005/zk/annotation`](http://www.zkoss.org/2005/zk/annotation)  
-`Namespace shortcut: client`  
-`Java: `[`org.zkoss.zk.ui.metainfo.LanguageDefinition`#ANNOTATION_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/ui/metainfo/LanguageDefinition`.html#ANNOTATION_NAMESPACE)
+`Name: annotation`  
+`Namespace: `[`http://www.zkoss.org/2005/zk/annotation`](http://www.zkoss.org/2005/zk/annotation)  
+`Namespace shortcut: client`  
+`Java: `[`org.zkoss.zk.ui.metainfo.LanguageDefinition`#ANNOTATION_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/ui/metainfo/LanguageDefinition`.html#ANNOTATION_NAMESPACE)
 
 It is the reserved namespace for specifying the annotation. By default,
 the annotation is recognized by its syntax,

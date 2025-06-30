@@ -76,7 +76,7 @@ visible when the menupopup is shown up (on top of the iframe).
 
 ## auto
 
-`[Since 5.0]`
+`[Since 5.0]`
 
 This is the most common value that can be assigned to `zk.useStackup`.
 If it is assigned, the stackup technique is applied to Internet Explorer

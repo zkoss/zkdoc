@@ -1,6 +1,6 @@
 **Syntax:**
 
-`<script [src="`foo.js`"]`  
+`<script [src="`foo.js`"]`  
 `[browser="ie|ie6|ie6-|ie7|ie7-|ie8|ie8-|gecko|gecko2|gecko2-|gecko3|gecko3-|gecko3.5|opera|safari"]>`
 
 The script element is used to specify an external JavaScript file, or to

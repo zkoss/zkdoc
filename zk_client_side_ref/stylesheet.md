@@ -3,7 +3,7 @@
 ```xml
 <stylesheet href="a_uri" type="text/css"/>  
 <stylesheet>  
-` `css_definitions  
+` `css_definitions  
 </stylesheet>
 ```
 

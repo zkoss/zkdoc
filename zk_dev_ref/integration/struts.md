@@ -120,7 +120,7 @@ When adopting Struts, we usually apply its filter to all URL in
 But this filter will also intercept ZK AU requests and make ZK
 components works abnormally. You might see a similar error message like:
 
-`There is no Action mapped for namespace / and action name zkau. - [unknown location]`
+`There is no Action mapped for namespace / and action name zkau. - [unknown location]`
 
 To avoid this problem, you can add the line below in `struts.xml` to
 exclude ZK au requests for struts filter

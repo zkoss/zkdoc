@@ -28,7 +28,7 @@ For example,
 </radiogroup>
 ```
 
- 
+ 
 
 ## Use PivotFieldControl to handle field setting
 
@@ -73,7 +73,7 @@ Sort options are available on row and column fields.
 
 ![](images/ZKPivotEsn_pfc_control_02.png)
 
- 
+ 
 
 ## Customize PivotFieldControl
 

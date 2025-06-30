@@ -4,7 +4,7 @@
 wires UI components, but also wires beans from implicit objects and
 registered variable resolvers.
 
- 
+ 
 
 ## Wire from Implicit Objects
 
@@ -41,7 +41,7 @@ public class FooComposer extends SelectorComposer<Window> {
 }
 ```
 
- 
+ 
 
 ## Wire from Variable Resolver
 

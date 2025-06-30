@@ -99,7 +99,7 @@ the browser from accepting the session cookies.
 
 ## Running Chrome browser without CORS security
 
-<span style="color:#FF0000">`WARNING: This option is for DEBUG ONLY and should never be used in a production context.`</span>
+<span style="color:#FF0000">`WARNING: This option is for DEBUG ONLY and should never be used in a production context.`</span>
 
 The Chrome browser can be configured to run without using CORS security.
 Since it can be difficult to identify the cause of a blocking issue,

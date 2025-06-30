@@ -1,6 +1,6 @@
 **Syntax:**
 
-`<package name="`a_name`" [language="`a_lang`"] [depends="`pkg0`, `pkg1`..."] [cacheable="true|false"]>`
+`<package name="`a_name`" [language="`a_lang`"] [depends="`pkg0`, `pkg1`..."] [cacheable="true|false"]>`
 
 The root element of a WPD document. It specifies the name of the
 package, what packages it depends and other information.
@@ -45,7 +45,7 @@ loading this package.
 
 # cacheable
 
-`[Optiona][Default: true]`
+`[Optiona][Default: true]`
 
 It specifies whether the client is allowed to cache the output of this
 WPD file. By default, it is cacheable since the performance is better.

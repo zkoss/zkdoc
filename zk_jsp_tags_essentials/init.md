@@ -2,7 +2,7 @@
 
 **Syntax**
 
-`<zk:init use="..." [`*`arg0`*`="..."] [`*`arg1`*`="..."]/>`
+`<zk:init use="..." [`*`arg0`*`="..."] [`*`arg1`*`="..."]/>`
 
 It defines an initiator that will be instantiated and called when the
 ZUML document is loaded. The class must be specified in the `use`

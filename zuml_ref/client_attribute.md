@@ -1,7 +1,7 @@
-`Name: client attribute`  
-`Namespace: `[`http://www.zkoss.org/2005/zk/client/attribute`](http://www.zkoss.org/2005/zk/client/attribute)  
-`Namespace shortcut: client/attribute`  
-`Java: `[`org.zkoss.zk.ui.metainfo.LanguageDefinition`#CLIENT_ATTRIBUTE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/ui/metainfo/LanguageDefinition`.html#CLIENT_ATTRIBUTE_NAMESPACE)
+`Name: client attribute`  
+`Namespace: `[`http://www.zkoss.org/2005/zk/client/attribute`](http://www.zkoss.org/2005/zk/client/attribute)  
+`Namespace shortcut: client/attribute`  
+`Java: `[`org.zkoss.zk.ui.metainfo.LanguageDefinition`#CLIENT_ATTRIBUTE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/ui/metainfo/LanguageDefinition`.html#CLIENT_ATTRIBUTE_NAMESPACE)
 
 It is the reserved namespace for specifying client-side DOM attributes.
 Unlike the client namespace, which assigns something to widgets, the

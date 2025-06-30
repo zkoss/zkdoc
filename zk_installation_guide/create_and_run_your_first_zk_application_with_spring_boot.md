@@ -98,8 +98,8 @@ configuration files are moved to different files/folders:
 location:
 
 ```text
-src/main/webapp/WEB-INF/zk.xml -> src/main/resources/metainfo/zk/zk.xml  
-src/main/webapp/WEB-INF/zk-label.properties -> src/main/resources/metainfo/zk-label.properties
+src/main/webapp/WEB-INF/zk.xml -> src/main/resources/metainfo/zk/zk.xml  
+src/main/webapp/WEB-INF/zk-label.properties -> src/main/resources/metainfo/zk-label.properties
 ```
 
 **web.xml** configuration such as servlets/filters are configured the
@@ -213,8 +213,8 @@ With the git command line installed all you need is to clone the example
 repository (Alternatively download a
 [zip-package](https://github.com/zkoss/zkspringboot/archive/master.zip)):
 
-`   git clone `[`https://github.com/zkoss/zkspringboot`](https://github.com/zkoss/zkspringboot)  
-`   cd zkspringboot/zkspringboot-demos`
+`   git clone `[`https://github.com/zkoss/zkspringboot`](https://github.com/zkoss/zkspringboot)  
+`   cd zkspringboot/zkspringboot-demos`
 
 In order to get started immediately the project includes the
 [gradle-wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
@@ -247,7 +247,7 @@ Useful
 can be enabled by activating the **dev**-profile as a VM argument in
 your run configuration.
 
-`   -Dspring.profiles.active=dev`
+`   -Dspring.profiles.active=dev`
 
 This will disable resource caches allowing to replace zul/css/js/image
 files without restarting the application.

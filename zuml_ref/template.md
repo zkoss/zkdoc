@@ -2,8 +2,8 @@
 
 **Syntax:**
 
-`<template name="`*`template-name`*`" [src="`*`URI`*`"]`  
-` [`*`attr1`*`="`*`value1`*`"] [`*`attr2`*`="`*`value2`*`"...] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]/>`
+`<template name="`*`template-name`*`" [src="`*`URI`*`"]`  
+` [`*`attr1`*`="`*`value1`*`"] [`*`attr2`*`="`*`value2`*`"...] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]/>`
 
 It defines a template. A template is a ZUML fragment that defines how to
 create components. Once a ZUML document is interpreted, the template
@@ -43,7 +43,7 @@ Specifies the name of the template.
 
 ## src
 
-`[Optional][Default: `*`none`*`]`
+`[Optional][Default: `*`none`*`]`
 
 Specifies the URI of the ZUML document that represents this template. If
 the src attribute is specified, its content will be loaded and
@@ -52,21 +52,21 @@ after the content specified directly inside it).
 
 ## *attr1*
 
-`[Optional][Default: `*`none`*`]`
+`[Optional][Default: `*`none`*`]`
 
 Specifies a parameter that can be retrieved by use of
 [org.zkoss.zk.ui.util.Template#getParameters()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Template.html#getParameters()).
 
 ## if
 
-`[Optional][Default: true]`
+`[Optional][Default: true]`
 
 Specifies the condition to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to false.
 
 ## unless
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 Specifies the condition *not* to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to true.

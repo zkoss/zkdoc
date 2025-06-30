@@ -1,8 +1,8 @@
-`Name: xhtml`  
-`File Extensions: zhtml, xhtml, html, htm`  
-`Namespace: `[`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)  
-`Namespace shortcut: xhtml`  
-`Device: Ajax`
+`Name: xhtml`  
+`File Extensions: zhtml, xhtml, html, htm`  
+`Namespace: `[`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)  
+`Namespace shortcut: xhtml`  
+`Device: Ajax`
 
 XHTML-compliant component sets. It is one-to-one mapping of XHTML tags
 to ZK components. Since they are components, you can add and remove them

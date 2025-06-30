@@ -63,7 +63,7 @@ generated that contains the exact replica of the default theme in the
 folder structure required by ZK theming support. This generated archive
 becomes the basis where the new theme could be derived.
 
-`Since 7.0.0, we provide a maven-archetype that can easily create a ZK theme maven project, refer to the `[`blog`](http://blog.zkoss.org/index.php/2013/09/17/zk7-create-a-new-a-theme-project/)`.`
+`Since 7.0.0, we provide a maven-archetype that can easily create a ZK theme maven project, refer to the `[`blog`](http://blog.zkoss.org/index.php/2013/09/17/zk7-create-a-new-a-theme-project/)`.`
 
 ## Modify the theme resources
 
@@ -88,7 +88,7 @@ providing an implementation of the
 [org.zkoss.zk.ui.util.WebAppInit](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)
 interface.
 
-**`Note:`**` the registered name should match the folder name.`
+**`Note:`**` the registered name should match the folder name.`
 
 For example, assume the custom theme is named **darkstar**,
 

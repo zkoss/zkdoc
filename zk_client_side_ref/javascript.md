@@ -2,9 +2,9 @@
 
 
 ```xml
-<javascript package="`pkg_name`" [merge="false|true"]/>  
+<javascript package="`pkg_name`" [merge="false|true"]/>  
 <javascript package="pkg_name" merge="a_package_to_merge_to"/>
-<javascript package="`pkg_name`" [ondemand="false|true"/>  
+<javascript package="`pkg_name`" [ondemand="false|true"/>  
 <javascript src="a_uri"/>  
 <javascript>  
 js_code  
@@ -45,7 +45,7 @@ ZK generates its javaScript into a output page's <code>
 
 # merge
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 It is used with the `package` attribute to specify whether the package
 should be loaded as part of the `zk` package. If not specified, each
@@ -72,7 +72,7 @@ section.
 
 # ondemand
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 It is used to 'cancel' the package specified in another `javascript`
 element. By default, JavaScript packages are loaded on-demand (i.e.,

@@ -65,7 +65,7 @@ JSP Tags as follows:
 
 # Head Tag Declaration
 
-`since 1.3.0`
+`since 1.3.0`
 
 Generate zk's <link> in a specific place
 

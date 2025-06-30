@@ -3,11 +3,11 @@
 **Syntax:**
 
 `<custom-attributes`  
-`    `*`attr1`*`="`*`value1`*`" [`*`attr2`*`="`*`value2`*`"...] `  
-`    [scope="`**`component`**`|space|page|desktop|session|application"] `  
-`    [composite="`**`none`**`|list|map"]`  
-`    [if="`*`if-condition`*`"] `  
-`    [unless="`*`unless-condition`*`"]/>`
+`    `*`attr1`*`="`*`value1`*`" [`*`attr2`*`="`*`value2`*`"...] `  
+`    [scope="`**`component`**`|space|page|desktop|session|application"] `  
+`    [composite="`**`none`**`|list|map"]`  
+`    [if="`*`if-condition`*`"] `  
+`    [unless="`*`unless-condition`*`"]/>`
 
 It defines a set of custom attributes of the specified scope. You could
 specify as many as attributes you want. These attributes can be
@@ -20,7 +20,7 @@ the specified scope.
 
 ## scope
 
-`[optional][Default: ``component`` or ``page`` depending on this parent]`
+`[optional][Default: ``component`` or ``page`` depending on this parent]`
 
 Specifies the scope to which the custom attributes are associated. If
 not specified and enclosed with a component, the component is the
@@ -39,7 +39,7 @@ default scope is `page` (since 5.0.8). For example,
 
 ## composite
 
-`[Optional][Default: none]`
+`[Optional][Default: none]`
 
 Specifies the format of the value. It could be `none`, `list` or `map`.
 
@@ -70,14 +70,14 @@ Then, it is converted to a map with two entries. The first entry is
 
 ## if
 
-`[Optional][Default: true]`
+`[Optional][Default: true]`
 
 Specifies the condition to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to false.
 
 ## unless
 
-`[Optional][Default: false]`
+`[Optional][Default: false]`
 
 Specifies the condition *not* to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to true.

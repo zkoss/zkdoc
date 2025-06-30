@@ -280,7 +280,7 @@ Upload your hot shot:
 
 | Version | Description | Example Location |
 |---------|-------------|------------------|
-|         |             |                  |
+|         |             |                  |
 
 # Version History
 

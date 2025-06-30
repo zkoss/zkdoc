@@ -116,7 +116,7 @@ Hint: If you can't wait to play around with the component, you can jump
 to [ next section]({{site.baseurl}}/zk_pivottable_essentials/working_with_pivottable/create_pivottable)
 and come back to read further if necessary.
 
- 
+ 
 
 ### Summary and Subtotals
 
@@ -175,7 +175,7 @@ Note:
   words, if you have *A, B, C* as column fields and specify a subtotal
   on *B*, then *A* has no subtotal.
 
- 
+ 
 
 ### Header Grouping
 
@@ -198,7 +198,7 @@ field.setGroupHandler(new GroupHandler(){
 // now it converts the Date to a String of format "yyyy/MM" for comparison, so the data will be categorized by month
 ```
 
- 
+ 
 
 ### Header Sorting
 
@@ -238,7 +238,7 @@ model.setFieldKeyOrder("Date", false);
 model.setFieldKeyOrder("Date", true); 
 ```
 
- 
+ 
 
 ## Use data from database
 
@@ -282,7 +282,7 @@ private static String join(String ... strs) {
 }
 ```
 
- 
+ 
 
 ## Filtering input data
 
@@ -300,6 +300,6 @@ Iterable<List<Object>> filteredData = PivotModels.filter
 });
 ```
 
- 
+ 
 
 #

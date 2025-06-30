@@ -10,14 +10,14 @@ still can initialize your build script based on it. The steps are:
 2\. Run `gradle init` in the same folder as pom.xml You will see the
 message:
 
-`Found a Maven build. Generate a Gradle build from this? (default: yes) [yes, no]`
+`Found a Maven build. Generate a Gradle build from this? (default: yes) [yes, no]`
 
 Then
 
-`Select build script DSL:`  
-`  1: Groovy`  
-`  2: Kotlin`  
-`Enter selection (default: Groovy) [1..2]`
+`Select build script DSL:`  
+`  1: Groovy`  
+`  2: Kotlin`  
+`Enter selection (default: Groovy) [1..2]`
 
 Just follow the interactive process, it will produce a Gradle build
 script with ZK dependencies migrated from the pom.xml.
@@ -36,7 +36,7 @@ will help understanding the example -\> please refer to the [gradle documentatio
 With the git command line installed all you need is to clone the example
 repository:
 
-`   git clone git@github.com:zkoss-demo/zk-gradle.git`
+`   git clone git@github.com:zkoss-demo/zk-gradle.git`
 
 Alternatively, you can download the example as a
 [zip-package](https://github.com/zkoss-demo/zk-gradle/archive/master.zip).
@@ -75,28 +75,28 @@ here contains the dependency versions
 **NOTE**: Using the windows command line (*cmd*) you have to omit the
 "./" in front of the commands e.g.
 
-`gradlew clean`
+`gradlew clean`
 
 build the war file (in the subfolder *build/libs/zk-gradle.war*)
 
-`./gradlew war`
+`./gradlew war`
 
 run the [Zats Tests](https://www.zkoss.org/product/zats) (also creates a
 test report in *build/reports/tests/test/index.html*)
 
-`./gradlew test`
+`./gradlew test`
 
 combine both
 
-`./gradlew test war`
+`./gradlew test war`
 
 clean the build
 
-`./gradlew clean`
+`./gradlew clean`
 
 list available tasks (shows many more options ...)
 
-`./gradlew tasks`
+`./gradlew tasks`
 
 ## Run the Project
 
@@ -104,15 +104,15 @@ list available tasks (shows many more options ...)
 
 The example can be run using the [gradle plugin: org.gretty](https://plugins.gradle.org/plugin/org.gretty)
 
-`   ./gradlew appRun`
+`   ./gradlew appRun`
 
 Explicitly specifying Jetty
 
-`   ./gradlew jettyRun`
+`   ./gradlew jettyRun`
 
 or Tomcat
 
-`   ./gradlew tomcatRun`
+`   ./gradlew tomcatRun`
 
 ### Run with Jetty-Runner
 
@@ -121,23 +121,23 @@ For shortest startup time an embedded
 can be run directly from a main class `org.eclipse.jetty.runner.Runner`
 using a minimum configuration.
 
-`   ./gradlew startJettyRunner`
+`   ./gradlew startJettyRunner`
 
 After a short startup time (the first startup will download the
 dependencies so it will take a bit longer) you'll see this output and
 the server will run under the same local URL.
 
-`   Nov 01, 2019 10:41:17 AM org.eclipse.jetty.util.log.Log initialized`  
-`   INFO: Logging initialized @181ms to org.eclipse.jetty.util.log.Slf4jLog`  
-`   ...`  
-`   INFO: Runner`  
-`   Nov 01, 2019 10:41:17 AM org.eclipse.jetty.server.Server doStart`  
-`   INFO: jetty-9.4.21.v20190926; built: 2019-09-26T16:41:09.154Z; git: 72970db61a2904371e1218a95a3bef5d79788c33; jvm 11.0.4+11-post-Ubuntu-1ubuntu218.04.3`  
-`   ...`  
-`   Nov 01, 2019 10:41:18 AM org.eclipse.jetty.server.AbstractConnector doStart`  
-`   INFO: Started ServerConnector@90f6bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}`  
-`   Nov 01, 2019 10:41:18 AM org.eclipse.jetty.server.Server doStart`  
-`   INFO: Started @1578ms`
+`   Nov 01, 2019 10:41:17 AM org.eclipse.jetty.util.log.Log initialized`  
+`   INFO: Logging initialized @181ms to org.eclipse.jetty.util.log.Slf4jLog`  
+`   ...`  
+`   INFO: Runner`  
+`   Nov 01, 2019 10:41:17 AM org.eclipse.jetty.server.Server doStart`  
+`   INFO: jetty-9.4.21.v20190926; built: 2019-09-26T16:41:09.154Z; git: 72970db61a2904371e1218a95a3bef5d79788c33; jvm 11.0.4+11-post-Ubuntu-1ubuntu218.04.3`  
+`   ...`  
+`   Nov 01, 2019 10:41:18 AM org.eclipse.jetty.server.AbstractConnector doStart`  
+`   INFO: Started ServerConnector@90f6bfd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}`  
+`   Nov 01, 2019 10:41:18 AM org.eclipse.jetty.server.Server doStart`  
+`   INFO: Started @1578ms`
 
 ### Inside the IDE
 
@@ -148,17 +148,17 @@ automatic resource loading fails. The minimum **program arguments** are
 as simple as passing in a webapp-folder (and an optional port/context
 path)
 
-`   --path /zk-gradle --port 8085 src/main/webapp`
+`   --path /zk-gradle --port 8085 src/main/webapp`
 
 or simply
 
-`   src/main/webapp`
+`   src/main/webapp`
 
 ## Debug in IntelliJ IDEA
 
 Run the task and attach the debugger:
 
-` jettyRunDebug`
+` jettyRunDebug`
 
 The server will stop at breakpoints.
 

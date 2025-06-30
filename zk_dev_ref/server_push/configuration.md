@@ -78,14 +78,14 @@ two peeks is determined by a few factors.
 The minimal delay to send the second polling request (unit:
 milliseconds).
 
-`Default: 1000.`
+`Default: 1000.`
 
 ## PollingServerPush.delay.max
 
 The maximal delay to send the second polling request (unit:
 milliseconds).
 
-`Default: 15000.`
+`Default: 15000.`
 
 ## PollingServerPush.delay.factor
 
@@ -167,21 +167,21 @@ in your `WEB-INF/zk.xml` e.g.
 The minimum time delay to send the next comet request retry (unit:
 milliseconds).
 
-`Default: 5000.`
+`Default: 5000.`
 
 ## CometServerPush.retry.count
 
 The maximum retry counts if a comet request fails, -1 means keep retry
 forever (unit: count).
 
-`Default: 10.`
+`Default: 10.`
 
 ## CometServerPush.ajax.timeout
 
 The amount of time a comet request will wait for a server response until
 it aborts. (unit: milliseconds).
 
-`Default: varies, `[`depending on browsers`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout)
+`Default: varies, `[`depending on browsers`](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout)
 
 # Error Handling
 
@@ -212,7 +212,7 @@ updates.
 
 Those requests look similar to this:
 
-`   dtid=z_m06&cmd_0=dummy&opt_0=i`
+`   dtid=z_m06&cmd_0=dummy&opt_0=i`
 
 In the case of PollingServerPush there will be one of these requests per
 configured interval, sometimes causing a firewall to give a false alert.

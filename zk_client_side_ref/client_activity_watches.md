@@ -267,7 +267,7 @@ mouse button.
 
 ## onFitSize
 
-`[fireDown; reverse order]`
+`[fireDown; reverse order]`
 
 It is called between beforeSize and onSize.
 

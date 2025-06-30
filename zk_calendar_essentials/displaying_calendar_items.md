@@ -141,7 +141,7 @@ contentStyle and headerStyle properties instead: ![Areas targeted by each style 
     calendarItem.setContentStyle("background-color: rgb(255, 255, 0); color: white;"); //affects the content node, may override setStyle for this node
 ```
 
-`before 3.1.0`
+`before 3.1.0`
 
 Before calendar 3.1.0, only the background color can be customized for
 the calendar item's main Node with the contentColor attribute, and the

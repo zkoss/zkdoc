@@ -86,13 +86,13 @@ Notes
 
 # class
 
-`[Required if importing a class]`
+`[Required if importing a class]`
 
 The name of a class, or a wildcard, such as `com.foo.app.*`.
 
 # src
 
-`[Required if importing directives]`
+`[Required if importing directives]`
 
 The URI of a ZUML page which the component definitions will be imported
 from.
@@ -100,7 +100,7 @@ from.
 # directives
 
 `[Optional]`  
-`default: component, init, import`
+`default: component, init, import`
 
 If the `directives` attribute is omitted, only the `component`, `init`
 and `import` (with class) directives are imported.

@@ -134,8 +134,8 @@ public class ScopedController extends SelectorComposer {
 
     @Listen("onClick = #showWinBtn")
     public void showMessage(Event evt) throws InterruptedException {
-        Window win = (Window) Executions.getCurrent().createComponents("customScopesWindow.zul", null, null);
-        win.doHighlighted();
+        Window win = (Window) Executions.getCurrent().createComponents("customScopesWindow.zul", null, null);
+        win.doHighlighted();
     }
 }
 ```

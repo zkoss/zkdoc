@@ -78,8 +78,8 @@ i.e. you have to set one of the following attributes:
 
 ## Specifies the number of rows rendered
 
-`[default: 100]`  
-`[inherit: true]`
+`[default: 100]`  
+`[inherit: true]`
 
 Specifies the minimum number of rows rendered on the client. It is only
 considered if Grid is using live data
@@ -147,8 +147,8 @@ listitems; i.e. you have to set one of the following attributes:
 
 ## Specifies the number of items rendered
 
-`[default: 100]`  
-`[inherit: true]`
+`[default: 100]`  
+`[inherit: true]`
 
 Specifies the number of items rendered when the Listbox first renders.
 It is used only if live data

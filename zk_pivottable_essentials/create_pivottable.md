@@ -45,7 +45,7 @@ will give
 
 ![](images/ZKPivotEsn_work_pivot_22.png)
 
- 
+ 
 
 ## Title Cells
 

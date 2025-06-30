@@ -654,7 +654,7 @@ The main difference between Liferay 5.2 and Liferay 6.0 is
 </zk>
 ```
 
-`[since 5.0.11]`
+`[since 5.0.11]`
 
 - use **NonRootContextJQueryRenderPatch** instead of
   **JQueryRenderCachedPatch** if the home page of Liferay is not under
@@ -679,7 +679,7 @@ The main difference between Liferay 5.2 and Liferay 6.0 is
 add this to the setting
 **<header-portlet-javascript>/zkau/web/js/zk.wpd</header-portlet-javascript>**
 
-` [Since 7.0.3]`
+` [Since 7.0.3]`
 
 - You don't need
   **<header-portlet-javascript>/zkau/web/js/zk.wpd</header-portlet-javascript>**

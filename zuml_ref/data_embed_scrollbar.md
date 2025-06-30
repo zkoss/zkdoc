@@ -9,5 +9,5 @@ attribute.
 </div>
 ```
 
-`Default value: `*`true`*` since 7.0.2`  
-`Default value: `*`false`*` since 7.0.0`
+`Default value: `*`true`*` since 7.0.2`  
+`Default value: `*`false`*` since 7.0.0`

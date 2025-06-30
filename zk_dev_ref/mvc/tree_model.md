@@ -379,8 +379,8 @@ And, the result looks like this:
 
 # Sorting
 
-`Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
-`Implementation: You have to implement it explicitly`
+`Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
+`Implementation: You have to implement it explicitly`
 
 To support the sorting, the model must implement
 [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) too.
@@ -405,8 +405,8 @@ to sort in the order specified in the `ascending` parameter.
 
 # Selection
 
-`Interface: `[`org.zkoss.zul.ext.TreeSelectableModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/TreeSelectableModel`.html)  
-`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
+`Interface: `[`org.zkoss.zul.ext.TreeSelectableModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/TreeSelectableModel`.html)  
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
 
 If your data model also provides the collection of selected elements,
 you shall also implement
@@ -471,8 +471,8 @@ model.setSelectionControl(new AbstractTreeModel.DefaultSelectionControl(model) {
 
 # Open Tree Nodes
 
-`Interface: `[`org.zkoss.zul.ext.TreeOpenableModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/TreeOpenableModel`.html)  
-`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
+`Interface: `[`org.zkoss.zul.ext.TreeOpenableModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/TreeOpenableModel`.html)  
+`Implementation: Implemented by `[`org.zkoss.zul.AbstractTreeModel`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/AbstractTreeModel`.html)
 
 By default, all tree nodes are closed. To control whether to open a tree
 node, you could implement

@@ -2,7 +2,7 @@
 
 You see the error below in a browser developer tool \> Console tab:
 
-` Uncaught Unknown widget: chart.Charts`
+` Uncaught Unknown widget: chart.Charts`
 
 ![](images/unknown_widget_chart.png)
 

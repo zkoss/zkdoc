@@ -1,6 +1,6 @@
 
 
-`Since 1.1.0`
+`Since 1.1.0`
 
 Currently, ZATS Mimic supports many operations of ZK components,
 however, there are still cases where operations are not yet covered. For

@@ -20,7 +20,7 @@ Notes
 
 # uri
 
-`[Required][EL expressions allowed]`
+`[Required][EL expressions allowed]`
 
 The URI of the page/servlet to forward to. It may be another ZUML page,
 a JSP page or any servlet.
@@ -30,7 +30,7 @@ it is considered as no forwarding at all.
 
 # if
 
-`[Optional][Default: true][EL expressions allowed]`
+`[Optional][Default: true][EL expressions allowed]`
 
 The condition to forward to the specified URI. If both `if` and `unless`
 are omitted, this page won't be evaluated and ZK always forwards the
@@ -38,7 +38,7 @@ request to the specified URI.
 
 # unless
 
-`[Optional][Default: false][EL expressions allowed]`
+`[Optional][Default: false][EL expressions allowed]`
 
 The condition *not* to forward to the specified URI. If both `if` and
 `unless` are omitted, this page won't be evaluated and ZK always

@@ -5,8 +5,8 @@ look, especially for Internet Explorer 6. Unfortunately, the browser
 (particularly, Internet Explorer) will be slowed down if there are a lot
 of buttons (with `trendy`) in the same page.
 
-`Notice that the default mold is ``os`` in ZK 5, while ``trendy`` in ZK 3.6.`  
-` There is no difference between ``os`` and ``trendy``.`
+`Notice that the default mold is ``os`` in ZK 5, while ``trendy`` in ZK 3.6.`  
+` There is no difference between ``os`` and ``trendy``.`
 
 The default mold can be changed easily. For example,
 

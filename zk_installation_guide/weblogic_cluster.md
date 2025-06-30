@@ -56,7 +56,7 @@ For Weblogic version 12c
 
 As mentioned in [Weblogic's document](http://download.oracle.com/docs/cd/E12840_01/wls/docs103/webapp/weblogic_xml.html#wp1071982)
 
-**`replicated`**` — Same as memory, but session data is replicated across the clustered servers.`
+**`replicated`**` — Same as memory, but session data is replicated across the clustered servers.`
 
 # Setting up Weblogic Clusters
 
