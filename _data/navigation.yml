@@ -32,7 +32,7 @@ main:
   - title: ZK Spring Essentials
     url: /zk_spring_essentials/introduction
   - title: ZATS
-    url: /zats_essentials/Introduction
+    url: /zats_essentials/introduction
   - title: ZK JSP Tags Essentials
     url: /zk_jsp_tags_essentials/before_you_start
   - title: ZK Studio Essentials

@@ -16,8 +16,7 @@ safer than the second one in the following example:
 
 # Block with `InaccessibleWidgetBlockService`
 
-ZK provides the
-\`[org.zkoss.zkmax.au.InaccessibleWidgetBlockService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/au/InaccessibleWidgetBlockService.html)\`
+ZK provides the `[org.zkoss.zkmax.au.InaccessibleWidgetBlockService](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/au/InaccessibleWidgetBlockService.html)`
 to block events sent from inaccessible widgets with a default set of
 rules. An inaccessible widget is defined as one that is either disabled,
 invisible, or read-only. It's important to note that these default rules
@@ -26,8 +25,17 @@ may not apply to all use cases.
 Before 10.0.0, the Inaccessible Widget Blocking Service is not enabled
 by default. Users need to enable it manually.
 
-In ZK 10.0.0 and later, this blocking service is enabled by default to
-enhance security.
+## Enable by Default
+{% include version-badge.html version=10.0.0} In ZK 10.0.0 and later, this blocking service is enabled by default to enhance security.
+
+## How to Disable
+Since this service blocks all events sent from invisible components. If you have such need, you can disable it.
+```xml
+<library-property>
+    <name>org.zkoss.zkmax.au.IWBS.disable</name>
+    <value>true</value>
+</library-property>
+```
 
 ## Limitation
 
