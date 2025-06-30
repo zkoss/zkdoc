@@ -26,7 +26,7 @@ Before 10.0.0, the Inaccessible Widget Blocking Service is not enabled
 by default. Users need to enable it manually.
 
 ## Enable by Default
-{% include version-badge.html version=10.0.0} In ZK 10.0.0 and later, this blocking service is enabled by default to enhance security.
+{% include version-badge.html version=10.0.0 %} In ZK 10.0.0 and later, this blocking service is enabled by default to enhance security.
 
 ## How to Disable
 Since this service blocks all events sent from invisible components. If you have such need, you can disable it.

@@ -2,12 +2,14 @@
 
 **Syntax:**
 
-`<custom-attributes`  
-`    `*`attr1`*`="`*`value1`*`" [`*`attr2`*`="`*`value2`*`"...] `  
-`    [scope="`**`component`**`|space|page|desktop|session|application"] `  
-`    [composite="`**`none`**`|list|map"]`  
-`    [if="`*`if-condition`*`"] `  
-`    [unless="`*`unless-condition`*`"]/>`
+```xml
+<custom-attributes  
+  attr1="value1" [attr2="value2"...]  
+[scope="component|space|page|desktop|session|application"]  
+[composite="none|list|map"]  
+[if="if-condition"]  
+[unless="unless-condition"]/>
+```
 
 It defines a set of custom attributes of the specified scope. You could
 specify as many as attributes you want. These attributes can be

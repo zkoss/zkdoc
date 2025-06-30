@@ -76,7 +76,7 @@ zk_essentials:
       - title: By Data Binding
         url: /zk_essentials/controlling_components/by_data_binding
   - title: 3. Handling User Input
-    url: /zk_essentials/handling_user_
+    url: /zk_essentials/handling_user_input
     children:
       - title: MVC Pattern
         url: /zk_essentials/handling_user_mvc_approach
@@ -2405,7 +2405,7 @@ zk_component_ref:
         url: /zk_component_ref/stepbar
         children:
           - title: Step
-            url: /zk_component_ref/stepbar/step
+            url: /zk_component_ref/step
   - title: Events
     url: /zk_component_ref/events
     children:
