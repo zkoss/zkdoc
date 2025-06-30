@@ -76,26 +76,26 @@ zk_essentials:
       - title: By Data Binding
         url: /zk_essentials/controlling_components/by_data_binding
   - title: 3. Handling User Input
-    url: /zk_essentials/handling_user_input/
+    url: /zk_essentials/handling_user_
     children:
       - title: MVC Pattern
-        url: /zk_essentials/handling_user_input/mvc_approach
+        url: /zk_essentials/handling_user_mvc_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_input/mvc_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_mvc_approach/construct-a-form-style-page
           - title: Populate Components with Data
-            url: /zk_essentials/handling_user_input/mvc_approach/populate-components-with-data
+            url: /zk_essentials/handling_user_mvc_approach/populate-components-with-data
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvc_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_mvc_approach/save-and-reload-data
       - title: MVVM Pattern
-        url: /zk_essentials/handling_user_input/mvvm_approach
+        url: /zk_essentials/handling_user_mvvm_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_mvvm_approach/construct-a-form-style-page
           - title: Load Data into Components
-            url: /zk_essentials/handling_user_input/mvvm_approach/load-data-to-components
+            url: /zk_essentials/handling_user_mvvm_approach/load-data-to-components
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvvm_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_mvvm_approach/save-and-reload-data
   - title: 4. Implementing CRUD
     url: /zk_essentials/implementing_crud/
     children:
@@ -2046,13 +2046,13 @@ zk_component_ref:
         url: /zk_component_ref/tabbox
         children:
           - title: Tab
-            url: /zk_component_ref/tabbox/tab
+            url: /zk_component_ref/tab
           - title: Tabs
-            url: /zk_component_ref/tabbox/tabs
+            url: /zk_component_ref/tabs
           - title: Tabpanel
-            url: /zk_component_ref/tabbox/tabpanel
+            url: /zk_component_ref/tabpanel
           - title: Tabpanels
-            url: /zk_component_ref/tabbox/tabpanels
+            url: /zk_component_ref/tabpanels
       - title: Window
         url: /zk_component_ref/window
   - title: Data
@@ -2062,87 +2062,87 @@ zk_component_ref:
         url: /zk_component_ref/grid
         children:
           - title: Column
-            url: /zk_component_ref/grid/column
+            url: /zk_component_ref/column
           - title: Columns
-            url: /zk_component_ref/grid/columns
+            url: /zk_component_ref/columns
           - title: Detail
-            url: /zk_component_ref/grid/detail
+            url: /zk_component_ref/detail
           - title: Foot
-            url: /zk_component_ref/grid/foot
+            url: /zk_component_ref/foot
           - title: Footer
-            url: /zk_component_ref/grid/footer
+            url: /zk_component_ref/footer
           - title: Group
-            url: /zk_component_ref/grid/group
+            url: /zk_component_ref/group
           - title: Groupfoot
-            url: /zk_component_ref/grid/groupfoot
+            url: /zk_component_ref/groupfoot
           - title: Row
-            url: /zk_component_ref/grid/row
+            url: /zk_component_ref/row
           - title: Rows
-            url: /zk_component_ref/grid/rows
+            url: /zk_component_ref/rows
       - title: Listbox
         url: /zk_component_ref/listbox
         children:
           - title: Listcell
-            url: /zk_component_ref/listbox/listcell
+            url: /zk_component_ref/listcell
           - title: Listfoot
-            url: /zk_component_ref/listbox/listfoot
+            url: /zk_component_ref/listfoot
           - title: Listfooter
-            url: /zk_component_ref/listbox/listfooter
+            url: /zk_component_ref/listfooter
           - title: Listgroup
-            url: /zk_component_ref/listbox/listgroup
+            url: /zk_component_ref/listgroup
           - title: Listgroupfoot
-            url: /zk_component_ref/listbox/listgroupfoot
+            url: /zk_component_ref/listgroupfoot
           - title: Listhead
-            url: /zk_component_ref/listbox/listhead
+            url: /zk_component_ref/listhead
           - title: Listheader
-            url: /zk_component_ref/listbox/listheader
+            url: /zk_component_ref/listheader
           - title: Listitem
-            url: /zk_component_ref/listbox/listitem
+            url: /zk_component_ref/listitem
       - title: Tree
         url: /zk_component_ref/tree
         children:
           - title: Treecell
-            url: /zk_component_ref/tree/treecell
+            url: /zk_component_ref/treecell
           - title: Treechildren
-            url: /zk_component_ref/tree/treechildren
+            url: /zk_component_ref/treechildren
           - title: Treecol
-            url: /zk_component_ref/tree/treecol
+            url: /zk_component_ref/treecol
           - title: Treecols
-            url: /zk_component_ref/tree/treecols
+            url: /zk_component_ref/treecols
           - title: Treefoot
-            url: /zk_component_ref/tree/treefoot
+            url: /zk_component_ref/treefoot
           - title: Treefooter
-            url: /zk_component_ref/tree/treefooter
+            url: /zk_component_ref/treefooter
           - title: Treeitem
-            url: /zk_component_ref/tree/treeitem
+            url: /zk_component_ref/treeitem
           - title: Treerow
-            url: /zk_component_ref/tree/treerow
+            url: /zk_component_ref/treerow
       - title: Biglistbox
         url: /zk_component_ref/biglistbox
   - title: Diagrams and Reports
     url: /zk_component_ref/diagrams_and_reports
     children:
       - title: Chart
-        url: /zk_component_ref/diagrams_and_reports/chart
+        url: /zk_component_ref/chart
       - title: Gmaps
-        url: /zk_component_ref/diagrams_and_reports/gmaps
+        url: /zk_component_ref/gmaps
         children:
           - title: Gimage
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gimage
+            url: /zk_component_ref/gmaps/gimage
           - title: Ginfo
-            url: /zk_component_ref/diagrams_and_reports/gmaps/ginfo
+            url: /zk_component_ref/gmaps/ginfo
           - title: Gmarker
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gmarker
+            url: /zk_component_ref/gmaps/gmarker
           - title: Gpolyline
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gpolyline
+            url: /zk_component_ref/gmaps/gpolyline
           - title: Gpolygon
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gpolygon
+            url: /zk_component_ref/gmaps/gpolygon
           - title: Gscreen
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gscreen
+            url: /zk_component_ref/gmaps/gscreen
           - title: Gcircle
-            url: /zk_component_ref/diagrams_and_reports/gmaps/gcircle
+            url: /zk_component_ref/gmaps/gcircle
       - title: Jasperreport
-        url: /zk_component_ref/diagrams_and_reports/jasperreport
+        url: /zk_component_ref/jasperreport
   - title: Essential Components
     url: /zk_component_ref/essential_components
     children:
@@ -2166,7 +2166,7 @@ zk_component_ref:
         url: /zk_component_ref/fisheye
         children:
           - title: Fisheyebar
-            url: /zk_component_ref/fisheye/fisheyebar
+            url: /zk_component_ref/fisheyebar
       - title: Html
         url: /zk_component_ref/html
       - title: Iframe
@@ -2179,29 +2179,29 @@ zk_component_ref:
         url: /zk_component_ref/imagemap
         children:
           - title: Area
-            url: /zk_component_ref/imagemap/area
+            url: /zk_component_ref/area
       - title: Label
         url: /zk_component_ref/label
       - title: Menu
         url: /zk_component_ref/menu
         children:
           - title: Menubar
-            url: /zk_component_ref/menu/menubar
+            url: /zk_component_ref/menubar
           - title: Menuitem
-            url: /zk_component_ref/menu/menuitem
+            url: /zk_component_ref/menuitem
           - title: Menupopup
-            url: /zk_component_ref/menu/menupopup
+            url: /zk_component_ref/menupopup
           - title: Menuseparator
-            url: /zk_component_ref/menu/menuseparator
+            url: /zk_component_ref/menuseparator
       - title: Nav
         url: /zk_component_ref/nav
         children:
           - title: Navbar
-            url: /zk_component_ref/nav/navbar
+            url: /zk_component_ref/navbar
           - title: Navitem
-            url: /zk_component_ref/nav/navitem
+            url: /zk_component_ref/navitem
           - title: Navseparator
-            url: /zk_component_ref/nav/navseparator
+            url: /zk_component_ref/navseparator
       - title: Popup
         url: /zk_component_ref/popup
       - title: Progressmeter
@@ -2228,184 +2228,184 @@ zk_component_ref:
     url: /zk_component_ref/input
     children:
       - title: Bandbox
-        url: /zk_component_ref/input/bandbox
+        url: /zk_component_ref/bandbox
       - title: Bandpopup
-        url: /zk_component_ref/input/bandpopup
+        url: /zk_component_ref/bandpopup
       - title: Calendar
-        url: /zk_component_ref/input/calendar
+        url: /zk_component_ref/calendar
       - title: Cascader
-        url: /zk_component_ref/input/cascader
+        url: /zk_component_ref/cascader
       - title: Checkbox
-        url: /zk_component_ref/input/checkbox
+        url: /zk_component_ref/checkbox
       - title: Chosenbox
-        url: /zk_component_ref/input/chosenbox
+        url: /zk_component_ref/chosenbox
       - title: CKEditor
-        url: /zk_component_ref/input/ckeditor
+        url: /zk_component_ref/ckeditor
       - title: Colorbox
-        url: /zk_component_ref/input/colorbox
+        url: /zk_component_ref/colorbox
       - title: Combobox
-        url: /zk_component_ref/input/combobox
+        url: /zk_component_ref/combobox
         children:
           - title: Comboitem
-            url: /zk_component_ref/input/combobox/comboitem
+            url: /zk_component_ref/combobox/comboitem
       - title: Datebox
-        url: /zk_component_ref/input/datebox
+        url: /zk_component_ref/datebox
       - title: Decimalbox
-        url: /zk_component_ref/input/decimalbox
+        url: /zk_component_ref/decimalbox
       - title: Doublebox
-        url: /zk_component_ref/input/doublebox
+        url: /zk_component_ref/doublebox
       - title: Doublespinner
-        url: /zk_component_ref/input/doublespinner
+        url: /zk_component_ref/doublespinner
       - title: Intbox
-        url: /zk_component_ref/input/intbox
+        url: /zk_component_ref/intbox
       - title: Longbox
-        url: /zk_component_ref/input/longbox
+        url: /zk_component_ref/longbox
       - title: Multislider
-        url: /zk_component_ref/input/multislider
+        url: /zk_component_ref/multislider
       - title: Radio
-        url: /zk_component_ref/input/radio
+        url: /zk_component_ref/radio
       - title: Radiogroup
-        url: /zk_component_ref/input/radiogroup
+        url: /zk_component_ref/radiogroup
       - title: Rangeslider
-        url: /zk_component_ref/input/rangeslider
+        url: /zk_component_ref/rangeslider
       - title: Searchbox
-        url: /zk_component_ref/input/searchbox
+        url: /zk_component_ref/searchbox
       - title: Signature
-        url: /zk_component_ref/input/signature
+        url: /zk_component_ref/signature
       - title: Slider
-        url: /zk_component_ref/input/slider
+        url: /zk_component_ref/slider
       - title: Sliderbuttons
-        url: /zk_component_ref/input/sliderbuttons
+        url: /zk_component_ref/sliderbuttons
       - title: Spinner
-        url: /zk_component_ref/input/spinner
+        url: /zk_component_ref/spinner
       - title: Tbeditor
-        url: /zk_component_ref/input/tbeditor
+        url: /zk_component_ref/tbeditor
       - title: Textbox
-        url: /zk_component_ref/input/textbox
+        url: /zk_component_ref/textbox
       - title: Timebox
-        url: /zk_component_ref/input/timebox
+        url: /zk_component_ref/timebox
       - title: Timepicker
-        url: /zk_component_ref/input/timepicker
+        url: /zk_component_ref/timepicker
   - title: Layouts
     url: /zk_component_ref/layouts
     children:
       - title: Absolutelayout
-        url: /zk_component_ref/layouts/absolutelayout
+        url: /zk_component_ref/absolutelayout
         children:
           - title: Absolutechildren
-            url: /zk_component_ref/layouts/absolutelayout/absolutechildren
+            url: /zk_component_ref/absolutelayout/absolutechildren
       - title: Anchorlayout
-        url: /zk_component_ref/layouts/anchorlayout
+        url: /zk_component_ref/anchorlayout
         children:
           - title: Anchorchildren
-            url: /zk_component_ref/layouts/anchorlayout/anchorchildren
+            url: /zk_component_ref/anchorlayout/anchorchildren
       - title: Borderlayout
-        url: /zk_component_ref/layouts/borderlayout
+        url: /zk_component_ref/borderlayout
         children:
           - title: Center
-            url: /zk_component_ref/layouts/borderlayout/center
+            url: /zk_component_ref/borderlayout/center
           - title: East
-            url: /zk_component_ref/layouts/borderlayout/east
+            url: /zk_component_ref/borderlayout/east
           - title: North
-            url: /zk_component_ref/layouts/borderlayout/north
+            url: /zk_component_ref/borderlayout/north
           - title: South
-            url: /zk_component_ref/layouts/borderlayout/south
+            url: /zk_component_ref/borderlayout/south
           - title: West
-            url: /zk_component_ref/layouts/borderlayout/west
+            url: /zk_component_ref/borderlayout/west
       - title: Box
-        url: /zk_component_ref/layouts/box
+        url: /zk_component_ref/box
       - title: Cardlayout
-        url: /zk_component_ref/layouts/cardlayout
+        url: /zk_component_ref/cardlayout
       - title: Columnlayout
-        url: /zk_component_ref/layouts/columnlayout
+        url: /zk_component_ref/columnlayout
         children:
           - title: Columnchildren
-            url: /zk_component_ref/layouts/columnlayout/columnchildren
+            url: /zk_component_ref/columnlayout/columnchildren
       - title: GoldenLayout
-        url: /zk_component_ref/layouts/golden_layout
+        url: /zk_component_ref/golden_layout
         children:
           - title: GoldenPanel
-            url: /zk_component_ref/layouts/golden_layout/golden_panel
+            url: /zk_component_ref/golden_layout/golden_panel
       - title: Hbox
-        url: /zk_component_ref/layouts/hbox
+        url: /zk_component_ref/hbox
       - title: Hlayout
-        url: /zk_component_ref/layouts/hlayout
+        url: /zk_component_ref/hlayout
       - title: Linelayout
-        url: /zk_component_ref/layouts/linelayout
+        url: /zk_component_ref/linelayout
         children:
           - title: Lineitem
-            url: /zk_component_ref/layouts/linelayout/lineitem
+            url: /zk_component_ref/linelayout/lineitem
       - title: Organigram
-        url: /zk_component_ref/layouts/organigram
+        url: /zk_component_ref/organigram
         children:
           - title: Orgchildren
-            url: /zk_component_ref/layouts/organigram/orgchildren
+            url: /zk_component_ref/organigram/orgchildren
           - title: Orgitem
-            url: /zk_component_ref/layouts/organigram/orgitem
+            url: /zk_component_ref/organigram/orgitem
           - title: Orgnode
-            url: /zk_component_ref/layouts/organigram/orgnode
+            url: /zk_component_ref/organigram/orgnode
       - title: Portallayout
-        url: /zk_component_ref/layouts/portallayout
+        url: /zk_component_ref/portallayout
         children:
           - title: Portalchildren
-            url: /zk_component_ref/layouts/portallayout/portalchildren
+            url: /zk_component_ref/portallayout/portalchildren
       - title: Rowlayout
-        url: /zk_component_ref/layouts/rowlayout
+        url: /zk_component_ref/rowlayout
         children:
           - title: Rowchildren
-            url: /zk_component_ref/layouts/rowlayout/rowchildren
+            url: /zk_component_ref/rowlayout/rowchildren
       - title: Splitlayout
-        url: /zk_component_ref/layouts/splitlayout
+        url: /zk_component_ref/splitlayout
       - title: Splitter
-        url: /zk_component_ref/layouts/splitter
+        url: /zk_component_ref/splitter
       - title: Tablelayout
-        url: /zk_component_ref/layouts/tablelayout
+        url: /zk_component_ref/tablelayout
         children:
           - title: TableChildren
-            url: /zk_component_ref/layouts/tablelayout/table_children
+            url: /zk_component_ref/tablelayout/table_children
       - title: Vbox
-        url: /zk_component_ref/layouts/vbox
+        url: /zk_component_ref/vbox
       - title: Vlayout
-        url: /zk_component_ref/layouts/vlayout
+        url: /zk_component_ref/vlayout
   - title: Multimedia and Miscellaneous
     url: /zk_component_ref/multimedia_and_miscellaneous
     children:
       - title: Audio
-        url: /zk_component_ref/multimedia_and_miscellaneous/audio
+        url: /zk_component_ref/audio
       - title: Barcode
-        url: /zk_component_ref/multimedia_and_miscellaneous/barcode
+        url: /zk_component_ref/barcode
       - title: BarcodeScanner
-        url: /zk_component_ref/multimedia_and_miscellaneous/barcode_scanner
+        url: /zk_component_ref/barcode_scanner
       - title: Cropper
-        url: /zk_component_ref/multimedia_and_miscellaneous/cropper
+        url: /zk_component_ref/cropper
       - title: Camera
-        url: /zk_component_ref/multimedia_and_miscellaneous/camera
+        url: /zk_component_ref/camera
       - title: Pdfviewer
-        url: /zk_component_ref/multimedia_and_miscellaneous/pdfviewer
+        url: /zk_component_ref/pdfviewer
       - title: Video
-        url: /zk_component_ref/multimedia_and_miscellaneous/video
+        url: /zk_component_ref/video
       - title: Track
-        url: /zk_component_ref/multimedia_and_miscellaneous/track
+        url: /zk_component_ref/track
   - title: Supplementary
     url: /zk_component_ref/supplementary
     children:
       - title: Auxhead
-        url: /zk_component_ref/supplementary/auxhead
+        url: /zk_component_ref/auxhead
       - title: Auxheader
-        url: /zk_component_ref/supplementary/auxheader
+        url: /zk_component_ref/auxheader
       - title: Cell
-        url: /zk_component_ref/supplementary/cell
+        url: /zk_component_ref/cell
       - title: Coachmark
-        url: /zk_component_ref/supplementary/coachmark
+        url: /zk_component_ref/coachmark
       - title: Frozen
-        url: /zk_component_ref/supplementary/frozen
+        url: /zk_component_ref/frozen
       - title: Paging
-        url: /zk_component_ref/supplementary/paging
+        url: /zk_component_ref/paging
       - title: Stepbar
-        url: /zk_component_ref/supplementary/stepbar
+        url: /zk_component_ref/stepbar
         children:
           - title: Step
-            url: /zk_component_ref/supplementary/stepbar/step
+            url: /zk_component_ref/stepbar/step
   - title: Events
     url: /zk_component_ref/events
     children:
@@ -2498,11 +2498,11 @@ zk_component_ref:
     url: /zk_component_ref/xhtml_components
     children:
       - title: Encoding URLs
-        url: /zk_component_ref/xhtml_components/encoding_urls
+        url: /zk_component_ref/encoding_urls
       - title: In Pure Java
-        url: /zk_component_ref/xhtml_components/in_pure_java
+        url: /zk_component_ref/in_pure_java
       - title: The Difference Between XUL and XHTML Components
-        url: /zk_component_ref/xhtml_components/the_difference_between_xul_and_xhtml_components
+        url: /zk_component_ref/the_difference_between_xul_and_xhtml_components
   - title: XML Components
     url: /zk_component_ref/xml_components
     children:
@@ -2512,7 +2512,7 @@ zk_component_ref:
     url: /zk_component_ref/annotation
     children:
       - title: Data Binding
-        url: /zk_component_ref/annotation/data_binding
+        url: /zk_component_ref/data_binding
   - title: Tablet Devices
     url: /zk_component_ref/tablet_devices
     children:
@@ -2525,14 +2525,14 @@ zk_component_ref:
         url: /zk_component_ref/tablet_devices/components
         children:
           - title: Scrollview
-            url: /zk_component_ref/tablet_devices/components/scrollview
+            url: /zk_component_ref/tablet_devices/scrollview
       - title: Events
         url: /zk_component_ref/tablet_devices/events
         children:
           - title: SwipeEvent
-            url: /zk_component_ref/tablet_devices/swipe_event
+            url: /zk_component_ref/tablet_devices/swipeevent
           - title: ClientInfoEvent
-            url: /zk_component_ref/tablet_devices/client_info_event
+            url: /zk_component_ref/tablet_devices/clientinfoevent
       - title: UI Enhancements
         url: /zk_component_ref/tablet_devices/ui_enhancements
         children:
@@ -2575,7 +2575,7 @@ zk_component_ref:
       - title: Limitation
         url: /zk_component_ref/tablet_devices/limitation
   - title: Accessibility
-    url: /zk_component_ref/accessibility
+    url: /zk_component_ref/accessibility/accessibility
     children:
       - title: Containers
         url: /zk_component_ref/accessibility/containers
