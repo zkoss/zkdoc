@@ -36,7 +36,7 @@ main:
   - title: ZK JSP Tags Essentials
     url: /zk_jsp_tags_essentials/before_you_start
   - title: ZK Studio Essentials
-    url: /zk_studio_essentials/Introduction
+    url: /zk_studio_essentials/introduction
   - title: Latest JavaDoc
     url: https://zkoss.org/javadoc/latest/zk/
   - title: Latest JavaScript Doc
@@ -79,23 +79,23 @@ zk_essentials:
     url: /zk_essentials/handling_user_input
     children:
       - title: MVC Pattern
-        url: /zk_essentials/handling_user_mvc_approach
+        url: /zk_essentials/handling_user_input/mvc_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_mvc_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvc_approach/construct-a-form-style-page
           - title: Populate Components with Data
-            url: /zk_essentials/handling_user_mvc_approach/populate-components-with-data
+            url: /zk_essentials/handling_user_input/mvc_approach/populate-components-with-data
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_mvc_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvc_approach/save-and-reload-data
       - title: MVVM Pattern
-        url: /zk_essentials/handling_user_mvvm_approach
+        url: /zk_essentials/handling_user_input/mvvm_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_mvvm_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
           - title: Load Data into Components
-            url: /zk_essentials/handling_user_mvvm_approach/load-data-to-components
+            url: /zk_essentials/handling_user_input/mvvm_approach/load-data-to-components
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_mvvm_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvvm_approach/save-and-reload-data
   - title: 4. Implementing CRUD
     url: /zk_essentials/implementing_crud/
     children:
@@ -1546,7 +1546,7 @@ zk_dev_ref:
           - title: Subscribe to EventQueues
             url: /zk_dev_ref/mvc/subscribe_to_eventqueues
       - title: Model
-        url: /zk_dev_ref/mvc
+        url: /zk_dev_ref/mvc/model
         children:
           - title: List Model
             url: /zk_dev_ref/mvc/list_model
@@ -2128,19 +2128,19 @@ zk_component_ref:
         url: /zk_component_ref/gmaps
         children:
           - title: Gimage
-            url: /zk_component_ref/gmaps/gimage
+            url: /zk_component_ref/gimage
           - title: Ginfo
-            url: /zk_component_ref/gmaps/ginfo
+            url: /zk_component_ref/ginfo
           - title: Gmarker
-            url: /zk_component_ref/gmaps/gmarker
+            url: /zk_component_ref/gmarker
           - title: Gpolyline
-            url: /zk_component_ref/gmaps/gpolyline
+            url: /zk_component_ref/gpolyline
           - title: Gpolygon
-            url: /zk_component_ref/gmaps/gpolygon
+            url: /zk_component_ref/gpolygon
           - title: Gscreen
-            url: /zk_component_ref/gmaps/gscreen
+            url: /zk_component_ref/gscreen
           - title: Gcircle
-            url: /zk_component_ref/gmaps/gcircle
+            url: /zk_component_ref/gcircle
       - title: Jasperreport
         url: /zk_component_ref/jasperreport
   - title: Essential Components
@@ -2247,7 +2247,7 @@ zk_component_ref:
         url: /zk_component_ref/combobox
         children:
           - title: Comboitem
-            url: /zk_component_ref/combobox/comboitem
+            url: /zk_component_ref/comboitem
       - title: Datebox
         url: /zk_component_ref/datebox
       - title: Decimalbox
@@ -2293,7 +2293,7 @@ zk_component_ref:
         url: /zk_component_ref/absolutelayout
         children:
           - title: Absolutechildren
-            url: /zk_component_ref/absolutelayout/absolutechildren
+            url: /zk_component_ref/absolutechildren
       - title: Anchorlayout
         url: /zk_component_ref/anchorlayout
         children:
@@ -2303,15 +2303,15 @@ zk_component_ref:
         url: /zk_component_ref/borderlayout
         children:
           - title: Center
-            url: /zk_component_ref/borderlayout/center
+            url: /zk_component_ref/center
           - title: East
-            url: /zk_component_ref/borderlayout/east
+            url: /zk_component_ref/east
           - title: North
-            url: /zk_component_ref/borderlayout/north
+            url: /zk_component_ref/north
           - title: South
-            url: /zk_component_ref/borderlayout/south
+            url: /zk_component_ref/south
           - title: West
-            url: /zk_component_ref/borderlayout/west
+            url: /zk_component_ref/west
       - title: Box
         url: /zk_component_ref/box
       - title: Cardlayout
@@ -2320,12 +2320,12 @@ zk_component_ref:
         url: /zk_component_ref/columnlayout
         children:
           - title: Columnchildren
-            url: /zk_component_ref/columnlayout/columnchildren
+            url: /zk_component_ref/columnchildren
       - title: GoldenLayout
         url: /zk_component_ref/golden_layout
         children:
           - title: GoldenPanel
-            url: /zk_component_ref/golden_layout/golden_panel
+            url: /zk_component_ref/golden_panel
       - title: Hbox
         url: /zk_component_ref/hbox
       - title: Hlayout
@@ -2334,26 +2334,26 @@ zk_component_ref:
         url: /zk_component_ref/linelayout
         children:
           - title: Lineitem
-            url: /zk_component_ref/linelayout/lineitem
+            url: /zk_component_ref/lineitem
       - title: Organigram
         url: /zk_component_ref/organigram
         children:
           - title: Orgchildren
-            url: /zk_component_ref/organigram/orgchildren
+            url: /zk_component_ref/orgchildren
           - title: Orgitem
-            url: /zk_component_ref/organigram/orgitem
+            url: /zk_component_ref/orgitem
           - title: Orgnode
-            url: /zk_component_ref/organigram/orgnode
+            url: /zk_component_ref/orgnode
       - title: Portallayout
         url: /zk_component_ref/portallayout
         children:
           - title: Portalchildren
-            url: /zk_component_ref/portallayout/portalchildren
+            url: /zk_component_ref/portalchildren
       - title: Rowlayout
         url: /zk_component_ref/rowlayout
         children:
           - title: Rowchildren
-            url: /zk_component_ref/rowlayout/rowchildren
+            url: /zk_component_ref/rowchildren
       - title: Splitlayout
         url: /zk_component_ref/splitlayout
       - title: Splitter
@@ -2362,7 +2362,7 @@ zk_component_ref:
         url: /zk_component_ref/tablelayout
         children:
           - title: TableChildren
-            url: /zk_component_ref/tablelayout/table_children
+            url: /zk_component_ref/table_children
       - title: Vbox
         url: /zk_component_ref/vbox
       - title: Vlayout
@@ -2507,14 +2507,14 @@ zk_component_ref:
     url: /zk_component_ref/xml_components
     children:
       - title: Transformer
-        url: /zk_component_ref/xml_components/transformer
+        url: /zk_component_ref/transformer
   - title: Annotation
     url: /zk_component_ref/annotation
     children:
       - title: Data Binding
         url: /zk_component_ref/data_binding
   - title: Tablet Devices
-    url: /zk_component_ref/tablet_devices
+    url: /zk_component_ref/tablet_devices/tablet_devices
     children:
       - title: Configuration
         url: /zk_component_ref/tablet_devices/configuration
