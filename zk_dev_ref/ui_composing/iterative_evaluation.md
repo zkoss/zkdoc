@@ -80,7 +80,7 @@ element.
 ## The forEachStatus Object
 
 The `forEachStatus` object is an instance of
-[org.zkoss.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/util/ForEachStatus.html). It
+[org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html). It
 holds the information about the current iteration. It is mainly used to
 get the item of the enclosing element that is also assigned with the
 forEach attribute.

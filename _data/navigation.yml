@@ -1479,7 +1479,7 @@ zk_dev_ref:
       - title: ID Space
         url: /zk_dev_ref/ui_composing/id_space
       - title: ZUML
-        url: /zk_dev_ref/ui_composing/zuml/zuml
+        url: /zk_dev_ref/ui_composing/zuml
         children:
           - title: XML Background
             url: /zk_dev_ref/ui_composing/xml_background
@@ -1533,7 +1533,7 @@ zk_dev_ref:
     url: /zk_dev_ref/mvc/mvc
     children:
       - title: Controller
-        url: /zk_dev_ref/mvc
+        url: /zk_dev_ref/mvc/controller
         children:
           - title: Composer
             url: /zk_dev_ref/mvc/composer
@@ -1664,50 +1664,50 @@ zk_dev_ref:
       - title: Useful Java Utilities
         url: /zk_dev_ref/ui_patterns/useful_java_utilities
       - title: HTML Tags
-        url: /zk_dev_ref/ui_patterns/html_tags/html_tags
+        url: /zk_dev_ref/ui_patterns/html_tags
         children:
           - title: The html Component
-            url: /zk_dev_ref/ui_patterns/html_tags/the_html_component
+            url: /zk_dev_ref/ui_patterns/the_html_component
           - title: The native Namespace
-            url: /zk_dev_ref/ui_patterns/html_tags/the_native_namespace
+            url: /zk_dev_ref/ui_patterns/the_native_namespace
           - title: The XHTML Component Set
-            url: /zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set
+            url: /zk_dev_ref/ui_patterns/the_xhtml_component_set
       - title: Long Operations
         url: /zk_dev_ref/ui_patterns/long_operations
         children:
           - title: Use Echo Events
-            url: /zk_dev_ref/ui_patterns/long_operations/use_echo_events
+            url: /zk_dev_ref/ui_patterns/use_echo_events
           - title: Use Event Queues
-            url: /zk_dev_ref/ui_patterns/long_operations/use_event_queues
+            url: /zk_dev_ref/ui_patterns/use_event_queues
           - title: Use Piggyback
-            url: /zk_dev_ref/ui_patterns/long_operations/use_piggyback
+            url: /zk_dev_ref/ui_patterns/use_piggyback
       - title: Communication
         url: /zk_dev_ref/ui_patterns/communication
         children:
           - title: Inter-Page Communication
-            url: /zk_dev_ref/ui_patterns/communication/inter-page_communication
+            url: /zk_dev_ref/ui_patterns/inter-page_communication
           - title: Inter-Desktop Communication
-            url: /zk_dev_ref/ui_patterns/communication/inter-desktop_communication
+            url: /zk_dev_ref/ui_patterns/inter-desktop_communication
           - title: Inter-Application Communication
-            url: /zk_dev_ref/ui_patterns/communication/inter-application_communication
+            url: /zk_dev_ref/ui_patterns/inter-application_communication
       - title: Templating
         url: /zk_dev_ref/ui_patterns/templating
         children:
           - title: Composition
-            url: /zk_dev_ref/ui_patterns/templating/composition
+            url: /zk_dev_ref/ui_patterns/composition
           - title: Templates
-            url: /zk_dev_ref/ui_patterns/templating/templates
+            url: /zk_dev_ref/ui_patterns/templates
       - title: XML Output
         url: /zk_dev_ref/ui_patterns/xml_output
       - title: Event Threads
         url: /zk_dev_ref/ui_patterns/event_threads
         children:
           - title: Modal Windows
-            url: /zk_dev_ref/ui_patterns/event_threads/modal_windows
+            url: /zk_dev_ref/ui_patterns/modal_windows
           - title: Message Box
-            url: /zk_dev_ref/ui_patterns/event_threads/message_box
+            url: /zk_dev_ref/ui_patterns/message_box
           - title: File Upload
-            url: /zk_dev_ref/ui_patterns/event_threads/file_upload
+            url: /zk_dev_ref/ui_patterns/file_upload
   - title: Theming and Styling
     url: /zk_dev_ref/theming_and_styling/theming_and_styling
     children:
@@ -1755,7 +1755,7 @@ zk_dev_ref:
         url: /zk_dev_ref/internationalization/labels
         children:
           - title: The Format of Properties Files
-            url: /zk_dev_ref/internationalization/labels/the_format_of_properties_files
+            url: /zk_dev_ref/internationalization/the_format_of_properties_files
       - title: Date and Time Formatting
         url: /zk_dev_ref/internationalization/date_and_time_formatting
       - title: The First Day of the Week
@@ -1834,7 +1834,7 @@ zk_dev_ref:
         url: /zk_dev_ref/integration/security
         children:
           - title: Spring Security
-            url: /zk_dev_ref/integration/security/spring_security
+            url: /zk_dev_ref/integration/spring_security
       - title: ZK Embedded
         url: /zk_dev_ref/integration/zk_embedded
         children:
