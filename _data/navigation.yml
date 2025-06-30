@@ -384,7 +384,7 @@ zk_jsp_tags_essentials:
     url: /zk_jsp_tags_essentials/zk_jsp_function_list
 zk_pivottable_essentials:
   - title: Quick Start
-    url: /zk_pivottable_essentials/Quick_Start
+    url: /zk_pivottable_essentials/quick_start
     children:
       - title: Overview
         url: /zk_pivottable_essentials/overview
@@ -553,51 +553,51 @@ zats_essentials:
         url: /zats_essentials/operation
         children:
           - title: ClickAgent
-            url: /zats_essentials/ClickAgent
+            url: /zats_essentials/clickagent
           - title: InputAgent
-            url: /zats_essentials/InputAgent
+            url: /zats_essentials/inputagent
           - title: SelectAgent
-            url: /zats_essentials/SelectAgent
+            url: /zats_essentials/selectagent
           - title: RenderAgent
-            url: /zats_essentials/RenderAgent
+            url: /zats_essentials/renderagent
           - title: MultipleSelectAgent
-            url: /zats_essentials/MultipleSelectAgent
+            url: /zats_essentials/multipleselectagent
           - title: OpenAgent
-            url: /zats_essentials/OpenAgent
+            url: /zats_essentials/openagent
           - title: CloseAgent
-            url: /zats_essentials/CloseAgent
+            url: /zats_essentials/closeagent
           - title: CheckAgent
-            url: /zats_essentials/CheckAgent
+            url: /zats_essentials/checkagent
           - title: FocusAgent
-            url: /zats_essentials/FocusAgent
+            url: /zats_essentials/focusagent
           - title: KeyStrokeAgent
-            url: /zats_essentials/KeyStrokeAgent
+            url: /zats_essentials/keystrokeagent
           - title: SelectByIndexAgent
-            url: /zats_essentials/SelectByIndexAgent
+            url: /zats_essentials/selectbyindexagent
           - title: DragAgent
-            url: /zats_essentials/DragAgent
+            url: /zats_essentials/dragagent
           - title: GroupAgent
-            url: /zats_essentials/GroupAgent
+            url: /zats_essentials/groupagent
           - title: HoverAgent
-            url: /zats_essentials/HoverAgent
+            url: /zats_essentials/hoveragent
           - title: MoveAgent
-            url: /zats_essentials/MoveAgent
+            url: /zats_essentials/moveagent
           - title: PagingAgent
-            url: /zats_essentials/PagingAgent
+            url: /zats_essentials/pagingagent
           - title: SizeAgent
-            url: /zats_essentials/SizeAgent
+            url: /zats_essentials/sizeagent
           - title: SortAgent
-            url: /zats_essentials/SortAgent
+            url: /zats_essentials/sortagent
           - title: BookmarkAgent
-            url: /zats_essentials/BookmarkAgent
+            url: /zats_essentials/bookmarkagent
           - title: PollingAgent
-            url: /zats_essentials/PollingAgent
+            url: /zats_essentials/pollingagent
           - title: UploadAgent
-            url: /zats_essentials/UploadAgent
+            url: /zats_essentials/uploadagent
           - title: Download
-            url: /zats_essentials/Download
+            url: /zats_essentials/download
           - title: Custom Operation
-            url: /zats_essentials/Custom_Operation
+            url: /zats_essentials/custom_operation
       - title: Advanced Usage
         url: /zats_essentials/advanced_usage
         children:
