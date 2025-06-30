@@ -29,7 +29,8 @@ function extractUrls(data) {
 async function checkUrl(url) {
     try {
         const fullUrl = `${BASE_URL}${url}`;
-        const response = await axios.get(fullUrl);
+        // Use HEAD instead of GET for faster checking
+        const response = await axios.head(fullUrl);
         return {
             url,
             status: response.status,
@@ -81,4 +82,4 @@ async function main() {
     }
 }
 
-main(); 
+main();
