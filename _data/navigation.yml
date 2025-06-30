@@ -2298,7 +2298,7 @@ zk_component_ref:
         url: /zk_component_ref/anchorlayout
         children:
           - title: Anchorchildren
-            url: /zk_component_ref/anchorlayout/anchorchildren
+            url: /zk_component_ref/anchorchildren
       - title: Borderlayout
         url: /zk_component_ref/borderlayout
         children:
@@ -2322,10 +2322,10 @@ zk_component_ref:
           - title: Columnchildren
             url: /zk_component_ref/columnchildren
       - title: GoldenLayout
-        url: /zk_component_ref/golden_layout
+        url: /zk_component_ref/goldenlayout
         children:
           - title: GoldenPanel
-            url: /zk_component_ref/golden_panel
+            url: /zk_component_ref/goldenpanel
       - title: Hbox
         url: /zk_component_ref/hbox
       - title: Hlayout
@@ -2362,7 +2362,7 @@ zk_component_ref:
         url: /zk_component_ref/tablelayout
         children:
           - title: TableChildren
-            url: /zk_component_ref/table_children
+            url: /zk_component_ref/tablechildren
       - title: Vbox
         url: /zk_component_ref/vbox
       - title: Vlayout
