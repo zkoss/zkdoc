@@ -18,7 +18,7 @@ layout: default
     </div>
     <div class="row my-4">
       {% include book.html image="images/core.svg" title="ZK Component Reference" link="/zk_component_ref/introduction" %}
-      {% include book.html image="images/core.svg" title="ZUML Reference" link="/zuml_ref/Languages" %}
+      {% include book.html image="images/core.svg" title="ZUML Reference" link="/zuml_ref/languages" %}
       {% include book.html image="images/core.svg" title="ZK Installation Guide" link="/zk_installation_guide/before_you_start" %}
       {% include book.html image="images/core.svg" title="ZK Configuration Reference" link="/zk_config_ref/web_xml" %}
     </div>

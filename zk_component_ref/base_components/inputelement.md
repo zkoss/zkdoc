@@ -154,7 +154,7 @@ Try it
 
 #### i18n Error Message
 
-To support multilingual applications, you can use [the `l` function](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Core_Methods/l) in ZK to display internationalized error messages. For example, you can set an error message for a textbox constraint as shown below:
+To support multilingual applications, you can use [the `l` function](ZUML_Reference/EL_Expressions/Core_Methods/l) in ZK to display internationalized error messages. For example, you can set an error message for a textbox constraint as shown below:
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
@@ -189,7 +189,7 @@ public class EvenNumberConstraint implements Constraint {
     }
 }
 ```
-To specify it to the constraint property, you have to instantiate it first by use of [the `new` function](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Core_Methods/new) as shown below.
+To specify it to the constraint property, you have to instantiate it first by use of [the `new` function](ZUML_Reference/EL_Expressions/Core_Methods/new) as shown below.
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>

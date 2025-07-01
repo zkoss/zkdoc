@@ -181,7 +181,7 @@ suitable for arranging child components in a matrix layout.
     components and you should also notice hierarchical relations between
     child components, e.g. *Rows* can only contain *Row*. Please refer
     to
-    [ZK Component Reference/Data](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/data)
+    [ZK Component Reference/Data]({{site.baseurl}}/zk_component_ref/data)
     for detail.
 -   Line 3: You can only put *Column* inside *Columns*.
 -   Line 8,9: Since we define two *Column*s, each *Row* can have two
@@ -202,7 +202,7 @@ aligned to the center.
 ```
 
 -   Line 2: The
-    [*Vbox*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/vbox), like
+    [*Vbox*]({{site.baseurl}}/zk_component_ref/layouts/vbox), like
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
 -   Line 3: You can use [ EL expressions](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions) in the tag

@@ -74,7 +74,7 @@ Some components render special ARIA attributes, please refer to [ZK Component Re
 # Specify ARIA Attributes
 
 You can specify arbitrary ARIA attribute as needed on a component with
-[namespace "client/attribute"](https://www.zkoss.org/wiki/ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+[namespace "client/attribute"](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
 like:
 
 ```xml

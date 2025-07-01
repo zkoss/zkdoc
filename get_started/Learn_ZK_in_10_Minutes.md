@@ -191,7 +191,7 @@ components API. Another way is data binding, please see [ Get ZK Up and Running 
 # Support Responsive Design
 
 ZK provides various features for you to apply responsive design, please
-read [ Responsive Design]({{site.baseurl}}/zk_dev_ref/ui_patterns/responsive_design).
+read [ Responsive Design]({{site.baseurl}}/zk_dev_ref/responsive_design/responsive_design).
 
 # Easy Backend Integration
 
@@ -269,7 +269,7 @@ public class RegistrationSpringComposer extends SelectorComposer<Component> {
 # Work with Spring-boot
 
 ZK provides a zkspringboot-starter addon to help you work with
-Springboot easily, please refer to [ Create and Run Your First ZK Application with Spring Boot]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot).
+Springboot easily, please refer to [ Create and Run Your First ZK Application with Spring Boot]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_spring_boot).
 
 # Source Code
 

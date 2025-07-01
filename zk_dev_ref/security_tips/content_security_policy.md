@@ -83,7 +83,7 @@ Here's an example of a relaxed policy used in a ZK application:
 ```
 
 - Using
-  \[<https://www.zkoss.org/wiki/ZUML_Reference/ZUML/Processing_Instructions/header>
+  \[<ZUML_Reference/ZUML/Processing_Instructions/header>
   <?header ?>
 
   \] to specify a response header.

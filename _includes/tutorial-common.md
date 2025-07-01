@@ -68,12 +68,12 @@ components, so developers can rapidly build their desired user interface
 by combining and mix-matching these components without having to create
 a page from scratch.
 
-In ZK, you can use [ZK User Interface Markup Language(ZUML)](/{{site.baseurl}}/zuml_ref ), an XML-formatted language, to
+In ZK, you can use [ZK User Interface Markup Language(ZUML)]({{site.baseurl}}/zuml_ref/zuml), an XML-formatted language, to
 describe UI. By ZK's convention, the files to describe the user
 interface with ZUML uses **.zul** as the name suffix. In zul files, one
 component is represented as an XML element (tag) and you can configure
 each component's style, behavior, and function by setting XML element's
-attributes. (check [ZK Component Reference](/{{site.baseurl}}/zk_component_ref) for details)
+attributes. (check [ZK Component Reference](/{{site.baseurl}}/zk_component_ref/introduction) for details)
 
 In this example application, first of all, we want to use a `Window`
 with the specified title and normal border as our application's frame.

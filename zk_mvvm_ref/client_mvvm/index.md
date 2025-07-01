@@ -282,7 +282,7 @@ It depends on the number of components and the type and amount of bindings you a
 
 
 ## How is client MVVM different from fragment?
-* [fragment](https://www.zkoss.org/wiki/ZK_component_reference/Containers/Fragment) integrates Vue framework.
+* [fragment](ZK_component_reference/Containers/Fragment) integrates Vue framework.
 
 Since Vue supports different data binding syntax from ZK MVVM, not all features can be integrated with ZK. The integration focuses on supporting basic and commonly shared data binding syntax.
 

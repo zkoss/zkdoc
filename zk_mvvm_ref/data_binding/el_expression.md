@@ -152,5 +152,5 @@ A static field or static method of a Java class can be referenced with the synta
 ```xml
 <label value="@load((Math.sqrt(16)))" />
 ```
-You need to import required pakcage/class by [import directive](https://www.zkoss.org/wiki/ZUML_Reference/ZUML/Processing_Instructions/import).
+You need to import required pakcage/class by [import directive](ZUML_Reference/ZUML/Processing_Instructions/import).
 Note that `java.lang.*` is imported by default. 
