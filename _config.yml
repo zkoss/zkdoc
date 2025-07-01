@@ -126,3 +126,8 @@ defaults:
 atom_feed:
   hide: true
 # disqus admin is hawkchen@potix.com
+
+exclude:
+  - tool/
+  - *.iml
+  - *.code-workspace
