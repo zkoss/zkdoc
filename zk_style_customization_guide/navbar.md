@@ -1,8 +1,8 @@
 # Component Reference
 
-Component Reference: [ Nav]({{site.baseurl}}/zk_component_ref/essential_components/nav), [ Navbar]({{site.baseurl}}/zk_component_ref/essential_components/nav/navbar),
-[ Navitem]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem),
-[ Navseparator]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
+Component Reference: [ Nav]({{site.baseurl}}/zk_component_ref/nav), [ Navbar]({{site.baseurl}}/zk_component_ref/nav/navbar),
+[ Navitem]({{site.baseurl}}/zk_component_ref/nav/navitem),
+[ Navseparator]({{site.baseurl}}/zk_component_ref/nav/navseparator)
 
 # DOM Structure
 

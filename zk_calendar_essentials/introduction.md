@@ -14,8 +14,7 @@ Go to see [Online Demo](https://www.zkoss.org/zkdemo/zk_calendar/zk_calendar)
 
 # Important Change
 
-- [New look and feel](ZK_Calendar_Essentials/Themes)
+- [New look and feel](ZK_Calendar_Essentials/themes)
 - [ Some event name and class name renaming]({{site.baseurl}}/zk_calendar_essentials/displaying_calendar_items)
-- Support java 8 new date API
-  ([`java.time.*`](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html))
+- Support java 8 new date API: [`java.time.*`](https://docs.oracle.com/javase/8/docs/api/java/time/package-summary.html)
 - Require Java 8 or above

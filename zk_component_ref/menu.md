@@ -81,7 +81,7 @@ The code to register an onClick event is shown below:
 
 # Supported Children
 
-`*`[` Menupopup`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup)
+`*`[` Menupopup`]({{site.baseurl}}/zk_component_ref/menu/menupopup)
 
 # Use Cases
 

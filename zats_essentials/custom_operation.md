@@ -4,7 +4,7 @@
 
 Currently, ZATS Mimic supports many operations of ZK components,
 however, there are still cases where operations are not yet covered. For
-example, you create a custom component which receives custom [AU requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
+example, you create a custom component which receives custom [AU requests]({{site.baseurl}}/zk_client_side_ref/communication/client-side_firing),
 or a new ZK component in which Mimic doesn't support yet. In such cases,
 existing operation agents are not able to help you to test it.
 Therefore, in ZATS Mimic1.1.0 we introduce a new agent called `AuAgent`
@@ -14,7 +14,7 @@ custom component must implement a particular interface:
 component's custom operations by constructing your custom event data
 with `AuData` and send it with `AuAgent.post()`.
 
-About creating your custom components, please refer to [ZK Component Development Essentials]({{site.baseurl}}/zk_component_dev_essentials).
+About creating your custom components, please refer to [ZK Component Development Essentials]({{site.baseurl}}/zk_component_dev_essentials/zk_component_overview).
 
 **Application with custom component**
 

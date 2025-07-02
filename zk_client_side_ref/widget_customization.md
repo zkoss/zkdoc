@@ -174,7 +174,7 @@ include it to take effect on widgets.
 If you just want to override widgets on some pages, you can use one of
 the following:
 
-- \[\[{{site.baseurl}}/zk_component_ref/essential_components/script\|
+- \[\[{{site.baseurl}}/zk_component_ref/script\|
   <script>
 
   component\]\]
@@ -206,7 +206,7 @@ to the browser's DOM tree. Whether it is meaningful, it is really up to
 the browser -- ZK does not handle or filter it at all.
 
 For example, you want to listen to the `onload` event, and then you can
-do as follows. Fore more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
+do as follows. Fore more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/iframe#onload).
 
 ```xml
 <iframe src="http://www.google.com"  height="300px"

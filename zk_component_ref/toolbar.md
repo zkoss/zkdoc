@@ -18,8 +18,8 @@ toolbar.
 The toolbar has two orientation: `horizontal`and `vertical.`It controls
 how the buttons are placed.
 
-See also : [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button),
-[ Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton)
+See also : [ Button]({{site.baseurl}}/zk_component_ref/button),
+[ Toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton)
 
 # Example
 

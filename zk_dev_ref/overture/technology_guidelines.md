@@ -293,7 +293,7 @@ to develop, maintain and reuse.
 
 ## When to use include
 
-[Include]({{site.baseurl}}/zk_component_ref/essential_components/include)
+[Include]({{site.baseurl}}/zk_component_ref/include)
 allows you to include a ZUML page, a static page, a JSP page or the
 result of a servlet. This is the most suitable for usage if you would
 like to:
@@ -303,7 +303,7 @@ like to:
     to encapsulate a ZUML page[^1][^2]
 
 The limitation of
-[Include]({{site.baseurl}}/zk_component_ref/essential_components/include)
+[Include]({{site.baseurl}}/zk_component_ref/include)
 is that you can not encapsulate its behavior in a Java class (like macro
 or composite components do).
 

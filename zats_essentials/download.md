@@ -5,7 +5,7 @@
 We usually implement file downloading through
 [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html) when some events are
 triggered (For more details, please refer to
-[ZK_Component_Reference/Essential_Components/Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)). Following is a simple implementation of downloading a file:
+[ZK_Component_Reference/Essential_Components/Filedownload]({{site.baseurl}}/zk_component_ref/filedownload)). Following is a simple implementation of downloading a file:
 
 **download.zul**
 

@@ -129,7 +129,7 @@ Default: "report"
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Supported_Events)
+- Inherited Supported Events: [ Iframe]({{site.baseurl}}/zk_component_ref/iframe#Supported_Events)
 
 # Supported Children
 

@@ -174,7 +174,7 @@ the user has selected a navitem in the navbar.</p></td>
 
 # Supported Children
 
-`*`[` Nav`]({{site.baseurl}}/zk_component_ref/essential_components/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/essential_components/nav/navseparator)
+`*`[` Nav`]({{site.baseurl}}/zk_component_ref/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/nav/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/nav/navseparator)
 
 # Use Cases
 

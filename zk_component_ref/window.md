@@ -102,7 +102,7 @@ time. You might have multiple overlapped windows and each for different
 set of information. If you want to show the information that will appear
 only temporarily (dismissed as soon as a user clicks somewhere else),
 you could use the popup mode as described in the next section, or the
-[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
+[Popup]({{site.baseurl}}/zk_component_ref/popup)
 component.
 
 ## Popup
@@ -139,7 +139,7 @@ span component acts as an anchor point and the window is posited based
 on it.
 
 In additions to popup windows, you could use
-[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
+[Popup]({{site.baseurl}}/zk_component_ref/popup)
 for displaying a popup. The popup component has more control how to
 position it (by the use of
 [org.zkoss.zul.Popup#open(org.zkoss.zk.ui.Component, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component, java.lang.String))).
@@ -511,8 +511,8 @@ The XUL component set supports the following common dialogs to simplify
 some common tasks.
 
 - [Messagebox]({{site.baseurl}}/zk_component_ref/supporting_classes/messagebox)
-- [Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload)
-- [Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
+- [Fileupload]({{site.baseurl}}/zk_component_ref/fileupload)
+- [Filedownload]({{site.baseurl}}/zk_component_ref/filedownload)
 
 # Supported Events
 

@@ -19,7 +19,7 @@ You can download the complete source code under the [ Start from Example Project
 
 The next step after building the UI is to make it respond to user
 interaction. The pattern we introduce here is to **control ZK components
-directly by their API**. We call this [**Model-View-Controller** (**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/mvc). This
+directly by their API**. We call this [**Model-View-Controller** (**MVC**) design pattern]({{site.baseurl}}/zk_dev_ref/mvc/mvc). This
 pattern divides an application into 3 parts.
 
 The **Model** consists of application data and business rules.
@@ -74,7 +74,7 @@ component. Associating a controller with a component is just specifying
 a fully-qualified class name for the target component's `apply`
 attribute. The following code shows how to associate a controller with a `<window>`.
 
-**Extracted from [searchMvc.zul](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/webapp/searchMvc.zul)**
+**Extracted from [searchMvc.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvc.zul)**
 
 ```xml
     <window title="Search" width="600px" border="normal"
@@ -144,7 +144,7 @@ Steps to retrieve components:
 2.  Name the variable as component's ID.
       
     Matching ID is the default rule to match a component for `@Wire`,
-    and please refer to [Wire Components in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components)
+    and please refer to [Wire Components in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/wire_components)
     to know other ways.
 3.  Annotate the variable with `@Wire`.
 
@@ -195,7 +195,7 @@ public class SearchController extends SelectorComposer<Component> {
 - Line 8: Notice that `setModel()` only accepts a `ListModel` object, so
   we can use `org.zkoss.zul.ListModelList` to wrap search result list.
   There are other `ListModel` objects for different collection types,
-  please refer to [ List Model in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model).
+  please refer to [ List Model in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/list_model).
   To change data item displayed in a `Listbox`, call
   `carListbox.setModel()`. The model of a component is the data the
   component holds and we can change the model to change the data
@@ -208,7 +208,7 @@ corresponding event listener, but we would still find that content of
 *listbox* doesn't show the search result correctly. That is because we
 haven't specified how to render data model on the *listbox*. Now, we
 will use a special tag,
-[<template>]({{site.baseurl}}/zk_dev_ref/mvc/view/template), to
+[<template>]({{site.baseurl}}/zk_dev_ref/mvc/template), to
 control the rendering of each car. ZK will render each object in the
 data model according to components inside <template/>.
 
@@ -220,7 +220,7 @@ Steps to use <template>:
 3.  Use implicit variable, `each`, to assign domain object's properties
     to component's attributes.
 
-Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template)
+Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template)
 for more details.
 
 **Extracted from
@@ -251,7 +251,7 @@ for more details.
 - Line 9: The "each" is a variable that references to a domain object in
   the model list which is `Car` in our example application. We can use
   it to access domain object's property with EL, e.g. `${each.price}`.
-- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#EL_3.0_Support):
+- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#EL_3.0_Support):
   `(+=)`
 
 ## Implementing "View Car Details"
@@ -265,7 +265,7 @@ First, declare a method to listen to `onSelect` event of `Listbox` with
 Second, use `@Wire` to get UI components like previewImage, modelLabel,
 priceLabel, and descriptionLabel and assign value to them with setter.
 
-[SearchController.java](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/java/tutorial/SearchController.java)
+[SearchController.java](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/java/tutorial/SearchController.java)
 
 ```java
 

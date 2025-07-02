@@ -231,12 +231,12 @@ See [web.xml in github](https://github.com/zkoss/zkbooks/blob/master/csp-filter/
 ### resulting page response
 
 As a result, the page response should contain both a CSP header
-including our nonce, as well as a nonce on all script elements generated
+including our nonce, as well as a `nonce` attribute on all script elements generated
 by the ZK page.
 
-![]({{site.baseurl}}/zk_dev_ref/images/cspheader.png)
+![]({{site.baseurl}}/zk_dev_ref/images/Cspheader.png)
 
-![]({{site.baseurl}}/zk_dev_ref/images/cspnonce.png)
+![]({{site.baseurl}}/zk_dev_ref/images/Cspnonce.png)
 
 ## Notes
 

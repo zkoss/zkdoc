@@ -5,7 +5,7 @@ components depends on.
 
 [Chart]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/chart)
 and
-[Captcha]({{site.baseurl}}/zk_component_ref/essential_components/captcha)
+[Captcha]({{site.baseurl}}/zk_component_ref/captcha)
 depends on Java Swing. To make Swing works correctly under Linux, you
 have to install `openjdk-6-jre`[^1]
 

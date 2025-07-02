@@ -60,7 +60,7 @@ The visible group is called *selected*, which can be retrieved by use of
 The Tabbox supports the inclusion of other controls within its tab bar,
 thus allowing more freedom and layout options when creating layouts
 which include a
-[toolbar]({{site.baseurl}}/zk_component_ref/essential_components/toolbar).
+[toolbar]({{site.baseurl}}/zk_component_ref/toolbar).
 The screenshot below demonstrates an example Tabbox which includes extra
 controls in the tab bar acting like a menu system.
 
@@ -226,6 +226,6 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/essential_components/toolbar)
+`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/toolbar)
 
 

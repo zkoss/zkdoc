@@ -107,7 +107,7 @@ signature. ![](/zk_component_ref/images/Paper-form.jpg)
 After clicking "Save" button, the component will upload the signature to
 a server. You can listen `onSave` to get the uploaded signature and show
 it with
-[Image]({{site.baseurl}}/zk_component_ref/essential_components/image):
+[Image]({{site.baseurl}}/zk_component_ref/image):
 
 ```xml
     <signature onSave="image.setContent(event.getMedia())"/>

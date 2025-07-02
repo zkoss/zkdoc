@@ -69,7 +69,7 @@ An overlapped window can be dragged around and its position can be set using `se
 <window title="My Overlapped" width="300px" mode="overlapped"></window>
 ```
 
-An overlapped window is typically used to display the information that should co-exist with the current operation and should appear for a long time. You might have multiple overlapped windows and each for different set of information. If you want to show the information that will appear only temporarily (dismissed as soon as a user clicks somewhere else), you could use the popup mode as described in the next section, or the [Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) component.
+An overlapped window is typically used to display the information that should co-exist with the current operation and should appear for a long time. You might have multiple overlapped windows and each for different set of information. If you want to show the information that will appear only temporarily (dismissed as soon as a user clicks somewhere else), you could use the popup mode as described in the next section, or the [Popup]({{site.baseurl}}/zk_component_ref/popup) component.
 
 ## Popup
 A popup window is similar to overlapped windows, except it is automatically closed when user clicks on any component other than the popup window itself or any of its descendants. Of course, you could dismiss it manually by making it invisible or detaching it.
@@ -94,7 +94,7 @@ Try it
 
 where we specify `position="parent"`, and make it as a child of a span component. The span component acts as an anchor point and the window is posited based on it.
 
-In additions to popup windows, you could use [Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) for displaying a popup. The popup component has more control how to position it (by the use of [Popup.open(Component, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component,_java.lang.String))).
+In additions to popup windows, you could use [Popup]({{site.baseurl}}/zk_component_ref/popup) for displaying a popup. The popup component has more control how to position it (by the use of [Popup.open(Component, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component,_java.lang.String))).
 
 ## Modal and Highlighted
 Modal and highlighted windows provide a similar visual effect of blocking background content and enforcing focus on the window. Closing a modal window can be done by making it invisible or detaching it.

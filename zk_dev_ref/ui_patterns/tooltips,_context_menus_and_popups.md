@@ -12,9 +12,9 @@ the mouse over the target component), the component representing the
 customized look is shown.
 
 The component representing the customized look must be a
-[Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup)
+[Popup]({{site.baseurl}}/zk_component_ref/popup)
 component or one of derives, such as
-[Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup),
+[Menupopup]({{site.baseurl}}/zk_component_ref/menu/menupopup),
 while the target component (which causes the customized look to show up)
 can be any kind of component.
 
@@ -180,7 +180,7 @@ format:
 </zk>
 ```
 
-Check [Popup Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
+Check [Popup Component]({{site.baseurl}}/zk_component_ref/popup#A_Way_to_Specify_the_Position_of_the_Popup_Component)
 for detailed description.
 
 The position is now more customizable and can be done by specifying a
@@ -215,7 +215,7 @@ For more details, refer to the [`data-scrollable` client attribute documentation
 
 ## Toggle Popup
 
-The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup Component]({{site.baseurl}}/zk_component_ref/essential_components/popup#Toggle_Popup)
+The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup Component]({{site.baseurl}}/zk_component_ref/popup#Toggle_Popup)
 for detailed description.
 
 ## Override the Reference Component

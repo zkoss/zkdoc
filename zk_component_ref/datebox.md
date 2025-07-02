@@ -233,7 +233,7 @@ Reference:
 
 By default, the popup position is set to `after_start`, for other
 possible popup positions please refer to
-[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/popup#Position).
+[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#Position).
 
 ## The First Day of the Week
 

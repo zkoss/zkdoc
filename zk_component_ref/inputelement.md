@@ -149,7 +149,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#c
 <code>after_end</code><br />
 <code>...</code></p></td>
 <td><p>Specifies the position of the error box. Please refer to <a
-href="{{site.baseurl}}/zk_component_ref/essential_components/popup")
+href="{{site.baseurl}}/zk_component_ref/popup")
 
 ```xml
 <textbox placeholder="Please type some text" />

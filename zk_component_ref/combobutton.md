@@ -118,7 +118,7 @@ button is disabled when it is clicked.
 <combobutton label="popup" autodrop="true" />
 ```
 
-Moreover, it support other [ properties inherited from Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Properties)
+Moreover, it support other [ properties inherited from Button]({{site.baseurl}}/zk_component_ref/button#Properties)
 in stead of upload.
 
 # Supported Events
@@ -157,7 +157,7 @@ directly.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
+- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Molds
 
@@ -170,7 +170,7 @@ The **tbbtn** mold is renamed to **toolbar** mold
 
 # Supported Children
 
-[ Popup]({{site.baseurl}}/zk_component_ref/essential_components/popup) [ Menupopup]({{site.baseurl}}/zk_component_ref/essential_components/menu/menupopup)
+[ Popup]({{site.baseurl}}/zk_component_ref/popup) [ Menupopup]({{site.baseurl}}/zk_component_ref/menu/menupopup)
 
 # Use Cases
 

@@ -22,7 +22,7 @@ you can choose to use a button components such as
 [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html),
 [org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html),
 [org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html) and so on. (See [ZK Developer's Reference/UI Patterns/File Upload and Download]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download)
-and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/essential_components/fileupload)) Then set
+and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk_component_ref/fileupload)) Then set
 `true` to `upload` attribute of these components; users can then click
 and select a file to upload through a browser dialog, as illustrated
 below:
@@ -58,7 +58,7 @@ public void test() throws Exception {
 
 Since **ZK 6.0.0**, components now also support mutiple uploads at once
 if they have `multiple=true` flag and users using web browsers
-supporting HTML5.(See [ZK Component Reference/Essential Components/Button#Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)) `UploadAgent` also supports multiple files
+supporting HTML5.(See [ZK Component Reference/Essential Components/Button#Upload]({{site.baseurl}}/zk_component_ref/button#Upload)) `UploadAgent` also supports multiple files
 uploading at once. Following is a typical example of uploading multiple
 files:
 
@@ -87,7 +87,7 @@ public void test() throws Exception {
 
 Another way to implement upload feature is to use the static method
 [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) as an event
-handler.(See [ZK Component Reference/Essential Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/essential_components/fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
+handler.(See [ZK Component Reference/Essential Components/Fileupload#Invoke the Static Method:get]({{site.baseurl}}/zk_component_ref/fileupload#Invoke_the_Static_Method:_get)) This static method will open up an uploading dialog and
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
 

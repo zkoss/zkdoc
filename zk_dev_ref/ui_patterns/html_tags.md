@@ -83,10 +83,10 @@ role="doc-backlink">↩︎</a></li>
 </aside>
 
 In addition, you could use
-[iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe)
+[iframe]({{site.baseurl}}/zk_component_ref/iframe)
 to embed a complete HTML document which might be from a different
 website with different technology. Or, use
-[include]({{site.baseurl}}/zk_component_ref/essential_components/include)
+[include]({{site.baseurl}}/zk_component_ref/include)
 to include an HTML fragment.
 
 > ------------------------------------------------------------------------

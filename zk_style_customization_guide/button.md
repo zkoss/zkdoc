@@ -1,6 +1,6 @@
 # Component Reference
 
-Component Reference: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button)
+Component Reference: [ Button]({{site.baseurl}}/zk_component_ref/button)
 
 # DOM Structure
 

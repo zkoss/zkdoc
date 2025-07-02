@@ -98,7 +98,7 @@ The positions of a coachmark. Below are the available values:
 | <b>right</b>  | end_before   | end_center    | end_after   |
 
 See
-[Popup#Position]({{site.baseurl}}/zk_component_ref/essential_components/popup#Position)
+[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#Position)
 
 ## Next
 

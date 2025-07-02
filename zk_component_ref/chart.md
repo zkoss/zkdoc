@@ -1080,7 +1080,7 @@ related API in [JFreeChart JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.
 
 # Supported Events
 
-- Inherited Supported Events: [ Imagemap]({{site.baseurl}}/zk_component_ref/essential_components/imagemap#Supported_Events)
+- Inherited Supported Events: [ Imagemap]({{site.baseurl}}/zk_component_ref/imagemap#Supported_Events)
 
 # Supported Children
 

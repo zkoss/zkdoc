@@ -18,7 +18,7 @@ to embed the code directly. For example,
 <?script type="text/javascript" content="jq.IE6_ALPHAFIX='.png';"?>
 ```
 
-Alternatively, you could use [the script component]({{site.baseurl}}/zk_component_ref/essential_components/script)
+Alternatively, you could use [the script component]({{site.baseurl}}/zk_component_ref/script)
 to embed the code.
 
 # Put in a Separate File and Reference it in the ZUML page

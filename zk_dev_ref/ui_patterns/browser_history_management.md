@@ -169,7 +169,7 @@ The `onURIChange` event is sent as an instance of
 
 Notice that the `onURIChange` event is sent only if the iframe contains
 another ZK page. If it contains a non-ZK page, you have to handle it
-manually. Please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#Integrate_with_Other_Technologies)
+manually. Please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/iframe#Integrate_with_Other_Technologies)
 for more information.
 
 [^1]: Each bookmark is an arbitrary string added to the browser's

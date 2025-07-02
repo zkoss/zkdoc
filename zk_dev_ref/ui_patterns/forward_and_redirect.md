@@ -2,10 +2,10 @@
 
 A Web application jumping from one URL to another is usually caused by
 the user's click on a hyperlink, such as clicking on a
-[button]({{site.baseurl}}/zk_component_ref/essential_components/button),
-[toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton),
-[menuitem]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuitem)
-and [a]({{site.baseurl}}/zk_component_ref/essential_components/a) that
+[button]({{site.baseurl}}/zk_component_ref/button),
+[toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton),
+[menuitem]({{site.baseurl}}/zk_component_ref/menu/menuitem)
+and [a]({{site.baseurl}}/zk_component_ref/a) that
 is associated with the `href` attribute.
 
 ```xml

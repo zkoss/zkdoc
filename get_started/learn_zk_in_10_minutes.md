@@ -68,7 +68,7 @@ the above registration form
 - Line 1: One tag represents one component. Some components can have
   child components. In this example, a *window* contains a *grid*.
 - Line 2: CSS flexible width, please see [Hflex and Vflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
-- Line 4: ZK contains [Font Awesome icons]({{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome) by default, you can
+- Line 4: ZK contains [Font Awesome icons]({{site.baseurl}}/zk_dev_ref/integration/font_awesome) by default, you can
   specify icon CSS class at `iconSclass`.
 - Line 18: You may give "id" attribute to a component, so you can
   control them in a Java controller.
@@ -94,7 +94,7 @@ To control the UI, firstly, you need to implement a controller class
 which inherits ZK's
 [**SelectorComposer**](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 for a ZUL. Then, you can retrieve the UI component's Java object by
-annotating [ **@Wire** on the controller's member variables]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
+annotating [ **@Wire** on the controller's member variables]({{site.baseurl}}/zk_dev_ref/mvc/wire_components).
 After this has been done, you can then control and manipulate UI by
 accessing those annotated member variables.
 
@@ -139,7 +139,7 @@ beginning, and it is only enabled (clickable) when a user checks the
 ![](images/Simplezk-check-submit.gif)
 
 As ZK is an event-driven framework, a user action is therefore handled
-by an event listener. ZK provides an annotation [ **@Listen** to register an event listener by selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners).
+by an event listener. ZK provides an annotation [ **@Listen** to register an event listener by selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners).
 To achieve the above feature, you can annotate a method to listen to an
 "onCheck" event of "Accept Term of Use" checkbox. Whenever a user
 checks/unchecks the checkbox to trigger the "onCheck" event, ZK invokes

@@ -71,7 +71,7 @@ menu on the Mac OS.
 
 # Supported Children
 
-`*`[` Fisheye`]({{site.baseurl}}/zk_component_ref/essential_components/fisheye)
+`*`[` Fisheye`]({{site.baseurl}}/zk_component_ref/fisheye)
 
 # Use Cases
 

@@ -126,7 +126,7 @@ your own data-attribute handler and contribute this project).
 | 5.0.3   | July 2010 | The client-attribute namespace was introduced.                                    |
 | 8.0.0   | May 2015  | [Support client data attributes handler](http://tracker.zkoss.org/browse/ZK-2730) |
 
-[^1]: For more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/essential_components/iframe#onload).
+[^1]: For more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/iframe#onload).
 
 [^2]: Required
 

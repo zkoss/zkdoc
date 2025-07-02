@@ -13,8 +13,8 @@
 # Employment/Purpose
 
 This component synchronizes the scrolling position on a page or within
-ZK containers (Div, Window, etc.) with [ <a>]({{site.baseurl}}/zk_component_ref/essential_components/a) and
-[<button>]({{site.baseurl}}/zk_component_ref/essential_components/button).
+ZK containers (Div, Window, etc.) with [ <a>]({{site.baseurl}}/zk_component_ref/a) and
+[<button>]({{site.baseurl}}/zk_component_ref/button).
 It allows you to both navigate to desired ZK components on a page and to
 highlight the current navigation link based on the current scroll
 position.

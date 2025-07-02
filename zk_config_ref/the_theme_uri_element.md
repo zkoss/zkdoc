@@ -32,6 +32,6 @@ more information.
     `metainfo/zk` directory), so you can specify style sheets there if
     you have more than one style sheets.
 3.  You can specify extra CSS files for individual ZUML pages by the use
-    of the [`style` component]({{site.baseurl}}/zk_component_ref/essential_components/style).
+    of the [`style` component]({{site.baseurl}}/zk_component_ref/style).
 
 

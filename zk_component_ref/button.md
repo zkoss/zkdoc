@@ -42,7 +42,7 @@ identifiable by a URL.
 
 # File Upload
 
-A button or a [ Toolbarbutton]({{site.baseurl}}/zk_component_ref/essential_components/toolbarbutton#File_Upload)
+A button or a [ Toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton#File_Upload)
 can be used to upload files. All you need to do is:
 
 1.  Specify the `upload` attribute with `true`
@@ -128,7 +128,7 @@ by adding the following to `/WEB-INF/zk.xml`
 
 # File Download and browser processed links
 
-Similar to [ file download link problem]({{site.baseurl}}/zk_component_ref/essential_components/a#File_download_link_problem),
+Similar to [ file download link problem]({{site.baseurl}}/zk_component_ref/a#File_download_link_problem),
 if you specify `href` to use a button for downloading, or if you are
 using a browser-processed link such as `mailto:`, `tel:`, or other
 similar user-processed instruction which would trigger a page unloading

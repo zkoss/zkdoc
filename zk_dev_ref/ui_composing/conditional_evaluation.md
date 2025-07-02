@@ -5,7 +5,7 @@ The component creation can be conditional. By specifying the `if`,
 associated component. It is also the most straightforward way.
 
 For example, suppose that we want to use
-[label]({{site.baseurl}}/zk_component_ref/essential_components/label),
+[label]({{site.baseurl}}/zk_component_ref/label),
 if readonly, and
 [textbox]({{site.baseurl}}/zk_component_ref/input/textbox), otherwise:
 

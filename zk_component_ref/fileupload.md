@@ -35,7 +35,7 @@ can use it directly as follows.
 ...
 ```
 
-Please refer to [Button: Upload]({{site.baseurl}}/zk_component_ref/essential_components/button#Upload)
+Please refer to [Button: Upload]({{site.baseurl}}/zk_component_ref/button#Upload)
 for details.
 
 # Invoke the Static Method: get
@@ -270,7 +270,7 @@ Upload your hot shot:
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/essential_components/button#Supported_Events)
+- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Children
 

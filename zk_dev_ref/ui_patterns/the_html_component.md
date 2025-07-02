@@ -1,7 +1,7 @@
 # Overview
 
 One of the simplest ways is to use a XUL component called
-[html]({{site.baseurl}}/zk_component_ref/essential_components/html) to
+[html]({{site.baseurl}}/zk_component_ref/html) to
 embed whatever HTML tags you want. The html component works like an HTML
 SPAN tag enclosing the HTML fragment. For example,
 

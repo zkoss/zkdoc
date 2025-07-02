@@ -34,7 +34,7 @@ As shown above, the attribute value could span multiple lines.
 
 # Alternatives
 
-Alternatively, you could use [the style component]({{site.baseurl}}/zk_component_ref/essential_components/style)
+Alternatively, you could use [the style component]({{site.baseurl}}/zk_component_ref/style)
 to embed CSS code. Using the style component if you'd like to add or
 remove the style dynamically (since it is a component), or the page will
 be included by others.

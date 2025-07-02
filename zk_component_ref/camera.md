@@ -170,7 +170,7 @@ recorded time exceeds the maximum length.
 You can easily integrate the Camera component with
 [Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video)
 and
-[Image]({{site.baseurl}}/zk_component_ref/essential_components/image).
+[Image]({{site.baseurl}}/zk_component_ref/image).
 
 For example:
 

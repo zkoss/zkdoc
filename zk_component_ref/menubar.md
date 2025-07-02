@@ -80,7 +80,7 @@ scrollable!
 
 # Supported Children
 
-`*`[` Menu`]({{site.baseurl}}/zk_component_ref/essential_components/menu)`, `[` Menuitem`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuitem)`, `[` Menuseparator`]({{site.baseurl}}/zk_component_ref/essential_components/menu/menuseparator)
+`*`[` Menu`]({{site.baseurl}}/zk_component_ref/menu)`, `[` Menuitem`]({{site.baseurl}}/zk_component_ref/menu/menuitem)`, `[` Menuseparator`]({{site.baseurl}}/zk_component_ref/menu/menuseparator)
 
 # Use Cases
 

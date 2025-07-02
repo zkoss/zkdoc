@@ -76,7 +76,7 @@ public class UploadComposer extends SelectorComposer {
 
 # File Download
 
-[Filedownload]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
+[Filedownload]({{site.baseurl}}/zk_component_ref/filedownload)
 provides a set of utilities to prompt a user to download a file from the
 server to a local folder. For example,
 
@@ -87,14 +87,14 @@ server to a local folder. For example,
 ![](/zk_dev_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 The file could be a static resource, an input stream, a file, a URL and
-others. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/essential_components/filedownload)
+others. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/filedownload)
 and [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html) for more information.
 
 ## File Download Link
 
 Clicking a file download link terminates client engine to work, please
 refer to
-[{{site.baseurl}}/zk_component_ref/essential_components/a#File_Download_Link]({{site.baseurl}}/zk_component_ref/essential_components/a#File_Download_Link)
+[{{site.baseurl}}/zk_component_ref/a#File_Download_Link]({{site.baseurl}}/zk_component_ref/a#File_Download_Link)
 for correct usages.
 
 [^1]: If you enabled the use of event threads, you could use

@@ -16,7 +16,7 @@
 users can simply drag and drop the file(s) they want to upload into
 `Dropupload` and the uploading process will start automatically. The
 behaviour and operation of this `Dropupload` component is similar to
-ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload)
+ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/button#File_Upload)
 but with better user experience and performance.
 
 # Example
@@ -167,7 +167,7 @@ file.
 
 # Customized File Viewer
 
-Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/essential_components/button#File_Upload),
+Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/button#File_Upload),
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
@@ -279,7 +279,7 @@ $init: function (uplder, file) {
 # Customize Upload Size Exceeding Message
 
 Please refer to
-[{{site.baseurl}}/zk_component_ref/essential_components/button#Customize_Upload_Size_Exceeding_Message]({{site.baseurl}}/zk_component_ref/essential_components/button#Customize_Upload_Size_Exceeding_Message)
+[{{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message]({{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message)
 
 # Event For Completed Uploads
 

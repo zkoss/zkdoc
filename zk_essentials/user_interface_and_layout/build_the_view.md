@@ -21,7 +21,7 @@ A very simple, classic zul example is like:
 ```
 The tag `<label>` will create a `Label` component at the server and display "hello world" in one line in your browser. It's one line because it ignores special characters like a new line (`&#xA;`) by default.
 
-But we can specify [`pre`]({{site.baseurl}}/zk_component_ref/essential_components/label#Properties) attribute to preserve new line character, so that it will display "hello world" in 2 lines.
+But we can specify [`pre`]({{site.baseurl}}/zk_component_ref/label#Properties) attribute to preserve new line character, so that it will display "hello world" in 2 lines.
 
 ```xml
 <zk>
@@ -135,9 +135,9 @@ Let's see how to construct these elements with existing ZK components:
     which is a layout component can arrange its child components in a
     row horizontally. Its `align` attribute controls the vertical
     alignment.
--   Line 3: The [`A`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/essential_components/a)
+-   Line 3: The [`A`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/a)
     creates a hyperlink the same as an HTML `<a>` element.
--   Line 4: The [*image*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/essential_components/image)
+-   Line 4: The [*image*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/image)
     is similar to HTML `<img>` which can display an image.
 -   Line 9: The `pack` controls the horizontal alignment. We specify
     `end` on both `pack` and `align` to make the text "Anonymous"
