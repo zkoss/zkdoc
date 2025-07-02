@@ -14,8 +14,42 @@ const WEBSITE_BASE_URL = 'https://docs.zkoss.org';
 const NAVIGATION_FILE = '_data/navigation.yml';
 const MARKDOWN_DIR = process.cwd(); // Use current working directory
 
-// Function to find all markdown files recursively
+// Get book paths from README.md
+function getBookPaths() {
+    const readmePath = path.join(process.cwd(), 'README.md');
+    const readmeContent = fs.readFileSync(readmePath, 'utf8');
+    
+    // Extract paths from Books Overview section
+    const pathRegex = /Path: (\/[^\/\n]+\/)/g;
+    const paths = [];
+    let match;
+    
+    while ((match = pathRegex.exec(readmeContent)) !== null) {
+        paths.push(match[1].replace(/\/$/, '')); // Remove trailing slash
+    }
+    
+    return paths;
+}
+
+// Function to find markdown files in specific book paths only
 function findMarkdownFiles(dir) {
+    const bookPaths = getBookPaths();
+    let results = [];
+    
+    // Only search in book directories
+    for (const bookPath of bookPaths) {
+        const fullPath = path.join(dir, bookPath.substring(1)); // Remove leading slash
+        
+        if (fs.existsSync(fullPath) && fs.statSync(fullPath).isDirectory()) {
+            results = results.concat(findMarkdownFilesRecursive(fullPath));
+        }
+    }
+    
+    return results;
+}
+
+// Helper function to recursively find markdown files in a directory
+function findMarkdownFilesRecursive(dir) {
     let results = [];
     const files = fs.readdirSync(dir);
     
@@ -25,7 +59,7 @@ function findMarkdownFiles(dir) {
         
         if (stat.isDirectory()) {
             // Recursively search directories
-            results = results.concat(findMarkdownFiles(filePath));
+            results = results.concat(findMarkdownFilesRecursive(filePath));
         } else if (file.endsWith('.md')) {
             // Add markdown files to results
             results.push(filePath);
