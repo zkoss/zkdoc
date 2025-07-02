@@ -129,5 +129,5 @@ atom_feed:
 
 exclude:
   - tool/
-  - *.iml
-  - *.code-workspace
+  - "*.iml"
+  - "*.code-workspace"
