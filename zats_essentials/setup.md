@@ -4,7 +4,7 @@
 
 ## Maven Project
 
-Please [ setup zk Maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) first.
+Please [ setup zk Maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) first.
 
 {% include version-badge.html version=9.6.0 %}
 
