@@ -16,7 +16,7 @@ If no configuration specified, ZK Calendar renders in the default theme.
 # Follow ZK Theme by Default
 
 By default, Calendars will automatically switch to a theme according to
-what you specified in the property [ `org.zkoss.theme.preferred`](ZK_Developer's_Reference/theming_and_styling/Switching_Themes).
+what you specified in the property [ `org.zkoss.theme.preferred`]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes).
 
 Here is the built-in rule:
 

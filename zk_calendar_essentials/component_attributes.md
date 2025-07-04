@@ -22,7 +22,7 @@ run with the default values.
 
 ## Only Toolbar Allowed
 
-Only a [ toolbar](ZK_component_reference/essential_components/Toolbar)
+Only a [ toolbar]({{site.baseurl}}/zk_component_ref/toolbar)
 is allowed as its child:
 
 ```xml
