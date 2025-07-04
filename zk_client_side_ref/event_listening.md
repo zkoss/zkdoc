@@ -13,8 +13,8 @@ easier, and then improve the responsiveness of the critical part, if
 any, with the client-side listener.
 
 Here we describe how to handle events at the client. For client-side UI
-manipulation, please refer to the [UI Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing)
-and [Widget Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization)
+manipulation, please refer to the [UI Composing]({{site.baseurl}}/zk_client_side_ref/ui_composing)
+and [Widget Customization]({{site.baseurl}}/zk_client_side_ref/widget_customization)
 sections.
 
 # Declare a Client-side Listener in ZUML
@@ -54,7 +54,7 @@ If you want to escape it, place a backslash between \$ and {, such as
 `w:onFocus="zk.log('$\{wnd.title}')"`.
 
 For more information about manipulating widgets at the client, please
-refer to the [UI Composing]({{site.baseurl}}/zk_client_side_ref/general_control/ui_composing)
+refer to the [UI Composing]({{site.baseurl}}/zk_client_side_ref/ui_composing)
 section.
 
 ## Client-side Event Listener First then Server-side

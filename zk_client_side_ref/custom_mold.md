@@ -39,7 +39,7 @@ to improve the readability (IE not supported).
 
 With a mold js, you still need to register this custom mold on the
 component. So you need to create a [ lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
-and [ register the custom mold]({{site.baseurl}}/zk_client_side_ref/language_definition/component#Custom_Mold).
+and [ register the custom mold]({{site.baseurl}}/zk_client_side_ref/component#Custom_Mold).
 
 # Apply Custom Mold
 

@@ -124,7 +124,7 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-
 <td><p>x</p></td>
 <td><p>onBind</p></td>
 <td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
+href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
 Listening</a> ZK fires it in afterMount, starting from the inner-most
 child then its parent, and so on.</p></td>
 </tr>
@@ -132,7 +132,7 @@ child then its parent, and so on.</p></td>
 <td><p>x</p></td>
 <td><p>onSize</p></td>
 <td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
+href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
 Listening</a> ZK fires it when you resize a widget and propagates this
 event to its children.</p></td>
 </tr>
@@ -140,7 +140,7 @@ event to its children.</p></td>
 <td><p>x</p></td>
 <td><p>onAfterSize</p></td>
 <td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
+href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
 Listening</a> ZK fires it when each time ZK completes
 rendering/re-rendering a widget and propagates this event to its
 children.</p></td>
@@ -149,7 +149,7 @@ children.</p></td>
 <td><p>x</p></td>
 <td><p>onUnbind</p></td>
 <td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/general_control/event_listening">event
+href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
 Listening</a> ZK fires it when ZK removes a widget from a page.</p></td>
 </tr>
 </tbody>
@@ -158,7 +158,7 @@ Listening</a> ZK fires it when ZK removes a widget from a page.</p></td>
 Events that can be handled by overriding a method
 
 Please read
-[{{site.baseurl}}/zk_client_side_ref/general_control/event_listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+[event listening]({{site.baseurl}}/zk_client_side_ref/event_listening)
 for listening to widget events.
 
 ## Listen by Overriding a Method
@@ -192,7 +192,7 @@ doClick_: function (evt) {
 ```
 
 **Note** that this approach is suggested for better performance since no
-real DOM-level event registration is required (as described in [the next section]({{site.baseurl}}/zk_client_side_ref/notifications/dom_events)).
+real DOM-level event registration is required (as described in [the next section]({{site.baseurl}}/zk_client_side_ref/dom_events)).
 
 ## Event Propgation
 
@@ -314,8 +314,8 @@ evt.stop({au: true});
 >
 > <references/>
 
-[^1]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
+[^1]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)
     section.
 
-[^2]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/communication/au_requests)
+[^2]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)
     section.

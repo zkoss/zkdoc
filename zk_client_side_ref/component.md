@@ -80,7 +80,7 @@ initial properties and so on.
 
 ## depend required
 
-if your component extends a component, most likely you need to specify [ <depends>]({{site.baseurl}}/zk_client_side_ref/language_definition/depends)
+if your component extends a component, most likely you need to specify [ <depends>]({{site.baseurl}}/zk_client_side_ref/depends)
 to ensure parsing order.
 
 # component-class
@@ -134,7 +134,7 @@ Then you can specify the mold on the component like
 You can specify:
 
 - a path relative to a widget js
-- [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+- [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/overture/overture)
 
 # property
 
@@ -178,7 +178,7 @@ Another example , to turn off combobox's autocomplete.
 It specifies the name of the property to assign the text enclosed by the
 XML element. If omitted (default), the text will be interpreted as a
 label and a label component defined in
-[label-template]({{site.baseurl}}/zk_client_side_ref/language_definition/label-template)
+[label-template]({{site.baseurl}}/zk_client_side_ref/label_template)
 will be used.
 
 For example, if you specify

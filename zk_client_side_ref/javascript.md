@@ -36,7 +36,7 @@ It specifies the URI of the JavaScript file to load. The URI can accept
 [ Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
 `~./` (such as "~./foo/whatever.js").
 
-If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/language_definition/depends),
+If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/depends),
 ZK generates its javaScript into a output page's <code>
 
 <head>

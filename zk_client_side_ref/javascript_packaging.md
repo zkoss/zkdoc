@@ -4,13 +4,13 @@ If you'd like to customize the client-side behavior, it will end up with
 some JavaScript code. The code can be packaged in several ways depending
 on the size and re-usability.
 
-It is recommended to take a look at the [Object-Oriented Programming in JavaScript]({{site.baseurl}}/zk_client_side_ref/introduction/object_oriented_programming_in_javascript)
+It is recommended to take a look at the [Object-Oriented Programming in JavaScript]({{site.baseurl}}/zk_client_side_ref/object_oriented_programming_in_javascript)
 section, if you are not familiar how ZK extends JavaScript to support
 the concept of packages and classes.
 
 # Embed the JavaScript Code Directly
 
-Use [the script directive](ZUML_Reference/ZUML/Processing_Instructions/script)
+Use [the script directive]({{site.baseurl}}/zuml_ref/languages)
 to embed the code directly. For example,
 
 ```xml
@@ -24,7 +24,7 @@ to embed the code.
 # Put in a Separate File and Reference it in the ZUML page
 
 If there are a lot of JavaScript code, it is better to package them in a
-separate file, and then use [the script directive](ZUML_Reference/ZUML/Processing_Instructions/script)
+separate file, and then use [the script directive]({{site.baseurl}}/zuml_ref/script)
 to reference the file in every ZUML page that requires it.
 
 ```xml
@@ -35,7 +35,7 @@ to reference the file in every ZUML page that requires it.
 # Put in a Separate File and Reference it in Language Addon
 
 If the JavaScript code will be used in every ZUML page, it is better to
-package them in a separate file, and then make it part of the [the language definition](ZUML_Reference/ZUML/Languages). To make
+package them in a separate file, and then make it part of the [the language definition]({{site.baseurl}}/zuml_ref/languages). To make
 it part of the language definition, you could specify the following
 content in [the language addon]({{site.baseurl}}/zk_client_side_ref/language_definition), say,
 `WEB-INF/lang-addon.xml`:

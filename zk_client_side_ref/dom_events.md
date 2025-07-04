@@ -10,7 +10,7 @@ them into the widget events, it is suggested to listen the widget
 events, if possible, for better performance (by overriding the
 corresponding methods, such as
 [zk.Widget#doClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doClick_(zk.Event))).
-For more information, please refer to [the previous section]({{site.baseurl}}/zk_client_side_ref/notifications/widget_events).
+For more information, please refer to [the previous section]({{site.baseurl}}/zk_client_side_ref/widget_events).
 
 # How to Listen and Unlisten
 

@@ -21,7 +21,7 @@ By default, the JavaScript files (ZK packages) will be compressed and
 cached, which is hard to step in and debug. You can turn off the
 compression and the cache of JavaScript files by specifying the
 following in
-[`WEB-INF/zk.xml`]({{site.baseurl}}/zk_config_ref/zk.xml):
+[`WEB-INF/zk.xml`]({{site.baseurl}}/zk_config_ref/zk_xml):
 
 ```xml
 <client-config>

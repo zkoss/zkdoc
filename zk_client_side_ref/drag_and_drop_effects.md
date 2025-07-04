@@ -51,7 +51,7 @@ zk.override(zul.inp.Combobox.prototype, supercomobox, {
 Custom widget class approach: you can extend a default ZK widget class
 into your own extended widget class. This class can be assigned from zul
 using the `xmlns:w="client"` namespace, and the
-`w:use="custom.MyCustomClass"` [attribute on the target component]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization#Specify_Your_Own_Widget_Class),
+`w:use="custom.MyCustomClass"` [attribute on the target component]({{site.baseurl}}/zk_client_side_ref/widget_customization#Specify_Your_Own_Widget_Class),
 or using
 [component.setWidgetClass(...)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#setWidgetClass-java.lang.String-)
 from Java.

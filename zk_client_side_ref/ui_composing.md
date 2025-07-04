@@ -26,10 +26,10 @@ appropriate.
 
 Here we describe how to compose UI in JavaScript at the client-side.
 
-- For client-side event handling, please refer to the [Client-side Event Handling]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+- For client-side event handling, please refer to the [Client-side Event Handling]({{site.baseurl}}/zk_client_side_ref/event_listening)
   section.
 - For more information about the relationship among components, widgets,
-  and DOM, please refer to the [Components and Widgets]({{site.baseurl}}/zk_client_side_ref/component_development/components_and_widgets).
+  and DOM, please refer to the [Components and Widgets]({{site.baseurl}}/zk_client_side_ref/components_and_widgets).
 - For developing a component, please refer to the [Component Development]({{site.baseurl}}/zk_client_side_ref/component_development)
   section.
 
@@ -77,7 +77,7 @@ event as follows.
 </div>
 ```
 
-As shown, we have to use the [client namespace](ZUML_Reference/ZUML/Namespaces/Client) to indicate
+As shown, we have to use the [client namespace]({{site.baseurl}}/zuml_ref/client) to indicate
 the onFocus attribute which is for the client-side event listener. It is
 done by applying [XML namespace](http://www.w3schools.com/xml/xml_namespaces.asp):
 
@@ -85,7 +85,7 @@ done by applying [XML namespace](http://www.w3schools.com/xml/xml_namespaces.asp
 - Prefix `w:` before onFocus
 
 For more information about the client-side event listener, please refer
-to the [Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)
+to the [Event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening)
 section.
 
 The other typical situation to fuse the client-side code is to override
@@ -245,7 +245,7 @@ attached yet). For example,
     w:onClick="new zul.wgt.Label({value: 'Clicked'}).replaceHTML('#anchor')"/>
 ```
 
-where we use the [native namespace](ZUML_Reference/ZUML/Namespaces/Native) to create a
+where we use the [native namespace]({{site.baseurl}}/zuml_ref/native) to create a
 DOM element and then replace it with the label widget.
 
 > ------------------------------------------------------------------------

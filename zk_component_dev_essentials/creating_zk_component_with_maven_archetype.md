@@ -154,5 +154,5 @@ Y:
     
   ![](images/ZKComDevEss_Maven_CreateComponent_setp6.png)
 
-[^1]: To add a ZK archetype catalog, click **Configure** then refer to [ Create and Run Your First ZK Application with Eclipse and Maven]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)
+[^1]: To add a ZK archetype catalog, click **Configure** then refer to [ Create and Run Your First ZK Application with Eclipse and Maven]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven)
     for the complete instruction.

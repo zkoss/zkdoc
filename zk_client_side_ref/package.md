@@ -1,6 +1,9 @@
 **Syntax:**
 
-`<package name="`a_name`" [language="`a_lang`"] [depends="`pkg0`, `pkg1`..."] [cacheable="true|false"]>`
+```xml
+<package name="a_name" [language="a_lang"] [depends="pkg0, pkg1..."] [cacheable="true|false"]>
+</package>
+```
 
 The root element of a WPD document. It specifies the name of the
 package, what packages it depends and other information.
@@ -28,12 +31,12 @@ The package name, such as `zul.grid`. It has to be unique.
 
 `[Optional]`
 
-The [language](ZUML_Reference/ZUML/Languages) name, such as
-[xul/html](ZUML_Reference/ZUML/Languages/ZUL).
+The [language]({{site.baseurl}}/zuml_ref/languages) name, such as
+[xul/html]({{site.baseurl}}/zuml_ref/zul).
 
 If omitted, it means it does not belong to a particular language. It is
 better to specify one if the WPD document defines a
-[widget]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor/widget).
+[widget]({{site.baseurl}}/zk_client_side_ref/widget).
 
 # depends
 
@@ -50,7 +53,7 @@ loading this package.
 It specifies whether the client is allowed to cache the output of this
 WPD file. By default, it is cacheable since the performance is better.
 However, you have to turn it off, if you use a
-[function]({{site.baseurl}}/zk_client_side_ref/widget_package_descriptor/function)
+[function]({{site.baseurl}}/zk_client_side_ref/function)
 that will generate the output depending on a varying condition (such as
 Locale and time zone).
 
