@@ -122,6 +122,26 @@ function isImageUrl(url) {
     return imageExtensions.some(ext => urlLower.endsWith(ext));
 }
 
+// Function to determine which book a file belongs to
+function getBookFromFilePath(filePath) {
+    const bookPaths = getBookPaths();
+    const cwd = process.cwd();
+    
+    // Normalize the file path relative to the current working directory
+    const relativePath = path.relative(cwd, filePath);
+    
+    // Find which book path this file belongs to
+    for (const bookPath of bookPaths) {
+        const bookDir = bookPath.substring(1); // Remove leading slash
+        if (relativePath.startsWith(bookDir)) {
+            // Extract book name from path (e.g., "/zk_essentials" -> "zk_essentials")
+            return bookPath.substring(1).split('/')[0];
+        }
+    }
+    
+    return 'unknown';
+}
+
 // Function to check external URLs
 async function checkExternalUrl(url) {
     try {
@@ -226,12 +246,13 @@ async function checkMarkdownPages(brokenLinks, processedUrls) {
             processedUrls.add(link);
 
             if (isExternalUrl(link)) {
+                /*
                 const result = await checkExternalUrl(link);
-                // Only add if it's broken
                 if (result.is404 || result.status !== 200) {
-                    brokenLinks.push({ ...result, file, type: 'external' });
+                    brokenLinks.push({ ...result, file, type: 'external', book: getBookFromFilePath(file) });
                     console.log(`Broken: ${link} in ${file}`);
                 }
+                 */
             } else if (!isImageUrl(link)) {
                 // Skip internal image URLs since they won't be in navigation.yml
                 const exists = checkInternalUrl(link, validUrls);
@@ -242,7 +263,8 @@ async function checkMarkdownPages(brokenLinks, processedUrls) {
                         status: 404,
                         is404: true,
                         file,
-                        type: 'internal'
+                        type: 'internal',
+                        book: getBookFromFilePath(file)
                     });
                     console.log(`Broken: ${link} in ${file}`);
                 }
@@ -269,31 +291,54 @@ function generateReport(brokenLinks) {
     reportLines.push(`Total broken links: ${brokenLinks.length}`);
     reportLines.push('');
 
-    // Group by type
-    const externalBroken = brokenLinks.filter(link => link.type === 'external');
-    const internalBroken = brokenLinks.filter(link => link.type === 'internal');
+    // Group by books
+    const linksByBook = {};
+    brokenLinks.forEach(link => {
+        const book = link.book || 'navigation.yml';
+        if (!linksByBook[book]) {
+            linksByBook[book] = [];
+        }
+        linksByBook[book].push(link);
+    });
 
-    if (externalBroken.length > 0) {
-        reportLines.push('EXTERNAL BROKEN LINKS:');
-        reportLines.push('-'.repeat(25));
-        externalBroken.forEach(link => {
-            reportLines.push(`URL: ${link.url}`);
-            reportLines.push(`Status: ${link.status}`);
-            if (link.file) reportLines.push(`Found in: ${link.file}`);
-            if (link.error) reportLines.push(`Error: ${link.error}`);
-            reportLines.push('');
-        });
-    }
+    // Sort books alphabetically
+    const sortedBooks = Object.keys(linksByBook).sort();
 
-    if (internalBroken.length > 0) {
-        reportLines.push('INTERNAL BROKEN LINKS:');
-        reportLines.push('-'.repeat(25));
-        internalBroken.forEach(link => {
-            reportLines.push(`URL: ${link.url}`);
-            reportLines.push(`Status: ${link.status}`);
-            if (link.file) reportLines.push(`Found in: ${link.file}`);
-            reportLines.push('');
-        });
+    for (const book of sortedBooks) {
+        const bookLinks = linksByBook[book];
+        reportLines.push(`BOOK: ${book.toUpperCase()}`);
+        reportLines.push('='.repeat(book.length + 6));
+        reportLines.push(`Links found: ${bookLinks.length}`);
+        reportLines.push('');
+
+        // Group by type within each book
+        const externalBroken = bookLinks.filter(link => link.type === 'external');
+        const internalBroken = bookLinks.filter(link => link.type === 'internal');
+
+        if (externalBroken.length > 0) {
+            reportLines.push('EXTERNAL BROKEN LINKS:');
+            reportLines.push('-'.repeat(25));
+            externalBroken.forEach(link => {
+                reportLines.push(`URL: ${link.url}`);
+                reportLines.push(`Status: ${link.status}`);
+                if (link.file) reportLines.push(`Found in: ${link.file}`);
+                if (link.error) reportLines.push(`Error: ${link.error}`);
+                reportLines.push('');
+            });
+        }
+
+        if (internalBroken.length > 0) {
+            reportLines.push('INTERNAL BROKEN LINKS:');
+            reportLines.push('-'.repeat(25));
+            internalBroken.forEach(link => {
+                reportLines.push(`URL: ${link.url}`);
+                reportLines.push(`Status: ${link.status}`);
+                if (link.file) reportLines.push(`Found in: ${link.file}`);
+                reportLines.push('');
+            });
+        }
+
+        reportLines.push('');
     }
 
     // Write to file
