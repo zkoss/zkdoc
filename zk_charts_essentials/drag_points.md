@@ -29,7 +29,7 @@ performed:
 - drag: during drag, when the user moves the element
 - drop: once the user releases the drag, and the element is dropped
 
-In this client-side handler, we can use the [zAu.send function]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing)
+In this client-side handler, we can use the [zAu.send function]({{site.baseurl}}/zk_client_side_ref/client_side_firing)
 to forward this event to the server.
 
 Note: avoid sending the drag handler if not necessary, since this

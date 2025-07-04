@@ -48,7 +48,7 @@ try the evaluation version.
 
 ### Premium users only
 
-- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
+- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
 
   
 If you are our customer, please apply for a premium maven account to use
