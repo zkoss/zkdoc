@@ -1,6 +1,6 @@
 main:
   - title: ZK Getting Started
-    url: /get_started/Learn_ZK_in_10_Minutes
+    url: /get_started/learn_zk_in_10_minutes
   - title: ZK Essentials
     url: /zk_essentials/intro/overview
   - title: ZK Developer's Reference
@@ -45,11 +45,11 @@ main:
     url: http://www.zkoss.org/javadoc/olderapi.jsp
 get_started:
   - title: Learn ZK in 10 Minutes
-    url: /get_started/Learn_ZK_in_10_Minutes
+    url: /get_started/learn_zk_in_10_minutes
   - title: Get ZK Up and Running with MVC
-    url: /get_started/Get_ZK_Up_and_Running_with_MVC
+    url: /get_started/get_zk_up_and_running_with_mvc
   - title: Get ZK Up and Running with MVVM
-    url: /get_started/Get_ZK_Up_and_Running_with_MVVM
+    url: /get_started/get_zk_up_and_running_with_mvvm
 zk_essentials:
   - title: Introduction
     children:

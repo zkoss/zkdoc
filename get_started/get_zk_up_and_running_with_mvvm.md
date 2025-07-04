@@ -254,7 +254,7 @@ specified in `@NotifyChange`.
 
 The way to display a collection of data with data binding is very
 similar to the way in the MVC approach. we will use a special tag,
-[`<template>`]({site.baseurl}}/zk_dev_ref/mvc/template), to control the rendering of each item. The only
+[`<template>`]({{site.baseurl}}/zk_dev_ref/mvc/template), to control the rendering of each item. The only
 difference is we should use data binding expression instead of EL.
 
 Steps to use `<template>`:

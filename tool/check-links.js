@@ -177,15 +177,12 @@ function checkInternalUrl(url, validUrls) {
     
     // Handle root-relative URLs (starting with /)
     const normalizedUrl = urlWithoutAnchor.startsWith('/') 
-        ? urlWithoutAnchor.substring(1) 
-        : urlWithoutAnchor;
+        ? urlWithoutAnchor 
+        : '/' + urlWithoutAnchor;
     
     // Check if the normalized URL exists in valid URLs
     return validUrls.some(validUrl => {
-        const normalizedValidUrl = validUrl.startsWith('/') 
-            ? validUrl.substring(1) 
-            : validUrl;
-        return normalizedUrl === normalizedValidUrl;
+        return normalizedUrl === validUrl;
     });
 }
 
