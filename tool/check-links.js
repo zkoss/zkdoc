@@ -115,6 +115,11 @@ function isExternalUrl(url) {
     return url.startsWith('http://') || url.startsWith('https://');
 }
 
+// Function to check if a URL should be ignored
+function shouldIgnoreUrl(url) {
+    return url.startsWith('ftp://') || url.startsWith('file://');
+}
+
 // Function to check if a URL is an image
 function isImageUrl(url) {
     const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.ico'];
@@ -173,15 +178,17 @@ function extractLinksFromMarkdown(content) {
     
     while ((match = markdownLinkRegex.exec(content)) !== null) {
         const url = match[2].split(' ')[0]; // Remove title if present
-        if (!url.startsWith('#')) { // Ignore anchor links
+        if (!url.startsWith('#') && !shouldIgnoreUrl(url)) { // Ignore anchor links and ignored URLs
             links.add(url);
         }
     }
     
-    // Match plain URLs or URLs in angle brackets
-    const plainUrlRegex = /(?:<|^)(https?:\/\/[^\s>]+)(?:>|$)/g;
+    // Match plain URLs or URLs in angle brackets (including ftp and file protocols)
+    const plainUrlRegex = /(?:<|^)((?:https?|ftp|file):\/\/[^\s>]+)(?:>|$)/g;
     while ((match = plainUrlRegex.exec(content)) !== null) {
-        links.add(match[1]);
+        if (!shouldIgnoreUrl(match[1])) {
+            links.add(match[1]);
+        }
     }
     
     return Array.from(links);
