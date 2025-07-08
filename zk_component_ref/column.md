@@ -99,7 +99,7 @@ cells under a column.</p></td>
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Version History
 

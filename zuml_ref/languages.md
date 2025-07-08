@@ -260,7 +260,7 @@ section.</p></td>
 | 5.0.4   | August, 2010  | The shortcut was introduced to make it easy to specify a standard namespace, such as native, client and zk. |
 | 5.0.5   | October, 2010 | The shortcut was introduced to make it easy to specify a component set, such as zul and zhtml.              |
 
-[^1]: For more information please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials)
+[^1]: For more information please refer to [ZK Component Development Essentials](/zk_component_dev_essentials/zk_component_overview)
 
 [^2]: For more information please refer to the [Native Namespace](ZUML_Reference/ZUML/Namespaces/Native) section
 

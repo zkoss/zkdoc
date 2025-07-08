@@ -63,7 +63,7 @@ If you prefer another encoding, please specify it in a library property
 called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.charset).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org.zkoss.util.label.web.charset).
 
 # Access Internationalization Labels In ZUML
 
@@ -258,7 +258,7 @@ configuration file is also specified at the run time and could be
 located in the file system (rather than the WAR file). It can be done by
 specifying the path of the configuration file in a library property
 called
-[org.zkoss.zk.config.path]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.config.path).
+[org.zkoss.zk.config.path]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.config.path).
 
 For 5.0.6 and older, you could use the approach described in the
 following section to load multiple properties files.
@@ -424,7 +424,7 @@ ${c:label('another.key')}
     use of multiple lines and EL expressions.
 
 [^4]: Notice the directory and filename are configurable. For more
-    information, please refer to [ZK Configuration Reference: org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.label.web.location)
+    information, please refer to [ZK Configuration Reference: org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/org.zkoss.util.label.web.location)
 
 [^5]: For more information about the URI of a file, please refer to
     [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).

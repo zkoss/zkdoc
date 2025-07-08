@@ -203,9 +203,9 @@ following locations:
 Searching in zscript and xel variables can be enabled with library
 properties:
 
-[enable zscript variable wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.zscript)
+[enable zscript variable wiring]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.composer.autowire.zscript)
 
-[enable xel variable wiring]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.composer.autowire.xel)
+[enable xel variable wiring]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.composer.autowire.xel)
 
 # Wire CDI-managed Beans
 

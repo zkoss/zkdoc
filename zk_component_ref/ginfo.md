@@ -15,7 +15,7 @@ in pure text or HTML.
 
 # Example
 
-[ Gmaps]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/gmaps#Example)
+[ Gmaps]({{site.baseurl}}/zk_component_ref/gmaps#Example)
 
 # Supported Events
 

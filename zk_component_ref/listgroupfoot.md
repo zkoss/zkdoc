@@ -89,7 +89,7 @@ GroupFooter serves as a summary listitem of listgroup.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Listitem]({{site.baseurl}}/zk_component_ref/data/listbox/listitem#Supported_Events)
+- Inherited Supported Events: [ Listitem]({{site.baseurl}}/zk_component_ref/listbox/listitem#Supported_Events)
 
 # Supported Children
 

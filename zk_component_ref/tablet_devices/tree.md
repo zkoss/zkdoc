@@ -3,7 +3,7 @@
 # Tree
 
 - Component Reference:
-  [Tree]({{site.baseurl}}/zk_component_ref/data/tree)
+  [Tree]({{site.baseurl}}/zk_component_ref/tree)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

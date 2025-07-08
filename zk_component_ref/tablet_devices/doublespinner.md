@@ -3,7 +3,7 @@
 # Doublespinner
 
 - Component Reference:
-  [Doublespinner]({{site.baseurl}}/zk_component_ref/input/doublespinner)
+  [Doublespinner]({{site.baseurl}}/zk_component_ref/doublespinner)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement

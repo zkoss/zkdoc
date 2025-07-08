@@ -8,7 +8,7 @@
 
 # Employment/Purpose
 
-This interface defines the methods that components like [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and [ Grid]({{site.baseurl}}/zk_component_ref/data/grid) use to get the
+This interface defines the methods that components like [ Listbox]({{site.baseurl}}/zk_component_ref/listbox) and [ Grid]({{site.baseurl}}/zk_component_ref/grid) use to get the
 content of items.
 
 # Example

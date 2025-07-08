@@ -103,10 +103,10 @@ be displayed.
 
 # Supported Events
 
-- Inherited Supported Events: [ Rangeslider]({{site.baseurl}}/zk_component_ref/input/rangeslider#Supported_Events)
+- Inherited Supported Events: [ Rangeslider]({{site.baseurl}}/zk_component_ref/rangeslider#Supported_Events)
 
 # Supported Children
 
-`*`[` Sliderbuttons`]({{site.baseurl}}/zk_component_ref/input/sliderbuttons)
+`*`[` Sliderbuttons`]({{site.baseurl}}/zk_component_ref/sliderbuttons)
 
 

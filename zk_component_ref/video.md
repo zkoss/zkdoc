@@ -172,7 +172,7 @@ space (right image).
 
 # Display Subtitles
 
-To display subtitles or captions on a video, please see [ Track]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track).
+To display subtitles or captions on a video, please see [ Track]({{site.baseurl}}/zk_component_ref/track).
 
 # StateChangeEvent
 
@@ -236,7 +236,7 @@ when invoking play(), stop() or pause().</p></td>
 
 # Supported Children
 
-`* `[`Track`]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/track)
+`* `[`Track`]({{site.baseurl}}/zk_component_ref/track)
 
 # Version History
 

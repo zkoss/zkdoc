@@ -3,7 +3,7 @@ components depends on.
 
 # Chart and Captcha
 
-[Chart]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/chart)
+[Chart]({{site.baseurl}}/zk_component_ref/chart)
 and
 [Captcha]({{site.baseurl}}/zk_component_ref/captcha)
 depends on Java Swing. To make Swing works correctly under Linux, you
@@ -20,7 +20,7 @@ sudo /etc/init.d/tomcat6 restart
 
 # Jaspserreport
 
-[Jasperreprot]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/jasperreport)
+[Jasperreprot]({{site.baseurl}}/zk_component_ref/jasperreport)
 is based on [the JasperReports project](http://jasperforge.org/projects/jasperreports). To make it run
 correctly under Linux, you have to make sure all fonts that you use are
 installed.

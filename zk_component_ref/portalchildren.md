@@ -12,7 +12,7 @@
 
 # Employment/Purpose
 
-The column of [ Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
+The column of [ Portallayout]({{site.baseurl}}/zk_component_ref/portallayout)
 
 Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
 

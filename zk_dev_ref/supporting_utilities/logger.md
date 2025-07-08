@@ -201,7 +201,7 @@ Use SLF4J API for logging instead.
 
 {% include DeprecatedSince.md version=7.0.0 %} To let ZK load the logging
 configuration file, you have to specify in a library property called
-[org.zkoss.util.logging.config.file]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.logging.config.file).
+[org.zkoss.util.logging.config.file]({{site.baseurl}}/zk_config_ref/org.zkoss.util.logging.config.file).
 For example,
 
 ```xml

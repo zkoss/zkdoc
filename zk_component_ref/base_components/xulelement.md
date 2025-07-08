@@ -4,7 +4,7 @@
 - **JavaScript API:** [zul.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.Widget.html)
 
 ## Employment/Purpose
-The `XulElement` class serves as the fundamental class for XUL elements in ZK. It extends the [`HtmlBasedComponent`](HtmlBasedComponent.md) class and provides essential functionality for XUL elements.
+The `XulElement` class serves as the fundamental class for XUL elements in ZK. It extends the [`HtmlBasedComponent`](htmlbasedcomponent.md) class and provides essential functionality for XUL elements.
 
 ## Properties
 

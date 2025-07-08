@@ -59,7 +59,7 @@ children.
 
 # Supported Children
 
-`*`[` Orgitem`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgitem)
+`*`[` Orgitem`]({{site.baseurl}}/zk_component_ref/organigram/orgitem)
 
 # Version History
 

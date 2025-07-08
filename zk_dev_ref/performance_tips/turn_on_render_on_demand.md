@@ -161,7 +161,7 @@ and not paging (\<mold="paging"\>).
 
 # Tree
 
-To turn off ROD for a tree, you need to specify [ org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.tree.initrodsize)
+To turn off ROD for a tree, you need to specify [ org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.tree.initrodsize)
 with -1:
 
 ```xml

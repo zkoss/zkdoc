@@ -74,7 +74,7 @@ true. The example ZUL below shows a panel which can be resized.
 
 ## Draggable
 
-When used with [ Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
+When used with [ Portallayout]({{site.baseurl}}/zk_component_ref/portallayout),
 the draggable property
 ([org.zkoss.zk.ui.HtmlBasedComponent#setDraggable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setDraggable(java.lang.String)))
 can be used to control whether the panel is draggable under the portal

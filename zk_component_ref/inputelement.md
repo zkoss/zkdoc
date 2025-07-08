@@ -11,15 +11,15 @@
 
 InputElement is a super class for components which handle user key
 input, such as
-[`textbox`]({{site.baseurl}}/zk_component_ref/input/textbox)`,`
-[`intbox`]({{site.baseurl}}/zk_component_ref/input/intbox)`,`
-[`decimalbox`]({{site.baseurl}}/zk_component_ref/input/decimalbox)`,`
-[`doublebox`]({{site.baseurl}}/zk_component_ref/input/doublebox),
-[`datebox`]({{site.baseurl}}/zk_component_ref/input/datebox),
-[`timebox`]({{site.baseurl}}/zk_component_ref/input/timebox),
-[`spinner`]({{site.baseurl}}/zk_component_ref/input/spinner),
-[`combobox`]({{site.baseurl}}/zk_component_ref/input/combobox), and
-[`bandbox`]({{site.baseurl}}/zk_component_ref/input/bandbox).
+[`textbox`]({{site.baseurl}}/zk_component_ref/textbox)`,`
+[`intbox`]({{site.baseurl}}/zk_component_ref/intbox)`,`
+[`decimalbox`]({{site.baseurl}}/zk_component_ref/decimalbox)`,`
+[`doublebox`]({{site.baseurl}}/zk_component_ref/doublebox),
+[`datebox`]({{site.baseurl}}/zk_component_ref/datebox),
+[`timebox`]({{site.baseurl}}/zk_component_ref/timebox),
+[`spinner`]({{site.baseurl}}/zk_component_ref/spinner),
+[`combobox`]({{site.baseurl}}/zk_component_ref/combobox), and
+[`bandbox`]({{site.baseurl}}/zk_component_ref/bandbox).
 
 Some features are implemented in this class, such as constraint,
 disabled, maxlength, name, readonly, and so on.

@@ -9,8 +9,8 @@
 
 # Employment/Purpose
 
-Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/data/grid/footer)) for a grid
-( [ Grid]({{site.baseurl}}/zk_component_ref/data/grid)).
+Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/footer)) for a grid
+( [ Grid]({{site.baseurl}}/zk_component_ref/grid)).
 
 # Example
 
@@ -70,11 +70,11 @@ Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/data/grid
 
 # Supported Children
 
-`*`[` Footer`]({{site.baseurl}}/zk_component_ref/data/grid/footer)
+`*`[` Footer`]({{site.baseurl}}/zk_component_ref/footer)
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Version History
 

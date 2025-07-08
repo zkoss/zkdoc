@@ -88,7 +88,7 @@ click image to view original size.
 
 ## Not to Import Google Font
 
-Please refer to [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.theme.atlantic.usegooglefont.disabled)
+Please refer to [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.theme.atlantic.useGoogleFont.disabled]({{site.baseurl}}/zk_config_ref/org.zkoss.theme.atlantic.usegooglefont.disabled)
 
 # ZK Theme Pack
 

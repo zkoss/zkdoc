@@ -56,7 +56,7 @@ Clients.evalJavaScript("zk.log('Hi.');");
 
 {% include version-badge.html version=9.6.0 %}To handle javascript errors triggered
 by evalJavascript,
-[org.zkoss.zk.ui.ScriptErrorListener.class]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.ui.scripterrorlistener.class)
+[org.zkoss.zk.ui.ScriptErrorListener.class]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.scripterrorlistener.class)
 is provided.
 
 ## focus
@@ -236,7 +236,7 @@ Here are the available positions:
 ## Animation Speed
 
 To specify the duration of opening and closing animation,
-[org.zkoss.zkmax.ui.util.Toast.animationSpeed]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.ui.util.toast.animationspeed)
+[org.zkoss.zkmax.ui.util.Toast.animationSpeed]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.ui.util.toast.animationspeed)
 is provided.
 
 ```xml
@@ -285,7 +285,7 @@ loadingbarCtrl.update(true); // set loadingbar indeterminate true
 ## Animation Speed
 
 To specify the Loadingbar animation speed,
-[org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.ui.util.loadingbar.animationspeed)
+[org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.ui.util.loadingbar.animationspeed)
 is provided.
 
 ```xml

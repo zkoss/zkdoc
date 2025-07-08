@@ -4,7 +4,7 @@ There are two ways to implement a component. One is to implement a
 component in a Java class, extending from other component or one of the
 skeletal implementations with an optional JavaScript class. It is
 flexible and, technically, is also able to implement any functionality
-you want. For more information please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials).
+you want. For more information please refer to [ZK Component Development Essentials](/zk_component_dev_essentials/zk_component_overview).
 
 On the other hand, we could implement a new component by using the
 others and composing them in a ZUML page. In other words, we could

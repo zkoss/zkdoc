@@ -13,7 +13,7 @@ component
 
 OverPlotEvent will be sent with name as "onOverPlotEvent".
 
-The components which are supported this event are: [ Plotinfo ]({{site.baseurl}}/zk_component_ref/diagrams_and_reports/timeplot/plotinfo).
+The components which are supported this event are: [ Plotinfo ]({{site.baseurl}}/zk_component_ref/timeplot/plotinfo).
 
 # Example
 

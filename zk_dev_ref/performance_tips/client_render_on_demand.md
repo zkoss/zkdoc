@@ -74,7 +74,7 @@ to make the orgitem closed initially if proper.
 
 If you want to disable Client ROD for the whole application, you can
 specify a library property called
-[`org.zkoss.zul.client.rod`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
+[`org.zkoss.zul.client.rod`]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.client.rod)
 with false. For example, specify the following in zk.xml:
 
 ```xml

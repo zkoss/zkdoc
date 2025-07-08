@@ -9,14 +9,14 @@
 
 # Employment/Purpose
 
-(Suggest to use [ Splitlayout]({{site.baseurl}}/zk_component_ref/layouts/splitlayout))
+(Suggest to use [ Splitlayout]({{site.baseurl}}/zk_component_ref/splitlayout))
 
 When the splitter is dragged, the sibling components of the splitter are
 resized. If `getCollapse()` is true, a grippy is placed inside the
 splitter, and one sibling component of the splitter is collapsed when
 the grippy is clicked.
 
-This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_ref/layouts/box), [ Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox), or [ Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox).
+This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_ref/box), [ Vbox]({{site.baseurl}}/zk_component_ref/vbox), or [ Hbox]({{site.baseurl}}/zk_component_ref/hbox).
 
 # Example
 

@@ -14,8 +14,8 @@ layouts, please refer to [ZK Component Reference: Layouts]({{site.baseurl}}/zk_c
 
 ## Hlayout and Vlayout
 
-[Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
-[Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) are simple
+[Hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
+[Vlayout]({{site.baseurl}}/zk_component_ref/vlayout) are simple
 and light-weighted layout components that arrange their children to be
 displayed horizontally and vertically respectively. Also, they are
 easily customizable as they are made up of HTML DIVs.
@@ -106,20 +106,20 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Hbox and Vbox
 
-Similar to [Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout)
-and [Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout),
-[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) arrange their
+Similar to [Hlayout]({{site.baseurl}}/zk_component_ref/hlayout)
+and [Vlayout]({{site.baseurl}}/zk_component_ref/vlayout),
+[Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/vbox) arrange their
 children to be displayed horizontally and vertically respectively.
-[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) provide more
+[Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/vbox) provide more
 functionalities such as splitter, align and pack. However, their
 **performance is slower**, so it is suggested to use
-[Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
-[Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) if you'd
+[Hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
+[Vlayout]({{site.baseurl}}/zk_component_ref/vlayout) if you'd
 like to use them a lot in a UI, unless you need the features that only
-[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) support.
+[Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/vbox) support.
 
 <table>
 <tbody>
@@ -233,8 +233,8 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#c
 </table>
 
 For more detailed information, please refer to
-[Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox).
+[Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[Vbox]({{site.baseurl}}/zk_component_ref/vbox).
 
 - Users are also allowed to use "cell" to control each cell's alignment.
 
@@ -285,7 +285,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 
 ## Borderlayout
 
-[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout)
 divides its child components into to five areas: North, South, East,
 West and Center. The heights of North and South are first decided, the
 remaining space is then given to Center as its height. Note that East
@@ -482,12 +482,12 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Columnlayout
 
-[Columnlayout]({{site.baseurl}}/zk_component_ref/layouts/columnlayout)
+[Columnlayout]({{site.baseurl}}/zk_component_ref/columnlayout)
 places its child components into multiple columns while each column
 allows any number of child components placed vertically with different
 heights (but with the same widths). Unlike
-[portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout),
-[Columnlayout]({{site.baseurl}}/zk_component_ref/layouts/columnlayout)
+[portallayout]({{site.baseurl}}/zk_component_ref/portallayout),
+[Columnlayout]({{site.baseurl}}/zk_component_ref/columnlayout)
 does *not allow* end users the ability to move child components to
 different locations at will (although of course, developers are allowed
 to use the ZK application to re-arrange the order of children
@@ -519,7 +519,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Portallayout
 
-[Portallayout]({{site.baseurl}}/zk_component_ref/layouts/portallayout)
+[Portallayout]({{site.baseurl}}/zk_component_ref/portallayout)
 places its child components into multiple columns while each column can
 allow any number of child components to be placed vertically with
 different heights (but with the same widths). Users are also allowed to
@@ -554,7 +554,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Tablelayout
 
-[Tablelayout]({{site.baseurl}}/zk_component_ref/layouts/tablelayout)
+[Tablelayout]({{site.baseurl}}/zk_component_ref/tablelayout)
 places its child components in a table. Ths implementation is based on
 an HTML TABLE tag.
 

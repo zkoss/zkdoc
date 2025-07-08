@@ -10,7 +10,7 @@
 
 # Employment/Purpose
 
-The column of [ Rowlayout]({{site.baseurl}}/zk_component_ref/layouts/rowlayout).
+The column of [ Rowlayout]({{site.baseurl}}/zk_component_ref/rowlayout).
 
 # Properties
 

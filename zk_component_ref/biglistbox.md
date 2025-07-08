@@ -12,7 +12,7 @@
 # Employment/Purpose
 
 A component to handle a huge data sets and provides the same and as many
-as the functionalities of [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox) including
+as the functionalities of [ Listbox]({{site.baseurl}}/zk_component_ref/listbox) including
 selection, sorting, keystroke navigation, ROD(rendering-on-demand), and
 so on..
 
@@ -236,4 +236,4 @@ about the row index and the column index.</p></td>
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`

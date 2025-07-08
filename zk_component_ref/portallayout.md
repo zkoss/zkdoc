@@ -113,7 +113,7 @@ an event caused by a portal being moved.</p></td>
 
 # Supported Children
 
-`*`[` Portalchildren`]({{site.baseurl}}/zk_component_ref/layouts/portallayout/portalchildren)
+`*`[` Portalchildren`]({{site.baseurl}}/zk_component_ref/portallayout/portalchildren)
 
 # Version History
 

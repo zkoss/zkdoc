@@ -176,7 +176,7 @@ you don't need to specify a paging component explicitly as above unless
 you want to have different visual layout or to control multiple
 `listbox` and `grid`controls with one paging component.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Paging) for more
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Paging) for more
 details.
 
 ## Autopaging
@@ -456,7 +456,7 @@ In other words, all other items will remain their selection state.
 
 If you prefer to **deselect all other items** and select the item being
 clicked (which the behavior of ZK 5.0.4 and earlier), you could specify
-true to this library property called [ `org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.listbox.checkmarkdeselectothers)
+true to this library property called [ `org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.listbox.checkmarkdeselectothers)
 in `WEB-INF/zk.xml`:
 
 ```xml
@@ -891,7 +891,7 @@ child.
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Auxiliary_Headers) for
 more details.
 
 ## Drop-Down List
@@ -1126,7 +1126,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 </zk>
 ```
 
-- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)
+- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/listbox/listhead)
   directly.
 
 ## Ungroup Column Menu
@@ -1258,7 +1258,7 @@ For more information, please take a look at these smalltalks,
 - [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
 - [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
-Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)
+Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/listbox/listgroup)
 directly.
 
 # Frozen Component
@@ -1498,7 +1498,7 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`]({{site.baseurl}}/zk_component_ref/data/listbox/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/data/listbox/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/data/listbox/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/data/listbox/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/data/listbox/listgroupfoot)
+[` Listitem`]({{site.baseurl}}/zk_component_ref/listbox/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/listbox/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/listbox/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/listbox/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/listbox/listgroupfoot)
 
 # Version History
 

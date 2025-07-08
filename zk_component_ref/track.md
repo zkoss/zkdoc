@@ -10,8 +10,8 @@
 # Employment/Purpose
 
 It lets you specify some timed text tracks like captions or subtitles
-for media components such as [ Audio]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/audio)
-or [ Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video).
+for media components such as [ Audio]({{site.baseurl}}/zk_component_ref/audio)
+or [ Video]({{site.baseurl}}/zk_component_ref/video).
 
 # Example
 

@@ -74,7 +74,7 @@ button.
  </window>
 ```
 
-More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/data/tree#The_open_Property_and_the_onOpen_Event)
+More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/tree#The_open_Property_and_the_onOpen_Event)
 
 # Label and Image
 
@@ -163,7 +163,7 @@ time the component is opened.</p></td>
 
 # Supported Children
 
-`*`[` Treerow`]({{site.baseurl}}/zk_component_ref/data/tree/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/data/tree/treechildren)
+`*`[` Treerow`]({{site.baseurl}}/zk_component_ref/tree/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/tree/treechildren)
 
 # Use Cases
 

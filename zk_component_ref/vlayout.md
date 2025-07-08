@@ -13,8 +13,8 @@ The vlayout component is a simple vertical oriented layout. Added
 components will be placed underneath each other in a column.
 
 Notice that hlayout and vlayout do not support splitter, alignment and
-packing. If you need them, please use [ZK Component Reference/Layouts/Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox)
-and [ZK Component Reference/Layouts/Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox)
+packing. If you need them, please use [ZK Component Reference/Layouts/Hbox]({{site.baseurl}}/zk_component_ref/hbox)
+and [ZK Component Reference/Layouts/Vbox]({{site.baseurl}}/zk_component_ref/vbox)
 instead.
 
 # Example

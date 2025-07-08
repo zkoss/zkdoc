@@ -17,7 +17,7 @@ and control those children's horizontal and vertical position..
 Notice that hbox and vbox are designed to provide a more sophisticated
 layout, such as splitter, alignment, and packing. ZK renders these 2
 components with an HTML table. If you only need the components for
-layout, we suggest using [ Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
+layout, we suggest using [ Hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 

@@ -186,7 +186,7 @@ time the component is opened.</p></td>
 
 # Supported Children
 
-`*`[` Orgnode`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgnode)`, `[` Orgchildren`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgchildren)
+`*`[` Orgnode`]({{site.baseurl}}/zk_component_ref/organigram/orgnode)`, `[` Orgchildren`]({{site.baseurl}}/zk_component_ref/organigram/orgchildren)
 
 # Version History
 

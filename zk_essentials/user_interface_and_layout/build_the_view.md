@@ -131,7 +131,7 @@ Let's see how to construct these elements with existing ZK components:
 
 -   Line 1: The `sclass`, we can specify CSS class selector, and we will
     talk about it later.
--   Line 2: The [*Hbox*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/hbox)
+-   Line 2: The [*Hbox*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/hbox)
     which is a layout component can arrange its child components in a
     row horizontally. Its `align` attribute controls the vertical
     alignment.
@@ -147,7 +147,7 @@ Let's see how to construct these elements with existing ZK components:
 
 For the sidebar, we want to arrange navigation items one by one
 vertically. There are more than one way to achieve this. Here, we use a
-[ *Grid*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/data/grid) which is
+[ *Grid*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/grid) which is
 suitable for arranging child components in a matrix layout.
 
 **chapter1/sidebar.zul**
@@ -202,7 +202,7 @@ aligned to the center.
 ```
 
 -   Line 2: The
-    [*Vbox*]({{site.baseurl}}/zk_component_ref/layouts/vbox), like
+    [*Vbox*]({{site.baseurl}}/zk_component_ref/vbox), like
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
 -   Line 3: You can use [ EL expressions](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions) in the tag

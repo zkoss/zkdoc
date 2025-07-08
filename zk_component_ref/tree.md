@@ -400,7 +400,7 @@ Treecols's header checkmark also support tristate
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Auxiliary_Headers) for
 more details.
 
 ## SizedByContent
@@ -761,7 +761,7 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Treecols`]({{site.baseurl}}/zk_component_ref/data/tree/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/data/tree/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/data/tree/treefoot)
+`*`[` Treecols`]({{site.baseurl}}/zk_component_ref/tree/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/tree/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/tree/treefoot)
 
 # Use Cases
 

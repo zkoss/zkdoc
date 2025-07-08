@@ -11,7 +11,7 @@
 
 # Employment/Purpose
 
-A component similar to [ Combobox]({{site.baseurl}}/zk_component_ref/input/combobox) but handles
+A component similar to [ Combobox]({{site.baseurl}}/zk_component_ref/combobox) but handles
 the multi-selection and the select order.
 
 # Example
@@ -87,7 +87,7 @@ list. This might produce some delay at the client side because of server
 processing time and network latency.
 
 See also:
-[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/input/combobox#Autocomplete_by_ListSubModel)
+[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/combobox#Autocomplete_by_ListSubModel)
 
 ```xml
     <zscript><![CDATA[

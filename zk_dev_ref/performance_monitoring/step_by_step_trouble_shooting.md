@@ -588,9 +588,9 @@ can help.
 <!-- -->
 
 - check caching config → should **not** be disabled (enabled by default)
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.web.classWebResource.cache>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zk.WPD.cache>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zk.WCS.cache>
+  - <(/zk_config_ref/org.zkoss.web.classWebResource.cache>
+  - <(/zk_config_ref/org.zkoss.zk.WPD.cache>
+  - <(/zk_config_ref/org.zkoss.zk.WCS.cache>
 
 <!-- -->
 
@@ -604,10 +604,10 @@ can help.
 - consider/check render on demand settings
   - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand>
   - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.client.rod>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.grid.initRodSize>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.listbox.initRodSize>
-  - <(/zk_config_ref/The_Library_Properties/org.zkoss.zul.tree.initRodSize>
+  - <(/zk_config_ref/org.zkoss.zul.client.rod>
+  - <(/zk_config_ref/org.zkoss.zul.grid.initRodSize>
+  - <(/zk_config_ref/org.zkoss.zul.listbox.initRodSize>
+  - <(/zk_config_ref/org.zkoss.zul.tree.initRodSize>
     (ZK 7)
 
 <!-- -->

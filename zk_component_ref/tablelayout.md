@@ -100,7 +100,7 @@ The child of tablechildren can be any component:
 
 # Supported Children
 
-`*`[` Tablechildren`]({{site.baseurl}}/zk_component_ref/layouts/tablelayout/tablechildren)
+`*`[` Tablechildren`]({{site.baseurl}}/zk_component_ref/tablelayout/tablechildren)
 
 # Use Cases
 

@@ -168,7 +168,7 @@ recorded time exceeds the maximum length.
 `onSnapshotUpload` will be notified after calling snapshot().
 
 You can easily integrate the Camera component with
-[Video]({{site.baseurl}}/zk_component_ref/multimedia_and_miscellaneous/video)
+[Video]({{site.baseurl}}/zk_component_ref/video)
 and
 [Image]({{site.baseurl}}/zk_component_ref/image).
 

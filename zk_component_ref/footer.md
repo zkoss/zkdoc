@@ -9,8 +9,8 @@
 
 # Employment/Purpose
 
-A column of the footer of a grid ([ Grid]({{site.baseurl}}/zk_component_ref/data/grid)). Its parent must be
-[ Foot]({{site.baseurl}}/zk_component_ref/data/grid/foot).
+A column of the footer of a grid ([ Grid]({{site.baseurl}}/zk_component_ref/grid)). Its parent must be
+[ Foot]({{site.baseurl}}/zk_component_ref/foot).
 
 Unlike Column, you could place any child in a grid footer.
 
@@ -76,7 +76,7 @@ Unlike Column, you could place any child in a grid footer.
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Version History
 

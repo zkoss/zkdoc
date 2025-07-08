@@ -107,11 +107,11 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 
 # Supported Children
 
-`*`[` Listcell`]({{site.baseurl}}/zk_component_ref/data/listbox/listcell)
+`*`[` Listcell`]({{site.baseurl}}/zk_component_ref/listbox/listcell)
 
 # Use Cases
 
-See [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Use_Cases).
+See [ Listbox]({{site.baseurl}}/zk_component_ref/listbox#Use_Cases).
 
 # Version History
 

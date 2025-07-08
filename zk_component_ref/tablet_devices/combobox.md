@@ -3,7 +3,7 @@
 # Combobox
 
 - Component Reference:
-  [Combobox]({{site.baseurl}}/zk_component_ref/input/combobox)
+  [Combobox]({{site.baseurl}}/zk_component_ref/combobox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement

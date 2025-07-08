@@ -19,9 +19,9 @@ simplify the implementation as described in the following section.
 The simplest way to defer the creation of the child components is to use
 [the fulfill attribute](ZUML_Reference/ZUML/Attributes/fulfill). For
 example, the
-[comboitem]({{site.baseurl}}/zk_component_ref/input/comboitem) in the
+[comboitem]({{site.baseurl}}/zk_component_ref/comboitem) in the
 following code snippet will not be created, until the
-[combobox]({{site.baseurl}}/zk_component_ref/input/combobox) receives
+[combobox]({{site.baseurl}}/zk_component_ref/combobox) receives
 the `onOpen` event, indicating that comboitem is becoming visible.
 
 ```xml

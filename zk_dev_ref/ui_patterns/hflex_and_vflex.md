@@ -33,7 +33,7 @@ still sets width by JavaScript.
 ## Fall Back to the Old Way
 
 However, if your application depends on the previous implementation, you
-can fall back by the property [ org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.css.flex).
+can fall back by the property [ org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.css.flex).
 
 # Prerequisite: Parent Requires Width/Height Specified
 
@@ -166,7 +166,7 @@ child region.
 Also notice that the flex property
 ([org.zkoss.zul.LayoutRegion#setFlex(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html#setFlex(boolean)))
 is unique to borderlayout
-([north]({{site.baseurl}}/zk_component_ref/layouts/borderlayout/north)
+([north]({{site.baseurl}}/zk_component_ref/north)
 and others). Don't confuse it with hflex or vflex.
 
 ## Don't specify Minimum on a parent and 1 on a child
@@ -237,9 +237,9 @@ incorrect usage:
 # Grid's Column and Flexibility
 
 If hflex is specified in the header of
-[grid]({{site.baseurl}}/zk_component_ref/data/grid),
-[listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and
-[tree]({{site.baseurl}}/zk_component_ref/data/tree), it is applied to
+[grid]({{site.baseurl}}/zk_component_ref/grid),
+[listbox]({{site.baseurl}}/zk_component_ref/listbox) and
+[tree]({{site.baseurl}}/zk_component_ref/tree), it is applied to
 the whole column (including the header and contents).
 
 For example, we could assign 33% to the first column and 66% to the
@@ -494,7 +494,7 @@ And, the result is as follows - the width has no effect:
 ![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png‎)
 
 This limitation can be solved by the use of
-[hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
 [div]({{site.baseurl}}/zk_component_ref/containers/div) as follows.
 
 ```xml
@@ -525,7 +525,7 @@ div, so is the width not as expected:
 ![]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png‎)
 
 This limitation can be solved by use of
-[hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and
+[hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
 [div]({{site.baseurl}}/zk_component_ref/containers/div) as shown in the
 previous subsection.
 

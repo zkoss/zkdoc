@@ -88,7 +88,7 @@ Defines the rows of a grid. Each child of a rows element should be a
 
 # Supported Children
 
-`*`[` Row`]({{site.baseurl}}/zk_component_ref/data/grid/row)`, `[` Group`]({{site.baseurl}}/zk_component_ref/data/grid/group)`, `[` Groupfoot`]({{site.baseurl}}/zk_component_ref/data/grid/groupfoot)
+`*`[` Row`]({{site.baseurl}}/zk_component_ref/row)`, `[` Group`]({{site.baseurl}}/zk_component_ref/group)`, `[` Groupfoot`]({{site.baseurl}}/zk_component_ref/groupfoot)
 
 # Use Cases
 

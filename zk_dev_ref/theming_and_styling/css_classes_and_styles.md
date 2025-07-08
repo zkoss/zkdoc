@@ -87,7 +87,7 @@ For more information, please refer to [ZK Style Guide]({{site.baseurl}}/zk_style
 Some container components such as
 [window]({{site.baseurl}}/zk_component_ref/containers/window),
 [groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox),
-[detail]({{site.baseurl}}/zk_component_ref/data/grid/detail) have a
+[detail]({{site.baseurl}}/zk_component_ref/detail) have a
 content block, you have to use `contentStyle` to set its style.
 
 For example,

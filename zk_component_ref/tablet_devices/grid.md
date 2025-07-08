@@ -3,7 +3,7 @@
 # Grid
 
 - Component Reference:
-  [Grid]({{site.baseurl}}/zk_component_ref/data/grid)
+  [Grid]({{site.baseurl}}/zk_component_ref/grid)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

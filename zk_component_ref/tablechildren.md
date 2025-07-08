@@ -110,7 +110,7 @@ The child of tablechildren can be any component.
 
 # Use Cases
 
-[ Tablelayout ]({{site.baseurl}}/zk_component_ref/layouts/tablelayout#Use_Cases)
+[ Tablelayout ]({{site.baseurl}}/zk_component_ref/tablelayout#Use_Cases)
 
 # Version History
 

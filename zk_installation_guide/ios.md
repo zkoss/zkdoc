@@ -2,7 +2,7 @@ Here is the notes to set up the environment of iOS.
 
 # Columns Menu
 
-Several components, such as [Columns Menu]({{site.baseurl}}/zk_component_ref/data/grid#Columns_Menu), will
+Several components, such as [Columns Menu]({{site.baseurl}}/zk_component_ref/grid#Columns_Menu), will
 adjust the position of popup to make sure it is on the left side of the
 right edge (so that it is totally visible). On the other hand, iOS
 Safari assumes the width to be 980px by default. Thus, if your web page

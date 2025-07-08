@@ -13,7 +13,7 @@ A list cell.
 
 # Example
 
-[ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Example)
+[ Listbox]({{site.baseurl}}/zk_component_ref/listbox#Example)
 
 # Supported Events
 

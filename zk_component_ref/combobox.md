@@ -22,7 +22,7 @@ text that is not part of the list of prefilled values.
 
 For the use case of searching and selecting items in a list of options,
 without allowing custom text, refer to the
-[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox) component
+[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox) component
 instead.
 
 # Examples
@@ -30,7 +30,7 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox]({{site.baseurl}}/zk_component_ref/input/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/data/listbox#Select_Mold) or [ Selectbox](zk_component_ref/essential_components/Selectbox).
+[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/listbox#Select_Mold) or [ Selectbox](zk_component_ref/essential_components/Selectbox).
 
 ```xml
 <style>
@@ -380,7 +380,7 @@ Combobox button icon.
 
 # Inherited Functions
 
-Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
+Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited
 functions.
 
 # Supported Events
@@ -429,7 +429,7 @@ the component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
+- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
 # Supported Molds
 
@@ -467,7 +467,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/input/combobox/comboitem)
+`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/combobox/comboitem)
 
 # Use Cases
 

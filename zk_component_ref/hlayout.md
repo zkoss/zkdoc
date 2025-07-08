@@ -13,7 +13,7 @@ The hlayout component is a simple horizontal oriented layout. It layouts
 its child components horizontally in a row.
 
 Notice that hlayout and vlayout do **not** support a splitter inside. If
-you need it, please use [ Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and [ Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) instead.
+you need it, please use [ Hbox]({{site.baseurl}}/zk_component_ref/hbox) and [ Vbox]({{site.baseurl}}/zk_component_ref/vbox) instead.
 
 # Example
 

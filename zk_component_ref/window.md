@@ -510,7 +510,7 @@ then the appearance is as follows.
 The XUL component set supports the following common dialogs to simplify
 some common tasks.
 
-- [Messagebox]({{site.baseurl}}/zk_component_ref/supporting_classes/messagebox)
+- [Messagebox]({{site.baseurl}}/zk_component_ref/messagebox)
 - [Fileupload]({{site.baseurl}}/zk_component_ref/fileupload)
 - [Filedownload]({{site.baseurl}}/zk_component_ref/filedownload)
 

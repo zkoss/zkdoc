@@ -3,7 +3,7 @@
 # Spinner
 
 - Component Reference:
-  [Spinner]({{site.baseurl}}/zk_component_ref/input/spinner)
+  [Spinner]({{site.baseurl}}/zk_component_ref/spinner)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Layout Enhancement

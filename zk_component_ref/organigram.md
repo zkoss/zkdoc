@@ -143,7 +143,7 @@ the user has selected a new item in the organigram.</p></td>
 
 # Supported Children
 
-`*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/layouts/organigram/orgchildren)
+`*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/organigram/orgchildren)
 
 # Version History
 

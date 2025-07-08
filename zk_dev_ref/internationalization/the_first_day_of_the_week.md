@@ -6,8 +6,8 @@ returned by the `getFirstDayOfWeek` method of the `java.util.Calendar`
 class.
 
 However, you can configure it differently, and it will affect how
-[datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
-[calendar]({{site.baseurl}}/zk_component_ref/input/calendar) components
+[datebox]({{site.baseurl}}/zk_component_ref/datebox) and
+[calendar]({{site.baseurl}}/zk_component_ref/calendar) components
 behave.
 
 # The decision sequence of the first day of the week

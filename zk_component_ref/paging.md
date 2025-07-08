@@ -14,9 +14,9 @@ content into multiple pages. If a component has long content to display,
 you could separate them into pages, and then use a paging component as a
 controller to allow the user decide which page to display.
 
-The [listbox]({{site.baseurl}}/zk_component_ref/data/listbox),
-[grid]({{site.baseurl}}/zk_component_ref/data/grid) and
-[tree]({{site.baseurl}}/zk_component_ref/data/tree) components support
+The [listbox]({{site.baseurl}}/zk_component_ref/listbox),
+[grid]({{site.baseurl}}/zk_component_ref/grid) and
+[tree]({{site.baseurl}}/zk_component_ref/tree) components support
 the paging intrinsically, so you don't need to specify a paging
 component explicitly. In other words, they will instantiate and manage a
 paging component automatically if the paging mold is specified. Of

@@ -67,5 +67,5 @@ absolutechildren components.
 
 # Supported Children
 
-`*`[`Absolutechildren`]({{site.baseurl}}/zk_component_ref/layouts/absolutelayout/absolutechildren)
+`*`[`Absolutechildren`]({{site.baseurl}}/zk_component_ref/absolutechildren)
 

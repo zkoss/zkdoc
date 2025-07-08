@@ -80,14 +80,14 @@ Calendar supports to show a week number of the year. {% include edition-availabi
 {% include version-badge.html version=8.6.2 %}
 
 You can control the 2DigitYearStart by the use of the library property.
-Please refer to [ org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.web.preferred.2digityearstart)
+Please refer to [ org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/org_zkoss_web_preferred_2digityearstart)
 for details.
 
 # Constraint
 
 {% include version-badge.html version=8.5.2 %}
 
-This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/input/datebox#Constraint)
+This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/datebox#Constraint)
 
 # Supported Events
 

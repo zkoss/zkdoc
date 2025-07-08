@@ -146,9 +146,9 @@ time zone.
 
 Starting in ZK 9, ZK Components extending
 [DateTimeFormatInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/DateTimeFormatInputElement.html)
-([Datebox]({{site.baseurl}}/zk_component_ref/input/datebox),
-[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox) and
-[Timepicker]({{site.baseurl}}/zk_component_ref/input/timepicker))
+([Datebox]({{site.baseurl}}/zk_component_ref/datebox),
+[Timebox]({{site.baseurl}}/zk_component_ref/timebox) and
+[Timepicker]({{site.baseurl}}/zk_component_ref/timepicker))
 provide the option to retrieve the user input value as:
 
 - [LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html)

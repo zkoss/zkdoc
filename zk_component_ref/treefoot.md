@@ -86,11 +86,11 @@ will appear as a footer at the bottom of the tree.
 
 # Supported Children
 
-`*`[` Treefooter`]({{site.baseurl}}/zk_component_ref/data/tree/treefooter)
+`*`[` Treefooter`]({{site.baseurl}}/zk_component_ref/tree/treefooter)
 
 # Use Cases
 
-[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Use_Cases)
+[ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
 # Version History
 

@@ -90,11 +90,11 @@ in it, such as label, image, textbox etc.
 
 # Supported Children
 
-`*`[` Treecell`]({{site.baseurl}}/zk_component_ref/data/tree/treecell)
+`*`[` Treecell`]({{site.baseurl}}/zk_component_ref/tree/treecell)
 
 # Use Cases
 
-[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Use_Cases)
+[ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
 # Version History
 

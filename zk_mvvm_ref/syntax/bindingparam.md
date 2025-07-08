@@ -84,4 +84,4 @@ public void dataChange(@BindingParam DataObject data) {
     // do something here.
 }
 ```
-For more information, please visit [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.bind.jsonbindingparamconverter.class).
+For more information, please visit [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org.zkoss.bind.jsonbindingparamconverter.class).

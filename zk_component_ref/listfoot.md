@@ -9,7 +9,7 @@
 
 # Employment/Purpose
 
-Like [ Listhead]({{site.baseurl}}/zk_component_ref/data/listbox/listhead), each
+Like [ Listhead]({{site.baseurl}}/zk_component_ref/listbox/listhead), each
 listbox has at most one `Listfoot`.
 
 # Example
@@ -72,7 +72,7 @@ listbox has at most one `Listfoot`.
 
 # Supported Children
 
-`*`[` Listfooter`]({{site.baseurl}}/zk_component_ref/data/listbox/listfooter)
+`*`[` Listfooter`]({{site.baseurl}}/zk_component_ref/listbox/listfooter)
 
 # Use Cases
 

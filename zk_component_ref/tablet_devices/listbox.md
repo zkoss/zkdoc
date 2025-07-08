@@ -3,7 +3,7 @@
 # Listbox
 
 - Component Reference:
-  [Listbox]({{site.baseurl}}/zk_component_ref/data/listbox)
+  [Listbox]({{site.baseurl}}/zk_component_ref/listbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

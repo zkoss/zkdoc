@@ -1,8 +1,8 @@
 # Overview
 
 By default, the format of date and time, especially the format of
-[Datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
-[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox), is
+[Datebox]({{site.baseurl}}/zk_component_ref/datebox) and
+[Timebox]({{site.baseurl}}/zk_component_ref/timebox), is
 determined by the JVM's default and [the current locale]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
 In this section, we will discuss how to configure ZK to use a format
@@ -98,8 +98,8 @@ where we assume the implementation is named `foo.MyDateFormatInfo`.
 
 ## Per-component Format
 
-[Datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
-[Timebox]({{site.baseurl}}/zk_component_ref/input/timebox) allow a
+[Datebox]({{site.baseurl}}/zk_component_ref/datebox) and
+[Timebox]({{site.baseurl}}/zk_component_ref/timebox) allow a
 developer to specify any format they prefer for any instance. For
 example,
 

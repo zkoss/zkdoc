@@ -3,7 +3,7 @@
 This section describes what a language definition and addon are. It is
 required for component development. However, you could skip it if you
 won't develop components. For more information about component
-development, please refer to [ZK Component Development Essentials](ZK_Component_Development_Essentials).
+development, please refer to [ZK Component Development Essentials](/zk_component_dev_essentials/zk_component_overview).
 
 If you would like to change the default configuration of a ZK
 application, please refer to [ZK Developer's Reference: Packing Code]({{site.baseurl}}/zk_dev_ref/customization/packing_code).

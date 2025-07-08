@@ -92,7 +92,7 @@ child.
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
 
 # Supported Children
 
@@ -100,7 +100,7 @@ For more details, please refer to
 
 # Use Cases
 
-[Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#Use_Cases)
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases)
 
 # Version History
 

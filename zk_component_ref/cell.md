@@ -9,7 +9,7 @@
 
 # Employment/Purpose
 
-We design this generic cell component to be embedded into [ Row]({{site.baseurl}}/zk_component_ref/data/grid/row) or [ Hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) or [ Vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) in order to fully
+We design this generic cell component to be embedded into [ Row]({{site.baseurl}}/zk_component_ref/row) or [ Hbox]({{site.baseurl}}/zk_component_ref/hbox) or [ Vbox]({{site.baseurl}}/zk_component_ref/vbox) in order to fully
 control the alignment and row/column span.
 
 # Example

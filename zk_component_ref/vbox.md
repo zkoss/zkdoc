@@ -18,13 +18,13 @@ components will be placed underneath each other in a column.
 
 Notice that hbox and vbox are designed to provide a more sophisticated
 layout, such as splitter, alignment, and packing. If you need only the
-layout feature, it is suggested to use [ Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
+layout feature, it is suggested to use [ Hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 
 ## Splitlatyout
 
-If you need a splitter, please use [ splitlayout](zk_component_ref/Layouts/Splitlayout).
+If you need a splitter, please use [ splitlayout](zk_component_ref/Splitlayout).
 
 # Example
 

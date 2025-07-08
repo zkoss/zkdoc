@@ -3,8 +3,8 @@
 By default, the 2-digit year start is set to 1929.
 
 However, you can configure it different, and it will affect how
-[datebox]({{site.baseurl}}/zk_component_ref/input/datebox) and
-[calendar]({{site.baseurl}}/zk_component_ref/input/calendar) components
+[datebox]({{site.baseurl}}/zk_component_ref/datebox) and
+[calendar]({{site.baseurl}}/zk_component_ref/calendar) components
 behave.
 
 The 2-digit year start is used for the format with "yy" pattern only,

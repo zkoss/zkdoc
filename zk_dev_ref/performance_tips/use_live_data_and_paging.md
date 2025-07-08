@@ -15,6 +15,6 @@ paging mold such as
 
 For more information of using and implementing a model, please refer to
 [the Model section]({{site.baseurl}}/zk_dev_ref/mvc/model) and
-[ZK Component Reference: Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Live_Data).
+[ZK Component Reference: Listbox]({{site.baseurl}}/zk_component_ref/listbox#Live_Data).
 
 {{ ZKDevelopersReferencePageFooter}}

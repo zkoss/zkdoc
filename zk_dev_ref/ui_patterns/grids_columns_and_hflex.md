@@ -7,30 +7,30 @@ can apply to the following components:
 <tbody>
 <tr class="odd">
 <td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox"
+<li><a href="{{site.baseurl}}/zk_component_ref/listbox"
 title="wikilink">Listbox</a>
 <ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox/listhead"
+<li><a href="{{site.baseurl}}/zk_component_ref/listbox/listhead"
 title="wikilink">Listhead</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/listbox/listheader"
+<li><a href="{{site.baseurl}}/zk_component_ref/listbox/listheader"
 title="wikilink">Listheader</a></li>
 </ul></li>
 </ul></td>
 <td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/grid" title="wikilink">Grid</a>
+<li><a href="{{site.baseurl}}/zk_component_ref/grid" title="wikilink">Grid</a>
 <ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/grid/columns"
+<li><a href="{{site.baseurl}}/zk_component_ref/columns"
 title="wikilink">Columns</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/grid/column"
+<li><a href="{{site.baseurl}}/zk_component_ref/column"
 title="wikilink">Column</a></li>
 </ul></li>
 </ul></td>
 <td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/tree" title="wikilink">Tree</a>
+<li><a href="{{site.baseurl}}/zk_component_ref/tree" title="wikilink">Tree</a>
 <ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/tree/treecols"
+<li><a href="{{site.baseurl}}/zk_component_ref/tree/treecols"
 title="wikilink">Treecols</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/data/tree/treecol"
+<li><a href="{{site.baseurl}}/zk_component_ref/tree/treecol"
 title="wikilink">Treecol</a></li>
 </ul></li>
 </ul></td>
@@ -42,8 +42,8 @@ title="wikilink">Treecol</a></li>
 
 There are basically two approaches to control the width of a column:
 width and hflex. They could be specified in the column's header, such as
-[column]({{site.baseurl}}/zk_component_ref/data/grid/column) and
-[listheader]({{site.baseurl}}/zk_component_ref/data/listbox/listheader ).
+[column]({{site.baseurl}}/zk_component_ref/column) and
+[listheader]({{site.baseurl}}/zk_component_ref/listbox/listheader ).
 
 While width
 ([org.zkoss.zk.ui.HtmlBasedComponent#setWidth(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setWidth(java.lang.String)))

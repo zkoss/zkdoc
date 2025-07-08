@@ -94,4 +94,4 @@ on its width and height
 
 # Supported Children
 
-* [Anchorchildren]({{site.baseurl}}/zk_component_ref/layouts/anchorlayout/anchorchildren)
+* [Anchorchildren]({{site.baseurl}}/zk_component_ref/anchorchildren)

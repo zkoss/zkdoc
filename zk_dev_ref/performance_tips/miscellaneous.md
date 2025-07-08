@@ -17,7 +17,7 @@ The default mold can be changed easily. For example,
 </library-property>
 ```
 
-Refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_library_properties/class.mold)
+Refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/class.mold)
 for more information.
 
 # Prolong the Period to Check Whether a File Is Modified

@@ -64,9 +64,9 @@ DAOs.
 
 In addition to handling the data in a controller, some components
 support the abstraction model to uncouple UI and data. For example,
-[grid]({{site.baseurl}}/zk_component_ref/data/grid),
-[listbox]({{site.baseurl}}/zk_component_ref/data/listbox) and
-[combobox]({{site.baseurl}}/zk_component_ref/input/combobox) support
+[grid]({{site.baseurl}}/zk_component_ref/grid),
+[listbox]({{site.baseurl}}/zk_component_ref/listbox) and
+[combobox]({{site.baseurl}}/zk_component_ref/combobox) support
 [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html), while
-[tree]({{site.baseurl}}/zk_component_ref/data/tree) supports
+[tree]({{site.baseurl}}/zk_component_ref/tree) supports
 [org.zkoss.zul.TreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html).

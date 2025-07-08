@@ -89,7 +89,7 @@ column will appear as a column at the top of the tree.
 
 # Supported Children
 
-`*`[` Treecol `]({{site.baseurl}}/zk_component_ref/data/tree/treecol)
+`*`[` Treecol `]({{site.baseurl}}/zk_component_ref/tree/treecol)
 
 # Use cases
 

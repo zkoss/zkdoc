@@ -14,7 +14,7 @@
 Default: `false`  
 `[Since 7.0.0]`
 
-It specifies to use browser's default scrollbar for [ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Scrollable_Grid), [ Listbox]({{site.baseurl}}/zk_component_ref/data/listbox#Scrollable_Listboxes),
-[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Scrollable_Tree) and
-[ Borderlayout]({{site.baseurl}}/zk_component_ref/layouts/borderlayout#Scrolling)
+It specifies to use browser's default scrollbar for [ Grid]({{site.baseurl}}/zk_component_ref/grid#Scrollable_Grid), [ Listbox]({{site.baseurl}}/zk_component_ref/listbox#Scrollable_Listboxes),
+[ Tree]({{site.baseurl}}/zk_component_ref/tree#Scrollable_Tree) and
+[ Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Scrolling)
 component or not.

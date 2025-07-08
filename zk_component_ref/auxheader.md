@@ -69,7 +69,7 @@ An auxiliary header.
 # The Limitation of rowspan
 
 For better performance, every instance of
-[Column]({{site.baseurl}}/zk_component_ref/data/grid/column) will create
+[Column]({{site.baseurl}}/zk_component_ref/column) will create
 an invisible HTML TH element called *faker*. However, with some complex
 combination of `rowspan` and `colspan`, Grid might not be able to
 generate the correct number of *faker* to represent each column.
@@ -107,7 +107,7 @@ structure:
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
 add an empty
-[Columns]({{site.baseurl}}/zk_component_ref/data/grid/columns). For
+[Columns]({{site.baseurl}}/zk_component_ref/columns). For
 example, the code in the previous example can be fixed as follows:
 
 ```xml

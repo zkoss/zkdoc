@@ -90,7 +90,7 @@ You could place any child in a tree footer.
 
 # Use Cases
 
-[ Tree]({{site.baseurl}}/zk_component_ref/data/tree#Use_Cases)
+[ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
 # Version History
 

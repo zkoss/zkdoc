@@ -131,7 +131,7 @@ or later. In additions, there are some other limitations.
   not be serialized correctly<ref>
 
 It runs correctly locally but not if uploaded. It could be done by
-specifying as a [library property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zk.scripting.bsh.method.serializable)
+specifying as a [library property]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.scripting.bsh.method.serializable)
 to disable the serializing of zscript methods for the whole application.
 
 </ref>
@@ -193,7 +193,7 @@ demo is [here](http://tags42.appspot.com/borderlayout/borderlayout.zul).
 | Version | Date           | Content                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | June 2011      | Add ClusterSessionPatch listener to zk.xml for enforce GAE to write session.                                                                                                                                                                                                                                                                                                                                                        |
-| 5.0.9   | September 2011 | In 5.0.7/5.0.8, we introduced a feature allowing developers to log the serialization. Unfortunately, it broke one of GAE restriction: java.util.logging.LogManager is not accessible. It is fixed in 5.0.9 but specifying a library property called [org.zkoss.util.logging.hierarchy.disabled]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.util.logging.hierarchy.disabled) in `WEB-INF/zk.xml`. |
+| 5.0.9   | September 2011 | In 5.0.7/5.0.8, we introduced a feature allowing developers to log the serialization. Unfortunately, it broke one of GAE restriction: java.util.logging.LogManager is not accessible. It is fixed in 5.0.9 but specifying a library property called [org.zkoss.util.logging.hierarchy.disabled]({{site.baseurl}}/zk_config_ref/org.zkoss.util.logging.hierarchy.disabled) in `WEB-INF/zk.xml`. |
 
 [^1]: You will see a warning, `... Component captcha ignored.`, in the
     application log, refer to the JRE [white list](http://developers.google.com/appengine/docs/java/jrewhitelist).

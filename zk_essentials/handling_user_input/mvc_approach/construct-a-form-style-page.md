@@ -28,13 +28,13 @@ We build the frame of this form first:
 ```
 
 -   Line 4, 5:
-    [`<caption>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/caption)
+    [`<caption>`]({{site.baseurl}}/zk_component_ref/containers/caption)
     can be used to build compound header with an image for a [`<window>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/window ).
--   Line 6: [`<vlayout>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/vlayout) is
+-   Line 6: [`<vlayout>`]({{site.baseurl}}/zk_component_ref/vlayout) is
     a light-weight layout component which arranges its child components
     vertically without splitter, align, and pack support.
 -   Line 11:
-[`<hlayout>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/layouts/hlayout), like `<vlayout>`, but arranges its child components horizontally.
+[`<hlayout>`]({{site.baseurl}}/zk_component_ref/hlayout), like `<vlayout>`, but arranges its child components horizontally.
 
 
 ##A Grid Makes a Form

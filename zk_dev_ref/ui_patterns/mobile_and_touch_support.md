@@ -62,7 +62,7 @@ You may want to disable touch event support, for example to force hybrid
 devices to use only mouse controls.
 
 Touch event support can be disabled with the
-[org.zkoss.zkmax.touch.disabled library property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.touch.disabled).
+[org.zkoss.zkmax.touch.disabled library property]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.touch.disabled).
 
 Set to true to disable dedicated touch event support.
 
@@ -96,7 +96,7 @@ to use the same control on all clients, instead of using client-specific
 controls.
 
 Tablet UI Improvements can be disabled with the
-[org.zkoss.zkmax.tablet.ui.disabled library property]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled).
+[org.zkoss.zkmax.tablet.ui.disabled library property]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.tablet.ui.disabled).
 
 Set to true to disable dedicated touch event support.
 

@@ -19,13 +19,13 @@ can think of a box as one row or one column from an HTML table.
 
 A box is the generic component that can be used for horizontal and
 vertical layouts. However, it is generally more convenient by the use of
-[hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) directly.
+[hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[vbox]({{site.baseurl}}/zk_component_ref/vbox) directly.
 
-Notice that [hbox]({{site.baseurl}}/zk_component_ref/layouts/hbox) and
-[vbox]({{site.baseurl}}/zk_component_ref/layouts/vbox) are designed to
+Notice that [hbox]({{site.baseurl}}/zk_component_ref/hbox) and
+[vbox]({{site.baseurl}}/zk_component_ref/vbox) are designed to
 provide more sophisticated layout, such as splitter, alignment and
-packing. If you need only the layout feature, it is suggest to use [ Hlayout]({{site.baseurl}}/zk_component_ref/layouts/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/layouts/vlayout) instead,
+packing. If you need only the layout feature, it is suggest to use [ Hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and [ Vlayout]({{site.baseurl}}/zk_component_ref/vlayout) instead,
 since the performance is much better (due to the use of HTML DIV instead
 of TABLE).
 

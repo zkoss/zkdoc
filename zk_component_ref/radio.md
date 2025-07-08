@@ -50,7 +50,7 @@ radio button with the same group may be selected at a time.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Checkbox]({{site.baseurl}}/zk_component_ref/input/checkbox#Supported_Events)
+- Inherited Supported Events: [ Checkbox]({{site.baseurl}}/zk_component_ref/checkbox#Supported_Events)
 
 # Supported Children
 
@@ -63,7 +63,7 @@ radio button with the same group may be selected at a time.
 | 3.6     | Radio buttons with Listitems                   | [<http://www.zkoss.org/forum/listComment/3867>](http://www.zkoss.org/forum/listComment/3867) |
 | 3.6     | Radiogroup radio's in seperate table/grid rows | [<http://www.zkoss.org/forum/listComment/9002>](http://www.zkoss.org/forum/listComment/9002) |
 
-See also: [ Radiogroup]({{site.baseurl}}/zk_component_ref/input/radiogroup#Use_Cases)
+See also: [ Radiogroup]({{site.baseurl}}/zk_component_ref/radiogroup#Use_Cases)
 
 # Version History
 

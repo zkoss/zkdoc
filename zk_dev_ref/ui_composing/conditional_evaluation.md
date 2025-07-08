@@ -7,7 +7,7 @@ associated component. It is also the most straightforward way.
 For example, suppose that we want to use
 [label]({{site.baseurl}}/zk_component_ref/label),
 if readonly, and
-[textbox]({{site.baseurl}}/zk_component_ref/input/textbox), otherwise:
+[textbox]({{site.baseurl}}/zk_component_ref/textbox), otherwise:
 
 ```xml
 <label value="${customer.label}" if="${param.readonly == 'true'}"/>

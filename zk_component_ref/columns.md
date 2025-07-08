@@ -132,11 +132,11 @@ column provides the auto-fitting feature.
 
 # Supported Children
 
-`*`[` Column`]({{site.baseurl}}/zk_component_ref/data/grid/column)
+`*`[` Column`]({{site.baseurl}}/zk_component_ref/column)
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Version History
 

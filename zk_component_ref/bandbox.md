@@ -206,7 +206,7 @@ Bandbox button icon. For built-in icon, please see
 
 # Inherited Functions
 
-Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox) for inherited
+Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited
 functions.
 
 # Supported Events
@@ -236,7 +236,7 @@ opening or closing the component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/input/textbox#Supported_Events)
+- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
 # Supported Molds
 
@@ -274,7 +274,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/input/bandpopup)
+`*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/bandpopup)
 
 # Use Cases
 

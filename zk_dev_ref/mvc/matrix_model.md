@@ -5,7 +5,7 @@ Here we describe how to implement a matrix model
 For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
-for *MatrixModel* because [ Biglistbox]({{site.baseurl}}/zk_component_ref/data/biglistbox) is
+for *MatrixModel* because [ Biglistbox]({{site.baseurl}}/zk_component_ref/biglistbox) is
 designed to handle unlimited data set, therefore, there is no need to
 handle model data in memory. This usage is application-dependent and
 varies from case to case. However, you can extend your own

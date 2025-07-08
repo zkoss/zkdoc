@@ -87,12 +87,12 @@ to set it up.
 ## Features enabled by default
 
 After upgrading to PE/EE, some of the features are enabled by default.
-For example, the [ client render on demand]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zul.client.rod)
+For example, the [ client render on demand]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.client.rod)
 feature will be enabled by default to improve the client-side
 performance. Also, with EE, the Tablet UI will be enabled by default,
 when a tablet or mobile device connects to your application the
 tablet-supported components will switch themselves to the tablet theme.
-You can manually [ disable them in zk.xml]({{site.baseurl}}/zk_config_ref/the_library_properties/org.zkoss.zkmax.tablet.ui.disabled)
+You can manually [ disable them in zk.xml]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.tablet.ui.disabled)
 if you are not ready.
 
 ## Change of default behavior

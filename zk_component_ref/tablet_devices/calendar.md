@@ -3,7 +3,7 @@
 # Calendar
 
 - Component Reference:
-  [Calendar]({{site.baseurl}}/zk_component_ref/input/calendar)
+  [Calendar]({{site.baseurl}}/zk_component_ref/calendar)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

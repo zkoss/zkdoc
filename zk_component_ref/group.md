@@ -10,7 +10,7 @@
 
 # Employment/Purpose
 
-Adds the ability for single level grouping to the [ Grid]({{site.baseurl}}/zk_component_ref/data/grid).
+Adds the ability for single level grouping to the [ Grid]({{site.baseurl}}/zk_component_ref/grid).
 
 Default getSclass(): the same as grid's sclass.
 
@@ -95,7 +95,7 @@ the component is opened.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Row]({{site.baseurl}}/zk_component_ref/data/grid/row#Supported_Events)
+- Inherited Supported Events: [ Row]({{site.baseurl}}/zk_component_ref/row#Supported_Events)
 
 # Supported Children
 
@@ -103,7 +103,7 @@ the component is opened.</p></td>
 
 # Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/data/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Version History
 
