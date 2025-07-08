@@ -62,7 +62,7 @@ one in `zul.jar`.
 ## debug-js enabled
 
 Notice that if
-[debug-js]({{site.baseUrl}}/zk_config_ref/The_client-config_Element/The_debug-js_Element)
+[debug-js]({{site.baseUrl}}/zk_config_ref/The_debug-js_Element)
 is turned on, ZK will actually look for `Textbox.src.js` rather than
 `Textbox.js` in the above example. Thus, it is suggested to put both
 files:
@@ -77,7 +77,7 @@ purpose).
 
 ## Overriding JavaScript in a ZK JAR
 
-ZK loads the JavaScript file under the [ class path web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
+ZK loads the JavaScript file under the [ class path web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path),
 **`WEB-INF/classes/web/js`**, in a **higher** priority than JavaScript
 files in ZK jar (e.g. zul.jar). So that you can put javascript files
 there to override the JavaScript files in ZK jar under the corresponding

@@ -47,7 +47,7 @@ public class FooComposer extends SelectorComposer<Window> {
 
 There are two approaches to register a variable resolver: the
 [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
-annotation or [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+annotation or [the variable-resolver directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver).
 Here is the example of registering variable resolvers with annotations.
 
 ```java
@@ -129,7 +129,7 @@ example,
 ```
 
 where `$composer` is a built-in variable referring to the composer. For
-more information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+more information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/composer).
 
 > ------------------------------------------------------------------------
 >
@@ -232,7 +232,7 @@ Here is the sequence of wiring:
       with the
       [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
       annotation.
-  3.  If none is found, it looks for [the implicit objects](ZUML_Reference/EL_Expressions/Implicit_Objects),
+  3.  If none is found, it looks for [the implicit objects](zuml_ref/EL_Expressions/Implicit_Objects),
       such as session and page.
 
 # Version History

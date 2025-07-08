@@ -1,5 +1,5 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template),
 you can render a chosenbox with a template. However, notice that, unlike
 other components, chosenbox doesn't allow any child component, so you
 have to render each item as a string. For example,

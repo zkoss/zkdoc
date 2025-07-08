@@ -129,7 +129,7 @@ how you can include the js file for different scopes.
 ## Page-Scope
 
 - Use the script directive
-  \[\[ZUML_Reference/ZUML/Processing_Instructions/script \|
+  \[\[zuml_ref/ZUML/Processing_Instructions/script \|
   <?script?>
 
   \]\]
@@ -159,7 +159,7 @@ and include the javascript file with <javascript>. For example:
 ```
 
 - Line 4: see the next section
-- Line 5: a path starting with `~./` is a [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+- Line 5: a path starting with `~./` is a [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path)
   which is a special path supported by ZK
 - Line 6: You can also link a file under your web application context
   root
@@ -188,7 +188,7 @@ specify the corresponding addon name. For example:
 <depends>`za11y`</depends>
 
 === Use
-\[\[{{site.baseurl}}/zk_config_ref/the_device-config_element/the_embed_element
+\[\[{{site.baseurl}}/zk_config_ref/the_embed_element
 \|
 
 <embed>

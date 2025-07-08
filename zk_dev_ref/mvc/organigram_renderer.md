@@ -31,8 +31,8 @@ For example,
 > <references/>
 
 [^1]: For the concept about component, model and renderer, please refer
-    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 
 [^2]: If the Organigram is assigned a template called `model`, then the
     template will be used to render the Organigram. For more
-    information, please refer to [the Organigram Template section]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template).
+    information, please refer to [the Organigram Template section]({{site.baseurl}}/zk_dev_ref/mvc/organigram_template).

@@ -33,7 +33,7 @@ It specifies the package to load.
 `[Optional]`
 
 It specifies the URI of the JavaScript file to load. The URI can accept
-[ Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path),
+[ Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path),
 `~./` (such as "~./foo/whatever.js").
 
 If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/depends),

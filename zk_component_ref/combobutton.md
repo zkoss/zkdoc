@@ -170,7 +170,7 @@ The **tbbtn** mold is renamed to **toolbar** mold
 
 # Supported Children
 
-[ Popup]({{site.baseurl}}/zk_component_ref/popup) [ Menupopup]({{site.baseurl}}/zk_component_ref/menu/menupopup)
+[ Popup]({{site.baseurl}}/zk_component_ref/popup) [ Menupopup]({{site.baseurl}}/zk_component_ref/menupopup)
 
 # Use Cases
 

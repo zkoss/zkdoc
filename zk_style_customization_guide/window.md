@@ -1,6 +1,6 @@
 # Component Reference
 
-Component Reference: [ Window]({{site.baseurl}}/zk_component_ref/containers/window)
+Component Reference: [ Window]({{site.baseurl}}/zk_component_ref/window)
 
 # DOM Structure
 

@@ -7,7 +7,7 @@ We encourage you to build UI with the XML-formatted language called **ZK User-In
 
 You can even mix these two ways. For example, create a simple page with zul, then add components dynamically in Java within a ZK controller. You can see such usage in the subsequent chapters.
 
-In addition to above ways,  [richlet](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/ui_composing/richlet) allows you to compose the whole page in Java programmatically.
+In addition to above ways,  [richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) allows you to compose the whole page in Java programmatically.
 
 
 # Write a ZUL File
@@ -65,13 +65,13 @@ Now, let's built our example application's main layout. create a new text file w
 ```
 
 -   Line 2: Each XML tag represents one component, and the tag name is
-    equal to the component name. The attribute [ "hflex" and "vflex"](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
+    equal to the component name. The attribute [ "hflex" and "vflex"]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
     controls the horizontal and vertical size flexibility of a
     component. We set them to "1" which means *Fit-the-Rest*
     flexibility. Hence, the `<borderlayout>` will stretch itself to fill
     all available space of whole page in width and height because it is
     a root component. Only one component is allowed inside `<north>` in
-    addition to a [ `<caption>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/caption).
+    addition to a [ `<caption>`]({{site.baseurl}}/zk_component_ref/caption).
 -   Line 3: `<north>`* is a child component that can only be put inside a `<borderlayout>`. You can also fix a component's height by specifying
     a pixel value to avoid its height changing due to browser sizes.
 -   Line 6, 7: Setting `collapsible` to true allows you to collapse the
@@ -131,13 +131,13 @@ Let's see how to construct these elements with existing ZK components:
 
 -   Line 1: The `sclass`, we can specify CSS class selector, and we will
     talk about it later.
--   Line 2: The [*Hbox*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/hbox)
+-   Line 2: The [*Hbox*]({{site.baseurl}}/zk_component_ref/hbox)
     which is a layout component can arrange its child components in a
     row horizontally. Its `align` attribute controls the vertical
     alignment.
--   Line 3: The [`A`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/a)
+-   Line 3: The [`A`]({{site.baseurl}}/zk_component_ref/a)
     creates a hyperlink the same as an HTML `<a>` element.
--   Line 4: The [*image*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/image)
+-   Line 4: The [*image*]({{site.baseurl}}/zk_component_ref/image)
     is similar to HTML `<img>` which can display an image.
 -   Line 9: The `pack` controls the horizontal alignment. We specify
     `end` on both `pack` and `align` to make the text "Anonymous"
@@ -147,7 +147,7 @@ Let's see how to construct these elements with existing ZK components:
 
 For the sidebar, we want to arrange navigation items one by one
 vertically. There are more than one way to achieve this. Here, we use a
-[ *Grid*](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/grid) which is
+[ *Grid*]({{site.baseurl}}/zk_component_ref/grid) which is
 suitable for arranging child components in a matrix layout.
 
 **chapter1/sidebar.zul**
@@ -205,8 +205,8 @@ aligned to the center.
     [*Vbox*]({{site.baseurl}}/zk_component_ref/vbox), like
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
--   Line 3: You can use [ EL expressions](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions) in the tag
-    element's body or an attribute. There are also many [ implicit objects](https://books.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)),
+-   Line 3: You can use [ EL expressions](zuml_ref/EL_Expressions) in the tag
+    element's body or an attribute. There are also many [ implicit objects](zuml_ref/EL_Expressions/Implicit_Objects_(Predefined_Variables)),
     and `desktop` is one of them. Refer to
     `org.zkoss.zk.ui.Desktop`'s Javadoc to find out
     available properties.

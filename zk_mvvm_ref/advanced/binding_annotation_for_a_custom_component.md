@@ -6,7 +6,7 @@ Before we declare data binding annotation for a new custom component, only load 
 Create a Custom Component
 =========================
 
-In order to explain how to declare data binding definition, we create a macro component with a custom class as an example. (Please [ refer here]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class) for details.) The macro component is named "EditableLabel". It's a label with in-place editor. This component display a label first. When we double click it, it switch to a textbox for editing and change label's value.
+In order to explain how to declare data binding definition, we create a macro component with a custom class as an example. (Please [ refer here]({{site.baseurl}}/zk_dev_ref/ui_composing/implement_custom_java_class) for details.) The macro component is named "EditableLabel". It's a label with in-place editor. This component display a label first. When we double click it, it switch to a textbox for editing and change label's value.
 
 ```java
 public class EditableLabel extends HtmlMacroComponent {
@@ -62,7 +62,7 @@ public class EditableLabel extends HtmlMacroComponent {
 Declare Data Binding in Language Addon XML
 ==========================================
 
-In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding]({{site.baseurl}}/zk_component_ref/annotation/data_binding) and [ Language Definition]({{site.baseurl}}/zk_client_side_ref/language_definition). Here we only cover mostly commonly used attributes.
+In order to let BindComposer knows how to process a custom component's data binding expression, we should declare data binding definition. For complete XML's element and attributes, please refer to [ Data Binding]({{site.baseurl}}/zk_component_ref/data_binding) and [ Language Definition]({{site.baseurl}}/zk_client_side_ref/language_definition). Here we only cover mostly commonly used attributes.
 
 For our example, the key point is to declare when to save component's "value" property to a ViewModel's member variable. The saving time is specified by **event name**.
 

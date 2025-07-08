@@ -9,7 +9,7 @@
 # Employment/Purpose
 
 `Idspace` is just like a
-[Div]({{site.baseurl}}/zk_component_ref/containers/div) but implements
+[Div]({{site.baseurl}}/zk_component_ref/div) but implements
 the [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), all
 descendant components of Idspace (including the Idspace itself) form an
 independent ID space. Thus, you could use an idspace as the topmost

@@ -601,8 +601,8 @@ containers, please refer to [ZK Component Reference: Containers]({{site.baseurl}
 
 ## Div and Span
 
-[Div]({{site.baseurl}}/zk_component_ref/containers/div) and
-[span]({{site.baseurl}}/zk_component_ref/containers/span) are the most
+[Div]({{site.baseurl}}/zk_component_ref/div) and
+[span]({{site.baseurl}}/zk_component_ref/span) are the most
 light-weighted containers to group child components. They work the same
 way as HTML DIV and SPAN tags respectively. Div is a block element that
 would cause line break for the following sibling i.e. the child and its
@@ -663,7 +663,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Window
 
-[Window]({{site.baseurl}}/zk_component_ref/containers/window) is a
+[Window]({{site.baseurl}}/zk_component_ref/window) is a
 container providing captioning, bordering, overlapping, draggable,
 closable, sizable, and many other features. Window is also the owner of
 [an ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), such
@@ -716,8 +716,8 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Panel
 
-Like [Window]({{site.baseurl}}/zk_component_ref/containers/window),
-[panel]({{site.baseurl}}/zk_component_ref/containers/panel) is another
+Like [Window]({{site.baseurl}}/zk_component_ref/window),
+[panel]({{site.baseurl}}/zk_component_ref/panel) is another
 powerful container supporting captioning, bordering, overlapping and
 many other features. However,
 [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is not
@@ -773,9 +773,9 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Groupbox
 
-[Groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox) is a
+[Groupbox]({{site.baseurl}}/zk_component_ref/groupbox) is a
 light-weighted way to group child components together. It supports
-["caption"]({{site.baseurl}}/zk_component_ref/containers/caption) and
+["caption"]({{site.baseurl}}/zk_component_ref/caption) and
 "border", however, it does not support overlapping or resizing. Like
 Panel, [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is
 not implemented by this component either.
@@ -827,7 +827,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## Tabbox
 
-[Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox) is a
+[Tabbox]({{site.baseurl}}/zk_component_ref/tabbox) is a
 container used to display a set of tabbed groups of components. A row of
 tabs can be displayed at the top (or left) of the tabbox; users can
 switch between each tab group by a simple click.

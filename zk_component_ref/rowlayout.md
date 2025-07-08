@@ -94,7 +94,7 @@ The above examples look like: ![ center](rowlayout-examples.png " center")
 
 # Supported Children
 
-`*`[` Rowchildren`]({{site.baseurl}}/zk_component_ref/rowlayout/rowchildren)
+`*`[` Rowchildren`]({{site.baseurl}}/zk_component_ref/rowchildren)
 
 # Use Cases
 

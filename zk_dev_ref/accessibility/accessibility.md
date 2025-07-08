@@ -28,7 +28,7 @@ expectations to deliver complete accessibility.
 This chapter shares with you what the ZK framework has done in terms of
 accessibility in general, and how you can specify additional
 application-specific accessible information. For the details of each
-component, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility).
+component, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility/accessibility).
 
 # Enable Accessibility Support
 
@@ -69,12 +69,12 @@ tool, you will see some aria attributes rendered:
        aria-disabled="false" aria-readonly="false">
 ```
 
-Some components render special ARIA attributes, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility).
+Some components render special ARIA attributes, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility/accessibility).
 
 # Specify ARIA Attributes
 
 You can specify arbitrary ARIA attribute as needed on a component with
-[namespace "client/attribute"](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+[namespace "client/attribute"](zuml_ref/ZUML/Namespaces/Client_Attribute)
 like:
 
 ```xml

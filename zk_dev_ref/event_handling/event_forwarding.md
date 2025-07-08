@@ -14,7 +14,7 @@ main window rather than register to both the menu item and button.
 
 Forwarding an event is straightforward: just posting or sending the
 event again. However, there is a better way:
-[composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+[composer]({{site.baseurl}}/zk_dev_ref/mvc/composer).
 The composer can be the central place to handle the events. For example,
 you could invoke `openDialog` in the event handler for the menu item and
 button as shown below:
@@ -30,7 +30,7 @@ public class FooComposer extends SelectorComposer {
 
 # Event Forwarding in ZUML
 
-Event forwarding can be done with [the forward attribute](ZUML_Reference/ZUML/Attributes/forward) in ZUML.
+Event forwarding can be done with [the forward attribute](zuml_ref/ZUML/Attributes/forward) in ZUML.
 For example,
 
 ```xml

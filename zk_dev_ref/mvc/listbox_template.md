@@ -25,7 +25,7 @@ multiple templates to one component, and `listbox`'s default renderer
 looks only for the template called `model`.
 
 When the template is rendered, a variable called
-[each](ZUML_Reference/EL_Expressions/Implicit_Objects/each)
+[each](zuml_ref/EL_Expressions/Implicit_Objects/each)
 is assigned with the data being rendered. Thus, you could retrieve the
 information to render with EL expressions, such as `${each[0]}`, if it
 is an array, or `${each.name}`, if it is a bean with a getter called
@@ -70,7 +70,7 @@ Of course, if you prefer to store other values, you can simply specify
 ## The forEachStatus Variable
 
 There is a variable called
-[forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus)
+[forEachStatus](zuml_ref/EL_Expressions/Implicit_Objects/forEachStatus)
 providing the information of the iteration. It is an instance of
 [org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html).
 For example, you could retrieve the iteration's index by use of
@@ -83,7 +83,7 @@ is rendered on demand. It means the template can be rendered very late,
 after the page is rendered, after the user scrolls down to make an item
 visible, and so on. Thus, in the template, you *cannot* reference
 anything that is available only in the page rendering phase. For
-example, you can't reference [the arg variable](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
+example, you can't reference [the arg variable](zuml_ref/EL_Expressions/Implicit_Objects/arg)
 in a template:
 
 ```xml
@@ -153,7 +153,7 @@ listbox-in-listbox:
 ### How to retrieve the outer template's data in the inner template
 
 Although
-[forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus)
+[forEachStatus](zuml_ref/EL_Expressions/Implicit_Objects/forEachStatus)
 has an API called
 [org.zkoss.zk.ui.util.ForEachStatus#getPrevious()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getPrevious()),
 it always returns null[^3]. It is because the template is rendered on
@@ -161,7 +161,7 @@ demand. When ZK is rendering the inner template, the previous iteration
 has already gone. There is no way to retrieve the iteration information
 of the outer template.
 
-Rather, you have to traverse the component tree or use [the custom-attributes element](ZUML_Reference/ZUML/Elements/custom-attributes).
+Rather, you have to traverse the component tree or use [the custom-attributes element](zuml_ref/ZUML/Elements/custom-attributes).
 
 Here is an example of traversing the component tree to retrieve the data
 in the outer template, as shown at line 9 below. Notice that, each data
@@ -188,7 +188,7 @@ is, as described before, stored in the component's value property.
 ```
 
 If the component tree is deep, It is tedious and somehow error prone.
-Alternatively, you can store the information into [a custom attribute](ZUML_Reference/ZUML/Elements/custom-attributes)
+Alternatively, you can store the information into [a custom attribute](zuml_ref/ZUML/Elements/custom-attributes)
 and then retrieve it later, as shown at line 4 and 10 below.
 
 ```xml
@@ -257,7 +257,7 @@ grouping and non-grouping objects).
     [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html) for
     simplicity. There are several ways to implement a composer, such as
     wiring a Spring-managed bean. For more information, please refer to
-    [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+    [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/composer).
 
 [^3]: On the other hand, it returns the previous iteration information
-    when using with [the forEach attribute](ZUML_Reference/ZUML/Attributes/forEach).
+    when using with [the forEach attribute](zuml_ref/ZUML/Attributes/forEach).

@@ -5,7 +5,7 @@
 A listener could implement
 [org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html) to
 handle the initialization of a ZUML page and richlets, as if it is
-specified in [the init directive](ZUML_Reference/ZUML/Processing_Instructions/init).
+specified in [the init directive](zuml_ref/ZUML/Processing_Instructions/init).
 This kind of listeners is called system-level initiators.
 
 Each time a ZK page is created, ZK will instantiate one instance for

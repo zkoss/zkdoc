@@ -1,5 +1,5 @@
 Similar to
-[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/view/template/listbox_template),
+[Listbox]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template),
 you can define a customer rendering with a template for a grid:
 
 ```xml

@@ -102,7 +102,7 @@ The child of tablechildren can be any component.
 
 # Supported Children
 
-`*`[` Panel`]({{site.baseurl}}/zk_component_ref/containers/panel)
+`*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
 {% include version-badge.html version=6.0.0 %}
 

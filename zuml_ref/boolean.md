@@ -9,7 +9,7 @@ i.e.,
 Converts the specified object to a boolean.
 
 Notice that EL will convert the type automatically, so you rarely need
-this method. Please refer to [Type Coercion](ZUML_Reference/EL_Expressions/Type_Coercion) for
+this method. Please refer to [Type Coercion](zuml_ref/EL_Expressions/Type_Coercion) for
 details.
 
 **Parameters:**

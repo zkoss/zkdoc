@@ -195,7 +195,7 @@ report.setType("pdf"); // report is the Jasperreport component
 ## Linux
 
 Jasperreport depends on the fonts you use in the report. For more
-information, please refer to [ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
+information, please refer to [ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/linux).
 
 # Version History
 

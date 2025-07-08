@@ -8,7 +8,7 @@ Here we use [JBoss](http://jboss.org) as the example. The configuration
 of the server might vary from one server to another, but the ZUML
 document is the same.
 
-Notice that if you would like to access EJB in Java (such as in [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+Notice that if you would like to access EJB in Java (such as in [a composer]({{site.baseurl}}/zk_dev_ref/mvc/composer)
 or in [a richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)), you
 could skip this section (since you could use the approach described in
 any EJB guide).
@@ -16,7 +16,7 @@ any EJB guide).
 # Use JndiVariableResolver to Resolve EJB in EL Expressions
 
 Referencing an EJB in an EL expression is straightforward: specifying
-[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) in [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) in [the variable-resolver directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver).
 For example,
 
 ```xml
@@ -99,7 +99,7 @@ Then, we could access them as follows.
 
 The variables provided by a variable resolver is also available to the
 Java code in
-[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml).
+[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml).
 For example,
 
 ```xml

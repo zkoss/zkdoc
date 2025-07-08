@@ -1,6 +1,6 @@
 # Component Reference
 
-Component Reference: [ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox)
+Component Reference: [ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox)
 
 # DOM Structure
 

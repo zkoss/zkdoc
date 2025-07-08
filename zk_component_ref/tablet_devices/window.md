@@ -3,7 +3,7 @@
 # Window
 
 - Component Reference:
-  [Window]({{site.baseurl}}/zk_component_ref/containers/window)
+  [Window]({{site.baseurl}}/zk_component_ref/window)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

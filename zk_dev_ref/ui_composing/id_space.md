@@ -107,7 +107,7 @@ above, if C calls `getSpaceOwner` it will get C itself, if C calls
 With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
 don't need to look up fellows manually. Rather, they could be *wired*
 automatically by using the
-[auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
+[auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables)
 feature of [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller). For
 example,
 
@@ -137,7 +137,7 @@ apply attribute as shown below.
 Once the ZUML document above is rendered, an instance of MyComposer will
 be instantiated, and the `input` member will also be initialized with
 the fellow named `input`. This process is called "auto-wiring". For more
-information, please refer to the [Wire Components]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components)
+information, please refer to the [Wire Components]({{site.baseurl}}/zk_dev_ref/mvc/wire_components)
 section.
 
 # Find Component Manually
@@ -226,7 +226,7 @@ In general, UUID is independent of ID. UUID is assigned (generated) automaticall
 ZK framework, while ID is assigned by the application developers. However, if a component
 implements [org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html),
 ID will become UUID if the application assigns one. Currently, only
-components from [ the XHTML component set](ZUML_Reference/ZUML/Languages/XHTML) implements
+components from [ the XHTML component set](zuml_ref/ZUML/Languages/XHTML) implements
 [org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html).
 
 A component's UUID is used by the ZK framework as the primary identifier for the corresponding HTML element in the rendered page. When ZK generates the client-side DOM, each component's root HTML element will have its `id` attribute set to the component's UUID. This ensures that every component can be uniquely referenced and manipulated on the client side, even if multiple components have the same developer-assigned ID within different ID spaces. The UUID is also used internally by ZK for event handling, client-server communication, and to maintain the mapping between server-side components and their client-side representations.

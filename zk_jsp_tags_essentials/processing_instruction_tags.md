@@ -15,6 +15,6 @@ The shall be placed outside of `<zk:page>`. For example:
 </zk:page>
 ```
 
-Not all ZUML's [processing instructions](ZUML_Reference/ZUML/Processing_Instructions)
+Not all ZUML's [processing instructions](zuml_ref/ZUML/Processing_Instructions)
 are available in ZK JSP Tags. Here is a list of the supported processing
 instruction tags.

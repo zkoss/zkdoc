@@ -51,7 +51,7 @@ macro component. Then we could create a page, say
 ## Declare Macro Component
 
 Before using a macro component, you have to declare it first. It is
-straightforward to use [component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+straightforward to use [component directives](zuml_ref/ZUML/Processing_Instructions/component).
 For example, we could add the first line to the page that is going to
 use the *username* macro component:
 
@@ -115,7 +115,7 @@ ${arg.includer.parent}
 
 Notice that `arg.includer` is different from the so-called inline
 macros. The inline macros are special macro components and used for
-inline expansion. For more information please refer to [Inline Macros]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/inline_macros)
+inline expansion. For more information please refer to [Inline Macros]({{site.baseurl}}/zk_dev_ref/ui_composing/inline_macros)
 section.
 
 ## Pass Initial Properties
@@ -188,7 +188,7 @@ ua.setParent(wnd);
 ua.setWho("Joe");
 ```
 
-Please refer to the [Implement Custom Java Class]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class)
+Please refer to the [Implement Custom Java Class]({{site.baseurl}}/zk_dev_ref/ui_composing/implement_custom_java_class)
 section for details.
 
 ## Change Template at Runtime

@@ -179,7 +179,7 @@ stack
 
 # Supported Children
 
-`*`[` GoldenPanel`]({{site.baseurl}}/zk_component_ref/goldenlayout/goldenpanel)
+`*`[` GoldenPanel`]({{site.baseurl}}/zk_component_ref/goldenpanel)
 
 # Version History
 

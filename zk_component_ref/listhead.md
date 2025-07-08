@@ -167,7 +167,7 @@ For example,
 
 # Supported Children
 
-`*`[` Listheader `]({{site.baseurl}}/zk_component_ref/listbox/listheader)
+`*`[` Listheader `]({{site.baseurl}}/zk_component_ref/listheader)
 
 # Use Cases
 

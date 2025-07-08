@@ -467,7 +467,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 # Supported Children
 
-`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/combobox/comboitem)
+`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/comboitem)
 
 # Use Cases
 

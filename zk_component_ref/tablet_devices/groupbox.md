@@ -1,7 +1,7 @@
 # Groupbox
 
 - Component Reference:
-  [Groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox)
+  [Groupbox]({{site.baseurl}}/zk_component_ref/groupbox)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Enforce 3D Mold

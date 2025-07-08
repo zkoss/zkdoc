@@ -36,7 +36,7 @@ zk.xml
  </device-config>
 ```
 
-Refer to [The server-push-class Element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
+Refer to [The server-push-class Element]({{site.baseurl}}/zk_config_ref/the_server-push-class_element)
 and [Server Push Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration)
 
 

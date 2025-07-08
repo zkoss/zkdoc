@@ -14,7 +14,7 @@ attribute.
 
 To retrieve the index of the iteration, or the previous `each` object in
 nested forEach, you have to use another implicit object called
-[forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus).
+[forEachStatus](zuml_ref/EL_Expressions/Implicit_Objects/forEachStatus).
 
 ```xml
 <listbox forEach="${matrix}">
@@ -56,6 +56,6 @@ attributes
 However, the value of `each` is reset after the XML element that
 `forEach` is associated has been evaluated. Thus, you cannot access it
 in an event listener, unless you store the value first. For more
-information, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
+information, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/iterative_evaluation).
 
 

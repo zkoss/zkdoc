@@ -6,7 +6,7 @@ of some sections of components, until necessary, such as becoming
 visible. This technique is called load-on-demand or render-on-demand.
 
 For example, you could split a ZUML document into multiple pages, and
-then load the required ones when necessary. Please refer to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)
+then load the required ones when necessary. Please refer to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java)
 section for how to load a ZUML document dynamically.
 
 It improves the performance both at the server and client sides. It is
@@ -17,7 +17,7 @@ simplify the implementation as described in the following section.
 # Load-on-Demand with the fulfill Attribute
 
 The simplest way to defer the creation of the child components is to use
-[the fulfill attribute](ZUML_Reference/ZUML/Attributes/fulfill). For
+[the fulfill attribute](zuml_ref/ZUML/Attributes/fulfill). For
 example, the
 [comboitem]({{site.baseurl}}/zk_component_ref/comboitem) in the
 following code snippet will not be created, until the
@@ -129,7 +129,7 @@ matter which condition is satisfied.
 If you specify an URI without any conditions, the ZUML document of the
 URI will be loaded from the very beginning. In other words, it has the
 same effect as using
-[include]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include).
+[include]({{site.baseurl}}/zk_dev_ref/ui_composing/include).
 
 ```xml
 <div fulfill="=another.zul"/>

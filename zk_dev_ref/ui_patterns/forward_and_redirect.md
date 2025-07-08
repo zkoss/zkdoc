@@ -4,7 +4,7 @@ A Web application jumping from one URL to another is usually caused by
 the user's click on a hyperlink, such as clicking on a
 [button]({{site.baseurl}}/zk_component_ref/button),
 [toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton),
-[menuitem]({{site.baseurl}}/zk_component_ref/menu/menuitem)
+[menuitem]({{site.baseurl}}/zk_component_ref/menuitem)
 and [a]({{site.baseurl}}/zk_component_ref/a) that
 is associated with the `href` attribute.
 
@@ -95,7 +95,7 @@ Sometimes we have to forward to another page. For example, when a user
 visits a page that requires authorization, we could forward it to a
 login page[^2].
 
-The simplest way is to use the [forward directive](ZUML_Reference/ZUML/Processing_Instructions/forward):
+The simplest way is to use the [forward directive](zuml_ref/ZUML/Processing_Instructions/forward):
 
 ```xml
 <?forward uri="/login.zul" if="${!foo:isLogin()}"?>
@@ -103,7 +103,7 @@ The simplest way is to use the [forward directive](ZUML_Reference/ZUML/Processin
 
 where we assume `isLogin` is an EL function that returns whether the
 user has logged in. For more information, please refer to the
-[Conditional Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/conditional_evaluation)
+[Conditional Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/conditional_evaluation)
 section.
 
 You could forward to another page by the use of

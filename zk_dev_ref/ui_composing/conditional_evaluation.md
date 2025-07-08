@@ -25,12 +25,12 @@ Here is another example:
 </window>
 ```
 
-- [window]({{site.baseurl}}/zk_component_ref/containers/window) is
+- [window]({{site.baseurl}}/zk_component_ref/window) is
   created only if `a` is 1 and `b` is not 2.
 
 # Switch and Case
 
-With the `switch` and `case` attributes of [the `zk` element](ZUML_Reference/ZUML/Elements/zk), you can evaluate a
+With the `switch` and `case` attributes of [the `zk` element](zuml_ref/ZUML/Elements/zk), you can evaluate a
 section of a ZUML document only if a variable matches a certain value.
 It is similar to Java's switch statement.
 
@@ -86,7 +86,7 @@ below.
 
 ## Used with forEach
 
-Like any other elements, you can use the [forEach attribute]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation)
+Like any other elements, you can use the [forEach attribute]({{site.baseurl}}/zk_dev_ref/ui_composing/iterative_evaluation)
 (so are if and unless). The `forEach` attribute is evaluated first, so
 the following is the same as multiple cases.
 
@@ -102,7 +102,7 @@ is equivalent to
 
 # Choose and When
 
-The `choose` and `when` attributes of [the `zk` element](ZUML_Reference/ZUML/Elements/zk) are the third
+The `choose` and `when` attributes of [the `zk` element](zuml_ref/ZUML/Elements/zk) are the third
 approach of conditional evaluation.
 
 As shown below, it is enclosed with a `zk` element with the `choose`

@@ -67,11 +67,11 @@ tabpanel components.
 
 # Supported Children
 
-[ Tabpanel]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanel)
+[ Tabpanel]({{site.baseurl}}/zk_component_ref/tabbox/tabpanel)
 
 # Use Cases
 
-[ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
+[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
 
 # Version History
 

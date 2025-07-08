@@ -134,7 +134,7 @@ After the loading is completed, you could invoke
 [org.zkoss.zk.ui.util.Clients#clearBusy(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#clearBusy(org.zkoss.zk.ui.Component))
 (or
 [org.zkoss.zk.ui.util.Clients#clearBusy()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#clearBusy()))to
-clean it up. For more information, please refer to the [Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
+clean it up. For more information, please refer to the [Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_echo_events)
 section.
 
 ## Log the Message to Browser

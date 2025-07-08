@@ -262,7 +262,7 @@ another thread**. There is **no current execution** available. It is
 long operation without blocking users from accessing other UI in a
 browser.
 
-For more information and examples, please refer to [the Long Operations: Use Event Queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
+For more information and examples, please refer to [the Long Operations: Use Event Queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_event_queues)
 section.
 
 # Clean Up

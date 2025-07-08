@@ -28,7 +28,7 @@ access them directly.
 Notice that if you have a variable resolver used for every page, you
 don't have to declare it on every page. Rather, you could register a
 system-level variable resolver. For more information, please refer to
-[ZK Developer's Reference: System-level Variable Resolvers]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#System-level_Variable_Resolver).
+[ZK Developer's Reference: System-level Variable Resolvers]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#System-level_Variable_Resolver).
 
 # class
 

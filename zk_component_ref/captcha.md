@@ -66,7 +66,7 @@ a purposive text.
 
 Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
-[ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/setting_up_os/linux).
+[ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/linux).
 
 # Version History
 

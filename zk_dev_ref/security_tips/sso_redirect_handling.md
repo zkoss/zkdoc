@@ -54,7 +54,7 @@ First, configure your SSO server or the security filter to return the
 response code **403 Forbidden** instead of 302 for the situation
 mentioned above (session expired or invalid access token).
 
-Then, configure [ the error-reload Element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
+Then, configure [ the error-reload Element]({{site.baseurl}}/zk_config_ref/the_error-reload_element),
 so that ZK can handle 403 by reloading the specified login page.
 
 In some special setups, you might need to override javascript function

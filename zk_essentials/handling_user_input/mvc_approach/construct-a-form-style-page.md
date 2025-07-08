@@ -28,8 +28,8 @@ We build the frame of this form first:
 ```
 
 -   Line 4, 5:
-    [`<caption>`]({{site.baseurl}}/zk_component_ref/containers/caption)
-    can be used to build compound header with an image for a [`<window>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/containers/window ).
+    [`<caption>`]({{site.baseurl}}/zk_component_ref/caption)
+    can be used to build compound header with an image for a [`<window>`]({{site.baseurl}}/zk_component_ref/window ).
 -   Line 6: [`<vlayout>`]({{site.baseurl}}/zk_component_ref/vlayout) is
     a light-weight layout component which arranges its child components
     vertically without splitter, align, and pack support.
@@ -100,7 +100,7 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
 ```
 - Line 3: [`hflex="min"`]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility) can limit the column's width just wider enough to hold each row's content without a line break.
 -   Line 8:
-[`<cell>`](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_component_ref/supplementary/cell) is
+[`<cell>`]({{site.baseurl}}/zk_component_ref/supplementary/cell) is
     used inside `<row>`, `<hbox>`, or `<vbox>` to fully control a column's align, row/column span, and width in an individual row.
 
 

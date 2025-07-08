@@ -111,7 +111,7 @@ or
 {% include version-badge.html version=6.0.0 %}
 
 Like a listbox, radiogroup supports
-[ListModel]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model),
+[ListModel]({{site.baseurl}}/zk_dev_ref/mvc/list_model),
 so that developers are able to separate the data from the view. In other
 words, developers only need to provide the data by implementing the
 [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) interface,

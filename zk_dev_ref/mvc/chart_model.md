@@ -1,6 +1,6 @@
 Here we describe how to implement a chart model
 ([org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html)). For the
-concept of component, model and render, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+concept of component, model and render, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 
 Depending on the type of chart you want, you could implement one of
 [org.zkoss.zul.PieModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/PieModel.html),

@@ -54,9 +54,9 @@ controller's control.
 ## Wire Components
 To control a component, we must get its object reference. In
 `org.zkoss.zk.ui.select.SelectorComposer`, when you
-specify a [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components) annotation on a field or setter method, the
+specify a [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/wire_components) annotation on a field or setter method, the
 `SelectorComposer` will automatically find the component and assign it to the field or pass it into the setter method. By default
-`SelectorComposer` locates the component whose ID and type both match the variable name and type respectively in the zul, and `@Wire` also supports [selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components) to wire.
+`SelectorComposer` locates the component whose ID and type both match the variable name and type respectively in the zul, and `@Wire` also supports [selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/wire_components) to wire.
 
 I can specify a component's ID to get wired by default selector in a controller.
 **chapter2/sidebar.zul**
@@ -83,7 +83,7 @@ public class SidebarChapter2Controller extends SelectorComposer<Component>{
 ## Initialize the View
 It is very common that we need to initialize components when a zul file
 is loaded. In our example, we need to create `<row>` in `<grid>` for
-the sidebar, therefore we should override a [ composer life-cycle method](https://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/mvc/controller/composer#Lifecycle)
+the sidebar, therefore we should override a [ composer life-cycle method]({{site.baseurl}}/zk_dev_ref/mvc/composer#Lifecycle)
 `doAfterCompose(Component)`. The passed argument, `comp`, is the
 component that the controller applies to, which in our example is the
 `Grid`. ZK will call this method after the applied component, `<grid>` , and its all child components are created, so we can change components' attributes or even create other components in it.

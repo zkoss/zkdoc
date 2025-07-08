@@ -106,9 +106,9 @@ Example:
 you can also render Organigram with your customized Renderer and
 Template, please refer to:
 
-[Organigram Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template/organigram_template)
+[Organigram Template]({{site.baseurl}}/zk_dev_ref/mvc/organigram_template)
 
-[Organigram Renderer]({{site.baseurl}}/zk_dev_ref/mvc/view/renderer/organigram_renderer)
+[Organigram Renderer]({{site.baseurl}}/zk_dev_ref/mvc/organigram_renderer)
 
 # Supported Events
 
@@ -143,7 +143,7 @@ the user has selected a new item in the organigram.</p></td>
 
 # Supported Children
 
-`*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/organigram/orgchildren)
+`*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/orgchildren)
 
 # Version History
 

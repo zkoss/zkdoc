@@ -2,7 +2,7 @@
 
 Here we describe how to implement a matrix model
 ([org.zkoss.zkmax.zul.MatrixModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixModel.html)).
-For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 
 By default, ZK does not provide a built-in model implementation class
 for *MatrixModel* because [ Biglistbox]({{site.baseurl}}/zk_component_ref/biglistbox) is
@@ -153,7 +153,7 @@ model data has been changed.
 ## Notify for Data Updates
 
 *MatrixModel* is the same as *ListModel* when notify for data updates,
-please refer to [ ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Notify_for_Data_Updates)
+please refer to [ ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Notify_for_Data_Updates)
 
 ## Resource
 

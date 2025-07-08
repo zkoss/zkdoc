@@ -113,7 +113,7 @@ is changed. Then, you could do as follows:
 </label>
 ```
 
-For more information, please refer to [ZK Client-side Reference: Widget Customization]({{site.baseurl}}/zk_client_side_ref/general_control/widget_customization).
+For more information, please refer to [ZK Client-side Reference: Widget Customization]({{site.baseurl}}/zk_client_side_ref/widget_customization).
 
 ## Custom Effects
 

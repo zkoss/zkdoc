@@ -101,7 +101,7 @@ In addition, you could implement
 [org.zkoss.zk.ui.Richlet#getLanguageDefinition()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#getLanguageDefinition())
 to use a different language as default (for example, implementing a
 richlet for [mobile devices](http://code.google.com/p/zkreach/)). By
-default, [ZUL](ZUML_Reference/ZUML/Languages/ZUL) (aka.,
+default, [ZUL](zuml_ref/ZUML/Languages/ZUL) (aka.,
 xul/html) is assumed.
 
 ## Richlet Must Be Thread-Safe
@@ -258,7 +258,7 @@ methods, such as
 [org.zkoss.zk.ui.Execution#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)),
 allowing developers to load ZUML documents dynamically. You could load a
 ZUML document from any source you like, such as database. Please refer
-to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java)
+to the [Load ZUML in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java)
 for details.
 
 # Use Spring in Richlet

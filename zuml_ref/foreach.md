@@ -43,9 +43,9 @@ associated element.
 
 When ZK Loader iterates through items of the give collection, it will
 update two implicit objects:
-[each](ZUML_Reference/EL_Expressions/Implicit_Objects/each)
+[each](zuml_ref/EL_Expressions/Implicit_Objects/each)
 and
-[forEachStatus](ZUML_Reference/EL_Expressions/Implicit_Objects/forEachStatus).
+[forEachStatus](zuml_ref/EL_Expressions/Implicit_Objects/forEachStatus).
 The each variable represents the item being iterated, while
 forEachStatus is an instance of
 [org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html),
@@ -54,10 +54,10 @@ any.
 
 If you prefer to iterate only a portion of a collection, you could
 specify
-[forEachBegin](ZUML_Reference/ZUML/Attributes/forEachBegin)
+[forEachBegin](zuml_ref/ZUML/Attributes/forEachBegin)
 and/or
-[forEachEnd](ZUML_Reference/ZUML/Attributes/forEachEnd).
+[forEachEnd](zuml_ref/ZUML/Attributes/forEachEnd).
 
-Fore more examples, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/iterative_evaluation).
+Fore more examples, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/iterative_evaluation).
 
 

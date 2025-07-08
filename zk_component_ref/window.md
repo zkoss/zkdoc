@@ -134,7 +134,7 @@ depicted below.
 ```
 
 where we specify `position="parent"`, and make it as a child of a
-[span]({{site.baseurl}}/zk_component_ref/containers/span) component. The
+[span]({{site.baseurl}}/zk_component_ref/span) component. The
 span component acts as an anchor point and the window is posited based
 on it.
 

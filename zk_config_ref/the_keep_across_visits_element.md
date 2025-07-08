@@ -28,7 +28,7 @@ of the server side cache is [OpenSymphony CacheFilter](http://www.opensymphony.c
   at the server, unless
   1.  You apply a special mechanism to cache the generated HTML pages,
       such as OpenSymphony described above.
-  2.  You turn on the cacheable flag with [the page directive](ZUML_Reference/ZUML/Processing_Instructions/page)
+  2.  You turn on the cacheable flag with [the page directive](zuml_ref/ZUML/Processing_Instructions/page)
 - Don't turn on this option, if you [reuse the desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops)
   by use of
   [org.zkoss.zk.ui.util.DesktopRecycle](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopRecycle.html).

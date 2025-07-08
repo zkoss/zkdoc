@@ -70,7 +70,7 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 ## Use `labels`
 
 Since 5.0.7 and later, an implicit object called
-[labels](ZUML_Reference/EL_Expressions/Implicit_Objects/labels)
+[labels](zuml_ref/EL_Expressions/Implicit_Objects/labels)
 was introduced, such that you could access the internationalization
 labels (so-called internationalization labels) directly. For example,
 assume you have a label called `app.title`, and then you could:
@@ -82,7 +82,7 @@ assume you have a label called `app.title`, and then you could:
 ```
 
 The
-[labels](ZUML_Reference/EL_Expressions/Implicit_Objects/labels)
+[labels](zuml_ref/EL_Expressions/Implicit_Objects/labels)
 object is a map (`java.util.Map`), so you could access the label
 directly by the use of `labels.`*`whatever`* in an EL expression.
 Moreover, as shown above, you could access the label even if a key is
@@ -145,11 +145,11 @@ With 5.0.6 or prior, you could get an internationalization label using
 </window>
 ```
 
-Notice that [the l function](ZUML_Reference/EL_Expressions/Core_Methods/l)
+Notice that [the l function](zuml_ref/EL_Expressions/Core_Methods/l)
 belongs to the TLD file called
-[<http://www.zkoss.org/dsp/web/core>](ZUML_Reference/EL_Expressions/Core_Methods),
+[<http://www.zkoss.org/dsp/web/core>](zuml_ref/EL_Expressions/Core_Methods),
 so we have to specify it with the
-[taglib](ZUML_Reference/ZUML/Processing_Instructions/taglib)
+[taglib](zuml_ref/ZUML/Processing_Instructions/taglib)
 directive as shown above.
 
 ## Use `c:l2('key')` to format the message
@@ -157,7 +157,7 @@ directive as shown above.
 If you'd like to use the label as a pattern to generate concatenated
 message with additional arguments (like
 [`java.text.MessageFormat`](https://docs.oracle.com/javase/8/docs/api/java/text/MessageFormat.html)
-does), you could use [the l2 function](ZUML_Reference/EL_Expressions/Core_Methods/l2).
+does), you could use [the l2 function](zuml_ref/EL_Expressions/Core_Methods/l2).
 
 For example, let us assume we want to generate a full name based on the
 current Locale, then we could use `${c:l2('key',args)}` to generate
@@ -215,7 +215,7 @@ such as `"{1}, {0}"`.
 
 It is typical to partition the properties file into several modules for
 easy maintenance. Since 5.0.7 and later, you could specify the location
-for each of these properties file with [the label-location element]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_label-location_element).
+for each of these properties file with [the label-location element]({{site.baseurl}}/zk_config_ref/the_label-location_element).
 For example,
 
 ```xml
@@ -367,7 +367,7 @@ public class MyAppInit implements org.zkoss.zk.ui.util.WebAppInit {
 where we assume `moduleX` and `moduleY` are the database tables to load
 the properties, and `module-1.properties` and `module-2.properties` are
 two modules of messages you provide. Then, you configure it in
-`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_listener_element/the_org.zkoss.zk.ui.util.webappinit_interface).
+`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_org.zkoss.zk.ui.util.webappinit_interface).
 
 > ------------------------------------------------------------------------
 >
@@ -393,7 +393,7 @@ Test result: ${foo} ${another.whatever}
 
 If you prefer to use other implementation (such as property bundle), you
 could implement a static method and map it with
-[xel-method](ZUML_Reference/ZUML/Processing_Instructions/xel-method).
+[xel-method](zuml_ref/ZUML/Processing_Instructions/xel-method).
 Then, you could reference it in EL expressions. For example,
 
 ```xml
@@ -419,7 +419,7 @@ ${c:label('another.key')}
 [^2]: If you prefer a different charset, please refer to [the Encoding Character Set section](#Encoding_character_set).
 
 [^3]: Please refer to
-    [here]({{site.baseurl}}/zk_dev_ref/internationalization/labels/the_format_of_properties_files)
+    [here]({{site.baseurl}}/zk_dev_ref/internationalization/the_format_of_properties_files)
     for more details about the format of a properties file, such as the
     use of multiple lines and EL expressions.
 
@@ -429,6 +429,6 @@ ${c:label('another.key')}
 [^5]: For more information about the URI of a file, please refer to
     [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).
 
-[^6]: For 5.0.7 and later, you could use [the label-location element]({{site.baseurl}}/zk_config_ref/the_system-config_element/the_label-location_element)
+[^6]: For 5.0.7 and later, you could use [the label-location element]({{site.baseurl}}/zk_config_ref/the_label-location_element)
     if the properties file is located in the file system or in the Web
     application as described in the previous section.

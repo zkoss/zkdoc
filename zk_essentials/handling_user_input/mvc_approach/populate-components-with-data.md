@@ -3,7 +3,7 @@ When a user visits this page, we want profile data to be loaded in
 the form and ready to be modified. Hence, we should initialize those
 input components in a controller by loading previously-saved data to input components.
 
-To manipulate components, we need to get their object reference by [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
+To manipulate components, we need to get their object reference by [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/wire_components).
 
 ```java
 public class ProfileViewController extends SelectorComposer<Component>{
@@ -134,7 +134,7 @@ The last part is to define a template, so that `<listbox>` can know how to rende
     </template>
 </listbox>
 ```
-- Line 2: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](ZK_Developer's_Reference/mvc/View/Template/Listbox_Template).
+- Line 2: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](zk_dev_ref/mvc/View/Template/Listbox_Template).
 -   Line 3: The `${each}` is an implicit variable that you can use
     without declaration inside `<template>`, and it represents one object of the data model for each iteration when rendering. We use
     this variable with dot notation at component attributes to reference a data object's property . In our example, we just set it at `<listitem>`'s label.
@@ -144,7 +144,7 @@ When a user visits this page, we want profile data to be loaded in
 the form and ready to be modified. Hence, we should initialize those
 input components in a controller by loading previously-saved data to input components.
 
-To manipulate components, we need to get their object reference by [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components).
+To manipulate components, we need to get their object reference by [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/wire_components).
 
 ```java
 public class ProfileViewController extends SelectorComposer<Component>{

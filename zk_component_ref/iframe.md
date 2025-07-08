@@ -143,11 +143,11 @@ If you'd like to do something when iframe's content has been loaded, you
 could listen to the `onload` event. However, unlike onChange and others,
 you could not listen the widget-level event
 ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html) and listened by use of
-[Client-side Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening)),
+[Client-side Event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening)),
 because the onload event might be fired before the widget has been bound
 to DOM.
 
-Rather, you shall use [the client-attribute namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+Rather, you shall use [the client-attribute namespace](zuml_ref/ZUML/Namespaces/Client_Attribute)
 to register a DOM-level listener as follows.
 
 ```xml

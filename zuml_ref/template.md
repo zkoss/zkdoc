@@ -33,7 +33,7 @@ identified by the **name** attribute.
 How a template is used depends on the component it associates with and
 the tools you use. Currently, all components that support the concept of
 model allow you to specify a template for each item to render. For more
-information, please refer to [ZK Developer's Reference: Template]({{site.baseurl}}/zk_dev_ref/mvc/view/template).
+information, please refer to [ZK Developer's Reference: Template]({{site.baseurl}}/zk_dev_ref/mvc/template).
 
 ## name
 

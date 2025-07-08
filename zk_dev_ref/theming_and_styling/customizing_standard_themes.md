@@ -5,7 +5,7 @@ breeze and silver gray.
 
 # Customize standard themes using theme template
 
-Please see [ZK Developer's Reference/Theming and Styling/Creating Custom Themes/Theme Template]({{site.baseurl}}/zk_dev_ref/theming_and_styling/creating_custom_themes/theme_template).
+Please see [ZK Developer's Reference/Theming and Styling/Creating Custom Themes/Theme Template]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_template).
 
 # Change Font Size and Family
 

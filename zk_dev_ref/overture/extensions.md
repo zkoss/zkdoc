@@ -35,10 +35,6 @@ browser or a server.
 ZK CDT is a component development tool which provides wizards to
 simplify the creation of ZK components.
 
-## [ZK Jet](ZK_Jet)
-
-ZK Jet is a browser extension that works with Firefox and Google Chrome.
-This provides users with a ZK sandbox environment.
 
 ## [run-jetty-run](http://code.google.com/p/run-jetty-run/)
 
@@ -117,7 +113,7 @@ sums up the original data layout.
 ZK Calendar is a ZK component enabling rich and intuitive scheduling
 functionality to ZK applications.
 
-## [ZUSS](ZUSS_Reference)
+## ZUSS
 
 ZUSS (ZK User-interface Style Sheet) is an extension to CSS. It is
 compatible with CSS, while allows the dynamic content, such as

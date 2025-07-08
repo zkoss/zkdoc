@@ -35,28 +35,28 @@ For configuring Apache + Tomcat, please refer to
 
 More detail settings
 
-- [ Tomcat Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
+- [ Tomcat Cluster]({{site.baseurl}}/zk_installation_guide/tomcat_cluster)
 
 # Google App Engine
 
 For configuring Google App Engine, please refer to
 
-- [ZK Installation Guide: Google App Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
+- [ZK Installation Guide: Google App Engine]({{site.baseurl}}/zk_installation_guide/google_app_engine)
 
 # Apache + JBoss
 
 For configuring JBoss, please refer to
 
-- [ JBoss Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
+- [ JBoss Cluster]({{site.baseurl}}/zk_installation_guide/jboss_cluster)
 
 # Glassfish
 
 For configuring Glassfish, please refer to
 
-- [ Glassfish Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/glassfish_cluster)
+- [ Glassfish Cluster]({{site.baseurl}}/zk_installation_guide/glassfish_cluster)
 
 # WebLogic
 
 For configuring WebLogic, please refer to
 
-- [ WebLogic Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)
+- [ WebLogic Cluster]({{site.baseurl}}/zk_installation_guide/weblogic_cluster)

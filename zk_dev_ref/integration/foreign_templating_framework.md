@@ -5,8 +5,8 @@ using Ajax to request ZUL pages separately in a foreign templating
 framework[^1].
 
 You could skip this chapter if you'd like to use ZK's templating
-technology, such as [Templating: composition]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating/composition),
-[Servlet's inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include)
+technology, such as [Templating: composition]({{site.baseurl}}/zk_dev_ref/ui_patterns/composition),
+[Servlet's inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/include)
 (javax.servlet.RequestDispatcher's include) and [macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component).
 
 ZK also supports many powerful layout components, such as portallayout,

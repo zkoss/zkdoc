@@ -129,7 +129,7 @@ always returning True (meaning that by default, all TreeItems will be
 marked as selectable during rendering)
 
 Refer to
-[{{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Selection]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Selection)
+[{{site.baseurl}}/zk_dev_ref/mvc/tree_model#Selection]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#Selection)
 in regard to SelectionControl customization.
 
 # Supported Events
@@ -163,7 +163,7 @@ time the component is opened.</p></td>
 
 # Supported Children
 
-`*`[` Treerow`]({{site.baseurl}}/zk_component_ref/tree/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/tree/treechildren)
+`*`[` Treerow`]({{site.baseurl}}/zk_component_ref/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/treechildren)
 
 # Use Cases
 

@@ -3,7 +3,7 @@
 EL Expression in Data Binding
 =============================
 In ZK bind annotation, we adopt EL expression to specify a binding target and reference an implicit object. The binding target is mostly a ViewModel's (nested) properties. You can use EL expression in a ZUL
-which is described in the section [ZK Developer's Reference/UIComposing/ZUML/EL Expressions]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions). But using EL in ZK bind annotation is a little bit different in format and evaluation.
+which is described in the section [ZK Developer's Reference/UIComposing/ZUML/EL Expressions]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions). But using EL in ZK bind annotation is a little bit different in format and evaluation.
 
 Basic Format
 ------------
@@ -152,5 +152,5 @@ A static field or static method of a Java class can be referenced with the synta
 ```xml
 <label value="@load((Math.sqrt(16)))" />
 ```
-You need to import required pakcage/class by [import directive](ZUML_Reference/ZUML/Processing_Instructions/import).
+You need to import required pakcage/class by [import directive](zuml_ref/ZUML/Processing_Instructions/import).
 Note that `java.lang.*` is imported by default. 

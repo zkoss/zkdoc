@@ -33,7 +33,7 @@ For example:
     </grid>
 ```
 
-Then, you could implement [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+Then, you could implement [a composer]({{site.baseurl}}/zk_dev_ref/mvc/composer)
 as follows.
 
 ```java
@@ -76,7 +76,7 @@ Also notice that, if a button gains the focus, ENTER will be intercepted
 by the browser and interpreted as pressed. For example, if you move the
 focus to the Reset button and press ENTER, you will receive `onCancel`
 rather than `onOK` (since `onClick` will be fired and it is converted to
-`onCancel` because of [the forward attribute](ZUML_Reference/ZUML/Attributes/forward)
+`onCancel` because of [the forward attribute](zuml_ref/ZUML/Attributes/forward)
 specified).
 
 # Control Keys

@@ -131,7 +131,7 @@ Here is the effect with different borders:
 
 ## Title
 
-Besides this attribute, you could use [ Caption]({{site.baseurl}}/zk_component_ref/containers/caption) to define
+Besides this attribute, you could use [ Caption]({{site.baseurl}}/zk_component_ref/caption) to define
 a more sophisticated caption (aka., title). If the panel has a caption
 whose label [org.zkoss.zul.Caption#getLabel()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html#getLabel())
 is not empty, then this attribute is ignored. (Default: empty).
@@ -283,7 +283,7 @@ The</p>
 
 # Supported Children
 
-- [ Panelchildren]({{site.baseurl}}/zk_component_ref/containers/panel/panel_children)
+- [ Panelchildren]({{site.baseurl}}/zk_component_ref/panel/panel_children)
 
 # Use Cases
 

@@ -12,7 +12,7 @@ The label is based on the current Locale
 ([org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent())).
 
 > For 5.0.7 and later, an implicit object called
-> [labels](ZUML_Reference/EL_Expressions/Implicit_Objects/labels)
+> [labels](zuml_ref/EL_Expressions/Implicit_Objects/labels)
 > was introduced, and it is more convenient to use.
 
 For example,

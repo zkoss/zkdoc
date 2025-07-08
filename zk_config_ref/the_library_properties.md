@@ -16,7 +16,7 @@ affects the whole system, not just one web application.
 
 To make a library property effective for the whole application,
 configure it in `WEB-INF/zk.xml`. For more information, please refer to
-[ zk.xml]({{site.baseUrl}}/zk_config_ref/The_library-property_Element).
+[ zk.xml]({{site.baseUrl}}/zk_config_ref/the_library_property_element).
 
 For example,
 

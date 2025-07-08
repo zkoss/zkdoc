@@ -62,7 +62,7 @@ For example,
 # IconSclass
 
 Allow you to specify built-in icon CSS classes, see
-[{{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome]({{site.baseurl}}/zk_dev_ref/integration/presentation_layer/font_awesome)
+[{{site.baseurl}}/zk_dev_ref/integration/font_awesome]({{site.baseurl}}/zk_dev_ref/integration/font_awesome)
 
 # Supported Events
 

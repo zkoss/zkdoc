@@ -11,7 +11,7 @@ zAu.ajaxErrorHandler = function (req, status, statusText, ajaxReqTries) {
         ajaxReqTries = 3; // retry 3 times
         
     // reset the resendTimeout, for more detail, please refer to 
-    // (/zk_config_ref/The_client-config_Element/The_auto-resend-timeout_Element 
+    // (/zk_config_ref/The_auto-resend-timeout_Element 
     zk.resendTimeout = 2000;//wait 2 seconds to resend.
     
     if (!zAu.confirmRetry("FAILED_TO_RESPONSE", status+(statusText?": "+statusText:"")))

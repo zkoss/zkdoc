@@ -53,4 +53,4 @@ Though it is not necessary for inter-application communication, you
 could, with ZK, reference a resource that is locatable by the classpath.
 The advantage is that you could embed Web resources in a JAR file, which
 simplifies the deployment. Please read
-[Include_a_Page#Classpath_Web_Resource_Path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path).
+[Include_a_Page#Classpath_Web_Resource_Path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path).

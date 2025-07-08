@@ -60,7 +60,7 @@ setHeight(String) are read-only.
 
 # Use Cases
 
-[ Panel]({{site.baseurl}}/zk_component_ref/containers/panel#Use_Cases)
+[ Panel]({{site.baseurl}}/zk_component_ref/panel#Use_Cases)
 
 # Version History
 

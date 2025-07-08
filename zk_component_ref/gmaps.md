@@ -164,11 +164,11 @@ Specify which protocol to load the Maps API. Currently it supports
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item(can be <a
-href="{{site.baseurl}}/zk_component_ref/gmaps/ginfo"
+href="{{site.baseurl}}/zk_component_ref/ginfo"
 title="wikilink"> Ginfo</a>, <a
-href="{{site.baseurl}}/zk_component_ref/gmaps/gpolyline"
+href="{{site.baseurl}}/zk_component_ref/gpolyline"
 title="wikilink"> Gpolyline</a>, or <a
-href="{{site.baseurl}}/zk_component_ref/gmaps/gpolygon"
+href="{{site.baseurl}}/zk_component_ref/gpolygon"
 title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
 </tr>
 <tr class="even">
@@ -404,7 +404,7 @@ then add it into WEB-INF/zk.xml
 
 # Supported Children
 
-`*`[` Ginfo`]({{site.baseurl}}/zk_component_ref/gmaps/ginfo)`, `[` Gmarker`]({{site.baseurl}}/zk_component_ref/gmaps/gmarker)`,`[` Gpolyline`]({{site.baseurl}}/zk_component_ref/gmaps/gpolyline)`,`[` Gpolygon`]({{site.baseurl}}/zk_component_ref/gmaps/gpolygon)`,`[` Gimage`]({{site.baseurl}}/zk_component_ref/gmaps/gimage)`,`[` Gscreen`]({{site.baseurl}}/zk_component_ref/gmaps/gscreen)`,`[` Gcircle`]({{site.baseurl}}/zk_component_ref/gmaps/gcircle)
+`*`[` Ginfo`]({{site.baseurl}}/zk_component_ref/ginfo)`, `[` Gmarker`]({{site.baseurl}}/zk_component_ref/gmarker)`,`[` Gpolyline`]({{site.baseurl}}/zk_component_ref/gpolyline)`,`[` Gpolygon`]({{site.baseurl}}/zk_component_ref/gpolygon)`,`[` Gimage`]({{site.baseurl}}/zk_component_ref/gimage)`,`[` Gscreen`]({{site.baseurl}}/zk_component_ref/gscreen)`,`[` Gcircle`]({{site.baseurl}}/zk_component_ref/gcircle)
 
 # Trouble Shooting
 

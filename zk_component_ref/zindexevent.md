@@ -13,7 +13,7 @@ the client. A z-indexed component must send ZindexEvent once the z-index
 of component is modifiable by the client.
 
 The components which are supported this event are:
-[Window]({{site.baseurl}}/zk_component_ref/containers/window).
+[Window]({{site.baseurl}}/zk_component_ref/window).
 
 # Example
 

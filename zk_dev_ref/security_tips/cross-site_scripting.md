@@ -47,13 +47,13 @@ so it's encoded, too.
 ## Components used to Generate HTML Directly
 
 ZK provides several ways to write HTML tags in a zul, including
-\[\[{{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component
+\[\[{{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component
 \| ZK
 
 <html>
 
-component\]\], [ native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace),
-and [ xhtml components]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_xhtml_component_set).
+component\]\], [ native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace),
+and [ xhtml components]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_xhtml_component_set).
 Since their purpose is to allow you to write HTML tags directly, ZK
 doesn't encode them.
 
@@ -103,7 +103,7 @@ them by yourself.
 
 ## Page Directive
 
-All attributes of \[\[ZUML_Reference/ZUML/Processing_Instructions/page\|
+All attributes of \[\[zuml_ref/ZUML/Processing_Instructions/page\|
 
 <?page?>
 

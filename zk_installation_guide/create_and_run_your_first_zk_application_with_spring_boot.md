@@ -162,7 +162,7 @@ General resource folders are:
 - [src/main/resources/static](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/static) -
   Spring Boot's resource folder
 - [src/main/resources/web](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-demo-jar/src/main/resources/web) -
-  ZK's [classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path)
+  ZK's [classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path)
 
 Spring Boot resources are referenced by urls starting with `'/'` ZK
 resources (including zul files) are prefixed with `'~./'`

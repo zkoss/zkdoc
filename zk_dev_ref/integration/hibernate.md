@@ -386,7 +386,7 @@ public class SpringOrderDao {
 ```
 
 To use this Spring-based DAO in a composer (or a ViewModel), ZK provides
-several ways like variable resolvers. Please refer to [ZK Developer's Reference/integration/Middleware Layer/Spring]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring).
+several ways like variable resolvers. Please refer to [ZK Developer's Reference/integration/Middleware Layer/Spring]({{site.baseurl}}/zk_dev_ref/integration/spring).
 
 # Lazy Initialization Issue among AU Requests
 
@@ -512,7 +512,7 @@ public class OrderDao {
 
 # Lazy Initialization Issue Under Render on Demand
 
-Some AU requests cannot be interfered by developers,such as a "[Render On Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand)"
+Some AU requests cannot be interfered by developers,such as a "[Render On Demand]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand)"
 request where the rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have

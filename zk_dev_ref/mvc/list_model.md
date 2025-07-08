@@ -20,7 +20,7 @@ writing a custom renderer.
 
 As shown, the listbox retrieves elements from the specified model[^1],
 and then invokes the renderer, if specified, to compose the
-[listitem]({{site.baseurl}}/zk_component_ref/listbox/listitem) for
+[listitem]({{site.baseurl}}/zk_component_ref/listitem) for
 the element.
 
 The retrieval of elements is done by invoking

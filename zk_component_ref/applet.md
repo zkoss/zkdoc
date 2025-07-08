@@ -14,7 +14,7 @@
 
 A generic applet component.
 
-If the properties are not enough, you can use [ the Client-Attribute namespace](ZUML_Reference/ZUML/Namespaces/Client_Attribute)
+If the properties are not enough, you can use [ the Client-Attribute namespace](zuml_ref/ZUML/Namespaces/Client_Attribute)
 to specify them.
 
 ```xml

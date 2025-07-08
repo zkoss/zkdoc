@@ -6,5 +6,5 @@ The annotations have no direct effect on the operation of the
 components. Rather, they are mainly used for UI designers to annotate
 metadata, such that it controls how a tool or a utility shall do at
 run-time. The content and meanings of annotations totally depend on the
-tools or the utilities the developer uses. For example, [ZK Bind]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding) examines
+tools or the utilities the developer uses. For example, [ZK Bind]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) examines
 annotations to know how to load and store the value of a component.

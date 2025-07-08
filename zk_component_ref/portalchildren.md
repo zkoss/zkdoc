@@ -14,7 +14,7 @@
 
 The column of [ Portallayout]({{site.baseurl}}/zk_component_ref/portallayout)
 
-Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
+Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/panel)
 
 # Example
 
@@ -147,7 +147,7 @@ Meaningful only if frame design is applied.
 
 # Supported Children
 
-`*`[` Panel`]({{site.baseurl}}/zk_component_ref/containers/panel)
+`*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
 # Use Cases
 

@@ -92,7 +92,7 @@ the `pageSize`property
 
 # Supported Children
 
-`*`[` Treeitem`]({{site.baseurl}}/zk_component_ref/tree/treeitem)
+`*`[` Treeitem`]({{site.baseurl}}/zk_component_ref/treeitem)
 
 # Use Cases
 

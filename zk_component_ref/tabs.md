@@ -66,11 +66,11 @@ A `tabs` is the container for the `tab` components.
 
 # Supported Children
 
-[ Tab]({{site.baseurl}}/zk_component_ref/containers/tabbox/tab)
+[ Tab]({{site.baseurl}}/zk_component_ref/tabbox/tab)
 
 # Use Cases
 
-[ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
+[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
 
 # Version History
 

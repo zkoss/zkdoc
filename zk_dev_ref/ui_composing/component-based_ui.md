@@ -320,7 +320,7 @@ invoking
 [^4]: A composer
     ([org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html))
     is a controller that can be associated with a component for handling
-    the UI in Java. For the information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer).
+    the UI in Java. For the information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/composer).
 
 [^5]: Of course, the performance of
     [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())

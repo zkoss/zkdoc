@@ -46,7 +46,7 @@ NOTE: Necessary headers will depend on both applications' structures and
 relationships, but you will find below a general case example for a
 generic web application.
 
-For the minimum ZK headers configuration, please refer to [the main zEmbedded documentation]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/embedded_zk_application#Cross-Origin_Resource_Sharing)
+For the minimum ZK headers configuration, please refer to [the main zEmbedded documentation]({{site.baseurl}}/zk_dev_ref/integration//embedded_zk_application#Cross-Origin_Resource_Sharing)
 
 ```numberLines
 Access-Control-Allow-Origin: One or more URLs allowed to load the Embedded application. 

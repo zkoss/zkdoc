@@ -146,7 +146,7 @@ since App Engine doesn't allow creating new threads, so session scope or
 application scope event queue cannot be used with App Engine. If you
 require server push feature, you should use
 [timer]({{site.baseurl}}/zk_component_ref/timer)
-instead of [event queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_event_queues)
+instead of [event queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_event_queues)
 in an App Engine environment.
 
 ------------------------------------------------------------------------

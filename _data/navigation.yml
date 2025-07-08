@@ -2411,8 +2411,6 @@ zk_component_ref:
     children:
       - title: AfterSizeEvent
         url: /zk_component_ref/aftersizeevent
-      - title: BandScrollEvent
-        url: /zk_component_ref/bandscrollevent
       - title: CheckEvent
         url: /zk_component_ref/checkevent
       - title: ColSizeEvent
@@ -2447,12 +2445,8 @@ zk_component_ref:
         url: /zk_component_ref/mouseevent
       - title: MoveEvent
         url: /zk_component_ref/moveevent
-      - title: OccurEventSelectEvent
-        url: /zk_component_ref/occureventselectevent
       - title: OpenEvent
         url: /zk_component_ref/openevent
-      - title: OverPlotEvent
-        url: /zk_component_ref/overplotevent
       - title: PageSizeEvent
         url: /zk_component_ref/pagesizeevent
       - title: PagingEvent

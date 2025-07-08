@@ -318,4 +318,4 @@ When using a zul, you need to apply `@Action` on a method instead of
 - Line 1: this line wires the method as an action handler for onClick
   event on a component whose id is `calculate`. Specify a component
   selector in `from`, e.g. `#calculate` is ID selector. see
-  [{{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components#CSS3-like_Selectors]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_components#CSS3-like_Selectors)
+  [{{site.baseurl}}/zk_dev_ref/mvc/wire_components#CSS3-like_Selectors]({{site.baseurl}}/zk_dev_ref/mvc/wire_components#CSS3-like_Selectors)

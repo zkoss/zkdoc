@@ -61,7 +61,7 @@ statement, then the user gets the result as depicted below.
 
 # Supported Children
 
-`*`[` Area`]({{site.baseurl}}/zk_component_ref/imagemap/area)
+`*`[` Area`]({{site.baseurl}}/zk_component_ref/area)
 
 # Use Cases
 

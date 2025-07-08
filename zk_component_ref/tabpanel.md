@@ -78,7 +78,7 @@ content for a group of components within a tab panel. The first
 | 3.6     | How to put a scrollbar inside a tabpanel | [<http://www.zkoss.org/forum/listComment/9889>](http://www.zkoss.org/forum/listComment/9889) |
 | 3.6     | How to make a tabpanel loaded on demand  | [<http://www.zkoss.org/forum/listComment/6236>](http://www.zkoss.org/forum/listComment/6236) |
 
-See also: [ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
+See also: [ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
 
 # Version History
 

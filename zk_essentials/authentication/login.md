@@ -153,7 +153,7 @@ use EL to get a user's account from `UserCredential` in the session.
 </div>
 ```
 
--   Line 7: The [sessionScope](ZUML_Reference/EL_Expressions/Implicit_Objects_(Predefined_Variables)/sessionScope)
+-   Line 7: The [sessionScope](zuml_ref/EL_Expressions/Implicit_Objects_(Predefined_Variables)/sessionScope)
     is an implicit object that you can use within EL to access session's
     attribute. It works as the same as `getAttribute()`. You can use it
     to get session's attribute with dot notation, e.g.

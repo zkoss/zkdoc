@@ -29,7 +29,7 @@ the zk-quarkus plugin to the project:
 Then, websockets can be activated in the same way as other ZK
 applications. Refer to the websocket guide for more information.
 
-[ZK Developer's Reference/integration/Miscellaneous/Websocket Channel]({{site.baseurl}}/zk_dev_ref/integration/miscellaneous/websocket_channel)
+[ZK Developer's Reference/integration/Miscellaneous/Websocket Channel]({{site.baseurl}}/zk_dev_ref/integration//websocket_channel)
 
 ## Quarkus ArC / CDI Beans
 

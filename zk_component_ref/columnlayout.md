@@ -16,7 +16,7 @@ A columnlayout is a layout which can have multiple columns while each
 column may have any number of panels placed vertically with different
 heights. When using Columnlayout, you have to assign width (either
 percent or pixel) on every
-[Columnchildren]({{site.baseurl}}/zk_component_ref/columnlayout/columnchildren),
+[Columnchildren]({{site.baseurl}}/zk_component_ref/columnchildren),
 otherwise the result may depend on the browser and may not be as
 expected.
 
@@ -170,7 +170,7 @@ Each column may have any number of any type of components.
 
 # Supported Children
 
-[Columnchildren]({{site.baseurl}}/zk_component_ref/columnlayout/columnchildren)
+[Columnchildren]({{site.baseurl}}/zk_component_ref/columnchildren)
 
 # Use Cases
 

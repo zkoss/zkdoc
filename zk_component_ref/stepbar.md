@@ -109,7 +109,7 @@ client.</p></td>
 
 # Supported Children
 
-`*`[` Step`]({{site.baseurl}}/zk_component_ref/stepbar/step)
+`*`[` Step`]({{site.baseurl}}/zk_component_ref/step)
 
 # Use Cases
 

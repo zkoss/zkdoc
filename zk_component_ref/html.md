@@ -104,7 +104,7 @@ Without this setting, `offsetHeight` of <code>
 
 | Version | Description                                  | Example Location                                                                                     |
 |---------|----------------------------------------------|------------------------------------------------------------------------------------------------------|
-| 3.6     | Work with HTML tags: The Html component      | [The Html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_html_component) |
+| 3.6     | Work with HTML tags: The Html component      | [The Html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component) |
 | 3.6     | herf attribute in Html component             | [<http://www.zkoss.org/forum/listComment/4745>](http://www.zkoss.org/forum/listComment/4745)         |
 | 3.6     | Use Html component to escape HTML characters | [<http://www.zkoss.org/forum/listComment/11118>](http://www.zkoss.org/forum/listComment/11118)       |
 

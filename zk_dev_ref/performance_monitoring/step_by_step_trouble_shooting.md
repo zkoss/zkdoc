@@ -152,7 +152,7 @@ Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
 the data sent to the client using [Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 or
-[Pagination]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/use_live_data_and_paging)
+[Pagination]({{site.baseurl}}/zk_dev_ref/integration/use_live_data_and_paging)
 (Most users don't need 1000 lines visible at once)
 
 Performance degrading over time when using the application (while
@@ -196,7 +196,7 @@ at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in
 the source code (enabling
-[debug-js]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_debug-js_element)
+[debug-js]({{site.baseurl}}/zk_config_ref/the_debug-js_element)
 will help when using this feature).
 
 The small peak (at 2800ms) on the left side is my actual event
@@ -506,20 +506,20 @@ sessions consuming too much memory in ZK Desktops (containing the
 current component tree) for a user are stored in the session. Therefore
 one should check the following settings:
 
-- [ZK Session Cleaner]({{site.baseurl}}/zk_config_ref/web.xml/zk_session_cleaner)
+- [ZK Session Cleaner]({{site.baseurl}}/zk_config_ref/zk_session_cleaner)
 
   
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
-- [Session Configuration]({{site.baseurl}}/zk_config_ref/the_session-config_element)
+- [Session Configuration]({{site.baseurl}}/zk_config_ref/the_session_config_element)
 
   
 check session timeout, either here or in web.xml
 
 check max desktops per session, if you want to put a limit here
 
-- [Desktop Configuration]({{site.baseurl}}/zk_config_ref/the_desktop-config_element)
+- [Desktop Configuration]({{site.baseurl}}/zk_config_ref/the_desktop_config_element)
 
   
 if desktops stay alive too long, check the desktop timeout
@@ -570,20 +570,20 @@ Or you can access Statistics in Java code:
 
 related documentation
 
-- <(/zk_config_ref/The_listener_Element/The_org.zkoss.zk.ui.util.Monitor_interface>
+- <(/zk_config_ref/The_org.zkoss.zk.ui.util.Monitor_interface>
 - <http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Statistic.html>
 
 If you see more Sessions than you expect, your session/desktop timeout
 might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
-[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops reusing desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops_reusing_desktops)
+[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops reusing desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops)
 can help.
 
 ### ZK Server Configuration
 
 - check debug mode → zk config should **not** be enabled (disabled by
   default)
-  - <(/zk_config_ref/The_client-config_Element/The_debug-js_Element>
+  - <(/zk_config_ref/The_debug-js_Element>
 
 <!-- -->
 
@@ -596,14 +596,14 @@ can help.
 
 - check compression settings → should **not** be disabled (enabled by
   default)
-  - <(/zk_config_ref/web.xml/ZK_AU_Engine#The_Initial_Parameters>
-  - <(/zk_config_ref/web.xml/ZK_Loader#The_Initial_Parameters>
+  - <(/zk_config_ref/ZK_AU_Engine#The_Initial_Parameters>
+  - <(/zk_config_ref/ZK_Loader#The_Initial_Parameters>
 
 <!-- -->
 
 - consider/check render on demand settings
   - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand>
-  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand>
+  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand>
   - <(/zk_config_ref/org.zkoss.zul.client.rod>
   - <(/zk_config_ref/org.zkoss.zul.grid.initRodSize>
   - <(/zk_config_ref/org.zkoss.zul.listbox.initRodSize>

@@ -3,7 +3,7 @@
 # Panel
 
 - Component Reference:
-  [Panel]({{site.baseurl}}/zk_component_ref/containers/panel)
+  [Panel]({{site.baseurl}}/zk_component_ref/panel)
 - [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
 
 # Friendly Scrolling Support

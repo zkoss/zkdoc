@@ -81,7 +81,7 @@ request-and-response protocol, so the user won't receive any feedback
 until the request has been served and responded. Thus, we could send
 back some busy messages to let the user know what has happened, and echo
 back an event to do the long operation. For more information, please
-refer to the [Long Operations: Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
+refer to the [Long Operations: Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_echo_events)
 section.
 
 [^1]: Please don't confuse it with the event queues discussed in the [ event queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)

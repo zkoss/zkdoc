@@ -13,4 +13,4 @@ easier, and then improve the responsiveness of the critical part, if
 any, with the client-side listener.
 
 For more information about handling events at the client, please refer
-to [ZK Client-side Reference: Event Listening]({{site.baseurl}}/zk_client_side_ref/general_control/event_listening).
+to [ZK Client-side Reference: Event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening).

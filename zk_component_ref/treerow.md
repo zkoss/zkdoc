@@ -90,7 +90,7 @@ in it, such as label, image, textbox etc.
 
 # Supported Children
 
-`*`[` Treecell`]({{site.baseurl}}/zk_component_ref/tree/treecell)
+`*`[` Treecell`]({{site.baseurl}}/zk_component_ref/treecell)
 
 # Use Cases
 

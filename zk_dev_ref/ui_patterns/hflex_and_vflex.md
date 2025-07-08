@@ -423,7 +423,7 @@ As described in the previous section, a vertical scrollbar will appear,
 since both the vertical padding and the 100% height are specified.
 
 **Solution**: you shall *not* change the default CSS styling of BODY.
-Rather, you could enclose the content with [the div component]({{site.baseurl}}/zk_component_ref/containers/div), and then
+Rather, you could enclose the content with [the div component]({{site.baseurl}}/zk_component_ref/div), and then
 specify `vflex="1"` and the padding to the div component. For example,
 
 ```xml
@@ -476,7 +476,7 @@ when we change the browser height.
 
 ## Span Ignores Width and Height
 
-[Span]({{site.baseurl}}/zk_component_ref/containers/span) ignores the
+[Span]({{site.baseurl}}/zk_component_ref/span) ignores the
 width and height, so hflex and vflex have no effect on them (unless you
 specify [display:block](http://www.quirksmode.org/css/display.html) --
 but it makes it div eventually).
@@ -495,7 +495,7 @@ And, the result is as follows - the width has no effect:
 
 This limitation can be solved by the use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
-[div]({{site.baseurl}}/zk_component_ref/containers/div) as follows.
+[div]({{site.baseurl}}/zk_component_ref/div) as follows.
 
 ```xml
 <!-- this is correct -->
@@ -526,7 +526,7 @@ div, so is the width not as expected:
 
 This limitation can be solved by use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
-[div]({{site.baseurl}}/zk_component_ref/containers/div) as shown in the
+[div]({{site.baseurl}}/zk_component_ref/div) as shown in the
 previous subsection.
 
 ## Input elements have incorrect margin values in WebKit browsers

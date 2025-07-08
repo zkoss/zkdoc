@@ -12,7 +12,7 @@ name**. Alternatively, you can specify the bean's name with
 You might think why don't we just register our controllers(or
 ViewModels) as Spring beans, so that we can use Spring's `@Autowire`. We
 don't recommend to do so. The main reason is that none of Spring bean's
-scope matches ZK's composer's life cycle, for details please refer to [ Developer's Reference]({{site.baseurl}}/zk_dev_ref/integration/middleware_layer/spring "wikilink").
+scope matches ZK's composer's life cycle, for details please refer to [ Developer's Reference]({{site.baseurl}}/zk_dev_ref/integration/spring "wikilink").
 
 **Wire beans in a composer**
 

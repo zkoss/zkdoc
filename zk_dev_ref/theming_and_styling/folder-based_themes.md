@@ -143,7 +143,7 @@ root (e.g. /theme/dark/).
 
 After all this has been done, the components should have their views
 customized. Please refer to this
-[article]({{site.baseurl}}/zk_dev_ref/theming_and_styling/understanding_the_theming_subsystem/switching_themes)
+[article]({{site.baseurl}}/zk_dev_ref/theming_and_styling/switching_themes)
 
 </ref>
 

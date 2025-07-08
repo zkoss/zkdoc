@@ -96,7 +96,7 @@ As you can see, the *custom-attributes* will be checked recursively.
 
 | Version | Description                                                                                             | Example Location                                                                           |
 |---------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/containers/window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/containers/window#Title_and_Caption) |
+| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/window#Title_and_Caption) |
 
 # Version History
 

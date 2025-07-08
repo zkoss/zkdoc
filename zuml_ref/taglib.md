@@ -8,8 +8,8 @@ functions).
 
 For example, we could load the functions defined in the built-in TLD
 files identified as
-[<http://www.zkoss.org/dsp/web/core>](ZUML_Reference/EL_Expressions/Core_Methods),
-and then use [the l function](ZUML_Reference/EL_Expressions/Core_Methods/l).
+[<http://www.zkoss.org/dsp/web/core>](zuml_ref/EL_Expressions/Core_Methods),
+and then use [the l function](zuml_ref/EL_Expressions/Core_Methods/l).
 
 ```xml
  <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>

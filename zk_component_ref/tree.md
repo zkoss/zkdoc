@@ -544,7 +544,7 @@ If the Tree is controlled by a
 such as [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) or
 [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html), the
 model open state is authoritative and will override the individual
-component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/model/tree_model#Open_Tree_Nodes)
+component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#Open_Tree_Nodes)
 on this topic.
 
 ```xml
@@ -761,7 +761,7 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Treecols`]({{site.baseurl}}/zk_component_ref/tree/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/tree/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/tree/treefoot)
+`*`[` Treecols`]({{site.baseurl}}/zk_component_ref/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/treefoot)
 
 # Use Cases
 
@@ -833,8 +833,8 @@ tree to work around.</p></td>
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
 
-[^2]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
+[^2]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
 
 [^3]: `Same as above.`

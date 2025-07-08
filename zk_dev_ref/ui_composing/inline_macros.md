@@ -75,7 +75,7 @@ shall be used)[^1].
 On the other hand, regular macros allow the component developers to
 provide a custom Java class to represent the component so a better
 abstraction and addition functionality can be implemented. We will
-discuss it more in the [following section]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component/implement_custom_java_class).
+discuss it more in the [following section]({{site.baseurl}}/zk_dev_ref/ui_composing/implement_custom_java_class).
 
 > ------------------------------------------------------------------------
 >

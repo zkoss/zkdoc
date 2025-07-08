@@ -85,8 +85,8 @@ For more information, please refer to [ZK Style Guide]({{site.baseurl}}/zk_style
 # content style and sclass
 
 Some container components such as
-[window]({{site.baseurl}}/zk_component_ref/containers/window),
-[groupbox]({{site.baseurl}}/zk_component_ref/containers/groupbox),
+[window]({{site.baseurl}}/zk_component_ref/window),
+[groupbox]({{site.baseurl}}/zk_component_ref/groupbox),
 [detail]({{site.baseurl}}/zk_component_ref/detail) have a
 content block, you have to use `contentStyle` to set its style.
 

@@ -113,8 +113,8 @@ the component with the same ID. Similarly,
 [org.zkoss.zk.ui.select.Selectors#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireEventListeners(org.zkoss.zk.ui.Component, java.lang.Object))
 is used to wire event listeners.
 
-For more information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables)
-and [Wire Event the Listeners section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_event_listeners)
+For more information, please refer to [the Wire Components section]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables)
+and [Wire Event the Listeners section]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners)
 sections.
 
 > ------------------------------------------------------------------------
@@ -131,7 +131,7 @@ sections.
 
 [org.zkoss.zk.ui.select.Selectors#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List))
 will wire variables that can be resolved by the registered variable
-resolver. In addition to [the variable-resolver directive](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver),
+resolver. In addition to [the variable-resolver directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver),
 you can create any variable resolver manually and pass it as the third
 argument.
 [org.zkoss.zk.ui.select.Selectors#newVariableResolvers(java.lang.Class, java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#newVariableResolvers(java.lang.Class, java.lang.Class))
@@ -162,7 +162,7 @@ automatically. As shown, we annotate
 [org.zkoss.zkplus.spring.DelegatingVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html) to
 resolve Spring-managed bean.
 
-For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/controller/wire_variables).
+For more information, please refer to [the Wire Variables section]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables).
 
 ### ID Space
 
@@ -190,7 +190,7 @@ need to implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest
 
 Like macros and any other primitive components, you have to declare a
 composite component before using it. This can be done by using
-[component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+[component directives](zuml_ref/ZUML/Processing_Instructions/component).
 Then, we could use it the same way (they are actually primitive
 components). For example,
 
@@ -209,7 +209,7 @@ components). For example,
 
 If a composite component is used in multiple pages, it is better to
 define it in the application level, such that it can be accessed in any
-page without any [component directives](ZUML_Reference/ZUML/Processing_Instructions/component).
+page without any [component directives](zuml_ref/ZUML/Processing_Instructions/component).
 
 There are basic two approaches to define a component in the application
 level:

@@ -1,6 +1,6 @@
-As described in [the MVC: Template section]({{site.baseurl}}/zk_dev_ref/mvc/view/template), a
+As described in [the MVC: Template section]({{site.baseurl}}/zk_dev_ref/mvc/template), a
 template is a ZUML fragment that defines how to create components. A
-template is enclosed with [the template element](ZUML_Reference/ZUML/Elements/template) as shown
+template is enclosed with [the template element](zuml_ref/ZUML/Elements/template) as shown
 below.
 
 ```xml
@@ -42,7 +42,7 @@ to return the data being rendered; the code is similar to the following
 (for easy understanding, the code has been simplified).
 
 For more detailed information about the variable resolver, please refer
-to [ZUML Reference](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver).
+to [ZUML Reference](zuml_ref/ZUML/Processing_Instructions/variable-resolver).
 
 ```java
 public class TemplateBasedRenderer implements ListitemRenderer {
@@ -88,11 +88,11 @@ We suggest using shadow component
 [<forEach>](http://books.zkoss.org/zk-mvvm-book/8.0/shadow_elements/iterate_collections.html)
 as a replacement of children binding.
 
-[ ZK Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding) provides
-a powerful way called [Children Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding/children_binding)
+[ ZK Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) provides
+a powerful way called [Children Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index/children_binding)
 to render a template based on the data (such as a list of elements).
 Moreover, the UI will be updated automatically if the data has been
-changed. For more information, please refer to [the Children Binding section]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding/children_binding).
+changed. For more information, please refer to [the Children Binding section]({{site.baseurl}}/zk_mvvm_ref/data_binding/index/children_binding).
 
 # Version History
 

@@ -65,7 +65,7 @@ a UI component.
 
 ## Use Composer to Assign Model
 
-A typical way is to use [a composer]({{site.baseurl}}/zk_dev_ref/mvc/controller/composer)
+A typical way is to use [a composer]({{site.baseurl}}/zk_dev_ref/mvc/composer)
 to assign the model. For example, assume the UI component is a grid and
 we have a method called `getFooModel` returning the data to show on the
 grid, then we could implement a composer, say `foo.FooComposer` as
@@ -88,7 +88,7 @@ Then, you could assign it in ZUML as follows:
 
 ## Use Data Binding
 
-If you are using [data binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding), you can
+If you are using [data binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index), you can
 have the data binder to assign the model for you. For example, assume
 that you have a `ListModelList persons`, then:
 
@@ -134,7 +134,7 @@ could use it to drive a listbox as follows.
 ## Use zscript
 
 If you are building a prototype, you could use
-[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/scripts_in_zuml)
+[zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
 to assign the model directly. For example,
 
 ```xml

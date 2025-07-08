@@ -1,6 +1,6 @@
 # Overview
 
-Like [ZUL](ZUML_Reference/ZUML/Languages/ZUL), the [XHTML component set](ZUML_Reference/ZUML/Languages/XHTML) is a
+Like [ZUL](zuml_ref/ZUML/Languages/ZUL), the [XHTML component set](zuml_ref/ZUML/Languages/XHTML) is a
 collection of components. Unlike ZUL, which is designed to have rich
 features, each XHTML component represents an HTML tag. For example, the
 following XML element will cause ZK Loader to create a component called
@@ -39,7 +39,7 @@ shown below.
  </window>
 ```
 
-On the other hand, the [native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags/the_native_namespace)
+On the other hand, the [native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace)
 will cause *native* HTML tags to be generated. It means you can not
 modify the content dynamically on the server. Notice that you still can
 handle them dynamically at the client.
@@ -77,7 +77,7 @@ with the same ID, no matter if they are in different ID spaces.
 
 # Filename Extension
 
-As described in [ZUML](ZUML_Reference/ZUML/Languages), the
+As described in [ZUML](zuml_ref/ZUML/Languages), the
 XHTML component set is associated with zhtml, xhtml, html and htm. It
 means you could name a ZUML page as foo.zhtml if you map `*.zhtml` to ZK
 Loader. However, when this kind of file is interpreted, ZK Loader
@@ -109,7 +109,7 @@ where
 
 1.  Since the extension is `zhtml`, the default namespace is XHTML.
     Thus, we have to specify the zk and zul namespace explicitly.
-    - Notice that we have to specify the [zk namespace](ZUML_Reference/ZUML/Namespaces/ZK) too,
+    - Notice that we have to specify the [zk namespace](zuml_ref/ZUML/Namespaces/ZK) too,
       because XHTML will cause ZK Loader to consider any unrecognized
       element as native HTML tag.
 2.  We have to specify HTML, HEAD and BODY to make it a valid HTML

@@ -11,7 +11,7 @@ cover those topics here. Please refer to [Oracle's CDI tutorial](http://docs.ora
 
 # Access a CDI Bean in a ZUL
 
-ZUL provides a feature called [ variable resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/el_expressions#Variable_Resolver)
+ZUL provides a feature called [ variable resolver]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#Variable_Resolver)
 that allows users to access CDI bean using EL expression. To do this,
 simply put the below directive on top of a ZUML page:
 

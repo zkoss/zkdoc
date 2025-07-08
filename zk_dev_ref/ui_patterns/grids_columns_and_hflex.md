@@ -10,9 +10,9 @@ can apply to the following components:
 <li><a href="{{site.baseurl}}/zk_component_ref/listbox"
 title="wikilink">Listbox</a>
 <ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/listbox/listhead"
+<li><a href="{{site.baseurl}}/zk_component_ref/listhead"
 title="wikilink">Listhead</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/listbox/listheader"
+<li><a href="{{site.baseurl}}/zk_component_ref/listheader"
 title="wikilink">Listheader</a></li>
 </ul></li>
 </ul></td>
@@ -28,9 +28,9 @@ title="wikilink">Column</a></li>
 <td><ul>
 <li><a href="{{site.baseurl}}/zk_component_ref/tree" title="wikilink">Tree</a>
 <ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/tree/treecols"
+<li><a href="{{site.baseurl}}/zk_component_ref/treecols"
 title="wikilink">Treecols</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/tree/treecol"
+<li><a href="{{site.baseurl}}/zk_component_ref/treecol"
 title="wikilink">Treecol</a></li>
 </ul></li>
 </ul></td>
@@ -43,7 +43,7 @@ title="wikilink">Treecol</a></li>
 There are basically two approaches to control the width of a column:
 width and hflex. They could be specified in the column's header, such as
 [column]({{site.baseurl}}/zk_component_ref/column) and
-[listheader]({{site.baseurl}}/zk_component_ref/listbox/listheader ).
+[listheader]({{site.baseurl}}/zk_component_ref/listheader ).
 
 While width
 ([org.zkoss.zk.ui.HtmlBasedComponent#setWidth(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setWidth(java.lang.String)))

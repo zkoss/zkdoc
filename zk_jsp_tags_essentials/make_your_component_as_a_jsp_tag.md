@@ -13,7 +13,7 @@ public class FooTag extends org.zkoss.jsp.zul.impl.BranchTag {
 ```
 
 ZK will invoke getJspTagName() method to get the tag name. The name will
-be used to look for the component definition from [the ZUL component set](ZUML_Reference/ZUML/Languages/ZUL).
+be used to look for the component definition from [the ZUL component set](zuml_ref/ZUML/Languages/ZUL).
 
 Notice that the name must be the same you specify in your [component definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
 

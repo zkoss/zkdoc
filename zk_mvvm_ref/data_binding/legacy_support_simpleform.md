@@ -59,7 +59,7 @@ The default usage from a zul file will still create a `FormProxyObject` (default
 ```
 
 Instead, a `SimpleForm` can be initialized from zul code (compatible to ZK 7 - without changing Java code) using the 
-[TLD function `c:new`](ZUML_Reference/EL_Expressions/Core_Methods/new).
+[TLD function `c:new`](zuml_ref/EL_Expressions/Core_Methods/new).
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>

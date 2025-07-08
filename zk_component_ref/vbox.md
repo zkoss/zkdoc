@@ -45,7 +45,7 @@ If you need a splitter, please use [ splitlayout](zk_component_ref/Splitlayout).
 
 # Properties
 
-- **Inherited** Properties: [ Box]({{site.baseurl}}/zk_component_ref/containers/box#Properties)
+- **Inherited** Properties: [ Box]({{site.baseurl}}/zk_component_ref/box#Properties)
 
 ## Align and Pack
 
@@ -143,7 +143,7 @@ You will see the Box width exceed 200px. Also check the
 </tbody>
 </table>
 
-- Inherited Supported Events: [ Box]({{site.baseurl}}/zk_component_ref/containers/box#Supported_Events)
+- Inherited Supported Events: [ Box]({{site.baseurl}}/zk_component_ref/box#Supported_Events)
 
 # Supported Children
 

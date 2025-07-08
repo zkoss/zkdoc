@@ -49,7 +49,7 @@ will be attached to the current page.
 ## The arg Object
 
 The `Map` passed to the `createComponents()` can be accessed on the page
-being created by use of [the arg object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg).
+being created by use of [the arg object](zuml_ref/EL_Expressions/Implicit_Objects/arg).
 For example,
 
 ```xml
@@ -156,19 +156,19 @@ Since no page is created, there are a few differences than visiting a
 ZUML document directly[^2].
 
 1.  The
-    [\<?page?\>](ZUML_Reference/ZUML/Processing_Instructions/page),
-    [\<?script?\>](ZUML_Reference/ZUML/Processing_Instructions/script),
-    [\<?link?\>](ZUML_Reference/ZUML/Processing_Instructions/link),
-    [\<?header?\>](ZUML_Reference/ZUML/Processing_Instructions/header)
+    [\<?page?\>](zuml_ref/ZUML/Processing_Instructions/page),
+    [\<?script?\>](zuml_ref/ZUML/Processing_Instructions/script),
+    [\<?link?\>](zuml_ref/ZUML/Processing_Instructions/link),
+    [\<?header?\>](zuml_ref/ZUML/Processing_Instructions/header)
     and other directives controlling a page
     ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) have no function. It means
     that you could not change the page's title, add JavaScript code, or
     add CSS with these directives in a ZUML document loaded in this way.
 2.  On the other hand, when
-    [\<?function-mapper?\>](ZUML_Reference/ZUML/Processing_Instructions/function-mapper),
-    [\<?variable-resolver?\>](ZUML_Reference/ZUML/Processing_Instructions/variable-resolver)
+    [\<?function-mapper?\>](zuml_ref/ZUML/Processing_Instructions/function-mapper),
+    [\<?variable-resolver?\>](zuml_ref/ZUML/Processing_Instructions/variable-resolver)
     and
-    [\<?component?\>](ZUML_Reference/ZUML/Processing_Instructions/component)
+    [\<?component?\>](zuml_ref/ZUML/Processing_Instructions/component)
     work correctly, they decide how a ZUML document is parsed rather
     than how the current page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html))
     should be.

@@ -44,7 +44,7 @@ abstracted by implementing
 [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 For typical database access, the glue logic (i.e., control) can be
-handled by a generic feature called [Data Binding]({{site.baseurl}}/zk_dev_ref/mvvm/data_binding). In
+handled by a generic feature called [Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index). In
 other words, the read and write operations can be handled automatically
 by a generic Data Binding, and you don't need to write the glue logic at
 all.

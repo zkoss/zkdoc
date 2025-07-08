@@ -21,7 +21,7 @@ Mapping URL to ZK Resource Engine is straightforward:
 ```
 
 Notice that the URL pattern mapped to this engine must be consistent
-with the `resource-uri` parameter of [ZK Loader]({{site.baseUrl}}/zk_config_ref/web.xml/ZK_Loader).
+with the `resource-uri` parameter of [ZK Loader]({{site.baseUrl}}/zk_config_ref/ZK_Loader).
 
 # Version History
 

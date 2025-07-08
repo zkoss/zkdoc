@@ -105,8 +105,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 
 - Line 7: We need to disable spring CSRF to make ZK AU pass security
-  filter. But don't worry. [ ZK already has its own CSRF mechanism](ZK_Developer's_Reference/Security_Tips/Cross-site_Request_Forgery).
-- Line 13: This line blocks the public access to [ ZK class path web resource folder]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/include_a_page#Classpath_Web_Resource_Path).
+  filter. But don't worry. [ ZK already has its own CSRF mechanism](zk_dev_ref/Security_Tips/Cross-site_Request_Forgery).
+- Line 13: This line blocks the public access to [ ZK class path web resource folder]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path).
 - Line 18-19: Assume we want all pages under `/secure` are protected and
   require an authentication.
 

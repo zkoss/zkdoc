@@ -19,10 +19,10 @@ session is about to deactivate.
 
 Please refer to the following links for detailed settings.
 
-- [Tomcat Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/tomcat_cluster)
-- [WebLogic Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/weblogic_cluster)
-- [Google App Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine)
-- [JBoss Cluster]({{site.baseurl}}/zk_installation_guide/setting_up_servers/jboss_cluster)
+- [Tomcat Cluster]({{site.baseurl}}/zk_installation_guide/tomcat_cluster)
+- [WebLogic Cluster]({{site.baseurl}}/zk_installation_guide/weblogic_cluster)
+- [Google App Engine]({{site.baseurl}}/zk_installation_guide/google_app_engine)
+- [JBoss Cluster]({{site.baseurl}}/zk_installation_guide/jboss_cluster)
 
 # Turn on Log
 
@@ -35,7 +35,7 @@ ignored since it is common for a developer to forget to declare a value
 or a listener as serializable.
 
 To detect this problem, you can turn on the logger for
-`org.zkoss.io.serializable` to the DEBUG level (). Please read [ Logger](ZK_Developer's_Reference/Supporting_Utilities/Logger)
+`org.zkoss.io.serializable` to the DEBUG level (). Please read [ Logger](zk_dev_ref/Supporting_Utilities/Logger)
 for details.
 
 # Disable the Use of zscript

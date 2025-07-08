@@ -9,15 +9,15 @@
 ## Employment/Purpose
 
 InputElement serves as a superclass for components that handle user key input. It is utilized by various input elements in ZK, such as:
-- [`Textbox`](../textbox.md)
-- [`Intbox`](../intbox.md)
-- [`Decimalbox`](../decimalbox.md)
-- [`Doublebox`](../doublebox.md)
-- [`Datebox`](../datebox.md)
-- [`Timebox`](../timebox.md)
-- [`Spinner`](../spinner.md)
-- [`Combobox`](../combobox.md)
-- [`Bandbox`](../bandbox.md)
+- [`Textbox`](../textbox)
+- [`Intbox`](../intbox)
+- [`Decimalbox`](../decimalbox)
+- [`Doublebox`](../doublebox)
+- [`Datebox`](../datebox)
+- [`Timebox`](../timebox)
+- [`Spinner`](../spinner)
+- [`Combobox`](../combobox)
+- [`Bandbox`](../bandbox)
 
 InputElement provides features such as constraints, disabled state, maxlength, name attribute, readonly state, and more.
 
@@ -83,7 +83,7 @@ ZK allows specifying conditions using constraints such as `no empty` and `no neg
 | `between yyyyMMdd and yyyyMMdd`| Dates allowed only within a specified range. <br/> For example, <br/> `<datebox constraint="between 20231225 and 20241203"/>`|
 | `after yyyyMMdd`| Dates allowed after the specified date. <br/> For example, <br/> `<datebox constraint="after 20231225"/>` |
 | `before yyyyMMdd`| Dates allowed before the specified date. <br/> For example, <br/> `<datebox constraint="before 20231225"/>`|
-| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](../popup.md) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
+| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](../popup) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
 
 
 For example,
@@ -154,7 +154,7 @@ Try it
 
 #### i18n Error Message
 
-To support multilingual applications, you can use [the `l` function]({{site.baseurl}}/zuml_ref/el_expressions/core_methods/l) in ZK to display internationalized error messages. For example, you can set an error message for a textbox constraint as shown below:
+To support multilingual applications, you can use [the `l` function]({{site.baseurl}}/zuml_ref/core_methods/l) in ZK to display internationalized error messages. For example, you can set an error message for a textbox constraint as shown below:
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
@@ -189,7 +189,7 @@ public class EvenNumberConstraint implements Constraint {
     }
 }
 ```
-To specify it to the constraint property, you have to instantiate it first by use of [the `new` function]({{site.baseurl}}/zuml_ref/el_expressions/core_methods/new) as shown below.
+To specify it to the constraint property, you have to instantiate it first by use of [the `new` function]({{site.baseurl}}/zuml_ref/core_methods/new) as shown below.
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>

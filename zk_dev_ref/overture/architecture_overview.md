@@ -80,7 +80,7 @@ enhanced later as the project progresses.
     configured URL pattern. A ZK loader will be invoked to serve this
     request.
       
-    For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader)
+    For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/zk_loader)
 2.  The ZK loader loads a specified page and interprets that page to
     create ZK components accordingly and instantiates specified
     controllers (Composer/ViewModel).

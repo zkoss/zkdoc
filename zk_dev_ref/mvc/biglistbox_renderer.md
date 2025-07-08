@@ -45,4 +45,4 @@ them together in a ZUML document as follows:
 | 6.0.1   | March 2012 | Biglistbox was introduced. |
 
 [^1]: For the concept about component, model and renderer, please refer
-    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/model/list_model#Model-driven_Display).
+    to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).

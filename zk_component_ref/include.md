@@ -145,12 +145,12 @@ For example:
  <include src="mypage" some="something" another="${expr}"/>
 ```
 
-Then, you could retrieve the values by use [the arg object](ZUML_Reference/EL_Expressions/Implicit_Objects/arg)
-as described in [the Load ZUML in Java section]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml/load_zuml_in_java).
+Then, you could retrieve the values by use [the arg object](zuml_ref/EL_Expressions/Implicit_Objects/arg)
+as described in [the Load ZUML in Java section]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java).
 
 > ------------------------------------------------------------------------
 >
-> In the `defer` mode, the values have to be retrieved by [the > requestScope > object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope).
+> In the `defer` mode, the values have to be retrieved by [the > requestScope > object](zuml_ref/EL_Expressions/Implicit_Objects/requestScope).
 >
 > ------------------------------------------------------------------------
 >
@@ -202,8 +202,8 @@ mode. First, you can pass them with the query string.
 Then, in the included page, you can access them with
 [org.zkoss.zk.ui.Execution#getParameter(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getParameter(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the `param` object](ZUML_Reference/EL_Expressions/Implicit_Objects/param)
-or [the paramValues object](ZUML_Reference/EL_Expressions/Implicit_Objects/paramValues)
+the included page), you can use [the `param` object](zuml_ref/EL_Expressions/Implicit_Objects/param)
+or [the paramValues object](zuml_ref/EL_Expressions/Implicit_Objects/paramValues)
 to access them.
 
 ```xml
@@ -224,7 +224,7 @@ With the dynamic properties, you can pass non-String-typed values. In
 the included page, you can access them with
 [org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the requestScope object](ZUML_Reference/EL_Expressions/Implicit_Objects/requestScope)
+the included page), you can use [the requestScope object](zuml_ref/EL_Expressions/Implicit_Objects/requestScope)
 to access them.
 
 ```xml
@@ -417,7 +417,7 @@ user still cannot access the page, the feed back is much better (with a
 *semi-ready* page than totally blank).
 
 This feature is actually done by the use of the so-called [echo event]({{site.baseurl}}/zk_dev_ref/event_handling/event_firing).
-For more information, please refer to the [Long Operations: Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/long_operations/use_echo_events)
+For more information, please refer to the [Long Operations: Use Echo Events]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_echo_events)
 section.
 
 This feature cannot be used with the `instant` mode. If the `auto` mode
@@ -489,4 +489,4 @@ For more information, please refer to the [\#Include Non-ZUML Pages](#Include_No
 
 
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library-property_element)` to enable or disable it for the whole application.`
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`

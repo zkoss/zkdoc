@@ -14,7 +14,7 @@ customized look is shown.
 The component representing the customized look must be a
 [Popup]({{site.baseurl}}/zk_component_ref/popup)
 component or one of derives, such as
-[Menupopup]({{site.baseurl}}/zk_component_ref/menu/menupopup),
+[Menupopup]({{site.baseurl}}/zk_component_ref/menupopup),
 while the target component (which causes the customized look to show up)
 can be any kind of component.
 
@@ -60,7 +60,7 @@ the menupopup will show up as shown below.
 ![]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
-refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_tooltip-delay_element)
+refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_tooltip-delay_element)
 for more information.
 
 # Context Menus

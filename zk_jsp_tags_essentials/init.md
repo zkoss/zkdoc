@@ -9,7 +9,7 @@ ZUML document is loaded. The class must be specified in the `use`
 attribute[^1], and it must implement
 [org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html).
 
-For more information please refer to [ZUML Reference](ZUML_Reference/ZUML/Processing_Instructions/init).
+For more information please refer to [ZUML Reference](zuml_ref/ZUML/Processing_Instructions/init).
 
 Fir example,
 

@@ -50,7 +50,7 @@ For example,
 ## Application-level Configuration
 
 If you would like to change the default server push for the whole
-application, you could use [the server-push-class element]({{site.baseurl}}/zk_config_ref/the_device-config_element/the_server-push-class_element)
+application, you could use [the server-push-class element]({{site.baseurl}}/zk_config_ref/the_server-push-class_element)
 as follows.
 
 ```xml
@@ -185,7 +185,7 @@ it aborts. (unit: milliseconds).
 
 # Error Handling
 
-The configuration of the errors is handled by [the client-reload element]({{site.baseurl}}/zk_config_ref/the_client-config_element/the_error-reload_element),
+The configuration of the errors is handled by [the client-reload element]({{site.baseurl}}/zk_config_ref/the_error-reload_element),
 specified in `WEB-INF/zk.xml`. The markup below demonstrates an example
 of catching an error of the server push:
 

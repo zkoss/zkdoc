@@ -1126,7 +1126,7 @@ For example, {% include version-badge.html version=6.5.0 %}
 </zk>
 ```
 
-- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/listbox/listhead)
+- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/listhead)
   directly.
 
 ## Ungroup Column Menu
@@ -1258,7 +1258,7 @@ For more information, please take a look at these smalltalks,
 - [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
 - [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
 
-Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/listbox/listgroup)
+Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/listgroup)
 directly.
 
 # Frozen Component
@@ -1345,7 +1345,7 @@ the value as **ignore.change**.
 `[inherit: true]`
 
 It specifies whether to enable ROD (render-on-demand). For more
-information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data/turn_on_render_on_demand).
+information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand).
 
 ## org.zkoss.zul.listbox.preloadSize
 
@@ -1498,7 +1498,7 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`]({{site.baseurl}}/zk_component_ref/listbox/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/listbox/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/listbox/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/listbox/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/listbox/listgroupfoot)
+[` Listitem`]({{site.baseurl}}/zk_component_ref/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/listgroupfoot)
 
 # Version History
 

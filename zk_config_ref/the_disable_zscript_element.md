@@ -7,7 +7,7 @@
 `[Default: false (enabled)]`
 
 Specifies whether or not to disable the use of
-[zscript](ZUML_Reference/ZUML/Elements/zscript) (i.e., the
+[zscript](zuml_ref/ZUML/Elements/zscript) (i.e., the
 interpreter). Once disabled, you can not embed anymore zscript codes
 (such as Java and Groovy) in a ZUML page. ZK Loader will throw an
 exception, when parsing a ZUML page with the zscript code.

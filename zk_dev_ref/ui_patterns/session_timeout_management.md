@@ -22,7 +22,7 @@ further accessing as depicted below.
 ## Custom Message
 
 You could show a custom message by specifying
-[`timeout-message`]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-message_Element)
+[`timeout-message`]({{site.baseurl}}/zk_config_ref/the_session_config_element#The_timeout-message_Element)
 in `WEB-INF/zk.xml`. For example,
 
 ```xml
@@ -62,7 +62,7 @@ Session timeout.
 Sometimes it is better to redirect to another page that gives users a
 more complete description and guides them to the other resources, or
 asks them to login again. You can specify the target URI, that you want
-to redirect users to when timeout, with [the timeout-uri element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timeout-uri_Element)
+to redirect users to when timeout, with [the timeout-uri element]({{site.baseurl}}/zk_config_ref/the_session_config_element#The_timeout-uri_Element)
 in `WEB-INF/zk.xml`. For example, the target URI is /timeout.zul and
 then you can add the following lines to zk.xml.
 
@@ -122,7 +122,7 @@ JavaScript.
 By default, the session-timeout mechanism is triggered only if the
 client sends back a request (such as clicking on a button). If you
 prefer to prompt the user even if it doesn't do anything, you could
-specify the [automatic-timeout element]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_automatic-timeout_Element)
+specify the [automatic-timeout element]({{site.baseurl}}/zk_config_ref/the_session_config_element#The_automatic-timeout_Element)
 in `WEB-INF/zk.xml` as follows.
 
 ```xml
@@ -138,7 +138,7 @@ message, redirecting to another page, or running some JavaScript code).
 ## Page-level Automatic Timeout
 
 If you want to specify whether to automatically timeout for particular
-pages, you can use [ the page directive](ZUML_Reference/ZUML/Processing_Instructions/page#automaticTimeout).
+pages, you can use [ the page directive](zuml_ref/ZUML/Processing_Instructions/page#automaticTimeout).
 
 Moreover, it is better to turn off the automatic timeout for the timeout
 page you want to redirect to (if the page is a ZUML page). For example,
@@ -175,7 +175,7 @@ browser away. The delay (600000 is 10 minutes) shall be as long as
 possible but smaller than your session timeout.
 
 The
-[timer-keep-alive]({{site.baseurl}}/zk_config_ref/the_session-config_element#The_timer-keep-alive_Element)
+[timer-keep-alive]({{site.baseurl}}/zk_config_ref/the_session_config_element#The_timer-keep-alive_Element)
 element is used to specify whether the session shall consider timer as a
 normal request. If it is considered as a normal request, the session
 timeout mechanism will be restarted when it is received. Otherwise, the

@@ -13,9 +13,9 @@ A tabbox is a container used to display a set of tabbed groups of
 components. A row of tabs is displayed at the top (or left or other
 location) of tabbox which may be used to switch between each group. It
 allows developers to separate a large number of components into several
-groups (each group is contained in [a tabpanel]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanel)).
+groups (each group is contained in [a tabpanel]({{site.baseurl}}/zk_component_ref/tabbox/tabpanel)).
 Only one group is visible at the time, such that the user interface
-won't be too complicate to read. Once [the tab]({{site.baseurl}}/zk_component_ref/containers/tabbox/tab) of an
+won't be too complicate to read. Once [the tab]({{site.baseurl}}/zk_component_ref/tabbox/tab) of an
 invisible group is clicked, it becomes visible and the previous visible
 group becomes invisible.
 
@@ -226,6 +226,6 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/containers/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/toolbar)
+`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/toolbar)
 
 

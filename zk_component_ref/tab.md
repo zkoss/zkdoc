@@ -130,7 +130,7 @@ shall detach itself.</p></td>
 
 # Use Cases
 
-[ Tabbox]({{site.baseurl}}/zk_component_ref/containers/tabbox#Use_Cases)
+[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
 
 # Version History
 

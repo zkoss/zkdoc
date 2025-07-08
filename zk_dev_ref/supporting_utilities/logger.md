@@ -6,7 +6,7 @@ operates internally.
 
 Notice that, if you are using Google App Engine, you can *not* configure
 the logging as described in this chapter. For more information, please
-refer to [Setting up Google App Engine]({{site.baseurl}}/zk_installation_guide/setting_up_servers/google_app_engine).
+refer to [Setting up Google App Engine]({{site.baseurl}}/zk_installation_guide/google_app_engine).
 
 # How to Configure Logging
 
@@ -240,7 +240,7 @@ Rather, you can configure
 </servlet>
 ```
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/web.xml/zk_loader).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/zk_loader).
 
 # How to Log
 
