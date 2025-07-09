@@ -157,4 +157,4 @@ Namespace</a>.</p></td>
 </table>
 
 For more information of XHTML, ZUL and other component sets, please
-refer to [ the Languages section](zuml_ref/ZUML/Languages).
+refer to [ the Languages section](zuml_ref/zuml/languages).

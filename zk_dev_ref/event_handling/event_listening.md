@@ -60,7 +60,7 @@ using the event name followed by a selector string identifying the
 component(s) (for more selector syntax examples see
 [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)). The
 composer will register each annotated method as an event listener to the
-selected component automatically **in the same [ ID space](zk_dev_ref/ui_composing/ID_Space)**.
+selected component automatically **in the same [ ID space](zk_dev_ref/ui_composing/id_space)**.
 Then, in the ZUL page, you can specify the `apply` attribute to
 associate the composer with a component.
 

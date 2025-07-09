@@ -31,14 +31,14 @@ expressions[^1].
 1.  Implement a variable resolver
     ([org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html))
     and specify it with the
-    [variable-resolver](zuml_ref/ZUML/Processing_Instructions/variable-resolver)
+    [variable-resolver](zuml_ref/zuml/processing_instructions/variable-resolver)
     directive.
 2.  Return the object in a static method and specify it in
-    [xel-method](zuml_ref/ZUML/Processing_Instructions/xel-method)
+    [xel-method](zuml_ref/zuml/processing_instructions/xel-method)
 3.  Declare multiple static methods in a taglib and declare it in
-    [taglib](zuml_ref/ZUML/Processing_Instructions/taglib)
+    [taglib](zuml_ref/zuml/processing_instructions/taglib)
 4.  Construct them in
-    [zscript](zuml_ref/ZUML/Elements/zscript)
+    [zscript](zuml_ref/zuml/elements/zscript)
 
 In the following sections, we will discuss the special attributes
 one-by-one.

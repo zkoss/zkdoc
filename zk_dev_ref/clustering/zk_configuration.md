@@ -35,7 +35,7 @@ ignored since it is common for a developer to forget to declare a value
 or a listener as serializable.
 
 To detect this problem, you can turn on the logger for
-`org.zkoss.io.serializable` to the DEBUG level (). Please read [ Logger](zk_dev_ref/Supporting_Utilities/Logger)
+`org.zkoss.io.serializable` to the DEBUG level (). Please read [ Logger](zk_dev_ref/supporting_utilities/logger)
 for details.
 
 # Disable the Use of zscript

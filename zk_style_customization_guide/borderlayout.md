@@ -119,7 +119,7 @@ Check complete LESS source for Borderlayout from
 ## LESS Variables
 
 The following LESS variables are used for Splitter between North, South,
-East and West components. Check other variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+East and West components. Check other variables from [ here](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_variables).
 
 | Variables              | Default Value |
 |------------------------|---------------|
@@ -139,7 +139,7 @@ and Splitter component.
 
 ### Setup environment and Analyze design
 
-- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](zk_style_customization_guide/look_and_feel_customization/customize_component)
   to setup component customization environment.
 - Analyze the design
   - Used Color for Borderlayout (include North, South, East, West, and
@@ -182,7 +182,7 @@ and Splitter component.
 
 ### Modify borderlayout.less file to achieve target design
 
-`Refer`[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
+`Refer`[` here`](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_functions)` for built-in zk less functions.`
 
 - Modify **Borderlayout Icon** color and size.
 

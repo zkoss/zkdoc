@@ -187,11 +187,11 @@ can be used / interpreted in many ways to extract the information you
 require.
 
 ![](/zk_dev_ref/images/js_timeline_events.png
-title="Another interesting view to determine the render time is the Timeline - Events view in Chrome"
+title="another interesting view to determine the render time is the timeline - events view in chrome"
 width="300"
-alt="Another interesting view to determine the render time is the Timeline - Events view in Chrome" />
-The timeline on the top indicates the whole period between "start" and
-"stop", I selected the range we are interested in, and the colorful area
+alt="another interesting view to determine the render time is the timeline - events view in chrome" />
+the timeline on the top indicates the whole period between "start" and
+"stop", i selected the range we are interested in, and the colorful area
 at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in

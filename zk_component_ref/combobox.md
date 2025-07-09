@@ -30,7 +30,7 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/listbox#Select_Mold) or [ Selectbox](zk_component_ref/essential_components/Selectbox).
+[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/listbox#Select_Mold) or [ Selectbox](zk_component_ref/essential_components/selectbox).
 
 ```xml
 <style>

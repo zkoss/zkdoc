@@ -10,7 +10,7 @@ It specifies whether to keep the session alive, when receiving the
 `onTimer` event.
 
 A session is considered as timeout (and then invalidated), if it doesn't
-receive any client requests in the specified timeout interval (see [the session-timeout element]({{site.baseUrl}}/zk_config_ref/the_session_config_element/The_session-timeout_Element)
+receive any client requests in the specified timeout interval (see [the session-timeout element]({{site.baseurl}}/zk_config_ref/the_session_config_element/the_session-timeout_element)
 for more information).
 
 By setting this option to true, the `onTimer` event, just like any other

@@ -19,7 +19,7 @@ as same as those in ZK. Thus, knowing how to use ZK will greatly help
 you to speed up using ZK JSP Tags in web application development. Here
 list some guides about how to use ZK:
 
-- [ZK Installation Guide](ZK_Installation_Guide)
+- [ZK Installation Guide](zk_installation_guide/before_you_start)
 
 <!-- -->
 

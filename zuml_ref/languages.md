@@ -37,16 +37,16 @@ element is associated with:
     language is decided by the filename's extension (see below).
 2.  If an XML element has no namespace prefix, then
     1.  Handle it specially, if the element is a special ZK element,
-        such as [zk](zuml_ref/ZUML/Elements/zk) and
-        [attribute](zuml_ref/ZUML/Elements/attribute).
+        such as [zk](zuml_ref/zuml/elements/zk) and
+        [attribute](zuml_ref/zuml/elements/attribute).
     2.  Look up the component definition belonging to the default
         language, otherwise.
 3.  If an XML element has a prefix, then the XML namespace is used to
     resolve:
     1.  Handle it specially, if the XML namespace is one of the standard
         namespaces, such as
-        [native](zuml_ref/ZUML/Namespaces/Native) and
-        [client](zuml_ref/ZUML/Namespaces/Client).
+        [native](zuml_ref/zuml/namespaces/native) and
+        [client](zuml_ref/zuml/namespaces/client).
     2.  Look up the language with the given XML namespace, otherwise
     3.  Then, look up the component definition from the language found
         in the previous step
@@ -57,8 +57,8 @@ The default language is decided based on the extension of the filename
 ([org.zkoss.zk.ui.metainfo.LanguageDefinition#getByExtension(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#getByExtension(java.lang.String))).
 In addition, a language is associated with one or multiple extensions
 (defined by the component developer). For example, the extensions
-associated with the [xul/html language](zuml_ref/ZUML/Languages/ZUL) are `zul` and
-`xul`, while the [xhtml language](zuml_ref/ZUML/Languages/XHTML) (aka., a
+associated with the [xul/html language](zuml_ref/zuml/languages/zul) are `zul` and
+`xul`, while the [xhtml language](zuml_ref/zuml/languages/xhtml) (aka., a
 component set) is associated with the extensions including `zhtml`,
 `html`, `html`, and `xhtml`.
 
@@ -262,8 +262,8 @@ section.</p></td>
 
 [^1]: For more information please refer to [ZK Component Development Essentials](/zk_component_dev_essentials/zk_component_overview)
 
-[^2]: For more information please refer to the [Native Namespace](zuml_ref/ZUML/Namespaces/Native) section
+[^2]: For more information please refer to the [Native Namespace](zuml_ref/zuml/namespaces/native) section
 
-[^3]: Notice that there are so-called [Standard Namespaces](zuml_ref/ZUML/Namespaces) associated
+[^3]: Notice that there are so-called [Standard Namespaces](zuml_ref/zuml/namespaces) associated
     with XML namespaces (for a ZUML document) to provide special
     functionality (than specify components).

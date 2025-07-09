@@ -30,7 +30,7 @@ Here is another example:
 
 # Switch and Case
 
-With the `switch` and `case` attributes of [the `zk` element](zuml_ref/ZUML/Elements/zk), you can evaluate a
+With the `switch` and `case` attributes of [the `zk` element](zuml_ref/zuml/elements/zk), you can evaluate a
 section of a ZUML document only if a variable matches a certain value.
 It is similar to Java's switch statement.
 
@@ -102,7 +102,7 @@ is equivalent to
 
 # Choose and When
 
-The `choose` and `when` attributes of [the `zk` element](zuml_ref/ZUML/Elements/zk) are the third
+The `choose` and `when` attributes of [the `zk` element](zuml_ref/zuml/elements/zk) are the third
 approach of conditional evaluation.
 
 As shown below, it is enclosed with a `zk` element with the `choose`

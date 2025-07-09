@@ -13,7 +13,7 @@
 # Employment/Purpose
 
 A dropdown list that allows users to search and select items. Since it
-contains a separate search field (unlike [ Combobox](zk_component_ref/Combobox)), it can
+contains a separate search field (unlike [ Combobox](zk_component_ref/combobox)), it can
 avoid end-users from inputting a non-existed item.
 
 # Example

@@ -67,8 +67,8 @@ support desktop only.
 See below to take a quick view at the look and feel of Breeze, Sapphire
 and Silvertail, click image to view original size.
 
-![ left \| thumb \| 269px \| Breeze](breeze-look-and-feel.png " left | thumb | 269px | Breeze") ![ left \| thumb \| 269px \| Sapphire](sapphire-look-and-feel.png " left | thumb | 269px | Sapphire")
-![ left \| thumb \| 269px \| Silvertail](silvertail-look-and-feel.png " left | thumb | 269px | Silvertail")
+![ left \| thumb \| 269px \| Breeze](breeze-look-and-feel.png " left | thumb | 269px | breeze") ![ left \| thumb \| 269px \| Sapphire](sapphire-look-and-feel.png " left | thumb | 269px | sapphire")
+![ left \| thumb \| 269px \| Silvertail](silvertail-look-and-feel.png " left | thumb | 269px | silvertail")
 
 <div style="clear: both">
 </div>
@@ -140,7 +140,7 @@ theme, you will also need to include the za11y (zk-accessibility) module
 to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility)
 for more information.
 
-![ left \| thumb \| 269px \| WCAG (Blue)](Wcag_blue.png " left | thumb | 269px | WCAG (Blue)") ![ left \| thumb \| 269px \| WCAG Navy](Wcag_navy.png " left | thumb | 269px | WCAG Navy") ![ left \| thumb \| 269px \| WCAG Purple](Wcag_purple.png " left | thumb | 269px | WCAG Purple")
+![ left \| thumb \| 269px \| WCAG (Blue)](wcag_blue.png " left | thumb | 269px | wcag (blue)") ![ left \| thumb \| 269px \| WCAG Navy](wcag_navy.png " left | thumb | 269px | wcag navy") ![ left \| thumb \| 269px \| WCAG Purple](wcag_purple.png " left | thumb | 269px | wcag purple")
 
 <div style="clear: both">
 </div>

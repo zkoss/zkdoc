@@ -5,7 +5,7 @@
 First, you have to prepare a Web server. You can use any Web servers
 that support Java Servlet (2.3 or later). Here we introduce the
 installation of [Tomcat](http://tomcat.apache.org). For other servers
-and more information, please refer to [Setting up Servers](Setting_up_Servers).
+and more information, please refer to [Setting up Servers](setting_up_servers).
 
 1.  Visit [Tomcat Official Site](http://tomcat.apache.org/)
 2.  Select the correct binary distribution for your environment and
@@ -59,9 +59,9 @@ The deployment descriptor is a heart of any J2EE web applications, so
 *every web application **must have** a web.xml deployment descriptor
 directly under <u>WEB-INF</u> folder*.
 
-- For the content of <u>web.xml</u>, please refer to [Sample of web.xml for Servlet 3.0](ZK_Background/Sample_of_web.xml_for_Servlet_3.0),
-  [Sample of web.xml for Servlet 2.4](ZK_Background/Sample_of_web.xml_for_Servlet_2.4)
-  or [Sample of web.xml for Servlet 2.3](ZK_Background/Sample_of_web.xml_for_Servlet_2.3),
+- For the content of <u>web.xml</u>, please refer to [Sample of web.xml for Servlet 3.0](zk_background/sample_of_web.xml_for_servlet_3.0),
+  [Sample of web.xml for Servlet 2.4](zk_background/sample_of_web.xml_for_servlet_2.4)
+  or [Sample of web.xml for Servlet 2.3](zk_background/sample_of_web.xml_for_servlet_2.3),
   depending on your Web server support.
 
 ### Create First ZUL file

@@ -16,7 +16,7 @@ Studio.
 
 Before deploying and testing your application, you have to install a Web
 server (such as Tomcat) and specify the server in eclipse. For
-information of installing a server, please refer to [ZK Installation Guide/Setting up Servers/Tomcat](Setting_up_Servers/Tomcat).
+information of installing a server, please refer to [ZK Installation Guide/Setting up Servers/Tomcat](setting_up_servers/tomcat).
 
 To specify the server in eclipse, please do as follows.
 
@@ -27,11 +27,11 @@ To specify the server in eclipse, please do as follows.
     in your computer
     - For example, the root directory of **Apache Tomcat** might be
       `C:\Program Files\Apache Software Foundation\Tomcat 6.0`
-    - For how to install Tomcat, please refer to [this section](Setting_up_Servers/Tomcat)
+    - For how to install Tomcat, please refer to [this section](setting_up_servers/tomcat)
 5.  Click **Finish**
 
 # Create and Run Your First ZK Application
 
-After installing Eclipse and ZK Studio, please take a look at [Create and Run Your First ZK Application with Eclipse and ZK Studio](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio).
+After installing Eclipse and ZK Studio, please take a look at [Create and Run Your First ZK Application with Eclipse and ZK Studio](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio).
 
 

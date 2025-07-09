@@ -44,7 +44,7 @@ For example, you could implement a SEORenderer listener to generate a
 snippet of JavaScript code that will be embedded into every page.
 
 Notice that, if specified, this class will be instantiated and invoked
-even if [the crawlable option]({{site.baseUrl}}/zk_config_ref/The_crawlable_Element)
+even if [the crawlable option]({{site.baseurl}}/zk_config_ref/the_crawlable_element)
 is not enabled.
 
 **Instantiation:** An independent instance of the given class is

@@ -48,7 +48,7 @@ The `forEach` attribute also has the same issue.
 
 Binding values to client attribute
 =====================================
-ZK component may receive client attributes using the xml namespace "[client/attribute](zuml_ref/ZUML/Namespaces/Client_Attribute)".
+ZK component may receive client attributes using the xml namespace "[client/attribute](zuml_ref/zuml/namespaces/client_attribute)".
 Client-attributes are added to the rendering information of components, and must be follow the same rules as the special attributes.
 
 The client attribute must be initialized using the `${value}` syntax, and doesn't support `@init`, `@load` or `@bind`.

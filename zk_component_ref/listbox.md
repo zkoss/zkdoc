@@ -102,7 +102,7 @@ The Listbox has two molds: `default` and `select`.
 
 ## Select Mold
 
-Suggest using [ Selectbox](zk_component_ref/essential_components/Selectbox).
+Suggest using [ Selectbox](zk_component_ref/essential_components/selectbox).
 
 If the `select` mold is used, Listbox renders an HTML `<select>` tag
 instead.

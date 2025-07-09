@@ -40,7 +40,7 @@ zero to prevent portals from caching the result.
 
 ZK portlet loader actually delegates the loading of ZUML documents to ZK
 Loader ([org.zkoss.zk.ui.http.DHtmlLayoutServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/DHtmlLayoutServlet.html)).
-Thus, you have to configure `WEB-INF/web.xml` as specified in [ZK Installation Guide](ZK_Installation_Guide), even if you want
+Thus, you have to configure `WEB-INF/web.xml` as specified in [ZK Installation Guide](zk_installation_guide/before_you_start), even if you want
 to use only portlets.
 
 # Use ZK Portlet

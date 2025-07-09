@@ -112,4 +112,4 @@ Try it
 | `onClose`     | Event: [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself.                 |
 
 ## Supported Children
-- [`Caption`](Caption.md): Indicates that the `Tab` component can only have one child component of type `Caption`.
+- [`Caption`](caption.md): Indicates that the `Tab` component can only have one child component of type `Caption`.

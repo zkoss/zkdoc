@@ -12,6 +12,6 @@ For example,
 <combobox xmlns:w="client" w:onFocus="this.open()"/>
 ```
 
-For more information, please refer to [ZK Client-side Reference](ZK_Client-side_Reference).
+For more information, please refer to [ZK Client-side Reference](zk_client-side_reference).
 
 

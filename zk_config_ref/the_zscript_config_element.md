@@ -8,8 +8,8 @@
 `[Optional]`
 
 It is used to specify an interpreter to interpret the
-[zscript](zuml_ref/ZUML/Elements/zscript) code. The use
-is the same as [zk.xml's zscript-config element]({{site.baseUrl}}/zk_config_ref/The_zscript-config_Element),
+[zscript](zuml_ref/zuml/elements/zscript) code. The use
+is the same as [zk.xml's zscript-config element]({{site.baseurl}}/zk_config_ref/the_zscript-config_element),
 except it is specified in a JAR file's `config.xml` rather than
 `WEB-INF/zk.xml`.
 

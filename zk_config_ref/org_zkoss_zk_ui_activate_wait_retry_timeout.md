@@ -15,7 +15,7 @@ minutes. To prevent the warning, you can set the value to less than 10
 minutes.
 
 If you'd like to abort the activation (and then end the waiting thread),
-you also have to specify [ org.zkoss.zk.ui.activate.wait.retry.abort]({{site.baseUrl}}/zk_config_ref/org.zkoss.zk.ui.activate.wait.retry.abort)
+you also have to specify [ org.zkoss.zk.ui.activate.wait.retry.abort]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.activate.wait.retry.abort)
 to true.
 
 ```xml

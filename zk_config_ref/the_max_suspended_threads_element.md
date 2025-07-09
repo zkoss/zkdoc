@@ -18,7 +18,7 @@ suspended threads exceeds the number specified here. You can use the
 exception and handle it in a different way.'
 
 Notice that this option is applicable only if the event processing
-thread is enabled (it is disabled by default). Please refer to [the disable-event-thread element]({{site.baseUrl}}/zk_config_ref/The_disable-event-thread_Element)
+thread is enabled (it is disabled by default). Please refer to [the disable-event-thread element]({{site.baseurl}}/zk_config_ref/the_disable-event-thread_element)
 for details.
 
 

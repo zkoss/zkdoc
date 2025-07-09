@@ -27,7 +27,7 @@ browser to cache the CSS file.
 
 > ------------------------------------------------------------------------
 >
-> For information of 3.6 and earlier, please refer to [ ZK 3 Theme > Provider](ZK_Developer's_Guide/ZK_in_Depth/Style_customization/Theme#ZK_3_Theme_Provider).
+> For information of 3.6 and earlier, please refer to [ ZK 3 Theme > Provider](zk_developer's_guide/zk_in_depth/style_customization/theme#ZK_3_Theme_Provider).
 
 # Examples
 

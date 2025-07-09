@@ -7,7 +7,7 @@ expressions.
 
 This can be done easily by implementing
 [org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html)/[org.zkoss.zk.ui.util.InitiatorExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/InitiatorExt.html),
-and then specifying it with [the init directive](zuml_ref/ZUML/Processing_Instructions/init).
+and then specifying it with [the init directive](zuml_ref/zuml/processing_instructions/init).
 
 ```xml
 <?init class="com.foo.MyInitial"?>
@@ -23,7 +23,7 @@ the variable in the page's attributes.
 > **Notice** that the provision of variables for EL expression is
 > generally better to be done with
 > [org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)
-> (and then specified it with [the variable-resolver > directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver)).
+> (and then specified it with [the variable-resolver > directive](zuml_ref/zuml/processing_instructions/variable-resolver)).
 
 For example, suppose we have a class, `CustomerManager`, that can be
 used to load all customers, then we could prepare a variable to store
@@ -78,7 +78,7 @@ It could be done by specifying the initiator you implemented in
 Once specified, an instance of the given class will be instantiated for
 each page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)),
 and then its method will be called as if they are specified in the page
-([the init directive](zuml_ref/ZUML/Processing_Instructions/init)).
+([the init directive](zuml_ref/zuml/processing_instructions/init)).
 
 # Exception Handling
 

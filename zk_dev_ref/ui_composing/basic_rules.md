@@ -31,7 +31,7 @@ a component. For example,
  <zk>...</zk>
 ```
 
-[The zk element](zuml_ref/ZUML/Elements/zk) is a
+[The zk element](zuml_ref/zuml/elements/zk) is a
 special element used to aggregate other components. Unlike a real
 component (say, `hbox` or `div`), it is not part of the component tree
 being created. In other words, it does not represent any components. For
@@ -55,7 +55,7 @@ is equivalent to
  </window>
 ```
 
-For more information about special elements, please refer to [ZUML Reference](zuml_ref/ZUML/Elements).
+For more information about special elements, please refer to [ZUML Reference](zuml_ref/zuml/elements).
 
 # An XML Attribute Assigns a Value to a Component's Property or Event Listener
 
@@ -80,7 +80,7 @@ to window's title.
 <window title="${param.name}"/>
 ```
 
-For more information about EL expressions, please refer to [ZUML Reference](zuml_ref/EL_Expressions).
+For more information about EL expressions, please refer to [ZUML Reference](zuml_ref/el_expressions).
 
 ## Assign Event Listener if the Name Starts With `on`
 
@@ -123,7 +123,7 @@ of the collection.
 
 For more information about special attributes, please refer to the
 [Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/iterative_evaluation)
-section and the [ZUML Reference](zuml_ref/ZUML/Attributes)
+section and the [ZUML Reference](zuml_ref/zuml/attributes)
 
 # An XML Text Represents Label Component or Property's Value
 
@@ -164,7 +164,7 @@ is equivalent to
 This is designed to make it easy to specify multiple-line value. This is
 usually used by a particular component that requires a multiple-lines
 value. For a complete list of components that interpret the XML text as
-a property's value, please refer to the [ZUML Reference](zuml_ref/ZUML/Texts).
+a property's value, please refer to the [ZUML Reference](zuml_ref/zuml/texts).
 
 # An XML Processing Instruction Specifies the Page-wide Information
 
@@ -181,7 +181,7 @@ and the processing instruction's name (i.e., page in the above example).
 
 The other directives include the declaration of components, the class
 for initializing a page, the variable resolver for EL expressions, and
-so on. For more information about directives, please refer to [ZUML Reference](zuml_ref/ZUML/Processing_Instructions).
+so on. For more information about directives, please refer to [ZUML Reference](zuml_ref/zuml/processing_instructions).
 
 [^1]: ZK uses [BeanShell](http://www.beanshell.org) to interpret it at
     run time

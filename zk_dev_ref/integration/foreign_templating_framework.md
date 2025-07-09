@@ -264,7 +264,7 @@ please refer to [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_
     framework and allows developers to assemble UI at both server and
     client.
 
-[^2]: For more information, please refer to [ZK Component Reference](ZK_Component_Reference).
+[^2]: For more information, please refer to [ZK Component Reference](zk_component_reference).
 
 [^3]: You might take a look at [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
     for more information.

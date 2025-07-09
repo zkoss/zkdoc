@@ -83,7 +83,7 @@ public class TestRichlet extends GenericRichlet {
 ```
 
 In Richlet, you have to compose UI on your own, but some components only
-support specific child components. We recommend you to read [ZK Component Reference](ZK_Component_Reference) before you start
+support specific child components. We recommend you to read [ZK Component Reference](zk_component_reference) before you start
 to build.
 
 As shown above (line 27), we have to invoke
@@ -101,7 +101,7 @@ In addition, you could implement
 [org.zkoss.zk.ui.Richlet#getLanguageDefinition()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#getLanguageDefinition())
 to use a different language as default (for example, implementing a
 richlet for [mobile devices](http://code.google.com/p/zkreach/)). By
-default, [ZUL](zuml_ref/ZUML/Languages/ZUL) (aka.,
+default, [ZUL](zuml_ref/zuml/languages/zul) (aka.,
 xul/html) is assumed.
 
 ## Richlet Must Be Thread-Safe

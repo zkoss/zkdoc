@@ -51,7 +51,7 @@ macro component. Then we could create a page, say
 ## Declare Macro Component
 
 Before using a macro component, you have to declare it first. It is
-straightforward to use [component directives](zuml_ref/ZUML/Processing_Instructions/component).
+straightforward to use [component directives](zuml_ref/zuml/processing_instructions/component).
 For example, we could add the first line to the page that is going to
 use the *username* macro component:
 

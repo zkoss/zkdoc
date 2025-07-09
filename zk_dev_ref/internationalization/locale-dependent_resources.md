@@ -9,8 +9,8 @@ browser-dependent resources including JavaScript, CSS, and images.
 
 ZK can handle this for you automatically by specifying a URL with
 **asterisk** `*`. This feature is supported by all components that
-accept a URL, e.g. the src of [ \<script\>](ZK_component_reference/essential_components/Script)
-or [ \<?script?\>](zuml_ref/ZUML/Processing_Instructions/script).
+accept a URL, e.g. the src of [ \<script\>](zk_component_reference/essential_components/script)
+or [ \<?script?\>](zuml_ref/zuml/processing_instructions/script).
 The algorithm is as follows.
 
 ## Absolute or Relative Path

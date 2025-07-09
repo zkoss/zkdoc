@@ -134,7 +134,7 @@ The `border` property specifies whether to display a border for the window. The 
 
 ### Closable
 
-By setting the `closable` property ([Window.setClosable(boolean)](httpshttps://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setClosable(boolean)) to true, a close button is displayed on the window. This button allows the user to close the window by clicking it. When the user clicks the close button, an `onClose` event is sent to the window. By default, the `onClose` event detaches the window itself.
+By setting the `closable` property ([Window.setClosable(boolean)](httpshttps://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/window.html#setClosable(boolean)) to true, a close button is displayed on the window. This button allows the user to close the window by clicking it. When the user clicks the close button, an `onClose` event is sent to the window. By default, the `onClose` event detaches the window itself.
 
 #### onClose Event
 
@@ -326,4 +326,4 @@ The Window component supports various common dialogs to simplify common tasks:
 
 `*ALL`: Indicates that the `Window` component can have any kind of ZK component as its child element. This allows you to include any ZK component within the `Window`, providing flexibility and customization options for your designs.
 
-Note: Only one [`Caption`](Caption.md) component is allowed in the `Window` and it must be the first component.
+Note: Only one [`Caption`](caption.md) component is allowed in the `Window` and it must be the first component.

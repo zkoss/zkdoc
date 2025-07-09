@@ -16,8 +16,8 @@ There is another extended built-in function,
 not declared in taglib. Parses text from the beginning of the given
 string to produce a number with the given pattern and locale.
 
-You can call it by [ EL](zuml_ref/EL_Expressions/Static_Fields_and_Methods)
-or declaring a [ xel-method](zuml_ref/ZUML/Processing_Instructions/xel-method).
+You can call it by [ EL](zuml_ref/el_expressions/static_fields_and_methods)
+or declaring a [ xel-method](zuml_ref/zuml/processing_instructions/xel-method).
 
 **Parameters:** In both default and extended function:
 

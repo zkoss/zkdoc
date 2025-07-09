@@ -70,7 +70,7 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 ## Use `labels`
 
 Since 5.0.7 and later, an implicit object called
-[labels](zuml_ref/EL_Expressions/Implicit_Objects/labels)
+[labels](zuml_ref/el_expressions/implicit_objects/labels)
 was introduced, such that you could access the internationalization
 labels (so-called internationalization labels) directly. For example,
 assume you have a label called `app.title`, and then you could:
@@ -82,7 +82,7 @@ assume you have a label called `app.title`, and then you could:
 ```
 
 The
-[labels](zuml_ref/EL_Expressions/Implicit_Objects/labels)
+[labels](zuml_ref/el_expressions/implicit_objects/labels)
 object is a map (`java.util.Map`), so you could access the label
 directly by the use of `labels.`*`whatever`* in an EL expression.
 Moreover, as shown above, you could access the label even if a key is
@@ -145,11 +145,11 @@ With 5.0.6 or prior, you could get an internationalization label using
 </window>
 ```
 
-Notice that [the l function](zuml_ref/EL_Expressions/Core_Methods/l)
+Notice that [the l function](zuml_ref/el_expressions/core_methods/l)
 belongs to the TLD file called
-[<http://www.zkoss.org/dsp/web/core>](zuml_ref/EL_Expressions/Core_Methods),
+[<http://www.zkoss.org/dsp/web/core>](zuml_ref/el_expressions/core_methods),
 so we have to specify it with the
-[taglib](zuml_ref/ZUML/Processing_Instructions/taglib)
+[taglib](zuml_ref/zuml/processing_instructions/taglib)
 directive as shown above.
 
 ## Use `c:l2('key')` to format the message
@@ -157,7 +157,7 @@ directive as shown above.
 If you'd like to use the label as a pattern to generate concatenated
 message with additional arguments (like
 [`java.text.MessageFormat`](https://docs.oracle.com/javase/8/docs/api/java/text/MessageFormat.html)
-does), you could use [the l2 function](zuml_ref/EL_Expressions/Core_Methods/l2).
+does), you could use [the l2 function](zuml_ref/el_expressions/core_methods/l2).
 
 For example, let us assume we want to generate a full name based on the
 current Locale, then we could use `${c:l2('key',args)}` to generate
@@ -239,7 +239,7 @@ In addition to the servlet path, you could specify a file path by
 starting with [`file://`](file://)[^5]. For example,
 [`file:///foo/labels.properties`](file:///foo/labels.properties). If the
 target environment is Windows, you could specify the drive too, such as
-[`file:///C:/myapp/foo.properties`](file:///C:/myapp/foo.properties).
+[`file:///C:/myapp/foo.properties`](file:///c:/myapp/foo.properties).
 The advantage is that additional properties files could be added after
 the project has been built into a WAR file.
 
@@ -393,7 +393,7 @@ Test result: ${foo} ${another.whatever}
 
 If you prefer to use other implementation (such as property bundle), you
 could implement a static method and map it with
-[xel-method](zuml_ref/ZUML/Processing_Instructions/xel-method).
+[xel-method](zuml_ref/zuml/processing_instructions/xel-method).
 Then, you could reference it in EL expressions. For example,
 
 ```xml

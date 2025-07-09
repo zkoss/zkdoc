@@ -78,7 +78,7 @@ though it is more useful if a custom implementation is provided.
 # Declare Macro with Custom Java Class
 
 To make ZK Loader know which custom Java class to use, we have to
-specify the `class` attribute when declaring it in the [component directives](zuml_ref/ZUML/Processing_Instructions/component).
+specify the `class` attribute when declaring it in the [component directives](zuml_ref/zuml/processing_instructions/component).
 For example,
 
 ```xml

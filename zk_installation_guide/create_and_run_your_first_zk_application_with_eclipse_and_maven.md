@@ -10,14 +10,14 @@ of the projects aimed at integrating [Apache Maven](https://maven.apache.org/) w
 Please follow the installation guide for your Eclipse:
 
   
-[ Install Eclipse](quick_start/Create_and_Run_Your_First_ZK_Application_with_Eclipse_and_ZK_Studio#Install_Eclipse)
+[ Install Eclipse](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio#Install_Eclipse)
 
 ## Install M2eclipse
 
 Please follow the installation guide for your M2eclipse:
 
   
-[ Install M2eclipse](Setting_up_IDE/Maven/Setting_up_Maven_on_Eclipse)
+[ Install M2eclipse](setting_up_ide/maven/setting_up_maven_on_eclipse)
 
 ## Add ZK Maven Archetype
 

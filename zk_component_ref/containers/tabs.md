@@ -45,4 +45,4 @@ Try it
 
 ## Supported Children
 
-[`Tab`](Tab.md): Represents a single tab within the `Tabs` component. The `Tabs` component can include multiple `Tab` components as its children.
+[`Tab`](tab.md): Represents a single tab within the `Tabs` component. The `Tabs` component can include multiple `Tab` components as its children.

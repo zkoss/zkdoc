@@ -80,7 +80,7 @@ Check complete LESS source for Window from
 ## LESS Variables
 
 The following LESS variables are used for Window component. Check other
-variables from [ here](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Variables).
+variables from [ here](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_variables).
 
 | Variables              | Default Value |
 |------------------------|---------------|
@@ -101,7 +101,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ the instruction](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component)
+- Check [ the instruction](zk_style_customization_guide/look_and_feel_customization/customize_component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -129,7 +129,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Modify window.less file to achieve target design
 
-`Refer`[` here`](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/ZK_LESS_Functions)` for built-in zk less functions.`
+`Refer`[` here`](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_functions)` for built-in zk less functions.`
 
 - Change color by overriding zk less variables.
 

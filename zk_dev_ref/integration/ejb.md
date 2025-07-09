@@ -16,7 +16,7 @@ any EJB guide).
 # Use JndiVariableResolver to Resolve EJB in EL Expressions
 
 Referencing an EJB in an EL expression is straightforward: specifying
-[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) in [the variable-resolver directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver).
+[org.zkoss.zkplus.jndi.JndiVariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/jndi/JndiVariableResolver.html) in [the variable-resolver directive](zuml_ref/zuml/processing_instructions/variable-resolver).
 For example,
 
 ```xml

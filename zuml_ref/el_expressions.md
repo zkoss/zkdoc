@@ -21,14 +21,14 @@ There are several ways to associate Java objects with EL expressions.
 1.  Implement a variable resolver
     ([org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html))
     and specify it with the
-    [variable-resolver](zuml_ref/ZUML/Processing_Instructions/variable-resolver)
+    [variable-resolver](zuml_ref/zuml/processing_instructions/variable-resolver)
     directive.
 2.  Return the object in a static method and specify it in the
-    [xel-method](zuml_ref/ZUML/Processing_Instructions/xel-method)
+    [xel-method](zuml_ref/zuml/processing_instructions/xel-method)
 3.  Declare multiple static methods in a taglib and declare it in
-    [taglib](zuml_ref/ZUML/Processing_Instructions/taglib)
+    [taglib](zuml_ref/zuml/processing_instructions/taglib)
 4.  Construct them in
-    [zscript](zuml_ref/ZUML/Elements/zscript)
+    [zscript](zuml_ref/zuml/elements/zscript)
 
 Here is the detailed information for each feature. For introductory,
 please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions).

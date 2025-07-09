@@ -394,7 +394,7 @@ it.
 How do we achieve this security control in a zul? We can implement a
 custom tag library to check current user's authorities and apply the tag
 library on `if` or `disable` attribute. Please refer to
-[zuml_ref/ZUML/Processing_Instructions/taglib/Custom_Taglib](zuml_ref/ZUML/Processing_Instructions/taglib/Custom_Taglib)
+[zuml_ref/ZUML/Processing_Instructions/taglib/Custom_Taglib](zuml_ref/zuml/processing_instructions/taglib/custom_taglib)
 for details.
 
 The tag library's function is implemented in
@@ -581,7 +581,7 @@ for an unauthenticated user (not log in yet), we can even do more:
 redirect the anonymous user to the login page. We will show how to
 achieve this in ZK:
 
-First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](zk_dev_ref/ui_patterns/Error_Handling),
+First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](zk_dev_ref/ui_patterns/error_handling),
 configure <error-page> in `zk.xml`.
 
 **zk.xml**

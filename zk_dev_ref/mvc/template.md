@@ -1,5 +1,5 @@
 A template is a ZUML fragment that defines how to create components. A
-template is enclosed with [the template element](zuml_ref/ZUML/Elements/template) as shown
+template is enclosed with [the template element](zuml_ref/zuml/elements/template) as shown
 below.
 
 ```xml

@@ -17,13 +17,13 @@ that supports XSTL. For more information please refer to [XML Components]({{site
 
 # Use the XML Component Set
 
-The [XML component set](zuml_ref/ZUML/Languages/XML)
-(aka., the XML [language](zuml_ref/ZUML/Languages), in
+The [XML component set](zuml_ref/zuml/languages/xml)
+(aka., the XML [language](zuml_ref/zuml/languages), in
 ZK terminology) is used to generate XML output. Unlike the
-[ZUL](zuml_ref/ZUML/Languages/ZUL) or
-[XHTML](zuml_ref/ZUML/Languages/XHTML) component sets,
+[ZUL](zuml_ref/zuml/languages/zul) or
+[XHTML](zuml_ref/zuml/languages/xhtml) component sets,
 all unknown[^1] tags in a ZUML document are assumed to belong to the
-[native namespace](zuml_ref/ZUML/Namespaces/Native). It
+[native namespace](zuml_ref/zuml/namespaces/native). It
 means ZK generates them directly to the output without instantiating a
 ZK component for each of them.
 
@@ -64,7 +64,7 @@ The generated output will be
 
 where
 
-- The content type is specified with the [page directive](zuml_ref/ZUML/Processing_Instructions/page).
+- The content type is specified with the [page directive](zuml_ref/zuml/processing_instructions/page).
   For SVG, it is `image/svg+xml`. The `xml` processing instruction
   (<code>
   <?xml?>
@@ -73,11 +73,11 @@ where
   directive.
 - All tags in this example, such as `svg` and `circle`, are associated
   with a namespace (http://www.w3.org/2000/svg) that is unknown to ZK
-  Loader. Thus, they are assumed to belong to the [native namespace](zuml_ref/ZUML/Namespaces/Native). They are
+  Loader. Thus, they are assumed to belong to the [native namespace](zuml_ref/zuml/namespaces/native). They are
   output directly rather than instantiating a ZK component for each of
   them.
 - To use `zscript`, `forEach` and other ZK specific features, you have
-  to specify the [ZK namespace](zuml_ref/ZUML/Namespaces/ZK) (zk).
+  to specify the [ZK namespace](zuml_ref/zuml/namespaces/zk) (zk).
 
 > ------------------------------------------------------------------------
 >
@@ -114,7 +114,7 @@ set:
  </language-mapping>
 ```
 
-where `xml` is the language name of the [XML component set](zuml_ref/ZUML/Languages/XML). Thus, when ZK Loader
+where `xml` is the language name of the [XML component set](zuml_ref/zuml/languages/xml). Thus, when ZK Loader
 parses a file with the `.svg` extension, it knows the default language
 is the XML component set[^3].
 
@@ -129,4 +129,4 @@ is the XML component set[^3].
     `org.zkoss.zk.ui.http.DHtmlLayoutServlet`.
 
 [^3]: For more information about language identification, please refer
-    to [ZUML Reference](zuml_ref/ZUML/Languages).
+    to [ZUML Reference](zuml_ref/zuml/languages).

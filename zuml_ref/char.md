@@ -9,7 +9,7 @@ i.e.,
 Converts the specified object to a character.
 
 Notice that EL will convert the type automatically, so you rarely need
-this method. Please refer to [Type Coercion](zuml_ref/EL_Expressions/Type_Coercion) for
+this method. Please refer to [Type Coercion](zuml_ref/el_expressions/type_coercion) for
 details.
 
 **Parameters:**

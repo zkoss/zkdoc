@@ -11,7 +11,7 @@ JavaScript.
 # Choose Interpreter for Whole Page
 
 To change the default interpreter for the whole page, you could use the
-[page directive](zuml_ref/ZUML/Processing_Instructions/page)
+[page directive](zuml_ref/zuml/processing_instructions/page)
 by specifying the zscriptLanguage attribute, such as
 
 ```xml

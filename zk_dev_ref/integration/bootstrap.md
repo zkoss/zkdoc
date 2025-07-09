@@ -41,4 +41,4 @@ by [WebJars](https://www.webjars.org/) with Maven.
 ```
 
 See
-[ZK_Client-side_Reference/Language_Definition/stylesheet](ZK_Client-side_Reference/Language_Definition/stylesheet)
+[ZK_Client-side_Reference/Language_Definition/stylesheet](zk_client_side_ref/language_definition/stylesheet)

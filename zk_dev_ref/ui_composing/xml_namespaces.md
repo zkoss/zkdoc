@@ -1,9 +1,9 @@
 In a ZUML document, an XML namespace is used to identify either a
-special functionality or a component set. We call the former [a standard namespace](zuml_ref/ZUML/Namespaces) and the latter [a language](zuml_ref/ZUML/Languages).
+special functionality or a component set. We call the former [a standard namespace](zuml_ref/zuml/namespaces) and the latter [a language](zuml_ref/zuml/languages).
 
 # Standard Namespaces
 
-For example, the [client namespace](zuml_ref/ZUML/Namespaces/Client) is used to
+For example, the [client namespace](zuml_ref/zuml/namespaces/client) is used to
 indicate that an XML attribute shall be interpreted as a client-side
 control.
 
@@ -15,7 +15,7 @@ component.
 <combobox xmlns:w="client" w:onFocus="this.open()" onChange="doOnChange()"/>
 ```
 
-The [native namespace](zuml_ref/ZUML/Namespaces/Native)
+The [native namespace](zuml_ref/zuml/namespaces/native)
 is another standard namespace used to indicate that an XML element
 should be generated *natively* rather than a component. For example,
 
@@ -35,11 +35,11 @@ should be generated *natively* rather than a component. For example,
 where `n:table`, `n:tr` and `n:td` are native, i.e., they are generated
 directly to the client without creating a component for each of them.
 
-For more information, please refer to [ZUML Reference](zuml_ref/ZUML/Namespaces).
+For more information, please refer to [ZUML Reference](zuml_ref/zuml/namespaces).
 
 # Languages
 
-A [language](zuml_ref/ZUML/Languages)
+A [language](zuml_ref/zuml/languages)
 ([org.zkoss.zk.ui.metainfo.LanguageDefinition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html)) is a
 collection of component definitions. It is also known as a component
 set.
@@ -66,13 +66,13 @@ can be retrieved correctly.
 
 ZK Loader first decides the default language from the extension. For
 example, `foo.zul` implies the default language is
-[ZUL](zuml_ref/ZUML/Languages/ZUL). The default
+[ZUL](zuml_ref/zuml/languages/zul). The default
 language is used if an XML element is not specified with any XML
 namespace. For example, `window` in the previous example will be
-considered as a component definition of [the ZUL langauge](zuml_ref/ZUML/Languages/ZUL).
+considered as a component definition of [the ZUL langauge](zuml_ref/zuml/languages/zul).
 
 If the extension is zhtml (such as `foo.zhtml`), the default language
-will be [XHTML](zuml_ref/ZUML/Languages/XHTML). Thus,
+will be [XHTML](zuml_ref/zuml/languages/xhtml). Thus,
 `window` in the previous example will be interpreted incorrectly. To
 solve it, you could specify the XML namespace explicitly as follows.
 
@@ -83,7 +83,7 @@ solve it, you could specify the XML namespace explicitly as follows.
 </p>
 ```
 
-For more information about identifying a language, pelase refer to [ZUML Reference](zuml_ref/ZUML/Languages#Language_Identification).
+For more information about identifying a language, pelase refer to [ZUML Reference](zuml_ref/zuml/languages#Language_Identification).
 
 # Version History
 

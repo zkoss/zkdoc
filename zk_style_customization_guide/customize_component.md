@@ -1,4 +1,4 @@
-We have introduced how to execute [ partial customization with sclass](ZK_Style_Customization_Guide/Look_and_Feel_customization/Partical_customize_with_Sclass_and_Zclass)
+We have introduced how to execute [ partial customization with sclass](zk_style_customization_guide/look_and_feel_customization/partical_customize_with_sclass_and_zclass)
 for specific components. Now we will introduce how to customize
 component style by LESS and make it the default style inside a project.
 Subsections are detailed samples on how you can customize components.
@@ -34,7 +34,7 @@ the developer tool.
 Here we will use **Window** component as an example to demonstrate how
 to customize a component.
 
-- 1\. Link to [ Window Component](ZK_Style_Customization_Guide/Look_and_Feel_customization/Customize_Component/Window)
+- 1\. Link to [ Window Component](zk_style_customization_guide/look_and_feel_customization/customize_component/window)
   page or use browser's developer tool to check the DOM structure.
 - 2\. Create **window.less** file under **less** folder in ZK web
   project.
@@ -65,7 +65,7 @@ re-defining LESS variables as follows:
 
 </div>
 
-:\* Follow this [ instruction](ZK_Style_Customization_Guide/Integrate_with_LESS/How_ZK_works_with_LESS/Compile_LESS#Compile_LESS_to_DSP_during_Development_phase)
+:\* Follow this [ instruction](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/compile_less#Compile_LESS_to_DSP_during_Development_phase)
 to add ZKLessServlet to web.xml to compile less at runtime.
 
 :\* Use **window.less** in **window.zul** page as follows to check the

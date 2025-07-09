@@ -226,7 +226,7 @@ In general, UUID is independent of ID. UUID is assigned (generated) automaticall
 ZK framework, while ID is assigned by the application developers. However, if a component
 implements [org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html),
 ID will become UUID if the application assigns one. Currently, only
-components from [ the XHTML component set](zuml_ref/ZUML/Languages/XHTML) implements
+components from [ the XHTML component set](zuml_ref/zuml/languages/xhtml) implements
 [org.zkos.zk.ui.ext.RawId](https://www.zkoss.org/javadoc/latest/zk/org/zkos/zk/ui/ext/RawId.html).
 
 A component's UUID is used by the ZK framework as the primary identifier for the corresponding HTML element in the rendered page. When ZK generates the client-side DOM, each component's root HTML element will have its `id` attribute set to the component's UUID. This ensures that every component can be uniquely referenced and manipulated on the client side, even if multiple components have the same developer-assigned ID within different ID spaces. The UUID is also used internally by ZK for event handling, client-server communication, and to maintain the mapping between server-side components and their client-side representations.

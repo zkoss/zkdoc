@@ -80,4 +80,4 @@ public class TestEncoder implements URLEncoder {
 3.  deploy such special **ZK WAR** to a server near your customer and
     add the URL to your implementation of URLEncoder.
 
-<i>Don't know how to deploy on server ? Please refer to [Installation Guide](ZK_Installation_Guide)</i>.
+<i>Don't know how to deploy on server ? Please refer to [Installation Guide](zk_installation_guide/before_you_start)</i>.

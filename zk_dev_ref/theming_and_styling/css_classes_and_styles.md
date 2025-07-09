@@ -26,7 +26,7 @@ individual component.
 Notice that the DOM structures of many ZUL components are complicate,
 and CSS customization might depend on the DOM structure. For more
 information about how individual component is styled, please refer to
-[ZK Style Guide](ZK_Style_Guide).
+[ZK Style Guide](zk_style_guide).
 
 # style
 

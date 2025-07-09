@@ -145,12 +145,12 @@ For example:
  <include src="mypage" some="something" another="${expr}"/>
 ```
 
-Then, you could retrieve the values by use [the arg object](zuml_ref/EL_Expressions/Implicit_Objects/arg)
+Then, you could retrieve the values by use [the arg object](zuml_ref/el_expressions/implicit_objects/arg)
 as described in [the Load ZUML in Java section]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java).
 
 > ------------------------------------------------------------------------
 >
-> In the `defer` mode, the values have to be retrieved by [the > requestScope > object](zuml_ref/EL_Expressions/Implicit_Objects/requestScope).
+> In the `defer` mode, the values have to be retrieved by [the > requestScope > object](zuml_ref/el_expressions/implicit_objects/requestscope).
 >
 > ------------------------------------------------------------------------
 >
@@ -202,8 +202,8 @@ mode. First, you can pass them with the query string.
 Then, in the included page, you can access them with
 [org.zkoss.zk.ui.Execution#getParameter(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getParameter(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the `param` object](zuml_ref/EL_Expressions/Implicit_Objects/param)
-or [the paramValues object](zuml_ref/EL_Expressions/Implicit_Objects/paramValues)
+the included page), you can use [the `param` object](zuml_ref/el_expressions/implicit_objects/param)
+or [the paramValues object](zuml_ref/el_expressions/implicit_objects/paramvalues)
 to access them.
 
 ```xml
@@ -224,7 +224,7 @@ With the dynamic properties, you can pass non-String-typed values. In
 the included page, you can access them with
 [org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
 or the `javax.servlet.ServletRequest` interface. In EL expressions (of
-the included page), you can use [the requestScope object](zuml_ref/EL_Expressions/Implicit_Objects/requestScope)
+the included page), you can use [the requestScope object](zuml_ref/el_expressions/implicit_objects/requestscope)
 to access them.
 
 ```xml

@@ -72,7 +72,7 @@ Token Pattern**. Generally, this is done by inserting a unique token
 usually referred as **CSRF token** in the generated HTML and checking it
 at the server side on form submission. ZK employs a similar technique in
 the form of **desktop ID**. Each requested URL in ZK web application
-associates a Desktop instance on the server side. Please refer to [ Desktop and Pages](ZK_Developer's_Guide/Fundamental_ZK/Basic_Concepts/Page_and_Desktop)
+associates a Desktop instance on the server side. Please refer to [ Desktop and Pages](zk_developer's_guide/fundamental_zk/basic_concepts/page_and_desktop)
 for more details on the concept of a Desktop in ZK.
 
 ZK desktop is discarded and re-created each time a new page is loaded in

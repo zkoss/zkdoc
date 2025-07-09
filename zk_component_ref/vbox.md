@@ -24,7 +24,7 @@ of TABLE).
 
 ## Splitlatyout
 
-If you need a splitter, please use [ splitlayout](zk_component_ref/Splitlayout).
+If you need a splitter, please use [ splitlayout](zk_component_ref/splitlayout).
 
 # Example
 

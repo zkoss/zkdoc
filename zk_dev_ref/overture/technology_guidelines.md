@@ -384,5 +384,5 @@ section[^5].
     [Small Talks: Define Composite Component using Java Annotation in ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
     for the details.
 
-[^5]: Notice that [ZK JSF Components](ZK_JSF_Docs) is no
+[^5]: Notice that [ZK JSF Components](zk_jsf_docs) is no
     longer supported.

@@ -15,7 +15,7 @@ A negative value indicates that there is no limit. Zero means no pool at
 all.
 
 Notice this option is applicable only if the event processing thread is
-enabled (it is disabled by default). Please refer to [the disable-event-thread element]({{site.baseUrl}}/zk_config_ref/The_disable-event-thread_Element)
+enabled (it is disabled by default). Please refer to [the disable-event-thread element]({{site.baseurl}}/zk_config_ref/the_disable-event-thread_element)
 for details.
 
 

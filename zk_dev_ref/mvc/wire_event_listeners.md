@@ -8,7 +8,7 @@ the event being listened to). The parameter of @Listen should be pairs
 of an event name and a selector, separated by a semicolon.
 
 ZK will look for the target component specified by the selector **in the
-same [ ID space](zk_dev_ref/ui_composing/ID_Space)**.
+same [ ID space](zk_dev_ref/ui_composing/id_space)**.
 
 For example,
 

@@ -47,7 +47,7 @@ public class FooComposer extends SelectorComposer<Window> {
 
 There are two approaches to register a variable resolver: the
 [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
-annotation or [the variable-resolver directive](zuml_ref/ZUML/Processing_Instructions/variable-resolver).
+annotation or [the variable-resolver directive](zuml_ref/zuml/processing_instructions/variable-resolver).
 Here is the example of registering variable resolvers with annotations.
 
 ```java
@@ -172,7 +172,7 @@ the composer's name, when an event is received.
 [ZK Spring](http://www.zkoss.org/product/zkspring) is recommended if you
 want to use Spring intensively. It extends Spring to provide the scopes
 matching ZK lifecycle, such as the IdSpace and Component scopes. Please
-refer to [ZK Spring Essentials](ZK_Spring_Essentials) for
+refer to [ZK Spring Essentials](/zk_spring_essentials/introduction) for
 more detailed information.
 
 ## Wire other variables in GenericForwardComposer based composers
@@ -232,7 +232,7 @@ Here is the sequence of wiring:
       with the
       [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
       annotation.
-  3.  If none is found, it looks for [the implicit objects](zuml_ref/EL_Expressions/Implicit_Objects),
+  3.  If none is found, it looks for [the implicit objects](zuml_ref/el_expressions/implicit_objects),
       such as session and page.
 
 # Version History

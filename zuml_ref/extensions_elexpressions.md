@@ -2,7 +2,7 @@ The default evaluator for EL expressions are derived from [Apache Commons EL](ht
 the same as JSP 2.0's EL expressions[^1].
 
 If you prefer a more powerful EL evaluator, such as MVEL, OGNL[^2] or
-your own implementation, you could specify it with the [evaluator directive](zuml_ref/ZUML/Processing_Instructions/evaluator).
+your own implementation, you could specify it with the [evaluator directive](zuml_ref/zuml/processing_instructions/evaluator).
 For example,
 
 ```xml

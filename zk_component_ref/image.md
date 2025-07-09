@@ -39,7 +39,7 @@ preferred Locale. Zk will try to locate the image file called
 finally `/my.png`.
 
 Please refer to
-[zk_dev_ref/internationalization/Locale-Dependent_Resources](zk_dev_ref/internationalization/Locale-Dependent_Resources)
+[zk_dev_ref/internationalization/Locale-Dependent_Resources](zk_dev_ref/internationalization/locale-dependent_resources)
 for more details.
 
 Secondly, you could use the `setContent` method to set the content of an

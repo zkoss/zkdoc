@@ -41,4 +41,4 @@ In addition, you can find `zul.xsd` under the `dist/xsd` directory in
 the [ZK binary distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
 
 This section is about the general use of ZUML. For a complete reference,
-please refer to [ZUML Reference](ZUML_Reference).
+please refer to [ZUML Reference](zuml_reference).

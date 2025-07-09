@@ -14,7 +14,7 @@ attribute.
 
 To retrieve the index of the iteration, or the previous `each` object in
 nested forEach, you have to use another implicit object called
-[forEachStatus](zuml_ref/EL_Expressions/Implicit_Objects/forEachStatus).
+[forEachStatus](zuml_ref/el_expressions/implicit_objects/foreachstatus).
 
 ```xml
 <listbox forEach="${matrix}">

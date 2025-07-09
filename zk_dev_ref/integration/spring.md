@@ -316,7 +316,7 @@ better to use the scoped proxy bean. See [Spring Framework Reference](https://do
 # ZK Spring Addon
 
 ZK also provides additional features for Spring and Spring Security.
-Please refer to [ZK Spring Essentials](ZK_Spring_Essentials)
+Please refer to [ZK Spring Essentials](/zk_spring_essentials/introduction)
 for details.
 
 # Example Source Code

@@ -46,6 +46,6 @@ creating your own application directly.*
 When developing an application, we usually use IDE to deploy it. For
 more information, please refer to the document of your IDE.
 
-If you are new to Java IDE, you might take a look at [Setting up Eclipse with ZK Studio](Setting_up_IDE/Eclipse_with_ZK_Studio).
+If you are new to Java IDE, you might take a look at [Setting up Eclipse with ZK Studio](setting_up_ide/eclipse_with_zk_studio).
 
 

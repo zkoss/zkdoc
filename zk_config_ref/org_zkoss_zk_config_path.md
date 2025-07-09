@@ -20,7 +20,7 @@ The value can be one of the following:
     the web application's /WEB-INF/lib directory
 - **A file path**, such as
   [`file:///home/http/zk.xml`](file:///home/http/zk.xml) and
-  [`file:///C:/test/zk.xml`](file:///C:/test/zk.xml), if you use
+  [`file:///C:/test/zk.xml`](file:///c:/test/zk.xml), if you use
   Windows. Notice it must start with [`file://`](file://) (For more
   information about the URI of a file, please refer to [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).)
 - **A URL**, such as `http://foo.com/config/zk.xml`. Notice it must

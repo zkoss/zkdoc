@@ -9,12 +9,12 @@ Basic Format
 ------------
 [ All ZK bind annotation](../syntax/data_binding.html) has the general format:
 ```xml
-@[Annotation](value=[EL-expression], [arbitraryKey]=[EL-expression])
+@[Annotation](value=[el-expression], [arbitrarykey]=[el-expression])
 ```
 It starts from a "@" symbol followed by an annotation's name like “id” or “bind”. Inside parentheses we can write multiple **key-value pairs** separated with a comma. The key is a self-defined name (not an EL
 expression), and it's like a key in a Map. The value is an EL expression but is **not enclosed with "${" and "}"**. The default key name is **“value”**. If you only write a EL expression without specifying its key name, it's implicit set to key named “value”. Hence we usually omit this default key name when writing ZK bind annotation. In most case, we can just write a annotation as follows:
 ```xml
-@[Annotation]( [EL-expression])
+@[Annotation]([el-expression])
 ```
 We just need to write one key-value pair and omit default key name. We often use multiple key-value pairs for passing parameters to command, converter, and validator.
 
@@ -152,5 +152,5 @@ A static field or static method of a Java class can be referenced with the synta
 ```xml
 <label value="@load((Math.sqrt(16)))" />
 ```
-You need to import required pakcage/class by [import directive](zuml_ref/ZUML/Processing_Instructions/import).
+You need to import required pakcage/class by [import directive](zuml_ref/zuml/processing_instructions/import).
 Note that `java.lang.*` is imported by default. 
