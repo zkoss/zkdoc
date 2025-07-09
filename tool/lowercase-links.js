@@ -1,5 +1,80 @@
 #!/usr/bin/env node
 
+/**
+ * LOWERCASE LINKS CONVERTER
+ * =========================
+ * 
+ * A Node.js tool that automatically converts internal links to lowercase in Markdown files.
+ * This tool helps maintain consistent URL formatting across Jekyll documentation sites.
+ * 
+ * FEATURES:
+ * --------
+ * • Recursively processes all .md files in the project directory
+ * • Converts baseurl links to lowercase: {{site.baseurl}}/Path/To/Page → {{site.baseurl}}/path/to/page
+ * • Converts internal page links to lowercase: /Path/To/Page → /path/to/page
+ * • Handles both formats: {{site.baseurl}}/path and /{{site.baseurl}}/path
+ * • Ignores external URLs (http://, https://, ftp://, mailto:, etc.)
+ * • Ignores image links (.png, .jpg, .gif, .svg, etc.)
+ * • Dry-run mode for previewing changes without modifying files
+ * • Detailed logging of all conversions performed
+ * • Optional report generation for audit trails
+ * • Smart directory filtering (skips node_modules, .git, etc.)
+ * 
+ * USAGE:
+ * ------
+ * Basic usage (converts links and modifies files):
+ *   node tool/lowercase-links.js
+ * 
+ * Preview mode (shows what would be changed without modifying files):
+ *   node tool/lowercase-links.js --dry-run
+ *   node tool/lowercase-links.js -d
+ * 
+ * Generate detailed report file:
+ *   node tool/lowercase-links.js --save-report
+ *   node tool/lowercase-links.js -s
+ * 
+ * Combined options:
+ *   node tool/lowercase-links.js --dry-run --save-report
+ * 
+ * EXAMPLES:
+ * ---------
+ * Baseurl links:
+ * Before: [ZK Developer Guide]({{site.baseurl}}/ZK_Developer_Guide/Introduction)
+ * After:  [ZK Developer Guide]({{site.baseurl}}/zk_developer_guide/introduction)
+ * 
+ * Before: [Calendar]({{site.baseurl}}/ZK_Component_Reference/Essential_Components/Calendar)
+ * After:  [Calendar]({{site.baseurl}}/zk_component_reference/essential_components/calendar)
+ * 
+ * Internal page links:
+ * Before: [Getting Started](/ZK_Developer_Guide/Getting_Started)
+ * After:  [Getting Started](/zk_developer_guide/getting_started)
+ * 
+ * Before: [Button Component](/ZK_Component_Reference/Input/Button.html)
+ * After:  [Button Component](/zk_component_reference/input/button.html)
+ * 
+ * Ignored (images):
+ * ![Screenshot](/Images/Screenshot.PNG) - left unchanged
+ * [Download Image](/assets/diagrams/Architecture.png) - left unchanged
+ * 
+ * OUTPUT:
+ * -------
+ * • Console output shows progress and summary statistics
+ * • Optional detailed report file: tool/lowercase-conversion-report.txt
+ * • Files are backed up automatically by git (use git diff to review changes)
+ * 
+ * SAFETY:
+ * -------
+ * • Use --dry-run first to preview changes
+ * • Commit your work before running to enable easy rollback
+ * • Only processes .md files, ignores other file types
+ * • Skips common directories like node_modules, .git, _site
+ * 
+ * REQUIREMENTS:
+ * ------------
+ * • Node.js (any recent version)
+ * • Write permissions to the project directory (unless using --dry-run)
+ */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -10,6 +85,28 @@ class LinkLowercaseConverter {
     this.totalChanges = 0;
     this.changesLog = [];
     this.dryRun = false;
+  }
+
+  // Helper function to check if a URL is an image
+  isImageUrl(url) {
+    const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.ico', '.tiff', '.tif'];
+    const urlLower = url.toLowerCase();
+    return imageExtensions.some(ext => urlLower.endsWith(ext));
+  }
+
+  // Helper function to check if a URL should be ignored
+  shouldIgnoreUrl(url) {
+    // Ignore external URLs, anchors, special protocols, and images
+    return url.startsWith('http://') || 
+           url.startsWith('https://') || 
+           url.startsWith('ftp://') || 
+           url.startsWith('ftps://') ||
+           url.startsWith('mailto:') ||
+           url.startsWith('tel:') ||
+           url.startsWith('javascript:') ||
+           url.startsWith('#') ||
+           url.includes('{{site.baseurl}}') || // Handled by separate method
+           this.isImageUrl(url); // Ignore image links
   }
 
   // Convert baseurl links to lowercase
@@ -29,6 +126,11 @@ class LinkLowercaseConverter {
         pathPart = match.substring('{{site.baseurl}}/'.length);
       }
       
+      // Skip image links
+      if (this.isImageUrl(pathPart)) {
+        return match;
+      }
+      
       // Convert path to lowercase
       const lowercasePath = pathPart.toLowerCase();
       
@@ -41,7 +143,8 @@ class LinkLowercaseConverter {
         this.changesLog.push({
           file: relativePath,
           original: match,
-          converted: newLink
+          converted: newLink,
+          type: 'baseurl'
         });
       }
       
@@ -51,11 +154,69 @@ class LinkLowercaseConverter {
     return { content: newContent, changes };
   }
 
+  // Convert internal page links to lowercase
+  convertInternalLinksToLowercase(content, filePath) {
+    const relativePath = path.relative(this.rootDir, filePath);
+    let changes = 0;
+    
+    // Pattern to match markdown links [text](url)
+    const markdownLinkRegex = /\[([^\]]*)\]\(([^)]+)\)/g;
+    
+    const newContent = content.replace(markdownLinkRegex, (match, linkText, url) => {
+      // Skip URLs that should be ignored
+      if (this.shouldIgnoreUrl(url)) {
+        return match;
+      }
+      
+      // Only process internal links that start with / (absolute paths)
+      if (url.startsWith('/')) {
+        // Remove any fragment identifier (anchor) for processing
+        const urlParts = url.split('#');
+        const pathPart = urlParts[0];
+        const fragment = urlParts[1] ? '#' + urlParts[1] : '';
+        
+        // Convert the path to lowercase
+        const lowercasePath = pathPart.toLowerCase();
+        const newUrl = lowercasePath + fragment;
+        
+        if (url !== newUrl) {
+          changes++;
+          this.changesLog.push({
+            file: relativePath,
+            original: url,
+            converted: newUrl,
+            type: 'internal'
+          });
+          
+          return `[${linkText}](${newUrl})`;
+        }
+      }
+      
+      return match;
+    });
+    
+    return { content: newContent, changes };
+  }
+
+  // Convert all links to lowercase
+  convertAllLinksToLowercase(content, filePath) {
+    // First convert baseurl links
+    let result1 = this.convertBaseurlLinksToLowercase(content, filePath);
+    
+    // Then convert internal links
+    let result2 = this.convertInternalLinksToLowercase(result1.content, filePath);
+    
+    return {
+      content: result2.content,
+      changes: result1.changes + result2.changes
+    };
+  }
+
   // Process a single markdown file
   processFile(filePath) {
     try {
       const content = fs.readFileSync(filePath, 'utf-8');
-      const result = this.convertBaseurlLinksToLowercase(content, filePath);
+      const result = this.convertAllLinksToLowercase(content, filePath);
       
       if (result.changes > 0) {
         if (!this.dryRun) {
@@ -119,7 +280,9 @@ class LinkLowercaseConverter {
       for (const file of sortedFiles) {
         console.log(`\n📄 ${file}`);
         for (const change of changesByFile[file]) {
-          console.log(`  🔗 ${change.original}`);
+          const typeIcon = change.type === 'baseurl' ? '🏠' : '🔗';
+          const typeLabel = change.type === 'baseurl' ? 'baseurl' : 'internal';
+          console.log(`  ${typeIcon} [${typeLabel}] ${change.original}`);
           console.log(`  ➡️  ${change.converted}`);
         }
       }
@@ -131,7 +294,7 @@ class LinkLowercaseConverter {
     } else if (this.totalChanges > 0) {
       console.log('\n✅ All links have been converted to lowercase');
     } else {
-      console.log('\n✅ No baseurl links needed conversion');
+      console.log('\n✅ No links needed conversion');
     }
   }
 
@@ -162,6 +325,8 @@ class LinkLowercaseConverter {
       report += `FILE: ${file}\n`;
       report += '='.repeat(file.length + 6) + '\n';
       for (const change of changesByFile[file]) {
+        const typeLabel = change.type === 'baseurl' ? 'baseurl' : 'internal';
+        report += `  Type:      ${typeLabel}\n`;
         report += `  Original:  ${change.original}\n`;
         report += `  Converted: ${change.converted}\n\n`;
       }
@@ -179,7 +344,7 @@ function main() {
   const dryRun = process.argv.includes('--dry-run') || process.argv.includes('-d');
   const saveReport = process.argv.includes('--save-report') || process.argv.includes('-s');
   
-  console.log('🔤 Converting baseurl links to lowercase...');
+  console.log('🔤 Converting internal links to lowercase...');
   console.log(`📁 Root directory: ${rootDir}`);
   console.log(`🔍 Mode: ${dryRun ? 'DRY RUN (preview only)' : 'LIVE (will modify files)'}\n`);
   
