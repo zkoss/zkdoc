@@ -100,7 +100,8 @@ class LinkLowercaseConverter {
     // Ignore external URLs, anchors, special protocols, and images
     return url.startsWith('http://') || 
            url.startsWith('https://') || 
-           url.startsWith('ftp://') || 
+           url.startsWith('ws://') ||
+           url.startsWith('ftp://') ||
            url.startsWith('ftps://') ||
            url.startsWith('mailto:') ||
            url.startsWith('tel:') ||
