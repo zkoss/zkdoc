@@ -90,7 +90,8 @@ class LinkLowercaseConverter {
   // Helper function to check if a URL is an image
   isImageUrl(url) {
     const imageExtensions = ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp', '.ico', '.tiff', '.tif'];
-    const urlLower = url.toLowerCase();
+    // Remove Unicode control characters (including LRM, RLM, etc.) and trim whitespace
+    const urlLower = url.toLowerCase().replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, '').trim();
     return imageExtensions.some(ext => urlLower.endsWith(ext));
   }
 
@@ -125,7 +126,7 @@ class LinkLowercaseConverter {
       } else {
         pathPart = match.substring('{{site.baseurl}}/'.length);
       }
-      
+      pathPart = pathPart.trim(); // Remove any leading/trailing whitespace
       // Skip image links
       if (this.isImageUrl(pathPart)) {
         return match;
@@ -164,34 +165,33 @@ class LinkLowercaseConverter {
     
     const newContent = content.replace(markdownLinkRegex, (match, linkText, url) => {
       // Skip URLs that should be ignored
+      url = url.trim(); // Remove any leading/trailing whitespace
       if (this.shouldIgnoreUrl(url)) {
         return match;
       }
       
       // Only process internal links that start with / (absolute paths)
-      if (url.startsWith('/')) {
-        // Remove any fragment identifier (anchor) for processing
-        const urlParts = url.split('#');
-        const pathPart = urlParts[0];
-        const fragment = urlParts[1] ? '#' + urlParts[1] : '';
-        
-        // Convert the path to lowercase
-        const lowercasePath = pathPart.toLowerCase();
-        const newUrl = lowercasePath + fragment;
-        
-        if (url !== newUrl) {
-          changes++;
-          this.changesLog.push({
-            file: relativePath,
-            original: url,
-            converted: newUrl,
-            type: 'internal'
-          });
-          
-          return `[${linkText}](${newUrl})`;
-        }
+      // Skip image links even if they start with /
+      if (this.isImageUrl(url)) {
+        return match;
       }
-      
+      // Remove any fragment identifier (anchor) for processing
+      const urlParts = url.split('#');
+      const pathPart = urlParts[0];
+      const fragment = urlParts[1] ? '#' + urlParts[1] : '';
+      // Convert the path to lowercase
+      const lowercasePath = pathPart.toLowerCase();
+      const newUrl = lowercasePath + fragment;
+      if (url !== newUrl) {
+        changes++;
+        this.changesLog.push({
+          file: relativePath,
+          original: url,
+          converted: newUrl,
+          type: 'internal'
+        });
+        return `[${linkText}](${newUrl})`;
+      }
       return match;
     });
     
