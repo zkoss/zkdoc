@@ -13,6 +13,7 @@
  * • Converts baseurl links to lowercase: {{site.baseurl}}/Path/To/Page → {{site.baseurl}}/path/to/page
  * • Converts internal page links to lowercase: /Path/To/Page → /path/to/page
  * • Normalizes internal links by replacing dashes and dots with underscores
+ * • Preserves relative path navigation (../ and ./) in relative links
  * • Removes single quotes from internal links
  * • Handles both formats: {{site.baseurl}}/path and /{{site.baseurl}}/path
  * • Ignores external URLs (http://, https://, ftp://, mailto:, etc.)
@@ -67,6 +68,13 @@
  * 
  * Before: [User's Guide](/docs/User's-Guide.md)
  * After:  [User's Guide](/docs/users_guide)
+ * 
+ * Relative links (preserve path navigation):
+ * Before: [Components](../Essential-Components/Button.md)
+ * After:  [Components](../essential_components/button)
+ * 
+ * Before: [Header](./Header-Element.md)
+ * After:  [Header](./header_element)
  * 
  * Normalization features:
  * Before: /Some-Page.With-Dots/file.html → /some_page_with_dots/file_html
@@ -147,6 +155,7 @@ class LinkLowercaseConverter {
            url.startsWith('ws://') ||
            url.startsWith('ftp://') ||
            url.startsWith('ftps://') ||
+           url.startsWith('file://') ||
            url.startsWith('mailto:') ||
            url.startsWith('tel:') ||
            url.startsWith('javascript:') ||
@@ -157,11 +166,33 @@ class LinkLowercaseConverter {
 
   // Normalize internal page links
   normalizeInternalLink(pathPart) {
-    return pathPart
-      .toLowerCase()
-      .replace(/\.md$/i, '')   // Remove .md extension first
-      .replace(/[-\.]/g, '_')  // Replace remaining dashes and dots with underscores
-      .replace(/'/g, '');      // Remove single quotes
+    // Check if this is a relative path (starts with ../ or ./)
+    const isRelativePath = pathPart.startsWith('../') || pathPart.startsWith('./');
+    
+    if (isRelativePath) {
+      // For relative paths, preserve the path navigation dots but normalize the rest
+      const pathSegments = pathPart.split('/');
+      const normalizedSegments = pathSegments.map((segment, index) => {
+        // Keep relative path indicators (.. and .) unchanged
+        if (segment === '..' || segment === '.') {
+          return segment;
+        }
+        // Normalize other segments
+        return segment
+          .toLowerCase()
+          .replace(/\.md$/i, '')   // Remove .md extension
+          .replace(/[-\.]/g, '_')  // Replace dashes and dots with underscores
+          .replace(/'/g, '');      // Remove single quotes
+      });
+      return normalizedSegments.join('/');
+    } else {
+      // For absolute paths, apply full normalization
+      return pathPart
+        .toLowerCase()
+        .replace(/\.md$/i, '')   // Remove .md extension first
+        .replace(/[-\.]/g, '_')  // Replace remaining dashes and dots with underscores
+        .replace(/'/g, '');      // Remove single quotes
+    }
   }
 
   // Convert baseurl links to lowercase
