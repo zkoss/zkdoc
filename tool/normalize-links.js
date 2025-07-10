@@ -25,18 +25,29 @@
  * USAGE:
  * ------
  * Basic usage (converts links and modifies files):
- *   node tool/lowercase-links.js
+ *   node tool/normalize-links.js
  * 
  * Preview mode (shows what would be changed without modifying files):
- *   node tool/lowercase-links.js --dry-run
- *   node tool/lowercase-links.js -d
+ *   node tool/normalize-links.js --dry-run
+ *   node tool/normalize-links.js -d
  * 
  * Generate detailed report file:
- *   node tool/lowercase-links.js --save-report
- *   node tool/lowercase-links.js -s
+ *   node tool/normalize-links.js --save-report
+ *   node tool/normalize-links.js -s
  * 
  * Combined options:
- *   node tool/lowercase-links.js --dry-run --save-report
+ *   node tool/normalize-links.js --dry-run --save-report
+ * 
+ * NPM SCRIPTS (if configured):
+ * ----------------------------
+ * Preview changes (dry-run mode):
+ *   npm run lowercase-links-dry
+ * 
+ * Apply changes to files:
+ *   npm run lowercase-links
+ * 
+ * Apply changes and save detailed report:
+ *   npm run lowercase-links-save
  * 
  * EXAMPLES:
  * ---------
@@ -70,6 +81,30 @@
  * • Console output shows progress and summary statistics
  * • Optional detailed report file: tool/lowercase-conversion-report.txt
  * • Files are backed up automatically by git (use git diff to review changes)
+ * 
+ * EXAMPLE OUTPUT:
+ * ---------------
+ * 🔤 Converting internal links to lowercase...
+ * 📁 Root directory: /path/to/zkdoc
+ * 🔍 Mode: DRY RUN (preview only)
+ * 
+ * 🔍 zk_component_ref/Grid.md: 4 link(s) converted
+ * 🔍 zk_dev_ref/Performance.md: 12 link(s) converted
+ * 
+ * 📊 CONVERSION SUMMARY
+ * ===================
+ * Files processed: 1,247
+ * Total links converted: 3,892
+ * 
+ * 📝 DETAILED CHANGES:
+ * ==================
+ * 
+ * 📄 zk_component_ref/Grid.md
+ *   🏠 [baseurl] {{site.baseurl}}/ZK_Component_Reference/Group
+ *   ➡️  {{site.baseurl}}/zk_component_reference/group
+ * 
+ * ⚠️  DRY RUN MODE - No files were modified
+ *    Run without --dry-run to apply changes
  * 
  * SAFETY:
  * -------

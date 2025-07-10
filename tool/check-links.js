@@ -1,9 +1,100 @@
 /**
- * check links in markdown files and navigation.yml.
- * check the target the every link refers to exists or not.
- * if the target is external, check if it returns 404 with HEAD request.
- * if the target is internal (refer to the same website), check if it exists in the navigation.yml.
- * Finally, generate a report of broken links.
+ * LINK VALIDATION TOOL (check-links.js)
+ * =====================================
+ * 
+ * Validates all image and page links in markdown files (*.md) within the ZK documentation project.
+ * Checks links in markdown files and navigation.yml to ensure all targets exist.
+ * 
+ * FEATURES:
+ * ---------
+ * • Validates both markdown links [text](url) and image links ![alt](src)
+ * • Checks external URLs with HEAD requests to detect 404 errors
+ * • Validates internal links against navigation.yml entries
+ * • Supports relative URLs:
+ *   - ../base_components/labelimageelement : up 1 level folder of the md file
+ *   - headerelement : the same folder of the md file
+ * • Groups errors by book for easy navigation
+ * • Generates detailed reports of broken links
+ * • Returns appropriate exit codes for CI/CD integration
+ * 
+ * USAGE:
+ * ------
+ * Check both markdown files and navigation.yml:
+ *   node tool/check-links.js
+ * 
+ * Check only markdown files:
+ *   node tool/check-links.js md
+ * 
+ * Check only navigation.yml:
+ *   node tool/check-links.js nav
+ * 
+ * LINK VALIDATION RULES:
+ * ----------------------
+ * A valid link must meet one of the following criteria:
+ * 
+ * 1. Baseurl links: Start with {{site.baseurl}} or /{{site.baseurl}}
+ *    Example: {{site.baseurl}}/zk_component_ref/button
+ * 
+ * 2. Image links: Start with /images/
+ *    Example: /images/sample.jpeg
+ * 
+ * 3. Absolute book folder links: Start with /book_folder_name/
+ *    Example: /zk_component_ref/Button or /zk_component_ref/images/example.png
+ * 
+ * 4. Relative book folder links: Start with a book folder name
+ *    Valid book folders: get_started, zats_essentials, zk_calendar_essentials, etc.
+ *    Example: zk_component_ref/Button
+ * 
+ * 5. ZK Wiki links: Start with http://books.zkoss.org/wiki/
+ *    Example: http://books.zkoss.org/wiki/Small%20Talks
+ * 
+ * 6. External links: Start with http:// or https://
+ *    Example: https://www.zkoss.org
+ * 
+ * 7. Anchor links: Start with #
+ *    Example: #section-title
+ * 
+ * 8. Relative links: Links relative to the current file location
+ *    Example: ../images/example.png
+ * 
+ * OUTPUT:
+ * -------
+ * The tool generates:
+ * • ✅ Success message if all links are valid
+ * • ❌ Detailed report of broken links including:
+ *   - File path where the broken link was found
+ *   - The invalid link URL
+ *   - Link status/error details
+ *   - Grouping by book for organization
+ * • Report file: link_check_report.txt
+ * 
+ * EXAMPLE OUTPUT:
+ * ---------------
+ * BOOK: ZK_COMPONENT_REF
+ * ======================
+ * Links found: 2
+ * 
+ * INTERNAL BROKEN LINKS:
+ * -------------------------
+ * URL: headerelement
+ * Status: 404
+ * Found in: zk_component_ref/base_components/labelimageelement.md
+ * 
+ * URL: ../base_components/invalid_link
+ * Status: 404
+ * Found in: zk_component_ref/essential_components/button.md
+ * 
+ * JAVADOC LINK REPLACEMENT NOTES:
+ * --------------------------------
+ * ZK javadoc root: https://www.zkoss.org/javadoc/latest/zk/
+ * Example: org.zkoss.zul.ChartModel is at https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html
+ * Old MediaWiki format: <javadoc>org.zkoss.zul.ChartModel</javadoc>
+ * 
+ * ZK MEDIAWIKI IMAGE FILES:
+ * -------------------------
+ * Base URL: https://www.zkoss.org/wiki/File:
+ * Example: SyntaxCheckRightBar.png is at https://www.zkoss.org/wiki/File:SyntaxCheckRightBar.png
+ * Look for image link in DOM structure: <div class="fullImageLink" id="file"><a href="/_w/images/...">
  */
 const fs = require('fs');
 const path = require('path');
@@ -194,18 +285,53 @@ function extractLinksFromMarkdown(content) {
     return Array.from(links);
 }
 
+// Function to resolve relative URLs based on current file location
+function resolveRelativeUrl(relativeUrl, currentFilePath) {
+    // Get the directory containing the current markdown file
+    const currentDir = path.dirname(currentFilePath);
+    
+    // Get the relative path from the project root
+    const relativeDirFromRoot = path.relative(process.cwd(), currentDir);
+    
+    // Resolve the relative URL
+    let resolvedPath;
+    if (relativeUrl.startsWith('../')) {
+        // Handle "../" paths - go up one level
+        resolvedPath = path.resolve(currentDir, relativeUrl);
+    } else if (!relativeUrl.startsWith('/') && !relativeUrl.startsWith('http')) {
+        // Handle relative paths in same directory
+        resolvedPath = path.resolve(currentDir, relativeUrl);
+    } else {
+        // Already absolute or external URL
+        return relativeUrl;
+    }
+    
+    // Convert back to URL format (with forward slashes)
+    const urlPath = path.relative(process.cwd(), resolvedPath).replace(/\\/g, '/');
+    
+    // Return as absolute URL starting with /
+    return '/' + urlPath;
+}
+
 // Function to check if an internal URL exists in the valid URLs
-function checkInternalUrl(url, validUrls) {
+function checkInternalUrl(url, validUrls, currentFilePath = null) {
     // Remove any anchor part (#section) from the URL
     let urlWithoutAnchor = url.split('#')[0];
     
     // Remove {{site.baseurl}} if present since navigation.yml doesn't have this variable
     urlWithoutAnchor = urlWithoutAnchor.replace(/{{site\.baseurl}}\/?/, '');
     
-    // Handle root-relative URLs (starting with /)
-    const normalizedUrl = urlWithoutAnchor.startsWith('/') 
-        ? urlWithoutAnchor 
-        : '/' + urlWithoutAnchor;
+    // Handle relative URLs if currentFilePath is provided
+    let normalizedUrl;
+    if (currentFilePath && !urlWithoutAnchor.startsWith('/') && !isExternalUrl(urlWithoutAnchor)) {
+        // This is a relative URL, resolve it
+        normalizedUrl = resolveRelativeUrl(urlWithoutAnchor, currentFilePath);
+    } else {
+        // Handle root-relative URLs (starting with /)
+        normalizedUrl = urlWithoutAnchor.startsWith('/') 
+            ? urlWithoutAnchor 
+            : '/' + urlWithoutAnchor;
+    }
     
     // Check if the normalized URL exists in valid URLs
     return validUrls.some(validUrl => {
@@ -262,7 +388,7 @@ async function checkMarkdownPages(brokenLinks, processedUrls) {
                  */
             } else if (!isImageUrl(link)) {
                 // Skip internal image URLs since they won't be in navigation.yml
-                const exists = checkInternalUrl(link, validUrls);
+                const exists = checkInternalUrl(link, validUrls, file);
                 // Only add if it's broken
                 if (!exists) {
                     brokenLinks.push({
