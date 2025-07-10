@@ -160,9 +160,7 @@ zul.jar.
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](/zk_component_ref/images/timebox_mold_rounded.png
-title="timebox_mold_rounded.png" alt="timebox_mold_rounded.png" /> {%
-include version-badge.html version=5.0.0 %}</p></td>
+<td><p>![](/zk_component_ref/images/timebox_mold_rounded.png) {% include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>
@@ -171,11 +169,6 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 `*NONE`
 
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

@@ -53,7 +53,7 @@ To implement a Java class we shall:
 
 1.  Extend from the component class you want.
 2.  (Optional) Implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) to
-    make it an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
+    make it an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#ID_Space).
 3.  Render the template in the constructor by the use of
     [org.zkoss.zk.ui.Executions#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#createComponents(java.lang.String, org.zkoss.zk.ui.Component, java.util.Map))
     or others.
@@ -131,7 +131,7 @@ sections.
 
 [org.zkoss.zk.ui.select.Selectors#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List))
 will wire variables that can be resolved by the registered variable
-resolver. In addition to [the variable-resolver directive](zuml_ref/variable-resolver),
+resolver. In addition to [the variable-resolver directive](zuml_ref/variable_resolver),
 you can create any variable resolver manually and pass it as the third
 argument.
 [org.zkoss.zk.ui.select.Selectors#newVariableResolvers(java.lang.Class, java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#newVariableResolvers(java.lang.Class, java.lang.Class))
@@ -166,7 +166,7 @@ For more information, please refer to [the Wire Variables section]({{site.baseur
 
 ### ID Space
 
-Unless you extend a component that is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space)
+Unless you extend a component that is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#ID_Space)
 (such as [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)), all child components
 specified in the template will be in the same ID space as its parent. It
 might be convenient at the first glance. However, it will cause ID

@@ -1,6 +1,6 @@
 
 
-# How ROD Improves Peformance
+# How ROD Improves Performance
 
 With ZK EE, you can enable <b>Render on Demand</b> for Grid, Listbox, or
 Tree to boost performance when showing a huge amount of data. Grid and
@@ -161,7 +161,7 @@ and not paging (\<mold="paging"\>).
 
 # Tree
 
-To turn off ROD for a tree, you need to specify [ org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.tree.initrodsize)
+To turn off ROD for a tree, you need to specify [ org.zkoss.zul.tree.initRodSize]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_tree_initrodsize)
 with -1:
 
 ```xml

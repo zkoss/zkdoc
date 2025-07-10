@@ -12,7 +12,7 @@ independent thread called the event processing thread. Therefore, the
 developer can suspend and resume the execution at any time, without
 blocking the Servlet thread from sending back the responses to the
 browser. To turn it on, you have to specify the following in
-`WEB-INF/zk.xml` ([ZK Configuration Guide: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_disable-event-thread_element)
+`WEB-INF/zk.xml` ([ZK Configuration Guide: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_disable_event_thread_element)
 , after ZK 5, the event processing thread is disabled by default.)
 
 ```xml

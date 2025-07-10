@@ -66,7 +66,7 @@ attribute).
 If you prefer to make a macro component available to all pages, you
 could add the component definition to the so-called language addon and
 add it to
-[WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_language-config_element).
+[WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_language_config_element).
 
 ## Use Macro Component
 

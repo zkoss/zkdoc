@@ -21,7 +21,7 @@ becomes visible.
 </tabbox>
 ```
 
-For more information, please refer to the [On-demand Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/on-demand_evaluation)
+For more information, please refer to the [On-demand Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/on_demand_evaluation)
 section.
 
 {{ ZKDevelopersReferencePageFooter}}

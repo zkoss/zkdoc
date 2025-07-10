@@ -26,7 +26,7 @@ resources.
 # Loading resources through the ZK cache enabled URLs
 
 Resources loaded from the classpath, by `~./`, or from ZK
-[ClassWebResources]({{site.baseurl}}/zk_config_ref/org.zkoss.web.util.resource.dir)
+[ClassWebResources]({{site.baseurl}}/zk_config_ref/org_zkoss_web_util_resource_dir)
 folder will be delivered to browsers through the same URL patterns as
 the internal ZK resources. This can apply to resources declared globally
 in `lang-addon`, or locally in a page with a script or style tag.
@@ -53,7 +53,7 @@ Specify a custom string for the `org.zkoss.zk.ui.versionInfo.enabled` library pr
 3. Deploy the updated configuration. A new URL hash is generated, invalidating the cache.
 
 More information is available here:
-[org.zkoss.zk.ui.versionInfo.enabled]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.versioninfo.enabled)
+[org.zkoss.zk.ui.versionInfo.enabled]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_versioninfo_enabled)
 
 
 ## 2. Create a Custom WebApp Class

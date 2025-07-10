@@ -12,7 +12,7 @@ The class must be specified in the `use` attribute[^1], and it must
 implement
 [org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html).
 
-For more information please refer to [ZUML Reference](zuml_ref/variable-resolver).
+For more information please refer to [ZUML Reference](zuml_ref/variable_resolver).
 
 Fir example,
 

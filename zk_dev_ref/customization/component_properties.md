@@ -56,7 +56,7 @@ Then, we could specify this file by adding the following content to
     </language-config>
 ```
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_language-config_element).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_language_config_element).
 
 # Molds
 

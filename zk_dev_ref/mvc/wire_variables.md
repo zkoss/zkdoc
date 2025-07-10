@@ -47,7 +47,7 @@ public class FooComposer extends SelectorComposer<Window> {
 
 There are two approaches to register a variable resolver: the
 [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
-annotation or [the variable-resolver directive](zuml_ref/variable-resolver).
+annotation or [the variable-resolver directive](zuml_ref/variable_resolver).
 Here is the example of registering variable resolvers with annotations.
 
 ```java
@@ -203,9 +203,9 @@ following locations:
 Searching in zscript and xel variables can be enabled with library
 properties:
 
-[enable zscript variable wiring]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.composer.autowire.zscript)
+[enable zscript variable wiring]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_composer_autowire_zscript)
 
-[enable xel variable wiring]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.composer.autowire.xel)
+[enable xel variable wiring]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_composer_autowire_xel)
 
 # Wire CDI-managed Beans
 

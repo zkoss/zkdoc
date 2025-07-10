@@ -19,8 +19,8 @@ The value can be one of the following:
   - relative to the `/META-INF/resources` directory of a JAR file inside
     the web application's /WEB-INF/lib directory
 - **A file path**, such as
-  [`file:///home/http/zk.xml`](file:///home/http/zk.xml) and
-  [`file:///C:/test/zk.xml`](file:///c:/test/zk.xml), if you use
+  [`file:///home/http/zk.xml`](file:///home/http/zk_xml) and
+  [`file:///C:/test/zk.xml`](file:///c:/test/zk_xml), if you use
   Windows. Notice it must start with [`file://`](file://) (For more
   information about the URI of a file, please refer to [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).)
 - **A URL**, such as `http://foo.com/config/zk.xml`. Notice it must
@@ -36,7 +36,7 @@ file.
 
 For example, assume you put the configuration in a file called
 `/configs/zk-production.xml`, then you could specify
-`-Dorg.zkoss.zk.config.path=`[`file:/configs/zk-production.xml`](file:/configs/zk-production.xml)
+`-Dorg.zkoss.zk.config.path=`[`file:/configs/zk-production.xml`](file:/configs/zk_production_xml)
 as one of the arguments when starting the Web server.
 
 Another example is to provide an ID generator for the testing purpose.

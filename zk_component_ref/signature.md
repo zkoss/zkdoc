@@ -117,7 +117,7 @@ it with
 ## File Size Limit
 
 If you see `SizeLimitExceededException`, you can adjust max uploading
-file size by [ file-size-threshold]({{site.baseurl}}/zk_config_ref/the_max-upload-size_element).
+file size by [ file-size-threshold]({{site.baseurl}}/zk_config_ref/the_max_upload_size_element).
 
 # Supported Events
 

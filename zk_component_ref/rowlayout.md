@@ -67,7 +67,7 @@ columns to skip ahead.
     </rowlayout>
 ```
 
-The above examples look like: ![ center](rowlayout-examples.png " center")
+The above examples look like: ![ center](rowlayout_examples.png)
 
 # Supported Events
 

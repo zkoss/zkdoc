@@ -59,9 +59,9 @@ The deployment descriptor is a heart of any J2EE web applications, so
 *every web application **must have** a web.xml deployment descriptor
 directly under <u>WEB-INF</u> folder*.
 
-- For the content of <u>web.xml</u>, please refer to [Sample of web.xml for Servlet 3.0](zk_background/sample_of_web.xml_for_servlet_3.0),
-  [Sample of web.xml for Servlet 2.4](zk_background/sample_of_web.xml_for_servlet_2.4)
-  or [Sample of web.xml for Servlet 2.3](zk_background/sample_of_web.xml_for_servlet_2.3),
+- For the content of <u>web.xml</u>, please refer to [Sample of web.xml for Servlet 3.0](zk_background/sample_of_web_xml_for_servlet_3_0),
+  [Sample of web.xml for Servlet 2.4](zk_background/sample_of_web_xml_for_servlet_2_4)
+  or [Sample of web.xml for Servlet 2.3](zk_background/sample_of_web_xml_for_servlet_2_3),
   depending on your Web server support.
 
 ### Create First ZUL file

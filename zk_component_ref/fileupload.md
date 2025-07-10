@@ -288,4 +288,4 @@ Upload your hot shot:
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()). Used if the event thread is disabled. |
 
-[^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).
+[^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system_config_element#The_disable-event-thread_Element).

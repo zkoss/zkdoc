@@ -76,7 +76,7 @@ For more information please refer to
 EL expressions are evaluated on the server when the page is rendered.
 Thus, an EL variable can access:
 
-- Components by [using its ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+- Components by [using its ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
 - Variables defined in
   [zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
 - [Implicit objects](zuml_ref/implicit_objects)
@@ -160,7 +160,7 @@ public class CustomerResolver implements org.zkoss.xel.VariableResolver {
 ```
 
 Then, you could specify it in a
-[variable-resolver](zuml_ref/variable-resolver)
+[variable-resolver](zuml_ref/variable_resolver)
 directive, such as:
 
 ```xml
@@ -188,7 +188,7 @@ in `WEB-INF/zk.xml` as follows. For more information, please refer to
 ```
 
 Then, when a page is created each time, an instance of the specified
-class will be instantiated and registered as if it is specified in [the variable-resolver element](zuml_ref/variable-resolver).
+class will be instantiated and registered as if it is specified in [the variable-resolver element](zuml_ref/variable_resolver).
 
 Notice that since a new instance of the variable resolver is created on
 each page, there will not be any concurrency issues.
@@ -215,7 +215,7 @@ public class Customer {
 ```
 
 Then, we could retrieve them with the
-[xel-method](zuml_ref/xel-method)
+[xel-method](zuml_ref/xel_method)
 directive:
 
 ```xml

@@ -19,7 +19,7 @@ official ZK library to</b>, not your whole application.
 2.  Add **library-property** configuration to the
     <span style="color:green;font-style:italic;">zk.xml</span>
       
-    Document : [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.web.servlet.http.URLEncoder]({{site.baseurl}}/zk_config_ref/org.zkoss.web.servlet.http.urlencoder).
+    Document : [ZK Configuration Reference/zk.xml/The Library Properties/org.zkoss.web.servlet.http.URLEncoder]({{site.baseurl}}/zk_config_ref/org_zkoss_web_servlet_http_urlencoder).
 3.  Host ZK static resource server
 
 Following is a sample :

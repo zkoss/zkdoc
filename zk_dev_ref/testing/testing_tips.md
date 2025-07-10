@@ -95,7 +95,7 @@ To implement a custom ID generator, you have to do the following:
 - Implement a Java class that implements
   [org.zkoss.zk.ui.sys.IdGenerator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/IdGenerator.html).
 - Specify the Java class FQCN at
-  [id-generator-class]({{site.baseurl}}/zk_config_ref/the_system-config_element)
+  [id-generator-class]({{site.baseurl}}/zk_config_ref/the_system_config_element)
   element in `zk.xml`. For example,
 
 ```xml
@@ -137,7 +137,7 @@ arguments when starting the Web server.
 If you want to generate UUID with some conditions, you might also want
 to disable UUID recycling. ( It will reuse all the UUIDs from removed
 components.) You could set the properties
-[org.zkoss.zk.ui.uuidRecycle.disabled]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.uuidrecycle.disabled)
+[org.zkoss.zk.ui.uuidRecycle.disabled]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_uuidrecycle_disabled)
 in zk.xml.
 
 <!--

@@ -60,7 +60,7 @@ the menupopup will show up as shown below.
 ![]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
-refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_tooltip-delay_element)
+refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_tooltip_delay_element)
 for more information.
 
 # Context Menus

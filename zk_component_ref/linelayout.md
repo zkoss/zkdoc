@@ -121,7 +121,7 @@ Please refer to FirstScale.
 
 # Supported Children
 
-`*`[` Lineitem`]({{site.baseurl}}/zk_component_ref/linelayout/lineitem)
+`*`[` Lineitem`]({{site.baseurl}}/zk_component_ref/lineitem)
 
 # Version History
 

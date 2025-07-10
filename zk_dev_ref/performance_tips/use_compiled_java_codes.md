@@ -31,7 +31,7 @@ performance, they should be replaced too.
 
 ## Turn off the use of zscript
 
-If you decide not to use zscript at all, you could turn on [the disable-script configuration]({{site.baseurl}}/zk_config_ref/the_disable-zscript_element)
+If you decide not to use zscript at all, you could turn on [the disable-script configuration]({{site.baseurl}}/zk_config_ref/the_disable_zscript_element)
 as follows, such that an exception will be thrown if zscript is used.
 
 ```xml

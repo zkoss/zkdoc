@@ -103,9 +103,9 @@ this URL, remember to turn on the js debug in your zk.xml.
 3.  Send request details as HAR to us
 
 :\* [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
-![ center](save-har-chrome.png " center")
+![](save_har_chrome.png)
 
-:\* Save request details as HAR in Firefox ![ center](save-har-firefox.png " center")
+:\* Save request details as HAR in Firefox ![](save_har_firefox.png)
 
 :\* [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 

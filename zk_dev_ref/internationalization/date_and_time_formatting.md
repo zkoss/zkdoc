@@ -185,7 +185,7 @@ zk.afterLoad('zul.lang', function() {
 });//zk.afterLoad
 ```
 
-You can load the JavaScript file as a [ locale dependent JavaScript]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources)
+You can load the JavaScript file as a [ locale dependent JavaScript]({{site.baseurl}}/zk_dev_ref/internationalization/locale_dependent_resources)
 to override the date string for a specific locale.
 
 # Version History

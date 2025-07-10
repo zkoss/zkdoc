@@ -69,4 +69,4 @@ such as from the database, you could implement
 generally done by extending from
 [org.zkoss.zk.ui.impl.AbstractUiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html) and overriding
 [org.zkoss.zk.ui.impl.AbstractUiFactory#getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/AbstractUiFactory.html#getPageDefinition(org.zkoss.zk.ui.sys.RequestInfo, java.lang.String)).
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system_config_element).

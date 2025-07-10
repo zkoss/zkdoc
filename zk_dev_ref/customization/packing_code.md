@@ -82,4 +82,4 @@ follows.
 
 [^1]: For more information, please refer to [ZK Client-side Reference: Language Definition]({{site.baseurl}}/zk_client_side_ref/language_definition).
 
-[^2]: For more information, please refer to [ZK Configuration Reference: JAR File's config.xml]({{site.baseurl}}/zk_config_ref/jar_file's_config.xml).
+[^2]: For more information, please refer to [ZK Configuration Reference: JAR File's config.xml]({{site.baseurl}}/zk_config_ref/jar_files_config_xml).

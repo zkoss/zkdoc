@@ -284,7 +284,7 @@ component, it consumes the server's memory.
 
 - [ZK Developer's Reference: HTML Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
 - [ZK Developer's Reference: Performance Tips\|Native vs. XHTML]({{site.baseurl}}/zk_dev_ref/performance_tips/use_native_namespace_instead_of_xhtml_namespace)
-- [ZK Developer's Reference: Performance Tips: Stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components)
+- [ZK Developer's Reference: Performance Tips: Stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client_only_components)
 
 # [Include]({{site.baseurl}}/zk_dev_ref/ui_composing/include), [Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component), [Composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) and [Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 

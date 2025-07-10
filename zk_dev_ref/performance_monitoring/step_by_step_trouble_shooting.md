@@ -186,17 +186,14 @@ This brilliant visualization of the JS execution flow and stack depth
 can be used / interpreted in many ways to extract the information you
 require.
 
-![](/zk_dev_ref/images/js_timeline_events.png
-title="another interesting view to determine the render time is the timeline - events view in chrome"
-width="300"
-alt="another interesting view to determine the render time is the timeline - events view in chrome" />
+![](/zk_dev_ref/images/js_timeline_events.png)
 the timeline on the top indicates the whole period between "start" and
 "stop", i selected the range we are interested in, and the colorful area
 at the bottom gives details about which methods are actually called and
 their timing (you can zoom in and out using the mouse wheel too),
 clicking on one method will directly lead you to the associated line in
 the source code (enabling
-[debug-js]({{site.baseurl}}/zk_config_ref/the_debug-js_element)
+[debug-js]({{site.baseurl}}/zk_config_ref/the_debug_js_element)
 will help when using this feature).
 
 The small peak (at 2800ms) on the left side is my actual event
@@ -583,37 +580,33 @@ can help.
 
 - check debug mode → zk config should **not** be enabled (disabled by
   default)
-  - <(/zk_config_ref/The_debug-js_Element>
+  - [debug-js](/zk_config_ref/the_debug_js_element)
 
-<!-- -->
 
 - check caching config → should **not** be disabled (enabled by default)
-  - <(/zk_config_ref/org.zkoss.web.classWebResource.cache>
-  - <(/zk_config_ref/org.zkoss.zk.WPD.cache>
-  - <(/zk_config_ref/org.zkoss.zk.WCS.cache>
+  - [org.zkoss.web.classWebResource.cache](/zk_config_ref/org_zkoss_web_classwebresource_cache)
+  - [org.zkoss.zk.WPD.cache](/zk_config_ref/org_zkoss_zk_wpd_cache)
+  - [org.zkoss.zk.WCS.cache](/zk_config_ref/org_zkoss_zk_wcs_cache)
 
-<!-- -->
 
 - check compression settings → should **not** be disabled (enabled by
   default)
-  - <(/zk_config_ref/ZK_AU_Engine#The_Initial_Parameters>
-  - <(/zk_config_ref/ZK_Loader#The_Initial_Parameters>
+  - [ZK AU Engine](/zk_config_ref/zk_au_engine#The_Initial_Parameters)
+  - [ZK Loader](/zk_config_ref/zk_loader#The_Initial_Parameters)
 
-<!-- -->
 
 - consider/check render on demand settings
-  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand>
-  - <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand>
-  - <(/zk_config_ref/org.zkoss.zul.client.rod>
-  - <(/zk_config_ref/org.zkoss.zul.grid.initRodSize>
-  - <(/zk_config_ref/org.zkoss.zul.listbox.initRodSize>
-  - <(/zk_config_ref/org.zkoss.zul.tree.initRodSize>
+  - [client_render_on_demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
+  - [turn_on_render_on_demand]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand)
+  - [org.zkoss.zul.client.rod](/zk_config_ref/org_zkoss_zul_client_rod)
+  - [org.zkoss.zul.grid.initRodSize](/zk_config_ref/org_zkoss_zul_grid_initrodsize)
+  - [org.zkoss.zul.listbox.initRodSize](/zk_config_ref/org_zkoss_zul_listbox_initrodsize)
+  - [org.zkoss.zul.tree.initRodSize](/zk_config_ref/org_zkoss_zul_tree_initrodsize)
     (ZK 7)
 
-<!-- -->
 
 - check
-  <http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips>
+  [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips)
 
 ## Network Issue
 

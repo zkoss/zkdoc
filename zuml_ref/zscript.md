@@ -57,7 +57,7 @@ However, it is easy to extend:
     [org.zkoss.zk.scripting.util.GenericInterpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/util/GenericInterpreter.html)
     for simplicity.
 2.  Declare the scripting language in either
-    [WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_zscript-config_element),
+    [WEB-INF/zk.xml]({{site.baseurl}}/zk_config_ref/the_zscript_config_element),
     or `zk/config.xml`.
 
 ```xml

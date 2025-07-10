@@ -63,7 +63,7 @@ If you prefer another encoding, please specify it in a library property
 called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org.zkoss.util.label.web.charset).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org_zkoss_util_label_web_charset).
 
 # Access Internationalization Labels In ZUML
 
@@ -215,7 +215,7 @@ such as `"{1}, {0}"`.
 
 It is typical to partition the properties file into several modules for
 easy maintenance. Since 5.0.7 and later, you could specify the location
-for each of these properties file with [the label-location element]({{site.baseurl}}/zk_config_ref/the_label-location_element).
+for each of these properties file with [the label-location element]({{site.baseurl}}/zk_config_ref/the_label_location_element).
 For example,
 
 ```xml
@@ -258,7 +258,7 @@ configuration file is also specified at the run time and could be
 located in the file system (rather than the WAR file). It can be done by
 specifying the path of the configuration file in a library property
 called
-[org.zkoss.zk.config.path]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.config.path).
+[org.zkoss.zk.config.path]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_config_path).
 
 For 5.0.6 and older, you could use the approach described in the
 following section to load multiple properties files.
@@ -367,7 +367,7 @@ public class MyAppInit implements org.zkoss.zk.ui.util.WebAppInit {
 where we assume `moduleX` and `moduleY` are the database tables to load
 the properties, and `module-1.properties` and `module-2.properties` are
 two modules of messages you provide. Then, you configure it in
-`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_org.zkoss.zk.ui.util.webappinit_interface).
+`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_org_zkoss_zk_ui_util_webappinit_interface).
 
 > ------------------------------------------------------------------------
 >
@@ -393,7 +393,7 @@ Test result: ${foo} ${another.whatever}
 
 If you prefer to use other implementation (such as property bundle), you
 could implement a static method and map it with
-[xel-method](zuml_ref/xel-method).
+[xel-method](zuml_ref/xel_method).
 Then, you could reference it in EL expressions. For example,
 
 ```xml
@@ -424,11 +424,11 @@ ${c:label('another.key')}
     use of multiple lines and EL expressions.
 
 [^4]: Notice the directory and filename are configurable. For more
-    information, please refer to [ZK Configuration Reference: org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/org.zkoss.util.label.web.location)
+    information, please refer to [ZK Configuration Reference: org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/org_zkoss_util_label_web_location)
 
 [^5]: For more information about the URI of a file, please refer to
     [File URI scheme](http://en.wikipedia.org/wiki/File_URI_scheme).
 
-[^6]: For 5.0.7 and later, you could use [the label-location element]({{site.baseurl}}/zk_config_ref/the_label-location_element)
+[^6]: For 5.0.7 and later, you could use [the label-location element]({{site.baseurl}}/zk_config_ref/the_label_location_element)
     if the properties file is located in the file system or in the Web
     application as described in the previous section.

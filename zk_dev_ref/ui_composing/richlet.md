@@ -4,7 +4,7 @@
 
 A richlet is a small Java program that composes a user interface in Java
 for serving the user's request. Before composing UI in Java, we suggest
-you to know basic concept:[ UI Composing/Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+you to know basic concept:[ UI Composing/Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
 first.
 
 When a user requests the content of an URL, ZK Loader checks if the
@@ -277,5 +277,5 @@ Then you could load Spring beans by using a utility class
     to the [Event Handling]({{site.baseurl}}/zk_dev_ref/event_handling)
     section
 
-[^2]: For more information, please refer to [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+[^2]: For more information, please refer to [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
     section

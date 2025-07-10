@@ -33,7 +33,7 @@ still sets width by JavaScript.
 ## Fall Back to the Old Way
 
 However, if your application depends on the previous implementation, you
-can fall back by the property [ org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.css.flex).
+can fall back by the property [ org.zkoss.zul.css.flex="false"]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_css_flex).
 
 # Prerequisite: Parent Requires Width/Height Specified
 
@@ -363,7 +363,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 </table>
 
 For a complete list of controls that you could apply to the columns of
-grid, listbox and tree, please refer to [ZK Developer's Reference/UI Patterns/Grid's Columns and Hflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/grid's_columns_and_hflex).
+grid, listbox and tree, please refer to [ZK Developer's Reference/UI Patterns/Grid's Columns and Hflex]({{site.baseurl}}/zk_dev_ref/ui_patterns/grids_columns_and_hflex).
 
 # Flexibility versus Percentage
 

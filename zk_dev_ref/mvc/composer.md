@@ -17,7 +17,7 @@ Loader for doing:
 - Exception handling
 - Component instantiation monitoring and filtering
 
-A composer can be [configured as a system-level composer]({{site.baseurl}}/zk_config_ref/the_org.zkoss.zk.ui.util.composer_interface),
+A composer can be [configured as a system-level composer]({{site.baseurl}}/zk_config_ref/the_org_zkoss_zk_ui_util_composer_interface),
 such that it will be called each time a ZUML document is loaded.
 
 ## Implement Composers

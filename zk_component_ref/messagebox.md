@@ -143,7 +143,7 @@ You could change it by invoking
 
 Since 5.0.6, you could specify the application's name with a library
 property called
-[org.zkoss.zk.ui.WebApp.name]({{site.baseurl}}/zk_config_ref/the_preferences/org.zkoss.zk.ui.webapp.name).
+[org.zkoss.zk.ui.WebApp.name]({{site.baseurl}}/zk_config_ref/the_preferences/org_zkoss_zk_ui_webapp_name).
 For example, you could specify the following in `WEB-INF/zk.xml`:
 
 ```xml

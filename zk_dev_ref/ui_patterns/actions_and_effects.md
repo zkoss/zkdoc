@@ -56,7 +56,7 @@ Security Note: the options is actually a JavaScript object (i.e., a map,
 [\_global\_.Map](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.Map.html)), and ZK passes
 whatever is being specified to the client for evaluation. Thus, if you
 allow the user to specify the effect, you shall encode it first to avoid
-[cross-site scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting).
+[cross-site scripting]({{site.baseurl}}/zk_dev_ref/security_tips/cross_site_scripting).
 
 > ------------------------------------------------------------------------
 >

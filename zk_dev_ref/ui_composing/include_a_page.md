@@ -153,4 +153,4 @@ Then, we can use it with a custom tag name:
 <mytemplatecomp>
 ```
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_language-config_element).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_language_config_element).

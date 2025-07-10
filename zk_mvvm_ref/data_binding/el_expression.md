@@ -61,7 +61,7 @@ We could call [tag library's methods in a zul with EL expression]({{site.baseurl
 
 Call Xel Methods
 ----------------------
-The [xel method]({{site.baseurl}}/zuml_ref/xel-method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
+The [xel method]({{site.baseurl}}/zuml_ref/xel_method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
 ```xml
 <?xel-method prefix="x" name="max"
     class="java.lang.Math"

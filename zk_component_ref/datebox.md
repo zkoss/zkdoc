@@ -251,7 +251,7 @@ for details.
 {% include version-badge.html version=8.6.2 %}
 
 You can control the 2DigitYearStart by the use of the library property,
-[org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/org.zkoss.web.preferred.2digityearstart).
+[org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/org_zkoss_web_preferred_2digityearstart).
 
 ## Show Week Number
 

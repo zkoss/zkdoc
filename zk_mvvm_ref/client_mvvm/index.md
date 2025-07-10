@@ -58,7 +58,7 @@ Apply [ClientBindComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/cli
 
 ### Option 2: Enable it globally
 
-Specify [default-applied binding composer]({{site.baseurl}}/zk_config_ref/org.zkoss.bind.defaultcomposer.class) in `zk.xml` like:
+Specify [default-applied binding composer]({{site.baseurl}}/zk_config_ref/org_zkoss_bind_defaultcomposer_class) in `zk.xml` like:
 
 ```xml
 <library-property>

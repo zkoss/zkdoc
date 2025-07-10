@@ -18,8 +18,8 @@ interface.
 </system-config>
 ```
 
-Alternatively, you could use [the web-app-class element]({{site.baseurl}}/zk_config_ref/the_web-app-class_element)
-instead. Notice, if both specified, [the web-app-factory-class element]({{site.baseurl}}/zk_config_ref/the_web-app-factory-class_element)
+Alternatively, you could use [the web-app-class element]({{site.baseurl}}/zk_config_ref/the_web_app_class_element)
+instead. Notice, if both specified, [the web-app-factory-class element]({{site.baseurl}}/zk_config_ref/the_web_app_factory_class_element)
 has the higher priority.
 
 # Version History

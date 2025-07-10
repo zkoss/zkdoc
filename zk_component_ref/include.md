@@ -339,7 +339,7 @@ in the included component):
 For versions prior to 5.0, the `defer` mode is the default. If you
 prefer to keep using the defer mode, you could specify a library
 property called
-[org.zkoss.zul.include.mode]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.include.mode)
+[org.zkoss.zul.include.mode]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_include_mode)
 as follows.
 
 ```xml
@@ -484,7 +484,7 @@ For more information, please refer to the [\#Include Non-ZUML Pages](#Include_No
 
 | Version | Date         | Content                                                                                                                                                                                                                                                                                      |
 |---------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.0   | January 2010 | The mode is default to `auto` (rather than `defer`). You could configure the default mode to defer by specifying a library property called [org.zkoss.zul.include.mode]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.include.mode) in `WEB-INF/zk.xml`. |
+| 5.0.0   | January 2010 | The mode is default to `auto` (rather than `defer`). You could configure the default mode to defer by specifying a library property called [org.zkoss.zul.include.mode]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_include_mode) in `WEB-INF/zk.xml`. |
 | 5.0.7   | April 2011   | The custom attribute called `org.zkoss.zul.include.html.defer` was introduced to defer the rendering of a non-ZUML page (such as HTML fragment) until all widgets are instantiated and rendered at the client.                                                                               |
 
 

@@ -42,7 +42,7 @@ to return the data being rendered; the code is similar to the following
 (for easy understanding, the code has been simplified).
 
 For more detailed information about the variable resolver, please refer
-to [ZUML Reference](zuml_ref/variable-resolver).
+to [ZUML Reference](zuml_ref/variable_resolver).
 
 ```java
 public class TemplateBasedRenderer implements ListitemRenderer {

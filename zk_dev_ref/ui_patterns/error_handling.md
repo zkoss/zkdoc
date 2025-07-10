@@ -74,7 +74,7 @@ these attributes. For example:
   can use JSP or whatever servlet you prefer.
 - From java code the request attributes are accessible via
   [org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
-  or from the [requestScope (implicit object)](zuml_ref/requestScope).
+  or from the [requestScope (implicit object)](zuml_ref/requestscope).
 
 ```java
 
@@ -122,12 +122,12 @@ users to report the errors manually or automatically extract and send
 them to an error handling service that is accessible at that time (not
 part of ZK).
 
-Please check [the list of error codes]({{site.baseurl}}/zk_config_ref/the_init-crash-script_element).
+Please check [the list of error codes]({{site.baseurl}}/zk_config_ref/the_init_crash_script_element).
 You can configure both the timeout and the error message presented to
 users with the elements below:
 
-- [<init-crash-script>]({{site.baseurl}}/zk_config_ref/the_init-crash-script_element)
-- [<init-crash-timeout>]({{site.baseurl}}/zk_config_ref/the_init-crash-timeout_element)
+- [<init-crash-script>]({{site.baseurl}}/zk_config_ref/the_init_crash_script_element)
+- [<init-crash-timeout>]({{site.baseurl}}/zk_config_ref/the_init_crash_timeout_element)
 
 # Handling Errors Thrown in Event Listeners
 
@@ -150,7 +150,7 @@ shown.
 ## Configure Error Handling Page
 
 You can customize the error handling by specifying the error page in
-`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_error-page_element).
+`WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_error_page_element).
 For example,
 
 ```xml

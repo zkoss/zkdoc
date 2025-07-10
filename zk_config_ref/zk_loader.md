@@ -15,7 +15,7 @@ depend on the ZK loader.
 <load-on-startup>1</load-on-startup>
 ```
 
-Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web.xml).
+Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web_xml).
 
 # The Initial Parameters
 
@@ -103,7 +103,7 @@ use `xul` and `html` as the extension; just map them to ZK Loader too.
     </servlet-mapping>
 ```
 
-Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web.xml).
+Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web_xml).
 
 # Map URL to Richlets
 

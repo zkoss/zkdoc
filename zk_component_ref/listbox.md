@@ -456,7 +456,7 @@ In other words, all other items will remain their selection state.
 
 If you prefer to **deselect all other items** and select the item being
 clicked (which the behavior of ZK 5.0.4 and earlier), you could specify
-true to this library property called [ `org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.listbox.checkmarkdeselectothers)
+true to this library property called [ `org.zkoss.zul.listbox.checkmarkDeselectOthers`]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_listbox_checkmarkdeselectothers)
 in `WEB-INF/zk.xml`:
 
 ```xml

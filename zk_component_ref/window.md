@@ -200,7 +200,7 @@ By default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
 process events in an individual thread, such that the event listener
 could suspend the execution at any time, and resume later. For how to
-enable the event processing thread, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system-config_element#The_disable-event-thread_Element).
+enable the event processing thread, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system_config_element#The_disable-event-thread_Element).
 
 > ------------------------------------------------------------------------
 >

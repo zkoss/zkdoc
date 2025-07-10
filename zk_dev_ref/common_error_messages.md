@@ -74,7 +74,7 @@ Restart your zk application.
 
 {% include version-badge.html version=10.0.0 %}
 
-You can enable [the send-client-errors element]({{site.baseurl}}/zk_config_ref/the_send-client-errors_element)
+You can enable [the send-client-errors element]({{site.baseurl}}/zk_config_ref/the_send_client_errors_element)
 in zk.xml to send client errors to the server for logging the page url
 where the error occurred and its stack trace.
 
@@ -148,7 +148,7 @@ the textbox, pass `textbox.getValue()` instead.
 If you still need to pass a component for later use:
 
 - set an attribute in a Desktop
-- [ pass a component via a Desktop scope event queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/inter-desktop_communication)
+- [ pass a component via a Desktop scope event queue]({{site.baseurl}}/zk_dev_ref/ui_patterns/inter_desktop_communication)
 
 # Server is temporarily out of service - Error 467
 

@@ -70,7 +70,7 @@ work together to ensure that the entire stack is configured properly.
 ## [(A7) Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10-2017_A7-Cross-Site_Scripting_(XSS))
 
 Please see our
-[tips]({{site.baseurl}}/zk_dev_ref/security_tips/cross-site_scripting)
+[tips]({{site.baseurl}}/zk_dev_ref/security_tips/cross_site_scripting)
 on how to deal with this security issue in ZK.
 
 ## [(A8) Insecure Deserialization](https://www.owasp.org/index.php/Top_10-2017_A8-Insecure_Deserialization)

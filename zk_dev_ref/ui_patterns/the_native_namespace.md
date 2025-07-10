@@ -59,7 +59,7 @@ code snippet is incorrect, since there is no component called `x`.
 
 If you want to change them dynamically, you could:
 
-1.  Use [client-side code]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
+1.  Use [client-side code]({{site.baseurl}}/zk_dev_ref/ui_composing/client_side_ui_composing)
     to modify the browser's DOM tree at the client. Notice that, since
     ZK doesn't create the widget at the client too, you have to
     manipulate the DOM tree directly.

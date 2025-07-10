@@ -165,7 +165,7 @@ If you prefer another encoding, please specify it in a library property
 called `org.zkoss.util.label.web.charset`. It also means all properties
 files must be encoded in the same character set.
 
-For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org.zkoss.util.label.web.charset).
+For more information, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/org_zkoss_util_label_web_charset).
 
 # Version History
 

@@ -83,7 +83,7 @@ It is a special case that
 ```
 
 Although paging will
-[invalidate]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Invalidate_a_Component)
+[invalidate]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#Invalidate_a_Component)
 `listbox` and its children, `stubonly` needs the referred widget in
 client side which is detached during paging and throws mounting error.
 

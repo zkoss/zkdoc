@@ -20,7 +20,7 @@ client.
 >
 > Notice that this section describes how to synchronize states of a
 > component to the widget. To synchronize states back to a component,
-> refer to [the AU Requests > section]({{site.baseurl}}/zk_client_side_ref/client-side_firing).
+> refer to [the AU Requests > section]({{site.baseurl}}/zk_client_side_ref/client_side_firing).
 
 # Render All Properties When Attached
 

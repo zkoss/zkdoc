@@ -3,8 +3,8 @@
 To make it easier to create a dynamic web page, the ZUML document allows
 you to embed the script code. Notice that there are two types of script
 code: server-side and client-side. How the client-side code can be
-embedded is discussed in the [Client-side UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/client-side_ui_composing)
-and [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
+embedded is discussed in the [Client-side UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/client_side_ui_composing)
+and [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client_side_event_listening)
 sections. Here we will discuss how to embed the server-side script code
 in a ZUML document.
 
@@ -138,7 +138,7 @@ letter must be an **upper** case. Otherwise, it will be considered as a
 property.
 
 Again, the code is Java interpreted at run time and running on the
-server. For client-side listening, please refer to the [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client-side_event_listening)
+server. For client-side listening, please refer to the [Client-side Event Listening]({{site.baseurl}}/zk_dev_ref/event_handling/client_side_event_listening)
 section.
 
 For the sake of discussion, we call it zscript no matter the code is
@@ -215,7 +215,7 @@ The default interpreter is based on
 ## Scope for Each ID Space
 
 The Java interpreter is a *multi-scope* interpreter. It creates a scope
-for each [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#ID_Space).
+for each [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#ID_Space).
 Since ID space is hierarchical, so are the scopes. If a variable cannot
 be found in the current ID space, it will go further to parent's ID
 space to try to resolve the variable.

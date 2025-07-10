@@ -17,7 +17,7 @@ not declared in taglib. Parses text from the beginning of the given
 string to produce a number with the given pattern and locale.
 
 You can call it by [ EL](zuml_ref/static_fields_and_methods)
-or declaring a [ xel-method](zuml_ref/xel-method).
+or declaring a [ xel-method](zuml_ref/xel_method).
 
 **Parameters:** In both default and extended function:
 

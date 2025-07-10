@@ -29,7 +29,7 @@ Containers to support J2EE 1.4 specification (Servlet 2.4).
 ## 10.1.2 and earlier
 
 Prior versions 10.1.2.0.2, 10.1.2.0.1 supports only J2EE 1.3 (with
-Servlet 2.3), WEB-INF/web.xml shall be replaced with [Sample of web.xml for Servlet 2.3](zk_background/sample_of_web.xml_for_servlet_2.3).
+Servlet 2.3), WEB-INF/web.xml shall be replaced with [Sample of web.xml for Servlet 2.3](zk_background/sample_of_web_xml_for_servlet_2_3).
 
 Notice that ZK supports Servlet 2.3 but the web.xml configuration file
 is a bit different. Also notice that ZK 6 and later no longer support

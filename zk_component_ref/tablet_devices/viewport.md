@@ -19,7 +19,7 @@ processing instructions.
 ## Library Properties
 
 {% include version-badge.html version=6.5.0 %} The default value of
-[org.zkoss.zul.tablet.meta.viewport.disabled]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.tablet.meta.viewport.disabled)
+[org.zkoss.zul.tablet.meta.viewport.disabled]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_tablet_meta_viewport_disabled)
 property is `false`. If it is set to `true`, ZK won't render viewport
 content for all pages. Thus, users can specify the viewport on each ZUL
 page by [meta instruction](zuml_ref/meta).

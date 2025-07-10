@@ -114,4 +114,4 @@ Once set, descendant components unless it was set explicitly.
 [^2]: Non-native components could be stub-ized too by use of
     [org.zkoss.zk.ui.Component#setStubonly(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setStubonly(java.lang.String)).
     For more information, please refer
-    [here]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components).
+    [here]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client_only_components).

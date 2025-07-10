@@ -46,7 +46,7 @@ MZk.3000=my customized message here
 
 Notice the prefix `MZk`, and `3000` is the error code and you can find
 it at
-[ZK_Messages/German/msgzk_de.properties](zk_messages/german/msgzk_de.properties)
+[ZK_Messages/German/msgzk_de.properties](zk_messages/german/msgzk_de_properties)
 
 The same pattern applies to the [ other message files](zk_messages/german) such as
 
@@ -133,7 +133,7 @@ user locale, and will be reloaded even if the
 Clients.reloadMessages(Locale) is triggered.
 
 It can be defined in a language addon using the <message-loader-class>
-element. Please refer to the [client-side reference]({{site.baseurl}}/zk_client_side_ref/message-loader-class)
+element. Please refer to the [client-side reference]({{site.baseurl}}/zk_client_side_ref/message_loader_class)
 documentation for more details.
 
 # Version History

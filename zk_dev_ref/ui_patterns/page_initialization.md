@@ -23,7 +23,7 @@ the variable in the page's attributes.
 > **Notice** that the provision of variables for EL expression is
 > generally better to be done with
 > [org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html)
-> (and then specified it with [the variable-resolver > directive](zuml_ref/variable-resolver)).
+> (and then specified it with [the variable-resolver > directive](zuml_ref/variable_resolver)).
 
 For example, suppose we have a class, `CustomerManager`, that can be
 used to load all customers, then we could prepare a variable to store

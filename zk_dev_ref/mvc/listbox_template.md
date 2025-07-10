@@ -161,7 +161,7 @@ demand. When ZK is rendering the inner template, the previous iteration
 has already gone. There is no way to retrieve the iteration information
 of the outer template.
 
-Rather, you have to traverse the component tree or use [the custom-attributes element](zuml_ref/custom-attributes).
+Rather, you have to traverse the component tree or use [the custom-attributes element](zuml_ref/custom_attributes).
 
 Here is an example of traversing the component tree to retrieve the data
 in the outer template, as shown at line 9 below. Notice that, each data
@@ -188,7 +188,7 @@ is, as described before, stored in the component's value property.
 ```
 
 If the component tree is deep, It is tedious and somehow error prone.
-Alternatively, you can store the information into [a custom attribute](zuml_ref/custom-attributes)
+Alternatively, you can store the information into [a custom attribute](zuml_ref/custom_attributes)
 and then retrieve it later, as shown at line 4 and 10 below.
 
 ```xml

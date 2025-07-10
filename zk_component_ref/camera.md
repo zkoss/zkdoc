@@ -119,7 +119,7 @@ event. To handle this, you can listen to onMaxsizeExceed and get the
 upload size from event.getData().
 
 Default: please refer to
-[max-upload-size]({{site.baseurl}}/zk_config_ref/the_max-upload-size_element)
+[max-upload-size]({{site.baseurl}}/zk_config_ref/the_max_upload_size_element)
 
 ```xml
   <camera maxsize="1024" onMaxsizeExceed="event.getData()" />

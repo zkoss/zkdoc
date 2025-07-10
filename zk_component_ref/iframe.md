@@ -210,5 +210,5 @@ to.</p></td>
 
 
 
-[^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
+[^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
     section

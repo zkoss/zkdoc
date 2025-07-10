@@ -34,9 +34,9 @@ you want. Click **Next**. ![](images/studio-maven-archetype.png)
 # Run ZK Maven Project
 
 1\. Right click on your project icon and select **\[Run as\]/\[Maven
-build...\]** to open run configuration dialog. ![](images/studio-maven-run.png " center | 600px")
+build...\]** to open run configuration dialog. ![](images/studio-maven-run.png)
 
-2\. Enter **jetty:run** in **Goals** textbox and click **Run**. ![](images/studio-maven-run-jetty.png " center | 500px")
+2\. Enter **jetty:run** in **Goals** textbox and click **Run**. ![](images/studio-maven-run-jetty.png)
 
 - Running jetty the firs time may take a while because Maven plugins
   needs to download some necessary resources, please be patient.

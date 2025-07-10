@@ -165,8 +165,8 @@ ZUML document directly[^2].
     that you could not change the page's title, add JavaScript code, or
     add CSS with these directives in a ZUML document loaded in this way.
 2.  On the other hand, when
-    [\<?function-mapper?\>](zuml_ref/function-mapper),
-    [\<?variable-resolver?\>](zuml_ref/variable-resolver)
+    [\<?function-mapper?\>](zuml_ref/function_mapper),
+    [\<?variable-resolver?\>](zuml_ref/variable_resolver)
     and
     [\<?component?\>](zuml_ref/component)
     work correctly, they decide how a ZUML document is parsed rather
@@ -195,4 +195,4 @@ ZUML document directly[^2].
 [^2]: Don't confuse a ZUML page with
     [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html). The former refers to a file
     containing a ZUML document. The latter is a Java object of
-    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui#Desktop.2C_Page_and_Component).
+    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#Desktop.2C_Page_and_Component).

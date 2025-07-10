@@ -269,7 +269,7 @@ below:</p></td>
 # Document-level Keystrokes
 
 If you set the library property
-[org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled]({{site.baseurl}}/zk_config_ref/org.zkoss.zk.ui.invokefirstrootforafterkeydown.enabled)
+[org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_invokefirstrootforafterkeydown_enabled)
 to `true` and there is no widget gaining a focus when an end-user
 presses a keystroke, ZK will fire a key event to **the first root
 component that has an onCtrlKey listener**. For example, when visiting

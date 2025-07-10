@@ -8,7 +8,7 @@ Default: `none`
 
 It specifies the URI of an additional theme (aka., a style sheet file).
 
-Like other URI, it accepts `*` for loading browser and Locale dependent style sheet. Please refer to [Locale-Dependent Resources]({{site.baseurl}}/zk_dev_ref/internationalization/locale-dependent_resources) for more details.
+Like other URI, it accepts `*` for loading browser and Locale dependent style sheet. Please refer to [Locale-Dependent Resources]({{site.baseurl}}/zk_dev_ref/internationalization/locale_dependent_resources) for more details.
 
 You can specify any number of `them-uri` as follows.
 

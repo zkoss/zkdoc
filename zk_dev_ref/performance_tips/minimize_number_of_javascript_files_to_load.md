@@ -98,7 +98,7 @@ ${z:setCWRCacheControl()}
 
 If a package is used by all your pages, you could configure it system
 wide by specifying the packages in the language add-on. Please refer to
-[ZK Configuration Reference/zk.xml/The language-config Element]({{site.baseurl}}/zk_config_ref/the_language-config_element)
+[ZK Configuration Reference/zk.xml/The language-config Element]({{site.baseurl}}/zk_config_ref/the_language_config_element)
 for how to specify a language add-on.
 
 For example, if the zul.wnd package

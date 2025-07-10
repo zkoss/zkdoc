@@ -16,7 +16,7 @@ To enable WebSocket connection, add the following listener into zk.xml
 </listener>
 ```
 
-To change the URL pattern, please refer to [this library property]({{site.baseurl}}/zk_config_ref/org.zkoss.zkmax.au.websocket.websocketendpoint.urlpattern).
+To change the URL pattern, please refer to [this library property]({{site.baseurl}}/zk_config_ref/org_zkoss_zkmax_au_websocket_websocketendpoint_urlpattern).
 
 When WebSocket connection is enabled, ZK will use WebSocketServerPush by
 default when server-push started.
