@@ -146,6 +146,6 @@ Try it
 |**Bottom:**| ![Bottom Orientation](tabbox_orient_bottom.png)|
 
 ## Supported Children
-- [`Tabs`](tabs.md): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
-- [`Tabpanels`](tabpanels.md): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.
-- [`Toolbar`](../essential_components/toolbar.md): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.
+- [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
+- [`Tabpanels`](tabpanels): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.
+- [`Toolbar`](../essential_components/toolbar): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.

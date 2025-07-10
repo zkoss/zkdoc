@@ -102,7 +102,7 @@ The `border` property specifies the style of the panel border, with options like
 
 ### Title
 
-The `title` attribute sets the title of the panel. You can also use the [Caption](caption.md) component to create more complex titles.
+The `title` attribute sets the title of the panel. You can also use the [Caption](caption) component to create more complex titles.
 
 ### Closable
 
@@ -179,6 +179,6 @@ For more details, refer to [Using Panel to Lay out Your Website](https://www.zko
 | `onZIndex`     | Event: [ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's z-index is updated by a user.|
 
 ## Supported Children
-- [`Caption`](caption.md): Indicates that the `Panel` can only have one child component of type `Caption`.
-- [`Panelchildren`](panelchildren.md): Indicates that the `Panel` can only have one child component of type `Panelchildren`.
-- [`Toolbar`](../essential_components/toolbar.md): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.
+- [`Caption`](caption): Indicates that the `Panel` can only have one child component of type `Caption`.
+- [`Panelchildren`](panelchildren): Indicates that the `Panel` can only have one child component of type `Panelchildren`.
+- [`Toolbar`](../essential_components/toolbar): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.

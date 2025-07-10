@@ -47,4 +47,4 @@ Try it
 
 ## Supported Children
 
-[`Tabpanel`](tabpanel.md): Represents a single `Tabpanel` within the `Tabpanels` component. The `Tabpanels` component can include multiple `Tabpanel` components as its children.
+[`Tabpanel`](tabpanel): Represents a single `Tabpanel` within the `Tabpanels` component. The `Tabpanels` component can include multiple `Tabpanel` components as its children.

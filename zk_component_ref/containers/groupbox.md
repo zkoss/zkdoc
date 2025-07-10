@@ -5,7 +5,7 @@
 - **JavaScript API:** [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
 
 ## Employment/Purpose
-The Groupbox component in ZK is used to group related components together visually. It provides a border around the components to indicate their relationship. The label displayed at the top of the group box can be created using the [Caption](caption.md) component, similar to the HTML legend element. Unlike the [Window](window.md) component, a group box does not own the ID space and cannot be overlapped or popped up.
+The Groupbox component in ZK is used to group related components together visually. It provides a border around the components to indicate their relationship. The label displayed at the top of the group box can be created using the [Caption](caption) component, similar to the HTML legend element. Unlike the [Window](window) component, a group box does not own the ID space and cannot be overlapped or popped up.
 
 ## Example
 In the provided example, a Groupbox is used to group a set of Radio components under the label "Fruits."
@@ -111,7 +111,7 @@ For example,
 ```xml
 <groupbox width="350px" mold="3d" closable="true">
 ```
-**Note**: the function can only be applied when the [Caption](caption.md) or the title attribute exists.
+**Note**: the function can only be applied when the [Caption](caption) or the title attribute exists.
 
 ### Open/Close
 Default: `true`.
@@ -153,4 +153,4 @@ The available molds for the Groupbox component are:
 
 `*ALL`: Indicates that the Groupbox component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Groupbox, providing flexibility and customization options for your designs.
 
-Note: Only one [`Caption`](caption.md) component is allowed in the `Groupbox` and it must be the first component.
+Note: Only one [`Caption`](caption) component is allowed in the `Groupbox` and it must be the first component.

@@ -17,4 +17,4 @@ Headers Element serves as a skeletal implementation for headers, acting as the p
 
 ## Supported Children
 
-[`HeaderElement`](headerelement.md): Indicates that the `HeadersElement` can contain one or more header elements within it.
+[`HeaderElement`](headerelement): Indicates that the `HeadersElement` can contain one or more header elements within it.
