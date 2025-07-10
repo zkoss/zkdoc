@@ -1,6 +1,6 @@
 # Overview
 
-With the [native namespace](zuml_ref/zuml/namespaces/native), an XML
+With the [native namespace](zuml_ref/native), an XML
 element in a ZUML document will be interpreted as a native tag that will
 be sent to the browser directly, rather than becoming a ZK component.
 
@@ -80,7 +80,7 @@ For example, we can modify the DOM tree with jQuery as follows:
 The rule of thumb is to use [the native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace)
 if possible. If you need to change the content dynamically, you might
 consider [the html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component)
-first. If still not applicable, use [the XHTML component set](zuml_ref/zuml/languages/xhtml).
+first. If still not applicable, use [the XHTML component set](zuml_ref/xhtml).
 
 # Relation with Other Components
 

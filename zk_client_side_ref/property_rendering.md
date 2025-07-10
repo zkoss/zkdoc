@@ -20,7 +20,7 @@ client.
 >
 > Notice that this section describes how to synchronize states of a
 > component to the widget. To synchronize states back to a component,
-> refer to [the AU Requests > section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing).
+> refer to [the AU Requests > section]({{site.baseurl}}/zk_client_side_ref/client-side_firing).
 
 # Render All Properties When Attached
 
@@ -167,7 +167,7 @@ the server.
 Also notice that
 [org.zkoss.zk.ui.Component#redraw(java.io.Writer)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#redraw(java.io.Writer))
 won't be called immediately. Rather, ZK Update Engine will accumulate
-all updates, and then optimize the number of commands ([AU responses]({{site.baseurl}}/zk_client_side_ref/communication/au_responses))
+all updates, and then optimize the number of commands ([AU responses]({{site.baseurl}}/zk_client_side_ref/au_responses))
 that need to be sent.
 
 # Dynamic Update a Property

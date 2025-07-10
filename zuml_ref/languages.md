@@ -37,16 +37,16 @@ element is associated with:
     language is decided by the filename's extension (see below).
 2.  If an XML element has no namespace prefix, then
     1.  Handle it specially, if the element is a special ZK element,
-        such as [zk](zuml_ref/zuml/elements/zk) and
-        [attribute](zuml_ref/zuml/elements/attribute).
+        such as [zk](zuml_ref/zk) and
+        [attribute](zuml_ref/attribute).
     2.  Look up the component definition belonging to the default
         language, otherwise.
 3.  If an XML element has a prefix, then the XML namespace is used to
     resolve:
     1.  Handle it specially, if the XML namespace is one of the standard
         namespaces, such as
-        [native](zuml_ref/zuml/namespaces/native) and
-        [client](zuml_ref/zuml/namespaces/client).
+        [native](zuml_ref/native) and
+        [client](zuml_ref/client).
     2.  Look up the language with the given XML namespace, otherwise
     3.  Then, look up the component definition from the language found
         in the previous step
@@ -57,8 +57,8 @@ The default language is decided based on the extension of the filename
 ([org.zkoss.zk.ui.metainfo.LanguageDefinition#getByExtension(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#getByExtension(java.lang.String))).
 In addition, a language is associated with one or multiple extensions
 (defined by the component developer). For example, the extensions
-associated with the [xul/html language](zuml_ref/zuml/languages/zul) are `zul` and
-`xul`, while the [xhtml language](zuml_ref/zuml/languages/xhtml) (aka., a
+associated with the [xul/html language](zuml_ref/zul) are `zul` and
+`xul`, while the [xhtml language](zuml_ref/xhtml) (aka., a
 component set) is associated with the extensions including `zhtml`,
 `html`, `html`, and `xhtml`.
 
@@ -220,14 +220,14 @@ href="http://www.w3.org/1999/xhtml"><code>http://www.w3.org/1999/xhtml</code></a
 <p>XHTML-compliant component sets. It is one-to-one mapping of XHTML
 tags to ZK components. Since they are components, you can add and remove
 them dynamically (and control it at the server). For more information
-please refer to the <a href="zuml_ref/ZUML/Languages/XHTML"
+please refer to the <a href="zuml_ref/XHTML"
 title="wikilink">XHTML Namespace</a> section or <a
 href="{{site.baseurl}}/zk_component_ref/xhtml_components" title="wikilink">ZK
 Component Reference</a>.</p>
 <p><strong>Performance Tip:</strong> The XHTML language is designed to
 allow application to modify the client dynamically (at the server). If
 you don't need it (it is generally true), you should use the <a
-href="zuml_ref/ZUML/Namespaces/Native" title="wikilink">Native
+href="zuml_ref/Native" title="wikilink">Native
 namespace</a> instead. For more information, please refer to <a
 href="ZK_Developer&#39;s_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace"
 title="wikilink">Performance Tips</a>.</p></td>
@@ -243,7 +243,7 @@ href="http://www.zkoss.org/2007/xml"><code>http://www.zkoss.org/2007/xml</code><
 <code>Available only ZK EE</code></p>
 <p>XML component sets. It is used to generate (static) XML document. For
 more information please refer to the <a
-href="zuml_ref/ZUML/Languages/XML" title="wikilink">XML</a>
+href="zuml_ref/a>
 section.</p></td>
 </tr>
 </tbody>
@@ -262,8 +262,8 @@ section.</p></td>
 
 [^1]: For more information please refer to [ZK Component Development Essentials](/zk_component_dev_essentials/zk_component_overview)
 
-[^2]: For more information please refer to the [Native Namespace](zuml_ref/zuml/namespaces/native) section
+[^2]: For more information please refer to the [Native Namespace](zuml_ref/native) section
 
-[^3]: Notice that there are so-called [Standard Namespaces](zuml_ref/zuml/namespaces) associated
+[^3]: Notice that there are so-called [Standard Namespaces](zuml_ref/namespaces) associated
     with XML namespaces (for a ZUML document) to provide special
     functionality (than specify components).

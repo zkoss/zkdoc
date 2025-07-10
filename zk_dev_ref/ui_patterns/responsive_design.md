@@ -120,7 +120,7 @@ In ZK 6.5, we refined and polished all components so that they perform
 seamlessly whether they are on a PC's browser or a Tablet device. In
 some of the use cases the default styling is not satisfied for user to
 adjust the layout for different devices and screen sizes, therefore we
-can employ [ the ClientInfoEvent]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent)
+can employ [ the ClientInfoEvent]({{site.baseurl}}/zk_component_ref/tablet_devices/clientinfoevent)
 to detect whether the browser's orientation changes, and then switch
 some components' orientation to conform that.
 

@@ -2,7 +2,7 @@
 
 Special Attribute Issue
 =======================
-ZK Bind is a post-processing work on components after they have been created and it can control most attributes to change a component's status. However, there are [some special attributes]({{site.baseurl}}/zuml_ref/zuml/attributes) such as `if` and
+ZK Bind is a post-processing work on components after they have been created and it can control most attributes to change a component's status. However, there are [some special attributes]({{site.baseurl}}/zuml_ref/attributes) such as `if` and
 `forEach` in which ZK Bind can't work on because these attributes' value are determined and fixed when components are created. Therefore, binding these special attributes takes no effect on components, but you may want to use the functions that these special attributes provide, here we demonstrate alternative methods in MVVM approach.
 
 The "if" Versus the "visible"
@@ -48,7 +48,7 @@ The `forEach` attribute also has the same issue.
 
 Binding values to client attribute
 =====================================
-ZK component may receive client attributes using the xml namespace "[client/attribute](zuml_ref/zuml/namespaces/client_attribute)".
+ZK component may receive client attributes using the xml namespace "[client/attribute](zuml_ref/client_attribute)".
 Client-attributes are added to the rendering information of components, and must be follow the same rules as the special attributes.
 
 The client attribute must be initialized using the `${value}` syntax, and doesn't support `@init`, `@load` or `@bind`.

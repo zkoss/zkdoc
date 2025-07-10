@@ -32,7 +32,7 @@ public class FooViewModel {
 
 Wire from Variable Resolver
 ---------------------------
-First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive]({{site.baseurl}}/zuml_ref/zuml/processing_instructions/variable-resolver). Here is the example of registering variable resolvers with annotations.
+First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive]({{site.baseurl}}/zuml_ref/variable-resolver). Here is the example of registering variable resolvers with annotations.
 ```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooViewModel {

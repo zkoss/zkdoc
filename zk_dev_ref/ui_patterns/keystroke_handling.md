@@ -76,7 +76,7 @@ Also notice that, if a button gains the focus, ENTER will be intercepted
 by the browser and interpreted as pressed. For example, if you move the
 focus to the Reset button and press ENTER, you will receive `onCancel`
 rather than `onOK` (since `onClick` will be fired and it is converted to
-`onCancel` because of [the forward attribute](zuml_ref/zuml/attributes/forward)
+`onCancel` because of [the forward attribute](zuml_ref/forward)
 specified).
 
 # Control Keys

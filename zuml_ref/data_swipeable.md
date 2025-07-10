@@ -46,10 +46,10 @@ content with client attribute[^4].
 >
 > <references/>
 
-[^1]: For more information, please refer to [ZK Component Reference Tablet Devices: Borderlayout]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/borderlayout#SwipeEvent_Support).
+[^1]: For more information, please refer to [ZK Component Reference Tablet Devices: Borderlayout]({{site.baseurl}}/zk_component_ref/tablet_devices/borderlayout#SwipeEvent_Support).
 
-[^2]: For more information, please refer to [ZK Component Reference Tablet Devices: Tabbox]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/tabbox#SwipeEvent_Support).
+[^2]: For more information, please refer to [ZK Component Reference Tablet Devices: Tabbox]({{site.baseurl}}/zk_component_ref/tablet_devices/tabbox#SwipeEvent_Support).
 
-[^3]: For more information, please refer to [ZK Component Reference Tablet Devices: Paging]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/paging#SwipeEvent_Support).
+[^3]: For more information, please refer to [ZK Component Reference Tablet Devices: Paging]({{site.baseurl}}/zk_component_ref/tablet_devices/paging#SwipeEvent_Support).
 
-[^4]: For more information, please refer to [ZK Component Reference Tablet Devices: Calendar]({{site.baseurl}}/zk_component_ref/tablet_devices/ui_enhancements/calendar#Friendly_Scrolling_Support).
+[^4]: For more information, please refer to [ZK Component Reference Tablet Devices: Calendar]({{site.baseurl}}/zk_component_ref/tablet_devices/calendar#Friendly_Scrolling_Support).

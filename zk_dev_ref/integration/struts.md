@@ -91,7 +91,7 @@ As shown above, notice that
 
 - Every input (including listbox and tree) shall be assigned with a name
   that will become the parameter's name when submitting the form.
-- You could use [the encodeURL function](zuml_ref/el_expressions/core_methods/encodeurl)
+- You could use [the encodeURL function](zuml_ref/encodeurl)
   to encode an URL.
 
 For more information, please refer to [ZK Developer's Reference/integration/Use_ZK_in_JSP#HTML_Form the Use ZK in JSP section]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form_the_Use_ZK_in_JSP_section).

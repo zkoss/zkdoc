@@ -137,7 +137,7 @@ and Material
 These themes conform to the WCAG2-compliant contrast level and focus
 styles. Note that for WCAG compliance, in addition to using a WCAG
 theme, you will also need to include the za11y (zk-accessibility) module
-to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility)
+to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility/accessibility)
 for more information.
 
 ![ left \| thumb \| 269px \| WCAG (Blue)](wcag_blue.png " left | thumb | 269px | wcag (blue)") ![ left \| thumb \| 269px \| WCAG Navy](wcag_navy.png " left | thumb | 269px | wcag navy") ![ left \| thumb \| 269px \| WCAG Purple](wcag_purple.png " left | thumb | 269px | wcag purple")

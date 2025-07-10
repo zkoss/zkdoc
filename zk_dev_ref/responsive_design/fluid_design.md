@@ -228,7 +228,7 @@ processing instructions, or style components.
 ```
 
 Alternatively, if the style is used in all pages, it can be deployed
-globally [through language definition]({{site.baseurl}}/zk_client_side_ref/language_definition/stylesheet),
+globally [through language definition]({{site.baseurl}}/zk_client_side_ref/stylesheet),
 in lang-addon.xml:
 
 ```xml

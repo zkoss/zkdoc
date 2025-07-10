@@ -60,7 +60,7 @@ elements are already generated.
 
 ## Load Javascript in head tag - script directive
 
-Instead of using this component, you can use [the script directive](zuml_ref/zuml/processing_instructions/script)
+Instead of using this component, you can use [the script directive](zuml_ref/script)
 instead. It does not support `defer`, but it consumes no memory since no
 component is created. And it generated `<script>` in HTML `<head>`, so
 the specified script will be loaded earlier than body DOM is created.

@@ -49,7 +49,7 @@ will be attached to the current page.
 ## The arg Object
 
 The `Map` passed to the `createComponents()` can be accessed on the page
-being created by use of [the arg object](zuml_ref/el_expressions/implicit_objects/arg).
+being created by use of [the arg object](zuml_ref/arg).
 For example,
 
 ```xml
@@ -156,19 +156,19 @@ Since no page is created, there are a few differences than visiting a
 ZUML document directly[^2].
 
 1.  The
-    [\<?page?\>](zuml_ref/zuml/processing_instructions/page),
-    [\<?script?\>](zuml_ref/zuml/processing_instructions/script),
-    [\<?link?\>](zuml_ref/zuml/processing_instructions/link),
-    [\<?header?\>](zuml_ref/zuml/processing_instructions/header)
+    [\<?page?\>](zuml_ref/page),
+    [\<?script?\>](zuml_ref/script),
+    [\<?link?\>](zuml_ref/link),
+    [\<?header?\>](zuml_ref/header)
     and other directives controlling a page
     ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)) have no function. It means
     that you could not change the page's title, add JavaScript code, or
     add CSS with these directives in a ZUML document loaded in this way.
 2.  On the other hand, when
-    [\<?function-mapper?\>](zuml_ref/zuml/processing_instructions/function-mapper),
-    [\<?variable-resolver?\>](zuml_ref/zuml/processing_instructions/variable-resolver)
+    [\<?function-mapper?\>](zuml_ref/function-mapper),
+    [\<?variable-resolver?\>](zuml_ref/variable-resolver)
     and
-    [\<?component?\>](zuml_ref/zuml/processing_instructions/component)
+    [\<?component?\>](zuml_ref/component)
     work correctly, they decide how a ZUML document is parsed rather
     than how the current page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html))
     should be.

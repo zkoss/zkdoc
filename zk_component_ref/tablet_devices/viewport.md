@@ -22,12 +22,12 @@ processing instructions.
 [org.zkoss.zul.tablet.meta.viewport.disabled]({{site.baseurl}}/zk_config_ref/org.zkoss.zul.tablet.meta.viewport.disabled)
 property is `false`. If it is set to `true`, ZK won't render viewport
 content for all pages. Thus, users can specify the viewport on each ZUL
-page by [meta instruction](zuml_ref/zuml/processing_instructions/meta).
+page by [meta instruction](zuml_ref/meta).
 
 ## XML processing instruction
 
 Users can keep the default setting and assign custom viewport on
-specific pages by overwriting viewport content in [page instruction](zuml_ref/zuml/processing_instructions/page)
+specific pages by overwriting viewport content in [page instruction](zuml_ref/page)
 as follows:
 
 ```xml

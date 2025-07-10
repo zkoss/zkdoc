@@ -39,4 +39,4 @@ To know which mold a component supports, please refer to [ZK Component Reference
 # Custom Mold
 
 To largely change how a component renders in a browser, see
-[{{site.baseurl}}/zk_client_side_ref/customization/custom_mold]({{site.baseurl}}/zk_client_side_ref/customization/custom_mold).
+[ZK Client-side Reference/Customization/Custom Mold]({{site.baseurl}}/zk_client_side_ref/custom_mold).

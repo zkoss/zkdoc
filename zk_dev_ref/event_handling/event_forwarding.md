@@ -30,7 +30,7 @@ public class FooComposer extends SelectorComposer {
 
 # Event Forwarding in ZUML
 
-Event forwarding can be done with [the forward attribute](zuml_ref/zuml/attributes/forward) in ZUML.
+Event forwarding can be done with [the forward attribute](zuml_ref/forward) in ZUML.
 For example,
 
 ```xml

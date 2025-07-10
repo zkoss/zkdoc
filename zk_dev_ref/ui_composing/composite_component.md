@@ -131,7 +131,7 @@ sections.
 
 [org.zkoss.zk.ui.select.Selectors#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object, java.util.List))
 will wire variables that can be resolved by the registered variable
-resolver. In addition to [the variable-resolver directive](zuml_ref/zuml/processing_instructions/variable-resolver),
+resolver. In addition to [the variable-resolver directive](zuml_ref/variable-resolver),
 you can create any variable resolver manually and pass it as the third
 argument.
 [org.zkoss.zk.ui.select.Selectors#newVariableResolvers(java.lang.Class, java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/Selectors.html#newVariableResolvers(java.lang.Class, java.lang.Class))
@@ -190,7 +190,7 @@ need to implement [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest
 
 Like macros and any other primitive components, you have to declare a
 composite component before using it. This can be done by using
-[component directives](zuml_ref/zuml/processing_instructions/component).
+[component directives](zuml_ref/component).
 Then, we could use it the same way (they are actually primitive
 components). For example,
 
@@ -209,7 +209,7 @@ components). For example,
 
 If a composite component is used in multiple pages, it is better to
 define it in the application level, such that it can be accessed in any
-page without any [component directives](zuml_ref/zuml/processing_instructions/component).
+page without any [component directives](zuml_ref/component).
 
 There are basic two approaches to define a component in the application
 level:

@@ -1,4 +1,4 @@
-With [ import directive](zuml_ref/zuml/processing_instructions/import),
+With [ import directive](zuml_ref/import),
 you can reference a static field or a static method of a class. So now
 you can call a tag library method without declaring it.
 

@@ -16,8 +16,8 @@ in a ZK application.
 # Using the Taglib in ZUL
 
 In zul files the special attributes
-[if](zuml_ref/zuml/attributes/if) and
-[unless](zuml_ref/zuml/attributes/unless) are ideal
+[if](zuml_ref/if) and
+[unless](zuml_ref/unless) are ideal
 candidates to render or omit certain parts of a zul file.
 
 After declaring the taglib the functions are available with the

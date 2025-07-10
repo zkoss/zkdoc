@@ -160,8 +160,8 @@ than the page requests content, any resource served to the client with a
 relative URL will point to
 
 Loading resources with [ lang-addon]({{site.baseurl}}/zk_client_side_ref/language_definition) The
-best way to globally add [ stylesheets](zk_client_side_ref/language_definition/stylesheet)
-and [ scripts](zk_client_side_ref/language_definition/javascript)
+best way to globally add [ stylesheets](zk_client_side_ref/stylesheet)
+and [ scripts](zk_client_side_ref/javascript)
 to your application, and have these resources loaded as part of the
 embedding process is to declare them in lang-addon.
 

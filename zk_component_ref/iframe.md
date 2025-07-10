@@ -147,7 +147,7 @@ you could not listen the widget-level event
 because the onload event might be fired before the widget has been bound
 to DOM.
 
-Rather, you shall use [the client-attribute namespace](zuml_ref/zuml/namespaces/client_attribute)
+Rather, you shall use [the client-attribute namespace](zuml_ref/client_attribute)
 to register a DOM-level listener as follows.
 
 ```xml

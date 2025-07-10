@@ -17,7 +17,7 @@ simplify the implementation as described in the following section.
 # Load-on-Demand with the fulfill Attribute
 
 The simplest way to defer the creation of the child components is to use
-[the fulfill attribute](zuml_ref/zuml/attributes/fulfill). For
+[the fulfill attribute](zuml_ref/fulfill). For
 example, the
 [comboitem]({{site.baseurl}}/zk_component_ref/comboitem) in the
 following code snippet will not be created, until the

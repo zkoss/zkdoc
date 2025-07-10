@@ -1,9 +1,9 @@
 ZK creates a component (one of the derives of
 [org.zkoss.zhtml.AbstractTag](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/AbstractTag.html)) for each XML element
-specified with the [XHTML component set](zuml_ref/zuml/languages/xhtml). In other words, ZK
+specified with the [XHTML component set](zuml_ref/xhtml). In other words, ZK
 will maintain their states on the server. However, if you won't change
 their states dynamically (i.e., after instantiated), you could use the
-[native namespace](zuml_ref/zuml/namespaces/native)
+[native namespace](zuml_ref/native)
 instead.
 
 For example, the following code snippet creates five components (one
@@ -47,7 +47,7 @@ incorrect.
 <button label="add" onClick="new Li().setParent(x)"/>
 ```
 
-If you have to change them dynamically, you still have to use the [XHTML component set](zuml_ref/zuml/languages/xhtml), or you
+If you have to change them dynamically, you still have to use the [XHTML component set](zuml_ref/xhtml), or you
 could use [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html) alternatively, if the
 HTML tags won't contain any ZUL component.
 

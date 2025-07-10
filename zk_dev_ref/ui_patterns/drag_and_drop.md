@@ -171,5 +171,5 @@ the `droppable` property assigned to `"true"` could accept it.
 # Drag-and-Drop Effect Customization
 
 The effects of drag-and-drop can be customized. It requires some
-client-side programming. Please refer to [ZK Client-side Reference/customization/Drag-and-Drop Effects]({{site.baseurl}}/zk_client_side_ref/customization/drag-and-drop_effects)
+client-side programming. Please refer to [ZK Client-side Reference/customization/Drag-and-Drop Effects]({{site.baseurl}}/zk_client_side_ref/drag-and-drop_effects)
 for more information.

@@ -1,4 +1,4 @@
- With [component definitions]({{site.baseurl}}/zk_client_side_ref/language_definition/component),
+ With [component definitions]({{site.baseurl}}/zk_client_side_ref/component),
 we could specify the initial values for the properties, attributes and
 annotations of a component. If you want to set the initial value of a property (such as `showTodayLink` for `Datebox`, or any other property for any component) globally across your application, you can use the language addon mechanism described above.
 
@@ -17,7 +17,7 @@ after instantiating a component).
 
 Suppose we want to assign `normal` to the border property
 ([org.zkoss.zul.Window#setBorder(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setBorder(java.lang.String)))
-of all windows in a ZUML document, then we could use [the component directive](zuml_ref/zuml/processing_instructions/component)
+of all windows in a ZUML document, then we could use [the component directive](zuml_ref/component)
 as follows.
 
 ```xml

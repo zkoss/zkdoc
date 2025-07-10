@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 /**
- * LOWERCASE LINKS CONVERTER
- * =========================
+ * LOWERCASE LINKS CONVERTER & NORMALIZER
+ * ======================================
  * 
- * A Node.js tool that automatically converts internal links to lowercase in Markdown files.
+ * A Node.js tool that automatically converts and normalizes internal links in Markdown files.
  * This tool helps maintain consistent URL formatting across Jekyll documentation sites.
  * 
  * FEATURES:
@@ -12,6 +12,8 @@
  * • Recursively processes all .md files in the project directory
  * • Converts baseurl links to lowercase: {{site.baseurl}}/Path/To/Page → {{site.baseurl}}/path/to/page
  * • Converts internal page links to lowercase: /Path/To/Page → /path/to/page
+ * • Normalizes internal links by replacing dashes and dots with underscores
+ * • Removes single quotes from internal links
  * • Handles both formats: {{site.baseurl}}/path and /{{site.baseurl}}/path
  * • Ignores external URLs (http://, https://, ftp://, mailto:, etc.)
  * • Ignores image links (.png, .jpg, .gif, .svg, etc.)
@@ -42,15 +44,22 @@
  * Before: [ZK Developer Guide]({{site.baseurl}}/ZK_Developer_Guide/Introduction)
  * After:  [ZK Developer Guide]({{site.baseurl}}/zk_developer_guide/introduction)
  * 
- * Before: [Calendar]({{site.baseurl}}/ZK_Component_Reference/Essential_Components/Calendar)
+ * Before: [Calendar]({{site.baseurl}}/ZK_Component-Reference/Essential.Components/Calendar)
  * After:  [Calendar]({{site.baseurl}}/zk_component_reference/essential_components/calendar)
  * 
  * Internal page links:
  * Before: [Getting Started](/ZK_Developer_Guide/Getting_Started)
  * After:  [Getting Started](/zk_developer_guide/getting_started)
  * 
- * Before: [Button Component](/ZK_Component_Reference/Input/Button.html)
- * After:  [Button Component](/zk_component_reference/input/button.html)
+ * Before: [Button Component](/ZK_Component-Reference/Input/Button.html)
+ * After:  [Button Component](/zk_component_reference/input/button_html)
+ * 
+ * Before: [User's Guide](/docs/User's-Guide.md)
+ * After:  [User's Guide](/docs/users_guide)
+ * 
+ * Normalization features:
+ * Before: /Some-Page.With-Dots/file.html → /some_page_with_dots/file_html
+ * Before: /User's-Manual/intro.md → /users_manual/intro
  * 
  * Ignored (images):
  * ![Screenshot](/Images/Screenshot.PNG) - left unchanged
@@ -111,6 +120,15 @@ class LinkLowercaseConverter {
            this.isImageUrl(url); // Ignore image links
   }
 
+  // Normalize internal page links
+  normalizeInternalLink(pathPart) {
+    return pathPart
+      .toLowerCase()
+      .replace(/\.md$/i, '')   // Remove .md extension first
+      .replace(/[-\.]/g, '_')  // Replace remaining dashes and dots with underscores
+      .replace(/'/g, '');      // Remove single quotes
+  }
+
   // Convert baseurl links to lowercase
   convertBaseurlLinksToLowercase(content, filePath) {
     const relativePath = path.relative(this.rootDir, filePath);
@@ -133,12 +151,12 @@ class LinkLowercaseConverter {
         return match;
       }
       
-      // Convert path to lowercase
-      const lowercasePath = pathPart.toLowerCase();
+      // Normalize the path (lowercase, replace dashes/dots with underscores, remove single quotes)
+      const normalizedPath = this.normalizeInternalLink(pathPart);
       
       // Reconstruct the full link
       const prefix = match.startsWith('/') ? '/{{site.baseurl}}/' : '{{site.baseurl}}/';
-      const newLink = prefix + lowercasePath;
+      const newLink = prefix + normalizedPath;
       
       if (match !== newLink) {
         changes++;
@@ -180,9 +198,9 @@ class LinkLowercaseConverter {
       const urlParts = url.split('#');
       const pathPart = urlParts[0];
       const fragment = urlParts[1] ? '#' + urlParts[1] : '';
-      // Convert the path to lowercase
-      const lowercasePath = pathPart.toLowerCase();
-      const newUrl = lowercasePath + fragment;
+      // Normalize the path (lowercase, replace dashes/dots with underscores, remove single quotes)
+      const normalizedPath = this.normalizeInternalLink(pathPart);
+      const newUrl = normalizedPath + fragment;
       if (url !== newUrl) {
         changes++;
         this.changesLog.push({

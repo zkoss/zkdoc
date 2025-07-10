@@ -18,7 +18,7 @@ functionality to ZUML.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="zuml_ref/ZUML/Namespaces/ZK"
+<td><p><a href="zuml_ref/ZK"
 title="wikilink">zk</a></p></td>
 <td><p><code>Name: zk</code><br />
 <code>Namespace: </code><a
@@ -28,11 +28,11 @@ href="http://www.zkoss.org/2005/zk"><code>http://www.zkoss.org/2005/zk</code></a
 <p>It is the reserved namespace for specifying ZK specific elements and
 attributes, such as the zk element and the unless attribute. For more
 information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/ZK" title="wikilink">ZK
+href="zuml_ref/ZK" title="wikilink">ZK
 Namespace</a> section.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Native"
+<td><p><a href="zuml_ref/Native"
 title="wikilink">native</a></p></td>
 <td><p><code>Name: native</code><br />
 <code>Namespace: </code><a
@@ -45,11 +45,11 @@ element represents a HTML tag. Unlike the xhtml language, there is no
 component associated with, so the performance is much better but you
 cannot change it dynamically.</p>
 <p>For more information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Native" title="wikilink">Native
+href="zuml_ref/Native" title="wikilink">Native
 Namespace</a> section.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Annotation"
+<td><p><a href="zuml_ref/Annotation"
 title="wikilink">annotation</a></p></td>
 <td><p><code>Name: annotation</code><br />
 <code>Namespace: </code><a
@@ -58,11 +58,11 @@ href="http://www.zkoss.org/2005/zk/annotation"><code>http://www.zkoss.org/2005/z
 <code>Java: </code><javadoc method="ANNOTATION_NAMESPACE"><code>org.zkoss.zk.ui.metainfo.LanguageDefinition</code></javadoc></p>
 <p>It is the reserved namespace for specifying annotations. For more
 information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Annotation"
+href="zuml_ref/Annotation"
 title="wikilink">annotation</a> section.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Client"
+<td><p><a href="zuml_ref/Client"
 title="wikilink">client</a></p></td>
 <td><p><code>Name: client</code><br />
 <code>Namespace: </code><a
@@ -72,11 +72,11 @@ href="http://www.zkoss.org/2005/zk/client"><code>http://www.zkoss.org/2005/zk/cl
 <p>It is the reserved namespace for specifying a ZK JavaScript
 <strong>widget's event listeners and attributes</strong>. For more
 information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Client" title="wikilink">Client
+href="zuml_ref/Client" title="wikilink">Client
 Namespace</a> section.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Client_Attribute"
+<td><p><a href="zuml_ref/Client_Attribute"
 title="wikilink">client attribute</a></p></td>
 <td><p><code>Name: client/attribute</code><br />
 <code>Namespace: </code><a
@@ -88,11 +88,11 @@ attributes</strong>. Unlike the client namespace, which assigns
 something to widgets, the client/attribute namespace assigns to the DOM
 tree directly.</p>
 <p>For more information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Client_Attribute"
+href="zuml_ref/Client_Attribute"
 title="wikilink">Client Attribute Namespace</a> section.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Client_Attribute_Prefix"
+<td><p><a href="zuml_ref/Client_Attribute_Prefix"
 title="wikilink">client attribute prefix</a></p></td>
 <td><p><code>Name: client/attribute-prefix</code><br />
 <code>Namespace: </code><a
@@ -104,44 +104,44 @@ href="http://www.zkoss.org/2020/zk/client/attribute-prefix"><code>http://www.zko
 namespace, which assigns something to widgets, the
 client/attribute-prefix namespace assigns to the DOM tree directly.</p>
 <p>For more information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Client_Attribute_Prefix"
+href="zuml_ref/Client_Attribute_Prefix"
 title="wikilink">Client Attribute Prefix Namespace</a> section.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="zuml_ref/ZUML/Languages"
+<td><p><a href="zuml_ref/Languages"
 title="wikilink">xhtml</a></p></td>
 <td><p><code>Name: xhtml</code><br />
 <code>Namespace: </code><a
 href="http://www.w3.org/1999/xhtml"><code>http://www.w3.org/1999/xhtml</code></a><br />
 <code>Namespace shortcut: xhtml</code></p>
 <p>It is the XHTML component set. For more information please refer to
-the <a href="zuml_ref/ZUML/Languages" title="wikilink"> the
+the <a href="zuml_ref/Languages" title="wikilink"> the
 Languages section</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="zuml_ref/ZUML/Languages"
+<td><p><a href="zuml_ref/Languages"
 title="wikilink">zul</a></p></td>
 <td><p><code>Name: xul/html</code><br />
 <code>Namespace: </code><a
 href="http://www.zkoss.org/2005/zul"><code>http://www.zkoss.org/2005/zul</code></a><br />
 <code>Namespace shortcut: zul</code></p>
 <p>It is the ZUL component set. For more information please refer to the
-<a href="zuml_ref/ZUML/Languages" title="wikilink"> the Languages
+<a href="zuml_ref/Languages" title="wikilink"> the Languages
 section</a>.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="zuml_ref/ZUML/Languages"
+<td><p><a href="zuml_ref/Languages"
 title="wikilink">xml</a></p></td>
 <td><p><code>Name: xml</code><br />
 <code>Namespace: </code><a
 href="http://www.zkoss.org/2007/xml"><code>http://www.zkoss.org/2007/xml</code></a><br />
 <code>Namespace shortcut: xml</code></p>
 <p>It is the XML component set. For more information please refer to the
-<a href="zuml_ref/ZUML/Languages" title="wikilink"> the Languages
+<a href="zuml_ref/Languages" title="wikilink"> the Languages
 section</a>.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="zuml_ref/ZUML/Namespaces/Shadow"
+<td><p><a href="zuml_ref/Shadow"
 title="wikilink">shadow</a></p></td>
 <td><p><br />
 <code>Name: shadow</code><br />
@@ -150,11 +150,11 @@ href="http://www.zkoss.org/2015/shadow"><code>http://www.zkoss.org/2015/shadow</
 <code>Namespace shortcut: shadow</code></p>
 <p>It is the reserved namespace for specifying shadow elements. For more
 information please refer to the <a
-href="zuml_ref/ZUML/Namespaces/Shadow" title="wikilink">Shadow
+href="zuml_ref/Shadow" title="wikilink">Shadow
 Namespace</a>.</p></td>
 </tr>
 </tbody>
 </table>
 
 For more information of XHTML, ZUL and other component sets, please
-refer to [ the Languages section](zuml_ref/zuml/languages).
+refer to [ the Languages section](zuml_ref/languages).

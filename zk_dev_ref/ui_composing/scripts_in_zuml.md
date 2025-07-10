@@ -32,7 +32,7 @@ execute when the event is received.
 
 ## zscript
 
-First, you could embed the code inside the [zscript element](zuml_ref/zuml/elements/zscript), such that
+First, you could embed the code inside the [zscript element](zuml_ref/zscript), such that
 they will be evaluated when the page is rendered[^1]. For example,
 
 ```xml
@@ -147,7 +147,7 @@ embedded in the `zscript` element or in an event handler.
 ### Attribute
 
 If the code is too complicated, you could specify the event handle in
-the [attribute element](zuml_ref/zuml/elements/attribute). For
+the [attribute element](zuml_ref/attribute). For
 example,
 
 ```xml
@@ -296,10 +296,10 @@ For example,
 
 In addition, you could add your own interpreter by implementing
 [org.zkoss.zk.scripting.Interpreter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/scripting/Interpreter.html).
-For more information, please refer to [ZUML Reference](zuml_ref/extensions/zscript).
+For more information, please refer to [ZUML Reference](zuml_ref/zscript).
 
 [^1]: The zscript element has an attribute called
-    [deferred](zuml_ref/zuml/elements/zscript#deferred)
+    [deferred](zuml_ref/zscript#deferred)
     that could make the evaluation as late as possible
 
 [^2]: Built in id space owner includes

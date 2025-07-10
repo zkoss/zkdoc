@@ -94,7 +94,7 @@ To plug it to the component, you could invoke
 
 # Client Event Declaration
 
-As described in [the previous section]({{site.baseurl}}/zk_client_side_ref/communication/au_requests/client-side_firing),
+As described in [the previous section]({{site.baseurl}}/zk_client_side_ref/client-side_firing),
 a widget event ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) will be
 sent to the server, only if *the server needs it*.
 

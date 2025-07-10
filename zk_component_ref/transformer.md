@@ -23,7 +23,7 @@ template.
 ```
 
 where transformer is a component of the XML component set, so we have to
-specify the namespace: `xml`. Otherwise, the [native namespace](zuml_ref/zuml/namespaces/native) is assumed,
+specify the namespace: `xml`. Otherwise, the [native namespace](zuml_ref/native) is assumed,
 and the element is generated directly.
 
 Then, let us assume the content of `book.xsl` is as follows.

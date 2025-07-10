@@ -48,8 +48,8 @@ Multiple EL expressions could be specified in a single attribute:
 
 - The example is from [JSP Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
 - For more information please refer to
-  [Operators](zuml_ref/el_expressions/operators) and
-  [Literals](zuml_ref/el_expressions/literals).
+  [Operators](zuml_ref/operators) and
+  [Literals](zuml_ref/literals).
 
 ## Difference from Java
 
@@ -68,8 +68,8 @@ Multiple EL expressions could be specified in a single attribute:
   out-of-bound.
 
 For more information please refer to
-[Operators](zuml_ref/el_expressions/operators) and
-[Literals](zuml_ref/el_expressions/literals).
+[Operators](zuml_ref/operators) and
+[Literals](zuml_ref/literals).
 
 # Resolving EL Variables
 
@@ -79,7 +79,7 @@ Thus, an EL variable can access:
 - Components by [using its ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component-based_ui)
 - Variables defined in
   [zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
-- [Implicit objects](zuml_ref/el_expressions/implicit_objects)
+- [Implicit objects](zuml_ref/implicit_objects)
 - Scoped attributes
 
 ```xml
@@ -160,7 +160,7 @@ public class CustomerResolver implements org.zkoss.xel.VariableResolver {
 ```
 
 Then, you could specify it in a
-[variable-resolver](zuml_ref/zuml/processing_instructions/variable-resolver)
+[variable-resolver](zuml_ref/variable-resolver)
 directive, such as:
 
 ```xml
@@ -188,7 +188,7 @@ in `WEB-INF/zk.xml` as follows. For more information, please refer to
 ```
 
 Then, when a page is created each time, an instance of the specified
-class will be instantiated and registered as if it is specified in [the variable-resolver element](zuml_ref/zuml/processing_instructions/variable-resolver).
+class will be instantiated and registered as if it is specified in [the variable-resolver element](zuml_ref/variable-resolver).
 
 Notice that since a new instance of the variable resolver is created on
 each page, there will not be any concurrency issues.
@@ -215,7 +215,7 @@ public class Customer {
 ```
 
 Then, we could retrieve them with the
-[xel-method](zuml_ref/zuml/processing_instructions/xel-method)
+[xel-method](zuml_ref/xel-method)
 directive:
 
 ```xml
@@ -247,7 +247,7 @@ called taglib, such as
 </taglib>
 ```
 
-Then, you can use them by specifying it in a [taglib directive](zuml_ref/zuml/processing_instructions/taglib).
+Then, you can use them by specifying it in a [taglib directive](zuml_ref/taglib).
 
 ```xml
 <?taglib uri="/WEB-INF/tld/my.tld" prefix="my"?>

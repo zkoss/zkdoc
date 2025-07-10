@@ -129,7 +129,7 @@ how you can include the js file for different scopes.
 ## Page-Scope
 
 - Use the script directive
-  \[\[zuml_ref/ZUML/Processing_Instructions/script \|
+  \[\[zuml_ref/script \|
   <?script?>
 
   \]\]

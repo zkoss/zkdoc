@@ -103,7 +103,7 @@ them by yourself.
 
 ## Page Directive
 
-All attributes of \[\[zuml_ref/ZUML/Processing_Instructions/page\|
+All attributes of \[\[zuml_ref/page\|
 
 <?page?>
 

@@ -59,7 +59,7 @@ arg0="/WEB-INF/layout/template.zul"?>
 
 As shown, a fragment is defined by specifying an annotation as
 `self="@define(`*`name`*`)"`. Furthermore, the template is specified in
-[the init directive](zuml_ref/zuml/processing_instructions/init).
+[the init directive](zuml_ref/init).
 
 Then, when the user visits this page (`foo/index.zul` in the above
 example), [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) will:

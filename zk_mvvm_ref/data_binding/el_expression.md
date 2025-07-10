@@ -48,7 +48,7 @@ You can use EL expression to call a method in a ViewModel.
 
 Call Tag Library's Methods
 --------------------------
-We could call [tag library's methods in a zul with EL expression]({{site.baseurl}}/zuml_ref/zuml/processing_instructions/taglib) equally, we can also call them in a data binding expression and this calling can be nested. The syntax is as follows:
+We could call [tag library's methods in a zul with EL expression]({{site.baseurl}}/zuml_ref/taglib) equally, we can also call them in a data binding expression and this calling can be nested. The syntax is as follows:
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 ...
@@ -61,7 +61,7 @@ We could call [tag library's methods in a zul with EL expression]({{site.baseurl
 
 Call Xel Methods
 ----------------------
-The [xel method]({{site.baseurl}}/zuml_ref/zuml/processing_instructions/xel-method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
+The [xel method]({{site.baseurl}}/zuml_ref/xel-method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
 ```xml
 <?xel-method prefix="x" name="max"
     class="java.lang.Math"
@@ -152,5 +152,5 @@ A static field or static method of a Java class can be referenced with the synta
 ```xml
 <label value="@load((Math.sqrt(16)))" />
 ```
-You need to import required pakcage/class by [import directive](zuml_ref/zuml/processing_instructions/import).
+You need to import required pakcage/class by [import directive](zuml_ref/import).
 Note that `java.lang.*` is imported by default. 

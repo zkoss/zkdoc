@@ -394,7 +394,7 @@ it.
 How do we achieve this security control in a zul? We can implement a
 custom tag library to check current user's authorities and apply the tag
 library on `if` or `disable` attribute. Please refer to
-[zuml_ref/ZUML/Processing_Instructions/taglib/Custom_Taglib](zuml_ref/zuml/processing_instructions/taglib/custom_taglib)
+[zuml_ref/custom_taglib)
 for details.
 
 The tag library's function is implemented in

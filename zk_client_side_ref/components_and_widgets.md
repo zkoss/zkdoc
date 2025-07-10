@@ -91,7 +91,7 @@ class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pw<span class="op">.</span><span class="fu">replaceHTML</span>(uuid)<span class="op">;</span></span></code></pre></div></td>
 <td><p>Attach the component to the specified page, and a peer widget
 will be created automatically at the client later (after processing the
-<a href="{{site.baseurl}}/zk_client_side_ref/communication/au_requests"
+<a href="{{site.baseurl}}/zk_client_side_ref/au_requests"
 title="wikilink">AU Requests</a>).</p></td>
 </tr>
 <tr class="even">

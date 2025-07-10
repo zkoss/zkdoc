@@ -22,7 +22,7 @@ also sends updates if these values change while browsing the page. This
 event will fire during page initialization and whenever the client
 properties change, for example, change of tablet orientation or when
 desktop browser resized. More information of this event can be found in
-the [ClientInfoEvent documentation]({{site.baseurl}}/zk_component_ref/tablet_devices/events/clientinfoevent).
+the [ClientInfoEvent documentation]({{site.baseurl}}/zk_component_ref/tablet_devices/clientinfoevent).
 
 This event can be leveraged in the MVC pattern, using a controller to
 alter the page structure based on the information returned from the

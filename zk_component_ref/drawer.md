@@ -52,7 +52,7 @@ close the Drawer.
 # Change Animation Speed
 
 This component respects the `data-animationspeed` attribute, please see
-[ Data-AnimationSpeed](zuml_ref/zuml/namespaces/client_attribute/data-animationspeed)
+[ Data-AnimationSpeed](zuml_ref/data-animationspeed)
 
 # Properties
 

@@ -117,7 +117,7 @@ For more information, please refer to [ZK Client-side Reference: Widget Customiz
 
 ## Custom Effects
 
-For adding your custom effects, please refer to [ZK Client-side Reference: Customization: Actions and Effects]({{site.baseurl}}/zk_client_side_ref/customization/actions_and_effects)
+For adding your custom effects, please refer to [ZK Client-side Reference: Customization: Actions and Effects]({{site.baseurl}}/zk_client_side_ref/actions_and_effects)
 for details.
 
 # Notes for Upgrading from ZK 3
