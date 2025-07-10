@@ -1,7 +1,7 @@
 
 
 This section describes the Maven settings required to use ZK Pivottable
-in your application. Please refer to [this article]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/resolving_zk_framework_artifacts_via_maven)
+in your application. Please refer to [this article]({{site.baseurl}}/zk_installation_guide/resolving_zk_framework_artifacts_via_maven)
 for the Maven settings for ZK Framework.
 
 ## Dependency

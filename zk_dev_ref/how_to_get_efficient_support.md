@@ -48,7 +48,7 @@ Providing sufficient information helps us support you more efficiently.
     e.g. Firefox 60
 7.  If it is hard to create a sample, you can provide an URL so that the
     support team can access it. When providing this URL, remember to
-    [turn on the js debug]({{site.baseurl}}/zk_config_ref/the_client_config_element/the_debug_js_element)
+    [turn on the js debug]({{site.baseurl}}/zk_config_ref/the_debug_js_element)
     in your zk.xml.
 8.  Application servers (e.g. JBoss 6, if it's necessary).
 9.  If your case happens only in your specific environment, it is

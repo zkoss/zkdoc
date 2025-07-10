@@ -30,4 +30,4 @@ $ mvn clean package
 
 **See Also**
 
-- [maven setup]({{site_baseurl}}/zk_installation_guide/maven_setup)
+- [maven setup]({{site.baseurl}}/zk_installation_guide/maven_setup)

@@ -67,7 +67,7 @@ E is the last child class.
 	5. call E's `@AfterCompose` method `doE()`
 
 
-We can also use parameter related annotation on AfterCompose method's parameters just as what we can do in @Init; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters.html).
+We can also use parameter related annotation on AfterCompose method's parameters just as what we can do in @Init; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters).
 
 [1]: If you override parent class's @AfterCompose-annotated method and set `superclass=true`, due to Java's limitation, child's method will be called twice. To avoid this, you should **remove** `superclass=true` in child class and use `super` to invoke parent's implementation.
 ```java

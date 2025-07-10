@@ -1,6 +1,6 @@
 As described in [the MVC: Template section]({{site.baseurl}}/zk_dev_ref/mvc/template), a
 template is a ZUML fragment that defines how to create components. A
-template is enclosed with [the template element](zuml_ref/template) as shown
+template is enclosed with [the template element](/zuml_ref/template) as shown
 below.
 
 ```xml
@@ -42,7 +42,7 @@ to return the data being rendered; the code is similar to the following
 (for easy understanding, the code has been simplified).
 
 For more detailed information about the variable resolver, please refer
-to [ZUML Reference](zuml_ref/variable_resolver).
+to [ZUML Reference](/zuml_ref/variable_resolver).
 
 ```java
 public class TemplateBasedRenderer implements ListitemRenderer {

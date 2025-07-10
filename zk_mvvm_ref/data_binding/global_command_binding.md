@@ -191,7 +191,7 @@ When we trigger a global command by an event, a binder posts an event to the que
 
 In above image, when we trigger a global command "show" in View A, binder A posts an event to the event queue. Binder B which subscribes to the same event queue and binder A itself will both receive the event and try to look up for global command "show" in their associated ViewMoels (ViewModel A and ViewModel B)
 
-ZK allows you to change the name and scope of the event queue a binder subscribes to. Please refer to [Data Binding/Binder](./binder.html).
+ZK allows you to change the name and scope of the event queue a binder subscribes to. Please refer to [Data Binding/Binder](./binder).
 
 Trigger a Command Dynamically
 =============================
@@ -206,7 +206,7 @@ public void add() {
 }
 ```
 -   The first parameter of BindUtils.postGlobalCommand() is queue name, and the second one is queue scope.
--   The arguments passed in a global command (from zul or from java) can be retrieved using the [@BindingParam](../syntax/bindingparam.html) syntax.
+-   The arguments passed in a global command (from zul or from java) can be retrieved using the [@BindingParam](../syntax/bindingparam) syntax.
 
 You can call this method in a composer, and those pages written in MVC pattern can communicate with ViewModel. A sample code snippet is as follows:
 ```java

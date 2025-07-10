@@ -6,7 +6,7 @@ Command binding is a mechanism for hooking up a UI component's event such as but
 
 Command's name is the name of ViewModel's method with Java annotation ` @Command  ` by default. You can also specify a Command's name in ` @Command `'s element.
 
-[1]: [ ViewModel/Commands](../viewmodel/commands.html)
+[1]: [ ViewModel/Commands](../viewmodel/commands)
 
 ## Basic Usage
 This involves 2 steps:
@@ -54,7 +54,7 @@ public class OrderVM {
 ```
 - Line 3: When clicking “Save” button or menuitem, the binder will invoke ` saveOrder() ` in a ViewModel.
 
-You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters.html).
+You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters).
 
 > Since 9.5.0
 

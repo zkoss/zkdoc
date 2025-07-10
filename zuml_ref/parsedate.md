@@ -17,8 +17,8 @@ not declared in the taglib. Parses text from the beginning of the given
 string to produce a date with the given pattern, locale, timezone, date
 style and time style.
 
-You can call it by [ EL](zuml_ref/static_fields_and_methods)
-or declaring a [ xel-method](zuml_ref/xel_method).
+You can call it by [ EL](/zuml_ref/static_fields_and_methods)
+or declaring a [ xel-method](/zuml_ref/xel_method).
 
 > ------------------------------------------------------------------------
 >

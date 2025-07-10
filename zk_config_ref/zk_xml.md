@@ -58,4 +58,4 @@ xsi:schemaLocation="http://www.zkoss.org/2005/zk/config http://www.zkoss.org/200
 The ZK schema can be downloaded from
 [<http://www.zkoss.org/2005/zk/config/zk.xsd>](http://www.zkoss.org/2005/zk/config/zk.xsd).
 In addition, you can find `zk.xsd` under the `dist/xsd` directory in the
-[ZK binary distribution]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution).
+[ZK binary distribution]({{site.baseurl}}/zk_installation_guide/the_content_of_zk_binary_distribution).

@@ -12,7 +12,7 @@ Steps to use this feature:
 1.  Bind a custom attribute on a component with ` @ref `.
 2.  Use the custom attribute in other EL expressions that are nested in children components
 
-[1]: When using this feature, you have to avoid binding to a single variable, read [limitation](./property_binding.html#limitation) for more detail.
+[1]: When using this feature, you have to avoid binding to a single variable, read [limitation](./property_binding#limitation) for more detail.
 
 #### Basic usage example
 ```xml

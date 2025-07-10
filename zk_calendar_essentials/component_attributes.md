@@ -47,7 +47,7 @@ will be displayed.
 
 Sets the date formatter. In fact, there are 5 places in the calendar
 must have different date display. See
-[Customization]({{site_baseurl}}/zk_calendar_essentials/customization).
+[Customization](/{{site.baseurl}}/zk_calendar_essentials/customization).
 
 ## readonly
 
@@ -65,7 +65,7 @@ Determine the first day of a week to be displayed on the calendar.
 ## model
 
 Specify a model to add or remove items in a calendar. See
-[CRUD Calendar Items]({{site_baseurl}}/zk_calendar_essentials/crud_calendar_items)
+[CRUD Calendar Items](/{{site.baseurl}}/zk_calendar_essentials/crud_calendar_items)
 
 ## mold
 

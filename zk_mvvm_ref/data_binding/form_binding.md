@@ -267,4 +267,4 @@ Form
 
 ## Form Validation
 
-Before saving data to form's middle object, we can also validate user input with validator. Please refer to [Data Binding/Validator](./validator.html).
+Before saving data to form's middle object, we can also validate user input with validator. Please refer to [Data Binding/Validator](./validator).

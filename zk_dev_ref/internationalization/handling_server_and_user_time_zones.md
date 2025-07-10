@@ -58,7 +58,7 @@ and time expressed relative to the end-user.
 
 ## Default time of the day selection in ZK Datebox
 
-The [ Datebox](zk_component_reference/input/datebox) has
+The [ Datebox](/zk_component_ref/input/datebox) has
 the ability to provide date selection with or without time-of-day.
 
 Depending on how the Datebox is set up, it can cater to a number of use

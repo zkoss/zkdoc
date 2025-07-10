@@ -71,7 +71,7 @@ E is the last child class.
 	4. find `superclass=true` again, binder will look for `@Destroy` method in C later
 	5. no `@Destroy` method exists in C, so nothing happens
 
-We can also use parameter related annotations on destroy method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters.html).
+We can also use parameter related annotations on destroy method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters).
 
 [1]: If you override parent class's destroy method and set `superclass=true`, due to Java's limitation, child's method will be called twice. To avoid this, you should **remove** `superclass=true` in child class and use `super` to invoke parent's implementation.
 ```java

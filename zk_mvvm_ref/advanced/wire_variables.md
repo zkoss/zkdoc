@@ -4,7 +4,7 @@ Wire Variables
 ==============
 We can use ` @WireVariable ` to wire variables **from implicit objects or registered variable resolvers** in a ViewModel as we do in a composer (please refer to [ZK Developer's Reference/mvc/Controller/Wire Variables]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables).
 Because ** [BindComposer](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindComposer.html) wires those variables for us before calling initial method **. But it will **not**
-wire components and listeners automatically like a composer. To achieve it, please refer to [Advance/Wire Components](./wire_components.html) and [Advance/Wire Event Listeners](./wire_event_listeners.html).
+wire components and listeners automatically like a composer. To achieve it, please refer to [Advance/Wire Components](./wire_components) and [Advance/Wire Event Listeners](./wire_event_listeners).
 
 Wire from Implicit Objects
 --------------------------

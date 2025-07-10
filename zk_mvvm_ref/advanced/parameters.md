@@ -138,7 +138,7 @@ public void popupMessage(@BindingParam("target") Component target, @BindingParam
 
 Retrieve Context Object
 =======================
-We can retrieve a value or implicit objects from various context scopes in **initial methods** (methods with **` @Init `**) and **command methods** (methods with **` @Command `**) by applying parameter related annotation on these method's parameters. We list all available HTTP context objects retrieved by parameters annotations related annotations in sections under [Parameters](../syntax/parameters.html)
+We can retrieve a value or implicit objects from various context scopes in **initial methods** (methods with **` @Init `**) and **command methods** (methods with **` @Command `**) by applying parameter related annotation on these method's parameters. We list all available HTTP context objects retrieved by parameters annotations related annotations in sections under [Parameters](../syntax/parameters)
 
 Retrieve HTTP Context Object
 ----------------------------

@@ -22,9 +22,9 @@ is equivalent to
 
 When ZK Loader iterates through items of the given collection, it will
 update two implicit objects:
-[each](zuml_ref/each)
+[each](/zuml_ref/each)
 and
-[forEachStatus](zuml_ref/foreachstatus).
+[forEachStatus](/zuml_ref/foreachstatus).
 The `each` object represents the item being iterated, while
 forEachStatus is an instance of
 [org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html),
@@ -113,7 +113,7 @@ both in an EL expression and in zscript.
 
 If you have to iterate a collection of items for multiple XML elements,
 you could group them with the
-[zk](zuml_ref/zk) element as shown below.
+[zk](/zuml_ref/zk) element as shown below.
 
 ```xml
 <zk forEach="${cond}">
@@ -191,9 +191,9 @@ example,
 
 If you would like to iterate a subset of a collection, you could specify
 the
-[forEachBegin](zuml_ref/foreachbegin)
+[forEachBegin](/zuml_ref/foreachbegin)
 and/or
-[forEachEnd](zuml_ref/foreachend)
+[forEachEnd](/zuml_ref/foreachend)
 attributes.
 
 ```xml

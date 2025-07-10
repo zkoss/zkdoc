@@ -7,7 +7,7 @@ i.e.,
 [org.zkoss.util.Locales#testCurrent(java.lang.String, java.lang.String) ](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#testCurrent(java.lang.String, java.lang.String) )
 
 Returns whether the current locale
-([getCurrentLocale()](zuml_ref/getcurrentlocale))
+([getCurrentLocale()](/zuml_ref/getcurrentlocale))
 belongs to the specified language and/or country.
 
 **Parameters:**

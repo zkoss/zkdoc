@@ -14,7 +14,7 @@ Each AU request might invoke an event listener that changes a component's state.
 
 
 ## Solutions:
-- **Minimize session size** - only store essential information and optimize the number of component in each page. Reducing the number of components reduces session size. See [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips)
+- **Minimize session size** - only store essential information and optimize the number of component in each page. Reducing the number of components reduces session size. See [Performance Tips]({{site.baseurl}}/zk_installation_guide/zk_dev_ref/performance_tips/performance_tips)
 - **Use lazy loading** for heavy objects, see [Defer the Creation of Child Components]({{site.baseurl}}/zk_dev_ref/performance_tips/defer_the_creation_of_child_components).
 - Use Client binding to reduce server-side state management, see [Client Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/client_binding_api).
 - **Consider application-level caching** instead of session storage

@@ -101,7 +101,7 @@ In addition, you could implement
 [org.zkoss.zk.ui.Richlet#getLanguageDefinition()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#getLanguageDefinition())
 to use a different language as default (for example, implementing a
 richlet for [mobile devices](http://code.google.com/p/zkreach/)). By
-default, [ZUL](zuml_ref/zul) (aka.,
+default, [ZUL](/zuml_ref/zul) (aka.,
 xul/html) is assumed.
 
 ## Richlet Must Be Thread-Safe

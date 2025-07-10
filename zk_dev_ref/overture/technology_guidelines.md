@@ -352,7 +352,7 @@ preferences.
 # Performance and Security
 
 For production systems, it is strongly recommended to take a look at the
-[Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips)
+[Performance Tips]({{site.baseurl}}/zk_installation_guide/zk_dev_ref/performance_tips/performance_tips)
 and [Security Tips]({{site.baseurl}}/zk_dev_ref/security_tips/security_tips)
 sections first.
 

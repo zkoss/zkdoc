@@ -125,4 +125,4 @@ The usage like below:
 The long processing time is caused by shadow elements positioning themselves relative to the other shadow elements located in the same shadow root element.
 Since every shadow element inside the same parent needs to sync its position in the component tree based on its siblings. Adding or removing shadow elements causes "all other shadow elements at the same level" to also recalculate, causing the cumulative processing times.
 
-If you want to determine components used in a template in runtime upon a value, please use [@template](../syntax/template.html). See [Combine with Dynamic Template](../data_binding/children_binding.html).
+If you want to determine components used in a template in runtime upon a value, please use [@template](../syntax/template). See [Combine with Dynamic Template](../data_binding/children_binding).

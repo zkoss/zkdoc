@@ -41,7 +41,7 @@ For projects depending on ZK **6.5.x**, add the following dependency:
 </dependency>
 ```
 
-If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) too.
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) too.
 
 # Configuration of Direct ZK Context EL Support in web.xml
 

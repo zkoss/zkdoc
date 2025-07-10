@@ -95,7 +95,7 @@ Sometimes we have to forward to another page. For example, when a user
 visits a page that requires authorization, we could forward it to a
 login page[^2].
 
-The simplest way is to use the [forward directive](zuml_ref/forward):
+The simplest way is to use the [forward directive](/zuml_ref/forward):
 
 ```xml
 <?forward uri="/login.zul" if="${!foo:isLogin()}"?>

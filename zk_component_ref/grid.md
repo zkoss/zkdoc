@@ -206,9 +206,9 @@ numeric value. By default, it is 20.
 
 ## The Paginal Property
 
-If you prefer to place the [Paging](zk_component_ref/paging)
+If you prefer to place the [Paging](/zk_component_ref/paging)
 component in a different location or if you want to control two or more
-grids with the same [Paging](zk_component_ref/paging), you
+grids with the same [Paging](/zk_component_ref/paging), you
 can assign the `paginal` attribute explicitly. Note: if it is not set
 explicitly, it is the same as the `paging` property.
 
@@ -278,7 +278,7 @@ explicitly, it is the same as the `paging` property.
 
 ## The Paging Property
 
-It is a read-only attribute representing the child [ Paging](zk_component_ref/paging)
+It is a read-only attribute representing the child [ Paging](/zk_component_ref/paging)
 component that is created automatically. It is null if you assign
 external paging via the `paginal` attribute. You rarely need to access
 this attribute as it is generally better to use the `paginal` attribute.

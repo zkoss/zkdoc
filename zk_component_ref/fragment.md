@@ -20,7 +20,7 @@ dynamic.
 
 To manipulate HTML elements dynamically, ZK supports several ways in
 addition to this component. Please refer to
-[Html Tags]({{site_baseurl}}/zk_dev_ref/ui_patterns/html_tags)
+[Html Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
 for more details.
 
 # Example

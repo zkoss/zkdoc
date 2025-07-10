@@ -13,5 +13,5 @@ specific servlet version.
 
 \(2\) = Require configuration through web.xml or zk-web-fragment.jar See
 the
-[{{site.baseurl}}/zk_config_ref/web_xml]({{site_baseurl}}/zk_config_ref/web_xml)
+[{{site.baseurl}}/zk_config_ref/web_xml]({{site.baseurl}}/zk_config_ref/web_xml)
 documentation page for more information on web.xml configuration.

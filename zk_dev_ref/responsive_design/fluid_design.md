@@ -238,7 +238,7 @@ in lang-addon.xml:
 ## Declaring DOM classes on ZK components
 
 ZK components can receive additional DOM classes using the
-[sclass](zk_style_customization_guide/zk_css_class_design/sclass)
+[sclass](/zk_style_customization_guide/sclass)
 attribute in zul (or setSclass(...) method in Java). This is an easy way
 to add rendering information to be used by the bootstrap grid system, or
 other client-side responsive providers.

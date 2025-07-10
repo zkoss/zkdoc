@@ -40,7 +40,7 @@ Check complete LESS source for Button from
 ## LESS Variables
 
 The following LESS variables are used for the Button component. Check
-other variables from [ here](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_variables).
+other variables from [ here](/zk_style_customization_guide/zk_less_variables).
 
 | Variables            | Default Value |
 |----------------------|---------------|
@@ -62,7 +62,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ the instruction](zk_style_customization_guide/look_and_feel_customization/customize_component)
+- Check [ the instruction](/zk_style_customization_guide/customize_component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -88,7 +88,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Modify button.less file to achieve target design
 
-`Refer `[` here`](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_functions)` for built-in zk less functions.`
+`Refer `[` here`](/zk_style_customization_guide/zk_less_functions)` for built-in zk less functions.`
 
 - Change text color and remove border and text-shadow effect:
 

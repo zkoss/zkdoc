@@ -112,8 +112,8 @@ Traversing components, like using `self` and `.parent` are not supported.
 ```
 
 
-[@Listen]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening), [@Wire](../advanced/wire_components.html), [@WireVariable](../advanced/wire_components.html), and [@SelectorParam](../syntax/selectorparam.html) are not supported.
-You cannot use [@BindingParam](../syntax/bindingparam.html) and [@ContextParam](../syntax/contextparam.html) to get components.
+[@Listen]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening), [@Wire](../advanced/wire_components), [@WireVariable](../advanced/wire_components), and [@SelectorParam](../syntax/selectorparam) are not supported.
+You cannot use [@BindingParam](../syntax/bindingparam) and [@ContextParam](../syntax/contextparam) to get components.
 
 ```java
 @Command
@@ -282,7 +282,7 @@ It depends on the number of components and the type and amount of bindings you a
 
 
 ## How is client MVVM different from fragment?
-* [fragment](zk_component_reference/containers/fragment) integrates Vue framework.
+* [fragment](/zk_component_ref/containers/fragment) integrates Vue framework.
 
 Since Vue supports different data binding syntax from ZK MVVM, not all features can be integrated with ZK. The integration focuses on supporting basic and commonly shared data binding syntax.
 

@@ -19,9 +19,9 @@ Description
 
 **Note:** Values of this annotation should be unique in each ViewModel, and have to follow the criteria listed in <a href="http://www.w3schools.com/cssref/css3_pr_mediaquery.asp">this media query's spec</a>.
 
-A <a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ClientInfoEvent.html">ClientInfoEvent</a> will be sent when the media query is matched, and we will be able to get the client's information by using [ ContextParam](./contextparam.html) parameter. (see example line 5, line 8)
+A <a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ClientInfoEvent.html">ClientInfoEvent</a> will be sent when the media query is matched, and we will be able to get the client's information by using [ ContextParam](./contextparam) parameter. (see example line 5, line 8)
 
-Other parameter annotations could also be used; please refer to subsections of [ Parameters](./parameters.html) for more information.
+Other parameter annotations could also be used; please refer to subsections of [ Parameters](./parameters) for more information.
 
 To make sure a MatchMedia method that will be invoked when matched with a media query as expected, It is recommended that you should define matchMedia more clearly. 
 

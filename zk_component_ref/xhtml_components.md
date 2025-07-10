@@ -1,8 +1,8 @@
 
 
-This section describes how to use the [XHTML component set](zuml_ref/xhtml) (i.e., XHTML
-components). XHTML components are in a different component set than [ZUL components](zuml_ref/zul). You have to
-[specify XML namespace](zuml_ref/languages) to
+This section describes how to use the [XHTML component set](/zuml_ref/xhtml) (i.e., XHTML
+components). XHTML components are in a different component set than [ZUL components](/zuml_ref/zul). You have to
+[specify XML namespace](/zuml_ref/languages) to
 distinguish them if you want to use them in the same ZUML document. For
 example,
 

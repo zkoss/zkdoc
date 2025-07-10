@@ -124,7 +124,7 @@ Check complete LESS source for Tabbox from
 ## LESS Variables
 
 The following LESS variables are used for Tabbox component. Check other
-variables from [ here](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_variables).
+variables from [ here](/zk_style_customization_guide/zk_less_variables).
 
 | Variables                   | Default Value |
 |-----------------------------|---------------|
@@ -147,7 +147,7 @@ Assume the image below is our target design for Tabbox component.
 
 ### Setup environment and Analyze design
 
-- Check [ the instruction](zk_style_customization_guide/look_and_feel_customization/customize_component)
+- Check [ the instruction](/zk_style_customization_guide/customize_component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -181,7 +181,7 @@ Assume the image below is our target design for Tabbox component.
 
 ### Modify tabbox.less file to achieve target design
 
-`Refer`[` here`](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_functions)` for built-in zk less functions.`
+`Refer`[` here`](/zk_style_customization_guide/zk_less_functions)` for built-in zk less functions.`
 
 - Change overall color by overriding built-in zk less variables.
 

@@ -104,7 +104,7 @@ The last part is to define a template, so that `<grid>` can know how to render i
 	</rows>
 </grid>
 ```
-- Line 6: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](zk_dev_ref/mvc/view/template/listbox_template).
+- Line 6: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](/zk_dev_ref/mvc/view/template/listbox_template).
 
 #### implicit `each`
 The variable `each` is an implicit variable that you can use without declaration inside `<template>`, and it represents one object (`SidebarPage`) of the data model for each iteration when rendering. We use `each` with dot notation to reference a data object's property. In each `<row>`, we show an image icon by loading a URL and a label.

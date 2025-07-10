@@ -738,6 +738,15 @@ zk_client_side_ref:
         url: /zk_client_side_ref/zscript
   - title: Widget Package Descriptor
     url: /zk_client_side_ref/widget_package_descriptor
+    children:
+      - title: function
+        url: /zk_client_side_ref/function
+      - title: package
+        url: /zk_client_side_ref/package
+      - title: script
+        url: /zk_client_side_ref/script
+      - title: widget
+        url: /zk_client_side_ref/widget
   - title: Client-Side Attributes
     url: /zk_client_side_ref/client_attributes
 zk_component_dev_essentials:
@@ -1685,11 +1694,11 @@ zk_dev_ref:
         url: /zk_dev_ref/ui_patterns/communication
         children:
           - title: Inter-Page Communication
-            url: /zk_dev_ref/ui_patterns/inter-page_communication
+            url: /zk_dev_ref/ui_patterns/inter_page_communication
           - title: Inter-Desktop Communication
-            url: /zk_dev_ref/ui_patterns/inter-desktop_communication
+            url: /zk_dev_ref/ui_patterns/inter_desktop_communication
           - title: Inter-Application Communication
-            url: /zk_dev_ref/ui_patterns/inter-application_communication
+            url: /zk_dev_ref/ui_patterns/inter_application_communication
       - title: Templating
         url: /zk_dev_ref/ui_patterns/templating
         children:
@@ -1879,7 +1888,7 @@ zk_dev_ref:
       - title: Load JavaScript and CSS from Server Nearby
         url: /zk_dev_ref/performance_tips/load_javascript_and_css_from_server_nearby
       - title: Specify Stubonly for Client-only Components
-        url: /zk_dev_ref/performance_tips/specify_stubonly_for_client-only_components
+        url: /zk_dev_ref/performance_tips/specify_stubonly_for_client_only_components
       - title: Reuse Desktops
         url: /zk_dev_ref/performance_tips/reuse_desktops
       - title: Control resource caching
@@ -1890,13 +1899,13 @@ zk_dev_ref:
     url: /zk_dev_ref/security_tips/security_tips
     children:
       - title: Cross-site scripting
-        url: /zk_dev_ref/security_tips/cross-site_scripting
+        url: /zk_dev_ref/security_tips/cross_site_scripting
       - title: Block Request for Inaccessible Widgets
         url: /zk_dev_ref/security_tips/block_request_for_inaccessible_widgets
       - title: Denial Of Service
         url: /zk_dev_ref/security_tips/denial_of_service
       - title: Cross-site Request Forgery
-        url: /zk_dev_ref/security_tips/cross-site_request_forgery
+        url: /zk_dev_ref/security_tips/cross_site_request_forgery
       - title: OWASP Top 10 Security Concerns
         url: /zk_dev_ref/security_tips/owasp_top_10_security_concerns
         children:
@@ -1908,7 +1917,7 @@ zk_dev_ref:
         url: /zk_dev_ref/security_tips/content_security_policy
         children:
           - title: Enhancing Security with Strict-Dynamic
-            url: /zk_dev_ref/security_tips/enhancing_security_with_strict-dynamic
+            url: /zk_dev_ref/security_tips/enhancing_security_with_strict_dynamic
       - title: SSO Redirect Handling
         url: /zk_dev_ref/security_tips/sso_redirect_handling
   - title: Performance Monitoring
@@ -1976,7 +1985,7 @@ zk_dev_ref:
   - title: Common Error Messages
     url: /zk_dev_ref/common_error_messages
   - title: Development-time Best Practices
-    url: /zk_dev_ref/development-time_best_practices
+    url: /zk_dev_ref/development_time_best_practices
   - title: Packaging Applications
     url: /zk_dev_ref/packaging_applications
   - title: How to get Efficient Support

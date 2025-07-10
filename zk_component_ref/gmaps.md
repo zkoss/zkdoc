@@ -176,7 +176,7 @@ title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
 <p><code>onInfoChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/infochangeevent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/infochangeevent" title="wikilink">
 InfoChangeEvent</a></p>
 <p>Notifies that the current open information window has
 changed(opened/closed)</p></td>
@@ -186,7 +186,7 @@ changed(opened/closed)</p></td>
 <p><code>onMapDrop</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/mapdropevent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
 MapDropEvent</a></p>
 <p>Notifies that some component is dragged and dropped on the gmaps or
 gmarker component with latitude and longitude information.</p></td>
@@ -197,7 +197,7 @@ gmarker component with latitude and longitude information.</p></td>
 <p><code>onMapDoubleClick</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/mapmouseevent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/mapmouseevent" title="wikilink">
 MapMouseEvent</a></p>
 <p>Notifies that some mouse action has been applied on the gmaps or
 gmarker component with latitude and longitude information.</p></td>
@@ -207,7 +207,7 @@ gmarker component with latitude and longitude information.</p></td>
 <p><code>onMapMove</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/mapmoveevent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink">
 MapMoveEvent</a></p>
 <p>Notifies that the view center (latitude, longitude) of the gmaps has
 been moved.</p></td>
@@ -217,7 +217,7 @@ been moved.</p></td>
 <p><code>onMapTypeChange</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/maptypechangeevent"
+href="{{site.baseurl}}/zk_component_ref/maptypechangeevent"
 title="wikilink"> MapTypeChangeEvent</a></p>
 <p>Notifies that the map type of the gmaps has been changed.</p></td>
 </tr>
@@ -226,7 +226,7 @@ title="wikilink"> MapTypeChangeEvent</a></p>
 <p><code>onMapZoom</code></p>
 </center></td>
 <td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/events/mapzoomevent" title="wikilink">
+href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink">
 MapZoomEvent</a></p>
 <p>Notifies that the zoom level of the gmaps has been changed.</p></td>
 </tr>

@@ -44,11 +44,11 @@ The `forEach` attribute also has the same issue.
 ```
 -   Line 3: It is a wrong usage; it doesn't create multiple checkboxes.
 -   Line 5: The checkboxes are created at the beginning when a user visits the page and won't change even if we change `vm.personLIst`.
--   Line 7: [ Children binding](../data_binding/children_binding.html) is used when you want to dynamically create and destroy components.
+-   Line 7: [ Children binding](../data_binding/children_binding) is used when you want to dynamically create and destroy components.
 
 Binding values to client attribute
 =====================================
-ZK component may receive client attributes using the xml namespace "[client/attribute](zuml_ref/client_attribute)".
+ZK component may receive client attributes using the xml namespace "[client/attribute](/zuml_ref/client_attribute)".
 Client-attributes are added to the rendering information of components, and must be follow the same rules as the special attributes.
 
 The client attribute must be initialized using the `${value}` syntax, and doesn't support `@init`, `@load` or `@bind`.

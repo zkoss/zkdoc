@@ -6,11 +6,11 @@ archetype will include required ZK and spring dependencies and ZK maven
 evaluation repository.
 
 If you use maven in a command line console, you need to specify ZK
-archetype catalog URL to generate your project. Please refer to [ Create a Maven Project with a Command Line Interface]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
+archetype catalog URL to generate your project. Please refer to [ Create a Maven Project with a Command Line Interface]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven#Create_a_Maven_Project_with_a_Command_Line_Interface).
 
 If you use eclipse, you can add the catalog URL via Window / Preferences
 / Maven / Archetypes, please refer to [ZK Installation Guide/Quick Start/Create and Run Your First ZK Application with Eclipse and Maven#Add ZK Maven
-Archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)
+Archetype]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype)
 
 # Adding ZK Spring Dependencies
 

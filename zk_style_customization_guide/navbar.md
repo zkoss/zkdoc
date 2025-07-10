@@ -1,8 +1,8 @@
 # Component Reference
 
-Component Reference: [ Nav]({{site.baseurl}}/zk_component_ref/nav), [ Navbar]({{site.baseurl}}/zk_component_ref/nav/navbar),
-[ Navitem]({{site.baseurl}}/zk_component_ref/nav/navitem),
-[ Navseparator]({{site.baseurl}}/zk_component_ref/nav/navseparator)
+Component Reference: [ Nav]({{site.baseurl}}/zk_component_ref/nav), [ Navbar]({{site.baseurl}}/zk_component_ref/navbar),
+[ Navitem]({{site.baseurl}}/zk_component_ref/navitem),
+[ Navseparator]({{site.baseurl}}/zk_component_ref/navseparator)
 
 # DOM Structure
 
@@ -73,7 +73,7 @@ orient have different styles.
 ## LESS Variables
 
 The following LESS variables are used for Navbar, Nav, Navitem and
-Navseparator components. Check other variables from [ here](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_variables).
+Navseparator components. Check other variables from [ here](/zk_style_customization_guide/zk_less_variables).
 
 | Variables                   | Default Value                                   |
 |-----------------------------|-------------------------------------------------|
@@ -100,7 +100,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Setup environment and Analyze design
 
-- Check [ this instruction](zk_style_customization_guide/look_and_feel_customization/customize_component)
+- Check [ this instruction](/zk_style_customization_guide/customize_component)
   to setup component customization environment.
 - Analyze the design
   - Used Color
@@ -139,7 +139,7 @@ border, gradient background, rounded corner or shadow effects.
 
 ### Modify nav.less file to achieve target design
 
-`Refer`[` here`](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/zk_less_functions)` for built-in zk less functions.`
+`Refer`[` here`](/zk_style_customization_guide/zk_less_functions)` for built-in zk less functions.`
 
 - Change color by overriding zk less variables.
 

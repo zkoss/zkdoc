@@ -134,7 +134,7 @@ The last part is to define a template, so that `<listbox>` can know how to rende
     </template>
 </listbox>
 ```
-- Line 2: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](zk_dev_ref/mvc/view/template/listbox_template).
+- Line 2: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](/zk_dev_ref/mvc/view/template/listbox_template).
 -   Line 3: The `${each}` is an implicit variable that you can use
     without declaration inside `<template>`, and it represents one object of the data model for each iteration when rendering. We use
     this variable with dot notation at component attributes to reference a data object's property . In our example, we just set it at `<listitem>`'s label.

@@ -91,15 +91,15 @@ and a following right brace (**{**).
 The segmented key could be accessed in two ways.
 
 First, with an implicit object called
-[labels](zuml_ref/labels):
+[labels](/zuml_ref/labels):
 
 ```xml
 <textbox value="${labels.order.fruit.name}"/>
 ```
 
 Second, with an EL function called
-[l](zuml_ref/or
-[l2](zuml_ref/l2):
+[l](/zuml_ref/or
+[l2](/zuml_ref/l2):
 
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
@@ -143,11 +143,11 @@ group2.second=come after ${group1.first}
 ```
 
 In addition to referencing another property, you could reference any
-implicit object specified in [ZUML Reference: Implicit Objects](zuml_ref/implicit_objects) if
+implicit object specified in [ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects) if
 it is part of an HTTP request (excluding component/page).
 
 For example,
-[param](zuml_ref/param)
+[param](/zuml_ref/param)
 references to a request's parameter:
 
 ```properties

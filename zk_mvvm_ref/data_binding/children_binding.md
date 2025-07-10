@@ -67,4 +67,4 @@ Default Converter for Children Binding
 
 > Since 6.0.1
 
-Users usually bind attribute “children” to a `Collection` object, but you can also bind it to a ` Array `, ` Enum `, even an ` Object `. An implicit default converter will convert them to a ` Collection ` object. Certainly, you can apply your customized converter and we will talk about it at [Data Binding/Converter](./converter.html)
+Users usually bind attribute “children” to a `Collection` object, but you can also bind it to a ` Array `, ` Enum `, even an ` Object `. An implicit default converter will convert them to a ` Collection ` object. Certainly, you can apply your customized converter and we will talk about it at [Data Binding/Converter](./converter)

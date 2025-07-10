@@ -74,7 +74,7 @@ You will need to download them from their download pages, or, include
 the dependency in your maven POM file.
 
 If you wish to use a specific feature, reference the document page of
-that feature, or [ the content (jar) of binary distributions]({{site.baseurl}}/zk_installation_guide/zk_background/the_content_of_zk_binary_distribution)
+that feature, or [ the content (jar) of binary distributions]({{site.baseurl}}/zk_installation_guide/the_content_of_zk_binary_distribution)
 to see if it is already in the core package, or if you need to specify a
 different jar file or dependency.
 

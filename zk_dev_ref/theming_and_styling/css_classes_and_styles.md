@@ -80,7 +80,7 @@ component's mold has.
 Rule of thumb: specify zclass if you want to customize the look
 completely. Otherwise, use sclass to customize one or a few CSS styles.
 
-For more information, please refer to [ZK Style Guide]({{site.baseurl}}/zk_style_customization_guide/zk_class_concept/zclass).
+For more information, please refer to [ZK Style Guide]({{site.baseurl}}/zk_style_customization_guide/zclass).
 
 # content style and sclass
 

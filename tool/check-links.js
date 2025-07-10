@@ -290,27 +290,26 @@ function resolveRelativeUrl(relativeUrl, currentFilePath) {
     // Get the directory containing the current markdown file
     const currentDir = path.dirname(currentFilePath);
     
-    // Get the relative path from the project root
+    // Get the relative path from the project root to the current file's directory
     const relativeDirFromRoot = path.relative(process.cwd(), currentDir);
     
     // Resolve the relative URL
     let resolvedPath;
     if (relativeUrl.startsWith('../')) {
-        // Handle "../" paths - go up one level
-        resolvedPath = path.resolve(currentDir, relativeUrl);
+        // Handle "../" paths - go up one level from current file's directory
+        const parentDir = path.dirname(relativeDirFromRoot);
+        const remainingPath = relativeUrl.substring(3); // Remove "../"
+        resolvedPath = path.join(parentDir, remainingPath).replace(/\\/g, '/');
     } else if (!relativeUrl.startsWith('/') && !relativeUrl.startsWith('http')) {
-        // Handle relative paths in same directory
-        resolvedPath = path.resolve(currentDir, relativeUrl);
+        // Handle relative paths in same directory as current file
+        resolvedPath = path.join(relativeDirFromRoot, relativeUrl).replace(/\\/g, '/');
     } else {
         // Already absolute or external URL
         return relativeUrl;
     }
     
-    // Convert back to URL format (with forward slashes)
-    const urlPath = path.relative(process.cwd(), resolvedPath).replace(/\\/g, '/');
-    
     // Return as absolute URL starting with /
-    return '/' + urlPath;
+    return '/' + resolvedPath;
 }
 
 // Function to check if an internal URL exists in the valid URLs
@@ -319,7 +318,7 @@ function checkInternalUrl(url, validUrls, currentFilePath = null) {
     let urlWithoutAnchor = url.split('#')[0];
     
     // Remove {{site.baseurl}} if present since navigation.yml doesn't have this variable
-    urlWithoutAnchor = urlWithoutAnchor.replace(/{{site\.baseurl}}\/?/, '');
+    urlWithoutAnchor = urlWithoutAnchor.replace(/{{site\.baseurl}}?/, '');
     
     // Handle relative URLs if currentFilePath is provided
     let normalizedUrl;
@@ -465,7 +464,6 @@ function generateReport(brokenLinks) {
             reportLines.push('-'.repeat(25));
             internalBroken.forEach(link => {
                 reportLines.push(`URL: ${link.url}`);
-                reportLines.push(`Status: ${link.status}`);
                 if (link.file) reportLines.push(`Found in: ${link.file}`);
                 reportLines.push('');
             });

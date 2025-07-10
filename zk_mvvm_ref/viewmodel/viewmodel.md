@@ -15,7 +15,7 @@ During the execution of command, it usually changes the data of ViewModel. The d
 
 ![MVVM Event Command Reload]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-event-command-reload.png)
 
-the UI sometimes has to display data in a different format from original one in the Model. The converting logic shall be implemented in ViewModel or developers can adopt a more reusable element **converter** that we will talk about in a [later section](../data_binding/converter.html).
+the UI sometimes has to display data in a different format from original one in the Model. The converting logic shall be implemented in ViewModel or developers can adopt a more reusable element **converter** that we will talk about in a [later section](../data_binding/converter).
 
 Validation will also be performed before saving data into ViewModel. If validation fails, the data will not be saved to ViewModel.
 
@@ -44,7 +44,7 @@ public class MyViewModel {
 }
 ```
 
-* We'll describe above annotation in detail at [ViewModel/Notification](./notification.html)
+* We'll describe above annotation in detail at [ViewModel/Notification](./notification)
 
 # Reference a ViewModel in a ZUL
 We can bind ZK UI component to a ViewModel by setting its **viewModel** attribute, and that component becomes the **Root View Component** for the ViewModel. All child components of this Root View Component can access the same ViewModel and its properties. To bind a ViewModel, we have to apply a composer called **org.zkoss.bind.BindComposer**, it will create a binder for the ViewModel and instantiate the ViewModel's class. Using ZK Bind annotations then we set **viewModel** attribute with the ViewModel's id in `@id` and the ViewModel's full-qualified class name in `@init` . The id is used to reference ViewModel's properties, e.g. vm.name, whilst the full-qualified class name is used to instantiate the ViewModel object itself. We'll explain ZK Bind annotation syntax in detail at subsections of [Data Binding](../data_binding/).

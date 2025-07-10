@@ -11,7 +11,7 @@ The example code mentioned here only works for Spring Security 4/5.
 
 # ZK Spring Boot Starter
 
-Spring encourages users to start with Spring Boot. So Please include [ zk spring boot starter]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_spring_boot),
+Spring encourages users to start with Spring Boot. So Please include [ zk spring boot starter]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_spring_boot),
 and it will automatically configure for you with most commonly-used
 settings.
 
@@ -105,7 +105,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 ```
 
 - Line 7: We need to disable spring CSRF to make ZK AU pass security
-  filter. But don't worry. [ ZK already has its own CSRF mechanism](zk_dev_ref/security_tips/cross_site_request_forgery).
+  filter. But don't worry. [ ZK already has its own CSRF mechanism](/zk_dev_ref/security_tips/cross_site_request_forgery).
 - Line 13: This line blocks the public access to [ ZK class path web resource folder]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path).
 - Line 18-19: Assume we want all pages under `/secure` are protected and
   require an authentication.

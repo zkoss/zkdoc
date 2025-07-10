@@ -32,7 +32,7 @@ process.
 
 The `extension` parameter (`init-param`) defines the language of the
 dynamical output. By default, it is `html`, since most legacy servlets
-generate an HTML document. If the output is [a ZUL document](zuml_ref/zul), you could
+generate an HTML document. If the output is [a ZUL document](/zuml_ref/zul), you could
 specify `zul` as the extension.
 
 Notice that, if you want to filter the output from include and/or
@@ -54,7 +54,7 @@ example,
 # Performance Consideration for Filtering XHTML
 
 If the extension is html (and the output is XHTML), it means each HTML
-tag will be converted to [an XHTML component](zuml_ref/xhtml). It is
+tag will be converted to [an XHTML component](/zuml_ref/xhtml). It is
 convenient if you want to manipulate them dynamically. However, it costs
 more memory since ZK has to maintain the states of each HTML tag. Thus,
 it is suggested to use [the native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace)

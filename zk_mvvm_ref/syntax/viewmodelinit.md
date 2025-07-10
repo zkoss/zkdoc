@@ -69,7 +69,7 @@ E is the last child class.
 	4. call D's `@Init` method `initD()`
 	5. call E's `@Init` method `initE()`
 
-We can also use parameter related annotations on initial method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters.html).
+We can also use parameter related annotations on initial method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters).
 
 [1]: If you override parent class's initial method and set `superclass=true`, due to Java's limitation, child's method will be called twice. To avoid this, you should **remove** `superclass=true` in child class and use `super` to invoke parent's implementation.
 ```java

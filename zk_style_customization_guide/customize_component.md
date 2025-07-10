@@ -1,4 +1,4 @@
-We have introduced how to execute [ partial customization with sclass](zk_style_customization_guide/look_and_feel_customization/partical_customize_with_sclass_and_zclass)
+We have introduced how to execute [ partial customization with sclass](/zk_style_customization_guide/partical_customize_with_sclass_and_zclass)
 for specific components. Now we will introduce how to customize
 component style by LESS and make it the default style inside a project.
 Subsections are detailed samples on how you can customize components.
@@ -14,7 +14,7 @@ the developer tool.
 # Prepare ZKLess Servlet and ZKLess Dependencies
 
 - Before start customizing your own component styles, first, follow the
-  instruction, [compile LESS to DSP during development phase]({{site.baseurl}}/zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/compile_less#Compile_LESS_to_DSP_during_Development_phase)
+  instruction, [compile LESS to DSP during development phase]({{site.baseurl}}/zk_style_customization_guide/compile_less#Compile_LESS_to_DSP_during_Development_phase)
   to have your ZKLess Servlet ready.
 
 <!-- -->
@@ -34,7 +34,7 @@ the developer tool.
 Here we will use **Window** component as an example to demonstrate how
 to customize a component.
 
-- 1\. Link to [ Window Component](zk_style_customization_guide/look_and_feel_customization/customize_component/window)
+- 1\. Link to [ Window Component](/zk_style_customization_guide/window)
   page or use browser's developer tool to check the DOM structure.
 - 2\. Create **window.less** file under **less** folder in ZK web
   project.
@@ -65,7 +65,7 @@ re-defining LESS variables as follows:
 
 </div>
 
-:\* Follow this [ instruction](zk_style_customization_guide/integrate_with_less/how_zk_works_with_less/compile_less#Compile_LESS_to_DSP_during_Development_phase)
+:\* Follow this [ instruction](/zk_style_customization_guide/compile_less#Compile_LESS_to_DSP_during_Development_phase)
 to add ZKLessServlet to web.xml to compile less at runtime.
 
 :\* Use **window.less** in **window.zul** page as follows to check the

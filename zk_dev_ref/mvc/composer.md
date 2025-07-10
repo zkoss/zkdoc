@@ -101,7 +101,7 @@ component, so that the composer can control the associated components
 and its child components.
 
 Associating a composer to a component is straightforward: just specify
-the class to [the apply attribute](zuml_ref/apply) of the XML
+the class to [the apply attribute](/zuml_ref/apply) of the XML
 element you want to control. For example,
 
 ```xml

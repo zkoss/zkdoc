@@ -7,7 +7,7 @@ which is described in the section [ZK Developer's Reference/UIComposing/ZUML/EL 
 
 Basic Format
 ------------
-[ All ZK bind annotation](../syntax/data_binding.html) has the general format:
+[ All ZK bind annotation](../syntax/data_binding) has the general format:
 ```xml
 @[Annotation](value=[el-expression], [arbitrarykey]=[el-expression])
 ```
@@ -152,5 +152,5 @@ A static field or static method of a Java class can be referenced with the synta
 ```xml
 <label value="@load((Math.sqrt(16)))" />
 ```
-You need to import required pakcage/class by [import directive](zuml_ref/import).
+You need to import required pakcage/class by [import directive](/zuml_ref/import).
 Note that `java.lang.*` is imported by default. 

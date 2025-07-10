@@ -5,7 +5,7 @@
 Although Gradle doesn't provide a counterpart like Maven archetype, you
 still can initialize your build script based on it. The steps are:
 
-1\. [Create your pom.xml with Maven archetype]({{site.baseurl}}/zk_installation_guide/quick_start/create_and_run_your_first_zk_application_with_maven_archetype)
+1\. [Create your pom.xml with Maven archetype]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_maven_archetype)
 
 2\. Run `gradle init` in the same folder as pom.xml You will see the
 message:

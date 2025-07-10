@@ -9,7 +9,7 @@ available demos.
 
 We assume you already include zk dependencies, if not, please include
 zk. See
-[maven setup]({{site_baseurl}}/zk_installation_guide/maven_setup).
+[maven setup]({{site.baseurl}}/zk_installation_guide/maven_setup).
 
 **1. Download/unzip a standard [Spring Initializr](https://start.spring.io/) project**
 

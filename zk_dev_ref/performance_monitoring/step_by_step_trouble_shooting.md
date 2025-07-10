@@ -606,7 +606,7 @@ can help.
 
 
 - check
-  [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips)
+  [Performance Tips]({{site.baseurl}}/zk_installation_guide/zk_dev_ref/performance_tips/performance_tips)
 
 ## Network Issue
 

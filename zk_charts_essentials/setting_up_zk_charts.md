@@ -27,7 +27,7 @@ easily by simply adding a dependency like the following [^1]:
         <version>11.4.7.0-Eval</version>  //this is just an example. Please use the latest version  
     </dependency>
 ```
-If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/setting_up_ide/maven/use_zk_maven_artifacts/resolving_zk_framework_artifacts_via_maven#How_to_Use_ZK_Maven_Repository) as well.
+If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) as well.
 
 ### Evaluating users (60-days free evaluation)
 

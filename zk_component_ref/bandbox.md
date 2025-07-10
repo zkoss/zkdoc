@@ -202,7 +202,7 @@ Notes:
 
 {% include version-badge.html version=8.6.2 %} Specify the sclass name of the
 Bandbox button icon. For built-in icon, please see
-[LabeliImageElement]({{site_baseurl}}/zk_component_ref/base_components/labelimageelement).
+[LabeliImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement).
 
 # Inherited Functions
 

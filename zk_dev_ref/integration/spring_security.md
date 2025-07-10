@@ -581,7 +581,7 @@ for an unauthenticated user (not log in yet), we can even do more:
 redirect the anonymous user to the login page. We will show how to
 achieve this in ZK:
 
-First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](zk_dev_ref/ui_patterns/error_handling),
+First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](/zk_dev_ref/ui_patterns/error_handling),
 configure <error-page> in `zk.xml`.
 
 **zk.xml**

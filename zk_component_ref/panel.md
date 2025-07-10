@@ -283,7 +283,7 @@ The</p>
 
 # Supported Children
 
-- [ Panelchildren]({{site.baseurl}}/zk_component_ref/panel/panel_children)
+- [ Panelchildren]({{site.baseurl}}/zk_component_ref/panel_children)
 
 # Use Cases
 

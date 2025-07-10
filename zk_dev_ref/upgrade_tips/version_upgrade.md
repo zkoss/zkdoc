@@ -71,7 +71,7 @@ title="wikilink"> Release Smalltalk</a></p></td>
 CSS3 and LESS, and the DOM structure of components changes a lot. To
 upgrade a custom theme for an older version, you will need to redo the
 style customization based on the new theme. Please refer to <a
-href="ZK_Style_Customization_Guide/Upgrade_Customized_Style_From_other_ZK_Version/Upgrade_From_ZK_6.5"
+href="/zk_style_customization_guide/Upgrade_From_ZK_6.5"
 title="wikilink"> Upgrade From ZK 6.5</a>.<br />
 2. Drop IE6 &amp; IE7 support.<br />
 3. Deprecate several legacy packages and methods relating to session and
@@ -203,7 +203,7 @@ To estimate the upgrading effort, we suggest a checklist:
 1.  Check Custom Components
       
     check if there is any
-    [{{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon]({{site_baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon)
+    [{{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon)
     that might declare custom components. Since you might need to review
     it after the upgrade.
 2.  Check configuration description (zk.xml)

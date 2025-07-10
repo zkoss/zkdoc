@@ -74,7 +74,7 @@ these attributes. For example:
   can use JSP or whatever servlet you prefer.
 - From java code the request attributes are accessible via
   [org.zkoss.zk.ui.Execution#getAttribute(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html#getAttribute(java.lang.String))
-  or from the [requestScope (implicit object)](zuml_ref/requestscope).
+  or from the [requestScope (implicit object)](/zuml_ref/requestscope).
 
 ```java
 
