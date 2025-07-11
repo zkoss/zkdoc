@@ -68,7 +68,7 @@ specified or not.
 ```
 
 It is a special case that
-[paging]({{site.baseurl}}/zk_component_ref/supplementary/paging) and
+[paging]({{site.baseurl}}/zk_component_ref/paging) and
 `stubonly` cannot be applied at the same time. For example,
 
 ```xml

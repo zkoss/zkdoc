@@ -32,14 +32,14 @@ alert('xss')
 
 ## Attributes to Generate Texts
 
-[ Label](/zk_component_ref/essential_components/label)
+[ Label](/zk_component_ref/label)
 component's `value` and those attributes that generate texts into a page
 including `label, title, tooltiptext, placeholder, name, type`, and
 message like `createMessage, emptyMessage`. (ZK encodes them with
 `zUtl.encodeXML()` at client-side.)
 
 Since ZK implicitly turns an EL expression like `${myMessage}` on a zul
-into a [ Label](/zk_component_ref/essential_components/label),
+into a [ Label](/zk_component_ref/label),
 so it's encoded, too.
 
 # What ZK Doesn't Encode

@@ -132,7 +132,7 @@ anything described above).
 
 ### Server-side memory optimization: turn off browser cache
 
-As described in [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#Browser_Cache),
+As described in [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/jsp#Browser_Cache),
 the memory footprint at the server can be improved by turning off the
 browser cache for the HTML page that will load ZUL pages later. For
 example, we could add `no-cache` and `expires` as follows (line 4 and
@@ -264,9 +264,9 @@ please refer to [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_
     framework and allows developers to assemble UI at both server and
     client.
 
-[^2]: For more information, please refer to [ZK Component Reference](zk_component_reference).
+[^2]: For more information, please refer to [ZK Component Reference](/zk_component_ref/introduction)).
 
-[^3]: You might take a look at [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
+[^3]: You might take a look at [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/jsp)
     for more information.
 
 [^4]: In short, component's UUID must be unquie in the same session. It

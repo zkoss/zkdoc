@@ -83,7 +83,7 @@ public class TestRichlet extends GenericRichlet {
 ```
 
 In Richlet, you have to compose UI on your own, but some components only
-support specific child components. We recommend you to read [ZK Component Reference](zk_component_reference) before you start
+support specific child components. We recommend you to read [ZK Component Reference](/zk_component_ref/introduction)) before you start
 to build.
 
 As shown above (line 27), we have to invoke

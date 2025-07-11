@@ -163,7 +163,7 @@ input components inside HTML FORM. For example,
 
 Notice we have to specify the name property such that its value will be
 sent with the given name. For more information of using HTML FORM,
-please refer to [ZK Developer's Reference/integration/Use ZK in JSP#HTML_Form:ZK Developer's Reference: HTML Form]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
+please refer to [ZK Developer's Reference/integration/Use ZK in JSP#HTML_Form:ZK Developer's Reference: HTML Form]({{site.baseurl}}/zk_dev_ref/integration/jsp#HTML_Form:ZK_Developer's_Reference:_HTML_Form).
 
 ## Side Effect: Chrome and Safari
 

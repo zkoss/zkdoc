@@ -104,7 +104,7 @@ above, if C calls `getSpaceOwner` it will get C itself, if C calls
 
 # Composer and Fellow Auto-wiring
 
-With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc), you generally
+With [ZK Developer's Reference/MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc), you generally
 don't need to look up fellows manually. Rather, they could be *wired*
 automatically by using the
 [auto-wiring]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables)

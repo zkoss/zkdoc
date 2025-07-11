@@ -19,7 +19,7 @@ as same as those in ZK. Thus, knowing how to use ZK will greatly help
 you to speed up using ZK JSP Tags in web application development. Here
 list some guides about how to use ZK:
 
-- [ZK Installation Guide](zk_installation_guide/before_you_start)
+- [ZK Installation Guide](/zk_installation_guide/before_you_start)
 
 <!-- -->
 
@@ -27,7 +27,7 @@ list some guides about how to use ZK:
 
 **Note:** ZK JSP Tags is one of solutions to use ZK within JSP. It
 provides a set of JSP tags that allow developers to specify ZK
-components in JSP tags. It is recommended to read the [ZK Developer's Reference: Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/use_zk_in_jsp)
+components in JSP tags. It is recommended to read the [ZK Developer's Reference: Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/jsp)
 section before you start.
 
 # What to Download

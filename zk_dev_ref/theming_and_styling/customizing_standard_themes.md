@@ -177,4 +177,4 @@ Then, specify it in `WEB-INF/zk.xml` as follows.
  </desktop-config>
 ```
 
-For more information, please refer to the [ZK Style Guide](zk_style_guide).
+For more information, please refer to the [ZK Style Guide](/zk_style_customization_guide/introduction).

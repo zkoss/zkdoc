@@ -1,7 +1,7 @@
 Welcome to ZK, the easiest way to build modern Java web applications.
 
 ZK Style Customization Guide describes the styling concept and design of
-ZK components. For installation, please refer to [ZK Installation Guide](zk_installation_guide/before_you_start), for concepts, please refer to
+ZK components. For installation, please refer to [ZK Installation Guide](/zk_installation_guide/before_you_start), for concepts, please refer to
 [ZK Essentials](http://books.zkoss.org/zkessentials-book/master/). For a
 full description of component properties and methods please visit [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref).
 

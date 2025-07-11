@@ -79,7 +79,7 @@ Thus, an EL variable can access:
 - Components by [using its ID]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
 - Variables defined in
   [zscript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
-- [Implicit objects](/zuml_ref/implicit_objects)
+- [Implicit objects](/zuml_ref/implicit_objects_(predefined_variables))
 - Scoped attributes
 
 ```xml

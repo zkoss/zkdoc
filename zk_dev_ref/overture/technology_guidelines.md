@@ -6,14 +6,14 @@ If you are new to ZK and prefer to have some prior knowledge of ZK
 first, you could skip this section and come back later when you
 understand more about ZK.
 
-# [MVC]({{site.baseurl}}/zk_dev_ref/mvc) vs. [MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm) vs. [ZScript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
+# [MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc) vs. [MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm) vs. [ZScript]({{site.baseurl}}/zk_dev_ref/ui_composing/scripts_in_zuml)
 
 They serve different purposes and could work together. However, some
 developers get confused about these technologies.
 
 ## When to use MVC and/or MVVM
 
-[MVC]({{site.baseurl}}/zk_dev_ref/mvc) (Model-View-Control;
+[MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc) (Model-View-Control;
 aka., Model-View-Presenter) and
 [MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm) (Model-View-ViewModel;
 aka., Presentation Model) are both design patterns that isolate the
@@ -102,14 +102,14 @@ especially during the UI design phase.
 
 - [ZK Developer's Reference: Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index)
 
-# [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) vs. [JSP](/zk_jsp_tags_essentials/before_you_start)
+# [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) vs. [JSP](/zk_jsp_tags_essentials/before_you_start/before_you_start)
 
 ## When to use ZUML
 
 [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) is an
 XML-based approach to declare UI. It does not require any programming
 knowledge and it works well with
-[MVC]({{site.baseurl}}/zk_dev_ref/mvc), [Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) and
+[MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc), [Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) and
 others. ZUML is strongly suggested for usage unless you have different
 preferences (such as pure Java and JSP).
 
@@ -364,7 +364,7 @@ JSF is a page-based framework. Because it is too complicated to use, we
 strongly recommend you to deploy ZK. ZK can do whatever JSF can do or
 even better. However, if you have to use ZK with legacy JSF, please
 refer to the [Embed ZK Component in Foreign Framework]({{site.baseurl}}/zk_dev_ref/integration/embed_zk_component_in_foreign_framework)
-section[^5].
+section.
 
 > ------------------------------------------------------------------------
 >
@@ -383,6 +383,3 @@ section[^5].
     define a composite component with Java annotations. Please refer to
     [Small Talks: Define Composite Component using Java Annotation in ZK6](https://www.zkoss.org/wiki/Small_Talks/2011/December/Define_Composite_Component_using_Java_Annotation_in_ZK6)
     for the details.
-
-[^5]: Notice that [ZK JSF Components](zk_jsf_docs) is no
-    longer supported.

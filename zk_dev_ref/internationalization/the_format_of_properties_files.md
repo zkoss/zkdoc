@@ -98,7 +98,7 @@ First, with an implicit object called
 ```
 
 Second, with an EL function called
-[l](/zuml_ref/or
+[l](/zuml_ref/or)
 [l2](/zuml_ref/l2):
 
 ```xml
@@ -143,7 +143,7 @@ group2.second=come after ${group1.first}
 ```
 
 In addition to referencing another property, you could reference any
-implicit object specified in [ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects) if
+implicit object specified in [ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects_(predefined_variables)) if
 it is part of an HTTP request (excluding component/page).
 
 For example,

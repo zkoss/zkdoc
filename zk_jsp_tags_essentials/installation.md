@@ -2,7 +2,7 @@
 
 # Install ZK First
 
-Please follow [ ZK Installation Guide](zk_installation_guide/before_you_start)
+Please follow [ ZK Installation Guide](/zk_installation_guide/before_you_start)
 to install the ZK environment first.
 
 # Install ZK JSP Tags

@@ -31,7 +31,7 @@ If URI (`a_uri`) is specified, the ZUML document of the given URI will
 be loaded and rendered as children of the associated component. Notice
 that you could specify at most one URI in a fulfill attribute.
 
-For more information, please refer to [ZK Developer's Reference: On-demand Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/on_demand_evaluation).
+For more information, please refer to [ZK Developer's Reference: On-demand Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/on-demand_evaluation).
 
 # The onFulfill Event
 

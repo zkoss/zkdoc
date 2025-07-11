@@ -3,7 +3,7 @@
 There are two ways to pack the customization code: part of the Web
 application, or an independent JAR file. Packing as part of the Web
 application is straightforward. All you have to do is to specify the
-customization in `WEB-INF/zk.xml` as described in [ZK Configuration Reference](zk_configuration_reference).
+customization in `WEB-INF/zk.xml` as described in [ZK Configuration Reference](/zk_config_ref/web_xml).
 
 In many cases, it is better to pack the customization code as an
 independent JAR file, such that it can be managed separately and reused
