@@ -47,7 +47,7 @@ component.)
  comp.getDesktop().getAttribute("some"); //is equivalent to previous line
 ```
 
-In `zscript` and EL expressions, you could use the [implicit objects](/zuml_ref/implicit_objects_(predefined_variables)):
+In `zscript` and EL expressions, you could use the [implicit objects](/zuml_ref/implicit_objects__predefinedvariables_):
 `componentScope`, `pageScope`, `desktopScope`,
 `sessionScope, requestScope` and `applicationScope`.
 

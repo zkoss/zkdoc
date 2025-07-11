@@ -94,6 +94,6 @@ When wiring variables, the predefined sequence to look for variable resolvers is
 
 1.  The variable resolver defined in the ZUML document.
 2.  The variable resolver annotated registered in the class with the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation.
-3.  If none of above is found, it looks for [the implicit objects]({{site.baseurl}}/zuml_ref/implicit_objects_(predefined_variables)), such as session and page.
+3.  If none of above is found, it looks for [the implicit objects]({{site.baseurl}}/zuml_ref/implicit_objects__predefinedvariables_), such as session and page.
 
 

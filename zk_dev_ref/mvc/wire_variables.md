@@ -232,7 +232,7 @@ Here is the sequence of wiring:
       with the
       [org.zkoss.zk.ui.select.annotation.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html)
       annotation.
-  3.  If none is found, it looks for [the implicit objects](/zuml_ref/implicit_objects_(predefined_variables)),
+  3.  If none is found, it looks for [the implicit objects](/zuml_ref/implicit_objects__predefinedvariables_),
       such as session and page.
 
 # Version History

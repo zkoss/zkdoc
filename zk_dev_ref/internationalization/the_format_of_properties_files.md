@@ -143,7 +143,7 @@ group2.second=come after ${group1.first}
 ```
 
 In addition to referencing another property, you could reference any
-implicit object specified in [ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects_(predefined_variables)) if
+implicit object specified in [ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects__predefinedvariables_) if
 it is part of an HTTP request (excluding component/page).
 
 For example,

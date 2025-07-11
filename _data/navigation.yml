@@ -2851,7 +2851,7 @@ zuml_ref:
   - title: Static Fields and Methods
     url: /zuml_ref/static_fields_and_methods
   - title: Implicit Objects (Predefined Variables)
-    url: /zuml_ref/implicitobjects(predefinedvariables)
+    url: /zuml_ref/implicit_objects__predefinedvariables_
     children:
       - title: applicationScope
         url: /zuml_ref/applicationscope

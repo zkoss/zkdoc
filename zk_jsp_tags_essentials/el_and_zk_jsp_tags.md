@@ -98,7 +98,7 @@ or application's attributes. Like this:
 
 As you can see, you can get those variables back to zscript area using
 requestScope, sessionScope, and applicationScope. To know more about how
-to use these implicit ZK keywords, please refer to [ ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects_(predefined_variables)).
+to use these implicit ZK keywords, please refer to [ ZUML Reference: Implicit Objects](/zuml_ref/implicit_objects__predefinedvariables_).
 
 Please be careful about using those implicit objects and their life
 cycles. For example, following example will show "null" instead of "This

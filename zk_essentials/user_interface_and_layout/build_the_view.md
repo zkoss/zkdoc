@@ -206,7 +206,7 @@ aligned to the center.
     *Hbox*, arranges child components vertically. We specify "center" at
     `align` to align those texts horizontally in the center.
 -   Line 3: You can use [ EL expressions](/zuml_ref/el_expressions) in the tag
-    element's body or an attribute. There are also many [ implicit objects](/zuml_ref/implicit_objects_(predefined_variables)),
+    element's body or an attribute. There are also many [ implicit objects](/zuml_ref/implicit_objects__predefinedvariables_),
     and `desktop` is one of them. Refer to
     `org.zkoss.zk.ui.Desktop`'s Javadoc to find out
     available properties.
