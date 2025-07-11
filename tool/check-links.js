@@ -13,6 +13,7 @@
  * • Supports relative URLs:
  *   - ../base_components/labelimageelement : up 1 level folder of the md file
  *   - headerelement : the same folder of the md file
+ * • Ignores ZK annotation syntax: @[Annotation]( [EL-expression]) and @[Annotation](key=[value], ...)
  * • Groups errors by book for easy navigation
  * • Generates detailed reports of broken links
  * • Returns appropriate exit codes for CI/CD integration
@@ -240,18 +241,67 @@ async function checkExternalUrl(url) {
     }
 }
 
+// Function to check if a link is ZK annotation syntax
+function isZkAnnotationSyntax(fullMatch, linkText, url) {
+    // Check if this is ZK annotation syntax with various patterns:
+    // 1. @[Annotation]( [EL-expression])
+    // 2. @[Annotation](value=[EL-expression], [arbitraryKey]=[EL-expression])
+    // 3. @[Annotation](attribute1=value1, attribute2=[EL-expression])
+    
+    // Must start with @ and have brackets around annotation name
+    if (!fullMatch.startsWith('@[') || !linkText) {
+        return false;
+    }
+    
+    // Pattern 1: Simple form @[Annotation]( [EL-expression])
+    const simplePattern = /@\[([^\]]+)\]\(\s*\[([^\]]*)\]\s*\)/;
+    if (simplePattern.test(fullMatch)) {
+        return true;
+    }
+    
+    // Pattern 2 & 3: Complex form with key=value pairs and EL expressions
+    // @[Annotation](key1=value1, key2=[EL-expression], ...)
+    const complexPattern = /@\[([^\]]+)\]\(\s*([^)]*(?:\[[^\]]*\][^)]*))*\s*\)/;
+    if (complexPattern.test(fullMatch)) {
+        // Further validate that the content contains EL expressions or attribute assignments
+        const content = url.trim();
+        
+        // Check for key=value patterns or [EL-expression] patterns
+        const hasKeyValuePairs = /\w+\s*=\s*[^,)]+/.test(content);
+        const hasELExpressions = /\[[^\]]*\]/.test(content);
+        const hasCommaDelimitedParams = content.includes(',');
+        
+        // It's a ZK annotation if it has attribute assignments, EL expressions, or comma-delimited parameters
+        return hasKeyValuePairs || hasELExpressions || hasCommaDelimitedParams;
+    }
+    
+    return false;
+}
+
 // Function to extract links from markdown content
 function extractLinksFromMarkdown(content) {
     const links = new Set();
     
-    // Match markdown link syntax [text](url)
-    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    // Match markdown link syntax [text](url) but exclude ZK annotation syntax
+    const markdownLinkRegex = /(@?\[([^\]]+)\]\(([^)]+)\))/g;
     let match;
     
     while ((match = markdownLinkRegex.exec(content)) !== null) {
-        const url = match[2].split(' ')[0]; // Remove title if present
-        if (!url.startsWith('#') && !shouldIgnoreUrl(url)) { // Ignore anchor links and ignored URLs
-            links.add(url);
+        const fullMatch = match[1];  // Full matched text including potential @
+        const linkText = match[2];   // Text inside brackets
+        const url = match[3];        // URL inside parentheses
+        
+        // Skip if this is ZK annotation syntax
+        if (isZkAnnotationSyntax(fullMatch, linkText, url)) {
+            continue;
+        }
+        
+        // Clean URL by removing title if present
+        const cleanUrl = url.split(' ')[0].trim();
+        
+        // Skip anchor links, ignored URLs, and malformed URLs
+        if (!cleanUrl.startsWith('#') && !shouldIgnoreUrl(cleanUrl) && cleanUrl.length > 0) {
+            links.add(cleanUrl);
         }
     }
     
