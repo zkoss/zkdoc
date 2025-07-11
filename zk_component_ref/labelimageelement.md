@@ -1,36 +1,24 @@
-
-
 # Label Image Element
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.impl.LabelImageElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
-- JavaScript API:
-  [zul.LabelImageWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)
+- Java API: [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
+- **JavaScript API**: [`zul.LabelImageWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)
 
-# Employment/Purpose
+## Employment/Purpose
+The Label Image Element is an HTML element that consists of a label and an image. It provides a way to display textual content alongside an image within the user interface.
 
-An HTML element with a label and an image.
+## Preload Image
+**Since**: 6.0.0
+The preload image feature, introduced in version 6.0.0, is applicable to all instances of LabelImageElement and Image components. By default, the preload function is disabled, and users need to explicitly enable it by setting the `org.zkoss.zul.image.preload` custom attribute to `true`.
 
-# Preload Image
-
-{% include version-badge.html version=6.0.0 %}
-
-The feature is applied to all of the LabelImageElement and Image
-components.
-
-By default the preload function is disabled, so users have to specify
-the *custom-attributes* and set it to true. For example,
-
+### Example 1:
 ```xml
 <button image="xxx.png">
   <custom-attributes org.zkoss.zul.image.preload="true"/>
 </button>
 ```
+In this example, the `org.zkoss.zul.image.preload` custom attribute is set to `true` for the button component, enabling image preloading.
 
-Or specify it just below the root component.
-
-For example,
-
+### Example 2:
 ```xml
 <window>
   <custom-attributes org.zkoss.zul.image.preload="true"/>
@@ -38,17 +26,13 @@ For example,
   <image src="xxx.png"/>
 </window>
 ```
+In this example, the `org.zkoss.zul.image.preload` custom attribute is set at the window level, which applies it to all child components, including the button and image components.
 
-As you can see, the *custom-attributes* will be checked recursively (see
-also
-[org.zkoss.zk.ui.ext.Scope#getAttribute(java.lang.String,boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html#getAttribute(java.lang.String,boolean))).
+In both examples, the `custom-attributes` will be recursively checked for the specified attribute based on the [`org.zkoss.zk.ui.ext.Scope`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html) documentation.
 
-{% include version-badge.html version=6.5.2 %}
+Version 6.5.2 introduced the ability to apply the feature through the `zk.xml` configuration file as a library property.
 
-The feature can also applied from zk.xml as a library property.
-
-For example,
-
+### Example 3:
 ```xml
 <!-- zk.xml -->
 <zk>
@@ -58,29 +42,13 @@ For example,
     </library-property>
 </zk>
 ```
+In this example, the `org.zkoss.zul.image.preload` property is set to `true` in the `zk.xml` file at the library level, enabling image preloading for all applicable components.
 
-# IconSclass
+## IconSclass
+The Label Image Element allows you to specify built-in icon CSS classes to style the displayed icons. For more information on available icon classes, refer to the [ZK Font Awesome documentation]({{site.baseurl}}/zk_dev_ref/integration/font_awesome).
 
-Allow you to specify built-in icon CSS classes, see
-[Font Awesome]({{site.baseurl}}/zk_dev_ref/integration/font_awesome)
+## Supported Children
+`*ALL`: Allows encoding any ZK component as its child.
 
-# Supported Events
-
-- Inherited Supported Events: [ LabelElement]({{site.baseurl}}/zk_component_ref/base_components/labelelement#Supported_Events)
-
-# Supported Children
-
-`*All`
-
-# Version History
-
-| Version | Date           | Content                                                                                                                                |
-|---------|----------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| 8.6.2   | May 2019       | [ZK-4243: The result of hflex="min" is not sufficient if the content has Font Awesome icons](https://tracker.zkoss.org/browse/ZK-4243) |
-| 7.0.0   | October 2012   | Add iconSclass attribute with FontAwesome supported.                                                                                   |
-| 6.0.0   | September 2011 | [ZK-314: A way to pre-load images since many UIs depend on the size of an image](http://tracker.zkoss.org/browse/ZK-314)               |
-| 10.0.0  | August 2023    | [ZK-5502: Allow users to customize tooltip on the icon](http://tracker.zkoss.org/browse/ZK-5502)                                       |
-| 10.0.0  | August 2023    | [ZK-5503: Allow users to set multiple icons and tooltips on the same LabelImageElement](http://tracker.zkoss.org/browse/ZK-5503)       |
-| 10.0.0  | September 2023 | [ZK-5119: Integrate Font Awesome 6 free icons](http://tracker.zkoss.org/browse/ZK-5119)                                                |
 
 

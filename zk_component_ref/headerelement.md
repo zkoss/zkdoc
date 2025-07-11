@@ -1,61 +1,17 @@
-
-
 # Header Element
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zul.impl.HeaderElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeaderElement.html)
-- JavaScript API: N/A
+- JavaScript API: [`zul.mesh.HeaderWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.HeaderWidget.html)
 
-# Employment/Purpose
+## Employment/Purpose
+The Header Element is a skeletal implementation for a header in ZK applications. It is used to create headers within components such as grids or tables to provide structure and organization to data.
 
-A skeletal implementation for a header
+## Supported Events
 
-# Example
+| Name                | Event Type                                 | Description                        |
+|---------------------|--------------------------------------------|------------------------------------|
+| `onColSize`         | **Event:** [ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) | Notifies the parent of a group of headers that the widths of two of its children are changed by the user.|
 
-N/A
+## Supported Children
 
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onColSize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) Notifies the parent
-of a group of headers that the widths of two of its children are changed
-by the user.</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
-
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+`*ALL`: Indicates that the HeaderElement can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends HeaderElement, providing flexibility and customization options for your designs.

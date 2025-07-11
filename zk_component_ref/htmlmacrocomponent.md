@@ -1,143 +1,77 @@
-
-
 # Html Macro Component
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html)
-- JavaScript API: N/A
 
-# Employment/Purpose
+## Employment/Purpose
 
-The base class for macro components.
+The Html Macro Component serves as the base class for macro components in ZK. By default, invoking the `afterCompose()` method of `org.zkoss.zk.ui.HtmlMacroComponent` supports auto forwarding events and wiring accessible variables to the component. This feature facilitates the development of reusable components with predefined behaviors, reducing the amount of manual coding required for event handling and variable access.
 
-{% include version-badge.html version=5.0.4 %} By default invoking
-[org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
-supports auto forward events and wire accessible variables to this
-component.
+## Example
 
-For example, (usemacro.zul)
+The Html Macro Component example demonstrates the creation of a reusable "Username" macro component containing a Button component that responds to the `onClick` event.
 
+1. **macro.zul**:
+```xml
+<grid id="mc_grid">
+	<rows>
+		<row id="r">
+			<button label="${empty arg.label ? 'Username': arg.label}" id="btn"/>
+		</row>
+	</rows>
+</grid>
+```
+
+2. **macro.zs**:
+```java
+import org.zkoss.zul.*;
+import org.zkoss.zk.ui.*;
+
+public class Username extends HtmlMacroComponent {
+	Button btn; // auto wire
+	
+	// auto forward
+	public void onClick$btn () {
+		System.out.println("Success... and btn variable is not null: " + (btn != null));
+	}
+}
+```
+
+3. **usemacro.zul**:
 ```xml
 <?init zscript="macro.zs"?>
 <?component name="username" macroURI="macro.zul" class="Username"?>
 <window id="wnd">
-    <username id="ua"/>
-    <username label="Account"/>
+	<username id="ua"/>
+	<username label="Account"/>
 </window>
 ```
 
-(macro.zs)
+The above code snippets showcase the definition of the "Username" macro component, its usage in a ZUL file, and the handling of the `onClick` event for the Button component within the macro.
 
-```java
-import org.zkoss.zk.ui.*;
-import org.zkoss.zul.*;
+## Configuration
 
-public class Username extends HtmlMacroComponent {
-    Button btn; // auto wire
-    
-    // auto forward
-    public void onClick$btn () {
-        System.out.println("success... and btn varible is not null : " + (btn != null));
-    }
-};
-```
+To customize the auto wiring mechanism for macro components, you can modify the Library Properties in the `WEB-INF/zk.xml` file.
 
-(macro.zul)
-
-```xml
-<grid id="mc_grid">
-    <rows>
-        <row id="r">
-            <button label="${empty arg.label ? 'Username': arg.label}" id="btn"/>
-        </row>
-    </rows>
-</grid>
-```
-
-If you want to turn off the auto wiring mechanism, please refer to the
-following steps:
-
-Turn off auto wire mechanism by specifying the Library Property
-"org.zkoss.zk.ui.macro.autowire.disabled" to "true" in WEB-INF/zk.xml.
-If you did not specify the Library Property, the default is false.
+### Turn off auto wire mechanism
+To disable auto-wiring, set the `org.zkoss.zk.ui.macro.autowire.disabled` property to `true`.
 
 ```xml
 <library-property>
-    <name>org.zkoss.zk.ui.macro.autowire.disabled</name>
-        <value>true</value>
+	<name>org.zkoss.zk.ui.macro.autowire.disabled</name>
+    <value>true</value>
 </library-property>
 ```
 
-or turn off auto forward events by specifying the Library Property
-"org.zkoss.zk.ui.macro.autoforward.disabled" to "true" in
-WEB-INF/zk.xml. If you did not specify the Library Property, the default
-is false.
+### Turn off auto forward events
+To disable auto forwarding of events, set the `org.zkoss.zk.ui.macro.autoforward.disabled` property to `true`.
 
 ```xml
 <library-property>
-    <name>org.zkoss.zk.ui.macro.autoforward.disabled</name>
-        <value>true</value>
+	<name>org.zkoss.zk.ui.macro.autoforward.disabled</name>
+    <value>true</value>
 </library-property>
 ```
 
-In the early version, if you want to apply the auto-wiring, you can
-invoke
-[org.zkoss.zk.ui.Components#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Components.html#wireVariables(org.zkoss.zk.ui.Component, java.lang.Object))
-in
-[org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose())
-as follows.
+## Supported Children
 
-```java
-public void afterCompose() {
-    super.afterCompose(); //create components
-
-    Components.wireVariables(this, this);
-    Components.addForward(this, this);
-}
-```
-
-# Example
-
-N/A
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-See also events inherited from [ HtmlBasedComponent's Supported Events]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_events).
-
-# Supported Children
-
-`*ALL`
-
-# Use cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-| Version | Date        | Content                                                                                                                                                                                                                                     |
-|---------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.3   | June 2010   | The corresponding DOM element is customizable. It defaults to SPAN (the same as prior version) but you can change it to any tag by use of [org.zkoss.zk.ui.HtmlMacroComponent#setEnclosingTag(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#setEnclosingTag(java.lang.String)). |
-| 5.0.4   | August 2010 | By default, invoking [org.zkoss.zk.ui.HtmlMacroComponent#afterCompose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#afterCompose()) supports auto forward events and wire accessible variables to this component.                                                            |
-
-
+`*ALL`: Indicates that the `HtmlMacroComponent` can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends `HtmlMacroComponent`, providing flexibility and customization options for your designs.

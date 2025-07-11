@@ -1,56 +1,10 @@
-
-
 # Format Input Element
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.impl.FormatInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FormatInputElement.html)
-- JavaScript API: N/A
+- Java API: [`org.zkoss.zul.impl.FormatInputElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FormatInputElement.html)
+- JavaScript API: [`zul.inp.FormatWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.FormatWidget.html)
 
-# Employment/Purpose
+## Employment/Purpose
+The primary purpose of `FormatInputElement` is to allow developers to create input elements with specific formats. By extending this class, developers can customize the format of the input box according to their requirements. This can be useful in scenarios where input data needs to adhere to a specific format, such as dates, currencies, or phone numbers.
 
-A skeletal implementation for an input box with format
-
-# Example
-
-N/A
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Supported_Events)
-
-# Supported Children
-
-`*NONE`
-
-# Use cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+## Supported Children
+`*NONE`: This component does not support any child components.

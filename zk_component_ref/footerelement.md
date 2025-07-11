@@ -1,52 +1,11 @@
-
-
 # Footer Element
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.impl.FooterElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)
-- JavaScript API:
-  [zul.mesh.FooterWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.FooterWidget.html)
+- Java API: [`org.zkoss.zul.impl.FooterElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)
+- JavaScript API: [`zul.mesh.FooterWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.FooterWidget.html)
+  
+## Employment/Purpose
 
+The ZK Footer Element, represented by the `FooterElement` class in the Java API and `FooterWidget` in the JavaScript API, serves as a skeletal implementation for a footer within a ZK application. Footers are commonly used to display copyright information, navigation links, or other relevant information at the bottom of a webpage or application interface. 
 
-# Employment/Purpose
-
-A skeletal implementation for a footer.
-
-# Example
-
-N/A
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
-
-# Supported Children
-
-`*All`
-
-# Version History
-
-| Version | Date       | Content             |
-|---------|------------|---------------------|
-| 5.0.4   | July, 2010 | new added component |
-
-
+## Supported Children
+`*ALL`: Indicates that the FooterElement can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends FooterElement, providing flexibility and customization options for your designs.
