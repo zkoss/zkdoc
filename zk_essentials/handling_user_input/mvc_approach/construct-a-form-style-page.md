@@ -100,7 +100,7 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
 ```
 - Line 3: [`hflex="min"`]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility) can limit the column's width just wider enough to hold each row's content without a line break.
 -   Line 8:
-[`<cell>`]({{site.baseurl}}/zk_component_ref/supplementary/cell) is
+[`<cell>`]({{site.baseurl}}/zk_component_ref/cell) is
     used inside `<row>`, `<hbox>`, or `<vbox>` to fully control a column's align, row/column span, and width in an individual row.
 
 

@@ -25,7 +25,7 @@ By following this pattern, ZK supports MVVM approach which controls components b
 
 Since the ViewModel contains no reference to UI components, you cannot
 control components directly by their setter and getter. Therefore, ZK supports a data binding mechanism, ZK Bind, to synchronize data and handle events and respond between the View and ViewModel. Additionally, this mechanism also has to bridge events from the View to the action provided by the ViewModel. In this binding system,
-the [**binder**]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm/databinding/binder) plays the key role to operate the whole mechanism. The binder is like a broker and responsible for communication between View and ViewModel.
+the [**binder**]({{site.baseurl}}/zk_mvvm_ref/databinding/binder) plays the key role to operate the whole mechanism. The binder is like a broker and responsible for communication between View and ViewModel.
 
 In brief, MVVM approach allows you to **control components with data binding** (not by API).
 
@@ -104,7 +104,7 @@ The last part is to define a template, so that `<grid>` can know how to render i
 	</rows>
 </grid>
 ```
-- Line 6: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](/zk_dev_ref/mvc/view/template/listbox_template).
+- Line 6: The `name` attribute has to be **model** which means it's  [a template for `<listbox>` model](/zk_dev_ref/mvc/listbox_template).
 
 #### implicit `each`
 The variable `each` is an implicit variable that you can use without declaration inside `<template>`, and it represents one object (`SidebarPage`) of the data model for each iteration when rendering. We use `each` with dot notation to reference a data object's property. In each `<row>`, we show an image icon by loading a URL and a label.
