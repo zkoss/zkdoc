@@ -98,7 +98,7 @@ First, with an implicit object called
 ```
 
 Second, with an EL function called
-[l](/zuml_ref/or)
+[l](/zuml_ref/l)
 [l2](/zuml_ref/l2):
 
 ```xml

@@ -181,4 +181,4 @@ For more details, refer to [Using Panel to Lay out Your Website](https://www.zko
 ## Supported Children
 - [`Caption`](caption): Indicates that the `Panel` can only have one child component of type `Caption`.
 - [`Panelchildren`](panelchildren): Indicates that the `Panel` can only have one child component of type `Panelchildren`.
-- [`Toolbar`](../essential_components/toolbar): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.
+- [`Toolbar`](toolbar): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.

@@ -128,7 +128,7 @@ column provides the auto-fitting feature.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/base_components/headerselement#Supported_Events)
+- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#Supported_Events)
 
 # Supported Children
 

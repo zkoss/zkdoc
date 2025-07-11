@@ -125,7 +125,7 @@ Keyword:
 - Line 1~2: Specifying the `id` attribute for some components allows you
   to control them by referencing their *id*.
 - Line 3: You can use built-in Font Awesome icon at `iconSclass`. Please
-  refer to [LabelImageElement#IconSclass](/{{site.baseurl}}/zk_component_ref/base_components/labelimageelement#IconSclass )
+  refer to [LabelImageElement#IconSclass](/{{site.baseurl}}/zk_component_ref/labelimageelement#IconSclass )
   for details.
 
 ## Car List Area

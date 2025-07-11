@@ -10,7 +10,7 @@ following actions:
 
 - Detect if the device is mobile, and of which category
 - Wire dedicated touch event listeners
-- Load and apply [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices)
+- Load and apply [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices/tablet_devices)
 
 ## Mobile detection
 
@@ -87,7 +87,7 @@ ZK component, which improves their usability on mobile devices. This
 includes replacing dropdowns by scrollers, replacing scrolls with
 swipes, etc.
 
-For the full list of changes, please refer to [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices).
+For the full list of changes, please refer to [Tablet UI improvements]({{site.baseurl}}/zk_component_ref/tablet_devices/tablet_devices).
 
 ### disabling Tablet UI Improvements
 

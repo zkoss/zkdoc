@@ -87,7 +87,7 @@ the treeitem of this treecol.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 
 # Supported Children
 

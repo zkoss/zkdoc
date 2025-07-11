@@ -87,7 +87,7 @@ child.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/base_components/layoutregion#Supported_Events)
+- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#Supported_Events)
 
 # How to Layout
 

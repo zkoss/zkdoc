@@ -6,7 +6,7 @@ Default: `false`
 `[Since 6.5.2]`
 
 It specifies the image will be preloaded or not for
-[LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
+[LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
 and
 [Image]({{site.baseurl}}/zk_component_ref/image)
 component.

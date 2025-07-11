@@ -91,7 +91,7 @@ first one takes precedence.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/base_components/abstractcomponent#Supported_Events)
+- Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#Supported_Events)
 
 # Supported Children
 

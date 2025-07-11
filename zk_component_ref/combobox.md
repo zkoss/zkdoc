@@ -351,7 +351,7 @@ of the combobox. Instead, you should use the `value` property of the
 ## Constraint
 
 Please see
-[{{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint).
+[{{site.baseurl}}/zk_component_ref/inputelement#Constraint]({{site.baseurl}}/zk_component_ref/inputelement#Constraint).
 
 ## PopupWidth
 

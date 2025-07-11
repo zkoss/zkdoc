@@ -152,7 +152,7 @@ Grid with 1000 lines) it will take its time. So compare the timing with
 a smaller response, and consider if this can be prevented by reducing
 the data sent to the client using [Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
 or
-[Pagination]({{site.baseurl}}/zk_dev_ref/integration/performance_tips/use_live_data_and_paging)
+[Pagination]({{site.baseurl}}/zk_dev_ref/performance_tips/use_live_data_and_paging)
 (Most users don't need 1000 lines visible at once)
 
 Performance degrading over time when using the application (while

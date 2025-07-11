@@ -48,7 +48,7 @@ class.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/base_components/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 

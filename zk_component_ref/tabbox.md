@@ -148,4 +148,4 @@ Try it
 ## Supported Children
 - [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
 - [`Tabpanels`](tabpanels): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.
-- [`Toolbar`](../essential_components/toolbar): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.
+- [`Toolbar`](toolbar): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.

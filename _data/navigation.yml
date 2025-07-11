@@ -1211,6 +1211,8 @@ zk_config_ref:
             url: /zk_config_ref/org_zkoss_zkmax_ui_comet_async_disabled
           - title: org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed
             url: /zk_config_ref/org_zkoss_zkmax_ui_util_loadingbar_animationspeed
+          - title: org.zkoss.zkmax.ui.util.Toast.animationSpeed
+            url: /zk_config_ref/org_zkoss_zkmax_ui_util_toast_animationspeed
           - title: org.zkoss.zkmax.zul.FiledownloadListener.class
             url: /zk_config_ref/org_zkoss_zkmax_zul_filedownloadlistener_class
           - title: org.zkoss.zul.borderlayout.animation.disabled
@@ -2000,31 +2002,31 @@ zk_component_ref:
     url: /zk_component_ref/base_components
     children:
       - title: AbstractComponent
-        url: /zk_component_ref/base_components/abstractcomponent
+        url: /zk_component_ref/abstractcomponent
       - title: FooterElement
-        url: /zk_component_ref/base_components/footerelement
+        url: /zk_component_ref/footerelement
       - title: FormatInputElement
-        url: /zk_component_ref/base_components/formatinputelement
+        url: /zk_component_ref/formatinputelement
       - title: HeaderElement
-        url: /zk_component_ref/base_components/headerelement
+        url: /zk_component_ref/headerelement
       - title: HeadersElement
-        url: /zk_component_ref/base_components/headerselement
+        url: /zk_component_ref/headerselement
       - title: HtmlBasedComponent
-        url: /zk_component_ref/base_components/htmlbasedcomponent
+        url: /zk_component_ref/htmlbasedcomponent
       - title: HtmlMacroComponent
-        url: /zk_component_ref/base_components/htmlmacrocomponent
+        url: /zk_component_ref/htmlmacrocomponent
       - title: InputElement
-        url: /zk_component_ref/base_components/inputelement
+        url: /zk_component_ref/inputelement
       - title: LabelElement
-        url: /zk_component_ref/base_components/labelelement
+        url: /zk_component_ref/labelelement
       - title: LabelImageElement
-        url: /zk_component_ref/base_components/labelimageelement
+        url: /zk_component_ref/labelimageelement
       - title: LayoutRegion
-        url: /zk_component_ref/base_components/layoutregion
+        url: /zk_component_ref/layoutregion
       - title: NumberInputElement
-        url: /zk_component_ref/base_components/numberinputelement
+        url: /zk_component_ref/numberinputelement
       - title: XulElement
-        url: /zk_component_ref/base_components/xulelement
+        url: /zk_component_ref/xulelement
   - title: Containers
     url: /zk_component_ref/containers
     children:

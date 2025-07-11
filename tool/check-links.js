@@ -180,27 +180,6 @@ function extractUrls(data) {
     return Array.from(urls);
 }
 
-// Function to check if a URL returns 404
-async function checkUrl(url) {
-    try {
-        const fullUrl = `${WEBSITE_BASE_URL}${url}`;
-        // Use HEAD instead of GET for faster checking
-        const response = await axios.head(fullUrl);
-        return {
-            url,
-            status: response.status,
-            is404: false
-        };
-    } catch (error) {
-        const status = error.response && error.response.status ? error.response.status : 'ERROR';
-        return {
-            url,
-            status: status,
-            is404: status === 404
-        };
-    }
-}
-
 // Function to check if a URL is external
 function isExternalUrl(url) {
     return url.startsWith('http://') || url.startsWith('https://');
@@ -208,7 +187,9 @@ function isExternalUrl(url) {
 
 // Function to check if a URL should be ignored
 function shouldIgnoreUrl(url) {
-    return url.startsWith('ftp://') || url.startsWith('file://');
+    return url.startsWith('ftp://')
+        || url.startsWith('file://')
+        || url.startsWith('mailto:');
 }
 
 // Function to check if a URL is an image

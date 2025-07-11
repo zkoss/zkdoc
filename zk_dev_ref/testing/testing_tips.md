@@ -70,8 +70,8 @@ With this approach, you still can verify the DOM structure if you want,
 since it can be retrieved from a widget's
 [zk.Widget#$n()](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#$n()).
 
-[ZTL](http://code.google.com/p/zk-ztl/) is a typical example that takes
-this approach. For more information, please refer to the [ZTL section]({{site.baseurl}}/zk_dev_ref/testing/ztl).
+[ZTL](https://github.com/zkoss/ztl) is a typical example that takes
+this approach.
 
 ## Approach 2: Use ID Generator for Fixed or Predictable UUIDs in Automated Testing
 

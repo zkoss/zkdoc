@@ -274,7 +274,7 @@ Then you could load Spring beans by using a utility class
 
 [^1]: A normal HTTP request; not an Ajax request. Ajax requests are
     handled in the same way as ZUML. For more information please refer
-    to the [Event Handling]({{site.baseurl}}/zk_dev_ref/event_handling)
+    to the [Event Handling]({{site.baseurl}}/zk_dev_ref/event_handling/event_handling)
     section
 
 [^2]: For more information, please refer to [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)

@@ -324,7 +324,7 @@ example:
 
 # Inherited Functions
 
-Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement)
+Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement)
 for inherited functions.
 
 # Supported Events
@@ -352,7 +352,7 @@ the component is changed by user.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/base_components/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
 
 # Supported Molds
 

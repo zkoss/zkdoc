@@ -141,7 +141,7 @@ to disable the serializing of zscript methods for the whole application.
 - You cannot use captcha due to the limit support of `java.awt`
   package[^1]
 
-When it comes to [Server Push]({{site.baseurl}}/zk_dev_ref/server_push),
+When it comes to [Server Push]({{site.baseurl}}/zk_dev_ref/server_push/server_push),
 since App Engine doesn't allow creating new threads, so session scope or
 application scope event queue cannot be used with App Engine. If you
 require server push feature, you should use

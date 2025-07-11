@@ -11,7 +11,7 @@ listener, though it is transparent to the caller. Thus, it cannot be
 used in the environment that does not allow the use of working threads,
 such as [Google App Engine](http://code.google.com/appengine/).
 
-In addition, it will start [a server push]({{site.baseurl}}/zk_dev_ref/server_push) automatically to
+In addition, it will start [a server push]({{site.baseurl}}/zk_dev_ref/server_push/server_push) automatically to
 send the UI updates back when it is ready. If you prefer to use the
 client polling or a particular implementation, you could start it
 manually by use of

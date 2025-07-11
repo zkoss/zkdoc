@@ -186,7 +186,7 @@ empty Columns component invisible. For example,
 </tbody>
 </table>
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/headerelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 
 # Supported Children
 

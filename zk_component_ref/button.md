@@ -351,7 +351,7 @@ size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 
 # Inherited Functions
 
-Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -395,7 +395,7 @@ uploaded a file to the component.</p></td>
 </tbody>
 </table>
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Molds
 

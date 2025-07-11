@@ -104,11 +104,11 @@ WebSite: <textbox type="url"/>
 
 ## Constraint
 
-Please refert to [ZK Component Reference/Base Components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Constraint).
+Please refert to [ZK Component Reference/Base Components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/inputelement#Constraint).
 
 # Inherited Functions
 
-Please refer to [ InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement)
+Please refer to [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement)
 for inherited functions, such as in-place edition.
 
 # Supported Events
@@ -132,7 +132,7 @@ for inherited functions, such as in-place edition.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/base_components/inputelement#Supported_Events)
+- Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement#Supported_Events)
 
 # Supported Children
 

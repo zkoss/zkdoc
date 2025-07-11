@@ -84,7 +84,7 @@ of how to do this.
 
 # Inherited Functions
 
-Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement)
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
 for inherited functions.
 
 # Supported Events
@@ -108,7 +108,7 @@ for inherited functions.
 </tbody>
 </table>
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 

@@ -9,15 +9,15 @@
 ## Employment/Purpose
 
 InputElement serves as a superclass for components that handle user key input. It is utilized by various input elements in ZK, such as:
-- [`Textbox`](../textbox)
-- [`Intbox`](../intbox)
-- [`Decimalbox`](../decimalbox)
-- [`Doublebox`](../doublebox)
-- [`Datebox`](../datebox)
-- [`Timebox`](../timebox)
-- [`Spinner`](../spinner)
-- [`Combobox`](../combobox)
-- [`Bandbox`](../bandbox)
+- [`Textbox`](textbox)
+- [`Intbox`](intbox)
+- [`Decimalbox`](decimalbox)
+- [`Doublebox`](doublebox)
+- [`Datebox`](datebox)
+- [`Timebox`](timebox)
+- [`Spinner`](spinner)
+- [`Combobox`](combobox)
+- [`Bandbox`](bandbox)
 
 InputElement provides features such as constraints, disabled state, maxlength, name attribute, readonly state, and more.
 
@@ -83,7 +83,7 @@ ZK allows specifying conditions using constraints such as `no empty` and `no neg
 | `between yyyyMMdd and yyyyMMdd`| Dates allowed only within a specified range. <br/> For example, <br/> `<datebox constraint="between 20231225 and 20241203"/>`|
 | `after yyyyMMdd`| Dates allowed after the specified date. <br/> For example, <br/> `<datebox constraint="after 20231225"/>` |
 | `before yyyyMMdd`| Dates allowed before the specified date. <br/> For example, <br/> `<datebox constraint="before 20231225"/>`|
-| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](../popup) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
+| `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](popup) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
 
 
 For example,

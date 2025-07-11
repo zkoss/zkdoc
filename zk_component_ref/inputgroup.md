@@ -76,6 +76,6 @@ The Inputgroup component can be used in various ways to enhance the user interfa
   - `vertical`: Components are displayed vertically.
 
 ## Supported Children
-- [`Label`](../essential_components/label)
-- [`InputElement`](../base_components/inputelement)
-- [`LabelImageElement`](../base_components/labelimageelement)
+- [`Label`](label)
+- [`InputElement`](inputelement)
+- [`LabelImageElement`](labelimageelement)

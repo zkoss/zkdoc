@@ -37,4 +37,4 @@ public class HostTreeRenderer implements TreeitemRenderer {
     to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 * If the tree is assigned a template called `model`, then the
     template will be used to render the tree. For more information,
-    please refer to [the Tree Template section]({{site.baseurl}}/zk_dev_ref/mvc/template/tree_template).
+    please refer to [the Tree Template section]({{site.baseurl}}/zk_dev_ref/mvc/tree_template).

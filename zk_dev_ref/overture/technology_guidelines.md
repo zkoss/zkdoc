@@ -102,7 +102,7 @@ especially during the UI design phase.
 
 - [ZK Developer's Reference: Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index)
 
-# [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) vs. [JSP](/zk_jsp_tags_essentials/before_you_start/before_you_start)
+# [ZUML]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) vs. [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) vs. [JSP](/zk_jsp_tags_essentials/before_you_start)
 
 ## When to use ZUML
 

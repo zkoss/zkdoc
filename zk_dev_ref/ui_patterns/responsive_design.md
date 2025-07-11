@@ -2,7 +2,7 @@
 
 The [Responsive Design](http://en.wikipedia.org/wiki/Responsive_Web_Design) in ZK
 separates the following three sections, for more features in tablet
-devices, please refer to [ Component Reference]({{site.baseurl}}/zk_component_ref/tablet_devices).
+devices, please refer to [ Component Reference]({{site.baseurl}}/zk_component_ref/tablet_devices/tablet_devices).
 
 # Fluid Layouts
 
