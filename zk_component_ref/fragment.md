@@ -1,31 +1,17 @@
-
-
 # Fragment
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
-- JavaScript API:
-  [zkmax.wgt.Fragment](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Fragment.html)
+- **Java API:** [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
+- **JavaScript API:** [zkmax.wgt.Fragment](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Fragment.html)
 
+Available for ZK: [`Enterprise Edition`](https://www.zkoss.org/whyzk/zkee)
 
-{% include edition-availability.html edition="pe" %}
+## Employment/Purpose
+The `Fragment` component in ZK allows developers to combine native HTML elements with ZK data binding syntax, enabling them to make static pages dynamic. By utilizing annotations such as `@save`, `@load`, `@bind`, `@command`, and `@global-command`, developers can create interactive and data-driven web applications.
 
-# Purpose
+## Example
+The following example demonstrates how to use the `Fragment` component with MVVM data binding:
 
-`Fragment` is a ZK component which developers can combine native HTML
-elements with ZK data binding syntax to make the static page to be
-dynamic.
-
-## Alternative
-
-To manipulate HTML elements dynamically, ZK supports several ways in
-addition to this component. Please refer to
-[Html Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags)
-for more details.
-
-# Example
-
-![](/zk_component_ref/images/ZKComRef_Fragment_Example.png)
+![ZKComRef_Fragment_Example](ZKComRef_Fragment_Example.png)
 
 ```xml
 <zk>
@@ -40,57 +26,42 @@ for more details.
 </zk>
 ```
 
-# Data Binding
+In this example:
+- `viewModel` defines the ViewModel class and initializes it.
+- `validationMessages` holds validation messages for properties.
+- `prop1` is bound to the ViewModel property `prop1`.
+- `prop1err` is bound to the validation message for `prop1`.
 
-With Fragment Component, you can bind the properties of ViewModel. For
-instance, you can use ZK MVVM data binding to access the ViewModel on
-the native HTML elements.
+## Data Binding
+The `Fragment` component supports various annotations for data binding, such as `@save`, `@load`, `@bind`, `@command`, and `@global-command`. Developers can bind properties of the ViewModel to native HTML elements for dynamic interaction.
 
 ## Enclose with CDATA
-
-Remember to mark the fragment content with the CDATA section to avoid
-being parsed by server-side binder and causing problems:
+Remember to mark the fragment content with the CDATA section to avoid being parsed by server-side binder and causing problems:
 
 ```xml
-    <fragment><![CDATA[
-        ...
-    ]]></fragment>
+<fragment><![CDATA[
+    ...
+]]></fragment>
 ```
 
 ## Supported Bindings
-
-These are the supported annotations:
-
-- **@save**
-
-` syntax: @save([limited EL-expression])`
-
-- **@load**
-
-` syntax: @load(limited EL-expression)`
-
-- **@bind**
-
-` syntax: @bind(limited EL-expression)`
-
-- **@command**
-
-` syntax: @command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
-
-- **@global-command**
-
-` syntax: @global-command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])`
+The supported annotations for binding within a `Fragment` include:
+- `@save`
+    > syntax: @save([limited EL-expression])
+- `@load`
+    > syntax: @load(limited EL-expression)
+- `@bind`
+    > syntax: @bind(limited EL-expression)
+- `@command`
+    > syntax: @command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])
+- `@global-command`
+    > syntax: @global-command(mybean.myproperty, [arbitraryKey]=[limited EL-expression])
 
 ## Limited EL-expression
+Inside a fragment, it only supports partially, limited data binding expressions including bean dot notation, arithmetic operator, `!`, and `==`
 
-Inside a fragment, it only supports partially, limited data binding
-expressions including bean dot notation, arithmetic operator, `!`, and
-`==`
-
-# Put HTML as text content
-
-This component also provides a virtual `textContent` attribute for HTML
-elements to insert data into the tag.
+## Put HTML as Text Content
+Developers can use the `textContent` attribute to insert data into HTML elements within the `Fragment` component, facilitating dynamic content manipulation.
 
 ```xml
 <zk>
@@ -109,10 +80,8 @@ elements to insert data into the tag.
 </zk>
 ```
 
-# Shadow Elements
-
-In this example, we use `if` and `forEach` tags together for condition
-and collection rendering.
+## Shadow Elements
+`Fragment` component supports conditional and collection rendering through shadow elements like `if` and `forEach` tags. These elements provide additional flexibility in defining the display logic within the component.
 
 ```xml
 <zk>
@@ -143,14 +112,10 @@ and collection rendering.
 </zk>
 ```
 
-- For further details, please refer to [Shadow components](http://books.zkoss.org/zkessentials-book/master/shadow_components/index.html)
-  directly.
-
 # Data Validation
 
 ## Server-side Property/Form Validation
-
-To ensure data is correct and useful, we can leverage ZK's validators.
+To validate data on the server-side using ZK's validators, you can utilize the following syntax:
 
 ```xml
 <zk>
@@ -163,12 +128,9 @@ To ensure data is correct and useful, we can leverage ZK's validators.
 </zk>
 ```
 
-You can get the invalid message by assigning a self-defined key as an
-alias. In order to access invalidate messages by HTML elements, you can
-simply bind the messages onto Fragment properties.
+In this code snippet, you can see how to bind properties and validators to validate form fields. By assigning a custom key as an alias, you can access invalid messages easily.
 
-Here we can use form-binding and form validators to validate all the
-fields.
+To validate multiple fields using form binding and form validators, you can use the following approach:
 
 ```xml
 <zk>
@@ -181,32 +143,21 @@ fields.
 </zk>
 ```
 
+This code snippet demonstrates how to validate form elements and display error messages for each field.
+
 ## Client-side Property Validation
+ZK also provides client-side validation using the `@jsvalidator` attribute, allowing you to run custom JavaScript functions for validation without sending requests to the server for each validation. Here is an example:
 
-This component also provides a new `@jsvalidator` running at client
-side, accepting custom JavaScript functions for validation. The benefit
-is that there is no need to send requests to the server for each
-validation. However, since the validation logic will be exposed at
-client side, some simple check, such as empty checking or range
-checking, is recommended. The usage is like `@validator` but it is
-effective only when applying HTML elements.
-
-**@jsvalidator**
-
-` syntax: @jsvalidator(validation_function_name)`
+`@jsvalidator`
+> syntax: @jsvalidator(validation_function_name)
 
 The following is the definition of custom JavaScript function.
-
-`ValidationFunction(val, vmsgs)`  
-`* val: The input data.`  
-`* vmsgs: `  
-`   The validation message holder object. You can add an invalidate message by adding a new property. `  
-`   If you want to clear the specific message, assign an empty string to the property.`  
-`* Returns: Boolean. True if the data is valid.`
-
-You can use an implicit object (vmsgs) to get the client-side invalid
-messages. The `@jsvalidator` has its own validation message holder not
-shared with server-side.
+> ValidationFunction(val, vmsgs)
+> * val: The input data.
+> * vmsgs: 
+>    The validation message holder object. You can add an invalidate message by adding a new property. 
+>    If you want to clear the specific message, assign an empty string to the property.
+> * Returns: Boolean. True if the data is valid.
 
 ```xml
 <zk>
@@ -224,119 +175,122 @@ shared with server-side.
 </zk>
 ```
 
+In this example, a custom JavaScript function `validateExample` is used to validate a property client-side and show error messages accordingly.
+
 ## The Differences Between @validator and @jsvalidator
+Here are the key differences between `@validator` and `@jsvalidator` in ZK:
 
-<div style="margin-left:auto;margin-right:auto;width:70%;">
+| Catalogue              | @validator                  | @jsvalidator            |
+|------------------------|-----------------------------|-------------------------|
+| Validate at            | Server side                 | Client side             |
+| ZK form validation     | Supported                   | Not supported           |
+| Validation message holder | Initialized in validationMessages | An implicit `vmsgs` object|
 
-| Catalogue                 | @validator                        | @jsvalidator             |
-|---------------------------|-----------------------------------|--------------------------|
-| Validate at               | Server side                       | Client side              |
-| ZK form validation        | Supported                         | Not supported            |
-| Validation message holder | Initialized in validationMessages | An implicit vmsgs object |
+It's recommended to use server-side `@validator` for most cases due to security concerns, but you can use client-side `@jsvalidator` for instant feedback requirements like password strength or number range validation.
 
-</div>
-
-1.  `@validator` relies on the server, while `@jsvalidator` relies on
-    the browser.
-2.  `@jsvalidator` does not support form validation.
-3.  The validation message holders are not the same.
-
-For security concerns, we recommend you to use server-side `@validator`
-in most cases and choose client-side `@jsvalidator` if the validation
-needs an instant feedback such as password strength, number range, and
-so on.
 
 # Event Handling
 
-The command of ViewModel can be invoked by attaching DOM events with
-`@command` or `@global-command` on HTML elements. Once the DOM event is
-triggered (i.g. clicked or changed), the command of ViewModel will be
-executed and receive the corresponding event object.
-
-You can get more details from the event object such as mouse cursor
-position, pressed keys, entered text, and selected text.
-
-| ZK Event object                                         | DOM event           |
-|---------------------------------------------------------|---------------------|
-| [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)     | onclick             |
-|                                                         | oncontextmenu       |
-|                                                         | ondblclick          |
-|                                                         | onmousedown         |
-|                                                         | onmouseenter        |
-|                                                         | onmouseleave        |
-|                                                         | onmouseover         |
-|                                                         | onmouseout          |
-|                                                         | onmouseup           |
-|                                                         | ondrag              |
-| [org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)       | onkeydown           |
-|                                                         | onkeypress          |
-|                                                         | onkeyup             |
-| [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)     | onchange            |
-|                                                         | oninput             |
-| [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html)     | onchange (checkbox) |
-|                                                         | oninput (checkbox)  |
-| [org.zkoss.zk.ui.event.SelectionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html) | onselect            |
-| [org.zkoss.zk.ui.event.DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html)      | ondrop              |
-| [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)          | onblur              |
-|                                                         | onfocus             |
-|                                                         | onfocusin           |
-|                                                         | onfocusout          |
-
-- For further details about how to retrieve the event object, please
-  refer to [Retrieve Event Object](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object)
-  directly.
-
-# Properties
-
-- **content**: specify the content of this component.
-- **src**: specify the URI of an external content file. The file
-  encoding is assumed to be UTF-8.
-- **recoverId**: specify the recover ID.
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onRecover</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Represents an event sent back to the server caused by an offline
-recovery.</p></td>
-</tr>
-</tbody>
+ZK provides the ability to handle events in ViewModel by using `@command` or `@global-command` attributes on HTML elements. The ViewModels can execute commands based on DOM events such as `onclick`, `onkeydown`, `onchange`, etc. Here are some of the supported events and corresponding ZK Event objects:
+<table class="wikitable" width="100%">
+  <tbody>
+    <tr>
+      <th>ZK Event object</th>
+      <th>DOM event</th>
+    </tr>
+    <tr>
+      <td rowspan="10"><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html" title="org.zkoss.zk.ui.event.MouseEvent">MouseEvent</a></td>
+      <td>onclick</td>
+    </tr>
+    <tr>
+      <td>oncontextmenu</td>
+    </tr>
+    <tr>
+      <td>ondblclick</td>
+    </tr>
+    <tr>
+      <td>onmousedown</td>
+    </tr>
+    <tr>
+      <td>onmouseenter</td>
+    </tr>
+    <tr>
+      <td>onmouseleave</td>
+    </tr>
+    <tr>
+      <td>onmouseover</td>
+    </tr>
+    <tr>
+      <td>onmouseout</td>
+    </tr>
+    <tr>
+      <td>onmouseup</td>
+    </tr>
+    <tr>
+      <td>ondrag</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html" title="org.zkoss.zk.ui.event.KeyEvent">KeyEvent</a></td>
+      <td>onkeydown</td>
+    </tr>
+    <tr>
+      <td>onkeypress</td>
+    </tr>
+    <tr>
+      <td>onkeyup</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html" title="org.zkoss.zk.ui.event.InputEvent">InputEvent</a></td>
+      <td>onchange</td>
+    </tr>
+    <tr>
+      <td>oninput</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html" title="org.zkoss.zk.ui.event.CheckEvent">CheckEvent</a></td>
+      <td>onchange (checkbox)</td>
+    </tr>
+    <tr>
+      <td>oninput (checkbox)</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html" title="org.zkoss.zk.ui.event.SelectionEvent">SelectionEvent</a></td>
+      <td>onselect</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html" title="org.zkoss.zk.ui.event.DropEvent">DropEvent</a></td>
+      <td>ondrop</td>
+    </tr>
+    <tr>
+      <td rowspan="4"><a href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html" title="org.zkoss.zk.ui.event.Event">Event</a></td>
+      <td>onblur</td>
+    </tr>
+    <tr>
+      <td>onfocus</td>
+    </tr>
+    <tr>
+      <td>onfocusin</td>
+    </tr>
+    <tr>
+      <td>onfocusout</td>
+    </tr>
+  </tbody>
 </table>
 
-# Supported Children
-
-`None`
-
-# Use Cases
-
-| Version | Description                     | Example Location                                                                                                                   |
-|---------|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| 8.5+    | Data binding, Shadow elements   | [Client Binding with ZK MVVM for your eyes only](http://blog.zkoss.org/2016/11/15/client-binding-with-zk-mvvm-for-your-eyes-only/) |
-| 8.5+    | Data validation, Event handling | [Advanced Usage of Fragment Component](https://www.zkoss.org/wiki/Small_Talks/2017/July/Advanced_Usage_of_Fragment_Component)      |
-
-# Version History
+For more details on retrieving the event object, you can refer to the [Retrieve Event Object](https://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object) documentation.
 
 
+## Properties
+The `Fragment` component supports the following properties:
+- `content`: Specify the content of the component.
+- `src`: Specify the URI of an external content file.
+- `recoverId`: Specify the recovery ID.
 
-| Version | Date       | Content                        |
-|---------|------------|--------------------------------|
-| 8.5     | 2017/09/21 | Add the new Fragment component |
-|         |            |                                |
+## Supported Events
 
+| Name            | Event Type                                                          | Description |
+|-----------------|---------------------------------------------------------------------|------------|
+| `onRecover`     | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Represents an event sent back to the server caused by an offline recovery. |
 
+## Supported Children
+- `*NONE`: This component does not support any child components.

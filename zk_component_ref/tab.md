@@ -1,21 +1,18 @@
-
-
 # Tab
 
-- Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: [org.zkoss.zul.Tab](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html)
-- JavaScript API: [zul.tab.Tab](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tab.html)
+- **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
+- **Java API:** [`org.zkoss.zul.Tab`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html)
+- **JavaScript API:** [`zul.tab.Tab`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tab.html)
 
+## Employment/Purpose
 
-# Employment/Purpose
+The ZK Tab component is used to represent a specific tab within a tab container. Clicking on a tab brings the corresponding tab panel to the front. Tabs can be customized with labels and images using the `label` and `image` properties.
 
-A specific tab. Clicking on the tab brings the tab panel to the front.
-You could put a label and an image on it by `label`and
-`image`properties.
+## Example
 
-# Example
+The example below demonstrates a `tabbox` with two tabs, each displaying a label and an image. The first tab is not closable, while the second tab is closable with a close button that allows the user to remove it.
 
-![](/zk_component_ref/images/ZKComRef_Containers_Tab.PNG)
+![Tab Example](ZKComRef_Containers_Tab.png)
 
 ```xml
 <tabbox width="400px">
@@ -30,14 +27,18 @@ You could put a label and an image on it by `label`and
 </tabbox>
 ```
 
-# Properties and Features
+Try it
 
-## Caption
+* [Tab Example](https://zkfiddle.org/sample/o3cb45/1-ZK-Component-Reference-Tab-Example?v=latest&t=Iceblue_Compact)
 
-A tab might have a caption, which is specified by declaring a child
-component called caption. {% include edition-availability.html edition="pe" %} {% include
-version-badge.html version=6.5.0 %}
-![](/zk_component_ref/images/ZKComRef_Containers_Tab_Caption.PNG)
+
+## Properties and Features
+
+### Caption
+
+Tabs can have a caption by declaring a child component called `caption`. The example below shows a tab with a search caption containing a textbox component. This feature is available in ZK Enterprise Edition starting from version 6.5.0.
+
+![Tab Caption Example](ZKComRef_Containers_Tab_Caption.png)
 
 ```xml
 <tabbox width="400px">
@@ -58,86 +59,57 @@ version-badge.html version=6.5.0 %}
 </tabbox>
 ```
 
-## Closable
+Try it
 
-By setting the `closable` property to true, a close button is shown on a
-tab, such that a user could close the tab and the corresponding tab
-panel by clicking the button. Once a user clicks on the close button, an
-`onClose` event is sent to the tab. It is processed by the onClose
-method of Tab. Then, onClose, by default, detaches the tab itself and
-the corresponding tab panel.
+* [Tab Caption](https://zkfiddle.org/sample/ale2h1/1-ZK-Component-Reference-Tab-Caption-Example?v=latest&t=Iceblue_Compact)
+
+
+### Closable
+
+By setting the `closable` property to true, a close button is displayed on the tab. When clicked, the tab and its corresponding tab panel are detached from the component. An `onClose` event is triggered, which can be handled to perform custom actions upon tab closure.
 
 ### Dynamically-created Tab
 
-`{% include version-badge.html version=7.0.0 %}`
-
-If you assign a model to a Tabbox, it will do nothing for an onClose
-event. Therefore, developers have to listen an onClose event to remove
-the corresponding item in the model instead of Tab itself.
-
-When using model, Tabs are dynamically created, so you **can't just
-listen to onClose event** like `@Listen("onClose = tab")` because a Tab
-is not created when wiring a listener. You can forward onClose event to
-its parent like:
+In ZK version 7.0.0 and above, when dynamically creating tabs using a model, special handling is required. To remove the corresponding item from the model upon tab closure, developers need to listen to the `onClose` event and manually remove the item. The example below demonstrates how to handle the `onClose` event when using a model in the MVC pattern.
 
 ```xml
-<tabbox id="tabbox">
-    <template name="model:tab">
-        <tab closable="true" forward="onClose=tabbox.onTabClose(${each})"/>
-    </template>
+<zk>
+  <tabbox id="tabbox" apply="pkg$.TabboxComposer">
+      <template name="model:tab">
+          <tab closable="true" label="${each}" onClose="self.detach()"/>
+      </template>
+  </tabbox>
+</zk>
 ```
 
-# Supported Events
+```java
+public class TabboxComposer extends SelectorComposer {
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onSelect</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
-<p>Denotes user has selected a tab. onSelect is sent to both tab and
-tabbox.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onClose</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.ui.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html)</p>
-<p>Denotes the close button is pressed by a user, and the component
-shall detach itself.</p></td>
-</tr>
-</tbody>
-</table>
+  	@Wire
+  	Tabbox tabbox;
+  
+	public void doAfterCompose(Component comp) throws Exception {
+		super.doAfterCompose(comp);
+		ListModelList model = new ListModelList();
+        model.add("Tab1");
+        model.add("Tab2");
+        model.add("Tab3");
+        tabbox.setModel(model);
+	}
+}
+```
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
+Try it
 
-# Supported Children
-
-`*NONE`
-
-# Use Cases
-
-[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
-
-# Version History
+* [Tab Model](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
 
+## Supported Events
 
-| Version | Date       | Content                                                                                                     |
-|---------|------------|-------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | June, 2012 | [ZK-970](http://tracker.zkoss.org/browse/ZK-970): The Tab component support caption component as it's label |
+| Name          | Event Type                                       |Description |
+|---------------|--------------------------------------------------|------------|
+| `onSelect`    | Event: [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.             |
+| `onClose`     | Event: [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself.                 |
 
-
+## Supported Children
+- [`Caption`](caption): Indicates that the `Tab` component can only have one child component of type `Caption`.

@@ -1,27 +1,18 @@
-
-
 # Groupbox
 
-- Demonstration:
-  [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
-- Java API: [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)
-- JavaScript API: [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
+- **Demonstration:** [Groupbox Demo](https://www.zkoss.org/zkdemo/layout/group_box)
+- **Java API:** [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)
+- **JavaScript API:** [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
 
-# Employment/Purpose
+## Employment/Purpose
+The Groupbox component in ZK is used to group related components together visually. It provides a border around the components to indicate their relationship. The label displayed at the top of the group box can be created using the [Caption](caption) component, similar to the HTML legend element. Unlike the [Window](window) component, a group box does not own the ID space and cannot be overlapped or popped up.
 
-A group box is used to group components together. A border is typically
-drawn around the components to show that they are related. The label
-across the top of the group box can be created by using [ Caption]({{site.baseurl}}/zk_component_ref/caption)
-component. It works much like the HTML legend element. Unlike [ Window]({{site.baseurl}}/zk_component_ref/window), a group
-box is not an owner of the ID space. It cannot be overlapped or popped
-up.
+## Example
+In the provided example, a Groupbox is used to group a set of Radio components under the label "Fruits."
 
-# Example
-
-![](/zk_component_ref/images/ZKComRef_Groupbox_Example.png)
-
+![Groupbox_Example](ZKComRef_Groupbox_Example.png)
 ```xml
- <groupbox width="250px">
+ <groupbox width="350px">
      <caption label="Fruits"/>
      <radiogroup>
          <radio label="Apple"/>
@@ -31,7 +22,12 @@ up.
  </groupbox>
 ```
 
-## Java Example
+Try it
+*  [Groupbox with Caption](https://zkfiddle.org/sample/1j5b78e/1-ZK-Component-Reference-Groupbox-Example?v=latest&t=Iceblue_Compact)
+
+
+### Java Example
+In the Java code example, a Groupbox is created and customized with a Caption, a specific width, content, and an event listener for the onOpen event.
 
 ```java
 Groupbox gb = new Groupbox();
@@ -42,26 +38,25 @@ gb.setMold("3d");
 gb.setWidth("200px");
 gb.appendChild(new Label("Here is Content"));
 
-// register an onOpen event.
+// Register an onOpen event.
 gb.addEventListener(Events.ON_OPEN, new EventListener() {
     public void onEvent(Event event) throws Exception {
-    if (((OpenEvent)event).isOpen())
-        //do something you want.
+        if (((OpenEvent)event).isOpen()) {
+            // Do something you want.
+        }
     }
 });
 gb.setParent(outer);
 ```
 
-# Properties
+## Properties
+### ContentStyle
+Specifies the CSS style for the content block of the groupbox.
 
-## ContentStyle
-
-Specify the CSS style for the content block of the groupbox.
-
-![](/zk_component_ref/images/ZKComRef_Groupbox_ContentStyle.png)
+![Groupbox_ContentStyle](ZKComRef_Groupbox_ContentStyle.png)
 
 ```xml
-<groupbox width="250px" mold="3d"
+<groupbox width="350px" mold="3d"
     contentStyle="border: 3px blue dashed;border-top:0px">
     <caption label="Fruits"/>
     <radiogroup>
@@ -72,93 +67,66 @@ Specify the CSS style for the content block of the groupbox.
 </groupbox>
 ```
 
-## ContentSclass
+Try it
 
-Specify the CSS class for the content block of the groupbox.
+*  [Groupbox ContentStyle](https://zkfiddle.org/sample/1k2vv2g/1-ZK-Component-Reference-Groupbox-ContentStyle-Example?v=latest&t=Iceblue_Compact)
 
-![](/zk_component_ref/images/ZKComRef_Groupbox_ContentStyle.png)
+
+### ContentSclass
+Specifies the CSS class for the content block of the groupbox.
+
+![Groupbox_ContentStyle](ZKComRef_Groupbox_ContentStyle.png)
 
 ```xml
 <zk>
-<style>
-.mygroupbox-cnt {
-    border: 3px blue dashed;
-    border-top:0px
-}
-</style>
-<groupbox width="250px" mold="3d"
-    contentSclass="mygroupbox-cnt">
-    <caption label="Fruits"/>
-    <radiogroup>
-        <radio label="Apple"/>
-        <radio label="Orange"/>
-        <radio label="Banana"/>
-    </radiogroup>
-</groupbox>
+    <style>
+    .mygroupbox-cnt {
+        border: 3px blue dashed;
+        border-top:0px
+    }
+    </style>
+    <groupbox width="350px" mold="3d"
+        contentSclass="mygroupbox-cnt">
+        <caption label="Fruits"/>
+        <radiogroup>
+            <radio label="Apple"/>
+            <radio label="Orange"/>
+            <radio label="Banana"/>
+        </radiogroup>
+    </groupbox>
 </zk>
 ```
 
-## Closable
+Try it
 
-Default: **true**
+* [Groupbox ContentSclass](https://zkfiddle.org/sample/304je74/1-ZK-Component-Reference-Groupbox-ContentSclass-Example?v=latest&t=Iceblue_Compact)
 
-Specify whether the groupbox can be collapsed or not.
+### Closable
+Default: `true`.
+
+Specifies whether the groupbox can be collapsed or not.
 
 For example,
 
 ```xml
-<groupbox width="250px" mold="3d" closable="true">
+<groupbox width="350px" mold="3d" closable="true">
 ```
+**Note**: the function can only be applied when the [Caption](caption) or the title attribute exists.
 
-**Note:** the function can only be applied when the [ Caption]({{site.baseurl}}/zk_component_ref/caption) exists.
+### Open/Close
+Default: `true`.
 
-## Open/Close
+Specifies the display of the groupbox, whether it is open or closed.
 
-Default: **true**
-
-Specify the display of the groupbox, whether it is open or closed. For
-example,
+For example,
 
 ```xml
 <groupbox width="250px" mold="3d" open="false">
 ```
+**Note**: false means the groupbox is closed, i.e., no content can appear.
 
-**Note:** false means the groupbox is closed, i.e. no content can
-appear.
-
-# Limitation of the Default Mold
-
-The default mold of groupbox uses HTML FIELDSET to represent a groupbox
-visually. It is efficient, but it has some limitations:
-
-1.  The look might be different from one browser to another
-2.  The real width and height might not be exactly the same as the
-    specified value in some browsers, such as Firefox.
-
-If it is an issue, you could use the 3d mold instead.
-
-![](/zk_component_ref/images/groupbox-3d.jpg)
-
-```xml
- <groupbox width="250px" mold="3d">
-     <caption label="Fruits"/>
-     <radiogroup>
-         <radio label="Apple"/>
-         <radio label="Orange"/>
-         <radio label="Banana"/>
-     </radiogroup>
- </groupbox>
-```
-
-{% include version-badge.html version=6.0.0 %}
-
-The default mold uses the same method as 3d mold to represent a
-groupbox, the limitation is gone.
-
-## Configure to Use the 3d Mold as Default
-
-If you prefer to use the 3d mold as default, you could configure ZK by
-adding the following to `/WEB-INF/zk.xml`
+### Configure to Use the 3d Mold as Default
+To set the 3d mold as the default for all Groupbox components, add the following configuration to `/WEB-INF/zk.xml`:
 
 ```xml
 <library-property>
@@ -167,86 +135,22 @@ adding the following to `/WEB-INF/zk.xml`
 </library-property>
 ```
 
-# Supported Events
+## Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onOpen</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
-opened or closed a component. Note:</p>
-<p>unlike <code>onClose</code>, this event is only a notification. The
-client sends this event after opening or closing the component.</p>
-<p>It is useful to implement load-on-demand by listening to the
-<code>onOpen</code> event, and creating components the first time the
-component is opened.</p></td>
-</tr>
-</tbody>
-</table>
+| Name**   | Event Type                            |Description |
+|----------|-----------------------------------------|------------|
+| `onOpen` | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+## Supported Molds
+The available molds for the Groupbox component are:
 
-# Supported Molds
+| Name    | Snapshot                            |
+|---------|-------------------------------------------|
+| `default`   | ![Groupbox_mold_default](Groupbox_mold_default.png)|
+| `3d`   | ![Groupbox_mold_3d](Groupbox_mold_3d.png)|
 
-Available molds of a component are defined in lang.xml embedded in
-zul.jar.
+## Supported Children
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/groupbox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>3d</p>
-</center></td>
-<td>![](/zk_component_ref/images/groupbox_mold_3d.png)</td>
-</tr>
-</tbody>
-</table>
+`*ALL`: Indicates that the Groupbox component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Groupbox, providing flexibility and customization options for your designs.
 
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+Note: Only one [`Caption`](caption) component is allowed in the `Groupbox` and it must be the first component.

@@ -1,109 +1,62 @@
-
-
 # Caption
 
-- Demonstration:
-  [Groupbox](http://www.zkoss.org/zkdemo/layout/group_box)
-- Java API: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
-- JavaScript API: [zul.wgt.Caption](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Caption.html)
+- **Demonstration**: [Groupbox](https://www.zkoss.org/zkdemo/layout/group_box)
+- **Java API**: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
+- **JavaScript API**: [zul.wgt.Caption](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Caption.html)
 
+## Employment/Purpose
 
-# Employement/Purpose
+The Caption component serves as a header for various UI components such as Groupbox, Window, Panel, Tab, and LayoutRegion. It provides the functionality to display a simple text label using the `setLabel` method or to include child elements for a more complex caption design.
 
-A header for a Groupbox, Window, and Panel. It may contain either a text
-label, using
-[org.zkoss.zul.impl.LabelElement#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelElement.html#setLabel(java.lang.String)),
-or child elements for a more complex caption.
+### Preload Image
 
-# Preload Image
+**Since**: 6.0.0
 
-{% include version-badge.html version=6.0.0 %}
-
-The feature is applied to all of the LabelImageElement and Image
-components.
-
-By default the preload function is disabled, so users have to specify
-the *custom-attributes* and set it to true. For example,
+The preload image feature is applicable to all LabelImageElement and Image components. By default, the preload function is disabled, and users need to specify custom attributes and set them to true. For instance:
 
 ```xml
 <caption image="xxx.png" label="caption">
-  <custom-attributes org.zkoss.zul.image.preload=”true”/>
+  <custom-attributes org.zkoss.zul.image.preload="true"/>
 </caption>
 ```
 
-Or specify it just below the root component.
-
-For example,
+Alternatively, the custom attributes can be specified below the root component as shown in the following example:
 
 ```xml
 <window>
-  <custom-attributes org.zkoss.zul.image.preload=”true”/>
+  <custom-attributes org.zkoss.zul.image.preload="true"/>
   <caption image="xxx.png" label="caption">
-  <image src="xxx.png"/>
+    <image src="xxx.png"/>
+  </caption>
 </window>
 ```
 
-As you can see, the *custom-attributes* will be checked recursively.
+The custom attributes will be checked recursively in the component tree.
 
-# Example
+## Example
 
-![](/zk_component_ref/images/ZKComRef_Caption_Example.png)
+The example showcases the usage of the Caption component within a Window and Groupbox components, both of which support Caption as their title.
+
+![Caption Example](ZKComRef_Caption_Example.png)
 
 ```xml
- <zk>
-     <window border="normal" width="350px">
-          <caption label="This is a caption"/>
-             <groupbox width="300px">
-                  <caption label="fruits"/>
-                  <radiogroup onCheck="fruit.value = self.selectedItem.label">
-                     <radio label="Apple"/>
-                     <radio label="Orange"/>
-                     <radio label="Banana"/>  
-                  </radiogroup>
-             </groupbox>
-     </window>
- </zk>
+<zk>
+    <window border="normal" width="350px">
+        <caption label="This is a caption"/>
+        <groupbox width="300px">
+            <caption label="fruits"/>
+            <radiogroup onCheck="fruit.value = self.selectedItem.label">
+                <radio label="Apple"/>
+                <radio label="Orange"/>
+                <radio label="Banana"/>  
+            </radiogroup>
+        </groupbox>
+    </window>
+</zk>
 ```
 
-# Supported Events
+Try it
+*  [Caption with Window](https://zkfiddle.org/sample/3scdgri/1-ZK-Component-Reference-Caption-Example?v=latest&t=Iceblue_Compact)
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/base_components/labelimageelement#Supported_Events)
-
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description                                                                                             | Example Location                                                                           |
-|---------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| 5.0     | How to use the title and caption inside a [Window]({{site.baseurl}}/zk_component_ref/window) | [Title and Caption]({{site.baseurl}}/zk_component_ref/window#Title_and_Caption) |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+## Supported Children
+`*ALL`: Indicates that the Caption component can have any kind of ZK component as its child element. This means that you can include any ZK component within the Caption component, allowing for flexible and customizable caption designs.

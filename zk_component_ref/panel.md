@@ -1,84 +1,72 @@
-
-
 # Panel
 
-- Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
-- Java API: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)
-- JavaScript API: [zul.wnd.Panel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panel.html)
+- **Demonstration**: [Panel](https://www.zkoss.org/zkdemo/window/panel)
+- **Java API**: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)
+- **JavaScript API**: [zul.wnd.Panel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panel.html)
 
+## Employment/Purpose
 
-# Employment/Purpose
+The Panel component in ZK is a versatile container that serves as a foundational building block for application-oriented user interfaces. It offers a variety of structural components such as top, bottom, and foot toolbars, along with distinct header, footer, and body sections. Some key functionalities of the Panel component include collapsible, closable, maximizable, and minimizable behavior. It also provides pre-built tool buttons that can be customized for specific actions. Panels can be easily embedded into ZUL components that allow children or layout components. Additionally, Panels offer features such as float and move. Unlike the Window component, a Panel can only be floated and moved within its parent node. The Panel is not an independent ID space, allowing the ID of each child to be used throughout the Panel.
 
-Panel is a container that has specific functionality and structural
-components that make it the perfect building block for
-application-oriented user interfaces. Panel contains bottom, top, and
-foot toolbars, along with separate header, footer and body sections. It
-also provides built-in collapsible, closable, maximizable, and
-minimizable behavior, along with a variety of pre-built tool buttons
-that can be wired up to provide other customized behavior. Panel can be
-easily embedded into any kind of ZUL component that is allowed to have
-children or layout component. Panel also provides specific features like
-float and move. Unlike Window, Panel can only be floated and moved
-inside its parent node, which is not using zk.setVParent() function at
-client side. In other words, if Panel's parent node is a relative
-position, the floated panel is only inside its parent, not the whole
-page. The second difference from Window is that Panel is not an
-independent ID space (by implementing IdSpace), so the ID of each child
-can be used throughout the panel.
+## Example
 
-# Example
+### Simple Panel Example
 
-![](/zk_component_ref/images/ZKComRef_Panel_Simple_Examples.PNG)
+![Panel Simple Examples](images/ZKComRef_Panel_Simple_Examples.PNG)
 
 ```xml
-    <panel height="20%"  style="margin-bottom:10px"
-           title="Panel1" border="normal" maximizable="true" closable="true"
-           collapsible="true">
-        <caption iconSclass="z-icon-home"/>
-        <panelchildren>PanelContent</panelchildren>
-    </panel>
+<panel height="20%" style="margin-bottom:10px"
+       title="Panel1" border="normal" maximizable="true" closable="true"
+       collapsible="true">
+    <caption iconSclass="z-icon-home"/>
+    <panelchildren>PanelContent</panelchildren>
+</panel>
 ```
 
-## Java Example
+In the above example, a Panel is created with specified attributes such as height, title, border, and buttons for maximizable, collapsible, and closable functionalities.
+
+Try it
+
+* [Panel Example](https://zkfiddle.org/sample/1t41t2r/1-ZK-Component-Reference-Panel-Example?v=latest&t=Iceblue_Compact)
+
+### Java Example
 
 ```java
 Panel panel = new Panel();
 panel.setTitle("Here is Title");
 panel.setBorder("normal");
-panel.setFramable(true);
 
 Panelchildren pc = new Panelchildren();
 pc.setParent(panel);
 pc.appendChild(new Label("Here is Content"));
 ```
 
-# Properties
+The Java example demonstrates the creation of a Panel programmatically and adding content to the Panel using a Panelchildren component.
 
-## Sizable
+## Properties
 
-The panel can now be resized as long as the attribute sizable is set to
-true. The example ZUL below shows a panel which can be resized.
+### Sizable
+
+The Panel can be resized by setting the `sizable` attribute to `true`. The example below shows a resizable panel:
 
 ```xml
-<panel sizable="true" id="panel" framable="true" width="500px" height="400px"
+<panel sizable="true" id="panel" width="500px" height="400px"
     title="Panel"
     maximizable="true" minimizable="true" border="normal"
     collapsible="true" closable="true">
     <panelchildren>
-        <textbox  height="100%" />
+        <textbox hflex="true" vflex="true" />
     </panelchildren>
 </panel>
 ```
 
-{% include version-badge.html version=5.0.0 %}
+Try it
 
-## Draggable
+* [Panel Sizable](https://zkfiddle.org/sample/1bajqva/1-ZK-Component-Reference-Panel-Sizable-Example?v=latest&t=Iceblue_Compact)
 
-When used with [ Portallayout]({{site.baseurl}}/zk_component_ref/portallayout),
-the draggable property
-([org.zkoss.zk.ui.HtmlBasedComponent#setDraggable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setDraggable(java.lang.String)))
-can be used to control whether the panel is draggable under the portal
-layout.
+### Draggable
+
+When used with a PortalLayout, the `draggable` property can control whether the panel is draggable within the portal layout:
 
 ```xml
 <portallayout>
@@ -102,53 +90,29 @@ layout.
 </portallayout>
 ```
 
-{% include version-badge.html version=5.0.3 %}
+Try it
 
-## Border
+* [Panel Dragable](https://zkfiddle.org/sample/2rds9kh/1-ZK-Component-Reference-Panel-Draggable-Example?v=latest&t=Iceblue_Compact)
 
-It specifies whether to display the border. Currently, it supports
-`none`, `normal`, `rounded` and `rounded+`. The default is `none`, i.e.,
-no border.
 
-Here is the effect with different borders:
 
-![](/zk_component_ref/images/DrPanelBorder.png)
+### Border
 
-> ------------------------------------------------------------------------
->
-> Backward Compatibility: ZK 5.0.5 and prior shall use the combination
-> of the border and framable property as follows.
->
-> | Border in 5.0.6   | The equivalent combination in 5.0.5 and prior | Description                    |
-> |-------------------|-----------------------------------------------|--------------------------------|
-> | border="none"     | border="none"                                 | framable is default to `false` |
-> | border="normal"   | border="normal"                               | framable is default to `false` |
-> | border="rounded"  | framable="true"                               | border is default to `none`    |
-> | border="rounded+" | border="normal" framable="true"               |                                |
->
-> - Notice that the use of the border and framable combination still
->   works in 5.0.6 (backward compatible).
+The `border` property specifies the style of the panel border, with options like `none` and `normal`.
 
-## Title
+### Title
 
-Besides this attribute, you could use [ Caption]({{site.baseurl}}/zk_component_ref/caption) to define
-a more sophisticated caption (aka., title). If the panel has a caption
-whose label [org.zkoss.zul.Caption#getLabel()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html#getLabel())
-is not empty, then this attribute is ignored. (Default: empty).
+The `title` attribute sets the title of the panel. You can also use the [Caption](caption) component to create more complex titles.
 
-## Closable
+### Closable
 
-Specify whether to show a close button on the title bar or not. If
-closable, a button is displayed and the onClose event
-([org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)) is sent if a user
-clicks the button. (Default: false)
+The `closable` attribute determines whether a close button is displayed on the panel. An `onClose` event is triggered when the close button is clicked.
 
-# Miscellaneous
+## Miscellaneous
 
-## Scrollable Panel
+### Scrollable Panel
 
-To make the scrollbar appear when content exceeds panel height, specify
-`style="overflow: auto"` on Panelchildren.
+To enable a scrollbar when the content exceeds the panel height, set `style="overflow: auto"` on the Panelchildren component.
 
 ```xml
 <panel height="200px">
@@ -159,145 +123,62 @@ To make the scrollbar appear when content exceeds panel height, specify
 </panel>
 ```
 
-## Toolbar positions
+Try it
 
-Panel supports three kinds of [org.zkoss.zul.Toolbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbar.html)
-positions: `Top`, `Bottom` and `Foot`. For example:
+* [Panel Scrollable](https://zkfiddle.org/sample/lhk9fh/1-ZK-Component-Reference-Panel-Scrollable-Example?v=latest&t=Iceblue_Compact)
 
-![](/zk_component_ref/images/Panel-des.gif)
+
+### Toolbar Positions
+
+Panel supports three toolbar positions: `Top`, `Bottom`, and `Foot`. These toolbars can be added to the panel for specific functionalities.
+
+![Panel Positions](images/Panel-des.gif)
 
 ```xml
-<panel id="panel" framable="true" width="500px" height="550px"
+<panel id="panel" width="500px" height="550px"
     title="Panel component" floatable="true" movable="true"
     maximizable="true" minimizable="true" border="normal"
     collapsible="true" closable="true">
-        <toolbar>
-          ... // Top Toolbar of the panel
-        </toolbar>
-        <panelchildren>
-          ... // Each added child will show in the body content of the panel
-        </panelchildren>
-        <toolbar>
-          ... // Bottom Toolbar of the panel
-        </toolbar>
-        <toolbar>
-          ... // Foot Toolbar of the panel
-        </toolbar>
+    <toolbar>
+      ... // Top Toolbar of the panel
+    </toolbar>
+    <panelchildren>
+      ... // Content in the body of the panel
+    </panelchildren>
+    <toolbar>
+      ... // Bottom Toolbar of the panel
+    </toolbar>
+    <toolbar>
+      ... // Foot Toolbar of the panel
+    </toolbar>
 </panel>
 ```
 
-- Top Toolbar (Line 5): It is used to show the top toolbar close to the
-  body content of the panel. (It is an option)
-- Bottom Toolbar (Line 11): It is used to show the bottom toolbar close
-  to the body content of the panel. (It is an option)
-- Foot Toolbar (Line 14): It is used to show the operating button under
-  the body content with a few padding. (It is an option)
+Try it
 
-Please refer
-[Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website](https://www.zkoss.org/wiki/Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website)
-for details.
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onMove</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)</p>
-<p>Denotes the position of the window is moved by a user.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onOpen</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes user has opened or closed a component.</p>
-<p><strong><code>Note:</code></strong></p>
-<p>Unlike <code>onClose</code>, this event is only a notification.
-The</p>
-<p>client sends this event after opening or closing the</p>
-<p>component.</p>
-<p>It is useful to implement load-on-demand by listening to</p>
-<p>the <code>onOpen</code> event, and creating components the</p>
-<p>first time the component is opened.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onMaximize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)</p>
-<p>Denotes user has maximized a component.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onMinimize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)</p>
-<p>Denotes user has minimized a component.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onClose</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes the close button is pressed by a user, and the</p>
-<p>component shall detach itself.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onSize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)</p>
-<p>Denotes the panel's size is updated by a user.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onZIndex</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)</p>
-<p>Denotes the panel's zindex is updated by a user.</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
-
-# Supported Children
-
-- [ Panelchildren]({{site.baseurl}}/zk_component_ref/panel_children)
-
-# Use Cases
-
-| Version | Description                     | Example Location                               |
-|---------|---------------------------------|------------------------------------------------|
-| 5.0     | Portallayout, panels and events | <http://www.zkoss.org/forum/listComment/10765> |
-
-# Version History
+* [Panel Scrollable](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
 
+- Top Toolbar (Line 5): It is used to display a toolbar at the top, close to the body content of the panel.
+- Bottom Toolbar (Line 11): It is used to display a toolbar at the bottom, close to the body content of the panel.
+- Foot Toolbar (Line 14): It is used to show operating buttons below the body content with some padding.
 
-| Version | Date          | Content                                                                                           |
-|---------|---------------|---------------------------------------------------------------------------------------------------|
-| 5.0.3   | July, 2010    | The draggable property can be used to control the drag-ability in a portal layout.                |
-| 5.0.6   | January, 2010 | The framable property was deprecated. Please refer to [\#Border](#Border) for details. |
+For more details, refer to [Using Panel to Lay out Your Website](https://www.zkoss.org/wiki/Small_Talks/2008/July/Using_Panel_to_Lay_out_Your_Website).
 
+## Supported Events
 
+| Name           | Event Type                                   |Description |
+|----------------|----------------------------------------------|------------|
+| `onMove`       | Event: [MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html) | Denotes the position of the pnael is moved by a user. |
+| `onOpen`       | Event: [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. This event is only a notification sent after opening or closing the component. It can be used for implementing load-on-demand by creating components the first time the panel is opened.|
+| `onMaximize`   | Event: [MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html) | Denotes user has maximized a component. |
+| `onMinimize`   | Event: [MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html) | Denotes user has minimized a component.|
+| `onClose`      | Event: [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes the close button is pressed by a user, and the component shall detach itself. |
+| `onSize`       | Event: [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the panel's size is updated by a user.
+ |
+| `onZIndex`     | Event: [ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's z-index is updated by a user.|
+
+## Supported Children
+- [`Caption`](caption): Indicates that the `Panel` can only have one child component of type `Caption`.
+- [`Panelchildren`](panelchildren): Indicates that the `Panel` can only have one child component of type `Panelchildren`.
+- [`Toolbar`](../essential_components/toolbar): Indicates that the `Panel` can have up to three `Toolbar` components, which can be positioned at the top, bottom, and foot sections of the `Panel`.

@@ -1,33 +1,20 @@
-
-
 # Idspace
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)
 - JavaScript API: [zul.wgt.Idspace](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Idspace.html)
 
-# Employment/Purpose
+## Employment/Purpose
+The `Idspace` component, similar to a `Div`, implements the ID space in ZK. All descendant components of `Idspace`, including the `Idspace` itself, form an independent ID space. This allows developers to group components under a common ID space, simplifying the management of unique identifiers within each subset separately.
 
-`Idspace` is just like a
-[Div]({{site.baseurl}}/zk_component_ref/div) but implements
-the [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), all
-descendant components of Idspace (including the Idspace itself) form an
-independent ID space. Thus, you could use an idspace as the topmost
-component to group components. This way developers only need to maintain
-the uniqueness of each subset separately.
+**Since**: 8.0.3
 
-{% include version-badge.html version=8.0.3 %}
+To group components without rendering a `Div`, `Idspace` provides a "nodom" mold. This mold renders a no-DOM widget on the client-side, only displaying comment nodes for positioning purposes. It is important to note that using `hflex` or `vflex` in the children of a nodom element is not recommended.
 
-To group components without rendering a Div, `Idspace` provides "nodom"
-mold. It would render no-dom widget in client-side. It only renders
-comment nodes for positioning.
+## Example
 
-Notice that it's not recommended to use hflex/vflex in the children of
-nodom element.
+In this example, an `Idspace` component is used as the topmost component to group a `window` and a `div`, each containing a button with a unique ID and label. (Note: `window` is also an ID space in ZK.)
 
-# Example
-
-![](/zk_component_ref/images/ZKComRef_Idspace_Example.png)
+![Idspace Example](ZKComRef_Idspace_Example.png)
 
 ```xml
 <idspace>
@@ -40,45 +27,10 @@ nodom element.
 </idspace>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
+* [Idspace Example](https://zkfiddle.org/sample/164o6hq/1-ZK-Component-Reference-Idspace-Example?v=latest&t=Iceblue_Compact)
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+## Supported Children
 
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+`*ALL`: Indicates that the `Idspace` component can have any kind of ZK component as its child element. This allows you to include any ZK component within the `Idspace`, providing flexibility in structuring your UI. By grouping components under a common `Idspace`, you can simplify the management of unique identifiers within each subset separately.

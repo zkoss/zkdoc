@@ -1,20 +1,18 @@
-
-
 # Tabpanels
 
-- Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: [org.zkoss.zul.Tabpanels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanels.html)
-- JavaScript API: [zul.tab.Tabpanels](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanels.html)
+- **Demonstration**: [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
+- **Java API**: [org.zkoss.zul.Tabpanels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanels.html)
+- **JavaScript API**: [zul.tab.Tabpanels](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanels.html)
 
+## Employment/Purpose
 
-# Employment/Purpose
+A `tabpanels` component is a container for tab panels, which are a collection of tabpanel components.
 
-A `tabpanels` is the container for the tab panels, i.e., a collection of
-tabpanel components.
+## Example
 
-# Example
+The example below demonstrates the usage of the `tabpanels` component within a `tabbox`. In this example, two sets of tabs and tab panels are defined within separate `tabbox` components. The first `tabbox` displays tabs horizontally, while the second `tabbox` uses an accordion-style layout.
 
-![](/zk_component_ref/images/ZKComRef_Containers_Tabs.PNG)
+![Tabpanels Example](ZKComRef_Containers_Tabs.png)
 
 ```xml
 <zk>
@@ -42,43 +40,11 @@ tabpanel components.
 </zk>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
-
-# Supported Children
-
-[ Tabpanel]({{site.baseurl}}/zk_component_ref/tabbox/tabpanel)
-
-# Use Cases
-
-[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
-
-# Version History
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
 
+## Supported Children
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+[`Tabpanel`](tabpanel): Represents a single `Tabpanel` within the `Tabpanels` component. The `Tabpanels` component can include multiple `Tabpanel` components as its children.

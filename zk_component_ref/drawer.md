@@ -1,143 +1,93 @@
-
-
 # Drawer
 
-- Demonstration: [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
-- Java API: [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
-- JavaScript API: [zkmax.wgt.Drawer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Drawer.html)
+- **Demonstration:** [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
+- **Java API:** [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
+- **JavaScript API:** [zkmax.wgt.Drawer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Drawer.html)
 
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
+Available for ZK: [`Enterprise Edition`](https://www.zkoss.org/whyzk/zkee)
 
-# Employment/Purpose
+## Employment/Purpose
 
-A `Drawer` is a component that acts as a panel but sticks to the
-boundary of a web page. With this, you can make the page cleaner and put
-details into the Drawer for a better user experience.
+The Drawer component functions as a panel that remains attached to the boundary of a web page. By utilizing the Drawer, developers can maintain a cleaner page layout and enhance the user experience by organizing detailed information within the Drawer itself.
 
-# Example
+## Example
 
-In this example we dock a drawer on the right side and put detailed file
-information into the drawer.
-![](/zk_component_ref/images/ZK-Drawer-Example.png)
+The example below demonstrates the placement of a Drawer on the right side of the page and exhibits detailed file information contained within the Drawer:
 
-![](/zk_component_ref/images/ZK-Drawer-Example.gif)
+![ZK-Drawer-Example](ZK-Drawer-Example.png)
+
+![ZK-Drawer-Example](images/ZK-Drawer-Example.gif)
+
+In this example, a button labeled "Show File Info" is used to trigger the opening of the Drawer component with the title "File Information". Within the Drawer, a grid layout is applied to display specific file details such as Name, Size, and Dimensions.
 
 ```xml
-<button label="Show File Info" onClick="fi.open()"/>
-<drawer id="fi" title="File information">
-  <grid>
-    <rows>
-      <row>
-        <label value="Name"/>
-        1.jpg
-      </row>
-      <row>
-        <label value="Size"/>
-        1.8 Megabytes
-      </row>
-      <row>
-        <label value="Dimensions"/>
-        1920x1080
-      </row>
-    </rows>
-  </grid>
-</drawer>
+<zk>
+  <button label="Show File Info" onClick="fi.open()"/>
+  <drawer id="fi" title="File information">
+    <grid>
+      <rows>
+        <row>
+          <label value="Name"/>
+          1.jpg
+        </row>
+        <row>
+          <label value="Size"/>
+          1.8 Megabytes
+        </row>
+        <row>
+          <label value="Dimensions"/>
+          1920x1080
+        </row>
+      </rows>
+    </grid>
+  </drawer>
+</zk>
 ```
 
-# Open / Close the Drawer
-
-Both `visible` attribute and `open/close` methods allow you to open or
-close the Drawer.
-
-# Change Animation Speed
-
-This component respects the `data-animationspeed` attribute, please see
-[ Data-AnimationSpeed](/zuml_ref/data_animationspeed)
-
-# Properties
-
-## Autodrop
-
-![](/zk_component_ref/images/ZK-Drawer-Autodrop.gif)
-
-When enabled, the drawer will be opened automatically when the mouse
-cursor is near the page edge.
-
-This feature is not yet supported on mobile devices.
-
-## Closable
-
-Sets whether it is closeable by a user (displays the close button). If
-enabled, there is a button for users to close the drawer.
-
-Note that even if `closable` is false, users can still click outside the
-drawer to close it.
-
-## Mask
-
-Sets whether it is masked when the drawer is opened. By default, there
-is a translucent dark gray full-screen mask.
-
-Note that even if `mask` is false, users can still click outside the
-drawer to close it.
-
-## Position
-
-{% include DefaultValue.md value=right %}
-
-Sets the position of the drawer. Valid values are `left`, `right`, `top`
-and `bottom`.
-
-## Title
-
-Sets the title of this drawer. `null` means no title.
-
-# Supported Events
-
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onOpen</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes that the user has opened or closed a component.</p>
-<p>Note: unlike <code>onClose</code>, this event is only a notification.
-The client sends this event after opening or closing the
-component.</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
-
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
+Try it
+*  [Drawer with Grid](https://zkfiddle.org/sample/1g9so9c/1-ZK-Component-Reference-Drawer-Example?v=latest&t=Iceblue_Compact)
 
 
+## Open / Close the Drawer
 
-| Version | Date           | Content                                                                         |
-|---------|----------------|---------------------------------------------------------------------------------|
-| 9.0.0   | September 2019 | [ZK-4365](https://tracker.zkoss.org/browse/ZK-4365): Provide a drawer component |
+You can utilize both the `visible` attribute and the `open/close` methods to interact with the Drawer component for opening and closing it as needed.
 
+## Change Animation Speed
 
+The Drawer component supports the `data-animationspeed` attribute for adjusting the animation speed. Refer to [Data-AnimationSpeed](https://www.zkoss.org/javadoc/latest/zkref/ZUMLReference/ZUMLNamespaces/ClientAttribute/Data-AnimationSpeed.html) for more information.
+
+## Properties
+
+### Autodrop
+
+![ZK-Drawer-Autodrop](images/ZK-Drawer-Autodrop.gif)
+
+When enabled, the drawer will automatically open when the mouse cursor approaches the page edge. Note that this feature is not currently supported on mobile devices.
+
+### Closable
+
+Determines whether the Drawer can be closed by the user through the display of a close button. Even if the `closable` attribute is set to false, users can still close the Drawer by clicking outside of it.
+
+### Mask
+
+Controls whether a translucent dark gray full-screen mask is displayed when the Drawer is opened. Users can still close the Drawer by clicking outside of it, even when the `mask` attribute is set to false.
+
+### Position
+
+**Default Value:** `right`
+
+Specifies the placement position of the Drawer on the web page. Supported values include `left`, `right`, `top`, and `bottom`.
+
+### Title
+
+Sets the title of the Drawer component. A `null` value indicates no title for the Drawer.
+
+## Supported Events
+
+| Name   | Event Type                            | Description |
+|------------|-------------------------------------------|-------------|
+| `onOpen`   | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
+
+## Supported Children
+
+`*ALL`: Indicates that the Drawer component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Drawer, providing flexibility and customization options for your designs.

@@ -1,231 +1,151 @@
-
-
 # Tabbox
 
-- Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: [org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html)
-- JavaScript API: [zul.tab.Tabbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabbox.html)
+- **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
+- **Java API:** [`org.zkoss.zul.Tabbox`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html)
+- **JavaScript API:** [`zul.tab.Tabbox`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabbox.html)
 
+## Employment/Purpose
 
-# Employment/Purpose
+A Tabbox is a container used to display multiple tabbed groups of components. It provides a row of tabs at the top (or left or other location) of the tabbox, allowing users to switch between different groups. This component is helpful for organizing a large number of components into distinct groups contained within tab panels. Only one group is visible at a time, simplifying the user interface. When a tab of an invisible group is clicked, it becomes visible while the previously visible group becomes invisible. The currently visible group is referred to as ''selected''.
 
-A tabbox is a container used to display a set of tabbed groups of
-components. A row of tabs is displayed at the top (or left or other
-location) of tabbox which may be used to switch between each group. It
-allows developers to separate a large number of components into several
-groups (each group is contained in [a tabpanel]({{site.baseurl}}/zk_component_ref/tabbox/tabpanel)).
-Only one group is visible at the time, such that the user interface
-won't be too complicate to read. Once [the tab]({{site.baseurl}}/zk_component_ref/tabbox/tab) of an
-invisible group is clicked, it becomes visible and the previous visible
-group becomes invisible.
+Developers can retrieve the selected group using [`org.zkoss.zul.Tabbox#getSelectedPanel()`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedPanel()) or [`org.zkoss.zul.Tabbox#getSelectedIndex()`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedIndex()).
 
-The visible group is called *selected*, which can be retrieved by use of
-[org.zkoss.zul.Tabbox#getSelectedPanel()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedPanel()) or
-[org.zkoss.zul.Tabbox#getSelectedIndex()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html#getSelectedIndex()).
+## Example
 
-# Example
+The example below demonstrates the usage of a Tabbox component with two sets of tabs and tab panels. The first Tabbox is displayed with two tabs while the second Tabbox is using the 'accordion' mold to display two tabs in an accordion style.
 
-![](/zk_component_ref/images/ZKComRef_Tabbox_Examples.PNG)
-
+![Tabbox Example](ZKComRef_Tabbox_Examples.png)
 ```xml
 <zk>
-    <tabbox width="400px">
-        <tabs>
-            <tab label="Tab 1" />
-            <tab label="Tab 2" />
-        </tabs>
-        <tabpanels>
-            <tabpanel>This is panel 1</tabpanel>
-            <tabpanel>This is panel 2</tabpanel>
-        </tabpanels>
-    </tabbox>
-    <space />
-    <tabbox width="400px" mold="accordion">
-        <tabs>
-            <tab label="Tab 3" />
-            <tab label="Tab 4" />
-        </tabs>
-        <tabpanels>
-            <tabpanel>This is panel 3</tabpanel>
-            <tabpanel>This is panel 4</tabpanel>
-        </tabpanels>
-    </tabbox>
+	<tabbox width="400px">
+		<tabs>
+			<tab label="Tab 1" />
+			<tab label="Tab 2" />
+		</tabs>
+		<tabpanels>
+			<tabpanel>This is panel 1</tabpanel>
+			<tabpanel>This is panel 2</tabpanel>
+		</tabpanels>
+	</tabbox>
+	<space />
+	<tabbox width="400px" mold="accordion">
+		<tabs>
+			<tab label="Tab 3" />
+			<tab label="Tab 4" />
+		</tabs>
+		<tabpanels>
+			<tabpanel>This is panel 3</tabpanel>
+			<tabpanel>This is panel 4</tabpanel>
+		</tabpanels>
+	</tabbox>
 </zk>
 ```
 
-# Properties and Features
+Try it
 
-## Toolbar in Tabbox
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
-The Tabbox supports the inclusion of other controls within its tab bar,
-thus allowing more freedom and layout options when creating layouts
-which include a
-[toolbar]({{site.baseurl}}/zk_component_ref/toolbar).
-The screenshot below demonstrates an example Tabbox which includes extra
-controls in the tab bar acting like a menu system.
 
-Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient
-Tabbox.
+## Properties and Features
 
-![](/zk_component_ref/images/ZKComRef_Tabbox_Toolbar_Examples.png)
+### Toolbar in Tabbox
 
+The Tabbox component supports the inclusion of other controls within its tab bar, allowing for additional layout options such as creating layouts with a toolbar acting as a menu system. The example below shows a Tabbox with extra controls in the tab bar acting like a menu system.
+
+Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient Tabbox.
+
+![Tabbox Toolbar Examples](ZKComRef_Tabbox_Toolbar_Examples.png)
 ```xml
 <tabbox width="250px">
-    <tabs>
-        <tab label="Tab 1" closable="true" />
-        <tab label="Tab 2" closable="true" />
-        <tab label="Tab 3" closable="true" />
-        <tab label="Tab 4" closable="true" />
-        <tab label="Tab 5" closable="true" />
-    </tabs>
-    <toolbar>
-        <toolbarbutton image="/img/live.gif" onClick='alert("Live")' />
-        <toolbarbutton image="/img/defender.gif"
-            onClick='alert("Defender")' />
-        <toolbarbutton image="/img/battery.gif"
-            onClick='alert("Battery")' />
-    </toolbar>
-    <tabpanels>
-        <tabpanel>This is panel 1</tabpanel>
-        <tabpanel>This is panel 2 The second panel</tabpanel>
-        <tabpanel>This is panel 3</tabpanel>
-        <tabpanel>This is panel 4</tabpanel>
-        <tabpanel>This is panel 5</tabpanel>
-    </tabpanels>
+	<tabs>
+		<tab label="Tab 1" closable="true" />
+		<tab label="Tab 2" closable="true" />
+		<tab label="Tab 3" closable="true" />
+		<tab label="Tab 4" closable="true" />
+		<tab label="Tab 5" closable="true" />
+	</tabs>
+	<toolbar>
+		<toolbarbutton image="/img/live.gif" onClick='alert("Live")' />
+		<toolbarbutton image="/img/defender.gif" onClick='alert("Defender")' />
+		<toolbarbutton image="/img/battery.gif" onClick='alert("Battery")' />
+	</toolbar>
+	<tabpanels>
+		<tabpanel>This is panel 1</tabpanel>
+		<tabpanel>This is panel 2 The second panel</tabpanel>
+		<tabpanel>This is panel 3</tabpanel>
+		<tabpanel>This is panel 4</tabpanel>
+		<tabpanel>This is panel 5</tabpanel>
+	</tabpanels>
 </tabbox>
 ```
 
-## MaximalHeight
+Try it
 
-{% include version-badge.html version=7.0.0 %} In order to solve the problem where
-each tabpanel have different heights, we offer this feature called
-**MaximalHeight**. With this feature, every Tabpanel will be applied the
-maximum height among all the tabpanels i.e. if one tabpanel's height is
-at 300px while the rest is at 240px, all of the tabpanels will be
-applied with a height of 300px. This feature only works in the initial
-phase. The screenshot below demonstrates an example Tabbox which
-includes 3 tabpanels and all of them use the maximum height.
+* [Tabbox Toolbar](https://zkfiddle.org/sample/27mram5/1-ZK-Component-Reference-Tabbox-Toolbar-Example?v=latest&t=Iceblue_Compact)
+
+
+### MaximalHeight
+
+Starting from version 7.0.0, the Tabbox component introduced the `MaximalHeight` feature to ensure all tab panels have the same maximum height. This feature sets the maximum height among all tab panels, ensuring consistent height across all tabs. The screenshot below demonstrates a Tabbox with 3 tab panels using the `MaximalHeight` feature.
 
 Note: The Client ROD feature will be disabled if it is set to true.
 
-![](/zk_component_ref/images/tabbox_maximalHeight_0.png)![](/zk_component_ref/images/tabbox_maximalHeight_1.png)![](/zk_component_ref/images/tabbox_maximalHeight_2.png)
+![Tabbox maximalHeight](Tabbox_maximalHeight_0.png) ![Tabbox maximalHeight](Tabbox_maximalHeight_1.png) ![Tabbox maximalHeight](Tabbox_maximalHeight_2.png)
 
 ```xml
 <tabbox maximalHeight="true" width="300px">
-    <tabs id="tabs0">
-        <tab label="Tab1" />
-        <tab label="Tab2" />
-        <tab label="Tab3" />
-    </tabs>
-    <tabpanels id="pnls0">
-        <tabpanel>
-            <div>Tabpanel Content 1</div>
-            <div>Tabpanel Content 1</div>
-            <div>Tabpanel Content 1</div>
-        </tabpanel>
-        <tabpanel>
-            <div>Tabpanel Content 2</div>
-            <div>Tabpanel Content 2</div>
-        </tabpanel>
-        <tabpanel>
-            <div>Tabpanel Content 3</div>
-            <div>Tabpanel Content 3</div>
-            <div>Tabpanel Content 3</div>
-            <div>Tabpanel Content 3</div>
-        </tabpanel>
-    </tabpanels>
+	<tabs id="tabs0">
+		<tab label="Tab1" />
+		<tab label="Tab2" />
+		<tab label="Tab3" />
+	</tabs>
+	<tabpanels id="pnls0">
+		<tabpanel>
+			<div>Tabpanel Content 1</div>
+			<div>Tabpanel Content 1</div>
+			<div>Tabpanel Content 1</div>
+		</tabpanel>
+		<tabpanel>
+			<div>Tabpanel Content 2</div>
+			<div>Tabpanel Content 2</div>
+		</tabpanel>
+		<tabpanel>
+			<div>Tabpanel Content 3</div>
+			<div>Tabpanel Content 3</div>
+			<div>Tabpanel Content 3</div>
+			<div>Tabpanel Content 3</div>
+		</tabpanel>
+	</tabpanels>
 </tabbox>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onSelect</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
-<p>Denotes user has selected a tab. onSelect is sent to both tab and
-tabbox.</p></td>
-</tr>
-</tbody>
-</table>
+* [Tabbox MaximalHeight](https://zkfiddle.org/sample/3b2hmvq/1-ZK-Component-Reference-Tabbox-MaximalHeight-Example?v=latest&t=Iceblue_Compact)
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+## Supported Events
 
-# Supported Molds
+| **Name**   | **Event Type**                            |Description |
+|------------|-------------------------------------------|------------|
+| `onSelect` | **Event:** [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.|
 
-Available molds of a component are defined in lang.xml embedded in
-zul.jar.
+## Supported Molds
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/tabbox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>accordion</p>
-</center></td>
-<td>![](/zk_component_ref/images/tabbox_mold_accordion.png)</td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>accordion-lite</p>
-</center></td>
-<td><p>![](/zk_component_ref/images/tabbox_mold_accordion-lite.png)</td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>right</p>
-</center></td>
-<td>![](/zk_component_ref/images/tabbox_orient_vertical-right.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>bottom</p>
-</center></td>
-<td>![](/zk_component_ref/images/tabbox_orient_bottom.png‎)</td>
-</tr>
-</tbody>
-</table>
+| **Name**   | **Snapshot**                            |
+|------------|-------------------------------------------|
+|**Default:** |![Default Mold](tabbox_mold_default.png)|
+| **Accordion:** | ![Accordion Mold](tabbox_mold_accordion.png)|
 
-```xml
-<tabbox orient="bottom">
-</tabbox>
-```
+## Supported Orients
 
-- {% include version-badge.html version=7.0.0 %} Rename orient "horizontal" to
-  "top", "vertical" to "left" and add extra two orients named "bottom"
-  and "right"
+| **Name**   | **Snapshot**                            |
+|------------|-------------------------------------------|
+|**Top:**| ![Top Orientation](tabbox_orient_top.png)|
+|**Left:**| ![Left Orientation](tabbox_orient_vertical.png)|
+|**Right:**| ![Right Orientation](tabbox_orient_vertical-right.png)|
+|**Bottom:**| ![Bottom Orientation](tabbox_orient_bottom.png)|
 
-# Supported Children
-
-`*`[` Tabs`]({{site.baseurl}}/zk_component_ref/tabbox/tabs)`, `[` Tabpanels`]({{site.baseurl}}/zk_component_ref/tabbox/tabpanels)`, `[`Toolbar`]({{site.baseurl}}/zk_component_ref/toolbar)
-
-
+## Supported Children
+- [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
+- [`Tabpanels`](tabpanels): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.
+- [`Toolbar`](../essential_components/toolbar): Indicates that the `Tabbox` can only have one child component of type `Toolbar`.

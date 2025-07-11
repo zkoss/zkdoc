@@ -1,77 +1,45 @@
-
-
 # Nodom
 
-- Demonstration: N/A
+- Java API: [org.zkoss.zul.NoDOM](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/NoDOM.html)
+- JavaScript API: [zul.wgt.Nodom](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Nodom.html)
 
-# Employment/Purpose
+## Employment/Purpose
 
-`Nodom` is a ZK Component but only has server-side Java object and
-doesn't render any DOM elements and JavaScript widget at the
-client-side. It only renders comment nodes for positioning. Thus, if you
-want to control a group of components without unnecessary DOM elements,
-you can use a <nodom> as the outermost component to group components
-under a controller (composer/ViewModel) instead of a `Window` or a
-`Div`.
+The `Nodom` component in ZK is a server-side Java object that does not render any DOM elements or JavaScript widgets at the client-side. Instead, it renders comment nodes for positioning. This makes it ideal for controlling a group of components without introducing unnecessary DOM elements. You can use the `Nodom` component as the outermost container to group components under a controller (such as a composer or ViewModel) instead of using a `Window` or a `Div`.
 
-## Limitation
+## Limitations
+- The `Nodom` component does not support using `hflex` or `vflex` properties within itself and its children components.
 
-<nodom> does not support using `hflex/vflex` in itself and its children
-component.
+## Example
 
-# Example
+![Nodom Example](ZKComRef_Idspace_Example.png)
 
-![](/zk_component_ref/images/ZKComRef_Idspace_Example.png)
+In the following example, the `Nodom` component is used as the outermost container to group components under a ViewModel. The example includes a `button` component inside a `window` and another `button` component inside a `div`.
 
 ```xml
 <nodom viewModel="@id('vm')@init('foo.MyViewModel')">
-    <window border="normal">
-        <button id="btn" label="@init(vm.label)" />
-    </window>
-    <div>
-        <button id="btn" label="@init(vm.label)" />
-    </div>
+	<window border="normal">
+		<button id="btn" label="@init(vm.label)" />
+	</window>
+	<div>
+		<button id="btn" label="@init(vm.label)" />
+	</div>
 </nodom>
 ```
 
-# Supported Events
+```java
+public class MyViewModel {
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
+  public String getLabel() {
+		return "button";
+  }
+}
+```
 
-# Supported Children
+Try it
 
-`*ALL`
+* [Nodom Example](https://zkfiddle.org/sample/1l6ppia/2-ZK-Component-Reference-Nodom-Example?v=latest&t=Iceblue_Compact)
 
-# Use Cases
+## Supported Children
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date       | Content                     |
-|---------|------------|-----------------------------|
-| 8.0.3   | 2016/09/21 | Add the new Nodom component |
-|         |            |                             |
-
-
+`*ALL`: Indicates that the `Nodom` component can have any kind of ZK component as its child element. This allows you to include any ZK component within the `Nodom`, providing flexibility and customization options for your designs.

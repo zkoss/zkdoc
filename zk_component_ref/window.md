@@ -1,63 +1,41 @@
 # Window
 
-- Demonstration:
-  [Window](http://www.zkoss.org/zkdemo/window/positioning)
+- Demonstration: [Window](https://www.zkoss.org/zkdemo/window/positioning)
 - Java API: [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
-- JavaScript API: [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)
+- JavaScript API: [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window)
 
+## Employment/Purpose
+A ZK Window is a versatile component used to group other components. It acts as an owner of an ID space, allowing components contained within it to be uniquely identified. Windows can be overlapped, popped up, or embedded, and can also function as modal dialogs.
 
-# Employement/Purpose
+## Example
+The following XML code snippet demonstrates two different styles of windows:
 
-A window is, like HTML DIV tag, used to group components. Unlike other
-components, a window has the following characteristics.
-
-- A window is an owner of [an ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space). Any
-  component contained in a window, including itself, could be found by
-  use of
-  [org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)),
-  if it is assigned with an identifier.
-- A window could be overlapped, popup, and embedded.
-- A window could be a modal dialog.
-
-# Example
-
-![](/zk_component_ref/images/ZKComRef_Window_Multiple_Examples.PNG)
+![Window Examples](ZKComRef_Window_Multiple_Examples.png)
 
 ```xml
-    <window title="Embedded Style" border="normal" width="200px">Hello,
-        Embedded!
-    </window>
-    <window title="Overlapped Style" mode="overlapped" border="normal"
-            width="200px">Hello, Overlapped!
-    </window>
+<zk>
+    <window title="Embedded Style" border="normal" width="200px">Hello, Embedded!</window>
+    <window title="Overlapped Style" mode="overlapped" border="normal" width="200px">Hello, Overlapped!</window>
+</zk>
 ```
 
-# Window Modes
+Try it
 
-A window could be in one of five different modes:
+* [Window](https://zkfiddle.org/sample/o0987d/1-ZK-Component-Reference-Window-Example?v=latest&t=Iceblue_Compact)
 
-- embedded (**default**)
-- overlapped
-- popup
-- modal
-- highlighted and
+In the example above, the first window is displayed in an embedded style, while the second window is in an overlapped style.
 
-You could change the mode by the use of
-[org.zkoss.zul.Window#setMode(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setMode(java.lang.String)).
+## Window Modes
+A ZK Window can be in one of five different modes: 
+- Embedded (default)
+- Overlapped
+- Popup
+- Modal
+- Highlighted
 
-```xml
-<window title="Hi, I'm Overlapped" border="normal" mode="overlapped">
-...
-</window>
-```
+You can change the mode using the `setMode(String)` method or by invoking specific methods like `doOverlapped()`, `doPopup()`, `doModal()`, `doHighlighted()`, and `doEmbedded()`.
 
-Alternatively, you could invoke one of
-[org.zkoss.zul.Window#doOverlapped()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doOverlapped()),
-[org.zkoss.zul.Window#doPopup()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doPopup()),
-[org.zkoss.zul.Window#doModal()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doModal()),
-[org.zkoss.zul.Window#doHighlighted()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doHighlighted()), and
-[org.zkoss.zul.Window#doEmbedded()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doEmbedded()), as shown
-below.
+For example,
 
 ```xml
 <zk>
@@ -65,7 +43,8 @@ below.
         <caption>        
             <toolbarbutton label="Help"/>
         </caption>        
-        <checkbox label="Hello, Wolrd!"/>        
+        <checkbox label="Hello, Wolrd!"/>
+      	<button label="Restore" onClick="win.doEmbedded()"/>
     </window>    
         
     <button label="Overlap" onClick="win.doOverlapped();"/>    
@@ -76,184 +55,94 @@ below.
 </zk>
 ```
 
-## Embedded
+Try it
 
-An embedded window is placed inline with other components. In this mode,
-you cannot change its position, since the position is decided by the
-browser. It is the default mode since it is the most common appearance.
+* [Window Modes](https://zkfiddle.org/sample/2t9v3om/1-ZK-Component-Reference-Window-Modes-Example?v=latest&t=Iceblue_Compact)
+
+## Embedded
+An embedded window is placed inline with other components and cannot be repositioned since it is determined by the browser.
 
 ## Overlapped
-
-An overlapped window is overlapped with other components, such that
-users could drag it around and developer could set its position by
-[org.zkoss.zul.Window#setLeft(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setLeft(java.lang.String))
-and
-[org.zkoss.zul.Window#setTop(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setTop(java.lang.String))
-based on the entire scrollable area.
+An overlapped window can be dragged around and its position can be set using `setLeft(String)` and `setTop(String)`.
 
 ```xml
-<window title="My Overlapped" width="300px" mode="overlapped">
-</window>
+<window title="My Overlapped" width="300px" mode="overlapped"></window>
 ```
 
-An overlapped window is typically used to display the information that
-should co-exist with the current operation and should appear for a long
-time. You might have multiple overlapped windows and each for different
-set of information. If you want to show the information that will appear
-only temporarily (dismissed as soon as a user clicks somewhere else),
-you could use the popup mode as described in the next section, or the
-[Popup]({{site.baseurl}}/zk_component_ref/popup)
-component.
+An overlapped window is typically used to display the information that should co-exist with the current operation and should appear for a long time. You might have multiple overlapped windows and each for different set of information. If you want to show the information that will appear only temporarily (dismissed as soon as a user clicks somewhere else), you could use the popup mode as described in the next section, or the [Popup]({{site.baseurl}}/zk_component_ref/popup) component.
 
 ## Popup
+A popup window is similar to overlapped windows, except it is automatically closed when user clicks on any component other than the popup window itself or any of its descendants. Of course, you could dismiss it manually by making it invisible or detaching it.
 
-A popup window is similar to overlapped windows, except it is
-automatically closed when user clicks on any component other than the
-popup window itself or any of its descendants. Of course, you could
-dismiss it manually by making it invisible or detaching it.
+As its name suggested, it is designed to implement the popup windows. A typical application is to display information that won't obscure the current operation and are easy to close. A popup window is usually position around the focal point (such as a button). It can be done by use of `setPosition(String)` with `parent`.
 
-As its name suggested, it is designed to implement the popup windows. A
-typical application is to display information that won't obscure the
-current operation and are easy to close. A popup window is usually
-position around the focal point (such as a button). It can be done by
-use of
-[org.zkoss.zul.Window#setPosition(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setPosition(java.lang.String))
-with `parent`.
-
-For example, we could display a popup window right after a button as
-depicted below.
+For example, we could display a popup window right after a button as depicted below.
 
 ```xml
 <zk>
     <toolbarbutton label="More info" onClick="info.doPopup()"/><span>
-    <window id="info" visible="false" width="120px" border="normal" position="parent">
+    <window id="info" visible="false" width="220px" border="normal" position="parent">
     Here is more information
     </window>
     </span>
 </zk>
 ```
 
-where we specify `position="parent"`, and make it as a child of a
-[span]({{site.baseurl}}/zk_component_ref/span) component. The
-span component acts as an anchor point and the window is posited based
-on it.
+Try it
 
-In additions to popup windows, you could use
-[Popup]({{site.baseurl}}/zk_component_ref/popup)
-for displaying a popup. The popup component has more control how to
-position it (by the use of
-[org.zkoss.zul.Popup#open(org.zkoss.zk.ui.Component, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component, java.lang.String))).
+* [Window Popup](https://zkfiddle.org/sample/189e13/1-ZK-Component-Reference-Window-Popup-Example?v=latest&t=Iceblue_Compact)
+
+where we specify `position="parent"`, and make it as a child of a span component. The span component acts as an anchor point and the window is posited based on it.
+
+In additions to popup windows, you could use [Popup]({{site.baseurl}}/zk_component_ref/popup) for displaying a popup. The popup component has more control how to position it (by the use of [Popup.open(Component, String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component,_java.lang.String))).
 
 ## Modal and Highlighted
+Modal and highlighted windows provide a similar visual effect of blocking background content and enforcing focus on the window. Closing a modal window can be done by making it invisible or detaching it.
 
-By default, a modal window is the same as a highlighted window. You
-should consider them exactly the same.
+## Blocking Background Content
+A modal window limits user interaction to only the window itself, while multiple modal windows can be displayed with only the last one being active.
 
-### Blocking Background Content
+For instance, you could access only the textbox and button in the following example:
 
-A modal window provides the so-called *modal* effect that limits a user
-from accessing components other than the modal window. Users cannot
-access anything outside of the modal window, including clicking or
-tabbing.
+![Modalwindow](Modalwindow.png)
+You can have multiple modal windows at the same time, and a user can only access the last modal window. Once the last modal is dismissed (invisible or detached), the previous modal window will become the active modal window until it is dismissed.
 
-For instance, you could access only the textbox and button in the
-following example:
+## Dismiss
+Modal windows can be dismissed by making them invisible or detaching them from the page.
 
-![](/zk_component_ref/images/Modalwindow.png)
+## Position
+By default, modal windows are positioned at the center of the viewport, but the position can be changed using the `setPosition(String)`, `setLeft(String)`, and `setTop(String)` methods.
 
-You can have multiple modal windows at the same time, and a user can
-only access the last modal window. Once the last modal is dismissed
-(invisible or detached), the previous modal window will become the
-*active* modal window until it is dismissed.
-
-### Dismiss
-
-To dismiss a modal window, you can make it invisible
-([org.zkoss.zul.Window#setVisible(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setVisible(boolean))),
-or detach it from a page.
-
-### Position
-
-By default, a modal window is positioned at the center of the viewport.
-You can change the position by
-[org.zkoss.zul.Window#setPosition(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setPosition(java.lang.String))
-or
-[org.zkoss.zul.Window#setLeft(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setLeft(java.lang.String))
-and
-[org.zkoss.zul.Window#setTop(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setTop(java.lang.String))
-based on the current viewport.
-
-### Enforce Gaining the Focus
-
-When a modal (or highlighted) window is displayed, ZK enforces focus on
-its first focusable child component if a user clicks anywhere on the
-page. This behavior ensures that users remain within the context of the
-modal interaction, which is a common design pattern for modal dialogs.
-The enforced focus prevents users from interacting with the background
-content, maintaining the modal window’s purpose as a self-contained
-prompt requiring user attention.
+## Enforce Gaining the Focus
+Modal windows will enforce focus on their first focusable child component when clicked elsewhere on the page.
 
 ## Modal Windows and Event Processing Threads
+By default, events are processed in the same thread that serves the HTTP request. However, you can configure ZK to process events in an individual thread, allowing event listeners to suspend and resume execution. To enable the event processing thread, refer to the ZK Configuration Reference.
 
-{% include Notice.html text='Event processing thread is disabled by default since 5.0. For the older version, it is enabled by default' %} 
-By default, events are processed in the same thread that serves the HTTP
-request (so-called Servlet thread). However, you could configure ZK to
-process events in an individual thread, such that the event listener
-could suspend the execution at any time, and resume later. For how to
-enable the event processing thread, please refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_system_config_element#The_disable-event-thread_Element).
+Modal windows in ZK suspend execution until dismissed, making them useful for scenarios where user input is required. In the following example, `f1()` is called only after `win1` is dismissed, while `g1()` is called immediately after `win2` becomes highlighted:
 
-> ------------------------------------------------------------------------
->
-> Notice that, for better integration with other frameworks, such as
-> Spring, it is suggested to *disable* the event processing thread
-> (default). For more information, please refer to the [Event Threads]({{site.baseurl}}/zk_dev_ref/ui_patterns/event_threads)
-> section.
-
-Once the event thread is enabled, a modal window will behave differently
-from other modes:
-[org.zkoss.zul.Window#doModal()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doModal()) will suspend
-the execution until dismissed (invisible, detached or mode changed). It
-is convenient to implement something that has to wait for user's further
-input.
-
-As depicted in the following example, `f1()` is called only after `win1`
-is dismissed, while `g1()` is called immediately right after `win2`
-becomes highlighted:
-
-```xml
-win1.doModal(); //the execution is suspended until win1 is closed
+```java
+win1.doModal(); // Execution is suspended until win1 is closed
 f1();
-win2.doHighlighted(); //the execution won't be suspended
-g1()
+win2.doHighlighted(); // Execution won't be suspended
+g1();
 ```
 
-# Properties and Features
+## Properties and Features
+### Border
+The `border` property specifies whether to display a border for the window. The default value is `none`, meaning no border is displayed.
 
-## Border
+### Closable
 
-The `border` property
-([org.zkoss.zul.Window#setBorder(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setBorder(java.lang.String)))
-specifies whether to display a border for window. The default style
-sheets support only `normal` and `none`. The default value is `none`,
-i.e., no border.
+By setting the `closable` property ([Window.setClosable(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/window.html#setClosable(boolean)) to true, a close button is displayed on the window. This button allows the user to close the window by clicking it. When the user clicks the close button, an `onClose` event is sent to the window. By default, the `onClose` event detaches the window itself.
 
-## Closable
+#### onClose Event
 
-By setting the `closable` property
-([org.zkoss.zul.Window#setClosable(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setClosable(boolean)))
-to true, a close button is shown for the window, which enables a to
-close the window by clicking the button. Once the user clicks on the
-`close` button, an `onClose` event is sent to the window which is
-processed by the `onClose` method of the `Window` component. Then,
-`onClose`, by default, detaches the window itself.
+The `onClose` event can be overridden to customize its behavior or register a listener to change the default functionality. For instance, you can choose to hide the window instead of closing it.
 
-### The onClose Event
+For example,
 
-You can override it to do whatever you want. Or, you can register your
-own listener to change the default behavior. For example, you might
-choose to hide the window rather than close it.
-
-![](/zk_component_ref/images/10000000000000CE000000546D42136E.png)
+In the following example, the window hides itself when the close button is clicked. Additionally, `event.stopPropagation()` is used to prevent the default `onClose` handler from being executed.
 
 ```xml
 <window closable="true" title="Detach on Close" border="normal" width="200px"
@@ -262,31 +151,24 @@ choose to hide the window rather than close it.
 </window>
 ```
 
-Notice that `event.stopPropagation()`
-([org.zkoss.zk.ui.event.Event#stopPropagation()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#stopPropagation()))
-must be called to prevent the default onClose handler
-([org.zkoss.zul.Window#onClose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#onClose())) being
-called.
+Try it
 
-**Tip**: If the window is a popup, the `onOpen` event will be sent to
-the window with open=false, when the popup is closed due to the user
-clicking outside of the window, or pressing `ESC`.
+* [Window onClose](https://zkfiddle.org/sample/1okml07/1-ZK-Component-Reference-Window-OnClose-Example?v=latest&t=Iceblue_Compact)
 
-The `onClose` is sent to ask the server to detach or to hide the window.
-By default, the window is detached. Of course, the application can
-override this behavior and do whatever it wants as described above.
+**Note**: If the window is a popup, the `onOpen` event will be triggered with `open=false` when the popup is closed by clicking outside the window or pressing `ESC`.
 
-On the other hand, `onOpen` is a notification. It is sent to notify the
-application that the client has hidden the window. The application
-cannot prevent it from hiding or changing the behavior to be detached.
+The `onClose` event asks the server to detach or hide the window, with the default behavior being detachment. However, the application can override this behavior to implement custom actions.
 
-## ContentStyle and ContentSclass
+On the other hand, the `onOpen` event is a notification sent to the application when the client hides the window. The application cannot prevent this action or change the default behavior to detachment.
 
-You can customize the look and feel of window's content block by
-specifying the `contentStyle` property
-([org.zkoss.zul.Window#setContentStyle(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setContentStyle(java.lang.String))).
+By utilizing the `closable` property and handling the `onClose` event, developers can create interactive and user-friendly windows in their ZK applications.
 
-![](/zk_component_ref/images/10000000000000CB0000003292CB8174.png)
+
+### Content Style and Content Sclass
+
+Developers can customize the look and feel of a window's content block by using the `contentStyle` property. This property allows for styling options such as background color. 
+
+For example,
 
 ```xml
 <zk>
@@ -296,146 +178,67 @@ specifying the `contentStyle` property
 </zk>
 ```
 
+Try it
+
+* [Window ContentStyle](https://zkfiddle.org/sample/2qn6u7j/1-ZK-Component-Reference-Window-ContentStyle-Example?v=latest&t=Iceblue_Compact)
+
 ### Scrollable Window
 
-A typical use of the `contentStyle` attribute is to make a window
-scrollable as follows.
-
-<figure>
-<img src="images/100000000000009C0000006819656516.png"
-title="100000000000009C0000006819656516.png" />
-<figcaption>100000000000009C0000006819656516.png</figcaption>
-</figure>
+The `contentStyle` attribute can be used to make a window scrollable by setting `overflow:auto`.
 
 ```xml
-<window id="win" title="Hi" width="150px" height="100px" contentStyle="overflow:auto" border="normal">
-     This is a long line wrapped over several lines, and more content to display. 
-     Finally, the scrollbar becomes visible.
-     This is another line.
+<window id="win" title="Hi" width="250px" height="100px" contentStyle="overflow:auto" border="normal">
+    This is a long line wrapped over several lines, and more content to display. 
+    Finally, the scrollbar becomes visible.
+    This is another line.
 </window>
 ```
 
-Note: For IE 7's overflow bug, also use **position:relative** with
-overflow:auto
+Try it
 
-## Position
+* [Window Scrollable](https://zkfiddle.org/sample/1ikflcp/1-ZK-Component-Reference-Window-Scrollable-Example?v=latest&t=Iceblue_Compact)
 
-By default, its value is null. That is, an overlapped/popup window is
-positioned by the `left` and `top` attributes based on the entire
-scrollable area, while a highlighted/modal window is positioned at the
-center of the viewport.
+### Position
 
-If you specify a value in this attribute, it takes higher priority than
-`left` and `top` attributes. Hence, a window is rendered upon this
-position and ignore `left` and `top`.
+The `position` attribute can be used to control the positioning of the window. It can be set to values such as `center`, `left`, `right`, `top`, or `bottom`.
 
-For example, the following code snippet positions the window to the
-right-bottom corner.
+For example, the following code snippet positions the window to the right-bottom corner.
 
 ```xml
 <window width="300px" mode="overlapped" position="right,bottom">
- ...
+    Positioned at the bottom right.
+</window>
 ```
+The `position`'s value can be a combination of the following constants by separating them with commas (`,`).
 
-The `position`'s value can be a combination of the following constants
-by separating them with commas (`,`).
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Constant</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>center</p>
-</center></td>
-<td><p>Position the window at the center. If <code>left</code> or
-<code>right</code> is also specified, it means the vertical center. If
-<code>top</code> or <code>bottom</code> is also specified, it means the
-horizontal center. If none of <code>left</code>, <code>right</code>,
-<code>top</code> and <code>bottom</code> is specified, it means the
-center in both directions.</p>
-<p>Both the <code>left</code> and <code>top</code> properties are
-ignored.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>left</p>
-</center></td>
-<td><p>Position the window at the left edge.</p>
-<p>The <code>left</code> property is ignored.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>right</p>
-</center></td>
-<td><p>Position the window at the right edge.</p>
-<p>The <code>left</code> property is ignored.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>top</p>
-</center></td>
-<td><p>Position the window at the top.</p>
-<p>The <code>top</code> property is ignored.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>bottom</p>
-</center></td>
-<td><p>Position the window at the bottom.</p>
-<p>The <code>top</code> property is ignored.</p></td>
-</tr>
-</tbody>
-</table>
+* [Window Position](https://zkfiddle.org/sample/374g5t/1-ZK-Component-Reference-Window-Position-Example?v=latest&t=Iceblue_Compact)
+
+
+| Constant | Description |
+|----------|-------------|
+| center   | Position the window at the center. If `left` or `right` is also specified, it means the vertical center. If `top` or `bottom` is also specified, it means the horizontal center. If none of `left`, `right`, `top` and `bottom` is specified, it means the center in both directions. Both the `left` and `top` properties are ignored. |
+| left     | Position the window at the left edge. The `setLeft()` method is ignored. |
+| right    | Position the window at the right edge. The `setLeft()` method is ignored. |
+| top      | Position the window at the top. The `setTop()` method is ignored. |
+| bottom   | Position the window at the bottom. The `setTop()` method is ignored. |
 
 ### Based on Viewport
 
-ZK calculates the `position` based on the current
-[viewport](https://developer.mozilla.org/en-US/docs/Glossary/Viewport),
-not the whole scrollable area's boundary. So if you scroll down a page
-for 1000px, the `top` means the top of the viewport instead of the top
-of the page.
+The `position` attribute is calculated based on the current viewport of the window, taking into account scrolling.
 
 ### Based on the Parent
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Constant</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>parent</p>
-</center></td>
-<td><p>Position the window relative to the top-left corner of the parent
-component. See specific details in the [popup section](#popup). If <code>left</code> or
-<code>top</code> is also specified, the position will be offset from the
-top-left corner of the parent component by the same amount.</p>
-<p>This position <strong>cannot</strong> be combined with other
-positions mentioned in the previous table.</p></td>
-</tr>
-</tbody>
-</table>
+The `position` attribute can also be set to `parent` to position the window relative to the top-left corner of the parent component.
 
-## Sizable
+This position **cannot** be combined with other positions mentioned in the previous table.
 
-If you allow users to resize the window, you can set the `sizable`
-attribute to true as follows.
+### Sizable
+
+By setting the `sizable` attribute to true, users can resize the window by dragging the borders.
+
+For example,
 
 ```xml
 <window id="win" title="Sizable Window" border="normal" width="200px" sizable="true">
@@ -444,167 +247,83 @@ attribute to true as follows.
 </window>
 ```
 
-Once allowed, users can resize the window by dragging the borders.
+Try it
 
-### The onSize Event
+* [Window Sizable](https://zkfiddle.org/sample/2muvpdl/1-ZK-Component-Reference-Window-Sizable-Example?v=latest&t=Iceblue_Compact)
 
-Once a user resizes the window, the `onSize` event is sent with an
-instance of the `org.zkoss.zul.event.SizeEvent`. Notice that the window
-is resized before the`onSize` event is sent. In other words, the event
-serves as a notification that you generally ignore. Of course, you can
-do whatever you want in the event listener.
+#### onSize Event
+Once a user resizes the window, the onSize event is sent with an instance of the `org.zkoss.zul.event.SizeEvent`. Notice that the window is resized before the `onSize` event is sent. In other words, the event serves as a notification that you generally ignore. Of course, you can do whatever you want in the event listener.
 
-**Note**: If the user drags the upper or left border, the `onMove` event
-is also sent since the position has changed, too.
+**Note:** If the user drags the upper or left border, the `onMove` event is also sent since the position has changed, too.
 
-## Title and Caption
+### Title and Caption
+A window in ZK can have a title, a caption, and a border. The title is specified using the `title` attribute, and the caption is specified by declaring a child component called `caption`. Any children of the `caption` component will appear on the right-hand side of the title.
 
-A window might have a title, a caption and a border. The title is
-specified by the `title` attribute. The caption is specified by
-declaring a child component called `caption`. All children of the
-`caption` component will appear on right hand side of the title.
-
-![](/zk_component_ref/images/10000000000001640000004CEB4969A9.png)
+![Window with Caption Example](Window_Caption_Example.png)
 
 ```xml
 <zk>
-    <window title="Demo" border="normal" width="350px">
-        <caption>
-            <toolbarbutton label="More" />
-            <toolbarbutton label="Help" />
-        </caption>
-        <toolbar>
-            <toolbarbutton label="Save" />
-            <toolbarbutton label="Cancel" />
-        </toolbar>
-        What is your favorite framework?
-        <radiogroup>
-            <radio label="ZK" />
-            <radio label="JSF" />
-        </radiogroup>
-    </window>
+	<window title="Demo" border="normal" width="350px">
+		<caption>
+			<toolbarbutton label="More" />
+			<toolbarbutton label="Help" />
+		</caption>
+		<toolbar>
+			<toolbarbutton label="Save" />
+			<toolbarbutton label="Cancel" />
+		</toolbar>
+		What is your favorite framework?
+		<radiogroup>
+			<radio label="ZK" />
+			<radio label="JSF" />
+		</radiogroup>
+	</window>
 </zk>
 ```
 
-You are also able to specify a label and an image within a caption, and
-then the appearance is as follows.
+Try it
 
-![](/zk_component_ref/images/10000000000000CD00000042FABAB4CE.png)
+* [Window Caption](https://zkfiddle.org/sample/3pfhoku/1-ZK-Component-Reference-Window-Caption-Example?v=latest&t=Iceblue_Compact)
+
+
+Additionally, you can specify a label and an image within a caption, as shown below:
+
+![Window with Label and Image Example](Window_Label_Image_Example.png)
 
 ```xml
- 
 <zk>
-    <window id="win" title="Main" border="normal" width="200px">
-        <caption image="/images/ZK-Logo.PNG" label="Hi there!"/>
-        <checkbox label="Hello, World!"/>
-    </window>
+	<window id="win" title="Main" border="normal" width="200px">
+	    <caption image="/img/ZK-Logo.gif" label="Hi there!"/>
+	    <checkbox label="Hello, World!"/>
+	</window>
 </zk>
 ```
 
-# Troubleshooting with browser issues
+Try it
 
-- There's an issue for Listbox/Grid in a window, please reference [Grid in window get a wrong display in IE7/IE6](https://sourceforge.net/tracker/?func=detail&atid=785191&aid=3291179&group_id=152762%7C3291179)
+* [Window Caption](https://zkfiddle.org/sample/176o4ka/1-ZK-Component-Reference-Window-Caption-Image-Example?v=latest&t=Iceblue_Compact)
 
-# Common Dialogs
+## Common Dialogs
 
-The XUL component set supports the following common dialogs to simplify
-some common tasks.
+The Window component supports various common dialogs to simplify common tasks:
+- [Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html)
+- [Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
+- [Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html)
 
-- [Messagebox]({{site.baseurl}}/zk_component_ref/messagebox)
-- [Fileupload]({{site.baseurl}}/zk_component_ref/fileupload)
-- [Filedownload]({{site.baseurl}}/zk_component_ref/filedownload)
+## Supported Events
 
-# Supported Events
+| Name         | Event Type                                       |Description |
+|--------------|--------------------------------------------------|----------- |
+| `onMove`       | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the position of the window is moved by a user.             |
+| `onOpen`       | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. **Note:** Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| `onClose`      | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself.               |
+| `onMaximize`   | **Event:** [MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html) | Denotes user has maximize a component.|
+| `onMinimize`   | **Event:** [MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html) | Denotes user has minimize a component.|
+| `onSize`       | **Event:** [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the window's size is updated by a user.     |
+| `onZIndex`     | **Event:** [ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the window's zindex is updated by a user.  |
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p><code>onMove</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Denotes the position of the window is moved by a user.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onOpen</code></p>
-</center></td>
-<td><p><strong>Event:</strong>[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes user has opened or closed a component.</p>
-<p><strong><code>Note:</code></strong></p>
-<p>Unlike <code>onClose</code>, this event is only a notification.
-The</p>
-<p>client sends this event after opening or closing the</p>
-<p>component.</p>
-<p>It is useful to implement load-on-demand by listening to</p>
-<p>the <code>onOpen</code> event, and creating components when the</p>
-<p>first time the component is opened.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onClose</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Denotes the close button is pressed by a user, and the</p>
-<p>component shall detach itself.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onMaximize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)</p>
-<p>Denotes user has maximize a component.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onMinimize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)</p>
-<p>Denotes user has minimize a component.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>onSize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)</p>
-<p>Denotes the panel's size is updated by a user.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>onZIndex</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)</p>
-<p>Denotes the panel's zindex is updated by a user.</p></td>
-</tr>
-</tbody>
-</table>
+## Supported Children
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+`*ALL`: Indicates that the `Window` component can have any kind of ZK component as its child element. This allows you to include any ZK component within the `Window`, providing flexibility and customization options for your designs.
 
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description                                                       | Example Location                              |
-|---------|-------------------------------------------------------------------|-----------------------------------------------|
-| 5.0+    | How to create a modal Window and communicate with it              | <http://www.zkoss.org/forum/listComment/9785> |
-| 3.6+    | Best practises on creating a pop-up window to display PDF reports | <http://www.zkoss.org/forum/listComment/9305> |
-|         |                                                                   |                                               |
+Note: Only one [`Caption`](caption) component is allowed in the `Window` and it must be the first component.

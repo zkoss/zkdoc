@@ -1,73 +1,42 @@
+# Panelchildren
 
-
-# Panel Children
-
-- Demonstration: [Panel](http://www.zkoss.org/zkdemo/window/panel)
+- Demonstration: [Panel Demo](https://www.zkoss.org/zkdemo/window/panel)
 - Java API: [org.zkoss.zul.Panelchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panelchildren.html)
-- JavaScript API:
-  [zul.wnd.Panelchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panelchildren.html)
+- JavaScript API: [zul.wnd.Panelchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panelchildren.html)
 
+## Employment/Purpose
 
-# Employment/Purpose
+Panelchildren is a component used within the Panel component to manage each child element that will be displayed within the body of the Panel. It ensures that the size of Panelchildren is automatically calculated by the Panel, making properties such as `setWidth(String)`, `setHeight(String)`, `setHflex(String)`, and `setVflex(String)` read-only.
 
-Panelchildren is used for Panel component to manage each child who will
-be shown in the body of Panel. Note that the size of Panelchildren is
-automatically calculated by Panel so both setWidth(String) and
-setHeight(String) are read-only.
+## Example
 
-# Example
+The following example demonstrates the usage of Panelchildren within Panel components:
 
-![](/zk_component_ref/images/ZKComRef_Panel_Simple_Examples.PNG)
+![Panel Simple Examples](ZKComRef_Panel_Simple_Examples.png)
 
 ```xml
-<panel height="100px" width="200px" style="margin-bottom:10px"
-     title="Panel1" border="normal" maximizable="true"
-     collapsible="true">
-     <panelchildren>PanelContent1</panelchildren>
-</panel>
-<panel height="100px" width="200px" framable="true" title="Panel2"
-     border="normal" maximizable="true" style="margin-bottom:10px">
-     <panelchildren>PanelContent2</panelchildren>
-</panel>
+<zk>
+    <panel height="100px" width="200px" style="margin-bottom:10px"
+       title="Panel1" border="normal" maximizable="true"
+       collapsible="true">
+       <panelchildren>PanelContent1</panelchildren>
+    </panel>
+    <panel height="100px" width="200px" title="Panel2"
+       border="normal" maximizable="true" style="margin-bottom:10px">
+       <panelchildren>PanelContent2</panelchildren>
+    </panel>
+</zk>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
-
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-[ Panel]({{site.baseurl}}/zk_component_ref/panel#Use_Cases)
-
-# Version History
+* [Panelchildren Example](https://zkfiddle.org/sample/260lpts/1-ZK-Component-Reference-Panelchildren-Example?v=latest&t=Iceblue_Compact)
 
 
+In the above example:
+- Two Panel components are created with specified attributes such as height, width, title, border, and more.
+- Inside each Panel, Panelchildren elements are used to define the content to be displayed within the Panel body.
 
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
+## Supported Children
 
-
+`*ALL`: Indicates that the `Panelchildren` component can have any kind of ZK component as its child element. This allows you to include any ZK component within the `Panelchildren`, providing flexibility and customization options for your designs.

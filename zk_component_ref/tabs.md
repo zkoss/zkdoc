@@ -1,19 +1,17 @@
-
-
 # Tabs
 
-- Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
+- *Demonstration*: [Tabbox](https://www.zkoss.org/zkdemo/tabbox)
 - Java API: [org.zkoss.zul.Tabs](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabs.html)
 - JavaScript API: [zul.tab.Tabs](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabs.html)
 
+## Employment/Purpose
+The `tabs` component serves as a container for multiple `tab` components. It allows organizing content within a tabbed interface where users can switch between different sections or views by clicking on tabs.
 
-# Employment/Purpose
+## Example
 
-A `tabs` is the container for the `tab` components.
+The example below demonstrates the usage of the `Tabs` component in a ZK application:
 
-# Example
-
-![](/zk_component_ref/images/ZKComRef_Containers_Tabs.PNG)
+![Tabs Example](ZKComRef_Containers_Tabs.png)
 
 ```xml
 <zk>
@@ -27,7 +25,7 @@ A `tabs` is the container for the `tab` components.
             <tabpanel>This is panel 2</tabpanel>
         </tabpanels>
     </tabbox>
-    <space />
+	<space />
     <tabbox width="400px" mold="accordion">
         <tabs>
             <tab label="Tab 3" />
@@ -41,43 +39,10 @@ A `tabs` is the container for the `tab` components.
 </zk>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+## Supported Children
 
-# Supported Children
-
-[ Tab]({{site.baseurl}}/zk_component_ref/tabbox/tab)
-
-# Use Cases
-
-[ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+[`Tab`](tab): Represents a single tab within the `Tabs` component. The `Tabs` component can include multiple `Tab` components as its children.

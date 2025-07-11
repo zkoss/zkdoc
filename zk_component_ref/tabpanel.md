@@ -1,91 +1,53 @@
-
-
 # Tabpanel
 
-- Demonstration: [Tabbox](http://www.zkoss.org/zkdemo/tabbox)
-- Java API: [org.zkoss.zul.Tabpanel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanel.html)
-- JavaScript API: [zul.tab.Tabpanel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanel.html)
+- **Demonstration:** [Tabbox](https://www.zkoss.org/zkdemo/tabbox)
+- **Java API:** [`org.zkoss.zul.Tabpanel`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanel.html)
+- **JavaScript API:** [`zul.tab.Tabpanel`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanel.html)
 
+### Employment/Purpose
 
-# Employment/Purpose
+A `tabpanel` serves as the content container for a single tab within a tabbox. It is used to organize and display a group of components under a specific tab. Each `tabpanel` is associated with a specific tab within the tabbox, with the first `tabpanel` corresponding to the first tab, the second `tabpanel` corresponding to the second tab, and so on.
 
-A `tabpanel`is the body of a single tab panel. You would place the
-content for a group of components within a tab panel. The first
-`tabpanel`corresponds to the first `tab,`the second
-`tabpanel`corresponds to the second `tab`and so on.
+### Example
 
-# Example
+The example demonstrates the usage of `tabpanel` within a tabbox and tabpanels in ZK:
 
-![](/zk_component_ref/images/ZKComRef_Containers_Tabs.PNG)
+- Two tabboxes with tabs labeled 'Tab 1' and 'Tab 2'.
+- Corresponding tabpanels displaying 'This is panel 1' and 'This is panel 2'.
+- Another tabbox with accordion mold and tabs labeled 'Tab 3' and 'Tab 4'.
+- Tabpanels within the accordion tabbox showcasing 'This is panel 3' and 'This is panel 4'.
 
+![Tabs](ZKComRef_Containers_Tabs.png)
 ```xml
 <zk>
-    <tabbox width="400px">
-        <tabs>
-            <tab label="Tab 1" />
-            <tab label="Tab 2" />
-        </tabs>
-        <tabpanels>
-            <tabpanel>This is panel 1</tabpanel>
-            <tabpanel>This is panel 2</tabpanel>
-        </tabpanels>
-    </tabbox>
-    <space />
-    <tabbox width="400px" mold="accordion">
-        <tabs>
-            <tab label="Tab 3" />
-            <tab label="Tab 4" />
-        </tabs>
-        <tabpanels>
-            <tabpanel>This is panel 3</tabpanel>
-            <tabpanel>This is panel 4</tabpanel>
-        </tabpanels>
-    </tabbox>
+	<tabbox width="400px">
+		<tabs>
+			<tab label="Tab 1" />
+			<tab label="Tab 2" />
+		</tabs>
+		<tabpanels>
+			<tabpanel>This is panel 1</tabpanel>
+			<tabpanel>This is panel 2</tabpanel>
+		</tabpanels>
+	</tabbox>
+	<space />
+	<tabbox width="400px" mold="accordion">
+		<tabs>
+			<tab label="Tab 3" />
+			<tab label="Tab 4" />
+		</tabs>
+		<tabpanels>
+			<tabpanel>This is panel 3</tabpanel>
+			<tabpanel>This is panel 4</tabpanel>
+		</tabpanels>
+	</tabbox>
 </zk>
 ```
 
-# Supported Events
+Try it
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
+* [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/base_components/xulelement#Supported_Events)
+## Supported Children
 
-# Supported Children
-
-`*ALL`
-
-# Use Cases
-
-| Version | Description                              | Example Location                                                                             |
-|---------|------------------------------------------|----------------------------------------------------------------------------------------------|
-| 3.6     | How to put a scrollbar inside a tabpanel | [<http://www.zkoss.org/forum/listComment/9889>](http://www.zkoss.org/forum/listComment/9889) |
-| 3.6     | How to make a tabpanel loaded on demand  | [<http://www.zkoss.org/forum/listComment/6236>](http://www.zkoss.org/forum/listComment/6236) |
-
-See also: [ Tabbox]({{site.baseurl}}/zk_component_ref/tabbox#Use_Cases)
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
+`*ALL`: The `Tabpanel` component is a container component that can hold various kinds of components. It allows you to add any kind of component as its child.
