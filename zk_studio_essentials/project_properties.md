@@ -65,6 +65,3 @@ this off for a performance boost.
   
 Checking this option will enable Hyperlink Navigation within ZUL Editor.
 Turn this off for a performance boost.
-
-[Category:ZK Studio](category:zk_studio)
-[Category:IDE](category:ide)

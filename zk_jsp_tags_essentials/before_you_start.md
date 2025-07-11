@@ -23,7 +23,7 @@ list some guides about how to use ZK:
 
 <!-- -->
 
-- [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref)
+- [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/overture/overture)
 
 **Note:** ZK JSP Tags is one of solutions to use ZK within JSP. It
 provides a set of JSP tags that allow developers to specify ZK

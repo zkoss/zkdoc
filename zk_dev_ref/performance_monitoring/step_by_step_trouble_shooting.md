@@ -573,7 +573,7 @@ related documentation
 If you see more Sessions than you expect, your session/desktop timeout
 might be too long, or too many desktops give you a hint that the desktop
 cleanup process is not functioning properly, also
-[http://books.zkoss.org/wiki/{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops reusing desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops)
+[{{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops reusing desktops]({{site.baseurl}}/zk_dev_ref/performance_tips/reuse_desktops)
 can help.
 
 ### ZK Server Configuration

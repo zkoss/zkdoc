@@ -12,7 +12,7 @@
 
 `since 6.0.1`
 
-- [Create a ZK project by ZK Studio](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio)
+- [Create a ZK project by ZK Studio](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio)
 - Add the following portlet.xml file under /WEB-INF
 
 ```xml

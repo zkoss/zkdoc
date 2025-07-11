@@ -36,7 +36,7 @@ ZK supports the Jakarta servlet configuration starting from ZK
 ```
 
 For a more in-depth look at the pom.xml file configuration, please refer
-to the [ the Resolving ZK Framework Artifacts via Maven page](setting_up_ide/maven/resolving_zk_framework_artifacts_via_maven)
+to the [ the Resolving ZK Framework Artifacts via Maven page](/zk_installation_guide/maven_setup)
 .
 
 If your project uses the servlet-API dependency, you will need to update
@@ -145,7 +145,7 @@ You can then start your project as a maven build, using
 ## Run on server through eclipse
 
 You can run in debug mode on a Tomcat server from eclipse by following
-the configuration shown in the [ quick start with Eclipse and Tomcat ](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio)
+the configuration shown in the [ quick start with Eclipse and Tomcat ](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio)
 guide, while using a [\| compatible tomcat version](http://tomcat.apache.org/whichversion.html).
 
 ## Run on server and remotely debug with JPDA

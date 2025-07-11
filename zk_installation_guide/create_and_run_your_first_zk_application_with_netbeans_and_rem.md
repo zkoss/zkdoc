@@ -3,7 +3,7 @@
 # Maven Recommended
 
 The recommended way to use ZK in NetBeans is to import a maven project.
-Reference [ this document](setting_up_ide/maven/resolving_zk_framework_artifacts_via_maven)
+Reference [ this document](/zk_installation_guide/maven_setup)
 for sample pom file.
 
 # Install NetBeans REM

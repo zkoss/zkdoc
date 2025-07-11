@@ -82,20 +82,20 @@ zk_essentials:
         url: /zk_essentials/handling_user_input/mvc_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_input/mvc_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvc_approach/construct_a_form_style_page
           - title: Populate Components with Data
-            url: /zk_essentials/handling_user_input/mvc_approach/populate-components-with-data
+            url: /zk_essentials/handling_user_input/mvc_approach/populate_components_with_data
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvc_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvc_approach/save_and-reload-data
       - title: MVVM Pattern
         url: /zk_essentials/handling_user_input/mvvm_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_input/mvvm_approach/construct-a-form-style-page
+            url: /zk_essentials/handling_user_input/mvvm_approach/construct_a-form-style-page
           - title: Load Data into Components
-            url: /zk_essentials/handling_user_input/mvvm_approach/load-data-to-components
+            url: /zk_essentials/handling_user_input/mvvm_approach/load_data-to-components
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvvm_approach/save-and-reload-data
+            url: /zk_essentials/handling_user_input/mvvm_approach/save_and-reload-data
   - title: 4. Implementing CRUD
     url: /zk_essentials/implementing_crud/
     children:
@@ -242,7 +242,7 @@ zk_mvvm_ref:
       - title: Using NavigationModel
         url: /zk_mvvm_ref/advanced/using_navigationmodel
       - title: Performance Tips
-        url: /zk_mvvm_ref/advanced/performance-tips
+        url: /zk_mvvm_ref/advanced/performance_tips
   - title: Configuration
     url: /zk_mvvm_ref/configuration/index
   - title: Annotations in ViewModel
@@ -1486,7 +1486,7 @@ zk_dev_ref:
     url: /zk_dev_ref/ui_composing/ui_composing
     children:
       - title: Component-based UI
-        url: /zk_dev_ref/ui_composing/component-based_ui
+        url: /zk_dev_ref/ui_composing/component_based_ui
       - title: ID Space
         url: /zk_dev_ref/ui_composing/id_space
       - title: ZUML
@@ -1505,7 +1505,7 @@ zk_dev_ref:
           - title: Iterative Evaluation
             url: /zk_dev_ref/ui_composing/iterative_evaluation
           - title: On-demand Evaluation
-            url: /zk_dev_ref/ui_composing/on-demand_evaluation
+            url: /zk_dev_ref/ui_composing/on_demand_evaluation
           - title: Include a Page
             url: /zk_dev_ref/ui_composing/include_a_page
           - title: Load ZUML in Java
@@ -1524,7 +1524,7 @@ zk_dev_ref:
       - title: Composite Component
         url: /zk_dev_ref/ui_composing/composite_component
       - title: Client-side UI Composing
-        url: /zk_dev_ref/ui_composing/client-side_ui_composing
+        url: /zk_dev_ref/ui_composing/client_side_ui_composing
       - title: Shadow for MVC
         url: /zk_dev_ref/ui_composing/shadow_for_mvc
   - title: Event Handling
@@ -1539,7 +1539,7 @@ zk_dev_ref:
       - title: Event Queues
         url: /zk_dev_ref/event_handling/event_queues
       - title: Client-side Event Listening
-        url: /zk_dev_ref/event_handling/client-side_event_listening
+        url: /zk_dev_ref/event_handling/client_side_event_listening
   - title: MVC
     url: /zk_dev_ref/mvc/mvc
     children:
@@ -1738,9 +1738,9 @@ zk_dev_ref:
           - title: Theme Template
             url: /zk_dev_ref/theming_and_styling/theme_template
           - title: Archive-based Themes
-            url: /zk_dev_ref/theming_and_styling/archive-based_themes
+            url: /zk_dev_ref/theming_and_styling/archive_based_themes
           - title: Folder-based Themes
-            url: /zk_dev_ref/theming_and_styling/folder-based_themes
+            url: /zk_dev_ref/theming_and_styling/folder_based_themes
       - title: Understanding the Theming Subsystem
         url: /zk_dev_ref/theming_and_styling/understanding_the_theming_subsystem
         children:
@@ -1772,7 +1772,7 @@ zk_dev_ref:
       - title: The First Day of the Week
         url: /zk_dev_ref/internationalization/the_first_day_of_the_week
       - title: Locale-Dependent Resources
-        url: /zk_dev_ref/internationalization/locale-dependent_resources
+        url: /zk_dev_ref/internationalization/locale_ependent_resources
       - title: Warning and Error Messages
         url: /zk_dev_ref/internationalization/warning_and_error_messages
   - title: Server Push
