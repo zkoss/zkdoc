@@ -29,6 +29,6 @@ component's namespace, such as `zul`. For example,
 <textbox z:value="@thisIsValueNotAnnot()" xmlns:z="zul"/>
 ```
 
-For the syntax of annotations, please refer to [ZK Developer's Reference: Annotations]({{site.baseurl}}/zk_dev_ref/annotations).
+For the syntax of annotations, please refer to [ZK Developer's Reference: Annotations]({{site.baseurl}}/zk_dev_ref/annotations/annotations).
 
 

@@ -75,7 +75,7 @@ To specify the server in Eclipse, please follow the instructions below:
 
 Select **File \\ New \\ Project...** in Eclipse's menu and it will
 display a new project wizard. Click **ZK Project** to create a new ZK
-project. For detailed steps, please refer to [Create a New ZK Project]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/new_zk_project)
+project. For detailed steps, please refer to [Create a New ZK Project]({{site.baseurl}}/zk_studio_essentials/new_zk_project)
 
 ## Create a new ZUL file
 

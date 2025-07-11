@@ -89,10 +89,10 @@ We suggest using shadow component
 as a replacement of children binding.
 
 [ ZK Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) provides
-a powerful way called [Children Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index/children_binding)
+a powerful way called [Children Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/children_binding)
 to render a template based on the data (such as a list of elements).
 Moreover, the UI will be updated automatically if the data has been
-changed. For more information, please refer to [the Children Binding section]({{site.baseurl}}/zk_mvvm_ref/data_binding/index/children_binding).
+changed. For more information, please refer to [the Children Binding section]({{site.baseurl}}/zk_mvvm_ref/data_binding/children_binding).
 
 # Version History
 

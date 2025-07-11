@@ -74,7 +74,7 @@ and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/late
 href="ZK_Developer&#39;s_Reference/ui_composing/ZUML/Scripts_in_ZUML"
 title="wikilink">ZK Developer's Reference: Scripts in ZUML</a></li>
 <li><a
-href="{{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zscript_to_mvc_extractor"
+href="{{site.baseurl}}/zk_studio_essentials/zscript_to_mvc_extractor"
 title="wikilink">ZK Studio Essentials: MVC Extractor</a></li>
 </ul></td>
 </tr>

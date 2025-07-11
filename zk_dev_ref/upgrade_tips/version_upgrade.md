@@ -203,7 +203,7 @@ To estimate the upgrading effort, we suggest a checklist:
 1.  Check Custom Components
       
     check if there is any
-    [{{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon]({{site.baseurl}}/zk_component_dev_essentials/creating_the_configuration_files/the_language_addon)
+    [{{site.baseurl}}/zk_component_dev_essentials/the_language_addon]({{site.baseurl}}/zk_component_dev_essentials/the_language_addon)
     that might declare custom components. Since you might need to review
     it after the upgrade.
 2.  Check configuration description (zk.xml)

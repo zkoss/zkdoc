@@ -12,7 +12,7 @@ Using ZK to generate XML output is straightforward:
 3.  Maps the file extension to the XML component set
 
 The XML component set also provides some special components, such as
-[transformer]({{site.baseurl}}/zk_component_ref/xml_components/transformer)
+[transformer]({{site.baseurl}}/zk_component_ref/transformer)
 that supports XSTL. For more information please refer to [XML Components]({{site.baseurl}}/zk_component_ref/xml_components).
 
 # Use the XML Component Set

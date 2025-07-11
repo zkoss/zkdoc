@@ -113,7 +113,7 @@ Note:
 - You need **at least one data field**.
 
 Hint: If you can't wait to play around with the component, you can jump
-to [ next section]({{site.baseurl}}/zk_pivottable_essentials/working_with_pivottable/create_pivottable)
+to [ next section]({{site.baseurl}}/zk_pivottable_essentials/create_pivottable)
 and come back to read further if necessary.
 
  

@@ -32,7 +32,7 @@ version of your imported ZK Packages.
 ![](images/studio-preference-package.png)
 
 Another way to import ZK package is through ZK Storage view, please
-refer to [Configure ZK Binary Distribution]({{site.baseurl}}/zk_studio_essentials/features_of_zk_studio/zks#Configure_ZK_Binary_Distribution)
+refer to [Configure ZK Binary Distribution]({{site.baseurl}}/zk_studio_essentials/zks#Configure_ZK_Binary_Distribution)
 
 # ZUL Editor
 

@@ -282,7 +282,7 @@ It depends on the number of components and the type and amount of bindings you a
 
 
 ## How is client MVVM different from fragment?
-* [fragment](/zk_component_ref/containers/fragment) integrates Vue framework.
+* [fragment](/zk_component_ref/fragment) integrates Vue framework.
 
 Since Vue supports different data binding syntax from ZK MVVM, not all features can be integrated with ZK. The integration focuses on supporting basic and commonly shared data binding syntax.
 
@@ -291,4 +291,4 @@ Since Vue supports different data binding syntax from ZK MVVM, not all features 
 Hence, it can support a more complete set of data-binding syntax and behavior. Also, it allows you to migrate your existing server MVVM to client MVVM easily.
 
 ## Is client MVVM specific for clustering environment?
-The client MVVM is not specifically designed for a clustered environment, it has the same level of clustering support as server MVVM. It still keeps the Desktop and some component states in a server. When deploying to a clustering environment, you still need to follow the instructions in [ZK Developer's Reference/Clustering]({{site.baseurl}}/zk_dev_ref/clustering).
+The client MVVM is not specifically designed for a clustered environment, it has the same level of clustering support as server MVVM. It still keeps the Desktop and some component states in a server. When deploying to a clustering environment, you still need to follow the instructions in [ZK Developer's Reference/Clustering]({{site.baseurl}}/zk_dev_ref/clustering/clustering).

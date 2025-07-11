@@ -40,7 +40,7 @@ whether you are evaluating or you are a premium user.
 
 ### Premium users only
 
-- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
+- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
 
   
 If you are our customer, please apply for a premium maven account to use
@@ -166,9 +166,9 @@ settings file.
 If you have problem switching from the evaluation repository to the
 licensed one, please check the followings:
 
-- 1 **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Repository)
-- 2\. [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Login_authentication)
-- 3\. [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/quick_start/using_maven#Purge_local_repository_evaluation_cache)
+- 1 **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Repository)
+- 2\. [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
+- 3\. [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Purge_local_repository_evaluation_cache)
 
 ##### Purge local repository evaluation cache
 

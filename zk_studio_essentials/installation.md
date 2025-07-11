@@ -41,7 +41,7 @@ downloaded at [Apache Tomcat](http://tomcat.apache.org).
 Download the zip file of Tomcat distribution and extract it to a proper
 location (with no illegal characters or space in the path). Tomcat
 requires configuration before it can be used with Eclipse, this process
-is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk_studio_essentials/begin_your_first_zk_project/create_a_new_zk_project#Running_the_ZK_Project).
+is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk_studio_essentials/create_a_new_zk_project#Running_the_ZK_Project).
 
 **Tips:**
 

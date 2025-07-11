@@ -167,7 +167,7 @@ public void init(@CookieParam("nosuch") @HeaderParam("user-agent") String guess)
 
 Retrieve ZK Context Object
 --------------------------
-You can also receive ZK context object by `@ContextObject` with various `org.zkoss.bind.annotation.ContextType ` including [Execution](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html), [Desktop](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html), [Session](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html), [BindContext](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindContext.html), [Binder](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Binder.html), etc. We list all available context objects you can retrieve by ` @ContextObject ` in [Syntax/ViewModel/Parameters/@ContextParam](../syntax/contextparam.html)
+You can also receive ZK context object by `@ContextObject` with various `org.zkoss.bind.annotation.ContextType ` including [Execution](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html), [Desktop](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html), [Session](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html), [BindContext](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindContext.html), [Binder](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Binder.html), etc. We list all available context objects you can retrieve by ` @ContextObject ` in [Syntax/ViewModel/Parameters/@ContextParam](../syntax/contextparam)
 
 We retrieve current binding source component and ViewModel's view component at initial method and command method.
 
