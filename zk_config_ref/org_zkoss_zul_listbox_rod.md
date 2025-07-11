@@ -8,7 +8,7 @@ client scrolling. On large models, this will avoid sending the full
 content during page rendering.
 
 See
-\[<{{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand#ROD:_Listbox>,
+\[<{{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#ROD:_Listbox>,
 performance documentation\] for additional information.
 
 Default: `false`

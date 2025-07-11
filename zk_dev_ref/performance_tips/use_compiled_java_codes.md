@@ -14,12 +14,12 @@ example, with ZK MVC
 ```
 
 You can handle all events and components in `foo.MyComposer`. By the use
-of [ auto-wiring]({{site.baseurl}}/zk_component_ref/event_listening#Composer_and_Event_Listener_Autowiring),
+of [ auto-wiring]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Composer_and_Event_Listener_Autowiring),
 it is straightforward to handle events and components.
 
 ## Event Handler Is zscript
 
-In addition to the `zscript` element, [ the event handler declared in a ZUL page]({{site.baseurl}}/zk_component_ref/event_listening#Declare_an_Event_Handler_in_a_ZUL_page)
+In addition to the `zscript` element, [ the event handler declared in a ZUL page]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Declare_an_Event_Handler_in_a_ZUL_page)
 is also interpreted at the runtime. For example,
 
 ```xml

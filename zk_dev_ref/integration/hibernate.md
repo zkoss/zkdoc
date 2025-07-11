@@ -512,7 +512,7 @@ public class OrderDao {
 
 # Lazy Initialization Issue Under Render on Demand
 
-Some AU requests cannot be interfered by developers,such as a "[Render On Demand]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand)"
+Some AU requests cannot be interfered by developers,such as a "[Render On Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand)"
 request where the rendering request is handled implicitly by a component
 itself. Under this situation, if a component needs to **render some data
 from a detached object's lazy-loaded collection**, developers won't have

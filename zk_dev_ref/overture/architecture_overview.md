@@ -183,3 +183,31 @@ applicable.
 
 [^3]: . From the server's viewpoint, an Ajax request is another type of
     HTTP request.
+
+
+# Page: created for each ZUML
+
+A page (<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> ) is a
+collection of components. A page confines components belonging to it,
+such that they will be displayed in a certain portion of the browser. A
+page is automatically created when ZK loader interprets a ZUML page.
+
+# Desktop: for serving the same URL request
+
+A ZUML page might include another ZUML pages directly or indirectly.
+Since these pages are created for serving the same URL request, they are
+collectively called a desktop. In other
+word, a **desktop is a collection of pages for serving the same URL
+request for one user**. As a ZK application interacts with user, more
+pages might be added to a desktop and some might be removed from a
+desktop. Similarly, a component might be added to or removed from a
+page.
+
+<!--![](zk_basic_desktop.jpg) -->
+
+Notice that both pages and desktops are created and remove implicitly.
+There are no API to create or remove them. A page is create each time
+ZUML loads a page. A page is removed when ZK finds it is no longer
+referenced. A desktop is created when the first ZUML page is loaded.
+
+

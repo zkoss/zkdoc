@@ -5,6 +5,6 @@ section we will discuss how to declare UI, including [XML-based approach]({{site
 
 This section describes more general and overall concepts of UI
 composing. For more detailed and specific topics, please refer to the
-[UI Patterns]({{site.baseurl}}/zk_dev_ref/ui_patterns) section.
+[UI Patterns]({{site.baseurl}}/zk_dev_ref/ui_patterns/ui_patterns) section.
 For detailed information on each individual component, please refer to
 the [ZK Component Reference](/zk_component_ref/introduction)).

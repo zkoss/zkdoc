@@ -20,7 +20,7 @@ have either no parameter or one parameter of the specific event type
 (corresponding to the event listened) with `@Listen` in a controller.
 You should specify event listening rule in the annotation's element
 value. Then ZK will "wire" the method to the specified components for
-specified events. ZK provides [various wiring selectors]({{site.baseurl}}/zk_dev_ref/mvc/wire Event Listeners) to specify in the
+specified events. ZK provides [various wiring selectors]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners) to specify in the
 annotation.
 
 ## Listen "Save" button Clicking

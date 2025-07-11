@@ -20,7 +20,7 @@ You can specify any number of `them-uri` as follows.
 ```
 
 If you want to replace a default theme, you have to use `theme-uri` with
-`disable-theme-uri`. Please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling) for
+`disable-theme-uri`. Please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theming_and_styling) for
 more information.
 
 **Notice:**

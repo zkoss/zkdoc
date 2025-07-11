@@ -106,7 +106,7 @@ it uses servlet 3 comet. [ Learn more here]({{site.baseurl}}/zk_dev_ref/server_p
 
 Some PE/EE features are now available for you to use, but you will have
 to enable them by yourself. For example if you have a big grid or
-listbox, you can [ turn on render on demand]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand)
+listbox, you can [ turn on render on demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand)
 to boost its performance.
 
 Please reference the documentation of each feature to see if any

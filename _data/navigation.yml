@@ -1527,6 +1527,8 @@ zk_dev_ref:
         url: /zk_dev_ref/ui_composing/client_side_ui_composing
       - title: Shadow for MVC
         url: /zk_dev_ref/ui_composing/shadow_for_mvc
+      - title: Access UI Components with Path
+        url: /zk_dev_ref/ui_composing/access_ui_components_with_path
   - title: Event Handling
     url: /zk_dev_ref/event_handling/event_handling
     children:
@@ -1772,9 +1774,11 @@ zk_dev_ref:
       - title: The First Day of the Week
         url: /zk_dev_ref/internationalization/the_first_day_of_the_week
       - title: Locale-Dependent Resources
-        url: /zk_dev_ref/internationalization/locale_ependent_resources
+        url: /zk_dev_ref/internationalization/locale_dependent_resources
       - title: Warning and Error Messages
         url: /zk_dev_ref/internationalization/warning_and_error_messages
+      - title: ZK Messages
+        url: /zk_dev_ref/internationalization/zk_messages
   - title: Server Push
     url: /zk_dev_ref/server_push/server_push
     children:

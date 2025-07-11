@@ -42,3 +42,17 @@ the [ZK binary distribution]({{site.baseurl}}/zk_installation_guide/the_content_
 
 This section is about the general use of ZUML. For a complete reference,
 please refer to [ZUML Reference](/zuml_ref/languages).
+
+# Implicit Objects
+
+Besides components created by user, there are implicit objects created
+automatically. These implicit objects enable developers to access
+components more efficiently, get information about system, client. And
+developer may utilize implicit objects to pass variables such as:
+`self, spaceOwner, page, desktop, execution, session, application, componentScope, spaceScope, pageScope, desktopScope, sessionScope, applicationScope, requestScope, arg, each, forEachStatus, event`
+
+The corresponding java classes of implicit objects are located at
+[Package org.zkoss.zk.ui](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/package-summary.html)
+
+Please refer to [Implicit Objects](/zuml_ref/implicit_objects__predefinedvariables_)
+for detailed explanation.

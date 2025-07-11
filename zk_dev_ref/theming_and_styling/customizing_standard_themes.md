@@ -38,7 +38,7 @@ specifying different values.
 
 Notice that the library properties control the theme for the whole
 application. If you want to provide <i>per-user</i> theme (like zkdemo
-does), you have to [ implement a theme provider]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_providers).
+does), you have to [ implement a theme provider](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Understanding_the_Theming_Subsystem/Providing_Theme_Resources).
 
 ## Font Size
 

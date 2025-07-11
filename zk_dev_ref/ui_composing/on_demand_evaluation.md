@@ -129,7 +129,7 @@ matter which condition is satisfied.
 If you specify an URI without any conditions, the ZUML document of the
 URI will be loaded from the very beginning. In other words, it has the
 same effect as using
-[include]({{site.baseurl}}/zk_dev_ref/ui_composing/include).
+[include]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page).
 
 ```xml
 <div fulfill="=another.zul"/>

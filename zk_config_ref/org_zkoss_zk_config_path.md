@@ -36,7 +36,7 @@ file.
 
 For example, assume you put the configuration in a file called
 `/configs/zk-production.xml`, then you could specify
-`-Dorg.zkoss.zk.config.path=`[`file:/configs/zk-production.xml`](file:/configs/zk_production_xml)
+`-Dorg.zkoss.zk.config.path=`[`file:/configs/zk-production.xml`](file://configs/zk_production_xml)
 as one of the arguments when starting the Web server.
 
 Another example is to provide an ID generator for the testing purpose.

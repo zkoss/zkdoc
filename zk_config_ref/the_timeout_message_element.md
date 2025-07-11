@@ -6,7 +6,7 @@
 
 `[Optional]`
 
-`[Default: ` `a message called `[`org.zkoss.zk.mesg.MZk`#UPDATE_OBSOLETE_PAGE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/mesg/MZk`.html#UPDATE_OBSOLETE_PAGE)` defined in `[`msgzk.properties`](zk_messages/english/msgzk.properties)`]`
+`[Default: ` `a message called `[`org.zkoss.zk.mesg.MZk`#UPDATE_OBSOLETE_PAGE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/mesg/MZk`.html#UPDATE_OBSOLETE_PAGE)` defined in [msgzk.properties](/zk_dev_ref/internationalization/zk_messages)]
 
 It specifies the message to show when the session is timeout. Notice
 that it is used only if the <timeout-uri> is **not** specified.

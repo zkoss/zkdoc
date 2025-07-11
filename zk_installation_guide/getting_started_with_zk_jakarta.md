@@ -9,7 +9,7 @@ softwares described in this example when installing yourself.
 
 # Environment setup
 
-Please refer to the [ the eclipse and maven quick start guide](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)
+Please refer to the [ the eclipse and maven quick start guide](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven)
 environment setup.
 
 # Project configuration
@@ -132,7 +132,7 @@ support up to jetty 9, which is not compatible with Jakarta servlet.
 
 ## Run from maven
 
-Refer to the approach described in [ the eclipse and maven quick start](quick_start/create_and_run_your_first_zk_application_with_eclipse_and_maven)
+Refer to the approach described in [ the eclipse and maven quick start](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven)
 guide.
 
 When configuring your application's pom file, use a jetty version that

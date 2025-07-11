@@ -28,7 +28,7 @@ Reference\].
 
 The *view* is UI -- a composition of
 [components]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui).
-As described in the [UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing) section, UI
+As described in the [UI Composing]({{site.baseurl}}/zk_dev_ref/ui_composing/ui_composing) section, UI
 can be implemented by [a ZUML document]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) or [in Java]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet). For the
 sake of description, ZUML is used to illustrate the concept and
 features.

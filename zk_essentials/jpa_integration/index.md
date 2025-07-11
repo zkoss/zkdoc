@@ -46,7 +46,7 @@ demonstrate how to integrate Spring with JPA.
 
 ## Source Code
 
-As we mentioned in the [Project Struecture](../project_structure), our source code has 3 branches in github. The source code of this chapter's example belongs to the branch: **zk8-jpa**.
+As we mentioned in the [Project Struecture](../intro/project_structure), our source code has 3 branches in github. The source code of this chapter's example belongs to the branch: **zk8-jpa**.
 
 We don't create new examples in this chapter, but we add 2 DAO classes
 implemented in JPA under the package `org.zkoss.essentials.services.impl`.

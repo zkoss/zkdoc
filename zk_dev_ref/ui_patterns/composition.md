@@ -100,7 +100,7 @@ rendered one-by-one.
 In a complex templating environment, it might not be appropriate to put
 fragments in the target page (e.g., `foo/index.zul` in the above
 example), since you might want to use the same collection of fragments
-in several target pages. It can be easily by use of [the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/include)
+in several target pages. It can be easily by use of [the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page)
 as follows.
 
 ```xml
@@ -126,7 +126,7 @@ documents, such as
 
 If you want to use [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html)
 inside any of the containers (like Div, Window, Tabbox), you have to use
-[the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/include)
+[the include component]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page)
 and set its mode *Defer* :  
 **Note**: You have to specify
 [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) as of the initiators

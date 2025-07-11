@@ -384,7 +384,7 @@ For Maven to successfully resolve these dependencies **groupid** and
 **artifactid** must match with those published on ZK Maven repository as
 they constitute what is known as Maven repository coordinates. For a
 complete list of all ZK library groupid and artifactid combinations
-please take a look at a [sample pom.xml](setting_up_ide/maven/use_zk_maven_repository_without_ide#Sample_of_pom.xml)
+please take a look at a [sample pom.xml](/zk_installation_guide/maven_setup#sample-of-pomxml)
 file that lists dependencies for all publically available ZK libraries
 on ZK Maven repository.
 

@@ -1,7 +1,7 @@
 # Construct a Form Style Page
 
 Building a user interface using the MVVM approach is not different from
-the [MVC approach](../mvc_approach/construct-a-form-style-page).
+the [MVC approach](../mvc_approach/construct_a_form_style_page).
 
 
 **Extracted from chapter3/profile-mvvm-property.zul**

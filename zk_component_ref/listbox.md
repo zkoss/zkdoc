@@ -1345,7 +1345,7 @@ the value as **ignore.change**.
 `[inherit: true]`
 
 It specifies whether to enable ROD (render-on-demand). For more
-information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand).
+information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
 
 ## org.zkoss.zul.listbox.preloadSize
 

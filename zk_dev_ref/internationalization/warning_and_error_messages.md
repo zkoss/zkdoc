@@ -22,13 +22,13 @@ These files are Locale depedent. For example, the message file in
 If you want to translate messages to another language, you can add your
 own property files named with the correct Locale, and put them to the
 `/metainfo/mesg` directory of the classpath. Of course, it is always
-better to contribute back. Please take a look at [ZK Messages](zk_messages) for all available translations. If
+better to contribute back. Please take a look at [ZK Messages](/zk_dev_ref/internationalization/zk_messages) for all available translations. If
 you'd like to contribute, just add the language to it and notify us at
 info@zkoss.org.
 
 # Change particular message
 
-Look for the specific message you want to change at [ZK Messages](zk_messages) first. Then, override it according to
+Look for the specific message you want to change at [ZK Messages](/zk_dev_ref/internationalization/zk_messages) first. Then, override it according to
 the following sections.
 
 ## Defined in a Properties File
@@ -46,9 +46,9 @@ MZk.3000=my customized message here
 
 Notice the prefix `MZk`, and `3000` is the error code and you can find
 it at
-[ZK_Messages/German/msgzk_de.properties](zk_messages/german/msgzk_de_properties)
+[ZK_Messages/German/msgzk_de.properties](/zk_dev_ref/internationalization/zk_messages)
 
-The same pattern applies to the [ other message files](zk_messages/german) such as
+The same pattern applies to the [ other message files](/zk_dev_ref/internationalization/zk_messages) such as
 
 <table>
 <thead>

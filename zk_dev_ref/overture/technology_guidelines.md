@@ -196,7 +196,7 @@ administration with, let's say, data entry. Here are some guidelines:
 It does not matter whether the UI shares the same template (such as
 header and footer) or not because it will be easy anyway to create
 similar multiple pages (by the use of
-[inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/include),
+[inclusion]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page),
 [templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 and
 [composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component)).
@@ -286,7 +286,7 @@ component, it consumes the server's memory.
 - [ZK Developer's Reference: Performance Tips\|Native vs. XHTML]({{site.baseurl}}/zk_dev_ref/performance_tips/use_native_namespace_instead_of_xhtml_namespace)
 - [ZK Developer's Reference: Performance Tips: Stubonly]({{site.baseurl}}/zk_dev_ref/performance_tips/specify_stubonly_for_client_only_components)
 
-# [Include]({{site.baseurl}}/zk_dev_ref/ui_composing/include), [Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component), [Composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) and [Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
+# [Include]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page), [Macro]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component), [Composite]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) and [Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/templating)
 
 They allow developers to modularize the UI such that it becomes easier
 to develop, maintain and reuse.

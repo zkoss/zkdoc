@@ -597,7 +597,7 @@ can help.
 
 - consider/check render on demand settings
   - [client_render_on_demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
-  - [turn_on_render_on_demand]({{site.baseurl}}/zk_dev_ref/integration/turn_on_render_on_demand)
+  - [turn_on_render_on_demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand)
   - [org.zkoss.zul.client.rod](/zk_config_ref/org_zkoss_zul_client_rod)
   - [org.zkoss.zul.grid.initRodSize](/zk_config_ref/org_zkoss_zul_grid_initrodsize)
   - [org.zkoss.zul.listbox.initRodSize](/zk_config_ref/org_zkoss_zul_listbox_initrodsize)

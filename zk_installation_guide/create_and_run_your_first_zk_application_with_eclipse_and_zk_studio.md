@@ -48,7 +48,7 @@ can be downloaded from the link
 Download the zip file of Tomcat distribution and extract it into a
 proper location (with no illegal characters or space in the path name).
 Tomcat requires configuration before it works with Eclipse, please see
-[ZK Studio Essentials](zk_studio_essentials) for details.
+[ZK Studio Essentials](/zk_studio_essentials/introduction) for details.
 
 ## Defining a Server Runtime
 

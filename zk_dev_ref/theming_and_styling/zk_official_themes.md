@@ -258,7 +258,7 @@ refer to [Switching Themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/swit
 
 To build a custom theme based on a standard ZK theme, read [Customize a standard theme]({{site.baseurl}}/zk_dev_ref/theming_and_styling/customizing_standard_themes).
 
-Also, reference [Theming and Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling).
+Also, reference [Theming and Styling]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theming_and_styling).
 
 # Version History
 

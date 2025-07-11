@@ -190,7 +190,8 @@ function isExternalUrl(url) {
 function shouldIgnoreUrl(url) {
     return url.startsWith('ftp://')
         || url.startsWith('file://')
-        || url.startsWith('mailto:');
+        || url.startsWith('mailto:')
+        || url.startsWith('ws:');
 }
 
 // Function to check if a URL is an image

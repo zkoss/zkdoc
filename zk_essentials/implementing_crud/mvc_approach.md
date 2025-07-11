@@ -210,7 +210,7 @@ public class TodoListController extends SelectorComposer<Component>{
 
 After typing the todo item name, we can save the item by either clicking
 the button with the plus icon
-(![inline]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or pressing
+(![]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or pressing
 "Enter" key. Therefore, we have to listen to 2 events: `onClick` and
 `onOK`. For handling other key pressing events, please refer to
 [ZK\_Developer's\_Reference/UI\_Patterns/Keystroke\_Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling).

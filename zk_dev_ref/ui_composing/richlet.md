@@ -264,7 +264,7 @@ for details.
 # Use Spring in Richlet
 
 To use Spring-managed beans in richlets you need the context loader
-listener that creates spring application context as described in [ZK Spring Essentials/Getting Started with ZK Spring/Setting Up ZK Spring]({{site.baseurl}}/zk_spring_essentials/getting_started_with_zk_spring/setting_up_zk_spring).
+listener that creates spring application context as described in [ZK Spring Essentials/Getting Started with ZK Spring/Setting Up ZK Spring]({{site.baseurl}}/zk_spring_essentials/setting_up_zk_spring).
 Then you could load Spring beans by using a utility class
 [org.zkoss.zkplus.spring.SpringUtil](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/SpringUtil.html):
 
