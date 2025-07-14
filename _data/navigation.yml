@@ -43,6 +43,8 @@ main:
     url: https://zkoss.org/javadoc/latest/jsdoc/
   - title: Legacy APIs
     url: http://www.zkoss.org/javadoc/olderapi.jsp
+  - title: Deprecated Documentations
+    url: /deprecated_doc
 get_started:
   - title: Learn ZK in 10 Minutes
     url: /get_started/learn_zk_in_10_minutes
@@ -50,6 +52,8 @@ get_started:
     url: /get_started/get_zk_up_and_running_with_mvc
   - title: Get ZK Up and Running with MVVM
     url: /get_started/get_zk_up_and_running_with_mvvm
+  - title: ZK Dictionary
+    url: /get_started/zk_dictionary
 zk_essentials:
   - title: Introduction
     children:
