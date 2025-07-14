@@ -58,35 +58,35 @@ a change in the UI state. Multiple AU Requests can be sent at the same
 time and processed during the same execution. A single AU Request can
 cause multiple AU Responses or even no response at all.
 
-## [ AU response](/zk_client_side_ref/communication)
+## [ AU response](/zk_client_side_ref/communication) 
 
 AU responses are commands sent from the server to the client. They each
 contains an action to be performed at the client-side. Multiple AU
 Requests can be sent back at the same time at the end of the same
 execution.
 
-## [ Component](ZK_Developer's_Reference/Architecture_Overview)
+## [Component](/zk_dev_ref/overture/architecture_overview)
 
 A component is a Java object existing at server-side representing a UI
 element. A component can be a simple control like a [
-Button](ZK_Component_Reference/Essential_Components/Button),
+Button](/zk_component_ref/button),
 or a complex control like a [
-Grid](ZK_Component_Reference/Data/Grid).
+Grid](/zk_component_ref/grid).
 
-## [ Component tree](ZK_Developer's_Reference/UI_Composing/Component-based_UI)
+## [Component tree](/zk_dev_ref/ui_composing/component_based_ui)
 
 The component tree is a group of components organized in a tree
 structure. A component may have children, and these children can have
 their own descendants. A component has a single parent. For example, a
 window contains a div, and the div contains two buttons.
 
-## [ Composer](ZK_Developer's_Reference/MVC/Controller/Composer)
+## [Composer](/zk_dev_ref/mvc/composer)
 
 A composer is a Java class that controls part or all of a ZK page. A
 composer can access components, update their properties and listen to
 user actions.
 
-## [ Desktop](ZK_Developer's_Guide/Fundamental_ZK/Basic_Concepts/Page_and_Desktop)
+## [Desktop](/zk_dev_ref/ui_composing/id_space)
 
 A ZK desktop is a collection of pages served through the same URL. In
 90% of cases, a desktop represents the content of one single browser
@@ -94,7 +94,7 @@ tab. (Note: if a browser tab contains content loaded from multiple URLs,
 such as using iframes, there may be more than 1 desktop per browser
 tab.)
 
-## [ Execution](ZK_Developer's_Reference/Architecture_Overview)
+## [Execution](/zk_dev_ref/overture/architecture_overview)
 
 A ZK <javadoc>org.zkoss.zk.ui.Execution</javadoc> is a transaction
 between the client and the server. An execution begins when the client
@@ -104,22 +104,22 @@ execution can contain multiple AU requests (sent from the client to the
 server) and reply with multiple AU responses (from the server to the
 client)
 
-## [ Lang-addon.xml](/zk_client_side_ref/Language_Definition)
+## [Lang-addon.xml](/zk_client_side_ref/language_definition)
 
 A language definition defines a component set (aka., a language) such as
 the zul language used for .zul files. A language addon is used to extend
 a language definition in order to modify its default content or to add
 new content to it.
 
-## [ Library property](ZK_Configuration_Reference/zk.xml/The_Library_Properties)
+## [Library property](/zk_config_ref/the_library_properties)
 
 A library property is a configuration that affects how ZK behaves. A
 library property can be set globally, for a page, or for a limited
 number of ZK components. The full list of library properties can be
 found [
-here](ZK_Configuration_Reference/zk.xml/The_Library_Properties).
+here](/zk_config_ref/the_library_properties).
 
-## [ ListModel](ZK_Developer%27s_Reference/MVC/Model/List_Model)
+## [ListModel](/zk_dev_ref/mvc/list_model)
 
 A ListModel is a ZK utility class that wraps a collection. It provides
 convenient APIs when binding a collection to a ZK component. For
@@ -131,7 +131,7 @@ use the existing classes for standard collections such as
 <javadoc>org.zkoss.zul.ListModelSet</javadoc>,
 <javadoc>org.zkoss.zul.ListModelMap</javadoc>
 
-## [ Macro Component](ZK_Developer's_Reference/UI_Composing/Macro_Component)
+## [Macro Component](/zk_dev_ref/ui_composing/macro_component)
 
 A Macro Component is a component defined by the developer by combining
 existing ZK components and extending their Java logic. It acts as a more
@@ -142,13 +142,13 @@ and manage the "children" that it creates. This allows a developer to
 create a reusable complex component, without creating it from the ground
 up.
 
-## [ Mold](ZK_Developer's_Reference/Theming_and_Styling/Molds)
+## [Mold](/zk_dev_ref/theming_and_styling/molds)
 
 A mold is an appearance applied to a component. ZK provides different
 appearances for some components if they have different modes of
 operation.
 
-## [ MVC](ZK_Developer's_Reference/MVC)
+## [MVC](/zk_dev_ref/mvc/mvc)
 
 Model-View-Controller. A design pattern in which a "Controller" Java
 class acts as the bridge between the model (the raw data) and the view
@@ -158,7 +158,7 @@ actions such as `component.setVisible(true);`. In this pattern, the
 controller is dependent on the view. This allows easy access to the
 component and their properties.
 
-## [MVVM](https://books.zkoss.org/zk-mvvm-book/8.0/introduction_of_mvvm)
+## [MVVM](/zk_mvvm_ref/intro/introduction_of_mvvm)
 
 Model-View-ViewModel. A design pattern in which a "ViewModel" Java class
 acts as the bridge between the model (the raw data) and the view (the
@@ -170,18 +170,18 @@ and shouldn't access the components directly. This layer of abstraction
 allow multiple views to use the same ViewModel, as long as their use
 that ViewModel properties and commands to interact with it.
 
-## [ Page](ZK_Developer's_Guide/Fundamental_ZK/Basic_Concepts/Page_and_Desktop)
+## [Page](/zk_dev_ref/ui_composing/id_space)
 
 A Page object represents the collection of components loaded from a zul
 file. It also acts as the root of the component tree.
 
-## [ Sclass](ZK_Style_Customization_Guide/ZK_CSS_Class_Design/Sclass)
+## [Sclass](/zk_style_customization_guide/sclass)
 
 The sclass="customclass" attribute can be used by a developer to add a
 class="customclass" attribute on the DOM node created by the component.
 Its purpose it to easily add CSS styles to a ZK component.
 
-## [Session](https://books.zkoss.org/zkessentials-book/master/authentication/session)
+## [Session](/zk_essentials/authentication/session)
 
 A ZK Session object is a wrapper for the WebServer's own session object.
 In a Java EE environment, an application server creates a
@@ -196,7 +196,7 @@ javax.servlet.http.HttpSession object to track client's session. ZK's
 - Get current HttpSession:
   [Sessions.getCurrent().getNativeSession()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session#getNativeSession--)
 
-## [Shadow Component](https://books.zkoss.org/zkessentials-book/master/shadow_components/index)
+## [Shadow Component](/zk_essentials/shadow_components/)
 
 A Shadow Component is a utility component that does not create any DOM
 node at the client-side. Instead, they provide features such as applying
@@ -205,20 +205,20 @@ instantiating a template for each entry, or acting as "conditional
 statements" to control when their content should be added to the page or
 not.
 
-## [ Widget](ZK_Developer's_Reference/Architecture_Overview)
+## [Widget](/zk_dev_ref/overture/architecture_overview)
 
 A widget is a JavaScript object existing at client-side. It is the
 client-side representation of a server-side Component. The widget role
 is to pilot the DOM tree (the actual browser content) and to act as a
 communication relay between user actions and server updates.
 
-## [ zk.xml](ZK_Configuration_Reference/zk.xml)
+## [zk.xml](/zk_config_ref/zk_xml)
 
 WEB-INF/zk.xml is the configuration descriptor of ZK. If you want ZK to
 follow default behaviors, this file is optional. You can create it and
 add configuration elements to customize how ZK behaves.
 
-## [ zscript](Zscript,_java,_EL)
+## [zscript](/zuml_ref/zscript)
 
 a <zscript> component provide runtime code execution in ZUL files. By
 default, zscript will be evaluated as Java by the BeanShell interpreter,
@@ -229,7 +229,7 @@ debug since it doesn't allow breakpoints due to being interpreted at
 runtime. It also generally has lower performance, since it is not
 compiled during application build.
 
-## [ zul file](ZUML_Reference/ZUML)
+## [zul file](/zuml_ref/zuml)
 
 A zul file contains ZUML (ZK User Interface Markup Language) describing
 a collection of ZK components. Conceptually, a zul page is similar to a

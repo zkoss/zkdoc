@@ -1,0 +1,25 @@
+This page list old document (made by Mediawiki) links for references. You can check them but we will not update them anymore.
+
+# Old Documentation Links
+
+* [Learn ZK in 10 Minutes](https://books.zkoss.org/wiki/ZK_Getting_Started/Learn_ZK_in_10_Minutes)
+* [Get ZK Up and Running with MVC](https://books.zkoss.org/wiki/ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVC)
+* [Get ZK Up and Running with MVVM](https://books.zkoss.org/wiki/ZK_Getting_Started/Get_ZK_Up_and_Running_with_MVVM)
+* [ZK Dictionary](https://www.zkoss.org/wiki/ZK_Getting_Started/ZK_Dictionary)
+* [ZATS Essentials](https://www.zkoss.org/wiki/ZATS_Essentials)
+* [ZK Calendar Essentials](https://www.zkoss.org/wiki/ZK_Calendar_Essentials)
+* [ZK Charts Essentials](https://www.zkoss.org/wiki/ZK_Charts_Essentials)
+* [ZK Client-side Reference](https://www.zkoss.org/wiki/ZK_Client-side_Reference)
+* [ZK Component Development Essentials](https://www.zkoss.org/wiki/ZK_Component_Development_Essentials)
+* [ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference)
+* [ZK Configuration Reference](https://www.zkoss.org/wiki/ZK_Configuration_Reference)
+* [ZK Developer's Reference](https://www.zkoss.org/wiki/ZK_Developer's_Reference)
+* [ZK Essentials](https://www.zkoss.org/wiki/ZK_Essentials)
+* [ZK Installation Guide](https://www.zkoss.org/wiki/ZK_Installation_Guide)
+* [ZK JSP Tags Essentials](https://www.zkoss.org/wiki/ZK_JSP_Tags_Essentials)
+* [ZK MVVM Reference](https://www.zkoss.org/wiki/ZK_MVVM_Reference)
+* [ZK Pivottable Essentials](https://www.zkoss.org/wiki/ZK_Pivottable_Essentials)
+* [ZK Spring Essentials](https://www.zkoss.org/wiki/ZK_Spring_Essentials)
+* [ZK Studio Essentials](https://www.zkoss.org/wiki/ZK_Studio_Essentials)
+* [ZK Style Customization Guide](https://www.zkoss.org/wiki/ZK_Style_Customization_Guide)
+* [ZUML Reference](https://www.zkoss.org/wiki/ZUML_Reference)
