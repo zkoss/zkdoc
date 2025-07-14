@@ -187,7 +187,7 @@ applicable.
 
 # Page: created for each ZUML
 
-A page (<javadoc type="interface">org.zkoss.zk.ui.Page</javadoc> ) is a
+A page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) ) is a
 collection of components. A page confines components belonging to it,
 such that they will be displayed in a certain portion of the browser. A
 page is automatically created when ZK loader interprets a ZUML page.

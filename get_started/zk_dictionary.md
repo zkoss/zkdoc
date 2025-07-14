@@ -96,7 +96,7 @@ tab.)
 
 ## [Execution](/zk_dev_ref/overture/architecture_overview)
 
-A ZK <javadoc>org.zkoss.zk.ui.Execution</javadoc> is a transaction
+A ZK [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) is a transaction
 between the client and the server. An execution begins when the client
 browser sends an HTTP request to the server and ends when the server
 sends back a response containing the result of the transaction. An
@@ -126,10 +126,10 @@ convenient APIs when binding a collection to a ZK component. For
 example, it handles the selection, automatic updates, and collection
 events. You can implement your own version for manual control, or simply
 use the existing classes for standard collections such as
-<javadoc>org.zkoss.zul.ListModelList</javadoc>,
-<javadoc>org.zkoss.zul.ListModelArray</javadoc>,
-<javadoc>org.zkoss.zul.ListModelSet</javadoc>,
-<javadoc>org.zkoss.zul.ListModelMap</javadoc>
+[org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html),
+[org.zkoss.zul.ListModelArray](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelArray.html),
+[org.zkoss.zul.ListModelSet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelSet.html),
+[org.zkoss.zul.ListModelMap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelMap.html)
 
 ## [Macro Component](/zk_dev_ref/ui_composing/macro_component)
 
@@ -186,7 +186,7 @@ Its purpose it to easily add CSS styles to a ZK component.
 A ZK Session object is a wrapper for the WebServer's own session object.
 In a Java EE environment, an application server creates a
 javax.servlet.http.HttpSession object to track client's session. ZK's
-<javadoc>org.zkoss.zk.ui.Session</javadoc> is a wrapper of HttpSession.
+[org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html) is a wrapper of HttpSession.
 
 - Get current ZK session:
   [Sessions.getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Sessions#getCurrent-boolean-).
