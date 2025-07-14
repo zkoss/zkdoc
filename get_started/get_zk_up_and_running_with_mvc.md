@@ -1,6 +1,3 @@
----
-permalink: /get_started/Get_ZK_Up_and_Running_with_MVC
----
 # Introduction
 
 This tutorial is intended for software developers who have experience in
