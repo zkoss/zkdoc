@@ -51,35 +51,10 @@ suggested to use zscript for production systems.
 
 ## Documentation links
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>MVC:</p></td>
-<td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/MVC" title="wikilink">ZK
-Developer's Reference: MVC</a></li>
-<li><a href="ZK_Developer&#39;s_Reference/MVVM" title="wikilink">ZK
-Developer's Reference: MVVM</a></li>
-<li><a
-href="ZK_Developer&#39;s_Reference/Performance_Tips/Use_Compiled_Java_Codes"
-title="wikilink">ZK Developer's Reference: Performance Tips</a></li>
-<li>[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html)
-and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>ZSCRIPT:</p></td>
-<td><ul>
-<li><a
-href="ZK_Developer&#39;s_Reference/ui_composing/ZUML/Scripts_in_ZUML"
-title="wikilink">ZK Developer's Reference: Scripts in ZUML</a></li>
-<li><a
-href="{{site.baseurl}}/zk_studio_essentials/zscript_to_mvc_extractor"
-title="wikilink">ZK Studio Essentials: MVC Extractor</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Technology | Documentation Links |
+|------------|-------------------|
+| MVC | <ul><li>[ZK Developer's Reference: MVC](ZK_Developer's_Reference/MVC)</li><li>[ZK Developer's Reference: MVVM](ZK_Developer's_Reference/MVVM)</li><li>[ZK Developer's Reference: Performance Tips](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes)</li><li>[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html) and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)</li></ul> |
+| ZSCRIPT | <ul><li>[ZK Developer's Reference: Scripts in ZUML](ZK_Developer's_Reference/ui_composing/ZUML/Scripts_in_ZUML)</li><li>[ZK Studio Essentials: MVC Extractor]({{site.baseurl}}/zk_studio_essentials/zscript_to_mvc_extractor)</li></ul> |
 
 # [Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index)
 
@@ -148,34 +123,11 @@ more information, please refer to the [ZK Developer's Reference: HTML Tags]({{si
 
 ## Documentation links
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>ZUML:</p></td>
-<td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/ui_composing/ZUML"
-title="wikilink">ZK Developer's Reference: ZUML</a></li>
-<li><a href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags"
-title="wikilink">ZK Developer's Reference: HTML Tags</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Richlet:</p></td>
-<td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/ui_composing/Richlet"
-title="wikilink">ZK Developer's Reference: Richlet</a></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>JSP:</p></td>
-<td><ul>
-<li><a href="ZK_Developer&#39;s_Reference/integration/Use_ZK_in_JSP"
-title="wikilink">ZK Developer's Reference: Use ZK in JSP</a> and <a
-href="/zk_jsp_tags_essentials/before_you_start" title="wikilink">ZK JSP Tags</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Technology | Documentation Links |
+|------------|-------------------|
+| ZUML | <ul><li>[ZK Developer's Reference: ZUML](ZK_Developer's_Reference/ui_composing/ZUML)</li><li>[ZK Developer's Reference: HTML Tags](ZK_Developer's_Reference/ui_patterns/HTML_Tags)</li></ul> |
+| Richlet | <ul><li>[ZK Developer's Reference: Richlet](ZK_Developer's_Reference/ui_composing/Richlet)</li></ul> |
+| JSP | <ul><li>[ZK Developer's Reference: Use ZK in JSP](ZK_Developer's_Reference/integration/Use_ZK_in_JSP) and [ZK JSP Tags](/zk_jsp_tags_essentials/before_you_start)</li></ul> |
 
 # [Bookmarks]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management) vs. Multiple Pages
 
@@ -220,38 +172,10 @@ technique.
 
 ## Documentation links
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>Bookmarks:</p></td>
-<td><ul>
-<li><a
-href="ZK_Developer&#39;s_Reference/ui_patterns/Browser_History_Management"
-title="wikilink">ZK Developer's Reference: Browser History
-Management</a></li>
-<li><a
-href="ZK_Developer&#39;s_Reference/ui_patterns/Browser_Information_and_Control"
-title="wikilink">ZK Developer's Reference: Browser Information and
-Control</a></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Multiple Pages:</p></td>
-<td><ul>
-<li><a
-href="ZK_Developer&#39;s_Reference/ui_patterns/Forward_and_Redirect"
-title="wikilink">ZK Developer's Reference: Forward and Redirect</a></li>
-<li><a href="ZK_Developer&#39;s_Reference/ui_composing/ZUML/Include"
-title="wikilink">ZK Developer's Reference: Include</a>, <a
-href="ZK_Developer&#39;s_Reference/ui_patterns/Templating"
-title="wikilink">Templating</a> and <a
-href="ZK_Developer&#39;s_Reference/ui_composing/Composite_Component"
-title="wikilink">Composite</a> for consistent UI across multiple
-pages.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Technology | Documentation Links |
+|------------|-------------------|
+| Bookmarks | <ul><li>[ZK Developer's Reference: Browser History Management](ZK_Developer's_Reference/ui_patterns/Browser_History_Management)</li><li>[ZK Developer's Reference: Browser Information and Control](ZK_Developer's_Reference/ui_patterns/Browser_Information_and_Control)</li></ul> |
+| Multiple Pages | <ul><li>[ZK Developer's Reference: Forward and Redirect](ZK_Developer's_Reference/ui_patterns/Forward_and_Redirect)</li><li>[ZK Developer's Reference: Include](ZK_Developer's_Reference/ui_composing/ZUML/Include), [Templating](ZK_Developer's_Reference/ui_patterns/Templating) and [Composite](ZK_Developer's_Reference/ui_composing/Composite_Component) for consistent UI across multiple pages.</li></ul> |
 
 # [Native Namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace) vs. [XHTML Components]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_xhtml_component_set)
 

@@ -31,48 +31,8 @@ Here are the advantages and limitations of using the Servlet thread to
 process events. In the following sections, we will talk more about the
 limitations and workarounds when using the Servlet thread.
 
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th><center>
-<p>Using Servlet Thread</p>
-</center></th>
-<th><center>
-<p>Using Event Processing Thread</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Integration</p></td>
-<td><p>Less integration issues.</p>
-<p>Many containers assume the HTTP request is handled in the Servlet
-thread, and many frameworks store per-request information in the
-thread-local storage.</p></td>
-<td><p>You may have to implement <code>EventThreadInit</code> and/or
-<code>EventThreadCleanup</code> to solve the integration issue, such as
-copying the per-request information from the Servlet thread to the event
-processing thread.</p>
-<p>Threre are several implementations to solve the integration issue,
-such as
-[org.zkoss/zkplus.hibernate.HibernateSessionContextListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/hibernate/HibernateSessionContextListener.html)
-(they can be found under <a
-href="http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/package-summary.html">the
-org.zkoss.zkplus package</a>).</p></td>
-</tr>
-<tr class="even">
-<td><p>SuspendResume</p></td>
-<td><p>No way to suspend the execution of the event listener.</p>
-<p>For example, you cannot create a modal window.</p></td>
-<td><p>No limitation at all.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Performance</p></td>
-<td><p>No extra cost</p></td>
-<td><p>It executes a bit slower to switch from one thread to another,
-and it might consume a lot more memory if there are a lot of suspended
-event processing threads.</p></td>
-</tr>
-</tbody>
-</table>
+| | Using Servlet Thread | Using Event Processing Thread |
+|---|---|---|
+| Integration | Less integration issues.<br><br>Many containers assume the HTTP request is handled in the Servlet thread, and many frameworks store per-request information in the thread-local storage. | You may have to implement `EventThreadInit` and/or `EventThreadCleanup` to solve the integration issue, such as copying the per-request information from the Servlet thread to the event processing thread.<br><br>Threre are several implementations to solve the integration issue, such as [org.zkoss/zkplus.hibernate.HibernateSessionContextListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/hibernate/HibernateSessionContextListener.html) (they can be found under [the org.zkoss.zkplus package](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/package-summary.html)). |
+| SuspendResume | No way to suspend the execution of the event listener.<br><br>For example, you cannot create a modal window. | No limitation at all. |
+| Performance | No extra cost | It executes a bit slower to switch from one thread to another, and it might consume a lot more memory if there are a lot of suspended event processing threads. |

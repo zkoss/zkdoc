@@ -35,125 +35,27 @@ will be called.
 
 ## Events and Corresponding Methods
 
-<table>
-<caption>Events that can be handled by overriding a method</caption>
-<thead>
-<tr class="header">
-<th><p>DOM Event Name</p></th>
-<th><p>ZK Widget Event Name</p></th>
-<th><p>Method to Override</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>blur</p></td>
-<td><p>onBlur</p></td>
-<td><p>[zk.Widget#doBlur_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doBlur_(zk.Event))</p>
-<p>Note: unlike others, you have to register a listener with
-[zk.Widget#domListen_(_global_.DOMElement, _global_.String, zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#domListen_(_global_.DOMElement, _global_.String, zk.Object))
-as follows. Otherwise, doBlur_ won't be called.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">this</span><span class="op">.</span><span class="fu">domListen_</span>(n<span class="op">,</span> <span class="st">&quot;onBlur&quot;</span>)<span class="op">;</span></span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>click</p></td>
-<td><p>onClick</p></td>
-<td><p>[zk.Widget#doClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doClick_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>dblclick</p></td>
-<td><p>onDoubleClick</p></td>
-<td><p>[zk.Widget#doDoubleClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doDoubleClick_(zk.Event))</p></td>
-</tr>
-<tr class="even">
-<td><p>contextmenu (aka., the right click)</p></td>
-<td><p>onRightClick</p></td>
-<td><p>[zk.Widget#doRightClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doRightClick_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>focus</p></td>
-<td><p>onFocus</p></td>
-<td><p>[zk.Widget#doFocus_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doFocus_(zk.Event))</p>
-<p>Note: unlike others, you have to register a listener with
-[zk.Widget#domListen_(_global_.DOMElement, _global_.String, zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#domListen_(_global_.DOMElement, _global_.String, zk.Object))
-as follows. Otherwise, doFocus_ won't be called.</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">this</span><span class="op">.</span><span class="fu">domListen_</span>(n<span class="op">,</span> <span class="st">&quot;onFocus&quot;</span>)<span class="op">;</span></span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>mouseover</p></td>
-<td><p>onMouseOver</p></td>
-<td><p>[zk.Widget#doMouseOver_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseOver_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>mouseout</p></td>
-<td><p>onMouseOut</p></td>
-<td><p>[zk.Widget#doMouseOut_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseOut_(zk.Event))</p></td>
-</tr>
-<tr class="even">
-<td><p>mousedown</p></td>
-<td><p>onMouseDown</p></td>
-<td><p>[zk.Widget#doMouseDown_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseDown_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>mouseup</p></td>
-<td><p>onMouseUp</p></td>
-<td><p>[zk.Widget#doMouseUp_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseUp_(zk.Event))</p></td>
-</tr>
-<tr class="even">
-<td><p>mousemove</p></td>
-<td><p>onMouseMove</p></td>
-<td><p>[zk.Widget#doMouseMove_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseMove_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>keydown</p></td>
-<td><p>onKeyDown</p></td>
-<td><p>[zk.Widget#doKeyDown_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyDown_(zk.Event))</p></td>
-</tr>
-<tr class="even">
-<td><p>keyup</p></td>
-<td><p>onKeyUp</p></td>
-<td><p>[zk.Widget#doKeyUp_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyUp_(zk.Event))</p></td>
-</tr>
-<tr class="odd">
-<td><p>keypress</p></td>
-<td><p>onKeyPress</p></td>
-<td><p>[zk.Widget#doKeyPress_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyPress_(zk.Event))</p></td>
-</tr>
-<tr class="even">
-<td><p>x</p></td>
-<td><p>onBind</p></td>
-<td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
-Listening</a> ZK fires it in afterMount, starting from the inner-most
-child then its parent, and so on.</p></td>
-</tr>
-<tr class="odd">
-<td><p>x</p></td>
-<td><p>onSize</p></td>
-<td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
-Listening</a> ZK fires it when you resize a widget and propagates this
-event to its children.</p></td>
-</tr>
-<tr class="even">
-<td><p>x</p></td>
-<td><p>onAfterSize</p></td>
-<td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
-Listening</a> ZK fires it when each time ZK completes
-rendering/re-rendering a widget and propagates this event to its
-children.</p></td>
-</tr>
-<tr class="odd">
-<td><p>x</p></td>
-<td><p>onUnbind</p></td>
-<td><p>handle it by registering a listener according to <a
-href="{{site.baseurl}}/zk_client_side_ref/event_listening">event
-Listening</a> ZK fires it when ZK removes a widget from a page.</p></td>
-</tr>
-</tbody>
-</table>
+**Events that can be handled by overriding a method**
+
+| DOM Event Name | ZK Widget Event Name | Method to Override |
+|----------------|----------------------|-------------------|
+| blur | onBlur | [zk.Widget#doBlur_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doBlur_(zk.Event))<br/><br/>Note: unlike others, you have to register a listener with [zk.Widget#domListen_(_global_.DOMElement, _global_.String, zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#domListen_(_global_.DOMElement, _global_.String, zk.Object)) as follows. Otherwise, doBlur_ won't be called.<br/><br/>```javascript<br/>this.domListen_(n, "onBlur");<br/>``` |
+| click | onClick | [zk.Widget#doClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doClick_(zk.Event)) |
+| dblclick | onDoubleClick | [zk.Widget#doDoubleClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doDoubleClick_(zk.Event)) |
+| contextmenu (aka., the right click) | onRightClick | [zk.Widget#doRightClick_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doRightClick_(zk.Event)) |
+| focus | onFocus | [zk.Widget#doFocus_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doFocus_(zk.Event))<br/><br/>Note: unlike others, you have to register a listener with [zk.Widget#domListen_(_global_.DOMElement, _global_.String, zk.Object)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#domListen_(_global_.DOMElement, _global_.String, zk.Object)) as follows. Otherwise, doFocus_ won't be called.<br/><br/>```javascript<br/>this.domListen_(n, "onFocus");<br/>``` |
+| mouseover | onMouseOver | [zk.Widget#doMouseOver_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseOver_(zk.Event)) |
+| mouseout | onMouseOut | [zk.Widget#doMouseOut_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseOut_(zk.Event)) |
+| mousedown | onMouseDown | [zk.Widget#doMouseDown_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseDown_(zk.Event)) |
+| mouseup | onMouseUp | [zk.Widget#doMouseUp_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseUp_(zk.Event)) |
+| mousemove | onMouseMove | [zk.Widget#doMouseMove_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doMouseMove_(zk.Event)) |
+| keydown | onKeyDown | [zk.Widget#doKeyDown_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyDown_(zk.Event)) |
+| keyup | onKeyUp | [zk.Widget#doKeyUp_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyUp_(zk.Event)) |
+| keypress | onKeyPress | [zk.Widget#doKeyPress_(zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#doKeyPress_(zk.Event)) |
+| x | onBind | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it in afterMount, starting from the inner-most child then its parent, and so on. |
+| x | onSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when you resize a widget and propagates this event to its children. |
+| x | onAfterSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when each time ZK completes rendering/re-rendering a widget and propagates this event to its children. |
+| x | onUnbind | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when ZK removes a widget from a page. |
 
 Events that can be handled by overriding a method
 

@@ -20,41 +20,13 @@ what you specified in the property [ `org.zkoss.theme.preferred`]({{site.baseurl
 
 Here is the built-in rule:
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>ZK Theme you specified</p>
-</center></th>
-<th><center>
-<p>Calendar Theme</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>breeze, silvertail, sapphire</p></td>
-<td><p>breeze</p></td>
-</tr>
-<tr class="even">
-<td><p>iceblue</p></td>
-<td><p>iceblue</p></td>
-</tr>
-<tr class="odd">
-<td><p>wcag</p></td>
-<td><p>wcag</p></td>
-</tr>
-<tr class="even">
-<td><p>any dark themes including ruby, amber, emerald, aquamarine,
-montana, violet and spaceblack, cardinal, mysteriousgreen, zen</p></td>
-<td><p>dark</p></td>
-</tr>
-<tr class="odd">
-<td><p>any other themes not included above</p></td>
-<td><p>iceblue</p></td>
-</tr>
-</tbody>
-</table>
+| ZK Theme you specified | Calendar Theme |
+|:----------------------:|:--------------:|
+| breeze, silvertail, sapphire | breeze |
+| iceblue | iceblue |
+| wcag | wcag |
+| any dark themes including ruby, amber, emerald, aquamarine, montana, violet and spaceblack, cardinal, mysteriousgreen, zen | dark |
+| any other themes not included above | iceblue |
 
 # How to Switch Themes
 

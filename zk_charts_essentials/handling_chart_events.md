@@ -88,88 +88,21 @@ code as below:
 
 # Supported ChartsEvent
 
-<table>
-<thead>
-<tr class="header">
-<th><p>EventName</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>onPlotClick</p></td>
-<td><p>Fires when the series is clicked, and it will pass the nearest
-point as a parameter.</p></td>
-</tr>
-<tr class="even">
-<td><p>onPlotCheckboxClick</p></td>
-<td><p>Fires when the checkbox next to the series' name in the legend is
-clicked.</p></td>
-</tr>
-<tr class="odd">
-<td><p>onPlotLegendItemClick</p></td>
-<td><p>Fires when the legend item belonging to the series is clicked.
-(<strong>Not applicable to pies</strong>).</p></td>
-</tr>
-<tr class="even">
-<td><p>onPlotShow</p></td>
-<td><p>Fires when the series is shown after chart generation time, by
-clicking the legend item. (<strong>Not applicable to
-pies</strong>).</p></td>
-</tr>
-<tr class="odd">
-<td><p>onPlotHide</p></td>
-<td><p>Fires when the series is hidden after chart generation time, by
-clicking the legend item.<br />
-(<strong>Not applicable to pies</strong>).</p></td>
-</tr>
-<tr class="even">
-<td><p>onPlotMouseOver</p></td>
-<td><p>Fires when the mouse enters the graph.</p></td>
-</tr>
-<tr class="odd">
-<td><p>onPlotMouseOut</p></td>
-<td><p>Fires when the mouse leaves the graph.</p></td>
-</tr>
-<tr class="even">
-<td><p>onPlotSelect</p></td>
-<td><p>Fires when selecting a point from a series.</p>
-<p>The zkcharts doesn't send this event before you enable "point select"
-by
-<code>Charts.getPlotOptions().getSeries().setAllowPointSelect(true);</code>
-Reference: <a
-href="http://api.highcharts.com/highcharts#plotOptions.series.point.events">http://api.highcharts.com/highcharts#plotOptions.series.point.events</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>onPlotUnselect</p></td>
-<td><p>Fires when unselecting a point from a series.</p></td>
-</tr>
-<tr class="odd">
-<td><p>onPlotDrillUp</p></td>
-<td><p>Fires when drilling up from a drilldown series.</p></td>
-</tr>
-<tr class="even">
-<td><p>onPlotDrillDown</p></td>
-<td><p>Fires when a drilldown point is clicked, before the new series is
-added.</p></td>
-</tr>
-<tr class="odd">
-<td><p>onSelection</p></td>
-<td><p>When you allow zooming by Charts.setZoomType(), it's fired when
-you drag your pointer within the chart. ZK will pass a
-<code>ChartsSelectionEvent</code> into an event listener.</p></td>
-</tr>
-<tr class="even">
-<td><p>onClick</p></td>
-<td><p>Fires when you click within a chart, ZK will pass
-<code>ChartsClickEvent</code>.</p></td>
-</tr>
-</tbody>
-</table>
+| EventName | Description |
+|-----------|-------------|
+| onPlotClick | Fires when the series is clicked, and it will pass the nearest point as a parameter. |
+| onPlotCheckboxClick | Fires when the checkbox next to the series' name in the legend is clicked. |
+| onPlotLegendItemClick | Fires when the legend item belonging to the series is clicked. (**Not applicable to pies**). |
+| onPlotShow | Fires when the series is shown after chart generation time, by clicking the legend item. (**Not applicable to pies**). |
+| onPlotHide | Fires when the series is hidden after chart generation time, by clicking the legend item.<br/>(**Not applicable to pies**). |
+| onPlotMouseOver | Fires when the mouse enters the graph. |
+| onPlotMouseOut | Fires when the mouse leaves the graph. |
+| onPlotSelect | Fires when selecting a point from a series.<br/><br/>The zkcharts doesn't send this event before you enable "point select" by `Charts.getPlotOptions().getSeries().setAllowPointSelect(true);`<br/>Reference: [http://api.highcharts.com/highcharts#plotOptions.series.point.events](http://api.highcharts.com/highcharts#plotOptions.series.point.events) |
+| onPlotUnselect | Fires when unselecting a point from a series. |
+| onPlotDrillUp | Fires when drilling up from a drilldown series. |
+| onPlotDrillDown | Fires when a drilldown point is clicked, before the new series is added. |
+| onSelection | When you allow zooming by Charts.setZoomType(), it's fired when you drag your pointer within the chart. ZK will pass a `ChartsSelectionEvent` into an event listener. |
+| onClick | Fires when you click within a chart, ZK will pass `ChartsClickEvent`. |
 
 **Note:**
 

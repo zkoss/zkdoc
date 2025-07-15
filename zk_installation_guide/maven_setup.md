@@ -504,133 +504,24 @@ version is 10.0.0-Beta.
 
 There's something you need to know about ZK's edition and package(s).
 
-<table>
-<thead>
-<tr class="header">
-<th scope="col"></th>
-<th width="100px"><p>CE</p></th>
-<th width="100px"><p>PE</p></th>
-<th width="100px"><p>EE</p></th>
-<th scope="col"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>zk.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK core functions, such as ZK Loader and Update Engine.</p></td>
-</tr>
-<tr class="even">
-<td><p>zul.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK XUL components (http://www.zkoss.org/2005/zul)</p></td>
-</tr>
-<tr class="odd">
-<td><p>zhtml.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK XHTML components (http://www.w3c.org/1999/xhtml)</p></td>
-</tr>
-<tr class="even">
-<td><p>zcommon.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>The common library that ZK depends on</p></td>
-</tr>
-<tr class="odd">
-<td><p>zcommons-el.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK EL expressions (renamed as zel.jar since 6.0)</p></td>
-</tr>
-<tr class="even">
-<td><p>zel.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK EL expressions (since 6.0)</p></td>
-</tr>
-<tr class="odd">
-<td><p>zkbind.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>data binding, required when developing with MVVM</p></td>
-</tr>
-<tr class="even">
-<td><p>zweb.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>The Web library that ZK depends on</p></td>
-</tr>
-<tr class="odd">
-<td><p>zkplus.jar</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK extra utilities integrated easily with other
-frameworks.</p></td>
-</tr>
-<tr class="even">
-<td><p>zkex.jar</p></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK additional components and features for PE</p></td>
-</tr>
-<tr class="odd">
-<td><p>zkmax.jar</p></td>
-<td></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>ZK additional components and features for EE</p></td>
-</tr>
-<tr class="even">
-<td><p>zuti.jar</p></td>
-<td></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>shadow components for EE</p></td>
-</tr>
-<tr class="odd">
-<td><p>client-bind.jar</p></td>
-<td></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>Client MVVM for EE</p></td>
-</tr>
-<tr class="even">
-<td><p>stateless.jar</p></td>
-<td></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>core of stateless components for EE</p></td>
-</tr>
-<tr class="odd">
-<td><p>stateless-immutable.jar</p></td>
-<td></td>
-<td></td>
-<td><p>V</p></td>
-<td><p>immutables of stateless components for EE</p></td>
-</tr>
-<tr class="even">
-<td><p>zml.jar</p></td>
-<td><p>V<br />
-(only ZK 3)</p></td>
-<td><p>V</p></td>
-<td><p>V</p></td>
-<td><p>ZK XML components for generating XML output</p></td>
-</tr>
-</tbody>
-</table>
+| JAR File | CE | PE | EE | Description |
+|----------|----|----|----|-----------  |
+| zk.jar | V | V | V | ZK core functions, such as ZK Loader and Update Engine. |
+| zul.jar | V | V | V | ZK XUL components (http://www.zkoss.org/2005/zul) |
+| zhtml.jar | V | V | V | ZK XHTML components (http://www.w3c.org/1999/xhtml) |
+| zcommon.jar | V | V | V | The common library that ZK depends on |
+| zcommons-el.jar | V | V | V | ZK EL expressions (renamed as zel.jar since 6.0) |
+| zel.jar | V | V | V | ZK EL expressions (since 6.0) |
+| zkbind.jar | V | V | V | data binding, required when developing with MVVM |
+| zweb.jar | V | V | V | The Web library that ZK depends on |
+| zkplus.jar | V | V | V | ZK extra utilities integrated easily with other frameworks. |
+| zkex.jar | | V | V | ZK additional components and features for PE |
+| zkmax.jar | | | V | ZK additional components and features for EE |
+| zuti.jar | | | V | shadow components for EE |
+| client-bind.jar | | | V | Client MVVM for EE |
+| stateless.jar | | | V | core of stateless components for EE |
+| stateless-immutable.jar | | | V | immutables of stateless components for EE |
+| zml.jar | V<br>(only ZK 3) | V | V | ZK XML components for generating XML output |
 
 This will be helpful when you modify your dependencies of projects.
 

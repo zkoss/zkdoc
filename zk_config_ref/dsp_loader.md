@@ -18,42 +18,11 @@ though extensible through TLD files, are different from JSP tags.
 
 # The Initial Parameters
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>init-param</p>
-</center></th>
-<th><center>
-<p>Descriptions</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>charset</p></td>
-<td><p>[Optional][Default: `UTF-8`]</p>
-<p>It specifies the default charset for the output of the DSP
-interpreter.</p>
-<p>If an empty string is specified as follows, the container's default
-is used. In other words, the `setCharacterEncoding` method of
-<em>javax.servlet.ServletResponse</em> is not called.</p></td>
-</tr>
-<tr class="even">
-<td><p>class-resource</p></td>
-<td><p>[Optional][Default: false]</p>
-<p>Specifies whether to load resources, such as TLD files, from the
-class loader, in addition to the servlet context.</p></td>
-</tr>
-<tr class="odd">
-<td><p>compress</p></td>
-<td><p>[Optional][Default: `true`]</p>
-<p>It specifies whether to compress the output if the browser supports
-the compression (`Accept-Encoding`) and this Servlet is not
-included by other Servlets.</p></td>
-</tr>
-</tbody>
-</table>
+| init-param | Descriptions |
+|:----------:|:-------------|
+| charset | [Optional][Default: `UTF-8`]<br><br>It specifies the default charset for the output of the DSP interpreter.<br><br>If an empty string is specified as follows, the container's default is used. In other words, the `setCharacterEncoding` method of *javax.servlet.ServletResponse* is not called. |
+| class-resource | [Optional][Default: false]<br><br>Specifies whether to load resources, such as TLD files, from the class loader, in addition to the servlet context. |
+| compress | [Optional][Default: `true`]<br><br>It specifies whether to compress the output if the browser supports the compression (`Accept-Encoding`) and this Servlet is not included by other Servlets. |
 
 # Map URL to DSP Loader
 

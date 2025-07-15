@@ -5,53 +5,10 @@
 This is an overview of the default themes and applicable add-on themes
 for each ZK version.
 
-<table>
-<thead>
-<tr class="header">
-<th width="120"></th>
-<th width="130"><p>ZK 6.5</p></th>
-<th width="130"><p>ZK 7.0</p></th>
-<th width="130"><p>ZK 8.0</p></th>
-<th width="130"><p>ZK 8.5</p></th>
-<th width="130"><p>ZK 8.6</p></th>
-<th width="130"><p>ZK 10+</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Default Theme</p></td>
-<td><p>Breeze</p></td>
-<td><p>Breeze</p></td>
-<td><p>Breeze</p></td>
-<td><p>Iceblue</p></td>
-<td><p>Iceblue</p></td>
-<td><p>Iceblue</p></td>
-</tr>
-<tr class="even">
-<td><p>Applicable Themes</p></td>
-<td><p>Sapphire Silvertail</p></td>
-<td><p>Sapphire<br />
-Silvertail<br />
-Atlantic</p></td>
-<td><p>Sapphire<br />
-Silvertail<br />
-Atlantic</p></td>
-<td><p>Sapphire<br />
-Silvertail<br />
-Atlantic<br />
-ZK Theme Pack</p></td>
-<td><p>Iceblue Compact<br />
-Sapphire<br />
-Silvertail<br />
-Atlantic<br />
-ZK Theme Pack<br />
-Theme Pack Compact</p></td>
-<td><p>Iceblue Compact<br />
-ZK Theme Pack<br />
-Theme Pack Compact</p></td>
-</tr>
-</tbody>
-</table>
+| | ZK 6.5 | ZK 7.0 | ZK 8.0 | ZK 8.5 | ZK 8.6 | ZK 10+ |
+|---|--------|--------|--------|--------|--------|--------|
+| Default Theme | Breeze | Breeze | Breeze | Iceblue | Iceblue | Iceblue |
+| Applicable Themes | Sapphire Silvertail | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack | Iceblue Compact<br/>Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack<br/>Theme Pack Compact | Iceblue Compact<br/>ZK Theme Pack<br/>Theme Pack Compact |
 
 - Theme pack contains 23 themes.
 - Theme Pack Compact contains 23 compact themes.

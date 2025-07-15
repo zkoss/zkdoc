@@ -2,65 +2,13 @@ Here we discuss how to use HTML tags directly in a ZUML document. There
 are several ways as described in the following sections, and you could
 choose one based on your requirements.
 
-<table>
-<thead>
-<tr class="header">
-<th><p>What to consider</p></th>
-<th><p>[[ZK Developer's Reference/UI Patterns/HTML Tags/The html
-Component|</p>
-<html>
-<p>component]]</p></th>
-<th><p><a
-href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags/The_native_Namespace"
-title="wikilink">native namespace</a></p></th>
-<th><p><a
-href="ZK_Developer&#39;s_Reference/ui_patterns/HTML_Tags/The_XHTML_Component_Set"
-title="wikilink">XHTML components</a></p></th>
-<th><p><a href="ZK_Developer&#39;s_Reference/integration/Use_ZK_in_JSP"
-title="wikilink">JSP</a></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Update Content Dynamically</p></td>
-<td><p>Yes</p></td>
-<td><p>No<a href="#fn1" class="footnote-ref" id="fnref1"
-role="doc-noteref"><sup>1</sup></a></p></td>
-<td><p>Yes</p></td>
-<td><p>No<a href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></p></td>
-</tr>
-<tr class="even">
-<td><p>Mix with ZUL components</p></td>
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes/No<a href="#fn3" class="footnote-ref" id="fnref3"
-role="doc-noteref"><sup>3</sup></a></p></td>
-</tr>
-<tr class="odd">
-<td><p>Memory Footprint</p></td>
-<td><p>Small</p></td>
-<td><p>Small</p></td>
-<td><p>Large</p></td>
-<td><p>Small</p></td>
-</tr>
-<tr class="even">
-<td><p>Support EL</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Support Data Binding</p></td>
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-<td><p>Yes</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
+| What to consider | html component | [native namespace](ZK_Developer's_Reference/ui_patterns/HTML_Tags/The_native_Namespace) | [XHTML components](ZK_Developer's_Reference/ui_patterns/HTML_Tags/The_XHTML_Component_Set) | [JSP](ZK_Developer's_Reference/integration/Use_ZK_in_JSP) |
+|---|---|---|---|---|
+| Update Content Dynamically | Yes | No[^1] | Yes | No[^2] |
+| Mix with ZUL components | No | Yes | Yes | Yes/No[^3] |
+| Memory Footprint | Small | Small | Large | Small |
+| Support EL | Yes | Yes | Yes | Yes |
+| Support Data Binding | Yes | No | Yes | No |
 <aside id="footnotes" class="footnotes footnotes-end-of-document"
 role="doc-endnotes">
 <hr />

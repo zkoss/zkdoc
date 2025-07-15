@@ -187,67 +187,11 @@ own language[^3].
 >
 > <references/>
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Language</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>xul/html</p></td>
-<td><p><code>Name: xul/html (aka., zul)</code><br />
-<code>File Extensions: zul, xul</code><br />
-<code>Namespace: </code><a
-href="http://www.zkoss.org/2005/zul"><code>http://www.zkoss.org/2005/zul</code></a><br />
-<code>Namespace shortcut: zul</code><br />
-<code>Device: Ajax</code></p>
-<p>XUL-compliant component sets. We adopt <a
-href="https://developer.mozilla.org/En/XUL">XUL</a> for this language,
-if the specification is applicable. For more information, please refer
-to <a href="ZK_Component_Reference" title="wikilink">ZK Component
-Reference</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>xhtml</p></td>
-<td><p><code>Name: xhtml</code><br />
-<code>File Extensions: zhtml, xhtml, html, htm</code><br />
-<code>Namespace: </code><a
-href="http://www.w3.org/1999/xhtml"><code>http://www.w3.org/1999/xhtml</code></a><br />
-<code>Namespace shortcut: xhtml</code><br />
-<code>Device: Ajax</code></p>
-<p>XHTML-compliant component sets. It is one-to-one mapping of XHTML
-tags to ZK components. Since they are components, you can add and remove
-them dynamically (and control it at the server). For more information
-please refer to the <a href="zuml_ref/XHTML"
-title="wikilink">XHTML Namespace</a> section or <a
-href="{{site.baseurl}}/zk_component_ref/xhtml_components" title="wikilink">ZK
-Component Reference</a>.</p>
-<p><strong>Performance Tip:</strong> The XHTML language is designed to
-allow application to modify the client dynamically (at the server). If
-you don't need it (it is generally true), you should use the <a
-href="zuml_ref/Native" title="wikilink">Native
-namespace</a> instead. For more information, please refer to <a
-href="ZK_Developer&#39;s_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace"
-title="wikilink">Performance Tips</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>xml</p></td>
-<td><p><code>Name: xml</code><br />
-<code>File Extensions: xml</code><br />
-<code>Namespace: </code><a
-href="http://www.zkoss.org/2007/xml"><code>http://www.zkoss.org/2007/xml</code></a><br />
-<code>Namespace shortcut: xml</code><br />
-<code>Device: XML</code><br />
-<code>Available only ZK EE</code></p>
-<p>XML component sets. It is used to generate (static) XML document. For
-more information please refer to the <a
-href="zuml_ref/a>
-section.</p></td>
-</tr>
-</tbody>
-</table>
+| Language | Description |
+|----------|-------------|
+| xul/html | `Name: xul/html (aka., zul)`<br>`File Extensions: zul, xul`<br>`Namespace: `[`http://www.zkoss.org/2005/zul`](http://www.zkoss.org/2005/zul)<br>`Namespace shortcut: zul`<br>`Device: Ajax`<br><br>XUL-compliant component sets. We adopt [XUL](https://developer.mozilla.org/En/XUL) for this language, if the specification is applicable. For more information, please refer to [ZK Component Reference](ZK_Component_Reference). |
+| xhtml | `Name: xhtml`<br>`File Extensions: zhtml, xhtml, html, htm`<br>`Namespace: `[`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)<br>`Namespace shortcut: xhtml`<br>`Device: Ajax`<br><br>XHTML-compliant component sets. It is one-to-one mapping of XHTML tags to ZK components. Since they are components, you can add and remove them dynamically (and control it at the server). For more information please refer to the [XHTML Namespace](zuml_ref/XHTML) section or [ZK Component Reference]({{site.baseurl}}/zk_component_ref/xhtml_components).<br><br>**Performance Tip:** The XHTML language is designed to allow application to modify the client dynamically (at the server). If you don't need it (it is generally true), you should use the [Native namespace](zuml_ref/Native) instead. For more information, please refer to [Performance Tips](ZK_Developer's_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace). |
+| xml | `Name: xml`<br>`File Extensions: xml`<br>`Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)<br>`Namespace shortcut: xml`<br>`Device: XML`<br>`Available only ZK EE`<br><br>XML component sets. It is used to generate (static) XML document. For more information please refer to the [XML Namespace](zuml_ref/XML) section. |
 
 > ------------------------------------------------------------------------
 >

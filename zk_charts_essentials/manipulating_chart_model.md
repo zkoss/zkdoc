@@ -71,92 +71,26 @@ Enjoy the graphical presentation of data!
 
 # Supported Model
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Type</p>
-</center></th>
-<th><center>
-<p>Model</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><code>line</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>spline</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>area</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>areaspline</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>arearange</code></p></td>
-<td><p><code>XYZModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>areasplinerange</code></p></td>
-<td><p><code>XYZModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>bar</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>column</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>columnrange</code></p></td>
-<td><p><code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>pie</code></p></td>
-<td><p><code>PieModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>scatter</code></p></td>
-<td><p><code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>bubble</code></p></td>
-<td><p><code>XYModel</code> or <code>XYZModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>gauge</code></p></td>
-<td><p><code>DialModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>polar</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>errorbar</code></p></td>
-<td><p><code>XYModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>waterfall</code></p></td>
-<td><p><code>CategoryModel</code> or <code>XYModel</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><code>funnel</code></p></td>
-<td><p><code>SingleValueCategoryModel</code></p></td>
-</tr>
-<tr class="even">
-<td><p><code>errorbox</code></p></td>
-<td><p><code>XYModel</code></p></td>
-</tr>
-</tbody>
-</table>
+| Type | Model |
+|------|-------|
+| `line` | `CategoryModel` or `XYModel` |
+| `spline` | `CategoryModel` or `XYModel` |
+| `area` | `CategoryModel` or `XYModel` |
+| `areaspline` | `CategoryModel` or `XYModel` |
+| `arearange` | `XYZModel` |
+| `areasplinerange` | `XYZModel` |
+| `bar` | `CategoryModel` or `XYModel` |
+| `column` | `CategoryModel` or `XYModel` |
+| `columnrange` | `XYModel` |
+| `pie` | `PieModel` |
+| `scatter` | `XYModel` |
+| `bubble` | `XYModel` or `XYZModel` |
+| `gauge` | `DialModel` |
+| `polar` | `CategoryModel` or `XYModel` |
+| `errorbar` | `XYModel` |
+| `waterfall` | `CategoryModel` or `XYModel` |
+| `funnel` | `SingleValueCategoryModel` |
+| `errorbox` | `XYModel` |
 
 **Note:** Since ZK 7.0.1,
 [org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html) also supports

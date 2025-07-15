@@ -75,66 +75,13 @@ from Java.
 Here is a list of methods you could override. For a complete list,
 please refer to [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html).
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Method</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>[zk.Widget#dropEffect_(boolean)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#dropEffect_(boolean))</p></td>
-<td><p>Called to have some visual effect when the user is dragging a
-widget over this widget and this widget is droppable. Notice it is the
-effect to indicate that a widget is droppable.</p></td>
-</tr>
-<tr class="even">
-<td><p>[zk.Widget#onDrop_(zk.Draggable, zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#onDrop_(zk.Draggable, zk.Event))</p></td>
-<td><p>Called to fire the onDrop event. You could override it to
-implement some effects to indicate dropping.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[zk.Widget#getDragOptions_(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#getDragOptions_(_global_.Map))</p></td>
-<td><p>Returns the options used to instantiate
-[zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html). There is a lot what
-you could customize with this method, since the options control many
-effects, such <code>starteffect</code>, <code>endeffect</code>,
-<code>change</code> and so on. Note: the dragOptions map received as
-parameter in this function is a global "static" object shared by every
-instances of drag and drop in the page. If you make modifications to
-this object directly, they will apply to every drag and drop workflow
-triggered subsequently. A simple way to do a punctual change to the drag
-behavior is to copy the object, then modify and return the copy.</p>
-<pre><code>                getDragOptions_: function(map) {
-                    if(windowOptions == null){
-                        windowOptions = zk.copy(new Map(),map);
-                        //Commented out: chain effect from multiple overrides
-                        //var oldstarteffect = map.starteffect;
-                        windowOptions.starteffect = function(dg) {
-                            //oldstarteffect.apply(this,arguments);
-                            jq(dg.node).css(&quot;background-color&quot;,&quot;yellow&quot;);
-                        }
-                    }
-                    return windowOptions;
-                }</code></pre>
-<p>Please refer to [zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html) and
-the source code for more information.</p></td>
-</tr>
-<tr class="even">
-<td><p>[zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset))</p></td>
-<td><p>Called to create the visual effect representing what is being
-dragged. In other words, it creates the DOM element that will be moved
-with the mouse pointer when the user is dragging.</p></td>
-</tr>
-<tr class="odd">
-<td><p>[zk.Widget#uncloneDrag_(zk.Draggable)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#uncloneDrag_(zk.Draggable))</p></td>
-<td><p>Undo the visual effect created by
-[zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)).
-In other words, it removes the DOM element that was created.</p></td>
-</tr>
-</tbody>
-</table>
+| Method | Description |
+|--------|-------------|
+| [zk.Widget#dropEffect_(boolean)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#dropEffect_(boolean)) | Called to have some visual effect when the user is dragging a widget over this widget and this widget is droppable. Notice it is the effect to indicate that a widget is droppable. |
+| [zk.Widget#onDrop_(zk.Draggable, zk.Event)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#onDrop_(zk.Draggable, zk.Event)) | Called to fire the onDrop event. You could override it to implement some effects to indicate dropping. |
+| [zk.Widget#getDragOptions_(_global_.Map)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#getDragOptions_(_global_.Map)) | Returns the options used to instantiate [zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html). There is a lot what you could customize with this method, since the options control many effects, such `starteffect`, `endeffect`, `change` and so on. Note: the dragOptions map received as parameter in this function is a global "static" object shared by every instances of drag and drop in the page. If you make modifications to this object directly, they will apply to every drag and drop workflow triggered subsequently. A simple way to do a punctual change to the drag behavior is to copy the object, then modify and return the copy.<br/><br/>```javascript<br/>getDragOptions_: function(map) {<br/>    if(windowOptions == null){<br/>        windowOptions = zk.copy(new Map(),map);<br/>        //Commented out: chain effect from multiple overrides<br/>        //var oldstarteffect = map.starteffect;<br/>        windowOptions.starteffect = function(dg) {<br/>            //oldstarteffect.apply(this,arguments);<br/>            jq(dg.node).css("background-color","yellow");<br/>        }<br/>    }<br/>    return windowOptions;<br/>}<br/>```<br/><br/>Please refer to [zk.Draggable](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Draggable.html) and the source code for more information. |
+| [zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)) | Called to create the visual effect representing what is being dragged. In other words, it creates the DOM element that will be moved with the mouse pointer when the user is dragging. |
+| [zk.Widget#uncloneDrag_(zk.Draggable)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#uncloneDrag_(zk.Draggable)) | Undo the visual effect created by [zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)). In other words, it removes the DOM element that was created. |
 
 > ------------------------------------------------------------------------
 >

@@ -50,43 +50,12 @@ it at
 
 The same pattern applies to the [ other message files](/zk_dev_ref/internationalization/zk_messages) such as
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>File</p>
-</center></th>
-<th><center>
-<p>Prefix of a Key</p>
-</center></th>
-<th><center>
-<p>Key Example</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>msgzk_[LOCALE].properties</p></td>
-<td><p><code>MZk</code></p></td>
-<td><p>MZk.1000= my text</p></td>
-</tr>
-<tr class="even">
-<td><p>msgzul_[LOCALE].properties</p></td>
-<td><p><code>MZul</code></p></td>
-<td><p>MZul.2400=mytext</p></td>
-</tr>
-<tr class="odd">
-<td><p>msgcommon_[LOCALE].properties</p></td>
-<td><p><code>MCommon</code></p></td>
-<td><p>MCommon.1234= my text</p></td>
-</tr>
-<tr class="even">
-<td><p>msgweb_[LOCALE].properties</p></td>
-<td><p><code>MWeb</code></p></td>
-<td><p>MWeb.1234= my test</p></td>
-</tr>
-</tbody>
-</table>
+| File | Prefix of a Key | Key Example |
+|------|-----------------|-------------|
+| msgzk_[LOCALE].properties | `MZk` | MZk.1000= my text |
+| msgzul_[LOCALE].properties | `MZul` | MZul.2400=mytext |
+| msgcommon_[LOCALE].properties | `MCommon` | MCommon.1234= my text |
+| msgweb_[LOCALE].properties | `MWeb` | MWeb.1234= my test |
 
 ## Defined in a JS File
 

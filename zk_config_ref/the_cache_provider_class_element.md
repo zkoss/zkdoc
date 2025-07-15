@@ -17,35 +17,9 @@ application, so you have to synchronize the access properly.
 
 Available implementations are as follows.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Class</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>`org.zkoss.zk.ui.impl.SessionDesktopCacheProvider`</p></td>
-<td><p>It stores all desktops from the same session in one single cache.
-It is simple and fast, but not supporting clustering by default. To
-support clustering, please check the <a
-href="{{site.baseurl}}/zk_dev_ref/clustering/zk_configuration"
-title="wikilink"> configuration for clustering</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>`org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider`</p></td>
-<td><p>It stores all desktops from the same Web application in one
-single cache. In other words, it doesn't count on session at all.</p>
-<p>It is useful because some Web server, e.g, <a
-href="http://www.bea.com/">BEA WebLogic</a>, might be configured to use
-independent sessions for each request.</p></td>
-</tr>
-</tbody>
-</table>
+| Class | Description |
+|:-----:|:------------|
+| `org.zkoss.zk.ui.impl.SessionDesktopCacheProvider` | It stores all desktops from the same session in one single cache. It is simple and fast, but not supporting clustering by default. To support clustering, please check the [configuration for clustering]({{site.baseurl}}/zk_dev_ref/clustering/zk_configuration). |
+| `org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider` | It stores all desktops from the same Web application in one single cache. In other words, it doesn't count on session at all.<br><br>It is useful because some Web server, e.g, [BEA WebLogic](http://www.bea.com/), might be configured to use independent sessions for each request. |
 
 

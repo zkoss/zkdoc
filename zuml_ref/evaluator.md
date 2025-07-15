@@ -26,68 +26,14 @@ follows.
 
 Here is a list of built-in implementations:
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Class / Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>default</p></td>
-<td><p>org.zkoss.xel.el.ELFactory</p>
-<p>The default implementation. It is based on ZK Commons EL
-(<code>zcommons-el.jar</code>), which is a performance enhancement
-version of Apache Commons EL.</p></td>
-</tr>
-<tr class="even">
-<td><p>zel</p></td>
-<td><p>org.zkoss.xel.zel.ELFactory</p>
-<p>The implementation based on The ZK EL Library(<code>zel.jar</code>),
-which supports new features seen in <i>Unified Expression Language
-2.2</i> such as method calls and l-value.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&#39;&#39;[Since ZK 6, ZK uses this evaluator as the default one.]&#39;&#39;</span></code></pre></div></td>
-</tr>
-<tr class="odd">
-<td><p>mvel</p></td>
-<td><p>org.zkoss.zkmax.xel.mvel.MVELFactory</p>
-<p>The implementation based on MVEL, <a
-href="http://mvel.codehaus.org">http://mvel.codehaus.org</a>.</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&#39;&#39;[available only if zkmax.jar is loaded]&#39;&#39;</span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>ognl</p></td>
-<td><p>org.zkoss.zkmax.xel.ognl.OGNLFactory</p>
-<p>The implementation based on OGNL, <a
-href="http://www.ognl.org/"><span>http://www.ognl.org</span></a>.</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&#39;&#39;[available only if zkmax.jar is loaded]&#39;&#39;</span></code></pre></div></td>
-</tr>
-<tr class="odd">
-<td><p>commons-el</p></td>
-<td><p>org.zkoss.zkmax.xel.el.ApacheELFactory</p>
-<p>The implementation that is based on Apache Commons EL,
-org.apache.commons.el.ExpressionEvaluatorImpl.</p>
-<div class="sourceCode" id="cb4"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>&#39;&#39;[available only if zkmax.jar is loaded]&#39;&#39;</span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>japser-el</p></td>
-<td><p>org.zkoss.zkmax.xel.el21.ApacheELFactory</p>
-<p>The implementation that is based on Apache JSP 2.1 EL,
-org.apache.el.ExpressionFactoryImpl.</p>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>&#39;&#39;[available only if zkmax.jar is loaded]&#39;&#39;</span></code></pre></div></td>
-</tr>
-</tbody>
-</table>
+| Name | Class / Description |
+|:----:|:-------------------|
+| default | org.zkoss.xel.el.ELFactory<br><br>The default implementation. It is based on ZK Commons EL (`zcommons-el.jar`), which is a performance enhancement version of Apache Commons EL. |
+| zel | org.zkoss.xel.zel.ELFactory<br><br>The implementation based on The ZK EL Library(`zel.jar`), which supports new features seen in *Unified Expression Language 2.2* such as method calls and l-value.<br><br>*[Since ZK 6, ZK uses this evaluator as the default one.]* |
+| mvel | org.zkoss.zkmax.xel.mvel.MVELFactory<br><br>The implementation based on MVEL, [http://mvel.codehaus.org](http://mvel.codehaus.org).<br><br>*[available only if zkmax.jar is loaded]* |
+| ognl | org.zkoss.zkmax.xel.ognl.OGNLFactory<br><br>The implementation based on OGNL, [http://www.ognl.org](http://www.ognl.org/).<br><br>*[available only if zkmax.jar is loaded]* |
+| commons-el | org.zkoss.zkmax.xel.el.ApacheELFactory<br><br>The implementation that is based on Apache Commons EL, org.apache.commons.el.ExpressionEvaluatorImpl.<br><br>*[available only if zkmax.jar is loaded]* |
+| japser-el | org.zkoss.zkmax.xel.el21.ApacheELFactory<br><br>The implementation that is based on Apache JSP 2.1 EL, org.apache.el.ExpressionFactoryImpl.<br><br>*[available only if zkmax.jar is loaded]* |
 
 You can provide additional implementation by the use of the `class`
 attribute, as described in the following section. The class must

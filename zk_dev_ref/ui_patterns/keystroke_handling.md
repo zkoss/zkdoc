@@ -109,162 +109,27 @@ to know which key was pressed.
 
 ## Allowed Control Keys
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Key</p>
-</center></th>
-<th><center>
-<p>Syntax</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Control</p></td>
-<td><center>
-<p>^[?]</p>
-</center></td>
-<td><p><code>[?]</code> can be <strong>a~z, 0~9, #[?]</strong>, e.g.
-<code>^k</code> represents <code>Ctrl+k</code></p></td>
-</tr>
-<tr class="even">
-<td><p>Alt</p></td>
-<td><center>
-<p>@[?]</p>
-</center></td>
-<td><p><code>[?]</code> can be <strong>a~z, 0~9, #[?]</strong>, e.g.
-<code>@k</code> represents <code>Alt+k</code></p></td>
-</tr>
-<tr class="odd">
-<td><p>Shift</p></td>
-<td><center>
-<p>$[?]</p>
-</center></td>
-<td><p><code>[?]</code> can be <strong>#[?]</strong>. Note: $a ~ $z are
-not supported. e.g. <code>$#down</code> represents
-<code>Shift+↓</code></p></td>
-</tr>
-<tr class="even">
-<td><p>Mac command(⌘)</p></td>
-<td><center>
-<p>%[?]</p>
-</center></td>
-<td><p><code>[?]</code> can be <strong>a~z, 0~9, #[?]</strong>. e.g.
-<code>%k</code> represents <code>command+k</code></p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Navigation key</strong></p></td>
-<td><center>
-<p>#[?]</p>
-</center></td>
-<td><p>the supported value of <code>[?]</code> are listed
-below:</p></td>
-</tr>
-<tr class="even">
-<td><p>Home</p></td>
-<td><center>
-<p>#home</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>End</p></td>
-<td><center>
-<p>#end</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Insert</p></td>
-<td><center>
-<p>#ins</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Delete</p></td>
-<td><center>
-<p>#del</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>←</p></td>
-<td><center>
-<p>#left</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>→</p></td>
-<td><center>
-<p>#right</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>↑</p></td>
-<td><center>
-<p>#up</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>↓</p></td>
-<td><center>
-<p>#down</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>PgUp</p></td>
-<td><center>
-<p>#pgup</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>PgDn</p></td>
-<td><center>
-<p>#pgdn</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Backspace</p></td>
-<td><center>
-<p>#bak</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>function key (F1, F2,... F12)</p></td>
-<td><center>
-<p>#f1, #f2, ... #f12</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Tab</p></td>
-<td><center>
-<p>#tab</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Space</p></td>
-<td><center>
-<p>#space</p>
-</center></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Key | Syntax | Description |
+|---|---|---|
+| Control | ^[?] | `[?]` can be **a~z, 0~9, #[?]**, e.g. `^k` represents `Ctrl+k` |
+| Alt | @[?] | `[?]` can be **a~z, 0~9, #[?]**, e.g. `@k` represents `Alt+k` |
+| Shift | $[?] | `[?]` can be **#[?]**. Note: $a ~ $z are not supported. e.g. `$#down` represents `Shift+↓` |
+| Mac command(⌘) | %[?] | `[?]` can be **a~z, 0~9, #[?]**. e.g. `%k` represents `command+k` |
+| **Navigation key** | #[?] | the supported value of `[?]` are listed below: |
+| Home | #home | |
+| End | #end | |
+| Insert | #ins | |
+| Delete | #del | |
+| ← | #left | |
+| → | #right | |
+| ↑ | #up | |
+| ↓ | #down | |
+| PgUp | #pgup | |
+| PgDn | #pgdn | |
+| Backspace | #bak | |
+| function key (F1, F2,... F12) | #f1, #f2, ... #f12 | |
+| Tab | #tab | |
+| Space | #space | |
 
 # Document-level Keystrokes
 

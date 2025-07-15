@@ -19,62 +19,12 @@ Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web_xml).
 
 # The Initial Parameters
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>init-param</p>
-</center></th>
-<th><center>
-<p>Descriptions</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>update-uri</p></td>
-<td><p>[Required]</p>
-<p>It specifies the URI which the ZK AU engine is mapped to.</p>
-<p>For example, if the ZK AU engine is mapped to `/zkau/*`,
-by the use of `servlet-mapping`, then specify
-`/zkau` for this parameter.</p>
-<p>Note: if the servlet container is used with other Web server, like
-Apache, you have to map this update URI to the servlet container (in
-additions to `zul` and `zhtml` files).</p></td>
-</tr>
-<tr class="even">
-<td><p>resource-uri</p></td>
-<td><p>[Optional]</p>
-<p>It specifies the URI which the <a
-href="{{site.baseUrl}}/zk_config_ref/ZK_Resource_Engine"
-title="wikilink"> ZK Resource engine</a> is mapped to.</p>
-<p>For example, if the ZK Resource engine is mapped to
-`/zkres/*`, by the use of `servlet-mapping`, then
-specify `/zkres` for this parameter.</p>
-<p>Note: if the servlet container is used with other Web server, like
-Apache, you have to map this resource URI to the servlet container (in
-additions to `zul` and `zhtml` files).</p></td>
-</tr>
-<tr class="odd">
-<td><p>compress</p></td>
-<td><p>[Optional][Default:`true`]</p>
-<p>It specifies whether to compress the output if the browser supports
-the compression (`Accept-Encoding`) and this Servlet is not
-included by other Servlets.</p></td>
-</tr>
-<tr class="even">
-<td><p>log-level</p></td>
-<td><p>[Optional]</p>
-<p>It specifies the default log level for `org.zkoss`. If not
-specified, the system default (usually `INFO`) is used.</p>
-<p>Possible values: `OFF`, `ERROR`,
-`WARNING`, `INFO`, `DEBUG` and
-`FINER`. Please refer to <a
-href="ZK_Developer&#39;s_Reference/Supporting_Utilities/Logger"
-title="wikilink">ZK Developer's Reference</a> for details.</p></td>
-</tr>
-</tbody>
-</table>
+| init-param | Descriptions |
+|:----------:|:-------------|
+| update-uri | [Required]<br><br>It specifies the URI which the ZK AU engine is mapped to.<br><br>For example, if the ZK AU engine is mapped to `/zkau/*`, by the use of `servlet-mapping`, then specify `/zkau` for this parameter.<br><br>Note: if the servlet container is used with other Web server, like Apache, you have to map this update URI to the servlet container (in additions to `zul` and `zhtml` files). |
+| resource-uri | [Optional]<br><br>It specifies the URI which the [ZK Resource engine]({{site.baseUrl}}/zk_config_ref/ZK_Resource_Engine) is mapped to.<br><br>For example, if the ZK Resource engine is mapped to `/zkres/*`, by the use of `servlet-mapping`, then specify `/zkres` for this parameter.<br><br>Note: if the servlet container is used with other Web server, like Apache, you have to map this resource URI to the servlet container (in additions to `zul` and `zhtml` files). |
+| compress | [Optional][Default:`true`]<br><br>It specifies whether to compress the output if the browser supports the compression (`Accept-Encoding`) and this Servlet is not included by other Servlets. |
+| log-level | [Optional]<br><br>It specifies the default log level for `org.zkoss`. If not specified, the system default (usually `INFO`) is used.<br><br>Possible values: `OFF`, `ERROR`, `WARNING`, `INFO`, `DEBUG` and `FINER`. Please refer to [ZK Developer's Reference](ZK_Developer's_Reference/Supporting_Utilities/Logger) for details. |
 
 # Map URL to ZUML pages
 

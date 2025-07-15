@@ -10,7 +10,7 @@ refer to [Setting up Google App Engine]({{site.baseurl}}/zk_installation_guide/g
 
 # How to Configure Logging
 
-{$ include version-badge.html version=7.0.0 %}
+{% include version-badge.html version=7.0.0 %}
 ZK uses [SLF4J](http://www.slf4j.org/) as its internal logging system,
 and developers can follow the [SLF4J document](http://www.slf4j.org/manual.html) to use the logging in ZK.
 
@@ -100,61 +100,14 @@ Use SLF4J API for logging instead.
 
 {% include DeprecatedSince.md version=7.0.0 %}
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Level</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>OFF</p>
-</center></td>
-<td><p>Indicates no message at all.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>ERROR | SEVERE</p>
-</center></td>
-<td><p>Indicates providing error messages.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>WARNING</p>
-</center></td>
-<td><p>Indicates providing warning messages. It also implies
-ERROR.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>INFO</p>
-</center></td>
-<td><p>Indicates providing informational messages. It also implies ERROR
-and WARNING.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>DEBUG | FINE</p>
-</center></td>
-<td><p>Indicates providing tracing information for debugging purpose. It
-also implies ERROR, WARNING and INFO.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>FINER</p>
-</center></td>
-<td><p>Indicates providing fairly detailed tracing information for
-debugging purpose. It also implies ERROR, WARNING, INFO and
-DEBUG</p></td>
-</tr>
-</tbody>
-</table>
+| Level | Description |
+|-------|-------------|
+| OFF | Indicates no message at all. |
+| ERROR \| SEVERE | Indicates providing error messages. |
+| WARNING | Indicates providing warning messages. It also implies ERROR. |
+| INFO | Indicates providing informational messages. It also implies ERROR and WARNING. |
+| DEBUG \| FINE | Indicates providing tracing information for debugging purpose. It also implies ERROR, WARNING and INFO. |
+| FINER | Indicates providing fairly detailed tracing information for debugging purpose. It also implies ERROR, WARNING, INFO and DEBUG |
 
 ### Specify the handler for Jetty and servers that don't turn on the standard logger
 

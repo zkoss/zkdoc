@@ -62,51 +62,11 @@ The peer widget of a component is created automatically, when it is
 attached to a page. On the other hand, if a component is not attached,
 the client won't know its existence.
 
-<table>
-<tbody>
-<tr class="odd">
-<td></td>
-<td><p>Server</p></td>
-<td><p>Client</p></td>
-<td><p>Description</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">Window</span> w <span class="op">=</span> <span class="kw">new</span> <span class="bu">Window</span><span class="op">();</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>w<span class="op">.</span><span class="fu">setTitle</span><span class="op">(</span><span class="st">&quot;Hello Window&quot;</span><span class="op">);</span></span></code></pre></div></td>
-<td><p><i>nothing</i></p></td>
-<td><p>A Window component is instantiated but it doesn't have the peer
-widget. Furthermore, it will be garbage-collected if there is no
-reference to it</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><div class="sourceCode" id="cb2"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>w<span class="op">.</span><span class="fu">setPage</span><span class="op">(</span>page<span class="op">);</span></span></code></pre></div></td>
-<td><p>Auto invoked by ZK Client Engine</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> pw <span class="op">=</span> <span class="kw">new</span> zul<span class="op">.</span><span class="at">wnd</span><span class="op">.</span><span class="fu">Window</span>(uuid)<span class="op">;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pw<span class="op">.</span><span class="fu">setTitle</span>(<span class="st">&#39;Hello World&#39;</span>)<span class="op">;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>pw<span class="op">.</span><span class="fu">replaceHTML</span>(uuid)<span class="op">;</span></span></code></pre></div></td>
-<td><p>Attach the component to the specified page, and a peer widget
-will be created automatically at the client later (after processing the
-<a href="{{site.baseurl}}/zk_client_side_ref/au_requests"
-title="wikilink">AU Requests</a>).</p></td>
-</tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><div class="sourceCode" id="cb4"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>w<span class="op">.</span><span class="fu">setTitle</span><span class="op">(</span><span class="st">&quot;Hi ZK&quot;</span><span class="op">);</span></span></code></pre></div></td>
-<td><p>Auto invoked by ZK Client Engine</p>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>pw<span class="op">.</span><span class="fu">setTitle</span>(<span class="st">&#39;Hi ZK&#39;</span>)<span class="op">;</span></span></code></pre></div></td>
-<td><p>Once a component is attached to a page, any following
-modification will be sent to the client and invoke the corresponding
-method of the peer widget.</p></td>
-</tr>
-</tbody>
-</table>
+|   | Server | Client | Description |
+|---|--------|--------|-------------|
+| 1 | ```java<br/>Window w = new Window();<br/>w.setTitle("Hello Window");<br/>``` | *nothing* | A Window component is instantiated but it doesn't have the peer widget. Furthermore, it will be garbage-collected if there is no reference to it |
+| 2 | ```java<br/>w.setPage(page);<br/>``` | Auto invoked by ZK Client Engine<br/><br/>```javascript<br/>var pw = new zul.wnd.Window(uuid);<br/>pw.setTitle('Hello World');<br/>pw.replaceHTML(uuid);<br/>``` | Attach the component to the specified page, and a peer widget will be created automatically at the client later (after processing the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)). |
+| 3 | ```java<br/>w.setTitle("Hi ZK");<br/>``` | Auto invoked by ZK Client Engine<br/><br/>```javascript<br/>pw.setTitle('Hi ZK');<br/>``` | Once a component is attached to a page, any following modification will be sent to the client and invoke the corresponding method of the peer widget. |
 
 - Notes:
   - There are two ways to attach a component to page. First, call the
@@ -127,45 +87,11 @@ A widget is an UI object at the client. Like Swing's component, creating
 a widget doesn't make it visible to the user. Rather, you have to attach
 it to the DOM tree (of the browser).
 
-<table>
-<tbody>
-<tr class="odd">
-<td></td>
-<td><p>Client Widget</p></td>
-<td><p>Client DOM</p></td>
-<td><p>Description</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> wp <span class="op">=</span> <span class="kw">new</span> zul<span class="op">.</span><span class="at">wnd</span><span class="op">.</span><span class="fu">Window</span>()<span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>wp<span class="op">.</span><span class="fu">setTitle</span>(<span class="st">&#39;Hello World&#39;</span>)<span class="op">;</span></span></code></pre></div>
-<p>Invoked by ZK Client Engine or client application</p></td>
-<td><p><i>nothing</i></p></td>
-<td><p>A window widget is instantiated. If it is called by ZK Client
-Engine (due to the invocation at the server), it has a peer component.
-If it is called by client application, there is no peer
-component.</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><div class="sourceCode" id="cb2"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>wp<span class="op">.</span><span class="fu">replaceHTML</span>(uuid)<span class="op">;</span></span></code></pre></div></td>
-<td><p>Create one or a tree of DOM elements (depending on the
-implementation of a widget) and replace the specified node.</p></td>
-<td><p>Attach a widget to the DOM tree, and the visual appearance is
-shown up (unless it is invisible).</p></td>
-</tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><div class="sourceCode" id="cb3"><pre
-class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>wp<span class="op">.</span><span class="fu">setTitle</span>(<span class="st">&#39;Hi ZK&#39;</span>)<span class="op">;</span></span></code></pre></div></td>
-<td><p>Update the DOM element(s) created in the previous step</p></td>
-<td><p>A modification of the widget will modify the corresponding DOM
-elements</p></td>
-</tr>
-</tbody>
-</table>
+|   | Client Widget | Client DOM | Description |
+|---|---------------|------------|-------------|
+| 1 | ```javascript<br/>var wp = new zul.wnd.Window();<br/>wp.setTitle('Hello World');<br/>```<br/><br/>Invoked by ZK Client Engine or client application | *nothing* | A window widget is instantiated. If it is called by ZK Client Engine (due to the invocation at the server), it has a peer component. If it is called by client application, there is no peer component. |
+| 2 | ```javascript<br/>wp.replaceHTML(uuid);<br/>``` | Create one or a tree of DOM elements (depending on the implementation of a widget) and replace the specified node. | Attach a widget to the DOM tree, and the visual appearance is shown up (unless it is invisible). |
+| 3 | ```javascript<br/>wp.setTitle('Hi ZK');<br/>``` | Update the DOM element(s) created in the previous step | A modification of the widget will modify the corresponding DOM elements |
 
 ## Attach a widget to the DOM tree
 

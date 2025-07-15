@@ -89,62 +89,14 @@ Explorer is the current user's browser.
 In the following example, we assume the preferred Locale is `de_DE` and
 the browser is Internet Explorer.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>URI</p>
-</center></th>
-<th><center>
-<p>Resources that are searched</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>/css/norm*.css</p></td>
-<td><ol>
-<li>/norm_de_DE.css</li>
-<li>/norm_de.css</li>
-<li>/norm.css</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><p>/css-*/norm*.css</p></td>
-<td><ol>
-<li>/css-ie/norm_de_DE.css</li>
-<li>/css-ie/norm_de.css</li>
-<li>/css-ie/norm.css</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><p>/img*/pic*/lang*.png</p></td>
-<td><ol>
-<li>/imgie/pic*/lang_de_DE.png</li>
-<li>/imgie/pic*/lang_de.png</li>
-<li>/imgie/pic*/lang.png</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><p>/img*/lang.gif</p></td>
-<td><ol>
-<li>/img/lang.gif</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><p>/img/lang*.gif*</p></td>
-<td><ol>
-<li>/img/langie.gif</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td><p>/img*/lang*.gif*</p></td>
-<td><ol>
-<li>/imgie/lang*.gif</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+| URI | Resources that are searched |
+|-----|-----------------------------|
+| /css/norm*.css | 1. /norm_de_DE.css<br/>2. /norm_de.css<br/>3. /norm.css |
+| /css-*/norm*.css | 1. /css-ie/norm_de_DE.css<br/>2. /css-ie/norm_de.css<br/>3. /css-ie/norm.css |
+| /img*/pic*/lang*.png | 1. /imgie/pic*/lang_de_DE.png<br/>2. /imgie/pic*/lang_de.png<br/>3. /imgie/pic*/lang.png |
+| /img*/lang.gif | 1. /img/lang.gif |
+| /img/lang*.gif* | 1. /img/langie.gif |
+| /img*/lang*.gif* | 1. /imgie/lang*.gif |
 
 # Locating Locale- and browser-dependent resources in Java
 

@@ -98,147 +98,19 @@ these libraries are common, you might have already installed them in
 your Servlet container. These jar files are optional. You can choose
 whether to copy depending on your requirements.
 
-<table>
-<thead>
-<tr class="header">
-<th width="100"><p>Filename</p></th>
-<th width="360"><p>Description</p></th>
-<th width="90"><p>License</p></th>
-<th width="200"><p>Version</p></th>
-<th width="120"><p>Shipped</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>commons-codec.jar</li>
-</ul></td>
-<td><p>Required by zweb module.</p></td>
-<td><p>Apache</p></td>
-<td><p>1.8.0</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>commons-fileupload.jar</li>
-<li>commons-io.jar</li>
-</ul></td>
-<td><p>Required if you want to upload files with them.</p></td>
-<td><p>Apache</p></td>
-<td><ul>
-<li>1.3.3</li>
-<li>2.4</li>
-</ul></td>
-<td><p>All</p></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>javassist.jar</li>
-</ul></td>
-<td><p>Required by zkbind, zel, and zkmax module.</p></td>
-<td><p>MPL / LGPL / Apache</p></td>
-<td><p>3.18.2.GA</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>jcommon.jar</li>
-<li>jfreechart.jar</li>
-</ul></td>
-<td><p>Required if you want to use ZUL's chart component.</p></td>
-<td><p>LGPL</p></td>
-<td><ul>
-<li>1.0.23</li>
-<li>1.0.19</li>
-</ul></td>
-<td><p>ZK PE and EE only</p></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>gson.jar</li>
-</ul></td>
-<td><p>Required by zkmax components (Fragment, GoldenLayout) and default
-JSON converter.</p></td>
-<td><p>Apache</p></td>
-<td><p>2.7</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>jasperreports.jar</li>
-<li>itext.jar</li>
-<li>commons-collections4.jar</li>
-<li>commons-logging.jar</li>
-</ul></td>
-<td><p>Required if you want to use the jasperreport component.</p></td>
-<td><p>LGPL (jasperreports)</p></td>
-<td><ul>
-<li>6.14.0</li>
-<li>2.1.7js8</li>
-<li>4.4</li>
-<li>1.1.1</li>
-</ul></td>
-<td><p>ZK PE and EE only</p></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>bsh.jar</li>
-</ul></td>
-<td><p>Required if you want scripting in Java interpreter
-(BeanShell).</p></td>
-<td><p>LGPL</p></td>
-<td><p>2.0b6</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>Filters.jar</li>
-</ul></td>
-<td><p>Required if you want to use the captcha component.</p></td>
-<td><p>Apache</p></td>
-<td><p>2.0.235</p></td>
-<td><p>ZK PE and EE only</p></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>closure-compiler.jar</li>
-</ul></td>
-<td><p>Required only if you want to use the sourcemap support while in
-debugging <a
-href="https://tracker.zkoss.org//browse/ZK-3677">ZK-3677</a>. <strong>No
-need for production.</strong> (See <a
-href="https://tracker.zkoss.org/browse/ZK-4712">ZK-4712</a>)</p></td>
-<td><p>Apache</p></td>
-<td><p>v20200426</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td><ul>
-<li>slf4j-api.jar</li>
-</ul></td>
-<td><p>Required by most of the ZK modules as a logging facade.</p></td>
-<td><p>MIT</p></td>
-<td><p>1.7.30</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="odd">
-<td><ul>
-<li>zsoup.jar</li>
-</ul></td>
-<td><p>Required by zhtml module.</p></td>
-<td><p>MIT</p></td>
-<td><p>1.8.2.5</p></td>
-<td><p>All</p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Filename | Description | License | Version | Shipped |
+|----------|-------------|---------|---------|---------|
+| commons-codec.jar | Required by zweb module. | Apache | 1.8.0 | All |
+| commons-fileupload.jar<br>commons-io.jar | Required if you want to upload files with them. | Apache | 1.3.3<br>2.4 | All |
+| javassist.jar | Required by zkbind, zel, and zkmax module. | MPL / LGPL / Apache | 3.18.2.GA | All |
+| jcommon.jar<br>jfreechart.jar | Required if you want to use ZUL's chart component. | LGPL | 1.0.23<br>1.0.19 | ZK PE and EE only |
+| gson.jar | Required by zkmax components (Fragment, GoldenLayout) and default JSON converter. | Apache | 2.7 | All |
+| jasperreports.jar<br>itext.jar<br>commons-collections4.jar<br>commons-logging.jar | Required if you want to use the jasperreport component. | LGPL (jasperreports) | 6.14.0<br>2.1.7js8<br>4.4<br>1.1.1 | ZK PE and EE only |
+| bsh.jar | Required if you want scripting in Java interpreter (BeanShell). | LGPL | 2.0b6 | All |
+| Filters.jar | Required if you want to use the captcha component. | Apache | 2.0.235 | ZK PE and EE only |
+| closure-compiler.jar | Required only if you want to use the sourcemap support while in debugging [ZK-3677](https://tracker.zkoss.org//browse/ZK-3677). **No need for production.** (See [ZK-4712](https://tracker.zkoss.org/browse/ZK-4712)) | Apache | v20200426 | All |
+| slf4j-api.jar | Required by most of the ZK modules as a logging facade. | MIT | 1.7.30 | All |
+| zsoup.jar | Required by zhtml module. | MIT | 1.8.2.5 | All |
 
 - The interpreters for Groovy (groovy.jar), Ruby (jruby.jar), Python
   (jython.jar), JavaScript (js.jar), MVEL (mvel.jar) and OGNL (ognl.jar)

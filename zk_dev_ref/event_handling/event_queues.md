@@ -51,161 +51,25 @@ There are currently four different scopes: desktop, group, session, and
 application. In addition, you add your own scope, such as that you can
 include a message queue to communicate among several servers.
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Scope</p></th>
-<th><p>API</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>desktop</p></td>
-<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))</p></td>
-<td><p>The event queue is visible only in the same desktop. (<a
-href="https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/impl/DesktopEventQueue.html">DesktopEventQueue</a>)</p></td>
-</tr>
-<tr class="even">
-<td><p>group</p></td>
-<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))</p></td>
-<td><p>{% include version-badge.html version=5.0.4 %} {% include edition-availability.html edition="ee" %} The event
-queue is visible only in a group of desktops that belongs to the same
-browser tab(page). It is formed if an iframe or frameset is used. Some
-portal containers might cause a group of desktops to be formed too.
-Unlike the session and application scope, the group scope doesn't
-require the server push, so the communication is more
-efficient.</p></td>
-</tr>
-<tr class="odd">
-<td><p>session</p></td>
-<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean))</p></td>
-<td><p>The event queue is visible only in the same session. The
-<strong>server push will be enabled automatically</strong> if it
-subscribes a session-scoped event queue.</p>
-<p>Notice that the server push is disabled automatically if the current
-desktop doesn't subscribe to any session- or application-scoped event
-queue. Also, notice that the locating and creating of an event queue and
-publishing an event won't start the server push.</p>
-<p>ZK 5.0.5 and Prior: When a server push is enabled, a working thread
-is instantiated and started. It means this feature cannot be used in an
-environment that doesn't allow working threads, such as Google App
-Engine. No such limitation is likely to occur in ZK 5.0.6 or
-later.</p></td>
-</tr>
-<tr class="even">
-<td><p>application</p></td>
-<td><p>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp))<br />
-[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean))</p></td>
-<td><p>The event queue is visible only in the whole application. The
-<strong>server push will be enabled automatically</strong>.</p>
-<p>Notice that the server push is disabled automatically if the current
-desktop doesn't subscribe to any session- or application-scoped event
-queue. Also notice that the locating and creating of an event queue and
-publishing an event won't start the server push.</p>
-<p>ZK 5.0.5 and Prior: When a server push is enabled, a working thread
-is instantiated and started. It means this feature cannot be used in an
-environment that doesn't allow working threads, such as Google App
-Engine. No such limitation is likely to occur in ZK 5.0.6 or
-later.</p></td>
-</tr>
-</tbody>
-</table>
+| Scope | API | Description |
+|-------|-----|-------------|
+| desktop | [org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean)) | The event queue is visible only in the same desktop. ([DesktopEventQueue](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/impl/DesktopEventQueue.html)) |
+| group | [org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean)) | {% include version-badge.html version=5.0.4 %} {% include edition-availability.html edition="ee" %} The event queue is visible only in a group of desktops that belongs to the same browser tab(page). It is formed if an iframe or frameset is used. Some portal containers might cause a group of desktops to be formed too. Unlike the session and application scope, the group scope doesn't require the server push, so the communication is more efficient. |
+| session | [org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.Session, boolean)) | The event queue is visible only in the same session. The **server push will be enabled automatically** if it subscribes a session-scoped event queue.<br/><br/>Notice that the server push is disabled automatically if the current desktop doesn't subscribe to any session- or application-scoped event queue. Also, notice that the locating and creating of an event queue and publishing an event won't start the server push.<br/><br/>ZK 5.0.5 and Prior: When a server push is enabled, a working thread is instantiated and started. It means this feature cannot be used in an environment that doesn't allow working threads, such as Google App Engine. No such limitation is likely to occur in ZK 5.0.6 or later. |
+| application | [org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, java.lang.String, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, java.lang.String, boolean))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp))<br/>[org.zkoss.zk.ui.event.EventQueues#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/EventQueues.html#lookup(java.lang.String, org.zkoss.zk.ui.WebApp, boolean)) | The event queue is visible only in the whole application. The **server push will be enabled automatically**.<br/><br/>Notice that the server push is disabled automatically if the current desktop doesn't subscribe to any session- or application-scoped event queue. Also notice that the locating and creating of an event queue and publishing an event won't start the server push.<br/><br/>ZK 5.0.5 and Prior: When a server push is enabled, a working thread is instantiated and started. It means this feature cannot be used in an environment that doesn't allow working threads, such as Google App Engine. No such limitation is likely to occur in ZK 5.0.6 or later. |
 
 Here is a summary of the differences.
 
-<table>
-<thead>
-<tr class="header">
-<th></th>
-<th><p>desktop</p></th>
-<th><p>group</p></th>
-<th><p>session</p></th>
-<th><p>application</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>visibility</p></td>
-<td><p>desktop</p></td>
-<td><p>group</p></td>
-<td><p>session</p></td>
-<td><p>application</p></td>
-</tr>
-<tr class="even">
-<td><p>publish</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-<td><p>no limitation</p></td>
-<td><p>no limitation</p></td>
-</tr>
-<tr class="odd">
-<td><p>subscribe</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-<td><p>only in an event listener, or the current execution is
-available.</p></td>
-</tr>
-<tr class="even">
-<td><p>multi-thread</p></td>
-<td><p>Not used</p></td>
-<td><p>Not used</p></td>
-<td><p>5.0.5 or prior: Used (transparent)<br />
-5.0.6 or later: Not used</p></td>
-<td><p>5.0.5 or prior: Used (transparent)<br />
-5.0.6 or later: Not used</p></td>
-</tr>
-<tr class="odd">
-<td><p>server-push</p></td>
-<td><p>Not used*</p></td>
-<td><p>Not used*</p></td>
-<td><p>Used (transparent)</p></td>
-<td><p>Used (transparent)</p></td>
-</tr>
-<tr class="even">
-<td><p>Cluster Environment</p></td>
-<td><p>Support</p></td>
-<td><p>Support</p></td>
-<td><p>Support</p></td>
-<td><p>Unsupported (Java Spec. Limitation)</p></td>
-</tr>
-<tr class="odd">
-<td><p>Availability</p></td>
-<td><p>{% include edition-availability.html edition="ce" %}</p></td>
-<td><p>{% include edition-availability.html edition="ee" %}</p></td>
-<td><p>{% include edition-availability.html edition="ce" %}</p></td>
-<td><p>{% include edition-availability.html edition="ce" %}</p></td>
-</tr>
-<tr class="even">
-<td><p>Use Cases</p></td>
-<td><ul>
-<li>send events between different pages within one desktop</li>
-</ul></td>
-<td></td>
-<td><ul>
-<li>a user logins in one browser tab, log out the same user in other
-browser tabs of the same session</li>
-</ul></td>
-<td><ul>
-<li>send messages in a chatroom application</li>
-<li>broadcast system messages to all users/desktops</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| | desktop | group | session | application |
+|--|---------|-------|---------|-------------|
+| visibility | desktop | group | session | application |
+| publish | only in an event listener, or the current execution is available. | only in an event listener, or the current execution is available. | no limitation | no limitation |
+| subscribe | only in an event listener, or the current execution is available. | only in an event listener, or the current execution is available. | only in an event listener, or the current execution is available. | only in an event listener, or the current execution is available. |
+| multi-thread | Not used | Not used | 5.0.5 or prior: Used (transparent)<br/>5.0.6 or later: Not used | 5.0.5 or prior: Used (transparent)<br/>5.0.6 or later: Not used |
+| server-push | Not used* | Not used* | Used (transparent) | Used (transparent) |
+| Cluster Environment | Support | Support | Support | Unsupported (Java Spec. Limitation) |
+| Availability | {% include edition-availability.html edition="ce" %} | {% include edition-availability.html edition="ee" %} | {% include edition-availability.html edition="ce" %} | {% include edition-availability.html edition="ce" %} |
+| Use Cases | <ul><li>send events between different pages within one desktop</li></ul> | | <ul><li>a user logins in one browser tab, log out the same user in other browser tabs of the same session</li></ul> | <ul><li>send messages in a chatroom application</li><li>broadcast system messages to all users/desktops</li></ul> |
 
 - If you register an asynchronous listener, it still enables
   server-push.

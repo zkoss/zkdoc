@@ -55,65 +55,17 @@ There is exactly one document root per XML document.
 First, each element must be closed. There are two ways to close an
 element as depicted below. They are equivalent.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Description</p>
-</center></th>
-<th><center>
-<p>Code</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Close by an end tag:</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span>&gt;&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>Close without an end tag:</p></td>
-<td><div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span>/&gt;</span></code></pre></div></td>
-</tr>
-</tbody>
-</table>
+| Description | Code |
+|-------------|------|
+| Close by an end tag: | `<window></window>` |
+| Close without an end tag: | `<window/>` |
 
 Second, elements must be properly nested.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Result</p>
-</center></th>
-<th><center>
-<p>Code</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Correct:</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">groupbox</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        Hello World!</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">groupbox</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>Wrong:</p></td>
-<td><div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span>&gt;</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">groupbox</span>&gt;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        Hello World!</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">window</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span></code></pre></div></td>
-</tr>
-</tbody>
-</table>
+| Result | Code |
+|--------|------|
+| Correct: | ```xml<br/><window><br/>    <groupbox><br/>        Hello World!<br/>    </groupbox><br/></window><br/>``` |
+| Wrong: | ```xml<br/><window><br/>    <groupbox><br/>        Hello World!<br/>    </window><br/></groupbox><br/>``` |
 
 XML treats every tag as a node in a tree. A node without a parent node
 is a root component, and it is the root of a tree. In each zul file,
@@ -151,84 +103,15 @@ XML uses `<`*`element-name`*`>` to denote an element, so you have to use
 special characters for replacement. For example, you have to use `&lt;`
 to represent the `<` character.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Special Character</p>
-</center></th>
-<th><center>
-<p>Replaced With</p>
-</center></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>&lt;</p>
-</center></td>
-<td><center>
-<p>&amp;lt;</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>&gt;</p>
-</center></td>
-<td><center>
-<p>&amp;gt;</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>&amp;</p>
-</center></td>
-<td><center>
-<p>&amp;amp;</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>"</p>
-</center></td>
-<td><center>
-<p>&amp;quot;</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>'</p>
-</center></td>
-<td><center>
-<p>&amp;apos;</p>
-</center></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>\t (TAB)</p>
-</center></td>
-<td><center>
-<p>&amp;#x09;</p>
-</center></td>
-<td><p>Required only if used in an XML attribute's value</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>\n (Linefeed)</p>
-</center></td>
-<td><center>
-<p>&amp;#x0a;</p>
-</center></td>
-<td><p>Required only if used in an XML attribute's value</p></td>
-</tr>
-</tbody>
-</table>
+| Special Character | Replaced With | Notes |
+|------------------|---------------|-------|
+| < | &lt; | |
+| > | &gt; | |
+| & | &amp; | |
+| " | &quot; | |
+| ' | &apos; | |
+| \t (TAB) | &#x09; | Required only if used in an XML attribute's value |
+| \n (Linefeed) | &#x0a; | Required only if used in an XML attribute's value |
 
 Alternatively, you could tell XML parser not to interpret a piece of
 text by using `CDATA`. See the following:
@@ -251,34 +134,10 @@ easier to read and maintain.
 
 ## Attribute Values Must Be Specified and Quoted
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Result</p>
-</center></th>
-<th><center>
-<p>Code</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Correct:</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>checked=&quot;true&quot;</span></code></pre></div></td>
-</tr>
-<tr class="even">
-<td><p>Wrong:</p></td>
-<td><div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>width=100%</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>checked</span></code></pre></div></td>
-</tr>
-</tbody>
-</table>
+| Result | Code |
+|--------|------|
+| Correct: | `checked="true"` |
+| Wrong: | `width=100%` or `checked` |
 
 Both the single quote (') and the double quote (") can be used, so if
 the value has double quotes, you could use the single quote to enclose
