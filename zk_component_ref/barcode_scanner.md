@@ -311,11 +311,7 @@ barcode scanner detect a barcode message.</p></td>
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

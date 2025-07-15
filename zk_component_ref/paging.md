@@ -203,12 +203,5 @@ title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
 </tbody>
 </table>
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

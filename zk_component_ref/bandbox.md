@@ -275,19 +275,3 @@ include version-badge.html version=5.0.0 %}</p></td>
 # Supported Children
 
 `*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/bandpopup)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

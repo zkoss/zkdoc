@@ -350,11 +350,7 @@ triggered when number of upload files exceed the maxFileCount.</p></td>
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

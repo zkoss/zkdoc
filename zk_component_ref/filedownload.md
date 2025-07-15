@@ -182,17 +182,5 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 
 > ------------------------------------------------------------------------
 >
-> <references/>
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
-
-[^1]: Internet Explorer 9 and other browsers all work fine without this
+> <references/>[^1]: Internet Explorer 9 and other browsers all work fine without this
     limitation.

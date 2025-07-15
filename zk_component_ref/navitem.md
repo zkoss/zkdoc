@@ -136,11 +136,7 @@ present more details of `Navitem`.
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

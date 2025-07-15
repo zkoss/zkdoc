@@ -29,36 +29,13 @@ a purposive text.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ Image]({{site.baseurl}}/zk_component_ref/image#Supported_Events)
 
 # Supported Children
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Troubleshooting
 
@@ -68,12 +45,5 @@ Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
 [ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/linux).
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

@@ -99,19 +99,3 @@ the component is opened.</p></td>
 # Supported Children
 
 `*`[` Listcell`]({{site.baseurl}}/zk_component_ref/listcell)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

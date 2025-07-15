@@ -302,36 +302,13 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
 `*`[` North`]({{site.baseurl}}/zk_component_ref/north)`, `[` South`]({{site.baseurl}}/zk_component_ref/south)`, `[` Center`]({{site.baseurl}}/zk_component_ref/center)`, `[` West`]({{site.baseurl}}/zk_component_ref/west)`, `[` East`]({{site.baseurl}}/zk_component_ref/east)
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

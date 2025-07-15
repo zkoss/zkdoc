@@ -97,11 +97,7 @@ end.</p></td>
 
 `* `[`Track`]({{site.baseurl}}/zk_component_ref/track)
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

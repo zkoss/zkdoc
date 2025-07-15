@@ -200,15 +200,6 @@ to.</p></td>
 |--------------|----------------------|-----------------------------------------------------------------------------------------------|
 | 3.6 or later | Print Iframe Content | [<http://www.zkoss.org/forum/listComment/6599>](https://www.zkoss.org/forum/listComment/6599) |
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
 
 [^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
     section

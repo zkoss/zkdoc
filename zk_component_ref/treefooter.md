@@ -63,25 +63,6 @@ You could place any child in a tree footer.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#Supported_Events)
 
 # Supported Children
@@ -92,12 +73,5 @@ You could place any child in a tree footer.
 
 [ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

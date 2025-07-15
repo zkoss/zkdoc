@@ -111,11 +111,7 @@ client.</p></td>
 
 `*`[` Step`]({{site.baseurl}}/zk_component_ref/step)
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

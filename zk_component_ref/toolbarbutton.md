@@ -141,11 +141,7 @@ toolbarbutton is checked , only available in toggle mode . (since ZK
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

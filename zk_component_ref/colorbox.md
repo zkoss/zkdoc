@@ -80,19 +80,3 @@ application with the onChange event if its content is changed</p></td>
 # Supported Children
 
 `*None`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

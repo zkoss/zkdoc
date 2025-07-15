@@ -164,19 +164,3 @@ time the component is opened.</p></td>
 # Supported Children
 
 `*`[` Treerow`]({{site.baseurl}}/zk_component_ref/treerow)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/treechildren)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

@@ -469,11 +469,7 @@ include version-badge.html version=5.0.0 %}</p></td>
 
 `* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/comboitem)
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

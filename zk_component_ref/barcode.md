@@ -200,11 +200,7 @@ WEB-INF/lang-addon.xml
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

@@ -70,43 +70,8 @@ GroupFooter serves as a summary listitem of listgroup.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ Listitem]({{site.baseurl}}/zk_component_ref/listitem#Supported_Events)
 
 # Supported Children
 
 [`org.zkoss.zul.Listcell`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/Listcell`.html)
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

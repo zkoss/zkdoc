@@ -105,12 +105,5 @@ the component is opened.</p></td>
 
 [ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

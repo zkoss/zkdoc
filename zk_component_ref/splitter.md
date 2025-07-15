@@ -213,12 +213,5 @@ zul.jar.
 |---------|---------------------------------------------|-------------------------------------------------|
 | 5.0     | Used to seperate contents within hbox/vbox. | <http://www.zkoss.org/zksandbox/userguide/#l13> |
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

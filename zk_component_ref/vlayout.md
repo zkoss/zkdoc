@@ -83,24 +83,7 @@ The default align is left. You can change by specifying a CSS rule at
 
 # Supported events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
+Check inherited events
 
 # Supported Children
 

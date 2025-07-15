@@ -172,12 +172,5 @@ component is checked or unchecked.</p></td>
 
 `*None`
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

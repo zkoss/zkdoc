@@ -17,7 +17,3 @@ to separate long content into multiple pages. For more information,
 please refer to the
 [Paging]({{site.baseurl}}/zk_component_ref/paging)
 component.
-
-
-
-

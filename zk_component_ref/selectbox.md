@@ -123,11 +123,7 @@ the user has selected a new item in the selectbox.</p></td>
 
 `*NONE`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

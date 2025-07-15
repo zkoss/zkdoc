@@ -38,25 +38,6 @@ statement, then the user gets the result as depicted below.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ Image]({{site.baseurl}}/zk_component_ref/image#Supported_Events)
 
 # Supported Children
@@ -70,12 +51,5 @@ statement, then the user gets the result as depicted below.
 | 3.6     | How to get area clicked from Imagemap onClick Event | [<http://www.zkoss.org/forum/listComment/1336>](http://www.zkoss.org/forum/listComment/1336) |
 | 3.6     | Imagemap with hyperlink                             | [<http://www.zkoss.org/forum/listComment/3016>](http://www.zkoss.org/forum/listComment/3016) |
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

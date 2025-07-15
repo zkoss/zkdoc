@@ -206,11 +206,7 @@ designs are changed.
 
 `*None`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

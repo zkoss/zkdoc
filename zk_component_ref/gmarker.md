@@ -50,19 +50,3 @@ gmarker component with latitude and longitude information.</p></td>
 # Supported Children
 
 `*None`
-
-# Use Cases
-
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
-
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

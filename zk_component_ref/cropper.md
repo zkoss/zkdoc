@@ -131,12 +131,5 @@ cropped the image.</p></td>
 
 - NONE
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

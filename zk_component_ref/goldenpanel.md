@@ -148,12 +148,5 @@ minimized this GoldenPanel.</p></td>
 
 `* All`
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

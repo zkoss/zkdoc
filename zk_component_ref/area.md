@@ -72,25 +72,6 @@ first one takes precedence.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>None</p></td>
-<td><p>None</p></td>
-</tr>
-</tbody>
-</table>
-
 - Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#Supported_Events)
 
 # Supported Children
@@ -103,12 +84,5 @@ first one takes precedence.
 |---------|----------------------------|-----------------------------------------------|
 | 5.0.2   | Area in Imagemap with href | <http://www.zkoss.org/forum/listComment/3016> |
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

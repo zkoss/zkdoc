@@ -5,7 +5,3 @@ user-experiences, in components for tablet devices.
 
 **Note:** the following subsections are only applied for ZK EE version
 only.
-
-
-
-

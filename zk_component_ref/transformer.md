@@ -79,12 +79,5 @@ Then, the generated XML output will be XHTML as follows.
 </html>
 ```
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

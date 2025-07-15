@@ -188,12 +188,5 @@ time the component is opened.</p></td>
 
 `*`[` Orgnode`]({{site.baseurl}}/zk_component_ref/orgnode)`, `[` Orgchildren`]({{site.baseurl}}/zk_component_ref/orgchildren)
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

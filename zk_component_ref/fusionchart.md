@@ -766,11 +766,7 @@ from this event.</p></td>
 
 `*None`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

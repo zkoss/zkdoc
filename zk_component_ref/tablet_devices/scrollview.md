@@ -101,11 +101,7 @@ user is scrolling a scrollable component.</p></td>
 
 `*ALL`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 

@@ -184,12 +184,5 @@ Let's take a look at some examples.
   different type, we have to use a converter, [org.zkoss.bind.converter.sys.SelectboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/SelectboxSelectedItemConverter.html)
   to convert selectedItem. (line 31,32)
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

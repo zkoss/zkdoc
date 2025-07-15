@@ -145,12 +145,5 @@ the user has selected a new item in the organigram.</p></td>
 
 `*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/orgchildren)
 
-# Version History
-
-
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
 
 

@@ -93,11 +93,7 @@ the treeitem of this treecol.</p></td>
 
 `*ALL`
 
-# Use Cases
 
-| Version | Description | Example Location |
-|---------|-------------|------------------|
-|         |             |                  |
 
 # Version History
 
