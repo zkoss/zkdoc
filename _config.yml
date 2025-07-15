@@ -18,11 +18,11 @@ google:
   search_engine_id: a4a9ff8c389a44148
 # check page indexing at https://search.google.com/search-console
 
-#analytics:
-#  provider: "google-gtag"
-#  google:
-#    tracking_id: "UA-116749276-1"
-#    anonymize_ip: true
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-57B6X16TY1"
+    anonymize_ip: true
 
 defaults:
   - scope:
