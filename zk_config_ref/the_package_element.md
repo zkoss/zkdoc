@@ -1,10 +1,11 @@
 **Syntax:**
-
+```xml
 <package>  
-`   `<package-name>a_JS_package_name</package-name>  
+    <package-name>a_JS_package_name</package-name>  
 </package>
+```
 
-`[Default: ` `none``]`
+[Default: none]
 
 It defines a client package (JavaScript) and all of its sub packages
 that are provided by this server. Use this configuration if some client

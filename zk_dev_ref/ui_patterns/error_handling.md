@@ -102,11 +102,7 @@ public class ErrorHandlingComposer extends SelectorComposer<Component> {
 
 ## Error Handling when the Client Engine crashes
 
-<figure>
-<img src="error_handling_crash_screen.png"
-title="error_handling_crash_screen.png" />
-<figcaption>error_handling_crash_screen.png</figcaption>
-</figure>
+![](/zk_dev_ref/images/error_handling_crash_screen.png)
 
 In rare cases, the client engine stops working before even the error
 handling is initialized (e.g. when ZK's core scripts, e.g. zk.wpd, fail
