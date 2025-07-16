@@ -124,7 +124,7 @@ Clients.showNotification(msg); // display a global notification box
 Clients.showNotification(msg, component); // display a notification box pointing to a component
 ```
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png)
 
 You can also specify its position, style, and duration (for
 auto-dismiss):
@@ -135,11 +135,11 @@ Clients.showNotification(msg, type, component, position, duration);
 
 Type determines the style of the notification box.
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png)
 
 Here are the available positions:
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png)
 
 ### Closable
 

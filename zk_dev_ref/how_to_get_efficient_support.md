@@ -27,7 +27,7 @@ for us to find enough clues and provide timely support. Instead of
 providing a screenshot, please follow the tips and instructions below
 when submitting your issue.
 
-![](ZK_MeetRpoblem01.png)
+![](/zk_dev_ref/images/ZK_MeetRpoblem01.png)
 
 ## Provide Sufficient information
 
@@ -79,7 +79,7 @@ You can check if there is any JavaScript error by opening the developer
 tool. For example, press F12 to open the chrome developer tool/ Console
 tab:
 
-![](chrome-js-error.png)
+![](/zk_dev_ref/images/chrome-js-error.png)
 
 You can extract the error message by:
 
@@ -103,9 +103,9 @@ this URL, remember to turn on the js debug in your zk.xml.
 3.  Send request details as HAR to us
 
 :\* [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
-![](save_har_chrome.png)
+![](/zk_dev_ref/images/save_har_chrome.png)
 
-:\* Save request details as HAR in Firefox ![](save_har_firefox.png)
+:\* Save request details as HAR in Firefox ![](/zk_dev_ref/images/save_har_firefox.png)
 
 :\* [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 
@@ -113,7 +113,7 @@ If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
 like:
 
-![](au-request.png)
+![](/zk_dev_ref/images/au-request.png)
 
 ### Provide Related Source
 
@@ -233,10 +233,10 @@ first.
 
 If you don't know the zul's path or if the path is incorrect, just visit
 <http://localhost:8080>. A browser will show a link with the correct
-context path: ![](jettyRoot.png)
+context path: ![](/zk_dev_ref/images/jettyRoot.png)
 
 Click the link and it will list folders then you can navigate to find
-the zul. ![](listFolder.png)
+the zul. ![](/zk_dev_ref/images/listFolder.png)
 
 # How to get Browser Performance Profile
 

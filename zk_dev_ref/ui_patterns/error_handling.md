@@ -16,7 +16,7 @@ different from other servlets.
 By default, the Web server displays an error page showing the error
 message and stack trace. For example,
 
-![](Exception.png)
+![](/zk_dev_ref/images/Exception.png)
 
 You can customize the error handling by specifying the error page in
 `WEB-INF/web.xml` as follows[^1].
@@ -141,7 +141,7 @@ For example, suppose we have the following code:
 Then, if you click the button, the following error message will be
 shown.
 
-![](Exception-au.png)
+![](/zk_dev_ref/images/Exception-au.png)
 
 ## Configure Error Handling Page
 
@@ -214,7 +214,7 @@ KillerApp encounters an error: ${requestScope['javax.servlet.error.message']}
 
 Then, when the button is clicked, the following will be shown.
 
-![](Exception-au2.png)
+![](/zk_dev_ref/images/Exception-au2.png)
 
 # Handling a Custom Exception
 
