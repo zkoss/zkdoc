@@ -1,8 +1,7 @@
 # Support Channel
 
 If you are a ZK customer and your package comes with remote consulting
-hours, you can contact
-[mailto:support@potix.com](mailto:support@potix.com) to request
+hours, you can contact `mailto:support@potix.com` to request
 technical support. Please include your Invoice Number or License
 Certificate number when you submit your question so that we can
 associate you with the right company.
@@ -36,9 +35,9 @@ Providing sufficient information helps us support you more efficiently.
 ### The Sufficient Information Includes:
 
 1.  the complete server-side error or the client-side error if any (read
-    [\#Check JavaScript Error](#Check_JavaScript_Error))
+    [Check JavaScript Error](#Check_JavaScript_Error))
 2.  complete exception stack trace (if any)
-3.  A reproducible sample (please read [\#Tips for creating a reproducible sample](#Tips_for_creating_a_reproducible_sample)
+3.  A reproducible sample (please read [Tips for creating a reproducible sample](#Tips_for_creating_a_reproducible_sample)
 4.  Precise and clear steps to reproduce the issue
 5.  ZK version and edition
       
@@ -79,7 +78,7 @@ You can check if there is any JavaScript error by opening the developer
 tool. For example, press F12 to open the chrome developer tool/ Console
 tab:
 
-![](/zk_dev_ref/images/chrome-js-error.png)
+![](/zk_dev_ref/images/Chrome-js-error.png)
 
 You can extract the error message by:
 
@@ -101,19 +100,19 @@ this URL, remember to turn on the js debug in your zk.xml.
     issue
 2.  Do the steps to reproduce your problem
 3.  Send request details as HAR to us
+    1. [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
+    ![](/zk_dev_ref/images/Save_har_chrome.png)
 
-:\* [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
-![](/zk_dev_ref/images/save_har_chrome.png)
+    2. Save request details as HAR in Firefox 
+    ![](/zk_dev_ref/images/Save_har_firefox.png)
 
-:\* Save request details as HAR in Firefox ![](/zk_dev_ref/images/save_har_firefox.png)
-
-:\* [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
+    3. [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 
 If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
 like:
 
-![](/zk_dev_ref/images/au-request.png)
+![](/zk_dev_ref/images/Au-request.png)
 
 ### Provide Related Source
 
@@ -129,15 +128,8 @@ how you can include the js file for different scopes.
 ## Page-Scope
 
 - Use the script directive
-  \[\[zuml_ref/script \|
-  <?script?>
-
-  \]\]
-- Use the script component
-  \[\[ZK_component_reference/essential_components/Script \|
-  <script>
-
-  \]\]
+  [<?script?>](/zuml_ref/script)
+- Use the [script component](/zk_component_ref/script)
 
 ## Application-Scope
 
@@ -173,27 +165,23 @@ specify the corresponding addon name. For example:
 
 - If you override a component in zul language e.g. <button>, you specify
 
-<depends>`zul`</depends>
+```xml
+<depends>zul</depends>
+```
 
-- If you override a component provided by zkmax e.g. <code>
-  <nav>
+- If you override a component provided by zkmax e.g. `<nav>`, you specify
 
-  </code>, you specify
-
-<depends>`zkmax`</depends>
+```xml
+<depends>zkmax</depends>
+```
 
 - If you override something about accessibility, e.g. override aria
   attribute, you specify
+```xml
+<depends>za11y</depends>
+```
 
-<depends>`za11y`</depends>
-
-=== Use
-\[\[{{site.baseurl}}/zk_config_ref/the_embed_element
-\|
-
-<embed>
-
-\]\] ===
+### Use [<embed>](/zk_config_ref/the_embed_element)
 
 # How to Apply a Java Patch
 
@@ -232,11 +220,11 @@ first.
 4.  Visit the project's pages with your browser
 
 If you don't know the zul's path or if the path is incorrect, just visit
-<http://localhost:8080>. A browser will show a link with the correct
-context path: ![](/zk_dev_ref/images/jettyRoot.png)
+`http://localhost:8080`. A browser will show a link with the correct
+context path: ![](/zk_dev_ref/images/JettyRoot.png)
 
 Click the link and it will list folders then you can navigate to find
-the zul. ![](/zk_dev_ref/images/listFolder.png)
+the zul. ![](/zk_dev_ref/images/ListFolder.png)
 
 # How to get Browser Performance Profile
 
