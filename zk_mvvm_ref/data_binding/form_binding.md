@@ -257,8 +257,8 @@ Continuing with the above example, we add an exclamation icon right next to Id v
 ```
 -   In this example, form status variable is `fxStatus ` for the form’s id is ` fx `. Its **dirty** property indicates whether the form has been modified by users or not.
 
-![MVVM FormBinding Form Dirty-1](Mvvm-form-binding-formstatus-1.png)
-![MVVM FormBinding Form Dirty-2](Mvvm-form-binding-formstatus-2.png)
+![MVVM FormBinding Form Dirty-1](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-1.png)
+![MVVM FormBinding Form Dirty-2](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-2.png)
 
 
 After users modified a field, the cancel button would be enabled.

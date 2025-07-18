@@ -11,7 +11,7 @@ article demonstrates the steps and requirements of it.
 
 what do they look like, example from zul.jar
 
-![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_summary.jpg)
+![](/zk_component_dev_essentials/images/Jar_File_summary.jpg)
 
 ## Configurations
 

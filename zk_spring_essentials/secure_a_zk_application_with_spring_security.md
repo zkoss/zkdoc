@@ -58,7 +58,7 @@ public class Application {
 
 Then put the corresponding zul under `web/zul` folder.
 
-![](images/zkspring-zul-path.png)
+![](images/Zkspring-zul-path.png)
 
 # Web Security Configuration
 
