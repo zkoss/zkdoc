@@ -5,7 +5,7 @@
 ```
 
 `[Default: none]`  
-`[Since 5.0.0]`
+{% include version-badge.html version=5.0.0 %}
 
 Specifies an application-specific parser to parse `zk.xml`. The parser
 must implement the

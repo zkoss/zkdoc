@@ -141,7 +141,7 @@ applied with the initialial properties, you could invoke the
 ## apply
 
 `[Optional]`  
-`[Since 3.6.0]`
+{% include version-badge.html version=3.6.0 %}
 
 The apply condition, which is a list of composer's class names or EL
 expressions. If an EL expression is specified, it must return either a

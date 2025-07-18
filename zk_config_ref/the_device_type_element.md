@@ -5,7 +5,7 @@
 ```
 
 `[Optional]`  
-`[Since 3.6.3]`  
+{% include version-badge.html version=3.6.3 %}  
 `[Default: ajax]`
 
 It specifies the device type that `<timeout-uri>` and

@@ -3,7 +3,7 @@
 `org.zkoss.util.logging.config.file`
 
 `Default: none`  
-`[Since 6.0.0]`
+{% include version-badge.html version=6.0.0 %}
 
 It specifies the logging configuration file which is used to configure
 the logging of ZK internal functions. You generally don't need it unless

@@ -3,7 +3,7 @@
 <?meta [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]
     [if="..."] [unless="..."]?>
 
-`[since 3.6.2]`
+{% include version-badge.html version=3.6.2 %}
 
 It specifies an element that should be generated inside the HEAD
 element. It is generated *before* ZK default JavaScript and CSS files.

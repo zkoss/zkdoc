@@ -3,7 +3,7 @@
 `org.zkoss.util.label.web.location`
 
 Default: `/WEB-INF/zk-label.properties`  
-`[Since 3.6.2]`
+{% include version-badge.html version=3.6.2 %}
 
 It specifies which properties file for [the internationalization labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels)
 are named and located.

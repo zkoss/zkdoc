@@ -3,7 +3,7 @@
 `org.zkoss.zul.invalidateThreshold`
 
 `Default: 10`  
-`[Since 8.0.1]`
+{% include version-badge.html version=8.0.1 %}
 
 It specifies the threshold number of changed items of a model to
 invalidate a widget's DOM elements for **Grid, Listbox, Combobox**. If

@@ -3,7 +3,7 @@
 `org.zkoss.zul.tree.autoSort`
 
 Default: `false`  
-`[Since 5.0.7]`
+{% include version-badge.html version=5.0.7 %}
 
 Specifies whether to sort the model when the following cases:
 

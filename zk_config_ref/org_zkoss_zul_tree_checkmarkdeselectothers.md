@@ -3,7 +3,7 @@
 `org.zkoss.zul.tree.checkmarkDeselectOthers`
 
 Default: `false`  
-`[Since 5.0.5]`
+{% include version-badge.html version=5.0.5 %}
 
 If a tree's checkmark
 ([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())) is

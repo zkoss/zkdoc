@@ -3,10 +3,10 @@
 `org.zkoss.zul.grid.preloadSize `
 
 `Default: 50`  
-`[Since 6.0.1]`
+{% include version-badge.html version=6.0.1 %}
 
 `Default: 7`  
-`[Since 5.0.8]`
+{% include version-badge.html version=5.0.8 %}
 
 Specifies the number of rows to preload when receiving the rendering
 request from the client. It is used only for live data

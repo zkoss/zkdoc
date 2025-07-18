@@ -4,7 +4,7 @@
 
 `Default: auto (5.0)`  
 `Default: defer (3.x)`  
-`[Since 3.6.2]`
+{% include version-badge.html version=3.6.2 %}
 
 It specifies the default mode of the `include` component. In ZK 3 and
 prior, the default mode is `defer`, which is backward-compatible with

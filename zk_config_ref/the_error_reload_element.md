@@ -1,13 +1,14 @@
-\_\_NOTOC\_\_
 
 **Syntax:**
 
+```xml
 <error-reload>  
-    [`<device-type>deviceType|ajax`</device-type>`]  
-`    `<error-code>an_error_code</error-code>  
-`    `<reload-uri>an_uri</reload-uri>  
-    [`<connection-type>`server-push|au`</connection-type>`]  
+    [<device-type>deviceType|ajax</device-type>]  
+    <error-code>an_error_code</error-code>  
+    <reload-uri>an_uri</reload-uri>  
+    [<connection-type>server-push|au</connection-type>]  
 </error-reload>
+```
 
 `[Default: show an error message]`
 
@@ -46,7 +47,7 @@ you have to specify `server-push` as shown in the example [ below](#error-code)
 
 `Optional`  
 `Default: ajax`  
-`[Since 3.6.3]`
+{% include version-badge.html version=3.6.3 %}
 
 Specifies the device type. By default, it is `ajax`. If you want to
 configure for ZK Mobile, use `mil`.

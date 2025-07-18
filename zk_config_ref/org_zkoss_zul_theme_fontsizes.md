@@ -4,6 +4,6 @@
 
 Default: 11px
 
-`[Since 3.6.0]`
+{% include version-badge.html version=3.6.0 %}
 
 It specifies the size of the smaller font used in the ZUL CSS file.
