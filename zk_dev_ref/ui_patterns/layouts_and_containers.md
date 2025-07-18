@@ -28,7 +28,7 @@ easily customizable as they are made up of HTML DIVs.
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout.png)</td>
@@ -36,7 +36,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -59,7 +59,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout_scrolling.png)</td>
@@ -67,7 +67,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -99,7 +99,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">textbox</span>/&gt;</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">window</span><span class="ot"> width=</span><span class="st">&quot;50px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> title=</span><span class="st">&quot;win&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span>/&gt;</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hlayout</span>&gt;</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">zk</span>&gt;</span></code></pre></div></td>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">zk</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -130,7 +130,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">splitter</span><span class="ot"> collapse=</span><span class="st">&quot;before&quot;</span>/&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox.png)</td>
@@ -139,7 +139,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">splitter</span><span class="ot"> collapse=</span><span class="st">&quot;after&quot;</span>/&gt;</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span></code></pre></div></td>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -160,7 +160,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span></code></pre></div></td>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvlayout_scrolling.png)</td>
@@ -170,7 +170,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span></code></pre></div></td>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -191,7 +191,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drhbox_pack.png)</td>
@@ -203,7 +203,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="odd">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_align.png)</td>
@@ -215,7 +215,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#c
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_pack.png)</td>
@@ -227,7 +227,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#c
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -258,7 +258,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;OK&quot;</span>/&gt;</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Cancel&quot;</span>/&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td>![]({{site.baseurl}}/zk_dev_ref/images/drvbox_cell.png)</td>
@@ -278,7 +278,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;OK&quot;</span>/&gt;</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Cancel&quot;</span>/&gt;</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span></code></pre></div></td>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -312,7 +312,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span>&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -347,7 +347,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span>&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -382,7 +382,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;20px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -415,7 +415,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;20px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -512,7 +512,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;3&lt;/<span class="kw">panelchildren</span>&gt;</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">columnchildren</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">columnlayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">columnlayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -547,7 +547,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;4&lt;/<span class="kw">panelchildren</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">portalchildren</span>&gt;</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">portallayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">portallayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -588,7 +588,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;4&lt;/<span class="kw">panelchildren</span>&gt;</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tablelayout</span>&gt;</span></code></pre></div></td>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tablelayout</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -622,7 +622,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;border: 1px solid grey&quot;</span>&gt;</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span>&gt;div is a block&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">datebox</span>/&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span></code></pre></div></td>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -656,7 +656,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span></code></pre></div></td>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -679,7 +679,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> mode=</span><span class="st">&quot;overlapped&quot;</span>&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">combobox</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -709,7 +709,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span></code></pre></div></td>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -735,7 +735,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">combobox</span>/&gt;</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span></code></pre></div></td>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -766,7 +766,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">rows</span>&gt;</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">grid</span>&gt;</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span></code></pre></div></td>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -792,7 +792,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">radio</span><span class="ot"> label=</span><span class="st">&quot;Orange&quot;</span>/&gt;</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">radio</span><span class="ot"> label=</span><span class="st">&quot;Banana&quot;</span>/&gt;</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">radiogroup</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -820,7 +820,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span><span class="ot"> forEach=</span><span class="st">&quot;1,2,3,4,5,6&quot;</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -848,7 +848,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabpanel</span>&gt;This is panel 1&lt;/<span class="kw">tabpanel</span>&gt;</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabpanel</span>&gt;This is panel 2&lt;/<span class="kw">tabpanel</span>&gt;</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -878,7 +878,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">grid</span>&gt;</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">tabpanel</span>&gt;</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span></code></pre></div></td>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>

@@ -31,11 +31,11 @@ color.
 
 # Colorbox in Menu
 
-By setting `content` attribute of <code>
+By setting `content` attribute of `
 
 <menu>
 
-</code> to create a colorbox in menu.
+` to create a colorbox in menu.
 
 ![](/zk_component_ref/images/ZKComRef_Colorbox_Examples2.PNG)
 

@@ -37,15 +37,15 @@ imported class with el statement. For example,
  <?import src="..." directives="..."?>
 ```
 
-It imports the directives, such as component definitions (<code>
+It imports the directives, such as component definitions (`
 
 <?component?>
 
-</code>) and initiators (<code>
+`) and initiators (`
 
 <?init?>
 
-</code>), defined in another ZUML page.
+`), defined in another ZUML page.
 
 A typical usage is that you put a set of component definitions on one
 ZUML page, and then import them into another ZUML page, such that both

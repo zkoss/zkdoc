@@ -34,7 +34,7 @@ customizable.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onMapDrop</code></p>
+<p>`onMapDrop`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">

@@ -93,7 +93,7 @@ user action. And also the close icon will not show.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onActive</code></p>
+<p>`onActive`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
@@ -101,7 +101,7 @@ activated this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onPanelDrop</code></p>
+<p>`onPanelDrop`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has dropped
@@ -109,7 +109,7 @@ this GoldenPanel.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onFlexSize</code></p>
+<p>`onFlexSize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
@@ -117,7 +117,7 @@ this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onClose</code></p>
+<p>`onClose`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has closed
@@ -125,7 +125,7 @@ this GoldenPanel.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onMaximize</code></p>
+<p>`onMaximize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
@@ -133,7 +133,7 @@ maximized this GoldenPanel.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onMinimize</code></p>
+<p>`onMinimize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has

@@ -132,7 +132,7 @@ for inherited functions, such as in-place edition.
 <tr class="odd">
 <td><p>IE</p></td>
 <td><div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">textbox</span><span class="ot"> value=</span><span class="st">&quot;color&quot;</span><span class="ot"> style=</span><span class="st">&quot;color:red !important;&quot;</span><span class="ot"> disabled=</span><span class="st">&quot;true&quot;</span>/&gt;</span></code></pre></div>
+class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">textbox</span><span class="ot"> value=</span><span class="st">&quot;color&quot;</span><span class="ot"> style=</span><span class="st">&quot;color:red !important;&quot;</span><span class="ot"> disabled=</span><span class="st">&quot;true&quot;</span>/&gt;</span>`</pre></div>
 <p>There is no way to change the text color in a disabled input in
 IE.</p></td>
 </tr>

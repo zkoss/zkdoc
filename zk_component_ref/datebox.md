@@ -343,7 +343,7 @@ for inherited functions.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onTimeZoneChange</code></p>
+<p>`onTimeZoneChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of

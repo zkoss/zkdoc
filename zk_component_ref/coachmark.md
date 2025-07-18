@@ -133,18 +133,18 @@ specified coachmark instead of the predefined "next" coachmark.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component.</p>
-<p>Note: unlike <code>onClose</code>, this event is only a notification.
+<p>Note: unlike `onClose`, this event is only a notification.
 The client sends this event after the component is opened or
 closed.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onTargetClick</code></p>
+<p>`onTargetClick`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)</p>

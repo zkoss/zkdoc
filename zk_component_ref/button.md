@@ -278,11 +278,11 @@ Your application won't be notified when users click the button.
 {% include version-badge.html version=5.0.4 %}
 
 [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
-sets the button's type. It is designed to work with the HTML <code>
+sets the button's type. It is designed to work with the HTML `
 
 <form>
 
-</code> and Servlets. For example,
+` and Servlets. For example,
 
 ```xml
 <n:form action="/foo/my_handler" xmlns:n="native">
@@ -370,7 +370,7 @@ for inherited functions.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onFocus</code></p>
+<p>`onFocus`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
@@ -378,7 +378,7 @@ for inherited functions.
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onBlur</code></p>
+<p>`onBlur`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
@@ -386,7 +386,7 @@ for inherited functions.
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onUpload</code></p>
+<p>`onUpload`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
@@ -461,7 +461,7 @@ was introduced to allow a button able to submit or reset a form.</p>
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">n:form</span><span class="ot"> action=</span><span class="st">&quot;a_uri&quot;</span><span class="ot"> xmlns:n=</span><span class="st">&quot;native&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> label=</span><span class="st">&quot;Submit&quot;</span>/&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> type=</span><span class="st">&quot;reset&quot;</span><span class="ot"> label=</span><span class="st">&quot;Reset&quot;</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">n:form</span>&gt;</span></code></pre></div></td>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">n:form</span>&gt;</span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td><p>6.0.0</p></td>
@@ -470,7 +470,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 the <em>multiple</em> setting was introduced to allow to choose multiple
 files to upload at the same time. (HTML5 supported browsers only)</p>
 <div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,multiple=true&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span></code></pre></div></td>
+class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,multiple=true&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span>`</pre></div></td>
 </tr>
 <tr class="odd">
 <td><p>7.0.0</p></td>
@@ -479,7 +479,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#c
 the <em>accept</em> setting was introduced to allow to specify the types
 of files that the server accepts. (HTML5 supported browsers only)</p>
 <div class="sourceCode" id="cb3"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,accept=audio/*|video/*|image/*|MIME_type&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span></code></pre></div></td>
+class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,accept=audio/*|video/*|image/*|MIME_type&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>

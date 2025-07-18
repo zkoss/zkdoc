@@ -408,20 +408,20 @@ the client.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component. Note: unlike
-<code>onClose</code>, this event is only a notification. The client
+`onClose`, this event is only a notification. The client
 sends this event after opening or closing the component.</p>
 <p>It is useful to implement <em>load-on-demand</em>by listening to the
-<code>onOpen</code>event, and creating components when the first time
+`onOpen`event, and creating components when the first time
 the component is opened.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>

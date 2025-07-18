@@ -144,7 +144,7 @@ of a scrollable component has been scrolled by the user.</p></td>
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
 user is scrolling a scrollable component. Notice that the component's
 content (at the server) won't be changed until onScroll is received.
-Thus, you have to invoke the <code>getPos</code> method in the
+Thus, you have to invoke the `getPos` method in the
 ScrollEvent class to retrieve the temporary position.</p></td>
 </tr>
 </tbody>

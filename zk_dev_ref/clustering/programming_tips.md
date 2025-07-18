@@ -2,7 +2,7 @@
 Objects that are referenced by a UI object, such as components, pages, desktop, Composer, and ViewModel have to be serializable. Otherwise, they might have no value after de-serialized, or cause an exception (depending on how it is used).
  
 ## Marking properties as transient
-If you don't want a property to be serialized, use Java <code>transient</code> keyword when declaring the property. This tells the serialization mechanism to ignore the field when writing the object's state. After deserialization, the value of a transient field will be null.
+If you don't want a property to be serialized, use Java `transient` keyword when declaring the property. This tells the serialization mechanism to ignore the field when writing the object's state. After deserialization, the value of a transient field will be null.
 
 ### Reinitializing transient fields
 For transient fields that need to be reinitialized after deserialization, implement the `readObject` method:

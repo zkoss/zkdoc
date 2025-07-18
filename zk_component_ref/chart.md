@@ -803,198 +803,198 @@ The 3D chart is not supported on all chart types.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>pie</code></p>
+<p>`pie`</p>
 </center></td>
-<td><p><code>PieModel</code></p></td>
+<td><p>`PieModel`</p></td>
 <td><center>
-<p><code>o</code></p>
+<p>`o`</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>ring</code></p>
+<p>`ring`</p>
 </center></td>
-<td><p><code>PieModel</code></p></td>
+<td><p>`PieModel`</p></td>
 <td><center>
-<p><code>x</code></p>
+<p>`x`</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>bar</code></p>
+<p>`bar`</p>
 </center></td>
-<td><p><code>CategoryModel</code>or<code>XYModel</code></p></td>
+<td><p>`CategoryModel`or`XYModel`</p></td>
 <td><center>
-<p><code>o</code></p>
+<p>`o`</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>line</code></p>
+<p>`line`</p>
 </center></td>
-<td><p><code>CategoryModel</code>or<code>XYModel</code></p></td>
+<td><p>`CategoryModel`or`XYModel`</p></td>
 <td><center>
-<p><code>o</code></p>
+<p>`o`</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>area</code></p>
+<p>`area`</p>
 </center></td>
-<td><p><code>CategoryModel</code>or<code>XYModel</code></p></td>
+<td><p>`CategoryModel`or`XYModel`</p></td>
 <td><center>
-<p><code>x</code></p>
+<p>`x`</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>stacked_bar</code></p>
+<p>`stacked_bar`</p>
 </center></td>
-<td><p><code>CategoryModel</code></p></td>
+<td><p>`CategoryModel`</p></td>
 <td><center>
-<p><code>o</code></p>
+<p>`o`</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>stacked_area</code></p>
+<p>`stacked_area`</p>
 </center></td>
-<td><p><code>CategoryModel</code>or<code>XYModel</code></p></td>
+<td><p>`CategoryModel`or`XYModel`</p></td>
 <td><center>
-<p><code>x</code></p>
+<p>`x`</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>waterfall</code></p>
+<p>`waterfall`</p>
 </center></td>
-<td><p><code>CategoryModel</code></p></td>
+<td><p>`CategoryModel`</p></td>
 <td><center>
-<p><code>x</code></p>
+<p>`x`</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>polar</code></p>
+<p>`polar`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>scatter</code></p>
+<p>`scatter`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p><code>time_series</code></p>
-</center></td>
-<td><p><code>XYModel</code></p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p><code>polar</code></p>
-</center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>step_area</code></p>
+<p>`time_series`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>step</code></p>
+<p>`polar`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>histogram</code></p>
+<p>`step_area`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>bubble</code></p>
+<p>`step`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>wind</code></p>
+<p>`histogram`</p>
 </center></td>
-<td><p><code>XYModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>candlestick</code></p>
+<p>`bubble`</p>
 </center></td>
-<td><p><code>HiLoModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>highlow</code></p>
+<p>`wind`</p>
 </center></td>
-<td><p><code>HiLoModel</code></p></td>
+<td><p>`XYModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>wafermap</code></p>
+<p>`candlestick`</p>
 </center></td>
-<td><p><code>WaferMapModel</code></p></td>
+<td><p>`HiLoModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>gantt</code></p>
+<p>`highlow`</p>
 </center></td>
-<td><p><code>GanttModel</code></p></td>
+<td><p>`HiLoModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>dial</code></p>
+<p>`wafermap`</p>
 </center></td>
-<td><p><code>DialModel</code></p></td>
+<td><p>`WaferMapModel`</p></td>
+<td><center>
+<p>x</p>
+</center></td>
+</tr>
+<tr class="odd">
+<td><center>
+<p>`gantt`</p>
+</center></td>
+<td><p>`GanttModel`</p></td>
+<td><center>
+<p>x</p>
+</center></td>
+</tr>
+<tr class="even">
+<td><center>
+<p>`dial`</p>
+</center></td>
+<td><p>`DialModel`</p></td>
 <td><center>
 <p>x</p>
 </center></td>
@@ -1123,14 +1123,14 @@ which simplifies the retrieval of the area component.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">Area</span> area <span class="op">=</span> <span class="op">(</span><span class="bu">Area</span><span class="op">)</span>event<span class="op">.</span><span class="fu">getAreaComponent</span><span class="op">();</span> <span class="co">//must be Area or null when used with chart</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>area <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">...</span></span></code></pre></div></td>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">...</span></span>`</pre></div></td>
 </tr>
 <tr class="even">
 <td><p>5.0.3</p></td>
 <td><p>June 2010</p></td>
 <td><p>The area sent with the click event becomes UUID of the area
 component. Thus, use
-<code>desktop.getComponentByUuid(event.getArea())</code>. To write a
+`desktop.getComponentByUuid(event.getArea())`. To write a
 program compatible with any version of ZK:</p>
 <div class="sourceCode" id="cb2"><pre
 class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">String</span> areaid <span class="op">=</span> event<span class="op">.</span><span class="fu">getArea</span><span class="op">();</span></span>
@@ -1138,7 +1138,7 @@ class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">Area</span> area <span class="op">=</span> desktop<span class="op">.</span><span class="fu">getComponentByUuidIfAny</span><span class="op">(</span>areaid<span class="op">);</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>area <span class="op">==</span> <span class="kw">null</span><span class="op">)</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    area <span class="op">=</span> chart<span class="op">.</span><span class="fu">getFellow</span><span class="op">(</span>areaid<span class="op">);</span> <span class="co">//fall back to older version</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">...</span></span></code></pre></div></td>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">...</span></span>`</pre></div></td>
 </tr>
 </tbody>
 </table>

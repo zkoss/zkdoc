@@ -53,7 +53,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">navitem</span><span class="ot"> label=</span><span class="st">&quot;Step One&quot;</span> /&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">navitem</span><span class="ot"> label=</span><span class="st">&quot;Step Two&quot;</span> /&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">navitem</span><span class="ot"> label=</span><span class="st">&quot;Step Three&quot;</span> /&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">nav</span>&gt;</span></code></pre></div></td>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">nav</span>&gt;</span>`</pre></div></td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +74,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has

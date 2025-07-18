@@ -178,10 +178,10 @@ the following:
   <script>
 
   component\]\]
-- HTML <code>
+- HTML `
   <script>
 
-  </code>
+  `
 - \[\[ZUML Reference/ZUML/Processing Instructions/script\|
   <?script ?>
 

@@ -81,15 +81,15 @@ Default getSclass(): the same as grid's sclass.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. Note:</p>
-<p>unlike <code>onClose</code>, this event is only a notification. The
+<p>unlike `onClose`, this event is only a notification. The
 client sends this event after opening or closing the component.</p>
 <p>It is useful to implement load-on-demand by listening to the
-<code>onOpen</code> event, and creating components when the first time
+`onOpen` event, and creating components when the first time
 the component is opened.</p></td>
 </tr>
 </tbody>

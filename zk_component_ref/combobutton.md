@@ -137,7 +137,7 @@ in stead of upload.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onClick</code></p>
+<p>`onClick`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)</p>
@@ -145,7 +145,7 @@ in stead of upload.
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>

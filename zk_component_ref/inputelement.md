@@ -340,4 +340,4 @@ Try it
 
 | Browser | Description|
 |---------|------------|
-|iOS Safari / Chrome| In iOS Safari and Chrome browsers, there is a specific behavior related to input elements. In mobile Safari, users need to explicitly tap on the elements within the web view to display the keyboard. This behavior impacts how users interact with input elements on mobile devices.<br/> For example, <pre><code>&lt;textbox id="test"/&gt;<br/>&lt;button label="Java Focus (No Keyboard)" onClick="test.focus()"/&gt;<br/>&lt;button xmlns:w="client" label="Client Focus" w:onClick="zk.Widget.$('$test').focus()"/&gt;</code></pre>
+|iOS Safari / Chrome| In iOS Safari and Chrome browsers, there is a specific behavior related to input elements. In mobile Safari, users need to explicitly tap on the elements within the web view to display the keyboard. This behavior impacts how users interact with input elements on mobile devices.<br/> For example, <pre>`&lt;textbox id="test"/&gt;<br/>&lt;button label="Java Focus (No Keyboard)" onClick="test.focus()"/&gt;<br/>&lt;button xmlns:w="client" label="Client Focus" w:onClick="zk.Widget.$('$test').focus()"/&gt;`</pre>

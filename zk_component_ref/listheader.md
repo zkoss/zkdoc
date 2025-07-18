@@ -64,7 +64,7 @@ a list box. Its parent must be `Listhead`.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSort</code></p>
+<p>`onSort`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) Denotes user has
@@ -72,17 +72,17 @@ sorted the row of this column.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onGroup</code></p>
+<p>`onGroup`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html)</p>
-<p><code>[ZK PE]</code></p>
+<p>`[ZK PE]`</p>
 <p>{% include version-badge.html version=6.5.0 %} Denotes user has grouped all the
 cells under a column.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onUngroup</code></p>
+<p>`onUngroup`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) {% include edition-availability.html edition="pe" %}

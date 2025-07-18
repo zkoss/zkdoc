@@ -296,7 +296,7 @@ and `consistencyThreshold` both 1.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onDetect</code></p>
+<p>`onDetect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the

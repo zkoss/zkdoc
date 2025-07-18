@@ -106,10 +106,10 @@ have an extra functionality. For example, (jQuery's mask)
       (Javascript library or data-handler script), it can be a url of a
       JS script from context-path or a url from class-path. For example,
           <script-uri>~./myscript</script-uri>
-    - Notice that the last <code>
+    - Notice that the last `
       <script>
 
-      </code> tag should be your data-handler script.
+      ` tag should be your data-handler script.
 
 To see more examples, please refer to [ZK8: Simple but Powerful; Using Data-handler API to Work with Front-End Technologies](http://blog.zkoss.org/index.php/2015/08/25/zk8-simple-but-powerful-using-data-handler-api-to-work-with-front-end-technologies/)
 and [Github](https://github.com/zkoss/zk8-datahandler) (you can design

@@ -106,7 +106,7 @@ pdfjsLib.version
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onPaging</code></p>
+<p>`onPaging`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the
@@ -114,7 +114,7 @@ pages is selected by the user.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onRender</code></p>
+<p>`onRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf
@@ -122,7 +122,7 @@ file is finished rendering.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onZoom</code></p>
+<p>`onZoom`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has
@@ -130,7 +130,7 @@ changed the zoom level.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onRotate</code></p>
+<p>`onRotate`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user

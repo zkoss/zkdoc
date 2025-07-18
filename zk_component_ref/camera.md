@@ -263,7 +263,7 @@ css classes like the following:
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onVideoUpload</code></p>
+<p>`onVideoUpload`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
@@ -271,7 +271,7 @@ video has been uploaded.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onSnapshotUpload</code></p>
+<p>`onSnapshotUpload`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
@@ -279,7 +279,7 @@ snapshot has been uploaded.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onMaxsizeExceed</code></p>
+<p>`onMaxsizeExceed`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
@@ -287,7 +287,7 @@ size is bigger than the max size.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onLengthLimitExceed</code></p>
+<p>`onLengthLimitExceed`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
@@ -295,7 +295,7 @@ length exceeds the max length.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onStateChange</code></p>
+<p>`onStateChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
@@ -303,7 +303,7 @@ when invoking start(), stop(), pause() or resume().</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onCameraUnavailable</code></p>
+<p>`onCameraUnavailable`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if

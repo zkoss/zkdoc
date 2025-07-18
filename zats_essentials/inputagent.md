@@ -142,18 +142,18 @@ Spinner, Timebox</p></td>
 <tr class="odd">
 <td><p>CKEditor</p></td>
 <td><p>5, 6</p></td>
-<td><p>only supports <code>type(String)</code>,
-<code>typing(String)</code></p></td>
+<td><p>only supports `type(String)`,
+`typing(String)`</p></td>
 </tr>
 <tr class="even">
 <td><p>Colorbox</p></td>
 <td><p>5, 6</p></td>
-<td><p>only supports <code>type(String)</code></p></td>
+<td><p>only supports `type(String)`</p></td>
 </tr>
 <tr class="odd">
 <td><p>Slider</p></td>
 <td><p>5, 6</p></td>
-<td><p>only supports <code>input(Object)</code></p></td>
+<td><p>only supports `input(Object)`</p></td>
 </tr>
 </tbody>
 </table>

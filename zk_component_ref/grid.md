@@ -1225,14 +1225,14 @@ components.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onPageSize</code></p>
+<p>`onPageSize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging

@@ -78,7 +78,7 @@ components.</p></td>
 <p>11px</p>
 </center></td>
 <td><p>The smaller font size used in the component that requires small
-fonts, such as <code>toolbar</code>.</p></td>
+fonts, such as `toolbar`.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
@@ -138,12 +138,12 @@ The following library properties control the font family.
 <tr class="odd">
 <td><p>org.zkoss.zul.theme.fontFamilyT</p></td>
 <td><p>Default:
-<code>Verdana, Tahoma, Arial, Helvetica, sans-serif</code></p>
+`Verdana, Tahoma, Arial, Helvetica, sans-serif`</p>
 <p>The font family used for titles and captions.</p></td>
 </tr>
 <tr class="even">
 <td><p>org.zkoss.zul.theme.fontFamilyC</p></td>
-<td><p>Default: <code>Verdana, Tahoma, Arial, serif</code></p>
+<td><p>Default: `Verdana, Tahoma, Arial, serif`</p>
 <p>The font family used for contents.</p></td>
 </tr>
 </tbody>

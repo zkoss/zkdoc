@@ -159,7 +159,7 @@ Specify which protocol to load the Maps API. Currently it supports
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
@@ -173,7 +173,7 @@ title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onInfoChange</code></p>
+<p>`onInfoChange`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/infochangeevent" title="wikilink">
@@ -183,7 +183,7 @@ changed(opened/closed)</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onMapDrop</code></p>
+<p>`onMapDrop`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
@@ -193,8 +193,8 @@ gmarker component with latitude and longitude information.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onMapClick</code> <code>onMapRightClick</code></p>
-<p><code>onMapDoubleClick</code></p>
+<p>`onMapClick` `onMapRightClick`</p>
+<p>`onMapDoubleClick`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/mapmouseevent" title="wikilink">
@@ -204,7 +204,7 @@ gmarker component with latitude and longitude information.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onMapMove</code></p>
+<p>`onMapMove`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink">
@@ -214,7 +214,7 @@ been moved.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onMapTypeChange</code></p>
+<p>`onMapTypeChange`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/maptypechangeevent"
@@ -223,7 +223,7 @@ title="wikilink"> MapTypeChangeEvent</a></p>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onMapZoom</code></p>
+<p>`onMapZoom`</p>
 </center></td>
 <td><p><strong>Event:</strong> <a
 href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink">

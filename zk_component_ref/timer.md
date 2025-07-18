@@ -37,12 +37,12 @@ timer won't fire any event until it is attached to a page.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onTimer</code></p>
+<p>`onTimer`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
 <p>Denotes the timer you specified has triggered an event. To know which
-timer, invoke the <code>getTarget</code> method in the Event
+timer, invoke the `getTarget` method in the Event
 class.</p></td>
 </tr>
 </tbody>

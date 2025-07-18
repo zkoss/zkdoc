@@ -78,7 +78,7 @@ A `treecol`is a top column of tree, Its parent must be `Treecols`.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSort</code></p>
+<p>`onSort`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has sorted

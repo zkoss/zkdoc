@@ -609,22 +609,22 @@ when the editor is rendered (according to the content height).
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onChange</code></p>
+<p>`onChange`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
-<p><strong><code>Description:</code></strong> Denotes the content of an
+<p><strong>`Description:`</strong> Denotes the content of an
 input component has been modified by the user.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onChanging</code></p>
+<p>`onChanging`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
-<p><strong><code>Description:</code></strong> Denotes that user is
+<p><strong>`Description:`</strong> Denotes that user is
 changing the content of an input component. Notice that the component's
-content (at the server) won't be changed until <code>onChange</code> is
-received. Thus, you have to invoke the <code>getValue</code>method in
-the <code>InputEvent</code>class to retrieve the temporary
+content (at the server) won't be changed until `onChange` is
+received. Thus, you have to invoke the `getValue`method in
+the `InputEvent`class to retrieve the temporary
 value.</p></td>
 </tr>
 </tbody>
@@ -714,30 +714,30 @@ then add it into WEB-INF/zk.xml
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onChange</code></p>
+<p>`onChange`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
-<p><strong><code>Description:</code></strong> Denotes the content of an
+<p><strong>`Description:`</strong> Denotes the content of an
 input component has been modified by the user.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onChanging</code></p>
+<p>`onChanging`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
-<p><strong><code>Description:</code></strong> Denotes that user is
+<p><strong>`Description:`</strong> Denotes that user is
 changing the content of an input component. Notice that the component's
-content (at the server) won't be changed until <code>onChange</code> is
-received. Thus, you have to invoke the <code>getValue</code>method in
-the <code>InputEvent</code>class to retrieve the temporary
+content (at the server) won't be changed until `onChange` is
+received. Thus, you have to invoke the `getValue`method in
+the `InputEvent`class to retrieve the temporary
 value.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onSave</code></p>
+<p>`onSave`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
-<p><strong><code>Description:</code></strong> Denotes the save button of
+<p><strong>`Description:`</strong> Denotes the save button of
 the CKEditor component has been clicked by the user.</p></td>
 </tr>
 </tbody>

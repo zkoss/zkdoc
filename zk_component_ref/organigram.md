@@ -126,7 +126,7 @@ Template, please refer to:
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that

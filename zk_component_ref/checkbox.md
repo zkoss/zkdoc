@@ -141,7 +141,7 @@ Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onFocus</code></p>
+<p>`onFocus`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
@@ -149,7 +149,7 @@ gets the focus.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onBlur</code></p>
+<p>`onBlur`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component

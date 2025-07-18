@@ -95,7 +95,7 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onChange</code></p>
+<p>`onChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>

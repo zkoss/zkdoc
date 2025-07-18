@@ -46,11 +46,11 @@ rendered to the browser.
 
 # Size issue
 
-On Chrome, if <code>
+On Chrome, if `
 
 <html>
 
-</code>'s sibling use `vflex` to set hight flexibly, developer must
+`'s sibling use `vflex` to set hight flexibly, developer must
 override `.z-html` CSS like this:
 
 ```css
@@ -67,11 +67,11 @@ or
 }
 ```
 
-Without this setting, `offsetHeight` of <code>
+Without this setting, `offsetHeight` of `
 
 <html>
 
-</code> will be zero, and sibling's height will be wrong.
+` will be zero, and sibling's height will be wrong.
 
 # Supported Events
 

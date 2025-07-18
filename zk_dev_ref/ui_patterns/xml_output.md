@@ -66,10 +66,10 @@ where
 
 - The content type is specified with the [page directive](/zuml_ref/page).
   For SVG, it is `image/svg+xml`. The `xml` processing instruction
-  (<code>
+  (`
   <?xml?>
 
-  </code>) and `DOCTYPE` of the output are also specified in the `page`
+  `) and `DOCTYPE` of the output are also specified in the `page`
   directive.
 - All tags in this example, such as `svg` and `circle`, are associated
   with a namespace (http://www.w3.org/2000/svg) that is unknown to ZK

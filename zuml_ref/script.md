@@ -3,15 +3,15 @@
 <?script [type="text/javascript"] [src="''uri''"] [charset="''encoding''"]
   [content="''javascript snippet''"] [if="..."] [unless="..."]?>
 
-It tells ZK to generate a <code>
+It tells ZK to generate a `
 
 <script>
 
-</code> inside <code>
+` inside `
 
 <head>
 
-</code> **after ZK default JavaScript and CSS files**. Thus, it can be
+` **after ZK default JavaScript and CSS files**. Thus, it can be
 used to override what is defined in ZK default JavaScript code.
 Currently, only HTML-based clients (so-called browsers) support it.
 Furthermore, an HTML SCRIPT tag is generated for each of these

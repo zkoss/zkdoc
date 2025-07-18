@@ -229,11 +229,11 @@ navigating through the pagination.
 
 {% include version-badge.html version=5.0.5 %}
 
-By default, when a user clicks on an HTML <code><button>, <input>,
+By default, when a user clicks on an HTML `<button>, <input>,
 
 <textarea>
 
-</code> or <a> tag, it doesn't change the selection. For example, when a
+` or <a> tag, it doesn't change the selection. For example, when a
 user clicks the textbox in the following example, the selection state of
 the item won't be changed (only the textbox gains the focus).
 
@@ -1401,7 +1401,7 @@ component.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
@@ -1409,7 +1409,7 @@ the user has selected a new item in the listbox.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onFocus</code></p>
+<p>`onFocus`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
@@ -1419,7 +1419,7 @@ got executed.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onBlur</code></p>
+<p>`onBlur`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
@@ -1429,14 +1429,14 @@ got executed.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onPageSize</code></p>
+<p>`onPageSize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
@@ -1446,7 +1446,7 @@ is enabled and user changed the size of the content.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onCheckSelectAll</code></p>
+<p>`onCheckSelectAll`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6)

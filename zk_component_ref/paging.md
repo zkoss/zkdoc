@@ -128,7 +128,7 @@ client side which is detached during paging and throws mounting error.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onPaging</code></p>
+<p>`onPaging`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)</p>

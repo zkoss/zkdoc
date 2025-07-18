@@ -210,7 +210,7 @@ This displaying rule is slightly different in ZK3.
 <p>positive</p>
 </center></td>
 <td><p>Truncated the characters that exceeds the specified
-<code>maxlength</code>.</p></td>
+`maxlength`.</p></td>
 </tr>
 <tr class="even">
 <td><center>
@@ -222,7 +222,7 @@ This displaying rule is slightly different in ZK3.
 <td><center>
 <p>positive</p>
 </center></td>
-<td><p>If the length of a line exceeds <code>maxlength</code>, the line
+<td><p>If the length of a line exceeds `maxlength`, the line
 is hyphenated.</p></td>
 </tr>
 <tr class="odd">
@@ -235,7 +235,7 @@ is hyphenated.</p></td>
 <td><center>
 <p>any</p>
 </center></td>
-<td><p><code>maxlength</code> is ignored.</p></td>
+<td><p>`maxlength` is ignored.</p></td>
 </tr>
 <tr class="even">
 <td><center>
@@ -247,7 +247,7 @@ is hyphenated.</p></td>
 <td><center>
 <p>0</p>
 </center></td>
-<td><p><code>hyphen</code> is ignored.</p></td>
+<td><p>`hyphen` is ignored.</p></td>
 </tr>
 </tbody>
 </table>

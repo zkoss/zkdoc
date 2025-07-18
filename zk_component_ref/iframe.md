@@ -176,13 +176,13 @@ element (rather than the widget).
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onURIChange</code></p>
+<p>`onURIChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html)</p>
-<p>Denotes the associated URI (<code>src</code>) has been changed by
+<p>Denotes the associated URI (`src`) has been changed by
 user.</p>
-<p>Use <code>getURI()</code> to retrieve the URI being changed
+<p>Use `getURI()` to retrieve the URI being changed
 to.</p></td>
 </tr>
 </tbody>

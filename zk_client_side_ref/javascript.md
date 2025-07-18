@@ -37,11 +37,11 @@ It specifies the URI of the JavaScript file to load. The URI can accept
 `~./` (such as "~./foo/whatever.js").
 
 If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/depends),
-ZK generates its javaScript into a output page's <code>
+ZK generates its javaScript into a output page's `
 
 <head>
 
-</code> after the JavaScript of another addon.
+` after the JavaScript of another addon.
 
 # merge
 

@@ -223,7 +223,7 @@ played to the end, the StateChangeEvent will be triggered.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onStateChange</code></p>
+<p>`onStateChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies

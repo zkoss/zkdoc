@@ -60,7 +60,7 @@ Then, `listbox` in `second.zul` will become the child of `include` in
 
 When including a non-ZUML page (such as JSP), the output of the page
 will be the content of the [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)
-component. Thus, the output must be a valid HTML fragment without <code>
+component. Thus, the output must be a valid HTML fragment without `
 
 <html>
 
@@ -72,7 +72,7 @@ component. Thus, the output must be a valid HTML fragment without <code>
 
 <body>
 
-</code>.
+`.
 
 If you prefer to create an independent page
 ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html)), or want to

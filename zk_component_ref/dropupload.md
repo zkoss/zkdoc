@@ -327,7 +327,7 @@ machines.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onUpload</code></p>
+<p>`onUpload`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be
@@ -335,7 +335,7 @@ triggered once a user has uploaded a file.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onMaxFileCountExceed</code></p>
+<p>`onMaxFileCountExceed`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be

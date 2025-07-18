@@ -129,16 +129,16 @@ not be smaller than the minWidths/minHeights.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>When a splitter is collapsed or opened by a user, the
-<code>onOpen</code> event is sent to the application.</p></td>
+`onOpen` event is sent to the application.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onDivisionSize</code></p>
+<p>`onDivisionSize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html)

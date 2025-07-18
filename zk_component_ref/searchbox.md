@@ -160,14 +160,14 @@ Returns all selected items.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
@@ -176,17 +176,17 @@ changed at the client.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>Denotes that the user has opened or closed a component. Note: unlike
-<code>onClose</code>, this event is only a notification. The client
+`onClose`, this event is only a notification. The client
 sends this event after opening or closing the component.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onSearching</code></p>
+<p>`onSearching`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>

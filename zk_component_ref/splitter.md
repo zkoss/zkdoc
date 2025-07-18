@@ -159,12 +159,12 @@ OS-look:
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
 <p>When a splitter is collapsed or opened by a user, the
-<code>onOpen</code> event is sent to the application.</p></td>
+`onOpen` event is sent to the application.</p></td>
 </tr>
 </tbody>
 </table>

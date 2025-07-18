@@ -91,10 +91,10 @@ style modification.
 by simply refreshing the browser.
 
 - 4\. Use final style in production.
-  - Remove <code>
+  - Remove `
     <?link rel="stylesheet" href="../less/window.less"?>
 
-    </code> in **window.zul** page.
+    ` in **window.zul** page.
   - Remove ZK Less Servlet settings in web.xml.
   - [ Enable DSP Loader Servlet]({{site.baseurl}}/zk_dev_ref/supporting_utilities/dsp)
     in web.xml

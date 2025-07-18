@@ -16,7 +16,7 @@ injection.
 To prevent a XSS attack, ZK components encode any value that might be
 input by a user by escaping `&` and other unsafe characters. For
 example, the following statement is totally safe even if `any_value`
-contains a script like <code>
+contains a script like `
 
 <script>
 
@@ -24,7 +24,7 @@ alert('xss')
 
 </script>
 
-</code>:
+`:
 
 ```xml
 <textbox value="${any_value}"/>

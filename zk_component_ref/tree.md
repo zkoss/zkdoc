@@ -224,12 +224,12 @@ The following code demonstrates how to freeze a column within a Tree:
 
 {% include version-badge.html version=5.0.5 %}
 
-By default, when a user clicks on an HTML element like <code><button>,
+By default, when a user clicks on an HTML element like `<button>,
 <input>,
 
 <textarea>
 
-</code>, or <a> tag, the selection state of the item won't be changed.
+`, or <a> tag, the selection state of the item won't be changed.
 For example, when a user clicks the textbox in the following example,
 the selection state of the item won't be changed (only the textbox gains
 the focus).
@@ -679,7 +679,7 @@ component.
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
@@ -687,7 +687,7 @@ the user has selected a new item in the tree.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onFocus</code></p>
+<p>`onFocus`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
@@ -697,7 +697,7 @@ got executed.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onBlur</code></p>
+<p>`onBlur`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
@@ -707,14 +707,14 @@ got executed.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onPageSize</code></p>
+<p>`onPageSize`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
@@ -800,7 +800,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">treechildren</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">tree</span>&gt;</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">zk</span>&gt;</span></code></pre></div>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">zk</span>&gt;</span>`</pre></div>
 <p>The width of the tree will be zero with Chrome &amp; Safari. the
 Webkit considers the width of tree as zero. please specify the width to
 tree to work around.</p></td>

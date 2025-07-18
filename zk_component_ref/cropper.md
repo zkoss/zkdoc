@@ -100,7 +100,7 @@ set to `image/png`
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onChange</code></p>
+<p>`onChange`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
@@ -108,7 +108,7 @@ the selected range.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onChanging</code></p>
+<p>`onChanging`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user is resizing
@@ -116,7 +116,7 @@ the selected range.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onCrop</code></p>
+<p>`onCrop`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has

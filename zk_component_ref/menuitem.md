@@ -228,7 +228,7 @@ where
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onCheck</code></p>
+<p>`onCheck`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes user has

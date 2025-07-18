@@ -149,7 +149,7 @@ request from the client. It is used only if live data
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
@@ -158,7 +158,7 @@ the client.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onSort</code></p>
+<p>`onSort`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.SortEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/SortEventExt.html)</p>
@@ -168,7 +168,7 @@ index.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onScroll</code></p>
+<p>`onScroll`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
@@ -178,7 +178,7 @@ about the position X and Y data.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onScrollX</code></p>
+<p>`onScrollX`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
@@ -188,7 +188,7 @@ information about the position X and Y data.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onScrollY</code></p>
+<p>`onScrollY`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)</p>
@@ -198,7 +198,7 @@ information about the position X and Y data.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onCellClick</code></p>
+<p>`onCellClick`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.CellClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/CellClickEvent.html)</p>
@@ -208,7 +208,7 @@ about the row index and the column index.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onAfterRender</code></p>
+<p>`onAfterRender`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>

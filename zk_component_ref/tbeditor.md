@@ -69,7 +69,7 @@ tbeditor.setConfig(config);
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onChange</code></p>
+<p>`onChange`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Denotes that the content of the component has been modified by a
@@ -77,13 +77,13 @@ user</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onChanging</code></p>
+<p>`onChanging`</p>
 </center></td>
 <td><p>[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
 <p>Denotes that a user is changing the content of an input component.
 Notice that the component's content (at the server) won't be changed
-until <code>onChange</code> is received. Thus, you have to invoke the
-<code>getValue</code>method in the <code>InputEvent</code>class to
+until `onChange` is received. Thus, you have to invoke the
+`getValue`method in the `InputEvent`class to
 retrieve the temporary value.</p></td>
 </tr>
 </tbody>

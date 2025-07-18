@@ -70,11 +70,11 @@ what do they look like, example from zul.jar
                         <ul>
                             <li>mesg/
                                 <ul>
-                                    <li>msg[jar name].properties</code>
+                                    <li>msg[jar name].properties`
                                             <ul>
                                                 <li>These files are i18n resource files,you can define with the
                                                         locale you want , the default file is
-                                                        msg <code>[JAR_NAME].properties</code> <br />
+                                                        msg `[JAR_NAME].properties` <br />
                                                     <a href="{{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages"
                                                         title="wikilink">ZK Internationalization</a>
                                                 </li>
@@ -305,7 +305,7 @@ language</em></li>
 <ul>
 <li> This is a folder for some image files , and you can access them
 in xxx.css.dsp files through
-<code>${c:encodeURL('~./img/[component-package]/xxx.png')}</code></li>
+`${c:encodeURL('~./img/[component-package]/xxx.png')}`</li>
 </ul></li>
 </ul></li>
 </ul></li>

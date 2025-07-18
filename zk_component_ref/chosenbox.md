@@ -189,7 +189,7 @@ situation. Supports: 0-9, A-Z (case insensitive), and `,.;'[]/\-=`
 <tbody>
 <tr class="odd">
 <td><center>
-<p><code>onSelect</code></p>
+<p>`onSelect`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
@@ -198,7 +198,7 @@ client.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onOpen</code></p>
+<p>`onOpen`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
@@ -207,7 +207,7 @@ the client.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onSearch</code></p>
+<p>`onSearch`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
@@ -216,7 +216,7 @@ value by clicking ENTER or separator.</p></td>
 </tr>
 <tr class="even">
 <td><center>
-<p><code>onSearching</code></p>
+<p>`onSearching`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)</p>
@@ -225,7 +225,7 @@ text.</p></td>
 </tr>
 <tr class="odd">
 <td><center>
-<p><code>onItemClick</code></p>
+<p>`onItemClick`</p>
 </center></td>
 <td><p><strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
