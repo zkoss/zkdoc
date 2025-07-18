@@ -163,7 +163,7 @@ it's crucial to specify <depends> correctly, so that your land addon
 will take effect. According to which component you override, you need to
 specify the corresponding addon name. For example:
 
-- If you override a component in zul language e.g. <button>, you specify
+- If you override a component in zul language e.g. `<button>`, you specify
 
 ```xml
 <depends>zul</depends>
@@ -177,11 +177,12 @@ specify the corresponding addon name. For example:
 
 - If you override something about accessibility, e.g. override aria
   attribute, you specify
+
 ```xml
 <depends>za11y</depends>
 ```
 
-### Use [<embed>](/zk_config_ref/the_embed_element)
+### Use [&lt;embed> in zk.xml](/zk_config_ref/the_embed_element)
 
 # How to Apply a Java Patch
 
@@ -232,8 +233,6 @@ If you are running into a performance issue, you can first check out
 [Step by Step Trouble Shooting]({{site.baseurl}}/zk_dev_ref/performance_monitoring/step_by_step_trouble_shooting)
 and do a first step analysis using browser's developer tools.
 
-## [By Chrome developer tool](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance)
-
-## [By Firefox developer tool](https://developer.mozilla.org/en-US/docs/Tools/Performance)
-
-## [By Edge developer tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/performance)
+* [By Chrome developer tool](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance)
+* [By Firefox developer tool](https://developer.mozilla.org/en-US/docs/Tools/Performance)
+* [By Edge developer tool](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/performance)
