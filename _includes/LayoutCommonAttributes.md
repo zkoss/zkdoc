@@ -23,7 +23,7 @@ child component `<caption>`.
 Whether users can open or close the region. Require
 `collapsible="true"`. Notice you need to click the icon on the title or
 on the splitter to open/close a region. Clicking a title slides a region
-instead of opening it. ![](Closable.gif)
+instead of opening it. ![](/zk_component_ref/images/Closable.gif)
 
 ## Slidable
 
@@ -34,4 +34,4 @@ of the collapsed region. It opens the region like a drawer overlapping
 on the `<center>`, so it doesn't affect the size of `<center>` which is
 different from opening the region. Require `collapsible="true"`.
 
-![](layout_slidable.gif)
+![](/zk_component_ref/images/layout_slidable.gif)

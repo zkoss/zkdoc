@@ -67,7 +67,7 @@ columns to skip ahead.
     </rowlayout>
 ```
 
-The above examples look like: ![ center](rowlayout_examples.png)
+The above examples look like: ![](/zk_component_ref/images/rowlayout_examples.png)
 
 # Supported Events
 

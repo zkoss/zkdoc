@@ -80,7 +80,7 @@ default.
 
  With column scrolling, Grid will render extra space
 (larger width) after the last column. So that you can drag to hide all
-columns except the last one. ![](hide-columns.png)
+columns except the last one. ![](/zk_component_ref/images/hide-columns.png)
 
 # Frozen on the Right
 
