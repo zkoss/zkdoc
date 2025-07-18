@@ -7,9 +7,7 @@ listboxcomponents will automatically add and remove rows depending on
 client scrolling. On large models, this will avoid sending the full
 content during page rendering.
 
-See
-\[<{{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#ROD:_Listbox>,
-performance documentation\] for additional information.
+See [turn on render on demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#ROD:_Listbox) for additional information.
 
 Default: `false`
 
@@ -28,7 +26,4 @@ Default: `false`
     <name>org.zkoss.zul.listbox.rod</name>
     <value>true</value>
 </library-property>
-...
 ```
-
-# Version History

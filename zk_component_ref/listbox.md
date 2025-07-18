@@ -129,14 +129,13 @@ and `rows="1"`.
 In addition to each item's label, you can assign an application-specific
 value to each item using the `setValue` method.
 
-<listhead> is not supported in this mold.
+`<listhead>` is not supported in this mold.
 
 ### Listgroup Supported
 
 {% include version-badge.html version=8.6.0 %}
 
-This mold supports having Listgroups and renders them as HTML
-<optgroup>.
+This mold supports having Listgroups and renders them as HTML `<optgroup>`.
 
 ![](/zk_component_ref/images/Select-mold-optgroup.png)
 
@@ -229,11 +228,8 @@ navigating through the pagination.
 
 {% include version-badge.html version=5.0.5 %}
 
-By default, when a user clicks on an HTML `<button>, <input>,
-
-<textarea>
-
-` or <a> tag, it doesn't change the selection. For example, when a
+By default, when a user clicks on an HTML `<button>`, `<input>`, `<textarea>`
+or `<a>` tag, it doesn't change the selection. For example, when a
 user clicks the textbox in the following example, the selection state of
 the item won't be changed (only the textbox gains the focus).
 
