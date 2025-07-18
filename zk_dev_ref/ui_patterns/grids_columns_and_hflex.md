@@ -3,40 +3,15 @@
 This section introduces the usage of ZK auto sizing APIs. All of these
 can apply to the following components:
 
-<table>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/listbox"
-title="wikilink">Listbox</a>
-<ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/listhead"
-title="wikilink">Listhead</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/listheader"
-title="wikilink">Listheader</a></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/grid" title="wikilink">Grid</a>
-<ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/columns"
-title="wikilink">Columns</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/column"
-title="wikilink">Column</a></li>
-</ul></li>
-</ul></td>
-<td><ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/tree" title="wikilink">Tree</a>
-<ul>
-<li><a href="{{site.baseurl}}/zk_component_ref/treecols"
-title="wikilink">Treecols</a></li>
-<li><a href="{{site.baseurl}}/zk_component_ref/treecol"
-title="wikilink">Treecol</a></li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+* [Listbox]({{site.baseurl}}/zk_component_ref/listbox)
+* [Listhead]({{site.baseurl}}/zk_component_ref/listhead) 
+* [Listheader]({{site.baseurl}}/zk_component_ref/listheader) 
+* [Grid]({{site.baseurl}}/zk_component_ref/grid)
+* [Columns]({{site.baseurl}}/zk_component_ref/columns)
+* [Column]({{site.baseurl}}/zk_component_ref/column) 
+* [Tree]({{site.baseurl}}/zk_component_ref/tree)
+* [Treecols]({{site.baseurl}}/zk_component_ref/treecols)
+* [Treecol]({{site.baseurl}}/zk_component_ref/treecol) 
 
 # Hflex and Width
 
