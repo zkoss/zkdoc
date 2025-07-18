@@ -1,4 +1,4 @@
-\_\_TOC\_\_
+
 
 ZK provides out-of-the-box detection and support of mobile, tablet and
 touch-enabled devices.

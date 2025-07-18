@@ -18,13 +18,12 @@ input by a user by escaping `&` and other unsafe characters. For
 example, the following statement is totally safe even if `any_value`
 contains a script like `
 
+```html
 <script>
-
 alert('xss')
-
 </script>
+```
 
-`:
 
 ```xml
 <textbox value="${any_value}"/>
@@ -47,12 +46,7 @@ so it's encoded, too.
 ## Components used to Generate HTML Directly
 
 ZK provides several ways to write HTML tags in a zul, including
-\[\[{{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component
-\| ZK
-
-<html>
-
-component\]\], [ native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace),
+[html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component), [ native namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace),
 and [ xhtml components]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_xhtml_component_set).
 Since their purpose is to allow you to write HTML tags directly, ZK
 doesn't encode them.
@@ -103,11 +97,7 @@ them by yourself.
 
 ## Page Directive
 
-All attributes of \[\[zuml_ref/page\|
-
-<?page?>
-
-\]\] are not encoded.
+All attributes of [<?page?>](/zuml_ref/page) not encoded.
 
 # Sanitize User Input
 
