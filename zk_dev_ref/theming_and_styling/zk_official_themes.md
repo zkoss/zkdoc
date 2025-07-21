@@ -24,8 +24,9 @@ support desktop only.
 See below to take a quick view at the look and feel of Breeze, Sapphire
 and Silvertail, click image to view original size.
 
-![ left \| thumb \| 269px \| Breeze](breeze-look-and-feel.png) ![ left \| thumb \| 269px \| Sapphire](sapphire-look-and-feel.png)
-![ left \| thumb \| 269px \| Silvertail](silvertail-look-and-feel.png)
+![](/zk_dev_ref/images/Breeze-look-and-feel.png) 
+![](/zk_dev_ref/images/Sapphire-look-and-feel.png)
+![](/zk_dev_ref/images/Silvertail-look-and-feel.png)
 
 <div style="clear: both">
 </div>

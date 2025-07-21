@@ -5,7 +5,7 @@ determine a bottleneck in a slow performing ZK application.
 Additionally, it offers some conclusions and tips, what the next steps
 would be after identifying the problem area.
 
-A flow chart to summarize the whole troubleshooting process: ![](performance_debug.png)
+A flow chart to summarize the whole troubleshooting process: ![](/zk_dev_ref/images/performance_debug.png)
 
 ## Identify the Bottleneck
 
@@ -436,7 +436,7 @@ The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
 the method name.
 
-![]({{site.baseUrl}}/images/sampler-snapshot-combined.png)
+![](/zk_dev_ref/images/sampler-snapshot-combined.png)
 
 In the call tree we actually see what is happening inside in more
 detail:

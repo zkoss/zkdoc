@@ -151,7 +151,7 @@ let users close the notification box manually.
 Clients.showNotification(msg, closable); 
 ```
 
-![](images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png)
+![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png)
 
 ### Multiline
 
