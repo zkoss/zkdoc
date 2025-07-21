@@ -3,8 +3,8 @@
  * 
  * Purpose: Validates all images referenced in the ZK documentation site by:
  * - Extracting all page URLs from navigation.yml
- * - Crawling each page to find image references (img tags and background-image styles)
- * - Testing each image URL to verify it's accessible
+ * - Using Puppeteer to visit each page in a real browser
+ * - Capturing 404 image errors from browser console
  * - Generating a detailed report of broken images
  * 
  * Usage:
@@ -12,7 +12,7 @@
  * 
  * Prerequisites:
  *   - Jekyll development server running on localhost:4000
- *   - npm dependencies installed (js-yaml, axios, cheerio)
+ *   - npm dependencies installed (js-yaml, puppeteer)
  * 
  * Output:
  *   - Console output with real-time progress
@@ -21,11 +21,10 @@
 
 const fs = require('fs');
 const yaml = require('js-yaml');
-const axios = require('axios');
-const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 
 const BASE_URL = 'http://localhost:4000';
-const NAVIGATION_FILE = '_data/navigation.yml';
+const NAVIGATION_FILE = '../_data/navigation.yml';
 const REPORT_FILE = 'image-check-report.txt';
 
 // Function to extract all URLs from navigation data
@@ -48,62 +47,49 @@ function extractUrls(data) {
     return Array.from(urls);
 }
 
-// Function to check if an image URL is valid
-async function checkImageUrl(imageUrl) {
-    try {
-        // Handle relative URLs
-        const fullUrl = imageUrl.startsWith('http') ? imageUrl : `${BASE_URL}${imageUrl}`;
-        const response = await axios.get(fullUrl, { responseType: 'arraybuffer' });
-        return {
-            url: imageUrl,
-            status: response.status,
-            isBroken: false
-        };
-    } catch (error) {
-        const status = error.response && error.response.status ? error.response.status : 'ERROR';
-        return {
-            url: imageUrl,
-            status: status,
-            isBroken: true
-        };
-    }
-}
+// Function to check images on a page using Puppeteer
+async function checkPageImages(browser, pageUrl) {
+    const page = await browser.newPage();
+    const brokenImages = [];
+    const imageRequests = new Map();
 
-// Function to extract and check all images from a page
-async function checkPageImages(pageUrl) {
     try {
-        const fullUrl = `${BASE_URL}${pageUrl}`;
-        const response = await axios.get(fullUrl);
-        const $ = cheerio.load(response.data);
-        
-        const imageUrls = new Set();
-        
-        // Find all img tags
-        $('img').each((i, elem) => {
-            const src = $(elem).attr('src');
-            if (src) imageUrls.add(src);
-        });
-        
-        // Find all background images in style attributes
-        $('[style*="background-image"]').each((i, elem) => {
-            const style = $(elem).attr('style');
-            const match = style.match(/url\(['"]?([^'"()]+)['"]?\)/);
-            if (match && match[1]) imageUrls.add(match[1]);
-        });
-        
-        const results = [];
-        for (const imageUrl of imageUrls) {
-            const result = await checkImageUrl(imageUrl);
-            results.push(result);
-            if (result.isBroken) {
-                console.log(`Broken image on ${pageUrl}: ${imageUrl}`);
+        // Listen to network responses to catch 404 image errors
+        page.on('response', response => {
+            const url = response.url();
+            const status = response.status();
+            
+            // Check if this is an image request (by URL extension or content-type)
+            const isImage = /\.(jpg|jpeg|png|gif|bmp|svg|webp)(\?|$)/i.test(url) || 
+                           response.headers()['content-type']?.startsWith('image/');
+            
+            if (isImage) {
+                imageRequests.set(url, { status, isBroken: status >= 400 });
+                
+                if (status >= 400) {
+                    // Convert full URL back to relative if it's from our domain
+                    const relativeUrl = url.startsWith(BASE_URL) ? url.replace(BASE_URL, '') : url;
+                    brokenImages.push({
+                        url: relativeUrl,
+                        status: status,
+                        isBroken: true
+                    });
+                    console.log(`Broken image on ${pageUrl}: ${relativeUrl} (Status: ${status})`);
+                }
             }
-        }
-        
+        });
+
+        // Navigate to the page
+        const fullUrl = `${BASE_URL}${pageUrl}`;
+        await page.goto(fullUrl, { waitUntil: 'networkidle0', timeout: 30000 });
+
+        // Wait a bit more to ensure all images have attempted to load
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
         return {
             pageUrl,
-            totalImages: results.length,
-            brokenImages: results.filter(r => r.isBroken)
+            totalImages: imageRequests.size,
+            brokenImages: brokenImages
         };
     } catch (error) {
         console.error(`Error checking page ${pageUrl}:`, error.message);
@@ -113,6 +99,8 @@ async function checkPageImages(pageUrl) {
             brokenImages: [],
             error: error.message
         };
+    } finally {
+        await page.close();
     }
 }
 
@@ -168,6 +156,11 @@ function generateReport(results, pagesWithBrokenImages, totalBrokenImages) {
 
 // Main function
 async function main() {
+    const browser = await puppeteer.launch({ 
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    
     try {
         // Read and parse navigation.yml
         const navigationData = yaml.load(fs.readFileSync(NAVIGATION_FILE, 'utf8'));
@@ -179,7 +172,8 @@ async function main() {
         // Check images on each page
         const results = [];
         for (const url of urls) {
-            const result = await checkPageImages(url);
+            console.log(`Checking page: ${url}`);
+            const result = await checkPageImages(browser, url);
             results.push(result);
         }
         
@@ -210,6 +204,8 @@ async function main() {
         
     } catch (error) {
         console.error('Error:', error.message);
+    } finally {
+        await browser.close();
     }
 }
 

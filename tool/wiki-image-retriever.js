@@ -82,10 +82,14 @@ async function scrapeWikiPage(filename) {
         const $ = cheerio.load(response.data);
         
         // Find the img element with srcset attribute
-        const imgElements = $('img[srcset]');
+        let imgElements = $('img[srcset]');
         
         if (imgElements.length === 0) {
-            throw new Error('No img element with srcset found on the page');
+            imgElements = $('img[src]');
+            
+            if (imgElements.length === 0) {
+                throw new Error('No img element with srcset or src found on the page');
+            }
         }
         
         // Look for the specific image we want
@@ -93,27 +97,39 @@ async function scrapeWikiPage(filename) {
         imgElements.each((i, elem) => {
             const alt = $(elem).attr('alt');
             const srcset = $(elem).attr('srcset');
+            const src = $(elem).attr('src');
             
             if (alt && alt.includes(filename.replace(/\.[^/.]+$/, ""))) {
-                targetImg = { alt, srcset };
+                targetImg = { alt, srcset, src };
                 return false; // break
             }
         });
         
         if (!targetImg) {
-            // Fallback: use the first image with srcset
+            // Fallback: use the first image
             const firstImg = imgElements.first();
             targetImg = {
                 alt: firstImg.attr('alt'),
-                srcset: firstImg.attr('srcset')
+                srcset: firstImg.attr('srcset'),
+                src: firstImg.attr('src')
             };
         }
         
         console.log(`Found image: ${targetImg.alt}`);
         
-        const imageUrl = extractImageUrl(targetImg.srcset);
+        // Try to extract URL from srcset first, then fallback to src
+        let imageUrl = null;
+        if (targetImg.srcset) {
+            imageUrl = extractImageUrl(targetImg.srcset);
+        }
+        
+        if (!imageUrl && targetImg.src) {
+            imageUrl = targetImg.src;
+            console.log('Using src attribute as fallback');
+        }
+        
         if (!imageUrl) {
-            throw new Error('Could not extract image URL from srcset');
+            throw new Error('Could not extract image URL from srcset or src');
         }
         
         // Make sure URL is absolute
