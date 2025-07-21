@@ -5,6 +5,7 @@ the [MVC approach](../mvc_approach/construct_a_form_style_page).
 
 
 **Extracted from chapter3/profile-mvvm-property.zul**
+
 ```xml
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <window border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">

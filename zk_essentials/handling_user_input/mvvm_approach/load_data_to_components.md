@@ -101,6 +101,7 @@ data between components and the ViewModel for us automatically.
 
 ## Load a User
 For the first row of this form, we want to show the user name, then we can load `User`'s `account` property to a `<label>` `value` attribute with data binding syntax `@Load`:
+
 ```xml
 ...
     <rows>
