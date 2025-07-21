@@ -44,6 +44,7 @@ For example:
 * Bind to bean properties, indexed properties, Map keys seamlessly.
 * Bind to component custom attributes automatically.
 * Bind to Spring, CDI, and Seam managed bean automatically.
+
 ```xml
 <image src="@load(vm.person.boy ? 'boy.png' : 'girl.png')"/>
 <button onClick="@command(vm.add ? 'add' : 'update')" label="@load(vm.add ? 'Add' : 'Update'"/>
@@ -54,6 +55,7 @@ For example:
 * Load when bean property changes
 * Conditional load after/before executing a command
 * Multiple conditional load before/after executing different/same commands
+
 ```xml
 <label value="@load(vm.person.fullname)"/>
 <label value="@load(vm.person.firstname, after='update')"/>
@@ -67,6 +69,7 @@ For example:
 * Multiple save to property of different target beans
 * Conditional save before/after executing a command
 * Multiple conditional save before/after executing different/same commands
+
 ```xml
 <textbox value="@save(vm.person.firstname)"/>
 <textbox value="@save(vm.person.firstname) @save(vm.tmpperson.firstname)"/>
@@ -77,16 +80,19 @@ For example:
 
 ## Initial Binding
 * Loads when UI components are first added into the binding system
+
 ```xml
 <label value="@init(vm.selected.firstname)"/>
 ```
 
-##Two Way Data Binding
+## Two Way Data Binding
 * Multiple conditional load and save on different back-end beans before/after executing different/same commands
+
 ```xml
 <textbox value="@load(vm.selected.firstname) @save(vm.selected.firstname) @save(vm.newperson.firstname, before='add')"/>
 ```
 * Short expression for both save and load bindings without command condition.<sub>[1]</sub>
+
 ```xml
 <textbox value="@bind(vm.person.firstname)"/>
 ```
@@ -94,6 +100,7 @@ For example:
 
 ## Bind to Any Attributes
 * Bind to all attributes of UI components
+
 ```xml
 <textbox value="@bind(vm.symbol)" instant="true"/>
 <button disabled="@load(empty vm.symbol)" label="Subscribe" />
@@ -103,6 +110,7 @@ For example:
 * Bridge ZK event to command
 * Automatic event listener registration
 * Simple command name invocation
+
 ```xml
 <button onClick="@command('subscribe')" disabled="@load(empty vm.symbol)" label="Subscribe" />
 ```
@@ -111,6 +119,7 @@ For example:
 * Binding on Listbox/Grid/Tree/Combobox
 * Local variable scope is limited to the container component
 * Support index property (`fooStatus.index` in follow example)
+
 ```xml
 <listbox width="300px" model="@load(vm.albumList)" selectedItem="@bind(vm.selectedAlbum)" vflex="true">
     <template name="model" var="foo">
@@ -121,11 +130,12 @@ For example:
 ```
 
 ## Reference Binding
-> Since 6.0.1
+[Since 6.0.1]
 
 * Make a reference for an EL expression with a custom name
 * Make an expression shorter
 * Modularize the view to make it reusable
+
 ```xml
 <vlayout p="@ref(vm.person)">
     <hlayout>
@@ -142,6 +152,7 @@ For example:
 * Embedded system Validator: provide commonly used validators in which users can use directly by only specifying the name
 * Validate a single property or a form
 * Validate upon a command
+
 ```xml
 <textbox value="@save(vm.selected.firstname) @validator('beanValidator')"/>
 <grid form="@id('fx') @load(vm.selected) @save(vm.selected, before='update') @validator(vm.passwordValidator)">
@@ -154,12 +165,14 @@ For example:
 ## Enhanced Converter Mechanism
 * Bind converter by name or by EL expression
 * Embedded system Converters: provide commonly used converters in which users can use directly by only specifying the name
+
 ```xml
 <datebox value="@bind(vm.selected.birthday) @converter('formattedDate', format='yyyy/MM/dd')"/>
 ```
 
 ## Dynamic Template
 * Dynamically determine which template to render.
+
 ```xml
 <grid model="@bind(vm.nodes) @template(vm.type = 'foo' ? 'template1' : 'template2')">
     <template name="template1">
