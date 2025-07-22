@@ -53,7 +53,7 @@ Notice that no all `iframe` will cause the obscure issue. For example,
 it is OK if `iframe` contains another HTML page. Thus, specify it only
 if necessary (for better performance). Here is the correct result.
 
-![](images/UseStack-ok-1.jpg‎)
+![](images/UseStack-ok-1.jpg)
 
 > ------------------------------------------------------------------------
 >

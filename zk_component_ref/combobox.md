@@ -458,9 +458,8 @@ zul.jar.
 <td><center>
 <p>rounded</p>
 </center></td>
-<td><p>![](/zk_component_ref/images/combobox_mold_rounded.png
-title="combobox_mold_rounded.png" alt="combobox_mold_rounded.png" /> {%
-include version-badge.html version=5.0.0 %}</p></td>
+<td><p>![](/zk_component_ref/images/combobox_mold_rounded.png)
+{% include version-badge.html version=5.0.0 %}</p></td>
 </tr>
 </tbody>
 </table>

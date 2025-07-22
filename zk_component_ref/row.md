@@ -17,7 +17,7 @@ Default getSclass(): the same as grid's sclass.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png‎)
+![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
 <window title="Grid Demo" border="normal" width="360px">

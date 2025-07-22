@@ -56,7 +56,7 @@ The child of tablechildren can be any component.
 
 The child of tablechildren can be any component.
 
-![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG‎)
+![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
 
 ```xml
     <tablelayout columns="2">

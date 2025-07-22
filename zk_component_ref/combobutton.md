@@ -76,7 +76,7 @@ popup/menupopup of the Combobutton will be displayed.
 
 - Combobutton as Toolbarbutton
 
-![](/zk_component_ref/images/ZKComRef_Combobutton_ToolbarbuttonMold.png‎)
+![](/zk_component_ref/images/ZKComRef_Combobutton_ToolbarbuttonMold.png)
 
 ```xml
 <zk>

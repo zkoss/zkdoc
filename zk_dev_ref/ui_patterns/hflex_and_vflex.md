@@ -67,7 +67,7 @@ example,
 
 And, the result
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflex1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflex1.png)
 
 Here is another example that we'd like to grow the tabbox to fit the
 rest of the space:
@@ -95,7 +95,7 @@ Notice you could specify `style="overflow: auto"` in the tabpanel such
 that the scrollbar will be inside the tabbox rather than the browser
 window if the content is too large to fit.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflextabbox.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflextabbox.png)
 
 # Proportional Flexibility
 
@@ -491,7 +491,7 @@ but it makes it div eventually).
 
 And, the result is as follows - the width has no effect:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png)
 
 This limitation can be solved by the use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
@@ -522,7 +522,7 @@ its siblings. For example,
 As shown below, the second div is not aligned vertically with the first
 div, so is the width not as expected:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png‎)
+![]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png)
 
 This limitation can be solved by use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
