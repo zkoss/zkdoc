@@ -203,7 +203,7 @@ pages might be added to a desktop and some might be removed from a
 desktop. Similarly, a component might be added to or removed from a
 page.
 
-<!--![](zk_basic_desktop.jpg) -->
+<!--zk_basic_desktop.jpg -->
 
 Notice that both pages and desktops are created and remove implicitly.
 There are no API to create or remove them. A page is create each time

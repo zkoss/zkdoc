@@ -67,7 +67,7 @@ columns to skip ahead.
     </rowlayout>
 ```
 
-The above examples look like: ![](images/rowlayout_examples.png)
+The above examples look like: ![](images/Rowlayout-examples.png)
 
 # Supported Events
 

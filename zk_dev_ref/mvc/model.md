@@ -36,7 +36,7 @@ corresponding object in the ListModelList (`remove()`). Then Listbox
 will remove the Listitem accordingly. The same rule applies to adding,
 clearing, and replacing.
 
-From one component's perspective, it also follows the MVC pattern: ![ center](model-driven-rendering.jpg " center")
+From one component's perspective, it also follows the MVC pattern: ![](/zk_dev_ref/images/model-driven-rendering.jpg)
 
 - **Component (Controller)**
   - get data objects from a Model

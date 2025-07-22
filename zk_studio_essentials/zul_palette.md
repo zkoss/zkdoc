@@ -2,8 +2,8 @@
 
 In addition to directly typing tags in the ZUL Editor, ZUL Palette
 provides a drag-and-drop feature to insert components. You can open the
-ZUL palette by going to **\[Window\]/\[Show View\]/\[Others\]**, and
-selecting **ZK / ZUL Palette**.
+ZUL palette by going to **Window\Show View\Others**, and
+selecting **ZK \ ZUL Palette**.
 
 # Drag & Drop Support
 
@@ -16,7 +16,7 @@ accordingly.
 
 <div style="width:610px;margin-left:auto;margin-right:auto">
 
-![](images/studio-palette-drag-component.png) ![ 300px \| top](studio-palette-drop-component.png)
+![](images/studio-palette-drag-component.png) ![](images/Studio-palette-drop-component.png)
 
 </div>
 
