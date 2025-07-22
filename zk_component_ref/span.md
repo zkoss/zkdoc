@@ -11,7 +11,7 @@ The `Span` component in ZK is a lightweight container used for grouping child co
 
 The example illustrates the usage of the `Span` component in a ZK application. Within the `Span` container, a label "Name:" is followed by a textbox input field.
 
-![Span Component Example](ZKComRef_Span_Example.png)
+![Span Component Example](images/ZKComRef_Span_Example.png)
 
 ```xml
 <span>

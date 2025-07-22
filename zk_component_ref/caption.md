@@ -37,7 +37,7 @@ The custom attributes will be checked recursively in the component tree.
 
 The example showcases the usage of the Caption component within a Window and Groupbox components, both of which support Caption as their title.
 
-![Caption Example](ZKComRef_Caption_Example.png)
+![Caption Example](images/ZKComRef_Caption_Example.png)
 
 ```xml
 <zk>

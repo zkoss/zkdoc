@@ -12,7 +12,7 @@ The ZK Tab component is used to represent a specific tab within a tab container.
 
 The example below demonstrates a `tabbox` with two tabs, each displaying a label and an image. The first tab is not closable, while the second tab is closable with a close button that allows the user to remove it.
 
-![Tab Example](ZKComRef_Containers_Tab.png)
+![Tab Example](images/ZKComRef_Containers_Tab.png)
 
 ```xml
 <tabbox width="400px">
@@ -38,7 +38,7 @@ Try it
 
 Tabs can have a caption by declaring a child component called `caption`. The example below shows a tab with a search caption containing a textbox component. This feature is available in ZK Enterprise Edition starting from version 6.5.0.
 
-![Tab Caption Example](ZKComRef_Containers_Tab_Caption.png)
+![Tab Caption Example](images/ZKComRef_Containers_Tab_Caption.png)
 
 ```xml
 <tabbox width="400px">

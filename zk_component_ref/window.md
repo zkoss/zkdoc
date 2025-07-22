@@ -10,7 +10,7 @@ A ZK Window is a versatile component used to group other components. It acts as 
 ## Example
 The following XML code snippet demonstrates two different styles of windows:
 
-![Window Examples](ZKComRef_Window_Multiple_Examples.png)
+![Window Examples](images/ZKComRef_Window_Multiple_Examples.png)
 
 ```xml
 <zk>
@@ -104,7 +104,7 @@ A modal window limits user interaction to only the window itself, while multiple
 
 For instance, you could access only the textbox and button in the following example:
 
-![Modalwindow](Modalwindow.png)
+![Modalwindow](images/Modalwindow.png)
 You can have multiple modal windows at the same time, and a user can only access the last modal window. Once the last modal is dismissed (invisible or detached), the previous modal window will become the active modal window until it is dismissed.
 
 ## Dismiss
@@ -259,7 +259,7 @@ Once a user resizes the window, the onSize event is sent with an instance of the
 ### Title and Caption
 A window in ZK can have a title, a caption, and a border. The title is specified using the `title` attribute, and the caption is specified by declaring a child component called `caption`. Any children of the `caption` component will appear on the right-hand side of the title.
 
-![Window with Caption Example](Window_Caption_Example.png)
+![Window with Caption Example](images/Window_Caption_Example.png)
 
 ```xml
 <zk>
@@ -288,7 +288,7 @@ Try it
 
 Additionally, you can specify a label and an image within a caption, as shown below:
 
-![Window with Label and Image Example](Window_Label_Image_Example.png)
+![Window with Label and Image Example](images/Window_Label_Image_Example.png)
 
 ```xml
 <zk>

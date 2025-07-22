@@ -14,7 +14,7 @@ To group components without rendering a `Div`, `Idspace` provides a "nodom" mold
 
 In this example, an `Idspace` component is used as the topmost component to group a `window` and a `div`, each containing a button with a unique ID and label. (Note: `window` is also an ID space in ZK.)
 
-![Idspace Example](ZKComRef_Idspace_Example.png)
+![Idspace Example](images/ZKComRef_Idspace_Example.png)
 
 ```xml
 <idspace>

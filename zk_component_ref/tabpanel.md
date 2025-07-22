@@ -17,7 +17,7 @@ The example demonstrates the usage of `tabpanel` within a tabbox and tabpanels i
 - Another tabbox with accordion mold and tabs labeled 'Tab 3' and 'Tab 4'.
 - Tabpanels within the accordion tabbox showcasing 'This is panel 3' and 'This is panel 4'.
 
-![Tabs](ZKComRef_Containers_Tabs.png)
+![Tabs](images/ZKComRef_Containers_Tabs.png)
 ```xml
 <zk>
 	<tabbox width="400px">

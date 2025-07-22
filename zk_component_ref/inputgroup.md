@@ -16,7 +16,7 @@ The Inputgroup component can be used in various ways to enhance the user interfa
    
    The basic inputgroup example demonstrates how to prepend text to a textbox using the `@` symbol.
 
-   ![Inputgroup_basic](Inputgroup_basic.png)
+   ![Inputgroup_basic](images/Inputgroup_basic.png)
 
    ```xml
    <zk>
@@ -47,7 +47,7 @@ The Inputgroup component can be used in various ways to enhance the user interfa
    
    The vertical orientation example shows how to set the inputgroup to display components vertically using the `orient` attribute.
 
-   ![Inputgroup_vertical](Inputgroup_vertical.png)
+   ![Inputgroup_vertical](images/Inputgroup_vertical.png)
 
    ```xml
    <zk>

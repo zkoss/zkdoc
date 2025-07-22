@@ -13,7 +13,7 @@ You can set a specific locale for each component using the NumberInputElement.
 
 For example:
 
-![NumberInputElement Locales](NumberInputElement-Locales.png)
+![NumberInputElement Locales](images/NumberInputElement-Locales.png)
 
 ```xml
 <grid width="550px">

@@ -14,7 +14,7 @@ The Drawer component functions as a panel that remains attached to the boundary 
 
 The example below demonstrates the placement of a Drawer on the right side of the page and exhibits detailed file information contained within the Drawer:
 
-![ZK-Drawer-Example](ZK-Drawer-Example.png)
+![ZK-Drawer-Example](images/ZK-Drawer-Example.png)
 
 ![ZK-Drawer-Example](images/ZK-Drawer-Example.gif)
 

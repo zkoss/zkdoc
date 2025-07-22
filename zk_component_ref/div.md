@@ -9,7 +9,7 @@ The `Div` component is a lightweight container used to group child components fo
 ## Example
 The example demonstrates the usage of the `Div` component by creating two separate div containers, each containing a `doublebox` component. The first `div` aligns its content to the left within a width of 300px, while the second `div` aligns its content to the right within the same width.
 
-![Div Example](ZKComRef_Div_Example.png)
+![Div Example](images/ZKComRef_Div_Example.png)
 
 ```xml
 <zk>

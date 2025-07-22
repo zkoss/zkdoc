@@ -14,7 +14,7 @@ Developers can retrieve the selected group using [`org.zkoss.zul.Tabbox#getSelec
 
 The example below demonstrates the usage of a Tabbox component with two sets of tabs and tab panels. The first Tabbox is displayed with two tabs while the second Tabbox is using the 'accordion' mold to display two tabs in an accordion style.
 
-![Tabbox Example](ZKComRef_Tabbox_Examples.png)
+![Tabbox Example](images/ZKComRef_Tabbox_Examples.png)
 ```xml
 <zk>
 	<tabbox width="400px">
@@ -54,7 +54,7 @@ The Tabbox component supports the inclusion of other controls within its tab bar
 
 Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient Tabbox.
 
-![Tabbox Toolbar Examples](ZKComRef_Tabbox_Toolbar_Examples.png)
+![Tabbox Toolbar Examples](images/ZKComRef_Tabbox_Toolbar_Examples.png)
 ```xml
 <tabbox width="250px">
 	<tabs>
@@ -90,7 +90,7 @@ Starting from version 7.0.0, the Tabbox component introduced the `MaximalHeight`
 
 Note: The Client ROD feature will be disabled if it is set to true.
 
-![Tabbox maximalHeight](Tabbox_maximalHeight_0.png) ![Tabbox maximalHeight](Tabbox_maximalHeight_1.png) ![Tabbox maximalHeight](Tabbox_maximalHeight_2.png)
+![Tabbox maximalHeight](images/Tabbox_maximalHeight_0.png) ![Tabbox maximalHeight](images/Tabbox_maximalHeight_1.png) ![Tabbox maximalHeight](images/Tabbox_maximalHeight_2.png)
 
 ```xml
 <tabbox maximalHeight="true" width="300px">
@@ -133,17 +133,17 @@ Try it
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
-|**Default:** |![Default Mold](tabbox_mold_default.png)|
-| **Accordion:** | ![Accordion Mold](tabbox_mold_accordion.png)|
+|**Default:** |![Default Mold](images/tabbox_mold_default.png)|
+| **Accordion:** | ![Accordion Mold](images/tabbox_mold_accordion.png)|
 
 ## Supported Orients
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
-|**Top:**| ![Top Orientation](tabbox_orient_top.png)|
-|**Left:**| ![Left Orientation](tabbox_orient_vertical.png)|
-|**Right:**| ![Right Orientation](tabbox_orient_vertical-right.png)|
-|**Bottom:**| ![Bottom Orientation](tabbox_orient_bottom.png)|
+|**Top:**| ![Top Orientation](images/tabbox_orient_top.png)|
+|**Left:**| ![Left Orientation](images/tabbox_orient_vertical.png)|
+|**Right:**| ![Right Orientation](images/tabbox_orient_vertical-right.png)|
+|**Bottom:**| ![Bottom Orientation](images/tabbox_orient_bottom.png)|
 
 ## Supported Children
 - [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.

@@ -10,7 +10,7 @@ The Groupbox component in ZK is used to group related components together visual
 ## Example
 In the provided example, a Groupbox is used to group a set of Radio components under the label "Fruits."
 
-![Groupbox_Example](ZKComRef_Groupbox_Example.png)
+![Groupbox_Example](images/ZKComRef_Groupbox_Example.png)
 ```xml
  <groupbox width="350px">
      <caption label="Fruits"/>
@@ -53,7 +53,7 @@ gb.setParent(outer);
 ### ContentStyle
 Specifies the CSS style for the content block of the groupbox.
 
-![Groupbox_ContentStyle](ZKComRef_Groupbox_ContentStyle.png)
+![Groupbox_ContentStyle](images/ZKComRef_Groupbox_ContentStyle.png)
 
 ```xml
 <groupbox width="350px" mold="3d"
@@ -75,7 +75,7 @@ Try it
 ### ContentSclass
 Specifies the CSS class for the content block of the groupbox.
 
-![Groupbox_ContentStyle](ZKComRef_Groupbox_ContentStyle.png)
+![Groupbox_ContentStyle](images/ZKComRef_Groupbox_ContentStyle.png)
 
 ```xml
 <zk>
@@ -146,8 +146,8 @@ The available molds for the Groupbox component are:
 
 | Name    | Snapshot                            |
 |---------|-------------------------------------------|
-| `default`   | ![Groupbox_mold_default](Groupbox_mold_default.png)|
-| `3d`   | ![Groupbox_mold_3d](Groupbox_mold_3d.png)|
+| `default`   | ![Groupbox_mold_default](images/Groupbox_mold_default.png)|
+| `3d`   | ![Groupbox_mold_3d](images/Groupbox_mold_3d.png)|
 
 ## Supported Children
 

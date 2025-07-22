@@ -11,7 +11,7 @@ The `tabs` component serves as a container for multiple `tab` components. It all
 
 The example below demonstrates the usage of the `Tabs` component in a ZK application:
 
-![Tabs Example](ZKComRef_Containers_Tabs.png)
+![Tabs Example](images/ZKComRef_Containers_Tabs.png)
 
 ```xml
 <zk>

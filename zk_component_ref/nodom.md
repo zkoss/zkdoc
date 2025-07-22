@@ -12,7 +12,7 @@ The `Nodom` component in ZK is a server-side Java object that does not render an
 
 ## Example
 
-![Nodom Example](ZKComRef_Idspace_Example.png)
+![Nodom Example](images/ZKComRef_Idspace_Example.png)
 
 In the following example, the `Nodom` component is used as the outermost container to group components under a ViewModel. The example includes a `button` component inside a `window` and another `button` component inside a `div`.
 

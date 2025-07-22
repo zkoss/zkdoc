@@ -12,7 +12,7 @@ Panelchildren is a component used within the Panel component to manage each chil
 
 The following example demonstrates the usage of Panelchildren within Panel components:
 
-![Panel Simple Examples](ZKComRef_Panel_Simple_Examples.png)
+![Panel Simple Examples](images/ZKComRef_Panel_Simple_Examples.png)
 
 ```xml
 <zk>

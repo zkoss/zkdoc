@@ -11,7 +11,7 @@ The `Fragment` component in ZK allows developers to combine native HTML elements
 ## Example
 The following example demonstrates how to use the `Fragment` component with MVVM data binding:
 
-![ZKComRef_Fragment_Example](ZKComRef_Fragment_Example.png)
+![ZKComRef_Fragment_Example](images/ZKComRef_Fragment_Example.png)
 
 ```xml
 <zk>

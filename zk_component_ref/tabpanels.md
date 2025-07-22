@@ -12,7 +12,7 @@ A `tabpanels` component is a container for tab panels, which are a collection of
 
 The example below demonstrates the usage of the `tabpanels` component within a `tabbox`. In this example, two sets of tabs and tab panels are defined within separate `tabbox` components. The first `tabbox` displays tabs horizontally, while the second `tabbox` uses an accordion-style layout.
 
-![Tabpanels Example](ZKComRef_Containers_Tabs.png)
+![Tabpanels Example](images/ZKComRef_Containers_Tabs.png)
 
 ```xml
 <zk>

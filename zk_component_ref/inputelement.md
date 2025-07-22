@@ -54,7 +54,7 @@ The following example demonstrates the usage of various input elements in a `<gr
 </grid>
 ```
 
-![Input Elements Example](CrInputs.png)
+![Input Elements Example](images/CrInputs.png)
 
 Try it
 *  [Input Elements](https://zkfiddle.org/sample/25n9son/1-ZK-Component-Reference-InputElement-Example?v=latest&t=Iceblue_Compact)
@@ -226,7 +226,7 @@ For a more customized approach to displaying error messages, developers can impl
 ```
 And, here is the result
 
-![Custom Constraint](CrCustomConstraint.png)
+![Custom Constraint](images/CrCustomConstraint.png)
 
 Try it
 *  [Input Custom Constraint](https://zkfiddle.org/sample/26fnvg1/1-ZK-Component-Reference-InputElement-Custom-Constraint?v=latest&t=Iceblue_Compact)
@@ -301,7 +301,7 @@ The default value: `false`
 
 Starting from ZK 6.5, input elements support HTML5 placeholder text. This feature is useful for providing users with guidance on what should be entered in the input field.
 
-![Input Placeholder](Zk_textbox_placeholder.png)
+![Input Placeholder](images/Zk_textbox_placeholder.png)
 
 For example,
 ```xml

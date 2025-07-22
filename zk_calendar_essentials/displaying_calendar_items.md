@@ -133,7 +133,7 @@ selector.
 This is a good way to assign styles to categories of items.
 
 If you need to assign styles to individual items, you can use the style,
-contentStyle and headerStyle properties instead: ![Areas targeted by each style attributes](images/calendar_style_targets.png)
+contentStyle and headerStyle properties instead: ![Areas targeted by each style attributes](images/Calendar-style-targets.png)
 
 ```java
     calendarItem.setStyle("background-color: #0093f9"); //affects the whole item
