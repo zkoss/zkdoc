@@ -85,23 +85,53 @@ function extractImageReferences(markdownContent) {
     
     // Extract markdown images
     while ((match = markdownImageRegex.exec(markdownContent)) !== null) {
-        const imagePath = match[1];
+        let imagePath = match[1];
+        // Clean up the image path
+        imagePath = cleanImagePath(imagePath);
         // Skip external URLs and data URLs
-        if (!imagePath.startsWith('http') && !imagePath.startsWith('data:')) {
+        if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('data:')) {
             images.push(imagePath);
         }
     }
     
     // Extract HTML img tags
     while ((match = htmlImageRegex.exec(markdownContent)) !== null) {
-        const imagePath = match[1];
+        let imagePath = match[1];
+        // Clean up the image path
+        imagePath = cleanImagePath(imagePath);
         // Skip external URLs and data URLs
-        if (!imagePath.startsWith('http') && !imagePath.startsWith('data:')) {
+        if (imagePath && !imagePath.startsWith('http') && !imagePath.startsWith('data:')) {
             images.push(imagePath);
         }
     }
     
     return images;
+}
+
+// Function to clean up image paths by removing whitespace and unwanted characters
+function cleanImagePath(imagePath) {
+    if (!imagePath) return '';
+    
+    // Trim whitespace from both ends
+    let cleaned = imagePath.trim();
+    
+    // Remove invisible Unicode characters (like zero-width space, right-to-left mark, etc.)
+    cleaned = cleaned.replace(/[\u200B-\u200D\u2060\uFEFF\u202A-\u202E]/g, '');
+    
+    // Remove trailing quotes and spaces that might have been captured
+    cleaned = cleaned.replace(/["'\s]+$/, '');
+    
+    // Remove leading quotes
+    cleaned = cleaned.replace(/^["'\s]+/, '');
+    
+    // Extract just the image filename/path, removing any extra attributes or text
+    // Look for patterns like 'image.png "alt text"' or 'image.png width="100"'
+    const imagePathMatch = cleaned.match(/^([^\s"']+\.(png|jpg|jpeg|gif|svg|bmp|webp))/i);
+    if (imagePathMatch) {
+        cleaned = imagePathMatch[1];
+    }
+    
+    return cleaned;
 }
 
 // Function to resolve image path relative to the documentation root
