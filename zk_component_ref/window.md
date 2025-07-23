@@ -19,11 +19,7 @@ components, a window has the following characteristics.
 
 # Example
 
-<figure>
-<img src="ZKComRef_Window_Multiple_Examples.PNG"
-title="ZKComRef_Window_Multiple_Examples.PNG" />
-<figcaption>ZKComRef_Window_Multiple_Examples.PNG</figcaption>
-</figure>
+![ZKComRef_Window_Multiple_Examples.PNG](/zk_component_ref/images/ZKComRef_Window_Multiple_Examples.PNG)
 
 ``` xml
     <window title="Embedded Style" border="normal" width="200px">Hello,
@@ -135,14 +131,10 @@ depicted below.
 </zk>
 ```
 
-where we specify `position="parent"`, and make it as a child of a
-<a href="ZK_Component_Reference/Containers/Span" class="wikilink"
-title="span">span</a> component. The span component acts as an anchor
+where we specify `position="parent"`, and make it as a child of a [span](/zk_component_ref/span) component. The span component acts as an anchor
 point and the window is posited based on it.
 
-In additions to popup windows, you could use
-<a href="ZK_Component_Reference/Essential_Components/Popup"
-class="wikilink" title="Popup">Popup</a> for displaying a popup. The
+In additions to popup windows, you could use [Popup](/zk_component_ref/popup) for displaying a popup. The
 popup component has more control how to position it (by the use of
 <javadoc method="open(org.zkoss.zk.ui.Component, java.lang.String)">org.zkoss.zul.Popup</javadoc>).
 
@@ -161,7 +153,7 @@ tabbing.
 For instance, you could access only the textbox and button in the
 following example:
 
-![](Modalwindow.png)
+![Modalwindow.png](/zk_component_ref/images/Modalwindow.png)
 
 You can have multiple modal windows at the same time, and a user can
 only access the last modal window. Once the last modal is dismissed
@@ -254,11 +246,7 @@ You can override it to do whatever you want. Or, you can register your
 own listener to change the default behavior. For example, you might
 choose to hide the window rather than close it.
 
-<figure>
-<img src="10000000000000CE000000546D42136E.png"
-title="10000000000000CE000000546D42136E.png" />
-<figcaption>10000000000000CE000000546D42136E.png</figcaption>
-</figure>
+![10000000000000CE000000546D42136E.png](/zk_component_ref/images/10000000000000CE000000546D42136E.png)
 
 ``` xml
 <window closable="true" title="Detach on Close" border="normal" width="200px"
@@ -291,11 +279,7 @@ You can customize the look and feel of window's content block by
 specifying the `contentStyle` property
 (<javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>).
 
-<figure>
-<img src="10000000000000CB0000003292CB8174.png"
-title="10000000000000CB0000003292CB8174.png" />
-<figcaption>10000000000000CB0000003292CB8174.png</figcaption>
-</figure>
+![10000000000000CB0000003292CB8174.png](/zk_component_ref/images/10000000000000CB0000003292CB8174.png)
 
 ``` xml
 <zk>
@@ -310,11 +294,7 @@ title="10000000000000CB0000003292CB8174.png" />
 A typical use of the `contentStyle` attribute is to make a window
 scrollable as follows.
 
-<figure>
-<img src="100000000000009C0000006819656516.png"
-title="100000000000009C0000006819656516.png" />
-<figcaption>100000000000009C0000006819656516.png</figcaption>
-</figure>
+![100000000000009C0000006819656516.png](/zk_component_ref/images/100000000000009C0000006819656516.png)
 
 ``` xml
 <window id="win" title="Hi" width="150px" height="100px" contentStyle="overflow:auto" border="normal">
@@ -349,61 +329,13 @@ right-bottom corner.
 The `position`'s value can be a combination of the following constants
 by separating them with commas (`,`).
 
-<table>
-<thead>
-<tr>
-<th><center>
-<p>Constant</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><center>
-<p>center</p>
-</center></td>
-<td><p>Position the window at the center. If <code>left</code> or
-<code>right</code> is also specified, it means the vertical center. If
-<code>top</code> or <code>bottom</code> is also specified, it means the
-horizontal center. If none of <code>left</code>, <code>right</code>,
-<code>top</code> and <code>bottom</code> is specified, it means the
-center in both directions.</p>
-<p>Both the <code>left</code> and <code>top</code> properties are
-ignored.</p></td>
-</tr>
-<tr>
-<td><center>
-<p>left</p>
-</center></td>
-<td><p>Position the window at the left edge.</p>
-<p>The <code>left</code> property is ignored.</p></td>
-</tr>
-<tr>
-<td><center>
-<p>right</p>
-</center></td>
-<td><p>Position the window at the right edge.</p>
-<p>The <code>left</code> property is ignored.</p></td>
-</tr>
-<tr>
-<td><center>
-<p>top</p>
-</center></td>
-<td><p>Position the window at the top.</p>
-<p>The <code>top</code> property is ignored.</p></td>
-</tr>
-<tr>
-<td><center>
-<p>bottom</p>
-</center></td>
-<td><p>Position the window at the bottom.</p>
-<p>The <code>top</code> property is ignored.</p></td>
-</tr>
-</tbody>
-</table>
+| Constant | Description |
+|----------|-------------|
+| center | Position the window at the center. If `left` or `right` is also specified, it means the vertical center. If `top` or `bottom` is also specified, it means the horizontal center. If none of `left`, `right`, `top` and `bottom` is specified, it means the center in both directions.<br><br>Both the `left` and `top` properties are ignored. |
+| left | Position the window at the left edge.<br><br>The `left` property is ignored. |
+| right | Position the window at the right edge.<br><br>The `left` property is ignored. |
+| top | Position the window at the top.<br><br>The `top` property is ignored. |
+| bottom | Position the window at the bottom.<br><br>The `top` property is ignored. |
 
 ### Based on Viewport
 
@@ -415,32 +347,9 @@ of the page.
 
 ### Based on the Parent
 
-<table>
-<thead>
-<tr>
-<th><center>
-<p>Constant</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><center>
-<p>parent</p>
-</center></td>
-<td><p>Position the window relative to the top-left corner of the parent
-component. See specific details in the <a href="#popup" class="wikilink"
-title=" popup section"> popup section</a>. If <code>left</code> or
-<code>top</code> is also specified, the position will be offset from the
-top-left corner of the parent component by the same amount.</p>
-<p>This position <strong>cannot</strong> be combined with other
-positions mentioned in the previous table.</p></td>
-</tr>
-</tbody>
-</table>
+| Constant | Description |
+|----------|-------------|
+| parent | Position the window relative to the top-left corner of the parent component. See specific details in the [popup section](#popup). If `left` or `top` is also specified, the position will be offset from the top-left corner of the parent component by the same amount.<br><br>This position **cannot** be combined with other positions mentioned in the previous table. |
 
 ## Sizable
 
@@ -474,11 +383,7 @@ specified by the `title` attribute. The caption is specified by
 declaring a child component called `caption`. All children of the
 `caption` component will appear on right hand side of the title.
 
-<figure>
-<img src="10000000000001640000004CEB4969A9.png"
-title="10000000000001640000004CEB4969A9.png" />
-<figcaption>10000000000001640000004CEB4969A9.png</figcaption>
-</figure>
+![10000000000001640000004CEB4969A9.png](/zk_component_ref/images/10000000000001640000004CEB4969A9.png)
 
 ``` xml
 <zk>
@@ -503,11 +408,7 @@ title="10000000000001640000004CEB4969A9.png" />
 You are also able to specify a label and an image within a caption, and
 then the appearance is as follows.
 
-<figure>
-<img src="10000000000000CD00000042FABAB4CE.png"
-title="10000000000000CD00000042FABAB4CE.png" />
-<figcaption>10000000000000CD00000042FABAB4CE.png</figcaption>
-</figure>
+![10000000000000CD00000042FABAB4CE.png](/zk_component_ref/images/10000000000000CD00000042FABAB4CE.png)
 
 ``` xml
 <zk>
@@ -518,103 +419,26 @@ title="10000000000000CD00000042FABAB4CE.png" />
 </zk>
 ```
 
-# Troubleshooting with browser issues
-
-- There's an issue for Listbox/Grid in a window, please reference [Grid in window get a wrong display in
-  IE7/IE6](https://sourceforge.net/tracker/?func=detail&atid=785191&aid=3291179&group_id=152762%7C3291179)
-
 # Common Dialogs
 
 The XUL component set supports the following common dialogs to simplify
 some common tasks.
 
-- <a href="ZK_Component_Reference/Supporting_Classes/Messagebox"
-  class="wikilink" title="Messagebox">Messagebox</a>
-- <a href="ZK_Component_Reference/Essential_Components/Fileupload"
-  class="wikilink" title="Fileupload">Fileupload</a>
-- <a href="ZK_Component_Reference/Essential_Components/Filedownload"
-  class="wikilink" title="Filedownload">Filedownload</a>
+- [Messagebox](/zk_component_ref/messagebox)
+- [Fileupload](/zk_component_ref/fileupload)
+- [Filedownload](/zk_component_ref/filedownload)
 
 # Supported Events
 
-<table>
-<thead>
-<tr>
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><center>
-<p><code>onMove</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
-<p>Denotes the position of the window is moved by a user.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onOpen</code></p>
-</center></td>
-<td><p><strong>Event:</strong><javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc></p>
-<p>Denotes user has opened or closed a component.</p>
-<p><strong><code>Note:</code></strong></p>
-<p>Unlike <code>onClose</code>, this event is only a notification.
-The</p>
-<p>client sends this event after opening or closing the</p>
-<p>component.</p>
-<p>It is useful to implement load-on-demand by listening to</p>
-<p>the <code>onOpen</code> event, and creating components when the</p>
-<p>first time the component is opened.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onClose</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.Event</javadoc></p>
-<p>Denotes the close button is pressed by a user, and the</p>
-<p>component shall detach itself.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onMaximize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MaximizeEvent</javadoc></p>
-<p>Denotes user has maximize a component.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onMinimize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.MinimizeEvent</javadoc></p>
-<p>Denotes user has minimize a component.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onSize</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc></p>
-<p>Denotes the panel's size is updated by a user.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onZIndex</code></p>
-</center></td>
-<td><p><strong>Event:</strong>
-<javadoc>org.zkoss.zk.ui.event.ZIndexEvent</javadoc></p>
-<p>Denotes the panel's zindex is updated by a user.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|------|------------|
+| `onMove` | **Event:** <javadoc>org.zkoss.zk.ui.event.Event</javadoc><br><br>Denotes the position of the window is moved by a user. |
+| `onOpen` | **Event:** <javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc><br><br>Denotes user has opened or closed a component.<br><br>**Note:**<br>Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component.<br><br>It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| `onClose` | **Event:** <javadoc>org.zkoss.zk.ui.event.Event</javadoc><br><br>Denotes the close button is pressed by a user, and the component shall detach itself. |
+| `onMaximize` | **Event:** <javadoc>org.zkoss.zk.ui.event.MaximizeEvent</javadoc><br><br>Denotes user has maximize a component. |
+| `onMinimize` | **Event:** <javadoc>org.zkoss.zk.ui.event.MinimizeEvent</javadoc><br><br>Denotes user has minimize a component. |
+| `onSize` | **Event:** <javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc><br><br>Denotes the panel's size is updated by a user. |
+| `onZIndex` | **Event:** <javadoc>org.zkoss.zk.ui.event.ZIndexEvent</javadoc><br><br>Denotes the panel's zindex is updated by a user. |
 
 - [Inherited Supported Events](/zk_component_ref/xulelement#Supported_Events)
 
