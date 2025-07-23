@@ -88,7 +88,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_mix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/ZK85_Theme_Mix.png)
 
 ## Accessibility-ready themes
 

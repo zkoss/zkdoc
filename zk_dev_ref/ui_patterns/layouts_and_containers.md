@@ -190,9 +190,9 @@ For more detailed information, please refer to
 
 - Users are also allowed to use "cell" to control each cell's alignment.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span><span class="ot"> width=</span><span class="st">&quot;500px&quot;</span>&gt;</span>
+| Image                                                   | Code |
+|---------------------------------------------------------|------|
+| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span><span class="ot"> width=</span><span class="st">&quot;500px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Help&quot;</span>/&gt;</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
@@ -208,7 +208,7 @@ For more detailed information, please refer to
 <span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Cancel&quot;</span>/&gt;</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> align=</span><span class="st">&quot;stretch&quot;</span>&gt;</span>
+| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> align=</span><span class="st">&quot;stretch&quot;</span>&gt;</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Help&quot;</span>/&gt;</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>

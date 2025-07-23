@@ -14,7 +14,7 @@ Developers can retrieve the selected group using [`org.zkoss.zul.Tabbox#getSelec
 
 The example below demonstrates the usage of a Tabbox component with two sets of tabs and tab panels. The first Tabbox is displayed with two tabs while the second Tabbox is using the 'accordion' mold to display two tabs in an accordion style.
 
-![Tabbox Example](images/ZKComRef_Tabbox_Examples.png)
+![Tabbox Example](images/ZKComRef_Tabbox_Examples.PNG)
 ```xml
 <zk>
 	<tabbox width="400px">
