@@ -56,4 +56,4 @@ component.
 
 # Supported Children
 
-`*All`
+All

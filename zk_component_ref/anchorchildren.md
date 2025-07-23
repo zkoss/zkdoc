@@ -74,4 +74,4 @@ according to the size of the Anchorlayout.
 
 # Supported Children
 
-`*All`
+All

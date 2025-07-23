@@ -49,7 +49,7 @@ absolutely positioned within Absolutelayout component by either setting
 
 # Supported Children
 
-`*All`
+All
 
 
 
