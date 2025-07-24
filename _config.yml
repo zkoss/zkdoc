@@ -131,3 +131,4 @@ exclude:
   - tool/
   - "*.iml"
   - "*.code-workspace"
+  - README.md
