@@ -2,8 +2,8 @@
 
 - Demonstration:
   [Window](http://www.zkoss.org/zkdemo/window/positioning)
-- Java API: <javadoc>org.zkoss.zul.Window</javadoc>
-- JavaScript API: <javadoc directory="jsdoc">zul.wnd.Window</javadoc>
+- Java API: [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
+- JavaScript API: [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)
 
 # Employment/Purpose
 
@@ -12,7 +12,7 @@ components, a window has the following characteristics.
 
 - A window is an owner of [ID_Space](/zk_dev_ref/ui_composing/id_space). Any component
   contained in a window, including itself, could be found by use of
-  <javadoc method="getFellow(java.lang.String)">org.zkoss.zk.ui.Component</javadoc>,
+  [org.zkoss.zk.ui.Component#getFellow(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#getFellow(java.lang.String)),
   if it is assigned with an identifier.
 - A window could be overlapped, popup, and embedded.
 - A window could be a modal dialog.
@@ -41,7 +41,7 @@ A window could be in one of five different modes:
 - highlighted and
 
 You could change the mode by the use of
-<javadoc method="setMode(java.lang.String)">org.zkoss.zul.Window</javadoc>.
+[org.zkoss.zul.Window#setMode(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setMode(java.lang.String)).
 
 ``` xml
 <window title="Hi, I'm Overlapped" border="normal" mode="overlapped">
@@ -50,11 +50,11 @@ You could change the mode by the use of
 ```
 
 Alternatively, you could invoke one of
-<javadoc method="doOverlapped()">org.zkoss.zul.Window</javadoc>,
-<javadoc method="doPopup()">org.zkoss.zul.Window</javadoc>,
-<javadoc method="doModal()">org.zkoss.zul.Window</javadoc>,
-<javadoc method="doHighlighted()">org.zkoss.zul.Window</javadoc>, and
-<javadoc method="doEmbedded()">org.zkoss.zul.Window</javadoc>, as shown
+[org.zkoss.zul.Window#doOverlapped()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doOverlapped()),
+[org.zkoss.zul.Window#doPopup()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doPopup()),
+[org.zkoss.zul.Window#doModal()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doModal()),
+[org.zkoss.zul.Window#doHighlighted()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doHighlighted()), and
+[org.zkoss.zul.Window#doEmbedded()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doEmbedded()), as shown
 below.
 
 ``` xml
@@ -84,9 +84,9 @@ browser. It is the default mode since it is the most common appearance.
 
 An overlapped window is overlapped with other components, such that
 users could drag it around and developer could set its position by
-<javadoc method="setLeft(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setLeft(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setLeft(java.lang.String))
 and
-<javadoc method="setTop(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setTop(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setTop(java.lang.String))
 based on the entire scrollable area.
 
 ``` xml
@@ -115,7 +115,7 @@ typical application is to display information that won't obscure the
 current operation and are easy to close. A popup window is usually
 position around the focal point (such as a button). It can be done by
 use of
-<javadoc method="setPosition(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setPosition(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setPosition(java.lang.String))
 with `parent`.
 
 For example, we could display a popup window right after a button as
@@ -136,7 +136,7 @@ point and the window is posited based on it.
 
 In additions to popup windows, you could use [Popup](/zk_component_ref/popup) for displaying a popup. The
 popup component has more control how to position it (by the use of
-<javadoc method="open(org.zkoss.zk.ui.Component, java.lang.String)">org.zkoss.zul.Popup</javadoc>).
+[org.zkoss.zul.Popup#open(org.zkoss.zk.ui.Component, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html#open(org.zkoss.zk.ui.Component, java.lang.String))).
 
 ## Modal and Highlighted
 
@@ -163,18 +163,18 @@ only access the last modal window. Once the last modal is dismissed
 ### Dismiss
 
 To dismiss a modal window, you can make it invisible
-(<javadoc method="setVisible(boolean)">org.zkoss.zul.Window</javadoc>),
+([org.zkoss.zul.Window#setVisible(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setVisible(boolean))),
 or detach it from a page.
 
 ### Position
 
 By default, a modal window is positioned at the center of the viewport.
 You can change the position by
-<javadoc method="setPosition(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setPosition(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setPosition(java.lang.String))
 or
-<javadoc method="setLeft(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setLeft(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setLeft(java.lang.String))
 and
-<javadoc method="setTop(java.lang.String)">org.zkoss.zul.Window</javadoc>
+[org.zkoss.zul.Window#setTop(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setTop(java.lang.String))
 based on the current viewport.
 
 ### Enforce Gaining the Focus
@@ -189,8 +189,7 @@ prompt requiring user attention.
 
 ## Modal Windows and Event Processing Threads
 
-{% include Notice\|text=Event processing thread is disabled by default
-since 5.0. For the older version, it is enabled by default %} 
+{% include Notice.html text="Event processing thread is disabled by default since 5.0. For the older version, it is enabled by default" %} 
 By
 default, events are processed in the same thread that serves the HTTP
 request (so-called Servlet thread). However, you could configure ZK to
@@ -204,7 +203,7 @@ enable the event processing thread, please refer to [The_disable-event-thread_El
 
 Once the event thread is enabled, a modal window will behave differently
 from other modes:
-<javadoc method="doModal()">org.zkoss.zul.Window</javadoc> will suspend
+[org.zkoss.zul.Window#doModal()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#doModal()) will suspend
 the execution until dismissed (invisible, detached or mode changed). It
 is convenient to implement something that has to wait for user's further
 input.
@@ -225,7 +224,7 @@ g1()
 ## Border
 
 The `border` property
-(<javadoc method="setBorder(java.lang.String)">org.zkoss.zul.Window</javadoc>)
+([org.zkoss.zul.Window#setBorder(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setBorder(java.lang.String)))
 specifies whether to display a border for window. The default style
 sheets support only `normal` and `none`. The default value is `none`,
 i.e., no border.
@@ -233,7 +232,7 @@ i.e., no border.
 ## Closable
 
 By setting the `closable` property
-(<javadoc method="setClosable(boolean)">org.zkoss.zul.Window</javadoc>)
+([org.zkoss.zul.Window#setClosable(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setClosable(boolean)))
 to true, a close button is shown for the window, which enables a to
 close the window by clicking the button. Once the user clicks on the
 `close` button, an `onClose` event is sent to the window which is
@@ -256,9 +255,9 @@ choose to hide the window rather than close it.
 ```
 
 Notice that `event.stopPropagation()`
-(<javadoc method="stopPropagation()">org.zkoss.zk.ui.event.Event</javadoc>)
+([org.zkoss.zk.ui.event.Event#stopPropagation()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html#stopPropagation()))
 must be called to prevent the default onClose handler
-(<javadoc method="onClose()">org.zkoss.zul.Window</javadoc>) being
+([org.zkoss.zul.Window#onClose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#onClose())) being
 called.
 
 **Tip**: If the window is a popup, the `onOpen` event will be sent to
@@ -277,7 +276,7 @@ cannot prevent it from hiding or changing the behavior to be detached.
 
 You can customize the look and feel of window's content block by
 specifying the `contentStyle` property
-(<javadoc method="setContentStyle(java.lang.String)">org.zkoss.zul.Window</javadoc>).
+([org.zkoss.zul.Window#setContentStyle(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html#setContentStyle(java.lang.String))).
 
 ![10000000000000CB0000003292CB8174.png](/zk_component_ref/images/10000000000000CB0000003292CB8174.png)
 
@@ -432,13 +431,13 @@ some common tasks.
 
 | Name | Event Type |
 |------|------------|
-| `onMove` | **Event:** <javadoc>org.zkoss.zk.ui.event.Event</javadoc><br><br>Denotes the position of the window is moved by a user. |
-| `onOpen` | **Event:** <javadoc>org.zkoss.zk.ui.event.OpenEvent</javadoc><br><br>Denotes user has opened or closed a component.<br><br>**Note:**<br>Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component.<br><br>It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
-| `onClose` | **Event:** <javadoc>org.zkoss.zk.ui.event.Event</javadoc><br><br>Denotes the close button is pressed by a user, and the component shall detach itself. |
-| `onMaximize` | **Event:** <javadoc>org.zkoss.zk.ui.event.MaximizeEvent</javadoc><br><br>Denotes user has maximize a component. |
-| `onMinimize` | **Event:** <javadoc>org.zkoss.zk.ui.event.MinimizeEvent</javadoc><br><br>Denotes user has minimize a component. |
-| `onSize` | **Event:** <javadoc>org.zkoss.zk.ui.event.SizeEvent</javadoc><br><br>Denotes the panel's size is updated by a user. |
-| `onZIndex` | **Event:** <javadoc>org.zkoss.zk.ui.event.ZIndexEvent</javadoc><br><br>Denotes the panel's zindex is updated by a user. |
+| `onMove` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)<br><br>Denotes the position of the window is moved by a user. |
+| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)<br><br>Denotes user has opened or closed a component.<br><br>**Note:**<br>Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component.<br><br>It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| `onClose` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)<br><br>Denotes the close button is pressed by a user, and the component shall detach itself. |
+| `onMaximize` | **Event:** [org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)<br><br>Denotes user has maximize a component. |
+| `onMinimize` | **Event:** [org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)<br><br>Denotes user has minimize a component. |
+| `onSize` | **Event:** [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)<br><br>Denotes the panel's size is updated by a user. |
+| `onZIndex` | **Event:** [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)<br><br>Denotes the panel's zindex is updated by a user. |
 
 - [Inherited Supported Events](/zk_component_ref/xulelement#Supported_Events)
 
