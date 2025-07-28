@@ -73,9 +73,9 @@ function addEditionComments() {
         const pattern = /{% include edition-availability\.html edition="(ce|pe|ee)"( inline=true)? %}/g;
         
         // Replace each match with commented version
-        content = content.replace(pattern, (match, edition, inline) => {
-            // Check if comment already exists before this include
-            const beforeMatch = content.substring(0, content.indexOf(match));
+        content = content.replace(pattern, (match, edition, inline, offset) => {
+            // Check if comment already exists before this specific match (using correct offset)
+            const beforeMatch = content.substring(0, offset);
             const commentPattern = new RegExp(`<!--REQUIRED ZK EDITION: ${editionMapping[edition]} -->\\s*$`);
             
             if (!commentPattern.test(beforeMatch)) {
