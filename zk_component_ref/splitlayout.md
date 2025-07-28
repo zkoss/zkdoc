@@ -7,7 +7,8 @@
 - Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
 - JavaScript API:
   [zkmax.layout.Splitlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Splitlayout.html)
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

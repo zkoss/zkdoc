@@ -7,6 +7,7 @@
 - JavaScript API: [zul.wgt.Chart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Chart.html)
 
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose

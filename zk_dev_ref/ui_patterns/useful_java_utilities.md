@@ -194,6 +194,7 @@ Notification.show(msg, component); // display a notification box pointing to a c
 
 # Toast
 
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
 
 [org.zkoss.zkmax.ui.util.Toast](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Toast.html)
@@ -248,6 +249,7 @@ is provided.
 
 # Loadingbar
 
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
 
 [org.zkoss.zkmax.ui.util.Loadingbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Loadingbar.html)

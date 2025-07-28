@@ -1,5 +1,6 @@
  {% include
-version-badge.html version=9.5.0 %} {% include edition-availability.html edition="pe" %} {% include
+version-badge.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %} {% include
 ZKComponentReferenceAccessibilityNamingReference.md %}
 
 Cardlayout is often used along with other components to achieve the

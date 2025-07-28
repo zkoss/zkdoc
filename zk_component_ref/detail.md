@@ -6,7 +6,8 @@
 - Java API: [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)
 - JavaScript API: [zkex.grid.Detail](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Detail.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

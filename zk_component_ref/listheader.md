@@ -85,7 +85,8 @@ cells under a column.</p></td>
 <p>`onUngroup`</p>
 </center></td>
 <td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) {% include edition-availability.html edition="pe" %}
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %} Denotes user has ungrouped all the
 cells under a column.</p></td>
 </tr>

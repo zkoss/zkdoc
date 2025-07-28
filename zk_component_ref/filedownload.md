@@ -38,6 +38,7 @@ local file system to save the file.
 
 # The Resumable Download
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 In certain situations, you might prefer to generate an URL that can be

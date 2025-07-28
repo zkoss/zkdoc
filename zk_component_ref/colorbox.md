@@ -8,6 +8,7 @@
 - JavaScript API: [zkex.inp.Colorbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.inp.Colorbox.html)
 
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose

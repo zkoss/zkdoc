@@ -6,7 +6,8 @@
 - JavaScript API:
   [zkmax.layout.RowLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.RowLayout.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

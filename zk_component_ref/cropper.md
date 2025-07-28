@@ -6,7 +6,8 @@
 
 - Java API: [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)
 - JavaScript API: [zkmax.med.Cropper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Cropper.html)
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Browser Support
 

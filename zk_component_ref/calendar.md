@@ -66,7 +66,8 @@ customize the appearance of days on ZK's Calendar. For example,
 
 # Show Week Number
 
-Calendar supports to show a week number of the year. {% include edition-availability.html edition="pe" %}
+Calendar supports to show a week number of the year. <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %}
 
 ![](/zk_component_ref/images/ZKComRef_Calendar_Week_Of_Year.PNG)

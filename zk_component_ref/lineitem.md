@@ -5,6 +5,7 @@
 - Java API: [org.zkoss.zkmax.zul.Lineitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Lineitem.html)
 - JavaScript API: [zkmax.layout.Lineitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Lineitem.html)
 
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 {% include version-badge.html version=9.0.0 %}

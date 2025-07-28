@@ -5,6 +5,7 @@
 - Java API: [org.zkoss.zkmax.zul.Organigram](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html)
 - JavaScript API: [zkmax.layout.Organigram](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Organigram.html)
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include version-badge.html version=8.6.0 %}
 
 # Employment/Purpose

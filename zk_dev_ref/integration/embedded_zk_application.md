@@ -5,6 +5,7 @@ web container. Hence, you can embed a ZK application in a web
 application based on NodeJs, Python, etc.
 
 {% include version-badge.html version=9.1.0 %}
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 # Prerequisite
 

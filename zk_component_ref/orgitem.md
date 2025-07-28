@@ -5,7 +5,8 @@
 - Java API: [org.zkoss.zkmax.zul.Orgitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html)
 - JavaScript API: [zkmax.layout.Orgitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgitem.html)
 
-`{% include edition-availability.html edition="ee" %}`
+`<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}`
 
 {% include version-badge.html version=8.6.0 %}
 

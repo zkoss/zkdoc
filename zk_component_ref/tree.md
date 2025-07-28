@@ -346,6 +346,7 @@ will throw a IllegalArgumentException.
 
 ### DefaultTristateTreeModel
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} If you don't want to implement yourself, there's a
 default tristate tree model is provided in ZK EE, let's take a look at a
 simple demonstration.

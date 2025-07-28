@@ -7,7 +7,8 @@
 - JavaScript API:
   [zkmax.layout.Cardlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Cardlayout.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

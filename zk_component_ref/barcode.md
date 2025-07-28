@@ -7,7 +7,8 @@
 - Java API: [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html)
 - JavaScript API:
   [zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barcode.Barcode.html)
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

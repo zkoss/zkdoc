@@ -1,5 +1,6 @@
 ## Caption
 
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %} {% include version-badge.html version=6.5.0 %}
 
 A layout region may have a caption, which is specified by declaring a

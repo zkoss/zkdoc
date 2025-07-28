@@ -2,7 +2,8 @@
 
 # Tbeditor
 
-{% include version-badge.html version=8.0.0 %} {% include edition-availability.html edition="pe" %}
+{% include version-badge.html version=8.0.0 %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 - Java API:
   [Tbeditor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tbeditor.html)

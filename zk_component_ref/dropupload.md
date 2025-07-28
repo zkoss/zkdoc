@@ -8,6 +8,7 @@
   [zkmax.wgt.Dropupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Dropupload.html)
 
 
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose

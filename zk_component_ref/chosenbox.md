@@ -7,7 +7,8 @@
 - JavaScript API:
   [zkmax.inp.Chosenbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Chosenbox.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

@@ -12,6 +12,7 @@ the smalltalk [Small Talks/2023/May/Creating and deploying ZK Apps with Quarkus]
 ## Websockets
 
 {% include version-badge.html version=10.1.0 %}
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 Starting from ZK 10.1.0, ZK provides a plugin to support

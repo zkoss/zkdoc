@@ -8,7 +8,8 @@
 - JavaScript API:
   [Nav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Nav.html)
 - Style Guide:
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

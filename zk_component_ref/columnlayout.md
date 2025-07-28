@@ -8,7 +8,8 @@
 - JavaScript API:
   [zkex.layout.Columnlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnlayout.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

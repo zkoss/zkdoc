@@ -2,7 +2,8 @@
 
 # GoldenLayout
 
-{% include version-badge.html version=8.6.0 %} {% include edition-availability.html edition="pe" %}
+{% include version-badge.html version=8.6.0 %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 - Java API: [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
 - JavaScript API:

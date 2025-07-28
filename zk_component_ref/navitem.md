@@ -8,7 +8,8 @@
 - JavaScript API:
   [Navitem](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navitem.html)
 - Style Guide:
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

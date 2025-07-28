@@ -1,6 +1,7 @@
 **Property:**
 
 `org.zkoss.bind.jsonBindingParamConverter.class`
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 {% include version-badge.html version="8.0.0" %} `Default: org.zkoss.zkmax.bind.JacksonConverter` [org.zkoss.zkmax.bind.JacksonConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/bind/JacksonConverter.html)

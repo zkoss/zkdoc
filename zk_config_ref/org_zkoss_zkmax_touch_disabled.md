@@ -7,6 +7,7 @@
 Default:  `false`
 
 {% include version-badge.html version=9.6.0 %}
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 It specifies whether to disable the handling of touch events.

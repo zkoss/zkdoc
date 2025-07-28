@@ -7,7 +7,8 @@
 - JavaScript API:
   [zkex.sel.Listgroup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroup.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 

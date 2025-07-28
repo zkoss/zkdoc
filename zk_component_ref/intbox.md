@@ -74,6 +74,7 @@ Notes:
 
 ### min & max constraint
 {% include version-badge.html version=10.2.0 %}
+<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 ```xml

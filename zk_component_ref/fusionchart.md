@@ -7,7 +7,8 @@
 - JavaScript API:
   [zkmax.fusionchartz.Fusionchart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.fusionchartz.Fusionchart.html)
 
-- {% include edition-availability.html edition="pe" %}
+- <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
 - ZK Fushionchart has now entered maintenance mode as of Q2, 2014 as the
   3rd party library that it's based on - Fusioncharts free, has moved
   out of flash and stopped supporting it.
