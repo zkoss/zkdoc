@@ -20,25 +20,26 @@ and light-weighted layout components that arrange their children to be
 displayed horizontally and vertically respectively. Also, they are
 easily customizable as they are made up of HTML DIVs.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout.png) | ```xml
+![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout.png)
+```xml
 <hlayout>
   <div width="100px" height="50px" style="background:blue">1</div>
   <div width="80px" height="70px" style="background:yellow">2</div>
 </hlayout>
-``` |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout.png) | ```xml
+``` 
+
+![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout.png)
+```xml
 <vlayout>
   <div width="100px" height="50px" style="background:blue">1</div>
   <div width="80px" height="70px" style="background:yellow">2</div>
 </vlayout>
-``` |
+``` 
 
 
 ### Scrolling
 
-- To make Hlayout and Vlayout scrollable, specify "overflow:auto;" to
+- To make Hlayout and Vlayout scrollable, specify `overflow:auto;` at
   "style" .
 - The height of Hlayout and Vlayout depends on the size of their
   children, therefore, in order to keep the height of Hlayout and
@@ -46,29 +47,29 @@ easily customizable as they are made up of HTML DIVs.
   to Hlayout and Vlayout or place them into a fixed height container,
   EX: "\<window height="100px"...".
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png) | ```xml
+![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png) 
+```xml
 <hlayout width="100px" height="100px" style="border:1px solid black;overflow:auto;">
     <div width="40px" height="150px" style="background:blue;color:white;">1</div>
     <div width="40px" height="150px" style="background:yellow;">2</div>
 </hlayout>
-``` |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png) | ```xml
+```
+
+![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png) 
+```xml
 <vlayout width="100px" height="100px" style="border:1px solid black;overflow:auto;">
     <div width="80px" height="80px" style="background:blue;color:white;">1</div>
     <div width="80px" height="80px" style="background:yellow;">2</div>
 </vlayout>
-``` |
+```
 
 
 ### Alignment
 
 Users are allowed to change sclass to control alignment.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_alignment.png) | ```xml
+![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_alignment.png)
+```xml
 <zk>
     <hlayout sclass="z-valign-top">
         <label value="Text:"/>
@@ -88,7 +89,7 @@ Users are allowed to change sclass to control alignment.
         <window width="50px" height="50px" title="win" border="normal"/>
     </hlayout>
 </zk>
-``` |
+```
 
 
 ## Hbox and Vbox
@@ -108,18 +109,22 @@ like to use them a lot in a UI, unless you need the features that only
 [Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
 [Vbox]({{site.baseurl}}/zk_component_ref/vbox) support.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">splitter</span><span class="ot"> collapse=</span><span class="st">&quot;before&quot;</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span>&gt;</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;50px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">splitter</span><span class="ot"> collapse=</span><span class="st">&quot;after&quot;</span>/&gt;</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;70px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrHbox.png)
+```xml
+<hbox>
+  <div width="100px" height="50px" style="background:blue">1</div>
+  <splitter collapse="before"/>
+  <div width="80px" height="70px" style="background:yellow">2</div>
+</hbox>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrVbox.png)
+```xml
+<vbox>
+  <div width="100px" height="50px" style="background:blue">1</div>
+  <splitter collapse="after"/>
+  <div width="80px" height="70px" style="background:yellow">2</div>
+</vbox>
+```
 
 
 ### Scrolling
@@ -128,60 +133,74 @@ like to use them a lot in a UI, unless you need the features that only
   able to show scroll bars. Hence, to achieve this, users will need to
   place them in a scrolling container.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;40px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">vbox</span>&gt;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:blue;color:white;&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:yellow;&quot;</span>&gt;2&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png)
+```xml
+<div width="100px" height="100px" style="border:1px solid black;overflow:auto;">
+    <hbox>
+        <div width="40px" height="150px" style="background:blue;color:white;">1</div>
+        <div width="40px" height="150px" style="background:yellow;">2</div>
+    </hbox>
+</div>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png)
+```xml
+<div width="100px" height="100px" style="border:1px solid black;overflow:auto;">
+    <vbox>
+        <div width="80px" height="80px" style="background:blue;color:white;">1</div>
+        <div width="80px" height="80px" style="background:yellow;">2</div>
+    </vbox>
+</div>
+```
 
 
 ### Alignment
 
 - Users are also allowed to specify align and pack to control alignment.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_align.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Hbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;align: center&quot;</span> /&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hbox</span><span class="ot">  height=</span><span class="st">&quot;100%&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        align=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_pack.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Hbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;pack: center&quot;</span> /&gt;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hbox</span><span class="ot">  height=</span><span class="st">&quot;100%&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span> </span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        pack=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_align.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Vbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;align: center&quot;</span> /&gt;</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">vbox</span><span class="ot">  height=</span><span class="st">&quot;100%&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span> </span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        align=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_pack.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;Vbox&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;pack: center&quot;</span> /&gt;</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">vbox</span><span class="ot">  height=</span><span class="st">&quot;100%&quot;</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span> </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="ot">        pack=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;1&quot;</span> /&gt;</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;2&quot;</span> /&gt;</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">vbox</span>&gt;</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_align.png)
+```xml
+<window title="Hbox" border="normal" width="150px" height="100px">
+    <caption label="align: center" />
+    <hbox  height="100%" style="border:1px solid black;"
+        align="center">
+        <button label="1" />
+        <button label="2" />
+    </hbox>
+</window>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_pack.png)
+```xml
+<window title="Hbox" border="normal" width="150px" height="100px">
+    <caption label="pack: center" />
+    <hbox  height="100%" style="border:1px solid black;" 
+        pack="center">
+        <button label="1" />
+        <button label="2" />
+    </hbox>
+</window>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_align.png)
+```xml
+<window title="Vbox" border="normal" width="150px" height="150px">
+    <caption label="align: center" />
+    <vbox  height="100%" style="border:1px solid black;" 
+        align="center">
+        <button label="1" />
+        <button label="2" />
+    </vbox>
+</window>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_pack.png)
+```xml
+<window title="Vbox" border="normal" width="150px" height="150px">
+    <caption label="pack: center" />
+    <vbox  height="100%" style="border:1px solid black;" 
+        pack="center">
+        <button label="1" />
+        <button label="2" />
+    </vbox>
+</window>
+```
 
 
 For more detailed information, please refer to
@@ -190,40 +209,44 @@ For more detailed information, please refer to
 
 - Users are also allowed to use "cell" to control each cell's alignment.
 
-| Image                                                   | Code |
-|---------------------------------------------------------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hbox</span><span class="ot"> width=</span><span class="st">&quot;500px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Help&quot;</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        hflex=</span><span class="st">&quot;6&quot;</span><span class="ot"> align=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Add&quot;</span>/&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Reomve&quot;</span>/&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Update&quot;</span>/&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ot">        hflex=</span><span class="st">&quot;4&quot;</span><span class="ot"> align=</span><span class="st">&quot;right&quot;</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;OK&quot;</span>/&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Cancel&quot;</span>/&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">hbox</span>&gt;</span>`</pre></div> |
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vbox</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> align=</span><span class="st">&quot;stretch&quot;</span>&gt;</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span>&gt;</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Help&quot;</span>/&gt;</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ot">        align=</span><span class="st">&quot;center&quot;</span>&gt;</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Add&quot;</span>/&gt;</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Reomve&quot;</span>/&gt;</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Update&quot;</span>/&gt;</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">cell</span><span class="ot"> style=</span><span class="st">&quot;border:1px solid black;&quot;</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ot">        align=</span><span class="st">&quot;right&quot;</span>&gt;</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;OK&quot;</span>/&gt;</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Cancel&quot;</span>/&gt;</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">cell</span>&gt;</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">vbox</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png)
+```xml
+<hbox width="500px">
+    <cell style="border:1px solid black;">
+        <button label="Help"/>
+    </cell>
+    <cell style="border:1px solid black;"
+        hflex="6" align="center">
+        <button label="Add"/>
+        <button label="Reomve"/>
+        <button label="Update"/>
+    </cell>
+    <cell style="border:1px solid black;"
+        hflex="4" align="right">
+        <button label="OK"/>
+        <button label="Cancel"/>
+    </cell>
+</hbox>
+```
+![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png)
+```xml
+<vbox width="300px" align="stretch">
+    <cell style="border:1px solid black;">
+        <button label="Help"/>
+    </cell>
+    <cell style="border:1px solid black;"
+        align="center">
+        <button label="Add"/>
+        <button label="Reomve"/>
+        <button label="Update"/>
+    </cell>
+    <cell style="border:1px solid black;"
+        align="right">
+        <button label="OK"/>
+        <button label="Cancel"/>
+    </cell>
+</vbox>
+```
 
 
 ## Borderlayout
@@ -234,25 +257,26 @@ West and Center. The heights of North and South are first decided, the
 remaining space is then given to Center as its height. Note that East
 and West also take on the height of Center.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#008db7;color:white;&quot;</span>&gt;N&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">north</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">south</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#112f37;color:white;&quot;</span>&gt;S&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">south</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">center</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span>&gt;C&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">center</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">east</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;E&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">east</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout.png)
+```xml
+<borderlayout width="100px" height="100px">
+    <north>
+        <div style="background:#008db7;color:white;">N</div>
+    </north>
+    <south>
+        <div style="background:#112f37;color:white;">S</div>
+    </south>
+    <center>
+        <div>C</div>
+    </center>
+    <east>
+        <div style="background:#f2f2f2;">E</div>
+    </east>
+    <west>
+        <div style="background:#f2f2f2;">W</div>
+    </west>
+</borderlayout>
+```
 
 
 ### flex
@@ -264,25 +288,26 @@ layout region does not take up all of layout region's space. In order
 for the child to occupy the whole area, please set vflex="1" to the
 child component.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_flex.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#008db7;color:white;&quot;</span>&gt;N&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">north</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">south</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background:#112f37;color:white;&quot;</span>&gt;S&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">south</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">center</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span>&gt;C&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">center</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">east</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;E&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">east</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_flex.png)
+```xml
+<borderlayout width="100px" height="100px">
+    <north>
+        <div style="background:#008db7;color:white;">N</div>
+    </north>
+    <south>
+        <div style="background:#112f37;color:white;">S</div>
+    </south>
+    <center>
+        <div>C</div>
+    </center>
+    <east>
+        <div vflex="1" style="background:#f2f2f2;">E</div>
+    </east>
+    <west>
+        <div vflex="1" style="background:#f2f2f2;">W</div>
+    </west>
+</borderlayout>
+```
 
 
 ### Scrolling
@@ -294,25 +319,26 @@ child component.
   this, specify autoscroll="true" to Center in order to assign Center to
   handle the scrolling.
 
-| Image | Code |
-|-------|------|
-| ![](/zk_dev_ref/images/DrBorderlayout_Center_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> height=</span><span class="st">&quot;300px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot">  style=</span><span class="st">&quot;background:#008db7;color:white;&quot;</span>&gt;N&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">north</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">south</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot">  style=</span><span class="st">&quot;background:#112f37;color:white;&quot;</span>&gt;S&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">south</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">center</span><span class="ot"> autoscroll=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;200px&quot;</span>&gt;C&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">center</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">east</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;30px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;E&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">east</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;20px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div> |
+![](/zk_dev_ref/images/DrBorderlayout_Center_scrolling.png)
+```xml
+<borderlayout width="300px" height="300px">
+    <north>
+        <div height="100px"  style="background:#008db7;color:white;">N</div>
+    </north>
+    <south>
+        <div height="100px"  style="background:#112f37;color:white;">S</div>
+    </south>
+    <center autoscroll="true">
+        <div height="200px">C</div>
+    </center>
+    <east flex="true">
+        <div width="30px" style="background:#f2f2f2;">E</div>
+    </east>
+    <west flex="true">
+        <div width="20px" style="background:#f2f2f2;">W</div>
+    </west>
+</borderlayout>
+```
 
 
 ### Grown by children
@@ -322,25 +348,26 @@ child component.
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_grow.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">borderlayout</span><span class="ot"> width=</span><span class="st">&quot;300px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">north</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot">  style=</span><span class="st">&quot;background:#008db7;color:white;&quot;</span>&gt;N&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">north</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">south</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot">  style=</span><span class="st">&quot;background:#112f37;color:white;&quot;</span>&gt;S&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">south</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">center</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;200px&quot;</span>&gt;C&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">center</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">east</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;30px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;E&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">east</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">west</span><span class="ot"> flex=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">div</span><span class="ot"> width=</span><span class="st">&quot;20px&quot;</span><span class="ot"> style=</span><span class="st">&quot;background:#f2f2f2;&quot;</span>&gt;W&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">west</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">borderlayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_grow.png)
+```xml
+<borderlayout width="300px" vflex="min">
+    <north vflex="min">
+        <div height="100px"  style="background:#008db7;color:white;">N</div>
+    </north>
+    <south vflex="min">
+        <div height="100px"  style="background:#112f37;color:white;">S</div>
+    </south>
+    <center vflex="min">
+        <div height="200px">C</div>
+    </center>
+    <east flex="true">
+        <div width="30px" style="background:#f2f2f2;">E</div>
+    </east>
+    <west flex="true">
+        <div width="20px" style="background:#f2f2f2;">W</div>
+    </west>
+</borderlayout>
+```
 
 
 ### Borderlayout in a container
@@ -416,23 +443,24 @@ different locations at will (although of course, developers are allowed
 to use the ZK application to re-arrange the order of children
 components).
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drcolumnlayout.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">columnlayout</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">columnchildren</span><span class="ot"> width=</span><span class="st">&quot;30%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span><span class="ot"> title=</span><span class="st">&quot;1&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> maximizable=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;1&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span><span class="ot"> title=</span><span class="st">&quot;2&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> closable=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;2&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">columnchildren</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">columnchildren</span><span class="ot"> width=</span><span class="st">&quot;70%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> title=</span><span class="st">&quot;3&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> collapsible=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;3&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">columnchildren</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">columnlayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drcolumnlayout.png)
+```xml
+<columnlayout>
+  <columnchildren width="30%" style="padding: 5px 1px">
+    <panel height="60px" title="1" border="normal" maximizable="true">
+      <panelchildren>1</panelchildren>
+    </panel>
+    <panel height="80px" title="2" border="normal" closable="true">
+      <panelchildren>2</panelchildren>
+    </panel>
+  </columnchildren>
+  <columnchildren width="70%" style="padding: 5px 1px">
+    <panel height="100px" title="3" border="normal" collapsible="true">
+      <panelchildren>3</panelchildren>
+    </panel>
+  </columnchildren>
+</columnlayout>
+```
 
 
 ## Portallayout
@@ -443,26 +471,27 @@ allow any number of child components to be placed vertically with
 different heights (but with the same widths). Users are also allowed to
 move any of them to any area desired like that of a portal.
 
-| Image                                                      | Code |
-|------------------------------------------------------------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrPortallayout.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">portallayout</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">portalchildren</span><span class="ot"> width=</span><span class="st">&quot;40%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span><span class="ot"> title=</span><span class="st">&quot;1&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> maximizable=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;1&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;90px&quot;</span><span class="ot"> title=</span><span class="st">&quot;2&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> closable=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;2&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">portalchildren</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">portalchildren</span><span class="ot"> width=</span><span class="st">&quot;60%&quot;</span><span class="ot"> style=</span><span class="st">&quot;padding: 5px 1px&quot;</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> title=</span><span class="st">&quot;3&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> collapsible=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;3&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> height=</span><span class="st">&quot;55px&quot;</span><span class="ot"> title=</span><span class="st">&quot;4&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> closable=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;4&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">portalchildren</span>&gt;</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">portallayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrPortallayout.png)
+```xml
+<portallayout>
+  <portalchildren width="40%" style="padding: 5px 1px">
+    <panel height="60px" title="1" border="normal" maximizable="true">
+      <panelchildren>1</panelchildren>
+    </panel>
+    <panel height="90px" title="2" border="normal" closable="true">
+      <panelchildren>2</panelchildren>
+    </panel>
+  </portalchildren>
+  <portalchildren width="60%" style="padding: 5px 1px">
+    <panel height="100px" title="3" border="normal" collapsible="true">
+      <panelchildren>3</panelchildren>
+    </panel>
+    <panel height="55px" title="4" border="normal" closable="true">
+      <panelchildren>4</panelchildren>
+    </panel>
+  </portalchildren>
+</portallayout>
+```
 
 
 ## Tablelayout
@@ -471,34 +500,35 @@ move any of them to any area desired like that of a portal.
 places its child components in a table. Ths implementation is based on
 an HTML TABLE tag.
 
-| Image                                                     | Code |
-|-----------------------------------------------------------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrTablelayout.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tablelayout</span><span class="ot"> columns=</span><span class="st">&quot;2&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;1&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ot">      collapsible=</span><span class="st">&quot;true&quot;</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;1&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;2&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ot">      collapsible=</span><span class="st">&quot;true&quot;</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;2&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;3&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ot">      collapsible=</span><span class="st">&quot;true&quot;</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;3&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;4&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ot">      collapsible=</span><span class="st">&quot;true&quot;</span><span class="ot"> width=</span><span class="st">&quot;80px&quot;</span><span class="ot"> height=</span><span class="st">&quot;60px&quot;</span>&gt;</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">panelchildren</span>&gt;4&lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panel</span>&gt;</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tablechildren</span>&gt;</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tablelayout</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrTablelayout.png)
+```xml
+<tablelayout columns="2">
+  <tablechildren>
+    <panel title="1" border="normal"
+      collapsible="true" width="80px" height="60px">
+      <panelchildren>1</panelchildren>
+    </panel>
+  </tablechildren>
+  <tablechildren>
+    <panel title="2" border="normal"
+      collapsible="true" width="80px" height="60px">
+      <panelchildren>2</panelchildren>
+    </panel>
+  </tablechildren>
+  <tablechildren>
+    <panel title="3" border="normal"
+      collapsible="true" width="80px" height="60px">
+      <panelchildren>3</panelchildren>
+    </panel>
+  </tablechildren>
+  <tablechildren>
+    <panel title="4" border="normal"
+      collapsible="true" width="80px" height="60px">
+      <panelchildren>4</panelchildren>
+    </panel>
+  </tablechildren>
+</tablelayout>
+```
 
 
 # Containers
@@ -518,16 +548,17 @@ sibling won't be on the same line (horizontal position). On the other
 hand, span is an *inline* element which would place the child component
 and its siblings on the same line (horizontal position).
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drdivspan.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;border: 1px solid blue&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  this is</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">span</span>&gt;inlined with &lt;<span class="kw">button</span><span class="ot"> label=</span><span class="st">&quot;Hi&quot;</span>/&gt;&lt;/<span class="kw">span</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;border: 1px solid grey&quot;</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span>&gt;div is a block&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">datebox</span>/&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drdivspan.png)
+```xml
+<div style="border: 1px solid blue" width="150px">
+  this is
+  <span>inlined with <button label="Hi"/></span>
+</div>
+<div style="border: 1px solid grey">
+    <div>div is a block</div>
+    <datebox/>
+</div>
+```
 
 
 ### Scrolling
@@ -543,20 +574,21 @@ Div:
   order to keep the height of Div constant for the scroll bar to appear,
   specify a fixed height to Div.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drdiv_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">div</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    style=</span><span class="st">&quot;border:1px solid black;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">grid</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">rows</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">div</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drdiv_scrolling.png)
+```xml
+<div height="100px" width="100px" 
+    style="border:1px solid black;overflow:auto;">
+    <grid>
+        <rows>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+        </rows>
+    </grid>
+</div>
+```
 
 
 ## Window
@@ -568,13 +600,14 @@ closable, sizable, and many other features. Window is also the owner of
 that each child component and its IDs are in one independent window so
 as to avoid the IDs of child components conflicting with one another.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrWindow.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;A&quot;</span><span class="ot"> closable=</span><span class="st">&quot;true&quot;</span><span class="ot"> sizable=</span><span class="st">&quot;true&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span><span class="ot"> mode=</span><span class="st">&quot;overlapped&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">combobox</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrWindow.png)
+```xml
+<window title="A" closable="true" sizable="true"
+ border="normal" mode="overlapped">
+   <div style="background: yellow">1</div>
+   <combobox/>
+</window>
+```
 
 
 ### Scrolling
@@ -585,21 +618,22 @@ as to avoid the IDs of child components conflicting with one another.
   therefore, in order to keep the height of Window constant for the
   scroll bar to appear, specify a fixed height to Window.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrWindow_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">window</span><span class="ot"> title=</span><span class="st">&quot;window&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ot">    contentStyle=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">grid</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">rows</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">window</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrWindow_scrolling.png)
+```xml
+<window title="window" border="normal" 
+    height="150px" width="150px"
+    contentStyle="overflow:auto;">
+    <grid>
+        <rows>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+            <row>item</row>
+        </rows>
+    </grid>
+</window>
+```
 
 
 ## Panel
@@ -612,15 +646,16 @@ many other features. However,
 implemented by this component, therefore, all of its children belong to
 the same ID space of its parent.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;A&quot;</span><span class="ot"> framable=</span><span class="st">&quot;true&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot"> maximizable=</span><span class="st">&quot;true&quot;</span><span class="ot"> collapsible=</span><span class="st">&quot;true&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>   &lt;<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">div</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;1&lt;/<span class="kw">div</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      &lt;<span class="kw">combobox</span>/&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>   &lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png)
+```xml
+<panel title="A" framable="true" border="normal"
+ maximizable="true" collapsible="true">
+   <panelchildren>
+      <div style="background: yellow">1</div>
+      <combobox/>
+   </panelchildren>
+</panel>
+```
 
 
 ### Scrolling
@@ -631,22 +666,23 @@ the same ID space of its parent.
   therefore, in order to keep the height of the Panel constant for the
   scroll bar to appear, specify a fixed height to Panel.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrPanel_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">panel</span><span class="ot"> title=</span><span class="st">&quot;panel&quot;</span><span class="ot"> border=</span><span class="st">&quot;normal&quot;</span> </span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">panelchildren</span><span class="ot"> style=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">grid</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">rows</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">row</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">rows</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">panelchildren</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">panel</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrPanel_scrolling.png)
+```xml
+<panel title="panel" border="normal" 
+    height="150px" width="150px">
+    <panelchildren style="overflow:auto;">
+        <grid>
+            <rows>
+                <row>item</row>
+                <row>item</row>
+                <row>item</row>
+                <row>item</row>
+                <row>item</row>
+            </rows>
+        </grid>
+    </panelchildren>
+</panel>
+```
 
 
 ## Groupbox
@@ -658,16 +694,17 @@ light-weighted way to group child components together. It supports
 Panel, [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is
 not implemented by this component either.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/drgroupbox3d.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">groupbox</span><span class="ot"> mold=</span><span class="st">&quot;3d&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;Fruits&quot;</span>/&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">radiogroup</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">radio</span><span class="ot"> label=</span><span class="st">&quot;Apple&quot;</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">radio</span><span class="ot"> label=</span><span class="st">&quot;Orange&quot;</span>/&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">radio</span><span class="ot"> label=</span><span class="st">&quot;Banana&quot;</span>/&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">radiogroup</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/drgroupbox3d.png)
+```xml
+<groupbox mold="3d">
+  <caption label="Fruits"/>
+  <radiogroup>
+    <radio label="Apple"/>
+    <radio label="Orange"/>
+    <radio label="Banana"/>
+  </radiogroup>
+</groupbox>
+```
 
 
 ### Scrolling
@@ -680,17 +717,18 @@ not implemented by this component either.
   therefore, in order to keep the height of the Groupbox constant for
   the scroll bar to appear, specify a fixed height to Groupbox.
 
-| Image | Code |
-|-------|------|
-| ![](/zk_dev_ref/images/DrGroupbox3d_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">groupbox</span><span class="ot"> mold=</span><span class="st">&quot;3d&quot;</span><span class="ot"> height=</span><span class="st">&quot;150px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ot">    contentStyle=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">caption</span><span class="ot"> label=</span><span class="st">&quot;3d groupbox&quot;</span> /&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">grid</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">rows</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">row</span><span class="ot"> forEach=</span><span class="st">&quot;1,2,3,4,5,6&quot;</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">rows</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">groupbox</span>&gt;</span>`</pre></div> |
+![](/zk_dev_ref/images/DrGroupbox3d_scrolling.png)
+```xml
+<groupbox mold="3d" height="150px" width="150px"
+    contentStyle="overflow:auto;">
+    <caption label="3d groupbox" />
+    <grid>
+        <rows>
+            <row forEach="1,2,3,4,5,6">item</row>
+        </rows>
+    </grid>
+</groupbox>
+```
 
 
 ## Tabbox
@@ -702,18 +740,19 @@ switch between each tab group by a simple click.
 [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is not
 implemented by this component either.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tabbox</span><span class="ot"> height=</span><span class="st">&quot;80px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tabs</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tab</span><span class="ot"> label=</span><span class="st">&quot;Tab 1&quot;</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tab</span><span class="ot"> label=</span><span class="st">&quot;Tab 2&quot;</span>/&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tabs</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabpanel</span>&gt;This is panel 1&lt;/<span class="kw">tabpanel</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabpanel</span>&gt;This is panel 2&lt;/<span class="kw">tabpanel</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  &lt;/<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox.png)
+```xml
+<tabbox height="80px">
+  <tabs>
+    <tab label="Tab 1"/>
+    <tab label="Tab 2"/>
+  </tabs>
+  <tabpanels>
+    <tabpanel>This is panel 1</tabpanel>
+    <tabpanel>This is panel 2</tabpanel>
+  </tabpanels>
+</tabbox>
+```
 
 
 ### Scrolling
@@ -723,20 +762,21 @@ implemented by this component either.
   therefore, in order to keep the height of the Tabpanel constant for
   the scroll bar to appear, specify a fixed height to Tabbox.
 
-| Image | Code |
-|-------|------|
-| ![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox_scrolling.png) | <div class="sourceCode"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">tabbox</span><span class="ot"> height=</span><span class="st">&quot;100px&quot;</span><span class="ot"> width=</span><span class="st">&quot;150px&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabs</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">tab</span><span class="ot"> label=</span><span class="st">&quot;tab&quot;</span> /&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">tabs</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">tabpanel</span><span class="ot"> style=</span><span class="st">&quot;overflow:auto;&quot;</span>&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">grid</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">rows</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                    &lt;<span class="kw">row</span><span class="ot"> forEach=</span><span class="st">&quot;1,2,3,4,5,6&quot;</span>&gt;item&lt;/<span class="kw">row</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                &lt;/<span class="kw">rows</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">grid</span>&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">tabpanel</span>&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">tabpanels</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">tabbox</span>&gt;</span>`</pre></div> |
+![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox_scrolling.png)
+```xml
+<tabbox height="100px" width="150px">
+    <tabs>
+        <tab label="tab" />
+    </tabs>
+    <tabpanels>
+        <tabpanel style="overflow:auto;">
+            <grid>
+                <rows>
+                    <row forEach="1,2,3,4,5,6">item</row>
+                </rows>
+            </grid>
+        </tabpanel>
+    </tabpanels>
+</tabbox>
+```
 
