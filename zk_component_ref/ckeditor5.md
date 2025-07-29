@@ -9,13 +9,11 @@ please refer to <a href=\"#breaking-changes-after-ckeditor-v42\">Breaking Change
 
 # Employment/Purpose
 
-ZK CKEditor 5 is a wrapper component that allows you to integrate [CKEditor 5](http://ckeditor.com/) into your ZK applications. Unlike ZK CKEditor 4 — which bundled the CKEditor 4 library — this new version does not include the CKEditor 5 core. You will need to download CKEditor 5 separately from CKSource and ensure you have the appropriate license for your usage.
+ZK CKEditor 5 is a wrapper component that allows you to integrate [CKEditor 5](http://ckeditor.com/) into your ZK applications. Unlike ZK CKEditor 4 — which bundled the CKEditor 4 library — this new version **does not include the CKEditor 5 JavaScript widget**. You will need to download CKEditor 5 separately from CKSource and ensure you have the appropriate license for your usage.
 
 CKEditor 5 introduces a completely new architecture and modern features such as real-time collaboration and AI support. To support this shift, ZK CKEditor 5 has been redesigned as a lightweight wrapper, enabling you to integrate the new editor while keeping the flexibility and structure of your existing ZK-based UI.
-**Note on Licensing:** CKEditor 5 has a different license than CKEditor
-4. Before downloading ckeditor.js, check [CKEditor's official
-website](https://ckeditor.com/) to understand the terms and obtain the
-appropriate license for your project.
+
+**Note on Licensing:** CKEditor 5 has a different license from CKEditor 4. Before downloading ckeditor.js, check [CKEditor's official website](https://ckeditor.com/) to understand the terms and obtain the appropriate license for your project.
 
 ## Difference between CKEditor 5 and 4
 
