@@ -8,7 +8,7 @@
 {% include Notice.html text="As of June 2023, CKEditor announced the
 end-of-life for CKEditor 4. Consequently, ZK CKEditor 4 will no longer
 receive updates. This section provides an introduction to ZK CKEditor 4.
-For information on the ZK CKEditor 5 Wrapper, please refer to CKEditor5" %}
+For information on the ZK CKEditor 5 Wrapper, please refer to <a href=\"ckeditor5\">CKEditor5</a>" %}
 
 # Maven
 
@@ -113,7 +113,7 @@ application can access its own folder.
 ```
 
 ![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload.png)
-![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload2.png")
+![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload2.png)
 
 ## Custom File upload handler
 
@@ -229,9 +229,9 @@ You can make CKEditor read-only with its config.
     <a href="#Custom_Configuration" class="wikilink"
     title=" Custom Configuration"> Custom Configuration</a>.
 
-{% include Notice\|text=Since ZK Ckeditor is a Java wrapper of js
+{% include Notice.html text="Since ZK Ckeditor is a Java wrapper of js
 CKEditor, the installed plugins just work at the client side and cannot
-be controlled in Java by default. %}
+be controlled in Java by default." %}
 
 ## Example
 
@@ -250,9 +250,9 @@ CKEDITOR.editorConfig = function(config) {
 
 # Work with ZK6 MVVM
 
-{% include Notice\|text=Since Ckeditor **3.6.0.1**, we have added data
+{% include Notice.html text="Since Ckeditor 3.6.0.1, we have added data
 binding annotation into the lang-addon.xml file, so you no more need to
-add the settings below. %}
+add the settings below." %}
 
 {% include version-badge.html version=6.0.0 %}
 
@@ -311,48 +311,11 @@ then add it into WEB-INF/zk.xml
 
 # Supported Events
 
-<table>
-<thead>
-<tr>
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><center>
-<p><code>onChange</code></p>
-</center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
-<p><strong><code>Description:</code></strong> Denotes the content of an
-input component has been modified by the user.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onChanging</code></p>
-</center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
-<p><strong><code>Description:</code></strong> Denotes that user is
-changing the content of an input component. Notice that the component's
-content (at the server) won't be changed until <code>onChange</code> is
-received. Thus, you have to invoke the <code>getValue</code>method in
-the <code>InputEvent</code>class to retrieve the temporary
-value.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onSave</code></p>
-</center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
-<p><strong><code>Description:</code></strong> Denotes the save button of
-the CKEditor component has been clicked by the user.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|------|------------|
+| `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes the content of an input component has been modified by the user. |
+| `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes that user is changing the content of an input component. Notice that the component's content (at the server) won't be changed until `onChange` is received. Thus, you have to invoke the `getValue`method in the `InputEvent`class to retrieve the temporary value. |
+| `onSave` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes the save button of the CKEditor component has been clicked by the user. |
 
 # Supported Children
 

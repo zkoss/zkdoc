@@ -5,7 +5,7 @@
 
 {% include Notice.html text="This document is written for CKEditor 5.39 to
 5.41. Regarding major updates for 5.42 and later's breaking change,
-please refer to #Breaking_Changes_After_CKEditor_v42" %}
+please refer to <a href=\"#breaking-changes-after-ckeditor-v42\">Breaking Changes After CKEditor v42</a>" %}
 
 # Employment/Purpose
 
@@ -355,40 +355,10 @@ when the editor is rendered (according to the content height).
 
 # Supported Events
 
-<table>
-<thead>
-<tr>
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><center>
-<p><code>onChange</code></p>
-</center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
-<p><strong><code>Description:</code></strong> Denotes the content of an
-input component has been modified by the user.</p></td>
-</tr>
-<tr>
-<td><center>
-<p><code>onChanging</code></p>
-</center></td>
-<td><p><javadoc>org.zkoss.zk.ui.event.InputEvent</javadoc></p>
-<p><strong><code>Description:</code></strong> Denotes that user is
-changing the content of an input component. Notice that the component's
-content (at the server) won't be changed until <code>onChange</code> is
-received. Thus, you have to invoke the <code>getValue</code>method in
-the <code>InputEvent</code>class to retrieve the temporary
-value.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|------|------------|
+| `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes the content of an input component has been modified by the user. |
+| `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes that user is changing the content of an input component. Notice that the component's content (at the server) won't be changed until `onChange` is received. Thus, you have to invoke the `getValue`method in the `InputEvent`class to retrieve the temporary value. |
 
 **Note** : Unlike ZK CKEditor 4, ZK CKEditor 5 doesn't support `onSave`
 event, because it doesn't provide a save button.
