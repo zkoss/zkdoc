@@ -75,6 +75,6 @@ public class MyComposesr extends SelectorComposer<Component> {
 }
 ```
 -   Subscribe to a queue named 'myqueue' because previous binder publishes to this queue.
--   For ` @Subscribe `, please refer to [ZK Developer's Reference/mvc/Controller/Subscribe to EventQueues]({{site.baseurl}}/zk_dev_ref/mvc/subscribe_to_eventqueues).
+-   For`@Subscribe`, please refer to [ZK Developer's Reference/mvc/Controller/Subscribe to EventQueues]({{site.baseurl}}/zk_dev_ref/mvc/subscribe_to_eventqueues).
 -   To subscribe an event queue by method call, please refer to [ZK Developer's Reference/Event Handling/Event Queues\#Subscribe\_to\_an\_Event\_Queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues#Subscribe_to_an_Event_Queue)
 

@@ -70,7 +70,7 @@ In form-binding, you can apply a validator to “form” attribute or an input c
 
 # Validation Message Holder
 
-Databinding provides a standard mechanism to store and display validation messages. After performing validation, the validator might store a validation message in **validation message holder**. To use it, you have to initialize it by specifying its id in **validationMessages** attribute with the ` @id `. Then you can reference it with this id.
+Databinding provides a standard mechanism to store and display validation messages. After performing validation, the validator might store a validation message in **validation message holder**. To use it, you have to initialize it by specifying its id in **validationMessages** attribute with the`@id`. Then you can reference it with this id.
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')"
     validationMessages="@id('vmsgs')">

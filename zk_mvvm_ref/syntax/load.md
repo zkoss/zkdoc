@@ -12,7 +12,7 @@ Description
 
 **Purpose:** Restrict binder to load data from ViewModel only, not save back
 
-For some attributes that don't save data back to the ViewModel like listbox's model or label's value, you can also write ` @bind ` or ` @load `.
+For some attributes that don't save data back to the ViewModel like listbox's model or label's value, you can also write`@bind` or`@load`.
 
 ***[conditionKeyword]=[EvaluateOnce EL-expression]***
 
@@ -26,7 +26,7 @@ It could be one of [ '''before | after ''' ]
 
 The evaluation result must be one or more command names.
 
-Command name must correspond to the name specified in Java annotation ` @Command ` in a ViewModel.
+Command name must correspond to the name specified in Java annotation`@Command` in a ViewModel.
 
 Example
 =======

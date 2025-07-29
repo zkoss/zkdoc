@@ -18,7 +18,7 @@ Description
 
 **Purpose:** To notify binder of one or more properties change.
 
-By default, a property set by binder through setter method will notify this property change without this annotation. You could use this annotation on setter method to override default notification target. You could also add this annotation on a command method to notify properties that are changed after command execution. To avoid the default notification, use ` @NotifyChangeDisabled ` on setter method solely. Giving "*" in annotation element means notify all properties in a ViewModel.
+By default, a property set by binder through setter method will notify this property change without this annotation. You could use this annotation on setter method to override default notification target. You could also add this annotation on a command method to notify properties that are changed after command execution. To avoid the default notification, use`@NotifyChangeDisabled` on setter method solely. Giving "*" in annotation element means notify all properties in a ViewModel.
 
 Use "." to enforce reloading the instance of the class in where the annotation locates, not an instance's property.
 

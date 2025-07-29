@@ -10,7 +10,7 @@ Description
 
 **Target Attribute:** any (except viewModel, validationMessages, form, and event attributes)
 
-**Purpose:** It should be used with ` @bind `, ` @load `, ` @save `. It applies a validator to validate data when saving to ViewModel.
+**Purpose:** It should be used with`@bind`,`@load`,`@save`. It applies a validator to validate data when saving to ViewModel.
 
 The evaluation result of EL expression should be a [Validator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Validator.html) object. You can append arbitrary arguments in key-value pair with a comma to separate to pass it to the Validator object. Built-in Validator is referenced by a string literal as its name.
 

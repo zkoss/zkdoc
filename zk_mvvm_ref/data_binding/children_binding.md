@@ -6,7 +6,7 @@ Children binding allows us to bind child components to a collection then we can 
 
 Steps to use this feature:
 1.  Create a **` List ` object** as a ViewModel's property.<sub>[1]</sub>
-2.  Bind a parent component's **children** attribute with ` @init ` or ` @load ` to the ViewModel's property
+2.  Bind a parent component's **children** attribute with`@init` or`@load` to the ViewModel's property
 3.  Use ` <template> ` to enclose child components and set its **name** attribute to **children**. Because children binding chooses the default template with name **children**.
 
 [1]: It must be a ` List ` object under CE edition.

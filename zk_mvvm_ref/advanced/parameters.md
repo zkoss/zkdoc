@@ -3,7 +3,7 @@
 Retrieve Binding Parameter
 ==========================
 ZK allows you to **pass any object or value that can be referenced by EL** on a ZUL to command method through command binding annotation. Your command method's signature should have a corresponding parameter that is
-annotated with ` @BindingParam ` with the same type and key.
+annotated with`@BindingParam` with the same type and key.
 
 The syntax is:
 
@@ -65,8 +65,8 @@ public void delete(@BindingParam("item") Item item ) {
     message = "remove item index " + i;
 }
 ```
--   Line 2: Command method showIndex() should have a Integer in its argument list. We also have to specify the key "index" in ` @BindingParam `.
--   Line 7: The same as delete(), it should have a parameter with Item class in its argument list. We also have to specify the key "item" in ` @BindingParam `.
+-   Line 2: Command method showIndex() should have a Integer in its argument list. We also have to specify the key "index" in`@BindingParam`.
+-   Line 7: The same as delete(), it should have a parameter with Item class in its argument list. We also have to specify the key "item" in`@BindingParam`.
 
 A Global Command Example
 ------------------------
@@ -76,7 +76,7 @@ The following code passes selected item to another ViewModel.
 ```xml
 <button label="Submit" onClick="@command('submit') @global-command('detail', name=vm.selectedName)"/>
 ```
-The global command method receives parameter through ` @BindingParam `.
+The global command method receives parameter through`@BindingParam`.
 ```java
 @GlobalCommand
 public void detail(@BindingParam("name") String name) {
@@ -86,7 +86,7 @@ public void detail(@BindingParam("name") String name) {
 
 Parameter Default Value
 -----------------------
-You could choose not to pass parameter for a command method that has parameters. The parameter will become null if you don't pass it, but you can choose to give it a default value with ` @Default `. This annotation can be used with other parameter related annotations.
+You could choose not to pass parameter for a command method that has parameters. The parameter will become null if you don't pass it, but you can choose to give it a default value with`@Default`. This annotation can be used with other parameter related annotations.
 
 #### Specify parameter's default value
 ```java
@@ -167,7 +167,7 @@ public void init(@CookieParam("nosuch") @HeaderParam("user-agent") String guess)
 
 Retrieve ZK Context Object
 --------------------------
-You can also receive ZK context object by `@ContextObject` with various `org.zkoss.bind.annotation.ContextType ` including [Execution](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html), [Desktop](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html), [Session](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html), [BindContext](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindContext.html), [Binder](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Binder.html), etc. We list all available context objects you can retrieve by ` @ContextObject ` in [Syntax/ViewModel/Parameters/@ContextParam](../syntax/contextparam)
+You can also receive ZK context object by `@ContextObject` with various `org.zkoss.bind.annotation.ContextType ` including [Execution](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html), [Desktop](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html), [Session](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html), [BindContext](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindContext.html), [Binder](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Binder.html), etc. We list all available context objects you can retrieve by`@ContextObject` in [Syntax/ViewModel/Parameters/@ContextParam](../syntax/contextparam)
 
 We retrieve current binding source component and ViewModel's view component at initial method and command method.
 
@@ -210,7 +210,7 @@ Retrieve Event Object
 
 There are two ways to retrieve an event object:
 
-1.  Use reserved keyword **event** in ` @command ` parameter list in a ZUL.
+1.  Use reserved keyword **event** in`@command` parameter list in a ZUL.
 2.  Apply annotation **` @ContextParam(ContextType.TRIGGER_EVENT) `** on a command method's parameter.
 
 Here we have a *label* to show what a user is typing in the *textbox*. The user's typing content is stored in InputEvent's value property, so we can pass it by **event.value** when we bind a command to **onChanging** attribute.

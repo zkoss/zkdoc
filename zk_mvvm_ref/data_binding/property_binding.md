@@ -93,7 +93,7 @@ Assume that there is an order management application with a database. The follow
 ```
 - The listcell and doublebox are both bound to ` vm.selected.price `. (line 6, 31)
 - If doublebox's value is saved immediately after user input, listcell's label which is also bound to the same ViewModel's property will also change. This effect might mislead the user that the value has been saved to database.
-- To eliminate this misleading effect, developer might hope to batch save all editing result after the user click a “Save” button. We can achieve this by specifying Command's name for property ` before ` in ` @save `. The value of intbox and doublebox are batch-saved when the use clicks “Save” button. (line 27, 31)
+- To eliminate this misleading effect, developer might hope to batch save all editing result after the user click a “Save” button. We can achieve this by specifying Command's name for property ` before ` in`@save`. The value of intbox and doublebox are batch-saved when the use clicks “Save” button. (line 27, 31)
 
 Execution Order
 ===============
@@ -240,7 +240,7 @@ The usage is similar for grid.
 Dynamic Template
 ----------------
 Dynamic template enables developers to specify **which template to apply upon different conditions**, e.g. grid. It is supported in grid, listbox, combobox, selectbox, and tree. You can use this feature with
-`@template( [EL-expression] )`. The binder will evaluate EL expression as a template's name and look for corresponding template to render child components. If the specified template doesn't exist in current component, it looks up parent component's template. If no ` @template ` assigned, it uses template that named **model** by default.
+`@template( [EL-expression] )`. The binder will evaluate EL expression as a template's name and look for corresponding template to render child components. If the specified template doesn't exist in current component, it looks up parent component's template. If no`@template` assigned, it uses template that named **model** by default.
 
 #### Default case
 ```xml

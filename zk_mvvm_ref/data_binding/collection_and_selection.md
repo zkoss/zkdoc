@@ -88,7 +88,7 @@ Dynamic template allows developers to specify **which template to apply upon dif
 
 `@template( [EL-expression] )`
 
-The binder will evaluate an EL expression as a template's name and look for corresponding template to render the child components. If the specified template doesn't exist in current component, it looks up the parent component's template. If no ` @template ` specified, it uses template that named **model** by default.
+The binder will evaluate an EL expression as a template's name and look for corresponding template to render the child components. If the specified template doesn't exist in current component, it looks up the parent component's template. If no`@template` specified, it uses template that named **model** by default.
 
 #### Template name specified
 ```xml

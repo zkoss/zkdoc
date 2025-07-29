@@ -217,20 +217,20 @@ the user confirms.
 
 Steps to use a form binding:
 
-1.  Give an id to middle object in `'''form'''` attribute with ` @id `.
+1.  Give an id to middle object in `'''form'''` attribute with`@id`.
 
     Then you can reference the middle object in ZK bind expression with its id, e.g. `@id('fx')`.
 
-2.  Specify ViewModel's property to be loaded with ` @load `
+2.  Specify ViewModel's property to be loaded with`@load`
 3.  Specify ViewModel's property to save and before which Command with
-    ` @save `
+   `@save`
 
     This means binder will save the middle object's properties to ViewModel before a command execution.
 
 4.  Bind component's attribute to the middle object's properties like
     you do in property binding.
 
-    You should use middle object's id specified in ` @id ` to reference its property, e.g. `@load(fx.account)`.
+    You should use middle object's id specified in`@id` to reference its property, e.g. `@load(fx.account)`.
 
 **extracted from chapter3/profile-mvvm.zul**
 

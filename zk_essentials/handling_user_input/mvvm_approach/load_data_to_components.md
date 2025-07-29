@@ -80,8 +80,8 @@ properties by the ID, e.g. `vm.name`. Whilst the full-qualified class name is us
 ...
 </window>
 ```
--   Line 1: Specify ViewModel's id with ` @id ` and the its
-    full-qualified class name in ` @init `.
+-   Line 1: Specify ViewModel's id with`@id` and the its
+    full-qualified class name in`@init`.
 
 
 [^1] Since ZK 8, you don't need to specify

@@ -10,7 +10,7 @@ Description
 
 **Target Attribute:** any (except viewModel, validationMessages, form, and event attributes)
 
-**Purpose:** It should be used with ` @bind `, ` @load `, ` @save `. It applies a converter to convert data during transformation between UI components and ViewModel.
+**Purpose:** It should be used with`@bind`,`@load`,`@save`. It applies a converter to convert data during transformation between UI components and ViewModel.
 
 The evaluation result of EL expression should be a [Converter](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Converter.html) object. You can append arbitrary arguments in key-value pair with a comma for separation to pass it to the Converter object. Built-in Converter is referenced by a string literal as its name.
 

@@ -12,7 +12,7 @@ Description
 
 **Purpose:** Restrict binder to save data to ViewModel only, no loading.
 
-You usually use this syntax when you want to save and load data in different conditions, you should write both ` @save ` and ` @load ` in an attribute. You have to use it in form binding to save upon a command.
+You usually use this syntax when you want to save and load data in different conditions, you should write both`@save` and`@load` in an attribute. You have to use it in form binding to save upon a command.
 
 ***[conditionKeyword]=[EvaluateOnce EL-expression]***
 
@@ -26,7 +26,7 @@ It could be one of [ **before | after** ]
 
 The evaluation result must be one or more command name.
 
-Command name must correspond to the name specified in Java annotation ` @Command ` in a ViewModel.
+Command name must correspond to the name specified in Java annotation`@Command` in a ViewModel.
 
 Example
 =======

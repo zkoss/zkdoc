@@ -2,9 +2,9 @@
 
 Overview
 ========
-Command binding is a mechanism for hooking up a UI component's event such as button's onClick to ViewModel's Command<sub>[1]</sub> without writing code. This binding is established by ` @command ` with the command's name in a ZUL. We can only bind one event to only one Command but can bind multiple events to the same Command.
+Command binding is a mechanism for hooking up a UI component's event such as button's onClick to ViewModel's Command<sub>[1]</sub> without writing code. This binding is established by`@command` with the command's name in a ZUL. We can only bind one event to only one Command but can bind multiple events to the same Command.
 
-Command's name is the name of ViewModel's method with Java annotation ` @Command  ` by default. You can also specify a Command's name in ` @Command `'s element.
+Command's name is the name of ViewModel's method with Java annotation`@Command` by default. You can also specify a Command's name in`@Command`'s element.
 
 [1]: [ ViewModel/Commands](../viewmodel/commands)
 

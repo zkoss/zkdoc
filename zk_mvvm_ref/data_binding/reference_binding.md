@@ -9,7 +9,7 @@ Make an expression reference
 Reference binding allows us to reference an EL expression with a customized name. We can use this reference in another EL expression nested in the component that is bound to this reference. Typically, we use reference binding to shorten expressions or to modularize the view<sub>[1]</sub>.
 
 Steps to use this feature:
-1.  Bind a custom attribute on a component with ` @ref `.
+1.  Bind a custom attribute on a component with`@ref`.
 2.  Use the custom attribute in other EL expressions that are nested in children components
 
 [1]: When using this feature, you have to avoid binding to a single variable, read [limitation](./property_binding#limitation) for more detail.

@@ -48,11 +48,11 @@ Based on the problems mentioned above, you can solve it by a form binding:
 
 1. Give an id to middle object in form attribute with `@id`.
     * You can reference the middle object in ZK bind expression with id.
-2. Specify ViewModel's property to be loaded with ` @load `
-3. Specify ViewModel's property to save and before which Command with ` @save `
+2. Specify ViewModel's property to be loaded with`@load`
+3. Specify ViewModel's property to save and before which Command with`@save`
     * This means a binder will save middle object's properties to ViewModel before a command execution
 4. Bind component's attribute to middle object's properties like you would in property binding.
-    * You should use middle object's id specified in ` @id ` to reference its property.
+    * You should use middle object's id specified in`@id` to reference its property.
 
 
 Rewrite same example with form bindings:
@@ -255,7 +255,7 @@ Continuing with the above example, we add an exclamation icon right next to Id v
     <button iconSclass="z-icon-save" tooltiptext="submit" onClick="@command('save')" />
 </groupbox>
 ```
--   In this example, form status variable is `fxStatus ` for the form’s id is ` fx `. Its **dirty** property indicates whether the form has been modified by users or not.
+-   In this example, form status variable is `fxStatus` for the form’s id is `fx`. Its **dirty** property indicates whether the form has been modified by users or not.
 
 ![MVVM FormBinding Form Dirty-1](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-1.png)
 ![MVVM FormBinding Form Dirty-2](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-2.png)

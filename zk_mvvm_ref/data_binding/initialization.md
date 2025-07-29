@@ -1,9 +1,9 @@
 # Initialization
-We can initialize any component's attribute by initial binding: ` @init `. It loads ViewModel's property once at the beginning then the property won't be synchronized by binder during user interaction. But EL evaluation's result we expect in initial binding annotation is different for attribute “viewModel” and “form”.
+We can initialize any component's attribute by initial binding:`@init`. It loads ViewModel's property once at the beginning then the property won't be synchronized by binder during user interaction. But EL evaluation's result we expect in initial binding annotation is different for attribute “viewModel” and “form”.
 
 @init at viewModel Attribute
 ============================
-The first place we usually use this annotation is to assign a ViewModel to a component in viewModel attribute. When using in viewModel attribute, we should specify the **full-qualified class name** in a string literal in ` @init `.
+The first place we usually use this annotation is to assign a ViewModel to a component in viewModel attribute. When using in viewModel attribute, we should specify the **full-qualified class name** in a string literal in`@init`.
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')">
 </window>
@@ -45,4 +45,4 @@ We can also use the initial binding on the form binding to fill in predefined va
 
 </div>
 ```
-We'll describe more advanced usage with ` @init ` in section [Data Binding/Form Binding](./form_binding).
+We'll describe more advanced usage with`@init` in section [Data Binding/Form Binding](./form_binding).
