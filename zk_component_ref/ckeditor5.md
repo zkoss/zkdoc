@@ -29,11 +29,8 @@ appropriate license for your project.
 # Maven
 
 ZKCKEditor 5 Wrapper requires a license.  
-To try out the evaluation copy, use the Evaluation repository
-(https://mavensync.zkoss.org/eval/).  
-To access the licensed copy, use the ZK EE repository
-(https://maven.zkoss.org/repo/zk/ee). You must be logged in to access
-the ZK EE repository.
+* To try out the evaluation copy, get it from [ZK Evaluation repository](https://mavensync.zkoss.org/eval/org/zkoss/zkforge/ckez/).  
+* To access the licensed copy, get it from [ZK EE repository](https://maven.zkoss.org/repo/zk/ee/org/zkoss/zkforge/ckez/). You must configure user credential for EE repository.
 
 ```xml
         <dependency>
