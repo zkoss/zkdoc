@@ -82,8 +82,4 @@ Here's an example of a relaxed policy used in a ZK application:
         font-src 'self'" ?>
 ```
 
-- Using
-  \[<zuml_ref/header>
-  <?header ?>
-
-  \] to specify a response header.
+- Using [<?header ?>](/zuml_ref/header) to specify a response header.

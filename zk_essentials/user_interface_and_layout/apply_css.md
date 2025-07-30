@@ -16,6 +16,7 @@ the attribute value.
 
 To apply a CSS class, you should define it first in a ZUL. There
 are 2 ways to declare a CSS class.
+
 1. Inside `<style>` tag.
 ```xml
 <zk>
