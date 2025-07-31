@@ -1211,37 +1211,15 @@ components.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onAfterRender`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onPageSize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onAfterRender` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| `onPageSize` | <strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content.</p></td>
-</tr>
-</tbody>
-</table>
+is enabled and user changed the size of the content. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1250,32 +1228,10 @@ is enabled and user changed the size of the content.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/grid_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>paging</p>
-</center></td>
-<td>![](/zk_component_ref/images/grid_mold_paging.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/grid_mold_default.png) |
+| paging | ![](/zk_component_ref/images/grid_mold_paging.png) |
 
 # Supported Children
 

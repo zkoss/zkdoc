@@ -158,30 +158,13 @@ components in Orgnode, you could write like following:
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onOpen` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. It is useful to implement load-on-demand
 by listening to the onOpen event, and creating components when the first
-time the component is opened.</p></td>
-</tr>
-</tbody>
-</table>
+time the component is opened. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

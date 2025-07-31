@@ -127,44 +127,17 @@ Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onFocus`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onFocus` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-gets the focus.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onBlur`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+gets the focus. |
+| `onBlur` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-loses the focus.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>onCheck</p>
-</center></td>
-<td><p><strong>Event:</strong>
+loses the focus. |
+| onCheck | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a
-component is checked or unchecked.</p></td>
-</tr>
-</tbody>
-</table>
+component is checked or unchecked. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 

@@ -120,40 +120,18 @@ specified coachmark instead of the predefined "next" coachmark.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes that the user has opened or closed a component.</p>
-<p>Note: unlike `onClose`, this event is only a notification.
+| Name | Event Type |
+|---|---|
+| `onOpen` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
+Denotes that the user has opened or closed a component.
+Note: unlike `onClose`, this event is only a notification.
 The client sends this event after the component is opened or
-closed.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onTargetClick`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)</p>
-<p>Represents an event caused by a user's click on a highlighted target
-component.</p></td>
-</tr>
-</tbody>
-</table>
+closed. |
+| `onTargetClick` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)
+Represents an event caused by a user's click on a highlighted target
+component. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

@@ -787,221 +787,30 @@ The 3D chart is not supported on all chart types.
 
 ## Type and Model
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Type</p>
-</center></th>
-<th><center>
-<p>Model</p>
-</center></th>
-<th><center>
-<p>3D</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`pie`</p>
-</center></td>
-<td><p>`PieModel`</p></td>
-<td><center>
-<p>`o`</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`ring`</p>
-</center></td>
-<td><p>`PieModel`</p></td>
-<td><center>
-<p>`x`</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`bar`</p>
-</center></td>
-<td><p>`CategoryModel`or`XYModel`</p></td>
-<td><center>
-<p>`o`</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`line`</p>
-</center></td>
-<td><p>`CategoryModel`or`XYModel`</p></td>
-<td><center>
-<p>`o`</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`area`</p>
-</center></td>
-<td><p>`CategoryModel`or`XYModel`</p></td>
-<td><center>
-<p>`x`</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`stacked_bar`</p>
-</center></td>
-<td><p>`CategoryModel`</p></td>
-<td><center>
-<p>`o`</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`stacked_area`</p>
-</center></td>
-<td><p>`CategoryModel`or`XYModel`</p></td>
-<td><center>
-<p>`x`</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`waterfall`</p>
-</center></td>
-<td><p>`CategoryModel`</p></td>
-<td><center>
-<p>`x`</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`polar`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`scatter`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`time_series`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`polar`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`step_area`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`step`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`histogram`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`bubble`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`wind`</p>
-</center></td>
-<td><p>`XYModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`candlestick`</p>
-</center></td>
-<td><p>`HiLoModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`highlow`</p>
-</center></td>
-<td><p>`HiLoModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`wafermap`</p>
-</center></td>
-<td><p>`WaferMapModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`gantt`</p>
-</center></td>
-<td><p>`GanttModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`dial`</p>
-</center></td>
-<td><p>`DialModel`</p></td>
-<td><center>
-<p>x</p>
-</center></td>
-</tr>
-</tbody>
-</table>
+| Type | Model | 3D |
+|---|---|---|
+| `pie` | `PieModel` | `o` |
+| `ring` | `PieModel` | `x` |
+| `bar` | `CategoryModel`or`XYModel` | `o` |
+| `line` | `CategoryModel`or`XYModel` | `o` |
+| `area` | `CategoryModel`or`XYModel` | `x` |
+| `stacked_bar` | `CategoryModel` | `o` |
+| `stacked_area` | `CategoryModel`or`XYModel` | `x` |
+| `waterfall` | `CategoryModel` | `x` |
+| `polar` | `XYModel` | x |
+| `scatter` | `XYModel` | x |
+| `time_series` | `XYModel` | x |
+| `polar` | `XYModel` | x |
+| `step_area` | `XYModel` | x |
+| `step` | `XYModel` | x |
+| `histogram` | `XYModel` | x |
+| `bubble` | `XYModel` | x |
+| `wind` | `XYModel` | x |
+| `candlestick` | `HiLoModel` | x |
+| `highlow` | `HiLoModel` | x |
+| `wafermap` | `WaferMapModel` | x |
+| `gantt` | `GanttModel` | x |
+| `dial` | `DialModel` | x |
 
 # Clicked Area: Series, Legend
 
@@ -1106,42 +915,23 @@ JVM. For the information to make it work under Linux, please refer to
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Version</p></th>
-<th><p>Date</p></th>
-<th><p>Content</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>5.0.4</p></td>
-<td><p>August 2010</p></td>
-<td><p>MouseEvent introduced a new method,
+| Version | Date | Content |
+|---|---|---|
+| 5.0.4 | August 2010 | MouseEvent introduced a new method,
 [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()),
-which simplifies the retrieval of the area component.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">Area</span> area <span class="op">=</span> <span class="op">(</span><span class="bu">Area</span><span class="op">)</span>event<span class="op">.</span><span class="fu">getAreaComponent</span><span class="op">();</span> <span class="co">//must be Area or null when used with chart</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>area <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">...</span></span>`</pre></div></td>
-</tr>
-<tr class="even">
-<td><p>5.0.3</p></td>
-<td><p>June 2010</p></td>
-<td><p>The area sent with the click event becomes UUID of the area
+which simplifies the retrieval of the area component.
+<div class="sourceCode" id="cb1"><pre class="sourceCode java">`Area area = (Area)event.getAreaComponent(); //must be Area or null when used with chart
+if (area != null)
+  ...``</pre></div> |
+| 5.0.3 | June 2010 | The area sent with the click event becomes UUID of the area
 component. Thus, use
 `desktop.getComponentByUuid(event.getArea())`. To write a
-program compatible with any version of ZK:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode java"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">String</span> areaid <span class="op">=</span> event<span class="op">.</span><span class="fu">getArea</span><span class="op">();</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="op">(</span>areaid <span class="op">!=</span> <span class="kw">null</span><span class="op">)</span> <span class="op">{</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="bu">Area</span> area <span class="op">=</span> desktop<span class="op">.</span><span class="fu">getComponentByUuidIfAny</span><span class="op">(</span>areaid<span class="op">);</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> <span class="op">(</span>area <span class="op">==</span> <span class="kw">null</span><span class="op">)</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    area <span class="op">=</span> chart<span class="op">.</span><span class="fu">getFellow</span><span class="op">(</span>areaid<span class="op">);</span> <span class="co">//fall back to older version</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">...</span></span>`</pre></div></td>
-</tr>
-</tbody>
-</table>
+program compatible with any version of ZK:
+<div class="sourceCode" id="cb2"><pre class="sourceCode java">`String areaid = event.getArea();
+if (areaid != null) {
+  Area area = desktop.getComponentByUuidIfAny(areaid);
+  if (area == null)
+    area = chart.getFellow(areaid); //fall back to older version
+...``</pre></div> |
 
 

@@ -122,36 +122,14 @@ file size by [ file-size-threshold]({{site.baseurl}}/zk_config_ref/the_max_uploa
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onSave</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| onSave | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) When user invoke
-the save method, the event would be triggered.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>onClear</p>
-</center></td>
-<td><p><strong>Event:</strong>
+the save method, the event would be triggered. |
+| onClear | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) When user invoke the
-clear method, the event would be triggered.</p></td>
-</tr>
-</tbody>
-</table>
+clear method, the event would be triggered. |
 
 # Version History
 

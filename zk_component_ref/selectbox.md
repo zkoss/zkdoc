@@ -94,28 +94,11 @@ Here is the MVVM way:
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSelect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSelect` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item in the selectbox.</p></td>
-</tr>
-</tbody>
-</table>
+the user has selected a new item in the selectbox. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 

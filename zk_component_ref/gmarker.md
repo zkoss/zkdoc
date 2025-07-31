@@ -20,30 +20,12 @@ customizable.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onMapDrop`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
-MapDropEvent</a></p>
-<p>Notifies that some component is dragged and dropped on the gmaps or
-gmarker component with latitude and longitude information.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| `onMapDrop` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
+MapDropEvent</a>
+Notifies that some component is dragged and dropped on the gmaps or
+gmarker component with latitude and longitude information. |
 
 - Inherited Supported Events: [ Ginfo]({{site.baseurl}}/zk_component_ref/ginfo#Supported_Events)
 

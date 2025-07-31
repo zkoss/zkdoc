@@ -26,103 +26,29 @@ experience as the visual display is updated immediately.
 
 # Common Attributes
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>title</p></td>
-<td><p>Title of chart</p></td>
-</tr>
-<tr class="even">
-<td><p>threeD</p></td>
-<td><p>Set true to show three dimensional graph(Note: Some types may not
-support 3D)</p></td>
-</tr>
-<tr class="odd">
-<td><p>type</p></td>
-<td><p>Type of chart</p></td>
-</tr>
-<tr class="even">
-<td><p>fgAlpha</p></td>
-<td><p>Foreground alpha</p></td>
-</tr>
-<tr class="odd">
-<td><p>model</p></td>
-<td><p>Model of chart</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Description |
+|---|---|
+| title | Title of chart |
+| threeD | Set true to show three dimensional graph(Note: Some types may not
+support 3D) |
+| type | Type of chart |
+| fgAlpha | Foreground alpha |
+| model | Model of chart |
 
 # Supported Model
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Type</p>
-</center></th>
-<th><center>
-<p>Model</p>
-</center></th>
-<th><center>
-<p>3D</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>bar</p></td>
-<td><p>CategoryModel</p></td>
-<td><p>*</p></td>
-</tr>
-<tr class="even">
-<td><p>line</p></td>
-<td><p>CategoryModel, XYModel</p></td>
-<td><p>X</p></td>
-</tr>
-<tr class="odd">
-<td><p>pie</p></td>
-<td><p>PieModel, SingleValueCategoryModel{% include version-badge.html version=6.5.3
-%}</p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="even">
-<td><p>funnel</p></td>
-<td><p>SingleValueCategoryModel{% include version-badge.html version=6.5.3
-%}</p></td>
-<td><p>X</p></td>
-</tr>
-<tr class="odd">
-<td><p>combination</p></td>
-<td><p>CategoryModel</p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="even">
-<td><p>stacked_bar</p></td>
-<td><p>CategoryModel</p></td>
-<td><p>O</p></td>
-</tr>
-<tr class="odd">
-<td><p>area</p></td>
-<td><p>CategoryModel</p></td>
-<td><p>X</p></td>
-</tr>
-<tr class="even">
-<td><p>gantt</p></td>
-<td><p>GanttModel</p></td>
-<td><p>X</p></td>
-</tr>
-</tbody>
-</table>
+| Type | Model | 3D |
+|---|---|---|
+| bar | CategoryModel | * |
+| line | CategoryModel, XYModel | X |
+| pie | PieModel, SingleValueCategoryModel{% include version-badge.html version=6.5.3
+%} | O |
+| funnel | SingleValueCategoryModel{% include version-badge.html version=6.5.3
+%} | X |
+| combination | CategoryModel | O |
+| stacked_bar | CategoryModel | O |
+| area | CategoryModel | X |
+| gantt | GanttModel | X |
 
 **Note:** 3D bar chart of Fusionchart does not support horizontal
 orientation now. If you want to use horizontal 3D bar chart, please use
@@ -743,25 +669,10 @@ public class FusionchartComposer extends SelectorComposer<Div> {
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>onClick</p></td>
-<td><p>Mouse clicking event. You can get information of clicked area
-from this event.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| onClick | Mouse clicking event. You can get information of clicked area
+from this event. |
 
 # Supported Children
 

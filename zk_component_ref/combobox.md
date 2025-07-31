@@ -385,49 +385,22 @@ functions.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onSelect</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)</p>
-<p>Represents an event caused by user's the list selection is changed at
-the client.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>Denotes that the user has opened or closed a component. Note: unlike
+| Name | Event Type |
+|---|---|
+| onSelect | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
+Represents an event caused by user's the list selection is changed at
+the client. |
+| `onOpen` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
+Denotes that the user has opened or closed a component. Note: unlike
 `onClose`, this event is only a notification. The client
-sends this event after opening or closing the component.</p>
-<p>It is useful to implement <em>load-on-demand</em>by listening to the
+sends this event after opening or closing the component.
+It is useful to implement <em>load-on-demand</em>by listening to the
 `onOpen`event, and creating components when the first time
-the component is opened.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onAfterRender`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
-</tr>
-</tbody>
-</table>
+the component is opened. |
+| `onAfterRender` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
 
 - Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
@@ -436,33 +409,11 @@ the component is opened.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/combobox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>rounded</p>
-</center></td>
-<td><p>![](/zk_component_ref/images/combobox_mold_rounded.png)
-{% include version-badge.html version=5.0.0 %}</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/combobox_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/combobox_mold_rounded.png)
+{% include version-badge.html version=5.0.0 %} |
 
 # Supported Children
 

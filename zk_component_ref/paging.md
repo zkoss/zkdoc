@@ -114,29 +114,12 @@ client side which is detached during paging and throws mounting error.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onPaging`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)</p>
-<p>Notifies one of the pages of a multi-page component is selected by
-the user.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| `onPaging` | <strong>Event:</strong>
+[org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)
+Notifies one of the pages of a multi-page component is selected by
+the user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -145,32 +128,10 @@ the user.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/paging_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>os</p>
-</center></td>
-<td>![](/zk_component_ref/images/paging_mold_os.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/paging_mold_default.png) |
+| os | ![](/zk_component_ref/images/paging_mold_os.png) |
 
 # Supported Children
 
@@ -178,30 +139,13 @@ zul.jar.
 
 # Use Cases
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Version</p></th>
-<th><p>Description</p></th>
-<th><p>Example Location</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>3.6</p></td>
-<td><p>Small talks</p></td>
-<td><ul>
-<li><a href="Small_Talks/2009/July/Handling_huge_data_using_ZK"
-title="wikilink">Handling huge data using ZK</a></li>
-<li><a href="Small_Talks/2009/May/Paging_Sorting_with_a_filter_object"
-title="wikilink">Paging Sorting with a filter object</a></li>
-<li><a
-href="Small_Talks/2008/June/Use_Load-On-Demand_to_Handle_Huge_Data"
-title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Version | Description | Example Location |
+|---|---|---|
+| 3.6 | Small talks | <ul>
+<li><a href="Small_Talks/2009/July/Handling_huge_data_using_ZK" title="wikilink">Handling huge data using ZK</a></li>
+<li><a href="Small_Talks/2009/May/Paging_Sorting_with_a_filter_object" title="wikilink">Paging Sorting with a filter object</a></li>
+<li><a href="Small_Talks/2008/June/Use_Load-On-Demand_to_Handle_Huge_Data" title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
+</ul> |
 
 
 

@@ -40,90 +40,21 @@ container that usually contains nav elements.
 A `navbar` could be placed in a vertical or horizontal orientation, the
 `orient` attribute decides.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Orient</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>horizontal</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav_hor.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>vertical</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav.png)</td>
-</tr>
-</tbody>
-</table>
+| Orient | Snapshot |
+|---|---|
+| horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_hor.png) |
+| vertical | ![](/zk_component_ref/images/ZKComRef_Nav.png) |
 
 ## Collapsed
 
 A `navbar` can be collapsed, the `collapsed` attribute decides.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Collapsed</p>
-</center></th>
-<th><center>
-<p>Orient</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>horizontal</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav_Hor_Cld.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>horizontal</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png)</td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>vertical</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>vertical</p>
-</center></td>
-<td>![](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png)</td>
-</tr>
-</tbody>
-</table>
+| Collapsed | Orient | Snapshot |
+|---|---|---|
+| true | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_Hor_Cld.png) |
+| false | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png) |
+| true | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png) |
+| false | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png) |
 
 ## Autoclose
 
@@ -148,28 +79,11 @@ until they are clicked again by the user.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSelect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSelect` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a navitem in the navbar.</p></td>
-</tr>
-</tbody>
-</table>
+the user has selected a navitem in the navbar. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 

@@ -13,72 +13,30 @@ define its own annotations.
 
 Here is the attribute list used in lang-addon.xml:
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Attribute Name</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p> ACCESS</p></td>
-<td><p>  Access privilege. The value can be "both", "save", or
+| Attribute Name | Description |
+|---|---|
+| ACCESS | Access privilege. The value can be "both", "save", or
 "load"(<strong>default value</strong>); default value is used if not
-specify.</p></td>
-</tr>
-<tr class="even">
-<td><p> CONVERTER</p></td>
-<td><p>  System converter for special properties.
-(<strong>optional</strong>) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html)</p></td>
-</tr>
-<tr class="odd">
-<td><p> VALIDATOR</p></td>
-<td><p>  System validator for special properties.
-(<strong>optional</strong>)</p></td>
-</tr>
-<tr class="even">
-<td><p> SAVE_EVENT</p></td>
-<td><p>  Save trigger event. It takes effect only when ACCESS attribute
-is "both" or "save".</p></td>
-</tr>
-<tr class="odd">
-<td><p> LOAD_EVENT</p></td>
-<td><p>  Load trigger event; It takes effect only when ACCESS attribute
-is "both" or "load".</p></td>
-</tr>
-<tr class="even">
-<td><p> LOAD_REPLACEMENT</p></td>
-<td><p>  The replacement attribute for loading. It's used when there is
+specify. |
+| CONVERTER | System converter for special properties.
+(<strong>optional</strong>) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html) |
+| VALIDATOR | System validator for special properties.
+(<strong>optional</strong>) |
+| SAVE_EVENT | Save trigger event. It takes effect only when ACCESS attribute
+is "both" or "save". |
+| LOAD_EVENT | Load trigger event; It takes effect only when ACCESS attribute
+is "both" or "load". |
+| LOAD_REPLACEMENT | The replacement attribute for loading. It's used when there is
 a issue to load to original attribute.; e.g. value of textbox, it loads
-to "rawValue".</p></td>
-</tr>
-<tr class="odd">
-<td><p> LOAD_TYPE</p></td>
-<td><p>  Type of attribute for loading; e.g. rawValue of textbox is
-java.lang.String.</p></td>
-</tr>
-<tr class="even">
-<td><p> SAVE_REPLACEMENT</p></td>
-<td><p>  The replacement attribute for saving. It's used when there is a
+to "rawValue". |
+| LOAD_TYPE | Type of attribute for loading; e.g. rawValue of textbox is
+java.lang.String. |
+| SAVE_REPLACEMENT | The replacement attribute for saving. It's used when there is a
 issue to save to original attribute.; e.g. selectedItem of selectbox, it
 save the value selecteIndex via converter to the bean. (selectedItem is
-not existed in selectbox).</p></td>
-</tr>
-<tr class="odd">
-<td><p> RENDERER</p></td>
-<td><p>  A special renderer for binding</p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+not existed in selectbox). |
+| RENDERER | A special renderer for binding |
+|  |  |
 
 # Example
 

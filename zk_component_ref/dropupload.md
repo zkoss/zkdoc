@@ -314,36 +314,14 @@ machines.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onUpload`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onUpload` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be
-triggered once a user has uploaded a file.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onMaxFileCountExceed`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+triggered once a user has uploaded a file. |
+| `onMaxFileCountExceed` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be
-triggered when number of upload files exceed the maxFileCount.</p></td>
-</tr>
-</tbody>
-</table>
+triggered when number of upload files exceed the maxFileCount. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 

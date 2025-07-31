@@ -106,34 +106,12 @@ for inherited functions.
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/spinner_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>rounded</p>
-</center></td>
-<td><p>![](/zk_component_ref/images/spinner_mold_rounded.png
-title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /> {%
-include version-badge.html version=5.0.0 %}</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/spinner_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png
+title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /&gt; {%
+include version-badge.html version=5.0.0 %} |
 
 # Supported Children
 

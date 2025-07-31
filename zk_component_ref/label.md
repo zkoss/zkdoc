@@ -87,76 +87,12 @@ and `maxlength` properties. For example, if you specify `pre` to be
 true, all white spaces, such as new lines, spaces and tabs, are
 preserved.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>pre</p>
-</center></th>
-<th><center>
-<p>multiline</p>
-</center></th>
-<th><center>
-<p>maxlenth</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><p>All white spaces are preserved, including new lines, spaces and
-tabs.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><p>New lines are preserved.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>positive</p>
-</center></td>
-<td><p>The label only show its value up to the length of
-"maxlength".</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>0</p>
-</center></td>
-<td><p>The label is displayed regularly.</p></td>
-</tr>
-</tbody>
-</table>
+| pre | multiline | maxlenth | Description |
+|-----|-----------|----------|-------------|
+| true | any | any | All white spaces are preserved, including new lines, spaces and tabs. |
+| false | true | any | New lines are preserved. |
+| false | false | positive | The label only show its value up to the length of "maxlength". |
+| false | false | 0 | The label is displayed regularly. |
 
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
@@ -181,76 +117,14 @@ tabs.</p></td>
 
 This displaying rule is slightly different in ZK3.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>hyphen</p>
-</center></th>
-<th><center>
-<p>pre</p>
-</center></th>
-<th><center>
-<p>maxlenth</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>positive</p>
-</center></td>
-<td><p>Truncated the characters that exceeds the specified
-`maxlength`.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><center>
-<p>positive</p>
-</center></td>
-<td><p>If the length of a line exceeds `maxlength`, the line
-is hyphenated.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>false</p>
-</center></td>
-<td><center>
-<p>true</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><p>`maxlength` is ignored.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>any</p>
-</center></td>
-<td><center>
-<p>any</p>
-</center></td>
-<td><center>
-<p>0</p>
-</center></td>
-<td><p>`hyphen` is ignored.</p></td>
-</tr>
-</tbody>
-</table>
+| hyphen | pre | maxlenth | Description |
+|---|---|---|---|
+| false | false | positive | Truncated the characters that exceeds the specified
+`maxlength`. |
+| true | any | positive | If the length of a line exceeds `maxlength`, the line
+is hyphenated. |
+| false | true | any | `maxlength` is ignored. |
+| any | any | 0 | `hyphen` is ignored. |
 
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK3.png)
 

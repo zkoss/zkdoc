@@ -59,32 +59,10 @@ A list item.
 Available molds of a component are defined in lang.xml embedded in
 zul.jar. The mold of listitem is decided by the mold of listbox.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/listbox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>select</p>
-</center></td>
-<td>![](/zk_component_ref/images/listbox_mold_select.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/listbox_mold_default.png) |
+| select | ![](/zk_component_ref/images/listbox_mold_select.png) |
 
 # Supported Children
 

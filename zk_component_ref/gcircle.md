@@ -25,28 +25,10 @@ points, fill color, etc..
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>onCenterChange</p></td>
-<td><p>org.zkoss.gmaps.event.CenterChangeEvent</p></td>
-</tr>
-<tr class="even">
-<td><p>onRadiusChange</p></td>
-<td><p>org.zkoss.gmaps.event.RadiusChangeEvent</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|------|------------|
+| onCenterChange | org.zkoss.gmaps.event.CenterChangeEvent |
+| onRadiusChange | org.zkoss.gmaps.event.RadiusChangeEvent |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

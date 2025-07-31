@@ -87,44 +87,17 @@ set to `image/png`
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onChange` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
-the selected range.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onChanging`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+the selected range. |
+| `onChanging` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user is resizing
-the selected range.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onCrop`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+the selected range. |
+| `onCrop` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
-cropped the image.</p></td>
-</tr>
-</tbody>
-</table>
+cropped the image. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 

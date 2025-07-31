@@ -250,61 +250,20 @@ and `consistencyThreshold` both 1.
 
 # Supported Barcode Type (Default)
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Barcodescanner Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>1D CODE Family</p></td>
-<td><p>CODE128, CODE39, CODE39VIN,</p></td>
-</tr>
-<tr class="even">
-<td><p>1D EAN Family</p></td>
-<td><p>EAN, EAN8,</p></td>
-</tr>
-<tr class="odd">
-<td><p>1D Others</p></td>
-<td><p>CODABAR, UPC, UPC_E, I2OF5</p></td>
-</tr>
-<tr class="even">
-<td><p>2D</p></td>
-<td><p>QR</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Barcodescanner Type |
+|---|---|
+| 1D CODE Family | CODE128, CODE39, CODE39VIN, |
+| 1D EAN Family | EAN, EAN8, |
+| 1D Others | CODABAR, UPC, UPC_E, I2OF5 |
+| 2D | QR |
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onDetect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onDetect` | <strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the
-barcode scanner detect a barcode message.</p></td>
-</tr>
-</tbody>
-</table>
+barcode scanner detect a barcode message. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

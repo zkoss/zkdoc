@@ -97,34 +97,9 @@ by the area attribute. Supported value: (default) “vertical” or
 
 From the example above, it's possible to divide in two ways.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>areas</p>
-</center></th>
-<th><center>
-<p>vertical</p>
-</center></th>
-<th><center>
-<p>horizontal</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png)
-</center></td>
-<td><center>
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png)
-</center></td>
-<td><center>
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png)
-</center></td>
-</tr>
-</tbody>
-</table>
+| areas | vertical | horizontal |
+|---|---|---|
+| ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png) |
 
 ## Adding GoldenPanels
 

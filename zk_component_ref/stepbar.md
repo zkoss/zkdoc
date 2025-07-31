@@ -82,29 +82,12 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Represents an event caused by a user's selection changed at the
-client.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| `onChange` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
+Represents an event caused by a user's selection changed at the
+client. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

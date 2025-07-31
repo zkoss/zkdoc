@@ -49,36 +49,15 @@ will not cause a collapse (and the grippy/button won't appear).
 
 Allowed values and their meaning are as follows.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Value</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>none</p></td>
-<td><p>No collapsing occurs.</p></td>
-</tr>
-<tr class="even">
-<td><p>before</p></td>
-<td><p>When the grippy is clicked, the element immediately before the
+| Value | Description |
+|---|---|
+| none | No collapsing occurs. |
+| before | When the grippy is clicked, the element immediately before the
 splitter in the same parent is collapsed so that its width or height is
-0.</p></td>
-</tr>
-<tr class="odd">
-<td><p>after</p></td>
-<td><p>When the grippy is clicked, the element immediately after the
+0. |
+| after | When the grippy is clicked, the element immediately after the
 splitter in the same parent is collapsed so that its width or height is
-0.</p></td>
-</tr>
-</tbody>
-</table>
+0. |
 
 ## Open
 
@@ -145,29 +124,12 @@ OS-look:
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>When a splitter is collapsed or opened by a user, the
-`onOpen` event is sent to the application.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| `onOpen` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
+When a splitter is collapsed or opened by a user, the
+`onOpen` event is sent to the application. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -176,32 +138,10 @@ OS-look:
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/splitter_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>os</p>
-</center></td>
-<td>![](/zk_component_ref/images/splitter_mold_os.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/splitter_mold_default.png) |
+| os | ![](/zk_component_ref/images/splitter_mold_os.png) |
 
 # Supported Children
 

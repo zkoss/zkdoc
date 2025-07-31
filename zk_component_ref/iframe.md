@@ -163,31 +163,14 @@ element (rather than the widget).
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onURIChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html)</p>
-<p>Denotes the associated URI (`src`) has been changed by
-user.</p>
-<p>Use `getURI()` to retrieve the URI being changed
-to.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Event Type |
+|---|---|
+| `onURIChange` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html)
+Denotes the associated URI (`src`) has been changed by
+user.
+Use `getURI()` to retrieve the URI being changed
+to. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 

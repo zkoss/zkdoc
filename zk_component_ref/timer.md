@@ -23,30 +23,13 @@ timer won't fire any event until it is attached to a page.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onTimer`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Denotes the timer you specified has triggered an event. To know which
+| Name | Event Type |
+|---|---|
+| `onTimer` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
+Denotes the timer you specified has triggered an event. To know which
 timer, invoke the `getTarget` method in the Event
-class.</p></td>
-</tr>
-</tbody>
-</table>
+class. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 

@@ -116,38 +116,16 @@ not be smaller than the minWidths/minHeights.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)</p>
-<p>When a splitter is collapsed or opened by a user, the
-`onOpen` event is sent to the application.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onDivisionSize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onOpen` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
+When a splitter is collapsed or opened by a user, the
+`onOpen` event is sent to the application. |
+| `onDivisionSize` | <strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html)
 Represents an event that indicates two inner size of
-splitlayout.</p></td>
-</tr>
-</tbody>
-</table>
+splitlayout. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

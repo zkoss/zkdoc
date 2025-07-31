@@ -666,65 +666,28 @@ component.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSelect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSelect` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item in the tree.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onFocus`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+the user has selected a new item in the tree. |
+| `onFocus` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onFocus
-got executed.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onBlur`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+got executed. |
+| `onBlur` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
-got executed.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onAfterRender`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onPageSize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+got executed. |
+| `onAfterRender` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| `onPageSize` | <strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content.</p></td>
-</tr>
-</tbody>
-</table>
+is enabled and user changed the size of the content. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -733,32 +696,10 @@ is enabled and user changed the size of the content.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/tree_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>paging</p>
-</center></td>
-<td>![](/zk_component_ref/images/tree_mold_paging.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/tree_mold_default.png) |
+| paging | ![](/zk_component_ref/images/tree_mold_paging.png) |
 
 # Supported Children
 
@@ -773,41 +714,29 @@ zul.jar.
 
 # Browser Limitations
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Browser</p></th>
-<th><p>description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Chrome &amp; Safari</p></td>
-<td><div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">zk</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        &lt;<span class="kw">tree</span>&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">treecols</span>&gt;</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">treecol</span><span class="ot"> label=</span><span class="st">&quot;Name&quot;</span> /&gt;</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">treecol</span><span class="ot"> label=</span><span class="st">&quot;Description&quot;</span> /&gt;</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">treecols</span>&gt;</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>            &lt;<span class="kw">treechildren</span>&gt;</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>                &lt;<span class="kw">treeitem</span>&gt;</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>                    &lt;<span class="kw">treerow</span>&gt;</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>                        &lt;<span class="kw">treecell</span><span class="ot"> label=</span><span class="st">&quot;Item 1&quot;</span> /&gt;</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                        &lt;<span class="kw">treecell</span><span class="ot"> label=</span><span class="st">&quot;Item 1 description&quot;</span> /&gt;</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                    &lt;/<span class="kw">treerow</span>&gt;</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                &lt;/<span class="kw">treeitem</span>&gt;</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>            &lt;/<span class="kw">treechildren</span>&gt;</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        &lt;/<span class="kw">tree</span>&gt;</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    &lt;/<span class="kw">hbox</span>&gt;</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">zk</span>&gt;</span>`</pre></div>
-<p>The width of the tree will be zero with Chrome &amp; Safari. the
+| Browser | description |
+|---|---|
+| Chrome &amp; Safari | <div class="sourceCode" id="cb1"><pre class="sourceCode xml">`&lt;zk&gt;
+    &lt;hbox&gt;
+        &lt;tree&gt;
+            &lt;treecols&gt;
+                &lt;treecol label="Name" /&gt;
+                &lt;treecol label="Description" /&gt;
+            &lt;/treecols&gt;
+            &lt;treechildren&gt;
+                &lt;treeitem&gt;
+                    &lt;treerow&gt;
+                        &lt;treecell label="Item 1" /&gt;
+                        &lt;treecell label="Item 1 description" /&gt;
+                    &lt;/treerow&gt;
+                &lt;/treeitem&gt;
+            &lt;/treechildren&gt;
+        &lt;/tree&gt;
+    &lt;/hbox&gt;
+&lt;/zk&gt;``</pre></div>
+The width of the tree will be zero with Chrome &amp; Safari. the
 Webkit considers the width of tree as zero. please specify the width to
-tree to work around.</p></td>
-</tr>
-</tbody>
-</table>
+tree to work around. |
 
 # Version History
 

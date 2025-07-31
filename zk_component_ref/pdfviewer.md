@@ -93,52 +93,20 @@ pdfjsLib.version
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onPaging`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onPaging` | <strong>Event:</strong>
 [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the
-pages is selected by the user.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onRender`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+pages is selected by the user. |
+| `onRender` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf
-file is finished rendering.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onZoom`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+file is finished rendering. |
+| `onZoom` | <strong>Event:</strong>
 [org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has
-changed the zoom level.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onRotate`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+changed the zoom level. |
+| `onRotate` | <strong>Event:</strong>
 [org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user
-has changed the rotation angle.</p></td>
-</tr>
-</tbody>
-</table>
+has changed the rotation angle. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

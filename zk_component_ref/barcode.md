@@ -162,40 +162,13 @@ WEB-INF/lang-addon.xml
 
 # Supported Barcode Type (Default)
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Barcode Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>1D CODE Family</p></td>
-<td><p>CODE39, CODE128, CODE128A, CODE128B, CODE128C,</p></td>
-</tr>
-<tr class="even">
-<td><p>1D EAN Family</p></td>
-<td><p>EAN13, EAN8, EAN5, EAN2,</p></td>
-</tr>
-<tr class="odd">
-<td><p>1D MSI Family</p></td>
-<td><p>MSI, MSI10, MSI11, MSI1010, MSI1110,</p></td>
-</tr>
-<tr class="even">
-<td><p>1D Others</p></td>
-<td><p>UPC, ITF14,ITF, PHARMACODE, CODABAR</p></td>
-</tr>
-<tr class="odd">
-<td><p>2D</p></td>
-<td><p>QR</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Barcode Type |
+|---|---|
+| 1D CODE Family | CODE39, CODE128, CODE128A, CODE128B, CODE128C, |
+| 1D EAN Family | EAN13, EAN8, EAN5, EAN2, |
+| 1D MSI Family | MSI, MSI10, MSI11, MSI1010, MSI1110, |
+| 1D Others | UPC, ITF14,ITF, PHARMACODE, CODABAR |
+| 2D | QR |
 
 # Supported Children
 

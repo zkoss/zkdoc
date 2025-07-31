@@ -1384,74 +1384,32 @@ component.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSelect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSelect` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item in the listbox.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onFocus`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+the user has selected a new item in the listbox. |
+| `onFocus` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onFocus
-got executed.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onBlur`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+got executed. |
+| `onBlur` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
-got executed.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onAfterRender`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onPageSize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+got executed. |
+| `onAfterRender` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| `onPageSize` | <strong>Event:</strong>
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onCheckSelectAll`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+is enabled and user changed the size of the content. |
+| `onCheckSelectAll` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6)
 Notifies the checkbox on a listheader is checked to select all checkable
-items.</p></td>
-</tr>
-</tbody>
-</table>
+items. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1460,38 +1418,11 @@ items.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/listbox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>select</p>
-</center></td>
-<td>![](/zk_component_ref/images/listbox_mold_select.png)</td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>paging</p>
-</center></td>
-<td>![](/zk_component_ref/images/listbox_mold_paging.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/listbox_mold_default.png) |
+| select | ![](/zk_component_ref/images/listbox_mold_select.png) |
+| paging | ![](/zk_component_ref/images/listbox_mold_paging.png) |
 
 # Supported Children
 

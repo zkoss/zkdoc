@@ -80,68 +80,26 @@ user action. And also the close icon will not show.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onActive`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onActive` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
-activated this GoldenPanel.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onPanelDrop`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+activated this GoldenPanel. |
+| `onPanelDrop` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has dropped
-this GoldenPanel.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onFlexSize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+this GoldenPanel. |
+| `onFlexSize` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
-this GoldenPanel.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onClose`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+this GoldenPanel. |
+| `onClose` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has closed
-this GoldenPanel.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onMaximize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+this GoldenPanel. |
+| `onMaximize` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
-maximized this GoldenPanel.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onMinimize`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+maximized this GoldenPanel. |
+| `onMinimize` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
-minimized this GoldenPanel.</p></td>
-</tr>
-</tbody>
-</table>
+minimized this GoldenPanel. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

@@ -36,29 +36,12 @@ Represent the range value. (Default: 0)
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onRangeValueChange</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| onRangeValueChange | <strong>Event:</strong>
 [org.zkoss.zkex.zul.event.RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html)
 Denotes the range value of a component has been changed by the
-user.</p></td>
-</tr>
-</tbody>
-</table>
+user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

@@ -111,29 +111,12 @@ examining the return value of
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onCheck</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| onCheck | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when
 toolbarbutton is checked , only available in toggle mode . (since ZK
-6.0.0)</p></td>
-</tr>
-</tbody>
-</table>
+6.0.0) |
 
 - Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 

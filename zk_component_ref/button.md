@@ -356,44 +356,17 @@ for inherited functions.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onFocus`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Denotes when a component gets the focus.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onBlur`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)</p>
-<p>Denotes when a component loses the focus.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onUpload`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onFocus` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
+Denotes when a component gets the focus. |
+| `onBlur` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
+Denotes when a component loses the focus. |
+| `onUpload` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
-uploaded a file to the component.</p></td>
-</tr>
-</tbody>
-</table>
+uploaded a file to the component. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
@@ -402,38 +375,11 @@ uploaded a file to the component.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/button_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>trendy</p>
-</center></td>
-<td>![](/zk_component_ref/images/button_mold_trendy.png)</td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>os</p>
-</center></td>
-<td>![](/zk_component_ref/images/button_mold_os.png)</td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/button_mold_default.png) |
+| trendy | ![](/zk_component_ref/images/button_mold_trendy.png) |
+| os | ![](/zk_component_ref/images/button_mold_os.png) |
 
 # Supported Children
 
@@ -443,45 +389,21 @@ zul.jar.
 
 
 
-<table>
-<thead>
-<tr class="header">
-<th><p>Version</p></th>
-<th><p>Date</p></th>
-<th><p>Content</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>5.0.4</p></td>
-<td><p>August 2010</p></td>
-<td><p>[org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
-was introduced to allow a button able to submit or reset a form.</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">n:form</span><span class="ot"> action=</span><span class="st">&quot;a_uri&quot;</span><span class="ot"> xmlns:n=</span><span class="st">&quot;native&quot;</span>&gt;</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> label=</span><span class="st">&quot;Submit&quot;</span>/&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> type=</span><span class="st">&quot;reset&quot;</span><span class="ot"> label=</span><span class="st">&quot;Reset&quot;</span>/&gt;</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>&lt;/<span class="kw">n:form</span>&gt;</span>`</pre></div></td>
-</tr>
-<tr class="even">
-<td><p>6.0.0</p></td>
-<td><p>December 2011</p></td>
-<td><p>[org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
+| Version | Date | Content |
+|---|---|---|
+| 5.0.4 | August 2010 | [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
+was introduced to allow a button able to submit or reset a form.
+<div class="sourceCode" id="cb1"><pre class="sourceCode xml">`&lt;n:form action="a_uri" xmlns:n="native"&gt;
+  &lt;button type="submit" label="Submit"/&gt;
+  &lt;button type="reset" label="Reset"/&gt;
+&lt;/n:form&gt;``</pre></div> |
+| 6.0.0 | December 2011 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
 the <em>multiple</em> setting was introduced to allow to choose multiple
-files to upload at the same time. (HTML5 supported browsers only)</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,multiple=true&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span>`</pre></div></td>
-</tr>
-<tr class="odd">
-<td><p>7.0.0</p></td>
-<td><p>September 2013</p></td>
-<td><p>[org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
+files to upload at the same time. (HTML5 supported browsers only)
+<div class="sourceCode" id="cb2"><pre class="sourceCode xml">`  &lt;button upload="true,multiple=true" label="Fileupload"/&gt;``</pre></div> |
+| 7.0.0 | September 2013 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
 the <em>accept</em> setting was introduced to allow to specify the types
-of files that the server accepts. (HTML5 supported browsers only)</p>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>  &lt;<span class="kw">button</span><span class="ot"> upload=</span><span class="st">&quot;true,accept=audio/*|video/*|image/*|MIME_type&quot;</span><span class="ot"> label=</span><span class="st">&quot;Fileupload&quot;</span>/&gt;</span>`</pre></div></td>
-</tr>
-</tbody>
-</table>
+of files that the server accepts. (HTML5 supported browsers only)
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml">`  &lt;button upload="true,accept=audio/*|video/*|image/*|MIME_type" label="Fileupload"/&gt;``</pre></div> |
 
 

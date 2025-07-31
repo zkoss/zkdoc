@@ -78,37 +78,15 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>onPortalDrop</p>
-</center></td>
-<td><p>{% include version-badge.html version=9.5.1 %} <strong>Event:</strong>
-[org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html)</p>
-<p>Represents an event after a portal is dropped and before a portal is
-moved.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>onPortalMove</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| onPortalDrop | {% include version-badge.html version=9.5.1 %} <strong>Event:</strong>
+[org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html)
+Represents an event after a portal is dropped and before a portal is
+moved. |
+| onPortalMove | <strong>Event:</strong>
 [org.zkoss.zkmax.ui.event.PortalMoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalMoveEvent.html) Represents
-an event caused by a portal being moved.</p></td>
-</tr>
-</tbody>
-</table>
+an event caused by a portal being moved. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

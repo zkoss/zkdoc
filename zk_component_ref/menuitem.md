@@ -214,36 +214,14 @@ where
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onCheck`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onCheck` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes user has
-checked the item.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>onUpload</p>
-</center></td>
-<td><p><strong>Event:</strong>
+checked the item. |
+| onUpload | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
-uploaded a file to the component.</p></td>
-</tr>
-</tbody>
-</table>
+uploaded a file to the component. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 

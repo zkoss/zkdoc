@@ -68,33 +68,16 @@ Default getSclass(): the same as grid's sclass.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onOpen`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onOpen` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
-opened or closed a component. Note:</p>
-<p>unlike `onClose`, this event is only a notification. The
-client sends this event after opening or closing the component.</p>
-<p>It is useful to implement load-on-demand by listening to the
+opened or closed a component. Note:
+unlike `onClose`, this event is only a notification. The
+client sends this event after opening or closing the component.
+It is useful to implement load-on-demand by listening to the
 `onOpen` event, and creating components when the first time
-the component is opened.</p></td>
-</tr>
-</tbody>
-</table>
+the component is opened. |
 
 - Inherited Supported Events: [ Row]({{site.baseurl}}/zk_component_ref/row#Supported_Events)
 

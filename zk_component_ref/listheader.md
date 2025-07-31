@@ -50,48 +50,21 @@ a list box. Its parent must be `Listhead`.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSort`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSort` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) Denotes user has
-sorted the row of this column.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onGroup`</p>
-</center></td>
-<td><p><strong>Event:</strong>
-[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html)</p>
-<p>`[ZK PE]`</p>
-<p>{% include version-badge.html version=6.5.0 %} Denotes user has grouped all the
-cells under a column.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onUngroup`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+sorted the row of this column. |
+| `onGroup` | <strong>Event:</strong>
+[org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html)
+`[ZK PE]`
+{% include version-badge.html version=6.5.0 %} Denotes user has grouped all the
+cells under a column. |
+| `onUngroup` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 {% include version-badge.html version=6.5.0 %} Denotes user has ungrouped all the
-cells under a column.</p></td>
-</tr>
-</tbody>
-</table>
+cells under a column. |
 
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 

@@ -67,29 +67,12 @@ write codes as shown below (MVVM pattern).
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onStateChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onStateChange` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StateChangeEvent.html) Notifies when
 invoking play(), stop(), pause() or the audio is played to the
-end.</p></td>
-</tr>
-</tbody>
-</table>
+end. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

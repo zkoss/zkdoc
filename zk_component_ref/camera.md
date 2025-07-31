@@ -250,68 +250,26 @@ css classes like the following:
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onVideoUpload`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onVideoUpload` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
-video has been uploaded.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onSnapshotUpload`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+video has been uploaded. |
+| `onSnapshotUpload` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
-snapshot has been uploaded.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onMaxsizeExceed`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+snapshot has been uploaded. |
+| `onMaxsizeExceed` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
-size is bigger than the max size.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onLengthLimitExceed`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+size is bigger than the max size. |
+| `onLengthLimitExceed` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
-length exceeds the max length.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onStateChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+length exceeds the max length. |
+| `onStateChange` | <strong>Event:</strong>
 [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
-when invoking start(), stop(), pause() or resume().</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onCameraUnavailable`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+when invoking start(), stop(), pause() or resume(). |
+| `onCameraUnavailable` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if
-camera is unavailable after requesting media devices from user.</p></td>
-</tr>
-</tbody>
-</table>
+camera is unavailable after requesting media devices from user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

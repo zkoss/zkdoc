@@ -330,28 +330,11 @@ for inherited functions.
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onTimeZoneChange`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onTimeZoneChange` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of
-the component is changed by user.</p></td>
-</tr>
-</tbody>
-</table>
+the component is changed by user. |
 
 - Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
 
@@ -360,33 +343,11 @@ the component is changed by user.</p></td>
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Snapshot</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>default</p>
-</center></td>
-<td>![](/zk_component_ref/images/datebox_mold_default.png)</td>
-</tr>
-<tr class="even">
-<td><center>
-<p>rounded</p>
-</center></td>
-<td><p>![](/zk_component_ref/images/datebox_mold_rounded.png)
-{% include version-badge.html version=5.0.0 %}</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/datebox_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png)
+{% include version-badge.html version=5.0.0 %} |
 
 # Supported Children
 

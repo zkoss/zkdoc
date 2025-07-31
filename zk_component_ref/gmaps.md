@@ -145,93 +145,33 @@ Specify which protocol to load the Maps API. Currently it supports
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onSelect`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onSelect` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item(can be <a
-href="{{site.baseurl}}/zk_component_ref/ginfo"
-title="wikilink"> Ginfo</a>, <a
-href="{{site.baseurl}}/zk_component_ref/gpolyline"
-title="wikilink"> Gpolyline</a>, or <a
-href="{{site.baseurl}}/zk_component_ref/gpolygon"
-title="wikilink"> Gpolygon</a>) in the gmaps.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onInfoChange`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/infochangeevent" title="wikilink">
-InfoChangeEvent</a></p>
-<p>Notifies that the current open information window has
-changed(opened/closed)</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onMapDrop`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
-MapDropEvent</a></p>
-<p>Notifies that some component is dragged and dropped on the gmaps or
-gmarker component with latitude and longitude information.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onMapClick` `onMapRightClick`</p>
-<p>`onMapDoubleClick`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/mapmouseevent" title="wikilink">
-MapMouseEvent</a></p>
-<p>Notifies that some mouse action has been applied on the gmaps or
-gmarker component with latitude and longitude information.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onMapMove`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink">
-MapMoveEvent</a></p>
-<p>Notifies that the view center (latitude, longitude) of the gmaps has
-been moved.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onMapTypeChange`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/maptypechangeevent"
-title="wikilink"> MapTypeChangeEvent</a></p>
-<p>Notifies that the map type of the gmaps has been changed.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>`onMapZoom`</p>
-</center></td>
-<td><p><strong>Event:</strong> <a
-href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink">
-MapZoomEvent</a></p>
-<p>Notifies that the zoom level of the gmaps has been changed.</p></td>
-</tr>
-</tbody>
-</table>
+the user has selected a new item(can be <a href="{{site.baseurl}}/zk_component_ref/ginfo" title="wikilink"> Ginfo</a>, <a href="{{site.baseurl}}/zk_component_ref/gpolyline" title="wikilink"> Gpolyline</a>, or <a href="{{site.baseurl}}/zk_component_ref/gpolygon" title="wikilink"> Gpolygon</a>) in the gmaps. |
+| `onInfoChange` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/infochangeevent" title="wikilink">
+InfoChangeEvent</a>
+Notifies that the current open information window has
+changed(opened/closed) |
+| `onMapDrop` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
+MapDropEvent</a>
+Notifies that some component is dragged and dropped on the gmaps or
+gmarker component with latitude and longitude information. |
+| `onMapClick` `onMapRightClick`
+`onMapDoubleClick` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapmouseevent" title="wikilink">
+MapMouseEvent</a>
+Notifies that some mouse action has been applied on the gmaps or
+gmarker component with latitude and longitude information. |
+| `onMapMove` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink">
+MapMoveEvent</a>
+Notifies that the view center (latitude, longitude) of the gmaps has
+been moved. |
+| `onMapTypeChange` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/maptypechangeevent" title="wikilink"> MapTypeChangeEvent</a>
+Notifies that the map type of the gmaps has been changed. |
+| `onMapZoom` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink">
+MapZoomEvent</a>
+Notifies that the zoom level of the gmaps has been changed. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

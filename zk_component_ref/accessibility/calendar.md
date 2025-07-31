@@ -4,36 +4,12 @@
 
 ## Keyboard Support
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Key</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ArrowUp / ArrowDown / ArrowLeft / ArrowRight</p></td>
-<td><p>Navigate the date.</p></td>
-</tr>
-<tr class="even">
-<td><p>Enter / Spacebar</p></td>
-<td><p>Select the date.</p></td>
-</tr>
-<tr class="odd">
-<td><p>PageUp / PageDown</p></td>
-<td><p>{% include version-badge.html version=10.0.0 %} Navigate the month.</p></td>
-</tr>
-<tr class="even">
-<td><p>Shift+PageUp / Shift+PageDown</p></td>
-<td><p>{% include version-badge.html version=10.0.0 %} Navigate the year.</p></td>
-</tr>
-</tbody>
-</table>
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown / ArrowLeft / ArrowRight | Navigate the date. |
+| Enter / Spacebar | Select the date. |
+| PageUp / PageDown | {% include version-badge.html version=10.0.0 %} Navigate the month. |
+| Shift+PageUp / Shift+PageDown | {% include version-badge.html version=10.0.0 %} Navigate the year. |
 
 ## Calendar Day AriaLabel Renderer
 

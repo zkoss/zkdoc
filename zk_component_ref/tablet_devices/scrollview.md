@@ -59,41 +59,19 @@ The default orient of child components inside Scrollview is
 
 # Supported Events
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Event Type</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>`onScroll`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+| Name | Event Type |
+|---|---|
+| `onScroll` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) <strong>In mobile
 devices:</strong> Denotes that the content of a scrollable component has
 been scrolled by the user. Notice that you can check if it is scrolled
 outside/inside boundaries by invoking `getOutOfBound` method
-in the ScrollEvent.</p>
-<p><strong>In desktop:</strong> This event will be triggered when users
-scroll all the way to the top or to the end of the page.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>`onScrolling`</p>
-</center></td>
-<td><p><strong>Event:</strong>
+in the ScrollEvent.
+<strong>In desktop:</strong> This event will be triggered when users
+scroll all the way to the top or to the end of the page. |
+| `onScrolling` | <strong>Event:</strong>
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
-user is scrolling a scrollable component.</p></td>
-</tr>
-</tbody>
-</table>
+user is scrolling a scrollable component. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

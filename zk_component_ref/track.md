@@ -55,50 +55,13 @@ track only.
 
 Specify what kind of track it is. Allowed values are:
 
-<table>
-<thead>
-<tr class="header">
-<th><center>
-<p>Name</p>
-</center></th>
-<th><center>
-<p>Description</p>
-</center></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><center>
-<p>subtitles</p>
-</center></td>
-<td><p>Closed subtitles.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>captions</p>
-</center></td>
-<td><p>Closed captions.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>descriptions</p>
-</center></td>
-<td><p>A textual description about what this video/audio is.</p></td>
-</tr>
-<tr class="even">
-<td><center>
-<p>chapters</p>
-</center></td>
-<td><p>Chapter titles for users to navigate.</p></td>
-</tr>
-<tr class="odd">
-<td><center>
-<p>metadata</p>
-</center></td>
-<td><p>A track used by scripts.</p></td>
-</tr>
-</tbody>
-</table>
+| Name | Description |
+|---|---|
+| subtitles | Closed subtitles. |
+| captions | Closed captions. |
+| descriptions | A textual description about what this video/audio is. |
+| chapters | Chapter titles for users to navigate. |
+| metadata | A track used by scripts. |
 
 ## Label
 
