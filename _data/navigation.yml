@@ -31,7 +31,7 @@ main:
     url: https://doc.keikai.io/
   - title: ZK Spring Essentials
     url: /zk_spring_essentials/introduction
-  - title: ZATS
+  - title: ZATS Essentials
     url: /zats_essentials/introduction
   - title: ZK JSP Tags Essentials
     url: /zk_jsp_tags_essentials/before_you_start

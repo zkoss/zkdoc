@@ -89,11 +89,7 @@ include jetty-related jars. If not, please check your Maven setting.
 
 ## Manually
 
-<div style="font-size:18px;">
-
 [Download ZATS Mimic Binary](http://www.zkoss.org/download/zats)
-
-</div>
 
 For projects depending on **ZK 7**:
 
