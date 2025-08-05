@@ -11,6 +11,11 @@ breeze and silver gray.
 
 Please see [ZK Developer's Reference/Theming and Styling/Creating Custom Themes/Theme Template]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_template).
 
+# ZK Framework UI Kit 
+
+The ZK Framework UI Kit is a Figma-based design toolkit containing all core UI components to help designers create detailed layouts that developers can easily implement. Please learn more about the kit from [this smalltalk](https://www.zkoss.org/wiki/Small_Talks/2024/November/Enhancing_Design_Collaboration:_The_ZK_Figma_Kit_for_Seamless_Web_App_Development
+). 
+
 # Change Font Size and Family
 
 You can use CSS to define the fonts (there are no special config
