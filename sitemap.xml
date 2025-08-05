@@ -3,40 +3,16 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  {% comment %} Add HTML pages with their images {% endcomment %}
+  <!-- page url -->
   {% for page in site.pages %}
-    {% unless page.path contains '_' or page.url contains '.css' or page.url contains '.js' or page.url contains 'sitemap.xml' or page.url contains 'feed.xml' or page.url contains 'debug-pages.html' %}
-      <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-          {% if page.content contains '<img' or page.content contains '![' %}
-            {% assign images = page.content | split: 'src="' %}
-            {% for img in images offset:1 %}
-              {% assign src = img | split: '"' | first %}
-              {% unless src contains 'http' %}
-                {% if src contains '.png' or src contains '.jpg' or src contains '.gif' or src contains '.svg' %}
-                  <image:image>
-                    <image:loc>{{ site.url }}{% if src contains '/' %}{{ src }}{% else %}/{{ src }}{% endif %}</image:loc>
-                  </image:image>
-                {% endif %}
-              {% endunless %}
-            {% endfor %}
-            {% assign markdown_images = page.content | split: '![' %}
-            {% for img in markdown_images offset:1 %}
-              {% assign src_part = img | split: '](' | last | split: ')' | first %}
-              {% unless src_part contains 'http' %}
-                {% if src_part contains '.png' or src_part contains '.jpg' or src_part contains '.gif' or src_part contains '.svg' %}
-                  <image:image>
-                    <image:loc>{{ site.url }}{% if src_part contains '/' %}{{ src_part }}{% else %}/{{ src_part }}{% endif %}</image:loc>
-                  </image:image>
-                {% endif %}
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
-        </url>
-    {% endunless %}
+  {% unless page.url contains '.css' or page.url contains '.js' or page.url contains 'sitemap.xml' or page.url contains 'feed.xml' %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+  </url>
+  {% endunless %}
   {% endfor %}
-  
-  {% comment %} Add standalone image files (exclude CSS/JS/etc) {% endcomment %}
+
+  <!-- image files -->
   {% assign image_files = site.static_files | where: "extname", ".png" %}
   {% assign jpg_files = site.static_files | where: "extname", ".jpg" %}
   {% assign gif_files = site.static_files | where: "extname", ".gif" %}  
