@@ -1,4 +1,3 @@
-# Caption
 
 - **Demonstration**: [Groupbox](https://www.zkoss.org/zkdemo/layout/group_box)
 - **Java API**: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)

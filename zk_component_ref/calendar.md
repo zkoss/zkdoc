@@ -1,7 +1,4 @@
 
-
-# Calendar
-
 - Demonstration:
   [Calendar](http://www.zkoss.org/zkdemo/reporting/simple_calendar)
 - Java API: [org.zkoss.zul.Calendar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Calendar.html)

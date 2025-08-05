@@ -1,7 +1,4 @@
 
-
-# Xul Element
-
 - Java API: [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)
 - JavaScript API: [zul.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.Widget.html)
 

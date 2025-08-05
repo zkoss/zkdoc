@@ -1,7 +1,5 @@
  {% include Deprecated_Content.html %}
 
-# Anchorlayout
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Anchorlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorlayout.html)
 - JavaScript API:

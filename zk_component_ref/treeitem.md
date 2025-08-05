@@ -1,7 +1,4 @@
 
-
-# Treeitem
-
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: [org.zkoss.zul.Treeitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treeitem.html)
 - JavaScript API: [zul.sel.Treeitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treeitem.html)

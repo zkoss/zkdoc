@@ -1,7 +1,4 @@
 
-
-# Colorbox
-
 - Demonstration:
   [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)
 - Java API: [org.zkoss.zkex.zul.Colorbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Colorbox.html)

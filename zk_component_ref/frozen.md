@@ -1,7 +1,4 @@
 
-
-# Frozen
-
 - Demonstration: [Spreadsheet Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
 - Java API: [org.zkoss.zul.Frozen](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Frozen.html)
 - JavaScript API: [zul.mesh.Frozen](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Frozen.html)

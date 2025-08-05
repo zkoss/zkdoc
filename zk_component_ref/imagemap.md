@@ -1,7 +1,4 @@
 
-
-# Imagemap
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Imagemap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Imagemap.html)
 - JavaScript API: [zul.wgt.Imagemap](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Imagemap.html)

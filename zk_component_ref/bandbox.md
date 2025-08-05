@@ -1,7 +1,4 @@
 
-
-# Bandbox
-
 - Demonstration:
   [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: [org.zkoss.zul.Bandbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandbox.html)

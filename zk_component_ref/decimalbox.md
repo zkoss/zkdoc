@@ -1,4 +1,3 @@
-# Decimalbox
 
 - Demonstration:
   [Decimalbox](http://www.zkoss.org/zkdemo/input/form_sample)

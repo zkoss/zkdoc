@@ -1,7 +1,4 @@
 
-
-# Center
-
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.Center](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Center.html)

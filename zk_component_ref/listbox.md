@@ -1,4 +1,3 @@
-# Listbox
 
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
 - Java API: [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)

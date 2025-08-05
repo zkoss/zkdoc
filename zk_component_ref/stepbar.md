@@ -1,7 +1,4 @@
 
-
-# Stepbar
-
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
 - Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
 - JavaScript API: [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)

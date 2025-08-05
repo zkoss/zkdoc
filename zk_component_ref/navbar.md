@@ -1,7 +1,4 @@
 
-
-# Navbar
-
 - Demonstration:
 - Java API:
   [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)

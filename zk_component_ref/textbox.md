@@ -1,7 +1,4 @@
 
-
-# Textbox
-
 - Demonstration:
   [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html)

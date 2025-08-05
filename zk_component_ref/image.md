@@ -1,7 +1,4 @@
 
-
-# Image
-
 - Demonstration:
   [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)
 - Java API: [org.zkoss.zul.Image](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Image.html)

@@ -1,7 +1,4 @@
 
-
-# Combobutton
-
 - Demonstration:
 - Java API: [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
 - JavaScript API:

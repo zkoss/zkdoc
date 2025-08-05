@@ -1,7 +1,4 @@
 
-
-# Listheader
-
 - Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: [org.zkoss.zul.Listheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listheader.html)
 - JavaScript API:

@@ -1,7 +1,5 @@
  {% include Deprecated_Content.html %}
 
-# Fusionchart
-
 - Demonstration:
 - Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fusionchart.html)
 - JavaScript API:

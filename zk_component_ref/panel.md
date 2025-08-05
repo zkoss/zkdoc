@@ -1,4 +1,3 @@
-# Panel
 
 - **Demonstration**: [Panel](https://www.zkoss.org/zkdemo/window/panel)
 - **Java API**: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)

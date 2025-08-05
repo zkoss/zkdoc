@@ -1,7 +1,4 @@
 
-
-# Searchbox
-
 - Demonstration:
   [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
 - Java API: [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)

@@ -1,4 +1,3 @@
-# Label
 
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Label](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html)

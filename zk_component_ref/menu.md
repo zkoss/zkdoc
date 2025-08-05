@@ -1,7 +1,4 @@
 
-
-# Menu
-
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menu](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menu.html)
 - JavaScript API: [zul.menu.Menu](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menu.html)

@@ -1,4 +1,3 @@
-# Tabpanels
 
 - **Demonstration**: [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API**: [org.zkoss.zul.Tabpanels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanels.html)

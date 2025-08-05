@@ -1,7 +1,4 @@
 
-
-# Linelayout
-
 - Java API: [org.zkoss.zkmax.zul.Linelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Linelayout.html)
 - JavaScript API: [zkmax.layout.Linelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Linelayout.html)
 

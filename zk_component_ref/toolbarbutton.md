@@ -1,7 +1,4 @@
 
-
-# Toolbarbutton
-
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: [org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html)

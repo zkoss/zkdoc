@@ -1,7 +1,4 @@
 
-
-# Include
-
 - Demonstration:
   [Include](http://www.zkoss.org/zkdemo/composite/include)
 - Java API: [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)

@@ -1,7 +1,4 @@
 
-
-# Fisheyebar
-
 - Demonstration:
   [Fisheyebar](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
 - Java API: [org.zkoss.zkex.zul.Fisheyebar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheyebar.html)

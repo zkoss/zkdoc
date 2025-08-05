@@ -1,7 +1,5 @@
  {% include Deprecated_Content.html %}
 
-# Anchorchildren
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Anchorchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorchildren.html)
 - JavaScript API:

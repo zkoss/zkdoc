@@ -1,7 +1,4 @@
 
-
-# Checkbox
-
 - Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
 - Java API: [org.zkoss.zul.Checkbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Checkbox.html)
 - JavaScript API: [zul.wgt.Checkbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Checkbox.html)

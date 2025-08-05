@@ -1,7 +1,4 @@
 
-
-# Rangeslider
-
 - Demonstration:
 - Java API:
   [Rangeslider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Rangeslider.html)

@@ -1,7 +1,4 @@
 
-
-# Gscreen
-
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)

@@ -1,4 +1,3 @@
-# Window
 
 - Demonstration:
   [Window](http://www.zkoss.org/zkdemo/window/positioning)

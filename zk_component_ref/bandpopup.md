@@ -1,4 +1,3 @@
-# Bandpopup
 
 - Demonstration: [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: [org.zkoss.zul.Bandpopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandpopup.html)

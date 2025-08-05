@@ -1,7 +1,4 @@
 
-
-# Columnchildren
-
 - Demonstration:
   [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
 - Java API: [org.zkoss.zkex.zul.Columnchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnchildren.html)

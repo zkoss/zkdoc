@@ -1,7 +1,4 @@
 
-
-# Multislider
-
 - Demonstration:
 - Java API:
   [Multislider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Multislider.html)

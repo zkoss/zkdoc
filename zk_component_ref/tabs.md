@@ -1,4 +1,3 @@
-# Tabs
 
 - *Demonstration*: [Tabbox](https://www.zkoss.org/zkdemo/tabbox)
 - Java API: [org.zkoss.zul.Tabs](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabs.html)

@@ -1,7 +1,4 @@
 
-
-# CheckEvent
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html)
 - JavaScript API: N/A

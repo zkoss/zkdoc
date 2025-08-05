@@ -1,7 +1,4 @@
 
-
-# Treefoot
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Treefoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefoot.html)
 - JavaScript API: [zul.sel.Treefoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treefoot.html)

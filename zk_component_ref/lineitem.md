@@ -1,7 +1,4 @@
 
-
-# Lineitem
-
 - Java API: [org.zkoss.zkmax.zul.Lineitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Lineitem.html)
 - JavaScript API: [zkmax.layout.Lineitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Lineitem.html)
 

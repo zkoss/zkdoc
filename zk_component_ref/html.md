@@ -1,7 +1,4 @@
 
-
-# Html
-
 - Demonstration:
   [Html](http://www.zkoss.org/zkdemo/composite/html_element)
 - Java API: [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html)

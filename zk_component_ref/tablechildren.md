@@ -1,7 +1,4 @@
 
-
-# Tablechildren
-
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
 - Java API: [org.zkoss.zkmax.zul.Tablechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablechildren.html)

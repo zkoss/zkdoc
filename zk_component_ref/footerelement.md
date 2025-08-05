@@ -1,4 +1,3 @@
-# Footer Element
 
 - Java API: [`org.zkoss.zul.impl.FooterElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)
 - JavaScript API: [`zul.mesh.FooterWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.FooterWidget.html)

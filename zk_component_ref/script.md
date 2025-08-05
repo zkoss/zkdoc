@@ -1,7 +1,4 @@
 
-
-# Script
-
 - Demonstration:
   [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)
 - Java API: [org.zkoss.zul.Script](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Script.html)

@@ -1,4 +1,3 @@
-# Groupbox
 
 - **Demonstration:** [Groupbox Demo](https://www.zkoss.org/zkdemo/layout/group_box)
 - **Java API:** [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)

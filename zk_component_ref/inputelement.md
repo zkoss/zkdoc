@@ -1,6 +1,3 @@
-# ZK Component Reference: Input Element
-
-## Input Element
 
 
 - Java API: [org.zkoss.zul.impl.InputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html)

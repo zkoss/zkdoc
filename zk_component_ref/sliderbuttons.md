@@ -1,7 +1,4 @@
 
-
-# Sliderbuttons
-
 - Demonstration:
 - Java API:
   [Sliderbuttons](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Sliderbuttons.html)

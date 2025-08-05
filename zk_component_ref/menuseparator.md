@@ -1,7 +1,4 @@
 
-
-# Menuseparator
-
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menuseparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuseparator.html)
 - JavaScript API:

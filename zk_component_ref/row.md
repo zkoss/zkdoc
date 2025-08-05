@@ -1,7 +1,4 @@
 
-
-# Row
-
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: [org.zkoss.zul.Row](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Row.html)
 - JavaScript API: [zul.grid.Row](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Row.html)

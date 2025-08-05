@@ -1,7 +1,4 @@
 
-
-# Portalchildren
-
 - Demonstration:
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
 - Java API: [org.zkoss.zkmax.zul.Portalchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portalchildren.html)

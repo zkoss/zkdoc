@@ -1,7 +1,4 @@
 
-
-# Splitlayout
-
 - Demonstration:
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
 - Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)

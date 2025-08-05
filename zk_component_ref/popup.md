@@ -1,7 +1,4 @@
 
-
-# Popup
-
 - Demonstration: [Tooltips and Popup](http://www.zkoss.org/zkdemo/popup)
 - Java API: [org.zkoss.zul.Popup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html)
 - JavaScript API: [zul.wgt.Popup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Popup.html)

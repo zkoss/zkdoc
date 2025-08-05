@@ -1,7 +1,4 @@
 
-
-# Selectbox
-
 - Demonstration:
   [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)
 - Java API: [org.zkoss.zul.Selectbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Selectbox.html)

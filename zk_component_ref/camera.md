@@ -1,7 +1,4 @@
 
-
-# Camera
-
 - Java API: [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
 - JavaScript API: [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
 

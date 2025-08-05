@@ -1,4 +1,3 @@
-# Label Image Element
 
 - Java API: [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
 - **JavaScript API**: [`zul.LabelImageWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)

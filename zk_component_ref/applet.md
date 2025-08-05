@@ -1,9 +1,5 @@
-
-
 {% include Deprecated_Content.html %} Removed {% include version-badge.html version=
 10.0.0 %}
-
-# Applet
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Applet.html)

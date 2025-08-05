@@ -1,7 +1,4 @@
 
-
-# Style
-
 - Demonstration:
   [Style](http://www.zkoss.org/zkdemo/styling/custom_style)
 - Java API: [org.zkoss.zul.Style](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Style.html)

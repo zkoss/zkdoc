@@ -1,4 +1,3 @@
-# Format Input Element
 
 - Java API: [`org.zkoss.zul.impl.FormatInputElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FormatInputElement.html)
 - JavaScript API: [`zul.inp.FormatWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.FormatWidget.html)

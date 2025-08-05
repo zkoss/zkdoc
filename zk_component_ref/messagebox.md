@@ -1,7 +1,4 @@
 
-
-# Messagebox
-
 - Demonstration: [Messagebox](http://www.zkoss.org/zkdemo/userguide/#l8)
 - Java API: [org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html)
 - JavaScript API: N/A

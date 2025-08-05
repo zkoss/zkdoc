@@ -1,7 +1,4 @@
 
-
-# Gimage
-
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: N/A

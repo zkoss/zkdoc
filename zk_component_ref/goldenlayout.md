@@ -1,7 +1,4 @@
 
-
-# GoldenLayout
-
 {% include version-badge.html version=8.6.0 %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 

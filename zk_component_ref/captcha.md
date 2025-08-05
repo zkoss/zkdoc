@@ -1,7 +1,4 @@
 
-
-# Captcha
-
 - Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Captcha](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Captcha.html)
 - JavaScript API: [zul.wgt.Captcha](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Captcha.html)

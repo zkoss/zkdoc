@@ -1,7 +1,4 @@
 
-
-# Menubar
-
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menubar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menubar.html)
 - JavaScript API: [zul.menu.Menubar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menubar.html)

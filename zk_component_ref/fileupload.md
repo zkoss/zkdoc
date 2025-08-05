@@ -1,4 +1,3 @@
-# Fileupload
 
 - Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
 - Java API: [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)

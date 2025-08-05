@@ -1,7 +1,4 @@
 
-
-# Spinner
-
 - Demonstration:
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Spinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Spinner.html)

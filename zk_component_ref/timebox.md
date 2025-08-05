@@ -1,7 +1,4 @@
 
-
-# Timebox
-
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: [org.zkoss.zul.Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html)
 - JavaScript API: [zul.db.Timebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Timebox.html)
