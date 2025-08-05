@@ -67,7 +67,7 @@ Be aware that a user still can enter a non-existing item.
 
 ## Default Selection
 
-![](/zk_component_ref/images/combobox_onAfterRender.png)
+![](/zk_component_ref/images/Combobox_onAfterRender.png)
 
 ```xml
     <zscript><![CDATA[
@@ -410,10 +410,10 @@ the component is opened. |
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-| Name | Snapshot |
-|---|---|
-| default | ![](/zk_component_ref/images/combobox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/combobox_mold_rounded.png)
+| Name | Snapshot                                                |
+|---|---------------------------------------------------------|
+| default | ![](/zk_component_ref/images/Combobox_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/Combobox_mold_rounded.png) 
 {% include version-badge.html version=5.0.0 %} |
 
 # Supported Children
