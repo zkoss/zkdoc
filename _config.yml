@@ -133,4 +133,5 @@ exclude:
   - "*.iml"
   - "*.code-workspace"
   - "README.md"
+  - "CLAUDE.md"
 
