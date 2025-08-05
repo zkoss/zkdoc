@@ -1,3 +1,7 @@
+---
+title: "Performance Monitoring"
+---
+
 
 
 To improve the performance of an Ajax application, it is better to

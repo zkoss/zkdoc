@@ -1,3 +1,7 @@
+---
+title: "split"
+---
+
 ```java
 String[] split(String value, String regex);
 ```

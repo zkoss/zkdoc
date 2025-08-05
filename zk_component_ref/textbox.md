@@ -1,3 +1,7 @@
+---
+title: "Textbox"
+---
+
 
 - Demonstration:
   [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)

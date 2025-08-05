@@ -1,3 +1,7 @@
+---
+title: "Tree Template"
+---
+
 Similar to
 [Listbox]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template),
 you can also define a customer rendering with a template for a tree:

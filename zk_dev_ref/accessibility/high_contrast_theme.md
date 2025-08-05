@@ -1,3 +1,7 @@
+---
+title: "High Contrast Theme"
+---
+
 ZK provides 3 accessibility-ready [high contrast themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#Accessibility-ready_themes)
 according to \[<https://www.w3.org/TR/WCAG20/>\| WCAG 1.4.3 Contrast
 (Minimum)\]: *The visual presentation of text and images of text should

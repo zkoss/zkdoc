@@ -1,3 +1,7 @@
+---
+title: "XML"
+---
+
 `Name: xml`  
 `File Extensions: xml`  
 `Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)  

@@ -1,3 +1,7 @@
+---
+title: "Image"
+---
+
 
 - Demonstration:
   [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)

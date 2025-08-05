@@ -1,3 +1,7 @@
+---
+title: "Actions and Effects"
+---
+
 Here we describe how to provide more effects for [client-side actions]({{site.baseurl}}/zk_dev_ref/ui_patterns/actions_and_effects).
 
 The allowed effects are actually the names of methods defined in

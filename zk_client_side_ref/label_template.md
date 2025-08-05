@@ -1,3 +1,7 @@
+---
+title: "label-template"
+---
+
 **Syntax:**
 
 ```xml

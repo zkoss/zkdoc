@@ -1,3 +1,7 @@
+---
+title: "The file-item-factory-class Element"
+---
+
 **Syntax:**
 
 ```xml

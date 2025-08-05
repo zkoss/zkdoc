@@ -1,3 +1,7 @@
+---
+title: "Organigram Renderer"
+---
+
 When an organigram ([org.zkoss.zkmax.zul.Organigram](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html))
 is assigned with a model, a default renderer is assigned too[^1]. The
 default renderer will assume that each Orgitem has one Orgnode, and it

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.util.logging.realCauseBriefly"
+---
+
 **Property:**
 
 `org.zkoss.util.logging.realCauseBriefly`

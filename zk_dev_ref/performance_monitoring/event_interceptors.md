@@ -1,3 +1,7 @@
+---
+title: "Event Interceptors"
+---
+
 Though
 [org.zkoss.zk.ui.util.EventInterceptor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/EventInterceptor.html)
 is designed to allow developer to intercept how an event is processed,

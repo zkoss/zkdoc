@@ -1,3 +1,7 @@
+---
+title: "Sample of web.xml"
+---
+
 ```xml
 
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"

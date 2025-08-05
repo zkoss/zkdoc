@@ -1,3 +1,7 @@
+---
+title: "Configure ZK Pivottable JSP Tag"
+---
+
 
 
 Before using pivottable in your JSP pages, you would need to download a

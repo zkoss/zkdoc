@@ -1,3 +1,7 @@
+---
+title: "AU Responses"
+---
+
 An AU response is the command sent from the server to the client for
 synchronizing back the server's states and performing some
 functionality. In response to the [AU request]({{site.baseurl}}/zk_client_side_ref/au_requests)

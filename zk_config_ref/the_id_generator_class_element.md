@@ -1,3 +1,7 @@
+---
+title: "The id-generator-class Element"
+---
+
 **Syntax:**
 
 ```xml

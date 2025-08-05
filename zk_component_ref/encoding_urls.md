@@ -1,3 +1,7 @@
+---
+title: "Encoding URLs"
+---
+
 
 
 A XHTML component generates attributes directly to native HTML tags. It

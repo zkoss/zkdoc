@@ -1,3 +1,7 @@
+---
+title: "length"
+---
+
 ```java
 int length(Object value);
 ```

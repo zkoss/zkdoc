@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.drop.allowNullDragged"
+---
+
 **Property:** org.zkoss.zul.drop.allowNullDragged
 
 Default:  `false`

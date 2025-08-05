@@ -1,3 +1,7 @@
+---
+title: "browser"
+---
+
 ```java
 boolean browser(String type);
 ```

@@ -1,3 +1,7 @@
+---
+title: "Implementing the Component"
+---
+
 As previously mentioned a ZK Component consists of a server-side
 component usually written in Java and a client based widget written in
 JavaScript. Firstly let’s discuss the creation of the server-side

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.tree.throttleMillis"
+---
+
 **Property:**
 
 `org.zkoss.zul.tree.throttleMillis`

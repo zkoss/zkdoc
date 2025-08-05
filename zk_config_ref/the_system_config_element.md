@@ -1,3 +1,7 @@
+---
+title: "The system-config Element"
+---
+
 **Syntax:**
 
 <system-config>  

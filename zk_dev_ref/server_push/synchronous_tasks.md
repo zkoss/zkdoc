@@ -1,3 +1,7 @@
+---
+title: "Synchronous Tasks"
+---
+
 
 
 Server push is a technology to actively *push* data to the client. For

@@ -1,3 +1,7 @@
+---
+title: "forEach"
+---
+
 **Syntax:**
 
 `forEach="${`*`an-EL-expr`*`}"`  

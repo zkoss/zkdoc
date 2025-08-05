@@ -1,3 +1,7 @@
+---
+title: "Retrieve Annotations"
+---
+
 The annotations can be retrieved back at the run-time. They are designed
 to be used by tools or utilities, such as the data-binding manager,
 rather than applications. In other words, applications annotate a ZUML

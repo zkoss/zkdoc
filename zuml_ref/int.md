@@ -1,3 +1,7 @@
+---
+title: "int"
+---
+
 ```java
 int int(Object value);
 ```

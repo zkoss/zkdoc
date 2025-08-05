@@ -1,3 +1,7 @@
+---
+title: "Space"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Space](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Space.html)

@@ -1,3 +1,7 @@
+---
+title: "Creating Custom Themes"
+---
+
 ZK provides an extensive component set that allows web developers to use
 as building blocks for easy web page UI construction. The default
 styling out-of-the-box gives a look-and-feel that imitates the breeze of

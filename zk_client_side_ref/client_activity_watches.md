@@ -1,3 +1,7 @@
+---
+title: "Client Activity Watches"
+---
+
 
 
 In addtion to widget events

@@ -1,3 +1,7 @@
+---
+title: "encodeURL"
+---
+
 ```java
 String encodeURL(String uri);
 ```

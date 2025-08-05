@@ -1,3 +1,7 @@
+---
+title: "Data-Swipeable"
+---
+
 ` ZK EE tablet only`
 
 Each layout region in borderlayout can support the closing and opening

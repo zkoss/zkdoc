@@ -1,3 +1,7 @@
+---
+title: "script"
+---
+
 **Syntax:**
 
 <?script [type="text/javascript"] [src="''uri''"] [charset="''encoding''"]

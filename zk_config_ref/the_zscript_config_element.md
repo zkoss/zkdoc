@@ -1,3 +1,7 @@
+---
+title: "The zscript-config Element"
+---
+
 **Syntax:**
 ```xml
 <zscript-config>  

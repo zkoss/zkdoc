@@ -1,3 +1,7 @@
+---
+title: "The au-decoder-class Element"
+---
+
 **Syntax:**
 
 ```xml

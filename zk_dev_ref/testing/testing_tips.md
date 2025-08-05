@@ -1,3 +1,7 @@
+---
+title: "Testing Tips"
+---
+
 Here we introduce some tips when you use a browser testing tool to test
 ZK-based applications, e.g. [JMeter](https://jmeter.apache.org/),
 [TestCafe](https://testcafe.io/), selenium.

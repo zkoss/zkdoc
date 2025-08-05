@@ -1,3 +1,7 @@
+---
+title: "UI Factory"
+---
+
 [org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html) is
 used to instantiate all UI objects, such as session, desktop, and
 components, and to load ZUML documents. You could customize it to

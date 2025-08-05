@@ -1,3 +1,7 @@
+---
+title: "Biglistbox Renderer"
+---
+
 The implementation of a custom renderer for a Biglistbox
 ([org.zkoss.zkmax.zul.MatrixRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixRenderer.html))
 is straightforward[^1]:

@@ -1,3 +1,7 @@
+---
+title: "Understanding the Theming Subsystem"
+---
+
 The collection of the components' stylesheets and associated images is
 called a theme. Themes control the overall look and feel of a page
 composed of ZK components. For example, the components using the

@@ -1,3 +1,7 @@
+---
+title: "root-attributes"
+---
+
 **Syntax:**
 
 <?root-attributes ''any-name1''="''any-value2''" ''any-name2''="''any-value2''"?>

@@ -1,3 +1,7 @@
+---
+title: "The org.zkoss.xel.VariableResolver interface"
+---
+
 **Listener:**
 
 `org.zkoss.xel.VariableResolver`

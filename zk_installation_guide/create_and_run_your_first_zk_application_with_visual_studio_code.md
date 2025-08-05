@@ -1,3 +1,7 @@
+---
+title: "First ZK App with Visual Studio Code"
+---
+
 ## Introduction
 
 We assume you chose VS Code because it is your favourite IDE and you

@@ -1,3 +1,7 @@
+---
+title: "style"
+---
+
 **Syntax:**
 
 <?style [type="text/css"] [src="''uri''"] [charset="''encoding''"]

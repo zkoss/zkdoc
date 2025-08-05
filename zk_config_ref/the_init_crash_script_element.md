@@ -1,3 +1,7 @@
+---
+title: "The init-crash-script Element"
+---
+
 **Syntax:**
 
 ```xml

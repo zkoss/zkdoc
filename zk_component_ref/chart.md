@@ -1,3 +1,7 @@
+---
+title: "Chart"
+---
+
 
 - Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
 - Java API: [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)

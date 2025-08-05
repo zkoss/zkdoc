@@ -1,3 +1,7 @@
+---
+title: "Applet"
+---
+
 {% include Deprecated_Content.html %} Removed {% include version-badge.html version=
 10.0.0 %}
 

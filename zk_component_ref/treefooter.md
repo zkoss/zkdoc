@@ -1,3 +1,7 @@
+---
+title: "Treefooter"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Treefooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefooter.html)

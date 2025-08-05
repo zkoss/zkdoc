@@ -1,3 +1,7 @@
+---
+title: "XML Editor"
+---
+
 If you are using a XML editor, you could specify the schema directly in
 your ZUL document, such that the validation and **Content Assist** will
 be enabled automatically. Here is an example.

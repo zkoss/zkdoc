@@ -1,3 +1,7 @@
+---
+title: "Use Live Data and Paging"
+---
+
 Sending out a listbox/grid/tree with a lot of items to the client is
 expensive. In addition, the JavaScript engines of some browsers are not
 good for initializing a listbox/grid/tree with a lot of items. A better

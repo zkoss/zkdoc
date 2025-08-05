@@ -1,3 +1,7 @@
+---
+title: "Colorbox"
+---
+
 
 - Demonstration:
   [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)

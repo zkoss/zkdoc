@@ -1,3 +1,7 @@
+---
+title: "Rangeslider"
+---
+
 
 - Demonstration:
 - Java API:

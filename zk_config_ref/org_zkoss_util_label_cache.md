@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.util.label.cache"
+---
+
 **Property:**
 
 `org.zkoss.util.label.cache`

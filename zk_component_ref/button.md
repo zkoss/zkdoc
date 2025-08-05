@@ -1,3 +1,7 @@
+---
+title: "Button"
+---
+
 
 - Demonstration: [Button](http://www.zkoss.org/zkdemo/input/button) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)

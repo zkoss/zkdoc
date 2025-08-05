@@ -1,3 +1,7 @@
+---
+title: "Global Preferences"
+---
+
 The global preference for ZK Studio can be accessed by selecting
 **\[Window\]/\[Preferences\]** from Eclipse's main menu and select "ZK"
 from the tree on the left hand side.

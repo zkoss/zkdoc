@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.defaultComposer.class"
+---
+
 **Property:** 
 
 `org.zkoss.bind.defaultComposer.class`

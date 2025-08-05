@@ -1,3 +1,7 @@
+---
+title: "Getting Started"
+---
+
 
 
 This section covers setup steps to adopt ZATS into your project and a

@@ -1,3 +1,7 @@
+---
+title: "Create your first ZK Charts"
+---
+
 In this section, we will show how to create your first ZK Charts
 component step by step.
 

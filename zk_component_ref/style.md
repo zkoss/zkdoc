@@ -1,3 +1,7 @@
+---
+title: "Style"
+---
+
 
 - Demonstration:
   [Style](http://www.zkoss.org/zkdemo/styling/custom_style)

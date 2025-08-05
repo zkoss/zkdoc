@@ -1,3 +1,7 @@
+---
+title: "Property Rendering"
+---
+
 
 
 If a state (aka., a property) of a component will cause the peer widget

@@ -1,3 +1,7 @@
+---
+title: "The cache-provider-class Element"
+---
+
 **Syntax:**
 
 ```xml

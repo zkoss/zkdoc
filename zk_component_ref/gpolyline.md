@@ -1,3 +1,7 @@
+---
+title: "Gpolyline"
+---
+
 
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

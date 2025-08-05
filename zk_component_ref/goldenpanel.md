@@ -1,3 +1,7 @@
+---
+title: "GoldenPanel"
+---
+
 
 - Java API: [org.zkoss.zkmax.zul.GoldenPanel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenPanel.html)
 - JavaScript API:

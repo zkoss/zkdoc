@@ -1,3 +1,7 @@
+---
+title: "Implementing a Widget Property"
+---
+
 A property usually has a getter and a setter. The getter is
 straightforward:
 

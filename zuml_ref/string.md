@@ -1,3 +1,7 @@
+---
+title: "string"
+---
+
 ```java
 String toString(Object value);
 ```

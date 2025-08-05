@@ -1,3 +1,7 @@
+---
+title: "Sample of web.xml for Servlet 2.4"
+---
+
 After the ZK libraries have been deployed to a Web application, we have
 to configure web.xml to install the required Servlets, listener and
 mapping: [org.zkoss.zk.ui.http.DHtmlLayoutServlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/DHtmlLayoutServlet.html),

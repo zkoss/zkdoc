@@ -1,3 +1,7 @@
+---
+title: "Notifications"
+---
+
 In this section, we discuss the notifications on the client side.
 
 There are 3 ways to notify:

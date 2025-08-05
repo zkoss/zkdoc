@@ -1,3 +1,7 @@
+---
+title: "Layouts"
+---
+
 
 
 This section outline Accessibilities in Layout components.

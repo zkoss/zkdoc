@@ -1,3 +1,7 @@
+---
+title: "The device-type Element"
+---
+
 **Syntax:**
 
 ```xml

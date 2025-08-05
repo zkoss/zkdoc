@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.tablet.meta.viewport.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zul.tablet.meta.viewport.disabled`

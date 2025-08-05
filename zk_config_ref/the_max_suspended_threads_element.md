@@ -1,3 +1,7 @@
+---
+title: "The max-suspended-threads Element"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "ZUL Editor"
+---
+
 ZUL Editor is an intelligent text editor designed for authoring \*.zul &
 \*.zhtml files. When you double click the zul file or zhtml file in the
 **Navigator View**, **Package Explorer View** or **Project Explorer

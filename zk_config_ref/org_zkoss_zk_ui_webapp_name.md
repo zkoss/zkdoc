@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.WebApp.name"
+---
+
 **Preference:**
 
 `org.zkoss.zk.ui.WebApp.name`

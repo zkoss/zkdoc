@@ -1,3 +1,7 @@
+---
+title: "AbstractComponent"
+---
+
 
 - Java API: [org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html)
 

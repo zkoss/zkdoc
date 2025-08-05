@@ -1,3 +1,7 @@
+---
+title: "ZK JSP Tags Essentials"
+---
+
 This section outlines what you are required to do before
 starting with ZK JSP Tags.
 

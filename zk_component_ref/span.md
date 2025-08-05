@@ -1,3 +1,7 @@
+---
+title: "Span"
+---
+
 
 - **Java API:** [org.zkoss.zul.Span](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Span.html)
 - **JavaScript API:** [zul.wgt.Span](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Span.html)

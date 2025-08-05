@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.sys.XMLResourcesLocator.class"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.sys.XMLResourcesLocator.class`

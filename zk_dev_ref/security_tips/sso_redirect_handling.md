@@ -1,3 +1,7 @@
+---
+title: "SSO Redirect Handling"
+---
+
 In this section, we assume you already know the basics of SSO
 (Single-Sign-On) flow like
 \[<https://apereo.github.io/cas/4.2.x/protocol/CAS-Protocol.html>) CAS

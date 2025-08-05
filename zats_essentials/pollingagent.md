@@ -1,3 +1,7 @@
+---
+title: "PollingAgent"
+---
+
  
 
 `Since 1.2.1`

@@ -1,3 +1,7 @@
+---
+title: "HeadersElement"
+---
+
 
 - Demonstration:[Headers Element](http://www.zkoss.org/zkdemo/userguide/#g13)
 - Java API: [`org.zkoss.zul.impl.HeadersElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeadersElement.html)

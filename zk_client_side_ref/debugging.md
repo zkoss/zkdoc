@@ -1,3 +1,7 @@
+---
+title: "Debugging"
+---
+
 Here we discuss how to debug the client-side code. For server side
 debugging, please consult the IDE manual you use.
 

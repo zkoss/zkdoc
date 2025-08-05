@@ -1,3 +1,7 @@
+---
+title: "Using Custom ZK Scopes For Spring Beans"
+---
+
 ### Purpose
 
 Use ZK custom scope for Spring beans.

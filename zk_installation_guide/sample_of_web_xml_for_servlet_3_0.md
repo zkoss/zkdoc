@@ -1,3 +1,7 @@
+---
+title: "Sample of web.xml for Servlet 3.0"
+---
+
 ZK supports Servlet 3.0 Pluggability, so you don't have to configure
 ZK's servlets and listeners in `WEB-INF/web.xml` at all. (Make sure you
 include

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.WCS.cache"
+---
+
 **Property:**
 
 `org.zkoss.zk.WCS.cache`

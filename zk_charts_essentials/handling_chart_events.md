@@ -1,3 +1,7 @@
+---
+title: "Handling Chart Events"
+---
+
 ZK Charts fire events when a user is interacting with the chart, we can,
 therefore, declare a method to listen to the event and handle the event
 data.

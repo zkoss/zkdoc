@@ -1,3 +1,7 @@
+---
+title: "Fusionchart"
+---
+
  {% include Deprecated_Content.html %}
 
 - Demonstration:

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.Filedownload.contentTypeAsIs"
+---
+
 **Property:**
 
 `org.zkoss.zul.Filedownload.contentTypeAsIs`

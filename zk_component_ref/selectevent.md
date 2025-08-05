@@ -1,3 +1,7 @@
+---
+title: "SelectEvent"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)

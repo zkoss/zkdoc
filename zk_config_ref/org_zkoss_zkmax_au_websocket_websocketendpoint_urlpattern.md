@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern"
+---
+
 **Property:** org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern
 
 Default:  `/zkwm`

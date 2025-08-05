@@ -1,3 +1,7 @@
+---
+title: "The file-check-period Element"
+---
+
 **Syntax:**
 
 <file-check-period>a_number</file-check-period>  

@@ -1,3 +1,7 @@
+---
+title: "Operation"
+---
+
 
 
 ZATS Mimic can simulate various user actions to a component such as

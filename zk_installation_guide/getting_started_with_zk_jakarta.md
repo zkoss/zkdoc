@@ -1,3 +1,7 @@
+---
+title: "Getting started with ZK-Jakarta"
+---
+
 This guide's purpose is to provide an easy-to-setup environment to
 develop a ZK application using ZK 9.6 and a Jakarta-compliant run
 environment in Eclipse.

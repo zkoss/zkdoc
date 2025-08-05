@@ -1,3 +1,7 @@
+---
+title: "Bootstrap"
+---
+
 [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 is a very popular front-end framework for building responsive,
 mobile-first sites. It can be a good companion for ZK with the following

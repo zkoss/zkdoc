@@ -1,3 +1,7 @@
+---
+title: "Tabbox Template"
+---
+
 
 
 The template used to control the rendering of each tab and tabpanel must

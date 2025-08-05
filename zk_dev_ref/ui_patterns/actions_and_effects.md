@@ -1,3 +1,7 @@
+---
+title: "Actions and Effects"
+---
+
 
 
 The client-side action (CSA) is used to control how to perform an action

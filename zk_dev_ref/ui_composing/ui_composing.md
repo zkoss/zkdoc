@@ -1,3 +1,7 @@
+---
+title: "UI Composing"
+---
+
 Each UI object is represented by a component
 ([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)). In this
 section we will discuss how to declare UI, including [XML-based approach]({{site.baseurl}}/zk_dev_ref/ui_composing/zuml) and

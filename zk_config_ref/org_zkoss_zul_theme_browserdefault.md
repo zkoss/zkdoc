@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.theme.browserDefault"
+---
+
 **Property:**
 
 `org.zkoss.zul.theme.browserDefault `

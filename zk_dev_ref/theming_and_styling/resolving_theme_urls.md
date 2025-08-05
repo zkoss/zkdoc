@@ -1,3 +1,7 @@
+---
+title: "Resolving Theme URLs"
+---
+
 
 
 Themes comprises of stylesheets and images. The URLs for those resources

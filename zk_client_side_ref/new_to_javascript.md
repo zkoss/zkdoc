@@ -1,3 +1,7 @@
+---
+title: "New to JavaScript"
+---
+
 This section is a quick starting guide for Java Programmers to have
 quick understanding of JavaScript. You could skip this section if you're
 already familiar with JavaScript. For a complete list of ZK client-side

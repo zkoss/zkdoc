@@ -1,3 +1,7 @@
+---
+title: "By Event Effect"
+---
+
 
 
 The naming pattern of Event Effect is used to describe the component

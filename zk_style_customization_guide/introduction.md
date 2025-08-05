@@ -1,3 +1,7 @@
+---
+title: "ZK Style Customization Guide"
+---
+
 Welcome to ZK, the easiest way to build modern Java web applications.
 
 ZK Style Customization Guide describes the styling concept and design of

@@ -1,3 +1,7 @@
+---
+title: "The init-crash-timeout Element"
+---
+
 **Syntax:**
 
 ```xml

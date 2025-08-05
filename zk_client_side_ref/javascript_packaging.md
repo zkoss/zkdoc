@@ -1,3 +1,7 @@
+---
+title: "JavaScript Packaging"
+---
+
 
 
 If you'd like to customize the client-side behavior, it will end up with

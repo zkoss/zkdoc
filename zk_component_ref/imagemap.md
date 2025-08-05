@@ -1,3 +1,7 @@
+---
+title: "Imagemap"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Imagemap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Imagemap.html)

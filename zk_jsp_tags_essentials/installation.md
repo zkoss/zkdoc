@@ -1,3 +1,7 @@
+---
+title: "Installation"
+---
+
  This section outlines information on installing ZK JSP Tags.
 
 # Install ZK First

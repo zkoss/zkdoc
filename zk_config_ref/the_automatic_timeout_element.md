@@ -1,3 +1,7 @@
+---
+title: "The automatic-timeout Element"
+---
+
 **Syntax:**
 
 ```xml

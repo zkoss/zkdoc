@@ -1,3 +1,7 @@
+---
+title: "Groups Model"
+---
+
 
 
 Here we describe how to implement a groups model

@@ -1,3 +1,7 @@
+---
+title: "Data"
+---
+
 
 
 This section outlines components which are designed to handle data

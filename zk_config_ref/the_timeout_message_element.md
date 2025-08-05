@@ -1,3 +1,7 @@
+---
+title: "The timeout-message Element"
+---
+
 **Syntax:**
 
 ```xml

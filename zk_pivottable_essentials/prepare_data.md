@@ -1,3 +1,7 @@
+---
+title: "Prepare Data"
+---
+
 Pivottable takes a model for its data population. Analogous to ListModel
 for Grid component, the model interface we use for Pivottable is
 PivotModel.

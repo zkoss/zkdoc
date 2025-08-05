@@ -1,3 +1,7 @@
+---
+title: "Drag Points"
+---
+
 ## Enabling drag and drop
 
 You can enable draggable-points for one or all series, then users can

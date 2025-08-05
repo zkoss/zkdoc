@@ -1,3 +1,7 @@
+---
+title: "Use Piggyback"
+---
+
 Sometimes there is no hurry to update the result to a client. Rather,
 the UI update could be sent back when the user, say, clicks a button or
 triggers some request to the server. This technique is called

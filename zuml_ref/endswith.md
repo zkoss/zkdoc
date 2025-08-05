@@ -1,3 +1,7 @@
+---
+title: "endsWith"
+---
+
 ```java
 boolean endsWith(String value, String suffix);
 ```

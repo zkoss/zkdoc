@@ -1,3 +1,7 @@
+---
+title: "Operators"
+---
+
 EL expressions provide the following operators[^1]:
 
 | Type | Operators | Description |

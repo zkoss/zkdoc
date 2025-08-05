@@ -1,3 +1,7 @@
+---
+title: "cat5"
+---
+
 ```java
 String cat5(String s1, String s2, String s3, String s4, String s5);
 ```

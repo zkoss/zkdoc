@@ -1,3 +1,7 @@
+---
+title: "The auto-resend-timeout Element"
+---
+
 **Syntax:**
 
 ```xml

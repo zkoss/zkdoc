@@ -1,3 +1,7 @@
+---
+title: "Overview"
+---
+
 ## What is ZK Pivottable
 
 ZK Pivottable is an Ajax data summarization component, which takes raw

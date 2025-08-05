@@ -1,3 +1,7 @@
+---
+title: "trim"
+---
+
 ```java
 String trim(String value);
 ```

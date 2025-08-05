@@ -1,3 +1,7 @@
+---
+title: "The org.zkoss.zk.ui.util.WebAppCleanup interface"
+---
+
 **Listener:**
 
 `org.zkoss.zk.ui.util.WebAppCleanup`

@@ -1,3 +1,7 @@
+---
+title: "Processing Instruction Tags"
+---
+
 This section outlines details on processing instruction tags. The
 processing instruction tags are used to control how ZK JSP tags shall be
 handled.

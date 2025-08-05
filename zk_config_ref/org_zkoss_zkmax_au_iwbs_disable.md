@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.au.IWBS.disable"
+---
+
 **Property:**
 
 `org.zkoss.zkmax.au.IWBS.disable`

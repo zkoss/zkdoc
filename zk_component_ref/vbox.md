@@ -1,3 +1,7 @@
+---
+title: "Vbox"
+---
+
 
 - Demonstration: [Vbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Vbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vbox.html)

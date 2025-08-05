@@ -1,3 +1,7 @@
+---
+title: "Drag-and-Drop Effects"
+---
+
 
 
 There are 2 scopes to customize the drag-and-drop effects: per-widget

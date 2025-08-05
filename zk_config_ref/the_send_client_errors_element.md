@@ -1,3 +1,7 @@
+---
+title: "The send-client-errors Element"
+---
+
 **Syntax:**
 
 ```xml

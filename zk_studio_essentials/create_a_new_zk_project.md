@@ -1,3 +1,7 @@
+---
+title: "Create a New ZK Project"
+---
+
 ## Video Guide
 
 <http://www.youtube.com/watch?v=Gm0IfIYa2PU&NR=1>

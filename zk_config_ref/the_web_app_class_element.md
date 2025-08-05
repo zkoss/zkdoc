@@ -1,3 +1,7 @@
+---
+title: "The web-app-class Element"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "Annotation"
+---
+
 
 
 This section describes how to add annotations on a component definition.

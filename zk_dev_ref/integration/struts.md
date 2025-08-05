@@ -1,3 +1,7 @@
+---
+title: "Struts"
+---
+
 The use of [Struts](http://struts.apache.org/) with ZK is
 straightforward: just replace JSP pages with ZUL pages. You don't need
 to modify action handlers, data models and others. All you need to do is

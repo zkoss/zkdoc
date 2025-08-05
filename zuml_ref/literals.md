@@ -1,3 +1,7 @@
+---
+title: "Literals"
+---
+
 EL expressions define the following literals:
 
 | Type | Description |

@@ -1,3 +1,7 @@
+---
+title: "Implementing the Widget"
+---
+
 The widget class must extend from
 [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html) or one of its derived
 classes. There are several skeletal implementations available. The

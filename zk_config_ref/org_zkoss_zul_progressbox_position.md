@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.progressbox.position"
+---
+
 **Property:**
 
 `org.zkoss.zul.progressbox.position`

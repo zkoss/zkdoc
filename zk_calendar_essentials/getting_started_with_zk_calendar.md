@@ -1,3 +1,7 @@
+---
+title: "Getting Started with ZK Calendar"
+---
+
 Here we introduce the required setup for a web application to use ZK
 Calendar.
 

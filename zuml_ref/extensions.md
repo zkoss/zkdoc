@@ -1,3 +1,7 @@
+---
+title: "Extensions"
+---
+
 There are several ways to extend ZUML:
 
 1.  Add additional languages (aka., component sets)

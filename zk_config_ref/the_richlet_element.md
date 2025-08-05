@@ -1,3 +1,7 @@
+---
+title: "The richlet Element"
+---
+
 To declare a richlet, you have to add the `richlet` element to `zk.xml`.
 You could specify any number of `richlet` elements. Each of them must
 have two child elements, `richlet-name` and `richlet-class`, and might

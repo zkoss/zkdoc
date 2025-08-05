@@ -1,3 +1,7 @@
+---
+title: "Template"
+---
+
 A template is a ZUML fragment that defines how to create components. A
 template is enclosed with [the template element](/zuml_ref/template) as shown
 below.

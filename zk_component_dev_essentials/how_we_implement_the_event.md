@@ -1,3 +1,7 @@
+---
+title: "How we Implement the Event"
+---
+
 To implement the required event we need to follow these steps:
 
 1.  Override

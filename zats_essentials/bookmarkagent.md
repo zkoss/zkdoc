@@ -1,3 +1,7 @@
+---
+title: "BookmarkAgent"
+---
+
 
 
 This agent helps users to mimic changing a [bookmark]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management)

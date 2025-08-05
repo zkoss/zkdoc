@@ -1,3 +1,7 @@
+---
+title: "ZK Spring Essentials"
+---
+
 ZK Spring is an integration library that helps application developers to
 facilitate development with Spring and ZK framework. Currently, ZK
 Spring integration library provides support and additional features for

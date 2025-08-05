@@ -1,3 +1,7 @@
+---
+title: "Essential Components"
+---
+
 
 
 This section outlines components which are considered a "must have" by

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.touch.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zkmax.touch.disabled`

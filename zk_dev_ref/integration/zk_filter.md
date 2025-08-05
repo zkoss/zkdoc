@@ -1,3 +1,7 @@
+---
+title: "ZK Filter"
+---
+
 If you prefer to *Ajax*-ize a dynamically generated HTML page (e.g., the
 output of a Velocity Servlet), you could use ZK Filter to process the
 generated page. The content of the generated page will be interpreted by

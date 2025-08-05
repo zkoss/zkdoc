@@ -1,3 +1,7 @@
+---
+title: "The timeout-uri Element"
+---
+
 **Syntax:**
 
 ```xml

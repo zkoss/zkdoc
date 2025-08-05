@@ -1,3 +1,7 @@
+---
+title: "Column"
+---
+
 
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: [org.zkoss.zul.Column](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html)

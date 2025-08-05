@@ -1,3 +1,7 @@
+---
+title: "New to Java"
+---
+
 To write a zk controller, it's required to know some Java basic knowledge. 
 
 If you haven't installed the following applications on your computer, please download and install them first.

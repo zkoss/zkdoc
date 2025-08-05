@@ -1,3 +1,7 @@
+---
+title: "Theme Template"
+---
+
 We collect all style-related files into [ZK theme template project at Github](https://github.com/zkoss/zkThemeTemplate), making it much easier
 to create a custom theme. The main idea here is to have a ZK template
 theme as the **base theme**, which then allows ZK app developers to fork

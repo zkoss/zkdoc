@@ -1,3 +1,7 @@
+---
+title: "Paging"
+---
+
 
 - Demonstration: [Paging (with Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with Tree)](http://www.zkoss.org/zkdemo/tree/paging)
 - Java API: [org.zkoss.zul.Paging](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Paging.html)

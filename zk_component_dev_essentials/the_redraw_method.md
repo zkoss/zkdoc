@@ -1,3 +1,7 @@
+---
+title: "The Redraw Method"
+---
+
 When a widget is attached to the DOM tree,
 [zk.Widget#redraw(_global_.Array)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#redraw(_global_.Array))
 is called to generate the HTML content. For example, assume you want to

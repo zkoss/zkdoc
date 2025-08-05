@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.versionInfo.enabled"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.versionInfo.enabled`

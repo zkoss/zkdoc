@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.au.AuWriters.ContentType"
+---
+
 **Property:** org.zkoss.zk.au.AuWriters.ContentType
 
 Default:  `text/plain;charset=UTF-8`

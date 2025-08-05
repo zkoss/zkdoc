@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.macro.autoforward.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.macro.autoforward.disabled`

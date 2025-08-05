@@ -1,3 +1,7 @@
+---
+title: "HtmlMacroComponent"
+---
+
 
 - Java API: [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html)
 

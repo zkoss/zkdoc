@@ -1,3 +1,7 @@
+---
+title: "Sclass"
+---
+
 The `sclass` attribute is the way to add extra CSS Class to a component.
 By default, nothing is assigned to `sclass` (i.e. empty). Once you
 specify it with a non-empty value, ZK will add the specified CSS class

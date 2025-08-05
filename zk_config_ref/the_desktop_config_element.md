@@ -1,3 +1,7 @@
+---
+title: "The desktop-config Element"
+---
+
 It is used to customize how ZK handles desktops. You might have multiple
 `desktop-config` elements in one `zk.xml`.
 

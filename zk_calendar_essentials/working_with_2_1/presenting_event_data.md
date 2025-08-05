@@ -1,3 +1,7 @@
+---
+title: "Presenting Event Data"
+---
+
 Having constructed a memory model we can now go ahead and adjust this
 code to work in a functional ZK Calendar application. The code below is
 a fully working readonly calendar which creates random events when the

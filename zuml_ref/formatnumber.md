@@ -1,3 +1,7 @@
+---
+title: "formatNumber"
+---
+
 The default method:
 
 ```java

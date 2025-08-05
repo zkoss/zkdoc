@@ -1,3 +1,7 @@
+---
+title: "Keyboard Support"
+---
+
 You can operate ZK components using only a keyboard, e.g. press TAB to
 move the focus and navigate. For keyboard support details of each
 component, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility/accessibility).

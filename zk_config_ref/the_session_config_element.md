@@ -1,3 +1,7 @@
+---
+title: "The session-config Element"
+---
+
 The allowed child elements include `session-timeout` and
 `max-desktops-per-session`. You might have multiple `session-config`
 elements in one `zk.xml`.

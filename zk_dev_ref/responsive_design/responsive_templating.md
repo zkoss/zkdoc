@@ -1,3 +1,7 @@
+---
+title: "Responsive Templating"
+---
+
 
 This article uses concepts introduced in the [Fluid design]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design)
 and [Adaptive design]({{site.baseurl}}/zk_dev_ref/responsive_design/adaptive_design)

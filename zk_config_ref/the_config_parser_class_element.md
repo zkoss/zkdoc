@@ -1,3 +1,7 @@
+---
+title: "The config-parser-class Element"
+---
+
 **Syntax:**
 
 ```xml

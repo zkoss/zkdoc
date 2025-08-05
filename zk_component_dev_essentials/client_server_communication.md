@@ -1,3 +1,7 @@
+---
+title: "Client-Server Communication"
+---
+
 The following diagram outlines how communication works between a ZK
 Widget and Component.
 

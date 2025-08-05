@@ -1,3 +1,7 @@
+---
+title: "Property View of a Component"
+---
+
 The Properties view is a tabulated view which lists applicable
 attributes and its values of a component that you have selected in the
 Outline view or of a component you have put the cursor on in the ZUL

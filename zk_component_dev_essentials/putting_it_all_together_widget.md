@@ -1,3 +1,7 @@
+---
+title: "Putting it all Together"
+---
+
 The widget implementation must be placed in an independent JavaScript
 file. The file must be placed under the directory,
 **/web/js/package-path**, in the Java class path. Since the widget name

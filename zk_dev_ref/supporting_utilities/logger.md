@@ -1,3 +1,7 @@
+---
+title: "Logger"
+---
+
 
 
 In this section we describe how to configure the logging of ZK internal

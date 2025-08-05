@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.util.label.web.location"
+---
+
 **Property:**
 
 `org.zkoss.util.label.web.location`

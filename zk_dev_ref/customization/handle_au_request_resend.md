@@ -1,3 +1,7 @@
+---
+title: "Handle AU Request Resend"
+---
+
 When an AU request fails, the default *Client Engine* implementation
 will retry 3 times to resend it and ask for a confirming dialog to user.
 

@@ -1,3 +1,7 @@
+---
+title: "Selectbox Template"
+---
+
 Similar to
 [Listbox]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template),
 you can render a selectbox with a template. However, notice that, unlike

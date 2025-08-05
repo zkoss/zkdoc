@@ -1,3 +1,7 @@
+---
+title: "Packing as a Jar"
+---
+
 ## Jar Files
 
 Packing a component as a Jar file will make it easy to deployment. This

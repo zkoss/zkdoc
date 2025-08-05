@@ -1,3 +1,7 @@
+---
+title: "testCurrentLocale"
+---
+
 ```java
 boolean testCurrent(String lang, String country);
 ```

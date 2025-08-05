@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.ScriptErrorListener.class"
+---
+
 **Property:** org.zkoss.zk.ui.ScriptErrorListener.class
 
 Default:  `org.zkoss.zk.ui.script.DefaultScriptErrorListener`

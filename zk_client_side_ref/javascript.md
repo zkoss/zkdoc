@@ -1,3 +1,7 @@
+---
+title: "javascript"
+---
+
 **Syntax:**
 
 

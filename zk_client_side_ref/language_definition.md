@@ -1,3 +1,7 @@
+---
+title: "Language Definition"
+---
+
 
 
 This section describes what a language definition and addon are. It is

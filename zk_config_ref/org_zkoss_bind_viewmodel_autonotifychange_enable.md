@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.viewModel.autoNotifyChange.enable"
+---
+
 **Property:**
 
 `org.zkoss.bind.viewModel.autoNotifyChange.enable`

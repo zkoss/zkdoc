@@ -1,3 +1,7 @@
+---
+title: "Doublebox"
+---
+
 
 - Demonstration:
   [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)

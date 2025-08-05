@@ -1,3 +1,7 @@
+---
+title: "variable-resolver"
+---
+
 **Syntax:**
 
 <?variable-resolver class="..." 

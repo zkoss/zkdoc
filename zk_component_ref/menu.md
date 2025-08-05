@@ -1,3 +1,7 @@
+---
+title: "Menu"
+---
+
 
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menu](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menu.html)

@@ -1,3 +1,7 @@
+---
+title: "Stepbar"
+---
+
 
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
 - Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)

@@ -1,3 +1,7 @@
+---
+title: "HeaderElement"
+---
+
 
 - Java API: [org.zkoss.zul.impl.HeaderElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeaderElement.html)
 - JavaScript API: [`zul.mesh.HeaderWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.HeaderWidget.html)

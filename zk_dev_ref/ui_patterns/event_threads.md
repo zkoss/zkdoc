@@ -1,3 +1,7 @@
+---
+title: "Event Threads"
+---
+
 By default, ZK processes an event in the same Servlet thread that
 receives the HTTP request. It is the suggested approach because the
 performance is better, and it is easy to integrate with other

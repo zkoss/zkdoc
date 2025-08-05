@@ -1,3 +1,7 @@
+---
+title: "Resin"
+---
+
 1.  Download Resin from <http://caucho.com/download/index.xtp> and
     install it, if you haven't installed it yet.
 2.  Stop Resin

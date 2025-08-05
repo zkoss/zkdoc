@@ -1,3 +1,7 @@
+---
+title: "Div"
+---
+
 
 - **Java API:** [org.zkoss.zul.Div](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Div.html)
 - **JavaScript API:** [zul.wgt.Div](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Div.html)

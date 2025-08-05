@@ -1,3 +1,7 @@
+---
+title: "substring"
+---
+
 ```java
 String substring(String s, int from,  int to);
 ```

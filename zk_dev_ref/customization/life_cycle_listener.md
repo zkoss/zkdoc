@@ -1,3 +1,7 @@
+---
+title: "Life Cycle Listener"
+---
+
 
 
 You could have some custom initialization and cleanup when an

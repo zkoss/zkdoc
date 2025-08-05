@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled`

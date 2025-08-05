@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkplus.cdi.beanManager.jndiName"
+---
+
 **Property:**
 
 `org.zkoss.zkplus.cdi.beanManager.jndiName`

@@ -1,3 +1,7 @@
+---
+title: "Client Render on Demand"
+---
+
 
 
 With Enterprise Edition, widgets[^1] will delay the rendering of DOM

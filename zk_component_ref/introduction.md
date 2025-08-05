@@ -1,3 +1,7 @@
+---
+title: "ZK Component Reference"
+---
+
 
 
 This guide acts as a reference of components. We outline each of the XUL

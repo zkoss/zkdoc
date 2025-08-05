@@ -1,3 +1,7 @@
+---
+title: "JAR File's config.xml"
+---
+
 A JAR file could contain a configuration file that will override the
 default configuration of a ZK application. The file must be named as
 `config.xml` and placed under the `/metainfo/zk` directory. Of course,

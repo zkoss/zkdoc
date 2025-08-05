@@ -1,3 +1,7 @@
+---
+title: "Script"
+---
+
 
 - Demonstration:
   [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)

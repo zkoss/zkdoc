@@ -1,3 +1,7 @@
+---
+title: "Server Push"
+---
+
 HTTP is a request-and-response protocol. Technically, there is no way to
 have the server to actively *push* data to the client. However, there
 are [a few approaches](http://en.wikipedia.org/wiki/Push_technology) to

@@ -1,3 +1,7 @@
+---
+title: "Data"
+---
+
 
 
 This section outline Accessibilities in Data components.

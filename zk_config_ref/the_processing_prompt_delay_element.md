@@ -1,3 +1,7 @@
+---
+title: "The processing-prompt-delay Element"
+---
+
 **Syntax:**
 
 ```xml

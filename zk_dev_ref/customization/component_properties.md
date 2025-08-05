@@ -1,3 +1,7 @@
+---
+title: "Component Properties"
+---
+
  With [component definitions]({{site.baseurl}}/zk_client_side_ref/component),
 we could specify the initial values for the properties, attributes and
 annotations of a component. If you want to set the initial value of a property (such as `showTodayLink` for `Datebox`, or any other property for any component) globally across your application, you can use the language addon mechanism described above.

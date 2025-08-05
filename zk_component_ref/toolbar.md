@@ -1,3 +1,7 @@
+---
+title: "Toolbar"
+---
+
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)
 - Java API: [org.zkoss.zul.Toolbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbar.html)

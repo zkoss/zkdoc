@@ -1,3 +1,7 @@
+---
+title: "Orgchildren"
+---
+
 
 - Java API: [org.zkoss.zkmax.zul.Orgchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgchildren.html)
 - JavaScript API: [zkmax.layout.Orgchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgchildren.html)

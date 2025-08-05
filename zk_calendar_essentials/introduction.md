@@ -1,3 +1,7 @@
+---
+title: "ZK Calendar"
+---
+
 ZK Calendar is a Google-Calendar-like Ajax component providing rich and
 intuitive scheduling functionality. One of the main benefits of ZK
 Calendar is it can be embedded into existing Java EE applications with

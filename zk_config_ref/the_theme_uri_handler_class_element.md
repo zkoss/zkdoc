@@ -1,3 +1,7 @@
+---
+title: "The theme-uri-handler-class Element"
+---
+
 **Syntax:**
 
 ```xml

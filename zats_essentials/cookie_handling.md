@@ -1,3 +1,7 @@
+---
+title: "Cookie Handling"
+---
+
  
 
 `Since 1.1.0`

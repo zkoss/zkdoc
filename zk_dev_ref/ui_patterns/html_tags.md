@@ -1,3 +1,7 @@
+---
+title: "HTML Tags"
+---
+
 Here we discuss how to use HTML tags directly in a ZUML document. There
 are several ways as described in the following sections, and you could
 choose one based on your requirements.

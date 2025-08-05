@@ -1,3 +1,7 @@
+---
+title: "class"
+---
+
 ```java
 Class class(String className);
 ```

@@ -1,3 +1,7 @@
+---
+title: "Components and Widgets"
+---
+
 
 
 ![](images/ZKComDevEss_widget_component_application.png)

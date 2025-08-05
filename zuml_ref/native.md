@@ -1,3 +1,7 @@
+---
+title: "Native"
+---
+
 `Name: native`  
 `Namespace: `[`http://www.zkoss.org/2005/zk/native`](http://www.zkoss.org/2005/zk/native)  
 `Namespace shortcut: native`  

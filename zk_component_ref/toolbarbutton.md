@@ -1,3 +1,7 @@
+---
+title: "Toolbarbutton"
+---
+
 
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)

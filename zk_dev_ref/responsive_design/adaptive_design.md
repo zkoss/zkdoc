@@ -1,3 +1,7 @@
+---
+title: "Adaptive Design"
+---
+
 While a fluid layout make a UI usable in any screen resolution, some
 user experiences may require widely different layout and designs
 depending on the type or size of the devices used to browse the

@@ -1,3 +1,7 @@
+---
+title: "Listfoot"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Listfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfoot.html)

@@ -1,3 +1,7 @@
+---
+title: "addon-name"
+---
+
 **Syntax:**
 ```xml
 <addon-name>a_name</addon-name>

@@ -1,3 +1,7 @@
+---
+title: "pageScope"
+---
+
 ## pageScope - java.util.Map
 
 A map of custom attributes associated with the current page. It is the

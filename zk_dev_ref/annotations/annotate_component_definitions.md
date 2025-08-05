@@ -1,3 +1,7 @@
+---
+title: "Annotate Component Definitions"
+---
+
 In addition to annotating a component or its properties, you could
 annotate a component definition, such that all its instances will have
 the annotations.

@@ -1,3 +1,7 @@
+---
+title: "org_zkoss_zk_ui_activate_wait_retry_abort"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.activate.wait.retry.abort`

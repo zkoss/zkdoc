@@ -1,3 +1,7 @@
+---
+title: "The enable-source-map Element"
+---
+
 **Syntax:**
 
 ```xml

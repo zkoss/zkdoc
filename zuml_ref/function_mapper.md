@@ -1,3 +1,7 @@
+---
+title: "function-mapper"
+---
+
 **Syntax:**
 
 <?function-mapper class="..." 

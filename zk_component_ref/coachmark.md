@@ -1,3 +1,7 @@
+---
+title: "Coachmark"
+---
+
 
 {% include version-badge.html version=9.0.0 %}
 

@@ -1,3 +1,7 @@
+---
+title: "eatQuot"
+---
+
 ```java
 java.lang.String eatQuot(java.lang.String)
 ```

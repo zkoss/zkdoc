@@ -1,3 +1,7 @@
+---
+title: "The device-config Element"
+---
+
 **Syntax:**
 
 <device-config>  

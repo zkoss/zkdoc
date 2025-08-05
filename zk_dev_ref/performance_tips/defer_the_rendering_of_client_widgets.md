@@ -1,3 +1,7 @@
+---
+title: "Defer the Rendering of Client Widgets"
+---
+
 In addition to [ Defer the Creation of Child Components]({{site.baseurl}}/zk_dev_ref/performance_tips/defer_the_creation_of_child_components),
 you can defer the rendering of the widgets at the client by the use of
 the `renderdefer` attribute. It is a technique to make a sophisticated

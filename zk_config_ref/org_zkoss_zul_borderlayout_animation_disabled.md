@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.borderlayout.animation.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zul.borderlayout.animation.disabled`

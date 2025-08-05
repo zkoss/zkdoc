@@ -1,3 +1,7 @@
+---
+title: "package"
+---
+
 **Syntax:**
 
 ```xml

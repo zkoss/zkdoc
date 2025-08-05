@@ -1,3 +1,7 @@
+---
+title: "isInstance"
+---
+
 ```java
 Class isInstance(Object class, Object value);
 ```

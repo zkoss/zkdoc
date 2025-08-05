@@ -1,3 +1,7 @@
+---
+title: "Storing Event Data in Memory"
+---
+
 It is easy to store scheduled data in memory and can be done by using
 the [org.zkoss.calendar.impl.SimpleCalendarModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarModel.html). This
 model provides functions to add and remove

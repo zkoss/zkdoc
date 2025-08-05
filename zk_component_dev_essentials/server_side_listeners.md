@@ -1,3 +1,7 @@
+---
+title: "Server-side Listeners"
+---
+
 Then we move on and fire the <mp>"onClear"</mp> event. To fully
 understand what happens next we now need to investigate server side
 listeners which handle these events. A client event will not be sent to

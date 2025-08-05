@@ -1,3 +1,7 @@
+---
+title: "The language-config Element"
+---
+
 **Syntax:**
 
 <language-config>  

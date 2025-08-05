@@ -1,3 +1,7 @@
+---
+title: "class.mold"
+---
+
 **Property:**
 
 [component-full-qualified-class-name]`.mold`

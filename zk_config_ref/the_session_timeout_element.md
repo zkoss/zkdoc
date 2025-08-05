@@ -1,3 +1,7 @@
+---
+title: "The session-timeout Element"
+---
+
 **Syntax:**
 
 ```xml

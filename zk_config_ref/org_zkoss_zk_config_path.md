@@ -1,3 +1,7 @@
+---
+title: "org_zkoss_zk_config_path"
+---
+
 **Property:**
 
 `org.zkoss.zk.config.path`

@@ -1,3 +1,7 @@
+---
+title: "Inter-Application Communication"
+---
+
 
 
 An EAR file or the installation of Web server could have multiple WAR

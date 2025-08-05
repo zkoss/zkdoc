@@ -1,3 +1,7 @@
+---
+title: "The richlet-mapping Element"
+---
+
 Once [a richlet is declared]({{site.baseurl}}/zk_config_ref/the_richlet_element),
 you could map it to any number of URL by using `richlet-mapping` as
 depicted below.

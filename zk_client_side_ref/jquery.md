@@ -1,3 +1,7 @@
+---
+title: "jQuery"
+---
+
 ZK framework's Client Engine uses a customized
 [jQuery](http://jquery.com/). So you can use *jq* or *$* as a
 jQuery object like:

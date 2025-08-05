@@ -1,3 +1,7 @@
+---
+title: "Widget Events"
+---
+
 
 
 A widget event is the widget-level event

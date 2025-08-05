@@ -1,3 +1,7 @@
+---
+title: "TableChildren"
+---
+
 
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)

@@ -1,3 +1,7 @@
+---
+title: "Data Rendering"
+---
+
 
 
 The rendering of Pivottable is defined by a PivotRenderer. You set your

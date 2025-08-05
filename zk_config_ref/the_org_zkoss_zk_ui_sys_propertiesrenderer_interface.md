@@ -1,3 +1,7 @@
+---
+title: "The org.zkoss.zk.ui.sys.PropertiesRenderer interface"
+---
+
 **Listener:**
 
 `org.zkoss.zk.ui.sys.PropertiesRenderer`

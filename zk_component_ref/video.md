@@ -1,3 +1,7 @@
+---
+title: "Video"
+---
+
 
 - Java API: [org.zkoss.zkmax.zul.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Video.html)
 - JavaScript API: [zkmax.med.Video](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Video.html)

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.proxy.IgnoredProxyClasses"
+---
+
 **Property:**
 
 `org.zkoss.bind.proxy.IgnoredProxyClasses`

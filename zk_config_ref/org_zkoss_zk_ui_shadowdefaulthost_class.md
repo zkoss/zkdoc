@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.ShadowDefaultHost.class"
+---
+
 **Property:** org.zkoss.zk.ui.ShadowDefaultHost.class
 
 Default:  `org.zkoss.zul.NoDOM`` (it implies `Thread.currentThread().getContextClassLoader()`)`

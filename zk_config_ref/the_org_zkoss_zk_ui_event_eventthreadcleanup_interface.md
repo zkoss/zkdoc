@@ -1,3 +1,7 @@
+---
+title: "The org.zkoss.zk.ui.event.EventThreadCleanup interface"
+---
+
 **Listener:**
 
 `org.zkoss.zk.ui.event.EventThreadCleanup`

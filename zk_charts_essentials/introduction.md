@@ -1,3 +1,7 @@
+---
+title: "ZK Charts"
+---
+
 ## What is ZK Charts
 
 ZK Charts is a component which makes visualization of data exceptionally

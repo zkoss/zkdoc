@@ -1,3 +1,7 @@
+---
+title: "The keep-across-visits Element"
+---
+
 **Syntax:**
 
 ```xml

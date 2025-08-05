@@ -1,3 +1,7 @@
+---
+title: "The max-pushes-per-session Element"
+---
+
 **Syntax:**
 
 ```xml

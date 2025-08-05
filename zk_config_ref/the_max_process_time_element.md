@@ -1,3 +1,7 @@
+---
+title: "The max-process-time Element"
+---
+
 **Syntax:**
 
 ```xml

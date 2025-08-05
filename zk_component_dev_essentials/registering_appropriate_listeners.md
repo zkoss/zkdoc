@@ -1,3 +1,7 @@
+---
+title: "Registering Appropriate Listeners"
+---
+
 Registering listeners is a fundamental of many programming languages and
 event driven applications. Being an event driven framework ZK is no
 different. To accomplish our goal of a clear button we need to do two

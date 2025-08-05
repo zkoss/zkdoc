@@ -1,3 +1,7 @@
+---
+title: "Idspace"
+---
+
 
 - Java API: [org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)
 - JavaScript API: [zul.wgt.Idspace](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Idspace.html)

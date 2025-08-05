@@ -1,3 +1,7 @@
+---
+title: "Outline View of ZUL"
+---
+
 The Outline view presents a tree structure view of the content in the
 currently selected ZUL Editor. It can be opened by clicking
 **\[Window\]/\[Show View\]/\[Outline\]**. Through this view, you can

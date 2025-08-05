@@ -1,3 +1,7 @@
+---
+title: "The disable-theme-uri Element"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "VisibilityChangeEvent"
+---
+
 
 - Demonstration: N/A
 - Java API:

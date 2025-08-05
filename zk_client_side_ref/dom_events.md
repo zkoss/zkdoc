@@ -1,3 +1,7 @@
+---
+title: "DOM Events"
+---
+
 
 
 A DOM event ([jq.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/jq.Event.html)) is the

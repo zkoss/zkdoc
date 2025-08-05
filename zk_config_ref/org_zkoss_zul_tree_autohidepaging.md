@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.tree.autohidePaging"
+---
+
 **Property:**
 
 `org.zkoss.zul.tree.autohidePaging`

@@ -1,3 +1,7 @@
+---
+title: "JSON"
+---
+
 The data of a widget event
 ([zk.Event#data](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html#data)) is
 serialized to a string (so-called marshal) by

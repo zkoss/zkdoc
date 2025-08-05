@@ -1,3 +1,7 @@
+---
+title: "Registering your Theme"
+---
+
 Before using a theme, it must be registered so that the system knows
 about its existence and where to retrieve its resources (from a jar file
 or from a folder). [org.zkoss.zul.theme.Themes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/Themes.html)

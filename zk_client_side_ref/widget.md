@@ -1,3 +1,7 @@
+---
+title: "widget"
+---
+
 **Syntax:**
 ```xml
 <widget name="widgetName"/>

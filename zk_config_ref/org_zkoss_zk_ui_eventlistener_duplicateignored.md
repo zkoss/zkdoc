@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.EventListener.duplicateIgnored"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.EventListener.duplicateIgnored`

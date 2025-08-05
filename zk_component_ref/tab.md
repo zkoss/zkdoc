@@ -1,3 +1,7 @@
+---
+title: "Tab"
+---
+
 
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API:** [`org.zkoss.zul.Tab`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html)

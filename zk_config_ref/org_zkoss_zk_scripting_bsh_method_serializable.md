@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.scripting.bsh.method.serializable"
+---
+
 **Property:**
 
 `org.zkoss.zk.scripting.bsh.method.serializable`

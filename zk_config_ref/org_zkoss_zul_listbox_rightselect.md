@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.listbox.rightSelect"
+---
+
 **Property:**
 
 `org.zkoss.zul.listbox.rightSelect`

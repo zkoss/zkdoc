@@ -1,3 +1,7 @@
+---
+title: "encodeURIComponent"
+---
+
 ```java
 java.lang.String encodeURIComponent(java.lang.String)
 ```

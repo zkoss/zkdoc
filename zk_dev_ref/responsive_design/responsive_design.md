@@ -1,3 +1,7 @@
+---
+title: "Responsive Design"
+---
+
 
 This section describes general concepts regarding responsive design, and
 how to apply these concepts to ZK pages and components.

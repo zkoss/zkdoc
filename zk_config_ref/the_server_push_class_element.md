@@ -1,3 +1,7 @@
+---
+title: "The server-push-class Element"
+---
+
 **Syntax:**
 
 ```xml

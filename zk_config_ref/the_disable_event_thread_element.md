@@ -1,3 +1,7 @@
+---
+title: "The disable-event-thread Element"
+---
+
 **Syntax:**
 
 ```xml

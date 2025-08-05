@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.grid.autohidePaging"
+---
+
 **Property:**
 
 `org.zkoss.zul.grid.autohidePaging`

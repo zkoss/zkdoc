@@ -1,3 +1,7 @@
+---
+title: "Client-side Firing"
+---
+
 
 
 In general, an AU request is caused by a widget event

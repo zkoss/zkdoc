@@ -1,3 +1,7 @@
+---
+title: "Model"
+---
+
 
 
 The *model* is the data an application handles. Depending on the

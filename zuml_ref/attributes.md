@@ -1,3 +1,7 @@
+---
+title: "Attributes"
+---
+
 Each attribute, except special attributes like `if` and `forEach`,
 represents a value that should be assigned to a property of a component
 after it is created. For example, when an attribute, say, `foo`, is

@@ -1,3 +1,7 @@
+---
+title: "Navbar"
+---
+
 
 - Demonstration:
 - Java API:

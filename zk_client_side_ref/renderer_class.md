@@ -1,3 +1,7 @@
+---
+title: "renderer-class"
+---
+
 **Syntax:**
 ```xml
 <renderer-class>a_class</renderer-class>

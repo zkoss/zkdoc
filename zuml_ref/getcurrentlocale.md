@@ -1,3 +1,7 @@
+---
+title: "getCurrentLocale"
+---
+
 ```java
 java.util.Locale getCurrentLocale();
 ```

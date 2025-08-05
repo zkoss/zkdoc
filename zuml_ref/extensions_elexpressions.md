@@ -1,3 +1,7 @@
+---
+title: "EL Expressions"
+---
+
 The default evaluator for EL expressions are derived from [Apache Commons EL](http://commons.apache.org/el/). Thus, its funcationality is
 the same as JSP 2.0's EL expressions[^1].
 

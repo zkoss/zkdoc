@@ -1,3 +1,7 @@
+---
+title: "Information about a Theme"
+---
+
 Apart from having a name, a theme could be associated with many
 attributes. Encapsulating theme-specific attributes is defined in
 [org.zkoss.web.theme.Theme](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/Theme.html). Each theme should have at

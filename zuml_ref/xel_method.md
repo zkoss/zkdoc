@@ -1,3 +1,7 @@
+---
+title: "xel-method"
+---
+
 
 
 **Syntax:**

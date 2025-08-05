@@ -1,3 +1,7 @@
+---
+title: "Rerender Part of Widget"
+---
+
 If a widget has a lot of child widgets, the performance will be better
 if you rerender only the portion(s) that don't have a lot of child
 widgets (and are not changed).

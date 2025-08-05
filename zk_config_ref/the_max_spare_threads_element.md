@@ -1,3 +1,7 @@
+---
+title: "The max-spare-threads Element"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.tablet.ui.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zkmax.tablet.ui.disabled`

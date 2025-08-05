@@ -1,3 +1,7 @@
+---
+title: "MapTypeChangeEvent"
+---
+
 
 - Demonstration: N/A
 - Java API: N/A

@@ -1,3 +1,7 @@
+---
+title: "Spinner"
+---
+
 
 - Demonstration:
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)

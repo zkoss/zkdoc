@@ -1,3 +1,7 @@
+---
+title: "Slider"
+---
+
 
 - Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
 - Java API: [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)

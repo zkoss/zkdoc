@@ -1,3 +1,7 @@
+---
+title: "Component Development"
+---
+
 This section describes how to develop a component. It has two parts:
 server-side and client-side.
 

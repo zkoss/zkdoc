@@ -1,3 +1,7 @@
+---
+title: "The version Element"
+---
+
 **Syntax:**
 
 <version>  

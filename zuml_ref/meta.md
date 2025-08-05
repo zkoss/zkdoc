@@ -1,3 +1,7 @@
+---
+title: "meta"
+---
+
 **Syntax:**
 
 <?meta [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]

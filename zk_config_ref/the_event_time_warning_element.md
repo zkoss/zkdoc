@@ -1,3 +1,7 @@
+---
+title: "The event-time-warning Element"
+---
+
 **Syntax:**
 
 ```xml

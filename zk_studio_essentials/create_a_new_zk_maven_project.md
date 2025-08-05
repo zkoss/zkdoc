@@ -1,3 +1,7 @@
+---
+title: "Create a New ZK Maven Project"
+---
+
 In this section, we will demonstrate how to create a ZK maven project
 with the Maven plugin.
 

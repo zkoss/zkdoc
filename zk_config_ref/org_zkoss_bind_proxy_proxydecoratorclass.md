@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.proxy.ProxyDecoratorClass"
+---
+
 **Property:**
 
 `org.zkoss.bind.proxy.ProxyDecoratorClass`

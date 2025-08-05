@@ -1,3 +1,7 @@
+---
+title: "Detail"
+---
+
 
 - Demonstration: [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
 - Java API: [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)

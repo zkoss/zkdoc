@@ -1,3 +1,7 @@
+---
+title: "Forward and Redirect"
+---
+
 
 
 A Web application jumping from one URL to another is usually caused by

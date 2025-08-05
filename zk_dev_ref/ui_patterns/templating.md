@@ -1,3 +1,7 @@
+---
+title: "Templating"
+---
+
 Templating is a technique that allows developers to define UI fragments,
 and how to assemble them into a complete UI at runtime. With ZK, it can
 be done by the use of annotations and composers (or initators,

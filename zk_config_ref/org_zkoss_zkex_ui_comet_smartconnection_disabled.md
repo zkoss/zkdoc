@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkex.ui.comet.smartconnection.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zkex.ui.comet.smartconnection.disabled`

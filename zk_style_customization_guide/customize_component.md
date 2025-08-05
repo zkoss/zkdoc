@@ -1,3 +1,7 @@
+---
+title: "Customize Component"
+---
+
 We have introduced how to execute [ partial customization with sclass](/zk_style_customization_guide/partial_customize_with_sclass_and_zclass)
 for specific components. Now we will introduce how to customize
 component style by LESS and make it the default style inside a project.

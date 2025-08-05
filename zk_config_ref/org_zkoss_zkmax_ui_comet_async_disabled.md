@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.ui.comet.async.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zkmax.ui.comet.async.disabled`

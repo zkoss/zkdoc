@@ -1,3 +1,7 @@
+---
+title: "The language-addon"
+---
+
 The language-addon contains a description of the relation between the
 component and widget referred to as the component definition. The path
 of the file must be **/metainfo/zk/lang-addon.xml** and be located in

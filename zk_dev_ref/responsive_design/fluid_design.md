@@ -1,3 +1,7 @@
+---
+title: "Fluid Design"
+---
+
 A fluid design can take many forms. From a simple width=”100%” on the
 page container to always fit the screen, to detailed rule sets of styles
 to be applied depending on specific browser states and conditions.

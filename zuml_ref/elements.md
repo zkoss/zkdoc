@@ -1,3 +1,7 @@
+---
+title: "Elements"
+---
+
 Each XML element represents a component, except special elements like
 \<zk\> and \<attribute\>.
 

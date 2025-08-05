@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.invalidateThreshold"
+---
+
 **Property:**
 
 `org.zkoss.zul.invalidateThreshold`

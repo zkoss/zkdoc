@@ -1,3 +1,7 @@
+---
+title: "ColSizeEvent"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html)

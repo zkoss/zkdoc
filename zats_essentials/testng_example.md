@@ -1,3 +1,7 @@
+---
+title: "TestNG Example"
+---
+
 
 
 This test case performs exactly the same as the JUnit one except that it

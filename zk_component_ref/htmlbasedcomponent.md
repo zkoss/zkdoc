@@ -1,3 +1,7 @@
+---
+title: "HtmlBasedComponent"
+---
+
 
 
 - Java API: [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)

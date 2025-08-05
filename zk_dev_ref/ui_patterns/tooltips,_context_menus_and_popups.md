@@ -1,3 +1,7 @@
+---
+title: "Tooltips, Context Menus and Popups"
+---
+
 The support of tooltips, context menus and popups is generic. Any
 components inherited from
 [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html) can handle them in the

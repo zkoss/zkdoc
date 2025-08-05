@@ -1,3 +1,7 @@
+---
+title: "Text Styles and Inner Tags"
+---
+
 This section is about how to pass the text styles to the inner HTML
 tags.
 

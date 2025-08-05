@@ -1,3 +1,7 @@
+---
+title: "zscript"
+---
+
 **Syntax:**
 
 ```xml

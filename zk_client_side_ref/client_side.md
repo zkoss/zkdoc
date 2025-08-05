@@ -1,3 +1,7 @@
+---
+title: "Client-side"
+---
+
 This section describes how to develop the component at the client side
 ([zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)).
 

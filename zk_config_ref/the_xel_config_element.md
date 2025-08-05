@@ -1,3 +1,7 @@
+---
+title: "The xel-config Element"
+---
+
 The allowed child elements include `evaluator-class`. At most one
 `xel-config` element is allowed for each `zk.xml`.
 

@@ -1,3 +1,7 @@
+---
+title: "extension"
+---
+
 **Syntax:**
 
 ```xml

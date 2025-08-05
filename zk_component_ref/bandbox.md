@@ -1,3 +1,7 @@
+---
+title: "Bandbox"
+---
+
 
 - Demonstration:
   [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)

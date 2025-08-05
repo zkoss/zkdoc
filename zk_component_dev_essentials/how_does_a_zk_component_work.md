@@ -1,3 +1,7 @@
+---
+title: "How does a ZK Component work"
+---
+
 A component and a widget work hand in hand to deliver a rich UI
 experience to a user. The widget traps the user activity and sends an
 appropriate request to the component. The component then interacts with

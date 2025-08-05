@@ -1,3 +1,7 @@
+---
+title: "1000 Points Threshold"
+---
+
 If the data points
 ([org.zkoss.chart.Point](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Point.html)) of a
 series are not Number and neither array, there is a 1000-points

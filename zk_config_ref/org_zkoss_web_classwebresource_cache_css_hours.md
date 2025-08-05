@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.web.classWebResource.cache.CSS.hours"
+---
+
 **Property:**
 
 `org.zkoss.web.classWebResource.cache.CSS.hours`

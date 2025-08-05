@@ -1,3 +1,7 @@
+---
+title: "Reuse Desktops"
+---
+
 
 
 By default, a desktop is purged when the user browses to another URI or

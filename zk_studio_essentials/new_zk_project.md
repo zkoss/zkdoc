@@ -1,3 +1,7 @@
+---
+title: "New ZK Project"
+---
+
 To create a new ZK Project, go to **\[File\]/\[New\]/\[Others\]** and
 select **ZK \> ZK Project**, then choose your ZK Package and sit back
 while ZK Studio does the rest for you.

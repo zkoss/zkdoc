@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.metainfo.page.Loader.class"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.metainfo.page.Loader.class`

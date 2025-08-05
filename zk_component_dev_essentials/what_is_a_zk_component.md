@@ -1,3 +1,7 @@
+---
+title: "What is a ZK component"
+---
+
 Each UI object in ZK consists of a component and a widget.
 
 ## Component

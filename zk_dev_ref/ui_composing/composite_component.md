@@ -1,3 +1,7 @@
+---
+title: "Composite Component"
+---
+
 
 
 Like a [macro component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component),

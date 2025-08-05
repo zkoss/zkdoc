@@ -1,3 +1,7 @@
+---
+title: "library-property"
+---
+
 **Syntax:**
 
 ```xml

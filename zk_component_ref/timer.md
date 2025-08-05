@@ -1,3 +1,7 @@
+---
+title: "Timer"
+---
+
 
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
 - Java API: [org.zkoss.zul.Timer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timer.html)

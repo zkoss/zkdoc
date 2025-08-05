@@ -1,3 +1,7 @@
+---
+title: "Zclass"
+---
+
 ZK Class (aka., zclass) is a naming pattern. The name assigned to zclass
 ([org.zkoss.zk.ui.HtmlBaseComponent#setZclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBaseComponent.html#setZclass(java.lang.String)))
 will be used to name the CSS classes associated with the DOM structure

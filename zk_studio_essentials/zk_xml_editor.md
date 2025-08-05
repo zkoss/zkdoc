@@ -1,3 +1,7 @@
+---
+title: "zk.xml Editor"
+---
+
 The zk.xml Editor helps you edit ZK configuration file (the file under
 your project's `WEB-INF/zk.xml`). The editor can be opened by right
 clicking the zk.xml file and selecting **\[Open With\]/\[XML Editor for

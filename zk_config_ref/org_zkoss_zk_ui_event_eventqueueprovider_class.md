@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.event.EventQueueProvider.class"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.event.EventQueueProvider.class`

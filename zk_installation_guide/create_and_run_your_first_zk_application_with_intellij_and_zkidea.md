@@ -1,3 +1,7 @@
+---
+title: "First ZK App with IntelliJ and ZKIdea"
+---
+
 
 
 [ZKIdea](https://plugins.jetbrains.com/plugin/7855) is an IntelliJ

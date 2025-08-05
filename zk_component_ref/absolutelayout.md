@@ -1,3 +1,7 @@
+---
+title: "Absolutelayout"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Absolutelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutelayout.html)

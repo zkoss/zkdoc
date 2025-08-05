@@ -1,3 +1,7 @@
+---
+title: "The Widget Package Descriptor"
+---
+
 The Widget Package Descriptor (WPD) is a file describing the information
 of a package, such as its widget classes and external JavaScript files.
 WPD must be named **zk.wpd** and placed in the same directory as the

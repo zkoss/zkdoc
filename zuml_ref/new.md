@@ -1,3 +1,7 @@
+---
+title: "new"
+---
+
 ```java
 Object new(Object cls);
 ```

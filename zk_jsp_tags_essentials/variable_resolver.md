@@ -1,3 +1,7 @@
+---
+title: "variable-resolver"
+---
+
 ## Variable-resolver
 
 **Syntax**

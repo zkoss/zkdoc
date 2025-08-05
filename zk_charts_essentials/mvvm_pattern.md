@@ -1,3 +1,7 @@
+---
+title: "MVVM Pattern"
+---
+
 You still can work with Charts in MVVM pattern with some exceptional
 usages.
 

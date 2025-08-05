@@ -1,3 +1,7 @@
+---
+title: "indexOf"
+---
+
 ```java
 int indexOf(Object value, Object element);
 ```

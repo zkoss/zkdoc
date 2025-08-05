@@ -1,3 +1,7 @@
+---
+title: "link"
+---
+
 **Syntax:**
 
 <?link [href="''uri''"] [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]

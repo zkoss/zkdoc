@@ -1,3 +1,7 @@
+---
+title: "startsWith"
+---
+
 ```java
 boolean startsWith(String value, String prefix);
 ```

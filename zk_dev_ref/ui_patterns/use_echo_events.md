@@ -1,3 +1,7 @@
+---
+title: "Use Echo Events"
+---
+
 Event echoing is useful for implementing a long operation.
 
 As described in the previous section, HTTP is a request-and-response

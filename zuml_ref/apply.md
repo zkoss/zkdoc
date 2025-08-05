@@ -1,3 +1,7 @@
+---
+title: "apply"
+---
+
 **Syntax**
 
 `apply="`*`a-class-name`*`"`  

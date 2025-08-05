@@ -1,3 +1,7 @@
+---
+title: "Putting it all Together"
+---
+
 Finally, we put all the component information together to produce the result below.
 
 ```java

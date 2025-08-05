@@ -1,3 +1,7 @@
+---
+title: "Sample of web.xml for Servlet 2.3"
+---
+
 Here is the sample web.xml for servers that support Servlet 2.3 only.
 
   

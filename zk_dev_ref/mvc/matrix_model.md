@@ -1,3 +1,7 @@
+---
+title: "Matrix Model"
+---
+
 
 
 Here we describe how to implement a matrix model

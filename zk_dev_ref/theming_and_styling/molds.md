@@ -1,3 +1,7 @@
+---
+title: "Molds"
+---
+
 A component could have multiple different visual appearances. Each
 appearance is called a **mold**. A mold is basically a combination of a
 DOM structure plus CSS. That is, it is the visual representation of a

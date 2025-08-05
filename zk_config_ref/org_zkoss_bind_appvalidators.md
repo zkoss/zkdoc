@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.appValidators"
+---
+
 **Property:**
 
 `org.zkoss.bind.appValidators`

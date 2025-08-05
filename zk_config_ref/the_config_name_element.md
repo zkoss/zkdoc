@@ -1,3 +1,7 @@
+---
+title: "The config-name Element"
+---
+
 **Syntax:**
 
 ```xml

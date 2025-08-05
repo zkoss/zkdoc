@@ -1,3 +1,7 @@
+---
+title: "MVC"
+---
+
 MVC (Model-View-Control), more precisely, it is known as MVP
 (Model-View-Presenter) is a design pattern designed to separate the
 model, view, and controller. It is strongly suggested to apply the MVC

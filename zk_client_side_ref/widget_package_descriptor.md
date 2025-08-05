@@ -1,3 +1,7 @@
+---
+title: "Widget Package Descriptor"
+---
+
 This section describes what a **Widget Package Descriptor** is. This is
 required for the component. However, you could skip it if you do not
 have to develop components. For more information about component

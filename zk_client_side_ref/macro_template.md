@@ -1,3 +1,7 @@
+---
+title: "macro-template"
+---
+
 **Syntax:**
 
 ```xml

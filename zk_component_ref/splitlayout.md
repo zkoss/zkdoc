@@ -1,3 +1,7 @@
+---
+title: "Splitlayout"
+---
+
 
 - Demonstration:
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)

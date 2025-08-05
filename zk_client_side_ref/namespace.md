@@ -1,3 +1,7 @@
+---
+title: "namespace"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "lastIndexOf"
+---
+
 ```java
 int lastIndexOf(Object value, Object element);
 ```

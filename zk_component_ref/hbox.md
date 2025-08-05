@@ -1,3 +1,7 @@
+---
+title: "Hbox"
+---
+
 
 - Demonstration: [Hbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Hbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hbox.html)

@@ -1,3 +1,7 @@
+---
+title: "The desktop-timeout Element"
+---
+
 **Syntax:**
 
 ```xml

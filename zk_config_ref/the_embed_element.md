@@ -1,3 +1,7 @@
+---
+title: "The embed Element"
+---
+
 **Syntax:**
 
 ```xml

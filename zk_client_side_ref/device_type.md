@@ -1,3 +1,7 @@
+---
+title: "device-type"
+---
+
 **Syntax:**
 
 ```xml

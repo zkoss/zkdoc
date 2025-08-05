@@ -1,3 +1,7 @@
+---
+title: "Include"
+---
+
 
 - Demonstration:
   [Include](http://www.zkoss.org/zkdemo/composite/include)

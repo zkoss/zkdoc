@@ -1,3 +1,7 @@
+---
+title: "function"
+---
+
 **syntax**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "use"
+---
+
 **Syntax:**
 
 `use="`*`a-class-name`*`"`  

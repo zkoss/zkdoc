@@ -1,3 +1,7 @@
+---
+title: "The resend-delay Element"
+---
+
 **Syntax:**
 
 ```xml

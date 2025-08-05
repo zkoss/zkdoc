@@ -1,3 +1,7 @@
+---
+title: "LabelElement"
+---
+
 
 - Java API: [`org.zkoss.zul.impl.LabelElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelElement.html)
 

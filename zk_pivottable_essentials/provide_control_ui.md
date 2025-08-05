@@ -1,3 +1,7 @@
+---
+title: "Provide Control UI"
+---
+
 You can change page, open/close node, or resize columns on the
 Pivottable component itself. However, for UI flexibility, the component
 itself does not provide control unit for other APIs, like to change

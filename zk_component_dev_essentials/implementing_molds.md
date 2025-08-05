@@ -1,3 +1,7 @@
+---
+title: "Implementing Molds"
+---
+
 A widget can have several molds. Each mold needs to be placed in an
 independent JavaScript file. Under a subdirectory named mold. The full
 path of the directory in this example will be

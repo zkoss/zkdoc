@@ -1,3 +1,7 @@
+---
+title: "Client-side UI Composing"
+---
+
 Though optional, you could have the total control of the client's
 functionality without the assistance of server-side coding. Generally,
 you don't need to do it. You don't even need to know how ZK Client

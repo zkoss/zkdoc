@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed"
+---
+
 **Property:**
 
 `org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed`

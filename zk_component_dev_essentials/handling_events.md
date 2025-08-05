@@ -1,3 +1,7 @@
+---
+title: "Handling Events"
+---
+
 The next logical step is to add an event to our ZK component. For this
 we are going to add some more functionality to the SimpleLabel. A new
 div will be added which when clicked should clear the displayed text and

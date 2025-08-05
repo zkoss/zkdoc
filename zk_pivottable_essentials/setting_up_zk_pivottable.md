@@ -1,3 +1,7 @@
+---
+title: "Setting Up ZK Pivottable"
+---
+
 ## Prerequisites
 
 - Downloaded ZK 5 from [ZK download](http://www.zkoss.org/download/zk.dsp)

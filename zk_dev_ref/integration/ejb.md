@@ -1,3 +1,7 @@
+---
+title: "EJB"
+---
+
 
 
 Enterprise JavaBeans (EJB) technology is the server-side component

@@ -1,3 +1,7 @@
+---
+title: "The preference Element"
+---
+
 **Syntax:**
 
 <preference>  

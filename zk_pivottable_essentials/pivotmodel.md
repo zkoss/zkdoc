@@ -1,3 +1,7 @@
+---
+title: "PivotModel"
+---
+
 Add the following blocks in zk.xml of your ZK application to make them
 in effect.
 

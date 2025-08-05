@@ -1,3 +1,7 @@
+---
+title: "decimal"
+---
+
 ```java
 BigDecimal decimal(Object value);
 ```

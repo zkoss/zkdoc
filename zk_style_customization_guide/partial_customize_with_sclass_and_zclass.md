@@ -1,3 +1,7 @@
+---
+title: "Partial customize with Sclass and Zclass"
+---
+
 
 
 Partial customization is a convenient way to fast prototype the look and

@@ -1,3 +1,7 @@
+---
+title: "Google Analytics"
+---
+
 To track the Ajax traffic with [Google Analytics](http://www.google.com/analytics/) or other statistic
 services, you have to override a client-side API:
 [\_global\_.zAu#beforeSend(_global_.String, zk.Event, zk.Desktop)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zAu.html#beforeSend(_global_.String, zk.Event, zk.Desktop)).

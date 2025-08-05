@@ -1,3 +1,7 @@
+---
+title: "toUpperCase"
+---
+
 ```java
 String toUpperCase(String value);
 ```

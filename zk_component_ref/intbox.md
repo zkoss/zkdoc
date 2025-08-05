@@ -1,3 +1,7 @@
+---
+title: "Intbox"
+---
+
 
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Intbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Intbox.html)

@@ -1,3 +1,7 @@
+---
+title: "By DOM Structure"
+---
+
 
 
 The naming pattern of the DOM structure is used to describe components

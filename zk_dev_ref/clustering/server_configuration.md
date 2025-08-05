@@ -1,3 +1,7 @@
+---
+title: "Server Configuration"
+---
+
 The configuration of a Web server really depends on the server itself.
 There is no standard approach.
 

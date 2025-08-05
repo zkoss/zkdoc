@@ -1,3 +1,7 @@
+---
+title: "Changing Chart Configuration"
+---
+
 
 
 ZK Charts provides a set of comprehensive

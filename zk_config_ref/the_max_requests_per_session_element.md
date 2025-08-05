@@ -1,3 +1,7 @@
+---
+title: "The max-requests-per-session Element"
+---
+
 **Syntax:**
 
 ```xml

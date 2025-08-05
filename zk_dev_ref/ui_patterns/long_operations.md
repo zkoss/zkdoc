@@ -1,3 +1,7 @@
+---
+title: "Long Operations"
+---
+
 Events for the same desktop are processed sequentially. It simplifies
 the GUI programming and component development. However, it means an
 event handler that spends a lot of time to execute will block any

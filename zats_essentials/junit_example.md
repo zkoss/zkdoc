@@ -1,3 +1,7 @@
+---
+title: "JUnit Example"
+---
+
 
 
 We write the test case with JUnit 4 annotation, please refer to [JUnit 4 tutorial](http://www.vogella.com/tutorials/JUnit/article.html).

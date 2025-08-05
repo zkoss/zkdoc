@@ -1,3 +1,7 @@
+---
+title: "The session-cache-class Element"
+---
+
 **Syntax:**
 
 ```xml

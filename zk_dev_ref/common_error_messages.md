@@ -1,3 +1,7 @@
+---
+title: "Common Error Messages"
+---
+
 This section explains those common error messages you might encounter
 while developing with ZK, so you can figure out what's going wrong and
 eliminate them.

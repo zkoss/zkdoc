@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.util.logging.config.file"
+---
+
 **Property:**
 
 `org.zkoss.util.logging.config.file`

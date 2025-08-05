@@ -1,3 +1,7 @@
+---
+title: "Type Coercion"
+---
+
 EL expressions will coerce the type automatically. Here is the summary
 of the coercion rules.
 

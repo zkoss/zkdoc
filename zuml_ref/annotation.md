@@ -1,3 +1,7 @@
+---
+title: "Annotation"
+---
+
 `Name: annotation`  
 `Namespace: `[`http://www.zkoss.org/2005/zk/annotation`](http://www.zkoss.org/2005/zk/annotation)  
 `Namespace shortcut: client`  

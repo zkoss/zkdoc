@@ -1,3 +1,7 @@
+---
+title: "The error-page Element"
+---
+
 **Syntax:**
 
 <error-page>  

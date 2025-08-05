@@ -1,3 +1,7 @@
+---
+title: "Declaring an Important Event"
+---
+
 The third argument of <mp>addClientEvent</mp> is used to declare an
 event as import. The argument is a combination of integer flags that
 indicate how to handle the event. The ***CE_IMPORTANT*** flag is used to

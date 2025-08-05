@@ -1,3 +1,7 @@
+---
+title: "The tooltip-delay Element"
+---
+
 **Syntax:**
 
 `<tooltip-delay>a_number</tooltip-delay>`

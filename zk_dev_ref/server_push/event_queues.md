@@ -1,3 +1,7 @@
+---
+title: "Event Queues"
+---
+
 An event queue is an event-based publish-subscribe solution for the
 application information delivery and messaging. It provides asynchronous
 communication for different modules/roles in a loosely-coupled and

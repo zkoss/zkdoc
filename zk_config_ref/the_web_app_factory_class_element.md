@@ -1,3 +1,7 @@
+---
+title: "The web-app-factory-class Element"
+---
+
 **Syntax:**
 
 ```xml

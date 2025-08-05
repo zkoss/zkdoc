@@ -1,3 +1,7 @@
+---
+title: "MapMoveEvent"
+---
+
 
 - Demonstration: N/A
 - Java API: N/A

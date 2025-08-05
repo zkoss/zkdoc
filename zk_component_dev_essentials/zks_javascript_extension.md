@@ -1,3 +1,7 @@
+---
+title: "ZK's JavaScript Extension"
+---
+
 
 To make it easier for JavaScript objects to represent widgets, ZK has introduced a class concept to JavaScript. Here is a brief introduction on defining a class in JavaScript.
 

@@ -1,3 +1,7 @@
+---
+title: "Create Pivottable"
+---
+
 With a PivotModel, we can easily create a Pivottable component.
 
 ## Create a Pivottable

@@ -1,3 +1,7 @@
+---
+title: "FAQ"
+---
+
 
 
 1. **InputAgent.type() works correctly on all components except

@@ -1,3 +1,7 @@
+---
+title: "Render All Properties to the Client"
+---
+
 When a component is attached to a page for the first time, the
 <javadoc method="renderProperties(org.zkoss.zk.ui.sys.ContentRenderer)" class='false'>org.zkoss.zk.ui.AbstractComponent</javadoc>
 method is called to render all properties that will be sent to the

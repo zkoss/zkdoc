@@ -1,3 +1,7 @@
+---
+title: "Welcome Page"
+---
+
 The Welcome Page aims to provide useful links for new ZK developers. The
 page is a web page and is automatically updated by the ZK Studio server.
 The page's hyperlinks consist of two types:

@@ -1,3 +1,7 @@
+---
+title: "Longbox"
+---
+
 
 - Demonstration:
   [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)

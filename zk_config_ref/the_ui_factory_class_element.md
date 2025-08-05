@@ -1,3 +1,7 @@
+---
+title: "The ui-factory-class Element"
+---
+
 **Syntax:**
 
 ```xml

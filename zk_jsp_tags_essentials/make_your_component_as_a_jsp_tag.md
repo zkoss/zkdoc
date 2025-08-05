@@ -1,3 +1,7 @@
+---
+title: "Make Your Component as a JSP Tag"
+---
+
 ZK JSP Tags support all [ZUL components](/zk_component_ref/introduction)). That is, every ZUL
 component has a corresponding JSP tag. If you want to make your custom
 ZK component(ex: a [ Composite Component]({{site.baseurl}}/zk_dev_ref/ui_composing/composite_component) as a JSP tag, you could do as follows:

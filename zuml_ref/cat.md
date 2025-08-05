@@ -1,3 +1,7 @@
+---
+title: "cat"
+---
+
 ```java
 String cat(String s1, String s2);
 ```

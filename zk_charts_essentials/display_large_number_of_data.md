@@ -1,3 +1,7 @@
+---
+title: "Display Large Number of Data"
+---
+
 If you need to display large number of data points. There are several
 ways to handle it:
 

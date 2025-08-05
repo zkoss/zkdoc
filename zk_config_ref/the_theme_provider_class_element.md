@@ -1,3 +1,7 @@
+---
+title: "The theme-provider-class Element"
+---
+
 **Syntax:**
 
 ```xml

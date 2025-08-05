@@ -1,3 +1,7 @@
+---
+title: "char"
+---
+
 ```java
 char char(Object value);
 ```

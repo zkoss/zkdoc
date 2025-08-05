@@ -1,3 +1,7 @@
+---
+title: "Client"
+---
+
 `Name: client`  
 `Namespace: `[`http://www.zkoss.org/2005/zk/client`](http://www.zkoss.org/2005/zk/client)  
 `Namespace shortcut: client`  

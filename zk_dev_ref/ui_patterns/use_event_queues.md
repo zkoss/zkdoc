@@ -1,3 +1,7 @@
+---
+title: "Use Event Queues"
+---
+
 
 
 The [event queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)

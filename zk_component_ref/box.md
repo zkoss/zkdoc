@@ -1,3 +1,7 @@
+---
+title: "Box"
+---
+
 
 - Demonstration: [Box](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Box](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Box.html)

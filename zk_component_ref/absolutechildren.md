@@ -1,3 +1,7 @@
+---
+title: "Absolutechildren"
+---
+
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Absolutechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutechildren.html)

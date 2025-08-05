@@ -1,3 +1,7 @@
+---
+title: "Using Series"
+---
+
 
 
 Another way to add data to a chart is through

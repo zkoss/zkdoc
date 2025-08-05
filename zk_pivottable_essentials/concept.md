@@ -1,3 +1,7 @@
+---
+title: "Concept"
+---
+
 If you are not familiar with the concept of pivot table, this section
 will kindly guide you through.
 

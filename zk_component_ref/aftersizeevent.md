@@ -1,3 +1,7 @@
+---
+title: "AfterSizeEvent"
+---
+
 
 - JavaDoc:[org.zkoss.zk.ui.event.AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)
 

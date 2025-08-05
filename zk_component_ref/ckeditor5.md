@@ -1,3 +1,7 @@
+---
+title: "CKEditor5"
+---
+
 
 - Java API: N/A
 - JavaScript API: N/A

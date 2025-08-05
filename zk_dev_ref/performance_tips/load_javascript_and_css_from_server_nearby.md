@@ -1,3 +1,7 @@
+---
+title: "Load JavaScript and CSS from Server Nearby"
+---
+
 
 
 > If some of the client machines are far away from the application

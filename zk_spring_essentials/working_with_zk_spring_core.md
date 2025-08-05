@@ -1,3 +1,7 @@
+---
+title: "Working with ZK Spring Core"
+---
+
 ZK Spring Core facilitates ZK's integration with Spring core framework.
 It has several features that allow seamless integration of both such as
 it can expose Spring beans within ZK framework, inject ZK components

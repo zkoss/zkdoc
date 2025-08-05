@@ -1,3 +1,7 @@
+---
+title: "ZUML"
+---
+
 There are two ways to compose UI: XML-based approach and pure-Java
 approach. Here we will describe XML-based approach. For pure-Java
 approach, please refer to the next chapter.

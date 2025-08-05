@@ -1,3 +1,7 @@
+---
+title: "XHTML"
+---
+
 `Name: xhtml`  
 `File Extensions: zhtml, xhtml, html, htm`  
 `Namespace: `[`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)  

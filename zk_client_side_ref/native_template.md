@@ -1,3 +1,7 @@
+---
+title: "native-template"
+---
+
 **Syntax:**
 
 ```xml

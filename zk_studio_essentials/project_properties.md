@@ -1,3 +1,7 @@
+---
+title: "Project Properties"
+---
+
 In the Project Explorer, Package Explorer, or Navigator view of Eclipse,
 right click a project and select "Properties" to open the project's
 **Properties** window. Expand the item **ZK**, you can see several

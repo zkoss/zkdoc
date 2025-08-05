@@ -1,3 +1,7 @@
+---
+title: "Core Methods"
+---
+
 In this section we describe the EL functions defined in the built-in TLD
 called http://www.zkoss.org/dsp/web/core.
 

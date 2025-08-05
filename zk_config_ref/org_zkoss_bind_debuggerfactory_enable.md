@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.bind.DebuggerFactory.enable"
+---
+
 **Property:**
 
 `org.zkoss.bind.DebuggerFactory.enable`

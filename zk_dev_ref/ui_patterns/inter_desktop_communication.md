@@ -1,3 +1,7 @@
+---
+title: "Inter-Desktop Communication"
+---
+
 Unlike pages, you cannot access two desktops at the same time. You
 cannot send or post an event from one desktop to another directly
 either. Rather, we have to use [an event queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)

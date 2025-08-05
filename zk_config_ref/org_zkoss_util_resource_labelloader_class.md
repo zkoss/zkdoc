@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.util.resource.LabelLoader.class"
+---
+
 **Property:**
 
 `org.zkoss.util.resource.LabelLoader.class`

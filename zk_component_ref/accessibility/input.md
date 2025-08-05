@@ -1,3 +1,7 @@
+---
+title: "Input"
+---
+
 
 
 This section outline Accessibilities in Input components.

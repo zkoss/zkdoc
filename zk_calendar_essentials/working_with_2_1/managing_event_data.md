@@ -1,3 +1,7 @@
+---
+title: "Managing Event Data"
+---
+
 The [org.zkoss.calendar.impl.SimpleCalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/impl/SimpleCalendarEvent.html) is a
 out-of-box, default implementation of the interface
 [org.zkoss.calendar.api.CalendarEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/calendar/api/CalendarEvent.html)

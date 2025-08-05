@@ -1,3 +1,7 @@
+---
+title: "The failover-manager-class Element"
+---
+
 **Syntax:**
 
 ```xml

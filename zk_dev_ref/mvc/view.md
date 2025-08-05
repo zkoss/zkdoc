@@ -1,3 +1,7 @@
+---
+title: "View"
+---
+
 The view is the UI of an application. It totally depends on the
 application's requirements.
 

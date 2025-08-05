@@ -1,3 +1,7 @@
+---
+title: "join"
+---
+
 ```java
 String join(Object[] value, String separator);
 ```

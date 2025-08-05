@@ -1,3 +1,7 @@
+---
+title: "Defer the Creation of Child Components"
+---
+
 For sophisticated pages, the performance can be improved if we defer the
 creation of child components until they become visible. The simplest way
 to do this is by the use of the `fulfill` attribute. In the following

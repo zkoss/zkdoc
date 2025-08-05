@@ -1,3 +1,7 @@
+---
+title: "Linux"
+---
+
 Here is the notes to set up the environment of Linux that some ZK
 components depends on.
 

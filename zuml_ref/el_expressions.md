@@ -1,3 +1,7 @@
+---
+title: "EL Expressions"
+---
+
 The syntax of an EL expressions is `${expr}`. For example,
 
 ```xml

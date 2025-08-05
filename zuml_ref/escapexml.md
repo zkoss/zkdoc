@@ -1,3 +1,7 @@
+---
+title: "escapeXML"
+---
+
 ```java
 String escapeXML(String s);
 ```

@@ -1,3 +1,7 @@
+---
+title: "The client-config Element"
+---
+
 **Syntax:**
 
 ```xml

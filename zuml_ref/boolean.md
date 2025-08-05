@@ -1,3 +1,7 @@
+---
+title: "boolean"
+---
+
 ```java
 boolean boolean(Object value);
 ```

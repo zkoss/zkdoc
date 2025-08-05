@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.grid.initRodSize"
+---
+
 **Property:**
 
 `org.zkoss.zul.grid.initRodSize`

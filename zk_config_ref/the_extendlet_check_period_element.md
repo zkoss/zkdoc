@@ -1,3 +1,7 @@
+---
+title: "The extendlet-check-period Element"
+---
+
 **Syntax:**
 
 ```xml

@@ -1,3 +1,7 @@
+---
+title: "taglib"
+---
+
 **Syntax:**
 
 <?tablib uri="''myURI''" prefix="''my''"?>

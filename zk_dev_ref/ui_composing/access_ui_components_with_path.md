@@ -1,3 +1,7 @@
+---
+title: "Access UI Components with Path"
+---
+
 ## Use Java
 
 Every ZUL component has its mapping Java class. Every ZUL element declared in ZUML has its mapping Java object. You can easily access the object in Java code if you assign it an `id`. The [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) class provides utilities to simplify the location of a component among ID spaces. Its usage is similar to `java.io.File`. Like a path in a file system, a component path is a catenation of IDs of components along ID spaces.

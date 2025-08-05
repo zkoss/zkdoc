@@ -1,3 +1,7 @@
+---
+title: "Export"
+---
+
 You can export the computed result of Pivottable to other formats.
 
 # Export to Microsoft Excel

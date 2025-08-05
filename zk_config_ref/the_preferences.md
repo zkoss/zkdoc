@@ -1,3 +1,7 @@
+---
+title: "The Preferences"
+---
+
 Here is a list of supported preferences that ZK recognizes.
 
 To define a preference, you can configure it in `WEB-INF/zk.xml`[^1].

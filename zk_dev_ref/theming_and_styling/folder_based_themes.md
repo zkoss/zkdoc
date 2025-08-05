@@ -1,3 +1,7 @@
+---
+title: "Folder-based Themes"
+---
+
 
 
 Before creating a new ZK theme, web designers need to understand its

@@ -1,3 +1,7 @@
+---
+title: "script"
+---
+
 **Syntax:**
 
 `<script [src="`foo.js`"]`  

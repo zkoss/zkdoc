@@ -1,3 +1,7 @@
+---
+title: "formatDate"
+---
+
 The default method:
 
 ```java

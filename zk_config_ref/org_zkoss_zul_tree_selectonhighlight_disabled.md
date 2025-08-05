@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zul.tree.selectOnHighlight.disabled"
+---
+
 **Property:** org.zkoss.zul.tree.selectOnHighlight.disabled
 
 Default: `false`  

@@ -1,3 +1,7 @@
+---
+title: "message-loader-class"
+---
+
 **Syntax:**
 
 ```xml

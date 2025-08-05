@@ -1,3 +1,7 @@
+---
+title: "ZK Perspective"
+---
+
 The ZK perspective will show default ZK Studio views automatically,
 including the **Properties** view, the **ZK Storage View**, the
 **Outline** and the **ZUL Palette**. You can open the ZK perspective by

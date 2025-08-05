@@ -1,3 +1,7 @@
+---
+title: "Panelchildren"
+---
+
 
 - Demonstration: [Panel Demo](https://www.zkoss.org/zkdemo/window/panel)
 - Java API: [org.zkoss.zul.Panelchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panelchildren.html)

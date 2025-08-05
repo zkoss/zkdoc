@@ -1,3 +1,7 @@
+---
+title: "The max-desktops-per-session Element"
+---
+
 **Syntax:**
 
 ```xml

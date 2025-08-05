@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.composer.autowire.xel"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.composer.autowire.xel`

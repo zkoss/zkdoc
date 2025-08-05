@@ -1,3 +1,7 @@
+---
+title: "number"
+---
+
 ```java
 Number number(Object value);
 ```

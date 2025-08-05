@@ -1,3 +1,7 @@
+---
+title: "Working With Pivottable"
+---
+
 This chapter talks about how to use ZK Pivottable in a ZK application.
 
 To use ZK Pivottable, you need 2 simple steps:

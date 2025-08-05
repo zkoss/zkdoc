@@ -1,3 +1,7 @@
+---
+title: "The upload-charset-finder-class Element"
+---
+
 **Syntax:**
 
 ```xml

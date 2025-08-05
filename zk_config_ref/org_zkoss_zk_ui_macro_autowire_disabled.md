@@ -1,3 +1,7 @@
+---
+title: "org.zkoss.zk.ui.macro.autowire.disabled"
+---
+
 **Property:**
 
 `org.zkoss.zk.ui.macro.autowire.disabled`

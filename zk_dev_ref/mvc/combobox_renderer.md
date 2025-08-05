@@ -1,3 +1,7 @@
+---
+title: "Combobox Renderer"
+---
+
 When a combobox ([org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html)) is assigned
 with a model, a default renderer is assigned too[^1]. The default
 renderer will assume that the combobox displays the data as a

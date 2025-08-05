@@ -1,3 +1,7 @@
+---
+title: "Customizing Chart Style"
+---
+
 ## Switching in Between Themes
 
 ZK Charts provides many predefined color themes for you to use.

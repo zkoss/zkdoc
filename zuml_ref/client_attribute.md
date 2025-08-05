@@ -1,3 +1,7 @@
+---
+title: "Client Attribute"
+---
+
 `Name: client attribute`  
 `Namespace: `[`http://www.zkoss.org/2005/zk/client/attribute`](http://www.zkoss.org/2005/zk/client/attribute)  
 `Namespace shortcut: client/attribute`  

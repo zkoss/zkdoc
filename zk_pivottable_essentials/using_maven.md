@@ -1,3 +1,7 @@
+---
+title: "Using Maven"
+---
+
 
 
 This section describes the Maven settings required to use ZK Pivottable

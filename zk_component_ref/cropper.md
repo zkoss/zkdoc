@@ -1,3 +1,7 @@
+---
+title: "Cropper"
+---
+
 
 {% include version-badge.html version=8.6.0 %}
 

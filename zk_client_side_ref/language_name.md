@@ -1,3 +1,7 @@
+---
+title: "language-name"
+---
+
 **Syntax:**
 
 ```xml

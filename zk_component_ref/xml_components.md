@@ -1,3 +1,7 @@
+---
+title: "XML Components"
+---
+
 
 
 This section describes how to use the [XML component set](/zuml_ref/xml). The XML component

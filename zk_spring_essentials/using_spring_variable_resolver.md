@@ -1,3 +1,7 @@
+---
+title: "Using Spring Variable Resolver"
+---
+
 ### Purpose
 
 Access Spring managed bean within ZK framework

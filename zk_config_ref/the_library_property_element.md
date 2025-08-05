@@ -1,3 +1,7 @@
+---
+title: "The library-property Element"
+---
+
 **Syntax:**
 
 <library-property>  

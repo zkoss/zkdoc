@@ -1,3 +1,7 @@
+---
+title: "Session Timeout Management"
+---
+
 After a session times out, all desktops and UI objects it belongs are
 removed. If a user keeps accessing the desktop that no longer exists, ZK
 will prompt the user for the session-timeout situation. ZK supports

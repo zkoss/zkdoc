@@ -1,3 +1,7 @@
+---
+title: "Event Firing"
+---
+
 Events are usually fired (aka., triggered) by a component (when serving
 the user at the client). However, applications are allowed to fire
 events too.

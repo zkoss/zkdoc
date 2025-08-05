@@ -1,3 +1,7 @@
+---
+title: "Extensions"
+---
+
 
 
 Here is an overview of the extensions of ZK. They are optional. If you

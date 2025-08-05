@@ -1,3 +1,7 @@
+---
+title: "The disable-behind-modal Element"
+---
+
 **Syntax:**
 
 ```xml

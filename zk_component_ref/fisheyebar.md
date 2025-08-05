@@ -1,3 +1,7 @@
+---
+title: "Fisheyebar"
+---
+
 
 - Demonstration:
   [Fisheyebar](http://www.zkoss.org/zkdemo/menu/fisheye_menu)

@@ -1,3 +1,7 @@
+---
+title: "Use ZK JSP Tags instead of ZK Filter"
+---
+
 The ZK filter actually maps each HTML tag to the corresponding XHTML
 components. As described in the previous section, it consumes more
 memory than necessary since ZK has to maintain the states of all ZK

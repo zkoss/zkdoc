@@ -1,3 +1,7 @@
+---
+title: "Overriding bind and unbind"
+---
+
 The following diagrams outline when the
 <javadoc directory="jsdoc" method="bind_(zk.Desktop, zk.Skipper, _global_.Array)" class="false">zk.Widget</javadoc>
 and

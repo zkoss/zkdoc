@@ -1,3 +1,7 @@
+---
+title: "Essential Components"
+---
+
 
 
 This section outline Accessibilities in the components which are

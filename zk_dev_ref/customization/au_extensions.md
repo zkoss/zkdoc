@@ -1,3 +1,7 @@
+---
+title: "AU Extensions"
+---
+
 An AU extension
 ([org.zkoss.zk.au.http.AuExtension](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/au/http/AuExtension.html))
 is a small program that can be plugged into ZK Update Engine

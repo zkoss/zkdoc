@@ -1,3 +1,7 @@
+---
+title: "Customizing Standard Themes"
+---
+
 
 
 Here we introduce how to customize the standard themes, such as iceblue,

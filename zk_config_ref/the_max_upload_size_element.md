@@ -1,3 +1,7 @@
+---
+title: "The max-upload-size Element"
+---
+
 **Syntax:**
 
 ```xml

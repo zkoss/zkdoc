@@ -1,3 +1,7 @@
+---
+title: "ZUL Palette"
+---
+
 
 
 In addition to directly typing tags in the ZUL Editor, ZUL Palette

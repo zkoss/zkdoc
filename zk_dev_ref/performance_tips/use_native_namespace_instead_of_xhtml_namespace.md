@@ -1,3 +1,7 @@
+---
+title: "Use Native Namespace instead of XHTML Namespace"
+---
+
 ZK creates a component (one of the derives of
 [org.zkoss.zhtml.AbstractTag](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/AbstractTag.html)) for each XML element
 specified with the [XHTML component set](/zuml_ref/xhtml). In other words, ZK

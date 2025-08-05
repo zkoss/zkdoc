@@ -1,3 +1,7 @@
+---
+title: "Data Binding"
+---
+
 
 
 Data binding synchronizes data between View and ViewModel according to

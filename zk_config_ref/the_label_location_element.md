@@ -1,3 +1,7 @@
+---
+title: "The label-location Element"
+---
+
 **Syntax:**
 
 ```xml

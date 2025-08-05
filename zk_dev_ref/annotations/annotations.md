@@ -1,3 +1,7 @@
+---
+title: "Annotations"
+---
+
 An annotation is a special form of syntactic metadata that can be added
 to components. The definitions, properties and components themselves may
 be annotated. The annotations can be retrieved at the run time.

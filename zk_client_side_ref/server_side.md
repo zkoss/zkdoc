@@ -1,3 +1,7 @@
+---
+title: "Server-side"
+---
+
 This section describes how to develop the component at the server-side
 ([org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html)).
 

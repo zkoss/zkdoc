@@ -1,3 +1,7 @@
+---
+title: "XML Namespaces"
+---
+
 In a ZUML document, an XML namespace is used to identify either a
 special functionality or a component set. We call the former [a standard namespace](/zuml_ref/languages).
 

@@ -1,3 +1,7 @@
+---
+title: "ZUL"
+---
+
 `Name: xul/html (aka., zul)`  
 `File Extensions: zul, xul`  
 `Namespace: `[`http://www.zkoss.org/2005/zul`](http://www.zkoss.org/2005/zul)  

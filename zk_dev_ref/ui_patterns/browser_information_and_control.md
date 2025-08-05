@@ -1,3 +1,7 @@
+---
+title: "Browser Information and Control"
+---
+
 
 
 To retrieve the information about the client, you can register an event

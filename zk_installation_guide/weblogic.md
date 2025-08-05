@@ -1,3 +1,7 @@
+---
+title: "WebLogic"
+---
+
 1.  Download Weblogic 9.1 from http://commerce.bea.com/showproduct.jsp?family=WLS&major=9.1&minor=0
 2.  Start the Weblogic installer and accept all defaults.
 3.  Once the default installation is complete, create a weblogic domain

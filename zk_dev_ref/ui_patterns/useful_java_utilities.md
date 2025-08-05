@@ -1,3 +1,7 @@
+---
+title: "Useful Java Utilities"
+---
+
 In this section we introduce some of the most commonly used Java utility classes.
 
 # Executions
