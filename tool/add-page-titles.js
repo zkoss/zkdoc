@@ -250,7 +250,7 @@ function main() {
     console.log('Scanning for markdown files...');
     const markdownFiles = glob.sync('**/*.md', {
         cwd: ROOT_DIR,
-        ignore: ['node_modules/**', '_site/**', '.git/**', 'tool/**'],
+        ignore: ['node_modules/**', '_site/**', '.git/**', 'tool/**', '_includes/**'],
         absolute: true
     });
     

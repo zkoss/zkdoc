@@ -65,6 +65,7 @@ npm run validate-by-books
 # Convert navigation URLs to lowercase
 npm run lowercase-nav-urls
 ```
+All tool scripts should have header comments to explain their purpose and usage.
 
 ### Available Shell Scripts
 - `preview.sh` - Start Jekyll development server
