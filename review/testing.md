@@ -1,3 +1,7 @@
+---
+title: "Testing"
+---
+
 ZK is a Java framework. Technically you could use any Java test tools
 you prefer. Here we describe the testing tips and ZTL (the official test tool based on Selenium).
 
