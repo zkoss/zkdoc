@@ -7,7 +7,7 @@ Syntax
 
 ***Simplified syntax***
 
-> Since 9.5.0 
+{% include version-badge.html version=9.5.0 %} 
 
 ` @(`*`[EL-expression], [EL-expression]`*`) `
 

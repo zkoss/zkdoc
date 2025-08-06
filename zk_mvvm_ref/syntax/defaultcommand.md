@@ -1,5 +1,5 @@
 # @DefaultCommand
-> Since 6.5.1
+{% include version-badge.html version=6.5.1 %}
 
 Syntax
 ======

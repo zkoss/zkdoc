@@ -1,5 +1,5 @@
 # @MatchMedia
-> Since 8.0.2
+{% include version-badge.html version=8.0.2 %}
 
 Syntax
 ======

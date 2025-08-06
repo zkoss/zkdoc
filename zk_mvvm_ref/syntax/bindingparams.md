@@ -1,5 +1,5 @@
 # @BindingParams
-> Since 9.5.0
+{% include version-badge.html version=9.5.0 %}
 
 > Don't get confused with @BindingParam.
 

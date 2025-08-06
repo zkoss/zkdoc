@@ -1,7 +1,7 @@
 # Client Binding
 
 
-> Since 8.0.0
+{% include version-badge.html version=8.0.0 %}
 
 To interact with client-side libaries, **Client Binding** can help us publish a ZK’s data binding command on a native html element.
 For example, you can publish a *doClick* command in your view model with an *onClick* event in a html Button.

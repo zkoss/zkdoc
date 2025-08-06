@@ -18,11 +18,11 @@ Description
 
 The annotation is applied to command method's parameter. It declares that the applied parameter should come from binding argument written on the ZUL with the specified key.
 
-> Since 8.0.0
+{% include version-badge.html version=8.0.0 %}
 
 If using ***Client Binding*** to trigger a command, this annotation would convert JSON data into an appropriate object  automatically.
 
-> Since 9.5.0
+{% include version-badge.html version=9.5.0 %}
 
 The value can be omitted if name is the same as the annotated parameter.
 ```java
@@ -60,7 +60,7 @@ public void popupMessage(@BindingParam("myKey") String target, @BindingParam Str
 
 -   The `target `'s value is “myValue”, and ` content`'s is object item's description property.
 
-> Since 8.0.0
+{% include version-badge.html version=8.0.0 %}
 
 #### Using client binding to trigger a command
 

@@ -66,7 +66,7 @@ public class OrderVM {
 
 ### Smart Notify Change
 
-> Since 8.0.0
+{% include version-badge.html version=8.0.0 %}
 
 You can use `@SmartNotifyChange` as a drop-in replacement of `@NotifyChange`. The only difference between `@SmartNotifyChange` and `@NotifyChange` is ZK will check if the property is actually changed (dirty). For example, even you specify `@SmartNotifyChange({"prop1", "prop2", "prop3"})`, only the dirty properties will be actually notified.
 
@@ -236,7 +236,7 @@ public class DurationViewModel  {
 
 ## Auto Notify Change
 
-> Since 8.5.1
+{% include version-badge.html version=8.5.1 %}
 
 > ZK EE
 

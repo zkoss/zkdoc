@@ -77,7 +77,7 @@ Register Application Level Converters
 =====================================
 > Available for ZK: EE
 
-> Since 6.0.1
+{% include version-badge.html version=6.0.1 %}
 
 You can register application level converters<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appConverters*) in zk.xml.
 ```xml
@@ -108,7 +108,7 @@ Currently, built-in converter we provide are :
 ```
 - You should specify number or date pattern in format parameter's value for formattedNumber converter or formattedDate converter.
 
-> since 8.0.0
+{% include version-badge.html version=8.0.0 %}
 
 - **formattedTime**
 ```xml
@@ -118,7 +118,7 @@ Currently, built-in converter we provide are :
 
 Use Converter in Children Binding
 =================================
-> since 6.0.1
+{% include version-badge.html version=6.0.1 %}
 
 Children-binding also supports converters, and it has a [default converter](./children_binding) (If user doesn't assign one) to convert user provided object into a ` Collection ` object. Users can use a customized converter like other binding. If you implement a converter for children
 binding, remember to return a ` Collection ` object in

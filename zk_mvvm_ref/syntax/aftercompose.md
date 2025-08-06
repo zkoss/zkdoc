@@ -1,5 +1,5 @@
 # @AfterCompose
-> Since 6.0.2
+{% include version-badge.html version=6.0.2 %}
 
 Syntax
 ======
