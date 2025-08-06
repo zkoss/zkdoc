@@ -104,7 +104,7 @@ execution can contain multiple AU requests (sent from the client to the
 server) and reply with multiple AU responses (from the server to the
 client)
 
-## [Lang-addon.xml](/zk_client_side_ref/language_definition)
+## [lang-addon.xml](/zk_client_side_ref/language_definition)
 
 A language definition defines a component set (aka., a language) such as
 the zul language used for .zul files. A language addon is used to extend
@@ -177,7 +177,7 @@ file. It also acts as the root of the component tree.
 
 ## [Sclass](/zk_style_customization_guide/sclass)
 
-The sclass="customclass" attribute can be used by a developer to add a
+The `sclass="customclass"` attribute can be used by a developer to add a
 class="customclass" attribute on the DOM node created by the component.
 Its purpose it to easily add CSS styles to a ZK component.
 
@@ -191,7 +191,6 @@ javax.servlet.http.HttpSession object to track client's session. ZK's
 - Get current ZK session:
   [Sessions.getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Sessions#getCurrent-boolean-).
 
-<!-- -->
 
 - Get current HttpSession:
   [Sessions.getCurrent().getNativeSession()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session#getNativeSession--)

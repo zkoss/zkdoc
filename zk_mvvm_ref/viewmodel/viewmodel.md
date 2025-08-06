@@ -1,5 +1,3 @@
-# ViewModel
-
 # What is ViewModel
 ViewModel is an **abstraction of Model**. It extracts the necessary data to be displayed on the View from one or more Model classes. Those data are exposed through getter and setter method like JavaBean's property.
 
@@ -90,7 +88,7 @@ Now then, apply the above resolver on a page or [system scope]({{site.baseurl}}/
 </zk>
 ```
 
-> Since 9.5.0
+Since 9.5.0
 We can use simplified syntax to init view model. Notice that the id of the view model will be 'vm' by default.
 ```xml
 <zk>
