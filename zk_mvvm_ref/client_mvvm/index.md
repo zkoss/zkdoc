@@ -84,7 +84,7 @@ Once it is correctly configured, we can start to enjoy the benefits of client MV
 With client MVVM, the data binding is now done at the client-side instead of the server-side, there are several limitations and
 differences compared to the server MVVM.
 
-## 1. EL expression is not supported
+## EL expression is not supported
 
 EL expression - `${expr}` and EL 3 are not supported. For Example, the following expressions are not supported:
 
@@ -94,7 +94,7 @@ EL expression - `${expr}` and EL 3 are not supported. For Example, the following
 <label value="@load((vm.names.stream().filter(x -> x.contains(vm.filter)).toList()))" />
 ```
 
-## 2. Strict Implementation of MVVM Pattern
+## Strict Implementation of MVVM Pattern
 
 The main feature of MVVM is to decouple the UI and non-UI code, which means components should be controlled by data binding. Developers should avoid
 controlling components directly by calling their API. Even though we have this rules, there are cases where developers have been accessing the components
@@ -155,7 +155,7 @@ org.zkoss.bind.Converter#coerceToBean(U compAttr, C component, BindContext ctx);
 ```
 
 
-## 3. Deferred Binding is no longer supported
+## Deferred Binding is no longer supported
 
 Deferred Binding is no longer supported. This feature is to avoid
 unnecessary AU requests (data updates). Since client MVVM does those
@@ -167,13 +167,13 @@ bindings on the client-side, it doesn't require such an update.
 </textbox>
 ```
 
-## 4. SmartNotifyChange always on
+## SmartNotifyChange always on
 
 `@SmartNotifyChange` is always enabled in client MVVM, which means that the
 properties will only update (reload) when the value of the expression is
 changed.
 
-## 5. Conditional Binding works differently
+## Conditional Binding works differently
 
 Conditional binding works differently when the command updates the value
 without doing `@NotifyChange`. For example:
@@ -197,7 +197,7 @@ In client MVVM, the value will remain "123". If you intend to see
 "123changed" you will need to apply `@NotifyChange`.
 
 
-## 6. AnnotateDataBinder and Calling Binder API are no longer supported
+## AnnotateDataBinder and Calling Binder API are not supported
 `AnnotateDataBinder` is the old ZK binding in zkplus module. And the
 Binder API is for server MVVM. For example:
 
@@ -219,7 +219,10 @@ Or using custom Binder:
 </window>
 ```
 
-All those usages are not support with client MVVM.
+All those usages above are not support with client MVVM.
+
+## Macro Component is not supported
+Macro Component is not supported in client MVVM. The reason is that the macro component contains custom server-side logic written in Java and cannot be executed on the client side.
 
 <!--
 ## 3. Getter Method should be pure in View Model
