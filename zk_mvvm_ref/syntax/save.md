@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @save(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
+`@save(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
 
 Description
 ===========

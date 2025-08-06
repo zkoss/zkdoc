@@ -7,7 +7,7 @@ title: "variable-resolver"
 **Syntax**
 
 `<zk:variable-resolver use="..." `  
-` [arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."] />`
+`[arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."] />`
 
 It specifies the variable resolver that will be used by the zscript
 interpreter.

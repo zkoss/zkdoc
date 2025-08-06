@@ -4,11 +4,13 @@ title: "The version Element"
 
 **Syntax:**
 
+```xml
 <version>  
-`   `<version-class>a_class</version-class>  
-`   `<version-uuid>a_version</version-uuid>  
-`   `<zk-version>a_version</zk-version>  
+    <version-class>a_class</version-class>  
+    <version-uuid>a_version</version-uuid>  
+    <zk-version>a_version</zk-version>  
 </version>
+```
 
 `[Optional]`
 

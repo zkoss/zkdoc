@@ -4,11 +4,13 @@ title: "The error-page Element"
 
 **Syntax:**
 
+```xml
 <error-page>  
-    `<device-type>`''a_device_type|ajax</device-type>  
-`    `<exception-type>a_class_name</exception-type>  
-`    `<location>a_uri</location>  
+    <device-type>''a_device_type|ajax</device-type>  
+    <exception-type>a_class_name</exception-type>  
+    <location>a_uri</location>  
 </error-page>
+```
 
 It specifies an error page used when an uncaught exception is thrown in
 updating a ZUML page (e.g., in an event listener). Each page is

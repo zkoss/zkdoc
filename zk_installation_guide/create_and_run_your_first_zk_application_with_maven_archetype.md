@@ -37,50 +37,50 @@ maven-archetype-plugin version 3.0.1 you'll have to use the following
 command (using 2.4 as a fallback -
 [ARCHETYPE-519](https://issues.apache.org/jira/browse/ARCHETYPE-519)):
 
-` $ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)
+`$ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)
 
-` $ mvn archetype:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)  
-` [INFO] Scanning for projects...`  
-` [INFO] Searching repository for plugin with prefix: 'archetype'.`  
-` [INFO] ------------------------------------------------------------------------`  
-` [INFO] Building Maven Default Project`  
-` [INFO]    task-segment: [archetype:generate] (aggregator-style)`  
-` [INFO] ------------------------------------------------------------------------`  
-` [INFO] Preparing archetype:generate`  
-` [INFO] No goals needed for project - skipping`  
-` [INFO] [archetype:generate {execution: default-cli}]`  
-` [INFO] Generating project in Interactive mode`  
-` [INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.`  
-` archetypes:maven-archetype-quickstart:1.0)`  
-` Choose archetype:`  
-` 1: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-component (An archetype `  
-` that generates a starter ZK component project)`  
-` 2: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-extension (An archetype `  
-` that generates a starter ZK extension project)`  
-` 3: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-webapp (An archetype that`  
-` generates a starter ZK CE webapp project)`  
-` 4: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-ee-eval-archetype-webapp (An `  
-` archetype that generates a starter ZK EE-eval webapp project)`  
-` Choose a number: : 3`  
-` Define value for property 'groupId': : com.foo`  
-` Define value for property 'artifactId': : mywebapp`  
-` Define value for property 'version': 1.0-SNAPSHOT: 0.8.0`  
-` Define value for property 'package': com.foo:`  
-` [INFO] Using property: zk-version-since = 6.0.1`  
-` Confirm properties configuration:`  
-` groupId: com.foo`  
-` artifactId: mywebapp`  
-` version: 0.8.0`  
-` package: com.foo`  
-` zk-version-since: 6.0.1`  
-` Y:`  
-` [INFO] ------------------------------------------------------------------------`  
-` [INFO] BUILD SUCCESSFUL`  
-` [INFO] ------------------------------------------------------------------------`  
-` [INFO] Total time: 29 seconds`  
-` [INFO] Finished at: Fri Jun 22 16:55:27 CST 2012`  
-` [INFO] Final Memory: 13M/150M`  
-` [INFO] ------------------------------------------------------------------------`
+`$ mvn archetype:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)  
+`[INFO] Scanning for projects...`  
+`[INFO] Searching repository for plugin with prefix: 'archetype'.`  
+`[INFO] ------------------------------------------------------------------------`  
+`[INFO] Building Maven Default Project`  
+`[INFO]    task-segment: [archetype:generate] (aggregator-style)`  
+`[INFO] ------------------------------------------------------------------------`  
+`[INFO] Preparing archetype:generate`  
+`[INFO] No goals needed for project - skipping`  
+`[INFO] [archetype:generate {execution: default-cli}]`  
+`[INFO] Generating project in Interactive mode`  
+`[INFO] No archetype defined. Using maven-archetype-quickstart (org.apache.maven.`  
+`archetypes:maven-archetype-quickstart:1.0)`  
+`Choose archetype:`  
+`1: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-component (An archetype `  
+`that generates a starter ZK component project)`  
+`2: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-extension (An archetype `  
+`that generates a starter ZK extension project)`  
+`3: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-archetype-webapp (An archetype that`  
+`generates a starter ZK CE webapp project)`  
+`4: `[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)` -> zk-ee-eval-archetype-webapp (An `  
+`archetype that generates a starter ZK EE-eval webapp project)`  
+`Choose a number: : 3`  
+`Define value for property 'groupId': : com.foo`  
+`Define value for property 'artifactId': : mywebapp`  
+`Define value for property 'version': 1.0-SNAPSHOT: 0.8.0`  
+`Define value for property 'package': com.foo:`  
+`[INFO] Using property: zk-version-since = 6.0.1`  
+`Confirm properties configuration:`  
+`groupId: com.foo`  
+`artifactId: mywebapp`  
+`version: 0.8.0`  
+`package: com.foo`  
+`zk-version-since: 6.0.1`  
+`Y:`  
+`[INFO] ------------------------------------------------------------------------`  
+`[INFO] BUILD SUCCESSFUL`  
+`[INFO] ------------------------------------------------------------------------`  
+`[INFO] Total time: 29 seconds`  
+`[INFO] Finished at: Fri Jun 22 16:55:27 CST 2012`  
+`[INFO] Final Memory: 13M/150M`  
+`[INFO] ------------------------------------------------------------------------`
 
 # Run the Project
 

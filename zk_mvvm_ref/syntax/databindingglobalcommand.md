@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @global-command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
+`@global-command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
 Description
 ===========

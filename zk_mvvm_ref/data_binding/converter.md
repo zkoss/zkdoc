@@ -4,7 +4,7 @@ Converter performs two way conversion between ViewModel's property and UI compon
 Implement a Converter
 =====================
 Developers can create a custom converter by implementing the [Converter](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Converter.html) interface. The method
-` coerceToUi() ` is invoked when loading ViewModel's property to component and its return type should correspond to bound component attribute's value<sub>[1]</sub>. The ` coerceToBean() ` is invoked when saving. If you only need to one way conversion, you can leave unused method empty.
+`coerceToUi() ` is invoked when loading ViewModel's property to component and its return type should correspond to bound component attribute's value<sub>[1]</sub>. The ` coerceToBean() ` is invoked when saving. If you only need to one way conversion, you can leave unused method empty.
 
 [1]: Since 6.0.1, a converter can return the [IGNORED_VALUE](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Converter.html#IGNORED_VALUE) to indicate that binder should ignore to load the value to component. It is useful if you want to do some extra method call on a component after a command or a value change notification.
 
@@ -122,7 +122,7 @@ Use Converter in Children Binding
 
 Children-binding also supports converters, and it has a [default converter](./children_binding) (If user doesn't assign one) to convert user provided object into a ` Collection ` object. Users can use a customized converter like other binding. If you implement a converter for children
 binding, remember to return a ` Collection ` object in
-` coerceToUi( ) `.
+`coerceToUi( ) `.
 
 ```xml
 <hlayout children="@init(vm.items) @converter(vm.itemConverter)">

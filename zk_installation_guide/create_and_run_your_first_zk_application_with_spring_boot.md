@@ -217,8 +217,10 @@ With the git command line installed all you need is to clone the example
 repository (Alternatively download a
 [zip-package](https://github.com/zkoss/zkspringboot/archive/master.zip)):
 
-`   git clone `[`https://github.com/zkoss/zkspringboot`](https://github.com/zkoss/zkspringboot)  
-`   cd zkspringboot/zkspringboot-demos`
+```text
+git clone https://github.com/zkoss/zkspringboot  
+cd zkspringboot/zkspringboot-demos`
+```
 
 In order to get started immediately the project includes the
 [gradle-wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
@@ -251,7 +253,7 @@ Useful
 can be enabled by activating the **dev**-profile as a VM argument in
 your run configuration.
 
-`   -Dspring.profiles.active=dev`
+`-Dspring.profiles.active=dev`
 
 This will disable resource caches allowing to replace zul/css/js/image
 files without restarting the application.

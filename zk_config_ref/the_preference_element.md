@@ -4,10 +4,12 @@ title: "The preference Element"
 
 **Syntax:**
 
+```xml
 <preference>  
-`    `<name>any name</name>  
-`    `<value>any value</value>  
+    <name>any name</name>  
+    <value>any value</value>  
 </preference>
+```
 
 `[Optional]`
 

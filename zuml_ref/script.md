@@ -11,11 +11,11 @@ It tells ZK to generate a `
 
 <script>
 
-` inside `
+`inside `
 
 <head>
 
-` **after ZK default JavaScript and CSS files**. Thus, it can be
+`**after ZK default JavaScript and CSS files**. Thus, it can be
 used to override what is defined in ZK default JavaScript code.
 Currently, only HTML-based clients (so-called browsers) support it.
 Furthermore, an HTML SCRIPT tag is generated for each of these

@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @id(`*`[EvaluateOnce EL-expression]`*`)`
+`@id(`*`[EvaluateOnce EL-expression]`*`)`
 
 Description
 ===========

@@ -8,7 +8,7 @@ title: "namespace"
 <namespace>a_namespace</namespace>
 ```
 
-` [Required for a language definition]`
+`[Required for a language definition]`
 
 It specifies the namespace of this language. It is suggested to be an
 URL. The last part will be considered as a shortcut. Thus, the last part

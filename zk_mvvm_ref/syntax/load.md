@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @load(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
+`@load(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
 
 Description
 ===========

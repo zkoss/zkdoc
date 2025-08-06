@@ -45,7 +45,7 @@ ZK generates its javaScript into a output page's `
 
 <head>
 
-` after the JavaScript of another addon.
+`after the JavaScript of another addon.
 
 # merge
 

@@ -7,7 +7,7 @@ ServletRequest.getParameterMap()\]
 
 If you visit a page with the URL like
 
-` `[`http://localhost:8080/mypage.zul?p1=v1&p2=v2`](http://localhost:8080/mypage.zul?p1=v1&p2=v2)
+[http://localhost:8080/mypage.zul?p1=v1&p2=v2](http://localhost:8080/mypage.zul?p1=v1&p2=v2)
 
 Then you can retrieve parameters' value with the syntax below:
 

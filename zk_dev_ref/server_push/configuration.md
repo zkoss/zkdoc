@@ -216,7 +216,7 @@ updates.
 
 Those requests look similar to this:
 
-`   dtid=z_m06&cmd_0=dummy&opt_0=i`
+`dtid=z_m06&cmd_0=dummy&opt_0=i`
 
 In the case of PollingServerPush there will be one of these requests per
 configured interval, sometimes causing a firewall to give a false alert.

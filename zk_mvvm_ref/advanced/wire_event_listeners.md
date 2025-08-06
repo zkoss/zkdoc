@@ -20,4 +20,4 @@ public class SearchAutowireVM {
 }
 ```
 
--   ` Selectors.wireEventListeners()` 's first parameters is Root View Component which can be retrieved by `@ContextParam`.
+-  `Selectors.wireEventListeners()` 's first parameters is Root View Component which can be retrieved by `@ContextParam`.

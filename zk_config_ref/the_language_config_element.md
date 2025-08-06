@@ -4,10 +4,12 @@ title: "The language-config Element"
 
 **Syntax:**
 
+```xml
 <language-config>  
-`    `<addon-uri>a_uri</addon-uri>  
-`    `<language-uri>`''a_uri`</language-uri>  
+    <addon-uri>a_uri</addon-uri>  
+    <language-uri>a_uri</language-uri>  
 </language-config>
+```
 
 `[Optional]`
 

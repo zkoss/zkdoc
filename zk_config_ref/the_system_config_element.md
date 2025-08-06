@@ -4,9 +4,10 @@ title: "The system-config Element"
 
 **Syntax:**
 
+```xml
 <system-config>  
-`   `  
 </system-config>
+```
 
 `[Optional]`
 

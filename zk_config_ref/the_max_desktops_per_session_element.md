@@ -23,7 +23,7 @@ message like:
 
 <div style="width:600px;margin:auto; border:solid 2px; padding:5px">
 
-` The resource you request is no longer available: /index.zul
+`The resource you request is no longer available: /index.zul
 (z_8nc).
 
 This is normally caused by timeout, or opening too many Web pages.

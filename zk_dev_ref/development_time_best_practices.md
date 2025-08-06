@@ -80,20 +80,17 @@ Configure [Jetty maven plugin](https://wiki.eclipse.org/Jetty/Feature/Jetty_Mave
 `pom.xml` can start your project in a few seconds which speeds up the
 iteration of writing code and testing.
 
-\<syntaxhighlight lang='xml\> <build>
-
-`   `<plugins>  
-`       `  
-`       `<plugin>  
-`           `<groupId>`org.eclipse.jetty`</groupId>  
-`           `<artifactId>`jetty-maven-plugin`</artifactId>  
-`           `<version>`9.4.27.v20200227`</version>  
-`       `</plugin>  
-`   `</plugins>
-
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>9.4.27.v20200227</version>
+        </plugin>
+    </plugins>
 </build>
-
-</syntaxhighlight>
+```
 
 # Spring Boot
 

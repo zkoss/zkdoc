@@ -121,15 +121,15 @@ The syntax to notify property change:
 
 One property:
 
-` @NotifyChange("oneProperty") `
+`@NotifyChange("oneProperty") `
 
 Multiple properties:
 
-` @NotifyChange({"property01","property02"}) `
+`@NotifyChange({"property01","property02"}) `
 
 All properties in a ViewModel:
 
-` @NotifyChange("*") `
+`@NotifyChange("*") `
 
 **Define notification & commands in a ViewModel**
 

@@ -14,7 +14,7 @@ button. ![](images/Zkcharts-essentials-overTurboThreshold.png) If
 you open chrome developer tool / console tab, you will see the error
 message below:
 
-` Highcharts error #12: `[`www.highcharts.com/errors/12`](https://www.highcharts.com/errors/12)
+`Highcharts error #12: https://www.highcharts.com/errors/12`
 
 # Solution
 

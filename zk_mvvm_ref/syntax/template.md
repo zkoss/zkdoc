@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @template(`*`[EL-expression]`*`) `
+`@template(`*`[EL-expression]`*`) `
 
 Description
 ===========

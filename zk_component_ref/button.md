@@ -283,7 +283,7 @@ sets the button's type. It is designed to work with the HTML `
 
 <form>
 
-` and Servlets. For example,
+`and Servlets. For example,
 
 ```xml
 <n:form action="/foo/my_handler" xmlns:n="native">

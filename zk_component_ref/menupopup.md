@@ -54,7 +54,7 @@ Default HtmlBasedComponent.getSclass(): menupopup.
 
 # Toggle Menupopup
 
-` Since 7.0.1`
+`Since 7.0.1`
 
 If you assign a menupopup to a target component and add `type=toggle` to
 its popup or context attribute, it will toggle the visibility of
@@ -71,7 +71,7 @@ will hide the menupopup.
 
 # Highlight position
 
-` Since 8.6.0`
+`Since 8.6.0`
 
 We can highlight position in a `menupopup` by using `setActive(int)`
 method. Notice that we can only highlight `menuitem` or `menu` that is

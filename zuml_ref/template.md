@@ -7,7 +7,7 @@ title: "template"
 **Syntax:**
 
 `<template name="`*`template-name`*`" [src="`*`URI`*`"]`  
-` [`*`attr1`*`="`*`value1`*`"] [`*`attr2`*`="`*`value2`*`"...] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]/>`
+`[`*`attr1`*`="`*`value1`*`"] [`*`attr2`*`="`*`value2`*`"...] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]/>`
 
 It defines a template. A template is a ZUML fragment that defines how to
 create components. Once a ZUML document is interpreted, the template

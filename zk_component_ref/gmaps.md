@@ -355,7 +355,7 @@ Starting from June 2016, an API key is required to use Google Maps APIs.
 If you are seeing the following error in your JS console, please obtain
 an API key from Google.
 
-`   Google Maps API error: MissingKeyMapError`
+`Google Maps API error: MissingKeyMapError`
 
 For more information please refer to
 \[<https://developers.google.com/maps/pricing-and-plans/standard-plan-2016-update?utm_source=geoblog&utm_medium=social&utm_campaign=2016-geo-na-website-gmedia-blogs-us-blogPost&utm_content=TBC>\|

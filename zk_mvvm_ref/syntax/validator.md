@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @validator(`*`[EL-expression], [arbitraryKey]=[EL-expression]`* `) `
+`@validator(`*`[EL-expression], [arbitraryKey]=[EL-expression]`* `) `
 
 Description
 ===========

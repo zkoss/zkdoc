@@ -6,7 +6,7 @@
 Syntax
 ======
 
-` @ref(`*`[EL-expression]`*`) `
+`@ref(`*`[EL-expression]`*`) `
 
 Description
 ===========

@@ -4,10 +4,12 @@ title: "The library-property Element"
 
 **Syntax:**
 
+```xml
 <library-property>  
-`    `<name>`any name`</name>  
-`    `<value>`any value`</value>  
+    <name>`any name`</name>  
+    <value>`any value`</value>  
 </library-property>
+```
 
 Species a library-level property with the `library-property` element.
 

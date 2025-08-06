@@ -72,7 +72,7 @@ Without this setting, `offsetHeight` of `
 
 <html>
 
-` will be zero, and sibling's height will be wrong.
+`will be zero, and sibling's height will be wrong.
 
 # Supported Events
 

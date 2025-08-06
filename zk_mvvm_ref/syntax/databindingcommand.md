@@ -3,13 +3,13 @@
 Syntax
 ======
 
-` @command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
+`@command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
 ***Simplified syntax***
 
 {% include version-badge.html version=9.5.0 %} 
 
-` @(`*`[EL-expression], [EL-expression]`*`) `
+`@(`*`[EL-expression], [EL-expression]`*`) `
 
 Description
 ===========

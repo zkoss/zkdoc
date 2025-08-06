@@ -3,7 +3,7 @@
 Syntax
 ======
 
-` @converter(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
+`@converter(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
 Description
 ===========

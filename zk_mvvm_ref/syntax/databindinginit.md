@@ -3,10 +3,10 @@
 Syntax
 ======
 
-` @init(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
+`@init(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
 {% include version-badge.html version=9.5.0 %}
-` @(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
+`@(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 We can use simplified syntax to initialize a component's attribute.
 ```xml
 <label value="@(vm.message)"/>
