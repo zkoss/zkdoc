@@ -4,7 +4,7 @@ Models are the perfect way for developers to interact with the charts as
 they shield developers from complexities that they need not know or
 interact with. In addition to this ZK model supports many design
 patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc)
-and [ MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/mvvm_&_zk_bind), which are both
+and [ MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/mvvm_and_zk_bind), which are both
 fully supported patterns.
 
 ZK provides [ chart models]({{site.baseurl}}/zk_dev_ref/mvc/chart_model) to

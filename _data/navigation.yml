@@ -160,8 +160,8 @@ zk_mvvm_ref:
     children:
       - title: Strength of MVVM
         url: /zk_mvvm_ref/intro/strength_of_mvvm
-      - title: MVVM & ZK Bind
-        url: /zk_mvvm_ref/intro/mvvm_&_zk_bind
+      - title: MVVM and ZK Bind
+        url: /zk_mvvm_ref/intro/mvvm_and_zk_bind
       - title: Detail Operation Flow
         url: /zk_mvvm_ref/intro/detail_operation_flow
   - title: ViewModel
