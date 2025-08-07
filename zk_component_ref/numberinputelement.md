@@ -63,6 +63,8 @@ For example:
 Try it
 *  [Number Input Elements](https://zkfiddle.org/sample/2kqnun7/1-ZK-Component-Reference-NumberInputElement-Example?v=latest&t=Iceblue_Compact)
 
+## Supported Events
+Inherited Supported Events: [FormatInputElement](formatinputelement#supported-events)
 
 ## Supported Children
 `*NONE`: The number input element does not support any children.

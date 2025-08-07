@@ -100,19 +100,16 @@ for inherited functions.
 
 # Supported Events
 
-- Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#Supported_Events)
+- Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#supported-events)
 
 # Supported Molds
 
-Available molds of a component are defined in lang.xml embedded in
-zul.jar.
+Available molds of a component are defined in lang.xml embedded in zul.jar.
 
-| Name | Snapshot |
-|---|---|
-| default | ![](/zk_component_ref/images/spinner_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png
-title="spinner_mold_rounded.png" alt="spinner_mold_rounded.png" /&gt; {%
-include version-badge.html version=5.0.0 %} |
+| Name | Screenshot                                                                                           |
+|---|------------------------------------------------------------------------------------------------------|
+| default | ![](/zk_component_ref/images/spinner_mold_default.png)                                               |
+| rounded | {% include version-badge.html version=5.0.0 %} ![](/zk_component_ref/images/spinner_mold_rounded.png |
 
 # Supported Children
 
