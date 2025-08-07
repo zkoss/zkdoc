@@ -4,7 +4,7 @@
 
 - Component Reference:
   [Cardlayout]({{site.baseurl}}/zk_component_ref/cardlayout)
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # Swipe to change view
 

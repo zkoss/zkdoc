@@ -4,7 +4,7 @@
 
 - Component Reference:
   [Spinner]({{site.baseurl}}/zk_component_ref/spinner)
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # Layout Enhancement
 

@@ -204,7 +204,8 @@ We create 2 labels that bound to current binding component's id and view compone
 
 Retrieve Event Object
 ---------------------
-{% include version-badge.html version="6.0.1" %} and ZK EE
+{% include version-badge.html version="6.0.1" %}
+{% include edition-availability.html edition="ee" %}
 
 {% include version-badge.html version="6.5.2" %}, it is supported in CE
 

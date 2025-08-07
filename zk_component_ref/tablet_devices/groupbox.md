@@ -2,7 +2,7 @@
 
 - Component Reference:
   [Groupbox]({{site.baseurl}}/zk_component_ref/groupbox)
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # Enforce 3D Mold
 

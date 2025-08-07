@@ -7,7 +7,7 @@
 - JavaScript API:
   [zkmax.layout.Scrollview](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Scrollview.html)
 
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

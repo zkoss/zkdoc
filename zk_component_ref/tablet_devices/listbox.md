@@ -4,7 +4,7 @@
 
 - Component Reference:
   [Listbox]({{site.baseurl}}/zk_component_ref/listbox)
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # Friendly Scrolling Support
 

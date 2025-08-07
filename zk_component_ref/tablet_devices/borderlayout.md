@@ -4,7 +4,7 @@
 
 - Component Reference:
   [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout)
-- [Available in ZK EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
 
 # SwipeEvent Support
 
