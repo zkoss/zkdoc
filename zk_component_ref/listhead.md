@@ -52,12 +52,12 @@ surpport Listheader as its child.
 
 ## Menupopup
 
-{% include version-badge.html version=6.5.0 %}
+{% include version-badge.html version="6.5.0" %}
 
 Default: `none`
 
 - `auto`: show a default menu for the listhead.
-- `auto-keep`: {% include version-badge.html version=8.6.1 %} the default menu will
+- `auto-keep`: {% include version-badge.html version="8.6.1" %} the default menu will
   keep open after setting column visibility.
 
 Or you can provide your own menupopup by specifying a menupopup's ID.

@@ -22,7 +22,7 @@ percent or pixel) on every
 otherwise the result may depend on the browser and may not be as
 expected.
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 Each column may have any number of any type of components.
 
@@ -61,7 +61,7 @@ Each column may have any number of any type of components.
     </columnlayout>
 ```
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 Each column may have any number of any type of components.
 

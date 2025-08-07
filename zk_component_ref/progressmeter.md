@@ -27,7 +27,7 @@ completed. The value property must be in the range between 0 and 100.
 
 ## Indeterminate
 
-`{% include version-badge.html version=8.6.1 %}`
+`{% include version-badge.html version="8.6.1" %}`
 
 If true, the progressmeter will show an indeterminate animation and the
 real value of the progressmeter will be hidden.(default false)

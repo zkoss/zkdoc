@@ -9,7 +9,7 @@ title: "The timeout-uri Element"
 ```
 
 `[Optional]`  
-{% include version-badge.html version=3.6.3 %}  
+{% include version-badge.html version="3.6.3" %}  
 `[Default: ` `null``]`
 
 It specifies the target URI that will be used to redirect users to, when

@@ -60,7 +60,7 @@ actions to map to equivalent mouse actions.
 
 ### disabling touch event support
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 You may want to disable touch event support, for example to force hybrid
 devices to use only mouse controls.

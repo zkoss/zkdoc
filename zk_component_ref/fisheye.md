@@ -81,7 +81,7 @@ of how to do this.
 </zk>
 ```
 
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 # Inherited Functions
 

@@ -1,7 +1,7 @@
 ## Caption
 
 <!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %} {% include version-badge.html version=6.5.0 %}
+{% include edition-availability.html edition="ee" %} {% include version-badge.html version="6.5.0" %}
 
 A layout region may have a caption, which is specified by declaring a
 child component `<caption>`.
@@ -19,7 +19,7 @@ child component `<caption>`.
 
 ## Closable
 
-{% include version-badge.html version=8.5.2 %} Default: `true`
+{% include version-badge.html version="8.5.2" %} Default: `true`
 
 Whether users can open or close the region. Require
 `collapsible="true"`. Notice you need to click the icon on the title or
@@ -28,7 +28,7 @@ instead of opening it. ![](/zk_component_ref/images/Closable.gif)
 
 ## Slidable
 
-{% include version-badge.html version=8.5.2 %} Default: `true`
+{% include version-badge.html version="8.5.2" %} Default: `true`
 
 Whether users can slide (preview) the region when clicking on the title
 of the collapsed region. It opens the region like a drawer overlapping

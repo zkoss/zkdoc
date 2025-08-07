@@ -7,7 +7,7 @@ title: "org.zkoss.web.classWebResource.cache.etag"
 `org.zkoss.web.classWebResource.cache.etag`
 
 Default: `false`  
-{% include version-badge.html version=5.0.1 %}
+{% include version-badge.html version="5.0.1" %}
 
 It specifies whether to use ETag to detect and return 304 for matched
 resource.

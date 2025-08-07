@@ -50,7 +50,7 @@ If you need a splitter, please use [ splitlayout](/zk_component_ref/splitlayout)
 
 ## Align and Pack
 
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 ![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
@@ -89,7 +89,7 @@ If you need a splitter, please use [ splitlayout](/zk_component_ref/splitlayout)
 
 # Cell Component
 
-{% include version-badge.html version=5.0.0 %} In ZK5, we have introduced a new
+{% include version-badge.html version="5.0.0" %} In ZK5, we have introduced a new
 component named Cell which can be embedded into a Grid or Box (Hbox and
 Vbox) to fully control the layout and the style. You can now use the
 rowspan or the colspan property to layout your Grid, for example a

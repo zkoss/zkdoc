@@ -7,7 +7,7 @@ title: "org.zkoss.util.logging.realCauseBriefly"
 `org.zkoss.util.logging.realCauseBriefly`
 
 `Default: 6`  
-{% include version-badge.html version=3.6.1 %}
+{% include version-badge.html version="3.6.1" %}
 
 It defines the number of lines to log an error message.
 

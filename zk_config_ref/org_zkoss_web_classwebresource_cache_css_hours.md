@@ -7,7 +7,7 @@ title: "org.zkoss.web.classWebResource.cache.CSS.hours"
 `org.zkoss.web.classWebResource.cache.CSS.hours`
 
 `Default: 8760`  
-{% include version-badge.html version=3.6.3 %}
+{% include version-badge.html version="3.6.3" %}
 
 It specifies the number of hours in that period the CSS files of class
 Web resources won't be changed.

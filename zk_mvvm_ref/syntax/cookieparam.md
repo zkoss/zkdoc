@@ -18,7 +18,7 @@ Description
 
 The annotation is applied to initial (or command) method's parameter. It declares that the applied parameter should come from the HTTP request cookie with specified key.
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
 ```java

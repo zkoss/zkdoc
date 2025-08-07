@@ -109,7 +109,7 @@ you want to have different visual layout or to control multiple
 
 ## Data Model with Paging
 
-{% include version-badge.html version=8.0.0 %}
+{% include version-badge.html version="8.0.0" %}
 
 If `listbox` or `grid` component is used with a data model, we recommend
 you control paging from the model directly. Although specifying page
@@ -286,7 +286,7 @@ this attribute as it is generally better to use the `paginal` attribute.
 
 ## The PagingDisabled Property
 
-{% include version-badge.html version=8.0.3 %} Once the `pagingDisabled` is set to
+{% include version-badge.html version="8.0.3" %} Once the `pagingDisabled` is set to
 `true`, users will be blocked from navigating through the pagination.
 
 ## The onPaging Event and Method
@@ -306,7 +306,7 @@ grid.addEventListener(org.zkoss.zul.event.ZulEvents.ON_PAGING, new MyListener())
 
 ## Autopaging
 
-{% include version-badge.html version=5.0.2 %}
+{% include version-badge.html version="5.0.2" %}
 
 When using the paging mold and vflex, you could also turn on autopaging
 ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean)))
@@ -343,8 +343,8 @@ feature only works when each row has the same height.
 }
 ```
 
-{% include version-badge.html version=5.0.8 %} **Note:** In ZK 7, we change the
-naming *.z-row-cnt* to *.z-row-content*. {% include version-badge.html version=7.0.3
+{% include version-badge.html version="5.0.8" %} **Note:** In ZK 7, we change the
+naming *.z-row-cnt* to *.z-row-content*. {% include version-badge.html version="7.0.3"
 %}
 
 # Sort
@@ -528,7 +528,7 @@ new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1)
 
 ## Scroll to a Specific Item
 
-`{% include version-badge.html version=8.5.2 %}`
+`{% include version-badge.html version="8.5.2" %}`
 
 You can call `scrollToIndex(int)` to scroll a Grid to a specific item,
 and this even works under ROD.
@@ -579,7 +579,7 @@ A grid can be scrollable and has a frozen header if you specify the
 </grid>
 ```
 
-{% include version-badge.html version=7.0.0 %}
+{% include version-badge.html version="7.0.0" %}
 
 The browser's default scrollbar is replaced by floating scrollbar and it
 is not visible unless user mouse over on the content. To turn off the
@@ -792,7 +792,7 @@ either one of them.
 
 ## emptyMessage
 
-{% include version-badge.html version=5.0.7 %} Specify a string at this attribute to
+{% include version-badge.html version="5.0.7" %} Specify a string at this attribute to
 show a message when a Grid has no items.
 
 ```xml
@@ -839,7 +839,7 @@ resize the widths of columns by dragging the border between adjacent
 
 ### Auto Fitting Columns
 
-{% include version-badge.html version=5.0.0 %} When you want to resize a column of a
+{% include version-badge.html version="5.0.0" %} When you want to resize a column of a
 Grid or Listbox, all you now need to do is double-click the column when
 the mouse is over where the columns meet and the column will
 automatically resize to fit its contents. To enable this functionality
@@ -895,7 +895,7 @@ For example,
 
 ## Visible Rows
 
-{% include version-badge.html version=8.5.0 %}
+{% include version-badge.html version="8.5.0" %}
 
 The `visibleRows` attribute is used to control how many rows are
 visible. By setting it to zero, the grid will resize itself to hold as
@@ -903,7 +903,7 @@ many as items if possible.
 
 ## Sticky Header
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Grid's header out of visible range in a viewport, the Grid's
@@ -966,7 +966,7 @@ For example,
 
 When the user groups the content of the grid, the column's menu will
 show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
-include version-badge.html version=6.5.0 %}
+include version-badge.html version="6.5.0" %}
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
 
@@ -1035,7 +1035,7 @@ rows. The code below demonstrates how to do this:
 </row>
 ```
 
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 - For further details, please refer to [ Cell component]({{site.baseurl}}/zk_component_ref/cell)
   directly.
@@ -1136,7 +1136,7 @@ The following code demonstrates how to freeze a column within a Grid:
 </grid>
 ```
 
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 - For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
@@ -1156,7 +1156,7 @@ information, please refer to [ZK Developer's Reference: Performance Tips]({{site
 `[default: false]`  
 `[inherit: true]`[^2]
 
-{% include version-badge.html version=5.0.7 %} Specifies whether to sort the model
+{% include version-badge.html version="5.0.7" %} Specifies whether to sort the model
 when the following cases:
 
 - [org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))is
@@ -1178,7 +1178,7 @@ the value as **ignore.change**.
 `[default: 50]`  
 `[inherit: true]`[^3]
 
-{% include version-badge.html version=6.0.1 %} Specifies the number of rows to
+{% include version-badge.html version="6.0.1" %} Specifies the number of rows to
 preload when receiving the rendering request from the client. It is used
 only if live data
 ([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
@@ -1190,7 +1190,7 @@ not paging
 `[default: 50]`  
 `[inherit: true]`[^4]
 
-{% include version-badge.html version=6.0.1 %} Specifies the number of rows rendered
+{% include version-badge.html version="6.0.1" %} Specifies the number of rows rendered
 when the Grid first render. It is used only if live data
 ([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
 not paging
@@ -1201,7 +1201,7 @@ not paging
 `[default: true]`  
 `[inherit: true]`[^5]
 
-{% include version-badge.html version=7.0.1 %}
+{% include version-badge.html version="7.0.1" %}
 
 It specifies whether to enable autohide property for internal paging
 components.

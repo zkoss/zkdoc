@@ -3,7 +3,7 @@ title: "Coachmark"
 ---
 
 
-{% include version-badge.html version=9.0.0 %}
+{% include version-badge.html version="9.0.0" %}
 
 - Java API: [org.zkoss.zkmax.zul.Coachmark](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Coachmark.html)
 - JavaScript API:

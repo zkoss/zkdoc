@@ -10,7 +10,7 @@ title: "Searchbox"
   [zkmax.inp.Searchbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Searchbox.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version="9.0.0" %}
 
 # Employment/Purpose
 
@@ -44,7 +44,7 @@ ListModel model = new ListModelArray(new String[] {
 - `UP`, `DOWN`, `HOME`, `END`, `PAGE UP` and `PAGE DOWN` to change the
   selection of the item from the list.
 - `ENTER` to confirm the change of selection.
-- {% include version-badge.html version=9.5.0 %} `DELETE` or `BACKSPACE` to clear
+- {% include version-badge.html version="9.5.0" %} `DELETE` or `BACKSPACE` to clear
   the selection.
 
 # Properties

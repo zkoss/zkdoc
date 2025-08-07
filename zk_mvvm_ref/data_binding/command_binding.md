@@ -56,7 +56,7 @@ public class OrderVM {
 
 You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters).
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 We can use simplified syntax to do command binding, which means we don't need specify any 'arbitraryKey'.
 
@@ -92,7 +92,7 @@ If we specify command name with an **empty string literal** or evaluation result
 
 Default Command
 ---------------
-{% include version-badge.html version=6.5.1 %}
+{% include version-badge.html version="6.5.1" %}
 
 We can apply **`@DefaultCommand`** to mark a method as a default command method which is invoked only if a command binding doesn't match any other command methods. When a binder receives a command, it starts to find ViewModel's command methods by matching its name. Only if the binder cannot find a matched method, it invokes default command method.
 

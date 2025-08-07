@@ -9,7 +9,7 @@ title: "Linelayout"
 `<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}`
 
-{% include version-badge.html version=9.0.0 %}
+{% include version-badge.html version="9.0.0" %}
 
 # Employment/Purpose
 

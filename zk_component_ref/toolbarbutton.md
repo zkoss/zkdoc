@@ -61,7 +61,7 @@ See also : [ Button]({{site.baseurl}}/zk_component_ref/button),
 
 # Toggle Mode
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 ![](/zk_component_ref/images/Toolbarbutton_togglemode.png)
 

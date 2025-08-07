@@ -129,7 +129,7 @@ Please read [Self-defined Validation Message Key](#self-defined-validation-messa
 ### Displaying Multiple Messages
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 A validator can set multiple messages for a component or a self-defined key. You can get all messages from Validation Message Holder's special property **`texts`** . In EL, `vmsgs.texts` is the same as `vmsgs['texts']`, so you should avoid using `texts` as your self-defined key.
 
@@ -430,7 +430,7 @@ An example showing the opposite:
 
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 You can register application level validators by setting library-property(*org.zkoss.bind.appValidators*) in zk.xml. An application level validator only has one instance and is shared between all binders.
 ```xml
@@ -561,7 +561,7 @@ Since ZK 8.5.0 it also supports assigning a self-defined validation message key 
 ### Validate Form's Property Loaded from a Bean
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 It also supports **validating a form object's property** loaded from a bean. It validates the last loaded bean of the form, which means it doesn't support validating a form that does not need to be loaded by a bean yet.
 ```xml
@@ -574,7 +574,7 @@ It also supports **validating a form object's property** loaded from a bean. It 
 ## Form Bean Validator
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 Like Bean Validator, this validator also integrates JavaBean Validation and validates a bean's all-saving properties. For the configuration and JavaBean usage, please refer to [#Prepare_to_Use_JSR_303](#preparing-to-use-jsr-303)
 
@@ -607,7 +607,7 @@ Nested bean validation is supported by using **@Valid**, and the validation mess
 #### Groups
 > Available for ZK: EE
 
-{% include version-badge.html version=8.0.0 %}
+{% include version-badge.html version="8.0.0" %}
 
 The concept of constraints grouping means that we can easily divide constraints into groups. It means that we can create partial validation for different purpose.
 

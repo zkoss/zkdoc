@@ -8,7 +8,7 @@ title: "Step"
 - JavaScript API: [zkmax.wgt.Step](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Step.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="pe" %} {% include version-badge.html version="9.0.0" %}
 
 # Employment/Purpose
 

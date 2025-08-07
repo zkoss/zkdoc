@@ -6,7 +6,7 @@ title: "Track"
 - Java API: [org.zkoss.zul.Track](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Track.html)
 - JavaScript API: [zul.med.Track](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Track.html)
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 # Employment/Purpose
 

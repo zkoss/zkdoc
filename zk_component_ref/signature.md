@@ -3,7 +3,7 @@ title: "Signature"
 ---
 
 
-{% include version-badge.html version=8.6.0 %} <!--REQUIRED ZK EDITION: PE -->
+{% include version-badge.html version="8.6.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 - Java API: [org.zkoss.zkmax.zul.Signature](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Signature.html)
@@ -84,12 +84,12 @@ to white.
 
 ## backgroundImage
 
-{% include version-badge.html version=9.6.0 %} Can be any image format accepted by
+{% include version-badge.html version="9.6.0" %} Can be any image format accepted by
 context.drawImage(canvas), defaults to null.
 
 # BackgroundIncluded
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 The background color and image will be saved by default. If you don't
 want to save the background color and image, please use the following

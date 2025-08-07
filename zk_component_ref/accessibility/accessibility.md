@@ -4,7 +4,7 @@ title: "Accessibility"
 
 
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 This chapter describes each component's detailed accessibility
 information including keyboard support and some important ARIA

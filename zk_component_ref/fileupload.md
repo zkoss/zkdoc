@@ -112,7 +112,7 @@ example, receive the `onUpload` event since it is the root component:
 
 ### Specify the Callback Event Listener
 
-{% include version-badge.html version=6.5.3 %}
+{% include version-badge.html version="6.5.3" %}
 
 If you prefer the event being sent to the callback event listener,
 specify the event listener when invoke Fileupload.get().
@@ -158,7 +158,7 @@ For example:
 
 ### Specify the Target Component
 
-{% include version-badge.html version=5.0.2 %}
+{% include version-badge.html version="5.0.2" %}
 
 If you prefer the event being sent to a particular component, specify
 the component in the desktop's attribute called

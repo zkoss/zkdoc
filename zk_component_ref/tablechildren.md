@@ -16,7 +16,7 @@ title: "TableChildren"
 The cell of Tablelayout. The child component of Tablechildren can only
 be Panel.
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 The child of tablechildren can be any component.
 
@@ -53,7 +53,7 @@ The child of tablechildren can be any component.
 </tablelayout>
 ```
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 The child of tablechildren can be any component.
 
@@ -86,7 +86,7 @@ The child of tablechildren can be any component.
 
 `*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 `* Any`
 

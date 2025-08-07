@@ -58,7 +58,7 @@ what happens. These attributes are as follows.
 | javax.servlet.error.exception                                          | java.lang.Throwable                   |
 | javax.servlet.error.request_uri                                        | java.lang.String                      |
 | javax.servlet.error.servlet_name                                       | java.lang.String                      |
-| {% include version-badge.html version=10.2.0 %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> |
+| {% include version-badge.html version="10.2.0" %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> |
 
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`
@@ -186,7 +186,7 @@ error page to describe what happens. These attributes are as follows:
 | javax.servlet.error.exception                                          | java.lang.Throwable                   | the thrown error object                                          |
 | javax.servlet.error.status_code                                        | java.lang.Integer                     | 500                                                              |
 | javax.servlet.error.error_page                                         | java.lang.String                      | the error handling page URL configured in zk.xml                 |
-| {% include version-badge.html version=10.2.0 %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> | a list containing all thrown error objects                       |
+| {% include version-badge.html version="10.2.0" %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> | a list containing all thrown error objects                       |
 
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`

@@ -7,7 +7,7 @@ title: "org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed"
 `org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed`
 
 `Default: 600`  
-{% include version-badge.html version=9.0.0 %}
+{% include version-badge.html version="9.0.0" %}
 
 Specifies the value moving animation speed of Loadingbar in
 milliseconds.

@@ -4,7 +4,7 @@ Register Application Level Converters
 =====================================
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 You can register application level converters<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appConverters*) in zk.xml.
 
@@ -28,7 +28,7 @@ Register Application Level Validators
 =====================================
 > Available for ZK: EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 You can register application level validators<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appValidators*) in zk.xml.
 
@@ -51,7 +51,7 @@ Then use them by validator name.
 Print ZK Bind Debugging Information
 ===================================
 
-{% include version-badge.html version=6.5.2 %}
+{% include version-badge.html version="6.5.2" %}
 
 Turn on printing ZK Bind debugging information will print lots of messages during run-time which may be helpful for dubugging. Please do **not** enable it in the production environment.
 

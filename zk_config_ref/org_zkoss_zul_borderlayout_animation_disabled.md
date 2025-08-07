@@ -7,7 +7,7 @@ title: "org.zkoss.zul.borderlayout.animation.disabled"
 `org.zkoss.zul.borderlayout.animation.disabled`
 
 Default: `false`  
-{% include version-badge.html version=5.0.8 %}
+{% include version-badge.html version="5.0.8" %}
 
 It specifies whether disable the animation of the `borderlayout`
 component.

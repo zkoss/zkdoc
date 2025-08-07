@@ -7,7 +7,7 @@ title: "org.zkoss.zul.grid.autohidePaging"
 `org.zkoss.zul.grid.autohidePaging`
 
 `Default: true`  
-{% include version-badge.html version=7.0.1 %}
+{% include version-badge.html version="7.0.1" %}
 
 It specifies whether to enable autohide property for internal paging
 component.

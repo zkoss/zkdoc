@@ -76,7 +76,7 @@ Notes:
 
 ### min & max constraint
 
-{% include version-badge.html version=10.2.0 %} {% include version-badge.html version=EE %}
+{% include version-badge.html version="10.2.0" %} {% include version-badge.html version=EE %}
 
 ```xml
 <spinner constraint="min -2 max 6"/>

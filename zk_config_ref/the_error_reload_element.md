@@ -51,7 +51,7 @@ you have to specify `server-push` as shown in the example [ below](#error-code)
 
 `Optional`  
 `Default: ajax`  
-{% include version-badge.html version=3.6.3 %}
+{% include version-badge.html version="3.6.3" %}
 
 Specifies the device type. By default, it is `ajax`. If you want to
 configure for ZK Mobile, use `mil`.

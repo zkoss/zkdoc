@@ -7,7 +7,7 @@ title: "org.zkoss.zul.image.preload"
 `org.zkoss.zul.image.preload`
 
 Default: `false`  
-{% include version-badge.html version=6.5.2 %}
+{% include version-badge.html version="6.5.2" %}
 
 It specifies the image will be preloaded or not for
 [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)

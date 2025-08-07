@@ -69,7 +69,7 @@ content inside textbox conveniently. For example,
 
 ## SubmitByEnter
 
-{% include version-badge.html version=8.5.2 %}
+{% include version-badge.html version="8.5.2" %}
 
 When you specify **true**, pressing Enter will fire onOK event rather
 then move to next line, if you want to move to next line, you should
@@ -93,7 +93,7 @@ Username: <textbox/>
 Password: <textbox type="password"/>
 ```
 
-`{% include version-badge.html version=6.5.0 %}`
+`{% include version-badge.html version="6.5.0" %}`
 
 The `type` attribute support HTML 5 defined types `tel`, `email` and `url`.
 

@@ -5,7 +5,7 @@ title: "org.zkoss.zul.listbox.selectOnHighlight.disabled"
 **Property:** org.zkoss.zul.listbox.selectOnHighlight.disabled
 
 Default: `false`  
-{% include version-badge.html version=7.0.4 %}
+{% include version-badge.html version="7.0.4" %}
 
 Sets whether to disable select functionality when highlighting text
 content with mouse dragging or not.

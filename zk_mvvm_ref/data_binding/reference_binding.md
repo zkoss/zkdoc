@@ -2,7 +2,7 @@
 
 > Available for ZK: PE, EE
 
-{% include version-badge.html version=6.0.1 %}
+{% include version-badge.html version="6.0.1" %}
 
 Make an expression reference
 ============================

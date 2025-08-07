@@ -1,6 +1,6 @@
 # Legacy Support (SimpleForm)
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 Before the introduction of Form Proxies in ZK a HashMap based SimpleForm was used, 
 which was removed in ZK 8+. Upgrading to ZK 8/9 may be difficult in case of heavy 

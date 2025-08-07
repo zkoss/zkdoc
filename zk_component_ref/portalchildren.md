@@ -50,7 +50,7 @@ Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/p
 
 ## Title
 
-{% include version-badge.html version=9.0.0 %} Sets the title of the portalchildren.
+{% include version-badge.html version="9.0.0" %} Sets the title of the portalchildren.
 If the title is not empty/null, frame design will be applied.
 
 ### Frame Design
@@ -121,7 +121,7 @@ move.
 
 ## CounterVisible
 
-{% include version-badge.html version=9.0.0 %} Sets whether the counter is visible.
+{% include version-badge.html version="9.0.0" %} Sets whether the counter is visible.
 Meaningful only if frame design is applied.
 
 # Supported Events

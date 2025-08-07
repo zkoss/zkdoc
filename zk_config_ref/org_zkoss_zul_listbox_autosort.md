@@ -7,7 +7,7 @@ title: "org.zkoss.zul.listbox.autoSort"
 `org.zkoss.zul.listbox.autoSort`
 
 Default: `false`  
-{% include version-badge.html version=5.0.7 %}
+{% include version-badge.html version="5.0.7" %}
 
 Specifies whether to sort the model when the following cases:
 

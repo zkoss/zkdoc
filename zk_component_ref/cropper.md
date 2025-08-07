@@ -3,7 +3,7 @@ title: "Cropper"
 ---
 
 
-{% include version-badge.html version=8.6.0 %}
+{% include version-badge.html version="8.6.0" %}
 
 - Java API: [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)
 - JavaScript API: [zkmax.med.Cropper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Cropper.html)

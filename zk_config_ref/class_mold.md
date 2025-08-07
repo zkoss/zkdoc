@@ -7,7 +7,7 @@ title: "class.mold"
 [component-full-qualified-class-name]`.mold`
 
 `Default: none`  
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 It specified the default mold of the specified component. The property
 name is a concatenation of the class name of the component and `mold`.

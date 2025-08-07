@@ -65,7 +65,7 @@ layout. For example,
 
 ## A Row of a Grid as a Radio Group
 
-{% include version-badge.html version=5.0.4 %}
+{% include version-badge.html version="5.0.4" %}
 
 Sometimes it is not possible to make the radiogroup component as an
 ancestor of all radio components. For example, each row of a grid might
@@ -111,7 +111,7 @@ or
 
 # Live Data
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 Like a listbox, radiogroup supports
 [ListModel]({{site.baseurl}}/zk_dev_ref/mvc/list_model),

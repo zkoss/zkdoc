@@ -278,7 +278,7 @@ public class TreeSelectionVM {
 #### Custom layout for Radiogroup
 *Radiogroup* arranges its child *Radio* horizontally and users cannot change this arrangement but we could use children binding to arrange *Radio* vertically. In order to make "selectedItem" work correctly, we should put `<radio>` before `<radiogroup>`.
 
-{% include version-badge.html version=6.5.1 %}
+{% include version-badge.html version="6.5.1" %}
 
 We can bind `selectedItem` with any type of object, not only String.
 ```xml

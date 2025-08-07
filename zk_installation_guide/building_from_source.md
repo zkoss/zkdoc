@@ -2,7 +2,7 @@
 title: "Building ZK from Source"
 ---
 
-{% include version-badge.html version=10.0.0 %}
+{% include version-badge.html version="10.0.0" %}
 
 ZK Community Edition (CE) is open-source and free to use under LGPL. In
 most cases, you can simply download the CE JAR files and start using

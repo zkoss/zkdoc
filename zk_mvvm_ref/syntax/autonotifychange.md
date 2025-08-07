@@ -1,7 +1,7 @@
 # @AutoNotifyChange
 > Available for ZK: EE
 
-{% include version-badge.html version=8.5.1 %}
+{% include version-badge.html version="8.5.1" %}
 
 Syntax
 ======

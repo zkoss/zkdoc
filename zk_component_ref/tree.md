@@ -120,7 +120,7 @@ deprecated because designs are changed.
 When using the paging mold and vflex, you could also turn on autopaging
 ([org.zkoss.zul.Tree#setAutopaging( boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging( boolean)))
 such that the page size will be adjusted automatically based on the
-available space. {% include version-badge.html version=5.0.2 %}
+available space. {% include version-badge.html version="5.0.2" %}
 
 **Note:** If enable the autopaging, the height of each row will be
 applied the following CSS by default. If you want to change the height,
@@ -136,14 +136,14 @@ please overwrite the CSS rule as your preference.
 }
 ```
 
-{% include version-badge.html version=5.0.8 %}
+{% include version-badge.html version="5.0.8" %}
 
 **Note:** In ZK 7, we change the naming *.z-treecell-cnt* to
-*.z-treecell-content*. {% include version-badge.html version=7.0.3 %}
+*.z-treecell-content*. {% include version-badge.html version="7.0.3" %}
 
 ## PagingDisabled
 
-{% include version-badge.html version=8.0.3 %} Once the `pagingDisabled` is set to
+{% include version-badge.html version="8.0.3" %} Once the `pagingDisabled` is set to
 `true`, users will be blocked from navigating through the pagination.
 
 ## The onPaging and onPageSize Event
@@ -214,7 +214,7 @@ The following code demonstrates how to freeze a column within a Tree:
 </tree>
 ```
 
-{% include version-badge.html version=7.0.0 %}
+{% include version-badge.html version="7.0.0" %}
 
 - For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
@@ -223,7 +223,7 @@ The following code demonstrates how to freeze a column within a Tree:
 
 ## Nonselectable Tags
 
-{% include version-badge.html version=5.0.5 %}
+{% include version-badge.html version="5.0.5" %}
 
 By default, when a user clicks on an HTML element like `<button>,
 <input>,
@@ -257,7 +257,7 @@ clicks, you could specify an empty string as follows.
         <treecell><textbox/></treecell>
 ```
 
-{% include version-badge.html version=5.0.6 %} If you want to toggle the selection
+{% include version-badge.html version="5.0.6" %} If you want to toggle the selection
 only when the user clicks on the checkmark, you could specify `*`.
 Notice that you have to specify checkmark="true" as well (otherwise, no
 item is selectable).
@@ -322,11 +322,11 @@ specify false to this library property called
 </library-property>
 ```
 
-{% include version-badge.html version=5.0.5 %}
+{% include version-badge.html version="5.0.5" %}
 
 ## Tristate Selection
 
-{% include version-badge.html version=10.0.0 %}
+{% include version-badge.html version="10.0.0" %}
 
 Allowing users to enable tristate selection with Model. In tristate
 mode, when users click on the checkbox, depending on whether the current
@@ -452,7 +452,7 @@ Similarly, the `onColSize` event is sent when a user resizes the widths.
 
 ### Auto Fitting Columns
 
-{% include version-badge.html version=5.0.0 %} When you want to resize a column of a
+{% include version-badge.html version="5.0.0" %} When you want to resize a column of a
 Tree or Listbox, all you now need to do is double click the column when
 the mouse is over where the columns meet and the column will
 automatically resize to fit its contents. To enable this functionality
@@ -516,7 +516,7 @@ items.
 </tree>
 ```
 
-{% include version-badge.html version=7.0.0 %}
+{% include version-badge.html version="7.0.0" %}
 
 The browser's default scrollbar is replaced by floating scrollbar and it
 is not visible unless user mouse over on the content. To turn off the
@@ -564,7 +564,7 @@ the **ZK User Interface Markup Language** chapter for details.
 
 ## Sticky Header
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 After adding a sclass "z-sticky-header", when we scroll down a page and
 make a Tree's header out of visible range in a viewport, the Tree's
@@ -633,7 +633,7 @@ turned off, right clicking on an item will change its selection state.
 `[default: false]`  
 `[inherit: true]`[^2]
 
-{% include version-badge.html version=5.0.7 %} It specifies whether to sort the model
+{% include version-badge.html version="5.0.7" %} It specifies whether to sort the model
 when the following cases:
 
 - [org.zkoss.zul.Tree#setModel (TreeModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setModel (TreeModel))is
@@ -656,7 +656,7 @@ the value as **ignore.change**.
 `[default: true]`  
 `[inherit: true]`[^3]
 
-{% include version-badge.html version=7.0.1 %}
+{% include version-badge.html version="7.0.1" %}
 
 It specifies whether to enable autohide property for internal paging
 component.

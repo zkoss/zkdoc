@@ -3,7 +3,7 @@ title: "org.zkoss.theme.atlantic.useGoogleFont.disabled"
 ---
 
 **Property:** org.zkoss.theme.atlantic.useGoogleFont.disabled
-{% include version-badge.html version=8.0.1 %}
+{% include version-badge.html version="8.0.1" %}
 
 Default: `false`
 

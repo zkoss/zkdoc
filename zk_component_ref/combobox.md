@@ -112,7 +112,7 @@ a default value, For example,
 </combobox>
 ```
 
-{% include version-badge.html version=5.0.4 %}
+{% include version-badge.html version="5.0.4" %}
 
 # Properties
 
@@ -356,7 +356,7 @@ Please see
 
 ## PopupWidth
 
-{% include version-badge.html version=8.0.3 %} By specifying this property, the
+{% include version-badge.html version="8.0.3" %} By specifying this property, the
 width of the popup will be set and ignore the default behavior.  
 If percentage is specified to this property, the width of the popup will
 be calculated with the width of the bandbox.  
@@ -367,7 +367,7 @@ directly.
 
 ## InstantSelect
 
-{% include version-badge.html version=8.6.1 %} By default, any change of selection
+{% include version-badge.html version="8.6.1" %} By default, any change of selection
 using the keyboard will trigger `onSelect` and `onChange` events
 instantly. Once set this property `false`, users need to confirm the
 change by pressing Enter key or make combobox lose its focus so
@@ -376,7 +376,7 @@ can abort the change and revert to previous selection.
 
 ## IconSclass
 
-{% include version-badge.html version=8.6.2 %} Specify the sclass name of the
+{% include version-badge.html version="8.6.2" %} Specify the sclass name of the
 Combobox button icon.
 
 # Inherited Functions
@@ -414,7 +414,7 @@ zul.jar.
 |---|---------------------------------------------------------|
 | default | ![](/zk_component_ref/images/Combobox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/Combobox_mold_rounded.png) 
-{% include version-badge.html version=5.0.0 %} |
+{% include version-badge.html version="5.0.0" %} |
 
 # Supported Children
 

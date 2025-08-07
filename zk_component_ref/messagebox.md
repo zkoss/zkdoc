@@ -63,7 +63,7 @@ Close button on the right-top corner, the `onClose` event is fired.
 
 ### Listen ClickEvent
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 Since ZK 6, the event listener will be invoked with an instance of
 [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html), and it is easy
@@ -89,7 +89,7 @@ Messagebox.show("Something is changed. Are you sure?",
 
 ## Assign the Order of Buttons
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 If you'd like to assign the order, you could use
 [org.zkoss.zul.Messagebox#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener))
@@ -118,7 +118,7 @@ example,
 
 ## Assign the Labels of Buttons
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 By default, the label of a button is loaded from [the message file]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages)
 based on the current locale. However, you could assign any label you'd
@@ -169,7 +169,7 @@ To implement a custom template, please take a look at [the default template](htt
 
 ## The Width and Parameters
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 The `params` argument in
 [org.zkoss.zul.Messagebox#show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, java.lang.String, org.zkoss.zul.Messagebox.Button[], java.lang.String[], java.lang.String, org.zkoss.zul.Messagebox.Button, org.zkoss.zk.ui.event.EventListener, java.util.Map))
@@ -194,7 +194,7 @@ template recognize them. In additions, the priority of the `params`
 argument is higher, i.e., it could override the default values, though
 it is rarely required.
 
-{% include version-badge.html version=7.0.1 %} User also can customize the style of
+{% include version-badge.html version="7.0.1" %} User also can customize the style of
 message dialog with the parameter called `sclass` as below.
 
 ```java
@@ -211,7 +211,7 @@ Messagebox.show("It's a customized style message box.",
 
 ## Without Buttons' Dialog
 
-{% include version-badge.html version=6.5.1 %}
+{% include version-badge.html version="6.5.1" %}
 
 If you'd like to show a non-buttons dialog, you could use
 [org.zkoss.zul.Messagebox#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html#show(java.lang.String, org.zkoss.zul.Messagebox.Button[], org.zkoss.zk.ui.event.EventListener listener))

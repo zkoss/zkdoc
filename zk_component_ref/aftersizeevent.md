@@ -5,7 +5,7 @@ title: "AfterSizeEvent"
 
 - JavaDoc:[org.zkoss.zk.ui.event.AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)
 
-{% include version-badge.html version=6.5.2 %}
+{% include version-badge.html version="6.5.2" %}
 
 # Employment/Purpose
 

@@ -63,13 +63,13 @@ customize the appearance of days on ZK's Calendar. For example,
 </zk>
 ```
 
-{% include version-badge.html version=5.0.3 %}
+{% include version-badge.html version="5.0.3" %}
 
 # Show Week Number
 
 Calendar supports to show a week number of the year. <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
-{% include version-badge.html version=6.5.0 %}
+{% include version-badge.html version="6.5.0" %}
 
 ![](/zk_component_ref/images/ZKComRef_Calendar_Week_Of_Year.PNG)
 
@@ -79,7 +79,7 @@ Calendar supports to show a week number of the year. <!--REQUIRED ZK EDITION: PE
 
 # 2DigitYearStart
 
-{% include version-badge.html version=8.6.2 %}
+{% include version-badge.html version="8.6.2" %}
 
 You can control the 2DigitYearStart by the use of the library property.
 Please refer to [ org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/org_zkoss_web_preferred_2digityearstart)
@@ -87,7 +87,7 @@ for details.
 
 # Constraint
 
-{% include version-badge.html version=8.5.2 %}
+{% include version-badge.html version="8.5.2" %}
 
 This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/datebox#Constraint)
 

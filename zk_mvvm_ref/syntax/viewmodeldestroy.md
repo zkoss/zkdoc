@@ -1,6 +1,6 @@
 # @Destroy
 
-{% include version-badge.html version=8.5.2 %}
+{% include version-badge.html version="8.5.2" %}
 
 Syntax
 ======

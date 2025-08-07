@@ -7,7 +7,7 @@ title: "org.zkoss.zul.grid.autoSort"
 `org.zkoss.zul.grid.autoSort`
 
 Default: `false`  
-{% include version-badge.html version=5.0.7 %}
+{% include version-badge.html version="5.0.7" %}
 
 Specifies whether to sort the model when the following cases:
 

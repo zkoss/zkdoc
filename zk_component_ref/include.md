@@ -320,7 +320,7 @@ zk.afterMount(function () {
 
 **Use the org.zkoss.zul.include.html.defer attribute**
 
-{% include version-badge.html version=5.0.7 %}
+{% include version-badge.html version="5.0.7" %}
 
 Alternatively, you could specify a custom attribute called
 `the org.zkoss.zul.include.html.defer` in the
@@ -431,7 +431,7 @@ is used (default), it switches to the defer mode automatically.
 `[default: false]`  
 `[inherit: true]`[^1]
 
-{% include version-badge.html version=5.0.7 %}
+{% include version-badge.html version="5.0.7" %}
 
 It specifies whether to defer the rendering of the included non-ZUML
 page, until all widgets are instantiated and rendered at the client. By

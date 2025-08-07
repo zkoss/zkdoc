@@ -7,7 +7,7 @@ title: "org.zkoss.web.classWebResource.cache"
 `org.zkoss.web.classWebResource.cache`
 
 `Default: true`  
-{% include version-badge.html version=3.6.3 %}
+{% include version-badge.html version="3.6.3" %}
 
 It specifies whether to allow the browsers to cache so-called class Web
 resources[^1].

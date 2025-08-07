@@ -6,7 +6,7 @@
 
 Please [ setup zk Maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) first.
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 ### Java EE
 
@@ -36,7 +36,7 @@ for the latest version.
 Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zats/zats-mimic/)
 for the latest version.
 
-{% include version-badge.html version=7.0.0 %}
+{% include version-badge.html version="7.0.0" %}
 
 Add the following dependency:
 
@@ -50,7 +50,7 @@ Add the following dependency:
     </dependency>
 ```
 
-{% include version-badge.html version=6.0.0 %}
+{% include version-badge.html version="6.0.0" %}
 
 Add the following dependency:
 
@@ -64,7 +64,7 @@ Add the following dependency:
     </dependency>
 ```
 
-{% include version-badge.html version=5.0.0 %} Add the following dependency:
+{% include version-badge.html version="5.0.0" %} Add the following dependency:
 
 ```xml
 

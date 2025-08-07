@@ -54,7 +54,7 @@ depend on the browser, and not as expected.
 
 # orient
 
-{% include version-badge.html version=7.0.0 %}
+{% include version-badge.html version="7.0.0" %}
 
 `Default: vertical`
 
@@ -81,7 +81,7 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 
 | Name | Event Type |
 |---|---|
-| onPortalDrop | {% include version-badge.html version=9.5.1 %} <strong>Event:</strong>
+| onPortalDrop | {% include version-badge.html version="9.5.1" %} <strong>Event:</strong>
 [org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html)
 Represents an event after a portal is dropped and before a portal is
 moved. |

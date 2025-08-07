@@ -55,7 +55,7 @@ with a formatting string. The default value is `null`.
 <spinner format="#,##0.##"/>
 ```
 
-{% include version-badge.html version=8.5.2 %} You can provide a locale to format
+{% include version-badge.html version="8.5.2" %} You can provide a locale to format
 the number by specifying the String starts with "locale:"
 
 ```xml
@@ -106,11 +106,12 @@ for inherited functions.
 
 Available molds of a component are defined in lang.xml embedded in zul.jar.
 
-| Name | Screenshot  |
-|---|---------------------------------------------------------|
-| default | ![](/zk_component_ref/images/spinner_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
-{% include version-badge.html version=5.0.0 %} rounded mold is available.
+| Name     | Screenshot  |
+|----------|--------------------------------------------------------|
+| default  | ![](/zk_component_ref/images/spinner_mold_default.png) |
+| rounded  | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
+
+{% include version-badge.html version="5.0.0" %} rounded mold is available.
 
 # Supported Children
 

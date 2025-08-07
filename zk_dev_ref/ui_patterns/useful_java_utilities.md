@@ -58,14 +58,14 @@ side in ZK. For example,
 Clients.evalJavaScript("zk.log('Hi.');");
 ```
 
-{% include version-badge.html version=9.6.0 %}To handle javascript errors triggered
+{% include version-badge.html version="9.6.0" %}To handle javascript errors triggered
 by evalJavascript,
 [org.zkoss.zk.ui.ScriptErrorListener.class]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_scripterrorlistener_class)
 is provided.
 
 ## focus
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 
 [Clients.focus(Component component)](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#focus-org.zkoss.zk.ui.Component) for MVC
 
@@ -86,7 +86,7 @@ Component myComponent;
 Clients.scrollIntoView(myComponent);
 ```
 
-{% include version-badge.html version=9.5.0 %}
+{% include version-badge.html version="9.5.0" %}
 [Clients.scrollIntoView(String selector)](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#scrollIntoView-java.lang.String)
 
 Scrolls the parent of the selector matched component, so the given one
@@ -114,8 +114,8 @@ Clients.showBusy(window, "Waiting for server...");
 
 ## showNotification
 
-{% include version-badge.html version=6.0.1 %}
-[Clients.showNotification()](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification-java.lang.String) {% include version-badge.html version=9.0.0 %} It is
+{% include version-badge.html version="6.0.1" %}
+[Clients.showNotification()](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#showNotification-java.lang.String) {% include version-badge.html version="9.0.0" %} It is
 advised to use [Notification class](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html) which was introduced in ZK 9 instead.
 
 Shows a notification box, which is dismissed upon left click (like a
@@ -147,7 +147,7 @@ Here are the available positions:
 
 ### Closable
 
-{% include version-badge.html version=6.5.0 %} Notification now supports closable to
+{% include version-badge.html version="6.5.0" %} Notification now supports closable to
 let users close the notification box manually.
 
 ```java
@@ -167,7 +167,7 @@ Clients.showNotification("msg1 <br/> msg2 <br/>");
 
 # Notification
 
-{% include version-badge.html version=9.0.0 %}
+{% include version-badge.html version="9.0.0" %}
 
 [org.zkoss.zk.ui.util.Notification](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Notification.html)
 
@@ -199,7 +199,7 @@ Notification.show(msg, component); // display a notification box pointing to a c
 # Toast
 
 <!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="ee" %} {% include version-badge.html version="9.0.0" %}
 
 [org.zkoss.zkmax.ui.util.Toast](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Toast.html)
 
@@ -254,7 +254,7 @@ is provided.
 # Loadingbar
 
 <!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %} {% include version-badge.html version=9.0.0 %}
+{% include edition-availability.html edition="ee" %} {% include version-badge.html version="9.0.0" %}
 
 [org.zkoss.zkmax.ui.util.Loadingbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/util/Loadingbar.html)
 

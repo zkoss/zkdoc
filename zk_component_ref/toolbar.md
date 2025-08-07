@@ -44,7 +44,7 @@ See also : [ Button]({{site.baseurl}}/zk_component_ref/button),
 
 # overflowPopup
 
-{% include version-badge.html version=8.6.0 %}
+{% include version-badge.html version="8.6.0" %}
 
 When `overflowPopup="true"`, a toolbar will have a `...` symbol that
 shows a popup that contains those buttons not fitting in the toolbar.
@@ -66,7 +66,7 @@ Default: false.
 
 # overflowPopupIconSclass
 
-{% include version-badge.html version=9.6.0 %}
+{% include version-badge.html version="9.6.0" %}
 
 When overflowPopup="true", you can customize a toolbar `...` symbol just
 specify the `overflowPopupIconSclass` attribute. For a complete list of

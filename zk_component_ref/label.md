@@ -83,7 +83,7 @@ Since ZUML is XML, not HTML, so it doesn't accept
 {% include RemovedSince.html version=10.0.0 %} Hyphen is removed. Use CSS to
 achieve it.
 
-{% include version-badge.html version=5.0.0 %}
+{% include version-badge.html version="5.0.0" %}
 
 You can control how a label is displayed using the `pre`, `multiline`
 and `maxlength` properties. For example, if you specify `pre` to be

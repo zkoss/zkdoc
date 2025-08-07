@@ -79,7 +79,7 @@ or a local path under **webapp root**
 </library-property>
 ```
 
-{% include version-badge.html version=44.1.0 %}
+{% include version-badge.html version="44.1.0" %}
 
 ```xml
 <library-property>

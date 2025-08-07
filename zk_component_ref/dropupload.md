@@ -100,7 +100,7 @@ users won't be able to drag a file into the component successfully.
 
 # Anchor
 
-{% include version-badge.html version=7.0.2 %} This attribute allows the dropupload
+{% include version-badge.html version="7.0.2" %} This attribute allows the dropupload
 component to anchor to another component and overlay that component when
 the user drag & drops files to the browser. Much like how Gmail works
 when dropping attachments to emails.
@@ -129,7 +129,7 @@ when dropping attachments to emails.
 
 # Accept
 
-{% include version-badge.html version=10.0.0 %} This attribute specifies [the MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
+{% include version-badge.html version="10.0.0" %} This attribute specifies [the MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
 that the server accepts. Similar to [the maxsize attribute](#Maxsize), if one of the files does not match the
 acceptable file types, nothing will be uploaded. For example, the
 following example only accepts audio and .png files:
