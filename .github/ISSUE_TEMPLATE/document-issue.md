@@ -6,6 +6,7 @@ labels: ''
 assignees: hawkchen
 
 ---
+Spotted an error or a missing doc? Open a GitHub issue
 
 # Issue type
 - [ ] Typo
