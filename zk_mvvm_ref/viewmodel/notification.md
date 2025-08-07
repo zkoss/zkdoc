@@ -237,8 +237,7 @@ public class DurationViewModel  {
 ## Auto Notify Change
 
 {% include version-badge.html version="8.5.1" %}
-
-> ZK EE
+{% include edition-availability.html edition="ee" %}
 
 You can add an `@AutoNotifyChange` on a view model class to enable this feature explicitly or specify the library property `org.zkoss.bind.viewModel.autoNotifyChange.enabled` to `true` in zk.xml to enable this feature by default without the need of an annotation.
 

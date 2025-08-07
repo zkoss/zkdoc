@@ -4,7 +4,7 @@ title: "Containers"
 
 
 
-This section outline Accessibilities in Containers components.
+This section outline Accessibility in Containers components.
 
 **Note:** the following subsections are only applied for ZK EE version
 only.

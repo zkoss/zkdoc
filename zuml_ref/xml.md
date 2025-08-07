@@ -7,7 +7,7 @@ title: "XML"
 `Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)  
 `Namespace shortcut: xml`  
 `Device: XML`  
-`Available only ZK EE`
+{% include edition-availability.html edition="ee" %}
 
 XML component sets. It is used to generate (static) XML document, such
 as [RSS feed](http://www.whatisrss.com/). For introduction please refer
