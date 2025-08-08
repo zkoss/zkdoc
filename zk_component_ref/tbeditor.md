@@ -59,18 +59,12 @@ tbeditor.setConfig(config);
 
 | Name | Event Type |
 |---|---|
-| `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
-Denotes that the content of the component has been modified by a
+| `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes that the content of the component has been modified by a
 user |
-| `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
-Denotes that a user is changing the content of an input component.
-Notice that the component's content (at the server) won't be changed
-until `onChange` is received. Thus, you have to invoke the
-`getValue`method in the `InputEvent`class to
-retrieve the temporary value. |
+| `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes that a user is changing the content of an input component.
+Notice that the component's content (at the server) won't be changed until `onChange` is received. Thus, you have to invoke the `getValue`method in the `InputEvent`class to retrieve the temporary value. |
 
 # Supported Children
-
 `*NONE`
 
 
