@@ -123,7 +123,8 @@ zul.jar.
 | Name | Snapshot |
 |---|---|
 | default | ![](/zk_component_ref/images/timebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/timebox_mold_rounded.png) {% include version-badge.html version="5.0.0" %} |
+| rounded | ![](/zk_component_ref/images/timebox_mold_rounded.png) |
+{% include version-badge.html version="5.0.0" %} rounded mold.
 
 # Supported Children
 

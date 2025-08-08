@@ -1,4 +1,7 @@
-# IMPORTANT
+---
+title: "org.zkoss.web.util.resource.dir"
+---
+## Security Notice
 
 Before enabling this feature upgrade to the latest available versions
 (older versions contain a critical security vulnerability).
@@ -8,6 +11,7 @@ The latest versions containing a fix are:
 - for CE users 8.0.2.2 or later
   [downloads](https://www.zkoss.org/download/zk)
 - for PE/EE users 6.5.8.2, 7.0.8.1, 8.0.2.2, 8.0.3.1 or later [premium downloads](https://www.zkoss.org/download/premium)
+---
 
 **Property:**
 
