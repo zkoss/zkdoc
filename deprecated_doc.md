@@ -2,7 +2,7 @@
 title: "Deprecated Documentations"
 ---
 
-This page list old document (made by Mediawiki) links for references. You can check them but we will not update them anymore.
+This page lists legacy documents written in a wiki-style format. You’re welcome to refer to them, but please note that they are no longer maintained or updated.
 
 # Old Documentation Links
 
