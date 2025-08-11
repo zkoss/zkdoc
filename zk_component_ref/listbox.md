@@ -1387,32 +1387,14 @@ component.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onSelect` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item in the listbox. |
-| `onFocus` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-gets the focus. Remember event listeners execute at the server, so the
-focus at the client might be changed when the event listener for onFocus
-got executed. |
-| `onBlur` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-loses the focus. Remember event listeners execute at the server, so the
-focus at the client might be changed when the event listener for onBlur
-got executed. |
-| `onAfterRender` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | <strong>Event:</strong>
-[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
-size has been changed when the autopaging
-([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content. |
-| `onCheckSelectAll` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6)
-Notifies the checkbox on a listheader is checked to select all checkable
-items. |
+| Name | Event Type                                                                                                                                                                                                                                                                                                                                                                                                 |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `onSelect` | <strong>Event:</strong> [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected or deselected an item in the listbox.                                                                                                                                                                                  |
+| `onFocus` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed.                                                                                     |
+| `onBlur` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed.                                                                                     |
+| `onAfterRender` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                                                                                                                                                                                                                                                                            |
+| `onPageSize` | <strong>Event:</strong> [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| `onCheckSelectAll` | <strong>Event:</strong> [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items.                                                                                                                                                                    |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1429,7 +1411,11 @@ zul.jar.
 
 # Supported Children
 
-[` Listitem`]({{site.baseurl}}/zk_component_ref/listitem)`, ' [` Listhead`]({{site.baseurl}}/zk_component_ref/listhead)`, ' [` Listfoot`]({{site.baseurl}}/zk_component_ref/listfoot)`, ' [` Listgroup`]({{site.baseurl}}/zk_component_ref/listgroup)`, ' [` Listgroupfoot`]({{site.baseurl}}/zk_component_ref/listgroupfoot)
+* [Listitem]({{site.baseurl}}/zk_component_ref/listitem)
+* [Listhead]({{site.baseurl}}/zk_component_ref/listhead)
+* [Listfoot]({{site.baseurl}}/zk_component_ref/listfoot)
+* [Listgroup]({{site.baseurl}}/zk_component_ref/listgroup)
+* [Listgroupfoot]({{site.baseurl}}/zk_component_ref/listgroupfoot)
 
 # Version History
 

@@ -122,10 +122,8 @@ for inherited functions, such as in-place edition.
 
 # Browser Limitations
 
-| Browser | description |
-|---|---|
-| IE | <div class="sourceCode" id="cb1"><pre class="sourceCode xml">`&lt;textbox value="color" style="color:red !important;" disabled="true"/&gt;``</pre></div>
-There is no way to change the text color in a disabled input in
-IE. |
+| Browser | description  |
+|---|-------------------|
+| IE | There is no way to change the text color in a disabled input in IE. |
 
 
