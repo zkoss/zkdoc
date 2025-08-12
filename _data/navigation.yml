@@ -21,11 +21,11 @@ main:
     url: /zk_component_dev_essentials/zk_component_overview
   - title: ZK Client-side Reference
     url: /zk_client_side_ref/introduction
-  - title: ZK Charts
+  - title: ZK Charts Essentials
     url: /zk_charts_essentials/introduction
-  - title: ZK Pivottable
+  - title: ZK Pivottable Essentials
     url: /zk_pivottable_essentials/quick_start
-  - title: ZK Calendar
+  - title: ZK Calendar Essentials
     url: /zk_calendar_essentials/introduction
   - title: Keikai
     url: https://doc.keikai.io/
