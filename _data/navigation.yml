@@ -1,42 +1,42 @@
 main:
   - title: ZK Getting Started
-    url: /get_started/learn_zk_in_10_minutes
+    url: /get_started/
   - title: ZK Essentials
-    url: /zk_essentials/intro/overview
+    url: /zk_essentials/
   - title: ZK Developer's Reference
-    url: /zk_dev_ref/overture/overture
+    url: /zk_dev_ref/
   - title: ZK MVVM Reference
-    url: /zk_mvvm_ref/intro/introduction_of_mvvm
+    url: /zk_mvvm_ref/=
   - title: ZK Component Reference
-    url: /zk_component_ref/introduction
+    url: /zk_component_ref/
   - title: ZUML Reference
-    url: /zuml_ref/languages
+    url: /zuml_ref/
   - title: ZK Installation Guide
-    url: /zk_installation_guide/before_you_start
+    url: /zk_installation_guide/
   - title: ZK Configuration Reference
-    url: /zk_config_ref/web_xml
+    url: /zk_config_ref/
   - title: ZK Style Customization Guide
-    url: /zk_style_customization_guide/introduction
+    url: /zk_style_customization_guide/
   - title: ZK Component Development Essentials
-    url: /zk_component_dev_essentials/zk_component_overview
+    url: /zk_component_dev_essentials/
   - title: ZK Client-side Reference
-    url: /zk_client_side_ref/introduction
+    url: /zk_client_side_ref/
   - title: ZK Charts Essentials
-    url: /zk_charts_essentials/introduction
+    url: /zk_charts_essentials/
   - title: ZK Pivottable Essentials
-    url: /zk_pivottable_essentials/quick_start
+    url: /zk_pivottable_essentials/
   - title: ZK Calendar Essentials
-    url: /zk_calendar_essentials/introduction
+    url: /zk_calendar_essentials/
   - title: Keikai
     url: https://doc.keikai.io/
   - title: ZK Spring Essentials
-    url: /zk_spring_essentials/introduction
+    url: /zk_spring_essentials/
   - title: ZATS Essentials
-    url: /zats_essentials/introduction
+    url: /zats_essentials/
   - title: ZK JSP Tags Essentials
-    url: /zk_jsp_tags_essentials/before_you_start
+    url: /zk_jsp_tags_essentials/
   - title: ZK Studio Essentials
-    url: /zk_studio_essentials/introduction
+    url: /zk_studio_essentials/
   - title: Latest JavaDoc
     url: https://zkoss.org/javadoc/latest/zk/
   - title: Latest JavaScript Doc
