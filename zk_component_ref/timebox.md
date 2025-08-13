@@ -120,11 +120,27 @@ for inherited functions.
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-| Name | Snapshot |
-|---|---|
-| default | ![](/zk_component_ref/images/timebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/timebox_mold_rounded.png) |
-{% include version-badge.html version="5.0.0" %} rounded mold.
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Snapshot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>default</td>
+      <td><img src="/zk_component_ref/images/timebox_mold_default.png"/></td>
+    </tr>
+    <tr>
+      <td>rounded</td>
+      <td> {% include version-badge.html version="5.0.0" %}
+        <img src="/zk_component_ref/images/timebox_mold_rounded.png" alt="rounded mold"/>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
 
 # Supported Children
 
@@ -133,11 +149,8 @@ zul.jar.
 
 # Version History
 
-
-
 | Version | Date        | Content                                                                                                                                         |
 |---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setFormat(java.lang.String)) supported the styling.                                            |
 | 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setLocale(java.util.Locale)) was introduced to specify a locale other than the current locale. |
-
 
