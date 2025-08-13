@@ -1,3 +1,3 @@
 ---
-redirect_to: /zuml_ref/languages
+redirect_to: /zuml_ref/zuml
 ---
