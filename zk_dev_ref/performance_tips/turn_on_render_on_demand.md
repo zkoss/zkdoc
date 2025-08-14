@@ -11,6 +11,8 @@ enjoys a boost.)
 
 Notice that you can [ enable this feature in different scopes]({{site.baseurl}}/zk_config_ref/the_library_properties).
 
+![]({{site.baseurl}}/zk_dev_ref/images/Rod_demonstration.gif)
+
 # Grid
 
 If you want to enable Grid ROD for the whole application, you can
@@ -240,7 +242,6 @@ ROD provides substantial performance improvements across multiple dimensions:
 - Reduced bandwidth usage for large datasets
 - Optimized server responses through intelligent caching
 
-![]({{site.baseurl}}/zk_dev_ref/images/Rod_demonstration.gif)
 
 ## ROD vs Live Data vs Custom ListModel Comparison
 
