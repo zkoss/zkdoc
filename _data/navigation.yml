@@ -6,7 +6,7 @@ main:
   - title: ZK Developer's Reference
     url: /zk_dev_ref/
   - title: ZK MVVM Reference
-    url: /zk_mvvm_ref/=
+    url: /zk_mvvm_ref/
   - title: ZK Component Reference
     url: /zk_component_ref/
   - title: ZUML Reference
