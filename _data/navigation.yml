@@ -1580,44 +1580,42 @@ zk_dev_ref:
         children:
           - title: Template
             url: /zk_dev_ref/mvc/template
-            children:
-              - title: Listbox Template
-                url: /zk_dev_ref/mvc/listbox_template
-              - title: Grid Template
-                url: /zk_dev_ref/mvc/grid_template
-              - title: Tree Template
-                url: /zk_dev_ref/mvc/tree_template
-              - title: Combobox Template
-                url: /zk_dev_ref/mvc/combobox_template
-              - title: Selectbox Template
-                url: /zk_dev_ref/mvc/selectbox_template
-              - title: Biglistbox Template
-                url: /zk_dev_ref/mvc/biglistbox_template
-              - title: Chosenbox Template
-                url: /zk_dev_ref/mvc/chosenbox_template
-              - title: Tabbox Template
-                url: /zk_dev_ref/mvc/tabbox_template
-              - title: Organigram Template
-                url: /zk_dev_ref/mvc/organigram_template
-              - title: Searchbox Template
-                url: /zk_dev_ref/mvc/searchbox_template
+          - title: Listbox Template
+            url: /zk_dev_ref/mvc/listbox_template
+          - title: Grid Template
+            url: /zk_dev_ref/mvc/grid_template
+          - title: Tree Template
+            url: /zk_dev_ref/mvc/tree_template
+          - title: Combobox Template
+            url: /zk_dev_ref/mvc/combobox_template
+          - title: Selectbox Template
+            url: /zk_dev_ref/mvc/selectbox_template
+          - title: Biglistbox Template
+            url: /zk_dev_ref/mvc/biglistbox_template
+          - title: Chosenbox Template
+            url: /zk_dev_ref/mvc/chosenbox_template
+          - title: Tabbox Template
+            url: /zk_dev_ref/mvc/tabbox_template
+          - title: Organigram Template
+            url: /zk_dev_ref/mvc/organigram_template
+          - title: Searchbox Template
+            url: /zk_dev_ref/mvc/searchbox_template
           - title: Renderer
             url: /zk_dev_ref/mvc/renderer
-            children:
-              - title: Listbox Renderer
-                url: /zk_dev_ref/mvc/listbox_renderer
-              - title: Tree Renderer
-                url: /zk_dev_ref/mvc/tree_renderer
-              - title: Combobox Renderer
-                url: /zk_dev_ref/mvc/combobox_renderer
-              - title: Tabbox Renderer
-                url: /zk_dev_ref/mvc/tabbox_renderer
-              - title: Organigram Renderer
-                url: /zk_dev_ref/mvc/organigram_renderer
-              - title: Biglistbox Renderer
-                url: /zk_dev_ref/mvc/biglistbox_renderer
-              - title: Item Renderer
-                url: /zk_dev_ref/mvc/item_renderer
+          - title: Listbox Renderer
+            url: /zk_dev_ref/mvc/listbox_renderer
+          - title: Tree Renderer
+            url: /zk_dev_ref/mvc/tree_renderer
+          - title: Combobox Renderer
+            url: /zk_dev_ref/mvc/combobox_renderer
+          - title: Tabbox Renderer
+            url: /zk_dev_ref/mvc/tabbox_renderer
+          - title: Organigram Renderer
+            url: /zk_dev_ref/mvc/organigram_renderer
+          - title: Biglistbox Renderer
+            url: /zk_dev_ref/mvc/biglistbox_renderer
+          - title: Item Renderer
+            url: /zk_dev_ref/mvc/item_renderer
   - title: Stateless Components
     url: /zk_dev_ref/stateless_components/stateless_components
     children:
