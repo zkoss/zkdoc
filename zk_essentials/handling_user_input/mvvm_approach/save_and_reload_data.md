@@ -204,7 +204,7 @@ making them think they have changed their profile, so we want to remove such beh
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch5-unsaved.png)
 
 <div style="text-align:center">
-<strong>Unsaved Input Changes Data</strong>
+**Unsaved Input Changes Data**
 </div>
 
 We are going to improve this part with **form binding** feature in this
@@ -310,7 +310,7 @@ ViewModel's properties (`currentUser`).
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-form-binding.png)
 
 <div style="text-align:center">
-<strong>Unsaved Input Doesn't Change Data</strong>
+**Unsaved Input Doesn't Change Data**
 
 </div>
 After completing above steps, visit

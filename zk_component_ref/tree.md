@@ -669,22 +669,22 @@ component.
 
 | Name | Event Type |
 |---|---|
-| `onSelect` | <strong>Event:</strong>
+| `onSelect` | **Event:**
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item in the tree. |
-| `onFocus` | <strong>Event:</strong>
+| `onFocus` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onFocus
 got executed. |
-| `onBlur` | <strong>Event:</strong>
+| `onBlur` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. Remember event listeners execute at the server, so the
 focus at the client might be changed when the event listener for onBlur
 got executed. |
-| `onAfterRender` | <strong>Event:</strong>
+| `onAfterRender` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | <strong>Event:</strong>
+| `onPageSize` | **Event:**
 [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
 size has been changed when the autopaging
 ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean)))

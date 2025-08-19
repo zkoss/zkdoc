@@ -317,10 +317,10 @@ machines.
 
 | Name | Event Type |
 |---|---|
-| `onUpload` | <strong>Event:</strong>
+| `onUpload` | **Event:**
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be
 triggered once a user has uploaded a file. |
-| `onMaxFileCountExceed` | <strong>Event:</strong>
+| `onMaxFileCountExceed` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be
 triggered when number of upload files exceed the maxFileCount. |
 

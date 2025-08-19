@@ -126,10 +126,10 @@ in stead of upload.
 
 | Name | Event Type |
 |---|---|
-| `onClick` | <strong>Event:</strong>
+| `onClick` | **Event:**
 [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)
 Denotes when left button of Combobutton is clicked. |
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
 Denotes when the child popup is opened or closed, it will not be
 fired if open or close child popup by call

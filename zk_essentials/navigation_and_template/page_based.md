@@ -7,7 +7,7 @@ that have similar contents but applying a template zul can reduce this problem.
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch7-page-based-navigation.png)
 
 <div style="text-align:center">
-<strong>Page-based Navigation</strong>
+**Page-based Navigation**
 </div>
 
 <br/>

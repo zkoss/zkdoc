@@ -359,13 +359,13 @@ for inherited functions.
 
 | Name | Event Type |
 |---|---|
-| `onFocus` | <strong>Event:</strong>
+| `onFocus` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
 Denotes when a component gets the focus. |
-| `onBlur` | <strong>Event:</strong>
+| `onBlur` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
 Denotes when a component loses the focus. |
-| `onUpload` | <strong>Event:</strong>
+| `onUpload` | **Event:**
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
 uploaded a file to the component. |
 

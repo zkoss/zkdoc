@@ -96,16 +96,16 @@ pdfjsLib.version
 
 | Name | Event Type |
 |---|---|
-| `onPaging` | <strong>Event:</strong>
+| `onPaging` | **Event:**
 [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the
 pages is selected by the user. |
-| `onRender` | <strong>Event:</strong>
+| `onRender` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf
 file is finished rendering. |
-| `onZoom` | <strong>Event:</strong>
+| `onZoom` | **Event:**
 [org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has
 changed the zoom level. |
-| `onRotate` | <strong>Event:</strong>
+| `onRotate` | **Event:**
 [org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user
 has changed the rotation angle. |
 

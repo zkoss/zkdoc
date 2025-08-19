@@ -83,22 +83,22 @@ user action. And also the close icon will not show.
 
 | Name | Event Type |
 |---|---|
-| `onActive` | <strong>Event:</strong>
+| `onActive` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 activated this GoldenPanel. |
-| `onPanelDrop` | <strong>Event:</strong>
+| `onPanelDrop` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has dropped
 this GoldenPanel. |
-| `onFlexSize` | <strong>Event:</strong>
+| `onFlexSize` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has resized
 this GoldenPanel. |
-| `onClose` | <strong>Event:</strong>
+| `onClose` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has closed
 this GoldenPanel. |
-| `onMaximize` | <strong>Event:</strong>
+| `onMaximize` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 maximized this GoldenPanel. |
-| `onMinimize` | <strong>Event:</strong>
+| `onMinimize` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 minimized this GoldenPanel. |
 

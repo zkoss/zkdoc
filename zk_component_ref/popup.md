@@ -130,9 +130,9 @@ outlines how to accomplish this.
 | Name | Event Type |
 |---|---|
 |  |  |
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes a Popup has
-been opened or <strong>closed</strong> (in this case OpenEvent::isOpen()
+been opened or **closed** (in this case OpenEvent::isOpen()
 returns false). |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)

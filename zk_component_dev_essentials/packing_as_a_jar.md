@@ -40,20 +40,20 @@ what do they look like, example from zul.jar
                         <ul>
                             <li>mesg/
                                 <ul>
-                                    <li>msg[jar name].properties<strong>(optional)</strong></li>
-                                    <li>msg[jar name]_[locale].properties <strong>(optional
-                                                    ...)</strong></li>
+                                    <li>msg[jar name].properties**(optional)**</li>
+                                    <li>msg[jar name]_[locale].properties **(optional
+                                                    ...)**</li>
                                 </ul>
                             </li>
                             <li>xml/
                                 <ul>
-                                    <li>[component-name].xsd <strong>(optional)</strong></li>
+                                    <li>[component-name].xsd **(optional)**</li>
                                 </ul>
                             </li>
                             <li>zk/
                                 <ul>
-                                    <li>lang.xml <strong>(optional)</strong></li>
-                                    <li>lang-addon.xml <strong>(optional)</strong></li>
+                                    <li>lang.xml **(optional)**</li>
+                                    <li>lang-addon.xml **(optional)**</li>
                                 </ul>
                             </li>
                         </ul>
@@ -112,7 +112,7 @@ what do they look like, example from zul.jar
                                             <li><em>The language add-on define components , and it defined the
                                                     component classes, javascript widget/mold/css.<br />
                                                     it should contains At least one lang.xml or lang-addon.xml
-                                                    <strong>usually you will need a lang-addon.xml</strong> .</em></li>
+                                                    **usually you will need a lang-addon.xml** .</em></li>
                                         </ul>
                                     </li>
                                     <li>lang.xml
@@ -130,7 +130,7 @@ what do they look like, example from zul.jar
                 </ul>
             </td>
             <td>
-                <p><strong>The example from zul.jar</strong>
+                <p>**The example from zul.jar**
                     ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_configuration1.jpg)
                 </p>
             </td>
@@ -166,7 +166,7 @@ what do they look like, example from zul.jar
                 </ul>
             </td>
             <td>
-                <p><strong>The example from zul.jar</strong>
+                <p>**The example from zul.jar**
                     ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_component1.jpg)
                 </p>
             </td>
@@ -200,8 +200,8 @@ what do they look like, example from zul.jar
 </ul></li>
 <li>css/
 <ul>
-<li>widget-css-dsp-file<strong>(optional)</strong></li>
-<li>widget-css-file <strong>(optional)</strong></li>
+<li>widget-css-dsp-file**(optional)**</li>
+<li>widget-css-file **(optional)**</li>
 </ul></li>
 <li>widget-class-js-file</li>
 <li>/zk.wpd</li>
@@ -250,7 +250,7 @@ dependency with other package.</em></li>
 </ul></li>
 </ul></li>
 </ul></td>
-<td><p><strong>Example for box from zul.jar</strong> 
+<td><p>**Example for box from zul.jar** 
 ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_widget1.jpg)</p></td>
 </tr>
 </tbody>
@@ -271,16 +271,16 @@ dependency with other package.</em></li>
 <ul>
 <li>/web/
 <ul>
-<li>component-package / <strong>(optional)</strong>
+<li>component-package / **(optional)**
 <ul>
-<li>css /<strong>(optional)</strong>
+<li>css /**(optional)**
 <ul>
-<li>css files <strong>(optional)</strong></li>
-<li>zk.wcs<strong>(optional)</strong></li>
+<li>css files **(optional)**</li>
+<li>zk.wcs**(optional)**</li>
 </ul></li>
-<li>img /<strong>(optional)</strong>
+<li>img /**(optional)**
 <ul>
-<li>img files<strong>(optional)</strong></li>
+<li>img files**(optional)**</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -315,7 +315,7 @@ in xxx.css.dsp files through
 </ul></li>
 </ul></li>
 </ul></td>
-<td><p><strong>Example from zul.jar</strong></p>
+<td><p>**Example from zul.jar**</p>
 ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_static_resources1.jpg)</td>
 </tr>
 </tbody>

@@ -120,10 +120,10 @@ of the knob. ScaleInput is the scale ratio of the input size.
 
 | Name | Event Type |
 |---|---|
-| onScroll | <strong>Event:</strong>
+| onScroll | **Event:**
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content
 of a scrollable component has been scrolled by the user. |
-| onScrolling | <strong>Event:</strong>
+| onScrolling | **Event:**
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
 user is scrolling a scrollable component. Notice that the component's
 content (at the server) won't be changed until onScroll is received.

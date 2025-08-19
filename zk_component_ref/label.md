@@ -72,8 +72,8 @@ follows:
 # Special Character
 
 Since ZUML is XML, not HTML, so it doesn't accept
-<strong>`&`</strong>`nbsp;`. However, you can use
-<strong>`&`</strong>`#160;` instead. For the whole list, please refer th
+**`&`**`nbsp;`. However, you can use
+**`&`**`#160;` instead. For the whole list, please refer th
 [List of XML and HTML character entity references](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references).
 
 # Properties

@@ -83,13 +83,13 @@ selected.
 
 | Name | Event Type |
 |---|---|
-| `onAfterRender` | <strong>Event:</strong>
+| `onAfterRender` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onSelect` | <strong>Event:</strong>
+| `onSelect` | **Event:**
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
 Represents an event caused by user's the selection changed at the
 client. |
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
 Represents an event that indicates an open state that is changed at
 the client. |

@@ -114,7 +114,7 @@ examining the return value of
 
 | Name | Event Type |
 |---|---|
-| onCheck | <strong>Event:</strong>
+| onCheck | **Event:**
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when
 toolbarbutton is checked , only available in toggle mode . (since ZK
 6.0.0) |

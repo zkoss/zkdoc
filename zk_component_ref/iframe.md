@@ -166,7 +166,7 @@ element (rather than the widget).
 
 | Name | Event Type |
 |---|---|
-| `onURIChange` | <strong>Event:</strong>
+| `onURIChange` | **Event:**
 [org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html)
 Denotes the associated URI (`src`) has been changed by
 user.

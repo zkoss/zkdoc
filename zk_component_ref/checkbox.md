@@ -130,13 +130,13 @@ Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 
 | Name | Event Type |
 |---|---|
-| `onFocus` | <strong>Event:</strong>
+| `onFocus` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 gets the focus. |
-| `onBlur` | <strong>Event:</strong>
+| `onBlur` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
 loses the focus. |
-| onCheck | <strong>Event:</strong>
+| onCheck | **Event:**
 [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a
 component is checked or unchecked. |
 

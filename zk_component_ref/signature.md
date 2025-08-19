@@ -125,10 +125,10 @@ file size by [ file-size-threshold]({{site.baseurl}}/zk_config_ref/the_max_uploa
 
 | Name | Event Type |
 |---|---|
-| onSave | <strong>Event:</strong>
+| onSave | **Event:**
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) When user invoke
 the save method, the event would be triggered. |
-| onClear | <strong>Event:</strong>
+| onClear | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) When user invoke the
 clear method, the event would be triggered. |
 

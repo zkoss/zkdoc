@@ -317,10 +317,10 @@ To select multiple items, you can:
 ### Enable with a ListModel
 
 If you assign a ListModel to a Listbox, then you should enable the
-multiple selection with the <strong>ListModel</strong>
+multiple selection with the **ListModel**
 
-. Please **do not** set <strong>multiple</strong> on listbox directly,
-and set <strong>multiple</strong> on the model instead.
+. Please **do not** set **multiple** on listbox directly,
+and set **multiple** on the model instead.
 
 ```xml
 ...
@@ -1389,12 +1389,12 @@ component.
 
 | Name | Event Type                                                                                                                                                                                                                                                                                                                                                                                                 |
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `onSelect` | <strong>Event:</strong> [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected or deselected an item in the listbox.                                                                                                                                                                                  |
-| `onFocus` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed.                                                                                     |
-| `onBlur` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed.                                                                                     |
-| `onAfterRender` | <strong>Event:</strong> [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                                                                                                                                                                                                                                                                            |
-| `onPageSize` | <strong>Event:</strong> [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
-| `onCheckSelectAll` | <strong>Event:</strong> [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items.                                                                                                                                                                    |
+| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected or deselected an item in the listbox.                                                                                                                                                                                  |
+| `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed.                                                                                     |
+| `onBlur` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed.                                                                                     |
+| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                                                                                                                                                                                                                                                                            |
+| `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| `onCheckSelectAll` | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items.                                                                                                                                                                    |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

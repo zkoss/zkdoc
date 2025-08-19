@@ -95,7 +95,7 @@ have an initial rating.)
 
 | Name | Event Type |
 |---|---|
-| `onChange` | <strong>Event:</strong>
+| `onChange` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has
 rated. |
 

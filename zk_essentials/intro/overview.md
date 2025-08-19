@@ -81,7 +81,7 @@ must login before you can access other functions.
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch8-login.png)
 
 <div style="text-align:center">
-<strong>Example application - login</strong>
+**Example application - login**
 </div>
 
 After login, you can see the main page. The sidebar on the left is a
@@ -93,7 +93,7 @@ both the MVC and MVVM approach.
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch1-profile.png)
 
 <div style="text-align:center">
-<strong>Example application - profile form</strong>
+**Example application - profile form**
 </div>
 
 The image below shows the Todo list management function, you can create,
@@ -102,5 +102,5 @@ delete, and update a todo item.
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch1-todo.png)
 
 <div style="text-align:center">
-<strong>Example application - todo list</strong>
+**Example application - todo list**
 </div>

@@ -56,7 +56,7 @@ By setting `content` attribute of `
 
 | Name | Event Type |
 |---|---|
-| onChange | <strong>Event:</strong>
+| onChange | **Event:**
 [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Notifies the
 application with the onChange event if its content is changed |
 

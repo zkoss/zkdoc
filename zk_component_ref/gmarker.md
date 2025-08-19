@@ -23,7 +23,7 @@ customizable.
 
 | Name | Event Type |
 |---|---|
-| `onMapDrop` | <strong>Event:</strong> <a href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
+| `onMapDrop` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/mapdropevent" title="wikilink">
 MapDropEvent</a>
 Notifies that some component is dragged and dropped on the gmaps or
 gmarker component with latitude and longitude information. |

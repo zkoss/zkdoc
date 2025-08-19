@@ -253,22 +253,22 @@ css classes like the following:
 
 | Name | Event Type |
 |---|---|
-| `onVideoUpload` | <strong>Event:</strong>
+| `onVideoUpload` | **Event:**
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
 video has been uploaded. |
-| `onSnapshotUpload` | <strong>Event:</strong>
+| `onSnapshotUpload` | **Event:**
 [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the
 snapshot has been uploaded. |
-| `onMaxsizeExceed` | <strong>Event:</strong>
+| `onMaxsizeExceed` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
 size is bigger than the max size. |
-| `onLengthLimitExceed` | <strong>Event:</strong>
+| `onLengthLimitExceed` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded
 length exceeds the max length. |
-| `onStateChange` | <strong>Event:</strong>
+| `onStateChange` | **Event:**
 [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
 when invoking start(), stop(), pause() or resume(). |
-| `onCameraUnavailable` | <strong>Event:</strong>
+| `onCameraUnavailable` | **Event:**
 [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if
 camera is unavailable after requesting media devices from user. |
 

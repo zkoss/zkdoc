@@ -20,12 +20,12 @@ Here is the attribute list used in lang-addon.xml:
 | Attribute Name | Description |
 |---|---|
 | ACCESS | Access privilege. The value can be "both", "save", or
-"load"(<strong>default value</strong>); default value is used if not
+"load"(**default value**); default value is used if not
 specify. |
 | CONVERTER | System converter for special properties.
-(<strong>optional</strong>) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html) |
+(**optional**) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html) |
 | VALIDATOR | System validator for special properties.
-(<strong>optional</strong>) |
+(**optional**) |
 | SAVE_EVENT | Save trigger event. It takes effect only when ACCESS attribute
 is "both" or "save". |
 | LOAD_EVENT | Load trigger event; It takes effect only when ACCESS attribute

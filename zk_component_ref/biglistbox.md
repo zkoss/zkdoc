@@ -139,36 +139,36 @@ request from the client. It is used only if live data
 
 | Name | Event Type |
 |---|---|
-| `onSelect` | <strong>Event:</strong>
+| `onSelect` | **Event:**
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
 Represents an event cause by user's the list selection is changed at
 the client. |
-| `onSort` | <strong>Event:</strong>
+| `onSort` | **Event:**
 [org.zkoss.zkmax.zul.event.SortEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/SortEventExt.html)
 Represents an event that indicates a sorting request to data for
 Biglistbox and provides more information about the column
 index. |
-| `onScroll` | <strong>Event:</strong>
+| `onScroll` | **Event:**
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)
 Represents an event caused by that user is scrolling or has scrolled
 at the client for Biglistbox component and provides more information
 about the position X and Y data. |
-| `onScrollX` | <strong>Event:</strong>
+| `onScrollX` | **Event:**
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)
 Represents an event caused by that user is scrolling or has scrolled
 the X-axis at the client for Biglistbox component and provides more
 information about the position X and Y data. |
-| `onScrollY` | <strong>Event:</strong>
+| `onScrollY` | **Event:**
 [org.zkoss.zkmax.zul.event.ScrollEventExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/ScrollEventExt.html)
 Represents an event caused by that user is scrolling or has scrolled
 the Y-axis at the client for Biglistbox component and provides more
 information about the position X and Y data. |
-| `onCellClick` | <strong>Event:</strong>
+| `onCellClick` | **Event:**
 [org.zkoss.zkmax.zul.event.CellClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/CellClickEvent.html)
 Represents an event that indicates a clicking on a cell data for a
 matrix data component like Biglistbox, and provides more information
 about the row index and the column index. |
-| `onAfterRender` | <strong>Event:</strong>
+| `onAfterRender` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)

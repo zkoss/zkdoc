@@ -213,7 +213,7 @@ played to the end, the StateChangeEvent will be triggered.
 
 | Name | Event Type |
 |---|---|
-| `onStateChange` | <strong>Event:</strong>
+| `onStateChange` | **Event:**
 [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies
 when invoking play(), stop() or pause(). |
 

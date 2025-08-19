@@ -135,7 +135,7 @@ the right hand side when you select an item.
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch6-priority.png)
 
 <div style="text-align:center">
-<strong>Todo Item's Priority Radiogroup</strong>
+**Todo Item's Priority Radiogroup**
 
 </div>
 In our application, its priority labels come from an enumerating

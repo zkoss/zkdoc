@@ -150,18 +150,18 @@ Returns all selected items.
 
 | Name | Event Type |
 |---|---|
-| `onAfterRender` | <strong>Event:</strong>
+| `onAfterRender` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onSelect` | <strong>Event:</strong>
+| `onSelect` | **Event:**
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
 Represents an event caused by the user that the list selection is
 changed at the client. |
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
 Denotes that the user has opened or closed a component. Note: unlike
 `onClose`, this event is only a notification. The client
 sends this event after opening or closing the component. |
-| `onSearching` | <strong>Event:</strong>
+| `onSearching` | **Event:**
 [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
 Notifies one that the user is searching by keywords. |
 

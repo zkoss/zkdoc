@@ -16,5 +16,5 @@ ZK provides [various layout components](https://www.zkoss.org/zkdemo/layout), an
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch3-borderlayout.png)
 
 <div style="text-align:center">
-<strong>Border Layout</strong>
+**Border Layout**
 </div>

@@ -333,7 +333,7 @@ for inherited functions.
 
 | Name | Event Type |
 |---|---|
-| `onTimeZoneChange` | <strong>Event:</strong>
+| `onTimeZoneChange` | **Event:**
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of
 the component is changed by user. |
 

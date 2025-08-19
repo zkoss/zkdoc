@@ -81,11 +81,11 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 
 | Name | Event Type |
 |---|---|
-| onPortalDrop | {% include version-badge.html version="9.5.1" %} <strong>Event:</strong>
+| onPortalDrop | {% include version-badge.html version="9.5.1" %} **Event:**
 [org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html)
 Represents an event after a portal is dropped and before a portal is
 moved. |
-| onPortalMove | <strong>Event:</strong>
+| onPortalMove | **Event:**
 [org.zkoss.zkmax.ui.event.PortalMoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalMoveEvent.html) Represents
 an event caused by a portal being moved. |
 

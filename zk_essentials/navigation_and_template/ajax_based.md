@@ -11,7 +11,7 @@ reloading the whole page.
 
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch7-ajax-based-navigation.png)
 <div style="text-align:center">
-<strong>AJAX-based Navigation</strong>
+**AJAX-based Navigation**
 </div>
 
 The easiest way to implement AJAX-based navigation is to change *Include* component's `src` attribute. It can change only partial content (inside the *Include*) of

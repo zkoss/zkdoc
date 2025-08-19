@@ -70,7 +70,7 @@ write codes as shown below (MVVM pattern).
 
 | Name | Event Type |
 |---|---|
-| `onStateChange` | <strong>Event:</strong>
+| `onStateChange` | **Event:**
 [org.zkoss.zk.ui.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StateChangeEvent.html) Notifies when
 invoking play(), stop(), pause() or the audio is played to the
 end. |

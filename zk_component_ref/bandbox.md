@@ -214,7 +214,7 @@ functions.
 
 | Name | Event Type |
 |---|---|
-| onOpen | <strong>Event:</strong>
+| onOpen | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
 Denotes user has opened or closed a component. Note: unlike onClose,
 this event is only a notification. The client sends this event after

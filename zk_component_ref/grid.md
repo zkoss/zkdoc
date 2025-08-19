@@ -1179,10 +1179,8 @@ the value as **ignore.change**.
 `[inherit: true]`[^3]
 
 {% include version-badge.html version="6.0.1" %} Specifies the number of rows to
-preload when receiving the rendering request from the client. It is used
-only if live data
-([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
-not paging
+preload when receiving the rendering request from the client. It is used only if live data
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and not paging
 ([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
 
 ## org.zkoss.zul.grid.initRodSize
@@ -1206,21 +1204,24 @@ not paging
 It specifies whether to enable autohide property for internal paging
 components.
 
-> ------------------------------------------------------------------------
->
-> <references/>
+[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
+
+[^2]: `Same as above.`
+
+[^3]: `Same as above.`
+
+[^4]: `Same as above.`
+
+[^5]: `Same as above.`
+
 
 # Supported Events
 
 | Name | Event Type |
 |---|---|
-| `onAfterRender` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | <strong>Event:</strong>
-[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
-size has been changed when the autopaging
-([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content. |
+| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
+size has been changed when the autopaging ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1236,7 +1237,7 @@ zul.jar.
 
 # Supported Children
 
-`*`[` Columns`]({{site.baseurl}}/zk_component_ref/columns)`, `[` Rows`]({{site.baseurl}}/zk_component_ref/rows)`, `[` Foot`]({{site.baseurl}}/zk_component_ref/foot)
+* [Columns]({{site.baseurl}}/zk_component_ref/columns), [Rows]({{site.baseurl}}/zk_component_ref/rows), [Foot]({{site.baseurl}}/zk_component_ref/foot)
 
 # Version History
 
@@ -1256,15 +1257,3 @@ zul.jar.
 | 7.0.3   | July 2014    | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
 | 8.5.0   | Oct 2017     | [ZK-3690](http://tracker.zkoss.org/browse/ZK-3690): Added visibleRows property for Grid (the same as rows property of Listbox and Tree)                                                         |
 | 9.6.0   | Mar 2021     | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
-
-
-
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
-
-[^2]: `Same as above.`
-
-[^3]: `Same as above.`
-
-[^4]: `Same as above.`
-
-[^5]: `Same as above.`

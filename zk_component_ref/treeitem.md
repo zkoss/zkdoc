@@ -137,7 +137,7 @@ in regard to SelectionControl customization.
 
 | Name | Event Type |
 |---|---|
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has
 opened or closed a component. It is useful to implement load-on-demand
 by listening to the onOpen event, and creating components when the first

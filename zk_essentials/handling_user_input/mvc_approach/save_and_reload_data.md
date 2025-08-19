@@ -8,7 +8,7 @@ application will save your input and show a notification box.
 ![](/zk_essentials/images/ze-ch5-save.png)
 </div>
 <div style="text-align:center">
-<strong>Click "Save" button</strong>
+**Click "Save" button**
 </div>
 
 In this section, we will demonstrate a more flexible way to define an

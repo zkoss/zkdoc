@@ -61,15 +61,15 @@ The default orient of child components inside Scrollview is
 
 | Name | Event Type |
 |---|---|
-| `onScroll` | <strong>Event:</strong>
-[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) <strong>In mobile
-devices:</strong> Denotes that the content of a scrollable component has
+| `onScroll` | **Event:**
+[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) **In mobile
+devices:** Denotes that the content of a scrollable component has
 been scrolled by the user. Notice that you can check if it is scrolled
 outside/inside boundaries by invoking `getOutOfBound` method
 in the ScrollEvent.
-<strong>In desktop:</strong> This event will be triggered when users
+**In desktop:** This event will be triggered when users
 scroll all the way to the top or to the end of the page. |
-| `onScrolling` | <strong>Event:</strong>
+| `onScrolling` | **Event:**
 [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
 user is scrolling a scrollable component. |
 

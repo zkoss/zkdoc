@@ -9,7 +9,7 @@ target component among the applied component and its child components.
 
 ## Wire with ID selector by Default
 
-You can either specify <strong>component selector syntax</strong>, as
+You can either specify **component selector syntax**, as
 the matching criteria for wiring, or leave it empty to wire by
 **component id (default)**. For example,
 
@@ -36,8 +36,8 @@ Controller:
 
 # CSS3-like Selectors
 
-The string value in `@Wire` annotation is a <strong>component
-selector</strong>, which shares an analogous syntax of CSS3 selector.
+The string value in `@Wire` annotation is a **component
+selector**, which shares an analogous syntax of CSS3 selector.
 The selector specifies matching criteria against the component tree
 under the component which applies to this composer.
 

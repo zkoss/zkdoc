@@ -116,7 +116,7 @@ Template, please refer to:
 
 | Name | Event Type |
 |---|---|
-| `onSelect` | <strong>Event:</strong>
+| `onSelect` | **Event:**
 [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
 the user has selected a new item in the organigram. |
 |  |  |

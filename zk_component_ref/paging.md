@@ -117,7 +117,7 @@ client side which is detached during paging and throws mounting error.
 
 | Name | Event Type |
 |---|---|
-| `onPaging` | <strong>Event:</strong>
+| `onPaging` | **Event:**
 [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)
 Notifies one of the pages of a multi-page component is selected by
 the user. |

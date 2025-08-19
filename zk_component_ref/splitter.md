@@ -127,7 +127,7 @@ OS-look:
 
 | Name | Event Type |
 |---|---|
-| `onOpen` | <strong>Event:</strong>
+| `onOpen` | **Event:**
 [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
 When a splitter is collapsed or opened by a user, the
 `onOpen` event is sent to the application. |
