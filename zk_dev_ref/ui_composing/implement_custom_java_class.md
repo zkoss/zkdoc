@@ -71,9 +71,6 @@ so as to represent properties set by
 [org.zkoss.zk.ui.ext.DynamicPropertied#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html#setDynamicProperty(java.lang.String, java.lang.Object)),
 though it is more useful if a custom implementation is provided.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Declare Macro with Custom Java Class
 

@@ -141,9 +141,6 @@ static {
 Notice that the important event won't be sent to the server immediately
 if it does not have any non-deferrable event listener at the server[^1].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Force Event to Send Back
 

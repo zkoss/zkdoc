@@ -77,9 +77,6 @@ provide a custom Java class to represent the component so a better
 abstraction and addition functionality can be implemented. We will
 discuss it more in the [following section]({{site.baseurl}}/zk_dev_ref/ui_composing/implement_custom_java_class).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## arg.includer
 

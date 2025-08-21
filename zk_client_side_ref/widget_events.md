@@ -127,9 +127,6 @@ DOM-level. If you stop only the widget-level propagation (by calling
 `evt.stop({propagation:true})`), the DOM event will go through all
 DOM-level event listeners and then trigger the browser default behavior.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Capture the Mouse Event
 
@@ -216,9 +213,6 @@ with `{au:true}`, such as
 evt.stop({au: true});
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)
     section.

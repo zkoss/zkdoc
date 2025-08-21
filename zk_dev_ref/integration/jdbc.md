@@ -231,7 +231,7 @@ Then, in `web.xml`, you have to add the following content under the
 
 **Notes**
 
-<references/>
+
 
 ### JBoss + MySQL
 

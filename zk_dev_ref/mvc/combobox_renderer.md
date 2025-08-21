@@ -21,9 +21,6 @@ public class MyRenderer implements ComboitemRenderer {
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

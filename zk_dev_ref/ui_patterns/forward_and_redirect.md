@@ -89,9 +89,6 @@ Then, you could specify it in your ZUML document:
 <?init class="foo.AuthenticateInit"?>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Forward to Another Page
 
@@ -202,9 +199,6 @@ This is only a problem when a navigation action doesn’t result in the
 browser leaving the current ZK page, as the page is unloaded but still
 exists in the client browser.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: It actually sets [the refresh header](http://www.metatags.org/meta_http_equiv_refresh).
 

@@ -51,9 +51,6 @@ and so on.
 The behavior is a little bit different depending on if the event thread
 is enabled (default: it is disabled[^1]).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Creating a custom template for the Static Method: get
 

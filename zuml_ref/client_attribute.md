@@ -119,9 +119,6 @@ To see more examples, please refer to [ZK8: Simple but Powerful; Using Data-hand
 and [Github](https://github.com/zkoss/zk8-datahandler) (you can design
 your own data-attribute handler and contribute this project).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

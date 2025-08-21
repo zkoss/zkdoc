@@ -33,7 +33,7 @@ could specify it as follows.
 Note: Enable user-scalable might have some potential issues like
 scrolling, unnecessary events.
 
-<references/>
+
 
 # Version History
 

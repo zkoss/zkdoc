@@ -2,9 +2,6 @@
 
 The session. It is similar to `javax.servlet.http.HttpSession`[^1]`.`
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 
 

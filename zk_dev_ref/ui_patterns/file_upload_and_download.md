@@ -40,9 +40,6 @@ size, and other options. Please refer to
 </menupopup>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Open File Upload Dialog
 

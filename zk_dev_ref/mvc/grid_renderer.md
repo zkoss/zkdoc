@@ -24,9 +24,6 @@ public class FoodGroupRenderer implements RowRenderer, java.io.Serializable {
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

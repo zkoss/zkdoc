@@ -77,9 +77,6 @@ if (some < another && another < last) //OK since CDATA is used
 
 As depicted CDATA is represented with and `]]>`.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ### Class Declaration
 
@@ -233,9 +230,6 @@ only to window `B`, while `var1` is visible to both window `A` and `B`.
 </window>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Declare a Local Variable
 

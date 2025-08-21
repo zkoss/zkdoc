@@ -33,9 +33,6 @@ Here we describe how to compose UI in JavaScript at the client-side.
 - For developing a component, please refer to the [Component Development]({{site.baseurl}}/zk_client_side_ref/component_development)
   section.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Modify Widget's State at Client
 
@@ -173,9 +170,6 @@ if (widget.$instanceof(zul.sel.Treeitem)){
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Instantiate Widget at Client
 
@@ -248,9 +242,6 @@ attached yet). For example,
 where we use the [native namespace]({{site.baseurl}}/zuml_ref/native) to create a
 DOM element and then replace it with the label widget.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Load Required JavaScript Widget File
 

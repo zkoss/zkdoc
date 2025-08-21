@@ -56,9 +56,6 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 
 ![]({{site.baseurl}}/zk_dev_ref/images/st201107-listbox.png)
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Component's Value
 
@@ -216,9 +213,6 @@ and then retrieve it later, as shown at line 4 and 10 below.
 </listbox>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Template for GroupsModel
 

@@ -118,9 +118,6 @@ the client is removed (since Window's onClose() method detaches the
 window). Thus, if the event is executed again, the client can restore
 the detailed information back.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Event Handling
 

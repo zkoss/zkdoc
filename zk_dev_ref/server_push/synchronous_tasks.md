@@ -37,9 +37,6 @@ After the server push of a given desktop is enabled, you could use any
 number of working threads to update the desktop concurrently as
 described in the following section[^1].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Update UI in a Working Thread
 

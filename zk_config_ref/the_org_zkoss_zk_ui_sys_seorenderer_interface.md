@@ -60,9 +60,6 @@ lost after called.
 
 You can also take a look at the ZK's blog about [another approach to SEO in ZK Applications](http://blog.zkoss.org/index.php/2011/03/17/make-zk-application-work-with-seo/).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

@@ -28,9 +28,6 @@ can be any kind of component.
 | Context Menus | When the user clicks the *right* button on the target component           | [org.zkoss.zul.impl.XulElement#setContext(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setContext(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(org.zkoss.zul.Popup)) |
 | Popups        | When the user clicks the *left* button on the target component            | [org.zkoss.zul.impl.XulElement#setPopup(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setPopup(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(org.zkoss.zul.Popup))     |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Tooltips
 

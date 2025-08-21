@@ -442,9 +442,6 @@ page).
 
 For more information, please refer to the [\#Include Non-ZUML Pages](#Include_Non-ZUML_Pages) section.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Supported Events
 

@@ -131,9 +131,6 @@ example,
 where `$composer` is a built-in variable referring to the composer. For
 more information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/composer).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Warning: Not a good idea to have Spring managing the composer
 

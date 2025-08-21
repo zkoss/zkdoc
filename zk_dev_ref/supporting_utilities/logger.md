@@ -176,7 +176,7 @@ You could specify an absolute path, such as
 `/usr/jetty/conf/zk-log.properties`, if you are not sure what the
 current directory is.
 
-<references/>
+
 
 # Disable All Logs
 

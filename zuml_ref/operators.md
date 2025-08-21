@@ -23,9 +23,6 @@ role="doc-backlink">↩︎</a></li>
 </ol>
 </aside>
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 The relative precedence levels of operators from the highest to lowest,
 left to right are as follows:
@@ -41,9 +38,6 @@ left to right are as follows:
 - \|\| or
 - ? :
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 
 

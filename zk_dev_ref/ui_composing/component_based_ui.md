@@ -153,9 +153,6 @@ below)
 </window>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Attach a Component to a Page
 
@@ -225,9 +222,6 @@ worthwhile to note them down:
     correctly, you could invalidate its parent to resolve the
     problem[^3].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Don't Cache Components Attached to a Page in Static Fields
 
@@ -271,9 +265,6 @@ org.zkoss.zk.ui.UiException: The parent and child must be in the same desktop: <
     foo.Foo.doAfterCompose(Foo.java:10)
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Component Cloning
 
@@ -302,9 +293,6 @@ component and then de-serialize it back, the result will be the same as
 invoking
 [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())[^5].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: Under portal environment, there might be multiple desktops in one
     browser window. However, it is really important in the developer's

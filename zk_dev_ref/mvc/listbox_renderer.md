@@ -33,9 +33,6 @@ public class MyRenderer implements ListitemRenderer{
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

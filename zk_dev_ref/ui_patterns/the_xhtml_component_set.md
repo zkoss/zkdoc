@@ -123,9 +123,6 @@ where
     appropriate for Web-look page[^1] For Web-look, we could specify
     `height:auto` to reset it back to the browser's default.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: `height:100%` is more for desktop-application-look, such as using
     with [org.zkoss.zul.Borderlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Borderlayout.html).

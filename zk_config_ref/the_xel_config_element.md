@@ -50,7 +50,7 @@ following:
 
 **Notes**
 
-<references/>
+
 
 ## Version History
 

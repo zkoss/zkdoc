@@ -38,9 +38,6 @@ them together in a ZUML document as follows:
 <biglistbox model="${data}" matrixRenderer="${dataRenderer}"/>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

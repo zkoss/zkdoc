@@ -68,9 +68,6 @@ section.
     parent.appendChild(n);
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # The Stub-izing of Native Components
 
@@ -97,9 +94,6 @@ attached back).
 
 Once set, descendant components unless it was set explicitly.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

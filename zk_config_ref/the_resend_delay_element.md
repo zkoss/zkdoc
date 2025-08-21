@@ -18,9 +18,6 @@ Explorer 6 sometimes won't send the package at all. To ensure the
 reliability, ZK will abort the previous request and then resend the
 request, if the specified delay expires.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 | Version | Date           | Content                                                                                                                                                             |
 |---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -91,9 +91,6 @@ Of course, the components being created by
 will not be attached to any pages. You have to attach them manually, if
 you want to show them to the client.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Create from Content Directly
 
@@ -183,9 +180,6 @@ ZUML document directly[^2].
       will be lost. Thus, it is *not* a good idea to use zscript in this
       case.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: It means
     [org.zkoss.zk.ui.Executions#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#getCurrent())

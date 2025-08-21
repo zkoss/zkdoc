@@ -679,7 +679,7 @@ All source code used in this chapter can be found
 
 # Reference
 
-<references/>
+
 
 [^1]: Hibernate in Action, Christian Bauer, Gavin King, Manning
 

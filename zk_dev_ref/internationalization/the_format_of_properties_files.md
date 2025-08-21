@@ -25,9 +25,6 @@ A properties file is usually used to contain the internationalization
 labels of an application, but technically you could use it in any
 situation you'd like[^1].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Specify a Value with Multiple Lines
 
@@ -158,9 +155,6 @@ references to a request's parameter:
 message=Thank ${param.user} for using
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Use Encoding Other Than UTF-8
 

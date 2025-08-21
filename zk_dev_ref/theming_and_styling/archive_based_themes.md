@@ -207,7 +207,7 @@ The process can be summarized as follows:
 
 # References
 
-<references/>
+
 
 [^1]: ZK Themes [1](https://github.com/zkoss/zkthemes)
 

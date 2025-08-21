@@ -156,9 +156,6 @@ to retrieve the composer back.
 Every ZK skeletal implementation provides several ways to name the
 composer as described in the following sections.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ### Default Names of Composer
 
@@ -272,9 +269,6 @@ document, as below.
 ...
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Composer with More Control
 
@@ -334,9 +328,6 @@ For involving the life cycle, you could override
 and/or
 [org.zkoss.zk.ui.util.ComposerExt#doBeforeComposeChildren(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeComposeChildren(T)).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Fine-grained Full Control with FullComposer
 

@@ -57,9 +57,6 @@ clicks a button, the event listener will be invoked. You could examine
 the event name to know which button is clicked. If the user clicked the
 Close button on the right-top corner, the `onClose` event is fired.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ### Listen ClickEvent
 

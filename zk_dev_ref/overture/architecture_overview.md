@@ -69,9 +69,6 @@ users click on the DOM element. This is generally more transparent to
 the application developers, and the implementation of a component can be
 enhanced later as the project progresses.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Execution Flow of Loading a Page
 
@@ -143,9 +140,6 @@ enhanced later as the project progresses.
     widgets accordingly. Then the widgets will update the browser's DOM
     tree to make them available to the user.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## When to Send an Ajax Request
 

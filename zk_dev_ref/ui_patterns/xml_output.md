@@ -83,9 +83,6 @@ where
 - To use `zscript`, `forEach` and other ZK specific features, you have
   to specify the [ZK namespace](/zuml_ref/zk) (zk).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Maps the File Extension to ZK Loader
 
@@ -100,9 +97,6 @@ Loader in `WEB-INF/web.xml`. In this example, we map all files with the
  </servlet-mapping>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Maps the File Extension to the XML Component Set
 
@@ -122,9 +116,6 @@ where `xml` is the language name of the [XML component set](/zuml_ref/xml). Thus
 parses a file with the `.svg` extension, it knows the default language
 is the XML component set[^3].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: By the unknown tag we mean an XML element that is not associated
     with an XML namespace, or the namespace is unknown.

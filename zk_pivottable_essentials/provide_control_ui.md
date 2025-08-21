@@ -133,8 +133,5 @@ All the available keys are defined as the following:
 
 ![](images/ZKPivotEsn_pfc_control_05.png)
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 #

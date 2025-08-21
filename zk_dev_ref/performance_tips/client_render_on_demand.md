@@ -13,9 +13,6 @@ This feature is transparent to the application developers. All widgets
 are still instantiated (though DOM elements might not), so they can be
 accessed without knowing if this feature is turned on.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Client ROD: Tree
 

@@ -715,9 +715,6 @@ listbox will do the rest.
 </window>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Sorting with Live Data
 
@@ -840,9 +837,6 @@ an image as the header by `image` attribute.
     </listbox>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Column Footers
 

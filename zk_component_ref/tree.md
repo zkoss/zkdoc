@@ -624,9 +624,6 @@ an item, if the checkmark is enabled
 ([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())). If it is
 turned off, right clicking on an item will change its selection state.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## org.zkoss.zul.tree.autoSort
 
@@ -661,9 +658,6 @@ the value as **ignore.change**.
 It specifies whether to enable autohide property for internal paging
 component.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Supported Events
 

@@ -55,9 +55,6 @@ if necessary (for better performance). Here is the correct result.
 
 ![](images/UseStack-ok-1.jpg)
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## The stackup and autohide techniques
 

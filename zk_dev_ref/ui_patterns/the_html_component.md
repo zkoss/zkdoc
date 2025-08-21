@@ -24,9 +24,6 @@ element.
 
 Also notice that EL expressions are allowed.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # What Are Generated
 

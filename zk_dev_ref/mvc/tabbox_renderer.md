@@ -27,9 +27,6 @@ public class MyRenderer implements TabboxRenderer{
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: If the tabbox is assigned a template called `model:tab` and
     `model:tabpanel`, then the template will be used to render the

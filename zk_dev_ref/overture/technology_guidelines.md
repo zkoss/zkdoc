@@ -235,7 +235,6 @@ The limitation of
 is that you can not encapsulate its behavior in a Java class (like macro
 or composite components do).
 
-> <references/>
 
 ## When to use macro components
 
@@ -264,9 +263,6 @@ behavior from an existent component, such as
 [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html), and enhance it to have child
 components defined in a ZUML document.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## When to use templating
 
@@ -294,9 +290,6 @@ even better. However, if you have to use ZK with legacy JSF, please
 refer to the [Embed ZK Component in Foreign Framework]({{site.baseurl}}/zk_dev_ref/integration/embed_zk_component_in_foreign_framework)
 section.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: You have to specify `mode="defer"` to create a
     [org.zkoss.zul.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Page.html) instance.

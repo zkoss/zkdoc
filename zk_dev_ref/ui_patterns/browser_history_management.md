@@ -27,9 +27,6 @@ history:
 2.  Listen to the `onBookmarkChange` event for bookmark change, and
     switch the state accordingly.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Add Bookmarks to Browser's History
 

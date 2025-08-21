@@ -55,9 +55,6 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 
 For more information, please refer to [the next section]({{site.baseurl}}/zk_client_side_ref/server_side_processing).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Fire Event to Desktop
 

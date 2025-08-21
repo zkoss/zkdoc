@@ -104,7 +104,7 @@ slf4j.
 
 # References
 
-<references/>
+
 
 [^1]: The Open Web Application Security Project [official website](https://www.owasp.org/index.php/Main_Page)
 

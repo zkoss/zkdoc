@@ -241,9 +241,6 @@ Suggestions:
   it is subtle for application developers to notice its existence. In
   addition, it requires to extend the component class.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Precedence of Listeners
 

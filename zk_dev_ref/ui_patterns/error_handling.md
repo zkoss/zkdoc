@@ -100,9 +100,6 @@ public class ErrorHandlingComposer extends SelectorComposer<Component> {
 }
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Error Handling when the Client Engine crashes
 

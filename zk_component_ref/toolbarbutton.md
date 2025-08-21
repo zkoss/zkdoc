@@ -106,9 +106,6 @@ button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
 [org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia()).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Supported Events
 

@@ -22,8 +22,4 @@ For example,
 </preference>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
-
 [^1]: For more information, please refer to [ The preference Element]({{site.baseurl}}/zk_config_ref/the_preference_element).

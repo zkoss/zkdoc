@@ -80,9 +80,6 @@ browser type, but not depending on the Locale. For example,
 "/my/lang\*.css\*" will be replaced with "/my/langie.css" if Internet
 Explorer is the current user's browser.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Example
 

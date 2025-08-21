@@ -22,6 +22,3 @@ can customize the rendering of each item in a model:
   each item. If you need to render items according to conditions in the
   runtime, this approach is suggested.
 
-> ------------------------------------------------------------------------
->
-> <references/>

@@ -77,9 +77,6 @@ In addition to the default handling, You can add a custom AU request
 service to a component by calling
 [org.zkoss.zk.ui.Component#setAuService(org.zkoss.zk.au.AuService)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAuService(org.zkoss.zk.au.AuService)).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 
 

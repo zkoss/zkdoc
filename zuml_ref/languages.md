@@ -150,9 +150,6 @@ example to be more efficient:
 </window>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## XML Namespace with Shortcut
 
@@ -183,9 +180,6 @@ modern browser (Ajax assumed), while the zml language is used for
 generating XML document (non-Ajax). The developers are free to add their
 own language[^3].
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 | Language | Description |
 |----------|-------------|
@@ -193,9 +187,6 @@ own language[^3].
 | xhtml | `Name: xhtml`<br>`File Extensions: zhtml, xhtml, html, htm`<br>`Namespace: `[`http://www.w3.org/1999/xhtml`](http://www.w3.org/1999/xhtml)<br>`Namespace shortcut: xhtml`<br>`Device: Ajax`<br><br>XHTML-compliant component sets. It is one-to-one mapping of XHTML tags to ZK components. Since they are components, you can add and remove them dynamically (and control it at the server). For more information please refer to the [XHTML Namespace](zuml_ref/XHTML) section or [ZK Component Reference]({{site.baseurl}}/zk_component_ref/xhtml_components).<br><br>**Performance Tip:** The XHTML language is designed to allow application to modify the client dynamically (at the server). If you don't need it (it is generally true), you should use the [Native namespace](zuml_ref/Native) instead. For more information, please refer to [Performance Tips](ZK_Developer's_Reference/Performance_Tips/Use_Native_Namespace_instead_of_XHTML_Namespace). |
 | xml | `Name: xml`<br>`File Extensions: xml`<br>`Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)<br>`Namespace shortcut: xml`<br>`Device: XML`<br>`Available only ZK EE`<br><br>XML component sets. It is used to generate (static) XML document. For more information please refer to the [XML Namespace](zuml_ref/XML) section. |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Version History
 

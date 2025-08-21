@@ -57,7 +57,7 @@ interface. Or, you can specify the following content in
 
 **Notes**
 
-<references/>
+
 
 # class
 

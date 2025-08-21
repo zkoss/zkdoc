@@ -184,5 +184,5 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 
 > ------------------------------------------------------------------------
 >
-> <references/>[^1]: Internet Explorer 9 and other browsers all work fine without this
+> [^1]: Internet Explorer 9 and other browsers all work fine without this
     limitation.

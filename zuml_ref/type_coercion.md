@@ -21,9 +21,6 @@ of the coercion rules.
 | null               | false                | (char)0       | 0                     | ""             |
 | Other              | ERROR                | ERROR         | ERROR                 | obj.toString() |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 - The handling of an empty string and null is the same
 

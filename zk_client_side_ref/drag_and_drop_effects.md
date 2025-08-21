@@ -87,9 +87,6 @@ please refer to [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/z
 | [zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)) | Called to create the visual effect representing what is being dragged. In other words, it creates the DOM element that will be moved with the mouse pointer when the user is dragging. |
 | [zk.Widget#uncloneDrag_(zk.Draggable)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#uncloneDrag_(zk.Draggable)) | Undo the visual effect created by [zk.Widget#cloneDrag_(zk.Draggable, _global_.Offset)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#cloneDrag_(zk.Draggable, _global_.Offset)). In other words, it removes the DOM element that was created. |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Droppable Visual Feedback
 

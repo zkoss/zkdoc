@@ -52,9 +52,6 @@ same in both `de_DE` and `de`, then you need only to specify in
 `zk-label_de.properties` (and then it will be *inherited* when de_DE is
 used). Of course, you could specify it in both files.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Encoding character set
 
@@ -263,9 +260,6 @@ called
 For 5.0.6 and older, you could use the approach described in the
 following section to load multiple properties files.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Loading Labels from Jar
 
@@ -369,9 +363,6 @@ the properties, and `module-1.properties` and `module-2.properties` are
 two modules of messages you provide. Then, you configure it in
 `WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_org_zkoss_zk_ui_util_webappinit_interface).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Reload Labels Dynamically
 

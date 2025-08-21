@@ -100,9 +100,6 @@ you want to retrieve component, you may use
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Communication among iFrames without Server Push
 

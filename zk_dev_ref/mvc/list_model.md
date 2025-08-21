@@ -42,9 +42,6 @@ the default implementations, which provide a set of utilities for
 handling data listeners transparently. We will talk about it later in
 [\#Notify for Data Updates](#Notify_for_Data_Updates).
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Default ListModel Implementation
 
@@ -248,9 +245,6 @@ All default implementations, including
 your implementation generally doesn't need to handle the selection if it
 extends one of these classes.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Sorting
 

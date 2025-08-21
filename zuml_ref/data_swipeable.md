@@ -46,9 +46,6 @@ content with client attribute[^4].
 </div>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 [^1]: For more information, please refer to [ZK Component Reference Tablet Devices: Borderlayout]({{site.baseurl}}/zk_component_ref/tablet_devices/borderlayout#SwipeEvent_Support).
 

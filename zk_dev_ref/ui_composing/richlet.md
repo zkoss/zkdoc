@@ -142,9 +142,6 @@ exception will be thrown because the **main** window is already
 instantiated and associated with the first desktop created from the
 first request. We cannot assign it to the second desktop.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Map URL to a Richlet
 

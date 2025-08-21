@@ -26,9 +26,6 @@ into a TreeModel at once. Then, we suggest you to extend
 [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html), which will handle
 the data listeners transparently.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Example: In-Memory Tree with DefaultTreeModel
 
@@ -446,9 +443,6 @@ selection of the tree directly. Rather, the application shall access
 only the list model to add, remove and select data elements. Let the
 model notify the component what has been changed.
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Selection Control
 

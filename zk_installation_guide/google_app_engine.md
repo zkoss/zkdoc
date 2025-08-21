@@ -151,7 +151,7 @@ in an App Engine environment.
 
 ------------------------------------------------------------------------
 
-<references/>
+
 
 # Memory Limitation and Solutions
 

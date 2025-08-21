@@ -469,7 +469,7 @@ All source code used in this chapter can be found
 
 # Reference
 
-<references/>
+
 
 [^1]: [Unit of Work in Hibernate EntityManager User Guide](http://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html_single/#transactions-basics-uow)
 

@@ -61,9 +61,6 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 
 ![]({{site.baseurl}}/zk_dev_ref/images/st201311-tabbox.png)
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 ## Component's Value
 

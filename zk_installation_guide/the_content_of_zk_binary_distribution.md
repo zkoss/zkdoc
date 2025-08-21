@@ -37,9 +37,6 @@ This directory holds the ZK libraries
 | stateless-immutable.jar            | Custom annotation of the immutables for stateless components                           | Commercial | ZK EE only        |
 |                                    |                                                                                        |            |                   |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 #### /dist/lib/theme
 
@@ -60,9 +57,6 @@ stated explicitly, it is shipped in all distributions.
 | sapphire.jar   | Required if you want to use the Sapphire theme.        | LGPL    | All     |
 | silvertail.jar | Required if you want to use the Silvertail theme.      | LGPL    | All     |
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 #### /dist/lib/zkforge
 
@@ -87,9 +81,6 @@ stated explicitly, it is shipped in all distributions.
 - ckez.jar not shipped with the binary distribution since ZK 6.5.1. You
   could get it from its [GitHub repository](https://github.com/zkoss/zkckeditor/releases)
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 #### /dist/lib/ext
 

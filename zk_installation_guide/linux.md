@@ -18,9 +18,6 @@ sudo apt-get install openjdk-6-jre
 sudo /etc/init.d/tomcat6 restart
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # Jaspserreport
 

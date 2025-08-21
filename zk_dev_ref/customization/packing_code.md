@@ -50,9 +50,6 @@ except only a subset of configurations is allowed. Here is a sample
 </config>
 ```
 
-> ------------------------------------------------------------------------
->
-> <references/>
 
 # How to Initialize a JAR File
 

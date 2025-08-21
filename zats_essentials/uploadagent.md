@@ -35,7 +35,7 @@ below:
 
 **Notes**
 
-<references/>
+
 
 ## Upload a Single File
 
@@ -85,7 +85,7 @@ public void test() throws Exception {
 
 **Notes**
 
-<references/>
+
 
 # Uploading Files with `Fileupload.get()`
 
@@ -129,7 +129,7 @@ public void test() throws Exception {
 
 **Notes**
 
-<references/>
+
 
 # Supported Components
 
