@@ -430,13 +430,13 @@ notice on your CPU, as the thread is just sleeping.
 
 Starting the sampler will show the actual "Hot Spots" like this.
 
-![]({{site.baseurl}}/zk_dev_ref/images/sampler-result.png)
+![]({{site.baseurl}}/zk_dev_ref/images/sampler_result.png)
 
 The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
 the method name.
 
-![](/zk_dev_ref/images/sampler-snapshot-combined.png)
+![](/zk_dev_ref/images/sampler_snapshot_combined.png)
 
 In the call tree we actually see what is happening inside in more
 detail:
@@ -479,7 +479,7 @@ public class LineChartComposer extends SelectorComposer {
 If we don't know where to look in the code we can use a Heap Dump to
 locate it.
 
-![]({{site.baseurl}}/zk_dev_ref/images/heap-dump.png)
+![]({{site.baseurl}}/zk_dev_ref/images/heap_dump.png)
 
 I clicked the "find" button to find the 20 biggest objects on the heap.
 The results tell us the following.
@@ -493,7 +493,7 @@ If it wasn't that obvious like here, one can always switch to the
 "Instances" view and check which objects are referring to this big
 array.
 
-![]({{site.baseurl}}/zk_dev_ref/images/heap-dump-instances.png)
+![]({{site.baseurl}}/zk_dev_ref/images/heap_dump_instances.png)
 
 Also here we could trace the references up to the Desktop/Session
 objects.
@@ -650,14 +650,14 @@ When using Sampler or Profiler, it's better to specify **Profile only
 packages** in the settings. Therefore, it will only show those classes
 you concern instead of irrelevant classes.
 
-![]({{site.baseurl}}/zk_dev_ref/images/profile-only-package.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/profile_only_package.jpg)
 
 ## Locate Hot Spots
 
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![]({{site.baseurl}}/zk_dev_ref/images/hotspots.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/Hotspots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -665,4 +665,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![]({{site.baseurl}}/zk_dev_ref/images/forwardcall.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/Forwardcall.jpg)
