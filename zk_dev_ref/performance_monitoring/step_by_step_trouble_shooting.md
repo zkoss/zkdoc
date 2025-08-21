@@ -24,16 +24,16 @@ causes easily.
 
 ![](/zk_dev_ref/images/chrome_developer_tools_network.png)
 
-Developer tools - Net(work) :  
-* Chrome -\> \[F12\] / \[CTRL + SHIFT + I\]
-* Firefox -\> \[CTRL + SHIFT + Q\]
+Developer tools > Network :  
+* Chrome -> F12 / CTRL + SHIFT + I
+* Firefox -> F12
 
 Investigating the network traffic by following the questions below the
 biggest problem area(s) should become apparent after a few minutes:
 
 **1. Are there one or more long-running requests?**
 
-NO → [\#Client Side Issue](#Client_Side_Issue)
+NO → [#Client Side Issue](#Client_Side_Issue)
 
 YES
 
@@ -41,8 +41,8 @@ YES
 
 **2. Is it a static resource?**
 
-YES (js, css, images...) → check [\#ZK Server Configuration](#ZK_Server_Configuration) (debug / cache /
-compression) → STILL SLOW → [\#Network Issue](#Network_Issue)
+YES (js, css, images...) → check [#ZK Server Configuration](#ZK_Server_Configuration) (debug / cache /
+compression) → STILL SLOW → [#Network Issue](#Network_Issue)
 
 NO (dynamic request into ZK application)
 
@@ -67,9 +67,9 @@ Application)?**
 - test ping / trace route to different servers
 - test dns lookup timing
 
-YES → [\#Network Issue](#Network_Issue)
+YES → [#Network Issue](#Network_Issue)
 
-NO → [\#Server Side Issue](#Server_Side_Issue) (application
+NO → [#Server Side Issue](#Server_Side_Issue) (application
 takes long time to accept connection, or even times out)
 
 **SENDING**
@@ -78,7 +78,7 @@ takes long time to accept connection, or even times out)
 **3.b) Is the request unreasonably big?** (rare case, usually due to an
 upload (reasonable), or form posting a lot of data)
 
-YES → [\#Client Side Issue](#Client_Side_Issue)
+YES → [#Client Side Issue](#Client_Side_Issue)
 
 NO
 
@@ -95,20 +95,20 @@ NO
 - e.g. try upload the same amount of data to the server via ftp/scp to
   check possible upload speed
 
-YES → [\#Network Issue](#Network_Issue)
+YES → [#Network Issue](#network-Issue)
 
-NO → [\#Server Side Issue](#Server_Side_Issue) (application
+NO → [#Server Side Issue](#server-side-issue) (application
 server receiving request data slowly)
 
-**WAITING** → [\#Server Side Issue](#Server_Side_Issue)
-(application server taking long time to prepare response)
+**WAITING** → [#Server Side Issue](#server-side-issue)
+(application server taking a long time to prepare response)
 
 **Content Download**
 
   
 **3.d) Is the response unreasonably big?**
 
-YES → [\#ZK Server Configuration](#ZK_Server_Configuration)
+YES → [#ZK Server Configuration](#zk-server-configuration)
 (render on demand / compression)
 
 NO
@@ -122,7 +122,7 @@ NO
 
 YES → ask your administrator to fix it ;)
 
-NO → [\#Server Side Issue](#Server_Side_Issue) (appserver
+NO → [#Server Side Issue](#server-side-issue) (appserver
 sending response data slowly)
 
 ## Client Side Issue
@@ -140,11 +140,11 @@ different browser types / versions. Other factors are:
 - graphics card speed
 
 So it is good to compare the client performance on different computers
-with different browsers, to identify the configuration causing the
+with different browsers to identify the configuration causing the
 issue.
 
 If client performance among configurations / browsers is equally bad,
-the issue will more likely be found in the Rendering area → [\#Client Side Profiling](#Client_Side_Profiling)
+the issue will more likely be found in the Rendering area → [#Client Side Profiling](#Client_Side_Profiling)
 
 Once you identified the client side rendering takes very long, check the
 size of the response, if the Client engine needs to render a lot (e.g. a
@@ -157,7 +157,7 @@ or
 
 Performance degrading over time when using the application (while
 network and server timings remain constant) might indicate a client side
-memory leak → [\#Client Memory Issue](#Client_Memory_Issue)
+memory leak → [#Client Memory Issue](#Client_Memory_Issue)
 
 ### Client Side Profiling
 
@@ -452,10 +452,9 @@ detail:
 Memory issues come in many different flavors:
 
 The most common ones are explained here
-<http://plumbr.eu/blog/understanding-java-lang-outofmemoryerror>.
+http://plumbr.eu/blog/understanding-java-lang-outofmemoryerror.
 
-Ensure your physical memory, and the memory assigned to the JVM are
-sufficient.
+Ensure your physical memory, and the memory assigned to the JVM are sufficient.
 
 #### Memory Leak
 
@@ -567,8 +566,8 @@ Or you can access Statistics in Java code:
 
 related documentation
 
-- <(/zk_config_ref/The_org.zkoss.zk.ui.util.Monitor_interface>
-- <http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Statistic.html>
+- [The org.zkoss.zk.ui.util.Monitor interface](/zk_config_ref/The_org.zkoss.zk.ui.util.Monitor_interface)
+- http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Statistic.html
 
 If you see more Sessions than you expect, your session/desktop timeout
 might be too long, or too many desktops give you a hint that the desktop
