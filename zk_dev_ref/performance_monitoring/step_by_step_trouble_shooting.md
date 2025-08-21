@@ -649,14 +649,14 @@ When using Sampler or Profiler, it's better to specify **Profile only
 packages** in the settings. Therefore, it will only show those classes
 you concern instead of irrelevant classes.
 
-![]({{site.baseurl}}/zk_dev_ref/images/profile_only_package.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/Profile-only-package.jpg)
 
 ## Locate Hot Spots
 
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![]({{site.baseurl}}/zk_dev_ref/images/Hotspots.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/HotSpots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -664,4 +664,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Forwardcall.jpg)
+![]({{site.baseurl}}/zk_dev_ref/images/ForwardCall.jpg)
