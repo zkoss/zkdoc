@@ -13,7 +13,7 @@ calendars among versions.
   * Previously, only single-day items showed start time in the header, while multi-day items didn't.
 * **Display a CalendarItem's Title**: Display a CalendarItem's title instead of its description (previous version). The design aligns to Google Calendar, which is familiar to most end-users.
 * **Easy to customize Calendar item's Display**: Each item now is rendered based on a javascript template and a header function renders a header. So app devs can override them to customize display more easily than the previous version. This allows for flexibility in user preferences regarding the calendar's appearance.
-* **Revert to Old Display**: For those who prefer the previous display format from version 3.1.2, [https://github.com/zkoss/zkcalendar/blob/master/essentials/src/main/webapp/revertItemDisplay312.js a JavaScript code snippet is provided] to revert the changes, allowing users to customize their experience according to their preferences.
+* **Revert to Old Display**: For those who prefer the previous display format from version 3.1.2, [a JavaScript code snippet is provided](https://github.com/zkoss/zkcalendar/blob/master/essentials/src/main/webapp/revertItemDisplay312.js) to revert the changes, allowing users to customize their experience according to their preferences.
 
 # 3.0.0
 
