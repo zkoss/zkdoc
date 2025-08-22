@@ -160,7 +160,7 @@ zk.afterLoad("zul.wgt", function () {
 ```
 
 Notice that
-[\_global\_.zk#afterLoad(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterLoad(_global_.String, _global_.Function))
+[_global_.zk#afterLoad(_global_.String, _global_.Function)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.zk.html#afterLoad(_global_.String, _global_.Function))
 is used to defer the declaration of `foo.MyButton` until `zul.wgt` has
 been loaded.
 
@@ -174,18 +174,9 @@ include it to take effect on widgets.
 If you just want to override widgets on some pages, you can use one of
 the following:
 
-- \[\[{{site.baseurl}}/zk_component_ref/script\|
-  <script>
-
-  component\]\]
-- HTML `
-  <script>
-
-  `
-- \[\[ZUML Reference/ZUML/Processing Instructions/script\|
-  <?script ?>
-
-  directive\]\]
+- [<script> component]({{site.baseurl}}/zk_component_ref/script)
+- HTML `<script>`
+- [<?script ?> directive](ZUML Reference/ZUML/Processing Instructions/script)
 
 ## Application Scope
 
