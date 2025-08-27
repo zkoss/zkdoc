@@ -16,7 +16,7 @@ developer tool. For example, in Chrome, press F12 to open it, and select
 the Network tab. When you interact with a ZK component and trigger an
 event, a request with the path 'zkau' will be sent as shown below:
 
-![](/zk_dev_ref/images/AuRequest.png)
+![](/zk_dev_ref/images/aurequest.png)
 
 - dtid: desktop ID
 - cmd_0: event name
@@ -50,7 +50,7 @@ content will include these commands. You can use the developer tool to
 inspect if the AU response content matches the implementation of your
 event listener.
 
-![](/zk_dev_ref/images/AuResponse.png)
+![](/zk_dev_ref/images/auresponse.png)
 
 - The response above contains no commands for zk widgets. Nothing is
   updated.
