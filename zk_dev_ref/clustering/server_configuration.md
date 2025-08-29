@@ -7,7 +7,7 @@ There is no standard approach.
 
 # Load Balancer (Required)
 
-Be sure to configure [sticky session](http://wiki.metawerx.net/wiki/StickySessions) on your load
+Be sure to configure [sticky session](https://tomcat.apache.org/connectors-doc/common_howto/loadbalancers.html) on your load
 balancer because ZK only works correctly on this setting.
 
 Check ZK DesktopImpl.java, you will see there are lots of `synchronized`
