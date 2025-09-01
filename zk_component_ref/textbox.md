@@ -93,7 +93,7 @@ Username: <textbox/>
 Password: <textbox type="password"/>
 ```
 
-`{% include version-badge.html version="6.5.0" %}`
+{% include version-badge.html version="6.5.0" %}
 
 The `type` attribute support HTML 5 defined types `tel`, `email` and `url`.
 

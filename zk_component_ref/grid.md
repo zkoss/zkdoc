@@ -58,7 +58,7 @@ declaration. For more details see the section on Axillary Headers below.
      </zscript>
      <grid>
          <columns sizable="true">
-             <column label="Type" sortAscending="&#36;{asc}" sortDescending="&#36;{dsc}" width="50px"/>
+             <column label="Type" sortAscending="${asc}" sortDescending="${dsc}" width="50px"/>
              <column label="Content"/>
          </columns>
          <rows>
@@ -349,7 +349,7 @@ naming *.z-row-cnt* to *.z-row-content*. {% include version-badge.html version="
 
 # Sort
 
-## Sorting
+## Sorting by Comparator
 
 Grids support the direct sorting of rows. To enable ascending order
 sorting for a particular column, you need to assign a
@@ -403,7 +403,7 @@ The `sortDirection` property controls whether to show an icon to
 indicate the order of a particular column. If rows are sorted before
 being added to the grid, you should set this property explicitly.
 
-<column sortDirection="ascending"/>
+`<column sortDirection="ascending"/>`
 
 It is then maintained automatically by the grid as long as you assign
 the comparators to the corresponding column.
@@ -528,7 +528,7 @@ new ListDataEvent(this, ListDataEvent.CONTENTS_CHANGED, -1, -1)
 
 ## Scroll to a Specific Item
 
-`{% include version-badge.html version="8.5.2" %}`
+{% include version-badge.html version="8.5.2" %}
 
 You can call `scrollToIndex(int)` to scroll a Grid to a specific item,
 and this even works under ROD.
@@ -1058,7 +1058,7 @@ supported in Grouping Grid, and Listbox with the
     </zscript>
     <grid>
         <columns sizable="true">
-            <column label="Brand" sortAscending="&#36;{asc}" sortDescending="&#36;{dsc}"/>
+            <column label="Brand" sortAscending="${asc}" sortDescending="${dsc}"/>
             <column label="Processor Type" width="150px"/>
             <column label="Memory (RAM)" width="120px"/>
             <column label="Price"  width="100px"/>
@@ -1110,7 +1110,7 @@ supported in Grouping Grid, and Listbox with the
 </zk>
 ```
 
-`*`[`Available in ZK PE and EE only`](http://www.zkoss.org/product/edition.dsp)  
+`*`[Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)  
 
 For more information, please take a look at these smalltalks,
 
@@ -1204,15 +1204,15 @@ not paging
 It specifies whether to enable autohide property for internal paging
 components.
 
-[^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
+[^1]: The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as [a library property]({{site.baseurl}}/zk_config_ref/the_library_property_element) to enable or disable it for the whole application.`
 
-[^2]: `Same as above.`
+[^2]: Same as above.
 
-[^3]: `Same as above.`
+[^3]: Same as above.
 
-[^4]: `Same as above.`
+[^4]: Same as above.
 
-[^5]: `Same as above.`
+[^5]: Same as above.
 
 
 # Supported Events

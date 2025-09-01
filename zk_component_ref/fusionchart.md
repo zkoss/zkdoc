@@ -340,7 +340,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ## Funnel Chart
 
-`{% include version-badge.html version="6.5.3" %}`
+{% include version-badge.html version="6.5.3" %}
 
 ![](/zk_component_ref/images/Funnelchart.png)
 
