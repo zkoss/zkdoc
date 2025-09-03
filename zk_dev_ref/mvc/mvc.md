@@ -10,23 +10,20 @@ maintain, but also the performance is great.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/mvc.png)
 
-<div style="margin: 3px 3px 0; padding: 0px 30px; border-radius: 5px; border:1px solid #999;">
 
-**Alternative: MVVM**
+## Alternative: MVVM
 
 MVVM represents **Model**, **View**, and **ViewModel**. MVVM is
-identical to the [Presentation Model](http://martinfowler.com/eaaDev/PresentationModel.html) introduced
+identical to the [Presentation Model](https://martinfowler.com/eaaDev/PresentationModel.html) introduced
 by Martin Fowler. It is a variant of the MVC design pattern. Unlike MVC,
 the control logic is implemented in a POJO class called the *view
 model*. It provides the further abstraction that a view model assumes
 *nothing* about any visual element in the view. It thus avoids mutual
 programming ripple effects between UI and the view model. On the other
 hand, some developers might find it not as intuitive as MVC. For more
-information, please refer to
-\[<http://books.zkoss.org/zk-mvvm-book/9.5/index.html>\| MVVM
-Reference\].
+information, please refer to [MVVM Reference](https://docs.zkoss.org/zk_mvvm_ref/intro/introduction_of_mvvm).
 
-</div>
+
 
 # View
 
