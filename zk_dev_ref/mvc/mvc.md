@@ -21,7 +21,7 @@ model*. It provides the further abstraction that a view model assumes
 *nothing* about any visual element in the view. It thus avoids mutual
 programming ripple effects between UI and the view model. On the other
 hand, some developers might find it not as intuitive as MVC. For more
-information, please refer to [MVVM Reference](https://docs.zkoss.org/zk_mvvm_ref/intro/introduction_of_mvvm).
+information, please refer to [MVVM Reference](/zk_mvvm_ref/intro/introduction_of_mvvm).
 
 
 

@@ -1,17 +1,17 @@
-# Client-side selection of elements and widgets
+# Locating elements and widgets
 
 ZK client-side architecture is based on HTML DOM nodes and JavaScript
 objects (ZK Widgets). The widget exists in the browser JavaScript
 context and is a client-side representation of a Server-side Java ZK
 component. Some client-side scenarios may require accessing the DOM node
 or the widget representing a specific UI entity. For example, when
-creating an automated test on client side, selecting the right DOM node
+creating an automated test at the client-side, selecting the right DOM node
 is useful to check that the browser state is correct, and selecting a
 widget can be useful to read states or trigger workflows.
 
-More technical information are available in the [ZK client API](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/jq.html).
+More technical information is available in the [ZK client API](https://www.zkoss.org/javadoc/latest/jsdoc/_global_/jq.html).
 
-## jQuery selectors in pure JavaScript
+## jQuery selectors
 
 The [jQuery selectors](https://api.jquery.com/category/selectors/) can
 target one or multiple DOM elements using the selector syntax.
