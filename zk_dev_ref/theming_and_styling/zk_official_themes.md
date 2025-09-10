@@ -14,6 +14,7 @@ for each ZK version.
 - Theme Pack Compact contains 23 compact themes.
 
 # Trendy Design Themes (Deprecated): Breeze, Sapphire, Silvertail
+{% include DeprecatedSince.md version="10.0.0" %}, use [compact theme like iceblue_c](#compact-theme-name) instead.
 
 Trendy design emphasizes on gradient background, rounded corners and
 shadow effects. **Breeze** is a greyish based theme that supports
@@ -22,14 +23,23 @@ desktop only and **silvertail** is a silverish based theme that also
 support desktop only.
 
 See below to take a quick view at the look and feel of Breeze, Sapphire
-and Silvertail, click image to view original size.
+and Silvertail, click image to view the original size.
 
-![](/zk_dev_ref/images/breeze-look-and-feel.png) 
-![](/zk_dev_ref/images/sapphire-look-and-feel.png)
-![](/zk_dev_ref/images/silvertail-look-and-feel.png)
+**Breeze**
+
+![](/zk_dev_ref/images/breeze_look_and_feel.png) 
+
+**Sapphire**
+
+![](/zk_dev_ref/images/sapphire_look_and_feel.png)
+
+**Silvertail**
+
+![](/zk_dev_ref/images/silvertail_look_and_feel.png)
 
 
 # Flat Design Theme (Deprecated): Atlantic
+{% include DeprecatedSince.md version="10.0.0" %}, use [ZK Theme Pack](#zk-theme-pack) instead.
 
 On the contrary, flat design replaces skeuomorphism (gradient
 background, rounded corner and shadow effect) with simplicity and visual
@@ -40,7 +50,7 @@ supports both desktop and tablets.
 See below to take a quick view at the look and feel of **Atlantic**,
 click image to view original size.
 
-![](/zk_dev_ref/images/atlantic-look-and-feel.png)
+![](/zk_dev_ref/images/atlantic_look_and_feel.png)
 
 ## Not to Import Google Font
 
