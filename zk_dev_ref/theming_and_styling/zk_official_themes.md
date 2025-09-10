@@ -24,12 +24,10 @@ support desktop only.
 See below to take a quick view at the look and feel of Breeze, Sapphire
 and Silvertail, click image to view original size.
 
-![](/zk_dev_ref/images/Breeze-look-and-feel.png) 
-![](/zk_dev_ref/images/Sapphire-look-and-feel.png)
-![](/zk_dev_ref/images/Silvertail-look-and-feel.png)
+![](/zk_dev_ref/images/breeze-look-and-feel.png) 
+![](/zk_dev_ref/images/sapphire-look-and-feel.png)
+![](/zk_dev_ref/images/silvertail-look-and-feel.png)
 
-<div style="clear: both">
-</div>
 
 # Flat Design Theme (Deprecated): Atlantic
 
@@ -88,7 +86,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![]({{site.baseurl}}/zk_dev_ref/images/ZK85_Theme_Mix.png)
+![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_mix.png)
 
 ## Accessibility-ready themes
 
@@ -98,7 +96,7 @@ theme, you will also need to include the za11y (zk-accessibility) module
 to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility/accessibility)
 for more information.
 
-![ left \| thumb \| 269px \| WCAG (Blue)](wcag_blue.png)
+![](/zk_dev_ref/images/wcag_blue.png)
 
 <div style="clear: both">
 </div>
@@ -126,7 +124,6 @@ layout. Learn more at [8.6 New Features](https://www.zkoss.org/wiki/Small_Talks/
 3.  Apply preferred theme by a library property in **zk.xml** file under
     "**projectName/WEB-INF**" folder
 
-<div style="margin-left: 2em">
 
 ```xml
 <!-- zk.xml -->
@@ -136,7 +133,6 @@ layout. Learn more at [8.6 New Features](https://www.zkoss.org/wiki/Small_Talks/
 </library-property>
 ```
 
-</div>
 
 ## Theme Artifact
 
