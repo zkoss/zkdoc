@@ -2,10 +2,10 @@
 title: "Native"
 ---
 
-`Name: native`  
-`Namespace: `[`http://www.zkoss.org/2005/zk/native`](http://www.zkoss.org/2005/zk/native)  
-`Namespace shortcut: native`  
-`Java: `[`org.zkoss.zk.ui.metainfo.LanguageDefinition`#NATIVE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/ui/metainfo/LanguageDefinition`.html#NATIVE_NAMESPACE)
+Name: native  
+Namespace URI: http://www.zkoss.org/2005/zk/native  
+Namespace shortcut: native  
+JavaDoc: [org.zkoss.zk.ui.metainfo.LanguageDefinition#NATIVE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#NATIVE_NAMESPACE)
 
 It is the reserved namespace for specifying native elements. A native
 element represents a native tag at the client. For browsers, a native

@@ -2,11 +2,11 @@
 title: "XML"
 ---
 
-`Name: xml`  
-`File Extensions: xml`  
-`Namespace: `[`http://www.zkoss.org/2007/xml`](http://www.zkoss.org/2007/xml)  
-`Namespace shortcut: xml`  
-`Device: XML`  
+Name: xml  
+File Extensions: xml  
+Namespace URI: http://www.zkoss.org/2007/xml  
+Namespace shortcut: xml  
+Device: XML  
 {% include edition-availability.html edition="ee" %}
 
 XML component sets. It is used to generate (static) XML document, such
