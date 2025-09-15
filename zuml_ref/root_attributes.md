@@ -3,8 +3,9 @@ title: "root-attributes"
 ---
 
 **Syntax:**
-
+```xml
 <?root-attributes ''any-name1''="''any-value2''" ''any-name2''="''any-value2''"?>
+```
 
 It specifies the additional attributes for the root element of the
 generated output, which depends on the device types.

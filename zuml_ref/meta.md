@@ -3,9 +3,10 @@ title: "meta"
 ---
 
 **Syntax:**
-
+```xml
 <?meta [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]
     [if="..."] [unless="..."]?>
+```
 
 {% include version-badge.html version="3.6.2" %}
 

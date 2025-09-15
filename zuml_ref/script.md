@@ -3,17 +3,12 @@ title: "script"
 ---
 
 **Syntax:**
-
+```xml
 <?script [type="text/javascript"] [src="''uri''"] [charset="''encoding''"]
   [content="''javascript snippet''"] [if="..."] [unless="..."]?>
+```
 
-It tells ZK to generate a `
-
-<script>
-
-`inside `
-
-<head>
+It tells ZK to generate a `<script>` inside `<head>`.
 
 `**after ZK default JavaScript and CSS files**. Thus, it can be
 used to override what is defined in ZK default JavaScript code.

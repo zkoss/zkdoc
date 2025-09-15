@@ -5,9 +5,10 @@ title: "init"
 
 
 **Syntax:**
-
+```xml
 <?init class="..." [''arg0''="..."] [''arg1''="..."] [''arg2''="..."] [''arg3''="..."]?>
 <?init zscript="..."?>
+```
 
 It defines an initiator that will be instantiated and called when the
 ZUML document is loaded.

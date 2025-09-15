@@ -3,9 +3,10 @@ title: "function-mapper"
 ---
 
 **Syntax:**
-
+```xml
 <?function-mapper class="..." 
    [''arg0''="..."] [''arg1''="..."] [''arg2''="..."] [''arg3''="..."]?>
+```
 
 Specifies the function mapper that will be used by the EL expressions to
 resolve unknown functions. The specified class must implement the

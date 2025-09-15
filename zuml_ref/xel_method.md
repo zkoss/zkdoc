@@ -5,8 +5,9 @@ title: "xel-method"
 
 
 **Syntax:**
-
+```xml
 <?xel-method prefix="..." name="..." class="..." signature="..."?>
+```
 
 Specifies an EL function that could be used in EL expressions. For
 example,

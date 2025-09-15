@@ -3,8 +3,9 @@ title: "taglib"
 ---
 
 **Syntax:**
-
+```xml
 <?tablib uri="''myURI''" prefix="''my''"?>
+```
 
 This directive is used to load a `taglib` file, which defines a set of
 static methods that can be used in EL expressions (so called EL

@@ -2,10 +2,8 @@
 title: "component"
 ---
 
-
-
 **Syntax:**
-
+```xml
 <?component name="''myName''" templateURI="''/mypath/my.zul''" ?>
 <?component name="''myName''" macroURI="''/mypath/my.zul''" [inline="true|'''false'''"]
    [apply="''composer''"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
@@ -13,15 +11,17 @@ title: "component"
    [extends="''nameOfExistComponent''"]
    [moldName="''myMoldName''"] [moldURI="/''myMoldURI''"]
    [apply="''composer''"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
+```
 
 Defines a new component in the page scope.
 
 # The by-macro Format
 
 **Syntax:**
-
+```xml
 <?component name="''myName''" macroURI="''/mypath/my.zul''"
    [apply="''composer''"] [language="xul/html"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
+```
 
 You can define a new component based on a ZUML page. It is also called
 the *macro component*. In other words, once an instance of the new

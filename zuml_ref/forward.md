@@ -5,8 +5,9 @@ title: "forward"
 
 
 **Syntax:**
-
+```xml
 <?forward uri="..." [if="..."] [unless="..."]?>
+```
 
 It specifies the URI to forward the request to, and the condition to
 decide whether to forward. If the condition is satisfied or not

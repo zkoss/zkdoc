@@ -4,8 +4,11 @@ title: "link"
 
 **Syntax:**
 
+```xml
 <?link [href="''uri''"] [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]
     [if="..."] [unless="..."]?>
+```
+
 It specifies an element that should be generated inside the `<head>`
 element. It is generated **after** ZK default JavaScript and CSS files.
 Thus, it can override ZK default CSS. Currently, only HTML-based clients

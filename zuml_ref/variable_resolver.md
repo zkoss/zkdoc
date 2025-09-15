@@ -3,9 +3,10 @@ title: "variable-resolver"
 ---
 
 **Syntax:**
-
+```xml
 <?variable-resolver class="..." 
    [''arg0''="..."] [''arg1''="..."] [''arg2''="..."] [''arg3''="..."]?>
+```
 
 Specifies the variable resolver that could be used by the `zscript`
 interpreter and the EL expressions to resolve unknown variables. The

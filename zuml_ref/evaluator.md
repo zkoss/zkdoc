@@ -2,11 +2,10 @@
 title: "evaluator"
 ---
 
-
-
 **Syntax:**
-
+```xml
 <?evaluator [name="..."] [class="..."] [import="..."]?>
+```
 
 It specifies how to evaluate XEL expressions.
 
