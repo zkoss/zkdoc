@@ -2772,7 +2772,7 @@ zuml_ref:
       - title: Native
         url: /zuml_ref/native
       - title: ZK
-        url: /zuml_ref/zk
+        url: /zuml_ref/namespaces_zk
   - title: Elements
     url: /zuml_ref/elements
     children:
@@ -2783,7 +2783,7 @@ zuml_ref:
       - title: template
         url: /zuml_ref/template
       - title: zk
-        url: /zuml_ref/zk
+        url: /zuml_ref/elements_zk
       - title: zscript
         url: /zuml_ref/zscript
   - title: Attributes
