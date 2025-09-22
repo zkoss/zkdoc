@@ -1,6 +1,6 @@
 # Component in MVC Pattern
 
-In the component perspective, Calendars is designed in MVC pattern:
+From the component perspective, Calendars is designed in the MVC pattern:
 
 - [`Calendars`](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/Calendars.html)
   (Controller): call `ContentRenderer` to render a calendar to the
@@ -40,8 +40,8 @@ You can simply create a `CalendarItem` with the default builder:
                 .build();
 ```
 
-If you don't specify the title, it displays **\[begin time - end
-time\]** at an item's header: ![](/zk_calendar_essentials/images/Calendar-item.png)
+If you don't specify the title, it displays **begin time - end
+time** at an item's header: ![](/zk_calendar_essentials/images/Calendar-item.png)
 
 If an item is shorter than half an hour, it appends the content in the
 header:
@@ -108,13 +108,12 @@ you need to:
 ```
 
 # Customizing Calendar Item Appearance
-
+{% include version-badge.html version="3.1.0" %}
 From calendar 3.1.0 and onward,
-[SimpleCalendarItem](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/impl/SimpleCalendarItem.html)
-supports sclass, style, contentStyle and headerStyle attributes.
+[SimpleCalendarItem](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/impl/SimpleCalendarItem.html) supports `sclass`, `style`, `contentStyle` and `headerStyle` attributes.
 
-the sclass attribute will add a CSS class on the top DOM node of the
-calendar item, which allow the whole element to be used in a css
+The `sclass` attribute will add the specified CSS class at DOM node of the
+calendar item (`.z-calitem`), which allow the whole element to be used in a css
 selector.
 
 ```java
@@ -122,11 +121,11 @@ selector.
 ```
 
 ```css
-    .myClass{ //selector for the whole node
-        //my-css-property: myValue;
+    .myClass{ /* selector for the whole node */
+        ...
     }
-    .myClass .z-calitem-body{ //selector for a sub-node
-        //my-css-property: myValue;
+    .myClass .z-calitem-body{ /* selector for a sub-node */
+        ...
     }
 ```
 
@@ -147,3 +146,107 @@ Before calendar 3.1.0, only the background color can be customized for
 the calendar item's main Node with the contentColor attribute, and the
 header's node with the headerColor attribute. These are deprecated after
 3.1.0, and should be replaced by style attributes.
+
+
+# Customizing Calendar Item Rendering Logic
+
+This section covers how to programmatically customize the rendering logic of calendar items, which is different from the CSS styling approach covered in the previous section. While CSS styling changes the appearance through stylesheets, rendering logic customization allows you to modify the actual content and structure of calendar items at the JavaScript widget level.
+
+Use rendering logic customization when you need to:
+- Change the text content displayed in calendar items
+- Modify the HTML structure of calendar items
+- Implement custom time formatting
+- Add dynamic content based on item properties
+
+## Understanding Calendar Item Widget Types by Mold
+{% include version-badge.html version="3.2.0" %}
+The ZK Calendar uses different JavaScript widget types depending on the mold and item duration:
+
+### Default Mold:
+- **DayItem**: Items shorter than one day
+- **DaylongItem**: Multi-day items
+
+### Month Mold:
+- **DayOfMonthItem**: Items shorter than one day
+- **DaylongOfMonthItem**: Multi-day items with clone node handling for items spanning multiple weeks
+
+Each widget type has different rendering behavior and templates optimized for their specific display context.
+
+## Key Rendering Methods to Override
+
+The main methods you can override to customize rendering are:
+
+- `getHeader()`: Controls the header text content displayed at the top of calendar items
+  - `DayItem`: Shows "title time" or "title time-range" format
+  - `DayOfMonthItem`: Shows "startTime title" format
+  - `DaylongItem`: Shows "title startTime" format
+  - `DaylongOfMonthItem`: Shows "startTime title" format
+- **TEMPLATE objects**: Control the HTML structure and layout of calendar items
+- `format()`: Controls time formatting (inherited from base Item class)
+
+## Implementation Pattern with ZK Override
+
+To safely override calendar widget behavior, use this pattern:
+
+1. Use `zk.afterLoad('calendar', function() {...})` to ensure calendar widgets are loaded before modification
+2. Use `zk.override(calendar.WidgetType.prototype, exWidget, {...})` to properly extend widget functionality
+3. Store the original widget reference in `exWidget` for potential future restoration
+
+## Common Customization Examples
+
+### Custom Header Content for Day Items
+
+```javascript
+zk.afterLoad('calendar', function() {
+    var exWidget = {};
+    zk.override(calendar.DayItem.prototype, exWidget, {
+        getHeader: function () {
+            var beginDate = this.item.zoneBd,
+                endDate = this.item.zoneEd;
+            let timeText = (endDate - beginDate < (7200000 / this.parent._timeslots)) ?
+                this.format(beginDate) :
+                this.format(beginDate) + ' - ' + this.format(endDate);
+            return `📅 ${this.item.title} ${timeText}`;
+        }
+    });
+});
+```
+
+### Custom Content Rendering
+
+```javascript
+zk.afterLoad('calendar', function() {
+    var exWidget = {};
+    zk.override(calendar.DayItem.prototype, exWidget, {
+        redraw: function (out) {
+            this.defineClassName_();
+            out.push(this.$class.TEMPLATE.main(
+                this.item.id,
+                this.domAttrs_(),
+                this.params,
+                this.getContent(), // Custom content method
+                this.getHeader(),
+                this.item.isLocked));
+        },
+        getContent: function() {
+            return `📝 ${this.item.content}`;
+        }
+    });
+});
+```
+
+### Custom Time Formatting
+
+```javascript
+zk.afterLoad('calendar', function() {
+    var exWidget = {};
+    zk.override(calendar.Item.prototype, exWidget, {
+        format: function (date) {
+            // Custom 12-hour format instead of default 24-hour
+            return zk.fmt.Date.formatDate(date, 'hh:mm a');
+        }
+    });
+});
+```
+
+Note: The `format()` method override affects all calendar item types since they inherit from the base `calendar.Item` class.
