@@ -161,6 +161,16 @@ Use rendering logic customization when you need to:
 ## Understanding Calendar Item Widget Types by Mold
 The ZK Calendar uses different JavaScript widget types depending on the mold and item duration:
 
+Their class diagram:
+```classDiagram
+zk.Widget <|-- calendar.Item
+calendar.Item <|-- calendar.DayItem
+calendar.Item <|-- calendar.DayOfMonthItem
+calendar.Item <|-- calendar.LongItem
+calendar.LongItem <|-- calendar.DaylongItem
+calendar.LongItem <|-- calendar.DaylongOfMonthItem
+```
+
 ### Default Mold:
 - **DayItem**: Items shorter than one day
 - **DaylongItem**: Multi-day items
