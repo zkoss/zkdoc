@@ -149,7 +149,7 @@ header's node with the headerColor attribute. These are deprecated after
 
 
 # Customizing Calendar Item Rendering Logic
-
+{% include version-badge.html version="3.2.0" %} 
 This section covers how to programmatically customize the rendering logic of calendar items, which is different from the CSS styling approach covered in the previous section. While CSS styling changes the appearance through stylesheets, rendering logic customization allows you to modify the actual content and structure of calendar items at the JavaScript widget level.
 
 Use rendering logic customization when you need to:
@@ -159,7 +159,6 @@ Use rendering logic customization when you need to:
 - Add dynamic content based on item properties
 
 ## Understanding Calendar Item Widget Types by Mold
-{% include version-badge.html version="3.2.0" %}
 The ZK Calendar uses different JavaScript widget types depending on the mold and item duration:
 
 ### Default Mold:
