@@ -3,8 +3,8 @@ title: "org.zkoss.zul.tree.throttleMillis"
 ---
 
 **Property:**
-
 `org.zkoss.zul.tree.throttleMillis`
+
 {% include all-scopes-available.html %}
 
 Default: `300`

@@ -5,7 +5,9 @@ title: "org.zkoss.zul.grid.initRodSize"
 **Property:**
 
 `org.zkoss.zul.grid.initRodSize`
+
 {% include all-scopes-available.html %}
+
 `Default: 100`  
 {% include version-badge.html version="5.0.8" %}
 

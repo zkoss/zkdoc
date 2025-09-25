@@ -3,7 +3,8 @@ title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay"
 ---
 
 **Property:**
-org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay
+`org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay`
+
 {% include global-scope-only.html %}
 Default:  `1000` (ms.)
 

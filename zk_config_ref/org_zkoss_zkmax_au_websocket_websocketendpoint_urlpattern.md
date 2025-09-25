@@ -2,7 +2,9 @@
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern"
 ---
 
-**Property:** org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern
+**Property:** 
+`org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern`
+
 {% include global-scope-only.html %}
 Default:  `/zkwm`
 

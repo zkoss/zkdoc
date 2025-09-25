@@ -5,6 +5,7 @@ title: "org.zkoss.zul.Filedownload.contentTypeAsIs"
 **Property:**
 
 `org.zkoss.zul.Filedownload.contentTypeAsIs`
+
 {% include global-scope-only.html %}
 Default:  `false`
 

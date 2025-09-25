@@ -5,6 +5,7 @@ title: "org.zkoss.zul.grid.autohidePaging"
 **Property:**
 
 `org.zkoss.zul.grid.autohidePaging`
+
 {% include all-scopes-available.html %}
 Default: `true`  
 {% include version-badge.html version="7.0.1" %}

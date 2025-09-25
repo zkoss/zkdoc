@@ -3,8 +3,8 @@ title: "org.zkoss.zul.borderlayout.animation.disabled"
 ---
 
 **Property:**
-
 `org.zkoss.zul.borderlayout.animation.disabled`
+
 {% include global-scope-only.html %}
 Default: `false`  
 {% include version-badge.html version="5.0.8" %}

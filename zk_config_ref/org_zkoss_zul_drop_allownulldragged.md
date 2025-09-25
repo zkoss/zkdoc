@@ -3,6 +3,7 @@ title: "org.zkoss.zul.drop.allowNullDragged"
 ---
 
 **Property:** org.zkoss.zul.drop.allowNullDragged
+
 {% include global-scope-only.html %}
 Default:  `false`
 

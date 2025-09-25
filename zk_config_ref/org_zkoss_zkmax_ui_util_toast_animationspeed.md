@@ -5,7 +5,9 @@ title: "org.zkoss.zkmax.ui.util.Toast.animationSpeed"
 **Property:**
 
 `org.zkoss.zkmax.ui.util.Toast.animationSpeed`
+
 {% include global-scope-only.html %}
+
 Default: `500`  
 {% include version-badge.html version="9.0.0" %}
 

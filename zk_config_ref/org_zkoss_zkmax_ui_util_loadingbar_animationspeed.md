@@ -3,8 +3,8 @@ title: "org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed"
 ---
 
 **Property:**
-
 `org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed`
+
 {% include global-scope-only.html %}
 Default: `600`  
 {% include version-badge.html version="9.0.0" %}

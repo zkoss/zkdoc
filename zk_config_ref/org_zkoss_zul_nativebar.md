@@ -7,10 +7,11 @@ title: "org.zkoss.zul.nativebar"
 `org.zkoss.zul.nativebar `
 
 {% include all-scopes-available.html %}
-`For all browsers - mobile and desktop. Default:true`  
+
+For all browsers - mobile and desktop. Default:`true`  
 {% include version-badge.html version="8.0.3" %}
 
-`For mobile browsers. Default:false`  
+For mobile browsers. Default:`false`  
 {% include version-badge.html version="7.0.4" %}
 
 `Default: true`  

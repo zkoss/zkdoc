@@ -5,6 +5,7 @@ title: "org.zkoss.zkmax.ui.comet.async.disabled"
 **Property:**
 
 `org.zkoss.zkmax.ui.comet.async.disabled`
+
 {% include global-scope-only.html %}
 Default:  `auto`
 
