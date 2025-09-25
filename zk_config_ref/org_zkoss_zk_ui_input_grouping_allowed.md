@@ -3,10 +3,10 @@ title: "org.zkoss.zk.ui.input.grouping.allowed"
 ---
 
   
-`Property:`  
+Property:  
 `org.zkoss.zk.ui.input.grouping.allowed`
 
-(at page scope)
+{% include all-scopes-available.html %}
 
 Default:  `true`
 

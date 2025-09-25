@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.composer.autowire.xel"
 **Property:**
 
 `org.zkoss.zk.ui.composer.autowire.xel`
-
+{% include global-scope-only.html %}
 Default: true` (it is default to `false` in 6.0)`
 
 It specifies whether

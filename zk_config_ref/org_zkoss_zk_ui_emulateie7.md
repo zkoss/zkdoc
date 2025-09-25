@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.EmulateIE7"
 **Property:**
 
 `org.zkoss.zk.ui.EmulateIE7`
-
+{% include global-scope-only.html %}
 Default: `false`
 
 `[dropped in 9.0]`

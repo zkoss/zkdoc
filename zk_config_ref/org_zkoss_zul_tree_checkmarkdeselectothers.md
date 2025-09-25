@@ -5,7 +5,7 @@ title: "org.zkoss.zul.tree.checkmarkDeselectOthers"
 **Property:**
 
 `org.zkoss.zul.tree.checkmarkDeselectOthers`
-
+{% include all-scopes-available.html %}
 Default: `false`  
 {% include version-badge.html version="5.0.5" %}
 

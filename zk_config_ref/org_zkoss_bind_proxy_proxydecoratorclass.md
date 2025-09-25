@@ -6,6 +6,8 @@ title: "org.zkoss.bind.proxy.ProxyDecoratorClass"
 
 `org.zkoss.bind.proxy.ProxyDecoratorClass`
 
+{% include global-scope-only.html %}
+
 Default:  `none`
 
 It specifies the name of the class used to provide an enhancement for

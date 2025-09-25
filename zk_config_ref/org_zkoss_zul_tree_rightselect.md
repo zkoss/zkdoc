@@ -5,8 +5,8 @@ title: "org.zkoss.zul.tree.rightSelect"
 **Property:**
 
 `org.zkoss.zul.tree.rightSelect`
-
-`Default: true`  
+{% include all-scopes-available.html %}
+Default: `true`  
 {% include version-badge.html version="5.0.5" %}
 
 If a tree's checkmark

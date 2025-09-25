@@ -2,7 +2,7 @@
 
 `org.zkoss.model.selectiveComponentUpdate.enable`
 
-{% include NestedLibraryProperty.md %}
+{% include all-scopes-available.html  %}
 
 Default:  `false`
 

@@ -3,8 +3,8 @@ title: "org.zkoss.zk.moment.timezone.path"
 ---
 
 **Property:** org.zkoss.zk.moment.timezone.path
-
-`Default: empty (default data would be loaded)`
+{% include global-scope-only.html %}
+Default: `empty` (default data would be loaded)
 
 We start to use [moment.js, moment-timezone.js](https://momentjs.com/)
 to support our client widgets of

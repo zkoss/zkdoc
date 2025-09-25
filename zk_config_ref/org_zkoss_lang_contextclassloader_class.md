@@ -6,6 +6,8 @@ title: "org.zkoss.lang.contextClassLoader.class"
 
 `org.zkoss.lang.contextClassLoader.class`
 
+{% include global-scope-only.html %}
+
 Default:  `none` (it implies `Thread.currentThread().getContextClassLoader()`)
 
 It specifies the name of the class used to provide the customized

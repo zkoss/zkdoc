@@ -6,7 +6,7 @@ title: "org.zkoss.zkmax.touch.disabled"
 
 `org.zkoss.zkmax.touch.disabled`
 
-{% include GlobalLibraryProperty.html %}
+{% include all-scopes-available.html %}
 
 Default:  `false`
 

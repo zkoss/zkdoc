@@ -5,8 +5,8 @@ title: "org.zkoss.zul.tree.maxRodPageSize"
 **Property:**
 
 `org.zkoss.zul.tree.maxRodPageSize`
-
-`Default: 1`
+{% include all-scopes-available.html %}
+Default: `1`
 
 Specifies how many pages (of treeitems) to keep rendered in memory (on
 the server side) when navigating the tree using pagination. It is used

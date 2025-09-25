@@ -6,6 +6,8 @@ title: "org.zkoss.bind.DebuggerFactory.enable"
 
 `org.zkoss.bind.DebuggerFactory.enable`
 
+{% include global-scope-only.html %}
+
 Default: false
 
 Turn on to enable log ZK Bind debugging information. It will print lots

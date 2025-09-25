@@ -6,6 +6,8 @@ title: "org.zkoss.web.servlet.http.URLEncoder"
 
 `org.zkoss.web.servlet.http.URLEncoder`
 
+{% include global-scope-only.html %}
+
 Default: `javax.servlet.http.HttpServletResponse.encodeURL`
 
 It specifies the class used to encode URL by including the session ID

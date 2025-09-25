@@ -5,8 +5,8 @@ title: "org.zkoss.zul.progressbox.position"
 **Property:**
 
 `org.zkoss.zul.progressbox.position`
-
-`Default: left, top`
+{% include all-scopes-available.html %}
+Default: `left, top`
 
 It specifies how to display the progress box at the client. The progress
 box is a message used to indicate the AU requests being processed by the

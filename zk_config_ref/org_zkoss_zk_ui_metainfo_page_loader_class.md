@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.metainfo.page.Loader.class"
 **Property:**
 
 `org.zkoss.zk.ui.metainfo.page.Loader.class`
-
+{% include global-scope-only.html %}
 Default:  `none`
 
 It specifies the name of the class used to load the page definitions.

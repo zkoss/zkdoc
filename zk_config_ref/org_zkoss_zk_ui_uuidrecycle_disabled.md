@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.uuidRecycle.disabled"
 **Property:**
 
 `org.zkoss.zk.ui.uuidRecycle.disabled `
-
+{% include global-scope-only.html %}
 Default:  `false` (i.e., UUID recycle is enabled)
 {% include version-badge.html version="5.0.3" %}
 It specifies whether to disable the recycling of UUID. By recycling UUID it will reduce the memory use of the browser. It is enabled by default.

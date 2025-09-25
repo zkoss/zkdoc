@@ -3,7 +3,7 @@ title: "preserve-all-blank"
 ---
 
 **Property:** preserve-all-blank
-
+{% include global-scope-only.html %}
 `Default: true`  
 {% include version-badge.html version="8.0.0" %}
 

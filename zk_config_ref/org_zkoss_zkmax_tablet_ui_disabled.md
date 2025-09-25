@@ -5,7 +5,7 @@ title: "org.zkoss.zkmax.tablet.ui.disabled"
 **Property:**
 
 `org.zkoss.zkmax.tablet.ui.disabled`
-
+{% include global-scope-only.html %}
 Default:  `false`
 
 It specifies whether to disable the tablet UI.

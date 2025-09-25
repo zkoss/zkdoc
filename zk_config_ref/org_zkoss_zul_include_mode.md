@@ -5,9 +5,9 @@ title: "org.zkoss.zul.include.mode"
 **Property:**
 
 `org.zkoss.zul.include.mode`
-
-`Default: auto (5.0)`  
-`Default: defer (3.x)`  
+{% include global-scope-only.html %}
+Default: `auto` (5.0)  
+Default: `defer` (3.x)  
 {% include version-badge.html version="3.6.2" %}
 
 It specifies the default mode of the `include` component. In ZK 3 and

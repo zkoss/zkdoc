@@ -7,6 +7,7 @@ title: "org.zkoss.bind.appValidators"
 `org.zkoss.bind.appValidators`
 
 Default: none
+{% include global-scope-only.html %}
 
 Register application level validators and only have one instance shared
 between all binders.

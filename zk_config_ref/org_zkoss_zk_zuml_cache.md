@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ZUML.cache"
 **Property:**
 
 `org.zkoss.zk.ZUML.cache`
-
+{% include global-scope-only.html %}
 Default:  `true`
 
 Specifies whether to cache the result of ZK ZUML files (the \*.zul files

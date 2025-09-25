@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.versionInfo.enabled"
 **Property:**
 
 `org.zkoss.zk.ui.versionInfo.enabled`
-
+{% include global-scope-only.html %}
 Default:  `true`
 
 It specifies whether to show ZK version on each page.

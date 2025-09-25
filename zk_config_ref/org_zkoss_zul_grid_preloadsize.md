@@ -5,7 +5,7 @@ title: "org.zkoss.zul.grid.preloadSize"
 **Property:**
 
 `org.zkoss.zul.grid.preloadSize `
-
+{% include all-scopes-available.html %}
 `Default: 50`  
 {% include version-badge.html version="6.0.1" %}
 

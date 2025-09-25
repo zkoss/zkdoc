@@ -4,7 +4,9 @@ title: "class.mold"
 
 **Property:**
 
-[component-full-qualified-class-name]`.mold`
+`[component-full-qualified-class-name].mold`
+
+{% include global-scope-only.html %}
 
 `Default: none`  
 {% include version-badge.html version="5.0.0" %}

@@ -5,7 +5,7 @@ title: "org.zkoss.zkmax.zul.FiledownloadListener.class"
 **Property:**
 
 `org.zkoss.zkmax.zul.FiledownloadListener.class`
-
+{% include global-scope-only.html %}
 Default:  `none`  
 {% include version-badge.html version="3.5.0" %}
 

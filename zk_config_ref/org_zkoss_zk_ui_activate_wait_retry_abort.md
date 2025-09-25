@@ -5,7 +5,7 @@ title: "org_zkoss_zk_ui_activate_wait_retry_abort"
 **Property:**
 
 `org.zkoss.zk.ui.activate.wait.retry.abort`
-
+{% include global-scope-only.html %}
 Default: `false`
 
 A library property indicates that, if the time waiting for activation is

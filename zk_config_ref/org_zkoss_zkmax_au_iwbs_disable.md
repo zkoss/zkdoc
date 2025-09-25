@@ -5,7 +5,7 @@ title: "org.zkoss.zkmax.au.IWBS.disable"
 **Property:**
 
 `org.zkoss.zkmax.au.IWBS.disable`
-
+{% include global-scope-only.html %}
 Default: `false`
 
 It specifies whether to disable InaccessibleWidgetBlockService.

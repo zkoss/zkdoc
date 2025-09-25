@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.macro.autowire.convention"
 **Property:**
 
 `org.zkoss.zk.ui.macro.autowire.convention`
-
+{% include global-scope-only.html %}
 Default:  `false`
 
 By default, the macro component will wire the UI components to the data

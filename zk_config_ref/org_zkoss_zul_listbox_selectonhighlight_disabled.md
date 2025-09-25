@@ -2,8 +2,10 @@
 title: "org.zkoss.zul.listbox.selectOnHighlight.disabled"
 ---
 
-**Property:** org.zkoss.zul.listbox.selectOnHighlight.disabled
+**Property:** 
+org.zkoss.zul.listbox.selectOnHighlight.disabled
 
+{% include all-scopes-available.html %}
 Default: `false`  
 {% include version-badge.html version="7.0.4" %}
 

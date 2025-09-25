@@ -4,9 +4,10 @@ title: "The device-config Element"
 
 **Syntax:**
 
+```xml
 <device-config>  
 </device-config>
-
+```
 `[Optional]`
 
 It is used to specify a device, or customizes an existent device. The

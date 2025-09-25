@@ -6,6 +6,8 @@ title: "org.zkoss.util.label.cache"
 
 `org.zkoss.util.label.cache`
 
+{% include global-scope-only.html %}
+
 Default:  `true`
 
 Specifies whether to cache zk-labels.properties. By default, it is

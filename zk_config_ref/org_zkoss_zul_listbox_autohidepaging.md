@@ -5,7 +5,7 @@ title: "org.zkoss.zul.listbox.autohidePaging"
 **Property:**
 
 `org.zkoss.zul.listbox.autohidePaging`
-
+{% include all-scopes-available.html %}
 `Default: true`  
 {% include version-badge.html version="7.0.1" %}
 

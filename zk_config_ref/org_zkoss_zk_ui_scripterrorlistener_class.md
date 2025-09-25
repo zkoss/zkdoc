@@ -3,7 +3,7 @@ title: "org.zkoss.zk.ui.ScriptErrorListener.class"
 ---
 
 **Property:** org.zkoss.zk.ui.ScriptErrorListener.class
-
+{% include global-scope-only.html %}
 Default:  `org.zkoss.zk.ui.script.DefaultScriptErrorListener`
 
 The default one will log the error message starting with:

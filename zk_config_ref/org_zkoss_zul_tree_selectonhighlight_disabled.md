@@ -4,6 +4,8 @@ title: "org.zkoss.zul.tree.selectOnHighlight.disabled"
 
 **Property:** org.zkoss.zul.tree.selectOnHighlight.disabled
 
+{% include all-scopes-available.html %}
+
 Default: `false`  
 {% include version-badge.html version="7.0.4" %}
 

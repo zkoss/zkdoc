@@ -5,7 +5,7 @@ title: "org.zkoss.zul.invalidateThreshold"
 **Property:**
 
 `org.zkoss.zul.invalidateThreshold`
-
+{% include all-scopes-available.html %}
 `Default: 10`  
 {% include version-badge.html version="8.0.1" %}
 
@@ -21,5 +21,3 @@ rendering changed items only.
 ...
 </listbox>
 ```
-
-# Version History

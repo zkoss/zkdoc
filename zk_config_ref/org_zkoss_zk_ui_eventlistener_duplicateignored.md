@@ -5,8 +5,8 @@ title: "org.zkoss.zk.ui.EventListener.duplicateIgnored"
 **Property:**
 
 `org.zkoss.zk.ui.EventListener.duplicateIgnored`
-
-Default:  `true``: allows one instance of event listener to be added multiple times to the listener list of a component or page.`
+{% include global-scope-only.html %}
+Default:  `true`: allows one instance of event listener to be added multiple times to the listener list of a component or page.
 
 If set to false, components and pages will check their internal listener
 list for the same instance of listener, and will return false instead of

@@ -6,10 +6,11 @@ title: "org.zkoss.bind.defaultComposer.class"
 
 `org.zkoss.bind.defaultComposer.class`
 
-`Default: org.zkoss.bind.BindComposer`
+{% include global-scope-only.html %}
 
-Auto apply the composer when a component setting "viewModel" without
-"apply".
+Default: `org.zkoss.bind.BindComposer`
+
+Auto apply the composer when a component setting `viewModel` without `apply`.
 
 For example:
 

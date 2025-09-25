@@ -5,6 +5,7 @@ title: "org.zkoss.util.label.web.location"
 **Property:**
 
 `org.zkoss.util.label.web.location`
+{% include global-scope-only.html %}
 
 Default: `/WEB-INF/zk-label.properties`  
 {% include version-badge.html version="3.6.2" %}

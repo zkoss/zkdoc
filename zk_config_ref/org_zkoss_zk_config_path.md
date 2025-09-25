@@ -5,7 +5,7 @@ title: "org_zkoss_zk_config_path"
 **Property:**
 
 `org.zkoss.zk.config.path`
-
+{% include global-scope-only.html %}
 Default: none
 
 It specifies another configuration file in addition to `WEB-INF/zk.xml`.

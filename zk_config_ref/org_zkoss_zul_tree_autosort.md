@@ -5,6 +5,7 @@ title: "org.zkoss.zul.tree.autoSort"
 **Property:**
 
 `org.zkoss.zul.tree.autoSort`
+{% include all-scopes-available.html %}
 
 Default: `false`  
 {% include version-badge.html version="5.0.7" %}

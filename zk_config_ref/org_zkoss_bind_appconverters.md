@@ -6,6 +6,8 @@ title: "org.zkoss.bind.appConverters"
 
 `org.zkoss.bind.appConverters`
 
+{% include global-scope-only.html %}
+
 Default: none
 
 Register application level converters and only have one instance shard

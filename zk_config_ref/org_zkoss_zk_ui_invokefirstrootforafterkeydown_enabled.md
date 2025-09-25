@@ -3,7 +3,7 @@ title: "org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled"
 ---
 
 **Property:**
-
+{% include global-scope-only.html %}
 `org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled`
 
 Default:  `false`

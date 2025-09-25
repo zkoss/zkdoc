@@ -6,6 +6,8 @@ title: "org.zkoss.bind.disableMethodCache"
 
 `org.zkoss.bind.disableMethodCache`
 
+{% include global-scope-only.html %}
+
 Set to disable method cache in MVVM.
 
 Notice that it is not recommended to use in production, you can use this

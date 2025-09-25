@@ -5,7 +5,7 @@ title: "org.zkoss.zul.listbox.groupSelect"
 **Property:**
 
 `org.zkoss.zul.listbox.groupSelect`
-
+{% include all-scopes-available.html %}
 Default: `false`  
 {% include version-badge.html version="5.0.7" %}
 

@@ -5,11 +5,11 @@ title: "org.zkoss.zul.listbox.preloadSize"
 **Property:**
 
 `org.zkoss.zul.listbox.preloadSize `
-
-`Default: 50`  
+{% include all-scopes-available.html %}
+Default: `50`  
 {% include version-badge.html version="6.0.1" %}
 
-`Default: 7`  
+Default: `7`  
 {% include version-badge.html version="5.0.8" %}
 
 Specifies the number of items to preload when receiving the rendering

@@ -6,6 +6,8 @@ title: "org.zkoss.zul.image.preload"
 
 `org.zkoss.zul.image.preload`
 
+{% include all-scopes-available.html %}
+
 Default: `false`  
 {% include version-badge.html version="6.5.2" %}
 

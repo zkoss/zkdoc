@@ -5,7 +5,7 @@ title: "org.zkoss.zul.listbox.rightSelect"
 **Property:**
 
 `org.zkoss.zul.listbox.rightSelect`
-
+{% include all-scopes-available.html %}
 `Default: true`
 
 If a listbox's checkmark

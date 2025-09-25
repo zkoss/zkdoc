@@ -5,6 +5,9 @@ title: "org.zkoss.bind.jsonBindingParamConverter.class"
 **Property:**
 
 `org.zkoss.bind.jsonBindingParamConverter.class`
+
+{% include global-scope-only.html %}
+
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 

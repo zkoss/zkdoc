@@ -1,5 +1,5 @@
 # Overview
-
+{% include global-scope-only.html %}
 By default, the 2-digit year start is set to 1929.
 
 However, you can configure it different, and it will affect how

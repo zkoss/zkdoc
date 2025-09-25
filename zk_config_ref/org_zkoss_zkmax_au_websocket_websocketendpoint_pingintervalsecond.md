@@ -4,8 +4,8 @@ title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond"
 
 **Property:**
 org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond
-
-Default:  `0`` (Turned off)`  
+{% include global-scope-only.html %}
+Default:  `0` (Turned off)  
 {% include version-badge.html version="9.5.0" %}
 
 Default:  `25`` (Turned on)`  

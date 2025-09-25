@@ -3,9 +3,12 @@ title: "org.zkoss.theme.atlantic.useGoogleFont.disabled"
 ---
 
 **Property:** org.zkoss.theme.atlantic.useGoogleFont.disabled
-{% include version-badge.html version="8.0.1" %}
+
+{% include global-scope-only.html %}
 
 Default: `false`
+
+{% include version-badge.html version="8.0.1" %}
 
 By default, Atlantic theme imports Google font, but some countries (e.g.
 China) are blocked from accessing that font or there is no internet

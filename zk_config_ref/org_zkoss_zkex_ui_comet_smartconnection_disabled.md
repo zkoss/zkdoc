@@ -5,7 +5,7 @@ title: "org.zkoss.zkex.ui.comet.smartconnection.disabled"
 **Property:**
 
 `org.zkoss.zkex.ui.comet.smartconnection.disabled`
-
+{% include global-scope-only.html %}
 Default:  `false`  
 {% include version-badge.html version="6.5.1" %}
 

@@ -5,8 +5,8 @@ title: "org.zkoss.zul.theme.fontSizeS"
 **Property:**
 
 `org.zkoss.zul.theme.fontSizeS`
-
-Default: 11px
+{% include global-scope-only.html %}
+Default: `11px`
 
 {% include version-badge.html version="3.6.0" %}
 

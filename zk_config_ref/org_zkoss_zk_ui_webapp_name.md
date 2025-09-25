@@ -5,7 +5,7 @@ title: "org.zkoss.zk.ui.WebApp.name"
 **Preference:**
 
 `org.zkoss.zk.ui.WebApp.name`
-
+{% include global-scope-only.html %}
 Default: `ZK`
 
 It specifies the application name. It is the return value of

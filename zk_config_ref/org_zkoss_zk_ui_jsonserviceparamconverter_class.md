@@ -5,6 +5,7 @@ title: "org.zkoss.zk.ui.jsonServiceParamConverter.class"
 **Property:**
 
 `org.zkoss.zk.ui.jsonServiceParamConverter.class`
+{% include global-scope-only.html %}
 
 Default: [`org.zkoss.zkmax.ui.JacksonConverter`](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/JacksonConverter.html)` `
 

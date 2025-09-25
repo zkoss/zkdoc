@@ -5,7 +5,7 @@ title: "org.zkoss.zkmax.ui.comet.async.disabled"
 **Property:**
 
 `org.zkoss.zkmax.ui.comet.async.disabled`
-
+{% include global-scope-only.html %}
 Default:  `auto`
 
 It specifies whether to disable the use of Servlet 3's Asynchronous

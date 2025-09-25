@@ -5,7 +5,7 @@ title: "org.zkoss.zul.tablet.meta.viewport.disabled"
 **Property:**
 
 `org.zkoss.zul.tablet.meta.viewport.disabled`
-
+{% include global-scope-only.html %}
 Default: `false`  
 {% include version-badge.html version="6.5.0" %}
 

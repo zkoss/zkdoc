@@ -5,7 +5,7 @@ title: "org.zkoss.zul.listbox.autoSort"
 **Property:**
 
 `org.zkoss.zul.listbox.autoSort`
-
+{% include all-scopes-available.html %}
 Default: `false`  
 {% include version-badge.html version="5.0.7" %}
 
