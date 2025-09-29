@@ -95,7 +95,7 @@ All tool scripts should have header comments to explain their purpose and usage.
 
 ### Content Editing Notes
 - Remove "Version History" sections from imported content
-- Replace `versionsince` with `version-badge.html version=`
+- Replace `versionsince` with `supported-since.html version=`
 - Use absolute paths for multi-level book images
 - Check page links using validation tools
 

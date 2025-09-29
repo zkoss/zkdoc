@@ -90,7 +90,7 @@ You may also optionally specify a branch, tag, or commit to use by appending an 
 ### Editor Guidelines
 #### Sections to remove
 * "Version History" section. Using `# Version History(.|\n)*` to find and remove it.
-* replace `versionsince` with `version-badge.html version=`
+* replace `versionsince` with `supported-since.html version=`
 
 #### prepend the image path. 
 * replace `!\[\]\(([^)]*)\)` with `![](images/$1)`
