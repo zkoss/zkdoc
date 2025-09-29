@@ -4,8 +4,8 @@ title: "Setting Up ZK Pivottable"
 
 ## Prerequisites
 
-- Downloaded ZK 5 from [ZK download](http://www.zkoss.org/download/zk.dsp)
-- Downloaded ZK Pivottable from [ZK Pivottable download](http://www.zkoss.org/download/zkpivottable.dsp)
+- Download the latest ZK from [ZK download](http://www.zkoss.org/download/zk.dsp)
+- Download ZK Pivottable from [ZK Pivottable download](http://www.zkoss.org/download/zkpivottable.dsp) or use Maven
 
 ## Install
 
