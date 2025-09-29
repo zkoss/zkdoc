@@ -129,7 +129,7 @@ All modern time zone handling relies on the IANA Time Zone Database (tzdata), wh
 * **Government/Legislative Changes:** Countries changing their DST rules, shifting time zones, or discontinuing DST entirely. The need for historical data accuracy is a common concern, such as when historical DST rules are corrected for a specific region.
 * **Client-Server Disparity:** This occurs simply because the server and client components were updated at different times.
 
-## Possible Effects and Risk Assessment**
+## Possible Effects and Risk Assessment
 
 A time zone data mismatch does not cause immediate, universal errors, but it creates potential for subtle, intermittent bugs.
 
@@ -168,25 +168,22 @@ The simplest and most robust method is to upgrade your Java version. Newer JDK r
 
 #### Method B: Using Oracle's TZUpdater Tool (Patching)
 
-If upgrading the entire JDK is not feasible, use the **TZUpdater** tool to patch the existing JRE's time zone data file (tzdb.dat).
+If upgrading the entire JDK is not feasible, use the [TZUpdater tool](https://www.oracle.com/java/technologies/javase/tzupdater-readme.html) to patch the existing JRE's time zone data file (tzdb.dat).
 
 1. **Download:** Obtain the latest tzupdater.jar tool from Oracle's website (search for "Oracle TZUpdater").
 2. **Stop:** Shut down all running Java applications and application servers using the target JRE/JDK installation.
 3. **Run:** Execute the tool using the Java installation you wish to update. The `-l` flag tells it to download and apply the latest IANA data from the web (or use a local file).
-
-```text
-# Navigate to the bin directory of your JDK/JRE
-cd $JAVA_HOME/bin
-
-# Execute the update using the target JRE's Java executable (requires network access to IANA server)
-./java -jar /path/to/tzupdater.jar -l
-```
-
+    ```text
+    # Navigate to the bin directory of your JDK/JRE
+    cd $JAVA_HOME/bin
+    
+    # Execute the update using the target JRE's Java executable (requires network access to IANA server)
+    ./java -jar /path/to/tzupdater.jar -l
+    ```
 4. **Verify:** Check the new installed version.
-```text
-./java -jar /path/to/tzupdater.jar -V
-```
-
+    ```text
+    ./java -jar /path/to/tzupdater.jar -V
+    ```
 5. **Restart:** Restart your application server (e.g., Tomcat, WildFly) to load the new tzdb.dat file.
 
 ### Upgrading Moment.js Time Zone Data (Client-Side)
