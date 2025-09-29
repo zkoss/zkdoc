@@ -8,7 +8,7 @@ title: "org.zkoss.zul.tree.autoSort"
 {% include all-scopes-available.html %}
 
 Default: `false`  
-{% include version-badge.html version="5.0.7" %}
+{% include supported-since.html version="5.0.7" %}
 
 Specifies whether to sort the model when the following cases:
 

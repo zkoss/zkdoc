@@ -43,7 +43,7 @@ Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmaps
 
 ## Configure in Application Scope
 
-{% include version-badge.html version="4.0.0" %}
+{% include supported-since.html version="4.0.0" %}
 
 In zk.xml
 
@@ -141,7 +141,7 @@ To move the Maps center smoothly, you can control it by calling `Gmaps.panTo()` 
 
 ## Protocol
 
-{% include version-badge.html version="3.0.0" %}
+{% include supported-since.html version="3.0.0" %}
 
 Specify which protocol to load the Maps API. Currently it supports
 `http` for insecure connections and `https` for secure connections.
@@ -183,7 +183,7 @@ Notifies that the zoom level of the gmaps has been changed. |
 **3.0.4 already includes the `addon.xml` below**, you don't need to add
 it manually.
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 For work with ZK6 MVVM, it is required to create an addon xml and add
 the server annotation as follows:

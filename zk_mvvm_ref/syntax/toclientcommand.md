@@ -1,5 +1,5 @@
 # @ToClientCommand
-{% include version-badge.html version="8.0.0" %}
+{% include supported-since.html version="8.0.0" %}
 
 Syntax
 ======

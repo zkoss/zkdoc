@@ -59,12 +59,12 @@ sorted the row of this column. |
 | `onGroup` | **Event:**
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html)
 `[ZK PE]`
-{% include version-badge.html version="6.5.0" %} Denotes user has grouped all the
+{% include supported-since.html version="6.5.0" %} Denotes user has grouped all the
 cells under a column. |
 | `onUngroup` | **Event:**
 [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
-{% include version-badge.html version="6.5.0" %} Denotes user has ungrouped all the
+{% include supported-since.html version="6.5.0" %} Denotes user has ungrouped all the
 cells under a column. |
 
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)

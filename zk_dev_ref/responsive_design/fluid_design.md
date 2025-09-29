@@ -22,7 +22,7 @@ flexing.
 
 ## ZK CSS flexbox
 
-{% include version-badge.html version="9.0.0" %} Starting in ZK 9, ZK flex uses css
+{% include supported-since.html version="9.0.0" %} Starting in ZK 9, ZK flex uses css
 flexbox to render flex components, with the exception of
 hflex/vflex="min"
 

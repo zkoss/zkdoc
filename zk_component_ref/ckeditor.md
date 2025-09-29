@@ -93,14 +93,14 @@ CKEditor will open a new window and list all images in the file browser.
 
 ## Custom File browser
 
-{% include version-badge.html version="3.6.0.2" %} If you wish to customize your own
+{% include supported-since.html version="3.6.0.2" %} If you wish to customize your own
 file browser, you can change the location by calling
 CKeditor.setFilebrowserImageUploadUrl(page_url), and refer to [CKEditor Developers Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
 to create your custom file browser.
 
 # File upload
 
-{% include version-badge.html version="3.6.0.2" %}
+{% include supported-since.html version="3.6.0.2" %}
 
 This feature is only enabled when you specify
 `filebrowserImageUploadUrl` attribute. ZK CKEditor provides a default
@@ -117,7 +117,7 @@ application can access its own folder.
 
 ## Custom File upload handler
 
-{% include version-badge.html version="3.6.0.2" %} If you wish to customize your own
+{% include supported-since.html version="3.6.0.2" %} If you wish to customize your own
 file upload handler, you can change the location by calling
 CKeditor.setFileUploadHandlePage(page_url), and refer to [CKEditor Developers Guide](http://docs.cksource.com/CKEditor_3.x/Developers_Guide/File_Browser_%28Uploader%29)
 to create your custom file upload handler.
@@ -127,7 +127,7 @@ to create your custom file upload handler.
 You need to enable file upload to allow copying a local image from your
 machine to CKEditor.
 
-{% include version-badge.html version="4.17.1.0" %} If file upload is enabled,
+{% include supported-since.html version="4.17.1.0" %} If file upload is enabled,
 pasting a local image will upload the image to the server. If it's
 disabled, pasting a local image will insert an image with [data URL](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs).
 
@@ -179,7 +179,7 @@ to [the example zul](https://github.com/zkoss/zkbooks/blob/master/componentrefer
 
 ## Resizable attribute and Sizing
 
-{% include version-badge.html version="4.16.1.1" %}
+{% include supported-since.html version="4.16.1.1" %}
 
 `default: true`
 
@@ -254,7 +254,7 @@ CKEDITOR.editorConfig = function(config) {
 binding annotation into the lang-addon.xml file, so you no more need to
 add the settings below." %}
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 For work with ZK6 MVVM, it is required to create an addon XML and add
 the server annotation as follows:

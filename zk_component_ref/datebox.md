@@ -33,7 +33,7 @@ An edit box for holding a date. After click on the calender, a
 
 # Customization
 
-{% include version-badge.html version="5.0.3" %} You can customize the rendering of
+{% include supported-since.html version="5.0.3" %} You can customize the rendering of
 the calendar at the client by JavaScript code that overrides
 [zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Renderer.html).
 
@@ -150,7 +150,7 @@ dynamically, as depicted below.
 
 ### Length Option
 
-{% include version-badge.html version="5.0.7" %}
+{% include supported-since.html version="5.0.7" %}
 
 In addition to specifying the format explicitly, you could specify the
 length option. It supports four different length options mentioned at
@@ -212,7 +212,7 @@ You can enforce the locale for an individual component such as:
 
 ### Multiple-Eras Calendar
 
-{% include version-badge.html version="9.6.0" %} Datebox can display some
+{% include supported-since.html version="9.6.0" %} Datebox can display some
 multiple-eras calendar systems including:
 
 - ROC(Taiwan): `locale="zh-TW-u-ca-roc"`
@@ -230,7 +230,7 @@ Reference:
 
 ## Position
 
-{% include version-badge.html version="8.0.3" %}
+{% include supported-since.html version="8.0.3" %}
 
 By default, the popup position is set to `after_start`, for other
 possible popup positions please refer to
@@ -242,14 +242,14 @@ The first day of the week is decided by the locale by default. (actually
 the return value of the `getFirstDayOfWeek` method in the
 `java.util.Calendar`).
 
-{% include version-badge.html version="5.0.3" %} You can control the first day of the
+{% include supported-since.html version="5.0.3" %} You can control the first day of the
 week by the use of the session attribute and the library property.
 Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week)
 for details.
 
 ## 2DigitYearStart
 
-{% include version-badge.html version="8.6.2" %}
+{% include supported-since.html version="8.6.2" %}
 
 You can control the 2DigitYearStart by the use of the library property,
 [org.zkoss.web.preferred.2DigitYearStart]({{site.baseurl}}/zk_config_ref/org_zkoss_web_preferred_2digityearstart).
@@ -257,7 +257,7 @@ You can control the 2DigitYearStart by the use of the library property,
 ## Show Week Number
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version="6.5.0" %}
+{% include edition-availability.html edition="pe" %} {% include supported-since.html version="6.5.0" %}
 
 Datebox supports to show a week number of the year in a calendar.
 
@@ -271,7 +271,7 @@ Datebox supports to show a week number of the year in a calendar.
 
 Datebox supports a link to jump back to the date of today quickly
 
-{% include version-badge.html version="8.0.0" %}
+{% include supported-since.html version="8.0.0" %}
 
 ![](/zk_component_ref/images/ZKComRef_Datebox_Link_Of_Today.PNG)
 
@@ -293,7 +293,7 @@ Timebox at the bottom of the popup Calendar.
 
 ## Monthly / yearly option
 
-{% include version-badge.html version="9.5.1" %}
+{% include supported-since.html version="9.5.1" %}
 
 `Default: ``day`
 
@@ -313,7 +313,7 @@ Available values are:
 
 ## Close Popup OnTimezoneChange
 
-{% include version-badge.html version="9.6.0" %}
+{% include supported-since.html version="9.6.0" %}
 
 Datebox supports switching whether to auto close the datebox popup after
 changing the timezone.
@@ -348,7 +348,7 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/datebox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png)
-{% include version-badge.html version="5.0.0" %} |
+{% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

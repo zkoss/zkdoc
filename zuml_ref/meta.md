@@ -8,7 +8,7 @@ title: "meta"
     [if="..."] [unless="..."]?>
 ```
 
-{% include version-badge.html version="3.6.2" %}
+{% include supported-since.html version="3.6.2" %}
 
 It specifies an element that should be generated inside the HEAD
 element. It is generated *before* ZK default JavaScript and CSS files.

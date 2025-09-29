@@ -1,5 +1,5 @@
 # @DefaultGlobalCommand
-{% include version-badge.html version="6.5.1" %}
+{% include supported-since.html version="6.5.1" %}
 
 Syntax
 ======

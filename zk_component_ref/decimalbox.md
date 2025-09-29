@@ -33,7 +33,7 @@ with a formatting string. The default value is `null`.
 <decimalbox format="#,##0.##"/>
 ```
 
-{% include version-badge.html version="8.5.2" %} You can provide a locale to format
+{% include supported-since.html version="8.5.2" %} You can provide a locale to format
 the number by specifying a value starting with "locale:", e.g. [Indian numbering system](https://en.wikipedia.org/wiki/Indian_numbering_system):
 
 ```xml
@@ -76,7 +76,7 @@ Notes:
 
 ### min & max constraint
 
-{% include version-badge.html version="10.2.0" %}
+{% include supported-since.html version="10.2.0" %}
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 

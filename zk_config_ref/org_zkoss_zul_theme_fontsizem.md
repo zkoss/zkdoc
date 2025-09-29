@@ -7,6 +7,6 @@ title: "org.zkoss.zul.theme.fontSizeM"
 `org.zkoss.zul.theme.fontSizeM`
 {% include global-scope-only.html %}
 Default: `12px`  
-{% include version-badge.html version="3.6.0" %}
+{% include supported-since.html version="3.6.0" %}
 
 It specifies the size of the middle font used in the ZUL CSS file.

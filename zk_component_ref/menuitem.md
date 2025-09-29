@@ -47,7 +47,7 @@ been enhanced and can be customized easily.
 
 ## Autodisable
 
-{% include version-badge.html version="5.0.7" %}
+{% include supported-since.html version="5.0.7" %}
 [org.zkoss.zul.Menuitem#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setAutodisable(java.lang.String))
 is used to disable a menuitem automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant

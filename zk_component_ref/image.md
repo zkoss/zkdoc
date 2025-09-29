@@ -118,7 +118,7 @@ example code,
 
 # Preload Image
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 The feature is applied to all of the LabelImageElement and Image
 components.
@@ -146,7 +146,7 @@ For example,
 
 As you can see, the *custom-attributes* will be checked recursively
 
-{% include version-badge.html version="6.5.2" %} The feature can also applied from
+{% include supported-since.html version="6.5.2" %} The feature can also applied from
 zk.xml as a library properity.
 
 For example,

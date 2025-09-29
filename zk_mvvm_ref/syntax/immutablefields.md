@@ -1,5 +1,5 @@
 # @ImmutableFields
-{% include version-badge.html version="8.0.1" %}
+{% include supported-since.html version="8.0.1" %}
 
 Syntax
 ======

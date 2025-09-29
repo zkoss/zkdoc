@@ -1,6 +1,6 @@
 # Font Awesome Bundled
 
-{% include version-badge.html version="7.0.0" %}
+{% include supported-since.html version="7.0.0" %}
 
 Starting from ZK 7.0.0 integrates [Font Awesome 4.0.1](https://fontawesomelib.com/releases/4.0.1/list/all/index.html)
 with the prefix **z-icon**. You don't need to manually include Font
@@ -34,7 +34,7 @@ class to iconSclass. For example,
     <button iconSclass="z-icon-home fa-2x fa-rotate-90" />
 ```
 
-{% include version-badge.html version="8.0.0" %}
+{% include supported-since.html version="8.0.0" %}
 
 ZK 8.0.0 integrates Font Awesome 4.3.0. Also, with ZK 8 there is no need
 to include an external font awesome CSS link to use an animation icon.
@@ -45,11 +45,11 @@ Therefore the example above becomes
     <button iconSclass="z-icon-home z-icon-2x z-icon-rotate-90" />
 ```
 
-{% include version-badge.html version="8.5.2" %}
+{% include supported-since.html version="8.5.2" %}
 
 ZK 8.5.2 integrates [Font Awesome 4.7.0](https://fontawesome.com/v4.7.0/icons/).
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 ZK 10.0.0 integrates [Font Awesome 6.4.2 free icons](https://fontawesome.com/v6/search?o=r&m=free) and supports both
 Font Awesome 4 syntax and Font Awesome 6 syntax with styles specified:
@@ -66,7 +66,7 @@ This version includes 10 animation effect, please check [this page](https://gith
 
 # IconTooltip
 
-{% include version-badge.html version="10.0.0" %} The iconTooltip attribute is
+{% include supported-since.html version="10.0.0" %} The iconTooltip attribute is
 introduced for adding a tooltip to an icon.
 
 ```xml
@@ -75,7 +75,7 @@ introduced for adding a tooltip to an icon.
 
 # Multiple icons and tooltips
 
-{% include version-badge.html version="10.0.0" %} One LabelImageElement can have
+{% include supported-since.html version="10.0.0" %} One LabelImageElement can have
 multiple icons and tooltips set using Java API:
 
 ```java

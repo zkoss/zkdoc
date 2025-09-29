@@ -21,7 +21,7 @@ The latest versions containing a fix are:
 
 Default: none`
 
-{% include version-badge.html version="5.0.0" %}
+{% include supported-since.html version="5.0.0" %}
 
 It specifies a directory, where ZK will load the so-called Class-Web
 Resources (CWR), in addition to the class path. CWR includes JavaScript
@@ -112,6 +112,6 @@ path.
 After doing this, ZK will load the js files under `WEB-INF/classes/web/`
 instead of that js in the zkcharts.jar.
 
-{% include version-badge.html version="10.0.0" %} This approach works in a different
+{% include supported-since.html version="10.0.0" %} This approach works in a different
 way. We need to combine the js with other js in the same package. If you
 have such requirements, please contact with zk support.

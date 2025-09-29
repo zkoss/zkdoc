@@ -10,7 +10,7 @@ title: "Anchorchildren"
   [zul.layout.Anchorchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorchildren.html)
 
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 # Employment/Purpose
 

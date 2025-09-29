@@ -10,7 +10,7 @@ title: "org.zkoss.zkmax.touch.disabled"
 
 Default:  `false`
 
-{% include version-badge.html version="9.6.0" %}
+{% include supported-since.html version="9.6.0" %}
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 

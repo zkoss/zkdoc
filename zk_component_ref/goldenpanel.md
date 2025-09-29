@@ -9,7 +9,7 @@ title: "GoldenPanel"
 - <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
-{% include version-badge.html version="8.6.0" %}
+{% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 

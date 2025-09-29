@@ -91,7 +91,7 @@ for more information.
 
 
 # Resolving Time Zone Data Version Mismatch
-{% include version-badge.html version="10.2.1" %}
+{% include supported-since.html version="10.2.1" %}
 
 ZK Framework introduced a warning to detect and flag inconsistencies between the server-side time zone data (provided by the JDK) and the client-side time zone data (used by moment.js and moment-timezone).
 

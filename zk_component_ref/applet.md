@@ -2,7 +2,7 @@
 title: "Applet"
 ---
 
-{% include Deprecated_Content.html %} Removed {% include version-badge.html version=
+{% include Deprecated_Content.html %} Removed {% include supported-since.html version=
 10.0.0 %}
 
 - Demonstration: N/A

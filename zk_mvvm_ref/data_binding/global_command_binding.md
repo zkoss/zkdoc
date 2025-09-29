@@ -8,7 +8,7 @@ Overview
 
 Default Global Command
 ----------------------
-{% include version-badge.html version="6.5.1" %}
+{% include supported-since.html version="6.5.1" %}
 
 Global command also supports **`@DefaultGlobalCommand`** to mark a method as a default global command method which is invoked only if a global command binding doesn't match any other global command methods. When a binder receives a global command, it starts to find ViewModel's command methods by matching its name. Only if the binder cannot find a matched method, it invokes default global command method.
 

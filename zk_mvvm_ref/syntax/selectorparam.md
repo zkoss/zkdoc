@@ -32,7 +32,7 @@ The **value** element is the selector for finding components. It uses [Selectors
 
 If the parameter type is a Collection, binder passes the result directly. Otherwise it passes the first result or null if there is no result.
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
 ```java

@@ -10,7 +10,7 @@ title: "Anchorlayout"
   [zul.layout.Anchorlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorlayout.html)
 
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 # Employment/Purpose
 

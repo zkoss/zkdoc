@@ -9,7 +9,7 @@ title: "class.mold"
 {% include global-scope-only.html %}
 
 `Default: none`  
-{% include version-badge.html version="5.0.0" %}
+{% include supported-since.html version="5.0.0" %}
 
 It specified the default mold of the specified component. The property
 name is a concatenation of the class name of the component and `mold`.

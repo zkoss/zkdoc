@@ -56,7 +56,7 @@ property's value.
 
 ## The nested XML content
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 Since ZK 6, components that consider the text as a property's value will
 accept the XML fragment. For example,

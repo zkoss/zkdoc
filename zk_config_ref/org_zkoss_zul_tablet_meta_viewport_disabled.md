@@ -7,7 +7,7 @@ title: "org.zkoss.zul.tablet.meta.viewport.disabled"
 `org.zkoss.zul.tablet.meta.viewport.disabled`
 {% include global-scope-only.html %}
 Default: `false`  
-{% include version-badge.html version="6.5.0" %}
+{% include supported-since.html version="6.5.0" %}
 
 Specifies whether to generate a meta viewport tag or not for tablet
 devices. It is enabled by default.

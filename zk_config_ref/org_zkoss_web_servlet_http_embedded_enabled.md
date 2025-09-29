@@ -6,7 +6,7 @@ title: "org.zkoss.web.servlet.http.embedded.enabled"
 
 {% include global-scope-only.html %}
 
-{% include version-badge.html version="9.0.0" %}
+{% include supported-since.html version="9.0.0" %}
 
 Set to use embedded ZK. See [Embedded ZK Application]({{site.baseurl}}/zk_dev_ref/integration/embedded_zk_application)
 for additional information.

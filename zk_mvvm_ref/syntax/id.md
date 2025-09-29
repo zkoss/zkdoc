@@ -28,7 +28,7 @@ Example
 </window>
 ```
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 We can use simplified syntax to init view model. Notice that the id of the view model will be 'vm' by default. 
 ```xml
 <zk>

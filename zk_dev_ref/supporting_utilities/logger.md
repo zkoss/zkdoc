@@ -14,7 +14,7 @@ refer to [Setting up Google App Engine]({{site.baseurl}}/zk_installation_guide/g
 
 # How to Configure Logging
 
-{% include version-badge.html version="7.0.0" %}
+{% include supported-since.html version="7.0.0" %}
 ZK uses [SLF4J](http://www.slf4j.org/) as its internal logging system,
 and developers can follow the [SLF4J document](http://www.slf4j.org/manual.html) to use the logging in ZK.
 
@@ -37,7 +37,7 @@ to exclude the dependency first like:
 </dependency>
 ```
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 
 ZK maven dropped the transitive dependency of **slf4j-jdk14**. If a
 developer decides to enable logging, include either **Log4j**,

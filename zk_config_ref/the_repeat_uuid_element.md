@@ -9,7 +9,7 @@ title: "The repeat-uuid Element"
 ```
 
 `[Default: false]`  
-{% include version-badge.html version="3.6.0" %}
+{% include supported-since.html version="3.6.0" %}
 
 It specifies whether to use the same UUID sequence for desktops for each
 reboot. By default, it is turned off so the desktop's UUID is completely

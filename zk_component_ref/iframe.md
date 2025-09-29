@@ -103,7 +103,7 @@ deliberately passing the information through session.
 
 # Communication among iFrames without Server Push
 
-{% include version-badge.html version="5.0.4" %} <!--REQUIRED ZK EDITION: EE -->
+{% include supported-since.html version="5.0.4" %} <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
 If your application contains multiple desktops due to iframes in a

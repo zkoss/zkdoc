@@ -1,5 +1,5 @@
 # Using NavigationModel
-{% include version-badge.html version="8.6.0" %}
+{% include supported-since.html version="8.6.0" %}
 
 By the help of **[NavigationModel](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zuti/zul/NavigationModel.html)** and `<apply>`, we can construct a multi-level navigation and load template of each level to be applied with ease.
 

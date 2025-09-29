@@ -50,21 +50,21 @@ out. (if a model exists and is in paging mold, it should return null)
 
 ## Get the Previous Selected Objects
 
-{% include version-badge.html version="7.0.1" %} If users want to know which of the
+{% include supported-since.html version="7.0.1" %} If users want to know which of the
 selected objects are new added or removed, they can use the
 *getPreviousSelectedObjects* method to filter out. The information is
 available only when the target component has a model.
 
 ## Get the Unselected Items
 
-{% include version-badge.html version="7.0.1" %} If users want to know which of the
+{% include supported-since.html version="7.0.1" %} If users want to know which of the
 selected items are deselected, they can use the *getUnselectedItems*
 method to filter out. (if a model exists and is in paging mold, it
 should return null)
 
 ## Get the Unselected Objects
 
-{% include version-badge.html version="7.0.1" %} If users want to know which of the
+{% include supported-since.html version="7.0.1" %} If users want to know which of the
 selected objects are deselected, they can use the *getUnselectedObjects*
 method to filter out. The information is available only when the target
 component has a model.

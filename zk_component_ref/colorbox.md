@@ -26,7 +26,7 @@ A Colorbox used to retrieve an input that the user can select a color.
 
 # Key control
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 Pressing left, right, up, or down arrow keys to change the selected
 color.

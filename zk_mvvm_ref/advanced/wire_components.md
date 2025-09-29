@@ -1,5 +1,5 @@
 # Wire Components
-{% include version-badge.html version="6.0.2" %}
+{% include supported-since.html version="6.0.2" %}
 
 Although the design principle of MVVM pattern is that **ViewModel should not have any reference to UI components, ZK still provides two ways to retrieve UI components in a ViewModel**. However, we do not suggest this usage as it loses ViewModel an important advantage: loose coupling with View. **Notice that binder also manipulates UI components, so your operation to UI components may affect binder's work. Please be careful when using it**.
 

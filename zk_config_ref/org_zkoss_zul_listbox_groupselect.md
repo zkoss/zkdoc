@@ -7,7 +7,7 @@ title: "org.zkoss.zul.listbox.groupSelect"
 `org.zkoss.zul.listbox.groupSelect`
 {% include all-scopes-available.html %}
 Default: `false`  
-{% include version-badge.html version="5.0.7" %}
+{% include supported-since.html version="5.0.7" %}
 
 Giving true on this property makes Listgroups selectable in Listbox.
 

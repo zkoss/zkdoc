@@ -8,7 +8,7 @@ title: "Stepbar"
 - JavaScript API: [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version="9.0.0" %}
+{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

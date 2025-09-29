@@ -32,7 +32,7 @@ points and visible zoom level(0~3).
 
 ## Disable Path Encoding
 
-{% include version-badge.html version="3.3.0" %}
+{% include supported-since.html version="3.3.0" %}
 
 In order to preserve bandwidth the polyline/polygon path coordinates are
 encoded (default) with a [lossy algorithm](https://developers.google.cn/maps/documentation/utilities/polylinealgorithm)

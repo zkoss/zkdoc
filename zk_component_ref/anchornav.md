@@ -10,7 +10,7 @@ title: "Anchornav"
   [Anchornav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Anchornav.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version="9.0.0" %}
+{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

@@ -80,7 +80,7 @@ of TABLE).
 </zk>
 ```
 
-{% include version-badge.html version="5.0.0" %}
+{% include supported-since.html version="5.0.0" %}
 
 # Cell Component
 
@@ -98,7 +98,7 @@ rows. The code below demonstrates how to do this:
 </hbox>
 ```
 
-{% include version-badge.html version="5.0.0" %}
+{% include supported-since.html version="5.0.0" %}
 
 # Limitation
 

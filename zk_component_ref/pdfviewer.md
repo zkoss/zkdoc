@@ -9,7 +9,7 @@ title: "Pdfviewer"
   [zkex.pdfviewer.Pdfviewer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.pdfviewer.Pdfviewer.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version="9.0.0" %}
+{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
@@ -53,7 +53,7 @@ is at the top. You can use CSS to do more tweaks.
 
 # Zoom to Fit Page Width / Fit Page Height
 
-{% include version-badge.html version="9.6.0" %}
+{% include supported-since.html version="9.6.0" %}
 
 You can call `setZoom("fit-page-width")` or `setZoom("fit-page-height")`
 now.

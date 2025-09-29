@@ -67,7 +67,7 @@ Below is an example of using *a* within the format.
 <timebox cols="8" format="HH:mm:ss"/>
 ```
 
-{% include version-badge.html version="5.0.7" %} In addition to specifying the format
+{% include supported-since.html version="5.0.7" %} In addition to specifying the format
 explicitly, you could specify the styling. There are four different
 types of styling: short, medium, long and full (representing the styling
 of java.text.DateFormat). For example, you could specify the styling
@@ -134,7 +134,7 @@ zul.jar.
     </tr>
     <tr>
       <td>rounded</td>
-      <td> {% include version-badge.html version="5.0.0" %}
+      <td> {% include supported-since.html version="5.0.0" %}
         <img src="/zk_component_ref/images/timebox_mold_rounded.png" alt="rounded mold"/>
     </td>
     </tr>

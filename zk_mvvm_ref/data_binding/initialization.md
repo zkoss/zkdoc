@@ -10,7 +10,7 @@ The first place we usually use this annotation is to assign a ViewModel to a com
 ```
 The composer will resolve the string 'foo.MyViewModel' and create a object of it.
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 We can use simplified syntax to init view model. Notice that the id of the view model will be 'vm' by default. 
 ```xml
 <zk>
@@ -31,7 +31,7 @@ It's common to use it to initialize a component's attribute with a constant valu
     <checkbox checked="@init(true)"/>
 ```
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 We can use simplified syntax to initialize a component's attribute.
 ```xml
 <label value="@(vm.message)"/>

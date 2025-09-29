@@ -8,7 +8,7 @@ title: "org.zkoss.zkmax.zul.FiledownloadListener.class"
 
 {% include global-scope-only.html %}
 Default:  `none`  
-{% include version-badge.html version="3.5.0" %}
+{% include supported-since.html version="3.5.0" %}
 
 It specifies the name of the class that will be notified when a file
 download is happening. The class must implement the

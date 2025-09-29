@@ -108,7 +108,7 @@ you need to:
 ```
 
 # Customizing Calendar Item Appearance
-{% include version-badge.html version="3.1.0" %}
+{% include supported-since.html version="3.1.0" %}
 From calendar 3.1.0 and onward,
 [SimpleCalendarItem](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/impl/SimpleCalendarItem.html) supports `sclass`, `style`, `contentStyle` and `headerStyle` attributes.
 
@@ -149,7 +149,7 @@ header's node with the headerColor attribute. These are deprecated after
 
 
 # Customizing Calendar Item Rendering Logic
-{% include version-badge.html version="3.2.0" %} 
+{% include supported-since.html version="3.2.0" %} 
 This section covers how to programmatically customize the rendering logic of calendar items, which is different from the CSS styling approach covered in the previous section. While CSS styling changes the appearance through stylesheets, rendering logic customization allows you to modify the actual content and structure of calendar items at the JavaScript widget level.
 
 Use rendering logic customization when you need to:

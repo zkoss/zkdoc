@@ -172,7 +172,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 </tbody>
 </table>
 
-{% include version-badge.html version="7.0.0" %}
+{% include supported-since.html version="7.0.0" %}
 
 The autoscroll attribute will create floating scrollbar and it is not
 visible unless user mouse over on the region. To turn off the floating
@@ -187,7 +187,7 @@ configuration in zk.xml.
 ```
 
 **Note:** the value of org.zkoss.zul.nativebar is true by default ({%
-include version-badge.html version="7.0.2" %}
+include supported-since.html version="7.0.2" %}
 
 ### Grown by children
 
@@ -286,7 +286,7 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 
 ## AnimationDisabled
 
-{% include version-badge.html version="5.0.8" %} You can specify this property to true
+{% include supported-since.html version="5.0.8" %} You can specify this property to true
 to disable the animation effects of this component.
 
 ### Configure to Disable the Animation Effects as Default

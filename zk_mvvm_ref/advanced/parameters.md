@@ -15,7 +15,7 @@ The syntax is:
 
 The expression is optional. It's used only when you want to pass parameters to command method.
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}
 We can use simplified syntax to pass parameter by sequential order.
 ** @('commandName', [EL-expression1], [EL-expression2]) **
 
@@ -204,10 +204,10 @@ We create 2 labels that bound to current binding component's id and view compone
 
 Retrieve Event Object
 ---------------------
-{% include version-badge.html version="6.0.1" %}
+{% include supported-since.html version="6.0.1" %}
 {% include edition-availability.html edition="ee" %}
 
-{% include version-badge.html version="6.5.2" %}, it is supported in CE
+{% include supported-since.html version="6.5.2" %}, it is supported in CE
 
 There are two ways to retrieve an event object:
 

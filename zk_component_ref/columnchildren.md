@@ -16,7 +16,7 @@ title: "Columnchildren"
 
 Columnchildren can only allow Panel as its child.
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 - Columnchildren can allow any Component as its child.
 
@@ -108,6 +108,6 @@ Columnchildren can only allow Panel as its child.
 
 `*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
-{% include version-badge.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 `*Any`

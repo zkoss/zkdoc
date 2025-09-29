@@ -276,7 +276,7 @@ Your application won't be notified when users click the button.
 
 ## Type
 
-{% include version-badge.html version="5.0.4" %}
+{% include supported-since.html version="5.0.4" %}
 
 [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
 sets the button's type. It is designed to work with the HTML `
@@ -330,16 +330,16 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
   kilobytes, or a negative value if no limit.
 - `native`: treating the uploaded file(s) as binary, i.e., not to
   convert it to image, audio, or text files.
-- `multiple`: {% include version-badge.html version="6.0.0" %} treating the file
+- `multiple`: {% include supported-since.html version="6.0.0" %} treating the file
   chooser allows multiple files to upload, the setting only works with
   HTML5-supported browsers
-- `accept`: {% include version-badge.html version="7.0.0" %} specifies the MIME types
+- `accept`: {% include supported-since.html version="7.0.0" %} specifies the MIME types
   of files that the server accepts, the setting only works with
   HTML5-supported browsers. [MIME type list](http://www.iana.org/assignments/media-types/media-types.xhtml).
 
 ### Customize Upload Size Exceeding Message
 
-{% include version-badge.html version="8.0.0" %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
+{% include supported-since.html version="8.0.0" %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
 
 For Example, (in WEB-INF/zk-label.properties)
 

@@ -9,7 +9,7 @@ title: "Orgnode"
 `<!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}`
 
-{% include version-badge.html version="8.6.0" %}
+{% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 

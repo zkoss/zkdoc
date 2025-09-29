@@ -2,7 +2,7 @@
 title: "Calendar"
 ---
 
- {% include version-badge.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+ {% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} 
  {% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
@@ -12,8 +12,8 @@ title: "Calendar"
 |---|---|
 | ArrowUp / ArrowDown / ArrowLeft / ArrowRight | Navigate the date. |
 | Enter / Spacebar | Select the date. |
-| PageUp / PageDown | {% include version-badge.html version="10.0.0" %} Navigate the month. |
-| Shift+PageUp / Shift+PageDown | {% include version-badge.html version="10.0.0" %} Navigate the year. |
+| PageUp / PageDown | {% include supported-since.html version="10.0.0" %} Navigate the month. |
+| Shift+PageUp / Shift+PageDown | {% include supported-since.html version="10.0.0" %} Navigate the year. |
 
 ## Calendar Day AriaLabel Renderer
 
@@ -34,4 +34,4 @@ customize the aria-label of days on ZK's Calendar.
 </zk>
 ```
 
-{% include version-badge.html version="9.5.0" %}
+{% include supported-since.html version="9.5.0" %}

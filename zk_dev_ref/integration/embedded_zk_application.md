@@ -4,7 +4,7 @@ Instead of using an iframe, ZK provides JavaScript API for a non-Java EE
 web container. Hence, you can embed a ZK application in a web
 application based on NodeJs, Python, etc.
 
-{% include version-badge.html version="9.1.0" %}
+{% include supported-since.html version="9.1.0" %}
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 # Prerequisite
@@ -32,7 +32,7 @@ EmbeddedServlet
 
 ### Loading through EmbeddedServlet
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 
 **web.xml**
@@ -58,7 +58,7 @@ Then target the url as mapped above:
 
 ### Loading embedded/index.js directly
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 **HostPage.html**
 
@@ -68,7 +68,7 @@ Then target the url as mapped above:
 
 ### Loading embedded/embedded.js directly
 
-{% include version-badge.html version="9.0.1" %}
+{% include supported-since.html version="9.0.1" %}
 
 Discontinued in ZK 10.0.0 and later
 
@@ -144,7 +144,7 @@ associated with the failure.
 
 ## zEmbedded.load(domId, ZKSrc, ZKHost)
 
-{% include version-badge.html version="9.6.0" %}
+{% include supported-since.html version="9.6.0" %}
 
 To handle the URL redirection, we can specify the ZK Host URL.
 
@@ -172,7 +172,7 @@ DOM Element. Use "skipError = true" to ignore error messages.
 
 ## Better way to include embedded.js in ZK 10
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 Since ZK 10, we can set the zkEmbedded servlet in **web.xml**
 
@@ -229,7 +229,7 @@ from **ZK 9** application into one page.
 
 ## Cannot Embed Multiple Pages with WebSocket Enabled
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 zEmbedded supports WebSocket under the condition that only one ZK page
 can be embedded into a non-ZK page when WebSocket is enabled.

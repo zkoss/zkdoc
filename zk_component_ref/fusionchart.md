@@ -43,9 +43,9 @@ support 3D) |
 |---|---|---|
 | bar | CategoryModel | * |
 | line | CategoryModel, XYModel | X |
-| pie | PieModel, SingleValueCategoryModel{% include version-badge.html version="6.5.3"
+| pie | PieModel, SingleValueCategoryModel{% include supported-since.html version="6.5.3"
 %} | O |
-| funnel | SingleValueCategoryModel{% include version-badge.html version="6.5.3"
+| funnel | SingleValueCategoryModel{% include supported-since.html version="6.5.3"
 %} | X |
 | combination | CategoryModel | O |
 | stacked_bar | CategoryModel | O |
@@ -340,7 +340,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ## Funnel Chart
 
-{% include version-badge.html version="6.5.3" %}
+{% include supported-since.html version="6.5.3" %}
 
 ![](/zk_component_ref/images/Funnelchart.png)
 

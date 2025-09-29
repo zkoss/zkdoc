@@ -76,7 +76,7 @@ Restart your zk application.
 
 - **Send to Your Server**
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 
 You can enable [the send-client-errors element]({{site.baseurl}}/zk_config_ref/the_send_client_errors_element)
 in zk.xml to send client errors to the server for logging the page url

@@ -3,7 +3,7 @@ title: "Timepicker"
 ---
 
 
-{% include version-badge.html version="8.0.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include supported-since.html version="8.0.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 - Java API: [org.zkoss.zkmax.zul.Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html)
@@ -44,7 +44,7 @@ Below is an example of using *a* within the format.
 </zk>
 ```
 
-{% include version-badge.html version="5.0.7" %} In addition to specifying the format
+{% include supported-since.html version="5.0.7" %} In addition to specifying the format
 explicitly, you could specify the styling. There are two different types
 of styling: short, and medium (representing the styling of
 java.text.DateFormat). For example, you could specify the styling rather

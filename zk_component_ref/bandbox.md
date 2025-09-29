@@ -201,7 +201,7 @@ Notes:
 
 ## IconSclass
 
-{% include version-badge.html version="8.6.2" %} Specify the sclass name of the
+{% include supported-since.html version="8.6.2" %} Specify the sclass name of the
 Bandbox button icon. For built-in icon, please see
 [LabeliImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement).
 
@@ -231,7 +231,7 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/bandbox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/bandbox_mold_rounded.png) 
-{% include version-badge.html version="5.0.0" %} |
+{% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

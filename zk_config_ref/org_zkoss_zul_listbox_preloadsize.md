@@ -7,10 +7,10 @@ title: "org.zkoss.zul.listbox.preloadSize"
 `org.zkoss.zul.listbox.preloadSize `
 {% include all-scopes-available.html %}
 Default: `50`  
-{% include version-badge.html version="6.0.1" %}
+{% include supported-since.html version="6.0.1" %}
 
 Default: `7`  
-{% include version-badge.html version="5.0.8" %}
+{% include supported-since.html version="5.0.8" %}
 
 Specifies the number of items to preload when receiving the rendering
 request from the client. It is used only if live data

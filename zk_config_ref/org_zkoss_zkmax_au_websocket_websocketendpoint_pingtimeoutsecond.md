@@ -6,7 +6,7 @@ title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingTimeoutSecond"
 org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingTimeoutSecond
 {% include global-scope-only.html %}
 Default:  `20` (Seconds)  
-{% include version-badge.html version="9.6.1" %}
+{% include supported-since.html version="9.6.1" %}
 
 The heartbeat mechanism timeout in second.
 

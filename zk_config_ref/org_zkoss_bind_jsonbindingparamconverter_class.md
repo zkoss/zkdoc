@@ -11,9 +11,9 @@ title: "org.zkoss.bind.jsonBindingParamConverter.class"
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
-{% include version-badge.html version="8.0.0" %} `Default: org.zkoss.zkmax.bind.JacksonConverter` [org.zkoss.zkmax.bind.JacksonConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/bind/JacksonConverter.html)
+{% include supported-since.html version="8.0.0" %} `Default: org.zkoss.zkmax.bind.JacksonConverter` [org.zkoss.zkmax.bind.JacksonConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/bind/JacksonConverter.html)
 
-{% include version-badge.html version="8.5.1" %} `Default: org.zkoss.zkmax.bind.GsonConverter` [org.zkoss.zkmax.bind.GsonConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/bind/GsonConverter.html)
+{% include supported-since.html version="8.5.1" %} `Default: org.zkoss.zkmax.bind.GsonConverter` [org.zkoss.zkmax.bind.GsonConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/bind/GsonConverter.html)
 
 It specifies the name of the class used to provide the default JSON
 converter for ZK Bind command. The class must implement the

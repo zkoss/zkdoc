@@ -6,7 +6,7 @@
 
 Default:  `false`
 
-{% include version-badge.html version="10.2.0" %}
+{% include supported-since.html version="10.2.0" %}
 
 Enable updating of selective components in the model, ensuring that not
 all sequential components are re-rendered.

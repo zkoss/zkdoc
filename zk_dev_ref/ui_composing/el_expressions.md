@@ -258,7 +258,7 @@ Then, you can use them by specifying it in a [taglib directive](/zuml_ref/taglib
 
 # EL 3.0 Support
 
-{% include version-badge.html version="8.0.0" %} ZK supports some syntaxes of Java EE
+{% include supported-since.html version="8.0.0" %} ZK supports some syntaxes of Java EE
 7 Expression Language 3, see
 [examples](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/el_expression.html).
 

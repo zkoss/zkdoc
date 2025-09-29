@@ -9,7 +9,7 @@ title: "org.zkoss.zul.grid.initRodSize"
 {% include all-scopes-available.html %}
 
 `Default: 100`  
-{% include version-badge.html version="5.0.8" %}
+{% include supported-since.html version="5.0.8" %}
 
 Specifies the number of rows rendered when the Grid first render. It is
 used only for live data

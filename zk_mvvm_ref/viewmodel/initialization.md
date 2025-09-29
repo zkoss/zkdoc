@@ -33,7 +33,7 @@ public class ChildViewModel extends ParentViewModel {
 Please notice that child class's initial method **should not override parent class's initial method**, or parent's initial method won't be called and child's will be called twice.
 
 ## Apply on Class
-{% include version-badge.html version="6.0.1" %}
+{% include supported-since.html version="6.0.1" %}
 
 If super has an init method but its ChildViewModel doesn't, you can add `@Init(superclass=true)` on the ChildViewModel to use super's init.
 ```java
@@ -49,7 +49,7 @@ public class ChildViewModel extends ParentViewModel {
 The initial method can retrieve various context object by applying annotation on its parameter, please refer [advanced/Parameters](../advanced/parameters).
 
 ## Destroy Method
-{% include version-badge.html version="8.5.2" %}
+{% include supported-since.html version="8.5.2" %}
 
 In contrast with `@Init`, a `@Destroy` method exists to do finalization of a view model. The usage of an annotation is the same as `@Init`.
 

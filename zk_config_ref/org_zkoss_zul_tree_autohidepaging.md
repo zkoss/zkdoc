@@ -7,7 +7,7 @@ title: "org.zkoss.zul.tree.autohidePaging"
 `org.zkoss.zul.tree.autohidePaging`
 {% include all-scopes-available.html %}
 Default: `true`  
-{% include version-badge.html version="7.0.1" %}
+{% include supported-since.html version="7.0.1" %}
 
 It specifies whether to enable autohide property for internal paging
 component.

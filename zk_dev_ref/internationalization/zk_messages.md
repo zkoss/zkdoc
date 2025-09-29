@@ -11,7 +11,7 @@ You can help improve ZK's internationalization by:
 
 **Note**: By contributing translations, you agree to surrender the copyright to Potix Corporation. For any questions, contact us at info@zkoss.org.
 
-{% include version-badge.html version="10.0.0" %}
+{% include supported-since.html version="10.0.0" %}
 * [msgzk.properties - MZk](https://github.com/zkoss/zk/blob/master/zk/src/main/resources/metainfo/mesg/)
 * [msgzul.properties - MZul](https://github.com/zkoss/zk/blob/master/zul/src/main/resources/metainfo/mesg/)
 * [msgcommon.properties - MCommon](https://github.com/zkoss/zk/blob/master/zcommon/src/main/resources/metainfo/mesg/)

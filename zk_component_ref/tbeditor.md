@@ -3,7 +3,7 @@ title: "Tbeditor"
 ---
 
 
-{% include version-badge.html version="8.0.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include supported-since.html version="8.0.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 - Java API:

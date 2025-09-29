@@ -70,7 +70,7 @@ Full example available on
 
 # MVVM media queries and Shadow components
 
-{% include version-badge.html version="8.0.2" %}
+{% include supported-since.html version="8.0.2" %}
 
 The same structure can be created following the MVVM pattern using the
 [@MatchMedia](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/matchmedia.html)

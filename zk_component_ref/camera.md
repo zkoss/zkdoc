@@ -7,7 +7,7 @@ title: "Camera"
 - JavaScript API: [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
 
 <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include version-badge.html version="8.6.0" %}
+{% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
@@ -143,7 +143,7 @@ Default: 60
 
 # constraintsString
 
-{% include version-badge.html version="8.6.0" %} The value is passed as
+{% include supported-since.html version="8.6.0" %} The value is passed as
 [MediaTrackConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints)
 which is used to describe a camera's capabilities.
 

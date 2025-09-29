@@ -5,7 +5,7 @@ title: "preserve-all-blank"
 **Property:** preserve-all-blank
 {% include global-scope-only.html %}
 `Default: true`  
-{% include version-badge.html version="8.0.0" %}
+{% include supported-since.html version="8.0.0" %}
 
 This property control how the zul parser interpret whitespaces (such as
 line breaks and spaces) between zul elements.

@@ -32,7 +32,7 @@ points, visible zoom level(0~3), and fill color, etc..
 
 ## Disable Path Encoding
 
-{% include version-badge.html version="3.3.0" %}
+{% include supported-since.html version="3.3.0" %}
 
 see: [ Gpolyline - Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/gpolyline#Disable_Path_Encoding)
 

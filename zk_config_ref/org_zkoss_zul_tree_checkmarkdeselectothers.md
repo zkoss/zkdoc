@@ -7,7 +7,7 @@ title: "org.zkoss.zul.tree.checkmarkDeselectOthers"
 `org.zkoss.zul.tree.checkmarkDeselectOthers`
 {% include all-scopes-available.html %}
 Default: `false`  
-{% include version-badge.html version="5.0.5" %}
+{% include supported-since.html version="5.0.5" %}
 
 If a tree's checkmark
 ([org.zkoss.zul.Tree#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#isCheckmark())) is

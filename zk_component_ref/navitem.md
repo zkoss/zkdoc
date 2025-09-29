@@ -102,7 +102,7 @@ Your application won't be notified when users click the navitem.
 
 ## Badge Text
 
-{% include version-badge.html version="9.6.0" %}
+{% include supported-since.html version="9.6.0" %}
 
 This property set the badge text for the `Navitem`, it is used to
 present more details of `Navitem`.
