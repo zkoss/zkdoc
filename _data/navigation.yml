@@ -2487,6 +2487,8 @@ zk_component_ref:
         url: /zk_component_ref/uploadevent
       - title: ZIndexEvent
         url: /zk_component_ref/zindexevent
+      - title: "onAfterRender Event"
+        url: /zk_component_ref/onafterrender
   - title: Supporting Classes
     url: /zk_component_ref/supporting_classes
     children:
