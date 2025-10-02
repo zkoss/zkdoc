@@ -2,6 +2,8 @@
 
 The ZK IntelliJ IDEA Plugin is a dedicated tool designed to enhance the development experience for ZK applications within the IntelliJ IDEA environment. It provides robust features such as intelligent code completion, syntax validation, and seamless navigation, helping developers to write ZK applications more efficiently and with greater accuracy.
 
+{% include zkidea-install-button.html %}
+
 ## Features
 
 ### ZUL File Support

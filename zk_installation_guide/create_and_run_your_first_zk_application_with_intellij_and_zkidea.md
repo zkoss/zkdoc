@@ -10,9 +10,8 @@ plugin for ZK application development contributed by Mr. Jumper Chen.
 # Install ZK IntelliJ Plugin
 
 ## Install IntelliJ
-
-1.  Download the latest IntelliJ IDE from
-    [here](https://www.jetbrains.com/idea/)  
+{% include zkidea-install-button.html %}
+or visit [JETBRAINS Marketplace](https://plugins.jetbrains.com/plugin/7855-zk/)  
       
 
 ## Install ZK plugin
