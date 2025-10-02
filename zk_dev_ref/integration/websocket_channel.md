@@ -1,5 +1,30 @@
-# Employment/Purpose
+# Websockets for default ZK client-server communications
 
+{% include edition-availability.html edition="ee" %}
+
+In addition to manual websocket use, ZK can be configured to use a websocket channel as a replacement for the default `/zkau` request and response cycles used to send events and updates between the client and the server.
+
+In `WEB-INF/zk.xml`, add following lines to enable WebSocket connection:
+```xml
+<listener>
+<listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>
+</listener>
+```
+
+To change the update URL, you could also add the following lines into WEB-INF/zk.xml.
+Optional: If not specified, "/zkwm" will be used by default.
+```xml
+<library-property>
+<name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern</name>
+<value>/yourApp</value>
+</library-property>
+```
+
+When a WebSocket connection is enabled, we'll use WebSocketServerPush by default when server-push started. Note that we cannot guarantee the accessing of the information provided by http requests when WebSocket connection is enabled.
+
+
+# Manual use of Websockets: Employment/Purpose
+{% include supported-since.html version="8.0.0" %}
 ZK has supported a way to share the application data between a ZK
 application and a websocket application within the same session. Here we
 demonstrate how to use the
@@ -45,11 +70,10 @@ public class EchoServer {
 
 }
 ```
-
-As you can see above, in line 2, we have to register a
+* Line 2: we have to register a
 [org.zkoss.zk.ui.http.ZKWebSocket](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html) class into the
-configurator of the *ServerEndpoint* annotation. And in line 12 we can
-use the method of
+configurator of the `@ServerEndpoint` . 
+* Line 12: we can use the method of
 [org.zkoss.zk.ui.http.ZKWebSocket#getDesktopStorage(javax.websocket.Session)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html#getDesktopStorage(javax.websocket.Session))
 to receive the data storage from a websocket session (the storage is a
 thread-safe implementation). Note that the websocket session must have a
@@ -109,7 +133,7 @@ public class ZKWebSocketViewModel {
 }
 ```
 
-As you can see above, in line 22 and 26, we can receive the data storage
+* Line 22 and 26: we can receive the data storage
 from the desktop object to share or update the application data into it,
 so that the websocket echo server can use or get the latest data from it
 or vice versa.
@@ -156,17 +180,14 @@ public class ZKWebSocketComposer extends SelectorComposer<Window> {
     }
 }
 ```
-
-As you can see above, in line 21 and 26, we can receive the data storage
+* Line 21 and 26, we can receive the data storage
 from the desktop object to share or update the application data into it,
 so that the websocket echo server can use or get the latest data from it
 or vice versa.
-
-**Note:** in line 24
-[org.zkoss.zk.ui.annotation.Command](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/annotation/Command.html) annotation has
+* Line 24: [org.zkoss.zk.ui.annotation.Command](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/annotation/Command.html) annotation has
 been added since the release of ZK 8.0.0, and it is used to receive a
 notification from client to server. For more details, please take a look
-at the [\#Communication](#Communication) section.
+at the [#Communication](#Communication) section.
 
 ## Communication
 
@@ -265,6 +286,6 @@ In the Java code
 As you can see above, the data will automatically be converted into a
 specific object type according to the method declaration.
 
-**Note:** developer can implement a custom
+**Note:** developers can implement a custom
 [org.zkoss.util.Converter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Converter.html) and specify
 it into [the ZK library properties]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_jsonserviceparamconverter_class).
