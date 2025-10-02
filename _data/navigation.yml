@@ -90,16 +90,16 @@ zk_essentials:
           - title: Populate Components with Data
             url: /zk_essentials/handling_user_input/mvc_approach/populate_components_with_data
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvc_approach/save_and-reload-data
+            url: /zk_essentials/handling_user_input/mvc_approach/save_and_reload_data
       - title: MVVM Pattern
         url: /zk_essentials/handling_user_input/mvvm_approach
         children:
           - title: Construct a Form Style Page
-            url: /zk_essentials/handling_user_input/mvvm_approach/construct_a-form-style-page
+            url: /zk_essentials/handling_user_input/mvvm_approach/construct_a_form_style_page
           - title: Load Data into Components
-            url: /zk_essentials/handling_user_input/mvvm_approach/load_data-to-components
+            url: /zk_essentials/handling_user_input/mvvm_approach/load_data_to_components
           - title: Save & Reload Data
-            url: /zk_essentials/handling_user_input/mvvm_approach/save_and-reload-data
+            url: /zk_essentials/handling_user_input/mvvm_approach/save_and_reload_data
   - title: 4. Implementing CRUD
     url: /zk_essentials/implementing_crud/
     children:
@@ -124,7 +124,7 @@ zk_essentials:
       - title: AJAX Based - MVC
         url: /zk_essentials/navigation_and_template/ajax_based
       - title: AJAX Based - MVVM
-        url: /zk_essentials/navigation_and_template/ajax_based_navigation_-_mvvm
+        url: /zk_essentials/navigation_and_template/ajax_based_navigation___mvvm
   - title: 7. Authentication
     url: /zk_essentials/authentication/
     children:

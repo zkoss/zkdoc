@@ -4,12 +4,8 @@ The example application has 2 functions, save and reload, which are both
 triggered by clicking a button. If you click the "Save" button, the
 application will save your input and show a notification box.
 
-<div style="text-align:center">
-![](/zk_essentials/images/ze-ch5-save.png)
-</div>
-<div style="text-align:center">
 **Click "Save" button**
-</div>
+![](/zk_essentials/images/ze-ch5-save.png)
 
 In this section, we will demonstrate a more flexible way to define an
 event listener in a controller with [`@Listen`]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners) other than
