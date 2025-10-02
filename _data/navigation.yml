@@ -1998,6 +1998,8 @@ zk_dev_ref:
     url: /zk_dev_ref/packaging_applications
   - title: How to get Efficient Support
     url: /zk_dev_ref/how_to_get_efficient_support
+  - title: Intellij IDEA ZK Plugin
+    url: /zk_dev_ref/zkidea
 zk_component_ref:
   - title: Introduction
     url: /zk_component_ref/introduction
