@@ -1998,8 +1998,14 @@ zk_dev_ref:
     url: /zk_dev_ref/packaging_applications
   - title: How to get Efficient Support
     url: /zk_dev_ref/how_to_get_efficient_support
-  - title: Intellij IDEA ZK Plugin
-    url: /zk_dev_ref/zkidea
+  - title: IDE Plugins
+    children:
+      - title: Intellij IDEA ZK Plugin
+        url: /zk_dev_ref/zkidea
+      - title: eclipse puling - ZK Studio
+        url: /zk_studio_essentials/
+      - title: Visual Studio (VS) Code Plugin
+        url: /zk_installation_guide/create_and_run_your_first_zk_application_with_visual_studio_code
 zk_component_ref:
   - title: Introduction
     url: /zk_component_ref/introduction
