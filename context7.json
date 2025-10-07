@@ -1,0 +1,22 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "ZK UI framework Documentation",
+  "description": "ZK is a popular Java web UI framework that allows developers to build modern, feature-rich web applications entirely in Java with ready-to-use UI components and a server-centric architecture.",
+  "branch": "master",
+  "excludeFolders": [
+    "tool",
+    "archived"
+  ],
+  "excludeFiles": [
+    "CLAUDE.md",
+    "404.md",
+    "CNAME",
+    "google615404f737c48d38.html",
+    "sitemap.xml",
+    "preview.sh",
+    "_config.yml",
+    ".jekyll-metadata",
+    "Gemfile",
+    "Gemfile.lock"
+  ]
+}
