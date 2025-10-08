@@ -16,9 +16,9 @@ It specifies how a page should be handled. The `id` and `title`
 arguments are the two most important ones.
 
 # automaticTimeout
+{% include supported-since.html version="3.6.3" %}
 
 `[Optional]`  
-{% include supported-since.html version="3.6.3" %}
 `[Default: the applicatioin default]`
 
 It specifies whether to automatically redirect to the timeout URI. If it
@@ -30,8 +30,8 @@ If omitted, whether to automatically timeout depends on the
 application's configuration. Please refer to [session-config](/zk_config_ref/the_session_config_element).
 
 A typical use is to turn off the automatic timeout for the timeout page
-(otherwise, it will be reloaded again after the session is timeout
-again). For example,
+(otherwise, it will be reloaded again after the session is timeout again). 
+For example,
 
 ```xml
 <!-- my timeout page -->
@@ -155,20 +155,20 @@ scripts (aka., `zscript`) and EL expressions embedded in ZUML pages.
 # language
 
 `[Optional]`  
-`[Default: depending on the extension][Allowed values: ``xul/html`` | ``xhtml``]`
+`[Default: depending on the extension][Allowed values: xul/html | xhtml]`
 
 Specifies the markup language for this page. The markup language
 determines the default component set. Currently, it supports `xul/html`
 and `xhtml`.
 
-**Note**: You can place the page directive in any location of axml
+**Note**: You can place the page directive in any location of an xml
 document, but the `language` attribute is meaningful only if the
 directive is located at the topmost level.
 
 # style
 
 `[Optional]`  
-`[Default: ``width:100%``]`  
+`[Default: width:100%]`  
 `[EL allowed]`
 
 Specifies the CSS style used to render the page. If not specified, it
@@ -249,7 +249,7 @@ will generate the following as the first line of the output
 # zscriptLanguage
 
 `[Optional]`  
-`[Default: ``Java``][Allowed values: ``Java`` | ``JavaScript`` | ``Ruby`` | ``Groovy``]`
+`[Default: Java][Allowed values: Java | JavaScript | Ruby | Groovy]`
 
 Specifies the default scripting language, which is assumed if an
 `zscript` element doesn't specify any scripting language explicitly.
