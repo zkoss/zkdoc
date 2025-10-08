@@ -3,7 +3,7 @@
 **Syntax**
 
 ```xml
-<?import ''class-name1'' ''class-name2'' ?>
+<?import class-name1 class-name2 ?>
 ```
 
 It imports a class or a package of classes. It works like Java's import

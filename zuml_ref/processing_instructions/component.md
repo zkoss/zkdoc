@@ -4,13 +4,13 @@ title: "component"
 
 **Syntax:**
 ```xml
-<?component name="''myName''" templateURI="''/mypath/my.zul''" ?>
-<?component name="''myName''" macroURI="''/mypath/my.zul''" [inline="true|'''false'''"]
-   [apply="''composer''"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
-<?component name="''myName''" [class="''myPackage.myClass''"]
-   [extends="''nameOfExistComponent''"]
-   [moldName="''myMoldName''"] [moldURI="/''myMoldURI''"]
-   [apply="''composer''"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
+<?component name="myName" templateURI="/mypath/my.zul" ?>
+<?component name="myName" macroURI="/mypath/my.zul" [inline="true|'false'"]
+   [apply="composer"] [prop1="value1"] [prop2="value2"]... ?>
+<?component name="myName" [class="myPackage.myClass"]
+   [extends="nameOfExistComponent"]
+   [moldName="myMoldName"] [moldURI="/myMoldURI"]
+   [apply="composer"] [prop1="value1"] [prop2="value2"]... ?>
 ```
 
 Defines a new component in the page scope.
@@ -19,8 +19,8 @@ Defines a new component in the page scope.
 
 **Syntax:**
 ```xml
-<?component name="''myName''" macroURI="''/mypath/my.zul''"
-   [apply="''composer''"] [language="xul/html"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
+<?component name="myName" macroURI="/mypath/my.zul"
+   [apply="composer"] [language="xul/html"] [prop1="value1"] [prop2="value2"]... ?>
 ```
 
 You can define a new component based on a ZUML page. It is also called
@@ -51,23 +51,26 @@ macro.
 {% include supported-since.html version="8.0.0" %}
 
 **Syntax:**
-
-<?component name="''myName''" templateURI="''/mypath/my.zul''"
-   [language="xul/html"] [''prop1''="''value1''"] [''prop2''="''value2''"]... ?>
+```xml
+<?component name="myName" templateURI="/mypath/my.zul"
+   [language="xul/html"] [prop1="value1"] [prop2="value2"]... ?>
+```
 
 Defines a named
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>](/zk_mvvm_ref/syntax/apply)
 element on that page with a predefined templateURI and default optional
-parameters. ([Application wide configuration]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Application-wide_Named_.3CApply.3E))
+parameters. ([Application wide configuration](/zk_dev_ref/ui_composing/include_a_page#application-wide-named-apply))
 
 # The by-class Format
 
 **Syntax:**
 
-<?component name="''myName''" [class="''myPackage.myClass''"]
-   [extends="''nameOfExistComponent''"]
-   [moldName="''myMoldName''"] [moldURI="/''myMoldURI''"]
-   [apply="''composer''"] [language="xul/html"] [''prop1''="''value1''"] [''prop2''="''value2''"]...?>
+```xml
+<?component name="myName" [class="myPackage.myClass"]
+   [extends="nameOfExistComponent"]
+   [moldName="myMoldName"] [moldURI="/myMoldURI"]
+   [apply="composer"] [language="xul/html"] [prop1="value1"] [prop2="value2"]...?>
+```
 
 In addition to defining a component by a ZUML page (aka., a macro
 component), you could define a new component by implementing a class
@@ -243,7 +246,7 @@ are defined in this processing instruction.
 
 # Version History
 
-| Version | Date       | Content                                                        |
-|---------|------------|----------------------------------------------------------------|
-| 8.0.0   | 2015/10/06 | [\#The_by-template_Format](#The_by-template_Format) |
-|         |            |                                                                |
+| Version | Date       | Content                                                      |
+|---------|------------|--------------------------------------------------------------|
+| 8.0.0   | 2015/10/06 | [#The_by-template_Format](#the-by-template-format) |
+|         |            |                                                              |

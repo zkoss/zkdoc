@@ -6,7 +6,7 @@ title: "init"
 
 **Syntax:**
 ```xml
-<?init class="..." [''arg0''="..."] [''arg1''="..."] [''arg2''="..."] [''arg3''="..."]?>
+<?init class="..." [arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."]?>
 <?init zscript="..."?>
 ```
 

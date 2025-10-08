@@ -5,7 +5,7 @@ title: "link"
 **Syntax:**
 
 ```xml
-<?link [href="''uri''"] [''name0''="''value0''"] [''name1''="''value1''"] [''name2''="''value2''"]
+<?link [href="uri"] [name0="value0"] [name1="value1"] [name2="value2"]
     [if="..."] [unless="..."]?>
 ```
 

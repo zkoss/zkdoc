@@ -4,8 +4,8 @@ title: "style"
 
 **Syntax:**
 ```xml
-<?style [type="text/css"] [src="''uri''"] [charset="''encoding''"]
-  [content="''css snippet''"] [if="..."] [unless="..."]?>
+<?style [type="text/css"] [src="uri"] [charset="encoding"]
+  [content="css snippet"] [if="..."] [unless="..."]?>
 ```
 
 It specifies an element that shall be generated inside the HEAD element.

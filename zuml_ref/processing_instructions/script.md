@@ -2,8 +2,8 @@
 
 **Syntax:**
 ```xml
-<?script [type="text/javascript"] [src="''uri''"] [charset="''encoding''"]
-  [content="''javascript snippet''"] [if="..."] [unless="..."]?>
+<?script [type="text/javascript"] [src="uri"] [charset="encoding"]
+  [content="javascript snippet"] [if="..."] [unless="..."]?>
 ```
 
 It tells ZK to generate a `<script>` inside HTML `<head>` **after ZK default JavaScript and CSS files**. Thus, it can be

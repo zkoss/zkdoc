@@ -1,14 +1,14 @@
 
 **Syntax:**
 ```xml
-<?page [id="..."] [title="..."] [style="..."] [cacheable="'''false'''|true"]
+<?page [id="..."] [title="..."] [style="..."] [cacheable="false|true"]
    [language="xul/html"] [zscriptLanguage="Java"]
    [contentType="text/html;charset=UTF-8"]
-   [docType="''tag PUBLIC &quot;doctype name&quot; &quot;doctype UI&quot;''"]
+   [docType="tag PUBLIC &quot;doctype name&quot; &quot;doctype UI&quot;"]
    [widgetClass="..."]
    [xml="version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;"]
-   [complete="true|'''false'''"]
-   [automaticTimeout="true|'''false'''"]
+   [complete="true|false"]
+   [automaticTimeout="true|false"]
    [viewport="width=device-width,initial-scale=1.0"]?>
 ```
 
@@ -214,7 +214,7 @@ It can be changed dynamically by
 # widgetClass
 
 `[Options]`  
-`[Default: `<i>`depending on the device`</i>`]`  
+`[Default: depending on the device]`  
 `[EL allowed]`  
 `[Since 5.0.5]`
 

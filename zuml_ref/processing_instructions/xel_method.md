@@ -42,7 +42,6 @@ Specifies the class that the method is defined in.
 
 `[Required]`
 
-The signature of the method. Note: the method must be public static. In
-additions, Java 5 Generics are *not* allowed.
+The signature of the method. Note: the method must be public static. In addition, Java 5 Generics are *not* allowed.
 
 
