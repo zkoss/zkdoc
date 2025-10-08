@@ -2823,40 +2823,40 @@ zuml_ref:
     url: /zuml_ref/processing_instructions
     children:
       - title: component
-        url: /zuml_ref/component
+        url: /zuml_ref/processing_instructions/component
       - title: evaluator
-        url: /zuml_ref/evaluator
+        url: /zuml_ref/processing_instructions/evaluator
       - title: forward
-        url: /zuml_ref/forward
+        url: /zuml_ref/processing_instructions/forward
       - title: function-mapper
-        url: /zuml_ref/function_mapper
+        url: /zuml_ref/processing_instructions/function_mapper
       - title: header
-        url: /zuml_ref/header
+        url: /zuml_ref/processing_instructions/header
       - title: import
-        url: /zuml_ref/import
+        url: /zuml_ref/processing_instructions/import
       - title: init
-        url: /zuml_ref/init
+        url: /zuml_ref/processing_instructions/init
       - title: link
-        url: /zuml_ref/link
+        url: /zuml_ref/processing_instructions/link
       - title: meta
-        url: /zuml_ref/meta
+        url: /zuml_ref/processing_instructions/meta
       - title: page
-        url: /zuml_ref/page
+        url: /zuml_ref/processing_instructions/page
       - title: root-attributes
-        url: /zuml_ref/root_attributes
+        url: /zuml_ref/processing_instructions/root_attributes
       - title: script
-        url: /zuml_ref/script
+        url: /zuml_ref/processing_instructions/script
       - title: style
-        url: /zuml_ref/style
+        url: /zuml_ref/processing_instructions/style
       - title: taglib
-        url: /zuml_ref/taglib
+        url: /zuml_ref/processing_instructions/taglib
         children:
           - title: Custom Taglib
-            url: /zuml_ref/custom_taglib
+            url: /zuml_ref/processing_instructions/custom_taglib
       - title: variable-resolver
-        url: /zuml_ref/variable_resolver
+        url: /zuml_ref/processing_instructions/variable_resolver
       - title: xel-method
-        url: /zuml_ref/xel_method
+        url: /zuml_ref/processing_instructions/xel_method
   - title: EL Expressions
     url: /zuml_ref/el_expressions
   - title: Literals
@@ -3019,6 +3019,6 @@ zuml_ref:
     url: /zuml_ref/extensions
     children:
       - title: zscript
-        url: /zuml_ref/zscript
+        url: /zuml_ref/extensions/zscript
       - title: EL Expressions
-        url: /zuml_ref/extensions_elexpressions
+        url: /zuml_ref/extensions/el_expressions

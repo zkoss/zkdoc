@@ -3,20 +3,19 @@ title: "zscript"
 ---
 
 
-
 The default interpreter for the zscript elements is Java (based on
 [BeanShell](http://www.beanshell.org)). Depending on your preference,
 you could choose one of built-in interpreters, or implement your own
 interpreter.
 
-The built-in interpreters includes: Java, Groovy, Ruby, Python, and
+The built-in interpreters include: Java, Groovy, Ruby, Python, and
 JavaScript.
 
 # Choose Interpreter for Whole Page
 
 To change the default interpreter for the whole page, you could use the
 [page directive](/zuml_ref/page)
-by specifying the zscriptLanguage attribute, such as
+by specifying the `zscriptLanguage` attribute, such as
 
 ```xml
 <?page zscriptLanguage="Groovy"?>
@@ -52,7 +51,7 @@ prefixing it with the language name as follows.
 
 # Support More Scripting Languages
 
-Currently ZK supports Java, JavaScript, Ruby, Groovy, and Python.
+Currently, ZK supports Java, JavaScript, Ruby, Groovy, and Python.
 However, it is easy to extend:
 
 1.  Provide a class that implements
