@@ -114,3 +114,4 @@ The site uses a customized version of Minimal Mistakes:
 - Logo: `/assets/images/ZK-logo.svg`
 - Search: Google Custom Search Engine integration
 - Analytics: Google Analytics configured
+- theme files are at /Users/hawk/Documents/workspace/KEIKAI-SPACE/minimal-mistakes
