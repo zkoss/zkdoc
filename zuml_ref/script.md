@@ -40,10 +40,3 @@ Alternatively, you could use [the script component]({{site.baseurl}}/zk_componen
 to embed JavaScript code. The script component supports more features
 such as defer, but it has some memory footprint at the server (since it
 is a component).
-
-# Limitation: Ignored by Inclusion
-
-Notice that these header directives are effective only when you visit
-the page directly. In other words, they are ignored if a page is
-included by another page with <include>, <apply>, or servlets API. Also,
-they are ignored if the page is a `zhtml` file.

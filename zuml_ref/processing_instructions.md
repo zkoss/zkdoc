@@ -17,3 +17,12 @@ You can also use EL in instructions like:
 <?page automaticTimeout="true" title="${personalTitle}"?>
 <?component name="loc-datebox" extends="datebox" locale="${somelocale}"?>
 ```
+
+# Limitation: Ignored by Inclusion
+
+Notice that these directives are effective only when you visit a zul page directly. In other words, they are ignored if a page is
+included by another page with `<include>`, `<apply>`, composition, or servlets API. Also, they are ignored if the page is a `zhtml` file.
+
+
+
+
