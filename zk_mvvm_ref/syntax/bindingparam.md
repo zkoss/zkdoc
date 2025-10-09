@@ -1,7 +1,6 @@
 # @BindingParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @BindingParam
@@ -9,8 +8,7 @@ Syntax
 @BindingParam("keyString")
 ```
 
-Description
-===========
+# Description
 
 **Target:** Command method's parameter
 
@@ -29,8 +27,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @BindingParam String keyString
 ```
 
-Example
-=======
+# Example
 
 #### Command binding that pass parameters*
 ```xml

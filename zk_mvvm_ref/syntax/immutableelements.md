@@ -1,15 +1,13 @@
 # @ImmutableElements
 {% include supported-since.html version="8.0.0" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @ImmutableElements
 ```
 
-Description
-===========
+# Description
 
 **Target:** collection
 
@@ -19,8 +17,7 @@ Description
 The properties of an immutable class won't be tracked and thus reduce the resources needed in the application.
 Adding and removing items in the collection are tracked, but not changes to the items' fields.
 
-Example
-=======
+# Example
 
 ```java
 public class CustomVM {

@@ -1,7 +1,6 @@
 # @GlobalCommand
 
-Syntax
-======
+# Syntax
 
 ```java
 @GlobalCommand
@@ -11,8 +10,7 @@ Syntax
 @GlobalCommand({"commandName1", "commandName2"})
 ```
 
-Description
-===========
+# Description
 
 **Target:** method
 
@@ -22,8 +20,7 @@ The optional annotation's element is a String for command's name and that name i
 
 We can use parameter related annotations on command method's parameters; please refer to subsections of [ Parameters](./parameters) for more information.
 
-Example
-=======
+# Example
 
 #### Method name as command name
 ```java

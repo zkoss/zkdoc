@@ -1,12 +1,10 @@
 # @bind
 
-Syntax
-======
+# Syntax
 
 `@bind(`*`[EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** all (except viewModel, validationMessages, form)
 
@@ -14,8 +12,7 @@ Description
 
 It's like a shortcut annotation that combines both`@save` and`@load`. When your saving and loading don't depend on different conditions, it is suggested to use this annotation.
 
-Example
-=======
+# Example
 
 ```xml
 <textbox id="t2" value="@bind(vm.user.account)"/>

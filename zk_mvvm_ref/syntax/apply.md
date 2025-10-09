@@ -1,6 +1,5 @@
 # &lt;apply>
-Syntax
-======
+# Syntax
 
 ```xml
 <apply templateURI="..." />
@@ -15,8 +14,7 @@ Syntax
 </apply>
 ```
 
-Description
-===========
+# Description
 
 **Purpose:**
 
@@ -33,8 +31,7 @@ Description
  With the query string, you can pass only the String values.
  The parameter can be accessed with the <tt>arg</tt> variable in EL expressions.
 
-Example
-=======
+# Example
 
 ```xml
 <apply templateURI="@load(vm.templateURI)"/>

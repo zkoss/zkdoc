@@ -1,7 +1,6 @@
 # @ContextParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @ContextParam(ContextType.PAGE)
@@ -25,8 +24,7 @@ enum ContextType {
 }
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (for initial and command methods)
 
@@ -34,8 +32,7 @@ Description
 
 The annotation is applied to initial (or command) method's parameter. Methods can get various ZK context objects like Page or Desktop by applying annotation on parameters.
 
-Example
-=======
+# Example
 
 #### Retrieve various context object in a ViewModel
 ```java

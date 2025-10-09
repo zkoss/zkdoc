@@ -1,21 +1,18 @@
 # @NotifyChangeDisabled
 
-Syntax
-======
+# Syntax
 ```java
 @NotifyChangeDisabled
 ```
 
-Description
-===========
+# Description
 **Target:** setter method
 
 **Purpose:** Marker annotation to disable default notification behavior.
 
 To disable the default notification when binder sets a property.
 
-Example
-=======
+# Example
 ```java
 public class OrderVM {
 

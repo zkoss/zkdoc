@@ -1,7 +1,6 @@
 # @Command
 
-Syntax
-======
+# Syntax
 ```java
 @Command()
 
@@ -10,8 +9,7 @@ Syntax
 @Command({"commandName1", "commandName2"})
 ```
 
-Description
-===========
+# Description
 **Target:** method
 
 **Purpose:** To identify a Command method.
@@ -20,8 +18,7 @@ The optional annotation's element is a String for command's name and that name i
 
 We can also use parameter related annotations on initial method's parameters; please refer to subsections of [ Parameters](./parameters) for more information.
 
-Example
-=======
+# Example
 #### Method name as command name
 ```java
 @Command

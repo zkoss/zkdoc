@@ -1,22 +1,19 @@
 # @ClientCommand
 {% include supported-since.html version="8.0.0" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @ClientCommand(commandNames)
 ```
 
-Description
-===========
+# Description
 
 **Target:** class
 
 **Purpose:** Specify the commands we want for notifying the client after execution has been done. Notice only the commands we put inside this annotation will trigger the callback we put in *binder.after* at client.
 
-Example
-=======
+# Example
 
 ```java
 @ClientCommand("doCountChange")

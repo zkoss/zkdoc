@@ -1,7 +1,6 @@
 # @SmartNotifyChange
 
-Syntax
-======
+# Syntax
 ```java
 @SmartNotifyChange("anotherProperty")
 
@@ -12,15 +11,13 @@ Syntax
 @SmartNotifyChange(".")
 ```
 
-Description
-===========
+# Description
 **Target:** method (command method)
 
 **Purpose:** Notify value change once it has changed, unlike `@NotifyChange`.
 Usually the annotation is used with `@Command`.
 
-Example
-=======
+# Example
 ```java
 public class OrderVM {
 

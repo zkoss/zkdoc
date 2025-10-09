@@ -1,12 +1,10 @@
 # @save
 
-Syntax
-======
+# Syntax
 
 `@save(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** any save-allowed attributes (except viewModel, validationMessages)
 
@@ -28,8 +26,7 @@ The evaluation result must be one or more command name.
 
 Command name must correspond to the name specified in Java annotation`@Command` in a ViewModel.
 
-Example
-=======
+# Example
 
 #### Basic usage
 ```xml

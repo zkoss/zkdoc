@@ -1,7 +1,6 @@
 # @Init
 
-Syntax
-======
+# Syntax
 
 ```java
 @Init
@@ -9,8 +8,7 @@ Syntax
 @Init(superclass=true)
 ```
 
-Description
-===========
+# Description
 
 **Target:** method, class (since 6.0.1)
 
@@ -97,8 +95,7 @@ class CorrectChild extends Parent {
 }
 ```
 
-Example
-=======
+# Example
 ```java
 public class FooViewModel {
     @Init

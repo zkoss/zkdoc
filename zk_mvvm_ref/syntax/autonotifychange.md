@@ -3,22 +3,19 @@
 
 {% include supported-since.html version="8.5.1" %}
 
-Syntax
-======
+# Syntax
 ```java
 @AutoNotifyChange
 ```
 
-Description
-===========
+# Description
 **Target:** class (view model)
 
 **Purpose:** Enable posting NotifyChange when setter method called.
 
 If the view model class is annotated with this annotation, every setter method in `@Command` and `@GlobalCommand` will post NotifyChange after being called.
 
-Example
-=======
+# Example
 ```java
 @AutoNotifyChange
 public class OrderVM {

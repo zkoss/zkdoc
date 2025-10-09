@@ -1,7 +1,6 @@
 # @ExecutionParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @ExecutionParam
@@ -9,8 +8,7 @@ Syntax
 @ExecutionParam("keyString")
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (initial method and command method)
 
@@ -25,8 +23,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @ExecutionParam String keyString
 ```
 
-Example
-=======
+# Example
 
 Assume we want to pass an object by execution's attribute to an included ZUL that uses a ViewModel: ` ExecutionParamVM`.
 

@@ -1,24 +1,21 @@
 # @ToServerCommand
 {% include supported-since.html version="8.0.0" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @ToServerCommand("commandName")
 @ToServerCommand({"commandName1", "commandName2"})
 ```
 
-Description
-===========
+# Description
 
 **Target:** class
 
 **Purpose:** Specify the client binder commands that will be used to notify the server. Only the commands placed inside this annotation will be sent to the server.
 
 **Note:** If the value of the annotation contains a value __"*"__ that means all of the commands are accepted for notifying the server.
-Example
-=======
+# Example
 
 ```java
 @ToServerCommand("doCountChange")

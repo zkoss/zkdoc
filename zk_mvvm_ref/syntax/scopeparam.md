@@ -1,7 +1,6 @@
 # @ScopeParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @ScopeParam
@@ -23,8 +22,7 @@ enum Scope {
 }
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (for initial and command methods)
 
@@ -40,8 +38,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @ScopeParam(scopes=Scope.SESSION) String keyString
 ```
 
-Example
-=======
+# Example
 
 ```java
 public class ScopeParamVM {

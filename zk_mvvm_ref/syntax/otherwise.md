@@ -1,20 +1,17 @@
 # &lt;otherwise>
-Syntax
-======
+# Syntax
 ```xml
 <otherwise>
  ...
 </otherwise>
 ```
 
-Description
-===========
+# Description
 **Purpose:**
 
 A switch statement has a default clause to specify a default action, similar to how `<choose>` has `<otherwise>` as default clause.
 
-Example
-=======
+# Example
 ```xml
 <choose>
 	<when test="@load(each lt 3)">

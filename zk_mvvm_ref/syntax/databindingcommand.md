@@ -1,7 +1,6 @@
 # @command
 
-Syntax
-======
+# Syntax
 
 `@command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
@@ -11,8 +10,7 @@ Syntax
 
 `@(`*`[EL-expression], [EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** event attributes (e.g. onClick, onOK)
 
@@ -42,8 +40,7 @@ The command method in ViewModel will be triggered with positional arguments.
 
 Notice that it only works in the matched attribute format: "on" + action (ex. onClick, onChange, ...).
 
-Example
-=======
+# Example
 
 ```xml
 <button label="Save" onClick="@command('saveOrder')"/>

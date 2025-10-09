@@ -1,16 +1,14 @@
 # @AfterCompose
 {% include supported-since.html version="6.0.2" %}
 
-Syntax
-======
+# Syntax
 ```java
 @AfterCompose
 
 @AfterCompose(superclass=true)
 ```
 
-Description
-===========
+# Description
 **Target:** method, class
 
 **Purpose:** Marker annotation to identify a life cycle method which will be invoked in doAfterCompose() of [BindComposer](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/BindComposer.html). **Only one @AfterCompose-annotated method is allowed at the most** in a ViewModel class. If you set annotation element **superclass** to **true**, the ViewModel's parent class's @AfterCompose-annotated method will be invoked first, then the child's; this logic repeats on super class. If a class has no method with @AfterCompose, no method will be called (including the super class's).<sub>[1]</sub>.
@@ -95,8 +93,7 @@ class CorrectChild extends Parent {
 }
 ```
 
-Example
-=======
+# Example
 
 ```java
 public class FooViewModel {

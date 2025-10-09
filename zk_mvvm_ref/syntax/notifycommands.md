@@ -1,8 +1,7 @@
 # @NotifyCommands
 {% include supported-since.html version="8.0.0" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @NotifyCommands({
@@ -11,8 +10,7 @@ Syntax
 })
 ```
 
-Description
-===========
+# Description
 
 **Target:** class
 
@@ -20,8 +18,7 @@ Description
 
 Notice that the `commandName` which gets triggered is a command in our view model, and it would be triggered once in the initialization of `_vm_.expression`. If the command does not exist, it would do nothing and pass to another annotation - `@ToClientCommand`.
 
-Example
-=======
+# Example
 
 ```java
 @NotifyCommands({

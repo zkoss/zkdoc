@@ -1,12 +1,10 @@
 # @template
 
-Syntax
-======
+# Syntax
 
 `@template(`*`[EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** model, children
 
@@ -14,8 +12,7 @@ Description
 
 The evaluation result of EL expression should be the name of a template which is used to render child components. The result template's name can be any template defined in the same id space.
 
-Example
-=======
+# Example
 
 #### Dynamic template upon iteration status variable
 ```xml

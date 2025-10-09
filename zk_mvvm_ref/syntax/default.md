@@ -1,14 +1,12 @@
 # @Default
 
-Syntax
-======
+# Syntax
 
 ```java
 @Default("defaultValue")
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (for initial and command methods)
 
@@ -16,8 +14,7 @@ Description
 
 You give annotation element's value with a String, and ZK will cast to the corresponding type of the parameter. You can apply this annotation after other parameter related annotation e.g., @BindingParam. If a parameter retrieved by first annotation is null, it uses the default value specified in this annotation.
 
-Example
-=======
+# Example
 
 #### Pass parameter from a zul
 ```xml

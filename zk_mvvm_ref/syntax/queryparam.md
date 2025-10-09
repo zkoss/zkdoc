@@ -1,7 +1,6 @@
 # @QueryParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @QueryParam
@@ -9,8 +8,7 @@ Syntax
 @QueryParam("keyString")
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (initial method and command method)
 
@@ -25,8 +23,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @QueryParam String keyString
 ```
 
-Example
-=======
+# Example
 
 Http request parameters is appended at URL like: 
 

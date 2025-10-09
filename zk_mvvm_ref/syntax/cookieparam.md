@@ -1,7 +1,6 @@
 # @CookieParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @CookieParam
@@ -9,8 +8,7 @@ Syntax
 @CookieParam("keyString")
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (for initial and command methods)
 
@@ -25,8 +23,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @CookieParam String keyString
 ```
 
-Example
-=======
+# Example
 
 ```java
 public class HttpParamVM {

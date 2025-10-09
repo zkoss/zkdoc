@@ -1,14 +1,12 @@
 # @Immutable
 
-Syntax
-======
+# Syntax
 
 ```java
 @Immutable
 ```
 
-Description
-===========
+# Description
 
 **Target:** class, getter method
 
@@ -20,8 +18,7 @@ Calling setters on such an object directly invoke the original setter and thus w
 also see: [ProxyHelper.addIgnoredProxyClass(java.lang.Class)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/proxy/ProxyHelper.html#addIgnoredProxyClass%28java.lang.Class%29)
 This also reduces the resources needed in the application. 
 
-Example
-=======
+# Example
 
 ```java
 @Immutable

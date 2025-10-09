@@ -1,21 +1,18 @@
 # @DependsOn
 
-Syntax
-======
+# Syntax
 ```java
 @DependsOn
 ```
 
-Description
-===========
+# Description
 **Target:** getter method
 
 **Purpose:** To notify change upon property's dependency.
 
 It has the same function as`@NotifyChange` but with an inverse meaning. It is used to notify binder that getter method's target property is changed because one or more properties it depends on are changed. It can eliminate distributed ` @NotifyChange` annotations in a ViewModel when a calculated property depends on multiple properties.
 
-Example
-=======
+# Example
 ```java
 public class FullnameViewModel {
     private String firstname;

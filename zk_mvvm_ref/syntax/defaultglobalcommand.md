@@ -1,15 +1,13 @@
 # @DefaultGlobalCommand
 {% include supported-since.html version="6.5.1" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @DefaultGlobalCommand
 ```
 
-Description
-===========
+# Description
 
 **Target:** method
 
@@ -17,8 +15,7 @@ Description
 
 When a binder receives a global command, it starts to look for ViewModel's global command methods by matching its name. If the binder cannot find a matched method, it invokes existing default global command method.
 
-Example
-=======
+# Example
 
 #### Mark a default global command method
 ```java

@@ -1,7 +1,6 @@
 # @HeaderParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @HeaderParam
@@ -9,8 +8,7 @@ Syntax
 @HeaderParam("keyString")
 ```
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (applied on initial and command methods)
 
@@ -25,8 +23,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @HeaderParam String keyString
 ```
 
-Example
-=======
+# Example
 
 ```java
 public class HttpParamVM {

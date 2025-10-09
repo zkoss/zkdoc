@@ -2,8 +2,7 @@
 
 {% include supported-since.html version="8.5.2" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @Destroy
@@ -11,8 +10,7 @@ Syntax
 @Destroy(superclass=true)
 ```
 
-Description
-===========
+# Description
 
 **Target:** method, class
 
@@ -99,8 +97,7 @@ class CorrectChild extends Parent {
 }
 ```
 
-Example
-=======
+# Example
 ```java
 public class FooViewModel {
     @Destroy

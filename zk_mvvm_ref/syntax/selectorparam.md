@@ -1,7 +1,6 @@
 # @SelectorParam
 
-Syntax
-======
+# Syntax
 
 ```java
 @SelectorParam
@@ -21,8 +20,7 @@ Syntax
 
 For selector syntax, please refer to [SelectorComposer](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)
 
-Description
-===========
+# Description
 
 **Target:** A method's parameter (for initial and command methods)
 
@@ -39,8 +37,7 @@ The value can be omitted if name is the same as the annotated parameter.
 @SelectorParam String tagName
 ```
 
-Example
-=======
+# Example
 
 ```xml
 <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.SelectorParamVM')">

@@ -1,23 +1,20 @@
 # @ImmutableFields
 {% include supported-since.html version="8.0.1" %}
 
-Syntax
-======
+# Syntax
 
 ```java
 @ImmutableFields
 ```
 
-Description
-===========
+# Description
 
 **Target:** class, getter method
 
 **Purpose:** Marker annotation to indicate all of the fields on this object (or objects of this class) are treated as immutable.
 Unlike [@Immutable](immutable), this annotation still enables proxy createion for the current object in a Form Binding, but no proxies are created for any of its fields.
 
-Example
-=======
+# Example
 
 ```java
 public class VM {

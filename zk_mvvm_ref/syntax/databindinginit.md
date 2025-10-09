@@ -1,7 +1,6 @@
 # @init
 
-Syntax
-======
+# Syntax
 
 `@init(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
@@ -12,8 +11,7 @@ We can use simplified syntax to initialize a component's attribute.
 <label value="@(vm.message)"/>
 ```
 
-Description
-===========
+# Description
 
 **Target Attribute:** any
 
@@ -39,8 +37,7 @@ Since each annotation has different functions, some annotations may ignore key-v
 
 It could be any name; it's used as a key for parameter related Java annotation in a ViewModel.
 
-Example
-=======
+# Example
 
 #### Usage example in viewModel attribute
 ```xml

@@ -1,7 +1,6 @@
 # @NotifyChange
 
-Syntax
-======
+# Syntax
 ```java
 @NotifyChange("anotherProperty")
 
@@ -12,8 +11,7 @@ Syntax
 @NotifyChange(".")
 ```
 
-Description
-===========
+# Description
 **Target:** method (setter or command method)
 
 **Purpose:** To notify binder of one or more properties change.
@@ -22,8 +20,7 @@ By default, a property set by binder through setter method will notify this prop
 
 Use "." to enforce reloading the instance of the class in where the annotation locates, not an instance's property.
 
-Example
-=======
+# Example
 ```java
 public class OrderVM {
 

@@ -1,21 +1,18 @@
 # &lt;if>
-Syntax
-======
+# Syntax
 ```xml
 <if test="@load(vm.visible)">
  ...
 </if>
 ```
 
-Description
-===========
+# Description
 **Purpose:**
 
 The conditional execution of its body according to the value of the **test** attribute
 
 
-Example
-=======
+# Example
 ```xml
 <if test="@load(vm.rootVisible)">
 	<if test="@load(vm.visible)">

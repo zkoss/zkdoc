@@ -1,12 +1,10 @@
 # @global-command
 
-Syntax
-======
+# Syntax
 
 `@global-command(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** event attributes (e.g. onClick, onOK)
 
@@ -28,8 +26,7 @@ Since each annotation has different functions, some annotations may ignore key-v
 
 It could be any name; it's used as a key for parameter related Java annotation in a ViewModel.
 
-Example
-=======
+# Example
 
 ```xml
 <button label="Save" onClick="@command('saveOrder') @global-command('refresh')"/>

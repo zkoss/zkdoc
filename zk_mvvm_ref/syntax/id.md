@@ -1,12 +1,10 @@
 # @id
 
-Syntax
-======
+# Syntax
 
 `@id(`*`[EvaluateOnce EL-expression]`*`)`
 
-Description
-===========
+# Description
 
 **Target Attribute:** viewModel, form, validationMessages
 
@@ -18,8 +16,7 @@ When we use it in "validationMessages" attribute, it gives an id to reference va
 
 When we use it in "form" attribute, it gives an id to reference form's middle object. Form status variable's naming is: `[middleObjectId]Status`
 
-Example
-=======
+# Example
 
 #### Usage in viewModel attribute
 ```xml

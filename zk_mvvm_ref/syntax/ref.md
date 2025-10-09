@@ -3,13 +3,11 @@
 
 > Since6.0.1
 
-Syntax
-======
+# Syntax
 
 `@ref(`*`[EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** custom attribute.
 
@@ -17,8 +15,7 @@ Description
 
 Create this binding on a component's custom attribute whose name can be referred and used in another EL expression. The EL expression that refers to the reference must be the child of the component that contains the reference binding. This feature is useful in shortening EL expressions by referring to it in another expression.
 
-Example
-=======
+# Example
 
 ```xml
 <div p="@ref(vm.selectedPerson)">

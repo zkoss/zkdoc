@@ -1,12 +1,10 @@
 # @converter
 
-Syntax
-======
+# Syntax
 
 `@converter(`*`[EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** any (except viewModel, validationMessages, form, and event attributes)
 
@@ -26,8 +24,7 @@ Since each annotation has different functions, some annotations may ignore key-v
 
 It could be any name. It's used as a key for parameter related Java annotation in a ViewModel.
 
-Example
-=======
+# Example
 
 #### Use built-in converter named formatedNumber
 ```xml

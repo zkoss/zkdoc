@@ -1,12 +1,10 @@
 # @load
 
-Syntax
-======
+# Syntax
 
 `@load(`*`[EL-expression], [conditionKeyword]=[EvaluateOnce EL-expression]`*`) `
 
-Description
-===========
+# Description
 
 **Target Attribute:** any (except viewModel, validationMessages)
 
@@ -28,8 +26,7 @@ The evaluation result must be one or more command names.
 
 Command name must correspond to the name specified in Java annotation`@Command` in a ViewModel.
 
-Example
-=======
+# Example
 
 ```xml
 <label value="@load(vm.user.id)"/>

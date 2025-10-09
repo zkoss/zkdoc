@@ -3,15 +3,13 @@
 
 > Don't get confused with @BindingParam.
 
-Syntax
-======
+# Syntax
 
 ```java
 @BindingParams
 ```
 
-Description
-===========
+# Description
 
 **Target:** Command method's parameter
 
@@ -23,8 +21,7 @@ The object should have a no-arg constructor, or the object can't be created. Pas
 
 Though both annotations can be applied to an object, it is slightly different between `@BindingParams` and `@BindingParam`. Using `@BindingParams` needs to pass some properties and will be combined into one object, while using `@BindingParam` should pass a JSON object from client binding.
 
-Example
-=======
+# Example
 
 #### A plain old Java object (POJO)
 ```java
