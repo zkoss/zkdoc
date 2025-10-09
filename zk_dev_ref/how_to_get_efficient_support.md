@@ -26,7 +26,7 @@ for us to find enough clues and provide timely support. Instead of
 providing a screenshot, please follow the tips and instructions below
 when submitting your issue.
 
-![](/zk_dev_ref/images/ZK_MeetRpoblem01.png)
+![](/zk_dev_ref/images/zk_meetrpoblem01.png)
 
 ## Provide Sufficient information
 
@@ -78,7 +78,7 @@ You can check if there is any JavaScript error by opening the developer
 tool. For example, press F12 to open the chrome developer tool/ Console
 tab:
 
-![](/zk_dev_ref/images/Chrome-js-error.png)
+![](/zk_dev_ref/images/chrome_js_error.png)
 
 You can extract the error message by:
 
@@ -101,10 +101,10 @@ this URL, remember to turn on the js debug in your zk.xml.
 2.  Do the steps to reproduce your problem
 3.  Send request details as HAR to us
     1. [Save all network requests to a HAR file in Chrome](https://developers.google.com/web/tools/chrome-devtools/network/reference#save-as-har)
-    ![](/zk_dev_ref/images/Save_har_chrome.png)
+    ![](/zk_dev_ref/images/save_har_chrome.png)
 
     2. Save request details as HAR in Firefox 
-    ![](/zk_dev_ref/images/Save_har_firefox.png)
+    ![](/zk_dev_ref/images/save_har_firefox.png)
 
     3. [Save request details as HAR in Edge](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide/network)
 
@@ -112,7 +112,7 @@ If your browser doesn't support saving requests as HAR, or just 1
 request is related, you can also send us the screenshot of AU request
 like:
 
-![](/zk_dev_ref/images/Au-request.png)
+![](/zk_dev_ref/images/au_request.png)
 
 ### Provide Related Source
 
@@ -222,10 +222,10 @@ first.
 
 If you don't know the zul's path or if the path is incorrect, just visit
 `http://localhost:8080`. A browser will show a link with the correct
-context path: ![](/zk_dev_ref/images/JettyRoot.png)
+context path: ![](/zk_dev_ref/images/jettyroot.png)
 
 Click the link and it will list folders then you can navigate to find
-the zul. ![](/zk_dev_ref/images/ListFolder.png)
+the zul. ![](/zk_dev_ref/images/listfolder.png)
 
 # How to get Browser Performance Profile
 
