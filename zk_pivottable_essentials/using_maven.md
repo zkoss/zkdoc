@@ -24,7 +24,7 @@ for available versions.
 
 ## Migrate to Keikai-poi
 {% include supported-since.html version="3.1.0" %}
-Because zpoi has security vulnerabilities, you can change to include keikai-poi 5.13.0, which is the latest version of keikai 5.x. This is necessary for those users who need exporting a pivot table to Excel xlsx files.
+For improved security and maintainability, Pivottable now uses keikai-poi 5.13.0 (or the latest version of Keikai 5.x) instead of zpoi. This change is required for users who need to export pivot tables to Excel (.xlsx) files.
 
 ```xml
 <dependency>
