@@ -6,9 +6,9 @@ ZUL Editor is an intelligent text editor designed for authoring \*.zul &
 \*.zhtml files. When you double click the zul file or zhtml file in the
 **Navigator View**, **Package Explorer View** or **Project Explorer
 View** the file will be opened in the ZUL Editor automatically. The
-editor provides <i>Syntax Coloring</i>, <i>Syntax Check</i>, <i>Mark
-Occurrence</i>, <i>Content Assist</i>, <i>Java Doc Hovering</i>,
-<i>Hyperlink Navigation</i> and <i>ZUL file formatting</i>.
+editor provides **Syntax Coloring**, **Syntax Check**, **Mark
+Occurrence**, **Content Assist**, **Java Doc Hovering**,
+**Hyperlink Navigation** and **ZUL file formatting**.
 
 # Mark Occurrences
 
@@ -70,8 +70,8 @@ You can change this shortcut in the menu **\[Window\]/
 
 For basic usage scenario, please refer to Eclipse official tutorial:
 
-- <http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/gettingStarted/qs-ContentAssist.htm>
-- <http://help.eclipse.org/indigo/topic/org.eclipse.wst.sse.doc.user/topics/tsrcedt005.html>
+- http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/gettingStarted/qs-ContentAssist.html
+- http://help.eclipse.org/indigo/topic/org.eclipse.wst.sse.doc.user/topics/tsrcedt005.html
 
 ## ZUL & XML Tag Content Assist
 
@@ -93,8 +93,8 @@ content assist.
 ## Zscript Content Assist
 
 Zscript content assist allows you to rapidly implement code by providing
-auto completion functionality within **<zscript>`...`</zscript>**,
-**<attribute name='onXXX'>`...`</attribute>** code blocks and event
+auto completion functionality within `<zscript>`...`</zscript>`,
+`<attribute name='onXXX'>`...`</attribute>` code blocks and event
 attribute values in the ZUML tag.
 
 ![](images/contentAssistZscript.png)
@@ -173,7 +173,7 @@ In the ZUL Editor, you can navigate to the Java class specified in
 **use="**ClassName**"** and **apply="**ClassName**"** attributes using
 Hyperlink Navigation.
 
-![](images/studio-hyperlink.png) ![ center \| 700px](studio-hyperlink-class.png)
+![](images/studio-hyperlink.png) ![](studio-hyperlink-class.png)
 
 (For this to work you need to set a source file for that class. If the
 class is within a JAR File which does not have a corresponding source
@@ -183,8 +183,7 @@ for more information on how to do this.)
 ## Zscript Hyperlinks
 
 Zscript hyperlink navigation also works in the same manner as Eclipse's
-Java editor. Within **\<zscript\>...\</zscript\>** and **\<attribute
-name = "onXXX"\>...\</attribute\>** tags you are able to navigate to
+Java editor. Within `<zscript\>` and `<attribute name = "onXXX"\>`...`</attribute>` tags you are able to navigate to
 other functions using hyperlink functionality (Ctrl + click the
 resource).
 
@@ -197,9 +196,9 @@ Navigation.
 
 ZUL Editor supports zul file source formatting function, in a currently
 opened zul editor, right click on a zul file and select **Source /
-Format**, the source code will be formatted like a standard xml file,
-but the code content in **<zscript>...</zscript>** and
-**<attribute name = "onEventName">...</attribute>** will be preserved.
+Format**, the source code will be formatted like a standard XML file,
+but the code content in `<zscript>` and
+`<attribute name = "onEventName">`...`</attribute>` will be preserved.
 To format part of the content, you should make a selection first and
 then follow the above instruction.
 
