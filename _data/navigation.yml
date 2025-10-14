@@ -761,8 +761,6 @@ zk_component_dev_essentials:
         url: /zk_component_dev_essentials/what_is_a_zk_component
       - title: How does a ZK Component work
         url: /zk_component_dev_essentials/how_does_a_zk_component_work
-      - title: Development Tools
-        url: /zk_component_dev_essentials/development_tools
       - title: Creating ZK Component with Maven Archetype
         url: /zk_component_dev_essentials/creating_zk_component_with_maven_archetype
   - title: Creating a simple ZK Component
