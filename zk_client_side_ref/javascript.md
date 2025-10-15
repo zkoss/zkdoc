@@ -6,9 +6,9 @@ title: "javascript"
 
 
 ```xml
-<javascript package="`pkg_name`" [merge="false|true"]/>  
+<javascript package="pkg_name" [merge="false|true"]/>  
 <javascript package="pkg_name" merge="a_package_to_merge_to"/>
-<javascript package="`pkg_name`" [ondemand="false|true"/>  
+<javascript package="pkg_name" [ondemand="false|true"/>  
 <javascript src="a_uri"/>  
 <javascript>  
 js_code  
@@ -36,16 +36,10 @@ It specifies the package to load.
 
 `[Optional]`
 
-It specifies the URI of the JavaScript file to load. The URI can accept
-[ Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path),
-`~./` (such as "~./foo/whatever.js").
+It specifies the URI of the JavaScript file to load. The URI can accept [Classpath Web Resource Path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path), `~./` (such as "~./foo/whatever.js").
 
 If this addon [ depends on another addon]({{site.baseurl}}/zk_client_side_ref/depends),
-ZK generates its javaScript into a output page's `
-
-<head>
-
-`after the JavaScript of another addon.
+ZK generates its javaScript into a output page's `<head>` after the JavaScript of another addon.
 
 # merge
 
@@ -53,7 +47,7 @@ ZK generates its javaScript into a output page's `
 
 It is used with the `package` attribute to specify whether the package
 should be loaded as part of the `zk` package. If not specified, each
-package will be loaded separatedly. This speeds up the loading if we
+package will be loaded separately. This speeds up the loading if we
 merge several packages into one.
 
 Since ZK 6, it is allowed to specify the target package in the merge
@@ -80,8 +74,8 @@ section.
 
 It is used to 'cancel' the package specified in another `javascript`
 element. By default, JavaScript packages are loaded on-demand (i.e.,
-when it is required). By specify \<javascript;\> in a language
-definition/addon, we could force some packages to load at the beginning.
+when it is required). By specify `<javascript\>` in a language
+definition/addon, we can force some packages to load at the beginning.
 But if you change your mind, you could either remove the `javascript`
 element, or specify another `javascript` element with `ondemand="true"`.
 
