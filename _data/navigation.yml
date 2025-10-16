@@ -3020,3 +3020,6 @@ zuml_ref:
         url: /zuml_ref/extensions/zscript
       - title: EL Expressions
         url: /zuml_ref/extensions/el_expressions
+small_talk:
+  - title: "All Small Talk Articles"
+    url: /categories/#small-talk

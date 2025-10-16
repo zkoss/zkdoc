@@ -26,6 +26,8 @@ The documentation is organized into themed "books", each in its own directory:
 - `zk_installation_guide/` - Setup and installation
 - `zk_config_ref/` - Configuration reference
 - Plus additional specialized guides (Charts, Calendar, Spring, etc.)
+- `small_talk/` - a collection of technical articles by ZK developers and contributors. It's a technical resource for the ZK community, covering topics like new releases, specific features, and experimental add-ons.
+
 
 ### Navigation System
 - Main navigation defined in `_data/navigation.yml`

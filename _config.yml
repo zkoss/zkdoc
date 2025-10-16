@@ -125,6 +125,15 @@ defaults:
     values:
       sidebar:
         nav: "zuml_ref"
+  - scope:
+     path: "_posts"
+    values:
+      sidebar:
+        nav: "small_talk"
+
+category_archive:
+  type: liquid
+  path: /categories/
 
 atom_feed:
   hide: true
@@ -136,4 +145,7 @@ exclude:
   - "*.code-workspace"
   - "README.md"
   - "CLAUDE.md"
+  - "*.sh"
 
+include:
+  - "_pages"

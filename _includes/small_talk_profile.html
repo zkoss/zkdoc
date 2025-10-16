@@ -1,0 +1,29 @@
+{%- comment -%}
+    This is the author profile banner for "Small Talk" pages.
+    It's included in the `single` layout, right after the page title.
+{%- endcomment -%}
+
+{%- assign author = site.data.authors[page.author] -%}
+
+<div class="smalltalk_profile_base profile-banner">
+    {%- if page.date -%}
+    <div class="meta-item">
+        <i class="fas fa-calendar-alt fa-fw"></i>
+        <span><span class="label">Date:</span> {{ page.date | date: "%B %d, %Y" }}</span>
+    </div>
+    {%- endif -%}
+
+    {%- if page.version -%}
+    <div class="meta-item">
+        <i class="fas fa-code-branch fa-fw"></i>
+        <span><span class="label">Version:</span> {{ page.version }}</span>
+    </div>
+    {%- endif -%}
+
+    {%- if author -%}
+    <div class="meta-item">
+        <img src="{{ author.avatar }}" alt="{{ author.name }}" class="author-avatar" />
+        <span><span class="label">Author:</span> {{ author.name }}</span>
+    </div>
+    {%- endif -%}
+</div>

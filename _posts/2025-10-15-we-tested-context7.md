@@ -1,32 +1,35 @@
 ---
 author: hawk
-date: 2025-10-14
+date: 2025-10-15
 version: 10.0.0
+category: small-talk
+title: "We Tested Context7 with ZK Documentation — Here's What We Learned"
 ---
 
-## The Story
+# The Story
 
-Recently, I came across a few articles about AI-assisted coding tools and noticed a lot of discussion around Context7. The idea sounded promising — Context7 allows developers to feed documentations directly to AI models, improving their understanding of specific frameworks and libraries.
+Recently, I came across a few articles about AI-assisted coding tools and noticed a lot of discussion around [Context7](https://context7.com/). The idea sounded promising — Context7 allows developers to feed documentation directly to AI models, improving their understanding of specific frameworks and libraries.
 
 That made us curious: could Context7 help AI models provide better answers for ZK Framework developers? We decided to find out.
 
-## Executive Summary
+# Executive Summary
 
-We ran a controlled experiment to see if Context7 MCP server could improve AI-generated answers to ZK Framework questions. Our setup was straightforward: using the same AI model (Claude Code) with two conditions — with and without Context7 MCP server — across ten common ZK questions.
+We ran a controlled experiment to see if [Context7 MCP server](https://github.com/upstash/context7) could improve AI-generated answers to ZK Framework questions. Our setup was straightforward: using the same AI model (Claude Code) with two conditions — with and without Context7 MCP server — across ten common ZK questions.
 
-**Expected Result**: Context7 should help by providing up-to-date documentation.
+## Expected Result 
+Context7 should help by providing up-to-date documentation.
 
-**Actual Result**:
+## Actual Result
 - Without Context7: 73.8% (PASS)
 - With Context7: 59% (FAIL)
 - **Performance decreased by about 15 percentage points when using Context7**
 
-**Why This Matters**:
+## Why This Matters
 - Context7 is popular in the AI coding community
 - Understanding when it works (and doesn't) helps developers choose the right tools
 - Highlights the importance of how documentation retrieval systems interact with AI models
 
-## Background: What is Context7?
+# Background: What is Context7?
 
 Context7 is an MCP (Model Context Protocol) server by Upstash that automatically retrieves documentation for over 33,000 libraries. Used by AI coding assistants like Cursor and Claude Code, it promises "up-to-date, version-specific documentation".
 
@@ -45,7 +48,7 @@ Context7 is an MCP (Model Context Protocol) server by Upstash that automatically
 
 **Critical Note**: ZK documentation already works well with Claude Code directly. Our test focused specifically on Context7's retrieval quality.
 
-## The Experiment Design
+# The Experiment Design
 
 **Creating the Test**:
 
@@ -82,9 +85,9 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
     - Correctness of examples
     - Actionability
 
-## The Results: Context7 Made Things Worse
+# The Results: Context7 Made Things Worse
 
-**Overall Scores**:
+## Overall Scores:
 
 | Metric | Without Context7 | With Context7 | Change |
 |--------|-----------------|---------------|--------|
@@ -96,7 +99,7 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
 
 **Not a single question improved with Context7.**
 
-**Question-by-Question Results**:
+## Question-by-Question Results:
 
 | Question | Without Context7 | With Context7 | Change |
 |----------|-----------------|---------------|--------|
@@ -111,7 +114,7 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
 | Q9: CSRF security | 65% | 20% | **-45** 🔴 |
 | Q10: Event handling | 85% | 80% | -5 |
 
-## What This Means for ZK Developers
+# What This Means for ZK App Developers
 
 **Should You Use Context7 with ZK?**
 
@@ -139,7 +142,7 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
     - Read complete guides for complex topics
 
 3. **Ask in ZK Community**
-    - Forum: https://forum.zkoss.org/
+    - [Forum](https://forum.zkoss.org/)
     - Get human expertise for complex questions
 
 **The Silver Lining**:
@@ -147,7 +150,7 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
 - AI models CAN already answer ZK-related questions well when given direct access to documentation
 - The issue lies in how documentation is retrieved, not in its quality
 
-## Conclusion
+# Conclusion
 
 **Key Message**:
 This isn't about Context7 being bad — it's about understanding when tools fit your use case. Context7 excels at API references but struggles with comprehensive guides. For ZK Framework questions, direct documentation access works better.
@@ -166,7 +169,7 @@ This isn't about Context7 being bad — it's about understanding when tools fit 
 
 **Note**: AI tooling evolves quickly, and future versions of Context7 or similar systems may perform differently. The results shared here reflect the state of the tools as of October 2025.
 
-## Looking Forward: Exploring Better Solutions
+# Looking Forward: Exploring Better Solutions
 
 While Context7 didn’t perform well in this test, the experiment highlighted an important trend — AI-assisted development is becoming part of everyday workflows. As developers increasingly use AI tools, we see value in making ZK’s resources more accessible to both humans and machines.
 
@@ -198,8 +201,7 @@ This doesn’t mean shifting focus away from ZK itself. Rather, it’s about imp
 
 Reach out to us at info@zkoss.org. We're open to collaboration and always eager to hear from developers using ZK Framework.
 
-## Repository and Resources
-
+# Repository 
 [ZK Framework Official Documentation Repository](https://github.com/zkoss/zkdoc)
 
 
