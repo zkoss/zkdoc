@@ -37,6 +37,8 @@ main:
     url: /zk_jsp_tags_essentials/
   - title: ZK Studio Essentials
     url: /zk_studio_essentials/
+  - title: Small Talks
+    url: /categories/#small-talk
   - title: Latest JavaDoc
     url: https://zkoss.org/javadoc/latest/zk/
   - title: Latest JavaScript Doc
