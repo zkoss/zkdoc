@@ -1,0 +1,30 @@
+<!-- based on the same file in minimal mistakes -->
+{% if post.categories contains "small-talk" %}
+  <div class="archive__item">
+    <div class="card">
+      <div class="card__header">
+        <h2 class="card__title" itemprop="headline">
+          <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+        </h2>
+      </div>
+      {% if post.excerpt %}
+        <div class="card__content">
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+        </div>
+      {% endif %}
+      {% include small-talk-meta.html %} <!-- add this meta -->
+    </div>
+  </div>
+{% else %}
+  <div class="{{ include.type | default: 'list' }}__item">
+    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+      <h2 class="archive__item-title" itemprop="headline">
+        <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+      {% include page__meta.html type=include.type %}
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>
+      {% endif %}
+    </article>
+  </div>
+{% endif %}

@@ -110,7 +110,7 @@ def main():
                 f"date: {formatted_date}\n"
                 f"author: \"{author}\"\n"
                 f"version: \"{version}\"\n"
-                f"category: small_talk\n"
+                f"category: small-talk\n"
                 f"link: \"{link}\"\n"
                 f"---\n"
             )
