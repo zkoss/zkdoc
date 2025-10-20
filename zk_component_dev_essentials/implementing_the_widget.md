@@ -11,5 +11,4 @@ skeletal implementations are shown in the image below.
 
 For the purposes of this tutorial, we will use
 [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html). Before we proceed, we
-need to decide the name of the widget class. Let’s assume
-<mp>com.foo.SimpleLabel</mp>.
+need to decide the name of the widget class. Let’s assume `com.foo.SimpleLabel`.

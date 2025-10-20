@@ -31,9 +31,8 @@ in Java. The out object at least implements the push and unshift method
 to write the content to the end or to the beginning. It is by default an
 array, but the client application might use different kinds of objects.
 
-<mp>domAttrs\_</mp> is a (protected) method inherited from
-[zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html). It returns all HTML
-attributes required, such as style, id and so on. You can override it if
+`domAttrs_()` is a (protected) method inherited from
+[zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html). It returns all HTML attributes required, such as style, id and so on. You can override it if
 you want.
 
 If we do not require multiple styles per component we can just implement
