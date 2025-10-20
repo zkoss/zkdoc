@@ -112,8 +112,31 @@ All tool scripts should have header comments to explain their purpose and usage.
 
 The site uses a customized version of Minimal Mistakes:
 - Local theme path: Uses local development version
-- Custom skin: "zk" 
+- Custom skin: "zk"
 - Logo: `/assets/images/ZK-logo.svg`
 - Search: Google Custom Search Engine integration
 - Analytics: Google Analytics configured
 - theme files are at /Users/hawk/Documents/workspace/KEIKAI-SPACE/minimal-mistakes
+- all css files are in theme project
+
+### CSS Best Practices
+
+**PRIORITY: Always use `em` units instead of `px`** for:
+- Font sizes
+- Spacing (margin, padding)
+- Element dimensions that should scale with text
+- Border widths (except 1px hairlines)
+- Box shadows (blur, spread values)
+
+**Use standard Minimal Mistakes breakpoints** (defined in `_sass/minimal-mistakes/_variables.scss`):
+- `$small`: 600px
+- `$medium`: 768px
+- `$medium-wide`: 900px
+- `$large`: 1024px
+- `$x-large`: 1280px
+
+**Benefits of `em` units:**
+- Scales with user font size preferences (accessibility)
+- Maintains proportions across different contexts
+- More maintainable and flexible
+- Better responsive design
