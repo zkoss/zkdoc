@@ -2750,6 +2750,8 @@ zk_studio_essentials:
     children:
         - title: Setting Default JRE In Eclipse
           url: /zk_studio_essentials/setting_default_jre_in_eclipse
+        - title: Setup MySQL DB in Eclipse
+          url: /zk_studio_essentials/setup_mysql_db_in_eclipse
 zuml_ref:
   - title: ZUML
     url: /zuml_ref/zuml
