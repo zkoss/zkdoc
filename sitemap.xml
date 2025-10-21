@@ -7,7 +7,7 @@ layout: null
   {% for page in site.pages %}
   {% unless page.url contains '.css' or page.url contains '.js' or page.url contains 'sitemap.xml' or page.url contains 'feed.xml' %}
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
+    <loc>{{ site.url }}{{ page.url | remove: 'index.html' | remove: '.html' }}</loc>
   </url>
   {% endunless %}
   {% endfor %}
