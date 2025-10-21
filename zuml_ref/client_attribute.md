@@ -2,10 +2,10 @@
 title: "Client Attribute"
 ---
 
-Name: client attribute  
-Namespace URI: http://www.zkoss.org/2005/zk/client/attribute
-Namespace shortcut: client/attribute  
-JavaDoc: [org.zkoss.zk.ui.metainfo.LanguageDefinition#CLIENT_ATTRIBUTE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#CLIENT_ATTRIBUTE_NAMESPACE)
+* Name: client attribute  
+* Namespace URI: http://www.zkoss.org/2005/zk/client/attribute
+* Namespace shortcut: client/attribute  
+* JavaDoc: [org.zkoss.zk.ui.metainfo.LanguageDefinition#CLIENT_ATTRIBUTE_NAMESPACE](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/metainfo/LanguageDefinition.html#CLIENT_ATTRIBUTE_NAMESPACE)
 
 It is the reserved namespace for specifying client-side DOM attributes.
 Unlike the client namespace, which assigns something to widgets, the
@@ -21,7 +21,7 @@ tree directly at the client.
 > that widget might output.
 
 For example, suppose you want to listen to the `onload` event, you can
-do as follows[^1].
+do as follows. For more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/iframe#onload).
 
 ```xml
 <iframe src="http://www.google.com"  height="300px"
@@ -44,13 +44,12 @@ The other use of the client-attribute namespace is to specify attributes
 that are available only to certain browsers, such as accessibility and
 [Section 508](http://www.section508.gov/index.cfm?FuseAction=Content&ID=12#Web).
 
-## Binding to client attribute from MVVM view model
+# Binding to client attribute from MVVM view model
 
-Client-attributes are added to the rendering information of components,
-and must be follow the same rules as the special attributes.
+Client-attributes are added to the rendering information of components and must follow the same rules as the special attributes.
 
-The client attribute must be initialized using the \`\${value}\` syntax,
-and doesn't support \`@init\`, \`@load\` or \`@bind\`.
+The client attribute must be initialized using the EL expression e.g. `${value}`,
+and doesn't support data binding syntax, e.g. `@init`, `@load` or `@bind`.
 
 ```xml
 <!-- "forEach" versus children binding  -->
@@ -66,9 +65,9 @@ and doesn't support \`@init\`, \`@load\` or \`@bind\`.
 </div>
 ```
 
-## Data-Attribute Handler
+# Data-Attribute Handler
 
-Developer can define their own data-handler for the client attribute to
+Developers can define their own data-handler for the client attribute to
 have an extra functionality. For example, (jQuery's mask)
 
 **Zul File:**
@@ -98,26 +97,32 @@ have an extra functionality. For example, (jQuery's mask)
 </client-config>
 ```
 
-### Syntax Definition
+## Syntax Definition
 
-- **\<data-handler\>**: a group of a data-attribute handler [^2] [^3]
-  - **\<name\>**: the attribute name. (i.e. data-name) [^4]
-  - **\<override\>**: true means the handler is used to override another
-    existing one. [^5]
-  - **\<link\>**: the url for extra CSS files [^6][^7]
-  - **\<script\>** the script content [^8] [^9]
-    - **\<script src="foo.js"\>** the src attribute for the script
-      (Javascript library or data-handler script), it can be a url of a
-      JS script from context-path or a url from class-path. For example,
-          <script-uri>~./myscript</script-uri>
-    - Notice that the last `
-      <script>
+- `data-handler` (required, one or more)
+  - Defines a data-attribute handler.
 
-      ` tag should be your data-handler script.
+  Children:
+  - `name` (required)
+    - The attribute name (example: `mask` → `data-mask`).
+  - `override` (optional)
+    - Boolean. If `true`, this handler overrides an existing one.
+  - `link` (optional, one or more)
+    - URL(s) for extra CSS files to include.
+  - `script` (required, one or more)
+    - Script content or references. Scripts are executed in the provided order.
+    - Use `<script src="...">` to include an external JS file (can be a context-path or class-path URL). Example: `<script src="~./myscript.js" />`.
+    - The last `script` entry must contain the data-handler implementation (the handler function).
+
+Notes:
+- Scripts are applied in order; include libraries first and the handler implementation last.
+- `data-handler` can be declared multiple times to register multiple handlers.
+- The handler function receives `(wgt, dataValue)` (widget and attribute value) as parameters and may attach listeners or transform `event.data.value` as needed.
+
 
 To see more examples, please refer to [ZK8: Simple but Powerful; Using Data-handler API to Work with Front-End Technologies](http://blog.zkoss.org/index.php/2015/08/25/zk8-simple-but-powerful-using-data-handler-api-to-work-with-front-end-technologies/)
-and [Github](https://github.com/zkoss/zk8-datahandler) (you can design
-your own data-attribute handler and contribute this project).
+and [Github](https://github.com/zkoss/zk8-datahandler). You can design
+your own data-attribute handler and contribute this project.
 
 
 # Version History
@@ -126,21 +131,3 @@ your own data-attribute handler and contribute this project).
 |---------|-----------|-----------------------------------------------------------------------------------|
 | 5.0.3   | July 2010 | The client-attribute namespace was introduced.                                    |
 | 8.0.0   | May 2015  | [Support client data attributes handler](http://tracker.zkoss.org/browse/ZK-2730) |
-
-[^1]: For more information, please refer to [ZK Component Reference: iframe]({{site.baseurl}}/zk_component_ref/iframe#onload).
-
-[^2]: Required
-
-[^3]: One or Many
-
-[^4]:
-
-[^5]: Optional
-
-[^6]:
-
-[^7]:
-
-[^8]: Required
-
-[^9]: One or Many
