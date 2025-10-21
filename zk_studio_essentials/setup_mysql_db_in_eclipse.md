@@ -28,10 +28,10 @@ in this page are not matching what you are using.
     ![open_DataSourceExplorer](images/001_open_datasourceexplorer.png)  
       
 2.  Right click the Database Connection folder, select **New...**.  
-    ![New_Database_in_DataSourceExplorer](images/001_1_new_database_in_datasourceexplorer.png)  
+    ![New_Database_in_DataSourceExplorer](images/000_new_database_in_datasourceexplorer.png)  
       
 3.  Select the Database you suppose to connect ( *MySQL 5.1* as the
-    example in this document), you can type custom name and description
+    example in this document), you can type a custom name and description
     for mnemonic, click **Next**.  
     ![elect_DB_Type](images/002_select_db_type.png)  
       
@@ -101,5 +101,5 @@ Database icon in the Database Connections folder.
 2.  If you had specify the right **MySQL Connector/J** jar file before,
     then Step **4** & **5** can be skipped, you can directly modify the
     following field to match your MySQL Database configuration:  
-    ![modify_MySQL_DB_connection_setting](012_modify_mysql_db_connection_setting.png)  
+    ![modify_MySQL_DB_connection_setting](images/12_modify_mysql_db_connection_setting.png)  
     then proceed the subsequent steps to finish setup.
