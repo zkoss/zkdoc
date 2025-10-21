@@ -5,11 +5,10 @@ If you specify the attribute with `true` on a
 [ContainerWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html)
 or
 [MeshWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.MeshWidget.html)
-including
-<window>`, `<groupbox>`, `<panelchildren>`, `<tabpanel>`, `<grid>`, `<listbox>`, `<tree> (a scrollable container),
+including `<window>`, `<groupbox>`, `<panelchildren>`, `<tabpanel>`, `<grid>`, `<listbox>`, `<tree>` (a scrollable container),
 the **error message box** (poped up by violating rules in `constraint`
 attribute), combobox popup, datebox popup, inside the container
-component will also move by scrolling[^1]. Those popups will disappear
+component will also move by scrolling. (For more information, please refer to [zul.ContainerWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html) Those popups will disappear
 when you scroll them out of the visible area.
 
 ![](images/errobox-scrollable.gif)
@@ -68,19 +67,16 @@ scrolling.
 
 When a user swipes on the content of Listbox, Grid, Tree in a tablet
 device, the friendly scrollbar will appear. To disable the friendly
-scrollbar, please use the following setting[^2].
+scrollbar, please use the following setting.
 
-`tablet only`
+For more information, please refer to [ZK Component Reference Tablet Devices: Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/listbox#Friendly_Scrolling_Support),
+[ZK Component Reference Tablet Devices: Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/grid#Friendly_Scrolling_Support),
+[ZK Component Reference Tablet Devices: Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/tree#Friendly_Scrolling_Support).
+
+**tablet only**
 
 ```xml
 <div xmlns:ca="client/attribute">
     <listbox ca:data-scrollable="false"/>
 </div>
 ```
-
-# references/
-* For more information, please refer to https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html
-
-* For more information, please refer to [ZK Component Reference Tablet Devices: Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/listbox#Friendly_Scrolling_Support),
-    [ZK Component Reference Tablet Devices: Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/grid#Friendly_Scrolling_Support),
-    [ZK Component Reference Tablet Devices: Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/tree#Friendly_Scrolling_Support).
