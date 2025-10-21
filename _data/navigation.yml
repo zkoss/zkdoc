@@ -2747,6 +2747,9 @@ zk_studio_essentials:
     url: /zk_studio_essentials/trouble_shooting
   - title: Eclipse Tips
     url: /zk_studio_essentials/eclipse_tips
+    children:
+        - title: Setting Default JRE In Eclipse
+          url: /zk_studio_essentials/setting_default_jre_in_eclipse
 zuml_ref:
   - title: ZUML
     url: /zuml_ref/zuml
