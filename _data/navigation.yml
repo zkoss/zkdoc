@@ -1486,6 +1486,8 @@ zk_dev_ref:
         url: /zk_dev_ref/overture/extensions
       - title: Example Project
         url: /zk_dev_ref/overture/example_project
+  - title: AI-Assisted Development
+    url: /zk_dev_ref/ai_assisted_development
   - title: UI Composing
     url: /zk_dev_ref/ui_composing/ui_composing
     children:
