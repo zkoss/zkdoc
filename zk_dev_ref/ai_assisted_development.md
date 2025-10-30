@@ -22,6 +22,10 @@ Currently, we provide a rule-based approach, so you can tell an AI model to read
 
 For more details on this approach, see [Empower Your AI with ZK Knowledge to Boost Development](https://www.zkoss.org/wiki/Small_Talks/2025/July/Empower_Your_AI_with_ZK_Knowledge_to_Boost_Development).
 
+# Our Experience with AI Tools
+
+We are actively exploring and testing various AI tools to understand their effectiveness for developing zk app. For instance, we conducted an experiment with [Context7](https://context7.com/), an MCP server designed to provide AI models with up-to-date documentation. Our findings, detailed in [We Tested Context7 with ZK Documentation — Here's What We Learned](/2025/10/15/we-tested-context7.html), showed that while the concept is promising, direct access to ZK documentation by AI models currently yields better results than through Context7 for complex ZK-related queries. We continue to evaluate and provide feedback on these tools to ensure the best possible experience for ZK developers.
+
 # ZK's Role: A UI Framework
 
 It's important to understand that ZK is a UI framework and does not provide any built-in APIs for communicating with AI models (LLMs) like ChatGPT, Gemini, or Claude. You are responsible for managing the interaction with these models.
