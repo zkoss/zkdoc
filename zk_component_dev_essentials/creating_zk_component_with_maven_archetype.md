@@ -2,12 +2,10 @@
 
 ## Create a Maven Project
 
-- **\[File\]** -\> **\[New\]** -\> **\[Other\]** --\> **\[Maven
-  Project\]**
-    
+- File > New > Other > Maven Project
   ![](images/ZK_Installation_Guide_Maven_step1.png)
 - Make sure *Create a simple project* is unticked in the first screen of
-  the New Maven Project wizard and click **Next \>**.
+  the New Maven Project wizard and click **Next**.
     
   ![](images/ZK_Installation_Guide_Maven_Archetype_step1.png)
 - From the *Select an Archetype* screen, select **zk**[^1] from the
@@ -30,7 +28,7 @@ populate the property *zk-version-since* correctly, leading to an error
 message as such:
 
 - Unable to create project from archetype
-  \[org.zkoss:zk-archetype-component:0.8.0 -\>
+  ? org.zkoss:zk-archetype-component:0.8.0 -\>
   <http://mavensync.zkoss.org/maven2/>\], Archetype
   org.zkoss:zk-archetype-component:0.8.0 is not configured property
   *zk-version-since* is missing.
@@ -39,7 +37,6 @@ The simple workaround for this problem is to just try again and the
 *zk-version-since* property should appear in the list. (The same apply
 to all other properties)
 
-</ref>
 
 - Click **Finish** and the Eclipse status bar should say ' *Creating
   zk-archetype-component* ' and ' *Updating Maven Dependencies* '. If
@@ -49,11 +46,7 @@ to all other properties)
     
   ![](images/ZKComDevEss_Maven_CreateComponent_setp6.png)
 
-------------------------------------------------------------------------
 
-
-
-------------------------------------------------------------------------
 
 ## How to run Maven project on Run-Jetty-Run
 
@@ -145,8 +138,8 @@ Y:
 
 ## Import Maven project into Eclipse
 
-- **\[File\]** -\> **\[Import\]** -\> **\[Maven\]** --\> **\[Existing
-  Maven Projects\]**
+- File -\> Import -\> Maven --\> Existing
+  Maven Projects
     
   ![](images/ZKComDevEss_Maven_CreateComponent_import1.png)
 - After this, the user should now get a new project in the Package
