@@ -176,7 +176,7 @@ context file:
 Here we introduce some main elements and will leave the details in the
 subsequent sections.
 
-- LIne 12: The <http> element is the parent for all web-related
+- Line 12: The `<http>` element is the parent for all web-related
   namespace functions and we use `auto-config` to save configuration
   efforts. We also create a HTTPS configuration sample in
   `applicationContext-security.xml`. Please see source code for details.
@@ -184,32 +184,32 @@ subsequent sections.
 <!-- -->
 
 - Line 32: Each Spring Security application which uses the namespace
-  configuration must include <authentication-manager> . It is
+  configuration must include `<authentication-manager>` . It is
   responsible for registering the `AuthenticationManager` which provides
   authentication services to the application.
 - Line 33:We implement our `MyUserDetailsService` bean to provide
-  authentication service and configure it in <authentication-provider>
+  authentication service and configure it in `<authentication-provider>`
   element.
 
 # Secure Pages
 
-In Spring Security, pages are protected by <intercept-url> element under
-<http>. We can specify in `pattern` to match against the URLs of
-incoming requests using an ant path style syntax in <intercept-url>
+In Spring Security, pages are protected by `<intercept-url>` element under
+`<http>`. We can specify in `pattern` to match against the URLs of
+incoming requests using an ant path style syntax in `<intercept-url>`
 element. The `access` attribute defines the access permission for
 requests which match the given `pattern`. Here we use simple role-based
 access control.
 
 In most cases, we usually secure all pages with :
 
-<intercept-url pattern="/**" access="ROLE_USER" />
+`<intercept-url pattern="/**" access="ROLE_USER" />`
 
 The "ROLE_USER" is an authority string we define and give for each
 authenticated user in our custom user service, `MyUserDetailsService`.
 
 Then we can selectively allow some pages for anonymous access like:
 
-<intercept-url pattern="/login.zul" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+`<intercept-url pattern="/login.zul" access="IS_AUTHENTICATED_ANONYMOUSLY" />`
 
 `IS_AUTHENTICATED_ANONYMOUSLY` is a built-in permission value used to
 grant access to anonymous users
@@ -582,7 +582,7 @@ redirect the anonymous user to the login page. We will show how to
 achieve this in ZK:
 
 First, we have to catch the exception thrown in an event listener by [ ZK error handling mechanism](/zk_dev_ref/ui_patterns/error_handling),
-configure <error-page> in `zk.xml`.
+configure `<error-page>` in `zk.xml`.
 
 **zk.xml**
 
