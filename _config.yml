@@ -24,11 +24,12 @@ search_provider: lunr
 #  search_engine_id: a4a9ff8c389a44148
 # check page indexing at https://search.google.com/search-console
 
+#loadga4 declared in minimal-mistakes
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-57B6X16TY1"
-    anonymize_ip: true
+    policy_url: "https://www.zkoss.org/privacy"
 
 defaults:
   - scope:
