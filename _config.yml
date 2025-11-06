@@ -16,9 +16,12 @@ logo: /assets/images/ZK-logo.svg
 #  Lunr search only indexes collection documents e.g. posts or any custom collections you have. It does not currently index site.pages. so we use google search from https://programmablesearchengine.google.com/controlpanel/all
 search                    : true
 search_full_content       : true
-search_provider: google
-google:
-  search_engine_id: a4a9ff8c389a44148
+#  Lunr search only indexes collection documents e.g. posts by default, so we need to enable search_within_pages for all pages
+lunr:
+    search_within_pages: true
+search_provider: lunr
+#google:
+#  search_engine_id: a4a9ff8c389a44148
 # check page indexing at https://search.google.com/search-console
 
 analytics:
