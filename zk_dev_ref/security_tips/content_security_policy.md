@@ -1,4 +1,4 @@
-# What is Content security policy?
+# What is the Content security policy (CSP)?
 
 Content-security-policy (CSP) is a security standard introduced to
 prevent XSS attacks (cross-site scripting) and other content injection
@@ -7,11 +7,7 @@ attacks.
 To reduce those injection risks, CSP provides a way for web applications
 and website owners to declare permissions for loading scripts from only
 approved and trusted sources. To enable CSP, you can either configure
-your web server to return the CSP HTTP header, or use the
-
-<meta>
-
-element.
+your web server to return the CSP HTTP header, or use the `<meta>`.
 
 See more: [Content Security Policy Level 2](https://www.w3.org/TR/CSP2/)
 
@@ -23,11 +19,7 @@ that not all the browsers support CSP.
 (Support browsers: [Content Security Policy 1.0](https://caniuse.com/#feat=contentsecuritypolicy), [Content Security Policy Level 2](https://caniuse.com/#feat=contentsecuritypolicy2))
 
 To enable CSP, you can either configure your web server to return the
-CSP HTTP header, or use the
-
-<meta>
-
-element. The following "directives" are recommended to be defined, which
+CSP HTTP header, or use the `<meta>`. The following "directives" are recommended to be defined, which
 is for protecting against XSS attacks. For complete information please
 reference [CSP official documents](https://www.w3.org/TR/CSP/).
 
@@ -83,3 +75,40 @@ Here's an example of a relaxed policy used in a ZK application:
 ```
 
 - Using [<?header ?>](/zuml_ref/header) to specify a response header.
+
+# Known inline script: href="javascript:;" and CSP Compliance
+
+Some ZK components use `href="javascript:;"` as a workaround to maintain proper accessibility and user interaction behaviors. This pattern is necessary because:
+
+1. Using `href="#"` adds a hash fragment to the URL and alters browser history
+2. Removing the `href` attribute prevents the Enter key from triggering the `onclick` event
+
+However, this pattern violates strict CSP policies that disallow inline JavaScript execution.
+
+## Solution: Using unsafe-hashes
+
+You can allow `href="javascript:;"` while maintaining CSP protection by using the `unsafe-hashes` directive with a SHA-256 hash. This approach:
+
+- Allows only the specific `javascript:;` value
+- Maintains CSP security for other inline code
+- Works with modern browsers that support `unsafe-hashes`
+
+### Steps to implement:
+
+1. Generate the hash for `javascript:;`:
+   ```bash
+   echo -n "javascript:;" | openssl dgst -sha256 -binary | openssl base64
+   ```
+   This generates: `sha256-lfXlPY3+MCPOPb4mrw1Y961+745U3WlDQVcOXdchSQc=`
+
+2. Add the hash to your CSP header configuration:
+   ```xml
+   <?header name="Content-Security-Policy"
+           value="'unsafe-hashes' 'sha256-lfXlPY3+MCPOPb4mrw1Y961+745U3WlDQVcOXdchSQc='" ?>
+   ```
+
+## Reference
+
+- [Content Security Policy unsafe-hashes](https://content-security-policy.com/unsafe-hashes/)
+- [CSP Specification](https://www.w3.org/TR/CSP/)
+- [<?header ?> tag reference](/zuml_ref/header)
