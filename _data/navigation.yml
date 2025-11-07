@@ -61,7 +61,7 @@ zk_essentials:
     children:
       - title: Overview
         url: /zk_essentials/intro/overview
-      - title: Project Structure
+      - title: "Quickstart: a Downloadable Example"
         url: /zk_essentials/intro/project_structure
   - title: 1. User Interface and Layout
     url: /zk_essentials/user_interface_and_layout/
@@ -160,6 +160,8 @@ zk_mvvm_ref:
   - title: Introduction
     url: /zk_mvvm_ref/intro/introduction_of_mvvm
     children:
+      - title: Example Project
+        url: https://github.com/zkoss/zkbooks/tree/master
       - title: Strength of MVVM
         url: /zk_mvvm_ref/intro/strength_of_mvvm
       - title: MVVM and ZK Bind
@@ -623,6 +625,8 @@ zk_client_side_ref:
   - title: Introduction
     url: /zk_client_side_ref/introduction
     children:
+      - title: Example Project
+        url: https://github.com/zkoss/zkbooks/tree/master
       - title: New to JavaScript
         url: /zk_client_side_ref/new_to_javascript
       - title: Object Oriented Programming in JavaScript
@@ -929,6 +933,8 @@ zk_installation_guide:
 zk_style_customization_guide:
   - title: Introduction
     url: /zk_style_customization_guide/introduction
+  - title: Example Project
+    url: https://github.com/zkoss/zkbooks/tree/master
   - title: ZK CSS Class Design
     url: /zk_style_customization_guide/zk_css_class_design
     children:
@@ -1485,7 +1491,7 @@ zk_dev_ref:
       - title: Extensions
         url: /zk_dev_ref/overture/extensions
       - title: Example Project
-        url: /zk_dev_ref/overture/example_project
+        url: https://github.com/zkoss/zkbooks/tree/master
   - title: AI-Assisted Development
     url: /zk_dev_ref/ai_assisted_development
   - title: UI Composing
@@ -2012,8 +2018,8 @@ zk_component_ref:
   - title: Introduction
     url: /zk_component_ref/introduction
     children:
-      - title: Example Source Code
-        url: /zk_component_ref/example_source_code
+      - title: Example Project
+        url: https://github.com/zkoss/zkbooks/tree/master
   - title: Base Components
     url: /zk_component_ref/base_components
     children:

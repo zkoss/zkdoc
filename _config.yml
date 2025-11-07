@@ -13,7 +13,6 @@ minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
 logo: /assets/images/ZK-logo.svg
 
-#  Lunr search only indexes collection documents e.g. posts or any custom collections you have. It does not currently index site.pages. so we use google search from https://programmablesearchengine.google.com/controlpanel/all
 search                    : true
 search_full_content       : true
 #  Lunr search only indexes collection documents e.g. posts by default, so we need to enable search_within_pages for all pages
