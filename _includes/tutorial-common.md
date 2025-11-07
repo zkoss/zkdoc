@@ -5,7 +5,7 @@ Our target application is a simple car catalog application. This application has
 - **View details.**
   - Click an item from the car list, the area below the car list will show the selected car's details including model, price, description, and preview.
 
-![]({{site.baseurl}}/get_started/images/tutorial-searchexample.png)
+![]({{site.baseurl}}/get_started/images/Tutorial-searchexample.png)
 
 
 # Start from Example Project
@@ -103,7 +103,7 @@ the <window> (from top to bottom):
 2.  car list
 3.  car details.
 
-![]({{site.baseurl}}/get_started/images/tutorial-ui-3areas.png)
+![]({{site.baseurl}}/get_started/images/Tutorial-ui-3areas.png)
 
 ## Search Area
 
