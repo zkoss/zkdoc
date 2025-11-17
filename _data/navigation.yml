@@ -1860,6 +1860,8 @@ zk_dev_ref:
         children:
           - title: Spring Security
             url: /zk_dev_ref/integration/spring_security
+          - title: Request headers and CSRF tokens
+            url: /zk_dev_ref/integration/request_headers_and_csrf
       - title: ZK Embedded
         url: /zk_dev_ref/integration/zk_embedded
         children:
