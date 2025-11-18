@@ -48,13 +48,10 @@ for us.
 - Line 21: The cglib is optional. We add it because we use CGLIB-based
   class proxy.
 
-<div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
-
-![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
+**Note:** If you don't use Maven,
 please refer to Spring Security Reference Documentation to check which
 JAR files are needed.
 
-</div>
 
 ## Spring
 
@@ -93,7 +90,6 @@ we don't need to add extra configuration in `web.xml`.
 
     <import resource="applicationContext-security.xml"/>
 </beans>
-    
 ```
 
 - Line 9: We can register beans by class-path scanning to reduce XML
@@ -367,29 +363,23 @@ and a user with "ROLE_USER" can see a disabled "Delete" button. But a
 user with "ROLE_EDITOR" can see the "Delete" button and be able to click
 it.
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring-security-anonymous.png)
+![]({{site.baseurl}}/zk_dev_ref/images/spring_security_anonymous.png)
 
-<div style="text-align:center">
 
 **What a anonymous user see**
 
-</div>
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring-security-user.png)
+![]({{site.baseurl}}/zk_dev_ref/images/spring_security_user.png)
 
-<div style="text-align:center">
 
 **What a user with "ROLE_USER" see**
 
-</div>
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring-security-editor.png)
+![]({{site.baseurl}}/zk_dev_ref/images/spring_security_editor.png)
 
-<div style="text-align:center">
 
 **What a user with "ROLE_EDITOR" see**
 
-</div>
 
 How do we achieve this security control in a zul? We can implement a
 custom tag library to check current user's authorities and apply the tag
