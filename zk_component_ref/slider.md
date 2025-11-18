@@ -118,17 +118,11 @@ of the knob. ScaleInput is the scale ratio of the input size.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| onScroll | **Event:**
-[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content
-of a scrollable component has been scrolled by the user. |
-| onScrolling | **Event:**
-[org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the
-user is scrolling a scrollable component. Notice that the component's
-content (at the server) won't be changed until onScroll is received.
-Thus, you have to invoke the `getPos` method in the
-ScrollEvent class to retrieve the temporary position. |
+| Name        | Event Type                              |
+|-------------|--------------------------------------------|
+| onScroll    | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content of a scrollable component has been scrolled by the user. |
+| onScrolling | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the user is scrolling a scrollable component. Notice that the component's content (at the server) won't be changed until onScroll is received. Thus, you have to invoke the `getPos` method in the ScrollEvent class to retrieve the temporary position. |
+
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -137,18 +131,33 @@ ScrollEvent class to retrieve the temporary position. |
 Available molds of a component are defined in lang.xml embedded in
 zul.jar.
 
-| Name | Snapshot |
-|---|---|
-| default | ![](/zk_component_ref/images/slider_mold_default.png) |
-| sphere | ![](/zk_component_ref/images/slider_mold_sphere.png) |
-| scale | ![](/zk_component_ref/images/slider_mold_scale.png) |
-| {% include supported-since.html version="8.6.0" %}
-
-
-knob | ![](/zk_component_ref/images/knob270.png) |
-
-{% include supported-since.html version="7.0.0" %} the scale mold is deprecated because
-designs are changed.
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Snapshot</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>default</td>
+      <td><img src="/zk_component_ref/images/slider_mold_default.png" alt="default mold" /></td>
+    </tr>
+    <tr>
+      <td>sphere</td>
+      <td><img src="/zk_component_ref/images/slider_mold_sphere.png" alt="sphere mold" /></td>
+    </tr>
+    <tr>
+      <td>scale </td>
+      <td>{% include supported-since.html version="7.0.0" %} the scale mold is deprecated because designs are changed <br/> <img src="/zk_component_ref/images/slider_mold_scale.png" alt="scale mold" />
+        </td>
+    </tr>
+    <tr>
+      <td>knob </td>
+      <td>{% include supported-since.html version="8.6.0" %} <img src="/zk_component_ref/images/knob270.png" alt="knob mold" /></td>
+    </tr>
+  </tbody>
+</table>
 
 # Supported Children
 
