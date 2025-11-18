@@ -112,12 +112,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 # Login Page
 
-No matter how you design a login page, remember to enclose it with a
-`
-
-<form>
-
-`and the login URL you specify in the web security config.
+No matter how you design a login page, remember to enclose it with a `<form>`and the login URL you specify in the web security config.
 
 ```xml
     <n:form action="/login" method="POST">
