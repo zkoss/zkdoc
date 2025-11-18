@@ -2,10 +2,14 @@
 title: "Request headers and CSRF tokens"
 ---
 
-# Request headers and CSRF tokens
+# The Problem: CSRF Protection and ZK Requests
 
-## ZK Client-side header override
+Prior to ZK 10.2.0, developers using Spring Security with ZK faced a significant security limitation. Spring Security's CSRF protection requires special tokens in request headers to prevent Cross-Site Request Forgery attacks. However, ZK's asynchronous update (AU) requests—which handle all user interactions with components—did not support adding custom headers. This forced developers to disable Spring Security's CSRF protection entirely. Although [ZK has built-in CSRF token](/zk_dev_ref/security_tips/cross_site_request_forgery), but an application might contain non-zul pages that need spring security CSRF protection.
 
+Starting with ZK 10.2.0, this limitation is eliminated. You can now add CSRF tokens directly to ZK AU requests through the client-side `getExtraHeaders()` function, enabling full Spring Security CSRF protection without compromise.
+
+# ZK Client-side header override
+{% include supported-since.html version="10.2.0" %}
 Starting with ZK 10.2.0, ZK request headers can be modified directly from client-side by overriding the zAu.getExtraHeaders function.
 
 ```javascript
@@ -36,7 +40,7 @@ zk.afterLoad(function () {
 ]]></script>
 ```
 
-## Case study: CSRF token from an external provider (Spring)
+# Case study: CSRF token from an external provider (Spring)
 
 Adding a header to traffic between a page and a server is common requirement of CSRF configuration. 
 
@@ -46,7 +50,44 @@ In a ZK page, user actions [may trigger zkau requests](/overture/architecture_ov
 
 If the ZK page was opened in a Spring context, for example in an iframe located in a spring-security protected page, the outer page may need to transmit the X-CSRF-TOKEN value to the ZK client, which can then add it as a header in communications to the server.
 
-The outer page needs to know when the ZK content is initialized inside of the iframe, then it needs to send the header value to be used for this page. From the ZK client’s side, it needs to first finish initializing, then request the header value from the outer page. Once it receives the header value, it needs to add it to subsequent zkau requests.
+The outer page needs to know when the ZK content is initialized inside of the iframe, then it needs to send the header value to be used for this page. From the ZK client's side, it needs to first finish initializing, then request the header value from the outer page. Once it receives the header value, it needs to add it to subsequent zkau requests.
+
+## Communication Flow
+
+Here's how the CSRF token is passed from the outer page to the ZK iframe:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────┐
+│                                                                                    │
+│  Outer Page (Spring Security protected)     Inner Page (ZK iframe)                 │
+│  ════════════════════════════════════════   ═════════════════════════════          │
+│                                                                                    │
+│                                             1. ZK page loads in iframe             │
+│                                             │  postMessage("csrfTokenValueRequest")│
+│                                             ├─────────────────────────────────>    │
+│                                             │                                      │
+│  2. Outer page receives request             │                                      │
+│     postMessage("csrfTokenValue")           │                                      │
+│     ├─────────────────────────────────────<┤                                       │
+│     │                                       │                                      │
+│     │                                       3. ZK page receives token              │
+│     │                                       │  Configures getExtraHeaders()        │
+│     │                                       │  to include X-CSRF-TOKEN             │
+│     │                                       │                                      │
+│     │                                       4. ZK sends AU request                 │
+│     │                                       │  with X-CSRF-TOKEN header            │
+│     │                                       ├──────────────────────────────────>   │
+│     │                                       │        Spring Server                 │
+│     │                                       │                                      │
+│     │                                       5. Server validates token              │
+│     │                                       │  and processes request               │
+│     │                                       │<──────────────────────────────────   ┤
+│     │                                       │                                      │
+│                                                                                    │
+└────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+## Implementation Steps
 
 * ZK client initialization and header request to the outer page:
 
