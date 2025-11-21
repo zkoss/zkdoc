@@ -40,7 +40,65 @@ zk.afterLoad(function () {
 ]]></script>
 ```
 
-# Case study: CSRF token from an external provider (Spring)
+## Case study: Spring-Security 6 BREACH changes to token handling
+
+An important change was made in [Spring-security 6 in regarding to token handling](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#csrf-token-request-handler-breach).
+
+```BREACH protection is provided by encoding randomness into the CSRF token value to ensure the returned CsrfToken changes on every request. When the token is later resolved as a header value or request parameter, it is decoded to obtain the raw token which is then compared to the persisted CsrfToken.```
+
+To support this, we can use the approach described in [the multi-page application section](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#csrf-integration-javascript-mpa) of the Spring-security CSRF documentation.
+
+Using ZK's initiator pattern, we can create the the meta tags when a page is initialized, and add them to the page response using org.zkoss.zk.ui.sys.PageCtrl.addAfterHeadTags(String). This allow us to create arbitrary text content to be added to the header after the ZK scripts.
+```java
+//creates meta with the token info which can be read by the JS override
+String metas = "<meta name='_csrf' content='"+tokenSupplier.getToken()+"' />"
+            + "<meta name='_csrf_header' content='"+tokenSupplier.getHeaderName()+"' />";
+((PageCtrl) page).addAfterHeadTags(metas);
+```
+We can also load the JS file containing the getExtraHeaders override in the initiator, to be added as a child of the first root element of the page:
+
+```java
+Script jsScript = new Script();
+jsScript.setSrc("~./static/js/csrf-header-override.js"); //replace with location of your js script
+page.getFirstRoot().appendChild(jsScript);
+```
+[Initiator class source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/SpringSecurityCsrfInitiator.java)
+
+In javascript, we retrieve the values provided in the meta elements declared above, and add them to the ZK headers:
+```javascript
+var token = $("meta[name='_csrf']").attr("content");
+var header = $("meta[name='_csrf_header']").attr("content");
+extraHeaders[header] = token; //add or replace the header for a given key
+```
+[JS override source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/resources/web/static/js/csrf-header-override.js)
+
+The initiator is activated in zk.xml using a listener element
+```xml
+<listener>
+    <listener-class>org.zkoss.zkspringboot.security.SpringSecurityCsrfInitiator</listener-class>
+</listener>
+```
+[zk.xml source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/resources/metainfo/zk/zk.xml)
+
+With these changes, we can switch from disabling spring CSRF to enabling with a configuration matching the application's needs.
+```java
+//before applying extra headers:
+//    you need to disable spring CSRF to make ZK AU pass security filter
+//    ZK already sends an AJAX request with a built-in CSRF token,
+//    please refer to https://www.zkoss.org/wiki/ZK%20Developer's%20Reference/Security%20Tips/Cross-site%20Request%20Forgery
+//    https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#disable-csrf
+//    http.csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable());
+//after applying extra headers:
+//    Enable CSRF protection in spring security, using the initiator
+//    /zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/SpringSecurityCsrfInitiator.java
+//    to include the header and values to ZK's requests after page load
+http.csrf(csrf -> csrf.csrfTokenRepository
+        (CookieCsrfTokenRepository.withHttpOnlyFalse())
+);
+```
+[web security configuration source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/WebSecurityConfig.java)
+
+## Case study: CSRF token from an external provider (Spring)
 
 Adding a header to traffic between a page and a server is common requirement of CSRF configuration. 
 
