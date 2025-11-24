@@ -4,13 +4,13 @@ title: "Request headers and CSRF tokens"
 
 # The Problem: CSRF Protection and ZK Requests
 
-Prior to ZK 10.2.0, developers using Spring Security with ZK faced a significant security limitation. Spring Security's CSRF protection requires special tokens in request headers to prevent Cross-Site Request Forgery attacks. However, ZK's asynchronous update (AU) requests—which handle all user interactions with components—did not support adding custom headers. This forced developers to disable Spring Security's CSRF protection entirely. Although [ZK has built-in CSRF token](/zk_dev_ref/security_tips/cross_site_request_forgery), but an application might contain non-zul pages that need spring security CSRF protection.
+Prior to ZK 10.2.0, developers using Spring Security with ZK faced a security limitation. Spring Security's CSRF protection requires special tokens in request headers to prevent Cross-Site Request Forgery attacks. However, ZK's asynchronous update (AU) requests—which handle all user interactions with components—did not support adding custom headers. This forced developers to disable Spring Security's CSRF protection entirely. Although [ZK has built-in CSRF token](/zk_dev_ref/security_tips/cross_site_request_forgery), but an application might contain non-zul pages that need spring security CSRF protection.
 
 Starting with ZK 10.2.0, this limitation is eliminated. You can now add CSRF tokens directly to ZK AU requests through the client-side `getExtraHeaders()` function, enabling full Spring Security CSRF protection without compromise.
 
 # ZK Client-side header override
 {% include supported-since.html version="10.2.0" %}
-Starting with ZK 10.2.0, ZK request headers can be modified directly from client-side by overriding the zAu.getExtraHeaders function.
+Starting with ZK 10.2.0, ZK request headers can be modified directly from client-side by overriding the zAu.getExtraHeaders function. This allows most Spring Security CSRF setups to work seamlessly with ZK by attaching the required CSRF token to every AU request.
 
 ```javascript
 <script><![CDATA[
@@ -39,6 +39,8 @@ zk.afterLoad(function () {
 });
 ]]></script>
 ```
+
+In the next sections, we explore two advanced use cases showing how this approach works with different Spring Security CSRF token setups.
 
 ## Case study: Spring-Security 6 BREACH changes to token handling
 
