@@ -50,6 +50,16 @@ An important change was made in [Spring-security 6 in regarding to token handlin
 
 To support this, we can use the approach described in [the multi-page application section](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#csrf-integration-javascript-mpa) of the Spring-security CSRF documentation.
 
+### sample deployement
+
+You can apply this solution by copying the following into your application:
+* [initiator class](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/SpringSecurityCsrfInitiator.java)
+* [header override javascript](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/resources/web/static/js/csrf-header-override.js)
+
+and activate it with a listener element in zk.xml and by configuring spring security using http.csrf (see below)
+
+### implementation details
+
 Using ZK's initiator pattern, we can create the the meta tags when a page is initialized, and add them to the page response using org.zkoss.zk.ui.sys.PageCtrl.addAfterHeadTags(String). This allow us to create arbitrary text content to be added to the header after the ZK scripts.
 ```java
 //creates meta with the token info which can be read by the JS override
