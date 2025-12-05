@@ -7,7 +7,7 @@ title: "The event-time-warning Element"
 ```xml
 <event-time-warning>a_number</event-time-warning>
 ```
-
+{% include supported-since.html version="3.6.3" %}
 `[Default: 600]`
 
 It specifies the time, in seconds, to show a warning message if an event

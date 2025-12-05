@@ -7,7 +7,7 @@ title: "The disable-zscript Element"
 ```xml
 <disable-zscript>false|true</disable-zscript>
 ```
-
+{% include supported-since.html version="5.0.8" %}
 `[Default: false (enabled)]`
 
 Specifies whether or not to disable the use of

@@ -7,7 +7,7 @@ title: "The file-item-factory-class Element"
 ```xml
 <file-item-factory-class>`a_class_name''`</file-item-factory-class>
 ```
-
+{% include supported-since.html version="8.0.2" %}
 `[Default: null]`
 
 It specifies the class that is used to create a file item for fileupload
@@ -44,9 +44,3 @@ public class Foo implements DiskFileItemFactory {
     }
 }
 ```
-
-# Version History
-
-| Version | Date      | Content                                                               |
-|---------|-----------|-----------------------------------------------------------------------|
-| 8.0.2   | 2016/2/17 | [The element is introduced](http://tracker.zkoss.org/browse/ZK-3132). |
