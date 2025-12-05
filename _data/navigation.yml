@@ -2413,7 +2413,7 @@ zk_component_ref:
       - title: Barcode
         url: /zk_component_ref/barcode
       - title: BarcodeScanner
-        url: /zk_component_ref/barcode_scanner
+        url: /zk_component_ref/barcodescanner
       - title: Cropper
         url: /zk_component_ref/cropper
       - title: Camera
