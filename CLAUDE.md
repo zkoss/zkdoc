@@ -66,8 +66,29 @@ npm run validate-by-books
 
 # Convert navigation URLs to lowercase
 npm run lowercase-nav-urls
+
+# Extract ZK components from XSD (generate component checklist)
+npm run extract-components
+
+# Extract components as JSON format
+npm run extract-components-json
+
+# Extract components with verbose output
+npm run extract-components-verbose
+
+# Extract and verify against documentation (slower)
+npm run extract-components-scan
 ```
 All tool scripts should have header comments to explain their purpose and usage.
+
+#### Component Extraction Tool
+The `extract-zul-components.js` script extracts all usable ZK components from the official ZUL XSD schema:
+- Downloads and parses `zul.xsd` from zkoss.org
+- Uses built-in lists to categorize components (fast by default)
+- Optional: Cross-references with `zk_component_ref/` documentation using `--scan-docs`
+- Categorizes into: UI components, non-UI elements, deprecated, and internal/abstract
+- Generates sorted alphabetical list in Markdown or JSON format
+- Performance: Fast by default (skips doc scanning), use `--scan-docs` only when documentation changes
 
 ### Available Shell Scripts
 - `preview.sh` - Start Jekyll development server

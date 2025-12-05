@@ -12,7 +12,11 @@
     "lowercase-links": "node lowercase-links.js",
     "lowercase-links-dry": "node lowercase-links.js --dry-run",
     "lowercase-links-save": "node lowercase-links.js --save-report",
-    "lowercase-nav-urls": "node lowercase-nav-urls.js"
+    "lowercase-nav-urls": "node lowercase-nav-urls.js",
+    "extract-components": "node extract-zul-components.js",
+    "extract-components-json": "node extract-zul-components.js --json",
+    "extract-components-verbose": "node extract-zul-components.js --verbose",
+    "extract-components-scan": "node extract-zul-components.js --scan-docs"
   },
   "keywords": [],
   "author": "",
