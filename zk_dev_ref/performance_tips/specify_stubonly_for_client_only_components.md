@@ -164,7 +164,7 @@ information.
 |---------|------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.2   | June, 2012 | [Bug: stubonly doesn't work](http://tracker.zkoss.org/browse/ZK-1182), and change the event handle from origin event to StubEvent. |
 
-{{ ZKDevelopersReferencePageFooter}}
+
 
 [^1]: Please refer to [ZK-1094](http://tracker.zkoss.org/browse/ZK-1094)
     for a real case.

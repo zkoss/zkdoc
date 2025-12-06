@@ -113,4 +113,4 @@ Please reference the documentation of each feature to see if any
 configuration is required and [contact us](https://www.zkoss.org/support/about/contact) if you have any
 questions.
 
-{{ ZKDevelopersReferencePageFooter}}
+

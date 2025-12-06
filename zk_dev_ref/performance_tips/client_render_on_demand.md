@@ -106,7 +106,7 @@ enable it for a subset of the descendants. For example,
 </window>
 ```
 
-{{ ZKDevelopersReferencePageFooter}}
+
 
 [^1]: A widget is the (JavaScript) object running at the client to
     represent a component

@@ -85,5 +85,3 @@ To estimate the upgrading effort, we suggest a checklist:
     existing bug patch. If that bug is fixed in the new version, you can
     remove the patch.
 6.  Check for Java Compiler Error
-
-{{ ZKDevelopersReferencePageFooter}}

@@ -101,7 +101,7 @@ Once set, descendant components unless it was set explicitly.
 |---------|---------------|--------------------------------------------------------------------------------------------------|
 | 5.0.6   | January, 2011 | The attribute called `org.zkoss.zk.ui.stub.native` was introduced to disable the *stub-ization*. |
 
-{{ ZKDevelopersReferencePageFooter}}
+
 
 [^1]: In fact, it will still create some components for the rerender
     purpose, such as
