@@ -2,6 +2,8 @@
 title: "Splitter"
 ---
 
+{% include Deprecated_Content.html %} Deprecated {% include supported-since.html version=
+10.3.0 %}
 
 - Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
 - Java API: [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
