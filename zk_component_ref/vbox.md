@@ -2,6 +2,8 @@
 title: "Vbox"
 ---
 
+{% include Deprecated_Content.html %} Deprecated {% include supported-since.html version=
+10.3.0 %}
 
 - Demonstration: [Vbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Vbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vbox.html)
