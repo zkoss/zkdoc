@@ -179,6 +179,10 @@ current directory is.
 
 
 # Disable All Logs
+{% include DeprecatedSince.md version=10.3.0 %}
+
+Use SLF4J API for logging instead.
+
 
 If you want to disable all loggers completely or change the level for
 all loggers, you don't need to prepare a logging configuration file.
