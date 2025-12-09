@@ -2,6 +2,8 @@
 title: "Hbox"
 ---
 
+{% include Deprecated_Content.html %} Deprecated {% include supported-since.html version=
+10.3.0 %}
 
 - Demonstration: [Hbox](http://www.zkoss.org/zkdemo/layout/box)
 - Java API: [org.zkoss.zul.Hbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hbox.html)
