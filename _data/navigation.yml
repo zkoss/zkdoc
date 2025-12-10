@@ -1698,6 +1698,8 @@ zk_dev_ref:
             url: /zk_dev_ref/ui_patterns/the_native_namespace
           - title: The XHTML Component Set
             url: /zk_dev_ref/ui_patterns/the_xhtml_component_set
+          - title: Using native HTML in zul pages
+            url: /zk_dev_ref/ui_patterns/html_to_zk
       - title: Long Operations
         url: /zk_dev_ref/ui_patterns/long_operations
         children:

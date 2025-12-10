@@ -6,7 +6,7 @@ Here we discuss how to use HTML tags directly in a ZUML document. There
 are several ways as described in the following sections, and you could
 choose one based on your requirements.
 
-| What to consider | html component | [native namespace](/zk_dev_ref/ui_patterns/HTML_Tags/The_native_Namespace) | [XHTML components](/zk_dev_ref/ui_patterns/HTML_Tags/the_xhtml_component_set) | [JSP](/zk_dev_ref/integration/jsp) |
+| What to consider | html component | [native namespace](/zk_dev_ref/ui_patterns/The_native_Namespace) | [XHTML components](/zk_dev_ref/ui_patterns/the_xhtml_component_set) | [JSP](/zk_dev_ref/integration/jsp) |
 |---|---|---|-------------------------------------------------------------------|--------------------------------------------|
 | Update Content Dynamically | Yes | No | Yes| No |
 | Mix with ZUL components | No | Yes | Yes| Yes/No |
