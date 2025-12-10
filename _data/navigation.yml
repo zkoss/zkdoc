@@ -1494,6 +1494,9 @@ zk_dev_ref:
         url: https://github.com/zkoss/zkbooks/tree/master
   - title: AI-Assisted Development
     url: /zk_dev_ref/ai_assisted_development
+    children:
+    - title: ZK Documentation MCP Server
+      url: /zk_dev_ref/zk_doc_mcp_server
   - title: UI Composing
     url: /zk_dev_ref/ui_composing/ui_composing
     children:
