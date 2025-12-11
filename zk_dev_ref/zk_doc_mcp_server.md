@@ -56,7 +56,7 @@ uvx zk-doc-mcp-server init
 ```
 
 This command:
-1. **Clones/syncs** the documentation repository to `ZK_DOC_SRC_DIR`
+1. **Clones/syncs** the documentation repository to `ZK_MCP_SRC_DIR`
 2. **Pre-indexes** the documentation for semantic search
 
 After running `init`, subsequent server startups can be immediately ready for doc search. Otherwise, you might need to wait for several minutes for background indexing.
@@ -163,17 +163,17 @@ None - this tool takes no parameters.
 ```json
 {
   "settings": {
-    "ZK_DOC_SRC_DIR": "~/.zk-doc-mcp/repo",
-    "ZK_DOC_VECTOR_DB_DIR": "~/.zk-doc-mcp/chroma_db",
-    "ZK_DOC_FORCE_REINDEX": false,
-    "ZK_DOC_LOG_LEVEL": "INFO",
-    "ZK_DOC_USE_GIT": true,
-    "ZK_DOC_CLONE_METHOD": "https",
-    "ZK_DOC_REPO_URL": "https://github.com/zkoss/zkdoc.git",
-    "ZK_DOC_GIT_BRANCH": "master",
-    "ZK_DOC_FEEDBACK_ENABLED": true,
-    "ZK_DOC_FEEDBACK_RETENTION_DAYS": 90,
-    "ZK_DOC_FEEDBACK_GITHUB_REPO": "zkoss/zkdoc"
+    "ZK_MCP_SRC_DIR": "~/.zk-doc-mcp/repo",
+    "ZK_MCP_VECTOR_DB_DIR": "~/.zk-doc-mcp/chroma_db",
+    "ZK_MCP_FORCE_REINDEX": false,
+    "ZK_MCP_LOG_LEVEL": "INFO",
+    "ZK_MCP_USE_GIT": true,
+    "ZK_MCP_CLONE_METHOD": "https",
+    "ZK_MCP_REPO_URL": "https://github.com/zkoss/zkdoc.git",
+    "ZK_MCP_GIT_BRANCH": "master",
+    "ZK_MCP_FEEDBACK_ENABLED": true,
+    "ZK_MCP_FEEDBACK_RETENTION_DAYS": 90,
+    "ZK_MCP_FEEDBACK_GITHUB_REPO": "zkoss/zkdoc"
   },
   "summary": {
     "total_settings": 11,
@@ -209,19 +209,19 @@ The MCP server behavior can be customized using environment variables. These set
 
 The server provides the following configurable settings:
 
-| Setting | Type | Default | Description |
-|---------|------|---------|-------------|
-| `ZK_DOC_SRC_DIR` | string | `~/.zk-doc-mcp/repo` | Documentation source directory (Git repo or local docs) |
-| `ZK_DOC_VECTOR_DB_DIR` | string | `~/.zk-doc-mcp/chroma_db` | Vector database directory for storing embeddings and search indices |
-| `ZK_DOC_FORCE_REINDEX` | boolean | `false` | Force re-indexing of documentation on startup |
-| `ZK_DOC_LOG_LEVEL` | enum | `INFO` | Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL) |
-| `ZK_DOC_USE_GIT` | boolean | `true` | Enable Git synchronization for documentation |
-| `ZK_DOC_CLONE_METHOD` | enum | `https` | Git clone method (`https` or `ssh`) |
-| `ZK_DOC_REPO_URL` | string | `https://github.com/zkoss/zkdoc.git` | Repository URL to clone documentation from |
-| `ZK_DOC_GIT_BRANCH` | string | `master` | Git branch to pull documentation from |
-| `ZK_DOC_FEEDBACK_ENABLED` | boolean | `true` | Enable feedback collection for search improvements |
-| `ZK_DOC_FEEDBACK_RETENTION_DAYS` | integer | `90` | Days to retain local feedback files |
-| `ZK_DOC_FEEDBACK_GITHUB_REPO` | string | `zkoss/zkdoc` | GitHub repository for feedback issues (built-in) |
+| Setting                          | Default                              | Description                                                         |
+|----------------------------------|--------------------------------------|---------------------------------------------------------------------|
+| `ZK_MCP_SRC_DIR`                 | `~/.zk-doc-mcp/repo`                 | Documentation source directory (Git repo or local docs)             |
+| `ZK_MCP_VECTOR_DB_DIR`           | `~/.zk-doc-mcp/chroma_db`            | Vector database directory for storing embeddings and search indices |
+| `ZK_MCP_FORCE_REINDEX`           | `false`                              | Force re-indexing of documentation on startup                       |
+| `ZK_MCP_LOG_LEVEL`               | `INFO`                               | Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)               |
+| `ZK_MCP_USE_GIT`                 | `true`                               | Enable Git synchronization for documentation                        |
+| `ZK_MCP_CLONE_METHOD`            | `https`                              | Git clone method (`https` or `ssh`)                                 |
+| `ZK_MCP_REPO_URL`                | `https://github.com/zkoss/zkdoc.git` | Repository URL to clone documentation from                          |
+| `ZK_MCP_GIT_BRANCH`              | `master`                             | Git branch to pull documentation from                               |
+| `ZK_MCP_FEEDBACK_ENABLED`        | `true`                               | Enable feedback collection for search improvements                  |
+| `ZK_MCP_FEEDBACK_RETENTION_DAYS` | `90`                                 | Days to retain local feedback files                                 |
+| `ZK_MCP_FEEDBACK_GITHUB_REPO`    | `zkoss/zkdoc`                        | GitHub repository for feedback issues (built-in)                    |
 
 
 ### Example Usages
@@ -231,9 +231,9 @@ The server provides the following configurable settings:
 To clone the documentation repository using SSH instead of HTTPS:
 
 ```bash
-export ZK_DOC_CLONE_METHOD=ssh
-export ZK_DOC_USE_GIT=true
-uv run python3 -m zk_doc_mcp
+export ZK_MCP_CLONE_METHOD=ssh
+export ZK_MCP_USE_GIT=true
+uv run python3 -m ZK_MCP_mcp
 ```
 
 **Prerequisites for SSH:**
@@ -246,9 +246,9 @@ To use a local documentation directory instead of cloning from Git:
 
 ```bash
 # Disable Git sync and point to local directory
-export ZK_DOC_USE_GIT=false
-export ZK_DOC_SRC_DIR=/path/to/local/docs
-uv run python3 -m zk_doc_mcp
+export ZK_MCP_USE_GIT=false
+export ZK_MCP_SRC_DIR=/path/to/local/docs
+uv run python3 -m ZK_MCP_mcp
 ```
 
 #### Example: Force Re-indexing Documentation
@@ -256,8 +256,8 @@ uv run python3 -m zk_doc_mcp
 To rebuild the vector search index from scratch:
 
 ```bash
-export ZK_DOC_FORCE_REINDEX=true
-uv run python3 -m zk_doc_mcp
+export ZK_MCP_FORCE_REINDEX=true
+uv run python3 -m ZK_MCP_mcp
 ```
 
 After re-indexing completes, the server will run normally with the updated index.
