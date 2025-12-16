@@ -26,6 +26,8 @@ Here is [a complete sample]({{site.baseurl}}/zk_config_ref/sample_of_web_xml).
 | compress | [Optional][Default:`true`]<br><br>It specifies whether to compress the output if the browser supports the compression (`Accept-Encoding`) and this Servlet is not included by other Servlets. |
 | log-level | [Optional]<br><br>It specifies the default log level for `org.zkoss`. If not specified, the system default (usually `INFO`) is used.<br><br>Possible values: `OFF`, `ERROR`, `WARNING`, `INFO`, `DEBUG` and `FINER`. Please refer to [ZK Developer's Reference](ZK_Developer's_Reference/Supporting_Utilities/Logger) for details. |
 
+* `resource-uri`: {% include supported-since.html version="9.5.0" %}
+
 # Map URL to ZUML pages
 
 It is suggested to map this servlet to the `zul` and `zhtml` extensions
