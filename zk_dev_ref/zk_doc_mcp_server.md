@@ -269,3 +269,6 @@ Use the `show_settings` tool to verify your configuration is what you expect.
 ## License
 
 [MIT License](LICENSE)
+
+# AI Usage Clarification
+ZK framework does not include any built-in AI features, nor does it send your data to any AI service. Our MCP server simply provides structured access to ZK documentation, so that your own AI model chosen and hosted by you can retrieve relevant information. Using the MCP server does not constitute the use of AI within ZK itself, and ZK does not process, store, or transmit any prompts or model outputs.
