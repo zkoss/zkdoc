@@ -1,3 +1,4 @@
 tool/node_modules
 venv
 logs
+.jekyll-metadata
