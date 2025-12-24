@@ -2,6 +2,7 @@
 title: "Chosenbox"
 ---
 
+{% include supported-since.html version="6.0.1" %}
 
 - [Demonstration](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
 - Java API: [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
@@ -113,94 +114,78 @@ See also:
   previous item if any or input field.
 - Press `ENTER` or `specified separator` to select the focused option.
 
-# Properties
+# Attributes
 
-- **creatable**: specify whether to send an event to server when user
-  inputs an non-existing value by clicking ENTER or separator. Default:
-  **false**
-- **createMessage**: displayed in popup if nothing matches the input
-  value and creatable is true; syntax "{0}" will be replaced with the
-  input value at client side
-- **disabled**: specify whether or not it is disabled. Default:
-  **false**
-- **emptyMessage**: displayed as place holder in input if nothing is
-  selected or focused
-- **model**: specify the <b>ListModel</b> of this <b>chosenbox</b>
+## creatable
+{% include DefaultValue.md value=false %}
 
-<!-- -->
+specify whether to send an event to a server when user inputs a non-existing value by clicking ENTER or separator. 
 
-- If you set <b>ListModelList</b> to the model of <b>chosenbox</b>, all
+## createMessage
+displayed a popup if nothing matches the input value and creatable is true; syntax "{0}" will be replaced with the input value at the client side
+
+## disabled
+{% include DefaultValue.md value=false %}
+
+specify whether or not it is disabled.
+
+## emptyMessage
+displayed as placeholder in input if nothing is selected or focused
+
+## model
+specify the <b>ListModel</b> of this <b>chosenbox</b>
+
+If you set <b>ListModelList</b> to the model of <b>chosenbox</b>, all
   the content will be sent to and processed at the client-side, The
   rendering process is pretty fast with a few items but may cause
   performance issue when the model exceeds 40,000 items and rendering
   them all at once
-- If you set <b>ListSubModel</b> to the <b>chosenbox</b> model, the
+ 
+If you set <b>ListSubModel</b> to the <b>chosenbox</b> model, the
   content of the drop-down list will not be rendered to the
   client-side,and will remain blank until user enters an input. The
   server will then provide a 'matched' content for the input. This will
   cause some delay at the client side because of server processing time
-  and network transfer time
+  and network transfer time. See [Lazy Rendering](#lazy-rendering)
 
-<li>
+## name
+specify the name of the input element of this component
 
-**name**: specify the name of the input element of this component
 
-</li>
-<li>
+## noResultsText
+displayed a popup window if nothing matches the input value and creatable is false; syntax "{0}" will be replaced with
+the input value at client-side 
 
-**noResultsText**: displayed in popup window if nothing matches the
-input value and creatable is false; syntax "{0}" will be replaced with
-the input value at client-side
 
-</li>
-<li>
+## open
+{% include DefaultValue.md value=false %}
 
-**open**: specify whether or not to open the drop-down list. Default:
-**false**
+specify whether or not to open the drop-down list. 
 
-</li>
-<li>
+## tabindex
+{% include DefaultValue.md value=0 %}
 
-**tabindex**: specify the tab order of the input node of this component.
-Default: **0**
+specify the tab order of the input node of this component.
 
-</li>
-<li>
 
-**separator**: the separate characters will work as 'Enter' key when
-clicked on; it will not be considered as an input value. Upon releasing
-the key, it will an send onSearch or onSelect event depending on the
-situation. Supports: 0-9, A-Z (case insensitive), and `,.;'[]/\-=`
+## separator
+the separate characters will work as 'Enter' key when clicked on; it will not be considered as an input value. Upon releasing
+the key, it will an send onSearch or onSelect event depending on the situation. Supports: 0-9, A-Z (case insensitive), and `,.;'[]/\-=`
 
-</li>
-</ul>
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onSelect` | **Event:**
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
-Represents an event caused by user's the selection changed at the
-client. |
-| `onOpen` | **Event:**
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
-Represents an event that indicates an open state that is changed at
-the client. |
-| `onSearch` | **Event:**
-[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
-Represents an event that indicates users inputting an non-existing
-value by clicking ENTER or separator. |
-| `onSearching` | **Event:**
-[org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
-Represents an event sent back to the server caused by user's input
-text. |
-| `onItemClick` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
-Represents an event sent back to the server caused by clicking a
-selected tag. |
+| Name | Event Type           |
+|---|-------------------------|
+| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the selection changed at the client. |
+| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Represents an event that indicates an open state that is changed at the client. |
+| `onSearch` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event that indicates users inputting an non-existing value by clicking ENTER or separator. |
+| `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event sent back to the server caused by user's input text. |
+| `onItemClick` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event sent back to the server caused by clicking a selected tag. |
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- `onItemClick` : {% include supported-since.html version="8.0.2" %} 
+ 
+Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
 
 # Supported Molds
 
