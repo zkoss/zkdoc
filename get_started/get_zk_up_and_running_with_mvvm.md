@@ -314,3 +314,5 @@ previous sections.
 ```
 
 You can view complete zul at [Github](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)
+
+{% include approach_comparison.md %}

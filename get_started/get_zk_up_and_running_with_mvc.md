@@ -298,3 +298,5 @@ public class SearchController extends SelectorComposer<Component> {
 - Line 18: get user-selected item.
 - Line 19~23: publish the selected car detail to the browser by setter
   methods.
+
+{% include approach_comparison.md %}
