@@ -215,3 +215,18 @@ If the problem persists, contact support. Please provide:
 - Steps to reproduce
 - Any relevant screenshots or logs
 
+# Evaluation Warning
+If you are using an evaluation copy of ZK products, you may see messages in your console or on screen, such as:
+- "This is an evaluation copy of ZK EE and the uptime has exceeded the limit, ..."
+- "This is an evaluation copy of ZK EE and will terminate after sixty days from the first date of installation..."
+
+## Suggestion
+1. For licensed customers:
+- Ensure you are accessing the correct ZK EE Maven repository or using the licensed ZK EE JAR files.
+- Remove any evaluation JAR files from your project.
+- If the message persists, contact support@potix.com and provide your invoice or license certificate number.
+
+2. For ongoing evaluation:
+
+You can continue using the evaluation by restarting your web server.
+When ready to purchase or reaching 60 days, please contact info@zkoss.org.
