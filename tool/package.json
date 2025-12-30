@@ -16,7 +16,10 @@
     "extract-components": "node extract-zul-components.js",
     "extract-components-json": "node extract-zul-components.js --json",
     "extract-components-verbose": "node extract-zul-components.js --verbose",
-    "extract-components-scan": "node extract-zul-components.js --scan-docs"
+    "extract-components-scan": "node extract-zul-components.js --scan-docs",
+    "check-since-marks": "node check-missing-since-marks.js",
+    "check-since-marks-save": "node check-missing-since-marks.js --save",
+    "check-since-marks-verbose": "node check-missing-since-marks.js --verbose"
   },
   "keywords": [],
   "author": "",
