@@ -23,6 +23,17 @@ As shown in the diagram above, the tree is separated into two parts - **Logical 
 
 The shadow tree in the example above with EL expression won't be alive once the output is rendered to the client. This is because shadow elements are not applied with dynamic data such as @load expressions, so there is no reason to store them on the server side to burden the memory consumption.
 
+## Key benefits
+- Memory Efficiency: Since shadow elements are not rendered as part of the visual component tree, they significantly reduce the server-side memory footprint and simplify the client-side DOM structure.
+- Performance: By controlling component instantiation logic before it reaches the UI, they minimize unnecessary overhead in complex layouts.
+
+## Common usages
+Shadow elements are typically used to handle the following scenarios in a ZK MVVM application:
+- Dynamic Component Management: Easily add or remove components from the UI based on specific conditions without manual coding.
+- Reactive UI Refresh: Automatically re-render specific areas of the page when underlying data changes, ensuring the view stays in sync with the ViewModel.
+- Permission & Access Control: Conditionally render UI fragments based on user roles or security permissions (e.g., hiding a "Delete" button if the user is not an administrator).
+- Template Injection: Repeatedly apply a specific UI structure (like a list item) using data-driven templates.
+
 # Setup
 Before using shadow elements, make sure you include the required jar - `zuti.jar`. With maven, you should add the dependency below:
 ```xml
