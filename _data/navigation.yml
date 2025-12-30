@@ -691,7 +691,7 @@ zk_client_side_ref:
       - title: AU Requests
         url: /zk_client_side_ref/au_requests
         children:
-          - title: Client-side Firing
+          - title: Firing Events at Client-side
             url: /zk_client_side_ref/client_side_firing
           - title: Server-side Processing
             url: /zk_client_side_ref/server_side_processing

@@ -1,5 +1,5 @@
 ---
-title: "Client-side Firing"
+title: "Firing Events at Client-side"
 ---
 
 
