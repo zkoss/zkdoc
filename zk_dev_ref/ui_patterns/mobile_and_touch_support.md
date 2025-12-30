@@ -23,10 +23,12 @@ client device. If the user sets their mobile browser to "request desktop
 page", ZK will detect it as a desktop device accordingly, based on the
 UserAgent string.
 
-The following JavaScript flags may be set to true, or to a version
+### Browser detection flags 
+The following JavaScript flags may be set to `true`, or to a version
 number on the `zk` JavaScript object depending on the information
-provided by the UserAgent string. Multiple flags may be set at the same
-time, if a browser belongs to multiple categories.
+provided by the UserAgent string. Multiple flags may be set at the same time if a browser belongs to multiple categories.
+
+
 
 | flag           | detects                                                             |
 |----------------|---------------------------------------------------------------------|
@@ -44,7 +46,7 @@ time, if a browser belongs to multiple categories.
 | zk.android     | Android device                                                      |
 | zk.mobile      | Mobile device of any type, used for mobile-specific behaviors below |
 
-Browser detection flags
+
 
 ## Dedicated touch event listeners
 
