@@ -121,68 +121,7 @@ This is better than inferring what you describe in natural language.
 
 # How to Include a JavaScript file
 
-When you need to apply a js patch or include a 3rd-party js library, you
-have to include the js file in your application. This section describes
-how you can include the js file for different scopes.
-
-## Page-Scope
-
-- Use the script directive
-  [<?script?>](/zuml_ref/script)
-- Use the [script component](/zk_component_ref/script)
-
-## Application-Scope
-
-If you need to include a javascript file on every zul, there are 2 ways:
-
-### By language addon
-
-Create a `lang-addon.xml` according to [ ZK Client-side Reference/Language Definition#Language_Addon]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
-and include the javascript file with <javascript>. For example:
-
-```xml
-<language-addon>
-    <addon-name>patch-addon</addon-name><!-- give a meaningful name -->
-    <language-name>xul/html</language-name>
-    <depends>zul</depends>
-    <javascript src="~./mypatch.js" />
-    <javascript src="/zkpatch/mypatch2.js"/>
-</language-addon>
-```
-
-- Line 4: see the next section
-- Line 5: a path starting with `~./` is a [ classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path)
-  which is a special path supported by ZK
-- Line 6: You can also link a file under your web application context
-  root
-
-#### Dependent Addon
-
-If you override a component's widget or extend an existing component,
-it's crucial to specify <depends> correctly, so that your land addon
-will take effect. According to which component you override, you need to
-specify the corresponding addon name. For example:
-
-- If you override a component in zul language e.g. `<button>`, you specify
-
-```xml
-<depends>zul</depends>
-```
-
-- If you override a component provided by zkmax e.g. `<nav>`, you specify
-
-```xml
-<depends>zkmax</depends>
-```
-
-- If you override something about accessibility, e.g. override aria
-  attribute, you specify
-
-```xml
-<depends>za11y</depends>
-```
-
-### Use [&lt;embed> in zk.xml](/zk_config_ref/the_embed_element)
+See [JavaScript Packaging and Inclusion](/zk_client_side_ref/javascript_packaging)
 
 # How to Apply a Java Patch
 
