@@ -21,7 +21,7 @@ Any standard Web API that operates entirely on the client-side can be seamlessly
 *   **Browser Compatibility:** Always verify the browser compatibility of any Web API you intend to use, referring to resources like the [Mozilla Developer Network (MDN)](https://developer.mozilla.org/) for up-to-date information.
 *   **Server Communication:** It is crucial to understand that even when using client-side Web APIs, any actions that necessitate updates to ZK components or involve server-side business logic will still require an active connection to the ZK server. For details on how to trigger server-side events from client-side code, please see [Firing Events at Client-side](/zk_client_side_ref/client_side_firing).
 
-# 4. Limitations: Offline and Background Operation
+# Limitations: Offline and Background Operation
 
 ## The "Online-First" Nature of ZK
 
@@ -36,9 +36,7 @@ True offline support is not practically feasible within the ZK framework due to 
 *   An installed ZK PWA will function primarily as a convenient shortcut or bookmark to the web application.
 *   If the device loses its internet connection, the ZK application will not be able to load or operate, as it relies on continuous communication with the server.
 
-# Conclusion
-
-## Summary of Key Takeaways:
+# Summary of Key Takeaways:
 
 *   You **can** successfully make your ZK application installable, offering users a native app-like feel from their home screen.
 *   You **can** effectively utilize various client-side Web APIs (e.g., for notifications) to enhance the application's capabilities.
