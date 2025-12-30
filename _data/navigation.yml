@@ -1657,6 +1657,8 @@ zk_dev_ref:
     children:
       - title: Mobile And Touch Support
         url: /zk_dev_ref/ui_patterns/mobile_and_touch_support
+      - title: Progressive Web Apps (PWA)
+        url: /zk_dev_ref/ui_patterns/pwa_guide
       - title: Message Box
         url: /zk_dev_ref/ui_patterns/message_box
       - title: Layouts and Containers
