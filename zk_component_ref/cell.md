@@ -10,8 +10,7 @@ title: "Cell"
 
 # Employment/Purpose
 
-We design this generic cell component to be embedded into [ Row]({{site.baseurl}}/zk_component_ref/row) or [ Hbox]({{site.baseurl}}/zk_component_ref/hbox) or [ Vbox]({{site.baseurl}}/zk_component_ref/vbox) in order to fully
-control the alignment and row/column span.
+This Cell must only be a child of [Row](/zk_component_ref/row), [Hbox](/zk_component_ref/hbox), or [Vbox](/zk_component_ref/vbox). Other components cannot be its parent. Use it to control alignment and row/column span.
 
 # Example
 
@@ -75,14 +74,14 @@ control the alignment and row/column span.
 
 # Properties
 
-## The Rowspan Property
+##  rowspan
 
 It specifies the number of rows this cell should occupy. It has the same
-effect as HTML TR tag's rowspan attribute does.
+effect as HTML TR tag's `rowspan` attribute does.
 
 # Miscellaneous
 
-## Comparison to default (no Cell) scenario
+## Comparison to the default (no Cell) scenario
 
 The Cell component is meant to provide full controll of the DOM
 structure, so the user needs to expect to handle some lower level
@@ -122,7 +121,7 @@ a Div to wrap them.
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement](/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
