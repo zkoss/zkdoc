@@ -78,7 +78,7 @@ See [ZK Documentation MCP Server](/zk_dev_ref/zk_doc_mcp_server) for step-by-ste
 ## Ask ZK related questions
 The ZK Doc MCP Server integrates seamlessly with your AI coding assistant. When you ask questions about ZK Framework, the assistant automatically searches relevant documentation and provides accurate answers grounded in official sources.
 
-```txt
+```text
 in zk, which pattern should I use, mvc or mvvm ?
 ```
 Other useful prompts include:
@@ -96,28 +96,28 @@ The assistant determines when to search automatically, ensuring you always get c
 ## Search doc
 You can also explicitly request searches using prompts like:
 
-```txt
+```text
 search zk doc for "What is ID Space"
 ```
 ## Show doc source content
 
 Then, the AI assistant summarizes the query results for you. If you need deeper context, request the full source content:
 
-```txt
+```text
 show me the source doc content
 ```
 
 ## Submit feedback
 We hope this tool helps you develop faster and more easily. If the search results don’t meet your expectations, we encourage you to submit feedback so we can improve the ZK documentation. Your feedback is saved locally and automatically submitted as a GitHub issue at https://github.com/zkoss/zkdoc/issues, allowing our documentation team to identify gaps and improve content based on real developer needs.
 
-```txt
+```text
 submit feedback about the search results - they didn't cover MVVM pattern implementation
 ```
 
 ## Show MCP server setting
 Inspect your current ZK Doc MCP Server configuration to verify setup or debug connection issues. This displays all environment variables, configuration paths, and effective settings in use.
 
-```txt
+```text
 show zk doc mcp settings
 ```
 # Roadmap
