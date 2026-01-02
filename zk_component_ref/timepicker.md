@@ -4,7 +4,7 @@ title: "Timepicker"
 
 
 {% include supported-since.html version="8.0.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include edition-availability.html edition="ee" %}
 
 - Java API: [org.zkoss.zkmax.zul.Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html)
 - JavaScript API:
