@@ -69,7 +69,9 @@ requires **Jakarta EE**.
 
 # Adding Spring Dependencies
 ZK Spring doesn't include Spring framework dependencies for you by default. Since everyone might use different versions of Spring, so remember to add Spring
-dependencies you need by yourselves .e.g `spring-web`, `spring-security-web`. In general, zk spring can be compatible with the same major version of Spring framework, e.g. zkspring 6.x + spring 6.x
+dependencies you need by yourselves .e.g `spring-web`, `spring-security-web`. 
+
+In general, zk spring can be compatible with the same major version of Spring framework, e.g. zkspring 6.x + spring 6.x. Hence, if you found an issue in `spring-security-core` 6.4.2, then you can safely change to 6.5.6.  
 
 # Configuration in web.xml
 
