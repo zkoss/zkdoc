@@ -62,16 +62,19 @@ Check the available versions at [CE repository](https://mavensync.zkoss.org/mave
 
 discontinued since 4.0.0
 
-## ZKSpring 6
+## ZK Spring 6
 
 Notice that this version depends on [Spring Framework 6.0](https://spring.io/blog/2022/11/16/spring-framework-6-0-goes-ga) and
-requires Jakarta EE.
+requires **Jakarta EE**.
+
+# Adding Spring Dependencies
+ZK Spring doesn't include Spring framework dependencies for you by default. Since everyone might use different versions of Spring, so remember to add Spring
+dependencies you need by yourselves .e.g `spring-web`, `spring-security-web`. In general, zk spring can be compatible with the same major version of Spring framework, e.g. zkspring 6.x + spring 6.x
 
 # Configuration in web.xml
 
 You need to declare Spring `ContextLoaderListener` in the `web.xml` file
-to be able to declare and register your Spring beans with Spring
-framework.
+to be able to declare and register your Spring beans with Spring framework.
 
 ```xml
 <listener>
