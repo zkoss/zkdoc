@@ -18,3 +18,6 @@ You can help improve ZK's internationalization by:
 * [msgweb.properties - MWeb](https://github.com/zkoss/zk/blob/master/zweb/src/main/resources/metainfo/mesg/)
 * [msgzk.js](https://github.com/zkoss/zk/blob/master/zk/src/main/resources/web/js/zk/lang/msgzk.js)
 * [msgzul.js](https://github.com/zkoss/zk/blob/master/zul/src/main/resources/web/js/zul/lang/)
+
+{% include supported-since.html version="10.3.0" %}
+* [msgza11y.properties - MZa11y](https://github.com/zkoss/zk/blob/master/za11y/src/main/resources/metainfo/mesg/)
