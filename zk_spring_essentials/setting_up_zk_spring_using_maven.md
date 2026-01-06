@@ -68,10 +68,11 @@ Notice that this version depends on [Spring Framework 6.0](https://spring.io/blo
 requires **Jakarta EE**.
 
 # Adding Spring Dependencies
-ZK Spring doesn't include Spring framework dependencies for you by default. Since everyone might use different versions of Spring, so remember to add Spring
-dependencies you need by yourselves .e.g `spring-web`, `spring-security-web`. 
+ZK Spring does not enforce a specific Spring Framework or Spring Security version. Since projects may require different Spring versions, developers are responsible for explicitly adding the Spring dependencies they need (for example, `spring-web`, `spring-security-web`) to their project.
 
-In general, zk spring can be compatible with the same major version of Spring framework, e.g. zkspring 6.x + spring 6.x. Hence, if you found an issue in `spring-security-core` 6.4.2, then you can safely change to 6.5.6.  
+ZK may provide optional default dependency versions for reference or convenience. These versions are not mandatory and may not always reflect the latest Spring or Spring Security releases due to compatibility testing or environment considerations. Users are free to override these defaults and use any supported version that meets their project or security requirements.
+
+In general, ZK Spring is compatible with the same major version of the Spring Framework. For example, ZK Spring 6.x is compatible with Spring Framework 6.x. Therefore, if a security issue is identified in a specific Spring Security version (e.g., `spring-security-core` 6.4.2), users can safely upgrade to a newer compatible version (e.g., 6.5.6) without requiring changes to ZK Spring.
 
 # Configuration in web.xml
 
