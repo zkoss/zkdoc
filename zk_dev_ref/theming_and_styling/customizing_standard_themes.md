@@ -11,6 +11,14 @@ breeze and silver gray.
 
 Please see [ZK Developer's Reference/Theming and Styling/Creating Custom Themes/Theme Template]({{site.baseurl}}/zk_dev_ref/theming_and_styling/theme_template).
 
+# Customize with CSS Variables
+
+{% include supported-since.html version="10.3.0" %}
+
+ZK provides hundreds of CSS custom properties for easy customization without LESS compilation. This is the simplest way to customize colors, spacing, typography, and component-specific styles.
+
+See [CSS Variables](/zk_style_customization_guide/css_variables) for details.
+
 # ZK Framework UI Kit 
 
 The ZK Framework UI Kit is a Figma-based design toolkit containing all core UI components to help designers create detailed layouts that developers can easily implement. Please learn more about the kit from [this smalltalk](https://www.zkoss.org/wiki/Small_Talks/2024/November/Enhancing_Design_Collaboration:_The_ZK_Figma_Kit_for_Seamless_Web_App_Development
