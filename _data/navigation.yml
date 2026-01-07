@@ -949,6 +949,8 @@ zk_style_customization_guide:
             url: /zk_style_customization_guide/by_dom_structure
           - title: By Event Effect
             url: /zk_style_customization_guide/by_event_effect
+  - title: CSS Variables
+    url: /zk_style_customization_guide/css_variables
   - title: Integrate with LESS
     url: /zk_style_customization_guide/integrate_with_less
     children:
