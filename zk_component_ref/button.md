@@ -279,11 +279,7 @@ Your application won't be notified when users click the button.
 {% include supported-since.html version="5.0.4" %}
 
 [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
-sets the button's type. It is designed to work with the HTML `
-
-<form>
-
-`and Servlets. For example,
+sets the button's type. It is designed to work with the HTML `<form>`and Servlets. For example,
 
 ```xml
 <n:form action="/foo/my_handler" xmlns:n="native">
@@ -388,23 +384,10 @@ zul.jar.
 
 # Version History
 
-
-
 | Version | Date | Content |
 |---|---|---|
-| 5.0.4 | August 2010 | [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
-was introduced to allow a button able to submit or reset a form.
-<div class="sourceCode" id="cb1"><pre class="sourceCode xml">`&lt;n:form action="a_uri" xmlns:n="native"&gt;
-  &lt;button type="submit" label="Submit"/&gt;
-  &lt;button type="reset" label="Reset"/&gt;
-&lt;/n:form&gt;``</pre></div> |
-| 6.0.0 | December 2011 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
-the <em>multiple</em> setting was introduced to allow to choose multiple
-files to upload at the same time. (HTML5 supported browsers only)
-<div class="sourceCode" id="cb2"><pre class="sourceCode xml">`  &lt;button upload="true,multiple=true" label="Fileupload"/&gt;``</pre></div> |
-| 7.0.0 | September 2013 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String))
-the <em>accept</em> setting was introduced to allow to specify the types
-of files that the server accepts. (HTML5 supported browsers only)
-<div class="sourceCode" id="cb3"><pre class="sourceCode xml">`  &lt;button upload="true,accept=audio/*|video/*|image/*|MIME_type" label="Fileupload"/&gt;``</pre></div> |
+| 5.0.4 | August 2010 | [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String)) was introduced to allow a button able to submit or reset a form. |
+| 6.0.0 | December 2011 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String)) the **multiple** setting was introduced to allow to choose multiple files to upload at the same time. (HTML5 supported browsers only) |
+| 7.0.0 | September 2013 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String)) the **accept** setting was introduced to allow to specify the types of files that the server accepts. (HTML5 supported browsers only) |
 
 
