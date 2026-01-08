@@ -337,33 +337,26 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
 
 {% include supported-since.html version="8.0.0" %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
 
-For Example, (in WEB-INF/zk-label.properties)
+For Example, (in `WEB-INF/zk-label.properties`)
 
 ```xml
 MZul.2105=The request was rejected because its size ({0}) exceeds the configured maximum ({1})
 ```
 
-Notice that you can change the index {0} & {1} to display different file
+Notice that you can change the index `{0}` and `{1}` to display different file
 size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 
 # Inherited Functions
 
-Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
-for inherited functions.
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement) for inherited functions.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onFocus` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
-Denotes when a component gets the focus. |
-| `onBlur` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
-Denotes when a component loses the focus. |
-| `onUpload` | **Event:**
-[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has
-uploaded a file to the component. |
+| Name | Event Type               |
+|---|--------------------------|
+| `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus.  |
+| `onBlur` | **Event:**  [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. |
+| `onUpload` | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has uploaded a file to the component. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
