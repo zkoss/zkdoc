@@ -93,10 +93,9 @@ This component also supports `constraint` like [ZK Component Reference/Input/Dat
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| onWeekClick | Denotes a user clicks upon a label of week of year. [ZK
-EE] |
+| Name | Event Type                                                                                               |
+|---|----------------------------------------------------------------------------------------------------------|
+| onWeekClick | Denotes a user clicks upon a label of week of year. {% include edition-availability.html edition="ee" %} |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -105,16 +104,11 @@ EE] |
 `*NONE`
 
 
-
 # Version History
 
-
-
-| Version | Date         | Content                                                                                                                                                                                                                                                       |
-|---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.3   | June, 2010   | Calendar Day Renderer                                                                                                                                                                                                                                         |
+| Version | Date         | Content                     |
+|---------|--------------|-------------------------------------|
+| 5.0.3   | June, 2010   | Calendar Day Renderer     |
 | 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week) for details. |
-| 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
-| 6.5.0   | June, 2012   | [ZK-1175](http://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                         |
-
-
+| 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling. |
+| 6.5.0   | June, 2012   | [ZK-1175](http://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number |

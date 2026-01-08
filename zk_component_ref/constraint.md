@@ -25,11 +25,3 @@ Check inherited events
 `*None`
 
 
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-

@@ -126,15 +126,8 @@ in stead of upload.
 
 | Name | Event Type |
 |---|---|
-| `onClick` | **Event:**
-[org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)
-Denotes when left button of Combobutton is clicked. |
-| `onOpen` | **Event:**
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
-Denotes when the child popup is opened or closed, it will not be
-fired if open or close child popup by call
-[org.zkoss.zul.Combobutton#setOpen(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html#setOpen(boolean))
-directly. |
+| `onClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Denotes when left button of Combobutton is clicked. |
+| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes when the child popup is opened or closed, it will not be fired if open or close child popup by call [org.zkoss.zul.Combobutton#setOpen(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html#setOpen(boolean)) directly. |
 
 - Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 

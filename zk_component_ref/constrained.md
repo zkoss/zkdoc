@@ -25,10 +25,3 @@ Check inherited events
 
 
 
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-
-
