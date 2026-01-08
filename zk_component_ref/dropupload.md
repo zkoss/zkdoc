@@ -306,8 +306,8 @@ public void showFileName(org.zkoss.zk.ui.event.UploadEvent event){
 # Browser Support
 
 As `Dropupload` leverages HTML5 technology, some browsers don't support
-it. Currently, it works normally on Firefox (v.13), Chrome (v.19) and
-Safari (v.5.1.x), but doesn't function in IE 9, Opera v.11.x, and
+it. Currently, it works normally on Firefox (v.13+), Chrome (v.19+) and
+Safari (v.5.1+), but doesn't function in IE 9, Opera v.11.x, and
 Microsoft Edge.
 
 Moreover, the `detection` setting cannot be displayed on some older
@@ -315,14 +315,10 @@ machines.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onUpload` | **Event:**
-[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be
-triggered once a user has uploaded a file. |
-| `onMaxFileCountExceed` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be
-triggered when number of upload files exceed the maxFileCount. |
+| Name | Event Type                               |
+|---|-------------------------------------------|
+| `onUpload` | **Event:**[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be triggered once a user has uploaded a file.          |
+| `onMaxFileCountExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be triggered when number of upload files exceed the maxFileCount. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
@@ -333,8 +329,6 @@ triggered when number of upload files exceed the maxFileCount. |
 
 
 # Version History
-
-
 
 | Version | Date            | Content                                                                        |
 |---------|-----------------|--------------------------------------------------------------------------------|

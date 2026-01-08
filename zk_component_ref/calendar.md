@@ -93,9 +93,10 @@ This component also supports `constraint` like [ZK Component Reference/Input/Dat
 
 # Supported Events
 
-| Name | Event Type                                                                                               |
-|---|----------------------------------------------------------------------------------------------------------|
-| onWeekClick | Denotes a user clicks upon a label of week of year. {% include edition-availability.html edition="ee" %} |
+| Name | Event Type                                            |
+|---|-------------------------------------------------------|
+| onWeekClick | Denotes a user clicks upon a label of week of year.   |
+{% include edition-availability.html edition="ee" %}
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
