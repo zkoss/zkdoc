@@ -182,6 +182,69 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 ...
 ```
 
+
+## Multiple File Downloads
+{% include supported-since.html version="10.3.0" %}
+
+This feature enables developers to download multiple files at once to the client either as separate downloads or packaged as a single ZIP archive. The implementation includes:
+
+### Using Varargs (Simplest)
+```java
+// Download files using their original names
+Media report = new AMedia("report.pdf", "pdf", "application/pdf", pdfBytes);
+Media chart = new AMedia("chart.png", "png", "image/png", imageBytes);
+Media data = new AMedia("data.csv", "csv", "text/csv", csvContent);
+Filedownload.saveMultiple(report, chart, data);
+```
+
+### Using Map (Custom Filenames)
+
+```java
+Map<Media, String> files = new LinkedHashMap<>();
+files.put(reportMedia, "Annual-Report-2024.pdf");
+files.put(chartMedia, "Q4-Sales-Chart.png");
+files.put(dataMedia, "Export-Data.csv");
+Filedownload.saveMultiple(files);
+```
+
+### Using DownloadItem (Most Flexible)
+
+```java
+Filedownload.saveMultiple(
+    new DownloadItem(reportMedia, "Custom-Report.pdf"),
+    new DownloadItem(chartMedia), // uses original name
+    DownloadItem.of(dataMedia, "Data-Export.csv") // static factory
+);
+```
+
+### Download as ZIP Archive
+Basic ZIP Download
+
+```java
+Media[] files = { report, chart, data };
+Filedownload.saveAsZip(files, "package.zip");
+```
+
+### ZIP with Custom Filenames
+
+```java
+Map<Media, String> files = new LinkedHashMap<>();
+files.put(report, "2024-Report.pdf");
+files.put(chart, "Chart.png");
+files.put(data, "Data.csv");
+Filedownload.saveAsZip(files, "annual-package-2024.zip");
+```
+
+### ZIP using DownloadItem
+```java
+DownloadItem[] items = {
+    new DownloadItem(report, "Report.pdf"),
+    new DownloadItem(chart, "Chart.png"),
+    new DownloadItem(data, "Data.csv")
+};
+Filedownload.saveAsZip(items, "package.zip");
+```
+
 > ------------------------------------------------------------------------
 >
 > [^1]: Internet Explorer 9 and other browsers all work fine without this
