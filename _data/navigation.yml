@@ -1886,6 +1886,13 @@ zk_dev_ref:
         url: /zk_dev_ref/integration/start_execution_in_foreign_ajax_channel
       - title: Websocket Channel
         url: /zk_dev_ref/integration/websocket_channel
+      - title: iDempiere
+        url: /zk_dev_ref/integration/idempiere
+        children:
+          - title: iDempiere ZK Enterprise Plugin
+            url: /zk_dev_ref/integration/idempiere_zk_enterprise_plugin
+          - title: iDempiere ZK Charts Plugin
+            url: /zk_dev_ref/integration/idempiere_zk_charts_plugin
   - title: Performance Tips
     url: /zk_dev_ref/performance_tips/performance_tips
     children:
