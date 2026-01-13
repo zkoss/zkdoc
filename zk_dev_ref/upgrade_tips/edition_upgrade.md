@@ -1,17 +1,58 @@
 # Feature comparison
 
 ZK Framework is offered in 3 editions:
-* CE
-* PE
-* EE
+* Community Edition (CE)
+* Professional Edition (PE)
+* Enterprise Edition (EE)
 
-CE is the basic
-version, while EE offers the most comprehensive features. To see what
-features are included in each edition, visit the [Feature Page](https://www.zkoss.org/whyzk/Features).
+All editions share the same core architecture and programming model. Applications developed with ZK CE can be upgraded to PE or EE without code changes in most cases.
+A detailed comparison of features across editions is available on the [Feature Page](https://www.zkoss.org/whyzk/Features).
 
-Note that some of the add-ons like ZK Charts, Pivottable, and Keikai
-Spreadsheet are not part of ZK CE, PE, or EE. They can be used with ZK
-CE, PE, and EE, but separate licenses are required to use these add-ons.
+## When to Use ZK CE vs ZK EE
+Choosing between ZK CE and ZK EE primarily depends on application scale, performance requirements, and enterprise-level needs.
+
+ZK CE is typically suitable when:
+* The application has small to moderate data volumes
+* The number of concurrent users is limited
+* Performance and memory usage are not critical constraints
+
+You are building:
+* Prototypes or proofs of concept
+* Small-scale internal or departmental applications
+* You are comfortable implementing certain optimizations or features manually if needed
+ZK CE is fully functional and production-ready for many use cases.
+
+ZK EE is typically used when:
+* The application needs to handle large datasets or many concurrent users
+* UI performance and server memory usage are important
+
+You require enterprise-grade capabilities out of the box, such as:
+* Render-on-Demand (ROD) for large grids, trees, and lists
+* Lower memory footprint through features such as Client MVVM or stateless components
+* Web accessibility support, including WCAG 2 compliance
+* Additional ready-to-use components and themes
+* The application is mission-critical, customer-facing, or expected to grow over time
+
+ZK EE provides built-in features that reduce the need for custom performance tuning and help maintain predictable behavior as applications scale.
+
+## Maintenance and Release Cadence
+ZK CE and ZK PE/EE follow different maintenance models.
+* ZK CE is typically updated as part of major ZK releases, which usually occur every 1–2 years.
+* ZK PE/EE are actively maintained and receive regular updates, typically 2-3 times per year.
+
+As a result, PE/EE users can receive fixes and improvements without waiting for a major release, which can be an important consideration for long-running or production-critical applications.
+
+## Notes on Add-ons and Licensing
+
+Some ZK-related products are provided as separate add-ons and are not included in ZK CE, PE, or EE. These include (but are not limited to):
+ZK Charts, ZK Pivottable, and Keikai Spreadsheet.
+
+These add-ons:
+* Can be used with any ZK edition (CE, PE, or EE)
+* Require separate licenses
+* Are not part of the core ZK edition feature set
+
+When upgrading from CE to PE or EE, the upgrade applies only to the ZK Framework edition itself. Add-ons must be licensed independently if needed.
 
 # Upgrade the Library
 
