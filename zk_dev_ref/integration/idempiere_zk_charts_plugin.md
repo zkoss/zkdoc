@@ -112,3 +112,4 @@ References:
 - [OSGi fragments overview](https://vogella.com/blog/osgi-bundles-fragments-dependencies/)
 - [bnd Fragment-Host docs](https://bnd.bndtools.org/heads/fragment_host.html)
 - [iDempiere Wiki - Make ZK WebApp OSGi](https://wiki.idempiere.org/en/Make_Zk_WebApp_OSGi)
+- [Github - zkoss-demo/zkoss-idempiere-zkcharts-plugin](https://github.com/zkoss-demo/zkoss-idempiere-zkcharts-plugin)
