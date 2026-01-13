@@ -17,11 +17,13 @@ iDempiere ships with ZK CE by default. To use ZK EE components (including PE/EE 
 ```bash
 git clone --branch release-12 https://github.com/idempiere/idempiere.git idempiere
 ```
+
 2) Build it to generate the local p2 repository at `idempiere/org.idempiere.p2/target/repository`:
 ```bash
 cd idempiere
 mvn clean install
 ```
+
 3) Update target platform references to absolute paths in:
 - `idempiere/org.idempiere.p2.targetplatform/org.idempiere.p2.targetplatform.target`
 - `idempiere/org.idempiere.p2.targetplatform/org.idempiere.p2.targetplatform.mirror.target`
@@ -47,13 +49,16 @@ parent-folder/
 ├── idempiere/
 └── zkoss-idempiere-ee-plugin/
 ```
+
 2) Build the fragment:
 ```bash
 cd zkoss-idempiere-ee-plugin/org.idempiere.zkee.comps.fragment
 mvn clean -U -DskipTests -am verify
 ```
 This creates `org.idempiere.zkee.comps.fragment/target/org.idempiere.zkee.comps.fragment-<version>.jar`.
+
 3) Install the fragment into your OSGi runtime (Felix Web Console or drop into the plugins directory) and restart the server. The host bundle `org.adempiere.ui.zk` must resolve with the fragment on its classpath.
+
 4) Confirm the fragment is **Active**. If you see “widget class required” errors, the fragment is not attached or the runtime was not restarted.
 
 ### Fragment contents (reference)
@@ -70,21 +75,28 @@ License note: ZK EE is commercially licensed. This project uses the Evaluation R
 ## Build the example plugin
 
 1) Ensure the ZK EE fragment is installed and active.
+
 2) If Tycho cannot resolve the EE jars, add a dependency-copy step (like the fragment) or include the EE bundles in your target platform.
+
 3) Build the example plugin:
 ```bash
 cd zkoss-idempiere-ee-plugin/org.idempiere.zkee.comps.example
 mvn clean verify
 ```
 Artifacts are written to `target/`.
+
 4) See `org.idempiere.zkee.comps.example/src/web/form.zul` for EE widget usage (for example, `<timepicker .../>`).
 
 ## Deploy and verify
 
 1) Start the iDempiere runtime.
+
 2) In the Apache Felix Web Console (`https://localhost:8443/osgi/system/console/`), install and start the fragment and the example plugin.
+
 3) Restart the runtime to reload the fragment.
+
 4) In **Bundles**, confirm both bundles are **Active**.
+
 5) Log in as SuperUser, search for "ZK EE", and open **ZK EE Components Example**.
 
 ## Appendix: Why the fragment is required
