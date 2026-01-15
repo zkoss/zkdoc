@@ -105,7 +105,7 @@ private String viewTemplate;
 ```
 
 We will then use the
-[@MatchMedia](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/matchmedia.html)
+[@MatchMedia]({{site.baseurl}}/zk_mvvm_ref/syntax/matchmedia)
 annotation to update the value of this property based on the result of
 media queries. For this example we will use simple media queries,
 checking from device width only, but any query following the media query
@@ -132,17 +132,17 @@ previous values.
 
 To switch between two widely different UI structure when swapping
 between the Grid and the Panel states, we will use the
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/syntax/apply)
 shadow element. Shadow elements are useful for this purpose since they
 are dynamically instantiated and destroyed when the ViewModel state
 change.
 
 We create an
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/syntax/apply)
 element and supply two possible templates: “under400” and “other”. We
 then use EL Expressions to test the value of the viewTemplate property
 of the ViewModel. If the property value is “under400”, we set the
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/syntax/apply)
 element to use the “under400Template”.
 
 ```xml
@@ -157,7 +157,7 @@ element to use the “under400Template”.
 
 Inside each template, we simply make a reference to a different zul file
 for each structure.
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/syntax/apply)
 elements are used to fetch the content of these zul pages and insert it
 in the main page, based on the targeted templateURI attribute.
 
@@ -193,7 +193,7 @@ added inside another <vlayout> located inside the groupbox.
 
 This template will be repeated for each entry in our model. To this end,
 we use the
-[<forEach>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/foreach.html)
+[<forEach>]({{site.baseurl}}/zk_mvvm_ref/syntax/foreach)
 shadow element. This element will repeat a pattern for each entry in a
 collection.
 
@@ -220,8 +220,8 @@ need to adjust the template used by the content. We also need to adjust
 the number of column headers and their labels.
 
 To adjust the column headers, we use a
-[<choose>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/choose.html) /
-[<when>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/when.html)
+[<choose>]({{site.baseurl}}/zk_mvvm_ref/syntax/choose) /
+[<when>]({{site.baseurl}}/zk_mvvm_ref/syntax/when)
 structure. This structure allows us to choose between many templates
 based on the value of a property.
 

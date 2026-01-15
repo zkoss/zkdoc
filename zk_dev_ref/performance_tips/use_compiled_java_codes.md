@@ -5,7 +5,7 @@
 It is convenient to use zscript in ZUML, but it comes with a price:
 slower performance. The degradation varies from one application to
 another. It is suggested to use zscript only for fast prototyping, POC,
-or small projects. For large websites, it is suggested to use [ZK MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc)/[ZK MVVM](http://books.zkoss.org/zk-mvvm-book/8.0/index.html) instead. For
+or small projects. For large websites, it is suggested to use [ZK MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc)/[ZK MVVM]({{site.baseurl}}/zk_mvvm_ref/) instead. For
 example, with ZK MVC
 
 ```xml

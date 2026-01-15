@@ -89,7 +89,7 @@ reference it, specify it in the `src` attribute as follows.
 # Children Binding
 
 We suggest using shadow component
-[<forEach>](http://books.zkoss.org/zk-mvvm-book/8.0/shadow_elements/iterate_collections.html)
+[<forEach>]({{site.baseurl}}/zk_mvvm_ref/shadow_elements/iterate_collections)
 as a replacement of children binding.
 
 [ ZK Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index) provides

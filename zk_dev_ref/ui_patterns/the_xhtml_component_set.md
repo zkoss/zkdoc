@@ -11,7 +11,7 @@ following XML element will cause ZK Loader to create a component called
 ```
 
 XHTML component supports HTML5 tag attributes, and these attributes
-could be accessed by MVVM. About MVVM, please refer to the [MVVM document](http://books.zkoss.org/zk-mvvm-book/8.0/introduction_of_mvvm.html).
+could be accessed by MVVM. About MVVM, please refer to the [MVVM document]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm).
 
 # Dynamic Update
 

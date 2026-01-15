@@ -198,7 +198,7 @@ Then we can include embedded.js in html in the following way
 After loading the ZK contents, we could use the ZK Client command
 binding to control the ZK components on a page.
 
-To see more information, please refer to [ZK MVVM Book - Client command binding](http://books.zkoss.org/zk-mvvm-book/9.5/data_binding/client_binding_api.html).
+To see more information, please refer to [ZK MVVM Book - Client command binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/client_binding_api).
 
 # Cross-Origin Resource Sharing
 

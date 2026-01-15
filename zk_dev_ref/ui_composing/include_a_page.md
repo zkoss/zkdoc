@@ -1,7 +1,7 @@
 # Apply (Recommended)
 
 We suggest using
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/shadow_elements/shadow_elements.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/shadow_elements/index)
 instead of `Include`. Because comparing to `Include`, it has several
 advantages:
 
@@ -109,7 +109,7 @@ This approach makes it convenient to manage and reuse static resources without d
 # Application-wide Named <Apply>
 
 If you prefer an application-wide named
-[<apply>](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/apply.html)
+[<apply>]({{site.baseurl}}/zk_mvvm_ref/syntax/apply)
 element with a predefined templateURI and default parameters, you could
 specify it in [a language addon]({{site.baseurl}}/zk_client_side_ref/language_definition). For
 example, we could prepare a file called `WEB-INF/lang-addon.xml` with

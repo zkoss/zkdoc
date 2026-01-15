@@ -86,7 +86,7 @@ claude mcp add zk-doc -- uvx zk-doc-mcp-server
 
 **Using with Gemini CLI**
 
-Add the MCP server to your Gemini configuration file (typically `~/.gemini/config.json` or similar):
+Add the MCP server to your Gemini configuration file (typically `~/.gemini/settings.json` or similar):
 ```json
 {
   "mcpServers": {

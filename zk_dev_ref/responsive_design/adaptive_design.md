@@ -73,8 +73,8 @@ Full example available on
 {% include supported-since.html version="8.0.2" %}
 
 The same structure can be created following the MVVM pattern using the
-[@MatchMedia](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/matchmedia.html)
-annotation introduced in ZK 8.0.2 and [Shadow Elements](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/shadow_elements.html)
+[@MatchMedia]({{site.baseurl}}/zk_mvvm_ref/syntax/matchmedia)
+annotation introduced in ZK 8.0.2 and [Shadow Elements]({{site.baseurl}}/zk_mvvm_ref/syntax/shadow_elements)
 introduced in ZK 8.0.0
 
 The MVVM is a natural fit for this task, since it already provides a
