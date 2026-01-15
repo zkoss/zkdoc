@@ -19,14 +19,12 @@ CSS custom properties (also known as CSS variables) are entities defined by CSS 
 
 # How to Use
 
-## Basic Usage
-
 Override ZK CSS variables in your own CSS file:
 
 ```css
 :root {
-    --zk-primary-color: #1890ff;
-    --zk-border-radius: 4px;
+    --zk-color-primary: #1890ff;
+    --zk-base-border-radius: 6px;
 }
 ```
 
@@ -36,17 +34,6 @@ Then include your CSS file in `zk.xml`:
 <desktop-config>
     <theme-uri>/css/custom-theme.css</theme-uri>
 </desktop-config>
-```
-
-## Scoped Customization
-
-You can scope variable overrides to specific containers:
-
-```css
-.my-dark-section {
-    --zk-background-color: #1a1a1a;
-    --zk-text-color: #ffffff;
-}
 ```
 
 # Variable Categories
@@ -69,8 +56,8 @@ Each component has its own set of variables for fine-grained control. For exampl
 
 - Button: `--zk-button-*`
 - Input: `--zk-input-*`
-- Grid: `--zk-grid-*`
 - Window: `--zk-window-*`
+- Grid: `--zk-messagebox-*`
 
 # Common Customizations
 
@@ -78,9 +65,8 @@ Each component has its own set of variables for fine-grained control. For exampl
 
 ```css
 :root {
-    --zk-primary-color: #6366f1;
-    --zk-primary-color-hover: #4f46e5;
-    --zk-primary-color-active: #4338ca;
+    --zk-color-primary: #6366f1;
+    --zk-color-primary-dark: #4338ca;
 }
 ```
 
@@ -88,9 +74,9 @@ Each component has its own set of variables for fine-grained control. For exampl
 
 ```css
 :root {
-    --zk-border-radius-sm: 2px;
-    --zk-border-radius: 4px;
-    --zk-border-radius-lg: 8px;
+    --zk-border-radius-small: 2px;
+    --zk-base-border-radius: 4px;
+    --zk-border-radius-large: 8px;
 }
 ```
 
@@ -98,8 +84,8 @@ Each component has its own set of variables for fine-grained control. For exampl
 
 ```css
 :root {
-    --zk-font-family: 'Inter', sans-serif;
-    --zk-font-size-base: 14px;
+    --zk-base-title-font-family: 'Inter', sans-serif;
+    --zk-base-font-size: 14px;
 }
 ```
 
@@ -114,7 +100,7 @@ For a complete list of available CSS variables, inspect the `:root` styles in yo
 You can dynamically change CSS variables using JavaScript:
 
 ```javascript
-document.documentElement.style.setProperty('--zk-primary-color', '#ff6b6b');
+document.documentElement.style.setProperty('--zk-color-primary', '#ff6b6b');
 ```
 
 This enables features like:
