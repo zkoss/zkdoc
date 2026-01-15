@@ -1013,72 +1013,72 @@ zk_config_ref:
   - title: zk.xml
     url: /zk_config_ref/zk_xml
     children:
-      - title: The client-config Element
+      - title: client-config
         url: /zk_config_ref/the_client_config_element
         children:
-          - title: The debug-js Element
+          - title: debug-js
             url: /zk_config_ref/the_debug_js_element
-          - title: The disable-behind-modal Element
+          - title: disable-behind-modal
             url: /zk_config_ref/the_disable_behind_modal_element
-          - title: The enable-source-map Element
+          - title: enable-source-map
             url: /zk_config_ref/the_enable_source_map_element
-          - title: The error-reload Element
+          - title: error-reload
             url: /zk_config_ref/the_error_reload_element
-          - title: The keep-across-visits Element
+          - title: keep-across-visits
             url: /zk_config_ref/the_keep_across_visits_element
-          - title: The package Element
+          - title: package
             url: /zk_config_ref/the_package_element
-          - title: The processing-prompt-delay Element
+          - title: processing-prompt-delay
             url: /zk_config_ref/the_processing_prompt_delay_element
-          - title: The resend-delay Element
+          - title: resend-delay
             url: /zk_config_ref/the_resend_delay_element
-          - title: The send-client-errors Element
+          - title: send-client-errors
             url: /zk_config_ref/the_send_client_errors_element
-          - title: The tooltip-delay Element
+          - title: tooltip-delay
             url: /zk_config_ref/the_tooltip_delay_element
-          - title: The auto-resend-timeout Element
+          - title: auto-resend-timeout
             url: /zk_config_ref/the_auto_resend_timeout_element
-          - title: The init-crash-script Element
+          - title: init-crash-script
             url: /zk_config_ref/the_init_crash_script_element
-          - title: The init-crash-timeout Element
+          - title: init-crash-timeout
             url: /zk_config_ref/the_init_crash_timeout_element
-      - title: The desktop-config Element
+      - title: desktop-config
         url: /zk_config_ref/the_desktop_config_element
         children:
-          - title: The desktop-timeout Element
+          - title: desktop-timeout
             url: /zk_config_ref/the_desktop_timeout_element
-          - title: The disable-theme-uri Element
+          - title: disable-theme-uri
             url: /zk_config_ref/the_disable_theme_uri_element
-          - title: The extendlet-check-period Element
+          - title: extendlet-check-period
             url: /zk_config_ref/the_extendlet_check_period_element
-          - title: The file-check-period Element
+          - title: file-check-period
             url: /zk_config_ref/the_file_check_period_element
-          - title: The repeat-uuid Element
+          - title: repeat-uuid
             url: /zk_config_ref/the_repeat_uuid_element
-          - title: The theme-uri Element
+          - title: theme-uri
             url: /zk_config_ref/the_theme_uri_element
-          - title: The theme-uri-handler-class Element
+          - title: theme-uri-handler-class
             url: /zk_config_ref/the_theme_uri_handler_class_element
-          - title: The theme-provider-class Element
+          - title: theme-provider-class
             url: /zk_config_ref/the_theme_provider_class_element
-      - title: The device-config Element
+      - title: device-config
         url: /zk_config_ref/the_device_config_element
         children:
-          - title: The device-class Element
+          - title: device-class
             url: /zk_config_ref/the_device_class_element
-          - title: The device-type Element
+          - title: device-type
             url: /zk_config_ref/the_device_type_element
-          - title: The embed Element
+          - title: embed
             url: /zk_config_ref/the_embed_element
-          - title: The server-push-class Element
+          - title: server-push-class
             url: /zk_config_ref/the_server_push_class_element
-          - title: The unavailable-message Element
+          - title: unavailable-message
             url: /zk_config_ref/the_unavailable_message_element
-      - title: The error-page Element
+      - title: error-page
         url: /zk_config_ref/the_error_page_element
-      - title: The language-config Element
+      - title: language-config
         url: /zk_config_ref/the_language_config_element
-      - title: The library-property Element
+      - title: library-property
         url: /zk_config_ref/the_library_property_element
       - title: The Library Properties
         url: /zk_config_ref/the_library_properties
@@ -1311,7 +1311,7 @@ zk_config_ref:
             url: /zk_config_ref/org_zkoss_zul_tree_throttlemillis
           - title: preserve-all-blank
             url: /zk_config_ref/preserve_all_blank
-      - title: The listener Element
+      - title: listener
         url: /zk_config_ref/the_listener_element
         children:
           - title: The org.zkoss.zk.ui.event.EventThreadCleanup interface
@@ -1362,7 +1362,7 @@ zk_config_ref:
             url: /zk_config_ref/the_org_zkoss_zk_ui_sys_seorenderer_interface
           - title: The org.zkoss.xel.VariableResolver interface
             url: /zk_config_ref/the_org_zkoss_xel_variableresolver_interface
-      - title: The preference Element
+      - title: preference
         url: /zk_config_ref/the_preference_element
         children:
           - title: The Preferences
@@ -1370,117 +1370,117 @@ zk_config_ref:
             children:
               - title: org.zkoss.zk.ui.WebApp.name
                 url: /zk_config_ref/org_zkoss_zk_ui_webapp_name
-      - title: The richlet Element
+      - title: richlet
         url: /zk_config_ref/the_richlet_element
         children:
-          - title: The richlet-mapping Element
+          - title: richlet-mapping
             url: /zk_config_ref/the_richlet_mapping_element
-      - title: The xel-config Element
+      - title: xel-config
         url: /zk_config_ref/the_xel_config_element
-      - title: The session-config Element
+      - title: session-config
         url: /zk_config_ref/the_session_config_element
         children:
-          - title: The automatic-timeout Element
+          - title: automatic-timeout
             url: /zk_config_ref/the_automatic_timeout_element
-          - title: The max-desktops-per-session Element
+          - title: max-desktops-per-session
             url: /zk_config_ref/the_max_desktops_per_session_element
-          - title: The max-pushes-per-session Element
+          - title: max-pushes-per-session
             url: /zk_config_ref/the_max_pushes_per_session_element
-          - title: The max-requests-per-session Element
+          - title: max-requests-per-session
             url: /zk_config_ref/the_max_requests_per_session_element
-          - title: The session-timeout Element
+          - title: session-timeout
             url: /zk_config_ref/the_session_timeout_element
-          - title: The timeout-message Element
+          - title: timeout-message
             url: /zk_config_ref/the_timeout_message_element
-          - title: The timeout-uri Element
+          - title: timeout-uri
             url: /zk_config_ref/the_timeout_uri_element
-          - title: The timer-keep-alive Element
+          - title: timer-keep-alive
             url: /zk_config_ref/the_timer_keep_alive_element
-      - title: The system-config Element
+      - title: system-config
         url: /zk_config_ref/the_system_config_element
         children:
-          - title: The au-decoder-class Element
+          - title: au-decoder-class
             url: /zk_config_ref/the_au_decoder_class_element
-          - title: The au-writer-class Element
+          - title: au-writer-class
             url: /zk_config_ref/the_au_writer_class_element
-          - title: The cache-provider-class Element
+          - title: cache-provider-class
             url: /zk_config_ref/the_cache_provider_class_element
-          - title: The config-parser-class Element
+          - title: config-parser-class
             url: /zk_config_ref/the_config_parser_class_element
-          - title: The crawlable Element
+          - title: crawlable
             url: /zk_config_ref/the_crawlable_element
-          - title: The disable-event-thread Element
+          - title: disable-event-thread
             url: /zk_config_ref/the_disable_event_thread_element
-          - title: The disable-zscript Element
+          - title: disable-zscript
             url: /zk_config_ref/the_disable_zscript_element
-          - title: The engine-class Element
+          - title: engine-class
             url: /zk_config_ref/the_engine_class_element
-          - title: The event-time-warning Element
+          - title: event-time-warning
             url: /zk_config_ref/the_event_time_warning_element
-          - title: The failover-manager-class Element
+          - title: failover-manager-class
             url: /zk_config_ref/the_failover_manager_class_element
-          - title: The file-item-factory-class Element
+          - title: file-item-factory-class
             url: /zk_config_ref/the_file_item_factory_class_element
-          - title: The file-repository Element
+          - title: file-repository
             url: /zk_config_ref/the_file_repository_element
-          - title: The file-size-threshold Element
+          - title: file-size-threshold
             url: /zk_config_ref/the_file_size_threshold_element
-          - title: The id-generator-class Element
+          - title: id-generator-class
             url: /zk_config_ref/the_id_generator_class_element
-          - title: The label-location Element
+          - title: label-location
             url: /zk_config_ref/the_label_location_element
-          - title: The max-spare-threads Element
+          - title: max-spare-threads
             url: /zk_config_ref/the_max_spare_threads_element
-          - title: The max-suspended-threads Element
+          - title: max-suspended-threads
             url: /zk_config_ref/the_max_suspended_threads_element
-          - title: The max-upload-size Element
+          - title: max-upload-size
             url: /zk_config_ref/the_max_upload_size_element
-          - title: The max-process-time Element
+          - title: max-process-time
             url: /zk_config_ref/the_max_process_time_element
-          - title: The response-charset Element
+          - title: response-charset
             url: /zk_config_ref/the_response_charset_element
-          - title: The session-cache-class Element
+          - title: session-cache-class
             url: /zk_config_ref/the_session_cache_class_element
-          - title: The upload-charset Element
+          - title: upload-charset
             url: /zk_config_ref/the_upload_charset_element
-          - title: The upload-charset-finder-class Element
+          - title: upload-charset-finder-class
             url: /zk_config_ref/the_upload_charset_finder_class_element
-          - title: The ui-factory-class Element
+          - title: ui-factory-class
             url: /zk_config_ref/the_ui_factory_class_element
-          - title: The web-app-class Element
+          - title: web-app-class
             url: /zk_config_ref/the_web_app_class_element
-          - title: The web-app-factory-class Element
+          - title: web-app-factory-class
             url: /zk_config_ref/the_web_app_factory_class_element
-      - title: The system-property Element
+      - title: system-property
         url: /zk_config_ref/the_system_property_element
-      - title: The zscript-config Element
+      - title: zscript-config
         url: /zk_config_ref/the_zscript_config_element
   - title: JAR File's config.xml
     url: /zk_config_ref/jar_files_config_xml
     children:
       - title: Samples
         url: /zk_config_ref/samples
-      - title: The client-config Element
+      - title: client-config
         url: /zk_config_ref/the_client_config_element
-      - title: The config-name Element
+      - title: config-name
         url: /zk_config_ref/the_config_name_element
-      - title: The depends Element
+      - title: depends
         url: /zk_config_ref/the_depends_element
-      - title: The device-config Element
+      - title: device-config
         url: /zk_config_ref/the_device_config_element
-      - title: The language-config Element
+      - title: language-config
         url: /zk_config_ref/the_language_config_element
-      - title: The library-property Element
+      - title: library-property
         url: /zk_config_ref/the_library_property_element
-      - title: The listener Element
+      - title: listener
         url: /zk_config_ref/the_listener_element
-      - title: The preference Element
+      - title: preference
         url: /zk_config_ref/the_preference_element
-      - title: The system-config Element
+      - title: system-config
         url: /zk_config_ref/the_system_config_element
-      - title: The version Element
+      - title: version
         url: /zk_config_ref/the_version_element
-      - title: The zscript-config Element
+      - title: zscript-config
         url: /zk_config_ref/the_zscript_config_element
 zk_dev_ref:
   - title: Overture
