@@ -1107,6 +1107,8 @@ zk_config_ref:
             url: /zk_config_ref/org_zkoss_lang_contextclassloader_class
           - title: org.zkoss.theme.atlantic.useGoogleFont.disabled
             url: /zk_config_ref/org_zkoss_theme_atlantic_usegooglefont_disabled
+          - title: org.zkoss.theme.preferred
+            url: /zk_config_ref/org_zkoss_theme_preferred
           - title: org.zkoss.util.label.cache
             url: /zk_config_ref/org_zkoss_util_label_cache
           - title: org.zkoss.util.label.classpath.charset
