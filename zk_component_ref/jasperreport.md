@@ -136,24 +136,23 @@ report.setType("pdf"); // report is the Jasperreport component
 ```
 
 ## Type List
+* pdf  
+* xml  
+* html 
+* rtf  
+* xls  
+* jxl  
+* csv  
+* odt  
 
-| Type      | Version                            |
-|-----------|------------------------------------|
-| pdf       |                                    |
-| xml       |                                    |
-| html      |                                    |
-| rtf       |                                    |
-| xls       |                                    |
-| jxl       |                                    |
-| csv       |                                    |
-| odt       |                                    |
-| xlsx      | {% include supported-since.html version="5.0.8" %} |
-| docx      | {% include supported-since.html version="5.0.8" %} |
-| graphic2d | {% include supported-since.html version="5.0.8" %} |
-| ods       | {% include supported-since.html version="5.0.8" %} |
-| pptx      | {% include supported-since.html version="5.0.8" %} |
-| txt       | {% include supported-since.html version="5.0.8" %} |
-| xhtml     | {% include supported-since.html version="5.0.8" %} |
+{% include supported-since.html version="5.0.8" %}
+* xlsx      
+* docx       
+* graphic2d  
+* ods        
+* pptx       
+* txt        
+* xhtml      
 
 # Supported JasperReport Version
 
@@ -182,9 +181,9 @@ information, please refer to [ZK Installation Guide: Linux]({{site.baseurl}}/zk_
 
 # Version History
 
-| Version | Date                                                                     | Content                               |
-|---------|--------------------------------------------------------------------------|---------------------------------------|
-| 5.0.1   | March 2010                                                               | Support Hibernate and SQL connections |
-| 5.0.8   | Upgrade JaserReport version to 4.0 and support new JasperReport exporter |                                       |
+| Version | Date         | Content                               |
+|---------|--------------|---------------------------------------|
+| 5.0.1   | March 2010   | Support Hibernate and SQL connections |
+| 5.0.8   |  | Upgrade JaserReport version to 4.0 and support new JasperReport exporter  |
 
 
