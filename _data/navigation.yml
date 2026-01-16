@@ -1411,6 +1411,18 @@ zk_config_ref:
             url: /zk_config_ref/the_config_parser_class_element
           - title: crawlable
             url: /zk_config_ref/the_crawlable_element
+          - title: csp-enabled
+            url: /zk_config_ref/the_csp-enabled_element
+          - title: csp-strict-dynamic-enabled
+            url: /zk_config_ref/the_csp-strict-dynamic-enabled_element
+          - title: csp-policy
+            url: /zk_config_ref/the_csp-policy_element
+          - title: csp-report-only
+            url: /zk_config_ref/the_csp-report-only_element
+          - title: csp-report-uri
+            url: /zk_config_ref/the_csp-report-uri_element
+          - title: csp-header-generator-class
+            url: /zk_config_ref/the_csp-header-generator-class_element
           - title: disable-event-thread
             url: /zk_config_ref/the_disable_event_thread_element
           - title: disable-zscript
@@ -1952,6 +1964,8 @@ zk_dev_ref:
       - title: Content Security Policy
         url: /zk_dev_ref/security_tips/content_security_policy
         children:
+          - title: Automatic csp through zk configuration
+            url: /zk_dev_ref/security_tips/automatic_csp_through_zk_configuration
           - title: Enhancing Security with Strict-Dynamic
             url: /zk_dev_ref/security_tips/enhancing_security_with_strict_dynamic
       - title: SSO Redirect Handling
