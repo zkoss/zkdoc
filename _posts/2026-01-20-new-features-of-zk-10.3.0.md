@@ -1,9 +1,9 @@
 ---
 author: James Chu
-date: 2026-01-27
+date: 2026-01-20
 version: 10.3.0
 category: small-talk
-title: "New Features And Enhancements of ZK 10.3.0"
+title: "New Features of ZK 10.3.0"
 ---
 
 # Introduction
