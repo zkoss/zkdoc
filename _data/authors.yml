@@ -1,3 +1,7 @@
 hawk:
   name: "Hawk Chen, Manager, Potix"
   avatar: "/assets/images/hawk.webp"
+
+jameschu:
+  name: "James Chu, Senior Engineer, Potix"
+  avatar: "/assets/images/jameschu.png"

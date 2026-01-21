@@ -1,5 +1,5 @@
 ---
-author: James Chu
+author: jameschu
 date: 2026-01-20
 version: 10.3.0
 category: small-talk
