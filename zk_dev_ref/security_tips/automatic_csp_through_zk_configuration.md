@@ -1,5 +1,5 @@
 # Automatic CSP Configuration 
-
+{% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="10.3.0" %}
 
 ## The csp-enabled Element
