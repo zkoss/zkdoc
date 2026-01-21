@@ -81,18 +81,11 @@ selected.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onAfterRender` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onSelect` | **Event:**
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
-Represents an event caused by user's the selection changed at the
-client. |
-| `onOpen` | **Event:**
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
-Represents an event that indicates an open state that is changed at
-the client. |
+| Name | Event Type                                                                                                                               |
+|---|------------------------------------------------------------------------------------------------------------------------------------------|
+| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                   |
+| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the selection changed at the client. |
+| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Represents an event that indicates an open state that is changed at the client. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
