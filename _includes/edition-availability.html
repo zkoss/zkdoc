@@ -9,9 +9,11 @@ Usage:
 {% endcomment %}
 
 <div class="edition-availability{% if include.inline %} inline{% endif %}">
+<a href="http://www.zkoss.org/whyzk/zkee" target="_blank">
     <div class="option ce{% if include.edition == 'ce' %} selected{% else %} unavailable{% endif %}">CE</div>
     <div class="option pe{% if include.edition == 'ce' or include.edition == 'pe' %} selected{% else %} unavailable{% endif %}">PE</div>
-    <div class="option ee selected"><a href="http://www.zkoss.org/whyzk/zkee">EE</a></div>
+    <div class="option ee selected">EE</div>
+</a>
 </div>
 
 <style>
@@ -30,6 +32,11 @@ Usage:
             margin: 0 5px;
             vertical-align: middle;
             font-size: 0.75rem;
+        }
+
+        a {
+            color: white;
+            display: flex;
         }
 
         .option {
@@ -51,10 +58,6 @@ Usage:
 
             &.selected {
                 font-weight: bold;
-            }
-
-            a {
-                color: white;
             }
         }
     }
