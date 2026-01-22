@@ -108,8 +108,11 @@ You can allow `href="javascript:;"` while maintaining CSP protection by using th
    ```
 
 {% include supported-since.html version="10.3.0" %} 
+
 Some ZK components now use `href="javascript:void(0);"` instead.
+
 Generate a hash for that exact string using the same command with the updated value ("javascript:void(0);"), which produces:
+
 `sha256-kbHtQyYDQKz4SWMQ8OHVol3EC0t3tHEJFPCSwNG9NxQ=`.
 
 ## Reference
