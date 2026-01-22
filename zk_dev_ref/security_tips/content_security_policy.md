@@ -107,6 +107,11 @@ You can allow `href="javascript:;"` while maintaining CSP protection by using th
            value="'unsafe-hashes' 'sha256-lfXlPY3+MCPOPb4mrw1Y961+745U3WlDQVcOXdchSQc='" ?>
    ```
 
+{% include supported-since.html version="10.3.0" %} 
+Some ZK components now use `href="javascript:void(0);"` instead.
+Generate a hash for that exact string using the same command with the updated value ("javascript:void(0);"), which produces:
+`sha256-kbHtQyYDQKz4SWMQ8OHVol3EC0t3tHEJFPCSwNG9NxQ=`.
+
 ## Reference
 
 - [Content Security Policy unsafe-hashes](https://content-security-policy.com/unsafe-hashes/)
