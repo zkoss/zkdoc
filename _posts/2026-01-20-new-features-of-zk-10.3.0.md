@@ -20,8 +20,8 @@ View [ZK 10.3.0 Release Note](https://www.zkoss.org/product/zk/releasenote/10.3.
 # Highlighted Features
 
 ## Enhanced Content Security Policy (CSP) Support
-<!--REQUIRED ZK EDITION: CE -->
-{% include edition-availability.html edition="ce" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 Starting from **ZK 10.3.0**, ZK introduces a **system-level Content Security Policy (CSP) configuration mechanism** to enable, customize, and enforce CSP headers in a structured way. This helps reduce exposure to XSS and aligns applications with modern browser security requirements.
 
