@@ -188,7 +188,9 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 
 This feature enables developers to download multiple files at once to the client either as separate downloads or packaged as a single ZIP archive. The implementation includes:
 
-### Using Varargs (Simplest)
+### Using Varargs
+You can create several Media objects, then use the variable arguments signature to give an arbitrary number of AMedia to the FileDownload.saveMultiple function.
+This is convenient if you are manually assembling the downloads and simply have several objects to pass to the method.
 ```java
 // Download files using their original names
 Media report = new AMedia("report.pdf", "pdf", "application/pdf", pdfBytes);
@@ -198,7 +200,8 @@ Filedownload.saveMultiple(report, chart, data);
 ```
 
 ### Using Map (Custom Filenames)
-
+You can pass a single Map<Media, String> as the argument, containing the Media and the download name for each file.
+This is more convenient if you are downloading a variable amount of files, as you can build the Map prior to triggering the downloads.
 ```java
 Map<Media, String> files = new LinkedHashMap<>();
 files.put(reportMedia, "Annual-Report-2024.pdf");
@@ -207,7 +210,9 @@ files.put(dataMedia, "Export-Data.csv");
 Filedownload.saveMultiple(files);
 ```
 
-### Using DownloadItem (Most Flexible)
+### Using DownloadItem
+Filedownload uses the DownloadItem class internally to wrap a Media and a file name.
+You can provide the already wrapped content or use this as the basis for your own DownloadItem extended class.
 
 ```java
 Filedownload.saveMultiple(
@@ -218,7 +223,9 @@ Filedownload.saveMultiple(
 ```
 
 ### Download as ZIP Archive
-Basic ZIP Download
+Instead of downloading multiple files at once through the browser API, you may need to download several files in a single zip archive.
+
+The simple option accepts an array of Media objects, and a string to set the name of the downloaded zip file:
 
 ```java
 Media[] files = { report, chart, data };
@@ -226,6 +233,8 @@ Filedownload.saveAsZip(files, "package.zip");
 ```
 
 ### ZIP with Custom Filenames
+
+If you need to manually name each file inside of the zip archive, you can also pass a Map<Media, String> and a file name String.
 
 ```java
 Map<Media, String> files = new LinkedHashMap<>();
@@ -236,6 +245,10 @@ Filedownload.saveAsZip(files, "annual-package-2024.zip");
 ```
 
 ### ZIP using DownloadItem
+
+As with multiple download, you can also pre-wrap your files in DownloadItem.
+For the zip version, you can simply pass an array of DownloadItem and the name of the final archive.
+
 ```java
 DownloadItem[] items = {
     new DownloadItem(report, "Report.pdf"),
