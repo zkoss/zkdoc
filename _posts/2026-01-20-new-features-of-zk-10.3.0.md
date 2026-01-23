@@ -6,7 +6,7 @@ category: small-talk
 title: "New Features of ZK 10.3.0"
 ---
 
-# Introduction
+# Introduction: ZK 10.3.0 at a Glance
 ZK 10.3.0 continues the evolution of ZK 10 with a strong focus on **modularity, security, theming flexibility, and developer experience**. This release brings notable improvements in Content Security Policy (CSP), multiple file downloads, modernized theming through CSS variables, and refined OSGi packaging, plus a set of security and stability updates.
 
 These refinements are designed to help teams maintain large-scale enterprise applications more easily, adopt modern frontend security practices, and upgrade existing projects with greater confidence.
@@ -19,7 +19,7 @@ View [ZK 10.3.0 Release Note](https://www.zkoss.org/product/zk/releasenote/10.3.
 
 # Highlighted Features
 
-## Enhanced Content Security Policy (CSP) Support
+## CSP Support, Now Built In One Switch
 <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
@@ -33,13 +33,13 @@ Key highlights:
 
 For full configuration details and examples, see [Automatic CSP Through ZK Configuration](https://docs.zkoss.org/zk_dev_ref/security_tips/automatic_csp_through_zk_configuration).
 
-## Multiple File Download Enhancements
+## Multiple File Downloads, More Predictable
 <!--REQUIRED ZK EDITION: CE -->
 {% include edition-availability.html edition="ce" %}
 
 ZK 10.3.0 clarifies and improves support for scenarios where users need to download **multiple files** within a single workflow. While browsers typically restrict opening multiple download dialogs from one user action, ZK provides a well-defined and reliable pattern for handling such use cases through the `Filedownload` utility.
 
-The recommended approach and usage details are documented in:
+The component reference provides multiple approaches (streaming, redirecting, and bundling), so you can pick the strategy that matches your use case:
 
 [Multiple File Downloads - ZK Component Reference](https://docs.zkoss.org/zk_component_ref/filedownload.html#multiple-file-downloads)
 
@@ -75,11 +75,11 @@ try (ByteArrayOutputStream bos = new ByteArrayOutputStream();
 
 This approach ensures consistent behavior across browsers while providing a smooth user experience for batch downloads.
 
-## Theme Modernization with CSS Variables
+## Modern Theming with CSS Variables
 <!--REQUIRED ZK EDITION: CE -->
 {% include edition-availability.html edition="ce" %}
 
-ZK 10.3.0 introduces further modernization of the theming system by expanding the use of **CSS variables**. This allows developers to customize themes more flexibly without deep overrides or duplicated styles.
+ZK 10.3.0 introduces further modernization of the theming system by expanding the use of **CSS variables**. This allows developers to customize themes more flexibly without deep overrides or duplicated styles. You apply these variables by adding your own custom CSS file and loading it with your application.
 
 For example, instead of overriding multiple component selectors to change a brand color and base font size, you can set theme variables once and let the theme propagate the change across components:
 
@@ -100,13 +100,14 @@ For more details and examples, see [CSS Variables](https://docs.zkoss.org/zk_sty
 ### Upgrade Guide for Existing Themes
 To ensure a smooth upgrade, ZK 10.3.0 provides guidance for migrating existing custom themes:
 
-- Review overridden styles that now rely on CSS variables
-- Prefer variable-based customization over hard-coded values
-- Validate visual consistency after upgrading
+- Inventory your overrides and map them to CSS variables where available
+- Move shared values (fonts, brand colors, spacing) into variables and remove redundant selectors
+- Keep a small compatibility layer for any legacy selectors that are still required
+- Re-test core pages and components to verify visual parity after the swap
 
 These improvements significantly reduce the long-term cost of theme maintenance while aligning ZK with modern CSS best practices.
 
-## Improved OSGi Support (Maven and Packaging)
+## OSGi Packaging, Simplified
 <!--REQUIRED ZK EDITION: CE -->
 {% include edition-availability.html edition="ce" %}
 
@@ -117,10 +118,10 @@ ZK 10.3.0 simplifies OSGi packaging and distribution with two key changes:
 
 These changes reduce packaging complexity and make it easier to integrate ZK into modular platforms and OSGi-based systems.
 
-## Security and Other Enhancements
+## Security and Stability Updates
 Security remains our highest priority. ZK 10.3.0 updates multiple third-party libraries (such as Jython, Rhino, and PDF.js) to mitigate known vulnerabilities, updates the tbeditor to the latest Trumbowyg JS widget, and fixes 50+ bugs to improve stability and overall quality. For full details, refer to the release note.
 
-## Spring Framework Version Note
+### Spring Framework Version Note
 <!--REQUIRED ZK EDITION: CE -->
 {% include edition-availability.html edition="ce" %}
 
@@ -131,7 +132,7 @@ https://cwe.mitre.org/data/definitions/502.html
 
 For users with stricter security requirements, Spring 6.x may be used instead; however, Spring 6.x requires Java 17 or later, and upgrading may involve additional migration effort. You are encouraged to select the Spring version that best aligns with your Java runtime, security policies, and application requirements.
 
-# Summary
+# Summary: Ready for Modern ZK Apps
 ZK 10.3.0 focuses on refinement and readiness for modern enterprise development. With enhanced CSP support, improved multiple file downloads, a more flexible CSS-variable-based theming system, clearer OSGi packaging, and ongoing security and stability updates, this release helps teams build and maintain secure, modular, and future-proof ZK applications with confidence.
 
 We encourage you to upgrade to ZK 10.3.0 and take advantage of these enhancements in your next release.
