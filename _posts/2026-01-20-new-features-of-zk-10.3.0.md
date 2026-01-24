@@ -1,6 +1,6 @@
 ---
 author: jameschu
-date: 2026-01-20
+date: 2026-01-27
 version: 10.3.0
 category: small-talk
 title: "New Features of ZK 10.3.0"
@@ -121,16 +121,21 @@ These changes reduce packaging complexity and make it easier to integrate ZK int
 ## Security and Stability Updates
 Security remains our highest priority. ZK 10.3.0 updates multiple third-party libraries (such as Jython, Rhino, and PDF.js) to mitigate known vulnerabilities, updates the tbeditor to the latest Trumbowyg JS widget, and fixes 50+ bugs to improve stability and overall quality. For full details, refer to the release note.
 
-### Spring Framework Version Note
-<!--REQUIRED ZK EDITION: CE -->
-{% include edition-availability.html edition="ce" %}
+### Dependency Version & Security Considerations
 
-ZK's Spring integration module (`zkplus`) uses Spring Framework as an optional dependency, and the Spring version can be freely adjusted by the application developer. By default, the integration references Spring 5.x to maintain compatibility with Java 11 environments, which is the specification of ZK 10 and is commonly used by ZK applications.
+ZK integrates with several optional third-party libraries (such as Spring Framework, Closure Compiler, and JasperReports) to support a wide range of application scenarios. These dependencies are not bundled rigidly—application developers retain control and may adjust versions as needed based on their own runtime environment and security policies.
 
-However, Spring 5.x contains unsafe Java deserialization methods (CWE-502):
-https://cwe.mitre.org/data/definitions/502.html
+By default, ZK 10.3.0 targets Java 11 compatibility, which remains a common and stable baseline for many enterprise deployments. As a result, some optional integrations reference dependency versions that are compatible with Java 11 in order to ensure broad usability and smooth upgrades.
 
-For users with stricter security requirements, Spring 6.x may be used instead; however, Spring 6.x requires Java 17 or later, and upgrading may involve additional migration effort. You are encouraged to select the Spring version that best aligns with your Java runtime, security policies, and application requirements.
+For teams with stricter security or compliance requirements, newer dependency versions may be used where appropriate:
+
+- Spring Framework: ZK’s Spring integration module (`zkplus`) uses Spring as an optional dependency. While Spring 5.x is referenced by default to support Java 11 environments, applications running on Java 17 or later may choose to upgrade to Spring 6.x, which includes newer security and platform improvements. Please note that upgrading to Spring 6.x may require additional migration effort.
+
+- Closure Compiler: The `closure-compiler-unshaded` dependency used by ZK is optional and may be overridden at the application level if a newer version is preferred. Within ZK 10.3.0 itself, the referenced version remains aligned with Java 11 support.
+
+- JasperReports: The JasperReports integration (`zkex`) depends on the community edition of JasperReports. At the time of this release, the latest community version does not yet include certain security updates. Users who rely on JasperReports are encouraged to monitor upstream updates and assess whether alternative versions or mitigations are appropriate for their environment. See [JasperReport FAQ](https://community.jaspersoft.com/knowledgebase/faq/update-details-about-the-java-vulnerability-r4897/)
+
+Overall, ZK is designed to provide flexibility and transparency: you are encouraged to select dependency versions that best align with your Java runtime, security posture, and operational requirements, while benefiting from ZK’s stable integration architecture.
 
 # Summary: Ready for Modern ZK Apps
 ZK 10.3.0 focuses on refinement and readiness for modern enterprise development. With enhanced CSP support, improved multiple file downloads, a more flexible CSS-variable-based theming system, clearer OSGi packaging, and ongoing security and stability updates, this release helps teams build and maintain secure, modular, and future-proof ZK applications with confidence.
