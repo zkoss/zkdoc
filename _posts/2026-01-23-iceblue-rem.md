@@ -1,9 +1,9 @@
 ---
 author: hawk
-date: 2026-01-23
+date: 2026-02-10
 version: 10.3.0
 category: small-talk
-title: "Introducing iceblue_rem: A Scalable ZK Theme with REM-Based Sizing"
+title: "Introducing iceblue_rem: Easy Global UI Resizing with REM-Based Theming"
 ---
 
 # Overview
