@@ -932,6 +932,8 @@ zk_installation_guide:
         url: /zk_installation_guide/jetty
       - title: Resin
         url: /zk_installation_guide/resin
+  - title: Supported Browsers
+    url: /zk_installation_guide/supported_browsers
   - title: Setting up OS
     children:
       - title: Linux
