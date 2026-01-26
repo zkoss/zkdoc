@@ -95,7 +95,9 @@ This makes it easier to keep a consistent look and feel across buttons, inputs, 
 `--zk-base-font-size` sets the base typography size for the theme, so changing it scales text across components that reference this variable.
 
 
-For more details and examples, see [CSS Variables](https://docs.zkoss.org/zk_style_customization_guide/css_variables).
+For more details and examples, see [CSS Variables](https://docs.zkoss.org/zk_style_customization_guide/css_variables). 
+
+You can also try the live demo: [CSS Variables Demo](http://zkoss.org/zkdemo/customize_theme/css_variables).
 
 ### Upgrade Guide for Existing Themes
 To ensure a smooth upgrade, ZK 10.3.0 provides guidance for migrating existing custom themes:
