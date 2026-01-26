@@ -20,7 +20,7 @@ With QF-Test, you don't have to deal with all these complexities. QF-Test uses a
 
 Thanks to the CustomWebResolver, what QF-Test sees of your application is much closer to the [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) you probably wrote to build your application UI than the actual HTML that ZK is rendering.
 
-![An illustration of how QF-Test can condense complex web application HTML into semantic components](/zk_dev_ref/images/qftest-zk-3d-compare.png)
+![An illustration of how QF-Test can condense complex web application HTML into semantic components](/zk_dev_ref/images/qftest-zk-3d-compare.png){: width="80%"}
 
 This screenshot is now [over 10 years old](https://www.zkoss.org/wiki/Small_Talks/2014/May/Testing_ZK_Applications_at_Business_Level_with_QF-Test), but it is still excellent at illustrating the reduction of complexity the QF-Test CustomWebResolver achieves in typical web applications. On the left, you see all the layers of hierarchy in the raw HTML. This is what you would have to navigate in other browser testing tools. On the right, you see the simple and flat component tree that is available in QF-Test, because the QF-Test CWR reduces the HTML down to the underlying semantic components.
 
@@ -31,7 +31,7 @@ But is it not difficult to get browser automation up and running? Not with QF-Te
 1. [Download](https://qftest.com/en/download), install and launch QF-Test (it works on Windows, macOS and Linux!)
 2. Open the Quickstart wizard using the magic wand button in the toolbar
 
-![The QF-Test Quickstart wizard](/zk_dev_ref/images/qftest-quick-start-wizard.png)
+![The QF-Test Quickstart wizard](/zk_dev_ref/images/qftest-quick-start-wizard.png){: width="80%"}
 
 3. Choose "A web application in a browser" and click "Next".
 4. Enter the URL of your ZK-based web application and click "Finish".
