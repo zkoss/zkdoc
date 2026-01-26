@@ -11,7 +11,7 @@ layout first and ignore the details.
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <window apply="org.zkoss.essentials.chapter4.mvc.TodoListController"
     border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
-    <caption src="/imgs/todo.png" sclass="fn-caption" label="Todo List (MVC)"/>
+    <caption image="/imgs/todo.png" sclass="fn-caption" label="Todo List (MVC)"/>
     <borderlayout>
         <center autoscroll="true" border="none">
             <vlayout hflex="1" vflex="1">

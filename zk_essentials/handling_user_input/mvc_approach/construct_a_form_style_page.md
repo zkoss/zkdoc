@@ -12,7 +12,7 @@ We build the frame of this form first:
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <window 
     border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
-    <caption src="/imgs/profile.png" sclass="fn-caption"
+    <caption image="/imgs/profile.png" sclass="fn-caption"
         label="Profile (MVC)"/>
     <vlayout>
         <grid width="500px">
