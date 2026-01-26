@@ -129,6 +129,11 @@ defaults:
       sidebar:
         nav: "zuml_ref"
   - scope:
+      path: "zk_webdriver"
+    values:
+      sidebar:
+        nav: "zk_webdriver"        
+  - scope:
      path: "_posts"
     values:
       sidebar:

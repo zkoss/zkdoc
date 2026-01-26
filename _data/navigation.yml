@@ -31,8 +31,9 @@ main:
     url: https://doc.keikai.io/
   - title: ZK Spring Essentials
     url: /zk_spring_essentials/
+  - title: ZK Webdriver
+    url: /zk_webdriver/
   - title: ZATS Essentials
-    url: /zats_essentials/
   - title: ZK JSP Tags Essentials
     url: /zk_jsp_tags_essentials/
   - title: ZK Studio Essentials
@@ -621,6 +622,23 @@ zats_essentials:
             url: /zats_essentials/echo_event_handling
   - title: FAQ
     url: /zats_essentials/faq
+zk_webdriver:
+  - title: Introduction
+    url: /zk_webdriver/
+  - title: Getting Started
+    url: /zk_webdriver/getting_started
+  - title: Basic Usage
+    url: /zk_webdriver/basic_usage
+  - title: Finding Elements
+    url: /zk_webdriver/finding_elements
+  - title: Server Management
+    url: /zk_webdriver/server_management
+  - title: Advanced Configuration
+    url: /zk_webdriver/advanced_configuration
+  - title: Best Practices
+    url: /zk_webdriver/best_practices
+  - title: Examples
+    url: /zk_webdriver/examples
 zk_client_side_ref:
   - title: Introduction
     url: /zk_client_side_ref/introduction
