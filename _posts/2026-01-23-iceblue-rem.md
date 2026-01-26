@@ -45,20 +45,23 @@ To scale all components, simply change the root font size:
   font-size: 12px;
 }
 ```
+For most applications, this is all you need to do. 
 
-# Working with Existing Root Font Sizes
+Once the root font size is set, the entire ZK UI scales together — no more overriding individual component styles one by one.
 
-Many applications already define a root font size for their typography - often the browser default of 16px. Changing it to 8px would break your existing styles.
+## Working with Existing Root Font Sizes (Optional)
 
-For this scenario, iceblue_rem provides the `--zk-rem-ratio` CSS variable. This multiplier adjusts ZK component sizes without changing your root font size.
+Some applications already define a root font size for their typography - often the browser default of 16px. Changing it to 8px would break your existing styles.
 
-## The Formula
+If your application already defines a custom root font size, iceblue_rem provides the `--zk-rem-ratio` CSS variable to address the conflict. This multiplier adjusts ZK component sizes without changing your root font size.
+
+### The Formula
 
 ```
 --zk-rem-ratio = 8 / YOUR_ROOT_FONT_SIZE_IN_PX
 ```
 
-## Common Presets
+### Common Presets
 
 | Your Root Font Size | --zk-rem-ratio Value |
 |---------------------|----------------------|
@@ -68,7 +71,7 @@ For this scenario, iceblue_rem provides the `--zk-rem-ratio` CSS variable. This 
 | 14px                | 0.571                |
 | 16px (browser default) | 0.5               |
 
-## Example: Using 16px Root Font Size
+### Example: Using 16px Root Font Size
 
 ```css
 :root {
@@ -144,6 +147,12 @@ The iceblue_rem theme brings modern, scalable UI sizing to ZK applications:
 - **Runtime flexibility** - adjust component sizes dynamically via CSS or JavaScript
 
 Whether you're building accessible applications, responsive dashboards, or simply want more control over your UI density, iceblue_rem provides the foundation for scalable ZK interfaces.
+
+## Notes on Status and Feedback 
+
+This rem-based theme is currently provided as an experimental option. We intentionally released it as a separate theme to evaluate real-world compatibility and gather feedback before considering any changes to our official default theme.
+
+If this approach proves helpful and stable for users, we plan to consider integrating it into our official theming system in a future release. We welcome feedback and encourage you to try it out and share your experience. Please provide your feedback on this [forum thread](https://forum.zkoss.org) or contact us at info@zkoss.org.
 
 # Resources
 
