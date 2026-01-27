@@ -1,6 +1,6 @@
 ---
 author: jameschu
-date: 2026-01-27
+date: 2026-01-28
 version: 10.3.0
 category: small-talk
 title: "New Features of ZK 10.3.0"
