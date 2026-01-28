@@ -142,4 +142,4 @@ Overall, ZK is designed to provide flexibility and transparency: you are encoura
 # Summary: Ready for Modern ZK Apps
 ZK 10.3.0 focuses on refinement and readiness for modern enterprise development. With enhanced CSP support, improved multiple file downloads, a more flexible CSS-variable-based theming system, clearer OSGi packaging, and ongoing security and stability updates, this release helps teams build and maintain secure, modular, and future-proof ZK applications with confidence.
 
-We encourage you to upgrade to ZK 10.3.0 and take advantage of these enhancements in your next release.
+We encourage you to upgrade to ZK 10.3.0 and take advantage of these enhancements in your next release. 
