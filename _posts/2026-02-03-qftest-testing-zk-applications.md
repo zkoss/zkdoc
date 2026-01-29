@@ -1,6 +1,6 @@
 ---
 author: maxmelzer
-date: 2026-02-03
+date: 2026-01-03
 version: Any
 category: small-talk
 title: "Testing ZK Applications with QF-Test in 2026"
