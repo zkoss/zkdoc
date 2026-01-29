@@ -1,16 +1,16 @@
 ---
 author: maxmelzer
-date: 2026-01-03
+date: 2026-02-03
 version: Any
 category: small-talk
 title: "Testing ZK Applications with QF-Test in 2026"
 ---
 
-The great thing about ZK has always been that you can build web application without having to deal with the hassle of writing and maintaining HTML and JavaScript code. You define your application UI in concise [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) and little [richlets](/zk_dev_ref/ui_composing/richlet) written in Java, you can write unit tests for your business logic and even use [ZATS](https://www.zkoss.org/product/zats) to test your UI.
+The great thing about ZK has always been that you can build a web application without having to deal with the hassle of writing and maintaining HTML and JavaScript code. You define your application UI in concise [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) and little [richlets](/zk_dev_ref/ui_composing/richlet) written in Java, you can write unit tests for your business logic and even use [ZATS](https://www.zkoss.org/product/zats) to test your UI.
 
-However, you still want to make sure that your applications actually works for your users. In other words, you want to do end-to-end testing, including interactions of the user with the browser and the browser with the application. This is vital to ensure that the actual users of your application will have the intended experience.
+However, you still want to make sure that your applications actually work for your users. In other words, you want to do end-to-end testing, including interactions of the user with the browser and the browser with the application. This is vital to ensure that the actual users of your application will have the intended experience.
 
-This kind of browser testing has a reputation to be cumbersome, slow and fragile. With typical browser automation tools, you need to address your components in a deeply nested mess of `<div>` and `<span>` elements using long and complex XPath or CSS queries. A far cry from the clean and simple XML markup you can use to define your interface in ZK. The whole reason you chose ZK was probably because you didn't want to deal with loads and loads of HTML code.
+This kind of browser testing has a reputation for being cumbersome, slow and fragile. With typical browser automation tools, you need to address your components in a deeply nested mess of `<div>` and `<span>` elements using long and complex XPath or CSS queries. A far cry from the clean and simple XML markup you can use to define your interface in ZK. The whole reason you chose ZK was probably because you didn't want to deal with loads and loads of HTML code.
 
 ## Reduce complexity of end-to-end web tests with QF-Test
 
@@ -36,8 +36,8 @@ But is it not difficult to get browser automation up and running? Not with QF-Te
 3. Choose "A web application in a browser" and click "Next".
 4. Enter the URL of your ZK-based web application and click "Finish".
 5. Press the triangular green "Play" button in the QF-Test toolbar to launch your application in a browser controlled by QF-Test.
-6. Press the circular red "Start Recording" button to enter recording mode. You can now click around in your application, everything you do will be recorded by QF-Test.
-7. Press the square "Stop Recording" button to stop recording, your recorded actions will appear in QF-Test, ready to be replayed.
+6. Press the circular red "Start Recording" button to enter recording mode. You can now click around in your application; everything you do will be recorded by QF-Test.
+7. Press the square "Stop Recording" button to stop recording. Your recorded actions will appear in QF-Test, ready to be replayed.
 
 ![A finished recording in a QF-Test test suite](/zk_dev_ref/images/qftest-first-test-suite.png)
 
@@ -59,7 +59,7 @@ You get the gist. You will probably agree that this is much simpler to read and 
 
 And these are just the features in QF-Test that offer unique advantages for ZK users. On top of that, QF-Test enables a broad range of UI-based testing types:
 
-- You can run the same test suite **cross-browser** in Chrome, Edge, Firefox Safari and even mobile browsers to make sure that your users have a great experience everywhere. 
+- You can run the same test suite **cross-browser** in Chrome, Edge, Firefox, Safari and even mobile browsers to make sure that your users have a great experience everywhere. 
 - You can integrate QF-Test with **Robot Framework** and do **keyword-driven testing**.
 - Do **data-driven testing** by reading test data or instructions from a database, spreadsheet file, the file system and other sources.
 - QF-Test offers a suite of **accessibility tests** to help you ensure WCAG compliance and other standards.
