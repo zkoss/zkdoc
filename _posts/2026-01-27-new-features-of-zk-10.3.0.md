@@ -13,6 +13,8 @@ These refinements are designed to help teams maintain large-scale enterprise app
 
 View [ZK 10.3.0 Release Note](https://www.zkoss.org/product/zk/releasenote/10.3.0).
 
+For all new downloads and upgrades, we recommend using version 10.3.0.1.
+
 ## Download
 - [Demo](https://www.zkoss.org/zkdemo/)
 - [Download](https://www.zkoss.org/download/zk)
@@ -140,6 +142,6 @@ For teams with stricter security or compliance requirements, newer dependency ve
 Overall, ZK is designed to provide flexibility and transparency: you are encouraged to select dependency versions that best align with your Java runtime, security posture, and operational requirements, while benefiting from ZK’s stable integration architecture.
 
 # Summary: Ready for Modern ZK Apps
-ZK 10.3.0 focuses on refinement and readiness for modern enterprise development. With enhanced CSP support, improved multiple file downloads, a more flexible CSS-variable-based theming system, clearer OSGi packaging, and ongoing security and stability updates, this release helps teams build and maintain secure, modular, and future-proof ZK applications with confidence.
+ZK 10.3 focuses on refinement and readiness for modern enterprise development. With enhanced CSP support, improved multiple file downloads, a more flexible CSS-variable-based theming system, clearer OSGi packaging, and ongoing security and stability updates, this release helps teams build and maintain secure, modular, and future-proof ZK applications with confidence.
 
-We encourage you to upgrade to ZK 10.3.0 and take advantage of these enhancements in your next release. 
+We encourage you to upgrade to ZK 10.3 and take advantage of these enhancements in your next release. 
