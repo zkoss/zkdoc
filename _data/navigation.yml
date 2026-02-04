@@ -11,6 +11,8 @@ main:
     url: /zk_component_ref/
   - title: ZUML Reference
     url: /zuml_ref/
+  - title: Small Talks
+    url: /categories/#small-talk
   - title: ZK Installation Guide
     url: /zk_installation_guide/
   - title: ZK Configuration Reference
@@ -38,8 +40,6 @@ main:
     url: /zk_jsp_tags_essentials/
   - title: ZK Studio Essentials
     url: /zk_studio_essentials/
-  - title: Small Talks
-    url: /categories/#small-talk
   - title: Latest JavaDoc
     url: https://zkoss.org/javadoc/latest/zk/
   - title: Latest JavaScript Doc
