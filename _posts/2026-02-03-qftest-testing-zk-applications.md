@@ -73,4 +73,4 @@ As you can see, QF-Test and ZK are a great match. You can try out QF-Test for yo
 
 ----
 
-This article is contributed by ZK's partner, Quality First Software GmbH. We welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/). If you’d like to connect directly, feel free to reach out to QFS at [service@qftest.com](mailto:service@qftest.com).
+This article is contributed by ZK's partner, Quality First Software GmbH. If you have any questions or input, we welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/). If you’d like to connect directly, feel free to reach out to QFS at [service@qftest.com](mailto:service@qftest.com).  
