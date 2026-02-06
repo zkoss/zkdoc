@@ -54,12 +54,22 @@ Click "New Notebook" to create your personal ZK learning space.
 NotebookLM accepts various source types. Here are recommended ZK resources to add:
 
 ```text
+ZK Official website: https://www.zkoss.org/
+ZK demo: https://www.zkoss.org/zkdemo
 Official Documentation: https://github.com/zkoss/zkdoc
 code example: https://github.com/zkoss/zkbooks
 zkspring-boot: https://github.com/zkoss/zkspringboot
 
-https://www.youtube.com/watch?v=0XCxzQnBd-c
-
+13 Underrated ZK Features You Should Know https://www.youtube.com/watch?v=0XCxzQnBd-c
+Building Custom Components – Credit Card Input Box https://www.youtube.com/watch?v=5GnPv6k1uZI
+Responsive Design in ZK https://www.youtube.com/watch?v=ySub07pxAL8
+Top ZK How To Questions https://www.youtube.com/watch?v=OS7AJKAEods
+Uncovering Advanced ZK Features https://www.youtube.com/watch?v=TXrKLw47444
+Discover the Power of ZK 10 Stateless Components https://www.youtube.com/watch?v=nonTIguL7ls
+Using Spring with ZK: An Overview https://www.youtube.com/watch?v=PWp0hJmXkxo
+ZK Automated Testing Using ZATS https://youtu.be/Uu1NRabo4Hg?list=TLGGgaDVqUEZti0wNjAyMjAyNg
+ZK Basics in 1 Hour https://youtu.be/YZ1q5s4sAxk?list=TLGGle3GLvdUi1AwNjAyMjAyNg
+ZK Debugging Tips https://youtu.be/v_N4l_3IMhk?list=TLGGLIPfFht1SuEwNjAyMjAyNg
 ```
 ## Step 4: Start Asking Questions
 
