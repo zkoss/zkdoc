@@ -15,6 +15,12 @@ is the `html` tag. In other words, the attributes specified in the
 `root-attribute` directives will become the attributes of the `<html>`
 element of the generated output. For example,
 
+# any-name*
+
+`any-value` = Any numbers of names and values are allowed. The value can contain EL expressions.
+
+# Examples
+
 ```xml
  <?root-attributes xmlns:v="urn:schemas-microsoft-com:vml"?>
 ```
@@ -26,19 +32,13 @@ will cause the HTML output to be generated with the following snippet
  xmlns:v="urn:schemas-microsoft-com:vml">
 ```
 
-Note:
-`xmlns="http://www.w3.org/1999/xhtml"` is always generated.
 
-Note: If the value is specified with an EL expression, and it is
-evaluated to null, the corresponding attribute won't be generated.
-
-Other examples:
 ```xml
 <?root-attributes lang="EN"?>
 ```
 
-# any-name
 
-`any-value` = Any numbers of names and values are allowed. The value can contain EL expressions.
-
-
+# Note:
+* `xmlns="http://www.w3.org/1999/xhtml"` is always generated.
+*  If the value is specified with an EL expression, and it is
+evaluated to `null`, the corresponding attribute won't be generated into the target HTML page.
