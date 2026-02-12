@@ -4,11 +4,16 @@ title: "The Library Properties"
 
 
 
-Here is a list of supported library properties that ZK supports. There
-are several different scopes you can configure for a library property.
+Here is a list of supported library properties that ZK supports. There  are several different scopes you can configure for a library property.
+
+# One Instance per class loader
+ZK stores library properties in a static object, so there is only one instance of a library property per class loader. If you have multiple web applications running in the same web server, they will share the same library property if they are using the same class loader. Therefore, if you want to set a library property that only supports **application scope**, it will also affect other ZK applications. Only those properties that support **page** and **component** scope that don't affect others.
+
+# Affected Scope
 All properties support **system/application** scope, but some properties
 support **page/component** scope. Please check each property's page to
 know its supported scope.
+
 
 # System Scope
 
