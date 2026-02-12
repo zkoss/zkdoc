@@ -2,8 +2,8 @@
 title: "Applet"
 ---
 
-{% include Deprecated_Content.html %} Removed {% include supported-since.html version=
-10.0.0 %}
+{% include Deprecated_Content.html %}
+{% include supported-since.html version=10.0.0 %}Removed from ZK 
 
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Applet.html)
@@ -43,7 +43,6 @@ should not have to encode it again.
 # Supported Children
 
 `*NONE`
-
 
 
 # Version History

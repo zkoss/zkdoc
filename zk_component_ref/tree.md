@@ -225,12 +225,7 @@ The following code demonstrates how to freeze a column within a Tree:
 
 {% include supported-since.html version="5.0.5" %}
 
-By default, when a user clicks on an HTML element like `<button>,
-<input>,
-
-<textarea>
-
-`, or <a> tag, the selection state of the item won't be changed.
+By default, when a user clicks on an HTML element like `<button>`, `<input>`, `<textarea>`,  or `<a>` tag, the selection state of the item won't be changed.
 For example, when a user clicks the textbox in the following example,
 the selection state of the item won't be changed (only the textbox gains
 the focus).
@@ -390,8 +385,6 @@ tree.setMultiple(true);
 ```
 
 
-<video src="DefaultTristateTreeModel_demo.mov")
-
 Treecols's header checkmark also support tristate
 ![](/zk_component_ref/images/DefaultTristateTreeModelwithTreecol.png)
 
@@ -530,8 +523,7 @@ configuration in zk.xml.
 </library-property>
 ```
 
-**Note**: the value of org.zkoss.zul.nativebar is true by default (since
-7.0.2)
+**Note**: the value of `org.zkoss.zul.nativebar` is `true` by default {% include supported-since.html version="7.0.2" %})
 
 ## The Open Property and the onOpen Event
 
@@ -617,7 +609,7 @@ boxes.
 ## org.zkoss.zul.tree.rightSelect
 
 `[default: true]`  
-`[inherit: true]`[^1]
+`[inherit: true]`
 
 It specifies the selection should be toggled when user right clicks on
 an item, if the checkmark is enabled
