@@ -653,28 +653,13 @@ component.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onSelect` | **Event:**
-[org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that
-the user has selected a new item in the tree. |
-| `onFocus` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-gets the focus. Remember event listeners execute at the server, so the
-focus at the client might be changed when the event listener for onFocus
-got executed. |
-| `onBlur` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component
-loses the focus. Remember event listeners execute at the server, so the
-focus at the client might be changed when the event listener for onBlur
-got executed. |
-| `onAfterRender` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | **Event:**
-[org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging
-size has been changed when the autopaging
-([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean)))
-is enabled and user changed the size of the content. |
+| Name | Event Type  |
+|---|-----------------------|
+| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a new item in the tree. |
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed. |
+| `onAfterRender` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| `onPageSize` | [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -701,33 +686,39 @@ zul.jar.
 
 # Browser Limitations
 
-| Browser | description |
-|---|---|
-| Chrome &amp; Safari | <div class="sourceCode" id="cb1"><pre class="sourceCode xml">`&lt;zk&gt;
-    &lt;hbox&gt;
-        &lt;tree&gt;
-            &lt;treecols&gt;
-                &lt;treecol label="Name" /&gt;
-                &lt;treecol label="Description" /&gt;
-            &lt;/treecols&gt;
-            &lt;treechildren&gt;
-                &lt;treeitem&gt;
-                    &lt;treerow&gt;
-                        &lt;treecell label="Item 1" /&gt;
-                        &lt;treecell label="Item 1 description" /&gt;
-                    &lt;/treerow&gt;
-                &lt;/treeitem&gt;
-            &lt;/treechildren&gt;
-        &lt;/tree&gt;
-    &lt;/hbox&gt;
-&lt;/zk&gt;``</pre></div>
-The width of the tree will be zero with Chrome &amp; Safari. the
-Webkit considers the width of tree as zero. please specify the width to
-tree to work around. |
+Chrome & Safari
+
+When a Tree is placed inside certain container layouts (for example an hbox)
+in WebKit-based browsers (Chrome and Safari), the computed width may become
+zero. To avoid this, set an explicit width on the tree. Example:
+
+```xml
+<zk>
+    <hbox>
+        <tree width="300px">
+            <treecols>
+                <treecol label="Name" />
+                <treecol label="Description" />
+            </treecols>
+            <treechildren>
+                <treeitem>
+                    <treerow>
+                        <treecell label="Item 1" />
+                        <treecell label="Item 1 description" />
+                    </treerow>
+                </treeitem>
+            </treechildren>
+        </tree>
+    </hbox>
+</zk>
+```
+
+The width of the tree will be zero in Chrome and Safari if no width is specified
+because WebKit may consider the tree's natural width to be zero. Specify the
+width (or use a layout/column sizing approach that yields a non-zero width)
+to work around this.
 
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                                                                                                         |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
