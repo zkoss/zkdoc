@@ -51,7 +51,7 @@ located on the server side. s.
 
 ![](/zk_dev_ref/images/Stateful_component_overview.jpg)
 
-![]({{site.baseurl}}/zk_dev_ref/images/Stateless_component_overview.jpg)
+![](/zk_dev_ref/images/Stateless_component_overview.jpg)
 
 ### Component State Management
 

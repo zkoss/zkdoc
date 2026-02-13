@@ -50,8 +50,7 @@ and mapping a URL to that richlet.
 We use `@RichletMapping` to compose a URL. When users visit that URL, ZK
 will invoke the corresponding method.
 
-For example below, the `index()` URL will be **<protocal>://
-<host name: port> /shoppingCart**.
+For example below, the `index()` URL will be **<protocal>:// <host name: port> /shoppingCart**.
 
 ```java
     @RichletMapping("/shoppingCart")
@@ -166,11 +165,8 @@ will pass the corresponding parameters you specified.
 - `@ActionVariable(targetId = ActionTarget.SELF, field = "id")`
   retrieves the value from the `field` of a component with the
   `targetId` on the client.
-  </li>
 - `ActionTarget.SELF` represents the component associated with the event
-  which is a button. Please see
-  [ActionTarget](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/stateless/action/ActionTarget.html)
-  for other targets.
+  which is a button. Please see [ActionTarget](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/stateless/action/ActionTarget.html)   for other targets.
 
 ```java
     public void addItem(@ActionVariable(targetId = ActionTarget.SELF, field = "id") String orderId) {
@@ -318,4 +314,4 @@ When using a zul, you need to apply `@Action` on a method instead of
 - Line 1: this line wires the method as an action handler for onClick
   event on a component whose id is `calculate`. Specify a component
   selector in `from`, e.g. `#calculate` is ID selector. see
-  [{{site.baseurl}}/zk_dev_ref/mvc/wire_components#CSS3-like_Selectors]({{site.baseurl}}/zk_dev_ref/mvc/wire_components#CSS3-like_Selectors)
+  [CSS3-like_Selectors]({{site.baseurl}}/zk_dev_ref/mvc/wire_components#CSS3-like_Selectors)
