@@ -138,8 +138,8 @@ please overwrite the CSS rule as your preference.
 
 {% include supported-since.html version="5.0.8" %}
 
-**Note:** In ZK 7, we change the naming *.z-treecell-cnt* to
-*.z-treecell-content*. {% include supported-since.html version="7.0.3" %}
+**Note:** In ZK 7, we change the naming `.z-treecell-cnt` to
+`.z-treecell-content`. {% include supported-since.html version="7.0.3" %}
 
 ## PagingDisabled
 
