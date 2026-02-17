@@ -8,7 +8,7 @@ title: "Introducing iceblue_rem: Easy Global UI Resizing with REM-Based Theming"
 
 # Overview
 
-We are excited to introduce **iceblue_rem**, a new ZK theme that brings scalable, responsive UI sizing to your ZK applications. This theme maintains the familiar look of the default iceblue theme while converting all component dimensions to CSS `rem` units - enabling you to resize the entire UI by simply adjusting a single CSS value.
+We are excited to introduce a preview of **iceblue_rem**, a new ZK theme that brings scalable, responsive UI sizing to your ZK applications. This theme maintains the familiar look of the default iceblue theme while converting all component dimensions to CSS `rem` units - enabling you to resize the entire UI by simply adjusting a single CSS value.
 
 # Why REM Units Matter
 
