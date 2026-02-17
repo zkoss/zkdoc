@@ -3,7 +3,7 @@ author: hawk
 date: 2026-02-17
 version: 10.3.0.1
 category: small-talk
-title: "Introducing iceblue-rem: Easy Global UI Resizing with REM-Based Theming"
+title: "Introducing iceblue_rem: Easy Global UI Resizing with REM-Based Theming"
 ---
 
 # Overview
