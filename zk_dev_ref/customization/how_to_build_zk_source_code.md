@@ -1,3 +1,6 @@
+{% include Deprecated_Content.html %}
+See [ZK Installation Guide/Building ZK from Source](/zk_installation_guide/building_from_source)
+
 # SVN Repository
 
 Depending on the branch you want, you could check out the source codes

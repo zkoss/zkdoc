@@ -2037,8 +2037,6 @@ zk_dev_ref:
         url: /zk_dev_ref/customization/au_services
       - title: AU Extensions
         url: /zk_dev_ref/customization/au_extensions
-      - title: How to Build ZK Source Code
-        url: /zk_dev_ref/customization/how_to_build_zk_source_code
       - title: Handle AU Request Resend
         url: /zk_dev_ref/customization/handle_au_request_resend
   - title: Supporting Utilities
