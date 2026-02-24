@@ -9,13 +9,13 @@ The process typically involves two steps:
 ```
 +-------------------------+          +-------------------+
 |  Define Template        | ----->   |  Apply Template   |
-| (No components Created) |          | (Creates UI)      |
+| (No components created) |          | (Creates UI)      |
 +-------------------------+          +-------------------+
 ```
 
 ## Define a Template
 
-You can define a `<template>` inside any component. A template remains dormant and does not create any components until it is explicitly applied.
+You can define a `<template>` inside any component. A template remains dormant and does not create any components until it is applied.
 
 ### Inline Template
 Define the UI components directly within the tag:
@@ -61,7 +61,7 @@ Add attributes directly to the `<apply>` tag. These become available as variable
 <apply template="userProfile" username="John Doe" role="Admin"/>
 ```
 
-### MVVM Reference Passing
+### Reference Binding Passing
 In MVVM, use `@ref` to pass object references efficiently without triggering full data loading until needed in the template.
 ```xml
 <apply template="iterate" menuItems="@ref(vm.menuHierarchy)"/>
@@ -72,6 +72,10 @@ When using `templateURI`, you can pass parameters via a query string. Note that 
 ```xml
 <apply templateURI="/mytemplate.zul?mode=edit&id=123"/>
 ```
+
+You can access these parameters in the applied page using:
+- **EL**: `${arg.mode}`
+- **Java**: `Executions.getCurrent().getArg().get("mode")`
 
 ## Recursive Templates
 
@@ -128,4 +132,4 @@ Using shadow elements (like `<apply>` or `<forEach>`) inside templates that are 
 Shadow elements must sync their position in the component tree relative to siblings. In large collections, adding/removing shadow elements causes recalculations for all siblings at the same level.
 
 **Recommendation:**
-If you need dynamic component selection in a large list, use [Dynamic Templates](../syntax/template) or [Children Binding](../data_binding/children_binding) instead of nested `<apply>` tags.
+If you need dynamic component selection in a large list, use [Dynamic Templates](../syntax/template) or [forEach](../syntax/foreach) instead of nested `<apply>` tags.
