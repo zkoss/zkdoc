@@ -4,11 +4,11 @@ title: "Data Rendering"
 
 
 
-The rendering of Pivottable is defined by a PivotRenderer. You set your
-custom renderer by calling `setPivotRenderer()` method on Pivottable, or
-just use the default PivotRenderer.
+The rendering of Pivottable is defined by a `PivotRenderer`. You set your
+custom renderer by calling `Pivottable::setPivotRenderer()`, or
+just use the default `PivotRenderer`.
 
-PivotRenderer determines:
+`PivotRenderer` determines:
 
 - How data Object in each cell (either in column, row, or data field) is
   converted to String for display
@@ -161,5 +161,3 @@ Hide both '+' and '-' icon
     display: none;
 }
 ```
-
-#
