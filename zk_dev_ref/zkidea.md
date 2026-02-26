@@ -45,6 +45,21 @@ For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provide
 
 ![](/zk_dev_ref/images/annotation_code_completion.png)
 
+### Data Binding Navigation
+{% include supported-since.html version="0.6.0" %}
+
+*   **Property Navigation**: Jump directly from property references in ZUL binding expressions (e.g., `@load(vm.name)`) to their corresponding Java getter methods in the ViewModel. It supports deep object hierarchies (e.g., `vm.user.name`).
+*   **ViewModel ID Navigation**: Quickly navigate from a ViewModel identifier to the corresponding Java ViewModel class.
+*   **Command Navigation**: Jump from `@command` or `@global-command` annotation arguments to the server-side methods annotated with `@Command` or `@GlobalCommand`.
+*   **Template URI Navigation**: Navigate to static ZUL template file paths referenced within `@load` or `@init` expressions.
+
+### Intelligent Completion
+{% include supported-since.html version="0.6.0" %}
+
+*   **ViewModel Property Completion**: Get smart suggestions for properties and methods based on the current ViewModel's type.
+*   **Command Name Completion**: Offers a list of valid `@Command` and `@GlobalCommand` names defined in the active ViewModel.
+*   **Scope Variable Completion**: Suggests available variables from different ZK scopes, including ViewModel IDs, template variables (e.g., `each`), and custom attributes.
+
 ## Maven Project Creation
 
 {% include supported-since.html version="0.1.3" %}
