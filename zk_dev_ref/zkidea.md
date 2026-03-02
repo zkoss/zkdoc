@@ -60,6 +60,31 @@ For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provide
 *   **Command Name Completion**: Offers a list of valid `@Command` and `@GlobalCommand` names defined in the active ViewModel.
 *   **Scope Variable Completion**: Suggests available variables from different ZK scopes, including ViewModel IDs, template variables (e.g., `each`), and custom attributes.
 
+## Live Templates Support
+
+{% include supported-since.html version="0.7.0" %}
+
+The ZK plugin now includes a dedicated "ZK" group of IntelliJ Live Templates to accelerate your development. These templates are available automatically upon plugin installation without requiring any manual setup.
+
+### Essential Templates
+
+The plugin provides several "shorthand" abbreviations to quickly generate boilerplate code:
+
+*   **`ns` (ZK Namespace)**: Inserts the four common ZK namespace aliases (`native`, `client/attribute`, `client`, and `xhtml`) into a ZUL tag.
+*   **`jspatch` (JS Widget Patch)**: Scaffolds a ZK client-side widget override with a version guard and a best-practice checklist for overriding `zk.override`.
+
+### UI Component Scaffolding
+
+Generate the basic structure of complex ZK components instantly:
+
+*   **`grid`**: Inserts a Grid with two Columns and a sample Row.
+*   **`listbox`**: Inserts a Listbox with two Listheaders and a sample Listitem.
+*   **`tree`**: Inserts a Tree with two Treecols and a sample Treeitem.
+
+### Runtime and Customization
+
+Plugin-provided templates merge seamlessly with your existing IntelliJ templates. If you already have a "ZK" template group, the plugin's defaults will be added alongside your own. You can customize these templates or reset them to defaults via **Settings → Editor → Live Templates**.
+
 ## Maven Project Creation
 
 {% include supported-since.html version="0.1.3" %}
