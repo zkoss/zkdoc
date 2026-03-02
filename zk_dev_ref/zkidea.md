@@ -60,11 +60,11 @@ For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provide
 *   **Command Name Completion**: Offers a list of valid `@Command` and `@GlobalCommand` names defined in the active ViewModel.
 *   **Scope Variable Completion**: Suggests available variables from different ZK scopes, including ViewModel IDs, template variables (e.g., `each`), and custom attributes.
 
-## Live Templates Support
+## Live Templates
 
 {% include supported-since.html version="0.7.0" %}
 
-The ZK plugin now includes a dedicated "ZK" group of IntelliJ Live Templates to accelerate your development. These templates are available automatically upon plugin installation without requiring any manual setup.
+The ZK plugin now includes a dedicated "ZK" group in IntelliJ Live Templates to accelerate your development. These templates are available automatically upon plugin installation without requiring any manual setup.
 
 ### Essential Templates
 
