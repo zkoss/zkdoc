@@ -2,6 +2,8 @@
 {% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="10.3.0" %}
 
+You can specify the following elements in `zk.xml` to enable and configure Content Security Policy (CSP) for your ZK application. These configurations will automatically apply the appropriate CSP headers to all ZK pages, providing an additional layer of security against cross-site scripting (XSS) and other code injection attacks.
+
 ## The csp-enabled Element
 Syntax:
 `<csp-enabled>true|false</csp-enabled>`
