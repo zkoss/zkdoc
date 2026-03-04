@@ -1,11 +1,10 @@
 # ZK Document Website
 
 ## About ZK
-ZK is a popular Java web framework that allows developers to build modern, feature-rich web applications entirely in Java without needing to write JavaScript.  
-It provides a wide range of ready-to-use UI components, a server-centric architecture, and seamless integration with enterprise Java backends.
+ZK is a popular Java web UI framework that allows developers to build modern, feature-rich web applications entirely in Java without needing to write JavaScript. It provides a wide range of ready-to-use UI components, a server-centric architecture, and seamless integration with enterprise Java backends.
 
-- **Website:** [https://www.zkoss.org](https://www.zkoss.org)  
-- **GitHub (Framework Source):** [https://github.com/zkoss/zk](https://github.com/zkoss/zk)  
+- [**Website:**](https://www.zkoss.org)  
+- [**GitHub (Framework Source):**](https://github.com/zkoss/zk)  
 
 Key advantages of ZK:
 - Build complete web UIs in Java with minimal frontend coding
@@ -14,6 +13,9 @@ Key advantages of ZK:
 - Suitable for enterprise apps, internal tools, and complex data-driven UIs
 
 This repository contains the source for the [ZK Documentation website](https://www.zkoss.org/documentation).  
+
+# Maintain with Agent Skill
+If you use an AI agent to maintain this documentation, please install agent skill [zk-technical-writer](http://gitlab.potix.com/zk-support/support-agent-skills) and use it to update the content of this repository.
 
 ## Features
 ### Sidebar
