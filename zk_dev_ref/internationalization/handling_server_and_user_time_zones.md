@@ -35,7 +35,7 @@ matching point in time in its own time zone. If the server is on GMT+0
 time zone, for example, it will receive Jan 1st 2022, with a time of
 04:00 at GMT+0
 
-![](/zk_dev_ref/images/Universal_time_conversion.png)
+![](/zk_dev_ref/images/universal_time_conversion.png)
 
 In this case, the displayed times of "GMT+0 00:00", "GMT+4 04:00" and
 "GMT+8 08:00" all represent the same point in time. They all convert to
@@ -58,7 +58,7 @@ and time expressed relative to the end-user.
 
 ## Default time of the day selection in ZK Datebox
 
-The [ Datebox](/zk_component_ref/datebox) has
+The [Datebox](/zk_component_ref/datebox) has
 the ability to provide date selection with or without time-of-day.
 
 Depending on how the Datebox is set up, it can cater to a number of use
