@@ -1,7 +1,6 @@
 ---
-title: "List Model"
+title: "ListModel"
 ---
-
 
 
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html),
@@ -68,6 +67,8 @@ When you call a method of `ListModel`, e.g. `add(), remove(), set()`, it
 will automatically notify its associated component to render the
 differential items instead of re-rendering all items.
 
+
+
 # Load All Data into a ListModel
 
 If the amount of your data is small, you could load them all into a
@@ -89,6 +90,33 @@ public class FooModel extends AbstractListModel {
         return _data.get(index);
     }
 }
+```
+
+# Basic Operation: CRUD
+
+ZK's default `ListModel` implementations, such as `ListModelList`, provide standard collection-like methods to perform CRUD (Create, Read, Update, Delete) operations. These methods not only manage the data but also automatically fire the necessary events to notify associated components for UI updates.
+
+- **Create**: Use `add(E element)` to append a new item.
+- **Read**: Use `get(int index)` to retrieve an item at a specific position.
+- **Update**: Use `set(int index, E element)`.
+- **Delete**: Use `remove(int index)` or `remove(Object o)`.
+
+For example,
+
+```java
+ListModelList<String> model = new ListModelList<>();
+
+// Create
+model.add("New Item");
+
+// Read
+String item = model.get(0);
+
+// Update
+model.set(0, "Updated Item");
+
+// Delete
+model.remove(0);
 ```
 
 # Load Partial Data into a ListModel
