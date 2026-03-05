@@ -21,10 +21,7 @@ writing a custom renderer.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/drlistmodelrenderer.png)
 
-As shown, the listbox retrieves elements from the specified model[^1],
-and then invokes the renderer, if specified, to compose the
-[listitem]({{site.baseurl}}/zk_component_ref/listitem) for
-the element.
+As shown, the listbox retrieves elements from the specified model. To optimize performance, ZK uses a mechanism called **Live Data** (or **Render on Demand**) where the listbox only retrieves elements that are currently visible at the client, such as those on the active page. After retrieval, it then invokes the renderer, if specified, to compose the [listitem]({{site.baseurl}}/zk_component_ref/listitem) for the element.
 
 The retrieval of elements is done by invoking
 [org.zkoss.zul.ListModel#getSize()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html#getSize())
@@ -264,8 +261,7 @@ On the other hand, when the model detects the selection is changed (such
 as
 [org.zkoss.zul.ext.Selectable#addSelection(E)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#addSelection(E))
 is called), it has to fire the event, such as
-[org.zkoss.zul.event.ListDataEvent#SELECTION_CHANGED](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html#SELECTION_CHANGED) to notify the component. It will cause the component to
-correct the selection[^2].
+[org.zkoss.zul.event.ListDataEvent#SELECTION_CHANGED](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html#SELECTION_CHANGED) to notify the component. This causes the component to correct the selection. ZK is designed to automatically prevent dead loops in this process, even when the component invokes `addSelection` to notify the model while the model simultaneously fires an event to notify the component.
 
 All default implementations, including
 [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), implement
@@ -307,10 +303,3 @@ to sort in the order specified in the `ascending` parameter.
 | 6.0.0   | February 2012 | All selection states are maintained in the list model. And, the application shall <i>not</i> access the component for the selection. Rather, the application shall invoke [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) for retrieving or changing the selection. |
 | 6.0.0   | February 2012 | [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) was introduced and replaced `ListModelExt`.                                                                                                                                                          |
 
-[^1]: The listbox is smart enough to read the elements that are visible
-    at the client, such as the elements for the active page. It is
-    called *Live Data* or *Render on Demand*.
-
-[^2]: Don't worry. The component is smart enough to prevent the dead
-    loop, even though the component invokes addSelection to notify the
-    model while the model fires the event to notify the component.
