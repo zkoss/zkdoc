@@ -134,7 +134,7 @@ mycomponent.MyWidget = zk.$extends(zul.Widget, {
     // ...
 });
 
-mycomponent.AnotherWidget = zk.$extends(zul.XulElement, {
+mycomponent.AnotherWidget = zk.$extends(zul.Widget, {
     // ...
 });
 ```

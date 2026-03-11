@@ -16,9 +16,8 @@ The widget class hierarchy is structured as follows:
 ```
 zk.Widget (base for all widgets)
 ├── zul.Widget (standard UI widgets)
-├── zul.XulElement (container/layout widgets)
-├── zul.HTMLElement (for rendering raw HTML)
-└── ... (other specialized bases)
+├── zul.Label / zul.Button / ... (concrete ZUL widgets)
+└── ... (other specialized widget classes)
 ```
 
 **zk.Widget** - The base class for all widgets. Provides:
@@ -32,10 +31,7 @@ zk.Widget (base for all widgets)
 - Used for most custom widgets like buttons, labels, inputs
 - Provides standard widget behavior and styling
 
-**zul.XulElement** - Base for container and layout widgets
-- Extends `zul.Widget`
-- Used for widgets that contain other widgets (panels, divs, etc.)
-- Handles child widget management
+For custom client widgets in this guide, use `zul.Widget` (or `zk.Widget` for low-level cases), and only extend a concrete `zul.*` class when you intentionally inherit that component's behavior.
 
 ---
 
@@ -100,8 +96,8 @@ com.foo.SimpleLabel = zk.$extends(zul.Widget, {
 - Use `zk.$extends(baseClass, members, staticMembers)`
 - Choose appropriate base class:
   - `zul.Widget` for most widgets
-  - `zul.XulElement` for containers
   - `zk.Widget` for low-level custom widgets
+  - A concrete `zul.*` widget class if you want to reuse its built-in behavior
 
 ### 3. Property Definitions
 
@@ -132,12 +128,18 @@ redraw: function(out) {
 
 Generates the HTML for the widget. Called by ZK framework to render the widget in the browser.
 
+`redraw()` is the rendering entry point. If your widget supports molds, `redraw()`
+typically delegates rendering to the active mold (selected by `getMold()`), while the
+mold method contains the concrete HTML structure. If you only need one rendering style,
+implementing `redraw()` directly is sufficient.
+
 Key methods:
 - `out.push()` - Append HTML strings to output
 - `this.domAttrs_()` - Generate standard DOM attributes (id, class, style, etc.)
 - `zUtl.encodeXML()` - Safely encode values for HTML content
 
-See [The Redraw Method](the_redraw_method) for more details.
+See [The Redraw Method](the_redraw_method) for more details, and
+[Implementing Molds](implementing_molds) for mold-based rendering.
 
 ### 5. Lifecycle Methods
 
@@ -174,6 +176,10 @@ See [How we Implement the Event](how_we_implement_the_event) for event handling 
 
 ### 6. Event Handlers
 
+For widget events, you can use either custom handlers or override ZK's built-in protected hooks.
+
+**Custom handler registered in `bind_()`**
+
 ```javascript
 _doClick: function(evt) {
     // Handle the click event
@@ -181,10 +187,30 @@ _doClick: function(evt) {
 }
 ```
 
-Private methods (starting with `_`) that handle DOM events registered in `bind_()`. These methods:
+Private methods (starting with `_`) handle DOM events you register with `domListen_()` in `bind_()`.
+
+**Override built-in protected hook (example: `doClick_`)**
+
+```javascript
+doClick_: function (evt) {
+    // Custom behavior before/after default processing
+    this.fire('onSimpleClick', {data: 'clicked'});
+    this.$supers('doClick_', arguments); // keep default click handling
+}
+```
+
+Common built-in protected hooks in `zk.Widget` include:
+- `doClick_()`
+- `doDoubleClick_()`
+- `doRightClick_()`
+- `doMouseDown_()`, `doMouseUp_()`, `doMouseOver_()`, `doMouseOut_()`
+- `doKeyDown_()`, `doKeyUp_()`, `doKeyPress_()`
+
+Key points:
 - Are called automatically when their registered event occurs
 - Can update widget state
 - Can fire custom events using `this.fire()`
+- When overriding `doXxx_()`, usually call `this.$supers('doXxx_', arguments)` to preserve default behavior
 
 ---
 
