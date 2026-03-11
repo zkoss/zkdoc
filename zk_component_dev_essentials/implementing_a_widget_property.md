@@ -33,10 +33,10 @@ A post-processor function is called after the value is set. This is useful for u
 ```javascript
 mycomponent.true = zk.$extends(zul.Widget, {
     $define: {
-        text: function() {
+        text: function (v) {
             if (this.desktop) {
-                // This code runs after setText() is called
-                this.$n().innerHTML = zUtl.encodeXML(this._text);
+                // This code runs after setText() stores the value
+                this.$n().innerHTML = zUtl.encodeXML(v);
             }
         }
     }
@@ -45,9 +45,11 @@ mycomponent.true = zk.$extends(zul.Widget, {
 
 **Post-processor behavior:**
 - Called **after** the property value is stored in the internal field (e.g., `this._text`)
-- Receives no parameters (the value is already stored)
-- Can access the new value via the internal field (e.g., `this._text`)
+- Receives the processed value as a parameter (for example, `function (v) { ... }`)
+- Can also access the new value via the internal field (e.g., `this._text`)
 - Common use case: Update DOM elements when properties change
+- Real-world reference: `zul.sel.Select` uses a post-processor parameter in `$define`
+  ([Select.js line 142](https://github.com/zkoss/zk/blob/9.6/zul/src/archive/web/js/zul/sel/Select.js#L142))
 
 ### Property with Pre and Post-Processor
 
@@ -61,7 +63,7 @@ mycomponent.true = zk.$extends(zul.Widget, {
                 // Pre-processor: validate/transform the value before storing
                 return v != null ? v.trim() : '';
             },
-            function() {
+            function(v) {
                 // Post-processor: update DOM after value is stored
                 if (this.desktop) {
                     this.rerender();
@@ -80,7 +82,8 @@ mycomponent.true = zk.$extends(zul.Widget, {
 
 **Post-processor behavior:**
 - Called **after** the value is stored
-- Can access the new value via the internal field
+- Receives the processed value as a parameter
+- Can also access the new value via the internal field
 - Common use cases: DOM updates, event triggering
 
 ### Widget Class Reference
@@ -129,7 +132,7 @@ setValue: function(value) {
 
 ## Comparing Approaches
 
-| Feature | `$define` | Manual |
+| Feature | $define | Manual |
 |---------|-----------|--------|
 | **Code conciseness** | 1-2 lines | 10+ lines |
 | **Getter/Setter generation** | Automatic | Manual |
