@@ -6,7 +6,8 @@ Starting from ZK 7.0.0 integrates [Font Awesome 4.0.1](https://fontawesomelib.co
 with the prefix **z-icon**. You don't need to manually include Font
 Awesome CSS because it's already packaged with ZK jar.
 
-You can check [the page to display all supported icons](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul).
+# Supported Icons
+You can run [the page to display all supported icons](https://github.com/zkoss/zkbooks/blob/master/developersreference/developersreference/src/main/webapp/integration/font-awesome-icons.zul) in of the zk jar you include.
 
 # Basic Usage
 
