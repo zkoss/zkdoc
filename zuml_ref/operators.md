@@ -16,17 +16,19 @@ EL expressions provide the following operators:
 
 
 
-The relative precedence levels of operators from the highest to lowest, left to right are as follows:
+The relative precedence levels of operators, from highest to lowest (left to right), are organized as follows:
 
-- \[\] .
-- () : Used to change the precedence of operators.
-- \- (unary) not ! empty
-- \* / div % mod
-- \+ - (binary)
-- \< \> \<= \>= lt gt le ge
-- == != eq ne
-- && and
-- \|\| or
-- ? :
+| Precedence | Operators | Description |
+|:---|:---|:---|
+| **Highest** | `[]`, `.` | Member and index access |
+| | `()` | Grouping (used to change evaluation order) |
+| | `-` (unary), `not`, `!`, `empty` | Unary operators |
+| | `*`, `/`, `div`, `%`, `mod` | Multiplicative operators |
+| | `+`, `-` (binary) | Additive operators |
+| | `<`, `>`, `<=`, `>=`, `lt`, `gt`, `le`, `ge` | Relational operators |
+| | `==`, `!=`, `eq`, `ne` | Equality operators |
+| | `&&`, `and` | Logical AND |
+| | `\|\|`, `or` | Logical OR |
+| **Lowest** | `? :` | Conditional (ternary) operator |
 
 
