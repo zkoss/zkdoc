@@ -1,0 +1,28 @@
+# Development configuration to accelerate build
+# Use with: bundle exec jekyll serve --config _config.yml,_config.dev.yml
+
+# Disable slow search full content indexing
+search_full_content: false
+search: false # Disable search entirely for dev
+
+lunr:
+  search_within_pages: false
+
+# Aggressively exclude large folders and files that aren't usually needed for dev
+exclude:
+  - _posts
+  - sitemap.xml
+  - feed.xml
+  - assets/js/lunr/lunr-store.js
+  - .jekyll-metadata
+  - tool/
+  - "*.iml"
+  - "*.code-workspace"
+  - "README.md"
+  - "CLAUDE.md"
+  - "*.sh"
+
+# Limit the number of posts to process (if not excluded)
+limit_posts: 1
+future: false
+show_drafts: false
