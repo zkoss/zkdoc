@@ -28,6 +28,8 @@ This structured workflow helps developers move quickly from an initial idea to a
 The zul-writer is designed to be versatile. You can start with a simple **text prompt** describing your requirements, or leverage its **Visual Analysis** capability by providing a UI screenshot or mockup. When an image is provided, the skill analyzes the layout, identifies components, and plans a strategy for the ZUL implementation, mapping visual elements to ZK components (such as `<borderlayout>`, `<vlayout>`, or `<grid>`).
 
 ## A Structured 4-Step Workflow
+![Zul-writer Workflow](/assets/images/small-talk/zul-writer/zul_writer_workflow.png)
+
 The skill follows a rigorous process to ensure the generated code meets your project's needs:
 
 1.  **Clarify Requirements**: Instead of guessing, the skill asks targeted questions about your ZK version, the page's purpose (e.g., data entry form vs. dashboard), and your preferred design pattern (MVC or MVVM).
@@ -39,13 +41,13 @@ The skill follows a rigorous process to ensure the generated code meets your pro
 *This guide assumes you already have an AI coding agent installed in your development environment, such as Claude Code, Codex CLI, or Gemini CLI. 
 If you are new to AI coding agents, you may want to review their installation guides first before installing the zul-writer skill.*
 
-Installing zul-writer skill is straightforward using the Agent Skills CLI. Run the following command in your terminal:
+Installing zul-writer skill is straightforward via [The Open Agent Skills Ecosystem](https://skills.sh/). Run the following command in your terminal:
 
 ```bash
 npx skills add zkoss-demo/agent-skill
 ```
 
-This command will guide to install zul-writer into your AI coding agents.
+This command will guide to install zul-writer into your AI coding agents. Suggest to install in a symlink way, so you can easily update the skill for multiple AI coding agents.
 
 # Usage in AI Coding Agents
 
