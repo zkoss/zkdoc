@@ -105,7 +105,7 @@ Instead of reproducing the layout as raw HTML, zul-writer maps the design to nat
 In most cases, only minor adjustments and styling are needed after generation. This allows developers to spend less time on repetitive UI scaffolding and focus more on implementing business logic and application behavior.
 
 # Welcome Feedback
-zul-writer is free to use and can be installed directly from the Agent Skills marketplace.
+zul-writer is publicly available and can be installed directly from the Agent Skills marketplace.
 This is the first public version of the tool, and while it already works well for many UI generation scenarios, there may still be cases that require adjustments. We recommend reviewing the generated files to ensure they match your project requirements, as results may vary depending on the prompt or input design.
 
 Looking ahead, we are exploring additional AI agent skills for ZK development, as well as the possibility of allowing developers to extend the workflow with their own project-specific rules or plugins.
