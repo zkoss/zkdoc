@@ -8,7 +8,7 @@ title: "Accelerate ZK Development with the AI Agent Skill: zul-writer"
 
 Modern AI coding agents like Claude Code and Gemini CLI are transforming how we write code, but they often lack the specialized knowledge like ZK. That's where [Agent Skills](https://agentskills.io/) come in. Agent skills are specialized capabilities that can be added to AI coding agents to enhance their performance on specific technical tasks, providing framework-specific coding guidance and architectural best practices.
 
-In this small talk, we introduce **zul-writer**, a powerful agent skill designed specifically for ZK developers to accelerate UI development and ensure code quality. Unlike generic AI code generation, zul-writer understands ZK architecture and best practices, helping developers produce UI code that fits naturally into ZK applications.
+In this small talk, we introduce **zul-writer**, a powerful agent skill designed specifically for ZK developers to accelerate UI development and ensure code quality. 
 
 # What Zul-writer Does
 zul-writer is an AI agent skill designed to help ZK developers quickly transform UI ideas into working project templates.
