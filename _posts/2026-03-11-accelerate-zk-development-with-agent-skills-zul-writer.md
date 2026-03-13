@@ -99,10 +99,9 @@ Check out the generated ZUL: [kanban-board.zul](https://github.com/zkoss-demo/ag
 
 ![Enterprise Kanban Board by zul](/assets/images/small-talk/zul-writer/enterprise-kanban-zul.png)
 
-As you can see, the generated UI closely resembles the original mockups.
-Instead of reproducing the layout as raw HTML, zul-writer maps the design to native ZK components and available resources such as built-in icons and layout containers.
+As you can see, the generated UI generally nicely resembles the original mockups. Instead of reproducing the layout as raw HTML, zul-writer maps the design to native ZK components and available resources such as built-in icons and layout containers.
 
-In most cases, only minor adjustments and styling are needed after generation. This allows developers to spend less time on repetitive UI scaffolding and focus more on implementing business logic and application behavior.
+Depending on the input design, the generated result may still require some level of refinement. However, it can serve as a solid starting point, allowing developers to spend less time on repetitive UI scaffolding and focus more on implementing business logic and application behavior.
 
 # Welcome Feedback
 zul-writer is publicly available and can be installed directly from the Agent Skills marketplace.
