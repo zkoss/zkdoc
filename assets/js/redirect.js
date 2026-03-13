@@ -27,7 +27,8 @@ if (segments.length > 0) {
         "zk_spring_essentials",
         "zk_studio_essentials",
         "zk_style_customization_guide",
-        "zuml_ref"
+        "zuml_ref",
+        "zk_webdriver"
     ];
 
     // Check if the extracted segment is a valid book
