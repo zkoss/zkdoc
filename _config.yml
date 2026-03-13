@@ -1,8 +1,8 @@
-# remote_theme: "keikai/minimal-mistakes@zk"
-# repository: keikai/minimal-mistakes
+remote_theme: "keikai/minimal-mistakes@zk"
+repository: keikai/minimal-mistakes
 # Ensure consistent date handling during builds
 timezone: Asia/Taipei
-theme: "minimal-mistakes-jekyll" # use local theme
+# theme: "minimal-mistakes-jekyll" # use local theme
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache  #required by minimal-mistakes
