@@ -1,6 +1,6 @@
 ---
 author: hawk
-date: 2026-03-11
+date: 2026-03-16
 version: ZK 9/10
 category: small-talk
 title: "Accelerate ZK Development with the AI Agent Skill: zul-writer"
