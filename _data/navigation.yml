@@ -1533,6 +1533,8 @@ zk_dev_ref:
     children:
     - title: ZK Documentation MCP Server
       url: /zk_dev_ref/zk_doc_mcp_server
+    - title: Agent Skills
+      url: /zk_dev_ref/agent_skills
   - title: UI Composing
     url: /zk_dev_ref/ui_composing/ui_composing
     children:

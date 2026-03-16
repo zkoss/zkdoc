@@ -1,0 +1,26 @@
+---
+title: Agent Skills
+---
+
+# Agent Skills for ZK Development
+
+Agent Skills are specialized capabilities that can be added to AI coding agents to enhance their performance on specific technical tasks. They provide framework-specific coding guidance, architectural best practices, and automated workflows.
+
+## zul-writer
+
+`zul-writer` is a powerful agent skill designed specifically for ZK developers to accelerate UI development and ensure code quality.
+
+Instead of manually creating ZUL files and composer classes, `zul-writer` can generate them automatically based on either:
+* Natural language descriptions of your UI requirements
+* UI screenshots or mockups (via Visual Analysis)
+
+The skill follows a rigorous 4-step workflow to ensure the generated code meets your project's needs:
+1. **Clarify Requirements**: Analyzes your ZK version, the page's purpose, and your preferred design pattern (MVC or MVVM).
+2. **ZUL Generation**: Generates a clean ZUL file, prioritizing ZK components over native HTML and using best practices for flexible sizing.
+3. **Automated Validation**: Enforces code quality through an integrated script that checks for XML well-formedness, XSD schema compliance, and ZK component compatibility.
+4. **Controller Generation**: Generates the corresponding Java controller class (a `ViewModel` or `SelectorComposer`), ready to be wired to your UI.
+
+### Further Reading
+
+For a detailed introduction, installation instructions, and a showcase of generated ZK UIs, please refer to the article:
+[Accelerate ZK Development with the AI Agent Skill: zul-writer]({% post_url 2026-03-11-accelerate-zk-development-with-agent-skills-zul-writer %})
