@@ -16,17 +16,21 @@ This means you first define a clear specification for the feature you want to bu
 You can write these specifications manually or use tools designed for this purpose, such as [openspec](https://openspec.dev/) or [spec-kit](https://github.com/github/spec-kit).
 
 
-# Empower AI Model with ZK knowledge
+# ZK AI Tools and Integration
 
 ## ZK Documentation MCP Server
 We provide an [MCP (Model Context Protocol) server for ZK Framework documentation](/zk_dev_ref/zk_doc_mcp_server) that performs semantic search, intelligent Q&A, and documentation indexing. It feeds official ZK knowledge to the AI tools you choose, improving the accuracy of ZK-related answers and helping you develop ZK applications more efficiently.
 
-## Alternative
+## Alternative to the MCP Server
 We provide a rule-based approach that allows you to connect an AI model directly with ZK’s documentation and example code. By doing so, the AI can read and understand the rules, components, and best practices of ZK development, helping you write code faster, avoid errors, and explore solutions more efficiently.
 
 This setup works with AI-powered IDEs and local knowledge bases, giving you full control over which AI model you use and how it interacts with your ZK resources. You can choose free or commercial models, configure them to match your development environment, and ensure the AI’s suggestions are based on the most reliable, up-to-date ZK knowledge.
 
 For more details on this approach, see [Empower Your AI with ZK Knowledge to Boost Development](https://www.zkoss.org/wiki/Small_Talks/2025/July/Empower_Your_AI_with_ZK_Knowledge_to_Boost_Development).
+
+## ZK Agent Skills
+Agent Skills are specialized capabilities that can be added to AI agents to improve their performance on specific technical tasks. Common examples include UI generation, composer template generation, test case creation, and documentation. These skills incorporate framework-specific coding guidance and architectural best practices to help automate development workflows. 
+* **The zul-writer skill**: designed to transform textual requirements and UI mockups into production-ready ZUL code. [Link to ZK Agent Skills](/zk_dev_ref/agent_skills).
 
 # Our Experience with AI Tools
 
