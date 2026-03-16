@@ -38,7 +38,7 @@ The skill follows a rigorous process to ensure the generated code meets your pro
 4.  **Controller Generation**: Finally, it generates the corresponding Java controller class—a `ViewModel` for MVVM or a class extends `SelectorComposer` for MVC—ready to be wired to your UI.
 
 # Installation
-*This guide assumes you already have an AI coding agent installed in your development environment, such as Claude Code, Codex CLI, or Gemini CLI. 
+*This guide assumes you already have an AI coding agent installed in your development environment, such as Claude Code, Codex CLI, or Gemini CLI. You also need to install node.js and npm to run `npx`.
 If you are new to AI coding agents, you may want to review their installation guides first before installing the zul-writer skill.*
 
 Installing zul-writer skill is straightforward via [The Open Agent Skills Ecosystem](https://skills.sh/). Run the following command in your terminal:
