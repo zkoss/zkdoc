@@ -106,7 +106,7 @@ As you can see, the generated UI generally nicely resembles the original mockups
 Depending on the input design, the generated result may still require some level of refinement. However, it can serve as a solid starting point, allowing developers to spend less time on repetitive UI scaffolding and focus more on implementing business logic and application behavior.
 
 # Welcome Feedback
-zul-writer is publicly available and can be installed directly from the Agent Skills marketplace.
+zul-writer is publicly available and can be installed directly from the Open Agent Skills Ecosystem.
 This is the first public version of the tool, and while it already works well for many UI generation scenarios, there may still be cases that require adjustments. We recommend reviewing the generated files to ensure they match your project requirements, as results may vary depending on the prompt or input design.
 
 Looking ahead, we are exploring additional AI agent skills for ZK development, as well as the possibility of allowing developers to extend the workflow with their own project-specific rules or plugins.
