@@ -36,6 +36,7 @@ main:
   - title: ZK Webdriver
     url: /zk_webdriver/
   - title: ZATS Essentials
+    url: /zats_essentials/
   - title: ZK JSP Tags Essentials
     url: /zk_jsp_tags_essentials/
   - title: ZK Studio Essentials
