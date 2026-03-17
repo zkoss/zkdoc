@@ -242,7 +242,7 @@ uv run python3 -m ZK_MCP_mcp
 
 #### Example: Using a Custom Documentation Directory
 
-To use a local documentation directory instead of cloning from Git:
+If you have clone zk doc repository beofre, you can configure the MCP server to use your local docs instead of cloning from Git:
 
 ```bash
 # Disable Git sync and point to local directory
