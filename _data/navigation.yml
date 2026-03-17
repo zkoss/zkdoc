@@ -652,6 +652,8 @@ zk_client_side_ref:
         url: /zk_client_side_ref/object_oriented_programming_in_javascript
       - title: jQuery
         url: /zk_client_side_ref/jquery
+      - title: jQuery Security Updates
+        url: /zk_client_side_ref/jquery_security_updates
       - title: Debugging
         url: /zk_client_side_ref/debugging
   - title: General Control
