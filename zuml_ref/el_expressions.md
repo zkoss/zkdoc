@@ -37,3 +37,36 @@ There are several ways to associate Java objects with EL expressions.
 Here is the detailed information for each feature. For introductory,
 please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions).
 
+## Lambda Expressions
+
+{% include supported-since.html version="8.0.0" %}
+
+ZK 8 supports lambda expressions in EL, allowing for anonymous functions within ZUL.
+
+```xml
+<textbox value="@load((x -> (x * 100) / 2.54)(vm.value))" 
+         onOK="@command('click', key=((x -> (x * 2.54) / 100)(self.value)))" />
+```
+
+A lambda expression can also be named and evaluated later using the assignment and semicolon operators:
+
+```xml
+<label value="@load((incr = x -> x + 1; incr(5)))" />
+```
+
+## Collection Operations
+
+{% include supported-since.html version="8.0.0" %}
+
+EL 3 allows direct use of collection chain operations and streaming API.
+
+```xml
+<listbox model="@load((vm.names.stream().filter(x -> x.contains(vm.filter)).toList()))">
+```
+
+You can also construct collections directly in an expression:
+
+```xml
+<label value="@load(([1, 2, 3, 4].stream().sum()))" />
+```
+
