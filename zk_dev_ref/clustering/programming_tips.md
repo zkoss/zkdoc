@@ -98,6 +98,13 @@ If you extend from ZK built-in composer like
 make sure all of its members are serializable (or transient), since the
 implementation will keep a reference in the applied component.
 
+When using `SelectorComposer`, wired components are not rewired by default after deserialization. If you need a field to be re-wired to the corresponding component when the session is activated, you can set the `rewireOnActivate` attribute of the `@Wire` annotation to `true`:
+
+```java
+    @Wire(value = "#win", rewireOnActivate = true)
+    transient Window win; // will be rewired when the composer is activated in a cluster
+```
+
 When implementing from
 [org.zkoss.zk.ui.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Composer.html) directly,
 the composer could be non-serializable if you don't keep a reference in

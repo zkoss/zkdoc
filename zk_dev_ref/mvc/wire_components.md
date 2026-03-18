@@ -369,4 +369,9 @@ In brief, it is recommended to specify id in selector when you have a
 large component tree. If possible, you can specify id on all levels to
 maximize the performance gain from the algorithm.
 
- 
+# Clustering Environment
+
+By default, wired components are not rewired when the composer is deserialized 
+in a cluster environment. If you need a component to be rewired upon session 
+activation, you can set the `rewireOnActivate` attribute of the `@Wire` annotation 
+to `true`. For more details, please see the [Clustering Programming Tips]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips#composers) document.
