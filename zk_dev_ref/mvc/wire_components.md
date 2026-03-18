@@ -153,12 +153,19 @@ The sclass of component. For example,
 The attributes on components, which means the value obtained from
 calling the corresponding getter method on the component.
 
-- Note: `[id="myid"]` does not restrict id space like `#myid` does, so
-  they are **not** equivalent.
+- Note: `[id="myid"]` and `#myid` are **not** equivalent. Using `#` specifies an ID within the component's **ID space** (e.g. within the same Window), which uses a fast map lookup. Using `[`id="myid"`]` treats "id" like any other attribute, performing a slower tree traversal that ignores ID space boundaries and could match components inside child Windows.
+
+In addition to exact match (`=`), you can also use `^=` (begins with), `$=` (ends with), and `*=` (contains).
 
 ```java
     @Wire("button[label='submit']")
-    Button btn; // wire to the first button whose getLabel() call returns "submit"
+    Button btn; // wire to the first button whose getLabel() call returns exactly "submit"
+    @Wire("button[label^='sub']")
+    Button startBtn; // wire to the first button whose label begins with "sub"
+    @Wire("button[label$='mit']")
+    Button endBtn; // wire to the first button whose label ends with "mit"
+    @Wire("button[label*='ubm']")
+    Button containBtn; // wire to the first button whose label contains "ubm"
 ```
 
 ## Pseudo Class
