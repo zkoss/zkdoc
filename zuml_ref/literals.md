@@ -9,8 +9,9 @@ EL expressions define the following literals:
 | Boolean | true and false |
 | Integer | as in Java, such as 123 |
 | Floating point | as in Java, such as 1.23 and 1e9 |
-| String | with single and double quotes; " is escaped as \", ' is escaped as \', and \ is escaped as \\.<br/>Example, 'a string' and "hello world" |
+| String | with single and double quotes; " is escaped as `\"`, ' is escaped as `\'`, and \ is escaped as `\\`.<br/>Example, 'a string' and "hello world" |
 | Null | null |
-| Collection | {% include supported-since.html version="8.0.0" %}<br>EL 3 supports collection construction using brackets (`[ ]`).<br/>Example: `[1, 2, 3]` |
+| Collection | EL 3 supports collection construction using brackets (`[ ]`).<br/>Example: `[1, 2, 3]` |
 
+* {% include supported-since.html version="8.0.0" %} EL 3 supports
 
