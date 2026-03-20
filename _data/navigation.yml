@@ -534,6 +534,8 @@ zk_charts_essentials:
         url: /zk_charts_essentials/mvvm_pattern
       - title: Display Large Number of Data
         url: /zk_charts_essentials/display_large_number_of_data
+  - title: Accessibility
+    url: /zk_charts_essentials/accessibility
   - title: Troubleshooting
     url: /zk_charts_essentials/troubleshooting
     children:
