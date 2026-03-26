@@ -14,6 +14,8 @@ If you use this binding with a local command binding, remember that local comman
 
 You can pass arbitrary arguments in key-value pairs with a comma to separate.
 
+Notice that **value** is a reserved word, you should avoid using it as an arbitraryKey.
+
 ***[arbitraryKey]=[EL-expression]***
 
 Basically, it uses key-value pairs. You can write multiple key-value pairs with different key names.

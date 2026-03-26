@@ -9,6 +9,8 @@ The syntax is:
 
 ** @command('commandName', [arbitraryKey]=[EL-expression]) **
 
+Notice that **value** is a reserved word used implicitly for the first positional argument (command name), and thus it cannot be used as an arbitrary key for other parameters. For example, `@command('search', value=event.value)` will cause an error. The correct one is `@command('search', keyword=event.value)`.
+
 ** @global-command('commandName', [arbitraryKey]=[EL-expression]) **
 
 **[arbitraryKey]=[EL-expression]**

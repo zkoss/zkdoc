@@ -54,7 +54,7 @@ public class OrderVM {
 ```
 - Line 3: When clicking “Save” button or menuitem, the binder will invoke ` saveOrder() ` in a ViewModel.
 
-You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters).
+You can pass parameters to a command method. Please refer [advanced/Parameters](../advanced/parameters). Notice that **value** is a reserved word used implicitly for the command name, so you should avoid using it as an arbitrary key for other parameters.
 
 {% include supported-since.html version="9.5.0" %}
 
