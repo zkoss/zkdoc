@@ -11,7 +11,10 @@ title: "The max-requests-per-session Element"
 `[Default: 5]`
 
 It specifies the maximum allowed number of concurrent requests per
-session. Each time a user types an URL at the browser, it creates a
+session. **Note:** This setting specifically refers to ZUL file requests, 
+not to Ajax (AU) requests. It only limits requests for a ZUL file.
+
+Each time a user types an URL at the browser, it creates a
 request and the request ends after the response is sent to the browser.
 In other words, this number controls how many concurrent requests the
 same user can send.
