@@ -11,5 +11,10 @@ custom scopes for Spring-managed beans, and securing ZK components. In
 the following chapters, we will describe how to use these features with
 example codes and details.
 
+ZK Spring integration Library contains 2 modules; ZK Spring Core
+(integration with Spring Core) and ZK Spring Security (utilities for
+Spring Security). The Following sections will go into details of both
+modules and demonstrate the features.
+
 Please check [the example project](https://github.com/zkoss/zkspring/tree/master/zkspringessentials/zkspringcoresec)
 for sample usages.
