@@ -211,7 +211,7 @@ The ViewModel itself is never proxied, so `@BindingParam` remains intact. The se
 
 ## Comparison
 
-| Approach | `@BindingParam` safe | Build plugin required | Boilerplate |
+| Approach | @BindingParam safe | Build plugin required | Boilerplate |
 |---|---|---|---|
 | `@PreAuthorize` + AspectJ CTW | Yes | Yes (`aspectj-maven-plugin`) | None — annotation only |
 | Delegate to security service | Yes | No | One line per handler |
