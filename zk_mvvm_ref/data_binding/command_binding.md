@@ -2,11 +2,9 @@
 
 Overview
 ========
-Command binding is a mechanism for hooking up a UI component's event such as button's onClick to ViewModel's Command<sub>[1]</sub> without writing code. This binding is established by`@command` with the command's name in a ZUL. We can only bind one event to only one Command but can bind multiple events to the same Command.
+Command binding is a mechanism for hooking up a UI component's event such as button's onClick to [ViewModel's Command](../viewmodel/commands) without writing code. This binding is established by`@command` with the command's name in a ZUL. We can only bind one event to only one Command but can bind multiple events to the same Command.
 
 Command's name is the name of ViewModel's method with Java annotation`@Command` by default. You can also specify a Command's name in`@Command`'s element.
-
-[1]: [ ViewModel/Commands](../viewmodel/commands)
 
 ## Basic Usage
 This involves 2 steps:
@@ -127,7 +125,7 @@ Validation is also included in the command execution. It is performed in the `VA
 ### Phases of Command Execution
 Following is the phases of a Command Execution:
 
-![MVVM Command Execution]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-command-execution.png)
+![MVVM Command Execution](images/mvvm-command-execution.png)
 
 - When a bound ZK event enters the binder, the `COMMAND` phase will be invoked and all phases within the `COMMAND` phase will start to execute one by one
 - In the `VALIDATION` phase, binder first collects all the properties that needs to be verified. Then, it calls each validator of save-binding that is related to this command. In each call to a validator, binder provides a new `ValidationContext` which contains the main property and other collected properties. This means, you can do dependent validation with collected properties, for example, checking whether the shipping date is larger than the creation date. If any validator reports invalid by calling `ValidationContext.setInvalid ()`, binder ignores all subsequent phases and loads other properties that has been notified for a change.
