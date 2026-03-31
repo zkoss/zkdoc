@@ -466,6 +466,8 @@ zk_spring_essentials:
             url: /zk_spring_essentials/secure_a_zk_application_with_spring_security
           - title: Add Security in the View Layer
             url: /zk_spring_essentials/add_security_in_the_view_layer
+          - title: Authorize Operations
+            url: /zk_spring_essentials/authorize_operations
 zk_calendar_essentials:
   - title: Introduction
     url: /zk_calendar_essentials/introduction
