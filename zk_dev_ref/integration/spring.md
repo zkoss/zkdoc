@@ -27,11 +27,9 @@ The minimal Maven dependency you need is :
 ```
 
 <div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
-
-![]({{site.baseurl}}/zk_dev_ref/images/icon_info.png) **Note:** If you don't use Maven,
+**Note:** If you don't use Maven,
 please refer to Spring Framework Reference Documentation to know which
 JAR file you need.
-
 </div>
 
 To integrate ZK application with Spring, the minimal configuration you
@@ -148,11 +146,47 @@ You can inject Spring beans into ZK Composer/ViewModel in the following
 
 ## Spring's @Autowire
 
-ZK stores a Composer/ViewModel as a component's attribute, and you can
-dynamically add/remove components at any time. If you want a fresh new
-state of a component when each time you add/create it, you should
-declare a Composer/ViewModel as a `prototype` bean. Then you can use
-`@Autowire` to wire Spring beans into a Composer/ViewModel.
+When a Composer or ViewModel is itself a Spring bean, you can use
+`@Autowired` to inject other Spring beans into it. However, you **must**
+declare the Composer/ViewModel with `scope="prototype"`.
+
+### Why Prototype Scope?
+
+ZK stores a Composer/ViewModel as a component's attribute. When ZK
+evaluates an EL expression such as `apply="${myComposer}"`, the
+resolution chain is:
+
+1. ZK's `DelegatingVariableResolver` receives the bean name.
+2. It delegates to Spring's `ApplicationContext` to retrieve the bean.
+3. The returned object is used **as-is** — ZK never instantiates the
+   Composer itself in this path.
+
+Because ZK relies entirely on whatever Spring returns, the bean's scope
+controls whether each component gets its own Composer instance or shares
+one with every other component — and every other user.
+
+- **Prototype** scope gives the same behaviour as specifying a
+  fully-qualified class name (FQCN) in `apply`: a fresh instance is
+  created every time ZK creates or re-creates the component (page load,
+  `Executions.createComponents()`, `<include>` reload).
+- **Singleton** scope (the Spring default) means **one shared instance**
+  across all users, all desktops, and all components. Any mutable field
+  on the Composer becomes a data race and a potential data leak between
+  concurrent users.
+
+<div style="-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;-moz-background-clip:padding;-webkit-background-clip:padding-box;background-clip:padding-box;color:#c06330;padding:15px 40px;background:#fed no-repeat 13px 13px;margin-bottom:10px">
+**Warning:** Never use the default singleton scope for a Spring-managed
+Composer or ViewModel. A singleton Composer shares mutable state (wired
+components, event listeners, user data) across every user session,
+leading to concurrency bugs and data leaks that are difficult to
+reproduce.
+</div>
+
+| Approach | Safe? | When to Use |
+|---|---|---|
+| `apply="com.example.MyComposer"` (FQCN) | Yes | No Spring dependency injection needed |
+| `apply="${myComposer}"` with `@Scope("prototype")` | Yes | Spring DI needed on the Composer |
+| `apply="${myComposer}"` with default singleton scope | **No** | **Never** |
 
 ```java
 @Component
