@@ -1571,6 +1571,8 @@ zk_dev_ref:
             url: /zk_dev_ref/ui_composing/xml_namespaces
       - title: Richlet
         url: /zk_dev_ref/ui_composing/richlet
+      - title: ZUL vs. Java API
+        url: /zk_dev_ref/ui_composing/zul_vs_java
       - title: Macro Component
         url: /zk_dev_ref/ui_composing/macro_component
         children:
