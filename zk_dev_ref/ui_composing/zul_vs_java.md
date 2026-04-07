@@ -42,7 +42,7 @@ You start with a **baseline ZUL file** to define static layout wrappers, headers
 Then, all the complex, dynamic pieces (like fields driven by a database structure) are generated inside your Java `DynamicFormComposer` using the Java API, and injected into the target `dynamicFormContainer` element. This offloads the heavy dynamic work to standard Java code while keeping the static framing cleanly in ZUL.
 
 ### Using ZUL Templates
-To further reduce verbose Java code, another excellent technique within the hybrid approach is to use **ZUL snippets as templates** (e.g., using `Executions.createComponents()`). Instead of generating every single nested dynamic element (like labels, complex input fields, and localized validation logic) purely via `new Textbox()`, you define small, reusable `.zul` files.
+To further reduce verbose Java code, another excellent technique within the hybrid approach is to use [**ZUL snippets as templates**]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java) (e.g., using `Executions.createComponents()`). Instead of generating every single nested dynamic element (like labels, complex input fields, and localized validation logic) purely via `new Textbox()`, you define small, reusable `.zul` files.
 
 This grants you the benefits of both worlds:
 1. **Visual Readability:** The ZUL template gives you an immediate overall visualization of what that UI component block will look like.
