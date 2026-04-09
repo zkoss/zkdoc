@@ -10,7 +10,6 @@ lunr:
 
 # Aggressively exclude large folders and files that aren't usually needed for dev
 exclude:
-  - _posts
   - sitemap.xml
   - feed.xml
   - assets/js/lunr/lunr-store.js
@@ -23,6 +22,6 @@ exclude:
   - "*.sh"
 
 # Limit the number of posts to process (if not excluded)
-limit_posts: 1
+limit_posts: 50
 future: false
 show_drafts: false
