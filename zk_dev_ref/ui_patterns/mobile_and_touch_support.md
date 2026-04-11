@@ -2,12 +2,63 @@
 title: "Mobile And Touch Support"
 ---
 
+# ZK Mobile Strategy and Architecture
 
+ZK's approach to mobile support is based on a **single codebase architecture**, where the same application serves desktop, tablet, and mobile devices.
+
+Instead of building separate applications for different platforms, developers can:
+
+- Reuse the same backend logic
+- Share UI components
+- Customize presentation using templates and responsive design
+
+## Core Concept: One Application, Multiple Views
+
+ZK applications are rendered on the server and delivered as web applications. To support different devices, developers can adapt the UI using:
+
+- **Responsive Design** (CSS-based layout adjustments)
+- **ZUL Template Variations** (different layouts per device)
+- **Conditional Rendering / Template Injection**
+
+For example:
+
+- A desktop view may use a multi-column layout
+- A mobile view may switch to a stacked or simplified layout
+
+This allows developers to optimize user experience without duplicating business logic.
+
+## Mobile Output: Web-Based
+
+Applications built with ZK run as **web applications**, even on mobile devices. They are not native iOS or Android Apps.
+
+This means:
+
+- No separate iOS or Android codebase is required
+- Applications run in the browser or embedded web views
+
+To provide an app-like experience, developers can optionally use:
+
+- **Progressive Web Apps (PWA)** for installable web apps
+- Native wrappers (e.g., WebView) if needed
+
+## Why This Approach
+
+ZK’s architecture is designed to simplify development and long-term maintenance by enabling a single codebase across desktop and mobile devices. Instead of building and maintaining separate applications for different platforms, developers can reuse the same business logic and UI components while adapting the presentation layer as needed. This approach reduces duplication, ensures consistency across devices, and allows teams to deliver and maintain applications more efficiently compared to solutions that require multiple technology stacks.
+
+## When to Use Native Mobile Development
+
+While ZK is suitable for most business applications, native mobile development may be more appropriate when deep integration with device hardware, highly platform-specific user experiences, or advanced offline capabilities are required. 
+
+## Related Topics
+
+- [Responsive Design]({{site.baseurl}}/zk_dev_ref/responsive_design/responsive_design)
+- [Progressive Web Apps (PWA)]({{site.baseurl}}/zk_dev_ref/ui_patterns/pwa_guide)
+
+---
+# Mobile & Touch Support
 
 ZK provides out-of-the-box detection and support of mobile, tablet and
 touch-enabled devices.
-
-# General information
 
 When detecting these devices, ZK will automatically perform the
 following actions:
