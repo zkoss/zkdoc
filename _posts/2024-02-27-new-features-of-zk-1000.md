@@ -82,7 +82,7 @@ of APIs:
   annotation.
 
 For more information, read [basic setup and
-usage](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Stateless_Components/Building_Stateless_UI#Setting_up).
+usage](/zk_dev_ref/stateless_components/building_stateless_ui#setting-up).
 
 By eliminating server-side states, stateless components make it easy to
 develop ZK apps that leverage the full power of cloud infrastructure.
@@ -274,13 +274,13 @@ The default blocking rules are:
 
 You can customize the blocked events and rules if needed. For details,
 please see [Block
-Request for Inaccessible Widgets](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Security_Tips/Block_Request_for_Inaccessible_Widgets).
+Request for Inaccessible Widgets](/zk_dev_ref/security_tips/block_request_for_inaccessible_widgets).
 
 #### Upgrade Notice
 
 Some of you **send events to invisible components** to perform an
 application logic, and notice that it doesn't work as before because of
-this change. See [How to Disable](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Security_Tips/Block_Request_for_Inaccessible_Widgets#How_to_Disable)
+this change. See [How to Disable](/zk_dev_ref/security_tips/block_request_for_inaccessible_widgets#how-to-disable)
 
 ### Upgade 3rd party dependencies
 
@@ -387,7 +387,7 @@ follow the hints to remove or replace the unsupported attribute.
 
 {% include Notice.html text="A newer version of ZK Linter has been released.
 Follow the [simplified
-instructions here](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/Upgrade_Tips/Version_Upgrade#Upgrading_to_ZK_10_-_zklinter_Can_Find_Removed_Attributes)." %} ZK Linter is a gradle project. If you are
+instructions here](/zk_dev_ref/upgrade_tips/version_upgrade#upgrading-to-zk-10---zklinter-can-find-removed-attributes)." %} ZK Linter is a gradle project. If you are
 using Maven, follow the instructions below:
 
 1\. Include the zklinter jar:
@@ -458,7 +458,7 @@ those deprecated themes.
 
 If you use Atlantic, we suggest you migrate to `iceblue`.
 
-See [How to Switch Themes](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Switching_Themes)
+See [How to Switch Themes](/zk_dev_ref/theming_and_styling/switching_themes)
 for details. Use [ZK Theme
 Template](https://github.com/zkoss/zkThemeTemplate) if you wish to
 further customize the theme.

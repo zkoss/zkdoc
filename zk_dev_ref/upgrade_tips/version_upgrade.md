@@ -85,3 +85,76 @@ To estimate the upgrading effort, we suggest a checklist:
     Check [Bug Tracker](https://zkoss.atlassian.net/) or [release note](https://www.zkoss.org/product/zk/releasenote/) for the
     existing bug patch. If that bug is fixed in the new version, you can remove the patch.
 6.  Check for Java Compiler Error
+      
+    Use the Java compiler to locate removed APIs in your Java files. See [Removed API](/zk_dev_ref/upgrade_tips/removed_api) for the complete list.
+
+# Upgrading to ZK 10 - zklinter Can Find Removed Attributes
+
+ZK 10 removes many long-deprecated APIs. Removed APIs do not only affect
+Java code — they also affect ZUL files, because each component attribute
+in ZUL is backed by a corresponding setter in Java. When a Java setter
+is removed, the matching attribute is no longer available in ZUL.
+
+To help you identify removed attributes in your ZUL files, ZK provides
+**ZK Linter**, a static analysis tool with a set of upgrade rules for ZK 10.
+
+## Set up ZK Linter
+
+Follow the [zklinter starter project](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/)
+to set up ZK Linter and scan your ZUL files. Make sure you include the
+ZK 10 upgrade rule in
+[app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties).
+
+## Sample Output
+
+If the linter finds an incompatibility, it prints a warning like:
+
+```text
+INFO: /yourpath/yourpage.zul
+WARNING:    6:  6   The attribute, type, in <script> is no longer supported since ZK 10. Deprecated since 5.0.0, text/javascript is always assumed, please remove it.
+```
+
+Follow the hints to remove or replace the unsupported attribute.
+
+## Use zklinter in a Maven Project
+
+ZK Linter is a Gradle project. If you are using Maven, follow these steps:
+
+1. Include the zklinter jar:
+
+    ```xml
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zklinter</artifactId>
+        <version>10.0.0-Eval</version>
+    </dependency>
+    ```
+
+2. Add [app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties).
+
+3. Put the [upgrade rule classes](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/tree/master/src/main/java/org/zkoss/zklinter/upgrade/rule)
+   into your project source.
+
+4. Run zklinter with `exec-maven-plugin`:
+
+    ```xml
+    <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <executions>
+            <execution>
+                <id>zklinter</id>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>java</goal>
+                </goals>
+                <configuration>
+                    <mainClass>org.zkoss.zklinter.App</mainClass>
+                </configuration>
+            </execution>
+        </executions>
+    </plugin>
+    ```
+
+Then run the Maven goal `mvn process-resources` to start scanning.
