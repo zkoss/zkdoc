@@ -433,7 +433,7 @@ then run maven goal `mvn process-resources` to start scanning
 
 ### Removed API
 
-Most of the APIs removed have been deprecated for a long time. See [Removed API](https://www.zkoss.org/wiki/Small_Talks/2024/February/New_Features_of_ZK_10.0.0/Removed_API) for the complete
+Most of the APIs removed have been deprecated for a long time. See [Removed API](/zk_dev_ref/upgrade_tips/removed_api) for the complete
 list.
 
 ## Unsupported Themes: Breeze, Sapphire, Silvertail, and Atlantic
