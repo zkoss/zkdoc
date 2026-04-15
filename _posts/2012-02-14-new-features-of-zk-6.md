@@ -106,7 +106,7 @@ context to the serverpush queue which is processed using a working
 thread enabling the original request thread to be recycled.
 
 Another options for developers is to use the inbuilt
-[EventQueue](https://www.zkoss.org/wiki/ZK_Developer's_Reference/Event_Handling/Event_Queues) to manage server
+[EventQueue](/zk_dev_ref/event_handling/event_queues) to manage server
 push transparently. By using this functionality a working thread is not
 required.
 
@@ -247,7 +247,7 @@ pattern found in Microsoft Windows; offering users the the ability to
 navigate through the ZK application menu bar in an already familiar
 manner.
 
-As demonstrated above, ZK [ctrlkeys](https://www.zkoss.org/wiki/ZK_Developer's_Reference/UI_Patterns/Keystroke_Handling#Allowed_Control_Keys) is used to handle the
+As demonstrated above, ZK [ctrlkeys](/zk_dev_ref/ui_patterns/keystroke_handling#allowed-control-keys) is used to handle the
 mapping of keys. In this case “ALT + K” to open up the first menupopup
 and continue to use the keyboard to navigate through the menu bar.
 
@@ -274,7 +274,7 @@ The video provided below demonstrates how a “combobutton” works.
 
 For more details, please refer to the
 [ZK Component
-Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Combobutton).
+Reference](/zk_component_ref/combobutton).
 
 # ZK Breeze now default
 
@@ -294,21 +294,21 @@ The Selectbox was created by Jumper Chen and is a lightweight version of
 a combobox saving memory by not creating objects for each row. For more
 information on the selectbox please visit the
 [ZK Component
-Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Selectbox).
+Reference](/zk_component_ref/selectbox).
 
 ![]({{site.baseurl}}/assets/images/small-talk/selectbox_example1.png)
 
 The Absolutelayout component was created by Ashish Dasnurkar and allows
 developers to position their components using a x,y co-ordinate system.
 For more information on the layout component please visit the
-[ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Layouts/Absolutelayout).
+[ZK Component Reference](/zk_component_ref/absolutelayout).
 
 ![]({{site.baseurl}}/assets/images/small-talk/zkcomref_absolutelayout_example.png)
 
 The Anchorlayout was written by Peter Kuo and enables developers to
 define the size of components relative to their parents. For more
 information on this component please visit the
-[ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Layouts/Anchorlayout).
+[ZK Component Reference](/zk_component_ref/anchorlayout).
 
 ![]({{site.baseurl}}/assets/images/small-talk/zkcomref_anchorlayout_example.png)
 

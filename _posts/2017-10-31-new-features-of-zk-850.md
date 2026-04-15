@@ -103,7 +103,7 @@ as needed:
 
 For existing ZK-based systems, you can still keep using the previous
 default theme, Breeze, if you are not ready to migrate to Iceblue. You
-can easily switch back to Breeze theme. Just get the breeze theme jar via Maven (or [download breeze-8.5.0.zip](https://github.com/zkoss/zkthemes/releases)) and change the preferred theme name to "breeze" in zk.xml. Please refer to [Switching Themes](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Switching_Themes).
+can easily switch back to Breeze theme. Just get the breeze theme jar via Maven (or [download breeze-8.5.0.zip](https://github.com/zkoss/zkthemes/releases)) and change the preferred theme name to "breeze" in zk.xml. Please refer to [Switching Themes](/zk_dev_ref/theming_and_styling/switching_themes).
 
 Set the preferred theme to breeze in **zk.xml**:
 
@@ -151,7 +151,7 @@ Themes.setTheme(Executions.getCurrent(), "custom");
 Executions.sendRedirect("");
 ```
 
-please refer to [Switching Themes](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Understanding_the_Theming_Subsystem/Switching_Themes) for
+please refer to [Switching Themes](/zk_dev_ref/theming_and_styling/switching_themes) for
 more details.
 
 # New Component with Client Data Binding - Fragment
@@ -223,7 +223,7 @@ This feature's underlying implementation relies on [browser history
 object's
 API](https://developer.mozilla.org/en-US/docs/Web/API/History_API), e.g.
 `history.pushState()`. For details, please refer to [Browser History
-Management](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Browser_History_Management).
+Management](/zk_dev_ref/ui_patterns/browser_history_management).
 
 # Provide Source Maps for WPD Files
 
@@ -364,7 +364,7 @@ them with shift + up.
 
 ### [KeyEvent supports to detect the command key pressed](http://tracker.zkoss.org/browse/ZK-3506)
 
-ZK now can detect **Mac command** key pressed. Please refer to [Allowed Control Keys](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Keystroke_Handling#Allowed_Control_Keys)
+ZK now can detect **Mac command** key pressed. Please refer to [Allowed Control Keys](/zk_dev_ref/ui_patterns/keystroke_handling#allowed-control-keys)
 for more details.
 
 # Summary

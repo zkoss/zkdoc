@@ -12,7 +12,7 @@ title: "New Features of ZK 6.0.1"
 
 The Biglistbox is a component to handle huge data sets while providing
 the same functionalities as the
-[Listbox](https://www.zkoss.org/wiki/ZK_Component_Reference/Data/Listbox) such as selection, sorting, keystroke
+[Listbox](/zk_component_ref/listbox) such as selection, sorting, keystroke
 navigation and ROD(rendering-on-demand). The biglistbox is capable of
 handling huge amounts of data, for example the demo below demonstrates
 it handling over 1 trillion cells.
@@ -270,7 +270,7 @@ Charts include but are not limited to the following following:
 
 **For more available charts please refer to the
 [fusionchart
-documentation](https://www.zkoss.org/wiki/ZK_Component_Reference/Diagrams_and_Reports/Fusionchart)**
+documentation](/zk_component_ref/fusionchart)**
 
 # Children binding now supports a converter
 
@@ -288,7 +288,7 @@ a List. The following code provides a sample for this:
 
 for more information please see the
 [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Converter).
+reference](/zk_mvvm_ref/data_binding/converter).
 
 # Reference Binding
 
@@ -323,7 +323,7 @@ steps to use this feature:
 
 The above code shows these implemented steps, for more information and
 more uses please visit the [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Reference_Binding).
+reference](/zk_mvvm_ref/data_binding/reference_binding).
 
 # @Init on type
 
@@ -364,8 +364,8 @@ public void cmd(@BindingParam("e") Event e1) {...}
 Since ZK 6.0.1 more formatting methods and now provided to developers to
 make it easier to format labels. The following methods have been added:
 
-- [formatNumber](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Core_Methods/formatNumber)
-- [formatDate](https://www.zkoss.org/wiki/ZUML_Reference/EL_Expressions/Core_Methods/formatDate)
+- [formatNumber](/zuml_ref/formatnumber)
+- [formatDate](/zuml_ref/formatdate)
 
 These methods can be used as follows:
 
@@ -382,7 +382,7 @@ These methods can be used as follows:
 
 This feature is similar to the Bean Validator, as it integrates JavaBean
 Validation and validates a bean's all saving properties. For the
-configuration and JavaBean usage, please refer to [Prepare_to_Use_JSR_303](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Validator#Prepare_to_Use_JSR_303)
+configuration and JavaBean usage, please refer to [Prepare_to_Use_JSR_303](/zk_mvvm_ref/data_binding/validator#prepare-to-use-jsr-303)
 
 ## Usage
 
@@ -404,7 +404,7 @@ holder with key **prefix**+propertyName.
 ```
 
 for more information please refer to the [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Validator#Bean_Validator).
+reference](/zk_mvvm_ref/data_binding/validator#bean-validator).
 
 # Application Level Converters
 
@@ -429,7 +429,7 @@ then it is possible to use them by the converter name.
 ```
 
 for more information please consult the [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Converter#Register_Application_Level_Converters).
+reference](/zk_mvvm_ref/data_binding/converter#register-application-level-converters).
 
 # Register Application Level Validators
 
@@ -453,7 +453,7 @@ then it is possible to use them by the validator name.
 ```
 
 for more information please consult the [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Validator#Register_Application_Level_Validators).
+reference](/zk_mvvm_ref/data_binding/validator#register-application-level-validators).
 
 # Access multiple validators
 
@@ -487,7 +487,7 @@ syntax`@bind(vmsgs.texts)` and get messages of a self-defined key with
 syntax `@bind(vmsgs.texts['a_self_defined_key'])`.
 
 For more information on validators please refer to the [developer's
-reference](https://www.zkoss.org/wiki/ZK_Developer&#39;s_Reference/MVVM/Data_Binding/Validator#Display_Multiple_Messages).
+reference](/zk_mvvm_ref/data_binding/validator#display-multiple-messages).
 
 # Download & other resources
 

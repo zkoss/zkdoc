@@ -91,7 +91,7 @@ to apply shadow elements and templates dynamically in MVC-based Java
 class.
 
 For more information, please refer to
-[ZK Developer's Reference/UI Composing/Shadow for MVC](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Composing/Shadow_for_MVC).
+[ZK Developer's Reference/UI Composing/Shadow for MVC](/zk_dev_ref/ui_composing/shadow_for_mvc).
 
 # Major MVVM Enhancements
 
@@ -221,7 +221,7 @@ public void dataChange(@BindingParam("data") DataObject data) {
 ```
 
 for more information, please visit [ZK Configuration
-Reference](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.bind.jsonBindingParamConverter.class).
+Reference](/zk_config_ref/org_zkoss_bind_jsonbindingparamconverter_class).
 
 ## Children binding supports list model
 
@@ -298,7 +298,7 @@ The following is an example of using Tbeditor in your application.
 ```
 
 for more information, please consult the
-[ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Tbeditor).
+[ZK Component Reference](/zk_component_ref/tbeditor).
 
 ## Timepicker Component
 
@@ -317,7 +317,7 @@ formatting.
 ```
 
 for more information, please consult the
-[ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Timepicker).
+[ZK Component Reference](/zk_component_ref/timepicker).
 
 ## Scrollview component
 
@@ -357,7 +357,7 @@ triggered when users scroll all the way to the top or to the end of the
 page. The onScrolling event remains the same as before.
 
 For more information, please consult the [ZK Component
-Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Tablet_Devices/Components/Scrollview#Scrollview).
+Reference](/zk_component_ref/tablet_devices/scrollview#scrollview).
 
 ## Rowlayout
 
@@ -389,7 +389,7 @@ A sample usage is demonstrated below:
 ```
 
 for more information, please consult the
-[ZK Component Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Layouts/Rowlayout).
+[ZK Component Reference](/zk_component_ref/rowlayout).
 
 # Support Expression Language 3 (EL3)
 
@@ -579,8 +579,7 @@ object to share or update the application data, so that the websocket
 echo server can use or get the latest data from it or vice versa. This
 makes it possible to embrace big data in the most efficient manner.
 
-Please refer to [ZK_Developer's
-Reference/Integration/Miscellenous/Websocket_Channel](http://books.zkoss.org/wiki/ZK_Developer%27s_Reference/Integration/Miscellenous/Websocket_Channel)
+Please refer to [ZK Developer's Reference/Integration/Miscellenous/Websocket_Channel](/zk_dev_ref/integration/websocket_channel)
 
 # Performance Improvement
 
@@ -619,7 +618,7 @@ For example:
 ```
 
 for more information, please refer to the [ZK Component
-Reference](http://books.zkoss.org/wiki/ZK_Component_Reference/XHTML_Components).
+Reference](/zk_component_ref/xhtml_components).
 
 ## ZHTML supports dynamic data binding
 
@@ -662,7 +661,7 @@ For example:
 
 for more information, please refer to
 [ZK's Component
-Reference](https://www.zkoss.org/wiki/ZK_Component_Reference/Base_Components/InputElement).
+Reference](/zk_component_ref/inputelement).
 
 ## Datebox calendar now contains a today button
 
@@ -761,7 +760,7 @@ more intuitive for developers to use what they are used to as is.
 When the file size exceeds the maximum size limit for upload, you may
 wish to display a message to alert your user. Now you can customize the
 message based on your preferences. Please refer to [ZK Developer's
-Reference/Internationalization](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Internationalization/Warning_and_Error_Messages#Change_particular_message).
+Reference/Internationalization](/zk_dev_ref/internationalization/warning_and_error_messages#change-particular-message).
 
 For Example, (in WEB-INF/zk-label.properties)
 

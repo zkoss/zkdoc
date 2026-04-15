@@ -71,7 +71,7 @@ can fall back by adding the property below in `zk.xml`:
 </library-property>
 ```
 
-For more details, see the [configuration reference](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zul.css.flex).
+For more details, see the [configuration reference](/zk_config_ref/org_zkoss_zul_css_flex).
 
 # Embed ZK App into an External App
 
@@ -83,11 +83,11 @@ web page. By using ZK Client Binding in JavaScript, you can also control
 ZK components from these external apps.
 
 This feature makes it easy to combine ZK with other front-end frameworks
-and leverage the best of both worlds. For more details, see [Embedded ZK Application](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Integration/Miscellenous/Embedded_ZK_Application).
+and leverage the best of both worlds. For more details, see [Embedded ZK Application](/zk_dev_ref/integration/embedded_zk_application).
 
 # New Input Components
 
-## [Inputgroup](https://www.zkoss.org/wiki/ZK_Component_Reference/Containers/Inputgroup)
+## [Inputgroup](/zk_component_ref/inputgroup)
 
 {% include edition-availability.html edition="ce" %}
 
@@ -97,7 +97,7 @@ a custom input group.
 
 ![Inputgroup]({{site.baseurl}}/assets/images/small-talk/inputgroup_small.png)
 
-## [Tristate Checkbox](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Checkbox#tristate)
+## [Tristate Checkbox](/zk_component_ref/checkbox#tristate)
 
 {% include edition-availability.html edition="ce" %}
 
@@ -105,7 +105,7 @@ Since ZK 8.6, the indeterminate state of a checkbox could be displayed.
 In ZK 9, users can now also *set* the indeterminate state, in addition to
 checked and unchecked. Specify `mold="tristate"` to enable the tri-state checkbox.
 
-## [Rangeslider](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Rangeslider)
+## [Rangeslider](/zk_component_ref/rangeslider)
 
 {% include edition-availability.html edition="pe" %}
 
@@ -114,7 +114,7 @@ upper and lower bound.
 
 ![Rangeslider]({{site.baseurl}}/assets/images/small-talk/rangeslider.png)
 
-## [Multislider](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Multislider)
+## [Multislider](/zk_component_ref/multislider)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -123,14 +123,14 @@ boundaries of multiple segments.
 
 ![Multislider]({{site.baseurl}}/assets/images/small-talk/multislider.png)
 
-## [Searchbox](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Searchbox)
+## [Searchbox](/zk_component_ref/searchbox)
 
 {% include edition-availability.html edition="ee" %}
 
 Searchbox allows users to select one or more entries from a list and
 filter the list to find the target entry.
 
-## [Cascader](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Cascader)
+## [Cascader](/zk_component_ref/cascader)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -148,7 +148,7 @@ address input that allows users to drill down and select Country > State > City.
 Anchornav allows you to navigate to desired ZK components on a page and
 highlights the current navigation link based on the current scroll position.
 
-## [Stepbar](https://www.zkoss.org/wiki/ZK_Component_Reference/Supplementary/Stepbar)
+## [Stepbar](/zk_component_ref/stepbar)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -157,7 +157,7 @@ add or remove steps.
 
 # New Layout Components
 
-## [Linelayout](https://www.zkoss.org/wiki/ZK_Component_Reference/Layouts/Linelayout)
+## [Linelayout](/zk_component_ref/linelayout)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -166,7 +166,7 @@ timelines. It is available in both vertical and horizontal orientations.
 
 ![Linelayout]({{site.baseurl}}/assets/images/small-talk/linelayout.png)
 
-## [Drawer](https://www.zkoss.org/wiki/ZK_Component_Reference/Containers/Drawer)
+## [Drawer](/zk_component_ref/drawer)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -176,7 +176,7 @@ display additional content.
 
 ![Drawer]({{site.baseurl}}/assets/images/small-talk/drawer.gif)
 
-## [Kanban-style Portal Layout](https://www.zkoss.org/wiki/ZK_Component_Reference/Layouts/Portallayout/Portalchildren#Title)
+## [Kanban-style Portal Layout](/zk_component_ref/portalchildren#title)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -187,7 +187,7 @@ it easy to create a Kanban-style board layout.
 
 # More New Components
 
-## [PDFViewer](https://www.zkoss.org/wiki/ZK_Component_Reference/Multimedia_and_Miscellaneous/Pdfviewer)
+## [PDFViewer](/zk_component_ref/pdfviewer)
 
 {% include edition-availability.html edition="pe" %}
 
@@ -195,7 +195,7 @@ PDFViewer lets users view PDF documents inside a ZK application without
 leaving the browser. It includes controls for zoom in/out, rotate, and
 page navigation.
 
-## [Loading Bar](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Useful_Java_Utilities#Loadingbar)
+## [Loading Bar](/zk_dev_ref/ui_patterns/useful_java_utilities#loadingbar)
 
 {% include edition-availability.html edition="ee" %}
 
@@ -209,13 +209,13 @@ Loading progress:
 Indeterminate:
 ![Loading bar indeterminate]({{site.baseurl}}/assets/images/small-talk/loadingbar2.gif)
 
-## [Toast](https://www.zkoss.org/wiki/ZK_Developer's_Reference/UI_Patterns/Useful_Java_Utilities#Toast)
+## [Toast](/zk_dev_ref/ui_patterns/useful_java_utilities#toast)
 
 {% include edition-availability.html edition="ee" %}
 
 Toast is a stackable notification that can be pinned on the screen.
 
-## [Coachmark](https://www.zkoss.org/wiki/ZK_Component_Reference/Supplementary/Coachmark)
+## [Coachmark](/zk_component_ref/coachmark)
 
 {% include edition-availability.html edition="ee" %}
 

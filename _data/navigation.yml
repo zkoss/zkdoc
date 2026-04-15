@@ -2030,6 +2030,8 @@ zk_dev_ref:
         url: /zk_dev_ref/upgrade_tips/version_upgrade
       - title: Edition Upgrade
         url: /zk_dev_ref/upgrade_tips/edition_upgrade
+      - title: Removed API
+        url: /zk_dev_ref/upgrade_tips/removed_api
   - title: Customization
     url: /zk_dev_ref/customization/customization
     children:

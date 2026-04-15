@@ -72,7 +72,7 @@ specifying different locale value:
 ![](/assets/images/small-talk/jp_calendar.jpg "jp-calendar.jpg")
 ![](/assets/images/small-talk/buddhist_calendar.jpg "buddhist-calendar.jpg")
 
-Read [ZK_Component_Reference/Input/Datebox#Era_Calendar](https://www.zkoss.org/wiki/ZK_Component_Reference/Input/Datebox#Era_Calendar)
+Read [ZK Component Reference - Datebox Era Calendar](/zk_component_ref/datebox#era-calendar)
 for details.
 
 ## Grid/Listbox/Tree Supports Sticky Headers
@@ -84,7 +84,7 @@ be floating and sticky on the top of the page. This feature is
 especially helpful for mobile device users.
 
 ![ center](/assets/images/small-talk/sticky.gif " center") Read
-[ZK_Component_Reference/Data/Grid#Sticky_Header](https://www.zkoss.org/wiki/ZK_Component_Reference/Data/Grid#Sticky_Header)
+[ZK Component Reference - Grid Sticky Header](/zk_component_ref/grid#sticky-header)
 for details.
 
 ## ListModelList (Map/Set/Array) Supports Form binding
@@ -116,7 +116,7 @@ callback/event for cleanup](https://tracker.zkoss.org/browse/ZK-4943)
 and more.
 
 Please refer to [ZK Developer's
-Reference](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Integration/ZK_Embedded/Embedded_ZK_Application) for details.
+Reference](/zk_dev_ref/integration/embedded_zk_application) for details.
 
 # Enhancements
 
@@ -166,7 +166,7 @@ log it, making it much easier for developers to debug client-side
 issues.
 
 Please refer to [ZK Configuration
-Reference](https://www.zkoss.org/wiki/ZK_Configuration_Reference/zk.xml/The_Library_Properties/org.zkoss.zk.ui.ScriptErrorListener.class) for details.
+Reference](/zk_config_ref/org_zkoss_zk_ui_scripterrorlistener_class) for details.
 
 ## Tree component supports select-all
 

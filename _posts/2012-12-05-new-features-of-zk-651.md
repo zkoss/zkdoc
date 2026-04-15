@@ -78,7 +78,7 @@ bandwidth. The following is a very simple example:
 
 For more information please check the blog post
 [here](http://blog.zkoss.org/index.php/2012/12/02/control-page-visibility-with-html5-api-in-zk/)
-and the [ZK Developer's Reference](https://www.zkoss.org/wiki/ZK_Developer's_Reference/UI_Patterns/Browser_Information_and_Control#Browser_Page_Visibility_State).
+and the [ZK Developer's Reference](/zk_dev_ref/ui_patterns/browser_information_and_control#browser-page-visibility-state).
 
 ### Comet Server Push Support
 
@@ -116,7 +116,7 @@ DefaultTreeModel model2 = new DefaultTreeModel(root, true);
 ```
 
 For more information please refer to
-[ZK Developer's Reference](https://www.zkoss.org/wiki/ZK_Developer's_Reference/MVC/Model/Tree_Model).
+[ZK Developer's Reference](/zk_dev_ref/mvc/tree_model).
 
 ## Download & Other Resources
 

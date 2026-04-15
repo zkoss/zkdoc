@@ -37,7 +37,7 @@ corresponding [GitHub
 Project](https://github.com/zkoss-demo/za11y-demo).
 
 Learn more about
-[ZK Developer's Reference/Accessibility](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Accessibility) and [WCAG themes](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/ZK_Official_Themes#Accessibility-ready_themes).
+[ZK Developer's Reference/Accessibility](/zk_dev_ref/accessibility/accessibility) and [WCAG themes](/zk_dev_ref/theming_and_styling/zk_official_themes#accessibility-ready-themes).
 
 ![]({{site.baseurl}}/assets/images/small-talk/wcag_themes.png)
 
@@ -265,7 +265,7 @@ at a textbox:
 
 for other popup options, please refer to
 [ZK Component
-Reference/Essential Components/Popup](https://www.zkoss.org/wiki/ZK_Component_Reference/Essential_Components/Popup)
+Reference/Essential Components/Popup](/zk_component_ref/popup)
 
 ## Searchbox Easy Clear
 
