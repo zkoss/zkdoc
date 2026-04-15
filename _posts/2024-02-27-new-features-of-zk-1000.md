@@ -436,6 +436,16 @@ then run maven goal `mvn process-resources` to start scanning
 Most of the APIs removed have been deprecated for a long time. See [Removed API](/zk_dev_ref/upgrade_tips/removed_api) for the complete
 list.
 
+Note that removed APIs do not only affect Java code — they also affect
+how you write your ZUL files. Each component attribute in ZUL is backed
+by a corresponding setter in Java, so when a Java setter is removed, the
+matching attribute is no longer available in ZUL either.
+
+For example, in `org.zkoss.zul.Script`, the `setType` method was
+removed. Consequently, you can no longer specify the `type` attribute on
+a `<script>` tag in your ZUL files. When upgrading, make sure to review
+both your Java code and your ZUL files against the removed API list.
+
 ## Unsupported Themes: Breeze, Sapphire, Silvertail, and Atlantic
 
 Breeze, Sapphire, Silvertail, and Atlantic are deprecated and no longer
