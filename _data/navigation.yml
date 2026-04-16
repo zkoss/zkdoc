@@ -2023,7 +2023,7 @@ zk_dev_ref:
         url: /zk_dev_ref/testing/testing_tips
       - title: ZATS
         url: /zk_dev_ref/testing/zats
-  - title: Upgrade Tips
+  - title: Upgrade Guide
     url: /zk_dev_ref/upgrade_tips/upgrade_tips
     children:
       - title: Version Upgrade

@@ -1,4 +1,6 @@
-# Versioning
+# ZK Version Upgrade Guide
+
+This page guides you through upgrading your ZK application to a newer version. It covers the upgrade process step-by-step, breaking changes by version, and a checklist to estimate your migration effort.
 
 ZK products follow [semantic versioning](https://semver.org/), where the
 three digits refer to MAJOR.MINOR.PATCH respectively. In the case where
@@ -26,7 +28,7 @@ accordingly.
 You can follow the same naming conventions as the examples provided
 above to search for the upgrade references you are looking for.
 
-# Important/breaking changes
+# Breaking Changes by Version
 
 | ZK Version | Description | Reference |
 |------------|-------------|-----------|
