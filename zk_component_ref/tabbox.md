@@ -136,17 +136,17 @@ Try it
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
-|**Default:** |![Default Mold](images/tabbox_mold_default.png)|
-| **Accordion:** | ![Accordion Mold](images/tabbox_mold_accordion.png)|
+|**Default:** |![Default Mold](images/Tabbox_mold_default.png)|
+| **Accordion:** | ![Accordion Mold](images/Tabbox_mold_accordion.png)|
 
 ## Supported Orients
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
-|**Top:**| ![Top Orientation](images/tabbox_orient_top.png)|
-|**Left:**| ![Left Orientation](images/tabbox_orient_vertical.png)|
-|**Right:**| ![Right Orientation](images/tabbox_orient_vertical-right.png)|
-|**Bottom:**| ![Bottom Orientation](images/tabbox_orient_bottom.png)|
+|**Top:**| ![Top Orientation](images/Tabbox_orient_top.png)|
+|**Left:**| ![Left Orientation](images/Tabbox_orient_vertical.png)|
+|**Right:**| ![Right Orientation](images/Tabbox_orient_vertical-right.png)|
+|**Bottom:**| ![Bottom Orientation](images/Tabbox_orient_bottom.png)|
 
 ## Supported Children
 - [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
