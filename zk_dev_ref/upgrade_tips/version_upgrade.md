@@ -47,6 +47,15 @@ above to search for the upgrade references you are looking for.
 
 [Check all security fixes in the tracker](https://tracker.zkoss.org/issues/?jql=labels_%3D_security)
 
+# Identify Your Current ZK Edition
+
+Before upgrading, check your `pom.xml` dependencies to identify your current ZK edition:
+- **EE (Enterprise Edition)**: Depends on `zkmax`
+- **PE (Professional Edition)**: Depends on `zkex`
+- **CE (Community Edition)**: Depends on `zul` (without `zkex` or `zkmax`)
+
+For a complete list of JAR files and optional dependencies for each edition, refer to the [Summary of JAR files in the Maven Setup Guide](/zk_installation_guide/maven_setup#summary-of-jar-files).
+
 # Upgrade Process
 
 Upgrading from ZK 5 (or later) to the latest version should be
