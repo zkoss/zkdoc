@@ -4,8 +4,8 @@ title: "Rangeslider"
 
  {% include
 supported-since.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include
-ZKComponentReferenceAccessibilityNamingReference.md %}
+{% include edition-availability.html edition="pe" %} 
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 | Attributes | Description |
 |---|---|
