@@ -117,10 +117,7 @@ client side which is detached during paging and throws mounting error.
 
 | Name | Event Type |
 |---|---|
-| `onPaging` | **Event:**
-[org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html)
-Notifies one of the pages of a multi-page component is selected by
-the user. |
+| `onPaging` | **Event:** [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the pages of a multi-page component is selected by the user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -142,11 +139,7 @@ zul.jar.
 
 | Version | Description | Example Location |
 |---|---|---|
-| 3.6 | Small talks | <ul>
-<li><a href="Small_Talks/2009/July/Handling_huge_data_using_ZK" title="wikilink">Handling huge data using ZK</a></li>
-<li><a href="Small_Talks/2009/May/Paging_Sorting_with_a_filter_object" title="wikilink">Paging Sorting with a filter object</a></li>
-<li><a href="Small_Talks/2008/June/Use_Load-On-Demand_to_Handle_Huge_Data" title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li>
-</ul> |
+| 3.6 | Small talks | <ul> <li><a href="Small_Talks/2009/July/Handling_huge_data_using_ZK" title="wikilink">Handling huge data using ZK</a></li> <li><a href="Small_Talks/2009/May/Paging_Sorting_with_a_filter_object" title="wikilink">Paging Sorting with a filter object</a></li> <li><a href="Small_Talks/2008/June/Use_Load-On-Demand_to_Handle_Huge_Data" title="wikilink">Use Load-On-Demand to Handle Huge Data</a></li> </ul> |
 
 
 

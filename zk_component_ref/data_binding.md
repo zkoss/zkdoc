@@ -19,26 +19,14 @@ Here is the attribute list used in lang-addon.xml:
 
 | Attribute Name | Description |
 |---|---|
-| ACCESS | Access privilege. The value can be "both", "save", or
-"load"(**default value**); default value is used if not
-specify. |
-| CONVERTER | System converter for special properties.
-(**optional**) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html) |
-| VALIDATOR | System validator for special properties.
-(**optional**) |
-| SAVE_EVENT | Save trigger event. It takes effect only when ACCESS attribute
-is "both" or "save". |
-| LOAD_EVENT | Load trigger event; It takes effect only when ACCESS attribute
-is "both" or "load". |
-| LOAD_REPLACEMENT | The replacement attribute for loading. It's used when there is
-a issue to load to original attribute.; e.g. value of textbox, it loads
-to "rawValue". |
-| LOAD_TYPE | Type of attribute for loading; e.g. rawValue of textbox is
-java.lang.String. |
-| SAVE_REPLACEMENT | The replacement attribute for saving. It's used when there is a
-issue to save to original attribute.; e.g. selectedItem of selectbox, it
-save the value selecteIndex via converter to the bean. (selectedItem is
-not existed in selectbox). |
+| ACCESS | Access privilege. The value can be "both", "save", or "load"(**default value**); default value is used if not specify. |
+| CONVERTER | System converter for special properties. (**optional**) e.g. SelectedItem in listbox. see [org.zkoss.bind.converter.sys.ListboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/ListboxSelectedItemConverter.html) |
+| VALIDATOR | System validator for special properties. (**optional**) |
+| SAVE_EVENT | Save trigger event. It takes effect only when ACCESS attribute is "both" or "save". |
+| LOAD_EVENT | Load trigger event; It takes effect only when ACCESS attribute is "both" or "load". |
+| LOAD_REPLACEMENT | The replacement attribute for loading. It's used when there is a issue to load to original attribute.; e.g. value of textbox, it loads to "rawValue". |
+| LOAD_TYPE | Type of attribute for loading; e.g. rawValue of textbox is java.lang.String. |
+| SAVE_REPLACEMENT | The replacement attribute for saving. It's used when there is a issue to save to original attribute.; e.g. selectedItem of selectbox, it save the value selecteIndex via converter to the bean. (selectedItem is not existed in selectbox). |
 | RENDERER | A special renderer for binding |
 |  |  |
 

@@ -85,10 +85,7 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 
 | Name | Event Type |
 |---|---|
-| `onChange` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)
-Represents an event caused by a user's selection changed at the
-client. |
+| `onChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event caused by a user's selection changed at the client. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

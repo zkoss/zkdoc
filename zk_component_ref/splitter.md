@@ -55,12 +55,8 @@ Allowed values and their meaning are as follows.
 | Value | Description |
 |---|---|
 | none | No collapsing occurs. |
-| before | When the grippy is clicked, the element immediately before the
-splitter in the same parent is collapsed so that its width or height is
-0. |
-| after | When the grippy is clicked, the element immediately after the
-splitter in the same parent is collapsed so that its width or height is
-0. |
+| before | When the grippy is clicked, the element immediately before the splitter in the same parent is collapsed so that its width or height is 0. |
+| after | When the grippy is clicked, the element immediately after the splitter in the same parent is collapsed so that its width or height is 0. |
 
 ## Open
 
@@ -129,10 +125,7 @@ OS-look:
 
 | Name | Event Type |
 |---|---|
-| `onOpen` | **Event:**
-[org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)
-When a splitter is collapsed or opened by a user, the
-`onOpen` event is sent to the application. |
+| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

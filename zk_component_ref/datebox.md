@@ -333,9 +333,7 @@ for inherited functions.
 
 | Name | Event Type |
 |---|---|
-| `onTimeZoneChange` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of
-the component is changed by user. |
+| `onTimeZoneChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of the component is changed by user. |
 
 - Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
 
@@ -347,8 +345,7 @@ zul.jar.
 | Name | Snapshot |
 |---|---|
 | default | ![](/zk_component_ref/images/datebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png)
-{% include supported-since.html version="5.0.0" %} |
+| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

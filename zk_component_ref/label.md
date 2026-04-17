@@ -122,10 +122,8 @@ This displaying rule is slightly different in ZK3.
 
 | hyphen | pre | maxlenth | Description |
 |---|---|---|---|
-| false | false | positive | Truncated the characters that exceeds the specified
-`maxlength`. |
-| true | any | positive | If the length of a line exceeds `maxlength`, the line
-is hyphenated. |
+| false | false | positive | Truncated the characters that exceeds the specified `maxlength`. |
+| true | any | positive | If the length of a line exceeds `maxlength`, the line is hyphenated. |
 | false | true | any | `maxlength` is ignored. |
 | any | any | 0 | `hyphen` is ignored. |
 

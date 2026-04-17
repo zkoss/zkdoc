@@ -170,9 +170,7 @@ radigroup will do the rest.
 | Name | Event Type |
 |---|---|
 |  |  |
-| onCheck | **Event:**
-[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a radio
-under the radiogroup is checked. |
+| onCheck | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a radio under the radiogroup is checked. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

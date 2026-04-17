@@ -31,8 +31,7 @@ experience as the visual display is updated immediately.
 | Name | Description |
 |---|---|
 | title | Title of chart |
-| threeD | Set true to show three dimensional graph(Note: Some types may not
-support 3D) |
+| threeD | Set true to show three dimensional graph(Note: Some types may not support 3D) |
 | type | Type of chart |
 | fgAlpha | Foreground alpha |
 | model | Model of chart |
@@ -43,10 +42,8 @@ support 3D) |
 |---|---|---|
 | bar | CategoryModel | * |
 | line | CategoryModel, XYModel | X |
-| pie | PieModel, SingleValueCategoryModel{% include supported-since.html version="6.5.3"
-%} | O |
-| funnel | SingleValueCategoryModel{% include supported-since.html version="6.5.3"
-%} | X |
+| pie | PieModel, SingleValueCategoryModel{% include supported-since.html version="6.5.3" %} | O |
+| funnel | SingleValueCategoryModel{% include supported-since.html version="6.5.3" %} | X |
 | combination | CategoryModel | O |
 | stacked_bar | CategoryModel | O |
 | area | CategoryModel | X |
@@ -673,8 +670,7 @@ public class FusionchartComposer extends SelectorComposer<Div> {
 
 | Name | Event Type |
 |---|---|
-| onClick | Mouse clicking event. You can get information of clicked area
-from this event. |
+| onClick | Mouse clicking event. You can get information of clicked area from this event. |
 
 # Supported Children
 

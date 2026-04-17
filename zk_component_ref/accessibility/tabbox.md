@@ -14,7 +14,6 @@ supported-since.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
 
 | Key | Description |
 |---|---|
-| <b>Horizontal:</b> ArrowLeft / ArrowRight<br/>
-<b>Vertical:</b> ArrowUp / ArrowDown | Navigate tabs. |
+| <b>Horizontal:</b> ArrowLeft / ArrowRight<br/> <b>Vertical:</b> ArrowUp / ArrowDown | Navigate tabs. |
 | Enter / Spacebar | Select the tab. |
 | Delete | Close the tab. (only if <b>closable</b> is enabled) |

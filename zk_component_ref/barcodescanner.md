@@ -261,9 +261,7 @@ and `consistencyThreshold` both 1.
 
 | Name | Event Type |
 |---|---|
-| `onDetect` | **Event:**
-[org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the
-barcode scanner detect a barcode message. |
+| `onDetect` | **Event:** [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the barcode scanner detect a barcode message. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

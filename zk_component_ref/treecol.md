@@ -67,9 +67,7 @@ A `treecol`is a top column of tree, Its parent must be `Treecols`.
 
 | Name | Event Type |
 |---|---|
-| `onSort` | **Event:**
-[org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has sorted
-the treeitem of this treecol. |
+| `onSort` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has sorted the treeitem of this treecol. |
 
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 

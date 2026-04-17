@@ -108,10 +108,7 @@ always be visible.
 
 | Name | Event Type |
 |---|---|
-| onRangeValueChange | **Event:**
-[org.zkoss.zkex.zul.event.RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html)
-Denotes the range value of a component has been changed by the
-user. |
+| onRangeValueChange | **Event:** [org.zkoss.zkex.zul.event.RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html) Denotes the range value of a component has been changed by the user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

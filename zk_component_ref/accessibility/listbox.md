@@ -17,8 +17,6 @@ the `z-focus-a` button.
 |---|---|
 | ArrowUp / ArrowDown | Select Listitems or focus on Listheaders. |
 | ArrowLeft / ArrowRight | Focus on Listcells or Listheaders |
-| Spacebar (on listitem) | If the checkmark is enabled, pressing Spacebar will toggle
-selection of the listitem. |
-| Enter / Spacebar (on listgroup) | pressing Enter/Spacebar will open or close the
-listgroup. |
+| Spacebar (on listitem) | If the checkmark is enabled, pressing Spacebar will toggle selection of the listitem. |
+| Enter / Spacebar (on listgroup) | pressing Enter/Spacebar will open or close the listgroup. |
 | Enter / Spacebar (on "select all" checkbox) | pressing Enter/Spacebar trigger select / unselect all. |

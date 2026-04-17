@@ -918,21 +918,7 @@ JVM. For the information to make it work under Linux, please refer to
 
 | Version | Date | Content |
 |---|---|---|
-| 5.0.4 | August 2010 | MouseEvent introduced a new method,
-[org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()),
-which simplifies the retrieval of the area component.
-<div class="sourceCode" id="cb1"><pre class="sourceCode java">`Area area = (Area)event.getAreaComponent(); //must be Area or null when used with chart
-if (area != null)
-  ...``</pre></div> |
-| 5.0.3 | June 2010 | The area sent with the click event becomes UUID of the area
-component. Thus, use
-`desktop.getComponentByUuid(event.getArea())`. To write a
-program compatible with any version of ZK:
-<div class="sourceCode" id="cb2"><pre class="sourceCode java">`String areaid = event.getArea();
-if (areaid != null) {
-  Area area = desktop.getComponentByUuidIfAny(areaid);
-  if (area == null)
-    area = chart.getFellow(areaid); //fall back to older version
-...``</pre></div> |
+| 5.0.4 | August 2010 | MouseEvent introduced a new method, [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()), which simplifies the retrieval of the area component. <div class="sourceCode" id="cb1"><pre class="sourceCode java">`Area area = (Area)event.getAreaComponent(); //must be Area or null when used with chart if (area != null) ...``</pre></div> |
+| 5.0.3 | June 2010 | The area sent with the click event becomes UUID of the area component. Thus, use `desktop.getComponentByUuid(event.getArea())`. To write a program compatible with any version of ZK: <div class="sourceCode" id="cb2"><pre class="sourceCode java">`String areaid = event.getArea(); if (areaid != null) { Area area = desktop.getComponentByUuidIfAny(areaid); if (area == null) area = chart.getFellow(areaid); //fall back to older version ...``</pre></div> |
 
 
