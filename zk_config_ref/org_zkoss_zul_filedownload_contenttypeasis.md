@@ -8,6 +8,7 @@ title: "org.zkoss.zul.Filedownload.contentTypeAsIs"
 
 {% include global-scope-only.html %}
 Default:  `false`
+{% include supported-since.html version="9.5.1" %}
 
 It specifies whether to treat the Content-Type as is in `Filedownload`
 class.

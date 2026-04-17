@@ -12,6 +12,7 @@ title: "The language-config Element"
 ```
 
 `[Optional]`
+{% include supported-since.html version="5.0.7" %}
 
 It specifies the additional [language addons and/or definitions]({{site.baseurl}}/zk_client_side_ref/language_definition).
 

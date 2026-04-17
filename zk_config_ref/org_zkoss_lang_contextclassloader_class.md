@@ -9,6 +9,7 @@ title: "org.zkoss.lang.contextClassLoader.class"
 {% include global-scope-only.html %}
 
 Default:  `none` (it implies `Thread.currentThread().getContextClassLoader()`)
+{% include supported-since.html version="8.0.2" %}
 
 It specifies the name of the class used to provide the customized
 context class loader. The class must implement the

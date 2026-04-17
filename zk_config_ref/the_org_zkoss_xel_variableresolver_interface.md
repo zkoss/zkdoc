@@ -5,6 +5,7 @@ title: "The org.zkoss.xel.VariableResolver interface"
 **Listener:**
 
 `org.zkoss.xel.VariableResolver`
+{% include supported-since.html version="5.0.4" %}
 
 A listener could implement
 [org.zkoss.xel.VariableResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/VariableResolver.html), and

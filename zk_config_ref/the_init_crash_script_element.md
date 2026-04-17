@@ -9,6 +9,7 @@ title: "The init-crash-script Element"
 ```
 
 `[Default: see crashmsg.js]`
+{% include supported-since.html version="7.0.4" %}
 
 If the client engine stops working before even the error handling is
 initialized (e.g. when ZK's core scripts fail to download - `zk.wpd`),

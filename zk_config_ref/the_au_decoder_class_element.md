@@ -9,6 +9,7 @@ title: "The au-decoder-class Element"
 ```
 
 `[Default: null (using the default JSON-based format)]`
+{% include supported-since.html version="5.0.4" %}
 
 It specifies which class will be used to implement the AU decoder. The
 AU decoder is used to decode the AU requests. The class must implement

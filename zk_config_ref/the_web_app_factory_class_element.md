@@ -9,6 +9,7 @@ title: "The web-app-factory-class Element"
 ```
 
 `[Default: none (and `org.zkoss.zk.ui.http.SimpleWebApp` is used)]`
+{% include supported-since.html version="6.0.0" %}
 
 It specifies which class is used to instantiate the instance of the
 implementation of the Web application. The class must have a default

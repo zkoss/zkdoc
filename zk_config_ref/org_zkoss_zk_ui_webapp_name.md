@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.WebApp.name"
 `org.zkoss.zk.ui.WebApp.name`
 {% include global-scope-only.html %}
 Default: `ZK`
+{% include supported-since.html version="5.0.6" %}
 
 It specifies the application name. It is the return value of
 [org.zkoss.zk.ui.WebApp#getAppName()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#getAppName()).

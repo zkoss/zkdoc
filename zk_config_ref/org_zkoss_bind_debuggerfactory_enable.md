@@ -9,6 +9,7 @@ title: "org.zkoss.bind.DebuggerFactory.enable"
 {% include global-scope-only.html %}
 
 Default: false
+{% include supported-since.html version="6.5.2" %}
 
 Turn on to enable log ZK Bind debugging information. It will print lots
 of messages during run-time which may be helpful for dubugging. Please
@@ -76,6 +77,7 @@ The printed message looks like:
 [6431]    *[load:prop-load] vm.element.name > value A-GCMD1 <label uuid="j5VUf" id="" />
 ```
 
+{% include supported-since.html version="10.0.0" %}
 ZK Bind information is logged via SLF4J, allowing developers to
 enable/disable logging for specific view model packages. For details on
 the logger configuration, please refer to the relevant documentation for

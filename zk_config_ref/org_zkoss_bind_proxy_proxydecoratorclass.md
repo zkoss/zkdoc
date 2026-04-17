@@ -9,6 +9,7 @@ title: "org.zkoss.bind.proxy.ProxyDecoratorClass"
 {% include global-scope-only.html %}
 
 Default:  `none`
+{% include supported-since.html version="8.0.3" %}
 
 It specifies the name of the class used to provide an enhancement for
 the proxy object. The class must implement the

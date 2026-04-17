@@ -7,6 +7,7 @@ title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelayMax"
 
 {% include global-scope-only.html %}
 Default:  `5000` (ms.)
+{% include supported-since.html version="9.6.1" %}
 
 The maximum delay between two reconnection attempts for the websocket
 client. Each attempt increases the reconnection delay by 2x.

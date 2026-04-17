@@ -5,6 +5,7 @@ title: "org.zkoss.zk.ui.ScriptErrorListener.class"
 **Property:** org.zkoss.zk.ui.ScriptErrorListener.class
 {% include global-scope-only.html %}
 Default:  `org.zkoss.zk.ui.script.DefaultScriptErrorListener`
+{% include supported-since.html version="9.6.0" %}
 
 The default one will log the error message starting with:
 

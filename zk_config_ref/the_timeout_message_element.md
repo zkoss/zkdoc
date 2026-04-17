@@ -11,6 +11,7 @@ title: "The timeout-message Element"
 `[Optional]`
 
 `[Default: ` `a message called `[`org.zkoss.zk.mesg.MZk`#UPDATE_OBSOLETE_PAGE](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zk/mesg/MZk`.html#UPDATE_OBSOLETE_PAGE)` defined in [msgzk.properties](/zk_dev_ref/internationalization/zk_messages)]
+{% include supported-since.html version="5.0.5" %}
 
 It specifies the message to show when the session is timeout. Notice
 that it is used only if the <timeout-uri> is **not** specified.

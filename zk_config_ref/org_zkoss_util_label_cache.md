@@ -9,6 +9,7 @@ title: "org.zkoss.util.label.cache"
 {% include global-scope-only.html %}
 
 Default:  `true`
+{% include supported-since.html version="8.6.0" %}
 
 Specifies whether to cache zk-labels.properties. By default, it is
 enabled. It means the content of zk-labels.properties is loaded and

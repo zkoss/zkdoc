@@ -7,6 +7,7 @@ title: "org.zkoss.zul.listbox.rightSelect"
 `org.zkoss.zul.listbox.rightSelect`
 {% include all-scopes-available.html %}
 `Default: true`
+{% include supported-since.html version="5.0.5" %}
 
 If a listbox's checkmark
 ([org.zkoss.zul.Listbox#isCheckmark()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#isCheckmark())) is

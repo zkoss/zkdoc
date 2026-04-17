@@ -9,6 +9,7 @@ title: "org.zkoss.web.servlet.http.URLEncoder"
 {% include global-scope-only.html %}
 
 Default: `javax.servlet.http.HttpServletResponse.encodeURL`
+{% include supported-since.html version="5.0.0" %}
 
 It specifies the class used to encode URL by including the session ID
 and Servlet's context path, if necessary. The specified class must

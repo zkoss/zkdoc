@@ -14,6 +14,7 @@ See [ZK Flex]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex)
 for additional information.
 
 `Default: true `
+{% include supported-since.html version="9.0.0" %}
 
 ```xml
 <component>

@@ -9,6 +9,7 @@ Property:
 {% include all-scopes-available.html %}
 
 Default:  `true`
+{% include supported-since.html version="5.0.5" %}
 
 Turn on/off whether the user is allowed to key in the grouping character
 when entering a number. The grouping character depends on the Locale.

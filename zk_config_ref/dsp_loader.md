@@ -1,4 +1,9 @@
+---
+title: "DSP Loader"
+---
+
 # InterpreterServlet
+
 
 [Optional] Class: `org.zkoss.web.servlet.dsp.InterpreterServlet`
 
@@ -41,7 +46,7 @@ DSP pages (\*.dsp) in your Web application.
 ```
 
 # Optional Jar
-
+{% include supported-since.html version="9.0.0" %}
 InterpreterServlet is split into a separate jar. It's no longer inside
 zweb.jar by default. If you want to use this servlet, you need to
 include the dependency below explicitly:

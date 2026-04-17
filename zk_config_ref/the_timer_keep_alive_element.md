@@ -10,6 +10,7 @@ title: "The timer-keep-alive Element"
 
 `[Default: false]`
 
+
 It specifies whether to keep the session alive, when receiving the
 `onTimer` event.
 
@@ -44,7 +45,7 @@ timer-keep-alive feature, such as
 ```
 
 ## Websockets
-
+{% include supported-since.html version="8.5.0" %}
 When enabled, Websockets use a persistent connection, which does not
 extend the HTTPSession when individual messages are sent. To keep the
 session alive using a <timer>-element you can force the request to use

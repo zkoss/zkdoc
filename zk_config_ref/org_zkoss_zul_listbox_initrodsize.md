@@ -7,6 +7,7 @@ title: "org.zkoss.zul.listbox.initRodSize"
 `org.zkoss.zul.listbox.initRodSize`
 {% include all-scopes-available.html %}
 `Default: 100`
+{% include supported-since.html version="5.0.8" %}
 
 Specifies the number of items rendered when the Listbox first render. It
 is used only if live data

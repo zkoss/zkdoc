@@ -5,6 +5,7 @@ title: "The org.zkoss.zk.ui.util.Initiator interface"
 **Listener:**
 
 `org.zkoss.zk.ui.util.Initiator`
+{% include supported-since.html version="5.0.7" %}
 
 A listener could implement
 [org.zkoss.zk.ui.util.Initiator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Initiator.html) to

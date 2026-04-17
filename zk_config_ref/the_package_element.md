@@ -10,6 +10,7 @@ title: "The package Element"
 ```
 
 [Default: none]
+{% include supported-since.html version="5.0.0" %}
 
 It defines a client package (JavaScript) and all of its sub packages
 that are provided by this server. Use this configuration if some client

@@ -9,5 +9,6 @@ title: "The init-crash-timeout Element"
 ```
 
 `[Default: 60 (sec)]`
+{% include supported-since.html version="7.0.4" %}
 
 It specifies the crash timeout when initiation, in seconds.

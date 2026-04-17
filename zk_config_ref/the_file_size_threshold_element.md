@@ -9,6 +9,7 @@ title: "The file-size-threshold Element"
 ```
 
 `[Default: 128]`
+{% include supported-since.html version="5.0.8" %}
 
 The threshold, in **kilobytes**, below which the uploaded content will
 be retained in memory and above which it will be stored as a file. A

@@ -5,6 +5,7 @@ title: "org.zkoss.zk.au.AuWriters.ContentType"
 **Property:** org.zkoss.zk.au.AuWriters.ContentType
 {% include global-scope-only.html %}
 Default:  `text/plain;charset=UTF-8`
+{% include supported-since.html version="8.5.2" %}
 
 It specifies the Content-Type of the AU response.
 

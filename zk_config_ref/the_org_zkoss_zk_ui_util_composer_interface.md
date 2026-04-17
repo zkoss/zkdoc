@@ -5,6 +5,7 @@ title: "The org.zkoss.zk.ui.util.Composer interface"
 **Listener:**
 
 `org.zkoss.zk.ui.util.Composer`
+{% include supported-since.html version="5.0.1" %}
 
 A listener could implement
 [org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html), such

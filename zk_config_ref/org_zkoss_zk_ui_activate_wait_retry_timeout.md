@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.activate.wait.retry.timeout"
 `org.zkoss.zk.ui.activate.wait.retry.timeout`
 {% include global-scope-only.html %}
 Default: 120000` (unit: milliseconds)`
+{% include supported-since.html version="5.0.3" %}
 
 A library property to specify the timeout (in milliseconds) to wait for
 the activation.

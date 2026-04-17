@@ -9,6 +9,7 @@ title: "org.zkoss.zul.client.rod"
 {% include all-scopes-available.html %}
 
 Default:  `true`
+{% include supported-since.html version="5.0.0" %}
 
 It specifies whether to apply [Client Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand).
 This property is not used for Grid and Listbox.

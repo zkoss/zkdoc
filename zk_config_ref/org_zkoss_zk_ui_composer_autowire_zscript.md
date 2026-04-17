@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.composer.autowire.zscript"
 `org.zkoss.zk.ui.composer.autowire.zscript`
 {% include global-scope-only.html %}
 Default: true` (it is default to `false` in 6.0)`
+{% include supported-since.html version="5.0.6" %}
 
 It specifies whether
 `org.zkoss.zk.ui.util.GenericAutowireComposer` (and

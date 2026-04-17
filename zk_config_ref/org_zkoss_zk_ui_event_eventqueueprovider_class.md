@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.event.EventQueueProvider.class"
 `org.zkoss.zk.ui.event.EventQueueProvider.class`
 {% include global-scope-only.html %}
 Default:  `none` (it implies `org.zkoss.zk.ui.event.impl.EventQueueProviderImpl`)
+{% include supported-since.html version="5.0.0" %}
 
 It specifies the name of the class used to provide the event queue. The
 class must implement the

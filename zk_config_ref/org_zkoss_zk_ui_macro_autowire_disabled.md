@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.macro.autowire.disabled"
 `org.zkoss.zk.ui.macro.autowire.disabled`
 {% include global-scope-only.html %}
 Default:  `false`
+{% include supported-since.html version="5.0.4" %}
 
 Turn on/off auto wire mechanism for macro component
 

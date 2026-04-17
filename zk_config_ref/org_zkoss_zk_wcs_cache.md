@@ -7,6 +7,7 @@ title: "org.zkoss.zk.WCS.cache"
 `org.zkoss.zk.WCS.cache`
 {% include global-scope-only.html %}
 Default:  `true`
+{% include supported-since.html version="5.0.11" %}
 
 Specifies whether to cache the result of ZK WCS files (the stylesheets
 of components) at the server. By default, it is enabled. It means the

@@ -9,6 +9,7 @@ title: "The theme-uri-handler-class Element"
 ```
 
 `[Default: `none`]`
+{% include supported-since.html version="9.6.0" %}
 
 It specifies the class to provide the theme (aka., a style sheet file)
 URI dynamically if you want to determine the theme based on the current

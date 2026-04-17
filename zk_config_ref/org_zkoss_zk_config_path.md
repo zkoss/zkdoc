@@ -7,6 +7,7 @@ title: "org_zkoss_zk_config_path"
 `org.zkoss.zk.config.path`
 {% include global-scope-only.html %}
 Default: none
+{% include supported-since.html version="5.0.7" %}
 
 It specifies another configuration file in addition to `WEB-INF/zk.xml`.
 This is useful if you have two or more environments, such as testing and

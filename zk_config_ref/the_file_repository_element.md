@@ -9,6 +9,7 @@ title: "The file-repository Element"
 ```
 
 `[Default: null] (will use System.getProperty("java.io.tmpdir"))`
+{% include supported-since.html version="8.0.2" %}
 
 It specifies the directory in which uploaded files will be stored, if
 stored on disk.

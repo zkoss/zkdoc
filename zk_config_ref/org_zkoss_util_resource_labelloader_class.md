@@ -7,6 +7,7 @@ title: "org.zkoss.util.resource.LabelLoader.class"
 `org.zkoss.util.resource.LabelLoader.class`
 {% include global-scope-only.html %}
 Default:  `none` (it implies `org.zkoss.util.resource.impl.LabelLoaderImpl`)
+{% include supported-since.html version="7.0.1" %}
 
 It specifies the name of the class used to provide the customized label
 loader. The class must implement the

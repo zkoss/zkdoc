@@ -14,6 +14,7 @@ Notice that it is not recommended to use in production, you can use this
 when developing (hot-swap).
 
 Default: `false`
+{% include supported-since.html version="9.6.0" %}
 
 ```xml
 <library-property>

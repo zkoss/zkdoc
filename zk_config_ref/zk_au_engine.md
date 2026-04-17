@@ -1,5 +1,10 @@
-# WebSocket
+---
+title: "Websocket"
+---
 
+
+# WebSocket
+{% include supported-since.html version="8.5.0" %}
 By default, ZK communicates with a server in
 [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 or [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)

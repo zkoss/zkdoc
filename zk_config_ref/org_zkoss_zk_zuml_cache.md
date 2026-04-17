@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ZUML.cache"
 `org.zkoss.zk.ZUML.cache`
 {% include global-scope-only.html %}
 Default:  `true`
+{% include supported-since.html version="8.5.1" %}
 
 Specifies whether to cache the result of ZK ZUML files (the \*.zul files
 in the classpath loaded by `ZumlExtendlet`) at the server. By default,

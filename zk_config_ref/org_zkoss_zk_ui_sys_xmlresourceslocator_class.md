@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.sys.XMLResourcesLocator.class"
 `org.zkoss.zk.ui.sys.XMLResourcesLocator.class`
 {% include global-scope-only.html %}
 Default:  `none` (it implies `org.zkoss.util.resource.ClassLocator`)
+{% include supported-since.html version="6.6.0" %}
 
 It specifies the name of the class used to load `metainfo/config.xml`,
 `metainfo/lang.xml` and `metainfo/lang-addon.xml`. By default, they are

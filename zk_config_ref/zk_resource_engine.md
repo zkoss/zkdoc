@@ -1,4 +1,10 @@
+---
+title: "ZK Resource Engine"
+---
+
+{% include supported-since.html version="9.5.0" %}
 # DHtmlResourceServlet
+
 
 [Optional] Class: ` org.zkoss.zk.au.http.DHtmlResourceServlet`
 
@@ -22,9 +28,3 @@ Mapping URL to ZK Resource Engine is straightforward:
 
 Notice that the URL pattern mapped to this engine must be consistent
 with the `resource-uri` parameter of [ZK Loader]({{site.baseurl}}/zk_config_ref/zk_loader).
-
-# Version History
-
-| Version | Date     | Content |
-|---------|----------|---------|
-| 9.5.0   | 09/29/20 |         |

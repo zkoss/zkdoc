@@ -8,6 +8,7 @@ title: "org.zkoss.zkmax.ui.comet.async.disabled"
 
 {% include global-scope-only.html %}
 Default:  `auto`
+{% include supported-since.html version="6.0.0" %}
 
 It specifies whether to disable the use of Servlet 3's Asynchronous
 Support for handling Comet-based server push.

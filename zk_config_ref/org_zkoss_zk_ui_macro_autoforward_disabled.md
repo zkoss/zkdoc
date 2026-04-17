@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.macro.autoforward.disabled"
 `org.zkoss.zk.ui.macro.autoforward.disabled`
 {% include global-scope-only.html %}
 Default:  `false`
+{% include supported-since.html version="5.0.4" %}
 
 Turn on/off auto forward mechanism for macro component
 

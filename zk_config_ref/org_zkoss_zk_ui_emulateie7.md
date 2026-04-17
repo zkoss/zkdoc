@@ -7,8 +7,9 @@ title: "org.zkoss.zk.ui.EmulateIE7"
 `org.zkoss.zk.ui.EmulateIE7`
 {% include global-scope-only.html %}
 Default: `false`
+{% include supported-since.html version="5.0.2" %}
 
-`[dropped in 9.0]`
+{% include RemovedSince.html version="9.0.0" %}
 
 It specifies if we can make Internet Explorer 8 running in IE7
 compatible mode. This can be used if some of your JavaScript code

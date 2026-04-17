@@ -7,6 +7,7 @@ title: "org.zkoss.zk.ui.processMask.enabled"
 `org.zkoss.zk.ui.processMask.enabled`
 {% include global-scope-only.html %}
 Default:  `false`
+{% include supported-since.html version="6.5.5" %}
 
 Specifies whether always to show a processing mask when doing a lengthy
 operation on the server side. The mask will cover the whole page to

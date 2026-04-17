@@ -4,8 +4,7 @@ title: "zk.xml"
 
 
 
-`WEB-INF/zk.xml` is the configuration descriptor of ZK. This file is
-optional. If you want to configure ZK differently from the default, you
+`WEB-INF/zk.xml` is the configuration descriptor of ZK. This file is optional. If you want to configure ZK differently from the default, you
 need to provide a file called `zk.xml` under the `WEB-INF` directory.
 
 The root element must be <zk>. Then, you could specify any combination
@@ -16,6 +15,12 @@ of the following elements under the root element.
 You can place zk.xml in either a WAR file or a JAR file.
 
 {% include DoctypeDisallowed.md %}
+
+# DOCTYPE restriction
+{% include supported-since.html version="10.0.0" %}
+Starting from ZK 10, the xml parser used by ZK declares <code>disallow-doctype-decl</code> to true.
+This prevents the use of DOCTYPE declaration in xml files, such as zk.xml, lang-addon.xml, config. xml, etc.
+This is a security measure to prevent XXE attacks using <code><!DOCTYPE ...></code> as vector.
 
 ## WEB-INF/zk.xml
 

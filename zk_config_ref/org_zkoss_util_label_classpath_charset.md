@@ -9,6 +9,7 @@ title: "org.zkoss.util.label.classpath.charset"
 {% include global-scope-only.html %}
 
 Default: `UTF-8`
+{% include supported-since.html version="3.6.0" %}
 
 It defines the charset used to encode zk-label.properties if the file is
 located in the classpath.

@@ -6,6 +6,7 @@ title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnection"
 org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnection
 {% include global-scope-only.html %}
 Default:  `true`
+{% include supported-since.html version="9.6.1" %}
 
 Specifies whether to enable or not for the WebSocket client reconnection
 mechanism.

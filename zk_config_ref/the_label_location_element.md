@@ -9,6 +9,7 @@ title: "The label-location Element"
 ```
 
 [Default: `/WEB-INF/zk-label.properties`]
+{% include supported-since.html version="5.0.7" %}
 
 It specifies the location of the properties file for [the internationalization labels]({{site.baseurl}}/zk_dev_ref/internationalization/labels).
 If you have multiple properties files, you could specify them one by

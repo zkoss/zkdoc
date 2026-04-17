@@ -7,6 +7,7 @@ title: "org.zkoss.zul.tree.initRodSize"
 `org.zkoss.zul.tree.initRodSize`
 {% include all-scopes-available.html %}
 Default: 50`
+{% include supported-since.html version="7.0.0" %}
 
 Specifies the number of items rendered when the Tree first render. It is
 used only if live data
