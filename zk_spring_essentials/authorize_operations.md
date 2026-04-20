@@ -14,41 +14,19 @@ Browser → /zkau → [1] Controller/ViewModel layer (fast fail, visible to deve
                [2] Service layer (@PreAuthorize — the real security gate)
 ```
 
-* **Controller Layer** (Composer/ViewModel) is a developer-facing guard that provides clear error semantics at the boundary closest to the UI.
-* **Service Layer** is mandatory defense-in-depth — it works even if controller layer is forgotten, miscoded, or bypassed by future refactors. For example, you have other RESTful services directly calling the service layer without going through the controller layer.
 
-## The CGLIB Proxy Problem
-
-When any Spring-managed bean has a method annotated with `@PreAuthorize` (or any Spring AOP advice), Spring Security wraps it in a **CGLIB proxy**. This breaks ZK's annotation scanning for parameter-level annotations.
-
-### What CGLIB Does to Overridden Methods
-
-```
-BigbankViewModel$$SpringCGLIB$$0  extends  BigbankViewModel
-  └── adjustBalance(Long, Double)   ← overridden for AOP interception
-        method-level annotations:   [@Command]           ← Spring CGLIB *copies* these ✓
-        parameter annotations:      [nothing, nothing]   ← CGLIB does NOT copy these ✗
-```
-
-Spring 5+ CGLIB copies method-level annotations to the proxy's generated overrides. But it **does not copy parameter annotations** — parameter annotations live in a separate JVM attribute (`RuntimeVisibleParameterAnnotations`) that CGLIB's ASM-generated code does not reproduce.
-
-### Net Result for ZK
-
-| ZK annotation | Through CGLIB proxy? |
-|---|---|
-| `@Command` (method-level) | **Yes** — command IS invoked |
-| `@BindingParam` (parameter-level) | **No** — parameters arrive as `null` |
-| `@Listen` (method-level) | **Yes** — works fine for MVC Composers |
-
-**Conclusion:** Putting Spring AOP advice on a ViewModel method makes `@BindingParam` parameters `null`. The command fires but receives no data. MVC Composers are not affected since `@Listen` handlers use event objects (no parameter annotations).
+* **Controller Layer** (Composer/ViewModel) permission check is optional but recommended when the Controller performs pre-processing before calling the service. If authorization fails at the service layer after pre-processing has already started (e.g. data transformation, resource allocation), the controller must undo that work — which is messy. Checking permissions at the controller layer first avoids unnecessary processing and keeps error handling simple. If the Controller only makes a direct, trivial service call with no pre-processing, the service-layer check alone is sufficient.
+* **Service Layer** is the mandatory security gate — it remains protected even when called directly from REST endpoints, batch jobs, or any path that bypasses the controller.
 
 ## Solution: AspectJ Compile-Time Weaving (CTW)
+
+[`@PreAuthorize`](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html#_preauthorize) is a Spring Security annotation that evaluates a Spring Expression Language (SpEL) expression before a method is invoked. If the expression evaluates to `false`, Spring Security throws an `AccessDeniedException` and the method body never executes. For example, `@PreAuthorize("hasRole('ADMIN')")` restricts a method to users holding the `ADMIN` role.
+
+You might try placing `@PreAuthorize` directly on a ViewModel `@Command` method — but this does not work. The reason is that Spring Security's default proxy mechanism (CGLIB) breaks ZK's parameter-level annotation scanning. See [Why You Cannot Use `@PreAuthorize` Directly on a ViewModel Method](#why-you-cannot-use-preauthorize-directly-on-a-viewmodel-method) for details.
 
 AspectJ CTW injects advice directly into bytecode at build time. No proxy class is generated; ZK sees the original class with all annotations intact.
 
 The `spring-security-aspects` library provides `PreAuthorizeAspect` — a standard AspectJ aspect that intercepts `@PreAuthorize` at compile time. This replaces any need for custom aspect classes.
-
-[`@PreAuthorize`](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html#_preauthorize) is a Spring Security annotation that evaluates a Spring Expression Language (SpEL) expression before a method is invoked. If the expression evaluates to `false`, Spring Security throws an `AccessDeniedException` and the method body never executes. For example, `@PreAuthorize("hasRole('ADMIN')")` restricts a method to users holding the `ADMIN` role.
 
 ### Required Dependencies
 
@@ -171,6 +149,31 @@ public class BigbankComposer extends SelectorComposer<Window> {
 ```
 
 > **MVC note:** `@Listen` in `SelectorComposer` binds to components at `doAfterCompose` time. If you replace a model item via `ListModelList.set()`, the row re-renders and creates new buttons without the listener binding. Update the UI directly instead.
+
+### Why You Cannot Use `@PreAuthorize` Directly on a ViewModel Method
+
+When any Spring-managed bean has a method annotated with `@PreAuthorize` (or any Spring AOP advice), Spring Security wraps it in a **CGLIB proxy**. This breaks ZK's annotation scanning for parameter-level annotations.
+
+```
+BigbankViewModel$$SpringCGLIB$$0  extends  BigbankViewModel
+  └── adjustBalance(Long, Double)   ← overridden for AOP interception
+        method-level annotations:   [@Command]           ← Spring CGLIB *copies* these ✓
+        parameter annotations:      [nothing, nothing]   ← CGLIB does NOT copy these ✗
+```
+
+Spring 5+ CGLIB copies method-level annotations to the proxy's generated overrides. But it **does not copy parameter annotations** — parameter annotations live in a separate JVM attribute (`RuntimeVisibleParameterAnnotations`) that CGLIB's ASM-generated code does not reproduce.
+
+The result for ZK:
+
+| ZK annotation | Through CGLIB proxy? |
+|---|---|
+| `@Command` (method-level) | **Yes** — command IS invoked |
+| `@BindingParam` (parameter-level) | **No** — parameters arrive as `null` |
+| `@Listen` (method-level) | **Yes** — works fine for MVC Composers |
+
+Putting Spring AOP advice on a ViewModel method makes `@BindingParam` parameters `null`. The command fires but receives no data. MVC Composers are not affected since `@Listen` handlers use event objects (no parameter annotations).
+
+AspectJ CTW sidesteps this entirely — advice is woven at compile time into the original class, so no proxy is ever generated and all annotations remain intact.
 
 ## Solution: Delegate to a Security Service
 
