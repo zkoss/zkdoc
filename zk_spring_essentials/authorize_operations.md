@@ -6,7 +6,7 @@
 
 ZK's `/zkau` endpoint is a single HTTP entry point — URL-based Spring Security rules (e.g. `requestMatchers("/zkau").hasRole(...)`) can only gate the entire endpoint, not individual event handlers or commands. Every `onClick`, `@Listen`, or `@Command` handler is independently reachable from the browser and must be individually authorized.
 
-## Recommended Architecture: Two-Layer Defense
+## Recommended Approach: Two-Layer Defense
 
 ```
 Browser → /zkau → [1] Controller/ViewModel layer (fast fail, visible to developers)
@@ -14,7 +14,8 @@ Browser → /zkau → [1] Controller/ViewModel layer (fast fail, visible to deve
                [2] Service layer (@PreAuthorize — the real security gate)
 ```
 
-**Layer 1** (controller/ViewModel) is a developer-facing guard that provides clear error semantics at the boundary closest to the UI. **Layer 2** is mandatory defense-in-depth — it works even if layer 1 is forgotten, miscoded, or bypassed by future refactors.
+* **Controller Layer** (Composer/ViewModel) is a developer-facing guard that provides clear error semantics at the boundary closest to the UI.
+* **Service Layer** is mandatory defense-in-depth — it works even if controller layer is forgotten, miscoded, or bypassed by future refactors. For example, you have other RESTful services directly calling the service layer without going through the controller layer.
 
 ## The CGLIB Proxy Problem
 
@@ -41,25 +42,17 @@ Spring 5+ CGLIB copies method-level annotations to the proxy's generated overrid
 
 **Conclusion:** Putting Spring AOP advice on a ViewModel method makes `@BindingParam` parameters `null`. The command fires but receives no data. MVC Composers are not affected since `@Listen` handlers use event objects (no parameter annotations).
 
-## Solution 1: AspectJ Compile-Time Weaving (CTW)
+## Solution: AspectJ Compile-Time Weaving (CTW)
 
 AspectJ CTW injects advice directly into bytecode at build time. No proxy class is generated; ZK sees the original class with all annotations intact.
 
 The `spring-security-aspects` library provides `PreAuthorizeAspect` — a standard AspectJ aspect that intercepts `@PreAuthorize` at compile time. This replaces any need for custom aspect classes.
 
-### Dependencies
+[`@PreAuthorize`](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html#_preauthorize) is a Spring Security annotation that evaluates a Spring Expression Language (SpEL) expression before a method is invoked. If the expression evaluates to `false`, Spring Security throws an `AccessDeniedException` and the method body never executes. For example, `@PreAuthorize("hasRole('ADMIN')")` restricts a method to users holding the `ADMIN` role.
+
+### Required Dependencies
 
 ```xml
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjweaver</artifactId>
-    <version>1.9.22</version>
-</dependency>
-<dependency>
-    <groupId>org.aspectj</groupId>
-    <artifactId>aspectjrt</artifactId>
-    <version>1.9.22</version>
-</dependency>
 <dependency>
     <groupId>org.springframework.security</groupId>
     <artifactId>spring-security-aspects</artifactId>
@@ -179,7 +172,7 @@ public class BigbankComposer extends SelectorComposer<Window> {
 
 > **MVC note:** `@Listen` in `SelectorComposer` binds to components at `doAfterCompose` time. If you replace a model item via `ListModelList.set()`, the row re-renders and creates new buttons without the listener binding. Update the UI directly instead.
 
-## Solution 2: Delegate to a Security Service
+## Solution: Delegate to a Security Service
 
 If you don't want the AspectJ Maven plugin, delegate to a separate `@Service` that carries `@PreAuthorize`. Spring proxies the service safely — no ZK annotations are involved on the proxied class.
 
