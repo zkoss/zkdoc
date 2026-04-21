@@ -20,6 +20,8 @@ The skill follows a rigorous 4-step workflow to ensure the generated code meets 
 3. **Automated Validation**: Enforces code quality through an integrated script that checks for XML well-formedness, XSD schema compliance, and ZK component compatibility.
 4. **Controller Generation**: Generates the corresponding Java controller class (a `ViewModel` or `SelectorComposer`), ready to be wired to your UI.
 
+Note that zul-writer also supports a Java-first approach — simply instruct it to generate a minimal ZUL with only a root component and build the UI programmatically in the Composer.
+
 ### Further Reading
 
 For a detailed introduction, installation instructions, and a showcase of generated ZK UIs, please refer to the article:
