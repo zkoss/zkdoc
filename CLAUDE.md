@@ -78,8 +78,25 @@ npm run extract-components-verbose
 
 # Extract and verify against documentation (slower)
 npm run extract-components-scan
+
+# Lint all docs for Markdown/Liquid issues (source-level, fast)
+npm run lint-docs
+
+# Auto-fix safe whitespace issues (blank-line normalization only)
+npm run lint-docs-fix
+
+# Validate rendered HTML tables after jekyll build (thorough, requires _site/)
+npm run lint-rendered
 ```
 All tool scripts should have header comments to explain their purpose and usage.
+
+#### Linting Tool (`tool/lint/`)
+Two-tier Liquid-aware Markdown linter. All linter code lives under `tool/lint/`:
+- `lint-docs.js` — Tier 1: fast source-level lint with two custom rules
+  - ZK001 `liquid-in-table-cell`: detects `{% include X %}` inside table cells where X emits block HTML
+  - ZK002 `blank-line-issues`: blank lines in tables, missing blanks around fences, 2+ consecutive blanks
+- `lint-rendered.js` — Tier 2: post-build HTML checker using cheerio; maps issues back to source `.md`
+- `rules/` — shared modules: `docs-dirs.js`, `liquid-mask.js`, `include-classifier.js`, `liquid-in-table-cell.js`, `blank-line-issues.js`
 
 #### Component Extraction Tool
 The `extract-zul-components.js` script extracts all usable ZK components from the official ZUL XSD schema:
