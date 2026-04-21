@@ -15,7 +15,7 @@ first.
 - Go to your new project folder, then run the following command:
 
 ```text
- mvn archetype:generate -DarchetypeCatalog=https://mavensync.zkoss.org/maven2/
+mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=https://mavensync.zkoss.org/maven2/
 ```
 
 Then just answer the questions the plugin asks you to create a project.
@@ -31,12 +31,9 @@ Then just answer the questions the plugin asks you to create a project.
   *groupId* is set to **com.foo**, *artifactId* to **mywebapp**,
   *version* to **0.8.0** and *package* to **com.foo**.
 
-**NOTE**: in case your maven installation uses the latest
-maven-archetype-plugin version 3.0.1 you'll have to use the following
-command (using 2.4 as a fallback -
-[ARCHETYPE-519](https://issues.apache.org/jira/browse/ARCHETYPE-519)):
+**NOTE**: Starting with maven-archetype-plugin 3.0, support for remote URL-based archetypeCatalog values was dropped. We have to use the older version plugin [ARCHETYPE-519](https://issues.apache.org/jira/browse/ARCHETYPE-519)):
 
-`$ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)
+
 
 `$ mvn archetype:generate -DarchetypeCatalog=`[`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)  
 `[INFO] Scanning for projects...`  
@@ -86,4 +83,6 @@ command (using 2.4 as a fallback -
 The project created by archetypes above should have a maven jetty plugin
 configured, you can just run the project with the command below:
 
-`mvn jetty:run`
+```text
+mvn jetty:run
+```
