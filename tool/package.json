@@ -19,7 +19,10 @@
     "extract-components-scan": "node extract-zul-components.js --scan-docs",
     "check-since-marks": "node check-missing-since-marks.js",
     "check-since-marks-save": "node check-missing-since-marks.js --save",
-    "check-since-marks-verbose": "node check-missing-since-marks.js --verbose"
+    "check-since-marks-verbose": "node check-missing-since-marks.js --verbose",
+    "lint-docs": "node lint/lint-docs.js",
+    "lint-docs-fix": "node lint/lint-docs.js --fix",
+    "lint-rendered": "node lint/lint-rendered.js"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +32,7 @@
     "cheerio": "^1.0.0-rc.12",
     "glob": "^11.0.3",
     "js-yaml": "^4.1.0",
-    "puppeteer": "^24.14.0"
+    "puppeteer": "^24.14.0",
+    "markdownlint-cli2": "^0.17.0"
   }
 }
