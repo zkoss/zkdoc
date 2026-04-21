@@ -67,7 +67,8 @@ If you don't specify the pattern, it will ask you to choose one.
 
 For developers who prefer composing UI in Java, you can instruct zul-writer to generate a minimal ZUL with only a root component, while all child components are created programmatically in the Composer:
 ```text
-/zul-writer a login form, write a zul with root component only and create other components in a composer, mvc pattern
+/zul-writer a login form, write a zul with root component only
+ and create other components in a composer, mvc pattern
 ```
 
 ## Create zul from image
