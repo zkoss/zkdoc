@@ -1,24 +1,24 @@
 
 # Overview
 
-A richlet is a small Java program that composes a user interface in Java
-for serving the user's request. Before composing UI in Java, we suggest
-you to know basic concept:[ UI Composing/Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
-first.
+A **Richlet** is a small Java class that builds a ZK page entirely in Java code, without any ZUML markup. It gives you full programmatic control over component creation — useful when the UI structure is highly dynamic, generated from data, or when you simply prefer Java over XML.
 
-When a user requests the content of an URL, ZK Loader checks if the
-resource of the specified URL is a ZUML page or a richlet. If it is a
-ZUML page, ZK Loader will create components automatically based on the
-ZUML page's content as we described in the previous chapters.
+If you are deciding between ZUML pages and richlets, see [UI Composing: ZUL vs. Java]({{site.baseurl}}/zk_dev_ref/ui_composing/zul_vs_java) for a comparison. For the component model that both approaches share, start with [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui).
 
-If the resource is a richlet, ZK Loader hands over the processing to the
-richlet. What and how to create components are all handled by the
-richlet. In other words, it is the developer's job to create all the
-necessary components programmatically in response to the request.
+**How ZK routes a request:**
 
-The choice between the ZUML pages and richlets depends on your
-preference. However, the performance should not cause any concern since
-parsing ZUML is optimized.
+```
+HTTP Request
+     │
+     ▼
+ ZK Loader
+     │
+     ├─── ZUML page? ──► parses markup, creates components automatically
+     │
+     └─── Richlet?   ──► calls Richlet.service(page) — you create components
+```
+
+The choice between ZUML and richlets is a matter of preference; parsing ZUML is optimized and carries no significant performance penalty.
 
 # Implement a Richlet
 
@@ -105,11 +105,7 @@ xul/html) is assumed.
 
 ## Richlet Must Be Thread-Safe
 
-Like a servlet, a single instance of richlet is created and shared with
-all users for all requests for the mapped URL. A richlet must handle the
-concurrent requests, and be careful to synchronize access to shared
-resources. In other words, a richlet (the implementation of the
-`service` method) must be thread-safe.
+A richlet works exactly like a Servlet: **one instance is created and shared across all concurrent requests** for the mapped URL. This means instance fields are inherently shared state and are unsafe without synchronization. Keep shared data out of fields — declare variables that belong to a single request as local variables inside `service()` instead.
 
 ## Don't Share Components
 
@@ -122,24 +118,32 @@ served with an individual desktop and page. Therefore, we *cannot* share
 components among different invocations of
 [org.zkoss.zk.ui.Richlet#service(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html#service(org.zkoss.zk.ui.Page)).
 
-For example, the following code is illegal:
+For example, the following code is **incorrect**:
 
 ```java
 public class MyRichlet extends GenericRichlet {
-    private Window main; //Not a good idea to share
+    private Window main; // WRONG: shared instance field
     public void service(Page page) {
         if (main == null) {
             main = new Window();
         }
-        main.setPage(main); //ERROR! Causes an exception if the same URL is requested twice!
-...
+        main.setPage(page); // ERROR on second request: main is already attached to the first desktop
+    }
+}
 ```
 
-Why? Each desktop should have its own set of component instances[^2].
-When the URL associated **MyRichlet** is requested a second time, an
-exception will be thrown because the **main** window is already
-instantiated and associated with the first desktop created from the
-first request. We cannot assign it to the second desktop.
+Each desktop must have its own component instances[^2]. When the URL is requested a second time, `main` is still attached to the first desktop and cannot be reassigned — ZK throws an exception.
+
+**Correct pattern** — create components as local variables inside `service()`:
+
+```java
+public class MyRichlet extends GenericRichlet {
+    public void service(Page page) {
+        Window main = new Window(); // local variable: one per request
+        main.setPage(page);
+    }
+}
+```
 
 # Map URL to a Richlet
 
@@ -154,7 +158,14 @@ By default, richlets are disabled. To enable them, please add the
 following declaration to `WEB-INF/web.xml`. Once enabled, you can add as
 many richlets as you want without modifying `web.xml`.
 
-With servlet-mapping:
+There are two ways to enable richlets. Choose based on your deployment setup:
+
+| Approach | When to use |
+|---|---|
+| `servlet-mapping` | Simpler; preferred when you control `web.xml` and do not need other filters to intercept the richlet URL first. |
+| `RichletFilter` | Necessary when your container requires a filter chain (e.g., Spring Security filters must run before ZK), or when corporate policy disallows new servlet mappings. |
+
+**Option 1 — servlet-mapping:**
 
 ```xml
 <servlet-mapping>
@@ -163,7 +174,7 @@ With servlet-mapping:
 </servlet-mapping>
 ```
 
-You can use `RichletFilter` instead.
+**Option 2 — RichletFilter:**
 
 ```xml
 <filter>
@@ -177,10 +188,7 @@ You can use `RichletFilter` instead.
 </filter-mapping>
 ```
 
-where you can replace `/zk/*` with any pattern you like, such as
-`/do/*`. Notice that you *cannot* map it to an extension (such as
-`*.do`) since it will be considered as a ZUML page (rather than a
-richlet).
+Replace `/zk/*` with any prefix pattern you prefer, such as `/do/*`. You *cannot* use an extension pattern (e.g., `*.do`) — ZK would treat it as a ZUML page instead of a richlet.
 
 ## Map URL pattern to Richlet
 
@@ -226,8 +234,7 @@ richlet-mapping. For example,
 As you can see in the highlight above, the **/zk** is added which is
 according to the filter-mapping.
 
-Then, you can visit
-[<http://localhost:8080/PROJECT_NAME/zk/test>](http://localhost:8080/PROJECT_NAME/zk/test)
+Then, you can visit http://localhost:8080/CONTEXT_PATH/zk/test
 to request the richlet.
 
 The URL specified in the `url-pattern` element must start with `/`. If
@@ -243,8 +250,7 @@ returned by the `getRequestPath` method of the current page.
  }
 ```
 
-> ---- **Tip**: By specifying `/*` as the `url-pattern`, you can map all
-> unmatched URLs to your richlet.
+**Tip**: By specifying `/*` as the `url-pattern`, you can map all unmatched URLs to your richlet.
 
 # Load ZUML in Richlet
 
