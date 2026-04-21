@@ -56,7 +56,7 @@ column is mainly to define attributes for each cell in the grid.
 | `onGroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) \*(1) Denotes user has grouped all the cells under a column. |
 | `onUngroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) \*(1) \*(2) Denotes user has ungrouped all the cells under a column. |
 
-\*(1) {% include edition-availability.html edition="pe" %}
+\*(1) {% include edition-availability.html edition="pe" inline=true %}
 \*(2) {% include supported-since.html version="6.5.0" %}
 
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)

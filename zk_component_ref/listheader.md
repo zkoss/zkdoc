@@ -47,6 +47,16 @@ a list box. Its parent must be `Listhead`.
  </window>
 ```
 
+**Multiline Listheader**
+
+```xml
+   <listheader id="lh_usrAccountnonlocked" sort="auto">
+	<label value="none &'#'10;&'#'13; locked &'#'10;&'#'13; "
+	width="85%" sclass="word-wrap" multiline="true">
+	</label>
+   </listheader>
+```
+
 # Supported Events
 
 | Name | Event Type |
@@ -55,7 +65,7 @@ a list box. Its parent must be `Listhead`.
 | `onGroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) \*(1) \*(2) Denotes user has grouped all the cells under a column. |
 | `onUngroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) \*(1) \*(2) Denotes user has ungrouped all the cells under a column. |
 
-\*(1) {% include edition-availability.html edition="pe" %}
+\*(1) {% include edition-availability.html edition="pe" inline=true %}
 \*(2) {% include supported-since.html version="6.5.0" %}
 
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
@@ -64,11 +74,7 @@ a list box. Its parent must be `Listhead`.
 
 `*ALL`
 
-# Use Cases
 
-| Version | Description          | Example Location                              |
-|---------|----------------------|-----------------------------------------------|
-| 5.0     | Multiline Listheader | <http://www.zkoss.org/forum/listComment/6864> |
 # Version History
 
 | Version | Date      | Content                                                                                  |
