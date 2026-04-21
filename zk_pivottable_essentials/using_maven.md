@@ -35,6 +35,7 @@ For improved security and maintainability, Pivottable now uses keikai-poi 5.13.0
 ```
 
 keikai-poiex is at a different repository that you need to specify it explicitly:
+
 ```xml
 <repository>
   <id>Keikai EE</id>

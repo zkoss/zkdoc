@@ -21,7 +21,6 @@ browsers provide very sophisticated tools supporting the search for a
 bottleneck and draw some conclusions, and eliminate other possible
 causes easily.
 
-
 ![](/zk_dev_ref/images/chrome_developer_tools_network.png)
 
 Developer tools > Network :  
@@ -53,14 +52,12 @@ NO (dynamic request into ZK application)
 
 **3. Which PHASE of the request is slowest ?**
 
-  
 (wording based on Chrome developer tools - **EDIT** [Chrome updated wording and explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
 ![](/zk_dev_ref/images/chrome_developer_tools_network_timing.png)
 
 **CONNECTING** (or one of Proxy, DNS Lookup, Blocking, SSL)
 
-  
 **3.a) Is this a network problem (everything between browser and ZK
 Application)?**
 
@@ -74,7 +71,6 @@ takes long time to accept connection, or even times out)
 
 **SENDING**
 
-  
 **3.b) Is the request unreasonably big?** (rare case, usually due to an
 upload (reasonable), or form posting a lot of data)
 
@@ -84,12 +80,10 @@ NO
 
 <!-- -->
 
-  
 ↓
 
 <!-- -->
 
-  
 **3.c) Is the bandwidth low?**
 
 - e.g. try upload the same amount of data to the server via ftp/scp to
@@ -105,7 +99,6 @@ server receiving request data slowly)
 
 **Content Download**
 
-  
 **3.d) Is the response unreasonably big?**
 
 YES → [#ZK Server Configuration](#zk-server-configuration)
@@ -261,18 +254,15 @@ e.g.
 
 - CPUs (multi cores)
 
-  
 the server process might only have limited access to available CPU cores
 
 - Memory
 
-  
 you might have a lot of physical memory but the JVM is configured to
 only use a small amount of that
 
 - Incoming connections:
 
-  
 application server might be configured to handle only a small number of
 simultaneous requests even if it could handle more
 
@@ -280,7 +270,6 @@ simultaneous requests even if it could handle more
 
 - DB connection pools
 
-  
 there might be a very fast DB waiting for your input, but your
 connection pools are too small
 
@@ -365,7 +354,6 @@ parts in your application consume most of the time, **sampling** or
   and summarizes statistics about which methods are active most of the
   time
 
-  
 → sufficient in most cases, will find the biggest bottlenecks at a high
 chance
 
@@ -373,7 +361,6 @@ chance
   you should already know what you are looking for before starting the
   profiler
 
-  
 → profiling everything might just "kill" the application
 
 There are several Profiling tools in various price ranges and there is
@@ -504,20 +491,17 @@ one should check the following settings:
 
 - [ZK Session Cleaner]({{site.baseurl}}/zk_config_ref/zk_session_cleaner)
 
-  
 this listener is usually enabled in web.xml, so make sure it is not
 commented out, or removed.
 
 - [Session Configuration]({{site.baseurl}}/zk_config_ref/the_session_config_element)
 
-  
 check session timeout, either here or in web.xml
 
 check max desktops per session, if you want to put a limit here
 
 - [Desktop Configuration]({{site.baseurl}}/zk_config_ref/the_desktop_config_element)
 
-  
 if desktops stay alive too long, check the desktop timeout
 
 Usually desktops are destroyed when a page is closed, however in case a
@@ -581,18 +565,15 @@ can help.
   default)
   - [debug-js](/zk_config_ref/the_debug_js_element)
 
-
 - check caching config → should **not** be disabled (enabled by default)
   - [org.zkoss.web.classWebResource.cache](/zk_config_ref/org_zkoss_web_classwebresource_cache)
   - [org.zkoss.zk.WPD.cache](/zk_config_ref/org_zkoss_zk_wpd_cache)
   - [org.zkoss.zk.WCS.cache](/zk_config_ref/org_zkoss_zk_wcs_cache)
 
-
 - check compression settings → should **not** be disabled (enabled by
   default)
   - [ZK AU Engine](/zk_config_ref/zk_au_engine#The_Initial_Parameters)
   - [ZK Loader](/zk_config_ref/zk_loader#The_Initial_Parameters)
-
 
 - consider/check render on demand settings
   - [client_render_on_demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)
@@ -602,7 +583,6 @@ can help.
   - [org.zkoss.zul.listbox.initRodSize](/zk_config_ref/org_zkoss_zul_listbox_initrodsize)
   - [org.zkoss.zul.tree.initRodSize](/zk_config_ref/org_zkoss_zul_tree_initrodsize)
     (ZK 7)
-
 
 - check
   [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/performance_tips)

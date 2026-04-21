@@ -85,13 +85,11 @@ public class MyBean {
 }
 ```
 
-
 # Version History
 
 | Version | Date           | Content                                                                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.5   | September 2010 | [org.zkoss.zkplus.embed.Bridge](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/embed/Bridge.html) was introduced to simplify the starting of an execution in foreign Ajax channel |
-
 [^1]: For more information on
     [jsf.ajax.request](https://javaserverfaces.dev.java.net/nonav/docs/2.0/jsdocs/symbols/jsf.ajax.html#.request)
     read official JSF Javascript docs for

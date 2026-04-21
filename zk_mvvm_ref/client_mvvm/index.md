@@ -15,7 +15,6 @@ In ZK versions up to 9.0, involves handling most of the MVVM pattern's logic on 
 ## Client MVVM
 Introduced in ZK 10, represents a paradigm shift where the data binding and UI component management are largely executed on the client side. In this approach, binding information is passed to the client through ZK widgets, significantly reducing the server's memory and processing load, and enhancing overall application performance.
 
-
 # Benefits
 This significant shift yields two main benefits:
 
@@ -26,10 +25,8 @@ Client MVVM extends its memory-saving advantages beyond UI components to data bi
 ## Better Performance
 With the majority of data binding operations now occurring client-side, there is a marked decrease in response time. The browser handles the binding processes, leading to quicker interactions and a smoother user experience. This shift not only saves time during the rendering process by eliminating the need to create numerous Java objects server-side but also enhances overall performance due to reduced server load.
 
-
 ## Using client MVVM is transparent to developers
 From the perspective of an application developer, the transition to client MVVM is designed to be transparent. The fundamental method of constructing MVVM applications remains largely unchanged, and most existing data binding expressions do not require rewriting. ZK internally manages the transition, allowing developers to harness the benefits of client MVVM without extensive modifications to their existing applications. But there are still some unsupported binding usages that block you from using client MVVM, we will cover in this chapter.
-
 
 # Setting up
 There are two ways to use the client MVVM, either use it against a specific ViewModel, or, set it globally. Either way, you have to first include the jar file and add the listener.
@@ -39,6 +36,7 @@ Include the [client-bind](https://mavensync.zkoss.org/eval/org/zkoss/zk/client-b
 
 ## Step 2
 Add the listener for client MVVM in `zk.xml`:
+
 ```xml
 <listener>
     <listener-class>org.zkoss.clientbind.BinderPropertiesRenderer</listener-class>
@@ -104,13 +102,11 @@ But now, when you enable client MVVM, ZK will update all the binding evaluation 
 does not have the full and most up-to-date information. Therefore, you no longer can access and control those child components
 via a Java object. You have to stick to the MVVM pattern.
 
-
 Traversing components, like using `self` and `.parent` are not supported.
 
 ```xml
 <button onClick="@command('delete', index=self.parent.parent.index)"/>
 ```
-
 
 [@Listen]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening), [@Wire](../advanced/wire_components), [@WireVariable](../advanced/wire_components), and [@SelectorParam](../syntax/selectorparam) are not supported.
 You cannot use [@BindingParam](../syntax/bindingparam) and [@ContextParam](../syntax/contextparam) to get components.
@@ -138,7 +134,6 @@ public void commandB(@BindingParam("foo") String foo,
 }
 ```
 
-
 Component related API might return null (no component on the
     server-side).
 
@@ -153,7 +148,6 @@ public void commandB(@ContextParam(ContextType.TRIGGER_EVENT) MouseEvent event) 
 org.zkoss.bind.Converter#coerceToUi(B beanProp, C component, BindContext ctx);
 org.zkoss.bind.Converter#coerceToBean(U compAttr, C component, BindContext ctx);
 ```
-
 
 ## Deferred Binding is no longer supported
 
@@ -196,7 +190,6 @@ In server MVVM, the value of Label will be "123changed" after the "Do Change" bu
 In client MVVM, the value will remain "123". If you intend to see
 "123changed" you will need to apply `@NotifyChange`.
 
-
 ## AnnotateDataBinder and Calling Binder API are not supported
 `AnnotateDataBinder` is the old ZK binding in zkplus module. And the
 Binder API is for server MVVM. For example:
@@ -238,7 +231,6 @@ For example, the return value of a getter method should not be always a
 [ZK Client MVVM Linter](https://blog.zkoss.org/2023/08/01/zk-10-preview-introducing-zk-client-mvvm-linter/)
 can scan your zul and java files to find out those unsupported MVVM usages under client MVVM enabled. See [linter starter](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/tree/master) know how to use it. 
 
-
 # Debugging Tips
 
 Unsupported/incompatible usages mentioned in the previous section will be reported as system logs during the application startup, remember to check the logs when running into issues using the client MVVM.
@@ -262,7 +254,6 @@ Client MVVM can transparently support server MVVM features below:
 * shadow elements
 * ROD
 
-
 # Right feature for the right Job
 As mentioned above the core benefit of using client MVVM is to save the server memory and improve performance. Instead of spending the time checking the limitations and upgrading client MVVM throughout the whole project, we recommend you apply client MVVM to the following pages:
 
@@ -270,7 +261,6 @@ As mentioned above the core benefit of using client MVVM is to save the server m
 * pages visited by a large number of concurrent users
 
 Both scenarios produce more binding tracker nodes, so applying client MVVM to these cases can effectively reduce the memory footprint.
-
 
 # FAQ
 
@@ -282,7 +272,6 @@ With client MVVM, ZK doesn't create those child components at the server-side (n
 
 ## How much improvement I can expect?
 It depends on the number of components and the type and amount of bindings you are currently using. You need to do a profiling to know the difference.
-
 
 ## How is client MVVM different from fragment?
 * [fragment](/zk_component_ref/fragment) integrates Vue framework.

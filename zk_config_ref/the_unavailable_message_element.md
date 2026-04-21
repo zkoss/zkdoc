@@ -21,5 +21,3 @@ support this device.
     ]]></unavailable-message>
 </device-config>
 ```
-
-

@@ -3,6 +3,7 @@ title: "variable-resolver"
 ---
 
 **Syntax:**
+
 ```xml
 <?variable-resolver class="..." 
    [arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."]?>

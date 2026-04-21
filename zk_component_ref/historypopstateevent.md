@@ -2,7 +2,6 @@
 title: "HistoryPopStateEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API:
   [org.zkoss.zk.ui.event.HistoryPopStateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/HistoryPopStateEvent.html)
@@ -120,12 +119,8 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date     | Content                                                                       |
 |---------|----------|-------------------------------------------------------------------------------|
 | 8.5.0   | Oct 2017 | [ZK-3711](http://tracker.zkoss.org/browse/ZK-3711): Support HTML5 history API |
-
-

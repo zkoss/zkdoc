@@ -25,5 +25,3 @@ will generate the following output
 The `sclass` won't change the default CSS classes applied to a
 component, so all the default CSS rules will still be applied and
 inherited. This attribute is useful to fine-tune a particular component.
-
-

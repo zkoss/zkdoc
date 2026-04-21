@@ -92,5 +92,3 @@ the item's content. Each *listcell* has one child component *label*.
 </tr>
 </tbody>
 </table>
-
- 

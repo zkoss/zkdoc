@@ -33,5 +33,3 @@ Notice that this setting is applied only to the specified device
 (<device-type>), so remember to specify the correct device.
 
 For more information, please refer to [ZK Developer's Reference/UI Patterns/Session Timeout Management]({{site.baseurl}}/zk_dev_ref/ui_patterns/session_timeout_management).
-
-

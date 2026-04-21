@@ -25,7 +25,6 @@ The notebook includes several ready-to-use study materials:
 - **Introduction** - An overview of ZK MVC and MVVM patterns
 - **FAQ Document** - Common questions and answers for ZK beginners
 
-
 These materials are generated from our curated sources, providing multiple ways to absorb ZK knowledge based on your learning preference.
 
 ## What Sources Are Included?
@@ -178,5 +177,3 @@ Ready to accelerate your ZK learning journey? Here are your options:
 4. **Join the ZK Community** - Get help from experienced developers at [ZK Forum](https://forum.zkoss.org/)
 
 Learning with AI assistance does not replace hands-on coding practice. Use this notebook as a companion while you build real applications, and you will find yourself mastering ZK faster than ever.
-
-

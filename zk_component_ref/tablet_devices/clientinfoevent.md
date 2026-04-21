@@ -1,5 +1,4 @@
 
-
 # ClientInfoEvent
 
 - Demonstration: N/A
@@ -52,12 +51,8 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date       | Content                                                                                              |
 |---------|------------|------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Add a way to listen onOrientationChange for tablet device](http://tracker.zkoss.org/browse/ZK-1273) |
-
-

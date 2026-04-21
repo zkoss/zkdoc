@@ -1,5 +1,4 @@
 
-
 # Setting up
 
 To set up stateless components in a ZK 10 application, you need to

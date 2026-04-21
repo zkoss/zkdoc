@@ -20,5 +20,3 @@ defines a shortcut.
 ```xml
 <namespace>http://www.zkoss.org/2005/zul</namespace>
 ```
-
-

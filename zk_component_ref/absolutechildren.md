@@ -2,12 +2,10 @@
 title: "Absolutechildren"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Absolutechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutechildren.html)
 - JavaScript API:
   [zul.layout.Absolutechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Absolutechildren.html)
-
 
 # Employment/Purpose
 
@@ -45,21 +43,14 @@ absolutely positioned within Absolutelayout component by either setting
 
 # Supported Events
 
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 All
 
-
-
 # Version History
-
-
 
 | Version | Date            | Content                                |
 |---------|-----------------|----------------------------------------|
 | 6.0.0   | October 4, 2011 | Add the new Absolutechildren component |
-
-

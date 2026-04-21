@@ -14,7 +14,6 @@ from the following paths.
 | 3.0.\* (maintaining) | <https://zk1.svn.sourceforge.net/svnroot/zk1/branches/3.0/>      | The 3.0 branch. It is the working repository for the most up-to-date source codes for maintaining ZK 3.0                                                                                                  |
 | 2.4.\* (maintaining) | <https://zk1.svn.sourceforge.net/svnroot/zk1/branches/2.4/>      | The 2.4 branch. It is the working repository for the most up-to-date source codes for maintaining ZK 2.4                                                                                                  |
 | Releases (frozen)    | https://zk1.svn.sourceforge.net/svnroot/zk1/releases/*x*.*y*.*z* | The releases. We won't change the code in this repository. The URL depends on the version you want to check out. For a complete list, please visit <http://zk1.svn.sourceforge.net/viewvc/zk1/releases/>. |
-
 # Maven Build
 
 Since ZK 5.0.5 release, we put an Eclipse project setting into each

@@ -125,7 +125,6 @@ East and West components. Check other variables from [ here](/zk_style_customiza
 |------------------------|---------------|
 | @splitterGradientStart | \#FDFDFD      |
 | @splitterGradientEnd   | \#F1F1F1      |
-
 # Customize Sample
 
 ## Target Design
@@ -311,5 +310,3 @@ like the following.
     </east>
 </borderlayout>
 ```
-
-

@@ -18,5 +18,3 @@ for more information.
 
 For a complete list of available library properties, please refer to
 [the Library Properties section]({{site.baseurl}}/zk_config_ref/the_library_properties).
-
-

@@ -18,6 +18,7 @@ default global command method `defaultAction()` because it cannot find a
 command method named "exit".
 
 #### ViewModel with default command method
+
 ```java
 public class OrderVM {
 
@@ -45,6 +46,7 @@ The interface looks like this:
 ![MVVM Global Command Simple]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-global-command-simple.png)
 
 #### A zul with 2 ViewModels
+
 ```xml
 <hlayout>
     <vbox id="mainArea" width="200px" height="300px"
@@ -84,6 +86,7 @@ The interface looks like this:
 -   We bind onClick event to a local command "add" and a global command "refresh".
 
 #### AddViewModel.java
+
 ```java
 public class MainViewModel {
 
@@ -100,6 +103,7 @@ public class MainViewModel {
 ```
 
 #### ListViewModel.java
+
 ```java
 public class ListViewModel {
 
@@ -139,6 +143,7 @@ The UI is:
 ![MVVM Global Command Menu]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-global-command-menu.png)
 
 #### One to many communication
+
 ```xml
 <vlayout >
     <menubar width="600px" apply="org.zkoss.bind.BindComposer"
@@ -153,6 +158,7 @@ The UI is:
 -   Add a menubar with 2 menuitem: show and hide that are bound to global commands.
 
 #### ViewModel implement show & hide command
+
 ```java
 public class MainViewModel {
 
@@ -196,6 +202,7 @@ ZK allows you to change the name and scope of the event queue a binder subscribe
 Trigger a Command Dynamically
 =============================
 Except triggering a global command in a ZUL, we can also do it by calling API. For above example, we can trigger global command in the local command "add" and the code is as follows:
+
 ```java
 @NotifyChange("msg")
 @Command
@@ -209,6 +216,7 @@ public void add() {
 -   The arguments passed in a global command (from zul or from java) can be retrieved using the [@BindingParam](../syntax/bindingparam) syntax.
 
 You can call this method in a composer, and those pages written in MVC pattern can communicate with ViewModel. A sample code snippet is as follows:
+
 ```java
 public class MyComposer extends SelectorComposer{
 

@@ -17,6 +17,7 @@ Syntax:
 ```
 
 Enabling this will apply the `Content-Security-Policy` response header with the default directive:
+
 ```
 script-src 'self' 'unsafe-inline' 'unsafe-eval';
 ```
@@ -44,6 +45,7 @@ script-src 'self' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' 'nonce-{nonce}'
 The nonce is generated per execution and applied to all `<script>` and `<style>` tags in the page.
 
 In order to retrieve the nonce for manual handling during page load, you need to first initialize the `CspProviderImpl` class, and then use EL or `execution.getAttribute` to retrieve the nonce in a ZUL page or composer. For example:
+
 ```xml
 <zscript><![CDATA[
     org.zkoss.zk.ui.util.CspProvider provider = new org.zkoss.zk.ui.http.CspProviderImpl();

@@ -19,6 +19,7 @@ The annotation is applied to initial method's (or command method's) parameter. I
 {% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
+
 ```java
 @QueryParam String keyString
 ```

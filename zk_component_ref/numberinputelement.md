@@ -2,7 +2,6 @@
 title: "NumberInputElement"
 ---
 
-
 - Demonstration:[Number Input Element](http://www.zkoss.org/zkdemo/userguide/#f2)
 - Java API: [org.zkoss.zul.impl.NumberInputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/NumberInputElement.html)
 - JavaScript API: N/A

@@ -1,5 +1,4 @@
 
-
 # Start from Maven Archetype
 
 Although Gradle doesn't provide a counterpart like Maven archetype, you
@@ -164,11 +163,9 @@ The server will stop at breakpoints.
 
 ## Import a Gradle project into your IDE
 
-
 ![](images/zk-gradle-idea-run-config.png)
 <figcaption>An exemplary development run config for IntelliJ
 IDEA</figcaption>
-
 
 The [example project](https://github.com/zkoss-demo/zk-gradle) doesn't
 include or require any IDE specific settings and can be imported into

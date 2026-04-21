@@ -2,7 +2,6 @@
 title: "A"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html)
 - JavaScript API: [zul.wgt.A](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.A.html)
@@ -152,22 +151,15 @@ Desktop.getDirectory().
 
 # Supported Events
 
-
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
 
-
-
 # Version History
-
-
 
 | Version | Date          | Content                                                                                 |
 |---------|---------------|-----------------------------------------------------------------------------------------|
 | 5.0.5   | October, 2010 | [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) supports any children.                               |
 | 7.0.2   | May, 2014     | [Support autodisable property for A component](http://tracker.zkoss.org/browse/ZK-2237) |
-
-

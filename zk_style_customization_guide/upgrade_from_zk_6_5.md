@@ -47,7 +47,6 @@ their default mold to improve performance. However, you do not need to
 change your Component.setMold() code since ZK handles this
 transparently.
 
-
 ## Upgrade sample
 
 In this
@@ -83,7 +82,6 @@ to modify the CSS class names (from z-component-mold to z-component) in
 most situations. Check [ Tip 2 Appendix](#Tip_2_Appendix) for
 the complete list of affected components.
 
-
 # Tip 3: Component Zclass
 
 Some components' zclass-es consist of several parts (separated by dashes
@@ -105,7 +103,6 @@ For example,
 
 Then, if you want to customize the content part of window for all modes,
 simply override CSS class *z-window-content*.
-
 
 ## Upgrade sample
 
@@ -146,7 +143,6 @@ In ZK 7, you can remove *-mode* part for all modes.
 To adapt this change for ZK 7, check [ Tip 3 Appendix](#Tip_3_Appendix) for the complete list of related
 changes eliminating CSS classes.
 
-
 # Tip 4: DOM Structure
 
 In ZK 6.5, several components use a 3 x 3 grid structure(see image
@@ -154,7 +150,6 @@ bellow) to achieve the rounded corner style. In ZK 7, we applied CSS 3,
 therefore, the complex 3 x 3 grid structure is no longer needed.
 
 ![](images/Button2.png)
-
 
 ## Upgrade Sample
 
@@ -217,7 +212,6 @@ structure first, then move your existing customization style into the
 new CSS class. Check [ Tip 4 Appendix](#Tip_4_Appendix) for
 the complete list that removes the 3 x 3 (or 3x1) grid structure..
 
-
 # Tip 5: CSS Class Naming
 
 In ZK 6.5, we use abbreviations for CSS class names which can be hard to
@@ -231,7 +225,6 @@ in ZK 7, we use the full-naming pattern on CSS class names. For example,
 | z-component-**seld** | z-component-**selected** |
 | z-component**-over** | z-component**:hover** |
 | z-component**-disd** | z-component**[disabled]** |
-
 Here we can see not only abbreviations have been changed to full names,
 but we also use CSS selectors like**:hover** and the attribute selector
 like **\[disabled\]** to make it more intuitive.
@@ -268,7 +261,6 @@ changes is to modify CSS class names with full naming patterns (from
 z-component-*shortname* to z-component-*fullname*). Check [ Tip 5 Appendix](#Tip_5_Appendix) for the complete list of ZK 7 CSS
 class naming rule.
 
-
 # Tip 6: Image Icons and Font Icons
 
 In order to reduce page loading time, we use font icons in ZK 7 to
@@ -276,7 +268,6 @@ replace original image icons. There are a lot of web icon fonts on the
 market, here we integrate in ZK 7 with [Font Awesome 4.0.1](http://fortawesome.github.io/Font-Awesome/). Thus, it is easy to
 use font icons in ZK application by simply replace prefix **fa** to
 **z-icon**, for example, *z-icon-caret-up* represents a [triangle arrow up](http://fortawesome.github.io/Font-Awesome/icon/caret-up/) font icon.
-
 
 ## Upgrade Sample
 
@@ -313,7 +304,6 @@ or
 }
 ```
 
-
 # Tip 7: Scrollbar
 
 Since ZK 7, we provide custom scrollbar for Grid, Listbox and Tree
@@ -321,7 +311,6 @@ component by default, which means you can also customize scrollbar
 style. Here we will demonstrate how to style it. Or, if you do not wish
 to custom your scrollbar, we will also demonstrate how to disable it and
 use browser default scrollbar instead.
-
 
 ## Customize Scrollbar Style
 
@@ -359,7 +348,6 @@ You can check the customized result.
 
 | ![](images/ZK7_scrollbar_1.png) | ZK 7 default scrollbar style |
 | ![](images/ZK7_scrollbar_2.png) | Customized scrollbar style |
-
 ## Use Browser Default scrollbar
 
 To disable custom scrollbar provided by ZK 7. Add the library property
@@ -383,7 +371,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
-
 # Tip 2 Appendix
 
 | Component | ZK 6.5 mold | ZK 7 mold |
@@ -392,7 +379,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
-
 # Tip 3 Appendix
 
 | Component | ZK 6.5 sample | ZK 7 sample |
@@ -406,7 +392,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Groupbox | z-groupbox-3d | z-groupbox z-groupbox-3d |
 | Tabbox | z-tabbox<br/><br/>z-tabbox-ver<br/><br/>z-tabbox-accordion | z-tabbox z-tabbox-top<br/>z-tabbox z-tabbox-bottom<br/>z-tabbox z-tabbox-left<br/>z-tabbox z-tabbox-right<br/>z-tabbox z-tabbox-accordion |
 | Window | z-window-embedded<br/>z-window-modal<br/>z-window-highlighted<br/>z-window-overlapped<br/>z-window-popup | z-window z-window-embedded<br/>z-window z-window-modal<br/>z-window z-window-highlighted<br/>z-window z-window-overlapped<br/>z-window z-window-popup |
-
 # Tip 2 Appendix
 
 | Component | ZK 6.5 mold | ZK 7 mold |
@@ -415,7 +400,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
-
 # Tip 3 Appendix
 
 | Component | ZK 6.5 sample | ZK 7 sample |
@@ -429,7 +413,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Groupbox | z-groupbox-3d | z-groupbox z-groupbox-3d |
 | Tabbox | z-tabbox<br/><br/>z-tabbox-ver<br/><br/>z-tabbox-accordion | z-tabbox z-tabbox-top<br/>z-tabbox z-tabbox-bottom<br/>z-tabbox z-tabbox-left<br/>z-tabbox z-tabbox-right<br/>z-tabbox z-tabbox-accordion |
 | Window | z-window-embedded<br/>z-window-modal<br/>z-window-highlighted<br/>z-window-overlapped<br/>z-window-popup | z-window z-window-embedded<br/>z-window z-window-modal<br/>z-window z-window-highlighted<br/>z-window z-window-overlapped<br/>z-window z-window-popup |
-
 # Tip 4 Appendix
 
 | Component | ZK 6.5 DOM structure | ZK 7 DOM structure |
@@ -442,7 +425,6 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Panel | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-tl"&gt;<br/>        &lt;div class="z-panel-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-hl"&gt;<br/>        &lt;div class="z-panel-hr"&gt;<br/>            &lt;div class="z-panel-hm"&gt;<br/>                &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panel-cl"&gt;<br/>            &lt;div class="z-panel-cr"&gt;<br/>                &lt;div class="z-panel-cm"&gt;<br/>                    &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>                &lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-fl"&gt;<br/>            &lt;div class="z-panel-fr"&gt;<br/>                &lt;div class="z-panel-fm"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-bl"&gt;<br/>            &lt;div class="z-panel-br"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-head"&gt;<br/>        &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
 | Window | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-tl"&gt;<br/>        &lt;div class="z-window-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-hl"&gt;<br/>        &lt;div class="z-window-hr"&gt;<br/>            &lt;div class="z-window-hm"&gt;<br/>                &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-cl"&gt;<br/>        &lt;div class="z-window-cr"&gt;<br/>            &lt;div class="z-window-cm"&gt;<br/>                &lt;div class="z-window-cnt"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-bl"&gt;<br/>        &lt;div class="z-window-br"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>    &lt;div class="z-window-content"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
 | Tab | horizontal / vertical orient<br/><br/>```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-close"&gt;&lt;/a&gt;<br/>    &lt;div class="z-tab-hl"&gt;<br/>        &lt;div class="z-tab-hr"&gt;<br/>            &lt;div class="z-tab-hm"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/li&gt;<br/>``` | ```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-content"&gt;<br/>        &lt;div class="z-tab-button"&gt;&lt;/div&gt;<br/>        &lt;span class="z-tab-text"&gt;&lt;/span&gt;<br/>    &lt;/a&gt;<br/>&lt;/li&gt;<br/>``` |
-
 # Tip 5 Appendix
 
 |  Category         |  ZK 6.5 class name | ZK 7 class name                                                      |
@@ -493,5 +475,4 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 |                     |  **-hide**         | *deprecated*                                                         |
 |                     |  -invalid          | -invalid                                                             |
 |                     |  -readonly         | \[readonly\] or -readonly                                            |
-
 - deprecated means it is never used in 7.0

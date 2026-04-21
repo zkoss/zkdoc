@@ -1,5 +1,4 @@
 
-
 # Non-existing Components are Safer than Invisible Ones
 
 Users can easily access inaccessible elements (such as disabled or
@@ -30,6 +29,7 @@ by default. Users need to enable it manually.
 
 ## How to Disable
 Since this service blocks all events sent from invisible components. If you have such need, you can disable it.
+
 ```xml
 <library-property>
     <name>org.zkoss.zkmax.au.IWBS.disable</name>
@@ -91,7 +91,6 @@ they are disabled/read-only, as follows:
 | Combobox      |
 | Chosenbox     |
 | Selectbox     |
-
 ## Specify Events to Block
 
 If you just want to block particular events, not all events. Then, you

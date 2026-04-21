@@ -6,5 +6,3 @@ The current desktop. It is the same as `self.desktop`.
  desktop.getPage("main");
  
 ```
-
-

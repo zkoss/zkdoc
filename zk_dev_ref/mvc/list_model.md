@@ -2,7 +2,6 @@
 title: "ListModel"
 ---
 
-
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html),
 [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html), and
 [org.zkoss.zul.Tabbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html) allow developers to separate the
@@ -38,7 +37,6 @@ the default implementations, which provide a set of utilities for
 handling data listeners transparently. We will talk about it later in
 [\#Notify for Data Updates](#Notify_for_Data_Updates).
 
-
 # Default ListModel Implementation
 
 In most cases, you can use ZK default implementation of
@@ -63,8 +61,6 @@ void setModel(List data) {
 When you call a method of `ListModel`, e.g. `add(), remove(), set()`, it
 will automatically notify its associated component to render the
 differential items instead of re-rendering all items.
-
-
 
 # Load All Data into a ListModel
 
@@ -269,7 +265,6 @@ All default implementations, including
 your implementation generally doesn't need to handle the selection if it
 extends one of these classes.
 
-
 # Sorting
 
 `Interface: `[`org.zkoss.zul.ext.Sortable`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/ext/Sortable`.html)  
@@ -302,4 +297,3 @@ to sort in the order specified in the `ascending` parameter.
 |---------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | February 2012 | All selection states are maintained in the list model. And, the application shall <i>not</i> access the component for the selection. Rather, the application shall invoke [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) for retrieving or changing the selection. |
 | 6.0.0   | February 2012 | [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html) was introduced and replaced `ListModelExt`.                                                                                                                                                          |
-

@@ -2,12 +2,10 @@
 title: "Center"
 ---
 
-
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.Center](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Center.html)
 - JavaScript API: [zul.layout.Center](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Center.html)
-
 
 # Employment/Purpose
 
@@ -109,10 +107,6 @@ For more details, please refer to
 
 # Version History
 
-
-
 | Version | Date      | Content                                                                                                              |
 |---------|-----------|----------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
-
-

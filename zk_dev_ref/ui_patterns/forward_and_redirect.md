@@ -2,8 +2,6 @@
 title: "Forward and Redirect"
 ---
 
-
-
 A Web application jumping from one URL to another is usually caused by
 the user's click on a hyperlink, such as clicking on a
 [button]({{site.baseurl}}/zk_component_ref/button),
@@ -88,7 +86,6 @@ Then, you could specify it in your ZUML document:
 ```xml
 <?init class="foo.AuthenticateInit"?>
 ```
-
 
 # Forward to Another Page
 
@@ -198,7 +195,6 @@ the normal workflow.
 This is only a problem when a navigation action doesn’t result in the
 browser leaving the current ZK page, as the page is unloaded but still
 exists in the client browser.
-
 
 [^1]: It actually sets [the refresh header](http://www.metatags.org/meta_http_equiv_refresh).
 

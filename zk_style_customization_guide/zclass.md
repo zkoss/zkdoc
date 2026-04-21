@@ -36,5 +36,3 @@ will generate the following output
 
 As you can see the default z-button class is missing, which means all
 CSS rules is removed.
-
-

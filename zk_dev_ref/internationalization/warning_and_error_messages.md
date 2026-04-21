@@ -1,5 +1,4 @@
 
-
 # Overview
 
 ZK's system locale dependent messages (such as warnings and errors) are
@@ -56,7 +55,6 @@ The same pattern applies to the [ other message files](/zk_dev_ref/international
 | msgzul_[LOCALE].properties | `MZul` | MZul.2400=mytext |
 | msgcommon_[LOCALE].properties | `MCommon` | MCommon.1234= my text |
 | msgweb_[LOCALE].properties | `MWeb` | MWeb.1234= my test |
-
 ## Defined in a JS File
 
 ### Using local override

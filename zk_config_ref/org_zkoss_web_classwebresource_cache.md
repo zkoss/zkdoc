@@ -29,6 +29,5 @@ can force browser to load modified CSS and JS files by pressing F5).
 </library-property>
 ```
 
-
 [^1]: Class Web resources are resources that can be loaded by use of
     "~./\*".

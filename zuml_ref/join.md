@@ -6,7 +6,6 @@ title: "join"
 String join(Object[] value, String separator);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#join(java.lang.Object[], java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#join(java.lang.Object[], java.lang.String))
 

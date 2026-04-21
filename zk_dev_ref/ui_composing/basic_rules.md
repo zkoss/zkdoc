@@ -2,8 +2,6 @@
 title: "Basic Rules"
 ---
 
-
-
 If you are not familiar with XML, please take a look at [XML Background]({{site.baseurl}}/zk_dev_ref/ui_composing/xml_background)
 first.
 
@@ -106,7 +104,6 @@ the event listener in Groovy as follows.
 Click me!
 </vlayout>
 ```
-
 
 ## Special Attributes
 

@@ -2,7 +2,6 @@
 title: "Panel"
 ---
 
-
 - **Demonstration**: [Panel](https://www.zkoss.org/zkdemo/window/panel)
 - **Java API**: [org.zkoss.zul.Panel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panel.html)
 - **JavaScript API**: [zul.wnd.Panel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panel.html)
@@ -97,8 +96,6 @@ Try it
 
 * [Panel Dragable](https://zkfiddle.org/sample/2rds9kh/1-ZK-Component-Reference-Panel-Draggable-Example?v=latest&t=Iceblue_Compact)
 
-
-
 ### Border
 
 The `border` property specifies the style of the panel border, with options like `none` and `normal`.
@@ -130,7 +127,6 @@ Try it
 
 * [Panel Scrollable](https://zkfiddle.org/sample/lhk9fh/1-ZK-Component-Reference-Panel-Scrollable-Example?v=latest&t=Iceblue_Compact)
 
-
 ### Toolbar Positions
 
 Panel supports three toolbar positions: `Top`, `Bottom`, and `Foot`. These toolbars can be added to the panel for specific functionalities.
@@ -161,7 +157,6 @@ Try it
 
 * [Panel Scrollable](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
-
 - Top Toolbar (Line 5): It is used to display a toolbar at the top, close to the body content of the panel.
 - Bottom Toolbar (Line 11): It is used to display a toolbar at the bottom, close to the body content of the panel.
 - Foot Toolbar (Line 14): It is used to show operating buttons below the body content with some padding.
@@ -180,7 +175,6 @@ For more details, refer to [Using Panel to Lay out Your Website](https://www.zko
 | `onSize`       | Event: [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the panel's size is updated by a user.
  |
 | `onZIndex`     | Event: [ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's z-index is updated by a user.|
-
 ## Supported Children
 - [`Caption`](caption): Indicates that the `Panel` can only have one child component of type `Caption`.
 - [`Panelchildren`](panelchildren): Indicates that the `Panel` can only have one child component of type `Panelchildren`.

@@ -28,5 +28,3 @@ is called.
 Once declaring a richlet, you can map it to any number of URL by the use
 of [the richlet-mapping element]({{site.baseurl}}/zk_config_ref/the_richlet_mapping_element)
 as described in the next section.
-
-

@@ -156,7 +156,6 @@ to retrieve the composer back.
 Every ZK skeletal implementation provides several ways to name the
 composer as described in the following sections.
 
-
 ### Default Names of Composer
 
 If a composer extends from one of ZK skeletal implementations (such as
@@ -269,7 +268,6 @@ document, as below.
 ...
 ```
 
-
 # Composer with More Control
 
 A composer could also handle the exceptions, if any, control the life
@@ -327,7 +325,6 @@ For involving the life cycle, you could override
 [org.zkoss.zk.ui.util.ComposerExt#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeCompose(org.zkoss.zk.ui.Page, org.zkoss.zk.ui.Component, org.zkoss.zk.ui.metainfo.ComponentInfo))
 and/or
 [org.zkoss.zk.ui.util.ComposerExt#doBeforeComposeChildren(T)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html#doBeforeComposeChildren(T)).
-
 
 ## Fine-grained Full Control with FullComposer
 
@@ -447,7 +444,6 @@ called only for root components.
 | Version | Date       | Content                                                                                                                                                                          |
 |---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | June, 2011 | [org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html) and its derives allow developers to specify a custom name by use of a component attribute called `composerName`. |
-
 [^1]: It can be done by invoking
     [org.zkoss.zk.ui.Component#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAttribute(java.lang.String, java.lang.Object)),
     because the component's attribute can be referenced directly in EL

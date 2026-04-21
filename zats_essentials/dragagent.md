@@ -1,7 +1,4 @@
 
-
-
-
 # Drag & Drop
 
 `DragAgent` makes you mimic the dragging of a component and drop it onto
@@ -49,5 +46,3 @@ The following code represents how to drag a *listitem* from left
 </tr>
 </tbody>
 </table>
-
- 

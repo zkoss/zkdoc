@@ -2,6 +2,7 @@
 When you load a ZUL page using ` Executions.createComponents("mypage.zul", args) ` or ` <include> ` and pass arguments. ZK bind annotation EL expression can not reference those arguments directly because of life cycle issue. What a binder does is a post-processing action after component creation. At the moment of post-processing, it cannot obtain arguments' value. The simplest solution is to add an custom attribute to hold arguments for later reference or use `@ExecutionArgParam` to retrieve in a ViewModel's initial method. Let's see an example.
 
 #### outer.zul
+
 ```xml
 <include type="outerPageLiteralValue" src="inner.zul"/>
 ```
@@ -9,6 +10,7 @@ When you load a ZUL page using ` Executions.createComponents("mypage.zul", args)
 -   Here we pass an argument named "type" to an included ZUL.
 
 #### ViewModel for included zul
+
 ```java
 public class InnerVM {
 
@@ -26,6 +28,7 @@ public class InnerVM {
 -   Line 6: Retrieve the passed argument with key "type".
 
 #### inner.zul
+
 ```xml
 <div apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.advance.InnerVM')">

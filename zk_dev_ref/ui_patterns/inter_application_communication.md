@@ -2,8 +2,6 @@
 title: "Inter-Application Communication"
 ---
 
-
-
 An EAR file or the installation of Web server could have multiple WAR
 files. Each of them is a Web application. There are no standard way to
 communicate between two Web applications. However, there are a few ways

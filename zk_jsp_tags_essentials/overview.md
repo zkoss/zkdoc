@@ -182,4 +182,3 @@ look at index.jsp to see how it works:
 ...
 <z:ui tag="hp-link" url="./foreach.jsp" label="forEach Demo" />
 ```
-

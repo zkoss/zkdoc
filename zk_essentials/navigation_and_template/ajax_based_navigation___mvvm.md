@@ -6,8 +6,8 @@ In this example, we modularize each page with an independent ViewModel. In order
 
 The basic idea is: sidebar sends a global command when a user clicks an item then content area change *Include* component's `src` attribute to navigate pages.
 
-
 **chapter6/ajaxbased_mvvm/sidebar.zul**
+
 ```xml
     <rows>
 		<template name="model">
@@ -20,8 +20,8 @@ The basic idea is: sidebar sends a global command when a user clicks an item the
 ```
 - Line 3: Specify a global command binding and pass `SidebarPage` as a parameter
 
-
 **chapter6/ajaxbased_mvvm/mainContent.zul**
+
 ```xml
 <zk>
 	<include id="mainInclude"
@@ -31,6 +31,7 @@ The basic idea is: sidebar sends a global command when a user clicks an item the
 ```
 
 The code below demonstrate how to declare a global command method and receive a parameters.
+
 ```java
 package org.zkoss.essentials.chapter6.ajaxbased.mvvm;
 

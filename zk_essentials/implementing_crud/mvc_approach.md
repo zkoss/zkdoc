@@ -39,7 +39,6 @@ layout first and ignore the details.
 
 ## Read
 
-
 As we talked in previous chapters, we can use *Template* to define how
 to display a data model list with implicit variable `each`.
 
@@ -207,7 +206,6 @@ public class TodoListController extends SelectorComposer<Component>{
 
 ## Create
 
-
 After typing the todo item name, we can save the item by either clicking
 the button with the plus icon
 (![]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or pressing
@@ -274,7 +272,6 @@ public class TodoListController extends SelectorComposer<Component>{
     selection.
 
 ## Update
-
 
 To update a todo item, you should select an item first then detail
 editor will appear. The following codes demonstrate how to listen a
@@ -496,7 +493,6 @@ public class TodoListController extends SelectorComposer<Component>{
 -   Line 12: Here we get `Todo` object of the selected todo item from
     `value` attribute that we assigned in the zul by
     `<listitem ... value="${each}"/>`
-
 
 ##Delete
 

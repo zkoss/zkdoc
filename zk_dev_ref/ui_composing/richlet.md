@@ -1,5 +1,4 @@
 
-
 # Overview
 
 A richlet is a small Java program that composes a user interface in Java
@@ -141,7 +140,6 @@ When the URL associated **MyRichlet** is requested a second time, an
 exception will be thrown because the **main** window is already
 instantiated and associated with the first desktop created from the
 first request. We cannot assign it to the second desktop.
-
 
 # Map URL to a Richlet
 

@@ -41,5 +41,3 @@ example, if `browser="ie6-"` is specified, the JavaSript file is embeded
 only if the client is Internet Explorer 6. For the available types you
 could check, please refer to
 [org.zkoss.web.servlet.Servlets#isBrowser(javax.servlet.ServletRequest, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/servlet/Servlets.html#isBrowser(javax.servlet.ServletRequest, java.lang.String)).
-
-

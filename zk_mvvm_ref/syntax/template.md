@@ -15,6 +15,7 @@ The evaluation result of EL expression should be the name of a template which is
 # Example
 
 #### Dynamic template upon iteration status variable
+
 ```xml
 <combobox model="@bind(item.options ) @template(forEachStatus.index eq 0 or forEachStatus.index eq 2 ? 'model1' : 'model2')">
     <template name="model1" var="option">
@@ -27,6 +28,7 @@ The evaluation result of EL expression should be the name of a template which is
 ```
 
 #### Recursive usage
+
 ```xml
 <vlayout id="vlayout" children="@load(vm.nodes) @template('greenBox')">
     <template name="greenBox" var="node">
@@ -39,4 +41,3 @@ The evaluation result of EL expression should be the name of a template which is
 ```
 
 -   vm.nodes has a tree-like structure, and node.children is a collection of node.
-

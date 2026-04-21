@@ -241,7 +241,6 @@ Suggestions:
   it is subtle for application developers to notice its existence. In
   addition, it requires to extend the component class.
 
-
 # Precedence of Listeners
 
 The order of precedence for listeners from the highest to the lowest is
@@ -275,5 +274,4 @@ event handlers and listeners are ignored.
 | Version | Date          | Content                                                                                                                                                            |
 |---------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.6   | November 2010 | [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html) was introduced to simplify the instantiation of a serializable anonymous class |
-
 [^1]: An event attribute is an attribute starting with `on`

@@ -12,6 +12,7 @@ Default:  `java.util.Date, java.sql.Date, java.sql.Timestamp, java.math.BigDecim
 {% include supported-since.html version="8.0.2" %}
 
 It specifies the name of the classes which would not be proxied.
+
 ```xml
     <library-property>
         <name>org.zkoss.bind.proxy.IgnoredProxyClasses</name>

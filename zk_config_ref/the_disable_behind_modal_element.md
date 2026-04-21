@@ -19,5 +19,3 @@ is almost impossible to change focus to an element behind the modal
 window, without disabling them.
 
 **Note**: in ZK 3.0.3 and earlier, the option is default to true.
-
-

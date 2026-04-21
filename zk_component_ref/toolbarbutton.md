@@ -2,13 +2,11 @@
 title: "Toolbarbutton"
 ---
 
-
 - Demonstration: [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
 - Java API: [org.zkoss.zul.Toolbarbutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Toolbarbutton.html)
 - JavaScript API:
   [zul.wgt.Toolbarbutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Toolbarbutton.html)
-
 
 # Employment/Purpose
 
@@ -106,31 +104,22 @@ button. Then, the event listener can retrieve the uploaded content by
 examining the return value of
 [org.zkoss.zk.ui.event.UploadEvent#getMedia()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html#getMedia()).
 
-
 # Supported Events
 
 | Name | Event Type |
 |---|---|
 | onCheck | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when toolbarbutton is checked , only available in toggle mode . (since ZK 6.0.0) |
-
 - Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Children
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date | Content                               |
 |---------|------|---------------------------------------|
 | 6.0.0   | 2/10 | Introduce Toggle Mode to Toobarbutton |
 |         |      |                                       |
-
-
-
 [^1]: Any [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) can be used to upload
     files too.

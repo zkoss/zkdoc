@@ -8,7 +8,6 @@ The default method:
 Number parseNumber(String source, String pattern);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#parseNumber(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseNumber(java.lang.String, java.lang.String))
 

@@ -2,7 +2,6 @@
 title: "SelectionEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.SelectionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectionEvent.html)
 - JavaScript API: N/A
@@ -24,12 +23,8 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
-
-

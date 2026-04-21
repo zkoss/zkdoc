@@ -2,12 +2,10 @@
 title: "Selectbox"
 ---
 
-
 - Demonstration:
   [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)
 - Java API: [org.zkoss.zul.Selectbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Selectbox.html)
 - JavaScript API: [zul.wgt.Selectbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Selectbox.html)
-
 
  {% include supported-since.html version="6.0.0" %}
 
@@ -98,7 +96,6 @@ Here is the MVVM way:
 | Name | Event Type |
 |---|---|
 | `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a new item in the selectbox. |
-
 - Inherited Supported Events: [ HtmlBasedComponent](/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children

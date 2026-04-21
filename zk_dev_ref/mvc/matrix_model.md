@@ -2,8 +2,6 @@
 title: "Matrix Model"
 ---
 
-
-
 Here we describe how to implement a matrix model
 ([org.zkoss.zkmax.zul.MatrixModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/MatrixModel.html)).
 For the concept of component, model and renderer, please refer to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).

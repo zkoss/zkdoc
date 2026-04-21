@@ -2,8 +2,6 @@
 title: "Use Event Queues"
 ---
 
-
-
 The [event queue]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues)
 provides a simple way to execute a so-called asynchronous event listener
 in parallel to other event listeners. Thus, it won't block the user from

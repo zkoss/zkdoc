@@ -2,11 +2,9 @@
 title: "Imagemap"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Imagemap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Imagemap.html)
 - JavaScript API: [zul.wgt.Imagemap](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Imagemap.html)
-
 
 # Employment/Purpose
 
@@ -51,6 +49,3 @@ statement, then the user gets the result as depicted below.
 |---------|-----------------------------------------------------|----------------------------------------------------------------------------------------------|
 | 3.6     | How to get area clicked from Imagemap onClick Event | [<http://www.zkoss.org/forum/listComment/1336>](http://www.zkoss.org/forum/listComment/1336) |
 | 3.6     | Imagemap with hyperlink                             | [<http://www.zkoss.org/forum/listComment/3016>](http://www.zkoss.org/forum/listComment/3016) |
-
-
-

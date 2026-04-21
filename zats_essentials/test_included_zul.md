@@ -2,8 +2,6 @@
 title: "Test Included ZUL"
 ---
 
-
-
 `Since 1.1.0`
 
 ZK provides the [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html) component[^1]
@@ -16,7 +14,6 @@ connect to the ZUL page (like how you would normally do) you want to
 test.
 
 For more details, please refer to [ZK Developer's Reference/UI_Composing/Include]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page), [ZK Component Reference/essential_components/Include]({{site.baseurl}}/zk_component_ref/include), and [ZK Developer's Reference/ui_composing/ZUML/Load_ZUML_in_Java]({{site.baseurl}}/zk_dev_ref/ui_composing/load_zuml_in_java)
-
 
 # Test Included ZUL Pages with Arguments
 
@@ -55,4 +52,3 @@ public void test() {
 
 - **Line 12-13**: Prepare arguments for included ZUL page.
 - **Line 15**: Connect to included ZUL page with arguments.
-

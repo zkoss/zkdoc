@@ -1,5 +1,4 @@
 
-
 # Type
 
 `InputAgent` can be used on any **input component** such as *textbox* or
@@ -157,5 +156,3 @@ Spinner, Timebox</p></td>
 </tr>
 </tbody>
 </table>
-
- 

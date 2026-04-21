@@ -7,6 +7,3 @@ title: "Event"
 # Employment/Purpose
 
 An event sent to the event handler of a component. It is the base class of all events.
-
-
-

@@ -30,7 +30,6 @@ For example,
     }
 ```
 
-
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 

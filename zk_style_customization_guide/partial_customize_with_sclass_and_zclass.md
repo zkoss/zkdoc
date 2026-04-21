@@ -2,8 +2,6 @@
 title: "Partial customize with Sclass and Zclass"
 ---
 
-
-
 Partial customization is a convenient way to fast prototype the look and
 feel and to change the style of a specific component. Here we will
 demonstrate how to you can execute partial customization by using Sclass
@@ -113,5 +111,3 @@ achieve this goal. Modify the style like the following:
 the style is now correctly applied.
 
 ![](images/styleguide-sclass-advanced2.png)
-
-

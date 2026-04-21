@@ -130,5 +130,3 @@ add the following lines in your zk.xml
     <cache-provider-class>org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider</cache-provider-class> 
 </system-config> 
 ```
-
-

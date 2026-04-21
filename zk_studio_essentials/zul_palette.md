@@ -2,8 +2,6 @@
 title: "ZUL Palette"
 ---
 
-
-
 In addition to directly typing tags in the ZUL Editor, ZUL Palette
 provides a drag-and-drop feature to insert components. You can open the
 ZUL palette by going to **Window\Show View\Others**, and

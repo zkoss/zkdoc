@@ -86,8 +86,6 @@ There are two additional parameters in the API:
 - String\[\] titles: The text in the title cells (data title, column
   title, row title, respectively). See [ title cells definition]({{site.baseurl}}/zk_pivottable_essentials/concept#Trivia).
 
- 
-
 # Export to CSV
 
 You can also export to CSV format in a similar manner. For example,
@@ -101,8 +99,6 @@ try {
     out.close();
 } catch (IOException e) {}
 ```
-
- 
 
 ## Version History
 

@@ -2,7 +2,6 @@
 title: "Inputgroup"
 ---
 
-
 - **Demonstration**: [Inputgroup – organize your input components](https://blog.zkoss.org/2019/08/16/zk-9-preview-inputgroup-organize-your-input-components)
 - **Java API**: [`org.zkoss.zul.Inputgroup`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Inputgroup.html)
 - **JavaScript API**: [`zul.wgt.Inputgroup`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Inputgroup.html)

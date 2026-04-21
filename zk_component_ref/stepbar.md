@@ -2,7 +2,6 @@
 title: "Stepbar"
 ---
 
-
 - [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
 - Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
 - JavaScript API: [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
@@ -86,21 +85,14 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 | Name | Event Type |
 |---|---|
 | `onChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event caused by a user's selection changed at the client. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*`[` Step`]({{site.baseurl}}/zk_component_ref/step)
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [ZK-4375](https://tracker.zkoss.org/browse/ZK-4375): Provide a stepbar component |
-
-

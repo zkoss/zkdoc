@@ -2,7 +2,6 @@
 title: "Span"
 ---
 
-
 - **Java API:** [org.zkoss.zul.Span](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Span.html)
 - **JavaScript API:** [zul.wgt.Span](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Span.html)
 
@@ -26,7 +25,6 @@ The example illustrates the usage of the `Span` component in a ZK application. W
 Try it
 
 * [Span Example](https://zkfiddle.org/sample/1lopfso/1-ZK-Component-Reference-Span-Example?v=latest&t=Iceblue_Compact)
-
 
 ## Supported Children
 

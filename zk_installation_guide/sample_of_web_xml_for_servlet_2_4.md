@@ -11,7 +11,6 @@ mapping: [org.zkoss.zk.ui.http.DHtmlLayoutServlet](https://www.zkoss.org/javadoc
 Here is the sample web.xml for servers that support Servlet 2.4 and
 later.
 
-  
 Notice that if you are using Servlet 3, you generally don't need to set
 up `web.xml` unless you'd like to configure it different.
 
@@ -79,5 +78,3 @@ scratch.
     </welcome-file-list>
 </web-app>
 ```
-
-

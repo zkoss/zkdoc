@@ -13,7 +13,6 @@ supported-since.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
 | Key | Description |
 |---|---|
 | Escape | Close the drawer |
-
 # Limitations
 
 | Feature | Description |

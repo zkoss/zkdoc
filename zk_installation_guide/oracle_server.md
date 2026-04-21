@@ -22,8 +22,6 @@ Containers to support J2EE 1.4 specification (Servlet 2.4).
       deployment
     - Start OC4J Server:
 
-  
-  
 `bin/oc4j -start`
 
 ## 10.1.2 and earlier
@@ -34,5 +32,3 @@ Servlet 2.3), WEB-INF/web.xml shall be replaced with [Sample of web.xml for Serv
 Notice that ZK supports Servlet 2.3 but the web.xml configuration file
 is a bit different. Also notice that ZK 6 and later no longer support
 Java 1.4.
-
-

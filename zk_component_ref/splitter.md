@@ -9,7 +9,6 @@ title: "Splitter"
 - Java API: [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
 - JavaScript API: [zul.box.Splitter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Splitter.html)
 
-
 # Employment/Purpose
 
 (Suggest to use [ Splitlayout]({{site.baseurl}}/zk_component_ref/splitlayout))
@@ -57,7 +56,6 @@ Allowed values and their meaning are as follows.
 | none | No collapsing occurs. |
 | before | When the grippy is clicked, the element immediately before the splitter in the same parent is collapsed so that its width or height is 0. |
 | after | When the grippy is clicked, the element immediately after the splitter in the same parent is collapsed so that its width or height is 0. |
-
 ## Open
 
 To know whether a splitter is collapsed, you can check the value of the
@@ -126,7 +124,6 @@ OS-look:
 | Name | Event Type |
 |---|---|
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -138,7 +135,6 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/splitter_mold_default.png) |
 | os | ![](/zk_component_ref/images/splitter_mold_os.png) |
-
 # Supported Children
 
 `*NONE`
@@ -148,6 +144,3 @@ zul.jar.
 | Version | Description                                 | Example Location                                |
 |---------|---------------------------------------------|-------------------------------------------------|
 | 5.0     | Used to seperate contents within hbox/vbox. | <http://www.zkoss.org/zksandbox/userguide/#l13> |
-
-
-

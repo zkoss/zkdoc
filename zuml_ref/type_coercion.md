@@ -20,11 +20,7 @@ of the coercion rules.
 | String (empty)     | false                | (char)0       | 0                     | "" (obj)       |
 | null               | false                | (char)0       | 0                     | ""             |
 | Other              | ERROR                | ERROR         | ERROR                 | obj.toString() |
-
-
 - The handling of an empty string and null is the same
-
-
 
 [^1]: obj represents the object being corerced
 

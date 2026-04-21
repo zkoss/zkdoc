@@ -25,5 +25,3 @@ Example,
 `[Required]`
 
 The class used to instantiate a macro component.
-
-

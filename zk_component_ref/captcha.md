@@ -2,7 +2,6 @@
 title: "Captcha"
 ---
 
-
 - Demonstration: [Capcha](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Captcha](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Captcha.html)
 - JavaScript API: [zul.wgt.Captcha](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Captcha.html)
@@ -36,8 +35,6 @@ a purposive text.
 
 `*NONE`
 
-
-
 # Troubleshooting
 
 ## Linux
@@ -45,6 +42,3 @@ a purposive text.
 Captcha depends on Java Swing that might not work under some version of
 JVM. For the information to make it work under Linux, please refer to
 [ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/linux).
-
-
-

@@ -12,7 +12,6 @@ ZK stores a Desktop and a whole component tree in a Session attribute. Since app
 ## Component States Changes Frequently
 Each AU request might invoke an event listener that changes a component's state. That means a Session state also changes, so you need to replicate the session every time. This can lead to high replication overhead, especially in applications with frequent UI updates.
 
-
 ## Solutions:
 - **Minimize session size** - only store essential information and optimize the number of component in each page. Reducing the number of components reduces session size. See [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/performance_tips)
 - **Use lazy loading** for heavy objects, see [Defer the Creation of Child Components]({{site.baseurl}}/zk_dev_ref/performance_tips/defer_the_creation_of_child_components).
@@ -52,6 +51,7 @@ java.io.NotSerializableException: java.util.logging.Logger
 
 ### Solution
 Make logger fields static (as detailed in [Programming Tips]({{site.baseurl}}/zk_dev_ref/clustering/programming_tips))
+
 ```java
 // Instead of:
 private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -65,6 +65,7 @@ private static final Logger logger = LoggerFactory.getLogger(MyClass.class);
 ### Solution
 
 ViewModel should implement `Serializable`:
+
 ```java
 public class EventsMessageViewModel implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -89,7 +90,6 @@ public class EventsMessageViewModel implements Serializable {
     }
 }
 ```
-
 
 ## Configuration Issues
 
@@ -143,6 +143,7 @@ public class SessionReplicationCleanup implements ExecutionCleanup {
 ```
 
 Register in zk.xml:
+
 ```xml
 <system-config>
     <listener>
@@ -156,6 +157,7 @@ Register in zk.xml:
 ## Serialization Testing
 
 **Test Method:**
+
 ```java
 private <T> T testSerialization(T object) throws IOException, ClassNotFoundException {
     // Serialize

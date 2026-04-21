@@ -1,5 +1,6 @@
 
 **Syntax:**
+
 ```xml
 <zscript [language="Java|JavaScript|Ruby|Groovy|Python"] [if="if-condition"] [unless="unless-condition"]>Scripting codes</zscript>  
 <zscript src="a_uri" [language="Java|JavaScript|Ruby|Groovy"] [if="if-condition"] [unless="unless-condition"]/>
@@ -63,7 +64,6 @@ The algorithm to resolve `*` is as follows.
   for Internet Explorer and "`moz`" for other browsers[^3]. If the last
   `*` will be replaced with a proper Locale as described above.
 - All other `*` are ignored.
-
 
 ## language
 
@@ -153,7 +153,6 @@ ignored if the value specified to this attribute is evaluated to false.
 
 Specifies the condition *not* to evaluate this element. This element is
 ignored if the value specified to this attribute is evaluated to true.
-
 
 [^1]: Furthermore, you can use the page directive to change the default
     scripting language other than Java.

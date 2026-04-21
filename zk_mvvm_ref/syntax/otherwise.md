@@ -1,5 +1,6 @@
 # &lt;otherwise>
 # Syntax
+
 ```xml
 <otherwise>
  ...
@@ -12,6 +13,7 @@
 A switch statement has a default clause to specify a default action, similar to how `<choose>` has `<otherwise>` as default clause.
 
 # Example
+
 ```xml
 <choose>
 	<when test="@load(each lt 3)">

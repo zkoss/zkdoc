@@ -6,7 +6,6 @@ title: "trim"
 String trim(String value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#trim(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#trim(java.lang.String))
 

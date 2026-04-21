@@ -1,5 +1,4 @@
 
-
 # ThemeProvider
 
 After switching to another theme, a
@@ -19,7 +18,6 @@ editions (CE, PE, and EE).
 | ZK CE   | [org.zkoss.zul.theme.StandardThemeProvider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/StandardThemeProvider.html)     |
 | ZK PE   | [org.zkoss.zkex.theme.StandardThemeProvider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/theme/StandardThemeProvider.html)   |
 | ZK EE   | [org.zkoss.zkmax.theme.StandardThemeProvider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/theme/StandardThemeProvider.html) |
-
 We will illustrate the theme provider with two examples. One is
 straightforward: set the corresponding attributes based on the cookie.
 The other **injects** a fragment to the URI such that we can allow the

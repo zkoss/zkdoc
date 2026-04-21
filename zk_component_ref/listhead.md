@@ -2,11 +2,9 @@
 title: "Listhead"
 ---
 
-
 - Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
 - Java API: [org.zkoss.zul.Listhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listhead.html)
 - JavaScript API: [zul.sel.Listhead](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listhead.html)
-
 
 # Employment/Purpose
 
@@ -156,13 +154,8 @@ For example,
 | Version | Description          | Example Location                              |
 |---------|----------------------|-----------------------------------------------|
 | 5.0     | Multiline Listheader | <http://www.zkoss.org/forum/listComment/6864> |
-
 # Version History
-
-
 
 | Version | Date      | Content                                                                                |
 |---------|-----------|----------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-120](http://tracker.zkoss.org/browse/ZK-120): Provide menupopup="auto" for listbox |
-
-

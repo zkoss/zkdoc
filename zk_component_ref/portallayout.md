@@ -2,13 +2,11 @@
 title: "Portallayout"
 ---
 
-
 - Demonstration:
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
 - Java API: [org.zkoss.zkmax.zul.Portallayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portallayout.html)
 - JavaScript API:
   [zkmax.layout.Portallayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Portallayout.html)
-
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
@@ -83,7 +81,6 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 |---|---|
 | onPortalDrop\* | **Event:** [org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html) Represents an event after a portal is dropped and before a portal is moved. |
 | onPortalMove | **Event:** [org.zkoss.zkmax.ui.event.PortalMoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalMoveEvent.html) Represents an event caused by a portal being moved. |
-
 \* {% include supported-since.html version="9.5.1" %}
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
@@ -98,5 +95,3 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 |---------|----------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013  | [Portallayout supports row based orientation](http://tracker.zkoss.org/browse/ZK-1687)                                             |
 | 9.5.1   | November, 2020 | [Kanban missing options to listen to portallayout onPortalMove without affecting the UI](https://tracker.zkoss.org/browse/ZK-4423) |
-
-

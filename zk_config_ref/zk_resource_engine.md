@@ -5,7 +5,6 @@ title: "ZK Resource Engine"
 {% include supported-since.html version="9.5.0" %}
 # DHtmlResourceServlet
 
-
 [Optional] Class: ` org.zkoss.zk.au.http.DHtmlResourceServlet`
 
 ZK Resource Engine, it is a servlet that handles static resources. After

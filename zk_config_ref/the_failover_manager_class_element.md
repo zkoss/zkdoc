@@ -22,5 +22,3 @@ can let Web servers to handle failover and clustering for you by
 specifying the
 `org.zkoss.zk.ui.http.SerializableUiFactory` class in
 the `ui-factory-class` element as described above.
-
-

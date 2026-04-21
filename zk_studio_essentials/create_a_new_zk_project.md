@@ -13,7 +13,6 @@ title: "Create a New ZK Project"
       
     ![](images/zk_studio_094_create_proj_0.png)
 
-      
 2.  Type the project name. Eclipse will automatically include the
     default ZK package configured in the ZK Package preferences,
     however, you can select another installed ZK release by "ZK
@@ -21,19 +20,16 @@ title: "Create a New ZK Project"
       
     ![](images/zk_studio_094_create_proj_1.png)
 
-      
 3.  You can modify the **Source folders** and **Default output folder**
     if you like. Then, click **Next**.
       
     ![](images/zk_studio_094_create_proj_4_1.png)
 
-      
 4.  You can modify **Context root** or **Content directory** if you
     like. Then, Click **Finish**.
       
     ![](images/zk_studio_094_create_proj_4.png)
 
-      
 5.  After clicking **Finish**, the New Project Wizard will setup the ZK
     Project ready for development.
 
@@ -58,21 +54,15 @@ title: "Create a New ZK Project"
         
       ![](images/NewZULFileRightClick.png)
 
-      
-      
-
     - Click **\[File\]/\[New\]/\[Other\]** in Eclipse's main menu and
       select "ZUL" under "ZK" node then click **Next**.
         
       ![](images/NewZULFileWizard_0.png)
 
-      
-      
 2.  Type the file name and optional page title, click **Finish**.
       
     ![](images/NewZULFileWizard.png)
 
-      
 3.  The newly created ZUL File will be opened in ZUL Editor.
 
 ## Using the File Wizard
@@ -80,13 +70,11 @@ title: "Create a New ZK Project"
 You can create new ZUL file by selecting the
 **\[File\]/\[New\]/\[File\]** in Eclipse's main menu.
 
-  
 ![](images/NewZULFileMethod1-1.png)
 
 However, you have to enter the "**.zul**" extension by yourself and the
 newly create zul file will not contain any sample code.
 
-  
 ![](images/NewZULFileMethod1-2.png)
 
 # Running the ZK Project
@@ -111,6 +99,5 @@ view the result in your browser.
 
 **Tips:**
 
-  
 There is a detailed step-by-step tutorial on using Tomcat with Eclipse
 here: <http://www.coreservlets.com/Apache-Tomcat-Tutorial/eclipse.html>

@@ -1,5 +1,4 @@
 
-
 # Sample of a Language Addon
 
 Here is a sample (from zkmax's lang-addon.xml):

@@ -9,8 +9,6 @@ If you haven't installed the following applications on your computer, please dow
 - [Java Development Kit(JDK)](https://www.oracle.com/java/technologies/downloads/)
 - [Java application Server](setting_up_servers)
 
-
-
 ## Supported Java Versions
 
 | **ZK Version** | **JDK Version**         |
@@ -18,4 +16,3 @@ If you haven't installed the following applications on your computer, please dow
 | ZK 8 and lower | JDK 1.6 and higher       |
 | ZK 9           | JDK 1.8 and higher (not all features, e.g. Module System since JDK 9, are available) |
 | ZK 10          | JDK 11                   |
-

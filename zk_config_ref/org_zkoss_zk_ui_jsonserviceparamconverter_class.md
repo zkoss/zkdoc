@@ -10,7 +10,6 @@ title: "org.zkoss.zk.ui.jsonServiceParamConverter.class"
 {% include supported-since.html version="8.0.0" %}
 Default: [`org.zkoss.zkmax.ui.JacksonConverter`](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/JacksonConverter.html)
 
-
 {% include supported-since.html version="8.5.1" %}
 Default: [`org.zkoss.zkmax.ui.GsonConverter`](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/GsonConverter.html)
 
@@ -28,4 +27,3 @@ implementation of the json converter in zk.xml
     <value>org.zkoss.zkmax.ui.GsonConverter</value>
 </library-property>
 ```
-

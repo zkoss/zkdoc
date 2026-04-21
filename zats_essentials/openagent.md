@@ -1,7 +1,4 @@
 
-
-
-
 # Open
 
 `OpenAgent` is used to expand a *treeitem*, *listgroup*, *detail*,
@@ -73,5 +70,3 @@ Detail, Group, Listgroup, Treeitem,</p>
 </tr>
 </tbody>
 </table>
-
- 

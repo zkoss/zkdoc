@@ -27,6 +27,7 @@ It could be any name; it's used as a key for parameter related Java annotation i
 # Example
 
 #### Use built-in validator named beanValidator
+
 ```xml
 <window id="win" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init(foo.MyViewModel)">
     <textbox value="@bind(vm.user.lastName) @validator('beanValidator')"/>
@@ -34,6 +35,7 @@ It could be any name; it's used as a key for parameter related Java annotation i
 ```
 
 #### Use custom validator
+
 ```xml
 <datebox id="cdbox" value="@bind(fx.creationDate) @validator(vm.creationDateValidator)"/>
 ```

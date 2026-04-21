@@ -2,8 +2,6 @@
 title: "JUnit Example"
 ---
 
-
-
 We write the test case with JUnit 4 annotation, please refer to [JUnit 4 tutorial](http://www.vogella.com/tutorials/JUnit/article.html).
 
 The following test case will mimic a user clicking the button and verify
@@ -97,5 +95,3 @@ public class HelloTest {
 - To verify test result, we can also use `ComponentAgent.as()` to
   convert it to a ZK component then get its property by getter methods.
   (line 27)
-
- 

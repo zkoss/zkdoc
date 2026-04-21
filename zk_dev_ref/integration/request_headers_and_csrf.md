@@ -66,6 +66,7 @@ Using ZK's initiator pattern, we can create the the meta tags when a page is ini
 String metas = "<meta name='_csrf' content='"+tokenSupplier.getToken()+"' />"
             + "<meta name='_csrf_header' content='"+tokenSupplier.getHeaderName()+"' />";
 ((PageCtrl) page).addAfterHeadTags(metas);
+
 ```
 We can also load the JS file containing the getExtraHeaders override in the initiator, to be added as a child of the first root element of the page:
 
@@ -73,6 +74,7 @@ We can also load the JS file containing the getExtraHeaders override in the init
 Script jsScript = new Script();
 jsScript.setSrc("~./static/js/csrf-header-override.js"); //replace with location of your js script
 page.getFirstRoot().appendChild(jsScript);
+
 ```
 [Initiator class source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/SpringSecurityCsrfInitiator.java)
 
@@ -81,6 +83,7 @@ In javascript, we retrieve the values provided in the meta elements declared abo
 var token = $("meta[name='_csrf']").attr("content");
 var header = $("meta[name='_csrf_header']").attr("content");
 extraHeaders[header] = token; //add or replace the header for a given key
+
 ```
 [JS override source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/resources/web/static/js/csrf-header-override.js)
 
@@ -89,6 +92,7 @@ The initiator is activated in zk.xml using a listener element
 <listener>
     <listener-class>org.zkoss.zkspringboot.security.SpringSecurityCsrfInitiator</listener-class>
 </listener>
+
 ```
 [zk.xml source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/resources/metainfo/zk/zk.xml)
 
@@ -107,6 +111,7 @@ With these changes, we can switch from disabling spring CSRF to enabling with a 
 http.csrf(csrf -> csrf.csrfTokenRepository
         (CookieCsrfTokenRepository.withHttpOnlyFalse())
 );
+
 ```
 [web security configuration source file](https://github.com/zkoss/zkspringboot/blob/master/zkspringboot-demos/zkspringboot-security-demo/src/main/java/org/zkoss/zkspringboot/security/WebSecurityConfig.java)
 
@@ -155,6 +160,7 @@ Here's how the CSRF token is passed from the outer page to the ZK iframe:
 │     │                                       │                                      │
 │                                                                                    │
 └────────────────────────────────────────────────────────────────────────────────────┘
+
 ```
 
 ## Implementation Steps
@@ -169,6 +175,7 @@ if(window.parent != null){ //looks for a parent page (the host of the iframe)
 	console.log("processing document header scripts, sending event to parent window");
 	window.parent.postMessage("csrfTokenValueRequest","http://localhost:8080");//notify the parent window to send the CSRF token, if a parent window exists
 }
+
 ```
 
 * In the outer page, we would have previously set a listener on the window during page initialization to receive notifications from postMessage:
@@ -181,6 +188,7 @@ if ((event.origin !== "http://localhost:8080") || (event.data !== "csrfTokenValu
     document.getElementById('myIframe').contentWindow.postMessage("csrfTokenValue","http://localhost:8080");//sends the value to the inner page
 });
 </script>
+
 ```
 
 * In turn this new invocation of postMessage is listened to from the ZK page:
@@ -203,6 +211,7 @@ window.addEventListener(
   },
   false,
 );
+
 ```
 
 This adds the 'X-CSRF-TOKEN' header to the zkau requests.

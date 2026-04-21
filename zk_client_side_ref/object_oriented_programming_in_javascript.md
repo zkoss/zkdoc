@@ -2,8 +2,6 @@
 title: "Object Oriented Programming in JavaScript"
 ---
 
-
-
 JavaScript is not an object-oriented language, but ZK provides some
 utilities to enable object-oriented programming.
 
@@ -459,5 +457,3 @@ MyClass = zk.$extends(zk.Object, {
  }
 });
 ```
-
-

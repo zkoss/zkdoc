@@ -2,11 +2,9 @@
 title: "Timer"
 ---
 
-
 - Demonstration: [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)
 - Java API: [org.zkoss.zul.Timer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timer.html)
 - JavaScript API: [zul.utl.Timer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Timer.html)
-
 
 # Employment/Purpose
 
@@ -27,7 +25,6 @@ timer won't fire any event until it is attached to a page.
 | Name | Event Type |
 |---|---|
 | `onTimer` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the timer you specified has triggered an event. To know which timer, invoke the `getTarget` method in the Event class. |
-
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children

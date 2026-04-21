@@ -2,8 +2,6 @@
 title: "InputElement"
 ---
 
-
-
 - Java API: [org.zkoss.zul.impl.InputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html)
 - JavaScript API: [zul.inp.InputWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.InputWidget.html)
 
@@ -60,7 +58,6 @@ The following example demonstrates the usage of various input elements in a `<gr
 Try it
 *  [Input Elements](https://zkfiddle.org/sample/25n9son/1-ZK-Component-Reference-InputElement-Example?v=latest&t=Iceblue_Compact)
 
-
 ## Validation
 
 There are two ways to validate the value entered by a user in ZK Input Elements: using [Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html) or throwing [WrongValueException](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WrongValueException.html).
@@ -85,8 +82,6 @@ ZK allows specifying conditions using constraints such as `no empty` and `no neg
 | `after yyyyMMdd`| Dates allowed after the specified date. <br/> For example, <br/> `<datebox constraint="after 20231225"/>` |
 | `before yyyyMMdd`| Dates allowed before the specified date. <br/> For example, <br/> `<datebox constraint="before 20231225"/>`|
 | `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](popup) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
-
-
 For example,
 
 ```xml
@@ -97,11 +92,11 @@ For example,
 Try it
 *  [Input Constraint](https://zkfiddle.org/sample/1h7fbim/1-ZK-Component-Reference-InputElement-Constraint-Example?v=latest&t=Iceblue_Compact)
 
-
 #### Regular Expression
 To specify a regular expression, use `/` to enclose it.
 
 For example:
+
 ```xml
 <textbox constraint="/.+@.+\.[a-z]+/"/>
 ```
@@ -114,7 +109,6 @@ new Textbox().setContraint("/.+@.+\\.[a-z]+/");
 Try it
 *  [Input Regular Expression](https://zkfiddle.org/sample/16ljcgr/1-ZK-Component-Reference-InputElement-Regular-Expressi-Example?v=latest&t=Iceblue_Compact)
 
-
 #### Flags
 
 **Since**: 9.6.0
@@ -126,6 +120,7 @@ ZK supports using flags with regular expressions. Flags available include:
 - `u`: Unicode
 
 For example:
+
 ```xml
 <textbox constraint="/[A-Z]{3}/i"/>
 ```
@@ -135,13 +130,13 @@ Try it
 
 Notice: the regular expression will always use global match no matter if the g flag is added or not.
 
-
 #### Multiple Constraints
 
 Combine regular expressions with other constraints by separating them with a comma. 
 You can also customize the error message by appending the constraint with a colon and the desired message when it fails.
 
 Example:
+
 ```xml
 <textbox constraint="/.+@.+\.[a-z]+/: e-mail address only"/>
 <datebox constraint="no empty, no future: now or never"/>
@@ -151,7 +146,6 @@ of course, it supports multiple custom messages
 
 Try it
 *  [Input Multiple Constraints](https://zkfiddle.org/sample/1d6mvdu/1-ZK-Component-Reference-InputElement-Multiple-Constraints?v=latest&t=Iceblue_Compact)
-
 
 #### i18n Error Message
 
@@ -176,12 +170,12 @@ In cases where a longer sentence with a comma separator is required, you can enc
 
 If you need to display an error message box that moves with scrolling, you can use [the `data-scrollable` attribute]({{site.baseurl}}/zuml_ref/data_scrollable). This attribute allows the error message box to remain visible even when the page is scrolled.
 
-
 ### Custom Constraint
 
 Developers can create custom constraints by implementing the [Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html) interface. This custom constraint can then be applied to input elements.
 
 Example Java Implementation:
+
 ```java
 public class EvenNumberConstraint implements Constraint {
     public void validate(Component comp, Object value) throws WrongValueException {
@@ -232,7 +226,6 @@ And, here is the result
 Try it
 *  [Input Custom Constraint](https://zkfiddle.org/sample/26fnvg1/1-ZK-Component-Reference-InputElement-Custom-Constraint?v=latest&t=Iceblue_Compact)
 
-
 ### Validate at Client for Better Responsiveness
 
 To enhance responsiveness, developers can validate constraints at the client-side using the [ClientConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ClientConstraint.html) interface in conjunction with the [Constraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Constraint.html) interface.
@@ -244,6 +237,7 @@ Note: The default constraint ([SimpleConstraint](http://www.zkoss.org/javadoc/la
 The WrongValueException can be thrown in various situations to handle validation errors. For instance, it can be used to validate user input when a login button is pressed.
 
 Example Java Implementation:
+
 ```java
 public class CustomValidationComposer extends SelectorComposer {
   @Wire
@@ -271,6 +265,7 @@ However, notice that you have to clear the error message manually by invoking [I
 In-place editing functionality can be enabled for input elements like combobox, textbox, datebox, etc.
 
 Example:
+
 ```xml
 <grid width="500px">
   <rows>
@@ -289,7 +284,6 @@ Example:
 Try it
 *  [Input Inplace](https://zkfiddle.org/sample/3dmfi4j/1-ZK-Component-Reference-InputElement-Inplace?v=latest&t=Iceblue_Compact)
 
-
 ### Instant
 **Since**: 6.0.0
 
@@ -305,6 +299,7 @@ Starting from ZK 6.5, input elements support HTML5 placeholder text. This featur
 ![Input Placeholder](images/Zk_textbox_placeholder.png)
 
 For example,
+
 ```xml
 <textbox placeholder="Please type some text" />
 ```
@@ -315,6 +310,7 @@ For example,
 Introduced in ZK version 8.6.1, input elements can now have additional attributes set for the input HTML tag in the component. These attributes can be defined as a Map or a String with name-value pairs separated by "`;`".
 
 For example,
+
 ```xml
 <bandbox inputAttributes="${map}"></bandbox>
 <datebox inputAttributes="autocorrect=off;spellcheck=true"></datebox>
@@ -333,7 +329,6 @@ Try it
 | `onFocus`   | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                    | Indicates when a component gains focus. Event listeners execute at the server, potentially changing focus at the client. |
 | `onBlur`    | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                    | Indicates when a component loses focus. Event listeners execute at the server, potentially changing focus at the client. |
 | `onError`   | **Event:** [ErrorEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ErrorEvent.html)         | Indicates when a component triggers a validation error.                                                   |
-
 ## Supported Children
 `*NONE`: This component does not support any child components.
 

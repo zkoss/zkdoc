@@ -19,5 +19,3 @@ controls the number of the requests caused by the client-polling server
 push. In other words, if there are multiple pending server-push based on
 the client-polling, ZK will handle them one-by-one until all are served
 or the time expires.
-
-

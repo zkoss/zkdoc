@@ -151,11 +151,9 @@ If you set <b>ListSubModel</b> to the <b>chosenbox</b> model, the
 ## name
 specify the name of the input element of this component
 
-
 ## noResultsText
 displayed a popup window if nothing matches the input value and creatable is false; syntax "{0}" will be replaced with
 the input value at client-side 
-
 
 ## open
 {% include DefaultValue.md value=false %}
@@ -167,11 +165,9 @@ specify whether or not to open the drop-down list.
 
 specify the tab order of the input node of this component.
 
-
 ## separator
 the separate characters will work as 'Enter' key when clicked on; it will not be considered as an input value. Upon releasing
 the key, it will an send onSearch or onSelect event depending on the situation. Supports: 0-9, A-Z (case insensitive), and `,.;'[]/\-=`
-
 
 # Supported Events
 
@@ -182,7 +178,6 @@ the key, it will an send onSearch or onSelect event depending on the situation. 
 | `onSearch` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event that indicates users inputting an non-existing value by clicking ENTER or separator. |
 | `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event sent back to the server caused by user's input text. |
 | `onItemClick` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event sent back to the server caused by clicking a selected tag. |
-
 - `onItemClick` : {% include supported-since.html version="8.0.2" %} 
  
 Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
@@ -200,14 +195,9 @@ Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_com
 | Version | Description         | Example Location                                                                                                                                                                               |
 |---------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.1+  | Creatable Chosenbox | [Chosenbox – A beautiful and powerful multiple combobox](http://blog.zkoss.org/index.php/2012/02/09/zk-6-0-new-feature-highlight-part-4-chosenbox-a-beautiful-and-powerful-multiple-combobox/) |
-
 # Version History
-
-
 
 | Version | Date          | Content                         |
 |---------|---------------|---------------------------------|
 | 6.0.1   | April 3, 2012 | Add the new Chosenbox component |
 | 8.0.2   | May 24, 2016  | Add the new Event - onItemClick |
-
-

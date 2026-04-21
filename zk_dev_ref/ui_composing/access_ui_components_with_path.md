@@ -26,6 +26,7 @@ For example, if you have a `label` in ZUML as below:
 </window>
 ```
 Then, you can access it as a Java object by retrieving it through `Path.getComponent()`:
+
 ```java
 Label label = (Label) Path.getComponent("//P/A/B/D");
 ```
@@ -42,12 +43,14 @@ It's intuitive to access ZUL elements in zscript.
 </window>
 ```
 The result will show:
+
 ```txt
 changed by zscript
 ```
 But you have to pay attention to the declaration sequence because zscript is evaluated when a ZUML page is rendered. Typical use of `zscript` includes initialization and declaring global variables and methods.
 
 If we adjust the sequence of the previous example:
+
 ```xml
 <window>
   <zscript>
@@ -58,6 +61,7 @@ If we adjust the sequence of the previous example:
 
 ```
 The result will show:
+
 ```txt
 initial by label
 ```
@@ -74,10 +78,12 @@ Notice the namespace is hierarchical. That means components from upper id space 
 </window>
 ```
 And the result shows:
+
 ```txt
 changed by zscript
 ```
 If we modify the namespace structure to:
+
 ```xml
 <window id="win_1">
   <window id="win_1_1">
@@ -89,10 +95,12 @@ If we modify the namespace structure to:
 </window>
 ```
 The result will be:
+
 ```txt
 initial by label
 ```
 Just like Java, you can use `Path.getComponent` in `zscript` for sure:
+
 ```xml
 <window id="win_1">
   <window id="win_1_1">
@@ -111,6 +119,7 @@ In the above example, `sayHello()` is evaluated when the `button` is clicked. Th
 
 # Use Expression Language
 Like `zscript`, EL has to pay attention to the declaration sequence. In the following example:
+
 ```xml
 <window>
   1:${btn_1.label}
@@ -119,10 +128,12 @@ Like `zscript`, EL has to pay attention to the declaration sequence. In the foll
 </window>
 ```
 The result will show:
+
 ```txt
 1:2:button_1
 ```
 Like `zscript`, the namespace is hierarchical. In the following example:
+
 ```xml
 <window id="win_1">
   <label id="lab_1" value="myValue"/>
@@ -133,12 +144,14 @@ Like `zscript`, the namespace is hierarchical. In the following example:
 </window>
 ```
 The result will show:
+
 ```txt
 myValue
 1:myValue
 1.1:myValue
 ```
 And if we modify the structure to:
+
 ```xml
 <window id="win_1">
   <window id="win_1_1">

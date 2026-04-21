@@ -1,5 +1,4 @@
 
-
 # Barcodescanner
 
 - Demonstration:
@@ -256,28 +255,20 @@ and `consistencyThreshold` both 1.
 | 1D EAN Family | EAN, EAN8, |
 | 1D Others | CODABAR, UPC, UPC_E, I2OF5 |
 | 2D | QR |
-
 # Supported Events
 
 | Name | Event Type |
 |---|---|
 | `onDetect` | **Event:** [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the barcode scanner detect a barcode message. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date      | Content                                                                                                         |
 |---------|-----------|-----------------------------------------------------------------------------------------------------------------|
 | 8.6.0   | May, 2018 | [ZK-3923: Provide a Barcode Scanner](http://tracker.zkoss.org/browse/ZK-3923)                                   |
 | 8.6.0   | Oct 2018  | [ZK-4095: Add a false positive check threshold on the barcode scanner](http://tracker.zkoss.org/browse/ZK-4095) |
-
-

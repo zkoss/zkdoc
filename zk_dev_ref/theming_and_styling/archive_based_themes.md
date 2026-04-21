@@ -2,8 +2,6 @@
 title: "Archive-based Themes"
 ---
 
-
-
 Before creating a new ZK theme, web designers need to understand its
 directory structure, let's start off by discovering where the default
 theme (a.k.a. breeze) is. Basically, the default theme is contained
@@ -206,8 +204,6 @@ The process can be summarized as follows:
 2.  Ready to use
 
 # References
-
-
 
 [^1]: ZK Themes [1](https://github.com/zkoss/zkthemes)
 

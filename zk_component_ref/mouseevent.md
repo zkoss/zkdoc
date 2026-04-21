@@ -2,7 +2,6 @@
 title: "MouseEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/MouseEvent.html)
 - JavaScript API: N/A
@@ -26,12 +25,8 @@ Check inherited events
 
 `*N/A`
 
-
-
 # Version History
 
 | Version | Date        | Content                                                                                                                                                                                              |
 |---------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.4   | August 2010 | [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()) is introduced to simplify the retrieval of the associated component (usually [org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html)). |
-
-

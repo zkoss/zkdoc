@@ -1,5 +1,4 @@
 
-
 # Overview
 
 The locale used to process requests and events is, by default,

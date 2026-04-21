@@ -2,7 +2,6 @@
 title: "Menupopup"
 ---
 
-
 - Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
 - Java API: [org.zkoss.zul.Menupopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menupopup.html)
 - JavaScript API:
@@ -105,15 +104,9 @@ The `setActive` will not cause a `menupopup` to be opened. An explicit
 
 `*`[` Menu `]({{site.baseurl}}/zk_component_ref/menu)`, `[` Menuitem `]({{site.baseurl}}/zk_component_ref/menuitem)`, `[` Menuseparator`]({{site.baseurl}}/zk_component_ref/menuseparator)
 
-
-
 # Version History
-
-
 
 | Version | Date     | Content                                                                                                 |
 |---------|----------|---------------------------------------------------------------------------------------------------------|
 | 7.0.1   | Dec 2013 | [Menupopup support toggle type](http://tracker.zkoss.org/browse/ZK-2049)                                |
 | 8.6.0   | Oct 2018 | [ZK-3551: Menupopup active/highlight position from serverside](http://tracker.zkoss.org/browse/ZK-3551) |
-
-

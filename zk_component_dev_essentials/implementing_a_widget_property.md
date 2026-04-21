@@ -139,7 +139,6 @@ setValue: function(value) {
 | **Validation** | Pre-processor | Custom logic |
 | **DOM updates** | Post-processor | Custom logic |
 | **Recommended for** | Most properties | Complex custom behavior |
-
 ---
 
 ## Complete Example

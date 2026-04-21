@@ -10,7 +10,6 @@ title: "The desktop-timeout Element"
 
 [Default: `3600]`
 
-
 It specifies the time, in **seconds**, between client requests before a
 desktop is invalidated. A negative time indicates the desktop should
 never timeout.

@@ -2,7 +2,6 @@
 title: "TableChildren"
 ---
 
-
 - Demonstration:
   [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)
 - Java API: [org.zkoss.zkmax.zul.Tablechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablechildren.html)
@@ -93,6 +92,3 @@ The child of tablechildren can be any component.
 # Use Cases
 
 [ Tablelayout ]({{site.baseurl}}/zk_component_ref/tablelayout#Use_Cases)
-
-
-

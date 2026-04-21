@@ -8,13 +8,11 @@ pages. In page-based navigation, users need to switch pages frequently,
 we should maintain a consistent page design throughout whole application
 to help users keep track of where they are. Luckily, since 8.0 ZK provides **Template Injection** to keep multiple pages in the same style easily.
 
-
 In this chapter, the example application we are going to build looks as follows:
 
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch7-ajax-based.png)
 
 The sidebar is used for navigation control. There are 7 menu items on the sidebar, and the lower 4 items lead you to different functions. They only change the central area's content. All other areas are unchanged to maintain a consistent layout style during the navigation.
-
 
 ## Layout Template
 
@@ -58,7 +56,6 @@ Creating a template zul is nothing different from creating a ordinary zul.
 
 -   Line 10: Apply another template which is a changed part.
 
-
 ## 2. Declare the Template
 
 After creating a template zul, we shoulde decalre a template by `<template>` before applying it like:
@@ -76,11 +73,3 @@ Then we can apply the template with `<apply>`, which is a *shadow component* int
 ```xml
 <apply template="layout"/>
 ```
-
-
-
-
-
-
-
-

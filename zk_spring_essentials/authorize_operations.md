@@ -14,7 +14,6 @@ Browser → /zkau → [1] Controller/ViewModel layer (fast fail, visible to deve
                [2] Service layer (@PreAuthorize — the real security gate)
 ```
 
-
 * **Controller Layer** (Composer/ViewModel) permission check is optional but recommended when the Controller performs pre-processing before calling the service. If authorization fails at the service layer after pre-processing has already started (e.g. data transformation, resource allocation), the controller must undo that work — which is messy. Checking permissions at the controller layer first avoids unnecessary processing and keeps error handling simple. If the Controller only makes a direct, trivial service call with no pre-processing, the service-layer check alone is sufficient.
 * **Service Layer** is the mandatory security gate — it remains protected even when called directly from REST endpoints, batch jobs, or any path that bypasses the controller.
 
@@ -170,7 +169,6 @@ The result for ZK:
 | `@Command` (method-level) | **Yes** — command IS invoked |
 | `@BindingParam` (parameter-level) | **No** — parameters arrive as `null` |
 | `@Listen` (method-level) | **Yes** — works fine for MVC Composers |
-
 Putting Spring AOP advice on a ViewModel method makes `@BindingParam` parameters `null`. The command fires but receives no data. MVC Composers are not affected since `@Listen` handlers use event objects (no parameter annotations).
 
 AspectJ CTW sidesteps this entirely — advice is woven at compile time into the original class, so no proxy is ever generated and all annotations remain intact.
@@ -211,5 +209,4 @@ The ViewModel itself is never proxied, so `@BindingParam` remains intact. The se
 |---|---|---|---|
 | `@PreAuthorize` + AspectJ CTW | Yes | Yes (`aspectj-maven-plugin`) | None — annotation only |
 | Delegate to security service | Yes | No | One line per handler |
-
 **Recommendation:** Use AspectJ CTW with `spring-security-aspects` for projects that already use the AspectJ Maven plugin. Use the delegate approach for simpler projects that want to avoid the build plugin dependency.

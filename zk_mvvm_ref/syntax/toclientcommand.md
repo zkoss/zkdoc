@@ -8,7 +8,6 @@
 @ToClientCommand({"commandName1", "commandName2"})
 ```
 
-
 # Description
 
 **Target:** class
@@ -49,7 +48,6 @@ public class VM{
 ```
 #### Combine with `@NotifyCommand` :
 
-
 ```java
 @NotifyCommand(value="upateData", onChange="_vm_.count")
 @ToClientCommand("upateData")
@@ -69,4 +67,3 @@ Once trigger the command "doCountChange", VM would notify the change of "count".
 Then server would trigger the callback following *binder.after* at client.
 
 Notice that the command "upateData" in VM is not necessary. If the command "updateData" in VM exist, it would be executed first, then server would trigger the callback function.
-

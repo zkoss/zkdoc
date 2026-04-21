@@ -38,5 +38,3 @@ possible values, `Map<String, String[]>`.
 String[] values = param.get("something");
 </zscript>
 ```
-
-

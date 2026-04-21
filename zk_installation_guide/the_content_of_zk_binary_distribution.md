@@ -4,14 +4,12 @@ The content of the ZK binary distribution is as follows.
 
 ## /doc
 
-  
 This directory holds the documents including release notes and license.
 
 ## /dist
 
 ### /dist/lib
 
-  
 This directory holds the ZK libraries
 
 | Filename                           | Description                                                                            | License    | Shipped           |
@@ -36,17 +34,13 @@ This directory holds the ZK libraries
 | stateless.jar                      | Core of stateless components                                                           | Commercial | ZK EE only        |
 | stateless-immutable.jar            | Custom annotation of the immutables for stateless components                           | Commercial | ZK EE only        |
 |                                    |                                                                                        |            |                   |
-
-
 #### /dist/lib/theme
 
-  
 This directory holds additional ZK themes. It is optional depending on
 whether you need them.
 
 <!-- -->
 
-  
 There are three kinds of binary distributions: CE, PE and EE. If not
 stated explicitly, it is shipped in all distributions.
 
@@ -56,17 +50,13 @@ stated explicitly, it is shipped in all distributions.
 | iceblue_c.jar  | Required if you want to use the Iceblue Compact theme. | LGPL    | All     |
 | sapphire.jar   | Required if you want to use the Sapphire theme.        | LGPL    | All     |
 | silvertail.jar | Required if you want to use the Silvertail theme.      | LGPL    | All     |
-
-
 #### /dist/lib/zkforge
 
-  
 This directory holds the additional components and libraries. It is
 optional depending on whether you need them.
 
 <!-- -->
 
-  
 There are three kinds of binary distributions: CE, PE and EE. If not
 stated explicitly, it is shipped in all distributions.
 
@@ -77,10 +67,8 @@ stated explicitly, it is shipped in all distributions.
 | timelinez.jar  | Required if you want to use **ZK Timeline** component.    | GPL     | ZK PE and EE only |
 | timeplotz.jar  | Required if you want to use **ZK Timeplot** component.    | GPL     | ZK EE only        |
 | zuljsp.jar     | Required if you want to use **ZK JSP** Tags.              | GPL     | ZK EE only        |
-
 - ckez.jar not shipped with the binary distribution since ZK 6.5.1. You
   could get it from its [GitHub repository](https://github.com/zkoss/zkckeditor/releases)
-
 
 #### /dist/lib/ext
 
@@ -102,7 +90,6 @@ whether to copy depending on your requirements.
 | closure-compiler.jar | Required only if you want to use the sourcemap support while in debugging [ZK-3677](https://tracker.zkoss.org//browse/ZK-3677). **No need for production.** (See [ZK-4712](https://tracker.zkoss.org/browse/ZK-4712)) | Apache | v20200426 | All |
 | slf4j-api.jar | Required by most of the ZK modules as a logging facade. | MIT | 1.7.30 | All |
 | zsoup.jar | Required by zhtml module. | MIT | 1.8.2.5 | All |
-
 - The interpreters for Groovy (groovy.jar), Ruby (jruby.jar), Python
   (jython.jar), JavaScript (js.jar), MVEL (mvel.jar) and OGNL (ognl.jar)
   are not shipped with the binary distribution since ZK 6. You could get

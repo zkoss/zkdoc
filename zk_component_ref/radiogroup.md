@@ -2,13 +2,11 @@
 title: "Radiogroup"
 ---
 
-
 - Demonstration:
   [Radiogroup](http://www.zkoss.org/zkdemo/input/radio_button)
 - Java API: [org.zkoss.zul.Radiogroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radiogroup.html)
 - JavaScript API:
   [zul.wgt.Radiogroup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Radiogroup.html)
-
 
 # Employment/Purpose
 
@@ -130,7 +128,6 @@ There are three steps to make use of live data.
 1\. Store your data object in a
 [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
 
-  
 ZK provides several implementation implementations of `ListModel`, just
 choose one upon your needs.
 
@@ -141,7 +138,6 @@ choose one upon your needs.
 interface to render each radio and specify it in the `radioRenderer`
 attribute
 
-  
 \* This is optional. If it is not specified, ZK will render it with the
 default renderer.
 
@@ -171,7 +167,6 @@ radigroup will do the rest.
 |---|---|
 |  |  |
 | onCheck | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a radio under the radiogroup is checked. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

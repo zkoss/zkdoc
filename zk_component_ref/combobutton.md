@@ -2,12 +2,10 @@
 title: "Combobutton"
 ---
 
-
 - Demonstration:
 - Java API: [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
 - JavaScript API:
   [zul.wgt.Combobutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Combobutton.html)
-
 
 # Employment/Purpose
 
@@ -128,7 +126,6 @@ in stead of upload.
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Denotes when left button of Combobutton is clicked. |
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes when the child popup is opened or closed.     |
-
 - Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Molds
@@ -149,14 +146,9 @@ The **tbbtn** mold is renamed to **toolbar** mold
 | Version | Description               | Example Location                                              |
 |---------|---------------------------|---------------------------------------------------------------|
 | 6.0.0+  | Combobutton with Colorbox | [blog post](http://blog.zkoss.org/index.php/tag/combobutton/) |
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                                                       |
 |---------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | September 2012 | The **tbbtn** mold is renamed to **toolbar** mold                                                                                             |
 | 10.3.0  | January 2026   | The `onOpen` event is triggered whenever the child popup is opened or closed, regardless of how the action is performed. This update is introduced to align with the behavior of `Menu`. |
-
-

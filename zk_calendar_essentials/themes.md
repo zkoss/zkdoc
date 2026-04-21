@@ -27,7 +27,6 @@ Here is the built-in rule:
 | wcag | wcag |
 | any dark themes including ruby, amber, emerald, aquamarine, montana, violet and spaceblack, cardinal, mysteriousgreen, zen | dark |
 | any other themes not included above | iceblue |
-
 # How to Switch Themes
 
 Specify one of the following theme names above in `zk.xml` with the

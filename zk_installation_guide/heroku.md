@@ -96,7 +96,6 @@ Modify **pom.xml**.
 
 </li>
 
-  
 a\) **Remove** ***<package>war</package>*** line to make *Main.class*
 work
 

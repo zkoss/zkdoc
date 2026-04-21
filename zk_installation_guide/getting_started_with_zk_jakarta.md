@@ -121,7 +121,6 @@ class will use the same name and package structure:
 | Javax.servlet.Servlet                 | jakarta.servlet.Servlet                 |
 | Javax.servlet.http.HttpServletRequest | jakarta.servlet.http.HttpServletRequest |
 | Etc.                                  |                                         |
-
 We recommend that you also refer to the update guide for your preferred
 run environment.
 

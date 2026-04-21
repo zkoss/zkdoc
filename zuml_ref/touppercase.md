@@ -6,7 +6,6 @@ title: "toUpperCase"
 String toUpperCase(String value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#toUpperCase(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#toUpperCase(java.lang.String))
 

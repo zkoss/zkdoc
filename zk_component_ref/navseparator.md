@@ -2,7 +2,6 @@
 title: "Navseparator"
 ---
 
-
 - Demonstration:
 - Java API:
   [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)
@@ -49,10 +48,6 @@ Used to create a separator between nav items..
 
 # Version History
 
-
-
 | Version | Date          | Content                                                                                                      |
 |---------|---------------|--------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013 | [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html) was introduced. |
-
-

@@ -2,8 +2,6 @@
 title: "Data Rendering"
 ---
 
-
-
 The rendering of Pivottable is defined by a `PivotRenderer`. You set your
 custom renderer by calling `Pivottable::setPivotRenderer()`, or
 just use the default `PivotRenderer`.
@@ -115,8 +113,6 @@ To provide custom CSS class or custom style on data cell, override
 Samples of such customization can be found in the source code of
 Pivottable demo.
 
- 
-
 ## PivotHeaderContext
 
 This class is commonly used in the arguments of PivotRenderer (or
@@ -139,8 +135,6 @@ illustrated as the following:
 ![](images/ZKPvtEsn_HeaderContext_02.png)
 
 ![](images/ZKPvtEsn_HeaderContext_03.png)
-
- 
 
 ## Hide the Icon
 

@@ -2,8 +2,6 @@
 title: "Firing Events at Client-side"
 ---
 
-
-
 In general, an AU request is caused by a widget event
 ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) that is going to be sent
 to the server. This happens when the widget event targets a widget that
@@ -54,7 +52,6 @@ zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
 
 For more information, please refer to [the next section]({{site.baseurl}}/zk_client_side_ref/server_side_processing).
-
 
 # Fire Event to Desktop
 

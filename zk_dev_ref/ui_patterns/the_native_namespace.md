@@ -36,7 +36,6 @@ component for each of `ul` and `li`.[^1] Rather, they are sent to the
 client directly. Of course, they must be recognizable by the client. For
 an HTML browser, they must be valid HTML tags.
 
-
 # Dynamic Update
 
 The XML elements associated with the native namespace will be considered
@@ -176,7 +175,6 @@ Then, the result DOM structure will be similar to the following[^2]:
      </canvas>
 </div>
 ```
-
 
 [^1]: ZK actually creates a special component to represent as many XML
     elements with the native namespace as possible.

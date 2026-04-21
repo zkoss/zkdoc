@@ -162,7 +162,6 @@ the object is serialized.
 | 10       | Serializes pages of each desktop                                                                                                                                                                                                                                           |
 | 11       | Invokes [org.zkoss.zk.ui.util.ComponentSerializationListener#willSerialize(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentSerializationListener.html#willSerialize(org.zkoss.zk.ui.Component)) for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated |
 | 12       | Serializes components of each page                                                                                                                                                                                                                                         |
-
 # Activation Flow
 
 When a session is about to be activated (such as moving from another
@@ -184,7 +183,6 @@ listener will be called to notify a session has been activated.
 | 10       | Invokes [org.zkoss.zk.ui.util.DesktopActivationListener#didActivate(org.zkoss.zk.ui.Desktop)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/DesktopActivationListener.html#didActivate(org.zkoss.zk.ui.Desktop)) for each object referenced by each [org.zkoss.zk.ui.Desktop](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Desktop.html) that will be passivated             |
 | 11       | Invokes [org.zkoss.zk.ui.util.PageActivationListener#didActivate(org.zkoss.zk.ui.Page)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PageActivationListener.html#didActivate(org.zkoss.zk.ui.Page)) for each object referenced by each [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that will be passivated                      |
 | 12       | Invokes [org.zkoss.zk.ui.util.ComponentActivationListener#didActivate(org.zkoss.zk.ui.Component)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComponentActivationListener.html#didActivate(org.zkoss.zk.ui.Component)) for each object referenced by each [org.zkoss.zk.ui.Component](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html) that will be passivated       |
-
 # Working Thread Cannot Last Two or More Requests
 
 Since the thread cannot be migrated from one machine to another, you

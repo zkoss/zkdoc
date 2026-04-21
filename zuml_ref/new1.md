@@ -6,7 +6,6 @@ title: "new1"
 Object new1(Object cls, Object arg);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#new_(java.lang.Object, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#new_(java.lang.Object, java.lang.Object))
 
@@ -21,5 +20,3 @@ class has a proper constructor.
 # Usage
 
 `${c:new1('java.lang.Integer', 2)}`
-
-

@@ -2,11 +2,9 @@
 title: "Hlayout"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Hlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hlayout.html)
 - JavaScript API: [zul.box.Hlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Hlayout.html)
-
 
 # Employment/Purpose
 
@@ -112,16 +110,10 @@ alignment explicitly in the inner hlayout if needed. For example,
 
 `*ALL`
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                            |
 |---------|----------------|----------------------------------------------------|
 | 5.0.4   | August, 2010   | new added component                                |
 | 5.0.5   | October, 2010  | Vertical alignment was supported.                  |
 | 6.0.0   | February, 2012 | The default value of alignment is change to *top*. |
-
-

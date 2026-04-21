@@ -4,7 +4,6 @@ title: "Sample of web.xml for Servlet 2.3"
 
 Here is the sample web.xml for servers that support Servlet 2.3 only.
 
-  
 Notice that the ZK demo distribution has two web.xml files under the
 MyApp/WebContent/WEB-INF directory: web.xml (for servers supporting
 Servlet 2.4 or later), and web.servlet-2.3.xml (for servers supporting
@@ -67,5 +66,3 @@ scratch.
     </welcome-file-list>
 </web-app>
 ```
-
-

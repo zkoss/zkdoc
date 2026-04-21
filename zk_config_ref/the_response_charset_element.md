@@ -20,5 +20,3 @@ empty string as follows.
 ```xml
 <response-charset></response-charset>
 ```
-
-

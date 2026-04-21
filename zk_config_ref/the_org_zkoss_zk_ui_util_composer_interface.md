@@ -37,12 +37,10 @@ performance.
 Notice that since a new instance of the composer is created for each
 page, there is no threading issues.
 
-  
 **Richlet**
 
 <!-- -->
 
-  
 The system-level composers are applied to richlets too. In addition, a
 system-level composer can implement
 [org.zkoss.zk.ui.util.ComposerExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ComposerExt.html) to
@@ -52,7 +50,6 @@ called.
 
 <!-- -->
 
-  
 [org.zkoss.zk.ui.util.FullComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/FullComposer.html) is
 not applicable to richlets. In other words, system-level composers are
 called only for the root components.

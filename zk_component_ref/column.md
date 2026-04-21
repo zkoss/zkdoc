@@ -2,11 +2,9 @@
 title: "Column"
 ---
 
-
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: [org.zkoss.zul.Column](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html)
 - JavaScript API: [zul.grid.Column](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Column.html)
-
 
 # Employment/Purpose
 
@@ -57,7 +55,6 @@ column is mainly to define attributes for each cell in the grid.
 | `onSort` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) Denotes user has sorted the row of this column. |
 | `onGroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) <!--REQUIRED ZK EDITION: PE --> {% include edition-availability.html edition="pe" %} Denotes user has grouped all the cells under a column. |
 | `onUngroup` | **Event:** [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) <!--REQUIRED ZK EDITION: PE --> {% include edition-availability.html edition="pe" %} {% include supported-since.html version="6.5.0" %} Denotes user has ungrouped all the cells under a column. |
-
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 
 # Supported Children
@@ -70,10 +67,6 @@ column is mainly to define attributes for each cell in the grid.
 
 # Version History
 
-
-
 | Version | Date      | Content                                                                                  |
 |---------|-----------|------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-147](http://tracker.zkoss.org/browse/ZK-147): Support ungroup for grid's column menu |
-
-

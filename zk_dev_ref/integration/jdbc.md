@@ -2,8 +2,6 @@
 title: "JDBC"
 ---
 
-
-
 ZK aims to be as thin as the presentation tier. In addition, as the code
 executes at the server, so connecting database is no different from any
 desktop applications. In other words, ZK doesn't change the way you
@@ -230,8 +228,6 @@ Then, in `web.xml`, you have to add the following content under the
 ```
 
 **Notes**
-
-
 
 ### JBoss + MySQL
 

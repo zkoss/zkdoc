@@ -2,8 +2,6 @@
 title: "Hflex and Vflex"
 ---
 
-
-
 Hflex
 ([org.zkoss.zk.ui.HtmlBasedComponent#setHflex(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setHflex(java.lang.String)))
 and vflex

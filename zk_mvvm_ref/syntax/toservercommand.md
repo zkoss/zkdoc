@@ -43,5 +43,3 @@ public class VM{
        </n:script>
 </window>
 ```
-
-

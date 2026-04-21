@@ -3,7 +3,6 @@ To use flow control in shadow elements, we can use the following shadow element 
 - `<if>`: allows the conditional execution of its body according to the value of the test attribute.
 - `<choose>/<when>/<otherwise>`: they are used for logic and flow control, such as Java's switch/case/default statement.
 
-
 # Work with UI components
 Continuing with the example from the previous chapter, we will render a menu node upon its sub-menu existence. First we specify whether or not to show *Home* icon. And if a menu node has a sub-menu, we render it by `<nav>`; otherwise render it by `<navitem>`. To achieve this, we have to use shadow components for flow control, `<if>`, `<choose>`, `<when>`, and `<otherwise>`.
 

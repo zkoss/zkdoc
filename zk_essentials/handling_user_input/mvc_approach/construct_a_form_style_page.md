@@ -8,6 +8,7 @@ zul file below is included in the `<center>` of `<borderlayout>`.
 We build the frame of this form first:
 
 **chapter3/profile-mvc.zul**
+
 ```xml
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <window 
@@ -36,7 +37,6 @@ We build the frame of this form first:
 -   Line 11:
 [`<hlayout>`]({{site.baseurl}}/zk_component_ref/hlayout), like `<vlayout>`, but arranges its child components horizontally.
 
-
 ##A Grid Makes a Form
 Then let's put components in a Grid to arrange them as a form style. A `<grid>` is basically composed by `<columns>` and `<rows>`:
 
@@ -52,8 +52,8 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
 ```
 * `<columns`> can have `<column>` (no 's'), and `<rows>` can have `<row>` (no 's').
 
-
 **chapter3/profile-mvc.zul**
+
 ```xml
         <grid width="500px">
             <columns>
@@ -102,6 +102,5 @@ Then let's put components in a Grid to arrange them as a form style. A `<grid>` 
 -   Line 8:
 [`<cell>`]({{site.baseurl}}/zk_component_ref/cell) is
     used inside `<row>`, `<hbox>`, or `<vbox>` to fully control a column's align, row/column span, and width in an individual row.
-
 
 {% include input_validation.md %}

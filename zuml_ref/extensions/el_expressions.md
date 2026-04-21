@@ -23,9 +23,6 @@ For example,
 </window>
 ```
 
-
-
-
 [^1]: Notice that the package names are all changed, and the dependency
     of JSP EL is removed, so it is OK to run under any Web server
     without any conflict

@@ -1,7 +1,4 @@
 
-
-
-
 # Click, Double-Click, Right-Click
 
 `ClickAgent` helps us to mimic the clicking of a component for general
@@ -78,5 +75,3 @@ public class ClickTest {
 </tr>
 </tbody>
 </table>
-
- 

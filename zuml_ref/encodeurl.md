@@ -6,7 +6,6 @@ title: "encodeURL"
 String encodeURL(String uri);
 ```
 
-  
 i.e.,
 [org.zkoss.web.fn.ServletFns#encodeURL(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/fn/ServletFns.html#encodeURL(java.lang.String))
 
@@ -35,5 +34,3 @@ is found.
 **Parameters:**
 
 - uri - the URI to encode
-
-

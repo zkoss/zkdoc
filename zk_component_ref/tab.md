@@ -2,7 +2,6 @@
 title: "Tab"
 ---
 
-
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API:** [`org.zkoss.zul.Tab`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html)
 - **JavaScript API:** [`zul.tab.Tab`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tab.html)
@@ -34,7 +33,6 @@ Try it
 
 * [Tab Example](https://zkfiddle.org/sample/o3cb45/1-ZK-Component-Reference-Tab-Example?v=latest&t=Iceblue_Compact)
 
-
 ## Properties and Features
 
 ### Caption
@@ -65,7 +63,6 @@ Tabs can have a caption by declaring a child component called `caption`. The exa
 Try it
 
 * [Tab Caption](https://zkfiddle.org/sample/ale2h1/1-ZK-Component-Reference-Tab-Caption-Example?v=latest&t=Iceblue_Compact)
-
 
 ### Closable
 
@@ -106,13 +103,11 @@ Try it
 
 * [Tab Model](https://zkfiddle.org/sample/37ktdo8/1-ZK-Component-Reference-Panel-Toolbar-Example?v=latest&t=Iceblue_Compact)
 
-
 ## Supported Events
 
 | Name          | Event Type                                       |Description |
 |---------------|--------------------------------------------------|------------|
 | `onSelect`    | Event: [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.             |
 | `onClose`     | Event: [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself.                 |
-
 ## Supported Children
 - [`Caption`](caption): Indicates that the `Tab` component can only have one child component of type `Caption`.

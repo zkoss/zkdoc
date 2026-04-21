@@ -2,11 +2,9 @@
 title: "Datebox"
 ---
 
-
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: [org.zkoss.zul.Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html)
 - JavaScript API: [zul.db.Datebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Datebox.html)
-
 
 # Employment/Purpose
 
@@ -334,7 +332,6 @@ for inherited functions.
 | Name | Event Type |
 |---|---|
 | `onTimeZoneChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of the component is changed by user. |
-
 - Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
 
 # Supported Molds
@@ -346,16 +343,11 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/datebox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
-
 # Supported Children
 
 Check inherited events
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                                                                                                                                                                                       |
 |---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -365,5 +357,3 @@ Check inherited events
 | 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setLocale(java.util.Locale)) was introduced.                                                                                                                                                                 |
 | 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                        |
 | 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox.                                                                                                                                                                    |
-
-

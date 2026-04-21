@@ -2,12 +2,10 @@
 title: "Longbox"
 ---
 
-
 - Demonstration:
   [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Longbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Longbox.html)
 - JavaScript API: [zul.inp.Longbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Longbox.html)
-
 
 # Employment/Purpose
 
@@ -94,4 +92,3 @@ for inherited functions.
 # Supported Children
 
 `*NONE`
-

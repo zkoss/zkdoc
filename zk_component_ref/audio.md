@@ -2,7 +2,6 @@
 title: "Audio"
 ---
 
-
 - Demonstration: [Audio](http://www.zkoss.org/zksandbox/userguide/#u5)
 - Java API: [org.zkoss.zul.Audio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Audio.html)
 - JavaScript API: [zul.med.Audio](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Audio.html)
@@ -71,23 +70,16 @@ write codes as shown below (MVVM pattern).
 | Name | Event Type |
 |---|---|
 | `onStateChange` | **Event:** [org.zkoss.zk.ui.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StateChangeEvent.html) Notifies when invoking play(), stop(), pause() or the audio is played to the end. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `* `[`Track`]({{site.baseurl}}/zk_component_ref/track)
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                     |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013   | [org.zkoss.zul.Audio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Audio.html) now supports HTML 5                                                  |
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks                           |
 | 9.6.0   | May 2021       | [ZK-4779](https://tracker.zkoss.org/browse/ZK-4779): audio supports to fire an event upon its playing state |
-
-

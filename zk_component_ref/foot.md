@@ -2,11 +2,9 @@
 title: "Foot"
 ---
 
-
 - Demonstration: [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
 - Java API: [org.zkoss.zul.Foot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Foot.html)
 - JavaScript API: [zul.grid.Foot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Foot.html)
-
 
 # Employment/Purpose
 
@@ -57,6 +55,3 @@ Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/footer)) 
 # Use Cases
 
 [ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
-
-
-

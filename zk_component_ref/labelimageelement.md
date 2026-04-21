@@ -2,7 +2,6 @@
 title: "LabelImageElement"
 ---
 
-
 - Java API: [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
 - **JavaScript API**: [`zul.LabelImageWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)
 
@@ -14,6 +13,7 @@ The Label Image Element is an HTML element that consists of a label and an image
 The preload image feature, introduced in version 6.0.0, is applicable to all instances of LabelImageElement and Image components. By default, the preload function is disabled, and users need to explicitly enable it by setting the `org.zkoss.zul.image.preload` custom attribute to `true`.
 
 ### Example 1:
+
 ```xml
 <button image="xxx.png">
   <custom-attributes org.zkoss.zul.image.preload="true"/>
@@ -22,6 +22,7 @@ The preload image feature, introduced in version 6.0.0, is applicable to all ins
 In this example, the `org.zkoss.zul.image.preload` custom attribute is set to `true` for the button component, enabling image preloading.
 
 ### Example 2:
+
 ```xml
 <window>
   <custom-attributes org.zkoss.zul.image.preload="true"/>
@@ -36,6 +37,7 @@ In both examples, the `custom-attributes` will be recursively checked for the sp
 Version 6.5.2 introduced the ability to apply the feature through the `zk.xml` configuration file as a library property.
 
 ### Example 3:
+
 ```xml
 <!-- zk.xml -->
 <zk>
@@ -52,6 +54,3 @@ The Label Image Element allows you to specify built-in icon CSS classes to style
 
 ## Supported Children
 `*ALL`: Allows encoding any ZK component as its child.
-
-
-

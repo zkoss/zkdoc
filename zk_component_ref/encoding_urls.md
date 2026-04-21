@@ -2,8 +2,6 @@
 title: "Encoding URLs"
 ---
 
-
-
 A XHTML component generates attributes directly to native HTML tags. It
 means, unlike XUL, it doesn't prefix the servlet context path to
 attributes for specifying URL. For example, the following codes will not
@@ -37,5 +35,3 @@ Notice that XUL components and all ZK features that accept a URL will
 invoke the <mp>encodeURL</mp> method automatically. The reason why we do
 not handle XHTML components is that we do not know which attribute
 requires a URL.
-
-

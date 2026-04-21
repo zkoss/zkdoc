@@ -2,9 +2,8 @@
 title: "forward"
 ---
 
-
-
 **Syntax:**
+
 ```xml
 <?forward uri="..." [if="..."] [unless="..."]?>
 ```
@@ -48,5 +47,3 @@ request to the specified URI.
 The condition *not* to forward to the specified URI. If both `if` and
 `unless` are omitted, this page won't be evaluated and ZK always
 forwards the request to the specified URI.
-
-

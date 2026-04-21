@@ -2,8 +2,6 @@
 title: "Cookie Handling"
 ---
 
- 
-
 `Since 1.1.0`
 
 # Cookie Validation
@@ -129,5 +127,3 @@ public void test() {
 
 - **Line 12-14**: We can append a new cookie before connecting with a
   page for testing.
-
- 

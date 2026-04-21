@@ -5,6 +5,7 @@
 In addition to manual websocket use, ZK can be configured to use a websocket channel as a replacement for the default `/zkau` request and response cycles used to send events and updates between the client and the server.
 
 In `WEB-INF/zk.xml`, add following lines to enable WebSocket connection:
+
 ```xml
 <listener>
 <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>
@@ -13,6 +14,7 @@ In `WEB-INF/zk.xml`, add following lines to enable WebSocket connection:
 
 To change the update URL, you could also add the following lines into WEB-INF/zk.xml.
 Optional: If not specified, "/zkwm" will be used by default.
+
 ```xml
 <library-property>
 <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern</name>
@@ -21,7 +23,6 @@ Optional: If not specified, "/zkwm" will be used by default.
 ```
 
 When a WebSocket connection is enabled, we'll use WebSocketServerPush by default when server-push started. Note that we cannot guarantee the accessing of the information provided by http requests when WebSocket connection is enabled.
-
 
 # Manual use of Websockets: Employment/Purpose
 {% include supported-since.html version="8.0.0" %}

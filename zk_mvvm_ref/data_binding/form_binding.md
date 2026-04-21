@@ -11,9 +11,9 @@ Form binding can keep target object in ViewModel unchanged before executing a Co
 ## The data flow among ZUL, middle object, and the target object is illustrated below:
 ![MVVM Form Binding]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-form-binding.png)
 
-
 ## Problems Using Property Binding in a Form
 Assume a form to fill a book's data:
+
 ```xml
  <grid hflex="true" >
      <columns>
@@ -42,7 +42,6 @@ When users input data into a textbox, it immediately updates `vm.currentBook`. T
 * **Inability to detect unsaved changes** <br/>
 The absence of a separate record of the original book data makes it impossible to identify and display a 'dirty' status. This status indicates whether the current book information has been modified but not yet saved.
 
-
 ## Steps to Create a Form Binding
 Based on the problems mentioned above, you can solve it by a form binding:
 
@@ -54,8 +53,8 @@ Based on the problems mentioned above, you can solve it by a form binding:
 4. Bind component's attribute to middle object's properties like you would in property binding.
     * You should use middle object's id specified in`@id` to reference its property.
 
-
 Rewrite same example with form bindings:
+
 ```xml
 <groupbox form="@id('fx') @load(vm.currentBook) @save(vm.currentBook, before='save')">
     <grid hflex="true" >
@@ -85,7 +84,6 @@ Rewrite same example with form bindings:
 
 In the code above, each time a user triggers an `onChange` event, zk saves input data into `fx`, middle object. When clicking a button bound to Command 'save', zk will save middle object's data into `vm.currentBook`.
 
-
 ## Form Proxy Object
 
 Form binding automatically creates a middle object (`FormProxyObject`) for you to store properties from a ViewModel's object you specified. It can deeply support these types - **Collections**, **Map**, and **POJO** in a form concept, as a proxy object for developers to manipulate them when users edit data in the form field. 
@@ -94,6 +92,7 @@ Once the form is submitted, all the edited data will be synchronized to the orig
 Continuing with the above example, we define a **Collections** property in the user bean.
 
 Book.java:
+
 ```java 
 public class Book {
     // ... (id, author, name, price)
@@ -107,6 +106,7 @@ public class Book {
 }
 ```
 Category.java:
+
 ```java
 public class Category {
 	private String name;
@@ -143,7 +143,6 @@ public class Category {
 - For the above reasons, custom annotations should be specified for methods. In other words, annotations applied to fields and beans will be ignored.
 <!--  if the proxy's getter is expected to return a primitive and a null is returned from the invoke() method of the MethodHandler. Since primitives can't be null, trying to auto-unbox a null would cause a NullPointerException.-->
 
-
 ## Accessing a FormProxyObject
 In a basic usage, you usually don't need to access form proxy object itself. But if you want to manipulate an Object's property which is a collection, you need to directly access the form proxy object.  
 
@@ -166,9 +165,9 @@ So you need to pass the FormProxyObject into a command:
    onClick="@command('removeCategory', form=fx, category=each)" />
 ```
 
-
 Then call `remove()` in the command method:
 `BooksViewModel`
+
 ```java
 @Command("removeCategory")
 public void doRemoveCategory(@BindingParam("form") Book form,
@@ -189,7 +188,6 @@ public void doAddCategory(@BindingParam("form") Book form,
 
 The form proxy would synchronize back the edited data (`Category`) after the form submitted.
 
-
 ### Reset Methods
 Form proxy object provides 9 built-in properties transparently for developers to clean up the component value as follows.
 
@@ -205,6 +203,7 @@ Form proxy object provides 9 built-in properties transparently for developers to
 - `resetCharValue`: returning a char value (‘\u0000′)
 
 For example:
+
 ```xml
 <hlayout>
     Add Category
@@ -234,8 +233,6 @@ Because the result of `getAreal()` is a calculation, we don't need to cache the 
 The form proxy would proxy properties deeply by default, you can use `@Immutable` to mark
 some elements. Once a getter method has been marked, the corresponding element would be cached non-recursively when using a form proxy.
 
-
-
 ## Form Status Variable
 
 Form binding also records middle object's modification status. It’s a common requirement for users to know whether they have modified a form’s data (dirty status) or not; developers therefore would add a feature that would remind users of this with an UI effect. For example, some text editors appends a star symbol ‘*’ on the title bar to remind users of modified text file. “Form binding” preserves the dirty status in an variable that we can utilize.
@@ -245,6 +242,7 @@ Dirty status is stored in an auto-created **form status variable** with a naming
 `[middleObjectId]Status`
 
 Continuing with the above example, we add an exclamation icon right next to Id value. If users modify any input data, the exclamation icon will show up.
+
 ```xml
 <groupbox form="@id('fx') @load(vm.currentBook) @save(vm.currentBook, before='save')" >
     <grid hflex="true" >
@@ -259,7 +257,6 @@ Continuing with the above example, we add an exclamation icon right next to Id v
 
 ![MVVM FormBinding Form Dirty-1](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-1.png)
 ![MVVM FormBinding Form Dirty-2](/zk_mvvm_ref/images/mvvm-form-binding-formstatus-2.png)
-
 
 After users modified a field, the cancel button would be enabled.
 

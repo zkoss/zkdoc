@@ -6,6 +6,7 @@ ViewModel, like a JavaBean, exposes its properties through getter and setter met
 ## Property is Primitive Type
 
 ### Primitive type property
+
 ```java
 public class PrimitiveViewModel {
 
@@ -29,6 +30,7 @@ public class PrimitiveViewModel {
 }
 ```
 ### A zul that uses PrimitiveViewModel
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.PrimitiveViewModel')">
 
@@ -46,6 +48,7 @@ public class PrimitiveViewModel {
 If a property is a JavaBean, that JavaBean's property can also be accessed through an EL expression.
 
 ### Object type property
+
 ```java
 public class Address {
 
@@ -87,6 +90,7 @@ public class ObjectViewModel {
 ```
 
 ### A zul that uses ObjectViewModel.
+
 ```xml
 <intbox value="@bind(vm.index)"/>
 
@@ -100,6 +104,7 @@ public class ObjectViewModel {
 If the UI component is a collection container like listbox or grid, it should be bound to a property whose type is `Map` or subinterface of `Collection` like `List` or `Set`.
 
 ### Collection type property
+
 ```java
 public class CollectionViewModel {
     //primitive type
@@ -123,6 +128,7 @@ public class CollectionViewModel {
 ```
 
 ### A zul that uses CollectionViewModel
+
 ```xml
 <label value="@load(vm.address.street)"/>
 <listbox model="@load(vm.itemList)" selectedIndex="@bind(vm.selectedIndex)">

@@ -2,8 +2,6 @@
 title: "Using Series"
 ---
 
-
-
 Another way to add data to a chart is through
 [org.zkoss.chart.Series](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Series.html). You have
 to use `Series` to combine multiple types of chart in one chart

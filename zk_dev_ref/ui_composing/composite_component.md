@@ -2,8 +2,6 @@
 title: "Composite Component"
 ---
 
-
-
 Like a [macro component]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component),
 a composite component is an approach to compose a component based on a
 template. Unlike a macro component, a composite component has to create

@@ -42,5 +42,3 @@ getTextNode_: function () {
     return zDom.firstChild(this.getNode(), "LABEL");
 }
 ```
-
-

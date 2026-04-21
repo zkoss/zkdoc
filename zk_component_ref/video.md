@@ -2,7 +2,6 @@
 title: "Video"
 ---
 
-
 - Java API: [org.zkoss.zkmax.zul.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Video.html)
 - JavaScript API: [zkmax.med.Video](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Video.html)
 
@@ -214,7 +213,6 @@ played to the end, the StateChangeEvent will be triggered.
 | Name | Event Type |
 |---|---|
 | `onStateChange` | **Event:** [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies when invoking play(), stop() or pause(). |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
@@ -223,11 +221,7 @@ played to the end, the StateChangeEvent will be triggered.
 
 # Version History
 
-
-
 | Version | Date           | Content                                                                           |
 |---------|----------------|-----------------------------------------------------------------------------------|
 | 8.6.0   | May 2018       | [ZK-3845](https://tracker.zkoss.org/browse/ZK-3845): Provide a video component    |
 | 9.5.0   | September 2020 | [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |
-
-

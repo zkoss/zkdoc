@@ -45,5 +45,3 @@ Then, you could specify it as follows.
 which means `foo.MyAddon.UID` must be 1.0.3, and
 [org.zkoss.zk.ui.WebApp#getVersion()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/WebApp.html#getVersion())
 must be 5.0.0 or later.
-
-

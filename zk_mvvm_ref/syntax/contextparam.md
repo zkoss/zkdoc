@@ -7,6 +7,7 @@
 ```
 
 #### Enumeration of all context
+
 ```java
 enum ContextType {
     BIND_CONTEXT,   //BindContext instance
@@ -35,6 +36,7 @@ The annotation is applied to initial (or command) method's parameter. Methods ca
 # Example
 
 #### Retrieve various context object in a ViewModel
+
 ```java
 @Init
 public void init(
@@ -62,6 +64,7 @@ The following is another example.
 ```
 
 #### A ViewModel used by above zul
+
 ```java
 public class ContextParamVM {
     @Command
@@ -75,4 +78,3 @@ public class ContextParamVM {
 ```
 
 -   In above example, the variable component is a Button object and the view is a Vbox object.
-

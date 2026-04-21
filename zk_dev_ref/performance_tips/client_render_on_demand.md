@@ -2,8 +2,6 @@
 title: "Client Render on Demand"
 ---
 
-
-
 With Enterprise Edition, widgets[^1] will delay the rendering of DOM
 elements until really required. For example, the DOM elements of
 `comboitem` won't be created until the drop down is shown. It improves
@@ -12,7 +10,6 @@ the performance a lot for a sophisticated user interface.
 This feature is transparent to the application developers. All widgets
 are still instantiated (though DOM elements might not), so they can be
 accessed without knowing if this feature is turned on.
-
 
 # Client ROD: Tree
 
@@ -105,8 +102,6 @@ enable it for a subset of the descendants. For example,
   </div>
 </window>
 ```
-
-
 
 [^1]: A widget is the (JavaScript) object running at the client to
     represent a component

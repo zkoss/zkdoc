@@ -17,5 +17,3 @@ To disable the serialization of BeanShell method(s).
     <value>false</value>
 </library-property>
 ```
-
-

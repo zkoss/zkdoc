@@ -6,7 +6,6 @@ title: "toLowerCase"
 String toLowerCase(String value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#toLowerCase(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#toLowerCase(java.lang.String))
 

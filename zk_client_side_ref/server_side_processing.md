@@ -141,7 +141,6 @@ static {
 Notice that the important event won't be sent to the server immediately
 if it does not have any non-deferrable event listener at the server[^1].
 
-
 ## Force Event to Send Back
 
 [org.zkoss.zk.ui.AbstractComponent#addClientEvent(java.lang.Class, java.lang.String, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html#addClientEvent(java.lang.Class, java.lang.String, int))
@@ -154,8 +153,6 @@ instantiating an event. For example,
 ```javascript
 zAu.send(new zk.Event(wgt, "onFoo", {foo: 'my data'}, {toServer:true}));
 ```
-
-
 
 [^1]: A deferrable event listener is an event listener that also
     implements

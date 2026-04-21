@@ -6,6 +6,7 @@ corresponding area of the *BorderLayout*.
 For all areas, we use *`<apply>`*, [a shadow component]({{site.baseurl}}/zk_essentials/shadow_components/), to combine separated pages, and it doesn't consume extra server memory. This component can inject a separated zul for you when the parent zul is loaded. This usage is presented below:
 
 **chapter1/index.zul**
+
 ```xml
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <zk>

@@ -6,7 +6,6 @@ title: "lastIndexOf"
 int lastIndexOf(Object value, Object element);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#lastIndexOf(java.lang.Object, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#lastIndexOf(java.lang.Object, java.lang.Object))
 

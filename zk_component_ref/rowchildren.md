@@ -2,7 +2,6 @@
 title: "Rowchildren"
 ---
 
-
 - Java API: [org.zkoss.zkmax.zul.Rowchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Rowchildren.html)
 - JavaScript API:
   [zkmax.layout.Rowchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Rowchildren.html)
@@ -43,6 +42,3 @@ By default, the offset of Rowchildren is 0.
 # Supported Events
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
-
-
-

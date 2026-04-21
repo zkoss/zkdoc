@@ -4,7 +4,6 @@ title: "javascript"
 
 **Syntax:**
 
-
 ```xml
 <javascript package="pkg_name" [merge="false|true"]/>  
 <javascript package="pkg_name" merge="a_package_to_merge_to"/>

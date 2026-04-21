@@ -37,7 +37,6 @@ The simple workaround for this problem is to just try again and the
 *zk-version-since* property should appear in the list. (The same apply
 to all other properties)
 
-
 - Click **Finish** and the Eclipse status bar should say ' *Creating
   zk-archetype-component* ' and ' *Updating Maven Dependencies* '. If
   this is the user's first time dealing with ZK libraries, Maven will
@@ -45,8 +44,6 @@ to all other properties)
   and would be stored in *.m2/repository* in your home directory.
     
   ![](images/ZKComDevEss_Maven_CreateComponent_setp6.png)
-
-
 
 ## How to run Maven project on Run-Jetty-Run
 
@@ -57,7 +54,6 @@ to all other properties)
     - It will automatically fill-out **Project** / **Port** /
       **Context** / **WebApp Dir**
 
-      
 ![](images/ZKComDevEss_Maven_CreateComponent_run2.png)
 3.  Click **Run** and start browsing local ZK application at
     <http://127.0.0.1:8080/mycomps/>

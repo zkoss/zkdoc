@@ -17,5 +17,3 @@ Example,
 ```xml
 <device-type>ajax</device-type>
 ```
-
-

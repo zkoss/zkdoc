@@ -2,12 +2,10 @@
 title: "Html"
 ---
 
-
 - Demonstration:
   [Html](http://www.zkoss.org/zkdemo/composite/html_element)
 - Java API: [org.zkoss.zul.Html](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Html.html)
 - JavaScript API: [zul.wgt.Html](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Html.html)
-
 
 # Employment/Purpose
 
@@ -89,6 +87,3 @@ Without this setting, `offsetHeight` of `
 | 3.6     | Work with HTML tags: The Html component      | [The Html component]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_html_component) |
 | 3.6     | herf attribute in Html component             | [<http://www.zkoss.org/forum/listComment/4745>](http://www.zkoss.org/forum/listComment/4745)         |
 | 3.6     | Use Html component to escape HTML characters | [<http://www.zkoss.org/forum/listComment/11118>](http://www.zkoss.org/forum/listComment/11118)       |
-
-
-

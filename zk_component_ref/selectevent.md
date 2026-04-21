@@ -2,7 +2,6 @@
 title: "SelectEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)
 - JavaScript API: N/A
@@ -77,13 +76,9 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date           | Content                                                                                                                                                    |
 |---------|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 7.0.0   | October, 2013. | [Multiple selection component(listbox, chosenbox) support extra information for find out added item/removed item](http://tracker.zkoss.org/browse/ZK-1992) |
 | 7.0.1   | January 2014.  | [SelectEvent support get UnselectedItems](http://tracker.zkoss.org/browse/ZK-2089)                                                                         |
-
-

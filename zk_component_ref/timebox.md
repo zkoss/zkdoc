@@ -2,11 +2,9 @@
 title: "Timebox"
 ---
 
-
 - Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
 - Java API: [org.zkoss.zul.Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html)
 - JavaScript API: [zul.db.Timebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Timebox.html)
-
 
 # Employment/Purpose
 
@@ -141,11 +139,9 @@ zul.jar.
   </tbody>
 </table>
 
-
 # Supported Children
 
 `*NONE`
-
 
 # Version History
 
@@ -153,4 +149,3 @@ zul.jar.
 |---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setFormat(java.lang.String)) supported the styling.                                            |
 | 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setLocale(java.util.Locale)) was introduced to specify a locale other than the current locale. |
-

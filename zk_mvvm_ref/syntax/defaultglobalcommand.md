@@ -18,6 +18,7 @@ When a binder receives a global command, it starts to look for ViewModel's globa
 # Example
 
 #### Mark a default global command method
+
 ```java
 @DefaultGlobalCommand
 public void defaultAction() {

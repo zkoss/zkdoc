@@ -14,5 +14,3 @@ It specifies the time, in seconds, between client requests before a
 session is invalidated. A negative time indicates the session should
 never timeout. The default zero means to use the system default (which
 is usually specified in `web.xml`).
-
-

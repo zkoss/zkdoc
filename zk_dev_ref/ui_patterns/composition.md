@@ -2,8 +2,6 @@
 title: "Composition"
 ---
 
-
-
 [org.zkoss.zk.ui.util.Composition](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composition.html) is one of the
 built-in templating implementations. The concept is simple:
 

@@ -2,8 +2,6 @@
 title: "template"
 ---
 
-
-
 **Syntax:**
 
 `<template name="`*`template-name`*`" [src="`*`URI`*`"]`  

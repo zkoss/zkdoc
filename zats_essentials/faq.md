@@ -2,8 +2,6 @@
 title: "FAQ"
 ---
 
-
-
 1. **InputAgent.type() works correctly on all components except
     *Datebox* and *Timebox* in ZK 6 based project?**
 

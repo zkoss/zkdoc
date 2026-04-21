@@ -2,7 +2,6 @@
 title: "Anchornav"
 ---
 
-
 - Demonstration: [Anchornav: A new ZK Addon for scrolling within a page](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
 - Java API:
   [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
@@ -117,10 +116,6 @@ position of the page.
 
 # Version History
 
-
-
 | Version | Date           | Content                                                                                                |
 |---------|----------------|--------------------------------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html) was introduced. |
-
-

@@ -12,5 +12,3 @@ Here we only discuss Javascript. Javascript is actually easy for Java
 programmers to learn. The real challenge is the manipulation of DOM and
 the knowledge of CSS. If you're not familiar with them, please refer to
 [JavaScript Tutorial in w3cschools](http://www.w3schools.com/js/default.asp).
-
-

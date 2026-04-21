@@ -2,7 +2,6 @@
 title: "Jasperreport"
 ---
 
-
 - Demonstration:
   [Jasperreport](http://www.zkoss.org/zkdemo/reporting/jasperreport)
 - Java API: [org.zkoss.zkex.zul.Jasperreport](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Jasperreport.html)
@@ -164,14 +163,12 @@ report.setType("pdf"); // report is the Jasperreport component
 | 8.6.0 | 6.5.1        | added by default                                                                                                                                            |
 | 7.0.0 | 4.5.1        | added by default                                                                                                                                            |
 | 6.0.0 | 4.0.1        | added by default                                                                                                                                            |
-
 # Use Cases
 
 | Version | Description                                                                                                                                                           |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | [How to use Dynamic Jasper Reports](http://www.zkoss.org/forum/listComment/10873)                                                                                     |
 | 6/5.0.8 | [Create a Report with ZK using iReport and JasperReports](http://books.zkoss.org/wiki/Small_Talks/2012/April/Create_a_Report_with_ZK_using_iReport_and_JasperReports) |
-
 # Troubleshooting
 
 ## Linux
@@ -185,5 +182,3 @@ information, please refer to [ZK Installation Guide: Linux]({{site.baseurl}}/zk_
 |---------|--------------|---------------------------------------|
 | 5.0.1   | March 2010   | Support Hibernate and SQL connections |
 | 5.0.8   |  | Upgrade JaserReport version to 4.0 and support new JasperReport exporter  |
-
-

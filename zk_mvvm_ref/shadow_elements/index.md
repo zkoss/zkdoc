@@ -36,6 +36,7 @@ Shadow elements are typically used to handle the following scenarios in a ZK MVV
 
 # Setup
 Before using shadow elements, make sure you include the required jar - `zuti.jar`. With maven, you should add the dependency below:
+
 ```xml
     <dependency>
         <groupId>org.zkoss.zk</groupId>

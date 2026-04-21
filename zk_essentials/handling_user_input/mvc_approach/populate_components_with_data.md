@@ -30,9 +30,8 @@ public class ProfileViewController extends SelectorComposer<Component>{
 ```
 -  Line 19: A controller usually calls service classes to perform business operations or get necessary data.
 
-
-
 To make sure all components objects are wired, we initialize them in `doAfterCompose()` since ZK will call this method after it creates all its child components, so that you can manipulate those children safely.
+
 ```java
 public class ProfileViewController extends SelectorComposer<Component>{
 
@@ -74,14 +73,12 @@ public class ProfileViewController extends SelectorComposer<Component>{
 -   Line 26-30: Populate saved user data to components by `setValue()`.
 -   Line 32: set the `Listbox`'s selected item with `ListModelList.addToSelection()`.
 
-
 # Populate Country Drop-down List
 This form needs a drop-down list that contains a list of countries. When a user visits the page, the data in drop-down list should
 be ready. To achieve this, we have to initialize a drop-down list in the
 controller.
 
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-collection.png)
-
 
 By setting `<listbox>` in "select" mold, We will have a drop-down list instead of a table-like component on the page.
 
@@ -90,13 +87,10 @@ By setting `<listbox>` in "select" mold, We will have a drop-down list instead o
 ```
 A component could have multiple different visual appearances. Each appearance is called a "mold". Therefore, you can choose a proper mold according to your visual requirement/page design.
 
-
 {% include component_model_template.md %}
-
 
 ## Create a Data Model
 Just a `<listbox>` in a zul doesn't provide any country to select. We need create a data model object.
-
 
 ```java
 public class ProfileViewController extends SelectorComposer<Component>{
@@ -125,7 +119,6 @@ public class ProfileViewController extends SelectorComposer<Component>{
 
 ## Define Listbox Template
 The last part is to define a template, so that `<listbox>` can know how to render its data model. If you don't define it, `<listbox>` renders the model with a default built-in template.
-
 
 ```xml
 <listbox id="country" mold="select" width="200px">
@@ -170,9 +163,8 @@ public class ProfileViewController extends SelectorComposer<Component>{
 ```
 -  Line 19: A controller usually calls service classes to perform business operations or get necessary data.
 
-
-
 To make sure all components objects are wired, we initialize them in `doAfterCompose()`.
+
 ```java
 
 public class ProfileViewController extends SelectorComposer<Component>{

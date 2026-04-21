@@ -2,8 +2,6 @@
 title: "HtmlBasedComponent"
 ---
 
-
-
 - Java API: [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
 - JavaScript API: [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)
 
@@ -17,10 +15,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The ZK Cascading Style class for this component. It usually depends on the implementation of the mold.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setZclass("custom-class");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component zclass="custom-class" />
   ```
@@ -29,10 +29,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The CSS class(es) for the component. Used for small adjustments like changing the font size.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setSclass("custom-style");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component sclass="custom-style" />
   ```
@@ -41,10 +43,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The text to display as a tooltip for the component.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setTooltiptext("This is a tooltip");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component tooltiptext="This is a tooltip" />
   ```
@@ -53,10 +57,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The CSS style for the component.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setStyle("color: blue; font-size: 14px;");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component style="color: blue; font-size: 14px;" />
   ```
@@ -65,10 +71,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** Denotes whether the component is draggable or specifies an identifier for the type of draggable object.
 - **Default Value:** `"false"`
 - **Example (Java):** 
+
   ```java
   component.setDraggable("true");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component draggable="true" />
   ```
@@ -77,10 +85,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** Denotes whether the component is droppable or specifies identifiers of draggable types of objects that can be dropped onto this component.
 - **Default Value:** `"false"`
 - **Example (Java):** 
+
   ```java
   component.setDroppable("true");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component droppable="true" />
   ```
@@ -89,10 +99,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The width of the component. If null, the best fit is used.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setWidth("200px");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component width="200px" />
   ```
@@ -101,10 +113,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The height of the component. If null, the best fit is used.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setHeight("100px");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component height="100px" />
   ```
@@ -113,10 +127,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The left position of the component.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setLeft("10px");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component left="10px" />
   ```
@@ -125,10 +141,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The top position of the component.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setTop("10px");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component top="10px" />
   ```
@@ -137,10 +155,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The Z index of the component.
 - **Default Value:** `-1`
 - **Example (Java):** 
+
   ```java
   component.setZIndex(100);
   ```
 - **Example (ZUL):**
+
   ```xml
   <component zIndex="100" />
   ```
@@ -149,10 +169,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** Vertical flexibility hint of the component. It indicates how the container distributes remaining empty space among its children vertically.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setVflex("1");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component vflex="1" />
   ```
@@ -161,10 +183,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** Horizontal flexibility hint of the component. It indicates how the container distributes remaining empty space among its children horizontally.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setHflex("min");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component hflex="min" />
   ```
@@ -173,10 +197,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The number of milliseconds before rendering the component at the client.
 - **Default Value:** `-1`
 - **Example (Java):** 
+
   ```java
   component.setRenderdefer(500);
   ```
 - **Example (ZUL):**
+
   ```xml
   <component renderdefer="500" />
   ```
@@ -185,10 +211,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The client-side action (CSA) for the component.
 - **Default Value:** `null`
 - **Example (Java):** 
+
   ```java
   component.setClientAction("show: slideDown; hide: slideUp");
   ```
 - **Example (ZUL):**
+
   ```xml
   <component action="show: slideDown; hide: slideUp" />
   ```
@@ -197,10 +225,12 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 - **Description:** The tab order of the component.
 - **Default Value:** `0`
 - **Example (Java):** 
+
   ```java
   component.setTabindex(2);
   ```
 - **Example (ZUL):**
+
   ```xml
   <component tabindex="2" />
   ```
@@ -220,7 +250,6 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 | `onCtrlKey`       | **Event:** [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)                  | Denotes a user has pressed a special key combined with the Ctrl or Alt key. Refer to the `ctrlKeys` property for details. |
 | `onAfterSize`     | **Event:** [AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)    | Fired after a user resizes a sizable component in a browser or when a component calculates its size in a browser. |
 | `onCreate`        | **Event:** [CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)          | Event fired when the component is created.                                                            |
-
 ## Supported Children
 
 `*ALL`: Indicates that the `HtmlBasedComponent` can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends `HtmlBasedComponent`, providing flexibility and customization options for your designs.

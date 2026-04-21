@@ -2,8 +2,6 @@
 title: "On-demand Evaluation"
 ---
 
-
-
 By default, ZK creates components based on what is defined in a ZUML
 document when loading the document. However, we can defer the creation
 of some sections of components, until necessary, such as becoming

@@ -69,4 +69,3 @@ You can also construct collections directly in an expression:
 ```xml
 <label value="@load(([1, 2, 3, 4].stream().sum()))" />
 ```
-

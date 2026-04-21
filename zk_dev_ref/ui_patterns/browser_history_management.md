@@ -27,7 +27,6 @@ history:
 2.  Listen to the `onBookmarkChange` event for bookmark change, and
     switch the state accordingly.
 
-
 ## Add Bookmarks to Browser's History
 
 Your application has to decide what the appropriate states are to add to

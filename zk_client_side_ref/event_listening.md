@@ -138,5 +138,3 @@ sections is for handling so-called ZK widget event
 ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)). Though rare, you could
 register a DOM-level event too by the use of jQuery (API:
 [\_global\_.jq](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.jq.html)).
-
-

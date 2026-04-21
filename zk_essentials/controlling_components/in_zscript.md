@@ -11,6 +11,7 @@ environment, **we don't recommend to use it in production environment**.
 We can declare variables and write statements in `<zscript>`. ZK will run it when loading a zul.
 
 **sidebar-zscript.zul**
+
 ```xml
 <grid hflex="1" vflex="1" sclass="sidebar">
     <zscript><![CDATA[
@@ -28,6 +29,7 @@ We can declare variables and write statements in `<zscript>`. ZK will run it whe
 ## Implement an event listener
 
 **sidebar-zscript.zul**
+
 ```xml
 <grid hflex="1" vflex="1" sclass="sidebar">
     <zscript><![CDATA[
@@ -48,13 +50,13 @@ We can declare variables and write statements in `<zscript>`. ZK will run it whe
     is a implicit variable which you can use it directly without
     declaration. It's a wrapper object of `HttpServletRequest`.
 
-
 ## Register event listeners at "onClick"
 After defining the event listener, we should specify it in a `<row>`'s
 event attribute `onClick` because we want to invoke the event listener
 when clicking a `<row>`.
 
 **sidebar-zscript.zul**
+
 ```xml
 <grid>
     ...

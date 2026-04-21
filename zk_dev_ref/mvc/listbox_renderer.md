@@ -33,13 +33,11 @@ public class MyRenderer implements ListitemRenderer{
 }
 ```
 
-
 # Version History
 
 | Version | Date          | Content                            |
 |---------|---------------|------------------------------------|
 | 6.0.0   | February 2012 | The index argument was introduced. |
-
 [^1]: If the listbox is assigned a template called `model`, then the
     template will be used to render the listbox. For more information,
     please refer to [the Listbox Template section]({{site.baseurl}}/zk_dev_ref/mvc/listbox_template).

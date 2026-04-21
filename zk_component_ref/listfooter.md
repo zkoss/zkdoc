@@ -2,12 +2,10 @@
 title: "Listfooter"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Listfooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfooter.html)
 - JavaScript API:
   [zul.sel.Listfooter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listfooter.html)
-
 
 # Employment/Purpose
 

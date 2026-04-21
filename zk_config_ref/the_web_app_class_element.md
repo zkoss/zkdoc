@@ -28,5 +28,3 @@ the `org.zkoss.zk.ui.impl.AbstractWebApp` or
 Alternatively, you could use [the web-app-factory-class element]({{site.baseurl}}/zk_config_ref/the_web_app_factory_class_element)
 instead. Notice, if both specified, [the web-app-factory-class element]({{site.baseurl}}/zk_config_ref/the_web_app_factory_class_element)
 has the higher priority.
-
-

@@ -15,7 +15,6 @@ This means you first define a clear specification for the feature you want to bu
 
 You can write these specifications manually or use tools designed for this purpose, such as [openspec](https://openspec.dev/) or [spec-kit](https://github.com/github/spec-kit).
 
-
 # ZK AI Tools and Integration
 
 ## ZK Documentation MCP Server

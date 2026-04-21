@@ -46,5 +46,3 @@ following is the type WPD recognized:
 | javax.servlet.ServletResponse and derives | The current response.        |
 | javax.servlet.ServletContext              | The current servlet context. |
 | Others                                    | null                         |
-
-

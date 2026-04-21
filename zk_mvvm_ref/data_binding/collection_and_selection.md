@@ -3,6 +3,7 @@
 Property Binding in Collection Type
 ===================================
 Assume that we have following ViewModel which has a collection type property:
+
 ```java
 public class ItemsVM {
 
@@ -15,6 +16,7 @@ public class ItemsVM {
 }
 ```
 For a ViewModel's ` Collection` type property, we usually bind it to those components that have **model** attribute like *Listbox*, *Grid*, or *Tree*. (You should not bind multiple attributes to a shared collection object, e.g. a static List, as concurrent issues may arise.)
+
 ```xml
 <grid width="400px" model="@bind(vm.itemList)">
 ```
@@ -27,6 +29,7 @@ After binding collection type property as a data source, we have to specify how 
 **each**, iteration object variable which references to each object of the model. We can use it to access an object's properties with dot notation, e.g. `each.name`.
 
 **`forEachStatus`**, iteration status variable. It's used to get iteration index by `forEachStatus.index`.
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.ItemsVM')">
@@ -53,6 +56,7 @@ For better readability, we can also set template's "var" and "status" attribute 
 **status="mystatus"**, set iteration status variable's name.
 
 #### The ViewModel for tree example
+
 ```java
 public class TreeVM {
 
@@ -60,6 +64,7 @@ public class TreeVM {
     //omit getter and setter for brevity
 }
 ```
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.TreeVM')">
@@ -91,6 +96,7 @@ Dynamic template allows developers to specify **which template to apply upon dif
 The binder will evaluate an EL expression as a template's name and look for corresponding template to render the child components. If the specified template doesn't exist in current component, it looks up the parent component's template. If no`@template` specified, it uses template that named **model** by default.
 
 #### Template name specified
+
 ```xml
 <grid model="@bind(vm.itemList) @template('myTemplate')">
     <template name="myTemplate">
@@ -103,6 +109,7 @@ The binder will evaluate an EL expression as a template's name and look for corr
 We could use EL to decide which template to use.
 
 #### Conditional
+
 ```xml
 <grid model="@bind(vm.itemList) @template(vm.type eq 'foo' ? 'template1' : 'template2')">
     <template name="template1">
@@ -118,6 +125,7 @@ We could use EL to decide which template to use.
 We also can use implicit variable, **each** and **forEachStatus**, in EL expression of `@template()`. That means we can apply different template on different item in the binding collection dynamically.
 
 #### Condition with implicit variables
+
 ```xml
 <grid model="@bind(vm.itemList) @template(each.type eq 'A' ? 'templateA' : 'templateB')">
     <template name="templateA">
@@ -138,6 +146,7 @@ For those components that do not support "model" attribute, we still can bind th
 For those components that already support "model" attribute, we also can use children binding to change original component's rendering. For example, *Radio*s are arranged horizontally inside a *Radiogroup*, we can use children binding on *Vlayout* to arrange *Radios* vertically.
 
 #### Children binding in radiogroup
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.ItemsVM')">
@@ -157,6 +166,7 @@ in order to render different child components upon different conditions.
 Here is an example to create a menu bar dynamically. If a menu item has no sub-menu, it creates *Menuitem* otherwise it creates *Menu*.
 
 #### An example of dynamic menu bar
+
 ```xml
 <menubar id="mbar" children="@bind(vm.menuList) @template(empty each.children ? 'menuitem' : 'menu')">
     <template name="menu" var="menu">
@@ -184,6 +194,7 @@ Single Selection
 For single selection state, ZK provides 2 kind of state. One is selected index and another is selected item of a model. We can create 2 properties in ViewModel for them respectively.
 
 #### Properties for selection
+
 ```java
 public class SingleSelectionVM {
 
@@ -202,6 +213,7 @@ public class SingleSelectionVM {
 To save or restore a component's selected index, we should bind **selectedIndex** attribute to a ViewModel's property with `@bind`. If we change the property's value for selection state in ViewModel, the component's selection state will also change.
 
 #### Listbox selectedIndex example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.SingleSelectionVM')">
@@ -225,6 +237,7 @@ To save or restore a component's selected index, we should bind **selectedIndex*
 To save or restore selected item we should bind **selectedItem** to a property whose type equals the object of the Model. In our example, we should bind "selectedItem" to an `Item` object.
 
 #### Listbox selectedItem example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.SingleSelectionVM')">
@@ -245,6 +258,7 @@ To save or restore selected item we should bind **selectedItem** to a property w
 The usage is similar for *Tree*. Most components that support "model" attribute support above 2 properties, but some do not, e.g. *Tree* doesn't support **selectedIndex** attribute. (Please refer to each component's javadoc for supported attributes).
 
 #### ViewModel for tree example
+
 ```java
 public class TreeSelectionVM {
 
@@ -254,6 +268,7 @@ public class TreeSelectionVM {
 }
 ```
 #### Tree example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.TreeSelectionVM')">
@@ -281,6 +296,7 @@ public class TreeSelectionVM {
 {% include supported-since.html version="6.5.1" %}
 
 We can bind `selectedItem` with any type of object, not only String.
+
 ```xml
 <vlayout children="@load(vm.itemList)">
     <template name="children">
@@ -294,6 +310,7 @@ We can bind `selectedItem` with any type of object, not only String.
 When using static data, we still can get and save "selectedItem" with similar rule. In the following example, we should bind "selectedItem" with a String property. Because we set String to *Radio*'s value. Their types have to match.
 
 #### Static data model
+
 ```xml
 <radiogroup selectedItem="@bind(vm.pickedItemName)">
     <radio label="Item 0" value="Item 0"/>
@@ -307,6 +324,7 @@ In previous section, we have said that type of object "selectedItem" attribute b
 
 ### Custom Single Selection
 Because *Tabbox* doesn't support "model" attribute, we should do a little extra work to keep selection state. We can create a ViewModel with a variable for selected item and create a command method to save selected item passed by command binding.
+
 ```java
 public class CustomSingleSelectionVM {
 
@@ -324,6 +342,7 @@ public class CustomSingleSelectionVM {
 ```
 First we use children binding to create *Tab* and *Tabpanel* dynamically then write a command binding on "onSelect" to pass selected item. Then we can set "selected" attribute by comparing selected item with the
 object bound with each *Tab*.
+
 ```xml
 <div apply="org.zkoss.bind.BindComposer" width="600px"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.CustomSingleSelectionVM')">
@@ -352,6 +371,7 @@ Some components support multiple selections, but it needs to be enabled before u
 To keep multiple selections state, we should bind **selectedItems** to a property whose type is `Set`.
 
 #### Selected Set
+
 ```java
 public class MultipleSelectionsVM {
 
@@ -363,6 +383,7 @@ public class MultipleSelectionsVM {
 }
 ```
 #### Multiple selections enabled Listbox
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.MultipleSelectionsVM')">
@@ -385,6 +406,7 @@ public class MultipleSelectionsVM {
 
 ### Custom Multiple Selections
 Some components don't support "selectedItems" attribute like *Checkbox*, we still can keep selection state by passing arguments. Create the following ViewModel contains a set to store selected items and a command that update items in the set according to passed arguments.
+
 ```java
 public class CustomMultipleSelectionsVM {
 
@@ -409,6 +431,7 @@ public class CustomMultipleSelectionsVM {
 *Checkbox* doesn't support "model" attribute, so we use children binding to render them upon item list. We also bind "onCheck" attribute to a command and pass selected `Item` object to command method for updating selected set.
 
 #### Selected items for checkboxes
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.collection.CustomMultipleSelectionsVM ')">
@@ -438,6 +461,7 @@ But if you have huge amount of data, and getting them takes unbearable long time
 [2]: If you still specify property notification for `ListModelList` property, *Listbox* renders all items (If ROD is disabled). Then you won't gain performance improvement.
 
 #### Use Java List as a model
+
 ```java
 public class ModelTypeVM extends SingleSelectionVM {
 
@@ -475,6 +499,7 @@ public class ModelTypeVM extends SingleSelectionVM {
 -   Line 13, 20: Because we change the property "itemList", we should notify binder to reload it.
 
 #### Use ListModelList as a model
+
 ```java
 public class ModelTypeVM extends SingleSelectionVM {
 

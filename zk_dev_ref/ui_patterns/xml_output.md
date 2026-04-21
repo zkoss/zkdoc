@@ -2,8 +2,6 @@
 title: "XML Output"
 ---
 
-
-
 In addition to generating HTML output to a browser, ZK could be used to
 generate (static) XML output to any client that recognizes it, such as
 [RSS](http://www.whatisrss.com/) and [Web Services](http://en.wikipedia.org/wiki/Web_service).
@@ -83,7 +81,6 @@ where
 - To use `zscript`, `forEach` and other ZK specific features, you have
   to specify the [ZK namespace](/zuml_ref/zk) (zk).
 
-
 # Maps the File Extension to ZK Loader
 
 To let ZK Loader process the file, you have to associate it with the ZK
@@ -96,7 +93,6 @@ Loader in `WEB-INF/web.xml`. In this example, we map all files with the
      <url-pattern>*.svg</url-pattern>
  </servlet-mapping>
 ```
-
 
 # Maps the File Extension to the XML Component Set
 
@@ -115,7 +111,6 @@ set:
 where `xml` is the language name of the [XML component set](/zuml_ref/xml). Thus, when ZK Loader
 parses a file with the `.svg` extension, it knows the default language
 is the XML component set[^3].
-
 
 [^1]: By the unknown tag we mean an XML element that is not associated
     with an XML namespace, or the namespace is unknown.

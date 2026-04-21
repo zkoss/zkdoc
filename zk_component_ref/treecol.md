@@ -2,11 +2,9 @@
 title: "Treecol"
 ---
 
-
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: [org.zkoss.zul.Treecol](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecol.html)
 - JavaScript API: [zul.sel.Treecol](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treecol.html)
-
 
 # Employment/Purpose
 
@@ -68,21 +66,14 @@ A `treecol`is a top column of tree, Its parent must be `Treecols`.
 | Name | Event Type |
 |---|---|
 | `onSort` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has sorted the treeitem of this treecol. |
-
 - Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
 
-
-
 # Version History
-
-
 
 | Version | Date     | Content              |
 |---------|----------|----------------------|
 | 5.0.6   | Feb 2011 | Support onSort event |
-
-

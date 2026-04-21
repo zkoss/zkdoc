@@ -242,7 +242,6 @@ ROD provides substantial performance improvements across multiple dimensions:
 - Reduced bandwidth usage for large datasets
 - Optimized server responses through intelligent caching
 
-
 ## ROD vs Live Data vs Custom ListModel Comparison
 
 The following diagram illustrates how ROD optimizes the data processing pipeline across different layers:

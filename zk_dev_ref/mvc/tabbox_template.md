@@ -2,8 +2,6 @@
 title: "Tabbox Template"
 ---
 
-
-
 The template used to control the rendering of each tab and tabpanel must
 be named `model:tab` and `model:tabpanel` and declared right inside the
 `tabbox` element. For example,
@@ -60,7 +58,6 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 ```
 
 ![]({{site.baseurl}}/zk_dev_ref/images/st201311-tabbox.png)
-
 
 ## Component's Value
 
@@ -135,7 +132,6 @@ For example,
 | Version | Date          | Content                                                             |
 |---------|---------------|---------------------------------------------------------------------|
 | 7.0.0   | November 2013 | [Tabbox support ListModel](http://tracker.zkoss.org/browse/ZK-2002) |
-
 [^1]: Of course, it can be anything you like. Just make sure it matches
     the EL expressions specified in the template.
 

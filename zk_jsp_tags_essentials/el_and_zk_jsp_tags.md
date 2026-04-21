@@ -2,8 +2,6 @@
 title: "EL and ZK JSP Tags"
 ---
 
-
-
 ZK JSP Tags fully supports JSP EL allowing EL expressions to access
 variables in both JSP world and ZK world, such as components.
 
@@ -147,4 +145,3 @@ iterator in generated ZK components, here the **\<custom-attribute
     </c:foreach>
 </zk:page>
 ```
-

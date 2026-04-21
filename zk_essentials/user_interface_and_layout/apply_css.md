@@ -3,6 +3,7 @@
 In addition to setting a component's attribute, we can also change a component's style by *CSS (Cascading Style Sheet)*. There are two component attributes to apply CSS:
 
 1. `style` attribute. Like the "style" attribute on an HTML element, you can directly write CSS rules as the attribute's value.
+
 ```xml
 <label value="Chapter 1" style="font-weight: bold;"/>
 ```

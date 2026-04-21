@@ -12,6 +12,7 @@ Data binding is a mechanism to ensure that any change made to the data in a UI c
 Developers use ZK bind annotation to define various data binding relationship. The **binding source** is a component's attribute and **binding target** is a ViewModel's property or Command. When we bind a component to a ViewModel, that component becomes the ViewModel's **Root View Component**. Attributes of all child components and root view component itself can be bound to the ViewModel's properties (or command) through ZK bind annotation. This Root View Component doesn't have to be the root component of a page,
 
 For example:
+
 ```xml
 <vlayout>
     <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MainViewModel')" >

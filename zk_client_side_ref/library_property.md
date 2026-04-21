@@ -15,5 +15,3 @@ title: "library-property"
 
 It specifies the library property
 ([org.zkoss.lang.Library#setProperty(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/lang/Library.html#setProperty(java.lang.String, java.lang.String))).
-
-

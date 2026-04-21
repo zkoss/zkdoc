@@ -96,12 +96,14 @@ You can allow `href="javascript:;"` while maintaining CSP protection by using th
 ### Steps to implement:
 
 1. Generate the hash for `javascript:;`:
+
    ```bash
    echo -n "javascript:;" | openssl dgst -sha256 -binary | openssl base64
    ```
    This generates: `sha256-lfXlPY3+MCPOPb4mrw1Y961+745U3WlDQVcOXdchSQc=`
 
 2. Add the hash to your CSP header configuration:
+
    ```xml
    <?header name="Content-Security-Policy"
            value="'unsafe-hashes' 'sha256-lfXlPY3+MCPOPb4mrw1Y961+745U3WlDQVcOXdchSQc='" ?>

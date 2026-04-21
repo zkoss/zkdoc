@@ -2,11 +2,9 @@
 title: "Treerow"
 ---
 
-
 - Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
 - Java API: [org.zkoss.zul.Treerow](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treerow.html)
 - JavaScript API: [zul.sel.Treerow](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treerow.html)
-
 
 # Employment/Purpose
 
@@ -80,10 +78,6 @@ in it, such as label, image, textbox etc.
 
 # Version History
 
-
-
 | Version | Date       | Content                                                                     |
 |---------|------------|-----------------------------------------------------------------------------|
 | 5.0.1   | March 2010 | Allow the context, tooltip and popup properties to be specified in Treerow. |
-
-

@@ -2,6 +2,7 @@
 
 ## Initial Method
 The binder is responsible for creating and initializing a ViewModel instance. If you want to perform your own initialization in a ViewModel, you can declare your own **initial method** by annotating a method with `@Init`. The Binder will invoke this method when initializing a ViewModel. Each ViewModel can only have one initial method.
+
 ```java
 public class MyViewModel {
 
@@ -12,6 +13,7 @@ public class MyViewModel {
 }
 ```
 This annotation has an attribute named "superclass", if you set it to "true". The binder will look for the initial method of ViewModel's parent class and invoke it first if it exists.
+
 ```java
 public class ParentViewModel {
 
@@ -36,6 +38,7 @@ Please notice that child class's initial method **should not override parent cla
 {% include supported-since.html version="6.0.1" %}
 
 If super has an init method but its ChildViewModel doesn't, you can add `@Init(superclass=true)` on the ChildViewModel to use super's init.
+
 ```java
 public class ParentViewModel {
     @Init

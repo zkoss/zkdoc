@@ -2,12 +2,10 @@
 title: "Gimage"
 ---
 
-
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: N/A
 - JavaScript API: N/A
-
 
 # Employment/Purpose
 
@@ -33,4 +31,3 @@ swlat="37.44215478" swlng="-122.14273453" nelat="37.45033195" nelng="-122.131919
 # Supported Children
 
 `*None`
-

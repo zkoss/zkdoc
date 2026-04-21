@@ -1,7 +1,4 @@
 
-
-
-
 # Close
 
 Due to ZK component's specifications, only ***panel*, *tab*, and
@@ -67,5 +64,3 @@ are detached one by one.
 </tr>
 </tbody>
 </table>
-
- 

@@ -20,10 +20,10 @@ Your environment should have the following installed:
 - `uv` package manager (https://docs.astral.sh/uv/) - optional but recommended
 - **Git** (2.7 or higher) - Required for cloning ZK documentation from the Github repository
 
-
 ### Installation zk doc MCP server from PyPI
 
 create a virtual environment of Python 3.10
+
 ```bash
 uv venv --python 3.10
 ```
@@ -34,13 +34,14 @@ uv pip install zk-doc-mcp-server
 # This command installs the package into the currently active virtual environment.
 ```
 
-
 List installed package to check
+
 ```bash
 uv pip list
 ```
 
 Upgrade it if you installed an older version
+
 ```bash
 uv pip install --upgrade zk-doc-mcp-server
 ```
@@ -62,6 +63,7 @@ This command:
 After running `init`, subsequent server startups can be immediately ready for doc search. Otherwise, you might need to wait for several minutes for background indexing.
 
 **Check status or re-index after documentation updates:**
+
 ```bash
 # Re-sync and re-index if documentation has changed
 uvx zk-doc-mcp-server init
@@ -80,6 +82,7 @@ The server uses **incremental indexing** that automatically detects documentatio
 Most AI tools support using an MCP server, please check their document to know how to configure it. Here we just give some examples.
 
 **Using with Claude Code**
+
 ```bash
 claude mcp add zk-doc -- uvx zk-doc-mcp-server
 ```
@@ -87,6 +90,7 @@ claude mcp add zk-doc -- uvx zk-doc-mcp-server
 **Using with Gemini CLI**
 
 Add the MCP server to your Gemini configuration file (typically `~/.gemini/settings.json` or similar):
+
 ```json
 {
   "mcpServers": {
@@ -100,6 +104,7 @@ Add the MCP server to your Gemini configuration file (typically `~/.gemini/setti
 
 ### Start using it
 Ask your AI tool to search zk doc like:
+
 ```
 Search the ZK doc for "what is desktop"
 ```
@@ -114,6 +119,7 @@ Search ZK documentation for relevant content using semantic search.
 - `limit` (integer, optional, default: 5): Maximum results to return (1-20)
 
 **Response:**
+
 ```json
 {
   "results": [],
@@ -141,6 +147,7 @@ When search results don't meet user expectations, this tool captures feedback th
 - **Graceful fallback** - feedback is preserved locally if network fails
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -160,6 +167,7 @@ This tool enables you to inspect the current server configuration, including all
 None - this tool takes no parameters.
 
 **Response:**
+
 ```json
 {
   "settings": {
@@ -184,11 +192,13 @@ None - this tool takes no parameters.
 ```
 
 **Usage in Claude Code:**
+
 ```
 Show me the current ZK doc MCP server settings
 ```
 
 **Usage in Gemini CLI:**
+
 ```
 Use the show_settings tool from zk-doc server
 ```
@@ -199,7 +209,6 @@ Use the show_settings tool from zk-doc server
 - Confirm the vector database location
 - Debug configuration issues
 - Discover available configuration options
-
 
 ## Configuration
 
@@ -222,8 +231,6 @@ The server provides the following configurable settings:
 | `ZK_MCP_FEEDBACK_ENABLED`        | `true`                               | Enable feedback collection for search improvements                  |
 | `ZK_MCP_FEEDBACK_RETENTION_DAYS` | `90`                                 | Days to retain local feedback files                                 |
 | `ZK_MCP_FEEDBACK_GITHUB_REPO`    | `zkoss/zkdoc`                        | GitHub repository for feedback issues (built-in)                    |
-
-
 ### Example Usages
 
 #### Example: Using SSH for Git Clone

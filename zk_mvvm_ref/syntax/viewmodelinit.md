@@ -17,6 +17,7 @@
 Binder calls the method with this annotation when initializing a ViewModel. In a ViewModel class, **only one initial method is allowed at the most**. If you set annotation element **superclass** to **true**, the ViewModel's parent class's initial method will be invoked first, then the child's; this logic repeats on super class. If a class has no method with `@Init`, no method will be called (including the super class's)<sub>[1]</sub>.
 
 For example, in a class hierarchy:
+
 ```java
 class A {
 	@Init
@@ -70,6 +71,7 @@ E is the last child class.
 We can also use parameter related annotations on initial method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters).
 
 [1]: If you override parent class's initial method and set `superclass=true`, due to Java's limitation, child's method will be called twice. To avoid this, you should **remove** `superclass=true` in child class and use `super` to invoke parent's implementation.
+
 ```java
 class Parent {
 	@Init
@@ -96,6 +98,7 @@ class CorrectChild extends Parent {
 ```
 
 # Example
+
 ```java
 public class FooViewModel {
     @Init

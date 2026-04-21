@@ -1,5 +1,4 @@
 
-
 # Overview
 
 Time is a complicated concept in a web application that serves users
@@ -87,7 +86,6 @@ These choices combine as follow:
 |-----------------------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | Format contains time        | Send a date at the selected time of day in the user's time zone, on the selected day | Send a date at the current time of day in the user's time zone on the selected day |
 | Format doesn't contain time | Send a date at the time of day of the server's initial date, on the selected day     | Send a date at midnight in the user's time zone on the selected day                |
-
 ## Common issue with client time
 
 Based on the table in the previous section, some Date parsing issues may

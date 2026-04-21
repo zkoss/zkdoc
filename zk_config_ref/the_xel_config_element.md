@@ -50,13 +50,10 @@ following:
 
 **Notes**
 
-
-
 ## Version History
 
 | Version | Date      | Content                                                                                              |
 |---------|-----------|------------------------------------------------------------------------------------------------------|
 | 6.0.0   | Sep. 2011 | Support those new features seen in Unified Expression Language 2.2 such as method calls and l-value. |
-
 [^1]: Required only if you are using the Web server that supports only
     JSP 2.0.

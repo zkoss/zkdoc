@@ -43,5 +43,3 @@ Please refer BeanShell official site. ==
 containas all files in bsh-core-version.jar.
 
 by Mars Chen (Taiwan)
-
-

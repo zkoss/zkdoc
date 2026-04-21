@@ -80,7 +80,6 @@ attribute. The following code shows how to associate a controller with a `<windo
     </window>
 ```
 
-
 After associating the controller with the *window* component, the
 controller can listen to events sent from UI and retrieve components
 which allows us to implement the application's feature. Let's start from

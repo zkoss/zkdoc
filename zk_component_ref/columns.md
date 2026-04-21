@@ -2,11 +2,9 @@
 title: "Columns"
 ---
 
-
 - Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
 - Java API: [org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html)
 - JavaScript API: [zul.grid.Columns](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Columns.html)
-
 
 # Employment/Purpose
 
@@ -119,6 +117,3 @@ column provides the auto-fitting feature.
 # Use Cases
 
 [ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
-
-
-

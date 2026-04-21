@@ -1,5 +1,4 @@
 
-
 # Paging
 
 - Component Reference:
@@ -23,5 +22,3 @@ attribute.
 | Version | Date       | Content                                                                                                         |
 |---------|------------|-----------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Grid/List/Tree support changing page by swipe event on tablet device](http://tracker.zkoss.org/browse/ZK-1283) |
-
-

@@ -9,6 +9,7 @@ is like a broker and uses ViewModel's meta data(annotation) and methods to help 
 ![MVVM Binder]({{site.baseurl}}/zk_mvvm_ref/images/mvvm-binder.png)
 
 ZK also allows you to change default queue name and scope that a binder subscribes. You can separate binders into different groups by changing queue's name and scope upon your requirement.The syntax is as follows:
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')"
     binder="@init(queueName='myqueue')">

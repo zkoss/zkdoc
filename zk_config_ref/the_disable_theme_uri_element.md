@@ -27,5 +27,3 @@ is a more controllable alternative.
 It is usually used with the `theme-uri` element to replace the default
 theme. Please refer to [ZK Developer's Reference]({{site.baseurl}}/zk_dev_ref/theming_and_styling/customizing_standard_themes)
 for more details about theming and styling.
-
-

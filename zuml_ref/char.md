@@ -6,7 +6,6 @@ title: "char"
 char char(Object value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#toChar(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#toChar(java.lang.Object))
 
@@ -19,5 +18,3 @@ details.
 **Parameters:**
 
 - value - the value to convert
-
-

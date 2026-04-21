@@ -2,5 +2,3 @@
 
 The current page context used to retrieve the request, response,
 variable resolver and so on.
-
-

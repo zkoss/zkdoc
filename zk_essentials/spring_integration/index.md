@@ -25,7 +25,6 @@ Spring can help us manage these dependencies without instantiating
 dependent classes manually. In this chapter, we won't create new example
 applications but will make previous examples integrate with Spring.
 
-
 ## Source Code
 
 As we mentioned in the Introduction, our source code has [ 3 branches](../intro/project_structure)
@@ -36,8 +35,3 @@ branch: **zk8-spring**. You can select the branch and click
 We don't create new examples in this chapter, but we re-organize some
 classes. You can see from the image below. We move all service class
 implementations to the package `org.zkoss.essentials.services.impl`.
-
-
-
-
-

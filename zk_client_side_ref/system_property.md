@@ -14,5 +14,3 @@ title: "system-property"
 `[Optional]`
 
 It specifies the system property (java.lang.System).
-
-

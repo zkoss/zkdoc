@@ -2,13 +2,11 @@
 title: "Doublespinner"
 ---
 
-
 - Demonstration:
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Doublespinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublespinner.html)
 - JavaScript API:
   [zul.inp.Doublespinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublespinner.html)
-
 
 # Employment/Purpose
 
@@ -112,19 +110,12 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/spinner_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
-
 # Supported Children
 
 `*None`
 
-
-
 # Version History
-
-
 
 | Version | Date      | Content           |
 |---------|-----------|-------------------|
 | 5.0.6   | Dec. 2010 | add new component |
-
-

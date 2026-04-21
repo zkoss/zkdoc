@@ -60,5 +60,3 @@ However, you have to turn it off, if you use a
 [function]({{site.baseurl}}/zk_client_side_ref/function)
 that will generate the output depending on a varying condition (such as
 Locale and time zone).
-
-

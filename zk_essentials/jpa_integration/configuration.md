@@ -54,7 +54,6 @@ previous chapter.)
     we choose Hibernate's one which is the most popular.
 -   Line 32\~33: For using HSQL, we should add its JDBC driver.
 
-
 ## Persistence Unit Configuration
 
 We should describe persistence unit configuration in an XML file called
@@ -86,7 +85,6 @@ configurations.
 
 -   Line 3: The persistence unit name `myapp` will be used later in
     Spring configuration.
-
 
 ## Deployment Descriptor
 
@@ -129,7 +127,6 @@ for this issue in more detail.
 ```
 
 ## Entity Annotation
-
 
 Before storing objects into a database, we should specify OR
 (object-relation) mapping for Java classes with meta data. After JDK
@@ -175,7 +172,6 @@ public class Todo implements Serializable, Cloneable {
 ```
 
 ## Spring Beans Configuration
-
 
 Spring JPA , available under the `org.springframework.orm.jpa` package,
 offers integration support for Java Persistence API. According to Spring

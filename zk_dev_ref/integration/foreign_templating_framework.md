@@ -13,7 +13,6 @@ ZK also supports many powerful layout components, such as portallayout,
 borderlayout, tablelayout, columnlayout and so on[^2]. You could use
 them to have similar or better effect, and skip this chapter.
 
-
 # Prerequisite
 
 ## DOCTYPE
@@ -68,7 +67,6 @@ In other words, if the result page is assembled when the request is
 received, you don't need to do anything specially[^3]. However, if the
 assembling is done at the client side by using Ajax to request fragments
 after loaded, you have to read the following section.
-
 
 ## Load a ZUL page with an Ajax request
 
@@ -181,7 +179,6 @@ have to generate component's UUID
 correctly. A typical trick is to encode desktop's ID as part of
 component's UUID.
 
-
 # Communicate among ZUL pages
 
 If a ZUL page is loaded separately with Ajax, an independent desktop is
@@ -241,13 +238,11 @@ event queue[^5] if you want to send events from one desktop (such as
 leftside.zul) to another (such as rightside.zul). For more information,
 please refer to [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_queues).
 
-
 # Version History
 
 | Version | Date          | Content                                              |
 |---------|---------------|------------------------------------------------------|
 | 5.0.5   | October, 2010 | ZUL page is able to be generated as a HTML fragment. |
-
 [^1]: [Apache Tiles](http://tiles.apache.org/) is a typical templating
     framework and allows developers to assemble UI at both server and
     client.

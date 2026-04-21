@@ -2,7 +2,6 @@
 title: "Organigram"
 ---
 
-
 - Java API: [org.zkoss.zkmax.zul.Organigram](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html)
 - JavaScript API: [zkmax.layout.Organigram](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Organigram.html)
 
@@ -118,12 +117,8 @@ Template, please refer to:
 |---|---|
 | `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a new item in the organigram. |
 |  |  |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*`[` Orgchildren`]({{site.baseurl}}/zk_component_ref/orgchildren)
-
-
-

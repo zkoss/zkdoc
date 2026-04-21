@@ -61,5 +61,3 @@ and if they are different, the result is:
 
 Remember to always place your control-flow tags first to avoid any
 possible errors like the example showed.
-
-

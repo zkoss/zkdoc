@@ -68,7 +68,6 @@ section.
     parent.appendChild(n);
 ```
 
-
 # The Stub-izing of Native Components
 
 By default, a native component will be *stub-ized*, i.e., they will be
@@ -94,15 +93,11 @@ attached back).
 
 Once set, descendant components unless it was set explicitly.
 
-
 # Version History
 
 | Version | Date          | Content                                                                                          |
 |---------|---------------|--------------------------------------------------------------------------------------------------|
 | 5.0.6   | January, 2011 | The attribute called `org.zkoss.zk.ui.stub.native` was introduced to disable the *stub-ization*. |
-
-
-
 [^1]: In fact, it will still create some components for the rerender
     purpose, such as
     [org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate()).

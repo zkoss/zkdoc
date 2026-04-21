@@ -1,5 +1,4 @@
 
-
 # Scrollview
 
 - Demonstration: N/A
@@ -63,21 +62,14 @@ The default orient of child components inside Scrollview is
 |---|---|
 | `onScroll` | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) **In mobile devices:** Denotes that the content of a scrollable component has been scrolled by the user. Notice that you can check if it is scrolled outside/inside boundaries by invoking `getOutOfBound` method in the ScrollEvent. **In desktop:** This event will be triggered when users scroll all the way to the top or to the end of the page. |
 | `onScrolling` | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the user is scrolling a scrollable component. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content             |
 |---------|--------------|---------------------|
 | 6.5.0   | August, 2012 | new added component |
-
-

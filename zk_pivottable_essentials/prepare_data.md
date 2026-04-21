@@ -120,8 +120,6 @@ Hint: If you can't wait to play around with the component, you can jump
 to [ next section]({{site.baseurl}}/zk_pivottable_essentials/create_pivottable)
 and come back to read further if necessary.
 
- 
-
 ### Summary and Subtotals
 
 After adding fields on a PivotModel, you can change the summary type for
@@ -179,8 +177,6 @@ Note:
   words, if you have *A, B, C* as column fields and specify a subtotal
   on *B*, then *A* has no subtotal.
 
- 
-
 ### Header Grouping
 
 On row and column, we categorize data by fields in the given order, but
@@ -201,8 +197,6 @@ field.setGroupHandler(new GroupHandler(){
 });
 // now it converts the Date to a String of format "yyyy/MM" for comparison, so the data will be categorized by month
 ```
-
- 
 
 ### Header Sorting
 
@@ -241,8 +235,6 @@ model.setFieldKeyOrder("Date", false);
 // this is the default setting
 model.setFieldKeyOrder("Date", true); 
 ```
-
- 
 
 ## Use data from database
 
@@ -286,8 +278,6 @@ private static String join(String ... strs) {
 }
 ```
 
- 
-
 ## Filtering input data
 
 To filter the input data of a TabularPivotModel, you can either prepare
@@ -303,7 +293,5 @@ Iterable<List<Object>> filteredData = PivotModels.filter
     }
 });
 ```
-
- 
 
 #

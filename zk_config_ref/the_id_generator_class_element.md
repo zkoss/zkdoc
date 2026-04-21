@@ -21,5 +21,3 @@ application, so you have to synchronize the access properly.
 
 If no ID generator is specified, the default ID generation algorithm
 will be used.
-
-

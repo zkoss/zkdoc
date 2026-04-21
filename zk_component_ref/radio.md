@@ -2,11 +2,9 @@
 title: "Radio"
 ---
 
-
 - Demonstration: [Radio](http://www.zkoss.org/zkdemo/input/radio_button)
 - Java API: [org.zkoss.zul.Radio](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html)
 - JavaScript API: [zul.wgt.Radio](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Radio.html)
-
 
 # Employment/Purpose
 
@@ -44,8 +42,4 @@ radio button with the same group may be selected at a time.
 |---------|------------------------------------------------|----------------------------------------------------------------------------------------------|
 | 3.6     | Radio buttons with Listitems                   | [<http://www.zkoss.org/forum/listComment/3867>](http://www.zkoss.org/forum/listComment/3867) |
 | 3.6     | Radiogroup radio's in seperate table/grid rows | [<http://www.zkoss.org/forum/listComment/9002>](http://www.zkoss.org/forum/listComment/9002) |
-
 See also: [ Radiogroup]({{site.baseurl}}/zk_component_ref/radiogroup#Use_Cases)
-
-
-

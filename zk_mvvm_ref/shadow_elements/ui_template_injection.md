@@ -19,6 +19,7 @@ You can define a `<template>` inside any component. A template remains dormant a
 
 ### Inline Template
 Define the UI components directly within the tag:
+
 ```xml
 <div>
     <template name="layout">
@@ -29,6 +30,7 @@ Define the UI components directly within the tag:
 
 ### External Template
 Reference an external ZUL file using the `src` attribute:
+
 ```xml
 <div>
     <template name="layout" src="/mytemplate.zul"/>
@@ -41,12 +43,14 @@ When you apply a template, ZK creates the components defined inside it and inser
 
 ### By Name
 Apply a template defined within the current component scope:
+
 ```xml
 <apply template="layout"/>
 ```
 
 ### By URI
 Apply an external ZUL file directly:
+
 ```xml
 <apply templateURI="/chapter1/banner.zul"/>
 ```
@@ -57,18 +61,21 @@ You can pass data to templates to make them dynamic and reusable for different d
 
 ### Dynamic Properties
 Add attributes directly to the `<apply>` tag. These become available as variables (or within the `arg` map) inside the template.
+
 ```xml
 <apply template="userProfile" username="John Doe" role="Admin"/>
 ```
 
 ### Reference Binding Passing
 In MVVM, use `@ref` to pass object references efficiently without triggering full data loading until needed in the template.
+
 ```xml
 <apply template="iterate" menuItems="@ref(vm.menuHierarchy)"/>
 ```
 
 ### Query Strings for URI
 When using `templateURI`, you can pass parameters via a query string. Note that parameters passed this way are always **Strings**.
+
 ```xml
 <apply templateURI="/mytemplate.zul?mode=edit&id=123"/>
 ```

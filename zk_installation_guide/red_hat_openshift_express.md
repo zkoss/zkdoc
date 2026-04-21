@@ -137,8 +137,6 @@ see the result
 
 ------------------------------------------------------------------------
 
-
-
 # Sample
 
 - \[<http://sourceforge.net/projects/zkforge/files/Small_Talks/ZK_Sandbox_for_OpenShift/>?

@@ -40,7 +40,6 @@ size, and other options. Please refer to
 </menupopup>
 ```
 
-
 ## Open File Upload Dialog
 
 If you want the file upload on another component rather than those

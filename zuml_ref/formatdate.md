@@ -8,7 +8,6 @@ The default method:
 String formatDate(Date date, String pattern);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#formatDate(java.util.Date, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatDate(java.util.Date, java.lang.String))
 

@@ -2,7 +2,6 @@
 title: "CKEditor5"
 ---
 
-
 - Java API: N/A
 - JavaScript API: N/A
 
@@ -26,7 +25,6 @@ CKEditor 5 introduces a completely new architecture and modern features such as 
 | Collaboration and Diversity | Emphasizes diverse editing features and collaboration tools, such as rich text editing, embedded content, and collaboration plugins. | While feature-rich, it has comparatively limited capabilities in terms of collaboration and extensibility. |
 | Modern User Experience | Provides a modern and intuitive user interface, enhancing the overall editing experience. | Has a relatively more traditional interface. |
 | Ecosystem | Has undergone a comprehensive upgrade in its ecosystem of plugins and tools, offering more choices and flexibility. | Boasts a vast ecosystem but may be comparatively restricted in certain aspects. |
-
 # Maven
 
 ZKCKEditor 5 Wrapper requires a license.  
@@ -357,7 +355,6 @@ when the editor is rendered (according to the content height).
 |------|------------|
 | `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes the content of an input component has been modified by the user. |
 | `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)<br><br>**Description:** Denotes that user is changing the content of an input component. Notice that the component's content (at the server) won't be changed until `onChange` is received. Thus, you have to invoke the `getValue`method in the `InputEvent`class to retrieve the temporary value. |
-
 **Note** : Unlike ZK CKEditor 4, ZK CKEditor 5 doesn't support `onSave`
 event, because it doesn't provide a save button.
 

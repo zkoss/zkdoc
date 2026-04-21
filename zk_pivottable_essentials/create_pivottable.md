@@ -49,8 +49,6 @@ will give
 
 ![](images/ZKPivotEsn_work_pivot_22.png)
 
- 
-
 ## Title Cells
 
 Pivottable can accept up to 3 child components, which will represent the

@@ -2,7 +2,6 @@
 title: "Panelchildren"
 ---
 
-
 - Demonstration: [Panel Demo](https://www.zkoss.org/zkdemo/window/panel)
 - Java API: [org.zkoss.zul.Panelchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Panelchildren.html)
 - JavaScript API: [zul.wnd.Panelchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Panelchildren.html)
@@ -34,7 +33,6 @@ The following example demonstrates the usage of Panelchildren within Panel compo
 Try it
 
 * [Panelchildren Example](https://zkfiddle.org/sample/260lpts/1-ZK-Component-Reference-Panelchildren-Example?v=latest&t=Iceblue_Compact)
-
 
 In the above example:
 - Two Panel components are created with specified attributes such as height, width, title, border, and more.

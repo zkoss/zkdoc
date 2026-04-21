@@ -19,6 +19,7 @@ The annotation is applied to initial (or command) method's parameter. It declare
 {% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
+
 ```java
 @ExecutionParam String keyString
 ```
@@ -28,6 +29,7 @@ The value can be omitted if name is the same as the annotated parameter.
 Assume we want to pass an object by execution's attribute to an included ZUL that uses a ViewModel: ` ExecutionParamVM`.
 
 #### outer ZUL
+
 ```xml
 <window id="w2">
     <zscript>
@@ -57,6 +59,7 @@ public class ExecutionParamVM {
 }
 ```
 #### executionparam-inner.zul
+
 ```xml
     <vbox apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ExecutionParamVM')">
         <label value="@load(vm.param1)"/>
@@ -64,4 +67,3 @@ public class ExecutionParamVM {
 ```
 
 -   The label will display "abc".
-

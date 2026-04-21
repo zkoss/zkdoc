@@ -2,7 +2,6 @@
 title: "Messagebox"
 ---
 
-
 - Demonstration: [Messagebox](http://www.zkoss.org/zkdemo/userguide/#l8)
 - Java API: [org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html)
 - JavaScript API: N/A
@@ -56,7 +55,6 @@ will return immediately after the invocation[^2]. Then, if the user
 clicks a button, the event listener will be invoked. You could examine
 the event name to know which button is clicked. If the user clicked the
 Close button on the right-top corner, the `onClose` event is fired.
-
 
 ### Listen ClickEvent
 
@@ -229,8 +227,6 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date           | Content                                                                                                           |
@@ -239,9 +235,6 @@ Check inherited events
 | 6.0.0   | October 2011   | [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html) was introduced to simplify the identification of a button. |
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
-
-
-
 [^1]: If you want to make it running under clustering environment, you
     should implement
     [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html).

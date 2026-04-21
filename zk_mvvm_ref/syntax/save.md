@@ -29,6 +29,7 @@ Command name must correspond to the name specified in Java annotation`@Command` 
 # Example
 
 #### Basic usage
+
 ```xml
 <textbox value="@load(vm.person.name) @save(vm.person.name, before='save')"/>
 
@@ -36,6 +37,7 @@ Command name must correspond to the name specified in Java annotation`@Command` 
 ```
 
 #### Saving and loading form attribute
+
 ```xml
 <textbox value="@save(vm.number) @load(vm.number, after='cmd')"/>
 ```

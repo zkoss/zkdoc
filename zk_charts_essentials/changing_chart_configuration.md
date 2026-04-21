@@ -2,8 +2,6 @@
 title: "Changing Chart Configuration"
 ---
 
-
-
 ZK Charts provides a set of comprehensive
 [API](http://www.zkoss.org/javadoc/latest/zkcharts/) for chart
 configuration options. You can change a chart's appearance including
@@ -76,18 +74,12 @@ Please see [Highcharts API reference](https://api.highcharts.com/highcharts/) fo
 Please remember to check which Highcharts version is available for an
 option.
 
-
-
 ![](images/zkcharts-essentials-apiVersion.jpg)
-
 
 You can know the version of Highcharts bundled in ZK Charts by checking
 `chart.wpd` in a developer tool. (search **Highcharts**)
 
-
-
 ![](images/zkcharts-essentials-highchartsVersion.png)
-
 
 # Use addExtraAttr() for Options without Setter
 

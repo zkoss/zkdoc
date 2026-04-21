@@ -2,8 +2,6 @@
 title: "Annotation"
 ---
 
-
-
 This section describes how to add annotations on a component definition.
 When you annotate a component definition, all its instances will have
 the annotations. To annotate a component definition, you have to specify

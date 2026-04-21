@@ -28,6 +28,7 @@ Below is the index page, its content is nearly the same as the index
 page of page based example except it replaces all `<include>` with `<apply>`.
 
 **chapter6/ajaxbased/index.zul**
+
 ```xml
 <?link rel="stylesheet" type="text/css" href="/style.css"?>
 <zk>
@@ -48,14 +49,12 @@ page of page based example except it replaces all `<include>` with `<apply>`.
 </zk>
 ```
 
-
-
 **Replace `<include>` with `<apply>`**
 
 As we don't need to dynamically change the path of those 3 areas (banner, side bar, footer), using `<apply>` is a better choice than `<include>`. Because `<apply>` create neither an extra `<div>` enclosin its content nor a id space. It's the main strength of using a shadow component that doesn't create a real component.
 
-
 **chapter6/ajaxbased/mainContent.zul**
+
 ```xml
 <zk>
 	<include id="mainInclude"  src="/chapter6/ajaxbased/home.zul"/>
@@ -170,6 +169,3 @@ public class SidebarAjaxbasedController extends SelectorComposer<Component>{
 Visit the
 http://localhost:8080/zkessentials/chapter6/ajaxbased/index.zul to see
 the result.
-
-
-

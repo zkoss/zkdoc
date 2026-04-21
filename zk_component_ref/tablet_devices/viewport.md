@@ -2,8 +2,6 @@
 title: "Viewport"
 ---
 
-
-
 {% include supported-since.html version="6.5.0" %}
 
 # Viewport Content
@@ -37,5 +35,3 @@ as follows:
 ```xml
 <?page viewport="width=device-width, initial-scale=1.0"?>
 ```
-
-

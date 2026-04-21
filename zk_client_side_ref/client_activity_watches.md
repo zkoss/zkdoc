@@ -2,8 +2,6 @@
 title: "Client Activity Watches"
 ---
 
-
-
 In addtion to widget events
 ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) and DOM events
 ([jq.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/jq.Event.html)), there are some special

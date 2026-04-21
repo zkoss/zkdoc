@@ -24,6 +24,7 @@ We usually use save only binding on input components, e.g., textbox, to collect 
 - In save-only binding, only textbox's value change will be saved to ViewModel. ViewModel's change won't be loaded to textbox.
 
 ## Load only binding
+
 ```xml
 <label value="@load(vm.welcomeMessage)"/>
 ```
@@ -32,6 +33,7 @@ We usually use save only binding on input components, e.g., textbox, to collect 
 The timing of saving a component attributes' value to ViewModel is **when the attribute related event fires**. For example, textbox's value is saved on the onChange event firing. After you finish your input in a textbox and move the cursor out of the textbox, the input data is saved to ViewModel at that time.
 
 If ViewModel's property is a map, the syntax is as follows:
+
 ```xml
 <label value="@load(vm.myMapping['myKey'])"/>
 ```
@@ -40,15 +42,16 @@ If ViewModel's property is a map, the syntax is as follows:
 
 ## Can't save to a single variable
 In the following example, the save binding works because the expression `person.name` is resolved to a property of an object. 
+
 ```xml
 <textbox value="@bind(person.name)"/>
 ```
 
 However, if the expression only contains **a single variable**, a load binding will still work, but a save binding cannot perform. In the following example, the value `myname` is loaded to a textbox, but after editing the value, EL exception occurs when saving value back. Because ZK has no way to save it via a setter.
+
 ```xml
 <textbox value="@bind(myname)"/>
 ```
-
 
 # Conditional Binding
 
@@ -57,6 +60,7 @@ Sometimes we need to control the timing of saving or loading instead of dependin
 Assume that there is an order management application with a database. The following zul example is one of its page, listbox displays order list and doublebox is for editing an order detail.
 
 ## Save before a command
+
 ```xml
 <listbox model="@load(vm.orders)" selectedItem="@bind(vm.selected)" hflex="true" height="200px">
     <template name="model" var="item">
@@ -105,6 +109,7 @@ If a component has non-conditional property and command binding at the same time
 3.  Load binding
 
 # A component with multiple binding
+
 ```xml
 <textbox value="@bind(vm.filter)" onChange="@command('doSearch')"/>
 ```
@@ -114,6 +119,7 @@ If a component has non-conditional property and command binding at the same time
 
 We also can specify multiple Command's name in an array of string literal for property ` before ` or ` after `like following:
 ## Load after multiple commands
+
 ```xml
 <label value="@load(vm.person.firstname, after={'update', 'delete'})"/>
 ```
@@ -125,6 +131,7 @@ We need collection binding when we bind a container component's “model” attr
 
 We are using the following ViewModel to demonstrate usage of collection binding.
 ## ViewModel for collection binding
+
 ```java
 public class OrderVM {
 
@@ -151,6 +158,7 @@ public class OrderVM {
 
 ### “var” Attribute
 We usually use Collection Binding with `<template>` and specify its “var” attribute to name the **iteration variable** which represents each entry of the collection:
+
 ```xml
 <template name="model" var="item">
     <!-- other components -->
@@ -160,6 +168,7 @@ If you don't specify iteration variable name in var, the default name of var is:
 
 ### Implicit Iteration Status Variable
 ZK automatically set the variable name of iteration status upon the name of iteration variable and this variable stores the index of iteration. E.g. if you set ` var="item" `, then iteration index would be ` itemStatus.index `:
+
 ```xml
 <listbox>
     <template name="model" var="item">
@@ -174,6 +183,7 @@ If you don't specify iteration variable name in var, the default variable name o
 ## Binding on Listbox
 
 ### Collection binding with listbox
+
 ```xml
 <listbox model="@load(vm.orders)" selectedItem="@bind(vm.selected)" hflex="true" height="200px">
     <listhead>
@@ -202,12 +212,14 @@ If you don't specify iteration variable name in var, the default variable name o
 - With power of EL, we can implement simple presentation logic on the ZUL. Here we display quantity number in red color when it's less than 3. (line 14)
 
 ### Binding multiple selections
+
 ```xml
 <listbox selectedItems="@bind(vm.selected)" model="@load(vm.model)">
     <!-- other components -->
 </listbox>
 ```
 ### ViewModel for multiple selections
+
 ```java
 public class ListModelSelection {
     private List<String> model;
@@ -222,6 +234,7 @@ public class ListModelSelection {
 
 The usage is similar for grid.
 ### Collection binding usage for grid
+
 ```xml
 <grid model="@load(vm.orders)">
     <columns>
@@ -245,6 +258,7 @@ Dynamic template enables developers to specify **which template to apply upon di
 `@template( [EL-expression] )`. The binder will evaluate EL expression as a template's name and look for corresponding template to render child components. If the specified template doesn't exist in current component, it looks up parent component's template. If no`@template` assigned, it uses template that named **model** by default.
 
 ## Default case
+
 ```xml
 <grid model="@bind(vm.orders)">
     <template name="model">
@@ -253,6 +267,7 @@ Dynamic template enables developers to specify **which template to apply upon di
 </grid>
 ```
 ## Template name specified.
+
 ```xml
 <grid model="@bind(vm.orders) @template('myTemplate')">
     <template name="myTemplate">
@@ -262,6 +277,7 @@ Dynamic template enables developers to specify **which template to apply upon di
 ```
 You could use EL to decide which template to use.
 ## Conditional
+
 ```xml
 <grid model="@bind(vm.orders) @template(vm.type eq 'foo' ? 'template1' : 'template2')">
     <template name="template1">
@@ -275,6 +291,7 @@ You could use EL to decide which template to use.
 ```
 
 It also provides implicit variable: **each** (the instance of item in binding collection) and **forEachStatus** (the iteration status) when evaluating the template for each row. That is, you can request to use different `<template>` per each item in the binding collection.
+
 ```xml
 <grid model="@bind(vm.orders) @template(each.type='A' ? 'templateA' : 'templateB')">
     <template name="templateA">
@@ -293,6 +310,7 @@ It also provides implicit variable: **each** (the instance of item in binding co
 
 In many cases, it would be sufficient to mark the onChange event deferrable to avoid unnecessary AU requests and fine-tune the application performance.
 You can register component level deferPost by setting custom attributes(org.zkoss.bind.event.deferPost). By specifying this custom attribute to components, “saving” will occur during the next AU request.
+
 ```xml
     <textbox value="@bind(vm.text1)">
         <custom-attributes org.zkoss.bind.event.deferPost="false"/>

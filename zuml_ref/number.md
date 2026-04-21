@@ -6,7 +6,6 @@ title: "number"
 Number number(Object value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#toNumber(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#toNumber(java.lang.Object))
 
@@ -19,5 +18,3 @@ details.
 **Parameters:**
 
 - value - the value to convert
-
-

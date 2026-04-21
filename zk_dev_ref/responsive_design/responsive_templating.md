@@ -2,7 +2,6 @@
 title: "Responsive Templating"
 ---
 
-
 This article uses concepts introduced in the [Fluid design]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design)
 and [Adaptive design]({{site.baseurl}}/zk_dev_ref/responsive_design/adaptive_design)
 documentation. Reading these first is recommended if you have not
@@ -22,8 +21,6 @@ We received the following business requirements for this task:
 :;Displaying details regarding a set of employees, including employee
 data from multiple fields.
 
-  
-  
 The control will use the full width of the view container.
 
 User will be able to trigger an action dependent on the selected

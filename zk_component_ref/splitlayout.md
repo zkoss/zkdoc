@@ -2,7 +2,6 @@
 title: "Splitlayout"
 ---
 
-
 - Demonstration:
   [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
 - Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
@@ -121,7 +120,6 @@ not be smaller than the minWidths/minHeights.
 |---|---|
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
 | `onDivisionSize` | **Event:** [org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html) Represents an event that indicates two inner size of splitlayout. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
@@ -130,10 +128,6 @@ not be smaller than the minWidths/minHeights.
 
 # Version History
 
-
-
 | Version | Date          | Content             |
 |---------|---------------|---------------------|
 | 8.5.0   | October, 2017 | new added component |
-
-

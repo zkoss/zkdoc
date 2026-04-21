@@ -2,8 +2,6 @@
 title: "First ZK App with Eclipse and ZK Studio"
 ---
 
-
-
 [ZK Studio](http://www.zkoss.org/product/zkstudio) is an Eclipse plugin
 to simplify the development of ZK applications with Eclipse.
 

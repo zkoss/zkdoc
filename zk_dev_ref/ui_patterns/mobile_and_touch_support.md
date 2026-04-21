@@ -79,8 +79,6 @@ The following JavaScript flags may be set to `true`, or to a version
 number on the `zk` JavaScript object depending on the information
 provided by the UserAgent string. Multiple flags may be set at the same time if a browser belongs to multiple categories.
 
-
-
 | flag           | detects                                                             |
 |----------------|---------------------------------------------------------------------|
 | zk.opera       | Opera browser                                                       |
@@ -96,9 +94,6 @@ provided by the UserAgent string. Multiple flags may be set at the same time if 
 | zk.ipad        | iPad device                                                         |
 | zk.android     | Android device                                                      |
 | zk.mobile      | Mobile device of any type, used for mobile-specific behaviors below |
-
-
-
 ## Dedicated touch event listeners
 
 If ZK detects that the client browser is a mobile device with

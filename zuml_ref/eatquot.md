@@ -6,7 +6,6 @@ title: "eatQuot"
 java.lang.String eatQuot(java.lang.String)
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#eatQuot(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#eatQuot(java.lang.String))
 
@@ -19,5 +18,3 @@ with this method.
 ```xml
 <input value="${c:eatQuot(param.some)}"/>
 ```
-
-

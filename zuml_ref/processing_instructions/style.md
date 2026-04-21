@@ -3,6 +3,7 @@ title: "style"
 ---
 
 **Syntax:**
+
 ```xml
 <?style [type="text/css"] [src="uri"] [charset="encoding"]
   [content="css snippet"] [if="..."] [unless="..."]?>

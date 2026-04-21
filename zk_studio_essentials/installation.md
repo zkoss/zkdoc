@@ -37,7 +37,6 @@ downloaded at [Apache Tomcat](http://tomcat.apache.org).
 
 **Install:**
 
-  
 Download the zip file of Tomcat distribution and extract it to a proper
 location (with no illegal characters or space in the path). Tomcat
 requires configuration before it can be used with Eclipse, this process
@@ -45,7 +44,6 @@ is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk
 
 **Tips:**
 
-  
 If you not only want to develop web applications, but also need to
 deploy them on Apache Tomcat, links to the official installation
 instructions for directly running Apache Tomcat in your environment are
@@ -74,7 +72,6 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
       
     ![](images/zkstudio_installation_35_1.png)
 
-      
 2.  Name the site as **"ZK Studio"** and copy corresponding update
     site's URL into **Location** field and click **OK**.
       
@@ -86,7 +83,6 @@ Marketplace is the easiest way to install plugins. Go to menu **\[Help\]
 
     ![](images/zkstudio_installation_35_2.png)
 
-      
 3.  Expand the update entry of ZK Studio, check **ZK Studio** and then
     click **Next**
       
@@ -103,18 +99,14 @@ Check **"I accept the terms of the license agrement"** and click **Finish** on t
 
 ![](images/zkstudio_installation_35_4_licenses.png)
 
-      
-
 The Installation process will now begin.
 
 ![](images/zkstudio_installation_35_5.png)
-
 
 If there is a pop-up dialog with unsigned content warning, please click **OK** to continue.
 
 ![](images/zkstudio_installation_35_5_warning.png)
 
-      
 5.  Once the installation is complete, please restart Eclipse as
     prompted.
       

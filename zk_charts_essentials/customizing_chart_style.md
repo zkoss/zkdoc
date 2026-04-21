@@ -188,10 +188,7 @@ public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
 }
 ```
 
-
-
 ![](images/ColorfulColumnChartDemo.png)
-
 
 #### Radial Gradient
 
@@ -244,10 +241,7 @@ public class PacmanChartComposer extends SelectorComposer<Div> {
 }
 ```
 
-
-
 ![](images/PacmanChartDemo.png)
-
 
 # Customize Axis Label with HTML
 
@@ -279,10 +273,7 @@ public class HtmlLabelComposer extends SelectorComposer<Component> {
 
 Then, the axis label will become a hyperlink. (see the image below)
 
-
-
 ![](images/zkcharts-essentials-htmlLabel.png)
-
 
 # Change Decimal Point or Thousands Separator
 

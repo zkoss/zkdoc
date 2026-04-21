@@ -9,7 +9,6 @@ title: "Applet"
 - Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Applet.html)
 - JavaScript API: [zul.med.Applet](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Applet.html)
 
-
 # Employment/Purpose
 
 A generic applet component.
@@ -44,13 +43,8 @@ should not have to encode it again.
 
 `*NONE`
 
-
 # Version History
-
-
 
 | Version | Date      | Content                                                                   |
 |---------|-----------|---------------------------------------------------------------------------|
 | 5.0.3   | June 2010 | The archive, myscript, align, hspace, and vspace properties are supported |
-
-

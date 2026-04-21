@@ -1,7 +1,4 @@
 
-
-
-
 # Single Select
 
 We'll keep using the todo list application to demonstrate the
@@ -63,5 +60,3 @@ public class TodoTest {
 </tr>
 </tbody>
 </table>
-
- 

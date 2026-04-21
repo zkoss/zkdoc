@@ -2,8 +2,6 @@
 title: "Browser Information and Control"
 ---
 
-
-
 To retrieve the information about the client, you can register an event
 listener for the `onClientInfo` event to a root component. To control
 the behavior of the client, you can use the utilities in the

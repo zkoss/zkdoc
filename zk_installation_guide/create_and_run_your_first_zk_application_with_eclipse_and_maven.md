@@ -2,8 +2,6 @@
 title: "First ZK App with Eclipse and Maven"
 ---
 
-
-
 [M2eclipse](https://www.eclipse.org/m2e/) is the first and most mature
 of the projects aimed at integrating [Apache Maven](https://maven.apache.org/) within the Eclipse IDE.
 
@@ -13,14 +11,12 @@ of the projects aimed at integrating [Apache Maven](https://maven.apache.org/) w
 
 Please follow the installation guide for your Eclipse:
 
-  
 [ Install Eclipse](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio#Install_Eclipse)
 
 ## Install M2eclipse
 
 Please follow the installation guide for your M2eclipse:
 
-  
 [ Install M2eclipse](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven)
 
 ## Add ZK Maven Archetype
@@ -58,7 +54,6 @@ there are two possible workarounds:
     tool mvn, then use import existing maven project to add the
     generated project to Eclipse. For more details, please refer to [ Use the command line version of Maven to create a project](#Use_the_command_line_version_of_Maven_to_create_a_project).
 
-
 # Create a "Hello World" application with ZK Maven Archetype
 
 ## Create a Maven Project
@@ -86,7 +81,6 @@ there are two possible workarounds:
   
 - The property *zk-version-since* might be missing.
 
-
 Users who are running this wizard for the first time, ZK Archetype would
 not have been downloaded into m2eclipse yet, and as a result may not
 populate the *zk-version-since* property correctly, leading to an error
@@ -100,7 +94,6 @@ clicking ‘Finish’ to end the ZK Maven web project wizard. When
 re-running the wizard, the zk-version-since property should appear in
 the list this time.
 
-
 - Click **Finish** and the Eclipse status bar should say ' *Creating
   zk-archetype-webapp* ' and ' *Updating Maven Dependencies* '. If this
   is the user's first time dealing with ZK libraries, Maven will
@@ -109,7 +102,6 @@ the list this time.
     
 ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
 
-
 ## Run the application
 
 1.  Go to **Run As** \> **Maven build...** ![](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png)
@@ -117,13 +109,11 @@ the list this time.
     Tests* then click "Apply" then "Run". ![](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png)
 3.  View the result in your browser via `http://localhost:8080/mywebapp/index.zul`
 
-
 ## Packaging your project into a Web Application Archive (WAR)
 
 1.  Go to **Run As** \> **Maven install** ![](images/ZK_Installation_Guide_maven_Archetype_step1.png)
 2.  The project will then be packed into a war file and a zip file with
     source code. ![](images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png)
-
 
 # Create a Maven Project with a Command Line Interface
 
@@ -211,5 +201,3 @@ configured, you can just run the project with the command below:
   explorer.
 
   ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
-
-

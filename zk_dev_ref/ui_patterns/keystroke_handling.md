@@ -2,8 +2,6 @@
 title: "Keystroke Handling"
 ---
 
-
-
 Keystroke handling is generic. Any component inherited from
 [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html) can handle the key
 event in the same way.
@@ -134,7 +132,6 @@ to know which key was pressed.
 | function key (F1, F2,... F12) | #f1, #f2, ... #f12 | |
 | Tab | #tab | |
 | Space | #space | |
-
 # Document-level Keystrokes
 
 If you set the library property

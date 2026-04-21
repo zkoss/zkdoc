@@ -2,11 +2,9 @@
 title: "Intbox"
 ---
 
-
 - Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Intbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Intbox.html)
 - JavaScript API: [zul.inp.Intbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Intbox.html)
-
 
 # Employment/Purpose
 

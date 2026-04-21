@@ -24,5 +24,3 @@ Notices that
   browser window. In this case, the server might not be able to detect
   it. When specifying this, it is better to specify the maximum allowed
   number of desktops.
-
-

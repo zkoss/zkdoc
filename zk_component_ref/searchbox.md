@@ -2,7 +2,6 @@
 title: "Searchbox"
 ---
 
-
 - Demonstration:
   [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
 - Java API: [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
@@ -154,7 +153,6 @@ Returns all selected items.
 | `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by the user that the list selection is changed at the client. |
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. |
 | `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Notifies one that the user is searching by keywords. |
-
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
@@ -163,11 +161,7 @@ Returns all selected items.
 
 # Version History
 
-
-
 | Version | Date           | Content                                                                                                               |
 |---------|----------------|-----------------------------------------------------------------------------------------------------------------------|
 | 9.0.0   | September 2019 | [ZK-4380](https://tracker.zkoss.org/browse/ZK-4380): Provide a Searchbox component                                    |
 | 9.5.0   | August 2020    | [ZK-4497](https://tracker.zkoss.org/browse/ZK-4497): searchbox: improve clearing selection, key shortcut / clear icon |
-
-

@@ -32,5 +32,3 @@ directly to the client without creating a component for each of them.
 Notice that ZK Loader assumes any element name with the native namespace
 is correct and generated to the client directly. It is your job to make
 sure there is no typo or other errors.
-
-

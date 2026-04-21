@@ -23,9 +23,7 @@ By following this pattern, ZK traditionally supports MVC approach which controls
 * ZK UI components plays View.
 * MyServiceClass is not a real class name. It represents any class which is usually implemented by you performs business logic like searching or authentication.
 
-
 {% include sidebar.md %}
-
 
 # Create a Controller
 In ZK world, a `org.zkoss.zk.ui.util.Composer` plays
@@ -43,13 +41,13 @@ Then "associate" the controller with a component in the zul by specifying fully 
 controller's control.
 
 **chapter2/sidebar.zul**
+
 ```xml
 <grid apply="org.zkoss.essentials.chapter2.SidebarChapter2Controller"
     hflex="1" vflex="1" sclass="sidebar">
     ...
 </grid>
 ```
-
 
 ## Wire Components
 To control a component, we must get its object reference. In
@@ -60,11 +58,11 @@ specify a [`@Wire`]({{site.baseurl}}/zk_dev_ref/mvc/wire_components) annotation 
 
 I can specify a component's ID to get wired by default selector in a controller.
 **chapter2/sidebar.zul**
+
 ```xml
 <grid id="sidebar"
     apply="org.zkoss.essentials.chapter2.SidebarChapter2Controller">
 ```
-
 
 ```java
 public class SidebarChapter2Controller extends SelectorComposer<Component>{
@@ -78,7 +76,6 @@ public class SidebarChapter2Controller extends SelectorComposer<Component>{
 ```
 
 `SelectorComposer` looks for a `Grid` whose ID is "sidebar" and assign it to the variable `sidebar`.
-
 
 ## Initialize the View
 It is very common that we need to initialize components when a zul file
@@ -134,7 +131,6 @@ server. If there is an event listener registered for the button's
 `onClick` event, ZK will pass the event to the listener to handle it.
 The event-listener mechanism allows us to handle all user interaction at
 server side.
-
 
 ## Create Components & Event Listeners Programmatically
 

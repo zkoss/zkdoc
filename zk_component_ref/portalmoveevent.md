@@ -2,7 +2,6 @@
 title: "PortalMoveEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zkmax.ui.event.PortalMoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalMoveEvent.html)
 - JavaScript API: N/A
@@ -23,12 +22,8 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
-
-

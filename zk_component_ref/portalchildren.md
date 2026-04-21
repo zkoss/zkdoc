@@ -2,7 +2,6 @@
 title: "Portalchildren"
 ---
 
-
 - Demonstration:
   [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
 - Java API: [org.zkoss.zkmax.zul.Portalchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portalchildren.html)
@@ -132,14 +131,8 @@ Meaningful only if frame design is applied.
 
 `*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
-
-
 # Version History
-
-
 
 | Version | Date     | Content                                                                                            |
 |---------|----------|----------------------------------------------------------------------------------------------------|
 | 9.0.0   | Nov 2019 | [ZK-4398](https://tracker.zkoss.org/browse/ZK-4398): Provide PortalChildren title and frame design |
-
-

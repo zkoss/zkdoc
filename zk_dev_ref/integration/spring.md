@@ -143,7 +143,6 @@ You can inject Spring beans into ZK Composer/ViewModel in the following
 | **Configuration** | Requires Spring bean registration    | Requires ZK's \`DelegatingVariableResolver\` |
 | **Flexibility**   | Injects based on type or bean id     | Injects based on bean id                     |
 | **Usage**         | Spring-managed Composer or ViewModel | Any ZK Composer or ViewModel                 |
-
 ## Spring's @Autowire
 
 When a Composer or ViewModel is itself a Spring bean, you can use

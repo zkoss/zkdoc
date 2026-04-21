@@ -2,7 +2,6 @@
 title: "SimpleConstraint"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html)
 - JavaScript API:
@@ -22,12 +21,8 @@ Check inherited events
 
 `*N/A`
 
-
-
 # Version History
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
-
-

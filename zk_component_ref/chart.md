@@ -2,11 +2,9 @@
 title: "Chart"
 ---
 
-
 - Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
 - Java API: [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)
 - JavaScript API: [zul.wgt.Chart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Chart.html)
-
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
@@ -812,7 +810,6 @@ The 3D chart is not supported on all chart types.
 | `wafermap` | `WaferMapModel` | x |
 | `gantt` | `GanttModel` | x |
 | `dial` | `DialModel` | x |
-
 # Clicked Area: Series, Legend
 
 In an onClick listener, you can call
@@ -903,7 +900,6 @@ related API in [JFreeChart JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.
 |---------|----------------------------------------------|------------------------------------------------------------------------------------------------|
 | 5.0     | Make a Chart fill 100% width in parent panel | [<http://www.zkoss.org/forum/listComment/10761>](http://www.zkoss.org/forum/listComment/10761) |
 | 5.0     | Dual axis in Chart                           | [<http://www.zkoss.org/forum/listComment/8752>](http://www.zkoss.org/forum/listComment/8752)   |
-
 # Troubleshooting
 
 ## Linux
@@ -914,11 +910,7 @@ JVM. For the information to make it work under Linux, please refer to
 
 # Version History
 
-
-
 | Version | Date | Content |
 |---|---|---|
 | 5.0.4 | August 2010 | MouseEvent introduced a new method, [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()), which simplifies the retrieval of the area component. <div class="sourceCode" id="cb1"><pre class="sourceCode java">`Area area = (Area)event.getAreaComponent(); //must be Area or null when used with chart if (area != null) ...``</pre></div> |
 | 5.0.3 | June 2010 | The area sent with the click event becomes UUID of the area component. Thus, use `desktop.getComponentByUuid(event.getArea())`. To write a program compatible with any version of ZK: <div class="sourceCode" id="cb2"><pre class="sourceCode java">`String areaid = event.getArea(); if (areaid != null) { Area area = desktop.getComponentByUuidIfAny(areaid); if (area == null) area = chart.getFellow(areaid); //fall back to older version ...``</pre></div> |
-
-

@@ -80,7 +80,6 @@ browser type, but not depending on the Locale. For example,
 "/my/lang\*.css\*" will be replaced with "/my/langie.css" if Internet
 Explorer is the current user's browser.
 
-
 ## Example
 
 In the following example, we assume the preferred Locale is `de_DE` and
@@ -94,7 +93,6 @@ the browser is Internet Explorer.
 | /img*/lang.gif | 1. /img/lang.gif |
 | /img/lang*.gif* | 1. /img/langie.gif |
 | /img*/lang*.gif* | 1. /imgie/lang*.gif |
-
 # Locating Locale- and browser-dependent resources in Java
 
 In addition to ZUML, you can also load browser- and Locale-dependent

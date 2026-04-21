@@ -10,7 +10,6 @@ maintain, but also the performance is great.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/mvc.png)
 
-
 ## Alternative: MVVM
 
 MVVM represents **Model**, **View**, and **ViewModel**. MVVM is
@@ -22,8 +21,6 @@ model*. It provides the further abstraction that a view model assumes
 programming ripple effects between UI and the view model. On the other
 hand, some developers might find it not as intuitive as MVC. For more
 information, please refer to [MVVM Reference](/zk_mvvm_ref/intro/introduction_of_mvvm).
-
-
 
 # View
 

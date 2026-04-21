@@ -2,12 +2,10 @@
 title: "Style"
 ---
 
-
 - Demonstration:
   [Style](http://www.zkoss.org/zkdemo/styling/custom_style)
 - Java API: [org.zkoss.zul.Style](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Style.html)
 - JavaScript API: [zul.utl.Style](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Style.html)
-
 
 # Employment/Purpose
 
@@ -23,7 +21,6 @@ The style component used to specify `CSS` styles for the owner desktop.
 
 # Example
 
-  
 ![](/zk_component_ref/images/ZKComRef_Style_Example.png)
 
 ```xml
@@ -38,14 +35,8 @@ The style component used to specify `CSS` styles for the owner desktop.
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date      | Content                          |
 |---------|-----------|----------------------------------|
 | 5.0.3   | June 2010 | The media property is supported. |
-
-

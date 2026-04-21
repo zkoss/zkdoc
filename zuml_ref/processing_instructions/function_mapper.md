@@ -3,6 +3,7 @@ title: "function-mapper"
 ---
 
 **Syntax:**
+
 ```xml
 <?function-mapper class="..." 
    [arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."]?>
@@ -53,5 +54,3 @@ constructor as an array of objects. For example,
 Prior to ZK 3.6.2, only the second signature is checked if one or more
 argument is specified, and it assumes `arg0` as the first argument,
 `arg1` as the second, and so on.
-
-

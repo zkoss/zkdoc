@@ -9,6 +9,7 @@ Developers can create a custom converter by implementing the [Converter](http://
 [1]: Since 6.0.1, a converter can return the [IGNORED_VALUE](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/Converter.html#IGNORED_VALUE) to indicate that binder should ignore to load the value to component. It is useful if you want to do some extra method call on a component after a command or a value change notification.
 
 The following is how built-in converter 'formattedDate' implement.
+
 ```java
 public class MyDateFormatConverter implements Converter {
     /**
@@ -48,6 +49,7 @@ public class MyDateFormatConverter implements Converter {
 - We retrieve “format” parameter's value by ` ctx.getConverterArg("format") `. This allows you to pass in arbitrary parameters.
 
 According to above code, we can pass a “format” parameter to 'formattedDate' converter.
+
 ```xml
 <label value="@load(item.creationDate) @converter(vm.myConverter, format='yyyy/MM/dd')"/>
 ```
@@ -57,6 +59,7 @@ Use Custom Converter
 The most common way to apply a converter is to bind a component attribute to **ViewModel's property which is a custom converter** or you can also specify custom * converter's full-qualified class name*.
 
 #### Return a converter as a property
+
 ```java
 public class MyViewModel{
     private Converter myConverter = new MyConverter();
@@ -67,6 +70,7 @@ public class MyViewModel{
 }
 ```
 #### Example to use custom converter
+
 ```xml
 <label value="@load(vm.message) @converter(vm.myConverter)"/>
 
@@ -80,6 +84,7 @@ Register Application Level Converters
 {% include supported-since.html version="6.0.1" %}
 
 You can register application level converters<sub>[1]</sub> by setting library-property(*org.zkoss.bind.appConverters*) in zk.xml.
+
 ```xml
 <library-property>
     <name>org.zkoss.bind.appConverters</name>
@@ -87,6 +92,7 @@ You can register application level converters<sub>[1]</sub> by setting library-p
 </library-property>
 ```
 Then use them by converter name.
+
 ```xml
 <label value="@load(vm.message) @converter('foo')"/>
 <label value="@load(vm.message) @converter('bar')"/>
@@ -111,6 +117,7 @@ Currently, built-in converter we provide are :
 {% include supported-since.html version="8.0.0" %}
 
 - **formattedTime**
+
 ```xml
 <label value="@load(item.time) @converter('formattedTime', format='hhmmss')"/>
 ```

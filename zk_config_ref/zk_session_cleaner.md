@@ -14,4 +14,3 @@ If you are using Servlet 2.3, please use
         <listener-class>org.zkoss.zk.ui.http.HttpSessionListener</listener-class>
     </listener>
 ```
-

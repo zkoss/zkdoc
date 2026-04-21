@@ -19,7 +19,6 @@ debugger.
 
 please refer to Eclipse help:
 
-  
 [<http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/reference/ref-properties-source-attachment.htm>](http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/reference/ref-properties-source-attachment.htm)
 
 The source JAR files of ZK Package is under the dist/src folder in the
@@ -29,5 +28,4 @@ already extracted ZK package.
 
 Please refer to Eclipse help:
 
-  
 [<http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/reference/ref-dialog-javadoc-location.htm>](http://help.eclipse.org/indigo/topic/org.eclipse.jdt.doc.user/reference/ref-dialog-javadoc-location.htm)

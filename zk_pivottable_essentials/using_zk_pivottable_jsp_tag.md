@@ -2,8 +2,6 @@
 title: "Using ZK Pivottable JSP Tag"
 ---
 
-
-
 ZK Pivottable JSP tag can be used in a JSP page in much the same way as
 any other custom JSP tag.
 

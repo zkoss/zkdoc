@@ -1,7 +1,4 @@
 
-
-
-
 # Multiple Select
 
 The reason that ZATS Mimic provides a `MultipleSelectAgent` instead of
@@ -120,5 +117,3 @@ In the test case below, we perform three different tests;
 </tr>
 </tbody>
 </table>
-
- 

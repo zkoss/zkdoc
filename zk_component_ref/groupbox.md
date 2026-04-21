@@ -2,7 +2,6 @@
 title: "Groupbox"
 ---
 
-
 - **Demonstration:** [Groupbox Demo](https://www.zkoss.org/zkdemo/layout/group_box)
 - **Java API:** [org.zkoss.zul.Groupbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupbox.html)
 - **JavaScript API:** [zul.wgt.Groupbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Groupbox.html)
@@ -14,6 +13,7 @@ The Groupbox component in ZK is used to group related components together visual
 In the provided example, a Groupbox is used to group a set of Radio components under the label "Fruits."
 
 ![Groupbox_Example](images/ZKComRef_Groupbox_Example.png)
+
 ```xml
  <groupbox width="350px">
      <caption label="Fruits"/>
@@ -27,7 +27,6 @@ In the provided example, a Groupbox is used to group a set of Radio components u
 
 Try it
 *  [Groupbox with Caption](https://zkfiddle.org/sample/1j5b78e/1-ZK-Component-Reference-Groupbox-Example?v=latest&t=Iceblue_Compact)
-
 
 ### Java Example
 In the Java code example, a Groupbox is created and customized with a Caption, a specific width, content, and an event listener for the onOpen event.
@@ -73,7 +72,6 @@ Specifies the CSS style for the content block of the groupbox.
 Try it
 
 *  [Groupbox ContentStyle](https://zkfiddle.org/sample/1k2vv2g/1-ZK-Component-Reference-Groupbox-ContentStyle-Example?v=latest&t=Iceblue_Compact)
-
 
 ### ContentSclass
 Specifies the CSS class for the content block of the groupbox.
@@ -143,7 +141,6 @@ To set the 3d mold as the default for all Groupbox components, add the following
 | Name**   | Event Type                            |Description |
 |----------|-----------------------------------------|------------|
 | `onOpen` | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
-
 ## Supported Molds
 The available molds for the Groupbox component are:
 
@@ -151,7 +148,6 @@ The available molds for the Groupbox component are:
 |---------|-------------------------------------------|
 | `default`   | ![Groupbox_mold_default](images/Groupbox_mold_default.png)|
 | `3d`   | ![Groupbox_mold_3d](images/Groupbox_mold_3d.png)|
-
 ## Supported Children
 
 `*ALL`: Indicates that the Groupbox component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Groupbox, providing flexibility and customization options for your designs.

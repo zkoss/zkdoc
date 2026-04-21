@@ -10,7 +10,6 @@ title: "org.zkoss.zk.ui.versionInfo.enabled"
 {% include supported-since.html version="6.5.5" %}
 Default:  `true`
 
-
 It specifies whether to show ZK version on each page.
 
 By default, each page will display the comment containing ZK version

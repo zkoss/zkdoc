@@ -16,5 +16,3 @@ specification is applicable, such as
 components for the Ajax devices (i.e., the browsers).
 
 For more information, please refer to [ZK Component Reference](/zk_component_ref/introduction)).
-
-

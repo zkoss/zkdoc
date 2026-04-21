@@ -15,7 +15,6 @@ details between browsers and servers, ZK will handle AJAX details for you. In ad
 View. These two approaches are mutually interchangeable,
 and you can choose one of them upon your architectural consideration.
 
-
 # Architecture of ZK
 
  ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch1-simple-architecture.png)
@@ -66,7 +65,6 @@ Chapter 8, we describe how to integrate Spring framework into a ZK
 application.
 
 Chapter 9, we demonstrate how to use JPA in a ZK application.
-
 
 # Example Application
 This book will guide you to build a small and rich application

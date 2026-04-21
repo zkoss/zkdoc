@@ -2,7 +2,6 @@
 title: "Grid"
 ---
 
-
 - Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
 - Java API: [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
 - JavaScript API: [zul.grid.Grid](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Grid.html)
@@ -923,7 +922,6 @@ developers to add more information on each row. For example,
 
 ![](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
 
-
 ```xml
     <rows>
         <row>
@@ -1214,14 +1212,12 @@ components.
 
 [^5]: Same as above.
 
-
 # Supported Events
 
 | Name | Event Type |
 |---|---|
 | `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
 | `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -1233,7 +1229,6 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/grid_mold_default.png) |
 | paging | ![](/zk_component_ref/images/grid_mold_paging.png) |
-
 # Supported Children
 
 * [Columns]({{site.baseurl}}/zk_component_ref/columns), [Rows]({{site.baseurl}}/zk_component_ref/rows), [Foot]({{site.baseurl}}/zk_component_ref/foot)

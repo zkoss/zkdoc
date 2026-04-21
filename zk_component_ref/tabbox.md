@@ -2,7 +2,6 @@
 title: "Tabbox"
 ---
 
-
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API:** [`org.zkoss.zul.Tabbox`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabbox.html)
 - **JavaScript API:** [`zul.tab.Tabbox`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabbox.html)
@@ -18,6 +17,7 @@ Developers can retrieve the selected group using [`org.zkoss.zul.Tabbox#getSelec
 The example below demonstrates the usage of a Tabbox component with two sets of tabs and tab panels. The first Tabbox is displayed with two tabs while the second Tabbox is using the 'accordion' mold to display two tabs in an accordion style.
 
 ![Tabbox Example](images/ZKComRef_Tabbox_Examples.PNG)
+
 ```xml
 <zk>
 	<tabbox width="400px">
@@ -48,7 +48,6 @@ Try it
 
 * [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
 
-
 ## Properties and Features
 
 ### Toolbar in Tabbox
@@ -58,6 +57,7 @@ The Tabbox component supports the inclusion of other controls within its tab bar
 Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient Tabbox.
 
 ![Tabbox Toolbar Examples](images/ZKComRef_Tabbox_Toolbar_Examples.png)
+
 ```xml
 <tabbox width="250px">
 	<tabs>
@@ -85,7 +85,6 @@ Note: Toolbar in Tabbox only works in a horizontal(top/bottom) orient Tabbox.
 Try it
 
 * [Tabbox Toolbar](https://zkfiddle.org/sample/27mram5/1-ZK-Component-Reference-Tabbox-Toolbar-Example?v=latest&t=Iceblue_Compact)
-
 
 ### MaximalHeight
 
@@ -131,14 +130,12 @@ Try it
 | **Name**   | **Event Type**                            |Description |
 |------------|-------------------------------------------|------------|
 | `onSelect` | **Event:** [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.|
-
 ## Supported Molds
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
 |**Default:** |![Default Mold](images/Tabbox_mold_default.png)|
 | **Accordion:** | ![Accordion Mold](images/Tabbox_mold_accordion.png)|
-
 ## Supported Orients
 
 | **Name**   | **Snapshot**                            |
@@ -147,7 +144,6 @@ Try it
 |**Left:**| ![Left Orientation](images/Tabbox_orient_vertical.png)|
 |**Right:**| ![Right Orientation](images/Tabbox_orient_vertical-right.png)|
 |**Bottom:**| ![Bottom Orientation](images/Tabbox_orient_bottom.png)|
-
 ## Supported Children
 - [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
 - [`Tabpanels`](tabpanels): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.

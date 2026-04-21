@@ -11,5 +11,3 @@ depicted as follows.
  </listbox>
  
 ```
-
-

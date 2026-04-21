@@ -15,6 +15,7 @@ Steps to use this feature:
 [1]: When using this feature, you have to avoid binding to a single variable, read [limitation](./property_binding#limitation) for more detail.
 
 #### Basic usage example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyVM')">
     <vlayout p="@ref(vm.person)">
@@ -30,6 +31,7 @@ Steps to use this feature:
 As shown in the example above, we add a reference `@ref` to **vm.person** with a name **p** to `vlayout`. This way, **p** inside the `vlayout` can be used by other EL expressions.
 
 #### Modularize view example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyVM')">
     <include p="@ref(vm.person1)" src="person.zul"/>
@@ -38,6 +40,7 @@ As shown in the example above, we add a reference `@ref` to **vm.person** with a
 ```
 
 #### Modularize view example - person.zul
+
 ```xml
 <vlayout>
     <hlayout>

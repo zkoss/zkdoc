@@ -1,7 +1,4 @@
 
-
-
-
 # Mouse Over & Mouse Out
 
 `HoverAgent` mimics a mouse pointer move over or move out a component.
@@ -42,5 +39,3 @@ desktopAgent.query("button").as(HoverAgent.class).moveOut();
 </tr>
 </tbody>
 </table>
-
- 

@@ -2,11 +2,9 @@
 title: "Treefoot"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Treefoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefoot.html)
 - JavaScript API: [zul.sel.Treefoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treefoot.html)
-
 
 # Employment/Purpose
 
@@ -73,6 +71,3 @@ will appear as a footer at the bottom of the tree.
 # Use Cases
 
 [ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
-
-
-

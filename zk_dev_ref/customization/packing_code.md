@@ -2,8 +2,6 @@
 title: "Packing Code"
 ---
 
-
-
 There are two ways to pack the customization code: part of the Web
 application, or an independent JAR file. Packing as part of the Web
 application is straightforward. All you have to do is to specify the
@@ -49,7 +47,6 @@ except only a subset of configurations is allowed. Here is a sample
     </library-property>
 </config>
 ```
-
 
 # How to Initialize a JAR File
 

@@ -52,7 +52,6 @@ for us.
 please refer to Spring Security Reference Documentation to check which
 JAR files are needed.
 
-
 ## Spring
 
 Our example application also integrates Spring framework, the required
@@ -365,21 +364,15 @@ it.
 
 ![]({{site.baseurl}}/zk_dev_ref/images/spring_security_anonymous.png)
 
-
 **What a anonymous user see**
-
 
 ![]({{site.baseurl}}/zk_dev_ref/images/spring_security_user.png)
 
-
 **What a user with "ROLE_USER" see**
-
 
 ![]({{site.baseurl}}/zk_dev_ref/images/spring_security_editor.png)
 
-
 **What a user with "ROLE_EDITOR" see**
-
 
 How do we achieve this security control in a zul? We can implement a
 custom tag library to check current user's authorities and apply the tag

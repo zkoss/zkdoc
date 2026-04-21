@@ -2,12 +2,10 @@
 title: "East"
 ---
 
-
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.East](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/East.html)
 - JavaScript API: [zul.layout.East](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.East.html)
-
 
 # Employment/Purpose
 
@@ -90,5 +88,3 @@ For more details, please refer to
 |---------|-----------|------------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component supports a caption component as its title |
 | 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in the slide or open mode only     |
-
-

@@ -1,7 +1,4 @@
 
-
-
-
 # Switch Pages
 
 `PagingAgent` only works on ***paging*** component. When *listbox*,
@@ -56,5 +53,3 @@ The following code demonstrates the usage:
 </tr>
 </tbody>
 </table>
-
- 

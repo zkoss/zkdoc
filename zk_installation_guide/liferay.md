@@ -528,7 +528,6 @@ xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd http:
 </plugin-package>
 ```
 
-  
 4.Add library-property setting to zk.xml for Liferay
 
 Reason: under IE, using Liferay with ZK will cause HTML Parsing Error
@@ -556,7 +555,6 @@ for browser.
 </zk>
 ```
 
-  
 5. Export war file  
 Export a war file called **DEPLOY_TO\_\_HelloZK.war**, and put this war
 file under the **deploy** folder
@@ -805,5 +803,3 @@ Please download the following war file to view this example in detail
 <http://devenphillips.blogspot.com/2009/04/developing-liferay-portlets-with-zk.html>
 
 [ZK 5 / Liferay Integration - jquery conflict](http://www.zkoss.org/forum/listComment/11051)
-
-

@@ -1,5 +1,6 @@
 # &lt;when>
 # Syntax
+
 ```xml
 <when test="@load(vm.abc)">
  ...
@@ -12,6 +13,7 @@
 A `<when>` tag is used for `<choose>` like a Java `<switch>` statement in how it lets you decide on a number of alternatives.
 
 # Example
+
 ```xml
 <choose>
 	<when test="@load(each lt 3)">

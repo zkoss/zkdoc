@@ -2,7 +2,6 @@
 title: "Cardlayout"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zkmax.zul.Cardlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cardlayout.html)
 - JavaScript API:
@@ -67,14 +66,8 @@ setting.
 
 `*ALL`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                           |
 |---------|--------------|-------------------------------------------------------------------|
 | 6.5.0   | August, 2012 | [org.zkoss.zkmax.zul.Cardlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cardlayout.html) was introduced. |
-
-

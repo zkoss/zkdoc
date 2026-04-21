@@ -5,7 +5,6 @@ access a page if he knows the page's URL. Therefore, we should protect a
 page from illegal access by checking user's credentials in his session
 when a page is requested by a user.
 
-
 ##Authentication Service
 
 We can implement a service class that performs the authentication
@@ -70,7 +69,6 @@ public class AuthenticationServiceChapter7Impl extends AuthenticationServiceChap
     `userCredential` which is used to retrieve credential back in the
     future.
 -   Line 26: Remove the stored user credentials in the session.
-
 
 ## Page Initialization
 

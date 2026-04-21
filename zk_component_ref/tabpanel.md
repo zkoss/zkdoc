@@ -2,7 +2,6 @@
 title: "Tabpanel"
 ---
 
-
 - **Demonstration:** [Tabbox](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API:** [`org.zkoss.zul.Tabpanel`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanel.html)
 - **JavaScript API:** [`zul.tab.Tabpanel`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanel.html)
@@ -21,6 +20,7 @@ The example demonstrates the usage of `tabpanel` within a tabbox and tabpanels i
 - Tabpanels within the accordion tabbox showcasing 'This is panel 3' and 'This is panel 4'.
 
 ![Tabs](images/zkcomref_containers_tabs.png)
+
 ```xml
 <zk>
 	<tabbox width="400px">

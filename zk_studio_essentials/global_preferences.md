@@ -12,7 +12,6 @@ from the tree on the left hand side.
 
 **Error Reporter**
 
-  
 ZK Studio can send its error log to us in order to improve the quality
 and performance of future ZK Studio versions. Check this to enable
 sending of the error log. If you have to connect the internet through

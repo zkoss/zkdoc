@@ -2,13 +2,11 @@
 title: "Borderlayout"
 ---
 
-
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.Borderlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Borderlayout.html)
 - JavaScript API:
   [zul.layout.Borderlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Borderlayout.html)
-
 
 # Employment/Purpose
 
@@ -129,7 +127,6 @@ child component.
 </borderlayout>
 ```
 
-
 ### Scrolling
 
 - The height of Center depends on Borderlayout but not on its child,
@@ -161,7 +158,6 @@ child component.
 </borderlayout>
 ```
 
-
 {% include supported-since.html version="7.0.0" %}
 
 The autoscroll attribute will create floating scrollbar and it is not
@@ -186,7 +182,6 @@ include supported-since.html version="7.0.2" %}
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
-
 ![](/zk_component_ref/images/DrBorderlayout_grow.png)
 
 ```xml
@@ -208,8 +203,6 @@ include supported-since.html version="7.0.2" %}
     </west>
 </borderlayout>
 ```
-
-
 
 ### Borderlayout in a container
 
@@ -298,16 +291,10 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 
 `*`[` North`]({{site.baseurl}}/zk_component_ref/north)`, `[` South`]({{site.baseurl}}/zk_component_ref/south)`, `[` Center`]({{site.baseurl}}/zk_component_ref/center)`, `[` West`]({{site.baseurl}}/zk_component_ref/west)`, `[` East`]({{site.baseurl}}/zk_component_ref/east)
 
-
-
 # Version History
-
-
 
 | Version | Date            | Content                                                                                                                                                                                         |
 |---------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | August 11, 2011 | Added a way to disable the animation of borderlayout.                                                                                                                                           |
 | 6.0.0   | Feb 14, 2012    | The flex attribute has been deprecated, please set vflex="1" to the child component in order to occupy the whole area.                                                                          |
 | 7.0.2   | April 2014      | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
-
-

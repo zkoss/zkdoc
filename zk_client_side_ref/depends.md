@@ -22,5 +22,3 @@ Example,
 
 which means this addon won't be parsed until both `zkex` and `zkmax` are
 parsed.
-
-

@@ -20,5 +20,3 @@ Example,
 <extension>zul</extension>
 <extension>xul</extension>
 ```
-
-

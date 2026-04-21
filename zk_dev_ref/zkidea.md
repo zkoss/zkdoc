@@ -30,7 +30,6 @@ The plugin provides content assistance and validation for ZK's XML configuration
 
 ![](/zk_dev_ref/images/zk_config_code_completion.png)
  
-
 *   **`lang-addon.xml` Support:**
     {% include supported-since.html version="0.4.0" %}
     The plugin also supports the language addon configuration file, `lang-addon.xml`, with code completion and validate the required elements. The namespace is `xmlns="http://www.zkoss.org/2005/zk/lang-addon"`.

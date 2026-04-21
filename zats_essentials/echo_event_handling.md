@@ -2,8 +2,6 @@
 title: "Echo Event Handling"
 ---
 
-
-
 `Since 1.1.0`
 
 [ Echo event]({{site.baseurl}}/zk_dev_ref/ui_patterns/use_echo_events)
@@ -31,5 +29,3 @@ public enum EchoEventMode {
 
 However, you can change the default mode by the method
 [org.zkoss.zats.mimic.Client#setEchoEventMode(org.zkoss.zats.mimic.EchoEventMode)](https://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/Client.html#setEchoEventMode(org.zkoss.zats.mimic.EchoEventMode))
-
- 

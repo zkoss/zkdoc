@@ -8,7 +8,6 @@ The default method:
 String formatNumber(Object number, String pattern);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#formatNumber(java.lang.Object, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#formatNumber(java.lang.Object, java.lang.String))
 

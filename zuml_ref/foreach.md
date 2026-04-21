@@ -63,5 +63,3 @@ and/or
 [forEachEnd](/zuml_ref/foreachend).
 
 Fore more examples, please refer to [ZK Developer's Reference: Iterative Evaluation]({{site.baseurl}}/zk_dev_ref/ui_composing/iterative_evaluation).
-
-

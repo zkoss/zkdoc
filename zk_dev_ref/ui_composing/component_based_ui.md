@@ -153,7 +153,6 @@ below)
 </window>
 ```
 
-
 ## Attach a Component to a Page
 
 A component is available at the client only if it is attached to a page.
@@ -222,7 +221,6 @@ worthwhile to note them down:
     correctly, you could invalidate its parent to resolve the
     problem[^3].
 
-
 ## Don't Cache Components Attached to a Page in Static Fields
 
 As described above, a desktop is a logical scope which can be accessed
@@ -265,7 +263,6 @@ org.zkoss.zk.ui.UiException: The parent and child must be in the same desktop: <
     foo.Foo.doAfterCompose(Foo.java:10)
 ```
 
-
 # Component Cloning
 
 All components are cloneable (java.lang.Cloneable). It is simple to
@@ -292,7 +289,6 @@ cloning, all children and descendants are serialized. If you serialize a
 component and then de-serialize it back, the result will be the same as
 invoking
 [org.zkoss.zk.ui.Component#clone()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#clone())[^5].
-
 
 [^1]: Under portal environment, there might be multiple desktops in one
     browser window. However, it is really important in the developer's

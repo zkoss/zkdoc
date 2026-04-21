@@ -31,5 +31,3 @@ For example,
 ```java
 ((DesktopCtrl)desktop).enableServerPush(new org.zkoss.zk.ui.impl.PollingServerPush());
 ```
-
-

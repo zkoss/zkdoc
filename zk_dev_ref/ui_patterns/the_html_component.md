@@ -24,7 +24,6 @@ element.
 
 Also notice that EL expressions are allowed.
 
-
 # What Are Generated
 
 The `html` component will eventually generate the HTML SPAN tag to

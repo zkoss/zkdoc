@@ -13,7 +13,6 @@ choose one based on your requirements.
 | Memory Footprint | Small | Small | Large  | Small  |
 | Support EL | Yes | Yes | Yes| Yes|
 | Support Data Binding | Yes | No | Yes| No |
-
 ## native namespace 
 We cannot update content dynamically at the server.
 However, we can modify the DOM tree directly at the client. Please

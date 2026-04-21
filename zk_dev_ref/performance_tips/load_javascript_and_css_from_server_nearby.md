@@ -2,8 +2,6 @@
 title: "Load JavaScript and CSS from Server Nearby"
 ---
 
-
-
 > If some of the client machines are far away from the application
 > server, we could set up a server near the clients to host ZK's
 > JavaScript and CSS files, and then configure the application server to

@@ -2,7 +2,6 @@
 title: "Fragment"
 ---
 
-
 - **Java API:** [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
 - **JavaScript API:** [zkmax.wgt.Fragment](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Fragment.html)
 
@@ -188,9 +187,7 @@ Here are the key differences between `@validator` and `@jsvalidator` in ZK:
 | Validate at            | Server side                 | Client side             |
 | ZK form validation     | Supported                   | Not supported           |
 | Validation message holder | Initialized in validationMessages | An implicit `vmsgs` object|
-
 It's recommended to use server-side `@validator` for most cases due to security concerns, but you can use client-side `@jsvalidator` for instant feedback requirements like password strength or number range validation.
-
 
 # Event Handling
 
@@ -282,7 +279,6 @@ ZK provides the ability to handle events in ViewModel by using `@command` or `@g
 
 For more details on retrieving the event object, you can refer to the [Retrieve Event Object](https://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object) documentation.
 
-
 ## Properties
 The `Fragment` component supports the following properties:
 - `content`: Specify the content of the component.
@@ -294,6 +290,5 @@ The `Fragment` component supports the following properties:
 | Name            | Event Type                                                          | Description |
 |-----------------|---------------------------------------------------------------------|------------|
 | `onRecover`     | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Represents an event sent back to the server caused by an offline recovery. |
-
 ## Supported Children
 - `*NONE`: This component does not support any child components.

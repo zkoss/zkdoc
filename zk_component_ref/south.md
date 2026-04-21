@@ -2,12 +2,10 @@
 title: "South"
 ---
 
-
 - Demonstration:
   [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
 - Java API: [org.zkoss.zul.South](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/South.html)
 - JavaScript API: [zul.layout.South](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.South.html)
-
 
 # Employment/Purpose
 
@@ -86,11 +84,7 @@ For more details, please refer to
 
 # Version History
 
-
-
 | Version | Date      | Content                                                                                                              |
 |---------|-----------|----------------------------------------------------------------------------------------------------------------------|
 | 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
 | 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in slide or open mode only       |
-
-

@@ -6,6 +6,7 @@ Although the design principle of MVVM pattern is that **ViewModel should not hav
 One way to get components is [passing components as parameters in command binding](./parameters) which we have talked before. Another is to call `Selectors.wireComponents()` . This way enables you to wire components with `@Wire` like what you do in a [SelectorComposer]({{site.baseurl}}/zk_dev_ref/mvc/wire_components). You should call `Selectors.wireComponents()` in a method with `@AfterCompose` as follows:
 
 #### Example to wire components in a ViewModel
+
 ```java
 public class SearchAutowireVM {
 

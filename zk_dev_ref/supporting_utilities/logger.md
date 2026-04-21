@@ -2,8 +2,6 @@
 title: "Logger"
 ---
 
-
-
 In this section we describe how to configure the logging of ZK internal
 functions. You can generally ignore it, unless you'd like to know how ZK
 operates internally.
@@ -112,7 +110,6 @@ Use SLF4J API for logging instead.
 | INFO | Indicates providing informational messages. It also implies ERROR and WARNING. |
 | DEBUG \| FINE | Indicates providing tracing information for debugging purpose. It also implies ERROR, WARNING and INFO. |
 | FINER | Indicates providing fairly detailed tracing information for debugging purpose. It also implies ERROR, WARNING, INFO and DEBUG |
-
 ### Specify the handler for Jetty and servers that don't turn on the standard logger
 
 {% include RemovedSince.html version=10.0.0 %}
@@ -176,13 +173,10 @@ You could specify an absolute path, such as
 `/usr/jetty/conf/zk-log.properties`, if you are not sure what the
 current directory is.
 
-
-
 # Disable All Logs
 {% include DeprecatedSince.md version=10.3.0 %}
 
 Use SLF4J API for logging instead.
-
 
 If you want to disable all loggers completely or change the level for
 all loggers, you don't need to prepare a logging configuration file.
@@ -242,5 +236,4 @@ The typical use is as follows.
 | Version | Date          | Content                    |
 |---------|---------------|----------------------------|
 | 6.0.0   | February 2012 | LogService was deprecated. |
-
 [^1]: <https://docs.oracle.com/cd/E19717-01/819-7753/gcbkm/index.html>

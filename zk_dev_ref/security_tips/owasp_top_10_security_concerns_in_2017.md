@@ -104,8 +104,6 @@ slf4j.
 
 # References
 
-
-
 [^1]: The Open Web Application Security Project [official website](https://www.owasp.org/index.php/Main_Page)
 
 [^2]: The OSWAP Top 10

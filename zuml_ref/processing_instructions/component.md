@@ -3,6 +3,7 @@ title: "component"
 ---
 
 **Syntax:**
+
 ```xml
 <?component name="myName" templateURI="/mypath/my.zul" ?>
 <?component name="myName" macroURI="/mypath/my.zul" [inline="true|'false'"]
@@ -18,6 +19,7 @@ Defines a new component in the page scope.
 # The by-macro Format
 
 **Syntax:**
+
 ```xml
 <?component name="myName" macroURI="/mypath/my.zul"
    [apply="composer"] [language="xul/html"] [prop1="value1"] [prop2="value2"]... ?>
@@ -51,6 +53,7 @@ macro.
 {% include supported-since.html version="8.0.0" %}
 
 **Syntax:**
+
 ```xml
 <?component name="myName" templateURI="/mypath/my.zul"
    [language="xul/html"] [prop1="value1"] [prop2="value2"]... ?>

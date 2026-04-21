@@ -19,5 +19,3 @@ title: "Resin"
     configuration.
 
 by Peter Manchev
-
-

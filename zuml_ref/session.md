@@ -2,7 +2,4 @@
 
 The session. It is similar to `javax.servlet.http.HttpSession`[^1]`.`
 
-
-
-
 [^1]: `ZK session actually encapsulates the HTTP session to make ZK applications independent of HTTP.`

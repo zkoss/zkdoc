@@ -2,8 +2,6 @@
 title: "Custom Operation"
 ---
 
-
-
 `Since 1.1.0`
 
 Currently, ZATS Mimic supports many operations of ZK components,
@@ -47,4 +45,3 @@ component and verifies the result.
   would depend on how you design the component.
 - Line 16: Like using other operation agents, get `AuAgent` from the
   component and invoke `post()` to perform an operation.
-

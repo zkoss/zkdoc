@@ -59,7 +59,6 @@ suggested to use zscript for production systems.
 |------------|-------------------|
 | MVC | <ul><li>[ZK Developer's Reference: MVC](ZK_Developer's_Reference/MVC)</li><li>[ZK Developer's Reference: MVVM](ZK_Developer's_Reference/MVVM)</li><li>[ZK Developer's Reference: Performance Tips](ZK_Developer's_Reference/Performance_Tips/Use_Compiled_Java_Codes)</li><li>[org.zkoss.zk.ui.util.Composer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Composer.html) and [org.zkoss.zk.ui.select.SelectorComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/SelectorComposer.html)</li></ul> |
 | ZSCRIPT | <ul><li>[ZK Developer's Reference: Scripts in ZUML](ZK_Developer's_Reference/ui_composing/ZUML/Scripts_in_ZUML)</li><li>[ZK Studio Essentials: MVC Extractor]({{site.baseurl}}/zk_studio_essentials/zscript_to_mvc_extractor)</li></ul> |
-
 # [Data Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/index)
 
 ## When to use
@@ -132,7 +131,6 @@ more information, please refer to the [ZK Developer's Reference: HTML Tags]({{si
 | ZUML | <ul><li>[ZK Developer's Reference: ZUML](ZK_Developer's_Reference/ui_composing/ZUML)</li><li>[ZK Developer's Reference: HTML Tags](ZK_Developer's_Reference/ui_patterns/HTML_Tags)</li></ul> |
 | Richlet | <ul><li>[ZK Developer's Reference: Richlet](ZK_Developer's_Reference/ui_composing/Richlet)</li></ul> |
 | JSP | <ul><li>[ZK Developer's Reference: Use ZK in JSP](ZK_Developer's_Reference/integration/Use_ZK_in_JSP) and [ZK JSP Tags](/zk_jsp_tags_essentials/before_you_start)</li></ul> |
-
 # [Bookmarks]({{site.baseurl}}/zk_dev_ref/ui_patterns/browser_history_management) vs. Multiple Pages
 
 A traditional page-based Web framework forces developers to split an
@@ -180,7 +178,6 @@ technique.
 |------------|-------------------|
 | Bookmarks | <ul><li>[ZK Developer's Reference: Browser History Management](ZK_Developer's_Reference/ui_patterns/Browser_History_Management)</li><li>[ZK Developer's Reference: Browser Information and Control](ZK_Developer's_Reference/ui_patterns/Browser_Information_and_Control)</li></ul> |
 | Multiple Pages | <ul><li>[ZK Developer's Reference: Forward and Redirect](ZK_Developer's_Reference/ui_patterns/Forward_and_Redirect)</li><li>[ZK Developer's Reference: Include](ZK_Developer's_Reference/ui_composing/ZUML/Include), [Templating](ZK_Developer's_Reference/ui_patterns/Templating) and [Composite](ZK_Developer's_Reference/ui_composing/Composite_Component) for consistent UI across multiple pages.</li></ul> |
-
 # [Native Namespace]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_native_namespace) vs. [XHTML Components]({{site.baseurl}}/zk_dev_ref/ui_patterns/the_xhtml_component_set)
 
 ZK provides [several ways]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags) to use
@@ -235,7 +232,6 @@ The limitation of
 is that you can not encapsulate its behavior in a Java class (like macro
 or composite components do).
 
-
 ## When to use macro components
 
 [Macro components]({{site.baseurl}}/zk_dev_ref/ui_composing/macro_component)
@@ -263,7 +259,6 @@ behavior from an existent component, such as
 [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html), and enhance it to have child
 components defined in a ZUML document.
 
-
 ## When to use templating
 
 [Templating]({{site.baseurl}}/zk_dev_ref/ui_patterns/composition)
@@ -289,7 +284,6 @@ strongly recommend you to deploy ZK. ZK can do whatever JSF can do or
 even better. However, if you have to use ZK with legacy JSF, please
 refer to the [Embed ZK Component in Foreign Framework]({{site.baseurl}}/zk_dev_ref/integration/embed_zk_component_in_foreign_framework)
 section.
-
 
 [^1]: You have to specify `mode="defer"` to create a
     [org.zkoss.zul.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Page.html) instance.

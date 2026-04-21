@@ -32,8 +32,6 @@ For example,
 </radiogroup>
 ```
 
- 
-
 ## Use PivotFieldControl to handle field setting
 
 Compared to the others, field setting UI is much trickier to compose.
@@ -76,8 +74,6 @@ pools, so the model and pivot table will be updated accordingly.
 Sort options are available on row and column fields.
 
 ![](images/ZKPivotEsn_pfc_control_02.png)
-
- 
 
 ## Customize PivotFieldControl
 
@@ -132,6 +128,5 @@ Then you shall see the label is changed:
 All the available keys are defined as the following:
 
 ![](images/ZKPivotEsn_pfc_control_05.png)
-
 
 #

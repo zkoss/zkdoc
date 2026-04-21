@@ -1,5 +1,6 @@
 # &lt;forEach>
 # Syntax
+
 ```xml
 <forEach begin="0" end="3" step="2" var="x">
   ...
@@ -19,8 +20,8 @@ The basic iteration tag, accepting many different collection types and supportin
 
 Specifying the collection by using the **items** attribute, and the current item is available through a variable named by the **var** attribute.
 
-
 # Example
+
 ```xml
 <forEach begin="@load(vm.begin)" end="@load(vm.end)" step="@load(vm.step)" var="x">
 	<label value="${x}"/>

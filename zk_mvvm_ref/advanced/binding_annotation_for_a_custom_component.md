@@ -52,6 +52,7 @@ public class EditableLabel extends HtmlMacroComponent {
 -   Line 34: This component sends custom event to notify that *Label*'s value is changed.
 
 #### editablelabel.zul
+
 ```xml
 <zk>
     <label id="label" />

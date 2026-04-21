@@ -13,6 +13,7 @@ The Command is implemented as ViewModel's method. Because ViewModel is a POJO, i
 
 ## Local Command
 ViewModel's Command is like an event handler, we can bind an event to a Command. The binding between events and a command is what we call "Event-Command Binding". Before establishing this binding, we have to declare a public command method in a ViewModel. Be careful that command names in a ViewModel cannot be duplicated, or it will cause a run-time exception.
+
 ```java
 public class OrderVM {
 
@@ -45,6 +46,7 @@ public class OrderVM {
 }
 ```
 Then we can bind a component's event to the command in the ZUL.
+
 ```xml
 <toolbar>
     <button label="New" onClick="@command('newOrder')" />
@@ -55,6 +57,7 @@ We describe the detail of [command binding here](../data_binding/command_binding
 
 ## Global Command
 Global Command is also a ViewModel's command and can hook UI component's events to it. The local command can only be triggered by events of a ViewModel's Root View Component and its child components. The global command can be triggered by a component's event from any ZUL. The main difference between a global command and a local command is that the event doesn't have to belong to the ViewModel's root view component or its child component. By default we can bind an event to any ViewModel's global command **within the same desktop**. A method can be both a local command and a global command.
+
 ```java
 @Command("delete") @GlobalCommand("delete")
 public void deleteOrder() {
@@ -62,6 +65,7 @@ public void deleteOrder() {
 }
 ```
 We can declare multiple global commands with the same name in different ViewModel. When an event triggers a global command, all matched command methods in every ViewModel will be executed.
+
 ```java
 public class MainViewModel {
 

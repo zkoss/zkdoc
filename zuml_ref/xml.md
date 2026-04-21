@@ -19,5 +19,3 @@ will generate the element and all its attributes to the client directly.
 
 However, the XML component set also provide some components for
 different functionality. For more information please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/xml_components).
-
-

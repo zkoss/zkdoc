@@ -47,5 +47,3 @@ When developing an application, we usually use IDE to deploy it. For
 more information, please refer to the document of your IDE.
 
 If you are new to Java IDE, you might take a look at [Setting up Eclipse with ZK Studio](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio).
-
-

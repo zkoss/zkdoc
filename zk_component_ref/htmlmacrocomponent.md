@@ -2,7 +2,6 @@
 title: "HtmlMacroComponent"
 ---
 
-
 - Java API: [org.zkoss.zk.ui.HtmlMacroComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html)
 
 ## Employment/Purpose
@@ -14,6 +13,7 @@ The Html Macro Component serves as the base class for macro components in ZK. By
 The Html Macro Component example demonstrates the creation of a reusable "Username" macro component containing a Button component that responds to the `onClick` event.
 
 1. **macro.zul**:
+
 ```xml
 <grid id="mc_grid">
 	<rows>
@@ -25,6 +25,7 @@ The Html Macro Component example demonstrates the creation of a reusable "Userna
 ```
 
 2. **macro.zs**:
+
 ```java
 import org.zkoss.zul.*;
 import org.zkoss.zk.ui.*;
@@ -40,6 +41,7 @@ public class Username extends HtmlMacroComponent {
 ```
 
 3. **usemacro.zul**:
+
 ```xml
 <?init zscript="macro.zs"?>
 <?component name="username" macroURI="macro.zul" class="Username"?>

@@ -19,32 +19,27 @@ will explain the theme creation procedures step by step.
 - **\[File\]** -\> **\[New\]** -\> **\[Other\]** --\> **\[Maven
   Project\]**
 
-  
 ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png)
 
 - Make sure **Create a simple project** is unchecked in the first screen
   of the New Maven Project wizard and click **Next \>** button.
 
-  
 ![](images/ZK_Installation_Guide_Maven_Archetype_step1.png)
 
 - From the **Select an Archetype** screen, select ZK Maven Archetype
   from the catalog dropdown list. Then Select ***zk-archetype-theme***
   from the list.
 
-  
 ![](images/styleguide-newtheme1.png)
 
 - Next, fill in details for ***Group Id***, ***Artifact Id***,
   ***Version*** and ***Package***, and in Properties, fill in ***zk
   version***, ***theme-name**'' and***theme-listener-class**''.
 
-  
 ![](images/styleguide-newtheme2.png)
 
 - The created project structure.
 
-  
 Here we can see all the LESS files from default trendy design are
 generated at the same time
 
@@ -70,6 +65,7 @@ a new look and feel using LESS
 5.  Check the real look of grid component in the demo project mentioned
     in prerequisites.
     - Add dependency in demo project's pom.xml file
+
       ```xml
       <dependency>
           <groupId>org.zkoss.theme</groupId>
@@ -78,6 +74,7 @@ a new look and feel using LESS
       </dependency>
       ```
     - Set preferred theme in demo project's zk.xml file
+
       ```xml
       <library-property>
           <name>org.zkoss.theme.preferred</name>
@@ -94,5 +91,3 @@ After the theme is completely tuned based on flat design, right click on
 the Atlantic project and execute **Run As \> Maven install** to generate
 theme jar file. You can then use the theme jar (see [ usage instruction]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#Installation))
 in other ZK web projects as well.
-
-

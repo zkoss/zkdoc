@@ -2,8 +2,6 @@
 title: "First ZK App with IntelliJ and ZKIdea"
 ---
 
-
-
 [ZKIdea](https://plugins.jetbrains.com/plugin/7855) is an IntelliJ
 plugin for ZK application development contributed by Mr. Jumper Chen.
 
@@ -13,7 +11,6 @@ plugin for ZK application development contributed by Mr. Jumper Chen.
 {% include zkidea-install-button.html %}
 or visit [JETBRAINS Marketplace](https://plugins.jetbrains.com/plugin/7855-zk/)  
       
-
 ## Install ZK plugin
 
 1.  Start IntelliJ  
@@ -45,7 +42,6 @@ or visit [JETBRAINS Marketplace](https://plugins.jetbrains.com/plugin/7855-zk/)
 5.  Fill in the project location and press "Finish".  
     ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png)  
       
-
 # Run the ZK Project
 
 1.  On IntelliJ main menu bar, select Run \> "Edit Configurations"  

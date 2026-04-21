@@ -46,6 +46,7 @@ If you need to include a JavaScript file on every ZUL page in your application, 
 You can create a `lang-addon.xml` to include the JavaScript file. ZK will load this addon for the whole application.
 
 First, create a `lang-addon.xml` file, for example in `WEB-INF/lang-addon.xml`:
+
 ```xml
 <language-addon>
     <addon-name>my-patch-addon</addon-name><!-- give a meaningful name -->
@@ -74,15 +75,18 @@ will take effect. According to which component you override, you need to
 specify the corresponding addon name. For example:
 
 - If you override a component in zul language e.g. `<button>`, you specify
+
   ```xml
   <depends>zul</depends>
   ```
 - If you override a component provided by zkmax e.g. `<nav>`, you specify
+
   ```xml
   <depends>zkmax</depends>
   ```
 - If you override something about accessibility, e.g. override aria
   attribute, you specify
+
   ```xml
   <depends>za11y</depends>
   ```

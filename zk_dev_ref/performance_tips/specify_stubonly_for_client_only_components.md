@@ -1,5 +1,4 @@
 
-
 # Overview
 
 It is common that the states of some components are not required to be
@@ -118,7 +117,6 @@ the client is removed (since Window's onClose() method detaches the
 window). Thus, if the event is executed again, the client can restore
 the detailed information back.
 
-
 ## Event Handling
 
 ZK will preserve all registered event listeners and handlers when
@@ -163,8 +161,5 @@ information.
 | Version | Date       | Content                                                                                                                            |
 |---------|------------|------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.2   | June, 2012 | [Bug: stubonly doesn't work](http://tracker.zkoss.org/browse/ZK-1182), and change the event handle from origin event to StubEvent. |
-
-
-
 [^1]: Please refer to [ZK-1094](http://tracker.zkoss.org/browse/ZK-1094)
     for a real case.

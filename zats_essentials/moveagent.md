@@ -1,7 +1,4 @@
 
-
-
-
 # Move Position
 
 You can move *window* and *panel* by specifying its **left** and
@@ -43,5 +40,3 @@ desktopAgent.query("panel").as(MoveAgent.class).moveTo(100,150);
 </tr>
 </tbody>
 </table>
-
- 

@@ -1,5 +1,4 @@
 
-
 # Calendar
 
 - Component Reference:
@@ -22,5 +21,3 @@ with client/attribute.
 | Version | Date       | Content                                                                                                 |
 |---------|------------|---------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Calendar support touch's swipe event to switch the date view](http://tracker.zkoss.org/browse/ZK-1246) |
-
-

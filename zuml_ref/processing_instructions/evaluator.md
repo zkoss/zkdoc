@@ -3,6 +3,7 @@ title: "evaluator"
 ---
 
 **Syntax:**
+
 ```xml
 <?evaluator [name="..."] [class="..."] [import="..."]?>
 ```
@@ -37,7 +38,6 @@ Here is a list of built-in implementations:
 | ognl | org.zkoss.zkmax.xel.ognl.OGNLFactory<br><br>The implementation based on OGNL, [http://www.ognl.org](http://www.ognl.org/).<br><br>*[available only if zkmax.jar is loaded]* |
 | commons-el | org.zkoss.zkmax.xel.el.ApacheELFactory<br><br>The implementation that is based on Apache Commons EL, org.apache.commons.el.ExpressionEvaluatorImpl.<br><br>*[available only if zkmax.jar is loaded]* |
 | japser-el | org.zkoss.zkmax.xel.el21.ApacheELFactory<br><br>The implementation that is based on Apache JSP 2.1 EL, org.apache.el.ExpressionFactoryImpl.<br><br>*[available only if zkmax.jar is loaded]* |
-
 You can provide additional implementation by the use of the `class`
 attribute, as described in the following section. The class must
 implement the
@@ -55,8 +55,6 @@ interface. Or, you can specify the following content in
 ```
 
 **Notes**
-
-
 
 # class
 
@@ -103,7 +101,6 @@ it ignores the classes imported by [the import directive](/zuml_ref/import).
 | Version | Date           | Content                                                                                              |
 |---------|----------------|------------------------------------------------------------------------------------------------------|
 | 6.0.0   | September 2011 | Support those new features seen in Unified Expression Language 2.2 such as method calls and l-value. |
-
 [^1]: MVEL is a powerful expression language. Refer to
     [<http://mvel.codehaus.org/>](http://mvel.codehaus.org/) for more
     information.

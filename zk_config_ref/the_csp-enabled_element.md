@@ -3,6 +3,7 @@
 {% include supported-since.html version="10.3.0" %}
 
 **Syntax:**
+
 ```xml
 <csp-enabled>true|false</csp-enabled>
 ```
@@ -16,6 +17,7 @@
 ```
 
 Enabling this will apply the `Content-Security-Policy` response header with the default directive:
+
 ```
 script-src 'self' 'unsafe-inline' 'unsafe-eval';
 ```

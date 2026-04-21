@@ -2,11 +2,9 @@
 title: "Slider"
 ---
 
-
 - Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
 - Java API: [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)
 - JavaScript API: [zul.inp.Slider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Slider.html)
-
 
 # Employment/Purpose
 
@@ -122,8 +120,6 @@ of the knob. ScaleInput is the scale ratio of the input size.
 |-------------|--------------------------------------------|
 | onScroll    | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content of a scrollable component has been scrolled by the user. |
 | onScrolling | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the user is scrolling a scrollable component. Notice that the component's content (at the server) won't be changed until onScroll is received. Thus, you have to invoke the `getPos` method in the ScrollEvent class to retrieve the temporary position. |
-
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -163,16 +159,10 @@ zul.jar.
 
 `*None`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                     |
 |---------|--------------|---------------------------------------------------------------------------------------------|
 | 5.0.4   | August 2010  | [org.zkoss.zul.Slider#setPageIncrement(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html#setPageIncrement(int)) is supported.        |
 | 5.0.4   | August 2010  | Slider support for clicking to increment or decrement                                       |
 | 7.0.1   | January 2014 | [Slider support minimal position and decimal mode](http://tracker.zkoss.org/browse/ZK-2085) |
-
-

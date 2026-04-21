@@ -2,8 +2,6 @@
 title: "Test Richlet"
 ---
 
-
-
 ZATS Mimic also supports the testing of
 [org.zkoss.zk.ui.Richlet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Richlet.html).[^1] Simply customize a few
 configurations for
@@ -15,7 +13,6 @@ and **zk.xml**) for the testing environment through the constructor of
 [DefaultZatsEnvironment](http://www.zkoss.org/javadoc/latest/zats/org/zkoss/zats/mimic/DefaultZatsEnvironment.html#DefaultZatsEnvironment(java.lang.String>) when testing `Richlet`.
 
 For Richlet, please refer to [ZK Developer's Reference/UI Composing/Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)
-
 
 Following is a simple `Richlet` example, we assume that the **web.xml**
 and **zk.xml** are placed in the **src/main/webapp/WEB-INF** folder:

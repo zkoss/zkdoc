@@ -2,8 +2,6 @@
 title: "ZK LESS Variables"
 ---
 
-
-
 LESS variables defined here are for ZK's default theme - Breeze. You can
 change these variables when customizing a theme with a new look and
 feel.
@@ -326,5 +324,3 @@ buttons, inputs, and tables.
 @dragDisAllowBorderColor:      #C13634;
 @dragDisAllowBackgroundColor:  #C13634;
 ```
-
-

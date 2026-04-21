@@ -29,4 +29,3 @@ Fir example,
 ```
 
 Unlike ZUML, the attribute is called `use`, rather than `class`, because of the limitation of JSP
-

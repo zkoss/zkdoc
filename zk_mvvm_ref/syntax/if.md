@@ -1,5 +1,6 @@
 # &lt;if>
 # Syntax
+
 ```xml
 <if test="@load(vm.visible)">
  ...
@@ -11,8 +12,8 @@
 
 The conditional execution of its body according to the value of the **test** attribute
 
-
 # Example
+
 ```xml
 <if test="@load(vm.rootVisible)">
 	<if test="@load(vm.visible)">

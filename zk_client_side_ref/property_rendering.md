@@ -2,8 +2,6 @@
 title: "Property Rendering"
 ---
 
-
-
 If a state (aka., a property) of a component will cause the peer widget
 to have a different behavior or visual appearance, the state has to be
 sent to the widget to ensure the consistency.
@@ -227,9 +225,6 @@ private class EncodedURL implements DeferedValue {
  }
 }
 ```
-
-
-
 
 [^1]: It is because `smartUpdate` is usually called in an event
     listener, which might run at the event thread (if it is turned on).

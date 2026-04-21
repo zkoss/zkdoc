@@ -2,6 +2,7 @@
 {% include supported-since.html version="6.5.1" %}
 
 # Syntax
+
 ```java
 @DefaultCommand
 ```
@@ -16,6 +17,7 @@ When a binder receives a command, it starts to look for ViewModel's command meth
 # Example
 
 #### Mark method as default
+
 ```java
 @DefaultCommand
 public void defaultAction() {

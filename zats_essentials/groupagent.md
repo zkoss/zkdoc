@@ -1,7 +1,4 @@
 
-
-
-
 # Group
 
 `GroupAgent` is only supported on a *column* of *grid*. It mimics the
@@ -22,6 +19,3 @@ The following code presents how to make a column to group its data.
 | Components | Version | Note |
 |------------|---------|------|
 | Column     | 5, 6    |      |
-
-
- 

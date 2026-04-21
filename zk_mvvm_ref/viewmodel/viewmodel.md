@@ -58,6 +58,7 @@ We can bind ZK UI component to a ViewModel by setting its **viewModel** attribut
 In previous way, `BindComposer` instantiates a ViewModel class for you upon the class name in `@init('foo.YourViewModel')`. However, sometimes you need to instantiate a ViewModel object by yourselves or use an existing object like a Spring bean as a ViewModel. Then, you need another a variable resolver to introduce the existing object for the binder.
 
 First, you should create a resolver that implements your way to instantiate a ViewModel or get the desired Spring bean.
+
 ```java
 public class ViewModelResolver implements VariableResolver {
 
@@ -76,6 +77,7 @@ public class ViewModelResolver implements VariableResolver {
 ```
 
 Now then, apply the above resolver on a page or [system scope]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#System-level_Variable_Resolver) and reference the ViewModel object with its name like `@init(myvm)`. Notice that there is no single quote around `myvm` which means it's a variable name rather than a string.
+
 ```xml
 <?variable-resolver class="org.zkoss.reference.developer.mvvm.ViewModelResolver"?>
 <!-- If you use a Spring bean as a view model, use the resolver.
@@ -90,6 +92,7 @@ Now then, apply the above resolver on a page or [system scope]({{site.baseurl}}/
 
 Since 9.5.0
 We can use simplified syntax to init view model. Notice that the id of the view model will be 'vm' by default.
+
 ```xml
 <zk>
 	<div viewModel="@('foo.MyViewModel')">
@@ -97,4 +100,3 @@ We can use simplified syntax to init view model. Notice that the id of the view 
 	</div>
 </zk>
 ```
-

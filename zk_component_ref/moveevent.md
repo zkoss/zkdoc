@@ -2,7 +2,6 @@
 title: "MoveEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)
 - JavaScript API: N/A
@@ -26,12 +25,8 @@ Check inherited events
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
-
-

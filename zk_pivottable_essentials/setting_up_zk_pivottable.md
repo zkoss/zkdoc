@@ -40,6 +40,5 @@ You also need the following 3rd party libraries that you can get from [maven cen
 Simply include the Pivottable jar in your ZK project, then it is
 available for you.
 
-
 # Jakarta EE
 Since Pivottable is independent of Java EE–specific APIs, so the same jar file can work on both Java EE and Jakarta EE.

@@ -8,7 +8,6 @@ The default method:
 Date parseDate(String source, String pattern);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#parseDate(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#parseDate(java.lang.String, java.lang.String))
 

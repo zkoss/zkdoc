@@ -24,6 +24,7 @@ All properties in a ViewModel:
 **@NotifyChange("*")**
 
 Following is an example of `@NotifyChange`:
+
 ```java
 public class OrderVM {
 
@@ -77,6 +78,7 @@ For similar reason, property might be changed in setter method. After value is s
 
 ### Enabled by Default
 A setter method usually changes only one property, e.g. setMessage() will set message to new value. To save developer's effort, **the target property changed by setter method is notified automatically**. That is, `@NotifyChange` annotation on a setter is not required unless there are some other properties changed by the setter and need to be explicitly notified.
+
 ```java
 public class MessageViewModel {
     private String message;
@@ -92,6 +94,7 @@ public class MessageViewModel {
 * There is no need to specify `@NotifyChange` on `setMessage()` in MessageViewModel if only `message` is changed in the setter method.
 
 The ZUL that uses MessageViewModel.
+
 ```xml
 <textbox id="msgBox" value="@bind(vm.message)"/>
 
@@ -107,6 +110,7 @@ Developer can disable this default behavior by adding `@NotifyChangeDisabled` on
 For setter method, `@NotifyChange` is used when multiple properties have dependency relationship, e.g. one property's value is calculated from the other properties. Notice that if you apply `@NotifyChange` on a setter method, default notification behavior will be overridden.
 
 #### @NotifyChange on Setter
+
 ```java
 public class FullnameViewModel {
 
@@ -136,6 +140,7 @@ In above code snippet, fullname is concatenated by firstname and lastname. When 
 If a property depends on many properties, `@NotifyChange` will distribute in multiple places in a ViewModel class. Developers can use `@DependsOn` for convenience. This annotation defines the dependency relations among properties and can provide same function as explicit `@NotifyChange`, but it's used on getter method.
 
 #### Example of @DependsOn
+
 ```java
 public class FullnameViewModel {
 
@@ -169,6 +174,7 @@ For what use cases you will need this? Most of the time, we bind one component a
 
 For example, assume there is a web page in a tour website. A customer has to fill the leave and return day of a trip and the duration of the trip shall be automatically calculated and show on the screen after the user fills either fields. Here we choose to use a converter to do the duration calculation instead of implementing the logic in the Trip class as a property. In such scenario, you will need to annotate `@NotifyChange(".")` on both leaveDate and returnDate property setters so when either leaveDate or returnDate property changes, the duration attribute can be updated.
 #### Bind to an object example
+
 ```xml
 <hlayout>
     Leave Date: <datebox value="@save(vm.trip.leaveDate)"/>
@@ -182,6 +188,7 @@ Duration including leave and return(day):
 * Because durationConverter needs to access 2 properties (leaveDate, returnDate), we have to bind label's value to the trip bean itself not an individual property of the bean.
 
 #### @NotifyChange(".") example
+
 ```java
 public class DurationViewModel  {
     private Trip trip = new Trip();
@@ -271,6 +278,7 @@ The Object used for the "bean" parameter can be any object used in a load bindin
 Additionally, it is possible to notify an individual bean, instead of a bean property by using the "dot" syntax. (see example below)
 
 #### Dynamic Notification
+
 ```java
 String data;
 // setter & getter
@@ -299,18 +307,11 @@ public void cmd() {
 We provide a simpler way to call postNotifyChange for the most common usage (omitting the queue name and scope) since 9.5.0.
 You can pass the bean instance and one or more properties name of bean only.
 For example:
+
 ```java
 BindUtils.postNotifyChange(this, "propertyOne");
 ```
+
 ```java
 BindUtils.postNotifyChange(this, "propertyOne", "propertyTwo", "propertyThree");
 ```
-
-
-
-
-
-
-
-
-

@@ -119,11 +119,9 @@ Notes:
 - `data-handler` can be declared multiple times to register multiple handlers.
 - The handler function receives `(wgt, dataValue)` (widget and attribute value) as parameters and may attach listeners or transform `event.data.value` as needed.
 
-
 To see more examples, please refer to [ZK8: Simple but Powerful; Using Data-handler API to Work with Front-End Technologies](http://blog.zkoss.org/index.php/2015/08/25/zk8-simple-but-powerful-using-data-handler-api-to-work-with-front-end-technologies/)
 and [Github](https://github.com/zkoss/zk8-datahandler). You can design
 your own data-attribute handler and contribute this project.
-
 
 # Version History
 

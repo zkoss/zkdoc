@@ -2,7 +2,6 @@
 title: "Bandbox"
 ---
 
-
 - Demonstration:
   [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
 - Java API: [org.zkoss.zul.Bandbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandbox.html)
@@ -215,7 +214,6 @@ functions.
 | Name | Event Type |
 |---|---|
 | onOpen | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a component. Note: unlike onClose, this event is only a notification. The client sends this event after opening or closing the component. |
-
 - Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
 # Supported Molds
@@ -227,7 +225,6 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/bandbox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/bandbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
-
 # Supported Children
 
 `*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/bandpopup)

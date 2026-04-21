@@ -1,6 +1,7 @@
 {% include supported-since.html version="3.6.2" %}
 
 **Syntax:**
+
 ```xml
 <?script [type="text/javascript"] [src="uri"] [charset="encoding"]
   [content="javascript snippet"] [if="..."] [unless="..."]?>

@@ -2,8 +2,6 @@
 title: "Widget Events"
 ---
 
-
-
 A widget event is the widget-level event
 ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)).
 
@@ -60,7 +58,6 @@ will be called.
 | x | onSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when you resize a widget and propagates this event to its children. |
 | x | onAfterSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when each time ZK completes rendering/re-rendering a widget and propagates this event to its children. |
 | x | onUnbind | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when ZK removes a widget from a page. |
-
 Events that can be handled by overriding a method
 
 Please read
@@ -126,7 +123,6 @@ Notice that there are two kinds of propagation: widget-level and
 DOM-level. If you stop only the widget-level propagation (by calling
 `evt.stop({propagation:true})`), the DOM event will go through all
 DOM-level event listeners and then trigger the browser default behavior.
-
 
 ## Capture the Mouse Event
 
@@ -212,7 +208,6 @@ with `{au:true}`, such as
 ```javascript
 evt.stop({au: true});
 ```
-
 
 [^1]: For more information, please refer to the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)
     section.

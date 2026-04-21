@@ -14,5 +14,4 @@ W3C DOM.
 A typical example is XSLT and XPath. You could use any of favorite XSL
 processor and XPath utilities with iDOM.
 
-
 [^1]: <http://www.jdom.org>

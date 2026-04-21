@@ -2,8 +2,6 @@
 title: "custom-attributes"
 ---
 
-
-
 **Syntax:**
 
 ```xml

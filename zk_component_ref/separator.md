@@ -2,11 +2,9 @@
 title: "Separator"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Separator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Separator.html)
 - JavaScript API: [zul.wgt.Separator](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Separator.html)
-
 
 # Employment/Purpose
 

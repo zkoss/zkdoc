@@ -3,6 +3,7 @@
 {% include supported-since.html version="10.3.0" %}
 
 **Syntax:**
+
 ```xml
 <csp-policy>csp_header_content</csp-policy>
 ```

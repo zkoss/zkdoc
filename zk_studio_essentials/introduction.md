@@ -1,5 +1,4 @@
 
-
 # Introduction
 
 ZK Studio is an Eclipse plug-in to assist in the development of *Rich
@@ -26,7 +25,6 @@ ZK Studio includes the tools shown and listed below:
 In addition to the above GUI tools, ZK Studio also provides these
 features:
 
-  
 **New ZK Wizard**: There are two wizards; the first is *New ZK Project
 Wizard*, it is actually an Eclipse Dynamic Web Project adding support
 for ZK framework. The second is the *New ZUL File Wizard* which creates

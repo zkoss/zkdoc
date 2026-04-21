@@ -12,7 +12,6 @@ supported-since.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
 | data-ariaStartLabel | Describe the the slider button (start). |
 | data-ariaEndLabel | Describe the the slider button (end). |
 | data-largeStep-multiplier (optional) | Describe the moving step of pressing PageUp/PageDown. |
-
 ## Keyboard Support
 
 | Key | Description |
@@ -21,7 +20,6 @@ supported-since.html version=9.5.0 %} <!--REQUIRED ZK EDITION: PE -->
 | ArrowLeft / ArrowRight | Move the slider button. |
 | Home / End | Move the slider button to the minimum/maximum. |
 | PageUp / PageDown | Move the slider button in the large step. |
-
 ## Example
 
 ```xml

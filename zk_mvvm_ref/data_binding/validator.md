@@ -4,6 +4,7 @@
 User input validation is an indispensable function of a web application. ZK's **validator** can help developers accomplish this task. The validator is a reusable element that performs validation and stores validation messages into a validation message holder. When it is applied, it is invoked before saving the data to the binding target (ViewModel or middle object). When you bind a component's attribute to a validator, the binder will use it to **validate attribute's value automatically before saving to a ViewModel or to a middle object**. If validation fails, ViewModel's (or middle object's) properties will be **unchanged**.
 
 We usually provide custom validator with ViewModel's property.
+
 ```java
 public void class MyViewModel {
     private Validator emailValidator = new EmailValidator();
@@ -15,6 +16,7 @@ public void class MyViewModel {
 ```
 
 Then it can be referenced on a ZUL by **ViewModel's properties** or a **string literal with validator's full-qualified class name**.
+
 ```xml
 <textbox value="@save(vm.account.email) @validator(vm.emailValidator)"/>
 
@@ -35,8 +37,8 @@ Following is a comparison table for the two saving syntaxes mentioned above:
 | **Save When** | a component's attribute related event fires (e.g. onChange for value) |  Before executing a command |
 | **Validation Timing** | <ul><li>Immediately validate for single field</li> <li>No validation when executing a command</li></ul>| <ul><li>Batch validate all fields when triggering specified command</li> <li>No immediate validation of single fields after a user input</li></ul> |
 | **Validation Fails** | **Not** save data to ViewModel | **Not** save data to ViewModel &<br>**Not** execute the command |
-
 In form-binding, you can apply a validator to “form” attribute or an input component. If you apply it to both places, you can double validate user input. The first time is when saving the data to a middle object; this can provide the user with an immediate response after input. The second time is when saving to a ViewModel upon a command; this can validate user input even if he doesn't input anything and submit empty data directly.
+
 ```xml
 <toolbar>
     <button label="Save" onClick="@command('saveOrder')" disabled="@bind(empty vm.selected)" />
@@ -71,6 +73,7 @@ In form-binding, you can apply a validator to “form” attribute or an input c
 # Validation Message Holder
 
 Databinding provides a standard mechanism to store and display validation messages. After performing validation, the validator might store a validation message in **validation message holder**. To use it, you have to initialize it by specifying its id in **validationMessages** attribute with the`@id`. Then you can reference it with this id.
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')"
     validationMessages="@id('vmsgs')">
@@ -84,6 +87,7 @@ Validation message holder stores messages like a map with key-value pairs. The v
 The binder will reload validation messages each time after validation.
 
 ### Displaying a Validation Message with Default Key
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.MyViewModel')"
     validationMessages="@id('vmsgs')">
@@ -105,6 +109,7 @@ The binder will reload validation messages each time after validation.
 ### Displaying a Message of a Self-defined Key
 
 You can display the first validation message which is bound to a self-defined key of a validator that extends [AbstractValidator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/validator/AbstractValidator.html). **Display validation message with self-defined key**
+
 ```xml
 <vbox form="@id('fx') @load(vm) @save(vm, before='submit') @validator(vm.formValidator)">
     <hbox>
@@ -134,6 +139,7 @@ Please read [Self-defined Validation Message Key](#self-defined-validation-messa
 A validator can set multiple messages for a component or a self-defined key. You can get all messages from Validation Message Holder's special property **`texts`** . In EL, `vmsgs.texts` is the same as `vmsgs['texts']`, so you should avoid using `texts` as your self-defined key.
 
 #### Displaying Multiple Messages of a Form Validator
+
 ```xml
 <div id="formdiv" form="... @validator('fooValidator')">
     <!-- other components -->
@@ -161,6 +167,7 @@ We usually need to validate one property at a time; the simplest way is to inher
 ```xml
 <intbox value="@save(vm.quantity) @validator(vm.rangeValidator)"/>
 ```
+
 ```java
 public Validator getRangeValidator() {
     return new AbstractValidator() {
@@ -180,6 +187,7 @@ public Validator getRangeValidator() {
 We sometimes need another property's value to validate the current property. We have to save those values that have dependency among them **upon the same Command** (use ` @save(vm.p, before='command' `) ; thus, the binder will pass those properties that are saved as the same command to ` ValidationContext ` and we can retrieve them with property's key to process.
 
 Assume the shipping date to be at least 3 days later than the creation date.
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer"
     viewModel="@id('vm') @init('eg.ValidationMessagesVM')"
@@ -216,6 +224,7 @@ Assume the shipping date to be at least 3 days later than the creation date.
 -   As we save vm.selected.creationDate and vm.selected.shippingDate before Command 'saveOrder', they will be passed into validation context.
 
 Our custom shipping date validator should get the creation date to compare.
+
 ```java
 public class ShippingDateValidator extends AbstractValidator{
 
@@ -257,6 +266,7 @@ If you want to validate a property according to another property's value in form
 The following is an example that demonstrates the same shipping date validator but used in the context of form-binding.
 
 ### Using validator in form-binding
+
 ```xml
 <toolbar>
     <button label="Save" onClick="@command('saveOrder')" disabled="@bind(empty vm.selected)"/>
@@ -292,6 +302,7 @@ The following is an example that demonstrates the same shipping date validator b
 - Line 5: Applying a validator in form-binding; not an individual input component that binds to middle object's property.
 
 ### Validator for Form-Binding
+
 ```java
 public Validator getShippingDateValidator() {
     return new AbstractValidator() {
@@ -327,11 +338,13 @@ public Validator getShippingDateValidator() {
 We can pass one or more parameters by EL expression to a validator. The parameters are written in key-value pairs format inside ` @validator() ` annotation.
 
 ### Passing a constant value in a ZUL
+
 ```xml
 <textbox id="keywordBox" value="@save(vm.keyword) @validator(vm.maxLengthValidator, length=3)"/>
 ```
 
 ### Retrieving Parameters in a Validator
+
 ```java
 public class MaxLengthValidator implements Validator {
     public void validate(ValidationContext ctx) {
@@ -350,6 +363,7 @@ public class MaxLengthValidator implements Validator {
 - The parameter's name “length” is user-defined.
 
 ### Passing Object in a ZUL
+
 ```xml
 <combobox id="upperBoundBox" >
     <comboitem label="90" value="90"/>
@@ -368,6 +382,7 @@ public class MaxLengthValidator implements Validator {
 You might want to set the key of a validation message on your own, especially when you use a single validator to validate multiple fields. As all validation messages generated by one validator for a component have the same default key (the component object itself), to retrieve and display a validation message individually, you would have to set a different key for each message.
 
 Assume you use only one validator in form binding to validate all fields.
+
 ```java
 public Validator getFormValidator() {
     return new AbstractValidator() {
@@ -391,6 +406,7 @@ public Validator getFormValidator() {
 -   Because validation messages are stored in the same context, you should use different keys for different messages.
 
 #### Displaying a Validation Message Next to Each Component
+
 ```xml
 <vbox form="@id('fx') @load(vm) @save(vm, before='submit') @validator(vm.formValidator)">
     <hbox>
@@ -414,12 +430,14 @@ public Validator getFormValidator() {
 The execution of a non-conditional property binding is separated from execution of command. If an event triggers both property-saving and command execution, they will not block each other.
 
 For example:
+
 ```xml
 <textbox value="@bind(vm.value) @validator(vm.myValidator)" onChange="@command('submit')"/>
 ```
 -   When onChange event fires, the binder will perform validation before saving vm.value. It doesn't matter if validation fails or suceeds; it will still execute command “submit”. Validation failure only stops binder from saving textbox's value into vm.value.
 
 An example showing the opposite:
+
 ```xml
 <textbox id="t1" value="@bind(vm.foo)" onChange="@command('submit')"/>
 <textbox id="t2" value="@save(vm.bar, before='submit') @validator(vm.myValidator)"/>
@@ -433,6 +451,7 @@ An example showing the opposite:
 {% include supported-since.html version="6.0.1" %}
 
 You can register application level validators by setting library-property(*org.zkoss.bind.appValidators*) in zk.xml. An application level validator only has one instance and is shared between all binders.
+
 ```xml
 <library-property>
     <name>org.zkoss.bind.appValidators</name>
@@ -440,12 +459,11 @@ You can register application level validators by setting library-property(*org.z
 </library-property>
 ```
 Then use them by validator's name.
+
 ```xml
 <textbox value="@bind(vm.name) @validator('foo')"/>
 <textbox value="@bind(vm.value) @validator('bar')"/>
 ```
-
-
 
 # Using a Built-in Validator
 
@@ -461,12 +479,11 @@ The **`validatorName`** should be replaced with the built-in validator's name (l
 
 This validator integrates the Java Bean Validation ([JSR 303](http://jcp.org/en/jsr/detail?id=303)) framework that defines a metadata model and [Bean validator API](http://jackson.codehaus.org/javadoc/bean-validatio-api/1.0/index.html) to validate JavaBeans. Developers can specify the constraints of a bean's property by Java annotations and validate against the bean by API. By using ZK's bean validator, you only have to specify constraints on bean's properties. The bean validator will then invoke the API to validate for you.
 
-
-
 ### Preparing to Use JSR 303
 
 #### Required Jars
 A known implementation of JSR 303 is [Hibernate Validator](http://www.hibernate.org/subprojects/validator.html). The following is a sample dependency list in pom.xml for using Hibernate Validator:
+
 ```xml
 <dependency>
     <groupId>org.hibernate</groupId>
@@ -504,6 +521,7 @@ log4j.appender.stdout.layout.ConversionPattern=%5p [%t] (%F:%L) - %m%n
 ```
 
 `META-INF/validation.xml`
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <validation-config
@@ -520,6 +538,7 @@ You can customize the settings according to your requirements.
 
 ### Usage
 Add constraint in JavaBean's property with Java annotation.
+
 ```java
 public static class User {
     private String _lastName = "Chen";
@@ -537,6 +556,7 @@ public static class User {
 Use this validator with its name *beanValidator* and with syntax:
 
 `@validator('beanValidator')`
+
 ```xml
 <window id="win"
     viewModel="@id('vm') @init(foo.MyViewModel)"
@@ -549,6 +569,7 @@ Use this validator with its name *beanValidator* and with syntax:
 Since ZK 8.5.0 it also supports assigning a self-defined validation message key with syntax:
 
 `@validator('beanValidator', key='someKey')`
+
 ```xml
 <window id="win"
     viewModel="@id('vm') @init(foo.MyViewModel)"
@@ -564,6 +585,7 @@ Since ZK 8.5.0 it also supports assigning a self-defined validation message key 
 {% include supported-since.html version="6.0.1" %}
 
 It also supports **validating a form object's property** loaded from a bean. It validates the last loaded bean of the form, which means it doesn't support validating a form that does not need to be loaded by a bean yet.
+
 ```xml
 <grid form="@id('fx') @load(vm.user) @save(vm.user, after='save')">
     <textbox id="tb" value="@bind(fx.lastName) @validator('beanValidator')"/>
@@ -582,7 +604,6 @@ Since ZK 8.0.0 the form binding is based on Java Proxies, since only methods are
 
 ### Usage
 Use this validator with the name **formBeanValidator** and set a unique prefix key (The prefix has to be unique in the same binder) by **prefix** argument of validator. When any property of the bean is invalid, it puts the invalid message to into the validation message holder with key **prefix**+propertyName.
-
 
 Syntax:
 
@@ -683,6 +704,7 @@ In zul:
 	<intbox value="@bind(fx.age2)"/>
 	<label id="err3" value="@load(vmsgs['p_age2'])"/>
 </div>
+
 ```
 In viewmodel:
 ```java
@@ -702,5 +724,6 @@ public class FromValidationViewModel {
 		//submit
 	}
 }
+
 ```
 In this case, only the validations of the `name` and `age` would be triggered. The validation of `age2` would be ignored.

@@ -2,11 +2,9 @@
 title: "Listbox"
 ---
 
-
 - Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
 - Java API: [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)
 - JavaScript API: [zul.sel.Listbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listbox.html)
-
 
 # Employment/Purpose
 
@@ -715,7 +713,6 @@ listbox will do the rest.
 </window>
 ```
 
-
 ## Sorting with Live Data
 
 If you allow users to sort a listbox with live data, you have to
@@ -836,7 +833,6 @@ an image as the header by `image` attribute.
         ...
     </listbox>
 ```
-
 
 ## Column Footers
 
@@ -1377,8 +1373,6 @@ and not paging
 It specifies whether to enable autohide property for internal paging
 component.
 
-
-
 # Supported Events
 
 | Name | Event Type                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -1389,7 +1383,6 @@ component.
 | `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                                                                                                                                                                                                                                                                            |
 | `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
 | `onCheckSelectAll` | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items.                                                                                                                                                                    |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -1402,7 +1395,6 @@ zul.jar.
 | default | ![](/zk_component_ref/images/listbox_mold_default.png) |
 | select | ![](/zk_component_ref/images/listbox_mold_select.png) |
 | paging | ![](/zk_component_ref/images/listbox_mold_paging.png) |
-
 # Supported Children
 
 * [Listitem]({{site.baseurl}}/zk_component_ref/listitem)
@@ -1435,7 +1427,6 @@ zul.jar.
 | 7.0.3   | July 2014      | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
 | 8.6.0   | Oct 2018       | [ZK-2756](http://tracker.zkoss.org/browse/ZK-2756): Listbox supports listgroup like optgroup in select mold                                                                                     |
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
-
 [^1]: The concept is similar to Swings (`javax.swing.ListModel`).
 
 [^2]: This feature is a bit different from XUL, where listhead and

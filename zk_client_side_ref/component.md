@@ -2,8 +2,6 @@
 title: "component"
 ---
 
-
-
 **Syntax:**
 
 ```xml

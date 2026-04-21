@@ -9,7 +9,6 @@ section we will discuss how to declare UI, including [XML-based approach]({{site
 
 For a detailed comparison of when to use which approach, especially for dynamic or database-driven UI, please see [ZUL vs. Java API]({{site.baseurl}}/zk_dev_ref/ui_composing/zul_vs_java).
 
-
 This section describes more general and overall concepts of UI
 composing. For more detailed and specific topics, please refer to the
 [UI Patterns]({{site.baseurl}}/zk_dev_ref/ui_patterns/ui_patterns) section.

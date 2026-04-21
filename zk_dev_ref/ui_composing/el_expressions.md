@@ -45,7 +45,6 @@ Multiple EL expressions could be specified in a single attribute:
 | \${10 mod 4}                   | 2                                                                    |
 | \${empty param.add}            | true if the request parameter named `add` is null or an empty string |
 | \${param\['mycom.productId'\]} | The value of the request parameter named `mycom.productId`           |
-
 - The example is from [JSP Tutorial](http://download.oracle.com/javaee/1.4/tutorial/doc/JSPIntro7.html).
 - For more information please refer to
   [Operators](/zuml_ref/operators) and

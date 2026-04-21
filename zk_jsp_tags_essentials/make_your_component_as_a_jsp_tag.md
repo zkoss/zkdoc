@@ -67,4 +67,3 @@ your JSP tag definition. The special attributes include `if`, `unless`,
 3\. Use TLD in JSP document with **\<%@ taglib%\>** After the tag
 definition is done, you could use it in JSP document just like any other
 JSP tags. Of course, you have to specify TLD first.
-

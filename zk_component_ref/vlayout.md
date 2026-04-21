@@ -2,7 +2,6 @@
 title: "Vlayout"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Vlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vlayout.html)
 - JavaScript API:
@@ -92,10 +91,6 @@ Check inherited events
 
 # Version History
 
-
-
 | Version | Date         | Content             |
 |---------|--------------|---------------------|
 | 5.0.4   | August, 2010 | new added component |
-
-

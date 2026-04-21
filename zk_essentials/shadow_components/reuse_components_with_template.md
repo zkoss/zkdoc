@@ -15,13 +15,13 @@ With ZK 8, you can put a `<template>` inside any component. Defining a template 
 ```
 
 or a path of a zul
+
 ```xml
 <div>
     <template name="layout" src="/mytemplate.zul"/>
 </div>
 ```
 The usage is the same as what we mentioned in previous chapters. But we can also use the following tags to describe a component creation logic based on certain conditions.
-
 
 ## Applying a Template
 When we apply a template, ZK will create the components inside the template upon its logic and insert those components into the position of `<apply>` tag. Therefore, we also call it *Template Injection*.
@@ -32,6 +32,7 @@ We usually apply a template with its name like:
 <apply template="layout"/>
 ```
 Or apply with a path of a zul like:
+
 ```xml
 <apply templateURI="/chapter1/banner.zul"/>
 ```
@@ -58,7 +59,6 @@ To reuse the `<forEach>`, we turn it into a template named `iterate` first.
 ```
 - Line 2: We pass a parameter by `menuItems="@ref(vm.menuHierarchy)"`. Therefore, we can access the menu list in `<forEach>` by `items="@load(menuItems)"`.
 
-
 In this simple case (just 2 choices), we can re-write it in a simpler way by creating 2 templates for `menu` and `menuitem` respectively.
 
 ```xml
@@ -66,6 +66,7 @@ In this simple case (just 2 choices), we can re-write it in a simpler way by cre
     <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.iconSclass)"/>
 </template>
 ```
+
 ```xml
 <template name="menuitem" >
     <navitem label="@load(menuItem.label)" />
@@ -82,11 +83,11 @@ Then replace `<choose>`/`<when>`/`<otherwise>` with ternary operator `?` like:
 </template>
 ```
 
-
 ## Applying a Template Inside a Template
 Everything is fine so far except for the fact those sub-menus are not rendered. That's because in template `menu`, we only render the menu node itself to a `<nav>` and don't render its sub-menu. A node in a sub-menu is also a menu node, and it can also have a sub-menu. We still need to render a sub-menu node like what we do for a menu node, by using a control structure. The best thing is: we don't need to repeat ourselves in template `menu`. We can just apply the template `iterate` to iterate a collection of menu nodes recursively.
 
 **All 3 templates are used in this example**
+
 ```xml
 <template name="menu">
     <nav label="@load(menuItem.label)" iconSclass="@load(menuItem.iconSclass)">

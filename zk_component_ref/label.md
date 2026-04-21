@@ -2,11 +2,9 @@
 title: "Label"
 ---
 
-
 - Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Label](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html)
 - JavaScript API: [zul.wgt.Label](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Label.html)
-
 
 # Employment/Purpose
 
@@ -96,7 +94,6 @@ preserved.
 | false | true | any | New lines are preserved. |
 | false | false | positive | The label only show its value up to the length of "maxlength". |
 | false | false | 0 | The label is displayed regularly. |
-
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
 ```xml
@@ -126,7 +123,6 @@ This displaying rule is slightly different in ZK3.
 | true | any | positive | If the length of a line exceeds `maxlength`, the line is hyphenated. |
 | false | true | any | `maxlength` is ignored. |
 | any | any | 0 | `hyphen` is ignored. |
-
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK3.png)
 
 ```xml
@@ -163,4 +159,3 @@ only preserves new lines and white space at the beginning of each line.
 # Supported Children
 
 `*NONE`
-

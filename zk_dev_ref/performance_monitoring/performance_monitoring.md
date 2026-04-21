@@ -2,8 +2,6 @@
 title: "Performance Monitoring"
 ---
 
-
-
 To improve the performance of an Ajax application, it is better to
 monitor the performance for identifying the bottleneck. Depending on the
 information you'd like to know, there are a few approaches.

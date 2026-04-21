@@ -2,8 +2,6 @@
 title: "Development-time Best Practices"
 ---
 
-
-
 There are several settings below we recommend you to specify during
 development time that can improve your developer experience. They can
 show you more debugging information and disable various caches to get

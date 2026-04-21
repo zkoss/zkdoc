@@ -22,5 +22,3 @@ requests are processed completely. On the other hand, the later one will
 send a partial output first if the processing is taking too long (half
 of the value specified in the `resend-delay` element). By sending the
 partial output, the client will know if the server is still alive.
-
-

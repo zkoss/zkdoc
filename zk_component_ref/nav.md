@@ -2,7 +2,6 @@
 title: "Nav"
 ---
 
-
 - Demonstration:
 - Java API:
   [Nav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Nav.html)
@@ -65,21 +64,14 @@ class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#c
 | Name | Event Type |
 |---|---|
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a nav component. |
-
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*`[` Nav`]({{site.baseurl}}/zk_component_ref/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/navseparator)
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                    |
 |---------|--------------|--------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Nav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Nav.html) was introduced. |
-
-

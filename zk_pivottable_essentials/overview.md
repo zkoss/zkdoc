@@ -42,5 +42,3 @@ book.
 # Supported Browsers
 
 IE8+, latest Chrome/Firefox/Safari/Opera
-
-

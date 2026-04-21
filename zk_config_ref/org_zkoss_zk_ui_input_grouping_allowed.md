@@ -2,7 +2,6 @@
 title: "org.zkoss.zk.ui.input.grouping.allowed"
 ---
 
-  
 Property:  
 `org.zkoss.zk.ui.input.grouping.allowed`
 

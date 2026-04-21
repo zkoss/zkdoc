@@ -13,6 +13,7 @@ This involves 2 steps:
 Notice that the syntax uses lowercase 'c' e.g. `@command('save')`
 
 ### Step 1: create a public method with @Commmand
+
 ```java
 public class OrderVM {
 
@@ -35,6 +36,7 @@ public class OrderVM {
 ```
 
 ### Step 2: specify a command binding in a zul
+
 ```xml
     <toolbar>
         <button label="New" onClick="@command('newOrder')" />
@@ -69,6 +71,7 @@ Notice that it only works in the matched attribute format: "on" + action (ex. on
 Also, the @Command in the class of view model can be omitted.
 
 #### Command method example
+
 ```java
 public class OrderVM {
     public void newOrder() {
@@ -82,6 +85,7 @@ Empty Command
 If we specify command name with an **empty string literal** or evaluation result of EL inside ` @command() ` is **null**, the binder will ignore that command. It's handy if you want to do nothing in some cases. For example:
 
 ####Empty command
+
 ```xml
 <button onClick="@command(empty vm.selection ? 'add' : ''"/>
 
@@ -97,6 +101,7 @@ We can apply **`@DefaultCommand`** to mark a method as a default command method 
 Assume that there are only two command methos in the below ViewModel. If we trigger a command “exit”, a binder invokes the default command method `defaultAction()` because it cannot find a command method named “exit”.
 
 #### ViewModel with default command method
+
 ```java
 public class OrderVM {
 

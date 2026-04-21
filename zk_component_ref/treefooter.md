@@ -2,12 +2,10 @@
 title: "Treefooter"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Treefooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefooter.html)
 - JavaScript API:
   [zul.sel.Treefooter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treefooter.html)
-
 
 # Employment/Purpose
 
@@ -73,6 +71,3 @@ You could place any child in a tree footer.
 # Use Cases
 
 [ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
-
-
-

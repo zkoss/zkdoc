@@ -23,6 +23,7 @@ If using ***Client Binding*** to trigger a command, this annotation would conver
 {% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
+
 ```java
 @BindingParam String keyString
 ```
@@ -30,6 +31,7 @@ The value can be omitted if name is the same as the annotated parameter.
 # Example
 
 #### Command binding that pass parameters*
+
 ```xml
 <listbox model="@load(vm.items)" selectedItem="@bind(vm.selected)" hflex="true" height="300px">
     <listhead>
@@ -48,6 +50,7 @@ The value can be omitted if name is the same as the annotated parameter.
 ```
 
 #### Command method in ViewModel with binding parameter
+
 ```java
 @Command
 public void popupMessage(@BindingParam("myKey") String target, @BindingParam String content) {

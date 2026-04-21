@@ -7,6 +7,7 @@
 {% include supported-since.html version="9.5.0" %}
 `@(`*`[EvaluateOnce EL-expression], [arbitraryKey]=[EL-expression]`*`) `
 We can use simplified syntax to initialize a component's attribute.
+
 ```xml
 <label value="@(vm.message)"/>
 ```
@@ -40,18 +41,21 @@ It could be any name; it's used as a key for parameter related Java annotation i
 # Example
 
 #### Usage example in viewModel attribute
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ChildrenMenuVM')">
 </window>
 ```
 
 #### Usage example in form attribute
+
 ```xml
 <vbox form="@id('fx') @init(vm.myForm) @load(vm.person) @save(vm.person, before='save')">
 </vbox>
 ```
 
 #### Pass arguments
+
 ```xml
 <window width="400px" apply="org.zkoss.bind.BindComposer"
 	viewModel="@id('vm') @init('org.zkoss.reference.developer.mvvm.databinding.InitVM', arg1='myValue')">

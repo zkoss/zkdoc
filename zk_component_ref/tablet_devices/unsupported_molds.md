@@ -2,8 +2,6 @@
 title: "Unsupported Molds"
 ---
 
-
-
 The following molds which are not supported in components for tablet
 devices.
 
@@ -32,5 +30,3 @@ supported mold instead.
 | Version | Date       | Content |
 |---------|------------|---------|
 | 6.5.0   | July, 2012 |         |
-
-

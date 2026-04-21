@@ -29,7 +29,6 @@ it because our application uses Spring's scoped-proxy that requires it.
     </dependency>
 ```
 
-
 ## Deployment Descriptor
 
 The deployment descriptor (web.xml) also needs two more listeners from
@@ -77,7 +76,6 @@ Spring.
 
 ## Spring Configuration File
 
-
 Create Spring configuration file with default name
 (`applicationContext.xml`). We enable Spring's classpath scanning to
 detect and register those class with annotation as beans automatically.
@@ -104,4 +102,3 @@ detect and register those class with annotation as beans automatically.
     register them in bean definitions. You should
     specify a common parent package or a comma-separated package list that
     includes all candidate classes at `base-package` attribute.
-

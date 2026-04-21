@@ -2,7 +2,6 @@
 title: "Fisheye"
 ---
 
-
 - Demonstration:
   [Fisheye](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
 - Java API: [org.zkoss.zkex.zul.Fisheye](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheye.html)
@@ -96,14 +95,8 @@ for inherited functions.
 
 `*None`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                         |
 |---------|--------------|---------------------------------|
 | 5.0.0   | January 2010 | Fisheye supports dynamic images |
-
-

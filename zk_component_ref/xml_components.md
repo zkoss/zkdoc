@@ -2,8 +2,6 @@
 title: "XML Components"
 ---
 
-
-
 This section describes how to use the [XML component set](/zuml_ref/xml). The XML component
 set is a special [component set](/zuml_ref/languages) used in a XML device. A
 XML device is a client that accepts XML output. You can *not* use it

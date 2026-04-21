@@ -10,6 +10,7 @@ Specifies whether to enable modern XMLHttpRequest event handling (`onload`, `one
 By default, this is disabled (`false`), and ZK uses the legacy `onreadystatechange` handler. When enabled, it provides better event classification and allows easier client-side extensibility by introducing a dedicated [_createXHR](cci:1://file:///Users/jumperchen/prj/zk9-master/zkcml/zkex/src/main/resources/web/js/zkex/cmsp/serverpush.ts:125:1-128:2) method that can be overridden to customize XHR requests.
 ### Client-Side Customization
 When enabled, you can customize XHR creation by overriding the `_createXHR` method:
+
 ```javascript
 zk.afterLoad('zkex.cmsp', function() {
     var _xPush = {};

@@ -30,7 +30,6 @@ list and click Apply.
 
 - **re-associate sources jar files** button
 
-  
 Clicking this button will associate zk sources jar files (of the
 selected ZK Packages ) with the binary jar files of current project. For
 example, zk-sources.jar will be associated with zk.jar, and so on. This
@@ -41,7 +40,6 @@ feature, make sure you have \*-sources.jar files in the
 
 - **Force override project's existing resources when copying data**
 
-  
 When you change the project's applied **ZK Package**, this option
 controls whether Eclipse will overwrite all ZK library files .
 
@@ -54,18 +52,15 @@ improve the performance of the ZUL Editor.
 
 - **Enable mark occurrence**
 
-  
 Checking this option will enable the Mark Occurrence feature within the
 ZUL Editor. Turn this off for a performance boost.
 
 - **Enable syntax check**
 
-  
 Checking this option will enable syntax checking within ZUL Editor. Turn
 this off for a performance boost.
 
 - **Enable hyperlinking**
 
-  
 Checking this option will enable Hyperlink Navigation within ZUL Editor.
 Turn this off for a performance boost.

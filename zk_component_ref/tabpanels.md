@@ -2,7 +2,6 @@
 title: "Tabpanels"
 ---
 
-
 - **Demonstration**: [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)
 - **Java API**: [org.zkoss.zul.Tabpanels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tabpanels.html)
 - **JavaScript API**: [zul.tab.Tabpanels](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.tab.Tabpanels.html)
@@ -46,7 +45,6 @@ The example below demonstrates the usage of the `tabpanels` component within a `
 Try it
 
 * [Tabbox](https://zkfiddle.org/sample/cd1tff/1-ZK-Component-Reference-Tabbox-Example?v=latest&t=Iceblue_Compact)
-
 
 ## Supported Children
 

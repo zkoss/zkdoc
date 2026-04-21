@@ -138,5 +138,3 @@ disable it by specifying the ondemand attribute as follows.
 Notice that all packages are default to load-on-demand, you rarely need
 to specify the ondemand attribute, unless you want to undo the package
 that has been specified with the `merge` attribute.
-
-

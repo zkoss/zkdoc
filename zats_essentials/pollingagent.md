@@ -2,8 +2,6 @@
 title: "PollingAgent"
 ---
 
- 
-
 `Since 1.2.1`
 
 ZATS Mimic introduces the `PollingAgent` to simulate client polling
@@ -95,5 +93,3 @@ public void test() throws Exception {
 </tr>
 </tbody>
 </table>
-
- 

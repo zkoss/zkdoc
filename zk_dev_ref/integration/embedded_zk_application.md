@@ -34,7 +34,6 @@ EmbeddedServlet
 
 {% include supported-since.html version="10.0.0" %}
 
-
 **web.xml**
 
 ```xml

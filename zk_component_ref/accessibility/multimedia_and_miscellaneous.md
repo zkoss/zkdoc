@@ -2,8 +2,6 @@
 title: "Multimedia and Miscellaneous"
 ---
 
-
-
 This section outline Accessibilities in Multimedia and Miscellaneous
 components.
 

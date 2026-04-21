@@ -25,5 +25,3 @@ ThemeURIHandler.
 
 Note: ThemeProvider still has the final decision. ThemeURIHandler will
 always be executed.
-
-

@@ -18,7 +18,6 @@ sudo apt-get install openjdk-6-jre
 sudo /etc/init.d/tomcat6 restart
 ```
 
-
 # Jaspserreport
 
 [Jasperreprot]({{site.baseurl}}/zk_component_ref/jasperreport)
@@ -34,8 +33,6 @@ sudo /etc/init.d/tomcat6 restart
 The procedure to install fonts might depend on the version you use.
 Please refer to [this discussion](http://stackoverflow.com/questions/3218732/jasper-reports-pdf-generation-issue)
 for more information.
-
-
 
 [^1]: The default installation includes only `openjdk-6-jre-headless`
     and `openjdk-6-jre-lib`.

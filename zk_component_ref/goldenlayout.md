@@ -2,7 +2,6 @@
 title: "GoldenLayout"
 ---
 
-
 {% include supported-since.html version="8.6.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
@@ -101,7 +100,6 @@ From the example above, it's possible to divide in two ways.
 | areas | vertical | horizontal |
 |---|---|---|
 | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png) |
-
 ## Adding GoldenPanels
 
 By user's drag drop, the GoldenPanels are usually dropped to a region
@@ -138,6 +136,3 @@ stack
 # Supported Children
 
 `*`[` GoldenPanel`]({{site.baseurl}}/zk_component_ref/goldenpanel)
-
-
-

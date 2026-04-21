@@ -1,5 +1,4 @@
 
-
 # Overview
 
 This is an overview of the default themes and applicable add-on themes
@@ -9,7 +8,6 @@ for each ZK version.
 |---|--------|--------|--------|--------|--------|--------|
 | Default Theme | Breeze | Breeze | Breeze | Iceblue | Iceblue | Iceblue |
 | Applicable Themes | Sapphire Silvertail | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack | Iceblue Compact<br/>Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack<br/>Theme Pack Compact | Iceblue Compact<br/>ZK Theme Pack<br/>Theme Pack Compact |
-
 - Theme pack contains 23 themes.
 - Theme Pack Compact contains 23 compact themes.
 
@@ -36,7 +34,6 @@ and Silvertail, click image to view the original size.
 **Silvertail**
 
 ![](/zk_dev_ref/images/silvertail_look_and_feel.png)
-
 
 # Flat Design Theme (Deprecated): Atlantic
 {% include DeprecatedSince.md version="10.0.0" %}, use [ZK Theme Pack](#zk-theme-pack) instead.
@@ -134,7 +131,6 @@ layout. Learn more at [8.6 New Features](https://www.zkoss.org/wiki/Small_Talks/
 3.  Apply preferred theme by a library property in **zk.xml** file under
     "**projectName/WEB-INF**" folder
 
-
 ```xml
 <!-- zk.xml -->
 <library-property>
@@ -142,7 +138,6 @@ layout. Learn more at [8.6 New Features](https://www.zkoss.org/wiki/Small_Talks/
     <value>sapphire</value> <!-- or silvertail, atlantic, deepsea, gardensalad etc. -->
 </library-property>
 ```
-
 
 ## Theme Artifact
 

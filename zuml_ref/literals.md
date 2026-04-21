@@ -12,6 +12,4 @@ EL expressions define the following literals:
 | String | with single and double quotes; " is escaped as `\"`, ' is escaped as `\'`, and \ is escaped as `\\`.<br/>Example, 'a string' and "hello world" |
 | Null | null |
 | Collection | EL 3 supports collection construction using brackets (`[ ]`).<br/>Example: `[1, 2, 3]` |
-
 * {% include supported-since.html version="8.0.0" %} EL 3 supports
-

@@ -14,11 +14,13 @@ iDempiere uses ZK CE by default. To use ZK Charts components, you must attach th
 ## Build the iDempiere core target platform
 
 1) Clone the iDempiere core repository:
+
 ```bash
 git clone --branch release-12 https://github.com/idempiere/idempiere.git idempiere
 ```
 
 2) Build it to generate the local p2 repository at `idempiere/org.idempiere.p2/target/repository`:
+
 ```bash
 cd idempiere
 mvn clean install
@@ -29,10 +31,12 @@ mvn clean install
 - `idempiere/org.idempiere.p2.targetplatform/org.idempiere.p2.targetplatform.mirror.target`
 
 Replace:
+
 ```
 ${project_loc:org.idempiere.p2.targetplatform}
 ```
 With your local absolute path, for example:
+
 ```
 /Users/yourname/parent-folder/idempiere/org.idempiere.p2.targetplatform
 ```
@@ -40,10 +44,12 @@ With your local absolute path, for example:
 ## Build the ZK Charts fragment
 
 1) Clone the plugin repository next to the `idempiere/` folder:
+
 ```bash
 git clone https://github.com/zkoss-demo/zkoss-idempiere-zkcharts-plugin.git
 ```
 Expected layout:
+
 ```
 parent-folder/
 ├── idempiere/
@@ -51,6 +57,7 @@ parent-folder/
 ```
 
 2) Build the fragment:
+
 ```bash
 cd zkoss-idempiere-zkcharts-plugin/org.idempiere.zkcharts.fragment
 mvn clean -U -DskipTests -am verify
@@ -78,6 +85,7 @@ License note: ZK Charts is commercially licensed. This project uses the Evaluati
 2) If Tycho cannot resolve the ZK Charts jar, add a dependency-copy step (like the fragment) or include the ZK Charts bundle in your target platform.
 
 3) Build the example plugin:
+
 ```bash
 cd zkoss-idempiere-zkcharts-plugin/org.idempiere.zkcharts.example
 mvn clean verify
@@ -105,7 +113,6 @@ Artifacts are written to `target/`.
 | OSGi classloaders | Each bundle has its own classloader, so bundles are isolated |
 | ZK `lang-addon.xml` discovery | ZK loads widgets through the host bundle's classloader |
 | Fragment behavior | A fragment shares the host bundle's classloader |
-
 To make `org.adempiere.ui.zk` see ZK Charts widgets (`zkcharts.jar`), those jars must be on its classloader. A fragment is the OSGi-compliant way to inject resources into the host bundle without modifying it.
 
 References:

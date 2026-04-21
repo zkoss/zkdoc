@@ -19,6 +19,7 @@ When we use it in "form" attribute, it gives an id to reference form's middle ob
 # Example
 
 #### Usage in viewModel attribute
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ChildrenMenuVM')"
 	validationMessages = "@id('vmsgs')">
@@ -27,6 +28,7 @@ When we use it in "form" attribute, it gives an id to reference form's middle ob
 
 {% include supported-since.html version="9.5.0" %}
 We can use simplified syntax to init view model. Notice that the id of the view model will be 'vm' by default. 
+
 ```xml
 <zk>
 	<div viewModel="@('foo.ChildrenMenuVM')">

@@ -30,5 +30,3 @@ has been and removed, please use
 [org.zkoss.zk.ui.util.ForEachStatus#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html#getCurrent())
 instead. For example, replace `${forEachStatus.previous.each.label}`
 with `${forEachStatus.previous.current.label}`.
-
-

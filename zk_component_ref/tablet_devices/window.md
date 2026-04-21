@@ -1,5 +1,4 @@
 
-
 # Window
 
 - Component Reference:
@@ -25,5 +24,3 @@ For example,
 | Version | Date       | Content |
 |---------|------------|---------|
 | 6.5.0   | July, 2012 |         |
-
-

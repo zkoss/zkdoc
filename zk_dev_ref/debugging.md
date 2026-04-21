@@ -61,9 +61,9 @@ The most common case is to call a setter that produces a command called `setAttr
 * `value` is the property to set.
 * `$u`: the uuid of a component to be set which is the DOM element id.
 
-
 ## Add Components
 Here is an example of adding components. The command is `addChd`.
+
 ```json
 {"rs":[["addChd",["k5iZ3",[
 ['zul.tab.Tab','k5iZh',{$onSelect:false,$onClose:true,label:'tab 2',iconSclass:'z\-icon\-book'},{},[]]]]],["addChd",["k5iZ4",[
@@ -77,6 +77,7 @@ Here is an example of adding components. The command is `addChd`.
 
 ## Remove Components
 The command is `rm`.
+
 ```json
 {"rs":[["rm",["k5iZj"]],["rm",["k5iZh"]]],"rid":2}
 ```

@@ -6,7 +6,6 @@ title: "substring"
 String substring(String s, int from,  int to);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#substring(java.lang.String, int, int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#substring(java.lang.String, int, int))
 

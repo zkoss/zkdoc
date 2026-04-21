@@ -25,5 +25,3 @@ collection of URIs are actually generated. In other words, the theme
 provider has the highest priority.
 
 For more information, please refer to [ZK Developer's Reference](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/Theming_and_Styling/Understanding_the_Theming_Subsystem/Providing_Theme_Resources).
-
-

@@ -36,5 +36,3 @@ all packages it contains.
 The version of the module. Notice it cannot contain slash, and it must
 be legal to be part of URL. It is suggested to limit the use of number,
 alphabet, dash and dot.
-
-

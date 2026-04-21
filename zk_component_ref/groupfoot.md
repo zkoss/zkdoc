@@ -2,7 +2,6 @@
 title: "Groupfoot"
 ---
 
-
 - Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
 - Java API: [org.zkoss.zul.Groupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupfoot.html)
 - JavaScript API:

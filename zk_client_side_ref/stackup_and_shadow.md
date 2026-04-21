@@ -55,7 +55,6 @@ if necessary (for better performance). Here is the correct result.
 
 ![](images/UseStack-ok-1.jpg)
 
-
 ## The stackup and autohide techniques
 
 The stackup technique resolves the obscure issue by placing a
@@ -119,7 +118,5 @@ Always use the stackup technique.
 ## false
 
 Never use the stackup technique.
-
-
 
 [^1]: Available since ZK 5.0. For prior version, specify `true` instead.

@@ -22,5 +22,3 @@ the proper implementation, such as
     <device-class>my.MyAjaxDevice</device-class>
 </device-config>
 ```
-
-

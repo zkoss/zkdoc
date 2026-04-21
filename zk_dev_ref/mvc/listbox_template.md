@@ -2,8 +2,6 @@
 title: "Listbox Template"
 ---
 
-
-
 The template used to control the rendering of each item must be named
 `model` and declared right inside the `listbox` element. For example,
 
@@ -55,7 +53,6 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 ```
 
 ![]({{site.baseurl}}/zk_dev_ref/images/st201107-listbox.png)
-
 
 ## Component's Value
 
@@ -150,7 +147,6 @@ listbox-in-listbox:
 
 ![](/zk_dev_ref/images/St201107-listbox-in-listbox.png)
 
-
 ### How to retrieve the outer template's data in the inner template
 
 Although
@@ -213,7 +209,6 @@ and then retrieve it later, as shown at line 4 and 10 below.
 </listbox>
 ```
 
-
 # Template for GroupsModel
 
 When used with
@@ -247,7 +242,6 @@ grouping and non-grouping objects).
 |---------|--------------|--------------------------------------------|
 | 6.0.0   | July 2011    | The template feature was introduced.       |
 | 6.0.0   | January 2012 | The GroupingInfo statement was introduced. |
-
 [^1]: Of course, it can be anything you like. Just make sure it matches
     the EL expressions specified in the template.
 

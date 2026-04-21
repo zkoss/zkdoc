@@ -2,12 +2,10 @@
 title: "Script"
 ---
 
-
 - Demonstration:
   [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)
 - Java API: [org.zkoss.zul.Script](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Script.html)
 - JavaScript API: [zul.utl.Script](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Script.html)
-
 
 # Employment/Purpose
 
@@ -102,5 +100,3 @@ global variables and functions as follows:
 | Version | Description           | Example Location                                                                                                                                                                      |
 |---------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0     | Overview and Tutorial | [Client Side Programming](https://www.zkoss.org/wiki/Small_Talks/2010/April/Client_Side_Programming) [ZK Client-side Reference: General Control]({{site.baseurl}}/zk_client_side_ref/general_control) |
-
-

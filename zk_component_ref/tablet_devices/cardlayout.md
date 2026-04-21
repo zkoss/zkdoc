@@ -1,5 +1,4 @@
 
-
 # Cardlayout
 
 - Component Reference:
@@ -18,5 +17,3 @@ swiping on the tablet.
 | Version | Date         | Content |
 |---------|--------------|---------|
 | 6.5.0   | August, 2012 |         |
-
-

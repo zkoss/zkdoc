@@ -26,5 +26,3 @@ for better Search Engine Optimization (SEO).
    <crawlable>true</crawlable>
 </system-config>
 ```
-
-

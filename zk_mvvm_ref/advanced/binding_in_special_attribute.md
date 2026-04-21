@@ -10,6 +10,7 @@ The "if" Versus the "visible"
 Assume that you want to show a "Delete" button only to a user who has administrative permission. There are several usages:
 
 #### specialAttribte.zul
+
 ```xml
 <!-- wrong usage, no effect -->
 <button label="Delete " if="@load(vm.currentUser.admin)"/>
@@ -29,6 +30,7 @@ The "forEach" Versus Children Binding
 The `forEach` attribute also has the same issue.
 
 #### specialAttribute.zul
+
 ```xml
 <!-- "forEach" versus children binding  -->
 <!-- wrong usage, no effect -->
@@ -54,6 +56,7 @@ Client-attributes are added to the rendering information of components, and must
 The client attribute must be initialized using the `${value}` syntax, and doesn't support `@init`, `@load` or `@bind`.
 
 #### specialAttribute.zul
+
 ```xml
 <div xmlns:ca="client/attribute">
     <!-- correct use for non-dynamic attribute values -->

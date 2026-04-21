@@ -42,5 +42,3 @@ of the server side cache is [OpenSymphony CacheFilter](http://www.opensymphony.c
   of desktops exceed the allowed maximal number), since Opera is smart
   enough to preserve the most updated content and always reuses the
   cached page.
-
-

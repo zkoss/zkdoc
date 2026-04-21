@@ -2,8 +2,6 @@
 title: "Tree Model"
 ---
 
-
-
 Here we describe how to implement a tree model
 ([org.zkoss.zul.TreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeModel.html)). You shall
 understand the interaction among a component, a model, and a renderer,
@@ -25,7 +23,6 @@ load-on-demand and caching. Maybe the data is too large to load them all
 into a TreeModel at once. Then, we suggest you to extend
 [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html), which will handle
 the data listeners transparently.
-
 
 # Example: In-Memory Tree with DefaultTreeModel
 
@@ -443,7 +440,6 @@ selection of the tree directly. Rather, the application shall access
 only the list model to add, remove and select data elements. Let the
 model notify the component what has been changed.
 
-
 ## Selection Control
 
 With the multiple selection function in a data model, you have to
@@ -528,7 +524,6 @@ DefaultTreeModel model2 = new DefaultTreeModel(root, true);
 | 5.0.6                  | January 2011  | [org.zkoss.zul.TreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/TreeNode.html), [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeNode.html) and [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) were intrdocued.                                                                                                                                   |
 | 6.0.0                  | February 2012 | [org.zkoss.zul.ext.TreeSelectableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeSelectableModel.html) and [org.zkoss.zul.ext.TreeOpenableModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/TreeOpenableModel.html) were introduced to replace [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) and [org.zkoss.zul.ext.Openable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Openable.html). |
 | 5.0.12 / 6.0.3 / 6.5.1 | October 2012  | [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) adds a new constructor for configuring whether to treat the zero size of children node as a leaf node.                                                                                                                                                              |
-
 [^1]: [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) is available
     since 5.0.6. For 5.0.5 or prior, please use
     [org.zkoss.zul.SimpleModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleModel.html), which is similar

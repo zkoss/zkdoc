@@ -24,5 +24,3 @@ and/or the content of the uploaded file.
 
 Notice that it has the higher priority than the `upload-charset`
 element, see above.
-
-

@@ -2,8 +2,6 @@
 title: "Accessibility"
 ---
 
-
-
 {% include supported-since.html version="9.5.0" %}
 
 This chapter describes each component's detailed accessibility

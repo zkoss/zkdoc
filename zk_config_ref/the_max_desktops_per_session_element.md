@@ -36,5 +36,3 @@ You have to reload the page and try again.`
 `org.zkoss.zk.ui.impl.GlobalDesktopCacheProvider`, then
 you have to make this number much larger since it means the maximum
 allowed number of desktops *per system*.
-
-

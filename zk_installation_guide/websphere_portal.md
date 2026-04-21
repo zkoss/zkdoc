@@ -63,39 +63,32 @@
   account
 - Click *Administration* tab at the top of the page
 
-  
 ![](images/websphere01.png)
 
 - Select *Web Module* then click the *install* button.
 
-  
 ![](images/websphere02.png)
 
 - Click *Choose File* button to select the war file then press the
   *Next* button.
 
-  
 ![](images/websphere03.png)
 
 - Check the war information and choose *Start application*, then click
   the *Finish* button.
 
-  
 ![](images/websphere04.png)
 
 - Go back to *Home* page
 
-  
 ![](images/websphere05.png)
 
 - Add a new tab page by clicking *Action* -\> *EditPage*
 
-  
 ![](images/websphere06.png)
 
 - Click *New Page* then enter "Page name" and "Friendly URL Name"
 
-  
 ![](images/websphere07.png)
 
 ![](images/websphere08.png)
@@ -105,18 +98,15 @@
 - Click *Customize* -\> *All* -\> in the search box, enter the portlet
   name defined in portlet.xml
 
-  
 ![](images/websphere09.png)
 
 - Drag and drop the portlet into the created new page and click *Save &
   Exit* button.
 
-  
 ![](images/websphere10.png)
 
 - ZK project is now deployed in a Websphere Portal
 
-  
 ![](images/websphere11.png)
 
 # Deploy ZK portlet in WebSphere Portal 8
@@ -125,94 +115,48 @@
   account
 - Click *Administration* tab at the top of the page
 
-  
-
 ![](images/websphere_v8_01.png)
-
-
 
 - Select *Web Module* then click the *install* button.
 
-  
-
 ![](images/websphere_v8_02.png)
-
-
 
 - Click *Choose File* button to select the war file then press the
   *Next* button.
 
-  
-
 ![](images/websphere_v8_03.png)
-
-
 
 - Check the war information and choose *Start application*, then click
   the *Finish* button.
 
-  
-
 ![](images/websphere_v8_04.png)
-
-
 
 - Go back to *Home* page
 
-  
-
 ![](images/websphere_v8_05.png)
-
-
 
 - Click *Edit Mode*
 
-  
-
 ![](images/websphere_v8_06.png)
-
-
 
 - Click *New Sibling Page*
 
-  
-
 ![](images/websphere_v8_07.png)
-
-
 
 - Enter "Page name" and "Friendly URL Name"
 
-  
-
 ![](images/websphere_v8_08.png)
-
-
 
 - Click *Content* -\> *All* -\> in the search box, enter the portlet
   name defined in portlet.xml
 
-  
-
 ![](images/websphere_v8_09.png)
-
-
 
 - Drag and drop the portlet into the created new page and click *Save*
   button.
 
-  
-
 ![](images/websphere_v8_10.png)
-
-
 
 - ZK project is now deployed in a Websphere Portal
 
-  
-
 ![](images/websphere_v8_11.png)
-
-
-
-

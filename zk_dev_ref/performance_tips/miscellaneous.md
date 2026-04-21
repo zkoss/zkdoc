@@ -33,5 +33,3 @@ default, it is 5 seconds.
     <file-check-period>600</file-check-period><!-- unit: seconds -->
 </desktop-config>
 ```
-
-

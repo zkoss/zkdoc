@@ -2,8 +2,6 @@
 title: "Drill Down"
 ---
 
-
-
 Here we talk about 2 ways to achieve a drill-down function. One is
 simply using ZK Charts built-in feature, and another is implemented
 manually.

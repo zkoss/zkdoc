@@ -2,11 +2,9 @@
 title: "Gcircle"
 ---
 
-
 - Demonstration: N/A
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)
 - JavaScript API: N/A
-
 
 # Employment/Purpose
 
@@ -30,7 +28,6 @@ points, fill color, etc..
 |------|------------|
 | onCenterChange | org.zkoss.gmaps.event.CenterChangeEvent |
 | onRadiusChange | org.zkoss.gmaps.event.RadiusChangeEvent |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

@@ -6,7 +6,6 @@ title: "split"
 String[] split(String value, String regex);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#split(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#split(java.lang.String, java.lang.String))
 

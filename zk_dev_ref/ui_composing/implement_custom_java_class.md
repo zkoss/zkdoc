@@ -1,5 +1,4 @@
 
-
 # Overview
 
 As described in the earlier sections, a macro component is instantiated
@@ -70,7 +69,6 @@ Also notice that the `arg` variable is still available to the template
 so as to represent properties set by
 [org.zkoss.zk.ui.ext.DynamicPropertied#setDynamicProperty(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html#setDynamicProperty(java.lang.String, java.lang.Object)),
 though it is more useful if a custom implementation is provided.
-
 
 # Declare Macro with Custom Java Class
 
@@ -235,7 +233,6 @@ Then use the forward event to communicate with other components.
 | Version | Date          | Content                                                                                  |
 |---------|---------------|------------------------------------------------------------------------------------------|
 | 5.0.5   | October, 2010 | [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose()) was introduced. |
-
 [^1]: By default,
     [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
     is invoked when

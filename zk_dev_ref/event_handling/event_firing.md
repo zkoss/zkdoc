@@ -34,7 +34,6 @@ Notice that the invocation returns after placing the event in the system
 event queue. In other words, the event won't be processed unless all
 other events posted earlier or with higher priority are processed.
 
-
 # Send an Event
 
 If you prefer to trigger an event to a component directly and process it
@@ -53,7 +52,6 @@ have been processed. You could image it as a method of invocation. Also
 notice that the event handlers and listeners are invoked directly
 without starting any event threads (no matter whether the event thread
 is enabled or not[^2]).
-
 
 # Echo an Event
 

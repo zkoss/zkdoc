@@ -24,5 +24,3 @@ If the current request exceeds this max number, you will get "HTTP ERROR
 
 A negative number means no limitation at all, but it is not recommended
 due to the possibility of the denial-of-service (DoS) attacks.
-
-

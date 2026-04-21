@@ -2,10 +2,6 @@
 title: "SizeAgent"
 ---
 
-
-
-
-
 ## Maximize and Minimize
 
 With `SizeAgent`, we can mimic to maximize, minimize, and resize a
@@ -70,5 +66,3 @@ window.as(SizeAgent.class).resize(100, 100);
 </tr>
 </tbody>
 </table>
-
- 

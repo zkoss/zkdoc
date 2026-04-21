@@ -6,7 +6,6 @@ title: "indexOf"
 int indexOf(Object value, Object element);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#indexOf(java.lang.Object, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#indexOf(java.lang.Object, java.lang.Object))
 

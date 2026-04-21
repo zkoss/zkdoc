@@ -32,7 +32,6 @@ consistent style with the index page. However, there should be no sidebar becaus
 
 -   Line 7: Determine if there is an anonymous user credential in the session by EL.
 
-
 The login form is built with *Grid*. This page should be accessible for
 all users, so we don't have to apply `AuthenticationInit`.
 

@@ -36,7 +36,6 @@ public class ProfileViewController extends SelectorComposer<Component>{
     user clicks a component (`onClick`) whose id is "saveProfile"
     (`#saveProfile`).
 
-
 We can manipulate components to change the UI in the event
 listener. In `doSaveProfile()`, we get a user's input from input
 components and save the data to a `User` object. Then show a
@@ -85,7 +84,6 @@ public class ProfileViewController extends SelectorComposer<Component>{
     object.
 -   Line 28: Show a notification box which is the most easy way to show
     a message to users.
-
 
 ## Handle "Reload" Button Clicking
 To wire the event listener for "Reload" button's is similar as the previous

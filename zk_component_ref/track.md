@@ -2,7 +2,6 @@
 title: "Track"
 ---
 
-
 - Java API: [org.zkoss.zul.Track](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Track.html)
 - JavaScript API: [zul.med.Track](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Track.html)
 
@@ -63,7 +62,6 @@ Specify what kind of track it is. Allowed values are:
 | descriptions | A textual description about what this video/audio is. |
 | chapters | Chapter titles for users to navigate. |
 | metadata | A track used by scripts. |
-
 ## Label
 
 Specify a user-readable title. Used by browsers to show on the list of
@@ -88,14 +86,8 @@ Specify what language this track is. It's required if the kind is
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                                                                             |
 |---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |
-
-

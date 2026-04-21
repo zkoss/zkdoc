@@ -2,8 +2,6 @@
 title: "Drag and Drop"
 ---
 
-
-
 ZK allows a user to drag particular components around the user
 interface. For example, dragging an image representing a file onto a
 tree representing a directory, or dragging a listitem representing a

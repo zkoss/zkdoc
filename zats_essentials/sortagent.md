@@ -1,7 +1,4 @@
 
-
-
-
 # Sorting
 
 This agent can work on <b>*column*, *listheader*</b>, and
@@ -44,5 +41,3 @@ order.
 </tr>
 </tbody>
 </table>
-
- 

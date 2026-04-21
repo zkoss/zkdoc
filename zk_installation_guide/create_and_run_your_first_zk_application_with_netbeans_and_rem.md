@@ -1,5 +1,4 @@
 
-
 # Maven Recommended
 
 The recommended way to use ZK in NetBeans is to import a maven project.
@@ -32,7 +31,6 @@ application development contributed by Mr. Sotohiro Terashima.
 6.  Click "Install" and follow the NetBeans plugin manager prompts  
     ![](images/ZKInstallationGuide_NetBeans_InstallPlugin.png)  
       
-
 # Create a New ZK Project
 
 1.  On NetBeans main menu bar, select "New Project"  
@@ -47,7 +45,6 @@ application development contributed by Mr. Sotohiro Terashima.
     project on Glassfish  
     ![](images/ZKInstallationGuide_NetBeans_RunZKProject.png)  
       
-
 # Deploy the ZK Demo Project
 
 1.  On NetBeans main menu bar, select "New Project"  
@@ -62,5 +59,3 @@ application development contributed by Mr. Sotohiro Terashima.
     the ZK demo  
     ![](images/ZKInstallationGuide_NetBeans_RunZKDemo.png)  
       
-
-

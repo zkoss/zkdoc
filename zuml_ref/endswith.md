@@ -6,7 +6,6 @@ title: "endsWith"
 boolean endsWith(String value, String suffix);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.StringFns#endsWith(java.lang.String, java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/StringFns.html#endsWith(java.lang.String, java.lang.String))
 

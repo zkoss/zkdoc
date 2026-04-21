@@ -1,6 +1,7 @@
 # @NotifyChange
 
 # Syntax
+
 ```java
 @NotifyChange("anotherProperty")
 
@@ -21,6 +22,7 @@ By default, a property set by binder through setter method will notify this prop
 Use "." to enforce reloading the instance of the class in where the annotation locates, not an instance's property.
 
 # Example
+
 ```java
 public class OrderVM {
 

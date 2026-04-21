@@ -33,6 +33,7 @@ The default scope: **AUTO** means searching the value from COMPONENT to SPACE, P
 {% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
+
 ```java
 @ScopeParam String keyString
 @ScopeParam(scopes=Scope.SESSION) String keyString

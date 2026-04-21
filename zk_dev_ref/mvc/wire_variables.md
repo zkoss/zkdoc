@@ -4,8 +4,6 @@
 wires UI components, but also wires beans from implicit objects and
 registered variable resolvers.
 
- 
-
 ## Wire from Implicit Objects
 
 Wiring from an implicit object is equivalent to calling
@@ -40,8 +38,6 @@ public class FooComposer extends SelectorComposer<Window> {
 
 }
 ```
-
- 
 
 ## Wire from Variable Resolver
 
@@ -130,7 +126,6 @@ example,
 
 where `$composer` is a built-in variable referring to the composer. For
 more information, please refer to [the Composer section]({{site.baseurl}}/zk_dev_ref/mvc/composer).
-
 
 ## Warning: Not a good idea to have Spring managing the composer
 

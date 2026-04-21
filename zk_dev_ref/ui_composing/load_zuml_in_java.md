@@ -1,5 +1,4 @@
 
-
 # Overview
 
 [org.zkoss.zk.ui.Execution](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Execution.html) provides a collection of
@@ -91,7 +90,6 @@ Of course, the components being created by
 will not be attached to any pages. You have to attach them manually, if
 you want to show them to the client.
 
-
 # Create from Content Directly
 
 If the ZUML document is a resource of Web application (i.e., not
@@ -179,7 +177,6 @@ ZUML document directly[^2].
       the variables, functions and classes defined in the ZUML document
       will be lost. Thus, it is *not* a good idea to use zscript in this
       case.
-
 
 [^1]: It means
     [org.zkoss.zk.ui.Executions#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Executions.html#getCurrent())

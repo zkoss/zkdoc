@@ -2,8 +2,6 @@
 title: "Language Definition"
 ---
 
-
-
 This section describes what a language definition and addon are. It is
 required for component development. However, you could skip it if you
 won't develop components. For more information about component

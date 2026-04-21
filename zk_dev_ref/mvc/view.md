@@ -21,4 +21,3 @@ can customize the rendering of each item in a model:
   create a Java class that implements a specific interface to render
   each item. If you need to render items according to conditions in the
   runtime, this approach is suggested.
-

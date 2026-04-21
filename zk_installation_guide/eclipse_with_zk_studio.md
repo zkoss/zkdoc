@@ -33,5 +33,3 @@ To specify the server in eclipse, please do as follows.
 # Create and Run Your First ZK Application
 
 After installing Eclipse and ZK Studio, please take a look at [Create and Run Your First ZK Application with Eclipse and ZK Studio](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio).
-
-

@@ -4,6 +4,7 @@ To enable the data binding in the ZUL, you have to apply a [BindComposer](http:/
 Apply BindComposer
 ==================
 To use a ViewModel you have to apply a BindComposer by setting “org.zkoss.bind.BindComposer” to “apply” attribute of a component.
+
 ```xml
 <window id="win" apply="org.zkoss.bind.BindComposer">
 <!-- other components inside will have data binding ability-->
@@ -17,6 +18,7 @@ In ZK 8, **BindComposer** is auto-applied when the attribute of **viewModel** is
 Initialize a ViewModel
 ======================
 You also have to specify ViewModel's full-qualified class name to initialize it and give it an ID. The typical usage is like:
+
 ```xml
 <window id="win" apply="org.zkoss.bind.BindComposer"
         viewModel="@id('vm') @init('foo.MyViewModel')">
@@ -33,6 +35,7 @@ Wire Variable Automatically
 ---------------------------
 If a member field is annotated by `@WireVariable` in a ViewModel, the variable (if existed) will be wired into this field automatically before connecting Binder and ViewModel. Read [Wire Variable]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables) for more detail
 about wiring variables. Following is a example that shows how to wire a `messagService` variable to the ViewModel.
+
 ```java
 public class OrderVM {
 

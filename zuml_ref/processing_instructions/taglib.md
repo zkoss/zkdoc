@@ -3,6 +3,7 @@ title: "taglib"
 ---
 
 **Syntax:**
+
 ```xml
 <?tablib uri="myURI" prefix="my"?>
 ```
@@ -51,5 +52,3 @@ references must be in the same Web application.
 
 A prefix is used to identify functions defined in this `taglib` file.
 The prefix could be any non-empty strings.
-
-

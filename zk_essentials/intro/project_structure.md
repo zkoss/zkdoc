@@ -12,7 +12,6 @@ persiste data into a database with JPA.
 You can click the "ZIP" icon to download the current selected branch as
 a zip file.
 
-
 # Run Example Application
 
 After you download the source code, you will find it is a [Apache Maven](http://maven.apache.org/) project with jetty plugin configured. Therefore, you can start the example application on Jetty without deploying.
@@ -40,13 +39,10 @@ You have 2 options:
 
 `gradle startJettyRunner`
 
-
 After starting up, visit the URL http://localhost:8080/zkessentials/, and you should
 see the page below:
 
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch2-index.png)
-
-
 
 # Project Structure
 The example project's folder structure follows Maven's default convention. We name Java packages according to each chapter, and each package contains the classes of that chapter. Some common classes are separated to an independent package as they are used in multiple chapters, e.g. the classes under `org.zkoss.essentials.entity.*` are entity class. We also define some service layer interfaces under `org.zkoss.essentials.service.*` because different chapters have different implementations.

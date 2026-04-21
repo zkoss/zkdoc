@@ -237,7 +237,6 @@ Here are the available positions:
 | <b>top</b>    | top_left    | top_center    | top_right    |
 | <b>middle</b> | middle_left | middle_center | middle_right |
 | <b>bottom</b> | bottom_left | bottom_center | bottom_right |
-
 ## Animation Speed
 
 To specify the duration of opening and closing animation,

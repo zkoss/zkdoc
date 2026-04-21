@@ -2,12 +2,10 @@
 title: "Gmaps"
 ---
 
-
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)
 - JavaScript API: N/A
-
 
 Check [our Maven repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for the latest version.
 
@@ -37,7 +35,6 @@ This component requires you to include a separate dependency before using it:
 		</dependency>
 ```
 Check [CE repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for available version.
-
 
 # Authentication
 
@@ -70,6 +67,7 @@ See [Example](#Example) below.
 ## Client ID
 
 You can specify a client-id at `client` attribute: \
+
 ```xml
 <gmaps client="YOUR_CLIENT_ID"/>
 ```
@@ -90,6 +88,7 @@ You can specify a client-id at `client` attribute: \
 ## Map Movement and Animation
 
 To move the Maps center smoothly, you can control it by calling `Gmaps.panTo()` Java method as follows:
+
 ```xml
 <gmaps id="map" width="500px" height="300px"/>
 <button label="panTo" onClick="map.panTo(37.4569, -122.1569)"/>
@@ -157,7 +156,6 @@ Specify which protocol to load the Maps API. Currently it supports
 | `onMapMove` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink"> MapMoveEvent</a> Notifies that the view center (latitude, longitude) of the gmaps has been moved. |
 | `onMapTypeChange` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/maptypechangeevent" title="wikilink"> MapTypeChangeEvent</a> Notifies that the map type of the gmaps has been changed. |
 | `onMapZoom` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink"> MapZoomEvent</a> Notifies that the zoom level of the gmaps has been changed. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Work with MVVM
@@ -347,5 +345,3 @@ Note that ZK GMaps integrates ZK and Google Maps, allowing developers to
 include Google Maps inside a ZK application easily. Google Maps itself
 is a 3rd party library and is licensed under its own terms and
 conditions.
-
-

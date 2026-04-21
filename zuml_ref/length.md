@@ -6,7 +6,6 @@ title: "length"
 int length(Object value);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#length(java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#length(java.lang.Object))
 
@@ -18,5 +17,3 @@ string/array/collection/map is empty:
 ```xml
 ${empty foo}
 ```
-
-

@@ -2,12 +2,10 @@
 title: "Ginfo"
 ---
 
-
 - Demonstration:
   [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - Java API: N/A
 - JavaScript API: N/A
-
 
 # Employment/Purpose
 

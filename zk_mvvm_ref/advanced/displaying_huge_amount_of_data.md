@@ -36,6 +36,7 @@ Assume we are going to display large amount of personal information in a *Listbo
 As querying all data is time-consuming, we need to implement a custom [ListModel](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html) for the *Listbox*. This custom `ListModel` contains no data at the beginning, it queries data from a database until each time the *Listbox* request the data from it. Because we have limited visible rows, when a *Listbox* renders its *Listitem*s, it only gets part of data for those visible rows instead of all data. During one execution, *Listbox* will call `ListModel.getElememtAt(int index)` several times to get a range of data it requires for rendering. To avoid performing one query for each `getElementAt()` calling, we query a page size of data and store it as the execution's attribute at the first `getElementAt()` calling. In the subsequent callings, we just get the item from the cache without querying to a database. This implementation reduces query time drastically and user still can browse all data. Thus this implementation solves the problem and works fine under *Listbox*'s paging or default mold.
 
 #### Live cached ListModel implementation
+
 ```java
 public class LivePersonListModel extends AbstractListModel<Person> {
 
@@ -96,4 +97,3 @@ public class LivePersonListModel extends AbstractListModel<Person> {
 -   Line 3: The `personDao` is a *Data Access Object* which queries data from a database.
 -   Line 16-22: It queries one page size of data and put them into a cache object.
 -   Line 37: This method gets cache object from execution's attribute. If no exist, put a new one.
-

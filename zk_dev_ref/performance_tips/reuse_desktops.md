@@ -2,8 +2,6 @@
 title: "Reuse Desktops"
 ---
 
-
-
 By default, a desktop is purged when the user browses to another URI or
 refreshes the page. Thus, the user can have the most updated
 information. However, if a page takes too long to generate, you can

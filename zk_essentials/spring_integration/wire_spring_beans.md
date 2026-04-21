@@ -54,7 +54,6 @@ public class ProfileViewModel implements Serializable{
 
 -   Line 6: Wire a Spring bean whose bean name is `authService`.
 
-
 ## Wire Manually
 When using `@WireVariable` out of a composer (or a ViewModel), ZK will
 not wire Spring beans for you automatically. If you need to get a Spring

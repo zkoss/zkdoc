@@ -2,7 +2,6 @@
 title: "Drawer"
 ---
 
-
 - **Demonstration:** [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)
 - **Java API:** [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
 - **JavaScript API:** [zkmax.wgt.Drawer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Drawer.html)
@@ -50,7 +49,6 @@ In this example, a button labeled "Show File Info" is used to trigger the openin
 Try it
 *  [Drawer with Grid](https://zkfiddle.org/sample/1g9so9c/1-ZK-Component-Reference-Drawer-Example?v=latest&t=Iceblue_Compact)
 
-
 ## Open / Close the Drawer
 
 You can utilize both the `visible` attribute and the `open/close` methods to interact with the Drawer component for opening and closing it as needed.
@@ -90,7 +88,6 @@ Sets the title of the Drawer component. A `null` value indicates no title for th
 | Name   | Event Type                            | Description |
 |------------|-------------------------------------------|-------------|
 | `onOpen`   | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
-
 ## Supported Children
 
 `*ALL`: Indicates that the Drawer component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Drawer, providing flexibility and customization options for your designs.

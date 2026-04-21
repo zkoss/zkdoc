@@ -2,8 +2,6 @@
 title: "Synchronous Tasks"
 ---
 
-
-
 Server push is a technology to actively *push* data to the client. For
 ZK, the data is usually the UI updates or its variants. Thus, for the
 sake of understanding, we could consider the task to be about updating
@@ -36,7 +34,6 @@ desktop.enableServerPush(true);
 After the server push of a given desktop is enabled, you could use any
 number of working threads to update the desktop concurrently as
 described in the following section[^1].
-
 
 # Update UI in a Working Thread
 

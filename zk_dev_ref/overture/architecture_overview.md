@@ -1,5 +1,4 @@
 
-
 # From the Application Developer's Perspective
 
 Under the multi-tier Java EE web application architecture, ZK framework
@@ -68,7 +67,6 @@ request but at the same time it also provides faster responses when
 users click on the DOM element. This is generally more transparent to
 the application developers, and the implementation of a component can be
 enhanced later as the project progresses.
-
 
 # Execution Flow of Loading a Page
 
@@ -140,7 +138,6 @@ enhanced later as the project progresses.
     widgets accordingly. Then the widgets will update the browser's DOM
     tree to make them available to the user.
 
-
 ## When to Send an Ajax Request
 
 When the ZK Client Engine receives a bubbled-up client-side event
@@ -178,7 +175,6 @@ applicable.
 [^3]: . From the server's viewpoint, an Ajax request is another type of
     HTTP request.
 
-
 # Page: created for each ZUML
 
 A page ([org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) ) is a
@@ -203,5 +199,3 @@ Notice that both pages and desktops are created and remove implicitly.
 There are no API to create or remove them. A page is create each time
 ZUML loads a page. A page is removed when ZK finds it is no longer
 referenced. A desktop is created when the first ZUML page is loaded.
-
-

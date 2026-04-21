@@ -7,5 +7,3 @@ as the `getAttributes` method in the
 If the client is based on HTTP, such as a Web browser, this is the same
 map of attributes stored in `javax.servlet.http.HttpSession`. In other
 words, you could use it communicate with other servlets, such as JSF.
-
-

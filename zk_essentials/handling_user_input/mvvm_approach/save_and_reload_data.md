@@ -16,11 +16,13 @@ the ViewModel and load value from the ViewModel, so the code becomes:
 ```
 
 The syntax is quite long. ZK knows your pain and provides a shortcut syntax: `@bind`:
+
 ```xml
         <textbox value="@bind(vm.currentUser.fullName)" .../>
 ```
 
 Therefore, we can save and load other `currentUser` property with `@bind` like:
+
 ```xml
 ...
     <rows>
@@ -67,7 +69,6 @@ Bind `selectedItem` to `vm.currentUser.country` and the selected country will be
 ```xml
 <listbox model="@load(vm.countryList)" selectedItem="@bind(vm.currentUser.country)" ...>
 ```
-
 
 # Define Commands
 
@@ -157,7 +158,6 @@ public class ProfileViewModel implements Serializable{
 -   Line 5, 12: Notify which property change with `@NotifyChange` and zK
     will reload those attributes that are bound to `currentUser`.
 
-
 # Handle User Interactions by Command Binding
 
 After we finish binding attributes to the ViewModel's data, we still
@@ -187,7 +187,6 @@ Then, we can bind `onClick` event to above commands with command binding
 
 Done with this binding, clicking each button will invoke corresponding
 command methods to save (or reload) the user profile to the ViewModel.
-
 
 ## Keep Unsaved Input Away
 Once you create a property binding with `@bind` for an input component,

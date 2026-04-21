@@ -77,7 +77,6 @@ if (some < another && another < last) //OK since CDATA is used
 
 As depicted CDATA is represented with and `]]>`.
 
-
 ### Class Declaration
 
 You could define a class declared in a ZUML document, and the class is
@@ -229,7 +228,6 @@ only to window `B`, while `var1` is visible to both window `A` and `B`.
     </window>
 </window>
 ```
-
 
 ## Declare a Local Variable
 

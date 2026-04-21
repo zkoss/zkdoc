@@ -1,6 +1,7 @@
 # @SmartNotifyChange
 
 # Syntax
+
 ```java
 @SmartNotifyChange("anotherProperty")
 
@@ -18,6 +19,7 @@
 Usually the annotation is used with `@Command`.
 
 # Example
+
 ```java
 public class OrderVM {
 

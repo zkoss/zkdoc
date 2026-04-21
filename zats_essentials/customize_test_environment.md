@@ -2,8 +2,6 @@
 title: "Customize Test Environment"
 ---
 
-
-
 In a test case, we usually use `Zats` to initialize the test case
 environment, it will load **Mimic built-in web.xml** and **zk.xml**.
 
@@ -85,5 +83,3 @@ public class EnvironmentTest{
     }
 }
 ```
-
- 

@@ -59,5 +59,3 @@ Check WC_defaulthost
 #### View Web application
 
 ![](images/wb7-zkdemo.png)
-
-

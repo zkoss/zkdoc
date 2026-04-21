@@ -2,11 +2,9 @@
 title: "Area"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html)
 - JavaScript API: [zul.wgt.Area](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Area.html)
-
 
 # Employment/Purpose
 
@@ -36,7 +34,6 @@ counted from the upper-left corner of the image beginning with (0, 0).
 | circle | coords="x, y, r" where `x` and `y` define the position of the circle’s center and `r` is the radius in pixels. |
 | polygon | coords="x1, y1, x2, y2, x3, y3..." where each pair of `x` and `y` define a point of the polygon. At least three pairs of coordinates are required to define a triangle. The polygon is automatically closed, so it is not necessary to repeat the first coordinate at the end of the list to close the region. |
 | rectangle | coords="x1, y1, x2, y2" where the first coordinate pair is one corner of the rectangle and the other pair is the corner diagonally opposite. A rectangle is just a shortened way of specifying a polygon with four vertices. |
-
 If the coordinates in one `area` component overlap with another, the
 first one takes precedence.
 
@@ -53,6 +50,3 @@ first one takes precedence.
 | Version | Description                | Example Location                              |
 |---------|----------------------------|-----------------------------------------------|
 | 5.0.2   | Area in Imagemap with href | <http://www.zkoss.org/forum/listComment/3016> |
-
-
-

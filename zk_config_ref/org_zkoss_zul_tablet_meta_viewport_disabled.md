@@ -33,12 +33,9 @@ could specify it as follows.
 Note: Enable user-scalable might have some potential issues like
 scrolling, unnecessary events.
 
-
-
 # Version History
 
 | Version | Date           | Content                                   |
 |---------|----------------|-------------------------------------------|
 | 6.5.0   | September 2012 | Viewport should enabled on tablet device. |
-
 [^1]: <https://developers.google.com/web/fundamentals/design-and-ux/responsive/>

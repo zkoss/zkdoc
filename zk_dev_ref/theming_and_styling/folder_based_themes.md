@@ -2,8 +2,6 @@
 title: "Folder-based Themes"
 ---
 
-
-
 Before creating a new ZK theme, web designers need to understand its
 directory structure, let's start off by discovering where the default
 theme (a.k.a. breeze) is. Basically, the default theme is contained
@@ -270,8 +268,6 @@ following configuration item.
 ```
 
 # References
-
-
 
 [^1]: ZK Default Theme Extractor Utility. Please download at
     [github](https://gist.github.com/raw/4334775/e5d669bb873443aa03f8febffccd3fc4b2518ecb/ztx.bat).

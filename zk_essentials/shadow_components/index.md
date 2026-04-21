@@ -9,8 +9,8 @@ Below is the list of shadow components:
 * `<if>`: allows the conditional execution of its body according to the value of the test attribute.
 * `<choose>`/`<when>`/`<otherwise>`: they are used for logic and flow control like Java's `switch`/`case`/`default` statement.
 
-
 We can use shadow components anywhere on a zul. For example, we can create a component based on a condition:
+
 ```xml
 <if test="@load(vm.readonly)">
     <button label="Edit"/>
@@ -18,6 +18,7 @@ We can use shadow components anywhere on a zul. For example, we can create a com
 ```
 
 Or create a collection of components:
+
 ```xml
 <forEach begin="0" end="3">
 	<button label="${'Button'+=each}"/>
@@ -26,6 +27,7 @@ Or create a collection of components:
 
 # Setup
 Before using shadow elements, make sure you include the required jar - `zuti.jar`. With maven, you should add the dependency below:
+
 ```xml
     <dependency>
         <groupId>org.zkoss.zk</groupId>
@@ -34,7 +36,6 @@ Before using shadow elements, make sure you include the required jar - `zuti.jar
     </dependency>
  ```
  
-
 ## Navigation Menu Example
 In this chapter, we will demonstrate the power of shadow components with a navigation menu example shown below:
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch7-menu.png)
@@ -59,7 +60,6 @@ public class MenuViewModel {
 }
 ```
 
-
 ```java
 package org.zkoss.essentials.chapter5.template;
 
@@ -73,6 +73,3 @@ public class MenuNode {
     ...
 }
 ```
-
-
-

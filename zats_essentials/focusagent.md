@@ -1,7 +1,4 @@
 
-
-
-
 # Focus & Blur
 
 Only components that inherit `org.zkoss.zul.impl.InputElement` supports
@@ -41,5 +38,3 @@ Doublebox, Doublespinner, Intbox,</p>
 </tr>
 </tbody>
 </table>
-
- 

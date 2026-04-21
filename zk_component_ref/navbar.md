@@ -2,7 +2,6 @@
 title: "Navbar"
 ---
 
-
 - Demonstration:
 - Java API:
   [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)
@@ -45,7 +44,6 @@ A `navbar` could be placed in a vertical or horizontal orientation, the
 |---|---|
 | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_hor.png) |
 | vertical | ![](/zk_component_ref/images/ZKComRef_Nav.png) |
-
 ## Collapsed
 
 A `navbar` can be collapsed, the `collapsed` attribute decides.
@@ -56,7 +54,6 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 | false | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png) |
 | true | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png) |
 | false | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png) |
-
 ## Autoclose
 
 {% include supported-since.html version="8.0.4" %} By default only a single
@@ -83,21 +80,14 @@ until they are clicked again by the user.
 | Name | Event Type |
 |---|---|
 | `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a navitem in the navbar. |
-
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*`[` Nav`]({{site.baseurl}}/zk_component_ref/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/navseparator)
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                          |
 |---------|--------------|--------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html) was introduced. |
-
-

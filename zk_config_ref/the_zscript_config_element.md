@@ -3,6 +3,7 @@ title: "The zscript-config Element"
 ---
 
 **Syntax:**
+
 ```xml
 <zscript-config>  
     <language-name>a_programming_language</language-name>  
@@ -16,5 +17,3 @@ It is used to specify an interpreter to interpret the
 is the same as [zk.xml's zscript-config element]({{site.baseurl}}/zk_config_ref/the_zscript_config_element),
 except it is specified in a JAR file's `config.xml` rather than
 `WEB-INF/zk.xml`.
-
-

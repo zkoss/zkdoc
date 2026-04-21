@@ -2,12 +2,10 @@
 title: "Fileupload"
 ---
 
-
 - Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
 - Java API: [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
 - JavaScript API:
   [zul.wgt.Fileupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Fileupload.html)
-
 
 # Employment/Purpose
 
@@ -50,7 +48,6 @@ and so on.
 
 The behavior is a little bit different depending on if the event thread
 is enabled (default: it is disabled[^1]).
-
 
 ## Creating a custom template for the Static Method: get
 
@@ -257,12 +254,9 @@ Upload your hot shot:
 
 `*NONE`
 
-
-
 # Version History
 
 | Version | Date     | Content                                                                                                                                                   |
 |---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()). Used if the event thread is disabled. |
-
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system_config_element#The_disable-event-thread_Element).

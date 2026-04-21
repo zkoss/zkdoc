@@ -679,8 +679,6 @@ All source code used in this chapter can be found
 
 # Reference
 
-
-
 [^1]: Hibernate in Action, Christian Bauer, Gavin King, Manning
 
 [^2]: [Unit of Work in Hibernate Core Reference Manual](http://docs.jboss.org/hibernate/core/3.6/reference/en-US/html_single/#transactions-basics-uow)

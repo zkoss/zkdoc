@@ -45,12 +45,10 @@ try the evaluation version.
     </repositories>
 ```
 
-
 ### Premium users only
 
 - <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
 
-  
 If you are our customer, please apply for a premium maven account to use
 ZK Premium Maven Repository.
 
@@ -198,4 +196,3 @@ information printed on your application console like:
 
      To renew, obtain more licenses, or if you require help, please contact info@zkoss.org.
 ```
-

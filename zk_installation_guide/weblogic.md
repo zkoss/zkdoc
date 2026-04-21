@@ -35,5 +35,3 @@ c:/bea/user_projects/domains/base_domain/lib
 Libraries that have to be copied include bsh.jar,
 commons-fileupload.jar, commons-el.jar, pxcommon.jar, pxweb.jar, zk.jar,
 zul.jar, and zhtml.jar.
-
-

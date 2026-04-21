@@ -2,8 +2,6 @@
 title: "UploadAgent"
 ---
 
- 
-
 `Since 1.1.0`
 
 ZATS Mimic introduces the `UploadAgent` to simulate file uploading
@@ -34,8 +32,6 @@ below:
 ![](images/Zats_upload_button.png)
 
 **Notes**
-
-
 
 ## Upload a Single File
 
@@ -85,8 +81,6 @@ public void test() throws Exception {
 
 **Notes**
 
-
-
 # Uploading Files with `Fileupload.get()`
 
 Another way to implement upload feature is to use the static method
@@ -128,8 +122,6 @@ public void test() throws Exception {
 - **Line 18**: Don't forget to invoke `finish()`method.
 
 **Notes**
-
-
 
 # Supported Components
 

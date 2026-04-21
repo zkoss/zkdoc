@@ -14,6 +14,7 @@ displays 2 kinds of data:
 * country list
 
 The ViewModel should look like the following:
+
 ```java
 public class ProfileViewModel implements Serializable{
 
@@ -42,10 +43,10 @@ public class ProfileViewModel implements Serializable{
     have to define a corresponding member variable. Hence we can expose
     country list by getting from the service class.
 
-
 ## Initialize a ViewModel
 
 Since the ViewModel is just a POJO, we can initialize its member fields in a constructor.
+
 ```java
 public class ProfileViewModel implements Serializable{
 ...
@@ -73,7 +74,6 @@ class name in ` @init` like:
 The id is like a variable and we access the ViewModel's
 properties by the ID, e.g. `vm.name`. Whilst the full-qualified class name is used to instantiate the ViewModel object itself. So the component that a ViewModel is bound to becomes the **Root View Component** for the ViewModel. All child components of this Root View Component are bound to the same ViewModel and its properties, so we usually bind a page's root component to a ViewModel.
 
-
 ```xml
 <window viewModel="@id('vm') @init('org.zkoss.essentials.chapter3.mvvm.ProfileViewModel')"
     border="normal" hflex="1" vflex="1" contentStyle="overflow:auto">
@@ -83,10 +83,8 @@ properties by the ID, e.g. `vm.name`. Whilst the full-qualified class name is us
 -   Line 1: Specify ViewModel's id with`@id` and the its
     full-qualified class name in`@init`.
 
-
 [^1] Since ZK 8, you don't need to specify
 `apply="org.zkoss.bind.BindComposer"` explicitly. Because ZK implicitly applies `BindComposer` for you if you specify a ViewModel.
-
 
 # Binding Data with ViewModel's Properties
 
@@ -97,7 +95,6 @@ Once the binding is established, ZK will synchronize (load or save)
 data between components and the ViewModel for us automatically.
 
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-mvvm-databinding-role.png)
-
 
 ## Load a User
 For the first row of this form, we want to show the user name, then we can load `User`'s `account` property to a `<label>` `value` attribute with data binding syntax `@Load`:
@@ -116,7 +113,6 @@ For the first row of this form, we want to show the user name, then we can load 
 ```
 * Line 5: `vm` is the ViewModel's id. We use "dot notation" to access an object's properties. Then ZK actually calls getter for you, hence, `vm.currentUser.account` will invoke `getCurrentUser().getAccount()`.
 
-
 {% include component_model_template.md %}
 
 ## Load a Collection Object, Country List
@@ -124,6 +120,7 @@ This form needs a drop-down list that contains a list of countries. When a user 
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-collection.png)
 
 In order to provide a dropdown list, we put a `<listbox>` in a `select` mold.
+
  ```xml
      <cell>
          <listbox mold="select" width="200px">
@@ -161,9 +158,9 @@ The last part is to define a template, so that `<listbox>` can know how to rende
 
 After above steps, you can see a list of country in the form.
 
-
 ### Load User's Country as an Selected Item
 To load a user's country as an selected item of Listbox, you need to bind the property to `selectedItem`:
+
 ```xml
 <listbox model="@load(vm.countryList)" selectedItem="@load(vm.currentUser.country)" mold="select" width="200px">
 ```

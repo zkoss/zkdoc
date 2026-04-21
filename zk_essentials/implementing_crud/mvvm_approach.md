@@ -105,7 +105,6 @@ ViewModel with data binding expression.
 
 ## Create
 
-
 We can create a new todo item by either clicking the button with plus
 icon (![]({{site.baseurl}}/zk_essentials/images/ze-ch6-plus.png)) or
 pressing the "Enter" key, therefore we can bind these two events to the
@@ -156,7 +155,6 @@ affecting the ViewModel.
 
 -   Line 2\~6: The `onOK` and `onClick` can invoke the same command
     method.
-
 
 # Update
 
@@ -386,7 +384,6 @@ Then we bind `onCheck` to the command `completeTodo`.
     key-value pairs. We pass `each` object with key `todo`.
 
 ## Delete
-
 
 Implementing a delete function is very similar to "completing a todo",
 we perform business logic and notify change.

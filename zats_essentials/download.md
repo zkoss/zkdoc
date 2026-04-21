@@ -2,8 +2,6 @@
 title: "Download"
 ---
 
-
-
 `Since 1.1.0`
 
 We usually implement file downloading through
@@ -36,7 +34,6 @@ The download mechanism is a process involving two steps. When you invoke
 `save()`, the `Filedownload` simply notifies ZK client engine of the
 download URL. Then, ZK client engine downloads such file according to
 the referred URL.
-
 
 # Download Files in a Test Case
 
@@ -75,6 +72,3 @@ public void test() throws Exception {
 - **Line 17-19**: We can get more information from `Resource`, or fetch
   the content of resource files in binary through the input stream to
   verify the result.
-
-
-

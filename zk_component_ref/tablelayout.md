@@ -2,7 +2,6 @@
 title: "Tablelayout"
 ---
 
-
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
@@ -11,7 +10,6 @@ title: "Tablelayout"
 - Java API: [org.zkoss.zkmax.zul.Tablelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablelayout.html)
 - JavaScript API:
   [zkmax.layout.Tablelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Tablelayout.html)
-
 
 # Employment/Purpose
 

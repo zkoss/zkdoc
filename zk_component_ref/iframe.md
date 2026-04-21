@@ -2,11 +2,9 @@
 title: "Iframe"
 ---
 
-
 - Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
 - Java API: [org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html)
 - JavaScript API: [zul.utl.Iframe](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Iframe.html)
-
 
 # Employment/Purpose
 
@@ -100,7 +98,6 @@ you want to retrieve component, you may use
 with the group scope. Of course, you could handle it manually by
 deliberately passing the information through session.
 
-
 # Communication among iFrames without Server Push
 
 {% include supported-since.html version="5.0.4" %} <!--REQUIRED ZK EDITION: EE -->
@@ -164,7 +161,6 @@ element (rather than the widget).
 | Name | Event Type |
 |---|---|
 | `onURIChange` | **Event:** [org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html) Denotes the associated URI (`src`) has been changed by user. Use `getURI()` to retrieve the URI being changed to. |
-
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
@@ -176,7 +172,5 @@ element (rather than the widget).
 | Version      | Description          | Example Location                                                                              |
 |--------------|----------------------|-----------------------------------------------------------------------------------------------|
 | 3.6 or later | Print Iframe Content | [<http://www.zkoss.org/forum/listComment/6599>](https://www.zkoss.org/forum/listComment/6599) |
-
-
 [^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
     section

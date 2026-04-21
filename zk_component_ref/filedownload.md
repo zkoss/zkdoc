@@ -2,11 +2,9 @@
 title: "Filedownload"
 ---
 
-
 - Demonstration: [File Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
 - Java API: [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html)
 - JavaScript API: N/A
-
 
 # Employment/Purpose
 
@@ -182,7 +180,6 @@ first and apply the HTML Form approach only if it is Internet Explorer.
 ...
 ```
 
-
 ## Multiple File Downloads
 {% include supported-since.html version="10.3.0" %}
 
@@ -191,6 +188,7 @@ This feature enables developers to download multiple files at once to the client
 ### Using Varargs
 You can create several Media objects, then use the variable arguments signature to give an arbitrary number of AMedia to the FileDownload.saveMultiple function.
 This is convenient if you are manually assembling the downloads and simply have several objects to pass to the method.
+
 ```java
 // Download files using their original names
 Media report = new AMedia("report.pdf", "pdf", "application/pdf", pdfBytes);
@@ -202,6 +200,7 @@ Filedownload.saveMultiple(report, chart, data);
 ### Using Map (Custom Filenames)
 You can pass a single Map<Media, String> as the argument, containing the Media and the download name for each file.
 This is more convenient if you are downloading a variable amount of files, as you can build the Map prior to triggering the downloads.
+
 ```java
 Map<Media, String> files = new LinkedHashMap<>();
 files.put(reportMedia, "Annual-Report-2024.pdf");

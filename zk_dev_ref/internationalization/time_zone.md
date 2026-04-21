@@ -1,5 +1,4 @@
 
-
 # Overview
 
 The time zone used to process requests and events is, by default,
@@ -89,7 +88,6 @@ Like configuring a locale, you can prepare the time zone for the given
 session by the use of the request interceptor. Please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale#The_Request_Interceptor)
 for more information.
 
-
 # Resolving Time Zone Data Version Mismatch
 {% include supported-since.html version="10.2.1" %}
 
@@ -149,7 +147,6 @@ The mismatch is dangerous when dealing with dates near geopolitical or DST chang
 | **DST Transitions** | **The most common issue.** A server using old data might calculate a date one hour differently than the client using new data during a recent DST start or end time. For example, a meeting scheduled at a specific time might appear to shift by an hour on the client compared to the server log. |
 | **New Time Zones** | A region adopts a new zone or changes its standard offset. The client or server with outdated data will fail to recognize the zone identifier or apply the wrong offset. |
 | **Historical Data** | An application that handles booking, logging, or reporting based on past events may calculate an incorrect historical offset if the tzdata rules have been corrected or revised since the JDK/client library was built. For instance, an incorrect historical DST rule for a specific region (e.g., Canada/Yukon in 1967\) could result in calculation errors of several hours or more. |
-
 **Impact:** These errors lead to data corruption, incorrect event scheduling, and a poor user experience, often confusingly appearing only for specific users or dates.
 
 ## How to Upgrade Time Zone Data
@@ -173,6 +170,7 @@ If upgrading the entire JDK is not feasible, use the [TZUpdater tool](https://ww
 1. **Download:** Obtain the latest tzupdater.jar tool from Oracle's website (search for "Oracle TZUpdater").
 2. **Stop:** Shut down all running Java applications and application servers using the target JRE/JDK installation.
 3. **Run:** Execute the tool using the Java installation you wish to update. The `-l` flag tells it to download and apply the latest IANA data from the web (or use a local file).
+
     ```text
     # Navigate to the bin directory of your JDK/JRE
     cd $JAVA_HOME/bin
@@ -181,6 +179,7 @@ If upgrading the entire JDK is not feasible, use the [TZUpdater tool](https://ww
     ./java -jar /path/to/tzupdater.jar -l
     ```
 4. **Verify:** Check the new installed version.
+
     ```text
     ./java -jar /path/to/tzupdater.jar -V
     ```

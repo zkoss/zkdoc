@@ -2,12 +2,10 @@
 title: "Include"
 ---
 
-
 - Demonstration:
   [Include](http://www.zkoss.org/zkdemo/composite/include)
 - Java API: [org.zkoss.zul.Include](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Include.html)
 - JavaScript API: [zul.wgt.Include](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Include.html)
-
 
 # Employment/Purpose
 
@@ -442,7 +440,6 @@ page).
 
 For more information, please refer to the [\#Include Non-ZUML Pages](#Include_Non-ZUML_Pages) section.
 
-
 # Supported Events
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
@@ -451,17 +448,10 @@ For more information, please refer to the [\#Include Non-ZUML Pages](#Include_No
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                                                                                                                                                                                                                      |
 |---------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.0   | January 2010 | The mode is default to `auto` (rather than `defer`). You could configure the default mode to defer by specifying a library property called [org.zkoss.zul.include.mode]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_include_mode) in `WEB-INF/zk.xml`. |
 | 5.0.7   | April 2011   | The custom attribute called `org.zkoss.zul.include.html.defer` was introduced to defer the rendering of a non-ZUML page (such as HTML fragment) until all widgets are instantiated and rendered at the client.                                                                               |
-
-
-
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`

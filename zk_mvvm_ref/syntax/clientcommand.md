@@ -42,5 +42,3 @@ public class VM {
     <button label="change" onClick="@command('doCountChange')"/>
 </window>
 ```
-
-

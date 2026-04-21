@@ -2,7 +2,6 @@
 title: "ColSizeEvent"
 ---
 
-
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html)
 - JavaScript API: N/A
@@ -28,12 +27,8 @@ Check inherited events
 
 `*None`
 
-
-
 # Version History
 
 | Version | Date       | Content                                                      |
 |---------|------------|--------------------------------------------------------------|
 | 5.0.4   | 2010/08/03 | Updated Employment/Purpose that reflects a change of Javadoc |
-
-

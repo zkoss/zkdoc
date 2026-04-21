@@ -1,5 +1,4 @@
 
-
 # CRUD Example
 
 Since Calendars support model-driven display, to manipulate (CRUD) items

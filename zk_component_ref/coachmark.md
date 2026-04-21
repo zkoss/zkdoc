@@ -2,7 +2,6 @@
 title: "Coachmark"
 ---
 
-
 {% include supported-since.html version="9.0.0" %}
 
 - Java API: [org.zkoss.zkmax.zul.Coachmark](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Coachmark.html)
@@ -98,7 +97,6 @@ The positions of a coachmark. Below are the available values:
 | <b>bottom</b> | after_start  | after_center  | after_end   |
 | <b>left</b>   | start_before | start_center  | start_after |
 | <b>right</b>  | end_before   | end_center    | end_after   |
-
 See
 [Popup#Position]({{site.baseurl}}/zk_component_ref/popup#Position)
 
@@ -125,11 +123,8 @@ specified coachmark instead of the predefined "next" coachmark.
 |---|---|
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after the component is opened or closed. |
 | `onTargetClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Represents an event caused by a user's click on a highlighted target component. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-

@@ -27,7 +27,6 @@ public class MyRenderer implements TabboxRenderer{
 }
 ```
 
-
 [^1]: If the tabbox is assigned a template called `model:tab` and
     `model:tabpanel`, then the template will be used to render the
     tabbox. For more information, please refer to [the Tabbox Template section]({{site.baseurl}}/zk_dev_ref/mvc/tabbox_template).

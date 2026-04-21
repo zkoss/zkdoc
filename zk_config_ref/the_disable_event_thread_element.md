@@ -14,7 +14,6 @@ title: "The disable-event-thread Element"
 
 {% include supported-since.html version="7.0.0" %} Deprecated to enable the event thread according to Java Servlet Specification that may prohibit the creation of new threads.
 
-
 It specifies whether to disable the use of the event processing thread.
 If disabled, no event processing thread will be used at all. In other
 words, all events are processed in the same thread that serves HTTP

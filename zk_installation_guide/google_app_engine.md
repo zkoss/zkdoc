@@ -151,8 +151,6 @@ in an App Engine environment.
 
 ------------------------------------------------------------------------
 
-
-
 # Memory Limitation and Solutions
 
 GAE limits the session memory to 1 mega bytes. If a user visits several
@@ -194,6 +192,5 @@ demo is [here](http://tags42.appspot.com/borderlayout/borderlayout.zul).
 |---------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | June 2011      | Add ClusterSessionPatch listener to zk.xml for enforce GAE to write session.                                                                                                                                                                                                                                                                                                                                                     |
 | 5.0.9   | September 2011 | In 5.0.7/5.0.8, we introduced a feature allowing developers to log the serialization. Unfortunately, it broke one of GAE restriction: java.util.logging.LogManager is not accessible. It is fixed in 5.0.9 but specifying a library property called org.zkoss.util.logging.hierarchy.disabled in `WEB-INF/zk.xml`. |
-
 [^1]: You will see a warning, `... Component captcha ignored.`, in the
     application log, refer to the JRE [white list](http://developers.google.com/appengine/docs/java/jrewhitelist).

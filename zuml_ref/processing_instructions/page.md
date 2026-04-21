@@ -1,5 +1,6 @@
 
 **Syntax:**
+
 ```xml
 <?page [id="..."] [title="..."] [style="..."] [cacheable="false|true"]
    [language="xul/html"] [zscriptLanguage="Java"]

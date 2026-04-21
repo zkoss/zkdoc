@@ -3,7 +3,6 @@
 Building a user interface using the MVVM approach is not different from
 the [MVC approach](../mvc_approach/construct_a_form_style_page).
 
-
 **Extracted from chapter3/profile-mvvm-property.zul**
 
 ```xml
@@ -65,7 +64,5 @@ the [MVC approach](../mvc_approach/construct_a_form_style_page).
     </vlayout>
 </window>
 ```
-
-
 
 {% include input_validation.md %}

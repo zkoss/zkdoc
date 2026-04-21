@@ -3,6 +3,7 @@ title: "meta"
 ---
 
 **Syntax:**
+
 ```xml
 <?meta [name0="value0"] [name1="value1"] [name2="value2"]
     [if="..."] [unless="..."]?>
@@ -32,5 +33,3 @@ pages or servlets. Also, they are ignored if the page is a `zhtml` file.
      My content
  </window>
 ```
-
-

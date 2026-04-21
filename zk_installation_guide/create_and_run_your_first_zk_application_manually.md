@@ -102,5 +102,3 @@ After Tomcat is started the application should be available under
 (assuming the default tomcat configuration):
 
 <http://localhost:8080/myZK/hello.zul>
-
-

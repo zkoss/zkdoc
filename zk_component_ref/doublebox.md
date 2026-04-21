@@ -2,12 +2,10 @@
 title: "Doublebox"
 ---
 
-
 - Demonstration:
   [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Doublebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublebox.html)
 - JavaScript API: [zul.inp.Doublebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublebox.html)
-
 
 # Employment/Purpose
 

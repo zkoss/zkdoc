@@ -23,6 +23,7 @@ We can use parameter related annotations on command method's parameters; please 
 # Example
 
 #### Method name as command name
+
 ```java
 @GlobalCommand
 public void show() {
@@ -30,6 +31,7 @@ public void show() {
 }
 ```
 #### Specify command name
+
 ```java
 @GlobalCommand("delete")
 @Command("delete")

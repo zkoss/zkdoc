@@ -18,5 +18,3 @@ interface.
 By default, `org.zkoss.zk.ui.http.SimpleSessionCache`
 is used and it stores the ZK session in an attribute of the native
 session (i.e., `HttpSession` or `PortletSession`).
-
-

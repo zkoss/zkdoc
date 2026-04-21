@@ -12,6 +12,7 @@ Steps to use this feature:
 [1]: It must be a ` List ` object under CE edition.
 
 #### Basic usage example
+
 ```xml
 <window apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('foo.ChildrenSimpleVM')">
     Simple - Init
@@ -45,6 +46,7 @@ If you combine this feature with dynamic template, you can even render different
 
 Here is an example to create a dynamic menu bar. If a menu item has no sub-menu, we use menuitem otherwise we use menu.
 #### An example of dynamic menu bar
+
 ```xml
 <menubar id="mbar" children="@bind(vm.nodes) @template(empty each.children ? 'menuitem' : 'menu')">
     <template name="menu" var="node">

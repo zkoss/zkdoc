@@ -2,7 +2,6 @@
 title: "AbstractListModel"
 ---
 
-
 - Demonstration: N/A
 - Javadoc: [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)
 - JavaScript API: N/A
@@ -23,12 +22,8 @@ Check inherited events
 
 `*None`
 
-
-
 # Version History
 
 | Version | Date | Content |
 |---------|------|---------|
 |         |      |         |
-
-

@@ -2,8 +2,6 @@
 title: "attribute"
 ---
 
-
-
 **Syntax:**
 
 `<attribute name="`*`myName`*`" [trim="true|`**`false`**`"] [if="`*`if-condition`*`"] [unless="`*`unless-condition`*`"]>`*`myValue`*</attribute>

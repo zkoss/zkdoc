@@ -254,8 +254,6 @@ Here are some examples of using shadow selectors with the above zul
     @Wire("#host::shadow#root #if1") // wire to if with the id "if1", with performance boost
 ```
 
- 
-
 # Wiring by Method
 
 You can either put the `@Wire` annotation on a field or method. In the
@@ -281,8 +279,6 @@ In the example above, the SelectorComposer will find the grid of id
   `null` value passed in.
 - Do not confuse `@Wire` with `@Listen`, while the latter wires to
   events.
-
- 
 
 # Wiring a Collection
 
@@ -330,8 +326,6 @@ Here is the sequence of wiring:
   composer, the SelectorComposer will attempt to wire the **null
   fields** and **methods** again, for some of the components might have
   been generated after doAfterCompose() call.
-
- 
 
 # Performance Tips
 

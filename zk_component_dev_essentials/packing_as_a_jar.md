@@ -138,7 +138,6 @@ what do they look like, example from zul.jar
     </tbody>
 </table>
 
-
 ## Component classes
 
 <table>
@@ -173,7 +172,6 @@ what do they look like, example from zul.jar
         </tr>
     </tbody>
 </table>
-
 
 ## Widget Resources
 

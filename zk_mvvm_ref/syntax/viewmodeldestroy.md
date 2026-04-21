@@ -19,6 +19,7 @@
 Binder calls the method with this annotation when finalizing a ViewModel. In a ViewModel class, **only one destroy method is allowed at the most**. If you set annotation element **superclass** to **true**, the ViewModel's class's destroy method will be invoked first, then the parent's; this logic repeats on super class. If a class has no method with `@Destroy`, no method will be called (including the super class's)<sub>[1]</sub>.
 
 For example, in a class hierarchy:
+
 ```java
 class A {
 	@Destroy
@@ -72,6 +73,7 @@ E is the last child class.
 We can also use parameter related annotations on destroy method's parameters; please refer to subsections of [Syntax/ViewModel/Parameters](./parameters).
 
 [1]: If you override parent class's destroy method and set `superclass=true`, due to Java's limitation, child's method will be called twice. To avoid this, you should **remove** `superclass=true` in child class and use `super` to invoke parent's implementation.
+
 ```java
 class Parent {
 	@Destroy
@@ -98,6 +100,7 @@ class CorrectChild extends Parent {
 ```
 
 # Example
+
 ```java
 public class FooViewModel {
     @Destroy

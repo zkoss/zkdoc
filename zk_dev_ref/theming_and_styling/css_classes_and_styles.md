@@ -2,8 +2,6 @@
 title: "CSS Classes and Styles"
 ---
 
-
-
 CSS ([Cascading Style Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)) is a style
 sheet language used to describe the presentation of a (HTML) document.
 It is an important part of ZK to customize component's look and feel. If

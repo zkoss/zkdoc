@@ -1,5 +1,4 @@
 
-
 # ZATS Mimic
 
 ## Maven Project
@@ -127,5 +126,3 @@ e.g. JUnit.
             <scope>test</scope>
         </dependency>
 ```
-
- 

@@ -1,6 +1,5 @@
 # Target Application
 
-
 In this chapter, we will demonstrate a common scenario: collecting user
 input in form style page. The target application looks as follows:
 

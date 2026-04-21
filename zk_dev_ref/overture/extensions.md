@@ -2,8 +2,6 @@
 title: "Extensions"
 ---
 
-
-
 Here is an overview of the extensions of ZK. They are optional. If you
 are new to ZK and prefer to have some knowledge of ZK first, you could
 skip this section and come back later after you understand more about
@@ -38,7 +36,6 @@ browser or a server.
 
 ZK CDT is a component development tool which provides wizards to
 simplify the creation of ZK components.
-
 
 ## [run-jetty-run](http://code.google.com/p/run-jetty-run/)
 

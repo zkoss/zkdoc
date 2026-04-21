@@ -30,6 +30,7 @@ Assume we have data in grid. It's common to put a button at the end of a row to 
 Here is the zul of above screenshot:
 
 #### Example to pass parameters
+
 ```xml
 <grid id="outergrid" width="700px" model="@bind(vm.items)">
     <columns>
@@ -54,6 +55,7 @@ Here is the zul of above screenshot:
 -   Line 14: We retrieve domain object (Item class) by iteration variable and pass it with key "item".
 
 #### Command methods in the ViewModel
+
 ```java
 @Command
 public void showIndex(@BindingParam("index") Integer index) {
@@ -75,10 +77,12 @@ A Global Command Example
 Passing parameter in global command binding can share data among ViewModels.
 
 The following code passes selected item to another ViewModel.
+
 ```xml
 <button label="Submit" onClick="@command('submit') @global-command('detail', name=vm.selectedName)"/>
 ```
 The global command method receives parameter through`@BindingParam`.
+
 ```java
 @GlobalCommand
 public void detail(@BindingParam("name") String name) {
@@ -91,6 +95,7 @@ Parameter Default Value
 You could choose not to pass parameter for a command method that has parameters. The parameter will become null if you don't pass it, but you can choose to give it a default value with`@Default`. This annotation can be used with other parameter related annotations.
 
 #### Specify parameter's default value
+
 ```java
 @Command
 public void showIndex(@BindingParam("index") @Default("0") Integer index) {
@@ -100,6 +105,7 @@ public void showIndex(@BindingParam("index") @Default("0") Integer index) {
 -   We set index's default value to 0.
 
 **Example to bind above command**
+
 ```xml
 <label value="@bind(vm.index)"/>
 
@@ -112,6 +118,7 @@ public void showIndex(@BindingParam("index") @Default("0") Integer index) {
 You can even pass UI components. This resort can make you manipulate UI components directly but also adds a coupling between ViewModel and View which weaken the strength of MVVM pattern.
 
 #### Example to pass a UI component
+
 ```xml
 <listbox model="@load(vm.items)" selectedItem="@bind(vm.selected)" hflex="true" height="300px">
     <listhead>
@@ -131,6 +138,7 @@ You can even pass UI components. This resort can make you manipulate UI componen
 -   We pass listitem by implicit object "self".
 
 #### Command method to receive UI component
+
 ```java
 @Command
 public void popupMessage(@BindingParam("target") Component target, @BindingParam("content") String content) {
@@ -145,6 +153,7 @@ We can retrieve a value or implicit objects from various context scopes in **ini
 Retrieve HTTP Context Object
 ----------------------------
 #### Example to get browser information
+
 ```java
 public class HttpParamVM {
 
@@ -159,6 +168,7 @@ public class HttpParamVM {
 You can apply multiple parameter-related annotations on one method's parameter, and the binder will retrieve the value among multiple context scopes in specified order. It continues to find in next context scope until it retrieves first non-null object.
 
 #### Multiple context scope retrieval example
+
 ```java
 @Init
 public void init(@CookieParam("nosuch") @HeaderParam("user-agent") String guess) {
@@ -174,6 +184,7 @@ You can also receive ZK context object by `@ContextObject` with various `org.zko
 We retrieve current binding source component and ViewModel's view component at initial method and command method.
 
 #### Example to retrieve ZK context object
+
 ```java
 @Init
 public void init(@ContextParam(ContextType.COMPONENT) Component component,
@@ -194,6 +205,7 @@ public void showId(@ContextParam(ContextType.COMPONENT) Component component,
 We create 2 labels that bound to current binding component's id and view component's id.
 
 #### A zul bound to above ViewModel
+
 ```xml
 <vbox id="vbox" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm') @init('eg.ContextParamVM')">
     <label id="componentId" value="@load(vm.bindComponentId)" />
@@ -217,6 +229,7 @@ There are two ways to retrieve an event object:
 2.  Apply annotation **` @ContextParam(ContextType.TRIGGER_EVENT) `** on a command method's parameter.
 
 Here we have a *label* to show what a user is typing in the *textbox*. The user's typing content is stored in InputEvent's value property, so we can pass it by **event.value** when we bind a command to **onChanging** attribute.
+
 ```xml
 <vbox>
     <label id="msg" value="@load(vm.message)"/>
@@ -225,6 +238,7 @@ Here we have a *label* to show what a user is typing in the *textbox*. The user'
 ```
 
 #### ViewModel for the zul above
+
 ```java
 public class EventViewModel {
     @Command

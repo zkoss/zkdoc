@@ -2,8 +2,6 @@
 title: "Layouts"
 ---
 
-
-
 This section outlines components which enable developers to control the
 layout of their application.
 

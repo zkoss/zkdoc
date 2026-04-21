@@ -29,4 +29,3 @@ for additional information.
 </library-property>
 ...
 ```
-

@@ -24,5 +24,4 @@ separate them with a comma, such as `left,top`.
 | right  | Align the progress box at the right edge of the browser window.                                                                               |
 | center | Align the progress box at the center of the browser window. If it is used with left and top, it means the center in the vertical orientation. |
 | mouse  | Align the progress box near by the mouse pointer. If specified, it ignores all other values.                                                  |
-
 Allowed Values

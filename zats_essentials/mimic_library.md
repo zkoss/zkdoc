@@ -1,5 +1,4 @@
 
-
 # Background
 
 In agile software development, developers modify their codes frequently
@@ -78,5 +77,3 @@ side, there are some limitations you should know:
 
 In following sections, we will cover usage of operation agents and how
 to customize your test environment.
-
-  

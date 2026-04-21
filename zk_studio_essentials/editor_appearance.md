@@ -10,8 +10,6 @@ You can access the editor configuration under:
 
 Preferences > XML > XML Files > Editor > Appearance
 
-
-
 ![Editor appearance settings for XML files in Eclipse](images/Editor-default-appearance.png)
 
 ## Editor Configuration for Dark Theme
@@ -29,7 +27,6 @@ The following settings are a possible set of values for better XML readability, 
 | bracket highlight | 66 | 66 | 66 |
 | Parameter hints background | 52 | 57 | 61 |
 | Parameter hints foreground | 238 | 238 | 238 |
-
 Custom colors can be defined by selecting "Define custom colors" in the color picker, then filling in the custom values for red, green, and blue.
 
 ![Editor custom colors selection](images/Editor-custom-colors.png)

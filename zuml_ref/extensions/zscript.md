@@ -2,7 +2,6 @@
 title: "zscript"
 ---
 
-
 The default interpreter for the zscript elements is Java (based on
 [BeanShell](http://www.beanshell.org)). Depending on your preference,
 you could choose one of built-in interpreters, or implement your own
@@ -86,5 +85,3 @@ window.
 
 Notice that each page has its own interpreter to evaluate the zscript
 code.
-
-

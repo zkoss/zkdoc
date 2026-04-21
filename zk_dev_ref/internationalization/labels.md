@@ -52,7 +52,6 @@ same in both `de_DE` and `de`, then you need only to specify in
 `zk-label_de.properties` (and then it will be *inherited* when de_DE is
 used). Of course, you could specify it in both files.
 
-
 ## Encoding character set
 
 By default, the encoding of properties files is assumed to be `UTF-8`.
@@ -260,7 +259,6 @@ called
 For 5.0.6 and older, you could use the approach described in the
 following section to load multiple properties files.
 
-
 # Loading Labels from Jar
 
 If your application is built using multiple Jars as custom components or
@@ -363,7 +361,6 @@ the properties, and `module-1.properties` and `module-2.properties` are
 two modules of messages you provide. Then, you configure it in
 `WEB-INF/zk.xml` as described in [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_org_zkoss_zk_ui_util_webappinit_interface).
 
-
 # Reload Labels Dynamically
 
 The internationalization labels are loaded when a locale is used for the
@@ -402,7 +399,6 @@ ${c:label('another.key')}
 |---------|--------------|-------------------------------------------------------------------------------------------|
 | 5.0.5   | October 2010 | [org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html) was introduced. |
 | 5.0.7   | March 2011   | The `labels` object was introduced.                                                       |
-
 [^1]: It is the value returned by
     [org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent()). For
     more information, please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale).

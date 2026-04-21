@@ -22,6 +22,3 @@ Hence, to save a server's memory, use `@init` if you don't need to reload a valu
     </template>
 </grid>
 ```
-
-
-

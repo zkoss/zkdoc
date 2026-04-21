@@ -129,7 +129,6 @@ variables from [ here](/zk_style_customization_guide/zk_less_variables).
 | Variables                   | Default Value |
 |-----------------------------|---------------|
 | @tabSelectedBackgroundColor | \#FFFFFF      |
-
 # Customize Sample
 
 ## Target Design
@@ -335,5 +334,3 @@ Assume the image below is our target design for Tabbox component.
 - Accordion Mold
     
   ![](images/styleguide-accordion.png)
-
-

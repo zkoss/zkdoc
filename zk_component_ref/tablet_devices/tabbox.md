@@ -1,5 +1,4 @@
 
-
 # Tabbox
 
 - Component Reference:
@@ -38,5 +37,3 @@ For example,
 | Version | Date       | Content                                                                                               |
 |---------|------------|-------------------------------------------------------------------------------------------------------|
 | 6.5.0   | July, 2012 | [Tabbox support touch's swipe event to switch tab selection](http://tracker.zkoss.org/browse/ZK-1244) |
-
-

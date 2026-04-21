@@ -4,6 +4,7 @@
 {% include supported-since.html version="8.5.1" %}
 
 # Syntax
+
 ```java
 @AutoNotifyChange
 ```
@@ -16,6 +17,7 @@
 If the view model class is annotated with this annotation, every setter method in `@Command` and `@GlobalCommand` will post NotifyChange after being called.
 
 # Example
+
 ```java
 @AutoNotifyChange
 public class OrderVM {

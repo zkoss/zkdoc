@@ -2,7 +2,6 @@
 title: "Pdfviewer"
 ---
 
-
 - Demonstration: [Embed PDF Documents in Your ZK Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)
 - Java API: [org.zkoss.zkex.zul.Pdfviewer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Pdfviewer.html)
 - JavaScript API:
@@ -100,7 +99,6 @@ pdfjsLib.version
 | `onRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf file is finished rendering. |
 | `onZoom` | **Event:** [org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has changed the zoom level. |
 | `onRotate` | **Event:** [org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user has changed the rotation angle. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
@@ -111,5 +109,3 @@ pdfjsLib.version
 |---------|--------------|--------------------------------------------------------------------------------------------------------------------|
 | 9.0.0   | October 2019 | [ZK-4395](https://tracker.zkoss.org/browse/ZK-4395): Provide a pdfviewer component                                 |
 | 9.6.0   | June 2021    | [ZK-4917](https://tracker.zkoss.org/browse/ZK-4917): set zoom level with fit-page-width or fit-page-height in Java |
-
-

@@ -2,12 +2,10 @@
 title: "Spinner"
 ---
 
-
 - Demonstration:
   [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Spinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Spinner.html)
 - JavaScript API: [zul.inp.Spinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Spinner.html)
-
 
 # Employment/Purpose
 
@@ -110,7 +108,6 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 |----------|--------------------------------------------------------|
 | default  | ![](/zk_component_ref/images/spinner_mold_default.png) |
 | rounded  | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
-
 {% include supported-since.html version="5.0.0" %} rounded mold is available.
 
 # Supported Children

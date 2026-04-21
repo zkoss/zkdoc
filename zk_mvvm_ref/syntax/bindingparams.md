@@ -24,6 +24,7 @@ Though both annotations can be applied to an object, it is slightly different be
 # Example
 
 #### A plain old Java object (POJO)
+
 ```java
 public class Message {
     private String myKey;
@@ -48,6 +49,7 @@ public class Message {
 ```
 
 #### Command binding that pass parameters
+
 ```xml
 <listbox model="@load(vm.items)" selectedItem="@bind(vm.selected)" hflex="true" height="300px">
     <listhead>
@@ -66,6 +68,7 @@ public class Message {
 ```
 
 #### Command method in ViewModel with binding parameter
+
 ```java
 @Command
 public void popupMessage(@BindingParams Message message) {

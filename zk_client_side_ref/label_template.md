@@ -38,5 +38,3 @@ The name of the component definition that represents a label.
 `[Required]`
 
 The property of the component definition for holding the text.
-
-

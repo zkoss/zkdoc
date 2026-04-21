@@ -6,7 +6,6 @@ title: "l"
 String l(String key);
 ```
 
-  
 i.e.,
 [org.zkoss.xel.fn.CommonFns#getLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/xel/fn/CommonFns.html#getLabel(java.lang.String))
 
@@ -28,5 +27,3 @@ For example,
  ...
 </window>
 ```
-
-

@@ -2,7 +2,6 @@
 title: "AfterSizeEvent"
 ---
 
-
 - JavaDoc:[org.zkoss.zk.ui.event.AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)
 
 {% include supported-since.html version="6.5.2" %}
@@ -37,5 +36,3 @@ maximizable="true" sizable="true">
 | Version | Date       | Content                                                                                |
 |---------|------------|----------------------------------------------------------------------------------------|
 | 6.5.2   | March 2013 | [Add onAfterSize event to get component size](http://tracker.zkoss.org/browse/ZK-1672) |
-
-

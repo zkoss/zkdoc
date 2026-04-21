@@ -191,7 +191,6 @@ javax.servlet.http.HttpSession object to track client's session. ZK's
 - Get current ZK session:
   [Sessions.getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Sessions#getCurrent-boolean-).
 
-
 - Get current HttpSession:
   [Sessions.getCurrent().getNativeSession()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session#getNativeSession--)
 

@@ -36,7 +36,6 @@ The implementation relies on these widget methods (from [`zk.Widget`](https://ww
 - [`$n()`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#_n) - Get the root DOM element of the widget
 - [`$supers(className, methodName, arguments)`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#_supers) - Call parent class method
 
-
 ## Step 2: Override `bind_()` and Register Event Listeners
 
 Override the `bind_()` method to register DOM event listeners. This is where you attach event listeners to handle user interactions.
@@ -56,7 +55,6 @@ bind_: function() {
 - Always call `this.$supers('bind_', arguments)` first to allow parent classes to bind properly
 - Use `this.$n()` to get the root DOM element of your widget
 - `domListen_(element, event, callback)` registers a listener that calls your callback method
-
 
 ## Step 3: Implement Event Handler Callbacks
 
@@ -86,7 +84,6 @@ doClear: function(evt) {
 - The event data is sent to the server-side component
 
 For more details on firing events, see [Registering Appropriate Listeners](registering_appropriate_listeners.md).
-
 
 ## Step 4: Override `unbind_()` and Clean Up Listeners
 
@@ -144,7 +141,6 @@ mycomponent.true = zk.$extends(zul.Widget, {
     }
 });
 ```
-
 
 ## Related Documentation
 

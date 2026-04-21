@@ -3,6 +3,7 @@ title: "renderer-class"
 ---
 
 **Syntax:**
+
 ```xml
 <renderer-class>a_class</renderer-class>
 ```
@@ -18,5 +19,3 @@ Example,
 ```xml
 <renderer-class>org.zkoss.zul.impl.PageRenderer</renderer-class>
 ```
-
-

@@ -2,8 +2,6 @@
 title: "The Difference Between XUL and XHTML Components"
 ---
 
-
-
 All XHTML components are derived from
 [org.zkoss.zhtml.impl.AbstractTag](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/impl/AbstractTag.html).
 
@@ -24,5 +22,3 @@ in several ways.
 **Notice that** the HTML component set is one of the approaches to use
 HTML tags directly in a ZUML document. In most cases, it is not the best
 approach. For information please refer to [ZK Developer's Reference: HTML tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags).
-
-

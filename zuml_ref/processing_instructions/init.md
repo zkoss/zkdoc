@@ -2,9 +2,8 @@
 title: "init"
 ---
 
-
-
 **Syntax:**
+
 ```xml
 <?init class="..." [arg0="..."] [arg1="..."] [arg2="..."] [arg3="..."]?>
 <?init zscript="..."?>
@@ -80,5 +79,3 @@ You could specify any number of arguments. It will be passed to the
 `doInit` method if the first format is used. Since 3.6.2, you can use
 any name for the arguments, but, in the prior version, the first
 argument must be named as `arg0`, the second is `arg1` and so on.
-
-

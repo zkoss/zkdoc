@@ -14,7 +14,6 @@ title: "Calendar"
 | Enter / Spacebar | Select the date. |
 | PageUp / PageDown | {% include supported-since.html version="10.0.0" %} Navigate the month. |
 | Shift+PageUp / Shift+PageDown | {% include supported-since.html version="10.0.0" %} Navigate the year. |
-
 ## Calendar Day AriaLabel Renderer
 
 This is achieved by overriding the default renderer at the client to

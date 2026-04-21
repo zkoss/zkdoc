@@ -1,7 +1,4 @@
 
-
-
-
 # Stroke
 
 **All components that inherit `HtmlBasedComponent` supports this
@@ -40,5 +37,3 @@ component.as(KeyStrokeAgent.class).stroke("$#left");
 </tr>
 </tbody>
 </table>
-
- 

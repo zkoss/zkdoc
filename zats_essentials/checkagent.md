@@ -1,7 +1,4 @@
 
-
-
-
 # Check
 
 To check a <b>*checkbox* , *radiogroup*, or *menuitem*</b>.
@@ -38,5 +35,3 @@ desktopAgent.query("#chechbox" + i).as(CheckAgent.class).check(false);
 </tr>
 </tbody>
 </table>
-
- 

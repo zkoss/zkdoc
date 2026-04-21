@@ -1,5 +1,4 @@
 
-
 # What is Archetype
 
 [Maven archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html)

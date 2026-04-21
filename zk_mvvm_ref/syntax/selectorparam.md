@@ -33,6 +33,7 @@ If the parameter type is a Collection, binder passes the result directly. Otherw
 {% include supported-since.html version="9.5.0" %}
 
 The value can be omitted if name is the same as the annotated parameter.
+
 ```java
 @SelectorParam String tagName
 ```
@@ -52,6 +53,7 @@ The value can be omitted if name is the same as the annotated parameter.
 ```
 
 #### Example to pass components by selector
+
 ```java
 public class SelectorParamVM {
 

@@ -59,7 +59,6 @@ what happens. These attributes are as follows.
 | javax.servlet.error.request_uri                                        | java.lang.String                      |
 | javax.servlet.error.servlet_name                                       | java.lang.String                      |
 | {% include supported-since.html version="10.2.0" %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> |
-
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`
 
@@ -99,7 +98,6 @@ public class ErrorHandlingComposer extends SelectorComposer<Component> {
     }
 }
 ```
-
 
 ## Error Handling when the Client Engine crashes
 
@@ -184,7 +182,6 @@ error page to describe what happens. These attributes are as follows:
 | javax.servlet.error.status_code                                        | java.lang.Integer                     | 500                                                              |
 | javax.servlet.error.error_page                                         | java.lang.String                      | the error handling page URL configured in zk.xml                 |
 | {% include supported-since.html version="10.2.0" %} javax.servlet.error.exception_list | java.util.List\<java.lang.Throwable\> | a list containing all thrown error objects                       |
-
 - If you run with Jakarta EE, need to replace **javax** with **jakarta**
   in those attribute names e.g. `jakarta.servlet.error.status_code`
 

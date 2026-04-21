@@ -19,5 +19,3 @@ Example,
 ```xml
 <language-name>xul/html</language-name>
 ```
-
-

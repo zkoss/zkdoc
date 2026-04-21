@@ -2,8 +2,6 @@
 title: "The Format of Properties Files"
 ---
 
-
-
 In this section, we will discuss the format of a properties file, such
 as `zk-label.properties`.
 
@@ -24,7 +22,6 @@ you want to use a different encoding, please refer to [the Use Encoding Other Th
 A properties file is usually used to contain the internationalization
 labels of an application, but technically you could use it in any
 situation you'd like[^1].
-
 
 # Specify a Value with Multiple Lines
 
@@ -155,7 +152,6 @@ references to a request's parameter:
 message=Thank ${param.user} for using
 ```
 
-
 # Use Encoding Other Than UTF-8
 
 By default, the encoding of properties files is assumed to be `UTF-8`.
@@ -170,7 +166,6 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 | Version | Date     | Content                                                                                                                      |
 |---------|----------|------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | Mar 2011 | labels implicit object was introduced to access properties without declaring taglib. Also allows label keys of a.b.c format. |
-
 [^1]: If it is used for internationalization labels, it will be loaded
     automatically. If you want to use it in other situations, you have
     to invoke

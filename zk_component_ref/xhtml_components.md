@@ -2,8 +2,6 @@
 title: "XHTML Components"
 ---
 
-
-
 This section describes how to use the [XHTML component set](/zuml_ref/xhtml) (i.e., XHTML
 components). XHTML components are in a different component set than [ZUL components](/zuml_ref/zul). You have to
 [specify XML namespace](/zuml_ref/languages) to

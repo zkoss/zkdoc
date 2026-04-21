@@ -43,7 +43,6 @@ in this page are not matching what you are using.
     tab.  
     ![chose_MySQL_DBVer](images/004_chose_mysql_dbver.png)  
       
-
 Switch to *Jar List* tab, click **Clear All**
 to clear the default false jar file location.  
 ![clear_redundant_Jar](images/005_clear_redundant_jar.png)  
@@ -68,6 +67,7 @@ square brackets (`[]`) being optional:
 If the hostname is not specified, it defaults to 127.0.0.1. If the port
 is not specified, it defaults to 3306, the default port number for MySQL
 servers. In above image the database name is **`test`**
+
 ```text
     jdbc:mysql://localhost:3306/test
 ```
@@ -93,7 +93,6 @@ close the setup wizard window, And you should be able to see there's a
 Database icon in the Database Connections folder.  
 ![MySQL_DB_shown_in_DataSourceExplorer](images/011_mysql_db_shown_in_datasourceexplorer.png)  
   
-
 # Note
 
 1.  Firewall of the System that install Database or security setting of

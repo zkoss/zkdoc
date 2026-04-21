@@ -2,7 +2,6 @@
 title: "Step"
 ---
 
-
 - Demonstration: \[<https://www.zkoss.org/zkdemo/menu/stepbar>\| Step\]
 - Java API: [org.zkoss.zkmax.zul.Step](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Step.html)
 - JavaScript API: [zkmax.wgt.Step](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Step.html)
@@ -81,14 +80,8 @@ Set the title (label) of each step. (Default: empty)
 
 `* None`
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                          |
 |---------|----------------|----------------------------------------------------------------------------------|
 | 9.0.0   | November, 2019 | [ZK-4375](https://tracker.zkoss.org/browse/ZK-4375): Provide a stepbar component |
-
-

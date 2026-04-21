@@ -1,5 +1,4 @@
 
-
 # Understanding ZK cache breaking by URL
 
 ZK applications rely on a number of resource files loaded by a browser.
@@ -31,11 +30,9 @@ folder will be delivered to browsers through the same URL patterns as
 the internal ZK resources. This can apply to resources declared globally
 in `lang-addon`, or locally in a page with a script or style tag.
 
-
 # Forcing Cache Clearing for Non-ZK Resources
 
 Browsers may cache resources referenced in your application, and updates to those resources might not be reflected without a cache-clearing mechanism. To address this, ZK provides the following ways to force cache clearing by updating resource URLs with built-in hashed values.
-
 
 ## 1. Use the `versionInfo` Property in `zk.xml`
 
@@ -44,6 +41,7 @@ Specify a custom string for the `org.zkoss.zk.ui.versionInfo.enabled` library pr
 ### Steps:
 1. Open your `zk.xml` file.
 2. Add or update the following property:
+
 ```xml
    <library-property>
        <name>org.zkoss.zk.ui.versionInfo.enabled</name>
@@ -54,7 +52,6 @@ Specify a custom string for the `org.zkoss.zk.ui.versionInfo.enabled` library pr
 
 More information is available here:
 [org.zkoss.zk.ui.versionInfo.enabled]({{site.baseurl}}/zk_config_ref/org_zkoss_zk_ui_versioninfo_enabled)
-
 
 ## 2. Create a Custom WebApp Class
 Override the default `SimpleWebApp` class and implement a custom `getBuild()` method. This ensures unique build values for resource URLs.

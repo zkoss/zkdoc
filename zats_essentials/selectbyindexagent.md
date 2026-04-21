@@ -1,7 +1,4 @@
 
-
-
-
 # Select by Index
 
 Unlike other data components (such as *listbox* or *grid*), *selectbox*
@@ -38,5 +35,3 @@ selectbox.as(SelectByIndexAgent.class).select(3);
 </tr>
 </tbody>
 </table>
-
- 

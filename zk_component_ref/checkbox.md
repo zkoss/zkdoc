@@ -2,11 +2,9 @@
 title: "Checkbox"
 ---
 
-
 - Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
 - Java API: [org.zkoss.zul.Checkbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Checkbox.html)
 - JavaScript API: [zul.wgt.Checkbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Checkbox.html)
-
 
 # Employment/Purpose
 
@@ -133,12 +131,8 @@ Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
 | `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. |
 | `onBlur` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. |
 | onCheck | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a component is checked or unchecked. |
-
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*None`
-
-
-

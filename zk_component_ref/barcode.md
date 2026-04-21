@@ -2,7 +2,6 @@
 title: "Barcode"
 ---
 
-
 - Demonstration:
   [Barcode](https://blog.zkoss.org/2018/09/05/8-6-preview-barcode-and-barcodescanner/)
 - Java API: [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html)
@@ -170,19 +169,12 @@ WEB-INF/lang-addon.xml
 | 1D MSI Family | MSI, MSI10, MSI11, MSI1010, MSI1110, |
 | 1D Others | UPC, ITF14,ITF, PHARMACODE, CODABAR |
 | 2D | QR |
-
 # Supported Children
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date        | Content                                            |
 |---------|-------------|----------------------------------------------------|
 | 8.6.0   | Apirl, 2018 | [org.zkoss.zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/barcode/Barcode.html) |
-
-

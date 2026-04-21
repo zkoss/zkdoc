@@ -27,8 +27,6 @@ can be any kind of component.
 | Tooltips[^1]  | When the user moves the mouse point over the target component for a while | [org.zkoss.zul.impl.XulElement#setTooltip(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setTooltip(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setTooltip(org.zkoss.zul.Popup)) |
 | Context Menus | When the user clicks the *right* button on the target component           | [org.zkoss.zul.impl.XulElement#setContext(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setContext(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setContext(org.zkoss.zul.Popup)) |
 | Popups        | When the user clicks the *left* button on the target component            | [org.zkoss.zul.impl.XulElement#setPopup(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(java.lang.String)) or [org.zkoss.zul.impl.XulElement#setPopup(org.zkoss.zul.Popup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html#setPopup(org.zkoss.zul.Popup))     |
-
-
 # Tooltips
 
 To provide a custom tooltip, you could specify the ID of the custom
@@ -266,7 +264,6 @@ For more information, please refer to [Safari Developer Library](http://develope
 |---------|----------------|-----------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | May 2011       | Context Menus supported with iOS                                                                                |
 | 9.5.0   | September 2020 | [ZK-4551](https://tracker.zkoss.org/browse/ZK-4551): Support ref override for position of Popup/Tooltip/Context |
-
 [^1]: Notice that if you'd like to have different text for the tooltip
     (rather than a fully customized look), you shall use
     [org.zkoss.zk.ui.HtmlBasedComponent#setTooltiptext(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setTooltiptext(java.lang.String))

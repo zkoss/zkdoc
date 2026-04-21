@@ -469,8 +469,6 @@ All source code used in this chapter can be found
 
 # Reference
 
-
-
 [^1]: [Unit of Work in Hibernate EntityManager User Guide](http://docs.jboss.org/hibernate/entitymanager/3.6/reference/en/html_single/#transactions-basics-uow)
 
 [^2]: The reason is explained in a [Hibernate article "Open Session in View"](https://community.jboss.org/wiki/OpenSessionInView#Why_cant_Hibernate_just_load_objects_on_demand)

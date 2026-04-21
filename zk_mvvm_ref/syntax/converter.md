@@ -27,11 +27,13 @@ It could be any name. It's used as a key for parameter related Java annotation i
 # Example
 
 #### Use built-in converter named formatedNumber
+
 ```xml
 <label value="@load(item.price) @converter('formatedNumber', format='###,##0.00')"/>
 ```
 
 #### Use custom converter
+
 ```xml
 <label value="@load(vm.selected.totalPrice) @converter(vm.totalPriceConverter)"/>
 ```

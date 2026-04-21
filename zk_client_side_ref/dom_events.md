@@ -2,8 +2,6 @@
 title: "DOM Events"
 ---
 
-
-
 A DOM event ([jq.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/jq.Event.html)) is the
 DOM-level event that is usually triggered by the browser. It is usually
 listened by the implementation of a widget, rather than the client
@@ -81,5 +79,3 @@ where we use
 to proxy a function such that `this` will refer to the widget when the
 method is called. Also notice that the event name used with jQuery does
 not start with `on`.
-
-

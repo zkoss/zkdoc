@@ -2,12 +2,10 @@
 title: "Image"
 ---
 
-
 - Demonstration:
   [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)
 - Java API: [org.zkoss.zul.Image](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Image.html)
 - JavaScript API: [zul.wgt.Image](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Image.html)
-
 
 # Employment/Purpose
 
@@ -177,14 +175,8 @@ For example,
 
 `*None`
 
-
-
 # Version History
-
-
 
 | Version | Date           | Content                                                                                                          |
 |---------|----------------|------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | September 2011 | [A way to pre-load images since many UIs depend on the size of an image](http://tracker.zkoss.org/browse/ZK-314) |
-
-

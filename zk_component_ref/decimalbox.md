@@ -2,13 +2,11 @@
 title: "Decimalbox"
 ---
 
-
 - Demonstration:
   [Decimalbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Decimalbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Decimalbox.html)
 - JavaScript API:
   [zul.inp.Decimalbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Decimalbox.html)
-
 
 # Employment/Purpose
 
@@ -96,4 +94,3 @@ for inherited functions.
 # Supported Children
 
 `*NONE`
-

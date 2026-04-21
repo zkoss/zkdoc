@@ -2,7 +2,6 @@
 title: "Camera"
 ---
 
-
 - Java API: [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
 - JavaScript API: [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
 
@@ -259,7 +258,6 @@ css classes like the following:
 | `onLengthLimitExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded length exceeds the max length. |
 | `onStateChange` | **Event:** [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies when invoking start(), stop(), pause() or resume(). |
 | `onCameraUnavailable` | **Event:** [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if camera is unavailable after requesting media devices from user. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
@@ -267,5 +265,3 @@ css classes like the following:
 `NONE`
 
 # Version History
-
-

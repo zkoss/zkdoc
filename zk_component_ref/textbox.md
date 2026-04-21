@@ -2,12 +2,10 @@
 title: "Textbox"
 ---
 
-
 - Demonstration:
   [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
 - Java API: [org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html)
 - JavaScript API: [zul.inp.Textbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Textbox.html)
-
 
 # Employment/Purpose
 
@@ -125,5 +123,3 @@ for inherited functions, such as in-place edition.
 | Browser | description  |
 |---|-------------------|
 | IE | There is no way to change the text color in a disabled input in IE. |
-
-

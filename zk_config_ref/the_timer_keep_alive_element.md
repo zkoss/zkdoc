@@ -10,7 +10,6 @@ title: "The timer-keep-alive Element"
 
 `[Default: false]`
 
-
 It specifies whether to keep the session alive, when receiving the
 `onTimer` event.
 
@@ -87,5 +86,3 @@ public class DoesNothingTimer implements Composer {
     }
 }
 ```
-
-

@@ -19,5 +19,3 @@ applications to modify the client dynamically (at the server). If you
 don't need it (it is generally true), you should use the [Native namespace](/zuml_ref/native) instead.
 For more information, please refer to [HTML Tags]({{site.baseurl}}/zk_dev_ref/ui_patterns/html_tags) and
 [Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/use_native_namespace_instead_of_xhtml_namespace).
-
-

@@ -2,7 +2,6 @@
 title: "Rating"
 ---
 
-
 - Java API: [org.zkoss.zul.Rating](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rating.html)
 - JavaScript API: [zul.wgt.Rating](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Rating.html)
 
@@ -96,7 +95,6 @@ have an initial rating.)
 | Name | Event Type |
 |---|---|
 | `onChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has rated. |
-
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

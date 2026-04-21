@@ -33,6 +33,7 @@ public class FooViewModel {
 Wire from Variable Resolver
 ---------------------------
 First, you should register variable resolvers. There are two approaches to register a variable resolver: the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation or [the variable-resolver directive]({{site.baseurl}}/zuml_ref/variable_resolver). Here is the example of registering variable resolvers with annotations.
+
 ```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooViewModel {
@@ -40,6 +41,7 @@ public class FooViewModel {
 }
 ```
 Then annotate fields or methods with the [WireVariable](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/WireVariable.html) annotation. For example,
+
 ```java
 @VariableResolver({foo1.MyResolver.class, foo2.AnotherResolver.class})
 public class FooViewModel {
@@ -56,6 +58,7 @@ public class FooViewModel {
 Wire Spring-managed Beans
 -------------------------
 If you'd like to wire the Spring-managed beans, you usually register the Spring variable resolver, [DelegatingVariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkplus/spring/DelegatingVariableResolver.html). Then, you could annotate `@WireVariable` for wiring a Spring managed bean. For example,
+
 ```java
 @VariableResolver(org.zkoss.zkplus.spring.DelegatingVariableResolver.class)
 public class PasswordViewModel {
@@ -79,6 +82,7 @@ public class UserViewModel {
 }
 ```
 Then, you could bind it in the ZUL document. For example,
+
 ```xml
 <grid model="@load(vm.users)">
 ```
@@ -95,5 +99,3 @@ When wiring variables, the predefined sequence to look for variable resolvers is
 1.  The variable resolver defined in the ZUML document.
 2.  The variable resolver annotated registered in the class with the [VariableResolver](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/select/annotation/VariableResolver.html) annotation.
 3.  If none of above is found, it looks for [the implicit objects]({{site.baseurl}}/zuml_ref/implicit_objects__predefinedvariables_), such as session and page.
-
-

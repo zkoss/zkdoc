@@ -135,4 +135,3 @@ The above configuration will print messages on the server's console, and it is s
 ![Binding tracker introduction]({{site.baseurl}}/zk_mvvm_ref/images/binding_tracker_introduction.png)
 
 For more details, please refer to [Small\_Talks/2013/June/ZK\_Binding\_Tracker\_-\_A\_Chrome\_Extension](http://books.zkoss.org/wiki/Small_Talks/2013/June/ZK_Binding_Tracker_-_A_Chrome_Extension).
-

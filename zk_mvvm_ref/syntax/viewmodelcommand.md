@@ -1,6 +1,7 @@
 # @Command
 
 # Syntax
+
 ```java
 @Command()
 
@@ -20,6 +21,7 @@ We can also use parameter related annotations on initial method's parameters; pl
 
 # Example
 #### Method name as command name
+
 ```java
 @Command
 public void search() {
@@ -29,6 +31,7 @@ public void search() {
 }
 ```
 #### Specify command name
+
 ```java
 @Command("delete")
 public void deleteOrder() {

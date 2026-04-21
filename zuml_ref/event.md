@@ -15,5 +15,3 @@ The current event. It is available for the event listener only.
  }
 </zscript>
 ```
-
-

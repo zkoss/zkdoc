@@ -2,8 +2,6 @@
 title: "Data Binding"
 ---
 
-
-
 Data binding synchronizes data between View and ViewModel according to
 component definition's annotation. The annotation specifies when to save
 (or load) which attribute, how to convert, validate and render the data.
@@ -29,7 +27,6 @@ Here is the attribute list used in lang-addon.xml:
 | SAVE_REPLACEMENT | The replacement attribute for saving. It's used when there is a issue to save to original attribute.; e.g. selectedItem of selectbox, it save the value selecteIndex via converter to the bean. (selectedItem is not existed in selectbox). |
 | RENDERER | A special renderer for binding |
 |  |  |
-
 # Example
 
 Let's take a look at some examples.
@@ -133,6 +130,3 @@ Let's take a look at some examples.
   "selectedIndex". (line 27,28) Because those 2 attributes have
   different type, we have to use a converter, [org.zkoss.bind.converter.sys.SelectboxSelectedItemConverter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/bind/converter/sys/SelectboxSelectedItemConverter.html)
   to convert selectedItem. (line 31,32)
-
-
-

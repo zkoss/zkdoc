@@ -8,11 +8,13 @@ which is described in the section [ZK Developer's Reference/UIComposing/ZUML/EL 
 Basic Format
 ------------
 [ All ZK bind annotation](../syntax/data_binding) has the general format:
+
 ```xml
 @[Annotation](value=[el-expression], [arbitrarykey]=[el-expression])
 ```
 It starts from a "@" symbol followed by an annotation's name like “id” or “bind”. Inside parentheses we can write multiple **key-value pairs** separated with a comma. The key is a self-defined name (not an EL
 expression), and it's like a key in a Map. The value is an EL expression but is **not enclosed with "${" and "}"**. The default key name is **“value”**. If you only write a EL expression without specifying its key name, it's implicit set to key named “value”. Hence we usually omit this default key name when writing ZK bind annotation. In most case, we can just write a annotation as follows:
+
 ```xml
 @[Annotation]([el-expression])
 ```
@@ -25,6 +27,7 @@ Run-time Evaluation
 A binder usually evaluates an EL expression each time when it wants to access the target object. Hence The evaluation result might be different from time to time.
 
 ### Command binding according to run-time value
+
 ```xml
 <button label="Cmd" onClick="@command(vm.checked ? 'command1' : 'command2')" />
 
@@ -33,6 +36,7 @@ A binder usually evaluates an EL expression each time when it wants to access th
 * When clicking the button, the binder executes a command upon value of “vm.checked”.
 
 ### Indirect reference
+
 ```xml
 <label value="@bind(vm.person[vm.currentField])"/>
 ```
@@ -42,6 +46,7 @@ Call ViewModel Methods
 ----------------------
 You can use EL expression to call a method in a ViewModel.
 ### Call concat() of a ViewModel
+
 ```xml
 <label value="@load(vm.concat(vm.foo, 'postfix'))"/>
 ```
@@ -49,6 +54,7 @@ You can use EL expression to call a method in a ViewModel.
 Call Tag Library's Methods
 --------------------------
 We could call [tag library's methods in a zul with EL expression]({{site.baseurl}}/zuml_ref/taglib) equally, we can also call them in a data binding expression and this calling can be nested. The syntax is as follows:
+
 ```xml
 <?taglib uri="http://www.zkoss.org/dsp/web/core" prefix="c"?>
 ...
@@ -62,6 +68,7 @@ We could call [tag library's methods in a zul with EL expression]({{site.baseurl
 Call Xel Methods
 ----------------------
 The [xel method]({{site.baseurl}}/zuml_ref/xel_method) allows developers to call a Java class's static method in EL expression without defining a tag library. You can also use this feature in data binding expression
+
 ```xml
 <?xel-method prefix="x" name="max"
     class="java.lang.Math"
@@ -86,6 +93,7 @@ Some EL characters are illegal in XML attribute or ZK annotation, you should rep
 | > | gt |
 | >= | ge |
 For example:
+
 ```xml
 <image src="@load(vm.picture ne null ? 'images/'.concat(vm.picture) : 'images/NoImage.png')"/>
 
@@ -97,13 +105,11 @@ Since ZK 8, data binding supports some syntaxes of Java EE 7 Expression Language
 
 ## String Concatenation: `+=`
 
-
 ```xml
 <label value="@load(('Hi, ' += vm.firstname += ' ' += vm.lastname))" />
 ```
 
 Remember to enclose string concatenation with **2 extra parentheses**.
-
 
 ## Assignment and Semicolon operators
 
@@ -111,7 +117,6 @@ Remember to enclose string concatenation with **2 extra parentheses**.
 <label value="@load((“increase” = x -> x + 1; “increase”(5)))" />
 ```
 It will create a new bean “increase” for the function and show 6 as label’s value.
-
 
 ## Lambda Expressions
 A converter can be implemented with a lambda expression defined in zul. Take conversion from meter to inch as an example,
@@ -143,7 +148,6 @@ We can also create a list by collection construction,
 <label value="@load(([1, 2, 3, 4].stream().sum()))" />
 ```
 The label will show 10 as the result.
-
 
 ## Static Field and Method References
 

@@ -2,7 +2,6 @@
 title: "Navitem"
 ---
 
-
 - Demonstration:
 - Java API:
   [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html)
@@ -116,21 +115,14 @@ present more details of `Navitem`.
 | Name | Event Type |
 |---|---|
 |  |  |
-
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*NONE`
 
-
-
 # Version History
-
-
 
 | Version | Date         | Content                                                                                            |
 |---------|--------------|----------------------------------------------------------------------------------------------------|
 | 7.0.0   | August, 2013 | [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html) was introduced. |
-
-

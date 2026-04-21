@@ -9,11 +9,11 @@ You can even mix these two ways. For example, create a simple page with zul, the
 
 In addition to above ways,  [richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) allows you to compose the whole page in Java programmatically.
 
-
 # Write a ZUL File
 To create components in ZUML, you need to create a file with the file extension "**.zul**". In zul files, an XML element(tag) represent one component, and you can configure each component's style, behavior, and function by setting the element's attributes. Please refer to [ZK Component Reference](https://books.zkoss.org/wiki/ZK_Component_Reference) and [Javadoc](http://zkoss.org/javadoc/latest/zk/) for complete component attributes.
 
 A very simple, classic zul example is like:
+
 ```xml
 <zk>
 	<label value="hello &#xA;world"/>
@@ -37,7 +37,6 @@ If you use [Eclipse](https://www.eclipse.org/), we encourage you to install our 
 
 ### IntelliJ IDEA
 If you prefer [IntelliJ IDEA](https://www.jetbrains.com/idea/?fromMenu) as I do, we also develop a [ZK plugin](https://plugins.jetbrains.com/plugin/7855-zk), it supports content assist, word completion, and data binding syntax assist, too.
-
 
 # Build Application Layout
 Now, let's built our example application's main layout. create a new text file with name `index.zul`, and type the following content:
@@ -87,7 +86,6 @@ Now, let's built our example application's main layout. create a new text file w
 Then, you can view the result from your browser as below:
 
 ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch3-layout.png)
-
 
 # Construct User Interface with Components
 

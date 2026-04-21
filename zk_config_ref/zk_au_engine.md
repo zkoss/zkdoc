@@ -2,7 +2,6 @@
 title: "Websocket"
 ---
 
-
 # WebSocket
 {% include supported-since.html version="8.5.0" %}
 By default, ZK communicates with a server in

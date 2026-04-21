@@ -24,7 +24,6 @@ alert('xss')
 </script>
 ```
 
-
 ```xml
 <textbox value="${any_value}"/>
 ```

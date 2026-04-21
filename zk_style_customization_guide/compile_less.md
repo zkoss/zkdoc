@@ -223,7 +223,6 @@ npm install -g less
 
 - Project structure and use LESS directly in zul page.
 
-  
 Remember to put all your LESS files and import resources under
 **webapp/less** which is the folder specified in web.xml
 
@@ -252,5 +251,3 @@ zkMavenWebProject - src/main/webapp
 
 - Now you can modify LESS and see the result by refreshing your browser
   page.
-
-

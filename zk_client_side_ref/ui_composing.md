@@ -33,7 +33,6 @@ Here we describe how to compose UI in JavaScript at the client-side.
 - For developing a component, please refer to the [Component Development]({{site.baseurl}}/zk_client_side_ref/component_development)
   section.
 
-
 # Modify Widget's State at Client
 
 While the states of a widget are maintained automatically if you update
@@ -170,7 +169,6 @@ if (widget.$instanceof(zul.sel.Treeitem)){
 }
 ```
 
-
 # Instantiate Widget at Client
 
 A widget has to be created to make a component visible at the client
@@ -241,7 +239,6 @@ attached yet). For example,
 
 where we use the [native namespace]({{site.baseurl}}/zuml_ref/native) to create a
 DOM element and then replace it with the label widget.
-
 
 ## Load Required JavaScript Widget File
 

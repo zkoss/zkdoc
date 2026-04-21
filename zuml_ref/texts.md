@@ -53,7 +53,6 @@ property's value.
 | script | content | [org.zkoss.zul.Script#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Script.html#setContent(java.lang.String)) |
 | style | content | [org.zkoss.zul.Style#setContent(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Style.html#setContent(java.lang.String)) |
 | tab | label | [org.zkoss.zul.Tab#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#setLabel(java.lang.String)) (since 5.0.7)<br><br>**Note:** Since 6.5.0, please use [org.zkoss.zul.Tab#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tab.html#setLabel(java.lang.String)) instead |
-
 ## The nested XML content
 
 {% include supported-since.html version="6.0.0" %}

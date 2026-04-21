@@ -38,5 +38,3 @@ zk.xml
 
 Refer to [The server-push-class Element]({{site.baseurl}}/zk_config_ref/the_server_push_class_element)
 and [Server Push Configuration]({{site.baseurl}}/zk_dev_ref/server_push/configuration)
-
-

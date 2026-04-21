@@ -147,7 +147,6 @@ the calendar item's main Node with the contentColor attribute, and the
 header's node with the headerColor attribute. These are deprecated after
 3.1.0, and should be replaced by style attributes.
 
-
 # Customizing Calendar Item Rendering Logic
 {% include supported-since.html version="3.2.0" %} 
 This section covers how to programmatically customize the rendering logic of calendar items, which is different from the CSS styling approach covered in the previous section. While CSS styling changes the appearance through stylesheets, rendering logic customization allows you to modify the actual content and structure of calendar items at the JavaScript widget level.
@@ -162,6 +161,7 @@ Use rendering logic customization when you need to:
 The ZK Calendar uses different JavaScript widget types depending on the mold and item duration:
 
 Their class diagram:
+
 ```classDiagram
 zk.Widget <|-- calendar.Item
 calendar.Item <|-- calendar.DayItem

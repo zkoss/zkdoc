@@ -3,6 +3,7 @@ title: "script"
 ---
 
 **Syntax:**
+
 ```xml
 <?script [type="text/javascript"] [src="''uri''"] [charset="''encoding''"]
   [content="''javascript snippet''"] [if="..."] [unless="..."]?>
