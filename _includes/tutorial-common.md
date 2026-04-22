@@ -8,6 +8,10 @@ Our target application is a simple car catalog application. This application has
 ![]({{site.baseurl}}/get_started/images/Tutorial-searchexample.png)
 
 
+# Run Application Online
+To practice creating the application, you can use [ZKFiddle](https://zkfiddle.org/). Simply copy the code snippets from this tutorial and run the application directly in your browser.
+
+
 # Start from Example Project
 
 You can get [the source code of this article](https://github.com/zkoss-demo/gettingStarted/) and import it to
