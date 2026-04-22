@@ -18,6 +18,7 @@ working with.
 | Internet Explorer 8 , 9, 10, 11, Edge | Developer Tools It is built-in and you could start it by pressing **F12**.                                                                                      |
 | Internet Explorer 7                   | Microsoft script debugger , fiddler2(network inspection) ,there's another choice is to use Develope Tool in IE8 with IE7 compatible mode                        |
 | Internet Explorer 6                   | Microsoft script debugger , fiddler2(network inspection)                                                                                                        |
+
 # Turn Off Compression and Cache
 
 By default, the JavaScript files (ZK packages) will be compressed and

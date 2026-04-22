@@ -98,6 +98,7 @@ Once set, descendant components unless it was set explicitly.
 | Version | Date          | Content                                                                                          |
 |---------|---------------|--------------------------------------------------------------------------------------------------|
 | 5.0.6   | January, 2011 | The attribute called `org.zkoss.zk.ui.stub.native` was introduced to disable the *stub-ization*. |
+
 [^1]: In fact, it will still create some components for the rerender
     purpose, such as
     [org.zkoss.zk.ui.Component#invalidate()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#invalidate()).

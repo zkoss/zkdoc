@@ -231,6 +231,7 @@ The server provides the following configurable settings:
 | `ZK_MCP_FEEDBACK_ENABLED`        | `true`                               | Enable feedback collection for search improvements                  |
 | `ZK_MCP_FEEDBACK_RETENTION_DAYS` | `90`                                 | Days to retain local feedback files                                 |
 | `ZK_MCP_FEEDBACK_GITHUB_REPO`    | `zkoss/zkdoc`                        | GitHub repository for feedback issues (built-in)                    |
+
 ### Example Usages
 
 #### Example: Using SSH for Git Clone

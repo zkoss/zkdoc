@@ -94,6 +94,7 @@ preserved.
 | false | true | any | New lines are preserved. |
 | false | false | positive | The label only show its value up to the length of "maxlength". |
 | false | false | 0 | The label is displayed regularly. |
+
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
 ```xml
@@ -123,6 +124,7 @@ This displaying rule is slightly different in ZK3.
 | true | any | positive | If the length of a line exceeds `maxlength`, the line is hyphenated. |
 | false | true | any | `maxlength` is ignored. |
 | any | any | 0 | `hyphen` is ignored. |
+
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK3.png)
 
 ```xml

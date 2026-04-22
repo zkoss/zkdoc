@@ -17,6 +17,7 @@ title: "Menubar"
 | Enter | Activate the menu item / Open the menu popup |
 | Spacebar | Activate the menu item / Open the menu popup<br/> Toggle the checkbox without closing the menupopup (only apply to <b>autocheck</b> enabled) |
 | Escape | Close all existing menu popups even if you open multiple ones |
+
 ## Limitations
 
 | Feature | Description |

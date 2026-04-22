@@ -48,6 +48,7 @@ other variables from [ here](/zk_style_customization_guide/zk_less_variables).
 | @buttonBorderColor   | \#A9A9A9      |
 | @buttonGradientStart | \#FEFEFE      |
 | @buttonGradientEnd   | \#EEEEEE      |
+
 # Customize Sample
 
 ## Target Design

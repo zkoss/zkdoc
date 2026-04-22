@@ -110,6 +110,7 @@ Use SLF4J API for logging instead.
 | INFO | Indicates providing informational messages. It also implies ERROR and WARNING. |
 | DEBUG \| FINE | Indicates providing tracing information for debugging purpose. It also implies ERROR, WARNING and INFO. |
 | FINER | Indicates providing fairly detailed tracing information for debugging purpose. It also implies ERROR, WARNING, INFO and DEBUG |
+
 ### Specify the handler for Jetty and servers that don't turn on the standard logger
 
 {% include RemovedSince.html version=10.0.0 %}
@@ -236,4 +237,5 @@ The typical use is as follows.
 | Version | Date          | Content                    |
 |---------|---------------|----------------------------|
 | 6.0.0   | February 2012 | LogService was deprecated. |
+
 [^1]: <https://docs.oracle.com/cd/E19717-01/819-7753/gcbkm/index.html>

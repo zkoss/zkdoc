@@ -128,24 +128,38 @@ function fix(content) {
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
-        const prev = out.length > 0 ? out[out.length - 1] : null;
+        let prevLine = out.length > 0 ? out[out.length - 1] : null;
 
         if (isFenceStart(line)) {
             inFence = !inFence;
             // Ensure blank line before opening fence
-            if (inFence && prev !== null && !isBlank(prev)) {
+            if (inFence && prevLine !== null && !isBlank(prevLine)) {
                 out.push('');
+                prevLine = '';
             }
         }
 
         if (!inFence) {
-            // Remove blank lines inside tables
+            // Remove blank lines inside tables (MediaWiki artifacts)
             if (isBlank(line) && inTable) {
+                const nextLine = i < lines.length - 1 ? lines[i + 1] : null;
+                if (nextLine !== null && isTableRow(nextLine)) {
+                    continue; 
+                }
+            }
+
+            // Collapse 2+ consecutive blank lines to 1
+            if (isBlank(line) && prevLine !== null && isBlank(prevLine)) {
                 continue;
             }
-            // Collapse 2+ consecutive blank lines to 1
-            if (isBlank(line) && prev !== null && isBlank(prev)) {
-                continue;
+
+            // Fix missing blank line after table
+            if (prevLine !== null && !isBlank(prevLine) && !isBlank(line) && !isFenceStart(line)) {
+                if (isTableRow(prevLine) && !isTableRow(line)) {
+                    out.push('');
+                    prevLine = '';
+                    inTable = false;
+                }
             }
 
             if (isTableRow(line)) {

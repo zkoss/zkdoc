@@ -129,6 +129,7 @@ outlines how to accomplish this.
 |---|---|
 |  |  |
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes a Popup has been opened or **closed** (in this case OpenEvent::isOpen() returns false). |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
@@ -142,6 +143,7 @@ outlines how to accomplish this.
 | 3.6     | Smalltalk: Toolbar and Menus                         | [ZK Developer's Reference: Tooltips, Context Menus and Popups]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups)                                               |
 | 3.6     | A way to specify the position of the Popup component | [New Features of ZK 3.6.1](https://www.zkoss.org/wiki/Small_Talks/2009/April/New_Features_of_ZK_3.6.1#A_way_to_specify_the_position_of_the_Popup_component_A_way_to_specify_the_position_of_the_Popup_component) |
 | 3.6     | Popup, tooltip and context positions                 | [New Features of ZK 3.6.3](https://www.zkoss.org/wiki/Small_Talks/2009/November/New_Features_of_ZK_3.6.3#Popup.2C_tooltip_and_context_positions_Popup,_tooltip_and_context_positions)                            |
+
 # Version History
 
 | Version | Date     | Content                   |

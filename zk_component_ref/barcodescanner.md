@@ -255,11 +255,13 @@ and `consistencyThreshold` both 1.
 | 1D EAN Family | EAN, EAN8, |
 | 1D Others | CODABAR, UPC, UPC_E, I2OF5 |
 | 2D | QR |
+
 # Supported Events
 
 | Name | Event Type |
 |---|---|
 | `onDetect` | **Event:** [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the barcode scanner detect a barcode message. |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

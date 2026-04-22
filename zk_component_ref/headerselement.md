@@ -15,6 +15,7 @@ Headers Element serves as a skeletal implementation for headers, acting as the p
 | Name      | Event Type                                     | Description |
 |-----------|------------------------------------------------|-------------|
 | `onColSize` | **Event:** [ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) | The `onColSize` event signifies when a user resizes one of the columns, triggering a `ColSizeEvent` that can be captured and processed within the application logic.|
+
 ## Supported Children
 
 [`HeaderElement`](headerelement): Indicates that the `HeadersElement` can contain one or more header elements within it.

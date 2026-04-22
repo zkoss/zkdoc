@@ -99,6 +99,7 @@ pdfjsLib.version
 | `onRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the loading pdf file is finished rendering. |
 | `onZoom` | **Event:** [org.zkoss.zkex.ui.event.ZoomEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/ZoomEvent.html) Denotes user has changed the zoom level. |
 | `onRotate` | **Event:** [org.zkoss.zkex.ui.event.RotationEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/event/RotationEvent.html) Denotes user has changed the rotation angle. |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

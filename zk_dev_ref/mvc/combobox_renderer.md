@@ -26,6 +26,7 @@ public class MyRenderer implements ComboitemRenderer {
 | Version | Date          | Content                            |
 |---------|---------------|------------------------------------|
 | 6.0.0   | February 2012 | The index argument was introduced. |
+
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).
 

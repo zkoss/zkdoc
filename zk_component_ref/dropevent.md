@@ -27,6 +27,7 @@ Check inherited events
 | Version | Description           | Example Location                               |
 |---------|-----------------------|------------------------------------------------|
 | 5.0     | Fadeout on Drop Event | <http://www.zkoss.org/forum/listComment/11377> |
+
 # Version History
 
 | Version | Date | Content |

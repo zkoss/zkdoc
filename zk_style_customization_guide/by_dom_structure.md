@@ -15,6 +15,7 @@ example, "*z-window-**header***" means header part of window component.
 | Image | Description |
 |-------|-------------|
 | ![](images/Zk-css-dom.PNG) | -**outer**: the exterior of the specified component like splitter in vbox and hbox<br>-**header**: the header content, like grid, tree, listbox, and so on.<br>-**body**: the body content, like grid, tree, listbox, and so on.<br>-**inner**: the interior of the specified component, like slider and tab.<br>-**content**: like window's contentSclass or groupbox's contentSclass<br>-**footer**: describes the footer content, like grid, tree, listbox, and so on.<br>-**noheader**: no header element.<br>-**noborder**: no border element. |
+
 # Orient and Position Elements
 
 The following naming patterns are based on component orientation and

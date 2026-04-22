@@ -15,6 +15,7 @@ EL expressions provide the following operators:
 | Member | . | - Properties of variables are accessed using the . operator and can be nested arbitrarily.<br>- The value of a map can be accessed by using the . operator. |
 | Assignment | = | ssigns a value to a variable. |
 | Semicolon | ; | Evaluates multiple expressions and returns the result of the last one. |
+
 The relative precedence levels of operators, from highest to lowest (left to right), are organized as follows:
 
 | Precedence | Operators | Description |

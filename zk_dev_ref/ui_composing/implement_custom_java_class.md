@@ -233,6 +233,7 @@ Then use the forward event to communicate with other components.
 | Version | Date          | Content                                                                                  |
 |---------|---------------|------------------------------------------------------------------------------------------|
 | 5.0.5   | October, 2010 | [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose()) was introduced. |
+
 [^1]: By default,
     [org.zkoss.zk.ui.HtmlMacroComponent#compose()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlMacroComponent.html#compose())
     is invoked when

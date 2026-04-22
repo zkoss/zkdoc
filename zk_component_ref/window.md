@@ -337,6 +337,7 @@ by separating them with commas (`,`).
 | right | Position the window at the right edge.<br><br>The `left` property is ignored. |
 | top | Position the window at the top.<br><br>The `top` property is ignored. |
 | bottom | Position the window at the bottom.<br><br>The `top` property is ignored. |
+
 ### Based on Viewport
 
 ZK calculates the `position` based on the current
@@ -350,6 +351,7 @@ of the page.
 | Constant | Description |
 |----------|-------------|
 | parent | Position the window relative to the top-left corner of the parent component. See specific details in the [popup section](#popup). If `left` or `top` is also specified, the position will be offset from the top-left corner of the parent component by the same amount.<br><br>This position **cannot** be combined with other positions mentioned in the previous table. |
+
 ## Sizable
 
 If you allow users to resize the window, you can set the `sizable`
@@ -438,6 +440,7 @@ some common tasks.
 | `onMinimize` | **Event:** [org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)<br><br>Denotes user has minimize a component. |
 | `onSize` | **Event:** [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)<br><br>Denotes the panel's size is updated by a user. |
 | `onZIndex` | **Event:** [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)<br><br>Denotes the panel's zindex is updated by a user. |
+
 - [Inherited Supported Events](/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

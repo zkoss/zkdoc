@@ -235,6 +235,7 @@ Check inherited events
 | 6.0.0   | October 2011   | [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html) was introduced to simplify the identification of a button. |
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
+
 [^1]: If you want to make it running under clustering environment, you
     should implement
     [org.zkoss.zk.ui.event.SerializableEventListener](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SerializableEventListener.html).

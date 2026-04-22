@@ -399,6 +399,7 @@ ${c:label('another.key')}
 |---------|--------------|-------------------------------------------------------------------------------------------|
 | 5.0.5   | October 2010 | [org.zkoss.util.resource.LabelLocator2](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/resource/LabelLocator2.html) was introduced. |
 | 5.0.7   | March 2011   | The `labels` object was introduced.                                                       |
+
 [^1]: It is the value returned by
     [org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent()). For
     more information, please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale).

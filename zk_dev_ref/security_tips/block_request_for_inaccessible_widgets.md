@@ -91,6 +91,7 @@ they are disabled/read-only, as follows:
 | Combobox      |
 | Chosenbox     |
 | Selectbox     |
+
 ## Specify Events to Block
 
 If you just want to block particular events, not all events. Then, you

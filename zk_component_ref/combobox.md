@@ -389,6 +389,7 @@ functions.
 | onSelect | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the list selection is changed at the client. |
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement <em>load-on-demand</em>by listening to the `onOpen`event, and creating components when the first time the component is opened. |
 | `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+
 - Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
 # Supported Molds
@@ -400,6 +401,7 @@ zul.jar.
 |---|---------------------------------------------------------|
 | default | ![](/zk_component_ref/images/Combobox_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/Combobox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+
 # Supported Children
 
 `* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/comboitem)

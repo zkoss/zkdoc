@@ -65,6 +65,7 @@ You can also take a look at the ZK's blog about [another approach to SEO in ZK A
 | Version | Date       | Content                                                                                               |
 |---------|------------|-------------------------------------------------------------------------------------------------------|
 | 5.0.7   | April 2011 | [org.zkoss.zk.ui.sys.SEORenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/SEORenderer.html) could be specified as a listener. |
+
 [^1]: The SEO content will be replaced with the content of ZK components
     after the page has been rendered.
 

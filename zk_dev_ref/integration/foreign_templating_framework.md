@@ -243,6 +243,7 @@ please refer to [Event Queues]({{site.baseurl}}/zk_dev_ref/event_handling/event_
 | Version | Date          | Content                                              |
 |---------|---------------|------------------------------------------------------|
 | 5.0.5   | October, 2010 | ZUL page is able to be generated as a HTML fragment. |
+
 [^1]: [Apache Tiles](http://tiles.apache.org/) is a typical templating
     framework and allows developers to assemble UI at both server and
     client.

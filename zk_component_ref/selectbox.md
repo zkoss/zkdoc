@@ -96,6 +96,7 @@ Here is the MVVM way:
 | Name | Event Type |
 |---|---|
 | `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a new item in the selectbox. |
+
 - Inherited Supported Events: [ HtmlBasedComponent](/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children

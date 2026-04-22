@@ -40,6 +40,7 @@ their descriptions.
 | mold-name       | The name of the mold. The default mold is named default.                              |
 | mold-uri        | The URI of the mold                                                                   |
 | css-uri         | The URI of the CSS file for the mold                                                  |
+
 A component may have multiple molds which may or may not have different
 widget classes. To handle this you may specify the **<widget-class>**
 inside **<mold>**. You can specify more than one mold.

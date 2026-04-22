@@ -242,6 +242,7 @@ grouping and non-grouping objects).
 |---------|--------------|--------------------------------------------|
 | 6.0.0   | July 2011    | The template feature was introduced.       |
 | 6.0.0   | January 2012 | The GroupingInfo statement was introduced. |
+
 [^1]: Of course, it can be anything you like. Just make sure it matches
     the EL expressions specified in the template.
 

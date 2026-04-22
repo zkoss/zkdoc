@@ -178,6 +178,7 @@ the key, it will an send onSearch or onSelect event depending on the situation. 
 | `onSearch` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event that indicates users inputting an non-existing value by clicking ENTER or separator. |
 | `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event sent back to the server caused by user's input text. |
 | `onItemClick` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event sent back to the server caused by clicking a selected tag. |
+
 - `onItemClick` : {% include supported-since.html version="8.0.2" %} 
  
 Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
@@ -195,6 +196,7 @@ Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_com
 | Version | Description         | Example Location                                                                                                                                                                               |
 |---------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 6.0.1+  | Creatable Chosenbox | [Chosenbox – A beautiful and powerful multiple combobox](http://blog.zkoss.org/index.php/2012/02/09/zk-6-0-new-feature-highlight-part-4-chosenbox-a-beautiful-and-powerful-multiple-combobox/) |
+
 # Version History
 
 | Version | Date          | Content                         |

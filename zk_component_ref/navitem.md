@@ -115,6 +115,7 @@ present more details of `Navitem`.
 | Name | Event Type |
 |---|---|
 |  |  |
+
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children

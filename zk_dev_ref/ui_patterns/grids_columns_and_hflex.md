@@ -309,6 +309,7 @@ right solution for your case.
 | No Content Wrapping Column            |                                 |                                                           | V         | !              |
 | Fill whole Grid + No Scrollbar Grid   |                                 | V                                                         | X         | !              |
 | Fill whole Grid + No Content Wrapping | V                               | All Column components should have one of these attributes |           |                |
+
 - ! : Specific width must not be more than grid's width.
 
 # Version History

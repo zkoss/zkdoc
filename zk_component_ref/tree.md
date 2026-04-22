@@ -655,6 +655,7 @@ component.
 | `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed. |
 | `onAfterRender` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
 | `onPageSize` | [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -666,6 +667,7 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/tree_mold_default.png) |
 | paging | ![](/zk_component_ref/images/tree_mold_paging.png) |
+
 # Supported Children
 
 `*`[` Treecols`]({{site.baseurl}}/zk_component_ref/treecols)`, `[` Treechildren`]({{site.baseurl}}/zk_component_ref/treechildren)`, `[` Treefoot`]({{site.baseurl}}/zk_component_ref/treefoot)
@@ -676,6 +678,7 @@ zul.jar.
 |---------|------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 3.6     | Smalltalk: Building a Complex Tree with Grid-in-Grid | [Building a Complex Tree with Grid-in-Grid](https://www.zkoss.org/wiki/Small_Talks/2009/September/Building_a_Complex_Tree_with_Grid-in-Grid) |
 | 3.6     | Expand all items of a Tree at start                  | [<http://www.zkoss.org/forum/listComment/9379>](http://www.zkoss.org/forum/listComment/9379)                                 |
+
 # Browser Limitations
 
 Chrome & Safari
@@ -730,6 +733,7 @@ to work around this.
 | 7.0.3   | July 2014      | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
 | 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 | 10.0.0  | Jan 2024       | [ZK-3853](http://tracker.zkoss.org/browse/ZK-3853): Tree supports 3-states selection model                                                                                                      |
+
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
 
 [^2]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`

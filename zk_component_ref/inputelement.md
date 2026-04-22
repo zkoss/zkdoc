@@ -82,6 +82,7 @@ ZK allows specifying conditions using constraints such as `no empty` and `no neg
 | `after yyyyMMdd`| Dates allowed after the specified date. <br/> For example, <br/> `<datebox constraint="after 20231225"/>` |
 | `before yyyyMMdd`| Dates allowed before the specified date. <br/> For example, <br/> `<datebox constraint="before 20231225"/>`|
 | `end_before` <br/> `end_after` <br/> `after_start` <br/> `after_end` <br/> ...| Specifies the position of the error box. Please refer to [Popup](popup) for all allowed positions. <br/> For example, <br/> `<textbox constraint="no empty, end_after"/><textbox constraint="no empty, start_before"/>`|
+
 For example,
 
 ```xml
@@ -346,6 +347,7 @@ The default interval is `350`ms. You can adjust this globally for all input widg
 | `onFocus`   | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                    | Indicates when a component gains focus. Event listeners execute at the server, potentially changing focus at the client. |
 | `onBlur`    | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                    | Indicates when a component loses focus. Event listeners execute at the server, potentially changing focus at the client. |
 | `onError`   | **Event:** [ErrorEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ErrorEvent.html)         | Indicates when a component triggers a validation error.                                                   |
+
 ## Supported Children
 `*NONE`: This component does not support any child components.
 
@@ -353,4 +355,4 @@ The default interval is `350`ms. You can adjust this globally for all input widg
 
 | Browser | Description|
 |---------|------------|
-|iOS Safari / Chrome| In iOS Safari and Chrome browsers, there is a specific behavior related to input elements. In mobile Safari, users need to explicitly tap on the elements within the web view to display the keyboard. This behavior impacts how users interact with input elements on mobile devices.<br/> For example, <pre>`&lt;textbox id="test"/&gt;<br/>&lt;button label="Java Focus (No Keyboard)" onClick="test.focus()"/&gt;<br/>&lt;button xmlns:w="client" label="Client Focus" w:onClick="zk.Widget.$('$test').focus()"/&gt;`</pre>
+|iOS Safari / Chrome| In iOS Safari and Chrome browsers, there is a specific behavior related to input elements. In mobile Safari, users need to explicitly tap on the elements within the web view to display the keyboard. This behavior impacts how users interact with input elements on mobile devices.<br/> For example, `<textbox id="test"/><button label="Java Focus (No Keyboard)" onClick="test.focus()"/>` <br/> `<button xmlns:w="client" label="Client Focus" w:onClick="zk.Widget.$('$test').focus()"/>` |

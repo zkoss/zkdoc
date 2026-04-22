@@ -51,6 +51,7 @@ By setting `content` attribute of `<menu>`to create a colorbox in menu.
 | Name | Event Type |
 |---|---|
 | onChange | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Notifies the application with the onChange event if its content is changed |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children

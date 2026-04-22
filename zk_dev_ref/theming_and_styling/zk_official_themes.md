@@ -8,6 +8,7 @@ for each ZK version.
 |---|--------|--------|--------|--------|--------|--------|
 | Default Theme | Breeze | Breeze | Breeze | Iceblue | Iceblue | Iceblue |
 | Applicable Themes | Sapphire Silvertail | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic | Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack | Iceblue Compact<br/>Sapphire<br/>Silvertail<br/>Atlantic<br/>ZK Theme Pack<br/>Theme Pack Compact | Iceblue Compact<br/>ZK Theme Pack<br/>Theme Pack Compact |
+
 - Theme pack contains 23 themes.
 - Theme Pack Compact contains 23 compact themes.
 

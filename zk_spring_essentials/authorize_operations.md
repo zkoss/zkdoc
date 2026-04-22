@@ -169,6 +169,7 @@ The result for ZK:
 | `@Command` (method-level) | **Yes** — command IS invoked |
 | `@BindingParam` (parameter-level) | **No** — parameters arrive as `null` |
 | `@Listen` (method-level) | **Yes** — works fine for MVC Composers |
+
 Putting Spring AOP advice on a ViewModel method makes `@BindingParam` parameters `null`. The command fires but receives no data. MVC Composers are not affected since `@Listen` handlers use event objects (no parameter annotations).
 
 AspectJ CTW sidesteps this entirely — advice is woven at compile time into the original class, so no proxy is ever generated and all annotations remain intact.
@@ -209,4 +210,5 @@ The ViewModel itself is never proxied, so `@BindingParam` remains intact. The se
 |---|---|---|---|
 | `@PreAuthorize` + AspectJ CTW | Yes | Yes (`aspectj-maven-plugin`) | None — annotation only |
 | Delegate to security service | Yes | No | One line per handler |
+
 **Recommendation:** Use AspectJ CTW with `spring-security-aspects` for projects that already use the AspectJ Maven plugin. Use the delegate approach for simpler projects that want to avoid the build plugin dependency.

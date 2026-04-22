@@ -93,6 +93,7 @@ the browser is Internet Explorer.
 | /img*/lang.gif | 1. /img/lang.gif |
 | /img/lang*.gif* | 1. /img/langie.gif |
 | /img*/lang*.gif* | 1. /imgie/lang*.gif |
+
 # Locating Locale- and browser-dependent resources in Java
 
 In addition to ZUML, you can also load browser- and Locale-dependent

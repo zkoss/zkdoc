@@ -355,6 +355,7 @@ Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimag
 | `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus.  |
 | `onBlur` | **Event:**  [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. |
 | `onUpload` | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has uploaded a file to the component. |
+
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Molds
@@ -367,6 +368,7 @@ zul.jar.
 | default | ![](/zk_component_ref/images/button_mold_default.png) |
 | trendy | ![](/zk_component_ref/images/button_mold_trendy.png) |
 | os | ![](/zk_component_ref/images/button_mold_os.png) |
+
 # Supported Children
 
 `*NONE`

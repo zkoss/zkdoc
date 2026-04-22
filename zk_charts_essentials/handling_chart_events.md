@@ -107,6 +107,7 @@ code as below:
 | onPlotDrillDown | Fires when a drilldown point is clicked, before the new series is added. |
 | onSelection | When you allow zooming by Charts.setZoomType(), it's fired when you drag your pointer within the chart. ZK will pass a `ChartsSelectionEvent` into an event listener. |
 | onClick | Fires when you click within a chart, ZK will pass `ChartsClickEvent`. |
+
 **Note:**
 
 - see

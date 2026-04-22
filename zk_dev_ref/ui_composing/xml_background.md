@@ -59,12 +59,14 @@ element as depicted below. They are equivalent.
 |-------------|------|
 | Close by an end tag: | `<window></window>` |
 | Close without an end tag: | `<window/>` |
+
 Second, elements must be properly nested.
 
 | Result | Code |
 |--------|------|
 | Correct: | ```xml<br/><window><br/>    <groupbox><br/>        Hello World!<br/>    </groupbox><br/></window><br/>``` |
 | Wrong: | ```xml<br/><window><br/>    <groupbox><br/>        Hello World!<br/>    </window><br/></groupbox><br/>``` |
+
 XML treats every tag as a node in a tree. A node without a parent node
 is a root component, and it is the root of a tree. In each zul file,
 only **ONE** tree is allowed.
@@ -110,6 +112,7 @@ to represent the `<` character.
 | ' | &apos; | |
 | \t (TAB) | &#x09; | Required only if used in an XML attribute's value |
 | \n (Linefeed) | &#x0a; | Required only if used in an XML attribute's value |
+
 Alternatively, you could tell XML parser not to interpret a piece of
 text by using `CDATA`. See the following:
 
@@ -135,6 +138,7 @@ easier to read and maintain.
 |--------|------|
 | Correct: | `checked="true"` |
 | Wrong: | `width=100%` or `checked` |
+
 Both the single quote (') and the double quote (") can be used, so if
 the value has double quotes, you could use the single quote to enclose
 it. For example,

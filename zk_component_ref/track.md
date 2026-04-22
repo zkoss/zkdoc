@@ -62,6 +62,7 @@ Specify what kind of track it is. Allowed values are:
 | descriptions | A textual description about what this video/audio is. |
 | chapters | Chapter titles for users to navigate. |
 | metadata | A track used by scripts. |
+
 ## Label
 
 Specify a user-readable title. Used by browsers to show on the list of

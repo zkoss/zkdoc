@@ -114,6 +114,7 @@ Artifacts are written to `target/`.
 | OSGi classloaders | Each bundle has its own classloader, so bundles are isolated |
 | ZK `lang-addon.xml` discovery | ZK loads widgets through the host bundle's classloader |
 | Fragment behavior | A fragment shares the host bundle's classloader |
+
 To make `org.adempiere.ui.zk` see ZK EE widgets (`zkex.jar`, `zkmax.jar`), those jars must be on its classloader. A fragment is the OSGi-compliant way to inject resources into the host bundle without modifying it.
 
 References:

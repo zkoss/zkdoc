@@ -126,6 +126,7 @@ in stead of upload.
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Denotes when left button of Combobutton is clicked. |
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes when the child popup is opened or closed.     |
+
 - Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Molds
@@ -146,6 +147,7 @@ The **tbbtn** mold is renamed to **toolbar** mold
 | Version | Description               | Example Location                                              |
 |---------|---------------------------|---------------------------------------------------------------|
 | 6.0.0+  | Combobutton with Colorbox | [blog post](http://blog.zkoss.org/index.php/tag/combobutton/) |
+
 # Version History
 
 | Version | Date           | Content                                                                                                                                       |

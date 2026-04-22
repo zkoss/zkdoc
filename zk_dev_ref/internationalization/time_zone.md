@@ -147,6 +147,7 @@ The mismatch is dangerous when dealing with dates near geopolitical or DST chang
 | **DST Transitions** | **The most common issue.** A server using old data might calculate a date one hour differently than the client using new data during a recent DST start or end time. For example, a meeting scheduled at a specific time might appear to shift by an hour on the client compared to the server log. |
 | **New Time Zones** | A region adopts a new zone or changes its standard offset. The client or server with outdated data will fail to recognize the zone identifier or apply the wrong offset. |
 | **Historical Data** | An application that handles booking, logging, or reporting based on past events may calculate an incorrect historical offset if the tzdata rules have been corrected or revised since the JDK/client library was built. For instance, an incorrect historical DST rule for a specific region (e.g., Canada/Yukon in 1967\) could result in calculation errors of several hours or more. |
+
 **Impact:** These errors lead to data corruption, incorrect event scheduling, and a poor user experience, often confusingly appearing only for specific users or dates.
 
 ## How to Upgrade Time Zone Data

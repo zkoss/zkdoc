@@ -225,6 +225,7 @@ in ZK 7, we use the full-naming pattern on CSS class names. For example,
 | z-component-**seld** | z-component-**selected** |
 | z-component**-over** | z-component**:hover** |
 | z-component**-disd** | z-component**[disabled]** |
+
 Here we can see not only abbreviations have been changed to full names,
 but we also use CSS selectors like**:hover** and the attribute selector
 like **\[disabled\]** to make it more intuitive.
@@ -348,6 +349,7 @@ You can check the customized result.
 
 | ![](images/ZK7_scrollbar_1.png) | ZK 7 default scrollbar style |
 | ![](images/ZK7_scrollbar_2.png) | Customized scrollbar style |
+
 ## Use Browser Default scrollbar
 
 To disable custom scrollbar provided by ZK 7. Add the library property
@@ -371,6 +373,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
+
 # Tip 2 Appendix
 
 | Component | ZK 6.5 mold | ZK 7 mold |
@@ -379,6 +382,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
+
 # Tip 3 Appendix
 
 | Component | ZK 6.5 sample | ZK 7 sample |
@@ -392,6 +396,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Groupbox | z-groupbox-3d | z-groupbox z-groupbox-3d |
 | Tabbox | z-tabbox<br/><br/>z-tabbox-ver<br/><br/>z-tabbox-accordion | z-tabbox z-tabbox-top<br/>z-tabbox z-tabbox-bottom<br/>z-tabbox z-tabbox-left<br/>z-tabbox z-tabbox-right<br/>z-tabbox z-tabbox-accordion |
 | Window | z-window-embedded<br/>z-window-modal<br/>z-window-highlighted<br/>z-window-overlapped<br/>z-window-popup | z-window z-window-embedded<br/>z-window z-window-modal<br/>z-window z-window-highlighted<br/>z-window z-window-overlapped<br/>z-window z-window-popup |
+
 # Tip 2 Appendix
 
 | Component | ZK 6.5 mold | ZK 7 mold |
@@ -400,6 +405,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox<br/>Combobox<br/>Bandbox<br/>Datebox<br/>Timebox<br/>Spinner<br/>Doublespinner | default<br/>rounded | default |
 | Splitter | default<br/>os | default |
 | Tabbox | accordion<br/>accordion-lite | accordion |
+
 # Tip 3 Appendix
 
 | Component | ZK 6.5 sample | ZK 7 sample |
@@ -413,6 +419,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Groupbox | z-groupbox-3d | z-groupbox z-groupbox-3d |
 | Tabbox | z-tabbox<br/><br/>z-tabbox-ver<br/><br/>z-tabbox-accordion | z-tabbox z-tabbox-top<br/>z-tabbox z-tabbox-bottom<br/>z-tabbox z-tabbox-left<br/>z-tabbox z-tabbox-right<br/>z-tabbox z-tabbox-accordion |
 | Window | z-window-embedded<br/>z-window-modal<br/>z-window-highlighted<br/>z-window-overlapped<br/>z-window-popup | z-window z-window-embedded<br/>z-window z-window-modal<br/>z-window z-window-highlighted<br/>z-window z-window-overlapped<br/>z-window z-window-popup |
+
 # Tip 4 Appendix
 
 | Component | ZK 6.5 DOM structure | ZK 7 DOM structure |
@@ -425,6 +432,7 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 | Panel | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-tl"&gt;<br/>        &lt;div class="z-panel-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-hl"&gt;<br/>        &lt;div class="z-panel-hr"&gt;<br/>            &lt;div class="z-panel-hm"&gt;<br/>                &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panel-cl"&gt;<br/>            &lt;div class="z-panel-cr"&gt;<br/>                &lt;div class="z-panel-cm"&gt;<br/>                    &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>                &lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-fl"&gt;<br/>            &lt;div class="z-panel-fr"&gt;<br/>                &lt;div class="z-panel-fm"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-bl"&gt;<br/>            &lt;div class="z-panel-br"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-head"&gt;<br/>        &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
 | Window | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-tl"&gt;<br/>        &lt;div class="z-window-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-hl"&gt;<br/>        &lt;div class="z-window-hr"&gt;<br/>            &lt;div class="z-window-hm"&gt;<br/>                &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-cl"&gt;<br/>        &lt;div class="z-window-cr"&gt;<br/>            &lt;div class="z-window-cm"&gt;<br/>                &lt;div class="z-window-cnt"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-bl"&gt;<br/>        &lt;div class="z-window-br"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>    &lt;div class="z-window-content"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
 | Tab | horizontal / vertical orient<br/><br/>```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-close"&gt;&lt;/a&gt;<br/>    &lt;div class="z-tab-hl"&gt;<br/>        &lt;div class="z-tab-hr"&gt;<br/>            &lt;div class="z-tab-hm"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/li&gt;<br/>``` | ```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-content"&gt;<br/>        &lt;div class="z-tab-button"&gt;&lt;/div&gt;<br/>        &lt;span class="z-tab-text"&gt;&lt;/span&gt;<br/>    &lt;/a&gt;<br/>&lt;/li&gt;<br/>``` |
+
 # Tip 5 Appendix
 
 |  Category         |  ZK 6.5 class name | ZK 7 class name                                                      |
@@ -475,4 +483,5 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 |                     |  **-hide**         | *deprecated*                                                         |
 |                     |  -invalid          | -invalid                                                             |
 |                     |  -readonly         | \[readonly\] or -readonly                                            |
+
 - deprecated means it is never used in 7.0

@@ -12,6 +12,7 @@ specific servlet version.
 | 3.0                         |
 | 4.0                         |
 | 5.0                         |
+
 \(1\) = ZK 10 requires Servlet 3.1 or later.
 
 \(2\) = Require configuration through web.xml or zk-web-fragment.jar See

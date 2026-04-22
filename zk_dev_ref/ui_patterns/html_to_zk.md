@@ -16,6 +16,7 @@ In addition, an empty prefix replaces the namespace for non-prefixed elements in
 | [zuml](zk_dev_ref/ui_composing/zuml) | http://www.zkoss.org/2005/zul | Used to declare ZK components |
 | [xhtml](zk_dev_ref/ui_patterns/the_xhtml_component_set) | http://www.w3.org/1999/xhtml | Used to declare ZK XHTML components |
 | [native](zk_dev_ref/ui_patterns/the_native_namespace) | http://www.zkoss.org/2005/zk/native | Used to declare native HTML tags |
+
 In this example, we map the zul namespace without a prefix, xhtml to x, and native to n
 
 ```xml

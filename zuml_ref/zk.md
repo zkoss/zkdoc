@@ -19,6 +19,7 @@ Here is a list of entries that the `zk` object has:
 | `opera`   | `Double` | `11.52`                         | The version of Opera if the current user is using Opera. Otherwise, it is null.                                                                                                               |
 | `safari`  | `Double` | `535.7`                         | The version of Safari if the current user is using Webkit-based browser, including Safari and Chrome. Otherwise, it is null. NOTICE: It is the same as `webkit` (for backward compatibility). |
 | `webkit`  | `Double` | `535.7`                         | The version of Webkit if the current user is using Webkit-based browser, including Safari and Chrome. Otherwise, it is null.                                                                  |
+
 # Version History
 
 | Version | Date          | Content                         |

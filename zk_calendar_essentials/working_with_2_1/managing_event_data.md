@@ -56,6 +56,7 @@ An implementing Object should provide the following functions:
 | getContentColor | Returns the color of the content in the calendar event. Only allows the value being recognized by CSS. |
 | getZclass       | Returns the zclass of the calendar event.                                                              |
 | isLocked        | Returns whether the calendar event is locked or not.                                                   |
+
 ## A CalendarEvent implementation
 
 The code snippet below details a basic class which would fulfill the

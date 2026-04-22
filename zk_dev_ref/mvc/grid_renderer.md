@@ -29,6 +29,7 @@ public class FoodGroupRenderer implements RowRenderer, java.io.Serializable {
 | Version | Date          | Content                            |
 |---------|---------------|------------------------------------|
 | 6.0.0   | February 2012 | The index argument was introduced. |
+
 [^1]: If the grid is assigned a template called `model`, then the
     template will be used to render the grid. For more information,
     please refer to [the Grid Template section]({{site.baseurl}}/zk_dev_ref/mvc/grid_template).

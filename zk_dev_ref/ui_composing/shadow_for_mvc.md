@@ -272,6 +272,7 @@ looks similar, there are some differences.
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | change host/parent  | if **autodrop** is true, the rendered components will change parent; otherwise, they will stick with the same parent(or host). | doesn't matter if it is in-line or not; the rendered components will change parent. |
 | change template/uri | if **autodrop** is true, the rendered components will be detached; otherwise, they will stick with the same parent(or host).   | doesn't matter if it is in-line or not; the rendered components will be detached.   |
+
 In short, while using Macro components, we would have to instantiate
 more than one to achieve this goal. ShadowTemplate has more flexibility
 for templating; with only one ShadowTemplate instance, developers can

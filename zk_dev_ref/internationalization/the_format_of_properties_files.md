@@ -166,6 +166,7 @@ For more information, please refer to [ZK Configuration Reference]({{site.baseur
 | Version | Date     | Content                                                                                                                      |
 |---------|----------|------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.7   | Mar 2011 | labels implicit object was introduced to access properties without declaring taglib. Also allows label keys of a.b.c format. |
+
 [^1]: If it is used for internationalization labels, it will be loaded
     automatically. If you want to use it in other situations, you have
     to invoke

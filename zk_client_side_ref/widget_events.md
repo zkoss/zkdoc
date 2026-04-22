@@ -58,6 +58,7 @@ will be called.
 | x | onSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when you resize a widget and propagates this event to its children. |
 | x | onAfterSize | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when each time ZK completes rendering/re-rendering a widget and propagates this event to its children. |
 | x | onUnbind | handle it by registering a listener according to [event Listening]({{site.baseurl}}/zk_client_side_ref/event_listening) ZK fires it when ZK removes a widget from a page. |
+
 Events that can be handled by overriding a method
 
 Please read

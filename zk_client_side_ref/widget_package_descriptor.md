@@ -27,6 +27,7 @@ their descriptions.
 |---------|-----------------------------------------------------------------------------------------------------------------|
 | package | The root element denotes the package name and the language it belongs to                                        |
 | widget  | The widget class name (without the package name). If the package contains multiple widgets list them one by one |
+
 Having created the configuration the basic implementation of our
 component is complete. However it doesn't have any interactive events.
 Therefore the next logical step is to start adding events to the

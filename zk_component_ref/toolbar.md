@@ -99,6 +99,7 @@ footer of a panel.
 |---|---|
 | default | ![](/zk_component_ref/images/toolbar_mold_default.png) |
 | panel | ![](/zk_component_ref/images/toolbar_mold_panel.png) |
+
 # Supported Children
 
 `*ALL`

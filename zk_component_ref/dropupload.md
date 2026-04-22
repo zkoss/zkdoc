@@ -246,6 +246,7 @@ selected file from the user.
 |-----------|------------------------------------------------|
 | getWidget | Indicate which component the widget belongs to |
 | cancel    | Stops the uploading process.                   |
+
 ## Transforming the original File Viewer
 
 Customized File Viewers written in the past can also be applied to
@@ -316,6 +317,7 @@ machines.
 |---|-------------------------------------------|
 | `onUpload` | **Event:**[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be triggered once a user has uploaded a file.          |
 | `onMaxFileCountExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be triggered when number of upload files exceed the maxFileCount. |
+
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children

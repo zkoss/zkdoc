@@ -29,6 +29,7 @@ Check inherited events
 | Version | Description                      | Example Location                                                                    |
 |---------|----------------------------------|-------------------------------------------------------------------------------------|
 | 3.6     | Smalltalk: Keylistener Component | [Keylistener Component](https://www.zkoss.org/wiki/Small_Talks/2007/November/Keylistener_Component) |
+
 # Version History
 
 | Version | Date | Content |

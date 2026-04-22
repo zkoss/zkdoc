@@ -141,6 +141,7 @@ To set the 3d mold as the default for all Groupbox components, add the following
 | Name**   | Event Type                            |Description |
 |----------|-----------------------------------------|------------|
 | `onOpen` | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
+
 ## Supported Molds
 The available molds for the Groupbox component are:
 
@@ -148,6 +149,7 @@ The available molds for the Groupbox component are:
 |---------|-------------------------------------------|
 | `default`   | ![Groupbox_mold_default](images/Groupbox_mold_default.png)|
 | `3d`   | ![Groupbox_mold_3d](images/Groupbox_mold_3d.png)|
+
 ## Supported Children
 
 `*ALL`: Indicates that the Groupbox component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Groupbox, providing flexibility and customization options for your designs.

@@ -69,6 +69,7 @@ the client won't know its existence.
 | 1 | ```java<br/>Window w = new Window();<br/>w.setTitle("Hello Window");<br/>``` | *nothing* | A Window component is instantiated but it doesn't have the peer widget. Furthermore, it will be garbage-collected if there is no reference to it |
 | 2 | ```java<br/>w.setPage(page);<br/>``` | Auto invoked by ZK Client Engine<br/><br/>```javascript<br/>var pw = new zul.wnd.Window(uuid);<br/>pw.setTitle('Hello World');<br/>pw.replaceHTML(uuid);<br/>``` | Attach the component to the specified page, and a peer widget will be created automatically at the client later (after processing the [AU Requests]({{site.baseurl}}/zk_client_side_ref/au_requests)). |
 | 3 | ```java<br/>w.setTitle("Hi ZK");<br/>``` | Auto invoked by ZK Client Engine<br/><br/>```javascript<br/>pw.setTitle('Hi ZK');<br/>``` | Once a component is attached to a page, any following modification will be sent to the client and invoke the corresponding method of the peer widget. |
+
 - Notes:
   - There are two ways to attach a component to page. First, call the
     setPage method to make it as a root component of the page. Second,
@@ -93,6 +94,7 @@ it to the DOM tree (of the browser).
 | 1 | ```javascript<br/>var wp = new zul.wnd.Window();<br/>wp.setTitle('Hello World');<br/>```<br/><br/>Invoked by ZK Client Engine or client application | *nothing* | A window widget is instantiated. If it is called by ZK Client Engine (due to the invocation at the server), it has a peer component. If it is called by client application, there is no peer component. |
 | 2 | ```javascript<br/>wp.replaceHTML(uuid);<br/>``` | Create one or a tree of DOM elements (depending on the implementation of a widget) and replace the specified node. | Attach a widget to the DOM tree, and the visual appearance is shown up (unless it is invisible). |
 | 3 | ```javascript<br/>wp.setTitle('Hi ZK');<br/>``` | Update the DOM element(s) created in the previous step | A modification of the widget will modify the corresponding DOM elements |
+
 ## Attach a widget to the DOM tree
 
 There are several ways to attach a widget to the DOM tree

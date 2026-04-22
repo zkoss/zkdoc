@@ -129,6 +129,7 @@ variables from [ here](/zk_style_customization_guide/zk_less_variables).
 | Variables                   | Default Value |
 |-----------------------------|---------------|
 | @tabSelectedBackgroundColor | \#FFFFFF      |
+
 # Customize Sample
 
 ## Target Design

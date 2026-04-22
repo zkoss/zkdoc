@@ -132,6 +132,7 @@ For example,
 | Version | Date          | Content                                                             |
 |---------|---------------|---------------------------------------------------------------------|
 | 7.0.0   | November 2013 | [Tabbox support ListModel](http://tracker.zkoss.org/browse/ZK-2002) |
+
 [^1]: Of course, it can be anything you like. Just make sure it matches
     the EL expressions specified in the template.
 

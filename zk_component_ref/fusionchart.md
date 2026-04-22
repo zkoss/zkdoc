@@ -35,6 +35,7 @@ experience as the visual display is updated immediately.
 | type | Type of chart |
 | fgAlpha | Foreground alpha |
 | model | Model of chart |
+
 # Supported Model
 
 | Type | Model | 3D |
@@ -47,6 +48,7 @@ experience as the visual display is updated immediately.
 | stacked_bar | CategoryModel | O |
 | area | CategoryModel | X |
 | gantt | GanttModel | X |
+
 **Note:** 3D bar chart of Fusionchart does not support horizontal
 orientation now. If you want to use horizontal 3D bar chart, please use
 Chart component.
@@ -669,6 +671,7 @@ public class FusionchartComposer extends SelectorComposer<Div> {
 | Name | Event Type |
 |---|---|
 | onClick | Mouse clicking event. You can get information of clicked area from this event. |
+
 # Supported Children
 
 `*None`

@@ -187,6 +187,7 @@ Here are the key differences between `@validator` and `@jsvalidator` in ZK:
 | Validate at            | Server side                 | Client side             |
 | ZK form validation     | Supported                   | Not supported           |
 | Validation message holder | Initialized in validationMessages | An implicit `vmsgs` object|
+
 It's recommended to use server-side `@validator` for most cases due to security concerns, but you can use client-side `@jsvalidator` for instant feedback requirements like password strength or number range validation.
 
 # Event Handling
@@ -290,5 +291,6 @@ The `Fragment` component supports the following properties:
 | Name            | Event Type                                                          | Description |
 |-----------------|---------------------------------------------------------------------|------------|
 | `onRecover`     | **Event:** [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Represents an event sent back to the server caused by an offline recovery. |
+
 ## Supported Children
 - `*NONE`: This component does not support any child components.

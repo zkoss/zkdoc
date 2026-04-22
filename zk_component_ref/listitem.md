@@ -62,6 +62,7 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 |---|---|
 | default | ![](/zk_component_ref/images/listbox_mold_default.png) |
 | select | ![](/zk_component_ref/images/listbox_mold_select.png) |
+
 # Supported Children
 
 `*`[` Listcell`]({{site.baseurl}}/zk_component_ref/listcell)

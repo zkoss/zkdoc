@@ -88,6 +88,7 @@ Sets the title of the Drawer component. A `null` value indicates no title for th
 | Name   | Event Type                            | Description |
 |------------|-------------------------------------------|-------------|
 | `onOpen`   | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
+
 ## Supported Children
 
 `*ALL`: Indicates that the Drawer component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Drawer, providing flexibility and customization options for your designs.

@@ -86,6 +86,7 @@ Navseparator components. Check other variables from [ here](/zk_style_customizat
 | @navSelectedBackgroundColor | \#372F2B                                        |
 | @navSeparatorColor          | \#838383                                        |
 | @navCollapsedWidth          | 32px                                            |
+
 # Customize Sample
 
 ## Target Design

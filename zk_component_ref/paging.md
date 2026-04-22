@@ -116,6 +116,7 @@ client side which is detached during paging and throws mounting error.
 | Name | Event Type |
 |---|---|
 | `onPaging` | **Event:** [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) Notifies one of the pages of a multi-page component is selected by the user. |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
@@ -127,6 +128,7 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/paging_mold_default.png) |
 | os | ![](/zk_component_ref/images/paging_mold_os.png) |
+
 # Supported Children
 
 `*NONE`

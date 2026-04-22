@@ -130,12 +130,14 @@ Try it
 | **Name**   | **Event Type**                            |Description |
 |------------|-------------------------------------------|------------|
 | `onSelect` | **Event:** [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.|
+
 ## Supported Molds
 
 | **Name**   | **Snapshot**                            |
 |------------|-------------------------------------------|
 |**Default:** |![Default Mold](images/Tabbox_mold_default.png)|
 | **Accordion:** | ![Accordion Mold](images/Tabbox_mold_accordion.png)|
+
 ## Supported Orients
 
 | **Name**   | **Snapshot**                            |
@@ -144,6 +146,7 @@ Try it
 |**Left:**| ![Left Orientation](images/Tabbox_orient_vertical.png)|
 |**Right:**| ![Right Orientation](images/Tabbox_orient_vertical-right.png)|
 |**Bottom:**| ![Bottom Orientation](images/Tabbox_orient_bottom.png)|
+
 ## Supported Children
 - [`Tabs`](tabs): Indicates that the `Tabbox` can only have one child component of type `Tabs`.
 - [`Tabpanels`](tabpanels): Indicates that the `Tabbox` can only have one child component of type `Tabpanels`.

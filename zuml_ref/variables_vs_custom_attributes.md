@@ -21,6 +21,7 @@ The `<variables>` tag is primarily used to define variables accessible via EL ex
 | :--- | :--- |
 | `local` | **`false` (Default):** Sets the attribute in the nearest ancestor scope that already defines it, or the current scope. <br> **`true`:** Strictly sets the attribute in the current ID space, avoiding shadowing or collision with parent spaces. |
 | `composite` | Determines if the value should be parsed as a `list` (Object array) or `map` (Map). |
+
 ---
 
 ## 3. The `<custom-attributes>` Tag
@@ -36,6 +37,7 @@ The `<custom-attributes>` tag is used to attach metadata or configuration direct
 | :--- | :--- |
 | `scope` | Explicitly defines where to store the attribute. Values include: `component` (default), `space`, `page`, `desktop`, `session`, `application`, or `request`. |
 | `composite` | Same as `<variables>`, supports `list` and `map` parsing. |
+
 ---
 
 ## 4. Key Differences
@@ -46,6 +48,7 @@ The `<custom-attributes>` tag is used to attach metadata or configuration direct
 | **Scope Control** | Via `local="true/false"` | Via `scope="name"` |
 | **Logic Type** | Defined for the "Area" (ID Space) | Defined for the "Widget" (Component) |
 | **ZUL Intent** | Defining constants for EL/ZScript | Component configuration/parameters |
+
 ### Practical Example: The Scope Difference
 
 ```xml

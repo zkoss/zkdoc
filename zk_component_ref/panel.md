@@ -175,6 +175,7 @@ For more details, refer to [Using Panel to Lay out Your Website](https://www.zko
 | `onSize`       | Event: [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the panel's size is updated by a user.
  |
 | `onZIndex`     | Event: [ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's z-index is updated by a user.|
+
 ## Supported Children
 - [`Caption`](caption): Indicates that the `Panel` can only have one child component of type `Caption`.
 - [`Panelchildren`](panelchildren): Indicates that the `Panel` can only have one child component of type `Panelchildren`.

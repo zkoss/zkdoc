@@ -810,6 +810,7 @@ The 3D chart is not supported on all chart types.
 | `wafermap` | `WaferMapModel` | x |
 | `gantt` | `GanttModel` | x |
 | `dial` | `DialModel` | x |
+
 # Clicked Area: Series, Legend
 
 In an onClick listener, you can call
@@ -900,6 +901,7 @@ related API in [JFreeChart JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.
 |---------|----------------------------------------------|------------------------------------------------------------------------------------------------|
 | 5.0     | Make a Chart fill 100% width in parent panel | [<http://www.zkoss.org/forum/listComment/10761>](http://www.zkoss.org/forum/listComment/10761) |
 | 5.0     | Dual axis in Chart                           | [<http://www.zkoss.org/forum/listComment/8752>](http://www.zkoss.org/forum/listComment/8752)   |
+
 # Troubleshooting
 
 ## Linux

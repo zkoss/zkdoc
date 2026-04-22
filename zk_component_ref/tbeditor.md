@@ -25,6 +25,7 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 | 9.6.0+ | 2.7.2        |
 | 8.5.0  | 2.6          |
 | 8.0.0  | 2.0.0-beta.2 |
+
 # Example
 
 ![](/zk_component_ref/images/Zkcompref_tbeditor.png )
@@ -59,5 +60,6 @@ tbeditor.setConfig(config);
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `onChange` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes that the content of the component has been modified by a user |
 | `onChanging` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Denotes that a user is changing the content of an input component. Notice that the component's content (at the server) won't be changed until `onChange` is received. Thus, you have to invoke the `getValue`method in the `InputEvent`class to retrieve the temporary value. |
+
 # Supported Children
 `*NONE`

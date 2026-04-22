@@ -87,6 +87,7 @@ variables from [ here](/zk_style_customization_guide/zk_less_variables).
 | @windowBorderColor     | \#9C9C9C      |
 | @windowBackgroundColor | \#D9E5EF      |
 | @windowFramePadding    | 4px           |
+
 # Customize Sample
 
 ## Target Design

@@ -27,6 +27,7 @@ Here is the attribute list used in lang-addon.xml:
 | SAVE_REPLACEMENT | The replacement attribute for saving. It's used when there is a issue to save to original attribute.; e.g. selectedItem of selectbox, it save the value selecteIndex via converter to the bean. (selectedItem is not existed in selectbox). |
 | RENDERER | A special renderer for binding |
 |  |  |
+
 # Example
 
 Let's take a look at some examples.

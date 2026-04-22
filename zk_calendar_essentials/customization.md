@@ -58,6 +58,7 @@ follows:
 | getCaptionByDate        | Returns the caption of the date.          |
 | getCaptionByDateOfMonth | Returns the caption of the date of month. |
 | getCaptionByPopup       | Returns the caption of the popup title.   |
+
 Each method enables us to customize the appearance of the calendar at
 any opportunity. Implementing an interface such as this is excellent if
 you require fine-grained control.

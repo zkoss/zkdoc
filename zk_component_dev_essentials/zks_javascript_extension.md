@@ -156,6 +156,7 @@ Following ZK's naming conventions helps keep code consistent and clear:
 | `_` (suffix) | Protected method | `bind_()`, `unbind_()` |
 | `$` (prefix) | ZK framework method | `$extends()`, `$define`, `$n()` |
 | No prefix | Public method | `getValue()`, `setValue()` |
+
 **Examples from ZK:**
 - `_value` - Private property storage
 - `bind_()` - Protected lifecycle method

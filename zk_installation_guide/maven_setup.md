@@ -522,6 +522,7 @@ There's something you need to know about ZK's edition and package(s).
 | stateless.jar | | | V | core of stateless components for EE |
 | stateless-immutable.jar | | | V | immutables of stateless components for EE |
 | zml.jar | V<br>(only ZK 3) | V | V | ZK XML components for generating XML output |
+
 This will be helpful when you modify your dependencies of projects.
 
 # BOM

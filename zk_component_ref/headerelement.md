@@ -13,6 +13,7 @@ The Header Element is a skeletal implementation for a header in ZK applications.
 | Name                | Event Type                                 | Description                        |
 |---------------------|--------------------------------------------|------------------------------------|
 | `onColSize`         | **Event:** [ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html) | Notifies the parent of a group of headers that the widths of two of its children are changed by the user.|
+
 ## Supported Children
 
 `*ALL`: Indicates that the HeaderElement can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends HeaderElement, providing flexibility and customization options for your designs.

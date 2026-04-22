@@ -108,6 +108,7 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 |----------|--------------------------------------------------------|
 | default  | ![](/zk_component_ref/images/spinner_mold_default.png) |
 | rounded  | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
+
 {% include supported-since.html version="5.0.0" %} rounded mold is available.
 
 # Supported Children

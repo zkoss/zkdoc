@@ -163,12 +163,14 @@ report.setType("pdf"); // report is the Jasperreport component
 | 8.6.0 | 6.5.1        | added by default                                                                                                                                            |
 | 7.0.0 | 4.5.1        | added by default                                                                                                                                            |
 | 6.0.0 | 4.0.1        | added by default                                                                                                                                            |
+
 # Use Cases
 
 | Version | Description                                                                                                                                                           |
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.2   | [How to use Dynamic Jasper Reports](http://www.zkoss.org/forum/listComment/10873)                                                                                     |
 | 6/5.0.8 | [Create a Report with ZK using iReport and JasperReports](http://books.zkoss.org/wiki/Small_Talks/2012/April/Create_a_Report_with_ZK_using_iReport_and_JasperReports) |
+
 # Troubleshooting
 
 ## Linux

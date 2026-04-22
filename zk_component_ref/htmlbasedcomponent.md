@@ -250,6 +250,7 @@ The HtmlBasedComponent serves as a basic implementation for HTML-based component
 | `onCtrlKey`       | **Event:** [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)                  | Denotes a user has pressed a special key combined with the Ctrl or Alt key. Refer to the `ctrlKeys` property for details. |
 | `onAfterSize`     | **Event:** [AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)    | Fired after a user resizes a sizable component in a browser or when a component calculates its size in a browser. |
 | `onCreate`        | **Event:** [CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)          | Event fired when the component is created.                                                            |
+
 ## Supported Children
 
 `*ALL`: Indicates that the `HtmlBasedComponent` can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends `HtmlBasedComponent`, providing flexibility and customization options for your designs.

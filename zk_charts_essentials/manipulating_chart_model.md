@@ -91,6 +91,7 @@ Enjoy the graphical presentation of data!
 | `waterfall` | `CategoryModel` or `XYModel` |
 | `funnel` | `SingleValueCategoryModel` |
 | `errorbox` | `XYModel` |
+
 **Note:** Since ZK 7.0.1,
 [org.zkoss.zul.ChartModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ChartModel.html) also supports
 ZK Charts as well, however, it is recommended to use the new ZK

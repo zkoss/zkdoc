@@ -27,6 +27,7 @@ though extensible through TLD files, are different from JSP tags.
 | charset | [Optional][Default: `UTF-8`]<br><br>It specifies the default charset for the output of the DSP interpreter.<br><br>If an empty string is specified as follows, the container's default is used. In other words, the `setCharacterEncoding` method of *javax.servlet.ServletResponse* is not called. |
 | class-resource | [Optional][Default: false]<br><br>Specifies whether to load resources, such as TLD files, from the class loader, in addition to the servlet context. |
 | compress | [Optional][Default: `true`]<br><br>It specifies whether to compress the output if the browser supports the compression (`Accept-Encoding`) and this Servlet is not included by other Servlets. |
+
 # Map URL to DSP Loader
 
 Notice it is optional. You need to specify it only if you want to use

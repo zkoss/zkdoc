@@ -444,6 +444,7 @@ called only for root components.
 | Version | Date       | Content                                                                                                                                                                          |
 |---------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.8   | June, 2011 | [org.zkoss.zk.ui.util.GenericAutowireComposer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/GenericAutowireComposer.html) and its derives allow developers to specify a custom name by use of a component attribute called `composerName`. |
+
 [^1]: It can be done by invoking
     [org.zkoss.zk.ui.Component#setAttribute(java.lang.String, java.lang.Object)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAttribute(java.lang.String, java.lang.Object)),
     because the component's attribute can be referenced directly in EL

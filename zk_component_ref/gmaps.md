@@ -156,6 +156,7 @@ Specify which protocol to load the Maps API. Currently it supports
 | `onMapMove` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/mapmoveevent" title="wikilink"> MapMoveEvent</a> Notifies that the view center (latitude, longitude) of the gmaps has been moved. |
 | `onMapTypeChange` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/maptypechangeevent" title="wikilink"> MapTypeChangeEvent</a> Notifies that the map type of the gmaps has been changed. |
 | `onMapZoom` | **Event:** <a href="{{site.baseurl}}/zk_component_ref/mapzoomevent" title="wikilink"> MapZoomEvent</a> Notifies that the zoom level of the gmaps has been changed. |
+
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Work with MVVM

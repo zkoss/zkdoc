@@ -132,6 +132,7 @@ to know which key was pressed.
 | function key (F1, F2,... F12) | #f1, #f2, ... #f12 | |
 | Tab | #tab | |
 | Space | #space | |
+
 # Document-level Keystrokes
 
 If you set the library property

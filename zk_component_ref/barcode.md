@@ -169,6 +169,7 @@ WEB-INF/lang-addon.xml
 | 1D MSI Family | MSI, MSI10, MSI11, MSI1010, MSI1110, |
 | 1D Others | UPC, ITF14,ITF, PHARMACODE, CODABAR |
 | 2D | QR |
+
 # Supported Children
 
 `*NONE`

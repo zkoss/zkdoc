@@ -22,4 +22,5 @@ request, if the specified delay expires.
 |---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 5.0.4   | July, 2010     | resend-delay is default to -1 (i.e., disabled by default) no matter ZK CE or EE.                                                                                    |
 | 6.0.0   | November, 2011 | The feature is removed and the setting has no effect, since we can't replicate IE6 issue anymore (after using a more conservative approach to send an Ajax request) |
+
 [^1]: `The default is 9000 if ZK 5.0.3 EE or prior is used.`

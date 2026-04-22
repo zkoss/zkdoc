@@ -20,6 +20,7 @@ The default implementation depends on which ZK edition you use:
 | CE         | Client Polling    | [org.zkoss.zk.ui.impl.PollingServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/impl/PollingServerPush.html)   |
 | PE         | Comet Server Push | [org.zkoss.zkex.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/ui/comet/CometServerPush.html)  |
 | EE         | Servlet 3 Comet   | [org.zkoss.zkmax.ui.comet.CometServerPush](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/comet/CometServerPush.html) |
+
 You can also configure ZK to use the one you prefer, or even use a
 custom server push.
 

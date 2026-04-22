@@ -109,5 +109,6 @@ Try it
 |---------------|--------------------------------------------------|------------|
 | `onSelect`    | Event: [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Denotes user has selected a tab. onSelect is sent to both tab and tabbox.             |
 | `onClose`     | Event: [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/ui/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself.                 |
+
 ## Supported Children
 - [`Caption`](caption): Indicates that the `Tab` component can only have one child component of type `Caption`.

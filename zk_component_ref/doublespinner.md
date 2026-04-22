@@ -110,6 +110,7 @@ zul.jar.
 |---|---|
 | default | ![](/zk_component_ref/images/spinner_mold_default.png) |
 | rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
+
 # Supported Children
 
 `*None`

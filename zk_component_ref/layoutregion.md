@@ -15,5 +15,6 @@ The `LayoutRegion` class in ZK represents a region within a layout manager. It i
 | onOpen      | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Sent when a layout is collapsed or opened by a user.                                            |
 | onSize      | **Event:** [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Sent when a layout is resized by a user.                                                        |
 | onSlide     | **Event:** [SlideEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SlideEvent.html) | Sent when a collapsed layout is slid (previewed) by a user.                                    |
+
 ## Supported Children
 `*ALL`: Represents support for all ZK components. This means that any ZK component can be placed within the `LayoutRegion` and will be properly rendered and managed by the layout manager.

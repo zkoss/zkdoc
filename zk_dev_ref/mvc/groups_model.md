@@ -23,6 +23,7 @@ the default implementations as following:
 | Usage       | The grouping is **immutable**, i.e., re-grouping is not allowed                          | Grouping is based on a comparator (java.util.Comparator)                                                                                                            |
 | Constructor | The data must be grouped, i.e., data\[0\] is the first group, data\[1\] the second, etc. | The data is *not* grouped, i.e., data\[0\] is the first element. The constructor requires a comparator that will be used to group them.                             |
 | Version     | Since 3.5.0                                                                              | Since 5.0.5; For 5.0.4 or prior, please use [org.zkoss.zul.ArrayGroupsModel](http://www.zkoss.org/javadoc/5.0.4/zk/org/zkoss/zul/ArrayGroupsModel.html) (the same). |
+
 # Example: Immutable Grouping Data
 
 If your data is already grouped and the grouping won't be changed, then

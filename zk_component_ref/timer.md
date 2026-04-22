@@ -25,6 +25,7 @@ timer won't fire any event until it is attached to a page.
 | Name | Event Type |
 |---|---|
 | `onTimer` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the timer you specified has triggered an event. To know which timer, invoke the `getTarget` method in the Event class. |
+
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
