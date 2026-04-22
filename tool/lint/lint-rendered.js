@@ -35,9 +35,14 @@ function buildPermalinkMap() {
     for (const f of mdFiles) {
         const content = fs.readFileSync(f, 'utf8');
         const m = FM_RE.exec(content);
+        const rel = path.relative(REPO_ROOT, f);
         if (m) {
             const permalink = m[1].trim().replace(/\/$/, '');
-            map[permalink] = path.relative(REPO_ROOT, f);
+            map[permalink] = rel;
+        } else {
+            // Fallback: derived from file path
+            const permalink = '/' + rel.replace(/\.md$/, '').replace(/\/index$/, '');
+            map[permalink] = rel;
         }
     }
     return map;
@@ -75,6 +80,37 @@ function checkTable($, table, issues) {
     });
 }
 
+function checkFailedTables($, issues) {
+    // Check paragraphs for failed tables
+    let paragraphs = $('.page__content p, article p, main p');
+    if (paragraphs.length === 0) {
+        paragraphs = $('p');
+    }
+
+    paragraphs.each((_, p) => {
+        const $p = $(p);
+        const text = $p.text();
+        const lines = text.split('\n').map(l => l.trim());
+
+        const pipeLines = lines.filter(l => l.startsWith('|'));
+
+        if (pipeLines.length >= 2) {
+            const hasSeparator = pipeLines.some(l => 
+                /^[|\s\-—–:]+$/.test(l) && 
+                l.includes('|') && 
+                (l.includes('-') || l.includes('—') || l.includes('–'))
+            );
+
+            if (hasSeparator) {
+                issues.push({
+                    type: 'failed-table',
+                    detail: `Paragraph contains ${pipeLines.length} line(s) starting with '|' and a separator-like line. Likely a failed Markdown table.`
+                });
+            }
+        }
+    });
+}
+
 async function main() {
     if (!fs.existsSync(SITE_DIR)) {
         console.error(`Site directory not found: ${SITE_DIR}`);
@@ -92,12 +128,17 @@ async function main() {
         const html = fs.readFileSync(htmlFile, 'utf8');
         const $ = cheerio.load(html);
 
-        // Only check tables inside the main article/content area
-        const tables = $('.page__content table, article table, main table');
-        if (tables.length === 0) continue;
+        // Only check tables inside the content area. 
+        // If no wrapper is found, assume the whole file is the content (it might be a fragment).
+        let tables = $('.page__content table, article table, main table');
+        if (tables.length === 0) {
+            tables = $('table');
+        }
+        if (tables.length === 0 && $('p').length === 0) continue;
 
         const fileIssues = [];
         tables.each((_, table) => checkTable($, table, fileIssues));
+        checkFailedTables($, fileIssues);
 
         if (fileIssues.length > 0) {
             filesWithIssues++;

@@ -106,6 +106,15 @@ function check(lines) {
                 });
             }
         }
+
+        // Missing blank line: table row followed immediately by non-table, non-blank
+        if (prev !== null && isTableRow(prev) && !isTableRow(line) && !isBlank(line) && !isFenceStart(line)) {
+            issues.push({
+                lineNumber: i + 1,
+                message: 'ZK002: missing blank line after Markdown table',
+                rule: 'blank-line-issues',
+            });
+        }
     }
 
     return issues;
