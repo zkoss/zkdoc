@@ -319,6 +319,23 @@ For example,
 Try it
 *  [Input InputAttributes](https://zkfiddle.org/sample/33i8sgb/1-ZK-Component-Reference-InputElement-InputAttributes?v=latest&t=Iceblue_Compact)
 
+## Customization
+
+### onChanging event delay interval (Debouncing)
+
+The `onChanging` event is triggered as a user types in an input component. To prevent excessive server requests while the user is still typing—a technique known as **debouncing**—ZK introduces a delay before firing the event to the server.
+
+This setting is particularly relevant for:
+- **Search-as-you-type**: Waiting for a brief pause in typing before initiating a search query.
+- **Type-ahead / Autocomplete**: Reducing server-side processing and network traffic by waiting for more complete input.
+- **Performance Optimization**: Increasing the delay on high-latency networks or to reduce server load during peak usage.
+
+The default interval is `350`ms. You can adjust this globally for all input widgets using the following client-side script:
+
+```xml
+<?script content="zk.afterLoad('zul.inp',function(){zul.inp.InputWidget.onChangingDelay=1000;})"?>
+```
+
 ## Supported Events
 
 | Name        | Event Type                                            | Description                                                                                             |
