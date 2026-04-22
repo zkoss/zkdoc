@@ -131,12 +131,10 @@ public class TodoListController extends SelectorComposer<Component>{
 There is a priority radiogroup in todo item detail editor appeared on
 the right hand side when you select an item.
 
+**Todo Item's Priority Radiogroup**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch6-priority.png)
 
-<div style="text-align:center">
-**Todo Item's Priority Radiogroup**
 
-</div>
 In our application, its priority labels come from an enumerating
 `Priority` instead of a static text. We can still use *Template* to
 define how to create each *Radio* under a *Radiogroup*. The zul looks

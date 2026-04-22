@@ -22,7 +22,7 @@ When users click a row, they will be brought to the corresponding site.
 ## Sidebar Page Config
 We implement our sidebar configuration including its name, image icon path, and corresponding URL, etc. We will create each `<row>` based on `SidePage`.
 
-```Java
+```java
 public class SidebarPageConfigChapter2Impl implements SidebarPageConfig{
 
 	HashMap<String,SidebarPage> pageMap = new LinkedHashMap<String,SidebarPage>();

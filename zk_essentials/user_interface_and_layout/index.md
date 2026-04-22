@@ -13,8 +13,5 @@ The image above is the target layout we are going to create in this chapter, and
 
 ZK provides [various layout components](https://www.zkoss.org/zkdemo/layout), and each of them has different styles. You can use a layout component alone or combine them to build a more complex layout. According to our requirement, [*Border Layout*](http://www.zkoss.org/zkdemo/layout/border_layout) fits the requirement most since it has 5 areas: **north, west, center, east, and south**. We can use the north as a banner, west as a sidebar, south as a footer, and the center as the main content.
 
-![]({{site.baseurl}}/zk_essentials/images/ze-ch3-borderlayout.png)
-
-<div style="text-align:center">
 **Border Layout**
-</div>
+![]({{site.baseurl}}/zk_essentials/images/ze-ch3-borderlayout.png)
