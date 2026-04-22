@@ -60,6 +60,8 @@ get_started:
     url: /get_started/get_zk_up_and_running_with_mvc
   - title: Get ZK Up and Running with MVVM
     url: /get_started/get_zk_up_and_running_with_mvvm
+  - title: Building Cloud-Native Applications
+    url: /get_started/building_cloud_native_applications
   - title: ZK Dictionary
     url: /get_started/zk_dictionary
 zk_essentials:
