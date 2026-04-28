@@ -1,6 +1,6 @@
 ---
 author: Jumper Chen
-date: 2026-04-29
+date: 2026-04-28
 version: ZK 10
 category: small-talk
 title: "Turning a 2-Year Blocker into a Structured, AI-Assisted Migration"
