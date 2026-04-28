@@ -50,8 +50,31 @@ For each existing frontend view, the ZK equivalent is typically a ZUL template a
 
 The areas that require the most attention:
 
-- **Routing and navigation.** React and Angular handle client-side routing in JavaScript. ZK uses server-side navigation — pages are ZUL files loaded by the framework. For applications with complex navigation state that was managed in the client-side router, this requires some rethinking rather than a straight translation.
-- **State management.** React and Angular applications often have explicit state management layers (Redux, NgRx, React Context). In ZK, state lives in Java ViewModels on the server, which is simpler for most enterprise applications but requires thinking about session scope and ViewModel lifecycle.
+- **Routing and navigation.** React Router and Angular Router manage client-side navigation in JavaScript. In ZK, navigation is server-side: each page is a ZUL file, and navigation state lives in a ViewModel. A React `<Route path="/employees" element={<EmployeeList/>}/>` becomes a command that sets `currentPage` on the server, rendered via `<include src="@load(vm.currentPage)"/>`. For applications with simple linear navigation this is a direct translation. For applications with complex nested routing, browser history management, or deep-linked URLs, this requires more deliberate rethinking.
+- **State management.** React hooks (`useState`, `useEffect`) and Angular's services or NgRx manage state on the client. In ZK, state lives in Java ViewModels on the server. A `useState` variable becomes a Java field with a getter; `useEffect` with dependencies becomes `@Init` for load-time initialization or an explicit `@Command` method. The explicit `@NotifyChange` annotation replaces React's implicit reconciliation. This model is simpler for most enterprise applications, but requires understanding ViewModel scope and session lifecycle.
 - **Custom components.** If the existing application has custom React or Angular components that go beyond what standard libraries provide, assess whether ZK's built-in component library covers the same ground before starting. In most enterprise applications it will. For applications that depend heavily on custom frontend animations or highly specific visual interactions, evaluate this carefully.
+
+### A concrete reference: simple CRUD app
+
+To make the translation concrete, we built equivalent implementations of the same employee management app — one in React + Spring Boot REST, one in ZK MVVM — sharing the same JPA/service layer with identical features. The React version totalled around 1,040 lines (730 JSX/JS + 307 REST controller Java). The ZK version totalled around 940 lines (470 ViewModel Java + 467 ZUL, zero JavaScript).
+
+The table below shows how common React patterns mapped in that app:
+
+| React | ZK equivalent |
+|---|---|
+| `useState(x)` | Java field + getter + `@NotifyChange` |
+| `useEffect(() => fn, [deps])` | `@Init` (on load) or `@Command` + explicit call |
+| `onChange={handler}` | `@bind(vm.property)` (automatic two-way) |
+| `onClick={handler}` | `onClick="@command('methodName')"` |
+| `<Route path="/x" element={<X/>}/>` | Navigation button + `currentPage` field + `<include src="@load(vm.currentPage)"/>` |
+| `useParams()` | `@ExecutionArgParam("paramName")` in `@Init` |
+| `props.onSave(data)` / prop drilling | `BindUtils.postGlobalCommand(...)` + `@GlobalCommand` |
+| `axios.get('/api/employees')` | `employeeService.findAll()` (direct service call) |
+| `<input value={x} onChange={...}/>` | `<textbox value="@bind(vm.x)"/>` |
+| `employees.map(e => <ListItem/>)` | `<listbox model="@load(vm.employees)">` + `<template name="model">` |
+| Error state + inline error message | `constraint="rule: message"` attribute on the input |
+| Modal component + CSS overlay | `<window>` opened via `Executions.createComponents(...).doModal()` |
+
+**Take this table as a reference point, not a formula.** It reflects a straightforward CRUD application with simple navigation, flat state, and standard form interactions. Your application will have patterns that do not appear here — real-time updates, multi-step workflows, drag-and-drop, complex permission-driven UI, or deeply nested component trees. Some of those map cleanly to ZK built-ins; others require more work or upfront evaluation of specific ZK components. Use this table to understand the general direction of a migration, not to estimate total effort for a larger or more complex application.
 
 The migration does not need to happen all at once. Views can be migrated incrementally, with the existing client-side framework and ZK coexisting during the transition period.
