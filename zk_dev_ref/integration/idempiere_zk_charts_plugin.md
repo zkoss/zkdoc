@@ -94,6 +94,10 @@ Artifacts are written to `target/`.
 
 4) See `org.idempiere.zkcharts.example/src/web/sample.zul` for a ZK Charts usage example (for example, `<charts .../>`).
 
+### Loading ZUL files from the plugin bundle
+
+When a ZUL file is packaged in the normal plugin bundle, use a classpath-style path such as `~./sample.zul` and switch the thread context classloader to the plugin classloader before calling `Executions.createComponents`. See [Loading ZUL files from the plugin bundle](/zk_dev_ref/integration/idempiere_zk_enterprise_plugin#loading-zul-files-from-the-plugin-bundle) in the ZK EE plugin guide for the detailed explanation and code pattern.
+
 ## Deploy and verify
 
 1) Start the iDempiere runtime.

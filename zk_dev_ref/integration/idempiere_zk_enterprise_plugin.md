@@ -95,6 +95,24 @@ Artifacts are written to `target/`.
 
 4) See `org.idempiere.zkee.comps.example/src/web/form.zul` for EE widget usage (for example, `<timepicker .../>`).
 
+### Loading ZUL files from the plugin bundle
+
+The ZK PE/EE jars must be in a fragment because ZK discovers widget definitions, such as `lang-addon.xml`, through the `org.adempiere.ui.zk` host bundle classloader. Your application form code and ZUL files can stay in the normal plugin bundle.
+
+When a ZUL file is packaged in the plugin bundle, load it with a classpath-style path such as `~./form.zul` and temporarily switch the thread context classloader to the plugin classloader before calling `Executions.createComponents`. This allows ZK to resolve both the ZUL file and any classes referenced from it through the plugin bundle.
+
+```java
+ClassLoader original = Thread.currentThread().getContextClassLoader();
+try {
+    Thread.currentThread().setContextClassLoader(getClass().getClassLoader());
+    Executions.createComponents("~./form.zul", parent, null);
+} finally {
+    Thread.currentThread().setContextClassLoader(original);
+}
+```
+
+Always restore the original classloader in `finally`; iDempiere web requests run on pooled threads. If you instead use a leading slash path such as `/zul/form.zul`, ZK resolves it from the web application or host bundle context, so resources inside a normal plugin bundle will not be found. Another possible design is to put ZUL files in a fragment, but keeping application ZUL files in the plugin bundle plus the classloader swap keeps UI code and resources together.
+
 ## Deploy and verify
 
 1) Start the iDempiere runtime.
@@ -121,4 +139,5 @@ References:
 - [OSGi fragments overview](https://vogella.com/blog/osgi-bundles-fragments-dependencies/)
 - [bnd Fragment-Host docs](https://bnd.bndtools.org/heads/fragment_host.html)
 - [iDempiere Wiki - Make ZK WebApp OSGi](https://wiki.idempiere.org/en/Make_Zk_WebApp_OSGi)
+- [iDempiere forum - How to reference an included ZUL file in customization bundle](https://groups.google.com/g/idempiere/c/rb8T9W9SEP8)
 - [Github - zkoss-demo/zkoss-idempiere-ee-plugin](https://github.com/zkoss-demo/zkoss-idempiere-ee-plugin)
