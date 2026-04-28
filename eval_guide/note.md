@@ -3,8 +3,6 @@ title: "Note"
 permalink: /eval-guide/note/
 ---
 
-# Note
-
 ## Note on methodology and scope
 
 This guide is based on hands-on implementation of comparable applications across multiple frameworks, supported by documentation review and tooling-assisted development.
