@@ -178,7 +178,7 @@ ZK and Vaadin both achieve zero JavaScript at Level 2. The distinction between t
 
 ### Scope
 
-Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf, and Wicket showed explanation cards documenting the implementation approach, estimated lines of code, and developer effort.
+Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf, and Wicket ran as minimal Spring Boot applications but showed placeholder views — styled panels rendered within the app in place of each unimplemented feature, describing the libraries, infrastructure, and developer effort that would be required.
 
 ### Feature 1: Large Dataset Grid (10,000 rows)
 
@@ -196,6 +196,8 @@ Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf,
 
 **Angular note:** Angular CDK Virtual Scroll is built-in, which is an advantage over React (external library). However, the developer must wire it explicitly: `itemSize` strategy, `trackBy` functions, viewport connection.
 
+**Wicket/React/Angular/Thymeleaf note:** LOC estimated — these frameworks were not fully implemented at Level 3. The LOC represents a reasonable implementation scope based on the integration approach described, not measured code.
+
 ### Feature 2: Real-Time Server Push Dashboard
 
 | Metric | ZK | Vaadin | React | Angular | Thymeleaf | Wicket |
@@ -210,9 +212,9 @@ Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf,
 
 **Vaadin note:** `@Push` must be on `AppShellConfigurator` (not `AppLayout` — placing it there causes a startup `RuntimeException`). All UI updates must be wrapped in `ui.access()` to ensure thread safety.
 
-**Wicket note:** `AbstractAjaxTimerBehavior` is client-initiated polling, not true server push. Suitable for low-frequency updates; not suitable for applications requiring immediate push delivery.
+**Wicket note:** `AbstractAjaxTimerBehavior` is client-initiated polling, not true server push. Suitable for low-frequency updates; not suitable for applications requiring immediate push delivery. The LOC represents a reasonable implementation scope based on the integration approach described, not measured code.
 
-**React/Angular/Thymeleaf note:** Achieving real-time push requires assembling WebSocket infrastructure on both server and client sides. None of these frameworks provide a built-in mechanism.
+**React/Angular/Thymeleaf note:** Achieving real-time push requires assembling WebSocket infrastructure on both server and client sides. None of these frameworks provide a built-in mechanism. The LOC represents a reasonable implementation scope based on the integration approach described, not measured code.
 
 ### Total UI LOC and JavaScript written — Level 3
 
@@ -274,3 +276,5 @@ For Level 2, JavaScript embedded inside Java string literals (as in Wicket's `re
 The Level 2 measurements reflect fully functional implementations wherever a framework-appropriate solution was available. Where a commercial placeholder was used (Angular's pivot table), it is noted and excluded from line counts.
 
 The React and Angular Level 2 applications were built as standalone frontend applications with no Spring Boot backend, using hardcoded mock data. This reflects how these frameworks are typically developed when the backend is separate — the frontend is a self-contained application.
+
+Level 3 line counts for React, Angular, and Thymeleaf are estimates only — these frameworks were not implemented, and no code was written or measured. The figures in the Feature 1 and Feature 2 tables reflect the expected scope of a complete implementation based on the documented integration patterns, not actual measurements.
