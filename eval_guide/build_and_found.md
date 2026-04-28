@@ -98,7 +98,7 @@ Thymeleaf's low line count reflects the conciseness of HTML templates plus brief
 
 ### On the Live HR Operations Center (Level 3):
 
-This is where the architectural divide between server-side and client-side frameworks became most concrete. Two features were tested: a 10,000-row virtual grid and a real-time server-push dashboard. Both were fully implemented in ZK and Vaadin. The other four frameworks showed explanation cards documenting what would be required.
+This is where the architectural divide between server-side and client-side frameworks became most concrete. Two features were tested: a 10,000-row virtual grid and a real-time server-push dashboard. Both were fully implemented in ZK and Vaadin. For the other four frameworks: React, Angular, Thymeleaf, and Wicket, the applications ran but showed placeholder views in place of each unimplemented feature. Each placeholder is a styled panel within the running application that describes what would be required to implement the feature in that framework: which libraries to integrate, what infrastructure to set up, and what the developer would be responsible for. The full breakdown per framework is in Part 4-7.
 
 Large dataset grid (10,000 rows): ZK enabled render-on-demand (ROD) with a single XML attribute — the full dataset loads into a `ListModel`, and ZK renders only the visible rows. The total UI code was 64 lines. Vaadin used `DataProvider.fromCallbacks()` with server-side pagination — 50 lines of Java.
 
