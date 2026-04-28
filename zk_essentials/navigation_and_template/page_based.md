@@ -4,13 +4,10 @@ A traditional web application's navgation is usually designed as page-based. Eac
 function. Additionally, developers also have to maintain multiple pages
 that have similar contents but applying a template zul can reduce this problem.
 
+**Page-based Navigation**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch7-page-based-navigation.png)
 
-<div style="text-align:center">
-**Page-based Navigation**
-</div>
 
-<br/>
 To build a page-based navigation, first you should prepare corresponding pages for those items in the sidebar.
 
 From below image, you can see there are 4 zul pages which correspond

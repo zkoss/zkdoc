@@ -1,6 +1,6 @@
 // ZK002 — blank-line-issues
 // Detects MediaWiki-conversion blank-line artifacts:
-//   a) Blank line inside a Markdown table (between header row and body)
+//   a) Blank line inside a Markdown table (specifically after the separator row)
 //   b) Missing blank line between list and following paragraph/table/code block
 //   c) Missing blank line before or after a fenced code block
 //   d) Two or more consecutive blank lines anywhere
@@ -8,19 +8,23 @@
 // --fix mode applies safe whitespace-only normalization.
 
 function isTableRow(line) {
-    return line.trimStart().startsWith('|');
+    return line && line.trimStart().startsWith('|');
+}
+
+function isSeparatorRow(line) {
+    return isTableRow(line) && /^[|\s\-—–:]+$/.test(line.trim()) && line.includes('-');
 }
 
 function isListItem(line) {
-    return /^\s*[-*+]\s|^\s*\d+\.\s/.test(line);
+    return line && /^\s*[-*+]\s|^\s*\d+\.\s/.test(line);
 }
 
 function isFenceStart(line) {
-    return /^```/.test(line.trimStart());
+    return line && /^```/.test(line.trimStart());
 }
 
 function isBlank(line) {
-    return line.trim() === '';
+    return !line || line.trim() === '';
 }
 
 function check(lines) {
@@ -37,13 +41,12 @@ function check(lines) {
 
         // Track fenced code blocks
         if (isFenceStart(line)) {
+            const wasInFence = inFence;
             inFence = !inFence;
 
-            if (!inFence) {
-                // Closing fence — next non-blank line needs a blank line before it (already guaranteed by closing fence)
-                // Check: blank line BEFORE opening fence
-                if (!inFence && prev !== null && !isBlank(prev) && !isFenceStart(prev)) {
-                    // opening fence with no preceding blank
+            if (!wasInFence) {
+                // Opening fence
+                if (prev !== null && !isBlank(prev) && !isFenceStart(prev)) {
                     issues.push({
                         lineNumber: i + 1,
                         message: 'ZK002: missing blank line before fenced code block',
@@ -51,11 +54,11 @@ function check(lines) {
                     });
                 }
             } else {
-                // Opening fence
-                if (prev !== null && !isBlank(prev) && !isFenceStart(prev)) {
+                // Closing fence
+                if (next !== null && !isBlank(next) && !isFenceStart(next)) {
                     issues.push({
                         lineNumber: i + 1,
-                        message: 'ZK002: missing blank line before fenced code block',
+                        message: 'ZK002: missing blank line after fenced code block',
                         rule: 'blank-line-issues',
                     });
                 }
@@ -71,12 +74,15 @@ function check(lines) {
         if (isTableRow(line)) {
             inTable = true;
         } else if (inTable && isBlank(line)) {
-            // blank line inside table region
-            issues.push({
-                lineNumber: i + 1,
-                message: 'ZK002: blank line inside Markdown table breaks rendering',
-                rule: 'blank-line-issues',
-            });
+            // Only flag if followed by another table row (MediaWiki artifact)
+            // AND the previous line was a separator (e.g. |---|), meaning it's an accidental break in a single table
+            if (next !== null && isTableRow(next) && isSeparatorRow(prev)) {
+                issues.push({
+                    lineNumber: i + 1,
+                    message: 'ZK002: blank line inside Markdown table breaks rendering',
+                    rule: 'blank-line-issues',
+                });
+            }
             inTable = false;
         } else if (!isBlank(line)) {
             inTable = false;
@@ -131,19 +137,22 @@ function fix(content) {
         let prevLine = out.length > 0 ? out[out.length - 1] : null;
 
         if (isFenceStart(line)) {
+            const wasInFence = inFence;
             inFence = !inFence;
             // Ensure blank line before opening fence
-            if (inFence && prevLine !== null && !isBlank(prevLine)) {
+            if (!wasInFence && prevLine !== null && !isBlank(prevLine)) {
                 out.push('');
                 prevLine = '';
             }
         }
 
         if (!inFence) {
-            // Remove blank lines inside tables (MediaWiki artifacts)
+            // Remove blank lines inside tables (specifically after separator row - MediaWiki artifacts)
             if (isBlank(line) && inTable) {
                 const nextLine = i < lines.length - 1 ? lines[i + 1] : null;
-                if (nextLine !== null && isTableRow(nextLine)) {
+                // Only delete if it looks like it's within a single table structure
+                // MediaWiki often leaves a blank line right after the header separator
+                if (nextLine !== null && isTableRow(nextLine) && isSeparatorRow(prevLine)) {
                     continue; 
                 }
             }
@@ -153,9 +162,10 @@ function fix(content) {
                 continue;
             }
 
-            // Fix missing blank line after table
+            // Fix missing blank line after table or closing fence
             if (prevLine !== null && !isBlank(prevLine) && !isBlank(line) && !isFenceStart(line)) {
-                if (isTableRow(prevLine) && !isTableRow(line)) {
+                const prevWasClosingFence = i > 0 && isFenceStart(lines[i-1]) && !inFence;
+                if ((isTableRow(prevLine) && !isTableRow(line)) || prevWasClosingFence) {
                     out.push('');
                     prevLine = '';
                     inTable = false;

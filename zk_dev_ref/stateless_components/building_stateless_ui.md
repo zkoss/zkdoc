@@ -35,6 +35,7 @@ dependencies {
 
 We will use the simple shopping cart application as an example to
 introduce the basic features of stateless components ([download the shopping cart example project](https://github.com/zkoss-demo/zk10-shopping-cart-demo)):
+
 ![]({{site.baseurl}}/zk_dev_ref/images/shoppingcart.png)
 
 # Building UI with Richlet

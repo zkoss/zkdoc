@@ -3,12 +3,10 @@ In this chapter, we are going to build a "todo list" with 4 basic operations, cr
 
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch6-app.png)
 
+**Select a Todo Item**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch6-app-selected.png)
 
-<div style="text-align:center">
-**Select a Todo Item**
 
-</div>
 It is a personal todo list management system and it has following
 features:
 

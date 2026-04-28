@@ -76,11 +76,11 @@ icon and its title, and the footer at the bottom contains general
 information. The central area displays the current main function. You
 must login before you can access other functions.
 
+**Example application - login**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch8-login.png)
 
-<div style="text-align:center">
-**Example application - login**
-</div>
+
+
 
 After login, you can see the main page. The sidebar on the left is a
 navigation bar that allows you to switch between different functions.
@@ -88,17 +88,16 @@ The upper three items lead you to external sites. There are 2 main
 functions, profile and todo list management, which are implemented by
 both the MVC and MVVM approach.
 
+**Example application - profile form**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch1-profile.png)
 
-<div style="text-align:center">
-**Example application - profile form**
-</div>
+
+
 
 The image below shows the Todo list management function, you can create,
 delete, and update a todo item.
 
+**Example application - todo list**
 ![]({{site.baseurl}}/zk_essentials/images/ze-ch1-todo.png)
 
-<div style="text-align:center">
-**Example application - todo list**
-</div>
+
