@@ -1,6 +1,6 @@
 ---
 author: Jumper Chen
-date: 2026-04-28
+date: 2026-04-29
 version: ZK 10
 category: small-talk
 title: "Turning a 2-Year Blocker into a Structured, AI-Assisted Migration"
@@ -15,7 +15,7 @@ We lived this story ourselves. And then we found a way out — not by throwing m
 
 ## The Application Nobody Wanted to Upgrade
 
-ZK Fiddle is a 13-year-old web application built on the ZK framework. By the numbers: 188 Java classes, 15 ZUL pages, 5 custom UI components, and 5 Maven modules — a fairly typical enterprise Java project. It had been running on ZK 8.6.4, Jetty 9, and JDK 1.6 for years.
+ZK Fiddle is a 13-year-old web application initially built on ZK 6. By the numbers: 188 Java classes, 15 ZUL pages, 5 custom UI components, and 5 Maven modules — a fairly typical enterprise Java project. It had been running on ZK 8.6.4, Jetty 9, and JDK 1.6 for years.
 
 In early 2024, we set a six-week window to modernize the stack. We successfully upgraded the infrastructure layer, including JDK 1.6 to 11 and Jetty 9 to 10 — within the first three weeks. However, when we turned our attention to the UI framework and application migration, we hit three simultaneous roadblocks:
 
