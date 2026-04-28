@@ -46,7 +46,7 @@ public class SidebarPageConfigPagebasedImpl implements SidebarPageConfig{
         pageMap.put("zk",new SidebarPage("zk","www.zkoss.org","/imgs/site.png","http://www.zkoss.org/"));
         pageMap.put("demo",new SidebarPage("demo","ZK Demo","/imgs/demo.png","http://www.zkoss.org/zkdemo"));
         pageMap.put("devref",new SidebarPage("devref","ZK Developer Reference","/imgs/doc.png"
-                ,"http://books.zkoss.org/wiki/ZK_Developer's_Reference"));
+                ,"/zk_dev_ref/"));
 
         pageMap.put("fn1",new SidebarPage("fn1","Profile (MVC)","/imgs/fn.png"
                 ,"/chapter6/pagebased/index-profile-mvc.zul"));

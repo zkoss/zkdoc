@@ -492,7 +492,7 @@ zkplus-legacy is no longer available. If you need to upgrade a ZK
 application using Annotate Data Binder, we recommend rewriting the
 relevant pages to use the modern ZK MVVM databinding instead. Please
 refer to [ZK MVVM
-Reference](https://books.zkoss.org/zk-mvvm-book/10.0/index.html).
+Reference]({{site.baseurl}}/zk_mvvm_ref/).
 
 ## Add-on Compatibility
 

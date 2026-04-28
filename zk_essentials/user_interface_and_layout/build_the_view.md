@@ -10,7 +10,7 @@ You can even mix these two ways. For example, create a simple page with zul, the
 In addition to above ways,  [richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet) allows you to compose the whole page in Java programmatically.
 
 # Write a ZUL File
-To create components in ZUML, you need to create a file with the file extension "**.zul**". In zul files, an XML element(tag) represent one component, and you can configure each component's style, behavior, and function by setting the element's attributes. Please refer to [ZK Component Reference](https://books.zkoss.org/wiki/ZK_Component_Reference) and [Javadoc](http://zkoss.org/javadoc/latest/zk/) for complete component attributes.
+To create components in ZUML, you need to create a file with the file extension "**.zul**". In zul files, an XML element(tag) represent one component, and you can configure each component's style, behavior, and function by setting the element's attributes. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/) and [Javadoc](http://zkoss.org/javadoc/latest/zk/) for complete component attributes.
 
 A very simple, classic zul example is like:
 
@@ -167,7 +167,7 @@ suitable for arranging child components in a matrix layout.
         </row>
         <row>
             <image src="/imgs/doc.png"/>
-            <a href="http://books.zkoss.org/wiki/ZK_Developer's_Reference">
+            <a href="https://docs.zkoss.org/zk_dev_ref/">
             ZK Developer Reference
             </a>
         </row>

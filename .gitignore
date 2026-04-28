@@ -2,3 +2,6 @@ tool/node_modules
 venv
 logs
 .jekyll-metadata
+.mcp.json
+.env
+.claude/

@@ -278,7 +278,7 @@ ZK provides the ability to handle events in ViewModel by using `@command` or `@g
   </tbody>
 </table>
 
-For more details on retrieving the event object, you can refer to the [Retrieve Event Object](https://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html#retrieve-event-object) documentation.
+For more details on retrieving the event object, you can refer to the [Retrieve Event Object]({{site.baseurl}}/zk_mvvm_ref/advanced/parameters#retrieve-event-object) documentation.
 
 ## Properties
 The `Fragment` component supports the following properties:

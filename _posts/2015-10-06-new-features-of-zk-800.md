@@ -158,7 +158,7 @@ public class OrderVM {
 ```
 
 for more information, please consult the [ZK MVVM
-Reference](http://books.zkoss.org/zk-mvvm-book/8.0/syntax/smartnotifychange.html)
+Reference]({{site.baseurl}}/zk_mvvm_ref/syntax/smartnotifychange)
 and the [new form binding
 blog](http://blog.zkoss.org/index.php/2015/02/03/zk8-new-form-binding-approach/).
 
@@ -276,7 +276,7 @@ following shows an example of usage:
 ```
 
 for more information, please refer to [refer to our ZK MVVM
-Reference](http://books.zkoss.org/zk-mvvm-book/8.0/data_binding/converter.html#use-built-in-converter).
+Reference]({{site.baseurl}}/zk_mvvm_ref/data_binding/converter#use-built-in-converter).
 
 # New components & enhancements
 

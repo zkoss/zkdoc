@@ -20,7 +20,7 @@ We can declare variables and write statements in `<zscript>`. ZK will run it whe
 
         sites.put("zk","http://www.zkoss.org/");
         sites.put("demo","http://www.zkoss.org/zkdemo");
-        sites.put("devref","http://books.zkoss.org/wiki/ZK_Developer's_Reference");
+        sites.put("devref","https://docs.zkoss.org/zk_dev_ref/");
     ]]></zscript>
 ...
 ```

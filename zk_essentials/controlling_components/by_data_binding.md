@@ -1,6 +1,6 @@
 # MVVM Pattern
 In addition to the MVC approach, ZK also allows you to design your
-application in another architecture: [ *MVVM (Model-View-ViewModel)*](http://books.zkoss.org/zk-mvvm-book/8.0/index.html).
+application in another architecture: [ *MVVM (Model-View-ViewModel)*]({{site.baseurl}}/zk_mvvm_ref/).
 This architecture also divides an application into 3 roles: **View**, **Model**,
 and **ViewModel**.
 * **Model** is responsible for exposing data while performing business
@@ -113,7 +113,7 @@ In ZK, to declare a command method in a ViewModel, you should apply
 annotation `@Command` to a method. You could specify a command
 name which is the method's name by default if no specified.
 
-Our sidebar just has one behavior: redirect a browser to the corresponding URL. In order to get the URL, we need to accept `SidebarPage` as a parameter with [`@BindingParam`](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html):
+Our sidebar just has one behavior: redirect a browser to the corresponding URL. In order to get the URL, we need to accept `SidebarPage` as a parameter with [`@BindingParam`]({{site.baseurl}}/zk_mvvm_ref/advanced/parameters):
 
 ```Java
 public class SidebarViewModel {

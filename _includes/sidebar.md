@@ -29,7 +29,7 @@ public class SidebarPageConfigChapter2Impl implements SidebarPageConfig{
 	public SidebarPageConfigChapter2Impl(){		
 		pageMap.put("fn1",new SidebarPage("zk","ZK","/imgs/site.png","http://www.zkoss.org/"));
 		pageMap.put("fn2",new SidebarPage("demo","ZK Demo","/imgs/demo.png","http://www.zkoss.org/zkdemo"));
-		pageMap.put("fn3",new SidebarPage("devref","ZK Developer Reference","/imgs/doc.png","http://books.zkoss.org/wiki/ZK_Developer's_Reference"));
+		pageMap.put("fn3",new SidebarPage("devref","ZK Developer Reference","/imgs/doc.png","https://docs.zkoss.org/zk_dev_ref/"));
 	}
 
 	...

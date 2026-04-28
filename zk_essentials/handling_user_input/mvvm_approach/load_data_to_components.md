@@ -61,7 +61,7 @@ public class ProfileViewModel implements Serializable{
 }    
 ```
 
-If you need ZK context object like `Desktop` at initialization, please refer to [`@Init`](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/parameters.html).
+If you need ZK context object like `Desktop` at initialization, please refer to [`@Init`]({{site.baseurl}}/zk_mvvm_ref/advanced/parameters).
 
 # Apply a ViewModel on a Component
 

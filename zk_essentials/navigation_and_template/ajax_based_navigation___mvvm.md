@@ -2,7 +2,7 @@
 
 Surely we can also implement AJAX-based navigation in MVVM approach. Every page are quite similar with previous section. Just switch different pages with data binding.
 
-In this example, we modularize each page with an independent ViewModel. In order to communicate between sidebar and content area that are bound with different ViewModels, we need to use [global command binding](http://books.zkoss.org/zk-mvvm-book/8.0/data_binding/global_command_binding.html). You can treat it as a command binding mentioned in previous chapter, but it can invoke a command method declared in other ViewModels.
+In this example, we modularize each page with an independent ViewModel. In order to communicate between sidebar and content area that are bound with different ViewModels, we need to use [global command binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/global_command_binding). You can treat it as a command binding mentioned in previous chapter, but it can invoke a command method declared in other ViewModels.
 
 The basic idea is: sidebar sends a global command when a user clicks an item then content area change *Include* component's `src` attribute to navigate pages.
 

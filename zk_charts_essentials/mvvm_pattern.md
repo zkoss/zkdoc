@@ -7,14 +7,14 @@ usages.
 
 # Get Charts
 
-Get a `Charts` by `wireComponents()`, please refer to [MVVM Reference / Wire Components](http://books.zkoss.org/zk-mvvm-book/8.0/advanced/wire_components.html)
+Get a `Charts` by `wireComponents()`, please refer to [MVVM Reference / Wire Components]({{site.baseurl}}/zk_mvvm_ref/advanced/wire_components)
 
 ```java
 public class ShiftViewModel {
     @Wire
     Charts chart;
 
-    //http://books.zkoss.org/zk-mvvm-book/8.0/advanced/wire_components.html
+    // https://docs.zkoss.org/zk_mvvm_ref/advanced/wire_components
     @AfterCompose
     public void doAfterCompose(@ContextParam(ContextType.VIEW) Component view) throws Exception {
         Selectors.wireComponents(view, this, false);
