@@ -2,7 +2,7 @@
 title: "Evaluator's Guide: Choosing a Web UI Framework"
 permalink: /eval-guide/
 ---
-
+# Evaluator's Guide: Choosing a Web UI Framework 
 *A practical, project-based guide for developers, architects, and teams*
 
 Choosing a UI framework is one of those decisions that feels small at the time — and then shapes everything that follows.
