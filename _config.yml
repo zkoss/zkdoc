@@ -140,6 +140,11 @@ defaults:
     values:
       sidebar:
         nav: "small_talk"
+  - scope:
+      path: "eval_guide"
+    values:
+      sidebar:
+        nav: "eval_guide"
 
 category_archive:
   type: liquid

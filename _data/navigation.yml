@@ -13,6 +13,8 @@ main:
     url: /zuml_ref/
   - title: Small Talks
     url: /categories/#small-talk
+  - title: "Evaluator's Guide"
+    url: /eval-guide/
   - title: ZK Installation Guide
     url: /zk_installation_guide/
   - title: ZK Configuration Reference
@@ -3107,3 +3109,79 @@ zuml_ref:
 small_talk:
   - title: "All Small Talk Articles"
     url: /categories/#small-talk
+
+eval_guide:
+  - title: "How to Choose"
+    url: /eval-guide/how-to-choose/
+    children:
+      - title: "How to Choose a Web UI Framework"
+        url: /eval-guide/choose-web-ui-framework/
+      - title: "Key Factor: Team Skills and Stack"
+        url: /eval-guide/team-skills-java-vs-js/
+      - title: "Key Factor: Application Type"
+        url: /eval-guide/application-type/
+      - title: "Key Factor: Architecture & Complexity"
+        url: /eval-guide/architecture-complexity/
+      - title: "Key Factor: Development Speed"
+        url: /eval-guide/development-speed/
+      - title: "Key Factor: Enterprise Requirements"
+        url: /eval-guide/enterprise-requirements/
+      - title: "Key Factor: Maintainability"
+        url: /eval-guide/maintainability/
+      - title: "Key Factor: Priority & Trade-offs"
+        url: /eval-guide/priority/
+  - title: "The Landscape"
+    url: /eval-guide/landscape/
+    children:
+      - title: "Client-Side / SPA Frameworks"
+        url: /eval-guide/client-side/
+      - title: "Server-Side / Java-Centric Frameworks"
+        url: /eval-guide/server-side/
+      - title: "Server-Side Templating: Traditional MVC"
+        url: /eval-guide/server-side-templating/
+      - title: "Hybrid and Mixed Approaches"
+        url: /eval-guide/hybrid/
+  - title: "Right Tool for the Right Job"
+    url: /eval-guide/right-tool/
+    children:
+      - title: "The Frameworks at a Glance"
+        url: /eval-guide/frameworks-at-a-glance/
+      - title: "Decision Guide"
+        url: /eval-guide/decision-guide/
+  - title: "Deep Dive"
+    url: /eval-guide/deep-dive/
+    children:
+      - title: "What We Built and What We Found"
+        url: /eval-guide/build-and-found/
+      - title: "ZK vs React"
+        url: /eval-guide/zk-react/
+      - title: "ZK vs Angular"
+        url: /eval-guide/zk-angular/
+      - title: "ZK vs Apache Wicket"
+        url: /eval-guide/zk-wicket/
+      - title: "ZK vs Thymeleaf + Spring MVC"
+        url: /eval-guide/zk-thymeleaf/
+#      - title: "ZK vs Vaadin"
+#       url: /eval-guide/zk-vaadin/
+#     - title: "Project Setup and Detailed Measurements"
+#        url: /eval-guide/project-setup/
+  - title: "Migration & Real-World Decisions"
+    url: /eval-guide/migration/
+    children:
+      - title: "Migrating from a Client-Side Framework to ZK"
+        url: /eval-guide/client-side-to-zk/
+      - title: "Reassessing Your Use of ZK"
+        url: /eval-guide/reassessing/
+      - title: "Modernizing Legacy Java Web"
+        url: /eval-guide/legacy-java-to-zk/
+  - title: "AI & Future"
+    url: /eval-guide/ai-future/
+    children:
+      - title: "How AI Is Changing Web UI Development"
+        url: /eval-guide/ai-changing-web-ui-development/
+      - title: "Do You Still Need Frontend Frameworks in the AI Era?"
+        url: /eval-guide/do-you-still-need-frontend-frameworks/
+      - title: "Where ZK Fits in an AI-Driven Development World"
+        url: /eval-guide/zk-in-ai-driven-development/
+  - title: "Note"
+    url: /eval-guide/note/
