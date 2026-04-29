@@ -10,7 +10,7 @@ because each `Series` can be rendered as different chart types.
 
 # Create a Series
 
-You don't need to instantiate `Series` by yourselves, just call
+You don't need to instantiate `Series` yourself; just call
 `getSeries(index)` and its underlying implementation creates for you:
 
 ```java
@@ -46,31 +46,31 @@ public class SeriesComposer extends SelectorComposer<Window> {
     private void initData() {
         chart.getXAxis().setType("category");
         Series series0 = chart.getSeries(0);
-        series0.setData(new Point("apples", 5), new Point("pears", 9), new Point("oragnes", 4), new Point("bannas", 8), new Point("grapes", 10));
+        series0.setData(new Point("apples", 5), new Point("pears", 9), new Point("oranges", 4), new Point("bananas", 8), new Point("grapes", 10));
         series0.setType("area");
         series0.setName("John");
         
         Series series1 = chart.getSeries(1);
-        series1.setData(new Point("apples", 2),  new Point("pears", 1),new Point("oragnes", 3), new Point("bannas", 5), new Point("grapes", 9));
+        series1.setData(new Point("apples", 2),  new Point("pears", 1),new Point("oranges", 3), new Point("bananas", 5), new Point("grapes", 9));
         series1.setType("column");
         series1.setName("Peter");
     }
 }
 ```
 
-- Line 14: If there is missing points, just pass null like
+- For missing points, just pass null like
   `new Point("category", null)`
 
 # Clear/Remove Series
 
 ```java
     @Listen("onClick = #clear")
-    public void clear(){
-        int seriesSize = chart.getSeriesSize();
-        for (int i = 0; i < seriesSize; i++){
+    public void clear() {
+        while (chart.getSeriesSize() > 0) {
             chart.getSeries().remove();
         }
     }
 ```
 
-- `getSeriesSize()` changes for each removal
+- Iterate with `while` because `getSeriesSize()` decreases on each
+  removal; a fixed-bound `for` loop will skip half the series.

@@ -1,16 +1,20 @@
-# Manipulating Model
+---
+title: "Manipulating Chart Model"
+---
+
+# Manipulating Chart Model
 
 Models are the perfect way for developers to interact with the charts as
 they shield developers from complexities that they need not know or
 interact with. In addition to this ZK model supports many design
-patterns including [ MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc)
-and [ MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/mvvm_and_zk_bind), which are both
+patterns including [MVC]({{site.baseurl}}/zk_dev_ref/mvc/mvc)
+and [MVVM]({{site.baseurl}}/zk_mvvm_ref/intro/mvvm_and_zk_bind), which are both
 fully supported patterns.
 
-ZK provides [ chart models]({{site.baseurl}}/zk_dev_ref/mvc/chart_model) to
+ZK provides [chart models]({{site.baseurl}}/zk_dev_ref/mvc/chart_model) to
 handle data in the chart. Manipulating chart model with charts is the
 same as other ZK components handling their supporting models. We've used
-MVC approach to create the chart in the previous section - [ Create your first ZK Charts]({{site.baseurl}}/zk_charts_essentials/create_your_first_zk_charts).
+MVC approach to create the chart in the previous section - [Create your first ZK Charts]({{site.baseurl}}/zk_charts_essentials/create_your_first_zk_charts).
 In this section, we will create another example of manipulating the
 chart model in the MVVM approach.
 
@@ -27,15 +31,15 @@ public class ChartData {
         // Use the predefined implementation DefaultXYModel to create a model.
         XYModel model = new DefaultXYModel();
 
-        model.addValue("2001", new Integer(20), new Integer(120));
-        model.addValue("2001", new Integer(40), new Integer(135));
-        model.addValue("2001", new Integer(60), new Integer(140));
-        model.addValue("2001", new Integer(80), new Integer(160));
+        model.addValue("2001", 20, 120);
+        model.addValue("2001", 40, 135);
+        model.addValue("2001", 60, 140);
+        model.addValue("2001", 80, 160);
          
-        model.addValue("2002", new Integer(30), new Integer(120));
-        model.addValue("2002", new Integer(50), new Integer(135));
-        model.addValue("2002", new Integer(70), new Integer(140));
-        model.addValue("2002", new Integer(90), new Integer(160));
+        model.addValue("2002", 30, 120);
+        model.addValue("2002", 50, 135);
+        model.addValue("2002", 70, 140);
+        model.addValue("2002", 90, 160);
 
         return model;
     }
@@ -120,10 +124,10 @@ public class PieChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         PieModel model = new DefaultPieModel();
-        model.setValue("C/C++", new Double(12.5));
-        model.setValue("Java", new Double(50.2));
-        model.setValue("VB", new Double(20.5));
-        model.setValue("PHP", new Double(15.5));
+        model.setValue("C/C++", 12.5);
+        model.setValue("Java", 50.2);
+        model.setValue("VB", 20.5);
+        model.setValue("PHP", 15.5);
         
         chart.setModel(model);
     }
@@ -150,11 +154,11 @@ public class FunnelChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         SingleValueCategoryModel model = new DefaultSingleValueCategoryModel();
-        model.setValue("Step 1", new Double(142.2));
-        model.setValue("Step 2", new Double(30.2));
-        model.setValue("Step 3", new Double(40.4));
-        model.setValue("Step 4", new Double(28.2));
-        model.setValue("Step 5", new Double(10.2));
+        model.setValue("Step 1", 142.2);
+        model.setValue("Step 2", 30.2);
+        model.setValue("Step 3", 40.4);
+        model.setValue("Step 4", 28.2);
+        model.setValue("Step 5", 10.2);
         
         chart.setModel(model);
         
@@ -184,14 +188,14 @@ public class LineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -218,14 +222,14 @@ public class XYLineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -254,14 +258,14 @@ public class SplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -288,14 +292,14 @@ public class XYSplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -324,14 +328,14 @@ public class AreaChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -358,14 +362,14 @@ public class XYAreaChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -392,14 +396,14 @@ public class StackedAreaChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
         
@@ -428,14 +432,14 @@ public class XYStackedAreaChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(20), new Integer(100));
-        model.addValue("1901", new Integer(40), new Integer(120));
-        model.addValue("1901", new Integer(60), new Integer(110));
-        model.addValue("1901", new Integer(80), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 20, 100);
+        model.addValue("1901", 40, 120);
+        model.addValue("1901", 60, 110);
+        model.addValue("1901", 80, 140);
         
         chart.setModel(model);
         
@@ -466,14 +470,14 @@ public class AreaSplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -500,14 +504,14 @@ public class XYAreaSplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -534,14 +538,14 @@ public class StackedAreaSplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
         
@@ -570,14 +574,14 @@ public class XYStackedAreaSplineChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(20), new Integer(100));
-        model.addValue("1901", new Integer(40), new Integer(120));
-        model.addValue("1901", new Integer(60), new Integer(110));
-        model.addValue("1901", new Integer(80), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 20, 100);
+        model.addValue("1901", 40, 120);
+        model.addValue("1901", 60, 110);
+        model.addValue("1901", 80, 140);
         
         chart.setModel(model);
         
@@ -608,14 +612,14 @@ public class BarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -642,14 +646,14 @@ public class XYBarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -676,14 +680,14 @@ public class StackedBarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
         
@@ -712,14 +716,14 @@ public class XYStackedBarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(20), new Integer(100));
-        model.addValue("1901", new Integer(40), new Integer(120));
-        model.addValue("1901", new Integer(60), new Integer(110));
-        model.addValue("1901", new Integer(80), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 20, 100);
+        model.addValue("1901", 40, 120);
+        model.addValue("1901", 60, 110);
+        model.addValue("1901", 80, 140);
         
         chart.setModel(model);
         
@@ -750,14 +754,14 @@ public class ColumnChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
     }
@@ -784,14 +788,14 @@ public class XYColumnChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -818,14 +822,14 @@ public class StackedColumnChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(75));
-        model.setValue("1901", "Q3", new Integer(80));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 75);
+        model.setValue("1901", "Q3", 80);
+        model.setValue("1901", "Q4", 120);
         
         chart.setModel(model);
         
@@ -854,14 +858,14 @@ public class XYStackedColumnChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(20), new Integer(100));
-        model.addValue("1901", new Integer(40), new Integer(120));
-        model.addValue("1901", new Integer(60), new Integer(110));
-        model.addValue("1901", new Integer(80), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 20, 100);
+        model.addValue("1901", 40, 120);
+        model.addValue("1901", 60, 110);
+        model.addValue("1901", 80, 140);
         
         chart.setModel(model);
         
@@ -890,14 +894,14 @@ public class ColumnRangeChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -924,14 +928,14 @@ public class ErrorBarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -958,14 +962,14 @@ public class ScatterChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYModel model = new DefaultXYModel();
-        model.addValue("1900", new Integer(20), new Integer(120));
-        model.addValue("1900", new Integer(40), new Integer(135));
-        model.addValue("1900", new Integer(60), new Integer(140));
-        model.addValue("1900", new Integer(80), new Integer(160));
-        model.addValue("1901", new Integer(30), new Integer(100));
-        model.addValue("1901", new Integer(50), new Integer(120));
-        model.addValue("1901", new Integer(70), new Integer(110));
-        model.addValue("1901", new Integer(90), new Integer(140));
+        model.addValue("1900", 20, 120);
+        model.addValue("1900", 40, 135);
+        model.addValue("1900", 60, 140);
+        model.addValue("1900", 80, 160);
+        model.addValue("1901", 30, 100);
+        model.addValue("1901", 50, 120);
+        model.addValue("1901", 70, 110);
+        model.addValue("1901", 90, 140);
         
         chart.setModel(model);
     }
@@ -992,14 +996,14 @@ public class AreaRangeChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYZModel model = new DefaultXYZModel();
-        model.addValue("1900", new Integer(20), new Integer(140), new Integer(140));
-        model.addValue("1900", new Integer(40), new Integer(180), new Integer(165));
-        model.addValue("1900", new Integer(60), new Integer(180), new Integer(150));
-        model.addValue("1900", new Integer(80), new Integer(220), new Integer(220));
-        model.addValue("1901", new Integer(30), new Integer(110), new Integer(90));
-        model.addValue("1901", new Integer(50), new Integer(110), new Integer(55));
-        model.addValue("1901", new Integer(70), new Integer(140), new Integer(80));
-        model.addValue("1901", new Integer(90), new Integer(180), new Integer(65));
+        model.addValue("1900", 20, 140, 140);
+        model.addValue("1900", 40, 180, 165);
+        model.addValue("1900", 60, 180, 150);
+        model.addValue("1900", 80, 220, 220);
+        model.addValue("1901", 30, 110, 90);
+        model.addValue("1901", 50, 110, 55);
+        model.addValue("1901", 70, 140, 80);
+        model.addValue("1901", 90, 180, 65);
         
         chart.setModel(model);
     }
@@ -1026,14 +1030,14 @@ public class AreaSplineRangeChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYZModel model = new DefaultXYZModel();
-        model.addValue("1900", new Integer(20), new Integer(140), new Integer(140));
-        model.addValue("1900", new Integer(40), new Integer(180), new Integer(165));
-        model.addValue("1900", new Integer(60), new Integer(180), new Integer(150));
-        model.addValue("1900", new Integer(80), new Integer(220), new Integer(220));
-        model.addValue("1901", new Integer(30), new Integer(110), new Integer(90));
-        model.addValue("1901", new Integer(50), new Integer(110), new Integer(55));
-        model.addValue("1901", new Integer(70), new Integer(140), new Integer(80));
-        model.addValue("1901", new Integer(90), new Integer(180), new Integer(65));
+        model.addValue("1900", 20, 140, 140);
+        model.addValue("1900", 40, 180, 165);
+        model.addValue("1900", 60, 180, 150);
+        model.addValue("1900", 80, 220, 220);
+        model.addValue("1901", 30, 110, 90);
+        model.addValue("1901", 50, 110, 55);
+        model.addValue("1901", 70, 140, 80);
+        model.addValue("1901", 90, 180, 65);
         
         chart.setModel(model); 
     }
@@ -1060,14 +1064,14 @@ public class BubbleChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         XYZModel model = new DefaultXYZModel();
-        model.addValue("1900", new Integer(20), new Integer(120), new Integer(20));
-        model.addValue("1900", new Integer(40), new Integer(135), new Integer(5));
-        model.addValue("1900", new Integer(60), new Integer(140), new Integer(15));
-        model.addValue("1900", new Integer(80), new Integer(160), new Integer(10));
-        model.addValue("1901", new Integer(30), new Integer(120), new Integer(20));
-        model.addValue("1901", new Integer(50), new Integer(135), new Integer(5));
-        model.addValue("1901", new Integer(70), new Integer(140), new Integer(15));
-        model.addValue("1901", new Integer(90), new Integer(160), new Integer(10));
+        model.addValue("1900", 20, 120, 20);
+        model.addValue("1900", 40, 135, 5);
+        model.addValue("1900", 60, 140, 15);
+        model.addValue("1900", 80, 160, 10);
+        model.addValue("1901", 30, 120, 20);
+        model.addValue("1901", 50, 135, 5);
+        model.addValue("1901", 70, 140, 15);
+        model.addValue("1901", 90, 160, 10);
         
         chart.setModel(model);
     }
@@ -1094,10 +1098,10 @@ public class WaterfallChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
         
         chart.setModel(model);
     }
@@ -1164,14 +1168,14 @@ public class PolarChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(110));
-        model.setValue("1900", "Q2", new Integer(140));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(35));
-        model.setValue("1901", "Q1", new Integer(40));
-        model.setValue("1901", "Q2", new Integer(55));
-        model.setValue("1901", "Q3", new Integer(130));
-        model.setValue("1901", "Q4", new Integer(120));
+        model.setValue("1900", "Q1", 110);
+        model.setValue("1900", "Q2", 140);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 35);
+        model.setValue("1901", "Q1", 40);
+        model.setValue("1901", "Q2", 55);
+        model.setValue("1901", "Q3", 130);
+        model.setValue("1901", "Q4", 120);
 
         chart.setModel(model);
         

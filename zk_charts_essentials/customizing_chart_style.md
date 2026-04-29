@@ -130,7 +130,7 @@ below:
 
 ```java
     // Create a linear gradient which x1=0, y1=0, x2 = 0, y2=1 with percentages represent values
-    LinearGradient linearGradient2 = new LinearGradient(0, 0, 0, 1);
+    LinearGradient linearGradient1 = new LinearGradient(0, 0, 0, 1);
 
     // Create a linear gradient which x1=0, y1=0, x2 = 0, y2=300 with coordinate
     LinearGradient linearGradient2 = new LinearGradient(0, 0, 0, 300);
@@ -139,8 +139,8 @@ below:
 The stop attributes can be assigned as below:
 
 ```java
-   // Same as lineraGradient.addStop(0, "#EEEEEE"); lineraGradient.addStop(1, "#CCCCCC");
-    lineraGradient.setsStop("#EEEEEE", "#CCCCCC");
+   // Same as linearGradient.addStop(0, "#EEEEEE"); linearGradient.addStop(1, "#CCCCCC");
+    linearGradient.setStops("#EEEEEE", "#CCCCCC");
 ```
 
 For example, we can apply the linear gradient color to the series as
@@ -162,10 +162,10 @@ public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
         super.doAfterCompose(comp);
         
         CategoryModel model = new DefaultCategoryModel();
-        model.setValue("1900", "Q1", new Integer(20));
-        model.setValue("1900", "Q2", new Integer(55));
-        model.setValue("1900", "Q3", new Integer(40));
-        model.setValue("1900", "Q4", new Integer(75));
+        model.setValue("1900", "Q1", 20);
+        model.setValue("1900", "Q2", 55);
+        model.setValue("1900", "Q3", 40);
+        model.setValue("1900", "Q4", 75);
 
         chart.setModel(model);
         
@@ -262,8 +262,10 @@ public class HtmlLabelComposer extends SelectorComposer<Component> {
         super.doAfterCompose(comp);
         
         model = new DefaultCategoryModel();
-    model.setValue("John", "<a title='great!!' href='http://www.zkoss.org' class='hastip'>Apples</a>", new Integer(5));
-    ...
+        model.setValue("John", "<a title='great!!' href='https://www.zkoss.org' class='hastip'>Apples</a>", 5);
+        model.setValue("John", "<a title='great!!' href='https://www.zkoss.org' class='hastip'>Pears</a>", 9);
+        model.setValue("John", "<a title='great!!' href='https://www.zkoss.org' class='hastip'>Oranges</a>", 4);
+        chart.setModel(model);
         
         // enable html usage 
         chart.getXAxis().getLabels().setUseHTML(true);
@@ -293,8 +295,6 @@ public class DrilldownOnDemandComposer implements Composer<Charts> {
 # Data Label
 
 Show x / y values in a custom format, e.g. 2000 -\> 2K.
-
-**org.zkoss.zkcharts.essentials.customizing.HtmlLabelComposer**
 
 ```java
     private void setDatalabelFormatter() {

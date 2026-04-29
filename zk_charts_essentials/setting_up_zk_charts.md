@@ -1,18 +1,19 @@
+---
+title: "Setting Up ZK Charts"
+---
+
 # Prerequisites
 
 ## Download the Jar and Install Manually
 
-- [Downloaded the latest ZK](http://www.zkoss.org/download/zk.dsp)
-- [Downloaded the latest ZK Charts](http://www.zkoss.org/download/zkcharts)
+- [Download the latest ZK](https://www.zkoss.org/download/zk)
+- [Download the latest ZK Charts](https://www.zkoss.org/download/zkcharts)
 
-Depending on your IDE the steps will be different, however, the most
-important part is to include both ZK Charts and ZK’s JAR files in your
-project. The project should be a ZK Project or a Web Application Project
-depending on what environment you are using. Then, place the charts jar
-under **WEB-INF/lib** folder.
-
-The easiest way to create a compatible project is to use [ZK Studio](http://www.zkoss.org/download/zkstudio.dsp) and then include
-charts.jar as a library
+The exact steps depend on your IDE, but the important part is to
+include both the ZK Charts and ZK JAR files in your project. The project
+should be a ZK Project or a Web Application Project, depending on your
+environment. Then, place the charts JAR under the **WEB-INF/lib**
+folder.
 
 ## Maven Project
 
@@ -20,29 +21,30 @@ If your project is managed by Maven already, you can adopt ZK Charts
 easily by simply adding a dependency like the following [^1]:
 
 ```xml
-
-    <dependency>  
-        <groupId>org.zkoss.chart</groupId>  
-        <artifactId>zkcharts</artifactId>  
-        <version>11.4.7.0-Eval</version>  //this is just an example. Please use the latest version  
-    </dependency>
+<dependency>
+    <groupId>org.zkoss.chart</groupId>
+    <artifactId>zkcharts</artifactId>
+    <!-- This is just an example. Please use the latest version. -->
+    <version>12.5.0.0-Eval</version>
+</dependency>
 ```
-If you didn't setup zk maven repository yet, you have to [ setup zk maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) as well.
+
+If you didn't setup zk maven repository yet, you have to [setup zk maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) as well.
 
 ### Evaluating users (60-days free evaluation)
 
-- http://mavensync.zkoss.org/eval
+- https://mavensync.zkoss.org/eval
 
-**Note**: ZK Charts evaluation version is put in**ZK PE-eval / EE-eval** maven repository. Please add the following config if you want to
+**Note**: ZK Charts evaluation version is put in **ZK PE-eval / EE-eval** maven repository. Please add the following config if you want to
 try the evaluation version.
 
 ```xml
-    <repositories>  
-        <repository>  
-            <id>ZK PE/EE Evaluation</id>  
-            <url>https://mavensync.zkoss.org/eval/</url>  
-        </repository>  
-    </repositories>
+<repositories>
+    <repository>
+        <id>ZK PE/EE Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
 ```
 
 ### Premium users only
@@ -65,7 +67,7 @@ ZK Premium Maven Repository.
 
 - Login authentication
 
-Please refer to the [official documentation](http://maven.apache.org/settings.html#Servers) of Apache
+Please refer to the [official documentation](https://maven.apache.org/settings.html#Servers) of Apache
 Maven project for storing login authentication credentials in the global
 settings file.
 
@@ -104,8 +106,11 @@ settings file.
     <version>0.0.1-SNAPSHOT</version>
     <properties>
         <!-- please change the version accordingly -->
-        <zk.version>8.6.3</zk.version>
-        <commons-io>1.3.1</commons-io>
+		<!-- ZK Framework version. -->
+		<zk.version>9.6.5-Eval</zk.version>
+		<!-- ZK Charts version. Please use the latest available release. -->
+        <zkcharts.version>12.5.0.0-Eval</zkcharts.version>
+        <commons-io.version>2.16.1</commons-io.version>
     </properties>
     <packaging>war</packaging>
     <name>The sample Project</name>
@@ -113,7 +118,7 @@ settings file.
         <repository>
             <id>ZK CE</id>
             <name>ZK CE Repository</name>
-            <url>http://mavensync.zkoss.org/maven2</url>
+            <url>https://mavensync.zkoss.org/maven2</url>
         </repository>
         <repository>
             <id>ZK EE</id>
@@ -141,18 +146,18 @@ settings file.
             <artifactId>zhtml</artifactId>
             <version>${zk.version}</version>
         </dependency>
-        
+
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>${commons-io}</version>
+            <version>${commons-io.version}</version>
         </dependency>
-        
+
         <!-- ZK Charts -->
         <dependency>
             <groupId>org.zkoss.chart</groupId>
             <artifactId>zkcharts</artifactId>
-            <version>3.0.3</version>
+            <version>${zkcharts.version}</version>
         </dependency>
 
     </dependencies>
@@ -192,7 +197,7 @@ information printed on your application console like:
      Certificate Number: AABB12345
      Licensed Product: ZK Charts
      Maximum Licensed Number: 1 Developer
-     Expiry Date: January 02, 2020
+     Expiry Date: YYYY/MM/DD
 
      To renew, obtain more licenses, or if you require help, please contact info@zkoss.org.
 ```

@@ -1,3 +1,7 @@
+---
+title: "Exporting"
+---
+
 # Exporting Images/PDF
 
 ## Size
@@ -17,9 +21,9 @@ the default size:
 Because of [the default scale](https://api.highcharts.com/highcharts/exporting.scale) is **2**,
 the exported image will be 1200 pixels (width) x 800 pixels (height).
 
-If you specify a chart's width/height (or hfle/vflex), e.g. 400 pixels
-wide and 200 pixels high, then exported image will be 800 pixels wide
-and 400 pixels high.
+If you specify a chart's width/height (or hflex/vflex), e.g. 400 pixels
+wide and 200 pixels high, then the exported image will be 800 pixels
+wide and 400 pixels high.
 
 ## Differences between a Chart on Screen and Exported One
 
@@ -40,8 +44,8 @@ Differences:
 
 The differences are caused by the different size between an exported
 image (600 x 400) and on-screen one (1,540 × 286). Because the exported
-one is smaller, ZK Chart automatically adjuest axis tick label according
-to the width/height, so
+one is smaller, ZK Charts automatically adjusts axis tick labels
+according to the width/height, so
 
 1.  It rotates all x-axis labels because the exported chart is narrower.
 2.  The y-axis tick interval changes because the exported chart is
@@ -71,19 +75,27 @@ API in a separate working thread instead of a servlet thread, no need a
 HTTP request to a zul. Please see
 [ChartsEngineComposer](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/java/org/zkoss/zkcharts/essentials/exporting/ChartsEngineComposer.java).
 
+Since Highcharts 12.3, PNG, JPEG, and SVG exports are generated locally by default. Set
+`exporting.local` to `false` only when you want to send export requests to an export
+server. PDF export still requires the `offline-exporting.js` module for local export;
+otherwise Highcharts falls back to an export server.
+
 # [Export with ImageMagic](https://www.zkoss.org/wiki/Small_Talks/2015/August/An_alternative_idea_of_exporting_ZK_Charts#Steps_to_Export_ZK_Charts)
 
 # [Export Multiple Charts to One File](https://www.zkoss.org/wiki/Small_Talks/2015/August/An_alternative_idea_of_exporting_ZK_Charts#Advanced_Usage_-_Export_multiple_Charts_to_one_File)
 
 # Custom Exporting Button
 
-By default, ZK Charts already provide 5 options for exporting a chart.
+By default, ZK Charts provides export menu items for full screen, print, PNG, JPEG,
+and SVG. Highcharts 12 does not include PDF in the default menu. To provide PDF
+export, add `downloadPDF` to the menu and make sure the local offline exporting
+module or an export server is available.
 
 ![](images/zkcharts-essentials-defaultExporting.png)
 
-To create custom exporting button, you have to use [exporting buttons options](http://api.highcharts.com/highcharts/exporting.buttons). Since
+To create custom exporting button, you have to use [exporting buttons options](https://api.highcharts.com/highcharts/exporting.buttons). Since
 it also replaces the default button, you need to create default options
-by yourselves and add extra custom options. Please see the example
+yourself and add extra custom options. Please see the example
 below:
 
 ```java
@@ -107,19 +119,19 @@ public class ExportComposer extends SelectorComposer<Component> {
         ExportingButton buttons = exporting.getButtons();
         List<MenuItem> menuItems = new ArrayList<>();
 
-        //effectively disable external export server by setting an alternative URL
-        exporting.setUrl("/export-server-not-enabled.zul");
-        //and disable fallback (e.g. for old browsers)
+        // Use local export. Set local to false if you want to post to an export server.
+        exporting.addExtraAttr("local", new AnyVal(true));
+        // Disable export-server fallback when local export is unavailable.
         exporting.addExtraAttr("fallbackToExportServer", new AnyVal(false));
 
-        //optional rebuild the default menu items (as of version 7.2.2.0), otherwise they are replaced
-        menuItems.add(defaultMenuItem("viewFullscreen", "this.fullscreen=new Highcharts.FullScreen(this.container);"));
-        menuItems.add(defaultMenuItem("printChart", "this.print();"));
+        // Optional: rebuild the default menu items; otherwise they are replaced.
+        menuItems.add(defaultMenuItem("viewFullscreen", "this.fullscreen.toggle();"));
+        menuItems.add(defaultMenuItem("printChart", "this.exporting.print();"));
         menuItems.add(separator());
-        menuItems.add(defaultMenuItem("downloadPNG", "this.exportChartLocal();"));
-        menuItems.add(defaultMenuItem("downloadJPEG", "this.exportChartLocal({type: \"image/jpeg\"});"));
-        menuItems.add(defaultMenuItem("downloadPDF", "this.exportChartLocal({type: \"application/pdf\"});"));
-        menuItems.add(defaultMenuItem("downloadSVG", "this.exportChartLocal({type: \"image/svg+xml\"});"));
+        menuItems.add(defaultMenuItem("downloadPNG", "this.exporting.exportChart();"));
+        menuItems.add(defaultMenuItem("downloadJPEG", "this.exporting.exportChart({type: \"image/jpeg\"});"));
+        menuItems.add(defaultMenuItem("downloadPDF", "this.exporting.exportChart({type: \"application/pdf\"});"));
+        menuItems.add(defaultMenuItem("downloadSVG", "this.exporting.exportChart({type: \"image/svg+xml\"});"));
         menuItems.add(separator());
         //add advanced export options - csv and xls exports
         menuItems.add(defaultMenuItem("downloadCSV", "this.downloadCSV()"));
@@ -140,7 +152,7 @@ public class ExportComposer extends SelectorComposer<Component> {
      
     @Listen(ON_MY_CUSTOM_ITEM + " = #mychart")
     public void handleMyCustomItem() {
-        Clients.showNotification("custem menu item clicked, handled on server");
+        Clients.showNotification("custom menu item clicked, handled on server");
     }
  
     private MenuItem customMenuItem(String text, String onclickJS) {
@@ -166,10 +178,10 @@ public class ExportComposer extends SelectorComposer<Component> {
 }
 ```
 
-- Line 22 ~ 28: add default exporting options
-- Line 30: add a custom item that executes JavaScript code.
-- Line 31: add a custom item that fires an ZK event to the server and
-  handle it with an event listener, `handleMyCustomItem()`
+- The `defaultMenuItem()` calls rebuild the default exporting options.
+- The first `customMenuItem()` call adds a custom item that executes JavaScript code.
+- The second `customMenuItem()` call fires a ZK event to the server and handles it
+  with the `handleMyCustomItem()` event listener.
 
 The result is:
 

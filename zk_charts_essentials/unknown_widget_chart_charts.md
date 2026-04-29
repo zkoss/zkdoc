@@ -1,4 +1,8 @@
-# Problem Decription
+---
+title: "Unknown widget: chart.Charts"
+---
+
+# Problem Description
 
 You see the error below in a browser developer tool \> Console tab:
 
@@ -13,17 +17,16 @@ loaded. (the widget class `chart.Charts` isn't registered successfully).
 
 # Possible Causes and Solutions
 
-There must be something at the client-side affecting the widget
+There must be something on the client side affecting the widget
 registration.
 
 ## Load a JavaScript that interferes with widget loading
 
-There are possibilities, e.g. if you load highcharts, bootstrap js by
-yourselves, this might cause an error in chart.wpd and fail the widget
-registration.
+For example, if you load Highcharts or bootstrap.js manually, it may
+cause an error in chart.wpd and fail the widget registration.
 
-Remove the javascript or resolve the code that interferes zk widget
-loading can solve this error.
+Removing the JavaScript, or fixing the code that interferes with ZK
+widget loading, will resolve this error.
 
 ## Mixing 2 different versions of ZK jar
 
@@ -37,5 +40,5 @@ jar in one application.
 
 ![](images/chart_wpd.jpg)
 
-- Check if you include any non-ZK javascript, remove them one by one to
-  find the one that interferes ZK.
+- Check if you include any non-ZK JavaScript; remove them one by one to
+  find the one that interferes with ZK.
