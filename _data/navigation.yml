@@ -1943,6 +1943,8 @@ zk_dev_ref:
             url: /zk_dev_ref/integration/idempiere_zk_enterprise_plugin
           - title: iDempiere ZK Charts Plugin
             url: /zk_dev_ref/integration/idempiere_zk_charts_plugin
+          - title: iDempiere Keikai Enterprise Plugin
+            url: /zk_dev_ref/integration/idempiere_zk_keikai_enterprise_plugin
   - title: Performance Tips
     url: /zk_dev_ref/performance_tips/performance_tips
     children:
