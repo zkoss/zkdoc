@@ -3165,7 +3165,7 @@ eval_guide:
         url: /eval-guide/zk-thymeleaf/
 #      - title: "ZK vs Vaadin"
 #       url: /eval-guide/zk-vaadin/
-     - title: "Project Setup and Detailed Measurements"
+      - title: "Project Setup and Detailed Measurements"
         url: /eval-guide/project-setup/
   - title: "Migration & Real-World Decisions"
     url: /eval-guide/migration/
