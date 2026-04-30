@@ -26,6 +26,6 @@ message below:
 
 `chart.getPlotOptions().getSeries().setTurboThreshold(aLargerValue)`
 
-- disable threhshold
+- Disable the threshold
 
 `chart.getPlotOptions().getSeries().setTurboThreshold(0)`

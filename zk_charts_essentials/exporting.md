@@ -18,7 +18,7 @@ the default size:
 - width, **600 pixels**
 - height, **400 pixels**
 
-Because of [the default scale](https://api.highcharts.com/highcharts/exporting.scale) is **2**,
+Because [the default scale](https://api.highcharts.com/highcharts/exporting.scale) is **2**,
 the exported image will be 1200 pixels (width) x 800 pixels (height).
 
 If you specify a chart's width/height (or hflex/vflex), e.g. 400 pixels
@@ -32,7 +32,7 @@ your screen, so the exported chart image might look different from your
 screen.
 
 For example,
-[export-images.zul](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/webapp/export-images.zul),
+[export-images.zul](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/webapp/exporting/export-images.zul),
 **the original chart on the screen**: ![](images/zkchart-essentials-chart-on-screen.png)
 
 **The exported result:** ![](images/zkchart-essentials-exported-chart.png)
@@ -61,7 +61,7 @@ chart.getYAxis().setTickInterval(10); //fix difference 2.
 
 ## Limitation
 
-It can't export an HTML image inserted in a chart.
+ZK Charts cannot export an HTML image inserted in a chart.
 
 # By JSON, Offline
 
@@ -80,7 +80,7 @@ Since Highcharts 12.3, PNG, JPEG, and SVG exports are generated locally by defau
 server. PDF export still requires the `offline-exporting.js` module for local export;
 otherwise Highcharts falls back to an export server.
 
-# [Export with ImageMagic](https://www.zkoss.org/wiki/Small_Talks/2015/August/An_alternative_idea_of_exporting_ZK_Charts#Steps_to_Export_ZK_Charts)
+# [Export with ImageMagick](https://www.zkoss.org/wiki/Small_Talks/2015/August/An_alternative_idea_of_exporting_ZK_Charts#Steps_to_Export_ZK_Charts)
 
 # [Export Multiple Charts to One File](https://www.zkoss.org/wiki/Small_Talks/2015/August/An_alternative_idea_of_exporting_ZK_Charts#Advanced_Usage_-_Export_multiple_Charts_to_one_File)
 
@@ -116,13 +116,12 @@ public class ExportComposer extends SelectorComposer<Component> {
     
     private void createCustomExportItems() {
         Exporting exporting = mychart.getExporting();
-        ExportingButton buttons = exporting.getButtons();
-        List<MenuItem> menuItems = new ArrayList<>();
-
         // Use local export. Set local to false if you want to post to an export server.
-        exporting.addExtraAttr("local", new AnyVal(true));
+		exporting.setLocal(true);
         // Disable export-server fallback when local export is unavailable.
         exporting.addExtraAttr("fallbackToExportServer", new AnyVal(false));
+		ExportingButton buttons = exporting.getButtons();
+		List<MenuItem> menuItems = new ArrayList<>();
 
         // Optional: rebuild the default menu items; otherwise they are replaced.
         menuItems.add(defaultMenuItem("viewFullscreen", "this.fullscreen.toggle();"));

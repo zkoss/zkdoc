@@ -40,7 +40,7 @@ assign it to chart:
 
 # Look For Features You Need
 
-ZK Charts is a ZK component that integrates Highcharts, please check
+ZK Charts is a ZK component that integrates Highcharts. Check
 [ZK Charts Demo](https://www.zkoss.org/zkchartsdemo), [Highcharts Demo](https://www.highcharts.com/demo), or [Highcharts API Reference](https://api.highcharts.com/highcharts/) for features you want
 and find the corresponding configuration options.
 

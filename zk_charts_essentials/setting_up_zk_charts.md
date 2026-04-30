@@ -29,13 +29,13 @@ easily by simply adding a dependency like the following [^1]:
 </dependency>
 ```
 
-If you didn't setup zk maven repository yet, you have to [setup zk maven repository]({{site.baseurl}}/zk_installation_guide/maven_setup) as well.
+If you have not configured the ZK Maven repository yet, follow [Maven Setup]({{site.baseurl}}/zk_installation_guide/maven_setup) as well.
 
 ### Evaluating users (60-days free evaluation)
 
 - https://mavensync.zkoss.org/eval
 
-**Note**: ZK Charts evaluation version is put in **ZK PE-eval / EE-eval** maven repository. Please add the following config if you want to
+**Note**: ZK Charts evaluation versions are available in the **ZK PE-eval / EE-eval** Maven repository. Please add the following config if you want to
 try the evaluation version.
 
 ```xml
@@ -174,7 +174,7 @@ You can display ZK Charts version in a zul page with EL:
     Charts ${Version.UID}
 ```
 
-To know bundled Highcharts version, evaluate the javascript variable
+To know the bundled Highcharts version, evaluate the JavaScript variable
 below:
 
 ```javascript
