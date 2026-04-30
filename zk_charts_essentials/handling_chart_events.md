@@ -84,8 +84,8 @@ code as below:
     ...
 ```
 
-- Line 17: you can get the x and y axis values of where the mouse was
-  clicked from
+- Inside `movePoint`, you can get the x and y axis values of where the
+  mouse was clicked from
   [org.zkoss.chart.ChartsClickEvent](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/ChartsClickEvent.html)
   which extends
   [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)
@@ -101,7 +101,7 @@ code as below:
 | onPlotHide | Fires when the series is hidden after chart generation time, by clicking the legend item.<br/>(**Not applicable to pies**). |
 | onPlotMouseOver | Fires when the mouse enters the graph. |
 | onPlotMouseOut | Fires when the mouse leaves the graph. |
-| onPlotSelect | Fires when selecting a point from a series.<br/><br/>The zkcharts doesn't send this event before you enable "point select" by `Charts.getPlotOptions().getSeries().setAllowPointSelect(true);`<br/>Reference: [http://api.highcharts.com/highcharts#plotOptions.series.point.events](http://api.highcharts.com/highcharts#plotOptions.series.point.events) |
+| onPlotSelect | Fires when selecting a point from a series.<br/><br/>The zkcharts doesn't send this event before you enable "point select" by `Charts.getPlotOptions().getSeries().setAllowPointSelect(true);`<br/>Reference: [https://api.highcharts.com/highcharts#plotOptions.series.point.events](https://api.highcharts.com/highcharts#plotOptions.series.point.events) |
 | onPlotUnselect | Fires when unselecting a point from a series. |
 | onPlotDrillUp | Fires when drilling up from a drilldown series. |
 | onPlotDrillDown | Fires when a drilldown point is clicked, before the new series is added. |
@@ -115,6 +115,5 @@ code as below:
   for more details.
 - `onPlotShow`, `onPlotHide`, and `onPlotLegendItemClick` are not
   applicable on a pie chart because they are fired when a legend
-  represents represents **a series**. But a legend in a pie chart
-  represents **a point**, so ZKCharts doesn't fire those events for a
-  pie chart.
+  represents **a series**. But a legend in a pie chart represents
+  **a point**, so ZK Charts doesn't fire those events for a pie chart.

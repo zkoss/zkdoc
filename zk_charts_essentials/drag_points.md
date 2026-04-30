@@ -41,7 +41,7 @@ handler may fire a large number of requests while the user is dragging.
 
 ```java
     @Wire
-    private Charts chart; //use the chart component as anchor
+    private Charts chart; // referenced by uuid in the JavaScript callback
     
     private void enableDraggablePoints() {
         //enable drag and drop for a specific series
@@ -51,19 +51,19 @@ handler may fire a large number of requests while the user is dragging.
         //create an object to hold the point.events value
         JSONObject eventsValue = new JSONObject();
         //set the content of the point.events.drop callback
-        eventsValue.put("drop", new JavaScriptValue("function(e){zAu.send(new zk.Event(zk.$('#"+chart.getUuid()+"'), 'onPointDrop', {pointData: e.newPoint, serieIndex: e.origin.points[e.newPointId].point.series.index, pointIndex:e.origin.points[e.newPointId].point.index}, {toServer:true}));}"));
+        eventsValue.put("drop", new JavaScriptValue("function(e){zAu.send(new zk.Event(zk.$('#"+chart.getUuid()+"'), 'onPointDrop', {pointData: e.newPoint, seriesIndex: e.origin.points[e.newPointId].point.series.index, pointIndex:e.origin.points[e.newPointId].point.index}, {toServer:true}));}"));
         pointValue.put("events", eventsValue);
         chart.getPlotOptions().getSeries().addExtraAttr("point", pointValue);
     }
 
     @Listen("onPointDrop=#chart")
     public void handleDrop(Event event) {
-        Map data = (Map) event.getData();
-        Map pointData = (Map) data.get("pointData");
+        Map<String, Object> data = (Map<String, Object>) event.getData();
+        Map<String, Object> pointData = (Map<String, Object>) data.get("pointData");
         Double y = (Double) pointData.get("y");
-        int serieIndex = (int) data.get("serieIndex");
+        int seriesIndex = (int) data.get("seriesIndex");
         int pointIndex = (int) data.get("pointIndex");
-        Clients.log("new point data: " + y + " series (" +serieIndex+"), point (" +pointIndex+ ")");
+        Clients.log("new point data: " + y + " series (" + seriesIndex + "), point (" + pointIndex + ")");
     }
 ```
 
@@ -75,7 +75,7 @@ function(e){ // callback from dragStart, drag, or drop, e is the highcharts even
         new zk.Event( // create a new event with the following parameters
             zk.$('#"+chart.getUuid()+"'), // retrieve the charts component as the event target. The component is retrieved using the zk.$('#uuid') syntax.
             'onPointDrop', // create a custom event. This custom event name will be used when registering the event listener, either with addEventListener, or using @Listen
-            {pointData: e.newPoint, serieIndex: e.origin.points[e.newPointId].point.series.index, pointIndex:e.origin.points[e.newPointId].point.index}, //retrieve point data and pass it with the event
+            {pointData: e.newPoint, seriesIndex: e.origin.points[e.newPointId].point.series.index, pointIndex:e.origin.points[e.newPointId].point.index}, //retrieve point data and pass it with the event
             {toServer:true} //indicate that the event should be sent immediately, and not wait for piggybacking on the next request
         )
     );
@@ -84,4 +84,4 @@ function(e){ // callback from dragStart, drag, or drop, e is the highcharts even
 
 Demo sample [in github](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/java/org/zkoss/zkcharts/essentials/customizing/DraggablePointComposer.java)
 
-Reference: [Highcharts API Rerenence](https://api.highcharts.com/highcharts/plotOptions.series.dragDrop)
+Reference: [Highcharts API Reference](https://api.highcharts.com/highcharts/plotOptions.series.dragDrop)
