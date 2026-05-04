@@ -131,7 +131,7 @@ to know which key was pressed.
 | Backspace | #bak | |
 | function key (F1, F2,... F12) | #f1, #f2, ... #f12 | |
 | Tab | #tab | |
-| Space | #space | |
+| Space | #space | since 10.0.0 |
 
 # Document-level Keystrokes
 
