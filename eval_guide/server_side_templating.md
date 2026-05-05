@@ -27,6 +27,6 @@ Where it becomes limiting is in applications that require dynamic UI behavior �
 
 **Limited dynamic UI capability** — When users expect real-time feedback, partial page updates, or highly interactive interfaces, the page-reload model becomes a constraint. Adding significant JavaScript effectively means building a separate frontend layer on top of the templating layer, at which point a more structured approach may be warranted.
 
-**Cloud-native friendly** — Thymeleaf applications are stateless by nature: the server renders HTML per request and holds no session UI state. Containerization, horizontal scaling, and load balancing work without sticky session configuration, making deployment on Kubernetes or any cloud platform straightforward.
+**Cloud-native friendly** — Thymeleaf is stateless-friendly because it does not maintain a persistent server-side UI component tree. However, the application as a whole may still use HTTP sessions for authentication or workflow state, depending on the Spring MVC/Spring Security configuration.
 
 **No commercial product or support** — Thymeleaf is a community-maintained open-source project with no commercial offering. For organizations that need vendor support, that would need to come from a Spring Boot support contract rather than from Thymeleaf directly.
