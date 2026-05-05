@@ -88,6 +88,6 @@ Apache Wicket co-locates Java component classes with HTML templates, which feels
 | **Rich component library** | Via ecosystem (npm) | Built-in (ZK/Vaadin) or none (Wicket) | None — CDN only |
 | **Visual customization** | Excellent | Moderate | Excellent |
 | **Commercial support** | No | Yes (ZK, Vaadin) | No |
-| **Cloud-native / Containerized** | Native fit — stateless, no sticky sessions needed | Requires sticky sessions by default; ZK 10 stateless mode, Vaadin Hilla, Wicket stateless opt-in available | Native fit — stateless by design |
+| **Cloud-native / Containerized** | Native fit for frontend deployment. No sticky sessions are needed for the static frontend itself. Backend stickiness depends on whether the Spring Boot API is designed to be stateless. | Requires sticky sessions by default; ZK 10 stateless mode, Vaadin Hilla, and Wicket stateless opt-in are available alternatives. | Stateless-friendly because it does not maintain a server-side UI component tree, but the application may still use HTTP sessions for authentication or workflow state. |
 | **WCAG built-in** | Partial (library-dependent) | Strong (ZK, Vaadin) | None |
 | **Best for** | Polished UIs, split teams, public-facing products | Complex enterprise apps, Java teams | Simple content and form workflows |
