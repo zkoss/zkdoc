@@ -22,7 +22,8 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 
 | ZK     | Trumbowyg    |
 |--------|--------------|
-| 9.6.0+ | 2.7.2        |
+| 10.3.0 | 2.31        |
+| 9.6.0 | 2.7.2        |
 | 8.5.0  | 2.6          |
 | 8.0.0  | 2.0.0-beta.2 |
 
