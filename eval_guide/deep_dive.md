@@ -10,5 +10,5 @@ permalink: /eval-guide/deep-dive/
 - [Part 4-3: ZK vs Angular](/eval-guide/zk-angular/)
 - [Part 4-4: ZK vs Apache Wicket](/eval-guide/zk-wicket/)
 - [Part 4-5: ZK vs Thymeleaf + Spring MVC](/eval-guide/zk-thymeleaf/)
-<!-- - [Part 4-6: ZK vs Vaadin](/eval-guide/zk-vaadin/) -->
-<!--- [Part 4-7: Project Setup and Detailed Measurements](/eval-guide/project-setup/) -->
+- [Part 4-6: ZK vs Vaadin](/eval-guide/zk-vaadin/)
+- [Part 4-7: Project Setup and Detailed Measurements](/eval-guide/project-setup/)
