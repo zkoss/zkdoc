@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Enterprise Requirements"
-permalink: /eval-guide/enterprise-requirements/
+permalink: /eval-guide/enterprise-requirements
 ---
 
 # Part 1-6: Key Factor: Enterprise Requirements

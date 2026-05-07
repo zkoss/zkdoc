@@ -1,6 +1,6 @@
 ---
 title: "Where ZK Fits in an AI-Driven Development World"
-permalink: /eval-guide/zk-in-ai-driven-development/
+permalink: /eval-guide/zk-in-ai-driven-development
 ---
 
 # Part 6-3: Where ZK Fits in an AI-Driven Development World

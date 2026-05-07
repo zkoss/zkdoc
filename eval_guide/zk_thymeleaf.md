@@ -1,6 +1,6 @@
 ---
 title: "ZK vs Thymeleaf + Spring MVC"
-permalink: /eval-guide/zk-thymeleaf/
+permalink: /eval-guide/zk-thymeleaf
 ---
 
 # Part 4-5: ZK vs Thymeleaf + Spring MVC

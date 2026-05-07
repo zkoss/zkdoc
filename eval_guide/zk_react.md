@@ -1,6 +1,6 @@
 ---
 title: "ZK vs React"
-permalink: /eval-guide/zk-react/
+permalink: /eval-guide/zk-react
 ---
 
 # Part 4-2: ZK vs React

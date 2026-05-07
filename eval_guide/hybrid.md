@@ -1,6 +1,6 @@
 ---
 title: "Hybrid and Mixed Approaches"
-permalink: /eval-guide/hybrid/
+permalink: /eval-guide/hybrid
 ---
 
 # Part 2-4: Hybrid and Mixed Approaches

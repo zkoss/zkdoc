@@ -1,6 +1,6 @@
 ---
 title: "Reassessing Your Use of ZK"
-permalink: /eval-guide/reassessing/
+permalink: /eval-guide/reassessing
 ---
 
 # Part 5-2: Reassessing Your Use of ZK
@@ -21,7 +21,7 @@ It is also worth noting that the broader industry conversation has shifted meani
 
 The right question is not "should we use what's popular?" It is the same question you should have asked at the start: does this framework fit our team, our application, and our constraints?
 
-Work through [Part 1](/eval-guide/how-to-choose/) again with your current situation in mind.
+Work through [Part 1](/eval-guide/how-to-choose) again with your current situation in mind.
 
 Part 1-2: Has your team changed? If the team that built the ZK application is largely still in place, you have expertise investment in ZK that has real value. If the team has turned over significantly and the new team members have strong React backgrounds, that changes the calculation — but only if ZK is genuinely causing friction with them, not just because they prefer what they already know.
 

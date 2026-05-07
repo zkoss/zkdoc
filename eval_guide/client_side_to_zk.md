@@ -1,6 +1,6 @@
 ---
 title: "Migrating from a Client-Side Framework to ZK"
-permalink: /eval-guide/client-side-to-zk/
+permalink: /eval-guide/client-side-to-zk
 ---
 
 # Part 5-1: Migrating from a Client-Side Framework to ZK
@@ -15,7 +15,7 @@ None of these are reasons to migrate immediately, but they are reasons to re-exa
 
 ## Go back to Part 1
 
-Before making any migration decision, work through the questions in [Part 1](/eval-guide/how-to-choose/) as if you were evaluating frameworks for the first time — but with the knowledge you now have about how your application has developed and how your team functions.
+Before making any migration decision, work through the questions in [Part 1](/eval-guide/how-to-choose) as if you were evaluating frameworks for the first time — but with the knowledge you now have about how your application has developed and how your team functions.
 
 Part 1-2 considers team skills. Has your team composition changed since the original decision? If you built the application with dedicated frontend engineers who are no longer present, and the current team is primarily Java developers, the skill profile that drove the original choice no longer applies.
 

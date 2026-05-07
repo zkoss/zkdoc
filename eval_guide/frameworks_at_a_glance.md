@@ -1,6 +1,6 @@
 ---
 title: "The Frameworks at a Glance"
-permalink: /eval-guide/frameworks-at-a-glance/
+permalink: /eval-guide/frameworks-at-a-glance
 ---
 
 # Part 3-1: The Frameworks at a Glance
@@ -13,7 +13,7 @@ This is not a ranking. Every category in this guide has been used successfully t
 
 **What they are:** The browser downloads a JavaScript application on first load and manages the entire UI from that point forward. The server becomes a data provider — it supplies JSON via API, but knows nothing about what the browser is showing.
 
-In enterprise Java environments, React and Angular are almost always used in a hybrid architectural pattern: a Spring Boot backend exposes a REST API, and the React or Angular frontend consumes it as a separate application. This is the architecture used in our experiments. The two applications — frontend and backend — are developed, deployed, and scaled independently, with the API contract as the shared boundary. See [Part 2-4](/eval-guide/hybrid/) for a fuller discussion of this pattern.
+In enterprise Java environments, React and Angular are almost always used in a hybrid architectural pattern: a Spring Boot backend exposes a REST API, and the React or Angular frontend consumes it as a separate application. This is the architecture used in our experiments. The two applications — frontend and backend — are developed, deployed, and scaled independently, with the API contract as the shared boundary. See [Part 2-4](/eval-guide/hybrid) for a fuller discussion of this pattern.
 
 **Where they excel:**
 

@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Priority & Trade-offs"
-permalink: /eval-guide/priority/
+permalink: /eval-guide/priority
 ---
 
 # Part 1-8: Key Factor: Priority & Trade-offs
@@ -33,7 +33,7 @@ The honest answer is that raw performance depends more on implementation quality
 
 **Long-term maintainability and stability** — The application will run for five to ten years. The team will change. The priority is a codebase that remains manageable over time with minimal dependency churn. This tends to favor Java-based frameworks with commercial backing, a stable dependency footprint, and predictable upgrade paths.
 
-**Compliance and enterprise fit** — Security, accessibility, audit requirements, and procurement processes are non-negotiable constraints. As covered in [Part 1-6](/eval-guide/enterprise-requirements/), this significantly narrows the field toward commercial-backed solutions for full compliance coverage, or toward carefully constructed React/Angular applications with deliberate library choices.
+**Compliance and enterprise fit** — Security, accessibility, audit requirements, and procurement processes are non-negotiable constraints. As covered in [Part 1-6](/eval-guide/enterprise-requirements), this significantly narrows the field toward commercial-backed solutions for full compliance coverage, or toward carefully constructed React/Angular applications with deliberate library choices.
 
 Most real situations are combinations of the above. A useful exercise is to rank these priorities explicitly — not in a meeting where everyone agrees that everything is important, but as a written list that the team actually commits to. When a disagreement arises later about a framework choice, the priority list becomes the tie-breaker.
 
@@ -53,7 +53,7 @@ The same logic applies in reverse. A "free" framework that requires your team to
 
 **Onboarding and training cost** — If your team needs to learn a new framework, that learning time has a cost. A developer spending four weeks coming up to speed on an unfamiliar framework is four weeks of reduced output. For a small team on a tight timeline, this is a real budget impact.
 
-**Ongoing maintenance cost** — As discussed in [Part 1-7](/eval-guide/maintainability/), some frameworks require more ongoing maintenance work than others — dependency updates, compatibility fixes, migration work when the ecosystem shifts. This work is done by your developers, on your salary budget. A framework that costs two developer-days per month to keep current is a hidden recurring cost.
+**Ongoing maintenance cost** — As discussed in [Part 1-7](/eval-guide/maintainability), some frameworks require more ongoing maintenance work than others — dependency updates, compatibility fixes, migration work when the ecosystem shifts. This work is done by your developers, on your salary budget. A framework that costs two developer-days per month to keep current is a hidden recurring cost.
 
 **Support cost** — When something goes wrong in a commercially supported framework, you have a vendor to call. When something goes wrong in a community-supported framework, you have Stack Overflow, GitHub issues, and your own debugging time. The value of commercial support is hard to quantify until you need it — at which point it becomes very easy to quantify.
 

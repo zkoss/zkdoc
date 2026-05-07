@@ -1,6 +1,6 @@
 ---
 title: "Server-Side Templating: Traditional MVC"
-permalink: /eval-guide/server-side-templating/
+permalink: /eval-guide/server-side-templating
 ---
 
 # Part 2-3: Server-Side Templating: Traditional MVC

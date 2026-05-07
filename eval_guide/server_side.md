@@ -1,6 +1,6 @@
 ---
 title: "Server-Side / Java-Centric Frameworks"
-permalink: /eval-guide/server-side/
+permalink: /eval-guide/server-side
 ---
 
 # Part 2-2: Server-Side / Java-Centric Frameworks

@@ -1,6 +1,6 @@
 ---
 title: "How to Choose a Web UI Framework"
-permalink: /eval-guide/choose-web-ui-framework/
+permalink: /eval-guide/choose-web-ui-framework
 ---
 
 # Part 1-1: How to Choose a Web UI Framework
@@ -25,19 +25,19 @@ This guide is based on building real applications across multiple frameworks, so
 
 ## Key decision factors — a summary
 
-**Team skills and stack** — The best framework for your team is usually the one your team already knows reasonably well. This isn't about being conservative — it's about recognizing that onboarding costs are real, that fewer people can review code written in an unfamiliar paradigm, and that debugging is harder in a framework nobody fully understands yet. If your backend is Java and your team thinks in Java, that matters. → [Part 1-2](/eval-guide/team-skills-java-vs-js/)
+**Team skills and stack** — The best framework for your team is usually the one your team already knows reasonably well. This isn't about being conservative — it's about recognizing that onboarding costs are real, that fewer people can review code written in an unfamiliar paradigm, and that debugging is harder in a framework nobody fully understands yet. If your backend is Java and your team thinks in Java, that matters. → [Part 1-2](/eval-guide/team-skills-java-vs-js)
 
-**Application type** — The shape of your application matters more than most developers admit. A document-heavy reporting tool, a highly interactive dashboard, a form-heavy data entry screen, and a public marketing site all have different rendering needs, different state management complexity, and different performance profiles. → [Part 1-3](/eval-guide/application-type/)
+**Application type** — The shape of your application matters more than most developers admit. A document-heavy reporting tool, a highly interactive dashboard, a form-heavy data entry screen, and a public marketing site all have different rendering needs, different state management complexity, and different performance profiles. → [Part 1-3](/eval-guide/application-type)
 
-**Architecture and complexity** — How complex will the application get over time? How many developers will work on it simultaneously? Frameworks that are easy to start with can become harder to organize at scale, while frameworks that feel heavy at first often pay off once the codebase grows. → [Part 1-4](/eval-guide/architecture-complexity/)
+**Architecture and complexity** — How complex will the application get over time? How many developers will work on it simultaneously? Frameworks that are easy to start with can become harder to organize at scale, while frameworks that feel heavy at first often pay off once the codebase grows. → [Part 1-4](/eval-guide/architecture-complexity)
 
-**Development speed** — Some frameworks let you ship a working screen in an afternoon. Others require more setup but give you more control later. If time-to-market is your primary constraint, this factor should weigh heavily in your decision. → [Part 1-5](/eval-guide/development-speed/)
+**Development speed** — Some frameworks let you ship a working screen in an afternoon. Others require more setup but give you more control later. If time-to-market is your primary constraint, this factor should weigh heavily in your decision. → [Part 1-5](/eval-guide/development-speed)
 
-**Enterprise requirements** — If your application must meet accessibility standards (WCAG), pass a security audit, or be backed by commercial support, that narrows your options significantly. Open-source frameworks with no commercial backing may not fit this column. → [Part 1-6](/eval-guide/enterprise-requirements/)
+**Enterprise requirements** — If your application must meet accessibility standards (WCAG), pass a security audit, or be backed by commercial support, that narrows your options significantly. Open-source frameworks with no commercial backing may not fit this column. → [Part 1-6](/eval-guide/enterprise-requirements)
 
-**Maintainability** — Who will maintain this in two years? Will those people be easy to hire? Is the framework likely to still be actively supported? → [Part 1-7](/eval-guide/maintainability/)
+**Maintainability** — Who will maintain this in two years? Will those people be easy to hire? Is the framework likely to still be actively supported? → [Part 1-7](/eval-guide/maintainability)
 
-**Priority & Trade-offs** — Every framework sits somewhere on the spectrum between "opinionated and productive" and "flexible and open-ended." Neither end is wrong, but they attract different teams and suit different projects. Understanding where your team and project sit on this spectrum will help you avoid picking a framework that fights you at every turn. → [Part 1-8](/eval-guide/priority/)
+**Priority & Trade-offs** — Every framework sits somewhere on the spectrum between "opinionated and productive" and "flexible and open-ended." Neither end is wrong, but they attract different teams and suit different projects. Understanding where your team and project sit on this spectrum will help you avoid picking a framework that fights you at every turn. → [Part 1-8](/eval-guide/priority)
 
 ## The decision framework
 

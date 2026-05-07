@@ -1,6 +1,6 @@
 ---
 title: "Note"
-permalink: /eval-guide/note/
+permalink: /eval-guide/note
 ---
 
 ## Note on methodology and scope

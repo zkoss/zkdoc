@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Maintainability"
-permalink: /eval-guide/maintainability/
+permalink: /eval-guide/maintainability
 ---
 
 # Part 1-7: Key Factor: Maintainability

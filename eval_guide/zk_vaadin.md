@@ -1,6 +1,6 @@
 ---
 title: "ZK vs Vaadin"
-permalink: /eval-guide/zk-vaadin/
+permalink: /eval-guide/zk-vaadin
 ---
 
 # Part 4-6: ZK vs Vaadin

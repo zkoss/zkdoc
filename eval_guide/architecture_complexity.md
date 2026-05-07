@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Architecture & Complexity"
-permalink: /eval-guide/architecture-complexity/
+permalink: /eval-guide/architecture-complexity
 ---
 
 # Part 1-4: Key Factor: Architecture & Complexity

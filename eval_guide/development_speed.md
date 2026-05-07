@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Development Speed"
-permalink: /eval-guide/development-speed/
+permalink: /eval-guide/development-speed
 ---
 
 # Part 1-5: Key Factor: Development Speed
@@ -17,7 +17,7 @@ This is not a conservative argument for avoiding new technology. It is a practic
 
 Before treating any framework as "fast," ask whether it is fast for your specific team. A framework praised for its rapid development experience will not deliver that experience to a team that is encountering it for the first time on a deadline.
 
-This connects directly to [Part 1-2](/eval-guide/team-skills-java-vs-js/) (Team Skills). If your team is Java-heavy and you choose a Java-centric framework like ZK or Vaadin, you gain speed because your developers are operating in familiar mental models. If your frontend team knows React well, React will be faster for them — not because React is inherently faster, but because fluency is fast.
+This connects directly to [Part 1-2](/eval-guide/team-skills-java-vs-js) (Team Skills). If your team is Java-heavy and you choose a Java-centric framework like ZK or Vaadin, you gain speed because your developers are operating in familiar mental models. If your frontend team knows React well, React will be faster for them — not because React is inherently faster, but because fluency is fast.
 
 ## Architecture affects the pace of every feature
 

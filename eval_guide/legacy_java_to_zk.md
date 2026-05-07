@@ -1,6 +1,6 @@
 ---
 title: "Modernizing Legacy Java Web"
-permalink: /eval-guide/legacy-java-to-zk/
+permalink: /eval-guide/legacy-java-to-zk
 ---
 
 # Part 5-3: Modernizing Legacy Java Desktop Applications: A Complete Guide to Migrating from Swing to ZK

@@ -1,6 +1,6 @@
 ---
 title: "ZK vs Angular"
-permalink: /eval-guide/zk-angular/
+permalink: /eval-guide/zk-angular
 ---
 
 # Part 4-3: ZK vs Angular

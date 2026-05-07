@@ -1,6 +1,6 @@
 ---
 title: "How AI Is Changing Web UI Development"
-permalink: /eval-guide/ai-changing-web-ui-development/
+permalink: /eval-guide/ai-changing-web-ui-development
 ---
 
 # Part 6-1: How AI Is Changing Web UI Development
@@ -17,7 +17,7 @@ AI also helps bridge skill gaps within a team. A Java developer who has never wr
 
 ## What AI has not changed
 
-[Part 1-2](/eval-guide/team-skills-java-vs-js/) covers this in the context of team skills, and the core point bears repeating here with more specificity.
+[Part 1-2](/eval-guide/team-skills-java-vs-js) covers this in the context of team skills, and the core point bears repeating here with more specificity.
 
 AI generates code that looks correct more often than it is. The output compiles, it runs, and it produces something that resembles the expected behavior. This is the dangerous part. With handwritten code, a developer has to slow down and understand their work before reaching a final state. With AI-generated code, the same developer can accept output that appears to work and move on — with subtle bugs, wrong assumptions, and missed edge cases accumulating silently in the codebase.
 

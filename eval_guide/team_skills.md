@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Team Skills and Stack"
-permalink: /eval-guide/team-skills-java-vs-js/
+permalink: /eval-guide/team-skills-java-vs-js
 ---
 
 # Part 1-2: Key Factor: Team Skills and Stack

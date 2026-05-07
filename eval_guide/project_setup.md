@@ -1,6 +1,6 @@
 ---
 title: "Project Setup and Detailed Measurements"
-permalink: /eval-guide/project-setup/
+permalink: /eval-guide/project-setup
 ---
 
 # Part 4-7: Project Setup and Detailed Measurements

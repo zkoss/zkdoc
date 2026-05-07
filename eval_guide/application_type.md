@@ -1,6 +1,6 @@
 ---
 title: "Key Factor: Application Type"
-permalink: /eval-guide/application-type/
+permalink: /eval-guide/application-type
 ---
 
 # Part 1-3: Key Factor: Application Type

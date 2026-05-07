@@ -1,13 +1,13 @@
 ---
 title: "Decision Guide: Matching Your Situation to a Framework Category"
-permalink: /eval-guide/decision-guide/
+permalink: /eval-guide/decision-guide
 ---
 
 # Part 3-2: The Decision Guide
 
 No framework wins on every dimension. The right choice depends on what matters most for your specific team, application, and constraints. This chapter maps common situations to the framework category most likely to fit — with honest notes on where each recommendation has limits.
 
-The table below works best if you've worked through the factors in [Part 1](/eval-guide/how-to-choose/). If you're coming directly to this chapter, the short version: your team's existing skills and your application's component requirements are usually the two most decisive factors, and everything else follows from there.
+The table below works best if you've worked through the factors in [Part 1](/eval-guide/how-to-choose). If you're coming directly to this chapter, the short version: your team's existing skills and your application's component requirements are usually the two most decisive factors, and everything else follows from there.
 
 A note on React and Angular: in enterprise Java environments, both are almost always used in a hybrid pattern alongside a Spring Boot backend, with the two sides communicating over a REST API. That's how they appear in this guide's experiments. When the table below recommends "Client-Side SPA (React or Angular)," that architectural pattern is implied.
 
@@ -84,4 +84,4 @@ Most situations point to two or three categories, not one. The table above narro
 
 The categories in this table don't map one-to-one to specific frameworks. "Server-Side Java" covers ZK, Vaadin, and Wicket, which differ meaningfully in component richness and commercial backing. If enterprise components or commercial support matter to you, ZK and Vaadin are the relevant candidates; Wicket is not. Part 4 covers these distinctions in detail.
 
-Your situation may legitimately point in different directions depending on the factor. A team with strong React skills building an internal data-heavy tool is in genuine tension between team familiarity (pointing toward React) and application type (pointing toward server-side Java). The right answer depends on which factor you weight more heavily — which is why [Part 1](/eval-guide/how-to-choose/) asks you to rank your priorities explicitly before comparing frameworks.
+Your situation may legitimately point in different directions depending on the factor. A team with strong React skills building an internal data-heavy tool is in genuine tension between team familiarity (pointing toward React) and application type (pointing toward server-side Java). The right answer depends on which factor you weight more heavily — which is why [Part 1](/eval-guide/how-to-choose) asks you to rank your priorities explicitly before comparing frameworks.

@@ -1,6 +1,6 @@
 ---
 title: "ZK vs Apache Wicket"
-permalink: /eval-guide/zk-wicket/
+permalink: /eval-guide/zk-wicket
 ---
 
 # Part 4-4: ZK vs Apache Wicket
