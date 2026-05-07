@@ -11,21 +11,21 @@ Many enterprise Java teams maintain Swing desktop applications that have been ru
 
 ### The Talent Gap
 
-Java Swing reached end-of-significant-investment around 2010 when Oracle shifted focus to JavaFX. Today's graduates learn Spring Boot, React, and cloud platforms — not AWT layout managers and Swing Event Dispatch Thread rules. As the engineers who built and maintained these applications retire, per-hour maintenance costs rise and the pool of qualified replacements shrinks. Surveys from enterprise tooling vendors consistently show Swing and AWT expertise declining by roughly 15 % per year in new job postings.
+Java Swing has seen relatively limited evolution since Oracle shifted primary UI investment toward JavaFX around 2010. Today's graduates learn Spring Boot, React, and cloud platforms — not AWT layout managers and Swing Event Dispatch Thread rules. As the engineers who built and maintained these applications retire, per-hour maintenance costs rise and the pool of qualified replacements shrinks. Surveys from enterprise tooling vendors consistently show Swing and AWT expertise declining by roughly 15 % per year in new job postings.
 
 ### Shifted User Expectations
 
-Internal users spend their working day in Microsoft 365, Salesforce, Slack, and Figma — polished, responsive, collaborative. When they switch to an application "designed in 2005 because it was," cognitive friction spikes, adoption falters, and data quality silently degrades. The expectation baseline has moved permanently toward browser-quality UX, and no amount of Look-and-Feel polish makes Swing catch up.
+Internal users spend their working day in Microsoft 365, Salesforce, Slack, and Figma — polished, responsive, collaborative. When they switch to a desktop application built for an earlier era, cognitive friction spikes, adoption falters, and data quality silently degrades. Even well-maintained Swing applications can struggle to match the responsiveness, accessibility, and collaboration expectations shaped by modern web software.
 
 ### Security and Compliance
 
-A Swing application distributes a full JVM — and often database credentials — to every endpoint it touches. Each security patch requires coordinated rollout across dozens or hundreds of workstations. EAA / Section 508 accessibility requirements (WCAG 2.1 AA) are difficult or impossible to satisfy with stock Swing components. Moving the UI to the server centralizes patching, keeps credentials server-side, and makes accessibility achievable through the browser's native accessibility tree.
+A Swing application typically distributes application runtime and business logic to every endpoint it touches, increasing patching and deployment complexity across the organization. EAA / Section 508 accessibility requirements (WCAG 2.1 AA) are difficult or impossible to satisfy with stock Swing components. Moving the UI to the server centralizes patching, keeps credentials server-side, and makes accessibility achievable through the browser's native accessibility tree.
 
 ### Deployment in a Remote-Work World
 
-VPN-first or cloud-first organizations cannot easily deliver Swing applications to remote employees without virtualization overhead. Version skew — where different users run different app versions because workstation updates are slow — is a perpetual support burden. A web application eliminates this class of problem entirely.
+VPN-first or cloud-first organizations cannot easily deliver Swing applications to remote employees without virtualization overhead. Version skew — where different users run different app versions because workstation updates are slow — is a perpetual support burden. A centrally deployed web application dramatically reduces this class of version-skew and deployment problem.
 
-The conclusion is not that Swing was a bad choice in 2005. It was the right choice then. The conclusion is that the *accumulated* cost of maintaining, securing, and extending a Swing application now exceeds the one-time migration cost for most teams — and that cost compounds with each year.
+The conclusion is not that Swing was the wrong choice at the time — it was the right choice for its era. For many organizations, the accumulated operational and maintenance cost now justifies seriously evaluating modernization options — especially as those costs continue to compound over time.
 
 
 
@@ -228,7 +228,7 @@ For a migration tutorial, however, a fully-declared ZUL introduces a paradigm sh
 
 The Composer's `doAfterCompose` then constructs the entire component tree in Java using `new Component()` + `appendChild()` + `addEventListener()`. Every line of that construction code maps directly to a line in the Swing constructor — which is the article's main point.
 
-A footnote for production teams: once the migration is complete and the team is comfortable with ZK, the programmatic component construction can be refactored into declarative ZUL. The result is shorter, more readable markup. The Composer shrinks from a UI-builder to a pure controller. But you don't need to do that to ship a working ZK application.
+A footnote for production teams: once the migration is done with this approach, it is a complete, production-ready result. If the team later wants to go further, ZK's declarative ZUL markup and MVVM pattern are there as options — they can make the UI code more concise and unlock additional IDE tooling support. But that is a separate decision to make when and if it feels useful, not a requirement of the migration.
 
 
 ### IV.3 Map the JFrame and Layout Panels
@@ -713,7 +713,7 @@ LOC counts below exclude blank lines and comments (measured with `grep -v '^\s*/
 
 **Eliminated bookkeeping.** `fireTableDataChanged()` calls disappear. EDT scheduling (`SwingUtilities.invokeLater`, `SwingWorker`) disappears. The developer writes business logic; ZK and the browser handle rendering and threading.
 
-**Declarative upgrade path.** Once the team is comfortable with ZK, the programmatic UI construction inside `doAfterCompose` can be progressively refactored into declarative ZUL markup. The result is significantly shorter, more readable UI code. The MVVM pattern (with `@bind` / `@command`) goes further and eliminates the event-handler methods too. The three-stage migration — Swing → ZK MVC programmatic → ZK MVC declarative → ZK MVVM — can proceed at the team's pace, one screen at a time.
+**Optional declarative upgrade path.** Applications migrated to ZK MVC are already fully functional and production-ready. For teams that want to further simplify UI development, programmatic UI construction in `doAfterCompose` can later be refactored into declarative ZUL markup, resulting in shorter and more maintainable code. The MVVM pattern (with `@bind` / `@command`) can reduce boilerplate further still. These enhancements are entirely optional and can be adopted gradually, one screen at a time.
 
 **Technology preservation.** The migration was written in Java 17 by developers who already knew Java. No JavaScript was written. No REST API was added. The domain model, service layer, and business rules were not touched. The investment in the existing backend is fully preserved.
 
