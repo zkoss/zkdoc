@@ -59,7 +59,7 @@ ZK stands out among web frameworks as a migration target for Swing developers fo
 
 A successful migration replaces *only the presentation layer*. The business logic, domain model, and data access layer should survive unchanged. Martin Fowler's *Patterns of Enterprise Application Architecture* describes this as the fundamental layering contract: **Presentation / Domain / Data Source**. When the layers are properly separated before migration, a Swing → ZK migration touches only the Presentation layer.
 
-![Layered architecture: only the presentation layer changes during a Swing-to-ZK migration. The domain model and data source survive intact.](diagrams/architecture-layers.svg)
+![Layered architecture: only the presentation layer changes during a Swing-to-ZK migration. The domain model and data source survive intact.](images/architecture-layers.svg)
 
 ### What Survives
 
