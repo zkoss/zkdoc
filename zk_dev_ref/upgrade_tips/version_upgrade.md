@@ -69,6 +69,14 @@ version.
 Then, fix any compilation errors and configure the required fallback
 settings by referencing the [ Upgrade References](#Upgrade_References).
 
+# Assisted Migration (Structured, AI-Assisted Path)
+
+The standard upgrade process works well for straightforward version bumps. However, if your application spans multiple major versions, has custom components, or lacks test coverage, the manual effort and risk can be significant.
+ZK provides an assisted migration service built on a Memory-First approach — combining a structured knowledge base derived from 20 years of ZK development history, AI-assisted analysis, and human verification by ZK engineers. This approach has been used internally to successfully complete a multi-version upgrade (ZK 8 → ZK 10) that had been blocked for two years.
+
+For more background on the approach, see [Turning a 2-Year Blocker into a Structured, AI-Assisted Migration](https://docs.zkoss.org/small-talk/2026/04/29/memory-first-legacy-modernization.html).
+If you are interested in exploring this option for your project, contact us at info@zkoss.org for an initial assessment.
+
 # Checklist
 
 To estimate the upgrading effort, we suggest a checklist:
