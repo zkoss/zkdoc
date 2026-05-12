@@ -13,7 +13,7 @@ Both frameworks keep application logic on the server and push rendered component
 
 Vaadin is Java-only by design. All UI is defined programmatically in Java — components are Java objects, layouts are composed in Java, and event handlers are Java lambdas. There is no template language. Vaadin also offers Hilla, its TypeScript frontend model for teams that want a more client-driven approach while maintaining Java on the backend.
 
-ZK offers three approaches to UI composition. The most common is ZUL — an XML-based markup language paired with Java ViewModels using the MVVM pattern. ZK also supports pure Java composition (similar to Vaadin's model) and a full MVC pattern. Most ZK applications use ZUL + ViewModel.
+ZK offers three approaches to UI composition. The most common is ZUL — an XML-based markup language paired with Java ViewModels using the MVVM pattern. ZK also supports [pure Java composition](https://docs.zkoss.org/get_started/building_ui_in_java) (similar to Vaadin's model) and a full MVC pattern. Most ZK applications use ZUL + ViewModel.
 
 ## Level 1 comparison: Employee Manager
 
@@ -65,8 +65,8 @@ Both ZK and Vaadin offer commercial licensing and professional support contracts
 
 ## When Vaadin is the better choice
 
-Vaadin suits your situation better if your team prefers a pure-Java approach without any template language, if Vaadin Copilot's AI-assisted development capability is valuable to your workflow, if Vaadin Hilla is a fit for teams that want TypeScript frontend development with a Java backend, or if the specific Vaadin Directory add-ons for your required components are mature enough for your needs.
+Vaadin suits your situation better if your team has existing Vaadin experience and a stable, well-functioning codebase, if Vaadin Copilot's AI-assisted development capability is valuable to your workflow, if Vaadin Hilla is a fit for teams that want TypeScript frontend development with a Java backend, or if the specific Vaadin Directory add-ons for your required components are mature enough for your needs.
 
 ## When ZK is the better choice
 
-ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZUL-based layout is preferred over pure-Java UI composition, when build speed matters (ZK at 2.6s versus Vaadin at 6.6s), or when compatibility with Spring Boot 2.x or the javax namespace is a current constraint.
+ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZK's AI tooling — an MCP documentation server for grounded answers and a ZUL writer agent for code generation — fits your development workflow, when build speed matters (ZK at 2.6s versus Vaadin at 6.6s), or when compatibility with Spring Boot 2.x or the javax namespace is a current constraint.
