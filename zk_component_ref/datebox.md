@@ -11,7 +11,7 @@ title: "Datebox"
 An edit box for holding a date. After click on the calender, a
 `calender` will pop-up for inputting date.
 
-# Keyboard Navigation `datebox`
+# Keyboard Navigation
 
 - Alt+DOWN to pop up the `calendar.`
 
@@ -343,7 +343,9 @@ zul.jar.
 | Name | Snapshot |
 |---|---|
 | default | ![](/zk_component_ref/images/datebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png) **|
+
+** `rounded`: {% include supported-since.html version="5.0.0" %}
 
 # Supported Children
 
@@ -351,11 +353,11 @@ Check inherited events
 
 # Version History
 
-| Version | Date         | Content                                                                                                                                                                                                                                                       |
-|---------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Version | Date         | Content                                                                                                               |
+|---------|--------------|----------------------------------------------------------------------------|
 | 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week) for details. |
-| 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.                                                                                                                                                                                                 |
-| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setFormat(java.lang.String)) supported the styling.                                                                                                                                                          |
-| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setLocale(java.util.Locale)) was introduced.                                                                                                                                                                 |
-| 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number                                                                                                                                                                        |
-| 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox.                                                                                                                                                                    |
+| 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.              |
+| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setFormat(java.lang.String)) supported the styling. |
+| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setLocale(java.util.Locale)) was introduced. |
+| 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number |
+| 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox. |

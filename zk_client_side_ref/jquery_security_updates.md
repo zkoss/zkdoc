@@ -1,3 +1,7 @@
+---
+title: "jQuery Security Updates"
+---
+
 ZK framework includes a customized jQuery library. Replacing that
 bundled jQuery in ZK to solve its security vulnerability isn't an
 option. This is because ZK and jQuery are deeply integrated with

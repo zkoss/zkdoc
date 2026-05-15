@@ -53,14 +53,44 @@ component has several advantages:
 
 # Properties and Features
 
-## Orientation
+## Orient
 
 Default: `vertical`
 
-Supported values: (default) “vertical” or “horizontal”.
+Supported values: `”vertical”` (default) or `”horizontal”`.
 
-The property specifies the layout orientation, determining how its two
-child containers are displayed in the component.
+The `orient` attribute specifies how the two child areas are arranged inside Splitlayout.
+
+- **`vertical`** — The two children are stacked **top and bottom**, separated by a horizontal splitter bar. Dragging the bar adjusts height.
+
+  ```
+  +---------------------------+
+  |        Child 1            |
+  +---------------------------+  <-- splitter bar (drag up/down)
+  |        Child 2            |
+  +---------------------------+
+  ```
+
+- **`horizontal`** — The two children are placed **side by side** (left and right), separated by a vertical splitter bar. Dragging the bar adjusts width.
+
+  ```
+  +-----------+---+-----------+
+  |           | ↕ |           |
+  |  Child 1  |   |  Child 2  |
+  |           |   |           |
+  +-----------+---+-----------+
+              ^
+        splitter bar (drag left/right)
+  ```
+
+Example — set `orient` in ZUL:
+
+```xml
+<splitlayout orient=”horizontal” vflex=”1” hflex=”1”>
+    <div hflex=”1” vflex=”1”><label value=”Left”/></div>
+    <div hflex=”1” vflex=”1”><label value=”Right”/></div>
+</splitlayout>
+```
 
 ## Collapse
 
