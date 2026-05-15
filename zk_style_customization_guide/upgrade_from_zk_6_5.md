@@ -422,16 +422,198 @@ called *org.zkoss.zul.nativebar* in zk.xml and set it to true.
 
 # Tip 4 Appendix
 
-| Component | ZK 6.5 DOM structure | ZK 7 DOM structure |
-| --- | --- | --- |
-| Button | Trendy mold<br/><br/>```html<br/>&lt;span class="z-button"&gt;<br/>    &lt;table&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-button-tl"&gt;<br/>                &lt;button class="z-button" /&gt;<br/>            &lt;td class="z-button-tm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-button-tr"&gt;&lt;/td&gt;<br/>        &lt;/tr&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-button-cl"&gt;&lt;/td&gt;<br/>            &lt;td class="z-button-cm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-button-cr"&gt;&lt;/td&gt;<br/>        &lt;/tr&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-button-bl"&gt;&lt;/td&gt;<br/>            &lt;td class="z-button-bm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-button-br"&gt;&lt;/td&gt;<br/>        &lt;/tr&gt;<br/>    &lt;/table&gt;<br/>&lt;/span&gt;<br/>``` | ```html<br/>&lt;button class="z-button" /&gt;<br/>``` |
-| Caption | ```html<br/>&lt;table class="z-caption"&gt;<br/>    &lt;tr&gt;<br/>        &lt;td class="z-caption-l"&gt;&lt;/td&gt;<br/>        &lt;td class="z-caption-r"&gt;&lt;/td&gt;<br/>    &lt;/tr&gt;<br/>&lt;/table&gt;<br/>``` | ```html<br/>&lt;div class="z-caption"&gt;<br/>    &lt;div class="z-caption-content"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
-| Combobutton | ```html<br/>&lt;span class="z-combobutton"&gt;<br/>    &lt;table&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-combobutton-tl"&gt;<br/>                &lt;button class="z-combobutton" /&gt;<br/>            &lt;td class="z-combobutton-tm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-combobutton-tr"&gt;&lt;/td&gt;<br/>        &lt;/tr&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-combobutton-cl"&gt;&lt;/td&gt;<br/>            &lt;td class="z-combobutton-cm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-combobutton-cr"&gt;<br/>              &lt;div&gt;<br/>                &lt;div class="z-combobutton-btn-img" /&gt;<br/>              &lt;/div&gt;<br/>            &lt;/td&gt;<br/>        &lt;/tr&gt;<br/>        &lt;tr&gt;<br/>            &lt;td class="z-combobutton-bl"&gt;&lt;/td&gt;<br/>            &lt;td class="z-combobutton-bm"&gt;&lt;/td&gt;<br/>            &lt;td class="z-combobutton-br"&gt;&lt;/td&gt;<br/>        &lt;/tr&gt;<br/>    &lt;/table&gt;<br/>&lt;/span&gt;<br/>``` | ```html<br/>&lt;span class="z-combobutton"&gt;<br/>    &lt;span class="z-combobutton-content"&gt;<br/>        &lt;span class="z-combobutton-text" /&gt;<br/>        &lt;span class="z-combobutton-button"&gt;<br/>            &lt;i class="z-combobutton-icon" /&gt;<br/>        &lt;/span&gt;<br/>    &lt;/span&gt;<br/>&lt;/span&gt;<br/>``` |
-| Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox | rounded mold<br/><br/>```html<br/>&lt;i class="z-component-rounded"&gt;<br/>    &lt;input class="z-component-rounded-inp" /&gt;<br/>    &lt;i class="z-component-rounded-right-edge" /&gt;<br/>&lt;/i&gt;<br/>``` | ```html<br/>&lt;input class="z-component" /&gt;<br/>``` |
-| Groupbox | ```html<br/>&lt;div class="z-groupbox"&gt;<br/>    &lt;div class="z-groupbox-tl"&gt;<br/>        &lt;div class="z-groupbox-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-groupbox-hl"&gt;<br/>        &lt;div class="z-groupbox-hr"&gt;<br/>            &lt;div class="z-groupbox-hm"&gt;<br/>                &lt;div class="z-groupbox-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-groupbox-cnt"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-groupbox"&gt;<br/>    &lt;div class="z-groupbox-header"&gt;&lt;/div&gt;<br/>    &lt;div class="z-groupbox-content"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
-| Panel | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-tl"&gt;<br/>        &lt;div class="z-panel-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-hl"&gt;<br/>        &lt;div class="z-panel-hr"&gt;<br/>            &lt;div class="z-panel-hm"&gt;<br/>                &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panel-cl"&gt;<br/>            &lt;div class="z-panel-cr"&gt;<br/>                &lt;div class="z-panel-cm"&gt;<br/>                    &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>                &lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-fl"&gt;<br/>            &lt;div class="z-panel-fr"&gt;<br/>                &lt;div class="z-panel-fm"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>        &lt;div class="z-panel-bl"&gt;<br/>            &lt;div class="z-panel-br"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-panel"&gt;<br/>    &lt;div class="z-panel-head"&gt;<br/>        &lt;div class="z-panel-header"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-panel-body"&gt;<br/>        &lt;div class="z-panelchildren"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
-| Window | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-tl"&gt;<br/>        &lt;div class="z-window-tr"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-hl"&gt;<br/>        &lt;div class="z-window-hr"&gt;<br/>            &lt;div class="z-window-hm"&gt;<br/>                &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-cl"&gt;<br/>        &lt;div class="z-window-cr"&gt;<br/>            &lt;div class="z-window-cm"&gt;<br/>                &lt;div class="z-window-cnt"&gt;&lt;/div&gt;<br/>            &lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>    &lt;div class="z-window-bl"&gt;<br/>        &lt;div class="z-window-br"&gt;&lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/div&gt;<br/>``` | ```html<br/>&lt;div class="z-window"&gt;<br/>    &lt;div class="z-window-header"&gt;&lt;/div&gt;<br/>    &lt;div class="z-window-content"&gt;&lt;/div&gt;<br/>&lt;/div&gt;<br/>``` |
-| Tab | horizontal / vertical orient<br/><br/>```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-close"&gt;&lt;/a&gt;<br/>    &lt;div class="z-tab-hl"&gt;<br/>        &lt;div class="z-tab-hr"&gt;<br/>            &lt;div class="z-tab-hm"&gt;&lt;/div&gt;<br/>        &lt;/div&gt;<br/>    &lt;/div&gt;<br/>&lt;/li&gt;<br/>``` | ```html<br/>&lt;li class="z-tab"&gt;<br/>    &lt;a class="z-tab-content"&gt;<br/>        &lt;div class="z-tab-button"&gt;&lt;/div&gt;<br/>        &lt;span class="z-tab-text"&gt;&lt;/span&gt;<br/>    &lt;/a&gt;<br/>&lt;/li&gt;<br/>``` |
+<table>
+<thead>
+<tr><th>Component</th><th>ZK 6.5 DOM structure</th><th>ZK 7 DOM structure</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>Button</td>
+<td>Trendy mold<pre><code>&lt;span class="z-button"&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td class="z-button-tl"&gt;
+                &lt;button class="z-button" /&gt;
+            &lt;td class="z-button-tm"&gt;&lt;/td&gt;
+            &lt;td class="z-button-tr"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="z-button-cl"&gt;&lt;/td&gt;
+            &lt;td class="z-button-cm"&gt;&lt;/td&gt;
+            &lt;td class="z-button-cr"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="z-button-bl"&gt;&lt;/td&gt;
+            &lt;td class="z-button-bm"&gt;&lt;/td&gt;
+            &lt;td class="z-button-br"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/span&gt;</code></pre></td>
+<td><pre><code>&lt;button class="z-button" /&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Caption</td>
+<td><pre><code>&lt;table class="z-caption"&gt;
+    &lt;tr&gt;
+        &lt;td class="z-caption-l"&gt;&lt;/td&gt;
+        &lt;td class="z-caption-r"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre></td>
+<td><pre><code>&lt;div class="z-caption"&gt;
+    &lt;div class="z-caption-content"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Combobutton</td>
+<td><pre><code>&lt;span class="z-combobutton"&gt;
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td class="z-combobutton-tl"&gt;
+                &lt;button class="z-combobutton" /&gt;
+            &lt;td class="z-combobutton-tm"&gt;&lt;/td&gt;
+            &lt;td class="z-combobutton-tr"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="z-combobutton-cl"&gt;&lt;/td&gt;
+            &lt;td class="z-combobutton-cm"&gt;&lt;/td&gt;
+            &lt;td class="z-combobutton-cr"&gt;
+              &lt;div&gt;
+                &lt;div class="z-combobutton-btn-img" /&gt;
+              &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class="z-combobutton-bl"&gt;&lt;/td&gt;
+            &lt;td class="z-combobutton-bm"&gt;&lt;/td&gt;
+            &lt;td class="z-combobutton-br"&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/span&gt;</code></pre></td>
+<td><pre><code>&lt;span class="z-combobutton"&gt;
+    &lt;span class="z-combobutton-content"&gt;
+        &lt;span class="z-combobutton-text" /&gt;
+        &lt;span class="z-combobutton-button"&gt;
+            &lt;i class="z-combobutton-icon" /&gt;
+        &lt;/span&gt;
+    &lt;/span&gt;
+&lt;/span&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Textbox<br/>Intbox<br/>Decimalbox<br/>Longbox<br/>Doublebox</td>
+<td>rounded mold<pre><code>&lt;i class="z-component-rounded"&gt;
+    &lt;input class="z-component-rounded-inp" /&gt;
+    &lt;i class="z-component-rounded-right-edge" /&gt;
+&lt;/i&gt;</code></pre></td>
+<td><pre><code>&lt;input class="z-component" /&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Groupbox</td>
+<td><pre><code>&lt;div class="z-groupbox"&gt;
+    &lt;div class="z-groupbox-tl"&gt;
+        &lt;div class="z-groupbox-tr"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-groupbox-hl"&gt;
+        &lt;div class="z-groupbox-hr"&gt;
+            &lt;div class="z-groupbox-hm"&gt;
+                &lt;div class="z-groupbox-header"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-groupbox-cnt"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+<td><pre><code>&lt;div class="z-groupbox"&gt;
+    &lt;div class="z-groupbox-header"&gt;&lt;/div&gt;
+    &lt;div class="z-groupbox-content"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Panel</td>
+<td><pre><code>&lt;div class="z-panel"&gt;
+    &lt;div class="z-panel-tl"&gt;
+        &lt;div class="z-panel-tr"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-panel-hl"&gt;
+        &lt;div class="z-panel-hr"&gt;
+            &lt;div class="z-panel-hm"&gt;
+                &lt;div class="z-panel-header"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-panel-body"&gt;
+        &lt;div class="z-panel-cl"&gt;
+            &lt;div class="z-panel-cr"&gt;
+                &lt;div class="z-panel-cm"&gt;
+                    &lt;div class="z-panelchildren"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="z-panel-fl"&gt;
+            &lt;div class="z-panel-fr"&gt;
+                &lt;div class="z-panel-fm"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="z-panel-bl"&gt;
+            &lt;div class="z-panel-br"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+<td><pre><code>&lt;div class="z-panel"&gt;
+    &lt;div class="z-panel-head"&gt;
+        &lt;div class="z-panel-header"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-panel-body"&gt;
+        &lt;div class="z-panelchildren"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Window</td>
+<td><pre><code>&lt;div class="z-window"&gt;
+    &lt;div class="z-window-tl"&gt;
+        &lt;div class="z-window-tr"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-window-hl"&gt;
+        &lt;div class="z-window-hr"&gt;
+            &lt;div class="z-window-hm"&gt;
+                &lt;div class="z-window-header"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-window-cl"&gt;
+        &lt;div class="z-window-cr"&gt;
+            &lt;div class="z-window-cm"&gt;
+                &lt;div class="z-window-cnt"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="z-window-bl"&gt;
+        &lt;div class="z-window-br"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+<td><pre><code>&lt;div class="z-window"&gt;
+    &lt;div class="z-window-header"&gt;&lt;/div&gt;
+    &lt;div class="z-window-content"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre></td>
+</tr>
+<tr>
+<td>Tab</td>
+<td>horizontal / vertical orient<pre><code>&lt;li class="z-tab"&gt;
+    &lt;a class="z-tab-close"&gt;&lt;/a&gt;
+    &lt;div class="z-tab-hl"&gt;
+        &lt;div class="z-tab-hr"&gt;
+            &lt;div class="z-tab-hm"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/li&gt;</code></pre></td>
+<td><pre><code>&lt;li class="z-tab"&gt;
+    &lt;a class="z-tab-content"&gt;
+        &lt;div class="z-tab-button"&gt;&lt;/div&gt;
+        &lt;span class="z-tab-text"&gt;&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/li&gt;</code></pre></td>
+</tr>
+</tbody>
+</table>
 
 # Tip 5 Appendix
 
