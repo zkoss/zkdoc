@@ -124,3 +124,28 @@ public class MyBlockService implements org.zkoss.zk.au.AuService {
     }
 }
 ```
+
+## Apply Your Blocking Service
+
+To apply the custom `AuService` to every desktop, plug it in via a
+[DesktopInit]({{site.baseurl}}/zk_dev_ref/customization/life_cycle_listener)
+listener and register the listener in `zk.xml`:
+
+```java
+public class MyBlockServiceDesktopInit implements org.zkoss.zk.ui.util.DesktopInit {
+    public void init(Desktop desktop, Object request) {
+        desktop.addListener(new MyBlockService());
+    }
+}
+```
+
+```xml
+<listener>
+    <listener-class>foo.MyBlockServiceDesktopInit</listener-class>
+</listener>
+```
+
+To apply it only to a particular component, call
+[Component.setAuService()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Component.html#setAuService(org.zkoss.zk.au.AuService))
+instead. See [AU Services]({{site.baseurl}}/zk_dev_ref/customization/au_services)
+for details.
