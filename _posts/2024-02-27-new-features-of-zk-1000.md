@@ -343,8 +343,7 @@ roles and attributes, aria-checked attributes, and accessible names.
 
 ## Java 11 Required
 
-The binary-compatible level of ZK 10 is Java 11. Please make sure to use
-Java 11/Jakarta 11 or a higher version.
+The binary-compatible level is Java 11. Please make sure to use Java 11 or higher, combined with either a javax or Jakarta EE compatible environment.
 
 ## Supported Browsers
 
