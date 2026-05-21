@@ -853,40 +853,61 @@ that the column's width is adjusted before the`onColSize` event is sent.
 In other words, the event serves as a notification that you can ignore.
 Of course, you can do whatever you want in the event listener.
 
-## Spans
+## Column Span
 
-It is a list of comma-separated integers, controlling whether to span a
-cell over several columns. The first number in the list denotes the
-number of columns the first cell shall span. The second number denotes
-the number of columns the second cell will span and so on. If a number
-is omitted, 1 is assumed.
+{% include RemovedSince.html version=10.0.0 %}
+{% include Notice.html text='Deprecated. Use Cell instead.' %}
+
+Using the `spans` attribute of `row` is no longer supported since ZK 10. Instead, you should use the `cell` component with the `colspan` attribute to span cells over multiple columns.
 
 For example,
 
 ```xml
 <grid>
     <columns>
-        <column label="Left" align="left"/><column label="Center" align="center"/>
-        <column label="Right" align="right"/><column label="Column 4"/>
-        <column label="Column 5"/><column label="Column 6"/>
+        <column label="Left" align="left"/>
+        <column label="Center" align="center"/>
+        <column label="Right" align="right"/>
+        <column label="Column 4"/>
+        <column label="Column 5"/>
+        <column label="Column 6"/>
     </columns>
     <rows>
         <row>
-            <label value="Item A.1"/><label value="Item A.2"/>
-            <label value="Item A.3"/><label value="Item A.4"/>
-            <label value="Item A.5"/><label value="Item A.6"/>
+            <label value="Item A.1"/>
+            <label value="Item A.2"/>
+            <label value="Item A.3"/>
+            <label value="Item A.4"/>
+            <label value="Item A.5"/>
+            <label value="Item A.6"/>
         </row>
-        <row spans="1,2,2">
-            <label value="Item B.1"/><label value="Item B.2"/>
-            <label value="Item B.4"/><label value="Item B.6"/>
+        <row>
+            <label value="Item B.1"/>
+            <label value="Item B.2"/>
+            <cell colspan="2">
+                <label value="Item B.4"/>
+            </cell>
+            <cell colspan="2">
+                <label value="Item B.6"/>
+            </cell>
         </row>
-        <row spans="3">
-            <label value="Item C.1"/><label value="Item C.4"/>
-            <label value="Item C.5"/><label value="Item C.6"/>
+        <row>
+            <cell colspan="3">
+                <label value="Item C.1"/>
+            </cell>
+            <label value="Item C.4"/>
+            <label value="Item C.5"/>
+            <label value="Item C.6"/>
         </row>
-        <row spans=",,2,2">
-            <label value="Item D.1"/><label value="Item D.2"/>
-            <label value="Item D.3"/><label value="Item D.5"/>
+        <row>
+            <label value="Item D.1"/>
+            <label value="Item D.2"/>
+            <cell colspan="2">
+                <label value="Item D.3"/>
+            </cell>
+            <cell colspan="2">
+                <label value="Item D.5"/>
+            </cell>
         </row>
     </rows>
 </grid>
