@@ -853,14 +853,19 @@ that the column's width is adjusted before the`onColSize` event is sent.
 In other words, the event serves as a notification that you can ignore.
 Of course, you can do whatever you want in the event listener.
 
-## Column Span
+## Column Span and Row Span (colspan, rowspan)
 
 {% include RemovedSince.html version=10.0.0 %}
 {% include Notice.html text='Deprecated. Use Cell instead.' %}
 
-Using the `spans` attribute of `row` is no longer supported since ZK 10. Instead, you should use the `cell` component with the `colspan` attribute to span cells over multiple columns.
+Using the `spans` attribute of `row` is no longer supported since ZK 10. 
+
+Instead, you should use the `cell` component with `colspan` and `rowspan` attributes to span cells over multiple columns or rows. Compared to the legacy row-level `spans` attribute (which only allowed column spanning), using the `<cell>` component provides the following benefits:
+* **Cell-Level Control**: You can control alignment and spanning directly on the individual cell level, rather than being restricted to row-level configurations.
+* **Support for both Row and Column Spanning**: By supporting both horizontal column spanning (`colspan`) and vertical row spanning (`rowspan`) (similar to standard HTML `<td>` behaviors), it offers much greater layout flexibility.
 
 For example,
+
 
 ```xml
 <grid>
