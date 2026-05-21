@@ -856,7 +856,7 @@ Of course, you can do whatever you want in the event listener.
 ## Column Span and Row Span (colspan, rowspan)
 
 {% include RemovedSince.html version=10.0.0 %}
-{% include Notice.html text='Deprecated. Use Cell instead.' %}
+{% include Notice.html text='The spans attribute of the row component is deprecated. Use the cell component instead.' %}
 
 Using the `spans` attribute of `row` is no longer supported since ZK 10. 
 
