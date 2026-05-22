@@ -95,7 +95,14 @@ family of register() methods.
 
 Web developers could also add other ways for setting the current theme
 by writing a custom
-*[org.zkoss.web.theme.ThemeResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/ThemeResolver.html)*'.
+[org.zkoss.web.theme.ThemeResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/web/theme/ThemeResolver.html).
+
+The `ThemeResolver` interface defines two methods:
+
+- **`getTheme(HttpServletRequest request)`** — Called by ZK on every request to determine which theme should be applied. Return the theme name that your logic resolves (e.g. from session, database, or a request parameter). If the returned name cannot be matched to a registered theme, ZK falls back according to its validation strategy.
+- **`setTheme(HttpServletRequest request, HttpServletResponse response, String themeName)`** — Called when the user explicitly selects or changes a theme (e.g. via `Themes.setTheme()`). Use this method to persist the chosen theme name so that `getTheme()` can return it on subsequent requests.
+
+ZK's built-in [org.zkoss.zul.theme.CookieThemeResolver](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/theme/CookieThemeResolver.html) is a good reference implementation: `setTheme()` writes the theme name to an HTTP cookie, and `getTheme()` reads it back from the cookie on the next request. You can study its source as a starting point for your own resolver.
 
 If you would like to communicate theme name via session instead, you
 would create a class like the following:
