@@ -77,13 +77,10 @@ This Cell must only be a child of [Row](/zk_component_ref/row), [Hbox](/zk_compo
 It specifies the number of rows this cell should occupy. It has the same
 effect as HTML TR tag's `rowspan` attribute does.
 
-# Miscellaneous
 
-## Comparison to the default (no Cell) scenario
+# Comparison to the default (no Cell) scenario
 
-The Cell component is meant to provide full controll of the DOM
-structure, so the user needs to expect to handle some lower level
-styling.
+The Cell component is designed to provide full control over the DOM structure, meaning developers should expect to handle some lower-level styling.
 
 For example, consider the following scenario:
 
@@ -103,19 +100,70 @@ For example, consider the following scenario:
         </rows>
     </grid>
 ```
+In a browser, the 2 table cells visually look no difference.
 
-Although they look alike, the DOM structures generated for the two table
-cells are slightly different:
+## DOM Structure Differences
 
-![](/zk_component_ref/images/ZK5ComRef_Cell_DOM_Comparison.png)
+When embedding components in a Grid row:
 
-With a Cell component given, there is no inner `<div>` element
-generated, which grants you a more flexible control to the DOM
-structure, but as a result you may need to provide more style handling.
-It is also recommended to use Cell for handling row span, column span,
-and alignment. In neither of the above cases, it is recommended not to
-use Cell. To put more than 1 Component in a grid cell, you can also use
-a Div to wrap them.
+* **Regular items (without `<cell>`)**: The `Row` component automatically wraps the child in a wrapper `<td>` with an inner `<div>` content wrapper:
+
+  ```html
+  <td class="z-row-inner">
+      <div class="z-row-content">
+          <!-- Component HTML (e.g. <span class="z-label">) -->
+      </div>
+  </td>
+  ```
+
+* **With `<cell>`**: The `<cell>` component renders its own `<td>` directly under the `<tr>`, with no inner `<div>` wrapper:
+
+  ```html
+  <td class="z-cell">
+      <!-- Component HTML (e.g. <span class="z-label">) -->
+  </td>
+  ```
+
+## Rationale Behind the Design
+
+This structural difference is by design to support row spanning (`rowspan`):
+1. **HTML Specification Constraint**: The HTML standard specifies that `rowspan` and `colspan` attributes must reside on a `<td>` element that is a direct child of a table row (`<tr>`).
+2. **Invalid HTML Prevention**: If the parent `Row` continued to output its default `<td>` wrapper, any nested `<cell>` trying to output its own spanned `<td>` would result in nested table cells (`<tr>` -> `<td>` -> `<td>`), which is invalid HTML.
+3. **Control Delegated**: Therefore, when `Row` detects a `<cell>` child, it yields rendering responsibilities to the `<cell>` component, which outputs a single, directly attached `<td>` element.
+
+## CSS and Styling Implications
+
+Because the inner wrapper `div.z-row-content` is absent when using `<cell>`, CSS selectors and styles apply differently:
+* **Padding**: By default, regular items have their padding applied to the inner wrapper (`div.z-row-content`), whereas `<cell>` elements have their padding applied directly to the `td.z-cell` element.
+* **Hover and Text Colors**: Hover background styles are applied to both, but text color inheritance paths differ since regular items inherit colors through `.z-row-content`.
+* **Custom Styles**: If you write custom CSS selectors targeting `td` or direct cell wrappers, they may behave differently between regular cells and `<cell>` components.
+
+## Best Practice Recommendations
+
+* **Standard Usage**: If you do not have any custom DOM-level styling (e.g., you rely purely on ZK's default themes), mixing `<cell>` and regular items is perfectly safe.
+* **CSS Customization / DOM Consistency**: If you apply custom CSS styling targeting the DOM element level (such as direct cell borders, paddings, or selector paths), mixing `<cell>` and regular items can lead to layout inconsistency. In this case, **it is highly recommended to wrap all child components of all rows in `<cell>`**, ensuring the entire grid uses a uniform `td.z-cell` DOM tree.
+
+```xml
+<!-- Recommended: Wrap all cells in <cell> for DOM and CSS consistency -->
+<grid>
+    <columns>
+        <column label="A" />
+        <column label="B" />
+        <column label="C" />
+    </columns>
+    <rows>
+        <row>
+            <cell><label value="Item A1" /></cell> <!-- No span needed, but wrapped -->
+            <cell><label value="Item A2" /></cell>
+            <cell><label value="Item A3" /></cell>
+        </row>
+        <row>
+            <cell colspan="2"><label value="Spans A & B" /></cell>
+            <cell><label value="Item B3" /></cell>
+        </row>
+    </rows>
+</grid>
+```
 
 # Supported Events
 

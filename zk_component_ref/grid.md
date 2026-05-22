@@ -864,8 +864,12 @@ Instead, you should use the `cell` component with `colspan` and `rowspan` attrib
 * **Cell-Level Control**: You can control alignment and spanning directly on the individual cell level, rather than being restricted to row-level configurations.
 * **Support for both Row and Column Spanning**: By supporting both horizontal column spanning (`colspan`) and vertical row spanning (`rowspan`) (similar to standard HTML `<td>` behaviors), it offers much greater layout flexibility.
 
-For example,
+> [!IMPORTANT]
+> **DOM Structure and CSS Styling Implications**
+> Under the hood, using `<cell>` generates a different DOM structure compared to regular row items (it lacks the inner `div` wrapper and uses the `z-cell` class). Mixing `<cell>` and regular components in the same grid can lead to an inconsistent DOM structure, which may cause unexpected behavior when applying custom DOM-level CSS styling.
+> Before mixing `<cell>` and regular components, please review the styling impacts and best practice recommendations in the [Comparison to the default (no Cell) scenario](/zk_component_ref/cell#comparison-to-the-default-no-cell-scenario) section under the Cell component reference.
 
+For example,
 
 ```xml
 <grid>
