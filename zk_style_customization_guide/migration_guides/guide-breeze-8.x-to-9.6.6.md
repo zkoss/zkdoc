@@ -1,6 +1,6 @@
 # Guide: ZK 8.x breeze → ZK 9.6.6 breeze
 
-Migrating a ZK 8.x breeze-based theme to ZK 9.6.6 while **maitaining the breeze palette and structure**. There is no palette renaming and no architectural change to the LESS variable model. The changes are mostly **build/scaffolding**, plus adding additional rules for the new widgets ZK introduced between 8.x and 9.6.
+The following guide explain the migration process of a ZK 8.x breeze-based theme to ZK 9.6.6 while **maitaining the look and feel** of the theme. No palette or LESS variables architecture changes are required. The changes are mostly done at **build and scaffolding** level, plus adding new rules for the new widgets ZK introduced between 8.x and 9.6.
 
 ---
 
@@ -10,7 +10,7 @@ Migrating a ZK 8.x breeze-based theme to ZK 9.6.6 while **maitaining the breeze 
 |---|---|---|
 | LESS variable file | `src/archive/web/zul/less/_zkvariables.less` | same path, same variable names, most of the palette can be reused as-is |
 | Header import order | `_zkvariables.less` → `_zkmixins.less` | unchanged |
-| Themable concepts | gradients, IE8 tokens, breeze defaults | mostly unchanged (IE8 tokens are no longer actively added) |
+| Themable concepts | gradients, IE8 variables, breeze defaults | mostly unchanged (IE8 variables are no longer actively added) |
 | Java sources | `src/org/zkoss/theme/<name>/` | unchanged |
 | `metainfo/zk/*.xml` | unchanged path | bump to target ZK 9.x version |
 | Build chain | `zkless-engine-maven-plugin` (Java-based) | **`exec-maven-plugin` + `npx zklessc` (Node-based)** |
@@ -139,77 +139,9 @@ mvn clean package
 Output: `target/<artifactId>.jar`. Drop into `WEB-INF/lib` of a ZK 9.6
 test app and verify visually.
 
-### Step 9 — Run the preview app (optional but recommended)
-
-```sh
-mvn test exec:java@preview-app          # http://localhost:8080
-```
-
-Drop sample ZULs into `preview/web/` (start with `preview.zul` that ships
-in the template; add one ZUL per component family you care about).
-Comparing visually against your 8.x deployment is the fastest way to spot
-regressions caused by ZK's own fixes between 8 and 9.6.
-
-### Step 10 — Smoke-test in a real ZK 9.6 app
-
-Drop the JAR into a ZK 9.6 app's `WEB-INF/lib/`. Either:
-
-- set `<library-property><name>org.zkoss.theme.preferred</name><value>yourtheme</value></library-property>`
-  in `WEB-INF/zk.xml`, **or**
-- set cookie `zktheme=yourtheme`.
-
-Hard refresh. Look for "Theme registered" in the server log — that
-confirms your `WebAppInit` listener fired.
-
 ---
 
-## 3. Common gotchas
-
-### Build fails with `Lighten is not defined` or `JavaScript evaluation error`
-
-You dropped the `--less-opts {"javascriptEnabled":true}` arguments. Breeze
-uses LESS-JS function calls in component LESS files (multislider,
-rangeslider especially). Restore the two argument lines.
-
-### Build fails with `npx: command not found`
-
-Install Node ≥ 10.16. ZK 9.6's LESS pipeline replaced the old Java
-`zkless-engine-maven-plugin` with a Node-based `zklessc` invoked through
-`exec-maven-plugin`. There is no Java fallback.
-
-### `package.json` missing
-
-The 9.6.6 template ships one — `cp 9.6.6-breeze/package.json` into your
-project. Without it, `npm install` has nothing to install.
-
-### IE8 styling differs
-
-ZK 9.6 components no longer special-case IE8. The `@meshBackgroundColorIE8`
-group of variables in your old `_zkvariables.less` is dead code; you can
-keep it (harmless) or delete it.
-
-### New widgets render unstyled
-
-If a page uses `<rangeslider>`, `<organigram>`, `<drawer>` etc. and looks
-unstyled, you forgot to copy the corresponding `.less` blocks from the
-9.6.6-breeze `_zkvariables.less` (step 2). Append the missing blocks.
-
-### `Themes.register(...)` signature changed
-
-It hasn't, between 8 and 9.6. If you get a compile error, the import is
-wrong — make sure it's `org.zkoss.zul.theme.Themes` and the tablet
-register call uses `org.zkoss.zkmax.theme.ResponsiveThemeRegistry`.
-
-### CSS lands at the wrong URL
-
-Check `<zktheme.theme.outputDirectory>` in `pom.xml` resolves to
-`target/classes/web/${project.artifactId}/`. The runtime expects
-`/zkau/web/<themename>/css/...`; if the `themename` and `artifactId` don't
-match, the browser will request CSS from a path the JAR doesn't serve.
-
----
-
-## 4. Quick reference — file-by-file diff
+## 3. Quick reference — file-by-file diff
 
 | File (relative to project root) | 8.x | 9.6.6 breeze | Action |
 |---|---|---|---|
@@ -233,35 +165,13 @@ match, the browser will request CSS from a path the JAR doesn't serve.
 
 ---
 
-## 5. Estimating the work
-
-For a small theme that just overrides ~30 variables, this
-migration is a half-day:
-
-1. ~30 min: scaffold + carry the variables file + bump the version uid.
-2. ~30 min: replace the pom, install Node, get the build green.
-3. ~1 hour: copy customized component LESS files, diff against template,
-   resolve conflicts.
-4. ~1 hour: visually compare the preview app to your old deployment, fix
-   stragglers.
-5. ~1 hour: smoke test in a real ZK 9.6 app.
-
-For a large theme that customizes 50+ component LESS files (like sapphire
-or atlantic in their original repos), budget 2-3 days, dominated by
-component LESS diffing in step 3.
-
----
-
-## 6. Next step
+## 4. Next step
 
 If your end goal is **iceblue** (the ZK 10 default) or **ZK 10.3.0**, this
 guide is only step 1. Continue with:
 
-- `guide-breeze-to-iceblue-9.6.6.md` — switch palette while staying on
+- [ guide: breeze 9.6.6 to iceblue 9.6.6 ]({{site.baseurl}}/zk_style_customization_guide/migration_guides/guide-breeze-to-iceblue-9.6.6) — switch palette while staying on
   ZK 9.6.6.
-- `guide-iceblue-9.6.6-to-10.3.0.md` — adopt the ZK 10 CSS-variable +
-  LESS-proxy architecture and the Jakarta namespace.
+- [guide: iceblue 9.6.6 to 10.3.0]({{site.baseurl}}/zk_style_customization_guide/migration_guides/guide-iceblue-9.6.6-to-10.3.0) — adopt the ZK 10 CSS-variable +
+  LESS-variable architecture.
 
-Or jump direct: `theme-upgrade-guide.md` covers the whole 8.x breeze →
-10.3.0 iceblue path in one shot (recommended if you don't need an
-intermediate 9.6 release).

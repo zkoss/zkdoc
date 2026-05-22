@@ -1019,24 +1019,21 @@ zk_style_customization_guide:
             url: /zk_style_customization_guide/navbar
       - title: Create New Look and Feel
         url: /zk_style_customization_guide/create_new_look_and_feel
-      - title: Upgrade Customized Style From other ZK Version
-        url: /zk_style_customization_guide/upgrade_customized_style_from_other_zk_version
-        children:
-          - title: Upgrade From ZK 6.5
-            url: /zk_style_customization_guide/upgrade_from_zk_6_5
-  - title: Look and Feel Customization
-    url: /zk_style_customization_guide/upgrade_guides
+  - title: Upgrade Customized Style From other ZK Version
+    url: /zk_style_customization_guide/upgrade_customized_style_from_other_zk_version
     children:
+      - title: Upgrade From ZK 6.5
+        url: /zk_style_customization_guide/upgrade_from_zk_6_5
       - title: Breeze 8.x to 9.X
         url: /zk_style_customization_guide/migration_guides/guide-breeze-8.x-to-9.6.6
       - title: Breeze 9.6.6 to Iceblue 9.6.6
         url: /zk_style_customization_guide/migration_guides/guide-breeze-to-iceblue-9.6.6
       - title: Iceblue 9.X to 10.X
-        url: /zk_style_customization_guide/migration_guides/guide-iceblue-9.6.6-to-10.3.0.md
+        url: /zk_style_customization_guide/migration_guides/guide-iceblue-9.6.6-to-10.3.0
       - title: CSS variable migration
         url: /zk_style_customization_guide/migration_guides/breeze-iceblue-variable-crossreference
-      - title: Color variables semantic reference
-        url: /zk_style_customization_guide/migration_guides/color-variables-semantic-reference
+      - title: Color variables reference
+        url: /zk_style_customization_guide/migration_guides/color-variables-reference
       - title: Component-level variable reference
         url: /zk_style_customization_guide/migration_guides/component-level-variable-reference
 zk_config_ref:

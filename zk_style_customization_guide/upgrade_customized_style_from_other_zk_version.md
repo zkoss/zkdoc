@@ -2,6 +2,4 @@
 title: "Upgrade Customized Style From other ZK Version"
 ---
 
-ZK 7 takes a big step forward on theme styling using CSS3 which is an
-approach a lot different from that of ZK 6.5. This section will show
-tips on how to upgrade customized style from other ZK versions to ZK 7.
+ZK 7 takes a big step forward on theme styling using CSS3 which is an approach a lot different from that of ZK 6.5. This section will show tips on how to upgrade customized style from other ZK versions to ZK 7, as well as the steps required to upgrade a breeze 8.X project up to ZK 10.X iceblue.
