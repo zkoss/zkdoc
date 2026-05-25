@@ -1,6 +1,6 @@
 # Guide: ZK 9.6.6 iceblue → ZK 10.3.0 iceblue
 
-Bringing an iceblue theme from ZK 9.6.6 up to ZK 10.3.0. This is the most **architectural;y complex** of the three migration steps from 8.X breeze — the palette stays based on iceblue, but ZK 10.3.X introduces:
+Bringing an iceblue theme from ZK 9.6.6 up to ZK 10.3.0. This is the most **architecturally complex** of the three migration steps from 8.X breeze — the palette stays based on iceblue, but ZK 10.3.X introduces:
 
 1. The **CSS-variable + LESS-variable** model (every LESS variable now resolves to `var(--zk-*)` and is overridable at client-side).
 2. A **profiles split** — palette values now live in `profiles/_default.less` under `:root { ... }`, not at the top of `_zkvariables.less`.
