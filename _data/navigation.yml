@@ -1033,7 +1033,7 @@ zk_style_customization_guide:
       - title: CSS variable migration
         url: /zk_style_customization_guide/migration_guides/breeze-iceblue-variable-crossreference
       - title: Color variables reference
-        url: /zk_style_customization_guide/migration_guides/color-variables-reference
+        url: /zk_style_customization_guide/migration_guides/color-variable-reference
       - title: Component-level variable reference
         url: /zk_style_customization_guide/migration_guides/component-level-variable-reference
 zk_config_ref:
