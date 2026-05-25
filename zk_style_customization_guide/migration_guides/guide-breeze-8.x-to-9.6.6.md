@@ -1,6 +1,6 @@
 # Guide: ZK 8.x breeze → ZK 9.6.6 breeze
 
-The following guide explain the migration process of a ZK 8.x breeze-based theme to ZK 9.6.6 while **maitaining the look and feel** of the theme. No palette or LESS variables architecture changes are required. The changes are mostly done at **build and scaffolding** level, plus adding new rules for the new widgets ZK introduced between 8.x and 9.6.
+The following guide explain the migration process of a ZK 8.x breeze-based custom theme to ZK 9.6.6 while **maitaining the look and feel** of the theme. No palette or LESS variables architecture changes are required. The changes are mostly done at **build and scaffolding** level, plus adding new rules for the new widgets ZK introduced between 8.x and 9.6.
 
 ---
 
