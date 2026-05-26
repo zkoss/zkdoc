@@ -110,3 +110,92 @@ and [Server Push with a Stock Chart Example](https://www.zkoss.org/wiki/Small_Ta
 
 [^1]: For better performance, it is suggested to disable the server push
     if it is no longer used in the given desktop.
+
+# Obtaining a Desktop Reference from an External Servlet
+
+If your application includes a separate servlet or service component running outside ZK's execution context, it may need to interact with ZK Desktops — for example, to close a window, refresh the UI, or check whether a desktop is still active.
+
+## Why `ZK_SESSION` Attribute Is Null
+
+When you attempt to retrieve a ZK session from an external servlet:
+
+```java
+Object session = request.getSession().getAttribute(org.zkoss.zk.ui.sys.Attributes.ZK_SESSION);
+// session is null
+```
+
+The attribute is `null` because it is only set when ZK has processed at least one request within that HTTP session. If your external servlet operates on a different HTTP session — due to a different domain, a separate session management scheme, or because ZK's filter chain was not involved — the attribute will not be populated.
+
+## Solution: Maintain an Explicit Desktop Registry
+
+The recommended approach is to store Desktop references in a shared, application-level structure when the desktop is created or becomes active in your ZK application. Use a `WeakReference` wrapper to prevent memory leaks when desktops are garbage-collected after being closed.
+
+### Step 1: Create a Shared Desktop Registry
+
+```java
+public class DesktopRegistry {
+    private static final Map<String, WeakReference<Desktop>> desktops = new ConcurrentHashMap<>();
+
+    public static void register(String desktopId, Desktop desktop) {
+        desktops.put(desktopId, new WeakReference<>(desktop));
+    }
+
+    public static Desktop lookup(String desktopId) {
+        WeakReference<Desktop> ref = desktops.get(desktopId);
+        return (ref != null) ? ref.get() : null;
+    }
+
+    public static void unregister(String desktopId) {
+        desktops.remove(desktopId);
+    }
+}
+```
+
+### Step 2: Register Desktops in Your ZK Application
+
+When a desktop is initialized, register it with a unique identifier:
+
+```java
+public class MyComposer extends SelectorComposer<Window> {
+    @Override
+    public void doAfterCompose(Window comp) throws Exception {
+        super.doAfterCompose(comp);
+        Desktop desktop = comp.getDesktop();
+        DesktopRegistry.register(desktop.getId(), desktop);
+        desktop.enableServerPush(true);
+    }
+}
+```
+
+### Step 3: Look Up and Activate the Desktop from the External Servlet
+
+```java
+public class ExternalServlet extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        String desktopId = request.getParameter("desktopId");
+        Desktop desktop = DesktopRegistry.lookup(desktopId);
+
+        if (desktop == null) {
+            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Desktop not found or already closed");
+            return;
+        }
+
+        try {
+            Executions.activate(desktop);
+            try {
+                // Update UI here, same as any event listener
+            } finally {
+                Executions.deactivate(desktop);
+            }
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+
+        response.getWriter().write("OK");
+    }
+}
+```
+
+A `WeakReference` lets the JVM reclaim a closed desktop's memory while the registry retains the mapping. Always check that `lookup()` does not return `null` before calling `Executions.activate()` — a `null` result means the desktop has already been closed and collected.
