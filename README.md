@@ -40,6 +40,17 @@ To improve user experience, the `404.html` page contains a client-side script th
 The `sitemap.xml` is updated to generate clean URLs by removing the `.html` and `index.html` extensions from page links. This provides more user-friendly and
 SEO-friendly URLs.
 
+### Embed Mode
+Any documentation page can be loaded in a stripped-down layout that hides the masthead, sidebar, and footer, leaving only the article content. This is intended for embedding doc pages inside other sites via `<iframe>`.
+
+**Triggers** (either is enough):
+- URL query param `?embed=1` — e.g. `https://docs.zkoss.org/zk_component_ref/button?embed=1`
+- The page is loaded inside an iframe (`window.self !== window.top`) — no query param needed
+
+**How it works:** an inline `<head>` script in the theme's `_includes/head/custom.html` (in the local Minimal Mistakes theme project) adds the class `embed-mode` to `<html>` before paint; CSS in the same file hides the chrome and expands the article to full width. The pattern mirrors the theme's existing `@media print` rules in `_sass/minimal-mistakes/_print.scss`.
+
+**Limitations:** single-page embed only — internal links inside an embedded page do **not** carry `?embed=1` forward. Each pageview must either include the query param or be loaded inside an iframe.
+
 
 
 ## Preview at Local
