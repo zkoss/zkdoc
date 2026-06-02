@@ -72,7 +72,7 @@ can specify `orient="horizontal"`.
 
 # Draggable Panel by Default
 
-<panel> is `draggable="true"` without explicitly specifying when it's
+`<panel>` is `draggable="true"` without explicitly specifying when it's
 inside a Portallayout. You can disable this by `draggable="false"`.
 
 # Supported Events
@@ -88,7 +88,7 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 
 # Supported Children
 
-`*`[` Portalchildren`]({{site.baseurl}}/zk_component_ref/portalchildren)
+* [` Portalchildren`]({{site.baseurl}}/zk_component_ref/portalchildren)
 
 # Version History
 
