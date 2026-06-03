@@ -11,7 +11,7 @@ plugins:
 
   #- jekyll-sitemap #disabled to use custom sitemap.xml template
 
-minimal_mistakes_skin: "material"
+minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
 logo: /assets/images/ZK-logo.svg
 
