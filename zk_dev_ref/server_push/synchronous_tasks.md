@@ -126,6 +126,32 @@ Object session = request.getSession().getAttribute(org.zkoss.zk.ui.sys.Attribute
 
 The attribute is `null` because it is only set when ZK has processed at least one request within that HTTP session. If your external servlet operates on a different HTTP session — due to a different domain, a separate session management scheme, or because ZK's filter chain was not involved — the attribute will not be populated.
 
+## When the Servlet Shares the User's Session: Use ZK's Desktop Cache
+
+If the external servlet is deployed in the same web application and the incoming request carries the same HTTP session as the user's ZK pages, you do not need to build any custom infrastructure. ZK already keeps track of the session and its desktops, and the servlet can read that bookkeeping directly: fetch the ZK session from the standard session attribute, then enumerate the desktops ZK tracks for it through the desktop cache.
+
+```java
+// Retrieve the ZK session bound to the current HTTP session
+org.zkoss.zk.ui.Session zkSession = (org.zkoss.zk.ui.Session)
+        request.getSession().getAttribute(org.zkoss.zk.ui.sys.Attributes.ZK_SESSION);
+
+if (zkSession != null) {
+    // Enumerate all desktops ZK currently tracks for this session
+    java.util.Collection<org.zkoss.zk.ui.Desktop> desktops =
+            ((org.zkoss.zk.ui.sys.WebAppCtrl) org.zkoss.zk.ui.WebApps.getCurrent())
+                    .getDesktopCache(zkSession).getAllDesktops();
+}
+```
+
+Keep the following points in mind when using this technique:
+
+- **Read-only access.** These attributes and the desktop cache are the same structures ZK uses internally to manage sessions and desktops. Reading them is safe, but never write to them — adding, replacing, or removing entries interferes with ZK's own session and desktop management.
+- **Null until the first desktop exists.** The `ZK_SESSION` attribute is only populated after at least one ZK page has created a desktop in that session, so always check for `null` as shown above.
+- **Do not cache the results.** Use the retrieved `Session` and `Desktop` objects within the current request only. Holding long-lived references prevents proper cleanup once a desktop or session is destroyed.
+- **Requires a shared session.** If the third-party caller arrives on a different HTTP session — for example, from another domain or without the user's session cookie — this lookup returns nothing. In that case, use the explicit registry described in the next subsection instead.
+
+Once you have a `Desktop` reference, interacting with its UI follows the same pattern as any working thread: wrap your updates between `Executions.activate(desktop)` and `Executions.deactivate(desktop)` as described in [Update UI in a Working Thread](#update-ui-in-a-working-thread).
+
 ## Solution: Maintain an Explicit Desktop Registry
 
 The recommended approach is to store Desktop references in a shared, application-level structure when the desktop is created or becomes active in your ZK application. Use a `WeakReference` wrapper to prevent memory leaks when desktops are garbage-collected after being closed.
