@@ -713,6 +713,55 @@ listbox will do the rest.
 </window>
 ```
 
+## Rendering All Items at Once
+
+Sometimes an application needs a listbox with a model to render all rows
+on the initial loading and after every model change. A typical case is
+when your code must traverse or manipulate listitem children
+programmatically — for example, swapping or reordering the child cells
+of each row — which only works if every Listitem is fully rendered.
+However, when a listbox uses a model together with a constrained height
+(e.g. `vflex` or a fixed `height`), there are **two independent
+mechanisms** that each limit how many rows get rendered, and you must
+handle **both**:
+
+1. **ROD (render-on-demand)**, a ZK EE feature, renders listitems on
+   demand. Disable it with the custom attribute
+   `org.zkoss.zul.listbox.rod="false"`.
+2. **Live data**, available in all editions, only creates items at the
+   client as the user scrolls. Bypass it by calling
+   [org.zkoss.zul.Listbox#renderAll()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#renderAll())
+   on the server.
+
+Applying only one of the two is a common pitfall — some rows will still
+be missing until you apply both together.
+
+Disable ROD with the custom attribute:
+
+```xml
+<listbox id="taskList" vflex="true" model="@load(vm.tasks)">
+    <custom-attributes org.zkoss.zul.listbox.rod="false"/>
+    <!-- listhead, templates... -->
+</listbox>
+```
+
+Then call `renderAll()` from any server-side code with access to the
+component, e.g. in a composer or after updating the model:
+
+```java
+Listbox listbox = (Listbox) Selectors.iterable(view, "#taskList").iterator().next();
+listbox.renderAll();
+```
+
+**Note**: you have to call `renderAll()` again whenever the model
+changes, because newly added items are rendered on demand again.
+
+**Caution**: rendering everything at once sacrifices the performance
+benefits of ROD and live data, so reserve this approach for cases that
+truly require a fully-built DOM and complete Listitems. For the
+performance-oriented default behavior, see
+[Turn on Render on Demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
+
 ## Sorting with Live Data
 
 If you allow users to sort a listbox with live data, you have to
