@@ -22,6 +22,7 @@ First, we have to get the client binder in order to use the client-side methods.
 ```javascript
 var binder = zkbind.$('$id');
 ```
+
 After we have our client binder, we can use the following two methods to interact with the view model back to our server.
 
 **Method - command()**
@@ -29,6 +30,7 @@ After we have our client binder, we can use the following two methods to interac
 ```javascript
 binder.command(commandName, data);
 ```
+
 This method is used to trigger a command we have on our server.
 
 **Parameters**
@@ -51,6 +53,7 @@ This method is used to trigger a command we have on our server.
 ```javascript
 binder.after(commandName, callback);
 ```
+
 This method is used to place a callback at the client after a command is executed on the server.
 
 **Parameters**
