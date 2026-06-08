@@ -26,8 +26,8 @@ Once a major version officially reaches its published End-of-Support (EOS) date,
 
 | Software Line | Lifecycle Classification | Minimum Guaranteed Support | Official End-of-Support Date |
 |---|---|---|---|
-| ZK 10.x (Released in Feb. 2024) | Active Maintenance | Throughout Active Lifecycle | TBD (Superseded by ZK 11) |
-| ZK 9.x (Released in Dec. 2019) | Legacy Support | Extended from 5-Year Min | December 9, 2027 |
-| ZK 8.x and older (Released in Oct. 2015 or earlier) | Post-Lifecycle | Concluded | Contact Sales for Custom Support |
+| ZK 10.x (First released in Feb. 2024) | Active Maintenance | Throughout Active Lifecycle | TBD (Superseded by ZK 11) |
+| ZK 9.x (First released in Dec. 2019) | Legacy Support | Extended from 5-Year Min | December 9, 2027 |
+| ZK 8.x and older (First released in Oct. 2015 or earlier) | Post-Lifecycle | Concluded | Contact Sales for Custom Support |
 
 *(last update: June, 2026)*
