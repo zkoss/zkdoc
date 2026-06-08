@@ -2020,6 +2020,8 @@ zk_dev_ref:
             url: /zk_dev_ref/security_tips/enhancing_security_with_strict_dynamic
       - title: SSO Redirect Handling
         url: /zk_dev_ref/security_tips/sso_redirect_handling
+      - title: Security & Support Policy
+        url: /zk_dev_ref/security_tips/security_and_support_policy
   - title: Performance Monitoring
     url: /zk_dev_ref/performance_monitoring/performance_monitoring
     children:
