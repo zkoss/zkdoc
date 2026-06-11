@@ -161,6 +161,10 @@ exclude:
   - "README.md"
   - "CLAUDE.md"
   - "*.sh"
+  - tasks
+  - .venv
+  - .claude
+  - .github
 
 include:
   - "_pages"

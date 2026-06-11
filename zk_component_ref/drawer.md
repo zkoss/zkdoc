@@ -6,7 +6,8 @@ title: "Drawer"
 - **Java API:** [org.zkoss.zkmax.zul.Drawer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Drawer.html)
 - **JavaScript API:** [zkmax.wgt.Drawer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Drawer.html)
 
-Available for ZK: [`Enterprise Edition`](https://www.zkoss.org/whyzk/zkee)
+{% include edition-availability.html edition="ee" %}
+
 
 ## Employment/Purpose
 
@@ -87,7 +88,7 @@ Sets the title of the Drawer component. A `null` value indicates no title for th
 
 | Name   | Event Type                            | Description |
 |------------|-------------------------------------------|-------------|
-| `onOpen`   | **Event:** [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
+| `onOpen`   | [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | The `onOpen` event signifies that the user has opened or closed a component. Unlike the `onClose` event, `onOpen` serves as a notification event sent after the opening or closing of the component. |
 
 ## Supported Children
 

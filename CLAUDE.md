@@ -178,3 +178,26 @@ The site uses a customized version of Minimal Mistakes:
 - Maintains proportions across different contexts
 - More maintainable and flexible
 - Better responsive design
+
+## ZK Source Knowledge Graph (Graphify)
+
+The ZK framework source (CE + EE) is indexed in a machine-wide Graphify
+knowledge graph at `~/.graphify/global-graph.json` (repos tagged `zk` and `zkcml`).
+
+When answering questions about ZK framework internals — components, widgets,
+MVVM binding, event handling, server/client architecture — even when working in
+a DIFFERENT repository, query this graph FIRST instead of guessing or asking
+where files are:
+
+- `graphify query "<question>" --graph ~/.graphify/global-graph.json`
+- `graphify explain "<symbol>" --graph ~/.graphify/global-graph.json`
+- `graphify path "<A>" "<B>" --graph ~/.graphify/global-graph.json`
+
+Resolving file paths: results use MODULE-relative paths (e.g. `zul/src/...`,
+`zkbind/src/...`, `stateless/src/...`) with no repo prefix. To open the actual
+file, resolve against BOTH repo roots:
+  /Users/hawk/Documents/workspace/ZK10/zk/<path>
+  /Users/hawk/Documents/workspace/ZK10/zkcml/<path>
+
+The graph is AST-only (structural) — use it to locate and relate code, then read
+the real source file for exact implementation.
