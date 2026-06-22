@@ -2,9 +2,9 @@
 title: "Listbox"
 ---
 
-- Demonstration: [Listbox](http://www.zkoss.org/zkdemo/listbox)
-- Java API: [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)
-- JavaScript API: [zul.sel.Listbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listbox.html)
+- **Demonstration:** [Listbox](http://www.zkoss.org/zkdemo/listbox)
+- **Java API:** [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html)
+- **JavaScript API:** [zul.sel.Listbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listbox.html)
 
 # Employment/Purpose
 
@@ -16,6 +16,14 @@ exists, notice that the number of `listheader` should equal the number
 of `listcell`, so that `listbox` can display its content correctly. If
 `listhead` contains no `listheader`, the `listbox` will display nothing
 in its content.
+
+## Common Use Cases
+
+- **Selectable lists**: Display a collection of items where the user must pick one (single selection) or several (multiple selection with `multiple="true"` or `checkmark="true"`).
+- **Tabular data with row selection**: Show multi-column rows where clicking an entire row selects it — prefer Listbox over Grid when selection is the primary interaction.
+- **Large datasets with lazy loading**: Bind a `ListModel` and enable ROD (`org.zkoss.zul.listbox.rod`) so only the visible rows are rendered, keeping memory use low.
+- **Paged navigation**: Switch to `mold="paging"` to split thousands of records across pages, optionally using `autopaging` to compute page size from available height automatically.
+- **Drop-down selector**: Use `mold="select" rows="1"` as a lightweight HTML `<select>` replacement when a full dropdown (`selectbox`, `combobox`) is not required.
 
 # Example
 
@@ -99,7 +107,7 @@ Notes:
 
 # Mold
 
-The Listbox has two molds: `default` and `select`.
+The Listbox has three molds: `default`, `select`, and `paging`.
 
 ## Select Mold
 
@@ -765,6 +773,193 @@ When a Listbox is scrollable, if you want to scroll a Listitem out of
 the visible area into the current view (visible area), you can call
 [scrollToIndex()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#scrollToIndex-int-).
 
+# Columns Menu
+
+For example, {% include supported-since.html version="6.5.0" %}
+
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
+
+```xml
+<zk>
+    <listbox>
+        <listhead menupopup="auto">
+            <listheader label="Author" sort="auto"/>
+            <listheader label="Title" sort="auto"/>
+            <listheader label="Publisher" sort="auto"/>
+            <listheader label="Hardcover" sort="auto"/>
+        </listhead>
+        // omitted...
+    </listbox>
+</zk>
+```
+
+- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/listhead)
+  directly.
+
+## Ungroup Column Menu
+
+When the user groups the content of the listbox, the column's menu will
+show an ungroup icon for user to reset the group. <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {%
+include supported-since.html version="6.5.0" %}
+
+![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
+
+**Note:** If the Listbox contains with Model, *GroupsModel*, you have to
+register an *onUngroup* event for listheader to show an ungroup icon and
+then replace the current model with a *ListModel* to reset the group.
+
+For example,
+
+```xml
+<zk>
+    <zscript><![CDATA[
+  int cnt = 0;
+Object[][] foods = new Object[][] {
+    new Object[] { "Vegetables", "Asparagus", "Vitamin K", 115, 43},
+    new Object[] { "Vegetables", "Beets", "Folate", 33, 74},
+    new Object[] { "Vegetables", "Tomatoes", "Vitamin C", 57, 37},
+    new Object[] { "Seafood", "Salmon", "Tryptophan", 103, 261},
+    new Object[] { "Seafood", "Cod", "Tryptophan", 90, 119}
+};
+public class FoodGroupRenderer implements ListitemRenderer {
+    public void render(Listitem row, Object obj, int index) {
+        if (row instanceof Listgroup) {
+            row.setLabel(obj.toString());
+        } else {
+            Object[] data = (Object[]) obj;
+            row.appendChild(new Listcell(data[0].toString()));
+            row.appendChild(new Listcell(data[1].toString()));
+            row.appendChild(new Listcell(data[2].toString()));
+            row.appendChild(new Listcell(data[3].toString()));
+            row.appendChild(new Listcell(data[4].toString()));
+        }
+    }
+}
+ListModelList listmodel = new ListModelList();
+for (int i = 0; i < foods.length; i++)
+    listmodel.add(foods[i]);
+ListitemRenderer renderer = new FoodGroupRenderer();
+GroupsModel model = new GroupsModelArray(foods, new ArrayComparator(0, true));
+    ]]></zscript>
+    <listbox id="listbox" model="${model}" itemRenderer="${renderer}">
+        <listhead menupopup="auto">
+            <listheader label="Category" sort="auto(0)" onGroup='listbox.setModel(model)'
+                onUngroup='listbox.setModel(listmodel);' />
+            <listheader label="Name" sort="auto(1)" />
+            <listheader label="Top Nutrients" sort="auto(2)" />
+            <listheader label="% of Daily" sort="auto(3)" />
+            <listheader label="Calories" sort="auto(4)" />
+        </listhead>
+    </listbox>
+</zk>
+```
+
+# Listgroup Component
+
+Both Grid, and Listbox support Grouping concept, it enables developers
+to display data in an advanced way. Moreover, live data are also
+supported in Grouping Grid, and Listbox with the
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
+
+![](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
+
+```xml
+<zk>
+    <listbox>
+        <listhead sizable="true">
+            <listheader label="Brand"/>
+            <listheader label="Processor Type" width="150px"/>
+            <listheader label="Memory (RAM)" width="120px"/>
+            <listheader label="Price"  width="100px"/>
+            <listheader label="Hard Drive Capacity" width="150px"/>
+        </listhead>
+        <listgroup label="Dell"/>
+        <listitem>
+            <listcell style="padding-left:15px" label="Dell E4500 2.2GHz"/>
+            <listcell label="Intel Core 2 Duo"/>
+            <listcell label="2GB RAM"/>
+            <listcell label="$261.00" style="color:green"/>
+            <listcell label="500GB"/>
+        </listitem>
+        <listitem>
+            <listcell style="padding-left:15px" label="XP-Pro Slim Dell-Inspiron-530-s"/>
+            <listcell label="Intel Core 2 Duo"/>
+            <listcell label="2GB RAM"/>
+            <listcell label="$498.93" style="color:green"/>
+            <listcell label="500GB"/>               
+        </listitem>
+        <listitem>
+            <listcell style="padding-left:15px" label="Dell P4 3.2 GHz"/>
+            <listcell label="Intel Pentium 4"/>
+            <listcell label="4GB RAM"/>
+            <listcell label="$377.99" style="color:green"/>
+            <listcell label="500GB"/>               
+        </listitem>
+        <listgroup label="Compaq"/>
+        <listitem>
+            <listcell style="padding-left:15px" label="Compaq SR5113WM"/>
+            <listcell label="Intel Core Duo"/>
+            <listcell label="1GB RAM"/>
+            <listcell label="$279.00" style="color:green"/>
+            <listcell label="160GB"/>               
+        </listitem>
+        <listitem>
+            <listcell style="padding-left:15px" label="Compaq HP XW4200"/>
+            <listcell label="Intel Pentium 4"/>
+            <listcell label="4GB RAM"/>
+            <listcell label="$980" style="color:green"/>
+            <listcell label="500GB"/>               
+        </listitem>
+        <listgroupfoot>
+            <listcell span="5" label="This a summary about Compaq Desktop PCs"/>
+        </listgroupfoot>
+    </listbox>
+</zk>
+```
+
+`*`[`Available in ZK PE and EE only`](http://www.zkoss.org/product/edition.dsp)  
+
+For more information, please take a look at these smalltalks,
+
+- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
+- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+
+Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/listgroup)
+directly.
+
+# Frozen Component
+
+In ZK 5 you are now able to freeze columns within a Grid and Listbox.
+This mirrors functionality seen within Excel and makes data in these
+components easier to read, interpret and handle.
+
+The following code demonstrates how to freeze a column within a Grid:
+
+```xml
+    <listbox>
+        <listhead>
+            <listheader label="header 1"/>
+            <listheader label="header 2"/>
+            <listheader label="header 3"/>
+            <listheader label="header 4"/>
+        </listhead>
+        <frozen columns="2"/>
+        <listitem>
+            <listcell label="cell 1"/>
+            <listcell label="cell 2"/>
+            <listcell label="cell 3"/>
+            <listcell label="cell 4"/>
+        </listitem>
+    </listbox>
+```
+
+{% include supported-since.html version="5.0.0" %}
+
+- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
+  directly.
+
 # Properties
 
 ## Single-Column Listboxes
@@ -1095,192 +1290,130 @@ Listbox's header becomes floating and sticky on the top of the page.
   </listbox>
 ```
 
-# Columns Menu
+## InnerWidth
 
-For example, {% include supported-since.html version="6.5.0" %}
+**Default Value:** `"100%"`
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
+{% include supported-since.html version="3.0.0" %}
+
+Sets the width of the inner table that holds the list items. Accepts any valid CSS width value (e.g. `"200px"`, `"50%"`). Passing `null` resets it to the default `"100%"`. Useful when you want the inner content to be wider than the listbox container so that horizontal scrolling is enabled.
+
+```xml
+<listbox innerWidth="300px" width="200px">
+    <listhead>
+        <listheader label="Name"/>
+        <listheader label="Description"/>
+    </listhead>
+</listbox>
+```
+
+## Name
+
+Sets the `name` attribute of the underlying HTML element. This is intended only for integration with legacy web applications that submit forms via the browser's native HTTP POST. If your application is built on ZK's event-driven model you should not use this attribute.
+
+```xml
+<listbox name="colorPicker">
+    <listitem label="Red"/>
+    <listitem label="Green"/>
+    <listitem label="Blue"/>
+</listbox>
+```
+
+## OddRowSclass
+
+**Default Value:** `"<zclass>-odd"` (e.g. `"z-listbox-odd"`)
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets the CSS class applied to every odd-numbered row, producing the striped-row effect. If you pass an empty string or a class name that does not exist in your stylesheet the striping effect disappears. Provide your own class to apply a custom background or text style to alternate rows.
+
+```xml
+<style>
+  .my-alt-row { background: #f0f8ff; }
+</style>
+<listbox oddRowSclass="my-alt-row">
+    <listitem label="Even row"/>
+    <listitem label="Odd row — custom background"/>
+    <listitem label="Even row"/>
+</listbox>
+```
+
+## Paginal
+
+Specifies an external paging controller (a component that implements `org.zkoss.zul.Paginal`, typically a `<paging>` element) to use instead of the listbox's built-in paging bar. This is effective only when `mold="paging"` is set. If `null` is passed while the paging mold is active, the listbox creates an internal paging child automatically. Use an external paging component when you want to share one paging bar across multiple listboxes or grids, or when you need a custom layout for the page navigator.
+
+```xml
+<paging id="pg" totalSize="100" pageSize="10"/>
+<listbox mold="paging" paginal="${pg}">
+    <listhead>
+        <listheader label="Name"/>
+    </listhead>
+</listbox>
+```
+
+## SelectedIndex
+
+**Default Value:** `-1` (nothing selected)
+
+Returns or sets the zero-based index of the selected item. Setting `-1` clears the current selection. If the index is out of range an `UiException` is thrown. When a `ListModel` is used in paging mold the listbox may need to load the target page before the item becomes accessible.
+
+```xml
+<listbox selectedIndex="1">
+    <listitem label="Alpha"/>
+    <listitem label="Beta"/>
+    <listitem label="Gamma"/>
+</listbox>
+```
+
+## SelectedItem
+
+Deselects all currently selected items and selects the given `Listitem`. Equivalent to calling `selectItem(item)`. Returns `null` when no item is selected. When ROD (render-on-demand) is enabled the returned item might not yet be loaded; call `renderItem` first if you need to access its children.
 
 ```xml
 <zk>
-    <listbox>
-        <listhead menupopup="auto">
-            <listheader label="Author" sort="auto"/>
-            <listheader label="Title" sort="auto"/>
-            <listheader label="Publisher" sort="auto"/>
-            <listheader label="Hardcover" sort="auto"/>
-        </listhead>
-        // omitted...
-    </listbox>
+  <listbox id="lb">
+    <listitem id="i1" label="Option A"/>
+    <listitem id="i2" label="Option B"/>
+  </listbox>
+  <button label="Select B" onClick="lb.setSelectedItem(i2)"/>
 </zk>
 ```
 
-- For further details, please refer to [ Listhead component]({{site.baseurl}}/zk_component_ref/listhead)
-  directly.
+## SelectedItems
 
-## Ungroup Column Menu
+{% include supported-since.html version="3.6.0" %}
 
-When the user groups the content of the listbox, the column's menu will
-show an ungroup icon for user to reset the group. <!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %} {%
-include supported-since.html version="6.5.0" %}
-
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
-
-**Note:** If the Listbox contains with Model, *GroupsModel*, you have to
-register an *onUngroup* event for listheader to show an ungroup icon and
-then replace the current model with a *ListModel* to reset the group.
-
-For example,
+Adds every `Listitem` in the supplied `Set` to the current selection. Requires `multiple="true"`; throws `WrongValueException` if the listbox is in single-selection mode. Returns a read-only set of all currently selected listitems.
 
 ```xml
-<zk>
-    <zscript><![CDATA[
-  int cnt = 0;
-Object[][] foods = new Object[][] {
-    new Object[] { "Vegetables", "Asparagus", "Vitamin K", 115, 43},
-    new Object[] { "Vegetables", "Beets", "Folate", 33, 74},
-    new Object[] { "Vegetables", "Tomatoes", "Vitamin C", 57, 37},
-    new Object[] { "Seafood", "Salmon", "Tryptophan", 103, 261},
-    new Object[] { "Seafood", "Cod", "Tryptophan", 90, 119}
-};
-public class FoodGroupRenderer implements ListitemRenderer {
-    public void render(Listitem row, Object obj, int index) {
-        if (row instanceof Listgroup) {
-            row.setLabel(obj.toString());
-        } else {
-            Object[] data = (Object[]) obj;
-            row.appendChild(new Listcell(data[0].toString()));
-            row.appendChild(new Listcell(data[1].toString()));
-            row.appendChild(new Listcell(data[2].toString()));
-            row.appendChild(new Listcell(data[3].toString()));
-            row.appendChild(new Listcell(data[4].toString()));
-        }
-    }
-}
-ListModelList listmodel = new ListModelList();
-for (int i = 0; i < foods.length; i++)
-    listmodel.add(foods[i]);
-ListitemRenderer renderer = new FoodGroupRenderer();
-GroupsModel model = new GroupsModelArray(foods, new ArrayComparator(0, true));
-    ]]></zscript>
-    <listbox id="listbox" model="${model}" itemRenderer="${renderer}">
-        <listhead menupopup="auto">
-            <listheader label="Category" sort="auto(0)" onGroup='listbox.setModel(model)'
-                onUngroup='listbox.setModel(listmodel);' />
-            <listheader label="Name" sort="auto(1)" />
-            <listheader label="Top Nutrients" sort="auto(2)" />
-            <listheader label="% of Daily" sort="auto(3)" />
-            <listheader label="Calories" sort="auto(4)" />
-        </listhead>
-    </listbox>
-</zk>
+<listbox id="lb" multiple="true">
+    <listitem id="a" label="Alpha"/>
+    <listitem id="b" label="Beta"/>
+    <listitem id="c" label="Gamma"/>
+</listbox>
+<button label="Select A &amp; C" onClick="lb.setSelectedItems(new java.util.HashSet(java.util.Arrays.asList(a, c)))"/>
 ```
 
-# Listgroup Component
+## Seltype
 
-Both Grid, and Listbox support Grouping concept, it enables developers
-to display data in an advanced way. Moreover, live data are also
-supported in Grouping Grid, and Listbox with the
-[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
+**Default Value:** `"single"`
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
+Sets the selection type. Accepted values:
+
+| Value | Meaning |
+|---|---|
+| `single` | Only one item may be selected at a time (default). |
+| `multiple` | More than one item may be selected simultaneously. |
+
+Setting `seltype="multiple"` is equivalent to setting `multiple="true"`. A `WrongValueException` is thrown for any other value.
 
 ```xml
-<zk>
-    <listbox>
-        <listhead sizable="true">
-            <listheader label="Brand"/>
-            <listheader label="Processor Type" width="150px"/>
-            <listheader label="Memory (RAM)" width="120px"/>
-            <listheader label="Price"  width="100px"/>
-            <listheader label="Hard Drive Capacity" width="150px"/>
-        </listhead>
-        <listgroup label="Dell"/>
-        <listitem>
-            <listcell style="padding-left:15px" label="Dell E4500 2.2GHz"/>
-            <listcell label="Intel Core 2 Duo"/>
-            <listcell label="2GB RAM"/>
-            <listcell label="$261.00" style="color:green"/>
-            <listcell label="500GB"/>
-        </listitem>
-        <listitem>
-            <listcell style="padding-left:15px" label="XP-Pro Slim Dell-Inspiron-530-s"/>
-            <listcell label="Intel Core 2 Duo"/>
-            <listcell label="2GB RAM"/>
-            <listcell label="$498.93" style="color:green"/>
-            <listcell label="500GB"/>               
-        </listitem>
-        <listitem>
-            <listcell style="padding-left:15px" label="Dell P4 3.2 GHz"/>
-            <listcell label="Intel Pentium 4"/>
-            <listcell label="4GB RAM"/>
-            <listcell label="$377.99" style="color:green"/>
-            <listcell label="500GB"/>               
-        </listitem>
-        <listgroup label="Compaq"/>
-        <listitem>
-            <listcell style="padding-left:15px" label="Compaq SR5113WM"/>
-            <listcell label="Intel Core Duo"/>
-            <listcell label="1GB RAM"/>
-            <listcell label="$279.00" style="color:green"/>
-            <listcell label="160GB"/>               
-        </listitem>
-        <listitem>
-            <listcell style="padding-left:15px" label="Compaq HP XW4200"/>
-            <listcell label="Intel Pentium 4"/>
-            <listcell label="4GB RAM"/>
-            <listcell label="$980" style="color:green"/>
-            <listcell label="500GB"/>               
-        </listitem>
-        <listgroupfoot>
-            <listcell span="5" label="This a summary about Compaq Desktop PCs"/>
-        </listgroupfoot>
-    </listbox>
-</zk>
+<listbox seltype="multiple">
+    <listitem label="Apple"/>
+    <listitem label="Banana"/>
+    <listitem label="Cherry"/>
+</listbox>
 ```
-
-`*`[`Available in ZK PE and EE only`](http://www.zkoss.org/product/edition.dsp)  
-
-For more information, please take a look at these smalltalks,
-
-- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
-- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
-- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
-
-Or refer to [ Listgroup component]({{site.baseurl}}/zk_component_ref/listgroup)
-directly.
-
-# Frozen Component
-
-In ZK 5 you are now able to freeze columns within a Grid and Listbox.
-This mirrors functionality seen within Excel and makes data in these
-components easier to read, interpret and handle.
-
-The following code demonstrates how to freeze a column within a Grid:
-
-```xml
-    <listbox>
-        <listhead>
-            <listheader label="header 1"/>
-            <listheader label="header 2"/>
-            <listheader label="header 3"/>
-            <listheader label="header 4"/>
-        </listhead>
-        <frozen columns="2"/>
-        <listitem>
-            <listcell label="cell 1"/>
-            <listcell label="cell 2"/>
-            <listcell label="cell 3"/>
-            <listcell label="cell 4"/>
-        </listitem>
-    </listbox>
-```
-
-{% include supported-since.html version="5.0.0" %}
-
-- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
-  directly.
 
 # Custom Attributes
 
@@ -1375,14 +1508,20 @@ component.
 
 # Supported Events
 
-| Name | Event Type                                                                                                                                                                                                                                                                                                                                                                                                 |
-|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected or deselected an item in the listbox.                                                                                                                                                                                  |
-| `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed.                                                                                     |
-| `onBlur` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed.                                                                                     |
-| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                                                                                                                                                                                                                                                                            |
-| `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
-| `onCheckSelectAll` | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items.                                                                                                                                                                    |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Notifies one that the user has selected or deselected an item in the listbox. |
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed. |
+| `onPageSize` | [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) | Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Listbox#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| `onCheckSelectAll` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | (Since 6.5.6) Notifies the checkbox on a listheader is checked to select all checkable items. |
+| `onRender` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | An AU request sent by the client to ask the server to render list items that are currently in the visible viewport (used internally for ROD; no associated event data). |
+| `onInnerWidth` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the user resizes the inner width of the listbox (e.g. by dragging a column border). Used internally to keep server and client state in sync. |
+| `onScrollPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the listbox scroll position changes. Used internally to synchronize the scroll position between client and server; duplicate events are suppressed. |
+| `onTopPad` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the top padding of the listbox changes during ROD (render-on-demand) scrolling. Used internally to maintain the virtual-scroll illusion for large datasets. |
+| `onDataLoading` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the listbox is about to load data from the `ListModel` (e.g. during ROD lazy-load or paging). You can listen to this event to show a loading indicator. |
+| `onAcrossPage` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when a selection crosses a page boundary in paging mold (e.g. shift-selecting across pages). Used internally to synchronize multi-page selections. |
+| `onAnchorPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the anchor position of the listbox is updated on the client, used internally to keep the server-side scroll anchor in sync during ROD. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1404,31 +1543,6 @@ zul.jar.
 * [Listfoot]({{site.baseurl}}/zk_component_ref/listfoot)
 * [Listgroup]({{site.baseurl}}/zk_component_ref/listgroup)
 * [Listgroupfoot]({{site.baseurl}}/zk_component_ref/listgroupfoot)
-
-# Version History
-
-| Version | Date           | Content                                                                                                                                                                                         |
-|---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.2   | May 2010       | Support the autopaging                                                                                                                                                                          |
-| 5.0.4   | July 2010      | Support onAfterRender event                                                                                                                                                                     |
-| 5.0.5   | September 2010 | The nonselectabletag property was introduced to enhance the control of when to select an item                                                                                                   |
-| 5.0.5   | September 2010 | When a listbox's checkmark is enabled and an item is clicked, it will toggle the selection of the item and the other remains the same.                                                          |
-| 5.0.5   | October 2010   | When a listbox's checkmark is enabled and an item is right clicked, it will toggle the selection of the item.                                                                                   |
-| 5.0.5   | October 2010   | The span property was introduced to span the columns to occupy the whole listbox.                                                                                                               |
-| 5.0.6   | February 2011  | The nonselectableTags property supported "\*".                                                                                                                                                  |
-| 5.0.7   | April 2011     | Listbox shall sort model based on current state.                                                                                                                                                |
-| 5.0.7   | April 2011     | The emptyMessage attribute supported                                                                                                                                                            |
-| 5.0.7   | April 2011     | The onPageSize event was introduced.                                                                                                                                                            |
-| 5.0.8   | June 2011      | Deprecated setPreloadSize, instead with a custom attributes "org.zkoss.zul.listbox.preloadSize".                                                                                                |
-| 5.0.8   | June 2011      | Add a custom attributes "org.zkoss.zul.listbox.initRodSize" for control ROD render size.                                                                                                        |
-| 5.0.11  | February 2012  | [ZK-873](http://tracker.zkoss.org/browse/ZK-873): Select all checkbox in listheader is only available if ROD is false.                                                                          |
-| 6.5.0   | June 2012      | [ZK-120](http://tracker.zkoss.org/browse/ZK-120): Provide menupopup="auto" for listbox                                                                                                          |
-| 6.5.0   | June 2012      | [ZK-147](http://tracker.zkoss.org/browse/ZK-147): Support ungroup for grid's column menu                                                                                                        |
-| 7.0.1   | January 2014   | [ZK-2079](http://tracker.zkoss.org/browse/ZK-2079): Add a custom attributes "org.zkoss.zul.listbox.autohidePaging" for control autohide in internal paging component                            |
-| 7.0.2   | April 2014     | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
-| 7.0.3   | July 2014      | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
-| 8.6.0   | Oct 2018       | [ZK-2756](http://tracker.zkoss.org/browse/ZK-2756): Listbox supports listgroup like optgroup in select mold                                                                                     |
-| 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
 
 [^1]: The concept is similar to Swings (`javax.swing.ListModel`).
 

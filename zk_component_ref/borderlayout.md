@@ -2,11 +2,9 @@
 title: "Borderlayout"
 ---
 
-- Demonstration:
-  [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
-- Java API: [org.zkoss.zul.Borderlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Borderlayout.html)
-- JavaScript API:
-  [zul.layout.Borderlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Borderlayout.html)
+- **Demonstration:** [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
+- **Java API:** [org.zkoss.zul.Borderlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Borderlayout.html)
+- **JavaScript API:** [zul.layout.Borderlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Borderlayout.html)
 
 # Employment/Purpose
 
@@ -17,6 +15,12 @@ area. The combination of children components of `borderlayout` is free.
 
 A borderlayout could be nested to another borderlayout (actually, almost
 all kinds of components) to form a complicated layout.
+
+## Common Use Cases
+
+- **Application shell / page layout**: Use `borderlayout` as the outermost container of a full-page application, placing a toolbar or breadcrumb in `north`, a status bar in `south`, a navigation tree in `west`, detail panels in `east`, and the main working area in `center`.
+- **Nested split views**: Nest a second `borderlayout` inside a region (e.g., inside `north` or `center`) to create multi-pane editors or master/detail splits without reaching for a custom CSS layout.
+- **Resizable panels**: Combine `splittable="true"` and `collapsible="true"` on individual regions to let users resize or hide side panels at runtime — common in dashboards and IDEs built with ZK.
 
 # Example
 
@@ -285,16 +289,11 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 
 # Supported Events
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+| Name | Event Type | Description |
+|------|------------|-------------|
+
+No additional events are defined for this component. Inherited events from `HtmlBasedComponent` apply — see [HtmlBasedComponent — Supported Events]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
 
 # Supported Children
 
 `*`[` North`]({{site.baseurl}}/zk_component_ref/north)`, `[` South`]({{site.baseurl}}/zk_component_ref/south)`, `[` Center`]({{site.baseurl}}/zk_component_ref/center)`, `[` West`]({{site.baseurl}}/zk_component_ref/west)`, `[` East`]({{site.baseurl}}/zk_component_ref/east)
-
-# Version History
-
-| Version | Date            | Content                                                                                                                                                                                         |
-|---------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.8   | August 11, 2011 | Added a way to disable the animation of borderlayout.                                                                                                                                           |
-| 6.0.0   | Feb 14, 2012    | The flex attribute has been deprecated, please set vflex="1" to the child component in order to occupy the whole area.                                                                          |
-| 7.0.2   | April 2014      | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
