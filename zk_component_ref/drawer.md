@@ -56,7 +56,7 @@ You can utilize both the `visible` attribute and the `open/close` methods to int
 
 ## Change Animation Speed
 
-The Drawer component supports the `data-animationspeed` attribute for adjusting the animation speed. Refer to [Data-AnimationSpeed](https://www.zkoss.org/javadoc/latest/zkref/ZUMLReference/ZUMLNamespaces/ClientAttribute/Data-AnimationSpeed.html) for more information.
+The Drawer component supports the `data-animationspeed` attribute for adjusting the animation speed. Refer to [Data-AnimationSpeed](/zuml_ref/data_animation_speed) for more information.
 
 ## Properties
 

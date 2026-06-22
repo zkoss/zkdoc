@@ -75,4 +75,4 @@ GroupFooter serves as a summary listitem of listgroup.
 
 # Supported Children
 
-[`org.zkoss.zul.Listcell`](https://www.zkoss.org/javadoc/latest/zk/`org/zkoss/zul/Listcell`.html)
+[`org.zkoss.zul.Listcell`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listcell.html)

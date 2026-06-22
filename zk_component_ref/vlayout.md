@@ -5,7 +5,7 @@ title: "Vlayout"
 - Demonstration: N/A
 - Java API: [org.zkoss.zul.Vlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vlayout.html)
 - JavaScript API:
-  [zul.layout.Vlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Vlayout.html)
+  [zul.box.Vlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Vlayout.html)
 
 # Employment/Purpose
 

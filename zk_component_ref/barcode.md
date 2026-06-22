@@ -178,4 +178,4 @@ WEB-INF/lang-addon.xml
 
 | Version | Date        | Content                                            |
 |---------|-------------|----------------------------------------------------|
-| 8.6.0   | Apirl, 2018 | [org.zkoss.zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/barcode/Barcode.html) |
+| 8.6.0   | Apirl, 2018 | [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html) |

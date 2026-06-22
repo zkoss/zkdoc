@@ -8,7 +8,7 @@ title: "SimpleListModel"
 
 # Employment/Purpose
 
-A simple implementation of [ListModel](https://www.zkoss.org/javadoc/latest/zk/ListModel.html).
+A simple implementation of [ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 # Example
 

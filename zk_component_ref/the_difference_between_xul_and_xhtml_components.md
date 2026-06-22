@@ -14,7 +14,7 @@ in several ways.
   interface, the universal identifier, <mp>getUuid</mp>, is the same as
   the identifier <mp>getId</mp>
 - By implementing the
-  [org.zkoss.zk.ui.ext.DynamicAttributes](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicAttributes.html)
+  [org.zkoss.zk.ui.ext.DynamicPropertied](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/DynamicPropertied.html)
   interface, all XHTML components support arbitrary attributes. In other
   words, any attribute name is legal (as long as the targeted browser
   supports)

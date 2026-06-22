@@ -3,7 +3,7 @@ title: "Constrained"
 ---
 
 - Demonstration: N/A
-- Java API: [org.zkoss.zul.ext.constrainted](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/constrainted.html)
+- Java API: [org.zkoss.zul.ext.Constrainted](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Constrainted.html)
 - JavaScript API: N/A
 
 # Employment/Purpose

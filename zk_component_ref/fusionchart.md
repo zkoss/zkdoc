@@ -5,9 +5,9 @@ title: "Fusionchart"
  {% include Deprecated_Content.html %}
 
 - Demonstration:
-- Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fusionchart.html)
+- Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/9.6.0.1/zk/org/zkoss/zkmax/zul/Fusionchart.html)
 - JavaScript API:
-  [zkmax.fusionchartz.Fusionchart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.fusionchartz.Fusionchart.html)
+  [zkmax.fusionchartz.Fusionchart](https://www.zkoss.org/javadoc/9.6.0.1/jsdoc/zkmax/fusionchartz/Fusionchart.html)
 
 - <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}

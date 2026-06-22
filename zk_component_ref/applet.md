@@ -6,8 +6,8 @@ title: "Applet"
 {% include supported-since.html version=10.0.0 %}Removed from ZK 
 
 - Demonstration: N/A
-- Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Applet.html)
-- JavaScript API: [zul.med.Applet](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Applet.html)
+- Java API: [org.zkoss.zul.Applet](https://www.zkoss.org/javadoc/9.6.0.1/zk/org/zkoss/zul/Applet.html)
+- JavaScript API: [zul.med.Applet](https://www.zkoss.org/javadoc/9.6.0.1/jsdoc/zul/med/Applet.html)
 
 # Employment/Purpose
 

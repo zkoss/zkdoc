@@ -23,7 +23,7 @@ for details.
 
 Since 5.0.3, the rendering of the calendar can be customized at the
 client by providing JavaScript code that overrides
-[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Renderer.html).
+[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/variables/zul.db.Renderer.html).
 
 # Example
 

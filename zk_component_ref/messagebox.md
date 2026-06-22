@@ -61,7 +61,7 @@ Close button on the right-top corner, the `onClose` event is fired.
 {% include supported-since.html version="6.0.0" %}
 
 Since ZK 6, the event listener will be invoked with an instance of
-[org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html), and it is easy
+[org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.ClickEvent.html), and it is easy
 to retrieve the button being clicked from it. For example,
 
 ```java
@@ -232,7 +232,7 @@ Check inherited events
 | Version | Date           | Content                                                                                                           |
 |---------|----------------|-------------------------------------------------------------------------------------------------------------------|
 | 6.0.0   | October 2011   | The order and labels of the buttons were assignable.                                                              |
-| 6.0.0   | October 2011   | [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox/ClickEvent.html) was introduced to simplify the identification of a button. |
+| 6.0.0   | October 2011   | [org.zkoss.zul.Messagebox.ClickEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.ClickEvent.html) was introduced to simplify the identification of a button. |
 | 6.5.1   | September 2012 | [Messagebox with no button](http://tracker.zkoss.org/browse/ZK-1351)                                              |
 | 7.0.1   | January 2014   | [Add sclass to messagebox](http://tracker.zkoss.org/browse/ZK-2087)                                               |
 

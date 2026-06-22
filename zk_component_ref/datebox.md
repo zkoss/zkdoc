@@ -33,7 +33,7 @@ An edit box for holding a date. After click on the calender, a
 
 {% include supported-since.html version="5.0.3" %} You can customize the rendering of
 the calendar at the client by JavaScript code that overrides
-[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Renderer.html).
+[zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/variables/zul.db.Renderer.html).
 
 # Example
 

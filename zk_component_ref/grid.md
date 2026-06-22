@@ -498,11 +498,11 @@ the rest.
 ## Sorting with Live Data
 
 If you allow users to sort a grid with live data, you have to implement
-the interface, [org.zkoss.zul.ListModelExt](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelExt.html), in
+the interface, [org.zkoss.zul.ext.Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html), in
 addition to the [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html).
 
 ```java
-class MyListModel implements ListModel, ListModelExt {
+class MyListModel implements ListModel, Sortable {
     public void sort(Comparator cmpr, boolean ascending) {
         //do the real sorting
         //notify the grid (or listbox) that data is changed by use of ListDataEvent
@@ -511,7 +511,7 @@ class MyListModel implements ListModel, ListModelExt {
 ```
 
 When a user wants to sort the grid, the grid will invoke the `sort`
-method of `ListModelExt` to sort the data. In other words, the sorting
+method of `Sortable` to sort the data. In other words, the sorting
 is done by the list model, rather than the grid.
 
 After sorting, the list model will notify the grid by invoking the

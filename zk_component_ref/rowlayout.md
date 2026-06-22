@@ -2,9 +2,9 @@
 title: "Rowlayout"
 ---
 
-- Java API: [org.zkoss.zkmax.zul.RowLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/RowLayout.html)
+- Java API: [org.zkoss.zkmax.zul.Rowlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Rowlayout.html)
 - JavaScript API:
-  [zkmax.layout.RowLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.RowLayout.html)
+  [zkmax.layout.Rowlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Rowlayout.html)
 
 - <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
@@ -77,9 +77,3 @@ The above examples look like: ![](images/Rowlayout-examples.png)
 # Supported Children
 
 `*`[` Rowchildren`]({{site.baseurl}}/zk_component_ref/rowchildren)
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      | \]      |

@@ -68,7 +68,7 @@ a non-ZK page. For example, it won't be sent if it contains a PDF page.
 
 On the other hand, if you use other technologies to put a ZK page in an
 iframe, you can monitor the URL by writing a JavaScript method called
-[\_global\_.\_global\_#onIframeURLChange(_global_.String, _global_.String)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/\_global\_.\_global\_.html#onIframeURLChange(_global_.String, _global_.String))
+[zul.utl.Iframe#onIframeURLChange](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Iframe.html)
 as follows.
 
 ```xml
