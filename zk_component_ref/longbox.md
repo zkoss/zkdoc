@@ -2,14 +2,19 @@
 title: "Longbox"
 ---
 
-- Demonstration:
-  [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Longbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Longbox.html)
-- JavaScript API: [zul.inp.Longbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Longbox.html)
+- **Demonstration:** [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Longbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Longbox.html)
+- **JavaScript API:** [zul.inp.Longbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Longbox.html)
 
 # Employment/Purpose
 
 A long`box` is used to let users input long data.
+
+## Common Use Cases
+
+- **Large numeric identifiers** — store and display values such as database primary keys, order numbers, or Unix timestamps that exceed the range of a 32-bit integer.
+- **Financial quantities** — capture monetary amounts in minor units (e.g. cents) or large counters where precision beyond `int` is required.
+- **Constrained numeric entry** — combine with `constraint="no negative,no empty"` to enforce domain rules (positive-only quantities, required fields) directly in the UI without extra server code.
 
 # Example
 
@@ -23,23 +28,22 @@ A long`box` is used to let users input long data.
 
 # Properties
 
-## Format
+For the **Format** property, refer to [FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement) — it is inherited and documented on that ancestor class page.
 
-You are able to format the field by providing specifying the attribute
-with a formatting string. The default value is `null`.
+## Value
 
-```xml
-<longbox format="#,##0"/>
-```
+**Default Value:** `null`
 
-`Since 8.5.2`
-
-You can provide a locale to format the number by specify the String
-starts with "locale:"
+The current value of the longbox as a `Long` object. Returns `null` when the field is empty, unless a constraint (e.g. `no empty`) prevents it. Bind this property via EL or set it programmatically from a ViewModel or composer.
 
 ```xml
-<longbox format="locale:zh-TW"/>
+<zscript>
+    Long initialCount = 1_000_000L;
+</zscript>
+<longbox value="${initialCount}"/>
 ```
+
+To clear the field in ZUL, omit the `value` attribute or pass an empty EL expression; the component will render as blank.
 
 ## Constraint
 
@@ -80,15 +84,25 @@ Notes:
 <spinner constraint="min -2 max 6"/>
 ```
 
-# Inherited Functions
-
-Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
-for inherited functions.
-
 # Supported Events
 
 - Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#Supported_Events)
 
+# Supported Molds
+
+Available molds of a component are defined in lang.xml embedded in
+zul.jar.
+
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/longbox_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/longbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+
 # Supported Children
 
 `*NONE`
+
+# Inherited Functions
+
+Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
+for inherited functions.

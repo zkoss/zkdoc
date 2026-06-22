@@ -2,13 +2,20 @@
 title: "Intbox"
 ---
 
-- Demonstration: [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Intbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Intbox.html)
-- JavaScript API: [zul.inp.Intbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Intbox.html)
+- **Demonstration:** [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Intbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Intbox.html)
+- **JavaScript API:** [zul.inp.Intbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Intbox.html)
 
 # Employment/Purpose
 
 An `intbox` is used to let users input integer data.
+
+## Common Use Cases
+
+- **Form integer fields** — Collect whole-number input (quantities, counts, ages, year values) in a data-entry form. Pair with `constraint="no empty"` to prevent blank submission.
+- **Bounded numeric input** — Apply `constraint="no negative,no zero"` (or the EE `min`/`max` syntax) to enforce a valid range without writing custom validators.
+- **MVVM two-way binding** — Use `value="@bind(vm.amount)"` so the ViewModel receives a typed `Integer` directly, avoiding manual string parsing.
+- **In-place editing** — Set `inplace="true"` to render the intbox as a label until the user clicks it, keeping read-heavy UIs visually clean.
 
 # Example
 
@@ -26,78 +33,41 @@ While input invalid data:
 
 # Properties
 
-## Format
+## Value
 
-You are able to format the field by providing specifying the attribute
-with a formatting string. The default value is `null`.
+**Default Value:** `null`
 
-```xml
-<intbox format="#,##0"/>
-```
-
-{% include supported-since.html version="8.5.2" %} You can provide a locale to format
-the number by specify the String starts with "locale:"
+Sets the integer value displayed in the input field. The value is typed as `Integer` and may be `null` unless a constraint (such as `no empty`) prevents it. Binding this property via EL expression is the most common pattern.
 
 ```xml
-<intbox format="locale:zh-TW"/>
+<intbox value="42"/>
 ```
 
-## Constraint
-
-You could specify what value to accept for input controls by use of the
-`constraint`property. It could be a combination of `no positive`,
-`no negative`, `no zero`, `no empty`.
-
-To specify two or more constraints, use comma to separate them as
-follows.
+When bound to a ViewModel:
 
 ```xml
-<intbox constraint="no negative,no empty"/>
+<intbox value="@bind(vm.quantity)"/>
 ```
-
-If you prefer to display different message to the default one, you can
-append the error message to the constraint with a colon.
-
-```xml
-<intbox constraint="no negative: it shall not be negative"/>
-```
-
-Notes:
-
-- The error message, if specified, must be the last element and start
-  with colon.
-- To support multiple languages, you could use the 「l」 function as
-  depicted in the **Internationalization** chapter.
-
-```xml
-<intbox constraint="no negative: ${c:l('err.num.negative')}"/>
-```
-
-### min & max constraint
-{% include supported-since.html version="10.2.0" %}
-<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %}
-
-```xml
-<spinner constraint="min -2 max 6"/>
-```
-
-# Inherited Functions
-
-Please refer to [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
-for inherited functions.
 
 # Supported Events
 
 - Inherited Supported Events: [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#Supported_Events)
 
+# Supported Molds
+
+Available molds of a component are defined in lang.xml embedded in
+zul.jar.
+
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/ZKComRef_Intbox.png) |
+| rounded | ![](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+
 # Supported Children
 
 `*NONE`
 
-# Use Cases
+# Inherited Functions
 
-| Version | Description                             | Example Location                                                                               |
-|---------|-----------------------------------------|------------------------------------------------------------------------------------------------|
-| 3.6     | Leading zero in Intbox                  | [<http://www.zkoss.org/forum/listComment/10271>](http://www.zkoss.org/forum/listComment/10271) |
-| 3.6     | Constraint Intbox to accept only digits | [<http://www.zkoss.org/forum/listComment/4603>](http://www.zkoss.org/forum/listComment/4603)   |
+Please refer to [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
+for inherited functions.

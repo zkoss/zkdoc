@@ -2,14 +2,20 @@
 title: "Timebox"
 ---
 
-- Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
-- Java API: [org.zkoss.zul.Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html)
-- JavaScript API: [zul.db.Timebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Timebox.html)
+- **Demonstration:** [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
+- **Java API:** [org.zkoss.zul.Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html)
+- **JavaScript API:** [zul.db.Timebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Timebox.html)
 
 # Employment/Purpose
 
-An edit box for holding a time (a java.util.Date Object) , but only Hour
-& Minute are used.
+An edit box for holding a time value. By default it works with a `java.util.Date` object (only the Hour and Minute parts are used). {% include supported-since.html version="9.0.0" %} ZK 9.0.0 added `LocalTime`, `LocalDateTime`, and `ZonedDateTime` support via `valueInLocalTime`, `valueInLocalDateTime`, and `valueInZonedDateTime`.
+
+## Common Use Cases
+
+- **Appointment scheduling** — collect a start/end time from users in a booking or calendar form.
+- **Work-hour entry** — let users enter clock-in / clock-out times for timesheets.
+- **Filter by time range** — pair two timeboxes ("from" / "to") with a `constraint` to restrict accepted values to a valid range.
+- **Locale-aware display** — specify `format="short"` or `format="medium"` so the displayed time pattern adapts automatically to the user's locale without hard-coding a format string.
 
 # Example
 
@@ -22,6 +28,16 @@ An edit box for holding a time (a java.util.Date Object) , but only Hour
 {% include IntegrateMomentjs.md %}
 
 # Properties
+
+## ButtonVisible
+
+**Default Value:** `true`
+
+Controls whether the drop-down button on the right side of the input box is visible. Set to `false` to hide the button and present a plain text-input style.
+
+```xml
+<timebox buttonVisible="false"/>
+```
 
 ## Constraint
 
@@ -104,11 +120,6 @@ convert the specified text well.
   probably fail to convert the text to a `Date` object according to
   default format and throw `org.zkoss.zk.ui.WrongValueException`.
 
-# Inherited Functions
-
-Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement)
-for inherited functions.
-
 # Supported Events
 
 - Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
@@ -143,9 +154,6 @@ zul.jar.
 
 `*NONE`
 
-# Version History
+# Inherited Functions
 
-| Version | Date        | Content                                                                                                                                         |
-|---------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setFormat(java.lang.String)) supported the styling.                                            |
-| 5.0.7   | April, 2011 | [org.zkoss.zul.Timebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html#setLocale(java.util.Locale)) was introduced to specify a locale other than the current locale. |
+Please refer to [FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement) for inherited functions.

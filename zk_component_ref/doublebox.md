@@ -2,14 +2,20 @@
 title: "Doublebox"
 ---
 
-- Demonstration:
-  [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Doublebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublebox.html)
-- JavaScript API: [zul.inp.Doublebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublebox.html)
+- **Demonstration:** [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Doublebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublebox.html)
+- **JavaScript API:** [zul.inp.Doublebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublebox.html)
 
 # Employment/Purpose
 
 An edit box for holding an float point value (double).
+
+## Common Use Cases
+
+- **Scientific or financial data entry** — collecting floating-point measurements, prices, rates, or percentages where integer precision is insufficient.
+- **Form validation** — combine with the `constraint` attribute (`no negative`, `no zero`, `no empty`) to enforce business rules without server round-trips.
+- **Locale-aware number display** — use the inherited `format` attribute (e.g. `"#,##0.##"` or `"locale:de-DE"`) to render the value according to the end-user's locale.
+- **Inline editing in grids** — place inside a `<row>` or a grid cell renderer for compact, type-safe numeric editors.
 
 # Example
 
@@ -21,22 +27,20 @@ An edit box for holding an float point value (double).
 
 # Properties
 
-## Format
+## Value
 
-You are able to format the field by providing specifying the attribute
-with a formatting string. The default value is `null`.
+**Default Value:** `null`
+
+Sets or returns the numeric value held by this doublebox as a `Double` object. The value may be `null` unless a `no empty` constraint prevents it. Assign a numeric literal directly in ZUL:
 
 ```xml
-<doublebox format="#,##0.##"/>
+<doublebox value="2.3"/>
 ```
 
-`Since 8.5.2`
-
-You can provide a locale to format the number by specify the String
-starts with "locale:"
+When binding via MVVM, use EL to connect a `Double` property on your ViewModel:
 
 ```xml
-<doublebox format="locale:zh-TW"/>
+<doublebox value="@bind(vm.price)"/>
 ```
 
 ## Constraint
@@ -70,15 +74,24 @@ Notes:
 <doublebox constraint="no negative: ${c:l('err.num.negative')}"/>
 ```
 
-# Inherited Functions
-
-Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
-for inherited functions.
-
 # Supported Events
 
 - Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#Supported_Events)
 
+# Supported Molds
+
+Available molds of a component are defined in lang.xml embedded in zul.jar.
+
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/Doublebox_mold_default.png) |
+| rounded | ![](/zk_component_ref/images/Doublebox_mold_rounded.png) |
+
 # Supported Children
 
 `*NONE`
+
+# Inherited Functions
+
+Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
+for inherited functions.

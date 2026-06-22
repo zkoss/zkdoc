@@ -2,10 +2,9 @@
 title: "Textbox"
 ---
 
-- Demonstration:
-  [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html)
-- JavaScript API: [zul.inp.Textbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Textbox.html)
+- **Demonstration:** [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Textbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Textbox.html)
+- **JavaScript API:** [zul.inp.Textbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Textbox.html)
 
 # Employment/Purpose
 
@@ -20,6 +19,15 @@ string or a default constraint expression (available value is "no
 empty"). When user change the value of textbox, it will cause a
 validating process to validate the value. If the validation fails, then
 a notification will pop up.
+
+## Common Use Cases
+
+- **Single-line text input** — collect short free-form text such as names, search terms, or identifiers by using the default single-row textbox.
+- **Multi-line text area** — collect longer content such as comments or descriptions by setting `rows` to a value greater than `1` (which also enables `multiline` automatically).
+- **Password fields** — hide sensitive input by setting `type="password"`.
+- **Validated input** — enforce patterns like email addresses or non-empty fields with the `constraint` attribute (see [InputElement]({{site.baseurl}}/zk_component_ref/inputelement#Constraint)).
+- **Tab-formatted content** — allow users to insert tab characters for code or tabular text by enabling `tabbable="true"`.
+- **Submit on Enter** — fire the `onOK` event immediately when the user presses Enter in a single-line field by enabling `submitByEnter="true"`.
 
 # Example
 
@@ -52,8 +60,28 @@ text line2...
 
 # Properties
 
+## Value
+
+**Default Value:** `""`
+
+Sets the text content of the textbox. Passing `null` is treated as an empty string. The value is subject to any active constraint; a `WrongValueException` is thrown when validation fails.
+
+```xml
+<textbox value="Hello, World!"/>
+```
+
 ## Multiline
 If `true`, zk renders a multiline textbox. The `multiline` will also be `true` if you set `rows` larger than `1`.
+
+## Rows
+
+**Default Value:** `1`
+
+Sets the number of visible text lines. The value must be greater than `0`; passing `0` or a negative number throws a `WrongValueException`. Setting `rows` to a value greater than `1` automatically enables `multiline`. Note that `rows` cannot be used together with `vflex` or `height` — an `UiException` is thrown if you attempt to combine them.
+
+```xml
+<textbox rows="5" cols="40" placeholder="Enter your message…"/>
+```
 
 ## Tabbable
 By specifying a true, the tabbox can insert a long space or format the
@@ -101,25 +129,25 @@ Email: <textbox type="email"/>
 WebSite: <textbox type="url"/>
 ```
 
-## Constraint
-
-Please refert to [ZK Component Reference/Base Components/InputElement#Constraint]({{site.baseurl}}/zk_component_ref/inputelement#Constraint).
-
-# Inherited Functions
-
-Please refer to [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement)
-for inherited functions, such as in-place edition.
-
 # Supported Events
 
 - Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement#Supported_Events)
+
+# Supported Molds
+
+Available molds of a component are defined in lang.xml embedded in
+zul.jar.
+
+| Name | Snapshot |
+|---|---|
+| default | ![](/zk_component_ref/images/ZKCompRef_Textbox.png) |
+| rounded | ![](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 
 `*NONE`
 
-# Browser Limitations
+# Inherited Functions
 
-| Browser | description  |
-|---|-------------------|
-| IE | There is no way to change the text color in a disabled input in IE. |
+Please refer to [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement)
+for inherited functions, such as in-place edition.
