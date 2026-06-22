@@ -2,9 +2,9 @@
 title: "Tree"
 ---
 
-- Demonstration: [Tree](http://www.zkoss.org/zkdemo/tree)
-- Java API: [org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)
-- JavaScript API: [zul.sel.Tree](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Tree.html)
+- **Demonstration:** [Tree](http://www.zkoss.org/zkdemo/tree)
+- **Java API:** [org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)
+- **JavaScript API:** [zul.sel.Tree](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Tree.html)
 
 # Employment/Purpose
 
@@ -21,6 +21,76 @@ Although treecols is optional, if it exists, notice that the number of
 its child (treecol) should equal the number of treecell, so that tree
 can display its content correctly. If treecols contains no treecol, the
 tree will display nothing in its content.
+
+## Common Use Cases
+
+### Bind a TreeModel for Dynamic Data
+
+Assign a `TreeModel` (which must also implement `TreeSelectableModel`) so the tree renders items directly from the model without inline ZUL markup:
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    DefaultTreeNode root = new DefaultTreeNode(null, new DefaultTreeNode[] {
+        new DefaultTreeNode("Fruits", new DefaultTreeNode[]{ new DefaultTreeNode("Apple"), new DefaultTreeNode("Banana") }),
+        new DefaultTreeNode("Vegetables", new DefaultTreeNode[]{ new DefaultTreeNode("Carrot") })
+    });
+    TreeModel treeModel = new DefaultTreeModel(root);
+]]></zscript>
+<tree model="${treeModel}" itemRenderer="com.example.MyTreeitemRenderer"/>
+```
+
+### Enable Multi-Selection with Checkmarks
+
+Combine `multiple` and `checkmark` to give users a checkbox-style selection experience:
+
+```xml
+<tree multiple="true" checkmark="true">
+  <treechildren>
+    <treeitem label="Option A"/>
+    <treeitem label="Option B"/>
+  </treechildren>
+</tree>
+```
+
+### Paginate a Large Tree
+
+Switch to the `paging` mold and set `pageSize` to limit the number of visible root-level items:
+
+```xml
+<tree mold="paging" pageSize="20">
+  <treechildren>
+    <treeitem label="Item 1"/>
+  </treechildren>
+</tree>
+```
+
+To share a paging bar placed elsewhere in the layout, point `paginal` at an external `<paging>` component:
+
+```xml
+<paging id="pg" pageSize="20"/>
+<tree mold="paging" paginal="${pg}">
+  <treechildren>
+    <treeitem label="Node"/>
+  </treechildren>
+</tree>
+```
+
+### Suppress Selection when Clicking Embedded Widgets
+
+Use `nonselectableTags` to prevent clicks on buttons or links inside tree cells from selecting the row:
+
+```xml
+<tree nonselectableTags="button,a">
+  <treechildren>
+    <treeitem>
+      <treerow>
+        <treecell>Node label <button label="Edit"/></treecell>
+      </treerow>
+    </treeitem>
+  </treechildren>
+</tree>
+```
 
 # Example
 
@@ -387,6 +457,225 @@ Treecols's header checkmark also support tristate
 
 # Properties
 
+## ActivePage
+
+Sets the active page so that the specified tree item is visible. When paging mold is active, this scrolls to the page that contains the given item. Has no effect when the item is invisible or does not belong to this tree.
+
+{% include supported-since.html version="3.0.4" %}
+
+```xml
+<tree mold="paging" pageSize="10">
+  <treechildren>
+    <treeitem id="targetItem" label="Target"/>
+  </treechildren>
+</tree>
+```
+
+Set programmatically to navigate to a specific item:
+
+```xml
+<tree mold="paging" pageSize="10">
+  <treechildren>
+    <treeitem id="targetItem" label="Target"/>
+  </treechildren>
+</tree>
+```
+
+## Checkmark
+
+**Default Value:** `false`
+
+Sets whether a check-mark column is displayed in front of each tree item. Typically combined with `multiple="true"` to allow checkbox-style multi-selection. When `checkmark` is `true` and `multiple` is `false`, only one item can be checked at a time.
+
+```xml
+<tree checkmark="true" multiple="true">
+  <treechildren>
+    <treeitem label="Option A"/>
+    <treeitem label="Option B"/>
+  </treechildren>
+</tree>
+```
+
+## InnerWidth
+
+**Default Value:** `"100%"`
+
+Sets the inner width of the tree's internal table. The inner width controls the width of the scrollable content area; setting it wider than the component's outer width causes a horizontal scrollbar to appear.
+
+{% include supported-since.html version="3.0.0" %}
+
+```xml
+<tree width="400px" innerWidth="600px">
+  <treecols>
+    <treecol label="Name" width="300px"/>
+    <treecol label="Description" width="300px"/>
+  </treecols>
+  <treechildren>
+    <treeitem>
+      <treerow>
+        <treecell label="Root"/>
+        <treecell label="A long description text"/>
+      </treerow>
+    </treeitem>
+  </treechildren>
+</tree>
+```
+
+## ItemRenderer
+
+Sets the renderer used to render each tree item when a `model` is assigned. If null, a default renderer is used. The renderer is a `TreeitemRenderer` implementation responsible for populating each `Treeitem` from the corresponding model node.
+
+This property has no effect when no model is set. To trigger a re-render after assigning a new renderer, reassign the model (e.g., `setModel(getModel())`) or fire a `TreeDataEvent`.
+
+{% include supported-since.html version="5.0.6" %}
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    DefaultTreeNode root = new DefaultTreeNode(null, new DefaultTreeNode[] {
+        new DefaultTreeNode("Fruits", new DefaultTreeNode[]{ new DefaultTreeNode("Apple"), new DefaultTreeNode("Banana") }),
+        new DefaultTreeNode("Vegetables", new DefaultTreeNode[]{ new DefaultTreeNode("Carrot") })
+    });
+    TreeModel treeModel = new DefaultTreeModel(root);
+]]></zscript>
+<tree model="${treeModel}" itemRenderer="com.example.MyTreeitemRenderer"/>
+```
+
+## Model
+
+Sets the `TreeModel` associated with this tree. The model must also implement `TreeSelectableModel`. When a model is set, any existing `<treechildren>` markup is detached and items are rendered by the framework (using the assigned `itemRenderer` or a default renderer).
+
+Set to `null` to dissociate the model; the tree reverts to inline markup. When paging mold is active and the model implements `Pageable`, page size and active page are synchronized between the model and the built-in paging controller.
+
+{% include supported-since.html version="3.0.0" %}
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    DefaultTreeNode root = new DefaultTreeNode(null, new DefaultTreeNode[] {
+        new DefaultTreeNode("Fruits", new DefaultTreeNode[]{ new DefaultTreeNode("Apple"), new DefaultTreeNode("Banana") }),
+        new DefaultTreeNode("Vegetables", new DefaultTreeNode[]{ new DefaultTreeNode("Carrot") })
+    });
+    TreeModel treeModel = new DefaultTreeModel(root);
+]]></zscript>
+<tree model="${treeModel}"/>
+```
+
+## Multiple
+
+**Default Value:** `false`
+
+Sets whether multiple tree items can be selected simultaneously. When changed from `true` to `false`, all selected items except the first one are automatically deselected. When a model implementing `TreeSelectableModel` is assigned, the model's own multiple-selection state is kept in sync.
+
+```xml
+<tree multiple="true">
+  <treechildren>
+    <treeitem label="Item A"/>
+    <treeitem label="Item B"/>
+  </treechildren>
+</tree>
+```
+
+## Name
+
+Sets the `name` attribute submitted with an HTML form. This is only relevant for legacy web applications that process form submissions via servlets. It does not work with non-HTTP clients and should not be used in purely event-driven ZK applications.
+
+```xml
+<tree name="categoryTree">
+  <treechildren>
+    <treeitem label="Root"/>
+  </treechildren>
+</tree>
+```
+
+## NonselectableTags
+
+**Default Value:** `null` (equivalent to `"button,input,textarea,a"`)
+
+Sets a comma-separated list of HTML tag names whose clicks should not trigger tree item selection. Useful when embedding interactive widgets (buttons, inputs, links) inside tree cells without inadvertently selecting the row.
+
+Specify an empty string (`""`) to make every tag click selectable. Specify `null` to restore the default exclusion list (`button`, `input`, `textarea`, `a`).
+
+{% include supported-since.html version="5.0.5" %}
+
+```xml
+<tree nonselectableTags="button,a">
+  <treechildren>
+    <treeitem>
+      <treerow>
+        <treecell>
+          Item with <button label="action"/> button
+        </treecell>
+      </treerow>
+    </treeitem>
+  </treechildren>
+</tree>
+```
+
+## PageSize
+
+Sets the number of tree items displayed per page when the paging mold is active. Throws `WrongValueException` if the value is negative. Has no effect when the mold is not `"paging"`. When a `Pageable` model is assigned, the page size is also propagated to the model.
+
+{% include supported-since.html version="2.4.1" %}
+
+```xml
+<tree mold="paging" pageSize="20">
+  <treechildren>
+    <treeitem label="Item 1"/>
+  </treechildren>
+</tree>
+```
+
+## Paginal
+
+Sets an external paging controller (`Paginal`) to use instead of the built-in paging child component. Use this when you want to share a single `<paging>` component across multiple trees or position it independently in the layout.
+
+When mold is `"paging"` and `paginal` is `null`, a paging child is created automatically. When an external controller is supplied it must be set before the tree is rendered.
+
+{% include supported-since.html version="3.0.7" %}
+
+```xml
+<paging id="pg" pageSize="10"/>
+<tree mold="paging" paginal="${pg}">
+  <treechildren>
+    <treeitem label="Node"/>
+  </treechildren>
+</tree>
+```
+
+## SelectedItem
+
+Deselects all currently selected items and selects the specified `Treeitem`. Equivalent to calling `selectItem(item)`. Returns the currently selected item (the first selected item in multiple-selection mode), or `null` if none is selected.
+
+```xml
+<tree selectedItem="${defaultItem}">
+  <treechildren>
+    <treeitem id="defaultItem" label="Default Selection"/>
+    <treeitem label="Other"/>
+  </treechildren>
+</tree>
+```
+
+## Seltype
+
+**Default Value:** `"single"`
+
+Sets the selection type of the tree. This is a convenience alias for the `multiple` property: setting `seltype="multiple"` is equivalent to `multiple="true"`, and `seltype="single"` is equivalent to `multiple="false"`. Any other value throws a `WrongValueException`.
+
+| Value | Meaning |
+|---|---|
+| `single` (default) | Only one item can be selected at a time. |
+| `multiple` | Multiple items can be selected simultaneously. |
+
+```xml
+<tree seltype="multiple">
+  <treechildren>
+    <treeitem label="Item A"/>
+    <treeitem label="Item B"/>
+  </treechildren>
+</tree>
+```
+
 ## Auxiliary Headers
 
 Like grids, you can specify auxiliary headers with the `auxhead` and
@@ -648,13 +937,17 @@ component.
 
 # Supported Events
 
-| Name | Event Type  |
-|---|-----------------------|
-| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a new item in the tree. |
-| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed. |
-| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed. |
-| `onAfterRender` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Notifies one that the user has selected a new item in the tree. |
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component gets the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onFocus got executed. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component loses the focus. Remember event listeners execute at the server, so the focus at the client might be changed when the event listener for onBlur got executed. |
+| `onPageSize` | [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) | Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Tree#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| `onRender` | [org.zkoss.zul.event.RenderEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/RenderEvent.html) | Notifies the tree that a set of items needs to be rendered. Fired as a client AU request; carries the set of `Treeitem` instances that require rendering. |
+| `onInnerWidth` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies the server that the browser has updated the inner width of the tree's content area. The server-side `innerWidth` field is updated accordingly. |
+| `onScrollPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies the server of the current scroll position (top/left offsets) of the tree's content area. The server stores these values to restore scroll position after updates. |
+| `onAnchorPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies the server of the anchor position (top/left offsets) used for virtual rendering alignment. The server stores these values for consistent item positioning. |
+| `onCheckSelectAll` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Fired when the user clicks the select-all checkbox in the column header. Delegates to the model's `SelectionControl.setSelectAll(boolean)`. Only fired when a `TreeSelectableModel` with `SelectionControl` is assigned. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -712,27 +1005,6 @@ The width of the tree will be zero in Chrome and Safari if no width is specified
 because WebKit may consider the tree's natural width to be zero. Specify the
 width (or use a layout/column sizing approach that yields a non-zero width)
 to work around this.
-
-# Version History
-
-| Version | Date           | Content                                                                                                                                                                                         |
-|---------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.2   | May 2010       | Support the autopaging                                                                                                                                                                          |
-| 5.0.4   | July 2010      | Support onAfterRender event                                                                                                                                                                     |
-| 5.0.5   | September 2010 | The nonselectabletag property was introduced to enhance the control of when to select an item                                                                                                   |
-| 5.0.5   | September 2010 | When a tree's checkmar is enabled and an item is clicked, it will toggle the selection of the item and the other remains the same.                                                              |
-| 5.0.5   | October 2010   | When a tree's checkmark is enabled and an item is right clicked, it will toggle the selection of the item.                                                                                      |
-| 5.0.6   | February 2011  | Sorting was supported                                                                                                                                                                           |
-| 5.0.6   | February 2011  | The nonselectableTags property supported "\*".                                                                                                                                                  |
-| 5.0.7   | April 2011     | Tree shall sort model based on current state.                                                                                                                                                   |
-| 5.0.7   | April 2011     | The onPageSize event was introduced.                                                                                                                                                            |
-| 7.0.0   | December 2013  | Change Style and Scrollable Tree were updated.                                                                                                                                                  |
-| 7.0.0   | December 2013  | Frozen Component was introduced.                                                                                                                                                                |
-| 7.0.1   | January 2014   | [ZK-2079](http://tracker.zkoss.org/browse/ZK-2079): Add a custom attributes "org.zkoss.zul.tree.autohidePaging" for control autohide in internal paging component                               |
-| 7.0.2   | April 2014     | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
-| 7.0.3   | July 2014      | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
-| 9.6.0   | Mar 2021       | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
-| 10.0.0  | Jan 2024       | [ZK-3853](http://tracker.zkoss.org/browse/ZK-3853): Tree supports 3-states selection model                                                                                                      |
 
 [^1]: `The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as `[`a library property`]({{site.baseurl}}/zk_config_ref/the_library_property_element)` to enable or disable it for the whole application.`
 
