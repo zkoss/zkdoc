@@ -2,10 +2,9 @@
 title: "Bandbox"
 ---
 
-- Demonstration:
-  [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
-- Java API: [org.zkoss.zul.Bandbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandbox.html)
-- JavaScript API: [zul.inp.Bandbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandbox.html)
+- **Demonstration:** [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
+- **Java API:** [org.zkoss.zul.Bandbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandbox.html)
+- **JavaScript API:** [zul.inp.Bandbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandbox.html)
 
 # Employment/Purpose
 
@@ -17,6 +16,13 @@ when a user presses Alt+DOWN or clicks the magnifier button.
 Unlike comboboxes, the popup window of a bandbox could be anything. It
 is designed to give developers the maximal flexibility. A typical use is
 to represent the popup window as a search dialog.
+
+## Common Use Cases
+
+- **Search dialog** — embed a `<listbox>` or `<grid>` inside `<bandpopup>` so users can search and pick a value without navigating away from the form.
+- **Date/time range picker** — place two `<datebox>` components in the popup to let users choose a start and end date; copy the selected range back to the bandbox value on confirm.
+- **Cascading selection** — combine multiple `<combobox>` or `<listbox>` elements in the popup to guide users through a multi-step selection (e.g. country → region → city).
+- **Lazy-loaded lookup** — use the `onOpen` event with `fulfill` to defer rendering the popup content until the user first opens it, keeping initial page load fast.
 
 # Example
 
@@ -65,14 +71,14 @@ job to close the popup and copy any needed value from it.
    onSelect="bd.value=self.selectedItem.label; bd.close();">
 ```
 
-In the above example, we copy the selected item's label to the bandbox,
+In the above example, we copy the selected item’s label to the bandbox,
 and then close the popup.
 
 ## Autodrop
 
 ![](/zk_component_ref/images/ZKComRef_Bandbox_Autodrop.PNG)
 
-By default, the popup window won't be opened until user clicks the
+By default, the popup window won’t be opened until user clicks the
 button, or presses `Alt+DOWN` on the keyboard. However, you can set the
 `autodrop` property to true and as soon as the user types a character
 the popup will be opened. This is helpful for novice users, but it might
@@ -86,6 +92,20 @@ be annoying for experienced users.
         </bandpopup>
     </bandbox>
 </zk>
+```
+
+## ButtonVisible
+
+**Default Value:** `true`
+
+Controls whether the magnifier button on the right side of the input box is visible. Set to `false` to hide the button and rely solely on `autodrop` or programmatic open/close.
+
+```xml
+<bandbox buttonVisible="false">
+    <bandpopup>
+        ...
+    </bandpopup>
+</bandbox>
 ```
 
 ## The onOpen Event
@@ -108,9 +128,9 @@ the `onOpen` event, as depicted below.
 ```xml
 <zk>
     <bandbox id="band" onOpen="prepare()"/>
-    
+
     <zscript>
-         void prepare() 
+         void prepare()
          {
              if (band.getPopup() == null) {
                  //create child elements
@@ -131,7 +151,7 @@ user key and displaying information accordingly.
 <zk>
     <bandbox id="band" autodrop="true" onChanging="suggest()"/>
     <zscript>
-         void suggest() 
+         void suggest()
          {
              if (event.value.startsWith("A")) {
                  //do something
@@ -195,7 +215,7 @@ Notes:
   depicted in the **Internationalization** chapter.
 
 ```xml
-<bandbox constraint="/^A/: ${c:l('err.startwith.required')}"/>
+<bandbox constraint="/^A/: ${c:l(‘err.startwith.required’)}"/>
 ```
 
 ## IconSclass
@@ -204,16 +224,41 @@ Notes:
 Bandbox button icon. For built-in icon, please see
 [LabeliImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement).
 
-# Inherited Functions
+## Open
 
-Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited
-functions.
+**Default Value:** `false`
+
+{% include supported-since.html version="6.0.0" %}
+
+Sets or returns whether the bandpopup is currently shown. Setting `open="true"` in ZUL will display the popup as soon as the component renders (only takes effect when the component is visible). Use the `open()` and `close()` Java methods for imperative control from a composer or event handler.
+
+```xml
+<bandbox open="true">
+    <bandpopup>
+        ...
+    </bandpopup>
+</bandbox>
+```
+
+## PopupWidth
+
+{% include supported-since.html version="8.0.3" %}
+
+Sets the width of the bandpopup dropdown. Accepts any valid CSS length value (e.g. `"300px"`) or a percentage (e.g. `"130%"`). When a percentage is given, the popup width is calculated relative to the width of the bandbox itself — for example, `"130%"` on a 300px-wide bandbox produces a 390px popup.
+
+```xml
+<bandbox popupWidth="300px">
+    <bandpopup>
+        ...
+    </bandpopup>
+</bandbox>
+```
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| onOpen | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a component. Note: unlike onClose, this event is only a notification. The client sends this event after opening or closing the component. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. Note: unlike onClose, this event is only a notification. The client sends this event after opening or closing the component. |
 
 - Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
@@ -230,3 +275,8 @@ zul.jar.
 # Supported Children
 
 `*`[` Bandpopup `]({{site.baseurl}}/zk_component_ref/bandpopup)
+
+# Inherited Functions
+
+Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited
+functions.

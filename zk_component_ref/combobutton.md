@@ -2,10 +2,9 @@
 title: "Combobutton"
 ---
 
-- Demonstration:
-- Java API: [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
-- JavaScript API:
-  [zul.wgt.Combobutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Combobutton.html)
+- **Demonstration:**
+- **Java API:** [org.zkoss.zul.Combobutton](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html)
+- **JavaScript API:** [zul.wgt.Combobutton](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Combobutton.html)
 
 # Employment/Purpose
 
@@ -22,6 +21,12 @@ automatically.
 
 When the user clicks the drop down icon of Combobutton, the child
 popup/menupopup of the Combobutton will be displayed.
+
+## Common Use Cases
+
+- **Toolbar action menu** — place a `<combobutton>` with `mold="toolbar"` inside a `<toolbar>` to give a toolbar button a drop-down menu of related actions without taking extra horizontal space.
+- **Split button pattern** — use the left-click area for the primary action (via `onClick`) and the drop-down arrow to expose secondary actions in a `<menupopup>`, so the most common operation is always one click away.
+- **Contextual popup** — embed a `<popup>` child containing arbitrary content (search boxes, list boxes, color pickers) to create a rich in-place panel triggered from a single button.
 
 # Example
 
@@ -106,51 +111,57 @@ popup/menupopup of the Combobutton will be displayed.
 
 ## Autodrop
 
+**Default Value:** `false`
+
 [org.zkoss.zul.Combobutton#setAutodrop(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobutton.html#setAutodrop(boolean))
 is used to set whether the child popup should drop down automatically
 while mouseover the right drop down icon of Combobutton.
-
-The simplest use is to specify it with `self` as follows. Then, the
-button is disabled when it is clicked.
 
 ```xml
 <combobutton label="popup" autodrop="true" />
 ```
 
-Moreover, it support other [ properties inherited from Button]({{site.baseurl}}/zk_component_ref/button#Properties)
+## Open
+
+**Default Value:** `false`
+
+{% include supported-since.html version="6.0.0" %}
+
+Sets whether the child popup or menupopup is dropped down (`true`) or closed (`false`). The change only takes effect while the Combobutton is visible; calling `open="true"` on a hidden button has no effect.
+
+```xml
+<combobutton label="Actions" open="true">
+    <popup>
+        <menuitem label="Edit" />
+        <menuitem label="Delete" />
+    </popup>
+</combobutton>
+```
+
+Moreover, it support other [properties inherited from Button]({{site.baseurl}}/zk_component_ref/button#Properties)
 in stead of upload.
 
 # Supported Events
 
-| Name | Event Type                                                                                                                                                                       |
-|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `onClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Denotes when left button of Combobutton is clicked. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes when the child popup is opened or closed.     |
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onClick` | [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Denotes when left button of Combobutton is clicked. |
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes when the child popup is opened or closed. |
 
-- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
+- Inherited Supported Events: [Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
 
 # Supported Molds
 
-- The default mold
-- The tbbtn mold
+**default**
+
+The default appearance for a standalone combobutton.
+
+**toolbar**
 
 {% include supported-since.html version="6.5.0" %}
 
-The **tbbtn** mold is renamed to **toolbar** mold
+The toolbar mold renders the combobutton for use within a toolbar context. (The **tbbtn** mold name was renamed to **toolbar** in ZK 6.5.0.)
 
 # Supported Children
 
-[ Popup]({{site.baseurl}}/zk_component_ref/popup) [ Menupopup]({{site.baseurl}}/zk_component_ref/menupopup)
-
-# Use Cases
-
-| Version | Description               | Example Location                                              |
-|---------|---------------------------|---------------------------------------------------------------|
-| 6.0.0+  | Combobutton with Colorbox | [blog post](http://blog.zkoss.org/index.php/tag/combobutton/) |
-
-# Version History
-
-| Version | Date           | Content                                                                                                                                       |
-|---------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | September 2012 | The **tbbtn** mold is renamed to **toolbar** mold                                                                                             |
-| 10.3.0  | January 2026   | The `onOpen` event is triggered whenever the child popup is opened or closed, regardless of how the action is performed. This update is introduced to align with the behavior of `Menu`. |
+[Popup]({{site.baseurl}}/zk_component_ref/popup) [Menupopup]({{site.baseurl}}/zk_component_ref/menupopup)

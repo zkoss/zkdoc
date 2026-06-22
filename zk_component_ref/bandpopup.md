@@ -2,9 +2,9 @@
 title: "Bandpopup"
 ---
 
-- Demonstration: [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)
-- Java API: [org.zkoss.zul.Bandpopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandpopup.html)
-- JavaScript API: [zul.inp.Bandpopup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandpopup.html)
+- **Demonstration:** [Bandbox](https://www.zkoss.org/zkdemo/combobox/customizable_combobox)
+- **Java API:** [org.zkoss.zul.Bandpopup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Bandpopup.html)
+- **JavaScript API:** [zul.inp.Bandpopup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Bandpopup.html)
 
 # Employment/Purpose
 
@@ -13,6 +13,29 @@ The popup that belongs to a `Bandbox` instance.
 Developers usually listen to the `onOpen` event that is sent to
 `Bandbox` and then creates proper components as children of this
 component.
+
+## Common Use Cases
+
+- **Custom search popup**: Place a `<textbox>` and a `<listbox>` (or `<grid>`) inside `<bandpopup>` to let users filter and pick a value, then write the selection back to the parent `<bandbox>` and call `bandbox.close()`.
+- **Lazy-loaded content**: Listen to the `onOpen` event on the parent `<bandbox>` and populate `<bandpopup>`'s children programmatically only when the popup is first opened, avoiding unnecessary server work on page load.
+- **Multi-field lookup**: Embed a full form — labels, inputs, and a confirm button — inside `<bandpopup>` when a single text field is not sufficient to express a complex value (e.g. a date range or an address).
+
+```xml
+<bandbox id="bd" readonly="true">
+    <bandpopup>
+        <vbox>
+            <hbox>Search: <textbox id="kw"/></hbox>
+            <listbox onSelect="bd.value = self.selectedItem.label; bd.close();">
+                <listhead>
+                    <listheader label="Name"/>
+                </listhead>
+                <listitem label="Alice"/>
+                <listitem label="Bob"/>
+            </listbox>
+        </vbox>
+    </bandpopup>
+</bandbox>
+```
 
 # Example
 

@@ -2,8 +2,9 @@
 title: "Rating"
 ---
 
-- Java API: [org.zkoss.zul.Rating](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rating.html)
-- JavaScript API: [zul.wgt.Rating](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Rating.html)
+- **Demonstration:** [Rating](https://www.zkoss.org/zkdemo/input/rating)
+- **Java API:** [org.zkoss.zul.Rating](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Rating.html)
+- **JavaScript API:** [zul.wgt.Rating](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Rating.html)
 
 {% include supported-since.html version="8.6.0" %}
 
@@ -21,7 +22,15 @@ Rating component to allow users to express opinions on posts, enhancing
 engagement. Overall, it serves as a versatile tool for collecting user
 feedback across different domains.
 
-# Examples
+## Common Use Cases
+
+- **E-commerce product reviews:** Let shoppers rate purchased items on a scale of 1–5 stars, then surface the aggregate score alongside product listings.
+- **Course or content feedback:** Embed a rating widget at the end of a tutorial or article so learners can signal quality without filling out a full form.
+- **Media and entertainment:** Allow users to rate movies, tracks, or episodes; combine with `readonly="true"` to render an aggregate score that cannot be altered.
+- **Social engagement:** Give community members a quick way to upvote or score posts; set `cancelable="true"` (the default) so a mis-click can be corrected immediately.
+- **Survey and polling:** Use multiple `<rating>` components — one per criterion — inside a `<grid>` to build compact Likert-scale questionnaires.
+
+# Example
 
 ![](/zk_component_ref/images/rating.gif)
 
@@ -80,11 +89,6 @@ canceled and set to 0.
 Represents the maximum number of ratings. Also, icons will be rendered
 as the max size.
 
-## Disabled
-
-If disabled is true, it's not allowed to be rated. (Is allowed to have
-an initial rating.)
-
 ## Readonly
 
 If true, the rating is only readable, not changeable. (Is allowed to
@@ -92,9 +96,9 @@ have an initial rating.)
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes user has rated. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes user has rated. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
