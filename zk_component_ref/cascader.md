@@ -2,18 +2,24 @@
 title: "Cascader"
 ---
 
-- [Demonstration](https://www.zkoss.org/zkdemo/combobox/cascader)
-- Java API: [org.zkoss.zkmax.zul.Cascader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cascader.html)
-- JavaScript API:
-  [zkmax.inp.Cascader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Cascader.html)
+- **Demonstration:** [Cascader](https://www.zkoss.org/zkdemo/combobox/cascader)
+- **Java API:** [org.zkoss.zkmax.zul.Cascader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cascader.html)
+- **JavaScript API:** [zkmax.inp.Cascader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Cascader.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
 Cascader is used to select an item from a hierarchical structure of
 data. It accepts a TreeModel.
+
+## Common Use Cases
+
+- **Category / region drill-down** — Present a multi-level hierarchy such as Country → Province → City in a compact single input, letting users progressively narrow selection without displaying the full tree at once.
+- **Product attribute selection** — Allow users to pick a configuration path (e.g. Electronics → Phones → Android) and capture only the final leaf as the selected value.
+- **Administrative area pickers** — Embed inside forms that require a structured geographic or organisational path (division → department → team) where the valid options at each level depend on the parent selection.
+- **Menu-driven navigation** — Trigger a `<cascader>` from a toolbar to let users jump to a deeply nested section of a document or data set without exposing the full tree UI.
 
 # Example
 
@@ -41,11 +47,6 @@ text. (Default: joining by slashes, i.g. "A/B/C")
 
 # Properties
 
-## Disabled
-
-Sets whether it is disabled. A disabled component can't interact with
-users.
-
 ## ItemConverter
 
 Specify a full qualified class name that implements
@@ -56,6 +57,32 @@ By implementing your own one, you can generate a custom text that
 represents the selected item.
 
 {% include   CustomItemRendering.md component=cascader %}
+
+## ItemRenderer
+
+Specifies the renderer used to render each item in the cascader's dropdown panel when a `model` is set. Set to `null` to use the default renderer, which calls `toString()` on each tree node's data object.
+
+Changing the renderer causes the cascader to re-render its item list immediately.
+
+The value is a Java object implementing `org.zkoss.zul.ItemRenderer`. Supply it from a `<zscript>` block or a composer/ViewModel and reference it via EL:
+
+```xml
+<zscript><![CDATA[
+import org.zkoss.zul.ItemRenderer;
+ItemRenderer myRenderer = new ItemRenderer() {
+    public String render(Component owner, Object data, int index) {
+        return data.toString().toUpperCase();
+    }
+};
+]]></zscript>
+<cascader model="${treeModel}" itemRenderer="${myRenderer}"/>
+```
+
+Alternatively, supply a fully qualified class name as a string — the cascader will instantiate it automatically:
+
+```xml
+<cascader model="${treeModel}" itemRenderer="com.example.MyCascaderRenderer"/>
+```
 
 ## Model
 
@@ -80,11 +107,12 @@ selected.
 
 # Supported Events
 
-| Name | Event Type                                                                                                                               |
-|---|------------------------------------------------------------------------------------------------------------------------------------------|
-| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)                   |
-| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the selection changed at the client. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Represents an event that indicates an open state that is changed at the client. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Fires when the cascader's selection changes at the client. |
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Fires when the cascader is opened or closed at the client. |
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fires when the cascader gains input focus. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fires when the cascader loses input focus. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 

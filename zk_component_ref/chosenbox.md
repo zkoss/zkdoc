@@ -2,20 +2,25 @@
 title: "Chosenbox"
 ---
 
-{% include supported-since.html version="6.0.1" %}
+- **Demonstration:** [Chosenbox](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
+- **Java API:** [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
+- **JavaScript API:** [zkmax.inp.Chosenbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Chosenbox.html)
 
-- [Demonstration](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)
-- Java API: [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
-- JavaScript API:
-  [zkmax.inp.Chosenbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Chosenbox.html)
-
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
+
+{% include supported-since.html version="6.0.1" %}
 
 # Employment/Purpose
 
-A component similar to [ Combobox]({{site.baseurl}}/zk_component_ref/combobox) but handles
+A component similar to [Combobox]({{site.baseurl}}/zk_component_ref/combobox) but handles
 the multi-selection and the select order.
+
+## Common Use Cases
+
+- **Multi-select from a bounded list** — use Chosenbox with a `ListModelList` when all options should be pre-loaded and available for instant filtering.
+- **Lazy / autocomplete multi-select** — pair Chosenbox with a `ListSubModel` (via `ListModels.toListSubModel`) so the server returns only matching items as the user types, keeping page load fast for large data sets.
+- **Tag creation** — set `creatable="true"` and handle `onSearch` to let users add new values that do not yet exist in the model.
+- **Inline display** — set `inplace="true"` to show the current selection as a compact comma-separated label that expands into the full widget on click, useful inside tight layouts such as table cells.
 
 # Example
 
@@ -102,7 +107,7 @@ See also:
 
 {% include   CustomItemRendering.md component=chosenbox %}
 
-# Keyboard Navigation Chosenbox
+# Keyboard Navigation
 
 - Press `UP` and `DOWN` to move the focus up and down by one option.
 - Press `LEFT` and `RIGHT` to move focus between selected item(s) and
@@ -114,7 +119,7 @@ See also:
   previous item if any or input field.
 - Press `ENTER` or `specified separator` to select the focused option.
 
-# Attributes
+# Properties
 
 ## creatable
 {% include DefaultValue.md value=false %}
@@ -123,11 +128,6 @@ specify whether to send an event to a server when user inputs a non-existing val
 
 ## createMessage
 displayed a popup if nothing matches the input value and creatable is true; syntax "{0}" will be replaced with the input value at the client side
-
-## disabled
-{% include DefaultValue.md value=false %}
-
-specify whether or not it is disabled.
 
 ## emptyMessage
 displayed as placeholder in input if nothing is selected or focused
@@ -160,10 +160,51 @@ the input value at client-side
 
 specify whether or not to open the drop-down list. 
 
-## tabindex
-{% include DefaultValue.md value=0 %}
+## inplace
 
-specify the tab order of the input node of this component.
+**Default Value:** `false`
+
+{% include supported-since.html version="8.5.2" %}
+
+When `inplace="true"` the current selection is displayed as a comma-separated label instead of the normal tag-style chosenbox widget. Clicking the label switches the component back into the full chosenbox input, allowing the user to modify the selection.
+
+```xml
+<chosenbox width="400px" model="${model}" inplace="true"/>
+```
+
+## selectedIndex
+
+**Default Value:** `-1` (nothing selected)
+
+The zero-based index of the first selected item in the model. Returns `-1` when nothing is selected. Setting a value less than `-1` is treated as `-1`; setting a value equal to or greater than the model size selects the last item.
+
+When a `ListModel` is already attached, updating `selectedIndex` also updates the model's selection state.
+
+```xml
+<chosenbox width="400px" model="${model}" selectedIndex="0"/>
+```
+
+## selectedObjects
+
+**Default Value:** `null` (no model attached) or an empty `Set` (model attached, nothing selected)
+
+Returns the currently selected objects as a `LinkedHashSet` that preserves insertion order. Setting a collection of objects marks each matching model element as selected; if any object is not found in the model a `UiException` is thrown.
+
+Because the value is a Java object, assign it from a `<zscript>` block or a ViewModel:
+
+```xml
+<zscript><![CDATA[
+import org.zkoss.zul.ListModelList;
+import java.util.LinkedHashSet;
+import java.util.Locale;
+
+ListModelList model = new ListModelList(Locale.getAvailableLocales());
+LinkedHashSet preselect = new LinkedHashSet();
+preselect.add(Locale.ENGLISH);
+preselect.add(Locale.FRENCH);
+]]></zscript>
+<chosenbox width="400px" model="${model}" selectedObjects="${preselect}"/>
+```
 
 ## separator
 the separate characters will work as 'Enter' key when clicked on; it will not be considered as an input value. Upon releasing
@@ -171,17 +212,17 @@ the key, it will an send onSearch or onSelect event depending on the situation. 
 
 # Supported Events
 
-| Name | Event Type           |
-|---|-------------------------|
-| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the selection changed at the client. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Represents an event that indicates an open state that is changed at the client. |
-| `onSearch` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event that indicates users inputting an non-existing value by clicking ENTER or separator. |
-| `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Represents an event sent back to the server caused by user's input text. |
-| `onItemClick` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event sent back to the server caused by clicking a selected tag. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Fired when the selection is changed at the client. |
+| `onOpen` | [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Fired when the drop-down list is opened or closed. |
+| `onSearch` | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Fired when the user inputs a non-existing value by clicking ENTER or a separator character. |
+| `onSearching` | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Fired as the user types in the input field. |
+| `onItemClick` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the user clicks a selected tag. {% include supported-since.html version="8.0.2" %} |
+| `onFocus` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the component gains focus. |
+| `onBlur` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the component loses focus. |
 
-- `onItemClick` : {% include supported-since.html version="8.0.2" %} 
- 
-Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
+Also inherit Supported Events from [HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
 
 # Supported Molds
 
@@ -190,16 +231,3 @@ Also inherit Supported Events from [ HtmlBasedComponent]({{site.baseurl}}/zk_com
 # Supported Children
 
 `None`
-
-# Use Cases
-
-| Version | Description         | Example Location                                                                                                                                                                               |
-|---------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 6.0.1+  | Creatable Chosenbox | [Chosenbox – A beautiful and powerful multiple combobox](http://blog.zkoss.org/index.php/2012/02/09/zk-6-0-new-feature-highlight-part-4-chosenbox-a-beautiful-and-powerful-multiple-combobox/) |
-
-# Version History
-
-| Version | Date          | Content                         |
-|---------|---------------|---------------------------------|
-| 6.0.1   | April 3, 2012 | Add the new Chosenbox component |
-| 8.0.2   | May 24, 2016  | Add the new Event - onItemClick |

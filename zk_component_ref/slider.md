@@ -2,18 +2,22 @@
 title: "Slider"
 ---
 
-- Demonstration: [Slider](http://www.zkoss.org/zkdemo/input/slider)
-- Java API: [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)
-- JavaScript API: [zul.inp.Slider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Slider.html)
+- **Demonstration:** [Slider](https://www.zkoss.org/zkdemo/input/slider)
+- **Java API:** [org.zkoss.zul.Slider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html)
+- **JavaScript API:** [zul.inp.Slider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Slider.html)
+
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
-A slider component represents a slider with a scale and a knob. It can
-be used to let user select a value by sliding the knob along the scale.
-A slider accepts a range of value starting from 0 to certain maximum
-value. The default maximum value of slider scale is 100. You could
-change the maximum allowed value by the `maxpos` property. However the
-default minimum is 0 and cannot be changed.
+A slider component represents a slider with a scale and a knob. It can be used to let user select a value by sliding the knob along the scale. A slider accepts a range of values from a minimum to maximum position. The default range is 0 to 100, but both bounds are configurable via the `minpos` and `maxpos` properties.
+
+## Common Use Cases
+
+- **Volume or brightness control** — bind `curpos` to a ViewModel property and display the value in a label next to the slider.
+- **Price or age range filter** — set `minpos` and `maxpos` to the filter bounds; use `step` to restrict selection to whole numbers.
+- **Progress indicator (read-only)** — disable the slider and drive `curpos` from a background task to show completion percentage.
+- **Circular knob input** — switch to `mold="knob"` and tune `angleArc`, `strokeWidth`, and `scaleInput` for a dial-style control (e.g. audio equaliser, thermostat UI).
 
 # Example
 
@@ -89,81 +93,138 @@ below.
 
 # Knob Mold
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %} Set the mold
-property to "knob" will enable knob slider. So the slider can act as a
-normal knob. The knob can controlled by wheel, drag, click and enter a
-value to the input element.
+{% include supported-since.html version="8.6.0" %} Set the mold property to "knob" to enable the knob slider, which acts as a circular dial. The knob can be controlled by wheel, drag, click, or by entering a value directly into the input element.
 
 ![](/zk_component_ref/images/knob360.png)
 
 ```xml
-  <slider mold="knob" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5" strokeWidth="40"/>
-```
-
-## AngelArc, StrokeWidth and ScaleInput
-
-AngelArc, strokeWidth and scaleInput are properties only for knob mold.
-Set the angelArc property with a double for the angle of the knob
-slider. Set the strokeWidth property with a double for the stroke width
-of the knob. ScaleInput is the scale ratio of the input size.
-
-![](/zk_component_ref/images/knob270.png)
-
-```xml
-  <slider mold="knob" strokeWidth="40" angelArc="270" scaleInput="1.3" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5"/>
+<slider mold="knob" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5" strokeWidth="40"/>
 ```
 
 # Supported Events
 
-| Name        | Event Type                              |
-|-------------|--------------------------------------------|
-| onScroll    | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes the content of a scrollable component has been scrolled by the user. |
-| onScrolling | **Event:** [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) Denotes that the user is scrolling a scrollable component. Notice that the component's content (at the server) won't be changed until onScroll is received. Thus, you have to invoke the `getPos` method in the ScrollEvent class to retrieve the temporary position. |
+| Name | Event Type | Description |
+|------|------------|-------------|
+| onScroll | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Denotes that the user has finished scrolling the slider. The component's position has been updated on the server. |
+| onScrolling | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Denotes that the user is actively scrolling the slider. The component's content (at the server) is not updated until onScroll is received. Use `getPos()` in the ScrollEvent to retrieve the temporary position while dragging. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Molds
 
-Available molds of a component are defined in lang.xml embedded in
-zul.jar.
+Available molds of a component are defined in lang.xml embedded in zul.jar.
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Snapshot</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>default</td>
-      <td><img src="/zk_component_ref/images/slider_mold_default.png" alt="default mold" /></td>
-    </tr>
-    <tr>
-      <td>sphere</td>
-      <td><img src="/zk_component_ref/images/slider_mold_sphere.png" alt="sphere mold" /></td>
-    </tr>
-    <tr>
-      <td>scale </td>
-      <td>{% include supported-since.html version="7.0.0" %} the scale mold is deprecated because designs are changed <br/> <img src="/zk_component_ref/images/slider_mold_scale.png" alt="scale mold" />
-        </td>
-    </tr>
-    <tr>
-      <td>knob </td>
-      <td>{% include supported-since.html version="8.6.0" %} <img src="/zk_component_ref/images/knob270.png" alt="knob mold" /></td>
-    </tr>
-  </tbody>
-</table>
+**default**
+
+![](/zk_component_ref/images/slider_mold_default.png)
+
+**sphere**
+
+![](/zk_component_ref/images/slider_mold_sphere.png)
+
+**scale**
+
+{% include supported-since.html version="7.0.0" %} The scale mold is deprecated because designs have been changed.
+
+![](/zk_component_ref/images/slider_mold_scale.png)
+
+**knob**
+
+{% include supported-since.html version="8.6.0" %}
+
+![](/zk_component_ref/images/knob270.png)
 
 # Supported Children
 
 `*None`
 
-# Version History
+# Properties
 
-| Version | Date         | Content                                                                                     |
-|---------|--------------|---------------------------------------------------------------------------------------------|
-| 5.0.4   | August 2010  | [org.zkoss.zul.Slider#setPageIncrement(int)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Slider.html#setPageIncrement(int)) is supported.        |
-| 5.0.4   | August 2010  | Slider support for clicking to increment or decrement                                       |
-| 7.0.1   | January 2014 | [Slider support minimal position and decimal mode](http://tracker.zkoss.org/browse/ZK-2085) |
+## Orient
+
+**Default Value:** `"horizontal"`
+
+Sets the orientation of the slider. Accepted values:
+
+| Value | Meaning |
+|-------|---------|
+| `horizontal` | Slider runs left-to-right (default) |
+| `vertical` | Slider runs top-to-bottom |
+
+Note: the `scale` mold does not support `vertical` orientation — a `WrongValueException` is thrown if you combine them.
+
+{% include supported-since.html version="3.5.0" %}
+
+```xml
+<slider orient="vertical" curpos="30" maxpos="100"/>
+```
+
+## Slidingtext
+
+**Default Value:** `"{0}"`
+
+Sets the template text shown in the tooltip while the user is dragging the slider knob. The placeholder `{0}` is replaced with the current position value at the client side. If set to an empty string or `null`, it reverts to `"{0}"`.
+
+{% include supported-since.html version="3.0.1" %}
+
+```xml
+<slider slidingtext="Volume: {0}" curpos="50" maxpos="100"/>
+```
+
+## Step
+
+**Default Value:** `-1`
+
+Sets the discrete step size used when the user drags the slider. Any non-positive value is treated as `-1`, which means the slider moves freely to wherever the user drags. In `decimal` mode, when `step` is `-1`, the fractional part is limited to one digit.
+
+{% include supported-since.html version="7.0.1" %}
+
+```xml
+<slider step="5" minpos="0" maxpos="100" curpos="0"/>
+```
+
+## Name
+
+**Default Value:** `null`
+
+Sets the `name` attribute submitted with an HTML form. This is intended for legacy web applications that process user input through servlets and HTML-based form submission. It has no effect in pure ZK event-driven applications.
+
+```xml
+<slider name="volume" curpos="50" maxpos="100"/>
+```
+
+## AngleArc
+
+**Default Value:** `360.0`
+
+Sets the sweep angle (in degrees) of the arc drawn for the knob mold. Must be greater than `0` and no greater than `360`; values outside this range throw a `WrongValueException`. Use values less than `360` to create a partial-arc (e.g. horseshoe-shaped) knob. This property has no visual effect in non-knob molds.
+
+{% include supported-since.html version="8.6.0" %}
+
+```xml
+<slider mold="knob" angleArc="270" curpos="50" maxpos="100"/>
+```
+
+## StrokeWidth
+
+**Default Value:** `10.0`
+
+Sets the stroke (ring) width of the knob slider arc, in SVG user units. Must be greater than `0`; a non-positive value throws a `WrongValueException`. This property has no visual effect in non-knob molds.
+
+{% include supported-since.html version="8.6.0" %}
+
+```xml
+<slider mold="knob" strokeWidth="6.0" curpos="50" maxpos="100"/>
+```
+
+## ScaleInput
+
+**Default Value:** `1.0`
+
+Sets the scale ratio applied to the numeric input element displayed inside the knob mold. A value greater than `1.0` enlarges the input; a value between `0` and `1.0` shrinks it. Must be greater than `0`. This property has no visual effect in non-knob molds.
+
+{% include supported-since.html version="8.6.0" %}
+
+```xml
+<slider mold="knob" scaleInput="1.5" curpos="50" maxpos="100"/>
+```

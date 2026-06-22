@@ -2,20 +2,25 @@
 title: "Searchbox"
 ---
 
-- Demonstration:
-  [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
-- Java API: [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
-- JavaScript API:
-  [zkmax.inp.Searchbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Searchbox.html)
+- **Demonstration:** [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)
+- **Java API:** [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
+- **JavaScript API:** [zkmax.inp.Searchbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Searchbox.html)
 
-<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
 A dropdown list that allows users to search and select items. Since it
-contains a separate search field (unlike [ Combobox](/zk_component_ref/combobox)), it can
+contains a separate search field (unlike [Combobox](/zk_component_ref/combobox)), it can
 avoid end-users from inputting a non-existed item.
+
+## Common Use Cases
+
+- **Single-value selection with type-ahead** — Replace a plain `<combobox>` wherever users must pick from a fixed list and must not enter free text. Set `autoclose="true"` so the dropdown closes immediately after a pick.
+- **Multi-value tag-style selection** — Enable `multiple` on the backing `ListModelList` (`model.setMultiple(true)`) to let users build a set of selected values (e.g. tag filters, recipient lists).
+- **Server-side filtered large datasets** — Supply a `ListSubModel` to keep initial payload small; as the user types, the server returns only the matching subset, enabling scalable autocomplete over thousands of rows.
+- **Custom item appearance** — Provide an `itemRenderer` to render rich markup (icons, secondary labels, avatars) inside each dropdown row while still benefiting from the built-in keyboard navigation and selection model.
+- **Pre-filtering on page load** — Set `searchText` to pre-populate the search input so the dropdown opens with an already-filtered list, useful in search result pages that reconstruct UI state from URL parameters.
 
 # Example
 
@@ -56,11 +61,6 @@ Sets whether to automatically close the list if a user selects any item.
 It means even if the user selects an item, the list still remains open.
 You might want to set it as `true` in single selection mode
 (multiple=false).
-
-## Disabled
-
-Sets whether it is disabled. A list can still be opened programmatically
-by calling `open()` even if the component is in the disabled state.
 
 ## ItemConverter
 
@@ -130,6 +130,16 @@ selected.
 Sets the placeholder message of the search text field. The default is
 "Type to search".
 
+## SearchText
+
+{% include supported-since.html version="10.2.0" %}
+
+Sets the current value of the search input field. Use this to pre-populate the search text or to reset/clear it programmatically.
+
+```xml
+<searchbox model="${model}" searchText="Eur"/>
+```
+
 ## SelectedItem
 
 Returns the selected item, or null if no item is selected. When multiple
@@ -147,22 +157,16 @@ Returns all selected items.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by the user that the list selection is changed at the client. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. |
-| `onSearching` | **Event:** [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) Notifies one that the user is searching by keywords. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Represents an event caused by the user that the list selection is changed at the client. |
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. |
+| `onSearching` | [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Notifies one that the user is searching by keywords. |
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the searchbox gains focus. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the searchbox loses focus. |
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
 `* none`
-
-# Version History
-
-| Version | Date           | Content                                                                                                               |
-|---------|----------------|-----------------------------------------------------------------------------------------------------------------------|
-| 9.0.0   | September 2019 | [ZK-4380](https://tracker.zkoss.org/browse/ZK-4380): Provide a Searchbox component                                    |
-| 9.5.0   | August 2020    | [ZK-4497](https://tracker.zkoss.org/browse/ZK-4497): searchbox: improve clearing selection, key shortcut / clear icon |

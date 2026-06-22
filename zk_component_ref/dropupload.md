@@ -2,13 +2,12 @@
 title: "Dropupload"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html)
-- JavaScript API:
-  [zkmax.wgt.Dropupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Dropupload.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html)
+- **JavaScript API:** [zkmax.wgt.Dropupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Dropupload.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 
@@ -18,6 +17,14 @@ users can simply drag and drop the file(s) they want to upload into
 behaviour and operation of this `Dropupload` component is similar to
 ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/button#File_Upload)
 but with better user experience and performance.
+
+## Common Use Cases
+
+- **Image upload with preview** — use `detection="browser"` so the drop zone only appears when the user drags a file into the browser, then handle `onUpload` to display the received `Media` as an `<image>` component.
+- **Bulk document upload** — set `maxFileCount` to a reasonable limit and listen to `onMaxFileCountExceed` to inform the user when they exceed it.
+- **Strict file-type enforcement** — combine `accept="image/*, application/pdf"` with a server-side MIME check in the `onUpload` handler.
+- **Anchored drop zone** — use `anchor` to overlay an existing panel (e.g. a `<tabpanels>`) so the entire panel becomes a drop target, mimicking the Gmail attachment-drop pattern.
+- **Raw binary processing** — set `native="true"` to receive the file as an untyped `Media` object and process the bytes yourself rather than relying on ZK's automatic image/audio/text conversion.
 
 # Example
 
@@ -52,58 +59,23 @@ Another example, it will detect the drag action:
 **Image uploaded and displayed**
 ![](/zk_component_ref/images/uploaded-image.png)
 
-# Maxsize
+# Properties
 
-The `maxsize` attribute is used for limiting the file size of a single
-file in which users are allowed to upload. Users are allowed to drag in
-two or more files at once but each of them has to be smaller than the
-size set by `Maxsize`. If one of the files is larger than the size set
-by `Maxsize`, an error message will occur and nothing will be uploaded.
+## Accept
 
-For example, in the case of the previous sample code, you can upload
-multiple files, say, four files that are smaller than 5120KB at once but
-if one of them exceeds 5120KB, then an exception will occur and none of
-the four files will be uploaded to the server.
+{% include supported-since.html version="10.0.0" %}
 
-The unit of `MaxsizeM` attribute is in KB. If it is not assigned a
-value, it will use the value of **Configuration.getMaxUploadSize()**
-automatically while a negative value would mean that the file size is
-set as unlimited.
+Specifies the [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) the server accepts. Multiple types can be separated by commas. If one of the dropped files does not match the acceptable types, nothing is uploaded.
 
-# Detection
+```xml
+<dropupload accept="audio/*, .png"/>
+```
 
-This attribute will define what users see when they drag and drop files
-into the application i.e. how the `Dropupload` component and its content
-will appear according to their action.
+## Anchor
 
-There are four valid values of `detection` :
+{% include supported-since.html version="7.0.2" %}
 
-- `none` : Ignore users' drag action, always show `Dropupload` and its
-  content.
-- `browser` (default setting) : `Dropupload` is not visible in the
-  application initially but shows up along with the content when users
-  drag files into the browser.
-- `self` : `Dropupload` is visible in the application initially but the
-  content only appears when users drag files into the component.
-- id of another component : Behaviour of this value is almost identical
-  to `self`, except that the trigger area is inside the component of the
-  appointed id.
-
-The `content` value can be any HTML string and remember to surround the
-content value by `CDATA` block .
-
-**Note** : A `Dropupload` with `detection="browser"` cannot be used with
-another `Dropupload` component that has a different `detection` value;
-users won't be able to drag a file into the component successfully.
-
-# Anchor
-
-{% include supported-since.html version="7.0.2" %} This attribute allows the dropupload
-component to anchor to another component and overlay that component when
-the user drag & drops files to the browser. Much like how Gmail works
-when dropping attachments to emails.
-
-## Example
+Attaches the `Dropupload` component to another component so that it overlays that component when the user drags and drops files into the browser — similar to the Gmail attachment-drop behaviour. Set the value to a ZUL EL expression that resolves to the target component.
 
 ![](/zk_component_ref/images/Dropupload_Anchor.png)
 ![](/zk_component_ref/images/Dropupload_Anchor_1.png)
@@ -125,45 +97,102 @@ when dropping attachments to emails.
 </zk>
 ```
 
-# Accept
+## Content
 
-{% include supported-since.html version="10.0.0" %} This attribute specifies [the MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)
-that the server accepts. Similar to [the maxsize attribute](#Maxsize), if one of the files does not match the
-acceptable file types, nothing will be uploaded. For example, the
-following example only accepts audio and .png files:
+Sets the HTML content displayed inside the `Dropupload` area. The value can be any HTML string; wrap it in a `CDATA` block to avoid XML escaping issues.
 
 ```xml
-    <dropupload accept="audio/*, .png"/>
+<dropupload detection="none">
+    <attribute name="content"><![CDATA[
+        <b>Drop Here</b><br/>size &lt; 5 MB
+    ]]></attribute>
+</dropupload>
 ```
 
-# MaxFileCount
+## Detection
 
-Default: `-1`
+**Default Value:** `browser`
 
-Set the maximum number of files a user can upload at once, -1 means no
-limit. When the number of upload files exceeds the max file count,
-nothing will be uploaded and `onMaxFileCountExceed` event will be fired,
-developers can listen to that event and get the number of uploaded files
-by calling `event.getData()`.
+Controls when the `Dropupload` component and its content are visible relative to the user's drag action.
 
-For example (MVVM pattern):
+| Value | Meaning |
+|---|---|
+| `none` | Always visible — ignores the user's drag action. |
+| `browser` (default) | Hidden initially; appears when the user drags files into the browser window. |
+| `self` | Visible initially; content appears when the user drags files over the component itself. |
+| `<componentId>` | Like `self`, but the trigger area is the component with the given id. |
+
+**Note:** A `Dropupload` with `detection="browser"` cannot coexist on the same page with another `Dropupload` that uses a different `detection` value.
 
 ```xml
-  <dropupload onMaxFileCountExceed="@command('maxFileCountExceed', filesCount=event.data)" />
+<dropupload detection="none" content="Drop files here" onUpload="doUpload(event)"/>
 ```
 
-```java
-  @Command
-  public void maxFileCountExceed(@BindingParam("filesCount") Integer filesCount) {
-    Messagebox.show(filesCount + " files exceed the number of upload files limitation.");
-  }
+## MaxFileCount
+
+**Default Value:** `-1`
+
+{% include supported-since.html version="8.5.2" %}
+
+Sets the maximum number of files a user can upload in a single drop. `-1` means no limit. When the number of dropped files exceeds this limit, nothing is uploaded and the `onMaxFileCountExceed` event fires; call `event.getData()` to retrieve the attempted file count.
+
+```xml
+<dropupload maxFileCount="3" onMaxFileCountExceed="@command('tooManyFiles', count=event.data)"/>
 ```
 
-# Do not Convert File
+## Maxsize
 
-By default, ZK will convert upload file to image, audio and text file if
-possible. Developer can use `native="true"` to demand ZK don't convert
-file.
+Limits the size of each individual uploaded file, in kilobytes. If any single file exceeds this limit, the entire upload is cancelled. A negative value (e.g. `-1`) means unlimited; when not set, the value from `Configuration.getMaxUploadSize()` is used.
+
+```xml
+<dropupload maxsize="5120" detection="none" onUpload="doUpload(event)"/>
+```
+
+## Native
+
+When `true`, ZK does not attempt to convert the uploaded binary into a typed `Media` object (image, audio, text). Use this when you need to handle the raw bytes yourself.
+
+```xml
+<dropupload native="true" onUpload="handleRaw(event)"/>
+```
+
+## SuppressedErrors
+
+{% include supported-since.html version="9.5.1" %}
+
+**Default Value:** `null`
+
+Specifies upload error types that should be silently suppressed (no error message shown to the user). Provide one or more pipe-separated (`|`) error-code strings drawn from `org.zkoss.zk.ui.ext.Uploadable.Error`:
+
+| Value | Meaning |
+|---|---|
+| `missing-required-component` | Missing required component or data. |
+| `illegal-upload` | Illegal upload method. |
+| `server-out-of-service` | Server temporarily out of service. |
+| `size-limit-exceeded` | Upload file size exceeds the configured max-size. |
+| `server-exception` | Other server exceptions handled by `handleError(ex)`. |
+
+```xml
+<dropupload suppressedErrors="size-limit-exceeded|server-out-of-service"
+            detection="none" onUpload="doUpload(event)"/>
+```
+
+## ViewerClass
+
+Sets the fully-qualified JavaScript class name of a custom file-viewer that handles upload progress display. When not specified, ZK's built-in pop-up progress bar is used. See the [Customized File Viewer](#Customized_File_Viewer) section for the required interface (`$init`, `update`, `destroy`).
+
+```xml
+<dropupload viewerClass="foo.MyFileViewer" content="custom viewer" detection="none"/>
+```
+
+# Supported Events
+
+| Name | Event Type | Description |
+|---|---|---|
+| `onUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | This event fires once a user has uploaded a file. |
+| `onMaxFileCountExceed` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | This event fires when the number of upload files exceeds the `maxFileCount`. |
+
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Customized File Viewer
 
@@ -234,7 +263,7 @@ After customizing your JavaScript class which in this case is
 attribute as demonstrated below:
 
 ```xml
-<dropupload viewClass="foo.MyFileViewer" content="custom viewer" detection="none" />
+<dropupload viewerClass="foo.MyFileViewer" content="custom viewer" detection="none" />
 ```
 
 ### Uploader
@@ -276,11 +305,6 @@ $init: function (uplder, file) {
   the uploading process whereas now it will pass the value of the
   already uploaded size of data in Bytes.
 
-# Customize Upload Size Exceeding Message
-
-Please refer to
-[{{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message]({{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message)
-
 # Event For Completed Uploads
 
 After the upload is finished, the uploaded files can be retrieved from
@@ -301,6 +325,10 @@ public void showFileName(org.zkoss.zk.ui.event.UploadEvent event){
 <dropupload detection="none" onUpload="showFileName(event)" />
 ```
 
+# Customize Upload Size Exceeding Message
+
+Please refer to [Customize Upload Size Exceeding Message]({{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message).
+
 # Browser Support
 
 As `Dropupload` leverages HTML5 technology, some browsers don't support
@@ -311,23 +339,10 @@ Microsoft Edge.
 Moreover, the `detection` setting cannot be displayed on some older
 machines.
 
-# Supported Events
-
-| Name | Event Type                               |
-|---|-------------------------------------------|
-| `onUpload` | **Event:**[org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) This event will be triggered once a user has uploaded a file.          |
-| `onMaxFileCountExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) This event will be triggered when number of upload files exceed the maxFileCount. |
-
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+# Supported Molds
 
 # Supported Children
 
 `*NONE`
 
-# Version History
-
-| Version | Date            | Content                                                                        |
-|---------|-----------------|--------------------------------------------------------------------------------|
-| 6.5.0   | June, 2012      | [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html) was introduced.              |
-| 7.0.2   | March, 2014     | [ZK-2207](http://tracker.zkoss.org/browse/ZK-2207): Dropupload supports anchor |
-| 10.0.0  | September, 2023 | [ZK-4969](http://tracker.zkoss.org/browse/ZK-4969): Dropupload supports accept |
+# Inherited Functions
