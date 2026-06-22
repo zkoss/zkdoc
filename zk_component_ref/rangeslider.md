@@ -2,14 +2,12 @@
 title: "Rangeslider"
 ---
 
-- Demonstration:
-- Java API:
-  [Rangeslider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Rangeslider.html)
-- JavaScript API:
-  [Rangeslider](http://www.zkoss.org/javadoc/latest/jsdoc/zkex/slider/Rangeslider.html)
+- **Demonstration:** [Rangeslider](https://www.zkoss.org/zkdemo/input/slider)
+- **Java API:** [org.zkoss.zkex.zul.Rangeslider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Rangeslider.html)
+- **JavaScript API:** [zkex.slider.Rangeslider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.slider.Rangeslider.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+{% include edition-availability.html edition="ee" %}
+{% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
@@ -19,6 +17,35 @@ certain maximum value. The default maximum value of rangeslider is 100.
 You can change the maximum allowed value by setting the max property.
 Notice that the value of max property is always larger than the value of
 min property.
+
+## Common Use Cases
+
+### Price or Date Range Filter
+
+Use a rangeslider when users need to set both a lower and upper bound simultaneously — for example, filtering a product listing by price band or narrowing search results to a date range. The component's dual-thumb design makes the intent clear without requiring two separate inputs.
+
+```xml
+<rangeslider min="0" max="500" startValue="50" endValue="300"
+             onRangeValueChange="updateFilter(event.startValue, event.endValue)"/>
+```
+
+### Configuring a Numeric Window or Tolerance
+
+When the domain requires a symmetric or asymmetric tolerance window (e.g. audio equaliser bands, temperature thresholds, data-quality score ranges), a rangeslider lets the user drag both ends of the window in one control.
+
+```xml
+<rangeslider min="-20" max="20" startValue="-5" endValue="5" step="1"
+             markScale="5" tooltipVisible="true"/>
+```
+
+### Vertical Layout for Timelines or Axes
+
+Set `orient="vertical"` to embed the rangeslider alongside a chart axis or timeline, letting users zoom in to a sub-range while the axis orientation stays consistent with the chart.
+
+```xml
+<rangeslider orient="vertical" min="0" max="24" startValue="8" endValue="18"
+             markScale="4"/>
+```
 
 # Example
 
@@ -31,13 +58,6 @@ min property.
 ```
 
 # Properties
-
-## Disabled
-
-{% include DefaultValue.md value=false %}
-
-If the rangeslider is disabled, then users can not drag the slider
-buttons.
 
 ## Orient
 
@@ -81,11 +101,25 @@ property.
 Rangeslider supports minimal position, which can be changed by the min
 property.
 
-## StartValue, EndValue
+## StartValue
 
-{% include DefaultValue.md value=0 %}
+**Default Value:** `0`
 
-Represent the range value of Rangeslider.
+Represents the starting value of the rangeslider range.
+
+```xml
+<rangeslider startValue="10" endValue="90"/>
+```
+
+## EndValue
+
+**Default Value:** `0`
+
+Represents the ending value of the rangeslider range.
+
+```xml
+<rangeslider startValue="10" endValue="90"/>
+```
 
 ## Step
 
@@ -105,9 +139,9 @@ always be visible.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| onRangeValueChange | **Event:** [org.zkoss.zkex.zul.event.RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html) Denotes the range value of a component has been changed by the user. |
+| Name | Event Type | Description |
+|---|---|---|
+| onRangeValueChange | [RangeValueChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/event/RangeValueChangeEvent.html) | Denotes the range value of a component has been changed by the user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

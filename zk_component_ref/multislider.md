@@ -2,11 +2,11 @@
 title: "Multislider"
 ---
 
-- Demonstration:
-- Java API:
-  [Multislider](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Multislider.html)
-- JavaScript API:
-  [Multislider](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/slider/Multislider.html)
+- **Demonstration:**
+- **Java API:**
+  [Multislider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Multislider.html)
+- **JavaScript API:**
+  [Multislider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.slider.Multislider.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
@@ -20,6 +20,12 @@ from 0 to a maximum value you defined. The default maximum value is 100.
 You can change the maximum value by setting the max property. Notice
 that the value of max property is always larger than the value of min
 property.
+
+## Common Use Cases
+
+- **Multi-range selection:** When users need to select several non-overlapping or overlapping ranges on a single axis — for example, defining multiple time windows, price bands, or age brackets — Multislider lets each pair of `<sliderbuttons>` represent one independent range.
+- **Visual range comparison:** Displaying several ranges side-by-side on the same scale makes it easy for users to compare or adjust intervals (e.g., comparing work shift durations or budget allocation spans).
+- **Bounded numeric input:** Any scenario that requires more than two boundary values on a continuous scale, such as configuring multi-tier thresholds for alerts or quotas, benefits from Multislider over a plain slider or rangeslider.
 
 # Example
 
@@ -39,39 +45,6 @@ property.
 
 # Properties
 
-## Disabled
-
-{% include DefaultValue.md value=false %}
-
-If the multislider is disabled, users can not drag the slider buttons.
-
-## Orient
-
-{% include DefaultValue.md value=horizontal %}
-
-Sets the orientation to either "horizontal" or "vertical" to display the
-multislider.
-
-## Marks
-
-{% include DefaultValue.md value=null %}
-
-Sets the marks information for displaying value marks.
-
-It supports Map\<Integer, String\>. The key is represented as the value
-of multislider, and the value is represented as the displayed mark
-label. It means that each value mark could be displayed in different
-text.
-
-## MarkScale
-
-{% include DefaultValue.md value=20 %}
-
-Sets the marks information for displaying value marks.
-
-By default, the value marks are displayed every 20 starting from the
-minimum value. (if min is 0, then it displays "0 20 40 60 ...")
-
 ## Max
 
 {% include DefaultValue.md value=100 %}
@@ -85,22 +58,6 @@ property.
 
 Defines the minimal value of the multislider. It can be changed by the
 min property.
-
-## Step
-
-{% include DefaultValue.md value=1 %}
-
-By default, the multislider will scroll to the position continuously
-when a user drags it. If you prefer to scroll a discrete fixed amount at
-each step, you can set the Step property.
-
-## TooltipVisible
-
-{% include DefaultValue.md value=false %}
-
-The tooltip displays the value of slider buttons in the multislider. If
-tooltipvisible is true, the tooltips of the slider buttons will always
-be displayed.
 
 # Supported Events
 
