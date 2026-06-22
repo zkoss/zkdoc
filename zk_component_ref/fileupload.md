@@ -2,10 +2,9 @@
 title: "Fileupload"
 ---
 
-- Demonstration: [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
-- Java API: [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
-- JavaScript API:
-  [zul.wgt.Fileupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Fileupload.html)
+- **Demonstration:** [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)
+- **Java API:** [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
+- **JavaScript API:** [zul.wgt.Fileupload](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Fileupload.html)
 
 # Employment/Purpose
 
@@ -13,6 +12,43 @@ There are two ways to use [org.zkoss.zul.Fileupload](https://www.zkoss.org/javad
 a component to upload files, or invoke
 [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()) to open a
 dialog to upload files.
+
+## Common Use Cases
+
+### Embedded upload button
+
+Place `<fileupload>` directly on a page as a styled button. The `onUpload` event fires when the user selects a file:
+
+```xml
+<image id="preview" />
+<fileupload label="Upload Image"
+            onUpload="preview.setContent(event.getMedia())" />
+```
+
+### Pop-up dialog (static method)
+
+Call `Fileupload.get(...)` from any event listener to open the built-in upload dialog. Because the event thread is disabled by default, listen for the `onUpload` event on a root component (or supply an `EventListener` callback) to receive the uploaded media:
+
+```xml
+<div onUpload="handleUpload(event.getMedias())">
+    <button label="Upload Files" onClick="Fileupload.get(-1)" />
+</div>
+```
+
+### Custom dialog template
+
+Replace the default upload dialog with a custom ZUL template (see [Template](#template)) to match your application's look and feel. Register the template once at application startup; all subsequent `Fileupload.get(...)` calls will use it.
+
+# Example
+
+Here is an example that uses [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
+as a component:
+
+```xml
+<image id="img" />
+Upload your hot shot:
+<fileupload label="Upload" onUpload="img.setContent(event.media)" />
+```
 
 # Use as a Component
 
@@ -235,15 +271,28 @@ temporary files created during uploading. Please refer to [Resource cleanup](htt
 You can verify this cleanup by enforcing garbage collecting with
 JVisualVM.
 
-# Example
+# Properties
 
-Here is an example that uses [org.zkoss.zul.Fileupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html)
-as a component:
+## Template
+
+**Default Value:** `~./zul/html/fileuploaddlg.zul`
+
+Sets the ZUL template used to create the upload modal dialog opened by `Fileupload.get(...)`. The URI must not be empty. The template must follow the structure of the default template — you may adjust labels and layout but must keep the same component IDs. This is a class-level (static) setting; it affects all subsequent `Fileupload.get(...)` dialogs in the application and has no effect when `<fileupload>` is used as an embedded component.
+
+Because `setTemplate` is a static method, the value cannot be passed as a ZUL attribute. Call it once at application startup (e.g., in a `WebAppInit`):
 
 ```xml
-<image id="img" />
-Upload your hot shot:
-<fileupload label="Upload" onUpload="img.setContent(event.media)" />
+<!-- fileuploaddlg.zul — customised template (keep component IDs intact) -->
+<window id="fileuploaddlg" border="normal" width="500px">
+    <!-- your custom layout here -->
+</window>
+```
+
+Then register the template path in Java at startup:
+
+```java
+// in WebAppInit.init(WebApp)
+Fileupload.setTemplate("~./WEB-INF/zul/myupload.zul");
 ```
 
 # Supported Events
@@ -253,11 +302,5 @@ Upload your hot shot:
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date     | Content                                                                                                                                                   |
-|---------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.2   | May 2010 | Able to specify a target for the onUpload event sent by [org.zkoss.zul.Fileupload#get()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Fileupload.html#get()). Used if the event thread is disabled. |
 
 [^1]: Prior to 5.0, it is default to enabled. Refer to [ ZK Configuration Reference: disable-event-thread]({{site.baseurl}}/zk_config_ref/the_system_config_element#The_disable-event-thread_Element).
