@@ -142,6 +142,16 @@ event, you also need to specify `target`:
 
 # Properties
 
+## Dir
+
+**Default Value:** `normal`
+
+Controls the direction in which the button lays out its image relative to its label. Accepted values are `normal` and `reverse`; any other value throws a `WrongValueException`.
+
+```xml
+<button label="Save" image="/img/save.png" dir="reverse"/>
+```
+
 ## Autodisable
 
 [org.zkoss.zul.Button#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setAutodisable(java.lang.String))
@@ -202,6 +212,16 @@ specifying the following in the custom language addon:
         </property>
     </component>
 </language-addon>
+```
+
+## Orient
+
+**Default Value:** `horizontal`
+
+Controls the orientation used to lay out the button's image and label. Accepted values are `horizontal` and `vertical`; any other value throws a `WrongValueException`.
+
+```xml
+<button label="Upload" image="/img/up.png" orient="vertical"/>
 ```
 
 ## Href
@@ -272,9 +292,21 @@ satisfied.
 On the other hand, the `href` property is processed at the client side.
 Your application won't be notified when users click the button.
 
+## Target
+
+**Default Value:** `null`
+
+Specifies the name of the frame or window that the `href` should open in. It is only meaningful when `href` is specified.
+
+```xml
+<button label="Open Docs" href="https://www.zkoss.org" target="_blank"/>
+```
+
 ## Type
 
 {% include supported-since.html version="5.0.4" %}
+
+**Acceptable values:** `button` (default), `submit`, or `reset`; any other value throws a `WrongValueException`. The type is meaningful only inside an HTML `<form>`.
 
 [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String))
 sets the button's type. It is designed to work with the HTML `<form>`and Servlets. For example,
@@ -344,17 +376,13 @@ MZul.2105=The request was rejected because its size ({0}) exceeds the configured
 Notice that you can change the index `{0}` and `{1}` to display different file
 size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 
-# Inherited Functions
-
-Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement) for inherited functions.
-
 # Supported Events
 
-| Name | Event Type               |
-|---|--------------------------|
-| `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus.  |
-| `onBlur` | **Event:**  [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. |
-| `onUpload` | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has uploaded a file to the component. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component gets the focus. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component loses the focus. |
+| `onUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | Denotes user has uploaded a file to the component. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
@@ -373,10 +401,6 @@ zul.jar.
 
 `*NONE`
 
-# Version History
+# Inherited Functions
 
-| Version | Date | Content |
-|---|---|---|
-| 5.0.4 | August 2010 | [org.zkoss.zul.Button#setType(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setType(java.lang.String)) was introduced to allow a button able to submit or reset a form. |
-| 6.0.0 | December 2011 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String)) the **multiple** setting was introduced to allow to choose multiple files to upload at the same time. (HTML5 supported browsers only) |
-| 7.0.0 | September 2013 | [org.zkoss.zul.Button#setUpload(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html#setUpload(java.lang.String)) the **accept** setting was introduced to allow to specify the types of files that the server accepts. (HTML5 supported browsers only) |
+Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement) for inherited functions.

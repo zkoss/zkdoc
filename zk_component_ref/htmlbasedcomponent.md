@@ -2,255 +2,230 @@
 title: "HtmlBasedComponent"
 ---
 
-- Java API: [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
-- JavaScript API: [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)
+- **Java API:** [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)
+- **JavaScript API:** [zk.Widget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html)
 
-## Employment/Purpose
+# Employment/Purpose
 
 The HtmlBasedComponent serves as a basic implementation for HTML-based components. It simplifies the process of implementing methods and functionalities that are common to HTML-based components. This component provides a foundation for building custom components in ZK that are based on HTML elements.
 
-## Properties
+# Properties
 
-### `Zclass`
-- **Description:** The ZK Cascading Style class for this component. It usually depends on the implementation of the mold.
-- **Default Value:** `null`
-- **Example (Java):** 
+These properties are inherited by virtually every ZK component (anything that extends `HtmlBasedComponent`). The examples below use `<div>` as a representative concrete component.
 
-  ```java
-  component.setZclass("custom-class");
-  ```
-- **Example (ZUL):**
+## Action
 
-  ```xml
-  <component zclass="custom-class" />
-  ```
+> **Deprecated since 10.0.0** — use [`clientAction`](#clientaction) instead. `action` is retained only for backward compatibility and simply delegates to `clientAction`.
 
-### `Sclass`
-- **Description:** The CSS class(es) for the component. Used for small adjustments like changing the font size.
-- **Default Value:** `null`
-- **Example (Java):** 
+Specifies the client-side action (CSA). See [ClientAction](#clientaction) for the format and the full list of acceptable values.
 
-  ```java
-  component.setSclass("custom-style");
-  ```
-- **Example (ZUL):**
+{% include supported-since.html version="5.0.6" %}
 
-  ```xml
-  <component sclass="custom-style" />
-  ```
+## ClientAction
 
-### `Tooltiptext`
-- **Description:** The text to display as a tooltip for the component.
-- **Default Value:** `null`
-- **Example (Java):** 
+Specifies the client-side action (CSA): a visual effect that runs on the client when the component becomes visible or invisible, without a server round trip.
 
-  ```java
-  component.setTooltiptext("This is a tooltip");
-  ```
-- **Example (ZUL):**
+{% include supported-since.html version="10.0.0" %}
 
-  ```xml
-  <component tooltiptext="This is a tooltip" />
-  ```
+**Default Value:** `null` (no CSA)
 
-### `Style`
-- **Description:** The CSS style for the component.
-- **Default Value:** `null`
-- **Example (Java):** 
+**Format:** a semicolon-separated list of `condition: effect` pairs.
 
-  ```java
-  component.setStyle("color: blue; font-size: 14px;");
-  ```
-- **Example (ZUL):**
+The condition accepts exactly two values:
 
-  ```xml
-  <component style="color: blue; font-size: 14px;" />
-  ```
+| Condition | When the effect runs |
+|---|---|
+| `show` | the component is becoming visible |
+| `hide` | the component is becoming invisible |
 
-### `Draggable`
-- **Description:** Denotes whether the component is draggable or specifies an identifier for the type of draggable object.
-- **Default Value:** `"false"`
-- **Example (Java):** 
+The *effect* is the name of a method defined in [`zk.eff.Actions`](https://www.zkoss.org/javadoc/latest/jsdoc/variables/zk.eff.Actions.html) (for example `slideDown` or `slideUp`), and may take options, e.g. `slideDown({duration:1000})`.
 
-  ```java
-  component.setDraggable("true");
-  ```
-- **Example (ZUL):**
+```xml
+<div clientAction="show: slideDown; hide: slideUp"/>
+```
 
-  ```xml
-  <component draggable="true" />
-  ```
+> **Security:** the value is not encoded and may contain JavaScript. If you let users supply it, encode it yourself.
 
-### `Droppable`
-- **Description:** Denotes whether the component is droppable or specifies identifiers of draggable types of objects that can be dropped onto this component.
-- **Default Value:** `"false"`
-- **Example (Java):** 
+## Draggable
 
-  ```java
-  component.setDroppable("true");
-  ```
-- **Example (ZUL):**
+**Default Value:** `false`
 
-  ```xml
-  <component droppable="true" />
-  ```
+Denotes whether the component is draggable, or names the type of draggable object.
 
-### `Width`
-- **Description:** The width of the component. If null, the best fit is used.
-- **Default Value:** `null`
-- **Example (Java):** 
+| Value | Meaning |
+|---|---|
+| `false`, `""`, or unset | not draggable |
+| `true` | draggable with an anonymous type |
+| any other non-empty string | draggable, using that string as the draggable-type identifier |
 
-  ```java
-  component.setWidth("200px");
-  ```
-- **Example (ZUL):**
+```xml
+<div draggable="true"/>
+```
 
-  ```xml
-  <component width="200px" />
-  ```
+## Droppable
 
-### `Height`
-- **Description:** The height of the component. If null, the best fit is used.
-- **Default Value:** `null`
-- **Example (Java):** 
+**Default Value:** `false`
 
-  ```java
-  component.setHeight("100px");
-  ```
-- **Example (ZUL):**
+Denotes whether the component accepts dropped objects, or which draggable types it accepts.
 
-  ```xml
-  <component height="100px" />
-  ```
+| Value | Meaning |
+|---|---|
+| `false`, `""`, or unset | not droppable |
+| `true` | accepts any draggable type |
+| a comma-separated list of identifiers (e.g. `dg1, dg2`) | accepts only those draggable types |
 
-### `Left`
-- **Description:** The left position of the component.
-- **Default Value:** `null`
-- **Example (Java):** 
+```xml
+<div droppable="dg1, dg2"/>
+```
 
-  ```java
-  component.setLeft("10px");
-  ```
-- **Example (ZUL):**
+## Height
 
-  ```xml
-  <component left="10px" />
-  ```
+The height of the component. If null, the best fit is used.
 
-### `Top`
-- **Description:** The top position of the component.
-- **Default Value:** `null`
-- **Example (Java):** 
+```xml
+<div height="100px"/>
+```
 
-  ```java
-  component.setTop("10px");
-  ```
-- **Example (ZUL):**
+## Hflex
 
-  ```xml
-  <component top="10px" />
-  ```
+Horizontal flex hint: how the component's container distributes remaining horizontal space among its flexible children, by ratio.
 
-### `ZIndex`
-- **Description:** The Z index of the component.
-- **Default Value:** `-1`
-- **Example (Java):** 
+| Value | Meaning |
+|---|---|
+| a positive integer (e.g. `1`, `2`) | flex ratio — larger values receive more space, relative to sibling flex values |
+| `true` | same as `1` |
+| `false`, `0`, or a negative value | no flex (same as leaving it unset) |
+| `min` | give only the minimum space needed to enclose the children |
 
-  ```java
-  component.setZIndex(100);
-  ```
-- **Example (ZUL):**
+> You cannot set `hflex` and `width` on the same component unless `hflex="min"`.
 
-  ```xml
-  <component zIndex="100" />
-  ```
+```xml
+<div hflex="1"/>
+```
 
-### `Vflex`
-- **Description:** Vertical flexibility hint of the component. It indicates how the container distributes remaining empty space among its children vertically.
-- **Default Value:** `null`
-- **Example (Java):** 
+## Left
 
-  ```java
-  component.setVflex("1");
-  ```
-- **Example (ZUL):**
+The left position of the component.
 
-  ```xml
-  <component vflex="1" />
-  ```
+```xml
+<div left="10px"/>
+```
 
-### `Hflex`
-- **Description:** Horizontal flexibility hint of the component. It indicates how the container distributes remaining empty space among its children horizontally.
-- **Default Value:** `null`
-- **Example (Java):** 
+## Renderdefer
 
-  ```java
-  component.setHflex("min");
-  ```
-- **Example (ZUL):**
+The number of milliseconds before rendering this component at the client.
 
-  ```xml
-  <component hflex="min" />
-  ```
+**Default Value:** `-1`
 
-### `Renderdefer`
-- **Description:** The number of milliseconds before rendering the component at the client.
-- **Default Value:** `-1`
-- **Example (Java):** 
+{% include supported-since.html version="5.0.2" %}
 
-  ```java
-  component.setRenderdefer(500);
-  ```
-- **Example (ZUL):**
+```xml
+<div renderdefer="500"/>
+```
 
-  ```xml
-  <component renderdefer="500" />
-  ```
+## Sclass
 
-### `ClientAction`
-- **Description:** The client-side action (CSA) for the component.
-- **Default Value:** `null`
-- **Example (Java):** 
+The CSS class(es) for the component. Used for small adjustments such as changing the font size.
 
-  ```java
-  component.setClientAction("show: slideDown; hide: slideUp");
-  ```
-- **Example (ZUL):**
+```xml
+<div sclass="custom-style"/>
+```
 
-  ```xml
-  <component action="show: slideDown; hide: slideUp" />
-  ```
+## Style
 
-### `Tabindex`
-- **Description:** The tab order of the component.
-- **Default Value:** `0`
-- **Example (Java):** 
+The CSS style for the component.
 
-  ```java
-  component.setTabindex(2);
-  ```
-- **Example (ZUL):**
+```xml
+<div style="color: blue; font-size: 14px;"/>
+```
 
-  ```xml
-  <component tabindex="2" />
-  ```
-  
-## Supported Events
+## Tabindex
 
-| Name            | Event Type                                 | Description                                                                                            |
-|-----------------|--------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| `onDrop`          | **Event:** [DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html)                | Denotes a user has dropped the dragged target to a component.                                          |
-| `onClick`         | **Event:** [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)             | Denotes a user has clicked a component.                                                                |
-| `onDoubleClick`   | **Event:** [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)             | Denotes a user has double-clicked a component.                                                         |
-| `onRightClick`    | **Event:** [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)             | Denotes a user has right-clicked a component.                                                         |
-| `onMouseOver`     | **Event:** [MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)               | Denotes a user has hovered over the component. (Available since ZK 5.0.3)                                |
-| `onMouseOut`      | **Event:** [MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)               | Denotes a user has moved out of a component. (Available since ZK 5.0.3)                                 |
-| `onOK`            | **Event:** [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)                  | Denotes a user has pressed the 'ENTER' key.                                                            |
-| `onCancel`        | **Event:** [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)                  | Denotes a user has pressed the 'ESC' key.                                                              |
-| `onCtrlKey`       | **Event:** [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)                  | Denotes a user has pressed a special key combined with the Ctrl or Alt key. Refer to the `ctrlKeys` property for details. |
-| `onAfterSize`     | **Event:** [AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)    | Fired after a user resizes a sizable component in a browser or when a component calculates its size in a browser. |
-| `onCreate`        | **Event:** [CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)          | Event fired when the component is created.                                                            |
+**Default Value:** `0`
 
-## Supported Children
+The tab order of the component.
+
+```xml
+<div tabindex="2"/>
+```
+
+## Tooltiptext
+
+The text to display as a tooltip for the component.
+
+```xml
+<div tooltiptext="This is a tooltip"/>
+```
+
+## Top
+
+The top position of the component.
+
+```xml
+<div top="10px"/>
+```
+
+## Vflex
+
+Vertical flex hint: how the component's container distributes remaining vertical space among its flexible children, by ratio.
+
+| Value | Meaning |
+|---|---|
+| a positive integer (e.g. `1`, `2`) | flex ratio — larger values receive more space, relative to sibling flex values |
+| `true` | same as `1` |
+| `false`, `0`, or a negative value | no flex (same as leaving it unset) |
+| `min` | give only the minimum space needed to enclose the children |
+
+```xml
+<div vflex="1"/>
+```
+
+## Width
+
+The width of the component. If null, the best fit is used.
+
+```xml
+<div width="200px"/>
+```
+
+## Zclass
+
+The ZK Cascading Style class for this component. It usually depends on the implementation of the mold.
+
+{% include supported-since.html version="3.5.1" %}
+
+```xml
+<div zclass="custom-class"/>
+```
+
+## Zindex
+
+Specifies the Z index of this component, i.e. the stacking order used to decide which overlapping component appears in front. A larger value is rendered above components with smaller values. A negative value means the Z index is not set.
+
+**Default Value:** `-1`
+
+{% include supported-since.html version="3.5.2" %}
+
+```xml
+<div zindex="100"/>
+```
+
+# Supported Events
+
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onClick` | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Denotes a user has clicked a component. |
+| `onDoubleClick` | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Denotes a user has double-clicked a component. |
+| `onRightClick` | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Denotes a user has right-clicked a component. |
+| `onOk` | [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html) | Denotes a user has pressed the ENTER key. |
+| `onCancel` | [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html) | Denotes a user has pressed the ESC key. |
+| `onCtrlKey` | [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html) | Denotes a user has pressed a special key combined with the Ctrl or Alt key. |
+| `onDrop` | [DropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DropEvent.html) | Denotes a user has dropped the dragged target to a component. |
+| `onMouseOver` | [MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html) | Denotes a user has hovered over the component. |
+| `onMouseOut` | [MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html) | Denotes a user has moved out of a component. |
+| `onSwipe` | [SwipeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SwipeEvent.html) | Fired when a user swipes the component on a touch device. |
+| `onAfterSize` | [AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html) | Fired after a user resizes a sizable component in a browser or when a component calculates its size in a browser. |
+
+# Supported Children
 
 `*ALL`: Indicates that the `HtmlBasedComponent` can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends `HtmlBasedComponent`, providing flexibility and customization options for your designs.

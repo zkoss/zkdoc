@@ -2,26 +2,27 @@
 title: "LabelImageElement"
 ---
 
-- Java API: [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
-- **JavaScript API**: [`zul.LabelImageWidget`](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.LabelImageWidget.html)
+- **Java API:** [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)
 
-## Employment/Purpose
-The Label Image Element is an HTML element that consists of a label and an image. It provides a way to display textual content alongside an image within the user interface.
+# Employment/Purpose
 
-## Preload Image
-**Since**: 6.0.0
-The preload image feature, introduced in version 6.0.0, is applicable to all instances of LabelImageElement and Image components. By default, the preload function is disabled, and users need to explicitly enable it by setting the `org.zkoss.zul.image.preload` custom attribute to `true`.
+The LabelImageElement is an HTML element that combines label and image content. It provides a way to display textual content alongside an image within the user interface.
 
-### Example 1:
+# Preload Image
+
+{% include supported-since.html version="6.0.0" %}
+
+The preload image feature enables images to load before rendering, applicable to all LabelImageElement and Image component instances. By default, image preloading is disabled. Enable it explicitly by setting the `org.zkoss.zul.image.preload` custom attribute to `true`.
+
+### Enable Preload on a Specific Component
 
 ```xml
 <button image="xxx.png">
   <custom-attributes org.zkoss.zul.image.preload="true"/>
 </button>
 ```
-In this example, the `org.zkoss.zul.image.preload` custom attribute is set to `true` for the button component, enabling image preloading.
 
-### Example 2:
+### Enable Preload at Window Level
 
 ```xml
 <window>
@@ -30,13 +31,12 @@ In this example, the `org.zkoss.zul.image.preload` custom attribute is set to `t
   <image src="xxx.png"/>
 </window>
 ```
-In this example, the `org.zkoss.zul.image.preload` custom attribute is set at the window level, which applies it to all child components, including the button and image components.
 
-In both examples, the `custom-attributes` will be recursively checked for the specified attribute based on the [`org.zkoss.zk.ui.ext.Scope`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html) documentation.
+In both examples, the `custom-attributes` are recursively checked based on the [`org.zkoss.zk.ui.ext.Scope`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/ext/Scope.html) specification.
 
-Version 6.5.2 introduced the ability to apply the feature through the `zk.xml` configuration file as a library property.
+### Configure Globally via zk.xml
 
-### Example 3:
+{% include supported-since.html version="6.5.2" %}
 
 ```xml
 <!-- zk.xml -->
@@ -47,10 +47,87 @@ Version 6.5.2 introduced the ability to apply the feature through the `zk.xml` c
     </library-property>
 </zk>
 ```
-In this example, the `org.zkoss.zul.image.preload` property is set to `true` in the `zk.xml` file at the library level, enabling image preloading for all applicable components.
+
+# Properties
+
+These properties are inherited by components that extend `LabelImageElement` (e.g. `<button>`, `<toolbarbutton>`). The examples below use `<button>` as a representative concrete component.
+
+## Image
+
+Specifies the URI of the image to display on the element. Accepts a path relative to the web application context.
+
+```xml
+<button image="/img/logo.png"/>
+```
+
+## ImageContent
+
+{% include supported-since.html version="3.0.7" %}
+
+Sets the image content directly with a dynamically generated `org.zkoss.image.Image` (or a `java.awt.image.RenderedImage`) instead of a URI. This is typically assigned from a controller rather than in ZUL; the EL example below binds a generated image.
+
+```xml
+<button imageContent="${myImage}"/>
+```
+
+## HoverImage
+
+{% include supported-since.html version="3.5.0" %}
+
+Specifies the URI of an image that is displayed when the mouse hovers over the element. When the mouse moves away, the normal `image` is shown again.
+
+```xml
+<button hoverImage="/img/hover.png"/>
+```
+
+## HoverImageContent
+
+{% include supported-since.html version="5.0.8" %}
+
+Sets the hover image content directly with a dynamically generated `org.zkoss.image.Image` (or a `java.awt.image.RenderedImage`) instead of a URI. This is typically assigned from a controller rather than in ZUL; the EL example below binds a generated image.
+
+```xml
+<button hoverImageContent="${hoverImg}"/>
+```
 
 ## IconSclass
-The Label Image Element allows you to specify built-in icon CSS classes to style the displayed icons. For more information on available icon classes, refer to the [ZK Font Awesome documentation]({{site.baseurl}}/zk_dev_ref/integration/font_awesome).
 
-## Supported Children
+Specifies a single built-in icon font style class to style the displayed icon. For more information on available icon classes, refer to the [ZK Font Awesome documentation]({{site.baseurl}}/zk_dev_ref/integration/font_awesome). If `iconSclasses` is set, `iconSclass` is ignored.
+
+```xml
+<button iconSclass="z-icon-star"/>
+```
+
+## IconSclasses
+
+{% include supported-since.html version="10.0.0" %}
+
+Specifies multiple icon font style classes (a space-separated list). If `iconSclasses` is set, `iconSclass` is ignored: `iconSclasses` takes precedence over `iconSclass`. For more information on available icon classes, refer to the [ZK Font Awesome documentation]({{site.baseurl}}/zk_dev_ref/integration/font_awesome).
+
+```xml
+<button iconSclasses="z-icon-star z-icon-lg"/>
+```
+
+## IconTooltip
+
+{% include supported-since.html version="10.0.0" %}
+
+Specifies the tooltip text shown for the icon. If `iconTooltips` is set, `iconTooltip` is ignored: `iconTooltips` takes precedence over `iconTooltip`.
+
+```xml
+<button iconSclass="z-icon-star" iconTooltip="Favorite"/>
+```
+
+## IconTooltips
+
+{% include supported-since.html version="10.0.0" %}
+
+Specifies multiple icon tooltips, one per icon (a space-separated list aligned with `iconSclasses`). If `iconTooltips` is set, `iconTooltip` is ignored: `iconTooltips` takes precedence over `iconTooltip`.
+
+```xml
+<button iconSclasses="z-icon-star z-icon-bell" iconTooltips="Favorite Notify"/>
+```
+
+# Supported Children
+
 `*ALL`: Allows encoding any ZK component as its child.
