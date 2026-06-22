@@ -2,9 +2,9 @@
 title: "Grid"
 ---
 
-- Demonstration: [Grid](http://www.zkoss.org/zkdemo/grid/)
-- Java API: [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
-- JavaScript API: [zul.grid.Grid](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Grid.html)
+- **Demonstration:** [Grid](https://www.zkoss.org/zkdemo/grid/)
+- **Java API:** [org.zkoss.zul.Grid](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html)
+- **JavaScript API:** [zul.grid.Grid](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Grid.html)
 
 # Employment/Purpose
 
@@ -98,6 +98,381 @@ declaration. For more details see the section on Axillary Headers below.
     <label id="gridCount" />
 </zk>
 ```
+
+# Common Use Cases
+
+## Simple Static Grid
+
+Use inline `<rows>` and `<row>` children for small, fixed datasets where live-data model overhead is not warranted.
+
+```xml
+<grid>
+    <columns>
+        <column label="Name"/>
+        <column label="Department"/>
+    </columns>
+    <rows>
+        <row><label value="Alice"/><label value="Engineering"/></row>
+        <row><label value="Bob"/><label value="Marketing"/></row>
+    </rows>
+</grid>
+```
+
+## Model-Driven Grid with Template
+
+Bind a `ListModelList` via the `model` attribute and declare the row layout with a `<template name="model">`. ZK renders only visible rows automatically (ROD).
+
+```xml
+<zscript><![CDATA[
+    ListModelList model = new ListModelList(employees);
+]]></zscript>
+<grid model="${model}" height="300px">
+    <columns>
+        <column label="Name"/>
+        <column label="Role"/>
+    </columns>
+    <template name="model">
+        <row>
+            <label value="${each.name}"/>
+            <label value="${each.role}"/>
+        </row>
+    </template>
+</grid>
+```
+
+## Paged Grid
+
+Switch to the `paging` mold to paginate large datasets without scrolling. Set `pageSize` to control how many rows appear per page.
+
+```xml
+<grid model="${model}" mold="paging" pageSize="10">
+    <columns>
+        <column label="Name"/>
+    </columns>
+    <template name="model">
+        <row><label value="${each}"/></row>
+    </template>
+</grid>
+```
+
+## Responsive Stacking Grid (EE)
+
+Use `responsive="stacking"` with `responsiveColumns` to collapse columns into card-style blocks on small screens.
+
+```xml
+<grid model="${model}" responsive="stacking" responsiveColumns="sm-1 md-none">
+    <columns>
+        <column label="Name"/>
+        <column label="Email"/>
+        <column label="Phone"/>
+    </columns>
+    <template name="model">
+        <row>
+            <label value="${each.name}"/>
+            <label value="${each.email}"/>
+            <label value="${each.phone}"/>
+        </row>
+    </template>
+</grid>
+```
+
+# Master Detail
+
+{% include edition-availability.html edition=ee %} 
+Grid supports master-detail layout which enables
+developers to add more information on each row. For example,
+
+![](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
+
+```xml
+    <rows>
+        <row>
+            <detail open="true">
+                <hlayout>
+                    <image sclass="myimg" width="100px" height="100px"
+                        src="/img/item1.jpg" />
+                    // omitted...
+                </hlayout>
+            </detail>
+```
+
+- For further details, please refer to [ Detail component]({{site.baseurl}}/zk_component_ref/detail)
+  directly.
+
+# Columns Menu
+
+For example,
+
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
+
+```xml
+<zk>
+    <grid>
+        <columns menupopup="auto">
+            <column label="Author" sort="auto"/>
+            <column label="Title" sort="auto"/>
+            <column label="Publisher" sort="auto"/>
+            <column label="Hardcover" sort="auto"/>
+        </columns>
+        // omitted...
+    </grid>
+</zk>
+```
+
+- For further details, please refer to [ Columns component]({{site.baseurl}}/zk_component_ref/columns)
+  directly.
+
+## Ungroup Column Menu
+
+When the user groups the content of the grid, the column's menu will
+show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
+include supported-since.html version="6.5.0" %}
+
+![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
+
+**Note:** If the Grid contains with Model, *GroupsModel*, you have to
+register an *onUngroup* event for column to show an ungroup icon and
+then replace the current model with a *ListModel* to reset the group.
+
+For example,
+
+```xml
+<zk>
+    <zscript><![CDATA[
+  int cnt = 0;
+Object[][] foods = new Object[][] {
+    new Object[] { "Vegetables", "Asparagus", "Vitamin K", 115, 43},
+    new Object[] { "Vegetables", "Beets", "Folate", 33, 74},
+    new Object[] { "Vegetables", "Tomatoes", "Vitamin C", 57, 37},
+    new Object[] { "Seafood", "Salmon", "Tryptophan", 103, 261},
+    new Object[] { "Seafood", "Cod", "Tryptophan", 90, 119}
+};
+public class FoodGroupRenderer implements RowRenderer {
+    public void render(Row row, Object obj, int index) {
+        if (row instanceof Group) {
+            row.appendChild(new Label(obj.toString()));
+        } else {
+            Object[] data = (Object[]) obj;
+            row.appendChild(new Label(data[0].toString()));
+            row.appendChild(new Label(data[1].toString()));
+            row.appendChild(new Label(data[2].toString()));
+            row.appendChild(new Label(data[3].toString()));
+            row.appendChild(new Label(data[4].toString()));
+        }
+    }
+}
+ListModelList listmodel = new ListModelList();
+for (int i = 0; i < foods.length; i++)
+    listmodel.add(foods[i]);
+RowRenderer renderer = new FoodGroupRenderer();
+GroupsModel model = new GroupsModelArray(foods, new ArrayComparator(0, true));
+    ]]></zscript>
+    <grid id="grid" model="${model}" rowRenderer="${renderer}">
+        <columns menupopup="auto">
+            <column label="Category" sort="auto(0)" onGroup='grid.setModel(model)' onUngroup='grid.setModel(listmodel);'/>
+            <column label="Name" sort="auto(1)"/>
+            <column label="Top Nutrients" sort="auto(2)"/>
+            <column label="% of Daily" sort="auto(3)"/>
+            <column label="Calories" sort="auto(4)"/>
+        </columns>
+    </grid>
+</zk>
+```
+
+# Cell Component
+
+In ZK5, we have introduced a new component named Cell which can be
+embedded into a Grid or Box (Hbox and Vbox) to fully control the layout
+and the style. You can now use the rowspan or the colspan property to
+layout your Grid, for example a content cell can now cross over multiple
+rows. The code below demonstrates how to do this:
+
+```xml
+<row>
+    <cell sclass="years" rowspan="12">
+        ...
+    </cell>
+</row>
+```
+
+{% include supported-since.html version="5.0.0" %}
+
+- For further details, please refer to [ Cell component]({{site.baseurl}}/zk_component_ref/cell)
+  directly.
+
+# Group Component
+
+Both Grid, and Listbox support Grouping concept, it enables developers
+to display data in an advanced way. Moreover, live data are also
+supported in Grouping Grid, and Listbox with the
+[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
+
+![](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
+
+```xml
+<zk>
+    <zscript>
+    import org.zkoss.zkdemo.userguide.*;
+    Comparator asc = new RowLabelComparator(true),
+        dsc = new RowLabelComparator(false);
+    </zscript>
+    <grid>
+        <columns sizable="true">
+            <column label="Brand" sortAscending="${asc}" sortDescending="${dsc}"/>
+            <column label="Processor Type" width="150px"/>
+            <column label="Memory (RAM)" width="120px"/>
+            <column label="Price"  width="100px"/>
+            <column label="Hard Drive Capacity" width="150px"/>
+        </columns>
+        <rows>
+            <group label="Dell"/>
+            <row>
+                <label style="padding-left:15px" value="Dell E4500 2.2GHz"/>
+                <label value="Intel Core 2 Duo"/>
+                <label value="2GB RAM"/>
+                <label value="$261.00" style="color:green"/>
+                <label value="500GB"/>
+            </row>
+            <row>
+                <label style="padding-left:15px" value="XP-Pro Slim Dell-Inspiron-530-s"/>
+                <label value="Intel Core 2 Duo"/>
+                <label value="2GB RAM"/>
+                <label value="$498.93" style="color:green"/>
+                <label value="500GB"/>              
+            </row>
+            <row>
+                <label style="padding-left:15px" value="Dell P4 3.2 GHz"/>
+                <label value="Intel Pentium 4"/>
+                <label value="4GB RAM"/>
+                <label value="$377.99" style="color:green"/>
+                <label value="500GB"/>              
+            </row>
+            <group label="Compaq"/>
+            <row>
+                <label style="padding-left:15px" value="Compaq SR5113WM"/>
+                <label value="Intel Core Duo"/>
+                <label value="1GB RAM"/>
+                <label value="$279.00" style="color:green"/>
+                <label value="160GB"/>              
+            </row>
+            <row>
+                <label style="padding-left:15px" value="Compaq HP XW4200"/>
+                <label value="Intel Pentium 4"/>
+                <label value="4GB RAM"/>
+                <label value="$980" style="color:green"/>
+                <label value="500GB"/>              
+            </row>
+            <groupfoot spans="5">
+                <label value="This a summary about Compaq Desktop PCs"/>
+            </groupfoot>
+        </rows>
+    </grid>
+</zk>
+```
+
+`*`[Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)  
+
+For more information, please take a look at these smalltalks,
+
+- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
+- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
+- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
+
+Or refer to [ Group component]({{site.baseurl}}/zk_component_ref/group) directly.
+
+# Frozen Component
+
+In ZK 5 you are now able to freeze columns within a Grid and Listbox.
+This mirrors functionality seen within Excel and makes data in these
+components easier to read, interpret and handle.
+
+The following code demonstrates how to freeze a column within a Grid:
+
+```xml
+<grid>
+    <frozen style="background: #dfded8" columns="3">
+        ...
+    </frozen>
+</grid>
+```
+
+{% include supported-since.html version="5.0.0" %}
+
+- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
+  directly.
+
+# Custom Attributes
+
+## org.zkoss.zul.grid.rod
+
+`[default: false]`  
+`[inherit: true]`[^1]
+
+It specifies whether to enable ROD (render-on-demand). For more
+information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
+
+## org.zkoss.zul.grid.autoSort
+
+`[default: false]`  
+`[inherit: true]`[^2]
+
+{% include supported-since.html version="5.0.7" %} Specifies whether to sort the model
+when the following cases:
+
+- [org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))is
+  called and
+  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
+  is set.
+- [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
+  is called.
+- Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
+  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
+  is set.
+
+If you want to ignore sort when receiving
+[org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html), you can specifies
+the value as **ignore.change**.
+
+## org.zkoss.zul.grid.preloadSize
+
+`[default: 50]`  
+`[inherit: true]`[^3]
+
+{% include supported-since.html version="6.0.1" %} Specifies the number of rows to
+preload when receiving the rendering request from the client. It is used only if live data
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and not paging
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
+
+## org.zkoss.zul.grid.initRodSize
+
+`[default: 50]`  
+`[inherit: true]`[^4]
+
+{% include supported-since.html version="6.0.1" %} Specifies the number of rows rendered
+when the Grid first render. It is used only if live data
+([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
+not paging
+([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
+
+## org.zkoss.zul.grid.autohidePaging
+
+`[default: true]`  
+`[inherit: true]`[^5]
+
+{% include supported-since.html version="7.0.1" %}
+
+It specifies whether to enable autohide property for internal paging
+components.
+
+[^1]: The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as [a library property]({{site.baseurl}}/zk_config_ref/the_library_property_element) to enable or disable it for the whole application.`
+
+[^2]: Same as above.
+
+[^3]: Same as above.
+
+[^4]: Same as above.
+
+[^5]: Same as above.
 
 # Paging
 
@@ -944,310 +1319,193 @@ header becomes floating and sticky on the top of the page.
   </grid>
 ```
 
-# Master Detail
+## InnerWidth
 
-{% include edition-availability.html edition=ee %} 
-Grid supports master-detail layout which enables
-developers to add more information on each row. For example,
+**Default Value:** `"100%"`
 
-![](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
+Sets the inner width of the inner table rendered by the grid. By default the inner width equals the component width. Developers typically need to set this only when restoring user-resized column widths across page loads — store both the column widths and the innerWidth, then reapply them when the component is recreated.
 
 ```xml
-    <rows>
-        <row>
-            <detail open="true">
-                <hlayout>
-                    <image sclass="myimg" width="100px" height="100px"
-                        src="/img/item1.jpg" />
-                    // omitted...
-                </hlayout>
-            </detail>
-```
-
-- For further details, please refer to [ Detail component]({{site.baseurl}}/zk_component_ref/detail)
-  directly.
-
-# Columns Menu
-
-For example,
-
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
-
-```xml
-<zk>
-    <grid>
-        <columns menupopup="auto">
-            <column label="Author" sort="auto"/>
-            <column label="Title" sort="auto"/>
-            <column label="Publisher" sort="auto"/>
-            <column label="Hardcover" sort="auto"/>
-        </columns>
-        // omitted...
-    </grid>
-</zk>
-```
-
-- For further details, please refer to [ Columns component]({{site.baseurl}}/zk_component_ref/columns)
-  directly.
-
-## Ungroup Column Menu
-
-When the user groups the content of the grid, the column's menu will
-show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
-include supported-since.html version="6.5.0" %}
-
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
-
-**Note:** If the Grid contains with Model, *GroupsModel*, you have to
-register an *onUngroup* event for column to show an ungroup icon and
-then replace the current model with a *ListModel* to reset the group.
-
-For example,
-
-```xml
-<zk>
-    <zscript><![CDATA[
-  int cnt = 0;
-Object[][] foods = new Object[][] {
-    new Object[] { "Vegetables", "Asparagus", "Vitamin K", 115, 43},
-    new Object[] { "Vegetables", "Beets", "Folate", 33, 74},
-    new Object[] { "Vegetables", "Tomatoes", "Vitamin C", 57, 37},
-    new Object[] { "Seafood", "Salmon", "Tryptophan", 103, 261},
-    new Object[] { "Seafood", "Cod", "Tryptophan", 90, 119}
-};
-public class FoodGroupRenderer implements RowRenderer {
-    public void render(Row row, Object obj, int index) {
-        if (row instanceof Group) {
-            row.appendChild(new Label(obj.toString()));
-        } else {
-            Object[] data = (Object[]) obj;
-            row.appendChild(new Label(data[0].toString()));
-            row.appendChild(new Label(data[1].toString()));
-            row.appendChild(new Label(data[2].toString()));
-            row.appendChild(new Label(data[3].toString()));
-            row.appendChild(new Label(data[4].toString()));
-        }
-    }
-}
-ListModelList listmodel = new ListModelList();
-for (int i = 0; i < foods.length; i++)
-    listmodel.add(foods[i]);
-RowRenderer renderer = new FoodGroupRenderer();
-GroupsModel model = new GroupsModelArray(foods, new ArrayComparator(0, true));
-    ]]></zscript>
-    <grid id="grid" model="${model}" rowRenderer="${renderer}">
-        <columns menupopup="auto">
-            <column label="Category" sort="auto(0)" onGroup='grid.setModel(model)' onUngroup='grid.setModel(listmodel);'/>
-            <column label="Name" sort="auto(1)"/>
-            <column label="Top Nutrients" sort="auto(2)"/>
-            <column label="% of Daily" sort="auto(3)"/>
-            <column label="Calories" sort="auto(4)"/>
-        </columns>
-    </grid>
-</zk>
-```
-
-# Cell Component
-
-In ZK5, we have introduced a new component named Cell which can be
-embedded into a Grid or Box (Hbox and Vbox) to fully control the layout
-and the style. You can now use the rowspan or the colspan property to
-layout your Grid, for example a content cell can now cross over multiple
-rows. The code below demonstrates how to do this:
-
-```xml
-<row>
-    <cell sclass="years" rowspan="12">
-        ...
-    </cell>
-</row>
-```
-
-{% include supported-since.html version="5.0.0" %}
-
-- For further details, please refer to [ Cell component]({{site.baseurl}}/zk_component_ref/cell)
-  directly.
-
-# Group Component
-
-Both Grid, and Listbox support Grouping concept, it enables developers
-to display data in an advanced way. Moreover, live data are also
-supported in Grouping Grid, and Listbox with the
-[org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
-
-![](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
-
-```xml
-<zk>
-    <zscript>
-    import org.zkoss.zkdemo.userguide.*;
-    Comparator asc = new RowLabelComparator(true),
-        dsc = new RowLabelComparator(false);
-    </zscript>
-    <grid>
-        <columns sizable="true">
-            <column label="Brand" sortAscending="${asc}" sortDescending="${dsc}"/>
-            <column label="Processor Type" width="150px"/>
-            <column label="Memory (RAM)" width="120px"/>
-            <column label="Price"  width="100px"/>
-            <column label="Hard Drive Capacity" width="150px"/>
-        </columns>
-        <rows>
-            <group label="Dell"/>
-            <row>
-                <label style="padding-left:15px" value="Dell E4500 2.2GHz"/>
-                <label value="Intel Core 2 Duo"/>
-                <label value="2GB RAM"/>
-                <label value="$261.00" style="color:green"/>
-                <label value="500GB"/>
-            </row>
-            <row>
-                <label style="padding-left:15px" value="XP-Pro Slim Dell-Inspiron-530-s"/>
-                <label value="Intel Core 2 Duo"/>
-                <label value="2GB RAM"/>
-                <label value="$498.93" style="color:green"/>
-                <label value="500GB"/>              
-            </row>
-            <row>
-                <label style="padding-left:15px" value="Dell P4 3.2 GHz"/>
-                <label value="Intel Pentium 4"/>
-                <label value="4GB RAM"/>
-                <label value="$377.99" style="color:green"/>
-                <label value="500GB"/>              
-            </row>
-            <group label="Compaq"/>
-            <row>
-                <label style="padding-left:15px" value="Compaq SR5113WM"/>
-                <label value="Intel Core Duo"/>
-                <label value="1GB RAM"/>
-                <label value="$279.00" style="color:green"/>
-                <label value="160GB"/>              
-            </row>
-            <row>
-                <label style="padding-left:15px" value="Compaq HP XW4200"/>
-                <label value="Intel Pentium 4"/>
-                <label value="4GB RAM"/>
-                <label value="$980" style="color:green"/>
-                <label value="500GB"/>              
-            </row>
-            <groupfoot spans="5">
-                <label value="This a summary about Compaq Desktop PCs"/>
-            </groupfoot>
-        </rows>
-    </grid>
-</zk>
-```
-
-`*`[Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)  
-
-For more information, please take a look at these smalltalks,
-
-- [ Learn About Grouping with Listbox and Grid](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_Grouping_with_Listbox_and_Grid)
-- [ About How Grouping Works with Live Data](https://www.zkoss.org/wiki/Small_Talks/2008/May/Learn_About_How_Grouping_Works_with_Live_Data)
-- [ Add Summary Field For Grouping](https://www.zkoss.org/wiki/Small_Talks/2008/May/Add_Summary_Field_For_Grouping).
-
-Or refer to [ Group component]({{site.baseurl}}/zk_component_ref/group) directly.
-
-# Frozen Component
-
-In ZK 5 you are now able to freeze columns within a Grid and Listbox.
-This mirrors functionality seen within Excel and makes data in these
-components easier to read, interpret and handle.
-
-The following code demonstrates how to freeze a column within a Grid:
-
-```xml
-<grid>
-    <frozen style="background: #dfded8" columns="3">
-        ...
-    </frozen>
+<grid innerWidth="600px">
+    <columns>
+        <column label="Name" width="200px"/>
+        <column label="Value" width="400px"/>
+    </columns>
+    <rows/>
 </grid>
 ```
 
-{% include supported-since.html version="5.0.0" %}
+## Model
 
-- For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
-  directly.
+{% include supported-since.html version="3.5.0" %}
 
-# Custom Attributes
+Associates a `ListModel` (or `GroupsModel`) with the grid to enable live data rendering. When a model is set the grid renders only the visible rows on demand (ROD), which dramatically reduces network traffic for large datasets. If you pass a `GroupsModel`, the grid wraps it internally so `getModel()` still returns a `ListModel` instance.
 
-## org.zkoss.zul.grid.rod
+Pairing `model` with a `rowRenderer` lets you control exactly how each row is rendered. If no renderer is provided the default renderer places each element into the first column.
 
-`[default: false]`  
-`[inherit: true]`[^1]
+```xml
+<zscript><![CDATA[
+    ListModelList model = new ListModelList(Arrays.asList("Alpha", "Beta", "Gamma"));
+]]></zscript>
+<grid model="${model}">
+    <columns>
+        <column label="Item"/>
+    </columns>
+    <template name="model">
+        <row>
+            <label value="${each}"/>
+        </row>
+    </template>
+</grid>
+```
 
-It specifies whether to enable ROD (render-on-demand). For more
-information, please refer to [ZK Developer's Reference: Performance Tips]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand).
+## OddRowSclass
 
-## org.zkoss.zul.grid.autoSort
+**Default Value:** `"{zclass}-odd"` (e.g. `"z-grid-odd"`)
 
-`[default: false]`  
-`[inherit: true]`[^2]
+Sets the CSS style class applied to odd-numbered rows to produce a zebra-striped effect. If the specified class does not exist in the stylesheet the striping effect disappears. Pass an empty string or `null` to restore the default class.
 
-{% include supported-since.html version="5.0.7" %} Specifies whether to sort the model
-when the following cases:
+```xml
+<grid oddRowSclass="my-odd-row">
+    <columns>
+        <column label="Name"/>
+        <column label="Value"/>
+    </columns>
+    <rows>
+        <row><label value="A"/><label value="1"/></row>
+        <row><label value="B"/><label value="2"/></row>
+    </rows>
+</grid>
+```
 
-- [org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))is
-  called and
-  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
-  is set.
-- [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
-  is called.
-- Model receives [org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html)and
-  [org.zkoss.zul.Column#setSortDirection(String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDirection(String))
-  is set.
+## Paginal
 
-If you want to ignore sort when receiving
-[org.zkoss.zul.event.ListDataEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ListDataEvent.html), you can specifies
-the value as **ignore.change**.
+Specifies an external [Paging]({{site.baseurl}}/zk_component_ref/paging) component that controls this grid's paging. Useful when you want the paging bar in a different location on the page, or when a single paging component drives multiple grids simultaneously. Only relevant when the grid mold is `"paging"`; setting it for other molds has no effect.
 
-## org.zkoss.zul.grid.preloadSize
+If `paginal` is not set explicitly and the mold is `"paging"`, the grid creates its own internal child `Paging` component automatically.
 
-`[default: 50]`  
-`[inherit: true]`[^3]
+```xml
+<paging id="pg" pageSize="5"/>
+<grid mold="paging" paginal="${pg}">
+    <columns>
+        <column label="Name"/>
+    </columns>
+    <rows>
+        <row forEach="${items}"><label value="${each}"/></row>
+    </rows>
+</grid>
+```
 
-{% include supported-since.html version="6.0.1" %} Specifies the number of rows to
-preload when receiving the rendering request from the client. It is used only if live data
-([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and not paging
-([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
+## Responsive
 
-## org.zkoss.zul.grid.initRodSize
+{% include supported-since.html version="10.4.0" %}
+{% include edition-availability.html edition=ee %}
 
-`[default: 50]`  
-`[inherit: true]`[^4]
+**Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive` library property)
 
-{% include supported-since.html version="6.0.1" %} Specifies the number of rows rendered
-when the Grid first render. It is used only if live data
-([org.zkoss.zul.Grid#setModel(ListModel)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setModel(ListModel))) and
-not paging
-([org.zkoss.zul.Grid#getPagingChild()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#getPagingChild())).
+Sets the responsive policy for the grid. When set to `"stacking"`, columns collapse into vertical key-value card blocks when the container width falls below the configured breakpoint (ZK EE). Set to `"none"` to explicitly disable responsive behaviour even if a global setting is active.
 
-## org.zkoss.zul.grid.autohidePaging
+| Value | Meaning |
+|---|---|
+| `"stacking"` | Columns stack vertically at narrow widths (EE only). |
+| `"none"` | Disables responsive mode, overriding any global library setting. |
+| `null` | Inherits from `org.zkoss.zul.grid.responsive` library property; no responsive if unset. |
 
-`[default: true]`  
-`[inherit: true]`[^5]
+Any value other than the three above throws `WrongValueException`.
 
-{% include supported-since.html version="7.0.1" %}
+```xml
+<grid responsive="stacking" responsiveColumns="sm-1 md-none">
+    <columns>
+        <column label="Name"/>
+        <column label="Value"/>
+    </columns>
+    <rows/>
+</grid>
+```
 
-It specifies whether to enable autohide property for internal paging
-components.
+## ResponsiveColumns
 
-[^1]: The custom attribute could be specified in this component, or any of its ancestor. In addition, it could be specified as [a library property]({{site.baseurl}}/zk_config_ref/the_library_property_element) to enable or disable it for the whole application.`
+{% include supported-since.html version="10.4.0" %}
+{% include edition-availability.html edition=ee %}
 
-[^2]: Same as above.
+**Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive.columns` library property; framework default resolved by the client is `"sm-1 md-none"`)
 
-[^3]: Same as above.
+Sets the responsive columns token string used in stacking mode. The value is a whitespace-separated list of Bootstrap-style breakpoint tokens in the form `<breakpoint>-<value>`, where breakpoint is one of `sm`, `md`, `lg`, `xl`, `xxl` and value is either a positive integer (number of cards per row in stacking layout) or `none` (switch back to table layout at and above this breakpoint). The string is stored verbatim; parsing and cascade resolution happen on the client side. Invalid tokens are silently dropped by the client resolver.
 
-[^4]: Same as above.
+This attribute has no effect unless `responsive="stacking"` is also set (or inherited).
 
-[^5]: Same as above.
+```xml
+<grid responsive="stacking" responsiveColumns="sm-1 md-2 lg-none">
+    <columns>
+        <column label="Name"/>
+        <column label="Department"/>
+        <column label="Salary"/>
+    </columns>
+    <rows/>
+</grid>
+```
+
+## RowRenderer
+
+Sets a custom renderer used to populate each `Row` when the grid is driven by a `model`. If no renderer is set, the default renderer places each data element as a label in the first column.
+
+Changing the renderer after a model is already attached does **not** automatically re-render the grid. To force a re-render, re-assign the same model: `grid.setModel(grid.getModel())`.
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    ListModelList model = new ListModelList(Arrays.asList("Alice", "Bob", "Carol"));
+    RowRenderer renderer = new RowRenderer() {
+        public void render(Row row, Object data, int index) {
+            row.appendChild(new Label(String.valueOf(index + 1)));
+            row.appendChild(new Label(data.toString()));
+        }
+    };
+]]></zscript>
+<grid model="${model}" rowRenderer="${renderer}">
+    <columns>
+        <column label="#"/>
+        <column label="Name"/>
+    </columns>
+</grid>
+```
+
+## Vflex
+
+{% include supported-since.html version="3.5.0" %}
+
+**Default Value:** `false`
+
+Enables vertical flexibility so the grid grows and shrinks to fill its available vertical space. Cannot be combined with `visibleRows` — setting both throws `UiException`. Commonly used together with `autopaging="true"` and `mold="paging"` to let the grid auto-calculate the page size based on visible height.
+
+```xml
+<vlayout height="400px">
+    <grid vflex="1" mold="paging" autopaging="true">
+        <columns>
+            <column label="Name"/>
+            <column label="Value"/>
+        </columns>
+        <rows>
+            <row forEach="${items}">
+                <label value="${each.name}"/>
+                <label value="${each.value}"/>
+            </row>
+        </rows>
+    </grid>
+</vlayout>
+```
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
-| `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onPageSize` | **Event:** [org.zkoss.zul.event.PageSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PageSizeEvent.html) | Notifies the paging size has been changed when the autopaging ([org.zkoss.zul.Grid#setAutopaging(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Grid.html#setAutopaging(boolean))) is enabled and user changed the size of the content. |
+| `onRender` | **Event:** [org.zkoss.zul.event.RenderEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/RenderEvent.html) | Notifies the grid to render a set of rows that the client has requested. Used internally by the ROD (render-on-demand) mechanism; rarely handled by application code directly. |
+| `onInnerWidth` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Sent by the client when the user resizes a column, causing the inner table width to change. The grid updates its `innerWidth` field automatically; application code can listen to this event to persist the new width. |
+| `onScrollPos` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Sent by the client when the grid's scroll position changes. The grid updates its internal `currentTop` and `currentLeft` fields; application code rarely needs to handle this event directly. |
+| `onTopPad` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Sent by the client to report the top padding offset used by the ROD virtual scroller. Handled internally; not typically used by application code. |
+| `onDataLoading` | **Event:** [org.zkoss.zul.event.DataLoadingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/DataLoadingEvent.html) | Fired when the grid requests a new batch of rows from the server under ROD. Applications can listen to this event to intercept or react to data loading, e.g., showing a loading indicator. |
+| `onResponsiveModeChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | {% include supported-since.html version="10.4.0" %} Fired by the client when the grid's resolved stacking mode transitions between `"table"` and `"stacking"` (ZK EE). Applications can listen to adapt UI elements to the current layout mode. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -1264,22 +1522,3 @@ zul.jar.
 # Supported Children
 
 * [Columns]({{site.baseurl}}/zk_component_ref/columns), [Rows]({{site.baseurl}}/zk_component_ref/rows), [Foot]({{site.baseurl}}/zk_component_ref/foot)
-
-# Version History
-
-| Version | Date         | Content                                                                                                                                                                                         |
-|---------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.2   | May 2010     | Support the autopaging                                                                                                                                                                          |
-| 5.0.4   | July 2010    | Support onAfterRender event                                                                                                                                                                     |
-| 5.0.5   | October 2010 | The span property was introduced to span the columns to occupy the whole grid.                                                                                                                  |
-| 5.0.7   | April 2011   | Grid shall sort model based on current state.                                                                                                                                                   |
-| 5.0.7   | April 2011   | The emptyMessage attribute supported                                                                                                                                                            |
-| 5.0.7   | April 2011   | The onPageSize event was introduced.                                                                                                                                                            |
-| 5.0.8   | June 2011    | Deprecated setPreloadSize, instead with a custom attributes "org.zkoss.zul.grid.preloadSize".                                                                                                   |
-| 5.0.8   | June 2011    | Add a custom attributes "org.zkoss.zul.grid.initRodSize" for control ROD render size.                                                                                                           |
-| 6.5.0   | June 2012    | [ZK-147](http://tracker.zkoss.org/browse/ZK-147): Support ungroup for grid's column menu                                                                                                        |
-| 7.0.1   | January 2014 | [ZK-2079](http://tracker.zkoss.org/browse/ZK-2079): Add a custom attributes "org.zkoss.zul.grid.autohidePaging" for control autohide in internal paging component                               |
-| 7.0.2   | April 2014   | Due to the better user-firendly for the scrollbar layout, we changed the org.zkoss.zul.nativebar of the library property to true by default for Grid, Listbox, Tree and Borderlayout component. |
-| 7.0.3   | July 2014    | [ZK-2359](http://tracker.zkoss.org/browse/ZK-2359): Since ZK 7, the style class naming of autopaging has changed.                                                                               |
-| 8.5.0   | Oct 2017     | [ZK-3690](http://tracker.zkoss.org/browse/ZK-3690): Added visibleRows property for Grid (the same as rows property of Listbox and Tree)                                                         |
-| 9.6.0   | Mar 2021     | [ZK-4795](http://tracker.zkoss.org/browse/ZK-4795): Grid/Listbox/Tree supports sticky column headers                                                                                            |
