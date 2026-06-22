@@ -2,14 +2,33 @@
 title: "Datebox"
 ---
 
-- Demonstration: [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
-- Java API: [org.zkoss.zul.Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html)
-- JavaScript API: [zul.db.Datebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Datebox.html)
+- **Demonstration:** [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)
+- **Java API:** [org.zkoss.zul.Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html)
+- **JavaScript API:** [zul.db.Datebox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.db.Datebox.html)
 
 # Employment/Purpose
 
 An edit box for holding a date. After click on the calender, a
 `calender` will pop-up for inputting date.
+
+## Common Use Cases
+
+- **Date-only input with calendar popup** — Use `<datebox/>` whenever a form needs a single date value; the built-in popup calendar eliminates manual text parsing errors.
+- **Date-and-time input** — Combine a date-format pattern with a time part (e.g. `format="yyyy-MM-dd HH:mm"`) to let users pick both date and time in one widget.
+- **Constrained date ranges** — Apply the `constraint` attribute (e.g. `constraint="no past"` or `constraint="between 20240101 and 20241231"`) to restrict the range of acceptable dates without custom validation code.
+- **Locale-aware formatting** — Bind `locale` and `format` together (e.g. `format="long"`) to render dates in the user's natural locale format while still storing a `java.util.Date` on the server.
+- **Time-zone selection** — Set `displayedTimeZones` to a comma-separated list of zone IDs and `timeZonesReadonly="false"` to let the user switch time zones directly in the calendar popup.
+
+# Example
+
+![](/zk_component_ref/images/ZKComRef_Datebox_Example.PNG)
+
+```xml
+ <datebox lenient="true" buttonVisible="false" />
+ <datebox lenient="false" buttonVisible="true" />
+```
+
+{% include IntegrateMomentjs.md %}
 
 # Keyboard Navigation
 
@@ -35,18 +54,93 @@ An edit box for holding a date. After click on the calender, a
 the calendar at the client by JavaScript code that overrides
 [zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/variables/zul.db.Renderer.html).
 
-# Example
+# Properties
 
-![](/zk_component_ref/images/ZKComRef_Datebox_Example.PNG)
+## ButtonVisible
+
+**Default Value:** `true`
+
+Controls whether the calendar-icon button on the right side of the text field is visible. When set to `false`, users can still type a date directly but cannot open the popup calendar via the button.
+
+{% include supported-since.html version="2.4.1" %}
 
 ```xml
- <datebox lenient="true" buttonVisible="false" />
- <datebox lenient="false" buttonVisible="true" />
+<datebox buttonVisible="false"/>
 ```
 
-{% include IntegrateMomentjs.md %}
+## DefaultDateTime
 
-# Properties and Features
+**Default Value:** `null` (current date/time is used)
+
+Sets the `java.time.LocalDateTime` that the calendar popup highlights when the datebox value is empty. When `null`, the popup opens at today's date and the current time. This property is useful when you want the popup to open at a specific date rather than today.
+
+Because the value is a `LocalDateTime` object (not a string), construct it — for example in a `<zscript>` block (or supply it from a composer or ViewModel) — and reference it with an EL expression.
+
+{% include supported-since.html version="9.0.0" %}
+
+```xml
+<zscript>
+    import java.time.LocalDateTime;
+    LocalDateTime startOfYear = LocalDateTime.of(2024, 1, 1, 0, 0);
+</zscript>
+<datebox defaultDateTime="${startOfYear}"/>
+```
+
+## Lenient
+
+**Default Value:** `true`
+
+Controls whether the date/time parser is lenient. When `true`, the parser uses heuristics to interpret inputs that do not precisely match the format (for example, `"Feb 30"` is silently adjusted to the nearest valid date). When `false`, inputs must match the format exactly or a validation error is shown. For stricter calendar-date checking, also see [StrictDate](#strictdate).
+
+```xml
+<datebox lenient="false"/>
+```
+
+## StrictDate
+
+**Default Value:** `false`
+
+When `true`, any calendar-invalid input such as `"Jan 0"` or `"Nov 31"` is rejected outright rather than being silently adjusted by the lenient parser. When `false`, such inputs are left for the lenient/strict parsing logic controlled by [Lenient](#lenient).
+
+{% include supported-since.html version="8.6.0" %}
+
+```xml
+<datebox strictDate="true"/>
+```
+
+## TimeZone
+
+**Default Value:** `null` (uses the server default from `TimeZones.getCurrent()`)
+
+Sets the `java.util.TimeZone` that the datebox uses for display and parsing. Pass `null` to revert to the system default. When `displayedTimeZones` is also set, the assigned time zone must be one of those in the list; otherwise the first time zone in the list is selected automatically.
+
+```xml
+<datebox displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8"/>
+```
+
+## TimeZonesReadonly
+
+**Default Value:** `true`
+
+When `true`, the time-zone drop-down shown in the calendar popup is read-only and the user cannot change the active time zone. Set to `false` to allow the user to select a different time zone from the list provided by `displayedTimeZones`.
+
+{% include supported-since.html version="3.6.3" %}
+
+```xml
+<datebox displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8" timeZonesReadonly="false"/>
+```
+
+## TodayLinkLabel
+
+**Default Value:** `"Today"`
+
+Customizes the text of the "Today" link shown in the day view of the calendar popup. Only visible when `showTodayLink="true"`. Use this to provide a localized or application-specific label.
+
+{% include supported-since.html version="8.0.4" %}
+
+```xml
+<datebox showTodayLink="true" todayLinkLabel="Go to Today"/>
+```
 
 ## Constraint
 
@@ -322,16 +416,11 @@ example:
 <datebox closePopupOnTimezoneChange="false" displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8" timeZonesReadonly="false"/>
 ```
 
-# Inherited Functions
-
-Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement)
-for inherited functions.
-
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onTimeZoneChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes the time zone of the component is changed by user. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onTimeZoneChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the time zone of the component is changed by user. |
 
 - Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
 
@@ -351,13 +440,7 @@ zul.jar.
 
 Check inherited events
 
-# Version History
+# Inherited Functions
 
-| Version | Date         | Content                                                                                                               |
-|---------|--------------|----------------------------------------------------------------------------|
-| 5.0.3   | July, 2010   | An application can control the first day of the week by use of the session attribute and the library property. Please refer to [The First Day of the Week]({{site.baseurl}}/zk_dev_ref/internationalization/the_first_day_of_the_week) for details. |
-| 5.0.4   | August, 2010 | Calendar supports moving to next/prev mon by mouse scrolling.              |
-| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setFormat(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setFormat(java.lang.String)) supported the styling. |
-| 5.0.7   | April, 2011  | [org.zkoss.zul.Datebox#setLocale(java.util.Locale)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html#setLocale(java.util.Locale)) was introduced. |
-| 6.5.0   | June, 2012   | [ZK-1175](https://tracker.zkoss.org/browse/ZK-1175): Calendar support show week number |
-| 9.5.1   | October 2020 | [ZK-3289](https://tracker.zkoss.org/browse/ZK-3289): Monthly / yearly options for datebox. |
+Please refer to [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement)
+for inherited functions.
