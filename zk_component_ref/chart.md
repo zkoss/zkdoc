@@ -2,9 +2,9 @@
 title: "Chart"
 ---
 
-- Demonstration: [Chart](http://www.zkoss.org/zkdemo/chart/pie_chart)
-- Java API: [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)
-- JavaScript API: [zul.wgt.Chart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Chart.html)
+- **Demonstration:** [Chart](https://www.zkoss.org/zkdemo/chart/pie_chart)
+- **Java API:** [org.zkoss.zul.Chart](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Chart.html)
+- **JavaScript API:** [zul.wgt.Chart](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Chart.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
@@ -17,6 +17,59 @@ prepare a `ChartModel` and a `ChartEngine`. Developers also set proper
 chart type, and the threeD (3D) attribute to draw a proper chart. The
 model and type must match each other, or the result is unpredictable.
 The 3D chart is not supported on all chart types.
+
+## Common Use Cases
+
+### Bar Chart with CategoryModel
+
+Use `type="bar"` together with a `CategoryModel` to compare values across categories.
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    CategoryModel salesModel = new SimpleCategoryModel();
+    salesModel.setValue("Revenue", "Q1", new Integer(120));
+    salesModel.setValue("Revenue", "Q2", new Integer(150));
+    salesModel.setValue("Revenue", "Q3", new Integer(130));
+    salesModel.setValue("Revenue", "Q4", new Integer(170));
+]]></zscript>
+<chart type="bar" title="Sales" width="600px" height="300px"
+       xAxis="Quarter" yAxis="Revenue" model="${salesModel}"/>
+```
+
+### Pie Chart
+
+Use `type="pie"` with a `PieModel` to show proportional data.
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    PieModel pieModel = new SimplePieModel();
+    pieModel.setValue("Market A", 35.5);
+    pieModel.setValue("Market B", 28.3);
+    pieModel.setValue("Market C", 21.2);
+    pieModel.setValue("Market D", 15.0);
+]]></zscript>
+<chart type="pie" title="Market Share" width="500px" height="250px"
+       threeD="true" showLegend="true" model="${pieModel}"/>
+```
+
+### Time Series Chart
+
+Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for date-based axes.
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    XYModel tsModel = new SimpleXYModel();
+    tsModel.addValue("CPU", new Integer(0), new Integer(45));
+    tsModel.addValue("CPU", new Integer(1), new Integer(52));
+    tsModel.addValue("CPU", new Integer(2), new Integer(48));
+    tsModel.addValue("CPU", new Integer(3), new Integer(61));
+]]></zscript>
+<chart type="time_series" title="CPU Usage" width="700px" height="350px"
+       period="minute" dateFormat="HH:mm" model="${tsModel}"/>
+```
 
 # Example
 
@@ -784,32 +837,317 @@ The 3D chart is not supported on all chart types.
 
 # Properties
 
-## Type and Model
+## Type
 
-| Type | Model | 3D |
+**Default Value:** `"pie"`
+
+Sets the chart type. The value must be one of the type constants defined on `Chart`. The model assigned via `model` must match the chosen type; see the type-model compatibility table in the Employment/Purpose section.
+
+| Value | Required Model | 3D Support |
 |---|---|---|
-| `pie` | `PieModel` | `o` |
-| `ring` | `PieModel` | `x` |
-| `bar` | `CategoryModel`or`XYModel` | `o` |
-| `line` | `CategoryModel`or`XYModel` | `o` |
-| `area` | `CategoryModel`or`XYModel` | `x` |
-| `stacked_bar` | `CategoryModel` | `o` |
-| `stacked_area` | `CategoryModel`or`XYModel` | `x` |
-| `waterfall` | `CategoryModel` | `x` |
-| `polar` | `XYModel` | x |
-| `scatter` | `XYModel` | x |
-| `time_series` | `XYModel` | x |
-| `polar` | `XYModel` | x |
-| `step_area` | `XYModel` | x |
-| `step` | `XYModel` | x |
-| `histogram` | `XYModel` | x |
-| `bubble` | `XYModel` | x |
-| `wind` | `XYModel` | x |
-| `candlestick` | `HiLoModel` | x |
-| `highlow` | `HiLoModel` | x |
-| `wafermap` | `WaferMapModel` | x |
-| `gantt` | `GanttModel` | x |
-| `dial` | `DialModel` | x |
+| `area` | `CategoryModel` or `XYModel` | No |
+| `bar` | `CategoryModel` | Yes |
+| `bubble` | `XYZModel` | No |
+| `candlestick` | `HiLoModel` | No |
+| `dial` | `DialModel` | No |
+| `gantt` | `GanttModel` | No |
+| `highlow` | `HiLoModel` | No |
+| `histogram` | `XYModel` | No |
+| `line` | `CategoryModel` or `XYModel` | Yes |
+| `pie` | `PieModel` | Yes |
+| `polar` | `XYModel` | No |
+| `ring` | `PieModel` | No |
+| `scatter` | `XYModel` | No |
+| `stacked_area` | `CategoryModel` or `XYModel` | No |
+| `stacked_bar` | `CategoryModel` | Yes |
+| `step` | `XYModel` | No |
+| `step_area` | `XYModel` | No |
+| `time_series` | `XYModel` | No |
+| `wafermap` | `WaferMapModel` | No |
+| `waterfall` | `CategoryModel` | No |
+| `wind` | `XYZModel` | No |
+
+```xml
+<chart type="bar" width="500px" height="250px"/>
+```
+
+## ThreeD
+
+**Default Value:** `false`
+
+Sets whether to render the chart in three dimensions. Only chart types that have a 3D peer (`bar`, `line`, `pie`, `stacked_bar`) support this; all other types silently ignore it.
+
+```xml
+<chart type="pie" threeD="true" width="500px" height="250px"/>
+```
+
+## Title
+
+**Default Value:** `null` (no title displayed)
+
+Sets the text shown as the chart's title.
+
+```xml
+<chart type="bar" title="Monthly Sales" width="500px" height="250px"/>
+```
+
+## XAxis
+
+**Default Value:** `null`
+
+Sets the label text displayed along the x-axis.
+
+```xml
+<chart type="bar" xAxis="Quarter" width="500px" height="250px"/>
+```
+
+## YAxis
+
+**Default Value:** `null`
+
+Sets the label text displayed along the y-axis.
+
+```xml
+<chart type="bar" yAxis="Revenue (USD)" width="500px" height="250px"/>
+```
+
+## ShowLegend
+
+**Default Value:** `true`
+
+Controls whether the chart legend is displayed.
+
+```xml
+<chart type="pie" showLegend="false" width="500px" height="250px"/>
+```
+
+## ShowTooltiptext
+
+**Default Value:** `true`
+
+Controls whether a tooltip is popped when the user hovers over a chart area.
+
+```xml
+<chart type="bar" showTooltiptext="false" width="500px" height="250px"/>
+```
+
+## PaneAlpha
+
+**Default Value:** `255` (fully opaque)
+
+Sets the transparency of the chart pane (plot background). Values range from `0` (fully transparent) to `255` (fully opaque). Values outside this range are silently clamped to `255`.
+
+```xml
+<chart type="bar" paneAlpha="180" width="500px" height="250px"/>
+```
+
+## PaneColor
+
+**Default Value:** `null` (engine default, typically `#EEEEEE`)
+
+Sets the background color of the chart pane (plot area). Specify the color in `#RRGGBB` hexadecimal format. Set to `null` to restore the engine default.
+
+```xml
+<chart type="bar" paneColor="#FFFFFF" width="500px" height="250px"/>
+```
+
+## FgAlpha
+
+**Default Value:** `255` (fully opaque)
+
+Sets the transparency of the chart foreground (data series rendering). Values range from `0` (fully transparent) to `255` (fully opaque). Values outside this range are silently clamped to `255`.
+
+```xml
+<chart type="bar" fgAlpha="200" width="500px" height="250px"/>
+```
+
+## BgAlpha
+
+**Default Value:** `255` (fully opaque)
+
+Sets the transparency of the overall chart background. Values range from `0` (fully transparent) to `255` (fully opaque). Values outside this range are silently clamped to `255`.
+
+```xml
+<chart type="pie" bgAlpha="128" width="500px" height="250px"/>
+```
+
+## BgColor
+
+**Default Value:** `null` (engine default, typically `#FFFFFF`)
+
+Sets the overall background color of the chart. Specify the color in `#RRGGBB` hexadecimal format. Set to `null` to restore the engine default.
+
+```xml
+<chart type="bar" bgColor="#F5F5F5" width="500px" height="250px"/>
+```
+
+## Orient
+
+**Default Value:** `"vertical"`
+
+Sets the chart orientation. Applicable to chart types that support an orientation axis (e.g. `bar`).
+
+| Value | Meaning |
+|---|---|
+| `vertical` | Category axis runs horizontally; value axis runs vertically (default) |
+| `horizontal` | Category axis runs vertically; value axis runs horizontally |
+
+```xml
+<chart type="bar" orient="horizontal" width="500px" height="250px"/>
+```
+
+## TimeZone
+
+**Default Value:** `null` (uses `TimeZones.getCurrent()`)
+
+Sets the `java.util.TimeZone` used to render date/time axes in a `time_series` chart. When `null`, the default time zone determined by `org.zkoss.util.TimeZones.getCurrent()` is applied. This property is set programmatically — it cannot be set inline in ZUL because `TimeZone` has no string constructor; use a composer or MVVM binding.
+
+```xml
+<chart id="tsChart" type="time_series" period="day"
+       width="700px" height="300px"/>
+```
+
+## Period
+
+**Default Value:** `null` (treated as `"millisecond"` when unspecified)
+
+Sets the time period unit used on the time axis of a `time_series` chart.
+
+| Value | Meaning |
+|---|---|
+| `millisecond` | Millisecond granularity (default when unset) |
+| `second` | Second granularity |
+| `minute` | Minute granularity |
+| `hour` | Hour granularity |
+| `day` | Day granularity |
+| `week` | Week granularity |
+| `month` | Month granularity |
+| `quarter` | Quarter granularity |
+| `year` | Year granularity |
+
+```xml
+<chart type="time_series" period="day" dateFormat="yyyy-MM-dd"
+       width="700px" height="300px"/>
+```
+
+## DateFormat
+
+**Default Value:** `null` (engine default format)
+
+Sets the date format pattern used on date-related chart axes (e.g. `time_series`). The pattern follows `java.text.SimpleDateFormat` conventions.
+
+```xml
+<chart type="time_series" period="month" dateFormat="MMM yyyy"
+       width="700px" height="300px"/>
+```
+
+## Model
+
+**Default Value:** `null` (a default model is auto-created when the chart draws)
+
+Associates a `ChartModel` with this chart. The model type must match the chosen `type`; see the type-model compatibility table above. Assigning a new model (even the same instance) always triggers a redraw. Set to `null` to dissociate the current model.
+
+Build the model in a `<zscript>` block (declared before the chart) and reference it via EL:
+
+```xml
+<zscript><![CDATA[
+    import org.zkoss.zul.*;
+    CategoryModel categoryModel = new SimpleCategoryModel();
+    categoryModel.setValue("2024", "Q1", new Integer(25));
+    categoryModel.setValue("2024", "Q2", new Integer(38));
+    categoryModel.setValue("2024", "Q3", new Integer(42));
+    categoryModel.setValue("2024", "Q4", new Integer(55));
+]]></zscript>
+<chart type="bar" model="${categoryModel}" width="500px" height="250px"/>
+```
+
+## TitleFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the chart title. Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically — it cannot be specified as a ZUL attribute string.
+
+```xml
+<chart id="myChart" type="bar" title="Sales Report"
+       width="500px" height="250px"/>
+```
+
+## LegendFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the chart legend. Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically — it cannot be specified as a ZUL attribute string.
+
+```xml
+<chart id="myChart" type="pie" showLegend="true"
+       width="500px" height="250px"/>
+```
+
+## XAxisTickFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the tick number labels on the x-axis. Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically.
+
+```xml
+<chart id="myChart" type="bar" xAxis="Quarter"
+       width="500px" height="250px"/>
+```
+
+## XAxisFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the x-axis label (the text set via `xAxis`). Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically.
+
+```xml
+<chart id="myChart" type="bar" xAxis="Quarter"
+       width="500px" height="250px"/>
+```
+
+## YAxisTickFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the tick number labels on the y-axis. Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically.
+
+```xml
+<chart id="myChart" type="bar" yAxis="Revenue"
+       width="500px" height="250px"/>
+```
+
+## YAxisFont
+
+**Default Value:** `null` (engine default)
+
+Sets the `java.awt.Font` used to render the y-axis label (the text set via `yAxis`). Useful when the default font does not support the required character set (e.g. Chinese). This property must be set programmatically.
+
+```xml
+<chart id="myChart" type="bar" yAxis="Revenue"
+       width="500px" height="250px"/>
+```
+
+## Engine
+
+**Default Value:** determined by library property `org.zkoss.zul.chart.engine.class`
+
+Sets the `ChartEngine` implementation responsible for rendering the chart image. ZK PE/EE ships a JFreeChart-based engine by default. You can supply a custom engine by passing a `ChartEngine` instance or a fully-qualified class name string.
+
+```xml
+<chart type="bar" engine="com.example.MyChartEngine"
+       width="500px" height="250px"/>
+```
+
+## AreaListener
+
+**Default Value:** `null` (no custom renderer)
+
+Sets a `ChartAreaListener` that is called when chart areas are rendered, allowing custom per-area drawing logic. Changing the listener does not automatically trigger a redraw; call `smartDraw()` explicitly if needed. You can supply a `ChartAreaListener` instance or a fully-qualified class name string.
+
+```xml
+<chart type="bar" areaListener="com.example.MyAreaListener"
+       width="500px" height="250px"/>
+```
 
 # Clicked Area: Series, Legend
 
@@ -894,25 +1232,3 @@ related API in [JFreeChart JavaDoc](http://javadox.com/org.jfree/jfreechart/1.0.
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-| Version | Description                                  | Example Location                                                                               |
-|---------|----------------------------------------------|------------------------------------------------------------------------------------------------|
-| 5.0     | Make a Chart fill 100% width in parent panel | [<http://www.zkoss.org/forum/listComment/10761>](http://www.zkoss.org/forum/listComment/10761) |
-| 5.0     | Dual axis in Chart                           | [<http://www.zkoss.org/forum/listComment/8752>](http://www.zkoss.org/forum/listComment/8752)   |
-
-# Troubleshooting
-
-## Linux
-
-Chart depends on Java Swing that might not work under some version of
-JVM. For the information to make it work under Linux, please refer to
-[ZK Installation Guide: Linux]({{site.baseurl}}/zk_installation_guide/linux).
-
-# Version History
-
-| Version | Date | Content |
-|---|---|---|
-| 5.0.4 | August 2010 | MouseEvent introduced a new method, [org.zkoss.zk.ui.event.MouseEvent#getAreaComponent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html#getAreaComponent()), which simplifies the retrieval of the area component. <div class="sourceCode" id="cb1"><pre class="sourceCode java">`Area area = (Area)event.getAreaComponent(); //must be Area or null when used with chart if (area != null) ...``</pre></div> |
-| 5.0.3 | June 2010 | The area sent with the click event becomes UUID of the area component. Thus, use `desktop.getComponentByUuid(event.getArea())`. To write a program compatible with any version of ZK: <div class="sourceCode" id="cb2"><pre class="sourceCode java">`String areaid = event.getArea(); if (areaid != null) { Area area = desktop.getComponentByUuidIfAny(areaid); if (area == null) area = chart.getFellow(areaid); //fall back to older version ...``</pre></div> |
