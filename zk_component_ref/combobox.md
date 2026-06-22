@@ -2,9 +2,9 @@
 title: "Combobox"
 ---
 
-- Demonstration: [Combobox](http://www.zkoss.org/zkdemo/combobox)
-- Java API: [org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html)
-- JavaScript API: [zul.inp.Combobox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Combobox.html)
+- **Demonstration:** [Combobox](http://www.zkoss.org/zkdemo/combobox)
+- **Java API:** [org.zkoss.zul.Combobox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Combobox.html)
+- **JavaScript API:** [zul.inp.Combobox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Combobox.html)
 
 # Employment/Purpose
 
@@ -24,7 +24,14 @@ without allowing custom text, refer to the
 [Searchbox]({{site.baseurl}}/zk_component_ref/searchbox) component
 instead.
 
-# Examples
+## Common Use Cases
+
+- **Free-text entry with suggestions** — users can type any value or pick from a pre-populated list; the authoritative field is always the text `value`.
+- **Autocomplete from a large dataset** — assign a `ListSubModel`-backed model so the drop-down filters as the user types, avoiding loading thousands of items at once.
+- **Constrained selection with read-only mode** — set `readonly="true"` to prevent free-text entry while still letting users pick from the list (for strict selection without free-text, prefer [Searchbox]({{site.baseurl}}/zk_component_ref/searchbox)).
+- **Dynamic list population** — listen to `onOpen` or `onChanging` to build or refresh the list of `comboitem` children on demand.
+
+# Example
 
 ## Selection Only
 
@@ -377,20 +384,107 @@ can abort the change and revert to previous selection.
 {% include supported-since.html version="8.6.2" %} Specify the sclass name of the
 Combobox button icon.
 
-# Inherited Functions
+## ButtonVisible
 
-Please refer to [ Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited
-functions.
+**Default Value:** `true`
+
+Controls whether the drop-down button on the right side of the text field is rendered. Set to `false` to hide the button while still allowing the drop-down list to open via keyboard shortcut (`Alt+DOWN`) or programmatically.
+
+```xml
+<combobox buttonVisible="false"/>
+```
+
+## EmptySearchMessage
+
+**Default Value:** `null`
+
+{% include supported-since.html version="8.5.1" %}
+
+Sets the message displayed in the drop-down popup when a model-backed search yields no matching items. This property is only meaningful when a `model` is assigned; it has no effect on a static list of `comboitem` children.
+
+```xml
+<zscript>
+    ListModel model = new ListModelList(new String[]{"Apple", "Banana", "Cherry"});
+</zscript>
+<combobox model="${model}" emptySearchMessage="No results found"/>
+```
+
+## ItemRenderer
+
+{% include supported-since.html version="3.0.2" %}
+
+Assigns a custom `ComboitemRenderer` that controls how each model element is rendered as a `Comboitem` when a `model` is set. When `null` (the default), ZK uses a built-in renderer that calls `toString()` on each element.
+
+Note: changing the renderer after a model has already been rendered does **not** automatically re-render the list. To force a re-render, re-assign the same model: `combobox.setModel(combobox.getModel())`.
+
+```xml
+<zscript>
+    // both the model and the renderer are Java objects; build them in code and reference via EL
+    ListModel model = new ListModelList(new String[]{"Option A", "Option B", "Option C"});
+    ComboitemRenderer renderer = new MyCustomRenderer();
+</zscript>
+<combobox model="${model}" itemRenderer="${renderer}"/>
+```
+
+## Model
+
+{% include supported-since.html version="3.0.2" %}
+
+Assigns a `ListModel` as the data source for the combobox, replacing any statically declared `comboitem` children. The model must also implement `Selectable`; if it does not, an `UiException` is thrown at runtime.
+
+For autocomplete with filtering, use a model that implements `ListSubModel` (e.g. `SimpleListModel`, or wrap any `ListModel` with `ListModels.toListSubModel(...)`). A plain `ListModelList` does **not** implement `ListSubModel` and will show all items regardless of user input.
+
+Assigning a new model (even the same instance) always triggers a full re-render of the drop-down items.
+
+```xml
+<zscript>
+    ListModel model = new ListModelList(new String[]{"Option A", "Option B", "Option C"});
+</zscript>
+<combobox model="${model}"/>
+```
+
+## Open
+
+**Default Value:** `false`
+
+{% include supported-since.html version="6.0.0" %}
+
+Controls whether the drop-down list is currently open. Setting this property to `true` opens the list; `false` closes it. The setter only has an effect while the component is visible; calling `setOpen` on a hidden combobox is a no-op.
+
+For unconditional programmatic control (bypassing the visibility check), use the `open()` and `close()` Java methods directly.
+
+```xml
+<combobox open="true">
+  <comboitem label="Option A"/>
+  <comboitem label="Option B"/>
+</combobox>
+```
+
+## SelectedIndex
+
+**Default Value:** `-1` (nothing selected)
+
+{% include supported-since.html version="3.0.2" %}
+
+Deselects the currently selected item and selects the `Comboitem` at the given zero-based index. Pass `-1` to clear the selection. Throws `UiException` if the index is out of range.
+
+When using a `ListSubModel` for autocomplete, the displayed list is a filtered subset of the full model, so the index refers to the rendered items, not the underlying model positions.
+
+```xml
+<combobox selectedIndex="0">
+  <comboitem label="Option A"/>
+  <comboitem label="Option B"/>
+</combobox>
+```
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| onSelect | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Represents an event caused by user's the list selection is changed at the client. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement <em>load-on-demand</em>by listening to the `onOpen`event, and creating components when the first time the component is opened. |
-| `onAfterRender` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) |
+| Name | Event Type | Description |
+|---|---|---|
+| onSelect | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Represents an event caused by user's the list selection is changed at the client. |
+| onOpen | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement <em>load-on-demand</em> by listening to the `onOpen` event, and creating components when the first time the component is opened. |
 
-- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
+- Inherited Supported Events: [Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
 
 # Supported Molds
 
@@ -404,13 +498,8 @@ zul.jar.
 
 # Supported Children
 
-`* `[` Comboitem`]({{site.baseurl}}/zk_component_ref/comboitem)
+`* ` [Comboitem]({{site.baseurl}}/zk_component_ref/comboitem)
 
-# Version History
+# Inherited Functions
 
-| Version | Date         | Content                                                                                                                                                                                       |
-|---------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 8.6.1   | January 2019 | [ZK-4185](https://tracker.zkoss.org/browse/ZK-4185): Combobox: provide option to reduce onSelect/onChange events when using keyboard                                                          |
-| 5.0.4   | August 2010  | [org.zkoss.zul.ListModels](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModels.html) was introduced to simply the implementation of autocomplete.                                                                                      |
-| 5.0.4   | July 2010    | Combobox supported [org.zkoss.zul.ext.Selectable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html) if it is also implemented with the specified [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html). |
-| 5.0.4   | July 2010    | Supported onAfterRender event                                                                                                                                                                 |
+Please refer to [Textbox]({{site.baseurl}}/zk_component_ref/textbox) for inherited functions.

@@ -2,10 +2,9 @@
 title: "Window"
 ---
 
-- Demonstration:
-  [Window](http://www.zkoss.org/zkdemo/window/positioning)
-- Java API: [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
-- JavaScript API: [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)
+- **Demonstration:** [Window](http://www.zkoss.org/zkdemo/window/positioning)
+- **Java API:** [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html)
+- **JavaScript API:** [zul.wnd.Window](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wnd.Window.html)
 
 # Employment/Purpose
 
@@ -18,6 +17,14 @@ components, a window has the following characteristics.
   if it is assigned with an identifier.
 - A window could be overlapped, popup, and embedded.
 - A window could be a modal dialog.
+
+## Common Use Cases
+
+- **Modal dialogs** — prompt users for confirmation or required input without allowing them to interact with the rest of the page (use `mode="modal"`).
+- **Overlapped utility windows** — display supplementary information (logs, help, detail panels) alongside the main content without navigating away; users can drag and reposition them.
+- **Resizable/maximizable panels** — combine `sizable="true"` with `maximizable="true"` and `minimizable="true"` to give users full control over a floating workspace panel.
+- **Popup context windows** — anchor a transient window near a triggering element (`mode="popup"` + `position="parent"`) so it dismisses automatically when the user clicks elsewhere.
+- **Inline content grouping** — use the default embedded mode as a styled container (with `border="normal"` and a `title`) to visually group related form fields or content blocks.
 
 # Example
 
@@ -221,7 +228,16 @@ win2.doHighlighted(); //the execution won't be suspended
 g1()
 ```
 
-# Properties and Features
+# Common Dialogs
+
+The XUL component set supports the following common dialogs to simplify
+some common tasks.
+
+- [Messagebox](/zk_component_ref/messagebox)
+- [Fileupload](/zk_component_ref/fileupload)
+- [Filedownload](/zk_component_ref/filedownload)
+
+# Properties
 
 ## Border
 
@@ -420,26 +436,129 @@ then the appearance is as follows.
 </zk>
 ```
 
-# Common Dialogs
+## Maximizable
 
-The XUL component set supports the following common dialogs to simplify
-some common tasks.
+**Default Value:** `false`
 
-- [Messagebox](/zk_component_ref/messagebox)
-- [Fileupload](/zk_component_ref/fileupload)
-- [Filedownload](/zk_component_ref/filedownload)
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether to display a maximize button on the title bar and allow the user to maximize the window. When the window is maximized, the button automatically changes to a restore button that returns the window to its original size.
+
+Note: the maximize button is not displayed if the window has neither a `title` attribute nor a child `<caption>` component.
+
+```xml
+<window title="My Window" border="normal" width="400px" maximizable="true">
+    This window can be maximized.
+</window>
+```
+
+## Maximized
+
+**Default Value:** `false`
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether the window is currently maximized. When set to `true`, the window expands to fill its offset parent (for overlapped windows) or its parent container (for embedded windows). Setting it back to `false` restores the window to its previous size.
+
+Requires `maximizable="true"`; throws an `UiException` if `maximizable` is `false`. Setting `maximized="true"` also clears any minimized state.
+
+```xml
+<window title="My Window" border="normal" width="400px"
+        maximizable="true" maximized="true">
+    This window starts maximized.
+</window>
+```
+
+## Minimizable
+
+**Default Value:** `false`
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether to display a minimize button on the title bar. Because the ZK default minimize behavior simply hides the window, you normally listen to the `onMinimize` event and implement a custom minimize behavior (for example, collapsing the window to a taskbar entry).
+
+Note: the minimize button is not displayed if the window has neither a `title` attribute nor a child `<caption>` component.
+
+```xml
+<window title="My Window" border="normal" width="400px"
+        minimizable="true" onMinimize="doCustomMinimize(self)">
+    This window can be minimized.
+</window>
+```
+
+## Minimized
+
+**Default Value:** `false`
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether the window is currently minimized. When set to `true`, the window becomes invisible (hidden). Setting it back to `false` makes it visible again.
+
+Requires `minimizable="true"`; throws an `UiException` if `minimizable` is `false`. Setting `minimized="true"` also clears any maximized state.
+
+```xml
+<window title="My Window" border="normal" width="400px"
+        minimizable="true" minimized="true">
+    This window starts minimized (hidden).
+</window>
+```
+
+## Minheight
+
+**Default Value:** `100` (pixels)
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets the minimum height in pixels that the window can be resized to. Negative values are treated as `100`. This property only takes effect when `sizable="true"`.
+
+```xml
+<window title="Sizable Window" border="normal" width="400px" height="300px"
+        sizable="true" minheight="150">
+    This window cannot be resized below 150px in height.
+</window>
+```
+
+## Minwidth
+
+**Default Value:** `200` (pixels)
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets the minimum width in pixels that the window can be resized to. Negative values are treated as `200`. This property only takes effect when `sizable="true"`.
+
+```xml
+<window title="Sizable Window" border="normal" width="400px" height="300px"
+        sizable="true" minwidth="250">
+    This window cannot be resized below 250px in width.
+</window>
+```
+
+## Shadow
+
+**Default Value:** `true`
+
+{% include supported-since.html version="3.6.0" %}
+
+Sets whether to render a drop-shadow beneath an overlapped, popup, or modal window. This property has no visible effect for embedded windows.
+
+```xml
+<window title="No Shadow" mode="overlapped" border="normal"
+        width="300px" shadow="false">
+    This overlapped window has no shadow.
+</window>
+```
 
 # Supported Events
 
-| Name | Event Type |
-|------|------------|
-| `onMove` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)<br><br>Denotes the position of the window is moved by a user. |
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html)<br><br>Denotes user has opened or closed a component.<br><br>**Note:**<br>Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component.<br><br>It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
-| `onClose` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)<br><br>Denotes the close button is pressed by a user, and the component shall detach itself. |
-| `onMaximize` | **Event:** [org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html)<br><br>Denotes user has maximize a component. |
-| `onMinimize` | **Event:** [org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html)<br><br>Denotes user has minimize a component. |
-| `onSize` | **Event:** [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)<br><br>Denotes the panel's size is updated by a user. |
-| `onZIndex` | **Event:** [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)<br><br>Denotes the panel's zindex is updated by a user. |
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onMove` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the position of the window is moved by a user. |
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| `onClose` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the close button is pressed by a user, and the component shall detach itself. |
+| `onMaximize` | [org.zkoss.zk.ui.event.MaximizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MaximizeEvent.html) | Denotes user has maximize a component. |
+| `onMinimize` | [org.zkoss.zk.ui.event.MinimizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MinimizeEvent.html) | Denotes user has minimize a component. |
+| `onSize` | [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the panel's size is updated by a user. |
+| `onZIndex` | [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's zindex is updated by a user. |
 
 - [Inherited Supported Events](/zk_component_ref/xulelement#Supported_Events)
 

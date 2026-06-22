@@ -2,14 +2,21 @@
 title: "Label"
 ---
 
-- Demonstration: [Label](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Label](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html)
-- JavaScript API: [zul.wgt.Label](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Label.html)
+- **Demonstration:** [Label](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Label](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html)
+- **JavaScript API:** [zul.wgt.Label](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Label.html)
 
 # Employment/Purpose
 
 A label component represents a piece of text. A pure text on the zul
 will be automatically converted to a label.
+
+## Common Use Cases
+
+- **Form field labels** — pair a `<label>` with an input widget (e.g. `<textbox>`) to provide a visible caption; use `sclass` or `style` to match form layout.
+- **Dynamic text display** — bind `value` to a view-model property so the label re-renders automatically when the backing data changes (MVVM `@bind` or `@load`).
+- **Pre-formatted output** — set `pre="true"` to preserve spaces, tabs, and newlines when showing code snippets or structured plain-text content.
+- **Truncated display** — set `maxlength` to a positive integer to cap visible characters, useful in tight table cells or list items where overflow must be avoided.
 
 # Example
 
@@ -76,19 +83,68 @@ Since ZUML is XML, not HTML, so it doesn't accept
 
 # Properties
 
-## Pre, Hyphen, Maxlength and Multiline
+## Value
 
-{% include RemovedSince.html version=10.0.0 %} Hyphen is removed. Use CSS to
-achieve it.
+**Default Value:** `""`
+
+Sets the text content displayed by the label. Passing `null` is treated as an empty string. Because `value` is the `textAs` attribute for `<label>`, you can also supply it as inline text content:
+
+```xml
+<!-- attribute form -->
+<label value="Hello World" />
+
+<!-- inline text form (equivalent) -->
+<label>Hello World</label>
+```
+
+## Pre
 
 {% include supported-since.html version="5.0.0" %}
 
-You can control how a label is displayed using the `pre`, `multiline`
-and `maxlength` properties. For example, if you specify `pre` to be
-true, all white spaces, such as new lines, spaces and tabs, are
-preserved.
+When set to `true`, preserves all white spaces (including new lines, spaces, and tabs) in the label's value, useful for displaying pre-formatted text such as code snippets or structured plain-text content.
 
-| pre | multiline | maxlenth | Description |
+```xml
+<window border="normal" width="300px">
+    <label id="lb1" pre="true"></label>
+    <zscript><![CDATA[
+        lb1.value = "    this   thing   has   spaces.\nnext line.";
+    ]]></zscript>
+</window>
+```
+
+## Multiline
+
+{% include supported-since.html version="5.0.0" %}
+
+When set to `true`, preserves new lines and white space at the beginning of each line, but not other interior spaces or tabs. This is similar to `pre` but less strict.
+
+```xml
+<window border="normal" width="300px">
+    <label id="lb2" multiline="true" />
+    <zscript><![CDATA[
+        lb2.value = "    this   thing   has   spaces.\nnext line.";
+    ]]></zscript>
+</window>
+```
+
+## Maxlength
+
+{% include supported-since.html version="5.0.0" %}
+
+Limits the number of characters displayed in the label. When set to a positive integer and both `pre` and `multiline` are `false`, the label shows only the first `maxlength` characters of its value, truncating the rest. A value of `0` disables truncation.
+
+```xml
+<window border="normal" width="300px">
+    <label id="lb3" maxlength="10" />
+    <zscript><![CDATA[
+        lb3.value = "    this is more than 10 chars.";
+    ]]></zscript>
+</window>
+```
+
+### Property Interaction Table
+
+| pre | multiline | maxlength | Description |
 |-----|-----------|----------|-------------|
 | true | any | any | All white spaces are preserved, including new lines, spaces and tabs. |
 | false | true | any | New lines are preserved. |
@@ -96,63 +152,6 @@ preserved.
 | false | false | 0 | The label is displayed regularly. |
 
 ![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
-
-```xml
-<window border="normal" width="300px">
-    <vbox id="result">
-        <label id="lb1" pre="true"></label>
-        <separator bar="true"/>
-        <label id="lb2" multiline="false" />
-        <separator bar="true"/>
-        <label id="lb3" maxlength="10" />
-        <zscript><![CDATA[
-            lb1.value = "    this   thing   has   spaces.\nnext line.";
-            lb2.value = "    this   thing   no   space.\nnext line.";
-            lb3.value = "    this is more than 10 chars.";
-        ]]></zscript>
-    </vbox>
-</window>
-```
-
-`[For ZK3 users]`
-
-This displaying rule is slightly different in ZK3.
-
-| hyphen | pre | maxlenth | Description |
-|---|---|---|---|
-| false | false | positive | Truncated the characters that exceeds the specified `maxlength`. |
-| true | any | positive | If the length of a line exceeds `maxlength`, the line is hyphenated. |
-| false | true | any | `maxlength` is ignored. |
-| any | any | 0 | `hyphen` is ignored. |
-
-![](/zk_component_ref/images/ZKComRef_Label_Text_ZK3.png)
-
-```xml
- 
-<window border="normal" width="300px">
-    <vbox id="result">
-    </vbox>
-    <zscript><![CDATA[
-        String[] s = {"this is 9", 
-                        "this is ten more to show",
-                        "this framework", 
-                        "performance is everything"};
-        for (int j = 0; j < s.length; ++j) {
-            Label l = new Label(s[j]);
-            l.maxlength = 9;
-            l.hyphen = true;
-            l.parent = result;
-            Separator sep =  new Separator();
-            sep.setBar(true);
-            sep.parent = result;
-        }
-    ]]>
-    </zscript>
-</window>
-```
-
-The `multiline` property is similar to the `pre` property, except it
-only preserves new lines and white space at the beginning of each line.
 
 # Supported Events
 
