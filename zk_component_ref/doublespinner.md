@@ -2,15 +2,19 @@
 title: "Doublespinner"
 ---
 
-- Demonstration:
-  [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Doublespinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublespinner.html)
-- JavaScript API:
-  [zul.inp.Doublespinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublespinner.html)
+- **Demonstration:** [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Doublespinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Doublespinner.html)
+- **JavaScript API:** [zul.inp.Doublespinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Doublespinner.html)
 
 # Employment/Purpose
 
 An edit box for holding a constrained double.
+
+## Common Use Cases
+
+- **Numeric input with bounds**: Use `doublespinner` when you need users to enter a floating-point number and want to enforce a minimum/maximum range via the `constraint` attribute (e.g. `min 0.0 max 100.0`).
+- **Controlled increments**: When a value must increase or decrease in a fixed step (e.g. `0.1`, `0.5`, or `2.5`), set the `step` attribute so the spinner buttons move the value by that exact amount.
+- **Embedded numeric editors**: Hide the spin buttons (`buttonVisible="false"`) when the spinner is used inside a compact form or table cell where only keyboard input is expected, while still enforcing the numeric type and constraint.
 
 # Example
 
@@ -43,22 +47,14 @@ can use client api to modify the width (server side do not need to know)
 
 # Properties
 
-## Format
+## ButtonVisible
 
-You are able to format the field by providing specifying the attribute
-with a formatting string. The default value is `null`.
+**Default Value:** `true`
 
-```xml
-<doublespinner format="#,##0.##"/>
-```
-
-`Since 8.5.2`
-
-You can provide a locale to format the number by specify the String
-starts with "locale:"
+Controls whether the up/down spin buttons to the right of the input field are rendered. Set to `false` to hide the buttons and allow only direct keyboard input; the numeric type and any `constraint` are still enforced.
 
 ```xml
-<doublespinner format="locale:zh-TW"/>
+<doublespinner buttonVisible="false" value="3.14"/>
 ```
 
 ## Constraint
@@ -92,10 +88,24 @@ Notes:
 <doublespinner step="0.5" constraint="no empty,min -2.5 max 6.5: ${c:l('err.msg.doublespinner')}"/>
 ```
 
-# Inherited Functions
+## Value
 
-Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
-for inherited functions.
+**Default Value:** `null`
+
+The current value of the spinner as a `Double`. The value may be `null` unless a `no empty` constraint is set. To bind an initial value from a ViewModel or `<zscript>`, use EL:
+
+```xml
+<zscript>
+    Double initialValue = 3.14;
+</zscript>
+<doublespinner value="${initialValue}"/>
+```
+
+For simple literal values, the attribute form is sufficient:
+
+```xml
+<doublespinner value="2.5"/>
+```
 
 # Supported Events
 
@@ -115,8 +125,7 @@ zul.jar.
 
 `*None`
 
-# Version History
+# Inherited Functions
 
-| Version | Date      | Content           |
-|---------|-----------|-------------------|
-| 5.0.6   | Dec. 2010 | add new component |
+Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
+for inherited functions.

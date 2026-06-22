@@ -2,13 +2,47 @@
 title: "Checkbox"
 ---
 
-- Demonstration: [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
-- Java API: [org.zkoss.zul.Checkbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Checkbox.html)
-- JavaScript API: [zul.wgt.Checkbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Checkbox.html)
+- **Demonstration:** [Checkbox](http://www.zkoss.org/zkdemo/input/checkbox)
+- **Java API:** [org.zkoss.zul.Checkbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Checkbox.html)
+- **JavaScript API:** [zul.wgt.Checkbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Checkbox.html)
 
 # Employment/Purpose
 
 A checkbox.
+
+## Common Use Cases
+
+### Select-all / Select-none with a Group
+
+Use a controlling checkbox whose `onCheck` handler iterates a group of checkboxes:
+
+```xml
+<checkbox id="selectAll" label="Select All"
+    onCheck="for (c : fruits.getChildren()) c.checked = selectAll.checked;" />
+<vbox id="fruits">
+    <checkbox label="Apple" />
+    <checkbox label="Orange" />
+    <checkbox label="Banana" />
+</vbox>
+```
+
+### Disable Other Controls While Processing
+
+Use `autodisable` to prevent double-submission while an action runs:
+
+```xml
+<checkbox id="agree" label="I agree" autodisable="self,submitBtn"
+    onCheck="doSubmit();" />
+<button id="submitBtn" label="Submit" />
+```
+
+### Tristate Checkbox for Indeterminate State
+
+Use `mold="tristate"` when the selection state of a group is partially fulfilled:
+
+```xml
+<checkbox mold="tristate" label="Select all items" />
+```
 
 # Example
 
@@ -32,15 +66,84 @@ A checkbox.
  </window>
 ```
 
-# Mold
+# Properties
 
-{% include supported-since.html version="8.6.0" %} There are two additional molds for
-Checkbox: switch and toggle, you can customize the mold in css by
-overriding class.
+## Autodisable
+
+**Default Value:** `null`
+
+{% include supported-since.html version="6.0.0" %}
+
+Accepts a comma-separated list of component IDs that will be disabled when the user clicks the checkbox. The checkbox re-enables those components automatically once the server responds. To refer to the checkbox itself use the special keyword `self`. Prefix any ID with `+` to disable automatic re-enabling, requiring you to re-enable those components manually.
 
 ```xml
-  <checkbox mold="switch" />
-  <checkbox mold="toggle" />
+<!-- Disable itself and a sibling button on click -->
+<checkbox id="ok" autodisable="self,cancel" label="Agree" />
+<button id="cancel" label="Cancel" />
+```
+
+```xml
+<!-- Disable with manual re-enable (+ prefix) -->
+<checkbox id="ok" autodisable="+self,+cancel" label="Submit"
+    onCheck="ok.disabled = false; cancel.disabled = false;" />
+<button id="cancel" label="Cancel" />
+```
+
+## Checked
+
+**Default Value:** `false`
+
+Sets whether the checkbox is checked. Setting `checked` to any value will also clear the `indeterminate` state if it was active.
+
+```xml
+<checkbox checked="true" label="Pre-selected" />
+```
+
+## Name
+
+**Default Value:** `null`
+
+Sets the `name` attribute of the underlying `<input>` element, used when submitting a legacy HTML form to a servlet. This property is only relevant for applications that handle requests via plain HTTP form submission rather than ZK's event-driven model. It has no effect in standard ZK AJAX applications.
+
+```xml
+<checkbox name="acceptTerms" label="I accept the terms" />
+```
+
+## Indeterminate
+
+{% include supported-since.html version="8.6.0" %}
+
+Indeterminate is a state that is neither checked nor unchecked.
+
+Note: changing `indeterminate` will not affect the `checked` value, but
+changing `checked` attribute will set `indeterminate` to `false`.
+
+```xml
+<checkbox indeterminate="true"/>
+```
+
+Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
+
+# Supported Events
+
+| Name | Event Type | Description |
+|---|---|---|
+| `onFocus` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component gets the focus. |
+| `onBlur` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component loses the focus. |
+| `onCheck` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Denotes when a component is checked or unchecked. |
+
+- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+
+# Supported Molds
+
+{% include supported-since.html version="8.6.0" %} In addition to the default mold, Checkbox supports three additional molds: switch, toggle, and tristate. You can customize the mold in CSS by overriding class.
+
+## default
+
+The standard checkbox mold with a checkmark appearance.
+
+```xml
+<checkbox label="Standard checkbox" />
 ```
 
 ## switch
@@ -108,31 +211,6 @@ INDETERMINATE.
 ```java
 State state = checkbox.getState() // CHECKED, UNCHECKED or INDETERMINATE
 ```
-
-# Indeterminate
-
-{% include supported-since.html version="8.6.0" %}
-
-Indeterminate is a state that is neither checked nor unchecked.
-
-Note: changing `indeterminate` will not affect the `checked` value, but
-changing `checked` attribute will set `indeterminate` to `false`.
-
-```xml
-    <checkbox indeterminate="true"/>
-```
-
-Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
-
-# Supported Events
-
-| Name | Event Type |
-|---|---|
-| `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component gets the focus. |
-| `onBlur` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Denotes when a component loses the focus. |
-| onCheck | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes when a component is checked or unchecked. |
-
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 

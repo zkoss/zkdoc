@@ -2,14 +2,39 @@
 title: "Spinner"
 ---
 
-- Demonstration:
-  [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
-- Java API: [org.zkoss.zul.Spinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Spinner.html)
-- JavaScript API: [zul.inp.Spinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Spinner.html)
+- **Demonstration:** [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)
+- **Java API:** [org.zkoss.zul.Spinner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Spinner.html)
+- **JavaScript API:** [zul.inp.Spinner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.inp.Spinner.html)
 
 # Employment/Purpose
 
 An edit box for holding a constrained integer.
+
+## Common Use Cases
+
+### Quantity Selector with Range Constraint
+
+Use `constraint` with `min`/`max` and a custom `step` to build a bounded quantity input:
+
+```xml
+<spinner value="1" step="1" constraint="min 1 max 100: value must be 1–100" />
+```
+
+### Hiding the Spin Buttons
+
+When embedded in a compact layout, hide the buttons and let the user type directly:
+
+```xml
+<spinner buttonVisible="false" value="0" cols="5" />
+```
+
+# In-place Editing
+
+Spinner supports in-place editing, so the input only becomes active when clicked:
+
+```xml
+<spinner inplace="true" value="10" width="60px" />
+```
 
 # Example
 
@@ -21,43 +46,32 @@ An edit box for holding a constrained integer.
  </window>
 ```
 
-# In-place Editing
-
-## Fixed Width
-
-```xml
-<spinner width="100px" inplace="true" value="30" />
-```
-
-## Dynamic Width
-
-Because inplace editing function in ZK is pure client side action, so we
-can use client api to modify the width (server side do not need to know)
-
-![](/zk_component_ref/images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
-
-```xml
-<zk xmlns:c="client">
-  <spinner inplace="true" value="240" width="30px" c:onFocus='this.setWidth("60px")' c:onBlur='this.setWidth("30px")' />
-</zk>
-```
-
 # Properties
 
-## Format
+## Value
 
-You are able to format the field by providing specifying the attribute
-with a formatting string. The default value is `null`.
+**Default Value:** `null`
+
+Sets the current integer value of the spinner. The value is an `Integer` object and may be `null` unless a constraint (such as `no empty`) prevents it. Use the `constraint` attribute to restrict the accepted range.
 
 ```xml
-<spinner format="#,##0.##"/>
+<spinner value="10" />
 ```
 
-{% include supported-since.html version="8.5.2" %} You can provide a locale to format
-the number by specifying the String starts with "locale:"
+To bind the value via MVVM:
 
 ```xml
-<spinner format="locale:zh-TW"/>
+<spinner value="@bind(vm.quantity)" />
+```
+
+## ButtonVisible
+
+**Default Value:** `true`
+
+Controls whether the increment/decrement buttons on the right side of the spinner are rendered. Set to `false` to display the spinner as a plain numeric input field without buttons.
+
+```xml
+<spinner buttonVisible="false" value="0" />
 ```
 
 ## Constraint
@@ -91,11 +105,6 @@ Notes:
 <spinner constraint="no empty,min -2 max 6: ${c:l('err.msg.spinner')}"/>
 ```
 
-# Inherited Functions
-
-Please refer to [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
-for inherited functions.
-
 # Supported Events
 
 - Inherited Supported Events: [ NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#supported-events)
@@ -114,3 +123,8 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 # Supported Children
 
 `*None`
+
+# Inherited Functions
+
+Please refer to [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement)
+for inherited functions.
