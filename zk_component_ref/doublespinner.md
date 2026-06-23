@@ -57,6 +57,8 @@ Controls whether the up/down spin buttons to the right of the input field are re
 <doublespinner buttonVisible="false" value="3.14"/>
 ```
 
+{% include SpinnerStep.md component="doublespinner" type="a `double`" default="1.0" step="0.5" value="3.14" %}
+
 ## Constraint
 
 You could specify what value to accept for input controls by use of the

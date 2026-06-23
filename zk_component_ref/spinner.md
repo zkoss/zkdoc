@@ -74,6 +74,8 @@ Controls whether the increment/decrement buttons on the right side of the spinne
 <spinner buttonVisible="false" value="0" />
 ```
 
+{% include SpinnerStep.md component="spinner" type="an `int`" default="1" step="2" value="0" %}
+
 ## Constraint
 
 You could specify what value to accept for input controls by use of the
