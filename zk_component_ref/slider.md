@@ -140,6 +140,46 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 
 # Properties
 
+## Curpos
+
+**Default Value:** `0`
+
+Sets the current position of the slider knob. The value is clamped to the range `[minpos, maxpos]`: a negative value is treated as `0`, and a value larger than `maxpos` is reduced to `maxpos`. Fractional (decimal) positions are accepted in `decimal` mode (see [Decimal Mode](#decimal-mode)).
+
+```xml
+<slider curpos="30" maxpos="100"/>
+```
+
+## Minpos
+
+**Default Value:** `0`
+
+Sets the minimum position of the slider. Must not be negative — a negative value throws a `WrongValueException`. If the current `curpos` is below the new minimum, `curpos` is raised to match.
+
+```xml
+<slider minpos="10" maxpos="100"/>
+```
+
+## Maxpos
+
+**Default Value:** `100`
+
+Sets the maximum position of the slider. Must be greater than `0` — a zero or negative value throws a `WrongValueException`. If the current `curpos` exceeds the new maximum, `curpos` is lowered to match.
+
+```xml
+<slider minpos="0" maxpos="50"/>
+```
+
+## PageIncrement
+
+**Default Value:** `-1`
+
+Sets the amount `curpos` changes by when the user clicks the slider tray (like a scrollbar page jump). The default `-1` (any negative value) makes the slider jump directly to the clicked position instead of moving by a fixed amount.
+
+```xml
+<slider pageIncrement="10" maxpos="100"/>
+```
+
 ## Orient
 
 **Default Value:** `"horizontal"`
