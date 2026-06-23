@@ -53,6 +53,28 @@ Sets the editor's HTML content. You may include HTML tags to decorate the text; 
 <tbeditor value="Hello, &lt;b&gt;world&lt;/b&gt;!"/>
 ```
 
+## config
+
+**Default Value:** `null` (uses the default Trumbowyg configuration)
+
+Tbeditor lets you customize the underlying editor through Trumbowyg's own options. Set this property to a `java.util.Map` whose keys are [Trumbowyg option names](http://alex-d.github.io/Trumbowyg/documentation.html) and whose values are the corresponding option values. Not all options are supported — for example, localization and custom skin are not supported.
+
+Because the configuration is applied before the widget binds, changing `config` after the component is rendered invalidates the component (a full re-render) rather than performing a smart update.
+
+Since the value is a Java object, construct the map in a `<zscript>` block (or a composer / ViewModel) and reference it via EL:
+
+```xml
+<zscript>
+    import java.util.HashMap;
+    Map editorConfig = new HashMap();
+    editorConfig.put("btns", new String[]{"bold", "italic", "link"});
+    editorConfig.put("closable", Boolean.TRUE);
+</zscript>
+<tbeditor config="${editorConfig}"/>
+```
+
+Most option values can be passed directly as strings, numbers, booleans, or arrays. If an option expects a raw JavaScript value (such as a function), wrap it in an `org.zkoss.json.JavaScriptValue` so it is emitted as JavaScript instead of a quoted string.
+
 # Supported Events
 
 | Name | Event Type | Description |
