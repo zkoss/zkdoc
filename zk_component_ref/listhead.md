@@ -2,14 +2,20 @@
 title: "Listhead"
 ---
 
-- Demonstration: [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
-- Java API: [org.zkoss.zul.Listhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listhead.html)
-- JavaScript API: [zul.sel.Listhead](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listhead.html)
+- **Demonstration:** [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)
+- **Java API:** [org.zkoss.zul.Listhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listhead.html)
+- **JavaScript API:** [zul.sel.Listhead](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listhead.html)
 
 # Employment/Purpose
 
-A list headers used to define multi-columns and/or headers. Can only
-surpport Listheader as its child.
+A list headers used to define multi-columns and/or headers. Only Listheader components are accepted as children.
+
+## Common Use Cases
+
+- **Column visibility control** — set `menupopup="auto"` to let users show or hide individual columns at runtime via the header context menu.
+- **Column grouping** — set `menupopup="auto"` to allow users to group list rows by a column's value directly from the context menu.
+- **Invisible header for alignment** — omit labels on all `listheader` children to use `hflex` proportions for column sizing without rendering a visible header row.
+- **Custom context menu** — point `menupopup` to a `<menupopup id="...">` to replace the auto-generated header menu with application-specific actions.
 
 # Example
 
@@ -108,36 +114,63 @@ to change this default behavior.
 As you can see, the example above specifies a customized menu popup to
 the columns as its column menu.
 
-## Invisible Listhead for Alignment
+## Columnshide
 
-Sometimes you want to use the listheader with a size or hflex value, but
-you don't want to show it up on the page, you can specify all the
-listheaders in the same listhead with an empty string.
+{% include supported-since.html version="6.5.0" %}
 
-For example,
+**Default Value:** `true`
+
+Sets whether the header context menu includes a hide/show option for each `listheader`. This option is only active when `menupopup` is set to `auto` or `auto-keep`.
+
+Set to `false` to remove the hide column option from the auto-generated context menu.
 
 ```xml
-<listbox width="200px">
-    <listhead>
-        <listheader hflex="1" />
-        <listheader hflex="2" />
-        <listheader hflex="1" />
+<listbox>
+    <listhead menupopup="auto" columnshide="false">
+        <listheader label="Name" sort="auto"/>
+        <listheader label="Status" sort="auto"/>
     </listhead>
-    <auxhead>
-        <auxheader colspan="3">
-            auxheader (listheaders hidden)
-        </auxheader>
-    </auxhead>
-    <listitem>
-        <listcell>hflex 1</listcell>
-        <listcell>hflex 2</listcell>
-        <listcell>hflex 1</listcell>
-    </listitem>
-    <listitem>
-        <listcell>hflex 1</listcell>
-        <listcell>hflex 2</listcell>
-        <listcell>hflex 1</listcell>
-    </listitem>
+</listbox>
+```
+
+## Columnsgroup
+
+{% include supported-since.html version="6.5.0" %}
+
+**Default Value:** `true`
+
+Sets whether the header context menu includes a group-by option for each `listheader`. This option is only active when `menupopup` is set to `auto` or `auto-keep`.
+
+Set to `false` to remove the group-by option from the auto-generated context menu.
+
+```xml
+<listbox>
+    <listhead menupopup="auto" columnsgroup="false">
+        <listheader label="Name" sort="auto"/>
+        <listheader label="Status" sort="auto"/>
+    </listhead>
+</listbox>
+```
+
+## Value
+
+{% include supported-since.html version="3.6.0" %}
+
+**Default Value:** `null`
+
+A generic, application-defined value attached to this `listhead`. ZK does not interpret the value in any way; it is available for the application to store arbitrary data associated with the header row (for example, a metadata object describing all columns).
+
+The value is a Java object constructed in a `<zscript>` block or assigned via a composer / ViewModel, then referenced through EL.
+
+```xml
+<zscript>
+    String headerMeta = "columnSet-A";
+</zscript>
+<listbox>
+    <listhead value="${headerMeta}">
+        <listheader label="Name"/>
+        <listheader label="Status"/>
+    </listhead>
 </listbox>
 ```
 
@@ -148,15 +181,3 @@ For example,
 # Supported Children
 
 `*`[` Listheader `]({{site.baseurl}}/zk_component_ref/listheader)
-
-# Use Cases
-
-| Version | Description          | Example Location                              |
-|---------|----------------------|-----------------------------------------------|
-| 5.0     | Multiline Listheader | <http://www.zkoss.org/forum/listComment/6864> |
-
-# Version History
-
-| Version | Date      | Content                                                                                |
-|---------|-----------|----------------------------------------------------------------------------------------|
-| 6.5.0   | June 2012 | [ZK-120](http://tracker.zkoss.org/browse/ZK-120): Provide menupopup="auto" for listbox |

@@ -2,14 +2,37 @@
 title: "Listfoot"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Listfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfoot.html)
-- JavaScript API: [zul.sel.Listfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listfoot.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Listfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfoot.html)
+- **JavaScript API:** [zul.sel.Listfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Listfoot.html)
 
 # Employment/Purpose
 
 Like [ Listhead]({{site.baseurl}}/zk_component_ref/listhead), each
 listbox has at most one `Listfoot`.
+
+## Common Use Cases
+
+- **Footer row for a Listbox** — Place a single `<listfoot>` inside a `<listbox>` to render a persistent footer row that spans the full width of the list. Each column footer cell is a `<listfooter>` child.
+- **Summary or aggregate values** — Use the footer to display column totals, averages, or other summary information that supplements the data rows above it.
+- **Static annotations** — Add non-interactive labels (e.g. data source notices, unit legends) that should remain visible regardless of how many rows the listbox contains.
+
+```xml
+<listbox>
+    <listhead>
+        <listheader label="Item"/>
+        <listheader label="Amount"/>
+    </listhead>
+    <listitem>
+        <listcell label="Widget A"/>
+        <listcell label="100"/>
+    </listitem>
+    <listfoot>
+        <listfooter label="Total"/>
+        <listfooter label="100"/>
+    </listfoot>
+</listbox>
+```
 
 # Example
 

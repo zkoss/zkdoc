@@ -2,17 +2,21 @@
 title: "Listgroupfoot"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Listgroupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroupfoot.html)
-- JavaScript API:
-  [zkex.sel.Listgroupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroupfoot.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Listgroupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroupfoot.html)
+- **JavaScript API:** [zkex.sel.Listgroupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroupfoot.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 GroupFooter serves as a summary listitem of listgroup.
+
+## Common Use Cases
+
+- **Group summary row**: Place a `<listgroupfoot>` as the last child of a `<listgroup>` to display aggregate information (counts, totals, averages) beneath the grouped rows.
+- **Collapsible group footer**: The footer collapses and expands together with its parent `<listgroup>`, keeping summaries contextually visible only when the group is open.
+- **Multi-column summaries**: Add multiple `<listcell>` children to align summary values with the corresponding `<listheader>` columns.
 
 # Example
 
@@ -69,9 +73,21 @@ GroupFooter serves as a summary listitem of listgroup.
  </zk>
 ```
 
+# Properties
+
+## label
+
+**Default Value:** `null`
+
+Sets the text of the first `<listcell>` this footer contains. If no `<listcell>` exists yet, one is created automatically. Reading the property returns the cell's text, or `null` when no cell is present.
+
+```xml
+<listgroupfoot label="10 items total" />
+```
+
 # Supported Events
 
-- Inherited Supported Events: [ Listitem]({{site.baseurl}}/zk_component_ref/listitem#Supported_Events)
+No own events — see [Listitem Supported Events]({{site.baseurl}}/zk_component_ref/listitem#Supported_Events)
 
 # Supported Children
 
