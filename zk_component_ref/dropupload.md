@@ -73,8 +73,6 @@ Specifies the [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Bas
 
 ## Anchor
 
-{% include supported-since.html version="7.0.2" %}
-
 Attaches the `Dropupload` component to another component so that it overlays that component when the user drags and drops files into the browser — similar to the Gmail attachment-drop behaviour. Set the value to a ZUL EL expression that resolves to the target component.
 
 ![](/zk_component_ref/images/Dropupload_Anchor.png)

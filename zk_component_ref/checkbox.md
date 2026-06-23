@@ -99,6 +99,23 @@ Sets whether the checkbox is checked. Setting `checked` to any value will also c
 <checkbox checked="true" label="Pre-selected" />
 ```
 
+## Value
+
+**Default Value:** `null`
+
+{% include supported-since.html version="5.0.4" %}
+
+Attaches an arbitrary application-defined value to the checkbox. The value is not displayed; it is a convenience for associating domain data (such as a domain object or an ID) with the component. Retrieve it server-side via `getValue()` — for example in an `onCheck` handler with `event.getTarget().getValue()`.
+
+When setting an object value from a composer or ViewModel, assign it via EL or a `<zscript>` block:
+
+```xml
+<zscript>
+    String fruitCode = "APPLE";
+</zscript>
+<checkbox value="${fruitCode}" label="Apple" />
+```
+
 ## Name
 
 **Default Value:** `null`

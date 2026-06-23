@@ -224,7 +224,7 @@ the key, it will an send onSearch or onSelect event depending on the situation. 
 
 | Name | Event Type | Description |
 |---|---|---|
-| `onSelect` | [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Fired when the selection is changed at the client. |
+| `onSelect` | [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Fired when the selection is changed at the client. This also covers selecting or deselecting an item while the component is backed by a `ListSubModel`. |
 | `onOpen` | [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Fired when the drop-down list is opened or closed. |
 | `onSearch` | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Fired when the user inputs a non-existing value by clicking ENTER or a separator character. |
 | `onSearching` | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Fired as the user types in the input field. |
