@@ -116,27 +116,13 @@ Sets the zero-based index of the currently selected item. Pass `-1` to clear the
 
 **Default Value:** `null` (built-in renderer is used)
 
-Sets the renderer that converts each model element into the option label string shown in the dropdown. When `null`, the default renderer calls `Objects.toString(data)` on each element, or evaluates a `<template name="model">` if one is defined.
-
-Changing the renderer does not automatically re-render the list. To force a re-render after swapping the renderer, reassign the model (call `setModel(null)` then `setModel(oldModel)`) or fire a `ListDataEvent`.
-
-The value is a Java object (`ItemRenderer<T>`); construct it in a `<zscript>` block or a composer/ViewModel and reference it via EL.
+Sets a custom renderer that returns the HTML snippet shown for each element of the `model`; when `null`, the default renderer uses the data's `toString()` (or a `<template name="model">` if one is defined). Because it is a Java object (`org.zkoss.zul.ItemRenderer`), supply it from a `<zscript>` block, composer, or ViewModel and reference it via EL.
 
 ```xml
-<zscript>
-    import org.zkoss.zul.ListModelList;
-    import org.zkoss.zul.ItemRenderer;
-    import org.zkoss.zk.ui.Component;
-
-    ListModelList model = new ListModelList(new String[]{"apple", "banana", "cherry"});
-    ItemRenderer renderer = new ItemRenderer() {
-        public String render(Component owner, Object data, int index) {
-            return (index + 1) + ". " + data.toString().toUpperCase();
-        }
-    };
-</zscript>
-<selectbox model="${model}" itemRenderer="${renderer}"/>
+<selectbox model="${model}" itemRenderer="${myRenderer}"/>
 ```
+
+See the **Custom Item Rendering** section on this page and [Item Renderer]({{site.baseurl}}/zk_dev_ref/mvc/item_renderer) for the renderer interface, escaping rules, and a complete example.
 
 ## Model
 

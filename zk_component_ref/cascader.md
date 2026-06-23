@@ -60,29 +60,13 @@ represents the selected item.
 
 ## ItemRenderer
 
-Specifies the renderer used to render each item in the cascader's dropdown panel when a `model` is set. Set to `null` to use the default renderer, which calls `toString()` on each tree node's data object.
-
-Changing the renderer causes the cascader to re-render its item list immediately.
-
-The value is a Java object implementing `org.zkoss.zul.ItemRenderer`. Supply it from a `<zscript>` block or a composer/ViewModel and reference it via EL:
+Sets a custom renderer that returns the HTML snippet shown for each item in the dropdown panel when a `model` is set; when `null`, the default renderer uses the tree node data's `toString()`. Because it is a Java object (`org.zkoss.zul.ItemRenderer`), supply it from a `<zscript>` block, composer, or ViewModel and reference it via EL — or pass a fully-qualified class-name string.
 
 ```xml
-<zscript><![CDATA[
-import org.zkoss.zul.ItemRenderer;
-ItemRenderer myRenderer = new ItemRenderer() {
-    public String render(Component owner, Object data, int index) {
-        return data.toString().toUpperCase();
-    }
-};
-]]></zscript>
 <cascader model="${treeModel}" itemRenderer="${myRenderer}"/>
 ```
 
-Alternatively, supply a fully qualified class name as a string — the cascader will instantiate it automatically:
-
-```xml
-<cascader model="${treeModel}" itemRenderer="com.example.MyCascaderRenderer"/>
-```
+See the **Custom Item Rendering** section on this page and [Item Renderer]({{site.baseurl}}/zk_dev_ref/mvc/item_renderer) for the renderer interface, escaping rules, and a complete example.
 
 ## Model
 

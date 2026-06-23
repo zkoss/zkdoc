@@ -148,6 +148,16 @@ If you set <b>ListSubModel</b> to the <b>chosenbox</b> model, the
   cause some delay at the client side because of server processing time
   and network transfer time. See [Lazy Rendering](#lazy-rendering)
 
+## itemRenderer
+
+Sets a custom renderer that returns the HTML snippet shown for each element of the `model`; when `null`, the default renderer uses the data's `toString()`. Because it is a Java object (`org.zkoss.zul.ItemRenderer`), supply it from a `<zscript>` block, composer, or ViewModel and reference it via EL.
+
+```xml
+<chosenbox model="${model}" itemRenderer="${myRenderer}"/>
+```
+
+See the **Custom Item Rendering** section on this page and [Item Renderer]({{site.baseurl}}/zk_dev_ref/mvc/item_renderer) for the renderer interface, escaping rules, and a complete example.
+
 ## name
 specify the name of the input element of this component
 
