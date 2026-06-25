@@ -2,15 +2,23 @@
 title: "Treefooter"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Treefooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefooter.html)
-- JavaScript API:
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Treefooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefooter.html)
+- **JavaScript API:**
   [zul.sel.Treefooter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treefooter.html)
 
 # Employment/Purpose
 
 A treefooter is a bottom column of tree, Its parent must be Treefoot.
 You could place any child in a tree footer.
+
+## Common Use Cases
+
+- **Summarizing column data:** Place a `<treefooter>` inside `<treefoot>` to display totals, counts, or summary labels beneath each tree column — for example, showing a row count under the first column and an aggregate value under the second.
+- **Spanning multiple columns:** Use the inherited `span` attribute (from `FooterElement`) to have a single footer cell stretch across several columns, useful when one summary applies to a whole group of columns.
+- **Mixed content footers:** Because `<treefooter>` accepts `*ALL` children, you can embed a `<label>`, `<textbox>`, or any other ZUL component inside the footer cell for interactive or richly formatted summaries.
+
+See also: [Tree — Use Cases]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
 # Example
 
@@ -67,7 +75,3 @@ You could place any child in a tree footer.
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-[ Tree]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)

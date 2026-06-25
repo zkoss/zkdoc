@@ -2,15 +2,41 @@
 title: "Treecols"
 ---
 
-- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: [org.zkoss.zul.Treecols](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecols.html)
-- JavaScript API: [zul.sel.Treecols](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treecols.html)
+- **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- **Java API:** [org.zkoss.zul.Treecols](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treecols.html)
+- **JavaScript API:** [zul.sel.Treecols](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treecols.html)
 
 # Employment/Purpose
 
 A `treecols`is main part of tree which a contains set of columns. The
 set of columns is defined by a number of `treecol`components. Each
 column will appear as a column at the top of the tree.
+
+## Common Use Cases
+
+- **Sizable columns** — set `sizable="true"` on `<treecols>` to let users drag column borders at runtime to resize individual `<treecol>` elements.
+- **Multi-column tree** — place two or more `<treecol>` children inside `<treecols>` to display parallel data fields alongside the hierarchical node label.
+- **Frozen leading column** — combine `<treecols>` with a `<frozen>` sibling on the parent `<tree>` to pin the first column in place while the remaining columns scroll horizontally.
+
+```xml
+<tree width="500px">
+    <frozen columns="1"/>
+    <treecols sizable="true">
+        <treecol label="Name" width="150px"/>
+        <treecol label="Department"/>
+        <treecol label="Status"/>
+    </treecols>
+    <treechildren>
+        <treeitem>
+            <treerow>
+                <treecell label="Alice"/>
+                <treecell label="Engineering"/>
+                <treecell label="Active"/>
+            </treerow>
+        </treeitem>
+    </treechildren>
+</tree>
+```
 
 # Example
 

@@ -2,18 +2,19 @@
 title: "Treechildren"
 ---
 
-- Demonstration: [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
-- Java API: [org.zkoss.zul.Treechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treechildren.html)
-- JavaScript API:
-  [zul.sel.Treechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treechildren.html)
+- **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)
+- **Java API:** [org.zkoss.zul.Treechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treechildren.html)
+- **JavaScript API:** [zul.sel.Treechildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.sel.Treechildren.html)
 
 # Employment/Purpose
 
-`Treechildren`contains a collection of treeitem components. It is main
-body of the `Tree`and it also the main body of a `Treeitem`'s children.
+`Treechildren` contains a collection of treeitem components. It is the main body of the `Tree` and also the main body of a `Treeitem`'s children.
 
-You can change the page size of each `treechildren`instance by modifying
-the `pageSize`property
+## Common Use Cases
+
+- **Root-level tree body** — Place a single `<treechildren>` directly inside `<tree>` to hold the top-level `<treeitem>` elements that form the visible tree.
+- **Nested subtrees** — Nest an additional `<treechildren>` inside any `<treeitem>` to create a collapsible child branch; the parent item's open/close toggle controls visibility of that `<treechildren>`.
+- **Paged large trees** — To limit how many rows render at once, enable paging on the enclosing `<tree>` via its `paging` mold (`<tree mold="paging" pageSize="..."/>`); paging is a property of `Tree`, not of `<treechildren>`.
 
 # Example
 
@@ -65,10 +66,6 @@ the `pageSize`property
     </tree>
 </window>
 ```
-
-# Supported Events
-
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
