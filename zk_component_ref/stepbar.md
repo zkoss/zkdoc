@@ -2,17 +2,54 @@
 title: "Stepbar"
 ---
 
-- [Demonstration](https://www.zkoss.org/zkdemo/menu/stepbar)
-- Java API: [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
-- JavaScript API: [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
+- **Demonstration:** [Stepbar](https://www.zkoss.org/zkdemo/menu/stepbar)
+- **Java API:** [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
+- **JavaScript API:** [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
-Stepbar is a navigation component suitable for displaying the progress
-of a multi-step task.
+Stepbar is a navigation component suitable for displaying the progress of a multi-step task.
+
+## Common Use Cases
+
+**Wizard / multi-step form** — place a `<stepbar>` above a sequence of panels and bind `activeIndex` to the current step so the progress indicator stays in sync with the visible panel:
+
+```xml
+<zk>
+    <stepbar id="bar" activeIndex="0" width="700px">
+        <step title="Personal Info" />
+        <step title="Account Setup" />
+        <step title="Confirmation" />
+    </stepbar>
+    <button label="Next" onClick="bar.activeIndex = bar.activeIndex + 1" />
+</zk>
+```
+
+**Vertical checkout flow** — use `orient="vertical"` when horizontal space is limited:
+
+```xml
+<stepbar orient="vertical" activeIndex="1" width="200px">
+    <step title="Cart" />
+    <step title="Shipping" />
+    <step title="Payment" />
+    <step title="Review" />
+</stepbar>
+```
+
+**Model-driven steps** — populate steps from a `StepModel` when the step list is dynamic:
+
+```xml
+<zscript>
+    import org.zkoss.zkmax.zul.DefaultStepModel;
+    import org.zkoss.zul.ListModelList;
+    ListModelList items = new ListModelList(java.util.Arrays.asList("Order", "Ship", "Deliver"));
+    DefaultStepModel model = new DefaultStepModel(items);
+</zscript>
+<stepbar model="${model}" width="600px" />
+```
 
 # Example
 
@@ -49,11 +86,30 @@ The active step object. (Default: first step)
 
 Set whether the steps in this stepbar are displayed in order.
 
-Non-linear means users can toggle the active steps easily by clicking on
-any step even if the step is not the next one in the sequence. In linear
-mode, they can only activate in order.
+Non-linear means users can toggle the active steps easily by clicking on any step even if the step is not the next one in the sequence. In linear mode, they can only activate in order.
 
 ![](/zk_component_ref/images/Stepbar-linear.gif)
+
+## Orient
+
+**Default Value:** `horizontal`
+
+Sets the orientation of the stepbar. Accepted values:
+
+| Value | Meaning |
+|---|---|
+| `horizontal` | Steps flow left-to-right (default) |
+| `vertical` | Steps stack top-to-bottom |
+
+{% include supported-since.html version="10.2.0" %}
+
+```xml
+<stepbar orient="vertical" width="200px">
+    <step title="First Step" />
+    <step title="Second Step" />
+    <step title="Third Step" />
+</stepbar>
+```
 
 ## Model
 
@@ -82,18 +138,12 @@ false: ![](/zk_component_ref/images/Stepbar-example.png)
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Represents an event caused by a user's selection changed at the client. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Represents an event caused by a user's selection changed at the client. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
-`*`[` Step`]({{site.baseurl}}/zk_component_ref/step)
-
-# Version History
-
-| Version | Date           | Content                                                                          |
-|---------|----------------|----------------------------------------------------------------------------------|
-| 9.0.0   | November, 2019 | [ZK-4375](https://tracker.zkoss.org/browse/ZK-4375): Provide a stepbar component |
+`*`[`Step`]({{site.baseurl}}/zk_component_ref/step)

@@ -2,14 +2,13 @@
 title: "Coachmark"
 ---
 
-{% include supported-since.html version="9.0.0" %}
+- **Demonstration:** [Coachmark](https://www.zkoss.org/zkdemo/notification/coachmark)
+- **Java API:** [org.zkoss.zkmax.zul.Coachmark](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Coachmark.html)
+- **JavaScript API:** [zkmax.nav.Coachmark](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Coachmark.html)
 
-- Java API: [org.zkoss.zkmax.zul.Coachmark](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Coachmark.html)
-- JavaScript API:
-  [zkmax.nav.Coachmark](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Coachmark.html)
-
-<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
+
+{% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 
@@ -19,6 +18,52 @@ will be displayed and the target component will be highlighted.The
 content of coachmark should be as relevant as possible to the context.
 You can use more than one coachmarks to guide users to perform a series
 of operations in the desired order.
+
+## Common Use Cases
+
+### Single-Step Onboarding Highlight
+
+Use a single coachmark to draw attention to a new or important UI element when the page loads. By default the coachmark opens immediately; set `visible="false"` and call `open()` programmatically when you want to delay it.
+
+```xml
+<button id="saveBtn" label="Save" />
+<coachmark target="saveBtn">
+    <label>New! Click Save to store your changes automatically.</label>
+    <button label="Got it" onClick="self.parent.close()" />
+</coachmark>
+```
+
+### Multi-Step Guided Tour
+
+Chain multiple coachmarks with the `next` attribute to walk the user through a sequence of steps. Set every coachmark after the first to `visible="false"` so only the first one opens on load. Use `onTargetClick` to advance automatically when the highlighted element is clicked, or call `next()` from any event handler.
+
+```xml
+<button id="step1Btn" label="Step 1" />
+<coachmark target="step1Btn" next="cm2" onTargetClick="self.next()">
+    Click here to begin.
+</coachmark>
+
+<button id="step2Btn" label="Step 2" />
+<coachmark id="cm2" target="step2Btn" next="cm3" onTargetClick="self.next()" visible="false">
+    Now click Step 2.
+</coachmark>
+
+<button id="step3Btn" label="Step 3" />
+<coachmark id="cm3" target="step3Btn" onTargetClick="self.close()" visible="false">
+    Finally, click Step 3 to finish.
+</coachmark>
+```
+
+### Controlling Position
+
+Use the `position` attribute to place the coachmark dialog relative to its target. The default is `after_center` (below the target, centered). Change it when the default placement overlaps other content.
+
+```xml
+<button id="topBtn" label="Top Action" />
+<coachmark target="topBtn" position="before_center">
+    This action appears at the top of the toolbar.
+</coachmark>
+```
 
 # Example
 
@@ -120,10 +165,10 @@ specified coachmark instead of the predefined "next" coachmark.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after the component is opened or closed. |
-| `onTargetClick` | **Event:** [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) Represents an event caused by a user's click on a highlighted target component. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after the component is opened or closed. |
+| `onTargetClick` | [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Represents an event caused by a user's click on a highlighted target component. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

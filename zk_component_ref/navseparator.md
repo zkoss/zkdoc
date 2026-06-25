@@ -2,18 +2,43 @@
 title: "Navseparator"
 ---
 
-- Demonstration:
-- Java API:
-  [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)
-- JavaScript API:
-  [Navseparator](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navseparator.html)
-- Style Guide:
-- <!--REQUIRED ZK EDITION: PE -->
+- **Java API:** [Navseparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)
+- **JavaScript API:** [Navseparator](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navseparator.html)
+
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
-Used to create a separator between nav items..
+Used to create a separator between nav items.
+
+## Common Use Cases
+
+### Dividing Top-Level Nav Items
+
+Place `<navseparator/>` between logically unrelated groups of `<navitem>` or `<nav>` elements inside a `<navbar>` to draw a visible dividing line:
+
+```xml
+<navbar orient="vertical">
+    <navitem label="Inbox" iconSclass="z-icon-inbox"/>
+    <navitem label="Sent" iconSclass="z-icon-send"/>
+    <navseparator/>
+    <navitem label="Settings" iconSclass="z-icon-cog"/>
+    <navitem label="Help" iconSclass="z-icon-question-circle"/>
+</navbar>
+```
+
+### Dividing Items Inside a Nested Nav
+
+`<navseparator/>` can also be placed inside a `<nav>` (collapsible sub-menu) to separate groups of child `<navitem>` elements:
+
+```xml
+<nav label="Projects" iconSclass="z-icon-folder">
+    <navitem label="Active"/>
+    <navitem label="On Hold"/>
+    <navseparator/>
+    <navitem label="Archived"/>
+</nav>
+```
 
 # Example
 
@@ -38,16 +63,8 @@ Used to create a separator between nav items..
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+None
 
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-# Version History
-
-| Version | Date          | Content                                                                                                      |
-|---------|---------------|--------------------------------------------------------------------------------------------------------------|
-| 7.0.0   | October, 2013 | [Navseparator](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html) was introduced. |

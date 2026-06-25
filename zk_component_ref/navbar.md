@@ -2,19 +2,60 @@
 title: "Navbar"
 ---
 
-- Demonstration:
-- Java API:
-  [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)
-- JavaScript API:
-  [Navbar](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navbar.html)
-- Style Guide:
-- <!--REQUIRED ZK EDITION: PE -->
+- **Demonstration:** [Navbar](https://www.zkoss.org/zkdemo/nav/navbar)
+- **Java API:** [Navbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)
+- **JavaScript API:** [Navbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navbar.html)
+
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 Provide a roadmap to help user navigate through website. It's a
 container that usually contains nav elements.
+
+## Common Use Cases
+
+### Vertical Navigation with Collapsible Groups
+
+Use `orient="vertical"` with nested `<nav>` elements to build a side menu. Set `collapsed="true"` to start in a compact icon-only mode, and use `autoclose="true"` (the default) to keep only one branch open at a time.
+
+```xml
+<navbar orient="vertical" width="200px" autoclose="true">
+    <navitem label="Home" iconSclass="z-icon-home" />
+    <nav label="Products" iconSclass="z-icon-th-list">
+        <navitem label="Category A" />
+        <navitem label="Category B" />
+    </nav>
+    <navitem label="Contact" iconSclass="z-icon-envelope" />
+</navbar>
+```
+
+### Horizontal Top Navigation Bar
+
+Use `orient="horizontal"` to render the navbar as a top navigation bar. Drop-down sub-menus are supported via nested `<nav>` elements.
+
+```xml
+<navbar orient="horizontal">
+    <navitem label="Home" iconSclass="z-icon-home" />
+    <nav label="About">
+        <navitem label="Team" />
+        <navitem label="History" />
+    </nav>
+    <navitem label="Contact" />
+</navbar>
+```
+
+### Programmatic Selection via ViewModel
+
+Bind `selectedItem` to a ViewModel property to control which `navitem` is highlighted from Java.
+
+```xml
+<navbar selectedItem="@bind(vm.currentPage)" orient="vertical" width="220px">
+    <navitem id="homeItem" label="Home" />
+    <navitem id="settingsItem" label="Settings" />
+</navbar>
+```
 
 # Example
 
@@ -77,20 +118,43 @@ until they are clicked again by the user.
     </navbar>
 ```
 
+## SelectedItem
+
+Deselects the currently selected item and selects the given item. Accepts a `Navitem` instance that is a direct or indirect child of the `navbar`. Passing `null` clears the selection (equivalent to calling `clearSelection()`).
+
+The value is a `Navitem` object — construct it in a `<zscript>` block or bind it from a ViewModel.
+
+```xml
+<zscript>
+    import org.zkoss.zkmax.zul.Navitem;
+    Navitem target = (Navitem) myNavbar.query("navitem[label='Step Two']");
+    myNavbar.setSelectedItem(target);
+</zscript>
+<navbar id="myNavbar" orient="vertical" width="200px">
+    <navitem label="Home" />
+    <navitem label="Step Two" />
+    <navitem label="About" />
+</navbar>
+```
+
+In MVVM, bind via a ViewModel property:
+
+```xml
+<navbar selectedItem="@bind(vm.selectedNavitem)" orient="vertical" width="200px">
+    <navitem label="Home" />
+    <navitem label="Step Two" />
+    <navitem label="About" />
+</navbar>
+```
+
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onSelect` | **Event:** [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) Notifies one that the user has selected a navitem in the navbar. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onSelect` | [SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Notifies one that the user has selected a navitem in the navbar. |
 
 - Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*`[` Nav`]({{site.baseurl}}/zk_component_ref/nav)`, `[` Navitem`]({{site.baseurl}}/zk_component_ref/navitem)`,`[` Navseparator`]({{site.baseurl}}/zk_component_ref/navseparator)
-
-# Version History
-
-| Version | Date         | Content                                                                                          |
-|---------|--------------|--------------------------------------------------------------------------------------------------|
-| 7.0.0   | August, 2013 | [Navbar](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html) was introduced. |

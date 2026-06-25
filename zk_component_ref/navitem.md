@@ -2,19 +2,25 @@
 title: "Navitem"
 ---
 
-- Demonstration:
-- Java API:
-  [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html)
-- JavaScript API:
-  [Navitem](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Navitem.html)
-- Style Guide:
-- <!--REQUIRED ZK EDITION: PE -->
+- **Demonstration:**
+- **Java API:** [Navitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html)
+- **JavaScript API:** [Navitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navitem.html)
+
+<!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 A single choice in a Navbar or Nav element. It acts much like a button
 but it is rendered on a navbar.
+
+## Common Use Cases
+
+- **Navigation link** — set `href` to navigate the browser directly to another page or external URL without a server round-trip.
+- **Server-side navigation** — omit `href` and listen to `onClick` to perform server logic (e.g., switching a content pane or calling `Executions.sendRedirect`).
+- **Active-page indicator** — bind `selected` to the current page state so the navbar always highlights the active item.
+- **Notification badge** — use `badgeText` to display a short counter or status label next to the item label.
+- **Rich description** — use `content` to embed a short HTML snippet (icon, color tag, or tooltip hint) beneath the label for richer presentation.
 
 # Example
 
@@ -99,31 +105,58 @@ satisfied.
 On the other hand, the `href` property is processed at the client side.
 Your application won't be notified when users click the navitem.
 
-## Badge Text
+## badgeText
 
 {% include supported-since.html version="9.6.0" %}
 
-This property set the badge text for the `Navitem`, it is used to
-present more details of `Navitem`.
+**Default Value:** `null`
+
+Sets the badge text for the `Navitem`, which presents supplementary details alongside the label.
 
 ```xml
-    <navitem label="Step One" badgeText="1"/>
+<navitem label="Step One" badgeText="1"/>
+```
+
+## selected
+
+**Default Value:** `false`
+
+Marks this navitem as the currently selected item. When the navitem belongs to a `Navbar`, the navbar automatically deselects the previously selected item so that at most one item is selected at a time.
+
+```xml
+<navbar orient="vertical" width="200px">
+    <navitem label="Home" selected="true"/>
+    <navitem label="About"/>
+</navbar>
+```
+
+## target
+
+**Default Value:** `null`
+
+Sets the target frame or window for the URL specified in `href`. Accepts any valid HTML frame name or the standard special values `_blank`, `_self`, `_parent`, and `_top`. This property has no effect when `href` is not set.
+
+```xml
+<navitem label="Visit Site" href="https://www.zkoss.org" target="_blank"/>
+```
+
+## content
+
+**Default Value:** `""`
+
+Sets embedded HTML content shown as supplementary description beneath the navitem label. The value is rendered directly to the browser without escaping, so never pass user-controlled input to avoid XSS. Since 10.0.0 the content is sanitized by default — do not use inline JavaScript inside the value.
+
+```xml
+<navitem label="Dashboard" content="&lt;span style='color:red'&gt;New!&lt;/span&gt;"/>
 ```
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-|  |  |
+| Name | Event Type | Description |
+|---|---|---|
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date         | Content                                                                                            |
-|---------|--------------|----------------------------------------------------------------------------------------------------|
-| 7.0.0   | August, 2013 | [Navitem](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html) was introduced. |

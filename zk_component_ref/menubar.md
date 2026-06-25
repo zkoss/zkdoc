@@ -2,13 +2,70 @@
 title: "Menubar"
 ---
 
-- Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu)
-- Java API: [org.zkoss.zul.Menubar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menubar.html)
-- JavaScript API: [zul.menu.Menubar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menubar.html)
+- **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu)
+- **Java API:** [org.zkoss.zul.Menubar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menubar.html)
+- **JavaScript API:** [zul.menu.Menubar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menubar.html)
 
 # Employment/Purpose
 
 A container usually contains more than one menu elements.
+
+## Common Use Cases
+
+### Horizontal Menubar with Autodrop
+
+Combine `autodrop="true"` with a standard horizontal layout for an application-style menu bar where hovering opens submenus immediately.
+
+```xml
+<menubar autodrop="true">
+    <menu label="File">
+        <menupopup>
+            <menuitem label="New" />
+            <menuitem label="Save" />
+        </menupopup>
+    </menu>
+    <menu label="View">
+        <menupopup>
+            <menuitem label="Zoom In" />
+            <menuitem label="Zoom Out" />
+        </menupopup>
+    </menu>
+</menubar>
+```
+
+### Vertical Sidebar Navigation
+
+Use `orient="vertical"` to build a side-navigation panel. Pair it with `hflex="1"` or a fixed width to control its footprint inside a layout.
+
+```xml
+<hlayout>
+    <menubar orient="vertical" width="160px">
+        <menu label="Dashboard" />
+        <menu label="Reports">
+            <menupopup>
+                <menuitem label="Monthly" />
+                <menuitem label="Annual" />
+            </menupopup>
+        </menu>
+        <menu label="Settings" />
+    </menubar>
+    <div hflex="1"><!-- main content --></div>
+</hlayout>
+```
+
+### Scrollable Horizontal Menubar
+
+When the menubar width is constrained and there are many top-level menus, enable `scrollable="true"` (horizontal orientation only) to show left/right scroll arrows automatically.
+
+```xml
+<menubar width="300px" scrollable="true">
+    <menu label="File" />
+    <menu label="Edit" />
+    <menu label="View" />
+    <menu label="Tools" />
+    <menu label="Help" />
+</menubar>
+```
 
 # Example
 
@@ -41,6 +98,54 @@ A container usually contains more than one menu elements.
 
 # Properties
 
+## Autodrop
+
+**Default Value:** `false`
+
+When set to `true`, menus drop down automatically as the user moves the mouse over top-level menu items, without requiring a click. Only affects the topmost menu items in the menubar.
+
+```xml
+<menubar autodrop="true">
+    <menu label="File">
+        <menupopup>
+            <menuitem label="New" />
+            <menuitem label="Open" />
+        </menupopup>
+    </menu>
+    <menu label="Edit">
+        <menupopup>
+            <menuitem label="Cut" />
+            <menuitem label="Copy" />
+        </menupopup>
+    </menu>
+</menubar>
+```
+
+## Orient
+
+**Default Value:** `"horizontal"`
+
+Sets the orientation of the menubar. Accepted values:
+
+| Value | Meaning |
+| --- | --- |
+| `horizontal` | (default) Menu items are laid out left-to-right in a horizontal bar. |
+| `vertical` | Menu items are stacked top-to-bottom in a vertical bar. |
+
+```xml
+<!-- Horizontal menubar (default) -->
+<menubar orient="horizontal">
+    <menu label="File" />
+    <menu label="Edit" />
+</menubar>
+
+<!-- Vertical menubar -->
+<menubar orient="vertical">
+    <menu label="File" />
+    <menu label="Edit" />
+</menubar>
+```
+
 ## Scrollable
 
 The code below demonstrates how easy it is to make the Menubar
@@ -56,7 +161,7 @@ scrollable!
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+No own events — see [Inherited Supported Events]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 

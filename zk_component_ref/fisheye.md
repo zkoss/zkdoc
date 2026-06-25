@@ -2,16 +2,23 @@
 title: "Fisheye"
 ---
 
-- Demonstration:
-  [Fisheye](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
-- Java API: [org.zkoss.zkex.zul.Fisheye](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheye.html)
-- JavaScript API: [zkex.menu.Fisheye](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.menu.Fisheye.html)
+- **Demonstration:** [Fisheye](http://www.zkoss.org/zkdemo/menu/fisheye_menu)
+- **Java API:** [org.zkoss.zkex.zul.Fisheye](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheye.html)
+- **JavaScript API:** [zkex.menu.Fisheye](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.menu.Fisheye.html)
 
-- [Available in ZK PE and EE only](http://www.zkoss.org/product/edition.dsp)
+{% include edition-availability.html edition="ee" %}
+
+{% include supported-since.html version="5.0.0" %}
 
 # Employment/Purpose
 
 A fisheye item
+
+## Common Use Cases
+
+- **Toolbar-style navigation** — place multiple `<fisheye>` items inside a `<fisheyebar>` to build a Mac-style dock or application launcher where icons magnify on hover.
+- **Icon-only action triggers** — use the `image` and `label` attributes together with `onClick` to give users a compact, visually rich way to invoke commands without cluttering the UI with text buttons.
+- **Dynamic image items** — when icon artwork must be generated at runtime (e.g. user avatars or data-driven thumbnails), set the image via `imageContent` from a `<zscript>` block or a ViewModel, letting the fisheye item render the programmatically created image.
 
 # Example
 
@@ -46,57 +53,15 @@ A fisheye item
 
 # Properties
 
-## Dynamic Images
-
-For example you can create an image using the Java2D libraries and then
-set the content of the fisheye to the created image, below is an example
-of how to do this.
-
-```xml
-<?page title="Auto Generated index.zul"?>
-<zk>
-    <window title="test of autodisable">
-        <fisheyebar><fisheye id="fish1" /></fisheyebar>
-        
-        <zscript>
-        import java.awt.*;
-        import java.awt.image.*;
-        import java.awt.geom.*;
-        
-        
-        void draw() {
-            BufferedImage bi = new BufferedImage(200, 200, BufferedImage.TYPE_INT_RGB);
-            Graphics2D g2d = bi.createGraphics();
-            Line2D line = new Line2D.Double(0, 0, bi.getWidth(), bi.getHeight());
-            g2d.setColor(Color.blue);
-            g2d.setStroke(new BasicStroke(100));
-            g2d.draw(line);
-            fish1.setImageContent(bi);
-        }
-        
-        draw();
-        </zscript> 
-    </window>
-</zk>
-```
-
-{% include supported-since.html version="5.0.0" %}
-
-# Inherited Functions
-
-Please refer to [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
-for inherited functions.
-
 # Supported Events
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*None`
 
-# Version History
+# Inherited Functions
 
-| Version | Date         | Content                         |
-|---------|--------------|---------------------------------|
-| 5.0.0   | January 2010 | Fisheye supports dynamic images |
+Please refer to [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement)
+for inherited functions.

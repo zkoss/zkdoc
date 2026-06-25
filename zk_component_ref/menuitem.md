@@ -2,10 +2,10 @@
 title: "Menuitem"
 ---
 
-- Demonstration: [Menu](http://www.zkoss.org/zkdemo/menu) and
+- **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu) and
   [Fileupload](https://www.zkoss.org/wiki/Small_Talks/2009/July/ZK_5:_New_File_Upload#Live_Demo)
-- Java API: [org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html)
-- JavaScript API: [zul.menu.Menuitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menuitem.html)
+- **Java API:** [org.zkoss.zul.Menuitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html)
+- **JavaScript API:** [zul.menu.Menuitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.menu.Menuitem.html)
 
 # Employment/Purpose
 
@@ -16,6 +16,26 @@ Within ZK 5, the file upload has been redesigned so it can be integrated
 with any widget. For example, the toolbarbutton can now be used to
 upload a file. In addition to this, the display of the upload status has
 been enhanced and can be customized easily.
+
+## Common Use Cases
+
+- **Action menuitem**: Use `onClick` to trigger server-side logic directly from a menu.
+- **Checkable menuitem**: Set `checkmark="true"` so a tick mark appears beside the item; pair with `autocheck="true"` to let the user toggle it, or bind `checked` via MVVM to track the state.
+- **Navigation menuitem**: Set `href` to navigate the browser to another URL without a server round-trip; add `target` to open the URL in a named frame or new window.
+- **File upload menuitem**: Set `upload="true"` to turn the menuitem into a file picker; handle the `onUpload` event to process the uploaded file.
+
+```xml
+<menubar>
+    <!-- Action -->
+    <menuitem label="Save" onClick="service.save()"/>
+    <!-- Checkable -->
+    <menuitem label="Show Toolbar" checkmark="true" autocheck="true"/>
+    <!-- Navigation -->
+    <menuitem label="ZK Homepage" href="https://www.zkoss.org" target="_blank"/>
+    <!-- File upload -->
+    <menuitem label="Attach File" upload="true" onUpload='alert(event.media.getName())'/>
+</menubar>
+```
 
 # Example
 
@@ -46,7 +66,10 @@ been enhanced and can be customized easily.
 
 ## Autodisable
 
+**Default Value:** `null`
+
 {% include supported-since.html version="5.0.7" %}
+
 [org.zkoss.zul.Menuitem#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setAutodisable(java.lang.String))
 is used to disable a menuitem automatically, when it is clicked. It is
 useful to prevent the user from clicking it twice (and firing redundant
@@ -105,6 +128,19 @@ specifying the following in the custom language addon:
         </property>
     </component>
 </language-addon>
+```
+
+## Checkmark
+
+**Default Value:** `false`
+
+Sets whether a check mark (tick) is displayed in front of the menuitem. When `checkmark="true"`, the menuitem can visually indicate a selected/active state. The check mark is only shown or toggled when `checked` or `autocheck` is also configured.
+
+```xml
+<menupopup>
+    <menuitem label="Bold" checkmark="true" checked="true"/>
+    <menuitem label="Italic" checkmark="true" autocheck="true"/>
+</menupopup>
 ```
 
 ## Href
@@ -175,6 +211,16 @@ satisfied.
 On the other hand, the `href` property is processed at the client side.
 Your application won't be notified when users click the menuitem.
 
+## Target
+
+**Default Value:** `null`
+
+Sets the target frame or window for the URL specified by `href`. This behaves like the `target` attribute of an HTML `<a>` tag and is only meaningful when `href` is also set. Common values include `_blank` (new window/tab), `_self` (same frame), or any named frame.
+
+```xml
+<menuitem label="ZK Homepage" href="https://www.zkoss.org" target="_blank"/>
+```
+
 ## Upload
 
 By specifying the upload property
@@ -212,21 +258,52 @@ where
 - native: treating the uploaded file(s) as binary, i.e., not to convert
   it to image, audio or text files.
 
+## Checked
+
+**Default Value:** `false`
+
+Sets whether the menuitem is in the checked state. This only has a visible effect when `checkmark="true"` is also set. Setting `checked="true"` will implicitly enable the check mark as well. Use `autocheck="true"` to let the user toggle this state interactively, or bind it via MVVM to track it programmatically.
+
+```xml
+<menupopup>
+    <menuitem label="Show Grid" checkmark="true" checked="true"/>
+</menupopup>
+```
+
+## Autocheck
+
+**Default Value:** `false`
+
+Sets whether the check mark toggles automatically each time the user selects the menuitem. This only applies when `checkmark="true"` is also set. When enabled, clicking the menuitem flips the `checked` state on the client without requiring a server round-trip for the toggle itself; an `onCheck` event is still fired so the server can observe the new state.
+
+```xml
+<menupopup>
+    <menuitem label="Auto-save" checkmark="true" autocheck="true"/>
+</menupopup>
+```
+
+## Value
+
+**Default Value:** `""`
+
+Sets an arbitrary string value associated with this menuitem. The value is not displayed to the user; it is used to carry application-defined data (for example, a record ID or a command key) that can be read in an event listener via `self.getValue()`.
+
+```xml
+<menupopup>
+    <menuitem label="Edit" value="edit" onClick='alert(self.getValue())'/>
+    <menuitem label="Delete" value="delete" onClick='alert(self.getValue())'/>
+</menupopup>
+```
+
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onCheck` | **Event:** [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) Denotes user has checked the item. |
-| onUpload | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Denotes user has uploaded a file to the component. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onCheck` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Denotes user has checked the item. |
+| `onUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | Denotes user has uploaded a file to the component. |
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date     | Content                                                                                                                                               |
-|---------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5.0.7   | May 2011 | [org.zkoss.zul.Menuitem#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Menuitem.html#setAutodisable(java.lang.String)) was used to disable a menuitem automatically, when it is clicked. |
