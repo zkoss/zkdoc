@@ -2,17 +2,122 @@
 title: "A"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html)
-- JavaScript API: [zul.wgt.A](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.A.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html)
+- **JavaScript API:** [zul.wgt.A](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.A.html)
 
 # Employment/Purpose
 
 The same as HTML A tag.
 
+## Common Use Cases
+
+### Navigation Link
+
+Use `href` for a plain navigation link.
+
+```xml
+<a href="http://www.zkoss.org" label="Visit ZK!"/>
+```
+
+### Open in a New Tab
+
+Set `target="_blank"` so the browser opens the URL in a new tab.
+
+```xml
+<a href="report.pdf" target="_blank" label="Download Report"/>
+```
+
+### File Download via `download` Attribute
+
+Add the HTML `download` attribute via the `c:` client-attribute namespace. This instructs the browser to download the file rather than navigate.
+
+```xml
+<zk xmlns:c="client/attribute">
+    <a href="report.xls" c:download="" target="_self" label="Download"/>
+</zk>
+```
+
+### Prevent Double-Click with Autodisable
+
+Use `autodisable="self"` to disable the anchor immediately on click and re-enable it once the server responds. Prefix with `+` to keep it disabled until you enable it manually.
+
+```xml
+<a id="submit" label="Submit" autodisable="self"/>
+```
+
+# Example
+
+![](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
+
+```xml
+<a href="http://www.zkoss.org" label="Visit ZK!"/>
+```
+
+In addition, you could add child components to
+[org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) too:
+
+```xml
+<a href="http://www.zkoss.org" label="Visit ZK!" image="zk.png">
+  <grid>
+    <rows>
+      <row>What ever content</row>
+    </rows>
+  </grid>
+</a>
+```
+
+Notice that a child component might also handle the mouse click, so the
+final result of clicking on a child component is really up to which
+child component is used.
+
+The href attribute can be an URI. For example,
+
+```xml
+<a href="/foo" label="Foo" />
+<a href="goo" label="Goo" />
+```
+
 # Properties
 
+## Dir
+
+**Default Value:** `"normal"`
+
+Controls the layout direction of the label relative to the image. Accepted values are `"normal"` (label after image) and `"reverse"` (label before image). Any other value throws a `WrongValueException`.
+
+| Value | Meaning |
+|-------|---------|
+| `normal` | Label is placed after (to the right of) the image (default) |
+| `reverse` | Label is placed before (to the left of) the image |
+
+```xml
+<a label="Download" image="/img/dl.png" dir="reverse"/>
+```
+
+## Href
+
+**Default Value:** `null`
+
+The URL the browser navigates to when the user clicks the anchor. If `null`, clicking the anchor fires an `onClick` event to the server instead of navigating. If set, the browser handles navigation directly and no `onClick` event is sent.
+
+```xml
+<a href="http://www.zkoss.org" label="Visit ZK!"/>
+```
+
+## Target
+
+**Default Value:** `null`
+
+Specifies the name of the browser frame or window in which to open the URL set by `href`. Only meaningful when `href` is also set. Common values include `"_blank"` (new tab), `"_self"` (same tab), `"_parent"`, and `"_top"`.
+
+```xml
+<a href="report.pdf" target="_blank" label="Download Report"/>
+```
+
 ## Autodisable
+
+{% include supported-since.html version="7.0.2" %}
 
 [org.zkoss.zul.A#setAutodisable(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html#setAutodisable(java.lang.String))
 is used to disable an anchor automatically, when it is clicked. It is
@@ -75,91 +180,15 @@ specifying the following in the custom language addon:
 </language-addon>
 ```
 
-# File Download Link
-
-When a user clicks <a/> whose `target` is `_self` (default value) will
-cause a browser to trigger the event `onbeforeunload`, then ZK depends
-on this event to remove a desktop. This also apply to browser-processed
-links. Links that do not open a page, but provide a browser instruction
-to open a different service, such as `mailto:`, `tel:`, etc.
-
-Hence, after clicking the hyperlink, all ZK client ajax doesn't work
-anymore. Here are several correct ways to create a file download link:
-
-## open a new tab
-
-specify `_blank` and your browser will produce a new tab and close
-immediately.
-
-\<syntaxhighlight lang='xml\>
-<a href="report.pdf" target='_blank'>download</a>
-
-</syntaxhighlight>
-
-After clicking a link like
-<a href="report.pdf" target='_self'>`download`</a>, you will find ZK
-doesn't send AJAX requests anymore to the server.
-
-## download attribute
-
-A browser will prompt the user to save the linked URL instead of
-navigating to it. \<syntaxhighlight lang='xml\>
-<zk xmlns:c="client/attribute">
-<a href="report.xls" c:download="" target='_self'>download</a> </zk>
-
-</syntaxhighlight>
-
-Please refer to [download attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-download)
-
-## [Filedownload API]({{site.baseurl}}/zk_dev_ref/ui_patterns/file_upload_and_download#File_Download)
-
-# Example
-
-![](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
-
-```xml
-<a href="http://www.zkoss.org" label="Visit ZK!"/>
-```
-
-In addition, you could add child components to
-[org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) too:
-
-```xml
-<a href="http://www.zkoss.org" label="Visit ZK!" image="zk.png">
-  <grid>
-    <rows>
-      <row>What ever content</row>
-    </rows>
-  </grid>
-</a>
-```
-
-Notice that a child component might also handle the mouse click, so the
-final result of clicking on a child component is really up to which
-child component is used.
-
-The href attribute can be an URI. For example,
-
-```xml
-<a href="/foo" label="Foo" />
-<a href="goo" label="Goo" />
-```
-
-If the URI starts with "/", ZK will encode it with the application's
-context path. Otherwise the path is relative to the path given by
-Desktop.getDirectory().
-
 # Supported Events
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onFocus` | [`Event`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component gets the focus. Sent when the anchor receives keyboard focus. |
+| `onBlur` | [`Event`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes when a component loses the focus. Sent when the anchor loses keyboard focus. |
+
+- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Version History
-
-| Version | Date          | Content                                                                                 |
-|---------|---------------|-----------------------------------------------------------------------------------------|
-| 5.0.5   | October, 2010 | [org.zkoss.zul.A](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/A.html) supports any children.                               |
-| 7.0.2   | May, 2014     | [Support autodisable property for A component](http://tracker.zkoss.org/browse/ZK-2237) |

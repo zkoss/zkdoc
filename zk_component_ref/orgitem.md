@@ -2,27 +2,30 @@
 title: "Orgitem"
 ---
 
-- Java API: [org.zkoss.zkmax.zul.Orgitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html)
-- JavaScript API: [zkmax.layout.Orgitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgitem.html)
+- **Demonstration:** [Orgitem](https://www.zkoss.org/zkdemo/organigram)
+- **Java API:** [org.zkoss.zkmax.zul.Orgitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html)
+- **JavaScript API:** [zkmax.layout.Orgitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Orgitem.html)
 
-`<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %}`
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
-`Orgitem`contains a node (`Orgnode),`and an optional Orgchildren.
+`Orgitem` contains a node (`Orgnode`) and an optional `Orgchildren`.
 
-If the component doesn't contain an `Orgchildren,`it is a leaf node that
-doesn't accept any child items.
+If the component doesn't contain an `Orgchildren`, it is a leaf node that doesn't accept any child items.
 
-If it contains an `Orgchildren,`it is a branch node that might contain
-other items.
+If it contains an `Orgchildren`, it is a branch node that might contain other items.
 
-For a branch node, an +/- button will appear at the bottom right of the
-node, such that user could open and close the item by clicking on the
-+/- button.
+For a branch node, a +/− button appears at the bottom right of the node, allowing users to open and close the item by clicking the button.
+
+## Common Use Cases
+
+- **Organization charts**: Display hierarchical structures like corporate hierarchies, team structures, or reporting chains.
+- **Dynamic data loading**: Load child items on demand when the user expands a branch.
+- **Department or team visualization**: Show organizational divisions and their subdivisions.
+- **Interactive trees with rich nodes**: Combine images and labels to create visually detailed tree structures.
 
 # Example
 
@@ -43,126 +46,115 @@ node, such that user could open and close the item by clicking on the
             </orgchildren>
         </organigram>
 
-# Open
+# Convenience Label and Image Properties
 
-Each Orgitem contains the open property which is used to control whether
-to display its child items. The default value is true. By setting this
-property to false, you are able to control what part of the Organigram
-is invisible.
+`Orgitem` provides convenience properties to simplify assignment of image and label to the contained `Orgnode`. However, these properties are actually placed in the node (the child `Orgnode`). If the `Orgnode` is not created yet, it is created automatically.
 
-When a user clicks on the +/- button, he opens the Orgitem and makes its
-children visible. The onOpen event is then sent to the server to notify
-the application.
+Once `label` or `image` is set via these convenience properties, you cannot attach a separate `<orgnode>` child—doing so raises an exception. This is because `Orgitem` maintains a one-to-one relationship with its `Orgnode`.
 
-You can also open or close the Orgitem by calling
-[org.zkoss.zkmax.zul.Orgitem#setOpen(java.lang.Boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setOpen(java.lang.Boolean))
-and get the open state by calling
-[org.zkoss.zkmax.zul.Orgitem#isOpen()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#isOpen()).
-
-Example:
-
-        <organigram>
-            <orgchildren>
-                <orgitem label="Item1" open="false" onOpen="createChild()">
-                    <orgchildren/>
-                </orgitem>
-            </orgchildren>
-            <zscript><![CDATA[
-                void createChild() {
-                    if (event.isOpen())
-                        new Orgitem("new item").setParent(self.getOrgchildren());
-                }
-            ]]></zscript>
-        </organigram>
-
-# Selected
-
-By default, each Orgitem can be selected by users clicking or by
-programing:
-
-[org.zkoss.zkmax.zul.Organigram#setSelectedItem(org.zkoss.zkmax.zul.Orgitem)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html#setSelectedItem(org.zkoss.zkmax.zul.Orgitem))
-or
-[org.zkoss.zkmax.zul.Orgitem#setSelected(java.lang.Boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setSelected(java.lang.Boolean))
-
-You can get the selected state by calling
-[org.zkoss.zkmax.zul.Orgitem#isSelected()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#isSelected())
-
-If you don't allow users to select Orgitem, you can write as following:
-
-        <orgitem selectable="false"/>
-
-or
-
-        <orgitem disabled="true"/>
-
-Disabled has more obvious style to prompt users.
-
-# Label and Image
-
-Orgitem provides
-[org.zkoss.zkmax.zul.Orgitem#setImage(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setImage(java.lang.String))
-and
-[org.zkoss.zkmax.zul.Orgitem#setLabel(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Orgitem.html#setLabel(java.lang.String))
-to simplify the assignment of image and label to an Orgitem. However,
-they are actually placed in the node (of the child Orgnode).
-Furthermore, if the Orgnode is not created, they will be created
-automatically. For example,
+When your `Organigram` only contains image and text, this is a convenient way to create the structure without `Orgnode` tags. If you want to place other components inside the node, you must create the `Orgnode` explicitly without using these convenience properties:
 
 ```xml
-    <orgitem label="Hello"/>
-```
-
-is equivalent to
-
-```xml
-    <orgitem>
-        <orgnode label="Hello"/>
-    </orgitem>
-```
-
-It also means you cannot attach an Orgnode child to the Orgitem, after
-setImage or setLabel was invoked. It means, though a bit subtle, the
-following will cause an exception:
-
-```xml
-    <orgitem label="Hello"> <!-- Orgnode is created automatically because of setLabel -->
-        <orgnode/> <!-- exception since only one Orgnode is allowed per Orgitem -->
-    </orgitem>
-```
-
-When your Organigram only contains image and text, It is a convenient
-way to create Organigram without Orgnode tags, if you want to put other
-components in Orgnode, you could write like following:
-
-```xml
-    <zscript><![CDATA[
-        Orgchildren orgchildren;
-        void newItem(String label) {
-            if (orgitem.getOrgchildren() == null) {
-                orgchildren = new Orgchildren();
-                orgchildren.setParent(orgitem);
-            }
-            new Orgitem(label).setParent(orgchildren);
+<zscript><![CDATA[
+    Orgchildren orgchildren;
+    void newItem(String label) {
+        if (orgitem.getOrgchildren() == null) {
+            orgchildren = new Orgchildren();
+            orgchildren.setParent(orgitem);
         }
-    ]]></zscript>
-    <organigram>
-        <orgchildren>
-            <orgitem id="orgitem">
-                <orgnode>
-                    <textbox onOK="newItem(self.value)"/>
-                </orgnode>
-            </orgitem>
-        </orgchildren>
-    </organigram>
+        new Orgitem(label).setParent(orgchildren);
+    }
+]]></zscript>
+<organigram>
+    <orgchildren>
+        <orgitem id="orgitem">
+            <orgnode>
+                <textbox onOK="newItem(self.value)"/>
+            </orgnode>
+        </orgitem>
+    </orgchildren>
+</organigram>
+```
+
+# Properties
+
+## Image
+
+**Default Value:** `null`
+
+Sets the image path for the [`Orgnode`]({{site.baseurl}}/zk_component_ref/orgnode) that this `Orgitem` contains. If no `Orgnode` exists yet, one is created automatically. Note that once `image` or `label` is set this way, you cannot attach a separate `<orgnode>` child—doing so raises an exception.
+
+```xml
+<orgitem image="~./img/user.png" label="Alice"/>
+```
+
+## Label
+
+**Default Value:** `null`
+
+Sets the text label for the [`Orgnode`]({{site.baseurl}}/zk_component_ref/orgnode) that this `Orgitem` contains. If no `Orgnode` exists yet, one is created automatically. As with `image`, once `label` is set you cannot attach a separate `<orgnode>` child.
+
+```xml
+<orgitem label="Engineering"/>
+```
+
+## Open
+
+**Default Value:** `true`
+
+Controls whether this item's child items (its `Orgchildren`) are visible. When set to `false`, the subtree is collapsed. A +/− button appears on branch nodes; clicking it fires the `onOpen` event and toggles the open state.
+
+```xml
+<orgitem label="Region" open="false">
+    <orgchildren>
+        <orgitem label="Office A"/>
+    </orgchildren>
+</orgitem>
+```
+
+## Selectable
+
+**Default Value:** `true`
+
+Determines whether a user can select this item by clicking it. When set to `false`, the item cannot be selected, and any existing selection on it is cleared automatically. For a visually prominent disabled style, prefer the `disabled` attribute instead.
+
+```xml
+<orgitem label="Read-only Node" selectable="false"/>
+```
+
+## Selected
+
+**Default Value:** `false`
+
+Marks this item as the currently selected item in the [`Organigram`]({{site.baseurl}}/zk_component_ref/organigram). Because `Organigram` accepts only one selected item at a time, setting `selected="true"` on one item deselects any previously selected item. The item must be selectable (`selectable="true"`) for this property to take effect.
+
+```xml
+<orgitem label="CEO" selected="true"/>
+```
+
+## Value
+
+**Default Value:** `null`
+
+Attaches an arbitrary server-side object to this item. The value is never sent to the browser, so it can be any Java object. It is typically set from a composer or ViewModel and retrieved in event handlers to avoid a separate map lookup.
+
+Assign the value in a `<zscript>` block and reference it via EL, or set it programmatically in a composer/ViewModel:
+
+```xml
+<zscript><![CDATA[
+    import com.example.Employee;
+    Employee emp = new Employee("Alice", 42);
+]]></zscript>
+<orgitem label="Alice" value="${emp}"/>
 ```
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a component. It is useful to implement load-on-demand by listening to the onOpen event, and creating components when the first time the component is opened. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. It is useful to implement load-on-demand by listening to the onOpen event and creating components the first time the component is opened. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 

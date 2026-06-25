@@ -2,19 +2,43 @@
 title: "Video"
 ---
 
-- Java API: [org.zkoss.zkmax.zul.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Video.html)
-- JavaScript API: [zkmax.med.Video](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Video.html)
+- **Java API:** [org.zkoss.zhtml.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Video.html)
+- **JavaScript API:** [zkmax.med.Video](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Video.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
-A `Video` component is used to play the video in the browser. Like
-`audio`, you can either use the `src` property to specify an URL of the
-video resource, or use the `setContent` method to specify a dynamically
-generated video. Users can control the video by `play`, `stop` and
-`pause`.
+A `Video` component plays video in the browser using the HTML5 `<video>` tag. You can specify the video source via the `src` property or dynamically generate it using the `setContent` method. The component supports a rich set of HTML5 attributes for customizing playback behavior, appearance, and media handling.
+
+## Common Use Cases
+
+### Autoplay muted video on mobile
+
+Most browsers block autoplay with sound. The reliable approach is to combine `autoplay="true"`, `muted="true"`, and `playsinline="true"` so the video starts immediately on both desktop and iOS:
+
+```xml
+<video src="intro.mp4" autoplay="true" muted="true" playsinline="true" loop="true" />
+```
+
+### Video with a poster and buffering hint
+
+Show a thumbnail before playback and pre-load only metadata to reduce bandwidth:
+
+```xml
+<video src="clip.mp4" poster="/img/thumb.png" preload="metadata" controls="controls" />
+```
+
+### Cross-origin video with subtitles
+
+When loading a video from a CDN and pairing it with a `<track>` element for captions, set `crossorigin` so the browser can fetch the external VTT file:
+
+```xml
+<video src="https://cdn.example.com/clip.mp4" crossorigin="anonymous" controls="controls">
+    <track kind="subtitles" src="captions_en.vtt" srclang="en" label="English" />
+</video>
+```
 
 # Example
 
@@ -24,205 +48,147 @@ generated video. Users can control the video by `play`, `stop` and
  <video src="zk.mp4" controls="true" autoplay="true" loop="true" />
 ```
 
-# Supports HTML5
+# Properties
 
-The Video component is based on HTML 5's
+The following properties map directly to the corresponding HTML5 `<video>` attributes. Each attribute is rendered to the client-side DOM even if the browser does not support it.
 
-<video>
+## Autoplay
 
-tag, and supports the following properties: `src`, `autoplay`,
-`controls`, `loop`, `playbackRate`, `dimBackground`, `preload`,
-`clipToFit`, `poster`, `playsinline` and `crossorigin`.
+**Default Value:** `false`
 
-## Supported Formats
+When `true`, the video begins playing as soon as enough media has been buffered. Setting autoplay alone does not always work because browsers enforce autoplay policies. Reliable autoplay requires combining this with `muted="true"` and `playsinline="true"`. For details on browser autoplay policies, refer to:
+- [Autoplay policy changes (Google)](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes)
+- [Auto-play policy changes for macOS (WebKit)](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/)
 
-[mp4, WebM, ogg](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#File_formats)
-
-# autoplay
-
-Just set autoplay to `true` doesn't always work because **autoplay
-policy is different among browsers**. Please refer to
-[autoplay-policy-changes](https://developers.google.com/web/updates/2017/09/autoplay-policy-changes)
-and
-[auto-play-policy-changes-for-macos](https://webkit.org/blog/7734/auto-play-policy-changes-for-macos/).
-
-# Multiple Sources
-
-Most browsers do not support all the video formats, so you can specify
-multiple source files in different formats for different browsers. If
-the first format is not supported by the browser, it will fallback to
-the 2nd format. For example:
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4, zk.webm, zk.ogg" />
+<video src="clip.mp4" autoplay="true" muted="true" playsinline="true" />
 ```
 
-# enableFullScreen
+## Controls
 
-For security reasons, fullScreen API can only be initiated by an user
-gesture. Therefore the Video component only provides a client-side
-method `enableFullScreen()` to enable the full screen mode.
+**Default Value:** `null` (no controls rendered)
+
+Shows the browser's built-in playback controls (play/pause, volume, seek bar, full-screen). Pass any non-null string (conventionally `"controls"` or `"true"`) to enable them; set to `null` or omit the attribute to hide controls and rely on custom UI instead.
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
-<video id="player" src="zk.mp4" controls="true"/>
-<button xmlns:w="client" w:onClick="zk.$('$player').enableFullScreen()" />
+<video src="clip.mp4" controls="controls" />
 ```
 
-# dimBackground
+## Crossorigin
 
-The Video component provides a theater mode, If dimBackground="true",
-the whole page will be covered by translucent black by default except
-the Video.
+**Default Value:** `null` (no CORS request)
 
-When the theater mode is enabled, user can click anywhere on the page
-outside the Video to disable theater mode and return to the normal view.
+Controls how the browser handles cross-origin requests for the video resource. This is required when the video source is on a different origin and you need to read pixel data (e.g., via a Canvas) or load external text tracks.
 
-![](/zk_component_ref/images/Player-turnOffLight.png)
+Accepted HTML5 values:
+
+| Value | Meaning |
+|---|---|
+| `anonymous` | Sends a CORS request without credentials (cookies, certificates). |
+| `use-credentials` | Sends a CORS request including credentials. |
+
+The setter passes the value through to the DOM without server-side validation.
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" dimBackground="true" />
+<video src="https://cdn.example.com/clip.mp4" crossorigin="anonymous" />
 ```
 
-By default, css of dimBackground has two properties as shown in the
-following css code.
+## Loop
 
-You can also customize the background in your preference by simply
-overriding .z-video-dim-background in css.
+**Default Value:** `false`
 
-```css
-<style>
-.z-video-dim-background {
-    background: black;
-    opacity: 0.8;
-}
-</style>
-```
+When `true`, the video restarts automatically once it reaches the end.
 
-# playbackRate
-
-The Video component provides setPlaybackRate(double) to control the
-video playing speed. The valid value depends on the displayed browser.
-
-Default: 1.0
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" playbackRate="0.5" />
+<video src="clip.mp4" loop="true" controls="controls" />
 ```
 
-# currentTime
+## Muted
 
-The Video component provides `setCurrentTime(double)` to jump to the
-specified time-point (in seconds) of the playback video.
+**Default Value:** `false`
+
+When `true`, the audio track is silenced. This is often paired with `autoplay="true"` to enable autoplay on browsers that only allow autoplay if the media is muted.
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" currentTime="60" />
+<video src="clip.mp4" muted="true" />
 ```
 
-# playing
+## Playsinline
 
-The Video component provides `setPlaying(boolean)` to play or pause the
-video.
+**Default Value:** `false`
 
-playing="true" is same as invoking `play()`; playing="false" is same as
-invoking `pause()`.
+When `true`, the video plays inline within the element on iOS Safari instead of entering full-screen mode automatically. This attribute is required for autoplay to work on mobile iOS devices.
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" playing="false" />
+<video src="clip.mp4" playsinline="true" autoplay="true" muted="true" />
 ```
 
-# volume
+## Poster
 
-The Video component provides `setVolume(double)` to change the volume.
-The value should range between 0.0 and 1.0.
+**Default Value:** `null`
 
-Default: 1.0
+URL of an image to display as a placeholder before the video begins playing (or while it is downloading). If omitted, the browser shows the first frame of the video once it is available.
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" volume="0.5" />
+<video src="clip.mp4" poster="/img/preview.png" controls="controls" />
 ```
 
-# muted
+## Preload
 
-The Video component provides `setMuted(boolean)` to mute the video.
+**Default Value:** browser-dependent (usually `"metadata"`)
 
-Default: false
+Provides a hint to the browser about how much of the video to buffer before the user initiates playback. The setter passes the value through to the DOM without server-side validation.
+
+Accepted HTML5 values:
+
+| Value | Meaning |
+|---|---|
+| `none` | Do not buffer the video. |
+| `metadata` | Buffer only metadata (duration, dimensions, first frame). |
+| `auto` | Buffer the entire video if possible. |
+
+{% include supported-since.html version="8.5.1" %}
 
 ```xml
- <video src="zk.mp4" muted="true" />
+<video src="clip.mp4" preload="metadata" controls="controls" />
 ```
 
-# clipToFit
+## Src
 
-The Video component provides setClipToFit(boolean) to clip the video
-when the source size doesn't fit the size specified in the Video tag.
+**Default Value:** `null`
 
-For example:
-
-The source image used in the sample below is 450 \* 320. When you set
-width="300px", height="320px", by default, blank space will be inserted
-above and below the video to preserve the aspect ratio (left image);
-when you set clipToFit="true", it will cut off the sides and fill up the
-space (right image).
-
-<file:ClipToFit(false).png> <file:ClipToFit(true).png>
+URL of the video resource. You can specify a single format or multiple formats separated by commas for fallback support. Most browsers do not support all video formats, so listing multiple formats ensures compatibility across browsers:
 
 ```xml
-  <video width="300px" height="320px" src="zk.mp4" style="border: 1px solid red;" />
-  <video width="300px" height="320px" src="zk.mp4" style="border: 1px solid red;" clipToFit="true" />
+<video src="clip.mp4, clip.webm, clip.ogg" controls="controls" />
 ```
 
-# Display Subtitles
+Supported formats include mp4, WebM, and ogg. For details, see [MDN: Supported media formats](https://developer.mozilla.org/en-US/docs/Web/HTML/Supported_media_formats#File_formats).
 
-To display subtitles or captions on a video, please see [ Track]({{site.baseurl}}/zk_component_ref/track).
-
-# StateChangeEvent
-
-When you call `play(), stop(), pause()` StateChangeEvent will be
-triggered. You can check the current state by calling event.getState().
-Video has three states, and you can access them by using
-`Video.PLAY, Video.STOP and Video.PAUSE`.
-
-For example:
-
-If you want to do something after the video starts to play, you can
-write codes as shown below (MVVM style).
-
-```xml
-  <video onStateChange="@command('stateChange', event=event)" />
-```
-
-```java
-  @Command
-  public void stateChange(@BindingParam("event") StateChangeEvent event) {
-    if (event.getState() == Video.PLAY) {
-      // do something...
-    }
-  }
-```
-
-Video component also provides `isPlaying(), isPaused() and isStopped()`
-methods to check the video state.
-
-{% include supported-since.html version="9.6.0" %}
-
-Since ZK 9.6.0, a new state - `Video.END` is added. When the video is
-played to the end, the StateChangeEvent will be triggered.
+{% include supported-since.html version="8.5.1" %}
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onStateChange` | **Event:** [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies when invoking play(), stop() or pause(). |
+| Name | Event Type | Description |
+|---|---|---|
+| `onStateChange` | [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) | Notifies when invoking `play()`, `stop()`, or `pause()`. Video has four states: `Video.PLAY`, `Video.STOP`, `Video.PAUSE`, and `Video.END` (since ZK 9.6.0). |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `* `[`Track`]({{site.baseurl}}/zk_component_ref/track)
-
-# Version History
-
-| Version | Date           | Content                                                                           |
-|---------|----------------|-----------------------------------------------------------------------------------|
-| 8.6.0   | May 2018       | [ZK-3845](https://tracker.zkoss.org/browse/ZK-3845): Provide a video component    |
-| 9.5.0   | September 2020 | [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |

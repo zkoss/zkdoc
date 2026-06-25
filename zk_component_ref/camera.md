@@ -2,8 +2,8 @@
 title: "Camera"
 ---
 
-- Java API: [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
-- JavaScript API: [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
+- **Java API:** [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)
+- **JavaScript API:** [zkmax.med.Camera](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Camera.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %}
@@ -13,6 +13,31 @@ title: "Camera"
 The `Camera` component is used to record videos and take snapshots in
 the browser. Developers can control the camera by `start`, `stop`,
 `pause`, `resume` and `snapshot`.
+
+## Common Use Cases
+
+- **Video recording with playback** — Record a short video and display it in a `Video` component by listening to `onVideoUpload` and calling `video.setContent(event.getMedia())`.
+- **Taking snapshots** — Capture a still image from the live camera feed using `snapshot()` and display it in an `Image` component via `onSnapshotUpload`.
+- **Front-facing camera on mobile** — Use `constraintsString='{"video": {"facingMode": "user"}}'` to request the user-facing camera on phones and tablets.
+- **Controlling recording programmatically** — Start, stop, pause, and resume recording from server-side event handlers or MVVM commands using `camera.start()`, `camera.stop()`, `camera.pause()`, and `camera.resume()`.
+- **Enforcing size and duration limits** — Set `maxsize` (KB) and `lengthLimit` (seconds) to prevent oversized uploads; listen to `onMaxsizeExceed` and `onLengthLimitExceed` to notify users.
+
+# Example
+
+The following example shows a camera that records video and takes snapshots, displaying results immediately using the `Video` and `Image` components:
+
+```xml
+<hlayout>
+    <camera width="480px" audio="true" lengthLimit="60"
+            recordFormat="video/webm"
+            onVideoUpload='video.setContent(event.getMedia())'
+            onSnapshotUpload='image.setContent(event.getMedia())' />
+    <vlayout>
+        <video id="video" controls="true" />
+        <image id="image" />
+    </vlayout>
+</hlayout>
+```
 
 # Browser Support
 
@@ -66,35 +91,87 @@ step by step:
     including the protocol section (ex. "<http://example.com>" )
 3.  restart the browser
 
-# recording
+# Properties
 
-setRecording(true) is the same as invoking start() or resume(),
-depending on camera's current state.
-
-setRecording(false) is the same as invoking stop(), if you want to pause
-recording, please invoke pause().
-
-isRecording() can check whether the camera is recording or not.
-
-```xml
-  <camera id="camera" />
-  <button onClick="camera.setRecording(true)" />
-```
-
-# audio
+## Audio
 
 You can decide whether to record audio while recording the video by
 specifying the value of audio; the valid value is boolean.
 
-Default: true
+**Default Value:** `true`
 
 ```xml
-  <camera audio="false" />
+<camera audio="false" />
 ```
 
-# previewRecord
+## Constraints
 
-Default: `true`
+Sets the [MediaStreamConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) used when opening the media stream. If not specified, the component defaults to `{audio: <audio>, video: true}` where `<audio>` reflects the current `audio` property value.
+
+Because the value is a `Map` (a Java object), assign it from a composer or ViewModel, or construct it inline with `<zscript>`:
+
+```xml
+<zscript>
+    import java.util.HashMap;
+    import java.util.Map;
+    Map videoConstraints = new HashMap();
+    videoConstraints.put("facingMode", "user");
+    Map camConstraints = new HashMap();
+    camConstraints.put("audio", true);
+    camConstraints.put("video", videoConstraints);
+</zscript>
+<camera id="camera" />
+```
+
+For plain JSON-string constraints, prefer the [`constraintsString`](#constraintsstring) property, which accepts a JSON string and converts it to the same `Map` internally.
+
+## ConstraintsString
+
+{% include supported-since.html version="8.6.0" %} The value is passed as
+[MediaTrackConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints)
+which is used to describe a camera's capabilities.
+
+```xml
+<camera constraintsString='{"video": {"facingMode": {"exact": "user"}}}' />
+```
+
+Please refer to
+[MediaTrackConstraints/facingMode](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/facingMode)
+
+## LengthLimit
+
+**Default Value:** `60`
+
+You can set the maximum recording length in "seconds".
+
+When the recorded time exceeds the max length, it will stop recording
+and trigger an event. To handle this, you can listen to
+onLengthLimitExceed.
+
+```xml
+<camera lengthLimit="120" onLengthLimitExceed="doSomething()" />
+```
+
+## Maxsize
+
+You can set the maximum size for uploading recorded video and snapshot.
+The unit is "KB". Negative value means unlimited, e.g., maxsize="-1".
+
+When the size of the recorded video or snapshot is bigger than the
+configured max size, nothing will be uploaded and it will trigger an
+event. To handle this, you can listen to onMaxsizeExceed and get the
+upload size from event.getData().
+
+**Default Value:** please refer to
+[max-upload-size]({{site.baseurl}}/zk_config_ref/the_max_upload_size_element)
+
+```xml
+<camera maxsize="1024" onMaxsizeExceed="event.getData()" />
+```
+
+## PreviewRecord
+
+**Default Value:** `true`
 
 The Camera component provides a preview screen to preview the recorded
 content.
@@ -106,56 +183,36 @@ If you intend to take a snapshot, you must turn on the preview screen
 first, or nothing will be shown.
 
 ```xml
-  <camera width="600px" previewRecord="true" />
+<camera width="600px" previewRecord="true" />
 ```
 
-# maxsize
+## RecordFormat
 
-You can set the maximum size for uploading recorded video and snapshot.
-The unit is "KB". Negative value means unlimited, e,g,. maxsize="-1."
+**Default Value:** `null` (falls back to `video/webm`)
 
-When the size of the recorded video or snapshot is bigger than the
-configured max size, nothing will be uploaded and it will trigger an
-event. To handle this, you can listen to onMaxsizeExceed and get the
-upload size from event.getData().
+Sets the MIME type used when recording video. If the requested type is invalid or unspecified, the component falls back to `video/webm`. Only the following values are accepted:
 
-Default: please refer to
-[max-upload-size]({{site.baseurl}}/zk_config_ref/the_max_upload_size_element)
+| Value | Meaning |
+|---|---|
+| `video/webm` | WebM container (default fallback) |
+| `video/mp4` | MPEG-4 container |
+| `video/ogg` | Ogg container |
+
+Browser support for each format varies — check [MediaRecorder browser compatibility](https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder#browser_compatibility) before choosing a format.
 
 ```xml
-  <camera maxsize="1024" onMaxsizeExceed="event.getData()" />
+<camera recordFormat="video/mp4" />
 ```
 
-# lengthLimit
+## SnapshotFormat
 
-You can set the maximum recording length in "seconds".
+**Default Value:** `null` (falls back to `image/png`)
 
-When the recorded time exceeds the max length, it will stop recording
-and trigger an event. To handle this, you can listen to
-onLengthLimitExceed.
-
-Default: 60
+Sets the image MIME type used when taking a snapshot. If the requested type is invalid or unspecified, the component falls back to `image/png`. Common values include `image/png` and `image/jpeg`.
 
 ```xml
-  <camera lengthLimit="120" onLengthLimitExceed="doSomething()" />
+<camera snapshotFormat="image/jpeg" />
 ```
-
-# constraintsString
-
-{% include supported-since.html version="8.6.0" %} The value is passed as
-[MediaTrackConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints)
-which is used to describe a camera's capabilities.
-
-## Use User-facing Camera
-
-The following string requests a user-facing (front) camera of a phone;
-
-```xml
-<camera constraintsString='{"video": {"facingMode": {"exact": "user"}}}'>
-```
-
-Please refer to
-[MediaTrackConstraints/facingMode](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints/facingMode)
 
 # UploadEvent
 
@@ -250,19 +307,17 @@ css classes like the following:
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onVideoUpload` | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the video has been uploaded. |
-| `onSnapshotUpload` | **Event:** [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) Notifies after the snapshot has been uploaded. |
-| `onMaxsizeExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded size is bigger than the max size. |
-| `onLengthLimitExceed` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Notifies if the recorded length exceeds the max length. |
-| `onStateChange` | **Event:** [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) Notifies when invoking start(), stop(), pause() or resume(). |
-| `onCameraUnavailable` | **Event:** [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) Notifies if camera is unavailable after requesting media devices from user. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onVideoUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | Notifies after the video has been uploaded. |
+| `onSnapshotUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | Notifies after the snapshot has been uploaded. |
+| `onMaxsizeExceed` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies if the recorded size is bigger than the max size. |
+| `onLengthLimitExceed` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies if the recorded length exceeds the max length. |
+| `onStateChange` | [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) | Notifies when invoking start(), stop(), pause() or resume(). |
+| `onCameraUnavailable` | [org.zkoss.zk.ui.event.DOMExceptionEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/DOMExceptionEvent.html) | Notifies if camera is unavailable after requesting media devices from user. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `NONE`
-
-# Version History

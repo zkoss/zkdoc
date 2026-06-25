@@ -2,9 +2,9 @@
 title: "Iframe"
 ---
 
-- Demonstration: [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
-- Java API: [org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html)
-- JavaScript API: [zul.utl.Iframe](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Iframe.html)
+- **Demonstration:** [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)
+- **Java API:** [org.zkoss.zul.Iframe](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Iframe.html)
+- **JavaScript API:** [zul.utl.Iframe](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.utl.Iframe.html)
 
 # Employment/Purpose
 
@@ -39,6 +39,38 @@ report to an `iframe`component by wrapping the result with the
 
 In the following example, we illustrate that you could embed any content
 by use of `iframe`, as long as the client supports its format.
+
+## Common Use Cases
+
+### Embedding an External URL
+
+The most common use is to display an external web page or an internal ZK page within a portion of the current page:
+
+```xml
+<iframe src="https://www.zkoss.org" style="width:100%; height:400px;"/>
+```
+
+### Displaying Dynamically Generated Content (e.g. PDF)
+
+Wrap dynamically generated binary output (for example, a JasperReport PDF) with `org.zkoss.util.media.AMedia` and pass it via the `content` property:
+
+```xml
+<zscript>
+    import org.zkoss.util.media.AMedia;
+    byte[] pdfBytes = generateReportPdf(); // your report engine call
+    AMedia report = new AMedia("report.pdf", "pdf", "application/pdf", pdfBytes);
+</zscript>
+<iframe content="${report}" style="width:100%; height:600px;"/>
+```
+
+### Preventing Popups from Being Obscured by the Iframe
+
+When the iframe embeds non-HTML content (such as a PDF), it can obscure ZK popups and dropdown menus. Enable `autohide` together with the stackup feature to resolve this:
+
+```xml
+<?script content="zk.useStack='auto';"?>
+<iframe src="/reports/annual.pdf" autohide="true" style="width:100%; height:500px;"/>
+```
 
 # Example
 
@@ -156,23 +188,99 @@ Notice that the registration of onload with the client-attribute
 namespace is DOM-level, so the `this` variable references to the DOM
 element (rather than the widget).
 
+# Properties
+
+## Autohide
+
+**Default Value:** `false`
+
+Specifies whether to automatically hide the iframe when a popup or dropdown overlaps it. This is particularly useful when the iframe displays non-HTML content such as a PDF, which can otherwise obscure ZK popups rendered above it.
+
+When enabled, you should also add the following processing instruction to the page:
+
+```xml
+<?script content="zk.useStack='auto';"?>
+```
+
+For more information, see [Stackup and Shadow](https://books.zkoss.org/wiki/ZK_Client-side_Reference/Customization/Stackup_and_Shadow).
+
+```xml
+<iframe src="/reports/report.pdf" autohide="true" style="width:100%; height:500px;"/>
+```
+
+## Content
+
+**Default Value:** `null`
+
+Sets the media content to display directly inside the iframe, bypassing a URL. Accepts any object implementing `org.zkoss.util.media.Media` (for example, `org.zkoss.util.media.AMedia`). This is useful for dynamically generated binary content such as a JasperReport PDF.
+
+Calling `setContent` clears any value previously set via `setSrc`, and vice versa — the two are mutually exclusive.
+
+The `Media` object is typically constructed in `<zscript>` or a composer/ViewModel and referenced via EL.
+
+```xml
+<zscript>
+    import org.zkoss.util.media.AMedia;
+    // generate PDF bytes from a report engine
+    byte[] pdfBytes = generateReport();
+    AMedia media = new AMedia("report.pdf", "pdf", "application/pdf", pdfBytes);
+</zscript>
+<iframe content="${media}" style="width:100%; height:600px;"/>
+```
+
+## Name
+
+**Default Value:** `null` (browser default)
+
+Sets the `name` attribute of the underlying HTML `<iframe>` element. Use this to allow hyperlinks or form submissions in other parts of the page to target this frame (via the HTML `target` attribute).
+
+```xml
+<iframe name="contentFrame" src="/pages/welcome.zul" style="width:100%; height:400px;"/>
+```
+
+## Scrolling
+
+**Default Value:** `"auto"`
+
+{% include supported-since.html version="3.0.4" %}
+
+Controls whether the iframe displays scroll bars. Accepted values:
+
+| Value | Meaning |
+|---|---|
+| `auto` | Show scroll bars only when needed (default) |
+| `true` or `yes` | Always show scroll bars |
+| `false` or `no` | Never show scroll bars |
+
+Passing `null` is treated the same as `"auto"`.
+
+```xml
+<iframe src="/pages/content.zul" scrolling="false" style="width:100%; height:400px;"/>
+```
+
+## Src
+
+**Default Value:** `null`
+
+Sets the source URL for the iframe. The URL is encoded by the current desktop's execution before being sent to the browser, so application-relative paths are supported.
+
+Passing an empty string is treated the same as `null` (nothing is loaded). Calling `setSrc` clears any media previously set via `setContent` — the two are mutually exclusive.
+
+```xml
+<iframe src="https://www.zkoss.org" style="width:100%; height:500px;"/>
+```
+
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onURIChange` | **Event:** [org.zkoss.zk.ui.event.URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html) Denotes the associated URI (`src`) has been changed by user. Use `getURI()` to retrieve the URI being changed to. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onUriChange` | [URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html) | Denotes the associated URI (`src`) has been changed by user. Use `getURI()` to retrieve the URI being changed to. |
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
 
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-| Version      | Description          | Example Location                                                                              |
-|--------------|----------------------|-----------------------------------------------------------------------------------------------|
-| 3.6 or later | Print Iframe Content | [<http://www.zkoss.org/forum/listComment/6599>](https://www.zkoss.org/forum/listComment/6599) |
 
 [^1]: For more information please refer to the [Component-based UI]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui)
     section

@@ -2,8 +2,9 @@
 title: "Track"
 ---
 
-- Java API: [org.zkoss.zul.Track](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Track.html)
-- JavaScript API: [zul.med.Track](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Track.html)
+- **Demonstration:** [Track](https://www.zkoss.org/zkdemo/media/track)
+- **Java API:** [org.zkoss.zul.Track](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Track.html)
+- **JavaScript API:** [zul.med.Track](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.med.Track.html)
 
 {% include supported-since.html version="9.5.0" %}
 
@@ -12,6 +13,36 @@ title: "Track"
 It lets you specify some timed text tracks like captions or subtitles
 for media components such as [ Audio]({{site.baseurl}}/zk_component_ref/audio)
 or [ Video]({{site.baseurl}}/zk_component_ref/video).
+
+## Common Use Cases
+
+**Adding captions and subtitles to a video:**
+
+```xml
+<video src="course.mp4" controls="true">
+  <track kind="captions" src="transcript.vtt" srclang="en" default="true"/>
+  <track kind="subtitles" src="transcript_fr.vtt" srclang="fr" label="Français"/>
+  <track kind="subtitles" src="transcript_de.vtt" srclang="de" label="Deutsch"/>
+</video>
+```
+
+**Adding lyrics or captions to an audio player:**
+
+```xml
+<audio src="music.wav" controls="true">
+  <track kind="captions" src="lyrics.vtt" srclang="en" default="true"/>
+  <track kind="subtitles" src="lyrics_zh.vtt" srclang="zh" label="中文"/>
+</audio>
+```
+
+**Providing chapter navigation for a long video:**
+
+```xml
+<video src="lecture.mp4" controls="true">
+  <track kind="chapters" src="chapters.vtt" srclang="en" default="true"/>
+  <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English"/>
+</video>
+```
 
 # Example
 
@@ -86,9 +117,3 @@ Specify what language this track is. It's required if the kind is
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date           | Content                                                                                                                                                             |
-|---------|----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 9.5.0   | September 2020 | [ZK-4648](https://tracker.zkoss.org/browse/ZK-4648): Audio supports to add tracks [ZK-4649](https://tracker.zkoss.org/browse/ZK-4649): Video supports to add tracks |

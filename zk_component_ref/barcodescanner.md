@@ -1,26 +1,12 @@
 
 # Barcodescanner
 
-- Demonstration:
-  [Barcodescanner](http://www.zkoss.org/zksandbox/userguide/#u5)
-- Java API: [org.zkoss.zkmax.zul.Barcodescanner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcodescanner.html)
-- JavaScript API:
-  [zkmax.barscanner.Barcodescanner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barscanner.Barcodescanner.html)
+- **Demonstration:** [Barcodescanner](http://www.zkoss.org/zksandbox/userguide/#u5)
+- **Java API:** [org.zkoss.zkmax.zul.Barcodescanner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcodescanner.html)
+- **JavaScript API:** [zkmax.barscanner.Barcodescanner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barscanner.Barcodescanner.html)
 
-{% include supported-since.html version="8.6.0" %} <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
-
-# Browser Support
-
-- IE browsers are not supported
-- For iOS Safari only supports 11+
-
-Note: iOS Chrome and other WebView browsers are not supported due to
-Apple's restriction.
-
-Note: due to Chrome's security policy, starting from Chrome 47,
-getUserMedia() requests are only allowed from secure origins: HTTPS or
-localhost.
+{% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
@@ -33,6 +19,13 @@ continue scanning by setting continuous="true", and setting the scan
 rate by setting interval="1000", the unit of interval is millisecond.
 You can turn on the scanner switch by setting enable="true", or close it
 by enable="false".
+
+## Common Use Cases
+
+- Scanning product codes in inventory management systems
+- QR code verification in check-in applications
+- Real-time barcode capture in logistics workflows
+- License plate or ID document scanning scenarios
 
 # Request Camera API permission
 
@@ -52,7 +45,21 @@ access.
 
 Scan the barcode by the Barcodescanner.
 
-# type
+# Browser Support
+
+- IE browsers are not supported
+- For iOS Safari only supports 11+
+
+Note: iOS Chrome and other WebView browsers are not supported due to
+Apple's restriction.
+
+Note: due to Chrome's security policy, starting from Chrome 47,
+getUserMedia() requests are only allowed from secure origins: HTTPS or
+localhost.
+
+# Properties
+
+## Type
 
 This component supports 9 types for 1D and 1 type for 2D barcode by
 default. After choosing the type of barcode, the component can scan the
@@ -63,7 +70,7 @@ time separated by a comma, for example
  <barcodescanner type="qr,code128"/>
 ```
 
-## The supported types
+Supported types:
 
 - 1D CODE Family
   - CODE128
@@ -90,7 +97,7 @@ detecting accuracy.
 
 \(3\) The barcode will restart every time you change the type.
 
-# continuous
+## Continuous
 
 Continuous is a boolean attribute to let the Barcodescanner can interval
 scan or not.
@@ -99,7 +106,7 @@ scan or not.
  <barcodescanner type="qr" continuous="true"/>
 ```
 
-# interval
+## Interval
 
 The interval is a subsidiary, integer attribute for continuous scan. The
 interval="500" means the scanner will scan once every 500 millisecond.
@@ -108,7 +115,7 @@ interval="500" means the scanner will scan once every 500 millisecond.
  <barcodescanner type="code128" continuous="true" interval="500"/>
 ```
 
-# enable
+## Enable
 
 The enable is boolean attribute to switch the BarcodeScanner. You can
 use the zk mvvm mechanism to to switch the BarcodeScanner.
@@ -119,7 +126,51 @@ use the zk mvvm mechanism to to switch the BarcodeScanner.
  </window>
 ```
 
-# registerLibrary
+## Constraints
+
+**Default Value:** `null` (falls back to `{video: {facingMode: 'environment'}}`)
+
+Sets the camera [MediaStreamConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) as a Java `Map`. When not specified the scanner defaults to the rear-facing camera. The value is a Java `Map` object; construct it in a `<zscript>` block or pass it from a composer / ViewModel.
+
+```xml
+<zscript>
+    import java.util.HashMap;
+    import java.util.Map;
+    Map video = new HashMap();
+    video.put("facingMode", "user");   // front camera
+    Map cons = new HashMap();
+    cons.put("video", video);
+</zscript>
+<barcodescanner type="qr" constraints="${cons}"/>
+```
+
+See also [`constraintsString`](#constraintsstring) for a JSON-string alternative that is convenient in pure ZUML.
+
+## ConstraintsString
+
+**Default Value:** `null` (falls back to `{video: {facingMode: 'environment'}}`)
+
+Sets the camera [MediaStreamConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints) as a JSON string. This is the ZUL-friendly alternative to [`constraints`](#constraints) — you can inline the value directly without a `<zscript>` block. Passing an empty string or `null` clears the override and restores the default rear-camera behaviour.
+
+```xml
+<barcodescanner type="qr"
+    constraintsString='{"video":{"facingMode":"user"}}'/>
+```
+
+## ErrorAcceptance
+
+**Default Value:** `0.1` (10%)
+
+{% include supported-since.html version="8.6.1" %}
+
+Sets the error tolerance for 1D barcode scanning. The value must be in the range `[0, 1]`: `0` means no error is accepted (strictest), `1` (100%) effectively disables the check. Used together with `consistencyBufferSize` and `consistencyThreshold` to tune 1D scan accuracy.
+
+```xml
+<!-- Accept up to 5% error in 1D barcode reads -->
+<barcodescanner type="code128" continuous="true" errorAcceptance="0.05"/>
+```
+
+## registerLibrary
 
 `registerLibrary(constructor, library_name, [array of types] )` is a
 class-level javascript function to register a custom library into
@@ -223,7 +274,7 @@ myRegister.js
     });
 ```
 
-# Consistency Buffer (1D barcode only)
+## Consistency Buffer (1D barcode only)
 
 The accuracy of 1D barcode scan is not as good as 2D QR code. The
 scanned result might be wrong if the image quality is not good (such as
@@ -247,7 +298,15 @@ before firing.
 If you want to turn off this feature, simply set `consistencyBufferSize`
 and `consistencyThreshold` both 1.
 
-# Supported Barcode Type (Default)
+## ConsistencyBufferSize
+
+Defaults to 5. The number of past scan events to buffer (first in, first out).
+
+## ConsistencyThreshold
+
+Defaults to 3. The number of buffered events with the same value necessary to fire an event to the server and clear the buffer.
+
+## Supported Barcode Type (Default)
 
 | Name | Barcodescanner Type |
 |---|---|
@@ -258,19 +317,12 @@ and `consistencyThreshold` both 1.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onDetect` | **Event:** [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) Notifies if the barcode scanner detect a barcode message. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onDetect` | [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) | Notifies if the barcode scanner detect a barcode message. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date      | Content                                                                                                         |
-|---------|-----------|-----------------------------------------------------------------------------------------------------------------|
-| 8.6.0   | May, 2018 | [ZK-3923: Provide a Barcode Scanner](http://tracker.zkoss.org/browse/ZK-3923)                                   |
-| 8.6.0   | Oct 2018  | [ZK-4095: Add a false positive check threshold on the barcode scanner](http://tracker.zkoss.org/browse/ZK-4095) |
