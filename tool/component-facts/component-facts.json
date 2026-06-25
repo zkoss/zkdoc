@@ -2,8 +2,8 @@
   "generated": "run date stamped post-hoc",
   "source": "ZK 10.x at /Users/hawk/Documents/workspace/ZK10/zk , /Users/hawk/Documents/workspace/ZK10/zkcml",
   "graph": "~/.graphify/global-graph.json",
-  "note": "Class->file resolution via Graphify graph (global-graph.json). Each fact carries provenance. Properties are classified by their SETTER-declaring class (CR-L5): ownProperties = setter declared in this component class (document here); inheritedProperties = setter declared in an ancestor (document on ancestorDocPath, NOT here) — carries setterClass + ancestorDocPath. excludedProperties records what was filtered (read/write-only, common, inner-class) and why. All documentable props have both setter+getter (CR-L2) and are top-level non-inner-class (CR-L3).",
-  "componentCount": 276,
+  "note": "Class->file resolution via Graphify graph (global-graph.json). Each fact carries provenance. Properties are classified by their SETTER-declaring class (CR-L5): ownProperties = setter declared in this component class (document here); inheritedProperties = setter declared in an ancestor (document on ancestorDocPath, NOT here) — carries setterClass + ancestorDocPath. excludedProperties records what was filtered (read/write-only, common, inner-class) and why. All documentable props have both setter+getter (CR-L2) and are top-level non-inner-class (CR-L3). Out-of-graph ADDON components (gmaps family, charts, pivottable, calendars) resolved by globbing ADDON source roots; their provenance.graphify is a replayable grep against the real addon source file (node:null, addon:true).",
+  "componentCount": 283,
   "components": [
     {
       "name": "Track",
@@ -92125,6 +92125,4494 @@
       "events": [],
       "inheritanceChain": [],
       "warnings": []
+    },
+    {
+      "name": "gmaps",
+      "componentClass": "org.zkoss.gmaps.Gmaps",
+      "widgetClass": "gmaps.Gmaps",
+      "textAs": null,
+      "molds": [
+        "default"
+      ],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:58",
+        "line": 58,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "baseDomain",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the base domain from which to load the Maps API.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:826",
+            "line": 826,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "center",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Sets the center of the Google Maps.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:119",
+            "line": 119,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "channel",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the 'client ID' Gmaps API parameter .",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:167",
+            "line": 167,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "client",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Sets the 'client ID' Gmaps API parameter .",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:151",
+            "line": 151,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "continuousZoom",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether enable continuous zoom effects, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:716",
+            "line": 716,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "doubleClickZoom",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether enable zoom in-out via mouse double click, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:735",
+            "line": 735,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "enableDragging",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether enable dragging maps by mouse, default to true.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:697",
+            "line": 697,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "enableGoogleBar",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether show the Google Search Bar on the Map, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:773",
+            "line": 773,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "extraMapOptions",
+          "type": "Map<String, ?>",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.1.0",
+          "deprecated": null,
+          "description": "Returns the last value provided to setExtraMapOptions",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:946",
+            "line": 946,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "gmapsApiConfigParam",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets an arbitrary additional url parameter/value to the request downloading the google maps api (https://maps.googleapis.com/maps/api/js?...).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:207",
+            "line": 207,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "hybrid",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether support hybrid map, default to true.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:616",
+            "line": 616,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "itemRenderer",
+          "type": "MapitemRenderer",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the renderer to render given data object, or null if the default renderer is used.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1223",
+            "line": 1223,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "key",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.5",
+          "deprecated": null,
+          "description": "Sets the Gmaps 'API key' parameter .",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:187",
+            "line": 187,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "language",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the preferred language code ( gmaps API language parameter ); default to null and means using browser's preferred language.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:896",
+            "line": 896,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "lat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets the current latitude of the Maps center.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:226",
+            "line": 226,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "libraries",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.0",
+          "deprecated": null,
+          "description": "Returns the libraries to load; defaults to 'geometry' and means load geometry library only, you can check libraries here Use comma to separate different library",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:925",
+            "line": 925,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "lng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets the current longitude of the Maps center.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:240",
+            "line": 240,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "mapId",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Return the mapId, necessary for advanced markers",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1073",
+            "line": 1073,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "mapType",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Get the current Map Type.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:666",
+            "line": 666,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "model",
+          "type": "MapModel",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the Maps model associated with this Maps, or null if this Maps is not associated with any Maps data model.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1031",
+            "line": 1031,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "nelat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the bounded north east latitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:343",
+            "line": 343,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "nelng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the bounded north east longitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:368",
+            "line": 368,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "normal",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether support normal map, default to true.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:566",
+            "line": 566,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "physical",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether support physical map, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:641",
+            "line": 641,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "protocol",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.0",
+          "deprecated": null,
+          "description": "Returns the protocol to load the Maps API.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:870",
+            "line": 870,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "region",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.5",
+          "deprecated": null,
+          "description": "Get the gmaps api region parameter",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:850",
+            "line": 850,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "satellite",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether support satellite map, default to true.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:591",
+            "line": 591,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "scrollWheelZoom",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether enable zoom in-out via mouse scroll wheel, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:754",
+            "line": 754,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "selectedItem",
+          "type": "Component",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Set the selected item (can be Gmarker, Gpolyline, or Gpolygon).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1244",
+            "line": 1244,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "sensor",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": {
+            "replacement": "SensorNotRequired",
+            "text": "As of 3.0.5 : see SensorNotRequired"
+          },
+          "description": "Returns whether your application is using a sensor (such as a GPS locator) to determine the user's location.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:798",
+            "line": 798,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showLargeCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets whether show the large Google Maps Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:419",
+            "line": 419,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showOverviewCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether show the Google Maps overview Control, default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:546",
+            "line": 546,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showPanCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.1",
+          "deprecated": null,
+          "description": "Sets whether show the Google Maps pan Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:506",
+            "line": 506,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showScaleCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether show the Google Maps scale Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:526",
+            "line": 526,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showSmallCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets whether show the small Google Maps Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:441",
+            "line": 441,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showTypeCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets whether show the Google Maps type Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:487",
+            "line": 487,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "showZoomCtrl",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether show the small zoom Google Maps Control.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:464",
+            "line": 464,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "swlat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the bounded south west latitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:290",
+            "line": 290,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "swlng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the bounded south west longitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:318",
+            "line": 318,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "version",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the selected version of google map API.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:972",
+            "line": 972,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "zoom",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets zoom level.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:402",
+            "line": 402,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "bounds",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "info",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "neLat",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "neLng",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "swLat",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "swLng",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [
+        {
+          "name": "onMapMove",
+          "raw": "\"onMapMove\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1494",
+            "line": 1494,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapZoom",
+          "raw": "\"onMapZoom\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1495",
+            "line": 1495,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onInfoChange",
+          "raw": "\"onInfoChange\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1496",
+            "line": 1496,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapClick",
+          "raw": "\"onMapClick\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1497",
+            "line": 1497,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapDoubleClick",
+          "raw": "\"onMapDoubleClick\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1498",
+            "line": 1498,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapRightClick",
+          "raw": "\"onMapRightClick\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1499",
+            "line": 1499,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapDrop",
+          "raw": "\"onMapDrop\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1500",
+            "line": 1500,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onMapTypeChange",
+          "raw": "\"onMapTypeChange\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1501",
+            "line": 1501,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        },
+        {
+          "name": "onSelect",
+          "raw": "Events.ON_SELECT",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java:1502",
+            "line": 1502,
+            "graphify": "grep -n 'class Gmaps' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmaps.java"
+          }
+        }
+      ],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "gmarker",
+      "componentClass": "org.zkoss.gmaps.Gmarker",
+      "widgetClass": "gmaps.Gmarker",
+      "textAs": "content",
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:37",
+        "line": 37,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "draggingEnabled",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Sets whether this Gmarker is enabled to drag \"INSIDE\" the maps; default is true.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:87",
+            "line": 87,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconAnchorX",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the x pixel coordinate relative to the top left corner of the icon image at which this icon is anchored to the map.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:111",
+            "line": 111,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconAnchorY",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the y pixel coordinate relative to the top left corner of the icon image at which this icon is anchored to the map.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:132",
+            "line": 132,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconDragCrossAnchorX",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the x pixel coordinate offsets (relative to the iconAnchor) of the cross image when an icon is dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:157",
+            "line": 157,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconDragCrossAnchorY",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the y pixel coordinate offsets (relative to the iconAnchor) of the cross image when an icon is dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:178",
+            "line": 178,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconDragCrossHeight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the pixel height of the cross image when an icon is dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:221",
+            "line": 221,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconDragCrossImage",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the cross image URL when an icon is dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:202",
+            "line": 202,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconDragCrossWidth",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the pixel width of the cross image when an icon is dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:241",
+            "line": 241,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconHeight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the pixel height of the foreground image of the icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:501",
+            "line": 501,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconImage",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the foreground image URL of the icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:265",
+            "line": 265,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconImageMap",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Return a comma delimitered integers representing the x/y coordinates of the image map we should use to specify the clickable part of the icon image in browsers other than Internet Explorer.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:286",
+            "line": 286,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconInfoAnchorX",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the x pixel coordinate relative to the top left corner of the icon image at which the info window is anchored to this icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:308",
+            "line": 308,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconInfoAnchorY",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the y pixel coordinate relative to the top left corner of the icon image at which the info window is anchored to this icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:329",
+            "line": 329,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconMaxHeight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the distance pixels in which a marker will visually \"rise\" vertically when dragged.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:354",
+            "line": 354,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconMozPrintImage",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the URL of the foreground icon image used for printed maps in Firefox/Mozilla.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:376",
+            "line": 376,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconPrintImage",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the URL of the foreground icon image used for printed maps.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:398",
+            "line": 398,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconPrintShadow",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the URL of the shadow image used for printed maps.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:420",
+            "line": 420,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconShadow",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the shadow image URL of the icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:440",
+            "line": 440,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconShadowHeight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the pixel height of the shadow image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:459",
+            "line": 459,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconShadowWidth",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Return the pixel width of the shadow image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:478",
+            "line": 478,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconTransparent",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the URL of a virtually transparent version of the foreground icon image used to capture click events in Internet Explorer.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:559",
+            "line": 559,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "iconWidth",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the pixel width of the foreground image of the icon.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:532",
+            "line": 532,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "maxzoom",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the maximum visible zoom level of this Gmarker (default to 17).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:581",
+            "line": 581,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        },
+        {
+          "name": "minzoom",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the minimum visible zoom level of this Gmarker (default to 0).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:600",
+            "line": 600,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "anchor",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "set the anchor point of the info window.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:71",
+            "line": 71,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Ginfo",
+          "sourceClass": "org.zkoss.gmaps.Ginfo",
+          "ancestorDoc": "ginfo",
+          "ancestorDocPath": "zk_component_ref/ginfo.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "content",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the content of the info window.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:54",
+            "line": 54,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Ginfo",
+          "sourceClass": "org.zkoss.gmaps.Ginfo",
+          "ancestorDoc": "ginfo",
+          "ancestorDocPath": "zk_component_ref/ginfo.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "lat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "set the latitude of the anchor point.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:98",
+            "line": 98,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Ginfo",
+          "sourceClass": "org.zkoss.gmaps.Ginfo",
+          "ancestorDoc": "ginfo",
+          "ancestorDocPath": "zk_component_ref/ginfo.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "lng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "set the longitude of the anchor point.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:110",
+            "line": 110,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Ginfo",
+          "sourceClass": "org.zkoss.gmaps.Ginfo",
+          "ancestorDoc": "ginfo",
+          "ancestorDocPath": "zk_component_ref/ginfo.md"
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Open this Info",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:121",
+            "line": 121,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Ginfo",
+          "sourceClass": "org.zkoss.gmaps.Ginfo",
+          "ancestorDoc": "ginfo",
+          "ancestorDocPath": "zk_component_ref/ginfo.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "iconSizeHeight",
+          "source": "Gmarker",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "parent",
+          "source": "Ginfo",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [
+        {
+          "name": "onMapDrop",
+          "raw": "\"onMapDrop\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java:763",
+            "line": 763,
+            "graphify": "grep -n 'class Gmarker' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gmarker.java"
+          }
+        }
+      ],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.gmaps.Ginfo",
+          "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:32"
+        },
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "gscreen",
+      "componentClass": "org.zkoss.gmaps.Gscreen",
+      "widgetClass": "gmaps.Gscreen",
+      "textAs": null,
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:38",
+        "line": 38,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "content",
+          "type": "org.zkoss.image.Image",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets the content directly.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:292",
+            "line": 292,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        },
+        {
+          "name": "offsetX",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the X offset (in px or percentage of the maps size) to move left the image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:153",
+            "line": 153,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        },
+        {
+          "name": "offsetY",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Y offset (in px or percentage of the maps size) to move down the image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:186",
+            "line": 186,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        },
+        {
+          "name": "screenX",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the X coordinate (in px or percentage of the maps size, left-bottom corner as the origin) of the screen the image is going to be placed.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:90",
+            "line": 90,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        },
+        {
+          "name": "screenY",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Y coordinate (in px or percentage of the maps size, left-bottom corner as the origin) of the screen the image is going to be placed.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:121",
+            "line": 121,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the source URI of the image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java:266",
+            "line": 266,
+            "graphify": "grep -n 'class Gscreen' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gscreen.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "Gscreen",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "value",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "width",
+          "source": "Gscreen",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "ginfo",
+      "componentClass": "org.zkoss.gmaps.Ginfo",
+      "widgetClass": "gmaps.Ginfo",
+      "textAs": "content",
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:32",
+        "line": 32,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "anchor",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "set the anchor point of the info window.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:71",
+            "line": 71,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          }
+        },
+        {
+          "name": "content",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the content of the info window.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:54",
+            "line": 54,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          }
+        },
+        {
+          "name": "lat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "set the latitude of the anchor point.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:98",
+            "line": 98,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          }
+        },
+        {
+          "name": "lng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "set the longitude of the anchor point.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:110",
+            "line": 110,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          }
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Open this Info",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java:121",
+            "line": 121,
+            "graphify": "grep -n 'class Ginfo' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Ginfo.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "parent",
+          "source": "Ginfo",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "gpolygon",
+      "componentClass": "org.zkoss.gmaps.Gpolygon",
+      "widgetClass": "gmaps.Gpolygon",
+      "textAs": null,
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gpolygon' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java:33",
+        "line": 33,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "fill",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns whether to fill the interier of this polygon with the provided fill color getFillColor.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java:65",
+            "line": 65,
+            "graphify": "grep -n 'class Gpolygon' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java"
+          }
+        },
+        {
+          "name": "fillColor",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns fill color in form of #RRGGBB, default to #808080.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java:84",
+            "line": 84,
+            "graphify": "grep -n 'class Gpolygon' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java"
+          }
+        },
+        {
+          "name": "fillOpacity",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns fill opacity from 0 (transparent) to 100 (solid), default to 50.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java:104",
+            "line": 104,
+            "graphify": "grep -n 'class Gpolygon' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java"
+          }
+        },
+        {
+          "name": "outline",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns whether to draw the outline of this polygon with the provided color getColor.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java:47",
+            "line": 47,
+            "graphify": "grep -n 'class Gpolygon' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolygon.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the line color in form of #RRGGBB, default to #808080.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:272",
+            "line": 272,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "editable",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns whether can edit the Gpolyline by mouse; default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:335",
+            "line": 335,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "opacity",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the line opacity 0 - 100, default to 50.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:312",
+            "line": 312,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "path",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Sets ordered sequence of coordinates of the Polyline.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:130",
+            "line": 130,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "pathEncoded",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.3.0",
+          "deprecated": null,
+          "description": "Toggle between lossy polygon encoding (compression) or raw LatLngLiteral s (for maximum precision).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:354",
+            "line": 354,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "weight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the line weight(width) 1 - 10, default to 5.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:292",
+            "line": 292,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          },
+          "setterClass": "org.zkoss.gmaps.Gpolyline",
+          "sourceClass": "org.zkoss.gmaps.Gpolyline",
+          "ancestorDoc": "gpolyline",
+          "ancestorDocPath": "zk_component_ref/gpolyline.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "encodedPolyline",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "encodedPolylineByClient",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "pathByClient",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "points",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.gmaps.Gpolyline",
+          "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:41"
+        },
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "gpolyline",
+      "componentClass": "org.zkoss.gmaps.Gpolyline",
+      "widgetClass": "gmaps.Gpolyline",
+      "textAs": null,
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:41",
+        "line": 41,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "color",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the line color in form of #RRGGBB, default to #808080.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:272",
+            "line": 272,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        },
+        {
+          "name": "editable",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns whether can edit the Gpolyline by mouse; default to false.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:335",
+            "line": 335,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        },
+        {
+          "name": "opacity",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "2.0",
+          "deprecated": null,
+          "description": "Returns the line opacity 0 - 100, default to 50.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:312",
+            "line": 312,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        },
+        {
+          "name": "path",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Sets ordered sequence of coordinates of the Polyline.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:130",
+            "line": 130,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        },
+        {
+          "name": "pathEncoded",
+          "type": "boolean",
+          "accessors": "is/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.3.0",
+          "deprecated": null,
+          "description": "Toggle between lossy polygon encoding (compression) or raw LatLngLiteral s (for maximum precision).",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:354",
+            "line": 354,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        },
+        {
+          "name": "weight",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the line weight(width) 1 - 10, default to 5.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:292",
+            "line": 292,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "encodedPolyline",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "encodedPolylineByClient",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "pathByClient",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "points",
+          "source": "Gpolyline",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [
+        {
+          "name": "onPathChange",
+          "raw": "\"onPathChange\"",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java:53",
+            "line": 53,
+            "graphify": "grep -n 'class Gpolyline' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gpolyline.java"
+          }
+        }
+      ],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
+    },
+    {
+      "name": "gimage",
+      "componentClass": "org.zkoss.gmaps.Gimage",
+      "widgetClass": "gmaps.Gimage",
+      "textAs": null,
+      "molds": [],
+      "langFile": "zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml",
+      "javaApiUrl": null,
+      "jsApiUrl": null,
+      "classProvenance": {
+        "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java",
+        "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:39",
+        "line": 39,
+        "node": null,
+        "addon": true
+      },
+      "ownProperties": [
+        {
+          "name": "bounds",
+          "type": "LatLngBounds",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Sets the bounds of Gimage.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:75",
+            "line": 75,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "content",
+          "type": "org.zkoss.image.Image",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Sets the content directly.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:181",
+            "line": 181,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "nelat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the bounded north east latitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:126",
+            "line": 126,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "nelng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the bounded north east longitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:140",
+            "line": 140,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the source URI of the image.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:154",
+            "line": 154,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "swlat",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the bounded south west latitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:98",
+            "line": 98,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        },
+        {
+          "name": "swlng",
+          "type": "double",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the bounded south west longitude.",
+          "provenance": {
+            "resolved": "zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java:112",
+            "line": 112,
+            "graphify": "grep -n 'class Gimage' /Users/hawk/Documents/workspace/ADDON/zkgmapsz/gmapsz/src/main/java/org/zkoss/gmaps/Gimage.java"
+          }
+        }
+      ],
+      "inheritedProperties": [
+        {
+          "name": "action",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.6",
+          "deprecated": {
+            "replacement": "clientAction",
+            "text": "As of release 10.0.0, using setClientAction(String) instead."
+          },
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:675",
+            "line": 675,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "clientAction",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "10.0.0",
+          "deprecated": null,
+          "description": "Returns the client-side action (CSA).",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:682",
+            "line": 682,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "ctrlKeys",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.6",
+          "deprecated": null,
+          "description": "Returns what keystrokes to intercept.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:45",
+            "line": 45,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "hflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets horizontal flex hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:610",
+            "line": 610,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "left",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the left position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:91",
+            "line": 91,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "renderdefer",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.2",
+          "deprecated": null,
+          "description": "Returns the number of milliseconds before rendering this component at the client.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:645",
+            "line": 645,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "tooltip",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.0.2",
+          "deprecated": null,
+          "description": "Returns the ID of the popup (Popup) that should be used as a tooltip window when the mouse hovers over the element for a moment.",
+          "provenance": {
+            "resolved": "zk/zul/src/main/java/org/zkoss/zul/impl/XulElement.java:319",
+            "line": 319,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::impl_xulelement_xulelement\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zul.impl.XulElement",
+          "sourceClass": "org.zkoss.zul.impl.XulElement",
+          "ancestorDoc": "xulelement",
+          "ancestorDocPath": "zk_component_ref/xulelement.md"
+        },
+        {
+          "name": "top",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the top position.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:109",
+            "line": 109,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "vflex",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "5.0.0",
+          "deprecated": null,
+          "description": "Sets vertical flexibility hint of this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:557",
+            "line": 557,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zIndex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": null,
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:128",
+            "line": 128,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zclass",
+          "type": "String",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.1",
+          "deprecated": null,
+          "description": "Returns the ZK Cascading Style class for this component.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:310",
+            "line": 310,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        },
+        {
+          "name": "zindex",
+          "type": "int",
+          "accessors": "get/set",
+          "hasSetter": true,
+          "hasGetter": true,
+          "since": "3.5.2",
+          "deprecated": null,
+          "description": "Returns the Z index.",
+          "provenance": {
+            "resolved": "zk/zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:150",
+            "line": 150,
+            "graphify": "jq '.nodes[]|select(.id==\"zk::ui_htmlbasedcomponent_htmlbasedcomponent\")' ~/.graphify/global-graph.json"
+          },
+          "setterClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "sourceClass": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "ancestorDoc": "htmlbasedcomponent",
+          "ancestorDocPath": "zk_component_ref/htmlbasedcomponent.md"
+        }
+      ],
+      "excludedProperties": [
+        {
+          "name": "childable",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "class",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "context",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "contextAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "draggable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "droppable",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "extraCtrl",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "focus",
+          "source": "HtmlBasedComponent",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "height",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popup",
+          "source": "XulElement",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "popupAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "propertyAccess",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "sclass",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "style",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindex",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "tabindexInteger",
+          "source": "own",
+          "reason": "readOnly (getter-only — not ZUL-settable)",
+          "accessors": "get"
+        },
+        {
+          "name": "tooltipAttributes",
+          "source": "XulElement",
+          "reason": "writeOnly (setter-only)",
+          "accessors": "set"
+        },
+        {
+          "name": "tooltiptext",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        },
+        {
+          "name": "width",
+          "source": "HtmlBasedComponent",
+          "reason": "common (self-explanatory; see Javadoc)",
+          "accessors": "set/get"
+        }
+      ],
+      "events": [],
+      "inheritanceChain": [
+        {
+          "class": "org.zkoss.zul.impl.XulElement",
+          "resolved": "zul/src/main/java/org/zkoss/zul/impl/XulElement.java:37"
+        },
+        {
+          "class": "org.zkoss.zk.ui.HtmlBasedComponent",
+          "resolved": "zk/src/main/java/org/zkoss/zk/ui/HtmlBasedComponent.java:64"
+        }
+      ],
+      "warnings": [],
+      "addon": true
     }
   ]
 }

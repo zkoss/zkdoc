@@ -71,6 +71,26 @@ const LANG_FILES = [
   'zkcml/client-bind/src/main/resources/metainfo/zk/lang-addon.xml',
 ].map((rel) => path.join('/Users/hawk/Documents/workspace/ZK10', rel));
 
+// Out-of-graph ADDON components (Google Maps, Charts, Pivottable, Calendars). These live
+// in separate addon projects that are NOT indexed in the Graphify graph, so their classes
+// are resolved by globbing these source roots instead (resolveClass falls back here). Their
+// ancestors (XulElement, HtmlBasedComponent, …) ARE in ZK10/graph, so the inheritance walk
+// still resolves inherited props to their core base-class pages (CR-L5). Provenance for an
+// addon class is a replayable `grep` against the real source file (no graph node exists).
+const ADDON_DIR = '/Users/hawk/Documents/workspace/ADDON';
+const ADDON_ROOTS = [
+  path.join(ADDON_DIR, 'zkgmapsz/gmapsz/src/main/java'),
+  path.join(ADDON_DIR, 'charts/src/main/java'),
+  path.join(ADDON_DIR, 'zkcalendar/calendar/src/main/java'),
+  path.join(ADDON_DIR, 'pivottable/pivottable/src'),
+];
+const ADDON_LANG_FILES = [
+  path.join(ADDON_DIR, 'zkgmapsz/gmapsz/src/main/resources/metainfo/zk/lang-addon.xml'),
+  path.join(ADDON_DIR, 'charts/src/main/resources/metainfo/zk/lang-addon.xml'),
+  path.join(ADDON_DIR, 'zkcalendar/calendar/src/main/resources/metainfo/zk/lang-addon.xml'),
+  path.join(ADDON_DIR, 'pivottable/pivottable/src/archive/metainfo/zk/lang-addon.xml'),
+];
+
 const PILOT = [
   'button', 'listbox', 'combobox', 'window', 'drawer', 'grid', 'tabbox', 'label',
   'menupopup', 'datebox', 'tree', 'chart', 'borderlayout', 'fileupload', 'captcha',
@@ -187,6 +207,40 @@ function resolveClass(index, fqn) {
       };
     }
   }
+  // Out-of-graph fallback: addon classes (gmaps/charts/pivottable/calendars) are not in the
+  // Graphify graph. Glob the addon source roots for <fqn>.java and resolve from the file
+  // directly. Provenance is a replayable `grep` against the real source (no graph node).
+  return resolveClassAddon(fqn);
+}
+
+function resolveClassAddon(fqn) {
+  const rel = fqn.replace(/\./g, '/') + '.java';
+  const simple = fqn.split('.').pop();
+  for (const root of ADDON_ROOTS) {
+    const abs = path.join(root, rel);
+    if (!fs.existsSync(abs)) continue;
+    const text = fs.readFileSync(abs, 'utf8');
+    const lines = text.split('\n');
+    let line = 1;
+    for (let i = 0; i < lines.length; i++) {
+      if (new RegExp(`\\bclass\\s+${simple}\\b`).test(lines[i])) { line = i + 1; break; }
+    }
+    const addonRel = abs.replace(ADDON_DIR + '/', '');
+    return {
+      resolved: `${addonRel}:${line}`,
+      line,
+      node: null,
+      absPath: abs,
+      repo: 'addon',
+      provenance: {
+        graphify: `grep -n 'class ${simple}' ${abs}`,
+        resolved: `${addonRel}:${line}`,
+        line,
+        node: null,
+        addon: true,
+      },
+    };
+  }
   return null;
 }
 
@@ -199,6 +253,10 @@ function locateAbs(moduleRelative) {
     const p = path.join(root, moduleRelative);
     if (fs.existsSync(p)) return p;
   }
+  for (const root of ADDON_ROOTS) {
+    const p = path.join(root, moduleRelative);
+    if (fs.existsSync(p)) return p;
+  }
   return null;
 }
 
@@ -208,10 +266,10 @@ function locateAbs(moduleRelative) {
 
 function parseLangFiles() {
   const components = new Map(); // name -> { name, componentClass, widgetClass, textAs, molds[], langFile }
-  for (const file of LANG_FILES) {
+  for (const file of [...LANG_FILES, ...ADDON_LANG_FILES]) {
     if (!fs.existsSync(file)) continue;
     const xml = fs.readFileSync(file, 'utf8');
-    const rel = file.replace('/Users/hawk/Documents/workspace/ZK10/', '');
+    const rel = file.replace('/Users/hawk/Documents/workspace/ZK10/', '').replace(ADDON_DIR + '/', '');
     const blocks = xml.split(/<component>/).slice(1);
     for (const raw of blocks) {
       const block = raw.split(/<\/component>/)[0];
@@ -255,9 +313,12 @@ function parseJavaClass(absPath, src) {
   const text = fs.readFileSync(absPath, 'utf8');
   const lines = text.split('\n');
 
-  // imports: simpleName -> FQN
+  // imports: simpleName -> FQN, plus wildcard package prefixes (e.g. org.zkoss.zul.impl.*)
   const imports = {};
+  const wildcardPkgs = [];
   for (const line of lines) {
+    const wc = /^\s*import\s+([\w.]+)\.\*\s*;/.exec(line);
+    if (wc) { wildcardPkgs.push(wc[1]); continue; }
     const im = /^\s*import\s+(static\s+)?([\w.]+)\.(\w+)\s*;/.exec(line);
     if (im && !im[1]) imports[im[3]] = `${im[2]}.${im[3]}`;
   }
@@ -285,7 +346,35 @@ function parseJavaClass(absPath, src) {
   // events
   const events = collectEvents(lines, src);
 
-  return { superSimple, superFqn, props, events };
+  return { superSimple, superFqn, wildcardPkgs, props, events };
+}
+
+// Common ZK base classes whose FQN is fixed — used to recover a super resolved only by a
+// wildcard import (e.g. addon classes doing `import org.zkoss.zul.impl.*`).
+const KNOWN_SUPER_FQN = {
+  XulElement: 'org.zkoss.zul.impl.XulElement',
+  LabelElement: 'org.zkoss.zul.impl.LabelElement',
+  LabelImageElement: 'org.zkoss.zul.impl.LabelImageElement',
+  HtmlBasedComponent: 'org.zkoss.zk.ui.HtmlBasedComponent',
+};
+
+/**
+ * Resolve a parsed class's superclass to a graph/addon source, recovering from wildcard
+ * imports: try the guessed FQN, then each wildcard package + simple name, then the known
+ * ZK base-class FQNs. Returns { fqn, res } or null.
+ */
+function resolveSuper(index, parsed) {
+  if (!parsed.superSimple) return null;
+  const candidates = [];
+  if (parsed.superFqn) candidates.push(parsed.superFqn);
+  for (const pkg of parsed.wildcardPkgs || []) candidates.push(`${pkg}.${parsed.superSimple}`);
+  if (KNOWN_SUPER_FQN[parsed.superSimple]) candidates.push(KNOWN_SUPER_FQN[parsed.superSimple]);
+  for (const fqn of candidates) {
+    if (HARD_STOP.has(fqn.split('.').pop())) return { fqn, res: null, hardStop: true };
+    const res = resolveClass(index, fqn);
+    if (res) return { fqn, res };
+  }
+  return null;
 }
 
 function lineNumberOf(lines, idx) { return idx + 1; }
@@ -522,6 +611,15 @@ function extractComponent(reg, index, fqnToComponent, warnings) {
   }
   out.classProvenance = resolved.provenance;
 
+  // Addon classes (out-of-graph) live in separate addon projects with their own javadoc
+  // hosts; the core zkoss.org/javadoc URL pattern would 404, so null the API links and let
+  // the existing hand-authored page keep its correct ones. Flag the entry as an addon.
+  if (resolved.repo === 'addon') {
+    out.addon = true;
+    out.javaApiUrl = null;
+    out.jsApiUrl = null;
+  }
+
   const own = parseJavaClass(resolved.absPath, relOf(resolved.absPath));
   out.events = own.events.map((e) => ({ ...e,
     provenance: { ...e.provenance, graphify: resolved.provenance.graphify } }));
@@ -547,17 +645,16 @@ function extractComponent(reg, index, fqnToComponent, warnings) {
   const ownFqn = fqn;
   recordClass(own.props, ownFqn, resolved.provenance.graphify);
 
-  let curSuperFqn = own.superFqn;
+  let curParsed = own;
   let depth = 0;
-  while (curSuperFqn && depth < MAX_INHERIT_DEPTH + 6) {
-    const simple = curSuperFqn.split('.').pop();
-    if (HARD_STOP.has(simple)) break; // framework-generic root — nothing documentable above
-    const superRes = resolveClass(index, curSuperFqn);
-    if (!superRes) { out.warnings.push(`super ${curSuperFqn} not in graph`); break; }
-    const sup = parseJavaClass(superRes.absPath, relOf(superRes.absPath));
-    recordClass(sup.props, curSuperFqn, superRes.provenance.graphify);
-    out.inheritanceChain.push({ class: curSuperFqn, resolved: superRes.resolved });
-    curSuperFqn = sup.superFqn;
+  while (curParsed && curParsed.superSimple && depth < MAX_INHERIT_DEPTH + 6) {
+    const sr = resolveSuper(index, curParsed);
+    if (!sr) { out.warnings.push(`super ${curParsed.superFqn || curParsed.superSimple} not resolvable`); break; }
+    if (sr.hardStop) break; // framework-generic root — nothing documentable above
+    const sup = parseJavaClass(sr.res.absPath, relOf(sr.res.absPath));
+    recordClass(sup.props, sr.fqn, sr.res.provenance.graphify);
+    out.inheritanceChain.push({ class: sr.fqn, resolved: sr.res.resolved });
+    curParsed = sup;
     depth++;
   }
 
@@ -610,6 +707,9 @@ function relOf(absPath) {
     if (absPath.startsWith(root + path.sep)) {
       return path.relative(path.dirname(root), absPath); // keep zk/ or zkcml/ prefix
     }
+  }
+  if (absPath.startsWith(ADDON_DIR + path.sep)) {
+    return path.relative(ADDON_DIR, absPath); // addon-relative path
   }
   return absPath;
 }

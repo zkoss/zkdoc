@@ -134,7 +134,12 @@ in this component's own class (already filtered to documentable: both setter+get
 not inner-class). \`inheritedProperties\` are documented on their setter-declaring ancestor's page
 (each carries \`ancestorDocPath\`); they are NOT gaps for this page — do NOT propose them here.
 \`excludedProperties\` lists what was deliberately left out (read/write-only, common, inner-class)
-and why — do NOT propose them. Treat the facts as the authoritative ground truth.`
+and why — do NOT propose them. Treat the facts as the authoritative ground truth.
+OUT-OF-GRAPH ADDON COMPONENTS: if the facts entry has \`addon: true\` (gmaps family, charts,
+pivottable, calendars), its source is NOT in the Graphify graph or the ZK10 repos. Each fact's
+\`provenance.graphify\` is a replayable \`grep\` against the real addon source file (absolute path),
+and \`provenance.resolved\` is relative to /Users/hawk/Documents/workspace/ADDON/. To confirm such a
+fact, run that grep / read that ADDON file directly — do NOT look for it under ZK10.`
 
 const HEADING_RULES = `HEADING LEVELS (the docs use H1 sections — never change a heading's #-count):
   - top sections use H1 ("# Properties", "# Supported Events", …),
@@ -227,6 +232,10 @@ function verifyPrompt(c, draft) {
 GRAPHIFY-FIRST: to locate/confirm a symbol, query the Graphify graph, then read the resolved file.
   - The graph is at ${GRAPH}. Resolve module-relative paths against
     /Users/hawk/Documents/workspace/ZK10/zk/<path> and /Users/hawk/Documents/workspace/ZK10/zkcml/<path>.
+  - ADDON EXCEPTION: a patch whose provenance.graphify is a \`grep ... <abs path under /Users/hawk/Documents/workspace/ADDON/>\`
+    is an out-of-graph addon (gmaps family, charts, pivottable, calendars). Confirm it by RUNNING that grep and
+    reading that ADDON file directly (provenance.resolved is relative to .../ADDON/). Such a grep-based provenance
+    IS valid here — echo it back verbatim on a verified verdict; do NOT demote it merely for being a grep not a jq.
   - Each patch already cites a provenance.resolved (path:line) and a graphify command — RUN/READ it
     to confirm the property/event/mold genuinely exists with the stated meaning. The class-level
     graphify command resolves the file (e.g. jq '.nodes[]|select(.id=="...")' ${GRAPH}); the
