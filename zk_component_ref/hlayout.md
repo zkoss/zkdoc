@@ -2,9 +2,9 @@
 title: "Hlayout"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Hlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hlayout.html)
-- JavaScript API: [zul.box.Hlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Hlayout.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Hlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hlayout.html)
+- **JavaScript API:** [zul.box.Hlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Hlayout.html)
 
 # Employment/Purpose
 
@@ -46,7 +46,7 @@ allowed to modify it if you like:
 # Vertical Alignment
 
 {% include supported-since.html version="5.0.5" %} By default, the vertical alignment is
-*middle* (aka., *center*). You can change it to *top* by specifying
+*middle*. You can change it to *top* by specifying
 `sclass="z-valign-top"`, and to *bottom* by `sclass="z-valign-bottom"`.
 For example,
 
@@ -67,7 +67,7 @@ For example,
 {% include supported-since.html version="6.0.0" %}
 
 The default value of alignment has been changed to *top*. You can change
-it to *middle* (aka., *center*) by specifying `valign="middle"`, and
+it to *middle* by specifying `valign="middle"`, and
 *bottom* by `valign="bottom"`. For example,
 
 ```xml
@@ -102,6 +102,37 @@ alignment explicitly in the inner hlayout if needed. For example,
 </hlayout>
 ```
 
+# Properties
+
+## Valign
+
+**Default Value:** `top`
+
+Sets the vertical alignment applied to all child components inside the hlayout. Accepted values are:
+
+| Value | Meaning |
+|-------|---------|
+| `top` | Align children to the top of the row (default) |
+| `middle` | Center children vertically |
+| `bottom` | Align children to the bottom of the row |
+
+{% include supported-since.html version="6.0.0" %}
+
+```xml
+<hlayout valign="top" height="100px">
+    <button label="align top" />
+    <window width="100px" height="100px" title="test" border="normal" />
+</hlayout>
+<hlayout valign="middle" height="100px">
+    <button label="align middle" />
+    <window width="100px" height="100px" title="test" border="normal" />
+</hlayout>
+<hlayout valign="bottom" height="100px">
+    <button label="align bottom" />
+    <window width="100px" height="100px" title="test" border="normal" />
+</hlayout>
+```
+
 # Supported Events
 
 - Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
@@ -109,11 +140,3 @@ alignment explicitly in the inner hlayout if needed. For example,
 # Supported Children
 
 `*ALL`
-
-# Version History
-
-| Version | Date           | Content                                            |
-|---------|----------------|----------------------------------------------------|
-| 5.0.4   | August, 2010   | new added component                                |
-| 5.0.5   | October, 2010  | Vertical alignment was supported.                  |
-| 6.0.0   | February, 2012 | The default value of alignment is change to *top*. |

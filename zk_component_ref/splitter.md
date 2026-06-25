@@ -5,9 +5,9 @@ title: "Splitter"
 {% include Deprecated_Content.html %} Deprecated {% include supported-since.html version=
 10.3.0 %}
 
-- Demonstration: [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
-- Java API: [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
-- JavaScript API: [zul.box.Splitter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Splitter.html)
+- **Demonstration:** [Splitter](http://www.zkoss.org/zkdemo/layout/splitter)
+- **Java API:** [org.zkoss.zul.Splitter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Splitter.html)
+- **JavaScript API:** [zul.box.Splitter](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.box.Splitter.html)
 
 # Employment/Purpose
 
@@ -19,6 +19,12 @@ splitter, and one sibling component of the splitter is collapsed when
 the grippy is clicked.
 
 This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_ref/box), [ Vbox]({{site.baseurl}}/zk_component_ref/vbox), or [ Hbox]({{site.baseurl}}/zk_component_ref/hbox).
+
+## Common Use Cases
+
+| Version | Description | Example Location |
+|---------|-------------|------------------|
+| 5.0 | Used to separate contents within `hbox`/`vbox`. | <http://www.zkoss.org/zksandbox/userguide/#l13> |
 
 # Example
 
@@ -39,7 +45,7 @@ This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_re
 </hbox>
 ```
 
-# Properties and Features
+# Properties
 
 ## Collapse
 
@@ -122,9 +128,9 @@ OS-look:
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Fired when a splitter is collapsed or opened by the user. Use `event.isOpen()` to check the new state. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
@@ -141,9 +147,3 @@ zul.jar.
 # Supported Children
 
 `*NONE`
-
-# Use Cases
-
-| Version | Description                                 | Example Location                                |
-|---------|---------------------------------------------|-------------------------------------------------|
-| 5.0     | Used to seperate contents within hbox/vbox. | <http://www.zkoss.org/zksandbox/userguide/#l13> |

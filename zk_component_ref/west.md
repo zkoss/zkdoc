@@ -2,10 +2,9 @@
 title: "West"
 ---
 
-- Demonstration:
-  [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
-- Java API: [org.zkoss.zul.West](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/West.html)
-- JavaScript API: [zul.layout.West](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.West.html)
+- **Demonstration:** [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
+- **Java API:** [org.zkoss.zul.West](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/West.html)
+- **JavaScript API:** [zul.layout.West](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.West.html)
 
 # Employment/Purpose
 
@@ -66,9 +65,75 @@ child.
 For more details, please refer to
 [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
 
-# Properties and Features
+# Properties
 
 {% include LayoutCommonAttributes.md %}
+
+## Size
+
+Specifies the width of the west region. This is a shortcut for the standard `width` attribute — setting `size` is equivalent to setting `width` on the `<west>` element. Accepts any valid CSS width value such as a pixel count or a percentage of the parent borderlayout.
+
+```xml
+<borderlayout height="400px">
+    <west size="200px" splittable="true">
+        <label value="Navigation" />
+    </west>
+    <center>
+        <label value="Main content" />
+    </center>
+</borderlayout>
+```
+
+You can also use a percentage-based width:
+
+```xml
+<borderlayout height="400px">
+    <west size="25%" collapsible="true">
+        <label value="Sidebar" />
+    </west>
+    <center>
+        <label value="Content area" />
+    </center>
+</borderlayout>
+```
+
+## Common Use Cases
+
+**Navigation sidebar with fixed width**
+
+Set a fixed pixel width on `<west>` and enable `splittable` so users can drag to resize:
+
+```xml
+<borderlayout height="500px">
+    <west size="220px" splittable="true" title="Menu">
+        <listbox>
+            <listitem label="Dashboard" />
+            <listitem label="Reports" />
+            <listitem label="Settings" />
+        </listbox>
+    </west>
+    <center>
+        <label value="Main content area" />
+    </center>
+</borderlayout>
+```
+
+**Collapsible sidebar**
+
+Allow the panel to collapse to free up horizontal space:
+
+```xml
+<borderlayout height="500px">
+    <west size="30%" collapsible="true" title="Sidebar">
+        <div>Sidebar content</div>
+    </west>
+    <center border="none">
+        <div>Main content</div>
+    </center>
+</borderlayout>
+```
+
+For additional layout examples, see [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases).
 
 # Supported Events
 
@@ -77,14 +142,3 @@ For more details, please refer to
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases)
-
-# Version History
-
-| Version | Date      | Content                                                                                                              |
-|---------|-----------|----------------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
-| 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in slide or open mode only       |

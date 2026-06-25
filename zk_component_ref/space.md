@@ -2,14 +2,52 @@
 title: "Space"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Space](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Space.html)
-- JavaScript API: [zul.wgt.Space](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Space.html)
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Space](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Space.html)
+- **JavaScript API:** [zul.wgt.Space](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Space.html)
 
 # Employment/Purpose
 
 Space is a Separator with the orient default to "horizontal". In other
 words, <space> is equivalent to <separator orient="horizontal">
+
+## Common Use Cases
+
+### Horizontal spacing between inline components
+
+Use `<space>` to insert a fixed gap between two inline elements without introducing a line break.
+
+```xml
+<hbox>
+    <label value="First"/>
+    <space spacing="10px"/>
+    <label value="Second"/>
+</hbox>
+```
+
+### Visual bar separator
+
+Set `bar="true"` to render a visible dividing line between adjacent components.
+
+```xml
+<hbox>
+    <button label="Save"/>
+    <space bar="true"/>
+    <button label="Cancel"/>
+</hbox>
+```
+
+### Adjusting spacing size
+
+Control the gap size with the `spacing` attribute (any valid CSS length value).
+
+```xml
+<hbox>
+    <label value="A"/>
+    <space spacing="20px"/>
+    <label value="B"/>
+</hbox>
+```
 
 # Example
 
@@ -26,7 +64,10 @@ words, <space> is equivalent to <separator orient="horizontal">
 
 # Supported Events
 
-- Inherited Supported Events: [ Separator]({{site.baseurl}}/zk_component_ref/separator#Supported_Events)
+| Name | Event Type | Description |
+|------|------------|-------------|
+
+No additional events are defined. Inherited events: see [Separator]({{site.baseurl}}/zk_component_ref/separator#Supported_Events).
 
 # Supported Children
 

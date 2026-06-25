@@ -2,15 +2,42 @@
 title: "South"
 ---
 
-- Demonstration:
-  [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
-- Java API: [org.zkoss.zul.South](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/South.html)
-- JavaScript API: [zul.layout.South](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.South.html)
+- **Demonstration:** [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
+- **Java API:** [org.zkoss.zul.South](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/South.html)
+- **JavaScript API:** [zul.layout.South](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.South.html)
 
 # Employment/Purpose
 
 A south region of a border layout and only allows one component as its
 child.
+
+## Common Use Cases
+
+**Fixed footer bar** — set a pixel `size` to pin the south region to a fixed height regardless of the available space:
+
+```xml
+<borderlayout height="500px">
+    <center>
+        <label value="Main content" />
+    </center>
+    <south size="60px" title="Status Bar">
+        <label value="Ready" />
+    </south>
+</borderlayout>
+```
+
+**Collapsible panel with a percentage size** — combine `size` with `collapsible="true"` and `splittable="true"` so users can resize or hide the panel:
+
+```xml
+<borderlayout height="500px">
+    <center>
+        <label value="Main content" />
+    </center>
+    <south size="30%" collapsible="true" splittable="true" title="Details">
+        <label value="Detail panel" />
+    </south>
+</borderlayout>
+```
 
 # Example
 
@@ -61,13 +88,30 @@ child.
 </borderlayout>
 ```
 
-# Properties and Features
+# Properties
+
+## Size
+
+**Default Value:** none (unset)
+
+Sets the height of the south region. This attribute is a shortcut for the `height` attribute — both are equivalent for `<south>`. Accepts any valid CSS length value such as `"200px"` or `"30%"`.
+
+```xml
+<borderlayout height="400px">
+    <south size="150px" title="Footer">
+        <label value="Footer area" />
+    </south>
+    <center>
+        <label value="Main content" />
+    </center>
+</borderlayout>
+```
 
 {% include LayoutCommonAttributes.md %}
 
 # Supported Events
 
-- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#Supported_Events)
+South declares no own events.
 
 # How to Layout
 
@@ -81,10 +125,3 @@ For more details, please refer to
 # Use Cases
 
 [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases)
-
-# Version History
-
-| Version | Date      | Content                                                                                                              |
-|---------|-----------|----------------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
-| 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in slide or open mode only       |

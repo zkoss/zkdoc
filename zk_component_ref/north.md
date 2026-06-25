@@ -2,15 +2,64 @@
 title: "North"
 ---
 
-- Demonstration:
-  [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)
-- Java API: [org.zkoss.zul.North](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/North.html)
-- JavaScript API: [zul.layout.North](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.North.html)
+- **Demonstration:** [Borderlayout](https://www.zkoss.org/zkdemo/layout/border_layout)
+- **Java API:** [org.zkoss.zul.North](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/North.html)
+- **JavaScript API:** [zul.layout.North](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.North.html)
 
 # Employment/Purpose
 
 A north region of a border layout and only allows one component as its
 child.
+
+## Common Use Cases
+
+### Fixed-height header bar
+
+Use the north region with a fixed pixel height for a persistent page header:
+
+```xml
+<borderlayout height="600px">
+    <north size="60px" border="none">
+        <toolbar>
+            <toolbarbutton label="Home"/>
+            <toolbarbutton label="About"/>
+        </toolbar>
+    </north>
+    <center autoscroll="true">
+        <label value="Main content"/>
+    </center>
+</borderlayout>
+```
+
+### Collapsible north panel
+
+Allow users to collapse the north region to reclaim vertical space:
+
+```xml
+<borderlayout height="500px">
+    <north size="120px" collapsible="true" title="Summary Panel">
+        <label value="Summary information"/>
+    </north>
+    <center>
+        <label value="Detail view"/>
+    </center>
+</borderlayout>
+```
+
+### Splittable north region
+
+Enable drag-to-resize with `splittable="true"` so users can adjust the north region's height at runtime:
+
+```xml
+<borderlayout height="500px">
+    <north size="150px" splittable="true" minsize="50" maxsize="300">
+        <label value="Resizable header content"/>
+    </north>
+    <center>
+        <label value="Main content"/>
+    </center>
+</borderlayout>
+```
 
 # Example
 
@@ -66,7 +115,26 @@ child.
 For more details, please refer to
 [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
 
-# Properties and Features
+# Properties
+
+## Size
+
+**Default Value:** `null`
+
+Sets the height of the north region. This is a shortcut for the `height` attribute — any valid CSS height value is accepted (e.g. `"200px"`, `"30%"`).
+
+```xml
+<borderlayout height="400px">
+    <north size="150px">
+        <label value="Header area"/>
+    </north>
+    <center>
+        <label value="Content area"/>
+    </center>
+</borderlayout>
+```
+
+> **Note:** The `width` attribute is not applicable to `<north>` because its width is determined by sibling `<west>` and `<east>` regions. Use `size` (or equivalently `height`) to control the north region's dimension.
 
 {% include LayoutCommonAttributes.md %}
 
@@ -77,14 +145,3 @@ For more details, please refer to
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases)
-
-# Version History
-
-| Version | Date      | Content                                                                                                              |
-|---------|-----------|----------------------------------------------------------------------------------------------------------------------|
-| 6.5.0   | June 2012 | [ZK-969](http://tracker.zkoss.org/browse/ZK-969): The LayoutRegion component support caption component as it's title |
-| 8.5.2   | May 2018  | [ZK-3329](http://tracker.zkoss.org/browse/ZK-3329): Collapsible Borderlayout region in slide or open mode only       |
