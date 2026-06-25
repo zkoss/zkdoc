@@ -2,17 +2,12 @@
 title: "GoldenLayout"
 ---
 
-{% include supported-since.html version="8.6.0" %} <!--REQUIRED ZK EDITION: PE -->
+- **Java API:** [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
+- **JavaScript API:** [zkmax.goldenlayout.GoldenLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.goldenlayout.GoldenLayout.html)
+
 {% include edition-availability.html edition="pe" %}
 
-- Java API: [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
-- JavaScript API:
-  [zkmax.layout.GoldenLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.GoldenLayout.html)
-
-# Browser Support
-
-- Due to the limitation of the 3rd party library used in this component,
-  GoldenLayout is not supported in mobile devices.
+{% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
@@ -59,7 +54,7 @@ all kinds of components) to form a complicated layout.
     </goldenlayout>
 ```
 
-# Properties and Features
+# Properties
 
 The goldenLayout is layouted as docker type, and is usually construct
 with a tree structure, which is hard to layout in zul. ZK change the
@@ -70,30 +65,98 @@ pattern will be specified by the `areas` attribute of GoldenLayout and
 only represents the stacking order if they are stacked together in the
 same area.
 
+## Common Use Cases
+
+### Define an initial layout with `areas`
+
+Use the `areas` attribute to declare a grid-like template on initial render. Each area name maps to one or more `goldenpanel` children via their `area` attribute. Merged cells automatically size the panels proportionally.
+
+```xml
+<goldenlayout vflex="1" hflex="1">
+    <attribute name="areas">
+        nav  nav  nav
+        side main main
+        side foot foot
+    </attribute>
+    <goldenpanel area="nav"  title="Navigation"/>
+    <goldenpanel area="side" title="Sidebar"/>
+    <goldenpanel area="main" title="Main Content"/>
+    <goldenpanel area="foot" title="Footer"/>
+</goldenlayout>
+```
+
+### Switch orientation for column-first layouts
+
+Set `orient="horizontal"` when you want panels to flow left-to-right as the primary axis instead of top-to-bottom.
+
+```xml
+<goldenlayout vflex="1" hflex="1" orient="horizontal">
+    <attribute name="areas">
+        A B C
+    </attribute>
+    <goldenpanel area="A" title="Left"/>
+    <goldenpanel area="B" title="Center"/>
+    <goldenpanel area="C" title="Right"/>
+</goldenlayout>
+```
+
+### React to user drag-and-drop with `onMatrixUpdate`
+
+Listen to `onMatrixUpdate` to persist or react to layout changes made by the user at runtime.
+
+```xml
+<goldenlayout vflex="1" hflex="1" onMatrixUpdate="handleUpdate(event)">
+    <attribute name="areas">
+        A B
+    </attribute>
+    <goldenpanel area="A" title="Panel A"/>
+    <goldenpanel area="B" title="Panel B"/>
+</goldenlayout>
+```
+
 ## Areas
 
-The `areas` attribute is a sugar for initializing the layout. In the
-example code above, we have the areas in line 2 specified as
+**Default Value:** `null`
 
-A A B
+Sets a matrix-like areas template that defines how child `goldenpanel` components are arranged on initial rendering. Each row of the template is written on a separate line; tokens on a row are separated by whitespace. Each token is an area name that must match the `area` attribute of a `goldenpanel` child. Repeating the same token across adjacent cells causes those cells to merge, and the proportional span determines the auto-calculated `hflex`/`vflex` of the corresponding panels (overridable per-panel).
 
-A A B
+Note: the reserved name `$root` cannot be used as an area name. Setting `areas` after the component has already rendered raises an error — this attribute is effective for initial rendering only.
 
-C C D
-
-The GoldenPanels which `area` attribute is specified as A, will be
-positioned at the A position of the `areas` attribute.
-
-Note that, A A B will result as `hflex` A is 2 and `hflex` B is 1. Same
-with vflex. But if `hflex` or `vflex` attribute is specified on the
-GoldenPanel which area is A, it overrides the flex size calculated by
-the GoldenLayout's `areas` attribute.
+```xml
+<goldenlayout vflex="1" hflex="1">
+    <attribute name="areas">
+        A A B
+        A A B
+        C C D
+    </attribute>
+    <goldenpanel area="A" title="Panel A"/>
+    <goldenpanel area="B" title="Panel B"/>
+    <goldenpanel area="C" title="Panel C"/>
+    <goldenpanel area="D" title="Panel D"/>
+</goldenlayout>
+```
 
 ## Orient
 
-The orient indicates the initial splitting orientation if you layout it
-by the area attribute. Supported value: (default) “vertical” or
-“horizontal”.
+**Default Value:** `”vertical”`
+
+Sets the initial dividing orientation used when the `areas` template is parsed. `”vertical”` divides the layout into rows first (panels stack top-to-bottom); `”horizontal”` divides into columns first (panels flow left-to-right).
+
+| Value | Meaning |
+|---|---|
+| `vertical` (default) | Rows are created first; panels are laid out top-to-bottom |
+| `horizontal` | Columns are created first; panels are laid out left-to-right |
+
+```xml
+<goldenlayout vflex=”1” hflex=”1” orient=”horizontal”>
+    <attribute name=”areas”>
+        A B C
+    </attribute>
+    <goldenpanel area=”A” title=”Panel A”/>
+    <goldenpanel area=”B” title=”Panel B”/>
+    <goldenpanel area=”C” title=”Panel C”/>
+</goldenlayout>
+```
 
 From the example above, it's possible to divide in two ways.
 
@@ -131,6 +194,10 @@ stack
 ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_stack.png)
 
 # Supported Events
+
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onMatrixUpdate` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the areas matrix is updated — for example, after a user drags and drops a `goldenpanel` to a new region. The event data contains the updated matrix, the removed area name (if any), the added area name (if any), and the current `orient` value. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

@@ -2,13 +2,10 @@
 title: "Portalchildren"
 ---
 
-- Demonstration:
-  [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
-- Java API: [org.zkoss.zkmax.zul.Portalchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portalchildren.html)
-- JavaScript API:
-  [zkmax.layout.Portalchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Portalchildren.html)
+- **Demonstration:** [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)
+- **Java API:** [org.zkoss.zkmax.zul.Portalchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Portalchildren.html)
+- **JavaScript API:** [zkmax.layout.Portalchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Portalchildren.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
@@ -16,6 +13,54 @@ title: "Portalchildren"
 The column of [ Portallayout]({{site.baseurl}}/zk_component_ref/portallayout)
 
 Child of Portalchildren can only be [ Panel]({{site.baseurl}}/zk_component_ref/panel)
+
+## Common Use Cases
+
+### Multi-Column Portal Layout
+
+Use multiple `<portalchildren>` elements inside a `<portallayout>` to create a responsive multi-column dashboard. Each column receives a `width` that partitions the available space. Users can drag `<panel>` components between columns at runtime.
+
+```xml
+<portallayout>
+    <portalchildren width="50%">
+        <panel height="200px" title="Column A - Panel 1" border="normal">
+            <panelchildren>Content A1</panelchildren>
+        </panel>
+        <panel height="200px" title="Column A - Panel 2" border="normal">
+            <panelchildren>Content A2</panelchildren>
+        </panel>
+    </portalchildren>
+    <portalchildren width="50%">
+        <panel height="200px" title="Column B - Panel 1" border="normal">
+            <panelchildren>Content B1</panelchildren>
+        </panel>
+    </portalchildren>
+</portallayout>
+```
+
+### Kanban Board Layout
+
+Set the `title` attribute on each `<portalchildren>` to enable the frame design, turning the column into a named stage of a Kanban board. The optional `counterVisible` attribute controls whether the panel-count badge is displayed next to the title.
+
+```xml
+<portallayout>
+    <portalchildren title="TO-DO" counterVisible="true">
+        <panel title="Task A" border="normal">
+            <panelchildren>Description of Task A</panelchildren>
+        </panel>
+    </portalchildren>
+    <portalchildren title="IN-PROGRESS" counterVisible="true">
+        <panel title="Task B" border="normal">
+            <panelchildren>Description of Task B</panelchildren>
+        </panel>
+    </portalchildren>
+    <portalchildren title="DONE" counterVisible="false">
+        <panel title="Task C" border="normal">
+            <panelchildren>Description of Task C</panelchildren>
+        </panel>
+    </portalchildren>
+</portallayout>
+```
 
 # Example
 
@@ -130,9 +175,3 @@ Meaningful only if frame design is applied.
 # Supported Children
 
 `*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
-
-# Version History
-
-| Version | Date     | Content                                                                                            |
-|---------|----------|----------------------------------------------------------------------------------------------------|
-| 9.0.0   | Nov 2019 | [ZK-4398](https://tracker.zkoss.org/browse/ZK-4398): Provide PortalChildren title and frame design |

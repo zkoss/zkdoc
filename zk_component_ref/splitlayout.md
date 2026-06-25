@@ -2,13 +2,13 @@
 title: "Splitlayout"
 ---
 
-- Demonstration:
-  [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
-- Java API: [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
-- JavaScript API:
-  [zkmax.layout.Splitlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Splitlayout.html)
-- <!--REQUIRED ZK EDITION: PE -->
+- **Demonstration:** [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)
+- **Java API:** [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
+- **JavaScript API:** [zkmax.layout.Splitlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Splitlayout.html)
+
 {% include edition-availability.html edition="pe" %}
+
+{% include supported-since.html version="8.5.0" %}
 
 # Employment/Purpose
 
@@ -31,6 +31,14 @@ component has several advantages:
 2.  Hbox/Vbox are both rendered with HTML which is heavy for a browser.
     Splitlayout is rendered with div which is more light-weighted.
 
+## Common Use Cases
+
+- **Side-by-side panels**: Use `orient="horizontal"` to create a master/detail or editor/preview layout where the user can drag the divider to rebalance space.
+- **Top/bottom split**: Use `orient="vertical"` (the default) for a query-results pattern — a filter form on top and a result grid below.
+- **Nested splits**: Nest `<splitlayout>` inside another `<splitlayout>` to build three- or four-pane layouts without `<hbox>`/`<vbox>` overhead.
+- **Fixed-size pane**: Set `resizable="false"` to lock the splitter so a sidebar or toolbar pane keeps a fixed size regardless of user interaction.
+- **Collapsible pane**: Combine `collapse="before"` (or `"after"`) with the `onOpen` event listener to show or hide an optional panel, such as a navigation tree.
+
 # Example
 
 ![](/zk_component_ref/images/ZKComRef_Splitlayout_Examples.PNG)
@@ -51,7 +59,7 @@ component has several advantages:
     </splitlayout>
 ```
 
-# Properties and Features
+# Properties
 
 ## Orient
 
@@ -89,6 +97,19 @@ Example — set `orient` in ZUL:
 <splitlayout orient=”horizontal” vflex=”1” hflex=”1”>
     <div hflex=”1” vflex=”1”><label value=”Left”/></div>
     <div hflex=”1” vflex=”1”><label value=”Right”/></div>
+</splitlayout>
+```
+
+## Resizable
+
+**Default Value:** `true`
+
+Controls whether the user can resize the two areas by dragging the splitter bar. When set to `false` the splitter bar is displayed but drag-resizing is disabled, locking the layout at its current proportions.
+
+```xml
+<splitlayout resizable=”false” vflex=”1” hflex=”1”>
+    <div hflex=”1” vflex=”1”><label value=”Fixed Left”/></div>
+    <div hflex=”1” vflex=”1”><label value=”Fixed Right”/></div>
 </splitlayout>
 ```
 
@@ -146,19 +167,13 @@ not be smaller than the minWidths/minHeights.
 
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
-| `onDivisionSize` | **Event:** [org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html) Represents an event that indicates two inner size of splitlayout. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | When a splitter is collapsed or opened by a user, the `onOpen` event is sent to the application. |
+| `onDivisionSize` | [org.zkoss.zkmax.zul.event.DivisionSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DivisionSizeEvent.html) | Represents an event that indicates two inner size of splitlayout. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Version History
-
-| Version | Date          | Content             |
-|---------|---------------|---------------------|
-| 8.5.0   | October, 2017 | new added component |

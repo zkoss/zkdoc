@@ -2,11 +2,11 @@
 title: "Linelayout"
 ---
 
-- Java API: [org.zkoss.zkmax.zul.Linelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Linelayout.html)
-- JavaScript API: [zkmax.layout.Linelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Linelayout.html)
+- **Demonstration:** [Linelayout](https://www.zkoss.org/zkdemo/)
+- **Java API:** [org.zkoss.zkmax.zul.Linelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Linelayout.html)
+- **JavaScript API:** [zkmax.layout.Linelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Linelayout.html)
 
-`<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %}`
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="9.0.0" %}
 
@@ -20,12 +20,57 @@ A Linelayout is composed of three parts: first area, line area and last
 area. The first and last areas are the containers for the content, and
 the line area contains the line and the point.
 
-# Browser Support
+## Common Use Cases
 
-- This component is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) and is
-  compatible with browsers that support CSS Flexbox such as IE11+,
-  Chrome and Firefox. Please check browser compatibility before using
-  it.
+### Static Timeline
+
+Use inline `<lineitem>` children for a fixed list of events. Apply `opposite="true"` to alternate items and customize the point via `pointIconSclass` and `pointStyle`.
+
+```xml
+<linelayout>
+    <lineitem>
+        <label value="Jan — Project kick-off" />
+    </lineitem>
+    <lineitem opposite="true" pointStyle="background:#FF4051">
+        <label value="Mar — Design review" />
+    </lineitem>
+    <lineitem>
+        <label value="Jun — Beta release" />
+    </lineitem>
+</linelayout>
+```
+
+### Model-Driven Timeline with Template
+
+Bind a `ListModel` and declare a `<template name="model">` to render dynamic data without a custom renderer. The EL variables `${each}` (current item) and `${forEachStatus}` (loop metadata) are available inside the template.
+
+```xml
+<zscript>
+    import org.zkoss.zul.ListModelList;
+    ListModelList model = new ListModelList(
+        new String[] { "2024-Q1", "2024-Q2", "2024-Q3", "2024-Q4" }
+    );
+</zscript>
+<linelayout model="${model}">
+    <template name="model">
+        <lineitem>
+            <label value="${each}" />
+        </lineitem>
+    </template>
+</linelayout>
+```
+
+### Horizontal Layout
+
+Set `orient="horizontal"` to arrange items left-to-right instead of top-to-bottom. Combine with `firstScale` and `lastScale` to shift the line axis.
+
+```xml
+<linelayout orient="horizontal" lineStyle="background:rgba(0,0,0,0.3)" firstScale="1" lastScale="2">
+    <lineitem><label value="08:00" /></lineitem>
+    <lineitem opposite="true"><label value="12:00" /></lineitem>
+    <lineitem><label value="18:00" /></lineitem>
+</linelayout>
+```
 
 # Example
 
@@ -49,12 +94,106 @@ the line area contains the line and the point.
   </linelayout>
 ```
 
+# Browser Support
+
+- This component is based on [CSS Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex) and is
+  compatible with browsers that support CSS Flexbox such as IE11+,
+  Chrome and Firefox. Please check browser compatibility before using
+  it.
+
 # Properties
+
+## Model
+
+**Default Value:** `null`
+
+Associates a `ListModel` with this linelayout to drive its children dynamically. When a model is set, the linelayout renders one `Lineitem` per element using either the default renderer or the renderer supplied via [`ItemRenderer`](#itemrenderer) / [`LineitemRenderer`](#lineitemrenderer).
+
+To use a template-based rendering, declare a `<template name="model">` inside the linelayout — the default renderer will use it and expose `${each}` and `${forEachStatus}` EL variables.
+
+The value is a Java object (`ListModel`) constructed in `<zscript>`, a Composer, or a ViewModel.
+
+```xml
+<zscript>
+    import org.zkoss.zul.ListModelList;
+    ListModelList model = new ListModelList(
+        new String[] { "2019-Q1", "2019-Q2", "2019-Q3", "2019-Q4" }
+    );
+</zscript>
+<linelayout model="${model}">
+    <template name="model">
+        <lineitem>
+            <label value="${each}" />
+        </lineitem>
+    </template>
+</linelayout>
+```
+
+## LineitemRenderer
+
+**Default Value:** `null` (uses built-in default renderer)
+
+Sets the `LineitemRenderer` used to render each `Lineitem` when a [`Model`](#model) is assigned. When `null`, the default renderer is used, which either renders a plain `Label` or expands a `<template name="model">` if one is declared.
+
+Changing this property when a model is already set will trigger a re-render via `onInitRender`. For an alternative that triggers a full `invalidate()`, see [`ItemRenderer`](#itemrenderer).
+
+The value is a Java object constructed in a Composer or ViewModel and passed via EL.
+
+```xml
+<zscript>
+    import org.zkoss.zkmax.zul.LineitemRenderer;
+    import org.zkoss.zkmax.zul.Lineitem;
+    import org.zkoss.zul.Label;
+    import org.zkoss.zul.ListModelList;
+
+    ListModelList model = new ListModelList(
+        new String[] { "Alpha", "Beta", "Gamma" }
+    );
+
+    LineitemRenderer myRenderer = new LineitemRenderer() {
+        public void render(Lineitem item, Object data, int index) {
+            Label lbl = new Label("Item " + index + ": " + data);
+            lbl.setParent(item);
+        }
+    };
+</zscript>
+<linelayout model="${model}" lineitemRenderer="${myRenderer}" />
+```
+
+## ItemRenderer
+
+**Default Value:** `null` (uses built-in default renderer)
+
+Sets the `LineitemRenderer` used to render each `Lineitem` when a [`Model`](#model) is assigned. This property is functionally equivalent to [`LineitemRenderer`](#lineitemrenderer) but triggers a full component `invalidate()` instead of a partial re-render when changed; prefer this when you need the client widget to be fully rebuilt.
+
+The value is a Java object constructed in a Composer or ViewModel and passed via EL.
+
+```xml
+<zscript>
+    import org.zkoss.zkmax.zul.LineitemRenderer;
+    import org.zkoss.zkmax.zul.Lineitem;
+    import org.zkoss.zul.Label;
+    import org.zkoss.zul.ListModelList;
+
+    ListModelList model = new ListModelList(
+        new String[] { "2024-Q1", "2024-Q2", "2024-Q3" }
+    );
+
+    LineitemRenderer myRenderer = new LineitemRenderer() {
+        public void render(Lineitem item, Object data, int index) {
+            Label lbl = new Label(String.valueOf(data));
+            lbl.setParent(item);
+        }
+    };
+</zscript>
+<linelayout model="${model}" itemRenderer="${myRenderer}" />
+```
 
 ## Orient
 
-Whether the linelayout displays vertically or horizontally. The default
-value is "vertical".
+**Default Value:** `vertical`
+
+Whether the linelayout displays vertically or horizontally.
 
 ![](/zk_component_ref/images/Linelayout-3.png)
 
@@ -99,14 +238,10 @@ Please refer to FirstScale.
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+| Name | Event Type | Description |
+|------|------------|-------------|
+| | | Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events) |
 
 # Supported Children
 
 `*`[` Lineitem`]({{site.baseurl}}/zk_component_ref/lineitem)
-
-# Version History
-
-| Version | Date     | Content                                                                             |
-|---------|----------|-------------------------------------------------------------------------------------|
-| 9.0.0   | Nov 2019 | [ZK-4377](https://tracker.zkoss.org/browse/ZK-4377): Provide a Linelayout component |

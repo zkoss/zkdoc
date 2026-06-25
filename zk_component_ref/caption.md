@@ -2,38 +2,50 @@
 title: "Caption"
 ---
 
-- **Demonstration**: [Groupbox](https://www.zkoss.org/zkdemo/layout/group_box)
-- **Java API**: [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
-- **JavaScript API**: [zul.wgt.Caption](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Caption.html)
+- **Demonstration:** [Groupbox](https://www.zkoss.org/zkdemo/layout/group_box)
+- **Java API:** [org.zkoss.zul.Caption](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Caption.html)
+- **JavaScript API:** [zul.wgt.Caption](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Caption.html)
 
 ## Employment/Purpose
 
 The Caption component serves as a header for various UI components such as Groupbox, Window, Panel, Tab, and LayoutRegion. It provides the functionality to display a simple text label using the `setLabel` method or to include child elements for a more complex caption design.
 
-### Preload Image
+## Common Use Cases
 
-**Since**: 6.0.0
+### Caption as a Text Title
 
-The preload image feature is applicable to all LabelImageElement and Image components. By default, the preload function is disabled, and users need to specify custom attributes and set them to true. For instance:
+The most common use is providing a plain-text title for a container component such as `<window>`, `<groupbox>`, or `<panel>`:
 
 ```xml
-<caption image="xxx.png" label="caption">
-  <custom-attributes org.zkoss.zul.image.preload="true"/>
-</caption>
+<groupbox width="300px">
+    <caption label="Order Details"/>
+    <!-- groupbox content -->
+</groupbox>
 ```
 
-Alternatively, the custom attributes can be specified below the root component as shown in the following example:
+### Caption with an Icon and Label
+
+Combine an image (or icon font) with a label to create a richer header:
 
 ```xml
-<window>
-  <custom-attributes org.zkoss.zul.image.preload="true"/>
-  <caption image="xxx.png" label="caption">
-    <image src="xxx.png"/>
-  </caption>
+<window border="normal" width="400px">
+    <caption image="/img/icon.png" label="My Window"/>
+    <!-- window content -->
 </window>
 ```
 
-The custom attributes will be checked recursively in the component tree.
+### Caption with Arbitrary Child Components
+
+Because Caption accepts any ZK component as a child, you can embed buttons, links, or other widgets directly into the header area:
+
+```xml
+<groupbox width="400px">
+    <caption label="Shopping Cart">
+        <button label="Clear" onClick="cart.clear()"/>
+    </caption>
+    <!-- groupbox content -->
+</groupbox>
+```
 
 ## Example
 
@@ -59,6 +71,31 @@ The example showcases the usage of the Caption component within a Window and Gro
 
 Try it
 *  [Caption with Window](https://zkfiddle.org/sample/3scdgri/1-ZK-Component-Reference-Caption-Example?v=latest&t=Iceblue_Compact)
+
+# Preload Image
+
+**Since**: 6.0.0
+
+The preload image feature is applicable to all LabelImageElement and Image components. By default, the preload function is disabled, and users need to specify custom attributes and set them to true. For instance:
+
+```xml
+<caption image="xxx.png" label="caption">
+  <custom-attributes org.zkoss.zul.image.preload="true"/>
+</caption>
+```
+
+Alternatively, the custom attributes can be specified below the root component as shown in the following example:
+
+```xml
+<window>
+  <custom-attributes org.zkoss.zul.image.preload="true"/>
+  <caption image="xxx.png" label="caption">
+    <image src="xxx.png"/>
+  </caption>
+</window>
+```
+
+The custom attributes will be checked recursively in the component tree.
 
 ## Supported Children
 `*ALL`: Indicates that the Caption component can have any kind of ZK component as its child element. This means that you can include any ZK component within the Caption component, allowing for flexible and customizable caption designs.

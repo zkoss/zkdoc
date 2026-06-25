@@ -2,12 +2,12 @@
 title: "Absolutelayout"
 ---
 
-- Demonstration: N/A
-- Java API: [org.zkoss.zul.Absolutelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutelayout.html)
-- JavaScript API:
+- **Demonstration:** N/A
+- **Java API:** [org.zkoss.zul.Absolutelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutelayout.html)
+- **JavaScript API:**
   [zul.layout.Absolutelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Absolutelayout.html)
 
-{%include supported-since.html version="6.0.0" %}
+{% include supported-since.html version="6.0.0" %}
 
 # Employment/Purpose
 
@@ -39,6 +39,38 @@ absolutechildren components.
         </absolutechildren>
     </absolutelayout>
 </zk>
+```
+
+## Common Use Cases
+
+### Overlapping Panels or Dashboards
+
+Use `absolutelayout` when you need components positioned at exact pixel coordinates, such as a dashboard where widgets are placed at fixed (x, y) offsets. Each child must be wrapped in an `absolutechildren` element that carries the `x` and `y` attributes.
+
+```xml
+<absolutelayout width="400px" height="400px">
+    <absolutechildren x="10" y="10">
+        <panel title="Top-left" width="150px" height="100px"/>
+    </absolutechildren>
+    <absolutechildren x="200" y="150">
+        <panel title="Center-right" width="150px" height="100px"/>
+    </absolutechildren>
+</absolutelayout>
+```
+
+### Layering Components with z-index
+
+Because children are absolutely positioned, you can control their stacking order with the `zindex` attribute on each `absolutechildren`.
+
+```xml
+<absolutelayout width="300px" height="300px">
+    <absolutechildren x="20" y="20" zindex="1">
+        <image src="/img/background.png" width="260px" height="260px"/>
+    </absolutechildren>
+    <absolutechildren x="60" y="60" zindex="2">
+        <label value="Overlay text" style="color:white; font-size:1.2em"/>
+    </absolutechildren>
+</absolutelayout>
 ```
 
 # Supported Events

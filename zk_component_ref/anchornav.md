@@ -2,11 +2,9 @@
 title: "Anchornav"
 ---
 
-- Demonstration: [Anchornav: A new ZK Addon for scrolling within a page](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
-- Java API:
-  [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
-- JavaScript API:
-  [Anchornav](http://www.zkoss.org/javadoc/latest/jsdoc/zkmax/nav/Anchornav.html)
+- **Demonstration:** [Anchornav: A new ZK Addon for scrolling within a page](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
+- **Java API:** [Anchornav](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
+- **JavaScript API:** [Anchornav](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Anchornav.html)
 
 <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
@@ -17,6 +15,35 @@ This component synchronizes the scrolling position on a page or within
 ZK containers (Div, Window, etc.) with [`<a>`]({{site.baseurl}}/zk_component_ref/a) and [`<button>`]({{site.baseurl}}/zk_component_ref/button).
 It allows you to both navigate to desired ZK components on a page and to highlight the current navigation link based on the current scroll
 position.
+
+## Common Use Cases
+
+- **Page-level navigation bar**: place `<anchornav>` alongside tall content pages so users can jump between sections and see the active section highlighted as they scroll.
+- **In-container navigation**: name the `<anchornav>` and associate it with an overflow `<div>` or `<window>` to track scrolling inside a ZK container rather than the document viewport.
+- **Floating navigation widget**: rely on the default `positionFixed="true"` so the navigation panel stays visible even after the user scrolls past it.
+
+# Example
+
+The following minimal example shows `<anchornav>` watching the full-page scroll. Each `<a>` link carries a `ca:data-anchornav-target` pointing to a ZK component ID selector:
+
+```xml
+<zk xmlns:ca="client/attribute">
+    <anchornav>
+        <listbox sizedByContent="true" hflex="min">
+            <listitem><listcell><a ca:data-anchornav-target="$sec1">Section 1</a></listcell></listitem>
+            <listitem><listcell><a ca:data-anchornav-target="$sec2">Section 2</a></listcell></listitem>
+        </listbox>
+    </anchornav>
+    <div id="sec1" height="400px" style="background:lightblue">
+        Content of section 1
+    </div>
+    <div id="sec2" height="400px" style="background:lightyellow">
+        Content of section 2
+    </div>
+</zk>
+```
+
+The `$sec1` notation is a ZK widget selector that resolves to the widget whose component ID is `sec1`. See [Widget selector](https://www.zkoss.org/javadoc/latest/jsdoc/zk/Widget.html#Z:Z:D-zk.Object-_global_.Map-) for the full selector syntax.
 
 # Scroll a Page
 
@@ -100,7 +127,7 @@ rather than the document-level scrollbar
 
 ## PositionFixed
 
-Default: `true`
+**Default Value:** `true`
 
 Sets whether to enable position fixed when anchornav is out of current
 view. When it is set to true, Anchornav will stay (float) on the same
@@ -108,14 +135,8 @@ position of the page.
 
 # Supported Events
 
-- Inherited Supported Events: [ LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Version History
-
-| Version | Date           | Content                                                                                                |
-|---------|----------------|--------------------------------------------------------------------------------------------------------|
-| 9.0.0   | November, 2019 | [Anchornav](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html) was introduced. |

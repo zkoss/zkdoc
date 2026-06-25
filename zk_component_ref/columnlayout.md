@@ -2,13 +2,13 @@
 title: "Columnlayout"
 ---
 
-- Demonstration:
-  [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
-- Java API: [org.zkoss.zkex.zul.Columnlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnlayout.html)
-- JavaScript API:
-  [zkex.layout.Columnlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnlayout.html)
+- **Demonstration:** [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
+- **Java API:** [org.zkoss.zkex.zul.Columnlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnlayout.html)
+- **JavaScript API:** [zkex.layout.Columnlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnlayout.html)
 
 {% include edition-availability.html edition="pe" %}
+
+{% include supported-since.html version="6.0.0" %}
 
 # Employment/Purpose
 
@@ -20,9 +20,11 @@ percent or pixel) on every
 otherwise the result may depend on the browser and may not be as
 expected.
 
-{% include supported-since.html version="6.0.0" %}
+## Common Use Cases
 
-Each column may have any number of any type of components.
+- **Multi-column dashboard layout** — Use `<columnlayout>` with two or three `<columnchildren>` elements (each assigned an explicit `width`) to build a Pinterest-style dashboard where each column stacks panels of varying heights independently, avoiding the row-alignment constraint of a `<grid>`.
+- **Resizable panel portals** — Combine `<columnlayout>` with `<panel collapsible="true" closable="true">` children so end users can collapse or close individual panels without affecting the other columns.
+- **Mixed-content columns** — Place any ZK component (windows, charts, forms) inside each `<columnchildren>` to assemble content-rich side-by-side layouts; assign widths in percentages so the layout remains fluid as the browser window resizes.
 
 # Example
 
@@ -58,10 +60,6 @@ Each column may have any number of any type of components.
         </columnchildren>
     </columnlayout>
 ```
-
-{% include supported-since.html version="6.0.0" %}
-
-Each column may have any number of any type of components.
 
 ![](/zk_component_ref/images/ZKComRef_Columnlayout_Example_ZK6.png)
 
