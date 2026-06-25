@@ -2,9 +2,9 @@
 title: "Columns"
 ---
 
-- Demonstration: [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
-- Java API: [org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html)
-- JavaScript API: [zul.grid.Columns](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Columns.html)
+- **Demonstration:** [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)
+- **Java API:** [org.zkoss.zul.Columns](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Columns.html)
+- **JavaScript API:** [zul.grid.Columns](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Columns.html)
 
 # Employment/Purpose
 
@@ -12,6 +12,13 @@ Defines the columns of a grid.
 
 Each child of a columns element should be a org.zkoss.zul.Column
 element.
+
+## Common Use Cases
+
+- **Sortable grid headers** — place `sort="auto"` on each `<column>` and add `menupopup="auto"` on `<columns>` to give users a built-in sort menu without any Java code.
+- **Column visibility toggle** — with `menupopup="auto"` and `columnshide="true"` (the default), users can hide columns they do not need through the header context menu, keeping the view uncluttered.
+- **Grouping rows by column value** — with `menupopup="auto"` and `columnsgroup="true"` (the default), users can group grid rows by any column directly from the header menu.
+- **Custom header context menu** — supply a `<menupopup>` ID to `menupopup` when you need actions beyond the built-in sort/hide/group set.
 
 # Example
 
@@ -47,6 +54,40 @@ element.
 ```
 
 # Properties
+
+## Columnsgroup
+
+**Default Value:** `true`
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether the header context menu offers a **Group** action that lets users group rows by a column. This option is only active when [`menupopup`](#menupopup) is set to `auto`; it has no effect when a custom menupopup ID is provided.
+
+```xml
+<grid>
+    <columns menupopup="auto" columnsgroup="false">
+        <column label="Name" sort="auto"/>
+        <column label="Score" sort="auto"/>
+    </columns>
+</grid>
+```
+
+## Columnshide
+
+**Default Value:** `true`
+
+{% include supported-since.html version="3.5.0" %}
+
+Sets whether the header context menu offers a **Hide** action that lets users hide individual columns. This option is only active when [`menupopup`](#menupopup) is set to `auto`; it has no effect when a custom menupopup ID is provided.
+
+```xml
+<grid>
+    <columns menupopup="auto" columnshide="false">
+        <column label="Name" sort="auto"/>
+        <column label="Score" sort="auto"/>
+    </columns>
+</grid>
+```
 
 ## Menupopup
 
@@ -106,6 +147,27 @@ bar between two adjacent columns, such that the grid will automatically
 resize the column to fit its contents. In other words, all sizable
 column provides the auto-fitting feature.
 
+## Value
+
+**Default Value:** `null`
+
+{% include supported-since.html version="3.6.0" %}
+
+Stores an arbitrary application-defined object on the `Columns` component. ZK does not interpret or render this value; it is purely a developer convenience for associating state with the header row (for example, storing a metadata object or a display label object). Because the value is a generic Java object (`<T>`), set it from a `<zscript>` block or a composer/ViewModel and reference it via EL — it cannot be expressed as a plain ZUL attribute literal.
+
+```xml
+<zscript>
+    // store any application object — here a simple label string
+    String headerMeta = "Q1 Results";
+</zscript>
+<grid>
+    <columns value="${headerMeta}">
+        <column label="Category"/>
+        <column label="Amount"/>
+    </columns>
+</grid>
+```
+
 # Supported Events
 
 - Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#Supported_Events)
@@ -113,7 +175,3 @@ column provides the auto-fitting feature.
 # Supported Children
 
 `*`[` Column`]({{site.baseurl}}/zk_component_ref/column)
-
-# Use Cases
-
-[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)

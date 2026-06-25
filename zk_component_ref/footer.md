@@ -2,9 +2,9 @@
 title: "Footer"
 ---
 
-- Demonstration: [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
-- Java API: [org.zkoss.zul.Footer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Footer.html)
-- JavaScript API: [zul.grid.Footer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Footer.html)
+- **Demonstration:** [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)
+- **Java API:** [org.zkoss.zul.Footer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Footer.html)
+- **JavaScript API:** [zul.grid.Footer](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.grid.Footer.html)
 
 # Employment/Purpose
 
@@ -12,6 +12,10 @@ A column of the footer of a grid ([ Grid]({{site.baseurl}}/zk_component_ref/grid
 [ Foot]({{site.baseurl}}/zk_component_ref/foot).
 
 Unlike Column, you could place any child in a grid footer.
+
+## Common Use Cases
+
+See [Grid — Common Use Cases]({{site.baseurl}}/zk_component_ref/grid#common-use-cases) for common patterns involving grid footers.
 
 # Example
 
@@ -53,7 +57,3 @@ Unlike Column, you could place any child in a grid footer.
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)

@@ -2,19 +2,21 @@
 title: "Detail"
 ---
 
-- Demonstration: [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
-- Java API: [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)
-- JavaScript API: [zkex.grid.Detail](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Detail.html)
+- **Demonstration:** [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)
+- **Java API:** [org.zkoss.zul.Detail](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Detail.html)
+- **JavaScript API:** [zkex.grid.Detail](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Detail.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
-The detail component is used to display a detailed section where a
-master row and
+The detail component is used to display a detailed section where a master row and multiple detail rows are on the same row.
 
-multiple detail rows are on the same row.
+## Common Use Cases
+
+- **Master-detail grid rows** — Place a `<detail>` as the first child of a `<row>` inside a `<grid>` to let users expand individual rows and see supplementary information (images, specs, audit trails) without leaving the page.
+- **Load-on-demand detail panels** — Listen to the `onOpen` event and create child components on first expansion, avoiding the cost of rendering hidden content for every row up front.
+- **Pre-expanded rows** — Set `open="true"` on specific rows (for example, the first result or a flagged record) so that key detail is immediately visible when the page loads.
 
 # Example
 
@@ -67,11 +69,49 @@ multiple detail rows are on the same row.
 </zk>
 ```
 
+# Properties
+
+## ContentSclass
+
+**Default Value:** `null`
+
+Sets an additional CSS class name applied to the content block of the detail panel. Use this to style the expanded area independently from the detail toggle icon itself.
+
+```xml
+<detail contentSclass="my-detail-content">
+    <label value="Expanded row detail"/>
+</detail>
+```
+
+## ContentStyle
+
+**Default Value:** `null`
+
+Sets an inline CSS style applied to the content block of the detail panel. Use this to apply one-off styles (such as padding or background colour) to the expanded area without defining a separate CSS class.
+
+```xml
+<detail contentStyle="padding: 8px; background: #f5f5f5;">
+    <label value="Expanded row detail"/>
+</detail>
+```
+
+## Open
+
+**Default Value:** `false`
+
+Controls whether the detail panel is expanded (open) or collapsed (closed). Set to `true` to render the detail initially expanded. The user can toggle the state by clicking the +/- icon; the server is notified via the `onOpen` event.
+
+```xml
+<detail open="true">
+    <label value="This detail starts expanded"/>
+</detail>
+```
+
 # Supported Events
 
-| Name | Event Type |
-|------|------------|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a component. Note:<br><br>unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component.<br><br>It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| Name | Event Type | Description |
+|------|------------|-------------|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. Unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the component is opened. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 

@@ -2,22 +2,36 @@
 title: "Columnchildren"
 ---
 
-- Demonstration:
-  [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
-- Java API: [org.zkoss.zkex.zul.Columnchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnchildren.html)
-- JavaScript API:
-  [zkex.layout.Columnchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnchildren.html)
+- **Demonstration:** [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)
+- **Java API:** [org.zkoss.zkex.zul.Columnchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Columnchildren.html)
+- **JavaScript API:** [zkex.layout.Columnchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.layout.Columnchildren.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
-
-# Employment/Purpose
-
-Columnchildren can only allow Panel as its child.
 
 {% include supported-since.html version="6.0.0" %}
 
-- Columnchildren can allow any Component as its child.
+# Employment/Purpose
+
+Columnchildren can allow any Component as its child.
+
+## Common Use Cases
+
+- **Multi-column dashboard layout** — Place `<columnchildren>` elements inside a `<columnlayout>` to define independently scrollable columns of varying widths, each holding panels, grids, or any other ZK component.
+- **Flexible column widths** — Use the `width` attribute on each `<columnchildren>` to control the proportional or fixed width of each column within the layout, for example mixing a narrow 30% sidebar with a wider 40% main content area.
+- **Mixed-content columns** — Because `<columnchildren>` accepts any ZK component as a child (not only `<panel>`), you can freely mix panels, grids, charts, forms, and other components within a single column.
+
+```xml
+<columnlayout>
+    <columnchildren width="30%" style="padding: 5px">
+        <panel title="Sidebar" border="normal">
+            <panelchildren>Navigation</panelchildren>
+        </panel>
+    </columnchildren>
+    <columnchildren width="70%" style="padding: 5px">
+        <grid />
+    </columnchildren>
+</columnlayout>
+```
 
 # Example
 

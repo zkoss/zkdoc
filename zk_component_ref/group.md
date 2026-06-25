@@ -2,18 +2,21 @@
 title: "Group"
 ---
 
-- Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-- Java API: [org.zkoss.zul.Group](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Group.html)
-- JavaScript API: [zkex.grid.Group](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Group.html)
+- **Demonstration:** [Group](http://www.zkoss.org/zkdemo/grid/grouping)
+- **Java API:** [org.zkoss.zul.Group](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Group.html)
+- **JavaScript API:** [zkex.grid.Group](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Group.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
-Adds the ability for single level grouping to the [ Grid]({{site.baseurl}}/zk_component_ref/grid).
+Adds the ability for single level grouping to the [Grid]({{site.baseurl}}/zk_component_ref/grid).
 
 Default getSclass(): the same as grid's sclass.
+
+## Common Use Cases
+
+[Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
 
 # Example
 
@@ -66,18 +69,58 @@ Default getSclass(): the same as grid's sclass.
  </zk>
 ```
 
+# Properties
+
+## Label
+
+**Default Value:** `null`
+
+Sets the text label displayed in the group header row. If no child `<label>` exists yet, one is created automatically. Setting this attribute is the concise alternative to placing a `<label>` as the first child of `<group>`.
+
+```xml
+<grid>
+  <columns>
+    <column label="Type"/>
+    <column label="Value"/>
+  </columns>
+  <rows>
+    <group label="Section A"/>
+    <row><label value="Item 1"/><label value="42"/></row>
+  </rows>
+</grid>
+```
+
+## Open
+
+**Default Value:** `true`
+
+Controls whether the group is expanded (`true`) or collapsed (`false`). When collapsed, all child rows are hidden.
+
+> **Note:** When a `GroupsModel` is used to supply data, do not use `open` to toggle visibility — control the model directly (for example, call `GroupsModelArray.setClose()`) to avoid lifecycle conflicts.
+
+```xml
+<grid>
+  <columns>
+    <column label="Type"/>
+    <column label="Value"/>
+  </columns>
+  <rows>
+    <group label="Collapsed Group" open="false"/>
+    <row><label value="Hidden"/><label value="Row"/></row>
+    <group label="Expanded Group" open="true"/>
+    <row><label value="Visible"/><label value="Row"/></row>
+  </rows>
+</grid>
+```
+
 # Supported Events
 
-| Name | Event Type |
-|---|---|
-| `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Denotes user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
+| Name | Event Type | Description |
+|---|---|---|
+| `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement load-on-demand by listening to the `onOpen` event, and creating components when the first time the component is opened. |
 
-- Inherited Supported Events: [ Row]({{site.baseurl}}/zk_component_ref/row#Supported_Events)
+- Inherited Supported Events: [Row]({{site.baseurl}}/zk_component_ref/row#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Use Cases
-
-[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)

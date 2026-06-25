@@ -2,13 +2,19 @@
 title: "Auxhead"
 ---
 
-- Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
-- Java API: [org.zkoss.zul.Auxhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxhead.html)
-- JavaScript API: [zul.mesh.Auxhead](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Auxhead.html)
+- **Demonstration:** [Grid (Merged Header)](https://www.zkoss.org/zkdemo/grid/merged_header)
+- **Java API:** [org.zkoss.zul.Auxhead](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxhead.html)
+- **JavaScript API:** [zul.mesh.Auxhead](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Auxhead.html)
 
 # Employment/Purpose
 
 Used to define a collection of auxiliary headers (`Auxheader`).
+
+## Common Use Cases
+
+- **Merged column headers in grids and listboxes** — Place one or more `<auxhead>` rows above `<columns>` to create grouped, multi-row header bands (e.g. quarterly sub-totals under a year header) using the `colspan` and `rowspan` attributes on each `<auxheader>`.
+- **Multi-level header hierarchies** — Stack several `<auxhead>` elements to express three or more tiers of column groupings, keeping the primary `<columns>` row as the leaf level.
+- **Descriptive category labels** — Add a single `<auxhead>` with wide-spanning `<auxheader>` cells to display a human-readable category title above a related column group without altering the sortable `<column>` definitions beneath it.
 
 # Example
 

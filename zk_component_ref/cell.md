@@ -2,13 +2,55 @@
 title: "Cell"
 ---
 
-- Demonstration: [Grid (Spreadsheet Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
-- Java API: [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html)
-- JavaScript API: [zul.wgt.Cell](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Cell.html)
+- **Demonstration:** [Grid (Spreadsheet Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)
+- **Java API:** [org.zkoss.zul.Cell](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Cell.html)
+- **JavaScript API:** [zul.wgt.Cell](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Cell.html)
 
 # Employment/Purpose
 
 This Cell must only be a child of [Row](/zk_component_ref/row), [Hbox](/zk_component_ref/hbox), or [Vbox](/zk_component_ref/vbox). Other components cannot be its parent. Use it to control alignment and row/column span.
+
+## Common Use Cases
+
+### Spanning rows and columns in a Grid
+
+Use `rowspan` and `colspan` together to create complex grid layouts, such as a header cell spanning multiple columns or a label cell spanning multiple rows.
+
+```xml
+<grid>
+    <columns>
+        <column label="Name" />
+        <column label="Mon" />
+        <column label="Tue" />
+    </columns>
+    <rows>
+        <row>
+            <cell rowspan="2" valign="middle"><label value="Alice" /></cell>
+            <cell><label value="Present" /></cell>
+            <cell><label value="Present" /></cell>
+        </row>
+        <row>
+            <!-- first cell omitted — covered by rowspan above -->
+            <cell colspan="2" align="center"><label value="Leave" /></cell>
+        </row>
+    </rows>
+</grid>
+```
+
+### Centering content inside an Hbox
+
+`Cell` can be placed inside an `Hbox` or `Vbox` to provide consistent alignment control across flex children.
+
+```xml
+<hbox width="400px">
+    <cell hflex="1" align="center" valign="middle">
+        <label value="Left pane" />
+    </cell>
+    <cell hflex="2" align="left" valign="top">
+        <label value="Right pane" />
+    </cell>
+</hbox>
+```
 
 # Example
 
@@ -70,14 +112,6 @@ This Cell must only be a child of [Row](/zk_component_ref/row), [Hbox](/zk_compo
 </zk>
 ```
 
-# Properties
-
-##  rowspan
-
-It specifies the number of rows this cell should occupy. It has the same
-effect as HTML TR tag's `rowspan` attribute does.
-
-
 # Comparison to the default (no Cell) scenario
 
 The Cell component is designed to provide full control over the DOM structure, meaning developers should expect to handle some lower-level styling.
@@ -100,6 +134,7 @@ For example, consider the following scenario:
         </rows>
     </grid>
 ```
+
 In a browser, the 2 table cells visually look no difference.
 
 ## DOM Structure Differences
@@ -160,6 +195,102 @@ Because the inner wrapper `div.z-row-content` is absent when using `<cell>`, CSS
         <row>
             <cell colspan="2"><label value="Spans A & B" /></cell>
             <cell><label value="Item B3" /></cell>
+        </row>
+    </rows>
+</grid>
+```
+
+# Properties
+
+##  rowspan
+
+**Default Value:** `1`
+
+It specifies the number of rows this cell should occupy. It has the same
+effect as HTML TR tag's `rowspan` attribute does.
+
+## align
+
+**Default Value:** `null` (browser default: left, unless overridden by CSS)
+
+Sets the horizontal alignment of the cell content. Accepts the values listed below.
+
+| Value | Meaning |
+|---|---|
+| `left` | Aligns content to the left (default browser behavior) |
+| `right` | Aligns content to the right |
+| `center` | Centers content horizontally |
+| `justify` | Justifies content across the cell width |
+| `char` | Aligns content around a specific character |
+
+```xml
+<grid>
+    <columns>
+        <column label="Name" />
+        <column label="Value" />
+    </columns>
+    <rows>
+        <row>
+            <cell align="center"><label value="Centered" /></cell>
+            <cell align="right"><label value="Right-aligned" /></cell>
+        </row>
+    </rows>
+</grid>
+```
+
+## colspan
+
+**Default Value:** `1`
+
+Sets the number of columns this cell should span. Must be a positive integer. Equivalent to the HTML `<td colspan>` attribute.
+
+```xml
+<grid>
+    <columns>
+        <column label="A" />
+        <column label="B" />
+        <column label="C" />
+    </columns>
+    <rows>
+        <row>
+            <cell colspan="2"><label value="Spans A and B" /></cell>
+            <cell><label value="C" /></cell>
+        </row>
+    </rows>
+</grid>
+```
+
+## valign
+
+**Default Value:** `null` (browser default: top)
+
+Sets the vertical alignment of the cell content. Accepts the values listed below.
+
+| Value | Meaning |
+|---|---|
+| `top` | Aligns content to the top of the cell (default browser behavior) |
+| `middle` | Centers content vertically |
+| `bottom` | Aligns content to the bottom of the cell |
+| `baseline` | Aligns content to the baseline of the first text line |
+
+```xml
+<grid>
+    <columns>
+        <column label="A" />
+        <column label="B" />
+    </columns>
+    <rows>
+        <row>
+            <cell rowspan="3" valign="middle" align="center">
+                <label value="Vertically centered" />
+            </cell>
+            <cell><label value="Row 1" /></cell>
+        </row>
+        <row>
+            <cell><label value="Row 2" /></cell>
+        </row>
+        <row>
+            <cell><label value="Row 3" /></cell>
         </row>
     </rows>
 </grid>

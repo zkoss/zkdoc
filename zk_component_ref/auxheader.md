@@ -2,17 +2,23 @@
 title: "Auxheader"
 ---
 
-- Demonstration: [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
-- Java API: [org.zkoss.zul.Auxheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxheader.html)
-- JavaScript API:
-  [zul.mesh.Auxheader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Auxheader.html)
+- **Demonstration:** [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)
+- **Java API:** [org.zkoss.zul.Auxheader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Auxheader.html)
+- **JavaScript API:** [zul.mesh.Auxheader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.mesh.Auxheader.html)
 
 # Employment/Purpose
 
 The auxiliary headers support the colspan and rowspan properties which
 allows itself to be spanned across several columns/rows. Auxiliary
 headers should be accompanied with columns/listhead/treecols when used
-with grid/listbox/tree.
+with grid/listbox/tree. {% include supported-since.html version="8.0.0" %} Noted that it is forbidden to set
+width/height/hflex/vflex in Auxheader.
+
+## Common Use Cases
+
+- **Multi-level column grouping:** Use multiple `<auxhead>` rows with `colspan` to group related columns under a shared label — for example, grouping monthly columns under quarterly headers, and quarterly under half-year headers.
+- **Row-spanning labels:** Use `rowspan` to pin a header label across multiple `<auxhead>` rows when one logical grouping spans both header rows (e.g. a fixed identifier column that spans all header levels).
+- **Works with Grid, Listbox, and Tree:** `<auxhead>/<auxheader>` can be placed inside any of these components to add a descriptive header band above the primary column headers.
 
 # Example
 
@@ -63,6 +69,50 @@ An auxiliary header.
             <label value="2,100" />
         </row>
     </rows>
+</grid>
+```
+
+# Properties
+
+## Colspan
+
+**Default Value:** `1`
+
+Sets the number of columns this header spans — equivalent to the `colspan` attribute of an HTML `<td>` element. The value must be a positive integer (1 or greater); a value of zero or less throws a `WrongValueException`.
+
+```xml
+<grid>
+    <auxhead>
+        <auxheader label="H1'07" colspan="6" />
+        <auxheader label="H2'07" colspan="6" />
+    </auxhead>
+    <columns>
+        <column label="Jan" /><column label="Feb" /><column label="Mar" />
+        <column label="Apr" /><column label="May" /><column label="Jun" />
+        <column label="Jul" /><column label="Aug" /><column label="Sep" />
+        <column label="Oct" /><column label="Nov" /><column label="Dec" />
+    </columns>
+</grid>
+```
+
+## Rowspan
+
+**Default Value:** `1`
+
+Sets the number of rows this header spans — equivalent to the `rowspan` attribute of an HTML `<td>` element. The value must be a positive integer (1 or greater); a value of zero or less throws a `WrongValueException`. See [The Limitation of rowspan](#the-limitation-of-rowspan) for known layout constraints when combining `rowspan` and `colspan`.
+
+```xml
+<grid>
+    <auxhead>
+        <auxheader label="A" rowspan="2" />
+        <auxheader label="BC" colspan="2" />
+        <auxheader label="D" rowspan="2" />
+    </auxhead>
+    <auxhead>
+        <auxheader label="B" />
+        <auxheader label="C" />
+    </auxhead>
+    <columns/>
 </grid>
 ```
 
@@ -167,13 +217,8 @@ empty Columns component invisible. For example,
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
 
 # Supported Children
 
 `*ALL`
-
-# Restrictions
-
-{% include supported-since.html version="8.0.0" %} Noticed that it's forbidden to set
-width/height/hflex/vflex in Auxheader.

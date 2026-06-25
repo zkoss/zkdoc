@@ -2,18 +2,21 @@
 title: "Groupfoot"
 ---
 
-- Demonstration: [Group](http://www.zkoss.org/zkdemo/grid/grouping)
-- Java API: [org.zkoss.zul.Groupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupfoot.html)
-- JavaScript API:
-  [zkex.grid.Groupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Groupfoot.html)
+- **Demonstration:** [Group](http://www.zkoss.org/zkdemo/grid/grouping)
+- **Java API:** [org.zkoss.zul.Groupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Groupfoot.html)
+- **JavaScript API:** [zkex.grid.Groupfoot](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.grid.Groupfoot.html)
 
-- <!--REQUIRED ZK EDITION: PE -->
 {% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
-Adds the ability for single level grouping to the Grid. Default
-getSclass(): the same as grid's sclass.
+A footer row that appears at the end of each group in a Grid. It displays aggregate or summary information for the group's data, such as totals, counts, or averages. The footer cells align with the corresponding columns, providing a clean summary layout.
+
+## Common Use Cases
+
+- **Summary rows in grouped grids** — place a `groupfoot` as the last child of a `group` to show aggregate values (totals, counts, averages) for each group's columns.
+- **Column-aligned footers** — add one `label` (or other component) per column so the footer cells line up exactly with the column headers above.
+- **Dynamic aggregation** — bind each footer cell to a ViewModel property that computes the group subtotal, so the footer updates automatically when the underlying data changes.
 
 # Example
 
@@ -66,9 +69,21 @@ getSclass(): the same as grid's sclass.
  </zk>
 ```
 
+# Properties
+
+## label
+
+Sets the text of the first [`Label`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Label.html) child that `groupfoot` contains. If no `Label` child exists yet, one is created automatically.
+
+This is a convenience shortcut: it reads and writes the `value` of the first child `Label` (or the first child of the first child `Cell`). When you need richer content (multiple cells, formatted text) place child components directly instead of using this attribute.
+
+```xml
+<groupfoot label="Total: 3 items"/>
+```
+
 # Supported Events
 
-- Inherited Supported Events: [ Listitem]({{site.baseurl}}/zk_component_ref/listitem#Supported_Events)
+Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
 # Supported Children
 
