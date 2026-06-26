@@ -122,7 +122,7 @@ See also:
 # Properties
 
 ## creatable
-{% include DefaultValue.md value=false %}
+{% include DefaultValue.md value="false" %}
 
 specify whether to send an event to a server when user inputs a non-existing value by clicking ENTER or separator. 
 
@@ -166,7 +166,7 @@ displayed a popup window if nothing matches the input value and creatable is fal
 the input value at client-side 
 
 ## open
-{% include DefaultValue.md value=false %}
+{% include DefaultValue.md value="false" %}
 
 specify whether or not to open the drop-down list. 
 

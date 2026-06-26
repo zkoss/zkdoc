@@ -1,1 +1,1 @@
-Default: `{{include.value}}`
+Default: `{{ include.value }}`

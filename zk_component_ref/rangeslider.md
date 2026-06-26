@@ -61,13 +61,13 @@ Set `orient="vertical"` to embed the rangeslider alongside a chart axis or timel
 
 ## Orient
 
-{% include DefaultValue.md value=horizontal %}
+{% include DefaultValue.md value="horizontal" %}
 
 Sets it either "horizontal" or "vertical" to display rangslider.
 
 ## Marks
 
-{% include DefaultValue.md value=null %}
+{% include DefaultValue.md value="null" %}
 
 Sets the marks information map for displaying value marks. In this map,
 the key represents the number value of slider, and the value represents
@@ -75,7 +75,7 @@ the displayed scale text.
 
 ## MarkScale
 
-{% include DefaultValue.md value=20 %}
+{% include DefaultValue.md value="20" %}
 
 Sets the marks information for displaying value marks.
 
@@ -89,14 +89,14 @@ above), the marks will be empty.
 
 ## Max
 
-{% include DefaultValue.md value=100 %}
+{% include DefaultValue.md value="100" %}
 
 Rangeslider supports maximal position, which can be changed by the max
 property.
 
 ## Min
 
-{% include DefaultValue.md value=0 %}
+{% include DefaultValue.md value="0" %}
 
 Rangeslider supports minimal position, which can be changed by the min
 property.
@@ -123,7 +123,7 @@ Represents the ending value of the rangeslider range.
 
 ## Step
 
-{% include DefaultValue.md value=1 %}
+{% include DefaultValue.md value="1" %}
 
 By default, the rangeslider will scroll to the position continuously
 when a user drags it. If you prefer to scroll a discrete fixed amount at
@@ -131,7 +131,7 @@ each step, you can set the amount of value using the step property.
 
 ## TooltipVisible
 
-{% include DefaultValue.md value=false %}
+{% include DefaultValue.md value="false" %}
 
 The tooltip displays the value of a slider button in the rangeslider. If
 the tooltipvisible is true, the tooltips of the slider buttons will

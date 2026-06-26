@@ -55,7 +55,7 @@ ListModel model = new ListModelArray(new String[] {
 
 ## Autoclose
 
-{% include DefaultValue.md value=false %}
+{% include DefaultValue.md value="false" %}
 
 Sets whether to automatically close the list if a user selects any item.
 It means even if the user selects an item, the list still remains open.

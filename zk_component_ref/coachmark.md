@@ -132,7 +132,7 @@ component e.g. `${self.previousSibling}`
 
 ## Position
 
-{% include DefaultValue.md value=after_center %}
+{% include DefaultValue.md value="after_center" %}
 
 The positions of a coachmark. Below are the available values:
 

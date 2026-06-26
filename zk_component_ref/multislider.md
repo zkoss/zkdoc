@@ -47,14 +47,14 @@ property.
 
 ## Max
 
-{% include DefaultValue.md value=100 %}
+{% include DefaultValue.md value="100" %}
 
 Defines the max value of the multislider. It can be changed by the max
 property.
 
 ## Min
 
-{% include DefaultValue.md value=0 %}
+{% include DefaultValue.md value="0" %}
 
 Defines the minimal value of the multislider. It can be changed by the
 min property.
