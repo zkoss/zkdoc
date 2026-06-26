@@ -13,7 +13,16 @@ plugins:
 
 minimal_mistakes_skin: "zk"
 name: "Potix Corporation"
+title: "ZK Documentation"
+description: "Official ZK Framework documentation: getting started guides, developer reference, MVVM, configuration, and the complete component reference."
 logo: /assets/images/ZK-logo.svg
+og_image: /assets/images/zklogo.png
+# Drives the JSON-LD structured data block in seo.html (Organization, not Person)
+social:
+  type: Organization
+  name: "Potix Corporation"
+  links:
+    - "https://docs.zkoss.org/"
 
 search                    : true
 search_full_content       : true
