@@ -52,106 +52,127 @@ defaults:
   - scope:
       path: "get_started"
     values:
+      description: "Get started with ZK: quick-start tutorials and your first ZK web application in Java."
       sidebar:
         nav: "get_started"
   - scope:
       path: "zats_essentials"
     values:
+      description: "ZATS Essentials: unit and integration testing for ZK applications with the ZK Application Test Suite."
       sidebar:
         nav: "zats_essentials"
   - scope:
       path: "zk_calendar_essentials"
     values:
+      description: "ZK Calendar Essentials: build interactive calendar and scheduling UIs with the ZK Calendar component."
       sidebar:
         nav: "zk_calendar_essentials"
   - scope:
       path: "zk_charts_essentials"
     values:
+      description: "ZK Charts Essentials: create interactive charts and data visualizations in ZK applications."
       sidebar:
         nav: "zk_charts_essentials"
   - scope:
       path: "zk_client_side_ref"
     values:
+      description: "ZK Client-side Reference: JavaScript widgets, client-side programming, and customization for ZK."
       sidebar:
         nav: "zk_client_side_ref"
   - scope:
       path: "zk_component_dev_essentials"
     values:
+      description: "ZK Component Development Essentials: build custom ZK components and widgets from scratch."
       sidebar:
         nav: "zk_component_dev_essentials"
   - scope:
       path: "zk_component_ref"
     values:
+      description: "ZK Component Reference: API, attributes, events, and live examples for every ZK UI component."
       sidebar:
         nav: "zk_component_ref"
   - scope:
       path: "zk_config_ref"
     values:
+      description: "ZK Configuration Reference: zk.xml, web.xml, and library properties for configuring ZK applications."
       sidebar:
         nav: "zk_config_ref"
   - scope:
       path: "zk_dev_ref"
     values:
+      description: "ZK Developer's Reference: in-depth guide to ZK architecture, UI composing, event handling, and advanced features."
       sidebar:
         nav: "zk_dev_ref"
   - scope:
       path: "zk_essentials"
     values:
+      description: "ZK Essentials: core concepts and fundamentals for building web applications with ZK."
       sidebar:
         nav: "zk_essentials"
   - scope:
       path: "zk_installation_guide"
     values:
+      description: "ZK Installation Guide: set up ZK in your project with Maven, Gradle, or manual installation."
       sidebar:
         nav: "zk_installation_guide"
   - scope:
       path: "zk_jsp_tags_essentials"
     values:
+      description: "ZK JSP Tags Essentials: integrate ZK components into JSP pages using ZK JSP tags."
       sidebar:
         nav: "zk_jsp_tags_essentials"
   - scope:
       path: "zk_mvvm_ref"
     values:
+      description: "ZK MVVM Reference: data binding, commands, and the Model-View-ViewModel pattern in ZK."
       sidebar:
         nav: "zk_mvvm_ref"
   - scope:
       path: "zk_pivottable_essentials"
     values:
+        description: "ZK Pivottable Essentials: build interactive pivot tables for data analysis in ZK."
         sidebar:
             nav: "zk_pivottable_essentials"
   - scope:
       path: "zk_spring_essentials"
     values:
+      description: "ZK Spring Essentials: integrate ZK with the Spring Framework and Spring Boot."
       sidebar:
         nav: "zk_spring_essentials"
   - scope:
       path: "zk_studio_essentials"
     values:
+      description: "ZK Studio Essentials: develop ZK applications with the ZK Studio Eclipse plugin."
       sidebar:
         nav: "zk_studio_essentials"
   - scope:
       path: "zk_style_customization_guide"
     values:
+      description: "ZK Style Customization Guide: theme, skin, and CSS customization for ZK applications."
       sidebar:
         nav: "zk_style_customization_guide"
   - scope:
       path: "zuml_ref"
     values:
+      description: "ZUML Reference: the ZK User Interface Markup Language for declaring UIs in XML."
       sidebar:
         nav: "zuml_ref"
   - scope:
       path: "zk_webdriver"
     values:
+      description: "ZK WebDriver: end-to-end testing of ZK applications with Selenium WebDriver."
       sidebar:
-        nav: "zk_webdriver"        
+        nav: "zk_webdriver"
   - scope:
      path: "_posts"
     values:
+      description: "ZK Small Talks: technical articles, release notes, and feature deep-dives from ZK developers."
       sidebar:
         nav: "small_talk"
   - scope:
       path: "eval_guide"
     values:
+      description: "ZK Evaluation Guide: explore ZK's features and capabilities to evaluate it for your project."
       sidebar:
         nav: "eval_guide"
 
