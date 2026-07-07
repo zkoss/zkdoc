@@ -1,5 +1,7 @@
 ---
 title: "Accessibility"
+noindex: true
+sitemap: false
 ---
 
 {% include supported-since.html version="9.5.0" %}

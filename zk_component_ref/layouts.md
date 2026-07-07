@@ -1,5 +1,7 @@
 ---
 title: "Layouts"
+noindex: true
+sitemap: false
 ---
 
 This section outlines components which enable developers to control the

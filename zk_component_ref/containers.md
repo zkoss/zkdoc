@@ -1,5 +1,7 @@
 ---
 title: "Containers"
+noindex: true
+sitemap: false
 ---
 
 This section outlines components which are specifically designed to be

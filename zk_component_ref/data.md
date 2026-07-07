@@ -1,5 +1,7 @@
 ---
 title: "Data"
+noindex: true
+sitemap: false
 ---
 
 This section outlines components which are designed to handle data

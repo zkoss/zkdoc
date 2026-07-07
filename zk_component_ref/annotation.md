@@ -1,5 +1,7 @@
 ---
 title: "Annotation"
+noindex: true
+sitemap: false
 ---
 
 This section describes how to add annotations on a component definition.
