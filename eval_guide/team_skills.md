@@ -1,5 +1,6 @@
 ---
 title: "Key Factor: Team Skills and Stack"
+description: "Java vs. JavaScript: how your team's existing skills and stack should factor into a web UI framework decision."
 permalink: /eval-guide/team-skills-java-vs-js
 ---
 

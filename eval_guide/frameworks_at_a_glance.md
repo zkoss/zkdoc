@@ -1,5 +1,6 @@
 ---
 title: "The Frameworks at a Glance"
+description: "A quick-reference comparison table of ZK, React, Angular, Vaadin, Wicket, and Thymeleaf across key evaluation criteria."
 permalink: /eval-guide/frameworks-at-a-glance
 ---
 
@@ -54,7 +55,7 @@ Angular is more opinionated and more structured. It makes more architectural dec
 - Smaller talent pools than React or Angular, though any capable Java developer can learn these frameworks
 - Server session state per user means the server carries more memory load as concurrency grows, and containerized deployments require sticky session configuration to route each user back to the same instance. This is well-supported by standard load balancers and Kubernetes ingress controllers, but it is a configuration step that stateless architectures do not require. ZK 10 stateless components, Vaadin Hilla, and Wicket's stateless mode offer alternatives for teams where this constraint matters.
 
-ZK provides the most comprehensive built-in component library — including enterprise-specific components like event calendar, org chart, pivot table, and portal layout — all native, all under one license, with no third-party library assembly required. Uses ZUL, an XML-based markup language, for layout alongside Java ViewModels. Commercial support through Potix Corporation.
+ZK provides the most comprehensive built-in component library — including enterprise-specific components like event calendar, [org chart](https://docs.zkoss.org/zk_component_ref/organigram), pivot table, and [portal layout](https://docs.zkoss.org/zk_component_ref/portallayout) — all native, all under one license, with no third-party library assembly required. Uses [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml), an XML-based markup language, for layout alongside Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel). Commercial support through Potix Corporation.
 
 Vaadin is Java-only with no template language — the entire UI is composed in Java code. Offers strong built-in accessibility and Vaadin Copilot for AI-assisted development. Dashboard and charts are native; other complex components require Directory add-ons from external vendors. Commercial support through Vaadin Ltd.
 

@@ -1,5 +1,6 @@
 ---
 title: "Key Factor: Maintainability"
+description: "Comparing long-term maintainability of ZK, React, Angular, Vaadin, and Wicket codebases."
 permalink: /eval-guide/maintainability
 ---
 

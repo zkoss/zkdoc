@@ -1,5 +1,6 @@
 ---
 title: "Key Factor: Enterprise Requirements"
+description: "Evaluating web UI frameworks against enterprise requirements: compliance, vendor support, and long-term maintenance."
 permalink: /eval-guide/enterprise-requirements
 ---
 
@@ -15,7 +16,7 @@ The Web Content Accessibility Guidelines (WCAG) define standards for making web 
 
 The key question for any framework is not whether it claims WCAG support, but how deep that support goes. There is a meaningful difference between a framework where accessibility is built into the component library from the ground up, and one where it is left entirely to the developer.
 
-ZK and Vaadin both offer built-in accessibility support in their component libraries. Vaadin in particular has invested significantly in WCAG compliance as a core product requirement, driven by its enterprise customer base. React and Angular do not provide accessible components out of the box — compliance depends on the component library chosen and developer discipline throughout the project. Some React libraries such as Radix UI have strong accessibility support; others do not. Thymeleaf + Spring MVC renders standard HTML which can be made accessible, but requires manual effort throughout. There is no component library enforcing accessibility patterns automatically.
+ZK and Vaadin both offer [built-in accessibility support](https://docs.zkoss.org/zk_dev_ref/accessibility/accessibility) in their component libraries. Vaadin in particular has invested significantly in WCAG compliance as a core product requirement, driven by its enterprise customer base. React and Angular do not provide accessible components out of the box — compliance depends on the component library chosen and developer discipline throughout the project. Some React libraries such as Radix UI have strong accessibility support; others do not. Thymeleaf + Spring MVC renders standard HTML which can be made accessible, but requires manual effort throughout. There is no component library enforcing accessibility patterns automatically.
 
 If WCAG compliance is a hard requirement, treat it as a filter before evaluating other factors. The detailed findings from our testing are in Part 4.
 

@@ -1,5 +1,6 @@
 ---
 title: "Project Setup and Detailed Measurements"
+description: "Project setup and detailed measurements behind our ZK, React, Angular, Vaadin, and Wicket comparison."
 permalink: /eval-guide/project-setup
 ---
 

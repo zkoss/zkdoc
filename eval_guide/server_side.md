@@ -1,5 +1,6 @@
 ---
 title: "Server-Side / Java-Centric Frameworks"
+description: "An overview of server-side, Java-centric web UI frameworks like ZK, Vaadin, and Wicket."
 permalink: /eval-guide/server-side
 ---
 

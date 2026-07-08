@@ -1,5 +1,6 @@
 ---
 title: "Migrating from a Client-Side Framework to ZK"
+description: "A guide to migrating from a client-side framework like React or Angular to ZK."
 permalink: /eval-guide/client-side-to-zk
 ---
 
@@ -36,9 +37,9 @@ The most practical starting point is a new feature, a new internal tool, or a cl
 A few principles that make this approach work:
 
 - **Start with a feature that benefits from ZK's strengths.** If your existing application has a data-heavy view — a large grid, a reporting dashboard, a complex form — that has required ongoing JavaScript maintenance, that is a natural candidate for a ZK implementation. The contrast in development effort will be visible quickly.
-- **Use the same backend.** ZK ViewModels call Spring services directly, without a REST API layer. If your existing backend is Spring Boot, ZK plugs directly into the same service layer that your React or Angular frontend already calls via REST. You are not replacing the backend — you are replacing the frontend layer for the new feature.
+- **Use the same backend.** ZK [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) call Spring services directly, without a REST API layer. If your existing backend is Spring Boot, ZK plugs directly into the same service layer that your React or Angular frontend already calls via REST. You are not replacing the backend — you are replacing the frontend layer for the new feature.
 - **Measure the actual difference.** Track lines of code, time to implement, and maintenance effort for equivalent features built in the existing framework versus ZK. Real data from your own codebase, with your own team, is more useful than any benchmark from an evaluation guide.
-- **Give the team time to build fluency.** ZK's component model and ZUL syntax are learnable quickly for Java developers, but the first implementation will naturally take longer than subsequent ones. Build the evaluation period into your timeline and do not judge the framework on the first feature alone.
+- **Give the team time to build fluency.** ZK's component model and [ZUL syntax](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) are learnable quickly for Java developers, but the first implementation will naturally take longer than subsequent ones. Build the evaluation period into your timeline and do not judge the framework on the first feature alone.
 
 Once a meaningful portion of the application has been migrated and the team is productive in ZK, the question of full migration becomes easier to answer — because you will have real evidence from your own codebase rather than estimates.
 
@@ -51,7 +52,7 @@ For each existing frontend view, the ZK equivalent is typically a ZUL template a
 The areas that require the most attention:
 
 - **Routing and navigation.** React Router and Angular Router manage client-side navigation in JavaScript. In ZK, navigation is server-side: each page is a ZUL file, and navigation state lives in a ViewModel. A React `<Route path="/employees" element={<EmployeeList/>}/>` becomes a command that sets `currentPage` on the server, rendered via `<include src="@load(vm.currentPage)"/>`. For applications with simple linear navigation this is a direct translation. For applications with complex nested routing, browser history management, or deep-linked URLs, this requires more deliberate rethinking.
-- **State management.** React hooks (`useState`, `useEffect`) and Angular's services or NgRx manage state on the client. In ZK, state lives in Java ViewModels on the server. A `useState` variable becomes a Java field with a getter; `useEffect` with dependencies becomes `@Init` for load-time initialization or an explicit `@Command` method. The explicit `@NotifyChange` annotation replaces React's implicit reconciliation. This model is simpler for most enterprise applications once the developer is proficient with the ViewModel scope and session lifecycle.
+- **State management.** React hooks (`useState`, `useEffect`) and Angular's services or NgRx manage state on the client. In ZK, state lives in Java ViewModels on the server. A `useState` variable becomes a Java field with a getter; `useEffect` with dependencies becomes `@Init` for load-time initialization or an explicit `@Command` method. The explicit [`@NotifyChange`](https://docs.zkoss.org/zk_mvvm_ref/syntax/notifychange) annotation replaces React's implicit reconciliation. This model is simpler for most enterprise applications once the developer is proficient with the ViewModel scope and session lifecycle.
 - **Custom components.** If the existing application has custom React or Angular components that go beyond what standard libraries provide, assess whether ZK's built-in component library covers the same ground before starting. In most enterprise applications it will. For applications that depend heavily on custom frontend animations or highly specific visual interactions, evaluate this carefully.
 
 ### A concrete reference: simple CRUD app
@@ -64,7 +65,7 @@ The table below shows how common React patterns mapped in that app:
 |---|---|
 | `useState(x)` | Java field + getter + `@NotifyChange` |
 | `useEffect(() => fn, [deps])` | `@Init` (on load) or `@Command` + explicit call |
-| `onChange={handler}` | `@bind(vm.property)` (automatic two-way) |
+| `onChange={handler}` | [`@bind(vm.property)`](https://docs.zkoss.org/zk_mvvm_ref/syntax/bind) (automatic two-way) |
 | `onClick={handler}` | `onClick="@command('methodName')"` |
 | `<Route path="/x" element={<X/>}/>` | Navigation button + `currentPage` field + `<include src="@load(vm.currentPage)"/>` |
 | `useParams()` | `@ExecutionArgParam("paramName")` in `@Init` |
@@ -73,7 +74,7 @@ The table below shows how common React patterns mapped in that app:
 | `<input value={x} onChange={...}/>` | `<textbox value="@bind(vm.x)"/>` |
 | `employees.map(e => <ListItem/>)` | `<listbox model="@load(vm.employees)">` + `<template name="model">` |
 | Error state + inline error message | `constraint="rule: message"` attribute on the input |
-| Modal component + CSS overlay | `<window>` opened via `Executions.createComponents(...).doModal()` |
+| Modal component + CSS overlay | [`<window>`](https://docs.zkoss.org/zk_dev_ref/ui_patterns/modal_windows) opened via `Executions.createComponents(...).doModal()` |
 
 **Take this table as a reference point, not a formula.** It reflects a straightforward CRUD application with simple navigation, flat state, and standard form interactions. Your application will have patterns that do not appear here — real-time updates, multi-step workflows, drag-and-drop, complex permission-driven UI, or deeply nested component trees. Some of those map cleanly to ZK built-ins; others require more work or upfront evaluation of specific ZK components. Use this table to understand the general direction of a migration, not to estimate total effort for a larger or more complex application.
 

@@ -1,5 +1,6 @@
 ---
 title: "AI & Future"
+description: "How AI-assisted development is changing what web UI frameworks are responsible for, and what it means for ZK and other frameworks."
 permalink: /eval-guide/ai-future
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "The Landscape"
+description: "A survey of the web UI framework landscape — client-side SPA frameworks, server-side Java frameworks, and hybrid approaches compared."
 permalink: /eval-guide/landscape
 ---
 

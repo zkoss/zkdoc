@@ -1,5 +1,6 @@
 ---
 title: "Decision Guide: Matching Your Situation to a Framework Category"
+description: "A decision guide matching your project situation — team, app type, constraints — to the right web UI framework category."
 permalink: /eval-guide/decision-guide
 ---
 

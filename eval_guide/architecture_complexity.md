@@ -1,5 +1,6 @@
 ---
 title: "Key Factor: Architecture & Complexity"
+description: "Comparing architecture and complexity trade-offs across client-side, server-side, and hybrid web UI frameworks."
 permalink: /eval-guide/architecture-complexity
 ---
 
@@ -83,7 +84,7 @@ A framework is not just a collection of UI components. It is an architectural de
 
 Different frameworks absorb different parts of the complexity, and leave the rest to you.
 
-A framework like ZK or Vaadin takes on a significant amount of the communication and state management work. The developer writes components and event handlers in Java. The framework handles serializing those events to the browser, maintaining the server-side component tree, and synchronizing updates. The developer thinks in terms of business logic and UI components — not HTTP, not JSON, not browser rendering.
+A framework like ZK or Vaadin takes on a significant amount of the communication and state management work. The developer writes [components and event handlers](https://docs.zkoss.org/zk_dev_ref/ui_composing/component_based_ui) in Java. The framework handles serializing those events to the browser, maintaining the [server-side component tree](https://docs.zkoss.org/zk_dev_ref/overture/architecture_overview), and synchronizing updates. The developer thinks in terms of business logic and UI components — not HTTP, not JSON, not browser rendering.
 
 A framework like React takes on the rendering and component model, but leaves state management, API communication, routing, and data fetching largely to the developer (or to additional libraries). A React application involves many more explicit decisions about how data flows and how components talk to each other.
 

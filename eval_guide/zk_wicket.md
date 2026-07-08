@@ -1,5 +1,6 @@
 ---
 title: "ZK vs Apache Wicket"
+description: "ZK vs Apache Wicket compared: two server-side Java frameworks evaluated on real application builds."
 permalink: /eval-guide/zk-wicket
 ---
 
@@ -11,7 +12,7 @@ ZK and Wicket share the same foundational philosophy — both are server-driven 
 
 Both frameworks use a server-side component model where Java objects represent UI elements. Both maintain session state on the server. Both communicate with the browser through their own AJAX protocol without requiring the developer to write JavaScript.
 
-The key structural difference is how components are defined. Wicket co-locates Java page classes with HTML template files — the developer writes an `EmployeePage.java` alongside an `EmployeePage.html`, and Wicket binds them together using `wicket:id` attributes. ZK uses ZUL files — XML-based templates that are closer to the component model itself, paired with Java ViewModels.
+The key structural difference is how components are defined. Wicket co-locates Java page classes with HTML template files — the developer writes an `EmployeePage.java` alongside an `EmployeePage.html`, and Wicket binds them together using `wicket:id` attributes. ZK uses [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) files — XML-based templates that are closer to the component model itself, paired with Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel).
 
 ## Level 1 comparison: Employee Manager
 
@@ -37,7 +38,7 @@ For large datasets, Wicket's `ISortableDataProvider` supports server-side pagina
 
 For real-time updates, Wicket provides `AbstractAjaxTimerBehavior` — a client-initiated polling mechanism that refreshes a component at a configurable interval. This is polling, not push: the client asks for updates on a schedule, rather than the server pushing changes when they occur. For low-frequency updates (every 30 seconds), this is adequate. For live dashboards requiring immediate update delivery, polling's latency is a limitation.
 
-ZK uses an `APPLICATION`-scoped `EventQueue` that broadcasts to all connected sessions simultaneously from a single `@Scheduled` bean. Updates are delivered via WebSocket the moment they are published.
+ZK uses an `APPLICATION`-scoped [`EventQueue`](https://docs.zkoss.org/zk_dev_ref/server_push/event_queues) that broadcasts to all connected sessions simultaneously from a single `@Scheduled` bean. Updates are delivered via WebSocket the moment they are published.
 
 For applications where pagination and polling are sufficient, Wicket handles these cases natively. For applications that require virtual scrolling over large datasets or true real-time push, the difference in built-in capability is meaningful.
 

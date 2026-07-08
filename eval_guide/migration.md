@@ -1,5 +1,6 @@
 ---
 title: "Migration & Real-World Decisions"
+description: "Guidance for migrating to or reassessing ZK — from legacy Java web apps or client-side SPA frameworks."
 permalink: /eval-guide/migration
 ---
 

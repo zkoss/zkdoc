@@ -1,5 +1,6 @@
 ---
 title: "ZK vs Thymeleaf + Spring MVC"
+description: "ZK vs Thymeleaf + Spring MVC compared: component-based framework vs. traditional server-side templating."
 permalink: /eval-guide/zk-thymeleaf
 ---
 
@@ -19,7 +20,7 @@ Thymeleaf was the standout performer on the basic metrics. It had the fastest bu
 
 Thymeleaf required 1,038 lines of code compared to ZK's 937, with the additional lines split between HTML templates and Java controllers. Both are reasonable for the feature set.
 
-Where ZK showed an advantage was in component capability. ZK's grid components handle sorting, filtering, and pagination as built-in behaviors. In Thymeleaf, these require either a server round-trip per interaction (which works, but is slower) or custom JavaScript (which adds complexity and moves the developer outside the Thymeleaf model).
+Where ZK showed an advantage was in component capability. ZK's [grid components](https://docs.zkoss.org/zk_component_ref/grid) handle sorting, filtering, and pagination as built-in behaviors. In Thymeleaf, these require either a server round-trip per interaction (which works, but is slower) or custom JavaScript (which adds complexity and moves the developer outside the Thymeleaf model).
 
 ## Level 2 comparison: Advanced Components
 
@@ -39,4 +40,4 @@ Thymeleaf suits your situation better if the application is primarily content di
 
 ## When ZK is the better choice
 
-ZK suits your situation better when the application requires complex interactive components — data grids with rich filtering and sorting, event calendars, org charts, pivot tables, or real-time dashboards — that need to be built without assembling CDN libraries, when data binding between the UI and the backend needs to be automatic rather than manually managed, or when the application will grow in complexity over time and the CDN-assembly approach will accumulate maintenance debt.
+ZK suits your situation better when the application requires complex interactive components — data grids with rich filtering and sorting, event calendars, [org charts](https://docs.zkoss.org/zk_component_ref/organigram), pivot tables, or real-time dashboards — that need to be built without assembling CDN libraries, when [data binding](https://docs.zkoss.org/zk_mvvm_ref/data_binding/index) between the UI and the backend needs to be automatic rather than manually managed, or when the application will grow in complexity over time and the CDN-assembly approach will accumulate maintenance debt.

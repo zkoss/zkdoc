@@ -1,5 +1,6 @@
 ---
 title: "Server-Side Templating: Traditional MVC"
+description: "Traditional server-side templating (Thymeleaf + Spring MVC) compared to component-based web UI frameworks."
 permalink: /eval-guide/server-side-templating
 ---
 

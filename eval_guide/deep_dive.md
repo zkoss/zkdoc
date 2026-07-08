@@ -1,5 +1,6 @@
 ---
 title: "Deep Dive"
+description: "Side-by-side technical comparisons of ZK, React, Angular, Vaadin, and Wicket, based on three real applications built with each framework."
 permalink: /eval-guide/deep-dive
 ---
 

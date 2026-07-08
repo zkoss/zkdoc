@@ -1,5 +1,6 @@
 ---
 title: "ZK vs Angular"
+description: "ZK vs Angular compared: a real-world implementation comparison of architecture, effort, and maintainability."
 permalink: /eval-guide/zk-angular
 ---
 
@@ -11,7 +12,7 @@ Angular is the most structurally opinionated of the client-side frameworks in th
 
 Angular applications are organized around a four-layer architecture in our measurement: Spring Boot controller, REST API, Angular service, and Angular component. Each layer has its own responsibility, its own testing surface, and its own boilerplate.
 
-ZK collapses this into two layers: a Java ViewModel and a ZUL template. The ViewModel calls Spring services directly. There is no REST API layer, no client-side service abstraction, and no client-side state management.
+ZK collapses this into two layers: a Java [ViewModel](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) and a [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) template. The ViewModel calls Spring services directly. There is no REST API layer, no client-side service abstraction, and no client-side state management.
 
 ## Level 1 comparison: Employee Manager
 
@@ -39,7 +40,7 @@ For real-time server push, Angular has no built-in mechanism. The developer is r
 
 Angular's four-layer architecture (controller, REST API, Angular service, component) means each of these features must be threaded through all four layers before it reaches the UI — more moving parts than a two-layer server-side framework.
 
-ZK delivered both features natively: ROD in 64 UI lines with one XML attribute, push in approximately 15 lines via EventQueue — zero JavaScript written.
+ZK delivered both features natively: [ROD](https://docs.zkoss.org/zk_dev_ref/performance_tips/turn_on_render_on_demand) in 64 UI lines with one XML attribute, push in approximately 15 lines via [EventQueue](https://docs.zkoss.org/zk_dev_ref/server_push/event_queues) — zero JavaScript written.
 
 ## Team and skills
 

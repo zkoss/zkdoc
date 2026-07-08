@@ -1,5 +1,6 @@
 ---
 title: "How AI Is Changing Web UI Development"
+description: "How AI coding tools are changing web UI development and what it means for framework choice."
 permalink: /eval-guide/ai-changing-web-ui-development
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Do You Still Need Frontend Frameworks in the AI Era?"
+description: "Do you still need a frontend framework in the AI coding era? An honest look at what AI can and can't replace."
 permalink: /eval-guide/do-you-still-need-frontend-frameworks
 ---
 
@@ -37,6 +38,6 @@ A well-documented framework, with a clear and consistent component model, well-r
 
 Out-of-the-box AI tools produce React code reliably due to React's large available pool of public training data. AI-generated Angular code tends to land mostly in the right place, due to its enforced structure.
 
-Server-side Java frameworks like ZK benefit from their architecture, which naturally constrains what the AI needs to generate. A ZK application has a clear separation between ZUL templates and Java ViewModels or composers, a well-defined data binding and event listening syntax, and a finite component library. The design space is bounded, which makes AI-generated code easier to review and more likely to be consistent. [Part 6-3](/eval-guide/zk-in-ai-driven-development) covers how ZK has specifically invested in making this advantage concrete.
+Server-side Java frameworks like ZK benefit from their architecture, which naturally constrains what the AI needs to generate. A ZK application has a clear separation between [ZUL templates](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) and Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) or composers, a well-defined data binding and event listening syntax, and a finite component library. The design space is bounded, which makes AI-generated code easier to review and more likely to be consistent. [Part 6-3](/eval-guide/zk-in-ai-driven-development) covers how ZK has specifically invested in making this advantage concrete.
 
 Frameworks are not going away. The ones that thrive will be the ones that are clear enough, structured enough, and well-documented enough to serve as reliable context for AI tools — rather than leaving AI to generate random patterns.

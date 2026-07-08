@@ -1,5 +1,6 @@
 ---
 title: "Right Tool for the Right Job"
+description: "Matching web UI frameworks to use cases: honest, team-profile-based recommendations instead of one-size-fits-all rankings."
 permalink: /eval-guide/right-tool
 ---
 

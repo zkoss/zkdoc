@@ -1,5 +1,6 @@
 ---
 title: "Hybrid and Mixed Approaches"
+description: "Hybrid and mixed web UI architectures that combine server-side and client-side rendering approaches."
 permalink: /eval-guide/hybrid
 ---
 

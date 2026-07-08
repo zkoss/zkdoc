@@ -1,5 +1,6 @@
 ---
 title: "Client-Side / SPA Frameworks"
+description: "An overview of client-side / SPA web UI frameworks — React, Angular, and Vue — and where they fit."
 permalink: /eval-guide/client-side
 ---
 

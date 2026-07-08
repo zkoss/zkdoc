@@ -1,5 +1,6 @@
 ---
 title: "How to Choose"
+description: "A decision framework for choosing a web UI framework: the questions to answer about your team, application, and constraints before comparing tools."
 permalink: /eval-guide/how-to-choose
 ---
 

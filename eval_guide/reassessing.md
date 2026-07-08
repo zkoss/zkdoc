@@ -1,5 +1,6 @@
 ---
 title: "Reassessing Your Use of ZK"
+description: "How to reassess whether ZK is still the right fit for your application as requirements evolve."
 permalink: /eval-guide/reassessing
 ---
 
@@ -27,7 +28,7 @@ Part 1-2: Has your team changed? If the team that built the ZK application is la
 
 Part 1-3: Have the application goals changed? If the application has evolved from an internal data tool into a public-facing product with specific requirements outside of ZK's scope, that is a legitimate reason to reconsider. If it is still the internal data-heavy enterprise application it always was, the application type still favors ZK.
 
-Part 1-6: Have enterprise requirements grown? ZK's commercial backing, WCAG support, and security posture are meaningful advantages in environments with compliance requirements. If those requirements have become more stringent since the original decision, ZK's position has strengthened, not weakened.
+Part 1-6: Have enterprise requirements grown? ZK's commercial backing, [WCAG support](https://docs.zkoss.org/zk_dev_ref/accessibility/accessibility), and security posture are meaningful advantages in environments with compliance requirements. If those requirements have become more stringent since the original decision, ZK's position has strengthened, not weakened.
 
 If you work through Part 1 and ZK still fits, the migration conversation has its answer.
 
@@ -35,7 +36,7 @@ If you work through Part 1 and ZK still fits, the migration conversation has its
 
 A common trigger for this conversation is hiring a frontend developer with React experience who then advocates for switching. This deserves a direct response.
 
-Bringing JavaScript expertise into a Java-centric team is genuinely valuable for some things — visual polish, custom interactions, build tooling — and a ZK application can leverage that expertise without a full migration. ZK's client-side engine is built for extensibility and can easily integrate external JavaScript libraries within the framework. A skilled frontend developer can customize the user experience, improve theming, styling, and add any bespoke visual elements without rewriting the application.
+Bringing JavaScript expertise into a Java-centric team is genuinely valuable for some things — visual polish, custom interactions, build tooling — and a ZK application can leverage that expertise without a full migration. ZK's [client-side engine](https://docs.zkoss.org/zk_client_side_ref/introduction) is built for extensibility and can easily integrate external JavaScript libraries within the framework. A skilled frontend developer can customize the user experience, improve theming, styling, and add any bespoke visual elements without rewriting the application.
 
 What a migration involves in this scenario is asking the Java developers on the team to maintain a JavaScript codebase they did not build and may not be fully comfortable in. The new developer gains familiarity but everyone else gains a coordination overhead and a learning curve. Hiring one JavaScript developer does not change the skill profile of the entire team.
 

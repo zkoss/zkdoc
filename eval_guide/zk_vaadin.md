@@ -1,5 +1,6 @@
 ---
 title: "ZK vs Vaadin"
+description: "ZK vs Vaadin compared: two Java-centric UI frameworks evaluated head-to-head on real applications."
 permalink: /eval-guide/zk-vaadin
 ---
 
@@ -13,7 +14,7 @@ Both frameworks keep application logic on the server and push rendered component
 
 Vaadin is Java-only by design. All UI is defined programmatically in Java — components are Java objects, layouts are composed in Java, and event handlers are Java lambdas. There is no template language. Vaadin also offers Hilla, its TypeScript frontend model for teams that want a more client-driven approach while maintaining Java on the backend.
 
-ZK offers three approaches to UI composition. The most common is ZUL — an XML-based markup language paired with Java ViewModels using the MVVM pattern. ZK also supports [pure Java composition](https://docs.zkoss.org/get_started/building_ui_in_java) (similar to Vaadin's model) and a full MVC pattern. Most ZK applications use ZUL + ViewModel.
+ZK offers three approaches to UI composition. The most common is [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) — an XML-based markup language paired with Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) using the MVVM pattern. ZK also supports [pure Java composition](https://docs.zkoss.org/get_started/building_ui_in_java) (similar to Vaadin's model) and a full MVC pattern. Most ZK applications use ZUL + ViewModel.
 
 ## Level 1 comparison: Employee Manager
 
@@ -41,13 +42,13 @@ ZK's equivalent — `<portallayout>`, `<charts>`, `<calendars>`, `<organigram>`,
 
 Level 3 is where the ZK and Vaadin comparison becomes most instructive — because both frameworks deliver these features natively, and the implementation details reveal meaningful differences in developer experience.
 
-**Large dataset grid:** ZK uses Render-on-Demand (ROD). The full dataset — 10,000 Employee objects — is loaded into a `ListModel`, and ZK renders only the rows visible in the viewport. One XML attribute enables ROD. The total UI code was 64 lines. For extreme-scale datasets, ZK also provides `BigListBox + MatrixModel` (ZK EE), a mode where the Java heap footprint stays constant regardless of dataset size.
+**Large dataset grid:** ZK uses [Render-on-Demand (ROD)](https://docs.zkoss.org/zk_dev_ref/performance_tips/turn_on_render_on_demand). The full dataset — 10,000 Employee objects — is loaded into a [`ListModel`](https://docs.zkoss.org/zk_dev_ref/mvc/list_model), and ZK renders only the rows visible in the viewport. One XML attribute enables ROD. The total UI code was 64 lines. For extreme-scale datasets, ZK also provides `BigListBox + MatrixModel` (ZK EE), a mode where the Java heap footprint stays constant regardless of dataset size.
 
 Vaadin uses `DataProvider.fromCallbacks()`. The developer implements two lambda callbacks (fetchItems and countItems), and Vaadin makes a database query per scroll page as the user scrolls. This keeps the Java heap footprint low regardless of dataset size. The trade-off is ZK's single upfront load versus Vaadin's per-page queries on scroll.
 
 Both approaches write zero JavaScript.
 
-**Real-time server push:** ZK uses an `APPLICATION`-scoped `EventQueue`. A single Spring `@Scheduled` bean publishes to the queue; ZK broadcasts to all connected browser sessions simultaneously. The developer subscribes to the queue in the ViewModel. Thread safety is handled automatically. Developer push code: approximately 15 lines.
+**Real-time server push:** ZK uses an `APPLICATION`-scoped [`EventQueue`](https://docs.zkoss.org/zk_dev_ref/server_push/event_queues). A single Spring `@Scheduled` bean publishes to the queue; ZK broadcasts to all connected browser sessions simultaneously. The developer subscribes to the queue in the ViewModel. Thread safety is handled automatically. Developer push code: approximately 15 lines.
 
 Vaadin uses `@Push` (which must be placed on `AppShellConfigurator` — placing it on `AppLayout` causes a startup `RuntimeException`). UI updates must be wrapped in `ui.access()` to ensure thread safety. Developer push code: approximately 30 lines, with more explicit threading responsibility.
 
@@ -55,7 +56,7 @@ Both write zero JavaScript. The practical difference is developer surface area: 
 
 ## Accessibility
 
-Both frameworks have strong accessibility support. Vaadin's components are built-in as default. ZK provides the `za11y.jar` module, which retrofits WAI-ARIA roles, keyboard navigation, screen reader live regions, and high-contrast support across all ZK components by adding one JAR to the classpath.
+Both frameworks have strong accessibility support. Vaadin's components are built-in as default. ZK provides the [`za11y.jar`](https://docs.zkoss.org/zk_dev_ref/accessibility/accessibility) module, which retrofits WAI-ARIA roles, keyboard navigation, screen reader live regions, and high-contrast support across all ZK components by adding one JAR to the classpath.
 
 Vaadin has a slight edge in accessibility maturity due to its formal third-party auditing process. Both are meaningfully ahead of Angular, React, Thymeleaf, and Wicket on this dimension.
 
@@ -69,4 +70,4 @@ Vaadin suits your situation better if your team has existing Vaadin experience a
 
 ## When ZK is the better choice
 
-ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZK's AI tooling — an MCP documentation server for grounded answers and a ZUL writer agent for code generation — fits your development workflow, when build speed matters (ZK at 2.6s versus Vaadin at 6.6s), or when compatibility with Spring Boot 2.x or the javax namespace is a current constraint.
+ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZK's AI tooling — an [MCP documentation server](https://docs.zkoss.org/zk_dev_ref/zk_doc_mcp_server) for grounded answers and a [ZUL writer agent](https://docs.zkoss.org/zk_dev_ref/agent_skills) for code generation — fits your development workflow, when build speed matters (ZK at 2.6s versus Vaadin at 6.6s), or when compatibility with Spring Boot 2.x or the javax namespace is a current constraint.

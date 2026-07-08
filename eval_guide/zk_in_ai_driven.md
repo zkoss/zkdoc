@@ -1,5 +1,6 @@
 ---
 title: "Where ZK Fits in an AI-Driven Development World"
+description: "Where ZK fits in an AI-driven development workflow, including MCP server and agent-skill support."
 permalink: /eval-guide/zk-in-ai-driven-development
 ---
 
@@ -19,7 +20,7 @@ As a framework more represented in internal tooling than public-facing repositor
 
 Beyond documentation grounding, ZK provides [purpose-built AI tooling](https://docs.zkoss.org/zk_dev_ref/agent_skills) for the most common mechanical tasks in ZK development.
 
-The ZUL writer agent generates ZUL templates and Java scaffolding from natural language descriptions or existing designs. A developer can describe a screen — "a filterable data grid with department and status filters, a row-click detail panel, and an export button" — and get a working ZUL template and ViewModel skeleton following ZK's convention. This is not generic code generation from model training; it is ZK-specific generation with access to component models, data binding syntax, and the ViewModel lifecycle precedents.
+The ZUL writer agent generates ZUL templates and Java scaffolding from natural language descriptions or existing designs. A developer can describe a screen — "a filterable data grid with department and status filters, a row-click detail panel, and an export button" — and get a working ZUL template and ViewModel skeleton following ZK's convention. This is not generic code generation from model training; it is ZK-specific generation with access to component models, [data binding](https://docs.zkoss.org/zk_mvvm_ref/data_binding/index) syntax, and the ViewModel lifecycle precedents.
 
 This enables the AI agent to provide value by assisting with the mechanical parts of starting a new screen — the boilerplate, the binding syntax, the component wiring — handled in seconds rather than minutes. The developer can then provide domain knowledge and decision making.
 

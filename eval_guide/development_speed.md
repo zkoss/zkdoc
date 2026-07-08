@@ -1,5 +1,6 @@
 ---
 title: "Key Factor: Development Speed"
+description: "Which web UI frameworks let teams ship faster, based on real line-of-code and build-time measurements."
 permalink: /eval-guide/development-speed
 ---
 
@@ -61,7 +62,7 @@ But AI changes the speed equation unevenly across frameworks.
 
 React and Angular benefit from AI assistance most straightforwardly, because the volume of training data available for these frameworks is enormous. AI tools have seen millions of React components, common patterns, and idiomatic solutions. The suggestions tend to be accurate and idiomatic.
 
-For ZK, Vaadin, and Apache Wicket, the general-purpose AI assistance is still useful but less reliable — these frameworks are less represented in training data, which means AI suggestions occasionally recommend outdated patterns, use incorrect APIs, or miss framework-specific idioms. However, this gap is narrowing in a meaningful way. ZK provides an MCP documentation server, which allows AI coding tools to query up-to-date ZK documentation directly during development — producing more accurate, framework-aware suggestions rather than relying on potentially stale training data. Vaadin offers Copilot, a built-in AI assistant designed specifically for Vaadin development. Both of these are deliberate investments in closing the AI tooling gap, and they are worth factoring into your evaluation. A framework with purpose-built AI tooling can close a significant portion of the ecosystem size disadvantage that smaller frameworks carry in general-purpose AI assistants.
+For ZK, Vaadin, and Apache Wicket, the general-purpose AI assistance is still useful but less reliable — these frameworks are less represented in training data, which means AI suggestions occasionally recommend outdated patterns, use incorrect APIs, or miss framework-specific idioms. However, this gap is narrowing in a meaningful way. ZK provides an [MCP documentation server](https://docs.zkoss.org/zk_dev_ref/zk_doc_mcp_server), which allows AI coding tools to query up-to-date ZK documentation directly during development — producing more accurate, framework-aware suggestions rather than relying on potentially stale training data. Vaadin offers Copilot, a built-in AI assistant designed specifically for Vaadin development. Both of these are deliberate investments in closing the AI tooling gap, and they are worth factoring into your evaluation. A framework with purpose-built AI tooling can close a significant portion of the ecosystem size disadvantage that smaller frameworks carry in general-purpose AI assistants.
 
 There is a more fundamental point here: AI speeds up writing code. It does not speed up understanding whether the code is correct.
 

@@ -1,5 +1,6 @@
 ---
 title: "What We Built and What We Found"
+description: "What we built and found benchmarking ZK, React, Angular, Vaadin, and Wicket across three real applications."
 permalink: /eval-guide/build-and-found
 ---
 
@@ -73,7 +74,7 @@ The results across all four views:
 | Portal Dashboard | ✅ Native | ✅ Native (commercial) | 🔶 CDN | 🔶 CDN | 🔷 Ecosystem wrapper | 🔷 Ecosystem wrapper |
 | Views delivered | 4/4 | 4/4 | 4/4 | 4/4 | 4/4 | 3/4 |
 
-**ZK delivered all four views as native built-in components** — `<calendars>`, `<organigram>`, `<pivottable>`, and `<portallayout>` — with zero third-party libraries and zero JavaScript written by the developer.
+**ZK delivered all four views as native built-in components** — `<calendars>`, [`<organigram>`](https://docs.zkoss.org/zk_component_ref/organigram), `<pivottable>`, and [`<portallayout>`](https://docs.zkoss.org/zk_component_ref/portallayout) — with zero third-party libraries and zero JavaScript written by the developer.
 
 **Vaadin delivered all four views with proper Java APIs throughout.** The portal dashboard uses Vaadin's own commercial Dashboard component. The other three views use free Vaadin Directory add-ons (FullCalendar for Flow, OrgChart Add-on, PivotTable for Vaadin) — each exposing a Java API so no JavaScript is required. So in practice: three of four components are from Vaadin Ltd directly (Dashboard, Charts, and PivotTable), and two are from third-party vendors on the Directory (FlowingCode's FullCalendar and OrgChart).
 
@@ -100,14 +101,14 @@ Thymeleaf's low line count reflects the conciseness of HTML templates plus brief
 
 This is where the architectural divide between server-side and client-side frameworks became most concrete. Two features were tested: a 10,000-row virtual grid and a real-time server-push dashboard. Both were fully implemented in ZK and Vaadin. For the other four frameworks: React, Angular, Thymeleaf, and Wicket, the applications ran but showed placeholder views in place of each unimplemented feature. Each placeholder is a styled panel within the running application that describes what would be required to implement the feature in that framework: which libraries to integrate, what infrastructure to set up, and what the developer would be responsible for. The full breakdown per framework is in Part 4-7.
 
-Large dataset grid (10,000 rows): ZK enabled render-on-demand (ROD) with a single XML attribute — the full dataset loads into a `ListModel`, and ZK renders only the visible rows. The total UI code was 64 lines. Vaadin used `DataProvider.fromCallbacks()` with server-side pagination — 50 lines of Java.
+Large dataset grid (10,000 rows): ZK enabled render-on-demand (ROD) with a single XML attribute — the full dataset loads into a [`ListModel`](https://docs.zkoss.org/zk_dev_ref/mvc/list_model), and ZK renders only the visible rows. The total UI code was 64 lines. Vaadin used `DataProvider.fromCallbacks()` with server-side pagination — 50 lines of Java.
 
-Real-time server-push dashboard: ZK's `EventQueue` with `APPLICATION` scope means a single Spring `@Scheduled` bean publishes updates that are broadcast to all connected browser sessions simultaneously. Total push code: approximately 15 lines. Vaadin used `@Push` with `UI.access()` — approximately 30 lines, with more explicit threading management required.
+Real-time server-push dashboard: ZK's [`EventQueue`](https://docs.zkoss.org/zk_dev_ref/server_push/event_queues) with `APPLICATION` scope means a single Spring `@Scheduled` bean publishes updates that are broadcast to all connected browser sessions simultaneously. Total push code: approximately 15 lines. Vaadin used `@Push` with `UI.access()` — approximately 30 lines, with more explicit threading management required.
 
 The Level 3 findings add a new dimension to the "zero JavaScript" story. At Level 1 and Level 2, ZK and Vaadin both write zero JavaScript. At Level 3, both continue to write zero JavaScript — but the client-side frameworks require hundreds of lines of JavaScript infrastructure that the server-side frameworks never write at all.
 
 ### On enterprise requirements (Level 4):
 
-Vaadin and ZK have the strongest built-in accessibility support. ZK provides the `za11y.jar` module, which retrofits WAI-ARIA roles, keyboard navigation, screen reader live regions, and high-contrast support across all ZK components. Vaadin's accessibility is built into every component by default. Angular provides useful tooling (`@angular/cdk/a11y`) but requires more manual configuration. React has no built-in accessibility support. Thymeleaf and Wicket have none.
+Vaadin and ZK have the strongest built-in accessibility support. ZK provides the [`za11y.jar`](https://docs.zkoss.org/zk_dev_ref/accessibility/accessibility) module, which retrofits WAI-ARIA roles, keyboard navigation, screen reader live regions, and high-contrast support across all ZK components. Vaadin's accessibility is built into every component by default. Angular provides useful tooling (`@angular/cdk/a11y`) but requires more manual configuration. React has no built-in accessibility support. Thymeleaf and Wicket have none.
 
 For security process and enterprise support, ZK and Vaadin are the only frameworks in this guide with commercial vendors, formal support contracts, and documented security processes. The others rely on community CVE reporting and internal practices at Meta (React) or Google (Angular).

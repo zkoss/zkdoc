@@ -1,5 +1,6 @@
 ---
 title: "Evaluator's Guide: Choosing a Web UI Framework"
+description: "A practical evaluator's guide to choosing a web UI framework — real implementation comparisons across ZK, React, Angular, Vaadin, Wicket, and Thymeleaf."
 permalink: /eval-guide
 ---
 # Evaluator's Guide: Choosing a Web UI Framework 

@@ -1,5 +1,6 @@
 ---
 title: "Modernizing Legacy Java Web"
+description: "Modernizing legacy Java web applications (JSP, Struts, plain Servlets) by migrating to ZK."
 permalink: /eval-guide/legacy-java-to-zk
 ---
 
@@ -51,7 +52,7 @@ ZK stands out among web frameworks as a migration target for Swing developers fo
 
 **Talent preservation.** Swing developers already know Java. ZK applications are written entirely in Java on the server — no JavaScript, no REST API, no parallel front-end build pipeline. The team that built the Swing app can migrate it. No hiring, no retraining for a different language.
 
-**Areas requiring special attention.** Keyboard-heavy workflows that rely on global shortcut bindings need explicit re-implementation; ZK's [Keystroke Handling](https://www.zkoss.org/wiki/ZK_Developer%27s_Reference/UI_Patterns/Keystroke_Handling) documentation covers `setCtrlKeys()` and the `onCtrlKey` event. Custom `CellRenderer` logic maps to ZK's `ListitemRenderer` (programmatic) or `<template>` tags (declarative), but the mapping requires thought for complex rendering. Printing and reporting move to a browser-print strategy or a reporting-service integration. And ZK requires a live server connection — offline operation is not supported.
+**Areas requiring special attention.** Keyboard-heavy workflows that rely on global shortcut bindings need explicit re-implementation; ZK's [Keystroke Handling](https://docs.zkoss.org/zk_dev_ref/ui_patterns/keystroke_handling) documentation covers `setCtrlKeys()` and the `onCtrlKey` event. Custom `CellRenderer` logic maps to ZK's `ListitemRenderer` (programmatic) or `<template>` tags (declarative), but the mapping requires thought for complex rendering. Printing and reporting move to a browser-print strategy or a reporting-service integration. And ZK requires a live server connection — offline operation is not supported.
 
 
 
@@ -88,7 +89,7 @@ In ZK MVC, the three layers map directly to the pattern every Swing developer al
 
 | Swing | ZK MVC | Role |
 |---|---|---|
-| `JFrame` subclass + `JPanel` subclasses | `SelectorComposer<Window>` | Controller |
+| `JFrame` subclass + `JPanel` subclasses | [`SelectorComposer<Window>`](https://docs.zkoss.org/zk_dev_ref/mvc/composer) | Controller |
 | `JLabel`, `JTextField`, `JTable`, etc. | `Label`, `Textbox`, `Listbox`, etc. (programmatic) | View |
 | Domain POJOs + service layer | Same domain POJOs + Spring `@Service` | Model |
 
@@ -214,7 +215,7 @@ public class ContactStore {
 
 ### IV.2 Why Minimal ZUL + Java-Built UI
 
-ZUL is ZK's declarative markup language — similar in intent to JSX or Thymeleaf templates. For production applications, writing ZUL gives you designer-developer separation, IDE autocompletion, and a clear view of the component hierarchy without reading Java.
+[ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) is ZK's declarative markup language — similar in intent to JSX or Thymeleaf templates. For production applications, writing ZUL gives you designer-developer separation, IDE autocompletion, and a clear view of the component hierarchy without reading Java.
 
 For a migration tutorial, however, a fully-declared ZUL introduces a paradigm shift precisely when the reader is trying to see the Swing parallel. So the Contact Manager uses an intentionally minimal ZUL file — four lines — that does only one thing: bootstraps the page and applies the Composer:
 
@@ -398,7 +399,7 @@ public class ContactTableModel extends AbstractTableModel {
 }
 ```
 
-In ZK, a `Listbox` accepts a `ListModelList` directly. The model handles its own change notification — no `fireTableDataChanged()`, no override, no class to write:
+In ZK, a `Listbox` accepts a [`ListModelList`](https://docs.zkoss.org/zk_dev_ref/mvc/list_model) directly. The model handles its own change notification — no `fireTableDataChanged()`, no override, no class to write:
 
 ```java
 // ZK — three lines replace the entire class
@@ -560,7 +561,7 @@ private void onNew() {
 }
 ```
 
-ZK's `Window` supports modal mode with `doModal()`. Because ZK runs server-side, "blocking" means blocking the server-side event processing thread — the browser keeps responding via the ZK AJAX layer. The pattern is identical in structure:
+ZK's `Window` supports [modal mode with `doModal()`](https://docs.zkoss.org/zk_dev_ref/ui_patterns/modal_windows). Because ZK runs server-side, "blocking" means blocking the server-side event processing thread — the browser keeps responding via the ZK AJAX layer. The pattern is identical in structure:
 
 ```java
 // ZK
@@ -624,7 +625,7 @@ private void onRefresh() {
 }
 ```
 
-ZK does not have an EDT. The server processes one request at a time per desktop. For a simulated "slow load" that shows a busy indicator, the `Events.echoEvent` pattern achieves the equivalent:
+ZK does not have an EDT. The server processes one request at a time per desktop. For a simulated "slow load" that shows a busy indicator, the [`Events.echoEvent`](https://docs.zkoss.org/zk_dev_ref/ui_patterns/use_echo_events) pattern achieves the equivalent:
 
 ```java
 // ZK — register the work handler once in doAfterCompose

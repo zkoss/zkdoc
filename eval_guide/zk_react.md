@@ -1,5 +1,6 @@
 ---
 title: "ZK vs React"
+description: "ZK vs React compared: architecture, lines of code, and team skills, based on three real applications built with both."
 permalink: /eval-guide/zk-react
 ---
 
@@ -19,7 +20,7 @@ These are not just different implementation choices — they require different s
 
 On the basic Employee Manager, both frameworks completed all requirements successfully. The differences were measurable but not dramatic at this level.
 
-ZK produced 937 total lines of code — the fewest of any framework in our test — with zero JavaScript. The developer wrote Java ViewModels and ZUL templates. No REST API layer was needed.
+ZK produced 937 total lines of code — the fewest of any framework in our test — with zero JavaScript. The developer wrote Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) and [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) templates. No REST API layer was needed.
 
 React required 1,037 lines total, of which 730 were JavaScript or JSX. It also required building a REST API layer on top of the shared backend service, adding coordination surface area that the server-side frameworks did not need.
 
@@ -41,7 +42,7 @@ For a 10,000-row virtual grid, React requires a virtualization library — react
 
 For real-time server push, React has no built-in mechanism. The developer is responsible for setting up a WebSocket or SSE connection on both the Spring Boot backend and the React frontend, plus client-side state management to reflect the updates. Estimated developer effort: approximately 350 lines across both sides.
 
-ZK delivered both features with a one-attribute XML configuration for ROD (64 total UI lines) and a 15-line EventQueue subscriber for server push — zero JavaScript written.
+ZK delivered both features with a one-attribute XML configuration for [ROD](https://docs.zkoss.org/zk_dev_ref/performance_tips/turn_on_render_on_demand) (64 total UI lines) and a 15-line [EventQueue](https://docs.zkoss.org/zk_dev_ref/server_push/event_queues) subscriber for server push — zero JavaScript written.
 
 If your application requires large dataset grids or real-time updates, this is the dimension where the Java-centric versus JavaScript-centric architectural divide is most consequential.
 
