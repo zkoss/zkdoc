@@ -2687,11 +2687,8 @@ zk_component_ref:
         url: /zk_component_ref/tablet_devices/unsupported_molds
       - title: Limitation
         url: /zk_component_ref/tablet_devices/limitation
-  - title: Accessibility
+  - title: Unsupported Accessibility Components
     url: /zk_component_ref/accessibility/unsupported_components
-    children:
-      - title: Unsupported Components
-        url: /zk_component_ref/accessibility/unsupported_components
   - title: Removed Components
     children:
       - title: Applet
