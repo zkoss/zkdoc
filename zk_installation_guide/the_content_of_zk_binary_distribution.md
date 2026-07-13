@@ -29,7 +29,7 @@ This directory holds the ZK libraries
 | zml.jar                            | ZK XML components for generating XML output (`org.zkoss.zml.*`)                        | Commercial | ZK PE and EE only |
 | zkmax.jar                          | ZK enterprise components and utilities (`org.zkoss.*`)                                 | Commercial | ZK EE only        |
 | zuti.jar                           | Shadow elements                                                                        | Commercial | ZK EE only        |
-| za11y.jar                          | ZK web accessibility (A11y) support (WCAG 2.0)                                         | Commercial | ZK EE only        |
+| za11y.jar                          | ZK web accessibility (A11y) support (WCAG 2.0)                                         | Commercial | ZK PE and EE only |
 | client-bind.jar                    | Client MVVM                                                                            | Commercial | ZK EE only        |
 | stateless.jar                      | Core of stateless components                                                           | Commercial | ZK EE only        |
 | stateless-immutable.jar            | Custom annotation of the immutables for stateless components                           | Commercial | ZK EE only        |

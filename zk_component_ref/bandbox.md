@@ -54,10 +54,20 @@ to represent the popup window as a search dialog.
     </bandbox>
 ```
 
-# Keyboard Navigation bandbox
+# Accessibility
 
-- `Alt+DOWN` to pop up the list.
-- `Alt+UP` or `ESC` to close the list.
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| Alt + ArrowDown | Open the popup. |
+| Alt + ArrowUp / Escape | Close the popup. |
+| Tab | If the input is focused and the popup is opened, move focus to the popup. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties
 

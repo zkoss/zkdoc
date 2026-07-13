@@ -14,6 +14,8 @@ The za11y (zk-accessibility) module enables you to create accessible
 applications. Key features include full keyboard support, assistive
 technologies support, and high-contrast themes.
 
+{% include edition-availability.html edition="pe" %} za11y is a Professional Edition module — it is available in both PE and EE.
+
 To meet accessibility requirements, one key point is to provide semantic
 information about widgets, structures, and behaviors for assistive
 technologies. With the za11y module, ZK widgets will render such
@@ -27,7 +29,7 @@ expectations to deliver complete accessibility.
 This chapter shares with you what the ZK framework has done in terms of
 accessibility in general, and how you can specify additional
 application-specific accessible information. For the details of each
-component, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility/accessibility).
+component, please refer to the **Accessibility** section on that component's page in the [ZK Component Reference]({{site.baseurl}}/zk_component_ref/).
 
 # Enable Accessibility Support
 
@@ -68,7 +70,7 @@ tool, you will see some aria attributes rendered:
        aria-disabled="false" aria-readonly="false">
 ```
 
-Some components render special ARIA attributes, please refer to [ZK Component Reference/Accessibility]({{site.baseurl}}/zk_component_ref/accessibility/accessibility).
+Some components render special ARIA attributes — see the **Accessibility** section on the relevant component's page in the [ZK Component Reference]({{site.baseurl}}/zk_component_ref/).
 
 # Specify ARIA Attributes
 

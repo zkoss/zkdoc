@@ -57,6 +57,39 @@ Set `orient="vertical"` to embed the rangeslider alongside a chart axis or timel
   <rangeslider orient="vertical" startValue="20" endValue="80" markScale="20" />
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Move the slider button. |
+| ArrowLeft / ArrowRight | Move the slider button. |
+| Home / End | Move the slider button to the minimum/maximum. |
+| PageUp / PageDown | Move the slider button in the large step. |
+
+## ARIA Attributes
+
+| Attributes | Description |
+|---|---|
+| data-ariaStartLabel | Describe the the slider button (start). |
+| data-ariaEndLabel | Describe the the slider button (end). |
+| data-largeStep-multiplier (optional) | Describe the moving step of pressing PageUp/PageDown. |
+
+## ARIA Example
+
+```xml
+<zk xmlns:ca="client/attribute">
+  <rangeslider ca:aria-label="range value" ca:data-ariaStartLabel="minimal range value"
+      ca:data-ariaEndLabel="maximal range value"/>
+</zk>
+```
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Orient

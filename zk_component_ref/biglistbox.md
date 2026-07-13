@@ -105,6 +105,20 @@ allow developers to generate any kind of HTML result for display, you
 can use either <i><b>MatrixRenderer</b></i> interface or
 <i><b>Template</b></i> function to render the content for Biglistbox.
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Select items or focus on headers. |
+| ArrowLeft / ArrowRight | Focus on cell or headers. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## autoCols

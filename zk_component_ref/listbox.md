@@ -161,17 +161,6 @@ This mold supports having Listgroups and renders them as HTML `<optgroup>`.
 
 {% include Notice.html text="Listbox doesn't send onClick event for listitem under this mold." %}
 
-# Keyboard Navigation Listbox
-
-- Press `UP` and `DOWN` to move the selection up and down by one list
-  item.
-- Press `PgUp` and `PgDn` to move the selection up and down by one page.
-- Press `HOME` to move the selection to the first item, and `END` to
-  move to the last item.
-- Press `Ctrl+UP` and `Ctrl+DOWN` to move the focus up and down by one
-  list item without changing the selection.
-- Press `SPACE` to select the item in focus.
-
 # Paging
 
 Like grids, you can use multiple pages to represent large content by
@@ -1008,6 +997,29 @@ The following code demonstrates how to freeze a column within a Grid:
 
 - For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
+
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Select Listitems (move the selection up/down by one item) or focus on Listheaders. |
+| ArrowLeft / ArrowRight | Focus on Listcells or Listheaders. |
+| PageUp / PageDown | Move the selection up and down by one page. |
+| Home / End | Move the selection to the first / last item. |
+| Ctrl + ArrowUp / Ctrl + ArrowDown | Move the focus up and down by one item without changing the selection. |
+| Spacebar (on listitem) | Select the item in focus; if the checkmark is enabled, toggle selection of the listitem. |
+| Enter / Spacebar (on listgroup) | Open or close the listgroup. |
+| Enter / Spacebar (on "select all" checkbox) | Select / unselect all. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
+You need to label a Listbox first, then ZK will add `aria-labelledby` on
+the `z-focus-a` button.
 
 # Properties
 

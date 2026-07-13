@@ -30,29 +30,27 @@ An edit box for holding a date. After click on the calender, a
 
 {% include IntegrateMomentjs.md %}
 
-# Keyboard Navigation
-
-- Alt+DOWN to pop up the `calendar.`
-
-<!-- -->
-
-- LEFT, RIGHT, UP and DOWN to change the selected day from the
-  `calendar.`
-
-<!-- -->
-
-- ENTER to activate the selection by copying the selected day to the
-  `datebox` control.
-
-<!-- -->
-
-- Alt+UP or ESC to give up the selection and close the `calendar`.
-
 # Customization
 
 {% include supported-since.html version="5.0.3" %} You can customize the rendering of
 the calendar at the client by JavaScript code that overrides
 [zul.db.Renderer](https://www.zkoss.org/javadoc/latest/jsdoc/variables/zul.db.Renderer.html).
+
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| Alt + ArrowUp / Alt + ArrowDown | Open the date picker popup. |
+| ArrowUp / ArrowDown / ArrowLeft / ArrowRight | (In popup) Navigate the date. |
+| Enter / Spacebar | (In popup) Select the date. |
+| Escape | (In popup) Close the popup. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties
 

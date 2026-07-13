@@ -1,4 +1,4 @@
-# Label a Component
+## Labeling with ARIA
 
 To name a component with ARIA attribute by adding the `aria-label`
 client attribute to the component, please refer to

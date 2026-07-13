@@ -102,6 +102,23 @@ For a custom appearance on each node, see [Organigram Template]({{site.baseurl}}
 </organigram>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp | Moves focus to upper level item. / If an opened item is focused, close it. |
+| ArrowDown | Moves focus to next level item. / If a closed item is focused, open it. |
+| ArrowLeft | Moves focus to the previous sibling. |
+| ArrowRight | Moves focus to the next sibling. |
+| Enter / Spacebar | When the focus item is not selected, select it. When the focus item is selected, toggle its open/close. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 See also [inherited properties from XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Properties).

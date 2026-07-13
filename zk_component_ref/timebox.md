@@ -27,6 +27,20 @@ An edit box for holding a time value. By default it works with a `java.util.Date
 
 {% include IntegrateMomentjs.md %}
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Increase / decrease the value. |
+| ArrowLeft / ArrowRight | Move the input cursor. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## ButtonVisible

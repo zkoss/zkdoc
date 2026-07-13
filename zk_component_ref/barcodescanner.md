@@ -57,6 +57,17 @@ Note: due to Chrome's security policy, starting from Chrome 47,
 getUserMedia() requests are only allowed from secure origins: HTTPS or
 localhost.
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+None.
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Type

@@ -50,6 +50,21 @@ By setting `content` attribute of `<menu>` to create a colorbox in menu.
 </menubar>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown / ArrowLeft / ArrowRight | Navigate colors. |
+| Enter | Select the color. |
+| Escape | Close the popup |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## color

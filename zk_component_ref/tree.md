@@ -169,18 +169,6 @@ Four built in style includes
 Since ZK 7.0.0, the dottree, filetree and vfiletree styles are
 deprecated because designs are changed.
 
-# Keyboard Navigation Tree
-
-- Press `UP` and `DOWN` to move the selection up and down by one tree
-  item.
-- Press `PgUp` and `PgDn` to move the selection up and down by one page.
-- Press `HOME` to move the selection to the first item, and `END` to the
-  last item.
-- Press `RIGHT` to open a tree item, and `LEFT` to close a tree item.
-- Press `Ctrl+UP` and `Ctrl+DOWN` to move the focus up and down by one
-  tree item without changing the selection.
-- Press `SPACE` to select the item in focus.
-
 # Paging
 
 ## Autopaging
@@ -454,6 +442,24 @@ tree.setMultiple(true);
 
 Treecols's header checkmark also support tristate
 ![](/zk_component_ref/images/DefaultTristateTreeModelwithTreecol.png)
+
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Select Treeitems (move the selection up/down by one item) or focus on Treecols. |
+| ArrowLeft / ArrowRight | If the treeitem is openable, toggle the open status (Right opens, Left closes). Focus on Treecell or Treecols. |
+| PageUp / PageDown | Move the selection up and down by one page. |
+| Home / End | Move the selection to the first / last item. |
+| Ctrl + ArrowUp / Ctrl + ArrowDown | Move the focus up and down by one item without changing the selection. |
+| Spacebar | Select the item in focus. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties
 

@@ -41,15 +41,23 @@ ListModel model = new ListModelArray(new String[] {
 </searchbox>
 ```
 
-# Keyboard Navigation Searchbox
+# Accessibility
 
-- `UP` or `DOWN` to pop up the list if being focused.
-- `ESC` to close the list.
-- `UP`, `DOWN`, `HOME`, `END`, `PAGE UP` and `PAGE DOWN` to change the
-  selection of the item from the list.
-- `ENTER` to confirm the change of selection.
-- {% include supported-since.html version="9.5.0" %} `DELETE` or `BACKSPACE` to clear
-  the selection.
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowDown | Open the popup and navigate options. |
+| ArrowUp | Navigate options. |
+| Home / End / PageUp / PageDown | Change the selection of the item in the list. |
+| Enter | Select / confirm the option. |
+| Escape | Close the popup. |
+| Delete / Backspace | Clear the selection. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties
 

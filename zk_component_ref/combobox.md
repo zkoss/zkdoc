@@ -87,14 +87,19 @@ Be aware that a user still can enter a non-existing item.
 - Line 4: When you assign a model object to a component, set the
   selection through the model object e.g. `model.addToSelection()`
 
-# Keyboard Navigation Combobox
+# Accessibility
 
-- `Alt+DOWN` to pop up the list.
-- `Alt+UP` or `ESC` to close the list.
-- `UP` and `DOWN` to change the selection of the items from the list.
-- `ENTER` to confirm the change of selection.
-- `ESC` to abort the change of selection. It is meaningful if
-  `instantSelect` is false.
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| Alt + ArrowDown | Open the popup list. |
+| Alt + ArrowUp / Escape | Close the popup list. |
+| ArrowUp / ArrowDown | Change the selection of the items in the list. |
+| Enter | Confirm the change of selection. |
+| Escape | Abort the change of selection (meaningful if `instantSelect` is false). |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Live Data
 

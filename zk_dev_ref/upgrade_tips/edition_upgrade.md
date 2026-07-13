@@ -106,8 +106,9 @@ In addition to the core ZK features, PE/EE users are given access to use
 certain add-ons and tools according to the package they are on.
 
 For example, the *zuti* module is an EE-only feature and is required if
-you wish to use shadow elements. The *za11y* package is also EE-only and
-is required if you wish to have Web accessibility support. Some features
+you wish to use shadow elements. The *za11y* package is a PE feature
+(available in both PE and EE) and is required if you wish to have Web
+accessibility support. Some features
 are located in the same repository, but others are in a separate
 repository. For example, a EE user can use ZATS Mimic, ZK Spring,
 ThemePack themes and ZK Calendar - they are not packaged in the core ZK.

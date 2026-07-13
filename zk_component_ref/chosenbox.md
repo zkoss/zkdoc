@@ -107,17 +107,23 @@ See also:
 
 {% include   CustomItemRendering.md component=chosenbox %}
 
-# Keyboard Navigation
+# Accessibility
 
-- Press `UP` and `DOWN` to move the focus up and down by one option.
-- Press `LEFT` and `RIGHT` to move focus between selected item(s) and
-  the input field.
-- Press `ESC` to clear input and close drop-down list.
-- Press `DELETE` to delete the focused item and move focus to next item
-  if any or input field.
-- Press `BACKSPACE` to delete the focused item and move focus to
-  previous item if any or input field.
-- Press `ENTER` or `specified separator` to select the focused option.
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowDown | Open the popup and navigate options. |
+| ArrowLeft / ArrowRight | Move focus between selected item(s) and the input field. |
+| Enter / specified separator | Select the focused option. |
+| Escape | Clear input and close the drop-down list. |
+| Delete | Delete the focused item and move focus to the next item (or input field). |
+| Backspace | Delete the focused item and move focus to the previous item (or input field). |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties
 

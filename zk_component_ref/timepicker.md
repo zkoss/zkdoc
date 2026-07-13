@@ -31,6 +31,22 @@ A selection box for holding a time (a java.util.Date Object), but only Hour, Min
 
 {% include IntegrateMomentjs.md %}
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| Alt+Shift+ArrowDown | Open the popup |
+| ArrowUp / ArrowDown | Navigate options |
+| Enter | Select the option |
+| Escape | Close the popup |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Format

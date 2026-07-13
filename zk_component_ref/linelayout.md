@@ -101,6 +101,20 @@ Set `orient="horizontal"` to arrange items left-to-right instead of top-to-botto
   Chrome and Firefox. Please check browser compatibility before using
   it.
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| ArrowUp / ArrowLeft | Moves focus to previous item. |
+| ArrowDown / ArrowRight | Moves focus to next item. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Model

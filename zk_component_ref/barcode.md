@@ -53,6 +53,17 @@ Use EL to bind the `value` attribute to a ViewModel property so the barcode upda
 <barcode type="code128" value="https://www.zkoss.org/" height="100px"/>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+None.
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## type

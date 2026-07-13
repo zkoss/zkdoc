@@ -64,6 +64,25 @@ You can utilize both the `visible` attribute and the `open/close` methods to int
 
 The Drawer component supports the `data-animationspeed` attribute for adjusting the animation speed. Refer to [Data-AnimationSpeed](/zuml_ref/data_animation_speed) for more information.
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+| Key | Description |
+|---|---|
+| Escape | Close the drawer |
+
+## Limitations
+
+| Feature | Description |
+|---|---|
+| Autodrop | This feature only supports mouse. |
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Autodrop

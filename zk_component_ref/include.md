@@ -163,6 +163,26 @@ To use, set the custom attribute on the `<include>` component:
 </include>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
+{% include edition-availability.html edition="pe" %}
+
+## Keyboard Support
+
+- None
+
+## Accessible Markup
+
+To make the included content more semantic, use `enclosingTag` to modify
+the enclosing tag name.
+
+```xml
+<include src="includes/footer.zul" enclosingTag="footer"/>
+```
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Src
