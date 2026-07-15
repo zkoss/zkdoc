@@ -11,30 +11,4 @@ layout: null
   </url>
   {% endunless %}
   {% endfor %}
-
-  <!-- image files -->
-  {% assign image_files = site.static_files | where: "extname", ".png" %}
-  {% assign jpg_files = site.static_files | where: "extname", ".jpg" %}
-  {% assign gif_files = site.static_files | where: "extname", ".gif" %}  
-  {% assign svg_files = site.static_files | where: "extname", ".svg" %}
-  {% for image in image_files %}
-    <url>
-      <loc>{{ site.url }}{{ image.path }}</loc>
-    </url>
-  {% endfor %}
-  {% for image in jpg_files %}
-    <url>
-      <loc>{{ site.url }}{{ image.path }}</loc>
-    </url>
-  {% endfor %}
-  {% for image in gif_files %}
-    <url>
-      <loc>{{ site.url }}{{ image.path }}</loc>
-    </url>
-  {% endfor %}
-  {% for image in svg_files %}
-    <url>
-      <loc>{{ site.url }}{{ image.path }}</loc>
-    </url>
-  {% endfor %}
 </urlset>
