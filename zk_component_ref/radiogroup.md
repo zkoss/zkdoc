@@ -20,7 +20,7 @@ Used to group multiple radio buttons. In one radiogroup, only one radio button m
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_radio.png)
+![Radio](/zk_component_ref/images/ZKComRef_radio.png)
 
 ```xml
 <window title="Radiobox &amp; Radio Demo" width="200px" border="normal">
@@ -78,7 +78,7 @@ radiogroup component to the radio component explicitly by the use of
 or
 [org.zkoss.zul.Radio#setRadiogroup(org.zkoss.zul.Radiogroup)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Radio.html#setRadiogroup(org.zkoss.zul.Radiogroup)).
 
-![](/zk_component_ref/images/ZKComRef_Radiogroup_Grid.png)
+![Radiogroup Grid](/zk_component_ref/images/ZKComRef_Radiogroup_Grid.png)
 
 ```xml
 <zk>
@@ -153,7 +153,7 @@ In the following example, we prepared a ListModel called `strset`,
 assign it to a radigroup using the `model` attribute. Then, the
 radigroup will do the rest.
 
-![](/zk_component_ref/images/Radiogroup.png)
+![Radiogroup](/zk_component_ref/images/Radiogroup.png)
 
 ```xml
     <zscript><![CDATA[

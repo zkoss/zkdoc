@@ -1,6 +1,6 @@
 # Overview
 
-![](images/ZKComDevEss_widget_component_application.png)
+![Widget component application](images/ZKComDevEss_widget_component_application.png)
 
 A UI object visible to a user at the client is hosted by a JavaScript
 object[^1] called a widget

@@ -23,7 +23,7 @@ in a Multislider.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Sliderbuttons.png)
+![Sliderbuttons](/zk_component_ref/images/ZKComRef_Sliderbuttons.png)
 
 ```xml
 <zk>

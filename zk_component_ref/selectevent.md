@@ -19,7 +19,7 @@ It would be very helpful to add the getKeys() method of a MouseEvent to
 SelectEvents. For example, if you're using a listbox and want to detect
 if the CTRL key is being held when one of the listitems is selected.
 
-![](/zk_component_ref/images/ZKComRef_SelectEvent_GetKeys.png)
+![Select Event Get Keys](/zk_component_ref/images/ZKComRef_SelectEvent_GetKeys.png)
 
 ```xml
 <zk>

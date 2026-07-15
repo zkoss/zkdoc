@@ -2,7 +2,7 @@
 title: "Components and Widgets"
 ---
 
-![](images/ZKComDevEss_widget_component_application.png)
+![Widget component application](images/ZKComDevEss_widget_component_application.png)
 
 There are two kind of UI objects: components and widget. A component is
 a Java object running at the server, representing an UI object that an
@@ -22,7 +22,7 @@ client, representing an UI object to interact with the user. To interact
 with the user, a widget has a visual appearance and handle events
 happening at the client.
 
-![](images/ChangeLabelFlow.png)
+![Change Label Flow](images/ChangeLabelFlow.png)
 
 A component and a widget work hand-in-hand to deliver UI to an user and
 to notify the application about a user's activity, such as clicking and
@@ -35,7 +35,7 @@ the client to change the visual appearance, as shown right. When the
 user clicks the button widget, the onClick event will be sent back to
 the server and notify the application.
 
-![](images/WidgetAndComponent2.png)
+![Widget And Component2](images/WidgetAndComponent2.png)
 
 Thought not required, a widget is usually implemented with most
 functions of a component. That means developers can control them
@@ -45,7 +45,7 @@ development cost. For example, an application might hide or change the
 order of columns of a grid at the client, while the application running
 at the server handle the reloading of the whole content of the grid.
 
-![](images/WidgetWithoutComponent.png)
+![Widget Without Component](images/WidgetWithoutComponent.png)
 
 Furthermore, a developer can create a widget at the client, and the
 widget will not have any peer component at the server as shown right.
@@ -83,7 +83,7 @@ the client won't know its existence.
 
 # Widget and DOM
 
-![](images/WidgetComponentDOM.png)
+![Widget Component DOM](images/WidgetComponentDOM.png)
 
 A widget is an UI object at the client. Like Swing's component, creating
 a widget doesn't make it visible to the user. Rather, you have to attach

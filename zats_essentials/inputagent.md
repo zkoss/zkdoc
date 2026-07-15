@@ -10,7 +10,7 @@ cases where components are not able to type in *string* such as
 We will use a todo list application to demonstrate the usage
 of`InputAgent`. Here is the application's UI:
 
-![](images/Smalltalk-MimicLibrary-todolist.png)
+![Smalltalk Mimic Library todolist](images/Smalltalk-MimicLibrary-todolist.png)
 
 The following test case verifies "Add" function, we enter values into 3
 fields: <b>item name</b>, <b>priority</b>, and <b>date</b>, and click
@@ -76,7 +76,7 @@ For example, to achieve auto-complete feature, developers usually
 listens to an onChanging event of a *textbox* and performs
 post-processing.
 
-![](images/Zats-mimic-typing.png)
+![Zats mimic typing](images/Zats-mimic-typing.png)
 
 ```java
 
@@ -88,7 +88,7 @@ desktopAgent.query("textbox").as(InputAgent.class).typing("a");
 `select(int, int)` is used to mark the selection of a range of text by
 starting and ending index (ending index is exclusive).
 
-![](images/Zats-mimic-selection.png)
+![Zats mimic selection](images/Zats-mimic-selection.png)
 
 ```java
 
@@ -103,7 +103,7 @@ operation. Users don't have to care how values are inputted into a
 component, but what the values are. For *slider*, we should pass integer
 as the parameter.
 
-![](images/Zats-mimic-input.png)
+![Zats mimic input](images/Zats-mimic-input.png)
 
 ```java
 

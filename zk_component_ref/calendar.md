@@ -66,7 +66,7 @@ client by providing JavaScript code that overrides
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Calendar_Example.png)
+![Calendar Example](/zk_component_ref/images/ZKComRef_Calendar_Example.png)
 
 ```xml
      <calendar id="cal" onChange="in.value = cal.value"/>
@@ -75,7 +75,7 @@ client by providing JavaScript code that overrides
 
 ## Date Range Selector
 
-![](/zk_component_ref/images/dateRangeSelector.png)
+![Date Range Selector](/zk_component_ref/images/dateRangeSelector.png)
 
 Check
 [calendar.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/input/calendar.zul#L21)
@@ -85,7 +85,7 @@ Check
 This is achieved by overriding the default renderer at the client to
 customize the appearance of days on ZK's Calendar. For example,
 
-![](/zk_component_ref/images/ZKComRef_Calendar_Example2.png)
+![Calendar Example2](/zk_component_ref/images/ZKComRef_Calendar_Example2.png)
 
 ```xml
 <zk>
@@ -108,7 +108,7 @@ Calendar supports to show a week number of the year. <!--REQUIRED ZK EDITION: EE
 {% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="6.5.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Calendar_Week_Of_Year.PNG)
+![Calendar Week Of Year](/zk_component_ref/images/ZKComRef_Calendar_Week_Of_Year.PNG)
 
 ```xml
 <calendar weekOfYear="true" />

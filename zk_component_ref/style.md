@@ -21,7 +21,7 @@ The style component used to specify `CSS` styles for the owner desktop.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Style_Example.png)
+![Style Example](/zk_component_ref/images/ZKComRef_Style_Example.png)
 
 ```xml
 <style> a{ color:red; }</style>

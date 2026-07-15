@@ -94,7 +94,7 @@ Navseparator components. Check other variables from [ here](/zk_style_customizat
 Assume the image below is our target design for Navbar component - no
 border, gradient background, rounded corner or shadow effects.
 
-![](images/styleguide-nav-design.png)
+![Styleguide nav design](images/styleguide-nav-design.png)
 
 ## Implementation Details
 
@@ -231,4 +231,4 @@ border, gradient background, rounded corner or shadow effects.
 
 ## Final result
 
-![](images/styleguide-nav.png)
+![Styleguide nav](images/styleguide-nav.png)

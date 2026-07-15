@@ -41,7 +41,7 @@ component has several advantages:
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Splitlayout_Examples.PNG)
+![Splitlayout Examples](/zk_component_ref/images/ZKComRef_Splitlayout_Examples.PNG)
 
 ```xml
     <splitlayout  vflex="1" hflex="1">

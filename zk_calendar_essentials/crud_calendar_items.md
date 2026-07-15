@@ -59,7 +59,7 @@ UI with user-clicked date/time.
     }
 ```
 
-![](/zk_calendar_essentials/images/creationbox-popup.jpg)
+![Creationbox popup](/zk_calendar_essentials/images/creationbox-popup.jpg)
 
 ## Create New Item
 

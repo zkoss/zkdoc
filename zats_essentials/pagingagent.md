@@ -5,7 +5,7 @@
 *grid*, and *tree* are in "paging" mold, they all have one *paging*
 component inside of them as shown in the image below:
 
-![](images/Zats-mimic-paging.png)
+![Zats mimic paging](images/Zats-mimic-paging.png)
 
 You don't need to add *paging* component in a ZUL explicitly because
 it's auto-created. Query it by selector syntax and convert it to a

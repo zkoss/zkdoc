@@ -95,7 +95,7 @@ variables from [ here](/zk_style_customization_guide/zk_less_variables).
 Assume the image below is our target design for Window component. No
 border, gradient background, rounded corner or shadow effects.
 
-![](images/styleguide-window-design.png)
+![Styleguide window design](images/styleguide-window-design.png)
 
 ## Implementation Details
 
@@ -202,4 +202,4 @@ border, gradient background, rounded corner or shadow effects.
 
 ## Final result
 
-![](images/styleguide-window.png)
+![Styleguide window](images/styleguide-window.png)

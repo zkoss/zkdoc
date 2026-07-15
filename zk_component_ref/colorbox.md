@@ -21,7 +21,7 @@ A Colorbox used to retrieve an input that the user can select a color.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Colorbox_Examples.PNG)
+![Colorbox Examples](/zk_component_ref/images/ZKComRef_Colorbox_Examples.PNG)
 
 ```xml
 <colorbox color="#FFFFFF" />
@@ -37,7 +37,7 @@ Pressing left, right, up, or down arrow keys to change the selected color.
 
 By setting `content` attribute of `<menu>` to create a colorbox in menu.
 
-![](/zk_component_ref/images/ZKComRef_Colorbox_Examples2.PNG)
+![Colorbox Examples2](/zk_component_ref/images/ZKComRef_Colorbox_Examples2.PNG)
 
 ```xml
 <menubar id="menubar" >

@@ -52,12 +52,12 @@ Another example, it will detect the drag action:
 </zk>
 ```
 
-**Drop area** ![](/zk_component_ref/images/initial-run.png)
+**Drop area** ![Initial run](/zk_component_ref/images/initial-run.png)
 
-**File dragged over area** ![](/zk_component_ref/images/dragged-over.png)
+**File dragged over area** ![Dragged over](/zk_component_ref/images/dragged-over.png)
 
 **Image uploaded and displayed**
-![](/zk_component_ref/images/uploaded-image.png)
+![Uploaded image](/zk_component_ref/images/uploaded-image.png)
 
 # Properties
 
@@ -75,8 +75,8 @@ Specifies the [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Bas
 
 Attaches the `Dropupload` component to another component so that it overlays that component when the user drags and drops files into the browser — similar to the Gmail attachment-drop behaviour. Set the value to a ZUL EL expression that resolves to the target component.
 
-![](/zk_component_ref/images/Dropupload_Anchor.png)
-![](/zk_component_ref/images/Dropupload_Anchor_1.png)
+![Dropupload Anchor](/zk_component_ref/images/Dropupload_Anchor.png)
+![Dropupload Anchor 1](/zk_component_ref/images/Dropupload_Anchor_1.png)
 
 ```xml
 <zk>
@@ -198,14 +198,14 @@ Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/button#Fil
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
-![](/zk_component_ref/images/DefaultFileUploadVeiwer.JPG)
+![Default File Upload Veiwer](/zk_component_ref/images/DefaultFileUploadVeiwer.JPG)
 
 Alternatively, developers can also design customized File Viewer by
 implementing a JavaScript class to handle the display screen when
 uploading files. Below is an example of a customized file viewer where
 the progress bar is shown at the bottom of the browser.
 
-![](/zk_component_ref/images/CustomizedFileUploadVeiwer.JPG)
+![Customized File Upload Veiwer](/zk_component_ref/images/CustomizedFileUploadVeiwer.JPG)
 
 ```javascript
 foo.MyFileViewer = zk.$extends(zk.Object, {

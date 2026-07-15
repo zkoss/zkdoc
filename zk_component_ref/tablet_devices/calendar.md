@@ -14,7 +14,7 @@ with client/attribute.
 <calendar xmlns:ca="client/attribute" ca:data-swipeable="true" />
 ```
 
-![](/zk_component_ref/images/Calendar_Tablet_Example.png)
+![Calendar Tablet Example](/zk_component_ref/images/Calendar_Tablet_Example.png)
 
 # Version History
 

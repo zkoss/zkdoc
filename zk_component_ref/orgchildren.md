@@ -37,7 +37,7 @@ children.
 
 # Example
 
-![](/zk_component_ref/images/Orgchildren_example.png)
+![Orgchildren example](/zk_component_ref/images/Orgchildren_example.png)
 
         <organigram width="600px">
             <orgchildren>

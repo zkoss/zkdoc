@@ -24,7 +24,7 @@ width/height/hflex/vflex in Auxheader.
 
 An auxiliary header.
 
-![](/zk_component_ref/images/ZKComRef_Auxheader.png)
+![Auxheader](/zk_component_ref/images/ZKComRef_Auxheader.png)
 
 ```xml
 
@@ -146,13 +146,13 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
+![Auxheader rowspan limitation](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
+![Auxheader rowspan limitation01](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
@@ -180,7 +180,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
+![Auxheader rowspan limitation02](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component depend
 on the Column component. Thus, if you'd like to specify the width in the
@@ -213,7 +213,7 @@ empty Columns component invisible. For example,
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
+![Auxheader rowspan limitation03](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
 
 # Supported Events
 

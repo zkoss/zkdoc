@@ -96,7 +96,7 @@ Use `nonselectableTags` to prevent clicks on buttons or links inside tree cells 
 
 ## 2-Column Tree
 
-![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
+![Tree Example](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px" >
@@ -144,7 +144,7 @@ Use `nonselectableTags` to prevent clicks on buttons or links inside tree cells 
 
 ## Default Selection
 
-![](/zk_component_ref/images/tree_onAfterRender.png)
+![Tree on After Render](/zk_component_ref/images/tree_onAfterRender.png)
 
 ```xml
     <zscript><![CDATA[
@@ -329,7 +329,7 @@ the model instead of the tree itself.
 
 ## The Checkmark Property
 
-![](/zk_component_ref/images/ZKComRef_Tree_checkmark.png)
+![Tree checkmark](/zk_component_ref/images/ZKComRef_Tree_checkmark.png)
 
 The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each tree item. If the `multiple` attribute is
@@ -441,7 +441,7 @@ tree.setMultiple(true);
 ```
 
 Treecols's header checkmark also support tristate
-![](/zk_component_ref/images/DefaultTristateTreeModelwithTreecol.png)
+![Default Tristate Tree Modelwith Treecol](/zk_component_ref/images/DefaultTristateTreeModelwithTreecol.png)
 
 # Accessibility
 
@@ -750,7 +750,7 @@ A tree will be scrollable if you specify the rows attribute or the
 height attribute and there is not enough space to display all the tree
 items.
 
-![](/zk_component_ref/images/scrollable_tree.png)
+![Scrollable tree](/zk_component_ref/images/scrollable_tree.png)
 
 ```xml
 <tree rows="4">
@@ -964,8 +964,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/tree_mold_default.png) |
-| paging | ![](/zk_component_ref/images/tree_mold_paging.png) |
+| default | ![Tree mold default](/zk_component_ref/images/tree_mold_default.png) |
+| paging | ![Tree mold paging](/zk_component_ref/images/tree_mold_paging.png) |
 
 # Supported Children
 

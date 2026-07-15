@@ -31,7 +31,7 @@ a notification will pop up.
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Textbox.png)
+![Textbox](/zk_component_ref/images/ZKCompRef_Textbox.png)
 
 ```xml
 <textbox value="text..." />
@@ -87,7 +87,7 @@ Sets the number of visible text lines. The value must be greater than `0`; passi
 By specifying a true, the tabbox can insert a long space or format the
 content inside textbox conveniently. For example,
 
-![](/zk_component_ref/images/ZKComRef_Textbox_Tabbable.png)
+![Textbox Tabbable](/zk_component_ref/images/ZKComRef_Textbox_Tabbable.png)
 
 ```xml
 <textbox tabbable="true"/>
@@ -140,8 +140,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/ZKCompRef_Textbox.png) |
-| rounded | ![](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+| default | ![Textbox](/zk_component_ref/images/ZKCompRef_Textbox.png) |
+| rounded | ![Spinner mold rounded](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

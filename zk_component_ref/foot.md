@@ -17,7 +17,7 @@ Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/footer)) 
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Foot_Example.png)
+![Foot Example](/zk_component_ref/images/ZKComRef_Foot_Example.png)
 
 ```xml
 <grid width="300px">

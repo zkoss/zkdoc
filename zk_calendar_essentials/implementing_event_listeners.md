@@ -20,7 +20,7 @@ cell.
 
 This event is triggered when a user clicks on an existing calendar item.
 
-![](/zk_calendar_essentials/images/onitemedit.gif) Event name in 2.1:
+![Onitemedit](/zk_calendar_essentials/images/onitemedit.gif) Event name in 2.1:
 [ON_EVENT_EDIT(onEventEdit)](https://www.zkoss.org/javadoc/zkcal/2.1.5/org/zkoss/calendar/event/CalendarsEvent.html#ON_EVENT_EDIT)
 
 ## [CalendarsEvent.ON_ITEM_UPDATE](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/event/CalendarsEvent.html#ON_ITEM_UPDATE)
@@ -28,9 +28,9 @@ This event is triggered when a user clicks on an existing calendar item.
 This event is triggered when a user drags to change a calendar item's
 time span or drags to move the item to a different date.
 
-![](/zk_calendar_essentials/images/onitemupdate.gif)
+![Onitemupdate](/zk_calendar_essentials/images/onitemupdate.gif)
 
-![](/zk_calendar_essentials/images/onitemupdate2.gif)
+![Onitemupdate2](/zk_calendar_essentials/images/onitemupdate2.gif)
 
 Event name in 2.1:
 [`ON_EVENT_UPDATE(onEventUpdate)`](https://www.zkoss.org/javadoc/zkcal/2.1.5/org/zkoss/calendar/event/CalendarsEvent.html#ON_EVENT_UPDATE)
@@ -40,7 +40,7 @@ Event name in 2.1:
 It's fired when you hover a mouse on a calendar item. Listen to this
 event to show a tooltip for an item.
 
-![](/zk_calendar_essentials/images/onitemtooltip.jpg)
+![Onitemtooltip](/zk_calendar_essentials/images/onitemtooltip.jpg)
 
 ```java
     @Listen(CalendarsEvent.ON_ITEM_TOOLTIP +"= calendars")
@@ -54,7 +54,7 @@ event to show a tooltip for an item.
 Calendars fires this event when you click the week number of the year on
 the left-hand side when you set [ weekOfYear="true"]({{site.baseurl}}/zk_calendar_essentials/component_attributes#weekOfYear).
 
-![](/zk_calendar_essentials/images/OnWeekClick.gif)
+![On Week Click](/zk_calendar_essentials/images/OnWeekClick.gif)
 
 An Event object is passed to your event listener.
 
@@ -63,7 +63,7 @@ An Event object is passed to your event listener.
 Calendars fires this event when you click when a user clicks on the date
 texts (TUE 10/3) on the top of the component.
 
-![](/zk_calendar_essentials/images/OnDayClick.gif)
+![On Day Click](/zk_calendar_essentials/images/OnDayClick.gif)
 
 It passes an [Event object](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html),
 not CalendarsEvent, to your event listener, and you can get the clicked

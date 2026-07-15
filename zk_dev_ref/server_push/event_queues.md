@@ -13,7 +13,7 @@ subscribing, a receiving module (subscriber) receives messages that the
 subscriber has registered an interest in, without explicitly specifying
 or knowing the publisher.
 
-![]({{site.baseurl}}/zk_dev_ref/images/eventqueue-concept.jpg)
+![Eventqueue concept]({{site.baseurl}}/zk_dev_ref/images/eventqueue-concept.jpg)
 
 ZK generalizes the event queue to support the server push. The use is
 straightforward: specifying the scope of a given event queue as

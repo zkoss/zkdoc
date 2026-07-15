@@ -20,7 +20,7 @@ Default getSclass(): the same as grid's sclass.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Group_Example.png)
+![Group Example](/zk_component_ref/images/ZKComRef_Group_Example.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

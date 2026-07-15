@@ -5,7 +5,7 @@ triggered by clicking a button. If you click the "Save" button, the
 application will save your input and show a notification box.
 
 **Click "Save" button**
-![](/zk_essentials/images/ze-ch5-save.png)
+![Save](/zk_essentials/images/ze-ch5-save.png)
 
 In this section, we will demonstrate a more flexible way to define an
 event listener in a controller with [`@Listen`]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners) other than

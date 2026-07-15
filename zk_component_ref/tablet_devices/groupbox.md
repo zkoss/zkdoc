@@ -20,7 +20,7 @@ For example,
 <groupbox contentStyle="overflow:auto">
 ```
 
-![](/zk_component_ref/images/Groupbox_Tablet_Scrolling_Example.png)
+![Groupbox Tablet Scrolling Example](/zk_component_ref/images/Groupbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

@@ -32,7 +32,7 @@ of the following attributes:
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Popup.PNG)
+![Popup](/zk_component_ref/images/ZKComRef_Popup.PNG)
 
 ```xml
 <separator bar="true" />
@@ -46,7 +46,7 @@ of the following attributes:
 </popup>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Popup2.PNG)
+![Popup2](/zk_component_ref/images/ZKComRef_Popup2.PNG)
 
 ```xml
 <textbox popup="popup, position=after_start"/>
@@ -75,7 +75,7 @@ by
 {% include supported-since.html version="6.0.1" %} ZK supports the following position
 string:
 
-![](/zk_component_ref/images/ZKComRef_Popup_Position_601.png)
+![Popup Position 601](/zk_component_ref/images/ZKComRef_Popup_Position_601.png)
 
 overlap, overlap_end, overlap_before, overlap_after are kept (still
 available) for backward compatibility. They are identical with top_left,
@@ -85,7 +85,7 @@ top_right, bottom_left, and bottom_right, respectively.
 
 The 14 possible positions are provided below:
 
-![](/zk_component_ref/images/ZKComRef_Popup_Position.png)
+![Popup Position](/zk_component_ref/images/ZKComRef_Popup_Position.png)
 
 The following illustrates the simplicity of usage,
 
@@ -99,7 +99,7 @@ The following illustrates the simplicity of usage,
 Upon clicking the button the popup component will appear in the relative
 position specified. In this case the position is just above the button.
 
-![](/zk_component_ref/images/ZKComRef_Popup_Beforestart.png)
+![Popup Beforestart](/zk_component_ref/images/ZKComRef_Popup_Beforestart.png)
 
 ## Methods
 

@@ -9,7 +9,7 @@
 
 Big icons for tablet devices
 
-![](/zk_component_ref/images/Colorbox_Tablet_Example.png)
+![Colorbox Tablet Example](/zk_component_ref/images/Colorbox_Tablet_Example.png)
 
 # Version History
 

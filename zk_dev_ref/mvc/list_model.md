@@ -18,7 +18,7 @@ writing a custom renderer.
 
 # Model-driven Rendering
 
-![]({{site.baseurl}}/zk_dev_ref/images/drlistmodelrenderer.png)
+![Drlistmodelrenderer]({{site.baseurl}}/zk_dev_ref/images/drlistmodelrenderer.png)
 
 As shown, the listbox retrieves elements from the specified model. To optimize performance, ZK uses a mechanism called **Live Data** (or **Render on Demand**) where the listbox only retrieves elements that are currently visible at the client, such as those on the active page. After retrieval, it then invokes the renderer, if specified, to compose the [listitem]({{site.baseurl}}/zk_component_ref/listitem) for the element.
 

@@ -109,7 +109,7 @@ the component inside the form and then specify the `name` property.
 Thus, when the form is submitted, the value of, say, the datebox will be
 sent together with the name you specified. For example,
 
-![]({{site.baseurl}}/zk_dev_ref/images/drform.png)
+![Drform]({{site.baseurl}}/zk_dev_ref/images/drform.png)
 
 ```xml
 <window title="Submit" border="normal" xmlns:n="native">
@@ -189,7 +189,7 @@ items, then multiple name/value pairs are posted.
  </listbox>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/html_5.png)
+![Html 5]({{site.baseurl}}/zk_dev_ref/images/html_5.png)
 
 If both John and Henry are selected, then the query string will contain:
 

@@ -23,7 +23,7 @@ button.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Treeitem.png)
+![Treeitem](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
 ```xml
 

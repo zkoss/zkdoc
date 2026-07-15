@@ -21,7 +21,7 @@ called automatic timeout.
 By default, a message is shown to prompt the user and prevent from
 further accessing as depicted below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drsesstimeout.png)
+![Drsesstimeout]({{site.baseurl}}/zk_dev_ref/images/drsesstimeout.png)
 
 ## Custom Message
 

@@ -5,7 +5,7 @@ function. Additionally, developers also have to maintain multiple pages
 that have similar contents but applying a template zul can reduce this problem.
 
 **Page-based Navigation**
-![]({{site.baseurl}}/zk_essentials/images/ze-ch7-page-based-navigation.png)
+![Page based navigation]({{site.baseurl}}/zk_essentials/images/ze-ch7-page-based-navigation.png)
 
 
 To build a page-based navigation, first you should prepare corresponding pages for those items in the sidebar.
@@ -13,7 +13,7 @@ To build a page-based navigation, first you should prepare corresponding pages f
 From below image, you can see there are 4 zul pages which correspond
 to items in the sidebar under "pagebased" folder (index-profile-mvc.zul, index-profile-mvvm.zul, index-todolist-mvc.zul, index-todolist-mvvm.zul). Then we can link four items of the sidebar to these zul pages by redirecting a browser.
 
-![]({{site.baseurl}}/zk_essentials/images/ze-ch7-pagebased.png)
+![Pagebased]({{site.baseurl}}/zk_essentials/images/ze-ch7-pagebased.png)
 
 Next, we apply the template zul created before on those 4 pages. As you can see in previouse `template.zul`, in order to inject different content in the `<center>` area, we apply a template named `center` that is not declared in the `template.zul`. Therefore, We can decalre `center` template with different path to inject different content with the same layout.
 

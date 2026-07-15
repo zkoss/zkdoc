@@ -19,7 +19,7 @@ or visit [JETBRAINS Marketplace](https://plugins.jetbrains.com/plugin/7855-zk/)
     Or from the welcome screen: select Configure \> Plugins  
       
 3.  Type **ZK** into the search bar, and then install it.  
-    ![](images/ZKInstallationGuide_IntelliJ_InstallZKPlugin.png)  
+    ![ZKInstallation Guide Intelli J Install ZKPlugin](images/ZKInstallationGuide_IntelliJ_InstallZKPlugin.png)  
       
 4.  After installation, restart IntelliJ when prompted to activate the
     plugin.
@@ -31,32 +31,32 @@ or visit [JETBRAINS Marketplace](https://plugins.jetbrains.com/plugin/7855-zk/)
 2.  On the New Project wizard, select a "Project SDK", check "Create
     from archetype", scroll to the end of the list, select a ZK
     archetype, and press "Next" to create a project.  
-    ![](images/ZKInstallationGuide_IntelliJ_SelectNewZKProject.png)  
+    ![ZKInstallation Guide Intelli J Select New ZKProject](images/ZKInstallationGuide_IntelliJ_SelectNewZKProject.png)  
       
 3.  Fill in the information about your project and press "Next".  
-    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png)  
+    ![ZKInstallation Guide Intelli J Create New ZKProject1](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject1.png)  
       
 4.  Check all the information about your project and press "Next".  
-    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png)  
+    ![ZKInstallation Guide Intelli J Create New ZKProject2](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject2.png)  
       
 5.  Fill in the project location and press "Finish".  
-    ![](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png)  
+    ![ZKInstallation Guide Intelli J Create New ZKProject3](images/ZKInstallationGuide_IntelliJ_CreateNewZKProject3.png)  
       
 # Run the ZK Project
 
 1.  On IntelliJ main menu bar, select Run \> "Edit Configurations"  
       
 2.  Press the plus icon "+" to add a maven runtime  
-    ![](images/ZKInstallationGuide_IntelliJ_RunZKProject1.png)  
+    ![ZKInstallation Guide Intelli J Run ZKProject1](images/ZKInstallationGuide_IntelliJ_RunZKProject1.png)  
       
 3.  Fill in the project information and type "jetty:run" into the
     "Command Line" field, and then press "Apply" and "OK"  
-    ![](images/ZKInstallationGuide_IntelliJ_RunZKProject2.png)  
+    ![ZKInstallation Guide Intelli J Run ZKProject2](images/ZKInstallationGuide_IntelliJ_RunZKProject2.png)  
       
 4.  Press the green run button to run a jetty server with the project  
-    ![](images/ZKInstallationGuide_IntelliJ_RunZKProject3.png)  
+    ![ZKInstallation Guide Intelli J Run ZKProject3](images/ZKInstallationGuide_IntelliJ_RunZKProject3.png)  
       
 5.  Visit the link "<http://localhost:8080/test/index.zul>" on your
     browser  
-    ![](images/ZKInstallationGuide_IntelliJ_RunZKProject4.png)  
+    ![ZKInstallation Guide Intelli J Run ZKProject4](images/ZKInstallationGuide_IntelliJ_RunZKProject4.png)  
       

@@ -23,7 +23,7 @@ A selection box for holding a time (a java.util.Date Object), but only Hour, Min
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Timepicker.png)
+![Timepicker](/zk_component_ref/images/ZKCompRef_Timepicker.png)
 
 ```xml
 <timepicker/>

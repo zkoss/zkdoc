@@ -16,7 +16,7 @@ absolutechildren components.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Absolutelayout_Example.png)
+![Absolutelayout Example](/zk_component_ref/images/ZKComRef_Absolutelayout_Example.png)
 
 ```xml
 <?component name="window" extends="window" border="normal" width="300px" height="300px"?>

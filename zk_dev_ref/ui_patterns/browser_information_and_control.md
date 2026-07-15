@@ -109,7 +109,7 @@ After activating, when the user tries to leave a page, a browser will
 show a confirmation dialog (each browser has its own default dialog with
 a default message):
 
-![]({{site.baseurl}}/zk_dev_ref/images/confirmclose.png)
+![Confirmclose]({{site.baseurl}}/zk_dev_ref/images/confirmclose.png)
 
 To disable the confirmation dialog, just invoke
 [org.zkoss.zk.ui.util.Clients#confirmClose(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/Clients.html#confirmClose(java.lang.String))

@@ -11,7 +11,7 @@ enjoys a boost.)
 
 Notice that you can [ enable this feature in different scopes]({{site.baseurl}}/zk_config_ref/the_library_properties).
 
-![]({{site.baseurl}}/zk_dev_ref/images/Rod_demonstration.gif)
+![Rod demonstration]({{site.baseurl}}/zk_dev_ref/images/Rod_demonstration.gif)
 
 # Grid
 

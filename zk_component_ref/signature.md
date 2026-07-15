@@ -23,7 +23,7 @@ it also provides undo, save and clear methods.
 
 # Example
 
-![](/zk_component_ref/images/Signature.png)
+![Signature](/zk_component_ref/images/Signature.png)
 
 ```xml
 <signature width="600px" height="300px" penColor="white" backgroundColor="#AED6F1" penSize="6"/>
@@ -159,11 +159,11 @@ message after icons on the buttons, we provide three attributes:
 
 Default:
 
-![](/zk_component_ref/images/Signature_toolbar.png)
+![Signature toolbar](/zk_component_ref/images/Signature_toolbar.png)
 
 Customized:
 
-![](/zk_component_ref/images/Signature_toolbar2.png)
+![Signature toolbar2](/zk_component_ref/images/Signature_toolbar2.png)
 
 ```xml
 <signature undoLabel="Undo" clearLabel="Clear" saveLabel="Save"/>
@@ -172,7 +172,7 @@ Customized:
 ## Scanned Paper Form
 
 You can load a scanned paper form as a background and save it with a
-signature. ![](/zk_component_ref/images/Paper-form.jpg)
+signature. ![Paper form](/zk_component_ref/images/Paper-form.jpg)
 
 # Saves Signature Image
 

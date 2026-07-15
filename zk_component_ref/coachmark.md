@@ -69,7 +69,7 @@ Use the `position` attribute to place the coachmark dialog relative to its targe
 
 ## Basic
 
-![](/zk_component_ref/images/Coachmark-4.png)
+![Coachmark 4](/zk_component_ref/images/Coachmark-4.png)
 
 ```xml
     <button id="infoButton" label="Information" />
@@ -121,7 +121,7 @@ The target component that the Coachmark will point itself to. You need
 to specify a component's id or an EL expression that resolved to a
 component e.g. `${self.previousSibling}`
 
-![](/zk_component_ref/images/Coachmark-1.png)
+![Coachmark 1](/zk_component_ref/images/Coachmark-1.png)
 
 ```xml
     <button id="infoButton" label="button"/>

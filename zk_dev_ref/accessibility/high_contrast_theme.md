@@ -12,4 +12,4 @@ them using [axe - Web Accessibility Testing](https://chrome.google.com/webstore/
 
 To know more details, please refer to [ Accessibility-ready themes]({{site.baseurl}}/zk_dev_ref/theming_and_styling/zk_official_themes#Accessibility-ready_themes)
 
-![]({{site.baseurl}}/zk_dev_ref/images/wcag_themes.png)
+![Wcag themes]({{site.baseurl}}/zk_dev_ref/images/wcag_themes.png)

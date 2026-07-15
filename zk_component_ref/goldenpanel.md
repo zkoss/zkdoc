@@ -56,7 +56,7 @@ Listen to `onAreaRename` on the `<goldenpanel>` to synchronize your application 
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
+![Golden Layout](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
 
 ```xml
     <goldenlayout vflex="1" hflex="1">

@@ -52,7 +52,7 @@ Update `vm.notice` in a ViewModel and notify the binding; ZK pushes the new mark
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Html.png)
+![Html](/zk_component_ref/images/ZKComRef_Html.png)
 
 ```xml
  <window id="win" title="Html Demo" border="normal">

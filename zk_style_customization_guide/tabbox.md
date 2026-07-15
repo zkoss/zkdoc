@@ -138,10 +138,10 @@ Assume the image below is our target design for Tabbox component.
 
 - Default Mold
     
-  ![](images/styleguide-tabbox-design.png)
+  ![Styleguide tabbox design](images/styleguide-tabbox-design.png)
 - Accordion Mold
     
-  ![](images/styleguide-accordion-design.png)
+  ![Styleguide accordion design](images/styleguide-accordion-design.png)
 
 ## Implementation Details
 
@@ -331,7 +331,7 @@ Assume the image below is our target design for Tabbox component.
 
 - Default Mold
     
-  ![](images/styleguide-tabbox.png)
+  ![Styleguide tabbox](images/styleguide-tabbox.png)
 - Accordion Mold
     
-  ![](images/styleguide-accordion.png)
+  ![Styleguide accordion](images/styleguide-accordion.png)

@@ -33,4 +33,4 @@ to activate it, then the validation works without writing any code in a controll
 Then, the input component will show the specified error message when an
 input value violates a specified constraint rule.
 
-![ ]({{site.baseurl}}/zk_essentials/images/ze-ch5-email-constraint.png)
+![Email constraint]({{site.baseurl}}/zk_essentials/images/ze-ch5-email-constraint.png)

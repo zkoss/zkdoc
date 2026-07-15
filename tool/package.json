@@ -22,7 +22,9 @@
     "check-since-marks-verbose": "node check-missing-since-marks.js --verbose",
     "lint-docs": "node lint/lint-docs.js",
     "lint-docs-fix": "node lint/lint-docs.js --fix",
-    "lint-rendered": "node lint/lint-rendered.js"
+    "lint-rendered": "node lint/lint-rendered.js",
+    "fix-alt-text": "node fix-alt-text.js",
+    "fix-alt-text-apply": "node fix-alt-text.js --apply"
   },
   "keywords": [],
   "author": "",

@@ -11,6 +11,7 @@
  * Rules:
  *   ZK001  liquid-in-table-cell  — block-level {% include %} inside table row
  *   ZK002  blank-line-issues     — blank lines inside tables, missing around fences, 2+ consecutive blanks
+ *   ZK003  missing-alt-text      — Markdown image with empty/whitespace alt text
  */
 
 const fs = require('fs');
@@ -20,6 +21,7 @@ const { glob } = require('glob');
 const { DOCS_DIRECTORIES } = require('./rules/docs-dirs');
 const { check: checkZK001 } = require('./rules/liquid-in-table-cell');
 const { check: checkZK002, fix: fixZK002 } = require('./rules/blank-line-issues');
+const { check: checkZK003 } = require('./rules/missing-alt-text');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const INCLUDES_DIR = path.join(REPO_ROOT, '_includes');
@@ -76,7 +78,8 @@ async function main() {
 
         const issues001 = checkZK001(lines, INCLUDES_DIR);
         const issues002 = checkZK002(lines);
-        const allIssues = [...issues001, ...issues002].sort((a, b) => a.lineNumber - b.lineNumber);
+        const issues003 = checkZK003(lines);
+        const allIssues = [...issues001, ...issues002, ...issues003].sort((a, b) => a.lineNumber - b.lineNumber);
 
         if (allIssues.length > 0) {
             filesWithIssues++;

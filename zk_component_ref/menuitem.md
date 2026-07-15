@@ -39,7 +39,7 @@ been enhanced and can be customized easily.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Menuitem.png)
+![Menuitem](/zk_component_ref/images/ZKComRef_Menuitem.png)
 
 ```xml
 <menubar>

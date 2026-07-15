@@ -86,7 +86,7 @@ will be used.
 
 This will result in a Pivottable that looks like
 
-![](images/ZKPivotEsn_work_pivot_01.png)
+![ZKPivot Esn work pivot 01](images/ZKPivotEsn_work_pivot_01.png)
 
 Of course, to utilize the power of Pivottable, you can specify multiple
 fields as column, row, and data fields.
@@ -107,7 +107,7 @@ model.setFieldType("Mileage", PivotField.Type.DATA);
 
 Now the Pivottable shall look like
 
-![](images/ZKPivotEsn_work_pivot_11.png)
+![ZKPivot Esn work pivot 11](images/ZKPivotEsn_work_pivot_11.png)
 
 Note:
 

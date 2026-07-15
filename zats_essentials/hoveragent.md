@@ -5,8 +5,8 @@
 You have to query the target component agent first, then call
 `moveOver()` or `moveOut()`
 
-![](images/Zats-mimic-moveOver.png)
-![](images/Zats-mimic-moveOut.png)
+![Zats mimic move Over](images/Zats-mimic-moveOver.png)
+![Zats mimic move Out](images/Zats-mimic-moveOut.png)
 
 ```java
 

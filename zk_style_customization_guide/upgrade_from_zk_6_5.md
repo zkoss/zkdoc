@@ -149,7 +149,7 @@ In ZK 6.5, several components use a 3 x 3 grid structure(see image
 bellow) to achieve the rounded corner style. In ZK 7, we applied CSS 3,
 therefore, the complex 3 x 3 grid structure is no longer needed.
 
-![](images/Button2.png)
+![Button2](images/Button2.png)
 
 ## Upgrade Sample
 
@@ -347,8 +347,8 @@ to slide indicator. Therefore, we need to override CSS class as follows:
 
 You can check the customized result.
 
-| ![](images/ZK7_scrollbar_1.png) | ZK 7 default scrollbar style |
-| ![](images/ZK7_scrollbar_2.png) | Customized scrollbar style |
+| ![ZK7 scrollbar 1](images/ZK7_scrollbar_1.png) | ZK 7 default scrollbar style |
+| ![ZK7 scrollbar 2](images/ZK7_scrollbar_2.png) | Customized scrollbar style |
 
 ## Use Browser Default scrollbar
 

@@ -116,7 +116,7 @@ Then, we can put them together in a ZUML document:
 
 Then, the result:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drtreemodel2.png)
+![Drtreemodel2]({{site.baseurl}}/zk_dev_ref/images/drtreemodel2.png)
 
 Notice that you can manipulate the tree dynamically (such as adding a
 node with
@@ -373,7 +373,7 @@ Then, we assign this model to a tree:
 
 And, the result looks like this:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drtreemodel1.png)
+![Drtreemodel1]({{site.baseurl}}/zk_dev_ref/images/drtreemodel1.png)
 
 # Sorting
 
@@ -501,7 +501,7 @@ The [org.zkoss.zul.DefaultTreeNode](https://www.zkoss.org/javadoc/latest/zk/org/
 ZK renders a rotating triangle to expand/collapse a node in front of a
 branch node, but a leaf node doesn't have that triangle.
 
-![]({{site.baseurl}}/zk_dev_ref/images/leafbranch.jpg)
+![Leafbranch]({{site.baseurl}}/zk_dev_ref/images/leafbranch.jpg)
 
 If you want to display a leaf node, you should use
 `DefaultTreeNode(data)`, otherwise even if you provide a zero-size list

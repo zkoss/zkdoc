@@ -15,7 +15,7 @@ attribute.
 <listbox mold="paging" pageSize="5" xmlns:ca="client/attribute" ca:data-swipeable="true"></listbox>
 ```
 
-![](/zk_component_ref/images/Paging_Tablet_Example.png)
+![Paging Tablet Example](/zk_component_ref/images/Paging_Tablet_Example.png)
 
 # Version History
 

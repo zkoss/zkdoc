@@ -26,15 +26,15 @@ and Silvertail, click image to view the original size.
 
 **Breeze**
 
-![](/zk_dev_ref/images/breeze_look_and_feel.png) 
+![Breeze look and feel](/zk_dev_ref/images/breeze_look_and_feel.png) 
 
 **Sapphire**
 
-![](/zk_dev_ref/images/sapphire_look_and_feel.png)
+![Sapphire look and feel](/zk_dev_ref/images/sapphire_look_and_feel.png)
 
 **Silvertail**
 
-![](/zk_dev_ref/images/silvertail_look_and_feel.png)
+![Silvertail look and feel](/zk_dev_ref/images/silvertail_look_and_feel.png)
 
 # Flat Design Theme (Deprecated): Atlantic
 {% include DeprecatedSince.md version="10.0.0" %}, use [ZK Theme Pack](#zk-theme-pack) instead.
@@ -48,7 +48,7 @@ supports both desktop and tablets.
 See below to take a quick view at the look and feel of **Atlantic**,
 click image to view original size.
 
-![](/zk_dev_ref/images/atlantic_look_and_feel.png)
+![Atlantic look and feel](/zk_dev_ref/images/atlantic_look_and_feel.png)
 
 ## Not to Import Google Font
 
@@ -80,13 +80,13 @@ Then apply a theme according to [ZK Developer's Reference/Theming and Styling/Sw
 
 Iceblue(**default**), Poppy, Marigold, Olive, Aurora, Lavender
 
-![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_lite.png)
+![Zk85 theme lite]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_lite.png)
 
 ## Dark themes
 
 Ruby, Amber, Emerald, Aquamarine, Montana, Violet
 
-![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_dark.png)
+![Zk85 theme dark]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_dark.png)
 
 ## Mix-match
 
@@ -94,7 +94,7 @@ Cheese and Wine, Winter Spring, Blueberry and Raspberry, Macaron, Deep
 Sea, Garden Salad, Zen, Mysterious Green, Cardinal, Space Black, Office
 and Material
 
-![]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_mix.png)
+![Zk85 theme mix]({{site.baseurl}}/zk_dev_ref/images/zk85_theme_mix.png)
 
 ## Accessibility-ready themes
 
@@ -104,7 +104,7 @@ theme, you will also need to include the za11y (zk-accessibility) module
 to your project. Read [Developer's Reference/Accessibility]({{site.baseurl}}/zk_dev_ref/accessibility/accessibility)
 for more information.
 
-![](/zk_dev_ref/images/wcag_blue.png)
+![Wcag blue](/zk_dev_ref/images/wcag_blue.png)
 
 <div style="clear: both">
 </div>

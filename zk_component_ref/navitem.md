@@ -24,7 +24,7 @@ but it is rendered on a navbar.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Nav.png)
+![Nav](/zk_component_ref/images/ZKComRef_Nav.png)
 
 ```xml
 <navbar orient="vertical" width="200px">

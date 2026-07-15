@@ -51,7 +51,7 @@ A negative offset value in `anchor` shrinks the child by that many pixels relati
 
 # Example
 
-![]({{site.baseurl}}/zk_component_ref/images/zkcomref_anchorlayout_example.png)
+![Anchorlayout example]({{site.baseurl}}/zk_component_ref/images/zkcomref_anchorlayout_example.png)
 
 ```xml
 <window title="anchorlayout Demo" border="normal" 

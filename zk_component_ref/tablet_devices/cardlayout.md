@@ -10,7 +10,7 @@
 Cardlayout supports the navigation previous or next component by simply
 swiping on the tablet.
 
-![](/zk_component_ref/images/Cardlayout_Tablet_Example.png)
+![Cardlayout Tablet Example](/zk_component_ref/images/Cardlayout_Tablet_Example.png)
 
 # Version History
 

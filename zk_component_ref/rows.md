@@ -57,7 +57,7 @@ Use `<rows>` with explicit `<row>` children to build label-input grids without a
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
+![Grid Example](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
 <window title="Grid Demo" border="normal" width="360px">

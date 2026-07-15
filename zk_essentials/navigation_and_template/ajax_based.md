@@ -10,7 +10,7 @@ navigation way that only updates necessary part of a page instead of
 reloading the whole page.
 
 **AJAX-based Navigation**
-![]({{site.baseurl}}/zk_essentials/images/ze-ch7-ajax-based-navigation.png)
+![Ajax based navigation]({{site.baseurl}}/zk_essentials/images/ze-ch7-ajax-based-navigation.png)
 
 
 The easiest way to implement AJAX-based navigation is to change *Include* component's `src` attribute. It can change only partial content (inside the *Include*) of

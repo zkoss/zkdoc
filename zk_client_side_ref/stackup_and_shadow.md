@@ -26,7 +26,7 @@ the iframe.
 For better performance, neither stackup nor autohide is applied by
 default, so the menupopup is obscured by the iframe as shown below.
 
-![](images/UseStack-obscue-1.jpg)
+![Use Stack obscue 1](images/UseStack-obscue-1.jpg)
 
 # Usage
 
@@ -53,7 +53,7 @@ Notice that no all `iframe` will cause the obscure issue. For example,
 it is OK if `iframe` contains another HTML page. Thus, specify it only
 if necessary (for better performance). Here is the correct result.
 
-![](images/UseStack-ok-1.jpg)
+![Use Stack ok 1](images/UseStack-ok-1.jpg)
 
 ## The stackup and autohide techniques
 
@@ -66,7 +66,7 @@ The autohide technique resolves the obscure issue by hiding the iframe
 that obscures the widget on top. In other words, the iframe is not
 visible when the menupopup is shown up (on top of the iframe).
 
-![](images/UseStack-autohide-1.jpg)
+![Use Stack autohide 1](images/UseStack-autohide-1.jpg)
 
 # All Possible Values
 

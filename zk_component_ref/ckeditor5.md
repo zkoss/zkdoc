@@ -112,7 +112,7 @@ Build** are currently not supported.
 Classic editor shows a boxed editing area with a toolbar, placed in a
 specific position on the page.
 
-![](/zk_component_ref/images/ClassicEditor.jpg)
+![Classic Editor](/zk_component_ref/images/ClassicEditor.jpg)
 
 ## Balloon Editor
 
@@ -120,7 +120,7 @@ Balloon editor lets you create your content directly in its target
 location with the help of a balloon toolbar that appears next to the
 selected editable document element.
 
-![](/zk_component_ref/images/BalloonEditor.jpg)
+![Balloon Editor](/zk_component_ref/images/BalloonEditor.jpg)
 
 ## Balloon Block Editor
 
@@ -130,19 +130,19 @@ location with the help of two toolbars:
 - A balloon toolbar that appears next to the selected editable document
   element (offering inline content formatting tools).
 - A block toolbar accessible using the toolbar handle button
-  ![](/zk_component_ref/images/DragIndicator.png) attached to the editable content area and
+  ![Drag Indicator](/zk_component_ref/images/DragIndicator.png) attached to the editable content area and
   following the selection in the document (bringing additional block
-  formatting tools). The ![](/zk_component_ref/images/DragIndicator.png) button is also a handle that can be used to
+  formatting tools). The ![Drag Indicator](/zk_component_ref/images/DragIndicator.png) button is also a handle that can be used to
   drag and drop blocks around the content.
 
-![](/zk_component_ref/images/BalloonBlockEditor.jpg)
+![Balloon Block Editor](/zk_component_ref/images/BalloonBlockEditor.jpg)
 ## Inline Editor
 
 Inline editor lets you create your content directly in its target
 location with the help of a floating toolbar that apprears when the
 editable text is focused.
 
-![](/zk_component_ref/images/InlineEditor.jpg)
+![Inline Editor](/zk_component_ref/images/InlineEditor.jpg)
 
 # How to use?
 
@@ -197,7 +197,7 @@ public void doAfterCompose(Window comp) throws Exception {
 </ckeditor>
 ```
 
-![](/zk_component_ref/images/CKEditor5Example.png)
+![CKEditor5 Example](/zk_component_ref/images/CKEditor5Example.png)
 
 # Custom Configuration
 

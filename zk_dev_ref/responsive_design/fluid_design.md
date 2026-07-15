@@ -117,7 +117,7 @@ The grid system uses a 12 columns layout which can be used to
 proportionally grow or shrink each item based on the number of columns
 used.
 
-![]({{site.baseurl}}/zk_dev_ref/images/grid_system1.png)
+![Grid system1]({{site.baseurl}}/zk_dev_ref/images/grid_system1.png)
 
 For this first bootstrap grid example, we will only use 3 DOM classes:
 
@@ -138,7 +138,7 @@ example, we are defining all from xs (extra small). This mean, apply
 this rule from extra-small browsers or larger (i.e. all browsers sizes).
 
 Example: Bootstrap grid framework used to make UI elements flexible:
-![]({{site.baseurl}}/zk_dev_ref/images/3bootstrapflex.png)
+![3bootstrapflex]({{site.baseurl}}/zk_dev_ref/images/3bootstrapflex.png)
 
 In this example, menuitem1 is defined to use 2 columns, and menuitem2 is
 defined to use 6 columns of the 12 columns available in bootstrap grid
@@ -166,7 +166,7 @@ the horizontal space.
 
 Example: Media query used to set two different style sets based on the
 screen width
-![]({{site.baseurl}}/zk_dev_ref/images/4mediaquery.png)
+![4mediaquery]({{site.baseurl}}/zk_dev_ref/images/4mediaquery.png)
 
 In this example, menuitem1 is defined to use 2 columns, and menuitem2 is
 defined to use 6 columns of the 12 columns available in bootstrap grid
@@ -199,7 +199,7 @@ our state such as:
 Using both together let us define 2 states: Width \>= 760px: medium
 screen or larger \< 760px: smaller than medium screen.
 
-![](Grid_system2.png)
+![Grid system2](Grid_system2.png)
 
 We can use these classes to create the arrange of contents on a single
 line, with a larger central item (6 columns) and 2 smaller outer items
@@ -208,7 +208,7 @@ columns (all available space) in the extra-small state.
 
 Example: Bootstrap grid framework used to define a set of behaviors
 based on screen width.
-![]({{site.baseurl}}/zk_dev_ref/images/5bootstrapmedia.png)
+![5bootstrapmedia]({{site.baseurl}}/zk_dev_ref/images/5bootstrapmedia.png)
 
 In this example, menuitem1 will use 12 columns on width ranging from
 extra small to medium, then switch to using 3 columns on medium screens

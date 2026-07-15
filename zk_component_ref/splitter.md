@@ -28,7 +28,7 @@ This component can only be used inside a [ Box]({{site.baseurl}}/zk_component_re
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Splitter_Examples.PNG)
+![Splitter Examples](/zk_component_ref/images/ZKComRef_Splitter_Examples.PNG)
 
 ```xml
 <hbox spacing="0" >
@@ -98,7 +98,7 @@ application.
 If you want to change the styling to be more similar to OS's look as
 follows.
 
-![](/zk_component_ref/images/DrSplitterOS.png)
+![Dr Splitter OS](/zk_component_ref/images/DrSplitterOS.png)
 
 You could specify
 [org.zkoss.zk.ui.HtmlBasedComponent#setZclass(java.lang.String)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html#setZclass(java.lang.String))
@@ -156,8 +156,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/splitter_mold_default.png) |
-| os | ![](/zk_component_ref/images/splitter_mold_os.png) |
+| default | ![Splitter mold default](/zk_component_ref/images/splitter_mold_default.png) |
+| os | ![Splitter mold os](/zk_component_ref/images/splitter_mold_os.png) |
 
 # Supported Children
 

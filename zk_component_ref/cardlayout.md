@@ -17,8 +17,8 @@ when `next()` or `previous()` is called, transition of components
 through animation will occur whereas the `orient` attribute decides
 whether the direction of the animation is horizontal or vertical.
 
-![](/zk_component_ref/images/ZKComRef_Cardlayout_Horizontal.png)
-![](/zk_component_ref/images/ZKComRef_Cardlayout_Vertical.png)
+![Cardlayout Horizontal](/zk_component_ref/images/ZKComRef_Cardlayout_Horizontal.png)
+![Cardlayout Vertical](/zk_component_ref/images/ZKComRef_Cardlayout_Vertical.png)
 
 ## Common Use Cases
 
@@ -29,7 +29,7 @@ whether the direction of the animation is horizontal or vertical.
 
 # Example
 
-![](/zk_component_ref/images/cardlayout.gif)
+![Cardlayout](/zk_component_ref/images/cardlayout.gif)
 
 ```xml
     <cardlayout id="card" width="300px" height="200px" style="border:3px solid orange" selectedIndex="1">

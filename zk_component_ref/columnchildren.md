@@ -35,7 +35,7 @@ Columnchildren can allow any Component as its child.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
+![Columnlayout Example](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
 
 ```xml
 <columnlayout>

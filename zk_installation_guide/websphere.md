@@ -36,26 +36,26 @@ title: "WebSphere"
 
 1\. Applications -\> Application Types -\> WebSphere enterprise
 applications -\> Click install button
-![](images/wb7-step1-installApplication.png)
+![Wb7 step1 install Application](images/wb7-step1-installApplication.png)
 2. Select war file to import
-![](images/wb7-step2-importWarFile.png) 3. Select
-Fast Path ![](images/wb7-step3-fastPath.png) 4. Go
+![Wb7 step2 import War File](images/wb7-step2-importWarFile.png) 3. Select
+Fast Path ![Wb7 step3 fast Path](images/wb7-step3-fastPath.png) 4. Go
 through Steps, in Step 4, input Context Root
-![](images/wb7-step4-goThroughSteps-setRoot.png)
-5. Save configuration ![](images/wb7-step5-save.png) 6.
+![Wb7 step4 go Through Steps set Root](images/wb7-step4-goThroughSteps-setRoot.png)
+5. Save configuration ![Wb7 step5 save](images/wb7-step5-save.png) 6.
 Start application
-![](images/wb7-step6-startApplication.png)
+![Wb7 step6 start Application](images/wb7-step6-startApplication.png)
 
 #### Find web application port
 
 1\. Servers -\> Server Types -\> WebSphere application servers -\> Click
 "server1"
-![](images/wb7-checkApplicationPort-1.png) 2.
+![Wb7 check Application Port 1](images/wb7-checkApplicationPort-1.png) 2.
 Communcations -\> Click on "Ports"
-![](images/wb7-checkApplicationPort-2.png) 3.
+![Wb7 check Application Port 2](images/wb7-checkApplicationPort-2.png) 3.
 Check WC_defaulthost
-![](images/wb7-checkApplicationPort-3.png)
+![Wb7 check Application Port 3](images/wb7-checkApplicationPort-3.png)
 
 #### View Web application
 
-![](images/wb7-zkdemo.png)
+![Wb7 zkdemo](images/wb7-zkdemo.png)

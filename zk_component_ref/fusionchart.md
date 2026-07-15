@@ -61,7 +61,7 @@ Chart component.
 
 #### Vertical Bar Chart
 
-![](/zk_component_ref/images/Barchart_2d.png)
+![Barchart 2d](/zk_component_ref/images/Barchart_2d.png)
 
 ```xml
 <zk>
@@ -97,7 +97,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 #### Horizontal Bar Chart
 
-![](/zk_component_ref/images/Barchart_2d_h.png)
+![Barchart 2d h](/zk_component_ref/images/Barchart_2d_h.png)
 
 ```xml
 <zk>
@@ -133,7 +133,7 @@ public class BarchartComposer extends SelectorComposer<Div> {
 
 ### 3D Vertical Bar Chart
 
-![](/zk_component_ref/images/Barchart_3d.png)
+![Barchart 3d](/zk_component_ref/images/Barchart_3d.png)
 
 ```xml
 <zk>
@@ -190,11 +190,11 @@ color .
 ```
 
 The color is changed after we set the config ,here's the demo image.
-![](/zk_component_ref/images/Fusionchart_barchartconfig.png)
+![Fusionchart barchartconfig](/zk_component_ref/images/Fusionchart_barchartconfig.png)
 
 ## Line Chart
 
-![](/zk_component_ref/images/Linechart.png)
+![Linechart](/zk_component_ref/images/Linechart.png)
 
 ```xml
 <zk>
@@ -271,7 +271,7 @@ public class LinechartComposer extends SelectorComposer<Div> {
 
 ### 2D Pie Chart
 
-![](/zk_component_ref/images/Piechart_2d.png)
+![Piechart 2d](/zk_component_ref/images/Piechart_2d.png)
 
 ```xml
 <zk>
@@ -304,7 +304,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 ### 3D Pie Chart
 
-![](/zk_component_ref/images/Piechart_3d.png)
+![Piechart 3d](/zk_component_ref/images/Piechart_3d.png)
 
 ```xml
 <zk>
@@ -339,7 +339,7 @@ public class PiechartComposer extends SelectorComposer<Div> {
 
 {% include supported-since.html version="6.5.3" %}
 
-![](/zk_component_ref/images/Funnelchart.png)
+![Funnelchart](/zk_component_ref/images/Funnelchart.png)
 
 ```xml
 <zk>
@@ -378,7 +378,7 @@ public class FunnelchartComposer extends SelectorComposer<Div> {
 
 ### 2D Combination Chart
 
-![](/zk_component_ref/images/Combinationchart_2d.png)
+![Combinationchart 2d](/zk_component_ref/images/Combinationchart_2d.png)
 
 ```xml
 <zk>
@@ -427,7 +427,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 3D Combination Chart
 
-![](/zk_component_ref/images/Combinationchart_3d.png)
+![Combinationchart 3d](/zk_component_ref/images/Combinationchart_3d.png)
 
 ```xml
 <zk>
@@ -478,7 +478,7 @@ public class CombinationchartComposer extends SelectorComposer<Div> {
 
 ### 2D Stacked Chart
 
-![](/zk_component_ref/images/Stackedchart_2d.png)
+![Stackedchart 2d](/zk_component_ref/images/Stackedchart_2d.png)
 
 ```xml
 <zk>
@@ -515,7 +515,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ### 3D Stacked Chart
 
-![](/zk_component_ref/images/Stackedchart_3d.png)
+![Stackedchart 3d](/zk_component_ref/images/Stackedchart_3d.png)
 
 ```xml
 <zk>
@@ -552,7 +552,7 @@ public class StackedchartComposer extends SelectorComposer<Div> {
 
 ## Area Chart
 
-![](/zk_component_ref/images/Areachart.png)
+![Areachart](/zk_component_ref/images/Areachart.png)
 
 ```xml
 <zk>
@@ -588,7 +588,7 @@ public class AreachartComposer extends SelectorComposer<Div> {
 
 ## Gantt Chart
 
-![](/zk_component_ref/images/Gantt.png)
+![Gantt](/zk_component_ref/images/Gantt.png)
 
 ```xml
 <zk>

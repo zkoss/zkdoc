@@ -96,7 +96,7 @@ different use cases.
   width specification. (the exact widths of columns are rendered by
   browser automatically)
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_Default.png)
+![ZK5 Dev Ref Grid Column Default](/zk_dev_ref/images/ZK5DevRef_GridColumn_Default.png)
 
 ### Proportional Width
 
@@ -110,7 +110,7 @@ You can use the **hflex** we have mentioned in [previous section]({{site.baseurl
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_hflex.png)
+![ZK5 Dev Ref Grid Column hflex](/zk_dev_ref/images/ZK5DevRef_GridColumn_hflex.png)
 
 ### Minimum Flexibility
 
@@ -136,7 +136,7 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_nospan.png)
+![ZK5 Dev Ref Grid Column nospan](/zk_dev_ref/images/ZK5DevRef_GridColumn_nospan.png)
 
 - If you want your contents to fill the whole grid to eliminate the
   blank space, you can set **span=true** to make it proportionally
@@ -151,7 +151,7 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_span.png)
+![ZK5 Dev Ref Grid Column span](/zk_dev_ref/images/ZK5DevRef_GridColumn_span.png)
 
 - If you want the rest of the space to be assigned to one of the
   columns, set **span** to a number. The number is 0-based index of
@@ -166,7 +166,7 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_span0.png)
+![ZK5 Dev Ref Grid Column span0](/zk_dev_ref/images/ZK5DevRef_GridColumn_span0.png)
 
 - If you want the size of the Listbox determined by its content, assign
   **hflex=min** on the Grid, and make sure all the Listheaders either
@@ -181,7 +181,7 @@ As you can see, there might be blank space on the right of the listbox.
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_sizedByCnt.png)
+![ZK5 Dev Ref Grid Column sized By Cnt](/zk_dev_ref/images/ZK5DevRef_GridColumn_sizedByCnt.png)
 
 ## Data Length : Long
 
@@ -201,7 +201,7 @@ As you can see, there might be blank space on the right of the listbox.
 - **Default** : ZK data component will wrap the text to fit the width of
   column.
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultLong.png)
+![ZK5 Dev Ref Grid Column Default Long](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultLong.png)
 
 ### Scrollbar
 
@@ -226,7 +226,7 @@ beforehand.
     </listhead>
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultWidth.png)
+![ZK5 Dev Ref Grid Column Default Width](/zk_dev_ref/images/ZK5DevRef_GridColumn_DefaultWidth.png)
 
 ### Minimum Flexibility
 
@@ -246,7 +246,7 @@ beforehand.
  
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_LongHflex.png)
+![ZK5 Dev Ref Grid Column Long Hflex](/zk_dev_ref/images/ZK5DevRef_GridColumn_LongHflex.png)
 
 ### Mixed Flexibility and width
 
@@ -261,7 +261,7 @@ beforehand.
  
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexnumWidth.png)
+![ZK5 Dev Ref Grid Column Mixhflexnum Width](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexnumWidth.png)
 
 #### Width + Hflex min
 
@@ -274,7 +274,7 @@ beforehand.
  
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexMinWidth.png)
+![ZK5 Dev Ref Grid Column Mixhflex Min Width](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflexMinWidth.png)
 
 #### Width + Hflex min + Hflex proportion
 
@@ -287,7 +287,7 @@ beforehand.
  
 ```
 
-![](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflAllh.png)
+![ZK5 Dev Ref Grid Column Mixhfl Allh](/zk_dev_ref/images/ZK5DevRef_GridColumn_MixhflAllh.png)
 
 ## Data Length : Dynamic
 

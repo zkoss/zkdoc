@@ -11,7 +11,7 @@ If no configuration specified, ZK Calendar renders in the default theme.
 
 # Look and Feel
 
-![](/zk_calendar_essentials/images/Zk_calendar3_themes.png)
+![Zk calendar3 themes](/zk_calendar_essentials/images/Zk_calendar3_themes.png)
 
 # Follow ZK Theme by Default
 

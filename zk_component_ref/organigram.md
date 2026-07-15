@@ -73,7 +73,7 @@ For a custom appearance on each node, see [Organigram Template]({{site.baseurl}}
 
 # Example
 
-![](/zk_component_ref/images/Organigram_example.png)
+![Organigram example](/zk_component_ref/images/Organigram_example.png)
 
 ```xml
 <organigram width="600px">

@@ -128,7 +128,7 @@ rmDesktop command holding the relevant desktop ID is fired to let the
 server know that server-side objects used in the current page can be
 discarded.
 
-![](/zk_dev_ref/images/OnBeforeUnload1.png )
+![On Before Unload1](/zk_dev_ref/images/OnBeforeUnload1.png )
 
 Usually, onBeforeUnload will be triggered by outgoing navigation or by
 closing a browser tab. However, file download may also cause a browser’s
@@ -153,7 +153,7 @@ and handle the file while remaining on the previous page.
 At this point however, the client engine has already triggered rmDesktop
 and the current desktop is no longer available.
 
-![](/zk_dev_ref/images/OnBeforeUnload2.png )
+![On Before Unload2](/zk_dev_ref/images/OnBeforeUnload2.png )
 
 To avoid this issue, download in ZK should receive a target.
 

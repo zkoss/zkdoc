@@ -15,7 +15,7 @@ article demonstrates the steps and requirements of it.
 
 what do they look like, example from zul.jar
 
-![](/zk_component_dev_essentials/images/Jar_File_summary.jpg)
+![Jar File summary](/zk_component_dev_essentials/images/Jar_File_summary.jpg)
 
 ## Configurations
 
@@ -131,7 +131,7 @@ what do they look like, example from zul.jar
             </td>
             <td>
                 <p>**The example from zul.jar**
-                    ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_configuration1.jpg)
+                    ![Jar File configuration1](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_configuration1.jpg)
                 </p>
             </td>
         </tr>
@@ -166,7 +166,7 @@ what do they look like, example from zul.jar
             </td>
             <td>
                 <p>**The example from zul.jar**
-                    ![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_component1.jpg)
+                    ![Jar File component1](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_component1.jpg)
                 </p>
             </td>
         </tr>
@@ -249,7 +249,7 @@ dependency with other package.</em></li>
 </ul></li>
 </ul></td>
 <td><p>**Example for box from zul.jar** 
-![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_widget1.jpg)</p></td>
+![Jar File widget1](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_widget1.jpg)</p></td>
 </tr>
 </tbody>
 </table>
@@ -314,7 +314,7 @@ in xxx.css.dsp files through
 </ul></li>
 </ul></td>
 <td><p>**Example from zul.jar**</p>
-![](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_static_resources1.jpg)</td>
+![Jar File static resources1](images{{site.baseurl}}/zk_component_dev_essentials/images/Jar_File_static_resources1.jpg)</td>
 </tr>
 </tbody>
 </table>

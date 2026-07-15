@@ -10,7 +10,7 @@
 When user swipe on the content of Listbox, the friendly scrollbar will
 appear.
 
-![](/zk_component_ref/images/Listbox_Tablet_Example.png)
+![Listbox Tablet Example](/zk_component_ref/images/Listbox_Tablet_Example.png)
 
 **Note 1:** to disable the friendly scrollbar, please use the following
 setting.

@@ -21,7 +21,7 @@ An edit box for holding a date. After click on the calender, a
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Datebox_Example.PNG)
+![Datebox Example](/zk_component_ref/images/ZKComRef_Datebox_Example.PNG)
 
 ```xml
  <datebox lenient="true" buttonVisible="false" />
@@ -213,7 +213,7 @@ we can see that the displayedTimeZones is set to "GMT+12,GMT+8". These
 options are specified by the developer and restrict the user to the
 available time zones.
 
-![](/zk_component_ref/images/ZKComRef_Datebox_Timezone.png)
+![Datebox Timezone](/zk_component_ref/images/ZKComRef_Datebox_Timezone.png)
 
 ```xml
 <datebox id="datebox1" format="M/d/yy KK:mm:ss a" width="150px" displayedTimeZones="GMT+12,GMT+8" timeZone="GMT+8" timeZonesReadonly="false"/>
@@ -309,9 +309,9 @@ multiple-eras calendar systems including:
 - Japan: `locale="ja-JP-u-ca-japanese"`
 - Buddhist: `locale="th-TH-u-ca-buddhist"`
 
-![](/zk_component_ref/images/Roc-calendar.jpg)
-![](/zk_component_ref/images/jp-calendar.jpg)
-![](/zk_component_ref/images/buddhist-calendar.jpg)
+![Roc calendar](/zk_component_ref/images/Roc-calendar.jpg)
+![Jp calendar](/zk_component_ref/images/jp-calendar.jpg)
+![Buddhist calendar](/zk_component_ref/images/buddhist-calendar.jpg)
 
 See [complete locale list](https://www.oracle.com/java/technologies/javase/jdk8-jre8-suported-locales.html).
 
@@ -351,7 +351,7 @@ You can control the 2DigitYearStart by the use of the library property,
 
 Datebox supports to show a week number of the year in a calendar.
 
-![](/zk_component_ref/images/ZKComRef_Datebox_Week_Of_Year.PNG)
+![Datebox Week Of Year](/zk_component_ref/images/ZKComRef_Datebox_Week_Of_Year.PNG)
 
 ```xml
 <datebox weekOfYear="true" />
@@ -363,7 +363,7 @@ Datebox supports a link to jump back to the date of today quickly
 
 {% include supported-since.html version="8.0.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Datebox_Link_Of_Today.PNG)
+![Datebox Link Of Today](/zk_component_ref/images/ZKComRef_Datebox_Link_Of_Today.PNG)
 
 ```xml
 <datebox id="db" showTodayLink="true" ></datebox>
@@ -429,8 +429,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/datebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/datebox_mold_rounded.png) **|
+| default | ![Datebox mold default](/zk_component_ref/images/datebox_mold_default.png) |
+| rounded | ![Datebox mold rounded](/zk_component_ref/images/datebox_mold_rounded.png) **|
 
 ** `rounded`: {% include supported-since.html version="5.0.0" %}
 

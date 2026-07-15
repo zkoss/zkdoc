@@ -74,4 +74,4 @@ ZK Calendar.
 
 The above code's output is shown below.
 
-![](/zk_calendar_essentials/images/ZKCalEss_MemoryModelResult.png)
+![ZKCal Ess Memory Model Result](/zk_calendar_essentials/images/ZKCalEss_MemoryModelResult.png)

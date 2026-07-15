@@ -61,7 +61,7 @@ time, then you can use the paging components as follows.
 <paging totalSize="100" pageSize="20"/>
 ```
 
-![](/zk_component_ref/images/paging_mold_default.png)
+![Paging mold default](/zk_component_ref/images/paging_mold_default.png)
 
 When a user clicks on the hyperlinks, the `onPaging` event is sent with
 an instance of [org.zkoss.zul.event.PagingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/PagingEvent.html) to the
@@ -135,7 +135,7 @@ When set to `true`, the paging component renders additional information about th
 
 Under `os` mold, the component renders a list of paging anchors for
 users to jump to the specific page:
-![](/zk_component_ref/images/PagingAnchor.jpg)
+![Paging Anchor](/zk_component_ref/images/PagingAnchor.jpg)
 
 This attribute determines the max number of rendered paging anchors.
 
@@ -195,8 +195,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/paging_mold_default.png) |
-| os | ![](/zk_component_ref/images/paging_mold_os.png) |
+| default | ![Paging mold default](/zk_component_ref/images/paging_mold_default.png) |
+| os | ![Paging mold os](/zk_component_ref/images/paging_mold_os.png) |
 
 # Supported Children
 

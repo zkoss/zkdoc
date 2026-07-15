@@ -74,12 +74,12 @@ Please see [Highcharts API reference](https://api.highcharts.com/highcharts/) fo
 Please remember to check which Highcharts version is available for an
 option.
 
-![](images/zkcharts-essentials-apiVersion.jpg)
+![Zkcharts essentials api Version](images/zkcharts-essentials-apiVersion.jpg)
 
 You can know the version of Highcharts bundled in ZK Charts by checking
 `chart.wpd` in a developer tool. (search **Highcharts**)
 
-![](images/zkcharts-essentials-highchartsVersion.png)
+![Zkcharts essentials highcharts Version](images/zkcharts-essentials-highchartsVersion.png)
 
 ## Notes for Highcharts 12
 
@@ -104,7 +104,7 @@ Charts API, you can still set the option with the `addExtraAttr()` method.
 For example, there is an option [series / fillOpacity](https://api.highcharts.com/highcharts/series%3Carea%3E.fillOpacity)
 without a setter available.
 
-![](images/zkcharts-essentials-fillOpacity.png)
+![Zkcharts essentials fill Opacity](images/zkcharts-essentials-fillOpacity.png)
 
 Thus, you can set it like:
 

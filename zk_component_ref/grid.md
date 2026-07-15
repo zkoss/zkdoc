@@ -36,7 +36,7 @@ declaration. For more details see the section on Axillary Headers below.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
+![Grid Example](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
  <window title="Grid Demo" border="normal" width="360px">
@@ -84,7 +84,7 @@ declaration. For more details see the section on Axillary Headers below.
  </window>
 ```
 
-![](/zk_component_ref/images/grid_onAfterRender.png)
+![Grid on After Render](/zk_component_ref/images/grid_onAfterRender.png)
 
 ```xml
 <zk>
@@ -182,7 +182,7 @@ Use `responsive="stacking"` with `responsiveColumns` to collapse columns into ca
 Grid supports master-detail layout which enables
 developers to add more information on each row. For example,
 
-![](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
+![Grid Detail](/zk_component_ref/images/ZKComRef_Grid_Detail.png)
 
 ```xml
     <rows>
@@ -203,7 +203,7 @@ developers to add more information on each row. For example,
 
 For example,
 
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
+![Grid Columns Menu](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
 
 ```xml
 <zk>
@@ -228,7 +228,7 @@ When the user groups the content of the grid, the column's menu will
 show an ungroup icon for user to reset the group. {% include edition-availability.html edition=pe %} {%
 include supported-since.html version="6.5.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
+![Grid Columns Menu Ungroup](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu_Ungroup.PNG)
 
 **Note:** If the Grid contains with Model, *GroupsModel*, you have to
 register an *onUngroup* event for column to show an ungroup icon and
@@ -307,7 +307,7 @@ to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
 [org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
 
-![](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
+![Grid Grouping](/zk_component_ref/images/ZKComRef_Grid_Grouping.png)
 
 ```xml
 <zk>
@@ -532,7 +532,7 @@ discussed in the previous section. Paging is enabled by setting the
 the content into several pages and displays one page at a time as
 depicted below.
 
-![](/zk_component_ref/images/ZKComRef_Grid_Paging.png)
+![Grid Paging](/zk_component_ref/images/ZKComRef_Grid_Paging.png)
 
 ```xml
  
@@ -587,7 +587,7 @@ grids with the same [Paging](/zk_component_ref/paging), you
 can assign the `paginal` attribute explicitly. Note: if it is not set
 explicitly, it is the same as the `paging` property.
 
-![](/zk_component_ref/images/ZKComRef_Grid_Paginal.png)
+![Grid Paginal](/zk_component_ref/images/ZKComRef_Grid_Paginal.png)
 
 ```xml
  
@@ -702,7 +702,7 @@ For example,
 </grid>
 ```
 
-![](/zk_component_ref/images/Grid_autopageSize.png)
+![Grid autopage Size](/zk_component_ref/images/Grid_autopageSize.png)
 
 **Note:** Autopaging depends on a fixed row height for all rows (i.e.
 you can't use line wrapping text in cells or the `<details>` component). Because of that, once enabled, ZK will apply fixed height
@@ -851,7 +851,7 @@ In the following example, we prepared a list model called `strset`,
 assign it to a grid using the `model` attribute. Then, the grid will do
 the rest.
 
-![](/zk_component_ref/images/ZKComRef_Grid_LiveData.png)
+![Grid Live Data](/zk_component_ref/images/ZKComRef_Grid_LiveData.png)
 
 ```xml
 <window title="Live Grid" border="normal" width="100px">
@@ -909,7 +909,7 @@ and this even works under ROD.
 
 # Scrollable Grid
 
-![](/zk_component_ref/images/ZKComRef_Grid_ScrollableGrid.png)
+![Grid Scrollable Grid](/zk_component_ref/images/ZKComRef_Grid_ScrollableGrid.png)
 
 A grid can be scrollable and has a frozen header if you specify the
 `height` attribute and there is not enough space to display all data.
@@ -975,7 +975,7 @@ configuration in zk.xml.
 In addition to column headers, you can specify auxiliary headers with
 the `auxhead` and `auxheader` components as follows.
 
-![](/zk_component_ref/images/ZKComRef_Grid_AuxiliaryHeaders.png)
+![Grid Auxiliary Headers](/zk_component_ref/images/ZKComRef_Grid_AuxiliaryHeaders.png)
 
 ```xml
 <grid>
@@ -1044,13 +1044,13 @@ the same as the number of columns in each row as shown below:
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
+![Auxheader rowspan limitation](/zk_component_ref/images/Auxheader_rowspan_limitation.jpg)
 
 As shown above, the column with label C will be invisible, because the
 fakers are not created correctly. Here is the result but wrong DOM
 structure:
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
+![Auxheader rowspan limitation01](/zk_component_ref/images/Auxheader_rowspan_limitation01.jpg)
 
 There is a simple workaround: specify all columns. If you don't want to
 show all columns, you could use Auxheader instead of Column, and then
@@ -1078,7 +1078,7 @@ example, the code in the previous example can be fixed as follows:
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
+![Auxheader rowspan limitation02](/zk_component_ref/images/Auxheader_rowspan_limitation02.jpg)
 
 The other limitation is that the width of the Auxheader component will
 depend the Column component. Thus, if you'd like to specify the width in
@@ -1111,7 +1111,7 @@ make the empty Columns component invisible. For example,
 </grid>
 ```
 
-![](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
+![Auxheader rowspan limitation03](/zk_component_ref/images/Auxheader_rowspan_limitation03.jpg)
 
 # Accessibility
 
@@ -1149,12 +1149,12 @@ specifying `sizedByContent` a grid for a much more predictable result.
 By default, when sizedByContent is true, a column only takes the
 required space.
 
-![](/zk_component_ref/images/ZKComRef_Grid_Nospan.png)
+![Grid Nospan](/zk_component_ref/images/ZKComRef_Grid_Nospan.png)
 
 If you want to span the width of the columns to occupy the whole grid,
 you could specify true to this attribute
 
-![](/zk_component_ref/images/ZKComRef_Grid_Span.png)
+![Grid Span](/zk_component_ref/images/ZKComRef_Grid_Span.png)
 
 ```xml
     <grid sizedByContent="true" span="true" width="800px">
@@ -1534,8 +1534,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/grid_mold_default.png) |
-| paging | ![](/zk_component_ref/images/grid_mold_paging.png) |
+| default | ![Grid mold default](/zk_component_ref/images/grid_mold_default.png) |
+| paging | ![Grid mold paging](/zk_component_ref/images/grid_mold_paging.png) |
 
 # Supported Children
 

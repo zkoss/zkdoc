@@ -8,7 +8,7 @@ from the tree on the left hand side.
 
 # Services
 
-![](images/studio-preference-services.png)
+![Studio preference services](images/studio-preference-services.png)
 
 **Error Reporter**
 
@@ -20,7 +20,7 @@ proxy, you may setup proxy URL and port to make it work.
 # ZK Account
 
 This page shows the activation status of your ZK account. You can
-directly activate your ZK Forum account here. ![](images/studio-preference-account.png)
+directly activate your ZK Forum account here. ![Studio preference account](images/studio-preference-account.png)
 
 For more information, please refer to [ Activate ZK Studio]({{site.baseurl}}/zk_studio_essentials/installation#Activate_ZK_Studio)
 
@@ -32,7 +32,7 @@ automatically used for any new ZK web application. If you don't select a
 default ZK package, ZK Studio will automatically choose the latest
 version of your imported ZK Packages.
 
-![](images/studio-preference-package.png)
+![Studio preference package](images/studio-preference-package.png)
 
 Another way to import ZK package is through ZK Storage view, please
 refer to [Configure ZK Binary Distribution]({{site.baseurl}}/zk_studio_essentials/zks#Configure_ZK_Binary_Distribution)
@@ -41,7 +41,7 @@ refer to [Configure ZK Binary Distribution]({{site.baseurl}}/zk_studio_essential
 
 This page is used to configure ZUL Editor.
 
-![](images/studio-preference-editor.png)
+![Studio preference editor](images/studio-preference-editor.png)
 
 - **Use plugin's built in zul.xsd**
     

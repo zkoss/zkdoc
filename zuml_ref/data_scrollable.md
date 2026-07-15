@@ -11,7 +11,7 @@ attribute), combobox popup, datebox popup, inside the container
 component will also move by scrolling. (For more information, please refer to [zul.ContainerWidget](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.ContainerWidget.html) Those popups will disappear
 when you scroll them out of the visible area.
 
-![](images/errobox-scrollable.gif)
+![Errobox scrollable](images/errobox-scrollable.gif)
 
 **Usage example**
 

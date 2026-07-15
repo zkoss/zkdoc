@@ -80,7 +80,7 @@ server to a local folder. For example,
 <button label="Download a file" onClick='Filedownload.save("~./zklogo.png", null);'/>
 ```
 
-![](/zk_dev_ref/images/10000000000002AF000001BB582C2DD7.png)
+![File Download](/zk_dev_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 The file could be a static resource, an input stream, a file, a URL and
 others. Please refer to [ZK Component Reference]({{site.baseurl}}/zk_component_ref/filedownload)

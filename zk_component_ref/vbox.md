@@ -30,7 +30,7 @@ If you need a splitter, please use [ splitlayout](/zk_component_ref/splitlayout)
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example.PNG)
+![Vbox Simple Example](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example.PNG)
 
 ```xml
 <zk>
@@ -53,7 +53,7 @@ If you need a splitter, please use [ splitlayout](/zk_component_ref/splitlayout)
 
 {% include supported-since.html version="5.0.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
+![Vbox Simple Example align pack](/zk_component_ref/images/ZKComRef_Vbox_Simple_Example_align_pack.PNG)
 
 ```xml
 <zk xmlns:n="native">

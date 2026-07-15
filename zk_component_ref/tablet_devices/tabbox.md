@@ -16,7 +16,7 @@ with client attribute.
 </tabbox>
 ```
 
-![](/zk_component_ref/images/Tabbox_Tablet_Example.png)
+![Tabbox Tablet Example](/zk_component_ref/images/Tabbox_Tablet_Example.png)
 
 # Friendly Scrolling Support
 
@@ -30,7 +30,7 @@ For example,
 <tabpanel style="overflow:auto">
 ```
 
-![](/zk_component_ref/images/Tabbox_Tablet_Scrolling_Example.png)
+![Tabbox Tablet Scrolling Example](/zk_component_ref/images/Tabbox_Tablet_Scrolling_Example.png)
 
 # Version History
 

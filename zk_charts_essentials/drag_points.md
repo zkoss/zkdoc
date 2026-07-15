@@ -7,7 +7,7 @@ title: "Drag Points"
 You can enable draggable-points for one or all series, then users can
 drag to move a data point in a chart:
 
-![](images/draggable-point.gif)
+![Draggable point](images/draggable-point.gif)
 
 `DraggablePointComposer.java`
 

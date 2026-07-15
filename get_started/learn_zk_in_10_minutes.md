@@ -10,7 +10,7 @@ components readily at hand. You can rapidly create your own user
 interface with various ZK components. Each component's style, behavior,
 and function can be configured upon your desire.
 
-![](images/Getstarted-simpleZK-UI.jpeg)
+![Getstarted simple ZK UI](images/Getstarted-simpleZK-UI.jpeg)
 
 **ZUL**, an XML-formatted and easy-to-read language, is used to describe
 the above registration form
@@ -133,7 +133,7 @@ In the registration form above, the "Submit button" is disabled at the
 beginning, and it is only enabled (clickable) when a user checks the
 "Term of use" checkbox.
 
-![](images/Simplezk-check-submit.gif)
+![Simplezk check submit](images/Simplezk-check-submit.gif)
 
 As ZK is an event-driven framework, a user action is therefore handled
 by an event listener. ZK provides an annotation [ **@Listen** to register an event listener by selector syntax]({{site.baseurl}}/zk_dev_ref/mvc/wire_event_listeners).
@@ -192,7 +192,7 @@ read [ Responsive Design]({{site.baseurl}}/zk_dev_ref/responsive_design/responsi
 
 # Easy Backend Integration
 
-![](images/Multi-layers.jpg)
+![Multi layers](images/Multi-layers.jpg)
 
 As ZK allows you to control UI via a controller on the server-side, the
 controller is, therefore, the main extension point to integrate any Java

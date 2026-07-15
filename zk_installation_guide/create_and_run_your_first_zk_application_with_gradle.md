@@ -163,7 +163,7 @@ The server will stop at breakpoints.
 
 ## Import a Gradle project into your IDE
 
-![](images/zk-gradle-idea-run-config.png)
+![Zk gradle idea run config](images/zk-gradle-idea-run-config.png)
 <figcaption>An exemplary development run config for IntelliJ
 IDEA</figcaption>
 

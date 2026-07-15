@@ -8,7 +8,7 @@ You see the error below in a browser developer tool \> Console tab:
 
 `Uncaught Unknown widget: chart.Charts`
 
-![](images/unknown_widget_chart.png)
+![Unknown widget chart](images/unknown_widget_chart.png)
 
 # Why It Happens
 
@@ -38,7 +38,7 @@ jar in one application.
 - Check if chart.wpd is loaded successfully with developer tool \>
   Network tab.
 
-![](images/chart_wpd.jpg)
+![Chart wpd](images/chart_wpd.jpg)
 
 - Check if you include any non-ZK JavaScript; remove them one by one to
   find the one that interferes with ZK.

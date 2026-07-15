@@ -19,7 +19,7 @@ An item of a combo box.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
+![Combobox Example](/zk_component_ref/images/ZKComRef_Combobox_Example.PNG)
 
 ```xml
  <combobox>

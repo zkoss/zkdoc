@@ -22,7 +22,7 @@ and light-weighted layout components that arrange their children to be
 displayed horizontally and vertically respectively. Also, they are
 easily customizable as they are made up of HTML DIVs.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout.png)
+![Dr Hlayout]({{site.baseurl}}/zk_dev_ref/images/DrHlayout.png)
 
 ```xml
 <hlayout>
@@ -31,7 +31,7 @@ easily customizable as they are made up of HTML DIVs.
 </hlayout>
 ``` 
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout.png)
+![Dr Vlayout]({{site.baseurl}}/zk_dev_ref/images/DrVlayout.png)
 
 ```xml
 <vlayout>
@@ -50,7 +50,7 @@ easily customizable as they are made up of HTML DIVs.
   to Hlayout and Vlayout or place them into a fixed height container,
   EX: "\<window height="100px"...".
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png) 
+![Dr Hlayout scrolling]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png) 
 
 ```xml
 <hlayout width="100px" height="100px" style="border:1px solid black;overflow:auto;">
@@ -59,7 +59,7 @@ easily customizable as they are made up of HTML DIVs.
 </hlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png) 
+![Dr Vlayout scrolling]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png) 
 
 ```xml
 <vlayout width="100px" height="100px" style="border:1px solid black;overflow:auto;">
@@ -72,7 +72,7 @@ easily customizable as they are made up of HTML DIVs.
 
 Users are allowed to change sclass to control alignment.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_alignment.png)
+![Dr Hlayout alignment]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_alignment.png)
 
 ```xml
 <zk>
@@ -113,7 +113,7 @@ like to use them a lot in a UI, unless you need the features that only
 [Hbox]({{site.baseurl}}/zk_component_ref/hbox) and
 [Vbox]({{site.baseurl}}/zk_component_ref/vbox) support.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHbox.png)
+![Dr Hbox]({{site.baseurl}}/zk_dev_ref/images/DrHbox.png)
 
 ```xml
 <hbox>
@@ -122,7 +122,7 @@ like to use them a lot in a UI, unless you need the features that only
   <div width="80px" height="70px" style="background:yellow">2</div>
 </hbox>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrVbox.png)
+![Dr Vbox]({{site.baseurl}}/zk_dev_ref/images/DrVbox.png)
 
 ```xml
 <vbox>
@@ -138,7 +138,7 @@ like to use them a lot in a UI, unless you need the features that only
   able to show scroll bars. Hence, to achieve this, users will need to
   place them in a scrolling container.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png)
+![Dr Hlayout scrolling]({{site.baseurl}}/zk_dev_ref/images/DrHlayout_scrolling.png)
 
 ```xml
 <div width="100px" height="100px" style="border:1px solid black;overflow:auto;">
@@ -148,7 +148,7 @@ like to use them a lot in a UI, unless you need the features that only
     </hbox>
 </div>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png)
+![Dr Vlayout scrolling]({{site.baseurl}}/zk_dev_ref/images/DrVlayout_scrolling.png)
 
 ```xml
 <div width="100px" height="100px" style="border:1px solid black;overflow:auto;">
@@ -163,7 +163,7 @@ like to use them a lot in a UI, unless you need the features that only
 
 - Users are also allowed to specify align and pack to control alignment.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_align.png)
+![Dr Hbox align]({{site.baseurl}}/zk_dev_ref/images/DrHbox_align.png)
 
 ```xml
 <window title="Hbox" border="normal" width="150px" height="100px">
@@ -175,7 +175,7 @@ like to use them a lot in a UI, unless you need the features that only
     </hbox>
 </window>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_pack.png)
+![Dr Hbox pack]({{site.baseurl}}/zk_dev_ref/images/DrHbox_pack.png)
 
 ```xml
 <window title="Hbox" border="normal" width="150px" height="100px">
@@ -187,7 +187,7 @@ like to use them a lot in a UI, unless you need the features that only
     </hbox>
 </window>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_align.png)
+![Dr Vbox align]({{site.baseurl}}/zk_dev_ref/images/DrVbox_align.png)
 
 ```xml
 <window title="Vbox" border="normal" width="150px" height="150px">
@@ -199,7 +199,7 @@ like to use them a lot in a UI, unless you need the features that only
     </vbox>
 </window>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_pack.png)
+![Dr Vbox pack]({{site.baseurl}}/zk_dev_ref/images/DrVbox_pack.png)
 
 ```xml
 <window title="Vbox" border="normal" width="150px" height="150px">
@@ -218,7 +218,7 @@ For more detailed information, please refer to
 
 - Users are also allowed to use "cell" to control each cell's alignment.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png)
+![Dr Hbox Cell]({{site.baseurl}}/zk_dev_ref/images/DrHbox_Cell.png)
 
 ```xml
 <hbox width="500px">
@@ -238,7 +238,7 @@ For more detailed information, please refer to
     </cell>
 </hbox>
 ```
-![]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png)
+![Dr Vbox Cell]({{site.baseurl}}/zk_dev_ref/images/DrVbox_Cell.png)
 
 ```xml
 <vbox width="300px" align="stretch">
@@ -267,7 +267,7 @@ West and Center. The heights of North and South are first decided, the
 remaining space is then given to Center as its height. Note that East
 and West also take on the height of Center.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout.png)
+![Drborderlayout]({{site.baseurl}}/zk_dev_ref/images/drborderlayout.png)
 
 ```xml
 <borderlayout width="100px" height="100px">
@@ -298,7 +298,7 @@ layout region does not take up all of layout region's space. In order
 for the child to occupy the whole area, please set vflex="1" to the
 child component.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_flex.png)
+![Drborderlayout flex]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_flex.png)
 
 ```xml
 <borderlayout width="100px" height="100px">
@@ -329,7 +329,7 @@ child component.
   this, specify autoscroll="true" to Center in order to assign Center to
   handle the scrolling.
 
-![](/zk_dev_ref/images/DrBorderlayout_Center_scrolling.png)
+![Dr Borderlayout Center scrolling](/zk_dev_ref/images/DrBorderlayout_Center_scrolling.png)
 
 ```xml
 <borderlayout width="300px" height="300px">
@@ -358,7 +358,7 @@ child component.
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_grow.png)
+![Drborderlayout grow]({{site.baseurl}}/zk_dev_ref/images/drborderlayout_grow.png)
 
 ```xml
 <borderlayout width="300px" vflex="min">
@@ -453,7 +453,7 @@ different locations at will (although of course, developers are allowed
 to use the ZK application to re-arrange the order of children
 components).
 
-![]({{site.baseurl}}/zk_dev_ref/images/drcolumnlayout.png)
+![Drcolumnlayout]({{site.baseurl}}/zk_dev_ref/images/drcolumnlayout.png)
 
 ```xml
 <columnlayout>
@@ -481,7 +481,7 @@ allow any number of child components to be placed vertically with
 different heights (but with the same widths). Users are also allowed to
 move any of them to any area desired like that of a portal.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrPortallayout.png)
+![Dr Portallayout]({{site.baseurl}}/zk_dev_ref/images/DrPortallayout.png)
 
 ```xml
 <portallayout>
@@ -510,7 +510,7 @@ move any of them to any area desired like that of a portal.
 places its child components in a table. Ths implementation is based on
 an HTML TABLE tag.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTablelayout.png)
+![Dr Tablelayout]({{site.baseurl}}/zk_dev_ref/images/DrTablelayout.png)
 
 ```xml
 <tablelayout columns="2">
@@ -558,7 +558,7 @@ sibling won't be on the same line (horizontal position). On the other
 hand, span is an *inline* element which would place the child component
 and its siblings on the same line (horizontal position).
 
-![]({{site.baseurl}}/zk_dev_ref/images/drdivspan.png)
+![Drdivspan]({{site.baseurl}}/zk_dev_ref/images/drdivspan.png)
 
 ```xml
 <div style="border: 1px solid blue" width="150px">
@@ -584,7 +584,7 @@ Div:
   order to keep the height of Div constant for the scroll bar to appear,
   specify a fixed height to Div.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drdiv_scrolling.png)
+![Drdiv scrolling]({{site.baseurl}}/zk_dev_ref/images/drdiv_scrolling.png)
 
 ```xml
 <div height="100px" width="100px" 
@@ -610,7 +610,7 @@ closable, sizable, and many other features. Window is also the owner of
 that each child component and its IDs are in one independent window so
 as to avoid the IDs of child components conflicting with one another.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrWindow.png)
+![Dr Window]({{site.baseurl}}/zk_dev_ref/images/DrWindow.png)
 
 ```xml
 <window title="A" closable="true" sizable="true"
@@ -628,7 +628,7 @@ as to avoid the IDs of child components conflicting with one another.
   therefore, in order to keep the height of Window constant for the
   scroll bar to appear, specify a fixed height to Window.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrWindow_scrolling.png)
+![Dr Window scrolling]({{site.baseurl}}/zk_dev_ref/images/DrWindow_scrolling.png)
 
 ```xml
 <window title="window" border="normal" 
@@ -656,7 +656,7 @@ many other features. However,
 implemented by this component, therefore, all of its children belong to
 the same ID space of its parent.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png)
+![Dr Panel]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png)
 
 ```xml
 <panel title="A" framable="true" border="normal"
@@ -676,7 +676,7 @@ the same ID space of its parent.
   therefore, in order to keep the height of the Panel constant for the
   scroll bar to appear, specify a fixed height to Panel.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrPanel_scrolling.png)
+![Dr Panel scrolling]({{site.baseurl}}/zk_dev_ref/images/DrPanel_scrolling.png)
 
 ```xml
 <panel title="panel" border="normal" 
@@ -704,7 +704,7 @@ light-weighted way to group child components together. It supports
 Panel, [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is
 not implemented by this component either.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drgroupbox3d.png)
+![Drgroupbox3d]({{site.baseurl}}/zk_dev_ref/images/drgroupbox3d.png)
 
 ```xml
 <groupbox mold="3d">
@@ -727,7 +727,7 @@ not implemented by this component either.
   therefore, in order to keep the height of the Groupbox constant for
   the scroll bar to appear, specify a fixed height to Groupbox.
 
-![](/zk_dev_ref/images/DrGroupbox3d_scrolling.png)
+![Dr Groupbox3d scrolling](/zk_dev_ref/images/DrGroupbox3d_scrolling.png)
 
 ```xml
 <groupbox mold="3d" height="150px" width="150px"
@@ -750,7 +750,7 @@ switch between each tab group by a simple click.
 [org.zkoss.zk.ui.IdSpace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/IdSpace.html) is not
 implemented by this component either.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox.png)
+![Dr Tabbox]({{site.baseurl}}/zk_dev_ref/images/DrTabbox.png)
 
 ```xml
 <tabbox height="80px">
@@ -772,7 +772,7 @@ implemented by this component either.
   therefore, in order to keep the height of the Tabpanel constant for
   the scroll bar to appear, specify a fixed height to Tabbox.
 
-![]({{site.baseurl}}/zk_dev_ref/images/DrTabbox_scrolling.png)
+![Dr Tabbox scrolling]({{site.baseurl}}/zk_dev_ref/images/DrTabbox_scrolling.png)
 
 ```xml
 <tabbox height="100px" width="150px">

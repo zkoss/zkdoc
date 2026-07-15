@@ -20,4 +20,4 @@ original uncompressed JavaScript files with comments will be loaded
 instead. When you report a javascript error stack trace, it's better to
 enable this to make calling hierarchy readable.
 
-![]({{site.baseurl}}/ZK_Configuration_Reference-debug-js.png)
+![ZK Configuration Reference debug js]({{site.baseurl}}/ZK_Configuration_Reference-debug-js.png)

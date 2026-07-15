@@ -52,7 +52,7 @@ A vertical fisheye bar placed on the left side of a container. Items zoom rightw
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_fisheyebar.png)
+![Fisheyebar](/zk_component_ref/images/ZKComRef_fisheyebar.png)
 
 ```xml
 <zk>

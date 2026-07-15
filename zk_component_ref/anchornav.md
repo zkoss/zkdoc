@@ -49,7 +49,7 @@ The `$sec1` notation is a ZK widget selector that resolves to the widget whose c
 
 By default, the Anchornav will watch the scroll position of a page.
 
-![]({{site.baseurl}}/zk_component_ref/images/anchornav.gif)
+![Anchornav]({{site.baseurl}}/zk_component_ref/images/anchornav.gif)
 
 ```xml
 <zk xmlns:ca="client/attribute">

@@ -4,7 +4,7 @@
 Under the multi-tier Java EE web application architecture, ZK framework
 belongs to web tier:
 
-![]({{site.baseurl}}/zk_dev_ref/images/zk-web-tier.jpg)
+![Zk web tier]({{site.baseurl}}/zk_dev_ref/images/zk-web-tier.jpg)
 
 Because ZK is designed to have a clear separation of responsibility and
 provides controller/ViewModel to integrate the business and persistence
@@ -99,11 +99,11 @@ enhanced later as the project progresses.
     going to send an Ajax request back, another execution flow will
     start as described in the following section.
 
-![]({{site.baseurl}}/zk_dev_ref/images/load-page.jpg)
+![Load page]({{site.baseurl}}/zk_dev_ref/images/load-page.jpg)
 
 # Execution Flow of Serving an Ajax Request
 
-![]({{site.baseurl}}/zk_dev_ref/images/architecture-s.png)
+![Architecture s]({{site.baseurl}}/zk_dev_ref/images/architecture-s.png)
 
 1.  The execution flow starts from a widget or the application. This is
     usually caused by the user's activity (or the application's

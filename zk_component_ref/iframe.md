@@ -74,7 +74,7 @@ When the iframe embeds non-HTML content (such as a PDF), it can obscure ZK popup
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Iframe.png)
+![Iframe](/zk_component_ref/images/ZKComRef_Iframe.png)
 
 ```xml
 <window id="win" title="This is an Iframe Demo!">

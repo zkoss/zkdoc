@@ -20,7 +20,7 @@ will be automatically converted to a label.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Label.PNG)
+![Label](/zk_component_ref/images/ZKComRef_Label.PNG)
 
 ```xml
  <window title="Label Demo" >
@@ -55,7 +55,7 @@ as new line, space and tab, are preserved.
 
 A label component represents a piece of text.
 
-![](/zk_component_ref/images/ZKComRef_Label_Example2.png)
+![Label Example2](/zk_component_ref/images/ZKComRef_Label_Example2.png)
 
 ```xml
 <window border="normal"> 
@@ -66,7 +66,7 @@ A label component represents a piece of text.
 If you want to add an attribute to a label, it has to be written as
 follows:
 
-![](/zk_component_ref/images/ZKComRef_Label_Example3.png)
+![Label Example3](/zk_component_ref/images/ZKComRef_Label_Example3.png)
 
 ```xml
 <window border="normal">
@@ -151,7 +151,7 @@ Limits the number of characters displayed in the label. When set to a positive i
 | false | false | positive | The label only show its value up to the length of "maxlength". |
 | false | false | 0 | The label is displayed regularly. |
 
-![](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
+![Label Text ZK5](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
 # Supported Events
 

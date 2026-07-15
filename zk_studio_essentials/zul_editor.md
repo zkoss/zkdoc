@@ -18,12 +18,12 @@ variable, object, method, or class declaration, and selected token's all
 occurrences (read/write access) in the currently opened zul file will be
 marked.
 
-![](images/mark1.png)
+![Mark1](images/mark1.png)
 
 Mark Occurrence also works when the token is located within an EL
 Expression.
 
-![](images/el_mark.png)
+![El mark](images/el_mark.png)
 
 # Syntax Checking
 
@@ -35,29 +35,29 @@ discover how many errors are present in the zul file and the location of
 said errors. By clicking on the marker you can jump to the line which
 contains the error.
 
-![](images/syntaxCheckRightBar.png)
+![Syntax Check Right Bar](images/syntaxCheckRightBar.png)
 
 The markers on the left hand side show an appropriate error message when
 clicked.
 
-![](images/syntaxCheckLeftMark.png)
+![Syntax Check Left Mark](images/syntaxCheckLeftMark.png)
 
 Move the mouse on the occurrence of the error marked by a red wavy line
 (or the warning marked by a yellow wavy line) and the error message will
 be display in a tooltip.
 
-![](images/syntaxCheckTooltip.png)
+![Syntax Check Tooltip](images/syntaxCheckTooltip.png)
 
 Syntax checking also works on data binding expressions.
 
-![](images/studio-syntax-checking-mvvm.png)
+![Studio syntax checking mvvm](images/studio-syntax-checking-mvvm.png)
 
 # Syntax Coloring
 
 Java code enclosed within <zscript> and <attribute> tags are colored
 appropriately according to the syntax.
 
-![](images/studio-syntax-coloring.png)
+![Studio syntax coloring](images/studio-syntax-coloring.png)
 
 # Content Assist
 
@@ -78,7 +78,7 @@ For basic usage scenario, please refer to Eclipse official tutorial:
 ZUL & XML tags support content assist and can be invoked by using the
 default content assist keyboard shortcut.
 
-![](images/contentAssistXMLTag.png)
+![Content Assist XMLTag](images/contentAssistXMLTag.png)
 
 This feature doesn't work on those add-on components like ZK Charts and
 ZK Spreadsheet.
@@ -88,7 +88,7 @@ ZK Spreadsheet.
 The content within **use** and **apply** attributes also supports
 content assist.
 
-![](images/contentAssistinAttribute.png)
+![Content Assistin Attribute](images/contentAssistinAttribute.png)
 
 ## Zscript Content Assist
 
@@ -97,20 +97,20 @@ auto completion functionality within `<zscript>`...`</zscript>`,
 `<attribute name='onXXX'>`...`</attribute>` code blocks and event
 attribute values in the ZUML tag.
 
-![](images/contentAssistZscript.png)
+![Content Assist Zscript](images/contentAssistZscript.png)
 
 Classes located in JAR files can also be included in content assist. In
 addition to that if the JAR's source code is available, JavaDoc can be
 shown beside the content assist window.
 
-![](images/contentAssistJavaDoc.png)
+![Content Assist Java Doc](images/contentAssistJavaDoc.png)
 
 ## EL Expression Content Assist
 
 Inside the EL Expression you can also invoke the content assist via a
 keyboard shortcut.
 
-![](images/contentAssistEL.png)
+![Content Assist EL](images/contentAssistEL.png)
 
 ## MVVM Content Assist
 
@@ -119,15 +119,15 @@ following places:
 
 ### Annotation name
 
-![](images/studio-contentassist-mvvm-annotation.png)
+![Studio contentassist mvvm annotation](images/studio-contentassist-mvvm-annotation.png)
 
 ### ViewModel's properties
 
-When you enter a **dot** ('.'), it list a ViewModel's properties. ![](images/studio-contentassist-mvvm-properties.png)
+When you enter a **dot** ('.'), it list a ViewModel's properties. ![Studio contentassist mvvm properties](images/studio-contentassist-mvvm-properties.png)
 
 ### Available variables
 
-![](images/studio-contentassist-mvvm-variables.png)
+![Studio contentassist mvvm variables](images/studio-contentassist-mvvm-variables.png)
 
 # JavaDoc Hovering
 
@@ -135,7 +135,7 @@ ZK Studio provides Javadoc hovering functionality. When a cursor hovers
 over the code, Javadoc belonging to the element will be shown in a
 tooltip.
 
-![](images/JAVADocHover.png)
+![JAVADoc Hover](images/JAVADocHover.png)
 
 Please note in order for content assist and Javadoc to work with JAR
 files you need to set source and/or Javadoc of said files, please refer
@@ -173,7 +173,7 @@ In the ZUL Editor, you can navigate to the Java class specified in
 **use="**ClassName**"** and **apply="**ClassName**"** attributes using
 Hyperlink Navigation.
 
-![](images/studio-hyperlink.png) ![](studio-hyperlink-class.png)
+![Studio hyperlink](images/studio-hyperlink.png) ![Studio hyperlink class](studio-hyperlink-class.png)
 
 (For this to work you need to set a source file for that class. If the
 class is within a JAR File which does not have a corresponding source
@@ -190,7 +190,7 @@ resource).
 A ZUML tag's event attribute value is also accessible using Hyperlink
 Navigation.
 
-![](images/attrHyperlink.png)
+![Attr Hyperlink](images/attrHyperlink.png)
 
 # ZUL File Formatting
 
@@ -206,4 +206,4 @@ You can use a keyboard shortcut to accomplish this task, the default
 source format keyboard shortcut is **'Ctrl + Shift + F**. You can
 reconfigure the keyboard shortcut as described in [Configure Keyboard Shortcuts]({{site.baseurl}}/zk_studio_essentials/eclipse_tips#Configure_Keyboard_Shortcuts).
 
-![](images/sourceFormat.png)
+![Source Format](images/sourceFormat.png)

@@ -39,7 +39,7 @@ Microsoft Word and OpenOffice.
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_CKEditor.png)
+![CKEditor](/zk_component_ref/images/ZKCompRef_CKEditor.png)
 
 ```xml
 <ckeditor width="850px">
@@ -64,7 +64,7 @@ Microsoft Word and OpenOffice.
 </ckeditor>
 ```
 
-![](/zk_component_ref/images/ZKCompRef_CKEditor2.png)
+![CKEditor2](/zk_component_ref/images/ZKCompRef_CKEditor2.png)
 
 ## Enable save button
 
@@ -88,8 +88,8 @@ CKEditor will open a new window and list all images in the file browser.
     <ckeditor filebrowserImageBrowseUrl="img"/>
 ```
 
-![](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser2.png)
-![](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser3.png)
+![CKEditor filebrowser2](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser2.png)
+![CKEditor filebrowser3](/zk_component_ref/images/ZKCompRef_CKEditor_filebrowser3.png)
 
 ## Custom File browser
 
@@ -112,8 +112,8 @@ application can access its own folder.
     <ckeditor filebrowserImageBrowseUrl="img" filebrowserImageUploadUrl="img"/>
 ```
 
-![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload.png)
-![](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload2.png)
+![CKEditor fileupload](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload.png)
+![CKEditor fileupload2](/zk_component_ref/images/ZKCompRef_CKEditor_fileupload2.png)
 
 ## Custom File upload handler
 

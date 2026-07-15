@@ -70,7 +70,7 @@ Store a domain object in `value` so you can retrieve it without maintaining a se
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
+![Grid Example](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
 <window title="Grid Demo" border="normal" width="360px">

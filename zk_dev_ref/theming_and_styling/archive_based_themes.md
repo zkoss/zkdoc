@@ -28,7 +28,7 @@ basis for a new theme, and be ready to be packaged inside a jar file.
 The top-level subdirectories for this folder should look similar to the
 figure below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/theme_skeleton.png)
+![Theme skeleton]({{site.baseurl}}/zk_dev_ref/images/theme_skeleton.png)
 
 # Create an Archive-based Theme
 

@@ -24,7 +24,7 @@ so on..
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Biglistbox.PNG)
+![Biglistbox](/zk_component_ref/images/ZKComRef_Biglistbox.PNG)
 
 ```xml
 <biglistbox hflex="1" vflex="1">

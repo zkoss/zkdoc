@@ -107,7 +107,7 @@ path.
     The picture below demonstrates how to override javascript files
     under `zkcharts.jar/web/js/chart/ext`:
 
-![](images/overrideByClasspathWebResourcePath.png)
+![Override By Classpath Web Resource Path](images/overrideByClasspathWebResourcePath.png)
 
 After doing this, ZK will load the js files under `WEB-INF/classes/web/`
 instead of that js in the zkcharts.jar.

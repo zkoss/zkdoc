@@ -57,7 +57,7 @@ See also: [Button]({{site.baseurl}}/zk_component_ref/button), [Toolbar]({{site.b
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Toolbarbutton_Example.png)
+![Toolbarbutton Example](/zk_component_ref/images/ZKComRef_Toolbarbutton_Example.png)
 
 ```xml
 <window title="toolbar demo" border="normal" width="300px">

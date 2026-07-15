@@ -132,7 +132,7 @@ is vertical / top when it is horizontal). The default value is false.
 Once the first child is displayed in the first or last area, the second
 child will be displayed in the other area.
 
-![](/zk_component_ref/images/Lineitem-opposite.png)
+![Lineitem opposite](/zk_component_ref/images/Lineitem-opposite.png)
 
 ```xml
  

@@ -20,7 +20,7 @@ radio button with the same group may be selected at a time.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_radio.png)
+![Radio](/zk_component_ref/images/ZKComRef_radio.png)
 
 ```xml
     <vlayout>

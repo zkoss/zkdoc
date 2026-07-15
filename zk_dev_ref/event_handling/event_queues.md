@@ -10,7 +10,7 @@ explicitly specifying or having knowledge of intended recipients. By
 subscribing, a receiving module (subscriber) receives messages that the
 subscriber has registered an interest in it, without explicitly
 specifying or knowing the publisher. 
-![](Eventqueue-concept.jpg)
+![Eventqueue concept](Eventqueue-concept.jpg)
 
 The purpose of event queues are two folds:
 

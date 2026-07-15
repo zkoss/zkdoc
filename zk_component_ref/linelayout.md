@@ -74,7 +74,7 @@ Set `orient="horizontal"` to arrange items left-to-right instead of top-to-botto
 
 # Example
 
-![](/zk_component_ref/images/Linelayout-1.png)
+![Linelayout 1](/zk_component_ref/images/Linelayout-1.png)
 
 ```xml
   <zscript>
@@ -209,7 +209,7 @@ The value is a Java object constructed in a Composer or ViewModel and passed via
 
 Whether the linelayout displays vertically or horizontally.
 
-![](/zk_component_ref/images/Linelayout-3.png)
+![Linelayout 3](/zk_component_ref/images/Linelayout-3.png)
 
 ```xml
   <linelayout orient="horizontal" lineStyle="background:rgba(0,0,0,0.5)" >

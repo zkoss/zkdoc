@@ -39,7 +39,7 @@ component.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
+![Bandbox Example](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
 
 ```xml
    

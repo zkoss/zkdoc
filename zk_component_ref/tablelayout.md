@@ -24,7 +24,7 @@ specified to create complex layouts within the table.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
+![Tablelayout Example](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
 
 ```xml
 <tablelayout columns="2">
@@ -57,7 +57,7 @@ specified to create complex layouts within the table.
 
 The child of tablechildren can be any component:
 
-![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
+![Tablelayout Example ZK6](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
 
 ```xml
 <tablelayout columns="2">

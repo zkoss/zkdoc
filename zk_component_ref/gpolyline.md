@@ -37,7 +37,7 @@ Enable interactive vertex dragging and listen for coordinate updates. Use `pathE
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Gpolyline_Example.png)
+![Gpolyline Example](/zk_component_ref/images/ZKComRef_Gpolyline_Example.png)
 
 ```xml
 <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>

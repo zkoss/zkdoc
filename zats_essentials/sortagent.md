@@ -5,7 +5,7 @@ This agent can work on <b>*column*, *listheader*</b>, and
 <b>*treecol*</b> and mimic to sort a header with specified sorting
 order.
 
-![](images/Zats-mimic-group.png)
+![Zats mimic group](images/Zats-mimic-group.png)
 
 ```java
  

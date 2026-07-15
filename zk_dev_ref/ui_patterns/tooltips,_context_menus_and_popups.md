@@ -57,7 +57,7 @@ For example,
 Then, when the user moves the mouse pointer over the image for a while,
 the menupopup will show up as shown below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
+![Drtooltip]({{site.baseurl}}/zk_dev_ref/images/drtooltip.png)
 
 The time to wait before showing up the tooltip can be configured. Please
 refer to [ZK Configuration Reference]({{site.baseurl}}/zk_config_ref/the_tooltip_delay_element)
@@ -83,7 +83,7 @@ Providing a customized context menu is the same, except it uses the
 </zk>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/drcontext.png)
+![Drcontext]({{site.baseurl}}/zk_dev_ref/images/drcontext.png)
 
 As shown above, you could use [org.zkoss.zul.Popup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Popup.html) so
 the context menu is not limited to a menupopup.
@@ -110,7 +110,7 @@ Here is another example: context menus versus right clicks.
 </zk>
 ```
 
-![](/zk_dev_ref/images/100000000000017500000052E60F488A.png)
+![Context Menus](/zk_dev_ref/images/100000000000017500000052E60F488A.png)
 
 Notice that the `menupopup` is not visible until a user right-clicks on
 a component that is associated with its' ID.
@@ -250,7 +250,7 @@ ZK Client Engine will simulate the context menu, if the user touches the
 DOM element associated with the contextmenu property and holds for a
 while.
 
-![]({{site.baseurl}}/zk_dev_ref/images/events_1_finger.jpg)
+![Events 1 finger]({{site.baseurl}}/zk_dev_ref/images/events_1_finger.jpg)
 
 ## Popup
 

@@ -18,7 +18,7 @@ An edit box for holding a constrained double.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Doublespinner.png)
+![Doublespinner](/zk_component_ref/images/ZKComRef_Doublespinner.png)
 
 ```xml
      <doublespinner step="0.5" />
@@ -37,7 +37,7 @@ An edit box for holding a constrained double.
 Because inplace editing function in ZK is pure client side action, so we
 can use client api to modify the width (server side do not need to know)
 
-![](/zk_component_ref/images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
+![ZK Component Reference Input Spinner inplace](/zk_component_ref/images/ZK_Component_Reference-Input-Spinner-inplace.jpg)
 
 ```xml
 <zk xmlns:c="client">
@@ -120,8 +120,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/spinner_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
+| default | ![Spinner mold default](/zk_component_ref/images/spinner_mold_default.png) |
+| rounded | ![Spinner mold rounded](/zk_component_ref/images/spinner_mold_rounded.png) |
 
 # Supported Children
 

@@ -45,7 +45,7 @@ Here we use the search function to explain how MVVM works in ZK. Assume
 that a user click "Search" button then *listbox* updates its content.
 The flow is as follows:
 
-![](images/Tutorial-mvvm.png)
+![Tutorial mvvm](images/Tutorial-mvvm.png)
 
 1.  A user clicks "Search" button and a corresponding event is sent.
 2.  ZK's binder invokes the corresponding command method in the

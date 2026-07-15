@@ -18,7 +18,7 @@ accordingly.
 
 <div style="width:610px;margin-left:auto;margin-right:auto">
 
-![](images/studio-palette-drag-component.png) ![](images/Studio-palette-drop-component.png)
+![Studio palette drag component](images/studio-palette-drag-component.png) ![Studio palette drop component](images/Studio-palette-drop-component.png)
 
 </div>
 
@@ -28,4 +28,4 @@ The ZUL Palette supports ZUML tag name filtering. Upon typing a
 component's name into the filter text box to search, the palette will
 filter listed components automatically.
 
-![](images/studio-palette-filter.png)
+![Studio palette filter](images/studio-palette-filter.png)

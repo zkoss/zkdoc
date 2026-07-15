@@ -53,7 +53,7 @@ the URL.
 
 If you press the BACK button, you will see as follows.
 
-![](/zk_dev_ref/images/1000000000000284000000226A7DEE65.png)
+![Add Bookmarks to Browser's History](/zk_dev_ref/images/1000000000000284000000226A7DEE65.png)
 
 ## Listen to onBookmarkChange and Change the State Accordingly
 

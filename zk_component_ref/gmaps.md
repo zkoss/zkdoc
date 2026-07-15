@@ -66,7 +66,7 @@ To move the Maps center smoothly, you can control it by calling `Gmaps.panTo()` 
 ```
 
 ## Use with Ginfo and Gmarker
-![](/zk_component_ref/images/ZKComRef_Gmaps_Example.png)
+![Gmaps Example](/zk_component_ref/images/ZKComRef_Gmaps_Example.png)
 
 ```xml
     <!-- you may wish to specify the version of google map API manually for some reason, 

@@ -16,7 +16,7 @@ effort to generate a full set of page states. The result is a much wider
 range of possibilities to adapt the page design to be relevant on any
 device type and/or size.
 
-![](1-Responsivechema.png)
+![Responsivechema](1-Responsivechema.png)
 
 # ZK MVC Client Info event and composer
 
@@ -121,7 +121,7 @@ For example, based on the [fluid design examples]({{site.baseurl}}/zk_dev_ref/re
 we can add bootstrap grid entries for extra-small, small and medium
 states to the small layout generated in ZK.
 
-![]({{site.baseurl}}/zk_dev_ref/images/3-bsintegrationschema.png)
+![Bsintegrationschema]({{site.baseurl}}/zk_dev_ref/images/3-bsintegrationschema.png)
 
 In this case, we add fluid transitions to the MVVM adaptive example to
 build three fluid state on top of two adaptive states. The same adaptive

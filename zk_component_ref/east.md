@@ -17,7 +17,7 @@ For common use cases such as collapsible panels, splittable regions, and nested 
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
+![Borderlayout](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ```xml
 <borderlayout height="450px">

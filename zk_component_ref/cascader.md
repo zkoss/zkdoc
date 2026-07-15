@@ -23,7 +23,7 @@ data. It accepts a TreeModel.
 
 # Example
 
-![](/zk_component_ref/images/cascader-basic.png)
+![Cascader basic](/zk_component_ref/images/cascader-basic.png)
 
 ```xml
     <zscript><![CDATA[

@@ -11,7 +11,7 @@ property to normal and setting its width to a definite 250 pixels.
 Enclosed in the [org.zkoss.zul.Window](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Window.html) component are
 two [org.zkoss.zul.Button](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Button.html) components.
 
-![]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_hello.png)
+![Entials intro hello]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_hello.png)
 
 As shown above, there are two ways to declare UI: XML-based approach and
 pure-Java approach. You can mix them if you like.
@@ -104,7 +104,7 @@ is a collection of pages. It represents a browser window (a tab or a
 frame of the browser)[^1]. You might image a desktop representing an
 independent HTTP request.
 
-![]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_multipage.png)
+![Entials intro multipage]({{site.baseurl}}/zk_dev_ref/images/zkessentials_intro_multipage.png)
 
 A desktop is also a logic scope that an application can access in a
 request. Each time a request is sent from the client, it is associated

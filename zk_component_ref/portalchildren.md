@@ -64,7 +64,7 @@ Set the `title` attribute on each `<portalchildren>` to enable the frame design,
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Portallayout_Example.PNG)
+![Portallayout Example](/zk_component_ref/images/ZKComRef_Portallayout_Example.PNG)
 
 ```xml
 <portallayout>
@@ -116,7 +116,7 @@ move it to the appropriate column. If the panel does not have a panel
 title, you can drag the small dragging button at the top of the panel to
 move.
 
-![](/zk_component_ref/images/Kanban-1.png)
+![Kanban 1](/zk_component_ref/images/Kanban-1.png)
 
 ```xml
 <zk>

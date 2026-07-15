@@ -29,7 +29,7 @@ the developer tool.
 
 :\* The project structure should look like this:
 
-![](images/Zkless_servlet_scaffod.png)
+![Zkless servlet scaffod](images/Zkless_servlet_scaffod.png)
 
 # Step to Customize Component by LESS
 
@@ -43,7 +43,7 @@ to customize a component.
 
 :\* The project structure (here we use maven project)
 
-![](images/Styleguide_prj_str.png)
+![Styleguide prj str](images/Styleguide_prj_str.png)
 
 - 3\. Tweak window style and Check window style at runtime by ZK Less
   Servlet.

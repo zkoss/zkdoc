@@ -41,13 +41,13 @@ Use EL to bind the `value` attribute to a ViewModel property so the barcode upda
 
 # Example
 
-![](/zk_component_ref/images/qrcode.png)
+![Qrcode](/zk_component_ref/images/qrcode.png)
 
 ```xml
 <barcode type="qr" value="https://www.zkoss.org/" height="100px"/>
 ```
 
-![](/zk_component_ref/images/code128.png)
+![Code128](/zk_component_ref/images/code128.png)
 
 ```xml
 <barcode type="code128" value="https://www.zkoss.org/" height="100px"/>

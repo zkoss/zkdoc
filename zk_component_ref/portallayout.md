@@ -30,7 +30,7 @@ depend on the browser, and not as expected.
 
 # Example
 
-![](/zk_component_ref/images/zkcomref_portallayout.gif)
+![Portallayout](/zk_component_ref/images/zkcomref_portallayout.gif)
 
 ```xml
     <portallayout height="100%">

@@ -81,7 +81,7 @@ parts. The main component area is where date time events are displayed
 and the top of the Calendar component is used to display the daylong
 event.
 
-![](/zk_calendar_essentials/images/ZKCalEss_Default_mold.jpg)
+![ZKCal Ess Default mold](/zk_calendar_essentials/images/ZKCalEss_Default_mold.jpg)
 
 ### The Month Mold
 
@@ -89,7 +89,7 @@ In the month mold, the content of each day has no background color, the
 text is colored and the item over one day has a background color with
 white text. When using the month mold, each row represents one week.
 
-![](/zk_calendar_essentials/images/ZKCalEss_Month_mold.jpg)
+![ZKCal Ess Month mold](/zk_calendar_essentials/images/ZKCalEss_Month_mold.jpg)
 
 By just changing one attribute ZK affords us exceptional power. But how
 do we change this attribute? The next section explains how.
@@ -106,7 +106,7 @@ Calendar's default time zone.
 <calendars timeZone="Finland=GMT+2, Taiwan=GMT+8"/>
 ```
 
-![](/zk_calendar_essentials/images/zkcal-timeZone.png)
+![Zkcal time Zone](/zk_calendar_essentials/images/zkcal-timeZone.png)
 
 ## width , height
 
@@ -128,7 +128,7 @@ Sets the beginning hour of a day.
 <calendars beginTime="8"/>
 ```
 
-![](/zk_calendar_essentials/images/zkcal-beginTime.png)
+![Zkcal begin Time](/zk_calendar_essentials/images/zkcal-beginTime.png)
 
 ## weekOfYear
 
@@ -136,7 +136,7 @@ default: `false`
 
 Determine whether to show the week number of one year.
 
-![](/zk_calendar_essentials/images/WeekOfyear.jpg)
+![Week Ofyear](/zk_calendar_essentials/images/WeekOfyear.jpg)
 
 # Add Application Logic
 

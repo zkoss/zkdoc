@@ -21,7 +21,7 @@ enhanced and can be customized easily.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Button.jpg)
+![Button](/zk_component_ref/images/ZKComRef_Button.jpg)
 
 ```xml
     <button label="Left" image="/img/network.gif" width="125px"/>
@@ -393,9 +393,9 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/button_mold_default.png) |
-| trendy | ![](/zk_component_ref/images/button_mold_trendy.png) |
-| os | ![](/zk_component_ref/images/button_mold_os.png) |
+| default | ![Button mold default](/zk_component_ref/images/button_mold_default.png) |
+| trendy | ![Button mold trendy](/zk_component_ref/images/button_mold_trendy.png) |
+| os | ![Button mold os](/zk_component_ref/images/button_mold_os.png) |
 
 # Supported Children
 

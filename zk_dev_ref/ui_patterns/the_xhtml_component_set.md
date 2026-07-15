@@ -20,7 +20,7 @@ XHTML namespace, you could update its content dynamically on the server.
 For example, we could allow users to click a button to add a column as
 shown below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/html_1.png)
+![Html 1]({{site.baseurl}}/zk_dev_ref/images/html_1.png)
 
 ```xml
  <window title="mix HTML demo" xmlns:h="xhtml">

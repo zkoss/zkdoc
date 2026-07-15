@@ -25,7 +25,7 @@ of TABLE).
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples.PNG)
+![Hbox Simple Examples](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples.PNG)
 
 ```xml
 <zk>
@@ -46,7 +46,7 @@ of TABLE).
 
 ## Align and Pack
 
-![](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG)
+![Hbox Simple Examples align pack](/zk_component_ref/images/ZKComRef_Hbox_Simple_Examples_align_pack.PNG)
 
 ```xml
 <zk xmlns:n="native">

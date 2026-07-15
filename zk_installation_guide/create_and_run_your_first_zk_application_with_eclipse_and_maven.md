@@ -25,7 +25,7 @@ Please follow the installation guide for your M2eclipse:
   **\[Archetypes\]**, click *Add Remote Catalog* and type in the catalog
   file as illustrated:
     
-  ![](images/ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png)
+  ![ZK Installation Guide Quick Start Create and Run with Eclipse and Maven](images/ZK_Installation_Guide_Quick_Start_Create_and_Run_with_Eclipse_and_Maven.png)
  
 [`https://mavensync.zkoss.org/maven2/`](https://mavensync.zkoss.org/maven2/)
 
@@ -61,15 +61,15 @@ there are two possible workarounds:
 - **\[File\]** -\> **\[New\]** -\> **\[Other\]** --\> **\[Maven
   Project\]**
 
-  ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png)
+  ![ZK Installation Guide Quick Start Maven New project 01](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-01.png)
 - Make sure *Create a simple project* is unticked in the first screen of
   the New Maven Project wizard and click **Next \>**.
 
-  ![](images/zk_installation_guide_maven_archetype_step1.png)
+  ![Zk installation guide maven archetype step1](images/zk_installation_guide_maven_archetype_step1.png)
 - From the *Select an Archetype* screen, select **ZK Maven Archetype**
   from the catalog dropdown list.
 
-  ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png)
+  ![ZK Installation Guide Quick Start Maven New project 02](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-02.png)
 - 
 - Select *zk-archetype-webapp* from the list. (At the time of writing
   this article was at version *'6.0*. Please choose the latest release
@@ -77,7 +77,7 @@ there are two possible workarounds:
 - Next, fill in details for *group id, artifact id, version* number and
   *package* name.
 
-  ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png)
+  ![ZK Installation Guide Quick Start Maven New project 03](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-03.png)
   
 - The property *zk-version-since* might be missing.
 
@@ -100,20 +100,20 @@ the list this time.
   download the necessary dependencies to compile and run this example,
   and would be stored in *.m2/repository* in the user's home directory.
     
-![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
+![ZK Installation Guide Quick Start Maven New project 04](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
 
 ## Run the application
 
-1.  Go to **Run As** \> **Maven build...** ![](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png)
+1.  Go to **Run As** \> **Maven build...** ![ZK Installation Guide Quick Start Maven run project 01](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-01.png)
 2.  In the goals field, enter *jetty:stop jetty:run* and tick *Skip
-    Tests* then click "Apply" then "Run". ![](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png)
+    Tests* then click "Apply" then "Run". ![ZK Installation Guide Quick Start Maven run project 02](images/ZK_Installation_Guide_Quick_Start_Maven_run_project-02.png)
 3.  View the result in your browser via `http://localhost:8080/mywebapp/index.zul`
 
 ## Packaging your project into a Web Application Archive (WAR)
 
-1.  Go to **Run As** \> **Maven install** ![](images/ZK_Installation_Guide_maven_Archetype_step1.png)
+1.  Go to **Run As** \> **Maven install** ![ZK Installation Guide maven Archetype step1](images/ZK_Installation_Guide_maven_Archetype_step1.png)
 2.  The project will then be packed into a war file and a zip file with
-    source code. ![](images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png)
+    source code. ![ZK Installation Guide Quick Start Maven package project](images/ZK_Installation_Guide_Quick_Start_Maven_package_project.png)
 
 # Create a Maven Project with a Command Line Interface
 
@@ -196,8 +196,8 @@ configured, you can just run the project with the command below:
 
 - **\[File\]** -\> **\[Import\]** -\> **\[Maven\]** --\> **\[Existing Maven Projects\]**
 
-  ![](images/ZK_Installation_Guide_Quick_Start_Maven_import.png)
+  ![ZK Installation Guide Quick Start Maven import](images/ZK_Installation_Guide_Quick_Start_Maven_import.png)
 - After this, the user should now get a new project in the Package
   explorer.
 
-  ![](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)
+  ![ZK Installation Guide Quick Start Maven New project 04](images/ZK_Installation_Guide_Quick_Start_Maven_New_project-04.png)

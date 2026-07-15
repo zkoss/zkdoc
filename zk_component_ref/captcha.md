@@ -21,7 +21,7 @@ A `captcha` component can generate a special distortion image, also called a CAP
 
 # Example
 
-![](/zk_component_ref/images/captcha.png)
+![Captcha](/zk_component_ref/images/captcha.png)
 
 ```xml
  <vbox>

@@ -6,7 +6,7 @@ You can move *window* and *panel* by specifying its **left** and
 visual window is moved. It just changes target component's left and top
 attribute.
 
-![](images/Zats-mimic-move.png)
+![Zats mimic move](images/Zats-mimic-move.png)
 
 ```java
 

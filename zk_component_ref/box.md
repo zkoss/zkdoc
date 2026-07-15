@@ -73,7 +73,7 @@ Override the default CSS-controlled gap with an explicit spacing value.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Box_Example.png)
+![Box Example](/zk_component_ref/images/ZKComRef_Box_Example.png)
 
 ```xml
 <zk>
@@ -177,7 +177,7 @@ You can control the spacing among children of the `box` control. For example, th
 
 Another example illustrated an interesting layout by the use of zero spacing.
 
-![](/zk_component_ref/images/100000000000009300000077C9A14E08.png)
+![Spacing](/zk_component_ref/images/100000000000009300000077C9A14E08.png)
 
 ```xml
 <window title="Box Layout Demo" border="normal">
@@ -230,8 +230,8 @@ Controls whether each cell's size is determined by its content. When `true` (the
 
 | Name | Snapshot |
 |---|---|
-| `horizontal` | ![](/zk_component_ref/images/box_mold_horizontal.png) |
-| `vertical` | ![](/zk_component_ref/images/box_mold_vertical.png) |
+| `horizontal` | ![Box mold horizontal](/zk_component_ref/images/box_mold_horizontal.png) |
+| `vertical` | ![Box mold vertical](/zk_component_ref/images/box_mold_vertical.png) |
 
 The mold determines the default orientation of the box. `horizontal` is equivalent to using the `<hbox>` element; `vertical` is equivalent to using the `<vbox>` element. The mold can also be set via the [`orient`](#orient) attribute.
 

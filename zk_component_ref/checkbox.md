@@ -46,7 +46,7 @@ Use `mold="tristate"` when the selection state of a group is partially fulfilled
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Checkbox_Example.png)
+![Checkbox Example](/zk_component_ref/images/ZKComRef_Checkbox_Example.png)
 
 ```xml
 <window title="Checkbox demo" border="normal" width="350px">
@@ -139,7 +139,7 @@ changing `checked` attribute will set `indeterminate` to `false`.
 <checkbox indeterminate="true"/>
 ```
 
-Display a checkbox like: ![](/zk_component_ref/images/Indeterminate.png)
+Display a checkbox like: ![Indeterminate](/zk_component_ref/images/Indeterminate.png)
 
 # Supported Events
 
@@ -167,13 +167,13 @@ The standard checkbox mold with a checkmark appearance.
 
 Default:
 
-![](/zk_component_ref/images/Switch-off.png) 
-![](/zk_component_ref/images/Switch-on.png)
+![Switch off](/zk_component_ref/images/Switch-off.png) 
+![Switch on](/zk_component_ref/images/Switch-on.png)
 
 Customized in CSS:
 
-![](/zk_component_ref/images/Switch-off-customized.png)
-![](/zk_component_ref/images/Switch-on-customized.png)
+![Switch off customized](/zk_component_ref/images/Switch-off-customized.png)
+![Switch on customized](/zk_component_ref/images/Switch-on-customized.png)
 
 ```css
 .z-checkbox-switch-off > .z-checkbox-mold {
@@ -194,12 +194,12 @@ Customized in CSS:
 
 Default:
 
-![](/zk_component_ref/images/Toggle-off.png) ![](/zk_component_ref/images/Toggle-on.png)
+![Toggle off](/zk_component_ref/images/Toggle-off.png) ![Toggle on](/zk_component_ref/images/Toggle-on.png)
 
 Customized in CSS:
 
-![](/zk_component_ref/images/Toggle-off-customized.png)
-![](/zk_component_ref/images/Toggle-on-customized.png)
+![Toggle off customized](/zk_component_ref/images/Toggle-off-customized.png)
+![Toggle on customized](/zk_component_ref/images/Toggle-on-customized.png)
 
     .z-checkbox-toggle-off > .z-checkbox-mold {
         background-color: red;
@@ -216,7 +216,7 @@ tristate mold, when users click on the checkbox, it will switch between
 checked, unchecked and indeterminate states. This is different from the
 default mold which has only checked and unchecked states.
 
-![](/zk_component_ref/images/Tristate.png)
+![Tristate](/zk_component_ref/images/Tristate.png)
 
 ```xml
 <checkbox mold="tristate"></checkbox>

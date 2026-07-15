@@ -29,7 +29,7 @@ For a branch node, a +/− button appears at the bottom right of the node, allow
 
 # Example
 
-![](/zk_component_ref/images/Orgitem_example.png)
+![Orgitem example](/zk_component_ref/images/Orgitem_example.png)
 
         <organigram width="600px">
             <orgchildren>

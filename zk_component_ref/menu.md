@@ -54,7 +54,7 @@ The `onClick` event fires only when the user clicks the label side of the menu, 
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Menu.png)
+![Menu](/zk_component_ref/images/ZKComRef_Menu.png)
 
 ```xml
 <menubar>

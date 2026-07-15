@@ -63,7 +63,7 @@ Enable drag-to-resize with `splittable="true"` so users can adjust the north reg
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
+![Borderlayout](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ```xml
 <borderlayout height="450px">

@@ -52,7 +52,7 @@ public class FruitProvider extends org.zkoss.zk.ui.select.SelectorComposer {
 }
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/st201107-listbox.png)
+![St201107 listbox]({{site.baseurl}}/zk_dev_ref/images/st201107-listbox.png)
 
 ## Component's Value
 
@@ -145,7 +145,7 @@ listbox-in-listbox:
 </zk>
 ```
 
-![](/zk_dev_ref/images/St201107-listbox-in-listbox.png)
+![St201107 listbox in listbox](/zk_dev_ref/images/St201107-listbox-in-listbox.png)
 
 ### How to retrieve the outer template's data in the inner template
 

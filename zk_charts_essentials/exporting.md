@@ -33,9 +33,9 @@ screen.
 
 For example,
 [export-images.zul](https://github.com/zkoss/zkchartsessentials/blob/master/src/main/webapp/exporting/export-images.zul),
-**the original chart on the screen**: ![](images/zkchart-essentials-chart-on-screen.png)
+**the original chart on the screen**: ![Zkchart essentials chart on screen](images/zkchart-essentials-chart-on-screen.png)
 
-**The exported result:** ![](images/zkchart-essentials-exported-chart.png)
+**The exported result:** ![Zkchart essentials exported chart](images/zkchart-essentials-exported-chart.png)
 
 Differences:
 
@@ -91,7 +91,7 @@ and SVG. Highcharts 12 does not include PDF in the default menu. To provide PDF
 export, add `downloadPDF` to the menu and make sure the local offline exporting
 module or an export server is available.
 
-![](images/zkcharts-essentials-defaultExporting.png)
+![Zkcharts essentials default Exporting](images/zkcharts-essentials-defaultExporting.png)
 
 To create custom exporting button, you have to use [exporting buttons options](https://api.highcharts.com/highcharts/exporting.buttons). Since
 it also replaces the default button, you need to create default options
@@ -184,7 +184,7 @@ public class ExportComposer extends SelectorComposer<Component> {
 
 The result is:
 
-![](images/zkcharts-essentials-customExporting.png)
+![Zkcharts essentials custom Exporting](images/zkcharts-essentials-customExporting.png)
 
 # Known Issues
 

@@ -22,7 +22,7 @@ by the most of browsers. The simplest format is as follows.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Script_Example.png)
+![Script Example](/zk_component_ref/images/ZKComRef_Script_Example.png)
 
 ```xml
 <window id="win">

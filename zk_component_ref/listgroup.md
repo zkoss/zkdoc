@@ -20,7 +20,7 @@ Adds the ability for single level grouping to the Listbox.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Listgroup_Example.PNG)
+![Listgroup Example](/zk_component_ref/images/ZKComRef_Listgroup_Example.PNG)
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>

@@ -54,7 +54,7 @@ When a toolbar is placed in a constrained width, enable `overflowPopup` so items
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Toolbar_Example.png)
+![Toolbar Example](/zk_component_ref/images/ZKComRef_Toolbar_Example.png)
 
 ```xml
 <window title="Toolbar window" border="normal" width="300px">
@@ -143,7 +143,7 @@ Sets the orientation of the toolbar, controlling whether buttons are laid out in
 
 When `overflowPopup="true"`, a toolbar will have a `...` symbol that shows a popup that contains those buttons not fitting in the toolbar.
 
-![](/zk_component_ref/images/Toolbar-overflowPopup.png)
+![Toolbar overflow Popup](/zk_component_ref/images/Toolbar-overflowPopup.png)
 
 ```xml
 <toolbar overflowPopup="true" width="350px" style="border: 1px black solid;">
@@ -164,7 +164,7 @@ When `overflowPopup="true"`, a toolbar will have a `...` symbol that shows a pop
 
 When `overflowPopup="true"`, you can customize the overflow popup trigger icon by specifying `overflowPopupIconSclass`. For a complete list of icons, please refer to [FontAwesome Cheatsheet](http://fontawesome.io/cheatsheet/).
 
-![](/zk_component_ref/images/Toolbar-overflowPopupIconSclass.png)
+![Toolbar overflow Popup Icon Sclass](/zk_component_ref/images/Toolbar-overflowPopupIconSclass.png)
 
 ```xml
 <toolbar overflowPopup="true" overflowPopupIconSclass="z-icon-plus-square" width="350px" style="border: 1px black solid;">
@@ -189,8 +189,8 @@ footer of a panel.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/toolbar_mold_default.png) |
-| panel | ![](/zk_component_ref/images/toolbar_mold_panel.png) |
+| default | ![Toolbar mold default](/zk_component_ref/images/toolbar_mold_default.png) |
+| panel | ![Toolbar mold panel](/zk_component_ref/images/toolbar_mold_panel.png) |
 
 # Supported Children
 

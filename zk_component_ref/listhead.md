@@ -19,7 +19,7 @@ A list headers used to define multi-columns and/or headers. Only Listheader comp
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
+![Listbox Example](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
 ```xml
  <window title="listbox demo" border="normal" width="250px">
@@ -68,7 +68,7 @@ Or you can provide your own menupopup by specifying a menupopup's ID.
 
 ### Auto
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
+![Listbox Columns Menu](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
 
 ```xml
 <zk>
@@ -92,7 +92,7 @@ to change this default behavior.
 
 ### Customized Menupopup
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Customized_Menu.png)
+![Listbox Columns Customized Menu](/zk_component_ref/images/ZKComRef_Listbox_Columns_Customized_Menu.png)
 
 ```xml
     <menupopup id="editPopup">

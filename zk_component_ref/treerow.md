@@ -19,7 +19,7 @@ Treerows are used whenever you need to display hierarchical data in a tree struc
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Treeitem.png)
+![Treeitem](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px">

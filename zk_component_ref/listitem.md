@@ -16,7 +16,7 @@ A list item.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
+![Listbox Example](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
 ```xml
  <window title="listbox demo" border="normal" width="250px">
@@ -132,8 +132,8 @@ zul.jar. The mold of listitem is decided by the mold of listbox.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/listbox_mold_default.png) |
-| select | ![](/zk_component_ref/images/listbox_mold_select.png) |
+| default | ![Listbox mold default](/zk_component_ref/images/listbox_mold_default.png) |
+| select | ![Listbox mold select](/zk_component_ref/images/listbox_mold_select.png) |
 
 # Supported Children
 

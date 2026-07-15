@@ -24,7 +24,7 @@ avoid end-users from inputting a non-existed item.
 
 # Example
 
-![](/zk_component_ref/images/Searchbox-example.png)
+![Searchbox example](/zk_component_ref/images/Searchbox-example.png)
 
 ```xml
 <zscript>

@@ -21,7 +21,7 @@ A slider component represents a slider with a scale and a knob. It can be used t
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Slider.png)
+![Slider](/zk_component_ref/images/ZKComRef_Slider.png)
 
 ```xml
   <slider id="slider" orient="vertical"/>
@@ -33,7 +33,7 @@ A slider component represents a slider with a scale and a knob. It can be used t
 {% include supported-since.html version="7.0.1" %} Slider supports minimal position,
 which can be changed by the minpos property as follows.
 
-![](/zk_component_ref/images/min_slider.png)
+![Min slider](/zk_component_ref/images/min_slider.png)
 
 ```xml
   <slider minpos="30"/>
@@ -48,7 +48,7 @@ position.
 {% include supported-since.html version="7.0.1" %} Set the mode property to "decimal"
 will enable decimal slider. So the slider can represent decimal number.
 
-![](/zk_component_ref/images/dec_slider.png)
+![Dec slider](/zk_component_ref/images/dec_slider.png)
 
 ```xml
   <slider mode="decimal" step="0.1"/>
@@ -77,7 +77,7 @@ slider in the range of 10.0 to 12.0. As the below picture shows, the
 default decimal show the value contains only one digit in fractional
 part.
 
-![](/zk_component_ref/images/dec_slider_no_step.png)
+![Dec slider no step](/zk_component_ref/images/dec_slider_no_step.png)
 
 If we want to retrieve the value which contains two digits in fractional
 part, we can set the step value to 0.01. Then the value will increase as
@@ -85,7 +85,7 @@ part, we can set the step value to 0.01. Then the value will increase as
 0.05, the value will increase as 10.05, 10.10, 10.15 on each step, as
 below.
 
-![](/zk_component_ref/images/dec_slider_step.png)
+![Dec slider step](/zk_component_ref/images/dec_slider_step.png)
 
 ```xml
   <slider mode="decimal" minpos="10.0" maxpos="12.0" step="0.05"/>
@@ -95,7 +95,7 @@ below.
 
 {% include supported-since.html version="8.6.0" %} Set the mold property to "knob" to enable the knob slider, which acts as a circular dial. The knob can be controlled by wheel, drag, click, or by entering a value directly into the input element.
 
-![](/zk_component_ref/images/knob360.png)
+![Knob360](/zk_component_ref/images/knob360.png)
 
 ```xml
 <slider mold="knob" minpos="0.0" maxpos="100.0" curpos="80.5" step="0.5" strokeWidth="40"/>
@@ -116,23 +116,23 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 
 **default**
 
-![](/zk_component_ref/images/slider_mold_default.png)
+![Slider mold default](/zk_component_ref/images/slider_mold_default.png)
 
 **sphere**
 
-![](/zk_component_ref/images/slider_mold_sphere.png)
+![Slider mold sphere](/zk_component_ref/images/slider_mold_sphere.png)
 
 **scale**
 
 {% include supported-since.html version="7.0.0" %} The scale mold is deprecated because designs have been changed.
 
-![](/zk_component_ref/images/slider_mold_scale.png)
+![Slider mold scale](/zk_component_ref/images/slider_mold_scale.png)
 
 **knob**
 
 {% include supported-since.html version="8.6.0" %}
 
-![](/zk_component_ref/images/knob270.png)
+![Knob270](/zk_component_ref/images/knob270.png)
 
 # Supported Children
 

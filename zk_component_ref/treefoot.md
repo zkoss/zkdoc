@@ -43,7 +43,7 @@ Each `<treefooter>` maps positionally to the `<treecol>` at the same index. The 
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
+![Tree Example](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px" >

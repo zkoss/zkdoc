@@ -362,15 +362,15 @@ and a user with "ROLE_USER" can see a disabled "Delete" button. But a
 user with "ROLE_EDITOR" can see the "Delete" button and be able to click
 it.
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring_security_anonymous.png)
+![Spring security anonymous]({{site.baseurl}}/zk_dev_ref/images/spring_security_anonymous.png)
 
 **What a anonymous user see**
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring_security_user.png)
+![Spring security user]({{site.baseurl}}/zk_dev_ref/images/spring_security_user.png)
 
 **What a user with "ROLE_USER" see**
 
-![]({{site.baseurl}}/zk_dev_ref/images/spring_security_editor.png)
+![Spring security editor]({{site.baseurl}}/zk_dev_ref/images/spring_security_editor.png)
 
 **What a user with "ROLE_EDITOR" see**
 

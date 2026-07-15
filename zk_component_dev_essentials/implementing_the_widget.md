@@ -7,7 +7,7 @@ toc: true
 
 Every widget class in ZK must extend from `zk.Widget` or one of its derived classes. ZK provides several skeletal implementations that serve as base classes for different types of widgets:
 
-![](images/ZKComDevEss_widget_hierarchy.png)
+![Widget hierarchy](images/ZKComDevEss_widget_hierarchy.png)
 
 ### Widget Hierarchy Overview
 

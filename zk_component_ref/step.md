@@ -54,7 +54,7 @@ Use `iconSclass` to replace the default step icon with any ZK icon font class. T
 
 # Example
 
-![](/zk_component_ref/images/Stepbar-example.png)
+![Stepbar example](/zk_component_ref/images/Stepbar-example.png)
 
 ```xml
 <zk>
@@ -73,14 +73,14 @@ Use `iconSclass` to replace the default step icon with any ZK icon font class. T
 Whether this step is completed. (Default: false)
 
 The default visual style:
-![](/zk_component_ref/images/Step-complete-default.png)
+![Step complete default](/zk_component_ref/images/Step-complete-default.png)
 
 ## Error
 
 Whether this step is in error. (Default: false)
 
 The default visual style:
-![](/zk_component_ref/images/Step-error-default.png)
+![Step error default](/zk_component_ref/images/Step-error-default.png)
 
 The priority of `error` is higher than `complete`. If both properties
 are set, the result will be an error state visually.

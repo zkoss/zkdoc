@@ -13,4 +13,4 @@ Specifies whether always to show a processing mask when doing a lengthy
 operation on the server side. The mask will cover the whole page to
 prevent users from interacting with UI like:
 
-![](images/processing-mask-enabled.png)
+![Processing mask enabled](images/processing-mask-enabled.png)

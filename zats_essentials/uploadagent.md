@@ -29,7 +29,7 @@ and [ZK Component Reference/Essential Components/Fileupload]({{site.baseurl}}/zk
 and select a file to upload through a browser dialog, as illustrated
 below:
 
-![](images/Zats_upload_button.png)
+![Zats upload button](images/Zats_upload_button.png)
 
 **Notes**
 
@@ -89,7 +89,7 @@ handler.(See [ZK Component Reference/Essential Components/Fileupload#Invoke the 
 allow users to upload single or multiple files (if configured), as shown
 in the image below:
 
-![](images/Zats_upload_dialog.png)
+![Zats upload dialog](images/Zats_upload_dialog.png)
 
 ```xml
             <label id="label1" value="click label1 will invoke fileupload.get()" onClick="Fileupload.get();" />

@@ -24,7 +24,7 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
+![Borderlayout](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ```xml
 <borderlayout height="450px">
@@ -78,7 +78,7 @@ South, East, West and Center. The heights of North and South are firstly
 decided, the remainder space is then given to Center as its height. Note
 that East and West also takes on the height of Center.
 
-![](/zk_component_ref/images/DrBorderlayout.png)
+![Dr Borderlayout](/zk_component_ref/images/DrBorderlayout.png)
 
 ```xml
 <borderlayout width="100px" height="100px">
@@ -109,7 +109,7 @@ layout region does not take up all of layout region's space. In order
 for the child to occupy the whole area, please set vflex="1" to the
 child component.
 
-![](/zk_component_ref/images/DrBorderlayout_flex.png)
+![Dr Borderlayout flex](/zk_component_ref/images/DrBorderlayout_flex.png)
 
 ```xml
 <borderlayout width="100px" height="100px">
@@ -140,7 +140,7 @@ child component.
   this, specify autoscroll="true" to Center in order to assign Center to
   handle the scrolling.
 
-![](/zk_component_ref/images/DrBorderlayout_Center_scrolling.png)
+![Dr Borderlayout Center scrolling](/zk_component_ref/images/DrBorderlayout_Center_scrolling.png)
 
 ```xml
 <borderlayout width="300px" height="300px">
@@ -186,7 +186,7 @@ include supported-since.html version="7.0.2" %}
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
-![](/zk_component_ref/images/DrBorderlayout_grow.png)
+![Dr Borderlayout grow](/zk_component_ref/images/DrBorderlayout_grow.png)
 
 ```xml
 <borderlayout width="300px" vflex="min">

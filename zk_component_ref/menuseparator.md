@@ -21,7 +21,7 @@ For broader usage patterns shared across the menu family, see:
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Menuseparator.png)
+![Menuseparator](/zk_component_ref/images/ZKComRef_Menuseparator.png)
 
 ```xml
 <menubar>

@@ -19,7 +19,7 @@ completed. The value property must be in the range between 0 and 100.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Progressmeter_Example.PNG)
+![Progressmeter Example](/zk_component_ref/images/ZKComRef_Progressmeter_Example.PNG)
 
 ```xml
 <progressmeter value="10"/>

@@ -21,7 +21,7 @@ a list box. Its parent must be `Listhead`.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
+![Listbox Example](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
 ```xml
  <window title="listbox demo" border="normal" width="250px">

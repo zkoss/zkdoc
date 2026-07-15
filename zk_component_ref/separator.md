@@ -28,7 +28,7 @@ several ways to customize the separator.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Separator_Example.png)
+![Separator Example](/zk_component_ref/images/ZKComRef_Separator_Example.png)
 
 ```xml
  line 1 by separator

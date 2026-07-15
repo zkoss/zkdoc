@@ -1,6 +1,6 @@
 # Process AU Requests at Server
 
-![](images/ClientEventAuRequest.png)
+![Client Event Au Request](images/ClientEventAuRequest.png)
 
 A widget event ([zk.Event](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Event.html)) is
 converted to an AU request and then sent to the server. When the event

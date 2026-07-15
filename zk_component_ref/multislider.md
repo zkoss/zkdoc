@@ -29,7 +29,7 @@ property.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Multislider.png)
+![Multislider](/zk_component_ref/images/ZKComRef_Multislider.png)
 
 ```xml
   <multislider>

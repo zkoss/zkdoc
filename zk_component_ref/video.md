@@ -42,7 +42,7 @@ When loading a video from a CDN and pairing it with a `<track>` element for capt
 
 # Example
 
-![](/zk_component_ref/images/Player-Sample.png)
+![Player Sample](/zk_component_ref/images/Player-Sample.png)
 
 ```xml
  <video src="zk.mp4" controls="true" autoplay="true" loop="true" />

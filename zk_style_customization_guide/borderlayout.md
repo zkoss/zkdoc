@@ -133,7 +133,7 @@ East and West components. Check other variables from [ here](/zk_style_customiza
 Assume the image below is our target design for Borderlayout component
 and Splitter component.
 
-![](images/styleguide-borderlayout-design.png)
+![Styleguide borderlayout design](images/styleguide-borderlayout-design.png)
 
 ## Implementation Details
 
@@ -294,7 +294,7 @@ and Splitter component.
 
 ## Final result
 
-![](images/styleguide-borderlayout.png)
+![Styleguide borderlayout](images/styleguide-borderlayout.png)
 
 # Additional Customization
 

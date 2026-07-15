@@ -59,7 +59,7 @@ On screen sizes smaller than 400px, the grid will be removed and replace
 by a static template displaying the data as panels. This will improve
 readability and prevent component-level scrollbars.
 
-![]({{site.baseurl}}/zk_dev_ref/images/diagramgridresponsive1.gif)
+![Diagramgridresponsive1]({{site.baseurl}}/zk_dev_ref/images/diagramgridresponsive1.gif)
 
 We thus define two macro states:
 

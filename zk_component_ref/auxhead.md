@@ -18,7 +18,7 @@ Used to define a collection of auxiliary headers (`Auxheader`).
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Auxheader.png)
+![Auxheader](/zk_component_ref/images/ZKComRef_Auxheader.png)
 
 ```xml
 <grid>

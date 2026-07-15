@@ -62,7 +62,7 @@ When the image data is generated at runtime (e.g., a chart rendered to a byte ar
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Gimage_Example.png)
+![Gimage Example](/zk_component_ref/images/ZKComRef_Gimage_Example.png)
 
 ```xml
     <script type="text/javascript" content="zk.googleAPIkey='Your-Google-API-Key'"/>

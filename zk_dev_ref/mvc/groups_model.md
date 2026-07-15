@@ -64,7 +64,7 @@ follows:
 
 Then, the result
 
-![]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodel.png)
+![Drgroupsmodel]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodel.png)
 
 # Sorting and Regrouping
 
@@ -96,7 +96,7 @@ and re-grouping as described below:
     and
     [org.zkoss.zul.Column#setSortDescending(java.util.Comparator)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Column.html#setSortDescending(java.util.Comparator)).
 
-![](/zk_dev_ref/images/Grouping_model_explain.png)
+![Grouping model explain](/zk_dev_ref/images/Grouping_model_explain.png)
 
 # Example: Grouping Tabular Data
 
@@ -104,7 +104,7 @@ Suppose you have the data in a two-dimensional array (see below), and
 you want to allow the user to group them based on a field selected by
 the user (such as food's name or food's calories).
 
-![]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodelarray.png)
+![Drgroupsmodelarray]({{site.baseurl}}/zk_dev_ref/images/drgroupsmodelarray.png)
 
 ```java
 //Data

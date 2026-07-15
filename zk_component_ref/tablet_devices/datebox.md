@@ -9,7 +9,7 @@
 
 Big icons for tablet devices
 
-![](/zk_component_ref/images/Datebox_Tablet_Example.png)
+![Datebox Tablet Example](/zk_component_ref/images/Datebox_Tablet_Example.png)
 
 # Version History
 

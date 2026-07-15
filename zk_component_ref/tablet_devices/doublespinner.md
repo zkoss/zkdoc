@@ -9,7 +9,7 @@
 
 Big icons for tablet devices
 
-![](/zk_component_ref/images/Doublespinner_Tablet_Example.png)
+![Doublespinner Tablet Example](/zk_component_ref/images/Doublespinner_Tablet_Example.png)
 
 # Unsupported API
 

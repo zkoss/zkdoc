@@ -7,7 +7,7 @@ All source codes used in this book are available on [github](https://github.com/
 * [**zk-jpa**](https://github.com/zkoss/zkessentials/tree/zk-jpa): contains examples which integrate with Spring and
 persiste data into a database with JPA.
 
-![]({{site.baseurl}}/zk_essentials/images/ze-ch2-download-zip.png)
+![Download zip]({{site.baseurl}}/zk_essentials/images/ze-ch2-download-zip.png)
 
 You can click the "ZIP" icon to download the current selected branch as
 a zip file.
@@ -42,7 +42,7 @@ You have 2 options:
 After starting up, visit the URL http://localhost:8080/zkessentials/, and you should
 see the page below:
 
-![]({{site.baseurl}}/zk_essentials/images/ze-ch2-index.png)
+![Index]({{site.baseurl}}/zk_essentials/images/ze-ch2-index.png)
 
 # Project Structure
 The example project's folder structure follows Maven's default convention. We name Java packages according to each chapter, and each package contains the classes of that chapter. Some common classes are separated to an independent package as they are used in multiple chapters, e.g. the classes under `org.zkoss.essentials.entity.*` are entity class. We also define some service layer interfaces under `org.zkoss.essentials.service.*` because different chapters have different implementations.

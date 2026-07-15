@@ -18,4 +18,4 @@ For example:
   </library-property>
 ```
 
-![](images/Response_content_type_json.png)
+![Response content type json](images/Response_content_type_json.png)

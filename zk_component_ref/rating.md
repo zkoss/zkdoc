@@ -32,7 +32,7 @@ feedback across different domains.
 
 # Example
 
-![](/zk_component_ref/images/rating.gif)
+![Rating](/zk_component_ref/images/rating.gif)
 
 ## Default
 

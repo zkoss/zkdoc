@@ -51,7 +51,7 @@ Control the gap size with the `spacing` attribute (any valid CSS length value).
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Space_Example.png)
+![Space Example](/zk_component_ref/images/ZKComRef_Space_Example.png)
 
 ```xml
  <zk>

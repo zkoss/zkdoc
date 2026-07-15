@@ -85,7 +85,7 @@ Now, let's built our example application's main layout. create a new text file w
 
 Then, you can view the result from your browser as below:
 
-![ ]({{site.baseurl}}/zk_essentials/images/ze-ch3-layout.png)
+![Layout]({{site.baseurl}}/zk_essentials/images/ze-ch3-layout.png)
 
 # Construct User Interface with Components
 

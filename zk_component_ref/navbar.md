@@ -59,7 +59,7 @@ Bind `selectedItem` to a ViewModel property to control which `navitem` is highli
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Nav.png)
+![Nav](/zk_component_ref/images/ZKComRef_Nav.png)
 
 ```xml
 <navbar orient="vertical" width="200px">
@@ -99,8 +99,8 @@ A `navbar` could be placed in a vertical or horizontal orientation, the
 
 | Orient | Snapshot |
 |---|---|
-| horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_hor.png) |
-| vertical | ![](/zk_component_ref/images/ZKComRef_Nav.png) |
+| horizontal | ![Nav hor](/zk_component_ref/images/ZKComRef_Nav_hor.png) |
+| vertical | ![Nav](/zk_component_ref/images/ZKComRef_Nav.png) |
 
 ## Collapsed
 
@@ -108,10 +108,10 @@ A `navbar` can be collapsed, the `collapsed` attribute decides.
 
 | Collapsed | Orient | Snapshot |
 |---|---|---|
-| true | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_Hor_Cld.png) |
-| false | horizontal | ![](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png) |
-| true | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png) |
-| false | vertical | ![](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png) |
+| true | horizontal | ![Nav Hor Cld](/zk_component_ref/images/ZKComRef_Nav_Hor_Cld.png) |
+| false | horizontal | ![Nav Hor No](/zk_component_ref/images/ZKComRef_Nav_Hor_No.png) |
+| true | vertical | ![Nav Ver Cld](/zk_component_ref/images/ZKComRef_Nav_Ver_Cld.png) |
+| false | vertical | ![Nav Ver No](/zk_component_ref/images/ZKComRef_Nav_Ver_No.png) |
 
 ## Autoclose
 

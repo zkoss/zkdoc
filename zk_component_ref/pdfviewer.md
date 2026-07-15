@@ -64,7 +64,7 @@ Display landscape PDFs or scanned documents in the correct orientation using `ro
 
 # Example
 
-![](/zk_component_ref/images/ZK-pdfviewer-example.png)
+![ZK pdfviewer example](/zk_component_ref/images/ZK-pdfviewer-example.png)
 
 ```xml
 <pdfviewer src="/pdf/sample.pdf" />

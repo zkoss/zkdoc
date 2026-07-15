@@ -22,7 +22,7 @@ See also: [Tree — Use Cases]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Tree_Example.png)
+![Tree Example](/zk_component_ref/images/ZKComRef_Tree_Example.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px" >

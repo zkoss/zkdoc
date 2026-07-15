@@ -28,7 +28,7 @@ component in line 8:
 We can see that only the first button has been applied ***.mybutton***
 style.
 
-![](images/styleguide-sclass.png)
+![Styleguide sclass](images/styleguide-sclass.png)
 
 # Using Zclass
 
@@ -52,7 +52,7 @@ and gradient background style like the following
 you can see that the button looses its default style such as font size
 and border style as illustrated below:
 
-![](images/styleguide-zclass.png)
+![Styleguide zclass](images/styleguide-zclass.png)
 
 **Note**: Applying zclass will lose all default styles, make sure you
 really want to customize the entire look and feel of the component
@@ -85,7 +85,7 @@ do the job:
 
 you can see that the style is not applied.
 
-![](images/styleguide-sclass-advanced1.png)
+![Styleguide sclass advanced1](images/styleguide-sclass-advanced1.png)
 
 However, we can use CSS class rule with "***sclass zclass***" pattern to
 achieve this goal. Modify the style like the following:
@@ -110,4 +110,4 @@ achieve this goal. Modify the style like the following:
 
 the style is now correctly applied.
 
-![](images/styleguide-sclass-advanced2.png)
+![Styleguide sclass advanced2](images/styleguide-sclass-advanced2.png)

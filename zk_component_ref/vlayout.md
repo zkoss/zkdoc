@@ -36,7 +36,7 @@ instead.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
+![Hlayout Simple Example](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
 
 ```xml
 <zk>

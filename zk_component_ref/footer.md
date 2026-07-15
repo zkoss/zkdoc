@@ -19,7 +19,7 @@ See [Grid — Common Use Cases]({{site.baseurl}}/zk_component_ref/grid#common-us
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Foot_Example.png)
+![Foot Example](/zk_component_ref/images/ZKComRef_Foot_Example.png)
 
 ```xml
  <grid width="300px">

@@ -16,7 +16,7 @@ Automatically disabled APIs:
 
 Big icons for tablet devices
 
-![](/zk_component_ref/images/Combobox_Tablet_Example.png)
+![Combobox Tablet Example](/zk_component_ref/images/Combobox_Tablet_Example.png)
 
 # Version History
 

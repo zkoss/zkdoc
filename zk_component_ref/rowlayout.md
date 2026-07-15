@@ -18,7 +18,7 @@ skip columns for extra space without inserting space-inducing elements.
 The following diagram illustrates the rowlayout/rowchildren components
 and their various configurable parameters.
 
-![](/zk_component_ref/images/ZKComRef_Rowlayout.PNG )
+![Rowlayout](/zk_component_ref/images/ZKComRef_Rowlayout.PNG )
 
 # Example
 
@@ -67,7 +67,7 @@ columns to skip ahead.
     </rowlayout>
 ```
 
-The above examples look like: ![](images/Rowlayout-examples.png)
+The above examples look like: ![Rowlayout examples](images/Rowlayout-examples.png)
 
 ## Common Use Cases
 

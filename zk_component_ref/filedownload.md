@@ -20,7 +20,7 @@ window, a file download dialog is shown at the browser if one of the
 `save` methods is called. Then, the user can specify the location in his
 local file system to save the file.
 
-![](/zk_component_ref/images/10000000000002AF000001BB582C2DD7.png)
+![Employment/Purpose](/zk_component_ref/images/10000000000002AF000001BB582C2DD7.png)
 
 ```xml
 <button label="Download">
@@ -113,7 +113,7 @@ Internet Explorer 6, 7, and 8[^1] will show up a warning message on top
 of the browser as snapshot below ("To help protect your security,
 Internet Explorer...").
 
-![](/zk_component_ref/images/IePreventDownload.png)
+![Ie Prevent Download](/zk_component_ref/images/IePreventDownload.png)
 
 If a user allows the download (right-click and select
 `Download File...`), IE will eventually reload the page. It means the

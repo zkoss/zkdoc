@@ -49,7 +49,7 @@ Set `orient="vertical"` to embed the rangeslider alongside a chart axis or timel
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Rangeslider.png)
+![Rangeslider](/zk_component_ref/images/ZKComRef_Rangeslider.png)
 
 ```xml
   <rangeslider startValue="10" endValue="90"/>
@@ -118,7 +118,7 @@ minimum value. (if min is 0, then it displays "0 20 40 ...")
 If the MarkScale is 0 and there is no Map information in Marks (see
 above), the marks will be empty.
 
-![](/zk_component_ref/images/ZKComRef_RangesliderNoMarks.png)
+![Rangeslider No Marks](/zk_component_ref/images/ZKComRef_RangesliderNoMarks.png)
 
 ## Max
 

@@ -21,7 +21,7 @@ all kinds of components) to form a complicated layout.
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
+![Golden Layout](/zk_component_ref/images/ZKCompRef_GoldenLayout.png )
 
 ```xml
     <goldenlayout vflex="1" hflex="1">
@@ -162,7 +162,7 @@ From the example above, it's possible to divide in two ways.
 
 | areas | vertical | horizontal |
 |---|---|---|
-| ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png) | ![](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png) |
+| ![Golden Layout areas](/zk_component_ref/images/ZKCompRef_GoldenLayout_areas.png) | ![Golden Layout vertical](/zk_component_ref/images/ZKCompRef_GoldenLayout_vertical.png) | ![Golden Layout horizontal](/zk_component_ref/images/ZKCompRef_GoldenLayout_horizontal.png) |
 
 ## Adding GoldenPanels
 
@@ -175,23 +175,23 @@ in [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/or
 
 north
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_north.png)
+![Golden Layout region north](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_north.png)
 
 east
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_east.png)
+![Golden Layout region east](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_east.png)
 
 south
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_south.png)
+![Golden Layout region south](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_south.png)
 
 west
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_west.png)
+![Golden Layout region west](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_west.png)
 
 stack
 
-![](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_stack.png)
+![Golden Layout region stack](/zk_component_ref/images/ZKCompRef_GoldenLayout_region_stack.png)
 
 # Supported Events
 

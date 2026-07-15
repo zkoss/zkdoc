@@ -17,7 +17,7 @@ For example,
 <window contentStyle="overflow:auto">
 ```
 
-![](/zk_component_ref/images/Window_Tablet_Scrolling_Example.png)
+![Window Tablet Scrolling Example](/zk_component_ref/images/Window_Tablet_Scrolling_Example.png)
 
 # Version History
 

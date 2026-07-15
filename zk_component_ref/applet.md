@@ -29,7 +29,7 @@ should not have to encode it again.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Applet_Examples.PNG)
+![Applet Examples](/zk_component_ref/images/ZKComRef_Applet_Examples.PNG)
 
 ```xml
     <applet codebase="img/" code="ticker.class" msg="ZK is Simple and Rich!" width="580px" />

@@ -42,7 +42,7 @@ lib. For more information, please check [JasperReports PDF Exporter Lib Seven](h
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Jasperreport_Examples.PNG)
+![Jasperreport Examples](/zk_component_ref/images/ZKComRef_Jasperreport_Examples.PNG)
 
 ```xml
     <jasperreport id="report" height="360px" />

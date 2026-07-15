@@ -8,7 +8,7 @@ title: "Load JavaScript and CSS from Server Nearby"
 > generate the URLs of JavaScript and CSS (and images it refers) from
 > the server near the clients.
 
-![]({{site.baseurl}}/zk_dev_ref/images/urlencoder.png)
+![Urlencoder]({{site.baseurl}}/zk_dev_ref/images/urlencoder.png)
 
 <span style="font-weight: bold;color:red;" >\*Notice :</span> the ZK
 static resource server is an application server which you <b>deploy only

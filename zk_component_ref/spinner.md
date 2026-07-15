@@ -38,7 +38,7 @@ Spinner supports in-place editing, so the input only becomes active when clicked
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Spinner.png)
+![Spinner](/zk_component_ref/images/ZKComRef_Spinner.png)
 
 ```xml
  <window title="Spinner" border="normal" width="150px">
@@ -117,8 +117,8 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 
 | Name     | Screenshot  |
 |----------|--------------------------------------------------------|
-| default  | ![](/zk_component_ref/images/spinner_mold_default.png) |
-| rounded  | ![](/zk_component_ref/images/spinner_mold_rounded.png) |
+| default  | ![Spinner mold default](/zk_component_ref/images/spinner_mold_default.png) |
+| rounded  | ![Spinner mold rounded](/zk_component_ref/images/spinner_mold_rounded.png) |
 
 {% include supported-since.html version="5.0.0" %} rounded mold is available.
 

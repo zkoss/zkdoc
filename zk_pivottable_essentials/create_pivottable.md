@@ -37,7 +37,7 @@ field,
 
 gives
 
-![](images/ZKPivotEsn_work_pivot_24.png)
+![ZKPivot Esn work pivot 24](images/ZKPivotEsn_work_pivot_24.png)
 
 and
 
@@ -47,7 +47,7 @@ and
 
 will give
 
-![](images/ZKPivotEsn_work_pivot_22.png)
+![ZKPivot Esn work pivot 22](images/ZKPivotEsn_work_pivot_22.png)
 
 ## Title Cells
 
@@ -65,7 +65,7 @@ For example,
 
 results in
 
-![](images/ZKPivotEsn_work_pivot_26.png)
+![ZKPivot Esn work pivot 26](images/ZKPivotEsn_work_pivot_26.png)
 
 ## Paging
 
@@ -78,7 +78,7 @@ example,
 <pivottable model="${model}" pageSize="10" dataOrient="row" />
 ```
 
-![](images/ZKPivotEsn_work_pivot_32.png)
+![ZKPivot Esn work pivot 32](images/ZKPivotEsn_work_pivot_32.png)
 
 Note:
 

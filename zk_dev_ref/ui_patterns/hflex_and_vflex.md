@@ -69,7 +69,7 @@ example,
 
 And, the result
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflex1.png)
+![Drflex1]({{site.baseurl}}/zk_dev_ref/images/drflex1.png)
 
 Here is another example that we'd like to grow the tabbox to fit the
 rest of the space:
@@ -97,7 +97,7 @@ Notice you could specify `style="overflow: auto"` in the tabpanel such
 that the scrollbar will be inside the tabbox rather than the browser
 window if the content is too large to fit.
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflextabbox.png)
+![Drflextabbox]({{site.baseurl}}/zk_dev_ref/images/drflextabbox.png)
 
 # Proportional Flexibility
 
@@ -115,7 +115,7 @@ take space proportionally per the given vflex/hflex value. For example,
 
 And, the result is
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflex2.png)
+![Drflex2]({{site.baseurl}}/zk_dev_ref/images/drflex2.png)
 
 Here is another example (hflex):
 
@@ -126,7 +126,7 @@ Here is another example (hflex):
 </hlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
+![Drflexerr1fix]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
 
 # Minimum Flexibility
 
@@ -158,7 +158,7 @@ just high/wide enough to hold all of its child components. Specifying
 </borderlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/vflexborderlayout.png)
+![Vflexborderlayout]({{site.baseurl}}/zk_dev_ref/images/vflexborderlayout.png)
 
 As you can see, the height of the north region of the outer borderlayout
 is determined by its child borderlayout. And the height of the inner
@@ -196,7 +196,7 @@ also determine its width upon its parent, which is 150px.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](/zk_dev_ref/images/ZK6DevRef_Vlayout_Hflex.png)</td>
+<td>![ZK6 Dev Ref Vlayout Hflex](/zk_dev_ref/images/ZK6DevRef_Vlayout_Hflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">vlayout</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span><span class="ot"> height=</span><span class="st">&quot;75px&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;150px&lt;/<span class="kw">div</span>&gt;</span>
@@ -216,7 +216,7 @@ height** of siblings, which is 30px in the following sample.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](/zk_dev_ref/images/ZK6DevRef_Hlayout_Vflex.png)</td>
+<td>![ZK6 Dev Ref Hlayout Vflex](/zk_dev_ref/images/ZK6DevRef_Hlayout_Vflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">hlayout</span><span class="ot"> width=</span><span class="st">&quot;100px&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">div</span><span class="ot"> hflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> vflex=</span><span class="st">&quot;1&quot;</span><span class="ot"> style=</span><span class="st">&quot;background: yellow&quot;</span>&gt;30px&lt;/<span class="kw">div</span>&gt;</span>
@@ -262,7 +262,7 @@ second as follows.
 
 The result is
 
-![]({{site.baseurl}}/zk_dev_ref/images/drgridflex.png)
+![Drgridflex]({{site.baseurl}}/zk_dev_ref/images/drgridflex.png)
 
 Notice that we also specify `hflex="1"` to the textbox, so it will take
 up the whole space.
@@ -275,7 +275,7 @@ set hflex="min" to Grid and each Column to keep Grid with minimal size.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex.png)</td>
+<td>![ZK5 Dev Ref Grid Column Form Hflex](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -304,7 +304,7 @@ hflex="1" to Datebox.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex2.png)</td>
+<td>![ZK5 Dev Ref Grid Column Form Hflex2](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex2.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -335,7 +335,7 @@ a Cell and set hflex="1" to the element.
 <table>
 <tbody>
 <tr class="odd">
-<td>![](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex_colspan.png)</td>
+<td>![ZK5 Dev Ref Grid Column Form Hflex colspan](/zk_dev_ref/images/ZK5DevRef_GridColumn_FormHflex_colspan.png)</td>
 <td><div class="sourceCode" id="cb1"><pre
 class="sourceCode xml"><code class="sourceCode xml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>&lt;<span class="kw">grid</span><span class="ot"> hflex=</span><span class="st">&quot;min&quot;</span>&gt;</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    &lt;<span class="kw">columns</span>&gt;</span>
@@ -493,7 +493,7 @@ but it makes it div eventually).
 
 And, the result is as follows - the width has no effect:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png)
+![Drflexerr1]({{site.baseurl}}/zk_dev_ref/images/drflexerr1.png)
 
 This limitation can be solved by the use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and
@@ -507,7 +507,7 @@ This limitation can be solved by the use of
 </hlayout>
 ```
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
+![Drflexerr1fix]({{site.baseurl}}/zk_dev_ref/images/drflexerr1fix.png)
 
 ## Hflex Must Align Correctly
 
@@ -524,7 +524,7 @@ its siblings. For example,
 As shown below, the second div is not aligned vertically with the first
 div, so is the width not as expected:
 
-![]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png)
+![Drflexerr2]({{site.baseurl}}/zk_dev_ref/images/drflexerr2.png)
 
 This limitation can be solved by use of
 [hlayout]({{site.baseurl}}/zk_component_ref/hlayout) and

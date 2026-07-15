@@ -19,11 +19,11 @@ An `intbox` is used to let users input integer data.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Intbox.png)
+![Intbox](/zk_component_ref/images/ZKComRef_Intbox.png)
 
 While input invalid data:
 
-![](/zk_component_ref/images/ZKComRef_Intbox2.png)
+![Intbox2](/zk_component_ref/images/ZKComRef_Intbox2.png)
 
 ```xml
  <window title="Intbox Demo" border="normal" width="200px">
@@ -60,8 +60,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/ZKComRef_Intbox.png) |
-| rounded | ![](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+| default | ![Intbox](/zk_component_ref/images/ZKComRef_Intbox.png) |
+| rounded | ![Spinner mold rounded](/zk_component_ref/images/Spinner_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

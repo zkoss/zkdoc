@@ -14,7 +14,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DEFAULT);
 ```
 
-![](images/DefaultTheme.png)
+![Default Theme](images/DefaultTheme.png)
 
 - Grid Theme
 
@@ -22,7 +22,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.GRID);
 ```
 
-![](images/GridTheme.png)
+![Grid Theme](images/GridTheme.png)
 
 - Skies Theme
 
@@ -30,7 +30,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.SKIES);
 ```
 
-![](images/SkiesTheme.png)
+![Skies Theme](images/SkiesTheme.png)
 
 - Gray Theme
 
@@ -38,7 +38,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.GRAY);
 ```
 
-![](images/GrayTheme.png)
+![Gray Theme](images/GrayTheme.png)
 
 - Dark Blue Theme
 
@@ -46,7 +46,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DARK_BLUE);
 ```
 
-![](images/DarkBlueTheme.png)
+![Dark Blue Theme](images/DarkBlueTheme.png)
 
 - Dark Green Theme
 
@@ -54,7 +54,7 @@ Here's a list of the themes in which you can choose from:
     chart.setTheme(Theme.DARK_GREEN);
 ```
 
-![](images/DarkGreenTheme.png)
+![Dark Green Theme](images/DarkGreenTheme.png)
 
 See all themes at
 [Theme](https://www.zkoss.org/javadoc/latest/zkcharts/org/zkoss/chart/Theme.html)
@@ -188,7 +188,7 @@ public class ColorfulColumnChartComposer extends SelectorComposer<Div> {
 }
 ```
 
-![](images/ColorfulColumnChartDemo.png)
+![Colorful Column Chart Demo](images/ColorfulColumnChartDemo.png)
 
 #### Radial Gradient
 
@@ -241,7 +241,7 @@ public class PacmanChartComposer extends SelectorComposer<Div> {
 }
 ```
 
-![](images/PacmanChartDemo.png)
+![Pacman Chart Demo](images/PacmanChartDemo.png)
 
 # Customize Axis Label with HTML
 
@@ -275,7 +275,7 @@ public class HtmlLabelComposer extends SelectorComposer<Component> {
 
 Then, the axis label will become a hyperlink. (see the image below)
 
-![](images/zkcharts-essentials-htmlLabel.png)
+![Zkcharts essentials html Label](images/zkcharts-essentials-htmlLabel.png)
 
 # Change Decimal Point or Thousands Separator
 

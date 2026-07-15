@@ -23,7 +23,7 @@ server.
 
 # Example
 
-![](/zk_component_ref/images/selectbox9.png)
+![Selectbox9](/zk_component_ref/images/selectbox9.png)
 
 ```xml
 <zk>

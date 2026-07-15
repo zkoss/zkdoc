@@ -18,7 +18,7 @@ A long`box` is used to let users input long data.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_longbox.jpg)
+![Longbox](/zk_component_ref/images/ZKComRef_longbox.jpg)
 
 ```xml
  <window title="Longbox Demo" border="normal" width="400px">
@@ -95,8 +95,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/longbox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/longbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+| default | ![Longbox mold default](/zk_component_ref/images/longbox_mold_default.png) |
+| rounded | ![Longbox mold rounded](/zk_component_ref/images/longbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

@@ -22,7 +22,7 @@ The cell of Tablelayout. Since ZK 6.0.0, the child component of Tablechildren ca
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
+![Tablelayout Example](/zk_component_ref/images/ZKComRef_Tablelayout_Example.PNG)
 
 ```xml
 <tablelayout columns="2">
@@ -53,7 +53,7 @@ The cell of Tablelayout. Since ZK 6.0.0, the child component of Tablechildren ca
 </tablelayout>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
+![Tablelayout Example ZK6](/zk_component_ref/images/ZKComRef_Tablelayout_Example_ZK6.PNG)
 
 ```xml
     <tablelayout columns="2">

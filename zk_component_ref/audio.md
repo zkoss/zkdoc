@@ -23,7 +23,7 @@ audio. Developers might be able to control the play of an audio by the
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Audio_Example.png)
+![Audio Example](/zk_component_ref/images/ZKComRef_Audio_Example.png)
 
 ```xml
  <audio src="music.wav" controls="true"></audio>

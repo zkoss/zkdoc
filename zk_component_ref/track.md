@@ -46,7 +46,7 @@ or [ Video]({{site.baseurl}}/zk_component_ref/video).
 
 # Example
 
-![](/zk_component_ref/images/Player-Sample.png)
+![Player Sample](/zk_component_ref/images/Player-Sample.png)
 
 ```xml
  <video src="course.mp4" controls="true">
@@ -57,7 +57,7 @@ or [ Video]({{site.baseurl}}/zk_component_ref/video).
  </video>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Audio_Example.png)
+![Audio Example](/zk_component_ref/images/ZKComRef_Audio_Example.png)
 
 ```xml
  <audio src="music.wav" controls="true">

@@ -22,7 +22,7 @@ element.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
+![Grid Example](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
     <grid>
@@ -97,7 +97,7 @@ each column.
 
 ### Auto
 
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
+![Grid Columns Menu](/zk_component_ref/images/ZKComRef_Grid_Columns_Menu.png)
 
 ```xml
     <grid>
@@ -111,7 +111,7 @@ each column.
 
 ### Customized Menupopup
 
-![](/zk_component_ref/images/ZKComRef_Grid_Columns_Customized_Menu.png)
+![Grid Columns Customized Menu](/zk_component_ref/images/ZKComRef_Grid_Columns_Customized_Menu.png)
 
 ```xml
 <window title="Column's Menu Demo" border="normal" width="500px">
@@ -138,7 +138,7 @@ columns as its column menu.
 Specifies whether a user is allowed to resize a column's width by
 dragging the vertical bar between two adjacent columns.
 
-![](/zk_component_ref/images/Sizable.png)
+![Sizable](/zk_component_ref/images/Sizable.png)
 
 ### Double-Click to Auto-Fit
 

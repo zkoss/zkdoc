@@ -33,7 +33,7 @@ from Model to change View's presentation.
 
 ## The Flow to Handle a User Action
 
-![](images/Tutorial-mvc.png)
+![Tutorial mvc](images/Tutorial-mvc.png)
 
 1.  When a user interacts with a component (e.g. click a button) on a
     ZUL, the user action triggers an event.

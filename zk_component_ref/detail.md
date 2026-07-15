@@ -20,7 +20,7 @@ The detail component is used to display a detailed section where a master row an
 
 # Example
 
-![](/zk_component_ref/images/detail.png)
+![Detail](/zk_component_ref/images/detail.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -5,7 +5,7 @@ title: "Client-Server Communication"
 The following diagram outlines how communication works between a ZK
 Widget and Component.
 
-![](images/ZKComDevEss_fire_event.png)
+![Fire event](images/ZKComDevEss_fire_event.png)
 
 [zk.Widget#fire(_global_.String, zk.Object, _global_.Map, int)](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zk.Widget.html#fire(_global_.String, zk.Object, _global_.Map, int))
 fires a client event (an instance of

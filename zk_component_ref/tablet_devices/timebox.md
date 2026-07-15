@@ -9,7 +9,7 @@
 
 Big icons for tablet devices
 
-![](/zk_component_ref/images/Timebox_Tablet_Example.png)
+![Timebox Tablet Example](/zk_component_ref/images/Timebox_Tablet_Example.png)
 
 # Version History
 

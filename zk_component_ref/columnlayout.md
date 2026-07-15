@@ -28,7 +28,7 @@ expected.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
+![Columnlayout Example](/zk_component_ref/images/ZKComRef_Columnlayout_Example.png)
 
 ```xml
     <columnlayout>
@@ -61,7 +61,7 @@ expected.
     </columnlayout>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Columnlayout_Example_ZK6.png)
+![Columnlayout Example ZK6](/zk_component_ref/images/ZKComRef_Columnlayout_Example_ZK6.png)
 
 ```xml
 <columnlayout>

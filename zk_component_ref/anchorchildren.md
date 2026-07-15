@@ -55,7 +55,7 @@ Use a negative pixel offset when a child should occupy almost all of the parent 
 
 # Example
 
-![]({{site.baseurl}}/zk_component_ref/images/zkcomref_anchorlayout_example.png)
+![Anchorlayout example]({{site.baseurl}}/zk_component_ref/images/zkcomref_anchorlayout_example.png)
 
 ```xml
 <window title="anchorlayout Demo" border="normal" 

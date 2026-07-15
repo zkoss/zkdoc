@@ -75,7 +75,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Pie Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart.png)
+![Chart](/zk_component_ref/images/ZKComRef_Chart.png)
 
 ```xml
 <chart id="mychart" title="Pie Chart Demo" width="550" height="400"
@@ -98,7 +98,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Pie Chart 3D
 
-![](/zk_component_ref/images/ZKComRef_Chart_Pie_3D.png)
+![Chart Pie 3 D](/zk_component_ref/images/ZKComRef_Chart_Pie_3D.png)
 
 ```xml
 <chart id="piechart3d" title="Pie Chart 3D" width="500" height="250"
@@ -116,7 +116,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Ring Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Ring.png)
+![Chart Ring](/zk_component_ref/images/ZKComRef_Chart_Ring.png)
 
 ```xml
 <chart id="ringchart" title="Ring Chart" width="500" height="250"
@@ -134,7 +134,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Bar Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Bar.png)
+![Chart Bar](/zk_component_ref/images/ZKComRef_Chart_Bar.png)
 
 ```xml
 <chart id="barchart" title="Bar Chart" width="500" height="250"
@@ -156,7 +156,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Bar Chart 3D
 
-![](/zk_component_ref/images/ZKComRef_Chart_Bar_3D.png)
+![Chart Bar 3 D](/zk_component_ref/images/ZKComRef_Chart_Bar_3D.png)
 
 ```xml
 <chart id="barchart3d" title="Bar Chart 3D" width="500" height="250"
@@ -178,7 +178,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Stacked Bar
 
-![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar.png)
+![Chart Stacked Bar](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar.png)
 
 ```xml
 <chart id="sbarchart" title="Stacked Bar" width="500" height="250"
@@ -200,7 +200,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Stacked Bar 3D
 
-![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar_3D.png)
+![Chart Stacked Bar 3 D](/zk_component_ref/images/ZKComRef_Chart_Stacked_Bar_3D.png)
 
 ```xml
 <chart id="sbarchart3d" title="Stacked Bar 3D" width="500"
@@ -222,7 +222,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Line Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Line.png)
+![Chart Line](/zk_component_ref/images/ZKComRef_Chart_Line.png)
 
 ```xml
 <chart id="linechart" title="Line Chart" width="500" height="250"
@@ -244,7 +244,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Line Chart 3D
 
-![](/zk_component_ref/images/ZKComRef_Chart_Line_3D.png)
+![Chart Line 3 D](/zk_component_ref/images/ZKComRef_Chart_Line_3D.png)
 
 ```xml
 <chart id="linechart3d" title="Line Chart 3D" width="500"
@@ -266,7 +266,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Area Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Area.png)
+![Chart Area](/zk_component_ref/images/ZKComRef_Chart_Area.png)
 
 ```xml
 <chart id="areachart" title="Area Chart" width="500" height="250"
@@ -288,7 +288,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Stacked Area Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Stacked_Area.png)
+![Chart Stacked Area](/zk_component_ref/images/ZKComRef_Chart_Stacked_Area.png)
 
 ```xml
 <chart id="sareachart" title="Stacked Area Chart" width="500"
@@ -310,7 +310,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Waterfall Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Waterfall.png)
+![Chart Waterfall](/zk_component_ref/images/ZKComRef_Chart_Waterfall.png)
 
 ```xml
 <chart id="waterfall" title="Waterfall Chart" width="500"
@@ -332,7 +332,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Polar Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Polar.png)
+![Chart Polar](/zk_component_ref/images/ZKComRef_Chart_Polar.png)
 
 ```xml
 <chart id="polar" title="Polar Chart" width="500" height="250"
@@ -355,7 +355,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Scatter Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Scatter.png)
+![Chart Scatter](/zk_component_ref/images/ZKComRef_Chart_Scatter.png)
 
 ```xml
 <chart id="scatter" title="Scatter Chart" width="500" height="250"
@@ -378,7 +378,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Time Series Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Timeseries.png)
+![Chart Timeseries](/zk_component_ref/images/ZKComRef_Chart_Timeseries.png)
 
 ```xml
 <chart id="timeseries" title="Time Series Chart" width="500"
@@ -401,7 +401,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## XY Area Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_XY_Area.png)
+![Chart XY Area](/zk_component_ref/images/ZKComRef_Chart_XY_Area.png)
 
 ```xml
 <chart id="xyarea" title="XY Area Chart" width="500" height="250"
@@ -424,7 +424,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## XY Line Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_XY_Line.png)
+![Chart XY Line](/zk_component_ref/images/ZKComRef_Chart_XY_Line.png)
 
 ```xml
 <chart id="xyline" title="XY Line Chart" width="500" height="250"
@@ -447,7 +447,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Step Area Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Step_Area.png)
+![Chart Step Area](/zk_component_ref/images/ZKComRef_Chart_Step_Area.png)
 
 ```xml
 <chart id="steparea" title="Step Area Chart" width="500"
@@ -470,7 +470,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Step Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Step.png)
+![Chart Step](/zk_component_ref/images/ZKComRef_Chart_Step.png)
 
 ```xml
 <chart id="step" title="Step Chart" width="500" height="250"
@@ -499,7 +499,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## XY Stacked Area Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_XY_Stacked_Area.png)
+![Chart XY Stacked Area](/zk_component_ref/images/ZKComRef_Chart_XY_Stacked_Area.png)
 
 ```xml
 <chart id="xystackedarea" title="XY Stacked Area Chart" width="500"
@@ -522,7 +522,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## XY Bar Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_XY_Bar.png)
+![Chart XY Bar](/zk_component_ref/images/ZKComRef_Chart_XY_Bar.png)
 
 ```xml
 <chart id="xybar" title="XY Bar Chart" width="500" height="250"
@@ -545,7 +545,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Histogram Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Histogram.png)
+![Chart Histogram](/zk_component_ref/images/ZKComRef_Chart_Histogram.png)
 
 ```xml
 <chart id="histogram" title="Histogram Chart" width="500"
@@ -568,7 +568,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Candlestick Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Candlestick.png)
+![Chart Candlestick](/zk_component_ref/images/ZKComRef_Chart_Candlestick.png)
 
 ```xml
 <chart id="candlestick" title="Candlestick Chart" width="500"
@@ -602,7 +602,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## High Low Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Highlow.png)
+![Chart Highlow](/zk_component_ref/images/ZKComRef_Chart_Highlow.png)
 
 ```xml
 <chart id="highlow" title="High Low Chart" width="500" height="250"
@@ -636,7 +636,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Bubble Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Bubble.png)
+![Chart Bubble](/zk_component_ref/images/ZKComRef_Chart_Bubble.png)
 
 ```xml
 <chart id="bubble" title="Bubble Chart" width="500" height="250"
@@ -659,7 +659,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Horizontal Bubble Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_HBubble.png)
+![Chart HBubble](/zk_component_ref/images/ZKComRef_Chart_HBubble.png)
 
 ```xml
 <chart id="hbubble" title="Horizontal Bubble Chart" width="500"
@@ -682,7 +682,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Wafer Map Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Wafer_Map.png)
+![Chart Wafer Map](/zk_component_ref/images/ZKComRef_Chart_Wafer_Map.png)
 
 ```xml
 <chart id="wafermap" title="Wafer Map Chart" width="500"
@@ -704,7 +704,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Gantt Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Gantt.png)
+![Chart Gantt](/zk_component_ref/images/ZKComRef_Chart_Gantt.png)
 
 ```xml
 <chart id="gantt" title="Gantt Chart" width="700" height="400"
@@ -752,7 +752,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Wind Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Wind.png)
+![Chart Wind](/zk_component_ref/images/ZKComRef_Chart_Wind.png)
 
 ```xml
 <chart id="wind" title="Wind Plot" width="700" height="400"
@@ -788,7 +788,7 @@ Use `type="time_series"` with an `XYModel` and set `period` and `dateFormat` for
 
 ## Dial Chart
 
-![](/zk_component_ref/images/ZKComRef_Chart_Dial.png)
+![Chart Dial](/zk_component_ref/images/ZKComRef_Chart_Dial.png)
 
 ```xml
 <window onOK="doOK()" width="350px">
@@ -1187,7 +1187,7 @@ employing a foreign language within your chart. The example demonstrates
 setting a font and using it with a foreign language, in this case
 Chinese.
 
-![](/zk_component_ref/images/ZKComRef_Chart_Font_Examples.png)
+![Chart Font Examples](/zk_component_ref/images/ZKComRef_Chart_Font_Examples.png)
 
 ```xml
     <zscript>

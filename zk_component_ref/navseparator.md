@@ -42,7 +42,7 @@ Place `<navseparator/>` between logically unrelated groups of `<navitem>` or `<n
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Navseparator.png)
+![Navseparator](/zk_component_ref/images/ZKComRef_Navseparator.png)
 
 ```xml
     <navbar orient="horizontal" collapsed="true">

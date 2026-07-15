@@ -25,7 +25,7 @@ Columns define the structure and behavior of a grid's vertical divisions:
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Grid_Example.png)
+![Grid Example](/zk_component_ref/images/ZKComRef_Grid_Example.png)
 
 ```xml
     <window title="Grid Demo" border="normal" width="50%">

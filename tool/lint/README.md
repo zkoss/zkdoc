@@ -20,8 +20,10 @@ Fast, runs on raw `.md` files. Custom rules understand Liquid syntax.
 |------|----|-----------------|
 | liquid-in-table-cell | ZK001 | `{% include X %}` inside a table cell where X emits block HTML |
 | blank-line-issues | ZK002 | Blank lines inside tables, missing blanks around fences, 2+ consecutive blanks |
+| missing-alt-text | ZK003 | Markdown image `![](path)` (or `![ ](path)`) with empty/whitespace alt text |
 
-ZK001 is report-only. ZK002 supports `--fix` (whitespace only, never touches content).
+ZK001 and ZK003 are report-only. ZK002 supports `--fix` (whitespace only, never touches content).
+Remediate ZK003 with `npm run fix-alt-text` (dry-run) / `npm run fix-alt-text-apply`.
 
 ## Tier 2 — Rendered validation (`lint-rendered.js`)
 

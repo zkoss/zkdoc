@@ -19,7 +19,7 @@ An edit box for holding an float point value (double).
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Doublebox_Examples.PNG)
+![Doublebox Examples](/zk_component_ref/images/ZKComRef_Doublebox_Examples.PNG)
 
 ```xml
  <doublebox value="2.3"/>
@@ -84,8 +84,8 @@ Available molds of a component are defined in lang.xml embedded in zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/Doublebox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/Doublebox_mold_rounded.png) |
+| default | ![Doublebox mold default](/zk_component_ref/images/Doublebox_mold_default.png) |
+| rounded | ![Doublebox mold rounded](/zk_component_ref/images/Doublebox_mold_rounded.png) |
 
 # Supported Children
 

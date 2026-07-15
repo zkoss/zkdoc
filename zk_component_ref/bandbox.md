@@ -26,7 +26,7 @@ to represent the popup window as a search dialog.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
+![Bandbox Example](/zk_component_ref/images/ZKComRef_Bandbox_Example.png)
 
 ```xml
     <bandbox>
@@ -86,7 +86,7 @@ and then close the popup.
 
 ## Autodrop
 
-![](/zk_component_ref/images/ZKComRef_Bandbox_Autodrop.PNG)
+![Bandbox Autodrop](/zk_component_ref/images/ZKComRef_Bandbox_Autodrop.PNG)
 
 By default, the popup window won’t be opened until user clicks the
 button, or presses `Alt+DOWN` on the keyboard. However, you can set the
@@ -279,8 +279,8 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/bandbox_mold_default.png) |
-| rounded | ![](/zk_component_ref/images/bandbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
+| default | ![Bandbox mold default](/zk_component_ref/images/bandbox_mold_default.png) |
+| rounded | ![Bandbox mold rounded](/zk_component_ref/images/bandbox_mold_rounded.png) {% include supported-since.html version="5.0.0" %} |
 
 # Supported Children
 

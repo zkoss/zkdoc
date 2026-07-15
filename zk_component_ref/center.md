@@ -31,7 +31,7 @@ child.
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
+![Borderlayout](/zk_component_ref/images/ZKCompRef_Borderlayout.jpg)
 
 ```xml
 <borderlayout height="450px">

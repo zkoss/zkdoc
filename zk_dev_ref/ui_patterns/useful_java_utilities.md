@@ -110,7 +110,7 @@ the operation is in progress or has finished. For example,
 Clients.showBusy(window, "Waiting for server...");
 ```
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png)
+![UIPattern Useful Java Util Clients show Busy](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showBusy.png)
 
 ## showNotification
 
@@ -128,7 +128,7 @@ Clients.showNotification(msg); // display a global notification box
 Clients.showNotification(msg, component); // display a notification box pointing to a component
 ```
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png)
+![UIPattern Useful Java Util Clients show Notification01](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification01.png)
 
 You can also specify its position, style, and duration (for
 auto-dismiss):
@@ -139,11 +139,11 @@ Clients.showNotification(msg, type, component, position, duration);
 
 Type determines the style of the notification box.
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png)
+![UIPattern Useful Java Util Clients show Notification02](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification02.png)
 
 Here are the available positions:
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png)
+![UIPattern Useful Java Util Clients show Notification03](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification03.png)
 
 ### Closable
 
@@ -155,7 +155,7 @@ let users close the notification box manually.
 Clients.showNotification(msg, closable); 
 ```
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png)
+![UIPattern Useful Java Util Clients show Notification04](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Clients_showNotification04.png)
 
 ### Multiline
 
@@ -210,7 +210,7 @@ interaction (e.g., left click).
 Unlike Notification, Toast supports multiple concurrent messages and
 will stack them on screen without replacing previously shown toasts.
 
-![](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
+![UIPattern Useful Java Util Toast01](/zk_dev_ref/images/ZKDevRef_UIPattern_UsefulJavaUtil_Toast01.png)
 
 ```java
 Toast.show(msg); // display a toast notification
@@ -263,7 +263,7 @@ the progress of a task.
 
 You can control a loadingbar with the LoadingbarControl.
 
-![]({{site.baseurl}}/zk_dev_ref/images/loadingbar.gif)
+![Loadingbar]({{site.baseurl}}/zk_dev_ref/images/loadingbar.gif)
 
 ```java
 // create a LoadingbarControl for control the loadingbar
@@ -282,7 +282,7 @@ loadingbarCtrl.start(20, "top", false);
 
 You can turn on/off the indeterminate animation:
 
-![]({{site.baseurl}}/zk_dev_ref/images/loadingbar2.gif)
+![Loadingbar2]({{site.baseurl}}/zk_dev_ref/images/loadingbar2.gif)
 
 ```java
 loadingbarCtrl.update(true); // set loadingbar indeterminate true

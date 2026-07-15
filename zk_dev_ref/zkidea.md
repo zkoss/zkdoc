@@ -13,12 +13,12 @@ The ZK IntelliJ IDEA Plugin is a dedicated tool designed to enhance the developm
 The plugin offers comprehensive support for ZUL files, the core of ZK's UI definition.
 
 *   **Code Completion:** Get intelligent suggestions for ZK components, attributes, and events as you type. This helps you write code faster and avoid typos.
-    ![](/zk_dev_ref/images/tag_code_completion.png)
-    ![](/zk_dev_ref/images/event_code_completion.png)
+    ![Tag code completion](/zk_dev_ref/images/tag_code_completion.png)
+    ![Event code completion](/zk_dev_ref/images/event_code_completion.png)
 *   **Class Navigation:**
     {% include supported-since.html version="0.1.2" %}
     Quickly navigate from a component tag or a view model reference in your ZUL file directly to the corresponding Java class or method declaration in your project.
-    ![](/zk_dev_ref/images/go_to_declaration.png)
+    ![Go to declaration](/zk_dev_ref/images/go_to_declaration.png)
 
 ## ZK Configuration File Support
 
@@ -28,7 +28,7 @@ The plugin provides content assistance and validation for ZK's XML configuration
     {% include supported-since.html version="0.4.0" %}
     Get code completion and validation for the ZK configuration file `zk.xml`. The namespace is `xmlns="http://www.zkoss.org/2005/zk/config"`.
 
-![](/zk_dev_ref/images/zk_config_code_completion.png)
+![Zk config code completion](/zk_dev_ref/images/zk_config_code_completion.png)
  
 *   **`lang-addon.xml` Support:**
     {% include supported-since.html version="0.4.0" %}
@@ -42,7 +42,7 @@ The plugin provides content assistance and validation for ZK's XML configuration
 
 For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provides code completion for ZK's MVVM annotations, such as `@init`, `@load`, `@bind`, `@save`, and `@command`.
 
-![](/zk_dev_ref/images/annotation_code_completion.png)
+![Annotation code completion](/zk_dev_ref/images/annotation_code_completion.png)
 
 ### Data Binding Navigation
 {% include supported-since.html version="0.6.0" %}
@@ -90,7 +90,7 @@ Plugin-provided templates merge seamlessly with your existing IntelliJ templates
 
 You can create new ZK projects easily using the bundled ZK Maven archetypes. This helps you set up a new ZK project with the correct structure and dependencies quickly.
 
-![](/zk_dev_ref/images/maven_archetype.png)
+![Maven archetype](/zk_dev_ref/images/maven_archetype.png)
 
 ## Feedback Menu
 
@@ -98,4 +98,4 @@ You can create new ZK projects easily using the bundled ZK Maven archetypes. Thi
 
 A "ZK Feedback" menu is available under the "Help" menu in IntelliJ IDEA. This provides convenient links to customer support, documentation, and a bug reporting form.
 
-![](/zk_dev_ref/images/zk_feedback_menu.png)
+![Zk feedback menu](/zk_dev_ref/images/zk_feedback_menu.png)

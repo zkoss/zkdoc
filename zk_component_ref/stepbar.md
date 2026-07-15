@@ -53,7 +53,7 @@ Stepbar is a navigation component suitable for displaying the progress of a mult
 
 # Example
 
-![](/zk_component_ref/images/stepbar-example.jpg)
+![Stepbar example](/zk_component_ref/images/stepbar-example.jpg)
 
 ```xml
 <zk>
@@ -105,7 +105,7 @@ Set whether the steps in this stepbar are displayed in order.
 
 Non-linear means users can toggle the active steps easily by clicking on any step even if the step is not the next one in the sequence. In linear mode, they can only activate in order.
 
-![](/zk_component_ref/images/Stepbar-linear.gif)
+![Stepbar linear](/zk_component_ref/images/Stepbar-linear.gif)
 
 ## Orient
 
@@ -149,9 +149,9 @@ renders a Step object with your data.
 
 Set whether the labels in children steps are wrapped. (Default: false)
 
-true: ![](/zk_component_ref/images/Stepber-WrappedLabels.png)
+true: ![Stepber Wrapped Labels](/zk_component_ref/images/Stepber-WrappedLabels.png)
 
-false: ![](/zk_component_ref/images/Stepbar-example.png)
+false: ![Stepbar example](/zk_component_ref/images/Stepbar-example.png)
 
 # Supported Events
 

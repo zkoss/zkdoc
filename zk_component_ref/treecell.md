@@ -19,7 +19,7 @@ contain any components in it, such as label, image, textbox etc.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Treeitem.png)
+![Treeitem](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px">

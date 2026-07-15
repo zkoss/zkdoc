@@ -41,17 +41,17 @@ the multi-selection and the select order.
 
 When no item is selected or focused, <b>emptyMessage</b> is visible.
 
-![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_01.png)
+![Comp REF Chosenbox msg Ex 01](/zk_component_ref/images/CompREF_Chosenbox_msgEx_01.png)
 
 When there is no data to be shown in the model and data 0 already
 selected, <b>noResultText</b> appears.
 
-![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_02.png)
+![Comp REF Chosenbox msg Ex 02](/zk_component_ref/images/CompREF_Chosenbox_msgEx_02.png)
 
 When there is no item in the model but it is creatable,
 <b>createMessage</b> appears.
 
-![](/zk_component_ref/images/CompREF_Chosenbox_msgEx_03.png)
+![Comp REF Chosenbox msg Ex 03](/zk_component_ref/images/CompREF_Chosenbox_msgEx_03.png)
 
 ```xml
     <zscript>
@@ -77,7 +77,7 @@ The rendering process is pretty fast with a few items but may cause
 performance issue when the model exceeds 40,000 items and rendering them
 all at once.
 
-![](/zk_component_ref/images/CompREF_Chosenbox_01.png)
+![Comp REF Chosenbox 01](/zk_component_ref/images/CompREF_Chosenbox_01.png)
 
 ```xml
     <zscript>

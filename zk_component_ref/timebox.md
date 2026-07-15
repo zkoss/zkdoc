@@ -19,7 +19,7 @@ An edit box for holding a time value. By default it works with a `java.util.Date
 
 # Example
 
-![](/zk_component_ref/images/ZKCompRef_Timebox.png)
+![Timebox](/zk_component_ref/images/ZKCompRef_Timebox.png)
 
 ```xml
 <timebox cols="11"/>

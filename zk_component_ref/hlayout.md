@@ -16,7 +16,7 @@ you need it, please use [ Hbox]({{site.baseurl}}/zk_component_ref/hbox) and [ Vb
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
+![Hlayout Simple Example](/zk_component_ref/images/ZKComRef_Hlayout_Simple_Example.PNG)
 
 ```xml
 <zk>

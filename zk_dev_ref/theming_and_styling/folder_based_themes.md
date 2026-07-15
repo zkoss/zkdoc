@@ -28,7 +28,7 @@ inside a folder, and become a basis for a new theme.
 The top level subdirectories for this folder should look similar to the
 figure below.
 
-![]({{site.baseurl}}/zk_dev_ref/images/theme_skeleton.png)
+![Theme skeleton]({{site.baseurl}}/zk_dev_ref/images/theme_skeleton.png)
 
 # Create a Folder-based Theme
 

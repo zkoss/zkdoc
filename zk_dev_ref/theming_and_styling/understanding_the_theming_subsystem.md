@@ -25,4 +25,4 @@ resources.
 Please refer to the subsections for more information on the constituent
 parts.
 
-![]({{site.baseurl}}/zk_dev_ref/images/themesubsystem.png)
+![Themesubsystem]({{site.baseurl}}/zk_dev_ref/images/themesubsystem.png)

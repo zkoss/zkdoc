@@ -40,7 +40,7 @@ column will appear as a column at the top of the tree.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Treeitem.png)
+![Treeitem](/zk_component_ref/images/ZKComRef_Treeitem.png)
 
 ```xml
 <window title="tree demo" border="normal" width="400px">

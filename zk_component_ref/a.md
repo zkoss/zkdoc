@@ -48,7 +48,7 @@ Use `autodisable="self"` to disable the anchor immediately on click and re-enabl
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
+![A Examples](/zk_component_ref/images/ZKComRef_A_Examples.PNG)
 
 ```xml
 <a href="http://www.zkoss.org" label="Visit ZK!"/>

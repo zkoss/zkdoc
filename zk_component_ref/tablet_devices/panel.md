@@ -16,7 +16,7 @@ For example,
 <panelchildren style="overflow:auto">
 ```
 
-![](/zk_component_ref/images/Panel_Tablet_Scrolling_Example.png)
+![Panel Tablet Scrolling Example](/zk_component_ref/images/Panel_Tablet_Scrolling_Example.png)
 
 # Version History
 

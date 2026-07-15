@@ -17,7 +17,7 @@ and you can choose one of them upon your architectural consideration.
 
 # Architecture of ZK
 
- ![ ]({{site.baseurl}}/zk_essentials/images/ze-ch1-simple-architecture.png)
+ ![Simple architecture]({{site.baseurl}}/zk_essentials/images/ze-ch1-simple-architecture.png)
 
 Above image is a simplified ZK architecture. When a browser visits a
 page of a ZK application, ZK creates components written in ZUL and
@@ -77,7 +77,7 @@ information. The central area displays the current main function. You
 must login before you can access other functions.
 
 **Example application - login**
-![]({{site.baseurl}}/zk_essentials/images/ze-ch8-login.png)
+![Login]({{site.baseurl}}/zk_essentials/images/ze-ch8-login.png)
 
 
 
@@ -89,7 +89,7 @@ functions, profile and todo list management, which are implemented by
 both the MVC and MVVM approach.
 
 **Example application - profile form**
-![]({{site.baseurl}}/zk_essentials/images/ze-ch1-profile.png)
+![Profile]({{site.baseurl}}/zk_essentials/images/ze-ch1-profile.png)
 
 
 
@@ -98,6 +98,6 @@ The image below shows the Todo list management function, you can create,
 delete, and update a todo item.
 
 **Example application - todo list**
-![]({{site.baseurl}}/zk_essentials/images/ze-ch1-todo.png)
+![Todo]({{site.baseurl}}/zk_essentials/images/ze-ch1-todo.png)
 
 

@@ -27,7 +27,7 @@ in its content.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
+![Listbox Example](/zk_component_ref/images/ZKComRef_Listbox_Example.png)
 
 ```xml
  <window title="listbox demo" border="normal" width="250px">
@@ -69,7 +69,7 @@ in its content.
 In theory, a list cell can contain any other components, as demonstrated
 below.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Example_ContainComponents.png)
+![Listbox Example Contain Components](/zk_component_ref/images/ZKComRef_Listbox_Example_ContainComponents.png)
 
 ```xml
  
@@ -116,7 +116,7 @@ Suggest using [ Selectbox](/zk_component_ref/selectbox).
 If the `select` mold is used, Listbox renders an HTML `<select>` tag
 instead.
 
-![](/zk_component_ref/images/1000000000000085000000343B08C7D1.png)
+![Select Mold](/zk_component_ref/images/1000000000000085000000343B08C7D1.png)
 
 ```xml
  
@@ -146,7 +146,7 @@ value to each item using the `setValue` method.
 
 This mold supports having Listgroups and renders them as HTML `<optgroup>`.
 
-![](/zk_component_ref/images/Select-mold-optgroup.png)
+![Select mold optgroup](/zk_component_ref/images/Select-mold-optgroup.png)
 
 ```xml
 <listbox mold="select">
@@ -303,11 +303,11 @@ To select multiple items, you can:
 
 - press `Ctrl` to select separate items:
 
-![](/zk_component_ref/images/listbox-select-separately.png)
+![Listbox select separately](/zk_component_ref/images/listbox-select-separately.png)
 
 - press `Shift` to select consecutive items:
 
-![](/zk_component_ref/images/listbox-select-consecutive.png)
+![Listbox select consecutive](/zk_component_ref/images/listbox-select-consecutive.png)
 
 ### Enable with a ListModel
 
@@ -335,7 +335,7 @@ model.setMultiple(true);
 The `checkmark` attribute controls whether to display a checkbox or a
 radio button in front of each list item.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Checkmark.png)
+![Listbox Checkmark](/zk_component_ref/images/ZKComRef_Listbox_Checkmark.png)
 
 In the following example, you will notice how a checkbox is added
 automatically when you move a list item from the left listbox to the
@@ -394,7 +394,7 @@ the right listbox to the left listbox.
 </zk>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Checkmark2.png)
+![Listbox Checkmark2](/zk_component_ref/images/ZKComRef_Listbox_Checkmark2.png)
 
 Note: If the `multiple` attribute is false, radio buttons are displayed
 instead, as demonstrated by the right hand listbox.
@@ -490,7 +490,7 @@ The simplest way is `sort="auto"`. Then, when a user clicks a
 listheader, listbox sorts the column based on the **'label** of each
 listcell in a **case-insensitive** way.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Sorting.png)
+![Listbox Sorting](/zk_component_ref/images/ZKComRef_Listbox_Sorting.png)
 
 ```xml
  
@@ -514,7 +514,7 @@ property to sort. By default, it sorts in a case-sensitive way with
 In the following example, we demonstrate how to sort a person object
 based on its First Name, Last Name, or Age.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Auto_Sorting.png)
+![Listbox Auto Sorting](/zk_component_ref/images/ZKComRef_Listbox_Auto_Sorting.png)
 
 ```xml
     <zscript>
@@ -687,7 +687,7 @@ interface for rendering a item of data into the listbox.
 3 Set the data in the `model` attribute and, optionally, the renderer in
 the `itemRenderer` attribute.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_LiveData.png)
+![Listbox Live Data](/zk_component_ref/images/ZKComRef_Listbox_LiveData.png)
 
 In the following example, we prepared a list model called `strset`,
 assigned it to a list box through the `model` attribute. Then, the
@@ -815,7 +815,7 @@ the visible area into the current view (visible area), you can call
 
 For example, {% include supported-since.html version="6.5.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
+![Listbox Columns Menu](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu.PNG)
 
 ```xml
 <zk>
@@ -841,7 +841,7 @@ show an ungroup icon for user to reset the group. <!--REQUIRED ZK EDITION: EE --
 {% include edition-availability.html edition="ee" %} {%
 include supported-since.html version="6.5.0" %}
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
+![Listbox Columns Menu Ungroup](/zk_component_ref/images/ZKComRef_Listbox_Columns_Menu_Ungroup.PNG)
 
 **Note:** If the Listbox contains with Model, *GroupsModel*, you have to
 register an *onUngroup* event for listheader to show an ungroup icon and
@@ -900,7 +900,7 @@ to display data in an advanced way. Moreover, live data are also
 supported in Grouping Grid, and Listbox with the
 [org.zkoss.zul.GroupsModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/GroupsModel.html) interface..
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
+![Listbox Grouping](/zk_component_ref/images/ZKComRef_Listbox_Grouping.png)
 
 ```xml
 <zk>
@@ -1028,7 +1028,7 @@ the `z-focus-a` button.
 The simplest format is as follows. It is a single-column and
 single-selection list box.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_SingleColumn.png)
+![Listbox Single Column](/zk_component_ref/images/ZKComRef_Listbox_SingleColumn.png)
 
 ```xml
  
@@ -1050,7 +1050,7 @@ To define a multi-column list, the number of listcells must match the
 number of columns with a row. For example if there are 4 columns then
 each row must contain 4 listcells.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_MultiColumn.png)
+![Listbox Multi Column](/zk_component_ref/images/ZKComRef_Listbox_MultiColumn.png)
 
 ```xml
 <zk>
@@ -1077,7 +1077,7 @@ You can specify column headers by using `listhead` and `listheader`,
 please see the code below[^2]. In addition to a label, you can specify
 an image as the header by `image` attribute.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_ColumnHeaders.png)
+![Listbox Column Headers](/zk_component_ref/images/ZKComRef_Listbox_ColumnHeaders.png)
 
 ```xml
  
@@ -1097,7 +1097,7 @@ You could specify the column footers by using `listfoot` and
 list box, it must be the first child, and a `listfoot` instance the last
 child.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_ColumnFooters.png)
+![Listbox Column Footers](/zk_component_ref/images/ZKComRef_Listbox_ColumnFooters.png)
 
 ```xml
  
@@ -1145,7 +1145,7 @@ You can create a drop-down list by setting the listbox's mold to select
 and making the box a single row. Notice you cannot use multi-column for
 the drop-down list.
 
-![](/zk_component_ref/images/1000000000000049000000488DCF4463.png)
+![Drop-Down List](/zk_component_ref/images/1000000000000049000000488DCF4463.png)
 
 ```xml
  
@@ -1165,7 +1165,7 @@ A list box will be scrollable if it has a defined or automatically
 calculated height (e.g. by specifying the `rows`, `height` or `vflex`
 attribute) and there is not enough space to display all the list items.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Scrollable.png)
+![Listbox Scrollable](/zk_component_ref/images/ZKComRef_Listbox_Scrollable.png)
 
 ```xml
  
@@ -1239,12 +1239,12 @@ result.
 {% include supported-since.html version="5.0.6" %} By default, when sizedByContent is
 true, the listheaders only take the required space.
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Nospan.png)
+![Listbox Nospan](/zk_component_ref/images/ZKComRef_Listbox_Nospan.png)
 
 If you want to span the width of the listheaders to occupy the whole
 listbox, you can specify true to this attribute
 
-![](/zk_component_ref/images/ZKComRef_Listbox_Span.png)
+![Listbox Span](/zk_component_ref/images/ZKComRef_Listbox_Span.png)
 
 ```xml
 <listbox sizedByContent="true" span="true" width="800px">
@@ -1267,7 +1267,7 @@ listbox, you can specify true to this attribute
 
 See
 [listbox-sizedByContent.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/listbox/listbox-sizedByContent.zul)
-![](/zk_component_ref/images/listbox-sizedByContent.png)
+![Listbox sized By Content](/zk_component_ref/images/listbox-sizedByContent.png)
 
 ## Rows
 
@@ -1324,7 +1324,7 @@ the auto-fitting functionality. {% include supported-since.html version="5.0.0" 
 
 ## The onAfterRender Event
 
-![](/zk_component_ref/images/listbox_onAfterRender.png)
+![Listbox on After Render](/zk_component_ref/images/listbox_onAfterRender.png)
 
 ```xml
 <zk>
@@ -1593,9 +1593,9 @@ zul.jar.
 
 | Name | Snapshot |
 |---|---|
-| default | ![](/zk_component_ref/images/listbox_mold_default.png) |
-| select | ![](/zk_component_ref/images/listbox_mold_select.png) |
-| paging | ![](/zk_component_ref/images/listbox_mold_paging.png) |
+| default | ![Listbox mold default](/zk_component_ref/images/listbox_mold_default.png) |
+| select | ![Listbox mold select](/zk_component_ref/images/listbox_mold_select.png) |
+| paging | ![Listbox mold paging](/zk_component_ref/images/listbox_mold_paging.png) |
 
 # Supported Children
 

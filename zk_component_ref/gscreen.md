@@ -14,7 +14,7 @@ display, etc.
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Gscreen_Example.png)
+![Gscreen Example](/zk_component_ref/images/ZKComRef_Gscreen_Example.png)
 
 ```xml
 <window title="Google Maps" border="normal" width="520px">

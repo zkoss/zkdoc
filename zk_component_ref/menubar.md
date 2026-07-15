@@ -69,7 +69,7 @@ When the menubar width is constrained and there are many top-level menus, enable
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Menubar.png)
+![Menubar](/zk_component_ref/images/ZKComRef_Menubar.png)
 
 ```xml
 <menubar id="menubar">
@@ -175,7 +175,7 @@ Sets the orientation of the menubar. Accepted values:
 The code below demonstrates how easy it is to make the Menubar
 scrollable!
 
-![](/zk_component_ref/images/scrollableMenu.gif)
+![Scrollable Menu](/zk_component_ref/images/scrollableMenu.gif)
 
 ```xml
 <menubar width="200px" scrollable="true">

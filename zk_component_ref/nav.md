@@ -63,7 +63,7 @@ Add a `badgeText` attribute to surface a count badge on the group header without
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Nav.png)
+![Nav](/zk_component_ref/images/ZKComRef_Nav.png)
 
 ```xml
 <navbar orient="vertical" width="200px">

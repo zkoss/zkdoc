@@ -54,7 +54,7 @@ Use `rowspan` and `colspan` together to create complex grid layouts, such as a h
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Cell_Example.png)
+![Cell Example](/zk_component_ref/images/ZKComRef_Cell_Example.png)
 
 ```xml
 <zk>
@@ -95,7 +95,7 @@ Use `rowspan` and `colspan` together to create complex grid layouts, such as a h
 </zk>
 ```
 
-![](/zk_component_ref/images/ZKComRef_Cell_Example_Hbox.png)
+![Cell Example Hbox](/zk_component_ref/images/ZKComRef_Cell_Example_Hbox.png)
 
 ```xml
 <zk>

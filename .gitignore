@@ -1,4 +1,6 @@
 tool/node_modules
+tool/alt-text-report.txt
+tool/image-check-report.txt
 venv
 logs
 .jekyll-metadata

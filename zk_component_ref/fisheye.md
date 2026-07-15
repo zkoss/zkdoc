@@ -22,7 +22,7 @@ A fisheye item
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_fisheyebar.png)
+![Fisheyebar](/zk_component_ref/images/ZKComRef_fisheyebar.png)
 
 ```xml
 <zk>

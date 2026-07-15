@@ -35,7 +35,7 @@ The component wraps [Trumbowyg](http://alex-d.github.io/Trumbowyg/)
 
 # Example
 
-![](/zk_component_ref/images/Zkcompref_tbeditor.png )
+![Tbeditor](/zk_component_ref/images/Zkcompref_tbeditor.png )
 
 ```xml
 <tbeditor id="tb" value="this is a demo for &lt;b&gt;trumbowy&lt;/b&gt; editor!!" />

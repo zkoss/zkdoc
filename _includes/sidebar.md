@@ -1,7 +1,7 @@
 # Sidebar
 Let's start from making the sidebar work.
 
-![]({{site.baseurl}}/zk_essentials/images/sidebar.png)
+![Sidebar]({{site.baseurl}}/zk_essentials/images/sidebar.png)
 
 I build it with `<grid>` and 2 columns, a table-looking component.
 ```xml

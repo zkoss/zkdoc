@@ -10,7 +10,7 @@ points, ZK Charts won't render that series.
 
 Please run **turboThreshold.zul** in the example project, and you will
 see no series rendered after you click "add 1000 non-number points"
-button. ![](images/Zkcharts-essentials-overTurboThreshold.png) If
+button. ![Zkcharts essentials over Turbo Threshold](images/Zkcharts-essentials-overTurboThreshold.png) If
 you open chrome developer tool / console tab, you will see the error
 message below:
 

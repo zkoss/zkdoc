@@ -5,7 +5,7 @@ determine a bottleneck in a slow performing ZK application.
 Additionally, it offers some conclusions and tips, what the next steps
 would be after identifying the problem area.
 
-A flow chart to summarize the whole troubleshooting process: ![](/zk_dev_ref/images/performance_debug.png)
+A flow chart to summarize the whole troubleshooting process: ![Performance debug](/zk_dev_ref/images/performance_debug.png)
 
 ## Identify the Bottleneck
 
@@ -21,7 +21,7 @@ browsers provide very sophisticated tools supporting the search for a
 bottleneck and draw some conclusions, and eliminate other possible
 causes easily.
 
-![](/zk_dev_ref/images/chrome_developer_tools_network.png)
+![Chrome developer tools network](/zk_dev_ref/images/chrome_developer_tools_network.png)
 
 Developer tools > Network :  
 * Chrome -> F12 / CTRL + SHIFT + I
@@ -54,7 +54,7 @@ NO (dynamic request into ZK application)
 
 (wording based on Chrome developer tools - **EDIT** [Chrome updated wording and explanations](https://developer.chrome.com/devtools/docs/network#resource-network-timing))
 
-![](/zk_dev_ref/images/chrome_developer_tools_network_timing.png)
+![Chrome developer tools network timing](/zk_dev_ref/images/chrome_developer_tools_network_timing.png)
 
 **CONNECTING** (or one of Proxy, DNS Lookup, Blocking, SSL)
 
@@ -173,13 +173,13 @@ You'll get a nice view like this: (**Update**: since chrome version 58
 the "profiles" and "timeline" are combined in the "performance"-tab
 [more...](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/))
 
-![](/zk_dev_ref/images/js_profile_flame_chart.png )
+![Js profile flame chart](/zk_dev_ref/images/js_profile_flame_chart.png )
 
 This brilliant visualization of the JS execution flow and stack depth
 can be used / interpreted in many ways to extract the information you
 require.
 
-![](/zk_dev_ref/images/js_timeline_events.png)
+![Js timeline events](/zk_dev_ref/images/js_timeline_events.png)
 the timeline on the top indicates the whole period between "start" and
 "stop", i selected the range we are interested in, and the colorful area
 at the bottom gives details about which methods are actually called and
@@ -330,7 +330,7 @@ In eclipse a very obvious case might look like this (just imaginarily
 replace Thread.sleep() with db.query(), url.openConnection(),
 webService.get() ...):
 
-![]({{site.baseurl}}/zk_dev_ref/images/suspended_process.png)
+![Suspended process]({{site.baseurl}}/zk_dev_ref/images/suspended_process.png)
 
 #### Not so lucky
 
@@ -417,13 +417,13 @@ notice on your CPU, as the thread is just sleeping.
 
 Starting the sampler will show the actual "Hot Spots" like this.
 
-![]({{site.baseurl}}/zk_dev_ref/images/sampler_result.png)
+![Sampler result]({{site.baseurl}}/zk_dev_ref/images/sampler_result.png)
 
 The 2 slow methods appear, then just take a snapshot, and view the
 details about the actual call stack in the combined view, and filter by
 the method name.
 
-![](/zk_dev_ref/images/sampler_snapshot_combined.png)
+![Sampler snapshot combined](/zk_dev_ref/images/sampler_snapshot_combined.png)
 
 In the call tree we actually see what is happening inside in more
 detail:
@@ -465,7 +465,7 @@ public class LineChartComposer extends SelectorComposer {
 If we don't know where to look in the code we can use a Heap Dump to
 locate it.
 
-![]({{site.baseurl}}/zk_dev_ref/images/heap_dump.png)
+![Heap dump]({{site.baseurl}}/zk_dev_ref/images/heap_dump.png)
 
 I clicked the "find" button to find the 20 biggest objects on the heap.
 The results tell us the following.
@@ -479,7 +479,7 @@ If it wasn't that obvious like here, one can always switch to the
 "Instances" view and check which objects are referring to this big
 array.
 
-![]({{site.baseurl}}/zk_dev_ref/images/heap_dump_instances.png)
+![Heap dump instances]({{site.baseurl}}/zk_dev_ref/images/heap_dump_instances.png)
 
 Also here we could trace the references up to the Desktop/Session
 objects.
@@ -629,14 +629,14 @@ When using Sampler or Profiler, it's better to specify **Profile only
 packages** in the settings. Therefore, it will only show those classes
 you concern instead of irrelevant classes.
 
-![]({{site.baseurl}}/zk_dev_ref/images/Profile-only-package.jpg)
+![Profile only package]({{site.baseurl}}/zk_dev_ref/images/Profile-only-package.jpg)
 
 ## Locate Hot Spots
 
 After you start the CPU sampler/profiler, you can click the "hotspot" to
 show you the most time-consuming method:
 
-![]({{site.baseurl}}/zk_dev_ref/images/HotSpots.jpg)
+![Hot Spots]({{site.baseurl}}/zk_dev_ref/images/HotSpots.jpg)
 
 ## Show Calling Hierarchy
 
@@ -644,4 +644,4 @@ Right-click on a method, choose "Find in Forward Call", it will list the
 calling hierarchy to the selected method. Help you to locate source
 calling method.
 
-![]({{site.baseurl}}/zk_dev_ref/images/ForwardCall.jpg)
+![Forward Call]({{site.baseurl}}/zk_dev_ref/images/ForwardCall.jpg)

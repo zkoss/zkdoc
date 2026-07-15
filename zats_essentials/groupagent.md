@@ -4,7 +4,7 @@
 `GroupAgent` is only supported on a *column* of *grid*. It mimics the
 action to "group by a column's data".
 
-![](images/Zats-mimic-group.png)
+![Zats mimic group](images/Zats-mimic-group.png)
 
 The following code presents how to make a column to group its data.
 

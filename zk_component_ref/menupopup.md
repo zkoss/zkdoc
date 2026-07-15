@@ -71,7 +71,7 @@ Listen to the inherited `onOpen` event (from `Popup`) to create menu items on de
 
 # Example
 
-![](/zk_component_ref/images/ZKComRef_Menubar.png)
+![Menubar](/zk_component_ref/images/ZKComRef_Menubar.png)
 
 ```xml
 
