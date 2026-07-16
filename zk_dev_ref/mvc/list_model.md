@@ -211,6 +211,10 @@ private ListModelList<Locale> listModel = new ListModelList<>(Locale.getAvailabl
 listModel.getSelection().iterator(); //iterate it to get all selected Locale objects
 ```
 
+This is especially important with the paging mold, where only the current
+page's items are rendered as live components. See [ZK Component Reference: Listbox - Get the Selection After Select All with Paging]({{site.baseurl}}/zk_component_ref/listbox#get-the-selection-after-select-all-with-paging)
+for details.
+
 ## Selection Control
 
 With the multiple selection function in a data model, you have to

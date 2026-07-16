@@ -440,6 +440,31 @@ that can determine whether it is checked or not.
 </listbox>
 ```
 
+### Get the Selection After Select All with Paging
+
+When a Listbox is backed by a `ListModel` with the paging mold, checking
+the Select all checkbox selects **all items across all pages** in the
+model. However, only the rows of the current page are rendered as live
+`Listitem` components, so [org.zkoss.zul.Listbox#getSelectedItems()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html#getSelectedItems())
+returns only the current page's items — this is expected behavior, not a
+bug. To retrieve the complete selection, read it from the model via
+[org.zkoss.zul.ext.Selectable#getSelection()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Selectable.html#getSelection()):
+
+```java
+ListModelList<String> model = new ListModelList<>(items);
+model.setMultiple(true); // set multiple on the model, not on the listbox
+listbox.setModel(model);
+
+// after the user checks Select all:
+Set<String> selected = model.getSelection(); // full selection across all pages
+// or, without keeping a model reference:
+Set<String> selected2 = ((Selectable<String>) listbox.getModel()).getSelection();
+```
+
+In general, when a `Selectable` `ListModel` is assigned, always operate on
+the model's selection rather than on the `Listitem` components of the
+Listbox.
+
 ## Deselect Others when Clicking an Item with Checkmark
 
 {% include supported-since.html version="5.0.5" %}
