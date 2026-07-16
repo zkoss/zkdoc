@@ -19,5 +19,3 @@ Default: `false`
     <value>true</value>
 </library-property>
 ```
-
-# Version History

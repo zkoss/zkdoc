@@ -292,5 +292,3 @@ heroku open
   the sample maven project named heroku_zksandbox.zip.
 - Sandbox sample is deployed on Heroku at
   [<http://zksandbox.herokuapp.com/>](http://zksandbox.herokuapp.com/).
-
-# Version History

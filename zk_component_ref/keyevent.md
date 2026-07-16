@@ -2,9 +2,7 @@
 title: "KeyEvent"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -29,9 +27,3 @@ Check inherited events
 | Version | Description                      | Example Location                                                                    |
 |---------|----------------------------------|-------------------------------------------------------------------------------------|
 | 3.6     | Smalltalk: Keylistener Component | [Keylistener Component](https://www.zkoss.org/wiki/Small_Talks/2007/November/Keylistener_Component) |
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

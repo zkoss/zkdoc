@@ -2,9 +2,7 @@
 title: "ZIndexEvent"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -26,9 +24,3 @@ Check inherited events
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

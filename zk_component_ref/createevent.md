@@ -2,9 +2,7 @@
 title: "CreateEvent"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -104,9 +102,3 @@ Check inherited events
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

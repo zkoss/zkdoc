@@ -2,9 +2,7 @@
 title: "InputEvent"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -21,9 +19,3 @@ Check inherited events
 # Supported Children
 
 `*N/A`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

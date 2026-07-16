@@ -2,7 +2,6 @@
 title: "Listgroup"
 ---
 
-- **Demonstration:** N/A
 - **Java API:** [org.zkoss.zul.Listgroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroup.html)
 - **JavaScript API:** [zkex.sel.Listgroup](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.sel.Listgroup.html)
 

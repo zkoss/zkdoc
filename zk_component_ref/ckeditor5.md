@@ -3,7 +3,6 @@ title: "CKEditor5"
 ---
 
 - Java API: N/A
-- JavaScript API: N/A
 
 {% include Notice.html text="This document is written for CKEditor 5.39 to
 5.41. Regarding major updates for 5.42 and later's breaking change,

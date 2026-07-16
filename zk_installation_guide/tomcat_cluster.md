@@ -94,5 +94,3 @@ a tomcat cluster environment.
   using a different cluster-manager such as
   [Hazelcast](https://hazelcast.com/) and other solutions instead, you
   also need to add the cluster session patch settings.
-
-# Version History

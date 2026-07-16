@@ -50,5 +50,3 @@ For example,
     </session-config>
 </sun-web-app>
 ```
-
-# Version History

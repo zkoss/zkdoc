@@ -2,9 +2,7 @@
 title: "SimpleListModel"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -21,9 +19,3 @@ Check inherited events
 # Supported Children
 
 `*ALL`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

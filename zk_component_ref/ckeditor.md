@@ -2,7 +2,6 @@
 
 - **Demonstration:** [WYSIWYG Editor](http://www.zkoss.org/zkdemo/input/wysiwyg_editor)
 - **Java API:** N/A
-- **JavaScript API:** N/A
 - **Source code:** [GitHub zkoss/zkckeditor](https://github.com/zkoss/zkckeditor) after 3.6.0.0.
 
 {% include Notice.html text="As of June 2023, CKEditor announced the

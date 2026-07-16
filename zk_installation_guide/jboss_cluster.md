@@ -55,5 +55,3 @@ For example,
 After you have done the settings above, please follow JBoss' official
 document to set up a JBoss Clustered Server
 [here](http://docs.jboss.org/jbossclustering/cluster_guide/5.1/html-single/index.html).
-
-# Version History

@@ -1,9 +1,7 @@
 
 # ClientInfoEvent
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zk.ui.event.ClientInfoEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ClientInfoEvent.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 

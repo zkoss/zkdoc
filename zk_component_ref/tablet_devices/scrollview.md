@@ -1,7 +1,6 @@
 
 # Scrollview
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zkmax.zul.Scrollview](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Scrollview.html)
 - JavaScript API:
   [zkmax.layout.Scrollview](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Scrollview.html)

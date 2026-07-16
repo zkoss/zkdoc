@@ -2,7 +2,6 @@
 title: "Anchorlayout"
 ---
 
-- **Demonstration:** N/A
 - **Java API:** [org.zkoss.zul.Anchorlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorlayout.html)
 - **JavaScript API:** [zul.layout.Anchorlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorlayout.html)
 

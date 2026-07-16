@@ -2,7 +2,6 @@
 title: "Anchorchildren"
 ---
 
-- **Demonstration:** N/A
 - **Java API:** [org.zkoss.zul.Anchorchildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorchildren.html)
 - **JavaScript API:** [zul.layout.Anchorchildren](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Anchorchildren.html)
 

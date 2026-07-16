@@ -4,7 +4,6 @@ title: "ListModel"
 
 - Demonstration: [Listbox (Live Data)](http://www.zkoss.org/zkdemo/userguide/#g8)
 - Java API: [org.zkoss.zul.ListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModel.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -22,9 +21,3 @@ Check inherited events
 # Supported Children
 
 `*NONE`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

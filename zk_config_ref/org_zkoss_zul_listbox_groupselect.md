@@ -17,10 +17,3 @@ Giving true on this property makes Listgroups selectable in Listbox.
     ...
 </listbox>
 ```
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
-|         |      |         |

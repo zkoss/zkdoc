@@ -4,7 +4,6 @@ title: "Filedownload"
 
 - Demonstration: [File Downpload](http://www.zkoss.org/zkdemo/file_handling/file_download)
 - Java API: [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Filedownload.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 

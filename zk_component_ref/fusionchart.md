@@ -6,7 +6,6 @@ title: "Fusionchart"
 
 - Demonstration:
 - Java API: [org.zkoss.zkmax.zul.Fusionchart](https://www.zkoss.org/javadoc/9.6.0.1/zk/org/zkoss/zkmax/zul/Fusionchart.html)
-- JavaScript API:
   [zkmax.fusionchartz.Fusionchart](https://www.zkoss.org/javadoc/9.6.0.1/jsdoc/zkmax/fusionchartz/Fusionchart.html)
 
 - <!--REQUIRED ZK EDITION: PE -->

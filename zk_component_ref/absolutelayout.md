@@ -2,9 +2,7 @@
 title: "Absolutelayout"
 ---
 
-- **Demonstration:** N/A
 - **Java API:** [org.zkoss.zul.Absolutelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutelayout.html)
-- **JavaScript API:**
   [zul.layout.Absolutelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.layout.Absolutelayout.html)
 
 {% include supported-since.html version="6.0.0" %}

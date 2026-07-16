@@ -4,7 +4,6 @@ title: "Gmaps"
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)
 - **Java API:** [in release zip](https://github.com/zkoss/zkgmapsz/releases)
-- **JavaScript API:** N/A
 
 Check [our Maven repository](https://mavensync.zkoss.org/maven2/org/zkoss/zkforge/gmapsz/) for the latest version.
 

@@ -2,9 +2,7 @@
 title: "RendererCtrl"
 ---
 
-- Demonstration: N/A
 - Java API: [org.zkoss.zul.RendererCtrl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/RendererCtrl.html)
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -22,8 +20,6 @@ be called.
 A typical use is to start a transaction and use it for rendering all
 items from the same request.
 
-# Example
-
 # Supported events
 
 Check inherited events
@@ -31,9 +27,3 @@ Check inherited events
 # Supported Children
 
 `*N/A`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |

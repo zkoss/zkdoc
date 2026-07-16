@@ -2,9 +2,7 @@
 title: "MapZoomEvent"
 ---
 
-- Demonstration: N/A
 - Java API: N/A
-- JavaScript API: N/A
 
 # Employment/Purpose
 
@@ -22,9 +20,3 @@ Check inherited events
 # Supported Children
 
 `*N/A`
-
-# Version History
-
-| Version | Date | Content |
-|---------|------|---------|
-|         |      |         |
