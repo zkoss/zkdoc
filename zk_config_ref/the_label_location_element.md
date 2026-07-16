@@ -1,5 +1,6 @@
 ---
 title: "The label-location Element"
+description: "The label-location Element: It specifies the location of the properties file for the internationalization labels."
 ---
 
 **Syntax:**

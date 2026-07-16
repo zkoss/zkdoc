@@ -1,5 +1,6 @@
 ---
 title: "Area"
+description: "Area: An area of a image map. Instead of the application processing the coordinates, developers can add the area components as children of a imagemap…"
 ---
 
 - **Java API:** [org.zkoss.zul.Area](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Area.html)

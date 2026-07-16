@@ -1,5 +1,6 @@
 ---
 title: "zk.xml"
+description: "zk.xml: need to provide a file called zk.xml under the WEB-INF directory."
 ---
 
 `WEB-INF/zk.xml` is the configuration descriptor of ZK. This file is optional. If you want to configure ZK differently from the default, you

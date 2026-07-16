@@ -1,5 +1,6 @@
 ---
 title: "Navitem"
+description: "Navitem: A single choice in a Navbar or Nav element. It acts much like a button but it is rendered on a navbar."
 ---
 
 - **Demonstration:**

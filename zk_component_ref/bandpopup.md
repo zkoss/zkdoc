@@ -1,5 +1,6 @@
 ---
 title: "Bandpopup"
+description: "Bandpopup: The popup that belongs to a Bandbox instance."
 ---
 
 - **Demonstration:** [Bandbox](https://www.zkoss.org/zkdemo/combobox/customizable_combobox)

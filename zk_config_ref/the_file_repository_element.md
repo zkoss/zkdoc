@@ -1,5 +1,6 @@
 ---
 title: "The file-repository Element"
+description: "The file-repository Element: It specifies the directory in which uploaded files will be stored, if stored on disk."
 ---
 
 **Syntax:**

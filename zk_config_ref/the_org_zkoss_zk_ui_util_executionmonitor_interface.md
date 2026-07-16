@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.ExecutionMonitor interface"
+description: "The org.zkoss.zk.ui.util.ExecutionMonitor interface: An application-level listener to monitor executions on activation, deactivation, or waiting for…"
 ---
 
 **Listener:**

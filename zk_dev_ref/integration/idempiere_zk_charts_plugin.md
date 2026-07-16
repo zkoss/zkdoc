@@ -1,5 +1,6 @@
 ---
 title: "iDempiere ZK Charts Plugin"
+description: "iDempiere ZK Charts Plugin: iDempiere uses ZK CE by default. To use ZK Charts components, you must attach the ZK Charts libraries to the…"
 ---
 
 iDempiere uses ZK CE by default. To use ZK Charts components, you must attach the ZK Charts libraries to the `org.adempiere.ui.zk` bundle via an OSGi fragment and then build a plugin that uses the widgets. This guide builds the `org.idempiere.zkcharts.example` plugin from the `zkoss-idempiere-zkcharts-plugin` repository. For broader context, see [iDempiere integration overview](/zk_dev_ref/integration/idempiere) and the [iDempiere plugin development guide](https://wiki.idempiere.org/en/Developing_Plug-Ins_-_Get_your_Plug-In_running).

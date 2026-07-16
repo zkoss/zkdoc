@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.moment.timezone.path"
+description: "org.zkoss.zk.moment.timezone.path: We start to use moment.js, moment-timezone.js to support our client widgets of…"
 ---
 
 **Property:** org.zkoss.zk.moment.timezone.path

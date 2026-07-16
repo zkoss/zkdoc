@@ -1,5 +1,6 @@
 ---
 title: "The disable-event-thread Element"
+description: "The disable-event-thread Element: It specifies whether to disable the use of the event processing thread."
 ---
 
 **Syntax:**

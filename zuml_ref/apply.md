@@ -1,5 +1,6 @@
 ---
 title: "apply"
+description: "apply: It specifies a class, a collection of classes that are used to initialize the component."
 ---
 
 **Syntax**

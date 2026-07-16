@@ -1,5 +1,6 @@
 ---
 title: "Searchbox"
+description: "Searchbox: A dropdown list that allows users to search and select items."
 ---
 
 - **Demonstration:** [zkoss-demo/zksearchbox-demo](https://github.com/zkoss-demo/zksearchbox-demo)

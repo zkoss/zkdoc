@@ -1,5 +1,6 @@
 ---
 title: "Paging"
+description: "Paging: A paging component is used with another component to separate long content into multiple pages."
 ---
 
 - **Demonstration:** [Paging (with Grid)](http://www.zkoss.org/zkdemo/grid/paging), [Paging (with Listbox)](http://www.zkoss.org/zkdemo/listbox/paging), [Paging (with Tree)](http://www.zkoss.org/zkdemo/tree/paging)

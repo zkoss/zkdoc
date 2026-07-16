@@ -1,5 +1,6 @@
 ---
 title: "Grid"
+description: "Grid: Components: grid, columns and column, rows and row, Auxhead and Auxheader"
 ---
 
 - **Demonstration:** [Grid](https://www.zkoss.org/zkdemo/grid/)

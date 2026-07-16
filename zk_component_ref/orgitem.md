@@ -1,5 +1,6 @@
 ---
 title: "Orgitem"
+description: "Orgitem: If the component doesn't contain an Orgchildren, it is a leaf node that doesn't accept any child items."
 ---
 
 - **Demonstration:** [Orgitem](https://www.zkoss.org/zkdemo/organigram)

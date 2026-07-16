@@ -1,5 +1,6 @@
 ---
 title: "Track"
+description: "Track: It lets you specify some timed text tracks like captions or subtitles for media components such as Audio or Video."
 ---
 
 - **Demonstration:** [Track](https://www.zkoss.org/zkdemo/media/track)

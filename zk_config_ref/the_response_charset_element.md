@@ -1,5 +1,6 @@
 ---
 title: "The response-charset Element"
+description: "The response-charset Element: It specifies the charset for the rendering result of a ZUML page."
 ---
 
 **Syntax:**

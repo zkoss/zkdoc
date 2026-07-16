@@ -1,5 +1,6 @@
 ---
 title: "iDempiere Keikai Enterprise Plugin"
+description: "iDempiere Keikai Enterprise Plugin: iDempiere ships with ZK CE by default."
 ---
 
 iDempiere ships with ZK CE by default. To use Keikai Enterprise Spreadsheet (Keikai EE) in iDempiere, you must attach the Keikai EE runtime libraries and their ZK dependencies to the `org.adempiere.ui.zk` bundle via an OSGi fragment, then build a normal iDempiere plugin that registers a form and renders the spreadsheet. This guide builds the `org.idempiere.keikai.example` plugin from the `zkoss-idempiere-keikai-plugin` repository. For broader context, see [iDempiere integration overview](/zk_dev_ref/integration/idempiere), [iDempiere ZK EE Plugin](/zk_dev_ref/integration/idempiere_zk_enterprise_plugin), and the [iDempiere plugin development guide](https://wiki.idempiere.org/en/Developing_Plug-Ins_-_Get_your_Plug-In_running).

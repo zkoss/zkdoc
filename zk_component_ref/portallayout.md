@@ -1,5 +1,6 @@
 ---
 title: "Portallayout"
+description: "Portallayout: A portallayout lays out a container which can have multiple columns, and each column might have any number panels placed vertically with…"
 ---
 
 - **Demonstration:** [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)

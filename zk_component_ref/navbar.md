@@ -1,5 +1,6 @@
 ---
 title: "Navbar"
+description: "Navbar: Provide a roadmap to help user navigate through website. It's a container that usually contains nav elements."
 ---
 
 - **Demonstration:** [Navbar](https://www.zkoss.org/zkdemo/nav/navbar)

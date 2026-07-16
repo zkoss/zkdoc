@@ -1,5 +1,6 @@
 ---
 title: "number"
+description: "number: i.e., org.zkoss.xel.fn.CommonFns#toNumber(java.lang.Object))"
 ---
 
 ```java

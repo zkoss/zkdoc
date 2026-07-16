@@ -1,5 +1,6 @@
 ---
 title: "The repeat-uuid Element"
+description: "The repeat-uuid Element: It specifies whether to use the same UUID sequence for desktops for each reboot."
 ---
 
 **Syntax:**

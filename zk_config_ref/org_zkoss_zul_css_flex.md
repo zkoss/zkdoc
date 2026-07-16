@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.css.flex"
+description: "org.zkoss.zul.css.flex: Set to use CSS3 flex implementation in ZK Flex."
 ---
 
 **Property:**

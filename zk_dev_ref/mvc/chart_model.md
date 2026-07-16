@@ -1,5 +1,6 @@
 ---
 title: "Chart Model"
+description: "Chart Model: Here we describe how to implement a chart model (org.zkoss.zul.ChartModel)."
 ---
 
 Here we describe how to implement a chart model

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.groupSelect"
+description: "org.zkoss.zul.listbox.groupSelect: Giving true on this property makes Listgroups selectable in Listbox."
 ---
 
 **Property:**

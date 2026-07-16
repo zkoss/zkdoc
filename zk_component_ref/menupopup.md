@@ -1,5 +1,6 @@
 ---
 title: "Menupopup"
+description: "Menupopup: A container is used to display menus. It should be placed inside a Menu."
 ---
 
 - **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu)

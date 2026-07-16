@@ -1,5 +1,6 @@
 ---
 title: "Span"
+description: "Span: The Span component in ZK is a lightweight container used for grouping child components."
 ---
 
 - **Java API:** [org.zkoss.zul.Span](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Span.html)

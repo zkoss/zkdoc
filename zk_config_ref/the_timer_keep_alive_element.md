@@ -1,5 +1,6 @@
 ---
 title: "The timer-keep-alive Element"
+description: "The timer-keep-alive Element: It specifies whether to keep the session alive, when receiving the onTimer event."
 ---
 
 **Syntax:**

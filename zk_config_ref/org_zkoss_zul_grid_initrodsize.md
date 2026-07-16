@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.grid.initRodSize"
+description: "org.zkoss.zul.grid.initRodSize: Specifies the number of rows rendered when the Grid first render."
 ---
 
 **Property:**

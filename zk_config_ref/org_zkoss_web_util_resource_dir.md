@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.util.resource.dir"
+description: "org.zkoss.web.util.resource.dir: Before enabling this feature upgrade to the latest available versions (older versions contain a critical security…"
 ---
 ## Security Notice
 

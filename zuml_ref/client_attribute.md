@@ -1,5 +1,6 @@
 ---
 title: "Client Attribute"
+description: "Client Attribute: It is the reserved namespace for specifying client-side DOM attributes."
 ---
 
 * Name: client attribute  

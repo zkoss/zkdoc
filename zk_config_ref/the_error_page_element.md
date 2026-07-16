@@ -1,5 +1,6 @@
 ---
 title: "The error-page Element"
+description: "The error-page Element: It specifies an error page used when an uncaught exception is thrown in updating a ZUML page (e.g., in an event listener)."
 ---
 
 **Syntax:**

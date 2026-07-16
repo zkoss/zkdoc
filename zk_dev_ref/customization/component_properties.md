@@ -1,5 +1,6 @@
 ---
 title: "Component Properties"
+description: "Component Properties: With component definitions, we could specify the initial values for the properties, attributes and annotations of a component."
 ---
 
  With [component definitions]({{site.baseurl}}/zk_client_side_ref/component),

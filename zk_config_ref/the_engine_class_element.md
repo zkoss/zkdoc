@@ -1,5 +1,6 @@
 ---
 title: "The engine-class Element"
+description: "The engine-class Element: It specifies which class is used to implement the UI Engine."
 ---
 
 **Syntax:**

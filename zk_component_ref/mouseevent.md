@@ -1,5 +1,6 @@
 ---
 title: "MouseEvent"
+description: "MouseEvent: Represents an event caused by the mouse's activitly. There are two possible way to identify a mouse event."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html)

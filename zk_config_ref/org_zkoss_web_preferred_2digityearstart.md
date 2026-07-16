@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.preferred.2DigitYearStart"
+description: "org.zkoss.web.preferred.2DigitYearStart: By default, the 2-digit year start is set to 1929."
 ---
 
 {% include supported-since.html version="8.6.2" %}

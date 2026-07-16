@@ -1,5 +1,6 @@
 ---
 title: "HeaderElement"
+description: "HeaderElement: The Header Element is a skeletal implementation for a header in ZK applications."
 ---
 
 - Java API: [org.zkoss.zul.impl.HeaderElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/HeaderElement.html)

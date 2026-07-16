@@ -1,5 +1,6 @@
 ---
 title: "The session-cache-class Element"
+description: "The session-cache-class Element: It specifies the session cache used to store ZK sessions. It must implement the org.zkoss.zk.ui.sys.SessionCache interface."
 ---
 
 **Syntax:**

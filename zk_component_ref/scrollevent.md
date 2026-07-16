@@ -1,5 +1,6 @@
 ---
 title: "ScrollEvent"
+description: "ScrollEvent: Represents an event caused by that user is scrolling or has scrolled at the client."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html)

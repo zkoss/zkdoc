@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.ui.comet.async.disabled"
+description: "org.zkoss.zkmax.ui.comet.async.disabled: It specifies whether to disable the use of Servlet 3's Asynchronous Support for handling Comet-based server push."
 ---
 
 **Property:**

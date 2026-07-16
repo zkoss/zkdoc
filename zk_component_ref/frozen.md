@@ -1,5 +1,6 @@
 ---
 title: "Frozen"
+description: "Frozen: A frozen component to represent frozen \"columns\" in a Grid or a Listbox, like MS Excel."
 ---
 
 - **Demonstration:** [Spreadsheet Functionalities](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)

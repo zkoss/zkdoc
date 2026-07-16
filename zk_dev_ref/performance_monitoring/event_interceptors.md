@@ -1,5 +1,6 @@
 ---
 title: "Event Interceptors"
+description: "Event Interceptors: Though org.zkoss.zk.ui.util.EventInterceptor is designed to allow developer to intercept how an event is processed, you could use it…"
 ---
 
 Though

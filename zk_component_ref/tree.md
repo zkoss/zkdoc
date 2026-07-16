@@ -1,5 +1,6 @@
 ---
 title: "Tree"
+description: "Tree: A tree consists of three parts, the set of columns, the set of footers, and the tree body."
 ---
 
 - **Demonstration:** [Tree](http://www.zkoss.org/zkdemo/tree)

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.composer.autowire.xel"
+description: "org.zkoss.zk.ui.composer.autowire.xel: It specifies whether org.zkoss.zk.ui.util.GenericAutowireComposer (and org.zkoss.zk.ui.util.GenericForwardComposer)…"
 ---
 
 **Property:**

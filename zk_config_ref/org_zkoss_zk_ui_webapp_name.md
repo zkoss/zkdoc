@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.WebApp.name"
+description: "org.zkoss.zk.ui.WebApp.name: It specifies the application name. It is the return value of org.zkoss.zk.ui.WebApp#getAppName())."
 ---
 
 **Preference:**

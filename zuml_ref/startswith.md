@@ -1,5 +1,6 @@
 ---
 title: "startsWith"
+description: "startsWith: i.e., org.zkoss.xel.fn.StringFns#startsWith(java.lang.String, java.lang.String))"
 ---
 
 ```java

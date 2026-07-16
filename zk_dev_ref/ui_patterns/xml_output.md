@@ -1,5 +1,6 @@
 ---
 title: "XML Output"
+description: "XML Output: In addition to generating HTML output to a browser, ZK could be used to generate (static) XML output to any client that recognizes it, such as…"
 ---
 
 In addition to generating HTML output to a browser, ZK could be used to

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.autoSort"
+description: "org.zkoss.zul.tree.autoSort: Specifies whether to sort the model when the following cases:"
 ---
 
 **Property:**

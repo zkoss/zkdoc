@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.jsonBindingParamConverter.class"
+description: "org.zkoss.bind.jsonBindingParamConverter.class: It specifies the name of the class used to provide the default JSON converter for ZK Bind command."
 ---
 
 **Property:**

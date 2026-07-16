@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.nativebar"
+description: "org.zkoss.zul.nativebar: For all browsers - mobile and desktop. Default:true"
 ---
 
 **Property:**

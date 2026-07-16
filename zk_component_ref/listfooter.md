@@ -1,5 +1,6 @@
 ---
 title: "Listfooter"
+description: "Listfooter: A column of the footer of a list box (Listbox). Its parent must be Listfoot. Unlike Listheader, you could place any child in a list footer."
 ---
 
 - **Java API:** [org.zkoss.zul.Listfooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listfooter.html)

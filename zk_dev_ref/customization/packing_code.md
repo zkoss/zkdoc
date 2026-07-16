@@ -1,5 +1,6 @@
 ---
 title: "Packing Code"
+description: "Packing Code: There are two ways to pack the customization code: part of the Web application, or an independent JAR file."
 ---
 
 There are two ways to pack the customization code: part of the Web

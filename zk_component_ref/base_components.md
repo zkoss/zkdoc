@@ -1,5 +1,6 @@
 ---
 title: "Base Components"
+description: "Base Components: This section documents ZK's base components — the abstract foundation classes that every concrete component is built on."
 ---
 
 This section documents ZK's **base components** — the abstract foundation classes that every

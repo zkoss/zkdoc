@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tablet.meta.viewport.disabled"
+description: "org.zkoss.zul.tablet.meta.viewport.disabled: Specifies whether to generate a meta viewport tag or not for tablet devices. It is enabled by default."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Rowchildren"
+description: "Rowchildren: The column of Rowlayout."
 ---
 
 - **Demonstration:** [Rowchildren](https://www.zkoss.org/zkdemo/)

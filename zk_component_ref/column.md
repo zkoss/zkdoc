@@ -1,5 +1,6 @@
 ---
 title: "Column"
+description: "Column: A single column in a Columns element. Each child of the Column element is placed in each successive cell of the grid."
 ---
 
 - **Demonstration:** [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)

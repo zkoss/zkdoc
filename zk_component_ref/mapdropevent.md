@@ -1,5 +1,6 @@
 ---
 title: "MapDropEvent"
+description: "MapDropEvent: Represents a Google Maps related event which is triggered whenever a component is dragged and dropped on a gmaps or gmarker."
 ---
 
 - Java API: N/A

@@ -1,5 +1,6 @@
 ---
 title: "Splitlayout"
+description: "Splitlayout is a layout container, which is used to divide a component into two components."
 ---
 
 - **Demonstration:** [Spltlayout](https://www.zkoss.org/zkdemo/layout/split_layout)

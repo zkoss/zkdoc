@@ -1,5 +1,6 @@
 ---
 title: "Auxheader"
+description: "Auxheader: The auxiliary headers support the colspan and rowspan properties which allows itself to be spanned across several columns/rows."
 ---
 
 - **Demonstration:** [Grid (Merged Header)](http://www.zkoss.org/zkdemo/grid/merged_header)

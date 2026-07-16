@@ -1,5 +1,6 @@
 ---
 title: "Client-side UI Composing"
+description: "Client-side UI Composing: Though optional, you could have the total control of the client's functionality without the assistance of server-side coding."
 ---
 
 Though optional, you could have the total control of the client's

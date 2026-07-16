@@ -1,5 +1,6 @@
 ---
 title: "Operators"
+description: "Operators: EL expressions provide the following operators: (The information is from JSP Tutorial)"
 ---
 
 EL expressions provide the following operators:

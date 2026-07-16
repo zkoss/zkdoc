@@ -1,5 +1,6 @@
 ---
 title: "JDBC"
+description: "JDBC: ZK aims to be as thin as the presentation tier. In addition, as the code executes at the server, so connecting database is no different from any…"
 ---
 
 ZK aims to be as thin as the presentation tier. In addition, as the code

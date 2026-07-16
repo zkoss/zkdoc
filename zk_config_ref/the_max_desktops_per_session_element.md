@@ -1,5 +1,6 @@
 ---
 title: "The max-desktops-per-session Element"
+description: "The max-desktops-per-session Element: It specifies the maximum allowed number of desktops per session. A desktop represents a browser tab."
 ---
 
 **Syntax:**

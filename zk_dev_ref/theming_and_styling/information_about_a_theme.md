@@ -1,5 +1,6 @@
 ---
 title: "Information about a Theme"
+description: "Information about a Theme: Apart from having a name, a theme could be associated with many attributes."
 ---
 
 Apart from having a name, a theme could be associated with many

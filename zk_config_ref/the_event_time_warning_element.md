@@ -1,5 +1,6 @@
 ---
 title: "The event-time-warning Element"
+description: "The event-time-warning Element: It specifies the time, in seconds, to show a warning message if an event has been processed longer than it."
 ---
 
 **Syntax:**

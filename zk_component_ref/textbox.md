@@ -1,5 +1,6 @@
 ---
 title: "Textbox"
+description: "Textbox: A textbox is used to let users input textual data."
 ---
 
 - **Demonstration:** [Textbox](http://www.zkoss.org/zkdemo/input/form_sample)

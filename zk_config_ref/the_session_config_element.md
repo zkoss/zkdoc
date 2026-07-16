@@ -1,5 +1,6 @@
 ---
 title: "The session-config Element"
+description: "The session-config Element: The allowed child elements include session-timeout and max-desktops-per-session."
 ---
 
 The allowed child elements include `session-timeout` and

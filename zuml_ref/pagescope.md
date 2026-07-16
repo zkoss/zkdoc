@@ -1,5 +1,6 @@
 ---
 title: "pageScope"
+description: "pageScope: A map of custom attributes associated with the current page. It is the same as the getAttributes method in the org.zkoss.zk.ui.Page interface."
 ---
 
 ## pageScope - java.util.Map

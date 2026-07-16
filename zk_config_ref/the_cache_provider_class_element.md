@@ -1,5 +1,6 @@
 ---
 title: "The cache-provider-class Element"
+description: "The cache-provider-class Element: It specifies which class is used to implement the desktop cache."
 ---
 
 **Syntax:**

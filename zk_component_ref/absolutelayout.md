@@ -1,5 +1,6 @@
 ---
 title: "Absolutelayout"
+description: "Absolutelayout: An Absolutelayout component can contain absolute positioned multiple absolutechildren components."
 ---
 
 - **Java API:** [org.zkoss.zul.Absolutelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutelayout.html)

@@ -1,5 +1,6 @@
 ---
 title: "AU Extensions"
+description: "AU Extensions: An AU extension (org.zkoss.zk.au.http.AuExtension) is a small program that can be plugged into ZK Update Engine…"
 ---
 
 An AU extension

@@ -1,5 +1,6 @@
 ---
 title: "Implicit Objects (Predefined Variables)"
+description: "Implicit Objects (Predefined Variables): EL expressions define a set of implicit objects (aka predefined variables) that you can access directly in an EL…"
 ---
 
 EL expressions define a set of implicit objects (aka predefined

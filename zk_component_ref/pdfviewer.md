@@ -1,5 +1,6 @@
 ---
 title: "Pdfviewer"
+description: "Pdfviewer: The Pdfviewer component is based on Mozilla’s great work — PDF.js, that renders PDF documents in a browser."
 ---
 
 - **Demonstration:** [Embed PDF Documents in Your ZK Application](https://blog.zkoss.org/2019/10/02/zk-9-preview-embed-pdf-documents-in-your-zk-application/)

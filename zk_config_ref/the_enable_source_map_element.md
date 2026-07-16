@@ -1,5 +1,6 @@
 ---
 title: "The enable-source-map Element"
+description: "The enable-source-map Element: It specifies whether to using source map to debug JavaScript files."
 ---
 
 **Syntax:**

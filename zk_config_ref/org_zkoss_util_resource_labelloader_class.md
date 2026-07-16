@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.resource.LabelLoader.class"
+description: "org.zkoss.util.resource.LabelLoader.class: It specifies the name of the class used to provide the customized label loader."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Absolutechildren"
+description: "Absolutechildren: A container component that can contain any other ZK component and can only be contained as direct child of Absolutelayout component."
 ---
 
 - **Java API:** [org.zkoss.zul.Absolutechildren](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Absolutechildren.html)

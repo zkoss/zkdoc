@@ -1,5 +1,6 @@
 ---
 title: "Event Firing"
+description: "Event Firing: Events are usually fired (aka., triggered) by a component (when serving the user at the client)."
 ---
 
 Events are usually fired (aka., triggered) by a component (when serving

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.maxRodPageSize"
+description: "org.zkoss.zul.tree.maxRodPageSize: Specifies how many pages (of treeitems) to keep rendered in memory (on the server side) when navigating the tree using…"
 ---
 
 **Property:**

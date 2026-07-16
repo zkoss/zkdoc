@@ -1,5 +1,6 @@
 ---
 title: "KeyEvent"
+description: "KeyEvent: Represents a key pressed by the user."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html)

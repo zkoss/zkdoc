@@ -1,5 +1,6 @@
 ---
 title: "ColSizeEvent"
+description: "ColSizeEvent: Used to notify that the width of a column is changed."
 ---
 
 - Java API: [org.zkoss.zul.event.ColSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/ColSizeEvent.html)

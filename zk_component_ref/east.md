@@ -1,5 +1,6 @@
 ---
 title: "East"
+description: "East: An east region of a border layout and only allows one component as its child."
 ---
 
 - **Demonstration:** [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)

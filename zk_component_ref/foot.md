@@ -1,5 +1,6 @@
 ---
 title: "Foot"
+description: "Foot: Defines a set of footers ( Footer) for a grid ( Grid)."
 ---
 
 - **Demonstration:** [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)

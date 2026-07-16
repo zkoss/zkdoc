@@ -1,5 +1,6 @@
 ---
 title: "ZK Resource Engine"
+description: "ZK Resource Engine, it is a servlet that handles static resources."
 ---
 
 {% include supported-since.html version="9.5.0" %}

@@ -1,5 +1,6 @@
 ---
 title: "The max-suspended-threads Element"
+description: "The max-suspended-threads Element: It specifies the maximum allowed number of the suspended event processing threads."
 ---
 
 **Syntax:**

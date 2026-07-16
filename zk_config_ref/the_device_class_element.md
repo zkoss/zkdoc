@@ -1,5 +1,6 @@
 ---
 title: "The device-class Element"
+description: "The device-class Element: It specifies the implementation class. The class must implement the org.zkoss.zk.device.Device interface."
 ---
 
 **Syntax:**

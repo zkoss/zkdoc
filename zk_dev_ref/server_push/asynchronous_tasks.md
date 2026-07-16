@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous Tasks"
+description: "Asynchronous Tasks: If you run an application logic in a task thread (not in a servlet thread), and you don't want to update UI in the same thread."
 ---
 
 If you run an application logic in a task thread (not in a servlet

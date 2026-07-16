@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.ExecutionInit interface"
+description: "The org.zkoss.zk.ui.util.ExecutionInit interface: A listener could implement org.zkoss.zk.ui.util.ExecutionInit to initialize a new execution."
 ---
 
 **Listener:**

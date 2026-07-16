@@ -1,5 +1,6 @@
 ---
 title: "Style"
+description: "Style: The style component used to specify CSS styles for the owner desktop."
 ---
 
 - Demonstration:

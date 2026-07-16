@@ -1,5 +1,6 @@
 ---
 title: "GoldenPanel"
+description: "GoldenPanel is the only child type of GoldenLayout. It allows you to rearrange them by dragging the tab."
 ---
 
 - **Demonstration:** [GoldenPanel](https://www.zkoss.org/zkdemo/layout/goldenlayout)

@@ -1,5 +1,6 @@
 ---
 title: "Use Live Data and Paging"
+description: "Use Live Data and Paging: Sending out a listbox/grid/tree with a lot of items to the client is expensive."
 ---
 
 Sending out a listbox/grid/tree with a lot of items to the client is

@@ -1,5 +1,6 @@
 ---
 title: "Macro Component"
+description: "Macro Component: There are two ways to implement a component."
 ---
 
 There are two ways to implement a component. One is to implement a

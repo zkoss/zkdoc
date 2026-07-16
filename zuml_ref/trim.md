@@ -1,5 +1,6 @@
 ---
 title: "trim"
+description: "trim: i.e., org.zkoss.xel.fn.StringFns#trim(java.lang.String))"
 ---
 
 ```java

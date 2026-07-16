@@ -1,5 +1,6 @@
 ---
 title: "Reuse Desktops"
+description: "Reuse Desktops: By default, a desktop is purged when the user browses to another URI or refreshes the page."
 ---
 
 By default, a desktop is purged when the user browses to another URI or

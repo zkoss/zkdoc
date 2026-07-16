@@ -1,5 +1,6 @@
 ---
 title: "Grid Template"
+description: "Grid Template: Similar to Listbox, you can define a customer rendering with a template for a grid:"
 ---
 
 Similar to

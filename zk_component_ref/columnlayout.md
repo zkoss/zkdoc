@@ -1,5 +1,6 @@
 ---
 title: "Columnlayout"
+description: "Columnlayout: A columnlayout is a layout which can have multiple columns while each column may have any number of panels placed vertically with different…"
 ---
 
 - **Demonstration:** [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)

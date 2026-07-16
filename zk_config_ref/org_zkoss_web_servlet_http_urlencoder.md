@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.servlet.http.URLEncoder"
+description: "org.zkoss.web.servlet.http.URLEncoder: It specifies the class used to encode URL by including the session ID and Servlet's context path, if necessary."
 ---
 
 **Property:**

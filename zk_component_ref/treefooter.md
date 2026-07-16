@@ -1,5 +1,6 @@
 ---
 title: "Treefooter"
+description: "Treefooter: A treefooter is a bottom column of tree, Its parent must be Treefoot. You could place any child in a tree footer."
 ---
 
 - **Java API:** [org.zkoss.zul.Treefooter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefooter.html)

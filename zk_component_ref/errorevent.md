@@ -1,5 +1,6 @@
 ---
 title: "ErrorEvent"
+description: "ErrorEvent: Represents an event caused by a user's error when entering wrong data or clearing the last wrong data."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.ErrorEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ErrorEvent.html)

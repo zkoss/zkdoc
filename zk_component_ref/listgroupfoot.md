@@ -1,5 +1,6 @@
 ---
 title: "Listgroupfoot"
+description: "Listgroupfoot: GroupFooter serves as a summary listitem of listgroup."
 ---
 
 - **Java API:** [org.zkoss.zul.Listgroupfoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroupfoot.html)

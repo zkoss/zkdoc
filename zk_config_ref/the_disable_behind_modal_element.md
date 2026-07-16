@@ -1,5 +1,6 @@
 ---
 title: "The disable-behind-modal Element"
+description: "The disable-behind-modal Element: It specifies whether to disable all elements behind the modal window at the browser. If disabled, the performance is better."
 ---
 
 **Syntax:**

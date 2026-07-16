@@ -1,5 +1,6 @@
 ---
 title: "Cropper"
+description: "Cropper: This component allows users to crop a selected range of image."
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)

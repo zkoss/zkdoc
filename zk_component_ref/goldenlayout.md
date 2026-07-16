@@ -1,5 +1,6 @@
 ---
 title: "GoldenLayout"
+description: "GoldenLayout is a layout container which layouts panels as docker type and is used to represent GoldenLayout."
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)

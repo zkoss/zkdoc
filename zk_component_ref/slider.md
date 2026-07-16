@@ -1,5 +1,6 @@
 ---
 title: "Slider"
+description: "Slider: A slider component represents a slider with a scale and a knob. It can be used to let user select a value by sliding the knob along the scale."
 ---
 
 - **Demonstration:** [Slider](https://www.zkoss.org/zkdemo/input/slider)

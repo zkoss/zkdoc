@@ -1,5 +1,6 @@
 ---
 title: "Nav"
+description: "Nav: A container is used to display navitem, it should be placed inside a navbar."
 ---
 
 - **Demonstration:**

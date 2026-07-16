@@ -1,5 +1,6 @@
 ---
 title: "Transformer"
+description: "Transformer: document to another with a XSTL template."
 ---
 
 - Java API: [org.zkoss.zml.Transformer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zml/Transformer.html)

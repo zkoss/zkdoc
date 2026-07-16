@@ -1,5 +1,6 @@
 ---
 title: "Combobutton"
+description: "Combobutton: A Combobutton is a special Button that embeds a popup or menupopup child."
 ---
 
 - **Demonstration:**

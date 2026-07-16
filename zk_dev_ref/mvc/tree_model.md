@@ -1,5 +1,6 @@
 ---
 title: "Tree Model"
+description: "Tree Model: Here we describe how to implement a tree model (org.zkoss.zul.TreeModel)."
 ---
 
 Here we describe how to implement a tree model

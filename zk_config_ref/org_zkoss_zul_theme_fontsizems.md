@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.theme.fontSizeMS"
+description: "org.zkoss.zul.theme.fontSizeMS: It specifies the size of the middle-smaller font used in the ZUL CSS file."
 ---
 
 **Property:**

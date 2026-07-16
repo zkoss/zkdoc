@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.label.cache"
+description: "org.zkoss.util.label.cache: Specifies whether to cache zk-labels.properties. By default, it is enabled."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Orgnode"
+description: "Orgnode represents data in an Orgitem. Orgnode can contain any components in it, such as label, image, textbox etc."
 ---
 
 - **Demonstration:** [Orgnode](https://www.zkoss.org/zkdemo/organigram/orgnode)

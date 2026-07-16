@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.theme.browserDefault"
+description: "org.zkoss.zul.theme.browserDefault: It specifies whether or not to override the standard HTML tags, such as body's margin and padding."
 ---
 
 **Property:**

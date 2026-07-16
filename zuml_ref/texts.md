@@ -1,5 +1,6 @@
 ---
 title: "Texts"
+description: "Texts: In general, a XML text is interpreted as a label component. For example,"
 ---
 
 In general, a XML text is interpreted as a label component. For example,

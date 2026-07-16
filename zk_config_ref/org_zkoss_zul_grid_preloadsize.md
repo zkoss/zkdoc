@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.grid.preloadSize"
+description: "org.zkoss.zul.grid.preloadSize: Specifies the number of rows to preload when receiving the rendering request from the client."
 ---
 
 **Property:**

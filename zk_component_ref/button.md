@@ -1,5 +1,6 @@
 ---
 title: "Button"
+description: "Button: You could assign a label and an image to a button by the label and image properties."
 ---
 
 - Demonstration: [Button](http://www.zkoss.org/zkdemo/input/button) and

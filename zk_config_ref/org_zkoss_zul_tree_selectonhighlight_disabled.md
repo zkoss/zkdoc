@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.selectOnHighlight.disabled"
+description: "org.zkoss.zul.tree.selectOnHighlight.disabled: Sets whether to disable select functionality when highlighting text content with mouse dragging or not."
 ---
 
 **Property:** org.zkoss.zul.tree.selectOnHighlight.disabled

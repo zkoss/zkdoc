@@ -1,5 +1,6 @@
 ---
 title: "LayoutRegion"
+description: "LayoutRegion: The LayoutRegion class in ZK represents a region within a layout manager."
 ---
 
 - Java API: [org.zkoss.zul.LayoutRegion](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html)

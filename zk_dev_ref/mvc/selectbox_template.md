@@ -1,5 +1,6 @@
 ---
 title: "Selectbox Template"
+description: "Selectbox Template: Similar to Listbox, you can render a selectbox with a template."
 ---
 
 Similar to

@@ -1,5 +1,6 @@
 ---
 title: "Listgroup"
+description: "Listgroup: Adds the ability for single level grouping to the Listbox."
 ---
 
 - **Java API:** [org.zkoss.zul.Listgroup](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listgroup.html)

@@ -1,5 +1,6 @@
 ---
 title: "North"
+description: "North: A north region of a border layout and only allows one component as its child."
 ---
 
 - **Demonstration:** [Borderlayout](https://www.zkoss.org/zkdemo/layout/border_layout)

@@ -1,5 +1,6 @@
 ---
 title: "Captcha"
+description: "Captcha: A captcha component can generate a special distortion image, also called a CAPTCHA (Completely Automated Public Turing test to tell Computers and…"
 ---
 
 - **Demonstration:** [Captcha](https://www.zkoss.org/zkdemo/input/form_sample)

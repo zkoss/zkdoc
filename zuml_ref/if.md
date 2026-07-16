@@ -1,5 +1,6 @@
 ---
 title: "if"
+description: "if: It specified the condition to evaluate the associated element."
 ---
 
 **Syntax:**

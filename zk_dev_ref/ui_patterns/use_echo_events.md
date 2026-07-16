@@ -1,5 +1,6 @@
 ---
 title: "Use Echo Events"
+description: "Use Echo Events: Event echoing is useful for implementing a long operation."
 ---
 
 Event echoing is useful for implementing a long operation.

@@ -1,5 +1,6 @@
 ---
 title: "The server-push-class Element"
+description: "The server-push-class Element: It specifies which class used to implement the server-push feature."
 ---
 
 **Syntax:**

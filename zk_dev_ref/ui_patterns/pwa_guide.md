@@ -1,5 +1,6 @@
 ---
 title: "Progressive Web Apps (PWA) Guide"
+description: "Progressive Web Apps (PWA) Guide: A Progressive Web App (PWA) is a web application that uses modern web capabilities to deliver an app-like experience to…"
 ---
 
 # Introduction

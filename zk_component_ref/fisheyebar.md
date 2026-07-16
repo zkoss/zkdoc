@@ -1,5 +1,6 @@
 ---
 title: "Fisheyebar"
+description: "Fisheyebar: A fisheye bar is a bar of fisheye that is a menu similar to the fish eye menu on the Mac OS."
 ---
 
 - **Demonstration:** [Fisheyebar](https://www.zkoss.org/zkdemo/menu/fisheye_menu)

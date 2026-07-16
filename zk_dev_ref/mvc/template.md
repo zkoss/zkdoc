@@ -1,5 +1,6 @@
 ---
 title: "Template"
+description: "Template: A template is a ZUML fragment that defines how to create components. A template is enclosed with the template element as shown below."
 ---
 
 A template is a ZUML fragment that defines how to create components. A

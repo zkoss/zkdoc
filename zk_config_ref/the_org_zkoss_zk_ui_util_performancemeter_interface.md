@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.PerformanceMeter interface"
+description: "The org.zkoss.zk.ui.util.PerformanceMeter interface: A listener could implement org.zkoss.zk.ui.util.PerformanceMeter to measure the performance."
 ---
 
 **Listener:**

@@ -1,5 +1,6 @@
 ---
 title: "Templates"
+description: "Templates: As described in the MVC: Template section, a template is a ZUML fragment that defines how to create components."
 ---
 
 As described in [the MVC: Template section]({{site.baseurl}}/zk_dev_ref/mvc/template), a

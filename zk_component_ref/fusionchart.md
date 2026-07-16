@@ -1,5 +1,6 @@
 ---
 title: "Fusionchart"
+description: "Fusionchart: 3rd party library that it's based on - Fusioncharts free, has moved out of flash and stopped supporting it."
 ---
 
  {% include Deprecated_Content.html %}

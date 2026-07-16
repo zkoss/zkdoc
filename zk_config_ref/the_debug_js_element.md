@@ -1,5 +1,6 @@
 ---
 title: "The debug-js Element"
+description: "The debug-js Element: It specifies whether to load uncompressed JavaScript files."
 ---
 
 **Syntax:**

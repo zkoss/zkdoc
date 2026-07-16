@@ -1,5 +1,6 @@
 ---
 title: "Camera"
+description: "Camera: The Camera component is used to record videos and take snapshots in the browser."
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.Camera](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Camera.html)

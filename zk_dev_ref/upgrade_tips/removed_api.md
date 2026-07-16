@@ -1,5 +1,6 @@
 ---
 title: "Removed API"
+description: "Removed API: Here are APIs removed since ZK 10."
 ---
 
 # Removed API

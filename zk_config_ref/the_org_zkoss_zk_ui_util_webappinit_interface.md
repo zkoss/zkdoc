@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.WebAppInit interface"
+description: "The org.zkoss.zk.ui.util.WebAppInit interface: A listener could implement org.zkoss.zk.ui.util.WebAppInit to initialize a ZK application when it has been…"
 ---
 
 **Listener:**

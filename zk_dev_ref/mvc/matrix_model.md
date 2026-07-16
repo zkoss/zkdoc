@@ -1,5 +1,6 @@
 ---
 title: "Matrix Model"
+description: "Matrix Model: Here we describe how to implement a matrix model (org.zkoss.zkmax.zul.MatrixModel)."
 ---
 
 Here we describe how to implement a matrix model

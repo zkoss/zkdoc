@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.progressbox.position"
+description: "org.zkoss.zul.progressbox.position: It specifies how to display the progress box at the client."
 ---
 
 **Property:**

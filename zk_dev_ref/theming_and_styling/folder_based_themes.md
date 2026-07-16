@@ -1,5 +1,6 @@
 ---
 title: "Folder-based Themes"
+description: "Folder-based Themes: Before creating a new ZK theme, web designers need to understand its directory structure, let's start off by discovering where the…"
 ---
 
 Before creating a new ZK theme, web designers need to understand its

@@ -1,5 +1,6 @@
 ---
 title: "OpenEvent"
+description: "OpenEvent: Represents an event cause by user's openning or closing something at the client."
 ---
 
 - Demonstration: [OpenEvent](http://www.zkoss.org/zkdemo/userguide/#e9)

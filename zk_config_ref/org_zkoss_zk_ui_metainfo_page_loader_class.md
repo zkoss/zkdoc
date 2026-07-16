@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.metainfo.page.Loader.class"
+description: "org.zkoss.zk.ui.metainfo.page.Loader.class: It specifies the name of the class used to load the page definitions."
 ---
 
 **Property:**

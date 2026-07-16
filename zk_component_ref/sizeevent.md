@@ -1,5 +1,6 @@
 ---
 title: "SizeEvent"
+description: "SizeEvent: Represents an event caused by a component being re-sized."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html)

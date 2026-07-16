@@ -1,5 +1,6 @@
 ---
 title: "Performance Monitoring"
+description: "Performance Monitoring: To improve the performance of an Ajax application, it is better to monitor the performance for identifying the bottleneck."
 ---
 
 To improve the performance of an Ajax application, it is better to

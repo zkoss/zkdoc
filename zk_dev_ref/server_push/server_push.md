@@ -1,5 +1,6 @@
 ---
 title: "Server Push"
+description: "Server Push: HTTP is a request-and-response protocol. Technically, there is no way to have the server to actively push data to the client."
 ---
 
 HTTP is a request-and-response protocol. Technically, there is no way to

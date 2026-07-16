@@ -1,5 +1,6 @@
 ---
 title: "Tabbox Renderer"
+description: "Tabbox Renderer: Here we describe how to implement a custom renderer for a tabbox (org.zkoss.zul.TabboxRenderer)."
 ---
 
 Here we describe how to implement a custom renderer for a tabbox

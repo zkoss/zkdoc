@@ -1,5 +1,6 @@
 ---
 title: "attribute"
+description: "attribute: It defines a XML attribute of the enclosing element."
 ---
 
 **Syntax:**

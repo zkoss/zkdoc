@@ -1,5 +1,6 @@
 ---
 title: "Actions and Effects"
+description: "Actions and Effects: The client-side action (CSA) is used to control how to perform an action at the client."
 ---
 
 The client-side action (CSA) is used to control how to perform an action

@@ -1,5 +1,6 @@
 ---
 title: "The timeout-uri Element"
+description: "The timeout-uri Element: It specifies the target URI that will be used to redirect users to, when the desktop no longer exists – it is usually caused by…"
 ---
 
 **Syntax:**

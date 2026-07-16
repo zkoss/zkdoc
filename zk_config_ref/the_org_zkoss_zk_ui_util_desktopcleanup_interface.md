@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.DesktopCleanup interface"
+description: "The org.zkoss.zk.ui.util.DesktopCleanup interface: A listener could implement org.zkoss.zk.ui.util.DesktopCleanup to cleanup a desktop when it is being…"
 ---
 
 **Listener:**

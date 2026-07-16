@@ -1,5 +1,6 @@
 ---
 title: "ZUML"
+description: "ZUML: There are two ways to compose UI: XML-based approach and pure-Java approach. Here we will describe XML-based approach."
 ---
 
 There are two ways to compose UI: XML-based approach and pure-Java

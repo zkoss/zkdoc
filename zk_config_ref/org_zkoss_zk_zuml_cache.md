@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ZUML.cache"
+description: "org.zkoss.zk.ZUML.cache: Specifies whether to cache the result of ZK ZUML files (the \\*.zul files in the classpath loaded by ZumlExtendlet) at the server."
 ---
 
 **Property:**

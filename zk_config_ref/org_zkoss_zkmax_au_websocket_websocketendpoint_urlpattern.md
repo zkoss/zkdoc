@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.urlPattern: It specifies the update URL pattern when the WebSocket connection is enabled."
 ---
 
 **Property:** 

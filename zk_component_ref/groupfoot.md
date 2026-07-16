@@ -1,5 +1,6 @@
 ---
 title: "Groupfoot"
+description: "Groupfoot: A footer row that appears at the end of each group in a Grid."
 ---
 
 - **Demonstration:** [Group](http://www.zkoss.org/zkdemo/grid/grouping)

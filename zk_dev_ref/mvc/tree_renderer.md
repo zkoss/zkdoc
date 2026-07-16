@@ -1,5 +1,6 @@
 ---
 title: "Tree Renderer"
+description: "Tree Renderer: When a tree (org.zkoss.zul.Tree) is assigned with a model, a default renderer is assigned too."
 ---
 
 When a tree ([org.zkoss.zul.Tree](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Tree.html)) is assigned with a

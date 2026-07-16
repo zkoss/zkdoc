@@ -1,5 +1,6 @@
 ---
 title: "Navseparator"
+description: "Navseparator: Used to create a separator between nav items."
 ---
 
 - **Java API:** [Navseparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)

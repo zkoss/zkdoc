@@ -1,5 +1,6 @@
 ---
 title: "Selectbox"
+description: "Selectbox is a lightweight dropdown list and it can support ListModel, Renderer, and Databinding as well."
 ---
 
 - **Demonstration:** [selection_dropdown](https://www.zkoss.org/zkdemo/getting_started/selection_dropdown)

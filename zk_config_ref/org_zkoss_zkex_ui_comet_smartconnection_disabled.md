@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkex.ui.comet.smartconnection.disabled"
+description: "org.zkoss.zkex.ui.comet.smartconnection.disabled: It specifies whether to disable the use of HTML5's Page Visibility API for handling Comet-based server push."
 ---
 
 **Property:**

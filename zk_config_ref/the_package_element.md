@@ -1,5 +1,6 @@
 ---
 title: "The package Element"
+description: "The package Element: It defines a client package (JavaScript) and all of its sub packages that are provided by this server."
 ---
 
 **Syntax:**

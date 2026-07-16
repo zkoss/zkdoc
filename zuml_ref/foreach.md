@@ -1,5 +1,6 @@
 ---
 title: "forEach"
+description: "forEach: The forEach attribute is used to specify a collection of object such that the XML element it belongs will be evaluated repeatedly for each object…"
 ---
 
 **Syntax:**

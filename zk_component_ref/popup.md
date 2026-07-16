@@ -1,5 +1,6 @@
 ---
 title: "Popup"
+description: "Popup: The popup is a container that does not have any special frame."
 ---
 
 - **Demonstration:** [Tooltips and Popup](http://www.zkoss.org/zkdemo/popup)

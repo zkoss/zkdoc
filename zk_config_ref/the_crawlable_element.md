@@ -1,5 +1,6 @@
 ---
 title: "The crawlable Element"
+description: "The crawlable Element: You are not able to specify whether content is crawlable, this works by generating tags within your content where content only…"
 ---
 
 **Syntax:**

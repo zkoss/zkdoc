@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnection"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnection"
 ---
 
 **Property:**

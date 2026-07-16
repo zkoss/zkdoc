@@ -1,5 +1,6 @@
 ---
 title: "AbstractListModel"
+description: "AbstractListModel: A skeletal implementation for ListModel."
 ---
 
 - Javadoc: [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html)

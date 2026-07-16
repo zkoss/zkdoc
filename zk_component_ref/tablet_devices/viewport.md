@@ -1,5 +1,6 @@
 ---
 title: "Viewport"
+description: "Viewport: The default viewport content generated in ZK when using tablet device is:"
 ---
 
 {% include supported-since.html version="6.5.0" %}

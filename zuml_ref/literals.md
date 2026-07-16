@@ -1,5 +1,6 @@
 ---
 title: "Literals"
+description: "Literals: EL expressions define the following literals:"
 ---
 
 EL expressions define the following literals:

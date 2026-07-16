@@ -1,5 +1,6 @@
 ---
 title: "Listheader"
+description: "Listheader: The list header which defines the attributes and header of a columen of a list box. Its parent must be Listhead."
 ---
 
 - **Demonstration:** [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)

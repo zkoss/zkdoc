@@ -1,5 +1,6 @@
 ---
 title: "Tabpanels"
+description: "Tabpanels: A tabpanels component is a container for tab panels, which are a collection of tabpanel components."
 ---
 
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)

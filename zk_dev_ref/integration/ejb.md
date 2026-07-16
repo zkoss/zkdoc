@@ -1,5 +1,6 @@
 ---
 title: "EJB"
+description: "EJB: Enterprise JavaBeans (EJB) technology is the server-side component architecture for Java EE. Here we describe how to use it in a ZUML document."
 ---
 
 Enterprise JavaBeans (EJB) technology is the server-side component

@@ -1,5 +1,6 @@
 ---
 title: "Attributes"
+description: "Attributes: Each attribute, except special attributes like if and forEach, represents a value that should be assigned to a property of a component after…"
 ---
 
 Each attribute, except special attributes like `if` and `forEach`,

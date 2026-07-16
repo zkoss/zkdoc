@@ -1,5 +1,6 @@
 ---
 title: "Fluid Design"
+description: "Fluid Design: A fluid design can take many forms. From a simple width=”100%” on the page container to always fit the screen, to detailed rule sets of…"
 ---
 
 A fluid design can take many forms. From a simple width=”100%” on the

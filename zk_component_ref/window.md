@@ -1,5 +1,6 @@
 ---
 title: "Window"
+description: "Window: A window is, like HTML DIV tag, used to group components. Unlike other components, a window has the following characteristics."
 ---
 
 - **Demonstration:** [Window](http://www.zkoss.org/zkdemo/window/positioning)

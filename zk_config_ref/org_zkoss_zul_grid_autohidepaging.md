@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.grid.autohidePaging"
+description: "org.zkoss.zul.grid.autohidePaging: It specifies whether to enable autohide property for internal paging component."
 ---
 
 **Property:**

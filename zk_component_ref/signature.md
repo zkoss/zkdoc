@@ -1,5 +1,6 @@
 ---
 title: "Signature"
+description: "Signature components support signature pad on the desktop and mobile browsers."
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.Signature](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Signature.html)

@@ -1,5 +1,6 @@
 ---
 title: "encodeURL"
+description: "encodeURL: i.e., org.zkoss.web.fn.ServletFns#encodeURL(java.lang.String))"
 ---
 
 ```java

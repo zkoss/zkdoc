@@ -1,5 +1,6 @@
 ---
 title: "Constrained"
+description: "Constrained: Decorates a component that its value is constrained by Constraint."
 ---
 
 - Java API: [org.zkoss.zul.ext.Constrainted](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Constrainted.html)

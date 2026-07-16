@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.logging.config.file"
+description: "org.zkoss.util.logging.config.file: It specifies the logging configuration file which is used to configure the logging of ZK internal functions."
 ---
 
 **Property:**

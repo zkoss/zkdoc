@@ -1,5 +1,6 @@
 ---
 title: "Upgrade Guide"
+description: "Upgrade Guide: This chapter guides you through upgrading your ZK application to a newer version or a different edition. It covers:"
 ---
 
 This chapter guides you through upgrading your ZK application to a newer version or a different edition. It covers:

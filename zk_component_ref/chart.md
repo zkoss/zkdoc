@@ -1,5 +1,6 @@
 ---
 title: "Chart"
+description: "Chart: A chart is used to show a set of data as a graph. It helps users to judge things with a snapshot."
 ---
 
 - **Demonstration:** [Chart](https://www.zkoss.org/zkdemo/chart/pie_chart)

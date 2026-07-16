@@ -1,5 +1,6 @@
 ---
 title: "preserve-all-blank"
+description: "preserve-all-blank: This property control how the zul parser interpret whitespaces (such as line breaks and spaces) between zul elements."
 ---
 
 **Property:** preserve-all-blank

@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.sys.PropertiesRenderer interface"
+description: "The org.zkoss.zk.ui.sys.PropertiesRenderer interface: A listener could implement org.zkoss.zk.ui.sys.PropertiesRenderer to generate application-specific…"
 ---
 
 **Listener:**

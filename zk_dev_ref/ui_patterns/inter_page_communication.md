@@ -1,5 +1,6 @@
 ---
 title: "Inter-Page Communication"
+description: "Inter-Page Communication: Communicating among pages in the same desktop is straightforward. First, you can use attributes to share data."
 ---
 
  Communicating among pages in the same desktop is

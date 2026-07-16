@@ -1,5 +1,6 @@
 ---
 title: "Samples"
+description: "Samples: Here is a sample of /metainfo/zk/config.xml (from zkex.jar):"
 ---
 
 Here is a sample of `/metainfo/zk/config.xml` (from zkex.jar):

@@ -1,5 +1,6 @@
 ---
 title: "The config-parser-class Element"
+description: "The config-parser-class Element: Specifies an application-specific parser to parse zk.xml."
 ---
 
 **Syntax:**

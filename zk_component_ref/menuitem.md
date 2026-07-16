@@ -1,5 +1,6 @@
 ---
 title: "Menuitem"
+description: "Menuitem: A single choice in a Menupopup element. It acts much like a button but it is rendered on a menu. Default getZclass(): z-menu-item."
 ---
 
 - **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu) and

@@ -1,5 +1,6 @@
 ---
 title: "Gimage"
+description: "Gimage: Image anchored on two specified (latitude, longitude) points(south-west and north-east) which is zoomed and moved with the Google Maps."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

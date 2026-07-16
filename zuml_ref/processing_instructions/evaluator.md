@@ -1,5 +1,6 @@
 ---
 title: "evaluator"
+description: "evaluator: It specifies how to evaluate XEL expressions."
 ---
 
 **Syntax:**

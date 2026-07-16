@@ -1,5 +1,6 @@
 ---
 title: "The listener Element"
+description: "The listener Element: It is used to specify the class name of a listener."
 ---
 
 **Syntax:**

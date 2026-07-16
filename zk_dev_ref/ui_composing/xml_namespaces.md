@@ -1,5 +1,6 @@
 ---
 title: "XML Namespaces"
+description: "XML Namespaces: In a ZUML document, an XML namespace is used to identify either a special functionality or a component set."
 ---
 
 In a ZUML document, an XML namespace is used to identify either a

@@ -1,5 +1,6 @@
 ---
 title: "Hlayout"
+description: "Hlayout: The hlayout component is a simple horizontal oriented layout. It layouts its child components horizontally in a row."
 ---
 
 - **Java API:** [org.zkoss.zul.Hlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Hlayout.html)

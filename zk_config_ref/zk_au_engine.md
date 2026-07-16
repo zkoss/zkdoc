@@ -1,5 +1,6 @@
 ---
 title: "Websocket"
+description: "Websocket: By default, ZK communicates with a server in XMLHttpRequest or Fetch API asynchronously. Now you can switch to WebSocket."
 ---
 
 # WebSocket

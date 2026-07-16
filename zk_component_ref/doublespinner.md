@@ -1,5 +1,6 @@
 ---
 title: "Doublespinner"
+description: "Doublespinner: An edit box for holding a constrained double."
 ---
 
 - **Demonstration:** [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)

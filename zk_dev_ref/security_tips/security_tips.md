@@ -1,5 +1,6 @@
 ---
 title: "Security Tips"
+description: "Security Tips: This chapter describes how to make ZK applications secure. ZK is designed to provide enterprise-grade security."
 ---
 
 This chapter describes how to make ZK applications secure. ZK is

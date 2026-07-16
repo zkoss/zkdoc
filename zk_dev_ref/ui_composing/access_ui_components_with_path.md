@@ -1,5 +1,6 @@
 ---
 title: "Access UI Components with Path"
+description: "Access UI Components with Path: Every ZUL component has its mapping Java class. Every ZUL element declared in ZUML has its mapping Java object."
 ---
 
 ## Use Java

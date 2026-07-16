@@ -1,5 +1,6 @@
 ---
 title: "ZK Developer's Reference"
+description: "ZK Developer's Reference: The ZK Developer's Reference is a reference of general features and advanced topics."
 ---
 
 The ZK Developer's Reference is a reference of general features and

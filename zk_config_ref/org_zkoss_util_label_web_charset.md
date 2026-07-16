@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.label.web.charset"
+description: "org.zkoss.util.label.web.charset: It defines the charset used to encode zk-label.properties if the file is located in a Web application (i.e…"
 ---
 
 **Property:**

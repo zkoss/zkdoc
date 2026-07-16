@@ -1,5 +1,6 @@
 ---
 title: "UploadEvent"
+description: "UploadEvent: Represents that the user has uploaded one or several files from the client to the server."
 ---
 
 - Demonstration:

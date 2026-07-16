@@ -1,5 +1,6 @@
 ---
 title: "InputElement"
+description: "InputElement serves as a superclass for components that handle user key input. It is utilized by various input elements in ZK, such as:"
 ---
 
 - Java API: [org.zkoss.zul.impl.InputElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/InputElement.html)

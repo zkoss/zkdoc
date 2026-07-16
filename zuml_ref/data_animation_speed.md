@@ -1,5 +1,6 @@
 ---
 title: "Data-AnimationSpeed"
+description: "Data-AnimationSpeed: To change the animation speed, you can apply data-animationspeed attribute."
 ---
 
 To change the animation speed, you can apply `data-animationspeed`

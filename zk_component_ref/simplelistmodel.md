@@ -1,5 +1,6 @@
 ---
 title: "SimpleListModel"
+description: "SimpleListModel: A simple implementation of ListModel."
 ---
 
 - Java API: [org.zkoss.zul.SimpleListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleListModel.html)

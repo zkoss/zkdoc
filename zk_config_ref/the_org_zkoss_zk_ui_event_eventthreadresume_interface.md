@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.event.EventThreadResume interface"
+description: "The org.zkoss.zk.ui.event.EventThreadResume interface: A listener could implement org.zkoss.zk.ui.event.EventThreadResume, such that it will be called…"
 ---
 
 **Listener:**

@@ -1,5 +1,6 @@
 ---
 title: "Stepbar"
+description: "Stepbar is a navigation component suitable for displaying the progress of a multi-step task."
 ---
 
 - **Demonstration:** [Stepbar](https://www.zkoss.org/zkdemo/menu/stepbar)

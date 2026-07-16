@@ -1,5 +1,6 @@
 ---
 title: "DropEvent"
+description: "DropEvent: Represents an event cause by user's dragging and dropping a component."
 ---
 
 - Demonstration: [DropEvent](http://www.zkoss.org/zkdemo/userguide/#a2)

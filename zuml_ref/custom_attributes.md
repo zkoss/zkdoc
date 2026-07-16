@@ -1,5 +1,6 @@
 ---
 title: "custom-attributes"
+description: "custom-attributes: It defines a set of custom attributes of the specified scope. You could specify as many as attributes you want."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "The init-crash-script Element"
+description: "The init-crash-script Element: If the client engine stops working before even the error handling is initialized (e.g."
 ---
 
 **Syntax:**

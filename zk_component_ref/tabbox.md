@@ -1,5 +1,6 @@
 ---
 title: "Tabbox"
+description: "Tabbox: A Tabbox is a container used to display multiple tabbed groups of components."
 ---
 
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)

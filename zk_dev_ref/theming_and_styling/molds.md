@@ -1,5 +1,6 @@
 ---
 title: "Molds"
+description: "Molds: A component could have multiple different visual appearances. Each appearance is called a mold."
 ---
 
 A component could have multiple different visual appearances. Each

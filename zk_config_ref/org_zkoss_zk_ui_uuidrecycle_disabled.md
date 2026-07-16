@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.uuidRecycle.disabled"
+description: "org.zkoss.zk.ui.uuidRecycle.disabled: It specifies whether to disable the recycling of UUID."
 ---
 
 **Property:**

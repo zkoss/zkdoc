@@ -1,5 +1,6 @@
 ---
 title: "SimpleConstraint"
+description: "SimpleConstraint: A simple constraint that you could build based the predefined constants."
 ---
 
 - Java API: [org.zkoss.zul.SimpleConstraint](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/SimpleConstraint.html)

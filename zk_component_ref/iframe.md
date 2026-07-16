@@ -1,5 +1,6 @@
 ---
 title: "Iframe"
+description: "Iframe: The iframecomponent uses the HTML IFRAME tag to delegate a portion of the display to another URL."
 ---
 
 - **Demonstration:** [Iframe](http://www.zkoss.org/zkdemo/composite/iframe)

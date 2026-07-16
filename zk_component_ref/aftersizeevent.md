@@ -1,5 +1,6 @@
 ---
 title: "AfterSizeEvent"
+description: "AfterSizeEvent: Represents an event that resizes and provides the new size of a component."
 ---
 
 - JavaDoc:[org.zkoss.zk.ui.event.AfterSizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/AfterSizeEvent.html)

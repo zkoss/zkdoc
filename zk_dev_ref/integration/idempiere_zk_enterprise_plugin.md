@@ -1,5 +1,6 @@
 ---
 title: "iDempiere ZK EE Plugin"
+description: "iDempiere ZK EE Plugin: iDempiere ships with ZK CE by default."
 ---
 
 iDempiere ships with ZK CE by default. To use ZK EE components (including PE/EE widgets from `zkex` and `zkmax`), you must attach those libraries to the `org.adempiere.ui.zk` bundle via an OSGi fragment and then build a plugin that references them. This guide builds the `org.idempiere.zkee.comps.example` plugin from the `zkoss-idempiere-ee-plugin` repository. For broader context, see [iDempiere integration overview](/zk_dev_ref/integration/idempiere) and the [iDempiere plugin development guide](https://wiki.idempiere.org/en/Developing_Plug-Ins_-_Get_your_Plug-In_running).

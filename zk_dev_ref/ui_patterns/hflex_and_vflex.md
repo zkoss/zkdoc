@@ -1,5 +1,6 @@
 ---
 title: "Hflex and Vflex"
+description: "Hflex and Vflex: Hflex (org.zkoss.zk.ui.HtmlBasedComponent#setHflex(java.lang.String))) and vflex…"
 ---
 
 Hflex

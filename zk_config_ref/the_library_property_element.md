@@ -1,5 +1,6 @@
 ---
 title: "The library-property Element"
+description: "The library-property Element: Species a library-level property with the library-property element."
 ---
 
 **Syntax:**

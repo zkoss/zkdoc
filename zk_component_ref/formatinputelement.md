@@ -1,5 +1,6 @@
 ---
 title: "FormatInputElement"
+description: "FormatInputElement: The primary purpose of FormatInputElement is to allow developers to create input elements with specific formats."
 ---
 
 - Java API: [`org.zkoss.zul.impl.FormatInputElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FormatInputElement.html)

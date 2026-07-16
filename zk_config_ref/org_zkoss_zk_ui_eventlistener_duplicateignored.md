@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.EventListener.duplicateIgnored"
+description: "org.zkoss.zk.ui.EventListener.duplicateIgnored: If set to false, components and pages will check their internal listener list for the same instance of…"
 ---
 
 **Property:**

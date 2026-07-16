@@ -1,5 +1,6 @@
 ---
 title: "Treefoot"
+description: "Treefoot: A treefoot is main part of tree which contains set of footers. The set of footers is defined by a number of treefooter components."
 ---
 
 - **Java API:** [org.zkoss.zul.Treefoot](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Treefoot.html)

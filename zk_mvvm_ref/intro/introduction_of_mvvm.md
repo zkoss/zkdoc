@@ -1,5 +1,6 @@
 ---
 title: 'Introduction'
+description: "Introduction: The ViewModel in MVVM acts like a special Controller for the View which is responsible for exposing data from the Model to the View and for…"
 ---
 
 # Introduction of MVVM

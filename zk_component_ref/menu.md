@@ -1,5 +1,6 @@
 ---
 title: "Menu"
+description: "Menu: An element, much like a button, is placed on a menu bar. When the user clicks the menu element, the child Menupopup of the menu will be displayed."
 ---
 
 - **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu)

@@ -1,5 +1,6 @@
 ---
 title: "Caption"
+description: "Caption: The Caption component serves as a header for various UI components such as Groupbox, Window, Panel, Tab, and LayoutRegion."
 ---
 
 - **Demonstration:** [Groupbox](https://www.zkoss.org/zkdemo/layout/group_box)

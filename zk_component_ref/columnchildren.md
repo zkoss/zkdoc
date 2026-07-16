@@ -1,5 +1,6 @@
 ---
 title: "Columnchildren"
+description: "Columnchildren can allow any Component as its child."
 ---
 
 - **Demonstration:** [Columnlayout](http://www.zkoss.org/zkdemo/layout/column_layout)

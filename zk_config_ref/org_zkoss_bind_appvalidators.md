@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.appValidators"
+description: "org.zkoss.bind.appValidators: Register application level validators and only have one instance shared between all binders."
 ---
 
 **Property:**

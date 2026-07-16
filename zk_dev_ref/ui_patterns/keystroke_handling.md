@@ -1,5 +1,6 @@
 ---
 title: "Keystroke Handling"
+description: "Keystroke handling is generic. Any component inherited from org.zkoss.zul.impl.XulElement can handle the key event in the same way."
 ---
 
 Keystroke handling is generic. Any component inherited from

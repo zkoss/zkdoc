@@ -1,5 +1,6 @@
 ---
 title: "Listhead"
+description: "Listhead: A list headers used to define multi-columns and/or headers. Only Listheader components are accepted as children."
 ---
 
 - **Demonstration:** [Listbox (Sorting)](http://www.zkoss.org/zkdemo/listbox/sorting)

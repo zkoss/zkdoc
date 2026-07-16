@@ -1,5 +1,6 @@
 ---
 title: "Gmaps"
+description: "Gmaps: Check our Maven repository for the latest version."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

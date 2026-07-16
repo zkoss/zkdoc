@@ -1,5 +1,6 @@
 ---
 title: "Jasperreport"
+description: "Jasperreport: The JasperReport component is based on a 3rd party JasperReports Library, a report generator (e.g. XML generator, PDF generator etc.)."
 ---
 
 - **Demonstration:** [Jasperreport](http://www.zkoss.org/zkdemo/reporting/jasperreport)

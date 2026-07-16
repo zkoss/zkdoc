@@ -1,5 +1,6 @@
 ---
 title: "Annotate in Java"
+description: "Annotate in Java: You could annotate a component or a property in Java by the use of org.zkoss.zk.ui.sys.ComponentCtrl#addAnnotation(java.lang.String…"
 ---
 
 You could annotate a component or a property in Java by the use of

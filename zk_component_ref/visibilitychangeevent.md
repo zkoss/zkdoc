@@ -1,5 +1,6 @@
 ---
 title: "VisibilityChangeEvent"
+description: "VisibilityChangeEvent: This event is fired when users change a browser page visibility e.g. switch to another tab or switch back."
 ---
 
 - Java API:

@@ -1,5 +1,6 @@
 ---
 title: "HtmlBasedComponent"
+description: "HtmlBasedComponent: The HtmlBasedComponent serves as a basic implementation for HTML-based components."
 ---
 
 - **Java API:** [org.zkoss.zk.ui.HtmlBasedComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/HtmlBasedComponent.html)

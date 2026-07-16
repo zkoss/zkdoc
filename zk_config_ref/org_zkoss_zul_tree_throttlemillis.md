@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.throttleMillis"
+description: "org.zkoss.zul.tree.throttleMillis: Specifies the millisecond of scrolling throttling in Tree render on-demand (ROD)."
 ---
 
 **Property:**

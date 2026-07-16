@@ -1,5 +1,6 @@
 ---
 title: "Tooltips, Context Menus and Popups"
+description: "Tooltips, Context Menus and Popups: The support of tooltips, context menus and popups is generic."
 ---
 
 The support of tooltips, context menus and popups is generic. Any

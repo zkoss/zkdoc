@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.connectionTimeout"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.connectionTimeout"
 ---
 
 **Property:**

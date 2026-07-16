@@ -1,5 +1,6 @@
 ---
 title: "Radio"
+description: "Radio: A radio button is a component that can be turned on and off. Radio buttons are grouped together in a group, called radiogroup."
 ---
 
 - **Demonstration:** [Radio](http://www.zkoss.org/zkdemo/input/radio_button)

@@ -1,5 +1,6 @@
 ---
 title: "Combobox"
+description: "Combobox: Components: combobox and comboitem."
 ---
 
 - **Demonstration:** [Combobox](http://www.zkoss.org/zkdemo/combobox)

@@ -1,5 +1,6 @@
 ---
 title: "The system-config Element"
+description: "The system-config Element: It is ued to customize ZK's default behavior."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.ExecutionCleanup interface"
+description: "The org.zkoss.zk.ui.util.ExecutionCleanup interface: A listener could implement org.zkoss.zk.ui.util.ExecutionCleanup to cleanup an execution that is…"
 ---
 
 **Listener:**

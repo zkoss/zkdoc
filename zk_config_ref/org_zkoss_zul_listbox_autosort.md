@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.autoSort"
+description: "org.zkoss.zul.listbox.autoSort: Specifies whether to sort the model when the following cases:"
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Use ZK JSP Tags instead of ZK Filter"
+description: "Use ZK JSP Tags instead of ZK Filter: The ZK filter actually maps each HTML tag to the corresponding XHTML components."
 ---
 
 The ZK filter actually maps each HTML tag to the corresponding XHTML

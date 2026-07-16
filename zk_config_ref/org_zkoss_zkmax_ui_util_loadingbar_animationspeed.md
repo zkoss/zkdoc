@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed"
+description: "org.zkoss.zkmax.ui.util.Loadingbar.animationSpeed: Specifies the value moving animation speed of Loadingbar in milliseconds."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Tbeditor"
+description: "Tbeditor is a rich text editor to be used inside web pages. It's a WYSIWYG editor, which means that the text being edited on it looks as similar as…"
 ---
 
 - **Demonstration:** [Tbeditor](https://www.zkoss.org/zkdemo/input/rich_text)

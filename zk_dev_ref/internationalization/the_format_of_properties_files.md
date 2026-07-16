@@ -1,5 +1,6 @@
 ---
 title: "The Format of Properties Files"
+description: "The Format of Properties Files: In this section, we will discuss the format of a properties file, such as zk-label.properties."
 ---
 
 In this section, we will discuss the format of a properties file, such

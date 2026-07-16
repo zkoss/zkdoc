@@ -1,5 +1,6 @@
 ---
 title: "The session-timeout Element"
+description: "The session-timeout Element: It specifies the time, in seconds, between client requests before a session is invalidated."
 ---
 
 **Syntax:**

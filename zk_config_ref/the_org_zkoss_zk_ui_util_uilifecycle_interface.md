@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.UiLifeCycle interface"
+description: "The org.zkoss.zk.ui.util.UiLifeCycle interface: A listener could implement org.zkoss.zk.ui.util.UiLifeCycle to handle something depending on the life…"
 ---
 
 **Listener:**

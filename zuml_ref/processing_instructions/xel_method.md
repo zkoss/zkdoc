@@ -1,5 +1,6 @@
 ---
 title: "xel-method"
+description: "xel-method: Specifies an EL function that could be used in EL expressions. For example,"
 ---
 
 **Syntax:**

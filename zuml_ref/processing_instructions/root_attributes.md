@@ -1,5 +1,6 @@
 ---
 title: "root-attributes"
+description: "root-attributes: It specifies the additional attributes for the root element of the generated output, which depends on the device types."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Layouts"
+description: "Layouts: This section outlines components which enable developers to control the layout of their application."
 noindex: true
 sitemap: false
 ---

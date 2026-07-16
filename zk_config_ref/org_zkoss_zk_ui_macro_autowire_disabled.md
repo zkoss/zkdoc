@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.macro.autowire.disabled"
+description: "org.zkoss.zk.ui.macro.autowire.disabled: Turn on/off auto wire mechanism for macro component"
 ---
 
 **Property:**

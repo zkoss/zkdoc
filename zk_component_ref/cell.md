@@ -1,5 +1,6 @@
 ---
 title: "Cell"
+description: "Cell: This Cell must only be a child of Row, Hbox, or Vbox. Other components cannot be its parent. Use it to control alignment and row/column span."
 ---
 
 - **Demonstration:** [Grid (Spreadsheet Functionalities)](http://www.zkoss.org/zkdemo/grid/spreadsheet_functionalities)

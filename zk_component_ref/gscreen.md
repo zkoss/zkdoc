@@ -1,5 +1,6 @@
 ---
 title: "Gscreen"
+description: "Gscreen: A rectangular image on the Gmaps whose position remains fixed on the screen even you move the maps."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

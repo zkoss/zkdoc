@@ -1,5 +1,6 @@
 ---
 title: "org_zkoss_zk_config_path"
+description: "org_zkoss_zk_config_path: It specifies another configuration file in addition to WEB-INF/zk.xml."
 ---
 
 **Property:**

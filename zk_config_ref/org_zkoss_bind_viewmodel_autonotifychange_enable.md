@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.viewModel.autoNotifyChange.enable"
+description: "org.zkoss.bind.viewModel.autoNotifyChange.enable: Enable posting NotifyChange when a setter method is called."
 ---
 
 **Property:**

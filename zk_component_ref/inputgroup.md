@@ -1,5 +1,6 @@
 ---
 title: "Inputgroup"
+description: "Inputgroup: The Inputgroup component in ZK provides a way to prepend or append components to an input component, allowing for the creation of custom…"
 ---
 
 - **Demonstration:** [Inputgroup – organize your input components](https://www.zkoss.org/zkdemo/input/inputgroup)

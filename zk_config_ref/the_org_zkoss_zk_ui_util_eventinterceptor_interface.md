@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.EventInterceptor interface"
+description: "The org.zkoss.zk.ui.util.EventInterceptor interface: A listener could implement org.zkoss.zk.ui.util.EventInterceptor to intercept when an event is sent…"
 ---
 
 **Listener:**

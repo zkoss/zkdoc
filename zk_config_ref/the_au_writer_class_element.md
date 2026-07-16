@@ -1,5 +1,6 @@
 ---
 title: "The au-writer-class Element"
+description: "The au-writer-class Element: It specifies which class is used to implement the AU writer."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Progressmeter"
+description: "Progressmeter: A progress meter is a bar that indicates how much of a task has been completed. The value property must be in the range between 0 and 100."
 ---
 
 - **Demonstration:** [Progressmeter](http://www.zkoss.org/zkdemo/effects/upload_effect)

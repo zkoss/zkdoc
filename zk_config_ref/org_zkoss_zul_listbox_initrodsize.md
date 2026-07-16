@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.initRodSize"
+description: "org.zkoss.zul.listbox.initRodSize: Specifies the number of items rendered when the Listbox first render."
 ---
 
 **Property:**

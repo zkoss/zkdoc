@@ -1,5 +1,6 @@
 ---
 title: "Session Timeout Management"
+description: "Session Timeout Management: After a session times out, all desktops and UI objects it belongs are removed."
 ---
 
 After a session times out, all desktops and UI objects it belongs are

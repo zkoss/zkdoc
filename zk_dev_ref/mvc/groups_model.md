@@ -1,5 +1,6 @@
 ---
 title: "Groups Model"
+description: "Groups Model: Here we describe how to implement a groups model (org.zkoss.zul.GroupsModel)."
 ---
 
 Here we describe how to implement a groups model

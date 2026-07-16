@@ -1,5 +1,6 @@
 ---
 title: "Annotations"
+description: "Annotations: An annotation is a special form of syntactic metadata that can be added to components."
 ---
 
 An annotation is a special form of syntactic metadata that can be added

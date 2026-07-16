@@ -1,5 +1,6 @@
 ---
 title: "The extendlet-check-period Element"
+description: "The extendlet-check-period Element: It specifies the time, in seconds, to wait before checking whether a resource loaded by an extendlet is modified."
 ---
 
 **Syntax:**

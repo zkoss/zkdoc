@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.theme.fontSizeS"
+description: "org.zkoss.zul.theme.fontSizeS: It specifies the size of the smaller font used in the ZUL CSS file."
 ---
 
 **Property:**

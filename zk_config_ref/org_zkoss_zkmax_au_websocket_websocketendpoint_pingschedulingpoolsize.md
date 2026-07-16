@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingSchedulingPoolSize"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingSchedulingPoolSize: The heartbeat mechanism thread pool size."
 ---
 
 **Property:**

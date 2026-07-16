@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.sys.XMLResourcesLocator.class"
+description: "org.zkoss.zk.ui.sys.XMLResourcesLocator.class: It specifies the name of the class used to load metainfo/config.xml, metainfo/lang.xml and…"
 ---
 
 **Property:**

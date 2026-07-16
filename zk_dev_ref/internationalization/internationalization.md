@@ -1,5 +1,6 @@
 ---
 title: "Internationalization"
+description: "Internationalization: This chapter describes how to make ZK applications flexible enough to run in any locale."
 ---
 
 This chapter describes how to make ZK applications flexible enough to

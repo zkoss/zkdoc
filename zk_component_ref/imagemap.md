@@ -1,5 +1,6 @@
 ---
 title: "Imagemap"
+description: "Imagemap: A imagemap component is a special image. It accepts whatever properties an imagecomponent accepts."
 ---
 
 - **Java API:** [org.zkoss.zul.Imagemap](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Imagemap.html)

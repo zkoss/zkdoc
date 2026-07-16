@@ -1,5 +1,6 @@
 ---
 title: "The unavailable-message Element"
+description: "The unavailable-message Element: It specifies the message that will be displayed if the client doesn't support this device."
 ---
 
 **Syntax:**

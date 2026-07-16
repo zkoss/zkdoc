@@ -1,5 +1,6 @@
 ---
 title: "ListModel"
+description: "ListModel: This interface defines the methods that components like Listbox and Grid use to get the content of items."
 ---
 
 - Demonstration: [Listbox (Live Data)](http://www.zkoss.org/zkdemo/userguide/#g8)

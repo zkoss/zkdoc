@@ -1,5 +1,6 @@
 ---
 title: "Dropupload"
+description: "Dropupload: users can simply drag and drop the file(s) they want to upload into Dropupload and the uploading process will start automatically."
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.Dropupload](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Dropupload.html)

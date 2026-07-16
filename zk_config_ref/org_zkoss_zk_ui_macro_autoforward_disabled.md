@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.macro.autoforward.disabled"
+description: "org.zkoss.zk.ui.macro.autoforward.disabled: Turn on/off auto forward mechanism for macro component"
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Extensions"
+description: "Extensions: There are several ways to extend ZUML:"
 ---
 
 There are several ways to extend ZUML:

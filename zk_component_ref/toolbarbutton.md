@@ -1,5 +1,6 @@
 ---
 title: "Toolbarbutton"
+description: "Toolbarbutton: The behavior of Toolbarbutton is similar to the button except the appearance is different."
 ---
 
 - **Demonstration:** [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar) and

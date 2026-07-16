@@ -1,5 +1,6 @@
 ---
 title: "Drag and Drop"
+description: "Drag and Drop: ZK allows a user to drag particular components around the user interface."
 ---
 
 ZK allows a user to drag particular components around the user

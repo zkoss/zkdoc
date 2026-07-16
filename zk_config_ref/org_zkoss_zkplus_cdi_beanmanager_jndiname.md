@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkplus.cdi.beanManager.jndiName"
+description: "org.zkoss.zkplus.cdi.beanManager.jndiName: Specify a JNDI name for bean manager in CDI"
 ---
 
 **Property:**

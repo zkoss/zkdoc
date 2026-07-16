@@ -1,5 +1,6 @@
 ---
 title: "eatQuot"
+description: "eatQuot: i.e., org.zkoss.xel.fn.StringFns#eatQuot(java.lang.String))"
 ---
 
 ```java

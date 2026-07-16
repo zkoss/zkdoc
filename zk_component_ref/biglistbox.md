@@ -1,5 +1,6 @@
 ---
 title: "Biglistbox"
+description: "Biglistbox: A component to handle a huge data sets and provides the same and as many as the functionalities of Listbox including selection, sorting…"
 ---
 
 - **Demonstration:** [Demo](https://www.zkoss.org/wiki/Small_Talks/2012/March/Handling_a_Trillion_Data_Using_ZK)

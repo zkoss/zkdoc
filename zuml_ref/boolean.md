@@ -1,5 +1,6 @@
 ---
 title: "boolean"
+description: "boolean: i.e., org.zkoss.xel.fn.CommonFns#toBoolean(java.lang.Object))"
 ---
 
 ```java

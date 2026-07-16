@@ -1,5 +1,6 @@
 ---
 title: "The web-app-class Element"
+description: "The web-app-class Element: It specifies which class is used to implement the Web application."
 ---
 
 **Syntax:**

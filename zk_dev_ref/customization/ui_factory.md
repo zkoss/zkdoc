@@ -1,5 +1,6 @@
 ---
 title: "UI Factory"
+description: "UI Factory: used to instantiate all UI objects, such as session, desktop, and components, and to load ZUML documents."
 ---
 
 [org.zkoss.zk.ui.sys.UiFactory](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/UiFactory.html) is

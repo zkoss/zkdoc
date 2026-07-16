@@ -1,5 +1,6 @@
 ---
 title: "Responsive Templating"
+description: "Responsive Templating: This article uses concepts introduced in the Fluid design and Adaptive design documentation."
 ---
 
 This article uses concepts introduced in the [Fluid design]({{site.baseurl}}/zk_dev_ref/responsive_design/fluid_design)

@@ -1,5 +1,6 @@
 ---
 title: "ZK Embedded"
+description: "ZK Embedded: In the following sections, we will talk about the ZK Embedded pattern."
 ---
 
 In the following sections, we will talk about the ZK Embedded pattern.

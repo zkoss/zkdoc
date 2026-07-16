@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.ui.util.Toast.animationSpeed"
+description: "org.zkoss.zkmax.ui.util.Toast.animationSpeed: Specifies the duration of Toast opening and closing animation in milliseconds."
 ---
 
 **Property:**

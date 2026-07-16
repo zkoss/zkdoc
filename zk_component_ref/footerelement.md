@@ -1,5 +1,6 @@
 ---
 title: "FooterElement"
+description: "FooterElement: The ZK Footer Element, represented by the FooterElement class in the Java API and FooterWidget in the JavaScript API, serves as a skeletal…"
 ---
 
 - Java API: [`org.zkoss.zul.impl.FooterElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/FooterElement.html)

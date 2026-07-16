@@ -1,5 +1,6 @@
 ---
 title: "The max-requests-per-session Element"
+description: "The max-requests-per-session Element: It specifies the maximum allowed number of concurrent requests per session."
 ---
 
 **Syntax:**

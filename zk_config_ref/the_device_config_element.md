@@ -1,5 +1,6 @@
 ---
 title: "The device-config Element"
+description: "The device-config Element: It is used to specify a device, or customizes an existent device."
 ---
 
 **Syntax:**

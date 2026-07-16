@@ -1,5 +1,6 @@
 ---
 title: "Datebox"
+description: "Datebox: An edit box for holding a date. After click on the calender, a calender will pop-up for inputting date."
 ---
 
 - **Demonstration:** [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)

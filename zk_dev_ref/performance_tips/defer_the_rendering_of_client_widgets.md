@@ -1,5 +1,6 @@
 ---
 title: "Defer the Rendering of Client Widgets"
+description: "Defer the Rendering of Client Widgets: In addition to Defer the Creation of Child Components, you can defer the rendering of the widgets at the client by…"
 ---
 
 In addition to [ Defer the Creation of Child Components]({{site.baseurl}}/zk_dev_ref/performance_tips/defer_the_creation_of_child_components),

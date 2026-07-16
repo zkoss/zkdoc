@@ -1,5 +1,6 @@
 ---
 title: "Chosenbox Template"
+description: "Chosenbox Template: Similar to Listbox, you can render a chosenbox with a template."
 ---
 
 Similar to

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.zul.FiledownloadListener.class"
+description: "org.zkoss.zkmax.zul.FiledownloadListener.class: It specifies the name of the class that will be notified when a file download is happening."
 ---
 
 **Property:**

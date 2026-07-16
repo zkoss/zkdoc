@@ -1,5 +1,6 @@
 ---
 title: "Renderer"
+description: "Renderer: A renderer is a Java class that produces child items based on a data model. It renders your data into View. There are 2 kinds of renderers:"
 ---
 
 A **renderer** is a Java class that produces child items based on a data

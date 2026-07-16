@@ -1,5 +1,6 @@
 ---
 title: "In Pure Java"
+description: "In Pure Java: It is also possible to create XHTML components in Java."
 ---
 
 It is also possible to create XHTML components in Java. The XHTML

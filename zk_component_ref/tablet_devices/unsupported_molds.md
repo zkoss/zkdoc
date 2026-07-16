@@ -1,5 +1,6 @@
 ---
 title: "Unsupported Molds"
+description: "Unsupported Molds: The following molds which are not supported in components for tablet devices."
 ---
 
 The following molds which are not supported in components for tablet

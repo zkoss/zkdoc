@@ -1,5 +1,6 @@
 ---
 title: "Rows"
+description: "Rows: Defines the rows of a grid. Each child of a rows element should be a org.zkoss.zul.Row element."
 ---
 
 - **Demonstration:** [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)

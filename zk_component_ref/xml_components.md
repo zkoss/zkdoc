@@ -1,5 +1,6 @@
 ---
 title: "XML Components"
+description: "XML Components: This section describes how to use the XML component set. The XML component set is a special component set used in a XML device."
 ---
 
 This section describes how to use the [XML component set](/zuml_ref/xml). The XML component

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.initRodSize"
+description: "org.zkoss.zul.tree.initRodSize: Specifies the number of items rendered when the Tree first render."
 ---
 
 **Property:**

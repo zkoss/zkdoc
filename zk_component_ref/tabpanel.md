@@ -1,5 +1,6 @@
 ---
 title: "Tabpanel"
+description: "Tabpanel: A tabpanel serves as the content container for a single tab within a tabbox."
 ---
 
 - **Demonstration:** [Tabbox](https://www.zkoss.org/zkdemo/tabbox)

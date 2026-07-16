@@ -1,5 +1,6 @@
 ---
 title: "The failover-manager-class Element"
+description: "The failover-manager-class Element: It specifies which class should be used to handle the failover."
 ---
 
 **Syntax:**

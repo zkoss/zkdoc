@@ -1,5 +1,6 @@
 ---
 title: "Gmarker"
+description: "Gmarker: The gmarker displays a marker on a Google Map at a specific latitude and longitude coordinate."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

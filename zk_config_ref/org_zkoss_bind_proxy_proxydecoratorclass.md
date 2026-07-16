@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.proxy.ProxyDecoratorClass"
+description: "org.zkoss.bind.proxy.ProxyDecoratorClass: It specifies the name of the class used to provide an enhancement for the proxy object."
 ---
 
 **Property:**

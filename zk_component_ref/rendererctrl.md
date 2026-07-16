@@ -1,5 +1,6 @@
 ---
 title: "RendererCtrl"
+description: "RendererCtrl: This interface defines the methods components like Listbox used to notify the renderer for several circumstance."
 ---
 
 - Java API: [org.zkoss.zul.RendererCtrl](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/RendererCtrl.html)

@@ -1,5 +1,6 @@
 ---
 title: "MapTypeChangeEvent"
+description: "MapTypeChangeEvent: Represents a Google Maps related event which is triggered whenever the current type(normal, satellite, hybrid, physical) of the gmaps…"
 ---
 
 - Java API: N/A

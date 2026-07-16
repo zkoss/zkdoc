@@ -1,5 +1,6 @@
 ---
 title: "XHTML Components"
+description: "XHTML Components: This section describes how to use the XHTML component set (i.e., XHTML components)."
 ---
 
 This section describes how to use the [XHTML component set](/zuml_ref/xhtml) (i.e., XHTML

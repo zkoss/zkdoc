@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.rod"
+description: "org.zkoss.zul.listbox.rod: Set render-on-demand for listbox components."
 ---
 
 **Property:**

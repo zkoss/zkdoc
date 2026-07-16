@@ -1,5 +1,6 @@
 ---
 title: "The resend-delay Element"
+description: "The resend-delay Element: It specifies the time, in milliseconds, to wait before resending the AU requests to the server."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.logging.realCauseBriefly"
+description: "org.zkoss.util.logging.realCauseBriefly: It defines the number of lines to log an error message."
 ---
 
 **Property:**

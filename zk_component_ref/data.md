@@ -1,5 +1,6 @@
 ---
 title: "Data"
+description: "Data: This section outlines components which are designed to handle data display."
 noindex: true
 sitemap: false
 ---

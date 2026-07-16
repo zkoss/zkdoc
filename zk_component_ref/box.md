@@ -1,5 +1,6 @@
 ---
 title: "Box"
+description: "Box: The box model of XUL is used to divide a portion of the display into a series of boxes."
 ---
 
 - **Demonstration:** [Box](http://www.zkoss.org/zkdemo/layout/box)

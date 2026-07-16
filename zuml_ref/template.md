@@ -1,5 +1,6 @@
 ---
 title: "template"
+description: "template: It defines a template. A template is a ZUML fragment that defines how to create components."
 ---
 
 **Syntax:**

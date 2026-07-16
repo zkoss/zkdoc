@@ -1,5 +1,6 @@
 ---
 title: "Image"
+description: "Image: An image component displays an image at the browser. You can assign the image by specifying a URI with the src property, or programmatically set…"
 ---
 
 - **Demonstration:** [Image](http://www.zkoss.org/zkdemo/multimedia/dynamic_image)

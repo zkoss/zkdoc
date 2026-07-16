@@ -1,5 +1,6 @@
 ---
 title: "Borderlayout"
+description: "Borderlayout: The layout component is a nested component. The parent component is borderlayout, and its children components include north, south, center…"
 ---
 
 - **Demonstration:** [Borderlayout](http://www.zkoss.org/zkdemo/layout/border_layout)

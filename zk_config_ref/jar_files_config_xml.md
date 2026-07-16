@@ -1,5 +1,6 @@
 ---
 title: "JAR File's config.xml"
+description: "JAR File's config.xml: A JAR file could contain a configuration file that will override the default configuration of a ZK application."
 ---
 
 A JAR file could contain a configuration file that will override the

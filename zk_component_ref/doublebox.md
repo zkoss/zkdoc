@@ -1,5 +1,6 @@
 ---
 title: "Doublebox"
+description: "Doublebox: An edit box for holding an float point value (double)."
 ---
 
 - **Demonstration:** [Doublebox](http://www.zkoss.org/zkdemo/input/form_sample)

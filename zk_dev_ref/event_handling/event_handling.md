@@ -1,5 +1,6 @@
 ---
 title: "Event Handling"
+description: "Event Handling: An event (org.zkoss.zk.ui.event.Event) is used to abstract an activity made by a user, a notification made by an application, and an…"
 ---
 
 An event ([org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)) is used to

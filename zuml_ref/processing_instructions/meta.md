@@ -1,5 +1,6 @@
 ---
 title: "meta"
+description: "meta: It specifies an element that should be generated inside the HEAD element. It is generated before ZK default JavaScript and CSS files."
 ---
 
 **Syntax:**

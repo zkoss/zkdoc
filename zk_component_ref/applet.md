@@ -1,5 +1,6 @@
 ---
 title: "Applet"
+description: "Applet: A generic applet component."
 ---
 
 {% include Deprecated_Content.html %}

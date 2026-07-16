@@ -1,5 +1,6 @@
 ---
 title: "The richlet Element"
+description: "The richlet Element: To declare a richlet, you have to add the richlet element to zk.xml. You could specify any number of richlet elements."
 ---
 
 To declare a richlet, you have to add the `richlet` element to `zk.xml`.

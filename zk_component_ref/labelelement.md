@@ -1,5 +1,6 @@
 ---
 title: "LabelElement"
+description: "LabelElement: The LabelElement is an abstract base class for components that render a text label."
 ---
 
 - **Java API:** [`org.zkoss.zul.impl.LabelElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelElement.html)

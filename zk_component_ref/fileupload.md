@@ -1,5 +1,6 @@
 ---
 title: "Fileupload"
+description: "Fileupload: There are two ways to use org.zkoss.zul.Fileupload as a component to upload files, or invoke org.zkoss.zul.Fileupload#get()) to open a dialog…"
 ---
 
 - **Demonstration:** [File Upload](http://www.zkoss.org/zkdemo/file_handling/file_upload)

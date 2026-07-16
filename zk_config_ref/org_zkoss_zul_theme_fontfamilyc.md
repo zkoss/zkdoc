@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.theme.fontFamilyC"
+description: "org.zkoss.zul.theme.fontFamilyC: It specifies the font used for the content in the ZUL CSS file."
 ---
 
 **Property:**

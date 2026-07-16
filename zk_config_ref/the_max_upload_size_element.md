@@ -1,5 +1,6 @@
 ---
 title: "The max-upload-size Element"
+description: "The max-upload-size Element: It specifies the maximum allowed size, in kilobytes, to upload a file from a browser."
 ---
 
 **Syntax:**

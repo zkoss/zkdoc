@@ -1,5 +1,6 @@
 ---
 title: "Performance Meters"
+description: "Performance Meters: is a collection of callbacks that the implementation could know when a request is sent, arrives or is processed."
 ---
 
 [org.zkoss.zk.ui.util.PerformanceMeter](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/PerformanceMeter.html)

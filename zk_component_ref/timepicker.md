@@ -1,5 +1,6 @@
 ---
 title: "Timepicker"
+description: "Timepicker: A selection box for holding a time (a java.util.Date Object), but only Hour, Minute, and Second are used."
 ---
 
 - **Demonstration:** [Timepicker](https://www.zkoss.org/zkdemo/input/timepicker)

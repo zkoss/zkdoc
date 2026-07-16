@@ -1,5 +1,6 @@
 ---
 title: "The theme-uri-handler-class Element"
+description: "The theme-uri-handler-class Element: It specifies the class to provide the theme (aka., a style sheet file) URI dynamically if you want to determine the…"
 ---
 
 **Syntax:**

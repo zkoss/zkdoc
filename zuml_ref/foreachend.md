@@ -1,5 +1,6 @@
 ---
 title: "forEachEnd"
+description: "forEachEnd: The forEach attribute is used to specify the index (starting from 0) which element iteration should end at (inclusive)."
 ---
 
 **Syntax:**

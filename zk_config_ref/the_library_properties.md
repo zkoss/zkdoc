@@ -1,5 +1,6 @@
 ---
 title: "The Library Properties"
+description: "The Library Properties: Here is a list of supported library properties that ZK supports."
 ---
 
 Here is a list of supported library properties that ZK supports. There  are several different scopes you can configure for a library property.

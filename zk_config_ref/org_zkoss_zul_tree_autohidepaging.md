@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.autohidePaging"
+description: "org.zkoss.zul.tree.autohidePaging: It specifies whether to enable autohide property for internal paging component."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "AbstractComponent"
+description: "AbstractComponent: The AbstractComponent class in ZK serves as a foundation for creating custom components by extending its functionality."
 ---
 
 - Java API: [org.zkoss.zk.ui.AbstractComponent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/AbstractComponent.html)

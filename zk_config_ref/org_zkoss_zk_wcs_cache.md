@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.WCS.cache"
+description: "org.zkoss.zk.WCS.cache: Specifies whether to cache the result of ZK WCS files (the stylesheets of components) at the server. By default, it is enabled."
 ---
 
 **Property:**

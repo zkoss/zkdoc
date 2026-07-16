@@ -1,5 +1,6 @@
 ---
 title: "Life Cycle Listener"
+description: "Life Cycle Listener: You could have some custom initialization and cleanup when an application, a session, a desktop or an execution is instantiated or…"
 ---
 
 You could have some custom initialization and cleanup when an

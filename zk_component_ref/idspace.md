@@ -1,5 +1,6 @@
 ---
 title: "Idspace"
+description: "Idspace: The Idspace component, similar to a Div, implements the ID space in ZK."
 ---
 
 - Java API: [org.zkoss.zul.Idspace](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Idspace.html)

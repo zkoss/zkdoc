@@ -1,5 +1,6 @@
 ---
 title: "The zscript-config Element"
+description: "The zscript-config Element: It is used to specify an interpreter to interpret the zscript code."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Radiogroup"
+description: "Radiogroup: Used to group multiple radio buttons. In one radiogroup, only one radio button may be selected at a time."
 ---
 
 - **Demonstration:** [Radiogroup](http://www.zkoss.org/zkdemo/input/radio_button)

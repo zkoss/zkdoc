@@ -1,5 +1,6 @@
 ---
 title: "ZUML"
+description: "ZUML (ZK User Interface Markup Language) is based on XML. Similar to HTML and XUL, it is used to describe UI in an easy-to-understand format."
 ---
 
 ZUML (ZK User Interface Markup Language) is based on XML. Similar to

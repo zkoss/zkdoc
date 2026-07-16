@@ -1,5 +1,6 @@
 ---
 title: "The max-pushes-per-session Element"
+description: "The max-pushes-per-session Element: It specifies the maximum allowed number of concurrent server-push connections per session."
 ---
 
 **Syntax:**

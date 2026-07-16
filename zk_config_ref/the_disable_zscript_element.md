@@ -1,5 +1,6 @@
 ---
 title: "The disable-zscript Element"
+description: "The disable-zscript Element: Specifies whether or not to disable the use of zscript (i.e., the interpreter)."
 ---
 
 **Syntax:**

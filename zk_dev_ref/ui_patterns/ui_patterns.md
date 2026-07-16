@@ -1,5 +1,6 @@
 ---
 title: "UI Patterns"
+description: "UI Patterns: This section describes feature-specific UI handling topics. For introductory concepts, please refer to the UI Composing section."
 ---
 
 This section describes feature-specific UI handling topics. For

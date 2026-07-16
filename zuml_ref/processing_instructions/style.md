@@ -1,5 +1,6 @@
 ---
 title: "style"
+description: "style: It specifies an element that shall be generated inside the HEAD element. It is generated after ZK default JavaScript and CSS files."
 ---
 
 **Syntax:**

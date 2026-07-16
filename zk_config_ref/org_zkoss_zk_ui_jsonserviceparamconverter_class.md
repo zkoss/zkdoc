@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.jsonServiceParamConverter.class"
+description: "org.zkoss.zk.ui.jsonServiceParamConverter.class: It specifies the name of the class used to provide the default JSON converter for service command."
 ---
 
 **Property:**

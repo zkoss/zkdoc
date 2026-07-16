@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.tablet.ui.disabled"
+description: "org.zkoss.zkmax.tablet.ui.disabled: It specifies whether to disable the tablet UI."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Model"
+description: "Model: The model is the data an application handles. Depending on the application requirement, it could be anything as long as your controller knows it."
 ---
 
 The *model* is the data an application handles. Depending on the

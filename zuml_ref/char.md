@@ -1,5 +1,6 @@
 ---
 title: "char"
+description: "char: i.e., org.zkoss.xel.fn.CommonFns#toChar(java.lang.Object))"
 ---
 
 ```java

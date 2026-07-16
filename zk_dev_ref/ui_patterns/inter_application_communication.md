@@ -1,5 +1,6 @@
 ---
 title: "Inter-Application Communication"
+description: "Inter-Application Communication: An EAR file or the installation of Web server could have multiple WAR files. Each of them is a Web application."
 ---
 
 An EAR file or the installation of Web server could have multiple WAR

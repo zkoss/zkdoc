@@ -1,5 +1,6 @@
 ---
 title: "decimal"
+description: "decimal: i.e., org.zkoss.xel.fn.CommonFns#toDecimal(java.lang.Object))"
 ---
 
 ```java

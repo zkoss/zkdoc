@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.theme.atlantic.useGoogleFont.disabled"
+description: "org.zkoss.theme.atlantic.useGoogleFont.disabled: By default, Atlantic theme imports Google font, but some countries (e.g."
 ---
 
 **Property:** org.zkoss.theme.atlantic.useGoogleFont.disabled

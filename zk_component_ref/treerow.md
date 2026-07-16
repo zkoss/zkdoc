@@ -1,5 +1,6 @@
 ---
 title: "Treerow"
+description: "Treerow is a single row in the tree. It is the main content of treeitem."
 ---
 
 - **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)

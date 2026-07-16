@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.theme.fontFamilytT"
+description: "org.zkoss.zul.theme.fontFamilytT: It specifies the font used for the title in the ZUL CSS file."
 ---
 
 **Property:**

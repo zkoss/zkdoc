@@ -1,5 +1,6 @@
 ---
 title: "The Preferences"
+description: "The Preferences: Here is a list of supported preferences that ZK recognizes."
 ---
 
 Here is a list of supported preferences that ZK recognizes.

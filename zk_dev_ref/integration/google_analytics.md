@@ -1,5 +1,6 @@
 ---
 title: "Google Analytics"
+description: "Google Analytics: To track the Ajax traffic with Google Analytics or other statistic services, you have to override a client-side API…"
 ---
 
 To track the Ajax traffic with [Google Analytics](http://www.google.com/analytics/) or other statistic

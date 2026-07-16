@@ -1,5 +1,6 @@
 ---
 title: "Nodom"
+description: "Nodom: The Nodom component in ZK is a server-side Java object that does not render any DOM elements or JavaScript widgets at the client-side."
 ---
 
 - **Demonstration:** [Nodom](https://www.zkoss.org/zkdemo/input/nodom)

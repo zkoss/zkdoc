@@ -1,5 +1,6 @@
 ---
 title: "On-demand Evaluation"
+description: "On-demand Evaluation: By default, ZK creates components based on what is defined in a ZUML document when loading the document."
 ---
 
 By default, ZK creates components based on what is defined in a ZUML

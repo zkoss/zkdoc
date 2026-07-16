@@ -1,5 +1,6 @@
 ---
 title: "Performance Tips"
+description: "Performance Tips: This chapter describes the tips to make your ZK application running faster."
 ---
 
 This chapter describes the tips to make your ZK application running

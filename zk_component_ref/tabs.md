@@ -1,5 +1,6 @@
 ---
 title: "Tabs"
+description: "Tabs: The tabs component serves as a container for multiple tab components."
 ---
 
 - **Demonstration:** [Tabbox](https://www.zkoss.org/zkdemo/tabbox)

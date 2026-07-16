@@ -1,5 +1,6 @@
 ---
 title: "Theming and Styling"
+description: "Theming and Styling: This chapter introduces how you change a component's appearance through different ways including mold, CSS class, or even a theme."
 ---
 
 This chapter introduces how you change a component's appearance through

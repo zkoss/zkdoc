@@ -1,5 +1,6 @@
 ---
 title: "Columns"
+description: "Columns: Defines the columns of a grid."
 ---
 
 - **Demonstration:** [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)

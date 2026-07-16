@@ -1,5 +1,6 @@
 ---
 title: "ListitemRenderer"
+description: "ListitemRenderer: Identifies components that can be used as \"rubber stamps\" to paint the cells in a Listbox."
 ---
 
 - Java API: [org.zkoss.zul.ListitemRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListitemRenderer.html)

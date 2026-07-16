@@ -1,5 +1,6 @@
 ---
 title: "The depends Element"
+description: "The depends Element: It specifies what configurations this configuration depends on."
 ---
 
 **Syntax:**

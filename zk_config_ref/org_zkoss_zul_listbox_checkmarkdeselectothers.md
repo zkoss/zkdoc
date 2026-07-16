@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.checkmarkDeselectOthers"
+description: "org.zkoss.zul.listbox.checkmarkDeselectOthers: If a Listbox's checkmark (org.zkoss.zul.Listbox#isCheckmark())) is enabled, the selection will be toggled…"
 ---
 
 **Property:**

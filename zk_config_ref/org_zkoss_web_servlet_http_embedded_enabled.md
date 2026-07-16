@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.servlet.http.embedded.enabled"
+description: "org.zkoss.web.servlet.http.embedded.enabled: Set to use embedded ZK. See Embedded ZK Application for additional information."
 ---
 
 **Property:** org.zkoss.web.servlet.http.embedded.enabled

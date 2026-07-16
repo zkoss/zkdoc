@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.defaultComposer.class"
+description: "org.zkoss.bind.defaultComposer.class: Auto apply the composer when a component setting viewModel without apply."
 ---
 
 **Property:** 

@@ -1,5 +1,6 @@
 ---
 title: "Data Binding"
+description: "Data binding synchronizes data between View and ViewModel according to component definition's annotation."
 ---
 
 Data binding synchronizes data between View and ViewModel according to

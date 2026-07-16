@@ -1,5 +1,6 @@
 ---
 title: "Middleware Layer"
+description: "Middleware Layer: Middleware usually means a special software between applications and an operating system."
 ---
 
 Middleware usually means a special software between applications and an

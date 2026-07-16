@@ -1,5 +1,6 @@
 ---
 title: "Fragment"
+description: "Fragment: Available for ZK: Enterprise Edition"
 ---
 
 - **Java API:** [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.grid.rod"
+description: "org.zkoss.zul.grid.rod: Set render-on-demand for grid components."
 ---
 
 **Property:**

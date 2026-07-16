@@ -1,5 +1,6 @@
 ---
 title: "The automatic-timeout Element"
+description: "The automatic-timeout Element: It specifies whether or not to automatically redirect to the timeout URI."
 ---
 
 **Syntax:**

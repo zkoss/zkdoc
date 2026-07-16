@@ -1,5 +1,6 @@
 ---
 title: "MoveEvent"
+description: "MoveEvent: Represents an event caused by a component being moved."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.MoveEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MoveEvent.html)

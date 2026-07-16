@@ -1,5 +1,6 @@
 ---
 title: "Sliderbuttons"
+description: "Sliderbuttons: A pair of draggable buttons defining the start value and the end value in a Multislider."
 ---
 
 - **Demonstration:**

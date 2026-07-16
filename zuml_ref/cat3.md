@@ -1,5 +1,6 @@
 ---
 title: "cat3"
+description: "cat3: i.e., org.zkoss.xel.fn.StringFns#cat3(java.lang.String, java.lang.String, java.lang.String))"
 ---
 
 ```java

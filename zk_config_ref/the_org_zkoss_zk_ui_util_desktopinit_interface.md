@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.DesktopInit interface"
+description: "The org.zkoss.zk.ui.util.DesktopInit interface: A listener could implement org.zkoss.zk.ui.util.DesktopInit to initialize a new desktop."
 ---
 
 **Listener:**

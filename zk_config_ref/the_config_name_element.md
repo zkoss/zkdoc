@@ -1,5 +1,6 @@
 ---
 title: "The config-name Element"
+description: "The config-name Element: It specifies the configuration's name."
 ---
 
 **Syntax:**

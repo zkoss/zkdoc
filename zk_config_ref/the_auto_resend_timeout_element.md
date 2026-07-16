@@ -1,5 +1,6 @@
 ---
 title: "The auto-resend-timeout Element"
+description: "The auto-resend-timeout Element: It specifies the timeout, in milliseconds, to re-send the AU request when the server's service unavailable or timeout."
 ---
 
 **Syntax:**

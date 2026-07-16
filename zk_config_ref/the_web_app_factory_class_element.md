@@ -1,5 +1,6 @@
 ---
 title: "The web-app-factory-class Element"
+description: "The web-app-factory-class Element: It specifies which class is used to instantiate the instance of the implementation of the Web application."
 ---
 
 **Syntax:**

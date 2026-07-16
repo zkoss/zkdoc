@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelayMax"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelayMax: The maximum delay between two reconnection attempts for the websocket client."
 ---
 
 **Property:**

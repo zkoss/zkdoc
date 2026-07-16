@@ -1,5 +1,6 @@
 ---
 title: "replace"
+description: "replace: i.e., org.zkoss.xel.fn.StringFns#replace(java.lang.String, java.lang.String, java.lang.String))"
 ---
 
 ```java

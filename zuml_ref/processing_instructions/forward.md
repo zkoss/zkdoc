@@ -1,5 +1,6 @@
 ---
 title: "forward"
+description: "forward: It specifies the URI to forward the request to, and the condition to decide whether to forward."
 ---
 
 **Syntax:**

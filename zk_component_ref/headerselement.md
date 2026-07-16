@@ -1,5 +1,6 @@
 ---
 title: "HeadersElement"
+description: "HeadersElement: Headers Element serves as a skeletal implementation for headers, acting as the parent of a group of HeaderElement components."
 ---
 
 - Demonstration:[Headers Element](http://www.zkoss.org/zkdemo/userguide/#g13)

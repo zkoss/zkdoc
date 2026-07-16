@@ -1,5 +1,6 @@
 ---
 title: "Long Operations"
+description: "Long Operations: Events for the same desktop are processed sequentially. It simplifies the GUI programming and component development."
 ---
 
 Events for the same desktop are processed sequentially. It simplifies

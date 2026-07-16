@@ -1,5 +1,6 @@
 ---
 title: "CSS Classes and Styles"
+description: "CSS Classes and Styles: CSS (Cascading Style Sheets) is a style sheet language used to describe the presentation of a (HTML) document."
 ---
 
 CSS ([Cascading Style Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets)) is a style

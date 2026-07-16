@@ -1,5 +1,6 @@
 ---
 title: "Auxhead"
+description: "Auxhead: Used to define a collection of auxiliary headers (Auxheader)."
 ---
 
 - **Demonstration:** [Grid (Merged Header)](https://www.zkoss.org/zkdemo/grid/merged_header)

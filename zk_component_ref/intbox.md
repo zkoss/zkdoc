@@ -1,5 +1,6 @@
 ---
 title: "Intbox"
+description: "Intbox: An intbox is used to let users input integer data."
 ---
 
 - **Demonstration:** [Intbox](http://www.zkoss.org/zkdemo/input/form_sample)

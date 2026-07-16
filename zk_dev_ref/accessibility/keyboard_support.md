@@ -1,5 +1,6 @@
 ---
 title: "Keyboard Support"
+description: "Keyboard Support: You can operate ZK components using only a keyboard, e.g. press TAB to move the focus and navigate."
 ---
 
 You can operate ZK components using only a keyboard, e.g. press TAB to

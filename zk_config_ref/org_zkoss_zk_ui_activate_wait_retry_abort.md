@@ -1,5 +1,6 @@
 ---
 title: "org_zkoss_zk_ui_activate_wait_retry_abort"
+description: "org_zkoss_zk_ui_activate_wait_retry_abort: A library property indicates that, if the time waiting for activation is longer than the value specified in…"
 ---
 
 **Property:**

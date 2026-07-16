@@ -1,5 +1,6 @@
 ---
 title: "Mobile And Touch Support"
+description: "Mobile And Touch Support: ZK's approach to mobile support is based on a single codebase architecture, where the same application serves desktop, tablet…"
 ---
 
 # ZK Mobile Strategy and Architecture

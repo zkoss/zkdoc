@@ -1,5 +1,6 @@
 ---
 title: "InputEvent"
+description: "InputEvent: Represents an event cause by user's input something at the client."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html)

@@ -1,5 +1,6 @@
 ---
 title: "Label"
+description: "Label: A label component represents a piece of text. A pure text on the zul will be automatically converted to a label."
 ---
 
 - **Demonstration:** [Label](http://www.zkoss.org/zkdemo/input/form_sample)

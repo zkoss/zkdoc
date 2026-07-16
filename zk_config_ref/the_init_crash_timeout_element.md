@@ -1,5 +1,6 @@
 ---
 title: "The init-crash-timeout Element"
+description: "The init-crash-timeout Element: It specifies the crash timeout when initiation, in seconds."
 ---
 
 **Syntax:**

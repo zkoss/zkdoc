@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond"
 ---
 
 **Property:**

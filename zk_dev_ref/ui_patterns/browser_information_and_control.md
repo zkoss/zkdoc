@@ -1,5 +1,6 @@
 ---
 title: "Browser Information and Control"
+description: "Browser Information and Control: To retrieve the information about the client, you can register an event listener for the onClientInfo event to a root…"
 ---
 
 To retrieve the information about the client, you can register an event

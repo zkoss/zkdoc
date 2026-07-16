@@ -1,5 +1,6 @@
 ---
 title: "The upload-charset Element"
+description: "The upload-charset Element: It specifies the charset (aka., encoding) for the uploaded text files if no charset is specified with the content type."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "The language-config Element"
+description: "The language-config Element: It specifies the additional language addons and/or definitions."
 ---
 
 **Syntax:**

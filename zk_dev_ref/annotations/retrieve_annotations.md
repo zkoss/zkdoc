@@ -1,5 +1,6 @@
 ---
 title: "Retrieve Annotations"
+description: "Retrieve Annotations: The annotations can be retrieved back at the run-time."
 ---
 
 The annotations can be retrieved back at the run-time. They are designed

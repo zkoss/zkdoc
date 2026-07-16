@@ -1,5 +1,6 @@
 ---
 title: "Messagebox"
+description: "Messagebox: It provides a set of utilities to show a message and have a user to confirm a situation."
 ---
 
 - Demonstration: [Messagebox](http://www.zkoss.org/zkdemo/userguide/#l8)

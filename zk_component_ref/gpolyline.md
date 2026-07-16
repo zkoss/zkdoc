@@ -1,5 +1,6 @@
 ---
 title: "Gpolyline"
+description: "Gpolyline: Polyline drawn on the Google Maps per the given (latitude, longitude) points and visible zoom level (0–3)."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

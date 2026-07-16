@@ -1,5 +1,6 @@
 ---
 title: "Annotate in ZUML"
+description: "Annotate in ZUML: Annotations can be applied to the declarations of components and properties in ZUML pages."
 ---
 
 Annotations can be applied to the declarations of components and

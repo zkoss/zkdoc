@@ -1,5 +1,6 @@
 ---
 title: "The file-size-threshold Element"
+description: "The file-size-threshold Element: The threshold, in kilobytes, below which the uploaded content will be retained in memory and above which it will be…"
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "SelectEvent"
+description: "SelectEvent: Represents an event cause by user's the list selection is changed at the client."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html)

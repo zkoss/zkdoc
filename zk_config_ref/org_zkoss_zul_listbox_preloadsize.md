@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.preloadSize"
+description: "org.zkoss.zul.listbox.preloadSize: Specifies the number of items to preload when receiving the rendering request from the client."
 ---
 
 **Property:**

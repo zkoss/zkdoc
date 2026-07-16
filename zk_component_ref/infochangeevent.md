@@ -1,5 +1,6 @@
 ---
 title: "InfoChangeEvent"
+description: "InfoChangeEvent: Represents a Google Maps related event which is triggered whenever the currently opened ginfo or gmarker is changed."
 ---
 
 - Java API: N/A

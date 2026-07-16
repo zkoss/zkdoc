@@ -1,5 +1,6 @@
 ---
 title: "Separator"
+description: "Separator: A separator is used to insert a space between two components. There are several ways to customize the separator."
 ---
 
 - **Java API:** [org.zkoss.zul.Separator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Separator.html)

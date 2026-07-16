@@ -1,5 +1,6 @@
 ---
 title: "CreateEvent"
+description: "CreateEvent: are created and initialized when creating components upon a zul page."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.CreateEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CreateEvent.html)

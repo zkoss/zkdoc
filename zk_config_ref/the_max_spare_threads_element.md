@@ -1,5 +1,6 @@
 ---
 title: "The max-spare-threads Element"
+description: "The max-spare-threads Element: It specifies the maximum allowed number of the thread pool for queuing the idle event processing threads."
 ---
 
 **Syntax:**

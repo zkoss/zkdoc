@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.label.web.location"
+description: "org.zkoss.util.label.web.location: It specifies which properties file for the internationalization labels are named and located."
 ---
 
 **Property:**

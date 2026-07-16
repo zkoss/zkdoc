@@ -1,5 +1,6 @@
 ---
 title: "LabelImageElement"
+description: "LabelImageElement: The LabelImageElement is an HTML element that combines label and image content."
 ---
 
 - **Java API:** [`org.zkoss.zul.impl.LabelImageElement`](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/LabelImageElement.html)

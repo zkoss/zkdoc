@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.RequestInterceptor interface"
+description: "The org.zkoss.zk.ui.util.RequestInterceptor interface: A listener could implement org.zkoss.zk.ui.util.RequestInterceptor to intercept each request made…"
 ---
 
 **Listener:**

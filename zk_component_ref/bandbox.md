@@ -1,5 +1,6 @@
 ---
 title: "Bandbox"
+description: "Bandbox: A bandbox is a special text box that embeds a customizable popup window (aka., a dropdown window)."
 ---
 
 - **Demonstration:** [Bandbox](http://www.zkoss.org/zkdemo/combobox/customizable_combobox)

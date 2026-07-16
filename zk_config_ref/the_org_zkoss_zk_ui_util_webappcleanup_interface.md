@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.WebAppCleanup interface"
+description: "The org.zkoss.zk.ui.util.WebAppCleanup interface: A listener could implement org.zkoss.zk.ui.util.WebAppCleanup to cleanup a ZK application, when it is…"
 ---
 
 **Listener:**

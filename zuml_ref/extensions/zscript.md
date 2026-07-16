@@ -1,5 +1,6 @@
 ---
 title: "zscript"
+description: "zscript: The default interpreter for the zscript elements is Java (based on BeanShell)."
 ---
 
 The default interpreter for the zscript elements is Java (based on

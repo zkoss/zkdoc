@@ -1,5 +1,6 @@
 ---
 title: "Tabbox Template"
+description: "Tabbox Template: The template used to control the rendering of each tab and tabpanel must be named model:tab and model:tabpanel and declared right inside…"
 ---
 
 The template used to control the rendering of each tab and tabpanel must

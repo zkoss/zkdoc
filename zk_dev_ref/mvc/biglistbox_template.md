@@ -1,5 +1,6 @@
 ---
 title: "Biglistbox Template"
+description: "Biglistbox Template: Similar to Listbox, you can render a biglistbox with a template."
 ---
 
 Similar to

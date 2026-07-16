@@ -1,5 +1,6 @@
 ---
 title: "XulElement"
+description: "XulElement: The fundamental class for XUL elements."
 ---
 
 - **Java API:** [org.zkoss.zul.impl.XulElement](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)

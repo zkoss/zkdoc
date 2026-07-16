@@ -1,5 +1,6 @@
 ---
 title: "Linelayout"
+description: "Linelayout: a flexible and easy way; in addition to static data it also support ListModel. Linelayout only accept Lineitem as its child."
 ---
 
 - **Demonstration:** [Linelayout](https://www.zkoss.org/zkdemo/)

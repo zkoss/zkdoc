@@ -1,5 +1,6 @@
 ---
 title: "Struts"
+description: "Struts: The use of Struts with ZK is straightforward: just replace JSP pages with ZUL pages."
 ---
 
 The use of [Struts](http://struts.apache.org/) with ZK is

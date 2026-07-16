@@ -1,5 +1,6 @@
 ---
 title: "The error-reload Element"
+description: "The error-reload Element: It specifies what URI to redirect the browser to."
 ---
 
 **Syntax:**

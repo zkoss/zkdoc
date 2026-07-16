@@ -1,5 +1,6 @@
 ---
 title: "Spinner"
+description: "Spinner: An edit box for holding a constrained integer."
 ---
 
 - **Demonstration:** [Spinner](http://www.zkoss.org/zkdemo/input/form_sample)

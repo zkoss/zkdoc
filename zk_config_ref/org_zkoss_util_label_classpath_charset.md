@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.util.label.classpath.charset"
+description: "org.zkoss.util.label.classpath.charset: It defines the charset used to encode zk-label.properties if the file is located in the classpath."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Registering your Theme"
+description: "Registering your Theme: Before using a theme, it must be registered so that the system knows about its existence and where to retrieve its resources (from…"
 ---
 
 Before using a theme, it must be registered so that the system knows

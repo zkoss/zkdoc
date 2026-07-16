@@ -1,5 +1,6 @@
 ---
 title: "function-mapper"
+description: "function-mapper: Specifies the function mapper that will be used by the EL expressions to resolve unknown functions."
 ---
 
 **Syntax:**

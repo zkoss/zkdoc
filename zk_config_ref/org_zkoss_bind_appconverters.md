@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.appConverters"
+description: "org.zkoss.bind.appConverters: Register application level converters and only have one instance shard between all binders."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Group"
+description: "Group: Adds the ability for single level grouping to the Grid."
 ---
 
 - **Demonstration:** [Group](http://www.zkoss.org/zkdemo/grid/grouping)

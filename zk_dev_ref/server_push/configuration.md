@@ -1,5 +1,6 @@
 ---
 title: "Configuration"
+description: "Configuration: Since ZK 6, in addition to org.zkoss.zk.ui.impl.PollingServerPush and org.zkoss.zkex.ui.comet.CometServerPush, ZK provides a third Server…"
 ---
 
 Since ZK 6, in addition to

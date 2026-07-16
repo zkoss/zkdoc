@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkex.ui.comet.modernEvent"
+description: "org.zkoss.zkex.ui.comet.modernEvent: Specifies whether to enable modern XMLHttpRequest event handling (onload, onerror, ontimeout, and onabort) for Comet…"
 ---
 **Property:**
 `org.zkoss.zkex.ui.comet.modernEvent`

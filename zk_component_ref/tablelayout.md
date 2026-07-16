@@ -1,5 +1,6 @@
 ---
 title: "Tablelayout"
+description: "Tablelayout lays out a container as an HTML table in which the columns can be specified, and rowspan and colspan of its child can also be specified to…"
 ---
 
 - **Demonstration:** [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)

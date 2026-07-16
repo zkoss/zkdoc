@@ -1,5 +1,6 @@
 ---
 title: "Theme Template"
+description: "Theme Template: We collect all style-related files into ZK theme template project at Github, making it much easier to create a custom theme."
 ---
 
 We collect all style-related files into [ZK theme template project at Github](https://github.com/zkoss/zkThemeTemplate), making it much easier

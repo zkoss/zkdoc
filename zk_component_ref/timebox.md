@@ -1,5 +1,6 @@
 ---
 title: "Timebox"
+description: "Timebox: An edit box for holding a time value. By default it works with a java.util.Date object (only the Hour and Minute parts are used)."
 ---
 
 - **Demonstration:** [Date and Time](http://www.zkoss.org/zkdemo/input/date_and_time_picker)

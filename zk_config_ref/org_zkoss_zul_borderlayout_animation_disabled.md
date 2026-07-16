@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.borderlayout.animation.disabled"
+description: "org.zkoss.zul.borderlayout.animation.disabled: It specifies whether disable the animation of the borderlayout component."
 ---
 
 **Property:**

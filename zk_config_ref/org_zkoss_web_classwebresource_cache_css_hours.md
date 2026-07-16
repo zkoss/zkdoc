@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.classWebResource.cache.CSS.hours"
+description: "org.zkoss.web.classWebResource.cache.CSS.hours: It specifies the number of hours in that period the CSS files of class Web resources won't be changed."
 ---
 
 **Property:**

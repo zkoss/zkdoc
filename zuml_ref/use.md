@@ -1,5 +1,6 @@
 ---
 title: "use"
+description: "use: It specifies a class to create a component instead of the default one."
 ---
 
 **Syntax:**

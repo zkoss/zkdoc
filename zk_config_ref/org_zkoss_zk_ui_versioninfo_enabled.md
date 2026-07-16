@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.versionInfo.enabled"
+description: "org.zkoss.zk.ui.versionInfo.enabled: It specifies whether to show ZK version on each page."
 ---
 
 **Property:**

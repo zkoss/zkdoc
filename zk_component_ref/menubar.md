@@ -1,5 +1,6 @@
 ---
 title: "Menubar"
+description: "Menubar: A container usually contains more than one menu elements."
 ---
 
 - **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu)

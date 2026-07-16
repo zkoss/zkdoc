@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay"
+description: "org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay: The initial delay before reconnection in milliseconds for the WebSocket client."
 ---
 
 **Property:**

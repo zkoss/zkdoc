@@ -1,5 +1,6 @@
 ---
 title: "Longbox"
+description: "Longbox: A longbox is used to let users input long data."
 ---
 
 - **Demonstration:** [Longbox](http://www.zkoss.org/zkdemo/input/form_sample)

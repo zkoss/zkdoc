@@ -1,5 +1,6 @@
 ---
 title: "Treecols"
+description: "Treecols: A treecolsis main part of tree which a contains set of columns. The set of columns is defined by a number of treecolcomponents."
 ---
 
 - **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)

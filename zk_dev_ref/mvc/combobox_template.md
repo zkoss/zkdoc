@@ -1,5 +1,6 @@
 ---
 title: "Combobox Template"
+description: "Combobox Template: Similar to Listbox, you can render a combobox with a template:"
 ---
 
 Similar to

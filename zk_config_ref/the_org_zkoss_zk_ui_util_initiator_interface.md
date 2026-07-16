@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.Initiator interface"
+description: "The org.zkoss.zk.ui.util.Initiator interface: A listener could implement org.zkoss.zk.ui.util.Initiator to handle the initialization of a ZUML page and…"
 ---
 
 **Listener:**

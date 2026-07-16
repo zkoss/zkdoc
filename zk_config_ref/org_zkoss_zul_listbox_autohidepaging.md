@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.autohidePaging"
+description: "org.zkoss.zul.listbox.autohidePaging: It specifies whether to enable autohide property for internal paging component."
 ---
 
 **Property:**

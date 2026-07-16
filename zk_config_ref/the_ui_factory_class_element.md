@@ -1,5 +1,6 @@
 ---
 title: "The ui-factory-class Element"
+description: "The ui-factory-class Element: It specifies which class is used to create desktops and pages, and to convert URL to a page definition."
 ---
 
 **Syntax:**

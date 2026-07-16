@@ -1,5 +1,6 @@
 ---
 title: "component"
+description: "component: Defines a new component in the page scope."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Menuseparator"
+description: "Menuseparator: Used to create a separator between menu items."
 ---
 
 - **Demonstration:** [Menu](http://www.zkoss.org/zkdemo/menu)

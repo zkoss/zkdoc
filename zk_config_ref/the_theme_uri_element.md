@@ -1,5 +1,6 @@
 ---
 title: "The theme-uri Element"
+description: "The theme-uri Element: It specifies the URI of an additional theme (aka., a style sheet file)."
 ---
 
 **Syntax:**

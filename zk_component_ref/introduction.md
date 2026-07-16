@@ -1,5 +1,6 @@
 ---
 title: "ZK Component Reference"
+description: "ZK Component Reference: This guide acts as a reference of components. We outline each of the XUL components and include discussions of XHTML and XML components."
 ---
 
 This guide acts as a reference of components. We outline each of the XUL

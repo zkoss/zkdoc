@@ -1,5 +1,6 @@
 ---
 title: "Use Native Namespace instead of XHTML Namespace"
+description: "Use Native Namespace instead of XHTML Namespace: ZK creates a component (one of the derives of org.zkoss.zhtml.AbstractTag) for each XML element specified…"
 ---
 
 ZK creates a component (one of the derives of

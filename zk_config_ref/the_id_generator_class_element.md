@@ -1,5 +1,6 @@
 ---
 title: "The id-generator-class Element"
+description: "The id-generator-class Element: It specifies which class should be used to generate the UUID of page and components, and ID of desktops."
 ---
 
 **Syntax:**

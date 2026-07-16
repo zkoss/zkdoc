@@ -1,5 +1,6 @@
 ---
 title: "The file-check-period Element"
+description: "The file-check-period Element: It specifies the time, in seconds, to wait before checking whether a file is modified."
 ---
 
 **Syntax:**

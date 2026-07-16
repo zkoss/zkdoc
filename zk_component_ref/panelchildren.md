@@ -1,5 +1,6 @@
 ---
 title: "Panelchildren"
+description: "Panelchildren is a component used within the Panel component to manage each child element that will be displayed within the body of the Panel."
 ---
 
 - **Demonstration:** [Panel Demo](https://www.zkoss.org/zkdemo/window/panel)

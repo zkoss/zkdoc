@@ -1,5 +1,6 @@
 ---
 title: "new"
+description: "new: i.e. it calls org.zkoss.xel.fn.CommonFns#new_(java.lang.Object))"
 ---
 
 ```java

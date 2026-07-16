@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.event.EventThreadInit interface"
+description: "The org.zkoss.zk.ui.event.EventThreadInit interface: A listener could implement org.zkoss.zk.ui.event.EventThreadInit to initialize an event processing…"
 ---
 
 **Listener:**

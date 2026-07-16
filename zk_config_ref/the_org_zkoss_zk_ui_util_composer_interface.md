@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.Composer interface"
+description: "The org.zkoss.zk.ui.util.Composer interface: A listener could implement org.zkoss.zk.ui.util.Composer, such that it can process the creation of ZK pages…"
 ---
 
 **Listener:**

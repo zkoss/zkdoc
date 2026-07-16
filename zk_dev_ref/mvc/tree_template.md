@@ -1,5 +1,6 @@
 ---
 title: "Tree Template"
+description: "Tree Template: Similar to Listbox, you can also define a customer rendering with a template for a tree:"
 ---
 
 Similar to

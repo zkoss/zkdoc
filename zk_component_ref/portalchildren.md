@@ -1,5 +1,6 @@
 ---
 title: "Portalchildren"
+description: "Portalchildren: The column of Portallayout"
 ---
 
 - **Demonstration:** [Portallayout](http://www.zkoss.org/zkdemo/layout/portal_layout)

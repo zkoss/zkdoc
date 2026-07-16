@@ -1,5 +1,6 @@
 ---
 title: "Detail"
+description: "Detail: The detail component is used to display a detailed section where a master row and multiple detail rows are on the same row."
 ---
 
 - **Demonstration:** [Grid (Master detail)](http://www.zkoss.org/zkdemo/grid/master_detail)

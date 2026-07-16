@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.ScriptErrorListener.class"
+description: "org.zkoss.zk.ui.ScriptErrorListener.class: The default one will log the error message starting with:"
 ---
 
 **Property:** org.zkoss.zk.ui.ScriptErrorListener.class

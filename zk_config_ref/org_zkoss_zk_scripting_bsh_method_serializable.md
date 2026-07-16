@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.scripting.bsh.method.serializable"
+description: "org.zkoss.zk.scripting.bsh.method.serializable: To disable the serialization of BeanShell method(s)."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Inter-Desktop Communication"
+description: "Inter-Desktop Communication: Unlike pages, you cannot access two desktops at the same time."
 ---
 
 Unlike pages, you cannot access two desktops at the same time. You

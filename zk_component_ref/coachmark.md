@@ -1,5 +1,6 @@
 ---
 title: "Coachmark"
+description: "Coachmark is used to attract users' attention to the target component and display a dialog."
 ---
 
 - **Demonstration:** [Coachmark](https://www.zkoss.org/zkdemo/notification/coachmark)

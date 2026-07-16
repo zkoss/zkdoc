@@ -1,5 +1,6 @@
 ---
 title: "Tab"
+description: "Tab: The ZK Tab component is used to represent a specific tab within a tab container. Clicking on a tab brings the corresponding tab panel to the front."
 ---
 
 - **Demonstration:** [Tabbox Demo](https://www.zkoss.org/zkdemo/tabbox)

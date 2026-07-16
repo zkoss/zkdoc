@@ -1,5 +1,6 @@
 ---
 title: "Gcircle"
+description: "Gcircle: Circle drawn on the Google Maps per the given (latitude, longitude) points, fill color, etc.."
 ---
 
 - Java API: [in release zip](https://github.com/zkoss/zkgmapsz/releases)

@@ -1,5 +1,6 @@
 ---
 title: "Timer"
+description: "Timer is a special component that is invisible. It fires one or more org.zkoss.zk.ui.event.Event after a specified delay, notice that the timer won't fire…"
 ---
 
 - **Demonstration:** [Timer](http://www.zkoss.org/zkdemo/userguide/#u3)

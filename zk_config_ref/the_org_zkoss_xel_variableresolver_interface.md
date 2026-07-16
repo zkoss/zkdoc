@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.xel.VariableResolver interface"
+description: "The org.zkoss.xel.VariableResolver interface: A listener could implement org.zkoss.xel.VariableResolver, and then it will be used as the default variable…"
 ---
 
 **Listener:**

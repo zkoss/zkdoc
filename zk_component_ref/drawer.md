@@ -1,5 +1,6 @@
 ---
 title: "Drawer"
+description: "Drawer: The Drawer component functions as a panel that remains attached to the boundary of a web page."
 ---
 
 - **Demonstration:** [Introduce a new ZK Addon: Drawer](https://blog.zkoss.org/2019/04/17/introduce-a-new-zk-addon-drawer/)

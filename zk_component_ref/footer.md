@@ -1,5 +1,6 @@
 ---
 title: "Footer"
+description: "Footer: A column of the footer of a grid ( Grid). Its parent must be Foot."
 ---
 
 - **Demonstration:** [Grid (Header and footer)](http://www.zkoss.org/zkdemo/grid/header_and_footer)

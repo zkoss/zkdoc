@@ -1,5 +1,6 @@
 ---
 title: "OWASP Top 10 Security Concerns"
+description: "OWASP Top 10 Security Concerns: The Open Web Application Security Project is a worldwide not-for-profit charitable organization focused on improving the…"
 ---
 
 The [Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page) is a worldwide

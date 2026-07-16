@@ -1,5 +1,6 @@
 ---
 title: "ListModel"
+description: "ListModel: view and the model by implementing org.zkoss.zul.ListModel."
 ---
 
 [org.zkoss.zul.Listbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Listbox.html),

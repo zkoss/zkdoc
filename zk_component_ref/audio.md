@@ -1,5 +1,6 @@
 ---
 title: "Audio"
+description: "Audio: An audio component is used to play the audio at the browser."
 ---
 
 - **Demonstration:** [Audio](https://www.zkoss.org/zkdemo/media/audio)

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.invalidateThreshold"
+description: "org.zkoss.zul.invalidateThreshold: It specifies the threshold number of changed items of a model to invalidate a widget's DOM elements for Grid, Listbox…"
 ---
 
 **Property:**

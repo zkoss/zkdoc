@@ -1,5 +1,6 @@
 ---
 title: "Anchorlayout"
+description: "Anchorlayout: An anchorlayout lays out a container which can resize it's children base on its width and height"
 ---
 
 - **Java API:** [org.zkoss.zul.Anchorlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Anchorlayout.html)

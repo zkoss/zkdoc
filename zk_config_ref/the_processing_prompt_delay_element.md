@@ -1,5 +1,6 @@
 ---
 title: "The processing-prompt-delay Element"
+description: "The processing-prompt-delay Element: It specifies the time, in milliseconds, to wait before prompting the user with a message indicating that an AU…"
 ---
 
 **Syntax:**

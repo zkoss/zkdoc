@@ -1,5 +1,6 @@
 ---
 title: "init"
+description: "init: It defines an initiator that will be instantiated and called when the ZUML document is loaded."
 ---
 
 **Syntax:**

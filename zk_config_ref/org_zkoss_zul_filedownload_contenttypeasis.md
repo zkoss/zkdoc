@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.Filedownload.contentTypeAsIs"
+description: "org.zkoss.zul.Filedownload.contentTypeAsIs: It specifies whether to treat the Content-Type as is in Filedownload class."
 ---
 
 **Property:**

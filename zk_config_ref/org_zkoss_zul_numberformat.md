@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.numberFormat"
+description: "org.zkoss.zul.numberFormat: It specifies the default format when the locale of the NumberInputElement is specified."
 ---
 
 **Property:**

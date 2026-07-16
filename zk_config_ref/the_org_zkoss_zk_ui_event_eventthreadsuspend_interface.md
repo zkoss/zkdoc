@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.event.EventThreadSuspend interface"
+description: "The org.zkoss.zk.ui.event.EventThreadSuspend interface: A listener could implement org.zkoss.zk.ui.event.EventThreadSuspend, suthc that it will be called…"
 ---
 
 **Listener:**

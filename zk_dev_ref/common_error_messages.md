@@ -1,5 +1,6 @@
 ---
 title: "Common Error Messages"
+description: "Common Error Messages: This section explains those common error messages you might encounter while developing with ZK, so you can figure out what's going…"
 ---
 
 This section explains those common error messages you might encounter

@@ -1,5 +1,6 @@
 ---
 title: "UI Composing"
+description: "UI Composing: Each UI object is represented by a component (org.zkoss.zk.ui.Component)."
 ---
 
 Each UI object is represented by a component

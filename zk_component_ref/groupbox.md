@@ -1,5 +1,6 @@
 ---
 title: "Groupbox"
+description: "Groupbox: The Groupbox component in ZK is used to group related components together visually."
 ---
 
 - **Demonstration:** [Groupbox Demo](https://www.zkoss.org/zkdemo/layout/group_box)

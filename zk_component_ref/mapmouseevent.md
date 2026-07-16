@@ -1,5 +1,6 @@
 ---
 title: "MapMouseEvent"
+description: "MapMouseEvent: Represents a Google Maps related event which is triggered whenever a gmaps is mouse clicked, right clicked, or double clicked."
 ---
 
 - Java API: N/A

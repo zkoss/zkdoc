@@ -1,5 +1,6 @@
 ---
 title: "Event Queues"
+description: "Event Queues: An event queue is an event-based publish-subscribe solution for the application information delivery and messaging."
 ---
 
 An event queue is an event-based publish-subscribe solution for the

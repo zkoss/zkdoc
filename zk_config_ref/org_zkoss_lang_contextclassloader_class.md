@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.lang.contextClassLoader.class"
+description: "org.zkoss.lang.contextClassLoader.class: It specifies the name of the class used to provide the customized context class loader."
 ---
 
 **Property:**

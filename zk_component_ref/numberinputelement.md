@@ -1,5 +1,6 @@
 ---
 title: "NumberInputElement"
+description: "NumberInputElement: The ZK Number Input Element provides a skeletal implementation for a number-type input box."
 ---
 
 - Demonstration:[Number Input Element](http://www.zkoss.org/zkdemo/userguide/#f2)

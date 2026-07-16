@@ -1,5 +1,6 @@
 ---
 title: "Ginfo"
+description: "Ginfo: The popup info window of the Google Maps. You can specify the content in pure text or HTML."
 ---
 
 - **Demonstration:** [Gmaps](http://www.zkoss.org/zkdemo/reporting/google_map)

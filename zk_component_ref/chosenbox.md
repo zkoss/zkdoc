@@ -1,5 +1,6 @@
 ---
 title: "Chosenbox"
+description: "Chosenbox: A component similar to Combobox but handles the multi-selection and the select order."
 ---
 
 - **Demonstration:** [Chosenbox](https://www.zkoss.org/zkdemo/zk_pe_and_ee/combobox_chosenbox)

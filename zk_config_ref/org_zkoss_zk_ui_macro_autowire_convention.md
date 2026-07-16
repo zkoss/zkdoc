@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.macro.autowire.convention"
+description: "org.zkoss.zk.ui.macro.autowire.convention: By default, the macro component will wire the UI components to the data member automatically based on CSS…"
 ---
 
 **Property:**

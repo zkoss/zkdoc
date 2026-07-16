@@ -1,5 +1,6 @@
 ---
 title: "Layouts and Containers"
+description: "Layouts and Containers: Layouts are components used to partition the display area it owns into several sub-areas for its child components, while…"
 ---
 
 Layouts are components used to partition the display area it owns into

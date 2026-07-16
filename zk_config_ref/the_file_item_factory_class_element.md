@@ -1,5 +1,6 @@
 ---
 title: "The file-item-factory-class Element"
+description: "The file-item-factory-class Element: It specifies the class that is used to create a file item for fileupload or null to use the default."
 ---
 
 **Syntax:**

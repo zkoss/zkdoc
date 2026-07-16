@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.au.IWBS.disable"
+description: "org.zkoss.zkmax.au.IWBS.disable: It specifies whether to disable InaccessibleWidgetBlockService."
 ---
 
 **Property:**

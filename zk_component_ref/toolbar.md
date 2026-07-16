@@ -1,5 +1,6 @@
 ---
 title: "Toolbar"
+description: "Toolbar: A toolbar organizes a series of command buttons or controls in a compact, space-efficient layout."
 ---
 
 - **Demonstration:** [Toolbar](http://www.zkoss.org/zkdemo/menu/toolbar)

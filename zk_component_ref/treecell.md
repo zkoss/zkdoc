@@ -1,5 +1,6 @@
 ---
 title: "Treecell"
+description: "Treecell represents one column in a treerow by sequencial. Treecell can contain any components in it, such as label, image, textbox etc."
 ---
 
 - **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.composer.autowire.zscript"
+description: "org.zkoss.zk.ui.composer.autowire.zscript: It specifies whether org.zkoss.zk.ui.util.GenericAutowireComposer (and…"
 ---
 
 **Property:**

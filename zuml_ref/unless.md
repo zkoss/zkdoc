@@ -1,5 +1,6 @@
 ---
 title: "unless"
+description: "unless: It specified the condition not to evaluate the associated element."
 ---
 
 **Syntax:**

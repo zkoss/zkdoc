@@ -1,5 +1,6 @@
 ---
 title: "variable-resolver"
+description: "variable-resolver: Specifies the variable resolver that could be used by the zscript interpreter and the EL expressions to resolve unknown variables."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Cascader"
+description: "Cascader is used to select an item from a hierarchical structure of data. It accepts a TreeModel."
 ---
 
 - **Demonstration:** [Cascader](https://www.zkoss.org/zkdemo/combobox/cascader)

@@ -1,5 +1,6 @@
 ---
 title: "Rating"
+description: "Rating: The rating component is a component that allows users to select a rating value that is smaller than the maximum number."
 ---
 
 - **Demonstration:** [Rating](https://www.zkoss.org/zkdemo/input/rating)

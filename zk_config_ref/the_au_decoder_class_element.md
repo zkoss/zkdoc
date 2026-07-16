@@ -1,5 +1,6 @@
 ---
 title: "The au-decoder-class Element"
+description: "The au-decoder-class Element: It specifies which class will be used to implement the AU decoder. The AU decoder is used to decode the AU requests."
 ---
 
 **Syntax:**

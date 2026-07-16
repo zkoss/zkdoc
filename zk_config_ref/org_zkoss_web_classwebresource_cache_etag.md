@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.web.classWebResource.cache.etag"
+description: "org.zkoss.web.classWebResource.cache.etag: It specifies whether to use ETag to detect and return 304 for matched resource."
 ---
 
 **Property:**

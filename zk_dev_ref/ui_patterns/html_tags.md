@@ -1,5 +1,6 @@
 ---
 title: "HTML Tags"
+description: "HTML Tags: Here we discuss how to use HTML tags directly in a ZUML document."
 ---
 
 Here we discuss how to use HTML tags directly in a ZUML document. There

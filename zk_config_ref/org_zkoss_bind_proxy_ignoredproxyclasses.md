@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.proxy.IgnoredProxyClasses"
+description: "org.zkoss.bind.proxy.IgnoredProxyClasses: It specifies the name of the classes which would not be proxied."
 ---
 
 **Property:**

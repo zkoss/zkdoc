@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.au.AuWriters.ContentType"
+description: "org.zkoss.zk.au.AuWriters.ContentType: It specifies the Content-Type of the AU response."
 ---
 
 **Property:** org.zkoss.zk.au.AuWriters.ContentType

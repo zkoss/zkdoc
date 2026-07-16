@@ -1,5 +1,6 @@
 ---
 title: "browser"
+description: "browser: i.e., org.zkoss.web.fn.ServletFns#isBrowser(java.lang.String))"
 ---
 
 ```java

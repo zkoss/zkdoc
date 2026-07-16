@@ -1,5 +1,6 @@
 ---
 title: "The keep-across-visits Element"
+description: "The keep-across-visits Element: It specifies whether to keep the desktop when a user reloads an URL or browses away to another URL."
 ---
 
 **Syntax:**

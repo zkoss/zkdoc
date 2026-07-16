@@ -1,5 +1,6 @@
 ---
 title: "MapMoveEvent"
+description: "MapMoveEvent: Represents a Google Maps related event which is triggered whenever the view center of the gmaps is moved or the zoom level of the gmaps is…"
 ---
 
 - Java API: N/A

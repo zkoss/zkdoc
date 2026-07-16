@@ -1,5 +1,6 @@
 ---
 title: "fulfill"
+description: "fulfill: and the fulfill condition (condition, condition_1 and condition_2) could be one of the following:"
 ---
 
 **Syntax:**

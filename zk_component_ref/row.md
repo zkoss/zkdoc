@@ -1,5 +1,6 @@
 ---
 title: "Row"
+description: "Row: A single row in a Rows element. Each child of the Row element is placed in each successive cell of the grid."
 ---
 
 - **Demonstration:** [Grid (Simple Grid)](http://www.zkoss.org/zkdemo/grid/simple)

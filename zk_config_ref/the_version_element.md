@@ -1,5 +1,6 @@
 ---
 title: "The version Element"
+description: "The version Element: It specifies the version of this configuration. It also controls whether to ignore this configuration."
 ---
 
 **Syntax:**

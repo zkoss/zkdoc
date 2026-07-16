@@ -1,5 +1,6 @@
 ---
 title: "class.mold"
+description: "class.mold: It specified the default mold of the specified component. The property name is a concatenation of the class name of the component and mold."
 ---
 
 **Property:**

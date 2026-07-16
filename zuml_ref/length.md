@@ -1,5 +1,6 @@
 ---
 title: "length"
+description: "length: i.e., org.zkoss.xel.fn.CommonFns#length(java.lang.Object))"
 ---
 
 ```java

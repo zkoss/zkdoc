@@ -1,5 +1,6 @@
 ---
 title: "Orgchildren"
+description: "Orgchildren: body of the Organigram and it also the main body of an Orgitem's children."
 ---
 
 - **Demonstration:** [Orgchildren](https://www.zkoss.org/zkdemo/organigram)

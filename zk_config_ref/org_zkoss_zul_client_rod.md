@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.client.rod"
+description: "org.zkoss.zul.client.rod: It specifies whether to apply Client Render on Demand. This property is not used for Grid and Listbox."
 ---
 
 **Property:**

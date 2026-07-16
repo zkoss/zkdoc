@@ -1,5 +1,6 @@
 ---
 title: "The desktop-timeout Element"
+description: "The desktop-timeout Element: It specifies the time, in seconds, between client requests before a desktop is invalidated."
 ---
 
 **Syntax:**

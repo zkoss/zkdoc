@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.DebuggerFactory.enable"
+description: "org.zkoss.bind.DebuggerFactory.enable: Turn on to enable log ZK Bind debugging information."
 ---
 
 **Property:**

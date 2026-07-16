@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.event.EventQueueProvider.class"
+description: "org.zkoss.zk.ui.event.EventQueueProvider.class: It specifies the name of the class used to provide the event queue."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Script"
+description: "Script: The script component is used to specify the script codes running at the browser."
 ---
 
 - **Demonstration:** [Script](http://www.zkoss.org/zkdemo/effects/upload_effect)

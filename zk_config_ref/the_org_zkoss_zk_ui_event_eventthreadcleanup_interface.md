@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.event.EventThreadCleanup interface"
+description: "The org.zkoss.zk.ui.event.EventThreadCleanup interface: A listener could implement org.zkoss.zk.ui.event.EventThreadCleanup to cleanup an event processing…"
 ---
 
 **Listener:**

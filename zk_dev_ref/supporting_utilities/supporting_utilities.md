@@ -1,5 +1,6 @@
 ---
 title: "Supporting Utilities"
+description: "Supporting Utilities: In this section we will discuss the utilities that ZK is built on."
 ---
 
 In this section we will discuss the utilities that ZK is built on. You

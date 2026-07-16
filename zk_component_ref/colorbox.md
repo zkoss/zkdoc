@@ -1,5 +1,6 @@
 ---
 title: "Colorbox"
+description: "Colorbox: A Colorbox used to retrieve an input that the user can select a color."
 ---
 
 - **Demonstration:** [Colorbox](http://www.zkoss.org/zkdemo/input/color_picker)

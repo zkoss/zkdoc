@@ -1,5 +1,6 @@
 ---
 title: "Containers"
+description: "Containers: This section outlines components which are specifically designed to be able to contain other components."
 noindex: true
 sitemap: false
 ---

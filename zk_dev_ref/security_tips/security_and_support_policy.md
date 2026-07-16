@@ -1,5 +1,6 @@
 ---
 title: "Security & Support Policy"
+description: "Security & Support Policy: To manage the software supply chain predictably, we categorize our software versions into distinct lifecycle tiers."
 ---
 
 ## 1. Release Version Classifications

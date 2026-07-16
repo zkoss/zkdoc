@@ -1,5 +1,6 @@
 ---
 title: "Grid's Columns and Hflex"
+description: "Grid's Columns and Hflex: This section introduces the usage of ZK auto sizing APIs. All of these can apply to the following components:"
 ---
 
 This section introduces the usage of ZK auto sizing APIs. All of these

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.bind.disableMethodCache"
+description: "org.zkoss.bind.disableMethodCache: Set to disable method cache in MVVM."
 ---
 
 **Property:**

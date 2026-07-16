@@ -1,5 +1,6 @@
 ---
 title: "getCurrentLocale"
+description: "getCurrentLocale: i.e., org.zkoss.util.Locales#getCurrent())"
 ---
 
 ```java

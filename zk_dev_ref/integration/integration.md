@@ -1,5 +1,6 @@
 ---
 title: "Integration"
+description: "Integration: This chapter describes how to integrate ZK with other frameworks, including how to write a JSP/JSF tag with ZK components, how to access ZK…"
 ---
 
 This chapter describes how to integrate ZK with other frameworks,

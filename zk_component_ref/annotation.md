@@ -1,5 +1,6 @@
 ---
 title: "Annotation"
+description: "Annotation: This section describes how to add annotations on a component definition."
 noindex: true
 sitemap: false
 ---

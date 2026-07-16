@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.tree.checkmarkDeselectOthers"
+description: "org.zkoss.zul.tree.checkmarkDeselectOthers: If a tree's checkmark (org.zkoss.zul.Tree#isCheckmark())) is enabled, the selection will be toggled when a…"
 ---
 
 **Property:**

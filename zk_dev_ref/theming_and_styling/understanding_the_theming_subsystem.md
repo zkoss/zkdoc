@@ -1,5 +1,6 @@
 ---
 title: "Understanding the Theming Subsystem"
+description: "Understanding the Theming Subsystem: The collection of the components' stylesheets and associated images is called a theme."
 ---
 
 The collection of the components' stylesheets and associated images is

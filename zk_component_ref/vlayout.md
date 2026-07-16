@@ -1,5 +1,6 @@
 ---
 title: "Vlayout"
+description: "Vlayout: The vlayout component is a simple vertical oriented layout. Added components will be placed underneath each other in a column."
 ---
 
 - **Java API:** [org.zkoss.zul.Vlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Vlayout.html)

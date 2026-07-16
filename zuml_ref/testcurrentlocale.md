@@ -1,5 +1,6 @@
 ---
 title: "testCurrentLocale"
+description: "testCurrentLocale: i.e., org.zkoss.util.Locales#testCurrent(java.lang.String, java.lang.String) )"
 ---
 
 ```java

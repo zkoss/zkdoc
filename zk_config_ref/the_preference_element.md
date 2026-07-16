@@ -1,5 +1,6 @@
 ---
 title: "The preference Element"
+description: "The preference Element: It is used to specify a preference. The use is the same as zk.xml's preference element, except it is specified in a JAR file's…"
 ---
 
 **Syntax:**

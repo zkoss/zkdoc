@@ -1,5 +1,6 @@
 ---
 title: "The Difference Between XUL and XHTML Components"
+description: "The Difference Between XUL and XHTML Components: All XHTML components are derived from org.zkoss.zhtml.impl.AbstractTag."
 ---
 
 All XHTML components are derived from

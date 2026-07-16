@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.SessionCleanup interface"
+description: "The org.zkoss.zk.ui.util.SessionCleanup interface: A listener could implement org.zkoss.zk.ui.util.SessionCleanup to cleanup a session that is being destroyed."
 ---
 
 **Listener:**

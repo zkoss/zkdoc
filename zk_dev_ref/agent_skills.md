@@ -1,5 +1,6 @@
 ---
 title: Agent Skills
+description: "Agent Skills are specialized capabilities that can be added to AI coding agents to enhance their performance on specific technical tasks."
 ---
 
 # Agent Skills for ZK Development

@@ -1,5 +1,6 @@
 ---
 title: "Page Initialization"
+description: "Page Initialization: Sometimes it is helpful to run some code before ZK Loader instantiates any component."
 ---
 
 Sometimes it is helpful to run some code before ZK Loader instantiates

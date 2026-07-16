@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zkmax.touch.disabled"
+description: "org.zkoss.zkmax.touch.disabled: It specifies whether to disable the handling of touch events."
 ---
 
 **Property:**

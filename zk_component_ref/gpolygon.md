@@ -1,5 +1,6 @@
 ---
 title: "Gpolygon"
+description: "Gpolygon: Polygon drawn on the Google Maps per the given (latitude, longitude) points, visible zoom level(0~3), and fill color, etc.."
 ---
 
 - **Demonstration:**

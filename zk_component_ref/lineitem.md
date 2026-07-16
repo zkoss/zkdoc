@@ -1,5 +1,6 @@
 ---
 title: "Lineitem"
+description: "Lineitem is the child of Linelayout, it can contain up to 2 components inside. The content of Lineitem is placed separately in different areas of linelayout."
 ---
 
 - **Demonstration:** [Linelayout](https://www.zkoss.org/zkdemo/input/linelayout)

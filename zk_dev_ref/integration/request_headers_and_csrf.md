@@ -1,5 +1,6 @@
 ---
 title: "Request headers and CSRF tokens"
+description: "Request headers and CSRF tokens: Prior to ZK 10.2.0, developers using Spring Security with ZK faced a security limitation."
 ---
 
 # The Problem: CSRF Protection and ZK Requests

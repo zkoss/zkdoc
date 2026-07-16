@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.input.grouping.allowed"
+description: "org.zkoss.zk.ui.input.grouping.allowed: Turn on/off whether the user is allowed to key in the grouping character when entering a number."
 ---
 
 Property:  

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.theme.preferred"
+description: "org.zkoss.theme.preferred: If not specified, zk will load the default theme. ZK has different default theme before and after 8.5, see ZK Official Themes."
 ---
 
 **Property:** org.zkoss.theme.preferred

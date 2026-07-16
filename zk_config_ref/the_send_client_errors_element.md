@@ -1,5 +1,6 @@
 ---
 title: "The send-client-errors Element"
+description: "The send-client-errors Element: It specifies whether client errors should be sent to the server for logging the page url where the error occurred and its…"
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.activate.wait.retry.timeout"
+description: "org.zkoss.zk.ui.activate.wait.retry.timeout: A library property to specify the timeout (in milliseconds) to wait for the activation."
 ---
 
 **Property:**

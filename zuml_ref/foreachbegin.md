@@ -1,5 +1,6 @@
 ---
 title: "forEachBegin"
+description: "forEachBegin: It is used with the forEach attribute to specify the index (starting from 0) that the iteration should begin at."
 ---
 
 **Syntax:**

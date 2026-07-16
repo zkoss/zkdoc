@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.rightSelect"
+description: "org.zkoss.zul.listbox.rightSelect: If a listbox's checkmark (org.zkoss.zul.Listbox#isCheckmark())) is enabled, the selection will be toggled when the user…"
 ---
 
 **Property:**

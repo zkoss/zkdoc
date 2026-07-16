@@ -1,5 +1,6 @@
 ---
 title: "Panel"
+description: "Panel: The Panel component in ZK is a versatile container that serves as a foundational building block for application-oriented user interfaces."
 ---
 
 - **Demonstration**: [Panel](https://www.zkoss.org/zkdemo/window/panel)

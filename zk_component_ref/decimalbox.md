@@ -1,5 +1,6 @@
 ---
 title: "Decimalbox"
+description: "Decimalbox: An edit box for holding big decimal value."
 ---
 
 - **Demonstration:** [Decimalbox](http://www.zkoss.org/zkdemo/input/form_sample)

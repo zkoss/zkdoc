@@ -1,5 +1,6 @@
 ---
 title: "Defer the Creation of Child Components"
+description: "Defer the Creation of Child Components: For sophisticated pages, the performance can be improved if we defer the creation of child components until they…"
 ---
 
 For sophisticated pages, the performance can be improved if we defer the

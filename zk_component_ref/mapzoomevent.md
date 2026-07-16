@@ -1,5 +1,6 @@
 ---
 title: "MapZoomEvent"
+description: "MapZoomEvent: Represents a Google Maps related event which is triggered whenever the zoom level of a gmaps is changed."
 ---
 
 - Java API: N/A

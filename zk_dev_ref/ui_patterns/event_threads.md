@@ -1,5 +1,6 @@
 ---
 title: "Event Threads"
+description: "Event Threads: By default, ZK processes an event in the same Servlet thread that receives the HTTP request."
 ---
 
 By default, ZK processes an event in the same Servlet thread that

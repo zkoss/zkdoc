@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.URIInterceptor interface"
+description: "The org.zkoss.zk.ui.util.URIInterceptor interface: A listener could implement org.zkoss.zk.ui.util.URIInterceptor to intercept the retrieval of ZUML pages…"
 ---
 
 **Listener:**

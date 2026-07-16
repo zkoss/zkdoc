@@ -1,5 +1,6 @@
 ---
 title: "The max-process-time Element"
+description: "The max-process-time Element: It specifies the maximum allowed time to process events, in milliseconds. It must be positive."
 ---
 
 **Syntax:**

@@ -1,5 +1,6 @@
 ---
 title: "Rangeslider"
+description: "Rangeslider: A rangeslider component represents a slider with a start and an end value."
 ---
 
 - **Demonstration:** [Rangeslider](https://www.zkoss.org/zkdemo/input/slider)

@@ -1,5 +1,6 @@
 ---
 title: "Annotate Component Definitions"
+description: "Annotate Component Definitions: In addition to annotating a component or its properties, you could annotate a component definition, such that all its…"
 ---
 
 In addition to annotating a component or its properties, you could

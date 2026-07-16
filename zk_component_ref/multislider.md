@@ -1,5 +1,6 @@
 ---
 title: "Multislider"
+description: "Multislider: A multislider component represents a slider with multiple ranges."
 ---
 
 - **Demonstration:**

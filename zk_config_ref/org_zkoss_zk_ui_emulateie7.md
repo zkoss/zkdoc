@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.EmulateIE7"
+description: "org.zkoss.zk.ui.EmulateIE7: It specifies if we can make Internet Explorer 8 running in IE7 compatible mode."
 ---
 
 **Property:**

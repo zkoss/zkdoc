@@ -1,5 +1,6 @@
 ---
 title: "Barcode"
+description: "Barcode: The barcode component generates and displays barcodes at the browser."
 ---
 
 - **Demonstration:** [Barcode](https://blog.zkoss.org/2018/09/05/8-6-preview-barcode-and-barcodescanner/)

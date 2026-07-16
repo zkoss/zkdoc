@@ -1,5 +1,6 @@
 ---
 title: "Scrollview"
+description: "Scrollview: The following example creates a vertically scrolling container and a horizontally scrolling container, each holding several labels:"
 ---
 
 - **Demonstration:** [Scrollview](https://www.zkoss.org/zkdemo/...)

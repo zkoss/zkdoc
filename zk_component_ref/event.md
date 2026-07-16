@@ -1,5 +1,6 @@
 ---
 title: "Event"
+description: "Event: An event sent to the event handler of a component. It is the base class of all events."
 ---
 
 - Java API: [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html)

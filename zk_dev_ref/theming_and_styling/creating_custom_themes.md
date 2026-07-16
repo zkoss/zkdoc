@@ -1,5 +1,6 @@
 ---
 title: "Creating Custom Themes"
+description: "Creating Custom Themes: ZK provides an extensive component set that allows web developers to use as building blocks for easy web page UI construction."
 ---
 
 ZK provides an extensive component set that allows web developers to use

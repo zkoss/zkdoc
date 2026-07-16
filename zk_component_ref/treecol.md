@@ -1,5 +1,6 @@
 ---
 title: "Treecol"
+description: "Treecol: A treecol is a top column of tree. Its parent must be Treecols."
 ---
 
 - **Demonstration:** [Tree (Dynamic Styling)](http://www.zkoss.org/zkdemo/tree/dynamic_styling)

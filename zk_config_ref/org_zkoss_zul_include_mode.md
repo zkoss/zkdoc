@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.include.mode"
+description: "org.zkoss.zul.include.mode: It specifies the default mode of the include component."
 ---
 
 **Property:**

@@ -1,5 +1,6 @@
 ---
 title: "Error Handling"
+description: "Error Handling: Here we describe how to handle errors. An error is caused by an exception that is not caught by the application."
 ---
 
 Here we describe how to handle errors. An error is caused by an

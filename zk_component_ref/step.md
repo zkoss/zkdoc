@@ -1,5 +1,6 @@
 ---
 title: "Step"
+description: "Step: A step is used for displaying user navigation, it should be placed inside a Stepbar and shouldn't be used without a Stepbar."
 ---
 
 - **Demonstration:** [Step](https://www.zkoss.org/zkdemo/menu/stepbar)

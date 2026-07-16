@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.processMask.enabled"
+description: "org.zkoss.zk.ui.processMask.enabled: Specifies whether always to show a processing mask when doing a lengthy operation on the server side."
 ---
 
 **Property:**

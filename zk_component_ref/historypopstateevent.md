@@ -1,5 +1,6 @@
 ---
 title: "HistoryPopStateEvent"
+description: "HistoryPopStateEvent: The history pop state event used with onHistoryPopState to notify that user pressed BACK, FORWARD or others that causes the history…"
 ---
 
 - Java API:

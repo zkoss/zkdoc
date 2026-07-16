@@ -1,5 +1,6 @@
 ---
 title: "Calendar"
+description: "Calendar: A calendar displays a 'flat' calendar and allows user to select a day from it."
 ---
 
 - **Demonstration:** [Calendar](http://www.zkoss.org/zkdemo/reporting/simple_calendar)

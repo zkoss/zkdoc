@@ -1,5 +1,6 @@
 ---
 title: "ZK Filter"
+description: "ZK Filter: If you prefer to Ajax-ize a dynamically generated HTML page (e.g., the output of a Velocity Servlet), you could use ZK Filter to process the…"
 ---
 
 If you prefer to *Ajax*-ize a dynamically generated HTML page (e.g., the

@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled"
+description: "org.zkoss.zk.ui.invokeFirstRootForAfterKeyDown.enabled: Specifies whether to always enable the seeking first root widget for afterKeyDown event when the…"
 ---
 
 **Property:**

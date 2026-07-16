@@ -1,5 +1,6 @@
 ---
 title: "Rowlayout"
+description: "Rowlayout: A rowlayout lays out a container which can have multiple columns, it offers a 12-column grid out of the box."
 ---
 
 - **Demonstration:** [Rowlayout](https://www.zkoss.org/zkdemo/layout/rowlayout)

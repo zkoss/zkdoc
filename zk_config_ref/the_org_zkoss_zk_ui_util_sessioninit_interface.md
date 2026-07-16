@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.SessionInit interface"
+description: "The org.zkoss.zk.ui.util.SessionInit interface: A listener could implement org.zkoss.zk.ui.util.SessionInit to initialize a session that is being created."
 ---
 
 **Listener:**

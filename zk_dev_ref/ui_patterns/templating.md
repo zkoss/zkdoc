@@ -1,5 +1,6 @@
 ---
 title: "Templating"
+description: "Templating is a technique that allows developers to define UI fragments, and how to assemble them into a complete UI at runtime."
 ---
 
 Templating is a technique that allows developers to define UI fragments,

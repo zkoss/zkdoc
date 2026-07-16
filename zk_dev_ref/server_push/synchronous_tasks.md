@@ -1,5 +1,6 @@
 ---
 title: "Synchronous Tasks"
+description: "Synchronous Tasks: Server push is a technology to actively push data to the client. For ZK, the data is usually the UI updates or its variants."
 ---
 
 Server push is a technology to actively *push* data to the client. For

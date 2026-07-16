@@ -1,5 +1,6 @@
 ---
 title: "Listbox Renderer"
+description: "Listbox Renderer: Here we describe how to implement a custom renderer for a listbox (org.zkoss.zul.ListitemRenderer)."
 ---
 
 Here we describe how to implement a custom renderer for a listbox

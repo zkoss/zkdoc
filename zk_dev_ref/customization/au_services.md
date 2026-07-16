@@ -1,5 +1,6 @@
 ---
 title: "AU Services"
+description: "AU Services: An AU service (org.zkoss.zk.au.AuService) is a plugin used to intercept the AU requests (org.zkoss.zk.au.AuRequest) sent from the client."
 ---
 
 An AU service

@@ -1,5 +1,6 @@
 ---
 title: "Type Coercion"
+description: "Type Coercion: EL expressions will coerce the type automatically. Here is the summary of the coercion rules."
 ---
 
 EL expressions will coerce the type automatically. Here is the summary

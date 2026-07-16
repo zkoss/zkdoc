@@ -1,5 +1,6 @@
 ---
 title: "Data-FixScrollPosition"
+description: "Data-FixScrollPosition: To prevent conflict with 'next' and 'previous' button on the virtual keyboard on iPad."
 ---
 
 To prevent conflict with 'next' and 'previous' button on the virtual

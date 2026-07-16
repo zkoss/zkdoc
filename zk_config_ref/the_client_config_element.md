@@ -1,5 +1,6 @@
 ---
 title: "The client-config Element"
+description: "The client-config Element: It is used to customize the behavior of ZK Client Engine."
 ---
 
 **Syntax:**

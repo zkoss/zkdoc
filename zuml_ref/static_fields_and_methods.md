@@ -1,5 +1,6 @@
 ---
 title: "Static Fields and Methods"
+description: "Static Fields and Methods: With import directive, you can reference a static field or a static method of a class."
 ---
 {% include supported-since.html version="8.0.0" %}
 

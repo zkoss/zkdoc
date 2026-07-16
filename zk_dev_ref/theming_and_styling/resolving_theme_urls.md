@@ -1,5 +1,6 @@
 ---
 title: "Resolving Theme URLs"
+description: "Resolving Theme URLs: Themes comprises of stylesheets and images. The URLs for those resources must be resolved once the theme changes."
 ---
 
 Themes comprises of stylesheets and images. The URLs for those resources

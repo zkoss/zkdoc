@@ -1,5 +1,6 @@
 ---
 title: "The upload-charset-finder-class Element"
+description: "The upload-charset-finder-class Element: It specifies the finder that determines charset (aka.., encoding) for the uploaded text files if no charset is…"
 ---
 
 **Syntax:**

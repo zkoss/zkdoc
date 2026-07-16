@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zk.ui.ShadowDefaultHost.class"
+description: "org.zkoss.zk.ui.ShadowDefaultHost.class: It specifies the name of the class as the default host component of shadow elements."
 ---
 
 **Property:** org.zkoss.zk.ui.ShadowDefaultHost.class

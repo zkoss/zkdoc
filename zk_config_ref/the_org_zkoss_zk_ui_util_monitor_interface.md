@@ -1,5 +1,6 @@
 ---
 title: "The org.zkoss.zk.ui.util.Monitor interface"
+description: "The org.zkoss.zk.ui.util.Monitor interface: A listener could implement org.zkoss.zk.ui.util.Monitor to monitor the statuses of ZK."
 ---
 
 **Listener:**

@@ -1,5 +1,6 @@
 ---
 title: "cat4"
+description: "cat4: i.e., org.zkoss.xel.fn.StringFns#cat4(java.lang.String, java.lang.String, java.lang.String, java.lang.String))"
 ---
 
 ```java

@@ -1,5 +1,6 @@
 ---
 title: "TableChildren"
+description: "TableChildren: The cell of Tablelayout. Since ZK 6.0.0, the child component of Tablechildren can be any ZK component, not only Panel."
 ---
 
 - **Demonstration:** [Tablelayout](http://www.zkoss.org/zkdemo/layout/table_layout)

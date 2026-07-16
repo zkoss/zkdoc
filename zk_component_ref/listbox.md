@@ -1,5 +1,6 @@
 ---
 title: "Listbox"
+description: "Listbox: Components: listbox, listitem, listcell, listhead and listheader."
 ---
 
 - **Demonstration:** [Listbox](http://www.zkoss.org/zkdemo/listbox)

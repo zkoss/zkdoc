@@ -1,5 +1,6 @@
 ---
 title: "Organigram Template"
+description: "Organigram Template: Similar to Listbox, you can also define a customer rendering with a template for an organigram:"
 ---
 
 Similar to

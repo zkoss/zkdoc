@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.listbox.selectOnHighlight.disabled"
+description: "org.zkoss.zul.listbox.selectOnHighlight.disabled"
 ---
 
 **Property:** 

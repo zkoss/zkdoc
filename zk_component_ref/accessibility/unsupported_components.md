@@ -1,5 +1,6 @@
 ---
 title: "Unsupported Components"
+description: "Unsupported Components: The following components are not WCAG-compliant, mostly due to the underlying 3rd party library; or the natural of the…"
 ---
 
 The following components are not WCAG-compliant, mostly due to the

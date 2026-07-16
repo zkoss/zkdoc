@@ -1,5 +1,6 @@
 ---
 title: "org.zkoss.zul.image.preload"
+description: "org.zkoss.zul.image.preload: It specifies the image will be preloaded or not for LabelImageElement and Image component."
 ---
 
 **Property:**
