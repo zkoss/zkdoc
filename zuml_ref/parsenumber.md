@@ -1,5 +1,7 @@
 ---
 title: "parseNumber"
+noindex: true
+sitemap: false
 ---
 
 The default method:

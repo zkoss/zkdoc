@@ -1,6 +1,8 @@
 ---
 title: "length"
 description: "length: i.e., org.zkoss.xel.fn.CommonFns#length(java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

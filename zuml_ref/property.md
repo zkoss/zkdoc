@@ -1,6 +1,8 @@
 ---
 title: "property"
 description: "property: i.e., org.zkoss.lang.Library#getProperty(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

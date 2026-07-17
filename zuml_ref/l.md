@@ -1,6 +1,8 @@
 ---
 title: "l"
 description: "l: i.e., org.zkoss.xel.fn.CommonFns#getLabel(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

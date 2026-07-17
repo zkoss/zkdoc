@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # desktopScope - java.util.Map
 
 A map of custom attributes associated with the desktop. It is the same

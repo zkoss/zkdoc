@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # sessionScope - java.util.Map
 
 A map of custom attributes associated with the session. It is the same

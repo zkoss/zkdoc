@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # session - [org.zkoss.zk.ui.Session](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Session.html)
 
 The session. It is similar to `javax.servlet.http.HttpSession`[^1]`.`

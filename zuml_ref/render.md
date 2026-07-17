@@ -1,6 +1,8 @@
 ---
 title: "render"
 description: "render: i.e., org.zkoss.web.fn.ServletFns#render(org.zkoss.web.servlet.dsp.action.ActionContext))"
+noindex: true
+sitemap: false
 ---
 
 ```java

@@ -1,6 +1,8 @@
 ---
 title: "encodeThemeURL"
 description: "encodeThemeURL: i.e., org.zkoss.web.fn.ServletFns#encodeThemeURL(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

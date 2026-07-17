@@ -1,6 +1,8 @@
 ---
 title: "escapeXML"
 description: "escapeXML: i.e., org.zkoss.xml.XMLs#escapeXML(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

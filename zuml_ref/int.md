@@ -1,6 +1,8 @@
 ---
 title: "int"
 description: "int: i.e., org.zkoss.xel.fn.CommonFns#toInt(java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

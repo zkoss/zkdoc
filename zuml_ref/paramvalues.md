@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # paramValues - java.util.Map
 
 A map of parameters of the request, `Map<String, String[]>`, returned by

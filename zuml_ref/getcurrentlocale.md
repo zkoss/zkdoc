@@ -1,6 +1,8 @@
 ---
 title: "getCurrentLocale"
 description: "getCurrentLocale: i.e., org.zkoss.util.Locales#getCurrent())"
+noindex: true
+sitemap: false
 ---
 
 ```java

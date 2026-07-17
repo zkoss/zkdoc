@@ -1,5 +1,7 @@
 ---
 title: "formatNumber"
+noindex: true
+sitemap: false
 ---
 
 The default method:

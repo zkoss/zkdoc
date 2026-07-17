@@ -1,6 +1,8 @@
 ---
 title: "indexOf"
 description: "indexOf: i.e., org.zkoss.xel.fn.CommonFns#indexOf(java.lang.Object, java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

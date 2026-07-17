@@ -1,6 +1,8 @@
 ---
 title: "encodeURIComponent"
 description: "encodeURIComponent: i.e., org.zkoss.web.servlet.http.Encodes#encodeURIComponent(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

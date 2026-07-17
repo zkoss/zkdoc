@@ -1,6 +1,8 @@
 ---
 title: "toLowerCase"
 description: "toLowerCase: i.e., org.zkoss.xel.fn.StringFns#toLowerCase(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

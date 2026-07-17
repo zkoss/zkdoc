@@ -1,6 +1,8 @@
 ---
 title: "new1"
 description: "new1: i.e., org.zkoss.xel.fn.CommonFns#new_(java.lang.Object, java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

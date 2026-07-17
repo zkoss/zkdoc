@@ -1,5 +1,7 @@
 ---
 title: "join"
+noindex: true
+sitemap: false
 ---
 
 ```java

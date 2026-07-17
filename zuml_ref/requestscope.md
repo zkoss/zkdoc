@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # requestScope – java.util.Map
 
 A map of custom attributes associated with the current execution. It is
