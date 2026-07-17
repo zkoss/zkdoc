@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # forEachStatus – [org.zkoss.zk.ui.util.ForEachStatus](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/ForEachStatus.html)
 
 The status of an iteration. It is an instance of

@@ -1,6 +1,8 @@
 ---
 title: "string"
 description: "string: i.e., org.zkoss.xel.fn.CommonFns#toString(java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

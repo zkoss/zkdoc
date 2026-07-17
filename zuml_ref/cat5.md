@@ -1,6 +1,8 @@
 ---
 title: "cat5"
 description: "cat5: i.e., org.zkoss.xel.fn.StringFns#cat5(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

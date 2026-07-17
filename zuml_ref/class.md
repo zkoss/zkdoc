@@ -1,6 +1,8 @@
 ---
 title: "class"
 description: "class: i.e., org.zkoss.lang.Classes#forNameByThread(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

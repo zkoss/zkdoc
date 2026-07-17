@@ -1,6 +1,8 @@
 ---
 title: "lastIndexOf"
 description: "lastIndexOf: i.e., org.zkoss.xel.fn.CommonFns#lastIndexOf(java.lang.Object, java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

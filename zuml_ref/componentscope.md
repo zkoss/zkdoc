@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # componentScope - java.util.Map
 
 A map of custom attributes associated with the component. It is the same

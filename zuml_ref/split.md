@@ -1,6 +1,8 @@
 ---
 title: "split"
 description: "split: i.e., org.zkoss.xel.fn.StringFns#split(java.lang.String, java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

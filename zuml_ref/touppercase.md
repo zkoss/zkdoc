@@ -1,6 +1,8 @@
 ---
 title: "toUpperCase"
 description: "toUpperCase: i.e., org.zkoss.xel.fn.StringFns#toUpperCase(java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

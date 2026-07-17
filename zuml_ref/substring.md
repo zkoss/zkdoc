@@ -1,6 +1,8 @@
 ---
 title: "substring"
 description: "substring: i.e., org.zkoss.xel.fn.StringFns#substring(java.lang.String, int, int))"
+noindex: true
+sitemap: false
 ---
 
 ```java

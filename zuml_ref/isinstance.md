@@ -1,6 +1,8 @@
 ---
 title: "isInstance"
 description: "isInstance: i.e., org.zkoss.xel.fn.CommonFns#isInstance(java.lang.Object, java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

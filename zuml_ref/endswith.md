@@ -1,6 +1,8 @@
 ---
 title: "endsWith"
 description: "endsWith: i.e., org.zkoss.xel.fn.StringFns#endsWith(java.lang.String, java.lang.String))"
+noindex: true
+sitemap: false
 ---
 
 ```java

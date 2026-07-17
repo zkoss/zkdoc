@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # param - java.util.Map
 
 It's a map (`Map<String, String>`) of HTTP request parameter like the

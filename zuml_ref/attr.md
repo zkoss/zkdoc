@@ -1,6 +1,8 @@
 ---
 title: "attr"
 description: "attr: i.e., org.zkoss.xel.fn.XmlFns#attr(java.lang.String, java.lang.Object))"
+noindex: true
+sitemap: false
 ---
 
 ```java

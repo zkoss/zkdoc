@@ -1,3 +1,8 @@
+---
+noindex: true
+sitemap: false
+---
+
 # applicationScope - java.util.Map
 
 A map of custom attributes associated with the Web application. It is
