@@ -1,0 +1,54 @@
+# Search scopes for per-book search (consumed by the Lunr search in the theme).
+#
+# Each entry maps a URL first-path-segment (`prefix`) to a human-readable
+# chip label (`title`). The theme renders one chip per entry plus an "All"
+# chip; selecting a chip filters Lunr results to docs whose URL starts with
+# that prefix. Small Talks are Jekyll posts served at /small-talk/... .
+#
+# Order follows _data/navigation.yml (main). Keep prefixes in sync with the
+# actual book directory names / post permalink. External links (Keikai,
+# JavaDoc) and non-content archives are intentionally excluded.
+#
+# NOT listed because their pages are absent from the Lunr index: eval_guide and
+# zk_webdriver use extensionless permalinks (e.g. /zk_webdriver/examples), and
+# lunr-store only indexes pages whose URL contains ".html". A chip for them
+# would always return 0 results. (This is a pre-existing, site-wide search
+# limitation for extensionless permalinks, tracked separately.)
+- prefix: get_started
+  title: ZK Getting Started
+- prefix: zk_essentials
+  title: ZK Essentials
+- prefix: zk_dev_ref
+  title: ZK Developer's Reference
+- prefix: zk_mvvm_ref
+  title: ZK MVVM Reference
+- prefix: zk_component_ref
+  title: ZK Component Reference
+- prefix: zuml_ref
+  title: ZUML Reference
+- prefix: small-talk
+  title: Small Talks
+- prefix: zk_installation_guide
+  title: ZK Installation Guide
+- prefix: zk_config_ref
+  title: ZK Configuration Reference
+- prefix: zk_style_customization_guide
+  title: ZK Style Customization Guide
+- prefix: zk_component_dev_essentials
+  title: ZK Component Development Essentials
+- prefix: zk_client_side_ref
+  title: ZK Client-side Reference
+- prefix: zk_charts_essentials
+  title: ZK Charts Essentials
+- prefix: zk_pivottable_essentials
+  title: ZK Pivottable Essentials
+- prefix: zk_calendar_essentials
+  title: ZK Calendar Essentials
+- prefix: zk_spring_essentials
+  title: ZK Spring Essentials
+- prefix: zats_essentials
+  title: ZATS Essentials
+- prefix: zk_jsp_tags_essentials
+  title: ZK JSP Tags Essentials
+- prefix: zk_studio_essentials
+  title: ZK Studio Essentials
