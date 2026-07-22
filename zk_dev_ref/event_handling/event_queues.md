@@ -96,6 +96,13 @@ The message used to communicate among publishers and subscribers is
 [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) object, so you can use
 any of its subclasses you prefer.
 
+Note that an event queue can only be published from server-side code;
+client-side JavaScript cannot publish to an `EventQueue` directly. If
+you need to fire an event from JavaScript, the recommended bridge is to
+trigger a ViewModel command via the
+[Client Binding API]({{site.baseurl}}/zk_mvvm_ref/data_binding/client_binding_api),
+which then publishes the event to the queue on the server.
+
 ## Subscribe with a Synchronous Event Listener
 
 An event queue will broadcast a published event to all subscribers by
