@@ -22,12 +22,7 @@ affects the whole system, not just one web application.
 # Application Scope
 
 To make a library property effective for the whole application,
-configure it in `WEB-INF/zk.xml`. For more information, please refer to
-[ zk.xml]({{site.baseurl}}/zk_config_ref/the_library_property_element).
-
-For example,
-
-**Single value**
+configure it in `WEB-INF/zk.xml`. For example,
 
 ```xml
 <library-property>
@@ -36,21 +31,8 @@ For example,
 </library-property>
 ```
 
-**Multiple values**
-
-```xml
-<library-property>
-    <name>org.zkoss.bind.proxy.IgnoredProxyClasses</name>
-    <appendable>true</appendable>
-    <list>
-        <value>java.util.Date</value>
-        <value>java.sql.Date</value>
-        <value>java.sql.Timestamp</value>
-        <value>java.math.BigDecimal</value>
-        <value>java.math.BigInteger</value>
-    </list>
-</library-property>
-```
+For the full syntax, including multiple values and the appendable form, please refer to
+[the library-property element]({{site.baseurl}}/zk_config_ref/the_library_property_element).
 
 # Page scope
 
