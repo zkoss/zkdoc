@@ -1032,6 +1032,8 @@ zk_style_customization_guide:
       - title: Component-level variable reference
         url: /zk_style_customization_guide/migration_guides/component-level-variable-reference
 zk_config_ref:
+  - title: The Library Properties
+    url: /zk_config_ref/the_library_properties
   - title: web.xml
     url: /zk_config_ref/web_xml
     children:
@@ -1119,8 +1121,6 @@ zk_config_ref:
         url: /zk_config_ref/the_language_config_element
       - title: library-property
         url: /zk_config_ref/the_library_property_element
-      - title: The Library Properties
-        url: /zk_config_ref/the_library_properties
         children:
           - title: class.mold
             url: /zk_config_ref/class_mold
