@@ -1,4 +1,7 @@
-# The csp-report-only Element
+---
+title: "The csp-report-only Element"
+description: "The csp-report-only Element: It specifies whether to apply the Content-Security-Policy-Report-Only response header, which reports policy violations instead of blocking resources."
+---
 
 {% include supported-since.html version="10.3.0" %}
 

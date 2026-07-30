@@ -1,4 +1,7 @@
-# The csp-policy Element
+---
+title: "The csp-policy Element"
+description: "The csp-policy Element: It specifies the content of a custom Content-Security-Policy response header, and requires csp-enabled."
+---
 
 {% include supported-since.html version="10.3.0" %}
 

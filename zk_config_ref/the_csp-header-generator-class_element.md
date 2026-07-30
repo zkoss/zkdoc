@@ -1,6 +1,10 @@
-# The csp-header-generator-class Element
+---
+title: "The csp-header-generator-class Element"
+description: "The csp-header-generator-class Element: It specifies a custom class implementing CspProvider to override the default CSP header generation."
+---
 
 {% include supported-since.html version="10.3.0" %}
+
 **Syntax:**
 
 ```xml

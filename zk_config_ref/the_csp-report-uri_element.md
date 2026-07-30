@@ -1,4 +1,7 @@
-# The csp-report-uri Element
+---
+title: "The csp-report-uri Element"
+description: "The csp-report-uri Element: It specifies the endpoint that CSP violation reports are sent to, and requires both csp-enabled and csp-report-only."
+---
 
 {% include supported-since.html version="10.3.0" %}
 

@@ -1,4 +1,7 @@
-# The csp-enabled Element
+---
+title: "The csp-enabled Element"
+description: "The csp-enabled Element: It specifies whether to apply the Content-Security-Policy response header. It must be enabled before any other CSP property takes effect."
+---
 
 {% include supported-since.html version="10.3.0" %}
 

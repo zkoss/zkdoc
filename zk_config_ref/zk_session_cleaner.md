@@ -1,3 +1,8 @@
+---
+title: "ZK Session Cleaner"
+description: "ZK Session Cleaner is a listener used to clean up memory when a HTTP session is destroyed."
+---
+
 # HttpSessionListener
 
 `[Required] Class: ` `org.zkoss.zk.ui.http.HttpSessionListener`

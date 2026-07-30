@@ -1,4 +1,7 @@
-# The csp-strict-dynamic-enabled Element
+---
+title: "The csp-strict-dynamic-enabled Element"
+description: "The csp-strict-dynamic-enabled Element: It specifies whether to enable the strict-dynamic directive, which generates a per-execution nonce applied to the script and style tags of a page."
+---
 
 {% include supported-since.html version="10.3.0" %}
 

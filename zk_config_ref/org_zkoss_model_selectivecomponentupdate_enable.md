@@ -1,3 +1,8 @@
+---
+title: "org.zkoss.model.selectiveComponentUpdate.enable"
+description: "org.zkoss.model.selectiveComponentUpdate.enable: Enable selective update of model-driven components so that not all sequential components are re-rendered."
+---
+
 **Property:**
 
 `org.zkoss.model.selectiveComponentUpdate.enable`
