@@ -545,7 +545,7 @@ a parent POM or import it like:
     </dependencyManagement>
 ```
 
-For a complete example, you can reference [pom.xml of this project](https://github.com/zkoss-demo/gettingStarted/tree/master/getZkUp).
+For a complete example, you can reference [pom.xml of this project](https://github.com/zkoss-demo/gettingStarted/).
 You can also read [a spring boot document](https://docs.spring.io/spring-boot/docs/current/reference/html/using-spring-boot.html)
 to understand BOM usage.
 
