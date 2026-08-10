@@ -1,12 +1,13 @@
-# ZK IntelliJ IDEA Plugin
+---
+title: ZK IntelliJ IDEA Plugin
+description: "The ZK IntelliJ IDEA Plugin adds ZUL layout preview, code completion, MVVM binding navigation, live templates, and ZK config validation to IntelliJ IDEA."
+---
 
 The ZK IntelliJ IDEA Plugin is a dedicated tool designed to enhance the development experience for ZK applications within the IntelliJ IDEA environment. It provides robust features such as intelligent code completion, syntax validation, and seamless navigation, helping developers to write ZK applications more efficiently and with greater accuracy.
 
 {% include zkidea-install-button.html %}
 
-# Features
-
-## Layout Preview for ZUL Files
+# Layout Preview for ZUL Files
 
 {% include supported-since.html version="1.0.0" %}
 
@@ -16,7 +17,7 @@ Editing a ZUL page normally means a build-deploy-refresh cycle before you can se
 
 The right pane is not an approximation. It is the real HTML produced by **your project's own ZK jars**, so component geometry, themes, and add-on widgets look exactly as they will in the browser. No server, no deployment, no build tool run.
 
-### How It Works
+## How It Works
 
 The plugin never renders ZUL inside the IDE process. It starts a small helper JVM that loads only your ZK jars and drives ZK's own `DHtmlLayoutServlet` to produce the page's first paint.
 
@@ -38,7 +39,7 @@ Two consequences follow from that boundary, and they explain almost everything y
 *   **Your own code never runs.** ViewModels, composers, converters, and validators are not loaded. This keeps the preview safe and fast, but it also means data-bound values cannot be real.
 *   **Only the first paint is produced.** No AU round trip is simulated, so clicking a button or sorting a grid does nothing.
 
-### Using It
+## Using It
 
 1.  Open any `.zul` file. It opens as a split editor. The three buttons in the editor's top-right switch between editor-only, split, and preview-only.
 2.  Edit as usual and **save** (`Ctrl+S` / `Cmd+S`). The preview refreshes a fraction of a second after the file reaches disk. Unsaved edits do not refresh.
@@ -48,7 +49,7 @@ Two consequences follow from that boundary, and they explain almost everything y
 
 Only `.zul` files get the split editor. Other ZK XML files such as `zk.xml` and `lang-addon.xml` keep the plain XML editor.
 
-### What Renders and What Doesn't
+## What Renders and What Doesn't
 
 | You wrote | In the preview |
 |---|---|
@@ -64,7 +65,7 @@ Only `.zul` files get the split editor. Other ZK XML files such as `zk.xml` and 
 
 This split is deliberate and permanent. Laying out a page is what the preview does; running your application is not.
 
-### Requirements
+## Requirements
 
 The preview renders when all of the following hold. Otherwise the pane explains which one is missing.
 
@@ -73,7 +74,7 @@ The preview renders when all of the following hold. Otherwise the pane explains 
 *   **No build tool at render time.** The preview never runs Maven or Gradle and never reads `pom.xml` or `build.gradle`. It reads only IntelliJ's resolved project model, and the render helper is bundled inside the plugin.
 *   **No particular project JDK.** The helper needs Java 17 and uses your project SDK when that SDK is 17 or newer; otherwise it quietly falls back to the IDE's own runtime. A project on JDK 8 or 11 previews normally.
 
-### Supported Project Layouts
+## Supported Project Layouts
 
 The preview infers a **docroot** from the file's location so the page is served at its real production URL and its includes and resources resolve the same way they would on a server.
 
@@ -85,11 +86,11 @@ The preview infers a **docroot** from the file's location so the page is served 
 
 All three ZK path forms resolve in the preview exactly as on a server: absolute (`<include src="/foo.zul"/>`), relative (`<apply templateURI="../foo.zul"/>`), and classpath (`<include src="~./foo.zul"/>`).
 
-### Add-on Support
+## Add-on Support
 
 Commercial and community add-ons render like core components, including their own JS and CSS, so the page looks styled rather than like an unstyled box. ZK Charts, ZK Calendar, Pivottable, Keikai, and ZK CKEditor are all verified against real jars on both the `javax` and `jakarta` servlet variants. The same rules apply: first paint only, and the add-on jar must be on the module's IntelliJ classpath.
 
-### Debugging a Blank or Wrong Render
+## Debugging a Blank or Wrong Render
 
 Sometimes the page renders successfully and your component still is not visible. Right-click inside the preview pane for two tools.
 
@@ -100,7 +101,7 @@ Sometimes the page renders successfully and your component still is not visible.
 
 The browser's own **View Source** entry is removed on purpose. It never worked in an embedded browser, and **View Rendered HTML** replaces it with something more useful for ZK, since a ZK response body is mostly a bootstrap script that the client engine expands into the DOM.
 
-### When a Page Fails to Render
+## When a Page Fails to Render
 
 A parse error, a missing `<zscript>` class, or an invalid component hierarchy produces a formatted error page in the preview pane rather than a raw stack dump. It shows the failure phase (parse or compose), the message, the failing `file:line` where ZK can report one, a collapsible stack trace, and a prefilled **Report on GitHub** link.
 
@@ -119,7 +120,7 @@ ZK jars: zkmax-10.1.0-jakarta.jar, zkex-10.1.0-jakarta.jar, zk-10.1.0-jakarta.ja
 
 The last three lines are what make a report actionable: the jar list shows the ZK version, CE versus EE, and any dependency that failed to resolve (a missing `zkex` shows up as an absence), while the layout line explains include and `~./` failures. Only ZK jar file names are listed, never full paths and never your other dependencies.
 
-### When JCEF is Unavailable
+## When JCEF is Unavailable
 
 If the embedded browser cannot run, the pane names the cause instead of just failing, and offers a way through.
 
@@ -127,14 +128,14 @@ If the embedded browser cannot run, the pane names the cause instead of just fai
 
 Switch the boot runtime to a JetBrains Runtime through **Help > Find Action > Choose Boot Java Runtime for the IDE**, or set `ide.browser.jcef.enabled` to `true` in the registry. Meanwhile, the **Open preview in external browser** link renders the same page in your system browser: the preview server keeps working and only the display moves out of the IDE.
 
-### Limitations by Design
+## Limitations by Design
 
 *   **First paint only.** Server-side listeners and AU updates such as paging, sorting, and tree expansion are not simulated.
 *   **No user-class fidelity.** ViewModels, composers, and converters never load, so MVVM values are placeholders and `@command` is unwired. This is the isolation guarantee, not a gap to be closed later.
 *   **Refresh on save**, not on keystroke.
 *   **Idle helper JVMs.** One helper per distinct docroot and classpath pair stays up until the project closes.
 
-### Troubleshooting
+## Troubleshooting
 
 | Symptom | Likely cause | Fix |
 |---|---|---|
@@ -147,7 +148,7 @@ Switch the boot runtime to a JetBrains Runtime through **Help > Find Action > Ch
 | The preview did not update | The file is not saved, or it sits on an unrecognized layout | Save the file, then check the layout table above |
 | The pane is blank with no error page | The page composed but painted nothing visible, or a client-side asset failed | Right-click and choose **View Rendered HTML**; if that dump is empty too, choose **Open DevTools** and check Console and Network |
 
-## ZUL File Support
+# ZUL File Support
 
 {% include supported-since.html version="0.1.0" %}
 
@@ -161,7 +162,7 @@ The plugin offers comprehensive support for ZUL files, the core of ZK's UI defin
     Quickly navigate from a component tag or a view model reference in your ZUL file directly to the corresponding Java class or method declaration in your project.
     ![Go to declaration](/zk_dev_ref/images/go_to_declaration.png)
 
-## ZK Configuration File Support
+# ZK Configuration File Support
 
 The plugin provides content assistance and validation for ZK's XML configuration files. To enable these features, you should either use the default filenames (`zk.xml`, `lang-addon.xml`) or add the appropriate XML namespace to your custom-named files.
 
@@ -177,7 +178,7 @@ The plugin provides content assistance and validation for ZK's XML configuration
     ![lang-addon.xml code completion](/zk_dev_ref/images/lang_addon_code_completion.png)
     ![lang-addon.xml validate required elements](/zk_dev_ref/images/lang_addon_missing_required_element.png)
 
-## MVVM Development Support
+# MVVM Development Support
 
 {% include supported-since.html version="0.1.2" %}
 
@@ -185,7 +186,7 @@ For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provide
 
 ![Annotation code completion](/zk_dev_ref/images/annotation_code_completion.png)
 
-### Data Binding Navigation
+## Data Binding Navigation
 {% include supported-since.html version="0.6.0" %}
 
 *   **Property Navigation**: Jump directly from property references in ZUL binding expressions (e.g., `@load(vm.name)`) to their corresponding Java getter methods in the ViewModel. It supports deep object hierarchies (e.g., `vm.user.name`).
@@ -193,27 +194,27 @@ For developers using the MVVM (Model-View-ViewModel) pattern, the plugin provide
 *   **Command Navigation**: Jump from `@command` or `@global-command` annotation arguments to the server-side methods annotated with `@Command` or `@GlobalCommand`.
 *   **Template URI Navigation**: Navigate to static ZUL template file paths referenced within `@load` or `@init` expressions.
 
-### Intelligent Completion
+## Intelligent Completion
 {% include supported-since.html version="0.6.0" %}
 
 *   **ViewModel Property Completion**: Get smart suggestions for properties and methods based on the current ViewModel's type.
 *   **Command Name Completion**: Offers a list of valid `@Command` and `@GlobalCommand` names defined in the active ViewModel.
 *   **Scope Variable Completion**: Suggests available variables from different ZK scopes, including ViewModel IDs, template variables (e.g., `each`), and custom attributes.
 
-## Live Templates
+# Live Templates
 
 {% include supported-since.html version="0.7.0" %}
 
 The ZK plugin now includes a dedicated "ZK" group in IntelliJ Live Templates to accelerate your development. These templates are available automatically upon plugin installation without requiring any manual setup.
 
-### Essential Templates
+## Essential Templates
 
 The plugin provides several "shorthand" abbreviations to quickly generate boilerplate code:
 
 *   **`ns` (ZK Namespace)**: Inserts the four common ZK namespace aliases (`native`, `client/attribute`, `client`, and `xhtml`) into a ZUL tag.
 *   **`jspatch` (JS Widget Patch)**: Scaffolds a ZK client-side widget override with a version guard and a best-practice checklist for overriding `zk.override`.
 
-### UI Component Scaffolding
+## UI Component Scaffolding
 
 Generate the basic structure of complex ZK components instantly:
 
@@ -221,11 +222,11 @@ Generate the basic structure of complex ZK components instantly:
 *   **`listbox`**: Inserts a Listbox with two Listheaders and a sample Listitem.
 *   **`tree`**: Inserts a Tree with two Treecols and a sample Treeitem.
 
-### Runtime and Customization
+## Runtime and Customization
 
 Plugin-provided templates merge seamlessly with your existing IntelliJ templates. If you already have a "ZK" template group, the plugin's defaults will be added alongside your own. You can customize these templates or reset them to defaults via **Settings → Editor → Live Templates**.
 
-## Maven Project Creation
+# Maven Project Creation
 
 {% include supported-since.html version="0.1.3" %}
 
@@ -233,7 +234,7 @@ You can create new ZK projects easily using the bundled ZK Maven archetypes. Thi
 
 ![Maven archetype](/zk_dev_ref/images/maven_archetype.png)
 
-## Feedback Menu
+# Feedback Menu
 
 {% include supported-since.html version="0.4.0" %}
 
