@@ -1,0 +1,27 @@
+{%- comment -%}
+Call to action for the Getting Started articles: get the reader to clone and run
+the example project at github.com/zkoss-demo/gettingStarted.
+
+Shows ONE command as a cost signal ("this is cheap"), not as instructions —
+the full run options (Docker, Windows, WAR) stay in the repo README so there is
+only one place to maintain them.
+
+The utm_medium=cta marker is what separates this link from the other GitHub
+links in the same article when reading GA4 outbound-click events.
+
+No .notice wrapper on purpose: the theme's notice mixin recolours every <a>
+inside it, which would leave the button's label unreadable against its own
+background.
+
+Params:
+  article - short id of the calling article, used as utm_content (e.g. mvc, mvvm, 10min)
+{%- endcomment -%}
+<p><strong>Prefer to start from working code?</strong>
+Clone the example project and run it with a single command —
+<code>./mvnw jetty:run</code> — no Maven installation needed.
+Docker, Windows and WAR options are covered in the README.</p>
+
+<a class="btn btn--primary btn--large"
+   href="https://github.com/zkoss-demo/gettingStarted?utm_source=zkdoc&amp;utm_medium=cta&amp;utm_content={{ include.article }}">
+  <i class="fab fa-github"></i> Get the example project
+</a>

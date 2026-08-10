@@ -10,7 +10,7 @@ can also choose to go with the **MVVM** approach that is covered in [Get ZK Up a
 
 You can download the complete source code under the [ Start from Example Project](#start_from_example_project) section.
 
-{% include tutorial-common.md %}
+{% include tutorial-common.md article="mvc" %}
 
 # Handling UI Logic
 

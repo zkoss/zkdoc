@@ -270,7 +270,7 @@ Springboot easily, please refer to [ Create and Run Your First ZK Application wi
 
 # Source Code
 
-You can get the complete source code mentioned in this page at [github](https://github.com/zkoss-demo/gettingStarted/tree/master)
+{% include run-demo.html article="10min" %}
 
 # What's Next
 

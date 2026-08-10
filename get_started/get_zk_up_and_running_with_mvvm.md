@@ -10,7 +10,7 @@ automatically and it separates the UI from its controller clearly. In
 addition, you can also choose to go with the <b>MVC</b> approach that is
 covered in [another tutorial]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc).
 
-{% include tutorial-common.md %}
+{% include tutorial-common.md article="mvvm" %}
 
 # Automatic UI Controlling
 

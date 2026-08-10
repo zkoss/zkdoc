@@ -14,9 +14,7 @@ To practice creating the application, you can use [ZKFiddle](https://zkfiddle.or
 
 # Start from Example Project
 
-You can get [the source code of this article](https://github.com/zkoss-demo/gettingStarted/) and import it to
-your IDE without starting from scratch. Please follow the README to run
-the project.
+{% include run-demo.html article=include.article %}
 
 If you want to start a new project, please refer to [ZK Installation Guide/Quick Start]({{site.baseurl}}/zk_installation_guide/quick_start).
 
