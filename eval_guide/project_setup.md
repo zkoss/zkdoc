@@ -10,9 +10,11 @@ This chapter documents the full setup, methodology, and raw measurements behind 
 
 ## Test environment — Level 1 (Employee Manager)
 
-Level 1 used Spring Boot 2.7.7 with the javax namespace for ZK, Thymeleaf, Wicket, and React. A shared Maven module provided the backend entities, repositories, and service layer — all frameworks used the same backend code.
+Level 1 ran all six implementations on Spring Boot 3.3.4 with the Jakarta namespace, under a single multi-module Maven project. A shared Maven module — 7 files, 398 lines of entities, repositories, services, and seed data — provided the backend for every framework, including Vaadin. Each framework implementation is only the UI layer. Seed data was 8 departments and 57 employees, 4 of them inactive.
 
-Vaadin required its own separate Spring Boot 3.x setup with the Jakarta namespace, which meant it could not participate in the shared javax module. Vaadin's Level 1 entities were duplicated from the shared module.
+Hardware and toolchain: Apple M1 Pro (8 cores), macOS 15.7.3, Zulu JDK 17.0.4.1, Maven 3.9.1. All builds were run offline (`mvn -o`) to remove network variance. Framework versions: ZK 10.3.0.1 CE (`zul` — no EE component is used anywhere in the application) with zkspringboot 3.2.7.1, Vaadin 24.4.5, Wicket 10.1.0, React 18.3.1 with Vite 5.4.21, Angular 17.3.12. ZK runs on Jetty 12.0.13, which zkspringboot pulls in; the other five run on Tomcat, as their starters default.
+
+All six applications render 15 rows on the first page of the employee list, verified in source and in the rendered DOM.
 
 ## Test environment — Level 2 (HR Workspace)
 
@@ -24,56 +26,85 @@ React and Angular were standalone frontend applications at Level 2 — no Spring
 
 Level 3 used Spring Boot 3.3.4 with the Jakarta namespace (`apps3/`), reusing the Level 2 shared module as a Maven dependency. Only ZK and Vaadin provided full implementations. The other four frameworks provided explanation cards documenting the implementation approach and estimated effort.
 
-All measurements were taken on the same hardware under consistent conditions, with JDK 17 and clean builds (tests skipped). Response times are warm averages (requests 2–5 after one initial warm-up request).
+All measurements were taken on the same hardware under consistent conditions, with JDK 17 and clean builds (tests skipped). Level 1 response times are measured in a real browser and are described in the Level 1 section below. Level 2 and Level 3 response times are warm server averages (requests 2–5 after one initial warm-up request).
 
 ## Level 1: Employee Manager — Full Measurements
 
 ### Lines of code
 
-The shared backend module (7 files, 398 lines) is counted once and excluded from per-framework totals.
+Counted with `wc -l` over hand-written source. The shared backend module (7 files, 398 lines) is counted once and excluded from per-framework totals. Stylesheets are excluded from every framework on the same rule — Vaadin 0, Thymeleaf 34, Wicket 75, Angular 137, ZK 315, React 575 lines — so that no total includes styling.
 
 | Framework | UI Lines | Backend Lines | Total | JS Written |
 |---|---|---|---|---|
-| ZK | 937 (Java VM + ZUL) | — (shared) | 937 | 0 |
-| Vaadin | 1,064 (Java only) | — (shared*) | 1,064 | 0 |
-| Thymeleaf | 1,038 (HTML + Java) | — (shared) | 1,038 | 0 |
-| Wicket | 1,006 (Java + HTML) | — (shared) | 1,006 | 0 |
-| React | 730 (JSX) + 307 (Java API) | 307 | 1,037 | 730 |
-| Angular | 798 (TS) + 295 (Java API) | 295 | 1,093 | 798 |
+| Vaadin | 652 (Java only) | — (shared) | **652** | 0 |
+| ZK | 402 (Java ViewModel) + 377 (ZUL) | — (shared) | **779** | 0 |
+| Wicket | 612 (Java) + 319 (HTML) | — (shared) | **931** | 0 |
+| Thymeleaf | 353 (Java) + 651 (HTML) | — (shared) | **1,004** | 0 |
+| React | 730 (JSX) + 307 (Java API) | 307 | **1,037** | 730 |
+| Angular | 810 (TS) + 295 (Java API) | 295 | **1,105** | 810 |
 
-\*Vaadin required entity duplication due to Jakarta namespace incompatibility with the shared javax module.
+Two things have to be read alongside this table.
+
+**Vaadin is the smallest, and part of that comes from writing no stylesheet at all.** It composes its UI in Java with no template language and inherits Vaadin's Lumo theme, adding only six `getStyle()` chains. The other five hand-write the design in CSS. Vaadin's 652 lines are real, but they buy a themed look rather than the custom one the others build.
+
+**ZK pages in memory; the other five page on the server.** The user-facing behavior is identical — same pagination, same sorting — but the paging happens in a different place. The other five issue a bounded query per page turn, so their controllers hold page state and implement a sort callback. ZK loads the whole result set into a [`ListModelList`](https://docs.zkoss.org/zk_dev_ref/mvc/list_model) and lets the listbox page and sort it in memory, so its ViewModel needs neither. Part of that saving is the framework doing the work for you; part of it is an unbounded query and a model held per user session — free at 57 rows and idiomatic at that size, but a cost that grows with the dataset. This is a choice made for this application, not a framework limit: ZK supports server-side paging through a custom `ListModel`.
 
 ### Build times
 
-| Framework | Build Time | Notes |
-|---|---|---|
-| Thymeleaf | ~2.2s | Maven only |
-| Wicket | ~2.4s | Maven only |
-| ZK | ~2.6s | Maven + WAR packaging |
-| React | ~3.3s | Maven + Vite |
-| Vaadin | ~6.6s | Maven + Vaadin plugin (downloads Node) |
-| Angular | ~7.5s | Maven + ng build |
+Warm `mvn -o clean package -DskipTests -pl <module>`; each module built twice, the second run reported. Frontend builds were measured separately with a warm cache.
+
+| Framework | Maven | Frontend build | Full build |
+|---|---|---|---|
+| ZK | 1.71s | — | **1.71s** |
+| Thymeleaf | 2.36s | — | **2.36s** |
+| Wicket | 2.71s | — | **2.71s** |
+| React | 2.42s | 1.43s (Vite, 91 modules) | **3.85s** |
+| Vaadin | 5.80s | — (runs in-Maven) | **5.80s** |
+| Angular | 2.56s | 5.69s (`ng build`) | **8.25s** |
+
+ZK builds fastest of the six. Part of that advantage is dependency count: on CE there are five fewer jars to resolve and repackage than on EE. Vaadin's Maven plugin drives its frontend toolchain inside the Maven run, which is why its single figure is larger than the other server-side frameworks'. Both frontend builds are reproducible — re-running Vite and `ng build` produced byte-identical bundles with identical content hashes.
 
 ### Deployable artifact size
 
-| Framework | JAR Size | Frontend JS | Notes |
-|---|---|---|---|
-| React | 39 MB | 215 KB (72 KB gzip) | Smallest payload |
-| Thymeleaf | 40 MB | None | Server-rendered |
-| Wicket | 43 MB | None | Server-rendered |
-| ZK | 60 MB | 1,520 KB | ZK framework cached after first load |
-| Vaadin | 88 MB | 2,678 KB | Largest on both dimensions |
+| Framework | JAR Size | Frontend JS | Frontend CSS | Notes |
+|---|---|---|---|---|
+| React | 46.7 MB | 214.6 KB (72.2 KB gzip) | 6.9 KB | Smallest artifact |
+| Angular | 46.8 MB | 309.3 KB (83.2 KB gzip) | 6.6 KB | |
+| Thymeleaf | 48.2 MB | 78.8 KB (Bootstrap, CDN) | 323.4 KB (CDN) | Server-rendered, but the CDN adds 402 KB to first load |
+| Wicket | 50.7 MB | 0 | 0 (inline) | Links nothing at all |
+| ZK | 62.4 MB | 1,337.3 KB | 382.2 KB | Framework payload cached after first load |
+| Vaadin | 88.5 MB | 2,816.9 KB | 0 (in JS) | Largest on both dimensions |
 
-### Server response times (warm, localhost, avg of requests 2–5)
+Sizes in KB = 1,024 bytes as measured over HTTP; build tools report decimal kB, so Vite's "219.71 kB" is the same file this table calls 214.6 KB.
 
-| Framework | Endpoint | Avg Response |
+The ZK row is **ZK CE** (`zul`), which is all this application needs — it uses no EE component. Building it against `zkmax` instead pulls in five more jars and gives a 68.7 MB artifact with 1,520 KB of first-load JavaScript and 543 KB of CSS. ZK's 382 KB of CSS is mostly framework theme, not the application's own 315-line stylesheet.
+
+### Time until rows appear on screen
+
+Earlier revisions of this chapter reported server-side request timings. That metric has been retired: it compared unlike things — a REST endpoint returning JSON against a framework rendering a complete page — and it could not measure Vaadin at all. It is replaced by what the user actually waits for.
+
+**The metric is the time until the user sees rows**, measured in a real browser with Playwright 1.62.1 and headless Chromium. The milestone is identical for all six applications: 15 distinct employee e-mail addresses present in the document, caught by a `MutationObserver`, then one `requestAnimationFrame` for the paint. Every application renders an e-mail column, so this counts data rows without depending on any framework's markup — ZK's `tr.z-listitem`, Vaadin's shadow-DOM grid rows and four plain `<tbody>` tables are all counted by one rule. No landing page contains an e-mail address, so the milestone cannot fire early.
+
+Two scenarios were timed. A **warm click** starts when the click lands in an already-open application with its asset cache primed. A **cold visit** starts at navigation start in a fresh browser context with an empty cache. Both use absolute epoch times rather than per-document clocks, so a click that triggers a full-page navigation — Thymeleaf and Wicket — is still measured across the document boundary.
+
+| Framework | Warm click | Cold visit |
 |---|---|---|
-| Vaadin | GET /employees | ~5–8 ms |
-| Thymeleaf | GET /employees | ~7–9 ms |
-| React | GET /api/employees | ~5–10 ms |
-| Angular | GET /api/employees | ~6–14 ms |
-| ZK | GET /index.zul | ~11–13 ms |
-| Wicket | GET /employees | ~14–24 ms |
+| Thymeleaf | **22.7 ms** | 67.7 ms |
+| Wicket | 39.4 ms | 72.5 ms |
+| Angular | 39.6 ms | 63.4 ms |
+| React | 52.5 ms | **38.5 ms** |
+| ZK | ~93 ms | 99.9 ms † |
+| Vaadin | 201.0 ms | 663.8 ms |
+
+† ZK's cold visit loads `/employee-list.zul`, a bare fragment with no header or sidebar. It is **not** comparable to the other five, which load their full shell. ZK's shell load to a clickable navigation control was measured separately at 153.9 ms.
+
+**What this data supports.** ZK puts rows on screen more than twice as fast as Vaadin — 93 ms against 201 ms on a warm click, and Vaadin is the slowest of the six on both scenarios. Against the other four, ZK loses: it finishes fifth of six on the warm click, ahead only of Vaadin. Thymeleaf reaches rows in roughly a quarter of ZK's time because its client does almost nothing once the HTML arrives, where ZK's browser has to execute script, build widgets, lay them out and paint.
+
+**Caveats that travel with these numbers.**
+
+- **n=3, preliminary.** Three timed iterations per application after a discarded warm-up, mean reported, fresh browser context per iteration. Run-to-run spread on the same application reached about 20%. ZK's warm click is 108.9 ms over 3 iterations and 90.4 ms over 20, which is why 93 ms is the figure used.
+- **Loopback only.** The cold-visit column does not charge ZK's 1.7 MB or Vaadin's 2.8 MB of framework JavaScript a realistic transfer cost, so it flatters both.
+- **C1-only JIT.** Every application was started the documented way, `mvn spring-boot:run`, which forks the JVM with `-XX:TieredStopAtLevel=1`. C2 never engages, so no application here reaches peak JIT performance. This is uniform across the six, so the comparisons stand, but every absolute millisecond is pessimistic against a production `java -jar` launch.
 
 ### Architecture complexity
 
@@ -234,8 +265,8 @@ Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf,
 
 | Framework | Built-in Module | Coverage | Manual Effort | Overall Effort |
 |---|---|---|---|---|
-| Vaadin | ✅ Core (always on) | Very strong — WCAG Compatible | Moderate | Low |
-| ZK | ✅ za11y.jar | Very Strong — WCAG Compatible | Moderate | Low–Medium |
+| Vaadin | ✅ Core (always on) | Very strong — standard components WCAG 2.1 AA | Moderate | Low |
+| ZK | ✅ za11y.jar | Strong | Moderate | Low–Medium |
 | Angular | ✅ @angular/cdk/a11y | Moderate | Moderate | Medium |
 | React | ⚠️ Third-party only | Library-dependent | Moderate–Extensive | Medium–Very High |
 | Wicket | ❌ None | Weak | Extensive | High |
@@ -243,7 +274,7 @@ Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf,
 
 ### Framework-level accessibility detail
 
-**Vaadin** — Accessibility is built into every component. No separate configuration required. Remaining manual work is limited to application-level semantics (page landmarks, form labels where context is custom).
+**Vaadin** — Accessibility is built into every component, not a separate jar. Standard components are WCAG 2.1 AA compliant and audited annually by TetraLogical. No separate configuration is required. Remaining manual work is limited to application-level semantics (page landmarks, form labels where context is custom, contrast in Lumo overrides).
 
 **ZK** — Adding `za11y.jar` to the classpath retrofits WAI-ARIA roles, keyboard navigation, screen reader live regions, and high-contrast support across all ZK components. Some manual work required for application-specific patterns not covered by the module.
 
@@ -268,9 +299,9 @@ Two features were fully implemented in ZK and Vaadin. React, Angular, Thymeleaf,
 
 ### Notes on methodology
 
-All response times were measured warm — after one initial request to allow JVM JIT compilation and connection pool initialization. Response times represent the server processing time at localhost; network latency is excluded.
+Level 1 response times are browser measurements to a shared on-screen milestone, described in the Level 1 section above; they are n=3 and preliminary. Level 2 and Level 3 response times were measured warm — after one initial request to allow JVM JIT compilation and connection pool initialization — and represent server processing time at localhost, with network latency excluded.
 
-Line counts include all developer-written code in the application layer. Generated code, framework internals, and the shared backend module are excluded from per-framework totals.
+Line counts include all developer-written code in the application layer. Generated code, framework internals, stylesheets, build configuration, and the shared backend module are excluded from per-framework totals.
 
 For Level 2, JavaScript embedded inside Java string literals (as in Wicket's `renderHead` pattern) is counted as JavaScript written by the developer — it is application code, regardless of the surrounding language.
 

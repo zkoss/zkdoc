@@ -16,11 +16,11 @@ The key structural difference is how components are defined. Wicket co-locates J
 
 ## Level 1 comparison: Employee Manager
 
-Both frameworks completed the Employee Manager successfully with zero JavaScript. Wicket produced 1,006 lines of code across Java and HTML files — slightly more than ZK's 937, but in the same range.
+Both frameworks completed the Employee Manager successfully with zero JavaScript. Wicket produced 931 lines of code across Java and HTML files — more than ZK's 779, but in the same range. Some of that difference is structural: every Wicket page is a Java/HTML pair. Some of it is on ZK's side of the ledger — ZK pages the employee list in memory where Wicket pages on the server, so ZK's ViewModel holds no page state and needs no sort callback.
 
-The more meaningful difference was in response time. Wicket averaged 14–24ms for warm requests, compared to ZK's 11–13ms. Both are fast in absolute terms, but the gap is consistent.
+**Wicket reaches rows on screen faster, and it is much lighter on the wire.** Measured in a browser to the same milestone, Wicket paints 15 employee rows in 39.4 ms on a warm click against ZK's 93 ms (n=3, preliminary). Wicket's first load transfers 21 KB in total — it links no external JavaScript or CSS at all, keeping its styles in an inline `<style>` block — against ZK's 1.7 MB of framework payload, which is cached after the first visit. This is the honest shape of the trade. ZK's browser executes script, builds a widget tree, lays it out and paints it; that work is what pays for the component library and the data binding discussed below. Wicket's browser does almost none of that work, and Wicket gives the developer almost none of those components.
 
-Wicket's build time was fast at 2.4 seconds, comparable to Thymeleaf and slightly faster than ZK's 2.6 seconds.
+Where ZK wins on the mechanical metrics is build time: 1.71 seconds against Wicket's 2.71, the fastest of the six frameworks in this guide.
 
 ## Level 2 comparison: Advanced Components
 
@@ -54,4 +54,4 @@ Wicket suits your situation better if your team values its specific co-location 
 
 ## When ZK is the better choice
 
-ZK suits your situation better when complex enterprise components need to work natively without CDN assembly, when response time consistency matters, when real-time push or large-dataset virtual scrolling are requirements, or when the application will be maintained under an enterprise support contract. For most enterprise scenarios where both frameworks are candidates, ZK's richer component library and commercial backing are decisive advantages.
+ZK suits your situation better when complex enterprise components need to work natively without CDN assembly, when real-time push or large-dataset virtual scrolling are requirements, or when the application will be maintained under an enterprise support contract. For most enterprise scenarios where both frameworks are candidates, ZK's richer component library and commercial backing are decisive advantages.

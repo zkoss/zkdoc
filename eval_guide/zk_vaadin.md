@@ -18,15 +18,17 @@ ZK offers three approaches to UI composition. The most common is [ZUL](https://d
 
 ## Level 1 comparison: Employee Manager
 
-Both frameworks completed the Employee Manager with zero JavaScript. The differences were measurable but not large.
+Both frameworks completed the Employee Manager with zero JavaScript, on the same Spring Boot 3.3.4 backend module. The differences are measurable, and they do not all point the same way.
 
-Vaadin required 1,064 lines of code — more than ZK's 937 — partly because Vaadin's Java-only UI composition tends to be more verbose than ZK's ZUL templates for layout-heavy views.
+**Vaadin writes less code.** It needed 652 lines against ZK's 779 — ZK is 19% larger. Two things explain most of that gap. Vaadin composes its UI in Java with no template language, so there is no second file per view; and it writes no stylesheet at all, inheriting the Lumo theme where ZK hand-writes 315 lines of CSS to build a custom design. Vaadin's figure is genuinely smaller, and part of what it buys is a themed look rather than a designed one. ZK's figure carries a qualification of its own: it pages the employee list in memory, where the other frameworks in this guide page on the server, so its ViewModel holds no page state and needs no sort callback.
 
-Vaadin had the fastest warm response times in Level 1 (5–8ms), slightly faster than ZK (11–13ms). However, Vaadin also had the largest initial JavaScript payload at approximately 2.8 MB (versus ZK's approximately 1.5 MB), which affects first-load performance more than subsequent navigation.
+**ZK puts rows on screen more than twice as fast.** Measured in a real browser to an identical milestone — 15 employee rows painted — ZK reaches rows in about 93 ms on a warm click against Vaadin's 201 ms. On a cold visit with an empty cache the gap is wider still, 99.9 ms against 663.8 ms, though ZK's cold-visit page is a bare fragment without the application shell and so is not a like-for-like load; ZK's full shell took 153.9 ms separately. These figures are n=3 and preliminary. Vaadin is the slowest of the six frameworks in this guide on both scenarios, and ZK is second-slowest — this comparison favors ZK, but neither framework is fast against Thymeleaf's 22.7 ms.
 
-Vaadin's build time was the slowest of any Java framework at 6.6 seconds, driven by its build plugin downloading Node.js and running a frontend build step even for Java-only applications. ZK built in 2.6 seconds.
+Vaadin also ships the larger framework payload: approximately 2.8 MB of first-load JavaScript against ZK's 1.3 MB, and an 88.5 MB artifact against ZK's 62.4 MB. Both are cached after the first visit.
 
-One practical friction point worth noting: Vaadin 24 requires the Jakarta namespace and Spring Boot 3.x, which meant it could not participate in the shared Level 1 backend module (which used Spring Boot 2.7.7 with the javax namespace). Vaadin required entity duplication. This is a framework version requirement, not a fundamental limitation, but it affects teams with existing Spring Boot 2.x infrastructure.
+**ZK builds 3.4× faster** — 1.71 seconds against Vaadin's 5.80, the slowest Maven build of the six. Vaadin's plugin drives a frontend toolchain inside the Maven run even for a Java-only application.
+
+Worth stating plainly, because it affects licensing cost as much as performance: the ZK figures here are **ZK CE**, the free edition. This application uses no EE component. Building the same application against `zkmax` would raise the artifact to 68.7 MB and first-load JavaScript to 1,520 KB.
 
 ## Level 2 comparison: Advanced Components
 
@@ -70,4 +72,4 @@ Vaadin suits your situation better if your team has existing Vaadin experience a
 
 ## When ZK is the better choice
 
-ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZK's AI tooling — an [MCP documentation server](https://docs.zkoss.org/zk_dev_ref/zk_doc_mcp_server) for grounded answers and a [ZUL writer agent](https://docs.zkoss.org/zk_dev_ref/agent_skills) for code generation — fits your development workflow, when build speed matters (ZK at 2.6s versus Vaadin at 6.6s), or when compatibility with Spring Boot 2.x or the javax namespace is a current constraint.
+ZK suits your situation better when your application requires advanced enterprise components — such as calendars, org charts, pivot tables, and portal layouts — that you want all from a single vendor under a single support contract, when ZK's AI tooling — an [MCP documentation server](https://docs.zkoss.org/zk_dev_ref/zk_doc_mcp_server) for grounded answers and a [ZUL writer agent](https://docs.zkoss.org/zk_dev_ref/agent_skills) for code generation — fits your development workflow, when build speed matters (ZK at 1.71s versus Vaadin at 5.80s), when first-visit render latency matters (ZK reaches rows on screen more than twice as fast), or when a javax-namespace build is a current constraint — ZK ships one, and Vaadin 24 requires Jakarta and Spring Boot 3.x.

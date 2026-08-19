@@ -38,17 +38,25 @@ We evaluated WCAG 2 AA accessibility compliance separately, using the Level 1 ap
 
 ## How we measured
 
-For each application and each framework we measured: lines of code (UI and backend separately), number of files, JavaScript written by the developer, third-party libraries required, build time, deployable artifact size, and server response time under warm conditions.
+For each application and each framework we measured: lines of code (UI and backend separately), number of files, JavaScript written by the developer, third-party libraries required, build time, deployable artifact size, and the time until data rows appear on screen.
 
-All measurements were taken under consistent conditions: JDK 17, the same hardware, clean builds with tests skipped, response times averaged over requests 2–5 after one warm-up request.
+All measurements were taken under consistent conditions: Apple M1 Pro, macOS 15.7.3, Zulu JDK 17, Maven 3.9.1, offline builds with tests skipped. At Level 1 all six applications share one Spring Boot 3.3.4 backend module and render 15 rows per page.
+
+Response time is measured in a real browser rather than at the server, because a server figure compares unlike things — a REST endpoint returning JSON against a framework rendering a complete page — and cannot be taken for Vaadin at all. Using Playwright and headless Chromium, we time the moment 15 employee e-mail addresses are present in the document and painted. The milestone is identical for all six, in two scenarios: a warm click inside an already-open application, and a cold visit with an empty cache. These figures are n=3 and preliminary; the full method, the numbers and their caveats are in [Part 4-7](https://docs.zkoss.org/eval-guide/project-setup).
 
 ## Headline findings
 
 ### On the Employee Manager (Level 1):
 
-ZK produced the fewest lines of code of any framework — 937 total — while writing zero JavaScript. React and Angular required 1,037 and 1,093 lines respectively, including hundreds of lines of JavaScript or TypeScript plus a REST API layer not needed by the server-side frameworks.
+**The three server-driven Java frameworks write the least code, and Vaadin writes the least of all.** Vaadin needed 652 lines, ZK 779 and Wicket 931, against Thymeleaf's 1,004, React's 1,037 and Angular's 1,105. Vaadin's lead over ZK comes partly from composing its UI in Java with no template language, and partly from writing no stylesheet at all — it inherits the Lumo theme where the other five hand-write their design in CSS. ZK's figure carries its own qualification: it pages the employee list in memory while the other five page on the server, so its ViewModel holds no page state and needs no sort callback. The feature the user sees is the same; the work sits in a different place.
 
-Thymeleaf was the fastest to build and the lightest at runtime — no framework JavaScript reaches the browser, and build times are minimal. The trade-off is that the framework contributes nothing beyond templates: all interactive behavior is the developer's responsibility.
+**Where ZK's advantage is unqualified is what it does not require you to write.** Zero JavaScript, verified mechanically — no `.js` or `.ts` files and no inline `<script>` bodies — against React's 730 lines of JSX and Angular's 810 of TypeScript. And zero REST layer: React and Angular each needed one, 307 and 295 lines of controllers and DTOs that the server-driven frameworks did not write at all, because a ViewModel calls the Spring service directly.
+
+**ZK builds fastest of the six**, at 1.71s against Thymeleaf's 2.36s, Vaadin's 5.80s and Angular's 8.25s full build.
+
+Thymeleaf is the quickest to put rows on screen — 22.7 ms on a warm click, roughly a quarter of ZK's 93 ms — because its client does almost nothing once the HTML arrives. It is not, however, the lightest of the six on the wire — Wicket is, at 21 KB, because it links no external JavaScript or CSS at all. Nor is Thymeleaf's artifact the smallest, and "no framework JavaScript" understates its page: the Bootstrap CDN it links adds 402 KB to first load. The deeper trade-off is that the framework contributes nothing beyond templates — all interactive behavior is the developer's responsibility.
+
+**On render speed ZK finishes fifth of six**, ahead only of Vaadin, which it beats by more than 2× (93 ms against 201 ms). That gap is worth stating plainly in both directions: ZK's browser has to execute script, build widgets, lay them out and paint, which Thymeleaf and Wicket never do; and Vaadin does the same work more slowly.
 
 All six frameworks completed the Employee Manager successfully.
 

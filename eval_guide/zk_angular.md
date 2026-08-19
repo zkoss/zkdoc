@@ -16,9 +16,11 @@ ZK collapses this into two layers: a Java [ViewModel](https://docs.zkoss.org/zk_
 
 ## Level 1 comparison: Employee Manager
 
-Angular produced the most lines of code of any framework in our test — 1,093 total, with 798 lines of TypeScript. It also had the longest build time at 7.5 seconds (Maven plus ng build).
+Angular produced the most lines of code of any framework in our test — 1,105 total, with 810 lines of TypeScript. It also had the longest build time at 8.25 seconds (2.56s Maven plus 5.69s `ng build`).
 
-ZK produced 937 lines, zero JavaScript, and built in 2.6 seconds.
+ZK produced 779 lines, zero JavaScript, and built in 1.71 seconds — the fastest of the six.
+
+Angular is ahead on one measure: the time until rows appear on screen. Timed in a browser to the same milestone, Angular paints 15 employee rows in 39.6 ms on a warm click against ZK's 93 ms (n=3, preliminary), because once its bundle is loaded, rendering a list is a local operation. ZK's 779 lines and Angular's 1,105 buy that difference from opposite directions: Angular spends developer code to gain client-side rendering, ZK spends a round trip to avoid writing it.
 
 The qualitative difference is also meaningful. Angular's dependency injection system, module structure, decorators, and boilerplate have a steep initial learning curve. A developer new to Angular needs to understand not just how to write components, but how Angular's architecture works before producing working code. The payoff is a highly structured codebase that scales well across large teams — but the upfront investment is real.
 

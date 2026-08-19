@@ -16,9 +16,11 @@ ZK maintains server-side component state and communicates with the browser throu
 
 ## Level 1 comparison: Employee Manager
 
-Thymeleaf was the standout performer on the basic metrics. It had the fastest build time (2.2 seconds), the smallest deployable artifact (40 MB JAR, no framework JavaScript), and the fastest warm response times (7–9ms). For a content-display and form-submission application, Thymeleaf's stateless model is efficient and lightweight.
+Thymeleaf is the standout performer on runtime responsiveness. It puts rows on screen faster than any other framework in this guide — 22.7 ms on a warm click, roughly a quarter of ZK's 93 ms (n=3, preliminary) — because its client does almost nothing once the HTML arrives. For a content-display and form-submission application, Thymeleaf's stateless model is efficient and lightweight.
 
-Thymeleaf required 1,038 lines of code compared to ZK's 937, with the additional lines split between HTML templates and Java controllers. Both are reasonable for the feature set.
+Two of its other reputed advantages need qualifying. Its 48.2 MB artifact is not the smallest of the six — React's 46.7 MB is — and while Thymeleaf ships no framework JavaScript of its own, the Bootstrap CSS, icon CSS and JavaScript bundle it loads from a CDN add 402 KB to a 30 KB document, for 432 KB on first load. On build time it has been overtaken: 2.36 seconds against ZK's 1.71, the fastest of the six.
+
+Thymeleaf required 1,004 lines of code compared to ZK's 779, with the additional lines split between HTML templates and Java controllers. Both are reasonable for the feature set. Part of ZK's smaller figure comes from paging the employee list in memory where Thymeleaf pages on the server, so ZK's ViewModel holds no page state — the same list from the user's point of view, with the work in a different place.
 
 Where ZK showed an advantage was in component capability. ZK's [grid components](https://docs.zkoss.org/zk_component_ref/grid) handle sorting, filtering, and pagination as built-in behaviors. In Thymeleaf, these require either a server round-trip per interaction (which works, but is slower) or custom JavaScript (which adds complexity and moves the developer outside the Thymeleaf model).
 

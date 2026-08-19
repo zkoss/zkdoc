@@ -50,7 +50,7 @@ Angular is more opinionated and more structured. It makes more architectural dec
 
 **The honest costs:**
 
-- Initial page load carries more weight — ZK and Vaadin ship their framework JavaScript to the browser (~1.5 MB and ~2.8 MB respectively), though this is cached after the first visit
+- Initial page load carries more weight — ZK and Vaadin ship their framework JavaScript to the browser (~1.3 MB and ~2.8 MB respectively), though this is cached after the first visit
 - Customizing the visual appearance beyond the framework's built-in themes takes more effort than with modern frontend tooling
 - Smaller talent pools than React or Angular, though any capable Java developer can learn these frameworks
 - Server session state per user means the server carries more memory load as concurrency grows, and containerized deployments require sticky session configuration to route each user back to the same instance. This is well-supported by standard load balancers and Kubernetes ingress controllers, but it is a configuration step that stateless architectures do not require. ZK 10 stateless components, Vaadin Hilla, and Wicket's stateless mode offer alternatives for teams where this constraint matters.

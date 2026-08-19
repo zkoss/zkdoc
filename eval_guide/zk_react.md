@@ -20,11 +20,13 @@ These are not just different implementation choices — they require different s
 
 On the basic Employee Manager, both frameworks completed all requirements successfully. The differences were measurable but not dramatic at this level.
 
-ZK produced 937 total lines of code — the fewest of any framework in our test — with zero JavaScript. The developer wrote Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) and [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) templates. No REST API layer was needed.
+ZK produced 779 total lines of code with zero JavaScript. The developer wrote Java [ViewModels](https://docs.zkoss.org/zk_mvvm_ref/viewmodel/viewmodel) and [ZUL](https://docs.zkoss.org/zk_dev_ref/ui_composing/zuml) templates. No REST API layer was needed.
 
 React required 1,037 lines total, of which 730 were JavaScript or JSX. It also required building a REST API layer on top of the shared backend service, adding coordination surface area that the server-side frameworks did not need.
 
-Build time was comparable once both pipelines are counted: ZK at 2.6 seconds, React at 3.3 seconds (Maven plus Vite). Response times were similar under warm conditions, with React's REST API responding in 5–10ms and ZK's full page render in 11–13ms.
+ZK built in 1.71 seconds, the fastest of the six frameworks in this guide, against React's 3.85 (2.42 Maven plus 1.43 Vite).
+
+On the time until rows appear on screen, React is ahead. Measured in a browser to the same milestone — 15 employee rows painted — React reaches rows in 52.5 ms on a warm click against ZK's 93 ms, roughly 1.8× faster, and on a cold visit with an empty cache React is the fastest of the six at 38.5 ms (n=3, preliminary). This is the expected shape of the architecture: once React's bundle is loaded, drawing a list is a local operation, where ZK's browser has to execute script, build widgets, lay them out and paint on each navigation. React's bundle is also far smaller — 215 KB against ZK's 1.3 MB of framework JavaScript.
 
 ## Level 2 comparison: Advanced Components
 

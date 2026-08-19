@@ -57,7 +57,7 @@ The areas that require the most attention:
 
 ### A concrete reference: simple CRUD app
 
-To make the translation concrete, equivalent implementations of the same employee management app were built — one in React + Spring Boot REST, one in ZK MVVM — sharing the same JPA/service layer with identical features. The React version totalled around 1,040 lines (730 JSX/JS + 307 REST controller Java). The ZK version totalled around 940 lines (470 ViewModel Java + 467 ZUL, zero JavaScript).
+To make the translation concrete, equivalent implementations of the same employee management app were built — one in React + Spring Boot REST, one in ZK MVVM — sharing the same JPA/service layer with identical features. The React version totalled 1,037 lines (730 JSX/JS + 307 REST controller Java). The ZK version totalled 779 lines (402 ViewModel Java + 377 ZUL, zero JavaScript).
 
 The table below shows how common React patterns mapped in that app:
 
