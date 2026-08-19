@@ -8,6 +8,8 @@ permalink: /eval-guide/project-setup
 
 This chapter documents the full setup, methodology, and raw measurements behind the comparisons throughout Part 4. It is the reference layer — the summaries in Part 4-1 through 4-6 draw from the data here.
 
+The source is public: the applications live in [zkoss-demo/web-ui-framework-comparison](https://github.com/zkoss-demo/web-ui-framework-comparison), Level 1 under `apps/`, Level 2 under `apps2/` and Level 3 under `apps3/`. The underlying measurement reports — including the exclusions, the raw per-iteration samples, and the caveats each figure carries — are in that repository's `doc/` directory: [measurement-report.md](https://github.com/zkoss-demo/web-ui-framework-comparison/blob/master/doc/measurement-report.md) for Level 1, with separate reports for Levels 2 and 3.
+
 ## Test environment — Level 1 (Employee Manager)
 
 Level 1 ran all six implementations on Spring Boot 3.3.4 with the Jakarta namespace, under a single multi-module Maven project. A shared Maven module — 7 files, 398 lines of entities, repositories, services, and seed data — provided the backend for every framework, including Vaadin. Each framework implementation is only the UI layer. Seed data was 8 departments and 57 employees, 4 of them inactive.

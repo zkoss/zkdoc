@@ -5,7 +5,7 @@ permalink: /eval-guide/note
 
 ## Note on methodology and scope
 
-This guide is based on hands-on implementation of comparable applications across multiple frameworks, supported by documentation review and tooling-assisted development.
+This guide is based on hands-on implementation of comparable applications across multiple frameworks, supported by documentation review and tooling-assisted development. The applications and the measurement reports derived from them are published at [zkoss-demo/web-ui-framework-comparison](https://github.com/zkoss-demo/web-ui-framework-comparison), so any figure quoted here can be traced to its source and re-measured. That repository is maintained by the ZK team: the numbers are reproducible and the method is disclosed, but they were not taken by a disinterested party, and the known asymmetries that flatter ZK are recorded there alongside the ones that do not.
 
 While we have made every effort to ensure accuracy and fairness, frameworks evolve rapidly and ecosystems vary widely. Some capabilities, particularly those available through third-party libraries, may not be fully represented.
 

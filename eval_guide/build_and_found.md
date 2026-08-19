@@ -8,6 +8,8 @@ permalink: /eval-guide/build-and-found
 
 Comparisons are only as credible as the work behind them. Rather than relying on documentation, benchmarks from other sources, or theoretical analysis, every comparison in Part 4 is based on applications that were actually built — the same requirements, implemented in each framework, measured under the same conditions.
 
+**Every application, and every measurement report behind them, is published at [zkoss-demo/web-ui-framework-comparison](https://github.com/zkoss-demo/web-ui-framework-comparison).** The apps are buildable and runnable, the measurement reports are in `doc/`, and any number quoted in Part 4 can be traced to the code it came from and re-measured. The repository is maintained by the ZK team, which is stated there as plainly as it is here — the method is disclosed so the figures can be checked, not because the source is disinterested.
+
 This chapter summarizes what we built, how we measured it, and what the headline findings were. The detailed measurements, project setup, and full data tables are in [Part 4-7: Project Setup and Detailed Measurements](https://docs.zkoss.org/eval-guide/project-setup).
 
 The frameworks covered are: ZK, Vaadin, React (with Spring Boot), Angular (with Spring Boot), Thymeleaf + Spring MVC, and Apache Wicket. These were chosen to represent the main categories of Java web UI development — server-driven Java frameworks, client-side SPA frameworks, and server-side templating — covering both the most commercially significant options and the most commonly used open-source alternatives.

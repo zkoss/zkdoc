@@ -10,7 +10,7 @@ Choosing a UI framework is one of those decisions that feels small at the time �
 
 The wrong choice doesn't break your project on day one. It slows you down gradually. New developers take longer to get productive. Simple features require workarounds.
 
-Most framework comparisons are written from the outside — theoretical benchmarks, popularity charts, and opinion pieces disconnected from real project experience. We took a different approach. We built the same applications across six solutions and documented what we found. The results are here.
+Most framework comparisons are written from the outside — theoretical benchmarks, popularity charts, and opinion pieces disconnected from real project experience. We took a different approach. We built the same applications across six solutions and documented what we found. The results are here, and the applications and measurement reports they come from are public at [zkoss-demo/web-ui-framework-comparison](https://github.com/zkoss-demo/web-ui-framework-comparison).
 
 ## What this guide covers
 
