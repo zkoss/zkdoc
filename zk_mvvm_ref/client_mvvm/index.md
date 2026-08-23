@@ -217,14 +217,11 @@ All those usages above are not support with client MVVM.
 ## Macro Component is not supported
 Macro Component is not supported in client MVVM. The reason is that the macro component contains custom server-side logic written in Java and cannot be executed on the client side.
 
-<!--
-## 3. Getter Method should be pure in View Model
+## Getter Method should be pure in View Model
 
 To send those data of the view model to the client side, client MVVM depends on the getter methods to retrieve data.
 
-For example, the return value of a getter method should not be always a
-"new" object.
--->
+For example, the return value of a getter method should not always be a "new" object.
 
 # Client MVVM Linter - a checking tool
 
