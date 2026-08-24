@@ -84,7 +84,7 @@ For demonstration purposes, we first use Google Stitch to generate UI mockups. W
 
 To explore more examples, check out the [Zul-writer Showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase) repository. It contains a collection of real-world UIs generated entirely by the skill, demonstrating how zul-writer handles complex layouts, nested components, and various ZK patterns.
  
-## App Tracker Dashboard
+## Bank Reconciliation Dashboard
 **Screenshot From Stitch**
 
 ![Bank Reconciliation Dashboard](/assets/images/small-talk/zul-writer/Bank Reconciliation Dashboard.png)
