@@ -221,7 +221,40 @@ Macro Component is not supported in client MVVM. The reason is that the macro co
 
 To send those data of the view model to the client side, client MVVM depends on the getter methods to retrieve data.
 
-For example, the return value of a getter method should not always be a "new" object.
+A getter must therefore be pure: its body should contain only a simple return
+statement, without any calculation or manipulation logic. Please ensure your
+getter returns a literal, an identifier (e.g. a field), or another getter's
+result directly. Notably, the return value of a getter method should not always
+be a "new" object.
+
+The [linter](#client-mvvm-linter---a-checking-tool) reports all of the following:
+
+```java
+// a new object on every call
+public List<Item> getItems() {
+    return new ArrayList<>(_items);
+}
+
+// a conditional expression
+public List<Item> getItems() {
+    return _items == null ? Collections.emptyList() : _items;
+}
+
+// a computed value
+public String getFullName() {
+    return _firstName + " " + _lastName;
+}
+
+// more than one statement in the body
+public List<Item> getItems() {
+    log.debug("getItems");
+    return _items;
+}
+```
+
+If a value has to be computed, compute it when the state changes (for example in
+a command method) and keep the result in a field, so that the getter can simply
+return that field.
 
 # Client MVVM Linter - a checking tool
 
