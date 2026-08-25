@@ -94,7 +94,8 @@ In `instant` mode, components from the included page are instantiated immediatel
 </window>
 ```
 
-**When to use it.** Instant mode is for splitting a page into reusable `.zul` fragments. It is the cheaper of the two modes — one request, one page, one component tree — and the included components become ordinary children, so they participate in the surrounding layout and event flow directly.
+### When to use it
+Instant mode is for splitting a page into reusable `.zul` fragments. It is the cheaper of the two modes — one request, one page, one component tree — and the included components become ordinary children, so they participate in the surrounding layout and event flow directly.
 
 **What it cannot do.** Because there is no second request, instant mode cannot:
 
@@ -106,7 +107,7 @@ Pass parameters with dynamic properties instead — see [DynamicProperty](#dynam
 
 The `include` component is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), so ID conflicts are avoided. To retrieve child components, use [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) or other path-based techniques.
 
-> **Note:** Instant mode was added in ZK 3.6.2, long before the [`<apply>`]({{site.baseurl}}/zk_mvvm_ref/syntax/apply) shadow element arrived in ZK 8. If all you need is to reuse a `.zul` fragment, `<apply templateURI="..."/>` is usually the more natural tool today; instant mode remains the right choice when you want the fragment to be an ID space of its own, or when you are already using `<include>` elsewhere on the page.
+**Note:** Instant mode was added in ZK 3.6.2, long before the [`<apply>`]({{site.baseurl}}/zk_mvvm_ref/syntax/apply) shadow element arrived in ZK 8. If all you need is to reuse a `.zul` fragment, `<apply templateURI="..."/>` is usually the more natural tool today; instant mode remains the right choice when you want the fragment to be an ID space of its own, or when you are already using `<include>` elsewhere on the page.
 
 ## Defer Mode
 
@@ -118,7 +119,8 @@ In `defer` mode, the included page is loaded through the servlet container's `Re
 </window>
 ```
 
-**When to use it.** Defer mode exists to embed things ZK does not render itself. Because the container performs a real dispatch, the included resource gets a full request lifecycle — the filter chain runs, the servlet's `service()` method is invoked, a JSP is compiled and executed — exactly as if the browser had requested that URL. Reach for it when:
+### When to use it
+Defer mode exists to embed things ZK does not render itself. Because the container performs a real dispatch, the included resource gets a full request lifecycle — the filter chain runs, the servlet's `service()` method is invoked, a JSP is compiled and executed — exactly as if the browser had requested that URL. Reach for it when:
 
 - **You are integrating a non-ZUML technology.** JSP, JSF, Struts, Spring MVC views, a reporting servlet, or any legacy URL that only produces markup when the container runs it. This is the case defer mode was built for, and instant mode cannot serve it at all.
 - **Parameters have to travel in the URL.** The query string written in `src` becomes real request parameters on the included request, readable with `${param.name}`, `Execution#getParameter`, or `ServletRequest#getParameter`. Instant mode discards them.
