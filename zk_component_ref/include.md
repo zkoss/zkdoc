@@ -68,13 +68,25 @@ Change `src` at runtime to replace the included content without reloading the wh
 </window>
 ```
 
-# Modes
+# Mode
 
 The `include` component supports two rendering modes: `instant` and `defer`. By default, the mode is `auto`, which automatically selects the appropriate mode based on the included resource. The included file should not contain an `<html>` tag.
 
+The two modes are not two ways of doing the same thing. They load the included resource through completely different machinery, which is what decides when each one applies:
+
+| What you are including | Mode |
+|---|---|
+| A `.zul` fragment you want composed into the current page | `instant` |
+| A JSP, a JSF page, a servlet, or any other URL that is not a ZUML page | `defer` |
+| A page that takes its parameters from a query string in `src` | `defer` |
+| A page loaded with `localized="true"` or `progressing="true"` | `defer` |
+
+A runnable comparison of both modes is available in
+[include-defer-mode.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/essential/include-defer-mode.zul).
+
 ## Instant Mode
 
-In `instant` mode, components from the included page are instantiated immediately during the current HTTP request and added as children of the `include` component. No separate `Page` object is created. This mode works well for lightweight `.zul` files included on the same page, but does not support query strings or locale-sensitive loading.
+In `instant` mode, components from the included page are instantiated immediately during the current HTTP request and added as children of the `include` component. No separate `Page` object is created, and no second request is made — ZK parses the ZUML page definition and composes it into the component tree it is already building.
 
 ```xml
 <window title="demo" border="normal">
@@ -82,11 +94,23 @@ In `instant` mode, components from the included page are instantiated immediatel
 </window>
 ```
 
+**When to use it.** Instant mode is for splitting a page into reusable `.zul` fragments. It is the cheaper of the two modes — one request, one page, one component tree — and the included components become ordinary children, so they participate in the surrounding layout and event flow directly.
+
+**What it cannot do.** Because there is no second request, instant mode cannot:
+
+- honour a query string in `src` — it is stripped, and ZK logs *"Query string is not allowed in instant mode"*;
+- render anything the servlet container has to execute (JSP, JSF, a servlet);
+- be combined with `localized="true"` or `progressing="true"`, which both throw an `UnsupportedOperationException`.
+
+Pass parameters with dynamic properties instead — see [DynamicProperty](#dynamicproperty).
+
 The `include` component is an [ID space owner]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space), so ID conflicts are avoided. To retrieve child components, use [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) or other path-based techniques.
+
+> **Note:** Instant mode was added in ZK 3.6.2, long before the [`<apply>`]({{site.baseurl}}/zk_mvvm_ref/syntax/apply) shadow element arrived in ZK 8. If all you need is to reuse a `.zul` fragment, `<apply templateURI="..."/>` is usually the more natural tool today; instant mode remains the right choice when you want the fragment to be an ID space of its own, or when you are already using `<include>` elsewhere on the page.
 
 ## Defer Mode
 
-In `defer` mode, the included page is loaded through the servlet container's `RequestDispatcher.include()` method after the current page is rendered. A separate `Page` object is created to hold the included content. This mode supports any servlet output (JSP, HTML, JSF, etc.) and is compatible with query strings, locale-sensitive loading, and the progressing indicator.
+In `defer` mode, the included page is loaded through the servlet container's `RequestDispatcher.include()` method after the current page is rendered. A separate `Page` object is created to hold the included content when the target turns out to be a ZUML page.
 
 ```xml
 <window title="demo" border="normal">
@@ -94,15 +118,25 @@ In `defer` mode, the included page is loaded through the servlet container's `Re
 </window>
 ```
 
+**When to use it.** Defer mode exists to embed things ZK does not render itself. Because the container performs a real dispatch, the included resource gets a full request lifecycle — the filter chain runs, the servlet's `service()` method is invoked, a JSP is compiled and executed — exactly as if the browser had requested that URL. Reach for it when:
+
+- **You are integrating a non-ZUML technology.** JSP, JSF, Struts, Spring MVC views, a reporting servlet, or any legacy URL that only produces markup when the container runs it. This is the case defer mode was built for, and instant mode cannot serve it at all.
+- **Parameters have to travel in the URL.** The query string written in `src` becomes real request parameters on the included request, readable with `${param.name}`, `Execution#getParameter`, or `ServletRequest#getParameter`. Instant mode discards them.
+- **The content depends on the user's locale** (`localized="true"`) or **takes long enough to need a busy indicator** (`progressing="true"`).
+- **You want the included page isolated.** A ZUML target rendered in defer mode lives in its own `Page` object rather than as children of the `include`, which keeps its components out of the host page's tree.
+
+Note that a dispatched fragment must not emit `<html>` or `<!DOCTYPE>`; ZK rejects that with a `UiException`.
+
 Defer mode components are only accessible after the page is rendered, typically in event listeners responding to user interactions.
 
 ## Auto Mode (Default)
 
-The `auto` mode automatically selects between `instant` and `defer` based on the included resource. For `.zul`, `.zhtml`, `.html`, and `.xhtml` files without a query string, `instant` mode is used. If a query string is present or for other file types, `defer` mode is used.
+The `auto` mode automatically selects between `instant` and `defer` based on the included resource. Instant mode is chosen only when `src` has no query string **and** its extension belongs to a registered ZUML language — `.zul` and `.xul` (`xul/html`), or `.zhtml`, `.htm`, `.html` and `.xhtml` (`xhtml`). Anything else, including an unrecognised or missing extension, falls back to `defer`. Setting `localized` or `progressing` to `true` also forces `defer`.
 
 ```xml
 <include src="header.zul" />            <!-- instant mode (no query string) -->
 <include src="header.zul?test=5" />     <!-- defer mode (query string present) -->
+<include src="/sales-report" />         <!-- defer mode (not a ZUML extension) -->
 ```
 
 ## Backward Compatibility
@@ -211,9 +245,9 @@ Controls how the included page is rendered into the component tree. Accepted val
 
 | Value | Meaning |
 |---|---|
-| `auto` | ZK selects `instant` for `.zul`/`.xhtml` sources without a query string, and `defer` otherwise. |
-| `instant` | The included page is composed as a child component in the same HTTP request. Not compatible with `localized="true"` or `progressing="true"`. |
-| `defer` | The included page is rendered as a separate page object and loaded after the main page. Compatible with `localized` and `progressing`. |
+| `auto` | ZK selects `instant` for sources with a ZUML extension (`.zul`, `.xul`, `.zhtml`, `.htm`, `.html`, `.xhtml`) and no query string, and `defer` otherwise. |
+| `instant` | The included page is composed as a child component in the same HTTP request. Not compatible with `localized="true"` or `progressing="true"`, and query strings are ignored. |
+| `defer` | The included page is dispatched through `RequestDispatcher.include()` and loaded after the main page, so any servlet output works. Compatible with `localized` and `progressing`. |
 
 The behaviour prior to ZK 3.6.2 matches `defer`.
 
