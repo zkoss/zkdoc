@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="430" viewBox="0 0 1040 430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F1F"/>
+      <stop offset="1" stop-color="#111C36"/>
+    </linearGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#7FA8FF" opacity="0.07"/>
+    </pattern>
+    <marker id="ac" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#35D6F0"/>
+    </marker>
+    <marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#F5B841"/>
+    </marker>
+  </defs>
+
+  <rect width="1040" height="430" fill="url(#bg)"/>
+  <rect width="1040" height="430" fill="url(#dots)"/>
+
+  <!-- ===== masthead ===== -->
+  <text x="40" y="50" font-family="Menlo, monospace" font-size="14" letter-spacing="2.5" fill="#35D6F0">ZUL-WRITER 2.0</text>
+  <text x="40" y="84" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="25" font-weight="600" fill="#EAF0FB">Step 5 closes the loop</text>
+
+  <line x1="40" y1="98" x2="1000" y2="98" stroke="#22304F" stroke-width="1"/>
+
+  <!-- ===== forward path (cyan): the five steps, in their own order ===== -->
+  <!-- step 1 -->
+  <rect x="40" y="116" width="152" height="108" rx="12" fill="#16203A" stroke="#2C3A5E" stroke-width="1.5"/>
+  <text x="58" y="142" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#8FA0C4">STEP 1</text>
+  <text x="58" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Clarify</text>
+  <text x="58" y="198" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">requirements</text>
+
+  <!-- step 2 -->
+  <rect x="242" y="116" width="152" height="108" rx="12" fill="#16203A" stroke="#2C3A5E" stroke-width="1.5"/>
+  <text x="260" y="142" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#8FA0C4">STEP 2</text>
+  <text x="260" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Generate</text>
+  <text x="260" y="198" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">the ZUL</text>
+
+  <!-- step 3 -->
+  <rect x="444" y="116" width="152" height="108" rx="12" fill="#16203A" stroke="#2C3A5E" stroke-width="1.5"/>
+  <text x="462" y="142" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#8FA0C4">STEP 3</text>
+  <text x="462" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Validate</text>
+  <text x="462" y="198" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#8FA0C4">5 layers</text>
+
+  <!-- step 4 -->
+  <rect x="646" y="116" width="152" height="108" rx="12" fill="#16203A" stroke="#2C3A5E" stroke-width="1.5"/>
+  <text x="664" y="142" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#8FA0C4">STEP 4</text>
+  <text x="664" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Generate</text>
+  <text x="664" y="198" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">controller</text>
+
+  <!-- step 5 (hero) -->
+  <rect x="842" y="110" width="164" height="120" rx="14" fill="#0E2740" opacity="0.55"/>
+  <rect x="848" y="116" width="152" height="108" rx="12" fill="#16263F" stroke="#35D6F0" stroke-width="2"/>
+  <text x="866" y="142" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#35D6F0">STEP 5</text>
+  <rect x="940" y="127" width="42" height="20" rx="10" fill="#35D6F0"/>
+  <text x="948" y="141" font-family="Menlo, monospace" font-size="12" letter-spacing="0.5" font-weight="700" fill="#0A0F1F">NEW</text>
+  <text x="866" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Render in a</text>
+  <text x="866" y="198" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">real browser</text>
+
+  <!-- forward arrows -->
+  <line x1="194" y1="170" x2="236" y2="170" stroke="#35D6F0" stroke-width="2" marker-end="url(#ac)"/>
+  <line x1="396" y1="170" x2="438" y2="170" stroke="#35D6F0" stroke-width="2" marker-end="url(#ac)"/>
+  <line x1="598" y1="170" x2="640" y2="170" stroke="#35D6F0" stroke-width="2" marker-end="url(#ac)"/>
+  <line x1="800" y1="170" x2="842" y2="170" stroke="#35D6F0" stroke-width="2" marker-end="url(#ac)"/>
+
+  <!-- ===== the agent reads the render ===== -->
+  <line x1="924" y1="226" x2="924" y2="276" stroke="#35D6F0" stroke-width="2" marker-end="url(#ac)"/>
+
+  <rect x="740" y="282" width="260" height="104" rx="12" fill="#16203A" stroke="#2C3A5E" stroke-width="1.5"/>
+  <text x="762" y="308" font-family="Menlo, monospace" font-size="13" letter-spacing="1.6" fill="#F5B841">THE AGENT</text>
+  <text x="762" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">Reads the image</text>
+  <text x="762" y="362" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="600" fill="#EAF0FB">and the numbers</text>
+
+  <!-- ===== feedback path (amber): back to step 2, then forward through 3 again ===== -->
+  <path d="M 732 334 L 318 334 L 318 230" fill="none" stroke="#F5B841" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#aa)"/>
+
+  <rect x="390" y="296" width="300" height="76" rx="10" fill="#111C36" stroke="#F5B841" stroke-width="1.5"/>
+  <text x="410" y="319" font-family="Menlo, monospace" font-size="12" letter-spacing="1.6" fill="#F5B841">WHAT COMES BACK</text>
+  <text x="410" y="342" font-family="Menlo, monospace" font-size="14" fill="#EAF0FB">clipped text · empty icon</text>
+  <text x="410" y="362" font-family="Menlo, monospace" font-size="14" fill="#EAF0FB">missing region · overflow</text>
+
+  <!-- ===== the payoff, sitting where the loop lands ===== -->
+  <rect x="40" y="300" width="3" height="72" rx="1.5" fill="#F5B841" opacity="0.8"/>
+  <text x="58" y="316" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#A9B8D6">The agent fixes its own</text>
+  <text x="58" y="340" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#A9B8D6">markup and renders again —</text>
+  <text x="58" y="364" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#A9B8D6">before you ever open the file.</text>
+</svg>
