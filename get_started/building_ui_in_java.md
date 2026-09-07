@@ -1,8 +1,17 @@
+---
+title: "Build UI in Java"
+description: "Compose a ZK page entirely in Java, Swing style, with a Richlet or with a Composer behind a minimal ZUL entry point."
+---
+
 # Build UI in Java
 
 If you come from Java Swing, you are used to constructing a UI entirely in Java — creating a `JFrame`, attaching child widgets, and wiring listeners without touching any markup. ZK supports the same style. You can build a full ZK page as a Java object tree, with no ZUL file required (or only a minimal one as an entry point).
 
 ZK offers two approaches for Java-first UI composition.
+
+> **You need a running ZK project to try these.** Follow
+> [Quick Start]({{site.baseurl}}/zk_installation_guide/quick_start), or clone the
+> [example project](https://github.com/zkoss-demo/gettingStarted) and run `./mvnw jetty:run`.
 
 # Approach 1: Richlet
 
@@ -69,3 +78,16 @@ For a deeper comparison of the two styles and the hybrid pattern, see [ZUL vs. J
 | ZUL files needed | None | One minimal file per page |
 | URL routing | Configured manually in `zk.xml` | Handled by ZK's normal page mapping |
 | Best for | Standalone Java-first apps | Adding Java-built screens to an existing ZK project |
+
+# Next Steps
+
+- **Get the full Richlet API** — [Richlet]({{site.baseurl}}/zk_dev_ref/ui_composing/richlet)
+  covers URL mapping, the page lifecycle, and `zk.xml` configuration
+- **See where each style pays off** — [ZUL vs. Java API]({{site.baseurl}}/zk_dev_ref/ui_composing/zul_vs_java)
+  compares the two and describes the hybrid pattern
+- **Compare with the markup approach** — [Get ZK Up and Running with MVC]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc)
+  builds the same kind of screen from a ZUL page, so you can judge which you prefer
+- **Let AI write the boilerplate** — [Write Your First ZUL UI with AI]({{site.baseurl}}/get_started/getting_started_with_zul_writer);
+  ask `zul-writer` for a minimal ZUL root and build the rest in the Composer
+- **Go one step further** — [Building Cloud-Native Applications]({{site.baseurl}}/get_started/building_cloud_native_applications)
+  describes ZK's stateless component model, which is Java-only by design

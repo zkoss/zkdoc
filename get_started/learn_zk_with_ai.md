@@ -1,3 +1,14 @@
+---
+title: "[DRAFT — NOT PUBLISHED] Learn ZK with AI"
+description: "An AI-powered ZK learning companion built on Google NotebookLM, pre-loaded with ZK documentation, videos, and code examples."
+published: false
+# Held back from the site on purpose. Before publishing:
+#   1. Correct the video list in the NotebookLM notebook (some entries are wrong/outdated).
+#   2. Re-check the public notebook link and its pre-generated materials.
+#   3. Add an entry under `get_started:` in _data/navigation.yml.
+# See tasks/get_started_beginner_path_audit.md (D2).
+---
+
 # Learn ZK with AI: Your Interactive Learning Companion
 
 Learning a new framework can feel overwhelming. Documentation is extensive, examples are scattered, and finding the right answer often requires jumping between multiple sources. What if you could simply *ask* a knowledgeable guide and get instant, contextual answers?

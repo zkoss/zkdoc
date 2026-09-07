@@ -1,8 +1,13 @@
+---
+title: "Write Your First ZUL UI with AI"
+description: "Describe a UI in plain English and let the zul-writer Agent skill generate the ZUL markup and a matching Java controller for your ZK project."
+---
+
 # Write Your First ZUL UI with AI
 
 Building a ZK UI for the first time means learning ZUL syntax, component names, and layout patterns all at once. The `zul-writer` Agent skill removes that barrier: describe what you want in plain English and get working ZUL markup instantly.
 
-The `zul-writer` skill works with any AI coding agent — Claude Code, GitHub Copilot, Cursor, or any other tool that supports agent skills.
+The `zul-writer` skill works with any AI coding agent that supports Agent Skills, including Claude Code, Codex CLI, and Gemini CLI.
 
 # What Is the zul-writer Skill?
 
@@ -18,23 +23,37 @@ What it does not do:
 
 # Before You Start
 
-You need two things before using the skill:
+You need three things before using the skill:
 
-1. **A ZK project** — Follow the [Quick Start guide]({{site.baseurl}}/zk_installation_guide/quick_start) to create a ZK Maven project.
-2. **The zul-writer skill installed** — See [Agent Skills]({{site.baseurl}}/zk_dev_ref/agent_skills) for installation instructions. The skill works with Claude Code and other AI coding agents.
+1. **A ZK project** — follow the [Quick Start guide]({{site.baseurl}}/zk_installation_guide/quick_start) to create a ZK Maven project.
+2. **An AI coding agent** — Claude Code, Codex CLI, Gemini CLI, or any other agent that supports Agent Skills. You also need Node.js and npm, because the installer runs through `npx`.
+3. **The zul-writer skill** — run this in a terminal and follow the prompts:
+
+   ```bash
+   npx skills add zkoss-demo/agent-skill
+   ```
+
+   Choose the symlink option when asked: one copy of the skill then serves every agent you have installed, and updating it later is a single command.
+
+For what the skill can do beyond this page, see [Agent Skills]({{site.baseurl}}/zk_dev_ref/agent_skills).
 
 # Your First ZUL File: A Login Form
 
 We recommend starting with the MVC pattern. The Java controller it produces is simpler to read and extend than MVVM for a first project.
 
-**Step 1.** Open a terminal inside your ZK Maven project.
+**Step 1.** Open a terminal inside your ZK Maven project and start your AI coding agent there.
 
-**Step 2.** Invoke the `zul-writer` skill with a plain-English description:
+**Step 2.** Ask the agent to use the skill. In Claude Code, type `/zul-writer` and then describe
+the UI; in other agents, name the skill in your prompt:
 
 ```
+Use the zul-writer skill.
 Create a login form using the MVC pattern.
 Include a username field, a password field, and a Login button.
 ```
+
+The skill asks a few questions first — your ZK version, and whether you want MVC or MVVM — so
+answer those and let it continue.
 
 **Step 3.** The skill generates a `.zul` file. A typical result looks like this:
 
@@ -62,7 +81,15 @@ Include a username field, a password field, and a Login button.
 </window>
 ```
 
-That is all you need to do. Open the file in your editor and it is ready to run.
+**Step 4.** Run it. Save the file under your web content folder — `src/main/webapp/login.zul`
+in a standard Maven layout — then start the server and open the page:
+
+```bash
+./mvnw jetty:run
+```
+
+The page is now at <http://localhost:8080/login.zul>. The Login button does nothing yet; the
+skill also generates a `LoginController` skeleton for you to fill in.
 
 # Understanding the Generated Code
 
@@ -116,3 +143,5 @@ Here are example prompts for common UI patterns:
 - **Learn ZUL syntax** — [ZUML Reference]({{site.baseurl}}/zuml_ref) covers attributes, expressions, and includes
 - **Add controller logic** — [Get ZK Up and Running with MVC]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc) walks through writing the Java side
 - **Try the MVVM pattern** — [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm) shows a data-binding approach
+- **Build the UI in Java instead** — [Build UI in Java]({{site.baseurl}}/get_started/building_ui_in_java); ask `zul-writer` for a minimal ZUL root and write the rest in the Composer
+- **Preview ZUL without deploying** — the [ZK IntelliJ IDEA Plugin]({{site.baseurl}}/zk_dev_ref/zkidea) renders a generated `.zul` in a split pane every time you save

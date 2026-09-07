@@ -1,3 +1,8 @@
+---
+title: "Get ZK Up and Running with MVVM"
+description: "Build a car catalog application with ZK's MVVM pattern: expose state from a POJO ViewModel and bind it to components with @init, @load, @save, and @command."
+---
+
 # Introduction
 
 This tutorial is intended for software developers who have experience in
@@ -78,6 +83,12 @@ JavaBean's properties through setter and getter methods. The search
 method implements search logic with service class and updates the
 property "carList".
 
+For `carList` we use
+[ListModelList]({{site.baseurl}}/zk_dev_ref/mvc/list_model), ZK's own list
+implementation, instead of a plain `ArrayList`. A `ListModelList` reports its own changes to
+whichever component is displaying it, so the *listbox* refreshes itself whenever we add or
+remove cars. The next section shows what that saves us.
+
 **SearchViewModel.java**
 
 ```java
@@ -85,20 +96,28 @@ package tutorial;
 
 import java.util.List;
 import org.zkoss.bind.annotation.*;
+import org.zkoss.zul.ListModelList;
 
 public class SearchViewModel {
 
     private String keyword;
-    private List<Car> carList;
+    private List<Car> carList = new ListModelList<Car>();
     private Car selectedCar;
-    
+
+    private CarService carService = new CarServiceImpl();
+
     //omit getter and setter
 
     public void search(){
-        carList = carService.search(keyword);
+        carList.clear();
+        carList.addAll(carService.search(keyword));
     }
 }
 ```
+
+- We **mutate** the existing list rather than replacing it with
+  `carList = carService.search(keyword)`. Assigning a new list would throw away the
+  `ListModelList` that the *listbox* is watching.
 
 **Annotation**
 
@@ -111,10 +130,6 @@ with **default command name**, search, which is the same as method name.
 The command name is used in the data-binding expression we'll talk about
 in the next section.
 
-In `search()`, we change a ViewModel's property: `carList`. Thus, we
-should tell ZK this change with `@NotifyChange` so that ZK can reload
-the changed property for us after it invokes this method.
-
 For the "search" command, it looks like this:
 
 **SearchViewModel.java**
@@ -124,18 +139,41 @@ package tutorial;
 
 import java.util.List;
 import org.zkoss.bind.annotation.*;
+import org.zkoss.zul.ListModelList;
 
 public class SearchViewModel {
 
     //omit other codes
 
     @Command
-    @NotifyChange("carList")
     public void search(){
-        carList = carService.search(keyword);
+        carList.clear();
+        carList.addAll(carService.search(keyword));
     }
 }
 ```
+
+- The `@Command` for MVVM is **`org.zkoss.bind.annotation.Command`**. ZK has an unrelated
+  annotation with the same simple name, `org.zkoss.zk.ui.annotation.Command`, that belongs to
+  the MVC composer, so pick the `org.zkoss.bind` one when your IDE offers the import.
+- There is **no `@NotifyChange` here**, and that is the point of using a `ListModelList`: the
+  list tells the *listbox* about its own changes, so nothing has to tell the binder to reload
+  it.
+
+For a plain property — one that is not a ZK model — the ViewModel does have to announce a
+change, and it does so with `@NotifyChange`:
+
+```java
+    @Command
+    @NotifyChange("keyword")
+    public void clear(){
+        keyword = "";
+    }
+```
+
+`@NotifyChange` is the general mechanism and you will use it constantly in real ViewModels;
+see [Notification]({{site.baseurl}}/zk_mvvm_ref/viewmodel/notification) for the full
+picture. Our search function simply does not need it.
 
 For complete source code, please refer to
 [Github](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/java/tutorial/SearchViewModel.java)
@@ -204,18 +242,23 @@ input into the ViewModel at the proper moment. Second, we want to assign
 the *Listbox* 's data with ViewModel's `carList`, so we should bind its
 "model" attribute to `vm.carList`.
 
-**Extracted from searchMvvm.zul**
+**Extracted from [searchMvvm.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)**
 
 ```xml
-
-        <hbox>
-            Keyword:
-            <textbox value="@save(vm.keyword)" />
-            <button label="Search" image="/img/search.png"/>
-        </hbox>
-        <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result">
-        <!-- omit other tags -->
+    Keyword:
+    <textbox value="@save(vm.keyword)" />
+    <button label="Search" iconSclass="z-icon-search" style="margin: 0 0 5px 5px"/>
+    <listbox model="@init(vm.carList)" rows="5" emptyMessage="No car found in the result">
+    <!-- omit other tags -->
 ```
+
+- The *listbox* uses **`@init`**, not `@load`. `@init` evaluates the expression once, when the
+  page is created, and hands the *listbox* the `ListModelList` object itself. From then on the
+  model keeps the *listbox* up to date directly, so there is nothing for the binder to reload.
+  Use `@load` when the property is a plain value that the ViewModel replaces — see
+  [Property Binding]({{site.baseurl}}/zk_mvvm_ref/data_binding/property_binding).
+- `iconSclass="z-icon-search"` uses ZK's built-in Font Awesome icons, so the button needs no
+  image file of its own.
 
 ### Invoke a Method of a ViewModel
 
@@ -231,21 +274,20 @@ syntax:
 - We should look for command name specified in our ViewModel's command
   method.
 
-**Extracted from searchMvvm.zul**
+**Extracted from [searchMvvm.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)**
 
 ```xml
-        <hbox>
-            Keyword:
-            <textbox value="@save(vm.keyword)" />
-            <button label="Search" image="/img/search.png" onClick="@command('search')" />
-        </hbox>
-        <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result">
-        <!-- omit other tags -->
+    Keyword:
+    <textbox value="@save(vm.keyword)" />
+    <button label="Search" iconSclass="z-icon-search" onClick="@command('search')"
+            style="margin: 0 0 5px 5px"/>
+    <listbox model="@init(vm.carList)" rows="5" emptyMessage="No car found in the result">
+    <!-- omit other tags -->
 ```
 
-After binding this "onClick" event, when a user clicks "Search" button,
-ZK will invoke `search()` and reload the property "carList" which is
-specified in `@NotifyChange`.
+After binding this "onClick" event, when a user clicks "Search" button, ZK saves the *textbox*
+value into `vm.keyword` and invokes `search()`. That method refills the `ListModelList`, and
+the *listbox* redraws itself.
 
 ## Displaying Data Collection
 
@@ -262,26 +304,28 @@ Steps to use `<template>`:
 3.  Use implicit variable, **each**, to assign domain object's
     properties to component's attributes.
 
-**Extracted from searchMvvm.zul**
+**Extracted from [searchMvvm.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)**
 
 ```xml
-
-        <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result">
-            <listhead>
-                <listheader label="Model" />
-                <listheader label="Make" />
-                <listheader label="Price" width="20%"/>
-            </listhead>
-            <template name="model">
-                <listitem>
-                    <listcell label="@init(each.model)"></listcell>
-                    <listcell label="@init(each.make)"></listcell>
-                    <listcell>$<label value="@init(each.price)" />
-                    </listcell>
-                </listitem>
-            </template>
-        </listbox>
+    <listbox model="@init(vm.carList)" rows="5" emptyMessage="No car found in the result">
+        <listhead sizable="true">
+            <listheader label="Model" />
+            <listheader label="Make" />
+            <listheader label="Price" width="20%"/>
+        </listhead>
+        <template name="model">
+            <listitem>
+                <listcell label="@init(each.model)"></listcell>
+                <listcell label="@init(each.make)"></listcell>
+                <listcell label="@init(('$'+=each.price))" />
+            </listitem>
+        </template>
+    </listbox>
 ```
+
+- `('$'+=each.price)` concatenates two strings with
+  [EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#el-30-support), the
+  same expression the MVC version uses.
 
 ## Implementing View Details Functionality
 
@@ -298,20 +342,26 @@ previous sections.
     attributes.
 
 ```xml
-        <listbox height="160px" model="@load(vm.carList)" emptyMessage="No car found in the result"
-        selectedItem="@save(vm.selectedCar)">
-        <!-- omit child components -->
-        </listbox>
-        <hbox style="margin-top:20px">
-            <image width="250px" src="@load(vm.selectedCar.preview)" />
-            <vbox>
-                <label value="@load(vm.selectedCar.model)" />
-                <label value="@load(vm.selectedCar.make)" />
-                <label value="@load(vm.selectedCar.price)" />
-                <label value="@load(vm.selectedCar.description)" />
-            </vbox>
-        </hbox>
+    <listbox model="@init(vm.carList)" rows="5" emptyMessage="No car found in the result"
+             selectedItem="@save(vm.selectedCar)">
+    <!-- omit child components -->
+    </listbox>
+    <hlayout style="margin-top:20px" width="100%">
+        <image width="250px" src="@load(vm.selectedCar.preview)" />
+        <vlayout hflex="1">
+            <label value="@load(vm.selectedCar.model)" />
+            <label value="@load(vm.selectedCar.make)" />
+            <label value="@load(vm.selectedCar.price)" />
+            <label value="@load(vm.selectedCar.description)" />
+        </vlayout>
+    </hlayout>
 ```
+
+- Saving `vm.selectedCar` is enough on its own: the binder knows the four labels and the image
+  depend on that property, so it reloads them right after the save. This is the same
+  dependency tracking that `@NotifyChange` triggers manually.
+- `hlayout` and `vlayout` arrange their children horizontally and vertically — the same
+  components the MVC version of this page uses.
 
 You can view complete zul at [Github](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvvm.zul)
 

@@ -26,9 +26,24 @@ Each step is also an entry point on its own, so you can ask for just a validatio
 
 Note that zul-writer also supports a Java-first approach — simply instruct it to generate a minimal ZUL with only a root component and build the UI programmatically in the Composer.
 
+### Installation
+
+The skill is distributed through [the Open Agent Skills ecosystem](https://skills.sh/). You
+need an AI coding agent that supports Agent Skills (Claude Code, Codex CLI, Gemini CLI, and
+others), plus Node.js and npm. Run:
+
+```bash
+npx skills add zkoss-demo/agent-skill
+```
+
+Choose the symlink option when prompted, so a single copy of the skill serves every agent and
+updates in one command.
+
+For a step-by-step first page, see [Write Your First ZUL UI with AI]({{site.baseurl}}/get_started/getting_started_with_zul_writer).
+
 ### Further Reading
 
-For a detailed introduction, installation instructions, and a showcase of generated ZK UIs, please refer to the article:
+For a detailed introduction and a showcase of generated ZK UIs, please refer to the article:
 [Accelerate ZK Development with the AI Agent Skill: zul-writer](/small-talk/2026/03/16/accelerate-zk-development-with-agent-skills-zul-writer.html)
 
 For the rendered-preview feedback loop added in zul-writer 2.0, see:

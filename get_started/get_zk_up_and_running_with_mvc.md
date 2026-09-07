@@ -1,3 +1,8 @@
+---
+title: "Get ZK Up and Running with MVC"
+description: "Build a car catalog application with ZK's MVC pattern: wire components with @Wire and handle user actions with @Listen inside a SelectorComposer."
+---
+
 # Introduction
 
 This tutorial is intended for software developers who have experience in
@@ -8,7 +13,7 @@ approach to build the application here. This approach is very intuitive
 and flexible and gives you full control of components. In addition, you
 can also choose to go with the **MVVM** approach that is covered in [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm).
 
-You can download the complete source code under the [ Start from Example Project](#start_from_example_project) section.
+You can download the complete source code under the [ Start from Example Project](#start-from-example-project) section.
 
 {% include tutorial-common.md article="mvc" %}
 
@@ -195,7 +200,7 @@ public class SearchController extends SelectorComposer<Component> {
   To change data item displayed in a `Listbox`, call
   `carListbox.setModel()`. The model of a component is the data the
   component holds and we can change the model to change the data
-  rendering on the screen, please refer to [Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering)
+  rendering on the screen, please refer to [Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#model-driven-rendering)
 
 ## Displaying a Data Collection
 
@@ -220,7 +225,7 @@ Please refer to [ZK Developer's Reference/mvc/View/Template/Listbox Template]({{
 for more details.
 
 **Extracted from
-[searchMvc.zul](https://github.com/zkoss/zkbooks/blob/master/gettingStarted/getZkUp/src/main/webapp/searchMvc.zul)**
+[searchMvc.zul](https://github.com/zkoss-demo/gettingStarted/blob/master/src/main/webapp/searchMvc.zul)**
 
 ```xml
 <listbox id="carListbox" rows="3" emptyMessage="No car found in the result">
@@ -247,7 +252,7 @@ for more details.
 - Line 9: The "each" is a variable that references to a domain object in
   the model list which is `Car` in our example application. We can use
   it to access domain object's property with EL, e.g. `${each.price}`.
-- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#EL_3.0_Support):
+- Line 11: Concatenate 2 strings with [ EL 3 syntax]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#el-30-support):
   `(+=)`
 
 ## Implementing "View Car Details"

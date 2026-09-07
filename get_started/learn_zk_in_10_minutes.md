@@ -1,3 +1,8 @@
+---
+title: "Learn ZK in 10 Minutes"
+description: "A ten-minute tour of ZK: compose a UI from components in ZUL, control it from a Java controller, and plug it into the back end you already have."
+---
+
 # What is ZK
 
 ZK is a UI framework that enables you to build amazing web and mobile
@@ -268,15 +273,49 @@ public class RegistrationSpringComposer extends SelectorComposer<Component> {
 ZK provides a zkspringboot-starter addon to help you work with
 Springboot easily, please refer to [ Create and Run Your First ZK Application with Spring Boot]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_spring_boot).
 
-# Source Code
+# Try It Yourself, Right Now
+
+The fastest way to get a feel for ZK is to change the code above and watch what happens.
+[ZKFiddle](https://zkfiddle.org/) runs ZUL and Java in your browser with nothing to install:
+paste any snippet from this page, press Run, and edit it live.
+
+When you want a full application you can step through in a debugger, clone the example
+project instead:
 
 {% include run-demo.html article="10min" %}
 
+# Set Up Your IDE
+
+ZK works in any Java IDE, but a plugin gives you ZUL completion and a live layout preview.
+
+**IntelliJ IDEA** — install the ZK plugin:
+
+{% include zkidea-install-button.html %}
+
+It adds a split-pane layout preview that renders your `.zul` using your project's own ZK jars
+every time you save, plus ZUL completion, MVVM binding navigation, and `zk.xml` validation.
+See [ZK IntelliJ IDEA Plugin]({{site.baseurl}}/zk_dev_ref/zkidea) for the full feature list, or
+[First ZK App with IntelliJ and ZKIdea]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_intellij_and_zkidea)
+to create a project with it.
+
+**Eclipse** — see [First ZK App with Eclipse and ZK Studio]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio).
+
+**Visual Studio Code** — see [First ZK App with Visual Studio Code]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_visual_studio_code).
+
 # What's Next
 
-- [ Quick Start]({{site.baseurl}}/zk_installation_guide/quick_start)
-  - Start to develop with ZK with your familiar tools including Eclipse,
-    IntelliJ, Maven, Gradle, or Spring Boot.
-- [ Start in MVC pattern]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc)
-- [ Start in MVVM pattern]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm)
-- [ZK Demo](http://www.zkoss.org/zkdemo/)
+Pick the path that matches how you want to work:
+
+- **Build a real application, step by step** —
+  [Get ZK Up and Running with MVC]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvc)
+  is the recommended starting point;
+  [Get ZK Up and Running with MVVM]({{site.baseurl}}/get_started/get_zk_up_and_running_with_mvvm)
+  shows the data-binding alternative.
+- **Let AI write your first page** — [Write Your First ZUL UI with AI]({{site.baseurl}}/get_started/getting_started_with_zul_writer)
+- **Stay in Java and skip the markup** — [Build UI in Java]({{site.baseurl}}/get_started/building_ui_in_java),
+  the closest thing to Swing.
+- **Set up your own project** — [Quick Start]({{site.baseurl}}/zk_installation_guide/quick_start)
+  covers Eclipse, IntelliJ, Maven, Gradle, VS Code, and Spring Boot.
+- **Scale out to the cloud** — [Building Cloud-Native Applications]({{site.baseurl}}/get_started/building_cloud_native_applications)
+- **Look up a term** — [ZK Dictionary]({{site.baseurl}}/get_started/zk_dictionary)
+- **Browse every component live** — [ZK Demo](http://www.zkoss.org/zkdemo/)

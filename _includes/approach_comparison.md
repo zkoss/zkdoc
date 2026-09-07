@@ -2,7 +2,7 @@
 
 Here is the architectural picture to demonstrate the interaction between Model, View, and Controller/ViewModel.
 
-![MVC diagram](images/Tutorial-mvc.png) ![MVVM diagram](images/Tutorial-mvvm.png)
+![MVC diagram]({{site.baseurl}}/get_started/images/Tutorial-mvc.png) ![MVVM diagram]({{site.baseurl}}/get_started/images/Tutorial-mvvm.png)
 
 The main differences are that **Controller** changes to **ViewModel** and there is a binder in MVVM to synchronize data instead of a Controller.
 
@@ -36,3 +36,16 @@ To summarize, see the comparison table below:
 | UI Updating | Manipulate components | Automatic (@NotifyChange) |
 | Component Controlling Granularity | Fine-grained | Normal |
 | Performance | High | Normal |
+
+# Where to Go Next
+
+You have now built the same application twice and seen both patterns. From here:
+
+- **Build something bigger** — [ZK Essentials]({{site.baseurl}}/zk_essentials) walks through a
+  complete application, screen by screen
+- **Look up a component** — [ZK Component Reference]({{site.baseurl}}/zk_component_ref) documents
+  every component with runnable examples
+- **Go deeper on your pattern** — [MVC in Developer's Reference]({{site.baseurl}}/zk_dev_ref/mvc/mvc)
+  or [MVVM Reference]({{site.baseurl}}/zk_mvvm_ref/intro/introduction_of_mvvm)
+- **Check a term you skipped** — [ZK Dictionary]({{site.baseurl}}/get_started/zk_dictionary)
+- **Ask a person** — [ZK Forum](https://forum.zkoss.org/)

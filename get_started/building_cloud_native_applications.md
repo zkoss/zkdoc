@@ -4,6 +4,13 @@ description: Learn how to build scalable, cloud-native web applications using ZK
 ---
 # Building Cloud-Native Applications with Stateless Components
 
+> **What this page assumes.** Stateless components require **ZK 10 or later**, and they are a
+> Java-only model — there are no ZUL pages. The comparison below is easier to follow if you
+> have already seen the classical component model; if you have not,
+> [Learn ZK in 10 Minutes]({{site.baseurl}}/get_started/learn_zk_in_10_minutes) is a
+> ten-minute detour, and [Build UI in Java]({{site.baseurl}}/get_started/building_ui_in_java)
+> shows the Java-first style this model builds on.
+
 ## Introduction: Building for the Cloud
 
 Modern web applications are increasingly deployed in cloud environments, requiring high scalability, fault tolerance, and minimal resource footprints per user. As user bases grow, the traditional approach of storing rich component states on the server can become a bottleneck due to high memory consumption and the complexities of session replication in a clustered environment. 
@@ -54,4 +61,14 @@ When deploying applications to the cloud, stateless components offer several com
 
 Ready to start building a highly scalable, memory-efficient UI for the cloud? Dive into the detailed developer reference to see how to implement ZK Stateless components in your project.
 
-Read the guide here: [Building Stateless UI](/zk_dev_ref/stateless_components/building_stateless_ui)
+Two ways in, depending on how you like to start:
+
+- **Read the reference** — [Building Stateless UI]({{site.baseurl}}/zk_dev_ref/stateless_components/building_stateless_ui)
+  covers the Gradle dependency, the `DispatcherRichletFilter` you add to `web.xml`, and the
+  `StatelessRichlet` programming model.
+- **Run working code first** — clone the
+  [shopping cart demo](https://github.com/zkoss-demo/zk10-shopping-cart-demo), the application
+  the reference walks through.
+
+For the wider picture of where stateless fits alongside the classical model, see
+[Stateless Components]({{site.baseurl}}/zk_dev_ref/stateless_components/stateless_components).
