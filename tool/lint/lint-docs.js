@@ -12,6 +12,7 @@
  *   ZK001  liquid-in-table-cell  — block-level {% include %} inside table row
  *   ZK002  blank-line-issues     — blank lines inside tables, missing around fences, 2+ consecutive blanks
  *   ZK003  missing-alt-text      — Markdown image with empty/whitespace alt text
+ *   ZK004  anchor-case           — internal link fragment that kramdown never generates
  */
 
 const fs = require('fs');
@@ -22,6 +23,7 @@ const { DOCS_DIRECTORIES } = require('./rules/docs-dirs');
 const { check: checkZK001 } = require('./rules/liquid-in-table-cell');
 const { check: checkZK002, fix: fixZK002 } = require('./rules/blank-line-issues');
 const { check: checkZK003 } = require('./rules/missing-alt-text');
+const { check: checkZK004, collectDeclaredIds } = require('./rules/anchor-case');
 
 const REPO_ROOT = path.resolve(__dirname, '..', '..');
 const INCLUDES_DIR = path.join(REPO_ROOT, '_includes');
@@ -48,9 +50,11 @@ async function collectFiles(inputPaths) {
         return files;
     }
 
-    // Default: all docs directories
+    // Default: all docs directories, plus the shared content fragments they
+    // pull in (same set fix-alt-text.js walks). docs-dirs.js is left alone
+    // because tool/cleanup/ scripts mutate whatever is on that list.
     const files = [];
-    for (const dir of DOCS_DIRECTORIES) {
+    for (const dir of [...DOCS_DIRECTORIES, '../../_includes']) {
         const abs = path.resolve(__dirname, dir);
         if (fs.existsSync(abs)) {
             const found = await glob('**/*.md', { cwd: abs, absolute: true });
@@ -67,6 +71,8 @@ async function main() {
         process.exit(0);
     }
 
+    const declaredIds = collectDeclaredIds(files);
+
     let totalIssues = 0;
     let filesWithIssues = 0;
     let fixedCount = 0;
@@ -79,7 +85,8 @@ async function main() {
         const issues001 = checkZK001(lines, INCLUDES_DIR);
         const issues002 = checkZK002(lines);
         const issues003 = checkZK003(lines);
-        const allIssues = [...issues001, ...issues002, ...issues003].sort((a, b) => a.lineNumber - b.lineNumber);
+        const issues004 = checkZK004(lines, declaredIds);
+        const allIssues = [...issues001, ...issues002, ...issues003, ...issues004].sort((a, b) => a.lineNumber - b.lineNumber);
 
         if (allIssues.length > 0) {
             filesWithIssues++;

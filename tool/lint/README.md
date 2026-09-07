@@ -21,9 +21,16 @@ Fast, runs on raw `.md` files. Custom rules understand Liquid syntax.
 | liquid-in-table-cell | ZK001 | `{% include X %}` inside a table cell where X emits block HTML |
 | blank-line-issues | ZK002 | Blank lines inside tables, missing blanks around fences, 2+ consecutive blanks |
 | missing-alt-text | ZK003 | Markdown image `![](path)` (or `![ ](path)`) with empty/whitespace alt text |
+| anchor-case | ZK004 | Internal link fragment that kramdown's auto_ids never generates (MediaWiki leftovers like `#Model-Driven_Rendering`) |
 
-ZK001 and ZK003 are report-only. ZK002 supports `--fix` (whitespace only, never touches content).
+ZK001, ZK003 and ZK004 are report-only. ZK002 supports `--fix` (whitespace only, never touches content).
 Remediate ZK003 with `npm run fix-alt-text` (dry-run) / `npm run fix-alt-text-apply`.
+
+ZK004 prints a `likely "#..."` suggestion, but it is derived from the fragment text rather
+than from the heading it should point at, so verify before applying — grep the id in `_site/`.
+It also has a blind spot by design: a fragment that is already lowercase-with-underscores has
+a legal shape even when it is wrong (`#start_from_example_project` vs the real
+`#start-from-example-project`). Catching those needs a build, i.e. Tier 2.
 
 ## Tier 2 — Rendered validation (`lint-rendered.js`)
 
