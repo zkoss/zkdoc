@@ -158,6 +158,9 @@ Switch to the `paging` mold to paginate large datasets without scrolling. Set `p
 
 ## Responsive Stacking Grid (EE)
 
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
 Use `responsive="stacking"` with `responsiveColumns` to collapse columns into card-style blocks on small screens.
 
 ```xml
@@ -1417,7 +1420,7 @@ If `paginal` is not set explicitly and the mold is `"paging"`, the grid creates 
 
 ## Responsive
 
-{% include supported-since.html version="10.4.0" %}
+{% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition=ee %}
 
 **Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive` library property)
@@ -1444,7 +1447,7 @@ Any value other than the three above throws `WrongValueException`.
 
 ## ResponsiveColumns
 
-{% include supported-since.html version="10.4.0" %}
+{% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition=ee %}
 
 **Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive.columns` library property; framework default resolved by the client is `"sm-1 md-none"`)
@@ -1524,9 +1527,9 @@ Enables vertical flexibility so the grid grows and shrinks to fill its available
 | `onScrollPos` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Sent by the client when the grid's scroll position changes. The grid updates its internal `currentTop` and `currentLeft` fields; application code rarely needs to handle this event directly. |
 | `onTopPad` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Sent by the client to report the top padding offset used by the ROD virtual scroller. Handled internally; not typically used by application code. |
 | `onDataLoading` | **Event:** [org.zkoss.zul.event.DataLoadingEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/event/DataLoadingEvent.html) | Fired when the grid requests a new batch of rows from the server under ROD. Applications can listen to this event to intercept or react to data loading, e.g., showing a loading indicator. |
-| `onResponsiveModeChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | {% include supported-since.html version="10.4.0" %} Fired by the client when the grid's resolved stacking mode transitions between `"table"` and `"stacking"` (ZK EE). Applications can listen to adapt UI elements to the current layout mode. |
+| `onResponsiveModeChange` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | {% include supported-since.html version="11.0.0" %} Fired by the client when the grid's resolved stacking mode transitions between `"table"` and `"stacking"` (ZK EE). Applications can listen to adapt UI elements to the current layout mode. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

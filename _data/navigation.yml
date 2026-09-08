@@ -957,6 +957,8 @@ zk_installation_guide:
         url: /zk_installation_guide/xml_editor
   - title: Building ZK from Source
     url: /zk_installation_guide/building_from_source
+  - title: Software Bill of Materials
+    url: /zk_installation_guide/software_bill_of_materials
 zk_style_customization_guide:
   - title: Introduction
     url: /zk_style_customization_guide/introduction
@@ -1025,6 +1027,8 @@ zk_style_customization_guide:
         url: /zk_style_customization_guide/migration_guides/guide-breeze-to-iceblue-9.6.6
       - title: Iceblue 9.X to 10.X
         url: /zk_style_customization_guide/migration_guides/guide-iceblue-9.6.6-to-10.3.0
+      - title: CSS Variables from ZK 10.3 to 11
+        url: /zk_style_customization_guide/migration_guides/css_variables_10_3_to_11
       - title: CSS variable migration
         url: /zk_style_customization_guide/migration_guides/breeze-iceblue-variable-crossreference
       - title: Color variables reference
@@ -2264,12 +2268,26 @@ zk_component_ref:
         url: /zk_component_ref/a
       - title: Anchornav
         url: /zk_component_ref/anchornav
+      - title: Avatar
+        url: /zk_component_ref/avatar
+      - title: Avatargroup
+        url: /zk_component_ref/avatargroup
+      - title: Badge
+        url: /zk_component_ref/badge
+      - title: Breadcrumb
+        url: /zk_component_ref/breadcrumb
       - title: Button
         url: /zk_component_ref/button
       - title: Captcha
         url: /zk_component_ref/captcha
+      - title: Carousel
+        url: /zk_component_ref/carousel
+      - title: Chip
+        url: /zk_component_ref/chip
       - title: Combobutton
         url: /zk_component_ref/combobutton
+      - title: Confirmpopup
+        url: /zk_component_ref/confirmpopup
       - title: Dropupload
         url: /zk_component_ref/dropupload
       - title: Filedownload
@@ -2367,6 +2385,8 @@ zk_component_ref:
             url: /zk_component_ref/comboitem
       - title: Datebox
         url: /zk_component_ref/datebox
+      - title: Daterangebox
+        url: /zk_component_ref/daterangebox
       - title: Decimalbox
         url: /zk_component_ref/decimalbox
       - title: Doublebox

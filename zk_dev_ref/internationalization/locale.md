@@ -19,6 +19,10 @@ profiles in the server.
 [Locales.getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent--)
 returns the current locale that ZK detected in the below precedence.
 
+{% include supported-since.html version="11.0.0" %}
+
+When ZK renders a complete HTML page, it also uses the current locale to generate the root `<html lang="...">` attribute. An explicit `<?root-attributes lang="..."?>` directive takes precedence. See [The root-attributes Directive]({{site.baseurl}}/zuml_ref/processing_instructions/root_attributes#automatic-html-language).
+
 # The Decision Sequence of Locale
 
 ZK determines the current locale in the following sequence:

@@ -36,35 +36,51 @@ Syntax:
 </system-config>
 ```
 
-With both `csp-enabled` and `csp-strict-dynamic-enabled`,  the `Content-Security-Policy` response header will be applied to ZK pages with the directive:
+With both `csp-enabled` and `csp-strict-dynamic-enabled`, ZK generates a per-request nonce, adds it to its script and style elements, and includes `strict-dynamic` in `script-src`.
+
+{% include supported-since.html version="11.0.0" %}
+
+In strict-dynamic mode, ZK 11 removes `unsafe-inline` from the generated `script-src` unless your custom `csp-policy` explicitly requests it. The default policy still includes `unsafe-eval`, which is required by current ZK client-side code, and `style-src 'unsafe-inline'` for style attributes.
+
+The effective header therefore contains directives equivalent to:
 
 ```
-script-src 'self' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' 'nonce-{nonce}';
+script-src 'self' 'unsafe-eval' 'strict-dynamic' 'nonce-{nonce}';
+style-src 'self' 'unsafe-inline';
 ```
 
-The nonce is generated per execution and applied to all `<script>` and `<style>` tags in the page.
+The actual `script-src` also contains hashes used by ZK's framework-generated links. Inspect the response header instead of copying those implementation-specific hashes into your configuration.
 
-In order to retrieve the nonce for manual handling during page load, you need to first initialize the `CspProviderImpl` class, and then use EL or `execution.getAttribute` to retrieve the nonce in a ZUL page or composer. For example:
+ZK prepares the nonce before composing the page, so it is directly available through `${cspNonce}`. You do not need to instantiate `CspProviderImpl`.
 
 ```xml
-<zscript><![CDATA[
-    org.zkoss.zk.ui.util.CspProvider provider = new org.zkoss.zk.ui.http.CspProviderImpl();
-    provider.getCspNonce();
-]]></zscript>
-
 <label>${cspNonce}</label>
 ```
 
-or 
+For a complete native page, you can stamp your own script explicitly. ZK preserves an author-supplied nonce and does not add a duplicate:
 
 ```xml
-<zscript><![CDATA[
-    org.zkoss.zk.ui.util.CspProvider provider = new org.zkoss.zk.ui.http.CspProviderImpl();
-    provider.getCspNonce();
-]]></zscript>
-
-<label>${execution.getAttribute('cspNonce')}</label>
+<?page complete="true"?>
+<html xmlns="http://www.zkoss.org/2005/zk/native"
+      xmlns:u="http://www.zkoss.org/2005/zul">
+    <head>
+        <zkhead/>
+        <script nonce="${cspNonce}">
+            window.applicationReady = true;
+        </script>
+    </head>
+    <body><u:label value="Ready"/></body>
+</html>
 ```
+
+Standard ZUL `<script>` components and the `<?script?>` processing instruction are stamped automatically. `Clients.evalJavaScript()` also continues to work under the nonce-based policy.
+
+## Limitations of Removing unsafe-inline
+
+- Removing `unsafe-inline` from `script-src` does not permit HTML attributes such as `onclick`. Register listeners through ZK or JavaScript event APIs.
+- A nonce authorizes `<style>` elements but does not authorize `style="..."` attributes. The default ZK policy therefore retains `style-src 'unsafe-inline'`.
+- The nonce changes for every request. Do not cache a rendered dynamic ZUL document and reuse its header or markup.
+- Enabling only `csp-strict-dynamic-enabled` does not produce a nonce or header. ZK logs a warning; both switches are required.
 
 ## The csp-policy Element
 Syntax:
@@ -99,7 +115,7 @@ Or
 
 Both `csp-enabled` and `csp-policy` are required to apply a custom `Content-Security-Policy` response header.
 
-If you want to use the strict-dynamic directive, you must also enable `<csp-strict-dynamic-enabled>`. This will ensure that nonce headers are generated and applied correctly during page rendering.
+If you want to use the strict-dynamic directive, you must also enable `<csp-strict-dynamic-enabled>`. This ensures that nonce values are generated and applied during page rendering. If a custom policy explicitly includes `script-src 'unsafe-inline'`, ZK preserves that token; omit it to use the tighter ZK 11 behavior.
 
 ## The csp-report-only Element
 Syntax:

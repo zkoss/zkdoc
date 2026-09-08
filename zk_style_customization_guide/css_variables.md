@@ -95,6 +95,8 @@ Each component has its own set of variables for fine-grained control. For exampl
 
 For a complete list of available CSS variables, inspect the `:root` styles in your browser's DevTools or refer to the [ZK Theme source](https://github.com/zkoss/zk).
 
+When upgrading an existing theme to ZK 11, review [CSS Variables from ZK 10.3 to 11]({{site.baseurl}}/zk_style_customization_guide/migration_guides/css_variables_10_3_to_11). ZK 11 gives variables more consistent semantic names and introduces component-specific variables where components previously shared unrelated styling tokens.
+
 # Runtime Customization
 
 You can dynamically change CSS variables using JavaScript:

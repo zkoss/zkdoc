@@ -17,8 +17,8 @@ scroll starting position.
 
 - **Freeze identifier columns** — Set `columns="1"` or `columns="2"` to keep row ID and name columns always visible while the user scrolls a wide grid of data columns (statuses, dates, metrics).
 - **Restore a saved scroll position** — Combine `columns` with `start` to reopen a grid at a remembered scroll offset, so the user returns to the same view they left.
-- **Freeze columns on the right** — Use `rightColumns="1"` (ZK EE, since 8.6.2) to pin action or summary columns (e.g. a Delete button or a total) at the right edge while rows scroll horizontally.
-- **Track scroll position in a ViewModel** — Listen for `onScrollPos` (ZK EE, smooth mode) to persist the current horizontal scroll offset in a backing bean, enabling cross-tab or page-reload synchronisation.
+- **Freeze columns on the right** — Use `rightColumns="1"` to pin action or summary columns (e.g. a Delete button or a total) at the right edge while rows scroll horizontally. This requires EE in ZK 8.6.2 through 10.x and is available in all editions starting with ZK 11.
+- **Track scroll position in a ViewModel** — Listen for `onScrollPos` in smooth mode to persist the current horizontal scroll offset in a backing bean. Smooth mode requires EE through ZK 10.x and is available in all editions starting with ZK 11.
 
 # Example
 
@@ -68,12 +68,16 @@ scroll starting position.
 </grid>
 ```
 
-# Smooth scrolling
+# Smooth Scrolling
 
-<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %}{% include supported-since.html version="8.5.0" %} The frozen columns
-position are maintained, and the other columns uses CSS scrolling to
-move smoothly while the scroll position is updated.
+| ZK version | Available editions |
+|---|---|
+| 8.5.0–10.x | EE |
+| 11.0.0 and later | CE, PE, and EE |
+
+{% include supported-since.html version="8.5.0" %}
+
+The frozen columns remain in place while the other columns move with native CSS scrolling. ZK 11 moves this feature from EE to CE, making it available in every edition.
 
 # Column scrolling
 
@@ -82,10 +86,7 @@ the other columns are replaced while the scroll position is updated.
 
 ## Scroll to Hide Columns
 
-<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %}{% include supported-since.html version="8.5.0" %} With smooth
-scrolling, the Grid does not add white space to the last column by
-default.
+With smooth scrolling, the Grid does not add white space to the last column by default.
 
  With column scrolling, Grid will render extra space
 (larger width) after the last column. So that you can drag to hide all
@@ -93,8 +94,14 @@ columns except the last one. ![Hide columns](/zk_component_ref/images/hide-colum
 
 # Frozen on the Right
 
-<!--REQUIRED ZK EDITION: EE -->
-{% include edition-availability.html edition="ee" %} {% include supported-since.html version="8.6.2" %}
+| ZK version | Available editions |
+|---|---|
+| 8.6.2–10.x | EE |
+| 11.0.0 and later | CE, PE, and EE |
+
+{% include supported-since.html version="8.6.2" %}
+
+ZK 11 moves smooth right-side freezing from EE to CE.
 
 Make columns frozen at the right-hand side.
 
@@ -158,9 +165,7 @@ Sets the horizontal scroll starting position (column index). Determines which co
 
 {% include supported-since.html version="8.6.2" %}
 
-{% include edition-availability.html edition="ee" %}
-
-Sets the number of columns to freeze from right to left. Only effective in smooth Frozen mode and in browsers that support CSS `position: sticky`. Must be a non-negative integer; a negative value throws a `WrongValueException`.
+Sets the number of columns to freeze from right to left. It is available in ZK EE before 11.0.0 and in all editions starting with 11.0.0. It is effective only in smooth Frozen mode and browsers that support CSS `position: sticky`. It must be non-negative; a negative value throws a `WrongValueException`.
 
 ```xml
 <listbox>
@@ -171,11 +176,13 @@ Sets the number of columns to freeze from right to left. Only effective in smoot
 
 # Supported Events
 
+`onScrollPos` follows the availability of smooth Frozen: EE in ZK 8.5.0 through 10.x, and all editions starting with ZK 11.
+
 | Name | Event Type | Description |
 |------|------------|-------------|
-| `onScrollPos` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the user scrolls the grid in smooth Frozen mode. The event data carries the current horizontal scroll position (`left`). Only available in ZK EE. |
+| `onScrollPos` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the user scrolls the grid in smooth Frozen mode. The event data carries the current horizontal scroll position (`left`). |
 
-Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

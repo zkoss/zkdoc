@@ -20,34 +20,27 @@ description: "The csp-strict-dynamic-enabled Element: It specifies whether to en
 </system-config>
 ```
 
-With both `csp-enabled` and `csp-strict-dynamic-enabled`,  the `Content-Security-Policy` response header will be applied to ZK pages with the directive:
+With both `csp-enabled` and `csp-strict-dynamic-enabled`, ZK generates a nonce for each request and applies it to framework-generated `<script>` and `<style>` elements.
+
+{% include supported-since.html version="11.0.0" %}
+
+ZK 11 omits `unsafe-inline` from `script-src` in strict-dynamic mode unless the application's custom `csp-policy` explicitly includes it. The default policy retains `unsafe-eval` and `style-src 'unsafe-inline'`:
 
 ```
-script-src 'self' 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' 'nonce-{nonce}';
+script-src 'self' 'unsafe-eval' 'strict-dynamic' 'nonce-{nonce}';
+style-src 'self' 'unsafe-inline';
 ```
 
-The nonce is generated per execution and applied to all `<script>` and `<style>` tags in the page.
+Additional framework hashes can appear in the effective `script-src` header.
 
-In order to retrieve the nonce for manual handling during page load, you need to first initialize the `CspProviderImpl` class, and then use EL or `execution.getAttribute` to retrieve the nonce in a ZUL page or composer. For example:
+The nonce is prepared before page composition and is available directly through EL:
 
 ```xml
-<zscript><![CDATA[
-    org.zkoss.zk.ui.util.CspProvider provider = new org.zkoss.zk.ui.http.CspProviderImpl();
-    provider.getCspNonce();
-]]></zscript>
-
 <label>${cspNonce}</label>
 ```
 
-or 
+Both configuration flags must be enabled. If strict-dynamic is enabled without `csp-enabled`, ZK does not generate the nonce and logs a warning.
 
-```xml
-<zscript><![CDATA[
-    org.zkoss.zk.ui.util.CspProvider provider = new org.zkoss.zk.ui.http.CspProviderImpl();
-    provider.getCspNonce();
-]]></zscript>
-
-<label>${execution.getAttribute('cspNonce')}</label>
-```
+Nonce-bearing `<style>` elements do not make inline `style="..."` attributes CSP-safe. Keep `style-src 'unsafe-inline'`, or remove inline style attributes and supply an application-specific CSP policy/provider.
 
 See [full documentation entry](/zk_dev_ref/security_tips/automatic_csp_through_zk_configuration).

@@ -67,7 +67,7 @@ Columns define the structure and behavior of a grid's vertical divisions:
 
 Sets whether this column is visible when the grid is in responsive (stacking) mode. Set to `false` to hide the column in stacking mode while keeping it visible in normal table mode. The hiding behaviour requires ZK EE (zkmax); in CE the value is stored but not enforced.
 
-{% include supported-since.html version="10.4.0" %}
+{% include supported-since.html version="11.0.0" %}
 
 ```xml
 <columns>
@@ -151,7 +151,7 @@ The value is a generic `<T>` object. Assign it from a `<zscript>` block or a com
 | `onGroup` | [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) | Denotes user has grouped all the cells under a column. |
 | `onUngroup` | [org.zkoss.zk.ui.event.SortEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SortEvent.html) | Denotes user has ungrouped all the cells under a column. |
 
-- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
+- Inherited Supported Events: [HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#supported-events)
 
 # Supported Children
 

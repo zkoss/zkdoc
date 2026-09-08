@@ -42,4 +42,8 @@ Both `csp-enabled` and `csp-policy` are required to apply a custom `Content-Secu
 
 If you want to use the strict-dynamic directive, you must also enable `<csp-strict-dynamic-enabled>`. This will ensure that nonce headers are generated and applied correctly during page rendering.
 
+{% include supported-since.html version="11.0.0" %}
+
+In ZK 11 strict-dynamic mode, omit `unsafe-inline` from your custom `script-src` to let ZK remove the token from the effective script policy. If you explicitly include it, ZK assumes the application requires it and preserves it. The default policy continues to include `unsafe-eval` and `style-src 'unsafe-inline'`.
+
 See [full documentation entry](/zk_dev_ref/security_tips/automatic_csp_through_zk_configuration).

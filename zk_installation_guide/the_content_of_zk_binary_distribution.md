@@ -118,6 +118,12 @@ portlet.xml) and the TLD files. These TLD files are part of JAR files so
 they are loaded automatically. We put them here mainly for your
 reference only.
 
+### Software Bill of Materials
+
+{% include supported-since.html version="11.0.0" %}
+
+Each new ZK release provides a CycloneDX JSON inventory for dependency auditing. Use the document that matches the deployed edition and version. See [Software Bill of Materials]({{site.baseurl}}/zk_installation_guide/software_bill_of_materials) for its scope and source-build tasks.
+
 # Version History
 
 | Version | Date          | Content                                                                                                                     |
