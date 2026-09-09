@@ -1,6 +1,6 @@
 ---
 author: hawk
-date: 2026-09-01
+date: 2026-09-10
 version: ZK 9/10
 category: small-talk
 title: "zul-writer 2.0: Letting the AI See the ZUL Page It Just Wrote"
