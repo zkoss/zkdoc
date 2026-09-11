@@ -183,7 +183,7 @@ include supported-since.html version="7.0.2" %}
 ### Grown by children
 
 - To make Borderlayout dependable on the size of its child components,
-  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
+  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#minimum-flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 
@@ -303,12 +303,118 @@ configure ZK by adding the following to `/WEB-INF/zk.xml`
 </library-property>
 ```
 
+## CtrlKeys
+
+{% include supported-since.html version="11.0.0" %}
+
+Set `ctrlKeys` and `onCtrlKey` directly on a `borderlayout` to handle shortcuts
+shared by its regions. When a component inside a region has focus, a matching
+keystroke is sent to the borderlayout as a `KeyEvent`.
+
+```xml
+<zk>
+    <borderlayout height="200px" ctrlKeys="^k^h"
+            onCtrlKey='result.setValue("ctrlKey:" + event.getKeyCode());'>
+        <north size="40px">
+            <textbox placeholder="Focus here and press Ctrl+K"/>
+        </north>
+        <center>
+            <textbox placeholder="Press Ctrl+K or Ctrl+H"/>
+        </center>
+    </borderlayout>
+    <label id="result"/>
+</zk>
+```
+
+With either textbox focused, Ctrl+K displays `ctrlKey:75` and Ctrl+H displays
+`ctrlKey:72`. An unregistered shortcut such as Ctrl+J does not trigger the
+handler. See [Keystroke Handling]({{site.baseurl}}/zk_dev_ref/ui_patterns/keystroke_handling#allowed-control-keys)
+for the supported key syntax.
+
+The default value is `null`. Setting `ctrlKeys` to an empty string normalizes
+it to `null` and clears the borderlayout's shortcut configuration.
+
+### Per-region overrides
+
+The closest matching handler to the focused component takes precedence.
+If a region declares the same shortcut and an `onCtrlKey` listener, that
+region handles the event; the borderlayout's handler is not also invoked.
+For example, Ctrl+K in the textbox below displays `region`:
+
+```xml
+<zk>
+    <borderlayout height="200px" ctrlKeys="^k"
+            onCtrlKey='result.setValue("layout");'>
+        <center ctrlKeys="^k" onCtrlKey='result.setValue("region");'>
+            <textbox/>
+        </center>
+    </borderlayout>
+    <label id="result"/>
+</zk>
+```
+
+### MVVM binding
+
+Within a view configured with `BindComposer` and a view model named `vm`,
+bind the shortcut list with `@load` and pass the event's key code to a command:
+
+```xml
+<borderlayout height="200px" ctrlKeys="@load(vm.shortcutKeys)"
+        onCtrlKey="@command('onShortcut', code=event.keyCode)">
+    <center>
+        <textbox/>
+    </center>
+</borderlayout>
+<label value="@load(vm.result)"/>
+```
+
+The corresponding view-model members can be defined as follows:
+
+```java
+private String result = "none";
+
+public String getShortcutKeys() { return "^k"; }
+public String getResult() { return result; }
+
+@Command
+@NotifyChange("result")
+public void onShortcut(@BindingParam("code") int code) {
+    result = "ctrlKey:" + code;
+}
+```
+
+The annotations are from `org.zkoss.bind.annotation`. Pressing Ctrl+K in the
+textbox invokes the command with `code` equal to `75` and updates the label.
+
+## Context, Popup and Tooltip
+
+{% include supported-since.html version="11.0.0" %}
+
+Since ZK 11.0.0, `Borderlayout` extends
+[XulElement]({{site.baseurl}}/zk_component_ref/xulelement) instead of
+`HtmlBasedComponent`. In addition to `ctrlKeys`, it inherits these attributes:
+
+| Attribute | Purpose |
+|---|---|
+| `context` | Specifies a popup or menu to open on a context-menu action, such as a right-click. |
+| `popup` | Specifies a popup or menu to open on a click. |
+| `tooltip` | Specifies a popup to show when the pointer hovers over the component. |
+
+The values reference the popup or menu by ID and use the same syntax as other
+`XulElement` components. See [Popup]({{site.baseurl}}/zk_component_ref/popup)
+and [XulElement — Tooltip]({{site.baseurl}}/zk_component_ref/xulelement#tooltip).
+Declare popup and menu components outside the borderlayout; its direct children
+must still be layout regions.
+
 # Supported Events
 
 | Name | Event Type | Description |
 |------|------------|-------------|
+| `onCtrlKey` | [KeyEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html) | Since 11.0.0, a shortcut matching `ctrlKeys` can be handled directly by the borderlayout. |
 
-No additional events are defined for this component. Inherited events from `HtmlBasedComponent` apply — see [HtmlBasedComponent — Supported Events]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
+Since ZK 11.0.0, inherited events are documented under
+[XulElement — Supported Events]({{site.baseurl}}/zk_component_ref/xulelement#supported-events),
+which also includes events inherited from `HtmlBasedComponent`.
 
 # Supported Children
 

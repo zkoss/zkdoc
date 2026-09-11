@@ -110,6 +110,23 @@ As shown, you could use
 [org.zkoss.zk.ui.event.KeyEvent#getKeyCode()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/KeyEvent.html#getKeyCode())
 to know which key was pressed.
 
+## Shortcuts shared across Borderlayout regions
+
+{% include supported-since.html version="11.0.0" %}
+
+`Borderlayout` extends `XulElement` starting with ZK 11.0.0. Declare `ctrlKeys`
+and `onCtrlKey` directly on the borderlayout to share a shortcut handler across
+its regions. A matching key pressed while a descendant has focus is routed
+to the borderlayout, unless a closer component handles that shortcut.
+
+For example, `ctrlKeys="^k^h"` handles Ctrl+K and Ctrl+H from textboxes in both
+North and Center. A region can override a shared shortcut by declaring the
+same key and its own listener. Setting the borderlayout's `ctrlKeys` to `""`
+normalizes it to `null` and clears its configured shortcuts.
+
+See [Borderlayout — CtrlKeys]({{site.baseurl}}/zk_component_ref/borderlayout#ctrlkeys)
+for complete examples, including per-region overrides and MVVM binding.
+
 ## Allowed Control Keys
 
 | Key | Syntax | Description |
