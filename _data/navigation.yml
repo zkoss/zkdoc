@@ -2376,6 +2376,8 @@ zk_component_ref:
         children:
           - title: CKEditor5
             url: /zk_component_ref/ckeditor5
+      - title: Codeeditor
+        url: /zk_component_ref/codeeditor
       - title: Colorbox
         url: /zk_component_ref/colorbox
       - title: Combobox
