@@ -964,6 +964,8 @@ zk_style_customization_guide:
     url: /zk_style_customization_guide/introduction
   - title: Example Project
     url: https://github.com/zkoss/zkbooks/tree/master
+  - title: Marble Theme
+    url: /zk_style_customization_guide/marble_theme
   - title: ZK CSS Class Design
     url: /zk_style_customization_guide/zk_css_class_design
     children:
@@ -1150,6 +1152,10 @@ zk_config_ref:
             url: /zk_config_ref/org_zkoss_lang_contextclassloader_class
           - title: org.zkoss.theme.atlantic.useGoogleFont.disabled
             url: /zk_config_ref/org_zkoss_theme_atlantic_usegooglefont_disabled
+          - title: org.zkoss.theme.marble.brand
+            url: /zk_config_ref/org_zkoss_theme_marble_brand
+          - title: org.zkoss.theme.marble.density
+            url: /zk_config_ref/org_zkoss_theme_marble_density
           - title: org.zkoss.theme.preferred
             url: /zk_config_ref/org_zkoss_theme_preferred
           - title: org.zkoss.util.label.cache
