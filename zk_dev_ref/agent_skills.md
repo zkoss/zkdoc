@@ -47,4 +47,4 @@ For a detailed introduction and a showcase of generated ZK UIs, please refer to 
 [Accelerate ZK Development with the AI Agent Skill: zul-writer](/small-talk/2026/03/16/accelerate-zk-development-with-agent-skills-zul-writer.html)
 
 For the rendered-preview feedback loop added in zul-writer 2.0, see:
-[zul-writer 2.0: Letting the AI See the ZUL Page It Just Wrote](/small-talk/2026/09/01/zul-writer-2-preview-feedback-loop.html)
+[zul-writer 2.0: Letting the AI See the ZUL Page It Just Wrote](/small-talk/2026/09/09/zul-writer-2-preview-feedback-loop.html)
