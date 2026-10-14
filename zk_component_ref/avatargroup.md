@@ -9,12 +9,12 @@ title: "Avatargroup"
 
 # Employment/Purpose
 
-`Avatargroup` displays related [Avatar]({{site.baseurl}}/zk_component_ref/avatar) components as an overlapping group. When space is limited, `maxCount` keeps the group compact by replacing excess avatars with a `+N` indicator.
+`Avatargroup` displays related [Avatar]({{site.baseurl}}/zk_component_ref/avatar) components as an overlapping group. When space is limited, `maxItems` keeps the group compact by replacing excess avatars with a `+N` indicator.
 
 # Example
 
 ```xml
-<avatargroup maxCount="3" shape="circle" size="small">
+<avatargroup maxItems="3" shape="circle" size="small">
     <avatar label="A"/>
     <avatar label="B"/>
     <avatar label="C"/>
@@ -27,7 +27,7 @@ This example shows three avatars and a `+2` overflow indicator.
 
 # Properties
 
-## MaxCount
+## MaxItems
 
 **Default Value:** `0`
 

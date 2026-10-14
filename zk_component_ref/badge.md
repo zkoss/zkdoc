@@ -18,7 +18,7 @@ title: "Badge"
 <badge count="5"/>
 <badge count="0" showZero="true"/>
 <badge count="150"/><!-- displays 99+ -->
-<badge dot="true" severity="danger"/>
+<badge dot="true" severity="error"/>
 
 <badge count="3" placement="top_right">
     <button label="Cart"/>
@@ -53,7 +53,7 @@ Displays a small indicator without the `value` or `count` text.
 
 **Default Value:** `info`
 
-Allowed values are `info`, `success`, `warning`, `danger`, and `secondary`. Badge, Chip, and Confirmpopup use this shared severity vocabulary.
+Allowed values are `info`, `success`, `warning`, `error`, and `neutral`. Other values cause a `WrongValueException`. Badge, Chip, and Confirmpopup use this shared severity vocabulary.
 
 ## Placement
 

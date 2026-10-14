@@ -30,7 +30,7 @@ The component uses this fallback order: `image`, `iconSclass`, then `label`. If 
 
 ## Image, Label, and IconSclass
 
-These properties are inherited from `LabelImageElement`. `label` is normally a one- or two-character abbreviation. `iconSclass` is used when no image is available and takes precedence over the label.
+These properties are inherited from `LabelImageElement`. Avatar does not convert `label` into initials: it displays only the first two characters and shows them in uppercase, so `label="Jane Doe"` displays `JA`. Pass the initials yourself, such as `label="JD"`. `iconSclass` is used when no image is available and takes precedence over the label.
 
 ## Shape
 
