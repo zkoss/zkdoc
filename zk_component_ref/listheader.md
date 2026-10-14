@@ -19,6 +19,7 @@ a list box. Its parent must be `Listhead`.
 - **Client-side sorting** — Use `sort="client"` (string sort) or `sort="client(number)"` (numeric sort) to sort entirely in the browser without a server round-trip. Note: client sorting is incompatible with a `ListModel`.
 - **Truncating long cell labels** — Set `maxlength` to cap the number of characters shown in the header and all cells in that column, keeping the layout compact for wide data.
 - **Storing column metadata** — Use the `value` attribute to attach a field name or identifier to each header, then read it back in an `onSort` listener to drive a server-side query.
+- **Responsive design** — Leave a secondary column out of the cards of a stacking listbox with `responsiveVisible="false"` (EE).
 
 # Example
 
@@ -78,6 +79,25 @@ Sets the maximum number of characters displayed for each item's label in the col
   <listhead>
     <listheader label="Description" maxlength="20"/>
   </listhead>
+</listbox>
+```
+
+## ResponsiveVisible
+
+{% include supported-since.html version="11.0.0" %}
+
+**Default Value:** `true`
+
+Sets whether this column is visible when the listbox is in responsive (stacking) mode. Set to `false` to leave the column out of the cards while keeping it visible in normal table mode. The hiding behaviour requires ZK EE (zkmax); in CE the value is stored but not enforced. For more information, see [Responsive Stacking Listbox]({{site.baseurl}}/zk_component_ref/listbox#responsive-stacking-listbox-ee).
+
+If the column hosts the selection checkbox of a `checkmark` listbox, the checkbox is still shown in each card; only the column's value is hidden.
+
+```xml
+<listbox responsive="stacking" checkmark="true">
+    <listhead>
+        <listheader label="Name"/>
+        <listheader label="Detail" responsiveVisible="false"/>
+    </listhead>
 </listbox>
 ```
 

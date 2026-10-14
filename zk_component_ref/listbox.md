@@ -25,6 +25,7 @@ in its content.
 - **Large datasets with lazy loading**: Bind a `ListModel` and enable ROD (`org.zkoss.zul.listbox.rod`) so only the visible rows are rendered, keeping memory use low.
 - **Paged navigation**: Switch to `mold="paging"` to split thousands of records across pages, optionally using `autopaging` to compute page size from available height automatically.
 - **Drop-down selector**: Use `mold="select" rows="1"` as a lightweight HTML `<select>` replacement when a full dropdown (`selectbox`, `combobox`) is not required.
+- **Mobile-friendly lists**: Set `responsive="stacking"` (EE) so each list item turns into a card of label/value pairs when the listbox becomes too narrow for a table. See [Responsive Stacking Listbox](#responsive-stacking-listbox-ee).
 
 # Example
 
@@ -1024,6 +1025,108 @@ The following code demonstrates how to freeze a column within a Grid:
 - For further details, please refer to [ Frozen component]({{site.baseurl}}/zk_component_ref/frozen)
   directly.
 
+# Responsive Stacking Listbox (EE)
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+On a narrow screen, a multi-column listbox either scrolls horizontally or squeezes its cells until they are unreadable. Use `responsive="stacking"` with `responsiveColumns` to turn each list item into a card when the listbox becomes too narrow: the column header row is hidden, and every cell is shown as a label/value pair, with the `listheader` label as the caption. When the listbox is wide enough again, it switches back to a normal table.
+
+```xml
+<listbox model="${model}" responsive="stacking" responsiveColumns="sm-1 md-none">
+    <listhead>
+        <listheader label="Name"/>
+        <listheader label="Email"/>
+        <listheader label="Phone"/>
+    </listhead>
+    <template name="model">
+        <listitem>
+            <listcell label="${each.name}"/>
+            <listcell label="${each.email}"/>
+            <listcell label="${each.phone}"/>
+        </listitem>
+    </template>
+</listbox>
+```
+
+The layout is chosen from the width of the **listbox itself**, not the browser window, so a listbox in a sidebar, a narrow panel or a portal column stacks even on a desktop screen. The listbox re-evaluates its layout whenever its width changes, so no server round trip is needed.
+
+## Breakpoints and Cards per Row
+
+`responsiveColumns` is a whitespace-separated list of `<breakpoint>-<value>` tokens. The value is either the number of cards per row, or `none` to show a normal table from that breakpoint upwards.
+
+| Breakpoint | Listbox width |
+|---|---|
+| (below `sm`) | less than 576px |
+| `sm` | 576px and wider |
+| `md` | 768px and wider |
+| `lg` | 992px and wider |
+| `xl` | 1200px and wider |
+| `xxl` | 1400px and wider |
+
+The token with the largest breakpoint that the current width reaches wins. Below the smallest breakpoint in the list, the smallest token applies. For example:
+
+| `responsiveColumns` | Below 576px | 576–767px | 768–991px | 992–1199px | 1200px and wider |
+|---|---|---|---|---|---|
+| `sm-1 md-none` (default) | 1 card per row | 1 card per row | table | table | table |
+| `sm-1 md-2 xl-none` | 1 card per row | 1 card per row | 2 cards per row | 2 cards per row | table |
+| `sm-2 lg-3` | 2 cards per row | 2 cards per row | 2 cards per row | 3 cards per row | 3 cards per row |
+
+Invalid tokens are ignored. A value that contains only `none` tokens and no `sm` token would never stack, so it is ignored as a whole and the default `sm-1 md-none` applies.
+
+### Custom Breakpoint Widths
+
+The breakpoint widths are stored in the client-side static `zul.sel.Listbox.RESPONSIVE_BREAKPOINTS`. Any breakpoint you assign there replaces the default of the same name; the others keep their defaults. Set it before the listboxes are rendered, for example in a script that runs after the `zkmax` package is loaded:
+
+```javascript
+zk.afterLoad('zkmax', function () {
+    zul.sel.Listbox.RESPONSIVE_BREAKPOINTS = { md: 900 };
+});
+```
+
+## Hiding Columns in Stacking Mode
+
+A card is taller than a table row, so you may want to leave secondary columns out of it. Set `responsiveVisible="false"` on a [Listheader]({{site.baseurl}}/zk_component_ref/listheader#responsivevisible) to hide its column in stacking mode only. The column is still shown in table mode. A listheader with `visible="false"` is hidden in both modes.
+
+```xml
+<listbox responsive="stacking" responsiveColumns="sm-1 md-2 xl-none">
+    <listhead>
+        <listheader label="Order"/>
+        <listheader label="Customer"/>
+        <listheader label="Sales rep" responsiveVisible="false"/>
+        <listheader label="Total" align="right"/>
+    </listhead>
+    <!-- listitems -->
+</listbox>
+```
+
+## How Listbox Features Look in Stacking Mode
+
+- **Selection**: selection, striping (`oddRowSclass`) and keyboard focus apply to whole cards. With `checkmark="true"`, the checkbox or radio button sits at the leading edge of each card, even when the first column has `responsiveVisible="false"`.
+- **Listgroup and Listgroupfoot**: a group header spans the whole row of cards. A group footer is shown as a card with labels, and its empty cells are left out.
+- **Listfoot**: the footer is shown as a full-width card below the items, with the listheader labels as captions and empty cells left out.
+- **Cells spanning several columns** (`span`): shown without a caption, since they do not belong to a single column.
+- **Listheaders without a label**: the cell is shown without a caption. A listbox without a `listhead` has no captions at all.
+- **Frozen**: `frozen` has no meaning for cards and is hidden while stacking.
+- **Dynamic changes**: adding, removing or hiding items, changing cell or header labels, paging and render on demand (ROD) all keep the cards up to date.
+- **Select mold**: `mold="select"` renders a native `<select>` element and never stacks.
+
+## Reacting to Layout Changes
+
+When the listbox switches between table and stacking mode, it fires `onResponsiveModeChange`. The event data is a map whose `mode` entry is `"table"` or `"stacking"`. The event is not fired for the layout chosen when the listbox is first rendered, only for later switches.
+
+```java
+@Listen("onResponsiveModeChange = #orders")
+public void onModeChange(Event event) {
+    String mode = (String) ((Map<?, ?>) event.getData()).get("mode");
+    exportButton.setVisible("table".equals(mode));
+}
+```
+
+## Applying to Many Listboxes
+
+To enable stacking for all listboxes of an application, a page or a component subtree, set the [custom attributes](#orgzkosszullistboxresponsive) `org.zkoss.zul.listbox.responsive` and `org.zkoss.zul.listbox.responsive.columns` instead of setting the properties on each listbox. A listbox can still opt out with `responsive="none"`.
+
 # Accessibility
 
 {% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
@@ -1438,6 +1541,53 @@ Specifies an external paging controller (a component that implements `org.zkoss.
 </listbox>
 ```
 
+## Responsive
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+**Default Value:** `null` (inherits from the `org.zkoss.zul.listbox.responsive` custom attribute or library property)
+
+Sets the responsive policy for the listbox. When set to `"stacking"`, each list item becomes a card of label/value pairs when the listbox width falls below the configured breakpoint (ZK EE). Set to `"none"` to explicitly disable responsive behaviour even if a global setting is active. See [Responsive Stacking Listbox](#responsive-stacking-listbox-ee).
+
+| Value | Meaning |
+|---|---|
+| `"stacking"` | List items stack into cards at narrow widths (EE only). |
+| `"none"` | Disables responsive mode, overriding any global setting. |
+| `null` | Inherits from `org.zkoss.zul.listbox.responsive`; no responsive if unset. |
+
+Any value other than the three above throws `WrongValueException`. An empty string is treated as `null`.
+
+```xml
+<listbox responsive="stacking" responsiveColumns="sm-1 md-none">
+    <listhead>
+        <listheader label="Name"/>
+        <listheader label="Value"/>
+    </listhead>
+</listbox>
+```
+
+## ResponsiveColumns
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+**Default Value:** `null` (inherits from the `org.zkoss.zul.listbox.responsive.columns` custom attribute or library property; the framework default resolved by the client is `"sm-1 md-none"`)
+
+Sets the responsive columns token string used in stacking mode. The value is a whitespace-separated list of Bootstrap-style breakpoint tokens in the form `<breakpoint>-<value>`, where breakpoint is one of `sm`, `md`, `lg`, `xl`, `xxl` and value is either a positive integer (number of cards per row in stacking layout) or `none` (switch back to table layout at and above this breakpoint). The string is stored verbatim; parsing and cascade resolution happen on the client side. Invalid tokens are silently dropped by the client resolver. See [Breakpoints and Cards per Row](#breakpoints-and-cards-per-row).
+
+This attribute has no effect unless `responsive="stacking"` is also set (or inherited).
+
+```xml
+<listbox responsive="stacking" responsiveColumns="sm-1 md-2 lg-none">
+    <listhead>
+        <listheader label="Name"/>
+        <listheader label="Department"/>
+        <listheader label="Salary"/>
+    </listhead>
+</listbox>
+```
+
 ## SelectedIndex
 
 **Default Value:** `-1` (nothing selected)
@@ -1593,6 +1743,43 @@ and not paging
 It specifies whether to enable autohide property for internal paging
 component.
 
+## org.zkoss.zul.listbox.responsive
+
+`[default: null]`  
+`[inherit: true]`
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+It specifies the default [responsive](#responsive) policy, `stacking` or `none`, of the listboxes that do not set `responsive` themselves. An invalid value is ignored with a warning in the server log. Like the other custom attributes, it can be set on a component, a page or as a library property in `zk.xml`:
+
+```xml
+<library-property>
+    <name>org.zkoss.zul.listbox.responsive</name>
+    <value>stacking</value>
+</library-property>
+```
+
+## org.zkoss.zul.listbox.responsive.columns
+
+`[default: null]`  
+`[inherit: true]`
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+It specifies the default [responsiveColumns](#responsivecolumns) of the listboxes that do not set `responsiveColumns` themselves. When neither is set, the client uses `sm-1 md-none`.
+
+```xml
+<div>
+    <custom-attributes org.zkoss.zul.listbox.responsive="stacking"
+            org.zkoss.zul.listbox.responsive.columns="sm-2 md-none"/>
+    <listbox>
+        <!-- stacks with 2 cards per row below 768px -->
+    </listbox>
+</div>
+```
+
 # Supported Events
 
 | Name | Event Type | Description |
@@ -1609,6 +1796,7 @@ component.
 | `onDataLoading` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the listbox is about to load data from the `ListModel` (e.g. during ROD lazy-load or paging). You can listen to this event to show a loading indicator. |
 | `onAcrossPage` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when a selection crosses a page boundary in paging mold (e.g. shift-selecting across pages). Used internally to synchronize multi-page selections. |
 | `onAnchorPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the anchor position of the listbox is updated on the client, used internally to keep the server-side scroll anchor in sync during ROD. |
+| `onResponsiveModeChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | {% include supported-since.html version="11.0.0" %} Fired by the client when the listbox's resolved stacking mode transitions between `"table"` and `"stacking"` (ZK EE). The event data is a map whose `mode` entry holds the new mode. Not fired for the initial layout. |
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
 
