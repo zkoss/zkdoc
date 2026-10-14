@@ -17,7 +17,7 @@ title: "Chip"
 <chip label="Information" severity="info"/>
 <chip label="Approved" severity="success"/>
 <chip label="Warning" severity="warning"/>
-<chip label="Blocked" severity="danger"/>
+<chip label="Blocked" severity="error"/>
 <chip label="Filter" rounded="true" closable="true"
       onClose='Clients.log("closed")'/>
 ```
@@ -32,7 +32,7 @@ These values are inherited from `LabelImageElement`. `image` and `iconSclass` ad
 
 **Default Value:** `info`
 
-Allowed values are `info`, `success`, `warning`, `danger`, and `secondary`.
+Allowed values are `info`, `success`, `warning`, `error`, and `neutral`. Other values cause a `WrongValueException`.
 
 ## Size
 

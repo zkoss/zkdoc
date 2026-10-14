@@ -17,8 +17,8 @@ title: "Confirmpopup"
 <button label="Delete" onClick="confirm.open(self)"/>
 <confirmpopup id="confirm"
               placement="top"
-              severity="danger"
-              header="Confirm delete"
+              severity="error"
+              title="Confirm delete"
               message="This cannot be undone. Continue?"
               defaultFocus="cancel"
               onOK='Clients.showNotification("Deleted")'/>
@@ -28,9 +28,9 @@ The OK and Cancel labels come from ZK's locale bundle.
 
 # Properties
 
-## Header and Message
+## Title and Message
 
-`header` sets the title and `message` sets the main prompt. A `null` header hides the title row.
+`title` sets the title row and `message` sets the main prompt. A `null` or empty title hides the title row.
 
 ## IconSclass
 
@@ -42,7 +42,7 @@ Set an icon font class, set an empty string to hide the icon, or set `null` to r
 
 **Default Value:** `warning`
 
-Allowed values are `info`, `success`, `warning`, `danger`, and `secondary`.
+Allowed values are `info`, `success`, `warning`, `error`, and `neutral`. Other values cause a `WrongValueException`.
 
 ## Placement
 
