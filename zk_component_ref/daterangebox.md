@@ -27,7 +27,7 @@ The `value` is an [org.zkoss.zul.DateRange](https://www.zkoss.org/javadoc/latest
 
 # Working with Values
 
-Use `value` to read or replace both endpoints atomically. You can also bind `beginValue` and `endValue` separately.
+Use `value` to read or replace both endpoints atomically. You can also bind `beginValue` and `endValue` separately (see [Data Binding](#data-binding)).
 
 ```java
 DateRange range = daterangebox.getValue();
@@ -38,6 +38,37 @@ daterangebox.setValue(DateRange.of(begin, end));
 ```
 
 Java Time variants are available for `LocalDate`, `LocalDateTime`, and `ZonedDateTime`. For example, use `getValueInLocalDate()` and `setValueInLocalDate(LocalDateRange)` when the application works with calendar dates rather than `java.util.Date`.
+
+## Data Binding
+
+Every value property supports two-way MVVM binding with `@bind`, `@load`, and `@save`. Pick the property that matches the type your ViewModel uses: either the whole range in one property, or the begin and end values in two separate properties.
+
+| Type | Whole range | Begin and end separately |
+|---|---|---|
+| `java.util.Date` | `value` ([DateRange](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DateRange.html)) | `beginValue`, `endValue` |
+| `java.time.LocalDate` | `valueInLocalDate` (`LocalDateRange`) | `beginValueInLocalDate`, `endValueInLocalDate` |
+| `java.time.LocalDateTime` | `valueInLocalDateTime` (`LocalDateTimeRange`) | `beginValueInLocalDateTime`, `endValueInLocalDateTime` |
+| `java.time.ZonedDateTime` | `valueInZonedDateTime` (`ZonedDateTimeRange`) | `beginValueInZonedDateTime`, `endValueInZonedDateTime` |
+
+All of them are saved to the ViewModel on `onChange`, that is, once the user commits a range, not while the range is being picked. When the begin and end values are bound separately, both are saved on the same `onChange`.
+
+```xml
+<daterangebox beginValueInLocalDate="@bind(vm.checkIn)"
+              endValueInLocalDate="@bind(vm.checkOut)"/>
+```
+
+```java
+public class BookingVM {
+    private LocalDate checkIn = LocalDate.now();
+    private LocalDate checkOut = LocalDate.now().plusDays(3);
+
+    public LocalDate getCheckIn() { return checkIn; }
+    public void setCheckIn(LocalDate checkIn) { this.checkIn = checkIn; }
+
+    public LocalDate getCheckOut() { return checkOut; }
+    public void setCheckOut(LocalDate checkOut) { this.checkOut = checkOut; }
+}
+```
 
 # Properties
 
@@ -129,7 +160,7 @@ Set commonly used defaults with library properties:
 | `onOpen` | **Event:** [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) Fired when the popup opens or closes. |
 | `onError` | **Event:** [org.zkoss.zk.ui.event.ErrorEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ErrorEvent.html) Fired for invalid input. |
 
-`RangeChangeEvent` is not an `InputEvent`; do not read `event.value`. MVVM binding continues to work through `value`, `beginValue`, and `endValue`.
+`RangeChangeEvent` is not an `InputEvent`; do not read `event.value`. MVVM binding continues to work through the value properties listed in [Data Binding](#data-binding).
 
 # Supported Children
 
