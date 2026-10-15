@@ -201,3 +201,6 @@ file, resolve against BOTH repo roots:
 
 The graph is AST-only (structural) — use it to locate and relate code, then read
 the real source file for exact implementation.
+## 工作守則
+
+- **文件撰寫一律走 `zk-technical-writer` skill**：只要有人（使用者或其他 Claude session）請本 session 撰寫或修改文件內容，先呼叫 `zk-technical-writer` skill，再依其流程動筆，不要直接手改 `.md`。
