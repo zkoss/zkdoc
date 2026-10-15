@@ -7,7 +7,7 @@ description: "Fisheyebar: A fisheye bar is a bar of fisheye that is a menu simil
 - **Java API:** [org.zkoss.zkex.zul.Fisheyebar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Fisheyebar.html)
 - **JavaScript API:** [zkex.menu.Fisheyebar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.menu.Fisheyebar.html)
 
-{% include edition-availability.html edition="ee" %}
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
@@ -166,15 +166,15 @@ Sets the orientation of the fisheye bar. Use `vertical` to arrange items top-to-
 
 **Default Value:** `center`
 
-Sets the edge from which each item zooms outward when hovered. For a horizontal bar the meaningful values are `top`, `bottom`, and `center`; `left` and `right` apply when `orient="vertical"`.
+Sets the edge from which each item zooms outward when hovered. The valid values depend on `orient`; a value that does not match the orientation is treated as `center`.
 
 | Value | Meaning |
 |---|---|
 | `center` | Items expand symmetrically from the center (default) |
-| `top` | Items expand downward from the top edge |
-| `bottom` | Items expand upward from the bottom edge |
-| `left` | Items expand rightward from the left edge (vertical orient) |
-| `right` | Items expand leftward from the right edge (vertical orient) |
+| `top` | Items expand downward from the top edge (horizontal only) |
+| `bottom` | Items expand upward from the bottom edge (horizontal only) |
+| `left` | Items expand rightward from the left edge (vertical only) |
+| `right` | Items expand leftward from the right edge (vertical only) |
 
 ```xml
 <fisheyebar attachEdge="bottom">
@@ -186,15 +186,16 @@ Sets the edge from which each item zooms outward when hovered. For a horizontal 
 
 **Default Value:** `bottom`
 
-Sets the edge where the item label is displayed relative to each `<fisheye>` icon. For a horizontal bar the meaningful values are `top`, `bottom`, and `center`; `left` and `right` apply when `orient="vertical"`.
+Sets the edge where the item label is displayed relative to each `<fisheye>` icon. The label is always placed outside the icon; there is no overlay position. The valid values depend on `orient`:
 
 | Value | Meaning |
 |---|---|
-| `bottom` | Label appears below the icon (default) |
-| `top` | Label appears above the icon |
-| `center` | Label appears overlaid at the center of the icon |
-| `left` | Label appears to the left of the icon (vertical orient) |
-| `right` | Label appears to the right of the icon (vertical orient) |
+| `bottom` | Label appears below the icon (default; horizontal only) |
+| `top` | Label appears above the icon (horizontal only) |
+| `left` | Label appears to the left of the icon (vertical only) |
+| `right` | Label appears to the right of the icon (vertical only) |
+
+Other values fall back as follows: `center` is treated as `top`; on a horizontal bar, `left` and `right` are treated as `top`; on a vertical bar, `top` and `bottom` are treated as `left`. So a vertical bar with the default `labelEdge` shows labels on the left.
 
 ```xml
 <fisheyebar labelEdge="top">

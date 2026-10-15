@@ -7,7 +7,7 @@ description: "Rangeslider: A rangeslider component represents a slider with a st
 - **Java API:** [org.zkoss.zkex.zul.Rangeslider](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkex/zul/Rangeslider.html)
 - **JavaScript API:** [zkex.slider.Rangeslider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkex.slider.Rangeslider.html)
 
-{% include edition-availability.html edition="ee" %}
+{% include edition-availability.html edition="pe" %}
 {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
@@ -107,6 +107,28 @@ Sets the marks information map for displaying value marks. In this map,
 the key represents the number value of slider, and the value represents
 the displayed scale text.
 
+The attribute accepts only a `Map<Integer, String>`, so assign it with an
+EL expression or data binding. A literal string such as
+`marks="10:10%, 20:20%"` is not converted and causes a
+`ClassCastException`.
+
+```xml
+<rangeslider marks="@init(vm.marks)" startValue="20" endValue="80"/>
+```
+
+```java
+// in the ViewModel
+public Map<Integer, String> getMarks() {
+    Map<Integer, String> marks = new LinkedHashMap<>();
+    marks.put(10, "10%");
+    marks.put(50, "50%");
+    marks.put(90, "90%");
+    return marks;
+}
+```
+
+`marks` and a positive `markScale` cannot be used at the same time.
+
 ## MarkScale
 
 {% include DefaultValue.md value="20" %}
@@ -116,10 +138,12 @@ Sets the marks information for displaying value marks.
 By default, the value marks will be displayed every 20 starting from the
 minimum value. (if min is 0, then it displays "0 20 40 ...")
 
-If the MarkScale is 0 and there is no Map information in Marks (see
-above), the marks will be empty.
+Setting `markScale="0"` does not hide the marks: a value of 0 is not sent
+to the browser, so the marks are still displayed every 20.
 
-![Rangeslider No Marks](/zk_component_ref/images/ZKComRef_RangesliderNoMarks.png)
+```xml
+<rangeslider markScale="25"/> <!-- displays 0 25 50 75 100 -->
+```
 
 ## Max
 

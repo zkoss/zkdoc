@@ -7,11 +7,20 @@ description: "Captcha: A captcha component can generate a special distortion ima
 - **Java API:** [org.zkoss.zul.Captcha](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Captcha.html)
 - **JavaScript API:** [zul.wgt.Captcha](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zul.wgt.Captcha.html)
 
-{% include edition-availability.html edition="ee" %}
+{% include edition-availability.html edition="pe" %}
 
 # Employment/Purpose
 
 A `captcha` component can generate a special distortion image, also called a CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) image. By default, the captcha renders the image with randomly generated text, and developers can set `value` to assign a specific text.
+
+> **Note:** The `Captcha` class is in `zul.jar`, but it draws its image with a captcha engine named by the library property `org.zkoss.zul.captcha.engine.class`. Only ZK PE and EE set this property (to `org.zkoss.zkex.zul.impl.JHLabsCaptchaEngine`, which needs `Filters.jar`). Without it, rendering a captcha throws a `UiException` saying that this library property is required. To use `captcha` with ZK CE, implement `org.zkoss.zul.impl.CaptchaEngine` and register it in `zk.xml`:
+>
+> ```xml
+> <library-property>
+>     <name>org.zkoss.zul.captcha.engine.class</name>
+>     <value>com.example.MyCaptchaEngine</value>
+> </library-property>
+> ```
 
 ## Common Use Cases
 
