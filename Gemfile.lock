@@ -60,6 +60,7 @@ GEM
     faraday-patron (1.0.0)
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
+    ffi (1.17.0)
     ffi (1.17.0-x86_64-darwin)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
@@ -237,12 +238,16 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    mini_portile2 (2.6.1)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.15.0)
     multipart-post (2.4.1)
+    nokogiri (1.12.5)
+      mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -284,6 +289,7 @@ GEM
     zeitwerk (2.6.16)
 
 PLATFORMS
+  -darwin-24
   x86_64-darwin-18
 
 DEPENDENCIES

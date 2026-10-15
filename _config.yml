@@ -193,6 +193,7 @@ exclude:
   - "*.sh"
   - tasks/
   - .venv
+  - venv/
   - .claude
   - .github
 

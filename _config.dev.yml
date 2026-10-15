@@ -21,6 +21,7 @@ exclude:
   - "CLAUDE.md"
   - "*.sh"
   - tasks/
+  - venv/
 
 # Limit the number of posts to process (if not excluded)
 limit_posts: 50
