@@ -204,3 +204,4 @@ the real source file for exact implementation.
 ## 工作守則
 
 - **文件撰寫一律走 `zk-technical-writer` skill**：只要有人（使用者或其他 Claude session）請本 session 撰寫或修改文件內容，先呼叫 `zk-technical-writer` skill，再依其流程動筆，不要直接手改 `.md`。
+- **每個元件頁都要有 Supported Events 區塊**：`zk_component_ref/` 的元件頁一律要有這一節（放在 Supported Children 之前、標題層級與同頁兄弟章節一致）。元件沒有自己的事件時，寫 `- Inherited Supported Events: [Parent](.../parent#supported-events)` 連到 parent class 的同一節；根類別（AbstractComponent）寫 `None`。連結指向缺這一節的頁面時，補區塊，不要拿掉 anchor。
