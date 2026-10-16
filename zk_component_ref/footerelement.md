@@ -10,5 +10,9 @@ description: "FooterElement: The ZK Footer Element, represented by the FooterEle
 
 The ZK Footer Element, represented by the `FooterElement` class in the Java API and `FooterWidget` in the JavaScript API, serves as a skeletal implementation for a footer within a ZK application. Footers are commonly used to display copyright information, navigation links, or other relevant information at the bottom of a webpage or application interface. 
 
+## Supported Events
+
+- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
+
 ## Supported Children
 `*ALL`: Indicates that the FooterElement can have any kind of ZK component as its child element. This means that you can include any ZK component within the custom component that extends FooterElement, providing flexibility and customization options for your designs.

@@ -122,7 +122,7 @@ You will see the Box width exceed 200px. Also check the
 
 # Supported Events
 
-- Inherited Supported Events: [ Box]({{site.baseurl}}/zk_component_ref/box#Supported_Events)
+- Inherited Supported Events: [ Box]({{site.baseurl}}/zk_component_ref/box#supported-events)
 
 # Supported Children
 

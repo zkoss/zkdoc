@@ -98,7 +98,7 @@ Sets the number of columns this cell spans across, equivalent to the HTML `colsp
 
 # Supported Events
 
-- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+- Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
 
 # Supported Children
 

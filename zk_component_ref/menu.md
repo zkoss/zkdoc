@@ -99,7 +99,7 @@ A special shorthand `#color=#RRGGBB` renders an inline color-swatch box. When co
 | onClick | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Fired when the user clicks the main button area of the menu (the label/icon side, not the arrow that opens the popup). |
 | onChange | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Fired when the color value changes — only applicable when `content` is set to a `#color=#RRGGBB` value. The new color string is available via `event.value`. |
 
-Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
 
 # Supported Children
 

@@ -236,6 +236,10 @@ Controls whether each cell's size is determined by its content. When `true` (the
 
 The mold determines the default orientation of the box. `horizontal` is equivalent to using the `<hbox>` element; `vertical` is equivalent to using the `<vbox>` element. The mold can also be set via the [`orient`](#orient) attribute.
 
+# Supported Events
+
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
+
 # Supported Children
 
 `*ALL`

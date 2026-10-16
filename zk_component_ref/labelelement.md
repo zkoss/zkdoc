@@ -21,6 +21,10 @@ The text label displayed by this element. The getter never returns `null`; if no
 <button label="Hello World"/>
 ```
 
+# Supported Events
+
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
+
 # Supported Children
 
 `*ALL`: Allows encoding any ZK component as its child.

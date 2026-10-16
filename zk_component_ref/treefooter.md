@@ -70,7 +70,7 @@ See also: [Tree — Use Cases]({{site.baseurl}}/zk_component_ref/tree#use-cases)
 
 # Supported Events
 
-- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#Supported_Events)
+- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#supported-events)
 
 # Supported Children
 

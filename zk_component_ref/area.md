@@ -103,7 +103,7 @@ See [coords](#coords) for the coordinate format that corresponds to each shape.
 
 # Supported Events
 
-- Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#Supported_Events)
+- Inherited Supported Events: [ AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#supported-events)
 
 # Supported Children
 

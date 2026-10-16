@@ -55,7 +55,7 @@ A fisheye item
 
 # Supported Events
 
-Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
 
 # Supported Children
 

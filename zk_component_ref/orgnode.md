@@ -84,7 +84,7 @@ Orgnode is used as the visual content container inside an `<orgitem>`. It accept
 
 # Supported Events
 
-Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events)
+Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
 
 # Supported Children
 

@@ -53,7 +53,7 @@ See [Grid — Common Use Cases]({{site.baseurl}}/zk_component_ref/grid#common-us
 
 # Supported Events
 
-- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#Supported_Events)
+- Inherited Supported Events: [ FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#supported-events)
 
 # Supported Children
 

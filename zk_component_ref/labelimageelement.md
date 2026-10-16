@@ -129,6 +129,10 @@ Specifies multiple icon tooltips, one per icon (a space-separated list aligned w
 <button iconSclasses="z-icon-star z-icon-bell" iconTooltips="Favorite Notify"/>
 ```
 
+# Supported Events
+
+- Inherited Supported Events: [LabelElement]({{site.baseurl}}/zk_component_ref/labelelement#supported-events)
+
 # Supported Children
 
 `*ALL`: Allows encoding any ZK component as its child.

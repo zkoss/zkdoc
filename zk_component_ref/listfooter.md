@@ -62,7 +62,7 @@ Note: `Listcell` also accepts children.
 
 No additional events; all applicable events are inherited.
 
-Inherited Supported Events: [FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#Supported_Events)
+Inherited Supported Events: [FooterElement]({{site.baseurl}}/zk_component_ref/footerelement#supported-events)
 
 # Supported Children
 

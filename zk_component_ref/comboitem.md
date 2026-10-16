@@ -86,7 +86,7 @@ Construct the object in `<zscript>` or a ViewModel/Composer and bind it via EL:
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| (inherited) | — | [Inherited Supported Events]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events) from LabelImageElement |
+| (inherited) | — | [Inherited Supported Events]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events) from LabelImageElement |
 
 # Supported Children
 

@@ -181,7 +181,7 @@ Use `src` to load a standalone JS file, or use `content` (or the element body) t
 | Name | Event Type | Description |
 |------|------------|-------------|
 
-Inherited Supported Events: [AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#Supported_Events)
+Inherited Supported Events: [AbstractComponent]({{site.baseurl}}/zk_component_ref/abstractcomponent#supported-events)
 
 # Supported Children
 

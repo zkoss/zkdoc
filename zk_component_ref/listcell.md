@@ -64,7 +64,7 @@ Because the value is an arbitrary Java object, set it from a `<zscript>` block o
 
 # Supported Events
 
-Listcell does not define any own events. Inherited events are listed on the [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#Supported_Events) ancestor page.
+Listcell does not define any own events. Inherited events are listed on the [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events) ancestor page.
 
 # Supported Children
 
