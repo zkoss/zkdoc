@@ -17,8 +17,8 @@ Insert a `<menuseparator/>` inside a `<menupopup>` to draw a horizontal dividing
 
 For broader usage patterns shared across the menu family, see:
 
-- [Menu — Use Cases]({{site.baseurl}}/zk_component_ref/menu#Use_Cases)
-- [Menubar — Use Cases]({{site.baseurl}}/zk_component_ref/menubar#Use_Cases)
+- [Menu — Use Cases]({{site.baseurl}}/zk_component_ref/menu#common-use-cases)
+- [Menubar — Use Cases]({{site.baseurl}}/zk_component_ref/menubar#common-use-cases)
 
 # Example
 

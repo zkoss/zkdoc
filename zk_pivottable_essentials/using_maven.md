@@ -111,8 +111,8 @@ Please check [Add ZK Maven Repository to Your Projects](/zk_installation_guide/m
 If you have problem switching from the evaluation repository to the
 licensed one, please check the followings:
 
-- **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Repository)
-- [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
+- **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/using_maven#configure-repository)
+- [Login authentication]({{site.baseurl}}/zk_installation_guide/maven_setup#login-authentication)
 - [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/using_maven#purge-local-repository-evaluation-cache)
 
 #### Purge local repository evaluation cache

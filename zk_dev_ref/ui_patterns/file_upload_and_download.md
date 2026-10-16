@@ -90,7 +90,7 @@ and [org.zkoss.zul.Filedownload](https://www.zkoss.org/javadoc/latest/zk/org/zko
 
 Clicking a file download link terminates client engine to work, please
 refer to
-[{{site.baseurl}}/zk_component_ref/a#File_Download_Link]({{site.baseurl}}/zk_component_ref/a#File_Download_Link)
+[{{site.baseurl}}/zk_component_ref/a#file-download-via-download-attribute]({{site.baseurl}}/zk_component_ref/a#file-download-via-download-attribute)
 for correct usages.
 
 [^1]: If you enabled the use of event threads, you could use

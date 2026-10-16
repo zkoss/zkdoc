@@ -143,7 +143,7 @@ message, redirecting to another page, or running some JavaScript code).
 ## Page-level Automatic Timeout
 
 If you want to specify whether to automatically timeout for particular
-pages, you can use [ the page directive](/zuml_ref/page#automaticTimeout).
+pages, you can use [ the page directive](/zuml_ref/processing_instructions/page#automatictimeout).
 
 Moreover, it is better to turn off the automatic timeout for the timeout
 page you want to redirect to (if the page is a ZUML page). For example,

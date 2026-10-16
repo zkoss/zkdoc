@@ -49,7 +49,7 @@ try the evaluation version.
 
 ### Premium users only
 
-- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
+- <span style="color:red">**Notice**</span>: Need [Login authentication]({{site.baseurl}}/zk_installation_guide/maven_setup#login-authentication)
 
 If you are our customer, please apply for a premium maven account to use
 ZK Premium Maven Repository.

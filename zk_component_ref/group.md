@@ -17,7 +17,7 @@ Default getSclass(): the same as grid's sclass.
 
 ## Common Use Cases
 
-[Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
+[Grid]({{site.baseurl}}/zk_component_ref/grid#group-component)
 
 # Example
 

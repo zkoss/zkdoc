@@ -572,7 +572,7 @@ can help.
 
 - check compression settings → should **not** be disabled (enabled by
   default)
-  - [ZK AU Engine](/zk_config_ref/zk_au_engine#The_Initial_Parameters)
+  - [ZK AU Engine](/zk_config_ref/zk_au_engine)
   - [ZK Loader](/zk_config_ref/zk_loader#the-initial-parameters)
 
 - consider/check render on demand settings

@@ -134,7 +134,7 @@ Allow the panel to collapse to free up horizontal space:
 </borderlayout>
 ```
 
-For additional layout examples, see [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#Use_Cases).
+For additional layout examples, see [Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#common-use-cases).
 
 # Supported Events
 

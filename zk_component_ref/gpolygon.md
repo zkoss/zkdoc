@@ -63,7 +63,7 @@ Set `fill="false"` to draw only the polygon border without shading the interior 
 
 {% include supported-since.html version="3.3.0" %}
 
-see: [ Gpolyline - Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/gpolyline#Disable_Path_Encoding)
+see: [ Gpolyline - Disable_Path_Encoding]({{site.baseurl}}/zk_component_ref/gpolyline#pathencoded)
 
 # Properties
 

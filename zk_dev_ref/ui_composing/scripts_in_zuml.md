@@ -211,7 +211,7 @@ The default interpreter is based on
 ## Scope for Each ID Space
 
 The Java interpreter is a *multi-scope* interpreter. It creates a scope
-for each [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#ID_Space).
+for each [ID space]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space).
 Since ID space is hierarchical, so are the scopes. If a variable cannot
 be found in the current ID space, it will go further to parent's ID
 space to try to resolve the variable.

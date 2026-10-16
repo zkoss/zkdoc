@@ -11,7 +11,7 @@ of the projects aimed at integrating [Apache Maven](https://maven.apache.org/) w
 
 Please follow the installation guide for your Eclipse:
 
-[ Install Eclipse](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio#Install_Eclipse)
+[ Install Eclipse](/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_zk_studio#eclipse-ide-for-java-ee-developers)
 
 ## Install M2eclipse
 
@@ -52,7 +52,7 @@ there are two possible workarounds:
     latest M2eclipse plugin from the Installing m2eclipse website.)
 3.  Create the plugin from the archetype using the Maven command line
     tool mvn, then use import existing maven project to add the
-    generated project to Eclipse. For more details, please refer to [ Use the command line version of Maven to create a project](#Use_the_command_line_version_of_Maven_to_create_a_project).
+    generated project to Eclipse. For more details, please refer to [ Use the command line version of Maven to create a project](#create-a-maven-project-with-a-command-line-interface).
 
 # Create a "Hello World" application with ZK Maven Archetype
 

@@ -14,7 +14,7 @@ Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/footer)) 
 
 ## Common Use Cases
 
-[ Grid]({{site.baseurl}}/zk_component_ref/grid#Use_Cases)
+[ Grid]({{site.baseurl}}/zk_component_ref/grid#common-use-cases)
 
 # Example
 
