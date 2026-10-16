@@ -14,7 +14,7 @@ child.
 
 ## Common Use Cases
 
-For common use cases such as collapsible panels, splittable regions, and nested border layouts, see [Borderlayout — Common Use Cases]({{site.baseurl}}/zk_component_ref/borderlayout#Common_Use_Cases).
+For common use cases such as collapsible panels, splittable regions, and nested border layouts, see [Borderlayout — Common Use Cases]({{site.baseurl}}/zk_component_ref/borderlayout#common-use-cases).
 
 # Example
 
@@ -68,7 +68,7 @@ For common use cases such as collapsible panels, splittable regions, and nested 
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#how-to-layout).
 
 # Properties
 
@@ -93,7 +93,7 @@ Note that `height` cannot be set on an `east` region; its height is determined b
 
 # Supported Events
 
-The east region does not define any events of its own; refer to [LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#Supported_Events) for inherited events.
+The east region does not define any events of its own; refer to [LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#supported-events) for inherited events.
 
 # Supported Children
 

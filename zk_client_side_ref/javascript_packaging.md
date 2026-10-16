@@ -56,7 +56,7 @@ First, create a `lang-addon.xml` file, for example in `WEB-INF/lang-addon.xml`:
     <javascript src="/zkpatch/mypatch2.js"/>
 </language-addon>
 ```
-- A path starting with `~./` is a [classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#Classpath_Web_Resource_Path) which is a special path supported by ZK to load resources from classpath.
+- A path starting with `~./` is a [classpath web resource path]({{site.baseurl}}/zk_dev_ref/ui_composing/include_a_page#classpath-web-resource-path) which is a special path supported by ZK to load resources from classpath.
 - You can also link a file under your web application context root e.g. `/zkpatch/mypatch2.js`.
 
 Then, you must register this language addon in `WEB-INF/zk.xml`:

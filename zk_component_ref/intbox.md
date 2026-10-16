@@ -52,7 +52,7 @@ When bound to a ViewModel:
 
 # Supported Events
 
-- Inherited Supported Events: [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#Supported_Events)
+- Inherited Supported Events: [NumberInputElement]({{site.baseurl}}/zk_component_ref/numberinputelement#supported-events)
 
 # Supported Molds
 

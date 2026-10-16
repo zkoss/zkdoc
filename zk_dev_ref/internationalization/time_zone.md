@@ -85,7 +85,7 @@ mentioned above.
 # The Request Interceptor
 
 Like configuring a locale, you can prepare the time zone for the given
-session by the use of the request interceptor. Please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale#The_Request_Interceptor)
+session by the use of the request interceptor. Please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale#the-request-interceptor)
 for more information.
 
 # Resolving Time Zone Data Version Mismatch

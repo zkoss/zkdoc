@@ -51,7 +51,7 @@ Defines a set of footers ( [ Footer]({{site.baseurl}}/zk_component_ref/footer)) 
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

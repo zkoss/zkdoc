@@ -18,7 +18,7 @@ You could place any child in a tree footer.
 - **Spanning multiple columns:** Use the inherited `span` attribute (from `FooterElement`) to have a single footer cell stretch across several columns, useful when one summary applies to a whole group of columns.
 - **Mixed content footers:** Because `<treefooter>` accepts `*ALL` children, you can embed a `<label>`, `<textbox>`, or any other ZUL component inside the footer cell for interactive or richly formatted summaries.
 
-See also: [Tree — Use Cases]({{site.baseurl}}/zk_component_ref/tree#Use_Cases)
+See also: [Tree — Use Cases]({{site.baseurl}}/zk_component_ref/tree#use-cases)
 
 # Example
 

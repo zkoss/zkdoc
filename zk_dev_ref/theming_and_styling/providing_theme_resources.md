@@ -95,7 +95,7 @@ is called to disallow the browser to cache the CSS file. It is necessary
 since we manipulate the content of the CSS file by setting the
 attributes (based on the cookie). It means the content might be
 different with the same request URL. For a cacheable example, please
-refer to [the next section](#A_Cacheable_Example).
+refer to [the next section](#a-cacheable-example).
 
 Then, you configure `WEB-INF/zk.xml` by adding the following lines.
 

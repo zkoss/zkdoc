@@ -189,7 +189,7 @@ The value is a generic object (`<T>`); set it from a composer or ViewModel and r
 \*(1) {% include edition-availability.html edition="pe" inline=true %}
 \*(2) {% include supported-since.html version="6.5.0" %}
 
-- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
+- Inherited Supported Events: [ HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#supported-events)
 
 # Supported Children
 

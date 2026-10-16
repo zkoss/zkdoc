@@ -216,7 +216,7 @@ For more details, refer to the [`data-scrollable` client attribute documentation
 
 ## Toggle Popup
 
-The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup Component]({{site.baseurl}}/zk_component_ref/popup#Toggle_Popup)
+The context-menu/popup supports toggle type in ZK 7.0.0. Check [ Popup Component]({{site.baseurl}}/zk_component_ref/popup#toggle-popup)
 for detailed description.
 
 ## Override the Reference Component

@@ -271,7 +271,7 @@ Sets the width of the bandpopup dropdown. Accepts any valid CSS length value (e.
 |---|---|---|
 | `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. Note: unlike onClose, this event is only a notification. The client sends this event after opening or closing the component. |
 
-- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
+- Inherited Supported Events: [ Textbox]({{site.baseurl}}/zk_component_ref/textbox#supported-events)
 
 # Supported Molds
 

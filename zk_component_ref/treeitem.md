@@ -73,7 +73,7 @@ button.
  </window>
 ```
 
-More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/tree#The_open_Property_and_the_onOpen_Event)
+More examples please refer to [ Tree]({{site.baseurl}}/zk_component_ref/tree#the-open-property-and-the-onopen-event)
 
 # Label and Image
 
@@ -310,7 +310,7 @@ always returning True (meaning that by default, all TreeItems will be
 marked as selectable during rendering)
 
 Refer to
-[{{site.baseurl}}/zk_dev_ref/mvc/tree_model#Selection]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#Selection)
+[{{site.baseurl}}/zk_dev_ref/mvc/tree_model#Selection]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#selection)
 in regard to SelectionControl customization.
 
 # Supported Events
@@ -319,7 +319,7 @@ in regard to SelectionControl customization.
 |---|---|---|
 | `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. It is useful to implement load-on-demand by listening to the onOpen event, and creating components when the first time the component is opened. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

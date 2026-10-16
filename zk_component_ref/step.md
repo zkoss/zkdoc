@@ -104,7 +104,7 @@ accordingly.
 ```
 
 Please read
-[{{site.baseurl}}/zk_component_ref/labelimageelement#IconSclass]({{site.baseurl}}/zk_component_ref/labelimageelement#IconSclass)
+[{{site.baseurl}}/zk_component_ref/labelimageelement#IconSclass]({{site.baseurl}}/zk_component_ref/labelimageelement#iconsclass)
 to know more available build-in icons.
 
 ## Title
@@ -115,7 +115,7 @@ Set the title (label) of each step. (Default: empty)
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| (Inherited) | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events) | See parent component for supported events |
+| (Inherited) | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events) | See parent component for supported events |
 
 # Supported Children
 

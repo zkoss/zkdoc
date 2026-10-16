@@ -131,7 +131,7 @@ Sets the orientation of the stepbar. Accepted values:
 
 ## Model
 
-The step model associated with this stepbar. (Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
+The step model associated with this stepbar. (Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#model-driven-rendering))
 
 You can use [org.zkoss.zkmax.zul.DefaultStepModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/DefaultStepModel.html),
 wrap an existing [org.zkoss.zul.ListModelList](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ListModelList.html) by
@@ -140,7 +140,7 @@ DefaultStepModel's constructor, or implement
 
 ## StepRenderer
 
-The renderer used to render each step.(Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#Model-Driven_Rendering))
+The renderer used to render each step.(Learn [ Model-Driven Rendering]({{site.baseurl}}/zk_dev_ref/mvc/model#model-driven-rendering))
 
 You can specify your own
 [org.zkoss.zkmax.zul.StepRenderer](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/StepRenderer.html) at this attribute to
@@ -160,7 +160,7 @@ false: ![Stepbar example](/zk_component_ref/images/Stepbar-example.png)
 |---|---|---|
 | `onChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Represents an event caused by a user's selection changed at the client. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

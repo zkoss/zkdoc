@@ -134,7 +134,7 @@ Sets the zero-based index of the child component currently shown in the viewport
 |---|---|---|
 | `onChange` | **Event** | Fired when the user swipes on a touch device to change the visible card. The new `selectedIndex` is synchronized to the server automatically before the event is posted. |
 
-Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

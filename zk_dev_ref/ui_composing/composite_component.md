@@ -127,7 +127,7 @@ sections.
 > help of \[<http://github.com/zanyking/ZK-Composite>\| ZK Composite\],
 > components are created and wired automatically based on the Java
 > annotations you provide. In other words, Step 3 and 4 are done
-> automatically. For more information, please refer to the [Define > Components with Java > Annotations](#Define_Components_with_Java_Annotations)
+> automatically. For more information, please refer to the [Define > Components with Java > Annotations](#define-components-with-java-annotations)
 > section.
 
 ### Wire Spring-managed Beans
@@ -238,7 +238,7 @@ follows.
 </language-addon>
 ```
 
-For more information, please refer to [Customization: Component Properties]({{site.baseurl}}/zk_dev_ref/customization/component_properties#Application-wide_Initialization).
+For more information, please refer to [Customization: Component Properties]({{site.baseurl}}/zk_dev_ref/customization/component_properties#application-wide-initialization).
 
 ## Define Components with Java Annotations
 

@@ -200,7 +200,7 @@ stack
 |------|------------|-------------|
 | `onMatrixUpdate` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the areas matrix is updated — for example, after a user drags and drops a `goldenpanel` to a new region. The event data contains the updated matrix, the removed area name (if any), the added area name (if any), and the current `orient` value. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

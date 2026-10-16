@@ -40,7 +40,7 @@ downloaded at [Apache Tomcat](http://tomcat.apache.org).
 Download the zip file of Tomcat distribution and extract it to a proper
 location (with no illegal characters or space in the path). Tomcat
 requires configuration before it can be used with Eclipse, this process
-is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk_studio_essentials/create_a_new_zk_project#Running_the_ZK_Project).
+is described in the following link [ Running the ZK Project]({{site.baseurl}}/zk_studio_essentials/create_a_new_zk_project#running-the-zk-project).
 
 **Tips:**
 
@@ -115,7 +115,7 @@ If there is a pop-up dialog with unsigned content warning, please click **OK** t
 ## Offline Installation
 
 1.  Download the offline installation zip file from [ZK Studio download page](http://www.zkoss.org/download/zkstudio).
-2.  The step is the same as step 1 we do for [ Update Site](#_Update_Site). Open Eclipse, click **\[Help\]**
+2.  The step is the same as step 1 we do for [ Update Site](#update-site). Open Eclipse, click **\[Help\]**
     menu and select **\[Install New Software...\]**. An install window
     will popup, click **Add**
 3.  Click **Archive...** to open a file explorer. Then, use file

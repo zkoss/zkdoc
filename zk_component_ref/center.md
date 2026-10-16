@@ -128,7 +128,7 @@ supported-since.html version="6.5.0" %}
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#how-to-layout).
 
 # Supported Events
 
@@ -138,7 +138,7 @@ For more details, please refer to
 | onSize | **Event:** [SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Sent when a layout region is resized by a user. Not applicable to `<center>` (size is unsupported). |
 | onSlide | **Event:** [SlideEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SlideEvent.html) | Sent when a collapsed layout region is slid (previewed) by a user. Not applicable to `<center>` (slidable is unsupported). |
 
-Inherited Supported Events: [LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#Supported_Events)
+Inherited Supported Events: [LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#supported-events)
 
 # Supported Children
 

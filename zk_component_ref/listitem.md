@@ -123,7 +123,7 @@ For an arbitrary Java object, set the value via EL referencing a variable create
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

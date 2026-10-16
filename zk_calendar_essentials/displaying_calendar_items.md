@@ -94,7 +94,7 @@ To show a tooltip when an end-user hover this mouse on an calendar item,
 you need to:
 
 1.  create a popup
-2.  link the popup with your calendars with [ tooltip]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups#Tooltips)
+2.  link the popup with your calendars with [ tooltip]({{site.baseurl}}/zk_dev_ref/ui_patterns/tooltips,_context_menus_and_popups#tooltips)
     attribute.
 3.  implement the logic to show a tooltip in an [ onItemTooltip listener]({{site.baseurl}}/zk_calendar_essentials/implementing_event_listeners#CalendarsEvent.ON_ITEM_TOOLTIP).
 

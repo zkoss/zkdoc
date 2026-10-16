@@ -135,7 +135,7 @@ Sets the vertical alignment applied to all child components inside the hlayout. 
 
 # Supported Events
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events)
 
 # Supported Children
 

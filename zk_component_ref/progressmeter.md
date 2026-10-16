@@ -48,7 +48,7 @@ If true, the progressmeter will show an indeterminate animation and the real val
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| Inherited | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events) | Refer to the inherited component for supported events. |
+| Inherited | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events) | Refer to the inherited component for supported events. |
 
 # Supported Children
 

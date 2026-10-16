@@ -100,7 +100,7 @@ Without this setting, `offsetHeight` of `<html>` will be zero, and sibling's hei
 
 # Supported Events
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Properties
 

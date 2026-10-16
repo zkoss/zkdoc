@@ -688,7 +688,7 @@ Sets the selection type of the tree. This is a convenience alias for the `multip
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#auxiliary-headers) for
 more details.
 
 ## SizedByContent
@@ -831,7 +831,7 @@ If the Tree is controlled by a
 such as [org.zkoss.zul.AbstractTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractTreeModel.html) or
 [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html), the
 model open state is authoritative and will override the individual
-component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#Open_Tree_Nodes)
+component's open state. please refer to [ the TreeModel documentation]({{site.baseurl}}/zk_dev_ref/mvc/tree_model#open-tree-nodes)
 on this topic.
 
 ```xml
@@ -956,7 +956,7 @@ component.
 | `onAnchorPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Notifies the server of the anchor position (top/left offsets) used for virtual rendering alignment. The server stores these values for consistent item positioning. |
 | `onCheckSelectAll` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Fired when the user clicks the select-all checkbox in the column header. Delegates to the model's `SelectionControl.setSelectAll(boolean)`. Only fired when a `TreeSelectableModel` with `SelectionControl` is assigned. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

@@ -146,7 +146,7 @@ If only one token is provided it applies to width only; height is unconstrained.
 
 # Supported Events
 
-This component fires no events of its own. For inherited events, see [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events).
+This component fires no events of its own. For inherited events, see [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events).
 
 # Supported Children
 

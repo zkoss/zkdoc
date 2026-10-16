@@ -218,7 +218,7 @@ empty Columns component invisible. For example,
 
 # Supported Events
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/headerelement#supported-events)
 
 # Supported Children
 

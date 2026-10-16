@@ -128,7 +128,7 @@ Sets the opacity of the polygon fill as an integer from `0` (fully transparent) 
 
 # Supported Events
 
-- Inherited Supported Events: [ Gpolyline]({{site.baseurl}}/zk_component_ref/gpolyline#Supported_Events)
+- Inherited Supported Events: [ Gpolyline]({{site.baseurl}}/zk_component_ref/gpolyline#supported-events)
 
 # Supported Children
 

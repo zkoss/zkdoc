@@ -84,7 +84,7 @@ See also: [Button]({{site.baseurl}}/zk_component_ref/button), [Toolbar]({{site.b
 
 # Properties
 
-See also inherited properties documented on [Button]({{site.baseurl}}/zk_component_ref/button#Properties).
+See also inherited properties documented on [Button]({{site.baseurl}}/zk_component_ref/button#properties).
 
 ## Checked
 
@@ -127,7 +127,7 @@ Sets the interaction mode of the toolbarbutton. Accepted values:
 |------|------------|-------------|
 | `onCheck` | [CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Denotes when the toolbarbutton state changes in toggle mode. Fired whenever `checked` property changes. Only meaningful when `mode="toggle"` is set. {% include supported-since.html version="6.0.0" %} |
 
-Inherited Supported Events: [Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
+Inherited Supported Events: [Button]({{site.baseurl}}/zk_component_ref/button#supported-events)
 
 # Supported Molds
 

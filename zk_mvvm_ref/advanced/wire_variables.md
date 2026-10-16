@@ -86,7 +86,7 @@ Then, you could bind it in the ZUL document. For example,
 ```xml
 <grid model="@load(vm.users)">
 ```
-You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/mvc/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables#Warning:_Not_a_good_idea_to_have_Spring_managing_the_composer) for the reason.
+You might make a ViewModel as a Spring bean then other beans used by the ViewModel can be injected by Spring, but it is **not recommended**. Please refer to [ZK Developer's Reference/mvc/Controller/Wire Variables\#Warning:\_Not\_a\_good\_idea\_to\_have\_Spring\_managing\_the\_composer]({{site.baseurl}}/zk_dev_ref/mvc/wire_variables#warning-not-a-good-idea-to-have-spring-managing-the-composer) for the reason.
 
 Wire CDI-managed Beans
 ======================

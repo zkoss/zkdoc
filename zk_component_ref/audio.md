@@ -185,7 +185,7 @@ Calling `setContent` clears any source previously set via [`src`](#src). Similar
 |---|---|---|
 | `onStateChange` | [org.zkoss.zk.ui.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/StateChangeEvent.html) | Notifies when invoking play(), stop(), pause() or the audio is played to the end. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

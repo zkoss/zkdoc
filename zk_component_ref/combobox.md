@@ -37,7 +37,7 @@ instead.
 ## Selection Only
 
 Recommend to use
-[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/listbox#Select_Mold) or [ Selectbox](/zk_component_ref/selectbox).
+[Searchbox]({{site.baseurl}}/zk_component_ref/searchbox), [ Listbox select mold]({{site.baseurl}}/zk_component_ref/listbox#select-mold) or [ Selectbox](/zk_component_ref/selectbox).
 
 ```xml
 <style>
@@ -363,7 +363,7 @@ of the combobox. Instead, you should use the `value` property of the
 ## Constraint
 
 Please see
-[{{site.baseurl}}/zk_component_ref/inputelement#Constraint]({{site.baseurl}}/zk_component_ref/inputelement#Constraint).
+[{{site.baseurl}}/zk_component_ref/inputelement#Constraint]({{site.baseurl}}/zk_component_ref/inputelement#constraint).
 
 ## PopupWidth
 
@@ -490,7 +490,7 @@ When using a `ListSubModel` for autocomplete, the displayed list is a filtered s
 | onSelect | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Represents an event caused by user's the list selection is changed at the client. |
 | onOpen | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after opening or closing the component. It is useful to implement <em>load-on-demand</em> by listening to the `onOpen` event, and creating components when the first time the component is opened. |
 
-- Inherited Supported Events: [Textbox]({{site.baseurl}}/zk_component_ref/textbox#Supported_Events)
+- Inherited Supported Events: [Textbox]({{site.baseurl}}/zk_component_ref/textbox#supported-events)
 
 # Supported Molds
 

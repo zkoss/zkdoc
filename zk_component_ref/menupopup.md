@@ -149,7 +149,7 @@ The `setActive` will not cause a `menupopup` to be opened. An explicit
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| Inherited Supported Events | - | See [ Popup]({{site.baseurl}}/zk_component_ref/popup#Supported_Events) |
+| Inherited Supported Events | - | See [ Popup]({{site.baseurl}}/zk_component_ref/popup#supported-events) |
 
 # Supported Children
 

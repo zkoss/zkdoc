@@ -109,7 +109,7 @@ Use `<rows>` with explicit `<row>` children to build label-input grids without a
 
 # Supported Events
 
-Inherits supported events from [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events). No additional events are introduced by this component.
+Inherits supported events from [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events). No additional events are introduced by this component.
 
 # Supported Children
 

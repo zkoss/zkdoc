@@ -15,7 +15,7 @@ description: "Dropupload: users can simply drag and drop the file(s) they want t
 users can simply drag and drop the file(s) they want to upload into
 `Dropupload` and the uploading process will start automatically. The
 behaviour and operation of this `Dropupload` component is similar to
-ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/button#File_Upload)
+ZK's [**file upload button**]({{site.baseurl}}/zk_component_ref/button#file-upload)
 but with better user experience and performance.
 
 ## Common Use Cases
@@ -177,7 +177,7 @@ Specifies upload error types that should be silently suppressed (no error messag
 
 ## ViewerClass
 
-Sets the fully-qualified JavaScript class name of a custom file-viewer that handles upload progress display. When not specified, ZK's built-in pop-up progress bar is used. See the [Customized File Viewer](#Customized_File_Viewer) section for the required interface (`$init`, `update`, `destroy`).
+Sets the fully-qualified JavaScript class name of a custom file-viewer that handles upload progress display. When not specified, ZK's built-in pop-up progress bar is used. See the [Customized File Viewer](#customized-file-viewer) section for the required interface (`$init`, `update`, `destroy`).
 
 ```xml
 <dropupload viewerClass="foo.MyFileViewer" content="custom viewer" detection="none"/>
@@ -190,11 +190,11 @@ Sets the fully-qualified JavaScript class name of a custom file-viewer that hand
 | `onUpload` | [org.zkoss.zk.ui.event.UploadEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/UploadEvent.html) | This event fires once a user has uploaded a file. |
 | `onMaxFileCountExceed` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | This event fires when the number of upload files exceeds the `maxFileCount`. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Customized File Viewer
 
-Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/button#File_Upload),
+Similar to [**file upload button**]({{site.baseurl}}/zk_component_ref/button#file-upload),
 the default file viewer will show the uploading progress via a pop-up
 bar as illustrated below.
 
@@ -245,7 +245,7 @@ In the code snippet above, you can see that there are three functions -
 
 1.  **\$init(uplder, file)**: When the user selects a file from the file
     chooser, this function will be invoked.
-    - *uplder*: [An uploader object](#Uploader)
+    - *uplder*: [An uploader object](#uploader)
     - *file*: The file user uploads. It is a
       [File](http://www.w3.org/TR/FileAPI/) object.
 2.  **update(send, total)**: After the uploading engine receives the
@@ -325,7 +325,7 @@ public void showFileName(org.zkoss.zk.ui.event.UploadEvent event){
 
 # Customize Upload Size Exceeding Message
 
-Please refer to [Customize Upload Size Exceeding Message]({{site.baseurl}}/zk_component_ref/button#Customize_Upload_Size_Exceeding_Message).
+Please refer to [Customize Upload Size Exceeding Message]({{site.baseurl}}/zk_component_ref/button#customize-upload-size-exceeding-message).
 
 # Browser Support
 

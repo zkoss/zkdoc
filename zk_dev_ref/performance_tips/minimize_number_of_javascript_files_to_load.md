@@ -78,7 +78,7 @@ ${z:setCWRCacheControl()}
 3.  The *zul.lang.wpd* is an I18N message, so you don't need to include
     it.
 4.  In ZK 5.0.4 we introduced a new
-    feature([\#System-wide_Minimizing_the_Number_of_JavaScript_Files](#System-wide_Minimizing_the_Number_of_JavaScript_Files)).
+    feature([\#System-wide_Minimizing_the_Number_of_JavaScript_Files](#system-wide-minimizing-the-number-of-javascript-files)).
     However, since the release of this new feature the packages **zul,
     zul.wgt, and zkmax** will be merged automatically into the ZK
     package, so you don't specify them in the the *zksandbox.js.dsp*

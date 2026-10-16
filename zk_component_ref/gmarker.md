@@ -292,7 +292,7 @@ Sets the minimum map zoom level at which this marker is visible. When the map zo
 |---|---|---|
 | `onMapDrop` | [MapDropEvent]({{site.baseurl}}/zk_component_ref/mapdropevent) | Notifies that some component is dragged and dropped on the gmaps or gmarker component with latitude and longitude information. |
 
-- Inherited Supported Events: [Ginfo]({{site.baseurl}}/zk_component_ref/ginfo#Supported_Events)
+- Inherited Supported Events: [Ginfo]({{site.baseurl}}/zk_component_ref/ginfo#supported-events)
 
 # Supported Children
 

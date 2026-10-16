@@ -1,7 +1,7 @@
 # Before You Start
 
-You have to configure the following setting for [ZK](#zk.xml)
-and [Weblogic](#weblogic.xml).
+You have to configure the following setting for [ZK](#zkxml)
+and [Weblogic](#weblogicxml).
 
 ## zk.xml
 

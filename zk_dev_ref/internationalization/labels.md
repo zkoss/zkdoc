@@ -4,7 +4,7 @@ For a multilingual application, it is common to display the content in
 the language that the end user prefers. Here we discuss the built-in
 support called *internationalization labels*.
 
-However, if you prefer to use other approaches, please refer to [the Use Other Implementation section](#Use_Other_Implementation).
+However, if you prefer to use other approaches, please refer to [the Use Other Implementation section](#use-other-implementation).
 
 # Creating Internationalization Labels
 
@@ -42,7 +42,7 @@ search the following files and load them if found:
 
 By default, one properties file is used to contain all labels of a given
 locale. If you prefer to split it into multiple properties files (such
-as one file per module), please refer to [the Loading Labels from Multiple Resources section](#Loading_Labels_from_Multiple_Resources).
+as one file per module), please refer to [the Loading Labels from Multiple Resources section](#loading-labels-from-multiple-resources).
 
 Also, notice that all files that match the given locale will be loaded
 and merged, and the property specified in, say,
@@ -404,7 +404,7 @@ ${c:label('another.key')}
     [org.zkoss.util.Locales#getCurrent()](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/util/Locales.html#getCurrent()). For
     more information, please refer to [the Locale section]({{site.baseurl}}/zk_dev_ref/internationalization/locale).
 
-[^2]: If you prefer a different charset, please refer to [the Encoding Character Set section](#Encoding_character_set).
+[^2]: If you prefer a different charset, please refer to [the Encoding Character Set section](#encoding-character-set).
 
 [^3]: Please refer to
     [here]({{site.baseurl}}/zk_dev_ref/internationalization/the_format_of_properties_files)

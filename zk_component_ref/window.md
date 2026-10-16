@@ -561,7 +561,7 @@ Sets whether to render a drop-shadow beneath an overlapped, popup, or modal wind
 | `onSize` | [org.zkoss.zk.ui.event.SizeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SizeEvent.html) | Denotes the panel's size is updated by a user. |
 | `onZIndex` | [org.zkoss.zk.ui.event.ZIndexEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ZIndexEvent.html) | Denotes the panel's zindex is updated by a user. |
 
-- [Inherited Supported Events](/zk_component_ref/xulelement#Supported_Events)
+- [Inherited Supported Events](/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 ALL

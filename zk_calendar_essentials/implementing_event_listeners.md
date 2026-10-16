@@ -52,7 +52,7 @@ event to show a tooltip for an item.
 ## [CalendarsEvent.ON_WEEK_CLICK](https://www.zkoss.org/javadoc/latest/zkcal/org/zkoss/calendar/event/CalendarsEvent.html#ON_WEEK_CLICK)
 
 Calendars fires this event when you click the week number of the year on
-the left-hand side when you set [ weekOfYear="true"]({{site.baseurl}}/zk_calendar_essentials/component_attributes#weekOfYear).
+the left-hand side when you set [ weekOfYear="true"]({{site.baseurl}}/zk_calendar_essentials/component_attributes#weekofyear).
 
 ![On Week Click](/zk_calendar_essentials/images/OnWeekClick.gif)
 

@@ -114,7 +114,7 @@ Enable drag-to-resize with `splittable="true"` so users can adjust the north reg
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#how-to-layout).
 
 # Properties
 
@@ -141,7 +141,7 @@ Sets the height of the north region. This is a shortcut for the `height` attribu
 
 # Supported Events
 
-- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#Supported_Events)
+- Inherited Supported Events: [ LayoutRegion]({{site.baseurl}}/zk_component_ref/layoutregion#supported-events)
 
 # Supported Children
 

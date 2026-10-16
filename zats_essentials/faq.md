@@ -22,7 +22,7 @@ title: "FAQ"
       
     You need to provide your custom web.xml which contains Spring
     context listener configuration to run the test case. Please refer to
-    [Custom WEB-INF Path]({{site.baseurl}}/zats_essentials/customize_test_environment#Custom_WEB-INF_Path).
+    [Custom WEB-INF Path]({{site.baseurl}}/zats_essentials/customize_test_environment#custom-web-inf-path).
 
 4.  **Why do I get an error: java.lang.IllegalStateException: No WebApplicationContext found: no ContextLoaderListener registered?**
       

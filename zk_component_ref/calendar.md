@@ -188,7 +188,7 @@ When `true`, a "Today" link is shown at the bottom of the calendar's day view. C
 
 **Default Value:** `"Today"` (localised)
 
-Sets the label text of the today link shown when [`showTodayLink`](#showTodayLink) is `true`. Override this to localise the label or replace it with a custom string.
+Sets the label text of the today link shown when [`showTodayLink`](#showtodaylink) is `true`. Override this to localise the label or replace it with a custom string.
 
 {% include supported-since.html version="8.0.4" %}
 
@@ -244,7 +244,7 @@ Gets or sets the selected date-time as a `java.time.LocalDateTime`. Construct th
 
 ## valueInLocalTime
 
-> **Note:** Setting only a `LocalTime` on a calendar is not meaningful because the calendar always requires a full date. Calling `setValueInLocalTime` throws `UnsupportedOperationException`. This accessor is provided for interface completeness; use [`valueInLocalDate`](#valueInLocalDate), [`valueInLocalDateTime`](#valueInLocalDateTime), or [`valueInZonedDateTime`](#valueInZonedDateTime) instead.
+> **Note:** Setting only a `LocalTime` on a calendar is not meaningful because the calendar always requires a full date. Calling `setValueInLocalTime` throws `UnsupportedOperationException`. This accessor is provided for interface completeness; use [`valueInLocalDate`](#valueinlocaldate), [`valueInLocalDateTime`](#valueinlocaldatetime), or [`valueInZonedDateTime`](#valueinzoneddatetime) instead.
 
 {% include supported-since.html version="9.0.0" %}
 
@@ -275,7 +275,7 @@ Gets or sets the selected date-time as a `java.time.ZonedDateTime`. This is the 
 
 {% include supported-since.html version="8.5.2" %}
 
-This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/datebox#Constraint)
+This component also supports `constraint` like [ZK Component Reference/Input/Datebox#Constraint]({{site.baseurl}}/zk_component_ref/datebox#constraint)
 
 # Supported Events
 
@@ -286,7 +286,7 @@ This component also supports `constraint` like [ZK Component Reference/Input/Dat
 
 \* {% include edition-availability.html edition="ee" %}
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

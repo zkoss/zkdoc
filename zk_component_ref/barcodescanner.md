@@ -30,7 +30,7 @@ by enable="false".
 # Request Camera API permission
 
 Barcodescanner requires access to the camera API from the client's
-browser. Please refer to the [Camera component, Request Permission First]({{site.baseurl}}/zk_component_ref/camera#Request_Permission_First)
+browser. Please refer to the [Camera component, Request Permission First]({{site.baseurl}}/zk_component_ref/camera#request-permission-first)
 documentation section regarding API permissions requests and secure
 access.
 
@@ -332,7 +332,7 @@ Defaults to 3. The number of buffered events with the same value necessary to fi
 |---|---|---|
 | `onDetect` | [org.zkoss.zkmax.zul.event.DetectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/DetectEvent.html) | Notifies if the barcode scanner detect a barcode message. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

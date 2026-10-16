@@ -308,7 +308,7 @@ request from the client. It is used only if live data
 | `onAdjustCols` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired after the number of visible columns in the viewport is automatically adjusted (e.g. on component resize when `autoCols="true"`). |
 | `onAdjustFrozenCols` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired after the user drags the frozen column boundary to resize it (when `fixFrozenCols="false"`). |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

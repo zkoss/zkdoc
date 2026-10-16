@@ -32,7 +32,7 @@ biggest problem area(s) should become apparent after a few minutes:
 
 **1. Are there one or more long-running requests?**
 
-NO → [#Client Side Issue](#Client_Side_Issue)
+NO → [#Client Side Issue](#client-side-issue)
 
 YES
 
@@ -40,8 +40,8 @@ YES
 
 **2. Is it a static resource?**
 
-YES (js, css, images...) → check [#ZK Server Configuration](#ZK_Server_Configuration) (debug / cache /
-compression) → STILL SLOW → [#Network Issue](#Network_Issue)
+YES (js, css, images...) → check [#ZK Server Configuration](#zk-server-configuration) (debug / cache /
+compression) → STILL SLOW → [#Network Issue](#network-issue)
 
 NO (dynamic request into ZK application)
 
@@ -64,9 +64,9 @@ Application)?**
 - test ping / trace route to different servers
 - test dns lookup timing
 
-YES → [#Network Issue](#Network_Issue)
+YES → [#Network Issue](#network-issue)
 
-NO → [#Server Side Issue](#Server_Side_Issue) (application
+NO → [#Server Side Issue](#server-side-issue) (application
 takes long time to accept connection, or even times out)
 
 **SENDING**
@@ -74,7 +74,7 @@ takes long time to accept connection, or even times out)
 **3.b) Is the request unreasonably big?** (rare case, usually due to an
 upload (reasonable), or form posting a lot of data)
 
-YES → [#Client Side Issue](#Client_Side_Issue)
+YES → [#Client Side Issue](#client-side-issue)
 
 NO
 
@@ -89,7 +89,7 @@ NO
 - e.g. try upload the same amount of data to the server via ftp/scp to
   check possible upload speed
 
-YES → [#Network Issue](#network-Issue)
+YES → [#Network Issue](#network-issue)
 
 NO → [#Server Side Issue](#server-side-issue) (application
 server receiving request data slowly)
@@ -137,7 +137,7 @@ with different browsers to identify the configuration causing the
 issue.
 
 If client performance among configurations / browsers is equally bad,
-the issue will more likely be found in the Rendering area → [#Client Side Profiling](#Client_Side_Profiling)
+the issue will more likely be found in the Rendering area → [#Client Side Profiling](#client-side-profiling)
 
 Once you identified the client side rendering takes very long, check the
 size of the response, if the Client engine needs to render a lot (e.g. a
@@ -150,7 +150,7 @@ or
 
 Performance degrading over time when using the application (while
 network and server timings remain constant) might indicate a client side
-memory leak → [#Client Memory Issue](#Client_Memory_Issue)
+memory leak → [#Client Memory Issue](#client-memory-issue)
 
 ### Client Side Profiling
 
@@ -293,7 +293,7 @@ value in IO wait times.
 You'll most likely know which external resources you are accessing in
 your code, so commenting these out and temporarily replacing them with
 mock implementations will help you exclude these culprits. If you are
-not aware of any external resources: continue with [ Server Side Profiling](#Server_Side_Profiling) to identify the places
+not aware of any external resources: continue with [ Server Side Profiling](#server-side-profiling) to identify the places
 that take most time when creating the response.
 
 Here are some helpful tools to determine busy or waiting processes:
@@ -573,7 +573,7 @@ can help.
 - check compression settings → should **not** be disabled (enabled by
   default)
   - [ZK AU Engine](/zk_config_ref/zk_au_engine#The_Initial_Parameters)
-  - [ZK Loader](/zk_config_ref/zk_loader#The_Initial_Parameters)
+  - [ZK Loader](/zk_config_ref/zk_loader#the-initial-parameters)
 
 - consider/check render on demand settings
   - [client_render_on_demand]({{site.baseurl}}/zk_dev_ref/performance_tips/client_render_on_demand)

@@ -96,7 +96,7 @@ list. This might produce some delay at the client side because of server
 processing time and network latency.
 
 See also:
-[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/combobox#Autocomplete_by_ListSubModel)
+[Combobox#Autocomplete_by_ListSubModel]({{site.baseurl}}/zk_component_ref/combobox#autocomplete-by-listsubmodel)
 
 ```xml
     <zscript><![CDATA[
@@ -239,7 +239,7 @@ the key, it will an send onSearch or onSelect event depending on the situation. 
 | `onFocus` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the component gains focus. |
 | `onBlur` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the component loses focus. |
 
-Also inherit Supported Events from [HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events).
+Also inherit Supported Events from [HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events).
 
 # Supported Molds
 

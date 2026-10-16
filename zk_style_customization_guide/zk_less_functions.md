@@ -59,7 +59,7 @@ For example,
 /* omitted */
 ```
 
-Here we define mixins according to [ Core Functions](#Core_Functions) and [ Theme Functions](#Theme_Functions) and extra useful mixins:
+Here we define mixins according to [ Core Functions](#core-functions) and [ Theme Functions](#theme-functions) and extra useful mixins:
 
 ## Core Functions in Mixins
 

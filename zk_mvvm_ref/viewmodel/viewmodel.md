@@ -76,7 +76,7 @@ public class ViewModelResolver implements VariableResolver {
 }
 ```
 
-Now then, apply the above resolver on a page or [system scope]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#System-level_Variable_Resolver) and reference the ViewModel object with its name like `@init(myvm)`. Notice that there is no single quote around `myvm` which means it's a variable name rather than a string.
+Now then, apply the above resolver on a page or [system scope]({{site.baseurl}}/zk_dev_ref/ui_composing/el_expressions#system-level-variable-resolver) and reference the ViewModel object with its name like `@init(myvm)`. Notice that there is no single quote around `myvm` which means it's a variable name rather than a string.
 
 ```xml
 <?variable-resolver class="org.zkoss.reference.developer.mvvm.ViewModelResolver"?>

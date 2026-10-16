@@ -66,7 +66,7 @@ Examples: `myTip`, `myTip, after_start`, `myTip, position=before_start, delay=50
 
 # Supported Events
 
-[Inherited Supported Events from HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+[Inherited Supported Events from HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events)
 
 # Supported Children
 

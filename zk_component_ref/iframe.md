@@ -277,7 +277,7 @@ Passing an empty string is treated the same as `null` (nothing is loaded). Calli
 |---|---|---|
 | `onUriChange` | [URIEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/URIEvent.html) | Denotes the associated URI (`src`) has been changed by user. Use `getURI()` to retrieve the URI being changed to. |
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events)
 
 # Supported Children
 

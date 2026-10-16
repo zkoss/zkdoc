@@ -181,7 +181,7 @@ Passing any other value throws a `WrongValueException`.
 |---|---|---|
 | `onSort` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes user has sorted the treeitem of this treecol. |
 
-- Inherited Supported Events: [HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#Supported_Events)
+- Inherited Supported Events: [HeaderElement]({{site.baseurl}}/zk_component_ref/headerelement#supported-events)
 
 # Supported Children
 

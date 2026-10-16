@@ -116,7 +116,7 @@ If `false`, the close button does not appear, preventing users from closing the 
 | `onMinimize` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes user has minimized this GoldenPanel. |
 | `onAreaRename` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the area identifier of this GoldenPanel has been renamed on the client side, typically after the panel is repositioned by a drag-and-drop operation. The server-side `area` property is updated automatically. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

@@ -187,7 +187,7 @@ Supported formats include mp4, WebM, and ogg. For details, see [MDN: Supported m
 |---|---|---|
 | `onStateChange` | [org.zkoss.zkmax.zul.event.StateChangeEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/event/StateChangeEvent.html) | Notifies when invoking `play()`, `stop()`, or `pause()`. Video has four states: `Video.PLAY`, `Video.STOP`, `Video.PAUSE`, and `Video.END` (since ZK 9.6.0). |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

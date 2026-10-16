@@ -139,7 +139,7 @@ Sets the vertical flexibility of the captcha component. Unlike the standard `Htm
 
 # Supported Events
 
-Captcha does not fire any own events. See inherited events from [Image]({{site.baseurl}}/zk_component_ref/image#Supported_Events).
+Captcha does not fire any own events. See inherited events from [Image]({{site.baseurl}}/zk_component_ref/image#supported-events).
 
 # Supported Children
 

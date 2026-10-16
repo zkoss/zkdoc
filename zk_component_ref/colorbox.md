@@ -94,7 +94,7 @@ Alias for `color` — sets the selected color in `#RRGGBB` hexadecimal format. `
 |---|---|---|
 | onChange | [InputEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/InputEvent.html) | Notifies the application when the selected color is changed. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

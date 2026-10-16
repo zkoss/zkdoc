@@ -167,7 +167,7 @@ could specify the interval by using an integer (unit: 1 second).
 
 # Supported Events
 
-- Inherited Supported Events: [FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
+- Inherited Supported Events: [FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#supported-events)
 
 # Supported Children
 

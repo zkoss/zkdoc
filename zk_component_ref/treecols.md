@@ -92,7 +92,7 @@ column will appear as a column at the top of the tree.
 
 # Supported Events
 
-- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#Supported_Events)
+- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#supported-events)
 
 # Supported Children
 

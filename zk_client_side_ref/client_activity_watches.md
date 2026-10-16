@@ -321,7 +321,7 @@ wgt will be called.
 <!-- -->
 
 - See Also
-  - [\#onShow](#onShow)
+  - [\#onShow](#onshow)
 
 ## onMove
 
@@ -357,7 +357,7 @@ too.
 <!-- -->
 
 - See Also
-  - [\#onVParent](#onVParent)
+  - [\#onVParent](#onvparent)
 
 ## onScroll
 
@@ -428,7 +428,7 @@ wgt will be called.
 <!-- -->
 
 - See Also
-  - [\#onHide](#onHide)
+  - [\#onHide](#onhide)
 
 ## onStartDrag
 
@@ -456,7 +456,7 @@ to onRestore too.
 <!-- -->
 
 - See Also
-  - [\#onRestore](#onRestore)
+  - [\#onRestore](#onrestore)
 
 # Version History
 

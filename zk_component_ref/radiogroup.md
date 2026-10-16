@@ -273,7 +273,7 @@ Sets a custom [`RadioRenderer`](https://www.zkoss.org/javadoc/latest/zk/org/zkos
 |---|---|---|
 | `onCheck` | [org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) | Denotes when a radio under the radiogroup is checked. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

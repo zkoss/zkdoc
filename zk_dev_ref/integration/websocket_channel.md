@@ -188,7 +188,7 @@ or vice versa.
 * Line 24: [org.zkoss.zk.ui.annotation.Command](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/annotation/Command.html) annotation has
 been added since the release of ZK 8.0.0, and it is used to receive a
 notification from client to server. For more details, please take a look
-at the [#Communication](#Communication) section.
+at the [#Communication](#communication) section.
 
 ## Communication
 

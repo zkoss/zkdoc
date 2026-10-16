@@ -325,7 +325,7 @@ Reference:
 
 By default, the popup position is set to `after_start`, for other
 possible popup positions please refer to
-[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#Position).
+[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#position).
 
 ## The First Day of the Week
 
@@ -421,7 +421,7 @@ example:
 |---|---|---|
 | `onTimeZoneChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the time zone of the component is changed by user. |
 
-- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#supported-events)
 
 # Supported Molds
 

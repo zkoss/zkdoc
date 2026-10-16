@@ -146,7 +146,7 @@ Sets the stroke width (weight) of the polyline in pixels, from `1` (thinnest) to
 |------|------------|-------------|
 | `onPathChange` | `PathChangeEvent` | Fired when the user finishes dragging a vertex of an editable polyline. The `PathChangeEvent` carries either the encoded polyline string (`getEncodedPath()`) or a raw `JSONArray` of `LatLngLiteral` objects (`getRawPath()`), depending on the `pathEncoded` setting. {% include supported-since.html version="3.0.2" %} |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

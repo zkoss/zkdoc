@@ -18,7 +18,7 @@ s4=keyboard
 ```
 
 The default encoding of a properties file is assumed to be **UTF-8**. If
-you want to use a different encoding, please refer to [the Use Encoding Other Than UTF-8 section](#Use_Encoding_Other_Than_UTF-8).
+you want to use a different encoding, please refer to [the Use Encoding Other Than UTF-8 section](#use-encoding-other-than-utf-8).
 
 A properties file is usually used to contain the internationalization
 labels of an application, but technically you could use it in any

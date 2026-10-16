@@ -46,7 +46,7 @@ For example, assume you put the configuration in a file called
 as one of the arguments when starting the Web server.
 
 Another example is to provide an ID generator for the testing purpose.
-For more information, please refer to [ZK Developer's Reference: Testing Tips]({{site.baseurl}}/zk_dev_ref/testing/testing_tips#Different_Configuration_for_Different_Environment).
+For more information, please refer to [ZK Developer's Reference: Testing Tips]({{site.baseurl}}/zk_dev_ref/testing/testing_tips#different-configuration-for-different-environment).
 
 # Version History
 

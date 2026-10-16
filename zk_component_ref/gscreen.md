@@ -137,7 +137,7 @@ Position the overlay relative to the map dimensions so it remains proportional a
 
 # Supported Events
 
-Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

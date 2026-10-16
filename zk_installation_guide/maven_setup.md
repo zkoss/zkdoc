@@ -64,7 +64,7 @@ technical problems in advance.
 
 ## PE / EE (premium users only)
 
-- <span style="color:red">**Notice**</span> : Needs [Login authentication](#Login_authentication)
+- <span style="color:red">**Notice**</span> : Needs [Login authentication](#login-authentication)
 
 If you are our customer or ZOL licensed user you can contact
 info@zkoss.org to apply for a premium maven account to use ZK PE/EE (or
@@ -94,7 +94,7 @@ users can create global settings for maven.
 <!-- -->
 
 - Servers Element
-- If you add [ ZK PE](#ZK_PE) or [ ZK EE](#ZK_EE)
+- If you add [ ZK PE](#zk-pe) or [ ZK EE](#zk-ee)
   as your repository, you need to add login authentication like
   following example
 
@@ -282,10 +282,10 @@ users can create global settings for maven.
 If you have problems switching from the evaluation repository to the
 licensed one, please check the followings:
 
-- 1\. Remove evaluation repository, [ use PE / EE repository instead](#PE_.2F_EE_.28premium_users_only.29)
-- 2\. Check if [ Login authentication](#Login_authentication)
+- 1\. Remove evaluation repository, [ use PE / EE repository instead](#pe--ee-premium-users-only)
+- 2\. Check if [ Login authentication](#login-authentication)
   is set up correctly
-- 3\. [ Delete cached local copy](#Purge_local_repository_evaluation_cache)
+- 3\. [ Delete cached local copy](#purge-local-repository-evaluation-cache)
 
 ### Purge local repository evaluation cache
 

@@ -37,7 +37,7 @@ should not have to encode it again.
 
 # Supported Events
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events)
 
 # Supported Children
 

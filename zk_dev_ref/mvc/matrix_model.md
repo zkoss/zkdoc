@@ -156,7 +156,7 @@ model data has been changed.
 ## Notify for Data Updates
 
 *MatrixModel* is the same as *ListModel* when notify for data updates,
-please refer to [ ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Notify_for_Data_Updates)
+please refer to [ ListMode#Notify_for_Data_Updates]({{site.baseurl}}/zk_dev_ref/mvc/list_model#notify-for-data-updates)
 
 ## Resource
 

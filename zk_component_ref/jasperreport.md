@@ -113,7 +113,7 @@ When the report data comes directly from a database, pass a `java.sql.Connection
 
 # Supported Events
 
-- Inherited Supported Events: [ Iframe]({{site.baseurl}}/zk_component_ref/iframe#Supported_Events)
+- Inherited Supported Events: [ Iframe]({{site.baseurl}}/zk_component_ref/iframe#supported-events)
 
 # Properties
 

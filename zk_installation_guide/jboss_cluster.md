@@ -1,7 +1,7 @@
 # Before You Start
 
 You have to configure the following setting for
-[Web](#web.xml) and [JBoss](#jboss-web.xml).
+[Web](#webxml) and [JBoss](#jboss-webxml).
 
 ## web.xml
 

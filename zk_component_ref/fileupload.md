@@ -73,7 +73,7 @@ can use it directly as follows.
 ...
 ```
 
-Please refer to [Button: Upload]({{site.baseurl}}/zk_component_ref/button#Upload)
+Please refer to [Button: Upload]({{site.baseurl}}/zk_component_ref/button#upload)
 for details.
 
 # Invoke the Static Method: get
@@ -298,7 +298,7 @@ Fileupload.setTemplate("~./WEB-INF/zul/myupload.zul");
 
 # Supported Events
 
-- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#Supported_Events)
+- Inherited Supported Events: [ Button]({{site.baseurl}}/zk_component_ref/button#supported-events)
 
 # Supported Children
 

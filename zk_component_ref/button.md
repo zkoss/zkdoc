@@ -42,7 +42,7 @@ identifiable by a URL.
 
 # File Upload
 
-A button or a [ Toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton#File_Upload)
+A button or a [ Toolbarbutton]({{site.baseurl}}/zk_component_ref/toolbarbutton#file-upload)
 can be used to upload files. All you need to do is:
 
 1.  Specify the `upload` attribute with `true`
@@ -366,7 +366,7 @@ upload="true,maxsize=-1,multiple=true,accept=audio/*|video/*|image/*|MIME_type, 
 
 ### Customize Upload Size Exceeding Message
 
-{% include supported-since.html version="8.0.0" %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#Change_particular_message).
+{% include supported-since.html version="8.0.0" %} Please refer to [ZK Developer's Reference/Internationalization]({{site.baseurl}}/zk_dev_ref/internationalization/warning_and_error_messages#change-particular-message).
 
 For Example, (in `WEB-INF/zk-label.properties`)
 

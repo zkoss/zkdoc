@@ -158,7 +158,7 @@ Returns or places a specific `Panel` at a given column and row position within t
 |---|---|---|
 | `onPortalDrop` | [org.zkoss.zkmax.ui.event.PortalDropEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/ui/event/PortalDropEvent.html) | Represents an event after a portal is dropped and before a portal is moved. {% include supported-since.html version="9.5.1" %} |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

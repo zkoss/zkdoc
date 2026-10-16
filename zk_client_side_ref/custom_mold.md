@@ -38,8 +38,8 @@ to improve the readability (IE not supported).
 # Register Custom Mold
 
 With a mold js, you still need to register this custom mold on the
-component. So you need to create a [ lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#Language_Addon)
-and [ register the custom mold]({{site.baseurl}}/zk_client_side_ref/component#Custom_Mold).
+component. So you need to create a [ lang-addon.xml]({{site.baseurl}}/zk_client_side_ref/language_definition#language-addon)
+and [ register the custom mold]({{site.baseurl}}/zk_client_side_ref/component#custom-mold).
 
 # Apply Custom Mold
 

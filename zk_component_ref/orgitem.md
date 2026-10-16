@@ -155,7 +155,7 @@ Assign the value in a `<zscript>` block and reference it via EL, or set it progr
 |---|---|---|
 | `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes user has opened or closed a component. It is useful to implement load-on-demand by listening to the onOpen event and creating components the first time the component is opened. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

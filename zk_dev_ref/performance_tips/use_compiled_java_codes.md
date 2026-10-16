@@ -13,7 +13,7 @@ example, with ZK MVC
 ```
 
 You can handle all events and components in `foo.MyComposer`. By the use
-of [ auto-wiring]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#Composer_and_Event_Listener_Autowiring),
+of [ auto-wiring]({{site.baseurl}}/zk_dev_ref/event_handling/event_listening#composer-and-event-listener-autowiring),
 it is straightforward to handle events and components.
 
 ## Event Handler Is zscript

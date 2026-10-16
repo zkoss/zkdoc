@@ -45,7 +45,7 @@ Before using shadow elements, make sure you include the required jar -
 
 # Wire Shadow Components
 
-Like wiring a UI component, you can [ wire a shadow component](/zk_dev_ref/mvc/wire_components#Shadow_Selectors).
+Like wiring a UI component, you can [ wire a shadow component](/zk_dev_ref/mvc/wire_components#shadow-selectors).
 
 # Use ShadowTemplate
 

@@ -117,7 +117,7 @@ South declares no own events.
 # How to Layout
 
 For more details, please refer to
-[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#How_to_Layout).
+[Borderlayout]({{site.baseurl}}/zk_component_ref/borderlayout#how-to-layout).
 
 # Supported Children
 

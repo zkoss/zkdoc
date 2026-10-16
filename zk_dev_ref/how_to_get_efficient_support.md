@@ -35,9 +35,9 @@ Providing sufficient information helps us support you more efficiently.
 ### The Sufficient Information Includes:
 
 1.  the complete server-side error or the client-side error if any (read
-    [Check JavaScript Error](#Check_JavaScript_Error))
+    [Check JavaScript Error](#check-javascript-error))
 2.  complete exception stack trace (if any)
-3.  A reproducible sample (please read [Tips for creating a reproducible sample](#Tips_for_creating_a_reproducible_sample)
+3.  A reproducible sample (please read [Tips for creating a reproducible sample](#tips-for-creating-a-reproducible-sample)
 4.  Precise and clear steps to reproduce the issue
 5.  ZK version and edition
       

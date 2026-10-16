@@ -69,9 +69,9 @@ When a user swipes on the content of Listbox, Grid, Tree in a tablet
 device, the friendly scrollbar will appear. To disable the friendly
 scrollbar, please use the following setting.
 
-For more information, please refer to [ZK Component Reference Tablet Devices: Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/listbox#Friendly_Scrolling_Support),
-[ZK Component Reference Tablet Devices: Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/grid#Friendly_Scrolling_Support),
-[ZK Component Reference Tablet Devices: Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/tree#Friendly_Scrolling_Support).
+For more information, please refer to [ZK Component Reference Tablet Devices: Listbox]({{site.baseurl}}/zk_component_ref/tablet_devices/listbox#friendly-scrolling-support),
+[ZK Component Reference Tablet Devices: Grid]({{site.baseurl}}/zk_component_ref/tablet_devices/grid#friendly-scrolling-support),
+[ZK Component Reference Tablet Devices: Tree]({{site.baseurl}}/zk_component_ref/tablet_devices/tree#friendly-scrolling-support).
 
 **tablet only**
 

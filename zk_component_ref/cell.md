@@ -299,7 +299,7 @@ Sets the vertical alignment of the cell content. Accepts the values listed below
 
 # Supported Events
 
-- Inherited Supported Events: [XulElement](/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement](/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

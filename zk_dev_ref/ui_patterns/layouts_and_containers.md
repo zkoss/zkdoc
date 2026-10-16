@@ -355,7 +355,7 @@ child component.
 ### Grown by children
 
 - To make Borderlayout dependent on the size of its child components,
-  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#Minimum_Flexibility)
+  [vflex feature]({{site.baseurl}}/zk_dev_ref/ui_patterns/hflex_and_vflex#minimum-flexibility)
   is applied. Specify vflex="min" to each layout region and
   Borderlayout.
 

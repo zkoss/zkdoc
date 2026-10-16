@@ -53,7 +53,7 @@ thread safe.
 Also notice that you could specify `short`, `long` and other *standard*
 styling in the format property of datebox and timebox, such that the
 corresponding format of the styling will be used instead of the default,
-`meidum`. For more information, please refer to [the Per-component Format section](#Per-component_Format).
+`meidum`. For more information, please refer to [the Per-component Format section](#per-component-format).
 
 ## Application-level Format
 

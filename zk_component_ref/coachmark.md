@@ -145,7 +145,7 @@ The positions of a coachmark. Below are the available values:
 | <b>right</b>  | end_before   | end_center    | end_after   |
 
 See
-[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#Position)
+[Popup#Position]({{site.baseurl}}/zk_component_ref/popup#position)
 
 ## Next
 
@@ -171,7 +171,7 @@ specified coachmark instead of the predefined "next" coachmark.
 | `onOpen` | [org.zkoss.zk.ui.event.OpenEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/OpenEvent.html) | Denotes that the user has opened or closed a component. Note: unlike `onClose`, this event is only a notification. The client sends this event after the component is opened or closed. |
 | `onTargetClick` | [org.zkoss.zk.ui.event.MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Represents an event caused by a user's click on a highlighted target component. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

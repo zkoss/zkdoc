@@ -47,7 +47,7 @@ If you need a splitter, please use [ splitlayout](/zk_component_ref/splitlayout)
 
 # Properties
 
-- **Inherited** Properties: [ Box]({{site.baseurl}}/zk_component_ref/box#Properties)
+- **Inherited** Properties: [ Box]({{site.baseurl}}/zk_component_ref/box#properties)
 
 ## Align and Pack
 

@@ -42,7 +42,7 @@ of TABLE).
 
 # Properties
 
-- **Inherited Properties**: [ Box]({{site.baseurl}}/zk_component_ref/box#Properties)
+- **Inherited Properties**: [ Box]({{site.baseurl}}/zk_component_ref/box#properties)
 
 ## Align and Pack
 

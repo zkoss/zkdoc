@@ -79,7 +79,7 @@ class "z-button" (default mold). Here the new style override:
 
 Based on the above, when upgrading from ZK 6.5 to ZK 7.0, it is required
 to modify the CSS class names (from z-component-mold to z-component) in
-most situations. Check [ Tip 2 Appendix](#Tip_2_Appendix) for
+most situations. Check [ Tip 2 Appendix](#tip-2-appendix) for
 the complete list of affected components.
 
 # Tip 3: Component Zclass
@@ -140,7 +140,7 @@ In ZK 7, you can remove *-mode* part for all modes.
 
 ## Brief Summary
 
-To adapt this change for ZK 7, check [ Tip 3 Appendix](#Tip_3_Appendix) for the complete list of related
+To adapt this change for ZK 7, check [ Tip 3 Appendix](#tip-3-appendix) for the complete list of related
 changes eliminating CSS classes.
 
 # Tip 4: DOM Structure
@@ -209,7 +209,7 @@ To check the style after we removed 3 x 3 grid structure in ZK 7, we
 recommend you to use developer tools provided by browsers such as
 Firebug for FireFox, Developer Tools for Chrome to check new DOM
 structure first, then move your existing customization style into the
-new CSS class. Check [ Tip 4 Appendix](#Tip_4_Appendix) for
+new CSS class. Check [ Tip 4 Appendix](#tip-4-appendix) for
 the complete list that removes the 3 x 3 (or 3x1) grid structure..
 
 # Tip 5: CSS Class Naming
@@ -259,7 +259,7 @@ In ZK 7, the CSS class name is change to full name
 
 In most situations, to upgrade to ZK 7.0 from ZK 6.5 based on these
 changes is to modify CSS class names with full naming patterns (from
-z-component-*shortname* to z-component-*fullname*). Check [ Tip 5 Appendix](#Tip_5_Appendix) for the complete list of ZK 7 CSS
+z-component-*shortname* to z-component-*fullname*). Check [ Tip 5 Appendix](#tip-5-appendix) for the complete list of ZK 7 CSS
 class naming rule.
 
 # Tip 6: Image Icons and Font Icons

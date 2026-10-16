@@ -66,7 +66,7 @@ Control the gap size with the `spacing` attribute (any valid CSS length value).
 | Name | Event Type | Description |
 |------|------------|-------------|
 
-No additional events are defined. Inherited events: see [Separator]({{site.baseurl}}/zk_component_ref/separator#Supported_Events).
+No additional events are defined. Inherited events: see [Separator]({{site.baseurl}}/zk_component_ref/separator#supported-events).
 
 # Supported Children
 

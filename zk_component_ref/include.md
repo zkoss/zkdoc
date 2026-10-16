@@ -179,7 +179,7 @@ The `invalidate()` method works in both `instant` and `defer` modes.
 
 # Access Components Inside
 
-Since `include` creates an ID space, access components inside it using [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) or refer to [ID Space — Find Component Manually]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space#Find_Component_Manually).
+Since `include` creates an ID space, access components inside it using [org.zkoss.zk.ui.Path](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Path.html) or refer to [ID Space — Find Component Manually]({{site.baseurl}}/zk_dev_ref/ui_composing/id_space#find-component-manually).
 
 # Custom Attributes
 
@@ -363,7 +363,7 @@ The value is `null` when the component is in `instant` mode (children live direc
 
 # Supported Events
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

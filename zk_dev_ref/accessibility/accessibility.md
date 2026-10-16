@@ -46,7 +46,7 @@ it manually to enable it.
 
 To ensure za11y.jar is running as expected at run-time, you can simply
 inspect a textbox. If you see ARIA attributes rendered in its DOM
-elements, that means the module works successfully. Please see [Built-in Support](#Built-in_Support).
+elements, that means the module works successfully. Please see [Built-in Support](#built-in-support).
 
 We use axe DevTools 3.5.3 in ZK 9.5.0 to check the WCAG rules in za11y.
 We use Lighthouse 11.4.0 in ZK 10.0.0 to check the WCAG rules in za11y.

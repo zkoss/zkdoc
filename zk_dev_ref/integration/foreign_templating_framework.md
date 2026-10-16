@@ -124,7 +124,7 @@ anything described above).
 
 ### Server-side memory optimization: turn off browser cache
 
-As described in [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/jsp#Browser_Cache),
+As described in [Use ZK in JSP]({{site.baseurl}}/zk_dev_ref/integration/jsp#browser-cache),
 the memory footprint at the server can be improved by turning off the
 browser cache for the HTML page that will load ZUL pages later. For
 example, we could add `no-cache` and `expires` as follows (line 4 and

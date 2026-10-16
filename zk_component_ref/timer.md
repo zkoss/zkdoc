@@ -94,7 +94,7 @@ Starts or stops the timer. Setting `running="false"` stops the timer without rem
 |---|---|---|
 | `onTimer` | [Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Denotes the timer you specified has triggered an event. To know which timer, invoke the `getTarget` method in the Event class. |
 
-- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#Supported_Events)
+- Inherited Supported Events: [ HtmlBasedComponent]({{site.baseurl}}/zk_component_ref/htmlbasedcomponent#supported-events)
 
 # Supported Children
 

@@ -67,7 +67,7 @@ project. It is important to make sure all ZK jar files are in the same
 version.
 
 Then, fix any compilation errors and configure the required fallback
-settings by referencing the [ Upgrade References](#Upgrade_References).
+settings by referencing the [ Upgrade References](#upgrade-references).
 
 # Assisted Migration (Structured, AI-Assisted Path)
 

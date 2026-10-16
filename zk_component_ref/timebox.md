@@ -137,7 +137,7 @@ convert the specified text well.
 
 # Supported Events
 
-- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#Supported_Events)
+- Inherited Supported Events: [ FormatInputElement]({{site.baseurl}}/zk_component_ref/formatinputelement#supported-events)
 
 # Supported Molds
 

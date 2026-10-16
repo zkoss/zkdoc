@@ -186,4 +186,4 @@ ZUML document directly[^2].
 [^2]: Don't confuse a ZUML page with
     [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html). The former refers to a file
     containing a ZUML document. The latter is a Java object of
-    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#Desktop.2C_Page_and_Component).
+    [org.zkoss.zk.ui.Page](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/Page.html) that represents [a portion of a desktop]({{site.baseurl}}/zk_dev_ref/ui_composing/component_based_ui#desktop-page-and-component).

@@ -36,7 +36,7 @@ all the registered data listeners. It is generally suggested to extend
 from [org.zkoss.zul.AbstractListModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/AbstractListModel.html), or use any of
 the default implementations, which provide a set of utilities for
 handling data listeners transparently. We will talk about it later in
-[\#Notify for Data Updates](#Notify_for_Data_Updates).
+[\#Notify for Data Updates](#notify-for-data-updates).
 
 # Default ListModel Implementation
 

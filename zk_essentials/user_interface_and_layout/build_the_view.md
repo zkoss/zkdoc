@@ -21,7 +21,7 @@ A very simple, classic zul example is like:
 ```
 The tag `<label>` will create a `Label` component at the server and display "hello world" in one line in your browser. It's one line because it ignores special characters like a new line (`&#xA;`) by default.
 
-But we can specify [`pre`]({{site.baseurl}}/zk_component_ref/label#Properties) attribute to preserve new line character, so that it will display "hello world" in 2 lines.
+But we can specify [`pre`]({{site.baseurl}}/zk_component_ref/label#properties) attribute to preserve new line character, so that it will display "hello world" in 2 lines.
 
 ```xml
 <zk>

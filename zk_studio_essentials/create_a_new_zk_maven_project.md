@@ -28,7 +28,7 @@ dialog. Then choose **Maven Project** under **Maven** item and click
 3\. Enter "zk" in filter to search ZK maven archetypes and select what
 you want. Click **Next**. ![Studio maven archetype](images/studio-maven-archetype.png)
 
-- Notice: If you cannot find ZK maven archetypes, please refer to [ Add ZK Maven Archeype]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven#Add_ZK_Maven_Archetype).
+- Notice: If you cannot find ZK maven archetypes, please refer to [ Add ZK Maven Archeype]({{site.baseurl}}/zk_installation_guide/create_and_run_your_first_zk_application_with_eclipse_and_maven#add-zk-maven-archetype).
 
 4\. Enter preferred ZK version in `zk-version-since` and click
 **Finish**. ![Studio maven archetype parameter](images/studio-maven-archetype-parameter.png)

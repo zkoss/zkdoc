@@ -62,7 +62,7 @@ When you need to position the info window at a location computed at runtime, con
 
 # Example
 
-[Gmaps]({{site.baseurl}}/zk_component_ref/gmaps#Example)
+[Gmaps]({{site.baseurl}}/zk_component_ref/gmaps#example)
 
 # Properties
 
@@ -138,7 +138,7 @@ Controls whether the info window is currently displayed on the map. Setting `ope
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| Inherited Supported Events | | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events) |
+| Inherited Supported Events | | [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events) |
 
 # Supported Children
 

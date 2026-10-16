@@ -67,7 +67,7 @@ Sets whether this radio button is selected (checked). Setting this to `true` aut
 
 # Supported Events
 
-- Inherited Supported Events: [ Checkbox]({{site.baseurl}}/zk_component_ref/checkbox#Supported_Events)
+- Inherited Supported Events: [ Checkbox]({{site.baseurl}}/zk_component_ref/checkbox#supported-events)
 
 # Supported Children
 

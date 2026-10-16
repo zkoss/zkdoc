@@ -467,4 +467,4 @@ public class FoodGroupsModel extends GroupsModelArray {
 
 | Version | Date          | Content                                                                                                |
 |---------|---------------|--------------------------------------------------------------------------------------------------------|
-| 5.0.6   | December 2010 | Enhanced the support of tabular data as described in [\#5.0.6 and Later](#5.0.6_and_Later). |
+| 5.0.6   | December 2010 | Enhanced the support of tabular data as described in [\#5.0.6 and Later](#506-and-later). |

@@ -61,7 +61,7 @@ statement, then the user gets the result as depicted below.
 
 | Name | Event Type | Description |
 |------|------------|-------------|
-| `onClick` | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Sent when the imagemap is clicked; carries the x and y pixel coordinates relative to the image's upper-left corner. Inherited from [Image]({{site.baseurl}}/zk_component_ref/image#Supported_Events). |
+| `onClick` | [MouseEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/MouseEvent.html) | Sent when the imagemap is clicked; carries the x and y pixel coordinates relative to the image's upper-left corner. Inherited from [Image]({{site.baseurl}}/zk_component_ref/image#supported-events). |
 
 # Supported Molds
 

@@ -134,7 +134,7 @@ use the gmaps API. The APIKey is defined as a global JS variable as in
 the examples below. Also check out the Troubleshooting section below. **NOTE**: You'll have
 to upgrade to version **3.0.4** (older versions don't work anymore)
 
-See [Example](#Example) above.
+See [Example](#example) above.
 
 ## Client ID
 
@@ -337,7 +337,7 @@ then add it into WEB-INF/zk.xml
 
 Sets the base domain from which to load the Maps API. Useful when you need to load a regional variant of the API — for example, `"maps.google.cn"` for the Chinese version. When `null`, the default Google domain is used.
 
-As an alternative for geocoding region bias, prefer [`region`](#Region).
+As an alternative for geocoding region bias, prefer [`region`](#region).
 
 ```xml
 <gmaps width="500px" height="300px" baseDomain="maps.google.cn"/>
@@ -349,7 +349,7 @@ As an alternative for geocoding region bias, prefer [`region`](#Region).
 
 **Default Value:** `37.4419, -122.1419` (Palo Alto, CA)
 
-Sets the center of the Google Maps as a `LatLng` object. When using ZUML, set the center via the individual [`lat`](#Lat) and [`lng`](#Lng) attributes instead. This property is typically used in Java or a ViewModel.
+Sets the center of the Google Maps as a `LatLng` object. When using ZUML, set the center via the individual [`lat`](#lat) and [`lng`](#lng) attributes instead. This property is typically used in Java or a ViewModel.
 
 The value is a `LatLng` object constructed in `<zscript>` or a composer/ViewModel.
 
@@ -489,7 +489,7 @@ Sets whether the hybrid map type is available in the map type selector. When `fa
 
 **Default Value:** `null` (default renderer — assumes each data object is already a `Mapitem`)
 
-Sets the renderer used to convert data objects from the [`model`](#Model) into map items (`Gmarker`, `Ginfo`, etc.). Only relevant when a `MapModel` is assigned. Changing the renderer does not automatically re-render the map; re-assign the model to force a refresh.
+Sets the renderer used to convert data objects from the [`model`](#model) into map items (`Gmarker`, `Ginfo`, etc.). Only relevant when a `MapModel` is assigned. Changing the renderer does not automatically re-render the map; re-assign the model to force a refresh.
 
 The value is a `MapitemRenderer` object constructed in `<zscript>` or a composer/ViewModel.
 
@@ -541,7 +541,7 @@ Sets the preferred [language code](https://developers.google.com/maps/documentat
 
 **Default Value:** `37.4419` (Palo Alto, CA)
 
-Sets the latitude of the map center. Updating `lat` repositions the map; use together with [`lng`](#Lng) to set a specific location. Both `lat` and `lng` are bound via MVVM with the `onMapMove` save event.
+Sets the latitude of the map center. Updating `lat` repositions the map; use together with [`lng`](#lng) to set a specific location. Both `lat` and `lng` are bound via MVVM with the `onMapMove` save event.
 
 ```xml
 <gmaps width="500px" height="300px" lat="35.6895" lng="139.6917"/>
@@ -563,7 +563,7 @@ Sets the comma-separated list of [Google Maps API libraries](https://developers.
 
 **Default Value:** `-122.1419` (Palo Alto, CA)
 
-Sets the longitude of the map center. Use together with [`lat`](#Lat) to position the map. Both `lat` and `lng` are bound via MVVM with the `onMapMove` save event.
+Sets the longitude of the map center. Use together with [`lat`](#lat) to position the map. Both `lat` and `lng` are bound via MVVM with the `onMapMove` save event.
 
 ```xml
 <gmaps width="500px" height="300px" lat="35.6895" lng="139.6917"/>
@@ -623,7 +623,7 @@ The value is a `MapModel` object constructed in `<zscript>` or a composer/ViewMo
 
 {% include supported-since.html version="3.0.2" %}
 
-Returns or sets the north-east latitude of the current map viewport bounds. Setting this value calls `fitBounds` internally to adjust the visible area. Use together with [`nelng`](#Nelng), [`swlat`](#Swlat), and [`swlng`](#Swlng) to define a bounding box.
+Returns or sets the north-east latitude of the current map viewport bounds. Setting this value calls `fitBounds` internally to adjust the visible area. Use together with [`nelng`](#nelng), [`swlat`](#swlat), and [`swlng`](#swlng) to define a bounding box.
 
 ```xml
 <gmaps width="500px" height="300px"
@@ -635,7 +635,7 @@ Returns or sets the north-east latitude of the current map viewport bounds. Sett
 
 {% include supported-since.html version="3.0.2" %}
 
-Returns or sets the north-east longitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`nelat`](#Nelat), [`swlat`](#Swlat), and [`swlng`](#Swlng).
+Returns or sets the north-east longitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`nelat`](#nelat), [`swlat`](#swlat), and [`swlng`](#swlng).
 
 ```xml
 <gmaps width="500px" height="300px"
@@ -673,7 +673,7 @@ Sets whether the physical (terrain) map type is available in the map type select
 
 **Default Value:** `null`
 
-Sets the [region parameter](https://developers.google.com/maps/documentation/javascript/localization#Region) of the Google Maps API. The region biases geocoding results toward a specific country or territory using a Unicode region subtag (e.g. `"US"`, `"GB"`, `"TW"`). This is the preferred alternative to [`baseDomain`](#BaseDomain) for geocoding localisation.
+Sets the [region parameter](https://developers.google.com/maps/documentation/javascript/localization#Region) of the Google Maps API. The region biases geocoding results toward a specific country or territory using a Unicode region subtag (e.g. `"US"`, `"GB"`, `"TW"`). This is the preferred alternative to [`baseDomain`](#basedomain) for geocoding localisation.
 
 ```xml
 <gmaps width="500px" height="300px" region="TW"/>
@@ -818,7 +818,7 @@ Sets whether to show the small zoom-only control (plus/minus buttons). Enabling 
 
 {% include supported-since.html version="3.0.2" %}
 
-Returns or sets the south-west latitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`swlng`](#Swlng), [`nelat`](#Nelat), and [`nelng`](#Nelng) to define a bounding box.
+Returns or sets the south-west latitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`swlng`](#swlng), [`nelat`](#nelat), and [`nelng`](#nelng) to define a bounding box.
 
 ```xml
 <gmaps width="500px" height="300px"
@@ -830,7 +830,7 @@ Returns or sets the south-west latitude of the current map viewport bounds. Sett
 
 {% include supported-since.html version="3.0.2" %}
 
-Returns or sets the south-west longitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`swlat`](#Swlat), [`nelat`](#Nelat), and [`nelng`](#Nelng).
+Returns or sets the south-west longitude of the current map viewport bounds. Setting this value calls `fitBounds` internally. Use together with [`swlat`](#swlat), [`nelat`](#nelat), and [`nelng`](#nelng).
 
 ```xml
 <gmaps width="500px" height="300px"
@@ -871,7 +871,7 @@ Sets the zoom level of the map. Valid values range from `0` (fully zoomed out, w
 | `onMapTypeChange` | [MapTypeChangeEvent]({{site.baseurl}}/zk_component_ref/maptypechangeevent) | Notifies when the map type of the gmaps has been changed. |
 | `onMapZoom` | [MapZoomEvent]({{site.baseurl}}/zk_component_ref/mapzoomevent) | Notifies when the zoom level of the gmaps has been changed. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

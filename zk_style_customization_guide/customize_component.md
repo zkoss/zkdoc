@@ -18,7 +18,7 @@ the developer tool.
 # Prepare ZKLess Servlet and ZKLess Dependencies
 
 - Before start customizing your own component styles, first, follow the
-  instruction, [compile LESS to DSP during development phase]({{site.baseurl}}/zk_style_customization_guide/compile_less#Compile_LESS_to_DSP_during_Development_phase)
+  instruction, [compile LESS to DSP during development phase]({{site.baseurl}}/zk_style_customization_guide/compile_less#compile-less-to-dsp-during-development-phase)
   to have your ZKLess Servlet ready.
 
 <!-- -->
@@ -65,7 +65,7 @@ re-defining LESS variables as follows:
 
 </div>
 
-:\* Follow this [ instruction](/zk_style_customization_guide/compile_less#Compile_LESS_to_DSP_during_Development_phase)
+:\* Follow this [ instruction](/zk_style_customization_guide/compile_less#compile-less-to-dsp-during-development-phase)
 to add ZKLessServlet to web.xml to compile less at runtime.
 
 :\* Use **window.less** in **window.zul** page as follows to check the

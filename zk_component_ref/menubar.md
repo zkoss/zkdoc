@@ -186,7 +186,7 @@ scrollable!
 
 # Supported Events
 
-No own events — see [Inherited Supported Events]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+No own events — see [Inherited Supported Events]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

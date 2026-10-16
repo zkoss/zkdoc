@@ -175,7 +175,7 @@ you don't need to specify a paging component explicitly as above unless
 you want to have different visual layout or to control multiple
 `listbox` and `grid`controls with one paging component.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Paging) for more
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#paging) for more
 details.
 
 ## Autopaging
@@ -1265,7 +1265,7 @@ child.
 Like grids, you can specify auxiliary headers with the `auxhead` and
 `auxheader` components.
 
-Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#Auxiliary_Headers) for
+Please refer to the [ Grid]({{site.baseurl}}/zk_component_ref/grid#auxiliary-headers) for
 more details.
 
 ## Drop-Down List
@@ -1798,7 +1798,7 @@ It specifies the default [responsiveColumns](#responsivecolumns) of the listboxe
 | `onAnchorPos` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | Fired when the anchor position of the listbox is updated on the client, used internally to keep the server-side scroll anchor in sync during ROD. |
 | `onResponsiveModeChange` | [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) | {% include supported-since.html version="11.0.0" %} Fired by the client when the listbox's resolved stacking mode transitions between `"table"` and `"stacking"` (ZK EE). The event data is a map whose `mode` entry holds the new mode. Not fired for the initial layout. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

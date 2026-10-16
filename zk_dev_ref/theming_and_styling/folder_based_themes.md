@@ -238,7 +238,7 @@ if ("EE".equals(WebApps.getEdition()))
 ```
 
 This code fragment can be written in several places. For an example
-incorporating MVVM, please refer to the section [Modify the theme resource](#Modify_the_theme_resources). To make the
+incorporating MVVM, please refer to the section [Modify the theme resource](#modify-the-theme-resources). To make the
 folder-based theme available at application startup, write a class
 implementing the
 [WebAppInit](http://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/util/WebAppInit.html)

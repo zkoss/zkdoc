@@ -20,7 +20,7 @@ while ZK Studio does the rest for you.
     We recommend you to use the latest ZK Packages to get the most
     features and performances. You can download the latest ZK packages
     [here](https://www.zkoss.org/download/zk) and import it into ZK
-    Studio, please refer to [ Import ZK Binary Distribution From Local File System]({{site.baseurl}}/zk_studio_essentials/zks#Import_ZK_Binary_Distribution_From_Local_File_System)
+    Studio, please refer to [ Import ZK Binary Distribution From Local File System]({{site.baseurl}}/zk_studio_essentials/zks#import-zk-binary-distribution-from-local-file-system)
 3.  You can modify the **Source folders** and **Default output folder**
     if you like. Then, click **Next**.
       

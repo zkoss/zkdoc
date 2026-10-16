@@ -88,7 +88,7 @@ solve it, you could specify the XML namespace explicitly as follows.
 </p>
 ```
 
-For more information about identifying a language, pelase refer to [ZUML Reference](/zuml_ref/languages#Language_Identification).
+For more information about identifying a language, pelase refer to [ZUML Reference](/zuml_ref/languages#language-identification).
 
 # Version History
 

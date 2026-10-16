@@ -113,7 +113,7 @@ licensed one, please check the followings:
 
 - **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Repository)
 - [Login authentication]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Login_authentication)
-- [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/using_maven#Purge_local_repository_evaluation_cache)
+- [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/using_maven#purge-local-repository-evaluation-cache)
 
 #### Purge local repository evaluation cache
 

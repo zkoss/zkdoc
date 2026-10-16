@@ -121,7 +121,7 @@ For a custom appearance on each node, see [Organigram Template]({{site.baseurl}}
 
 # Properties
 
-See also [inherited properties from XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Properties).
+See also [inherited properties from XulElement]({{site.baseurl}}/zk_component_ref/xulelement#properties).
 
 ## Model
 
@@ -196,7 +196,7 @@ The `selectedItem` value is an `Orgitem` object — obtain a reference via `<zsc
 |------|------------|-------------|
 | `onSelect` | [org.zkoss.zk.ui.event.SelectEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/SelectEvent.html) | Notifies one that the user has selected a new item in the organigram. |
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 

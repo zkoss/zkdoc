@@ -87,7 +87,7 @@ Sets the text of the first `<listcell>` this footer contains. If no `<listcell>`
 
 # Supported Events
 
-No own events — see [Listitem Supported Events]({{site.baseurl}}/zk_component_ref/listitem#Supported_Events)
+No own events — see [Listitem Supported Events]({{site.baseurl}}/zk_component_ref/listitem#supported-events)
 
 # Supported Children
 

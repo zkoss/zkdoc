@@ -99,7 +99,7 @@ min property.
 
 # Supported Events
 
-- Inherited Supported Events: [ Rangeslider]({{site.baseurl}}/zk_component_ref/rangeslider#Supported_Events)
+- Inherited Supported Events: [ Rangeslider]({{site.baseurl}}/zk_component_ref/rangeslider#supported-events)
 
 # Supported Children
 

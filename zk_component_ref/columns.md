@@ -171,7 +171,7 @@ Stores an arbitrary application-defined object on the `Columns` component. ZK do
 
 # Supported Events
 
-- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#Supported_Events)
+- Inherited Supported Events: [ HeadersElement]({{site.baseurl}}/zk_component_ref/headerselement#supported-events)
 
 # Supported Children
 

@@ -180,7 +180,7 @@ When `overflowPopup="true"`, you can customize the overflow popup trigger icon b
 
 # Supported Events
 
-- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

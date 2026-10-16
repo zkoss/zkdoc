@@ -26,7 +26,7 @@ a notification will pop up.
 - **Single-line text input** — collect short free-form text such as names, search terms, or identifiers by using the default single-row textbox.
 - **Multi-line text area** — collect longer content such as comments or descriptions by setting `rows` to a value greater than `1` (which also enables `multiline` automatically).
 - **Password fields** — hide sensitive input by setting `type="password"`.
-- **Validated input** — enforce patterns like email addresses or non-empty fields with the `constraint` attribute (see [InputElement]({{site.baseurl}}/zk_component_ref/inputelement#Constraint)).
+- **Validated input** — enforce patterns like email addresses or non-empty fields with the `constraint` attribute (see [InputElement]({{site.baseurl}}/zk_component_ref/inputelement#constraint)).
 - **Tab-formatted content** — allow users to insert tab characters for code or tabular text by enabling `tabbable="true"`.
 - **Submit on Enter** — fire the `onOK` event immediately when the user presses Enter in a single-line field by enabling `submitByEnter="true"`.
 
@@ -132,7 +132,7 @@ WebSite: <textbox type="url"/>
 
 # Supported Events
 
-- Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement#Supported_Events)
+- Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement#supported-events)
 
 # Supported Molds
 

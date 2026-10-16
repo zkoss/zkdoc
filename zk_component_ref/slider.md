@@ -109,7 +109,7 @@ below.
 | onScroll | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Denotes that the user has finished scrolling the slider. The component's position has been updated on the server. |
 | onScrolling | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Denotes that the user is actively scrolling the slider. The component's content (at the server) is not updated until onScroll is received. Use `getPos()` in the ScrollEvent to retrieve the temporary position while dragging. |
 
-- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+- Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Molds
 

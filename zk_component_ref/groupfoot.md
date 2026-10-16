@@ -84,7 +84,7 @@ This is a convenience shortcut: it reads and writes the `value` of the first chi
 
 # Supported Events
 
-Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#Supported_Events)
+Inherited Supported Events: [XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)
 
 # Supported Children
 
