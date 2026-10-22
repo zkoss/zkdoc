@@ -116,9 +116,44 @@ This ZK 11 feature provides:
 - Confirmpopup for contextual confirmation
 - Carousel for announcements, onboarding, and featured content
 
-## Plan Your UI Refresh
+## Try It in ZK 11 Eval Freshly
 
-Review current projects for custom versions of these patterns. A project dashboard is a useful planning example because it can combine a breadcrumb, team avatars, status chips, a notification badge, and a contextual confirmation. Preview individual components only when they are ready in the ZK 11 build you plan to use.
+ZK 11 is coming soon, and you can preview Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel in the latest ZK 11 Eval Freshly build (`11.0.0.FL.20261021-Eval`). These components are included in ZK Community Edition.
+
+To try them in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+
+**1. Add the ZK Evaluation Maven Repository**
+
+```xml
+<repositories>
+    <repository>
+        <id>ZK Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
+```
+
+**2. Update your ZK version and ZUL dependency**
+
+```xml
+<properties>
+    <zk.version>11.0.0.FL.20261021-Eval</zk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zul</artifactId>
+        <version>${zk.version}</version>
+    </dependency>
+</dependencies>
+```
+
+Make sure all ZK dependencies use the same evaluation version to avoid version conflicts.
+
+Once configured, add one or two components to a representative dashboard. Breadcrumb, team avatars, status chips, a notification badge, and a contextual confirmation work well together as a focused evaluation scenario.
+
+For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_installation_guide/maven_setup).
 
 ## Resources
 

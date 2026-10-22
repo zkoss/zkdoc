@@ -63,9 +63,44 @@ This ZK 11 feature provides:
 - MVVM value binding and standard input events
 - Read-only, disabled, line-number, tab-size, and color-scheme options
 
-## Plan Where It Fits
+## Try It in ZK 11 Eval Freshly
 
-Codeeditor is available in ZK 11 preview builds. Consider screens where users currently edit structured text in a multiline textbox. Configuration and template editors are good first candidates because the surrounding application already supplies save, validation, and access-control logic.
+ZK 11 is coming soon, and you can preview Codeeditor in the latest ZK 11 Eval Freshly build (`11.0.0.FL.20261021-Eval`). Codeeditor is included in ZK Community Edition.
+
+To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+
+**1. Add the ZK Evaluation Maven Repository**
+
+```xml
+<repositories>
+    <repository>
+        <id>ZK Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
+```
+
+**2. Update your ZK version and ZUL dependency**
+
+```xml
+<properties>
+    <zk.version>11.0.0.FL.20261021-Eval</zk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zul</artifactId>
+        <version>${zk.version}</version>
+    </dependency>
+</dependencies>
+```
+
+Make sure all ZK dependencies use the same evaluation version to avoid version conflicts.
+
+Once configured, replace a multiline textbox that holds JSON, SQL, XML, or Markdown with Codeeditor. Configuration and template editors are good first candidates because the surrounding application already supplies save, validation, and access-control logic.
+
+For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_installation_guide/maven_setup).
 
 ## Resources
 

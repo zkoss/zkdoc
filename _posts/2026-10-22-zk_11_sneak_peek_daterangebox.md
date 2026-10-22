@@ -92,9 +92,44 @@ This ZK 11 feature provides:
 - Whole-range, endpoint, and Java Time binding options
 - Range-specific onChanging and onChange events
 
-## Try It in ZK 11 EE Freshly
+## Try It in ZK 11 EE-Eval Freshly
 
-Daterangebox is available in the latest ZK 11 EE FL (freshly) build. A report filter or reservation form that currently uses two Datebox components is a good place to evaluate it. Compare both the user interaction and the amount of synchronization code required in the ViewModel or controller.
+ZK 11 is coming soon, and you can preview Daterangebox in the latest ZK 11 EE-Eval Freshly build (`11.0.0.FL.20261021-Eval`).
+
+To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+
+**1. Add the ZK Evaluation Maven Repository**
+
+```xml
+<repositories>
+    <repository>
+        <id>ZK Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
+```
+
+**2. Update your ZK version and EE dependency**
+
+```xml
+<properties>
+    <zk.version>11.0.0.FL.20261021-Eval</zk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zkmax</artifactId>
+        <version>${zk.version}</version>
+    </dependency>
+</dependencies>
+```
+
+Make sure all ZK dependencies use the same evaluation version to avoid version conflicts.
+
+Once configured, replace a pair of Datebox components in a report filter or reservation form with Daterangebox. Compare both the user interaction and the synchronization code required in the ViewModel or controller.
+
+For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_installation_guide/maven_setup).
 
 ## Resources
 

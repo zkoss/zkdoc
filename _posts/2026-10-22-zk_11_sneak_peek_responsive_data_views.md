@@ -82,9 +82,44 @@ This ZK 11 feature provides:
 - Table layout at wider sizes and labeled cards at narrow sizes
 - Breakpoint-based card counts and selective field visibility
 
-## Try It in ZK 11 EE Freshly
+## Try It in ZK 11 EE-Eval Freshly
 
-Responsive stacking is available in the latest ZK 11 EE FL (freshly) build. Try it first on a representative Grid or Listbox, then decide which columns should remain visible in the narrow layout. This feature is most useful when a current data view already works well on desktop but also needs to fit a phone, tablet, split view, or dashboard panel.
+ZK 11 is coming soon, and you can preview responsive stacking in the latest ZK 11 EE-Eval Freshly build (`11.0.0.FL.20261021-Eval`).
+
+To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+
+**1. Add the ZK Evaluation Maven Repository**
+
+```xml
+<repositories>
+    <repository>
+        <id>ZK Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
+```
+
+**2. Update your ZK version and EE dependency**
+
+```xml
+<properties>
+    <zk.version>11.0.0.FL.20261021-Eval</zk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zkmax</artifactId>
+        <version>${zk.version}</version>
+    </dependency>
+</dependencies>
+```
+
+Make sure all ZK dependencies use the same evaluation version to avoid version conflicts.
+
+Once configured, try responsive stacking on an existing Grid or Listbox. Define the breakpoints, choose which columns appear in the stacked view, and resize your browser to see how the layout adapts to different screen sizes.
+
+For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_installation_guide/maven_setup).
 
 ## Resources
 

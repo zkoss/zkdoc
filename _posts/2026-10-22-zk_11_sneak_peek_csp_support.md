@@ -67,9 +67,44 @@ This ZK 11 feature provides:
 - Report-only configuration for staged rollout
 - Clear remaining boundaries for unsafe-eval and inline styles
 
-## Plan Your CSP Upgrade
+## Try It in ZK 11 Eval Freshly
 
-Teams preparing for ZK 11 can inventory raw inline event handlers and application-owned script blocks now. When the feature is ready in the target build, enable CSP reporting on a staging environment, confirm the effective response header and nonce behavior, and move to enforcement only after the report is clean.
+ZK 11 is coming soon, and you can preview the improved CSP support in the latest ZK 11 Eval Freshly build (`11.0.0.FL.20261021-Eval`).
+
+To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+
+**1. Add the ZK Evaluation Maven Repository**
+
+```xml
+<repositories>
+    <repository>
+        <id>ZK Evaluation</id>
+        <url>https://mavensync.zkoss.org/eval/</url>
+    </repository>
+</repositories>
+```
+
+**2. Update your ZK version and core dependency**
+
+```xml
+<properties>
+    <zk.version>11.0.0.FL.20261021-Eval</zk.version>
+</properties>
+
+<dependencies>
+    <dependency>
+        <groupId>org.zkoss.zk</groupId>
+        <artifactId>zk</artifactId>
+        <version>${zk.version}</version>
+    </dependency>
+</dependencies>
+```
+
+Make sure all ZK dependencies use the same evaluation version to avoid version conflicts.
+
+Once configured, enable CSP in report-only mode on a staging environment. Confirm the effective response header and nonce behavior, review violations from representative screens and third-party integrations, and move to enforcement only after the report is clean.
+
+For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_installation_guide/maven_setup).
 
 ## Resources
 
