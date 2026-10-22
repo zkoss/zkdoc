@@ -35,11 +35,11 @@ Sets the maximum number of visible avatars. `0` shows every avatar. Negative val
 
 ## Size
 
-Sets a `small`, `medium`, or `large` default for child avatars. A child can still specify its own size.
+Sets a uniform `small`, `medium`, or `large` size for all child avatars. This group-level setting overrides each child's displayed size without changing the child's `size` property.
 
 ## Shape
 
-Sets a `circle` or `square` default for child avatars. A child can still specify its own shape.
+Sets a uniform `circle` or `square` shape for all child avatars. This group-level setting overrides each child's displayed shape without changing the child's `shape` property.
 
 # Accessibility
 

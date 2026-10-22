@@ -69,4 +69,6 @@ Please refer to [Popup]({{site.baseurl}}/zk_component_ref/popup) for `open`, `cl
 
 # Supported Children
 
-`*ALL`
+`*NONE`
+
+`Confirmpopup` renders its title, message, and action buttons internally, so it does not accept child components.

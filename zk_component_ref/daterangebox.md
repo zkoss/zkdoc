@@ -119,7 +119,7 @@ The component applies a `SimpleDateConstraint` to both endpoints. Rules such as 
 | `showTodayLink` | `false` | Shows a localized Today shortcut. |
 | `open` | `false` | Opens or closes the popup programmatically. |
 | `hoverPreview` | `true` | Previews a range while choosing its end. |
-| `readonly` | `false` | Prevents editing and opening the popup. |
+| `readonly` | `false` | Prevents typing; the popup can still open and a selection can still update the value. |
 | `disabled` | `false` | Disables interaction. |
 | `lenient` | `true` | Allows lenient parsing. |
 | `strictDate` | `false` | Rejects impossible dates such as November 31. |
@@ -164,4 +164,6 @@ Set commonly used defaults with library properties:
 
 # Supported Children
 
-`*ALL`
+`*NONE`
+
+`Daterangebox` manages its input fields and popup content internally, so it does not accept child components.
