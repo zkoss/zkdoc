@@ -3,16 +3,18 @@ author: jameschu
 date: 2026-11-22
 version: ZK 11
 category: small-talk
-title: "ZK 11 Sneak Peek: Avatars, Badges & More for Polished UIs"
+title: "ZK 11 Sneak Peek: Avatars, Badges & More for Modern UIs"
 ---
 
-**Add consistent identity, status, navigation, confirmation, and featured-content patterns with new Community Edition components.**
+**Show team members, highlight notifications, and make filters and navigation easier to use with seven new ZK components.**
 
-## New Building Blocks for Common UI Details
+## Modern UI Details, Ready to Use
 
-ZK 11 adds Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel to Community Edition. These components cover interface details that applications often implement repeatedly.
+Avatars, notification badges, and removable filter chips give applications a more modern look while making useful information easier to spot. Users can see who is involved, what needs attention, and which filters are active without reading through additional text.
 
-They are regular ZK components. They can be declared in ZUL, updated from Java, bound with MVVM, and styled with the active theme.
+ZK 11 introduces Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel. Together, they provide ready-made components for these familiar UI patterns, reducing the custom markup, styling, and interaction code needed to build them.
+
+All seven are included in ZK Community Edition and work with standard ZUL, Java, and MVVM.
 
 ## Identity, Counts, and Filters
 
@@ -27,6 +29,8 @@ Avatar shows a person or object using an image, icon, or initials. Avatargroup o
 </avatargroup>
 ```
 
+![ZK Avatar components in several sizes and colors, followed by an overlapping Avatargroup.](/assets/images/small-talk/zk11-sneak-peek/avatar_group.png)
+
 Badge adds a count or dot indicator to a control. Chip presents a category, state, or active filter and can be closable when users may remove it.
 
 ```xml
@@ -38,13 +42,7 @@ Badge adds a count or dot indicator to a control. Chip presents a category, stat
 <chip label="Taipei" rounded="true" closable="true"/>
 ```
 
-![ZK Avatar components in several sizes and colors, followed by an overlapping Avatargroup.](/assets/images/small-talk/zk11-sneak-peek/avatar_group.png)
-
-*Avatar and Avatargroup provide consistent visual identity for people and teams.*
-
 ![Notification badges and status chips shown in several styles and severity colors.](/assets/images/small-talk/zk11-sneak-peek/badge_and_chip.png)
-
-*Badge and Chip make counts, states, and active filters easier to scan.*
 
 ## Navigation and Confirmation
 
@@ -60,6 +58,8 @@ Breadcrumb shows the current location in a hierarchy. maxItems collapses the mid
 </breadcrumb>
 ```
 
+![A ZK Breadcrumb showing a hierarchical navigation path with separators and collapsed middle items.](/assets/images/small-talk/zk11-sneak-peek/breadcrumb.png)
+
 Confirmpopup asks for confirmation next to the action that opened it. It keeps the user in context and supports severity, placement, icons, and default focus.
 
 ```xml
@@ -71,13 +71,7 @@ Confirmpopup asks for confirmation next to the action that opened it. It keeps t
               onOK="@command('delete')"/>
 ```
 
-![A ZK Breadcrumb showing a hierarchical navigation path with separators and collapsed middle items.](/assets/images/small-talk/zk11-sneak-peek/breadcrumb.png)
-
-*Breadcrumb keeps hierarchical navigation readable, even when the path is long.*
-
 ![A contextual confirmation popup anchored to a delete button, with Cancel and Delete actions.](/assets/images/small-talk/zk11-sneak-peek/confirmpopup.png)
-
-*Confirmpopup asks for confirmation beside the action that opened it.*
 
 ## Featured Content and Guided Steps
 
@@ -98,29 +92,31 @@ A Carouselitem can contain normal ZK components, not only an image. It can there
 
 ![A ZK Carousel showing featured content with navigation arrows and slide indicators.](/assets/images/small-talk/zk11-sneak-peek/carousel.png)
 
-*Carousel can present announcements, onboarding steps, or other component-based content.*
+## More UI Options, Less Integration Work
 
-## Use the Components as a Consistent Set
+ZK 11 expands its enterprise UI toolkit with modern components for user profiles, notifications, filters, navigation, and featured content. These additions make it easier to build more visually engaging interfaces alongside ZK’s established data and form components.
 
-The main value is consistency. A project does not need a different custom implementation for every avatar fallback, notification count, filter chip, breadcrumb separator, or confirmation popup.
-
-Teams planning a ZK 11 interface can identify these repeated patterns early and use the standard components when they become available in the project's target build.
+Because they are ready-to-use ZK components, developers can add them in ZUL and connect them to existing Java code or MVVM bindings, without integrating a separate UI library or building each interaction from scratch.
 
 ## Summary
 
-This ZK 11 feature provides:
+The ZK 11 component set includes:
 
 - Avatar and Avatargroup for compact visual identity
+
 - Badge and Chip for counts, status, categories, and filters
+
 - Breadcrumb for hierarchical navigation
+
 - Confirmpopup for contextual confirmation
+
 - Carousel for announcements, onboarding, and featured content
 
 ## Try It in ZK 11 Eval Freshly
 
-ZK 11 is coming soon, and you can preview Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel in the latest ZK 11 Eval Freshly build (`11.0.0.FL.20261021-Eval`). These components are included in ZK Community Edition.
+ZK 11 is coming soon, and you can preview Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval). These components are included in ZK Community Edition.
 
-To try them in your existing ZK application, update your Maven `pom.xml` with the following configuration:
+To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
 
 **1. Add the ZK Evaluation Maven Repository**
 
@@ -158,11 +154,15 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 ## Resources
 
 - [Avatar](https://docs.zkoss.org/zk_component_ref/avatar)
-- [Badge](https://docs.zkoss.org/zk_component_ref/badge)
-- [Chip](https://docs.zkoss.org/zk_component_ref/chip)
-- [Breadcrumb](https://docs.zkoss.org/zk_component_ref/breadcrumb)
-- [Confirmpopup](https://docs.zkoss.org/zk_component_ref/confirmpopup)
-- [Carousel](https://docs.zkoss.org/zk_component_ref/carousel)
-- [ZK GitHub repository](https://github.com/zkoss/zk)
-- [ZK Forum](https://forum.zkoss.org/)
 
+- [Badge](https://docs.zkoss.org/zk_component_ref/badge)
+
+- [Chip](https://docs.zkoss.org/zk_component_ref/chip)
+
+- [Breadcrumb](https://docs.zkoss.org/zk_component_ref/breadcrumb)
+
+- [Confirmpopup](https://docs.zkoss.org/zk_component_ref/confirmpopup)
+
+- [Carousel](https://docs.zkoss.org/zk_component_ref/carousel)
+
+- [ZK GitHub repository](https://github.com/zkoss/zk)

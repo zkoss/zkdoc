@@ -8,11 +8,13 @@ title: "ZK 11 Sneak Peek: Responsive Grids and Listboxes for Mobile-Friendly Dat
 
 **Turn an existing Grid or Listbox into a readable stacked layout while keeping the same model, renderer, events, and ZUL view.**
 
-## Responsive Behavior for Existing Data Components
+## Responsive Grid and Listbox for Narrow Layouts
 
-ZK 11 adds responsive stacking to the existing Grid and Listbox components. A data view can remain a normal table at wider sizes and change to labeled cards when its container becomes narrow.
+A Grid or Listbox can fit comfortably on a desktop but become difficult to read in a narrow dashboard panel, split view, tablet, or phone. Reducing column widths or adding horizontal scrolling may help, but neither makes the content easy to scan. Creating a separate mobile template adds rendering logic and maintenance work.
 
-The same component is used in both layouts. The model, row renderer, MVVM bindings, selection state, paging, and server-side events do not need a separate mobile implementation.
+ZK 11 introduces responsive stacking as a new feature for existing ZK Grid and Listbox. When the component’s container reaches a configured breakpoint, each row changes from a table row into a card, with column headers serving as field labels beside the corresponding values. When more space becomes available, the component returns to its normal table layout.
+
+This lets developers adapt existing data views to narrow layouts while keeping the same model, row renderer, and MVVM bindings. Selection, paging, and server-side events continue to use the same component, reducing the need to build and maintain a separate mobile view.
 
 ![A wide Grid table and a narrow stacked-card layout rendered from the same ZK component.](/assets/images/small-talk/zk11-sneak-peek/responsive_grid_demo.png)
 
@@ -40,15 +42,13 @@ The same component is used in both layouts. The model, row renderer, MVVM bindin
 </grid>
 ```
 
-responsive="stacking" enables the behavior. responsiveColumns controls the number of cards at each breakpoint and when the component returns to table form. In the example, small containers show one card per row and medium or wider containers use the regular table.
-
-The calculation follows the component's available container width. A Grid in a narrow dashboard panel can therefore stack even when the browser window is wide.
+Use responsive="stacking" to enable the behavior. responsiveColumns controls the number of cards per row at each breakpoint and when the component returns to table form. For example, you can configure a regular table for wide containers, two cards per row for medium containers, and one card per row for small containers.
 
 ![Diagram showing a ZK Grid changing from a table to multiple card columns and then a single card column as its container narrows.](/assets/images/small-talk/zk11-sneak-peek/responsive_grid_breakpoints.png)
 
-*Responsive stacking follows the component's available container width and configured breakpoints.*
+*These breakpoints follow the component’s available container width. A Grid in a narrow dashboard panel can therefore stack even when the browser window is wide.*
 
-## Headers Become Field Labels
+## Field Labels and Column Visibility
 
 In stacked mode, each column header becomes a label beside its cell value. Users can still identify each field after the horizontal row changes to a vertical layout.
 
@@ -78,13 +78,16 @@ It is less suitable for spreadsheet-like data where users must compare many nume
 This ZK 11 feature provides:
 
 - Responsive behavior added to the existing Grid and Listbox
+
 - One model, renderer, event flow, and ZUL view
+
 - Table layout at wider sizes and labeled cards at narrow sizes
+
 - Breakpoint-based card counts and selective field visibility
 
 ## Try It in ZK 11 EE-Eval Freshly
 
-ZK 11 is coming soon, and you can preview responsive stacking in the latest ZK 11 EE-Eval Freshly build (`11.0.0.FL.20261021-Eval`).
+ZK 11 is coming soon, and you can preview responsive stacking in the latest ZK 11 EE-Eval Freshly build (11.0.0.FL.20261021-Eval).
 
 To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
 
@@ -124,7 +127,7 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 ## Resources
 
 - [Grid component reference](https://docs.zkoss.org/zk_component_ref/grid)
-- [Listbox component reference](https://docs.zkoss.org/zk_component_ref/listbox)
-- [ZK GitHub repository](https://github.com/zkoss/zk)
-- [ZK Forum](https://forum.zkoss.org/)
 
+- [Listbox component reference](https://docs.zkoss.org/zk_component_ref/listbox)
+
+- [ZK GitHub repository](https://github.com/zkoss/zk)

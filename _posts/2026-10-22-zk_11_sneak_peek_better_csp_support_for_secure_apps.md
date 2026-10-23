@@ -6,13 +6,23 @@ category: small-talk
 title: "ZK 11 Sneak Peek: Better CSP Support for Secure Apps"
 ---
 
-**Use per-request nonces to remove unsafe-inline from script-src while keeping ZK-generated scripts working.**
+**Remove unsafe-inline from script-src in strict-dynamic mode while keeping ZK-generated scripts working.**
 
-## A Stronger Script Policy
+## CSP in Enterprise Applications
 
-Content Security Policy (CSP) limits which scripts a browser may run. It can reduce the impact of cross-site scripting, but a strict policy is difficult when a framework or application emits inline scripts.
+For enterprise teams, Content Security Policy (CSP) can be part of a customer’s security requirements or deployment review. CSP lets an application tell the browser which resources it may load and which scripts it may execute, adding protection against cross-site scripting (XSS) and other content injection attacks.
 
-ZK 11 improves its automatic CSP mode with per-request nonces and strict-dynamic. When enabled, ZK can generate script-src without unsafe-inline and authorize the scripts created for the current response.
+Applying CSP to an interactive application requires accounting for the scripts and styles used by its UI framework. Framework-generated initialization scripts, dynamic JavaScript execution, and inline styles can require specific policy permissions. These compatibility considerations are shared by other UI frameworks as well.
+
+ZK 11 builds on ZK’s existing CSP configuration support, making it easier to apply a nonce-based script policy while keeping framework-generated scripts working.
+
+## What Changes in ZK 11
+
+ZK 10.3.0 introduced automatic CSP configuration through `zk.xml`, including policy customization, report-only mode, and nonce support with `strict-dynamic`.
+
+ZK 11 builds on this foundation by omitting `unsafe-inline` from the generated `script-src` directive in strict-dynamic mode, unless a custom policy explicitly includes it. Framework-generated scripts receive the nonce automatically, allowing them to run under the policy without requiring developers to add nonce attributes manually.
+
+For application-owned script elements, the current nonce is available through `${cspNonce}` during page rendering.
 
 ![Diagram showing the server generating a nonce, adding it to the CSP header and page scripts, and the browser allowing matching scripts.](/assets/images/small-talk/zk11-sneak-peek/csp_nonce_flow.png)
 
@@ -26,8 +36,6 @@ ZK 11 improves its automatic CSP mode with per-request nonces and strict-dynamic
     <csp-strict-dynamic-enabled>true</csp-strict-dynamic-enabled>
 </system-config>
 ```
-
-Both settings are required. If csp-strict-dynamic-enabled is set without csp-enabled, ZK emits neither the CSP header nor a nonce and logs a warning.
 
 For each response, ZK creates a fresh nonce and includes it in the CSP header. Framework-generated script elements and ZUL script components receive the same nonce automatically.
 
@@ -45,31 +53,35 @@ The current nonce is available as cspNonce while a page is rendered. A complete 
 
 An explicitly supplied nonce is preserved, so the rendered element does not receive duplicate nonce attributes. Existing framework paths such as Clients.evalJavaScript() continue to use ZK's authorized script handling.
 
-## Know What the Change Does Not Remove
+## CSP Compatibility Considerations
 
-This improvement removes unsafe-inline from script-src when strict-dynamic is enabled. It does not remove every unsafe directive from the complete policy. Current ZK client code still requires unsafe-eval, and component markup still uses inline style attributes, so style-src continues to require unsafe-inline.
+A CSP policy needs to accommodate the browser operations used by the framework and application. As with other interactive UI frameworks, some ZK functionality relies on dynamic JavaScript execution and inline styling.
 
-Raw HTML event attributes such as onclick are not authorized after script-src drops unsafe-inline. Register behavior through ZK events or JavaScript event APIs. The nonce also changes on every request, so dynamic rendered pages must not be cached and replayed with an old CSP header.
+ZK 11’s default policy therefore retains `unsafe-eval` for current client-side functionality and `unsafe-inline` in `style-src` for inline style attributes. The ZK 11 enhancement specifically removes `unsafe-inline` from the generated script policy in strict-dynamic mode; it does not remove these separate permissions.
+
+Also, note that if an application supplies its own csp-policy, explicitly including script-src 'unsafe-inline' preserves that setting.
 
 ## Roll Out the Policy in Stages
 
-CSP changes should first be deployed in report-only mode. Review violations from representative screens, third-party libraries, embedded content, and application-owned scripts. Adjust the application policy before enforcement begins.
-
-ZK 11 reduces the framework changes required for a nonce-based script policy. The final policy, external source list, reporting endpoint, and enforcement schedule still belong to the application and its security team.
+CSP changes should first be deployed in report-only mode, where it reports violations without blocking resources, allowing teams to review compatibility before enforcement.  Review violations from representative screens, third-party libraries, embedded content, and application-owned scripts. Adjust the application policy before enforcement begins.
 
 ## Summary
 
 This ZK 11 feature provides:
 
 - Per-request nonces for ZK-generated scripts
+
 - unsafe-inline removed from script-src in strict-dynamic mode
+
 - cspNonce available for application-owned script elements
+
 - Report-only configuration for staged rollout
+
 - Clear remaining boundaries for unsafe-eval and inline styles
 
 ## Try It in ZK 11 Eval Freshly
 
-ZK 11 is coming soon, and you can preview the improved CSP support in the latest ZK 11 Eval Freshly build (`11.0.0.FL.20261021-Eval`).
+ZK 11 is coming soon, and you can preview the improved CSP support in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval).
 
 To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
 
@@ -109,7 +121,7 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 ## Resources
 
 - [Automatic CSP Configuration](https://docs.zkoss.org/zk_dev_ref/security_tips/automatic_csp_through_zk_configuration)
-- [csp-strict-dynamic-enabled configuration](https://docs.zkoss.org/zk_config_ref/the_csp-strict-dynamic-enabled_element)
-- [ZK GitHub repository](https://github.com/zkoss/zk)
-- [ZK Forum](https://forum.zkoss.org/)
 
+- [csp-strict-dynamic-enabled configuration](https://docs.zkoss.org/zk_config_ref/the_csp-strict-dynamic-enabled_element)
+
+- [ZK GitHub repository](https://github.com/zkoss/zk)
