@@ -2,160 +2,115 @@
 title: "Using Maven"
 ---
 
-This section describes the Maven settings required to use ZK Pivottable
-in your application. Please refer to [this section]({{site.baseurl}}/zk_installation_guide/maven_setup)
-for the Maven settings for ZK Framework.
+Maven manages the ZK Pivottable libraries and their versions. This page shows the minimum configuration for Pivottable 4.0.0. For general ZK repository settings, see [How to Use Maven with ZK]({{site.baseurl}}/zk_installation_guide/maven_setup).
 
-# Dependency
+# Requirements for 4.0.0
 
-Check [evaluation repository](https://mavensync.zkoss.org/eval/org/zkoss/pivot/pivottable/)
-or [premium repository](https://maven.zkoss.org/repo/zk/ee/org/zkoss/pivot/pivottable/)
-for available versions.
+{% include supported-since.html version="4.0.0" %}
+
+ZK Pivottable 4.0.0 requires the following environment:
+
+| Requirement | Minimum version |
+|-------------|-----------------|
+| Java | 17 |
+| ZK | 10.3.1 |
+| Keikai | 7.0.0, when exporting to Excel |
+
+# Add the Pivottable Dependency
+
+Define the versions in one place so that the related libraries remain aligned:
 
 ```xml
-<dependencies>  
+<properties>
+    <maven.compiler.release>17</maven.compiler.release>
+    <zk.version>10.3.1</zk.version>
+    <pivottable.version>4.0.0</pivottable.version>
+    <keikai.version>7.0.0</keikai.version>
+</properties>
+```
+
+Add Pivottable and ZK to your application:
+
+```xml
+<dependencies>
     <dependency>
         <groupId>org.zkoss.pivot</groupId>
         <artifactId>pivottable</artifactId>
         <version>${pivottable.version}</version>
     </dependency>
-</dependencies> 
+    <dependency>
+	<groupId>org.zkoss.zk</groupId>
+	<artifactId>zul</artifactId>
+	<version>${zk.version}</version>
+    </dependency>
+</dependencies>
 ```
 
-## Migrate to Keikai-poi
-{% include supported-since.html version="3.1.0" %}
-For improved security and maintainability, Pivottable now uses keikai-poi 5.13.0 (or the latest version of Keikai 5.x) instead of zpoi. This change is required for users who need to export pivot tables to Excel (.xlsx) files.
+Use `4.0.0-Eval` instead of `4.0.0` when evaluating Pivottable.
+
+# Add Excel Export Dependencies
+
+{% include supported-since.html version="4.0.0" %}
+
+Pivottable 4.0.0 exports Excel files through the Keikai 7 model API. Add these dependencies only when your application exports to XLS or XLSX:
 
 ```xml
 <dependency>
     <groupId>io.keikai</groupId>
-    <artifactId>keikai-poiex</artifactId>
-    <version>5.13.0</version>
+    <artifactId>keikai-model</artifactId>
+    <version>${keikai.version}</version>
+</dependency>
+<dependency>
+    <groupId>io.keikai</groupId>
+    <artifactId>keikai-native</artifactId>
+    <version>${keikai.version}</version>
+    <scope>runtime</scope>
 </dependency>
 ```
 
-keikai-poiex is at a different repository that you need to specify it explicitly:
+These artifacts replace `keikai-poi`, `keikai-poiex`, and `ooxml-schemas` used by Pivottable 3.1.x. `keikai-native` is not pulled in transitively, so declare it explicitly.
+
+# Configure Repositories
+
+Licensed users need the ZK EE and Keikai EE repositories:
+
+```xml
+<repositories>
+    <repository>
+	<id>ZK EE</id>
+	<url>https://maven.zkoss.org/repo/zk/ee/</url>
+    </repository>
+    <repository>
+	<id>Keikai EE</id>
+	<url>https://maven.zkoss.org/repo/keikai/ee/</url>
+    </repository>
+</repositories>
+```
+
+Configure the repository credentials in Maven's `settings.xml`. See [Login Authentication]({{site.baseurl}}/zk_installation_guide/maven_setup#login-authentication).
+
+For evaluation, use the evaluation repository and the `-Eval` version:
 
 ```xml
 <repository>
-  <id>Keikai EE</id>
-  <name>Keikai EE Repository</name>
-  <url>https://maven.zkoss.org/repo/keikai/ee/</url>
+    <id>ZK Evaluation</id>
+    <url>https://mavensync.zkoss.org/eval/</url>
 </repository>
 ```
-<!--
-https://tracker.zkoss.org/browse/ZKPVT-98
--->
 
-# Configure Repository
+You can check the [evaluation repository](https://mavensync.zkoss.org/eval/org/zkoss/pivot/pivottable/) or the [licensed repository](https://maven.zkoss.org/repo/zk/ee/org/zkoss/pivot/pivottable/) for available versions.
 
-You would refer to different repositories in your pom.xml depending on
-whether you are evaluating or you are a premium user.
+# Upgrade from 3.1.x to 4.0.0
 
-Please check [Add ZK Maven Repository to Your Projects](/zk_installation_guide/maven_setup#add-zk-maven-repository-to-your-projects)
+Pivottable 4.0.0 changes both its runtime requirements and the API used for Excel export. Complete these steps before rebuilding your application:
 
-## Sample of pom.xml for licensed ZK Pivottable Package
+1. Upgrade the project to Java 17 or later.
+2. Upgrade ZK to 10.3.1 or later.
+3. Replace Keikai 5.13.0 with Keikai 7.0.0.
+4. Remove `keikai-poi`, `keikai-poiex`, and `ooxml-schemas`. Also remove `zpoi` and `zpoiex` when upgrading from a version before 3.1.0.
+5. Add `keikai-model` and `keikai-native` if the application exports Excel files.
+6. Update custom export code to use the Keikai model API.
 
-```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-        http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>zkpvt</groupId>
-    <artifactId>sample</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <properties>
-        <!-- please change the version accordingly -->
-        <zk.version>9.6.5</zk.version>
-        <zkpivot.version>3.0.0</zkpivot.version>
-        <zkpoi.version>3.8.1</zkpoi.version>
-    </properties>
-    <packaging>war</packaging>
-    <name>The sample Project</name>
-    <repositories>
-        <repository>
-            <id>ZK CE</id>
-            <name>ZK CE Repository</name>
-            <url>http://mavensync.zkoss.org/maven2</url>
-        </repository>
-        <repository>
-            <id>ZK EE</id>
-            <url>https://maven.zkoss.org/repo/zk/ee</url>
-        </repository>
-    </repositories>
-    <dependencies>
-        <dependency>
-          <groupId>org.zkoss.pivot</groupId>
-          <artifactId>pivottable</artifactId>
-          <version>${zkpivot.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.zkoss.zk</groupId>
-            <artifactId>zul</artifactId>
-            <version>${zk.version}</version>
-        </dependency>
-        <!-- Optional: ZK Pivottable dependency (export to excel format) -->
-        <dependency>
-            <groupId>org.zkoss.poi</groupId>
-            <artifactId>zpoiex</artifactId>
-            <version>${zkpoi.version}</version>
-        </dependency>
-        
-    </dependencies>
-</project>
-```
+Applications that only render and interact with a Pivottable do not need the Keikai dependencies. The migration affects applications that export or customize Excel output.
 
-### Troubleshooting
-
-If you have problem switching from the evaluation repository to the
-licensed one, please check the followings:
-
-- **Remove evaluation repository**, [use ZK EE repository instead]({{site.baseurl}}/zk_pivottable_essentials/using_maven#configure-repository)
-- [Login authentication]({{site.baseurl}}/zk_installation_guide/maven_setup#login-authentication)
-- [Delete maven local repository evaluation cache]({{site.baseurl}}/zk_pivottable_essentials/using_maven#purge-local-repository-evaluation-cache)
-
-#### Purge local repository evaluation cache
-
-- 1\. Add purge-local-repository plugin in pom.xml
-
-```xml
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <version>2.6</version>
-                <executions>
-                    <execution>
-                        <id>purge-local-dependencies</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>purge-local-repository</goal>
-                        </goals>
-                        <configuration>
-                            <manualIncludes>
-                                <manualInclude>org.zkoss.pivot:pivottable
-                                </manualInclude>
-                                <manualInclude>org.zkoss.poi:zpoiex
-                                </manualInclude>
-                            </manualIncludes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-```
-
-- 2\. Invoke **maven clean** to delete local repository evaluation cache
-
-```xml
-mvn clean
-```
-
-## Version History
-
-| Version | Date      | Content               |
-|---------|-----------|-----------------------|
-| 2.0.0   | June 2012 | Add Maven information |
+See [Migrate to Pivottable 4.0.0]({{site.baseurl}}/zk_pivottable_essentials/migration_guide_4_0_0) for API mappings, custom workbook migration, style changes, exported file differences, and known limitations.

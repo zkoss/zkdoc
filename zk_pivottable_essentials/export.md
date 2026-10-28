@@ -2,107 +2,84 @@
 title: "Export"
 ---
 
-You can export the computed result of Pivottable to other formats.
+You can export the computed Pivottable result to Excel or CSV. Excel export requires the Keikai libraries described in [Using Maven]({{site.baseurl}}/zk_pivottable_essentials/using_maven#add-excel-export-dependencies). Applications upgrading existing export code should also follow [Migrate to Pivottable 4.0.0]({{site.baseurl}}/zk_pivottable_essentials/migration_guide_4_0_0).
 
 # Export to Microsoft Excel
 
-Given a Pivottable instance, you can dump the current result in .xls
-format to an OutputStream. The exported Excel file contains a sheet that
-reflects the computed result you see on browser windows, without paging.
-For example,
+Create a `PivotExportContext` from the component and pass it to `Exports.exportExcel()`. The exported sheet contains the complete computed result without paging.
 
 ## XLS Format
 
 ```java
-ByteArrayOutputStream out = new ByteArrayOutputStream();
-PivotExportContext context = Exports.getExportContext(pivot, false, null);
-Exports.exportExcel(out, "xls", context, null); // writes Pivottable information to the output stream
-Filedownload.save(out.toByteArray(), "application/vnd.ms-excel", "pivot.xls"); // file download
-try {
-    out.close();
-} catch (IOException e) {}
+try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+    PivotExportContext context = Exports.getExportContext(pivot, false, null);
+    Exports.exportExcel(out, "xls", context, null);
+    Filedownload.save(out.toByteArray(), "application/vnd.ms-excel", "pivot.xls");
+}
 ```
 
-## XLSX format
-
-It needs extra jar files including
-
-- dom4j-1.6.1.jar
-- ooxml-schemas-1.1.jar
-- xmlbeans-2.3.0.jar
+## XLSX Format
 
 ```java
-ByteArrayOutputStream out = new ByteArrayOutputStream();
-PivotExportContext context = Exports.getExportContext(pivot, false, null);
-Exports.exportExcel(out, "xlsx", context, null); // writes Pivottable information to the output stream
-Filedownload.save(out.toByteArray(), "application/vnd.ms-excel", "pivot.xlsx"); // file download
-try {
-    out.close();
-} catch (IOException e) {}
+try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+    PivotExportContext context = Exports.getExportContext(pivot, false, null);
+    Exports.exportExcel(out, "xlsx", context, null);
+    Filedownload.save(out.toByteArray(),
+	"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+	"pivot.xlsx");
+}
 ```
 
-## Change Styles
+## Customize Excel Styles
 
-The export utility provides a chance to handle Excel style via POI API.
-You can specify custom styles by passing a
-[org.zkoss.pivot.util.poi.CellStyleConfigurator](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/util/poi/CellStyleConfigurator.html).
-For example,
+{% include supported-since.html version="4.0.0" %}
+
+Pivottable 4.0.0 exposes Keikai model objects to custom style code. Implement [CellStyleConfigurator](https://www.zkoss.org/javadoc/latest/zkpvt/org/zkoss/pivot/util/poi/CellStyleConfigurator.html) with `SCell` instead of the former POI `Cell` type:
 
 ```java
-Exports.exportExcel(out, "xls", context, new CellStyleConfigurator() {
-    public void config(PivotExportCell.Type type, Cell cell, StyleFactory styleFactory) {
-        switch (type) {
-            // you can specify style by cell type, use StyleFactory to create new style
-        }
+Exports.exportExcel(out, "xlsx", context, new CellStyleConfigurator() {
+    @Override
+    public void config(PivotExportCell.Type type, SCell cell,
+	StyleFactory styleFactory) {
+	// Customize the cell with the Keikai model API.
     }
 
-    public String getDateFormat(String field) {
-        //specify date format by filed
+    @Override
+    public String getDataFormat(String field) {
+	// Return a format pattern for the specified data field.
         return null;
     }
 });
 ```
 
-# PivotExportContext
+The overloads that accept an existing workbook now take `io.keikai.model.SBook`. Call `SBook.destroy()` after finishing the export when your application creates the book. See [Export into an Existing Book]({{site.baseurl}}/zk_pivottable_essentials/migration_guide_4_0_0#export-into-an-existing-book) for the migration example and resource lifecycle requirements.
 
-PivotExportContext is an intermediate result for exporting Pivottable to
-a table/sheet data structure. You can construct it from a Pivottable, or
-from a PivotModel and a PivotRenderer (so you don't need a component
-instance).
+# Create an Export Context
+
+`PivotExportContext` is an intermediate table or sheet representation. You can create it from a Pivottable component or directly from a `PivotModel` and `PivotRenderer`.
 
 ```java
-// construct from a Pivottable
-PivotExportContext context = Exports.getExportContext(pivot, open, titles); 
+// Create from a Pivottable component.
+PivotExportContext context = Exports.getExportContext(pivot, open, titles);
 
-// construct from a PivotModel and a PivotRenderer
-// in this case, you also have to specify the data field orientation ("column" or "row")
-PivotExportContext context = Exports.getExportContext(model, renderer, "column", open, titles); 
+// Create without a component instance.
+PivotExportContext context =
+	Exports.getExportContext(model, renderer, "column", open, titles);
 ```
 
-There are two additional parameters in the API:
+The parameters control the exported result:
 
-- boolean open: Expand all header tree nodes for the export, but the
-  model itself it not changed.
-- String\[\] titles: The text in the title cells (data title, column
-  title, row title, respectively). See [ title cells definition]({{site.baseurl}}/zk_pivottable_essentials/concept#trivia).
+- `open`: Expands all header tree nodes for the export without changing the model.
+- `titles`: Specifies the data, column, and row title cells, in that order. See [Title Cells]({{site.baseurl}}/zk_pivottable_essentials/create_pivottable#title-cells).
 
 # Export to CSV
 
-You can also export to CSV format in a similar manner. For example,
+CSV export does not require the Keikai libraries:
 
 ```java
-ByteArrayOutputStream out = new ByteArrayOutputStream();
-PivotExportContext context = Exports.getExportContext(pivot, true, TITLES);
-Exports.exportCSV(out, context);
-Filedownload.save(out.toByteArray(), "text/csv", "pivot.csv");
-try {
-    out.close();
-} catch (IOException e) {}
+try (ByteArrayOutputStream out = new ByteArrayOutputStream()) {
+    PivotExportContext context = Exports.getExportContext(pivot, true, TITLES);
+    Exports.exportCSV(out, context);
+    Filedownload.save(out.toByteArray(), "text/csv", "pivot.csv");
+}
 ```
-
-## Version History
-
-| Version | Date      | Content                             |
-|---------|-----------|-------------------------------------|
-| 2.0.0   | May, 2012 | Support Microsoft Excel xlsx format |
-|         |           |                                     |

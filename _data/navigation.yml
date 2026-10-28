@@ -412,6 +412,7 @@ zk_pivottable_essentials:
         url: /zk_pivottable_essentials/setting_up_zk_pivottable
       - title: Using Maven
         url: /zk_pivottable_essentials/using_maven
+      - { title: Migration Guide for 4.0.0, url: /zk_pivottable_essentials/migration_guide_4_0_0 }
   - title: Working With Pivottable
     url: /zk_pivottable_essentials/working_with_pivottable
     children:
