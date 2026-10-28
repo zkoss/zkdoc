@@ -2,10 +2,13 @@
 title: "Export"
 ---
 
-You can export the computed Pivottable result to Excel or CSV. Excel export requires the Keikai libraries described in [Using Maven]({{site.baseurl}}/zk_pivottable_essentials/using_maven#add-excel-export-dependencies). Applications upgrading existing export code should also follow [Migrate to Pivottable 4.0.0]({{site.baseurl}}/zk_pivottable_essentials/migration_guide_4_0_0).
+You can export the computed Pivottable result to Excel or CSV. 
 
 # Export to Microsoft Excel
 
+Starting with Pivottable 4.0.0, Excel export uses the Keikai 7 spreadsheet engine and requires the keikai-model and keikai-native dependencies. See [Using Maven]({{site.baseurl}}/zk_pivottable_essentials/using_maven#add-excel-export-dependencies) for dependency configuration.
+
+If you are upgrading from an earlier version, see the [Migration Guide for 4.0.0]({{site.baseurl}}/zk_pivottable_essentials/migration_guide_4_0_0) for required dependency changes and updates to export customization code.
 Create a `PivotExportContext` from the component and pass it to `Exports.exportExcel()`. The exported sheet contains the complete computed result without paging.
 
 ## XLS Format
