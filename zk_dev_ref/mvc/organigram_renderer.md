@@ -16,6 +16,8 @@ For example,
 ```java
     public class MyRenderer implements OrgitemRenderer {
         public void render(Orgitem orgitem, Object data, int index) throws Exception {
+            orgitem.setValue(data);
+
             final Button button = new Button(Objects.toString(data));
             button.addEventListener(Events.ON_CLICK, new EventListener<Event>() {
                 public void onEvent(Event event) {
@@ -29,6 +31,11 @@ For example,
         }
     }
 ```
+
+A custom renderer must call `orgitem.setValue(data)` itself, as the
+example above does. The default renderer and the model template call it
+for you, but a custom renderer replaces them, so the value is not set
+unless your code sets it.
 
 [^1]: For the concept about component, model and renderer, please refer
     to [the Model-driven Display section]({{site.baseurl}}/zk_dev_ref/mvc/list_model#Model-driven_Display).

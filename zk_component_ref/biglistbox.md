@@ -7,7 +7,7 @@ description: "Biglistbox: A component to handle a huge data sets and provides th
 - **Java API:** [org.zkoss.zkmax.zul.Biglistbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Biglistbox.html)
 - **JavaScript API:** [zkmax.big.Biglistbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.big.Biglistbox.html)
 
-{% include edition-availability.html edition="pe" %}
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

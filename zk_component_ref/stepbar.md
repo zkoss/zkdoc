@@ -7,8 +7,8 @@ description: "Stepbar is a navigation component suitable for displaying the prog
 - **Java API:** [org.zkoss.zkmax.zul.Stepbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Stepbar.html)
 - **JavaScript API:** [zkmax.wgt.Stepbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Stepbar.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

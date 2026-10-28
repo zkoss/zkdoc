@@ -6,8 +6,8 @@ title: "Organigram"
 - **Java API:** [org.zkoss.zkmax.zul.Organigram](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Organigram.html)
 - **JavaScript API:** [zkmax.layout.Organigram](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Organigram.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 
@@ -157,12 +157,15 @@ The renderer can also be specified as a fully-qualified class name string (ZUL a
     import org.zkoss.zkmax.zul.Orgitem;
     OrgitemRenderer myRenderer = new OrgitemRenderer() {
         public void render(Orgitem item, Object data, int index) {
+            item.setValue(data);
             item.setLabel(data.toString().toUpperCase());
         }
     };
 ]]></zscript>
 <organigram width="600px" model="${model}" itemRenderer="${myRenderer}"/>
 ```
+
+Only the default renderer and the `model` template set the item value. A custom renderer must call `item.setValue(data)` itself.
 
 The `itemRenderer` value is an `OrgitemRenderer` object — construct it in `<zscript>`, a composer, or a ViewModel and reference it via EL. See also [Organigram Renderer]({{site.baseurl}}/zk_dev_ref/mvc/organigram_renderer) for a full guide.
 

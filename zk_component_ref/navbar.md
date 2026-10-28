@@ -7,8 +7,8 @@ description: "Navbar: Provide a roadmap to help user navigate through website. I
 - **Java API:** [Navbar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navbar.html)
 - **JavaScript API:** [Navbar](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navbar.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

@@ -6,8 +6,8 @@ title: "Anchornav"
 - **Java API:** [Anchornav](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Anchornav.html)
 - **JavaScript API:** [Anchornav](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Anchornav.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

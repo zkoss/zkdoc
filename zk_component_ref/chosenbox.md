@@ -7,7 +7,7 @@ description: "Chosenbox: A component similar to Combobox but handles the multi-s
 - **Java API:** [org.zkoss.zkmax.zul.Chosenbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Chosenbox.html)
 - **JavaScript API:** [zkmax.inp.Chosenbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Chosenbox.html)
 
-{% include edition-availability.html edition="pe" %}
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="6.0.1" %}
 
