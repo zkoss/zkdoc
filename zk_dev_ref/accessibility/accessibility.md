@@ -14,7 +14,7 @@ The za11y (zk-accessibility) module enables you to create accessible
 applications. Key features include full keyboard support, assistive
 technologies support, and high-contrast themes.
 
-{% include edition-availability.html edition="pe" %} za11y is a Professional Edition module — it is available in both PE and EE.
+{% include edition-availability.html edition="ee" %}
 
 To meet accessibility requirements, one key point is to provide semantic
 information about widgets, structures, and behaviors for assistive
