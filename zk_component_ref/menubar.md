@@ -99,8 +99,8 @@ When the menubar width is constrained and there are many top-level menus, enable
 
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 ## Keyboard Support
 

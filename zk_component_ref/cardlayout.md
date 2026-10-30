@@ -66,8 +66,8 @@ setting.
 
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 Cardlayout is often used along with other components to achieve the
 carousel effect. If you are using cardlayout for carousel, check here

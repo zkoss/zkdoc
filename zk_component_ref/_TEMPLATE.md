@@ -22,7 +22,7 @@
    4b   ## Common Use Cases     H2     REQUIRED — problem-domain scenarios
    5  # Example                 H1     REQUIRED (image + ZUL snippet; optional "Try it")
    6  <feature sections>        H1     OPTIONAL — component-specific topics (e.g. "File Upload")
-  6b  # Accessibility           H1     CONDITIONAL — components with keyboard/ARIA support (PE/EE feature)
+  6b  # Accessibility           H1     CONDITIONAL — components with keyboard/ARIA support (EE feature)
    7  # Properties              H1     REQUIRED if the component exposes documentable properties
    8  # Supported Events        H1     REQUIRED if the component fires events
    9  # Supported Molds         H1     REQUIRED if the component has >1 mold
@@ -39,7 +39,7 @@
      never `# Supported events`). Casing may be normalized; the `#`-count must NOT.
    - ACCESSIBILITY: keyboard/ARIA docs live in ONE `# Accessibility` section per
      page (slot 6b, before `# Properties`). Fold any legacy `# Keyboard Navigation`
-     heading into it as `## Keyboard Support`. Keyboard support is a PE/EE feature,
+     heading into it as `## Keyboard Support`. Keyboard support is an EE feature,
      so keep the `supported-since`/`edition-availability` gates inside the section.
    - Do NOT add a "Version History" section. For version info use an inline
      `{% include supported-since.html version="x.y.z" %}` where relevant.
@@ -125,14 +125,14 @@ Component-specific topics that don't fit Properties — e.g. "File Upload",
 
 <!--
 # Accessibility             (CONDITIONAL, H1 — components with keyboard/ARIA support)
-Keyboard & ARIA support. This is a PE/EE feature, so KEEP the edition/since gates
+Keyboard & ARIA support. This is an EE feature, so KEEP the edition/since gates
 inside the section. Fold any legacy `# Keyboard Navigation` into `## Keyboard
 Support`. Place between the feature sections and Properties.
 -->
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 ## Keyboard Support
 

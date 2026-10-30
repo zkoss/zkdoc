@@ -34,8 +34,8 @@ A selection box for holding a time (a java.util.Date Object), but only Hour, Min
 
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 ## Keyboard Support
 

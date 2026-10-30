@@ -77,8 +77,8 @@ Bind `selectedItem` to a ViewModel property to control which `navitem` is highli
 
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 ## Keyboard Support
 

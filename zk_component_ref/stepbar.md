@@ -75,8 +75,8 @@ IE10 is not supported as it only partially supports flexbox. [Check flexbox brow
 
 # Accessibility
 
-{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 ## Keyboard Support
 
