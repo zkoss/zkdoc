@@ -6,7 +6,8 @@ description: "Cardlayout: changing cards. The selectedIndex will decide which co
 - **Java API:** [org.zkoss.zkmax.zul.Cardlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cardlayout.html)
 - **JavaScript API:** [zkmax.layout.Cardlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Cardlayout.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

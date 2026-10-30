@@ -8,16 +8,19 @@ description: "Scrollview: The following example creates a vertically scrolling c
 - **JavaScript API:** [zkmax.layout.Scrollview](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Scrollview.html)
 
 {% include supported-since.html version="6.5.0" %}
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 
-`Scrollview` is a container that enables touch-based scrolling of its child components on mobile and tablet devices. When used on a non-touch device it renders as a plain `<div>` with no scroll behaviour. The scrolling direction is controlled by the `orient` attribute — either `"vertical"` (default) or `"horizontal"`.
+`Scrollview` is a container that scrolls its child components. The scrolling direction is controlled by the `orient` attribute — either `"vertical"` (default) or `"horizontal"`. On touch devices it provides touch-based scrolling with a bounce effect. On non-touch devices it uses native browser scrolling (`overflow: auto`), so scrollbars and the mouse wheel work. Only scrolling along the axis set by `orient` fires its events.
+
+To get scrolling, set a `height` (vertical) or `width` (horizontal) that is smaller than the content. Without one, the `scrollview` grows with its content.
 
 ## Common Use Cases
 
-- Wrapping a long list of items in a mobile application so users can swipe vertically through the content.
-- Creating a horizontally scrollable photo strip or card carousel on touch devices.
+- Wrapping a long list of items in a mobile application so users can scroll through the content.
+- Creating a horizontally scrollable photo strip or card carousel.
 - Nesting a `scrollview` inside a fixed-height region to confine scrolling to a specific area without affecting the page layout.
 
 # Example
@@ -83,8 +86,8 @@ Sets the scroll direction of the `scrollview`. Only the two values listed below 
 
 | Name | Event Type | Description |
 |---|---|---|
-| `onScroll` | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Fired after the user finishes scrolling on a touch device. The `ScrollEvent` carries the new scroll position (`getPos()` / `getPosInDouble()`) and an `isOutOfBound()` flag that is `true` when the position is outside the component boundary (bounce effect). |
-| `onScrolling` | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Fired continuously while the user is scrolling on a touch device (scroll in progress, not yet finished). Carries the same position data as `onScroll`. Use this event for live feedback; use `onScroll` for final position. |
+| `onScroll` | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | On a touch device, fired after the user finishes scrolling; `isOutOfBound()` is `true` when the position is outside the component boundary (bounce effect). On a non-touch device, fired when the scroll position reaches either end (start or end) of the scroll range, and `isOutOfBound()` is `true` at that point. The `ScrollEvent` carries the new scroll position (`getPos()` / `getPosInDouble()`). |
+| `onScrolling` | [org.zkoss.zk.ui.event.ScrollEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/ScrollEvent.html) | Fired while the user is scrolling, on both touch and non-touch devices (scroll in progress). Carries the same position data as `onScroll`. Use this event for live feedback; use `onScroll` for the final position. |
 
 # Supported Children
 

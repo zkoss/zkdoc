@@ -7,7 +7,8 @@ description: "Splitlayout is a layout container, which is used to divide a compo
 - **Java API:** [org.zkoss.zkmax.zul.Splitlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Splitlayout.html)
 - **JavaScript API:** [zkmax.layout.Splitlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Splitlayout.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.5.0" %}
 
@@ -154,10 +155,12 @@ application.
 
 ## Widths and Heights
 
-specify `widths` or `heights` with a list of numbers(in pixel) separated
-by a comma to denote the width/height of two areas in splitlayout.
-Notice that you should use them while using flex in the children
-component.
+specify `widths` or `heights` with two values separated by a comma to
+denote the width/height of the two areas in splitlayout. Always specify
+both values: when only one value is given, the second area shrinks to
+its content width. The `widths` value is ignored when a child uses
+`hflex`; use `hflex`/`vflex` on the children to size them in proportion
+instead (see below).
 
 ### Specify Children Size in Proportion
 
@@ -176,10 +179,11 @@ Specify `hflex`/`vflex` on 2 children like:
 
 ## MinWidths and MinHeights
 
-User setMinWidths(String minWidths) and setMinHeights(String minHeights)
-to sets the minimum widths/heights in the same format of
-setWidths/setHeights. When user drag the splitter, the two areas will
-not be smaller than the minWidths/minHeights.
+Use setMinWidths(String minWidths) and setMinHeights(String minHeights)
+to set the minimum widths/heights of the two areas. Each value must
+include a unit, `px` or `%`, such as `"100px,20%"`. Plain numbers such as
+`"100,20"` are silently ignored. When the user drags the splitter, the two
+areas will not be smaller than the minWidths/minHeights.
 
 # Supported Events
 

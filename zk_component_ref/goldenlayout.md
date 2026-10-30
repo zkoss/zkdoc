@@ -6,7 +6,8 @@ description: "GoldenLayout is a layout container which layouts panels as docker 
 - **Java API:** [org.zkoss.zkmax.zul.GoldenLayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenLayout.html)
 - **JavaScript API:** [zkmax.goldenlayout.GoldenLayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.goldenlayout.GoldenLayout.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.6.0" %}
 

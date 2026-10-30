@@ -7,7 +7,8 @@ description: "Rowlayout: A rowlayout lays out a container which can have multipl
 - **Java API:** [org.zkoss.zkmax.zul.Rowlayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Rowlayout.html)
 - **JavaScript API:** [zkmax.layout.Rowlayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Rowlayout.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 
@@ -20,6 +21,8 @@ The following diagram illustrates the rowlayout/rowchildren components
 and their various configurable parameters.
 
 ![Rowlayout](/zk_component_ref/images/ZKComRef_Rowlayout.PNG )
+
+A `rowlayout` always fills the width of its container. Setting `width` or `hflex` on a `rowlayout` throws an `UnsupportedOperationException`, so the ZUL page fails to load. To limit its width, wrap the `rowlayout` in a container with the desired width, such as a `div`.
 
 # Example
 
