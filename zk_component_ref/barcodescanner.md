@@ -5,7 +5,8 @@
 - **Java API:** [org.zkoss.zkmax.zul.Barcodescanner](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcodescanner.html)
 - **JavaScript API:** [zkmax.barscanner.Barcodescanner](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barscanner.Barcodescanner.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose

@@ -7,7 +7,8 @@ description: "Cascader is used to select an item from a hierarchical structure o
 - **Java API:** [org.zkoss.zkmax.zul.Cascader](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cascader.html)
 - **JavaScript API:** [zkmax.inp.Cascader](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Cascader.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose

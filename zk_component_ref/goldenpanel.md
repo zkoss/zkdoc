@@ -7,8 +7,8 @@ description: "GoldenPanel is the only child type of GoldenLayout. It allows you 
 - **Java API:** [org.zkoss.zkmax.zul.GoldenPanel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/GoldenPanel.html)
 - **JavaScript API:** [zkmax.goldenlayout.GoldenPanel](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.goldenlayout.GoldenPanel.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.6.0" %}
 

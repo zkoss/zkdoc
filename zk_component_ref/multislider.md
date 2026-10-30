@@ -9,8 +9,8 @@ description: "Multislider: A multislider component represents a slider with mult
 - **JavaScript API:**
   [Multislider](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.slider.Multislider.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

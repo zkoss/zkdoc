@@ -7,7 +7,8 @@ description: "Searchbox: A dropdown list that allows users to search and select 
 - **Java API:** [org.zkoss.zkmax.zul.Searchbox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Searchbox.html)
 - **JavaScript API:** [zkmax.inp.Searchbox](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.inp.Searchbox.html)
 
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="9.0.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose
 

@@ -7,7 +7,8 @@ description: "Tbeditor is a rich text editor to be used inside web pages. It's a
 - **Java API:** [Tbeditor](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tbeditor.html)
 - **JavaScript API:** [Tbeditor](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.tbeditor.Tbeditor.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.0.0" %}
 

@@ -5,8 +5,8 @@ title: "Video"
 - **Java API:** [org.zkoss.zhtml.Video](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Video.html)
 - **JavaScript API:** [zkmax.med.Video](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.med.Video.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %} {% include supported-since.html version="8.6.0" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %} {% include supported-since.html version="8.6.0" %}
 
 # Employment/Purpose
 

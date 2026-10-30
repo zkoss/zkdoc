@@ -7,8 +7,8 @@ description: "Nav: A container is used to display navitem, it should be placed i
 - **Java API:** [Nav](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zhtml/Nav.html)
 - **JavaScript API:** [Nav](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Nav.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

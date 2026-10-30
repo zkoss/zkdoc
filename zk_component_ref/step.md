@@ -7,7 +7,8 @@ description: "Step: A step is used for displaying user navigation, it should be 
 - **Java API:** [org.zkoss.zkmax.zul.Step](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Step.html)
 - **JavaScript API:** [zkmax.wgt.Step](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Step.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 {% include supported-since.html version="9.0.0" %}
 
 # Employment/Purpose

@@ -6,7 +6,8 @@ description: "Cropper: This component allows users to crop a selected range of i
 - **Java API:** [org.zkoss.zkmax.zul.Cropper](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Cropper.html)
 - **JavaScript API:** [zkmax.cropper.Cropper](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.cropper.Cropper.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.6.0" %}
 

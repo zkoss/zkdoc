@@ -7,8 +7,8 @@ description: "Tablelayout lays out a container as an HTML table in which the col
 - **Java API:** [org.zkoss.zkmax.zul.Tablelayout](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Tablelayout.html)
 - **JavaScript API:** [zkmax.layout.Tablelayout](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.layout.Tablelayout.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="6.0.0" %}
 

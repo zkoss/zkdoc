@@ -6,7 +6,8 @@ description: "Signature components support signature pad on the desktop and mobi
 - **Java API:** [org.zkoss.zkmax.zul.Signature](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Signature.html)
 - **JavaScript API:** [zkmax.signature.Signature](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.signature.Signature.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 {% include supported-since.html version="8.6.0" %}
 

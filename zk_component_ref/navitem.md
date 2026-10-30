@@ -7,8 +7,8 @@ description: "Navitem: A single choice in a Navbar or Nav element. It acts much 
 - **Java API:** [Navitem](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navitem.html)
 - **JavaScript API:** [Navitem](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navitem.html)
 
-<!--REQUIRED ZK EDITION: PE -->
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

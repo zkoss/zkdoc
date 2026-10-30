@@ -6,7 +6,8 @@ description: "Navseparator: Used to create a separator between nav items."
 - **Java API:** [Navseparator](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Navseparator.html)
 - **JavaScript API:** [Navseparator](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.nav.Navseparator.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 

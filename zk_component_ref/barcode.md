@@ -7,7 +7,8 @@ description: "Barcode: The barcode component generates and displays barcodes at 
 - **Java API:** [org.zkoss.zkmax.zul.Barcode](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Barcode.html)
 - **JavaScript API:** [zkmax.barcode.Barcode](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.barcode.Barcode.html)
 
-{% include edition-availability.html edition="pe" %}
+<!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
 
 # Employment/Purpose
 
