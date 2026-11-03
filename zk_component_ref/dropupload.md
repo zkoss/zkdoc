@@ -120,8 +120,6 @@ Controls when the `Dropupload` component and its content are visible relative to
 | `self` | Visible initially; content appears when the user drags files over the component itself. |
 | `<componentId>` | Like `self`, but the trigger area is the component with the given id. |
 
-**Note:** A `Dropupload` with `detection="browser"` cannot coexist on the same page with another `Dropupload` that uses a different `detection` value.
-
 ```xml
 <dropupload detection="none" content="Drop files here" onUpload="doUpload(event)"/>
 ```
