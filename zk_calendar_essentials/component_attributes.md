@@ -57,7 +57,17 @@ Calendars.
 
 ## firstDayOfWeek
 
-Default: `Sunday`
+Default: the first day of the week of the current locale, for example
+`Sunday` for `en_US`.
+
+Supported values: `SUNDAY`, `MONDAY`, `TUESDAY`, `WEDNESDAY`,
+`THURSDAY`, `FRIDAY`, and `SATURDAY`. The value is case-insensitive.
+A string that is not a day name is silently ignored, and the value
+stays unchanged.
+
+From Java, or through EL, you can also set an `int` that matches the
+`java.util.Calendar` constants: `Calendar.SUNDAY` (1) through
+`Calendar.SATURDAY` (7).
 
 Determine the first day of a week to be displayed on the calendar.
 
@@ -129,6 +139,20 @@ Sets the beginning hour of a day.
 ```
 
 ![Zkcal begin Time](/zk_calendar_essentials/images/zkcal-beginTime.png)
+
+## timeslots
+
+Default: `2`
+
+Supported values: `2`, `4`, and `6`. Any other value throws an
+exception.
+
+Sets the number of time slots per hour. For example, `2` shows 30-minute
+slots, and `4` shows 15-minute slots.
+
+```xml
+<calendars timeslots="4"/>
+```
 
 ## weekOfYear
 

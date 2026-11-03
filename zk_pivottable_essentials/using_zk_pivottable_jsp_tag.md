@@ -20,12 +20,13 @@ Then, you can start using ZK Pivottable in your JSP page like below.
 ZK Pivottable JSP tag supports all the properties of the corresponding
 ZUL component tag.
 
-Below is another example of using the pivottable component with the
-width and height specified.
+Pivottable does not accept a `height` attribute, because its `setHeight`
+method throws `UnsupportedOperationException`. To fill the vertical space
+of a parent that has a definite height, use `vflex` instead.
 
 ```xml
 <zk:pivottable id="pivot" 
-     height="500px" />
+     vflex="1" />
 ```
 
 Now, the pivottable needs raw data and field specification to start

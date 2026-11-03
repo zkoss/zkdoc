@@ -64,6 +64,13 @@ public class PivotController extends GenericForwardComposer {
 }
 ```
 
+Set the model in Java after the component is composed, for example in
+`doAfterCompose`. Do not set it with a ZUL attribute or EL, such as
+`model="${model}"`. The `setModel` call runs `syncModel()` immediately,
+but the internal grids that `syncModel()` updates are created only after
+`afterCompose()`. Setting the model earlier throws a
+`NullPointerException`.
+
 It will look like:
 
 ![ZKPivot Esn pfc control 01](images/ZKPivotEsn_pfc_control_01.png)

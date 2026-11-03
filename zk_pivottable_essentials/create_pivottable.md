@@ -49,6 +49,25 @@ will give
 
 ![ZKPivot Esn work pivot 22](images/ZKPivotEsn_work_pivot_22.png)
 
+### Height and frozen column headers
+
+Do not set `height` on a Pivottable. Its `setHeight` method throws
+`UnsupportedOperationException`. Instead, give a parent element a
+definite height, and set `vflex="1"` on the Pivottable so it fills that
+space.
+
+Frozen column headers keep the column headers visible while the rows
+scroll. Use `setFrozenColumnHeaders(boolean)` and
+`isFrozenColumnHeaders()`. The default is `false`. Frozen headers take
+effect only when the Pivottable has a bounded height, because the widget
+computes its scrolling area from the client height.
+
+```xml
+<div height="400px">
+    <pivottable model="${model}" vflex="1" frozenColumnHeaders="true" />
+</div>
+```
+
 ## Title Cells
 
 Pivottable can accept up to 3 child components, which will represent the
