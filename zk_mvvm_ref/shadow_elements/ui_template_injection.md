@@ -66,6 +66,23 @@ Add attributes directly to the `<apply>` tag. These become available as variable
 <apply template="userProfile" username="John Doe" role="Admin"/>
 ```
 
+**Re-creation:** Setting a dynamic property re-creates the whole template, even when the value stays the same. In MVVM, a `@load` on a dynamic property runs again whenever a notification covers its expression. For example, with `foo="@load(vm.item.foo)"`, notifying `item` reloads `foo` and re-creates the template, even if `foo` did not change. Passing a value with `@ref` avoids re-creation while `templateURI` stays the same. However, `${}` EL inside the template is not refreshed when the referenced value changes, so use `@load` inside the template for values that must update.
+
+**Keep stateful components outside the template:** A component that holds state, such as a `<textbox>` with typed text or an `<iframe>`, loses that state when the template is re-created. For example, the text typed into a `<textbox>` inside a template with `heading="@load(vm.item.title)"` is lost after a command that only calls `@NotifyChange("item")`, because the notification reloads `vm.item.title`. Place such a component beside the `<apply>` tag instead:
+
+```xml
+<hlayout>
+    <apply template="header" heading="@load(vm.item.title)"/>
+    <textbox placeholder="Type here"/>
+</hlayout>
+```
+
+With `@ref` instead of `@load`, the template is not re-created, so a `<textbox>` inside it keeps its text.
+
+`<if>` re-creates its body only when the value of `test` changes, so a `test` that stays `true` does not re-create its content.
+
+The runnable example [applyRecreation.zul](https://github.com/zkoss/zkbooks/blob/master/mvvmreference/src/main/webapp/shadow/applyRecreation.zul) shows these cases. Its ViewModel is [ApplyRecreationVM.java](https://github.com/zkoss/zkbooks/blob/master/mvvmreference/src/main/java/org/zkoss/mvvm/shadow/ApplyRecreationVM.java).
+
 ### Reference Binding Passing
 In MVVM, use `@ref` to pass object references efficiently without triggering full data loading until needed in the template.
 
