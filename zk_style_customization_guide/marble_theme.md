@@ -44,6 +44,26 @@ Upgrade to ZK 11.0 or later, and your application uses Marble. No configuration 
 </zk>
 ```
 
+## Reset Stylesheet for Embedded Pages
+
+By default, Marble loads a global reset (`reset.css`) that overrides the browser's default styles for the whole page. If you embed a ZK page in a host page that you do not control, for example with the JS Embed API, set the library property [org.zkoss.zul.theme.browserDefault](/zk_config_ref/org_zkoss_zul_theme_browserdefault) to `true`. Marble then loads `reset-embed.css`, which applies its reset only inside the ZK page's `.z-page` subtree and leaves the host page's `<html>` and `<body>` alone.
+
+| Value | Reset loaded | Effect |
+|-------|--------------|--------|
+| `false` (default) | `reset.css` | Global reset for the whole page |
+| `true` | `reset-embed.css` | Reset scoped to `.z-page`; the host page's `<html>` and `<body>` are not changed |
+
+```xml
+<library-property>
+    <name>org.zkoss.zul.theme.browserDefault</name>
+    <value>true</value>
+</library-property>
+```
+
+- For a standalone ZK application, leave the property unset. Unset and `false` give the same result.
+- The property only affects Marble, the default theme. A legacy theme such as IceBlue keeps its own reset, so no reset link is added for it.
+- With `true`, the ZK page does not get the global `<html>` and `<body>` reset, so check its margins and height in the host page.
+
 ---
 
 # Marble and IceBlue
@@ -96,7 +116,7 @@ Or use your own hex color:
 
 For a preset, ZK renders a `data-brand` attribute on `<html>`. For a hex color, ZK renders `<style>:root{--zk-color-primary:#…}</style>` right after the theme stylesheets.
 
-**Scope:** This property only works when the ZUL page renders the whole HTML document (a top-level ZUL page). If the ZUL page is included by another page, embedded in a JSP or another template, or uses zhtml's `<html>` as its root element, you write the `<html>` tag yourself. In that case, add the attribute to your own tag for a preset (for example `<html data-brand="slate">`), or load a CSS file that sets `--zk-color-primary` through a theme URI for a hex color.
+**Scope:** This property only works when the ZUL page renders the whole HTML document (a top-level ZUL page). If the ZUL page is included by another page, embedded in a JSP or another template, uses zhtml's `<html>` as its root element, or sets `<?page complete="true"?>`, you write the `<html>` tag yourself. In that case, add the attribute to your own tag for a preset (for example `<html data-brand="slate">`), or load a CSS file that sets `--zk-color-primary` through a theme URI for a hex color.
 
 **See also:** [org.zkoss.theme.marble.brand](/zk_config_ref/org_zkoss_theme_marble_brand)
 
@@ -137,6 +157,8 @@ Or on one page:
 ```xml
 <?link rel="stylesheet" type="text/css" href="/css/custom-brand.css"?>
 ```
+
+A preset (`data-brand`) overrides this rule, so use this option only when you do not also set a preset.
 
 For a fuller rebrand, override the other seeds too. Each one re-derives its own container colors. Setting `--zk-color-secondary` stops it from being derived from the primary color:
 
@@ -182,12 +204,12 @@ Use this only for a choice the user makes at runtime. `MarbleBrand.apply()` runs
 
 ## Precedence
 
-From the weakest to the strongest:
+A preset and a custom seed do not form one ordered chain. A preset is a `:root[data-brand="…"]` rule, which beats any plain `:root { --zk-color-primary: … }` rule regardless of load order. So:
 
-1. The `org.zkoss.theme.marble.brand` library property
-2. `<?root-attributes data-brand="..."?>` in the page
-3. CSS loaded by the page's own `<?link?>`
-4. Runtime calls to `MarbleBrand.apply()`
+- The three attribute-based ways set the same `data-brand` attribute. The later one wins: `<?root-attributes?>` replaces the library property, and `MarbleBrand.apply()` replaces both.
+- A preset overrides a seed set in custom CSS. Use a preset or a custom seed, not both.
+- A hex value from the library property is a `:root` rule written before the page's own headers, so a `<?link?>` stylesheet loaded later overrides it.
+- `MarbleBrand.apply(MarbleBrand.Brand.DEFAULT)` removes `data-brand`, so the seed from the page's `:root` rules (a configured hex value or custom CSS) applies again.
 
 ## Built-in Presets
 
@@ -261,11 +283,13 @@ Set the default density for the whole application once. ZK renders `data-density
 
 It can also be set as a Java system property: `-Dorg.zkoss.theme.marble.density=compact`.
 
-**Scope:** This property only works when the ZUL page renders the whole HTML document. If the ZUL page is included by another page, embedded in a JSP or another template, or uses zhtml's `<html>` as its root element, write the attribute in your own `<html>` tag instead:
+**Scope:** This property only works when the ZUL page renders the whole HTML document. If the ZUL page is included by another page, embedded in a JSP or another template, uses zhtml's `<html>` as its root element, or sets `<?page complete="true"?>`, write the attribute in your own `<html>` tag instead:
 
 ```html
 <html data-density="compact">
 ```
+
+On a top-level ZUL page, `<?root-attributes data-density="compact"?>` also sets it on that page and overrides the library property.
 
 **See also:** [org.zkoss.theme.marble.density](/zk_config_ref/org_zkoss_theme_marble_density)
 
@@ -327,14 +351,15 @@ From the weakest to the strongest:
 
 1. The `org.zkoss.theme.marble.density` library property
 2. `<?root-attributes data-density="..."?>` in the page
-3. CSS loaded by the page's own `<?link?>`
-4. Runtime calls to `MarbleDensity.apply()`
+3. Runtime calls to `MarbleDensity.apply()`
+
+All three set the same `data-density` attribute on `<html>`, so the one applied last wins. `MarbleDensity.apply(Component, ...)` sets it on one region instead, and it applies only inside that region.
 
 ## Compact Values
 
 | Token | Comfortable | Compact | Used by |
 |-------|-------------|---------|---------|
-| `--zk-control-height-xs` | 28px | 24px | small and icon buttons, close buttons |
+| `--zk-control-height-xs` | 28px | 24px | small buttons, close buttons, separators |
 | `--zk-control-height-sm` | 32px | 28px | paging controls, window close button |
 | `--zk-control-height-md` | 40px | 32px | inputs, icon buttons, list rows, vertical menu items |
 | `--zk-control-height-lg` | 48px | 40px | toolbar, menubar, tabs, panel and groupbox header, notification |
@@ -342,10 +367,9 @@ From the weakest to the strongest:
 | `--zk-button-height` | 36px | 30px | buttons, combobutton |
 | `--zk-button-height-lg` | 44px | 38px | `.z-button-lg` |
 | `--zk-menuitem-height` | 36px | 30px | popup menu rows |
-| `--zk-data-row-min-height` | 52px | 36px | tree rows, grid and listbox paging bar |
 | `--zk-grid-cell-padding` | 16px | 6px 12px | grid cells |
 | `--zk-listbox-cell-padding` | 16px | 6px 12px | listbox cells |
-| `--zk-tree-cell-padding` | 8px / 16px | 4px 12px | tree cells |
+| `--zk-tree-cell-padding` | 16px | 6px 12px | tree cells |
 
 For example, inputs shrink from 40px to 32px, buttons from 36px to 30px, and grid cells from 16px padding to 6px top and bottom and 12px left and right.
 
@@ -363,11 +387,13 @@ You can also adjust a single size without touching the rest, for example `--zk-t
 
 ## Intentionally Not Scaled
 
-Icon sizes, calendar day cells, the minimum height of a textarea, and decorative spacing stay the same in compact mode. Scaling them would distort icons and content-driven layouts. Adjust them individually if you need to.
+The minimum height of a textarea (`textarea.z-textbox`) is a fixed `80px`, not a density token, so it stays the same in compact mode. Set it with your own rule on `textarea.z-textbox` if you need a different height.
 
 ## Touch Targets
 
 Compact heights are below the Material Design 3 minimum touch target of 44 to 48px. Compact mode is meant for dense desktop screens, not touch devices.
+
+On phones and tablets, the EE tablet bundle (`zkmax/css/tablet.css.dsp`) enlarges controls with the `--zk-touch-*` tokens (EE), such as `--zk-touch-target-min: 44px` and `--zk-touch-target-comfortable: 48px`. The bundle is enabled only when the browser User-Agent is iOS or Android, and setting the library property `org.zkoss.zkmax.tablet.ui.disabled` to `true` turns it off. Resizing a desktop window does not trigger it.
 
 ---
 
@@ -478,13 +504,13 @@ The responsive display classes apply at a breakpoint and wider:
 
 | Breakpoint | Minimum width |
 |------------|---------------|
-| `sm` | 600px |
-| `md` | 900px |
-| `lg` | 1200px |
-| `xl` | 1536px |
+| `sm` | 576px |
+| `md` | 768px |
+| `lg` | 992px |
+| `xl` | 1200px |
 
 ```xml
-<!-- Hidden on narrow screens, shown at 900px and wider -->
+<!-- Hidden on narrow screens, shown at 768px and wider -->
 <div sclass="z-d-none z-d-md-block">Wide content</div>
 ```
 
@@ -498,6 +524,42 @@ For a card layout that adjusts its column count to the available width without b
 </div>
 ```
 
+For a common cell size, use a step class instead of an inline style. `z-grid-fill-xs` sets the minimum column width to 96px, `z-grid-fill-sm` to 140px, `z-grid-fill-lg` to 240px and `z-grid-fill-xl` to 320px. These steps are not breakpoints: they only change the minimum width, and the columns still fill the available width. The default is 180px, so there is no class for it.
+
+```xml
+<div sclass="z-d-grid z-grid-fill z-grid-fill-xs z-gap-3">
+    <div sclass="z-paper z-p-2">Icon A</div>
+    <div sclass="z-paper z-p-2">Icon B</div>
+</div>
+```
+
+The step values are the `:root` tokens `--zk-grid-min-xs`, `--zk-grid-min-sm`, `--zk-grid-min-lg` and `--zk-grid-min-xl`. Override them in your CSS to retune the steps.
+
+## Container Queries
+
+Viewport classes respond to the browser window. Container queries respond to the width of an enclosing element, so a card or panel can change its own layout wherever it is placed. Mark the container with `z-container`, then give its descendants `z-cq-*` classes:
+
+```xml
+<div sclass="z-container">
+    <!-- hidden in a narrow container, flex once the container is 768px wide or more -->
+    <div sclass="z-cq-none z-cq-md-flex">...</div>
+</div>
+```
+
+`z-container` only sets `container-type: inline-size`. Give it a width, because an inline-size container cannot take its width from its content.
+
+The classes use the same `sm`, `md`, `lg` and `xl` breakpoints as the viewport classes, but measure the container's width instead of the viewport:
+
+| Breakpoint | Minimum container width |
+|------------|-------------------------|
+| (none) | Base style, no breakpoint |
+| `sm` | 576px |
+| `md` | 768px |
+| `lg` | 992px |
+| `xl` | 1200px |
+
+The values are `none`, `block`, `flex`, `grid` and `inline-block`. A `z-cq-*` class only has an effect inside a `.z-container` ancestor, so always use them together.
+
 ---
 
 # Accessibility and Print
@@ -506,11 +568,12 @@ For a card layout that adjusts its column count to the available width without b
 
 When `@media (forced-colors: active)` applies, the operating system replaces the page colors and removes shadows. Marble restores what would otherwise be lost:
 
-- **Focus:** inputs show a visible outline when focused.
-- **Selected rows:** use the system `Highlight` and `HighlightText` colors.
-- **Surfaces:** windows, panels and popups get a border in place of their shadow.
-- **Icons:** follow the system text color.
-- **Buttons:** get a border to show their shape.
+- **Focus:** date, time, spinner, combobox, bandbox, select and code editor fields, and sliders, show a 2px `Highlight` outline when focused. The shared focus ring (`--zk-focus-ring`) also uses `Highlight`.
+- **Selected rows:** listbox and tree rows, and selected tabs, use the system `Highlight` and `HighlightText` colors.
+- **Surfaces:** windows, panels, popups, listboxes, grids and paper get a 1px border in place of their shadow.
+- **Icons:** icon glyphs follow the system text color (`CanvasText`).
+- **Buttons:** get a border to show their shape, and disabled buttons use `GrayText`.
+- **Checkboxes and radio buttons:** the check mark and the radio dot keep their system-color rendering, so the checked state stays visible.
 - **Invalid inputs:** get a double border, because the red border color is lost.
 
 This works on every page with no extra code. To test it, use the rendering tools in Chrome or Edge DevTools and emulate the CSS media feature `forced-colors: active`.
@@ -539,7 +602,7 @@ When printing, Marble also automatically:
 - Unsticks sticky grid, listbox and tree headers, so long tables can break across pages.
 - Expands scrollable grid, listbox and tree bodies, so all loaded rows are printed.
 - Replaces shadows with thin borders.
-- Keeps brand colors and backgrounds (they are not converted to grayscale).
+- Leaves brand colors as they are; it does not convert them to grayscale. Whether the browser prints background colors depends on its print settings.
 
 Frozen columns (`<frozen>`) are positioned by JavaScript, so a horizontally scrolled grid may be cut off on paper. For wide reports, consider paging or a server-side export.
 
