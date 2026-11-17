@@ -1,6 +1,6 @@
 ---
 author: jameschu
-date: 2026-11-22
+date: 2026-12-22
 version: ZK 11
 category: small-talk
 title: "ZK 11 Sneak Peek: Syntax Highlighting with the New Codeeditor"
