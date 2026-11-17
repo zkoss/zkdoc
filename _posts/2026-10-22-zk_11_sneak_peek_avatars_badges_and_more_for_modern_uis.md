@@ -114,7 +114,7 @@ The ZK 11 component set includes:
 
 ## Try It in ZK 11 Eval Freshly
 
-ZK 11 is coming soon, and you can preview Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval). These components are included in ZK Community Edition.
+ZK 11 is coming soon, and you can preview Avatar, Avatargroup, Badge, Chip, Breadcrumb, Confirmpopup, and Carousel in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval or later). These components are included in ZK Community Edition.
 
 To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
 
