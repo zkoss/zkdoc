@@ -67,16 +67,37 @@ inside a Portallayout. You can disable this by `draggable="false"`.
 {% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
 {% include edition-availability.html edition="ee" %}
 
-## Keyboard Support
+## Move a Panel Without Dragging
 
-To move the Panel from a Portalchildren to another with a keyboard:
+Users can move a panel through a popup instead of dragging it. Press
+Spacebar while the panel has the focus, or click its title bar
+{% include supported-since.html version="11.0.0" %} (WCAG 2.5.7 Dragging
+Movements). The popup lists the columns the panel can be moved to, that is,
+the Portalchildren of the Portallayout. Choose a target column to move the
+panel to it.
+
+{% include supported-since.html version="11.0.0" %} If the target column
+already holds panels, a second list asks where in that column the panel
+goes: **Move to top** or **Move to bottom**. The panel moves once users
+choose one. The panel's own column is listed too when it holds other panels,
+with **Move up** and **Move down** as well. Only the moves that change the
+panel's place are listed. In a horizontal Portallayout, the popup lists
+rows, and the positions are **Move to start**, **Move to end**,
+**Move left** and **Move right**.
+
+## Keyboard Support
 
 | Key | Description |
 |---|---|
-| Spacebar | When the target Panel is focused, press spacebar will open a popup list with optional Portalchildren. |
-| ArrowUp / ArrowDown | When the popup is opened, move the current selection in the popup list. |
-| Enter | When the popup is opened, select the target Portalchildren. The target Panel will move to the target Portalchildren then close the popup list. |
-| Esc | When the popup is opened, close the popup list. |
+| Spacebar | When a panel has the focus, open the move popup. |
+| ArrowUp / ArrowDown | Move through the columns, or through the positions of a column. |
+| ArrowRight | On a column, show its positions. |
+| ArrowLeft | On a position, go back to the columns. |
+| Enter | On a column, show its positions, or move the panel there if the column is empty. On a position, move the panel there. |
+| Esc | On a position, go back to the columns. Otherwise, close the popup. |
+| Tab | Close the popup. |
+
+When the popup closes, the focus returns to the panel.
 
 {% include ZKComponentReferenceAccessibilityNamingReference.md %}
 

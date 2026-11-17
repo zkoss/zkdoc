@@ -108,6 +108,21 @@ popup/menupopup of the Combobutton will be displayed.
 </zk>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
+
+## Close the Autodrop Popup with Escape
+
+{% include supported-since.html version="11.0.0" %}
+
+With [autodrop](#autodrop), the popup drops down when the pointer moves
+over the drop-down button. Press Escape to close it without moving the
+pointer or the focus (WCAG 1.4.13 Content on Hover or Focus).
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Properties
 
 ## Autodrop

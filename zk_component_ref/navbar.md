@@ -89,6 +89,13 @@ Bind `selectedItem` to a ViewModel property to control which `navitem` is highli
 | Enter / Spacebar | Select the nav item / Open the nav menu popup |
 | Escape | Close the nav menu popup |
 
+In a [collapsed](#collapsed) Navbar, the pointer over a top-level nav
+item shows the item's label.
+
+{% include supported-since.html version="11.0.0" %} Press Escape to hide
+the label without moving the pointer (WCAG 1.4.13 Content on Hover or
+Focus).
+
 {% include ZKComponentReferenceAccessibilityNamingReference.md %}
 
 # Properties

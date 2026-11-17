@@ -126,6 +126,15 @@ The component applies a `SimpleDateConstraint` to both endpoints. Rules such as 
 
 `separator` defaults to `~`. `placeholder` applies to both inputs; `beginPlaceholder` and `endPlaceholder` override it for one endpoint.
 
+## InputAttributes
+
+Sets additional attributes on both input elements, as a Map or a String of
+`name=value` pairs separated by `;`. For example:
+
+```xml
+<daterangebox inputAttributes="autocorrect=off;spellcheck=false"/>
+```
+
 # Global Defaults
 
 Set commonly used defaults with library properties:

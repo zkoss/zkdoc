@@ -72,6 +72,17 @@ Set `orient="vertical"` to embed the rangeslider alongside a chart axis or timel
 | Home / End | Move the slider button to the minimum/maximum. |
 | PageUp / PageDown | Move the slider button in the large step. |
 
+## Close a Slider Button Tooltip with Escape
+
+{% include supported-since.html version="11.0.0" %}
+
+When the pointer is over a slider button, a tooltip shows its value.
+Press Escape to hide it without moving the pointer or the focus (WCAG 1.4.13
+Content on Hover or Focus). It shows again when the pointer leaves the
+slider button and comes back. The pointer can also move onto the tooltip
+without it disappearing. With [tooltipVisible](#tooltipvisible) set, the
+tooltips always show, and Escape doesn't hide them.
+
 ## ARIA Attributes
 
 | Attributes | Description |

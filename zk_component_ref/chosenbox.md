@@ -168,6 +168,18 @@ See the **Custom Item Rendering** section on this page and [Item Renderer]({{sit
 ## name
 specify the name of the input element of this component
 
+## inputAttributes
+
+{% include supported-since.html version="11.0.0" %}
+
+Sets additional attributes on the input element where users type, as a Map
+or a String of `name=value` pairs separated by `;`. Use it to set the HTML
+`autocomplete` attribute, for example:
+
+```xml
+<chosenbox inputAttributes="autocomplete=country-name"/>
+```
+
 ## noResultsText
 displayed a popup window if nothing matches the input value and creatable is false; syntax "{0}" will be replaced with
 the input value at client-side 

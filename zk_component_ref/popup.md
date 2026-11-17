@@ -132,6 +132,22 @@ outlines how to accomplish this.
 <label value="Tooltip" tooltip="popup_id, position=before_start, delay=500"/>
 ```
 
+# Accessibility
+
+{% include supported-since.html version="9.5.0" %} <!--REQUIRED ZK EDITION: EE -->
+{% include edition-availability.html edition="ee" %}
+
+## Close a Tooltip with Escape
+
+{% include supported-since.html version="11.0.0" %}
+
+A popup shown by the `tooltip` attribute appears when the pointer moves
+over a component. Press Escape to close it without moving the pointer or
+the focus (WCAG 1.4.13 Content on Hover or Focus). It stays closed until
+the pointer leaves the component and comes back. Closing it fires `onOpen`.
+
+{% include ZKComponentReferenceAccessibilityNamingReference.md %}
+
 # Supported Events
 
 | Name | Event Type | Description |
