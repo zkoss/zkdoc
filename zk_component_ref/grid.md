@@ -1423,7 +1423,7 @@ If `paginal` is not set explicitly and the mold is `"paging"`, the grid creates 
 {% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition=ee %}
 
-**Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive` library property)
+**Default Value:** `null` (inherits from the [`org.zkoss.zul.grid.responsive`](/zk_config_ref/org_zkoss_zul_grid_responsive) library property)
 
 Sets the responsive policy for the grid. When set to `"stacking"`, columns collapse into vertical key-value card blocks when the container width falls below the configured breakpoint (ZK EE). Set to `"none"` to explicitly disable responsive behaviour even if a global setting is active.
 
@@ -1450,7 +1450,7 @@ Any value other than the three above throws `WrongValueException`.
 {% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition=ee %}
 
-**Default Value:** `null` (inherits from `org.zkoss.zul.grid.responsive.columns` library property; framework default resolved by the client is `"sm-1 md-none"`)
+**Default Value:** `null` (inherits from the [`org.zkoss.zul.grid.responsive.columns`](/zk_config_ref/org_zkoss_zul_grid_responsive_columns) library property; framework default resolved by the client is `"sm-1 md-none"`)
 
 Sets the responsive columns token string used in stacking mode. The value is a whitespace-separated list of Bootstrap-style breakpoint tokens in the form `<breakpoint>-<value>`, where breakpoint is one of `sm`, `md`, `lg`, `xl`, `xxl` and value is either a positive integer (number of cards per row in stacking layout) or `none` (switch back to table layout at and above this breakpoint). The string is stored verbatim; parsing and cascade resolution happen on the client side. Invalid tokens are silently dropped by the client resolver.
 

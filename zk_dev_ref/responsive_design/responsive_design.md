@@ -55,3 +55,7 @@ All examples can be found here : [Git sources](https://github.com/zkoss/zkbooks/
   of screen.
 
 ![Responsive]({{site.baseurl}}/zk_dev_ref/images/Responsive.png)
+
+# Responsive Stacking for Grid and Listbox
+
+ZK 11 adds a component-level option for narrow containers. A Grid or a Listbox can switch from a table to stacked cards, where each row becomes a block of label and value pairs, without a second ZUL page or a separate model. Set `responsive="stacking"` on the component, or set the library properties described in the component reference. This option is provided by ZK EE. See [Responsive Stacking Grid](/zk_component_ref/grid#responsive-stacking-grid-ee) and [Responsive Stacking Listbox](/zk_component_ref/listbox#responsive-stacking-listbox-ee).

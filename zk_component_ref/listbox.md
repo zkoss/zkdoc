@@ -1751,7 +1751,7 @@ component.
 {% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition="ee" %}
 
-It specifies the default [responsive](#responsive) policy, `stacking` or `none`, of the listboxes that do not set `responsive` themselves. An invalid value is ignored with a warning in the server log. Like the other custom attributes, it can be set on a component, a page or as a library property in `zk.xml`:
+It specifies the default [responsive](#responsive) policy, `stacking` or `none`, of the listboxes that do not set `responsive` themselves. An invalid value is ignored with a warning in the server log. The library property page is [org.zkoss.zul.listbox.responsive](/zk_config_ref/org_zkoss_zul_listbox_responsive). Like the other custom attributes, it can be set on a component, a page or as a library property in `zk.xml`:
 
 ```xml
 <library-property>
@@ -1768,7 +1768,7 @@ It specifies the default [responsive](#responsive) policy, `stacking` or `none`,
 {% include supported-since.html version="11.0.0" %}
 {% include edition-availability.html edition="ee" %}
 
-It specifies the default [responsiveColumns](#responsivecolumns) of the listboxes that do not set `responsiveColumns` themselves. When neither is set, the client uses `sm-1 md-none`.
+It specifies the default [responsiveColumns](#responsivecolumns) of the listboxes that do not set `responsiveColumns` themselves. When neither is set, the client uses `sm-1 md-none`. The library property page is [org.zkoss.zul.listbox.responsive.columns](/zk_config_ref/org_zkoss_zul_listbox_responsive_columns).
 
 ```xml
 <div>

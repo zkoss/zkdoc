@@ -76,7 +76,7 @@ public class BookingVM {
 
 `format` applies the same `SimpleDateFormat` pattern to both inputs. Without an explicit pattern, the component uses a locale-sensitive medium date format. `locale` and `timeZone` control parsing and display.
 
-When `showTime="true"`, the popup includes time selection. If the format has no time field, the effective format adds `HH:mm`.
+When `showTime="true"`, the popup includes time selection. If the format has no time field, the effective format adds `HH:mm`. With `showTime`, the range and its times commit when the popup closes, not when the second date is picked. Close the popup, or move the focus out of it, to fire `onChange`.
 
 ## NumberOfMonths
 
@@ -159,6 +159,8 @@ Set commonly used defaults with library properties:
 ```
 
 `numberOfMonths.max` cannot exceed the framework's safety ceiling of `24`.
+
+Each global default has its own page: [numberOfMonths](/zk_config_ref/org_zkoss_zul_daterangebox_numberofmonths), [numberOfMonths.max](/zk_config_ref/org_zkoss_zul_daterangebox_numberofmonths_max), [hoverPreview](/zk_config_ref/org_zkoss_zul_daterangebox_hoverpreview), and [separator](/zk_config_ref/org_zkoss_zul_daterangebox_separator).
 
 # Supported Events
 
