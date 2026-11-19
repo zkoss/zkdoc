@@ -106,6 +106,23 @@ See also:
     <chosenbox width="400px" model="${subModel}"/>
 ```
 
+## Contains Filtering
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ee" %}
+
+The default text filter matches the beginning of an option. Set the inherited custom attribute `org.zkoss.zul.chosenbox.filterLogic` to `contains` to match text anywhere in an option instead:
+
+```xml
+<chosenbox model="${model}" width="400px">
+    <custom-attributes org.zkoss.zul.chosenbox.filterLogic="contains"/>
+</chosenbox>
+```
+
+For example, typing `land` can match both `Finland` and `Iceland`. The default value is `startsWith`. This is a custom attribute, not a `filterLogic` ZUL property.
+
+For a `ListSubModel`, the model still decides which candidates to return. Use a contains-aware submodel or comparator as well; the Chosenbox setting cannot restore candidates already excluded by a prefix-only submodel. See [Combobox autocomplete by ListSubModel]({{site.baseurl}}/zk_component_ref/combobox#autocomplete-by-listsubmodel).
+
 {% include   CustomItemRendering.md component=chosenbox %}
 
 # Accessibility

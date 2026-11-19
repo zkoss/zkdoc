@@ -211,6 +211,22 @@ Specifies the Z index of this component, i.e. the stacking order used to decide 
 <div zindex="100"/>
 ```
 
+## Skeleton
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="pe" %}
+
+Use `skeleton` to show a placeholder while the application prepares a component's content. The Java property is declared on `HtmlBasedComponent`; its client-side behavior and styles are supplied by `zkex`, so rendering skeletons requires PE or EE.
+
+The supported values are `rect`, `circle`, and `text`. The default is `null` (off); an empty string also turns the placeholder off. Other nonempty values cause a `WrongValueException`.
+
+```xml
+<div skeleton="rect" width="320px" height="100px"/>
+<label value="Loading report" skeleton="text" width="200px"/>
+```
+
+Set `component.setSkeleton(null)` when the content is ready. Skeleton mode changes the presentation; it does not fetch data or start asynchronous work. The client marks the component busy for assistive technology and removes that state when skeleton mode ends.
+
 # Supported Events
 
 | Name | Event Type | Description |

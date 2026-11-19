@@ -23,6 +23,14 @@ The generated SBOM matches the corresponding distribution scope:
 
 Use the SBOM belonging to the exact ZK edition and version deployed by your application. An application's final inventory should also include its own libraries and any other frameworks it packages.
 
+# Obtaining the JSON Document
+
+An SBOM is a separate JSON document. Adding a normal ZK runtime dependency to `pom.xml` does not generate an application SBOM or automatically download a release SBOM.
+
+The current source build generates `build/reports/bom.json` (and `bom-pe.json` for the PE task below). These tasks write standalone files: they do not embed those files in each runtime JAR or configure a Maven SBOM classifier. Do not assume that a `-bom.json` URL or an embedded `META-INF` path exists for a release.
+
+For a supplied release SBOM, use the JSON distributed with that exact edition and version. If the release download does not identify an SBOM file, request the matching release document from ZK support, or generate it from the matching source checkout using the tasks below. A build-generated report path is not itself a public download URL.
+
 # Building an SBOM from Source
 
 The ZK source build uses the CycloneDX Gradle plugin:
@@ -31,11 +39,13 @@ The ZK source build uses the CycloneDX Gradle plugin:
 ./gradlew cyclonedxBom
 ```
 
-The CE build writes `build/reports/bom.json`. The commercial source build also provides a PE-scoped task:
+Run this in the CE source root to produce `build/reports/bom.json`. In the commercial source root, `cyclonedxBom` produces the EE-scoped `build/reports/bom.json`; the commercial build also provides a PE-scoped task:
 
 ```bash
 ./gradlew cyclonedxBomPe
 ```
+
+The PE task writes `build/reports/bom-pe.json`. Keep the output with the source version used to generate it. Generation requires the normal build prerequisites and access to that edition's dependencies.
 
 Theme packages use the CycloneDX Maven plugin during the Maven `package` phase and produce a separately named JSON document for each theme variant.
 

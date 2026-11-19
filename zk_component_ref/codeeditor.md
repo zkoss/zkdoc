@@ -113,12 +113,6 @@ Both properties prevent editing, but they serve different purposes:
 | `onFocus` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Fired when the editor receives focus. |
 | `onBlur` | **Event:** [org.zkoss.zk.ui.event.Event](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/Event.html) Fired when the editor loses focus. |
 
-# Edition Differences
-
-The Community Edition provides value editing, syntax highlighting, history, line numbers, read-only and disabled states, color schemes, and input events.
-
-The Enterprise Edition can layer advanced editing capabilities such as autocompletion, linting, code folding, multiple cursors, search and replace, and diff support onto the same component. Applications can adopt the EE extensions without changing the `<codeeditor>` element or its basic ZUL configuration.
-
 # Inherited Functions
 
 Please refer to [XulElement]({{site.baseurl}}/zk_component_ref/xulelement) for inherited functions.

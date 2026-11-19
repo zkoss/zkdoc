@@ -35,3 +35,19 @@ element. If you still want to load it, you have to specify it in
     <label-location>/WEB-INF/labels/invoice.properties</label-location>
 </system-config>
 ```
+
+# Classpath Label Resources
+
+{% include supported-since.html version="11.0.0" %}
+
+Use the `~./` prefix to load a label bundle from the classpath's `/web` directory. This is useful for JAR-packaged applications and addons. For example, place the default file at `src/main/resources/web/labels/messages.properties` and configure:
+
+```xml
+<system-config>
+    <label-location>~./labels/messages.properties</label-location>
+</system-config>
+```
+
+Locale-specific variants, such as `messages_zh_TW.properties`, belong beside the default file and follow the normal label-bundle lookup rules. The same prefix is supported by the [org.zkoss.util.label.web.location]({{site.baseurl}}/zk_config_ref/org_zkoss_util_label_web_location) library property.
+
+Files under the classpath's `/web` directory are public web resources. Keep confidential values outside this directory; `/WEB-INF` remains suitable for label files that must not be downloadable.

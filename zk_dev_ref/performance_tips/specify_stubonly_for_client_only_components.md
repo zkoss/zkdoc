@@ -39,6 +39,27 @@ are all stub-only.
 </hbox>
 ```
 
+## Selecting Descendants by Component Name
+
+{% include supported-since.html version="11.0.0" %}
+{% include edition-availability.html edition="ce" %}
+
+Use `stubonlyDescendants` on a container to select descendant component names without marking every instance individually:
+
+```xml
+<div stubonlyDescendants="label, separator">
+    <label value="Static heading"/>
+    <separator/>
+    <textbox/>
+</div>
+```
+
+Names are case-sensitive ZUL element names, separated by commas or spaces. `*` matches all eligible descendants; `null` or an empty value clears this container's declaration. A match affects that component alone, rather than making its children stub-only. The container itself is unaffected.
+
+An explicit `stubonly="true"` or `stubonly="false"` establishes a boundary for ancestor name rules. ID-space owners and components with binding annotations or registered binders are not matched. Paging, child cropping (including render-on-demand), shadow elements, and containers that require server-side child state exclude their subtrees from name matching.
+
+Choose names only for components the server no longer needs after rendering. Avoid managed children such as `row`, `listitem`, `treeitem`, `tab`, and `comboitem`, and avoid containers whose live children still rely on them. These rules do not make existing server references safe to reuse after a component becomes stub-only.
+
 # Limitation of Stub Components
 
 When a component is stub only, it will be replaced with a special

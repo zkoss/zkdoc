@@ -45,6 +45,27 @@ above to search for the upgrade references you are looking for.
 | ZK 9.6 | 1. The default desktop ID generator was replaced by a more secured one. If your tests depend on the previous generator, you can set it in system-config.<br />2. Deprecated the method of isEditionValid() and encodeWithZK() of org.zkoss.zk.fn.ZkFns and core.dsp.tld.<br />3. Since ZK 9.6, a JakartaEE-compatible package is released along with the current JavaEE-compatible package. For Jakarta EE 9 support, please use 9.6.0-jakarta version instead.<br />4. Since 9.6.0, the transitive dependency of jasperreports was removed in zkex. To use the jasperreport component, please add it manually. | [Release Smalltalk](/small-talk/2021/08/10/new-features-of-zk-960) |
 | ZK 10.0 | 1. ZK 10 requires JDK 11 or later versions.<br />2. Deprecate old themes: Breeze, Sapphire, Silvertail, and Atlantic<br />3. ZK 10 works with modern browsers; IE11 and lower IE versions are no longer supported.<br />4. Enable InaccessibleWidgetBlockService by default in the EE version. Note that it will block Echo Event if the component is disabled or invisible. You can configure it using the library-property org.zkoss.zkmax.au.IWBS.disable.<br />5. ZK's corresponding features now require Java EE 7 API level, including Servlet 3.1, Bean Validation 1.1, EL 3.0, and JSP 2.3.<br />6. Remove all deprecated Java APIs and the legacy module "zkplus-legacy". Reference the release smalltalk and the linter tool for upgrade guidance.<br />7. ZK frontend is now typescript, if you have JS-based custom client-side, you may need to double-check. | [Release Smalltalk](/small-talk/2024/02/27/new-features-of-zk-1000) |
 
+## ZK 11.0
+
+ZK 11 introduces the following upgrade requirements and behavior changes:
+
+- **Java 17 or later is required.** Update the build and application-server runtime together. The standard Java EE artifact line continues to use `javax.servlet`; the Java baseline change alone does not require a migration to `jakarta.servlet`. Choose the artifact line and servlet container that match your application.
+- **Marble becomes the default theme.** Its Material Design 3 styling, spacing, and CSS variables differ from IceBlue. Review custom component styling before deployment. To retain IceBlue, add the matching `org.zkoss.theme:iceblue` dependency and explicitly select it using the configuration below.
+- **Theme-source packaging changes.** The `zul` artifact no longer provides the `~./zul/less/*` sources. Rebuild custom themes from the matching ZK theme template and review imports and [renamed semantic CSS variables]({{site.baseurl}}/zk_style_customization_guide/migration_guides/css_variables_10_3_to_11). Existing IceBlue overrides should not be assumed to apply to Marble.
+- **Strict-dynamic CSP changes.** With CSP and strict-dynamic enabled, the default `script-src` omits `unsafe-inline`. Review application-owned inline scripts and apply the response nonce as described in the [CSP guide]({{site.baseurl}}/zk_dev_ref/security_tips/automatic_csp_through_zk_configuration). A custom policy can override the default; `unsafe-eval` and inline style requirements remain separate considerations.
+- **Borderlayout's base class changes.** It now extends `XulElement` and supports inherited attributes such as `ctrlKeys`. Review custom subclasses and overrides against the [Borderlayout reference]({{site.baseurl}}/zk_component_ref/borderlayout).
+
+To select IceBlue in `WEB-INF/zk.xml` after adding its theme dependency:
+
+```xml
+<library-property>
+    <name>org.zkoss.theme.preferred</name>
+    <value>iceblue</value>
+</library-property>
+```
+
+Keep all ZK modules and the selected theme compatible with the target version. Test a representative application, including custom styling, keyboard workflows, and CSP enforcement, before rollout. Check the [release history](https://www.zkoss.org/product/zk/releasenote/) for the release notes corresponding to the exact Beta or final build being evaluated.
+
 [Check all security fixes in the tracker](https://tracker.zkoss.org/issues/?jql=labels_%3D_security)
 
 # Identify Your Current ZK Edition
