@@ -38,6 +38,8 @@ Sets the maximum number of displayed items. `0` shows all items. When the count 
 
 # Breadcrumbitem Properties
 
+A `Breadcrumbitem` accepts no children and must be placed inside `Breadcrumb`.
+
 ## Label, Image, and IconSclass
 
 These properties are inherited from `LabelImageElement` and define the item's content.
@@ -60,5 +62,4 @@ No component-specific events. Items use standard link navigation.
 
 # Supported Children
 
-- `Breadcrumb` accepts only `Breadcrumbitem`.
-- `Breadcrumbitem` accepts no children and must be placed inside `Breadcrumb`.
+`*Breadcrumbitem`

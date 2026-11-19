@@ -176,5 +176,3 @@ Each global default has its own page: [numberOfMonths](/zk_config_ref/org_zkoss_
 # Supported Children
 
 `*NONE`
-
-`Daterangebox` manages its input fields and popup content internally, so it does not accept child components.

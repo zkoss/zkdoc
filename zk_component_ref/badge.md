@@ -9,7 +9,7 @@ title: "Badge"
 
 # Employment/Purpose
 
-`Badge` displays a short status or count. It can stand alone or wrap another component, such as a cart button or notification icon.
+`Badge` displays a short status or count. It can stand alone or wrap another component, such as a cart button or notification icon. Adding a child switches the badge to wrap mode, and `visible="false"` hides both the indicator and its wrapped child.
 
 # Example
 
@@ -68,5 +68,3 @@ No component-specific events.
 # Supported Children
 
 `*ALL`
-
-Adding a child switches the badge to wrap mode. Setting `visible="false"` hides both the indicator and its wrapped child.

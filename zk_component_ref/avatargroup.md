@@ -9,7 +9,7 @@ title: "Avatargroup"
 
 # Employment/Purpose
 
-`Avatargroup` displays related [Avatar]({{site.baseurl}}/zk_component_ref/avatar) components as an overlapping group. When space is limited, `maxItems` keeps the group compact by replacing excess avatars with a `+N` indicator.
+`Avatargroup` displays related [Avatar]({{site.baseurl}}/zk_component_ref/avatar) components as an overlapping group. When space is limited, `maxItems` keeps the group compact by replacing excess avatars with a `+N` indicator. Its children must be `Avatar` components; adding another component type causes a `UiException`.
 
 # Example
 
@@ -68,5 +68,3 @@ No component-specific events.
 # Supported Children
 
 `*Avatar`
-
-Adding another component type causes a `UiException`.

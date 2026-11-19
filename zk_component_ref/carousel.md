@@ -71,5 +71,4 @@ title: "Carousel"
 
 # Supported Children
 
-- `Carousel` accepts only `Carouselitem`.
-- `Carouselitem` accepts any ZK component and must be placed inside `Carousel`.
+`*Carouselitem`
