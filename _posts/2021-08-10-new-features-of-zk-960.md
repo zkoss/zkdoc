@@ -151,7 +151,7 @@ having a user accidentally pressing a key to duplicate an operation.
 Previously, the only way to re-sort a `Listbox` with the built-in
 comparator is to call `Listheader.sort()`. In ZK 9.6 we added the MVVM
 support, you can now call `sort()` on all classes that implement
-[Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html)
+[Sortable](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/ext/Sortable.html){:target="_blank"}
 to sort with the built-in comparators under the MVVM pattern in a more
 clean and consistent way.
 

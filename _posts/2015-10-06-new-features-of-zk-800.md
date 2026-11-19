@@ -22,8 +22,8 @@ Philosophy](http://blog.zkoss.org/index.php/2015/07/14/zk-8-philosophy/)
 
 ## Download and Demo
 
-- [Download ZK](http://www.zkoss.org/download/zk)
-- [ZK 8 Key Feature Demo](http://www.zkoss.org/zk8keyfeaturedemo)
+- [Download ZK](http://www.zkoss.org/download/zk){:target="_blank"}
+- [ZK 8 Key Feature Demo](http://www.zkoss.org/zk8keyfeaturedemo){:target="_blank"}
 
 
 # Shadow Elements
@@ -286,7 +286,7 @@ Reference]({{site.baseurl}}/zk_mvvm_ref/data_binding/converter#use-built-in-conv
 
 ZK 8 introduces a brand new lightweight component called Tbeditor, which
 represents the JavaScript component
-[Trumbowyg](http://alex-d.github.io/Trumbowyg/). Tbeditor is a rich
+[Trumbowyg](http://alex-d.github.io/Trumbowyg/){:target="_blank"}. Tbeditor is a rich
 WYSIWYG text editor.
 
 The following is an example of using Tbeditor in your application.
@@ -401,7 +401,7 @@ powerful things with the newer expression language. There are many new
 features in EL 3 such as new operators, lambda expressions, and
 collection operations. For more information on EL3, please take a look
 at the specification,
-[JSR-341](https://jcp.org/aboutJava/communityprocess/final/jsr341/index.html).
+[JSR-341](https://jcp.org/aboutJava/communityprocess/final/jsr341/index.html){:target="_blank"}.
 
 Please note that EL3 and all its features (including Lambda expressions)
 work for JDK 5 and above in ZK framework.
@@ -570,9 +570,9 @@ support in Danish.
 
 # Websocket Support
 
-Provide [org.zkoss.zk.ui.sys.Storage](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/Storage.html),
-[org.zkoss.zk.ui.http.ZKWebSocket](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html), and
-[org.zkoss.zk.ui.annotation.Command](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/annotation/Command.html) to share data and
+Provide [org.zkoss.zk.ui.sys.Storage](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/sys/Storage.html){:target="_blank"},
+[org.zkoss.zk.ui.http.ZKWebSocket](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/http/ZKWebSocket.html){:target="_blank"}, and
+[org.zkoss.zk.ui.annotation.Command](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/annotation/Command.html){:target="_blank"} to share data and
 communicate between a ZK application and a websocket application within
 the same session. We can now receive the data storage from ZK desktop
 object to share or update the application data, so that the websocket

@@ -19,7 +19,7 @@ Enjoy, and we look forward to receiving your feedback.
 
 ## Download
 
-[Download ZK 9.5.0](http://www.zkoss.org/download/zk) | [ZK Demo](http://www.zkoss.org/zkdemo/)
+[Download ZK 9.5.0](http://www.zkoss.org/download/zk){:target="_blank"} | [ZK Demo](http://www.zkoss.org/zkdemo/){:target="_blank"}
 
 ![]({{site.baseurl}}/assets/images/small-talk/highlighted_features.png "Highlighted_features.png")
 
@@ -32,7 +32,7 @@ enhancements have been made on ZK components for keyboard interaction
 roles, …). In addition, accessibility-ready themes are made available
 for providing sufficient color contrast and focus style.
 
-Check out the [ZA11Y Demo](https://www.zkoss.org/za11y-demo/) and
+Check out the [ZA11Y Demo](https://www.zkoss.org/za11y-demo/){:target="_blank"} and
 corresponding [GitHub
 Project](https://github.com/zkoss-demo/za11y-demo).
 

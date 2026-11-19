@@ -152,8 +152,8 @@ Whether you're building accessible applications, responsive dashboards, or simpl
 
 This rem-based theme is currently provided as an experimental option. We intentionally released it as a separate theme to evaluate real-world compatibility and gather feedback before considering any changes to our official default theme.
 
-If this approach proves helpful and stable for users, we plan to consider integrating it into our official theming system in a future release. We welcome feedback and encourage you to try it out and share your experience. Please provide your feedback on [ZK forum](https://forum.zkoss.org) or contact us at info@zkoss.org.
+If this approach proves helpful and stable for users, we plan to consider integrating it into our official theming system in a future release. We welcome feedback and encourage you to try it out and share your experience. Please provide your feedback on [ZK forum](https://forum.zkoss.org){:target="_blank"} or contact us at info@zkoss.org.
 
 # Resources
 
-- [ZK Theme Template - iceblue rem source](https://github.com/zkoss/zkThemeTemplate/tree/iceblue_rem) - Create custom themes based on iceblue_rem
+- [ZK Theme Template - iceblue rem source](https://github.com/zkoss/zkThemeTemplate/tree/iceblue_rem){:target="_blank"} - Create custom themes based on iceblue_rem

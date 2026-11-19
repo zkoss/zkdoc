@@ -121,16 +121,16 @@ CaseFoundry turns this fragmented history into structured, AI-accessible context
 
 **For ZK users:** If you're running an older version of ZK and have been putting off the upgrade to ZK 10, we're currently working with selected pilot projects to further refine and validate this structured migration approach in real-world scenarios.
 
-This work builds on a knowledge base of over 20,000 structured cases derived from 20 years of ZK development history, which we've successfully applied in our internal migration. If you're interested in exploring whether this can apply to your application, we'd be glad to take a look together. **[→ Contact us for a migration assessment](https://forms.gle/sBJMxL4TgB7wxw7f9)**
+This work builds on a knowledge base of over 20,000 structured cases derived from 20 years of ZK development history, which we've successfully applied in our internal migration. If you're interested in exploring whether this can apply to your application, we'd be glad to take a look together. **[→ Contact us for a migration assessment](https://forms.gle/sBJMxL4TgB7wxw7f9){:target="_blank"}**
 
-**For enterprise teams with other legacy Java systems:** If you're interested in applying the "Memory-First" methodology to your own framework or platform — using your Git history, your issue tracker, and your test suites as the foundation for AI-assisted modernization — we're actively exploring how this approach could fit your environment. **[→ Explore applicability](https://forms.gle/5e8N4yQD8mBvoML78)**
+**For enterprise teams with other legacy Java systems:** If you're interested in applying the "Memory-First" methodology to your own framework or platform — using your Git history, your issue tracker, and your test suites as the foundation for AI-assisted modernization — we're actively exploring how this approach could fit your environment. **[→ Explore applicability](https://forms.gle/5e8N4yQD8mBvoML78){:target="_blank"}**
 
 If you have any other feedback or questions about this article, feel free to reach out to us at info@zkoss.org.
 
 ## Resources
 
-- [ZK Documentation](https://www.zkoss.org/documentation) — Official ZK framework documentation
-- [ZK GitHub Repository](https://github.com/zkoss/zk) — ZK framework source code
+- [ZK Documentation](https://www.zkoss.org/documentation){:target="_blank"} — Official ZK framework documentation
+- [ZK GitHub Repository](https://github.com/zkoss/zk){:target="_blank"} — ZK framework source code
 - [ZK Upgrade Guide](https://docs.zkoss.org/zk_dev_ref/upgrade_tips/version_upgrade) — Official migration reference
-- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — The open standard powering CaseFoundry's AI integration
-- [ZK Forum](https://forum.zkoss.org/) — Community support and discussion
+- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/){:target="_blank"} — The open standard powering CaseFoundry's AI integration
+- [ZK Forum](https://forum.zkoss.org/){:target="_blank"} — Community support and discussion

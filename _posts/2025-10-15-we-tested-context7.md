@@ -8,13 +8,13 @@ title: "We Tested Context7 with ZK Documentation — Here's What We Learned"
 
 # The Story
 
-Recently, I came across a few articles about AI-assisted coding tools and noticed a lot of discussion around [Context7](https://context7.com/). The idea sounded promising — Context7 allows developers to feed documentation directly to AI models, improving their understanding of specific frameworks and libraries.
+Recently, I came across a few articles about AI-assisted coding tools and noticed a lot of discussion around [Context7](https://context7.com/){:target="_blank"}. The idea sounded promising — Context7 allows developers to feed documentation directly to AI models, improving their understanding of specific frameworks and libraries.
 
 That made us curious: could Context7 help AI models provide better answers for ZK Framework developers? We decided to find out.
 
 # Executive Summary
 
-We ran a controlled experiment to see if [Context7 MCP server](https://github.com/upstash/context7) could improve AI-generated answers to ZK Framework questions. Our setup was straightforward: using the same AI model (Claude Code) with two conditions — with and without Context7 MCP server — across ten common ZK questions.
+We ran a controlled experiment to see if [Context7 MCP server](https://github.com/upstash/context7){:target="_blank"} could improve AI-generated answers to ZK Framework questions. Our setup was straightforward: using the same AI model (Claude Code) with two conditions — with and without Context7 MCP server — across ten common ZK questions.
 
 ## Expected Result 
 Context7 should help by providing up-to-date documentation.
@@ -33,7 +33,7 @@ Context7 should help by providing up-to-date documentation.
 
 Context7 is an MCP (Model Context Protocol) server by Upstash that automatically retrieves documentation for over 33,000 libraries. Used by AI coding assistants like Cursor and Claude Code, it promises "up-to-date, version-specific documentation".
 
-**How Context7 Works** (based on their [official documentation](https://github.com/upstash/context7)):
+**How Context7 Works** (based on their [official documentation](https://github.com/upstash/context7){:target="_blank"}):
 - Dynamically retrieves documentation from source repositories when triggered
 - Detects the specific library mentioned in prompts
 - Fetches version-specific documentation and code examples
@@ -44,7 +44,7 @@ Context7 is an MCP (Model Context Protocol) server by Upstash that automatically
 - Version-specific documentation
 - Focused on providing current information to prevent AI hallucinations
 
-**Important Note**: The exact internal architecture (how Context7 parses, indexes, and retrieves documentation) is not publicly documented. Based on community research and reverse engineering efforts (see [this Reddit discussion](https://www.reddit.com/r/ClaudeAI/comments/1muoes4/)), Context7 appears to use some form of semantic search and snippet extraction, but the specific implementation details remain proprietary.
+**Important Note**: The exact internal architecture (how Context7 parses, indexes, and retrieves documentation) is not publicly documented. Based on community research and reverse engineering efforts (see [this Reddit discussion](https://www.reddit.com/r/ClaudeAI/comments/1muoes4/){:target="_blank"}), Context7 appears to use some form of semantic search and snippet extraction, but the specific implementation details remain proprietary.
 
 **Critical Note**: ZK documentation already works well with Claude Code directly. Our test focused specifically on Context7's retrieval quality.
 
@@ -142,7 +142,7 @@ First, I used Claude Code to create 10 common ZK Framework questions and their c
     - Read complete guides for complex topics
 
 3. **Ask in ZK Community**
-    - [Forum](https://forum.zkoss.org/)
+    - [Forum](https://forum.zkoss.org/){:target="_blank"}
     - Get human expertise for complex questions
 
 **The Silver Lining**:
@@ -202,6 +202,6 @@ This doesn’t mean shifting focus away from ZK itself. Rather, it’s about imp
 Reach out to us at info@zkoss.org. We're open to collaboration and always eager to hear from developers using ZK Framework.
 
 # Repository 
-[ZK Framework Official Documentation Repository](https://github.com/zkoss/zkdoc)
+[ZK Framework Official Documentation Repository](https://github.com/zkoss/zkdoc){:target="_blank"}
 
 

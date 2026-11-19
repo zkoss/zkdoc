@@ -124,4 +124,4 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 
 - [csp-strict-dynamic-enabled configuration](https://docs.zkoss.org/zk_config_ref/the_csp-strict-dynamic-enabled_element)
 
-- [ZK GitHub repository](https://github.com/zkoss/zk)
+- [ZK GitHub repository](https://github.com/zkoss/zk){:target="_blank"}

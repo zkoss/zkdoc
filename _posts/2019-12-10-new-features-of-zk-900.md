@@ -18,7 +18,7 @@ ZK 9 requires **Java 8** to compile, so please make sure you are with
 Java SE 8 or later versions. If you are coming from an older ZK version,
 remember to check out the [Upgrade Tips](#upgrade-tips) at the end of the page.
 
-For more information please refer to the [Release Notes](https://www.zkoss.org/product/zk/releasenote/9.0.0).
+For more information please refer to the [Release Notes](https://www.zkoss.org/product/zk/releasenote/9.0.0){:target="_blank"}.
 
 # Upgrade to JDK 8
 
@@ -46,10 +46,10 @@ org.zkoss.zul.Datebox#Datebox(java.time.ZonedDateTime)
 ```
 
 For details, please refer to the Javadoc:
-[Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html),
-[Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html),
-[Calendar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Calendar.html),
-[Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html)
+[Datebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Datebox.html){:target="_blank"},
+[Timebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Timebox.html){:target="_blank"},
+[Calendar](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Calendar.html){:target="_blank"},
+[Timepicker](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Timepicker.html){:target="_blank"}
 
 # Support CSS3 Flex
 
@@ -141,7 +141,7 @@ address input that allows users to drill down and select Country > State > City.
 
 # New Navigation Components
 
-## [Anchornav](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/)
+## [Anchornav](https://blog.zkoss.org/2019/08/29/anchornav-a-new-zk-addon-for-scrolling-within-a-page/){:target="_blank"}
 
 {% include edition-availability.html edition="pe" %}
 
@@ -232,19 +232,19 @@ a sequence of steps. Coachmarks accept both text and ZK components as content.
 {% include edition-availability.html edition="ce" %}
 
 The `zkless-engine-maven-plugin` has been replaced by the
-[zkless-engine](https://www.npmjs.com/package/zkless-engine) npm module
-([GitHub](https://github.com/zkoss/zkless-engine)). It provides a
+[zkless-engine](https://www.npmjs.com/package/zkless-engine){:target="_blank"} npm module
+([GitHub](https://github.com/zkoss/zkless-engine){:target="_blank"}). It provides a
 command-line interface (CLI) that significantly reduces theme build times
 and improves development turnaround with an incremental watch compiler and
 live browser reloading.
 
 This CLI can be invoked directly or integrated into Maven or Gradle builds,
 making the older maven plugin obsolete. See the
-[README](https://github.com/zkoss/zkless-engine/blob/master/README.md) for details.
+[README](https://github.com/zkoss/zkless-engine/blob/master/README.md){:target="_blank"} for details.
 
 When upgrading a theme to ZK 9, you need to escape ZK-specific syntax
-using the [escape (e) function](http://lesscss.org/functions/#string-functions-e).
-See [this commit](https://github.com/zkoss/zkThemeTemplate/commit/bb3de98705f946a1963a631e72c4f274d6e5005d)
+using the [escape (e) function](http://lesscss.org/functions/#string-functions-e){:target="_blank"}.
+See [this commit](https://github.com/zkoss/zkThemeTemplate/commit/bb3de98705f946a1963a631e72c4f274d6e5005d){:target="_blank"}
 for an example of upgrading ZK's default styles.
 
 ## Upgrade to jQuery 1.12.4
@@ -260,4 +260,4 @@ The underlying jQuery version is upgraded to **1.12.4** to include security fixe
 - ZK DSP Library is moved to a new module `zweb-dsp`.
 - `SimpleLocalTimeConstraint` is used by default instead of `SimpleConstraint` in Timebox and Timepicker.
 - Use `Notification.show` instead of `Clients.showNotification`, as the former follows single responsibility principle.
-- Custom themes based on [zkThemeTemplate](https://github.com/zkoss/zkThemeTemplate) need to merge the latest changes (see [New ZK Less Engine](#new-zk-less-engine)).
+- Custom themes based on [zkThemeTemplate](https://github.com/zkoss/zkThemeTemplate){:target="_blank"} need to merge the latest changes (see [New ZK Less Engine](#new-zk-less-engine)).

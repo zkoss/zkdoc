@@ -229,7 +229,7 @@ Key features:
 
 ## Resources
 
-- [Download ZK 6.5](http://www.zkoss.org/download/zk)
-- [ZK 6.5 Release Notes](http://www.zkoss.org/product/zk/releasenote/6.5.0)
+- [Download ZK 6.5](http://www.zkoss.org/download/zk){:target="_blank"}
+- [ZK 6.5 Release Notes](http://www.zkoss.org/product/zk/releasenote/6.5.0){:target="_blank"}
 - [ZK Component Reference - Cardlayout](/zk_component_ref/cardlayout)
 - [Developer's Reference - Clients.showNotification](/zk_dev_ref/ui_patterns/useful_java_utilities)

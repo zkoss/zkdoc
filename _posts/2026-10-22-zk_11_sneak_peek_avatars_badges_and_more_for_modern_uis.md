@@ -165,4 +165,4 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 
 - [Carousel](https://docs.zkoss.org/zk_component_ref/carousel)
 
-- [ZK GitHub repository](https://github.com/zkoss/zk)
+- [ZK GitHub repository](https://github.com/zkoss/zk){:target="_blank"}

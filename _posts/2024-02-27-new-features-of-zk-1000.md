@@ -37,7 +37,7 @@ excellent choice for modern web applications.
 View [ZK 10 Release
 Note](https://www.zkoss.org/product/zk/releasenote/10.0.0).
 
-Visit the [ZK 10 Page](https://www.zkoss.org/product/zk/zk10).
+Visit the [ZK 10 Page](https://www.zkoss.org/product/zk/zk10){:target="_blank"}.
 
 ## Download
 
@@ -96,7 +96,7 @@ load. With stateless components, ZK apps gain benefits like:
 - Reduced memory usage on a server
 - Faster response times
 
-Visit [ZK 10 Product Page](https://www.zkoss.org/product/zk/zk10) for
+Visit [ZK 10 Product Page](https://www.zkoss.org/product/zk/zk10){:target="_blank"} for
 more information. Note that this new feature is an addition to the
 current ZK; if you are not ready to use stateless components, you can
 still upgrade your existing project to ZK 10 and enjoy other
@@ -147,7 +147,7 @@ For more technical information on ZK Client MVVM, visit:
 
 - [Basic setup and
   usages](https://www.zkoss.org/wiki/Small_Talks/2022/May/ZK10_Preview:_Using_the_new_and_light_Client_MVVM)
-- [Comparison and FAQ](https://www.zkoss.org/wiki/Small_Talks/2022/September/ZK10_Preview:_Knowing_what_to_expect_from_Client_MVVM)
+- [Comparison and FAQ](https://www.zkoss.org/wiki/Small_Talks/2022/September/ZK10_Preview:_Knowing_what_to_expect_from_Client_MVVM){:target="_blank"}
 
 ### ZK Linter Enables Smooth Migration from Server to Client MVVM
 
@@ -184,7 +184,7 @@ features and fixes.
 ## TypeScript adoption brings robustness and reliability
 
 {% include edition-availability.html edition="ce" %} Since ZK 10, we have migrated all the client-side
-JavaScript code to [TypeScript](https://www.typescriptlang.org/), a
+JavaScript code to [TypeScript](https://www.typescriptlang.org/){:target="_blank"}, a
 statically typed superset of JavaScript. This brings several key
 benefits:
 
@@ -194,7 +194,7 @@ benefits:
 - Safer interoperability between modules
 - Closer to Java programming experience
 
-An NPM package, [zk-types](https://www.npmjs.com/package/zk-types), with
+An NPM package, [zk-types](https://www.npmjs.com/package/zk-types){:target="_blank"}, with
 type definitions for the ZK JavaScript APIs, is also provided. This
 allows using TypeScript to customize ZK in a type-safe manner.
 
@@ -301,7 +301,7 @@ vulnerabilities:
 library from 4.7.0 to **6.4.2**. This update provides a comprehensive
 set of free icons and features:
 
-- [Over 2,000 free icons](https://fontawesome.com/search?o=a&m=free)
+- [Over 2,000 free icons](https://fontawesome.com/search?o=a&m=free){:target="_blank"}
   (mostly in **solid** style)
 - Redesigned icons with a modern look
 - Supports Font Awesome 6 and 4 syntax for backward compatibility
@@ -370,7 +370,7 @@ removed zul attributes and simplify your upgrade process. Follow
 project](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/)
 to set up zk linter and scan your zul files. Make sure you include zk 10
 upgrade rule in
-[app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties).
+[app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties){:target="_blank"}.
 
 If it finds an incompatibility, it will show a warning like:
 
@@ -400,7 +400,7 @@ using Maven, follow the instructions below:
 ```
 
 2\. add
-[app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties)
+[app.properties](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/blob/master/app.properties){:target="_blank"}
 
 3\. put [upgrade rule
 classes](https://github.com/zkoss-demo/zk-client-mvvm-linter-starter/tree/master/src/main/java/org/zkoss/zklinter/upgrade/rule)
@@ -462,7 +462,7 @@ for details. Use [ZK Theme
 Template](https://github.com/zkoss/zkThemeTemplate) if you wish to
 further customize the theme.
 
-Check [theme demo](https://www.zkoss.org/zkthemepackdemo/) for all
+Check [theme demo](https://www.zkoss.org/zkthemepackdemo/){:target="_blank"} for all
 themes.
 
 ### Keep 10.0.0 for Upgrade

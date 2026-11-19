@@ -41,7 +41,7 @@ enhanced and project schedule is on track.
 
 Below shows an example of hello world using MVVM and a flash demo. For
 more information please
-[click here](https://www.zkoss.org/wiki/Small%20Talks/2011/November/Hello%20ZK%20MVVM).
+[click here](https://www.zkoss.org/wiki/Small%20Talks/2011/November/Hello%20ZK%20MVVM){:target="_blank"}.
 
 *View*: helloMVVM.zul
 
@@ -75,7 +75,7 @@ available, done by Dennis Chen.
 
 ![]({{site.baseurl}}/assets/images/small-talk/smalltalks_mvvm_in_zk6_view_example.png)
 
-For more information on this please [click here](https://www.zkoss.org/wiki/Small_Talks/2011/November/MVVM_in_ZK_6_-_Design_your_first_MVVM_page).
+For more information on this please [click here](https://www.zkoss.org/wiki/Small_Talks/2011/November/MVVM_in_ZK_6_-_Design_your_first_MVVM_page){:target="_blank"}.
 
 # Generic enhancements
 
@@ -158,7 +158,7 @@ public class FormController extends SelectorComposer {
 
 by leveraging this selector technology it will make ZK programming even
 more productive than before. If you would like more information on this
-you can take a look at this [small talk](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC).
+you can take a look at this [small talk](https://www.zkoss.org/wiki/Small_Talks/2011/January/Envisage_ZK_6:_An_Annotation_Based_Composer_For_MVC){:target="_blank"}.
 
 # Advanced templates
 
@@ -221,7 +221,7 @@ recursive use of templates in a Listbox.
 ![]({{site.baseurl}}/assets/images/small-talk/st201107_listbox_in_listbox.png)
 
 There are a huge number of potential applications for this
-functionality, for more information please take a look at this [small talk](https://www.zkoss.org/wiki/Small_Talks/2011/July/Envisage_ZK_6.0:_Rendering_List_and_Tree_Model_with_Templates).
+functionality, for more information please take a look at this [small talk](https://www.zkoss.org/wiki/Small_Talks/2011/July/Envisage_ZK_6.0:_Rendering_List_and_Tree_Model_with_Templates){:target="_blank"}.
 
 # Upgrade to jQuery 1.6.4
 
@@ -234,8 +234,8 @@ from jquery blogs and outline some of the performance improvements.
 
 For more information please see the following jQuery release notes:
 
-- [jQuery 1.5](http://blog.jquery.com/2011/01/31/jquery-15-released/)
-- [jQuery 1.6](http://blog.jquery.com/2011/05/03/jquery-16-released/)
+- [jQuery 1.5](http://blog.jquery.com/2011/01/31/jquery-15-released/){:target="_blank"}
+- [jQuery 1.6](http://blog.jquery.com/2011/05/03/jquery-16-released/){:target="_blank"}
 
 # Menubar supports KeyStroke navigation
 
@@ -260,7 +260,7 @@ The follow code snippet demonstrates how to set a shortcut:
 
 note: The open() method of the menu is introduced in the upcoming ZK6.0
 RC release. Check out the whole demo file
-[here](https://gist.github.com/1236940).
+[here](https://gist.github.com/1236940){:target="_blank"}.
 
 # The combobutton
 
@@ -286,7 +286,7 @@ Blue.
 ![]({{site.baseurl}}/assets/images/small-talk/smalltalk_newfeatureszk6_breeze.png)
 
 This theme is now the default for ZK 6. For more examples on this theme
-please [visit our demo](http://www.zkoss.org/zkdemo).
+please [visit our demo](http://www.zkoss.org/zkdemo){:target="_blank"}.
 
 # The Selectbox, Absolutelayout, Anchorlayout now in CE
 
@@ -531,7 +531,7 @@ provide the user with a button which can provide states like a checkbox.
 
 In the toggle mode , the toolbarbutton will be "on" after user first
 clicks it, and will be released after a subsequent click. It will fire
-[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html) when state changed.
+[org.zkoss.zk.ui.event.CheckEvent](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zk/ui/event/CheckEvent.html){:target="_blank"} when state changed.
 
 ```xml
 <window title="Toolbarbutton" border="normal" width="250px" >
@@ -553,9 +553,9 @@ clicks it, and will be released after a subsequent click. It will fire
 
 # Download & other resources
 
-- [Download ZK 6 here](http://www.zkoss.org/download/zk)
+- [Download ZK 6 here](http://www.zkoss.org/download/zk){:target="_blank"}
 - [Take a look at ZK 6's release notes
   here](http://www.zkoss.org/product/zk/releasenote/6.0.0-RC2)
 - View the
-  [ZK 6: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2011/November/ZK_6:_Upgrade_Notes)
+  [ZK 6: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2011/November/ZK_6:_Upgrade_Notes){:target="_blank"}
 

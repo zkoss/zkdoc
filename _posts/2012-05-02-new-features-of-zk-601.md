@@ -491,9 +491,9 @@ reference](/zk_mvvm_ref/data_binding/validator#display-multiple-messages).
 
 # Download & other resources
 
-- [Download ZK 6 here](http://www.zkoss.org/download/zk)
+- [Download ZK 6 here](http://www.zkoss.org/download/zk){:target="_blank"}
 - [Take a look at ZK 6's release notes
   here](http://www.zkoss.org/product/zk/releasenote/6.0.0)
 - View the
-  [ZK 6: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2011/November/ZK_6:_Upgrade_Notes)
+  [ZK 6: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2011/November/ZK_6:_Upgrade_Notes){:target="_blank"}
 

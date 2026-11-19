@@ -9,7 +9,7 @@ title: "ZK Doc MCP Server: Bringing Accurate ZK Knowledge to your AI Assistants"
 # Introduction
 
 ## The IDE-Centric approach
-When we first explored how to improve the accuracy for AI-assisted ZK development, we started with an IDE-centric approach. In the article [Empower Your AI with ZK Knowledge to Boost Development](https://www.zkoss.org/wiki/Small_Talks/2025/July/Empower_Your_AI_with_ZK_Knowledge_to_Boost_Development), we showed how developers could load ZK documentation into IDE tools like Cursor so that AI assistants could better understand ZK concepts.
+When we first explored how to improve the accuracy for AI-assisted ZK development, we started with an IDE-centric approach. In the article [Empower Your AI with ZK Knowledge to Boost Development](https://www.zkoss.org/wiki/Small_Talks/2025/July/Empower_Your_AI_with_ZK_Knowledge_to_Boost_Development){:target="_blank"}, we showed how developers could load ZK documentation into IDE tools like Cursor so that AI assistants could better understand ZK concepts.
 This approach worked reasonably well, but it also had clear limitations. It required IDE-specific setup, manual downloading of documentation, and ongoing maintenance. In addition, searching was mostly keyword-based, which made it harder for AI tools to understand developer intent or retrieve the most relevant content.
 To address these issues, we next evaluated an MCP server–based solution.
 ## The Context7 Experiment

@@ -21,7 +21,7 @@ Our software implementation uses programmatically-composed views rather than sta
 
 ## Upgrade Preparation
 
-Reading [ZK 5: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2009/December/ZK_5:_Upgrade_Notes) beforehand is strongly recommended. One significant change involves event processing: ZK 5 disables the event processing thread by default. This affected our codebase, which expected response values from dialog interactions.
+Reading [ZK 5: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2009/December/ZK_5:_Upgrade_Notes){:target="_blank"} beforehand is strongly recommended. One significant change involves event processing: ZK 5 disables the event processing thread by default. This affected our codebase, which expected response values from dialog interactions.
 
 To maintain existing behavior without code modifications, we re-enabled the event thread in the ZK configuration:
 
@@ -96,5 +96,5 @@ The upgrade to ZK 5 introduced desired features justifying the migration effort.
 
 ## Resources
 
-- [ZK 5: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2009/December/ZK_5:_Upgrade_Notes) -- Essential pre-migration reading
-- [ZK 5.0 Javadoc](https://www.zkoss.org/javadoc/latest/) -- API reference
+- [ZK 5: Upgrade Notes](https://www.zkoss.org/wiki/Small_Talks/2009/December/ZK_5:_Upgrade_Notes){:target="_blank"} -- Essential pre-migration reading
+- [ZK 5.0 Javadoc](https://www.zkoss.org/javadoc/latest/){:target="_blank"} -- API reference

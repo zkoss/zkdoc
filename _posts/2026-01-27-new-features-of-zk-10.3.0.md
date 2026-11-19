@@ -11,13 +11,13 @@ ZK 10.3.0 continues the evolution of ZK 10 with a strong focus on **modularity, 
 
 These refinements are designed to help teams maintain large-scale enterprise applications more easily, adopt modern frontend security practices, and upgrade existing projects with greater confidence.
 
-View [ZK 10.3.0 Release Note](https://www.zkoss.org/product/zk/releasenote/10.3.0).
+View [ZK 10.3.0 Release Note](https://www.zkoss.org/product/zk/releasenote/10.3.0){:target="_blank"}.
 
 For all new downloads and upgrades, we recommend using version 10.3.0.1.
 
 ## Download
-- [Demo](https://www.zkoss.org/zkdemo/)
-- [Download](https://www.zkoss.org/download/zk)
+- [Demo](https://www.zkoss.org/zkdemo/){:target="_blank"}
+- [Download](https://www.zkoss.org/download/zk){:target="_blank"}
 
 # Highlighted Features
 
@@ -99,7 +99,7 @@ This makes it easier to keep a consistent look and feel across buttons, inputs, 
 
 For more details and examples, see [CSS Variables](https://docs.zkoss.org/zk_style_customization_guide/css_variables). 
 
-You can also try the live demo: [CSS Variables Demo](http://zkoss.org/zkdemo/customize_theme/css_variables).
+You can also try the live demo: [CSS Variables Demo](http://zkoss.org/zkdemo/customize_theme/css_variables){:target="_blank"}.
 
 ### Upgrade Guide for Existing Themes
 To ensure a smooth upgrade, ZK 10.3.0 provides guidance for migrating existing custom themes:
@@ -137,7 +137,7 @@ For teams with stricter security or compliance requirements, newer dependency ve
 
 - Closure Compiler: The `closure-compiler-unshaded` dependency used by ZK is optional and may be overridden at the application level if a newer version is preferred. Within ZK 10.3.0 itself, the referenced version remains aligned with Java 11 support.
 
-- JasperReports: The JasperReports integration (`zkex`) depends on the community edition of JasperReports. At the time of this release, the latest community version does not yet include certain security updates. Users who rely on JasperReports are encouraged to monitor upstream updates and assess whether alternative versions or mitigations are appropriate for their environment. See [JasperReport FAQ](https://community.jaspersoft.com/knowledgebase/faq/update-details-about-the-java-vulnerability-r4897/)
+- JasperReports: The JasperReports integration (`zkex`) depends on the community edition of JasperReports. At the time of this release, the latest community version does not yet include certain security updates. Users who rely on JasperReports are encouraged to monitor upstream updates and assess whether alternative versions or mitigations are appropriate for their environment. See [JasperReport FAQ](https://community.jaspersoft.com/knowledgebase/faq/update-details-about-the-java-vulnerability-r4897/){:target="_blank"}
 
 Overall, ZK is designed to provide flexibility and transparency: you are encouraged to select dependency versions that best align with your Java runtime, security posture, and operational requirements, while benefiting from ZK’s stable integration architecture.
 

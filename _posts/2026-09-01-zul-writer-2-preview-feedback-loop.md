@@ -6,7 +6,7 @@ category: small-talk
 title: "zul-writer 2.0: Letting the AI See the ZUL Page It Just Wrote"
 ---
 
-In March, we introduced [zul-writer](/small-talk/2026/03/16/accelerate-zk-development-with-agent-skills-zul-writer.html), an [Agent Skill](https://agentskills.io/) that helps AI coding agents build ZK applications. Instead of generating ZUL from scratch based only on its general knowledge, zul-writer gives the agent ZK-specific instructions and a structured workflow for creating ZUL pages and their Java controllers.
+In March, we introduced [zul-writer](/small-talk/2026/03/16/accelerate-zk-development-with-agent-skills-zul-writer.html), an [Agent Skill](https://agentskills.io/){:target="_blank"} that helps AI coding agents build ZK applications. Instead of generating ZUL from scratch based only on its general knowledge, zul-writer gives the agent ZK-specific instructions and a structured workflow for creating ZUL pages and their Java controllers.
 
 You can describe the UI you want in natural language, or provide a UI mockup, and zul-writer turns that description into a ZK page and the code behind it. It can then validate the generated ZUL and controller, helping developers get from an idea or design to a working ZK page with much less manual coding.
 
@@ -165,7 +165,7 @@ Deleting `.z-span` from that selector fixed all six at once. The re-render print
 
 The remaining differences from the mockup are data and decoration, not structure: the mockup's avatars are photographs and the render uses ZK's own user icon, and the greys are close rather than identical. The skill is instructed not to spend fix rounds on either.
 
-Both pages this article renders — `kanban-board-v2.zul` above and `app-tracker.zul` in the sections that follow — are in the [zulwriter-showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase) project, so you can run these previews against them yourself.
+Both pages this article renders — `kanban-board-v2.zul` above and `app-tracker.zul` in the sections that follow — are in the [zulwriter-showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase){:target="_blank"} project, so you can run these previews against them yourself.
 
 ## The Image Shows the Defect; `--probe` Helps Find the Cause
 
@@ -286,9 +286,9 @@ If you use an AI coding agent to build ZK applications, give zul-writer a try. S
 
 - [Agent Skills for ZK Development](/zk_dev_ref/agent_skills) — the reference page
 - [Accelerate ZK Development with the AI Agent Skill: zul-writer](/small-talk/2026/03/16/accelerate-zk-development-with-agent-skills-zul-writer.html) — the introduction to zul-writer
-- [zkoss-demo/agent-skill](https://github.com/zkoss-demo/agent-skill) — source and marketplace index
-- [zulwriter-showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase) — the runnable Maven project holding every page in this article
-- [ZK Forum](https://forum.zkoss.org/) — start a discussion
-- [GitHub Issues](https://github.com/zkoss-demo/agent-skill/issues) — report a bug or request a feature
+- [zkoss-demo/agent-skill](https://github.com/zkoss-demo/agent-skill){:target="_blank"} — source and marketplace index
+- [zulwriter-showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase){:target="_blank"} — the runnable Maven project holding every page in this article
+- [ZK Forum](https://forum.zkoss.org/){:target="_blank"} — start a discussion
+- [GitHub Issues](https://github.com/zkoss-demo/agent-skill/issues){:target="_blank"} — report a bug or request a feature
 
 We would especially like to hear about pages where the preview got it wrong: a defect it missed, or a correct page it read as broken. Those are the two failure modes that matter, and real projects find them faster than we can.

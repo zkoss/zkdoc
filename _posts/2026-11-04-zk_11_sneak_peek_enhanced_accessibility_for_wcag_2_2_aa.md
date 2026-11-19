@@ -181,10 +181,10 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 
 ## Resources
 
-- [What's New in WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/)
+- [What's New in WCAG 2.2](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/){:target="_blank"}
 
-- [Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22/)
+- [Web Content Accessibility Guidelines 2.2](https://www.w3.org/TR/WCAG22/){:target="_blank"}
 
 - [ZK Accessibility documentation](https://docs.zkoss.org/zk_dev_ref/accessibility/accessibility)
 
-- [ZK GitHub repository](https://github.com/zkoss/zk)
+- [ZK GitHub repository](https://github.com/zkoss/zk){:target="_blank"}

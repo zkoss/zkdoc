@@ -14,8 +14,8 @@ ZK 7 focuses on improving the theme system by combining CSS 3, LESS, and Bootstr
 
 ## Download and Demo
 
-[![Download ZK 7]({{site.baseurl}}/assets/images/small-talk/zk7/Download-zk-7.png)](https://www.zkoss.org/download/zk)
-[![Demo ZK 7]({{site.baseurl}}/assets/images/small-talk/zk7/Demo-zk-7.png)](https://www.zkoss.org/zkdemo/)
+[![Download ZK 7]({{site.baseurl}}/assets/images/small-talk/zk7/Download-zk-7.png)](https://www.zkoss.org/download/zk){:target="_blank"}
+[![Demo ZK 7]({{site.baseurl}}/assets/images/small-talk/zk7/Demo-zk-7.png)](https://www.zkoss.org/zkdemo/){:target="_blank"}
 
 ## Important Upgrade Notes
 
@@ -56,7 +56,7 @@ Atlantic is a new flat design theme for ZK 7 that removes gradients, rounded cor
 ![Atlantic Button]({{site.baseurl}}/assets/images/small-talk/zk7/Atlantic-button.png)
 ![Atlantic Listbox]({{site.baseurl}}/assets/images/small-talk/zk7/Atlantic-listbox.png)
 
-The Atlantic theme is available as a GPL download on [GitHub](https://github.com/zkoss/atlantic/releases).
+The Atlantic theme is available as a GPL download on [GitHub](https://github.com/zkoss/atlantic/releases){:target="_blank"}.
 
 ## Navigation Component
 {% include edition-availability.html edition="ee" %}

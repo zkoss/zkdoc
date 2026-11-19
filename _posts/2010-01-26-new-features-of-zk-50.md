@@ -403,5 +403,5 @@ The `zk.xml` configuration file can store application-specific information acces
 
 ## Resources
 
-- [Download ZK 5](http://www.zkoss.org/download/zk.dsp)
-- [Release Notes](http://www.zkoss.org/release/rn-5.0.0.dsp)
+- [Download ZK 5](http://www.zkoss.org/download/zk.dsp){:target="_blank"}
+- [Release Notes](http://www.zkoss.org/release/rn-5.0.0.dsp){:target="_blank"}

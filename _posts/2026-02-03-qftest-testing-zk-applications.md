@@ -6,7 +6,7 @@ category: small-talk
 title: "Testing ZK Applications with QF-Test in 2026"
 ---
 
-The great thing about ZK has always been that you can build a web application without having to deal with the hassle of writing and maintaining HTML and JavaScript code. You define your application UI in concise [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) and little [richlets](/zk_dev_ref/ui_composing/richlet) written in Java, you can write unit tests for your business logic and even use [ZATS](https://www.zkoss.org/product/zats) to test your UI.
+The great thing about ZK has always been that you can build a web application without having to deal with the hassle of writing and maintaining HTML and JavaScript code. You define your application UI in concise [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) and little [richlets](/zk_dev_ref/ui_composing/richlet) written in Java, you can write unit tests for your business logic and even use [ZATS](https://www.zkoss.org/product/zats){:target="_blank"} to test your UI.
 
 However, you still want to make sure that your applications actually work for your users. In other words, you want to do end-to-end testing, including interactions of the user with the browser and the browser with the application. This is vital to ensure that the actual users of your application will have the intended experience.
 
@@ -16,19 +16,19 @@ This kind of browser testing has a reputation for being cumbersome, slow and fra
 
 This is where QF-Test comes in: QF-Test is a tried and tested UI test automation software that has been offering first-class support for testing Web applications built with ZK since 2013.
 
-With QF-Test, you don't have to deal with all these complexities. QF-Test uses a technology we call the [CustomWebResolver (CWR)](https://www.qftest.com/en/blog/article/cwr-testable-web-ui.html) to internally translate the HTML of your web application into a semantic component tree. Usually, you need to "teach" the structure of your particular web application to the CWR, but in the case of ZK, we already did the work and include a fully preconfigured CWR with every copy of QF-Test.
+With QF-Test, you don't have to deal with all these complexities. QF-Test uses a technology we call the [CustomWebResolver (CWR)](https://www.qftest.com/en/blog/article/cwr-testable-web-ui.html){:target="_blank"} to internally translate the HTML of your web application into a semantic component tree. Usually, you need to "teach" the structure of your particular web application to the CWR, but in the case of ZK, we already did the work and include a fully preconfigured CWR with every copy of QF-Test.
 
 Thanks to the CustomWebResolver, what QF-Test sees of your application is much closer to the [`ZUML` markup](/zk_dev_ref/ui_composing/zuml) you probably wrote to build your application UI than the actual HTML that ZK is rendering.
 
 ![An illustration of how QF-Test can condense complex web application HTML into semantic components](/zk_dev_ref/images/qftest-zk-3d-compare-s.png)
 
-This screenshot is now [over 10 years old](https://www.zkoss.org/wiki/Small_Talks/2014/May/Testing_ZK_Applications_at_Business_Level_with_QF-Test), but it is still excellent at illustrating the reduction of complexity the QF-Test CustomWebResolver achieves in typical web applications. On the left, you see all the layers of hierarchy in the raw HTML. This is what you would have to navigate in other browser testing tools. On the right, you see the simple and flat component tree that is available in QF-Test, because the QF-Test CWR reduces the HTML down to the underlying semantic components.
+This screenshot is now [over 10 years old](https://www.zkoss.org/wiki/Small_Talks/2014/May/Testing_ZK_Applications_at_Business_Level_with_QF-Test){:target="_blank"}, but it is still excellent at illustrating the reduction of complexity the QF-Test CustomWebResolver achieves in typical web applications. On the left, you see all the layers of hierarchy in the raw HTML. This is what you would have to navigate in other browser testing tools. On the right, you see the simple and flat component tree that is available in QF-Test, because the QF-Test CWR reduces the HTML down to the underlying semantic components.
 
 ## Get started with QF-Test in 7 simple steps
 
 But is it not difficult to get browser automation up and running? Not with QF-Test! It takes literally just 7 steps to go from nothing to a first QF-Test test case of your application:
 
-1. [Download](https://qftest.com/en/download), install and launch QF-Test (it works on Windows, macOS and Linux!)
+1. [Download](https://qftest.com/en/download){:target="_blank"}, install and launch QF-Test (it works on Windows, macOS and Linux!)
 2. Open the Quickstart wizard using the magic wand button in the toolbar
 
 ![The QF-Test Quickstart wizard](/zk_dev_ref/images/qftest-quick-start-wizard-s.png)
@@ -47,7 +47,7 @@ You can also use the "Check recording" mode in QF-Test to interactively record c
 
 ## Build tests quickly using QF-Test SmartID
 
-But you can also build tests through the QF-Test interface, without manually recording everything. QF-Test makes the widget IDs you assigned in your `ZUML` files or [richlets](/zk_dev_ref/ui_composing/richlet) available to use in your UI tests. That way, you can refer to the elements of your application UI the same way you would in ZK. In QF-Test, this is done using our simple but comprehensive [SmartID syntax](https://www.qftest.com/en/blog/article/smartid-the-next-generation-of-component-recognition.html). Here are some examples:
+But you can also build tests through the QF-Test interface, without manually recording everything. QF-Test makes the widget IDs you assigned in your `ZUML` files or [richlets](/zk_dev_ref/ui_composing/richlet) available to use in your UI tests. That way, you can refer to the elements of your application UI the same way you would in ZK. In QF-Test, this is done using our simple but comprehensive [SmartID syntax](https://www.qftest.com/en/blog/article/smartid-the-next-generation-of-component-recognition.html){:target="_blank"}. Here are some examples:
 
 - `#Panel:myPanel#@Button:label=Next`: Select the button labeled "Next" in the Panel with the widget ID "myPanel" 
 - `#Combobox:myComboboxWidget@Entry 1`: "myComboboxWidget" is the widget ID of a dropdown, "Entry 1" refers to an item in the dropdown's list.
@@ -69,8 +69,8 @@ And these are just the features in QF-Test that offer unique advantages for ZK u
 
 ## Get started yourself
 
-As you can see, QF-Test and ZK are a great match. You can try out QF-Test for yourself using the 7 simple steps described above. You can also get yourself [a free 14-day trial license](https://services.qftest.com/en/license/request/). This includes access to our helpful support team, who will gladly assist you in getting your first tests running with QF-Test.
+As you can see, QF-Test and ZK are a great match. You can try out QF-Test for yourself using the 7 simple steps described above. You can also get yourself [a free 14-day trial license](https://services.qftest.com/en/license/request/){:target="_blank"}. This includes access to our helpful support team, who will gladly assist you in getting your first tests running with QF-Test.
 
 ----
 
-This article is contributed by ZK's partner, Quality First Software GmbH. If you have any questions or input, we welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/). If you’d like to connect directly, feel free to reach out to QFS at [service@qftest.com](mailto:service@qftest.com).  
+This article is contributed by ZK's partner, Quality First Software GmbH. If you have any questions or input, we welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/){:target="_blank"}. If you’d like to connect directly, feel free to reach out to QFS at [service@qftest.com](mailto:service@qftest.com).  

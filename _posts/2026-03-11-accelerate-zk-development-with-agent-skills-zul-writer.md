@@ -6,7 +6,7 @@ category: small-talk
 title: "Accelerate ZK Development with the AI Agent Skill: zul-writer"
 ---
 
-Modern AI coding agents like Claude Code and Gemini CLI are transforming how we write code, but they often lack the specialized knowledge like ZK. That's where [Agent Skills](https://agentskills.io/) come in. Agent skills are specialized capabilities that can be added to AI coding agents to enhance their performance on specific technical tasks, providing framework-specific coding guidance and architectural best practices.
+Modern AI coding agents like Claude Code and Gemini CLI are transforming how we write code, but they often lack the specialized knowledge like ZK. That's where [Agent Skills](https://agentskills.io/){:target="_blank"} come in. Agent skills are specialized capabilities that can be added to AI coding agents to enhance their performance on specific technical tasks, providing framework-specific coding guidance and architectural best practices.
 
 In this small talk, we introduce **zul-writer**, a powerful agent skill designed specifically for ZK developers to accelerate UI development and ensure code quality. 
 
@@ -41,7 +41,7 @@ The skill follows a rigorous process to ensure the generated code meets your pro
 *This guide assumes you already have an AI coding agent installed in your development environment, such as Claude Code, Codex CLI, or Gemini CLI. You also need to install node.js and npm to run `npx`.
 If you are new to AI coding agents, you may want to review their installation guides first before installing the zul-writer skill.*
 
-Installing zul-writer skill is straightforward via [The Open Agent Skills Ecosystem](https://skills.sh/). Run the following command in your terminal:
+Installing zul-writer skill is straightforward via [The Open Agent Skills Ecosystem](https://skills.sh/){:target="_blank"}. Run the following command in your terminal:
 
 ```bash
 npx skills add zkoss-demo/agent-skill
@@ -82,7 +82,7 @@ The assistant will then guide you through the 4-step workflow to produce your fi
 # Showcase Project
 For demonstration purposes, we first use Google Stitch to generate UI mockups. We then provide these mockups to zul-writer, which generates the corresponding ZUL file and Composer templates based on the visual design. Below are a couple of examples showing how zul-writer converts UI mockups into working ZK UI structures.
 
-To explore more examples, check out the [Zul-writer Showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase) repository. It contains a collection of real-world UIs generated entirely by the skill, demonstrating how zul-writer handles complex layouts, nested components, and various ZK patterns.
+To explore more examples, check out the [Zul-writer Showcase](https://github.com/zkoss-demo/agent-skill/tree/main/zulwriter-showcase){:target="_blank"} repository. It contains a collection of real-world UIs generated entirely by the skill, demonstrating how zul-writer handles complex layouts, nested components, and various ZK patterns.
  
 ## Bank Reconciliation Dashboard
 **Screenshot From Stitch**
@@ -91,7 +91,7 @@ To explore more examples, check out the [Zul-writer Showcase](https://github.com
 
 **Generated ZUL**
 
-Check out the generated ZUL: [bank-reconciliation.zul](https://github.com/zkoss-demo/agent-skill/blob/main/zulwriter-showcase/src/main/webapp/bank-reconciliation.zul)
+Check out the generated ZUL: [bank-reconciliation.zul](https://github.com/zkoss-demo/agent-skill/blob/main/zulwriter-showcase/src/main/webapp/bank-reconciliation.zul){:target="_blank"}
 
 ![Bank Reconciliation Dashboard](/assets/images/small-talk/zul-writer/bank-reconciliation-zul.png)
 
@@ -103,7 +103,7 @@ Check out the generated ZUL: [bank-reconciliation.zul](https://github.com/zkoss-
 
 **Generated ZUL**
 
-Check out the generated ZUL: [kanban-board.zul](https://github.com/zkoss-demo/agent-skill/blob/main/skills/zul-writer/assets/kanban-board.zul)
+Check out the generated ZUL: [kanban-board.zul](https://github.com/zkoss-demo/agent-skill/blob/main/skills/zul-writer/assets/kanban-board.zul){:target="_blank"}
 
 ![Enterprise Kanban Board by zul](/assets/images/small-talk/zul-writer/enterprise-kanban-zul.png)
 
@@ -117,4 +117,4 @@ This is the first public version of the tool, and while it already works well fo
 
 Looking ahead, we are exploring additional AI agent skills for ZK development, as well as the possibility of allowing developers to extend the workflow with their own project-specific rules or plugins.
 
-If you try zul-writer, we would love to hear your thoughts and suggestions. We welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/) or you can create a [GitHub issue](https://github.com/zkoss-demo/agent-skill/issues) to report bugs or suggest new features.
+If you try zul-writer, we would love to hear your thoughts and suggestions. We welcome you to start [a discussion on the ZK Forum](https://forum.zkoss.org/){:target="_blank"} or you can create a [GitHub issue](https://github.com/zkoss-demo/agent-skill/issues){:target="_blank"} to report bugs or suggest new features.

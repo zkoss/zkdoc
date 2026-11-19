@@ -29,20 +29,20 @@ Highlighted features:
 - Browser History (HTML5) Management
 - Source Maps for WPD Files
 
-Read more about [why ZK 8.5](http://blog.zkoss.org/2017/10/23/introducing-zk-8-5/)
+Read more about [why ZK 8.5](http://blog.zkoss.org/2017/10/23/introducing-zk-8-5/){:target="_blank"}
 
-Watch recorded [ZK 8.5 walk-through session](https://youtu.be/uw-sU2KN6kA)
+Watch recorded [ZK 8.5 walk-through session](https://youtu.be/uw-sU2KN6kA){:target="_blank"}
 
 ## Download and Demo
 
-- [Download ZK](http://www.zkoss.org/download/zk)
-- [ZK Live Demo](http://www.zkoss.org/zkdemo/)
+- [Download ZK](http://www.zkoss.org/download/zk){:target="_blank"}
+- [ZK Live Demo](http://www.zkoss.org/zkdemo/){:target="_blank"}
 
 # WebSocket Empowers the Communication with a Server
 
 {% include edition-availability.html edition="ee" %}
 
-[WebSocket](https://en.wikipedia.org/wiki/WebSocket) is a new
+[WebSocket](https://en.wikipedia.org/wiki/WebSocket){:target="_blank"} is a new
 communication protocol standardized by the IETF as RFC 6455. It provides
 a full-duplex communication channel over a single TCP connection. Once
 the WebSocket connection has been established, all subsequent messages
@@ -55,7 +55,7 @@ only WebSocket-based update engine but also a WebSocket-based server
 push.
 
 To enable websockets in ZK 8.5 all you need is to add the following
-<listener> to your zk.xml:
+`<listener>` to your zk.xml:
 
 ```xml
  <listener>
@@ -65,11 +65,11 @@ To enable websockets in ZK 8.5 all you need is to add the following
 
 {% include youtube.html id="qbGQ11_LGT0" %}
 
-[More details](http://blog.zkoss.org/2017/07/27/zk-8-5-preview-build-in-websocket-communication-is-now-provided/)
+[More details](http://blog.zkoss.org/2017/07/27/zk-8-5-preview-build-in-websocket-communication-is-now-provided/){:target="_blank"}
 
 ## Supported Servers
 
-According to the [Oracle article](http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html), WebSocket API (JSR 356) is a part of Java EE 7 standard. So all Java EE 7-compliant servers support the API. You can check [a list of compatible servers](http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html) and [Tomcat](http://tomcat.apache.org/whichversion.html).
+According to the [Oracle article](http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html){:target="_blank"}, WebSocket API (JSR 356) is a part of Java EE 7 standard. So all Java EE 7-compliant servers support the API. You can check [a list of compatible servers](http://www.oracle.com/technetwork/java/javaee/overview/compatibility-jsp-136984.html){:target="_blank"} and [Tomcat](http://tomcat.apache.org/whichversion.html){:target="_blank"}.
 
 # New Default Theme - Iceblue
 
@@ -82,7 +82,7 @@ modern and refreshing look.
 
 ![]({{site.baseurl}}/assets/images/small-talk/iceblue.png)
 
-## [Theme Demo](https://www.zkoss.org/zk85themedemo/)
+## [Theme Demo](https://www.zkoss.org/zk85themedemo/){:target="_blank"}
 
 ## Tips for Migrating to Iceblue Theme
 
@@ -103,7 +103,7 @@ as needed:
 
 For existing ZK-based systems, you can still keep using the previous
 default theme, Breeze, if you are not ready to migrate to Iceblue. You
-can easily switch back to Breeze theme. Just get the breeze theme jar via Maven (or [download breeze-8.5.0.zip](https://github.com/zkoss/zkthemes/releases)) and change the preferred theme name to "breeze" in zk.xml. Please refer to [Switching Themes](/zk_dev_ref/theming_and_styling/switching_themes).
+can easily switch back to Breeze theme. Just get the breeze theme jar via Maven (or [download breeze-8.5.0.zip](https://github.com/zkoss/zkthemes/releases){:target="_blank"}) and change the preferred theme name to "breeze" in zk.xml. Please refer to [Switching Themes](/zk_dev_ref/theming_and_styling/switching_themes).
 
 Set the preferred theme to breeze in **zk.xml**:
 
@@ -301,33 +301,33 @@ one. Now you can scroll them smoothly.
 
 {% include youtube.html id="Cdbx-vzbJnQ" %}
 
-[More details](http://blog.zkoss.org/2017/06/20/zk-8-5-preview-smooth-scrolling-in-zk-frozen/)
+[More details](http://blog.zkoss.org/2017/06/20/zk-8-5-preview-smooth-scrolling-in-zk-frozen/){:target="_blank"}
 
 ## Stacked Font Awesome Icons
 
 {% include edition-availability.html edition="ce" %} Thanks to contributor
-[szediwy](https://github.com/szediwy)'s effort, now ZK supports [stacked
+[szediwy](https://github.com/szediwy){:target="_blank"}'s effort, now ZK supports [stacked
 font awesome icons](http://fontawesome.io/examples/).
 
 ## Trumbowyg Editor Upgrade
 
 {% include edition-availability.html edition="ee" %} We upgraded the component's bundled
-[trumbowyg](http://alex-d.github.io/Trumbowyg/) to 2.3.0 in order to
+[trumbowyg](http://alex-d.github.io/Trumbowyg/){:target="_blank"} to 2.3.0 in order to
 benefit from [more plugins and bug
 fixes](https://github.com/Alex-D/Trumbowyg/releases).
 
 ## CKEditor Upgrade
 
 The major change is we upgraded the bundled
-[CKEditor](https://ckeditor.com/) to **4.7.0** to get [more features and
+[CKEditor](https://ckeditor.com/){:target="_blank"} to **4.7.0** to get [more features and
 bug fixes](https://cksource.com/blog/CKEditor-4.7-released).
 
-[Features](http://tracker.zkoss.org/browse/ZKCK-39?jql=project%20%3D%20ZKCK%20AND%20issuetype%20%3D%20%22New%20Feature%22%20AND%20fixVersion%20%3D%204.7.0.0):
+[Features](http://tracker.zkoss.org/browse/ZKCK-39?jql=project%20%3D%20ZKCK%20AND%20issuetype%20%3D%20%22New%20Feature%22%20AND%20fixVersion%20%3D%204.7.0.0){:target="_blank"}:
 
 - ZKCK-33: Update ckez source to current version
 - ZKCK-39: Editor upgrade to current latest release CKEditor 4.7.0
 
-[Bugs:](http://tracker.zkoss.org/browse/ZKCK-40?jql=project%20%3D%20ZKCK%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%204.7.0.0)
+[Bugs:](http://tracker.zkoss.org/browse/ZKCK-40?jql=project%20%3D%20ZKCK%20AND%20issuetype%20%3D%20Bug%20AND%20fixVersion%20%3D%204.7.0.0){:target="_blank"}
 
 - ZKCK-34: Zkoss CKEditor vulnerable to file browsing
 - ZKCK-40: Memory leak in CKEditor
@@ -349,20 +349,20 @@ reference:
 
 - [XulElement
   Javadoc](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/impl/XulElement.html)
-- <http://tracker.zkoss.org/browse/ZK-3520>
+- <http://tracker.zkoss.org/browse/ZK-3520>{:target="_blank"}
 
 ## New Key Support
 
 {% include edition-availability.html edition="ce" %}
 
-### [Shift + up key can deselect listitems](http://tracker.zkoss.org/browse/ZK-3507)
+### [Shift + up key can deselect listitems](http://tracker.zkoss.org/browse/ZK-3507){:target="_blank"}
 
 ![]({{site.baseurl}}/assets/images/small-talk/listbox_shiftupdown.gif)
 
 If you select multiple items with shift + down, now you can deselect
 them with shift + up.
 
-### [KeyEvent supports to detect the command key pressed](http://tracker.zkoss.org/browse/ZK-3506)
+### [KeyEvent supports to detect the command key pressed](http://tracker.zkoss.org/browse/ZK-3506){:target="_blank"}
 
 ZK now can detect **Mac command** key pressed. Please refer to [Allowed Control Keys](/zk_dev_ref/ui_patterns/keystroke_handling#allowed-control-keys)
 for more details.
@@ -376,4 +376,4 @@ required server-side simplicity, security, and integrity and the
 client-side usability, look, and feel.  
 Join us this fall and harvest Javascript from Java roots!
 
-ZK grows with you. Feel free to [share with us](https://www.zkoss.org/support/about/contact) your feedback or suggestion.
+ZK grows with you. Feel free to [share with us](https://www.zkoss.org/support/about/contact){:target="_blank"} your feedback or suggestion.

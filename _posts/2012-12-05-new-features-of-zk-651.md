@@ -77,7 +77,7 @@ bandwidth. The following is a very simple example:
 ```
 
 For more information please check the blog post
-[here](http://blog.zkoss.org/index.php/2012/12/02/control-page-visibility-with-html5-api-in-zk/)
+[here](http://blog.zkoss.org/index.php/2012/12/02/control-page-visibility-with-html5-api-in-zk/){:target="_blank"}
 and the [ZK Developer's Reference](/zk_dev_ref/ui_patterns/browser_information_and_control#browser-page-visibility-state).
 
 ### Comet Server Push Support
@@ -92,7 +92,7 @@ to reduce the server loading by default.
 {% include edition-availability.html edition="ce" %}
 
 With ZK 6.5.1, if you'd like to show a non-buttons dialog, you can use
-[org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html)
+[org.zkoss.zul.Messagebox](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/Messagebox.html){:target="_blank"}
 with an empty array as follows.
 
 ```java
@@ -106,7 +106,7 @@ This messagebox will show without any buttons.
 
 {% include edition-availability.html edition="ce" %}
 
-In ZK 6.5.1, [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html) provides a
+In ZK 6.5.1, [org.zkoss.zul.DefaultTreeModel](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/DefaultTreeModel.html){:target="_blank"} provides a
 boolean argument to its constructor for configuring to treat the zero
 size of children node as a leaf node.
 
@@ -120,5 +120,5 @@ For more information please refer to
 
 ## Download & Other Resources
 
-- [Download ZK 6.5 here](http://www.zkoss.org/download/zk)
-- [ZK 6.5.1 Release Notes](http://www.zkoss.org/product/zk/releasenote/6.5.1)
+- [Download ZK 6.5 here](http://www.zkoss.org/download/zk){:target="_blank"}
+- [ZK 6.5.1 Release Notes](http://www.zkoss.org/product/zk/releasenote/6.5.1){:target="_blank"}

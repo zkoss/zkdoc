@@ -168,4 +168,4 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 
 - [ZK Style Customization Guide](https://docs.zkoss.org/zk_style_customization_guide/)
 
-- [ZK GitHub repository](https://github.com/zkoss/zk)
+- [ZK GitHub repository](https://github.com/zkoss/zk){:target="_blank"}

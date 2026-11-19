@@ -130,4 +130,4 @@ For more details, see the [ZK Maven Setup Guide](https://docs.zkoss.org/zk_insta
 
 - [Listbox component reference](https://docs.zkoss.org/zk_component_ref/listbox)
 
-- [ZK GitHub repository](https://github.com/zkoss/zk)
+- [ZK GitHub repository](https://github.com/zkoss/zk){:target="_blank"}
