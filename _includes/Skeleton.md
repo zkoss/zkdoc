@@ -5,7 +5,7 @@
 Shows the component as a loading placeholder. While the skeleton is on, the
 component's content is hidden and the component is drawn as a muted block
 that pulses until you clear the skeleton. Use it to show the shape of content
-that is still loading.
+that is still loading. It changes only the presentation; it does not fetch data or start asynchronous work.
 
 **Default Value:** `null` (off)
 
@@ -28,7 +28,7 @@ value is rejected with a `WrongValueException` in Java.
 ```
 
 While the skeleton is on, the component gets `aria-busy="true"`, unless
-another part of ZK has already set that attribute. The pulse stops for users
+another part of ZK has already set that attribute. When the skeleton is cleared, ZK removes the attribute only if it set it. The pulse stops for users
 who prefer reduced motion. To change the look, override these CSS custom
 properties: `--zk-skeleton-background`, `--zk-skeleton-duration`,
 `--zk-skeleton-radius`, `--zk-skeleton-text-radius`, and
