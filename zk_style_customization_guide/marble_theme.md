@@ -498,6 +498,20 @@ Layout components such as `vlayout`, `hlayout`, `div` and `borderlayout` bodies 
 <div sclass="z-p-4 z-m-0">16px padding, no margin</div>
 ```
 
+Two more families are useful for layout and text color:
+
+- **Fixed grid columns:** `z-grid-cols-1` to `z-grid-cols-6` set that many equal columns. `z-grid-cols-auto-1fr` sizes the first column to its content and gives the second column the rest of the width. `z-grid-cols-auto` does the same with `--zk-cols` equal columns after the first. Use them with `z-d-grid`:
+
+```xml
+<div sclass="z-d-grid z-grid-cols-3 z-gap-4">
+    <div sclass="z-paper z-p-4">Card A</div>
+    <div sclass="z-paper z-p-4">Card B</div>
+    <div sclass="z-paper z-p-4">Card C</div>
+</div>
+```
+
+- **Text on role colors:** `z-text-on-primary`, `z-text-on-surface`, `z-text-on-primary-container`, `z-text-on-secondary-container`, `z-text-on-error-container`, `z-text-on-success-container` and `z-text-on-warning-container` set the text color that pairs with the matching role color, for example `z-text-on-primary` on a primary surface.
+
 ## Responsive Classes
 
 The responsive display classes apply at a breakpoint and wider:
