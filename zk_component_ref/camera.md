@@ -128,7 +128,7 @@ For plain JSON-string constraints, prefer the [`constraintsString`](#constraints
 
 ## ConstraintsString
 
-{% include supported-since.html version="8.6.0" %} The value is passed as
+The value is passed as
 [MediaTrackConstraints](https://developer.mozilla.org/en-US/docs/Web/API/MediaTrackConstraints)
 which is used to describe a camera's capabilities.
 

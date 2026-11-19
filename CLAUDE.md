@@ -206,3 +206,4 @@ the real source file for exact implementation.
 - **文件撰寫一律走 `zk-technical-writer` skill**：只要有人（使用者或其他 Claude session）請本 session 撰寫或修改文件內容，先呼叫 `zk-technical-writer` skill，再依其流程動筆，不要直接手改 `.md`。
 - **每個元件頁都要有 Supported Events 區塊**：`zk_component_ref/` 的元件頁一律要有這一節（放在 Supported Children 之前、標題層級與同頁兄弟章節一致）。元件沒有自己的事件時，寫 `- Inherited Supported Events: [Parent](.../parent#supported-events)` 連到 parent class 的同一節；根類別（AbstractComponent）寫 `None`。連結指向缺這一節的頁面時，補區塊，不要拿掉 anchor。
 - **Supported Children 只列子元件**：這一節只列出可接受的子元件（或 `*ALL`／`None`），不要寫描述元件本身的句子（如「X accepts only Y」），也不要寫子元件自己的規則；那些內容放到該子元件的章節或頁面。
+- **整頁新功能只標一個 since**：整頁介紹某版本新增的功能時，只在頁首放一個 `supported-since.html`；頁內段落不要再重複同一版本的標籤。比整頁更晚才加入的段落才另外標。

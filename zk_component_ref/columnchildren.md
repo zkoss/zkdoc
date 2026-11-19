@@ -122,6 +122,4 @@ Columnchildren can allow any Component as its child.
 
 `*`[` Panel`]({{site.baseurl}}/zk_component_ref/panel)
 
-{% include supported-since.html version="6.0.0" %}
-
 `*Any`

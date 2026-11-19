@@ -42,8 +42,6 @@ This property only takes effect when the ZUL page itself renders the whole HTML 
 
 # Light Brand Colors
 
-{% include supported-since.html version="11.0.0" %}
-
 `--zk-color-on-primary` (the text color on solid primary surfaces such as a filled button) is always white. If you set a light brand color, for example yellow `#ffd400`, the white text falls below the WCAG AA contrast ratio. Choose one of the following:
 
 * Pick a medium to dark brand color. The built-in `default` (blue), `slate` and `copper` presets are all fine.
