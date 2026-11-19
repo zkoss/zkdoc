@@ -4,7 +4,11 @@
     <div class="card">
       <div class="card__header">
         <h2 class="card__title" itemprop="headline">
+          {% if post.redirect_to contains "://" %}
+          <a href="{{ post.redirect_to }}" target="_blank" rel="noopener">{{ post.title }}</a>
+          {% else %}
           <a href="{{ post.url | relative_url }}" rel="permalink">{{ post.title }}</a>
+          {% endif %}
         </h2>
       </div>
       {% if post.excerpt %}
