@@ -31,8 +31,8 @@ all kinds of components) to form a complicated layout.
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
-            <west title="West" size="25%" flex="true" maxsize="250" splittable="true" collapsible="true">
-                <div style="background:#B8D335">
+            <west title="West" size="25%" maxsize="250" splittable="true" collapsible="true">
+                <div style="background:#B8D335" vflex="1">
                     <label value="25%"
                         style="color:white;font-size:50px" />
                 </div>
@@ -103,6 +103,8 @@ that East and West also takes on the height of Center.
 
 ### flex
 
+> **Note:** The `flex` attribute of a layout region was removed in ZK 10.0.0 (`LayoutRegion#setFlex`). Set `vflex="1"` on the child component instead, as shown below.
+
 Layout region shares the height of Borderlayout with a distributing
 sequence of: North, South and Center while the heights of East and West
 takes on the height of Center. In the previous sample, the div in the
@@ -154,11 +156,11 @@ child component.
     <center autoscroll="true">
         <div height="200px">C</div>
     </center>
-    <east flex="true">
-        <div width="30px" style="background:#f2f2f2;">E</div>
+    <east>
+        <div width="30px" vflex="1" style="background:#f2f2f2;">E</div>
     </east>
-    <west flex="true">
-        <div width="20px" style="background:#f2f2f2;">W</div>
+    <west>
+        <div width="20px" vflex="1" style="background:#f2f2f2;">W</div>
     </west>
 </borderlayout>
 ```
@@ -200,10 +202,10 @@ include supported-since.html version="7.0.2" %}
     <center vflex="min">
         <div height="200px">C</div>
     </center>
-    <east flex="true">
+    <east>
         <div width="30px" style="background:#f2f2f2;">E</div>
     </east>
-    <west flex="true">
+    <west>
         <div width="20px" style="background:#f2f2f2;">W</div>
     </west>
 </borderlayout>

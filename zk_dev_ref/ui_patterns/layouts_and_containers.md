@@ -343,11 +343,11 @@ child component.
     <center autoscroll="true">
         <div height="200px">C</div>
     </center>
-    <east flex="true">
-        <div width="30px" style="background:#f2f2f2;">E</div>
+    <east>
+        <div width="30px" vflex="1" style="background:#f2f2f2;">E</div>
     </east>
-    <west flex="true">
-        <div width="20px" style="background:#f2f2f2;">W</div>
+    <west>
+        <div width="20px" vflex="1" style="background:#f2f2f2;">W</div>
     </west>
 </borderlayout>
 ```
@@ -372,10 +372,10 @@ child component.
     <center vflex="min">
         <div height="200px">C</div>
     </center>
-    <east flex="true">
+    <east>
         <div width="30px" style="background:#f2f2f2;">E</div>
     </east>
-    <west flex="true">
+    <west>
         <div width="20px" style="background:#f2f2f2;">W</div>
     </west>
 </borderlayout>
@@ -660,7 +660,7 @@ the same ID space of its parent.
 ![Dr Panel]({{site.baseurl}}/zk_dev_ref/images/DrPanel.png)
 
 ```xml
-<panel title="A" framable="true" border="normal"
+<panel title="A" border="rounded+"
  maximizable="true" collapsible="true">
    <panelchildren>
       <div style="background: yellow">1</div>

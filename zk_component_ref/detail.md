@@ -28,7 +28,7 @@ The detail component is used to display a detailed section where a master row an
 <zk>
     Please open/close the +/- button, and the layout of this page shows
     properly.
-    <grid fixedLayout="true" width="600px">
+    <grid width="600px">
         <columns>
             <column width="40px" />
             <column>Product Name</column>

@@ -38,8 +38,8 @@ expected.
                    border="normal" maximizable="true" style="margin-bottom:10px">
                 <panelchildren>Panel</panelchildren>
             </panel>
-            <panel height="100px" framable="true" title="column1-2"
-                   border="normal" maximizable="true" style="margin-bottom:10px">
+            <panel height="100px" title="column1-2"
+                   border="rounded+" maximizable="true" style="margin-bottom:10px">
                 <panelchildren>Panel</panelchildren>
             </panel>
             <panel height="100px" title="column1-3" border="normal"
@@ -71,8 +71,8 @@ expected.
             border="normal" maximizable="true" style="margin-bottom:10px">
             Panel
         </window>
-        <panel height="100px" framable="true" title="column1-2"
-            border="normal" maximizable="true" style="margin-bottom:10px">
+        <panel height="100px" title="column1-2"
+            border="rounded+" maximizable="true" style="margin-bottom:10px">
             <panelchildren>Panel</panelchildren>
         </panel>
         <panel height="100px" title="column1-3" border="normal"
@@ -83,7 +83,7 @@ expected.
     <columnchildren width="40%" style="padding: 5px">
         <window id="dataWin" title="Data" maximizable="true" border="normal"
             style="margin-bottom:10px">
-            <grid fixedLayout="true" style="border:0px"
+            <grid style="border:0px"
                 height="100%">
                 <columns>
                     <column label="category" />

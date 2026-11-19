@@ -24,8 +24,8 @@ For common use cases such as collapsible panels, splittable regions, and nested 
 <borderlayout height="450px">
     <north title="North" maxsize="300" size="50%" splittable="true" collapsible="true">
         <borderlayout>
-            <west title="West" size="25%" flex="true" maxsize="250" splittable="true" collapsible="true">
-                <div style="background:#B8D335">
+            <west title="West" size="25%" maxsize="250" splittable="true" collapsible="true">
+                <div style="background:#B8D335" vflex="1">
                     <label value="25%"
                         style="color:white;font-size:50px" />
                 </div>

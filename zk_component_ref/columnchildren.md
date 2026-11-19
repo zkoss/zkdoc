@@ -45,7 +45,7 @@ Columnchildren can allow any Component as its child.
             border="normal" maximizable="true" collapsible="true">
             <panelchildren>Panel</panelchildren>
         </panel>
-        <panel height="100px" framable="true" title="column1-2" border="normal"
+        <panel height="100px" title="column1-2" border="rounded+"
         maximizable="true" style="margin-bottom:10px">
             <panelchildren>Panel</panelchildren>
         </panel>
@@ -58,7 +58,7 @@ Columnchildren can allow any Component as its child.
         <panel title="Data" maximizable="true" border="normal"
             style="margin-bottom:10px">
             <panelchildren>
-                <grid fixedLayout="true" style="border:0px" height="100%">
+                <grid style="border:0px" height="100%">
                     <columns>
                         <column label="category" />
                         <column label="value" />

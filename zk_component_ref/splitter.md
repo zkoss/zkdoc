@@ -113,12 +113,16 @@ OS-look:
     <panel title="Splitter" border="normal" width="500px">
         <panelchildren>
             <hbox spacing="0"  height="100%">
-                <vbox spacing="0"  heights="60px,60px">
-                    Column 1-1: The left-top box. To know whether a splitter
-                    is collapsed, you can listen to the onOpen event.
+                <vbox spacing="0">
+                    <cell height="60px">
+                        Column 1-1: The left-top box. To know whether a splitter
+                        is collapsed, you can listen to the onOpen event.
+                    </cell>
                     <splitter id="s1" collapse="before"/>
-                    Column 1-2: You can enforce to open or collapse programming
-                    by calling setOpen method.
+                    <cell height="60px">
+                        Column 1-2: You can enforce to open or collapse programming
+                        by calling setOpen method.
+                    </cell>
                 </vbox>
                 <splitter id="s2" collapse="before"/>
                 Column 2: Whether a splitter allows users to open or collapse

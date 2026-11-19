@@ -140,12 +140,12 @@ just high/wide enough to hold all of its child components. Specifying
 <borderlayout height="200px" width="400px">
     <north title="North" vflex="min">
         <borderlayout vflex="min">
-            <west title="West" size="40%" flex="true" vflex="min">
+            <west title="West" size="40%" vflex="min">
                 <div style="background:#B8D335">
                     <label value="40%" style="color:white;font-size:50px"/>
                 </div>
             </west>
-            <center flex="true" vflex="min">
+            <center vflex="min">
                 <div style="background:#E6D92C">
                     <label value="60%" style="color:white;font-size:50px"/>
                 </div>
@@ -166,11 +166,7 @@ is determined by its child borderlayout. And the height of the inner
 borderlayout, in this example, is determined by the height of its west
 child region.
 
-Also notice that the flex property
-([org.zkoss.zul.LayoutRegion#setFlex(boolean)](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zul/LayoutRegion.html#setFlex(boolean)))
-is unique to borderlayout
-([north]({{site.baseurl}}/zk_component_ref/north)
-and others). Don't confuse it with hflex or vflex.
+The region-level `flex` attribute (`LayoutRegion#setFlex(boolean)`) was removed in ZK 10.0.0. Use `hflex` or `vflex` on the child component instead.
 
 ## Don't specify Minimum on a parent and 1 on a child
 

@@ -2,6 +2,7 @@
 title: "Fragment"
 description: "Fragment: Available for ZK: Enterprise Edition"
 ---
+> **Removed in ZK 10.2.0:** The `Fragment` component (ZK-5824) was removed from `zkmax.jar` in ZK 10.2.0. Use [Client MVVM]({{site.baseurl}}/zk_mvvm_ref/client_mvvm/index) (`client-bind.jar`) instead. The rest of this page is kept as a reference for ZK 10.1.x and earlier.
 
 - **Java API:** [org.zkoss.zkmax.zul.Fragment](https://www.zkoss.org/javadoc/latest/zk/org/zkoss/zkmax/zul/Fragment.html)
 - **JavaScript API:** [zkmax.wgt.Fragment](https://www.zkoss.org/javadoc/latest/jsdoc/classes/zkmax.wgt.Fragment.html)
