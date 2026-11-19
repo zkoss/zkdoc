@@ -73,10 +73,12 @@ must not act while the data loads.
 
 ## Enable Render on Demand for Large Models
 
-A large grid also costs time to draw. For a grid with a large model, turn on
-render on demand so that the grid draws only the rows in view and adds or
-removes rows as the user scrolls. Set the `org.zkoss.zul.grid.rod` property on
-the grid:
+A large grid or listbox also costs time to draw. Render on demand draws only
+the rows in view and adds or removes rows as the user scrolls. A grid and a
+listbox turn it on with a custom attribute, `org.zkoss.zul.grid.rod` or
+`org.zkoss.zul.listbox.rod`; both are off by default. In ZK EE, a tree renders
+on demand by default and needs no setting; in ZK CE and PE, a tree draws all
+items of an opened node.
 
 ```xml
 <grid skeleton="rect">
@@ -85,19 +87,27 @@ the grid:
 </grid>
 ```
 
-See [org.zkoss.zul.grid.rod]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_grid_rod)
+See [org.zkoss.zul.grid.rod]({{site.baseurl}}/zk_config_ref/org_zkoss_zul_grid_rod),
 and [turn on render on demand]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#grid)
-for the details, including the fixed viewport the grid requires.
+for the details, including the fixed viewport the grid requires. The
+[listbox]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#listbox)
+and [tree]({{site.baseurl}}/zk_dev_ref/performance_tips/turn_on_render_on_demand#tree)
+sections cover their settings.
 
 ## Runnable Examples
 
-Runnable examples in the ZK Component Reference:
+Runnable examples in the ZK Component Reference, each with a load-on-page-load
+and a load-after-event pattern:
 
-- Grid, load on page load:
-  [skeleton-on-load.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/grid/skeleton-on-load.zul)
-  and [SkeletonOnLoadComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/grid/SkeletonOnLoadComposer.java)
-- Grid, load after a user event:
+- Grid: [skeleton-on-load.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/grid/skeleton-on-load.zul)
+  and [SkeletonOnLoadComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/grid/SkeletonOnLoadComposer.java);
   [skeleton-on-event.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/grid/skeleton-on-event.zul)
   and [SkeletonOnEventComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/grid/SkeletonOnEventComposer.java)
-- [Listbox](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/listbox/skeleton.zul)
-- [Tree](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/tree/skeleton.zul)
+- Listbox: [skeleton-on-load.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/listbox/skeleton-on-load.zul)
+  and [SkeletonOnLoadComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/listbox/SkeletonOnLoadComposer.java);
+  [skeleton-on-event.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/listbox/skeleton-on-event.zul)
+  and [SkeletonOnEventComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/listbox/SkeletonOnEventComposer.java)
+- Tree: [skeleton-on-load.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/tree/skeleton-on-load.zul)
+  and [SkeletonOnLoadComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/tree/SkeletonOnLoadComposer.java);
+  [skeleton-on-event.zul](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/webapp/data/tree/skeleton-on-event.zul)
+  and [SkeletonOnEventComposer.java](https://github.com/zkoss/zkbooks/blob/master/componentreference/src/main/java/org/zkoss/reference/component/data/tree/SkeletonOnEventComposer.java)

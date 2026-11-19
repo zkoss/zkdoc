@@ -36,4 +36,6 @@ properties: `--zk-skeleton-background`, `--zk-skeleton-duration`,
 
 The placeholder does not block input. The component's own root element still receives clicks, so a skeleton button still fires `onClick`. If users must not interact while the data loads, set `disabled="true"` on input components.
 
+To show the placeholder while slow data loads, turn the skeleton on in one request and run the query in a later request that the client sends back with `Events.echoEvent`, as shown in [Show a Skeleton Placeholder While Data Loads]({{site.baseurl}}/zk_dev_ref/performance_tips/listbox,_grid_and_tree_for_huge_data#show-a-skeleton-placeholder-while-data-loads).
+
 {% include Notice.html text="In ZK CE the value is stored and sent to the client, but no placeholder is drawn. The placeholder requires ZK PE." %}
