@@ -1652,6 +1652,8 @@ Setting `seltype="multiple"` is equivalent to setting `multiple="true"`. A `Wron
 </listbox>
 ```
 
+{% include Skeleton.md %}
+
 # Custom Attributes
 
 ## org.zkoss.zul.listbox.rightSelect

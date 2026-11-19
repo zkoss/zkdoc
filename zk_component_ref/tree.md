@@ -861,6 +861,8 @@ header becomes floating and sticky on the top of the page.
   </tree>
 ```
 
+{% include Skeleton.md %}
+
 # Create-on-Open for Tree Controls
 
 As illustrated below, you could listen to the `onOpen` event, and then

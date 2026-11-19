@@ -1517,6 +1517,8 @@ Enables vertical flexibility so the grid grows and shrinks to fill its available
 </vlayout>
 ```
 
+{% include Skeleton.md %}
+
 # Supported Events
 
 | Name | Event Type | Description |

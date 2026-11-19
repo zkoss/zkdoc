@@ -377,6 +377,8 @@ MZul.2105=The request was rejected because its size ({0}) exceeds the configured
 Notice that you can change the index `{0}` and `{1}` to display different file
 size unit. (Auto:{0},{1} Byte:{2},{3} KB:{4},{5} MB:{6},{7})
 
+{% include Skeleton.md %}
+
 # Supported Events
 
 | Name | Event Type | Description |

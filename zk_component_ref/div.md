@@ -48,6 +48,8 @@ The example demonstrates the usage of the `Div` component by creating two separa
 Try it
 *  [Div with text alignment](https://zkfiddle.org/sample/1d30bqc/1-ZK-Component-Reference-Div-Example?v=latest&t=Iceblue_Compact)
 
+{% include Skeleton.md %}
+
 ## Supported Children
 
 `*ALL`: Indicates that the Div component can have any kind of ZK component as its child element. This allows you to include any ZK component within the Div, providing flexibility and customization options for your designs.

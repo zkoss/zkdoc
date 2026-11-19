@@ -130,6 +130,8 @@ Email: <textbox type="email"/>
 WebSite: <textbox type="url"/>
 ```
 
+{% include Skeleton.md %}
+
 # Supported Events
 
 - Inherited Supported Events: [ InputElement]({{site.baseurl}}/zk_component_ref/inputelement#supported-events)

@@ -154,6 +154,8 @@ Limits the number of characters displayed in the label. When set to a positive i
 
 ![Label Text ZK5](/zk_component_ref/images/ZKComRef_Label_Text_ZK5.png)
 
+{% include Skeleton.md %}
+
 # Supported Events
 
 - Inherited Supported Events: [ XulElement]({{site.baseurl}}/zk_component_ref/xulelement#supported-events)

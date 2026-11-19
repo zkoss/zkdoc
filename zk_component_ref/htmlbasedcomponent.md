@@ -132,6 +132,8 @@ The CSS class(es) for the component. Used for small adjustments such as changing
 <div sclass="custom-style"/>
 ```
 
+{% include Skeleton.md %}
+
 ## Style
 
 The CSS style for the component.

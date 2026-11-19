@@ -96,6 +96,8 @@ Sets the URI of the hover image — displayed when the mouse moves over the comp
 <image src="/img/icon.png" hover="/img/icon-hover.png"/>
 ```
 
+{% include Skeleton.md %}
+
 # Preload Image
 
 {% include supported-since.html version="6.0.0" %}

@@ -98,6 +98,10 @@ The default align is left. You can change by specifying a CSS rule at
         </vlayout>
 ```
 
+# Properties
+
+{% include Skeleton.md %}
+
 # Supported Events
 
 Check inherited events
