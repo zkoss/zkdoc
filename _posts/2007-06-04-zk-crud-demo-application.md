@@ -4,5 +4,7 @@ date: 2007-06-04
 author: "Stuart Charles"
 version: "ZK 2.3.1"
 category: small-talk
-redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/June/ZK CRUD Demo Application"
+# interim (2026-11): redirect to an archived copy of the old wiki page until this post is converted.
+# original redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/June/ZK CRUD Demo Application"
+redirect_to: "https://web.archive.org/web/20250428014328/https://www.zkoss.org/wiki/Small_Talks/2007/June/ZK_CRUD_Demo_Application"
 ---

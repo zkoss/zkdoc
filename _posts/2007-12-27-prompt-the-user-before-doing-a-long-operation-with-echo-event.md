@@ -4,5 +4,7 @@ date: 2007-12-27
 author: "Jumper Chen, Engineer, Potix Corporation"
 version: "ZK 3.0.2 Freshly (ZK-3.0.2-FL-2007-12-27 and later)"
 category: small-talk
-redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/December/Prompt the User before Doing a Long Operation with Echo Event"
+# interim (2026-11): redirect to an archived copy of the old wiki page until this post is converted.
+# original redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/December/Prompt the User before Doing a Long Operation with Echo Event"
+redirect_to: "https://web.archive.org/web/20250428033730/https://www.zkoss.org/wiki/Small_Talks/2007/December/Prompt_the_User_before_Doing_a_Long_Operation_with_Echo_Event"
 ---

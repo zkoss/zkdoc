@@ -4,5 +4,7 @@ date: 2007-08-08
 author: "Dennis Chen, Engineer, Potix Corporation"
 version: "ZK-2.5.0-FL-2007-08-07 and later."
 category: small-talk
-redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/August/Access Seasar Components as Variables"
+# interim (2026-11): redirect to an archived copy of the old wiki page until this post is converted.
+# original redirect_to: "http://books.zkoss.org/wiki/Small Talks/2007/August/Access Seasar Components as Variables"
+redirect_to: "https://web.archive.org/web/20250428033123/https://www.zkoss.org/wiki/Small_Talks/2007/August/Access_Seasar_Components_as_Variables"
 ---
