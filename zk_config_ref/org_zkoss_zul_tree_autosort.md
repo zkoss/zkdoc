@@ -37,8 +37,3 @@ components.
   <custom-attributes org.zkoss.zul.tree.autoSort="true"/>
 ...
 ```
-
-# Version History
-
-| Version | Date | Content | 5.0.7 | April 2011 | Tree shall sort model based on current state. |
-|---------|------|---------|-------|------------|-----------------------------------------------|

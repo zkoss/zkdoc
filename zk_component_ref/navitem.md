@@ -153,9 +153,6 @@ Sets embedded HTML content shown as supplementary description beneath the navite
 
 # Supported Events
 
-| Name | Event Type | Description |
-|---|---|---|
-
 - Inherited Supported Events: [LabelImageElement]({{site.baseurl}}/zk_component_ref/labelimageelement#supported-events)
 
 # Supported Children

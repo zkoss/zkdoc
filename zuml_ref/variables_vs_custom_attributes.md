@@ -17,6 +17,7 @@ The `<variables>` tag is primarily used to define variables accessible via EL ex
 - **Parsing:** Handled by `Parser.parseVariables()`.
 
 ### Unique Attributes
+
 | Attribute | Description |
 | :--- | :--- |
 | `local` | **`false` (Default):** Sets the attribute in the nearest ancestor scope that already defines it, or the current scope. <br> **`true`:** Strictly sets the attribute in the current ID space, avoiding shadowing or collision with parent spaces. |
@@ -33,6 +34,7 @@ The `<custom-attributes>` tag is used to attach metadata or configuration direct
 - **Parsing:** Handled by `Parser.parseCustomAttributes()`.
 
 ### Unique Attributes
+
 | Attribute | Description |
 | :--- | :--- |
 | `scope` | Explicitly defines where to store the attribute. Values include: `component` (default), `space`, `page`, `desktop`, `session`, `application`, or `request`. |
@@ -59,6 +61,7 @@ The `<custom-attributes>` tag is used to attach metadata or configuration direct
     </div>
 </window>
 ```
+
 - `myVar` is stored on the **Window (`win`)**. Any component inside the window can access `${myVar}`.
 - `myAttr` is stored on the **Div (`myDiv`)**. Only `myDiv.getAttribute("myAttr")` will find it.
 
