@@ -1,6 +1,6 @@
 ---
 author: jameschu
-date: 2026-12-22
+date: 2026-11-24
 version: ZK 11
 category: small-talk
 title: "ZK 11 Sneak Peek: Syntax Highlighting with the New Codeeditor"
@@ -58,7 +58,7 @@ This ZK 11 feature provides:
 
 ## Try It in ZK 11 Eval Freshly
 
-ZK 11 is coming soon, and you can preview Codeeditor in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval). Codeeditor is included in ZK Community Edition.
+ZK 11 is coming soon, and you can preview Codeeditor in the latest ZK 11 Eval Freshly build (11.0.0.FL.20261021-Eval or later). Codeeditor is included in ZK Community Edition.
 
 To try it in your existing ZK application, update your Maven `pom.xml` with the following configuration:
 
