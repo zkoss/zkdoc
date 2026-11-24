@@ -265,8 +265,8 @@ Here are APIs removed since ZK 10.
 | org.zkoss.zul.Listitem | getSrc() | @deprecated As of release 3.5.0, it is redundant since it is the same {@link \#getImage}. |
 | org.zkoss.zul.Listitem | setSrc() | @deprecated As of release 3.5.0. |
 | org.zkoss.zul.PagingEventPublisher | \* | @deprecated As of release 8.5.2, please use {@link PageableModel} instead. |
-| org.zkoss.zul.Panel | isFrameable() | @deprecated As of release 5.0.6, replaced with {@link \#getBorder}. |
-| org.zkoss.zul.Panel | setFrameable(boolean frameable) | @deprecated As of release 5.0.6, replaced with {@link \#setBorder}. |
+| org.zkoss.zul.Panel | isFramable() | @deprecated As of release 5.0.6, replaced with {@link \#getBorder}. |
+| org.zkoss.zul.Panel | setFramable(boolean framable) | @deprecated As of release 5.0.6, replaced with {@link \#setBorder}. |
 | org.zkoss.zul.Panel | getBorder() | @deprecated As of release 5.0.6, use CSS instead. |
 | org.zkoss.zul.Row | getSpans() | @deprecated As of release 5.0.0, use {@link Cell} instead. |
 | org.zkoss.zul.Row | setSpans(String spans) | @deprecated As of release 5.0.0, use {@link Cell} instead. |
