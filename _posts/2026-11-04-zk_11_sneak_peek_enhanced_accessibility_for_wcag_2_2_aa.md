@@ -1,6 +1,6 @@
 ---
 author: jameschu
-date: 2026-11-30
+date: 2026-11-29
 version: ZK 11
 category: small-talk
 title: "ZK 11 Sneak Peek: Enhanced Accessibility for WCAG 2.2 AA"
