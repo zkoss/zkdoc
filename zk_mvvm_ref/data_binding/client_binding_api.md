@@ -22,6 +22,7 @@ First, we have to get the client binder in order to use the client-side methods.
 ```javascript
 var binder = zkbind.$('$id');
 ```
+
 After we have our client binder, we can use the following two methods to interact with the view model back to our server.
 
 **Method - command()**
@@ -29,6 +30,7 @@ After we have our client binder, we can use the following two methods to interac
 ```javascript
 binder.command(commandName, data);
 ```
+
 This method is used to trigger a command we have on our server.
 
 **Parameters**
@@ -51,6 +53,7 @@ This method is used to trigger a command we have on our server.
 ```javascript
 binder.after(commandName, callback);
 ```
+
 This method is used to place a callback at the client after a command is executed on the server.
 
 **Parameters**
@@ -83,3 +86,61 @@ The client command annotation allows us to put the commands we want for notifyin
 Two examples for using client-binding:
 - [ ZK8: Work with Polymer Components using ZK’s new client side binding API](http://blog.zkoss.org/index.php/2015/03/11/zk8-work-with-native-web-components-using-the-new-zk-client-side-data-binding-api/)
 - [ZK8 Series: Interact with Client Side Libaries using ZK's New Client Side Binding](http://books.zkoss.org/wiki/Small_Talks/2015/April/ZK8_Series:_Interact_with_Client_Side_Libaries_using_ZK8's_New_Client_Side_Binding)
+
+## Use Case: Firing an Event from JavaScript to Java
+
+A common requirement is to fire an event from JavaScript so that Java code can react to it — for example, a standalone JS file or a third-party client-side library detects a state change in the browser, and an `EventQueue` subscriber on the server should be notified. In other words, you want to send an event from client-side code to Java.
+
+You cannot publish to an `EventQueue` directly from JavaScript; `EventQueue` is a server-side API only. Instead, use the Client Binding API as a bridge: trigger a ViewModel command from JavaScript with `binder.command()`, then publish the event to the `EventQueue` inside that command. For a command to be invokable from the client, it must be whitelisted with `@ToServerCommand` on the ViewModel class — only the commands listed there can be triggered from client-side code, and `@ToServerCommand("*")` accepts all commands.
+
+First, declare the command in the ViewModel and publish the event inside it:
+
+```java
+import org.zkoss.bind.annotation.BindingParam;
+import org.zkoss.bind.annotation.Command;
+import org.zkoss.bind.annotation.ToServerCommand;
+import org.zkoss.zk.ui.event.Event;
+import org.zkoss.zk.ui.event.EventQueue;
+import org.zkoss.zk.ui.event.EventQueues;
+
+@ToServerCommand("updateStatus")
+public class StatusVM {
+
+    @Command
+    public void updateStatus(@BindingParam("value") boolean value) {
+        EventQueue<Event> eq = EventQueues.lookup("onStatusChange", EventQueues.DESKTOP, false);
+        eq.publish(new Event("onStatusChange", null, value));
+    }
+}
+```
+
+Apply the ViewModel in the ZUL page and give the component an `id` so the client binder can be located:
+
+```xml
+<window apply="org.zkoss.bind.BindComposer"
+        viewModel="@id('vm') @init('com.example.StatusVM')"
+        id="win">
+</window>
+```
+
+Then, from JavaScript (e.g. in a standalone JS file or a client-side library callback), obtain the client binder and trigger the command:
+
+```javascript
+var binder = zkbind.$('$win');
+binder.command('updateStatus', {value: true});
+```
+
+Any existing server-side subscriber receives the event as usual, unchanged:
+
+```java
+EventQueue<Event> eq = EventQueues.lookup("onStatusChange", EventQueues.DESKTOP, true);
+eq.subscribe(new EventListener<Event>() {
+    @Override
+    public void onEvent(Event event) throws Exception {
+        boolean value = (Boolean) event.getData();
+        // react to the client-initiated event
+    }
+});
+```
+
+With this approach, all existing `EventQueue` subscribers keep working without any modification — the only addition is the command that bridges the client-side call to the server-side publish.
