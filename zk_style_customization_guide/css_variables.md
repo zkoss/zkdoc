@@ -89,6 +89,48 @@ Each component has its own set of variables for fine-grained control. For exampl
 }
 ```
 
+# Use Case: Building a Dark Theme
+
+A common requirement is to give an application a dark color scheme — dark background with light text — without recompiling LESS. CSS variables make this practical: the developer defines a custom theme CSS file that overrides ZK's color variables, and registers it via `<theme-uri>` as shown above.
+
+## Override Base and State Colors Together
+
+The base colors (background, text, primary) are only half the job. ZK's default interaction-state colors — hover, active, selected, focus, and disabled — are designed to be visible against a light background. If you only darken the base colors, that state feedback can become nearly invisible: a hovered grid row or a selected listbox item may look identical to its neighbors. Grid and listbox hover highlights and group headers (mesh title areas) are the most frequent trouble spots, so tune those state variables explicitly:
+
+```css
+:root {
+    /* Base colors */
+    --zk-base-background-color: #121212;
+    --zk-color-primary: #90caf9;
+
+    /* Buttons */
+    --zk-button-background-color: #1e1e1e;
+    --zk-button-border-color: #3a3a3a;
+    --zk-button-color: #e0e0e0;
+
+    /* Interaction states - tune these explicitly */
+    --zk-hover-background-color: #2a2a2a;
+    --zk-focus-background-color: #2f3b4b;
+    --zk-selected-background-color: #1565c0;
+    --zk-selected-color: #ffffff;
+    --zk-disabled-color: #6f6f6f;
+
+    /* Grid / listbox headers and group rows */
+    --zk-mesh-title-background-color: #1c1c1c;
+    --zk-mesh-title-hover-background-color: #333333;
+
+    /* Popups and inputs */
+    --zk-popup-background-color: #1e1e1e;
+    --zk-input-border-color: #3a3a3a;
+}
+```
+
+Pick hover and selected colors with enough contrast against the dark base so that the highlighted row clearly stands out; a value only one or two shades away from the background is hard to perceive.
+
+## Verify Interaction States
+
+After applying a dark theme, walk through the interaction states on real pages rather than judging the static appearance alone. Hover over grid and listbox rows, select items, hold the mouse down on buttons, tab through inputs to check focus styling, and confirm that disabled controls still read as disabled. Insufficient contrast in hover and selection feedback on data components is the most common gap in a dark theme, and it only shows up when you exercise those states directly.
+
 # Variable Reference
 
 <!-- TODO: Add complete variable reference or link to generated reference -->
