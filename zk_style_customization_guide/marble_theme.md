@@ -435,7 +435,7 @@ Variables inherit, so setting them on a container restyles only the components i
 
 # Utility Classes
 
-Marble ships utility classes with the `z-` prefix, for spacing, display, flex and grid layout, sizing, typography, borders, colors and printing. Use them in `sclass` to lay out a page without writing CSS.
+Marble ships utility classes with the `z-` prefix, for spacing, display, flex and grid layout, sizing, typography, borders, colors and printing. Use them in `sclass` to lay out a page without writing CSS. For the complete, machine-readable list, see [Utility Class Manifest](#utility-class-manifest).
 
 ## Naming Rules
 
@@ -573,6 +573,98 @@ The classes use the same `sm`, `md`, `lg` and `xl` breakpoints as the viewport c
 | `xl` | 1200px |
 
 The values are `none`, `block`, `flex`, `grid` and `inline-block`. A `z-cq-*` class only has an effect inside a `.z-container` ancestor, so always use them together.
+
+## Utility Class Manifest
+
+Marble generates a machine-readable list of every authorable `z-*` class during the build. The list is `utility-classes.json`, and it matches the CSS that ships with the release, so tools and AI assistants can use it as the source of truth instead of guessing class names. Field names and counts can change in later builds, so read `schemaVersion` before you depend on the shape.
+
+### Where to Find It
+
+The file is inside `zul.jar`:
+
+```
+zul-11.0.0.jar
+└── web/zul/css/utility-classes.json
+```
+
+A running application serves the same file at `http://<host>:<port>/<context>/zkau/web/zul/css/utility-classes.json`. Opening that URL in a browser shows the JSON.
+
+### Schema
+
+The file has one top-level object:
+
+| Field | Type | Meaning |
+|-------|------|---------|
+| `schemaVersion` | number | Version of this file's layout. It is `1` in ZK 11.0.0. |
+| `theme` | string | The theme the classes belong to. It is `"marble"`. |
+| `module` | string | The ZK module that ships the file. It is `"zul"`. |
+| `generatedBy` | string | The build script that generated the file. |
+| `sources` | array of strings | The utility stylesheets the classes were read from, in bundle order. |
+| `classes` | array of objects | One entry per authorable class. |
+
+Each entry in `classes` has these fields:
+
+| Field | Always present | Meaning |
+|-------|----------------|---------|
+| `name` | Yes | The class name, for example `z-p-4`. Use it in `sclass`. |
+| `category` | Yes | The stylesheet the class comes from, without the leading underscore and the `.css` extension, for example `spacing` or `layout`. |
+| `css` | Yes | The declarations the class applies, as text, for example `padding: var(--zk-spacing-4)`. |
+| `media` | No | A media condition that limits when the rule applies, for example `(min-width: 576px)`. It is `print` for print-only classes. |
+| `selector` | No | The selector, when it is more than the class itself, for example `.z-vstack > * + *`. |
+| `inputs` | No | Custom properties the class reads but the theme does not define. You must set them yourself, for example with an inline `style`. |
+
+The three optional fields appear only where they add information. An entry without them applies to the class name alone, at all times and on all screens.
+
+Example entries:
+
+```json
+{"name": "z-p-4", "category": "spacing", "css": "padding: var(--zk-spacing-4)"}
+{"name": "z-d-sm-none", "category": "layout", "css": "display: none", "media": "(min-width: 576px)"}
+{"name": "z-vstack", "category": "stack", "css": "margin-top: var(--zk-spacing-3)", "selector": ".z-vstack > * + *"}
+{"name": "z-grid-cols-auto", "category": "layout", "css": "grid-template-columns: auto repeat(var(--zk-cols, 1), minmax(var(--zk-col-min, 0), 1fr))", "inputs": ["--zk-cols", "--zk-col-min"]}
+```
+
+The `z-grid-cols-auto` entry needs `--zk-cols` and `--zk-col-min` to produce a sensible layout, so set them on the element:
+
+```xml
+<div sclass="z-d-grid z-grid-cols-auto" style="--zk-cols: 3">
+    ...
+</div>
+```
+
+### Categories
+
+| Category | Covers |
+|----------|--------|
+| `layout` | Display, flex, grid, sizing and positioning |
+| `spacing` | Margin and padding |
+| `typography` | Font size, weight, style and line height |
+| `colors` | Background colors (`z-bg-*`) and text colors (`z-text-on-*`) |
+| `borders` | Border width, side and radius |
+| `interactions` | Visibility and opacity (`z-invisible`, `z-opacity-*`) |
+| `elevation` | Shadow levels `z-elevation-0` to `z-elevation-5` |
+| `stack` | `z-hstack` and `z-vstack` spacing |
+| `print` | Print-only display classes, such as `z-d-print-none` |
+| `surface` | The `z-paper` card surface |
+
+### Point an AI Assistant at the Manifest
+
+An AI assistant writes better `sclass` values when it reads the real class list instead of guessing names. Give it the manifest rather than the stylesheets, because the manifest is smaller and lists only the classes an author can use.
+
+1. Copy `utility-classes.json` from the jar or the URL above into your project.
+
+2. Tell the assistant where the file is. A prompt such as the following works well:
+
+    ```text
+    Marble's utility classes are listed in utility-classes.json in this project.
+    When you write ZUL and set sclass, use only class names from the "name"
+    field of that file. Read "css" to learn what a class does. If an entry has
+    "media", wrap the behavior in that media condition. If it has "inputs",
+    set those custom properties in the style attribute. Do not invent classes
+    that are not in the file.
+    ```
+
+3. Keep the file next to the project's instructions, such as `CLAUDE.md` or `AGENTS.md`, so the assistant reads it in every session. Replace the file when you upgrade ZK, because the class list changes between versions.
 
 ---
 
