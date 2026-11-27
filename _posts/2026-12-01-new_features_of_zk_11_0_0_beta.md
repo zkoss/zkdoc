@@ -12,6 +12,7 @@ description: "Explore ZK 11 Beta: the Marble theme, modern UI components, respon
 ZK 11 Beta is now available. It introduces the Marble theme with built-in styling utilities, new UI components, and responsive Grid and Listbox layouts. It also updates accessibility support for WCAG 2.2 AA, improves CSP support, and provides a Software Bill of Materials (SBOM) for dependency reviews.
 
 <a class="btn btn--primary" href="https://www.zkoss.org/download/zk">Try ZK 11 Beta</a>
+<a class="btn btn--primary" href="https://TBD">View Demo</a>
 <a class="btn btn--primary" href="https://www.zkoss.org/product/zk/releasenote/11.0.0-Beta">View Release Notes</a>
 
 ## Marble Theme and Styling Utilities
